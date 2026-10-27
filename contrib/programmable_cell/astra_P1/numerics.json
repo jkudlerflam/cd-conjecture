@@ -1,0 +1,231 @@
+{
+  "seed": 20261027,
+  "T": 5,
+  "workspace_qubits": 2,
+  "full_dimension": 96,
+  "target_dimension": 8,
+  "logical_dimension": 2,
+  "z_grid": [
+    0.05,
+    0.2,
+    1.0,
+    3.0
+  ],
+  "target_gap": 1.1048246309728356,
+  "target_norm": 3.380301724964187,
+  "penalty_norm_M": 6.000000000000004,
+  "target_K2_eigenvalues": [
+    -1.0848210959293842,
+    -0.7147186863745488,
+    -0.7125077570025876,
+    -0.5291727416395487
+  ],
+  "target_K2_connected_norm": 0.04784196050790368,
+  "target_K2_direct_pair_check": 2.3958408173125467e-15,
+  "example_lambda": 0.001,
+  "active_limit_R_error": 0.7531219158070638,
+  "active_limit_K2_error": 0.694023134120288,
+  "models": {
+    "idle": {
+      "diagnostics": {
+        "target_match_error": 0.0,
+        "target_ground_residual": 4.2604622925365113e-17,
+        "term_ground_residual": 2.775163274286058e-17,
+        "history_isometry_error": 2.334497231706378e-16,
+        "history_ground_orthonormality_error": 4.443059973708341e-17,
+        "history_source_leakage": 1.260737566817923e-16,
+        "xi": 2.3822385152032575
+      },
+      "rows": [
+        {
+          "Jc": 10.0,
+          "ground_dimension": 2,
+          "ground_splitting": 2.8611353020419702e-15,
+          "max_abs_ground_energy": 2.6222562561538045e-15,
+          "ground_residual": 2.5144172958716736e-15,
+          "port_compression_error": 1.909775441010788e-17,
+          "R_error": 0.22390963057048704,
+          "K2_error": 0.20254225978152898,
+          "gap": 0.3407417371093147,
+          "R_to_limit": 0.22390963057048704,
+          "K2_to_limit": 0.20254225978152898
+        },
+        {
+          "Jc": 100.0,
+          "ground_dimension": 2,
+          "ground_splitting": 5.031319294361112e-14,
+          "max_abs_ground_energy": 4.399708175614911e-14,
+          "ground_residual": 2.0763555215671554e-14,
+          "port_compression_error": 1.909775441010788e-17,
+          "R_error": 0.047950077197783256,
+          "K2_error": 0.054324536908599876,
+          "gap": 1.0471289490419644,
+          "R_to_limit": 0.047950077197783256,
+          "K2_to_limit": 0.054324536908599876
+        },
+        {
+          "Jc": 1000.0,
+          "ground_dimension": 2,
+          "ground_splitting": 3.524791556520428e-12,
+          "max_abs_ground_energy": 2.4384853233685617e-12,
+          "ground_residual": 2.296142108885144e-13,
+          "port_compression_error": 1.909775441010788e-17,
+          "R_error": 0.006220332746180067,
+          "K2_error": 0.007780591302337535,
+          "gap": 1.0982165029733557,
+          "R_to_limit": 0.006220332746180067,
+          "K2_to_limit": 0.007780591302337535,
+          "uniform_R_bound": 1.689243912642042
+        },
+        {
+          "Jc": 10000.0,
+          "ground_dimension": 2,
+          "ground_splitting": 3.532582167541412e-11,
+          "max_abs_ground_energy": 2.5362354185815583e-11,
+          "ground_residual": 2.3555921779025886e-12,
+          "port_compression_error": 1.909775441010788e-17,
+          "R_error": 0.0006480938948333412,
+          "K2_error": 0.0008228753365097275,
+          "gap": 1.1041530849577899,
+          "R_to_limit": 0.0006480938948333412,
+          "K2_to_limit": 0.0008228753365097275,
+          "uniform_R_bound": 0.036392773452872014,
+          "K2_bound": 0.057279335520108964
+        },
+        {
+          "Jc": 100000.0,
+          "ground_dimension": 2,
+          "ground_splitting": 3.752749943427927e-10,
+          "max_abs_ground_energy": 2.6542517660884406e-10,
+          "ground_residual": 2.229775992054033e-11,
+          "port_compression_error": 1.909775441010788e-17,
+          "R_error": 6.509212117002067e-05,
+          "K2_error": 8.27809636293562e-05,
+          "gap": 1.104757365839397,
+          "R_to_limit": 6.509212117002067e-05,
+          "K2_to_limit": 8.27809636293562e-05,
+          "uniform_R_bound": 0.0033745250164890364,
+          "K2_bound": 0.005083927619383292
+        },
+        {
+          "Jc": 1000000.0,
+          "ground_dimension": 2,
+          "ground_splitting": 3.112269489978698e-10,
+          "max_abs_ground_energy": 3.340900212500456e-10,
+          "ground_residual": 2.2332525365867892e-10,
+          "port_compression_error": 1.909775441010788e-17,
+          "R_error": 6.512093208729501e-06,
+          "K2_error": 8.283094219332972e-06,
+          "gap": 1.1048179034424013,
+          "R_to_limit": 6.512093208729501e-06,
+          "K2_to_limit": 8.283094219332972e-06,
+          "uniform_R_bound": 0.00033501531218329644,
+          "K2_bound": 0.0005027403263815793
+        }
+      ],
+      "tail_loglog_slopes": {
+        "R_error": -0.9989586611389979,
+        "K2_error": -0.9985707221303605,
+        "R_to_limit": -0.9989586611389979,
+        "K2_to_limit": -0.9985707221303605
+      }
+    },
+    "active": {
+      "diagnostics": {
+        "target_match_error": 0.0,
+        "target_ground_residual": 4.2604622925365113e-17,
+        "term_ground_residual": 2.775163274286058e-17,
+        "history_isometry_error": 2.334497231706378e-16,
+        "history_ground_orthonormality_error": 4.443059973708341e-17,
+        "history_source_leakage": 1.0,
+        "xi": 2.3822385152032575
+      },
+      "rows": [
+        {
+          "Jc": 10.0,
+          "ground_dimension": 2,
+          "ground_splitting": 2.8611353020419702e-15,
+          "max_abs_ground_energy": 2.6222562561538045e-15,
+          "ground_residual": 2.5144172958716736e-15,
+          "port_compression_error": 1.909775441010788e-17,
+          "R_error": 0.42659720929356415,
+          "K2_error": 0.3287443468691057,
+          "gap": 0.3407417371093147,
+          "R_to_limit": 0.38585594779148075,
+          "K2_to_limit": 0.3667886336632899
+        },
+        {
+          "Jc": 100.0,
+          "ground_dimension": 2,
+          "ground_splitting": 5.031319294361112e-14,
+          "max_abs_ground_energy": 4.399708175614911e-14,
+          "ground_residual": 2.0763555215671554e-14,
+          "port_compression_error": 1.909775441010788e-17,
+          "R_error": 0.6972025729280422,
+          "K2_error": 0.626043894112462,
+          "gap": 1.0471289490419644,
+          "R_to_limit": 0.06418007342020138,
+          "K2_to_limit": 0.06876836375500517
+        },
+        {
+          "Jc": 1000.0,
+          "ground_dimension": 2,
+          "ground_splitting": 3.524791556520428e-12,
+          "max_abs_ground_energy": 2.4384853233685617e-12,
+          "ground_residual": 2.296142108885144e-13,
+          "port_compression_error": 1.909775441010788e-17,
+          "R_error": 0.7470575758958294,
+          "K2_error": 0.6861280169265773,
+          "gap": 1.0982165029733557,
+          "R_to_limit": 0.00715246194414585,
+          "K2_to_limit": 0.008046072198429607
+        },
+        {
+          "Jc": 10000.0,
+          "ground_dimension": 2,
+          "ground_splitting": 3.532582167541412e-11,
+          "max_abs_ground_energy": 2.5362354185815583e-11,
+          "ground_residual": 2.3555921779025886e-12,
+          "port_compression_error": 1.909775441010788e-17,
+          "R_error": 0.7525101564027564,
+          "K2_error": 0.6932167423683933,
+          "gap": 1.1041530849577899,
+          "R_to_limit": 0.0007256476856062968,
+          "K2_to_limit": 0.0008228373490688518
+        },
+        {
+          "Jc": 100000.0,
+          "ground_dimension": 2,
+          "ground_splitting": 3.752749943427927e-10,
+          "max_abs_ground_energy": 2.6542517660884406e-10,
+          "ground_residual": 2.229775992054033e-11,
+          "port_compression_error": 1.909775441010788e-17,
+          "R_error": 0.7530606858724076,
+          "K2_error": 0.693942314294896,
+          "gap": 1.104757365839397,
+          "R_to_limit": 7.26738567335008e-05,
+          "K2_to_limit": 8.24793024298762e-05
+        },
+        {
+          "Jc": 1000000.0,
+          "ground_dimension": 2,
+          "ground_splitting": 3.112269489978698e-10,
+          "max_abs_ground_energy": 3.340900212500456e-10,
+          "ground_residual": 2.2332525365867892e-10,
+          "port_compression_error": 1.909775441010788e-17,
+          "R_error": 0.753115792275028,
+          "K2_error": 0.6940150503799297,
+          "gap": 1.1048179034424013,
+          "R_to_limit": 7.2684511004424206e-06,
+          "K2_to_limit": 8.249835469224637e-06
+        }
+      ],
+      "tail_loglog_slopes": {
+        "R_error": 0.00017469434010971535,
+        "K2_error": 0.0002499227629826544,
+        "R_to_limit": -0.999641970724218,
+        "K2_to_limit": -0.9994343545380348
+      }
+    }
+  }
+}

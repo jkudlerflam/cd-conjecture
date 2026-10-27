@@ -1,0 +1,7 @@
+[proved] Completed [RESULT.md](<./RESULT.md>) with explicit bounds, universality constructions, counterexamples, and the embedding audit. Signed penalties require a clock-scale condition; unrestricted universality may require initialized ancillas.
+
+[numerical] [experiment.py](<./experiment.py>) confirms \(1/J_c\) convergence for idle ports and nonzero limiting errors with one port gate. All checks passed.
+
+[open] The full translation-invariant embedding remains unproved. Its missing steps are identified explicitly.
+
+[gpt_solve: backend=codex model=gpt-6-astra effort=high transcript=20261027T181101-12890]

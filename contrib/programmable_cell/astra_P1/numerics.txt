@@ -1,0 +1,32 @@
+seed=20261027, T=5, workspace=2 qubits, dimension=96, N=2
+Delta=1.10482463097, B=3.38030172496, M=6
+K2 target eigenvalues: [-1.0848211  -0.71471869 -0.71250776 -0.52917274]
+K2 connected interaction norm: 0.0478419605079
+K2 independent two-cell target check: 2.395841e-15
+Errors use the spectral norm; R is the 3N by 3N block operator.
+K2 includes every excited state. Actual second-order energy = lambda^2 K2.
+
+idle
+{"history_ground_orthonormality_error": 4.443059973708341e-17, "history_isometry_error": 2.334497231706378e-16, "history_source_leakage": 1.260737566817923e-16, "target_ground_residual": 4.2604622925365113e-17, "target_match_error": 0.0, "term_ground_residual": 2.775163274286058e-17, "xi": 2.3822385152032575}
+Jc       nground  splitting       compression      R_error          K2_error         gap              R_to_limit       K2_to_limit
+ 1.0e+01   2    2.861135e-15    1.909775e-17    2.239096e-01    2.025423e-01    3.407417e-01    2.239096e-01    2.025423e-01
+ 1.0e+02   2    5.031319e-14    1.909775e-17    4.795008e-02    5.432454e-02    1.047129e+00    4.795008e-02    5.432454e-02
+ 1.0e+03   2    3.524792e-12    1.909775e-17    6.220333e-03    7.780591e-03    1.098217e+00    6.220333e-03    7.780591e-03
+ 1.0e+04   2    3.532582e-11    1.909775e-17    6.480939e-04    8.228753e-04    1.104153e+00    6.480939e-04    8.228753e-04
+ 1.0e+05   2    3.752750e-10    1.909775e-17    6.509212e-05    8.278096e-05    1.104757e+00    6.509212e-05    8.278096e-05
+ 1.0e+06   2    3.112269e-10    1.909775e-17    6.512093e-06    8.283094e-06    1.104818e+00    6.512093e-06    8.283094e-06
+Last-three-point log-log slopes: {"K2_error": -0.9985707221303605, "K2_to_limit": -0.9985707221303605, "R_error": -0.9989586611389979, "R_to_limit": -0.9989586611389979}
+
+active
+{"history_ground_orthonormality_error": 4.443059973708341e-17, "history_isometry_error": 2.334497231706378e-16, "history_source_leakage": 1.0, "target_ground_residual": 4.2604622925365113e-17, "target_match_error": 0.0, "term_ground_residual": 2.775163274286058e-17, "xi": 2.3822385152032575}
+Jc       nground  splitting       compression      R_error          K2_error         gap              R_to_limit       K2_to_limit
+ 1.0e+01   2    2.861135e-15    1.909775e-17    4.265972e-01    3.287443e-01    3.407417e-01    3.858559e-01    3.667886e-01
+ 1.0e+02   2    5.031319e-14    1.909775e-17    6.972026e-01    6.260439e-01    1.047129e+00    6.418007e-02    6.876836e-02
+ 1.0e+03   2    3.524792e-12    1.909775e-17    7.470576e-01    6.861280e-01    1.098217e+00    7.152462e-03    8.046072e-03
+ 1.0e+04   2    3.532582e-11    1.909775e-17    7.525102e-01    6.932167e-01    1.104153e+00    7.256477e-04    8.228373e-04
+ 1.0e+05   2    3.752750e-10    1.909775e-17    7.530607e-01    6.939423e-01    1.104757e+00    7.267386e-05    8.247930e-05
+ 1.0e+06   2    3.112269e-10    1.909775e-17    7.531158e-01    6.940151e-01    1.104818e+00    7.268451e-06    8.249835e-06
+Last-three-point log-log slopes: {"K2_error": 0.0002499227629826544, "K2_to_limit": -0.9994343545380348, "R_error": 0.00017469434010971535, "R_to_limit": -0.999641970724218}
+
+Active limiting R error: 0.753121915807
+Active limiting K2 error: 0.69402313412
