@@ -20,7 +20,7 @@ Use issues for open problems, proposed attacks and claims that need checking, so
 
 ## Adding a result
 
-Put each new piece of work in its own folder, `contrib/<short-name>/`, with a `README.md` that states the following.
+Put each new piece of work in its own folder, `contrib/<short-name>/`. Start from a copy of `contrib/_template/README.md`, which asks for the following.
 
 1. The claim, with every hypothesis written out.
 2. Its status: proved, numerical, heuristic, or refuted.
