@@ -1,0 +1,17 @@
+{
+  "core_length": 5,
+  "port_dimension": 2,
+  "padded_site_dimension": 3,
+  "logical_dimension": 2,
+  "lengths": [
+    6,
+    7
+  ],
+  "endpoint_scale": 0.044194173824159216,
+  "isometry_error": 4.578101167347947e-16,
+  "endpoint_compression_error": 1.3009101450315077e-16,
+  "transport_amplitude": 0.25,
+  "transport_error": 2.3058165088301465e-16,
+  "length_independent_bond_error": 1.263628647826051e-17,
+  "local_parent_constructed": false
+}

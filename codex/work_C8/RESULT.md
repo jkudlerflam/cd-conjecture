@@ -4,7 +4,13 @@
 
 ## Verdict
 
-Resumed-run update. The whole-class verdict is still nonconclusive. Sections 10-14 contain the new work and supersede the earlier next-step ranking.
+Third-run update. The whole-class verdict remains nonconclusive. Sections 15-19 contain the new work and supersede both earlier next-step rankings.
+
+There is now an exact d=4 mobile selector with c=1 at finite hopping, including a uniform gap to illegal sectors and the full spectrum on every ring. Entropy and Casimir checks agree with the free-fermion identification. This model has no large-c payload and is not a counterexample.
+
+Two-length payload compatibility is possible algebraically with one additional vacancy symbol per site. Exact two-placement padding cannot be its own isolated local ground code, however. A different repeated-bond vacancy construction repairs this under a frustration-free-core hypothesis, preserving the complete core code and giving scalar projected payload transport at both lengths. The endpoint strengths differ slightly between the two lengths, and selecting their occupied-number sectors remains open.
+
+Finally, a Hilbert-basis argument gives a finite witness length for uniform frustration freeness. This excludes selecting arbitrarily long cores as the longest frustration-free open segment at fixed site dimension, without boundary terms. It is not a universal bound on conformal onset or central charge.
 
 The exact product-code route is now excluded for the parity-dressed hopping target when its endpoints are disjoint. A quantitative leakage bound and a gap/length tradeoff explain why the perturbative route remains different. The full flat-parent second-order calculation has an attractive singlet mass-channel coefficient, including a contribution from adjacent bonds. An explicit parity-preserving two-energy parent reverses that coefficient. Its complete 324-dimensional example and checks are provided, but no finite-coupling CFT is claimed.
 
@@ -1293,3 +1299,690 @@ The next steps are now ranked as follows.
 4. For an upper bound, strengthen the locality tradeoff in Section 10 into a restriction that cannot be evaded by shrinking the block gap and exchange scale. No such uniform restriction was obtained. Port rank, exact-encoding arguments, and finite-order signs alone do not bound the general conformal class.
 
 No network search, cluster run, full finite-coupling microscopic CFT calculation, or independent referee check was performed in the resumed run. No project files outside this folder were modified. An incidental temporary stdout capture in /private/tmp was created and removed during the local-parent check. The project-level STATE.md remains untouched as required by the task's read-only restriction.
+
+
+## 15. Exact finite-hopping selector and all-ring conformality
+
+
+Status: the Hamiltonian mappings, sector bound, entropy identity, and finite-size
+energies below are proved. The identification of a free Fermi sea with its
+compact c=1 CFT is the stated standard continuum input. This supplies a
+microscopic c=1 model at d=4, not a counterexample to c <= d-1.
+
+## 1. Hamiltonian and legal arrows
+
+Use the four letters #,L,X,R with arrows
+
+    #=(1,0), L=(0,0), X=(0,1), R=(1,1).
+
+Write Q for the projector onto pairs whose touching arrows disagree and
+M=|#><#|. Set a>0 and
+
+    h = K Q + (mu/2)(M tensor I + I tensor M)
+        -a(|LX><XR| + |XR><LX|)
+        -a(|#L><R#| + |R#><#L|).                         (1)
+
+This is the preceding mobile-selector Hamiltonian at t=u=a, with no small-u
+projection. It is one-site translation invariant and nearest neighbor.
+Every Q_i commutes with H because each allowed move preserves its three
+affected legality indicators. Thus the full Hilbert space splits by the
+binary violation pattern epsilon_i=Q_i.
+
+In the legal sector let b_i be the right arrow on site i. Its left arrow is
+b_(i-1). Every binary sequence b gives one legal basis vector, including
+on odd rings. The legal Hilbert space has dimension 2^L.
+
+A hop at bond i flips b_i precisely when b_(i-1) != b_(i+1). Both orientations
+have the same amplitude -a. Let Z_i|b_i> = (-1)^b_i |b_i>. The restricted
+Hamiltonian is therefore
+
+    H_legal = -(a/2) sum_i X_i(1-Z_(i-1) Z_(i+1))
+              +(mu/4) sum_i (1-Z_(i-1) Z_i).             (2)
+
+The chemical term follows because # counts the 1-to-0 transitions. On a
+ring they are half of all transitions. This step would fail on an open
+interval without a boundary term.
+
+## 2. All forbidden sectors stay uniformly above the ground state
+
+In a fixed violation sector, the left arrow of site i is
+
+    a_i = b_(i-1) xor epsilon_(i-1).
+
+Consequently every violation sector also has dimension 2^L and the same
+binary-coordinate Hilbert space. The comparison is not a variational
+identification of a few basis states.
+
+For a violation on bond i, that bond's hopping is absent. This changes the
+operator by norm at most a. The hopping coefficient on bond i+1 can also
+change, because its left outside arrow a_(i+1) has flipped. The two
+conditional flips differ by norm at most a. All other kinetic terms agree,
+apart from the analogous effects of other violations. The marker projector
+on site i+1 changes by norm at most one. It costs at most |mu| in operator
+norm. The triangle inequality gives, for k violations,
+
+    ||H_epsilon - K k I - H_legal|| <= k(2a+|mu|).        (3)
+
+This remains valid when affected neighborhoods overlap. Thus
+
+    E_min(epsilon) >= E_min(legal) + k(K-2a-|mu|).        (4)
+
+Choose K>2a+|mu|. The legal ground state is then a ground state of the full
+d=4 chain, and every illegal sector is separated from it by a positive,
+L-independent gap at least K-2a-|mu|. This includes all ring lengths L>=3.
+The small L=2 convention, in which the same unordered edge occurs twice,
+is irrelevant to the limit and is not included.
+
+## 3. Free domain walls, including both ring twists
+
+Define wall occupations w_i=b_(i-1) xor b_i. Their total W is even on a ring.
+Every even wall pattern has two preimages, related by the global flip
+G=product_i X_i. The move in (2) exchanges w_i,w_(i+1)=(1,0) and (0,1).
+It is nearest-neighbor hard-core hopping with amplitude -a, and the chemical
+potential is mu W/2.
+
+Fix the orientation b_0 when reconstructing b from w. A hop across that
+reference changes b_0; every other wall hop leaves it fixed. In a sector
+G=g, g=+1 or -1, that crossing has amplitude -ag. This is the hard-core
+particle boundary twist. After Jordan-Wigner, even W gives fermion
+boundary phase -g. The complete spectrum is the union over
+
+    W even, g=+1,-1,
+    k_j = 2pi(j+phi_g)/L,
+    phi_+=1/2, phi_-=0,
+    E = sum_(occupied k) [-2a cos(k) + mu/2].             (5)
+
+Both twists are necessary. Counting all these states gives
+2 times 2^(L-1)=2^L, the whole legal Hilbert space. This also proves there
+are no omitted extensive zero-energy sectors.
+
+For |mu|<4a the dispersion has two simple Fermi points
+
+    cos(k_F)=mu/(4a),       v=2a sin(k_F)>0.               (6)
+
+Linearization at them gives a massless complex fermion. The even-W
+projection and the two twists impose finite global sector restrictions;
+they change the compactification and allowed towers but not the local
+stress tensor or its c=1 central charge. This last free-fermion continuum
+identification is the standard input. At |mu|=4a the slope vanishes and the
+band edge is quadratic, so those endpoints are excluded.
+
+On odd or otherwise incommensurate rings, W and the filled momenta are
+rounded within O(1) of their thermodynamic values. Their energies differ
+at order 1/L. Each Fermi level has at most two orbitals with a given energy,
+so ground-state multiplicities stay bounded, independently of L. No
+immobile defect with L possible positions occurs. Irrational k_F gives
+the usual size-dependent charge-sector offsets of a lattice Fermi sea;
+there is no claim that its vacuum offset is identical for all L.
+
+## 4. Energies, towers, and entropy at mu=0
+
+Take L divisible by four. The positive ground state is in g=+1 with
+W=L/2. Summing the occupied cosines gives
+
+    E0(L) = -2a/sin(pi/L)
+          = -(2a/pi)L - (pi a)/(3L) + O(L^-3).           (7)
+
+With v=2a, the Casimir coefficient is -pi c v/(6L), giving c=1.
+The lowest state in g=-1 has energy -2a cot(pi/L). Its gap is
+
+    2a tan(pi/(2L)) = pi a/L + O(L^-3),                  (8)
+
+so it has scaling dimension x=1/4. Particle-hole excitations near either
+Fermi edge have energy 2pi v/L times an integer, with the ordinary
+fermionic partitions producing the oscillator towers. Changing even W
+by 2 has leading energy 4pi a/L, or x=1. Thus both the first intersector
+gap and the oscillator scale are linear in 1/L.
+
+There is also an exact entanglement identity. Let |psi_w> be an even-wall
+state, and take its g=+1 legal-arrow lift. For a nonempty proper interval
+A of physical sites, write n_A for its wall parity and s for its initial
+arrow. The basis change within A identifies its allowed letter strings
+with (w_A,s), and the complement with (w_B,s xor n_A). The lifted state is
+
+    (1/sqrt(2)) sum_(w_A,w_B,s) psi(w_A,w_B)
+       |w_A,s>_A |w_B,s xor n_A>_B.                     (9)
+
+Tracing B forces equal w_B. Global even parity then forces equal n_A
+on the bra and ket, and hence equal s. Therefore
+
+    rho_A^physical is unitarily equivalent to
+       (rho_A^walls/2) direct-sum (rho_A^walls/2),
+    S_A^physical = S_A^walls + log(2).                  (10)
+
+Zero eigenvalues from illegal interval strings do not affect the entropy.
+This proves equality of the logarithmic entropy coefficients, rather
+than estimating the effect of the encoding by an unspecified constant.
+
+## 5. Independent checks and limitations
+
+Run `OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python3 equal_hopping_selector.py`.
+The output is `equal_hopping_selector_checks.json`.
+
+The script compares every eigenvalue of (2) at L=5,6,7,8,9 and mu=0.37 with
+the independent occupation sum (5), with maximum error 1.96e-14. It tests
+(3) for all 15,31,63 nonempty violation patterns at L=4,5,6 respectively. It constructs the many-body Slater wavefunction and
+computes physical-site reduced density matrices, without storing a 4^L
+state vector. The XX wall state is the known c=1 calibration for entropy.
+
+At L=20, fitting the interval entropy to log[(L/pi)sin(pi ell/L)] for
+ell=5,...,10 gives c=1.003981. The half-chain entropy slope from L=16 to 20
+gives c=0.992700. Each equals its XX control to numerical precision, as
+(10) predicts. The Casimir fit at L=40,48,64,80,96,128,160, with independently
+known v=2 and a 1/L^4 correction in E0/L, gives c=0.999999704.
+
+This resolves the finite-u CFT question only at the equal-hopping point.
+It does not prove that the long-cell, small-u regime is in the same phase,
+and it contains no high-dimensional logical code. Moving from this
+soluble selector to a large-c payload still requires a microscopic
+Hamiltonian and a separate stability analysis.
+
+
+## 16. Two-length code compatibility by padding
+
+
+Status: proved finite-dimensional code construction. No local parent or
+finite-coupling CFT is asserted.
+
+## 1. Padding an arbitrary code
+
+Suppose V:C^D -> (C^q)^(tensor k) is an isometry, k>=2, whose first and last
+site compressions are
+
+    V^dagger F_a^(first) V = A_a,
+    V^dagger F_a^(last) V = B_a.                          (1)
+
+No commutation relation between A and B is required. Add one new local
+vacancy symbol |0> orthogonal to C^q, so the new site dimension is q+1.
+Extend F_a by zero on that vacancy. Regard V as living on k occupied sites.
+For p=1,2 define
+
+    W_p = (V tensor |0>^p + |0>^p tensor V)/sqrt(2).       (2)
+
+The two summands have different, orthogonal occupation patterns. Hence
+W_p^dagger W_p=I. In the first summand only the left physical endpoint is
+occupied; in the second only the right endpoint is occupied. A one-site
+operator cannot connect the two occupation patterns. It follows that
+
+    W_p^dagger F_a^(first) W_p = A_a/2,
+    W_p^dagger F_a^(last) W_p = B_a/2,    p=1,2.          (3)
+
+Both lengths k+1 and k+2 therefore have the SAME boundary maps. This is
+stronger than padding a single code on just one side, which would erase
+one of its ports.
+
+## 2. Moving the boundary preserves both logical states after projection
+
+Place a short cell followed by a long cell on 2k+3 physical sites. Move the
+boundary one site to the right and leave the spectator variables untouched.
+The old and new isometries are W_1 tensor W_2 and W_2 tensor W_1. Then
+
+    (W_2 tensor W_1)^dagger (W_1 tensor W_2)
+         = (1/4) I_(D tensor D).                         (4)
+
+To prove this, expand each side into its four occupation patterns. Label
+the first site zero. The two cores on the input start at
+
+    (0 or 1, k+1 or k+3),
+
+and the two output cores start at
+
+    (0 or 2, k+2 or k+3).
+
+The only common occupied-site pattern has core starts (0,k+3). In it the
+site transferred across the boundary is vacant. The overlap of each
+unchanged core is V^dagger V=I, and the four factors 1/sqrt(2) give 1/4.
+All other terms vanish by orthogonality of vacancy and occupied symbols.
+The same statement holds for a hop in the opposite direction by taking
+the adjoint. Adding a projector onto a vacancy at the transferred site
+does not change (4).
+
+This is a projected transition, not an exact invariant encoding. Its
+amplitude is less than one; a physical hop also has components outside
+the desired code spaces. It does not evade the earlier exact-product-code
+theorem, whose hypotheses require that leakage to vanish.
+
+## 3. Leading interaction is independent of cell length
+
+For a boundary interaction sum_a F_a tensor F_a, every pair p,p' in {1,2}
+has the same compression
+
+    (W_p tensor W_p')^dagger h_boundary (W_p tensor W_p')
+         = (1/4) sum_a B_a tensor A_a.                   (5)
+
+If A_a=alpha Gamma_a and B_a=alpha i Gamma_a P, this is the previous
+quadratic Majorana target with hopping coefficient lambda alpha^2/4.
+If selector clock overlaps contribute a scalar A_b^2 as in the mobile
+selector, the marker-hopping amplitude acquires the additional factor
+1/4 from (4). The two length variables carry XX hopping tensor the
+identity on the payload. The payload interaction (5) is independent
+of both length variables.
+
+Thus in each fixed-cell-number sector, and before higher-order corrections,
+the bulk effective Hamiltonian is a sum of an XX length chain and the
+logical target on the same cyclic cell index. On a physical ring their
+translation and twist sectors are correlated by cyclic relabeling of the
+cells. They are not unrestricted tensor products of finite-size spectra.
+The local stress tensors would still add if this leading description
+were the actual stable infrared theory. That last premise is not proved.
+
+There is no local-parent theorem hiding in (2). The projectors
+I-W_p W_p^dagger are arbitrary (k+p)-site operators. Even if V had a
+nearest-neighbor parent, making the coherent two-placement ground spaces
+in (2) is another problem. Hopping vacancies through the core introduces
+additional positions and modifies its boundary moments. The construction
+only removes a linear-algebra incompatibility between two lengths.
+
+## 4. Dimension bookkeeping and a check
+
+One may tensor this new spectator with the four-letter selector, at
+d=4(q+1). For example the graded construction in the earlier C8 report
+allows q=17 and m=2*8*9=144 odd channels. Its logical dimension is 2^72,
+its formal target charge is m/2=72, and its Choi dilation fits in
+
+    k = ceil(log_q(q^4 2^72)) = 22
+
+spectator sites. The padding gives lengths 23 and 24 and d=72. The formal
+payload alone would exceed d-1=71; a length mode would add one more charge
+if it survived. These numbers establish no microscopic example. In
+particular a uniform two-site parent for either padded code has not been
+given, and the literal selector length counts must be aligned with the
+chosen placement of its markers before constructing such a parent.
+
+Run `OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python3 padding_transport.py`.
+It uses the earlier q=2,m=2 simultaneous Choi code, with its environment
+placed between its endpoints, as a k=5 core. It checks both padded
+isometries, both sets of endpoint compressions, the full two-code overlap
+(4), and all four interactions (5). These are matrix identities on the
+physical spectator spaces, not tests of the formulas substituted into
+themselves. The output is `padding_transport_checks.json`.
+
+
+## 17. Local vacancy parent and the exact-cat obstruction
+
+
+Status: finite-dimensional theorems, proved below. The explicit local
+example uses a ferromagnetic code and has no large-c claim. The final
+spin-charge discussion is conditional.
+
+## 1. The exact cat padding cannot be an isolated local ground code
+
+There is a necessary qualification to `padding_transport.md`. Its exact
+two-placement code has no strictly local parent with only that code as
+ground space, once the core is longer than the interaction range.
+
+Let A_p=V tensor |0>^p and B_p=|0>^p tensor V. These isometries have
+orthogonal occupation supports. Suppose every Hamiltonian term omits at
+least one site where the two supports have different occupation. Then
+
+    A_p^dagger H B_p = 0.                                  (1)
+
+For the proposed p=1,2 padding and nearest-neighbor terms, k>=2 suffices:
+already the first and last sites disagree, and no bond contains both.
+Matrix elements vanish because at an untouched disagreeing site one
+branch is vacant and the other occupied.
+
+Suppose every vector W_p psi=(A_p psi+B_p psi)/sqrt(2) is a ground vector
+of H with ground energy E. Positivity of H-E gives
+
+    0 = <W_p psi|(H-E)|W_p psi>
+      = ( <A_p psi|(H-E)|A_p psi>
+          +<B_p psi|(H-E)|B_p psi> )/2.                    (2)
+
+Each summand is nonnegative and must vanish. A positive matrix with zero
+quadratic form annihilates the vector. Hence every A_p psi and every
+B_p psi separately belongs to the ground space. The degeneracy is at
+least 2D, not D. The antisymmetric combinations are also ground vectors.
+
+This argument does not assume translation invariance, frustration
+freeness, or commuting terms. The pure two-placement construction gives
+coherent projected transport algebraically, but a local realization must
+include intermediate vacancy positions or some other dressing. The next
+construction does so.
+
+## 2. A local extension theorem for any frustration-free core
+
+Assume the k-site core has a uniform open-chain parent
+
+    H_core = sum_(j=1)^(k-1) h0_(j,j+1),  h0>=0,
+    ker(H_core)=range(V).                                 (3)
+
+The positivity of each summand implies h0_j V=0. This is the extra
+hypothesis. A general frustrated parent does not satisfy it.
+
+Enlarge each site from C^q to C|0> direct-sum C^q. Write n=|0><0| for
+vacancy number and extend h0 by zero outside the two-occupied-site sector.
+On N=k+p sites, for p=1 or 2, use the SAME repeated bond
+
+    h_ext = U(n tensor I + I tensor n - 2n tensor n)
+            -w sum_(a=1)^q (|0,a><a,0|+|a,0><0,a|)
+            +g h0,          U,w,g>0.                     (4)
+
+Restrict to exactly k occupied sites. The core's q-state labels cannot
+pass each other under vacancy hopping on an open chain. Therefore this
+sector has the exact ordered-coordinate decomposition
+
+    C^(binomial(N,p)) tensor (C^q)^(tensor k),             (5)
+
+where the first factor specifies hole positions and the second lists the
+occupied labels in their physical order. This is a unitary change of
+basis, not an approximation or a low-energy restriction.
+
+The first two terms of (4) become H_charge tensor I. The charge matrix
+has diagonal energy U times the number of occupied-vacant interfaces
+and off-diagonal -w for every allowed nearest-neighbor hole hop. Its
+configuration graph is connected. Perron-Frobenius gives a unique,
+strictly positive normalized ground vector chi_p and energy e_p. Reflection
+invariance makes chi_p reflection symmetric.
+
+Let D_j be the diagonal charge projector onto configurations in which
+the j-th and (j+1)-th occupied labels are physically adjacent. The full
+Hamiltonian in (5) is
+
+    H_ext = H_charge tensor I + g sum_j D_j tensor h0_j.   (6)
+
+Since all terms in the second sum are positive, H_ext>=e_p. The states
+
+    V_p psi = chi_p tensor V psi                          (7)
+
+attain e_p, because every h0_j annihilates V.
+
+Conversely, a ground state must minimize the first term and annihilate
+the second, so it has the form chi_p tensor phi. Since chi_p is strictly
+positive, <chi_p|D_j|chi_p> is strictly positive for every j. Its energy
+above e_p is zero only if every <phi|h0_j|phi>=0, hence phi is in the
+core kernel. Thus (7) is the COMPLETE ground space in the fixed-k sector.
+
+For every fixed k,p,U,w,g>0 the gap above it is positive, by finite
+dimension and the exact kernel characterization. This is not a bound
+uniform in k. Its small-w splitting can be very small, which matters
+when coupling the cells. The theorem makes no claim about the ordering
+of different particle-number sectors; a full selector must control them.
+
+The construction preserves an arbitrary frustration-free core code, not
+just a classical or product code. It uses a single bulk bond at both
+lengths, with no length-dependent endpoint term.
+
+## 3. Endpoint maps and scalar boundary transport
+
+Extend a core one-site observable F by zero on the vacancy. If physical
+site 1 is occupied, it contains the first ordered label, regardless of
+all hole positions. A number-preserving endpoint observable leaves those
+positions unchanged. Consequently
+
+    V_p^dagger F_first V_p = r_p A,
+    V_p^dagger F_last V_p = r_p B,
+    r_p = 1-Prob_(chi_p)(first site vacant),               (8)
+
+where A,B are the original core endpoint compressions. Equality of the
+two coefficients uses reflection of chi_p, not reflection of the core.
+
+The leading boundary-shift overlap is also scalar for arbitrary V.
+On its input, the left cell has p=1 and the right p=2; after shifting
+their cut right, they have p=2 and p=1. To keep k occupied labels in
+each cell, the transferred site must be vacant. No ordered logical label
+crosses the cut. Every surviving core overlap is V^dagger V=I. Thus
+
+    (V_2 tensor V_1)^dagger (V_1 tensor V_2)
+        = beta I_(D tensor D),                           (9)
+
+with beta=a_left a_right>0. For N1=k+1, N2=k+2,
+
+    a_left = sum_(s=0)^(N1-1) chi_1({s}) chi_2({s,N1}),
+    a_right = sum_(s=0)^(N1-1) chi_1({s}) chi_2({0,s+1}). (10)
+
+All amplitudes are real and positive. Reflection gives a_left=a_right.
+These formulas are in the physical spectator coordinates after the cut
+has moved. They do not assert that the microscopic hop has no leakage.
+
+For fixed k, as w/U tends to zero the charge states approach the equally
+weighted superposition of the two endpoint hole droplets. To check this,
+at w=0 these are the only configurations with one interface, with energy
+U; all others have at least two interfaces. In the reflection-even sector
+the ground vector at w=0 is unique, and the gap there is at least U.
+Finite-dimensional perturbation theory gives an excited-configuration
+amplitude O(w/U). Reflection fixes the two endpoint weights to be equal.
+It follows that
+
+    r_1,r_2 = 1/2 + O((w/U)^2),
+    beta -> 1/4.                                         (11)
+
+Constants can depend on k. The odd reflection partner is separated only
+by a high-order tunneling splitting; it is not controlled by the U gap
+in the even sector. The coupling between cells must be below this actual
+gap, not merely below U.
+
+Unlike exact cat padding, the local model generally has r_1 != r_2 at
+finite w. Hence its payload bond is r_p r_p' times the core bond. The
+length/payload coupling can be made small at fixed k, but is not zero.
+Its infrared effect requires analysis. No tuning that makes r_1=r_2
+with this same bond has been proved.
+
+## 4. Explicit check with a quantum core
+
+`vacancy_parent.py` takes q=2, k=3, and h0=(I-swap)/2. The core kernel is
+the four-dimensional symmetric spin-3/2 representation. It is quantum:
+the compressed X,Y,Z endpoint operators do not commute. This example
+does not have an extensive Clifford family or a large target charge.
+
+For w=0.15,0.3,0.5, U=1, g=0.7 the script builds the repeated physical
+bond (4) on both lengths, diagonalizes each fixed-k sector, and checks
+the entire ground code (7), its degeneracy, the endpoint maps (8), and
+the two-cell transition (9). The data are in `vacancy_parent_checks.json`.
+
+Run `OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python3 vacancy_parent.py`.
+
+## 5. Why this still does not finish the conjecture
+
+The theorem reduces two-length local compatibility to the one-length
+problem in the frustration-free subclass. No uniform nearest-neighbor
+frustration-free core with the required many-channel endpoint maps has
+been constructed here. The earlier Choi code has an arbitrary parent
+projector and cannot be inserted into (3) on that basis alone. Its six
+tested local embeddings already failed the parent test in the prior run.
+
+The contribution on programmable cells proves a useful finite-history
+interface, but does not provide the microscopic repeated-bond core
+needed by (3), with its required endpoint compressions. Neither that
+interface nor this extension establishes a stable large-c chain.
+
+Vacancy doping of an entire hypothetical counterexample is another
+conditional idea. On C|0> direct-sum C^d, nearest-neighbor particle-vacancy
+hopping preserves the order of all occupied labels. At large hopping
+compared with occupied-label interactions, first-order charge projection
+gives a squeezed label chain. If spin-charge separation and infrared
+stability held, it would add one charge mode, taking (d,c) to (d+1,c+1)
+and preserving c-(d-1). Its particle number could adjust to a multiple
+of a preferred cell period on every large physical ring.
+
+This is not an all-ring completion theorem. The charge sector is gapless,
+so finite-volume perturbation theory has denominators O(1/L) and cannot
+be used uniformly as L grows. Exact factorization (5) at zero label
+interaction does not make the interacting squeezed Hamiltonian exact.
+The earlier direct-sum contribution already uses this mechanism at the
+RG level. Without an additional thermodynamic stability input, it does
+not close the present construction, and no further numerical claim is
+made for it.
+
+
+## 18. Finite witness for uniform frustration freeness
+
+
+Status: proved, using the Hilbert basis theorem for a polynomial ring in
+finitely many variables. This is not a bound on the central charge of a
+general frustrated chain.
+
+## 1. Statement
+
+Fix the site dimension q. There exists a finite integer K_FF(q) such that
+for every positive semidefinite Hermitian bond h on C^q tensor C^q,
+
+    H_N(h) = sum_(i=1)^(N-1) h_(i,i+1),
+
+having a zero-energy state on the open chain of length K_FF(q) implies
+having a zero-energy state on every finite open-chain length. There are
+no additional boundary terms. The integer is uniform over all bond
+coefficients, gaps, and energy scales.
+
+Equivalently, a fixed bond with a finite maximum frustration-free open
+length has maximum length less than K_FF(q). No numerical value or
+effective algorithm for K_FF(q) is supplied here.
+
+## 2. Proof
+
+Parameterize a Hermitian q^2 by q^2 matrix h by its q^4 real coefficients
+x=(x_1,...,x_(q^4)), using real diagonals and the real and imaginary parts
+of upper-triangular entries. For each N>=2 define
+
+    f_N(x)=det(H_N(h(x))).                                (1)
+
+This is a polynomial with real coefficients. Complex off-diagonal entries
+cause no problem: the symbolic determinant is real on all real x by
+Hermiticity, so its imaginary polynomial vanishes identically.
+
+Let I be the ideal generated by all f_N, N>=2, in the polynomial ring
+R[x_1,...,x_(q^4)]. The Hilbert basis theorem states that this ring is
+Noetherian, meaning every ideal has a finite generating set. Each member
+of such a finite generating set for I is itself a finite polynomial
+combination of the original f_N. Taking the largest index used in all
+these finitely many expressions gives a finite K with
+
+    I = <f_2,...,f_K>.                                    (2)
+
+In particular every later determinant has an exact polynomial identity
+
+    f_N = sum_(j=2)^K p_(N,j)(x) f_j(x).                  (3)
+
+Now specialize to any h>=0 with ker H_K nonzero. Take a normalized zero
+vector on K sites. Every term h_(i,i+1) is positive and has zero
+expectation, hence annihilates this vector. Its reduced density matrix
+on the first j sites has zero expectation of H_j for every j<=K.
+Since H_j>=0, the support of that density matrix lies in ker H_j and
+is nonempty. Therefore f_j(h)=0 for all 2<=j<=K.
+
+Equation (3) implies f_N(h)=0 for every N. Each H_N is positive, so a
+zero determinant means it has a zero-energy ground state. The definition
+of the polynomial sequence depends only on q, making K uniform. QED.
+
+Positivity is used in passing from one length K to all shorter lengths.
+The finite-generation identity alone does not make a single vanishing
+determinant imply all later determinants for an arbitrary Hermitian h.
+
+## 3. Implication for one proposed length-selection mechanism
+
+The local vacancy extension in `vacancy_parent.md` has the positive
+uniform core bond h0. A proposal to choose the number of occupied labels
+by taking the LONGEST frustration-free core therefore cannot make that
+number unbounded at fixed q. Its cutoff is below K_FF(q).
+
+For a first-order Clifford target living on that core, its code dimension
+D obeys D<=q^k. An even family of m Clifford generators needs
+D>=2^(m/2). Hence in this particular longest-core construction,
+
+    c_target=m/2 <= log_2 D <= k log_2 q
+                  < K_FF(q) log_2 q.                    (4)
+
+This is a bound on the stated free target and selection mechanism. It is
+not a general c bound at fixed q. It does not bound the charge of an
+arbitrary interacting target encoded on D dimensions.
+
+The simpler attempt to select a partially occupied cell with just the
+charge attraction and a vacancy chemical potential also fails whenever
+the fully occupied core at that length is frustration free. For U>=w,
+the mixed occupancy block of the charge bond is
+
+    [[U,-w],[-w,U]] >= 0,
+
+and the two equal-occupancy blocks have zero charge energy. With nu sum n
+added, nu>0 favors the zero-hole, zero-core-energy state; nu<0 favors the
+all-hole state, which saturates the lower bound nu N; and at nu=0 both
+extremes have zero energy while a partial droplet at w<U costs energy.
+This explains why the fixed-p hypothesis in the vacancy extension cannot
+be silently removed. A distinct number-selection mechanism is needed.
+
+## 4. Why it does not settle the main question
+
+A boundary computation may impose different conditions at the two ends.
+Then frustration freeness at length N need not imply it at smaller
+lengths. The nested-kernel step of the proof fails, even though each
+individual determinant is still a polynomial. Such boundary conditions
+can be supplied by marker-dependent bonds in a larger translation-
+invariant chain. They are outside this theorem's uniform open-bulk
+hypothesis.
+
+Likewise, the C7 selector minimizes negative, length-dependent kinetic
+energies and is not a test for zero energy of a positive uniform core
+bond. It is not constrained by K_FF(q). Nor are continuum finite-size
+asymptotics polynomial equalities of the form (1). There is no justified
+step from this Noetherian argument to a universal conformal onset length
+K(d), and none is claimed.
+
+The theorem isolates one way in which a proposed unbounded-length
+frustration-free construction can fail. Boundary conditions, frustrated
+energetics, and approximate codes remain possible ways around it.
+
+
+## 19. Third-run verdict, checks, and next steps
+
+No conclusive answer under the task's definition was reached. In particular,
+there is no verified h with c>d-1, no full-class bound c<=f(d), and no proof
+of unbounded c at fixed d. The exact c=1 selector and the local vacancy
+extension are proved restricted constructions. The q=17, d=72, c=72
+numbers remain resource accounting, not a candidate Hamiltonian with a
+verified continuum limit.
+
+The new computations are small and reproducible with Python, numpy, and
+scipy. No cluster calculation, network access, or subagents were used.
+Only files in this folder were changed.
+
+- `equal_hopping_selector.py` checks complete spectra at L=5 through 9,
+  every nonempty illegal pattern at L=4,5,6, entropies at L=8,12,16,20,
+  and analytic finite-size energies at L=40 through 160. The entropy
+  calibration is the XX wall chain, with an exact additive log(2)
+  relation to the physical entropy. The independent Casimir estimator
+  uses the velocity from the dispersion.
+- `padding_transport.py` checks the q=2,m=2 Choi code at padded lengths
+  6 and 7, including the full two-code overlap and all four choices of
+  adjacent lengths.
+- `vacancy_parent.py` constructs a positive repeated physical bond for
+  a three-qubit symmetric core, at lengths 4 and 5. It checks the ground
+  code, spectrum, endpoint maps, and coherent projected transport for
+  three hopping strengths. Its first run failed a 1e-10 endpoint
+  tolerance because a nearly degenerate unconstrained eigenvector had
+  a reflection asymmetry of numerical origin. Enforcing the proved
+  even-reflection sector fixed the issue, with the physical eigenvector
+  residual retained as a check. This failure and repair are recorded
+  in PROGRESS.md.
+
+Run each with `OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python3 <script>`.
+The corresponding `*_checks.json` files contain the data. The older
+code/spectral-parent checks were not repeated, since their implementations
+were unchanged. The new Python files also passed compilation.
+
+Next steps, ranked:
+
+1. Construct a high-channel core with an explicit repeated microscopic
+   bond and controlled endpoint maps. The new vacancy theorem can then
+   handle two lengths if the core is frustration free. A canonical
+   Choi projector alone does not satisfy this hypothesis, and the
+   exact cat code cannot be an isolated nearest-neighbor ground space.
+2. Select the occupied-number sectors, not just the total physical
+   cell length, in the combined selector/core model. Uniform bulk
+   frustration-free cutoffs are bounded by Section 18; boundary
+   computation or frustrated selection is needed to evade that
+   restriction. The finite-hopping vacancy gap, which can be a very
+   small tunneling splitting, must control the inter-cell scale.
+3. Establish volume-uniform effective interactions and the infrared
+   stability of the coupled length/payload chain. Length-dependent
+   endpoint strengths, other higher-order terms, and the correlated
+   ring twists must all be included. The exact t=u selector does not
+   prove the long-cell small-u phase is conformal.
+4. Independently pursue the conditional rank-one physical-site model
+   in Section 6, which bypasses microscopic block and ring-length
+   issues but still needs thermodynamic reduction and infrared
+   stability. Establishing it would challenge c<=r(h), not by itself
+   settle c<=d-1 or any of the three conclusive outcomes.
+5. For a full-class upper bound, obtain a restriction on neutral
+   stress-tensor sectors or on the conformal onset scale that survives
+   arbitrarily small gaps. The finite-frustration-free-witness theorem
+   supplies neither, and should not be used as if it did.

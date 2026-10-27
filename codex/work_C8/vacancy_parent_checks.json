@@ -1,0 +1,107 @@
+[
+  {
+    "k": 3,
+    "U": 1.0,
+    "w": 0.15,
+    "g": 0.7,
+    "core_dimension": 4,
+    "cell_checks": [
+      {
+        "holes": 1,
+        "length": 4,
+        "charge_dimension": 4,
+        "physical_sector_dimension": 32,
+        "charge_gap": 0.006450693232763149,
+        "full_gap": 0.006450693232761595,
+        "exact_code_residual": 4.1864020941524295e-16,
+        "ground_split": 1.5543122344752192e-15,
+        "endpoint_occupation": 0.5142524166042775,
+        "port_error": 4.965068306494546e-16
+      },
+      {
+        "holes": 2,
+        "length": 5,
+        "charge_dimension": 10,
+        "physical_sector_dimension": 80,
+        "charge_gap": 5.857264726238931e-06,
+        "full_gap": 5.857264724795641e-06,
+        "exact_code_residual": 8.923773349323698e-16,
+        "ground_split": 1.2212453270876722e-15,
+        "endpoint_occupation": 0.5000658417172197,
+        "port_error": 4.910462595695867e-16
+      }
+    ],
+    "boundary_transport_amplitude": 0.24911600731996444,
+    "transport_error": 3.444376352465766e-16
+  },
+  {
+    "k": 3,
+    "U": 1.0,
+    "w": 0.3,
+    "g": 0.7,
+    "core_dimension": 4,
+    "cell_checks": [
+      {
+        "holes": 1,
+        "length": 4,
+        "charge_dimension": 4,
+        "physical_sector_dimension": 32,
+        "charge_gap": 0.045086169700826684,
+        "full_gap": 0.04508616970082624,
+        "exact_code_residual": 6.922220526417403e-16,
+        "ground_split": 8.881784197001252e-16,
+        "endpoint_occupation": 0.5601858494086757,
+        "port_error": 3.8459253727671276e-16
+      },
+      {
+        "holes": 2,
+        "length": 5,
+        "charge_dimension": 10,
+        "physical_sector_dimension": 80,
+        "charge_gap": 0.000407179260481505,
+        "full_gap": 0.00040717926048128295,
+        "exact_code_residual": 6.443873135841481e-16,
+        "ground_split": 1.1102230246251565e-15,
+        "endpoint_occupation": 0.50118983386872,
+        "port_error": 1.9229626863835638e-16
+      }
+    ],
+    "boundary_transport_amplitude": 0.25149955601253837,
+    "transport_error": 5.606351459942525e-16
+  },
+  {
+    "k": 3,
+    "U": 1.0,
+    "w": 0.5,
+    "g": 0.7,
+    "core_dimension": 4,
+    "cell_checks": [
+      {
+        "holes": 1,
+        "length": 4,
+        "charge_dimension": 4,
+        "physical_sector_dimension": 32,
+        "charge_gap": 0.15762917550895017,
+        "full_gap": 0.15762917550894961,
+        "exact_code_residual": 3.078242246215395e-16,
+        "ground_split": 4.440892098500626e-16,
+        "endpoint_occupation": 0.6381966011250106,
+        "port_error": 3.236828524569469e-16
+      },
+      {
+        "holes": 2,
+        "length": 5,
+        "charge_dimension": 10,
+        "physical_sector_dimension": 80,
+        "charge_gap": 0.0103941764966482,
+        "full_gap": 0.010394176496646645,
+        "exact_code_residual": 7.353918196335446e-16,
+        "ground_split": 2.4424906541753444e-15,
+        "endpoint_occupation": 0.5121236704581557,
+        "port_error": 2.603703785810335e-16
+      }
+    ],
+    "boundary_transport_amplitude": 0.29057968333690887,
+    "transport_error": 3.764949453935611e-16
+  }
+]

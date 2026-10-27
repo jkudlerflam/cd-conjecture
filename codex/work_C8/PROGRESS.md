@@ -1,30 +1,75 @@
 # C8 progress
 
-2026-10-27. No conclusive answer. The completed report is `RESULT.md`.
+2026-10-27. Third run finished, nonconclusive. The complete report is `RESULT.md`,
+with new proofs in Sections 15-19. All writes stayed in this folder.
 
 ## Current best answer and restart point
 
-The resumed run is complete and nonconclusive. `RESULT.md` now contains all original results plus the full proofs and constructions from `exact_encoding.md`, `second_order_stability.md`, `ring_obstruction.md`, and `mobile_selector.md` in Sections 10-14.
+There is still no verified counterexample, no whole-class c bound, and no
+fixed-d construction with unbounded c. Do not redo the earlier joint-code,
+second-order, exact-encoding, or frozen-ring calculations. Their proofs
+remain in RESULT.md and the supporting notes.
 
-New proved results: exact invariant product codes force commuting active boundary algebras, excluding the old single-set hopping target as an exact separated-endpoint encoding. There is a leakage lower bound and a Lieb-Robinson gap/length/amplitude tradeoff. The full second-order flat-parent Hamiltonian includes adjacent bonds; an explicit two-energy, parity-preserving parent changes its singlet mass-channel coefficient from -1/2 to +3/8. Frozen-marker chains satisfying the energy-density hypotheses have at least L ground states on large prime rings. Ordinary finite-band defect motion has O(L^-2) levels.
+New proved work in this run:
 
-A new construction direction is explicit. The local move #L <-> R# added at the crossing of cell lengths b,b+1 projects to XX hopping of the lengths with amplitude u A_b^2. A finite-density mixture has projected gaps consistent with 1/L, while one long-cell defect has 1/L^2 gaps. This does not yet include a logical payload or establish the finite-u microscopic CFT.
+1. `equal_hopping_selector.md`: the d=4 mobile selector at equal hopping
+   t=u=a is exactly a free hard-core domain-wall chain with even wall
+   number and two boundary twists. K>2a+|mu| excludes every illegal
+   sector by an L-independent gap. For |mu|<4a, standard free-fermion
+   continuum input gives c=1 on all ring lengths. There is no payload.
+2. `padding_transport.md`: any two-port code can be padded to two lengths
+   using one extra vacancy symbol, with identical endpoint maps and
+   projected transport I/4. This is only an abstract code construction.
+3. `vacancy_parent.md`: the exact two-placement cat cannot be the sole
+   local ground code. A repeated-bond vacancy model instead preserves
+   ANY uniform frustration-free core code exactly in fixed occupied-
+   number sectors, with coherent scalar projected transport. Its two
+   endpoint strengths approach the same value but differ at finite
+   hopping. Its small tunneling gap is essential to scale accounting.
+4. `finite_ff_witness.md`: Hilbert basis theorem plus positivity gives a
+   finite K_FF(q) detecting uniform open-chain frustration freeness.
+   Selecting the longest frustration-free bulk core cannot give
+   unbounded length at fixed q. No bound on general CFTs follows.
+
+Latest reproducible checks, all with single-thread BLAS:
+
+- `python3 equal_hopping_selector.py`: full spectra L=5..9, every illegal
+  pattern L=4,5,6, physical entropies L=8,12,16,20. The L=20 interval
+  estimator gives 1.003981 and the 16-to-20 half-chain estimator 0.992700.
+  The independent Casimir fit L=40..160 gives 0.999999704. Entropies equal
+  the XX control plus log(2), as proved.
+- `python3 padding_transport.py`: both code lengths, both ports, I/4
+  transport and four length-pair bonds pass below 5e-16.
+- `python3 vacancy_parent.py`: a three-qubit symmetric core (D=4),
+  physical lengths 4 and 5, three hopping strengths. Code/port/transport
+  errors are below 1e-15, ground splittings below 3e-15. The initial
+  unconstrained eigensolver failed a port tolerance at a tiny tunneling
+  gap; enforcing the proved even-reflection sector corrected it.
+- Python compilation passed for all three new scripts. Earlier checks
+  were not rerun. No full large-c microscopic CFT computation was done.
 
 Open problems, ranked:
 
-1. Build a repeated-bond local code for BOTH lengths b and b+1, with compatible port maps and a marker hop that transports the logical state coherently. Do not assume one-length frozen blocks handle all rings.
-2. Establish thermodynamic effective-Hamiltonian control and infrared stability of the coupled length/payload theory. The spectral repair fixes one second-order sign, not all marginal couplings.
-3. Independently, settle the two conditional premises for the rank-one d=20992 chain in RESULT.md Section 6. It does not require small-d blocks or a selector.
-4. For a bound, find a restriction stronger than the new gap/length tradeoff that cannot be evaded by arbitrarily small gaps and exchange scales.
+1. A high-channel uniform core with controlled endpoint maps. For the
+   new local vacancy extension, it must be frustration free. The prior
+   arbitrary Choi parent does not qualify.
+2. Occupied-number selection in both cell lengths. A chemical potential
+   alone fails for the explicit ferromagnetic core, and Section 18
+   restricts the longest-frustration-free-core mechanism. Boundary or
+   frustrated selection remains possible.
+3. Volume-uniform effective theory and infrared stability including
+   length-dependent port strengths and ring twists. The exact equal-
+   hopping selector is not a proof for the small-hopping long-cell phase.
+4. Separately, prove the thermodynamic and infrared premises for the
+   rank-one d=20992 chain in RESULT.md Section 6.
+5. For a bound, control neutral sectors or conformal onset without a
+   lower-gap or visibility assumption. None of the new restricted
+   theorems does that.
 
-Latest reproducible checks:
-
-- `python3 c8_resume_checks.py`, with single-thread BLAS: new finite-dimensional identities pass, maximum flat-parent second-order residual 4.9e-14; the explicit 324-dimensional spectral parent has gap 1 and kernel/parity/weight/effective-coefficient errors below 1e-14. Writes `resume_checks.json`, `spectral_parent_checks.json`, `spectral_parent_q3_m4.npz`.
-- `python3 mobile_selector.py`: all local legality checks pass; b=5 graphs at L=33,44,55,66 match the free gap-chain energies to 3e-14 and have L*gap approaching about 2.3; one-defect L^2*gap approaches 4pi^2. Writes `mobile_selector_checks.json`.
-- `python3 local_parent_scan.py`: all six tested five-qubit dilation embeddings lack a uniform nonconstant two-site parent; this is numerical and specific to those embeddings. Writes `local_parent_scan.json`.
-- Compilation checks passed for the new scripts. Earlier `c8_checks.py --ed` results remain in the run 1 record and were not repeated.
-
-No full microscopic CFT numerical calculation, network search, cluster computation, or independent referee check was done. All project changes stayed in this folder. An incidental temporary stdout capture in /private/tmp was created and removed.
+Next action: work on item 1 or 2. A finite-history port-idle interface is
+available in `../../contrib/programmable_cell/astra_P1/RESULT.md`, but it
+explicitly does NOT prove the translation-invariant embedding claimed
+as routine in parts of its parent README. Do not silently assume it.
 
 The remainder is the chronological record. Its initial task list has been superseded by the ranking above.
 
@@ -128,3 +173,49 @@ Substantive step 13 completed, a way around the isolated-defect setup.
 New next step: combine a two-length local payload code with a marker hop that transports its logical state coherently. The code must have compatible boundary maps at both lengths, and the coupled length/payload theory must remain conformal. No such payload code is constructed yet. The earlier assumption that frozen blocks are sufficient even after addressing the first-order code is no longer tenable under the all-ring requirement.
 
 Final audit of the resumed run completed. RESULT.md contains the complete new proofs, explicit spectral data, numerical reproduction instructions, and the updated ranked next steps. Compilation passed for all three new scripts. No conclusive whole-class result was reached. The main directions that stalled were exact product-code embedding (excluded for the stated hopping target), the flat-parent completion (a dangerous singlet sign, repaired only at second order), and six direct local-parent fits (numerically excluded for those embeddings). The mobile two-length selector is the next construction direction, with payload transport and infrared control explicitly open.
+
+## Third run, continuation from the saved state
+
+Read the prior progress before project files. The latest programmable-cell contribution has a proved finite-history port-idle interface, but its own supporting report still explicitly lacks a translation-invariant embedding theorem. Its stability and ring caveats remain open. No existing C8 checks were rerun for orientation.
+
+New directions being developed, without repeating the earlier algebraic dilation work:
+
+1. The mobile selector at equal head and marker hopping appears exactly equivalent, in its legal sector, to even-number hard-core domain walls with two boundary twists. This should give a finite-coupling c=1 selector on all ring lengths, with a direct bound excluding illegal sectors. It does not carry the desired payload yet.
+2. A vacuum-padding construction appears to give arbitrary existing two-port codes compatible with TWO cell lengths: equal endpoint compressions, and a projected boundary shift proportional to the identity on both logical payloads. This is an abstract code compatibility construction, not a repeated-bond parent.
+3. If these work, examine whether vacancy doping of a hypothetical compatible-ring counterexample avoids frozen defects while preserving its violation. Separate any exact algebra from the spin-charge separation assumption.
+
+Next step: prove and check 1 and 2, then examine the effective coupling between length and payload modes. Whole-class status remains nonconclusive.
+
+Substantive step 14 completed, exact finite-hopping selector.
+
+`equal_hopping_selector.md` proves that the d=4 mobile selector at t=u=a is exactly even-number hard-core wall hopping with two boundary twists. The full legal spectrum is free, epsilon(k)=-2a cos(k)+mu/2. Every illegal pattern with k violations has energy at least E0(legal)+k(K-2a-|mu|); K>2a+|mu| therefore gives a uniform gap to all forbidden sectors. For |mu|<4a the continuum is the standard c=1 free-fermion CFT with a finite parity projection/twist completion, on all ring lengths. There is no long-period logical payload in this theorem.
+
+`equal_hopping_selector.py` passed full-spectrum comparisons at L=5..9 and all nonempty violation patterns at L=4,5,6. At mu=0, L divisible by four, E0=-2a csc(pi/L), v=2a, and the first opposite-twist gap is 2a tan(pi/(2L)). The physical-site interval entropy is EXACTLY the wall-chain entropy plus log(2). Direct entropy fits at L=20 give c=1.003981, with half-chain size slope c=0.992700 from L=16 to 20. The independent Casimir fit at L=40..160 gives c=0.999999704. Outputs are in `equal_hopping_selector_checks.json`.
+
+Substantive step 15 completed, two-length payload algebra.
+
+`padding_transport.md` gives W_p=(V tensor vacuum^p + vacuum^p tensor V)/sqrt(2), p=1,2, for ANY k-site two-port code V. Adding one local vacuum symbol costs q -> q+1. Both lengths have the same endpoint compressions, one half those of V. Moving their shared boundary gives (W_2 tensor W_1)^dagger(W_1 tensor W_2)=I/4. Hence the projected marker hop preserves both payloads and the projected payload bond is independent of lengths. This is NOT an invariant encoding, and no repeated-bond local parent is provided.
+
+`padding_transport.py` checked the actual q=2,m=2 Choi code with k=5, lengths 6 and 7. Isometry, both ports, coherent transport, and all four length-pair bond identities pass below 5e-16. Formal graded resource accounting q=17,m=144 gives padded d=72 and payload c=72, still above d-1, but this is only a target. Data are in `padding_transport_checks.json`.
+
+Next: investigate whether the padded code can have a local parent, and whether mobile vacancies offer a distinct all-ring completion. Do not conflate the exact equal-hopping selector with the small-hopping long-cell regime.
+
+Substantive step 16 completed, locality audit and a conditional local repair.
+
+The exact cat padding of step 15 cannot be the sole ground code of a nearest-neighbor parent. The two placements differ in occupation at both endpoints, so every local cross matrix element vanishes. If their symmetric combination minimizes H, positivity forces each placement separately to minimize H, leaving at least 2D ground states. This theorem is in `vacancy_parent.md`, Section 1. It is why step 15 alone does not solve local realizability.
+
+A constructive repair is proved for ANY frustration-free core with uniform positive bond h0. Add one vacancy symbol and use the same bond U(n_i-n_(i+1))^2 - w*(vacancy-label swap) + g*h0 on both lengths. In the sector with k occupied labels, vacancy hopping preserves their order. The unique positive charge ground state chi_p tensored with the original core code is the COMPLETE ground code, for p=1,2 holes. Endpoint maps are r_p times the original ones, where r_p tends to 1/2 as w/U tends to zero. A cut shift still compresses to beta*I on both payloads, with beta tending to 1/4. Unlike the cat construction, r_1 and r_2 need not match at finite w. The small odd/even tunneling gap must be respected when coupling cells.
+
+`vacancy_parent.py` checks a genuine three-qubit symmetric ferromagnetic core (D=4, noncommuting compressed ports), with repeated physical bonds on lengths 4 and 5, at w=0.15,0.3,0.5. All code, port, and two-cell transport errors are below 1e-15, and ground splittings below 3e-15. The smallest tested charge gap is 5.8573e-6. The initial w=0.15 run failed the 1e-10 port tolerance because the unconstrained eigensolver mixed the very close reflection partners at roundoff scale (error 1.244e-10); projecting onto the mathematically known even-reflection sector resolves this and retains an eigenvector residual below 1e-12. Outputs are `vacancy_parent_checks.json`.
+
+Whole-class status remains nonconclusive. Missing: a high-channel frustration-free uniform core, selecting the required occupied-number sectors in a full ring, and controlling length/payload interactions at finite coupling. Vacancy doping of an entire chain would preserve the formal excess c-(d-1) if spin-charge separation held, but its gapless charge denominators prevent a volume-uniform conclusion from elementary perturbation theory. This line is recorded as conditional, not proved.
+
+Substantive step 17 completed, finite witness for a restricted selection route.
+
+`finite_ff_witness.md` proves that for each q there is a finite K_FF(q) such that a uniform positive nearest-neighbor bond having a zero-energy OPEN-chain state at K_FF(q) has one at every length. Proof: the determinant polynomials det H_N generate a finitely generated ideal in q^4 real variables (Hilbert basis theorem); positivity makes existence at length K imply existence at all shorter lengths. No effective value of K_FF is obtained.
+
+Thus selecting an arbitrarily long core as the LONGEST frustration-free open segment is impossible at fixed q when there are no extra boundary terms. It gives c_target<K_FF(q) log_2(q) for the particular first-order Clifford target with that selection rule. It does not apply to boundary computations or C7's negative kinetic-energy selection and does not establish a whole-class c bound. The same note proves why a vacancy chemical potential alone cannot select the partially occupied examples when U>=w and fully occupied cores are frustration free.
+
+The alternative routes have now been followed beyond the first partial results. The exact selector works, the exact cat parent fails, a finite-hopping local replacement works under a frustration-free-core hypothesis, and its number-sector selection and general high-channel core remain unresolved. Next is to integrate the new proofs and check the final report without promoting these restricted results to a conclusion.
+
+Final audit of run 3 completed. RESULT.md Sections 15-19 contain every new proof, construction, check and limitation, with a fresh ranked handoff. The largest complete-spectrum error is 1.96e-14 and the largest entropy-identity error is 4.41e-13. Python compilation passed for all three new scripts. The restricted frustration-free witness argument was checked for its positivity, nesting and boundary-term hypotheses. No conclusive outcome has been reached. Only this folder was modified; no commit, push, network, cluster computation or independent referee check was performed.
