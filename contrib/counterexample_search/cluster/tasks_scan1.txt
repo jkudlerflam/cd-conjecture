@@ -1,0 +1,44 @@
+--family orbital --npts 600 --half --sizes 8 10 12 --chunk 0 10 --nlev 3 --out scan_orbital_c0.jsonl
+--family orbital --npts 600 --half --sizes 8 10 12 --chunk 1 10 --nlev 3 --out scan_orbital_c1.jsonl
+--family orbital --npts 600 --half --sizes 8 10 12 --chunk 2 10 --nlev 3 --out scan_orbital_c2.jsonl
+--family orbital --npts 600 --half --sizes 8 10 12 --chunk 3 10 --nlev 3 --out scan_orbital_c3.jsonl
+--family orbital --npts 600 --half --sizes 8 10 12 --chunk 4 10 --nlev 3 --out scan_orbital_c4.jsonl
+--family orbital --npts 600 --half --sizes 8 10 12 --chunk 5 10 --nlev 3 --out scan_orbital_c5.jsonl
+--family orbital --npts 600 --half --sizes 8 10 12 --chunk 6 10 --nlev 3 --out scan_orbital_c6.jsonl
+--family orbital --npts 600 --half --sizes 8 10 12 --chunk 7 10 --nlev 3 --out scan_orbital_c7.jsonl
+--family orbital --npts 600 --half --sizes 8 10 12 --chunk 8 10 --nlev 3 --out scan_orbital_c8.jsonl
+--family orbital --npts 600 --half --sizes 8 10 12 --chunk 9 10 --nlev 3 --out scan_orbital_c9.jsonl
+--family spin32 --npts 400 --sizes 8 10 12 --chunk 0 20 --nlev 3 --out scan_spin32_c0.jsonl
+--family spin32 --npts 400 --sizes 8 10 12 --chunk 1 20 --nlev 3 --out scan_spin32_c1.jsonl
+--family spin32 --npts 400 --sizes 8 10 12 --chunk 2 20 --nlev 3 --out scan_spin32_c2.jsonl
+--family spin32 --npts 400 --sizes 8 10 12 --chunk 3 20 --nlev 3 --out scan_spin32_c3.jsonl
+--family spin32 --npts 400 --sizes 8 10 12 --chunk 4 20 --nlev 3 --out scan_spin32_c4.jsonl
+--family spin32 --npts 400 --sizes 8 10 12 --chunk 5 20 --nlev 3 --out scan_spin32_c5.jsonl
+--family spin32 --npts 400 --sizes 8 10 12 --chunk 6 20 --nlev 3 --out scan_spin32_c6.jsonl
+--family spin32 --npts 400 --sizes 8 10 12 --chunk 7 20 --nlev 3 --out scan_spin32_c7.jsonl
+--family spin32 --npts 400 --sizes 8 10 12 --chunk 8 20 --nlev 3 --out scan_spin32_c8.jsonl
+--family spin32 --npts 400 --sizes 8 10 12 --chunk 9 20 --nlev 3 --out scan_spin32_c9.jsonl
+--family spin32 --npts 400 --sizes 8 10 12 --chunk 10 20 --nlev 3 --out scan_spin32_c10.jsonl
+--family spin32 --npts 400 --sizes 8 10 12 --chunk 11 20 --nlev 3 --out scan_spin32_c11.jsonl
+--family spin32 --npts 400 --sizes 8 10 12 --chunk 12 20 --nlev 3 --out scan_spin32_c12.jsonl
+--family spin32 --npts 400 --sizes 8 10 12 --chunk 13 20 --nlev 3 --out scan_spin32_c13.jsonl
+--family spin32 --npts 400 --sizes 8 10 12 --chunk 14 20 --nlev 3 --out scan_spin32_c14.jsonl
+--family spin32 --npts 400 --sizes 8 10 12 --chunk 15 20 --nlev 3 --out scan_spin32_c15.jsonl
+--family spin32 --npts 400 --sizes 8 10 12 --chunk 16 20 --nlev 3 --out scan_spin32_c16.jsonl
+--family spin32 --npts 400 --sizes 8 10 12 --chunk 17 20 --nlev 3 --out scan_spin32_c17.jsonl
+--family spin32 --npts 400 --sizes 8 10 12 --chunk 18 20 --nlev 3 --out scan_spin32_c18.jsonl
+--family spin32 --npts 400 --sizes 8 10 12 --chunk 19 20 --nlev 3 --out scan_spin32_c19.jsonl
+--family g2 --npts 300 --sizes 5 6 7 8 --chunk 0 10 --nlev 3 --out scan_g2_c0.jsonl
+--family g2 --npts 300 --sizes 5 6 7 8 --chunk 1 10 --nlev 3 --out scan_g2_c1.jsonl
+--family g2 --npts 300 --sizes 5 6 7 8 --chunk 2 10 --nlev 3 --out scan_g2_c2.jsonl
+--family g2 --npts 300 --sizes 5 6 7 8 --chunk 3 10 --nlev 3 --out scan_g2_c3.jsonl
+--family g2 --npts 300 --sizes 5 6 7 8 --chunk 4 10 --nlev 3 --out scan_g2_c4.jsonl
+--family g2 --npts 300 --sizes 5 6 7 8 --chunk 5 10 --nlev 3 --out scan_g2_c5.jsonl
+--family g2 --npts 300 --sizes 5 6 7 8 --chunk 6 10 --nlev 3 --out scan_g2_c6.jsonl
+--family g2 --npts 300 --sizes 5 6 7 8 --chunk 7 10 --nlev 3 --out scan_g2_c7.jsonl
+--family g2 --npts 300 --sizes 5 6 7 8 --chunk 8 10 --nlev 3 --out scan_g2_c8.jsonl
+--family g2 --npts 300 --sizes 5 6 7 8 --chunk 9 10 --nlev 3 --out scan_g2_c9.jsonl
+--family so5 --npts 96 --sizes 6 8 10 12 --chunk 0 4 --nlev 3 --out scan_so5_c0.jsonl
+--family so5 --npts 96 --sizes 6 8 10 12 --chunk 1 4 --nlev 3 --out scan_so5_c1.jsonl
+--family so5 --npts 96 --sizes 6 8 10 12 --chunk 2 4 --nlev 3 --out scan_so5_c2.jsonl
+--family so5 --npts 96 --sizes 6 8 10 12 --chunk 3 4 --nlev 3 --out scan_so5_c3.jsonl

@@ -1,0 +1,4 @@
+--model spin32 --coeff 0.00000000 1.58768834 0.15643447 0.38768834 --chis 16 32 64 96 128 192 256 --steps 400 --label t0.45_e0.6 --out idmrg2_spin32.jsonl
+--model spin32 --coeff 0.00000000 1.38768834 0.15643447 0.58768834 --chis 16 32 64 96 128 192 256 --steps 400 --label t0.45_e0.4 --out idmrg2_spin32.jsonl
+--model spin32 --coeff 0.00000000 1.78228725 0.18738131 0.18228725 --chis 16 32 64 96 128 192 256 --steps 400 --label t0.44_e0.8 --out idmrg2_spin32.jsonl
+--model spin32 --coeff 0.00000000 0.80901699 -0.58778525 0.80901699 --chis 16 32 64 96 128 192 256 --steps 400 --label t0.7_e0.0 --out idmrg2_spin32.jsonl

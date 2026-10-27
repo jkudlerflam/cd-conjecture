@@ -1,0 +1,15 @@
+--model sp4 --theta 0.06544984694978735 --sizes 14 --nlev 4 --cas 3 --label pi/48 --out res_sp4_L14.jsonl
+--model sp4 --theta 0.09817477042468103 --sizes 14 --nlev 4 --cas 3 --label pi/32 --out res_sp4_L14.jsonl
+--model sp4 --theta 0.1308996938995747 --sizes 14 --nlev 4 --cas 3 --label pi/24 --out res_sp4_L14.jsonl
+--model sp4 --theta 0.19634954084936207 --sizes 14 --nlev 4 --cas 3 --label pi/16 --out res_sp4_L14.jsonl
+--model sp4 --theta 0.2617993877991494 --sizes 14 --nlev 4 --cas 3 --label pi/12 --out res_sp4_L14.jsonl
+--model sp4 --theta 0.39269908169872414 --sizes 14 --nlev 4 --cas 3 --label pi/8 --out res_sp4_L14.jsonl
+--model sp4 --theta 0.5235987755982988 --sizes 14 --nlev 4 --cas 3 --label pi/6 --out res_sp4_L14.jsonl
+--model sp4 --theta 0.7853981633974483 --sizes 14 --nlev 4 --cas 3 --label pi/4 --out res_sp4_L14.jsonl
+--model sp4 --theta 1.1780972450961724 --sizes 14 --nlev 4 --cas 3 --label 3pi/8 --out res_sp4_L14.jsonl
+--model sp4 --theta 3.141592653589793 --sizes 14 --nlev 4 --cas 3 --label pi --out res_sp4_L14.jsonl
+--model sp4 --theta 2.0943951023931953 --sizes 14 --nlev 4 --cas 3 --label 2pi/3 --out res_sp4_L14.jsonl
+--model uls --d 3 --sizes 18 --nlev 4 --out res_cal_uls3_L18.jsonl
+--model uls --d 4 --sizes 16 --nlev 4 --momenta 0 1 4 7 8 --out res_cal_uls4_L16.jsonl
+--model spin1 --coeff 0 2 3 --sizes 18 --nlev 4 --out res_cal_tb1_L18.jsonl
+--model decoupled --ratio 3 --sizes 14 --nlev 4 --out res_cal_dec3_L14.jsonl

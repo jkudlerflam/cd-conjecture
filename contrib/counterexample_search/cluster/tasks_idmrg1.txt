@@ -1,0 +1,14 @@
+--model sp4 --theta 0.04908738521234052 --chis 16 32 64 96 128 192 256 --steps 400 --label pi/64 --out idmrg2_sp4.jsonl
+--model sp4 --theta 0.06544984694978735 --chis 16 32 64 96 128 192 256 --steps 400 --label pi/48 --out idmrg2_sp4.jsonl
+--model sp4 --theta 0.09817477042468103 --chis 16 32 64 96 128 192 256 --steps 400 --label pi/32 --out idmrg2_sp4.jsonl
+--model sp4 --theta 0.1308996938995747 --chis 16 32 64 96 128 192 256 --steps 400 --label pi/24 --out idmrg2_sp4.jsonl
+--model sp4 --theta 0.19634954084936207 --chis 16 32 64 96 128 192 256 --steps 400 --label pi/16 --out idmrg2_sp4.jsonl
+--model sp4 --theta 0.2617993877991494 --chis 16 32 64 96 128 192 256 --steps 400 --label pi/12 --out idmrg2_sp4.jsonl
+--model sp4 --theta 0.39269908169872414 --chis 16 32 64 96 128 192 256 --steps 400 --label pi/8 --out idmrg2_sp4.jsonl
+--model sp4 --theta 0.7853981633974483 --chis 16 32 64 96 128 192 256 --steps 400 --label pi/4 --out idmrg2_sp4.jsonl
+--model sp4 --theta 1.1780972450961724 --chis 16 32 64 96 128 192 256 --steps 400 --label 3pi/8 --out idmrg2_sp4.jsonl
+--model sp4 --theta 3.141592653589793 --chis 16 32 64 96 128 192 256 --steps 400 --label pi --out idmrg2_sp4.jsonl
+--model uls --coeff 4 --chis 16 32 64 96 128 192 256 --steps 400 --label su4 --out idmrg2_cal.jsonl
+--model uls --coeff 3 --chis 16 32 64 96 128 192 256 --steps 400 --label su3 --out idmrg2_cal.jsonl
+--model spin1 --coeff 0 2 3 --chis 16 32 64 96 128 192 256 --steps 400 --label tb1 --out idmrg2_cal.jsonl
+--model orbital --coeff 0 1 3 --chis 16 32 64 96 128 192 256 --steps 400 --label dec13 --out idmrg2_cal.jsonl
