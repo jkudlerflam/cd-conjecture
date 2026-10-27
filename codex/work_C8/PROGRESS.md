@@ -327,3 +327,23 @@ corollaries were checked algebraically; no independent referee was used.
 The earlier Choi code was checked analytically against the new Schmidt
 obstruction and has full boundary rank for all its code states.
 The verdict is still nonconclusive. Only this folder was modified.
+
+## Fifth run, continuation from the fourth-run handoff
+
+Read the saved state and current requested context. The new ir_control
+folder contains separate tasks on effective-theory control and operator
+classification, so this run will not duplicate them. The programmable-cell
+outline still lacks the complete repeated-bond embedding and all-ring
+completion. The spin-3/2 tricritical search has returned a negative result
+at the sizes tested. No network, cluster, or subagent work is being used.
+
+New attack in progress: an explicit nonnegative, equal-amplitude joint
+Clifford code. Instead of quantum state preparation, use a reversible
+classical readout that temporarily moves one logical bit to a boundary
+pair of physical letters. Two signed physical pairs per logical flavor
+appear sufficient, giving n<=floor(q(q-1)/4) complex modes and scale
+1/(2n) at BOTH ports. The intended right operators implement the required
+parity dressing. If the algebra checks out, this supplies a stoquastic
+flat parent and a classical-history interface, but not yet a uniform NN
+parent. Next: derive both maps, check small examples, then examine the
+locality and clock obligations without assuming a compiler theorem.

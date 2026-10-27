@@ -68,19 +68,13 @@ These are spelled out in [CONTRIBUTING.md](CONTRIBUTING.md). In brief, tag every
 
 ## Where things stand
 
-The conjecture is open. We know of no proof and no counterexample within its scope, and it appears to be true.
+The conjecture is open. The working standard is theoretical physics (standard RG, controlled perturbation theory, calibrated numerics), not mathematical rigor.
 
-- Entropic arguments cannot prove it. A monotone lattice c-function bounded by K log d at the lattice scale would give c ≤ K log d, which SU(d)₁ violates at large d. Thermodynamic, Lieb–Robinson and sum-rule bounds only control c times a power of the conformal window.
-- It is proved in restricted classes:
-  - quasi-free nearest-neighbour chains of any period, where c ≤ log₂ d;
-  - SU(d)-symmetric bonds;
-  - Gaussian IR theories whose modes are resolved by commuting on-site charges, where c equals the rank of their susceptibility matrix and is at most d − 1;
-  - WZW IR theories obeying a level ceiling.
-- Interacting invariants bounded by d − 1 exist (the affine dimension of a parton occupation code, the susceptibility rank), but they equal c only when the IR has no neutral sector. Every route so far stops at the same missing lemma, a locality-based bound on neutral (Majorana, parafermion, coset) stress-tensor sectors.
-- Numerical and analytic searches found nothing above d − 1. They covered all nearest-neighbour qubit chains, Sp(4), spin-3/2 SU(2), spin-orbital and spin-1 families, and integrable and non-compact candidates. The non-compact candidates turned out to be non-Hermitian.
-- Whether c is bounded by any function of d at all is open. Two conditional bounds are known. One is c ≤ 1 + (6/π) K(d) log d, if c-many conformal levels already appear on rings of length K(d). The other is c < d² − 1, if the IR stress tensor is built from currents of on-site symmetries. On the other side, an explicit d = 4 chain forms spontaneous blocks of any length with fixed couplings. A first-order coupling between such blocks through one bond is limited by operator Schmidt rank (at most d² − 1), which still leaves room for c > d − 1 (REPORT.md §9).
-- At d = 2, c ≤ 1 is settled only on the free-fermion, U(1) and XYZ slices of the 8-parameter family. The generic chain is open.
-- The sharpest concrete counterexample target is at d = 4. Spin-3/2 chains have a c = 3 phase, SO(5)₁ × Ising, with a translation-protected singlet Majorana. If that Majorana turns tricritical while the SO(5)₁ sector stays gapless, the total is c = 16/5 > 3. A dedicated search of the phase boundary is under way (REPORT.md §9.4).
+- **Small d: no counterexample.** At d = 2 every candidate found turned out to have c ≤ 1, and the last two suspicious points are c = 1 floating spirals. At d = 3 to 7 about 900 points in symmetric families gave nothing above d − 1. The best d = 4 target (a tricritical singlet Majorana on top of the c = 3 spin-3/2 phase, c = 16/5) was not found; it is codimension 2 and shows no fingerprint in the map of the phase.
+- **Large d: a candidate construction for c unbounded at fixed d₀.** Sites spontaneously form long cells (an explicit d = 4 period selector, with a mobile version for every ring length). Each cell runs a port-idle internal computation that prepares a logical code. Neighbouring cells couple through one small bond, either at first order (a free-Majorana chain, c = r/2) or at second order (any logical bond, any N). The target can be an incommensurate multi-flavour Luttinger liquid that needs no symmetry protection. If it holds, c–d fails for d ≥ d₀, roughly 10³ to 10⁴, and no bound c ≤ f(d) exists. Remaining steps: writing the cell machinery out explicitly (fixing d₀), confirming c at finite coupling numerically, an adversarial review, and ring lengths. See REPORT.md §9.
+- **Proved or conditional bounds.** The bound holds for quasi-free chains (c ≤ log₂ d), SU(d)-symmetric bonds, Gaussian IR theories resolved by commuting on-site charges, and WZW IR theories with level ceilings. There is a conditional f(d) bound, c ≤ 1 + (6/π) K(d) log d, if c-many conformal levels appear on rings of length K(d), and c < d² − 1 when the IR stress tensor is built from on-site symmetry currents. Entropic arguments alone can give at best c ≲ (onset length) × log d.
+
+The full account, with what was checked and how, is in [REPORT.md](REPORT.md).
 
 ## Open problems
 

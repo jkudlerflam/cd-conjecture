@@ -1,0 +1,15 @@
+--case xx --chis 8 12 16 24 32 48 64 96
+--case inc --chis 8 12 16 24 32 48 64 96
+--case sym --chis 8 12 16 24 32 48 64 96
+--case inc_rand --g 0.2 --seed 1 --chis 8 12 16 24 32 48 64 96
+--case inc_rand --g 0.2 --seed 2 --chis 8 12 16 24 32 48 64 96
+--case inc_rand --g 0.5 --seed 1 --chis 8 12 16 24 32 48 64 96
+--case sym_rand --g 0.2 --seed 1 --chis 8 12 16 24 32 48 64 96
+--case sym_rand --g 0.2 --seed 2 --chis 8 12 16 24 32 48 64 96
+--case sym_gn --g -0.15 --chis 8 12 16 24 32 48 64 96
+--case sym_gn --g -0.3 --chis 8 12 16 24 32 48 64 96
+--case sym_gn --g 0.3 --chis 8 12 16 24 32 48 64 96
+--case inc_gn --g -0.15 --chis 8 12 16 24 32 48 64 96
+--case inc_gn --g -0.3 --chis 8 12 16 24 32 48 64 96
+--case inc_leak --lam 0.25 --g 1.0 --seed 1 --chis 8 12 16 24 32 48 64
+--case sym_leak --lam 0.25 --g 1.0 --seed 1 --chis 8 12 16 24 32 48 64

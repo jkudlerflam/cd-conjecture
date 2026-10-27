@@ -1,0 +1,4 @@
+--theta 0.5 --eta 0 --n 4 --chis 16 32 48 64 96 128 160 192 --out data/vumps_cal_su4.json
+--theta 1.0 --eta 0 --n 4 --chis 16 32 48 64 96 128 160 192 --out data/vumps_cal_sp4pi.json
+--theta 0.45 --eta 0.6 --n 4 --chis 16 32 48 64 96 128 160 192 --out data/vumps_045_06.json
+--theta 0.3 --eta -0.8 --n 4 --chis 16 32 48 64 96 128 160 192 --out data/vumps_030_m08.json

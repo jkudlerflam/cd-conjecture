@@ -1,0 +1,99 @@
+{
+  "status": "finite code checks, not CFT numerics",
+  "static": [
+    {
+      "q": 3,
+      "n": 1,
+      "graded": false,
+      "logical_dimension": 2,
+      "physical_dimension": 18,
+      "alpha": 0.5,
+      "max_operator_error": 2.220446049250313e-16,
+      "bond_frobenius_error": 3.1401849173675503e-16,
+      "projector_min_offdiagonal": 0.4999999999999999
+    },
+    {
+      "q": 4,
+      "n": 3,
+      "graded": false,
+      "logical_dimension": 8,
+      "physical_dimension": 384,
+      "alpha": 0.16666666666666666,
+      "max_operator_error": 2.220446049250313e-16,
+      "bond_frobenius_error": 3.399349888776296e-16,
+      "projector_min_offdiagonal": 0.1666666666666667
+    },
+    {
+      "q": 5,
+      "n": 5,
+      "graded": false,
+      "logical_dimension": 32,
+      "physical_dimension": 4000,
+      "alpha": 0.1,
+      "max_operator_error": 1.1102230246251565e-16,
+      "bond_frobenius_error": 1.7554167342883506e-16,
+      "projector_min_offdiagonal": 0.1
+    },
+    {
+      "q": 6,
+      "n": 6,
+      "graded": false,
+      "logical_dimension": 64,
+      "physical_dimension": 13824,
+      "alpha": 0.08333333333333333,
+      "max_operator_error": 2.220446049250313e-16,
+      "bond_frobenius_error": 9.61481343191782e-16,
+      "projector_min_offdiagonal": 0.08333333333333336
+    },
+    {
+      "q": 4,
+      "n": 2,
+      "graded": true,
+      "logical_dimension": 4,
+      "physical_dimension": 128,
+      "alpha": 0.25,
+      "max_operator_error": 0.0,
+      "bond_frobenius_error": 0.0,
+      "projector_min_offdiagonal": 0.25,
+      "grading_error": 0.0
+    },
+    {
+      "q": 6,
+      "n": 4,
+      "graded": true,
+      "logical_dimension": 16,
+      "physical_dimension": 2304,
+      "alpha": 0.125,
+      "max_operator_error": 1.1102230246251565e-16,
+      "bond_frobenius_error": 3.1401849173675503e-16,
+      "projector_min_offdiagonal": 0.12499999999999997,
+      "grading_error": 0.0
+    }
+  ],
+  "history": [
+    {
+      "q": 3,
+      "n": 1,
+      "clock_length": 5,
+      "total_dimension": 160,
+      "alpha": 0.2,
+      "max_code_error": 1.1102230246251565e-16,
+      "spectrum_error": 2.886579864025407e-15,
+      "measured_ground_degeneracy": 2,
+      "gap": 0.0489434837048442,
+      "predicted_gap": 0.04894348370484647
+    },
+    {
+      "q": 4,
+      "n": 2,
+      "clock_length": 9,
+      "total_dimension": 900,
+      "alpha": 0.1111111111111111,
+      "max_code_error": 3.3306690738754696e-16,
+      "spectrum_error": 1.1102230246251565e-14,
+      "measured_ground_degeneracy": 4,
+      "gap": 0.015192246987787808,
+      "predicted_gap": 0.01519224698779198
+    }
+  ]
+}
