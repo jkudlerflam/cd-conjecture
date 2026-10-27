@@ -1,0 +1,40 @@
+The general \(d=2\) conjecture is not settled by this calculation. The controlled classes and the remaining interacting set are identified precisely.
+
+Saved [the full derivation and classification](<work_C6_d2/c6.tex>), [c6.py](<work_C6_d2/c6.py>), [numerical tables](<work_C6_d2/c6_tables.txt>), and [the entropy comparison figure](<work_C6_d2/c6_entropy.png>). The note is LaTeX source, without a compiled PDF.
+
+Codimensions below refer to the eight-dimensional quotient by global rotations and positive scale. Rows overlap.
+
+| Class | Codimension | Status |
+|---|---:|---|
+| Quadratic Jordan–Wigner | 5 | Proved using the supplied quasi-free theorem |
+| Uniform \(U(1)\) | 5 | Bound follows from explicitly stated XXZ input |
+| \(Z_2\times Z_2\), XYZ | 6 | Bound follows from stated XYZ/XXZ inputs |
+| Single uniform unitary \(Z_2\) | 4 | Open outside controlled subloci |
+| Only internal antiunitary symmetry | 3 | Open; two distinct branches |
+| No uniform internal symmetry | 0 | Open |
+| Exact \(SU(2)\) | 8 | Heisenberg only |
+
+Writing \(S=J_s\), the controlled loci are
+\[
+\begin{aligned}
+\mathcal F&=\{\exists n:\ Sn=0,\ D,h\parallel n\},\\
+\mathcal U&=\{\exists n:\ S=aI+(b-a)nn^T,\ D,h\parallel n\},\\
+\mathcal X&=\{D=h=0\}.
+\end{aligned}
+\]
+The algebraic residual set is
+\[
+\mathcal R=\mathcal P\setminus(\mathcal F\cup\mathcal U\cup\mathcal X).
+\]
+The report gives the symmetry proofs, transformation conditions, range restrictions for dualities, and the assumptions behind each controlled result. The rank-one bound on commuting on-site charges does not bound emergent sectors.
+
+I completed 108 screening cases and stored 710 momentum/parity spectral blocks, reaching \(L=22\), within about 37 minutes.
+
+- Ising and XX calibrations gave energy estimates \(c=0.499998\) and \(0.999939\).
+- An interacting single-\(Z_2\) candidate gave \(c_{\rm chord}(22)=0.50610\), with spectra and energy fits consistent with Ising criticality.
+- Other candidates gave chord estimates \(1.19481\) and \(1.40121\). Their half-chain entropy growth disagreed with those values, so neither is a measured central charge.
+- Near the symmetry-free candidate, the soft-mode curvature stayed approximately constant across \(L=16,20,22\), consistent with a quadratic threshold. Three sizes do not establish its thermodynamic exponent.
+
+No scale-consistent \(c>1\) point was established. No general exclusion was proved for \(\mathcal R\).
+
+[gpt_solve: backend=codex model=gpt-6-astra effort=high transcript=20261027T154612-61107]

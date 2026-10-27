@@ -1,0 +1,14 @@
+The unrestricted question remains unresolved. I proved two conditional bounds and constructed a rigorous partial model.
+
+- If the full stress tensor is Sugawara for microscopic on-site symmetry currents, then \(c_T\le d^2-1\). This requires neither a level bound nor a conformal onset estimate. The uncontrolled term without this hypothesis is the coset central charge.
+- Modular invariance forces at least
+  \[
+  1+\frac{\pi e}{12}c\,e^{\pi c/6}
+  \]
+  states below scaling dimension \(c/4+2\). If these states appear on a lattice ring of length at most \(K(d)\), then \(c_T\le1+(6/\pi)K(d)\log d\). The uniform realization assumption remains unproved.
+- An explicit \(d=4\) nearest-neighbor Hamiltonian selects arbitrarily large ground-state periods with bounded, \(L\)-independent couplings. Adding qubits gives \(2^b\)-dimensional block ground spaces at \(d=8\). These models are not conformal.
+- Direct projection of one boundary bond cannot produce an SU(\(N\)) permutation interaction for \(N>d\). Higher-order encodings remain possible, but their symmetry, infrared stability, and periodic sectors require proof.
+
+Full statements, proofs, and limitations are in [C7_result.md](<work_C7/C7_result.md>). All numerical checks in [c7.py](<work_C7/c7.py>) pass. No pre-existing files were read or listed.
+
+[gpt_solve: backend=codex model=gpt-6-astra effort=high transcript=20261027T155651-66467]
