@@ -1,0 +1,241 @@
+{
+  "gamma": 0.19,
+  "projectors": {
+    "sum": 4.580186139519865e-16,
+    "idempotence_max": 2.4952704836625103e-15
+  },
+  "baxterization_trials": [
+    {
+      "a": 4,
+      "b": 6,
+      "product": false,
+      "relative_ybe_residual": 3.5913791122264234e-16
+    },
+    {
+      "a": -4,
+      "b": -6,
+      "product": false,
+      "relative_ybe_residual": 3.7994741621218005e-16
+    },
+    {
+      "a": 4,
+      "b": 3,
+      "product": false,
+      "relative_ybe_residual": 0.0002835500958039017
+    },
+    {
+      "a": -4,
+      "b": -3,
+      "product": false,
+      "relative_ybe_residual": 0.0002835500958039258
+    },
+    {
+      "a": 4,
+      "b": -3,
+      "product": false,
+      "relative_ybe_residual": 0.000690885553156717
+    },
+    {
+      "a": -4,
+      "b": 3,
+      "product": false,
+      "relative_ybe_residual": 0.0006908855531567471
+    },
+    {
+      "a": 4,
+      "b": -6,
+      "product": false,
+      "relative_ybe_residual": 0.0008869199767084577
+    },
+    {
+      "a": -4,
+      "b": 6,
+      "product": false,
+      "relative_ybe_residual": 0.0008869199767084776
+    },
+    {
+      "a": 4,
+      "b": -6,
+      "product": true,
+      "relative_ybe_residual": 0.001753852483347998
+    },
+    {
+      "a": -4,
+      "b": 6,
+      "product": true,
+      "relative_ybe_residual": 0.0017538524833480202
+    },
+    {
+      "a": 4,
+      "b": 6,
+      "product": true,
+      "relative_ybe_residual": 0.0017722299273273685
+    },
+    {
+      "a": -4,
+      "b": -6,
+      "product": true,
+      "relative_ybe_residual": 0.0017722299273273759
+    },
+    {
+      "a": 4,
+      "b": -3,
+      "product": true,
+      "relative_ybe_residual": 0.001801207127903826
+    },
+    {
+      "a": -4,
+      "b": 3,
+      "product": true,
+      "relative_ybe_residual": 0.001801207127903853
+    },
+    {
+      "a": 4,
+      "b": 3,
+      "product": true,
+      "relative_ybe_residual": 0.0018210513783463369
+    },
+    {
+      "a": -4,
+      "b": -3,
+      "product": true,
+      "relative_ybe_residual": 0.0018210513783463614
+    },
+    {
+      "a": -2,
+      "b": -6,
+      "product": false,
+      "relative_ybe_residual": 0.0021440769736848324
+    },
+    {
+      "a": 2,
+      "b": 6,
+      "product": false,
+      "relative_ybe_residual": 0.002144076973684857
+    },
+    {
+      "a": -2,
+      "b": -3,
+      "product": false,
+      "relative_ybe_residual": 0.0026822087408207916
+    },
+    {
+      "a": 2,
+      "b": 3,
+      "product": false,
+      "relative_ybe_residual": 0.0026822087408208367
+    },
+    {
+      "a": -2,
+      "b": 3,
+      "product": false,
+      "relative_ybe_residual": 0.003924946248723823
+    },
+    {
+      "a": 2,
+      "b": -3,
+      "product": false,
+      "relative_ybe_residual": 0.0039249462487238335
+    },
+    {
+      "a": -2,
+      "b": 6,
+      "product": false,
+      "relative_ybe_residual": 0.004679378818584045
+    },
+    {
+      "a": 2,
+      "b": -6,
+      "product": false,
+      "relative_ybe_residual": 0.004679378818584057
+    },
+    {
+      "a": 2,
+      "b": -6,
+      "product": true,
+      "relative_ybe_residual": 0.012706117693227763
+    },
+    {
+      "a": -2,
+      "b": 6,
+      "product": true,
+      "relative_ybe_residual": 0.012706117693227771
+    },
+    {
+      "a": -2,
+      "b": 3,
+      "product": true,
+      "relative_ybe_residual": 0.012865113100797215
+    },
+    {
+      "a": 2,
+      "b": -3,
+      "product": true,
+      "relative_ybe_residual": 0.012865113100797217
+    },
+    {
+      "a": 2,
+      "b": 6,
+      "product": true,
+      "relative_ybe_residual": 0.013017582255420958
+    },
+    {
+      "a": -2,
+      "b": -6,
+      "product": true,
+      "relative_ybe_residual": 0.013017582255420958
+    },
+    {
+      "a": -2,
+      "b": -3,
+      "product": true,
+      "relative_ybe_residual": 0.01302113990135071
+    },
+    {
+      "a": 2,
+      "b": 3,
+      "product": true,
+      "relative_ybe_residual": 0.013021139901350728
+    }
+  ],
+  "ik_local_antihermitian_ratio": 0.6138665894846904,
+  "ik_periodic_antihermitian_ratio": {
+    "3": 0.4851223075419852,
+    "4": 0.4515249879681012
+  },
+  "tl_relations": {
+    "e_squared": 0.0,
+    "e_e_e": 0.0
+  },
+  "tl_periodic_antihermitian_ratio": {
+    "4": 0.24384840846243866,
+    "6": 0.26186448400390494
+  },
+  "osp": {
+    "3|0": {
+      "local_antihermitian_ratio": 0.0,
+      "contraction_relation": 0.0,
+      "periodic_L3_antihermitian_ratio": 0.0
+    },
+    "0|4": {
+      "local_antihermitian_ratio": 0.0,
+      "contraction_relation": 0.0,
+      "periodic_L3_antihermitian_ratio": 0.0
+    },
+    "1|2": {
+      "local_antihermitian_ratio": 0.7807200583588264,
+      "contraction_relation": 0.0,
+      "periodic_L3_antihermitian_ratio": 0.642575463121999
+    },
+    "2|2": {
+      "local_antihermitian_ratio": 1.0,
+      "contraction_relation": 0.0,
+      "periodic_L3_antihermitian_ratio": 0.8944271909999157
+    },
+    "3|2": {
+      "local_antihermitian_ratio": 1.2199885626608373,
+      "contraction_relation": 0.0,
+      "periodic_L3_antihermitian_ratio": 1.142857142857143
+    }
+  }
+}

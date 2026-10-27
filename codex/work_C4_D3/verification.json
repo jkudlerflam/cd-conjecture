@@ -1,0 +1,19 @@
+{
+  "scan_sp4.jsonl_rows": 288,
+  "scan_su2.jsonl_rows": 576,
+  "scan_orbital_dense.jsonl_rows": 546,
+  "scan_u1.jsonl_rows": 300,
+  "refine_sp4.jsonl_rows": 69,
+  "refine_su2.jsonl_rows": 28,
+  "refine_orbital.jsonl_rows": 13,
+  "refine_u1.jsonl_rows": 20,
+  "saturation.jsonl_rows": 48,
+  "sp4_fine.jsonl_rows": 768,
+  "u1_global_velocity.jsonl_distinct_audits": 300,
+  "refined_global_velocity.jsonl_distinct_audits": 20,
+  "deformation_global_velocity.jsonl_distinct_audits": 72,
+  "saturation_energy_max_error": 6.039613253960852e-14,
+  "dimer_product_energy_max_error": 6.217248937900877e-15,
+  "retained_records": 3526,
+  "passed": true
+}

@@ -1,0 +1,219 @@
+# c–d conjecture REPORT (2026-10-21): can c ≤ d − 1 be proved?
+
+Paper: J. I. Latorre and G. Sierra, "The c-d conjecture", arXiv:2403.17242 (v1 March 2024, v2 Nov 2024), J. Stat. Mech. (2024) 113103.
+Inputs: both arXiv versions, read in full. Literature map `lit.md` (Opus agent, every claim tagged [read] or [recalled]).
+Codex: C1 is the free-fermion theorem and C2 is the lattice-Virasoro numerics, specs in `specs/` and transcripts in `codex/`, all closed-book on gpt-6-astra high (§6).
+Nothing here is refereed. §6 lists what I checked.
+
+## Bottom line
+The conjecture is open and probably true as stated. No citing paper proves a case, and no counterexample is known within its scope.
+A general proof is blocked, and the block can be located.
+No known lattice quantity bounds c from above and grows linearly in d.
+Entanglement is capped at O(log d) per site. Kinematic data (‖h‖, the Lieb–Robinson velocity, sum rules) only bound c times a power of the width of the conformal window. Anomalies bound c from below.
+The modular c-theorem toolkit cannot prove it, and §3.1 shows that no lattice-scale entropic argument can.
+Proofs exist now in restricted classes: quasi-free chains (c ≤ log₂ d, which is stronger), toroidal IR theories whose bosons come from on-site U(1)s, and WZW IR theories obeying a "parton" level bound (§4).
+
+## 1. The precise statement [read, v2 Eqs. (2)–(3)]
+The setting is H_L = Σ_{i=1}^{L} h_{i,i+1} on (ℂ^d)^{⊗L} with periodic boundary conditions.
+h is one Hermitian d²×d² matrix, the same on every bond, so the chain is translation invariant by one site.
+If the low-energy spectrum is "a collection of unitary CFTs" with central charges c_a, possibly with different velocities (as for Hubbard spin and charge), then Σ_a c_a ≤ d − 1.
+- Scope. "Nearest-neighbour" means h acts on two sites, and longer range is reduced to it by blocking (a term spanning r + 1 sites gives d^r). "Critical" means a conformal, z = 1, low-energy theory, and the authors stress that conformality is essential.
+- Not covered: non-unitary chains (c_eff), open boundary conditions, anyonic chains, and the 2D chiral analog. The authors list all four as open.
+- Chirality is not discussed. It need not be, since Kapustin–Spodyneiko (PRL 123, 060601) forbid equilibrium energy currents on such lattices, which gives c_L = c_R [read].
+- Support is a table of about a dozen solvable or well-studied chains, of which only Uimin–Lai–Sutherland (ULS, SU(N)_1) saturates. The paper also gives the coarse bound (c/3) log L < L log d, superadditivity of c_max(d) under stacking, and a heuristic in which decoupled levels are dropped.
+- v1 had an appendix proposing a ground-state Koo–Saleur ratio as a proof route. v2 removed it, and §3.3 shows it fails.
+- Since ULS attains c = d − 1, the conjecture is equivalent to the equality c_max(d) = d − 1.
+
+## 2. Literature status [lit.md]
+INSPIRE lists seven citing papers. None proves a case or gives an in-scope counterexample.
+Li–Lin–McGreevy (2509.04596) find agreement in small-system numerics. Prembabu–Verresen (2509.20431) show that the qutrit XX chain (d = 3, c = 2) saturates both c–d and the Lieb–Schultz–Mattis (LSM) lower bound. Kumar–Pujari–D'Emidio (2506.16424) report a "non-unitary violation" at non-integer N, which is really a tensor-product effect (§3.6).
+Each closest miss drops one hypothesis:
+- Range: Rahmani et al. (PRB 1505.03966) have d = 2 and c = 3/2 with a σˣ_jσˣ_{j+2} term, and Σ S_j·S_{j+2} trivially gives c = 2.
+- Translation invariance: aperiodic d = 2 chains reach c_eff = ln 4/ln 3, but they are not CFTs.
+- Conformality: Motzkin chains.
+- Integer d: anyonic chains (§3.6).
+
+LSM gives c ≥ d − 1 in the SU(N)-fundamental and Z_d × Z_d classes, so with c–d it would pin c = d − 1 there.
+
+## 3. Routes
+
+### 3.1 The entropic / modular toolkit (C_± of the note): no-go [checked]
+There are two obstructions.
+
+(a) Structure. C_± rests on half-sided modular inclusions from positive-energy null translations, the ant formula and nesting, all of which need Lorentz covariance.
+A lattice has none at the lattice scale. Its only continuum object is the IR CFT, a fixed point, so there is no QFT flow whose UV is "the lattice".
+
+(b) Quantitative. Suppose a lattice c-function C(ℓ) tends to c in the conformal regime, is non-increasing, and obeys C ≤ K log d at one lattice spacing. Then c ≤ K log d.
+- For the discrete Casini–Huerta function 3ℓ[S(ℓ+1) − S(ℓ)], subadditivity gives K = 3.
+- For the lattice analog of C_±, −6a ∂_a I(half-line : interval), the chain rule I(L:A) − I(L′:A) = I(x:A|L′) ≤ 2 log d gives K = 12.
+- ULS has c = d − 1 > K ln d once d ≥ 7 (K = 3) or d ≥ 48 (K = 12).
+
+For those chains every such function must increase somewhere, so monotonicity fails on the lattice.
+No entropic argument starting at the lattice scale can prove c–d, because it would prove the false bound c = O(log d).
+Equivalently, the SU(d) conformal regime can only begin at ℓ* ≳ (d − 1)/(3 log d), up to logarithms.
+A proof needs an input that counts something linear in d.
+
+### 3.2 Thermodynamics, Lieb–Robinson, sum rules [checked]
+In the conformal window T ≤ T*, s = πcT/(3v). With s ≤ log d this gives cT*/v ≤ (3/π) log d.
+Lieb–Robinson, v ≤ v_LR = O(‖h‖), then gives cT* ≤ (3/π) v_LR log d.
+The f-sum rule for an on-site current algebra at level k gives k·v ≤ const.
+Each bound constrains c times a positive power of the window, never c alone.
+ULS makes this concrete: h = P has spectrum {±1} and ‖h‖ = 1 for every d, and v_LR is bounded uniformly, while c = d − 1.
+So no bound in terms of ‖h‖, v_LR or the eigenvalues of h can exist. d must enter through multiplicities, and the SU(d) window must close at T*/v ≤ 3 log d/(π(d − 1)).
+
+### 3.3 Lattice Virasoro, the v1 Koo–Saleur ratio: fails [C2 + my analysis]
+v1 proposed c₂(N) = 8m₀³/m₁², with m₀ = ⟨h₂h₋₂⟩ and m₁ = ⟨h₂(H − E₀)h₋₂⟩.
+High-energy states contribute q²·(spectral weight of the total energy current J_tot)/Δ² ∝ 1/N to m₀, while the CFT signal is ∝ 1/N².
+That 1/N weight is absent only when J_tot is conserved, the lattice shadow of "energy current = momentum density", that is, of Lorentz invariance. So generically c₂ ~ K/N → 0.
+
+Even conservation is not enough. For critical Ising with the centred density, J_tot is conserved, but a q⁴ form factor still feeds m₁ at order N⁻³, the same order as the CFT term. The result is c₂ → 9/98, not 1/2 [Astra, analytic; arithmetic rechecked].
+With the literal density −X_jX_{j+1} − Z_j the same chain gives c₂ ≈ 9π⁴/(32N), so c₂ depends on how H is split into local terms.
+
+Exact diagonalization up to N = 22 agrees. For the non-integrable O'Brien–Fendley chain (λ = 0.2), c₂ falls from 0.83 to 0.26, still preasymptotic (current moments give K = 0.005 to 0.33 across the O'Brien–Fendley and J₁–J₂ chains).
+The Milsted–Vidal estimator, which projects onto the stress-tensor state, extrapolates to 0.49996 (Ising), 0.498 (O'Brien–Fendley) and 1.0005 (J₁–J₂). Heisenberg comes close even unprojected (c₂ = 1.043 at N = 22), which is why v1's figure looked fine.
+
+The lesson: extracting c needs a projection onto the low-energy subspace, and lattice locality says nothing about that projected weight. This route computes c but does not bound it.
+
+### 3.4 Representation theory: a reformulation [checked, script]
+Suppose the IR is a G_k WZW model with G on-site, acting on ℂ^d through a representation R, so c = k dim G/(k + h^∨), increasing in k.
+Gutzwiller-projected partons (one fermion per site in d flavours) give SU(d)_1 ⊃ G_{ind R}, where ind is the embedding index.
+GKO coset unitarity gives c(G_{ind R}) ≤ d − 1, so the level bound k ≤ ind(R) implies c ≤ d − 1.
+The table lists k_max, the largest k with c(G_k) ≤ d − 1:
+
+| G | R | d | ind R | k_max |
+|---|---|---|---|---|
+| SU(N) | fundamental | N | 1 | 1 |
+| SO(N) | vector | N | 2 | 2 |
+| Sp(2n) | fundamental | 2n | 1 | 1 |
+| SU(2) | spin 1 | 3 | 4 | 4 |
+| SU(2) | spin ≥ 3/2 | 2s+1 | – | none needed |
+| SU(N) | antisymmetric² | N(N−1)/2 | N−2 | N−2 |
+| E₆ | 27 | 27 | 6 | 6 |
+| G₂ | 7 | 7 | 2 | 3 |
+
+For conformally embedded R (the rows with k_max = ind), the conjecture restricted to WZW IR theories is equivalent to the level bound.
+For example, a d = 4 Sp(4) chain must not reach Sp(4)_2 (c = 4), and an SO(N)-vector chain must not reach SO(N)_3.
+The level bound is a parton heuristic, not a theorem. Lattice data fix k·v (Drude weight) and k/v (susceptibility), whose product ∝ k² is computable but has no lattice bound.
+
+Toroidal class. Suppose the IR is c compact bosons whose momentum U(1)^c is the image of an on-site torus acting faithfully on ℂ^d modulo phases. That torus has rank ≤ d − 1, so c ≤ d − 1.
+The saturating ULS chain is of this type, through the Cartan U(1)^{d−1}. So is t–J (d = 3, c = 2 [recalled]), through charge and S^z.
+In both, d − 1 counts the independent on-site densities.
+
+### 3.5 Anomalies and frustration-free chains [lit.md]
+LSM results bound c from below. Yao–Hsieh–Oshikawa plus Sugawara give c ≥ N − 1 for SU(N) fundamentals, and there is a Z_d × Z_d analog. None gives an upper bound.
+Gapless frustration-free chains have gap O(1/L²) [Gosset–Mozgunov, recalled], so they are never conformal.
+
+### 3.6 Integrality of d is essential [own arithmetic, checked]
+SU(2)_k spin-1/2 anyon chains are unitary, translation invariant and nearest-neighbour in the anyon sense. They have c = 1 − 6/((k+1)(k+2)), which exceeds d_q − 1 = 2cos(π/(k+2)) − 1 for every k ≥ 2. For the golden chain that is 0.7 > 0.618.
+The one-Majorana-per-site chain has d = √2 and c = 1/2 > √2 − 1.
+Kumar et al.'s non-integer-N "violation" is the same Temperley–Lieb algebra at N = d_q, g = (k+1)/(k+2), where it is unitary. So it comes from the missing tensor product, not from non-unitarity (lit.md reached the same conclusion).
+A proof must use the integer tensor-product structure. Arguments that see only Hilbert-space growth (entropy, Cardy counting, loop algebras) cannot work.
+
+### 3.7 Lin–McGreevy's entropy function (arXiv:2303.05444, Jonah's suggestion) [read in full; bounds checked by script]
+LM work with three consecutive intervals A, B, C with cross ratio η. They show that a 1+1D CFT ground state satisfies the vector fixed-point equation K_Δ|ψ⟩ = (c/3)h(η)|ψ⟩, with K_Δ = K_AB + K_BC − η(K_A + K_C) − (1 − η)(K_B + K_ABC) and h the binary entropy. Equivalently, the ground state is a stationary point of S_Δ = η[S(B|A) + S(B|C)] + (1 − η) I(A:C|B), which equals (c/3)h(η) there.
+They conjecture the converse, that this characterizes CFT ground states. From one- and two-site entanglement Hamiltonians they reconstruct H, P and the other global conformal generators, with intrinsic normalization (no velocity factor).
+Li–Lin–McGreevy (2509.04596, lit.md §1) is the follow-up that searches for such fixed points on 4 qubits and 4 qutrits and finds agreement with c–d.
+
+What it buys for c–d.
+- The velocity ambiguity of §3.2 is gone, since H_rec is normalized by the modular flow.
+- c is read off at a single scale as the value of an entropy function, which turns c–d into a statement about vector fixed points on chains of d-dimensional sites.
+- The (1 − η) piece, the CMI of adjacent intervals, is the project's κ object and is cutoff-free in AQFT. The η piece is a sum of conditional entropies and has no AQFT meaning.
+- For an exact fixed point whose 3-site marginal ρ_ABC has full rank, the vector equation is equivalent to the operator identity K_Δ = (c/3)h(η)·1 on ABC, because (K_Δ − λ)ρ_ABC^{1/2} = 0 [my observation, elementary]. This is a weighted quantum-Markov condition on finite-dimensional marginals, a finite algebraic problem that could plausibly be classified for d = 2, 3.
+
+Why it is not yet a proof. S_Δ is entropic, so the §3.1 ceiling applies.
+- With blocks of ℓ sites, S(B|A) ≤ S_B and I(A:C|B) ≤ 2 min(S_A, S_C), so S_Δ ≤ 2ℓ log d. At η = 1/4 this gives c ≤ (6/h(1/4)) ℓ ln d ≈ 10.7 ℓ ln d.
+- If the state is an exact fixed point at every scale, the (1,1,k) equations leave a two-parameter solution family, which forces S(n) = (c/3) ln n + S(1) (I checked that this family solves every triple). Subadditivity S(2) ≤ 2S(1) then gives c ≤ 3 log₂ d.
+- SU(d)_1 exceeds these bounds once d ≥ 41 and d ≥ 12 respectively. So the ULS ground state becomes a vector fixed point only at block size ℓ₁ ≳ (d − 1)/(10.7 ln d).
+
+Result of C3 (d = 2 exact single-site fixed points; Astra high, closed-book, with my independent root-finder agreeing).
+- Classical case, proved: the only full-support solution in a common on-site basis is the tracial state, with c_Δ = 3(½ ln 2)/h(1/4) = 1.8489.
+- Quantum case, numerical (about 6,600 starts, and my 300 independent ones). There are eight classes modulo U ⊗ U, some isolated and some one-parameter families, all with τ = I/2. They take six values of c_Δ: 1.1288, 1.1579, 1.4617, 1.4889, 1.5019 and 1.8489 (tracial). So every nontrivial exact solution has c_Δ > d − 1 = 1, and none has 0 < c_Δ ≤ 1. The global supremum is unproved, and the rigorous bound is 6 ln 2/h(1/4) = 7.40.
+- One solution is fully explicit: σ = (I + r XY)/4 and ρ₃ = (I + r(XYI + IXY))/8, with r = tanh j₀ and tanh j₀ = tanh(4√2 j₀/3)/√2. I checked it to 10⁻¹⁶ and it gives c_Δ = 1.4889.
+- Purity does not remove them. Pure translation-invariant states realize the tracial marginals (a graph state with stabilizers X_j Z_{j−2} Z_{j+2}). The XX class with c_Δ = 1.1288 is realized by a free-fermion Fermi sea with a finite-range dispersion.
+- None is scale consistent. The (1,1,2) equation fixes ρ₄ uniquely from ρ₃, and the (2,1,1) and (1,2,1) equations then follow automatically, because h(1/9) = (4/3)h(1/3) − (8/9)h(1/4) (checked). For every nontrivial class the marginal of ρ₄ misses ρ₃ (Frobenius 0.005 to 0.011). The tracial state passes the marginals but has λ₁₁₂ off by 0.070 (my check gives 0.0698). In the classical case this proves no full-support scale-consistent solution exists. In the quantum case none was found.
+- For comparison, true critical chains are not exact fixed points at this scale. Their single-site values are c_Δ = 0.5246 for critical Ising (I reproduced this) and 1.164 for Heisenberg, which already exceeds d − 1 at the lattice scale.
+
+So the single-scale LM condition at the lattice scale is too weak. It admits exact "fixed points" with c_Δ > d − 1, and none of them survives one more scale.
+LM therefore locates where conformality starts, but cannot provide the linear-in-d input. A proof along these lines would need a bound on c that is linear in d at the onset scale ℓ₁, and nothing entropic gives one.
+
+## 4. Verdict
+- General: blocked. The conjecture is a "rank-like" bound, and no known lattice functional is rank-like.
+- Provable now:
+  - (i) Quasi-free NN chains of any period. c = (number of roots of det h(z) on |z| = 1)/4 ≤ rank A(1)/2 ≤ n/2 = log₂ d, with n Majoranas per site, c_L = c_R, and sharp examples. This is a theorem. Its proof is a Laurent-degree count, independent of the period because only one bond crosses each cell boundary. It is strictly stronger than d − 1 for d ≥ 4, and interactions are needed to reach d − 1 (SU(3)_1 has c = 2 > log₂ 3).
+  - (ii) Toroidal IR theories with on-site momentum U(1)s (rank argument).
+  - (iii) WZW IR theories with k ≤ ind(R) (coset). For conformally embedded R this class is equivalent to the conjecture.
+  - (iv) Trivially, SU(d)-symmetric fundamental NN chains, since the only invariant h is a + bP.
+- Modular c-theorem project: no proof route. The toolkit lives in the continuum, and §3.1(b) shows that even a lattice version would give only O(log d).
+
+## 5. Next calculations, ranked
+1. A falsification scan at d = 2. NN qubit chains form an 8-parameter family (12 couplings minus SO(3) minus scale). Search the multicritical points, where Ising lines meet c = 1 regions, for c > 1 with iDMRG entanglement scaling and ED spectra. It is cheap and the most decisive test available.
+2. Level tests where they would bite. The Sp(4)-symmetric d = 4 chain is a one-angle family (projectors on 1 ⊕ 5 ⊕ 10): look for Sp(4)_2. Do the same for SO(N)-vector chains reaching SO(N)_3.
+3. Settle the parton level bound k ≤ ind(R). Either prove it, for instance through Drude weight × susceptibility ∝ k², or find a G-symmetric NN chain that violates it.
+4. Look for an interacting analog of channel counting: a lattice functional linear in d (for example the number of independent local conserved densities) that equals d − 1 on ULS and dominates c on the lit.md examples.
+5. The Lin–McGreevy problem (§3.7). d = 2 single-site is done (C3): exact solutions exist, all have c_Δ > 1, and none is scale consistent. What remains is a quantum no-go for the two-scale system, (1,1,1) plus (1,1,2), at d = 2. The interesting version is the approximate one: maximize the c_Δ that is stable across scales over approximate fixed points, extending Li–Lin–McGreevy's 4-site search. The onset scale is still the crux.
+6. Make the shrinking window explicit for ULS: T*/v and ℓ* versus d from Bethe-ansatz thermodynamics, and the non-monotone lattice C(ℓ) at d = 7 or 8 by iDMRG.
+
+## 6. Provenance and what was checked
+- Checked by me:
+  - the paper's statement and scope (both versions);
+  - §3.1 (bounds and thresholds by script) and §3.2 (standard formulas);
+  - the §3.4 table (scratchpad script) and the coset argument;
+  - the §3.6 arithmetic;
+  - §3.7: LM v2 read in full, plus the S_Δ bounds, thresholds and the two-parameter solution family (by script). The equivalence of the vector and operator equations at full rank I checked by hand. C3 (`specs/C3_LM_fixedpoints_d2.md`, `codex/C3_LMfixed_astra.out`, code and data in `codex/work_C3_astra/`, my scripts in `codex/opus_check_C3/`): my own root-finder found the same six c_Δ values, and I checked the four-site failure, the explicit E₁₂ solution, the h(1/9) identity and the Ising value. I did not check Astra's classical proof line by line (it is short and looks right), its pure-state realizations, or the Heisenberg value;
+  - the C1 proof, line by line;
+  - the C2 1/N estimate (my own derivation agrees);
+  - the arithmetic of Astra's 9/98, including its two k-integrals. I did not rederive its pair form factor.
+- Taken from lit.md without reopening: everything in §2 and §3.5 marked [read] there. The Gosset–Mozgunov and t–J statements are [recalled].
+- Codex: both specs first ran on gpt-5.6-sol, which was the shim default at the time, and that was my mistake. Both were rerun on gpt-6-astra high, closed-book in empty directories.
+  - C1 (`codex/C1_freefermion_{sol,astra}.out`): both models give the same theorem, proof structure, sharp examples and non-Hermitian caveat. The literature agent found the same bound independently.
+  - C2 (`codex/C2_kooSaleur_{sol,astra}.out`; code and data in `codex/work_C2_{astra,sol}/`): the numbers agree on every common entry I compared. Sol read the data as already ∝ 1/N and assumed conserved-current models were safe. Astra corrected both points, and §3.3 follows Astra.
+- `routes_draft.md` holds my working derivations for §3.1, §3.2, §3.4 and §3.6.
+
+## 7. Astra campaign, 2026-10-21 (five parallel runs, gpt-6-astra high, closed-book)
+Specs are `specs/C4_{P1,P2,D1,D2,D3}.md` (shared `_background.md`). Outputs are in `codex/C4_*_astra.out`, with full reports in `codex/work_C4_*/`.
+Verdict: neither a proof nor a counterexample. Nothing below has been refereed or rechecked by me beyond reading it, except where stated.
+
+- **P1, general proof.** Not proved.
+  - Proved: SU(d)-symmetric bonds reduce to a + bP, so ULS is the only conformal case. Chains whose IR stress tensor is exhausted by the Sugawara tensor of an on-site reductive algebra, embedded simultaneously in SU(d), satisfy c ≤ d − 1 given level ceilings k_i ≤ I_i.
+  - New diagnostic: the inverse moment F_h(q) = ∫S_h/ω² dω of the energy-density spectral function tends to C|q|/(24π), with velocities cancelling (I checked the normalization). It is not invariant under h → h + λ(A_j − A_{j+1}), which raises it without bound at the same order, so the raw version cannot be bounded.
+  - Missing lemma: a bound of (d − 1)/(24π) on an improvement-independent version. P1 notes this is as strong as the conjecture.
+- **P2, structured classes.** Not proved, no violation.
+  - Settled: SU(2)-invariant spin-½ chains.
+  - New sufficient condition: ind(R) ≥ s(R), the sum of Dynkin labels, so Σ k_a ≤ s(R) implies c ≤ d − 1. This covers rectangular SU(N) fusion chains if their IR is SU(N)_k.
+  - Yang–Baxter constraint: invariant orthogonal/symplectic bonds bP + gK must satisfy bg[2b + (d−2)g] = 0 or bg[2b − (d+2)g] = 0, leaving only the permutation, Temperley–Lieb and rational branches.
+  - Graded-permutation chains have quadratic branches, so they are not CFTs.
+  - Missing: an NN-specific upper bound on IR levels, and control of all massless TBA sectors.
+- **D1, integrable and non-compact candidates.** No counterexample for c or c_eff.
+  - The reconstructed Izergin–Korepin (d = 3) and alternating six-vertex Hamiltonians have bulk non-Hermitian terms and complex finite-size eigenvalues, so they lie outside the conjecture's unitary scope. The black-hole loophole therefore does not apply at the tested parameters.
+- **D2, all NN qubit chains (8 parameters).** No reliable c > 1.
+  - Run: 1,338 global samples plus targeted and optimization runs. The raw maximum was c_eff = 2.70 at L = 10, a finite-size artifact.
+  - Of 16 candidates followed to L = 22, the best entropy slope was 1.70, falling to 1.35 once short blocks are excluded. None is a clean CFT with c > 1, but not every above-one point reached L = 22.
+  - The prescribed estimators also misbehave on Ising and XX controls at these sizes.
+  - A SLURM continuation is prepared (`work_C4_D2/cluster_array.slurm`) but was not submitted.
+- **D3, d = 3 and d = 4 symmetric families.** No verified violation in 3,526 calculations.
+  - An Sp(4) energy estimate of c ≈ 4.72 is consistent with c = 3 split across two velocities (the energy estimator measures Σ c_a v_a).
+  - Small-angle Sp(4) has steep entanglement growth with roughly 1/L² gaps, which looks non-conformal but is unresolved.
+  - A 154-job Typhon continuation is prepared, not submitted.
+
+Net: the two proof attempts both end at the same missing ingredient found in §3–§4, a microscopic invariant linear in d (an improvement-independent stress response, or an NN-specific level ceiling). The searches leave the conjecture intact, with two loose ends that only larger sizes can settle: the D2 qubit candidates with entropy slope 1.35 to 1.7, and small-angle Sp(4).
+
+Closed 2026-10-22 at Jonah's request: further numerics are unlikely to settle the question either way, so the D2/D3 Typhon continuations were not submitted.
+
+## 8. Interacting generalizations of the free-fermion bound (2026-10-22, Astra high, closed-book)
+Specs `specs/C5_F1.md` (partons) and `specs/C5_F2.md` (Green's functions, RG, Bethe). Reports `codex/work_C5_F1/f1_results.md` and `codex/work_C5_F2/f2.md`. I read both and checked the items marked [checked].
+log₂ d cannot survive interactions (SU(3)_1 has c = 2 > log₂ 3), so the target was an interacting invariant that reduces to rank A(1)/2 and is ≤ d − 1.
+
+Two invariants come out, both ≤ d − 1 by on-site linear algebra alone, both equal to c only when the IR is "complete" in their modes.
+- Affine dimension of the local occupation code (F1, Theorem 4). Write the d allowed states as occupation vectors of partons and gauge every linear constraint that is constant on them. The coset then has c equal to the affine dimension of the code, which is ≤ d − 1. For the minimal code (one parton of d flavours per site) this is d − 1, saturated by ULS. It assumes the IR is the torus coset.
+- Rank of the susceptibility matrix of commuting on-site charges (F2, Theorem 6). rank χ ≤ dim span{q_α mod 1} ≤ d − 1 holds unconditionally [checked: identity directions only shift e(μ) linearly]. If the full IR is a Gaussian (multi-component Luttinger) theory whose modes those charges resolve, then c = rank χ. It covers spinful Luttinger liquids (2), Mott Hubbard (1) and SU(d)_1 ULS (d − 1). It fails for SU(2)_2 (rank 1, c = 3/2) and Ising (rank 0), which carry neutral non-Gaussian sectors.
+
+What fails, with proofs.
+- Gauging one U(1) is not hard projection (F1, Prop. 3) [checked]. Four partons with charges (1, 2, 4, 7) constrained to total charge 7 leave d = 2 states, {7} and {1,2,4}. The formal coset U(4)_1/U(1)_70 has c = 3 and keeps the current 2j₁ − 3j₂ + j₃, whose density vanishes on both states. So "c_free − c_gauge" is not a bound without completing the constraints.
+- The bond rank does not survive projection. Inter-site hopping projects to zero on the minimal code, so the physical exchange is quartic and the determinant argument has nothing to act on.
+- Green's-function zero counts are not complete (F2, Theorem 1). A large-U spinful fermion chain with only spin exchange (d = 4, NN) has charge-gapped, k-independent electron Green functions. Depending on the couplings, its spin sector is a c = 1 CFT or gapped, with the same Green-function data. Fixed-Matsubara windings vanish identically by spectral positivity. I followed the construction but did not rerun its numerics.
+
+Conditional theorems (F2).
+- RG continuity: chains in a "continuum-matching" neighbourhood of a quasi-free critical chain have c ≤ c_free ≤ log₂ d. The neighbourhood is not shown to contain an open ball, and ULS-type chains cannot be relativistic descendants of a complete free parent.
+- Regular TBA: c equals the number of occupied rapidity intervals. So c ≤ d − 1 for nested gl(d) chains with one interval per level and no massless strings. Takhtajan–Babujian violates the no-string hypothesis.
+
+Net. The interacting generalization of "channels through one bond" is "independent on-site densities", and every version is bounded by d − 1 (or log₂ d in the quasi-free case) through the same rank of commuting on-site observables. What no route controls is a neutral sector: Majorana, parafermion or coset modes not resolved by any on-site U(1). Both reports independently name a locality-based budget for neutral stress-tensor sectors as the missing lemma. That is the general conjecture in disguise.

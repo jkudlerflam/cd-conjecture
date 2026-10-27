@@ -1,0 +1,22 @@
+XXZ_-0.99 10 m 0 cS 1.0331152611967258 cMV 0.005000995385796566 secs 0.2333676815032959
+XXZ_-0.99 12 m 0 cS 1.3246783005102112 cMV 0.00934690205265626 secs 0.05461239814758301
+XXZ_-0.99 14 m 0 cS 1.1792436283893641 cMV 0.014297729301252771 secs 0.28585219383239746
+XXZ_-0.99 16 m 0 cS 1.3082864902031721 cMV 0.022186311148403737 secs 1.0383622646331787
+XXZ_-0.99 18 m 0 cS 1.0931751053753387 cMV 0.030979562948926377 secs 5.447458028793335
+XXZ_-0.99 20 m 0 cS 1.292796372790274 cMV 0.042963655374709385 secs 28.906924962997437
+Traceback (most recent call last):
+  File "<repo>/codex/work_C4_D2/d2.py", line 390, in <module>
+    
+  File "<repo>/codex/work_C4_D2/d2.py", line 384, in main
+    m=(0 if L%4==0 else L//2) if args.af_momentum else args.momentum
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<repo>/codex/work_C4_D2/d2.py", line 177, in detailed
+    full=expand(L,m,psi); S=entropies(full,L); fit=entropy_fit(S,L)
+                            ^^^^^^^^^^^^^^^^^
+  File "<repo>/codex/work_C4_D2/d2.py", line 141, in entropies
+    s=np.linalg.svd(psi.reshape(1<<(L-ell),1<<ell),compute_uv=False)
+      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py", line 1851, in svd
+    s = _umath_linalg.svd(a, signature=signature)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt

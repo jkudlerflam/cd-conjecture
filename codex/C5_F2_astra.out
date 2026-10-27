@@ -1,0 +1,11 @@
+Saved the [theorems, proofs, test tables, and ranked missing lemmas](<work_C5_F2/f2.md>) and [f2.py](<work_C5_F2/f2.py>).
+
+The main results are:
+
+- An explicit NN counterexample shows that electron Green-function winding misses neutral critical modes.
+- \(c=\operatorname{rank}\chi\leq d-1\) holds for fully Gaussian CFTs whose modes are resolved by commuting onsite charges.
+- RG and TBA bounds hold under explicit matching and completeness hypotheses.
+
+All five numerical checks passed. The general bound remains unproved; the missing ingredient is control of additional neutral stress-tensor sectors.
+
+[gpt_solve: backend=codex model=gpt-6-astra effort=high transcript=20261022T100441-72237]

@@ -1,0 +1,54 @@
+[
+  {
+    "theta": 2.0943951023931953,
+    "sizes": [
+      4.0,
+      8.0,
+      12.0
+    ],
+    "adjoint_velocities": [
+      0.7480352859649612,
+      0.8489292089782171,
+      0.8704805548939848
+    ],
+    "mixed_vector_velocities": [
+      0.9967225568889833,
+      1.2083931201876617,
+      1.2469026487507597
+    ],
+    "v5_extrap": 0.8844908549282124,
+    "v1_extrap": 1.672481757408683,
+    "A_energy": 1.5848955016603845,
+    "A_two_velocity_prediction": 1.5956505218656003,
+    "relative_difference": -0.006740210376794287,
+    "naive_single_velocity_c": 3.4222258190854737,
+    "c_total_under_five_plus_one_Majorana_ansatz": 3,
+    "ansatz_is_not_a_lattice_proof": true
+  },
+  {
+    "theta": 3.141592653589793,
+    "sizes": [
+      4.0,
+      8.0,
+      12.0
+    ],
+    "adjoint_velocities": [
+      0.4310707460395725,
+      0.42436905295801697,
+      0.42356280009239616
+    ],
+    "mixed_vector_velocities": [
+      0.9549296585513656,
+      1.1019314503898643,
+      1.1330379343337287
+    ],
+    "v5_extrap": 0.4224278758976089,
+    "v1_extrap": 1.8846657628493726,
+    "A_energy": 1.043879168156797,
+    "A_two_velocity_prediction": 1.046361139416428,
+    "relative_difference": -0.0023720025201006134,
+    "naive_single_velocity_c": 4.719533129761917,
+    "c_total_under_five_plus_one_Majorana_ansatz": 3,
+    "ansatz_is_not_a_lattice_proof": true
+  }
+]

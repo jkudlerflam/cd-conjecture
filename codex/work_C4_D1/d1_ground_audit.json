@@ -1,0 +1,290 @@
+[
+  {
+    "model": "ik",
+    "L": 12,
+    "charge_2Sz": 0,
+    "dimension": 73789,
+    "lowest_real_part_eigenvalue": [
+      -3.5588434486649465,
+      1.1553258350005535e-15
+    ],
+    "residual": 1.2430019909215157e-12,
+    "seconds": 4.809265851974487
+  },
+  {
+    "model": "ik",
+    "L": 12,
+    "charge_2Sz": 2,
+    "dimension": 69576,
+    "lowest_real_part_eigenvalue": [
+      -3.490905476269749,
+      3.5388358909926865e-16
+    ],
+    "residual": 4.80350362038709e-14,
+    "seconds": 3.651905059814453
+  },
+  {
+    "model": "ik",
+    "L": 12,
+    "charge_2Sz": 4,
+    "dimension": 58278,
+    "lowest_real_part_eigenvalue": [
+      -3.4431429510779856,
+      -1.89605275924265e-15
+    ],
+    "residual": 4.836714344258032e-13,
+    "seconds": 2.9788811206817627
+  },
+  {
+    "model": "ik",
+    "L": 12,
+    "charge_2Sz": 6,
+    "dimension": 43252,
+    "lowest_real_part_eigenvalue": [
+      -3.2268700411431332,
+      6.41594793837104e-16
+    ],
+    "residual": 1.4838838600704324e-14,
+    "seconds": 2.232836961746216
+  },
+  {
+    "model": "ik",
+    "L": 12,
+    "charge_2Sz": 8,
+    "dimension": 28314,
+    "lowest_real_part_eigenvalue": [
+      -3.120399583566663,
+      -3.844462319020983e-16
+    ],
+    "residual": 2.7228040132774274e-14,
+    "seconds": 1.3695130348205566
+  },
+  {
+    "model": "ik",
+    "L": 12,
+    "charge_2Sz": 10,
+    "dimension": 16236,
+    "lowest_real_part_eigenvalue": [
+      -2.7467683423650895,
+      -2.0551058656189998e-16
+    ],
+    "residual": 2.1590338114597677e-14,
+    "seconds": 0.9770581722259521
+  },
+  {
+    "model": "ik",
+    "L": 12,
+    "charge_2Sz": 12,
+    "dimension": 8074,
+    "lowest_real_part_eigenvalue": [
+      -2.59652187400161,
+      -6.127523789971968e-16
+    ],
+    "residual": 1.8022457925160454e-14,
+    "seconds": 0.4312751293182373
+  },
+  {
+    "model": "ik",
+    "L": 12,
+    "charge_2Sz": 14,
+    "dimension": 3432,
+    "lowest_real_part_eigenvalue": [
+      -2.062090411567736,
+      -2.271854884012147e-16
+    ],
+    "residual": 1.3772687347515293e-14,
+    "seconds": 0.46983790397644043
+  },
+  {
+    "model": "ik",
+    "L": 12,
+    "charge_2Sz": 16,
+    "dimension": 1221,
+    "lowest_real_part_eigenvalue": [
+      -1.8840764293414038,
+      -2.1899190324900222e-16
+    ],
+    "residual": 1.5817126506735978e-14,
+    "seconds": 0.2538411617279053
+  },
+  {
+    "model": "ik",
+    "L": 12,
+    "charge_2Sz": 18,
+    "dimension": 352,
+    "lowest_real_part_eigenvalue": [
+      -1.1956792761801307,
+      -1.1692007546628653e-16
+    ],
+    "residual": 5.77435761378278e-15,
+    "seconds": 0.16276192665100098
+  },
+  {
+    "model": "ik",
+    "L": 12,
+    "charge_2Sz": 20,
+    "dimension": 78,
+    "lowest_real_part_eigenvalue": [
+      -1.004688528956977,
+      -2.100119634300028e-16
+    ],
+    "residual": 4.8619476162164185e-15,
+    "seconds": 0.14224696159362793
+  },
+  {
+    "model": "ik",
+    "L": 12,
+    "charge_2Sz": 22,
+    "dimension": 12,
+    "lowest_real_part_eigenvalue": [
+      -0.1923198375554261,
+      2.1584268366601165e-32
+    ],
+    "residual": 1.849342152021322e-15,
+    "seconds": 0.12146806716918945
+  },
+  {
+    "model": "ik",
+    "L": 12,
+    "charge_2Sz": 24,
+    "dimension": 1,
+    "lowest_real_part_eigenvalue": [
+      0.0,
+      0.0
+    ],
+    "residual": 0.0,
+    "seconds": 0.19272971153259277
+  },
+  {
+    "model": "tl",
+    "L": 20,
+    "charge_2Sz": 0,
+    "dimension": 184756,
+    "lowest_real_part_eigenvalue": [
+      -3.6025199963691814,
+      5.791152909370706e-12
+    ],
+    "residual": 1.281271797592955e-10,
+    "seconds": 22.993587970733643
+  },
+  {
+    "model": "tl",
+    "L": 20,
+    "charge_2Sz": 2,
+    "dimension": 167960,
+    "lowest_real_part_eigenvalue": [
+      -3.5543780421559914,
+      2.1595138871566277e-15
+    ],
+    "residual": 5.801112434474227e-14,
+    "seconds": 16.915186882019043
+  },
+  {
+    "model": "tl",
+    "L": 20,
+    "charge_2Sz": 4,
+    "dimension": 125970,
+    "lowest_real_part_eigenvalue": [
+      -3.4457371537747368,
+      -1.3355727260541848e-15
+    ],
+    "residual": 4.219096585915657e-12,
+    "seconds": 12.383229970932007
+  },
+  {
+    "model": "tl",
+    "L": 20,
+    "charge_2Sz": 6,
+    "dimension": 77520,
+    "lowest_real_part_eigenvalue": [
+      -3.235950182957394,
+      -9.091306266834076e-16
+    ],
+    "residual": 2.567580196963427e-14,
+    "seconds": 6.073080062866211
+  },
+  {
+    "model": "tl",
+    "L": 20,
+    "charge_2Sz": 8,
+    "dimension": 38760,
+    "lowest_real_part_eigenvalue": [
+      -2.9810722136839853,
+      -4.583564528816764e-15
+    ],
+    "residual": 2.1863747525396368e-12,
+    "seconds": 3.2484681606292725
+  },
+  {
+    "model": "tl",
+    "L": 20,
+    "charge_2Sz": 10,
+    "dimension": 15504,
+    "lowest_real_part_eigenvalue": [
+      -2.6183661309437256,
+      -6.936115635840234e-16
+    ],
+    "residual": 1.96457525787452e-13,
+    "seconds": 1.5429601669311523
+  },
+  {
+    "model": "tl",
+    "L": 20,
+    "charge_2Sz": 12,
+    "dimension": 4845,
+    "lowest_real_part_eigenvalue": [
+      -2.2261566039726928,
+      7.613442423629925e-16
+    ],
+    "residual": 4.4318573938081965e-14,
+    "seconds": 0.7625911235809326
+  },
+  {
+    "model": "tl",
+    "L": 20,
+    "charge_2Sz": 14,
+    "dimension": 1140,
+    "lowest_real_part_eigenvalue": [
+      -1.7267271162380151,
+      -3.821308673407787e-16
+    ],
+    "residual": 2.7244157445087366e-14,
+    "seconds": 0.6239991188049316
+  },
+  {
+    "model": "tl",
+    "L": 20,
+    "charge_2Sz": 16,
+    "dimension": 190,
+    "lowest_real_part_eigenvalue": [
+      -1.2131731626113327,
+      2.8315578874268314e-17
+    ],
+    "residual": 9.464123673280694e-13,
+    "seconds": 0.6993107795715332
+  },
+  {
+    "model": "tl",
+    "L": 20,
+    "charge_2Sz": 18,
+    "dimension": 20,
+    "lowest_real_part_eigenvalue": [
+      -0.6065865813056692,
+      2.4063951295069215e-32
+    ],
+    "residual": 1.55670725048472e-15,
+    "seconds": 0.9851150512695312
+  },
+  {
+    "model": "tl",
+    "L": 20,
+    "charge_2Sz": 20,
+    "dimension": 1,
+    "lowest_real_part_eigenvalue": [
+      0.0,
+      0.0
+    ],
+    "residual": 0.0,
+    "seconds": 0.6317918300628662
+  }
+]

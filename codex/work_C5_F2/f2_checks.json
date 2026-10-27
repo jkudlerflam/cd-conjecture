@@ -1,0 +1,271 @@
+{
+  "scope": "Finite checks only; no conjecture proof or CFT extraction by ED.",
+  "electron_green": [
+    {
+      "model": "critical_XX",
+      "length": 6,
+      "U": 4.0,
+      "spin_ground_energy": -1.9999999999999993,
+      "ground_residual": 1.85485921439645e-15,
+      "rigorous_charge_gap_lower_bound": 3.0,
+      "minimum_one_vacancy_energy": 4.633974596215559,
+      "spectral_weight": 0.9999999999999986,
+      "G_zero_abs": 6.938893903917459e-17,
+      "frequency_oddness_error": 1.6653345369397642e-16,
+      "G_iomega": [
+        {
+          "omega": 0.0,
+          "real": -6.938893903917459e-17,
+          "imag": 0.0
+        },
+        {
+          "omega": 0.1,
+          "real": -5.55111512313601e-17,
+          "imag": -0.004603908037464938
+        },
+        {
+          "omega": 0.5,
+          "real": -8.326672684698821e-17,
+          "imag": -0.022767192346153944
+        },
+        {
+          "omega": 2.0,
+          "real": -5.551115123134819e-17,
+          "imag": -0.07775520050424359
+        }
+      ],
+      "central_charge_from_analytic_argument": 1
+    },
+    {
+      "model": "gapped_Ising",
+      "length": 6,
+      "U": 4.0,
+      "spin_ground_energy": -1.4999999999999998,
+      "ground_residual": 3.1401849173675503e-16,
+      "rigorous_charge_gap_lower_bound": 3.5,
+      "minimum_one_vacancy_energy": 4.5,
+      "spectral_weight": 0.9999999999999998,
+      "G_zero_abs": 0.0,
+      "frequency_oddness_error": 0.0,
+      "G_iomega": [
+        {
+          "omega": 0.0,
+          "real": 0.0,
+          "imag": 0.0
+        },
+        {
+          "omega": 0.1,
+          "real": 0.0,
+          "imag": -0.004935834155972358
+        },
+        {
+          "omega": 0.5,
+          "real": 0.0,
+          "imag": -0.02439024390243902
+        },
+        {
+          "omega": 2.0,
+          "real": 0.0,
+          "imag": -0.08247422680412368
+        }
+      ],
+      "central_charge_from_analytic_argument": 0
+    }
+  ],
+  "regular_TBA": {
+    "kernel": "kappa/(2*pi)",
+    "kappa": 0.35,
+    "mu": -0.2,
+    "Q": 1.4639778443325757,
+    "rho_total": 0.19017188589529646,
+    "dressed_velocity": 0.8321304248377888,
+    "predicted_coefficient": 0.6292268134533916,
+    "results": [
+      {
+        "T": 0.04,
+        "coefficient": 0.6304512379453133,
+        "c_inferred_with_dressed_velocity": 1.001945919127638
+      },
+      {
+        "T": 0.02,
+        "coefficient": 0.6295290322609615,
+        "c_inferred_with_dressed_velocity": 1.000480301857944
+      },
+      {
+        "T": 0.01,
+        "coefficient": 0.6293021364378593,
+        "c_inferred_with_dressed_velocity": 1.0001197072070949
+      },
+      {
+        "T": 0.005,
+        "coefficient": 0.6292456298728766,
+        "c_inferred_with_dressed_velocity": 1.0000299040331446
+      }
+    ]
+  },
+  "parafermion_dilog": [
+    {
+      "k": 2,
+      "auxiliary_nodes": 1,
+      "c_parafermion_dilog": 0.5000000000000004,
+      "c_parafermion_formula": 0.5,
+      "c_boson_plus_parafermion": 1.5000000000000004,
+      "c_SU2k": 1.5,
+      "Y_system_max_error": 8.881784197001252e-16
+    },
+    {
+      "k": 3,
+      "auxiliary_nodes": 2,
+      "c_parafermion_dilog": 0.8000000000000004,
+      "c_parafermion_formula": 0.8,
+      "c_boson_plus_parafermion": 1.8000000000000003,
+      "c_SU2k": 1.8,
+      "Y_system_max_error": 1.7763568394002505e-15
+    },
+    {
+      "k": 4,
+      "auxiliary_nodes": 3,
+      "c_parafermion_dilog": 1.0,
+      "c_parafermion_formula": 1.0,
+      "c_boson_plus_parafermion": 2.0,
+      "c_SU2k": 2.0,
+      "Y_system_max_error": 4.440892098500626e-15
+    },
+    {
+      "k": 5,
+      "auxiliary_nodes": 4,
+      "c_parafermion_dilog": 1.142857142857143,
+      "c_parafermion_formula": 1.1428571428571428,
+      "c_boson_plus_parafermion": 2.1428571428571432,
+      "c_SU2k": 2.142857142857143,
+      "Y_system_max_error": 4.440892098500626e-15
+    },
+    {
+      "k": 6,
+      "auxiliary_nodes": 5,
+      "c_parafermion_dilog": 1.25,
+      "c_parafermion_formula": 1.25,
+      "c_boson_plus_parafermion": 2.25,
+      "c_SU2k": 2.25,
+      "Y_system_max_error": 7.105427357601002e-15
+    },
+    {
+      "k": 7,
+      "auxiliary_nodes": 6,
+      "c_parafermion_dilog": 1.333333333333333,
+      "c_parafermion_formula": 1.3333333333333333,
+      "c_boson_plus_parafermion": 2.333333333333333,
+      "c_SU2k": 2.3333333333333335,
+      "Y_system_max_error": 1.4210854715202004e-14
+    },
+    {
+      "k": 8,
+      "auxiliary_nodes": 7,
+      "c_parafermion_dilog": 1.3999999999999997,
+      "c_parafermion_formula": 1.4,
+      "c_boson_plus_parafermion": 2.3999999999999995,
+      "c_SU2k": 2.4,
+      "Y_system_max_error": 2.842170943040401e-14
+    },
+    {
+      "k": 9,
+      "auxiliary_nodes": 8,
+      "c_parafermion_dilog": 1.4545454545454541,
+      "c_parafermion_formula": 1.4545454545454546,
+      "c_boson_plus_parafermion": 2.454545454545454,
+      "c_SU2k": 2.4545454545454546,
+      "Y_system_max_error": 5.684341886080802e-14
+    },
+    {
+      "k": 10,
+      "auxiliary_nodes": 9,
+      "c_parafermion_dilog": 1.4999999999999998,
+      "c_parafermion_formula": 1.5,
+      "c_boson_plus_parafermion": 2.5,
+      "c_SU2k": 2.5,
+      "Y_system_max_error": 3.552713678800501e-14
+    },
+    {
+      "k": 11,
+      "auxiliary_nodes": 10,
+      "c_parafermion_dilog": 1.538461538461538,
+      "c_parafermion_formula": 1.5384615384615385,
+      "c_boson_plus_parafermion": 2.5384615384615383,
+      "c_SU2k": 2.5384615384615383,
+      "Y_system_max_error": 9.947598300641403e-14
+    },
+    {
+      "k": 12,
+      "auxiliary_nodes": 11,
+      "c_parafermion_dilog": 1.5714285714285714,
+      "c_parafermion_formula": 1.5714285714285714,
+      "c_boson_plus_parafermion": 2.571428571428571,
+      "c_SU2k": 2.5714285714285716,
+      "Y_system_max_error": 5.684341886080802e-14
+    }
+  ],
+  "bond_ranks": [
+    {
+      "d": 2,
+      "swap_operator_Schmidt_rank": 4,
+      "traceless_operator_Schmidt_rank": 3,
+      "SUd_Lie_rank": 1,
+      "ULS_c_given": 1
+    },
+    {
+      "d": 3,
+      "swap_operator_Schmidt_rank": 9,
+      "traceless_operator_Schmidt_rank": 8,
+      "SUd_Lie_rank": 2,
+      "ULS_c_given": 2
+    },
+    {
+      "d": 4,
+      "swap_operator_Schmidt_rank": 16,
+      "traceless_operator_Schmidt_rank": 15,
+      "SUd_Lie_rank": 3,
+      "ULS_c_given": 3
+    },
+    {
+      "d": 5,
+      "swap_operator_Schmidt_rank": 25,
+      "traceless_operator_Schmidt_rank": 24,
+      "SUd_Lie_rank": 4,
+      "ULS_c_given": 4
+    }
+  ],
+  "neutral_susceptibility": {
+    "thermodynamic_spin_susceptibility": 0.3183098861837907,
+    "physical_total_charge_susceptibility": 0.0,
+    "spin_resolved_charge_matrix": [
+      [
+        0.3183098861837907,
+        -0.3183098861837907
+      ],
+      [
+        -0.3183098861837907,
+        0.3183098861837907
+      ]
+    ],
+    "active_rank": 1,
+    "results": [
+      {
+        "field": 0.1,
+        "spin_susceptibility": 0.31857594376901716
+      },
+      {
+        "field": 0.03,
+        "spin_susceptibility": 0.31833376587347356
+      },
+      {
+        "field": 0.01,
+        "spin_susceptibility": 0.31831253884617716
+      },
+      {
+        "field": 0.003,
+        "spin_susceptibility": 0.3183101249125563
+      }
+    ]
+  },
+  "runtime_seconds": 0.010649250005371869
+}

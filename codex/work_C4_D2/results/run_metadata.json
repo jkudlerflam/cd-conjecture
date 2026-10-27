@@ -1,0 +1,21 @@
+{
+  "start_utc": "2026-10-21 20:43:24",
+  "all_ED_finished_by_utc": "2026-10-21 21:28:32",
+  "verification_complete_utc": "2026-10-21 21:29:50",
+  "elapsed_to_verification_seconds": 2786,
+  "wall_time_budget_seconds": 4500,
+  "cluster_submitted": false,
+  "max_L": 22,
+  "global_samples": 1338,
+  "boundary_samples": 159,
+  "optimization_evaluations": [
+    340,
+    130
+  ],
+  "L14_L16_followups": 212,
+  "velocity_screen_samples": 254,
+  "selected_points_through_L22": 16,
+  "d2_sha256": "719c148a1b168b473e919e7fb3d77857de3d00d90e3b454ed59aa733682a5a5a",
+  "final_artifacts_inspected_utc": "2026-10-21 21:32:20",
+  "elapsed_to_final_inspection_seconds": 2936
+}

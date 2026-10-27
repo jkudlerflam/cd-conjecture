@@ -1,0 +1,9 @@
+No certified in-scope counterexample was found for either \(c\) or \(c_{\mathrm{eff}}\). This is not a nonexistence proof.
+
+Both reconstructed non-compact candidates have bulk non-Hermitian terms that survive periodic summation and blocking. Complex finite-size eigenvalues also rule out positive-metric quasi-Hermiticity at the tested parameters.
+
+ED reached \(L=12\) for spin 1 and \(L=20\) for spin \(1/2\). Shrinking neutral gaps are compatible with a non-compact limit, but do not establish the black-hole CFT. The report flags assumed model identifications and unresolved compact regimes explicitly.
+
+Saved the derivations, candidate tables, numerical results, and construction attempts in [D1_report.md](<work_C4_D1/D1_report.md>). Reproducible code is in [d1.py](<work_C4_D1/d1.py>).
+
+[gpt_solve: backend=codex model=gpt-6-astra effort=high transcript=20261021T164311-52147]

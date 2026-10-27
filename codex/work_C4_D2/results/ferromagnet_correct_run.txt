@@ -1,0 +1,27 @@
+XXZ_-0.99 10 m 5 cS 1.3347262616847877 cMV 0.00548122356076654 secs 0.24614286422729492
+XXZ_-0.99 12 m 0 cS 1.3246783005102112 cMV 0.00934690205265626 secs 0.05437898635864258
+XXZ_-0.99 14 m 7 cS 1.3162303778491906 cMV 0.014840663539530658 secs 0.5349979400634766
+XXZ_-0.99 16 m 0 cS 1.3082864902031721 cMV 0.022186311148403737 secs 1.0325610637664795
+XXZ_-0.99 18 m 9 cS 1.3005071088560536 cMV 0.03153646994955215 secs 10.046135663986206
+XXZ_-0.99 20 m 0 cS 1.292796372790274 cMV 0.042963655374709385 secs 33.535489082336426
+Traceback (most recent call last):
+  File "<repo>/codex/work_C4_D2/d2.py", line 391, in <module>
+    data=json.loads(Path(args.input).read_text()); out={}
+                     ^^^^^^
+  File "<repo>/codex/work_C4_D2/d2.py", line 385, in main
+    elif args.command=='scan':
+                    ^^^^^^^^^^^
+  File "<repo>/codex/work_C4_D2/d2.py", line 186, in detailed
+    _,m,psi=best
+          ^^^^^^^
+  File "<repo>/codex/work_C4_D2/d2.py", line 113, in solve
+    row,col,val=_full_entries(L,h)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/scipy/sparse/linalg/_eigen/arpack/arpack.py", line 1658, in eigsh
+    ret = eigs(A, k, M=M, sigma=sigma, which=which, v0=v0,
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/scipy/sparse/linalg/_eigen/arpack/arpack.py", line 1429, in eigs
+    params.iterate()
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/scipy/sparse/linalg/_eigen/arpack/arpack.py", line 790, in iterate
+    self._arpack_solver(
+KeyboardInterrupt

@@ -1,0 +1,34 @@
+I found no nearest-neighbor violation. Neither universal bound is proved. The [full report](<./P2_REPORT.md>) contains the derivations, assumptions, and remaining obstructions.
+
+The main results are:
+
+1. SU(2)-invariant spin-1/2 chains are settled using the supplied Heisenberg infrared result. Schur’s lemma forces \(h=aI+bP\). The antiferromagnetic sign gives \(k=1,c=1\); the ferromagnetic sign has quadratic excitations.
+
+2. A representation-theoretic sufficient condition covers level-matched fusion families. Write \(s(R)\) for the sum of the highest weights’ Dynkin labels, including multiplicities. I proved
+   \[
+   \operatorname{ind}(R)\ge s(R),
+   \qquad
+   \sum_a k_a\le s(R)
+   \ \Longrightarrow\
+   \sum_a c(G_{k_a})\le d-1.
+   \]
+   This establishes both bounds for rectangular SU(N) fusion chains conditional on their full infrared identification as \(SU(N)_k\). The level identification itself is not derived here.
+
+3. An analytic Yang–Baxter obstruction substantially narrows the vector cases. For an invariant bond \(h=bP+gK\) obtained from an analytic regular additive R matrix, I derived
+   \[
+   bg[2b+(d-2)g]=0 \quad\text{for orthogonal vectors},
+   \]
+   \[
+   bg[2b-(d+2)g]=0 \quad\text{for symplectic vectors}.
+   \]
+   Thus only the permutation, Temperley–Lieb, and rational orthogonal/symplectic branches remain. The proof uses a third-order expansion and explicit matrix elements. It does not establish the remaining branches’ infrared limits.
+
+4. The mixed graded-permutation chain at zero chemical potential has an exact quadratic excitation branch for either sign of its Hamiltonian. It therefore falls outside the assumed compact-CFT class.
+
+Two proposed shortcuts fail. Nesting rank does not count the full central charge, since fused rank-one models contain additional parafermion degrees of freedom. Also, \(k\le\operatorname{ind}(R)\) bounds only the charged WZW sector; arbitrary neutral spectators require another bound.
+
+The precise missing ingredients are a nearest-neighbor-sensitive upper bound on the general infrared level, and control of all massless TBA sectors for arbitrary regular R matrices.
+
+The [representation checks](<./checks.py>) and [integrability checks](<./integrability_check.py>) passed. No many-body ED fit or external lookup was used.
+
+[gpt_solve: backend=codex model=gpt-6-astra effort=high transcript=20261021T164308-52073]

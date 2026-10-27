@@ -1,0 +1,527 @@
+# Theorem 1. Bloch Hamiltonian and root counting
+
+Let
+\[
+\gamma_a(k)=\frac{1}{\sqrt L}\sum_x e^{-ikx}\gamma_{x,a},
+\qquad
+\gamma_a(k)^\dagger=\gamma_a(-k).
+\]
+For a translation-invariant kernel, write \(A(r)=A(x,x+r)\). Its Fourier transform and Bloch Hamiltonian are
+\[
+\widehat A(k)=\sum_r A(r)e^{ikr},
+\qquad
+h(k)=i\widehat A(k).
+\]
+For nearest-neighbor couplings,
+\[
+h(k)=i\left[A(0)+A(1)e^{ik}-A(1)^T e^{-ik}\right].
+\]
+With these conventions,
+\[
+H=\frac14\sum_k \gamma(-k)^T h(k)\gamma(k),
+\]
+up to the usual additive constant implicit in a quadratic Majorana Hamiltonian.
+
+Since \(A(-r)=-A(r)^T\),
+\[
+\widehat A(k)^\dagger=-\widehat A(k),
+\]
+and therefore \(h(k)\) is Hermitian. Complex conjugation implements particle-hole symmetry:
+\[
+h(k)^*=-h(-k).
+\tag{1}
+\]
+Thus the antiunitary particle-hole operator is \(\mathcal C=K\), with \(\mathcal C^2=1\).
+
+Let
+\[
+D(z)=\det h(z),\qquad z=e^{ik}.
+\]
+The multiplicity of a zero at \(k_0\) means the order of the zero of \(D(z)\) at \(z_0=e^{ik_0}\). The Brillouin zone is a circle, so \(k=\pi\) and \(k=-\pi\) are one point and are counted once.
+
+Assume that there are finitely many zero-energy points and that every vanishing band has nonzero linear velocity. If \(N\) is the total number of zeros of \(D\) on the Brillouin circle, counted with multiplicity, then
+\[
+c_L+c_R=\frac N2,
+\qquad
+c=\frac{c_L+c_R}{2}=\frac N4.
+\tag{2}
+\]
+Moreover,
+\[
+c_L=c_R=\frac N4.
+\tag{3}
+\]
+
+## Proof
+
+### 1. The determinant multiplicity equals the number of linear zero modes
+
+Fix a zero \(k_0\), and let
+\[
+m=\dim\ker h(k_0).
+\]
+Let \(P\) project onto this kernel. Write \(q=k-k_0\). In a basis adapted to \(\ker h(k_0)\) and its orthogonal complement,
+\[
+h(k_0+q)=
+\begin{pmatrix}
+qV+O(q^2) & qX+O(q^2)\\
+qX^\dagger+O(q^2) & G+O(q)
+\end{pmatrix},
+\]
+where
+\[
+V=Ph'(k_0)P
+\]
+and \(G\) is invertible.
+
+For a Hermitian analytic matrix family, the first derivatives of the \(m\) eigenvalues that vanish at \(k_0\) are the eigenvalues of \(V\). The linear-crossing assumption is therefore equivalent to \(V\) being invertible.
+
+Using the Schur complement,
+\[
+\begin{aligned}
+\det h(k_0+q)
+&=\det(G+O(q))\\
+&\quad\times
+\det\left(qV+O(q^2)
+-(qX+O(q^2))(G+O(q))^{-1}(qX^\dagger+O(q^2))\right)\\
+&=q^m\det G\,\det V+O(q^{m+1}).
+\end{aligned}
+\]
+Since both \(G\) and \(V\) are invertible, the coefficient of \(q^m\) is nonzero. Hence
+\[
+\operatorname{ord}_{k_0}\det h(k)=\dim\ker h(k_0)=m.
+\tag{4}
+\]
+
+This conclusion fails at a quadratic touching because then \(V\) has a zero eigenvalue.
+
+### 2. Generic particle-hole pairs
+
+Suppose \(k_0\not\equiv-k_0\) modulo \(2\pi\). Equation (1) maps a zero mode at \(k_0\) to one at \(-k_0\). If
+\[
+E(k_0+q)=vq+O(q^2),
+\]
+then the particle-hole partner satisfies
+\[
+E_{\mathcal C}(-k_0+q)
+=-E(k_0-q)
+=vq+O(q^2).
+\tag{5}
+\]
+The two particle-hole-related patches have the same velocity.
+
+The Majorana reality condition relates the mode amplitudes in the two patches by Hermitian conjugation. Thus a particle-hole pair of branches gives one complex chiral fermion, equivalently two real chiral Majorana fermions. If the kernel dimension at \(k_0\) is \(m\), the orbit \(\{k_0,-k_0\}\) gives
+
+\[
+\begin{array}{c|c}
+\text{determinant roots} & \text{real chiral Majorana fields}\\
+\hline
+2m & 2m
+\end{array}
+\]
+and contributes \(m\) to the appropriate one of \(c_L,c_R\). This is one half per determinant root.
+
+There is no additional division by two. Particle-hole symmetry says that the two patches form \(m\) complex fields, and every complex chiral field contains two real chiral Majoranas.
+
+### 3. The self-conjugate points \(k=0,\pi\)
+
+At \(K=0,\pi\), one has \(-K\equiv K\). Equation (1) gives
+\[
+h(K)^*=-h(K).
+\]
+Thus \(h(K)=iR\), where \(R\) is real antisymmetric. Its kernel admits a real basis.
+
+Expanding around \(K\),
+\[
+h(K+q)^*=-h(K-q).
+\]
+If
+\[
+h(K+q)=h(K)+qV+O(q^2),
+\]
+then
+\[
+V^*=V.
+\]
+Since \(V\) is also Hermitian, its restriction to the real kernel of \(h(K)\) is a real symmetric matrix. Every nonzero eigenvalue of this restricted velocity matrix gives one self-conjugate chiral Majorana mode.
+
+Consequently, if \(\dim\ker h(K)=m\), there are \(m\) determinant roots and \(m\) real chiral Majorana fields. Their total contribution to \(c_L+c_R\) is \(m/2\), again one half per root.
+
+This handles \(k=0,\pi\) without counting either point twice.
+
+### 4. Central charge and chirality balance
+
+Let \(N_+\) and \(N_-\) denote the determinant roots counted with multiplicity whose corresponding velocities are positive and negative. The discussion above gives
+\[
+c_R=\frac{N_+}{2},
+\qquad
+c_L=\frac{N_-}{2},
+\tag{6}
+\]
+after choosing positive velocity to mean right-moving.
+
+It remains to prove \(N_+=N_-\). Choose a point on the Brillouin circle that is not a zero and let
+\[
+\nu(k)=\#\{\text{negative eigenvalues of }h(k)\}.
+\]
+At a positive-velocity crossing, an eigenvalue passes from negative to positive, so \(\nu\) decreases by one. At a negative-velocity crossing, it increases by one. Since \(h(k)\) is periodic,
+\[
+\Delta_{\mathrm{BZ}}\nu=0=-N_++N_-.
+\]
+Therefore
+\[
+N_+=N_-=\frac N2.
+\]
+Substitution into (6) proves (2) and (3).
+
+The only CFT input in this argument is the stated fact that each real chiral Majorana contributes \(1/2\) to the corresponding chiral central charge. The conversion from determinant roots to real chiral Majorana fields was proved above.
+
+# Theorem 2. Translation-invariant nearest-neighbor bound
+
+Let
+\[
+B=A(1),\qquad r=\operatorname{rank}B.
+\]
+Under the assumptions of Theorem 1,
+\[
+N\leq 2r\leq 2n,
+\tag{7}
+\]
+and hence
+\[
+c_L=c_R\leq\frac r2,
+\qquad
+c\leq\frac r2\leq\frac n2.
+\tag{8}
+\]
+For even \(n\), \(d=2^{n/2}\), so
+\[
+c\leq\frac n2=\log_2d.
+\tag{9}
+\]
+
+## Proof
+
+As a Laurent-polynomial matrix,
+\[
+h(z)=i\left(A(0)+zB-z^{-1}B^T\right).
+\]
+The overall factor \(i\) is irrelevant for the zero set.
+
+Expand the determinant by multilinearity in its columns. Consider a term in which \(s\) columns are selected from \(zB\), \(t\) columns from \(-z^{-1}B^T\), and the remaining columns from \(A(0)\). Its Laurent power is
+\[
+z^{s-t}.
+\]
+If \(s>r\), the selected columns from \(B\) are linearly dependent, so this determinant term vanishes. Thus every nonzero term has \(s\leq r\), and hence
+\[
+s-t\leq r.
+\]
+Similarly, \(\operatorname{rank}B^T=r\), so every nonzero term has \(t\leq r\) and
+\[
+s-t\geq-r.
+\]
+Therefore
+\[
+D(z)=\det h(z)=\sum_{j=-r}^{r}d_jz^j.
+\tag{10}
+\]
+
+The finite-zero assumption implies that \(D\) is not identically zero. Let \(j_{\min}\) and \(j_{\max}\) be its smallest and largest occurring exponents. Then
+\[
+P(z)=z^{-j_{\min}}D(z)
+\]
+is an ordinary polynomial of degree
+\[
+\deg P=j_{\max}-j_{\min}\leq 2r,
+\]
+with nonzero constant term. Its nonzero complex roots, counted with algebraic multiplicity, number at most \(2r\). In particular, the number on \(|z|=1\) is at most \(2r\), proving (7).
+
+Theorem 1 now gives
+\[
+c=\frac N4\leq\frac r2\leq\frac n2.
+\]
+The equality \(c_L=c_R\) follows from the spectral-flow argument in Theorem 1.
+
+# Theorem 3. Period-\(p\) chains
+
+For a nearest-neighbor Majorana chain with any finite period \(p\),
+\[
+c\leq\frac n2.
+\tag{11}
+\]
+The bound is independent of \(p\).
+
+## Proof
+
+Group \(p\) consecutive original sites into a unit cell. Let
+\[
+\Gamma_j=
+(\gamma_{jp,1},\ldots,\gamma_{jp,n},
+ \gamma_{jp+1,1},\ldots,
+ \gamma_{jp+p-1,n})^T.
+\]
+There are \(np\) Majoranas in each enlarged cell.
+
+Nearest-neighbor locality on the original chain implies that the only bond connecting cell \(j\) to cell \(j+1\) is the bond between the last original site of cell \(j\) and the first original site of cell \(j+1\). Thus the inter-cell matrix \(B_{\rm cell}\), viewed as an \(np\times np\) matrix, has only one potentially nonzero \(n\times n\) block. Consequently,
+\[
+r_{\rm cell}:=\operatorname{rank}B_{\rm cell}\leq n.
+\tag{12}
+\]
+
+In the reduced Brillouin zone, rescaled to have period \(2\pi\), the Bloch matrix is
+\[
+h_p(z)=i\left(C+zB_{\rm cell}-z^{-1}B_{\rm cell}^T\right),
+\tag{13}
+\]
+where \(C\) includes every coupling internal to one enlarged cell.
+
+Applying the same determinant expansion as in Theorem 2,
+\[
+\det h_p(z)=\sum_{j=-r_{\rm cell}}^{r_{\rm cell}}d_jz^j.
+\tag{14}
+\]
+After removing its lowest Laurent power, this is a polynomial of degree at most
+\[
+2r_{\rm cell}\leq2n.
+\]
+Hence its number of unit-circle roots, counted with multiplicity, obeys
+\[
+N_p\leq2n.
+\]
+Changing from physical momentum to cell momentum rescales velocities by \(p\), but does not change their sign or whether they vanish. Theorem 1 therefore applies and gives
+\[
+c=\frac{N_p}{4}\leq\frac n2.
+\]
+
+The large \(np\times np\) matrix does not produce an \(np/2\) bound because its dependence on the Bloch phase is confined to the single boundary bond of rank at most \(n\).
+
+# Sharpness for every \(n\)
+
+The bound is attained for all positive integers \(n\).
+
+For \(n=2m\), introduce \(m\) independent complex fermions
+\[
+c_{x,j}=\frac{\gamma_{x,2j-1}+i\gamma_{x,2j}}2
+\]
+and take \(m\) decoupled half-filled tight-binding chains,
+\[
+H=-t\sum_{x,j}
+\left(c_{x,j}^\dagger c_{x+1,j}
++c_{x+1,j}^\dagger c_{x,j}\right).
+\tag{15}
+\]
+Every complex chain has two Fermi points and central charge \(1\). Therefore
+\[
+c=m=\frac n2.
+\]
+
+For \(n=2m+1\), use the same \(m\) complex chains and let the remaining Majorana \(\eta_x=\gamma_{x,2m+1}\) have
+\[
+H_\eta=it'\sum_x\eta_x\eta_{x+1}.
+\tag{16}
+\]
+The additional Majorana chain has \(c=1/2\), so
+\[
+c=m+\frac12=\frac{2m+1}{2}=\frac n2.
+\]
+All zero-energy crossings in these examples are linear.
+
+Equivalently, one may take \(n\) decoupled copies of (16). Each contributes \(1/2\), giving \(c=n/2\).
+
+# Variants
+
+## Charge-conserving complex fermions
+
+For \(n_c\) complex orbitals per site, a general translation-invariant nearest-neighbor number-conserving Hamiltonian has Bloch matrix
+\[
+q(k)=T_0+T_1e^{ik}+T_1^\dagger e^{-ik},
+\]
+where \(q(k)\) is \(n_c\times n_c\) Hermitian. If
+\[
+r_c=\operatorname{rank}T_1,
+\]
+the same column expansion gives
+\[
+\det q(z)=\sum_{j=-r_c}^{r_c}a_jz^j.
+\]
+Thus there are at most \(2r_c\leq2n_c\) linear Fermi crossings.
+
+A single complex chiral fermion contributes \(1\), rather than \(1/2\), to \(c_L\) or \(c_R\). If \(N_c\) is the number of determinant roots,
+\[
+c_L+c_R=N_c,
+\qquad
+c=\frac{N_c}{2}\leq r_c\leq n_c.
+\]
+Since \(d=2^{n_c}\),
+\[
+c\leq n_c=\log_2d.
+\]
+The ordinary tight-binding chain saturates the \(n_c=1\) case.
+
+## Non-Hermitian quadratic models
+
+The Laurent-degree statement is algebraic and remains valid for a non-Hermitian Bloch matrix:
+\[
+\deg_{\rm Laurent}\det h(z)\leq2\,\operatorname{rank}B.
+\]
+The inference from this degree count to a central charge does not hold without further assumptions. Non-Hermitian bands can have complex energies, exceptional points, Jordan blocks, skin effects, and boundary-condition-dependent spectra. In a nonunitary CFT the entanglement coefficient is often governed by
+\[
+c_{\mathrm{eff}}=c-24h_{\min},
+\]
+not by \(c\) alone.
+
+For a diagonalizable model with ordinary real linear crossings and a continuum limit consisting of standard free chiral fermions, the same mode count can reproduce the Hermitian bound. For a general non-Hermitian quadratic model, locality and local Hilbert-space dimension alone do not justify a universal \(c_{\mathrm{eff}}\leq\log_2d\) statement.
+
+## Degenerate Dirac points and quadratic touchings
+
+Suppose two bands vanish at the same \(k_0\), with
+\[
+E_1(k_0+q)=v_1q+O(q^2),\qquad
+E_2(k_0+q)=v_2q+O(q^2),
+\]
+where \(v_1v_2\neq0\). Then
+\[
+\det h(k_0+q)=Cq^2+O(q^3),
+\qquad C\neq0.
+\]
+The determinant has multiplicity two and both chiral modes are counted. The bands may have equal or opposite velocities. Degeneracy at the same momentum creates no problem as long as the projected velocity matrix is invertible.
+
+For a quadratic touching,
+\[
+E(k_0+q)=\alpha q^2+O(q^3),
+\]
+the determinant has a zero of order at least two even though there is only one vanishing band. The projected velocity matrix is singular, the dynamical exponent is \(z=2\), and the relativistic CFT interpretation fails. The Laurent-degree bound on determinant roots remains true, but equation (2) does not.
+
+# Explicit checks
+
+## Critical transverse-field Ising chain
+
+In a convenient Majorana basis, the critical Bloch Hamiltonian can be written
+\[
+h_{\mathrm I}(k)
+=
+2J
+\begin{pmatrix}
+0&i(1-e^{-ik})\\
+-i(1-e^{ik})&0
+\end{pmatrix}.
+\]
+It satisfies
+\[
+h_{\mathrm I}(k)^*=-h_{\mathrm I}(-k).
+\]
+Its determinant is
+\[
+\det h_{\mathrm I}(k)
+=-4J^2|1-e^{ik}|^2
+=-16J^2\sin^2\frac{k}{2}.
+\]
+There is one zero point, \(k=0\), of multiplicity two. Near it,
+\[
+h_{\mathrm I}(k)
+=
+-2Jk
+\begin{pmatrix}
+0&1\\
+1&0
+\end{pmatrix}
++O(k^2),
+\]
+so the two velocities are \(+2J\) and \(-2J\). Thus
+\[
+N=2,\qquad c_L=c_R=\frac12,\qquad c=\frac12.
+\]
+
+## XX chain at generic filling
+
+For one complex fermion per site, let
+\[
+\varepsilon(k)=-2t\cos k-\mu,
+\qquad |\mu|<2|t|.
+\]
+In the two-Majorana representation,
+\[
+h_{\mathrm{XX}}(k)=\varepsilon(k)\sigma_y
+=
+\begin{pmatrix}
+0&-i\varepsilon(k)\\
+i\varepsilon(k)&0
+\end{pmatrix}.
+\]
+Since \(\varepsilon(-k)=\varepsilon(k)\),
+\[
+h_{\mathrm{XX}}(k)^*=-h_{\mathrm{XX}}(-k).
+\]
+Also,
+\[
+\det h_{\mathrm{XX}}(k)=-\varepsilon(k)^2.
+\]
+At generic filling there are two distinct Fermi points,
+\[
+k=\pm k_F,\qquad
+\cos k_F=-\frac{\mu}{2t},
+\]
+and \(\varepsilon'(\pm k_F)\neq0\). Each point is a zero of multiplicity two because both Majorana-BdG eigenvalues \(\pm\varepsilon(k)\) vanish there. Hence
+\[
+N=2+2=4.
+\]
+There are two roots of each velocity sign, so
+\[
+c_L=c_R=1,\qquad c=1.
+\]
+The four determinant roots correspond to four real chiral Majorana fields, or one left-moving and one right-moving complex fermion.
+
+## One Majorana per site
+
+For
+\[
+H=it\sum_x\gamma_x\gamma_{x+1},
+\]
+comparison with the normalization in the question gives
+\[
+A(1)=2t,\qquad A(-1)=-2t.
+\]
+The \(1\times1\) Bloch Hamiltonian is
+\[
+h(k)=i\left(2te^{ik}-2te^{-ik}\right)
+=-4t\sin k.
+\]
+It obeys \(h(k)^*=-h(-k)\). Its zeros are
+\[
+k=0,\qquad k=\pi,
+\]
+each with multiplicity one. They are both particle-hole self-conjugate points. Their velocities are
+\[
+h'(0)=-4t,\qquad h'(\pi)=4t,
+\]
+so one mode is left-moving and one is right-moving. Therefore
+\[
+N=2,\qquad c_L=c_R=\frac12,\qquad c=\frac12.
+\]
+
+# Comparison with \(d-1\)
+
+For \(d=2^m\),
+\[
+\log_2d=m,\qquad d-1=2^m-1.
+\]
+For \(m\geq2\),
+\[
+m<2^m-1.
+\]
+Equality holds at
+\[
+m=1,\quad d=2,
+\]
+and also at the trivial case \(m=0,\ d=1\), if it is included. Thus for every nontrivial \(d\geq4\),
+\[
+\log_2d<d-1.
+\]
+
+The nearest-neighbor quasi-free bound is therefore
+\[
+c\leq\log_2d,
+\]
+which is strictly stronger than \(c\leq d-1\) once \(d\geq4\).
+
+[gpt_solve: backend=codex model=gpt-5.6-sol effort=high transcript=20261021T144253-19586]

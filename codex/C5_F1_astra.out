@@ -1,0 +1,13 @@
+Saved the [derivation and theorem statements](<work_C5_F1/f1_results.md>), [f1.py](<work_C5_F1/f1.py>), and [check output](<work_C5_F1/f1_checks.txt>).
+
+The conditional theorem gives
+\[
+c_T\le R_{\mathrm{mf}}-c_g,
+\]
+and hence \(c_T\le d-1\) for the minimal number-conserving construction with its active U(1) sector removed. The notes prove dimension inequalities for rectangular SU(N), spin-S, symplectic, orthogonal, and completed Abelian occupation-code families.
+
+The main obstruction is explicit. Four partons with charges \((1,2,4,7)\), constrained to charge 7, leave only two local states. Nevertheless, the formal quotient \(U(4)_1/U(1)_{70}\) has \(c=3\). It retains the level-14 current \(2j_1-3j_2+j_3\), although the corresponding density vanishes identically on the code. Thus hard projection cannot equal that coset with the proposed operator identification. This is a failure of the gauging inference, not a counterexample to the conjecture.
+
+All exact checks passed, including 450 rectangular representations and explicit Fock-space singlet kernels. The missing result remains a controlled passage from an arbitrary nearest-neighbor chain to a dimension-bounded parton coset. The projected uniform sea’s IR identification is flagged as additional input; ULS saturation uses the supplied result.
+
+[gpt_solve: backend=codex model=gpt-6-astra effort=high transcript=20261022T100439-72129]

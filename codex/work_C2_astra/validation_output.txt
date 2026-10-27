@@ -1,0 +1,6 @@
+{'label': 'TFIM', 'full_gap': 0.1969828067143169, 'E_error': np.float64(1.0658141036401503e-14), 'm0_error': np.float64(5.557443394366146e-12), 'm1_error': np.float64(3.065370179911042e-11), 'hermiticity': 3.1401849173675503e-16}
+{'label': 'OF0.2', 'full_gap': 0.18804667936763586, 'E_error': np.float64(5.329070518200751e-15), 'm0_error': np.float64(8.659739592076221e-15), 'm1_error': np.float64(2.042810365310288e-14), 'hermiticity': 3.510833468576701e-16}
+{'label': 'OF0.35', 'full_gap': 0.1482042498567573, 'E_error': np.float64(1.7763568394002505e-15), 'm0_error': np.float64(1.7155166176507919e-12), 'm1_error': np.float64(7.961631354191923e-12), 'hermiticity': 6.280369834735101e-16}
+{'label': 'Heisenberg', 'full_gap': 0.5226743450925939, 'E_error': np.float64(2.220446049250313e-15), 'm0_error': np.float64(1.1102230246251565e-16), 'm1_error': np.float64(1.3322676295501878e-15), 'hermiticity': 1.5700924586837752e-16}
+{'label': 'J1J2', 'full_gap': 0.4800126852323019, 'E_error': np.float64(4.440892098500626e-15), 'm0_error': np.float64(3.3306690738754696e-16), 'm1_error': np.float64(2.7755575615628914e-15), 'hermiticity': 1.5700924586837752e-16}
+All centered Ising sparse results match independent free-fermion sums to <1e-7 in the scaled moments.

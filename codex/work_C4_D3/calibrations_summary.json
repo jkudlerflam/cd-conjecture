@@ -1,0 +1,155 @@
+{
+  "uls3": {
+    "expected_c": 2,
+    "energy_fit_envelope": {
+      "midpoint": 2.0147179409520217,
+      "half_width": 0.036150483469211014,
+      "endpoints": [
+        1.9785674574828107,
+        2.0508684244212327
+      ],
+      "definition": "two-largest linear versus three-largest quadratic E/L in L^-2; velocity linear in L^-2 on each window"
+    },
+    "largest_L": 12,
+    "entropy_fits": [
+      {
+        "c": 2.2693937729599245,
+        "regression_se": 0.011792026882004394,
+        "rms": 0.003727112610251234,
+        "cut": 1
+      },
+      {
+        "c": 2.2391520922879957,
+        "regression_se": 0.019130082621425005,
+        "rms": 0.0028186496475993677,
+        "cut": 2
+      },
+      {
+        "c": 2.179573658654461,
+        "regression_se": 0.01256284328253458,
+        "rms": 0.0008004665309703197,
+        "cut": 3
+      }
+    ],
+    "v_L": 2.0831384757205393,
+    "observed_soft_x": 0.6420523512460976,
+    "expected_soft_x": 0.6666666666666666
+  },
+  "uls4": {
+    "expected_c": 3,
+    "energy_fit_envelope": {
+      "midpoint": 3.0377566376439566,
+      "half_width": 0.07161728290686797,
+      "endpoints": [
+        2.9661393547370887,
+        3.1093739205508246
+      ],
+      "definition": "two-largest linear versus three-largest quadratic E/L in L^-2; velocity linear in L^-2 on each window"
+    },
+    "largest_L": 12,
+    "entropy_fits": [
+      {
+        "c": 3.4132611185573953,
+        "regression_se": 0.02820648650862062,
+        "rms": 0.008915240154141474,
+        "cut": 1
+      },
+      {
+        "c": 3.5108603212187095,
+        "regression_se": 0.014403647202476038,
+        "rms": 0.00212225090266654,
+        "cut": 2
+      },
+      {
+        "c": 3.4690503770118344,
+        "regression_se": 0.01611839332604241,
+        "rms": 0.001027015469376234,
+        "cut": 3
+      }
+    ],
+    "v_L": 1.5614199347942064,
+    "observed_soft_x": 0.7466422315350971,
+    "expected_soft_x": 0.75
+  },
+  "tb1": {
+    "expected_c": 1.5,
+    "energy_fit_envelope": {
+      "midpoint": 1.4953973817634125,
+      "half_width": 0.019537405485657522,
+      "endpoints": [
+        1.4758599762777551,
+        1.5149347872490702
+      ],
+      "definition": "two-largest linear versus three-largest quadratic E/L in L^-2; velocity linear in L^-2 on each window"
+    },
+    "largest_L": 14,
+    "entropy_fits": [
+      {
+        "c": 1.6499635318528298,
+        "regression_se": 0.020413313449151895,
+        "rms": 0.007716913105441108,
+        "cut": 1
+      },
+      {
+        "c": 1.5800739821604137,
+        "regression_se": 0.009241506883519579,
+        "rms": 0.0018142311722355257,
+        "cut": 2
+      },
+      {
+        "c": 1.5517450135614486,
+        "regression_se": 0.003751836188878671,
+        "rms": 0.0003769088405050485,
+        "cut": 3
+      }
+    ],
+    "v_L": 3.1819810150730667,
+    "observed_soft_x": 0.33260358899934056,
+    "expected_soft_x": 0.375
+  },
+  "tb32": {
+    "expected_c": 1.8,
+    "energy_fit_envelope": {
+      "midpoint": 1.8114848911769181,
+      "half_width": 0.054578740924352886,
+      "endpoints": [
+        1.7569061502525654,
+        1.8660636321012711
+      ],
+      "definition": "two-largest linear versus three-largest quadratic E/L in L^-2; velocity linear in L^-2 on each window"
+    },
+    "largest_L": 10,
+    "entropy_fits": [
+      {
+        "c": 2.0725178954077714,
+        "regression_se": 0.03242745568258281,
+        "rms": 0.008093582740378054,
+        "cut": 1
+      },
+      {
+        "c": 1.955898878143309,
+        "regression_se": 0.014521241890567724,
+        "rms": 0.0014211341198065988,
+        "cut": 2
+      },
+      {
+        "c": 1.9056629657331254,
+        "regression_se": 0.004610973457020653,
+        "rms": 0.00013899082642673748,
+        "cut": 3
+      }
+    ],
+    "v_L": 3.1769803205497165,
+    "observed_soft_x": 0.27879356047273035,
+    "expected_soft_x": 0.3
+  },
+  "unequal_velocity_control": {
+    "midpoint": 4.009501062545428,
+    "half_width": 0.05501010037241372,
+    "endpoints": [
+      3.954490962173014,
+      4.064511162917841
+    ],
+    "definition": "two-largest linear versus three-largest quadratic E/L in L^-2; velocity linear in L^-2 on each window"
+  }
+}

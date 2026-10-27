@@ -1,0 +1,54 @@
+b43 10 m 0 cS 1.362338765709011 cMV 7.545920149604317e-07 secs 0.24436712265014648
+b43 12 m 0 cS 1.3592368238238348 cMV 1.3401233426428396e-06 secs 0.37335205078125
+b43 14 m 0 cS 1.358228314978867 cMV 2.230447304494901e-06 secs 2.993473768234253
+b43 16 m 0 cS 1.3580434071694893 cMV 3.517397039905598e-06 secs 11.604856014251709
+b43 18 m 0 cS 1.3582145973045485 cMV 5.304754628432188e-06 secs 106.08501410484314
+ground-sector progress 20 0 best_m 0
+ground-sector progress 20 4 best_m 0
+ground-sector progress 20 8 best_m 0
+ground-sector progress 20 12 best_m 0
+ground-sector progress 20 16 best_m 0
+Traceback (most recent call last):
+  File "<repo>/codex/work_C4_D2/d2.py", line 446, in <module>
+    
+  File "<repo>/codex/work_C4_D2/d2.py", line 440, in main
+    m=(0 if L%4==0 else L//2) if args.af_momentum else args.momentum
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<repo>/codex/work_C4_D2/d2.py", line 221, in detailed
+    et,ut=solve(Ht,k=levels,v0=w/np.linalg.norm(w) if np.linalg.norm(w)>1e-12 else None)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<repo>/codex/work_C4_D2/d2.py", line 124, in solve
+    e,u=eigsh(H,k=k,which='SA',tol=tol,v0=v0,maxiter=20000,ncv=max(2*k+1,24))
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/scipy/sparse/linalg/_eigen/arpack/arpack.py", line 1658, in eigsh
+    ret = eigs(A, k, M=M, sigma=sigma, which=which, v0=v0,
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/scipy/sparse/linalg/_eigen/arpack/arpack.py", line 1429, in eigs
+    params.iterate()
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/scipy/sparse/linalg/_eigen/arpack/arpack.py", line 801, in iterate
+    self.workd[yslice] = self.OP(self.workd[xslice])
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/scipy/sparse/linalg/_interface.py", line 262, in matvec
+    y = self._matvec(x)
+        ^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/scipy/sparse/linalg/_interface.py", line 229, in _matvec
+    return self.matmat(x.reshape(-1, 1))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/scipy/sparse/linalg/_interface.py", line 370, in matmat
+    Y = self._matmat(X)
+        ^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/scipy/sparse/linalg/_interface.py", line 828, in _matmat
+    return self.A.dot(X)
+           ^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/scipy/sparse/_base.py", line 603, in dot
+    return self @ other
+           ~~~~~^~~~~~~
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/scipy/sparse/_base.py", line 923, in __matmul__
+    return self._matmul_dispatch(other)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/scipy/sparse/_base.py", line 810, in _matmul_dispatch
+    result = self._matmul_vector(other.ravel())
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/scipy/sparse/_compressed.py", line 395, in _matmul_vector
+    fn(M, N, self.indptr, self.indices, self.data, other, result)
+KeyboardInterrupt

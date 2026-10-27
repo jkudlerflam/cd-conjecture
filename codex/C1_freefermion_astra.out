@@ -1,0 +1,562 @@
+All momenta below belong to a circle. In particular, \(k=\pi\) and \(k=-\pi\) are the same point and are counted once. A zero of the determinant is counted by its order of vanishing.
+
+The only physical input used is the one allowed in the question: each independent real chiral Majorana field contributes \(1/2\) to the central charge of its chirality. The remaining arguments are finite-dimensional linear algebra and polynomial counting.
+
+Theorem 1 (Bloch Hamiltonian, mode count, and left-right balance).
+
+Write \(B=A(1)\). With Fourier convention
+\[
+\gamma_x=\frac1{\sqrt L}\sum_k e^{ikx}\gamma(k),
+\qquad
+\gamma(k)^\dagger=\gamma(-k),
+\]
+the Hamiltonian takes the form
+\[
+H=\frac14\sum_k\gamma(-k)^T h(k)\gamma(k),
+\]
+where
+\[
+h(k)=i\bigl(A(0)+Be^{ik}-B^Te^{-ik}\bigr).
+\]
+It satisfies
+\[
+h(k)^\dagger=h(k),
+\qquad
+h(-k)=-h(k)^*.
+\]
+Thus complex conjugation implements particle-hole symmetry, with square \(+1\).
+
+Let \(M_+\) and \(M_-\) count all zero-energy band crossings with positive and negative velocity, respectively, including band multiplicities. Under the stated linear-crossing assumption,
+\[
+c_R=\frac{M_+}{2},
+\qquad
+c_L=\frac{M_-}{2}.
+\]
+Moreover,
+\[
+M_+=M_-,
+\]
+and the total multiplicity \(M\) of the zeros of \(\det h(k)\) satisfies
+\[
+M=M_++M_-.
+\]
+Consequently,
+\[
+\boxed{
+c_L+c_R=\frac M2,
+\qquad
+c_L=c_R,
+\qquad
+c=\frac M4.
+}
+\]
+The same assertions hold for a finite-period chain after forming its unit-cell Bloch matrix.
+
+Proof.
+
+Hermiticity follows from \(A(0)^T=-A(0)\) and the reality of \(A(0)\) and \(B\). Direct conjugation gives the stated particle-hole symmetry.
+
+First, we identify determinant multiplicity with the number of vanishing bands. Fix a zero \(k_0\), put \(q=k-k_0\), and let
+\[
+P=\text{orthogonal projection onto }\ker h(k_0),
+\qquad
+m=\dim\ker h(k_0).
+\]
+In the decomposition \(P\oplus(1-P)\),
+\[
+h(k_0+q)=
+\begin{pmatrix}
+qV+O(q^2)&qW+O(q^2)\\
+qW^\dagger+O(q^2)&D+O(q)
+\end{pmatrix},
+\]
+where
+\[
+V=Ph'(k_0)P\big|_{\ker h(k_0)},
+\]
+and \(D\) is invertible.
+
+The velocities of the \(m\) vanishing bands are the eigenvalues of \(V\). To see the first-order statement, insert \(E=qv+O(q^2)\) into the eigenvalue equation and eliminate the component in \(1-P\). That component is \(O(q)\) relative to the kernel component, so the kernel equation becomes
+\[
+q(V-vI)u+O(q^2)=0.
+\]
+Thus the leading slopes, including multiplicities, are the eigenvalues of \(V\). The linear-crossing assumption says that all of these eigenvalues are nonzero, so \(V\) is invertible.
+
+The Schur-complement formula now gives
+\[
+\begin{aligned}
+\det h(k_0+q)
+&=\det(D+O(q))\\
+&\quad\times
+\det\left(
+qV+O(q^2)
+-(qW+O(q^2))(D+O(q))^{-1}
+(qW^\dagger+O(q^2))
+\right)\\
+&=q^m\det D\,\det V+O(q^{m+1}).
+\end{aligned}
+\]
+The leading coefficient is nonzero. Therefore the determinant has a zero of order \(m\). If the entire matrix vanishes at \(k_0\), the same argument applies with the complementary block absent and \(\det D=1\).
+
+Next, we count independent real fields. There are two cases.
+
+1. A particle-hole orbit consisting of two distinct points, \(k_0\) and \(-k_0\).
+
+   If a branch near \(k_0\) has
+   \[
+   E(k_0+q)=vq+O(q^2),
+   \]
+   its particle-hole partner near \(-k_0\) has
+   \[
+   \widetilde E(-k_0+q)
+   =-E(k_0-q)
+   =vq+O(q^2).
+   \]
+   The partners have the same velocity.
+
+   The Fourier reality condition identifies their envelope operators as a complex field and its adjoint. They constitute one complex chiral fermion,
+   \[
+   \psi=\frac{\chi_1+i\chi_2}{\sqrt2},
+   \]
+   hence two real chiral Majoranas of the same chirality. Their central-charge contribution is \(1\).
+
+   This orbit contributes two vanishing bands to the global count, one at each momentum. Thus its contribution is \(1/2\) per counted band. One must neither treat the two envelopes as independent complex fields nor divide their two-real-field contribution by two again.
+
+2. A particle-hole fixed point, \(k_0=0\) or \(\pi\).
+
+   Here \(h(k_0)\) is purely imaginary and antisymmetric, so its kernel has a real orthonormal basis. Differentiating particle-hole symmetry gives
+   \[
+   h'(-k)=h'(k)^*.
+   \]
+   At a fixed point, periodicity therefore makes \(h'(k_0)\) real. Since it is Hermitian, it is real symmetric. Consequently \(V\) can be diagonalized by a real orthogonal transformation on the kernel.
+
+   Each resulting envelope field is self-adjoint. The carrier factor is \(1\) at \(0\) and \((-1)^x\) at \(\pi\), both real. Each vanishing band therefore supplies one real chiral Majorana, contributing \(1/2\).
+
+Together these cases prove
+\[
+c_R=\frac{M_+}{2},
+\qquad
+c_L=\frac{M_-}{2},
+\qquad
+c_L+c_R=\frac M2.
+\]
+
+Finally, left-right balance follows from periodic spectral flow. Choose a starting momentum away from all zeros, and let \(N_-(k)\) be the number of strictly negative eigenvalues between crossings. At a crossing with \(m_+\) positive slopes and \(m_-\) negative slopes,
+\[
+N_-(k_0+0)-N_-(k_0-0)=m_--m_+.
+\]
+After one circuit of the Brillouin zone, the matrix returns to itself, so the total change is zero:
+\[
+0=M_--M_+.
+\]
+This proves \(c_L=c_R\).
+
+Particle-hole symmetry alone would not establish this balance, because its paired branches have the same velocity. \(\square\)
+
+Theorem 2 (translation-invariant nearest-neighbor bound).
+
+Under the assumptions of case (a), with \(r=\operatorname{rank}A(1)\),
+\[
+\boxed{
+M\le 2r,
+\qquad
+c\le\frac r2\le\frac n2.
+}
+\]
+
+Proof.
+
+Set \(z=e^{ik}\), \(D=iA(0)\), and \(T=iB\). Then
+\[
+h(z)=D+zT+z^{-1}T^\dagger,
+\qquad
+\operatorname{rank}T=\operatorname{rank}T^\dagger=r.
+\]
+
+Expand the determinant by multilinearity in its columns. A term selecting \(s\) columns from \(zT\), \(t\) columns from \(z^{-1}T^\dagger\), and the remaining columns from \(D\), carries the power \(z^{s-t}\).
+
+If \(s>r\), the selected columns from \(T\) are linearly dependent, so that determinant term vanishes. The same holds if \(t>r\). Every nonzero term therefore obeys
+\[
+-r\le s-t\le r.
+\]
+Hence
+\[
+f(z):=\det h(z)=\sum_{\ell=-r}^{r}a_\ell z^\ell.
+\]
+
+The finite-zero assumption ensures that \(f\) is not identically zero. Thus
+\[
+P(z)=z^rf(z)
+\]
+is a nonzero ordinary polynomial of degree at most \(2r\).
+
+Multiplication by \(z^r\) does not change multiplicities on the unit circle. Also, near \(k_0\),
+\[
+z-z_0=iz_0(k-k_0)+O((k-k_0)^2),
+\qquad z_0=e^{ik_0}\ne0,
+\]
+so the order of a zero as a function of \(z\) equals its order as a function of \(k\). A nonzero polynomial of degree at most \(2r\) has at most \(2r\) roots counted with multiplicity, even before restricting to the unit circle. Therefore
+\[
+M\le2r.
+\]
+Theorem 1 gives \(c=M/4\), completing the proof. \(\square\)
+
+Theorem 3 (the bound is independent of the period).
+
+For a period-\(p\) chain with \(n\) Majoranas per original site,
+\[
+\boxed{c\le\frac n2.}
+\]
+More precisely, if \(\mathcal B\) is the coupling from one chosen unit cell to the next,
+\[
+c\le\frac{\operatorname{rank}\mathcal B}{2}.
+\]
+
+Proof.
+
+Label sites as \(x=pj+\alpha\), with \(\alpha=0,\ldots,p-1\), and collect the \(np\) Majoranas in cell \(j\) into \(\Gamma_j\). The cell Bloch Hamiltonian is
+\[
+h_p(k)
+=i\left(\mathcal A_0+\mathcal B e^{ik}
+-\mathcal B^Te^{-ik}\right),
+\]
+where \(\mathcal A_0\) contains all onsite and within-cell couplings and is real antisymmetric.
+
+For \(p\ge2\), original-lattice nearest-neighbor locality allows only the last site of cell \(j\) to couple to the first site of cell \(j+1\). Thus the only potentially nonzero \(n\times n\) block of \(\mathcal B\) is
+\[
+\mathcal B_{\alpha\beta}
+=\delta_{\alpha,p-1}\delta_{\beta,0}B_{\mathrm{cut}}.
+\]
+It follows that
+\[
+r_{\mathrm{cell}}
+:=\operatorname{rank}\mathcal B
+=\operatorname{rank}B_{\mathrm{cut}}
+\le n.
+\]
+For \(p=1\), this is just the matrix \(B\) of Theorem 2.
+
+Although \(h_p\) has size \(np\times np\), the determinant expansion gives
+\[
+\det h_p(z)
+=\sum_{\ell=-r_{\mathrm{cell}}}^{r_{\mathrm{cell}}}
+b_\ell z^\ell.
+\]
+Indeed, selecting more than \(r_{\mathrm{cell}}\) columns from either inter-cell coefficient makes that determinant term vanish. Consequently,
+\[
+z^{r_{\mathrm{cell}}}\det h_p(z)
+\]
+is a nonzero polynomial of degree at most \(2r_{\mathrm{cell}}\le2n\). Therefore
+\[
+M\le2r_{\mathrm{cell}}\le2n,
+\qquad
+c=\frac M4\le\frac n2.
+\]
+
+Here \(k\) is conjugate to the cell index. Physical momentum is \(K=k/p\), so physical velocities are \(p\,\partial_kE\). This changes neither their signs nor the mode count. There is no division of the central charge by \(p\). \(\square\)
+
+Proposition 4 (sharpness for every \(n\)).
+
+For any positive integer \(n\), the bound is attained by
+\[
+H=it\sum_x\sum_{a=1}^n
+\gamma_{x,a}\gamma_{x+1,a},
+\qquad t\ne0.
+\]
+
+Proof.
+
+In the normalization of the question,
+\[
+A(0)=0,
+\qquad
+A(1)=2tI_n,
+\qquad
+h(k)=-4t\sin k\,I_n.
+\]
+There are two zero-energy points, \(0\) and \(\pi\), each with multiplicity \(n\). All slopes are nonzero:
+\[
+h'(0)=-4tI_n,
+\qquad
+h'(\pi)=4tI_n.
+\]
+Thus
+\[
+M=2n,
+\qquad
+c_L=c_R=\frac n2,
+\qquad
+c=\frac n2.
+\]
+
+For even \(n=2m\), pair the Majoranas into ordinary complex fermions,
+\[
+f_{x,j}=\frac{\gamma_{x,2j-1}+i\gamma_{x,2j}}2.
+\]
+The same example becomes
+\[
+H=2it\sum_{x,j}
+\left(
+f_{x,j}^\dagger f_{x+1,j}
+-f_{x+1,j}^\dagger f_{x,j}
+\right).
+\]
+It is a charge-conserving model with \(m\) complex orbitals per site and \(d=2^m\).
+
+For odd \(n=2m+1\), pair the first \(2m\) Majoranas in the same way and retain the remaining one-Majorana chain. This gives
+\[
+c=m+\frac12=\frac n2.
+\]
+For finite periodic systems with odd \(n\), take even \(L\), so the total number of Majoranas is even. This restriction does not affect the thermodynamic mode count. \(\square\)
+
+Charge-conserving fermions.
+
+For \(n_c\) complex orbitals per site, write the physical single-particle matrix as
+\[
+q(k)=M+Te^{ik}+T^\dagger e^{-ik},
+\qquad M=M^\dagger.
+\]
+Let \(F\) be the total number of its zero-energy crossings, counted with multiplicity and assuming nonzero slopes.
+
+Each crossing of this physical complex-fermion matrix supplies one complex chiral field. Therefore
+\[
+c_L+c_R=F,
+\qquad
+c=\frac F2.
+\]
+The same column argument gives
+\[
+F\le2\operatorname{rank}_{\mathbb C}T,
+\]
+and spectral flow gives equal numbers of positive and negative slopes. Hence
+\[
+\boxed{
+c_L=c_R,
+\qquad
+c\le\operatorname{rank}_{\mathbb C}T
+\le n_c=\log_2d.
+}
+\]
+For a period-\(p\) model, the inter-cell hopping matrix has rank at most \(n_c\), so the same bound holds.
+
+This is consistent with the Majorana count. In Nambu notation the doubled matrix is
+\[
+h_{\mathrm{BdG}}(k)=
+\begin{pmatrix}
+q(k)&0\\
+0&-q(-k)^T
+\end{pmatrix}.
+\]
+Its determinant has total zero multiplicity \(2F\), including when zeros from the two blocks coincide. The Majorana formula then gives
+\[
+c=\frac{2F}{4}=\frac F2.
+\]
+
+Non-Hermitian models.
+
+The Laurent-degree argument is algebraic and survives without Hermiticity. For a general matrix \(D+zT_++z^{-1}T_-\), the polynomial root bound is
+\[
+M\le\operatorname{rank}T_++\operatorname{rank}T_-,
+\]
+provided its determinant is not identically zero. For a complex antisymmetric Majorana coupling, the forward and backward coefficients still have equal rank, giving \(M\le2r\).
+
+The identification with central charge does not follow from this algebraic statement. Hermitian spectral flow and the assumed free real-Majorana interpretation are no longer available in general. Exceptional points can also invalidate the linear-mode description.
+
+Under the usual nonunitary CFT finite-size convention,
+\[
+c_{\mathrm{eff}}
+=\frac{c_L+c_R}{2}-12(h_{\min}+\bar h_{\min}),
+\]
+which reduces to \(c-24h_{\min}\) when the left and right quantities agree. This convention and a suitable conformal scaling limit are additional assumptions. The determinant bound alone does not establish a bound on \(c_{\mathrm{eff}}\).
+
+Linear Dirac crossings and quadratic touchings.
+
+If two bands of the Majorana Bloch matrix vanish at the same point with nonzero slopes \(v_1,v_2\), then
+\[
+\det h(k_0+q)
+=Cv_1v_2q^2+O(q^3),
+\qquad C\ne0.
+\]
+The point counts twice. Opposite slopes do not cancel the determinant multiplicity.
+
+At a particle-hole fixed point, an opposite-slope pair gives one right-moving and one left-moving real Majorana:
+\[
+\Delta c_R=\Delta c_L=\frac12.
+\]
+At a nonfixed point, its distinct particle-hole partner must also be included. The combined opposite-slope pair at each of the two momenta gives
+\[
+\Delta c_R=\Delta c_L=1.
+\]
+
+A quadratic touching instead has \(E\sim aq^2\), zero group velocity, and dynamical exponent \(2\). The Laurent-degree bound still counts determinant zeros, but their multiplicity no longer counts linearly dispersing chiral fields. Such a touching lies outside the conformal assumption, so \(c=M/4\) cannot be applied to it.
+
+Comparison with \(d-1\).
+
+For \(d=2^m\), with integer \(m\ge0\),
+\[
+\log_2d=m\le2^m-1=d-1.
+\]
+For \(m\ge1\), the binomial expansion gives
+\[
+2^m=1+m+\sum_{j=2}^m\binom mj.
+\]
+Equality holds at \(m=1\), and the sum is positive for \(m\ge2\). The trivial case \(m=0\) also gives equality. Thus equality holds only for
+\[
+d=1,\ 2,
+\]
+or only \(d=2\) if a nontrivial local Hilbert space is required.
+
+The explicit checks requested in item 1 follow.
+
+1. Critical transverse-field Ising chain, \(n=2\).
+
+   Use the spin normalization
+   \[
+   H_{\mathrm{spin}}
+   =-\frac12\sum_x
+   \left(J\sigma_x^x\sigma_{x+1}^x+g\sigma_x^z\right).
+   \]
+   Its Jordan-Wigner Majorana representation, apart from the boundary-sector choice that is immaterial in the thermodynamic limit, is
+   \[
+   H=\frac i2\sum_x
+   \left(g\,a_xb_x+J\,b_xa_{x+1}\right).
+   \]
+   Hence
+   \[
+   A(0)=
+   \begin{pmatrix}0&g\\-g&0\end{pmatrix},
+   \qquad
+   B=
+   \begin{pmatrix}0&0\\J&0\end{pmatrix},
+   \]
+   and
+   \[
+   h(k)=
+   \begin{pmatrix}
+   0&i(g-Je^{-ik})\\
+   i(-g+Je^{ik})&0
+   \end{pmatrix}.
+   \]
+   Therefore
+   \[
+   \det h(k)
+   =-\left(g^2+J^2-2gJ\cos k\right).
+   \]
+
+   At \(g=J>0\),
+   \[
+   \det h(k)=-4J^2\sin^2(k/2).
+   \]
+   There is one zero on the momentum circle, at \(k=0\), of order two. Near it,
+   \[
+   h(q)=-Jq\,\sigma_x+O(q^2),
+   \]
+   so the two velocities are \(+J\) and \(-J\).
+
+   The globally ordered energies
+   \[
+   E_\pm(k)=\pm2J|\sin(k/2)|
+   \]
+   have a cusp because the ordering exchanges the crossing branches. The local crossing branches have nonzero linear slopes, as the matrix expansion shows.
+
+   Both modes occur at a particle-hole fixed point and are real Majoranas. Thus
+   \[
+   M=2,\qquad
+   c_R=c_L=\frac12,\qquad
+   \boxed{c=\frac12}.
+   \]
+   Also \(\operatorname{rank}B=1\), so this saturates the rank-dependent bound.
+
+2. XX chain at generic filling, \(n=2\).
+
+   Write its number-conserving fermion Hamiltonian as
+   \[
+   H=-J\sum_x(f_x^\dagger f_{x+1}+f_{x+1}^\dagger f_x)
+   -\mu\sum_x\left(f_x^\dagger f_x-\frac12\right),
+   \]
+   with \(J>0\) and \(|\mu|<2J\). Define
+   \[
+   f_x=\frac{a_x+ib_x}{2}.
+   \]
+   The identities
+   \[
+   f_x^\dagger f_x-\frac12=\frac i2a_xb_x,
+   \qquad
+   f_x^\dagger f_{x+1}+f_{x+1}^\dagger f_x
+   =\frac i2(a_xb_{x+1}-b_xa_{x+1})
+   \]
+   give
+   \[
+   A(0)=
+   \begin{pmatrix}0&-\mu\\\mu&0\end{pmatrix},
+   \qquad
+   B=
+   \begin{pmatrix}0&-J\\J&0\end{pmatrix}.
+   \]
+   Set
+   \[
+   \varepsilon(k)=-\mu-2J\cos k.
+   \]
+   Then
+   \[
+   h(k)=
+   \begin{pmatrix}
+   0&i\varepsilon(k)\\
+   -i\varepsilon(k)&0
+   \end{pmatrix},
+   \qquad
+   \det h(k)=-\varepsilon(k)^2.
+   \]
+
+   The zeros are
+   \[
+   k=\pm k_F,
+   \qquad
+   k_F=\arccos\!\left(-\frac{\mu}{2J}\right)\in(0,\pi).
+   \]
+   Each determinant zero has order two, because
+   \[
+   \varepsilon'(\pm k_F)=\pm2J\sin k_F\ne0.
+   \]
+   The two eigenvalue branches of \(h\) have opposite slopes at each point. Thus
+   \[
+   M=4,\qquad M_+=M_-=2.
+   \]
+
+   Particle-hole symmetry pairs the positive-slope branch at one momentum with the positive-slope branch at the other, producing one complex right mover. The negative-slope branches produce one complex left mover. Consequently,
+   \[
+   c_R=c_L=1,
+   \qquad
+   \boxed{c=1}.
+   \]
+   Here \(\operatorname{rank}B=2\), so the \(n/2\) bound is attained.
+
+3. One Majorana per site, \(n=1\).
+
+   For
+   \[
+   H=it\sum_x\gamma_x\gamma_{x+1},
+   \qquad t\ne0,
+   \]
+   the normalization \(H=(i/4)\gamma A\gamma\) requires
+   \[
+   A(1)=2t,\qquad A(-1)=-2t.
+   \]
+   Therefore
+   \[
+   h(k)=i(2te^{ik}-2te^{-ik})=-4t\sin k.
+   \]
+   There are two simple zeros, \(0\) and \(\pi\), with velocities
+   \[
+   v_0=-4t,\qquad v_\pi=4t.
+   \]
+   Both are particle-hole fixed points, and each supplies one real chiral Majorana. For \(t>0\), the \(0\) mode is left-moving and the \(\pi\) mode is right-moving; changing the sign of \(t\) exchanges them. Hence
+   \[
+   M=2,\qquad
+   c_R=c_L=\frac12,\qquad
+   \boxed{c=\frac12}.
+   \]
+
+Thus the bound is sharp for every \(n\), and period enlargement leaves it unchanged. The determinant-to-central-charge identification requires the stated linear, Hermitian free-fermion scaling limit; the polynomial degree bound itself does not.
+
+[gpt_solve: backend=codex model=gpt-6-astra effort=high transcript=20261021T145128-22694]

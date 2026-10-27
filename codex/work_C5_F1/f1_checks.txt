@@ -1,0 +1,20 @@
+Weighted U(1) codes. Formal cosets are NOT established projected IRs.
+  n_c= 4, d=2, level=      70, one-U(1) c= 3, completed-torus c=1, killed surviving current level=14
+  n_c= 6, d=2, level=    1302, one-U(1) c= 5, completed-torus c=1, killed surviving current level=14
+  n_c= 8, d=2, level=   21590, one-U(1) c= 7, completed-torus c=1, killed surviving current level=14
+  n_c=10, d=2, level=  348502, one-U(1) c= 9, completed-torus c=1, killed surviving current level=14
+  n_c=12, d=2, level= 5588310, one-U(1) c=11, completed-torus c=1, killed surviving current level=14
+Rectangular SU(N) representations: 450 exact checks passed (2<=N<=10, 1<=m<=10, 1<=q<N).
+Sp(2m), SO(n), fixed-charge exterior powers, and parafermion central-charge checks passed.
+Explicit Fock-space singlet kernels passed: U(m) color and Sp(2m) for 1<=m<=5, SO(n) for n=4,6.
+Example arithmetic (IR identifications are inputs, not numeric results):
+  Ising                        d=2, c=1/2, d-1=1
+  three-state Potts            d=3, c=4/5, d-1=2
+  four-state Potts             d=4, c=  1, d-1=3
+  spin-1 TB                    d=3, c=3/2, d-1=2
+  spin-3/2 TB                  d=4, c=9/5, d-1=3
+  gapless t-J                  d=3, c=  2, d-1=2
+  two-mode Hubbard regime      d=4, c=  2, d-1=3
+  SU(4)_1 on spinful site      d=4, c=  3, d-1=3
+All tested hard-projected single-parton hopping operators vanish.
+PASS. No continuum limit, parent Hamiltonian, or universal interacting-chain bound was numerically established.

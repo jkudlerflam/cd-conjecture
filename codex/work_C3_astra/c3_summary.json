@@ -1,0 +1,70 @@
+{
+  "full": {
+    "total": 2400,
+    "accepted": 1493,
+    "boundary": 391,
+    "counts": {
+      "1.157859": 762,
+      "1.848934": 215,
+      "1.128822": 282,
+      "1.501909": 54,
+      "1.461665": 142,
+      "1.488878": 38
+    },
+    "maximum_residual": 8.863344797196487e-10,
+    "maximum_magnetization": 1.7823152619885113e-09
+  },
+  "unpolarized": {
+    "total": 2000,
+    "accepted": 1825,
+    "boundary": 172,
+    "counts": {
+      "1.128822": 354,
+      "1.461665": 313,
+      "1.501909": 272,
+      "1.848934": 269,
+      "1.488878": 171,
+      "1.157859": 446
+    },
+    "maximum_residual": 2.5013997472470366e-10,
+    "maximum_magnetization": 7.264248300540282e-14
+  },
+  "square": {
+    "total": 1000,
+    "accepted": 213,
+    "boundary": 369,
+    "counts": {
+      "1.848934": 55,
+      "1.157859": 70,
+      "1.461665": 40,
+      "1.128822": 43,
+      "1.488878": 2,
+      "1.501909": 3
+    },
+    "maximum_residual": 9.474779319154308e-08,
+    "maximum_magnetization": 4.787605258645899e-07
+  },
+  "canonical": {
+    "total": 1200,
+    "accepted": 1066,
+    "boundary": 130,
+    "counts": {
+      "1.128822": 159,
+      "1.501909": 128,
+      "1.848934": 377,
+      "1.157859": 182,
+      "1.461665": 161,
+      "1.488878": 59
+    },
+    "maximum_residual": 4.884646092839137e-10,
+    "maximum_magnetization": 4.3746028333601177e-16
+  },
+  "iteration": {
+    "total": 120,
+    "accepted": 0,
+    "boundary": 120,
+    "counts": {},
+    "maximum_residual": null,
+    "maximum_magnetization": null
+  }
+}

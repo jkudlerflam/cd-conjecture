@@ -1,0 +1,14 @@
+No verified violation was found in 3,526 retained calculations, completed in 38 minutes.
+
+The apparent Sp(4) energy estimate \(c=4.720\) is consistent with total charge \(3\) and split velocities. Small-angle Sp(4) remains unresolved: its large entropy slope accompanies approximately quadratic gap scaling, not an established CFT.
+
+The complete thermodynamic phase catalogue remains open. All assumptions, corrections, and uncertainty estimates are documented.
+
+- [Report](<./REPORT.md>)
+- [d3.py](<./d3.py>)
+- [Numerical catalogue](<./catalogue.csv>)
+- [Complete deliverables](<./d3_deliverables.zip>)
+
+The 154-task Typhon continuation is prepared but was not submitted.
+
+[gpt_solve: backend=codex model=gpt-6-astra effort=high transcript=20261021T164315-52337]

@@ -1,0 +1,285 @@
+The ground-state-only ratio does not converge to the central charge in the nonintegrable chains. The leading ultraviolet contribution gives
+
+\[
+c_2(N)=\frac{128\pi^2}{N}\frac{\kappa_2^3}{\kappa_1^2}+o(N^{-1}),
+\]
+
+where \(\kappa_p\) are inverse-energy moments of the high-energy spectral weight of the total energy current. The numerical data are consistent with this mechanism. In contrast, the low-energy Milsted–Vidal estimator approaches the expected central charge, although \(\lambda=0.35\) has large finite-size corrections.
+
+The code and raw output are in [ks_test.py](work_C2/ks_test.py), [ks_results.csv](work_C2/ks_results.csv), and [ks_fits.txt](work_C2/ks_fits.txt). The complete run took 73 seconds.
+
+## A. High-energy contribution
+
+Write \(q=4\pi/N\), since the mode number is \(n=2\), and let
+
+\[
+h_q=\sum_j e^{iqj}h_j.
+\]
+
+The continuity equation gives
+
+\[
+i[H,h_j]=-(J_j-J_{j-1}),
+\]
+
+and hence
+
+\[
+[H,h_q]=-i(e^{iq}-1)J_q
+       =qJ_q+O(q^2).
+\]
+
+Equivalently, for finite-range densities,
+
+\[
+J_{\rm tot}
+=i\sum_j\sum_{r>0}r[h_j,h_{j+r}],
+\]
+
+where only overlapping densities contribute. This is the expression used numerically.
+
+Let \(|a\rangle\) be an eigenstate with gap \(\Delta_a=E_a-E_0\). For a high-energy state, \(\Delta_a=O(1)\),
+
+\[
+\Delta_a\langle a|h_{-q}|I\rangle
+ =\langle a|[H,h_{-q}]|I\rangle
+ =-q\langle a|J_{-q}|I\rangle+O(q^2).
+\]
+
+Therefore
+
+\[
+m_0^{\rm UV}
+=q^2\sum_{a\in {\rm UV}}
+ \frac{|\langle a|J_{-q}|I\rangle|^2}{\Delta_a^2}
+ +O(q^3),
+\]
+
+and
+
+\[
+m_1^{\rm UV}
+=q^2\sum_{a\in {\rm UV}}
+ \frac{|\langle a|J_{-q}|I\rangle|^2}{\Delta_a}
+ +O(q^3).
+\]
+
+Define the extensive spectral moments
+
+\[
+\kappa_p
+=\lim_{N\rightarrow\infty}\frac1N
+ \sum_{a\in{\rm UV}}
+ \frac{|\langle a|\delta J_{\rm tot}|I\rangle|^2}{\Delta_a^p},
+\qquad p=0,1,2,
+\]
+
+with \(\delta J_{\rm tot}=J_{\rm tot}-\langle J_{\rm tot}\rangle\). In particular,
+
+\[
+\frac{\operatorname{var}(J_{\rm tot})}{N}\longrightarrow\kappa_0.
+\]
+
+Since \(q=4\pi/N\),
+
+\[
+m_0^{\rm UV}=\frac{16\pi^2\kappa_2}{N}+o(N^{-1}),
+\qquad
+m_1^{\rm UV}=\frac{16\pi^2\kappa_1}{N}+o(N^{-1}).
+\]
+
+These dominate the CFT contributions \(O(N^{-2})\) and \(O(N^{-3})\). Consequently,
+
+\[
+\begin{aligned}
+c_2(N)
+&=8\frac{(m_0^{\rm UV})^3}{(m_1^{\rm UV})^2}
+\\
+&=\frac{128\pi^2}{N}\frac{\kappa_2^3}{\kappa_1^2}
+  +o(N^{-1}).
+\end{aligned}
+\]
+
+Thus \(c_2\to0\) generically.
+
+If \(J_{\rm tot}\) commutes with \(H\) and the ground state is unique, then
+
+\[
+\delta J_{\rm tot}|I\rangle=0,
+\]
+
+so all \(\kappa_p\) vanish and the \(1/N\) contamination is absent. This occurs for the Heisenberg/XXZ and transverse-field Ising chains with the standard centered energy densities.
+
+There is a qualification. Current conservation removes this leading term, but does not by itself prove that every subleading ultraviolet contribution is smaller than the CFT term. An \(O(q^2)\) term in \([H,h_q]\) can contribute to \(m_1\) at \(O(N^{-3})\). The TFIM data below show unusually slow behavior of \(c_2\), even though its measured current variance is zero.
+
+## Milsted–Vidal normalization
+
+For one chiral stress-tensor state,
+
+\[
+h_{-2}|I\rangle
+\longrightarrow
+\frac{2\pi v}{N}L_{-2}|0\rangle,
+\]
+
+so
+
+\[
+|\langle T|h_{-2}|I\rangle|^2
+=\left(\frac{2\pi v}{N}\right)^2\frac c2,
+\qquad
+E_T-E_0=2\frac{2\pi v}{N}.
+\]
+
+It follows that the correctly normalized estimator is
+
+\[
+\boxed{
+c_{\rm MV}(N)
+=8\frac{|\langle T|h_{-2}|I\rangle|^2}
+        {(E_T-E_0)^2}
+}.
+\]
+
+The code obtains \(|T\rangle\) from a fully reorthogonalized Lanczos spectral calculation initiated with \(h_{-2}|I\rangle\). This keeps the Krylov space in the required momentum sector. The state with largest spectral weight among the lowest ten Ritz states is selected.
+
+## B. Numerical results
+
+For the Ising models I used centered densities,
+
+\[
+h_j=-\frac12(X_{j-1}X_j+X_jX_{j+1})-Z_j
++\lambda(X_{j-1}X_jZ_{j+1}+Z_{j-1}X_jX_{j+1}).
+\]
+
+### Transverse-field Ising, \(c=1/2\)
+
+| \(N\) | \(c_2\) | \(m_0N^2\) | \(m_1N^3\) | \(\mathrm{var}(J)/N\) | \(c_{\rm MV}\) |
+|---:|---:|---:|---:|---:|---:|
+| 8  | 0.4396 | 51.192 | 1562.55 | \(4.4\,10^{-32}\) | 0.3937 |
+| 10 | 0.3924 | 54.276 | 1805.41 | \(9.4\,10^{-32}\) | 0.4298 |
+| 12 | 0.3505 | 55.024 | 1950.02 | \(1.3\,10^{-31}\) | 0.4505 |
+| 14 | 0.3164 | 54.835 | 2041.81 | \(1.6\,10^{-31}\) | 0.4633 |
+| 16 | 0.2891 | 54.270 | 2103.30 | \(1.9\,10^{-31}\) | 0.4717 |
+| 18 | 0.2670 | 53.572 | 2146.35 | \(2.6\,10^{-31}\) | 0.4775 |
+| 20 | 0.2490 | 52.847 | 2177.60 | \(2.5\,10^{-31}\) | 0.4817 |
+
+The current variance vanishes numerically. The fit
+
+\[
+c_{\rm MV}=0.49786-\frac{6.717}{N^2}
+\]
+
+recovers \(c=1/2\). The ground-state-only ratio has strong ultraviolet corrections and does not give a useful estimate on these sizes.
+
+### O’Brien–Fendley, \(\lambda=0.2\), \(c=1/2\)
+
+| \(N\) | \(c_2\) | \(m_0N^2\) | \(m_1N^3\) | \(\mathrm{var}(J)/N\) | \(c_{\rm MV}\) |
+|---:|---:|---:|---:|---:|---:|
+| 8  | 0.8302 | 103.789 | 3282.41 | 0.003755 | 0.6204 |
+| 10 | 0.6525 | 106.171 | 3830.70 | 0.007385 | 0.5837 |
+| 12 | 0.5334 | 104.933 | 4162.89 | 0.009470 | 0.5596 |
+| 14 | 0.4479 | 102.391 | 4378.84 | 0.010718 | 0.5439 |
+| 16 | 0.3834 | 99.438 | 4529.51 | 0.011516 | 0.5333 |
+| 18 | 0.3331 | 96.441 | 4641.70 | 0.012056 | 0.5260 |
+| 20 | 0.2928 | 93.556 | 4730.32 | 0.012439 | 0.5207 |
+
+A zero-intercept fit gives
+
+\[
+c_2=\frac{5.594}{N}+\frac{8.732}{N^2}.
+\]
+
+The tail power fit gives \(c_2\propto N^{-1.19}\). Meanwhile,
+
+\[
+c_{\rm MV}=0.50387+\frac{7.643}{N^2}.
+\]
+
+### O’Brien–Fendley, \(\lambda=0.35\), \(c=1/2\)
+
+| \(N\) | \(c_2\) | \(m_0N^2\) | \(m_1N^3\) | \(\mathrm{var}(J)/N\) | \(c_{\rm MV}\) |
+|---:|---:|---:|---:|---:|---:|
+| 8  | 1.3249 | 153.806 | 4687.19 | 0.004671 | 0.8127 |
+| 10 | 1.0375 | 153.980 | 5305.69 | 0.013304 | 0.7212 |
+| 12 | 0.8585 | 150.680 | 5646.12 | 0.019815 | 0.6843 |
+| 14 | 0.7339 | 146.589 | 5859.58 | 0.024313 | 0.6515 |
+| 16 | 0.6403 | 142.489 | 6012.13 | 0.027401 | 0.6220 |
+| 18 | 0.5662 | 138.613 | 6134.40 | 0.029559 | 0.5947 |
+| 20 | 0.5054 | 135.017 | 6241.60 | 0.031104 | 0.5690 |
+
+Here
+
+\[
+c_2=\frac{9.826}{N}+\frac{6.010}{N^2},
+\]
+
+and the tail power is \(N^{-1.05}\). A \(1/N^2\) fit to \(c_{\rm MV}\) gives \(0.5470\), but this fit is not stable. The sequence is monotonically approaching \(1/2\), with large corrections expected near the end of the Ising-critical interval.
+
+### Heisenberg, \(c=1\)
+
+| \(N\) | \(c_2\) | \(m_0N^2\) | \(m_1N^3\) | \(\mathrm{var}(J)/N\) | \(c_{\rm MV}\) |
+|---:|---:|---:|---:|---:|---:|
+| 8  | 1.4548 | 48.112 | 782.59 | \(1.8\,10^{-32}\) | 1.4549 |
+| 10 | 1.2673 | 48.473 | 847.94 | \(2.3\,10^{-32}\) | 1.2680 |
+| 12 | 1.1769 | 48.679 | 885.52 | \(1.4\,10^{-31}\) | 1.1788 |
+| 14 | 1.1254 | 48.802 | 908.96 | \(3.5\,10^{-23}\) | 1.1286 |
+| 16 | 1.0929 | 48.877 | 924.52 | \(8.9\,10^{-29}\) | 1.0974 |
+| 18 | 1.0708 | 48.925 | 935.37 | \(5.2\,10^{-29}\) | 1.0766 |
+| 20 | 1.0551 | 48.956 | 943.22 | \(8.8\,10^{-31}\) | 1.0620 |
+
+The current variance vanishes. The fits give \(c_2(\infty)\simeq1.048\) from a quadratic polynomial in \(1/N\), and \(c_{\rm MV}(\infty)\simeq0.980\) from a linear \(1/N^2\) fit. Logarithmic Heisenberg corrections make neither polynomial fit quantitatively clean, but both sequences approach one.
+
+### \(J_1\)-\(J_2\), \(J_2=0.2\), \(c=1\)
+
+| \(N\) | \(c_2\) | \(m_0N^2\) | \(m_1N^3\) | \(\mathrm{var}(J)/N\) | \(c_{\rm MV}\) |
+|---:|---:|---:|---:|---:|---:|
+| 8  | 1.7042 | 35.440 | 457.12 | 0.008528 | 1.7115 |
+| 10 | 1.3851 | 34.452 | 485.98 | 0.008029 | 1.4046 |
+| 12 | 1.2201 | 34.084 | 509.55 | 0.007817 | 1.2648 |
+| 14 | 1.1057 | 34.042 | 534.25 | 0.007703 | 1.1880 |
+| 16 | 1.0114 | 34.181 | 562.02 | 0.007634 | 1.1408 |
+| 18 | 0.9267 | 34.425 | 593.46 | 0.007589 | 1.1097 |
+| 20 | 0.8479 | 34.734 | 628.77 | 0.007557 | 1.0879 |
+
+A forced zero-intercept fit gives
+
+\[
+c_2=\frac{18.486}{N}-\frac{41.156}{N^2}.
+\]
+
+The tail power is only \(N^{-0.74}\), indicating that these sizes remain preasymptotic. Nevertheless, the nonzero limiting current variance and steadily increasing \(m_1N^3\) have the predicted ultraviolet signature. The low-energy fit gives
+
+\[
+c_{\rm MV}=0.9542+\frac{47.23}{N^2},
+\]
+
+consistent with one given the known slow corrections.
+
+## Checks
+
+All ground states were unique on \(N=8,10,\ldots,20\). The first excitation gaps were positive and scaled downward with \(N\), as expected at criticality.
+
+For every ground state,
+
+\[
+|\langle I|\mathcal T|I\rangle|=1
+\]
+
+to displayed precision. The largest translation residual was \(2.3\times10^{-11}\), with most residuals between \(10^{-16}\) and \(10^{-13}\).
+
+The conserved-current checks were also decisive:
+
+\[
+\frac{\operatorname{var}(J_{\rm tot})}{N}\simeq0
+\]
+
+for TFIM and Heisenberg, while it tends to a nonzero constant for all three nonintegrable cases.
+
+## Conclusion
+
+For the nonintegrable models, \(c_2(N)\) does not converge to \(c\). The O’Brien–Fendley data give powers close to \(N^{-1}\), with fitted coefficients \(5.6/N\) and \(9.8/N\). The \(J_1\)-\(J_2\) chain is less asymptotic by \(N=20\), but its nonzero current variance and decreasing \(c_2\) support the same conclusion.
+
+The Milsted–Vidal estimator behaves differently because it explicitly projects onto a low-energy stress-tensor state. It converges convincingly for TFIM and \(\lambda=0.2\), is consistent with \(c=1\) for both spin chains, and trends toward \(1/2\) at \(\lambda=0.35\), though larger sizes would be needed for a controlled extrapolation there.
+
+[gpt_solve: backend=codex model=gpt-5.6-sol effort=medium transcript=20261021T144253-19587]

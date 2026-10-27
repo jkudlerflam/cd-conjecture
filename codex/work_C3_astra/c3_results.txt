@@ -1,0 +1,511 @@
+C3. Exact single-site Lin–McGreevy fixed points for qubits
+Closed-book calculation, 21 October 2026. Natural logarithms throughout.
+
+Status of the conclusions
+
+The classical classification is proved. Nontrivial quantum fixed points are
+proved to exist, including an XX example that has a pure TI infinite-chain
+realization. A numerical classification finds eight classes, three with a
+continuous parameter after quotienting by U tensor U, and six distinct values
+of c_Delta. Every member of this catalogue fails four-site scale consistency.
+No root with 0 < c_Delta <= 1 was found.
+
+The quantum catalogue is a numerical classification, not a completeness theorem.
+In particular, I have not proved that every solution has tau = I/2. The value
+1.848934360211 is the supremum over the catalogue, attained by the tracial point.
+It is the numerical prediction for the global supremum, not a proved sharp bound.
+A rigorous bound for the complete solution set is 0 < c_Delta <= 7.395737440844.
+Likewise, the absence of all quantum scale-consistent solutions is numerical,
+whereas absence in the full-support classical case is proved.
+
+The equations (**) are local consistency conditions. Their satisfaction alone
+is not a proof of an infinite TI extension. Explicit pure TI extensions are
+given below for the tracial three-site marginal and the untwisted XX example.
+Infinite extensions and purity of the other catalogue entries are not established.
+
+1. Classical theorem
+
+Here classical means a common on-site basis throughout the chain. Diagonality
+of sigma in two different bases at its two ends does not imply that sigma_12
+and sigma_23 commute. The nilpotent example in section 2 illustrates this
+important distinction. It is diagonal in an X basis at one end and a Y basis
+at the other, but is not a stationary classical chain in one common basis.
+
+Theorem. For strictly positive stationary probabilities p_xy, x,y in {0,1},
+the only solution of (**) is p_xy = 1/4 and r_xyz = 1/8.
+
+Proof. Write q for the common marginal and define
+
+  A_y = sum_z p_yz^(4/3) q_z^(-1/3).
+
+The exponential equation gives
+
+  r_xyz = Z^(-1) p_xy^(4/3) p_yz^(4/3)
+          q_x^(-1/3) q_y^(-1) q_z^(-1/3).
+
+Taking its right marginal and imposing r_xy = p_xy gives
+
+  (p_xy/q_x)^(1/3) = Z q_y/A_y.
+
+The right side is independent of x. Hence p_xy = q_x b_y, and summing over x
+forces b_y = q_y. This proves product structure instead of assuming it.
+For p_xy = q_x q_y the three-site formula becomes
+
+  r_xyz = q_x q_z q_y^(5/3) / sum_w q_w^(5/3).
+
+Its marginal condition requires q_y^(2/3) to be independent of y. Positivity
+then gives q_0 = q_1 = 1/2. Substitution verifies the solution.
+
+Consequently lambda = (log 2)/2 and
+
+  c_Delta = 3 log 2 / [2 h(1/4)] = 1.848934360211.
+
+For the tracial state S_n = n log 2. Substituting K_n = n log 2 into the
+operator combination gives K_Delta = 2 b eta log 2 for any a,b,c.
+Thus the advertised single-site example is correct and its c is scale dependent.
+
+2. Quantum catalogue and exact subfamilies
+
+All accepted numerical roots have tau = I/2. Use Pauli matrices X,Y,Z, put
+
+  L(J) = sum_{alpha,beta=1}^3 J_{alpha,beta} P_alpha tensor P_beta,
+  sigma(J) = exp L(J) / Z_2,             Z_2 = Tr exp L(J),
+  H_3(J) = L(J)_12 + L(J)_23,
+  rho_3(J) = exp[(4/3) H_3(J)] / Z_3,   Z_3 = Tr exp[(4/3) H_3(J)].
+
+Then
+
+  lambda = 2 log Z_2 - (5/4) log 2 - (3/4) log Z_3.
+
+These formulas specify the states themselves, not just their entropies. A
+common local unitary acts by J -> R J R^T, R in SO(3). Let E_ab denote a
+matrix unit, and R_phi a rotation in the xy plane about z. Define
+
+  j_- = -0.4633984613117567,
+  j_+ =  0.7305599241416642,
+  j_0 =  0.7277678875729927,
+  a   =  0.6910314999352538,
+  b   =  0.2502781050763858,
+  d   =  0.3751033007603815.
+
+The catalogue, modulo common local unitaries, is
+
+  J                                        dim quotient    lambda           c_Delta
+  0                                             0        .346573590280    1.848934360211
+  j_- R_phi, 0 <= phi <= pi                     1        .217034894085    1.157858776010
+  j_+ R_phi, 0 <= phi <= pi                     1        .273981917602    1.461665273230
+  j_0 diag(1,1,0) R_phi, 0 <= phi <= pi          1        .211592092571    1.128821991278
+  j_0 diag(1,-1,0)                              0        .211592092571    1.128821991278
+  j_0 E_12                                      0        .279082841426    1.488878175744
+  a E_12 + b E_21 - d E_33                      0        .281525355185    1.501908734739
+  a E_12 - b E_21 + d E_33                      0        .281525355185    1.501908734739
+
+Before quotienting, each nontrivial entry has local manifold dimension three.
+The tracial point is isolated. Jacobians in all 15 Gibbs coordinates, with
+both three-site marginal equations and equal one-site marginals imposed, have
+nullity three at all nontrivial representatives and zero at the tracial point.
+The quotient dimensions also follow from the explicit rotational families.
+At special rotation angles stabilizers change, as expected for a quotient.
+
+The minimum eigenvalues of sigma and rho_3 at the representatives are
+
+  tracial          .25              .125
+  Werner AF        .106578938276     .0108272070205
+  Werner F         .0176215855047    .000674885514718
+  XX, either type  .0357781259747    .00182367065939
+  nilpotent        .0945755332720    .0150983056143
+  exotic, either   .0512881382411    .00538602524103
+
+All are safely in the full-rank interior. Spectra are constant along each of
+the displayed families.
+
+Exact Werner construction. For J = j I, write
+
+  sigma = [I + t(XX+YY+ZZ)]/4,
+  k = 4j/3,
+  t = (exp(3k)-1)/(3 exp(3k)+1).
+
+The three-site H = XX_12+YY_12+ZZ_12+XX_23+YY_23+ZZ_23 has eigenvalues
+2, 0, -4, with multiplicities 4, 2, 2. Its output bond correlation is
+
+  t_out = (2/3) [exp(2k)-exp(-4k)] /
+                    [2 exp(2k)+1+exp(-4k)].
+
+Set x = exp k. The equation t_out = t is
+
+  -3 x^7 + 8 x^6 + 3 x^4 - 9 x^3 + 1 = 0
+  = (x-1)(-3x^6+5x^5+5x^4+8x^3-x^2-x-1).
+
+The second factor has exactly two positive roots. Its coefficient sequence
+has two sign changes; its values at zero, one, and positive infinity have
+signs minus, plus, minus. Descartes' rule and the intermediate value theorem
+therefore give one root in (0,1) and one in (1,infinity). These define j_-
+and j_+ above. The corresponding t are
+
+  t_- = -.573684246896384,
+  t_+ =  .309837885993719.
+
+This is an existence and classification proof within the Werner ansatz.
+For J = j R, a site-dependent rotation R^n turns every bond into j I.
+The same construction works on three and four sites. It preserves spectra,
+partial traces, and lambda, and proves the entire twisted Werner families.
+Only conjugacy classes of R are identified by a common local unitary, leaving
+one rotation angle after the required quotient.
+
+Exact XX and nilpotent construction. Let r = tanh j. Both constructions obey
+
+  r = (1/sqrt(2)) tanh[(4 sqrt(2)/3) j].                 (A)
+
+For XX, L = j(XX+YY), sigma has correlations (r,r,-r^2), and the three-site
+free-fermion spectrum gives this output nearest-neighbor correlation. More
+explicitly, its one-particle log-density matrix is (8j/3) times the three-site
+adjacency matrix. Its correlation matrix has diagonal 1/2, nearest-neighbor
+entries tanh[(4 sqrt(2)/3)j]/(2 sqrt(2)), and zero distance-two entries.
+The two-site reduced state is Gaussian with those entries, so fixing r also
+fixes its ZZ correlation to -r^2. This checks every matrix element.
+
+For the nilpotent example L = j X tensor Y. The two three-site bond operators
+anticommute and each squares to I. Consequently
+
+  rho_3 = [I + r(XYI + IXY)]/8,
+  sigma = [I + r XY]/4,
+
+provided (A) holds. Taking either marginal verifies the fixed point directly.
+
+There is a unique positive nonzero j solving (A). For A = 4 sqrt(2)/3 > 1,
+tanh(Aj)/tanh(j) decreases strictly from A to 1 on j > 0. Its logarithmic
+derivative is 2A/sinh(2Aj) - 2/sinh(2j) < 0. Since 1 < sqrt(2) < A,
+it crosses sqrt(2) once. Numerically
+
+  j = j_0,                 r = .621697866912049,
+  r^2 = .386508237722996.
+
+The exact implicit formulas for the charges are
+
+  lambda_nil = (log 2)/2 + 2 log cosh j
+                         - (3/4) log cosh[(4 sqrt(2)/3)j],
+  lambda_XX  = (log 2)/2 + 4 log cosh j
+                         - (3/2) log cosh[(4 sqrt(2)/3)j].
+
+In particular c_XX = 2 c_nil - c_tracial, an independent consistency check.
+The XX rotations follow by site-dependent rotations about z. The reflection
+entry is obtained using a period-two rotation by pi about x. These transformations
+are consistent on every interval and preserve the marginal equations.
+
+The two exotic entries are numerical roots. Their coefficients are specified
+by the three marginal equations for J = a E_12 + b E_21 - d E_33. The code
+solves those equations to machine precision. I do not give a separate analytic
+existence or uniqueness proof for these numerical roots.
+
+An analytic reduction for the unpolarized sector. Every sigma with zero Bloch
+vectors has log sigma = constant + L(J). The three-spin Hamiltonian H=L_12+L_23
+is invariant under time reversal, whose square on three spins is -1. Its
+spectrum therefore has at most four distinct eigenvalues. Interpolate exp(4H/3)
+by a polynomial a_0+a_1 H+a_2 H^2+a_3 H^3. The coefficient a_3 is a strictly
+positive divided difference of the exponential, including the Hermite limits
+when eigenvalues coincide.
+
+The normalized partial traces of I,H,H^2 agree at the two ends. For H^3, direct
+Pauli multiplication gives the difference of their correlation matrices as
+
+  2 [J^2,J^T].
+
+For example, the left output correlation matrix of H^3 is
+
+  4 ||J||_F^2 J - 2 J J^T J + 2 J^2 J^T,
+
+and the right expression replaces the last term by 2 J^T J^2. Therefore every
+unpolarized fixed point satisfies [J^2,J^T]=0. This identity was also checked
+numerically on a random J, with error 3.8e-14.
+
+In three real dimensions the resulting matrices are either normal, or have an
+orthogonal decomposition into a trace-zero 2 by 2 block and a one-dimensional
+block. To see the reduction, J^2 is normal and commutes with J and J^T, so its
+orthogonal real spectral blocks reduce J. A complex spectral plane gives a
+normal block. On a real block where J^2 is scalar, a non-scalar 2 by 2 block has
+trace zero. If J^2 is scalar on all three dimensions, write J=S+A with S symmetric
+and A antisymmetric. Then SA+AS=0. In a basis diagonalizing S, A only couples
+opposite eigenvalues; in dimension three an additional rotation reduces this
+to one such plane and an orthogonal line. The nilpotent case is included.
+
+A normal J is either symmetric and diagonalizable, or a rotation-scaling plane
+plus an axial entry. The latter is gauge equivalent to a diagonal XXZ problem.
+The nonnormal block can be rotated into [[0,a],[b,0]], leaving an axial entry d.
+Thus diagonal and off-diagonal three-parameter searches supplement the full
+nine-parameter search. This reduction does not establish tau=I/2 and does not
+replace a proof that the remaining three-variable equations have no other roots.
+
+3. Four-site scale consistency
+
+Write A_i=log tau_i, B_i=log sigma_(i,i+1), and lambda=lambda_111. Substitution
+of the single-site equation into the (1,1,2) equation determines a unique
+normalized four-site candidate
+
+  rho_4 = exp Q_4 / Z_4,
+  Q_4 = (3/2)(B_1+B_3) + 2 B_2
+        - (1/2)(A_1+A_4) - (3/2)(A_2+A_3),
+  lambda_112 = -(2/3)(log Z_4 + 2 lambda).
+
+No commutativity assumption is used. The (2,1,1) operator equation is then
+automatic with the same eigenvalue. The (1,2,1) equation is also scalar, with
+
+  lambda_121 = (4/3)lambda_112 - (8/9)lambda.
+
+The binary entropies obey the matching identity
+
+  h(1/9) = (4/3)h(1/3) - (8/9)h(1/4).
+
+Hence the complete four-site problem reduces to the two three-site marginal
+constraints and lambda_112 = lambda h(1/3)/h(1/4). This is the system tested.
+It is not necessary to solve three independent logarithm equations numerically.
+
+The following are Frobenius marginal errors and scalar mismatches. The left
+and right marginal errors agree to numerical precision in this catalogue.
+
+  class             ||Tr_4 rho4-rho3||_F    lambda112 - lambda h(1/3)/h(1/4)
+  tracial             < 1e-15                  +.0698071481995
+  Werner AF           .0106331153097           -.00266850608240
+  Werner F            .00828841812561          +.0295003207749
+  XX, both types      .00930443106118          -.00234076409070
+  nilpotent           .00451173611238          +.0337331920544
+  exotic, both        .0102506565135           +.0352334730263
+
+Thus each nontrivial entry fails even the marginal constraints on the uniquely
+determined four-site state. The tracial entry has the correct marginals but
+fails the common-c condition. Twists are removed by consistent on-site rotations,
+so these obstructions are constant along the displayed one-parameter families.
+
+Classical corollary, proved. There are no full-support classical solutions of
+the combined system. The unique single-site solution is tracial, whose four-site
+eigenvalues are (2/3)log 2 and (4/9)log 2, whereas the common-c targets are
+.392290972174 and .214989215983.
+
+A direct 180-start solution of the combined quantum system found no accepted
+full-rank root. Small residuals at small c came from approach to rank-deficient
+c=0 boundaries. Among runs ending with c>.01, the smallest combined residual
+was .00573129743426. This independent search supports, but does not prove,
+absence beyond the catalogue.
+
+4. Bounds and purity
+
+Proposition. Every full-rank solution has 0 < c_Delta <= 6 log 2/h(1/4).
+
+For the upper bound, S(B|A)+S(B|C) <= 2 log 2 and I(A:C|B) <= 2 log 2.
+Their weighted sum gives lambda <= 2 log 2. For strict positivity, write
+rho_3 = epsilon I/8 + (1-epsilon) rho', with epsilon=8 lambda_min(rho_3)>0.
+The weak-monotonicity quantity W=S(B|A)+S(B|C) is concave and nonnegative.
+Therefore W(rho_3) >= 2 epsilon log 2. Strong subadditivity then gives
+lambda >= epsilon log 2/2 > 0. At the maximally mixed point take epsilon=1.
+These are general bounds, not the numerical sharp bound from the catalogue.
+
+The globally tracial infinite-chain state itself is mixed. Its three-site
+marginal nevertheless has pure TI realizations. On a six-site ring, the product
+of Bell pairs on (1,4),(2,5),(3,6) is invariant under a one-site translation and
+has I/8 on every consecutive three-site block. The code checks this exactly up
+to floating-point precision.
+
+There is also an infinite-line example. Start with |+> at every site and apply
+CZ gates between sites j and j+2. This is a pure TI graph state, obtained by a
+finite-depth circuit. Its stabilizers are X_j Z_(j-2) Z_(j+2). For a finite
+nonempty product of generators indexed by F, the sites min(F)-2 and max(F)+2
+are in its support. Thus no nonidentity stabilizer is supported in an interval
+of length at most four. Every such marginal is maximally mixed. This shows
+that purity alone does not repair the scale inconsistency of the tracial
+three-site data. This pure state is not globally tracial.
+
+Theorem, explicit nontrivial pure realization. The untwisted XX fixed point
+with c_Delta=1.128821991278 is the three-site marginal of a pure TI state on Z.
+
+Proof. In Jordan-Wigner fermions, choose a translation-invariant Slater state
+whose occupied set E in [-pi,pi] is the reflection-symmetric set determined by
+
+  E intersect [0,pi] = [theta,pi/2] union [pi-theta,pi],
+  theta = arcsin[(1-pi r/2)/2],
+  r = tanh j_0.
+
+Numerically theta=.01171990543757. Direct Fourier integration gives
+
+  C_0 = |E|/(2pi) = 1/2,
+  C_1 = (1-2 sin theta)/pi = r/2,
+  C_2 = 0.
+
+Occupation is 0 or 1 almost everywhere, so the quasifree state is pure. It is
+the usual spin-chain ground-state construction under Jordan-Wigner. One may
+choose the finite-range dispersion
+
+  epsilon(k) = cos k [cos^2 k-cos^2 theta]
+             = (1/4)cos(3k)+(3/4-cos^2 theta)cos k.
+
+The occupied set is epsilon(k)<0. Nearest- and third-neighbor fermion hopping
+map to a finite-range, parity-even spin Hamiltonian. The thermodynamic Fermi-sea
+ground state gives the pure, number-conserving TI spin state. No assumption of
+an arbitrary mixed-state purification is needed.
+
+Its three-site correlation matrix has diagonal 1/2, nearest-neighbor entries
+r/2, and distance-two entries zero. As computed in section 2, this is precisely
+the correlation matrix of exp[(4j_0/3) sum_bonds(XX+YY)]/Z_3. Gaussian states are
+determined by their correlation matrices, so their entire three-site density
+matrices coincide. The numerical reconstruction error is 1.5e-15. This proves
+a nontrivial exact single-site fixed point with a pure TI realization.
+
+The continuous XX twists can also be implemented by site-dependent z rotations;
+number conservation makes the resulting states TI. No purity claim is made
+here for the Werner or exotic families, or for the nilpotent family.
+
+5. Critical-chain comparisons
+
+For the Ising chain use H=-sum_j(X_j X_(j+1)+Z_j). Define Jordan-Wigner Majoranas
+u_j=(product_{l<j} Z_l)X_j and v_j=(product_{l<j} Z_l)Y_j. Its critical covariance is
+
+  <i u_j v_k> = 2/[pi(2(j-k)-1)],
+  <i u_j u_k> = <i v_j v_k> = 0 for distinct sites.
+
+The scalar Fourier integral is (1/pi) integral_0^pi sin[(j-k-1/2)p] dp,
+which gives the displayed coefficient. Wick's theorem reconstructs all three-site
+Pauli coefficients. The code uses Pfaffians of the six-Majorana covariance and
+checks mz=2/pi, xx=2/pi, yy=-2/(3pi), zz=16/(3pi^2).
+
+For Heisenberg use the infinite-line singlet ground state. SU(2), reflection,
+and time reversal fix its three-site density matrix to
+
+  rho_3 = [I + g1 sum_alpha(P_alpha P_alpha I + I P_alpha P_alpha)
+             + g2 sum_alpha P_alpha I P_alpha]/8,
+  g1 = (1-4 log 2)/3 = -.590862907413260,
+  g2 = 1/3-(16/3)log 2+3 zeta(3) = .242719079825741.
+
+I use these known exact infinite-chain correlator identities, recalled closed
+book; their Bethe-ansatz derivation is not supplied here. The reconstruction
+from these identities is explicit and does not involve a numerical extrapolation.
+An independent small-ring ED check at L=10,12,14,16,18 approaches these values.
+At L=18 it gives g1=-.594277710150464 and g2=.246050736925471. A quadratic fit
+in 1/L^2 to the last four sizes gives -.590860160865 and .242691793596.
+This is a consistency check, not a precision derivation of g2; logarithmic
+finite-size corrections are not controlled by this short extrapolation.
+
+The Heisenberg rho_3 eigenvalues are
+
+  (1+2g1+g2)/8, multiplicity 4,
+  (1-3g2)/8,    multiplicity 2,
+  (1-4g1+g2)/8, multiplicity 2.
+
+For either chain, lambda here means the expectation S_Delta, not an assumed
+operator eigenvalue. Define V=Tr rho_3 (K_Delta-lambda I)^2. The weighted vector
+residual is sqrt(V)=||(K_Delta-lambda I)rho_3^(1/2)||_F.
+
+  quantity                         critical Ising          Heisenberg
+  S1                               .473946633734            .693147180560
+  S2                               .593408511276            .953671626570
+  S3                               .661408144672           1.096900783677
+  S_Delta                          .0983276218808           .218233689682
+  c_Delta                          .524567721696           1.164254226882
+  sqrt(V)                          .0239902686391           .0329034949395
+  ||K_Delta-lambda I||_op           .0859673780250           .181993993659
+  ||K_Delta-lambda I||_F            .152050658655            .365020753011
+  ||Tr_3 F(sigma)-sigma||_F         .00336157864229          .00812390367040
+
+Here F(sigma) is the normalized three-site exponential in (**). Both exact
+rho_3 are full rank. The Ising value lies in (0,1], but is not a fixed point.
+In particular, closeness of c_Delta to a continuum central charge does not
+establish the operator equation.
+
+6. Numerical methods, counts, and limitations
+
+All computations use NumPy/SciPy with one BLAS thread. The unrestricted solver
+uses all 15 traceless Hermitian two-qubit Gibbs coordinates to maintain
+positivity. Equal one-site marginals are imposed as three residuals. The two
+three-site marginal equations each contribute their 15 Pauli coefficients.
+Thus the full residual has 33 real components, and no reflection or spin
+symmetry is imposed. During optimization tau is the mean of the two one-site
+marginals; at accepted roots the additional equality residual makes this the
+required common tau. Some unrestricted initial guesses do not themselves have
+equal one-site marginals; this equality is solved for explicitly.
+
+The 2400 starts cycle equally through generic random Gibbs states, mixtures
+near random pure states, Bell-diagonal states, perturbed Werner states,
+perturbed critical Ising two-site states, and perturbed Heisenberg two-site
+states. The generic Gibbs scale ranges from .1 to 1.8. Near-pure admixtures
+range from 1e-4 to .1. Full starting recipes and random seeds are in c3.py.
+Least-squares stopping tolerances are 2e-11, with at most 350 function evaluations
+and relative finite-difference step 1e-5.
+
+Acceptance requires minimum sigma eigenvalue >1e-7 and full residual norm
+<1e-7. The unrestricted accepted roots in fact have residuals <=8.87e-10 and
+Bloch-vector norms <=1.79e-9. There are 1493 accepted roots, 391 boundary outcomes,
+and 516 other failures or nonzero local minima. By c_Delta, the accepted counts are
+
+  1.848934: 215; 1.157859: 762; 1.461665: 142;
+  1.128822: 282; 1.488878: 38; 1.501909: 54.
+
+A recurring polarized local minimum near the Ising input has c_Delta=.524509
+and residual .00110529. It is rejected. This is a concrete reason not to label
+all optimizer termination points as solutions.
+
+Additional searches:
+
+  Nine-coordinate unpolarized least squares: 2000 starts, 1825 accepted.
+  Diagonal/off-diagonal canonical searches: 1200 starts, 1066 accepted.
+  Independent Powell-hybrid root search: 1000 starts, 213 accepted after
+    checking the full equations. These 213 were subsequently polished against
+    the full overdetermined residual, giving maximum residual 1.82e-10.
+
+The square root search uses the averaged marginal map only to obtain candidates.
+It is not equivalent to (**). Every candidate is checked against both original
+marginals and the one-site equality. In particular, 197 runs had small averaged
+residual but failed the full residual at the stated thresholds. They are not
+included in the catalogue.
+
+Damped iteration used sigma_next=(1-alpha)sigma+alpha(rho12+rho23)/2, with
+alpha=.15,.4,.7, 120 starts, at most 5000 steps, and stopping at map change
+<1e-11 or minimum eigenvalue <1e-12. All 120 ran to the rank-deficient boundary,
+so this unrestricted iteration did not discover interior roots. This is a
+failure of this iteration as a search method, not evidence that interior roots
+do not exist. It also explains the need for root solving.
+
+Eighty symmetry-restricted, damped scalar iterations in the Werner AF, Werner F,
+XX, and nilpotent ansatzes converged to the corresponding interior roots.
+Their damping was .35, maximum iteration count 271, and maximum full residual
+5.31e-13. These runs provide an actual fixed-point-iteration cross-check of the
+analytic constructions. The exotic states were found by root solving.
+
+The direct combined search used 180 starts and a residual consisting of the
+33 single-site components, the 63 Pauli coefficients for each three-site
+marginal of rho_4, and the scalar same-c condition. The three-site marginal
+equations automatically enforce all shorter marginals. At its smallest
+residuals, sigma approached rank deficiency and c approached zero.
+
+Canonical representatives have full fixed-point residuals below 1.4e-15.
+Ninety-six additional global rotations and nontrivial twists gave a maximum
+residual 6.89e-15 and maximum change in lambda 5.58e-15. The scalar nature of
+the four-site K combinations was independently checked, with spectral spreads
+at most a few times 1e-12. Their scalar mismatches and marginal failures are
+orders of magnitude larger than these numerical errors.
+
+One initial canonical-search implementation lost positivity numerically when
+reconstructing log sigma at very large Gibbs parameters. It was changed to
+evaluate exp[(4/3)(L_12+L_23)] directly from the known J. The completed 1200-start
+run uses that version. No rank-deficient result is promoted to a full-rank root.
+
+The root searches are extensive but finite. They do not constitute an interval
+proof, an exhaustive algebraic classification, or an exclusion of disconnected
+polarized branches extremely close to the rank-deficient boundary. Thus the
+sharp global supremum and the global quantum no-scale-consistency statement
+remain conjectural at the level explicitly stated at the start of this report.
+
+Reproduction
+
+  OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python3 c3.py canonical
+  OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python3 c3.py checks
+  OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python3 c3.py critical
+  OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python3 c3.py roots 2400
+  OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python3 c3.py reduced 2000
+  OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python3 c3.py square 1000
+  OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python3 c3.py polish
+  OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python3 c3.py canonical_search 1200
+  OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python3 c3.py iterate 120
+  OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python3 c3.py symiterate
+  OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python3 c3.py combined 180
+  OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python3 c3.py ed
+  OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python3 c3.py summary
+
+All outputs used in this report are saved in the corresponding c3_*.json files.
+No external files or sources were consulted.

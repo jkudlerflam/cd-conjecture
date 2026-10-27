@@ -1,0 +1,16 @@
+No counterexample established. The raw maximum was \(c_{\mathrm{eff}}=2.7033\) at \(L=10\). Among 16 candidates checked through \(L=22\), the largest slope was 1.7023, falling to 1.3496 when short blocks were excluded. None yielded a reliable conformal \(c>1\).
+
+Completed 1,338 global samples, 159 boundary samples, and 470 optimization evaluations in about 49 minutes. Not every above-one point reached \(L=22\); the cluster extension is prepared but unsubmitted.
+
+Deliverables:
+
+- [Report and verdict](<./report.md>)
+- [ED code](<./d2.py>)
+- [Calibration table](<./calibration.md>)
+- [Candidate parameters and diagnostics](<./candidates.md>)
+- [Scan summary](<./scan_summary.md>)
+- [SLURM array](<./cluster_array.slurm>) and [submission wrapper](<./submit_cluster.sh>)
+
+The report also documents failures of the prescribed estimators on known Ising and XX controls.
+
+[gpt_solve: backend=codex model=gpt-6-astra effort=high transcript=20261021T164313-52258]

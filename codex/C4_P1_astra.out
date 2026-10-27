@@ -1,0 +1,16 @@
+Verdict: not proved for arbitrary bonds. No counterexample found.
+
+The [full report](<work_C4_P1/P1_closed_book_report.md>) contains complete proofs, explicit assumptions, all requested example checks, and ranked missing lemmas.
+
+The main results are:
+
+- Full fundamental SU(\(d\)) symmetry forces every conformal chain in that class to be ULS, hence \(c_T=d-1\).
+- On-site charge counting proves the bound when those currents exhaust the stress tensor. Ising rules out that premise in general.
+- The inverse energy spectral moment cancels velocities, giving \(c_T|q|/(24\pi)\) for the stress contribution. However, telescoping changes \(h\mapsto h+A\otimes I-I\otimes A\) leave \(H\) unchanged while making the raw response arbitrarily large, even after normalizing the bond norm.
+- The exact twist estimate produces low-energy states but supplies no upper bound on their number or central charge.
+
+The most concrete remaining target is a microscopic inequality for an improvement-independent stress response. Its normalization is established here; its \(d-1\) bound remains unproved.
+
+No pre-existing files were read or listed.
+
+[gpt_solve: backend=codex model=gpt-6-astra effort=high transcript=20261021T164306-51998]

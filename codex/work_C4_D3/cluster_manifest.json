@@ -1,0 +1,2212 @@
+[
+  {
+    "family": "sp4",
+    "L": 14,
+    "coeff": [
+      0.9998875021093592,
+      0.01499943750632809
+    ],
+    "label": "sp4_theta0.01500000000",
+    "levels": 12,
+    "cartan": true,
+    "entropy": true
+  },
+  {
+    "family": "sp4",
+    "L": 14,
+    "coeff": [
+      0.9978589232386035,
+      0.06540312923014306
+    ],
+    "label": "sp4_theta0.06544984695",
+    "levels": 12,
+    "cartan": true,
+    "entropy": true
+  },
+  {
+    "family": "sp4",
+    "L": 14,
+    "coeff": [
+      0.9914448613738104,
+      0.13052619222005157
+    ],
+    "label": "sp4_theta0.13089969390",
+    "levels": 12,
+    "cartan": true,
+    "entropy": true
+  },
+  {
+    "family": "sp4",
+    "L": 14,
+    "coeff": [
+      0.9872272833756269,
+      0.15931820661424598
+    ],
+    "label": "sp4_theta0.16000000000",
+    "levels": 12,
+    "cartan": true,
+    "entropy": true
+  },
+  {
+    "family": "sp4",
+    "L": 14,
+    "coeff": [
+      0.9807852804128605,
+      0.19509032196771467
+    ],
+    "label": "sp4_theta0.19634954080",
+    "levels": 12,
+    "cartan": true,
+    "entropy": true
+  },
+  {
+    "family": "sp4",
+    "L": 14,
+    "coeff": [
+      0.25881904509841286,
+      0.965925826290169
+    ],
+    "label": "sp4_theta1.30899693900",
+    "levels": 12,
+    "cartan": true,
+    "entropy": true
+  },
+  {
+    "family": "sp4",
+    "L": 14,
+    "coeff": [
+      -0.500000000005893,
+      0.8660254037810364
+    ],
+    "label": "sp4_theta2.09439510240",
+    "levels": 12,
+    "cartan": true,
+    "entropy": true
+  },
+  {
+    "family": "sp4",
+    "L": 16,
+    "coeff": [
+      0.9998875021093592,
+      0.01499943750632809
+    ],
+    "label": "sp4_theta0.01500000000",
+    "levels": 12,
+    "cartan": true,
+    "entropy": false
+  },
+  {
+    "family": "sp4",
+    "L": 16,
+    "coeff": [
+      0.9978589232386035,
+      0.06540312923014306
+    ],
+    "label": "sp4_theta0.06544984695",
+    "levels": 12,
+    "cartan": true,
+    "entropy": false
+  },
+  {
+    "family": "sp4",
+    "L": 16,
+    "coeff": [
+      0.9914448613738104,
+      0.13052619222005157
+    ],
+    "label": "sp4_theta0.13089969390",
+    "levels": 12,
+    "cartan": true,
+    "entropy": false
+  },
+  {
+    "family": "sp4",
+    "L": 16,
+    "coeff": [
+      0.9872272833756269,
+      0.15931820661424598
+    ],
+    "label": "sp4_theta0.16000000000",
+    "levels": 12,
+    "cartan": true,
+    "entropy": false
+  },
+  {
+    "family": "sp4",
+    "L": 16,
+    "coeff": [
+      0.9807852804128605,
+      0.19509032196771467
+    ],
+    "label": "sp4_theta0.19634954080",
+    "levels": 12,
+    "cartan": true,
+    "entropy": false
+  },
+  {
+    "family": "sp4",
+    "L": 16,
+    "coeff": [
+      0.25881904509841286,
+      0.965925826290169
+    ],
+    "label": "sp4_theta1.30899693900",
+    "levels": 12,
+    "cartan": true,
+    "entropy": false
+  },
+  {
+    "family": "sp4",
+    "L": 16,
+    "coeff": [
+      -0.500000000005893,
+      0.8660254037810364
+    ],
+    "label": "sp4_theta2.09439510240",
+    "levels": 12,
+    "cartan": true,
+    "entropy": false
+  },
+  {
+    "family": "su2",
+    "L": 12,
+    "coeff": [
+      -0.3686834294961289,
+      -0.2627430910251541,
+      0.8614645184015246,
+      -0.23003799788024154
+    ],
+    "label": "su2_s070",
+    "levels": 12,
+    "entropy": true
+  },
+  {
+    "family": "su2",
+    "L": 12,
+    "coeff": [
+      0.7947881757094815,
+      -0.5481011883140983,
+      -0.260218634329515,
+      0.013531646934131855
+    ],
+    "label": "su2_s097",
+    "levels": 12,
+    "entropy": true
+  },
+  {
+    "family": "su2",
+    "L": 12,
+    "coeff": [
+      0.7753806856287883,
+      -0.32878132215246036,
+      -0.5322997940591628,
+      0.08570043058283501
+    ],
+    "label": "su2_s105",
+    "levels": 12,
+    "entropy": true
+  },
+  {
+    "family": "su2",
+    "L": 12,
+    "coeff": [
+      0.6929086068608803,
+      -0.6977896529596066,
+      -0.1259248742645482,
+      0.13080592036327465
+    ],
+    "label": "su2_s110",
+    "levels": 12,
+    "entropy": true
+  },
+  {
+    "family": "su2",
+    "L": 12,
+    "coeff": [
+      0.5457814451256747,
+      -0.8003355050612259,
+      0.006473866143133768,
+      0.24808019379241728
+    ],
+    "label": "su2_s123",
+    "levels": 12,
+    "entropy": true
+  },
+  {
+    "family": "su2",
+    "L": 12,
+    "coeff": [
+      0.6206934213528906,
+      -0.6568766314705444,
+      -0.284065767323467,
+      0.32024897744112063
+    ],
+    "label": "su2_s131",
+    "levels": 12,
+    "entropy": true
+  },
+  {
+    "family": "su2",
+    "L": 12,
+    "coeff": [
+      0.5956377673735118,
+      -0.45467622553196985,
+      -0.5333793029313658,
+      0.3924177610898238
+    ],
+    "label": "su2_s139",
+    "levels": 12,
+    "entropy": true
+  },
+  {
+    "family": "su2",
+    "L": 12,
+    "coeff": [
+      0.471148463017262,
+      -0.7490818398975105,
+      -0.1595898739900147,
+      0.4375232508702632
+    ],
+    "label": "su2_s144",
+    "levels": 12,
+    "entropy": true
+  },
+  {
+    "family": "su2",
+    "L": 12,
+    "coeff": [
+      0.2862094753049324,
+      -0.77871953558587,
+      -0.06228746401846844,
+      0.5547975242994061
+    ],
+    "label": "su2_s157",
+    "levels": 12,
+    "entropy": true
+  },
+  {
+    "family": "su2",
+    "L": 12,
+    "coeff": [
+      0.39919232541777344,
+      -0.3884216249503662,
+      -0.592631518635077,
+      0.5818608181676698
+    ],
+    "label": "su2_s160",
+    "levels": 12,
+    "entropy": true
+  },
+  {
+    "family": "su2",
+    "L": 12,
+    "coeff": [
+      0.24871438961048603,
+      -0.4823496022086672,
+      -0.4654998789986315,
+      0.6991350915968125
+    ],
+    "label": "su2_s173",
+    "levels": 12,
+    "entropy": true
+  },
+  {
+    "family": "su2",
+    "L": 12,
+    "coeff": [
+      0.09960195574398584,
+      -0.6221090475527681,
+      -0.2217334895684698,
+      0.744240581377252
+    ],
+    "label": "su2_s178",
+    "levels": 12,
+    "entropy": true
+  },
+  {
+    "family": "su2",
+    "L": 12,
+    "coeff": [
+      -0.007326994325853817,
+      -0.4598355004430945,
+      -0.34924687025700685,
+      0.8164093650259552
+    ],
+    "label": "su2_s186",
+    "levels": 12,
+    "entropy": true
+  },
+  {
+    "family": "su2",
+    "L": 14,
+    "coeff": [
+      -0.3686834294961289,
+      -0.2627430910251541,
+      0.8614645184015246,
+      -0.23003799788024154
+    ],
+    "label": "su2_s070",
+    "levels": 12,
+    "entropy": false
+  },
+  {
+    "family": "su2",
+    "L": 14,
+    "coeff": [
+      0.7947881757094815,
+      -0.5481011883140983,
+      -0.260218634329515,
+      0.013531646934131855
+    ],
+    "label": "su2_s097",
+    "levels": 12,
+    "entropy": false
+  },
+  {
+    "family": "su2",
+    "L": 14,
+    "coeff": [
+      0.7753806856287883,
+      -0.32878132215246036,
+      -0.5322997940591628,
+      0.08570043058283501
+    ],
+    "label": "su2_s105",
+    "levels": 12,
+    "entropy": false
+  },
+  {
+    "family": "su2",
+    "L": 14,
+    "coeff": [
+      0.6929086068608803,
+      -0.6977896529596066,
+      -0.1259248742645482,
+      0.13080592036327465
+    ],
+    "label": "su2_s110",
+    "levels": 12,
+    "entropy": false
+  },
+  {
+    "family": "su2",
+    "L": 14,
+    "coeff": [
+      0.5457814451256747,
+      -0.8003355050612259,
+      0.006473866143133768,
+      0.24808019379241728
+    ],
+    "label": "su2_s123",
+    "levels": 12,
+    "entropy": false
+  },
+  {
+    "family": "su2",
+    "L": 14,
+    "coeff": [
+      0.6206934213528906,
+      -0.6568766314705444,
+      -0.284065767323467,
+      0.32024897744112063
+    ],
+    "label": "su2_s131",
+    "levels": 12,
+    "entropy": false
+  },
+  {
+    "family": "su2",
+    "L": 14,
+    "coeff": [
+      0.5956377673735118,
+      -0.45467622553196985,
+      -0.5333793029313658,
+      0.3924177610898238
+    ],
+    "label": "su2_s139",
+    "levels": 12,
+    "entropy": false
+  },
+  {
+    "family": "su2",
+    "L": 14,
+    "coeff": [
+      0.471148463017262,
+      -0.7490818398975105,
+      -0.1595898739900147,
+      0.4375232508702632
+    ],
+    "label": "su2_s144",
+    "levels": 12,
+    "entropy": false
+  },
+  {
+    "family": "su2",
+    "L": 14,
+    "coeff": [
+      0.2862094753049324,
+      -0.77871953558587,
+      -0.06228746401846844,
+      0.5547975242994061
+    ],
+    "label": "su2_s157",
+    "levels": 12,
+    "entropy": false
+  },
+  {
+    "family": "su2",
+    "L": 14,
+    "coeff": [
+      0.39919232541777344,
+      -0.3884216249503662,
+      -0.592631518635077,
+      0.5818608181676698
+    ],
+    "label": "su2_s160",
+    "levels": 12,
+    "entropy": false
+  },
+  {
+    "family": "su2",
+    "L": 14,
+    "coeff": [
+      0.24871438961048603,
+      -0.4823496022086672,
+      -0.4654998789986315,
+      0.6991350915968125
+    ],
+    "label": "su2_s173",
+    "levels": 12,
+    "entropy": false
+  },
+  {
+    "family": "su2",
+    "L": 14,
+    "coeff": [
+      0.09960195574398584,
+      -0.6221090475527681,
+      -0.2217334895684698,
+      0.744240581377252
+    ],
+    "label": "su2_s178",
+    "levels": 12,
+    "entropy": false
+  },
+  {
+    "family": "su2",
+    "L": 14,
+    "coeff": [
+      -0.007326994325853817,
+      -0.4598355004430945,
+      -0.34924687025700685,
+      0.8164093650259552
+    ],
+    "label": "su2_s186",
+    "levels": 12,
+    "entropy": false
+  },
+  {
+    "family": "orbital",
+    "L": 14,
+    "coeff": [
+      1.0,
+      0.25,
+      0.0
+    ],
+    "label": "orb_x0_y0.25",
+    "levels": 12,
+    "entropy": true
+  },
+  {
+    "family": "orbital",
+    "L": 14,
+    "coeff": [
+      1.0,
+      0.5,
+      0.125
+    ],
+    "label": "orb_x0.125_y0.5",
+    "levels": 12,
+    "entropy": true
+  },
+  {
+    "family": "orbital",
+    "L": 14,
+    "coeff": [
+      1.0,
+      0.375,
+      0.125
+    ],
+    "label": "orb_x0.125_y0.375",
+    "levels": 12,
+    "entropy": true
+  },
+  {
+    "family": "orbital",
+    "L": 14,
+    "coeff": [
+      1.0,
+      0.25,
+      0.25
+    ],
+    "label": "orb_x0.25_y0.25",
+    "levels": 12,
+    "entropy": true
+  },
+  {
+    "family": "orbital",
+    "L": 14,
+    "coeff": [
+      1.0,
+      0.5,
+      0.25
+    ],
+    "label": "orb_x0.25_y0.5",
+    "levels": 12,
+    "entropy": true
+  },
+  {
+    "family": "orbital",
+    "L": 14,
+    "coeff": [
+      1.0,
+      0.375,
+      0.375
+    ],
+    "label": "orb_x0.375_y0.375",
+    "levels": 12,
+    "entropy": true
+  },
+  {
+    "family": "orbital",
+    "L": 16,
+    "coeff": [
+      1.0,
+      0.25,
+      0.0
+    ],
+    "label": "orb_x0_y0.25",
+    "levels": 12,
+    "entropy": false
+  },
+  {
+    "family": "orbital",
+    "L": 16,
+    "coeff": [
+      1.0,
+      0.5,
+      0.125
+    ],
+    "label": "orb_x0.125_y0.5",
+    "levels": 12,
+    "entropy": false
+  },
+  {
+    "family": "orbital",
+    "L": 16,
+    "coeff": [
+      1.0,
+      0.375,
+      0.125
+    ],
+    "label": "orb_x0.125_y0.375",
+    "levels": 12,
+    "entropy": false
+  },
+  {
+    "family": "orbital",
+    "L": 16,
+    "coeff": [
+      1.0,
+      0.25,
+      0.25
+    ],
+    "label": "orb_x0.25_y0.25",
+    "levels": 12,
+    "entropy": false
+  },
+  {
+    "family": "orbital",
+    "L": 16,
+    "coeff": [
+      1.0,
+      0.5,
+      0.25
+    ],
+    "label": "orb_x0.25_y0.5",
+    "levels": 12,
+    "entropy": false
+  },
+  {
+    "family": "orbital",
+    "L": 16,
+    "coeff": [
+      1.0,
+      0.375,
+      0.375
+    ],
+    "label": "orb_x0.375_y0.375",
+    "levels": 12,
+    "entropy": false
+  },
+  {
+    "family": "spin1",
+    "L": 16,
+    "coeff": [
+      0.7071067811865476,
+      0.7071067811865475,
+      0.0,
+      0.0
+    ],
+    "label": "bb_t012",
+    "levels": 12,
+    "entropy": true
+  },
+  {
+    "family": "spin1",
+    "L": 16,
+    "coeff": [
+      0.5000000000000001,
+      0.8660254037844386,
+      0.0,
+      0.0
+    ],
+    "label": "bb_t016",
+    "levels": 12,
+    "entropy": true
+  },
+  {
+    "family": "spin1",
+    "L": 16,
+    "coeff": [
+      0.25881904510252074,
+      0.9659258262890683,
+      0.0,
+      0.0
+    ],
+    "label": "bb_t020",
+    "levels": 12,
+    "entropy": true
+  },
+  {
+    "family": "spin1",
+    "L": 16,
+    "coeff": [
+      0.06540312923014327,
+      0.9978589232386035,
+      0.0,
+      0.0
+    ],
+    "label": "bb_t023",
+    "levels": 12,
+    "entropy": true
+  },
+  {
+    "family": "spin1",
+    "L": 16,
+    "coeff": [
+      0.7071067811865474,
+      -0.7071067811865477,
+      0.0,
+      0.0
+    ],
+    "label": "bb_t084",
+    "levels": 12,
+    "entropy": true
+  },
+  {
+    "family": "spin1",
+    "L": 18,
+    "coeff": [
+      0.7071067811865476,
+      0.7071067811865475,
+      0.0,
+      0.0
+    ],
+    "label": "bb_t012",
+    "levels": 12,
+    "entropy": false
+  },
+  {
+    "family": "spin1",
+    "L": 18,
+    "coeff": [
+      0.5000000000000001,
+      0.8660254037844386,
+      0.0,
+      0.0
+    ],
+    "label": "bb_t016",
+    "levels": 12,
+    "entropy": false
+  },
+  {
+    "family": "spin1",
+    "L": 18,
+    "coeff": [
+      0.25881904510252074,
+      0.9659258262890683,
+      0.0,
+      0.0
+    ],
+    "label": "bb_t020",
+    "levels": 12,
+    "entropy": false
+  },
+  {
+    "family": "spin1",
+    "L": 18,
+    "coeff": [
+      0.06540312923014327,
+      0.9978589232386035,
+      0.0,
+      0.0
+    ],
+    "label": "bb_t023",
+    "levels": 12,
+    "entropy": false
+  },
+  {
+    "family": "spin1",
+    "L": 18,
+    "coeff": [
+      0.7071067811865474,
+      -0.7071067811865477,
+      0.0,
+      0.0
+    ],
+    "label": "bb_t084",
+    "levels": 12,
+    "entropy": false
+  },
+  {
+    "family": "spin1",
+    "L": 16,
+    "coeff": [
+      1.0,
+      1.0,
+      -1.0,
+      2.0
+    ],
+    "label": "u1_z0_b1_D2_M0",
+    "levels": 12,
+    "charge": [
+      0
+    ],
+    "entropy": true
+  },
+  {
+    "family": "spin1",
+    "L": 16,
+    "coeff": [
+      1.0,
+      1.0,
+      -1.0,
+      2.0
+    ],
+    "label": "u1_z0_b1_D2_M1",
+    "levels": 12,
+    "charge": [
+      1
+    ],
+    "entropy": false
+  },
+  {
+    "family": "spin1",
+    "L": 16,
+    "coeff": [
+      1.0,
+      1.0,
+      -1.0,
+      2.0
+    ],
+    "label": "u1_z0_b1_D2_M2",
+    "levels": 12,
+    "charge": [
+      2
+    ],
+    "entropy": false
+  },
+  {
+    "family": "spin1",
+    "L": 16,
+    "coeff": [
+      1.0,
+      1.0,
+      -1.0,
+      2.0
+    ],
+    "label": "u1_z0_b1_D2_M3",
+    "levels": 12,
+    "charge": [
+      3
+    ],
+    "entropy": false
+  },
+  {
+    "family": "spin1",
+    "L": 16,
+    "coeff": [
+      1.0,
+      1.0,
+      -1.0,
+      2.0
+    ],
+    "label": "u1_z0_b1_D2_M4",
+    "levels": 12,
+    "charge": [
+      4
+    ],
+    "entropy": false
+  },
+  {
+    "family": "spin1",
+    "L": 16,
+    "coeff": [
+      1.0,
+      1.0,
+      -1.0,
+      2.0
+    ],
+    "label": "u1_z0_b1_D2_M5",
+    "levels": 12,
+    "charge": [
+      5
+    ],
+    "entropy": false
+  },
+  {
+    "family": "spin1",
+    "L": 16,
+    "coeff": [
+      1.0,
+      1.0,
+      -1.0,
+      2.0
+    ],
+    "label": "u1_z0_b1_D2_M6",
+    "levels": 12,
+    "charge": [
+      6
+    ],
+    "entropy": false
+  },
+  {
+    "family": "spin1",
+    "L": 16,
+    "coeff": [
+      1.0,
+      1.0,
+      -1.0,
+      2.0
+    ],
+    "label": "u1_z0_b1_D2_M7",
+    "levels": 12,
+    "charge": [
+      7
+    ],
+    "entropy": false
+  },
+  {
+    "family": "spin1",
+    "L": 16,
+    "coeff": [
+      1.0,
+      1.0,
+      -1.0,
+      2.0
+    ],
+    "label": "u1_z0_b1_D2_M8",
+    "levels": 12,
+    "charge": [
+      8
+    ],
+    "entropy": false
+  },
+  {
+    "family": "spin1",
+    "L": 16,
+    "coeff": [
+      1.0,
+      1.0,
+      -1.0,
+      2.0
+    ],
+    "label": "u1_z0_b1_D2_M9",
+    "levels": 12,
+    "charge": [
+      9
+    ],
+    "entropy": false
+  },
+  {
+    "family": "spin1",
+    "L": 16,
+    "coeff": [
+      1.0,
+      1.0,
+      -1.0,
+      2.0
+    ],
+    "label": "u1_z0_b1_D2_M10",
+    "levels": 12,
+    "charge": [
+      10
+    ],
+    "entropy": false
+  },
+  {
+    "family": "spin1",
+    "L": 16,
+    "coeff": [
+      1.0,
+      1.0,
+      -1.0,
+      2.0
+    ],
+    "label": "u1_z0_b1_D2_M11",
+    "levels": 12,
+    "charge": [
+      11
+    ],
+    "entropy": false
+  },
+  {
+    "family": "spin1",
+    "L": 16,
+    "coeff": [
+      1.0,
+      1.0,
+      -1.0,
+      2.0
+    ],
+    "label": "u1_z0_b1_D2_M12",
+    "levels": 12,
+    "charge": [
+      12
+    ],
+    "entropy": false
+  },
+  {
+    "family": "spin1",
+    "L": 16,
+    "coeff": [
+      1.0,
+      1.0,
+      -1.0,
+      2.0
+    ],
+    "label": "u1_z0_b1_D2_M13",
+    "levels": 12,
+    "charge": [
+      13
+    ],
+    "entropy": false
+  },
+  {
+    "family": "spin1",
+    "L": 16,
+    "coeff": [
+      1.0,
+      1.0,
+      -1.0,
+      2.0
+    ],
+    "label": "u1_z0_b1_D2_M14",
+    "levels": 12,
+    "charge": [
+      14
+    ],
+    "entropy": false
+  },
+  {
+    "family": "spin1",
+    "L": 16,
+    "coeff": [
+      1.0,
+      1.0,
+      -1.0,
+      2.0
+    ],
+    "label": "u1_z0_b1_D2_M15",
+    "levels": 12,
+    "charge": [
+      15
+    ],
+    "entropy": false
+  },
+  {
+    "family": "spin1",
+    "L": 16,
+    "coeff": [
+      1.0,
+      1.0,
+      -1.0,
+      2.0
+    ],
+    "label": "u1_z0_b1_D2_M16",
+    "levels": 12,
+    "charge": [
+      16
+    ],
+    "entropy": false
+  },
+  {
+    "family": "spin1",
+    "L": 16,
+    "coeff": [
+      1.0,
+      1.0,
+      -0.5,
+      2.0
+    ],
+    "label": "u1_z0.5_b1_D2_M0",
+    "levels": 12,
+    "charge": [
+      0
+    ],
+    "entropy": true
+  },
+  {
+    "family": "spin1",
+    "L": 16,
+    "coeff": [
+      1.0,
+      1.0,
+      -0.5,
+      2.0
+    ],
+    "label": "u1_z0.5_b1_D2_M1",
+    "levels": 12,
+    "charge": [
+      1
+    ],
+    "entropy": false
+  },
+  {
+    "family": "spin1",
+    "L": 16,
+    "coeff": [
+      1.0,
+      1.0,
+      -0.5,
+      2.0
+    ],
+    "label": "u1_z0.5_b1_D2_M2",
+    "levels": 12,
+    "charge": [
+      2
+    ],
+    "entropy": false
+  },
+  {
+    "family": "spin1",
+    "L": 16,
+    "coeff": [
+      1.0,
+      1.0,
+      -0.5,
+      2.0
+    ],
+    "label": "u1_z0.5_b1_D2_M3",
+    "levels": 12,
+    "charge": [
+      3
+    ],
+    "entropy": false
+  },
+  {
+    "family": "spin1",
+    "L": 16,
+    "coeff": [
+      1.0,
+      1.0,
+      -0.5,
+      2.0
+    ],
+    "label": "u1_z0.5_b1_D2_M4",
+    "levels": 12,
+    "charge": [
+      4
+    ],
+    "entropy": false
+  },
+  {
+    "family": "spin1",
+    "L": 16,
+    "coeff": [
+      1.0,
+      1.0,
+      -0.5,
+      2.0
+    ],
+    "label": "u1_z0.5_b1_D2_M5",
+    "levels": 12,
+    "charge": [
+      5
+    ],
+    "entropy": false
+  },
+  {
+    "family": "spin1",
+    "L": 16,
+    "coeff": [
+      1.0,
+      1.0,
+      -0.5,
+      2.0
+    ],
+    "label": "u1_z0.5_b1_D2_M6",
+    "levels": 12,
+    "charge": [
+      6
+    ],
+    "entropy": false
+  },
+  {
+    "family": "spin1",
+    "L": 16,
+    "coeff": [
+      1.0,
+      1.0,
+      -0.5,
+      2.0
+    ],
+    "label": "u1_z0.5_b1_D2_M7",
+    "levels": 12,
+    "charge": [
+      7
+    ],
+    "entropy": false
+  },
+  {
+    "family": "spin1",
+    "L": 16,
+    "coeff": [
+      1.0,
+      1.0,
+      -0.5,
+      2.0
+    ],
+    "label": "u1_z0.5_b1_D2_M8",
+    "levels": 12,
+    "charge": [
+      8
+    ],
+    "entropy": false
+  },
+  {
+    "family": "spin1",
+    "L": 16,
+    "coeff": [
+      1.0,
+      1.0,
+      -0.5,
+      2.0
+    ],
+    "label": "u1_z0.5_b1_D2_M9",
+    "levels": 12,
+    "charge": [
+      9
+    ],
+    "entropy": false
+  },
+  {
+    "family": "spin1",
+    "L": 16,
+    "coeff": [
+      1.0,
+      1.0,
+      -0.5,
+      2.0
+    ],
+    "label": "u1_z0.5_b1_D2_M10",
+    "levels": 12,
+    "charge": [
+      10
+    ],
+    "entropy": false
+  },
+  {
+    "family": "spin1",
+    "L": 16,
+    "coeff": [
+      1.0,
+      1.0,
+      -0.5,
+      2.0
+    ],
+    "label": "u1_z0.5_b1_D2_M11",
+    "levels": 12,
+    "charge": [
+      11
+    ],
+    "entropy": false
+  },
+  {
+    "family": "spin1",
+    "L": 16,
+    "coeff": [
+      1.0,
+      1.0,
+      -0.5,
+      2.0
+    ],
+    "label": "u1_z0.5_b1_D2_M12",
+    "levels": 12,
+    "charge": [
+      12
+    ],
+    "entropy": false
+  },
+  {
+    "family": "spin1",
+    "L": 16,
+    "coeff": [
+      1.0,
+      1.0,
+      -0.5,
+      2.0
+    ],
+    "label": "u1_z0.5_b1_D2_M13",
+    "levels": 12,
+    "charge": [
+      13
+    ],
+    "entropy": false
+  },
+  {
+    "family": "spin1",
+    "L": 16,
+    "coeff": [
+      1.0,
+      1.0,
+      -0.5,
+      2.0
+    ],
+    "label": "u1_z0.5_b1_D2_M14",
+    "levels": 12,
+    "charge": [
+      14
+    ],
+    "entropy": false
+  },
+  {
+    "family": "spin1",
+    "L": 16,
+    "coeff": [
+      1.0,
+      1.0,
+      -0.5,
+      2.0
+    ],
+    "label": "u1_z0.5_b1_D2_M15",
+    "levels": 12,
+    "charge": [
+      15
+    ],
+    "entropy": false
+  },
+  {
+    "family": "spin1",
+    "L": 16,
+    "coeff": [
+      1.0,
+      1.0,
+      -0.5,
+      2.0
+    ],
+    "label": "u1_z0.5_b1_D2_M16",
+    "levels": 12,
+    "charge": [
+      16
+    ],
+    "entropy": false
+  },
+  {
+    "family": "spin1",
+    "L": 16,
+    "coeff": [
+      1.0,
+      1.0,
+      0.0,
+      2.0
+    ],
+    "label": "u1_z1_b1_D2_M0",
+    "levels": 12,
+    "charge": [
+      0
+    ],
+    "entropy": true
+  },
+  {
+    "family": "spin1",
+    "L": 16,
+    "coeff": [
+      1.0,
+      1.0,
+      0.0,
+      2.0
+    ],
+    "label": "u1_z1_b1_D2_M1",
+    "levels": 12,
+    "charge": [
+      1
+    ],
+    "entropy": false
+  },
+  {
+    "family": "spin1",
+    "L": 16,
+    "coeff": [
+      1.0,
+      1.0,
+      0.0,
+      2.0
+    ],
+    "label": "u1_z1_b1_D2_M2",
+    "levels": 12,
+    "charge": [
+      2
+    ],
+    "entropy": false
+  },
+  {
+    "family": "spin1",
+    "L": 16,
+    "coeff": [
+      1.0,
+      1.0,
+      0.0,
+      2.0
+    ],
+    "label": "u1_z1_b1_D2_M3",
+    "levels": 12,
+    "charge": [
+      3
+    ],
+    "entropy": false
+  },
+  {
+    "family": "spin1",
+    "L": 16,
+    "coeff": [
+      1.0,
+      1.0,
+      0.0,
+      2.0
+    ],
+    "label": "u1_z1_b1_D2_M4",
+    "levels": 12,
+    "charge": [
+      4
+    ],
+    "entropy": false
+  },
+  {
+    "family": "spin1",
+    "L": 16,
+    "coeff": [
+      1.0,
+      1.0,
+      0.0,
+      2.0
+    ],
+    "label": "u1_z1_b1_D2_M5",
+    "levels": 12,
+    "charge": [
+      5
+    ],
+    "entropy": false
+  },
+  {
+    "family": "spin1",
+    "L": 16,
+    "coeff": [
+      1.0,
+      1.0,
+      0.0,
+      2.0
+    ],
+    "label": "u1_z1_b1_D2_M6",
+    "levels": 12,
+    "charge": [
+      6
+    ],
+    "entropy": false
+  },
+  {
+    "family": "spin1",
+    "L": 16,
+    "coeff": [
+      1.0,
+      1.0,
+      0.0,
+      2.0
+    ],
+    "label": "u1_z1_b1_D2_M7",
+    "levels": 12,
+    "charge": [
+      7
+    ],
+    "entropy": false
+  },
+  {
+    "family": "spin1",
+    "L": 16,
+    "coeff": [
+      1.0,
+      1.0,
+      0.0,
+      2.0
+    ],
+    "label": "u1_z1_b1_D2_M8",
+    "levels": 12,
+    "charge": [
+      8
+    ],
+    "entropy": false
+  },
+  {
+    "family": "spin1",
+    "L": 16,
+    "coeff": [
+      1.0,
+      1.0,
+      0.0,
+      2.0
+    ],
+    "label": "u1_z1_b1_D2_M9",
+    "levels": 12,
+    "charge": [
+      9
+    ],
+    "entropy": false
+  },
+  {
+    "family": "spin1",
+    "L": 16,
+    "coeff": [
+      1.0,
+      1.0,
+      0.0,
+      2.0
+    ],
+    "label": "u1_z1_b1_D2_M10",
+    "levels": 12,
+    "charge": [
+      10
+    ],
+    "entropy": false
+  },
+  {
+    "family": "spin1",
+    "L": 16,
+    "coeff": [
+      1.0,
+      1.0,
+      0.0,
+      2.0
+    ],
+    "label": "u1_z1_b1_D2_M11",
+    "levels": 12,
+    "charge": [
+      11
+    ],
+    "entropy": false
+  },
+  {
+    "family": "spin1",
+    "L": 16,
+    "coeff": [
+      1.0,
+      1.0,
+      0.0,
+      2.0
+    ],
+    "label": "u1_z1_b1_D2_M12",
+    "levels": 12,
+    "charge": [
+      12
+    ],
+    "entropy": false
+  },
+  {
+    "family": "spin1",
+    "L": 16,
+    "coeff": [
+      1.0,
+      1.0,
+      0.0,
+      2.0
+    ],
+    "label": "u1_z1_b1_D2_M13",
+    "levels": 12,
+    "charge": [
+      13
+    ],
+    "entropy": false
+  },
+  {
+    "family": "spin1",
+    "L": 16,
+    "coeff": [
+      1.0,
+      1.0,
+      0.0,
+      2.0
+    ],
+    "label": "u1_z1_b1_D2_M14",
+    "levels": 12,
+    "charge": [
+      14
+    ],
+    "entropy": false
+  },
+  {
+    "family": "spin1",
+    "L": 16,
+    "coeff": [
+      1.0,
+      1.0,
+      0.0,
+      2.0
+    ],
+    "label": "u1_z1_b1_D2_M15",
+    "levels": 12,
+    "charge": [
+      15
+    ],
+    "entropy": false
+  },
+  {
+    "family": "spin1",
+    "L": 16,
+    "coeff": [
+      1.0,
+      1.0,
+      0.0,
+      2.0
+    ],
+    "label": "u1_z1_b1_D2_M16",
+    "levels": 12,
+    "charge": [
+      16
+    ],
+    "entropy": false
+  },
+  {
+    "family": "spin1",
+    "L": 16,
+    "coeff": [
+      1.0,
+      2.0,
+      0.5,
+      1.0
+    ],
+    "label": "u1_z1.5_b2_D1_M0",
+    "levels": 12,
+    "charge": [
+      0
+    ],
+    "entropy": true
+  },
+  {
+    "family": "spin1",
+    "L": 16,
+    "coeff": [
+      1.0,
+      2.0,
+      0.5,
+      1.0
+    ],
+    "label": "u1_z1.5_b2_D1_M1",
+    "levels": 12,
+    "charge": [
+      1
+    ],
+    "entropy": false
+  },
+  {
+    "family": "spin1",
+    "L": 16,
+    "coeff": [
+      1.0,
+      2.0,
+      0.5,
+      1.0
+    ],
+    "label": "u1_z1.5_b2_D1_M2",
+    "levels": 12,
+    "charge": [
+      2
+    ],
+    "entropy": false
+  },
+  {
+    "family": "spin1",
+    "L": 16,
+    "coeff": [
+      1.0,
+      2.0,
+      0.5,
+      1.0
+    ],
+    "label": "u1_z1.5_b2_D1_M3",
+    "levels": 12,
+    "charge": [
+      3
+    ],
+    "entropy": false
+  },
+  {
+    "family": "spin1",
+    "L": 16,
+    "coeff": [
+      1.0,
+      2.0,
+      0.5,
+      1.0
+    ],
+    "label": "u1_z1.5_b2_D1_M4",
+    "levels": 12,
+    "charge": [
+      4
+    ],
+    "entropy": false
+  },
+  {
+    "family": "spin1",
+    "L": 16,
+    "coeff": [
+      1.0,
+      2.0,
+      0.5,
+      1.0
+    ],
+    "label": "u1_z1.5_b2_D1_M5",
+    "levels": 12,
+    "charge": [
+      5
+    ],
+    "entropy": false
+  },
+  {
+    "family": "spin1",
+    "L": 16,
+    "coeff": [
+      1.0,
+      2.0,
+      0.5,
+      1.0
+    ],
+    "label": "u1_z1.5_b2_D1_M6",
+    "levels": 12,
+    "charge": [
+      6
+    ],
+    "entropy": false
+  },
+  {
+    "family": "spin1",
+    "L": 16,
+    "coeff": [
+      1.0,
+      2.0,
+      0.5,
+      1.0
+    ],
+    "label": "u1_z1.5_b2_D1_M7",
+    "levels": 12,
+    "charge": [
+      7
+    ],
+    "entropy": false
+  },
+  {
+    "family": "spin1",
+    "L": 16,
+    "coeff": [
+      1.0,
+      2.0,
+      0.5,
+      1.0
+    ],
+    "label": "u1_z1.5_b2_D1_M8",
+    "levels": 12,
+    "charge": [
+      8
+    ],
+    "entropy": false
+  },
+  {
+    "family": "spin1",
+    "L": 16,
+    "coeff": [
+      1.0,
+      2.0,
+      0.5,
+      1.0
+    ],
+    "label": "u1_z1.5_b2_D1_M9",
+    "levels": 12,
+    "charge": [
+      9
+    ],
+    "entropy": false
+  },
+  {
+    "family": "spin1",
+    "L": 16,
+    "coeff": [
+      1.0,
+      2.0,
+      0.5,
+      1.0
+    ],
+    "label": "u1_z1.5_b2_D1_M10",
+    "levels": 12,
+    "charge": [
+      10
+    ],
+    "entropy": false
+  },
+  {
+    "family": "spin1",
+    "L": 16,
+    "coeff": [
+      1.0,
+      2.0,
+      0.5,
+      1.0
+    ],
+    "label": "u1_z1.5_b2_D1_M11",
+    "levels": 12,
+    "charge": [
+      11
+    ],
+    "entropy": false
+  },
+  {
+    "family": "spin1",
+    "L": 16,
+    "coeff": [
+      1.0,
+      2.0,
+      0.5,
+      1.0
+    ],
+    "label": "u1_z1.5_b2_D1_M12",
+    "levels": 12,
+    "charge": [
+      12
+    ],
+    "entropy": false
+  },
+  {
+    "family": "spin1",
+    "L": 16,
+    "coeff": [
+      1.0,
+      2.0,
+      0.5,
+      1.0
+    ],
+    "label": "u1_z1.5_b2_D1_M13",
+    "levels": 12,
+    "charge": [
+      13
+    ],
+    "entropy": false
+  },
+  {
+    "family": "spin1",
+    "L": 16,
+    "coeff": [
+      1.0,
+      2.0,
+      0.5,
+      1.0
+    ],
+    "label": "u1_z1.5_b2_D1_M14",
+    "levels": 12,
+    "charge": [
+      14
+    ],
+    "entropy": false
+  },
+  {
+    "family": "spin1",
+    "L": 16,
+    "coeff": [
+      1.0,
+      2.0,
+      0.5,
+      1.0
+    ],
+    "label": "u1_z1.5_b2_D1_M15",
+    "levels": 12,
+    "charge": [
+      15
+    ],
+    "entropy": false
+  },
+  {
+    "family": "spin1",
+    "L": 16,
+    "coeff": [
+      1.0,
+      2.0,
+      0.5,
+      1.0
+    ],
+    "label": "u1_z1.5_b2_D1_M16",
+    "levels": 12,
+    "charge": [
+      16
+    ],
+    "entropy": false
+  },
+  {
+    "family": "spin1",
+    "L": 16,
+    "coeff": [
+      1.0,
+      2.0,
+      0.5,
+      2.0
+    ],
+    "label": "u1_z1.5_b2_D2_M0",
+    "levels": 12,
+    "charge": [
+      0
+    ],
+    "entropy": true
+  },
+  {
+    "family": "spin1",
+    "L": 16,
+    "coeff": [
+      1.0,
+      2.0,
+      0.5,
+      2.0
+    ],
+    "label": "u1_z1.5_b2_D2_M1",
+    "levels": 12,
+    "charge": [
+      1
+    ],
+    "entropy": false
+  },
+  {
+    "family": "spin1",
+    "L": 16,
+    "coeff": [
+      1.0,
+      2.0,
+      0.5,
+      2.0
+    ],
+    "label": "u1_z1.5_b2_D2_M2",
+    "levels": 12,
+    "charge": [
+      2
+    ],
+    "entropy": false
+  },
+  {
+    "family": "spin1",
+    "L": 16,
+    "coeff": [
+      1.0,
+      2.0,
+      0.5,
+      2.0
+    ],
+    "label": "u1_z1.5_b2_D2_M3",
+    "levels": 12,
+    "charge": [
+      3
+    ],
+    "entropy": false
+  },
+  {
+    "family": "spin1",
+    "L": 16,
+    "coeff": [
+      1.0,
+      2.0,
+      0.5,
+      2.0
+    ],
+    "label": "u1_z1.5_b2_D2_M4",
+    "levels": 12,
+    "charge": [
+      4
+    ],
+    "entropy": false
+  },
+  {
+    "family": "spin1",
+    "L": 16,
+    "coeff": [
+      1.0,
+      2.0,
+      0.5,
+      2.0
+    ],
+    "label": "u1_z1.5_b2_D2_M5",
+    "levels": 12,
+    "charge": [
+      5
+    ],
+    "entropy": false
+  },
+  {
+    "family": "spin1",
+    "L": 16,
+    "coeff": [
+      1.0,
+      2.0,
+      0.5,
+      2.0
+    ],
+    "label": "u1_z1.5_b2_D2_M6",
+    "levels": 12,
+    "charge": [
+      6
+    ],
+    "entropy": false
+  },
+  {
+    "family": "spin1",
+    "L": 16,
+    "coeff": [
+      1.0,
+      2.0,
+      0.5,
+      2.0
+    ],
+    "label": "u1_z1.5_b2_D2_M7",
+    "levels": 12,
+    "charge": [
+      7
+    ],
+    "entropy": false
+  },
+  {
+    "family": "spin1",
+    "L": 16,
+    "coeff": [
+      1.0,
+      2.0,
+      0.5,
+      2.0
+    ],
+    "label": "u1_z1.5_b2_D2_M8",
+    "levels": 12,
+    "charge": [
+      8
+    ],
+    "entropy": false
+  },
+  {
+    "family": "spin1",
+    "L": 16,
+    "coeff": [
+      1.0,
+      2.0,
+      0.5,
+      2.0
+    ],
+    "label": "u1_z1.5_b2_D2_M9",
+    "levels": 12,
+    "charge": [
+      9
+    ],
+    "entropy": false
+  },
+  {
+    "family": "spin1",
+    "L": 16,
+    "coeff": [
+      1.0,
+      2.0,
+      0.5,
+      2.0
+    ],
+    "label": "u1_z1.5_b2_D2_M10",
+    "levels": 12,
+    "charge": [
+      10
+    ],
+    "entropy": false
+  },
+  {
+    "family": "spin1",
+    "L": 16,
+    "coeff": [
+      1.0,
+      2.0,
+      0.5,
+      2.0
+    ],
+    "label": "u1_z1.5_b2_D2_M11",
+    "levels": 12,
+    "charge": [
+      11
+    ],
+    "entropy": false
+  },
+  {
+    "family": "spin1",
+    "L": 16,
+    "coeff": [
+      1.0,
+      2.0,
+      0.5,
+      2.0
+    ],
+    "label": "u1_z1.5_b2_D2_M12",
+    "levels": 12,
+    "charge": [
+      12
+    ],
+    "entropy": false
+  },
+  {
+    "family": "spin1",
+    "L": 16,
+    "coeff": [
+      1.0,
+      2.0,
+      0.5,
+      2.0
+    ],
+    "label": "u1_z1.5_b2_D2_M13",
+    "levels": 12,
+    "charge": [
+      13
+    ],
+    "entropy": false
+  },
+  {
+    "family": "spin1",
+    "L": 16,
+    "coeff": [
+      1.0,
+      2.0,
+      0.5,
+      2.0
+    ],
+    "label": "u1_z1.5_b2_D2_M14",
+    "levels": 12,
+    "charge": [
+      14
+    ],
+    "entropy": false
+  },
+  {
+    "family": "spin1",
+    "L": 16,
+    "coeff": [
+      1.0,
+      2.0,
+      0.5,
+      2.0
+    ],
+    "label": "u1_z1.5_b2_D2_M15",
+    "levels": 12,
+    "charge": [
+      15
+    ],
+    "entropy": false
+  },
+  {
+    "family": "spin1",
+    "L": 16,
+    "coeff": [
+      1.0,
+      2.0,
+      0.5,
+      2.0
+    ],
+    "label": "u1_z1.5_b2_D2_M16",
+    "levels": 12,
+    "charge": [
+      16
+    ],
+    "entropy": false
+  },
+  {
+    "family": "uls3",
+    "L": 15,
+    "coeff": [
+      1.0
+    ],
+    "label": "uls3_calibration",
+    "levels": 12,
+    "entropy": true
+  },
+  {
+    "family": "uls3",
+    "L": 18,
+    "coeff": [
+      1.0
+    ],
+    "label": "uls3_calibration",
+    "levels": 12,
+    "entropy": false
+  },
+  {
+    "family": "uls4",
+    "L": 16,
+    "coeff": [
+      1.0
+    ],
+    "label": "uls4_calibration",
+    "levels": 12,
+    "entropy": true
+  },
+  {
+    "family": "tb1",
+    "L": 16,
+    "coeff": [
+      1.0
+    ],
+    "label": "tb1_calibration",
+    "levels": 12,
+    "entropy": true
+  },
+  {
+    "family": "tb1",
+    "L": 18,
+    "coeff": [
+      1.0
+    ],
+    "label": "tb1_calibration",
+    "levels": 12,
+    "entropy": false
+  },
+  {
+    "family": "tb32",
+    "L": 12,
+    "coeff": [
+      1.0
+    ],
+    "label": "tb32_calibration",
+    "levels": 12,
+    "entropy": true
+  },
+  {
+    "family": "tb32",
+    "L": 14,
+    "coeff": [
+      1.0
+    ],
+    "label": "tb32_calibration",
+    "levels": 12,
+    "entropy": true
+  }
+]

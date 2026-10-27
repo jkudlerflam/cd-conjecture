@@ -1,0 +1,192 @@
+Nontrivial exact single-site fixed points exist for \(d=2\), including one realized by a pure TI infinite-chain state. None of the families found satisfies the four-site scale-consistency conditions. No exact root with \(0<c_\Delta\leq1\) was found.
+
+The classical classification is proved. The quantum classification is numerical, supplemented by analytic constructions. Its completeness, the sharp global supremum, and exclusion of all possible quantum scale-consistent branches remain unproved.
+
+Saved [c3.py](<work_C3_astra/c3.py>) and [the full derivations and numerical report](<work_C3_astra/c3_results.txt>). All calculations were closed book.
+
+Theorem, classical case. In a common on-site basis, the unique full-support solution is
+\[
+\sigma=\frac{I_4}{4},\qquad \rho_3=\frac{I_8}{8}.
+\]
+
+To prove completeness, write
+\[
+r_{xyz}=Z^{-1}p_{xy}^{4/3}p_{yz}^{4/3}
+q_x^{-1/3}q_y^{-1}q_z^{-1/3},
+\qquad
+A_y=\sum_zp_{yz}^{4/3}q_z^{-1/3}.
+\]
+The marginal equation gives
+\[
+\left(\frac{p_{xy}}{q_x}\right)^{1/3}=\frac{Zq_y}{A_y}.
+\]
+Its right side is independent of \(x\), so \(p_{xy}=q_xq_y\). Substituting this back gives
+\[
+r_{xyz}=\frac{q_xq_zq_y^{5/3}}{\sum_wq_w^{5/3}}.
+\]
+Consistency requires \(q_y^{2/3}\) to be constant. Thus \(q_0=q_1=1/2\).
+
+Consequently,
+\[
+\lambda=\frac{\log2}{2},\qquad c_\Delta=1.848934360211.
+\]
+The stated tracial example checks out. More generally, direct substitution gives \(K_\Delta=2b\eta\log2\).
+
+Here “classical” requires the same basis across translations. Diagonality of \(\sigma\) in different bases at its two ends is weaker. One quantum example below is diagonal in an \(X\)-basis at one end and a \(Y\)-basis at the other, while its overlapping bond operators do not commute.
+
+The numerical quantum catalogue has eight classes modulo \(U\otimes U\), with six distinct charges. Every accepted root has \(\tau=I/2\). Define
+\[
+L(J)=\sum_{\alpha,\beta}J_{\alpha\beta}P_\alpha\otimes P_\beta,
+\qquad
+\sigma(J)=\frac{e^{L(J)}}{Z_2}.
+\]
+Then
+\[
+\rho_3=\frac{e^{\frac43[L(J)_{12}+L(J)_{23}]}}{Z_3},
+\qquad
+\lambda=2\log Z_2-\frac54\log2-\frac34\log Z_3.
+\]
+
+Let \(R_\phi\) be rotation about \(z\), \(E_{ab}\) a matrix unit, and
+\[
+\begin{aligned}
+j_-&=-0.463398461312,&j_+&=0.730559924142,\\
+j_0&=0.727767887573,\\
+a&=0.691031499935,&b&=0.250278105076,&d&=0.375103300760.
+\end{aligned}
+\]
+
+| Representative \(J\), \(0\leq\phi\leq\pi\) | Dimension after quotient | \(\lambda\) | \(c_\Delta\) |
+|---|---:|---:|---:|
+| \(0\) | 0 | 0.346573590280 | 1.848934360211 |
+| \(j_-R_\phi\) | 1 | 0.217034894085 | 1.157858776010 |
+| \(j_+R_\phi\) | 1 | 0.273981917602 | 1.461665273230 |
+| \(j_0\operatorname{diag}(1,1,0)R_\phi\) | 1 | 0.211592092571 | 1.128821991278 |
+| \(j_0\operatorname{diag}(1,-1,0)\) | 0 | 0.211592092571 | 1.128821991278 |
+| \(j_0E_{12}\) | 0 | 0.279082841426 | 1.488878175744 |
+| \(aE_{12}+bE_{21}-dE_{33}\) | 0 | 0.281525355185 | 1.501908734739 |
+| \(aE_{12}-bE_{21}+dE_{33}\) | 0 | 0.281525355185 | 1.501908734739 |
+
+Before quotienting, every nontrivial entry has local dimension three. The tracial point is isolated. The full-equation Jacobians confirm these dimensions.
+
+The Werner, XX, and \(E_{12}\) constructions are analytic. The last two entries are numerical roots without a separate analytic existence proof.
+
+For example, both the XX and \(E_{12}\) constructions reduce to
+\[
+\tanh j=\frac1{\sqrt2}\tanh\!\left(\frac{4\sqrt2}{3}j\right).
+\]
+There is a unique positive nonzero solution \(j=j_0\). Indeed,
+\(\tanh(Aj)/\tanh j\), with \(A=4\sqrt2/3\), decreases strictly from \(A\) to \(1\), crossing \(\sqrt2\) once.
+
+Writing \(r=\tanh j_0=0.621697866912049\), the \(E_{12}\) example is particularly explicit:
+\[
+\sigma=\frac{I+rXY}{4},\qquad
+\rho_3=\frac{I+r(XYI+IXY)}8.
+\]
+The two bond operators anticommute. Exponentiating their sum gives the displayed \(\rho_3\), and tracing either endpoint verifies both marginal equations.
+
+For the full solution set, a rigorous, non-sharp bound is
+\[
+0<c_\Delta\leq\frac{6\log2}{h(1/4)}
+=7.395737440844.
+\]
+The upper bound follows from bounding both the weak-monotonicity sum and conditional mutual information by \(2\log2\). Strict positivity follows from full rank, concavity of the weak-monotonicity sum, and strong subadditivity.
+
+Within the numerical catalogue, the supremum is
+\[
+\sup c_\Delta=1.848934360211,
+\]
+attained at the tracial point. I have not proved that this is the global sharp bound.
+
+The four-site equations admit a useful exact reduction. Set \(A_i=\log\tau_i\), \(B_i=\log\sigma_{i,i+1}\), and \(\lambda=\lambda_{111}\). The unique normalized candidate determined by \((1,1,2)\) is
+\[
+\rho_4=\frac{e^{Q_4}}{Z_4},
+\]
+where
+\[
+Q_4=\frac32(B_1+B_3)+2B_2
+-\frac12(A_1+A_4)-\frac32(A_2+A_3).
+\]
+Its scalar is
+\[
+\lambda_{112}=-\frac23(\log Z_4+2\lambda).
+\]
+The other two operator combinations are automatically scalar:
+\[
+\lambda_{211}=\lambda_{112},\qquad
+\lambda_{121}=\frac43\lambda_{112}-\frac89\lambda.
+\]
+Moreover,
+\[
+h(1/9)=\frac43h(1/3)-\frac89h(1/4).
+\]
+Thus only the two three-site marginal constraints and one same-\(c\) scalar constraint remain.
+
+They fail as follows. Errors are Frobenius norms; the two marginal errors agree numerically.
+
+| Class | \(\|\operatorname{Tr}_4\rho_4-\rho_3\|_F\) | \(\lambda_{112}-\lambda h(1/3)/h(1/4)\) |
+|---|---:|---:|
+| Tracial | \(<10^{-15}\) | \(+0.0698071482\) |
+| Werner AF | 0.0106331153 | \(-0.0026685061\) |
+| Werner F | 0.0082884181 | \(+0.0295003208\) |
+| XX, both types | 0.0093044311 | \(-0.0023407641\) |
+| \(E_{12}\) | 0.0045117361 | \(+0.0337331921\) |
+| Last two classes | 0.0102506565 | \(+0.0352334730\) |
+
+Consistent site-dependent rotations make these obstructions constant along the continuous families. Every nontrivial candidate fails the marginal constraints before imposing the same \(c\). The tracial candidate passes the marginals but fails the scalar condition.
+
+Therefore the classical combined system has no full-support solution, proved by its single-site classification. No quantum combined-system solution was found, including in a separate 180-start search.
+
+Purity does not eliminate the single-site examples.
+
+The globally tracial state is mixed, but its three-site marginal has pure TI realizations. On a six-site ring,
+\[
+|\Phi^+\rangle_{1,4}|\Phi^+\rangle_{2,5}|\Phi^+\rangle_{3,6}
+\]
+is invariant under one-site translation and has \(I_8/8\) on every consecutive triple. On the infinite line, the pure graph state with stabilizers
+\[
+X_jZ_{j-2}Z_{j+2}
+\]
+has maximally mixed marginals on every interval of length at most four.
+
+There is also an explicit pure TI realization of the nontrivial XX fixed point. Choose a number-conserving Fermi sea whose occupied momenta are reflection symmetric and satisfy
+\[
+E\cap[0,\pi]=[\theta,\pi/2]\cup[\pi-\theta,\pi],
+\qquad
+\theta=\arcsin\!\left(\frac{1-\pi r/2}{2}\right).
+\]
+Its local fermion correlations are
+\[
+C_0=\frac12,\qquad C_1=\frac r2,\qquad C_2=0.
+\]
+These coincide with the complete three-site correlation matrix of the XX fixed-point Gibbs state. Gaussianity therefore identifies the entire three-site density matrix. A finite-range dispersion realizing this occupied set is
+\[
+\epsilon(k)=\cos k\,[\cos^2k-\cos^2\theta].
+\]
+This gives a pure TI spin-chain ground-state construction under Jordan–Wigner. Its \(c_\Delta\) is \(1.128821991278\), but it fails the four-site test above. Purity and infinite extension were not established for the other classes.
+
+For the critical-chain comparison, define
+\[
+\epsilon_{\rm vec}
+=\|(K_\Delta-S_\Delta I)\rho_3^{1/2}\|_F.
+\]
+
+| Infinite-chain state | \(S_\Delta\) | \(c_\Delta\) | \(\epsilon_{\rm vec}\) | \(\|K_\Delta-S_\Delta I\|_{\rm op}\) |
+|---|---:|---:|---:|---:|
+| Critical transverse-field Ising | 0.098327621881 | 0.524567721696 | 0.023990268639 | 0.085967378025 |
+| Heisenberg | 0.218233689682 | 1.164254226882 | 0.032903494940 | 0.181993993659 |
+
+Both three-site marginals are full rank and neither satisfies the vector equation. The Ising result uses the exact Majorana covariance and Wick reconstruction. The Heisenberg result uses
+\[
+g_1=\frac{1-4\log2}{3},\qquad
+g_2=\frac13-\frac{16}{3}\log2+3\zeta(3),
+\]
+with an independent \(L=10,12,14,16,18\) ED consistency check. The correlator identities are used as known exact formulas; their Bethe-ansatz derivation is not supplied.
+
+The numerical search used 2,400 unrestricted least-squares starts, 1,000 Powell-hybrid root-finding starts, 2,000 unpolarized starts, and 1,200 canonical starts. The unrestricted solver enforced both marginal equations and equal one-site marginals, without imposing reflection or spin symmetry. It accepted 1,493 roots, with maximum residual \(8.87\times10^{-10}\). Canonical representatives have residuals below \(1.4\times10^{-15}\); 96 additional rotations and twists passed below \(6.9\times10^{-15}\).
+
+Unrestricted damped iteration sent all 120 starts toward rank-deficient boundaries. Eighty symmetry-restricted damped iterations converged to the analytic interior roots, with residuals below \(5.4\times10^{-13}\). Near-Ising optimizer minima around \(c_\Delta=0.524509\) had residual \(0.00110529\) and were rejected.
+
+Thus nontrivial exact single-site fixed points exist, even for pure TI qubit states. The tested larger-scale conditions exclude the entire numerical catalogue. A global quantum completeness or no-go theorem remains open in this calculation.
+
+[gpt_solve: backend=codex model=gpt-6-astra effort=high transcript=20261021T155617-38711]
