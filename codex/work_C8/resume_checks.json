@@ -1,0 +1,43 @@
+{
+  "status": "Finite-dimensional consistency checks, not CFT numerics",
+  "cases": [
+    {
+      "q": 2,
+      "m": 2,
+      "logical_dimension": 2,
+      "physical_block_dimension": 32,
+      "active_local_dimension": 10,
+      "alpha": 0.08838834764831843,
+      "isometry_error": 3.1409638359589797e-16,
+      "compression_error": 2.252698486420859e-16,
+      "second_moment_error": 3.1809283124316387e-16,
+      "leakage_identity_error": 3.999246554368205e-17,
+      "leakage_product": 0.9921875,
+      "leakage_product_lower_bound": 0.007812499999999998,
+      "first_order_error": 8.101261716032684e-17,
+      "second_order_error": 3.1192807465620585e-15,
+      "adjacent_bond_error": 1.585385054743799e-17,
+      "adjacent_term_norm": 0.00024414062499999992,
+      "mass_kernel_coefficient": -0.5
+    },
+    {
+      "q": 3,
+      "m": 4,
+      "logical_dimension": 4,
+      "physical_block_dimension": 324,
+      "active_local_dimension": 36,
+      "alpha": 0.036084391824351615,
+      "isometry_error": 5.177687876309223e-16,
+      "compression_error": 4.602503372025294e-16,
+      "second_moment_error": 1.1985016478982298e-15,
+      "leakage_identity_error": 4.0591959029976894e-17,
+      "leakage_product": 0.9986979166666666,
+      "leakage_product_lower_bound": 0.0013020833333333337,
+      "first_order_error": 2.550154970162799e-16,
+      "second_order_error": 4.8284065306762817e-14,
+      "adjacent_bond_error": 2.0652121964478052e-17,
+      "adjacent_term_norm": 2.3492442593978927e-05,
+      "mass_kernel_coefficient": -0.5
+    }
+  ]
+}
