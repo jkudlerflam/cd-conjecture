@@ -1,0 +1,7 @@
+Wrote [RESULT.md](work_C9/RESULT.md), [PROGRESS.md](work_C9/PROGRESS.md), and the numerical checks in [checks.py](work_C9/checks.py) and [spectral_cell_check.py](work_C9/spectral_cell_check.py).
+
+The report establishes arbitrary logical bond synthesis through two qubit ports at second order, and an obstruction to exact on-cell SU(N) protection when N exceeds the boundary dimension. Three abstract cells pass the numerical checks.
+
+C9 remains unresolved. The missing pieces are the fixed-dimension translation-invariant local implementation and infrared stability. No counterexample or general impossibility theorem is claimed.
+
+[gpt_solve: backend=codex model=gpt-6-astra effort=high transcript=20261027T172516-97140]

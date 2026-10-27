@@ -1,0 +1,85 @@
+{
+  "N": 2,
+  "D": 40,
+  "port_q": 2,
+  "levels": [
+    1.0,
+    4.0,
+    16.0
+  ],
+  "eps": 0.02522559045216786,
+  "exchange_coefficient": 0.0006363304136605024,
+  "scalar_coefficient": -0.42463235294117646,
+  "min_weight_eigenvalue": 0.16666666666666666,
+  "G_isometry_error": 0.0,
+  "syndrome_isometry_error": 0.0,
+  "weight_sum_error": 1.3877787807814457e-17,
+  "weight_realization_error": 3.623620553911331e-16,
+  "H_ground_error": 1.7538800720617398e-15,
+  "first_excited_energy": 0.9999999999999871,
+  "first_order_norm": 0.0,
+  "second_order_synthesis_error": 1.1450382949274e-15,
+  "spectra": [
+    {
+      "lam": 0.04,
+      "eigenpair_residual": 9.589094545759101e-13,
+      "eigenvalues": [
+        -0.0006875212025544658,
+        -0.0006874043031604808,
+        -0.0006853966132185327,
+        -0.0006853441237947873
+      ],
+      "next_eigenvalue": 0.9831076770705145,
+      "second_order_error": 7.091309186725461e-06,
+      "error_over_lam_cubed": 0.11080170604258531,
+      "exact_bandwidth": 2.177078759678483e-06,
+      "predicted_bandwidth": 2.0362573237136077e-06
+    },
+    {
+      "lam": 0.02,
+      "eigenpair_residual": 9.755079211855034e-13,
+      "eigenvalues": [
+        -0.0001709929246310379,
+        -0.0001709784144170061,
+        -0.00017047298019324356,
+        -0.00017046618459280063
+      ],
+      "next_eigenvalue": 0.9918112014491236,
+      "second_order_error": 8.854512891028239e-07,
+      "error_over_lam_cubed": 0.11068141113785297,
+      "exact_bandwidth": 5.267400382372753e-07,
+      "predicted_bandwidth": 5.090643309284019e-07
+    },
+    {
+      "lam": 0.01,
+      "eigenpair_residual": 1.0487556938335184e-12,
+      "eigenvalues": [
+        -4.263748767777437e-05,
+        -4.263568040206596e-05,
+        -4.250887154184292e-05,
+        -4.250800797888333e-05
+      ],
+      "next_eigenvalue": 0.9959697877622498,
+      "second_order_error": 1.106193422905987e-07,
+      "error_over_lam_cubed": 0.11061934229059868,
+      "exact_bandwidth": 1.2947969889104058e-07,
+      "predicted_bandwidth": 1.2726608273210048e-07
+    },
+    {
+      "lam": 0.005,
+      "eigenpair_residual": 1.0104608370299696e-12,
+      "eigenvalues": [
+        -1.0645540557664303e-05,
+        -1.0645315062357016e-05,
+        -1.0613555904017783e-05,
+        -1.0613447092066509e-05
+      ],
+      "next_eigenvalue": 0.998000920745728,
+      "second_order_error": 1.3823473793360386e-08,
+      "error_over_lam_cubed": 0.11058779034688307,
+      "exact_bandwidth": 3.2093465597793914e-08,
+      "predicted_bandwidth": 3.181652068302512e-08
+    }
+  ],
+  "runtime_seconds": 3.820613145828247
+}
