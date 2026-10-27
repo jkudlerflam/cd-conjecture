@@ -78,6 +78,8 @@ The conjecture is open. We know of no proof and no counterexample within its sco
   - WZW IR theories obeying a level ceiling.
 - Interacting invariants bounded by d − 1 exist (the affine dimension of a parton occupation code, the susceptibility rank), but they equal c only when the IR has no neutral sector. Every route so far stops at the same missing lemma, a locality-based bound on neutral (Majorana, parafermion, coset) stress-tensor sectors.
 - Numerical and analytic searches found nothing above d − 1. They covered all nearest-neighbour qubit chains, Sp(4), spin-3/2 SU(2), spin-orbital and spin-1 families, and integrable and non-compact candidates. The non-compact candidates turned out to be non-Hermitian.
+- Whether c is bounded by any function of d at all is open. Two conditional bounds are known. One is c ≤ 1 + (6/π) K(d) log d, if c-many conformal levels already appear on rings of length K(d). The other is c < d² − 1, if the IR stress tensor is built from currents of on-site symmetries. On the other side, an explicit d = 4 chain forms spontaneous blocks of any length with fixed couplings. A first-order coupling between such blocks through one bond is limited by operator Schmidt rank (at most d² − 1), which still leaves room for c > d − 1 (REPORT.md §9).
+- At d = 2, c ≤ 1 is settled only on the free-fermion, U(1) and XYZ slices of the 8-parameter family. The generic chain is open.
 
 ## Open problems
 
