@@ -1,0 +1,28 @@
+{
+  "d0": 96,
+  "k_c": 12,
+  "q": 2,
+  "b": 5,
+  "J": 100.0,
+  "kappa": 20.0,
+  "K": 5.0,
+  "t": 1.0,
+  "mu": 0.9,
+  "Delta": 1.0,
+  "g": 0.2,
+  "marker_data_penalty": 20.0,
+  "C": 0.6000000000000001,
+  "e0": 0.523417550545184,
+  "rho": 0.6000000000000001,
+  "legal_cell_energy_after_counterterm": -0.07658244945481607,
+  "bare_marker_chemical_potential": 0.29999999999999993,
+  "illegal_cell_lower_bound": 9.4,
+  "conservative_illegal_cell_lower_bound": 9.4,
+  "shape": [
+    9216,
+    9216
+  ],
+  "nnz": 10470,
+  "hermiticity_max_error": 0.0,
+  "same_bond_selector_commutator_max_error": 0.0
+}

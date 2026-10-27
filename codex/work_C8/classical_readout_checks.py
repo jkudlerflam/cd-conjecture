@@ -66,7 +66,7 @@ def cliffords(n):
             xvals.append(s); yvals.append(1j*s*(-1)**bs[f])
         out.extend([sp.csr_matrix((vals, (rows, cols)), shape=(d, d))
                     for vals in (xvals, yvals)])
-    parity = sp.diags([(-1)**sum(bits(x, n)) for x in range(d)])
+    parity = sp.diags([(-1)**sum(bits(x, n)) for x in range(d)], dtype=float)
     return out, [1j*a@parity for a in out], parity
 
 

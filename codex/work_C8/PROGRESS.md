@@ -347,3 +347,90 @@ parity dressing. If the algebra checks out, this supplies a stoquastic
 flat parent and a classical-history interface, but not yet a uniform NN
 parent. Next: derive both maps, check small examples, then examine the
 locality and clock obligations without assuming a compiler theorem.
+
+Substantive step 22 completed.
+
+`classical_readout.md` constructs a joint two-port code with nonnegative,
+equal amplitudes. It uses two distinct signed physical letter pairs per
+logical flavor and realizes n<=floor(q(q-1)/4) complex flavors at scale
+1/(2n), with left Gamma and right i Gamma P. The flat parent is stoquastic.
+With a physical grading, use bipartite pairs and obtain
+n<=floor(q_+ q_-/2), still quadratic. This is an unrestricted block code,
+not a uniform NN realization. It evades the low-boundary-rank obstruction
+because all code vectors must be entangled once n>q-1.
+
+A second exact construction uses an inactive port letter and classical
+permutation readout histories. Its complete zero code and boundary maps
+are known, and its gap is 1-cos(pi/(2C)) for C clock values. A scheduled
+local reversible circuit implements the clean readout interface using
+swaps, parity computations on even ancillas, controlled cycles within
+port grades, and a final partner-port exchange. The global clock remains
+nonlocal. Converting the schedule to a repeated NN controller, excluding
+malformed histories, and proving all-ring IR behavior remain open.
+
+`classical_readout_checks.py` passed six static-code tests, including
+(q,n)=(5,5),(6,6) with n>q-1, and two complete global-clock spectra at
+dimensions 160 and 900. Port errors below 4e-16, full projected-bond error
+below 1e-15, full-spectrum error below 1.2e-14. No CFT claim is made.
+
+Next: audit whether clean readouts can be connected by a repeated local
+FF Hamiltonian without introducing extra complete-code states. If that
+stalls, examine a distinct limitation of stoquastic FF local parents,
+without treating nonnegative amplitudes themselves as an obstruction.
+
+Substantive step 23 completed.
+
+The vacancy extension now also works for a frustration-free core
+sum h0 + a_left + b_right with positive one-site boundary penalties.
+Give the first/last occupied particles L/R tags and the others B tags,
+for local dimension 3q+1. The repeated bond contains the oriented terms
+a_L tensor I + I tensor b_R; each boundary penalty is then counted
+exactly once even when vacancies touch the physical endpoints. Within
+the fixed ordered-tag sector, the complete code is chi_p tensor V,
+with the same endpoint compressions and scalar cut transport as before.
+Other tag and particle-number sectors are not selected by this theorem.
+
+A quantitative gap bound is proved as well. If delta is the charge gap,
+gamma the initialized core gap, p_min the least adjacent-particle
+probability, and M bounds the positive core interaction, the lifted gap
+is at least delta p_min gamma / ((sqrt(delta)+sqrt(M))^2+p_min gamma).
+This removes the previous need to assert a positive gap only by finite
+dimension, but it gives no bound uniform in core length.
+
+`tagged_vacancy_checks.py` directly assembles the physical bond in four
+ordered-tag sectors, dimensions 108 and 270, using a q=3 symmetric core
+with two unequal boundary penalties that remove its third color. The
+complete code has dimension four. Code/port/transport errors are below
+8e-16; all measured gaps exceed the proved bound. This is a local-parent
+check, not a high-channel example or a CFT measurement.
+
+Next: write the proof, audit the initialization-sector limitation, and
+investigate whether the cheapest controller can avoid spurious cyclic
+histories. The fifth-run results remain nonconclusive.
+
+Substantive step 24 completed.
+
+`length_filter.md` proves a new occupied-number selector. A qubit twisted
+ferromagnetic core with a pinned left |+> and a right phase (k-1)phi,
+phi=2pi/(k+2), is FF exactly at lengths r=k mod(k+2). It therefore
+accepts only r=k among 2<=r<=k+2. A proved pinning/gap estimate gives
+an explicit rejection energy epsilon_* of order k^-4.
+
+Tensoring this filter onto any initialized FF payload core and using the
+tagged vacancy extension selects exactly k occupied sites on BOTH physical
+lengths k+1,k+2, within the union of ordered one-L/one-R sectors. Choose
+J_filter>=2U/epsilon_* and 0<w<U/(k+1). Every wrong occupied number is
+at least U-w(N-1) above the target code. The local dimension is 6q+1,
+and the original endpoint maps and scalar cut transport survive. This
+resolves the prior occupied-number gap conditionally on the tag sector,
+without solving its selection in an unrestricted ring.
+
+`length_filter_checks.py` passed all lengths and number sectors for
+k=3,4, N=k+1,k+2, up to dimension 240. Measured selection margins
+.99135,.89036,.99010,.86476 exceed the rigorous .7,.6,.6,.5. Maximum
+code residual below 4.4e-13. No CFT calculation was performed.
+
+Next: assess tag-sector enforcement and cyclic-history holonomy. Do not
+claim the attractive finite-cell vacancy model is itself a homogeneous
+conformal charge fluid. High-channel spatial cores and finite-coupling
+all-ring IR control remain the main unresolved issues.

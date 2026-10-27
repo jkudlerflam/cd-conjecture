@@ -2,103 +2,114 @@
 
 ## Claim
 
-Chains: H = Σ_j [σ_j^T J σ_{j+1} + f·σ_j] on qubits (Pauli matrices), nearest neighbour, one-site translation invariant, Hermitian, with (J, f) of points 220 and 1282 in `candidates_params.json` (copied from `../d2_classification`). The quantity is the Virasoro c of the critical theory.
+The chains are H = Σ_j [σ_j^T J σ_{j+1} + f·σ_j] on qubits, with (J, f) of points 220 and 1282 in `candidates_params.json` (copied from `../d2_classification`, same bond convention as `ed.py`). They are nearest neighbour, one-site translation invariant and Hermitian. The quantity is the Virasoro c.
 
-Verdict, for both points: c = 1, a z = 1 incommensurate "floating" spiral (one compact boson).
+Both points have c = 1. Each is a z = 1 incommensurate "floating" spiral, a single compact boson.
 
-| point | c from finite-entanglement scaling | spiral q (units of 2π) | spiral dimension x_q | ring ED c_S, L = 21 to 26 |
+| point | c, finite-entanglement scaling | spiral q (×2π) | spiral dimension x_q | ring c_S, L = 21–26 |
 |---|---|---|---|---|
-| 220 | 1.00 ± 0.01 (ξ up to 730) | 0.186 ± 0.002 | 0.16 | 1.08 to 1.12 |
-| 1282 | 1.01 ± 0.02 (ξ up to 90) | 0.300 ± 0.004 | 0.33 | 1.18 to 1.23 |
+| 220 | 1.00 ± 0.01 (ξ ≤ 730) | 0.186 | 0.16 | 1.08–1.12 |
+| 1282 | 1.01 ± 0.02 (ξ ≤ 155) | 0.300 | 0.34 | 1.18–1.23 |
 
-Neither point is a counterexample to c ≤ d − 1. The doubling estimates 6ΔS/ln 2 of 1.93 (220) and 2.16 (1282) are artifacts of the open boundaries, explained in section 4.
+Neither point is a counterexample to c ≤ d − 1. The doubling values 6ΔS/ln 2 = 1.93 and 2.16 are open-boundary artifacts (section 4).
 
 ## Status
 
-Numerical. It would be upgraded by a quasiparticle-ansatz velocity, which would turn the ring energies into an independent Casimir estimate of c.
+Numerical. A quasiparticle-ansatz velocity would add a third estimate, the Casimir energy of the rings.
 
 ## How it was established and checked
 
 - Author: Claude (Anthropic, Opus 5.5), a subagent of the coordinating session, 2026-10-27. No Codex/GPT was used.
-- New code: `vumps.py` (multi-site VUMPS with a general MPO), `fdmrg.py` (open-chain DMRG with a general MPO), the analysis scripts. Ring ED reuses `../d2_classification/ed.py` and `run_point.py` unchanged.
-- Checks: VUMPS reproduces −4/π for Ising and XX to 10⁻⁹ and the free-fermion energy of the XY + DM control (below) to 2·10⁻⁴ at χ = 64. A complex, rotated Ising chain gives the same numbers as the real one. At L = 96, `fdmrg.py --edgefield` reproduces the energy of `d2_classification/dmrg.py` to 3·10⁻⁹. Every estimator was run on controls with known c.
-- Nothing has been rerun by anyone else.
+- The code is new: `vumps.py` (multi-site VUMPS for any finite-range MPO), `fdmrg.py` (open-chain DMRG) and the analysis scripts. Ring ED uses `../d2_classification/ed.py` and `run_point.py` unchanged.
+- Checks. VUMPS gives −4/π for Ising to 6·10⁻¹¹, is unchanged by a complex rotation of the Ising chain, and matches the free-fermion control below to 2·10⁻⁴ at χ = 64. `fdmrg.py --edgefield` reproduces the L = 96 energy of `d2_classification/dmrg.py` to 10⁻⁹. Every estimator was run on controls with known c. Nobody else has rerun anything.
 
 ## Method and results
 
 ### 1. Finite-entanglement scaling (boundary-free)
 
-For an infinite MPS at bond dimension χ, a CFT gives S = (c/6) ln ξ + const, with ξ = −n/ln|λ₁/λ₀| from the n-site cell transfer matrix (Pollmann et al. 2009). I use VUMPS (Zauner-Stauber et al. 2018) with two-site null-space expansion, χ = 8 to 128, and report c_fit = 6 × slope of S against ln ξ over the last four χ.
+For an infinite MPS at bond dimension χ a CFT gives S = (c/6) ln ξ + const, with ξ = −n/ln|λ₁/λ₀| from the n-site cell transfer matrix. I run VUMPS (Zauner-Stauber et al., PRB 97, 045145) for χ = 8 to 128, and c_fit is 6 × the slope of the cell-averaged S against ln ξ over the last four χ.
 
-A one-site cell fails here. The finite-χ state wants spiral order, which a one-site cell cannot hold, and VUMPS converges to non-injective states or not at all (the same happens for XX). I therefore scanned cells n = 1 to 37 at χ = 8 to 24 (`data/cellscan/cellscan.json`). The lowest energies come from cells commensurate with the spiral, n = 11 and 16 for 220 and n = 10, 20, 30 for 1282, with 23 and 13 next. Plain VUMPS also oscillates in these cells because of the soft sliding mode, so I use damped steps (A_C ← e^(−τH_AC) A_C, C ← e^(−τH_C) C, with τ adjusted so the variational energy never rises). A run stops when the gradient is below 10⁻⁸, or when it is below 10⁻³ and S has changed by less than 10⁻⁷ in 20 steps. For the candidates the gradient stalls at 10⁻⁷ to 10⁻⁶ (the sliding mode) while S and ξ have converged.
+The finite-χ state wants spiral order, which a one-site cell cannot hold (VUMPS there does not converge, as for XX). A scan of cells n = 1 to 37 (`data/cellscan/`) puts the lowest energies in cells commensurate with the spiral, n = 11 and 16 for 220 and n = 10 for 1282. The soft sliding mode makes plain VUMPS stall, so I take damped steps A_C ← e^(−τH_AC)A_C, C ← e^(−τH_C)C, with τ chosen so the variational energy never rises. A run stops when the gradient is below 10⁻⁸, or below 10⁻³ with S stationary to 10⁻⁷ over 20 steps.
 
-| model (exact c) | cell | χ (fit) | ξ (fit) | c_fit |
-|---|---|---|---|---|
-| Ising (1/2) | 1 | 32–96 | 590–4550 | 0.500 |
-| XX (1) | 2 | 48–128 | 140–491 | 1.000 |
-| XXZ Δ = 0.5 (1) | 2 | 64–128 | 174–427 | 1.008 |
-| XXZ Δ = −0.5 (1) | 2 | 48–128 | 178–628 | 1.014 |
-| XY + D_z + h_z, free fermions, no U(1), incommensurate (1) | 5 | 24–64 | 78–290 | 0.992 |
-| cluster-Ising, three-site (3/2) | 2 | 48–128 | 41–109 | 1.500 |
-| two decoupled XX chains, next-nearest neighbour (2) | 4 | 48–128 | 25–? | 1.94 |
-| **220** | 11 | 48–128 | 208–730 | 1.002 |
-| 220 | 16 | 24–64 | 48–164 | 1.03 |
-| **1282** | 23 | 24–64 | 25–90 | 1.014 |
-| 1282 | 10 | 24–48 | 26–64 | 1.00 |
+| model (exact c) | cell | χ in fit | ξ in fit | c_fit | κ |
+|---|---|---|---|---|---|
+| Ising (1/2) | 1 | 48–128 | 1240–7810 | 0.498 | 1.86 |
+| XX (1) | 2 | 48–128 | 140–490 | 1.000 | 1.28 |
+| XXZ, Δ = 0.5 (1) | 2 | 64–128 | 170–430 | 1.008 | 1.27 |
+| XXZ, Δ = −0.5 (1) | 2 | 48–128 | 180–630 | 1.014 | 1.28 |
+| XY + DM + field, free fermions (1) | 5 | 24–64 | 78–290 | 0.992 | 1.34 |
+| cluster-Ising, three-site (3/2) | 2 | 48–128 | 41–109 | 1.500 | 1.02 |
+| two decoupled XX chains, next-nearest neighbour (2) | 4 | 48–128 | 25–60 | 1.94 | 0.89 |
+| **220** | 11 | 48–128 | 208–730 | 1.002 | 1.28 |
+| 220 | 16 | 24–64 | 48–164 | 1.03 | 1.25 |
+| **1282** | 10 | 32–96 | 38–155 | 1.008 | 1.28 |
+| 1282 | 23 | 24–64 | 25–90 | 1.014 | 1.30 |
 
-The XY + D_z + h_z control (J = diag(1, 0.6, 0) plus D_z = 0.5, f = (0, 0, 0.6)) is the closest analogue. It has a large DM term, no conserved magnetization and Fermi points at 0.44π and 0.77π (`freefermion.py`). For 220 the pairwise slopes between consecutive χ from 24 to 128 are 1.027, 1.019, 1.005, 1.005, 1.001, 1.002. For 1282 (n = 23) from 24 to 64 they are 0.98, 1.00, 1.03, 1.00. The ξ–χ exponent κ is 1.28 (220) and 1.30 (1282), against 1.27 to 1.30 for the c = 1 controls and 1.02 for c = 3/2. Other cells (220 with n = 16, 21, 1282 with n = 10) agree, except one run (1282, n = 13) that jumped to a non-injective state at χ = 64 and is discarded. A c = 3/2 or 2 chain would show slopes near 1.5 or 2 already at ξ ~ 50, as the controls do.
+The free-fermion control (J = diag(1, 0.6, 0), D_z = 0.5, f = (0, 0, 0.6)) is the closest analogue, with a large DM term, no conserved magnetization and Fermi points at 0.44π and 0.77π (`freefermion.py`).
+
+For the candidates, the slopes between consecutive χ are as follows.
+- 220 (n = 11), χ = 24 to 128: 1.027, 1.019, 1.005, 1.005, 1.001, 1.002.
+- 1282 (n = 10), χ = 24 to 96: 0.98, 0.99, 1.04, 1.00, 0.99.
+
+Fitting each bond of the cell separately gives 0.94 to 1.10. The exponent κ of ξ ∝ χ^κ also sides with the c = 1 controls (theory 1.34, 1.05 and 0.87 for c = 1, 3/2 and 2). A c = 3/2 or 2 chain would show slopes near 1.5 or 2 already at ξ ~ 50, as the controls do. One run (1282, n = 13) became non-injective at χ = 64 and is discarded.
 
 ### 2. Correlations in the infinite state
 
-The cell magnetization splits into a uniform part m₀ and a spiral component M_q.
+The cell magnetization splits into a uniform part m₀ and a spiral amplitude |M_q| ∝ ξ^(−x_q). The same fit gives 0.250 for XX and 0.98 for the free-fermion density wave (exact 1/4 and 1).
 
-- 220: m₀ = 0.33. In the n = 11 cell the spiral "unlocks" above χ = 16 (all bonds carry the same S), and the leading transfer-matrix pair has phase 11q ≡ ±0.041, so q = 0.1855. In the n = 16 cell (q locked to 3/16) |M_q| ∝ ξ^(−0.16), so x_q ≈ 0.16.
-- 1282: m₀ = 0.17, q = 0.30. The n = 10 cell (q = 3/10) is lower in energy than 7/23 and 8/27, and |M_q| ∝ ξ^(−0.33) in both the n = 10 and n = 23 cells.
-- The same fit gives x = 0.250 for XX and 0.98 for the 2k_F density wave of the free-fermion control (exact 1/4 and 1).
+- 220 has m₀ = 0.33. In the n = 11 cell the spiral "unlocks" above χ = 16 (every bond then carries the same S), and the leading transfer-matrix pair has phase 11q ≡ ±0.041, so q = 0.1855. The n = 16 cell (q locked at 3/16) gives x_q = 0.16.
+- 1282 has m₀ = 0.17, and q = 3/10 beats 7/23, 8/27 and 5/17 in energy. x_q = 0.34 in both the n = 10 and n = 23 cells.
 
-So both chains have quasi-long-range spiral order, ⟨S₀·S_r⟩ ~ r^(−2x_q) cos(2πqr), with a single soft U(1) sliding mode. That is a c = 1 Luttinger liquid with K ≈ 1.5 (220) and 0.75 (1282), normalized so that XX has K = 1.
+So spin correlations decay as r^(−2x_q) cos(2πqr), quasi-long-range spiral order with one sliding mode, and K = 1/(4x_q) ≈ 1.5 (220) and 0.75 (1282) in a normalization where XX has K = 1.
 
 ### 3. Ring ED with momentum resolution
 
-`run_point.py` with six levels in each momentum sector, to L = 26 (220) and 25 (1282), plus the two c = 1 incommensurate controls to L = 24. L = 27 and 28 are still running (see Reproducing).
+Six levels in every momentum sector, to L = 26 for the candidates (27 and 28 still running) and to L = 24 for two incommensurate c = 1 controls, the free-fermion chain and the twisted XXZ chain `xxzm07_dm_h`.
 
-- Towers. The lowest excitation of every ring is a "rotor" pair at relative momentum ±N₀ (units 2π/L), with N₀/L = 0.17 to 0.20 (220) and 0.29 to 0.32 (1282). These are the charge ±1 states of the sliding mode at momentum ±2πq. Higher rotor states sit at ±2N₀ and ±3N₀ mod L. Their scaled energies L·ΔE/2π are 0.003 to 0.17, oscillating with qL mod 1 as a twisted boson does. There is one family, not the two independent families c = 2 would give. The descendants could not be isolated from this dense spectrum, so no velocity or Casimir c is quoted.
-- z. The scaled levels L·ε_n (n ≤ 16, all momenta) are flat from L = 12 to 25 for 1282 and drift by about 30% for 220. A z = 2 spectrum would halve. Fits of ln ε_n against ln L give z = 0.96 to 1.12 (1282) and 0.99 to 1.26 (220) for n = 10 and 20, and 1.08 to 1.20 for the free-fermion control.
-- c_S. The ring entanglement fit gives 1.08 to 1.12 (220, L = 21 to 26, no drift) and 1.18 to 1.23 (1282, L = 21 to 24). The free-fermion and twisted-XXZ controls give 1.01 to 1.03. Rings with a near-degenerate ground state (220 at L = 14 and 19, 1282 at L = 25) give c_S ≈ 2 and are excluded. The 10 to 20% overshoot matches the near-ferromagnetic controls of `d2_classification`, and it would have to be a 25% undershoot for c = 3/2.
+- Towers. The lowest excitation is a "rotor" pair at relative momentum ±N₀ (units 2π/L). Over most L, N₀/L is 0.16 to 0.21 (220) and 0.29 to 0.32 (1282), so N₀ ≈ qL. For 220, states at ±2N₀ mod L come next, and the pattern is less clean for 1282. These are charge-one and charge-two states of the sliding mode, with L·ΔE/2π between 0.003 and 0.4, oscillating with qL mod 1 as for a twisted boson. The spectrum is too dense to isolate descendants, and the charge-one gap at qL ≈ integer is not yet stable in L, so I quote no velocity or Casimir c.
+- z. Over L = 12 to 26, the median of L·ε_n for n = 5 to 20 (ε_n is the n-th excitation, all momenta) scales as L^(−0.02) for 1282 and L^(−0.16) for 220, with ±30% scatter. That is z ≈ 1.0 and 1.2, where z = 2 would give L^(−1). Fits of ln ε_n against ln L for n = 10 and 20 give z = 0.94 to 1.11 (1282), 0.99 to 1.26 (220) and 1.08 to 1.20 (free-fermion control).
+- c_S. The ring entanglement fit, l ≥ L/4, gives 1.08 to 1.12 for 220 (L = 21 to 26, no trend) and 1.18 to 1.23 for 1282 (L = 21 to 26 except 25). The free-fermion and twisted-XXZ controls give 1.01 to 1.03. Rings with a nearly degenerate ground state (220 at L = 14, 19, 1282 at L = 15, 25) give 1.9 to 2.4 and are excluded. A 10 to 20% overshoot matches the near-ferromagnetic controls of `d2_classification`, while c = 3/2 would need a 20 to 28% undershoot.
 
 ### 4. Open chains, and why the doubling estimate fails
 
-Windowed fits over l ∈ [L/4, 3L/4] (`analyze_obc.py`), plain, with a bond-energy term, with a fitted oscillation A cos(2πkl + φ)/[(2L/π) sin(πl/L)]^p, and after averaging over one period:
+`analyze_obc.py` fits S(l) over l ∈ [L/4, 3L/4] four ways.
+- plain: the Calabrese–Cardy form alone.
+- E_b: plus a bond-energy term.
+- osc: plus a fitted A cos(2πkl + φ)/[(2L/π) sin(πl/L)]^p (k in brackets).
+- smooth: after averaging S over one period.
 
-| point | end field | L | χ | plain | bond energy | oscillation (k) | smoothed |
+"Full" means the full field f on the end sites (`dmrg.py`). "Half" means f/2 there, the sum of bond terms.
+
+| point | ends | L | χ | plain | E_b | osc (k) | smooth |
 |---|---|---|---|---|---|---|---|
 | 220 | full | 96 | 128 | 0.96 | 0.99 | 0.95 (0.183) | 0.98 |
 | 220 | half | 192 | 160 | 0.96 | 0.99 | 1.00 (0.186) | 0.99 |
-| 1282 | full | 96 | 128 | 1.67 | 1.69 | 1.67 | 1.64 |
-| 1282 | half | 96 | 128 | 0.97 | 0.97 | – | 1.01 |
-| 1282 | half | 192 | 96 | 1.08 | 1.08 | – | 1.13 |
+| 1282 | full | 48 | 192 | 0.76 | 1.08 | 1.15 (0.302) | 1.02 |
+| 1282 | full | 96 | 128 | 1.67 | 1.69 | 1.67 (0.429) | 1.64 |
+| 1282 | half | 96 | 128 | 0.98 | 0.97 | – | 1.02 |
+| 1282 | half | 192 | 160 | 1.10 | 1.09 | – | 1.14 |
 
-220: S(l) oscillates with k = q ≈ 0.186, a period of 5.4 sites and peak-to-trough amplitude about 0.25. The central bond happens to sit near a trough at L = 48 and near a crest at L = 96, so 6ΔS/ln 2 picks up 6 × 0.25/ln 2 ≈ 2. Every fit that removes the oscillation gives 0.95 to 1.00 at L = 48, 96 and 192.
+For 220, S(l) oscillates at k = q ≈ 0.186 (a period of 5.4 sites) with a peak-to-trough amplitude of about 0.25. The central bond lies near a trough at L = 48 and near a crest at L = 96, so the central-cut difference picks up roughly 6 × 0.25/ln 2 ≈ 2. Every fit that removes the oscillation gives 0.90 to 1.02 at L = 48 and 0.95 to 1.00 at L = 96 and 192.
 
-1282: the L = 96 profile in `d2_classification` (full field on the end sites) gives c ≈ 1.67 under every windowed fit. Moving half the end field off the end sites (the sum-of-bond-terms convention) brings the same L = 96 window to 0.97. A bulk central charge cannot depend on a boundary field, so this is a boundary crossover over about L/4 ≈ 25 sites, of the kind the coordinator anticipated. At L = 192 the window gives 1.0 to 1.1, and the window-averaged doubling 96 → 192 gives 1.06.
+For 1282, the full-field L = 96 profile gives 1.67 under every fit. Halving the field on the two end sites brings the same window to 0.98. A bulk central charge cannot depend on a boundary field, so this is a boundary crossover that reaches at least L/4 ≈ 25 sites into the chain. At L = 192 the profile is still not a clean logarithm. The local slopes over l = 24–48, 48–72 and 72–96 are 0.97, 0.5 and −0.5, and the whole-window values of 1.1 come from this shape. Open chains of 1282 at L ≤ 192 therefore cannot fix c. The boundary-free estimators can, and they give 1.
 
 ## Reproducing
 
-numpy and scipy, plus numba for the ED. On Typhon use `PYTHONNOUSERSITE=1` with the default anaconda. Data are in `data/`, and the χ = 128 states are only on Typhon (`/scratch/lustre/jkudlerflam/d2_followup_220_1282/data/*.npz`).
+numpy and scipy, plus numba for the ED (on Typhon, `PYTHONNOUSERSITE=1` with the default anaconda). Outputs are in `data/`, and the χ = 128 states (`*.npz`) only in `/scratch/lustre/jkudlerflam/d2_followup_220_1282/data/` on Typhon.
 
-- `python3 run_fes.py MODEL --n N --mode damped --chis 8 12 16 24 32 48 64 96 128 --save_state` runs VUMPS. MODEL is 220, 1282 or a control in `models.py`. It takes 10 min (controls) to 1 h (n = 23, χ = 128) on 4 cores. `analyze_fes.py` and `analyze_order.py` then give sections 1 and 2.
-- `python3 fdmrg.py MODEL --L 192 --chis 32 64 96 128 160 [--edgefield]` runs the open chain, 1 to 3 h on 8 cores. `analyze_obc.py 220 1282` gives section 4.
-- ED: `../d2_classification/run_point.py NAME --k 6 --procs 16 --sizes ...`, with `extra_points.json` for the free-fermion control. `ed_analysis.py 220 1282 xydm xxzm07_dm_h` gives section 3.
-- Slurm scripts: `fes_array.slurm` (tasks in `fes_tasks.txt`), `fes_round2.slurm`, `obc_packed.slurm` (`obc_tasks.txt`), `ed_big.slurm`, `ed_ctrl.slurm`.
-- Typhon jobs, partition typhon:
-  - 17511443 and 17511561: VUMPS. Some tasks were cancelled and resubmitted, and Ising was run on the laptop.
+- `python3 run_fes.py MODEL --n N --mode damped --chis 8 12 16 24 32 48 64 96 128 --save_state` (MODEL is 220, 1282 or a control in `models.py`, 10 min to 2 h on 4 cores), then `analyze_fes.py` and `analyze_order.py` for sections 1 and 2.
+- `python3 fdmrg.py MODEL --L 192 --chis 32 64 96 128 160 [--edgefield]` (about 1 h on 8 cores), then `analyze_obc.py 220 1282` for section 4.
+- `../d2_classification/run_point.py NAME --k 6 --procs 16 --sizes ...` (`extra_points.json` defines the free-fermion control), then `ed_analysis.py 220 1282 xydm xxzm07_dm_h` for section 3.
+- Slurm scripts are `fes_array.slurm` (`fes_tasks.txt`), `fes_round2.slurm`, `obc_packed.slurm` (`obc_tasks.txt`), `ed_big.slurm` and `ed_ctrl.slurm`.
+- Typhon jobs ran on partition typhon, about 170 core-hours by the time of writing:
+  - 17511443 and 17511561: VUMPS. Stalled tasks were cancelled and resubmitted, and the Ising control was run on the laptop.
   - 17511439: ED to L = 28, 16 cpus and 370 GB.
-  - 17511570: ED controls.
-  - 17511574 and 17511763: open chains, including L = 384.
+  - 17511570: ED of the controls.
+  - 17511574 and 17511763: open chains, the latter at L = 384 and with full end fields.
   - 17511877: VUMPS continued to χ = 256.
 
-  Outputs of the jobs still running at the time of writing are not in this README.
+  Results that arrived after this was written are not included.
 
 ## Relation to the rest of the repository
 
-This resolves the two points flagged in the coordinator's note of `../d2_classification/README.md`. Their provisional "(b) c = 1" verdicts stand, now on boundary-free evidence. "Where things stand" does not change. The method, damped VUMPS in commensurate cells calibrated on the free-fermion XY + DM chain, could also settle the class (c) points 269, 1289 and 871.
+This settles the two points flagged in the coordinator's note in `../d2_classification/README.md`. Their provisional "(b) c = 1" verdicts stand on boundary-free evidence, and "Where things stand" is unchanged. Damped VUMPS in commensurate cells could also settle the class (c) points 269, 1289 and 871.

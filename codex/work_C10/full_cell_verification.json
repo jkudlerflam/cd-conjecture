@@ -1,0 +1,25 @@
+{
+  "interior_track_states": 20736,
+  "quantum_dimension": 331776,
+  "connected_components": 19876,
+  "component_size_histogram": {
+    "1": 19449,
+    "3": 426,
+    "9": 1
+  },
+  "largest_quantum_block": 144,
+  "legal_ground_energy_including_C": 0.5234175505451754,
+  "legal_ground_dimension": 4,
+  "minimum_illegal_energy_including_C": 20.0,
+  "minimum_illegal_energy_after_counterterm": 19.4,
+  "analytic_illegal_bound_fixed_marker_labels": 19.4,
+  "legal_ground_energy_after_counterterm": -0.07658244945482473,
+  "an_illegal_minimizing_word": [
+    "A1",
+    "A2",
+    "A3",
+    "A4"
+  ],
+  "actual_bond_projection_error": 0.0,
+  "scope": "Every quantum block was diagonalized for all 12^4 interior computation strings with correct fixed endpoint marker labels and marker data. Endpoint-marker mismatches and arbitrary cell lengths are covered analytically, not by this enumeration."
+}
