@@ -1,0 +1,135 @@
+[
+  {
+    "name": "classical_Ising",
+    "d": 2,
+    "r": 1,
+    "singular_values": [
+      1.9999999999999996
+    ],
+    "multiplicities": [
+      1
+    ],
+    "symmetry_dimension": 1,
+    "moving_image_dimension": 0,
+    "local_kernel_dimension": 1,
+    "dimension_bound": 0,
+    "torus_bound": 0,
+    "invariance_error": 0.0
+  },
+  {
+    "name": "critical_transverse_Ising",
+    "d": 2,
+    "r": 1,
+    "singular_values": [
+      1.9999999999999996
+    ],
+    "multiplicities": [
+      1
+    ],
+    "symmetry_dimension": 0,
+    "moving_image_dimension": 0,
+    "local_kernel_dimension": 0,
+    "dimension_bound": 0,
+    "torus_bound": 0,
+    "invariance_error": 0.0
+  },
+  {
+    "name": "XX",
+    "d": 2,
+    "r": 2,
+    "singular_values": [
+      1.9999999999999996,
+      1.9999999999999996
+    ],
+    "multiplicities": [
+      2
+    ],
+    "symmetry_dimension": 1,
+    "moving_image_dimension": 1,
+    "local_kernel_dimension": 0,
+    "dimension_bound": 1,
+    "torus_bound": 1,
+    "invariance_error": 1.5700924586837752e-16
+  },
+  {
+    "name": "XXZ",
+    "d": 2,
+    "r": 3,
+    "singular_values": [
+      1.9999999999999996,
+      1.9999999999999996,
+      0.5999999999999999
+    ],
+    "multiplicities": [
+      2,
+      1
+    ],
+    "symmetry_dimension": 1,
+    "moving_image_dimension": 1,
+    "local_kernel_dimension": 0,
+    "dimension_bound": 1,
+    "torus_bound": 1,
+    "invariance_error": 1.5700924586837752e-16
+  },
+  {
+    "name": "XYZ",
+    "d": 2,
+    "r": 3,
+    "singular_values": [
+      1.9999999999999996,
+      1.3999999999999995,
+      0.5999999999999999
+    ],
+    "multiplicities": [
+      1,
+      1,
+      1
+    ],
+    "symmetry_dimension": 0,
+    "moving_image_dimension": 0,
+    "local_kernel_dimension": 0,
+    "dimension_bound": 0,
+    "torus_bound": 0,
+    "invariance_error": 0.0
+  },
+  {
+    "name": "Heisenberg",
+    "d": 2,
+    "r": 3,
+    "singular_values": [
+      1.9999999999999996,
+      1.9999999999999996,
+      1.9999999999999996
+    ],
+    "multiplicities": [
+      3
+    ],
+    "symmetry_dimension": 3,
+    "moving_image_dimension": 3,
+    "local_kernel_dimension": 0,
+    "dimension_bound": 3,
+    "torus_bound": 1,
+    "invariance_error": 1.5700924586837752e-16
+  },
+  {
+    "name": "two_XX_unequal",
+    "d": 4,
+    "r": 4,
+    "singular_values": [
+      3.999999999999999,
+      3.999999999999999,
+      1.48,
+      1.48
+    ],
+    "multiplicities": [
+      2,
+      2
+    ],
+    "symmetry_dimension": 2,
+    "moving_image_dimension": 2,
+    "local_kernel_dimension": 0,
+    "dimension_bound": 2,
+    "torus_bound": 2,
+    "invariance_error": 3.925231146709438e-16
+  }
+]

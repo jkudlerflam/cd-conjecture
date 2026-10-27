@@ -1,0 +1,13 @@
+The run remains nonconclusive. No verified counterexample or whole-class bound was found.
+
+New results include:
+
+- A boundary-Schmidt-rank obstruction: one product vector in a block code forces \(c_{\mathrm{target}}\le q-1\) for the proposed Clifford construction.
+- The sharp frustration-free witness length \(K_{\mathrm{FF}}(2)=4\).
+- A conditional bound \(c\le\lfloor r(h)/2\rfloor\) for Gaussian modes resolved by commuting microscopic charges.
+
+The explicit graded-swap construction reaches only the existing channel budget. All three new verification scripts passed.
+
+Full proofs, limitations, reproduction instructions, and next steps are in [RESULT.md](work_C8/RESULT.md). [PROGRESS.md](work_C8/PROGRESS.md) contains the updated restart state. Only this folder was modified.
+
+[gpt_solve: backend=codex model=gpt-6-astra effort=high transcript=20261027T185449-29136]

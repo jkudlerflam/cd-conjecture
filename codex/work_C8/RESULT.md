@@ -4,32 +4,51 @@
 
 ## Verdict
 
-Third-run update. The whole-class verdict remains nonconclusive. Sections 15-19 contain the new work and supersede both earlier next-step rankings.
+Fourth-run update. The verdict remains nonconclusive under the definition
+in the task. There is no verified microscopic counterexample, no bound
+for the full class, and no fixed-d construction with unbounded c.
+Sections 20-24 contain this run's new results and supersede the earlier
+next-step rankings. All earlier proofs and checks remain below.
 
-There is now an exact d=4 mobile selector with c=1 at finite hopping, including a uniform gap to illegal sectors and the full spectrum on every ring. Entropy and Casimir checks agree with the free-fermion identification. This model has no large-c payload and is not a counterexample.
+The strongest new obstruction is a boundary-Schmidt-rank bound. If a
+code contains one state of Schmidt rank s across an active q-dimensional
+port, an exact scaled Clifford family has at most 2qs-s^2 generators.
+One product vector therefore forces c_target<=q-1 for the proposed even-
+channel Majorana target. This excludes complete ground codes of positive
+bonds with matrix rank below q, and gives a robust obstruction to their
+approximate joint ports. Commuting-projector parents and the specified
+injective two-site MPS parent class are also excluded as implementations
+of the proposed high-channel code. These are restricted construction
+no-gos, not a general c bound.
 
-Two-length payload compatibility is possible algebraically with one additional vacancy symbol per site. Exact two-placement padding cannot be its own isolated local ground code, however. A different repeated-bond vacancy construction repairs this under a frustration-free-core hypothesis, preserving the complete core code and giving scalar projected payload transport at both lengths. The endpoint strengths differ slightly between the two lengths, and selecting their occupied-number sectors remains open.
+The open-chain frustration-free witness length is now explicit and sharp
+for qubits, K_FF(2)=4. A positive bond with a three-site zero state and no
+four-site zero state proves sharpness. A q-state extension gives
+K_FF(q)>=q+2 for q>=2. Neither statement covers frustrated conformal chains
+or marker-dependent boundary penalties.
 
-Finally, a Hilbert-basis argument gives a finite witness length for uniform frustration freeness. This excludes selecting arbitrarily long cores as the longest frustration-free open segment at fixed site dimension, without boundary terms. It is not a universal bound on conformal onset or central charge.
+A constructive test supplies a repeated positive graded-swap parent on
+q=n+1 states, with a complete 2^n-dimensional ground code and controlled
+maps at both ends. Its normalized error from 2n Clifford generators is
+1-sqrt(1-(n-1)/N) on a cell of length N. It only approaches c_target=q-1
+before paying selector costs, so it does not produce a violation.
 
-The exact product-code route is now excluded for the parity-dressed hopping target when its endpoints are disjoint. A quantitative leakage bound and a gap/length tradeoff explain why the perturbative route remains different. The full flat-parent second-order calculation has an attractive singlet mass-channel coefficient, including a contribution from adjacent bonds. An explicit parity-preserving two-energy parent reverses that coefficient. Its complete 324-dimensional example and checks are provided, but no finite-coupling CFT is claimed.
+A separate conditional bound uses the connected bond itself. If the
+Schmidt singular values have multiplicities n_j, the dynamical image of
+any exact on-site symmetry algebra embeds in the direct sum of so(n_j).
+When the corresponding microscopic currents exhaust the IR stress tensor,
+this gives c<=min(d^2-1,sum_j n_j(n_j-1)/2). Gaussian modes resolved by
+commuting on-site charges obey c<=sum_j floor(n_j/2)<=floor(r(h)/2).
+Neutral and emergent sectors remain outside these hypotheses.
 
-The all-ring issue is also sharper. Conserved markers force at least L ground states on large prime rings under stated energy-density conditions. An explicit nearest-neighbor marker hop at the crossing of two preferred cell lengths instead produces an XX model of cell lengths at first order. Projected graph calculations distinguish a finite-density length fluid from one quadratic forced defect. A payload code compatible with both lengths has not been constructed.
-
-
-Not conclusive under the definition in the task. I have neither an explicit microscopic counterexample, a bound for the full class, nor a construction with unbounded central charge at fixed microscopic dimension.
-
-The main new results are finite-dimensional theorems about the proposed block route.
-
-1. Both boundary sites can simultaneously compress to the required scaled Clifford operators, including the parity dressing that makes the inter-block interaction genuinely quadratic in fermions. A constructive dilation proves this. Thus simultaneous boundary compatibility does not close the first-order window.
-2. A single one-way gate sweep on an otherwise unrestricted register cannot implement that code. One end acts on only two input sites, regardless of block length.
-3. G1's second-order exchange construction extends to a translation-invariant chain of identical blocks with distinct left and right ports. There are no three-block terms at this order. An explicit 48-dimensional block with two qubit ports produces an antiferromagnetic logical qutrit swap. This is an extension of G1, not a new claim to its unrestricted-block result.
-4. Exact large microscopic symmetry cannot protect the proposed exchange through a small port. If a simple symmetry algebra has dimension greater than q^2-1, where q is the port dimension, it acts trivially on the interaction algebra. For a single irreducible ground code this forbids every effective interaction, at all orders. In particular this applies to an SU(N) fundamental code with N>q.
-5. Generic incommensurate free-fermion targets provide a possible alternative to exact large symmetry. Their low-dimension perturbations can be classified. The operator classification is conditional on the stated bosonization input; the inference of a stable microscopic phase remains an RG argument, not a theorem proved here.
-
-The outstanding problem is now particularly concrete: realize the joint boundary code, or the joint boundary spectral weights, with a repeated microscopic nearest-neighbor bond. Neither an arbitrary parent projector nor an arbitrary matrix on a block meets that requirement.
-
-The numerical checks below concern the abstract codes, the unrestricted-block gadget and the exact logical free-fermion target. They are not counterexample numerics.
+Earlier work supplies joint two-port dilations, second-order synthesis
+of arbitrary logical bonds, an exact d=4 mobile selector with c=1,
+and conditional vacancy transport of frustration-free codes. It also
+identifies the finite-coupling stability and incompatible-ring issues.
+The unresolved construction still needs a sufficiently entangled
+high-channel code with a repeated local parent, number-sector selection,
+and thermodynamic infrared control. The new tests concern only finite
+codes and symmetry algebras. No new microscopic CFT was measured.
 
 ## 1. Simultaneous boundary Clifford compression
 
@@ -1986,3 +2005,741 @@ Next steps, ranked:
    stress-tensor sectors or on the conformal onset scale that survives
    arbitrarily small gaps. The finite-frustration-free-witness theorem
    supplies neither, and should not be used as if it did.
+
+
+
+
+## 20. Boundary Schmidt rank and local-parent obstructions
+
+Status: proved finite-dimensional statements. These exclude a class of
+first-order block constructions, not the full c-d conjecture.
+
+### 1. A single low-Schmidt-rank code vector limits all channels
+
+Let V:C^D -> C^q tensor E be an isometry, P=VV^dagger, and let F_a be
+Hermitian operators on C^q. Suppose
+
+    V^dagger (F_a tensor I) V = alpha_a Gamma_a,
+    alpha_a real and != 0,  {Gamma_a,Gamma_b}=2 delta_ab I.          (1)
+
+If the code contains a normalized vector psi of Schmidt rank s across
+this boundary cut, then
+
+    m <= 2 q s - s^2.                                    (2)
+
+The scales alpha_a may differ and may be arbitrarily small.
+
+Proof. Regard the physical Hilbert space as a real inner-product space
+with (u,v)_R=Re<u,v>. Write phi=V^dagger psi. The m vectors
+
+    v_a=P(F_a tensor I)psi/alpha_a=V Gamma_a phi
+
+are orthonormal in this real inner product, because
+
+    Re<Gamma_a phi,Gamma_b phi>
+      = <phi|{Gamma_a,Gamma_b}/2|phi>=delta_ab.
+
+They belong to the real image of the linear map
+
+    Herm(q) -> range(P),  F -> P(F tensor I)psi.
+
+Projection cannot increase its real dimension. Before projection, its
+kernel consists of Hermitian F annihilating the s-dimensional Schmidt
+support S in C^q. In an orthogonal decomposition S direct-sum S^perp,
+only the (q-s) by (q-s) bottom block of F may be nonzero. The kernel
+therefore has real dimension (q-s)^2. The domain has dimension q^2,
+so the image dimension is q^2-(q-s)^2=2qs-s^2. This proves (2).
+
+In particular, a code containing even ONE vector that factors across
+the active port satisfies m<=2q-1. For an even number m of Majorana
+channels, m<=2q-2, and its first-order target has
+
+    c_target=m/2 <= q-1.                                 (3)
+
+This conclusion does not assume a local parent, frustration freeness,
+a gap, or exact invariance of the code under the boundary bond. It
+applies to scaled compressions, which are the setting of the proposed
+loophole. It is only a bound for the specified Clifford target.
+
+For a proposed m-channel code every nonzero code vector must have
+
+    Schmidt rank >= ceil(q-sqrt(q^2-m))                   (4)
+
+at EACH port that realizes the channels. The integer ceiling is taken
+on the exact expression. In particular m>2q-1 requires a completely
+entangled code subspace across each boundary cut.
+
+If there is also a Hermitian physical lift F_0 of the logical parity,
+anticommuting with every Gamma_a and squaring to I after normalization,
+apply (2) to the m+1 generators. For s=1 this still gives m<=2q-2.
+
+### 2. Uniform positive bonds of rank less than q
+
+Let h>=0 act on C^q tensor C^q and have matrix rank r<q. Let G_N be the
+COMPLETE kernel of the open-chain sum of h, without boundary penalties.
+For every unit vector a at the first site, G_N contains a product state
+with that first-site vector. The same statement holds at the last site.
+
+Proof. Choose r vectors w_mu spanning range(h). For a fixed nonzero a,
+the conditions
+
+    <w_mu|a tensor b>=0,  mu=1,...,r,
+
+are r homogeneous complex linear equations for q entries of b. There
+is a nonzero solution b. Repeat this step to choose the next site. Every
+bond of the resulting normalized product state is in ker(h). For a
+specified last site, repeat the argument in reverse. QED.
+
+Consequently (3) excludes a first-order Majorana violation from every
+such complete ground code. There is a stronger statement.
+
+Suppose a Hermitian F has compressed action A on G_N and A^2=alpha^2 I
+with alpha>0. Every eigenvector of F can be extended to a ground product
+state, so the maximum and minimum eigenvalues of F occur as Rayleigh
+quotients of A. Hence ||F||<=alpha. Conversely ||A||<=||F||, so
+||F||=alpha and F^2<=alpha^2 I. For psi in G_N,
+
+    alpha^2 ||psi||^2 = ||P F psi||^2
+       <= ||F psi||^2 <= alpha^2 ||psi||^2.
+
+Equality forces (I-P)F psi=0. Thus every such F preserves the code.
+Because every boundary vector occurs in a code product state, a boundary
+operator vanishing on the whole code is the zero physical operator.
+The Clifford identities of A_a therefore imply the same identities for
+F_a/alpha_a themselves on C^q. For even m this implies
+
+    2^(m/2) divides q,   m/2 <= nu_2(q) <= log_2 q.        (5)
+
+Here the representation fact used is that the complex even Clifford
+algebra is M_(2^(m/2)), whose finite-dimensional unital representations
+are direct sums of its defining representation.
+
+Furthermore both endpoint lifts preserve G_N. Since the physical
+endpoint operators commute when N>=2, their logical restrictions
+commute. Thus this subclass cannot realize even one pair of the desired
+joint maps Gamma_a and i Gamma_a P_logical, whose commutator is nonzero.
+This conclusion does not assume that the eventual inter-cell Hamiltonian
+preserves the code exactly. It is forced already by the low-rank parent
+and the exact involution compressions.
+
+These claims concern the entire ground kernel. Selecting a smaller
+subcode by new terms can destroy the product-extension property. Extra
+boundary penalties, higher-rank bulk constraints, frustrated parents,
+and approximate rather than exact Clifford maps are not excluded.
+
+### 3. A quantitative version for approximate Clifford relations
+
+Let A_a=V^dagger F_a V/alpha_a be Hermitian. For any unit code vector phi
+of boundary Schmidt rank s, form its real Gram matrix
+
+    M_ab=Re<A_a phi,A_b phi>.
+
+It is positive semidefinite and rank(M)<=R=2qs-s^2. If
+||{A_a,A_b}/2-delta_ab I||<=epsilon entrywise, then
+|M_ab-delta_ab|<=epsilon and ||M-I||_op<=m epsilon.
+For m>R, M has a zero eigenvalue, so
+
+    epsilon >= 1/m.                                      (6)
+
+A sharper, readily tested formulation is ||M-I||_op>=1.
+Thus arbitrarily accurate normalized Clifford relations cannot bypass
+the rank obstruction at fixed m. This does not give a lower bound on
+unnormalized errors independent of the small alpha_a.
+
+For the low-rank-parent setting, if ||A^2-alpha^2 I||<=eta for the
+UNNORMALIZED compression A=V^dagger F V, extension of extremal physical
+eigenvectors gives ||F||^2<=alpha^2+eta. Since A^2>=alpha^2-eta,
+
+    ||(I-P) F V||^2 = ||V^dagger F^2 V - A^2|| <= 2 eta.   (7)
+
+For disjoint ports F,B, their normalized compressions obey
+||[A_F,A_B]||<=2 ||Q F V|| ||Q B V|| after using [F,B]=0.
+If their square defects are eta_F, eta_B, this gives
+||[A_F,A_B]||<=4 sqrt(eta_F eta_B). This is an unnormalized
+inequality; the target commutator has size 2|alpha_F alpha_B|.
+Therefore a parity-dressed pair requires
+
+    sqrt(eta_F eta_B) >= |alpha_F alpha_B|/2.              (8)
+
+The required relative error is of order one. The low-rank FF-parent
+obstruction is robust against improving the normalized accuracy.
+
+### 4. Two additional local-parent classes
+
+A commuting-projector parent cannot supply the joint noncommuting ports.
+Let P be the product of its commuting ground-space projectors. Assume
+no individual projector touches both active endpoints. For endpoint
+operators F and B, partition the projectors into those touching only
+the first endpoint, only the last endpoint, and neither. The last
+family commutes with both operators; the first family commutes with B;
+the second commutes with F. These commutations and idempotence give
+
+    P F P B P = P F B P = P B P F P.                      (9)
+
+Hence the compressed endpoint operators commute, ruling out the
+parity-dressed Clifford pair. The argument does not require F or B to
+preserve P, or exact invariance under the later inter-cell perturbation.
+For a nearest-neighbor commuting-projector parent, three or more sites
+ensure that no parent term touches both endpoints. This statement also
+covers commuting positive bonds after replacing them by kernel
+projectors. It does not cover a noncommuting frustration-free parent.
+
+A separate dimension obstruction applies to a standard injective MPS
+code with a nonzero nearest-neighbor frustration-free parent. State
+its assumptions explicitly. The virtual bond dimension is D_v, the
+two-site MPS map from M_(D_v) to C^q tensor C^q is injective, its image
+is annihilated by a nonzero positive two-site parent term, and the
+complete open-chain code for the cell is the D_v^2-dimensional MPS
+edge space. Then
+
+    D_v^2 < q^2,  hence D_v<=q-1.                         (10)
+
+The strict inequality follows because otherwise the injective image
+would fill the two-site physical space and no nonzero positive term
+could annihilate it. An even m=2n Clifford family on the complete edge
+space requires 2^n to divide D_v^2, so
+
+    n <= 2 nu_2(D_v) <= q-1.                             (11)
+
+For the last inequality put k=nu_2(D_v). If k=0 it is immediate. If
+k>=1, 2k<=2^k<=D_v<=q-1. Thus this MPS-parent subclass cannot provide
+c_target=n>q-1, even without inspecting its endpoint maps. The result
+uses the complete edge-space dimension; a differently selected subcode
+or a parent with larger interaction range is not covered by (10).
+
+These exclusions identify features needed by the unresolved
+frustration-free route. A useful complete code must have no product
+vector at either active boundary, use noncommuting constraints, avoid
+the low-rank product-extension setting, and go beyond the specified
+injective two-site MPS parent class. None of these requirements proves
+that such a code cannot exist.
+
+
+### 5. Consistency with the earlier joint Choi code
+
+The earlier unrestricted dilation is not excluded by the new theorem.
+For a unit logical state phi, its left-port reduced state is
+
+    rho_L=(I+alpha sum_a <Gamma_a>_phi F_a)/q.
+
+The Clifford expectation vector obeys sum_a <Gamma_a>^2<=1. Indeed,
+for real u, (sum_a u_a Gamma_a)^2=||u||^2 I; taking u equal to the
+expectation vector proves the claim. Since tr(F_a F_b)=q delta_ab,
+
+    ||sum_a <Gamma_a> F_a|| <= ||sum_a <Gamma_a> F_a||_HS
+                             <=sqrt(q).
+
+Therefore every eigenvalue of rho_L lies between
+(1-alpha sqrt(q))/q and (1+alpha sqrt(q))/q. The same proof applies
+to the right-port Clifford family. At the earlier
+alpha=1/(4m sqrt(q)), every nonzero code vector has full Schmidt rank
+q at BOTH ports, with entropy at least log(q)-log(1+1/(4m)).
+This is an analytic check on the scope of (2), not a new numerical
+claim or a construction of a local parent. For the q=9,m=80 resource
+example, (4) requires rank at least 8 at each port for every code
+vector; the Choi code has rank 9.
+
+
+## 21. The sharp qubit frustration-free witness
+
+Status: proved. This concerns a positive uniform bond on an OPEN chain
+with no boundary terms. It does not classify conformal frustrated chains.
+
+The finite-witness integer from `finite_ff_witness.md` has the sharp value
+
+    K_FF(2)=4.                                           (1)
+
+Thus a positive two-qubit bond that is frustration free on four open
+sites is frustration free at every length. A finite longest FF segment
+can have two or three sites, but cannot be longer than three.
+
+### 1. Reduce to a two-dimensional allowed space
+
+Put S=ker(h) subset C^2 tensor C^2. The zero space of H_N is
+
+    G_N = intersection_j C^2 tensor ... tensor S_(j,j+1)
+                              tensor ... tensor C^2.     (2)
+
+Only S matters, not the nonzero eigenvalues of h.
+
+If dim(S)=0, there is no zero vector at N=2. If dim(S)>=3,
+rank(h)<=1<2, so the product-extension proof in
+`boundary_rank_obstruction.md` supplies a zero vector at every length.
+Alternatively a single homogeneous quadratic equation <w|a,a>=0 has a
+nonzero solution over C, giving the repeated product a^tensor N.
+
+If dim(S)=1, write S=span(v). An extension to three sites requires
+v_12 tensor x_3=y_1 tensor v_23 for nonzero vectors x,y. Taking Schmidt
+ranks across site 1 versus sites 2,3 forces v to have rank one. Thus
+v=a tensor b. The same equation then forces a proportional to b. This
+case has the repeated product a^tensor N at all lengths. Otherwise
+G_3=0.
+
+It remains to examine dim(S)=2.
+
+### 2. The product vectors in a two-dimensional two-qubit space
+
+Identify a vector with its 2 by 2 coefficient matrix. Product vectors
+are the zeros of the determinant. On a projective line P(S), determinant
+is a homogeneous quadratic polynomial. There are three cases over C.
+
+(a) It vanishes identically. Then S is a line entirely of product
+vectors, necessarily a tensor C^2 or C^2 tensor b. To verify the last
+statement, take two independent products a tensor b and c tensor d.
+If both a,c and b,d were independent, their sum would have matrix rank
+two. Hence one pair is dependent. The subspace contains a tensor a or
+b tensor b and is FF at all lengths.
+
+(b) There are two distinct product directions. Write
+
+    S=span(a_0 tensor b_0, a_1 tensor b_1).               (3)
+
+Both a_0,a_1 and b_0,b_1 are bases, since otherwise case (a) applies.
+For a three-site vector in S_12 tensor C^2, expand the third site in
+the b basis:
+
+    psi=sum_(i,j) c_ij a_i tensor b_i tensor b_j.
+
+Membership in C^2 tensor S_23 says that the slice with last vector b_j
+has middle factor a_j. Independence of the first-site a_i then gives
+
+    c_ij !=0 only if b_i is proportional to a_j.          (4)
+
+Define a directed graph on the two bond labels, with edge i->j if
+b_i is proportional to a_j. Each vertex has at most one incoming and
+one outgoing edge. Equation (4), iterated along the chain, says that
+G_N is spanned by the product vectors associated to graph paths of
+N-1 bond labels. The iteration is valid because distinct paths have
+distinct first labels and hence independent first-site factors.
+
+If a directed cycle exists, following it gives a product ground state
+at every open length. If no cycle exists, a path visits at most the two
+vertices. Therefore G_N=0 for N>=4. In particular G_4 nonzero forces
+FF at every length.
+
+(c) There is one double product direction. The line is tangent to the
+rank-one quadric. It can be written
+
+    S=span(a tensor b, a tensor d+c tensor b),            (5)
+
+where a,c and b,d are bases. To see the normal form, transform the
+unique product vector to |00>. For a second matrix M, the determinant
+of x|00>+y M has a double root at y=0 only if M_11=0. Subtract its
+00 entry, leaving the nonzero 01 and 10 entries in (5). Neither can
+vanish, because the line is not all-product.
+
+If b is proportional to a, the repeated product a^tensor N works at
+all lengths. Otherwise any element of S_12 tensor C^2 is
+
+    psi=a tensor b tensor x
+         +(a tensor d+c tensor b) tensor y.
+
+Its slice with first vector c is b tensor y. If psi also satisfies
+the 23 constraint, this product belongs to S. The only nonzero product
+direction in S is a tensor b, and b is not proportional to a, so y=0.
+The first-site a slice now forces b tensor x in S, giving x=0. Thus
+G_3=0.
+
+Every case proves the upper bound K_FF(2)<=4.
+
+### 3. Sharpness and a general lower bound
+
+Let |+>=(|0>+|1>)/sqrt(2), and use the explicit rank-two projector
+
+    h=I-|0,1><0,1|-|1,+><1,+|.                           (6)
+
+The two subtracted vectors are orthonormal. Its allowed-space graph
+is the single path from |0,1> to |1,+>. The three-site ground space is
+span(|0,1,+>), but G_4=0. Hence K_FF(2)>3, proving (1).
+
+The same idea works at any q>=2. Choose v=q^(-1/2) sum_j |j>, and let
+S be the span of the q orthonormal products
+
+    |0,1>, |1,2>, ..., |q-2,q-1>, |q-1,v>.
+
+Put h=I-P_S. The left factors are a basis, and the right factors
+|1>,...,|q-1>,v are another basis. The graph proof of case (b) applies
+unchanged. Its only maximal path has q bond labels, so
+
+    G_(q+1)=span(|0,1,...,q-1,v>),  G_(q+2)=0.
+
+Consequently the general finite-witness length obeys
+
+    K_FF(q)>=q+2, q>=2.                                  (7)
+
+The nonorthogonal final local letter matters. A directed graph built
+only from an orthonormal physical alphabet has a smaller acyclic path
+bound. There is no contradiction, since S here is a quantum subspace.
+No matching upper bound for q>=3 is proved.
+
+### 4. Scope for the block construction
+
+This makes the earlier noetherian obstruction explicit for qubits. A
+longest-FF-segment selector using only a uniform positive qubit bond
+can select at most three occupied sites. Boundary penalties and
+frustrated kinetic selectors remain outside the theorem. Even within
+this subclass, (1) is a statement about exact zero modes, not about
+central charge or conformal onset lengths of arbitrary chains.
+
+
+## 22. A uniform graded-swap core with controlled ports
+
+Status: exact finite-dimensional construction and port formulas, proved
+below. Its large-cell Clifford approximation is controlled. No finite-
+coupling CFT or counterexample is asserted.
+
+### 1. Repeated bond and complete ground code
+
+Take q=n+1 local states, one even vacuum |0> and n odd colors |a>,
+a=1,...,n. Define the graded swap and the positive bond
+
+    P_g|a,b>=(-1)^(p(a)p(b))|b,a>,   h0=(I-P_g)/2,
+    p(0)=0, p(a)=1 for a>0.                               (1)
+
+On an open chain of N>=n sites, the complete zero space of the repeated
+h0 has dimension 2^n. Label its orthonormal basis by subsets S of colors.
+For r=|S|, its vector |S;N> is the signed equal superposition of every
+configuration with precisely these r colors and N-r zeros. The sign is
+the parity of the spatial permutation of the occupied colors relative
+to their increasing order. Every amplitude has magnitude
+
+    [N!/(N-r)!]^(-1/2).                                   (2)
+
+Proof of completeness. Each adjacent graded swap must have eigenvalue
++1 in a zero vector. These swaps move any configuration with distinct
+colors into any other configuration with the same color set. They fix
+all relative coefficients to (2). A repeated odd color can be brought
+to adjacent equal letters, where the graded swap is -1. Its coefficient
+must vanish. There are no further constraints on the distinct-color
+sets, and (2) explicitly satisfies every swap. Thus there is one ground
+vector per subset. QED.
+
+This is a genuinely uniform, nearest-neighbor, positive parent. Its
+rank count includes n forbidden identical-color pairs, n vacuum-color
+antisymmetric pairs, and n(n-1)/2 color-color symmetric pairs. Hence
+
+    rank(h0)=n(n+3)/2.                                   (3)
+
+### 2. Both endpoint maps
+
+Identify the logical subset basis with the Fock space of n fermions.
+Let f_a remove color a with the sign (-1)^(number of smaller colors),
+let R=sum_a f_a^dagger f_a, and P=(-1)^R. Define
+
+    g_N(R)=sqrt(N-R)/N,
+    a_a=g_N(R) f_a,
+    A_(a,x)=a_a+a_a^dagger,
+    A_(a,y)=-i(a_a-a_a^dagger).                            (4)
+
+The physical port operators are
+
+    X_a=|0><a|+|a><0|,
+    Y_a=-i|0><a|+i|a><0|.                                (5)
+
+Their compressions at the first site are A_(a,x), A_(a,y).
+To check the coefficient, remove a from a state with r occupied colors.
+The surviving configurations with a fixed at site 1 number
+(N-1)!/(N-r)!. Dividing by both normalizations from (2) gives
+
+    [(N-1)!/(N-r)!] /
+       sqrt([N!/(N-r)!][N!/(N-r+1)!])
+      = sqrt(N-r+1)/N.                                  (6)
+
+The fermionic sign is the number of colors smaller than a. This is
+just the action of g_N(R)f_a, since R is evaluated after removal.
+Creation follows by Hermitian conjugation.
+
+At the last site the removal sign counts the colors greater than a,
+so it differs by (-1)^(r-1). The two last-site compressions are
+
+    B_(a,x)=-i A_(a,y) P,
+    B_(a,y)= i A_(a,x) P.                                (7)
+
+Consequently the physical inter-cell bond
+
+    v=sum_a [Y_(a,right) tensor X_(a,left)
+             -X_(a,right) tensor Y_(a,left)]              (8)
+
+projects to sum_mu i A_mu P tensor A_mu, with the intended common
+fermion-parity dressing. These are exact endpoint formulas, but for
+n>1 the A_mu are not exact scaled Clifford matrices.
+
+### 3. Controlled approximation and why it cannot violate c-d
+
+Let Gamma_(a,x)=f_a+f_a^dagger and
+Gamma_(a,y)=-i(f_a-f_a^dagger). For N>=n,
+
+    ||sqrt(N) A_mu-Gamma_mu||
+       = 1-sqrt(1-(n-1)/N).                              (9)
+
+Each A_mu acts in independent 2 by 2 blocks joining a subset not
+containing a to that subset with a added. The normalized amplitude in
+such a block is sqrt(1-r_other/N), where 0<=r_other<=n-1. This proves
+the equality in (9). For n=1 the compressions are exact at every N.
+
+Thus this core realizes 2n approximate Clifford channels, with error
+O(n/N), and both ports have the desired parity relation. But its free
+first-order target has only c_target=n=q-1, before paying any selector
+cost. The code dimension 2^n itself rules out more than 2n even Clifford
+generators. It cannot access the proposed window above q-1.
+
+Allowing p>=1 even colors and n odd colors in the same graded-swap
+construction makes the code dimension grow with N. It does not repair
+the exact-channel budget. The complete ground space contains the
+constant product of any one even color. The boundary-Schmidt theorem
+then bounds every even exact Clifford family by 2q-2 channels, with
+q=p+n. Its normalized Gram obstruction also prevents arbitrarily
+accurate larger families at fixed channel count on that entire code.
+
+Removing all even colors instead gives the exterior power of C^q.
+It has no zero states beyond N=q and so does not make arbitrarily long
+cores. Selecting a proper subspace of any of these codes by new terms
+is a different construction; neither this exclusion nor the exact
+endpoint formulas establish what those terms can achieve.
+
+### 4. Checks and the remaining issue
+
+`graded_core_checks.py` constructs the physical code, repeated bond,
+and endpoint matrices at (n,N)=(1,3),(2,3),(2,5),(3,4),(3,5). It verifies
+the code residual, both ports, the error formula (9), and the physical
+bond rank. At sizes with Hilbert dimension at most 256 it also checks
+the complete ground multiplicity by dense diagonalization.
+
+This is a useful local replacement for an abstract code in the vacancy
+construction, but it only saturates the unblocked channel budget. It
+therefore stalls as a counterexample route. A useful high-channel core
+must avoid the product vectors of this family and have a larger logical
+space, while retaining a repeated local parent and controlled ports.
+
+
+## 23. Bond-rank bounds for microscopic current sectors
+
+Status: proved finite-dimensional symmetry statement. The central-charge
+corollary assumes the stated CFT current correspondence and Sugawara
+completeness. Neutral or emergent sectors remain uncontrolled.
+
+### 1. Canonical connected bond
+
+Remove the scalar and one-site terms from a Hermitian bond and write
+
+    H=sum_i b_i + sum_i v_(i,i+1),
+    tr_left(v)=tr_right(v)=0,
+    v=sum_(a=1)^r s_a A_a tensor B_a,  s_a>0.              (1)
+
+The A_a and B_a are orthonormal traceless Hermitian operators for the
+Hilbert-Schmidt inner product. This is a REAL singular value decomposition
+of the Hermitian coefficient matrix. The positive s_a are the connected
+operator Schmidt singular values; r is the connected Schmidt rank r(h).
+Let n_1,...,n_t be the multiplicities of its distinct singular values.
+
+Suppose a compact connected on-site group G, acting by U(g) on C^d,
+preserves b and v under simultaneous conjugation. This holds
+automatically if the uniform on-site action preserves the full ring
+Hamiltonian for every length at least three. After centering as in (1),
+one-site and distinct two-site traceless supports are orthogonal in
+Hilbert-Schmidt inner product, so their changes under conjugation
+cannot cancel. Let g be its Lie algebra after removing scalar generators.
+
+There is an ideal k of g such that every generator in k commutes with
+b and with every A_a and B_a individually. Moreover
+
+    g/k embeds in direct_sum_j so(n_j).                  (2)
+
+In particular
+
+    dim(g/k) <= sum_j n_j(n_j-1)/2 <= r(r-1)/2.            (3)
+
+These are statements about the interaction channels, not about the full
+on-site symmetry dimension. The kernel can be large.
+
+### 2. Proof
+
+The real left Schmidt space span_R{A_a} is intrinsic. It is the image
+of partial contractions of v on the right. Since simultaneous on-site
+conjugation preserves v, conjugation preserves this space, and likewise
+the right space. Unitary conjugation preserves the Hilbert-Schmidt
+inner product, so its matrices O_L(g),O_R(g) are orthogonal. They lie
+in SO(r) for connected G. Invariance of v is
+
+    O_L S O_R^T=S,   S=diag(s_1,...,s_r).                 (4)
+
+Multiplying (4) by its transpose gives
+
+    O_L S^2 O_L^T=S^2.
+
+Thus O_L preserves each eigenspace of S^2, and its infinitesimal action
+lies in the direct sum of so(n_j). Since S is positive, O_L commutes
+with S itself. Equation (4) then gives O_R=O_L in the paired Schmidt
+bases. In particular their infinitesimal kernels coincide.
+
+Let k be this common kernel. A generator in k commutes with every
+Schmidt operator on each side. It also commutes with b by hypothesis.
+At any site i its local generator Q_i therefore satisfies
+
+    [H,Q_i]=0                                            (5)
+
+on every ring. The kernel is an ideal, and the quotient representation
+is faithful by its definition. This proves (2) and (3).
+
+The use of singular-value multiplicities is material. A connected bond
+with pairwise distinct singular values has no nontrivial continuous
+action on its interaction space, even if there are local conserved
+on-site observables. Degeneracies permit the continuous rotations.
+
+### 3. Conditional central-charge and torus bounds
+
+Assume the following infrared input.
+
+(i) The relevant microscopic charge densities have scaling limits
+whose nonzero dynamical components supply the independent affine
+currents of a unitary CFT, with nonzero finite velocities.
+
+(ii) These currents exhaust the stress tensor, possibly as independent
+factors with different velocities. There is no positive-charge coset.
+
+A generator in k cannot supply a nonzero dynamical affine current under
+(i). Equation (5) says its density is stationary at each individual
+lattice site, so its dynamical spectral measure is supported at omega=0
+at every spatial momentum. A finite-velocity affine current has
+nonzero-momentum spectral weight at omega=v|k|. This weight cannot be
+the scaling limit of that identically stationary density. Removing
+these inactive generators, the joint current algebra is an image of
+g/k and also an image of the microscopic algebra in pu(d).
+
+For a compact reductive current algebra l, the supplied Sugawara input is
+
+    c_Sug=rank(abelian part)
+           +sum_simple k_a dim(l_a)/(k_a+h_a^vee)
+          <=dim(l).                                     (6)
+
+The inequality is strict on any nonzero simple factor. Assumption (ii)
+sets c=c_Sug. Therefore
+
+    c <= min[d^2-1, sum_j n_j(n_j-1)/2].                  (7)
+
+No affine-level bound is used. For r<=3 this proves c<=r within this
+current-complete class. For r=1 it gives c=0, so any critical rank-one
+chain with positive c must have neutral or emergent sectors outside
+these hypotheses. This is consistent with the conditional rank-one
+construction in RESULT.md Section 6, whose propagating U(1)s are
+emergent rather than exact microscopic charge-transfer symmetries.
+
+There is a stronger conclusion if the infrared is Gaussian and all its
+bosons are resolved by commuting microscopic on-site charges. The
+abelian image in (2) has dimension at most the rank of its compact
+ambient Lie algebra. Commuting real skew-symmetric matrices can be
+simultaneously put into independent 2-plane rotation blocks, so
+
+    c <= min[d-1, sum_j floor(n_j/2)] <= floor(r/2).       (8)
+
+The identification c=number of independent resolved currents is the
+same Gaussian-current completeness hypothesis used in C5/C7. Equation
+(8) controls these modes by the actual bond rank, and holds regardless
+of perturbative order or cell size when applied at the microscopic
+site level. A global on-site symmetry alone is insufficient, because
+it need not resolve every infrared sector.
+
+### 4. Examples and limits
+
+For an XX qubit bond, its two equal singular values give n_1=2 and
+c<=1 under current completeness. For XXZ with three nonzero channels
+and unequal transverse and longitudinal strengths in magnitude, the
+multiplicities are 2 and 1, again giving c<=1. This includes arbitrary
+levels in principle; the active algebra is abelian.
+
+For an isotropic Heisenberg bond, all three singular values coincide,
+so (7) gives c<3 for an SU(2) current-complete theory. It does not derive
+the sharper spin-1/2 bound c<=1 or an affine-level ceiling.
+
+For two decoupled XX chains in one d=4 site with unequal strengths,
+r=4 and the multiplicities are 2,2. Both (7) and (8) give c<=2, matching
+the two charge modes. At equal strengths the dimension bound becomes
+6, while the torus bound remains 2.
+
+An Ising critical chain is not a contradiction at rank one. Its c=1/2
+sector has no microscopic continuous affine currents. A neutral coset
+or emergent currents remain the missing part of any general rank bound.
+No conclusion about those sectors is drawn here.
+
+`schmidt_symmetry_checks.py` solves the full on-site infinitesimal
+symmetry equations for explicit bonds, computes their induced action
+on the actual Schmidt space, and checks dimensions and singular-value
+multiplicities. These are algebraic checks, not measurements of c.
+
+
+## 24. Fourth-run verification, limitations, and next steps
+
+This run remains nonconclusive. It followed three distinct directions
+beyond their first partial results: local-code obstructions, an explicit
+higher-rank frustration-free construction, and microscopic current
+bounds. The constructive graded-swap route stalls at c_target=q-1;
+the other results exclude restricted mechanisms or require current
+completeness. None controls every neutral infrared sector.
+
+Reproduce the new checks from this folder with
+
+```sh
+OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python3 boundary_ff_checks.py
+OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python3 graded_core_checks.py
+OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python3 schmidt_symmetry_checks.py
+python3 -m py_compile boundary_ff_checks.py graded_core_checks.py schmidt_symmetry_checks.py
+```
+
+Each numerical script writes its correspondingly named JSON file.
+No previous C8 numerical suite was rerun merely for orientation.
+
+The boundary checks use q=2,3,4, N=4 low-rank parents. The largest
+compressed-extremum error is 2.67e-15 and the product-state residual is
+below 2.77e-16. The real-image rank formula is checked for every s at
+q=2,3,4,5. Six types of two-dimensional qubit allowed spaces, each in
+three common invertible physical bases, have the predicted ground
+multiplicities at N=3,4,5. The sharp-witness family is checked for
+q=2,3,4 up through dimension 4096. At the first frustrated lengths
+N=4,5,6 its lowest energies are respectively 0.0761204675,
+0.2218619272, and 0.3169872981. These positive finite-size values
+support the explicit kernel proof, not a continuum conclusion.
+
+The graded-core checks cover (n,N)=(1,3),(2,3),(2,5),(3,4),(3,5), up
+to physical dimension 1024. The endpoint formula errors are below
+2.36e-16, code isometry errors below 1.40e-15, and every reported
+normalized Clifford error agrees with the exact formula. Complete
+spectra through dimension 256 confirm the 2^n ground multiplicity.
+The symmetry checks cover seven models, including the critical Ising
+algebra as a neutral-sector control. Their largest Schmidt-space
+invariance residual is below 3.93e-16. All three scripts compiled.
+
+The proofs were audited for the hypotheses that matter: complete
+versus selected ground spaces, open versus periodic chains, real
+versus complex dimensions, exact versus approximate Clifford
+relations, and microscopic versus emergent currents. The earlier
+Choi code has full boundary Schmidt rank for every code vector, so
+the new obstruction does not contradict its existence. No independent
+referee or subagent check was performed. No network, cluster job,
+commit, push, or change outside this folder was made.
+
+The next steps, ranked, are:
+
+1. Construct a high-channel repeated-bond core that avoids the new
+   exclusions. For an exact first-order family with m channels, every
+   code vector needs boundary Schmidt rank at least
+   ceil(q-sqrt(q^2-m)) at both ports. A noncommuting, higher-rank FF
+   history code with boundary initialization remains possible, but
+   no explicit uniform implementation with its illegal-sector gap
+   has been supplied. Approximate codes must beat the normalized
+   Gram obstruction, not only an absolute error tolerance.
+2. If such a core is found, select the occupied-number sectors in
+   both mobile cell lengths and control the resulting coupled
+   length/payload theory at finite coupling. The graded-swap code
+   and chemical-potential-only vacancy model do not solve this.
+3. Separately, establish the two thermodynamic and infrared premises
+   for the explicit rank-one, d=20992 construction of Section 6.
+   The new symmetry bound explains why an emergent-current argument
+   is necessary there; it supplies no stability theorem.
+4. For an upper bound in the full class, control neutral or emergent
+   stress-tensor sectors, or establish uniform conformal visibility.
+   The Schmidt-multiplicity bound sharpens the existing microscopic
+   current budget without addressing this remaining sector.
+5. Determine K_FF(q) for q>=3 if pursuing longest-FF-segment selectors.
+   The q+2 lower bound is explicit, but neither its sharpness nor a
+   useful upper bound at higher q has been established. This is a
+   restricted algebraic question, not a substitute for a CFT bound.

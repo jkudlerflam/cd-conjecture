@@ -282,3 +282,9 @@ Net. Whether c is bounded at fixed d is now a sharp dichotomy. A bound needs c-m
 - **Padding transport.** Padding a two-port code with vacuum symbols lets the logical state move coherently with the markers (checked by Astra to 5 × 10⁻¹⁶ on a small code). An exact cat-padded code cannot be the sole ground space of a nearest-neighbour parent. A vacancy-hopping repair works for any frustration-free core with a uniform positive bond (checked on a three-qubit core).
 - **Finite-witness theorem.** By the Hilbert basis theorem, for each q there is a finite K_FF(q) such that a uniform positive nearest-neighbour bond with a zero-energy open-chain state at length K_FF(q) has one at every length. Selecting arbitrarily long cells as the longest frustration-free segment is therefore impossible at fixed q, which gives c_target < K_FF(q) log₂ q for that particular selection route. It does not cover C7's kinetic-energy selection or boundary computations.
 - **Still missing.** A high-channel frustration-free uniform core, selection of the right occupation-number sectors on a full ring, and control of the coupled length–payload theory at finite coupling.
+
+### 9.8 Update: Astra C8, autonomous run 4 (`codex/work_C8/` §20–24, unchecked)
+- **Boundary Schmidt-rank obstruction.** If a cell's code contains even one product vector across the boundary, the first-order Clifford construction is capped at c_target ≤ q − 1. Viable codes must therefore be entangled throughout. The earlier Choi code has full boundary rank, checked analytically.
+- **Sharp witness length.** K_FF(2) = 4 for the frustration-free selection route (§9.7).
+- **Conditional bound.** c ≤ ⌊r(h)/2⌋ for Gaussian modes resolved by commuting microscopic charges.
+- An explicit graded-swap construction reaches only the existing channel budget. The verdict remains nonconclusive.

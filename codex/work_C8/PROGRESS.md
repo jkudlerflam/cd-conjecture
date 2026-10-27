@@ -1,75 +1,82 @@
 # C8 progress
 
-2026-10-27. Third run finished, nonconclusive. The complete report is `RESULT.md`,
-with new proofs in Sections 15-19. All writes stayed in this folder.
+2026-10-27. Fourth run finished, nonconclusive. The complete report is
+`RESULT.md`; new proofs are in Sections 20-24 and the four supporting
+notes listed below. All writes stayed in this folder.
 
 ## Current best answer and restart point
 
-There is still no verified counterexample, no whole-class c bound, and no
-fixed-d construction with unbounded c. Do not redo the earlier joint-code,
-second-order, exact-encoding, or frozen-ring calculations. Their proofs
-remain in RESULT.md and the supporting notes.
+No verified counterexample, whole-class bound, or fixed-d unbounded-c
+construction has been obtained. Do not redo the previous joint-code,
+second-order, exact-encoding, frozen-ring, vacancy, or selector work.
+Their proofs and limitations remain in RESULT.md.
 
-New proved work in this run:
+New proved results in this run:
 
-1. `equal_hopping_selector.md`: the d=4 mobile selector at equal hopping
-   t=u=a is exactly a free hard-core domain-wall chain with even wall
-   number and two boundary twists. K>2a+|mu| excludes every illegal
-   sector by an L-independent gap. For |mu|<4a, standard free-fermion
-   continuum input gives c=1 on all ring lengths. There is no payload.
-2. `padding_transport.md`: any two-port code can be padded to two lengths
-   using one extra vacancy symbol, with identical endpoint maps and
-   projected transport I/4. This is only an abstract code construction.
-3. `vacancy_parent.md`: the exact two-placement cat cannot be the sole
-   local ground code. A repeated-bond vacancy model instead preserves
-   ANY uniform frustration-free core code exactly in fixed occupied-
-   number sectors, with coherent scalar projected transport. Its two
-   endpoint strengths approach the same value but differ at finite
-   hopping. Its small tunneling gap is essential to scale accounting.
-4. `finite_ff_witness.md`: Hilbert basis theorem plus positivity gives a
-   finite K_FF(q) detecting uniform open-chain frustration freeness.
-   Selecting the longest frustration-free bulk core cannot give
-   unbounded length at fixed q. No bound on general CFTs follows.
+1. `boundary_rank_obstruction.md`: a code vector of boundary Schmidt
+   rank s limits any exact scaled Clifford family to m<=2qs-s^2.
+   A single product vector therefore forces c_target<=q-1 for even
+   m. Rank(h0)<q positive uniform parents have arbitrary product
+   extensions, which give a stronger exact and approximate joint-port
+   obstruction. Commuting FF parents and the specified injective
+   2-site MPS edge-code class also fail as high-channel completions.
+   The earlier Choi code evades the product-state premise, since all
+   of its code vectors have full boundary Schmidt rank.
+2. `qubit_ff_witness.md`: K_FF(2)=4, sharply. The explicit projector
+   I-|01><01|-|1+><1+| is FF on three sites and not on four. A q-state
+   generalization proves K_FF(q)>=q+2 for q>=2. This concerns uniform
+   positive open chains without boundary terms, not general CFTs.
+3. `graded_core.md`: h0=(I-P_graded)/2 on q=n+1 states has a complete
+   2^n-dimensional ground code for N>=n, exact formulas at both ports,
+   and normalized Clifford error 1-sqrt(1-(n-1)/N). It supplies only
+   c_target=n=q-1, before selector cost. Adding even colors leaves a
+   product vector and cannot produce more exact channels on the
+   complete code. This constructive route stalls as a violation.
+4. `symmetry_rank_bound.md`: the active image of an on-site Lie algebra
+   embeds in direct_sum so(n_j), with n_j the connected bond's Schmidt
+   singular-value multiplicities. Current completeness gives
+   c<=min(d^2-1,sum_j n_j(n_j-1)/2). Gaussian modes resolved by commuting
+   on-site charges satisfy c<=sum_j floor(n_j/2)<=floor(r(h)/2).
+   Neutral and emergent sectors remain outside the assumptions.
 
-Latest reproducible checks, all with single-thread BLAS:
+Latest checks, with single-thread BLAS:
 
-- `python3 equal_hopping_selector.py`: full spectra L=5..9, every illegal
-  pattern L=4,5,6, physical entropies L=8,12,16,20. The L=20 interval
-  estimator gives 1.003981 and the 16-to-20 half-chain estimator 0.992700.
-  The independent Casimir fit L=40..160 gives 0.999999704. Entropies equal
-  the XX control plus log(2), as proved.
-- `python3 padding_transport.py`: both code lengths, both ports, I/4
-  transport and four length-pair bonds pass below 5e-16.
-- `python3 vacancy_parent.py`: a three-qubit symmetric core (D=4),
-  physical lengths 4 and 5, three hopping strengths. Code/port/transport
-  errors are below 1e-15, ground splittings below 3e-15. The initial
-  unconstrained eigensolver failed a port tolerance at a tiny tunneling
-  gap; enforcing the proved even-reflection sector corrected it.
-- Python compilation passed for all three new scripts. Earlier checks
-  were not rerun. No full large-c microscopic CFT computation was done.
+- `python3 boundary_ff_checks.py`: low-rank product extensions and
+  compressed spectral extrema at q=2,3,4, N=4, errors below 3e-15;
+  real image dimensions through q=5; six qubit line families at
+  N=3,4,5 in three bases; explicit sharp-witness spectra at q=2,3,4
+  up through dimension 4096. All pass.
+- `python3 graded_core_checks.py`: five (n,N) pairs through physical
+  dimension 1024, port errors below 3e-16 and isometry below 1.5e-15;
+  complete ground multiplicities through dimension 256. All pass.
+- `python3 schmidt_symmetry_checks.py`: seven explicit models, including
+  Ising, XX, XXZ, XYZ, Heisenberg, and two XX chains. Invariance residuals
+  below 4e-16. All pass. These are algebraic tests, not CFT estimates.
+- All three new scripts compile. Earlier suites were not rerun. No new
+  microscopic CFT, independent referee, network or cluster computation.
 
 Open problems, ranked:
 
-1. A high-channel uniform core with controlled endpoint maps. For the
-   new local vacancy extension, it must be frustration free. The prior
-   arbitrary Choi parent does not qualify.
-2. Occupied-number selection in both cell lengths. A chemical potential
-   alone fails for the explicit ferromagnetic core, and Section 18
-   restricts the longest-frustration-free-core mechanism. Boundary or
-   frustrated selection remains possible.
-3. Volume-uniform effective theory and infrared stability including
-   length-dependent port strengths and ring twists. The exact equal-
-   hopping selector is not a proof for the small-hopping long-cell phase.
-4. Separately, prove the thermodynamic and infrared premises for the
-   rank-one d=20992 chain in RESULT.md Section 6.
-5. For a bound, control neutral sectors or conformal onset without a
-   lower-gap or visibility assumption. None of the new restricted
-   theorems does that.
+1. A high-channel uniform core with controlled endpoint maps, now known
+   to require entangled boundaries for EVERY code vector. For the
+   existing vacancy extension it must be FF. High-rank noncommuting
+   history codes with boundary initialization remain possible. The
+   finite-history interface in the programmable-cell contribution
+   still does not establish its uniform microscopic embedding.
+2. Occupied-number selection at both cell lengths, then volume-uniform
+   infrared control of the coupled length/payload system. The new
+   graded core does not beat the unblocked channel budget.
+3. The thermodynamic effective theory and infrared-stability premises
+   for the rank-one d=20992 chain in RESULT.md Section 6. Its currents
+   must be emergent, consistent with the new symmetry theorem.
+4. A bound on neutral/emergent sectors or conformal onset without a
+   visibility assumption. The new current bound does not do this.
+5. K_FF(q) for q>=3, if pursuing the longest-FF-core selection mechanism.
+   The new lower bound q+2 need not be sharp.
 
-Next action: work on item 1 or 2. A finite-history port-idle interface is
-available in `../../contrib/programmable_cell/astra_P1/RESULT.md`, but it
-explicitly does NOT prove the translation-invariant embedding claimed
-as routine in parts of its parent README. Do not silently assume it.
+Next action: pursue item 1 with the new necessary conditions, or item 3.
+Do not rescan low-rank, commuting, graded-ferromagnetic, or standard
+injective two-site MPS parents as candidate exact high-channel cores.
 
 The remainder is the chronological record. Its initial task list has been superseded by the ranking above.
 
@@ -219,3 +226,104 @@ Thus selecting an arbitrarily long core as the LONGEST frustration-free open seg
 The alternative routes have now been followed beyond the first partial results. The exact selector works, the exact cat parent fails, a finite-hopping local replacement works under a frustration-free-core hypothesis, and its number-sector selection and general high-channel core remain unresolved. Next is to integrate the new proofs and check the final report without promoting these restricted results to a conclusion.
 
 Final audit of run 3 completed. RESULT.md Sections 15-19 contain every new proof, construction, check and limitation, with a fresh ranked handoff. The largest complete-spectrum error is 1.96e-14 and the largest entropy-identity error is 4.41e-13. Python compilation passed for all three new scripts. The restricted frustration-free witness argument was checked for its positivity, nesting and boundary-term hypotheses. No conclusive outcome has been reached. Only this folder was modified; no commit, push, network, cluster computation or independent referee check was performed.
+
+## Fourth run, continuation from the third-run handoff
+
+Read the saved progress and requested context. No newer contribution
+supplies the missing repeated-bond embedding or finite-coupling IR theorem.
+All work remains confined to this folder, with no network or subagents.
+
+Substantive step 18 completed analytically.
+
+`boundary_rank_obstruction.md` proves a new necessary condition for ANY
+scaled Clifford code. If even one code vector has Schmidt rank s across
+a q-dimensional active port, the number of channels satisfies
+m<=2qs-s^2. In particular, one product vector forces even m<=2q-2 and
+c_target<=q-1, closing the first-order violation window for such codes.
+The proof counts real orthogonal vectors Gamma_a psi, not operator
+Schmidt rank. Small nonzero compression amplitudes do not avoid it.
+
+For a positive uniform bond of matrix rank r<q, every chosen endpoint
+vector extends to a product ground state at every open length. Exact
+involution compressions then preserve the entire ground code and obey
+the physical Clifford dimension bound. Joint parity-dressed ports are
+impossible. Quantitative Gram and leakage inequalities show that small
+relative Clifford errors do not fix this subclass. This does not apply
+to a selected subcode or to extra boundary constraints.
+
+Next: check these statements numerically, classify the q=2 finite FF
+witness explicitly, and test a higher-rank uniform quantum core to locate
+how it evades the stronger low-rank obstruction. No whole-class conclusion.
+
+Substantive step 19 completed.
+
+`qubit_ff_witness.md` proves the sharp K_FF(2)=4. The proof classifies the
+product-vector intersection of a two-dimensional two-qubit allowed
+space into a secant, tangent, or all-product projective line. The explicit
+positive bond h=I-|01><01|-|1+><1+| has a one-dimensional three-site
+kernel and no four-site kernel. Its q-state extension proves
+K_FF(q)>=q+2 for all q>=2. No upper bound at q>=3 is claimed.
+
+`boundary_ff_checks.py` passes. Product-extension and compressed spectral
+extrema checks at q=2,3,4 and N=4 have errors below 3e-15. All real-image
+dimensions match 2qs-s^2. Eigh checks cover six qubit line types and common
+invertible changes of physical basis at N=3,4,5. Sparse checks verify the
+sharp-witness examples at q=2,3,4 up to physical dimension 4096. These
+checks validate finite-dimensional formulas, not a CFT claim.
+
+Next: test a natural higher-rank graded-ferromagnetic core and turn to a
+symmetry-based rank bound if its channels only saturate the budget. The
+previous universal conclusions remain open.
+
+Substantive step 20 completed, constructive higher-rank test.
+
+`graded_core.md` gives a genuine repeated positive NN bond
+h0=(I-P_graded)/2 on q=n+1 states. Its complete N>=n ground code is the
+2^n-dimensional signed subset space. Both endpoint maps are derived
+exactly, including parity dressing. The normalized Clifford error is
+1-sqrt(1-(n-1)/N). Thus long cores approximate 2n channels, but only
+c_target=n=q-1, before selector cost. Adding even colors cannot bypass
+the product-vector obstruction on the complete code. This natural
+higher-rank construction therefore stalls as a violation route.
+
+`graded_core_checks.py` checks five (n,N) pairs up to physical dimension
+1024. Both ports and the error formula agree below 3e-16, and code
+isometry below 1.5e-15. Ground multiplicities are checked by full spectra
+through dimension 256. These are code tests, not CFT measurements.
+
+Substantive step 21 completed, a different conditional bound.
+
+`symmetry_rank_bound.md` proves that the part of a microscopic on-site
+Lie algebra acting on the connected bond embeds into direct_sum so(n_j),
+where n_j are the multiplicities of the bond's Schmidt singular values.
+Its kernel consists of independently conserved single-site generators.
+If microscopic dynamical currents exhaust the IR stress tensor, this
+gives c<=min(d^2-1,sum_j n_j(n_j-1)/2). For Gaussian modes resolved by
+commuting on-site charges it improves to c<=sum_j floor(n_j/2)<=floor(r/2).
+The proof is independent of perturbative order. It leaves neutral and
+emergent current sectors open, so is not a general proof of c<=r(h).
+
+`schmidt_symmetry_checks.py` verifies the induced algebras and kernel
+for Ising, XX, XXZ, XYZ, Heisenberg, and two independent XX chains.
+The largest invariance residual is below 4e-16.
+
+Also added two short parent exclusions to `boundary_rank_obstruction.md`.
+Commuting FF projectors give commuting compressed disjoint-endpoint
+algebras. A standard complete injective MPS edge code with a nonzero
+2-site parent has D_virtual<=q-1 and its even Clifford target obeys
+c_target<=q-1 by dimension and divisibility. High-rank noncommuting,
+non-MPS cores with entangled boundaries remain possible.
+
+Next: audit the new finite-dimensional proofs and their hypotheses,
+incorporate them into RESULT.md, and rank the remaining construction
+and neutral-sector problems. No whole-class conclusion has been reached.
+
+Final audit of run 4 completed. RESULT.md Sections 20-24 contain every
+new proof, construction, numerical specification, and ranked next step.
+All three new numerical scripts ran successfully and compiled. The
+later edits only clarified proofs and synchronized the reports, so no
+unchanged numerical suite was rerun. The commuting-parent and MPS
+corollaries were checked algebraically; no independent referee was used.
+The earlier Choi code was checked analytically against the new Schmidt
+obstruction and has full boundary rank for all its code states.
+The verdict is still nonconclusive. Only this folder was modified.
