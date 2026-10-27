@@ -1,0 +1,13 @@
+cluster_ising L=8 E0=-10.2516617910 m0=[0] t=0.6s
+cluster_ising L=9 E0=-10.3923048454 m0=[0, 3, 6] t=0.0s
+cluster_ising L=10 E0=-12.7849064430 m0=[0] t=0.1s
+cluster_ising L=11 E0=-13.9103055435 m0=[0] t=0.5s
+cluster_ising L=12 E0=-15.6787555785 m0=[0] t=2.3s
+cluster_ising L=13 E0=-16.4714819090 m0=[0] t=0.8s
+cluster_ising L=14 E0=-17.8628085408 m0=[0] t=1.5s
+cluster_ising L=15 E0=-18.4661012231 m0=[0, 5, 10] t=2.6s
+cluster_ising L=16 E0=-20.4045944748 m0=[0] t=4.9s
+cluster_ising L=17 E0=-21.5834373145 m0=[0] t=8.9s
+cluster_ising L=18 E0=-23.1822198309 m0=[0] t=16.7s
+cluster_ising L=19 E0=-24.1364105590 m0=[0] t=32.2s
+cluster_ising L=20 E0=-25.4909896864 m0=[0] t=73.8s
