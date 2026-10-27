@@ -28,7 +28,7 @@ def leading(qp,qm):
  return K,M,chiral,pairs
 
 if __name__=='__main__':
- for m in range(1,7):
+ for m in range(1,9):
   K,M,C,pairs=leading(1,m); pd={p:i for i,p in enumerate(pairs)}; charge=np.zeros(len(pairs))
   for i in range(m):charge[pd[(2*i,2*i+1)]]=1/np.sqrt(m)
   gc=charge@M@charge

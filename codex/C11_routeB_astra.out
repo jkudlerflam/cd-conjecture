@@ -1,0 +1,9 @@
+Written [RESULT.md](<work_C11/RESULT.md>) and [PROGRESS.md](<work_C11/PROGRESS.md>), with derivations and reproducible Python checks.
+
+For the explicit two-port completion studied, r=2 has a stable weak-coupling c=1 region. In the family q₊=1, q₋=m, the leading SU(m) interaction becomes marginally relevant at m=7, r=14. A common filling shift does not remove this instability.
+
+Distinct fillings with exact U(1)ᵐ symmetry provide a conditional repair. Their microscopic implementation remains necessary.
+
+The supplied port compressions do not determine the joint excited-state resolvent, so the result does not establish stability for every mirror realization. The full second-order SW calculation, including adjacent bonds, passed two- and three-cell spectral checks with O(λ³) errors.
+
+[gpt_solve: backend=codex model=gpt-6-astra effort=high transcript=20261027T192622-41013]

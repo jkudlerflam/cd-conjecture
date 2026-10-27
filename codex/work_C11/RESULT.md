@@ -182,7 +182,7 @@ Consequently
  +O(\lambda^2g^6/\Delta^7).}                         \tag{8}
 \]
 
-The constants in the remainder can depend on r and q. The small-dressing expansion requires rg^2/Delta^2 small, not just g/Delta small uniformly in r.
+The constants in the remainder can depend on r and q. The small-dressing expansion requires rg^2/Delta^2 small, not just g/Delta small uniformly in r. Independently, SW requires the local bond norm |lambda| ||sum_a F_a tensor F_a|| to be small compared with the cell excitation gap. The continuum conclusions require the induced interactions to be weak compared with the hopping velocity. All parameter statements below are for each fixed finite r; no uniform large-r perturbation bound is assumed.
 
 ### Simplification for a complete graded port basis
 
@@ -641,6 +641,8 @@ After these exclusions, the nonoscillating weak interactions are forward density
 This is a controlled weak-coupling field-theory argument, not a rigorous many-body spectral proof. For each fixed m it describes an open region. One can choose a fixed distinct positive list of h_i ratios and vary one overall small amplitude within that region. There are m chemical-potential coefficients to implement, but no m equations that must be finely tuned to criticality. The first-order target is now m Dirac bands with distinct fillings, rather than coincident Majorana cones at 0 and pi.
 
 ## 10. Verdict and limitations
+
+Under the stated translation and parity conditions alone, infrared stability of route B is not established. The exact flavor symmetry and virtual-state Hamiltonian matter.
 
 For r=2, a weakly interacting c=1 phase is supported by the explicit calculation. With exact U(1), umklapp is irrelevant near the free point and the interaction is an Abelian Luttinger coupling. No critical tuning is needed within that weak-coupling phase.
 
