@@ -217,3 +217,24 @@ Conditional theorems (F2).
 - Regular TBA: c equals the number of occupied rapidity intervals. So c ≤ d − 1 for nested gl(d) chains with one interval per level and no massless strings. Takhtajan–Babujian violates the no-string hypothesis.
 
 Net. The interacting generalization of "channels through one bond" is "independent on-site densities", and every version is bounded by d − 1 (or log₂ d in the quasi-free case) through the same rank of commuting on-site observables. What no route controls is a neutral sector: Majorana, parafermion or coset modes not resolved by any on-site U(1). Both reports independently name a locality-based budget for neutral stress-tensor sectors as the missing lemma. That is the general conjecture in disguise.
+
+## 9. Campaign of 2026-10-27: bootstrap tools, d = 2, and whether c is bounded at all
+Jonah's framing: any upper bound c ≤ f(d), however weak, would be interesting.
+
+- **Tools** (`tools/`, three Claude reading agents). The entanglement-bootstrap program and McGreevy's notes give velocity-free normalizations, exact multi-scale relations and a finite-dimension no-go template. Every quantity in them that equals c is entropic or controlled by entropies, so each tool gives only c ≲ (onset length of conformal behaviour) × log d. The unexplored lever is building Kac–Moody currents from the wavefunction (2403.18410 §8.3, 2206.01656).
+- **d = 2 classification** (C6, Astra). c ≤ 1 is proved on the free-fermion slice and holds, given standard input, on the U(1) and XYZ slices (codimensions 5, 5 and 6 in the 8-parameter family). The generic residual set (a single Z₂, only antiunitary, or no symmetry) is open. Exact diagonalization up to L = 22 found no consistent c > 1, and two apparent values above 1 were estimator artifacts.
+- **Any bound** (C7, Astra; items marked [checked] were verified by me):
+  - Modular invariance forces at least 1 + (πe/12) c e^{πc/6} states with Δ ≤ c/4 + 2 [checked].
+  - If those states appear on a ring of length at most K(d), then c ≤ 1 + (6/π) K(d) log d [checked]. This is the onset-length problem in spectral form.
+  - c < d² − 1, with no level ceiling, whenever the IR stress tensor is built entirely from currents of on-site symmetries [checked].
+  - An explicit d = 4 translation-invariant NN chain selects any spontaneous period b ≥ 5, with L-independent couplings and a gap for each fixed b. The cell energy is a quantum-walk energy −2t cos(π/b), which evades the classical bound period ≤ d [checked]. With a spectator qubit (d = 8) each cell carries 2^b degenerate states.
+  - First-order coupling between blocks through one microscopic bond cannot produce an SU(N) swap with N > d, by operator Schmidt rank [checked].
+- **Unbounded c** (Claude agent, still running when this was written; draft in `contrib/unbounded_c/`, unchecked).
+  - No construction and no bound exist in the literature. Fixed-coupling translation-invariant constructions give either one global clock with gap 1/poly(L) or blocks that never talk to each other.
+  - Stability of a large-c target is not the obstruction: Narain CFTs with no relevant operators exist for every c ≥ 31 (Siegel–Weil count, reproduced by the agent).
+  - The obstruction is bond rank. First order cannot exceed the connected operator Schmidt rank r(h) ≤ d² − 1. Higher orders can exceed it, but the non-commuting terms come later than dominating diagonal ones. The agent conjectures c ≤ r(h).
+  - That obstruction still leaves a window d − 1 < c ≲ (d² − 1)/2 reachable at FIRST order, because fermion-like channels cost rank 2 per unit of c while ULS costs about c². Exact unit-norm Majorana compressions are limited to log₂ d, but scaled ones are not: for a qubit, three anticommuting Majoranas at scale 1/3 compress completely positively [checked].
+  - The agent has been redirected to build an explicit (d, h) with c > d − 1 in this window. The hurdles are dimension accounting for the selector (about q ≥ 8 spectators per site, so d ≈ 32), a block code whose two boundary sites compress to many anticommuting Majoranas, tuning to criticality, and commensurability on rings.
+- **Still running when this was written:** d = 2 numerics (DMRG at L = 96 and Typhon jobs on the C4-D2 candidates, `contrib/d2_classification/`), the d ≥ 3 counterexample search (`contrib/counterexample_search/`) and the unbounded-c agent. Their folders will be committed when they finish.
+
+Net. Whether c is bounded at fixed d is now a sharp dichotomy. A bound needs c-many conformal levels to appear on rings of size K(d). A counterexample to c–d needs a first-order, rank-efficient coupling between spontaneously formed blocks. The second route currently looks the more promising.
