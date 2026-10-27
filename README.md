@@ -99,6 +99,7 @@ The conjecture is open. We know of no proof and no counterexample within its sco
 | `codex/work_*/` | Code, data and full write-ups of each run |
 | `codex/opus_check_C3/` | Independent check scripts |
 | `contrib/` | New results from collaborators, one folder each |
+| `tools/` | Literature digests of techniques that might apply (entanglement bootstrap, McGreevy's notes) |
 
 ## Provenance
 
