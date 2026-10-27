@@ -1,0 +1,65 @@
+{
+  "cases": [
+    {
+      "d": 2,
+      "N": 3,
+      "local_dimension": 22,
+      "aux_dimension": 11,
+      "energies": [
+        1.0,
+        3.0
+      ],
+      "t": 0.05740991584648074,
+      "a2": -0.8760986328124999,
+      "b2": 0.0032958984375,
+      "diagnostics": {
+        "effect_min_eigenvalue": 0.125,
+        "effect_sum_error": 0.0,
+        "whitening_error": 2.220446049250313e-16,
+        "sum_x_error": 0.0,
+        "h1_norm": 1.5014041402995738e-33,
+        "h2_error_fro": 2.0676795719606757e-15,
+        "unitarity_error_A": 6.631404637323832e-16,
+        "unitarity_error_B": 1.931172069381207e-15,
+        "ferro_h2_error_fro": 2.1390119173736668e-15
+      },
+      "exact": [
+        {
+          "lambda": 0.005,
+          "a_fit": -2.1965079666864377e-05,
+          "b_fit": 8.305813935140726e-08,
+          "b_over_lambda2": 0.0033223255740562905,
+          "fit_residual_fro": 3.0801659495927753e-09,
+          "fit_residual_over_lambda3": 0.0246413275967422,
+          "anti_width": 1.2368613495297059e-09,
+          "sym_width": 3.275861997622734e-09,
+          "mean_splitting": 1.6611718433652583e-07,
+          "anti_swap_mean": -0.9999927414193587,
+          "sym_swap_mean": 0.9999963707096793,
+          "anti_projector_error_fro": 0.004666448534538659,
+          "overlap_min_singular": 0.9999961517085015,
+          "isolation_gap": 0.9971156352649417,
+          "eigen_residual": 6.625036594045124e-15,
+          "raw_eigenvector_gram_error": 2.8173873504904986e-15,
+          "eigenvector_gram_error": 1.4230030575463363e-13,
+          "levels": [
+            -2.2048703473910966e-05,
+            -2.2048245143442373e-05,
+            -2.2047466612561436e-05,
+            -2.188330337493689e-05,
+            -2.1883118252695397e-05,
+            -2.1882676780599222e-05,
+            -2.1881894276892385e-05,
+            -2.18811071557472e-05,
+            -2.1880027512939268e-05
+          ],
+          "second_order_error_fro": 1.87215528750182e-07,
+          "relative_b_error": 0.008018188987745534
+        }
+      ],
+      "runtime_seconds": 0.1890905419131741
+    }
+  ],
+  "total_runtime_seconds": 0.189114167005755,
+  "convention": "H(lambda)=H_A+H_B+lambda*h; canonical/des Cloizeaux H_eff"
+}

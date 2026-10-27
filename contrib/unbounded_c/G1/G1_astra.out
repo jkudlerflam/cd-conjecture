@@ -1,0 +1,10 @@
+Created [gadget.md](<scratch>) and [gadget.py](<scratch>).
+
+The construction achieves antiferromagnetic swap at k = 2 for arbitrarily large N with fixed d ≥ 2. This is the minimum possible order when N > d.
+
+Numerical checks passed for (d,N) = (2,3), (2,4), and (3,4), including the extracted effective Hamiltonian and limiting symmetric/antisymmetric eigenspaces. Splitting scales as λ²; internal multiplet widths scale as λ³.
+
+An exact nearest-neighbor chain realization remains unproved. The report identifies that obstruction separately.
+
+[gpt_solve: backend=codex model=gpt-6-astra effort=high transcript=20261027T163326-84170]
+exit=0
