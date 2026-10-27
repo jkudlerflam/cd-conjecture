@@ -1,0 +1,155 @@
+{
+  "compressions": [
+    {
+      "q": 2,
+      "m": 2,
+      "logical_dimension": 2,
+      "pauli_mixture": false,
+      "alpha": 0.08838834764831843,
+      "choi_min": 0.18750000000000008,
+      "choi_lower_bound": 0.125,
+      "max_compression_error": 2.220446049250313e-16,
+      "clifford_error": 0.0
+    },
+    {
+      "q": 3,
+      "m": 4,
+      "logical_dimension": 4,
+      "pauli_mixture": false,
+      "alpha": 0.036084391824351615,
+      "choi_min": 0.08705484989487665,
+      "choi_lower_bound": 0.05555555555555555,
+      "max_compression_error": 3.134413153259076e-16,
+      "clifford_error": 0.0
+    },
+    {
+      "q": 3,
+      "m": 8,
+      "logical_dimension": 16,
+      "pauli_mixture": false,
+      "alpha": 0.018042195912175808,
+      "choi_min": 0.09328871581620485,
+      "choi_lower_bound": 0.05555555555555555,
+      "max_compression_error": 3.60695033575537e-15,
+      "clifford_error": 0.0
+    }
+  ],
+  "pauli_mixture": [
+    {
+      "q": 2,
+      "m": 2,
+      "logical_dimension": 2,
+      "pauli_mixture": true,
+      "alpha": 0.25,
+      "choi_min": 0.0732233047033633,
+      "choi_lower_bound": 0,
+      "max_compression_error": 4.965068306494546e-16,
+      "clifford_error": 0.0
+    },
+    {
+      "q": 4,
+      "m": 8,
+      "logical_dimension": 16,
+      "pauli_mixture": true,
+      "alpha": 0.0625,
+      "choi_min": 0.026320205662161048,
+      "choi_lower_bound": 0,
+      "max_compression_error": 6.041893351325941e-15,
+      "clifford_error": 0.0
+    }
+  ],
+  "one_pass": {
+    "q": 2,
+    "ell": 5,
+    "errors": [
+      0.0,
+      2.5886241055761314e-15,
+      2.6282642729977916e-15,
+      4.43321106036273e-15
+    ]
+  },
+  "second_order": {
+    "N": 3,
+    "physical_block_dimension": 48,
+    "second_order_error": 3.330736835821947e-16,
+    "physical_second_order_error": 8.389980110521459e-16,
+    "ground_kernel_error": 4.519027164260019e-16,
+    "frame_error": 1.3015130952100955e-15,
+    "first_order_local_error": 0.0,
+    "weight_min": 0.12499999999999999,
+    "connected_rank": 8,
+    "swap_coefficient": 0.0032958984375
+  },
+  "logical_target": {
+    "sizes": [
+      40,
+      48,
+      64,
+      80,
+      96,
+      128
+    ],
+    "energies": [
+      -50.98197937272949,
+      -61.15915319471405,
+      -81.52006498838446,
+      -101.88534822851382,
+      -122.25281563631745,
+      -162.9910253378515
+    ],
+    "half_entropies": [
+      1.5743568460441468,
+      1.6350573295152815,
+      1.730878426969643,
+      1.8052258645788402,
+      1.8659813878376417,
+      1.961857188687202
+    ],
+    "oscillator_velocities": [
+      3.9466929094314707,
+      3.962948695219417,
+      3.979140453518857,
+      3.9866444994044072,
+      3.990723312638495,
+      3.994780725409731
+    ],
+    "c_energy_one_flavor": 0.9999996610148477,
+    "c_entropy_one_flavor": 1.00000023460198,
+    "note": "For n flavors these energies and entropies multiply by n. This is the logical target, not a fixed-d microscopic construction."
+  },
+  "spinor_ed": [
+    {
+      "n": 1,
+      "L": 4,
+      "energy": -5.65685424949238,
+      "predicted_energy": -5.656854249492381,
+      "entropy": 0.832991061399375,
+      "residual": 2.795173069501692e-15
+    },
+    {
+      "n": 1,
+      "L": 8,
+      "energy": -10.45250371901101,
+      "predicted_energy": -10.452503719011013,
+      "entropy": 1.0437380304709083,
+      "residual": 6.609189153763031e-14
+    },
+    {
+      "n": 2,
+      "L": 4,
+      "energy": -11.313708498984765,
+      "predicted_energy": -11.313708498984761,
+      "entropy": 1.66598212279875,
+      "residual": 1.455921945599435e-14
+    },
+    {
+      "n": 2,
+      "L": 8,
+      "energy": -20.9050074380221,
+      "predicted_energy": -20.905007438022025,
+      "entropy": 2.0874760609418113,
+      "residual": 7.857941219471715e-14
+    }
+  ],
+  "all_checks_passed": true
+}

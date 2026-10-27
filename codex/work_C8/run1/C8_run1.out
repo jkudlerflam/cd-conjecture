@@ -1,0 +1,9 @@
+The run is not conclusive. No verified counterexample or full-class bound was obtained.
+
+I proved simultaneous boundary Majorana compression, extended second-order exchange to identical blocks, and found restricted no-go theorems for one-pass clocks and exact large-symmetry protection. The missing step is a repeated microscopic bond realizing the code, with controlled infrared behavior.
+
+All numerical checks passed. They validate abstract constructions and free targets, not a microscopic counterexample.
+
+Deliverables are [RESULT.md](work_C8/RESULT.md), [PROGRESS.md](work_C8/PROGRESS.md), [reproduction code](work_C8/c8_checks.py), and [numerical results](work_C8/checks.json).
+
+[gpt_solve: backend=codex model=gpt-6-astra effort=high transcript=20261027T171957-95009]
