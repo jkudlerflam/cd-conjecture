@@ -1,0 +1,37 @@
+{
+  "status": "numerical",
+  "cases": [
+    {
+      "n": 1,
+      "core_dimension": 30,
+      "minimum_positive_piece_eigenvalue": -1.4175489968571823e-16,
+      "charge_source_residuals": {
+        "L0": 0.0,
+        "L+": 0.0,
+        "L-": 0.0,
+        "R0": 0.0,
+        "R+": 0.0,
+        "R-": 0.0
+      },
+      "occupation_transport_error": 5.551115123125783e-17,
+      "helix_transport_error": 3.2197070826986937e-15,
+      "raw_source_dimension": 240,
+      "raw_vs_stabilized_source_absolute_error": 1.0866873449608479e-10
+    },
+    {
+      "n": 2,
+      "core_dimension": 88,
+      "minimum_positive_piece_eigenvalue": -8.413230825381306e-16,
+      "charge_source_residuals": {
+        "L0": 0.0,
+        "L+": 0.0,
+        "L-": 0.0,
+        "R0": 0.0,
+        "R+": 0.0,
+        "R-": 0.0
+      },
+      "occupation_transport_error": 0.0,
+      "helix_transport_error": 4.333863318364947e-15
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+Wrote [RESULT.md](RESULT.md) and [PROOFS.md](PROOFS.md).
+
+Proved a mobile construction with \(d_0=2736\), controlled second-order equalization, and finite all-\(n\) band-crossing bounds. Two- and three-cell checks at \(n=1,2\) show \(\lambda^4\) errors.
+
+Two gaps remain: all-\(n\) distinct centers and Sidon margins are unproved, and ED covers the controlled fast-wrapper model rather than the full microscopic chain. PROGRESS.md and local STATE.md record these limitations.
+
+[gpt_solve: backend=codex model=gpt-6-astra effort=high transcript=20261028T012141-65510]

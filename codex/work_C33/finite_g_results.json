@@ -1,0 +1,28 @@
+[
+  {
+    "n": 10,
+    "D": 10.0,
+    "a": 4.0,
+    "g": 0.05,
+    "sector_dim": 271656,
+    "iterations": 216,
+    "inverse_entry_truncation_bound": 5.0444201774172874e-64,
+    "seconds": 8.001437792088836,
+    "T_scale": 9.942038291861592e-36,
+    "leading_relative_error": 0.0011086152123266088,
+    "herm_min_over_scale": -0.020034570041579193
+  },
+  {
+    "n": 12,
+    "D": 10.0,
+    "a": 4.0,
+    "g": 0.05,
+    "sector_dim": 641875,
+    "iterations": 248,
+    "inverse_entry_truncation_bound": 2.588302819762484e-73,
+    "seconds": 32.17373550008051,
+    "T_scale": 5.58846776743518e-41,
+    "leading_relative_error": 0.0013757107239638874,
+    "herm_min_over_scale": -0.03103094104224584
+  }
+]

@@ -1,0 +1,242 @@
+{
+  "status": "numerical",
+  "cases": [
+    {
+      "n": 1,
+      "core_dimension": 30,
+      "core_gap": 0.5004961096624341,
+      "code_residual": 0.0,
+      "code_orthogonality": 2.220446049250313e-16,
+      "charge_commutator": 0.0,
+      "zero_first_order": 0.0,
+      "bare_traceless_norm": 2.5248996048151828e-05,
+      "runs": [
+        {
+          "w": 0.16,
+          "charge_dimensions": [
+            4,
+            10
+          ],
+          "charge_gaps": [
+            0.007779742825231639,
+            8.660412341043866e-06
+          ],
+          "endpoint_weights": [
+            0.5163780662677581,
+            0.5000857054007577
+          ],
+          "beta_vacancy": 0.24905436404923728,
+          "beta_total": 0.19454574120222304,
+          "compensator_norm": 2.2211363698911324,
+          "compensator_error": 2.220446049250313e-16,
+          "ratios": [
+            {
+              "s_over_charge_gap": 0.03,
+              "s": 2.59812370231316e-07,
+              "source_dimensions_with_helix": [
+                480,
+                1440
+              ],
+              "max_graph_residual": 1.9380573976257225e-13,
+              "length_mismatch_full": 0.021689755557962365,
+              "length_mismatch_traceless_over_bare": 0.005992424700559039,
+              "fast_limit_error_full": 0.022828270136876907,
+              "fast_limit_error_traceless_over_bare": 0.00011773260299532479,
+              "bare_error_full": 0.02311398014503518,
+              "scalar_density_interaction": -0.004726429768433991
+            },
+            {
+              "s_over_charge_gap": 0.01,
+              "s": 8.660412341043866e-08,
+              "source_dimensions_with_helix": [
+                480,
+                1440
+              ],
+              "max_graph_residual": 1.2989888041737924e-13,
+              "length_mismatch_full": 0.006937037522337193,
+              "length_mismatch_traceless_over_bare": 0.005938243597071482,
+              "fast_limit_error_full": 0.008059465845484393,
+              "fast_limit_error_traceless_over_bare": 4.375654189351943e-05,
+              "bare_error_full": 0.008345179440975596,
+              "scalar_density_interaction": -0.001634118513892533
+            }
+          ],
+          "averaged_length_mismatch_full": 0.001114473452392169,
+          "averaged_length_mismatch_traceless_over_bare": 0.0059065610416935595
+        },
+        {
+          "w": 0.1,
+          "charge_dimensions": [
+            4,
+            10
+          ],
+          "charge_gaps": [
+            0.0019602284896969024,
+            5.062810297662423e-07
+          ],
+          "endpoint_weights": [
+            0.5059532349540118,
+            0.5000127214188699
+          ],
+          "beta_vacancy": 0.24951049536073142,
+          "beta_total": 0.194902042543976,
+          "compensator_norm": 2.082380687173268,
+          "compensator_error": 2.220446049250313e-16,
+          "ratios": [
+            {
+              "s_over_charge_gap": 0.03,
+              "s": 1.518843089298727e-08,
+              "source_dimensions_with_helix": [
+                480,
+                1440
+              ],
+              "max_graph_residual": 3.058708189896973e-13,
+              "length_mismatch_full": 0.022467261177526867,
+              "length_mismatch_traceless_over_bare": 0.0021477431809889523,
+              "fast_limit_error_full": 0.022870509389003178,
+              "fast_limit_error_traceless_over_bare": 4.507087669094542e-05,
+              "bare_error_full": 0.022978341173719875,
+              "scalar_density_interaction": -0.004746000758446025
+            },
+            {
+              "s_over_charge_gap": 0.01,
+              "s": 5.0628102976624235e-09,
+              "source_dimensions_with_helix": [
+                480,
+                1440
+              ],
+              "max_graph_residual": 5.039700808089129e-14,
+              "length_mismatch_full": 0.007675697212755464,
+              "length_mismatch_traceless_over_bare": 0.0021268113919012182,
+              "fast_limit_error_full": 0.008074872333709392,
+              "fast_limit_error_traceless_over_bare": 1.6753313482364606e-05,
+              "bare_error_full": 0.00818270549172917,
+              "scalar_density_interaction": -0.00163675648498025
+            }
+          ],
+          "averaged_length_mismatch_full": 0.00039716927890268546,
+          "averaged_length_mismatch_traceless_over_bare": 0.0021145772814083457
+        }
+      ]
+    },
+    {
+      "n": 2,
+      "core_dimension": 88,
+      "core_gap": 0.41962866416916,
+      "code_residual": 0.0,
+      "code_orthogonality": 0.0,
+      "charge_commutator": 0.0,
+      "zero_first_order": 0.0,
+      "bare_traceless_norm": 3.494342232084246e-06,
+      "runs": [
+        {
+          "w": 0.16,
+          "charge_dimensions": [
+            5,
+            15
+          ],
+          "charge_gaps": [
+            0.0012444830320205158,
+            1.1229096574805197e-07
+          ],
+          "endpoint_weights": [
+            0.5136953468279342,
+            0.5000841114418967
+          ],
+          "beta_vacancy": 0.24826574556482997,
+          "beta_total": 0.20919151565786137,
+          "compensator_norm": 2.2385359227307506,
+          "compensator_error": 2.8515820084558894e-17,
+          "ratios": [
+            {
+              "s_over_charge_gap": 0.03,
+              "s": 3.368728972441559e-09,
+              "source_dimensions_with_helix": [
+                2160,
+                7560
+              ],
+              "max_graph_residual": 1.356795022037997e-13,
+              "length_mismatch_full": 0.012398692772017654,
+              "length_mismatch_traceless_over_bare": 0.005598714307748419,
+              "fast_limit_error_full": 0.012840327410617348,
+              "fast_limit_error_traceless_over_bare": 0.0001285446833793922,
+              "bare_error_full": 0.012989567172010549,
+              "scalar_density_interaction": -0.0026664895784845174
+            },
+            {
+              "s_over_charge_gap": 0.01,
+              "s": 1.1229096574805197e-09,
+              "source_dimensions_with_helix": [
+                2160,
+                7560
+              ],
+              "max_graph_residual": 3.865024060993926e-14,
+              "length_mismatch_full": 0.004092446137181651,
+              "length_mismatch_traceless_over_bare": 0.005536331818503016,
+              "fast_limit_error_full": 0.004533340505827872,
+              "fast_limit_error_traceless_over_bare": 4.539334973786598e-05,
+              "bare_error_full": 0.004682580557130873,
+              "scalar_density_interaction": -0.000920718360806286
+            }
+          ],
+          "averaged_length_mismatch_full": 0.00044054038802378385,
+          "averaged_length_mismatch_traceless_over_bare": 0.0055028472475385885
+        },
+        {
+          "w": 0.1,
+          "charge_dimensions": [
+            5,
+            15
+          ],
+          "charge_gaps": [
+            0.00019602004952434804,
+            2.544125909942352e-09
+          ],
+          "endpoint_weights": [
+            0.5051449013472248,
+            0.5000126271424886
+          ],
+          "beta_vacancy": 0.24935171059920935,
+          "beta_total": 0.21010656203679867,
+          "compensator_norm": 2.0915567461525133,
+          "compensator_error": 2.2380820823282694e-16,
+          "ratios": [
+            {
+              "s_over_charge_gap": 0.03,
+              "s": 7.632377729827055e-11,
+              "source_dimensions_with_helix": [
+                2160,
+                7560
+              ],
+              "max_graph_residual": 3.825346336554502e-13,
+              "length_mismatch_full": 0.012695072737695831,
+              "length_mismatch_traceless_over_bare": 0.002177705540950228,
+              "fast_limit_error_full": 0.01286433831564029,
+              "fast_limit_error_traceless_over_bare": 0.0006000579024221291,
+              "bare_error_full": 0.0129209624844856,
+              "scalar_density_interaction": -0.0026718193277243006
+            },
+            {
+              "s_over_charge_gap": 0.01,
+              "s": 2.5441259099423518e-11,
+              "source_dimensions_with_helix": [
+                2160,
+                7560
+              ],
+              "max_graph_residual": 3.1358202020220636e-13,
+              "length_mismatch_full": 0.0043729296766621475,
+              "length_mismatch_traceless_over_bare": 0.0021248064296473055,
+              "fast_limit_error_full": 0.004542078923333432,
+              "fast_limit_error_traceless_over_bare": 0.0002485997661846342,
+              "bare_error_full": 0.004598703339552777,
+              "scalar_density_interaction": -0.0009212483493498333
+            }
+          ],
+          "averaged_length_mismatch_full": 0.00016909752782947202,
+          "averaged_length_mismatch_traceless_over_bare": 0.002109218051683593
+        }
+      ]
+    }
+  ],
+  "seconds": 14.182121125049889
+}

@@ -1,0 +1,111 @@
+{
+  "status": "numerical",
+  "gram": [
+    {
+      "n": 1,
+      "lyapunov_dimension": 2,
+      "residual": 0.0,
+      "eigenvalues": [
+        0.009259259259259259
+      ],
+      "determinant_lower_bound": 0.009259259259259257,
+      "smallest_over_largest": 1.0
+    },
+    {
+      "n": 2,
+      "lyapunov_dimension": 8,
+      "residual": 1.0325458336266604e-15,
+      "eigenvalues": [
+        0.0001083937095756751,
+        0.004838426288264727
+      ],
+      "determinant_lower_bound": 0.00010601860874712163,
+      "smallest_over_largest": 0.02240267870538333
+    },
+    {
+      "n": 3,
+      "lyapunov_dimension": 18,
+      "residual": 3.971839971481292e-15,
+      "eigenvalues": [
+        8.926910091520192e-07,
+        3.944079432430847e-05,
+        0.0046411004077242315
+      ],
+      "determinant_lower_bound": 7.45607019103364e-09,
+      "smallest_over_largest": 0.0001923446878387514
+    },
+    {
+      "n": 4,
+      "lyapunov_dimension": 32,
+      "residual": 3.3512796257779513e-15,
+      "eigenvalues": [
+        6.677295913315306e-09,
+        3.2727230605981974e-07,
+        3.414309621602863e-05,
+        0.004632828085775208
+      ],
+      "determinant_lower_bound": 3.3998549046120296e-15,
+      "smallest_over_largest": 1.4413001712318013e-06
+    },
+    {
+      "n": 5,
+      "lyapunov_dimension": 50,
+      "residual": 5.874641437615896e-15,
+      "eigenvalues": [
+        4.7225647319698285e-11,
+        2.7343604395699467e-09,
+        2.5538902317889803e-07,
+        3.37852378742587e-05,
+        0.004632448102072454
+      ],
+      "determinant_lower_bound": 1.088457639499193e-23,
+      "smallest_over_largest": 1.0194533490525362e-08
+    }
+  ],
+  "bands": [
+    {
+      "n": 1,
+      "core_dimension": 30,
+      "T_scale": 5.754873254520475e-08,
+      "phase_rotated_eigenvalues_over_T": [
+        1.0
+      ],
+      "field": 2.8774366272602375e-08,
+      "roots": [
+        -1.3181160734060862,
+        1.3181160734217485
+      ],
+      "centres_mod_pi": [
+        7.831180148798467e-12
+      ],
+      "delta2": 2.636232146827835,
+      "delta4": 1.0107210135239164,
+      "minimum_velocity_over_T": 1.936491673984258,
+      "nonGaussian_over_T": 0.0007069811886295369
+    },
+    {
+      "n": 2,
+      "core_dimension": 88,
+      "T_scale": 2.985616832195717e-09,
+      "phase_rotated_eigenvalues_over_T": [
+        0.054994806907786215,
+        1.4044264567559577
+      ],
+      "field": 8.20967105936199e-11,
+      "roots": [
+        -2.0426284444829115,
+        2.0405142154013935,
+        -0.878145594877127,
+        0.8802598240191356
+      ],
+      "centres_mod_pi": [
+        -0.0010571145407589633,
+        0.001057114571004325
+      ],
+      "delta2": 1.1602543913822583,
+      "delta4": 0.004228458223526577,
+      "minimum_velocity_over_T": 0.20272058113774927,
+      "nonGaussian_over_T": 0.0027813667648916474
+    }
+  ]
+}

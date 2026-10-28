@@ -17,6 +17,61 @@ answer, network, external writes, or subagents. Next: construct and verify
 an explicit local dressing with constants that depend on the on-cell
 gap and local interaction norm, not the largest cell length.
 
+Substantive step 48. local_dressing.md proves an exact one-step local
+unitary normal form on the complete atomic direct sum. It cancels
+first-order leakage, with an exponentially weighted per-cell remainder
+bounded by 12 exp(3 kappa) J^2/Delta divided by
+[1-2 exp(kappa)|epsilon|J/Delta]^5. The proof needs no upper energy or
+local dimension cutoff, preserves charge and total length, and descends
+to the ring quotient. A Lieb-Robinson comparison gives convergence to
+the projected dynamics at fixed slow time epsilon*t, uniformly in
+volume. This does not control infinite time at fixed coupling.
+
+local_dressing_checks.py passes on two to four four-state cells,
+dimensions 16,64,256, with excited energies up to 10^6. It verifies the
+generator, charge, complete second-order formula, quadratic remainder
+scaling, and linear slow-time error. The largest second-order identity
+error is below 2e-19. Next: an exactly soluble critical retained chain
+to expose the limits of this estimate, then a low-energy defect bound.
+
+Substantive step 49. critical_crossover.md gives a literal d=4 repeated
+bond with an exact critical-Ising first-order projection but a positive
+bulk mass (sqrt(Delta^2+4 epsilon^2)-Delta)/2 at fixed epsilon. This
+proves that the new fixed-slow-time estimate cannot be substituted for
+the missing infrared step. It does not refute the nonresonant C8 target.
+Two diagnostics were calibrated on the unmixed c=1/2 control. At
+Delta=1, epsilon=.02 the mixed model has c_S(128)=.001854 and
+c_E(512)=.000134, while the control gives .499946 and .500001.
+Literal spin ED through L=5, dimension 1024, matches the exact bands.
+Next: exploit the local normal form for ground-energy and occupation
+bounds, including tails in the infinite sum over lengths.
+
+Substantive step 50. defect_energy_bounds.md proves a general energy
+and occupation theorem that allows an arbitrary critical reference.
+If W is locally block diagonal and F has local norm f, then with
+g=Delta-2(w+f)>0 the ground energy is between E_ref-M f^2/g and
+E_ref, and mean defect occupation is at most 4 f^2/g^2. A one-step
+dressing gives an O(epsilon^4) energy-density error relative to its
+exact dressed P block in the unconstrained problem. Conserved-sector
+costs are kept explicitly; no unconstrained estimate is silently used
+for a fixed-length ring.
+
+For the bare C8 projected model, the exact ring quotient gives a
+constraint excess O(epsilon b^2/M) at M nearest L/(b+1/2). This gives
+O(epsilon^2) bare defect density in these legal marker sectors, plus
+a vanishing finite-size term. The linear wrong-length energy implies
+a 1/(R-b) bound on the occupation of lengths at least R and local-state
+trace-norm truncation bounds. It does not prove ground-marker selection
+or an infrared effective action.
+
+defect_energy_checks.py passes on 2-4 five-state cells through dimension
+625, both unrestricted and fixed-total-length sectors. Ring-constraint
+bounds pass 105849 cases for b=3,9,39 and M through 100. The extended
+local_dressing_checks.py also verifies dressed ground-energy and atomic
+occupation bounds. Next: audit the thermodynamic meaning of these
+results, and test whether local defect observables really have fast
+correlations after coupling to a critical retained sector.
+
 # C8 progress
 
 2026-10-28. Ninth run completed. Nonconclusive for the original c-d

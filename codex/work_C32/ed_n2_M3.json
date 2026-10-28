@@ -1,0 +1,94 @@
+{
+  "status": "numerical",
+  "model": "fast-wrapper limit, all legal core excitations",
+  "n": 2,
+  "cells": 3,
+  "core_dimension": 88,
+  "unrestricted_dimension": 2044416,
+  "length_patterns": [
+    [
+      2,
+      1,
+      1
+    ],
+    [
+      1,
+      2,
+      1
+    ],
+    [
+      1,
+      1,
+      2
+    ]
+  ],
+  "sectors": [
+    {
+      "charge": 0,
+      "dimension": 39072,
+      "code_dimension": 3,
+      "code_residual": 5.969062235490921e-16,
+      "first_order_residual": 0.0,
+      "runs": [
+        {
+          "lambda": 0.12,
+          "error": 1.3860700650421224e-05,
+          "error_over_lambda4": 0.06684365668605916,
+          "max_eigenpair_residual": 9.82340208853869e-13,
+          "gap_above_retained_band": 0.5697303322970336,
+          "minimum_code_overlap_singular_value": 0.999623487105147
+        },
+        {
+          "lambda": 0.06,
+          "error": 8.63104454980656e-07,
+          "error_over_lambda4": 0.06659756597072965,
+          "max_eigenpair_residual": 1.055245290250794e-12,
+          "gap_above_retained_band": 0.5789714172070352,
+          "minimum_code_overlap_singular_value": 0.9999082326828436
+        },
+        {
+          "lambda": 0.03,
+          "error": 5.389422892239515e-08,
+          "error_over_lambda4": 0.06653608508937674,
+          "max_eigenpair_residual": 1.367397524455314e-12,
+          "gap_above_retained_band": 0.5809752030609696,
+          "minimum_code_overlap_singular_value": 0.9999772045203852
+        }
+      ]
+    },
+    {
+      "charge": 1,
+      "dimension": 91872,
+      "code_dimension": 18,
+      "code_residual": 1.4621156719869436e-15,
+      "first_order_residual": 0.0,
+      "runs": [
+        {
+          "lambda": 0.12,
+          "error": 1.3861252530157238e-05,
+          "error_over_lambda4": 0.06684631814311941,
+          "max_eigenpair_residual": 6.083560440852333e-14,
+          "gap_above_retained_band": 0.5697239268792045,
+          "minimum_code_overlap_singular_value": 0.999623329978949
+        },
+        {
+          "lambda": 0.06,
+          "error": 8.63139019017491e-07,
+          "error_over_lambda4": 0.0666002329488805,
+          "max_eigenpair_residual": 8.88130309570922e-13,
+          "gap_above_retained_band": 0.5789699398230921,
+          "minimum_code_overlap_singular_value": 0.9999081936827205
+        },
+        {
+          "lambda": 0.03,
+          "error": 5.38963902822593e-08,
+          "error_over_lambda4": 0.06653875343488803,
+          "max_eigenpair_residual": 1.8687661624152287e-13,
+          "gap_above_retained_band": 0.5809748860413909,
+          "minimum_code_overlap_singular_value": 0.9999771277242149
+        }
+      ]
+    }
+  ],
+  "seconds": 234.96160437515937
+}
