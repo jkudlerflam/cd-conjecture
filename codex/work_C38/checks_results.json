@@ -1,0 +1,221 @@
+{
+  "targets": [
+    {
+      "n": 1,
+      "points": 2,
+      "pair_sums": 3,
+      "lower_normalized": "7/8192",
+      "delta2_over_lower": "568",
+      "delta4_over_lower": "240/7",
+      "tag": "proved by rational enumeration"
+    },
+    {
+      "n": 2,
+      "points": 4,
+      "pair_sums": 10,
+      "lower_normalized": "7/2097152",
+      "delta2_over_lower": "2040/7",
+      "delta4_over_lower": "240/7",
+      "tag": "proved by rational enumeration"
+    },
+    {
+      "n": 3,
+      "points": 6,
+      "pair_sums": 21,
+      "lower_normalized": "7/536870912",
+      "delta2_over_lower": "2040/7",
+      "delta4_over_lower": "240/7",
+      "tag": "proved by rational enumeration"
+    },
+    {
+      "n": 4,
+      "points": 8,
+      "pair_sums": 36,
+      "lower_normalized": "7/137438953472",
+      "delta2_over_lower": "2040/7",
+      "delta4_over_lower": "240/7",
+      "tag": "proved by rational enumeration"
+    },
+    {
+      "n": 8,
+      "points": 16,
+      "pair_sums": 136,
+      "lower_normalized": "7/590295810358705651712",
+      "delta2_over_lower": "2040/7",
+      "delta4_over_lower": "240/7",
+      "tag": "proved by rational enumeration"
+    },
+    {
+      "n": 16,
+      "points": 32,
+      "pair_sums": 528,
+      "lower_normalized": "7/10889035741470030830827987437816582766592",
+      "delta2_over_lower": "2040/7",
+      "delta4_over_lower": "240/7",
+      "tag": "proved by rational enumeration"
+    },
+    {
+      "n": 23,
+      "points": 46,
+      "pair_sums": 1081,
+      "lower_normalized": "7/784637716923335095479473677900958302012794430558004314112",
+      "delta2_over_lower": "2040/7",
+      "delta4_over_lower": "240/7",
+      "tag": "proved by rational enumeration"
+    },
+    {
+      "n": 32,
+      "points": 64,
+      "pair_sums": 2080,
+      "lower_normalized": "7/3705346855594118253554271520278013051304639509300498049262642688253220148477952",
+      "delta2_over_lower": "2040/7",
+      "delta4_over_lower": "240/7",
+      "tag": "proved by rational enumeration"
+    },
+    {
+      "n": 64,
+      "points": 128,
+      "pair_sums": 8256,
+      "lower_normalized": "7/429049853758163107186368799942587076079339706258956588087153966199096448962353503257659977541340909686081019461967553627320124249982290238285876768194691072",
+      "delta2_over_lower": "2040/7",
+      "delta4_over_lower": "240/7",
+      "tag": "proved by rational enumeration"
+    },
+    {
+      "n": 128,
+      "points": 256,
+      "pair_sums": 32896,
+      "lower_normalized": "7/5752618031559410904733776610524879147577526332615381032749762597047445625776030820246671274317041152675843644155884587445081272602061331919771117780463171980088572589595695528841671027239875011822498654466720184602820821834958812207165219537306471589227216341906761543678311870031350921754731402547975172390912",
+      "delta2_over_lower": "2040/7",
+      "delta4_over_lower": "240/7",
+      "tag": "proved by rational enumeration"
+    }
+  ],
+  "adjacent_correlations": [
+    {
+      "j": 0,
+      "ratio": "2/5"
+    },
+    {
+      "j": 1,
+      "ratio": "28/45"
+    },
+    {
+      "j": 2,
+      "ratio": "66/91"
+    },
+    {
+      "j": 7,
+      "ratio": "496/561"
+    },
+    {
+      "j": 31,
+      "ratio": "8128/8385"
+    },
+    {
+      "j": 63,
+      "ratio": "10880/11051"
+    }
+  ],
+  "first_schur_pivot": "3/32",
+  "mixing": [
+    {
+      "q": 10,
+      "relative_schur_correction": "1/100"
+    },
+    {
+      "q": 100,
+      "relative_schur_correction": "1/100"
+    },
+    {
+      "q": 1000,
+      "relative_schur_correction": "1/100"
+    },
+    {
+      "q": 10000,
+      "relative_schur_correction": "1/100"
+    }
+  ],
+  "gram_diagnostics": [
+    {
+      "a": 8.0,
+      "mobile": false,
+      "lyapunov_dimension": 8,
+      "squared_correlation": 0.4107003878446495,
+      "normalized_relative_error": 0.04115454215595315,
+      "tag": "numerical, double precision, n=2"
+    },
+    {
+      "a": 16.0,
+      "mobile": false,
+      "lyapunov_dimension": 8,
+      "squared_correlation": 0.4026609872146149,
+      "normalized_relative_error": 0.01005655453226225,
+      "tag": "numerical, double precision, n=2"
+    },
+    {
+      "a": 32.0,
+      "mobile": false,
+      "lyapunov_dimension": 8,
+      "squared_correlation": 0.4006643589641334,
+      "normalized_relative_error": 0.0024999791250546817,
+      "tag": "numerical, double precision, n=2"
+    },
+    {
+      "a": 64.0,
+      "mobile": false,
+      "lyapunov_dimension": 8,
+      "squared_correlation": 0.4001660341599856,
+      "normalized_relative_error": 0.0006241150888313971,
+      "tag": "numerical, double precision, n=2"
+    },
+    {
+      "a": 128.0,
+      "mobile": false,
+      "lyapunov_dimension": 8,
+      "squared_correlation": 0.40004150506492064,
+      "normalized_relative_error": 0.00015597387332622262,
+      "tag": "numerical, double precision, n=2"
+    },
+    {
+      "a": 8.0,
+      "mobile": true,
+      "lyapunov_dimension": 8,
+      "squared_correlation": 0.3290435374325471,
+      "normalized_relative_error": 0.6800889745889381,
+      "tag": "numerical, double precision, n=2"
+    },
+    {
+      "a": 16.0,
+      "mobile": true,
+      "lyapunov_dimension": 8,
+      "squared_correlation": 0.3582881904219338,
+      "normalized_relative_error": 0.46529457871917485,
+      "tag": "numerical, double precision, n=2"
+    },
+    {
+      "a": 32.0,
+      "mobile": true,
+      "lyapunov_dimension": 8,
+      "squared_correlation": 0.3772264094813167,
+      "normalized_relative_error": 0.2809273184367862,
+      "tag": "numerical, double precision, n=2"
+    },
+    {
+      "a": 64.0,
+      "mobile": true,
+      "lyapunov_dimension": 8,
+      "squared_correlation": 0.3880778618144514,
+      "normalized_relative_error": 0.15592514477390118,
+      "tag": "numerical, double precision, n=2"
+    },
+    {
+      "a": 128.0,
+      "mobile": true,
+      "lyapunov_dimension": 8,
+      "squared_correlation": 0.39389725823826,
+      "normalized_relative_error": 0.08237929406800573,
+      "tag": "numerical, double precision, n=2"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "tag": "proved by exact integer/rational enumeration",
+  "vertex_counts": [
+    {
+      "n": 1,
+      "branches": 2,
+      "oriented_vectors": 2,
+      "payload_conjugate_pairs": 1,
+      "mobile_conjugate_pairs": 4
+    },
+    {
+      "n": 2,
+      "branches": 4,
+      "oriented_vectors": 18,
+      "payload_conjugate_pairs": 9,
+      "mobile_conjugate_pairs": 22
+    },
+    {
+      "n": 3,
+      "branches": 6,
+      "oriented_vectors": 120,
+      "payload_conjugate_pairs": 60,
+      "mobile_conjugate_pairs": 91
+    },
+    {
+      "n": 4,
+      "branches": 8,
+      "oriented_vectors": 476,
+      "payload_conjugate_pairs": 238,
+      "mobile_conjugate_pairs": 295
+    },
+    {
+      "n": 5,
+      "branches": 10,
+      "oriented_vectors": 1350,
+      "payload_conjugate_pairs": 675,
+      "mobile_conjugate_pairs": 766
+    },
+    {
+      "n": 6,
+      "branches": 12,
+      "oriented_vectors": 3102,
+      "payload_conjugate_pairs": 1551,
+      "mobile_conjugate_pairs": 1684
+    }
+  ],
+  "hierarchy_hessian": {
+    "v_fast": "1",
+    "v_slow": "1/1000000000000",
+    "bad_off_diagonal": "1/100000",
+    "bad_determinant": "-99/1000000000000",
+    "good_off_diagonal": "1/10000000",
+    "good_determinant": "99/100000000000000"
+  },
+  "stiffness": {
+    "eta": "1/4",
+    "kappa_squared": "3/5",
+    "dimension_three_squared": "27/5"
+  },
+  "rg_majorant": {
+    "A": "7",
+    "ell": "1000",
+    "x0": "1/100000",
+    "xend": "1/93000"
+  }
+}

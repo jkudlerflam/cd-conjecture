@@ -1,0 +1,30 @@
+{
+  "n": 2,
+  "cells": 3,
+  "Q": 0,
+  "dimension": 25984,
+  "code_dimension": 1,
+  "source_dimension": 72,
+  "results": [
+    {
+      "lam": 0.1,
+      "error": 3.261185460656335e-06,
+      "error_over_lam4": 0.032611854606563344,
+      "residual": 2.7807745410338984e-14,
+      "gap": 0.5066970762270608,
+      "minimum_overlap": 0.9999486650178732
+    },
+    {
+      "lam": 0.05,
+      "error": 2.0321347314120725e-07,
+      "error_over_lam4": 0.03251415570259315,
+      "residual": 2.3710911080377995e-13,
+      "gap": 0.5081470530472885,
+      "minimum_overlap": 0.9999876406606125
+    }
+  ],
+  "code_residual": 3.124043852634325e-16,
+  "first_order": 0.0,
+  "hermiticity": 0.0,
+  "seconds": 3.8379286660347134
+}

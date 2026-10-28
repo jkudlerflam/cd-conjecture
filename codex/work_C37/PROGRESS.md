@@ -23,3 +23,7 @@
 [Numerical, audit outcome] A finite-g Richardson subtraction failed to improve the small onsite signal, with discrepancies up to 4.5e-5 of the hopping at n=3. It is retained, not used as a certificate. A replacement direct literal g^2 coefficient calculation agrees at n=1,2,3, with hopping error at most 1.4e-12 and onsite error at most 2.3e-10 in hopping units. The latter includes all 28224 excited-pair states at n=3.
 
 [Proved, handoff] Project STATE is outside the write scope. Local STATE.md records the outcome and file map. No network or subagents were used.
+
+[Proved, final audit] Replaced the bounded exact binary64 dot-product shortcut by NumPy int64 dot products with explicit no-overflow bounds. Recomputed all 23 modular certificates and the independent exact audits. Every polynomial and gcd agrees with the earlier result. The final n=23 run took about 33 seconds. Python syntax, certificate degrees, all gcds and the 23 crossing-bound records were checked.
+
+[Proved/assumed distinction, final refinement] The root perturbation proof now also bounds the corrected minimum speed. Higher-order bare corrections and the retained interaction self-energy have separate assumed constants. The conversion must be reduced for a specified dressing constant before lambda is chosen. Lowering lambda alone does not suppress normalized interaction dressing. RESULT.md, PROOFS.md and local STATE.md reflect this distinction.

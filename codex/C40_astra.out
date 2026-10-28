@@ -1,0 +1,9 @@
+Written [RESULT.md](<<repo>/codex/work_C40/RESULT.md>) and detailed derivations in [PROOFS.md](<<repo>/codex/work_C40/PROOFS.md>).
+
+The velocity hierarchy introduces stricter coupling requirements but no additional fixed-\(n\) obstruction. The report gives explicit connected bounds at every finite perturbative order and the conditional RG argument through all band scales.
+
+The unconditional conclusion remains open. It needs the exact connected low-frequency remainder bound and all-\(n\) nonresonant witnesses for the actual cores. A careful physicist can accept \(c=n\), or \(n+1\), conditional on those stated inputs.
+
+Exact checks passed. `PROGRESS.md` and local `STATE.md` are updated; no files outside this folder were modified.
+
+[gpt_solve: backend=codex model=gpt-6-astra effort=high transcript=20261028T091648-17007]

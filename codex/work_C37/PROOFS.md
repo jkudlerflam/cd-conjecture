@@ -204,6 +204,13 @@ Equation (16) is smaller than needed in (17)-(18). Rouche's theorem gives one si
 
 [Proved] Hermitian Laurent symmetry pairs a zero z with 1/conj(z). A simple unit-circle zero cannot leave the circle under a continuous perturbation preserving this symmetry without colliding with its partner. The disks each contain one simple zero throughout the homotopy, so no such collision occurs. Each Fermi point moves by angular distance at most 2r_n. A quartic mismatch moves by at most 8r_n=delta_n/8. In particular all perturbed quadratic and quartic margins remain greater than delta_n/2, and the center separation remains greater than delta_n/4 modulo pi.
 
+[Proved perturbed speed bound] Write D(z)=det(h(z)+E(z)) and let z_i' be the unique perturbed root in a disk. On its boundary, (17)-(18) give |D| at least half the right side of (17). The function D(z)/(z-z_i') is analytic and nonzero in the disk. Its boundary modulus is at least the right side of (17) divided by 4r_n. The minimum-modulus principle gives the same lower bound at z_i'. Dividing its derivative by the other n-1 eigenvalues, each bounded by B_n+1, gives
+
+    v_pert >= vtilde_n := Qbar_n^(-n) delta_n^(2n-1)
+                        /[2^(3n+1)(B_n+1)^(n-1)].
+
+This bound holds for every perturbation satisfying (16), including the finite-g quadratic projection.
+
 [Proved] For |g|<=1/2, the part of the complete second-order bond beyond g^2 has norm, with a4_n removed, at most
 
     (9/4) (g/2)^4/[1-(g/2)^2] < g^4.                     (19)
@@ -225,7 +232,7 @@ Then g_n<1/2 and the quadratic error is at most tau_n/8. The exact finite-g, sec
     epsilon_NG/(v_n delta_n)
        <= 18/[256 * 2^(n+4) * 64^(2n)] < 10^(-6).           (22)
 
-Also epsilon_NG*log(1/delta_n)/v_n < 10^(-6), since delta log(1/delta)<=1 for 0<delta<1. These are bounds on the normalized lattice coefficients. They are not a derivation of continuum matching constants or an interacting root-dressing theorem. A further reduction of g accommodates any specified finite matching constants without changing the leading roots.
+Also epsilon_NG*log(1/delta_n)/v_n < 10^(-6), since delta log(1/delta)<=1 for 0<delta<1. These are bounds relative to the leading reference speed. Using the perturbed speed vtilde_n and the surviving momentum margin delta_n/2 instead, both sufficient smallness ratios are less than 10^(-4). This follows from (B_n+1)^(n-1)/B_n^(n-1)<2 and the exponential factor 64^(2n) in (22). These are bounds on normalized lattice coefficients, not a derivation of continuum matching constants or an interacting root-dressing theorem. A further reduction of g accommodates any specified finite matching constants without changing the leading roots.
 
 ## 7. Higher orders in the port coupling and the infrared scope
 

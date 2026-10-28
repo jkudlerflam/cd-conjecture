@@ -35,6 +35,49 @@ pressure to prove that the dressed legal-sector ground marker density
 actually stays in this interior interval. The tail theorem alone does
 not choose the marker number or exclude illegal selector sectors.
 
+Substantive step 56. marker_density_bounds.md proves a chemical-tilt
+energy inequality on the full atomic space. The unbounded length part
+is absorbed into the positive atomic Hamiltonian; only a bounded code
+density is treated as a perturbation. Optimizing the inherited exact
+free-fluid pressure gives a canonical density cost. With the already
+implemented marker chemical potential, every large-L legal ground
+sector has length-bit density 1/2+O(sqrt(epsilon)). This now places the
+actual legal ground sectors in the interior required by step 55.
+
+marker_density_checks.py passes 34 scalar physical sectors through
+dimension 7007, five chemical tilts per sector, 10001 Legendre cases,
+and 967189 marker-count inequalities. Largest residual 1.12e-12. The
+finite ED lengths do not meet the conservative asymptotic size bound;
+that fact is recorded in the data. No central charge is inferred.
+
+Next: compare illegal selector sectors without an extensive error.
+The selector letters are the four ordered binary arrow pairs. Flipping
+the incoming arrow at each violated bond repairs every defect with a
+one-site unitary. This suggests a uniform defect gap after increasing
+only the forbidden-bond coefficient. The legal model would be unchanged.
+
+Substantive step 57. selector_repair.md proves a nonperturbative gap
+above the entire legal sector after strengthening one diagonal selector
+penalty. Each forbidden bond is repaired by flipping one incoming arrow;
+this costs at most four times the remaining bond norm per defect. The
+new CertifiedPeriodicBond in certified_periodic_bond.py changes only
+Ksel and is exactly identical to the prior candidate on legal states.
+The marker-free legal sectors are nonnegative, while a positive-marker
+trial has negative extensive base energy. Together with step 56 this
+puts the full large-L microscopic ground sectors in the interior regime
+of the factorial-tail theorem, for fixed sufficiently small epsilon.
+
+selector_repair_checks.py passes 21840 arrow words, 24 quantum defect
+sectors through block dimension 256, 8192 differential full-bond columns,
+and the active 3232-column base/perturbation checks. Legal-column changes
+are exactly zero. At q=4 the strengthened penalty is 1.67536545854e13,
+with proved defect gap at least 8.37682729270e12 for 0<=epsilon<=1.
+This is a selector gap, not a proof of the CFT.
+
+Next: adversarially audit the combined pressure, quotient and truncation
+proofs, then revisit whether they actually supply the missing local
+low-frequency action. No conclusive original answer yet.
+
 Only this folder is being modified. The task prohibits editing the
 project STATE.md, so this file carries the resumable memory.
 

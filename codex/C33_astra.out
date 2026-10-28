@@ -1,0 +1,9 @@
+Proved common-field crossings for every n with an explicit finite-parameter schedule.
+
+At n=23, certified 46 simple Fermi points and distinct centers, with \(\delta_2>0.0140193\) and \(\delta_4>3.1558\times10^{-7}\), at finite \(g=2^{-365}\). No extra letters are needed.
+
+The all-n Sidon theorem and interacting CFT conclusion remain open.
+
+[RESULT.md](<./RESULT.md>) contains the parameters, scales and reproduction instructions. [PROOF.md](<./PROOF.md>) gives the proofs and integer certificates.
+
+[gpt_solve: backend=codex model=gpt-6-astra effort=high transcript=20261028T073619-88315]
