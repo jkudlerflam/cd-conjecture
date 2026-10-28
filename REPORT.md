@@ -561,3 +561,4 @@ scope; no human review is claimed.
 
 The coordinating agent reran all nine new verification scripts successfully;
 the combined result is saved in the contribution's verification summary.
+- **Casimir survey, final** (`contrib/casimir_survey/`). The violation of A ≤ 2π‖h‖ is now seen directly on the lattice, without WZW input: finite-size Bethe roots for the rank-two SU(N) chain (solver written by Astra, validated against 11 exact-diagonalization energies to 4 × 10⁻¹¹, rerun and fitted by the Claude agent on rings up to L = 105 and 120) give A/(2π‖h‖) between 1.014 and 1.018 at N = 7 (d = 28) for every fit form, and 1.05 at N = 8 (d = 36). This assumes the continued root configuration remains the ground state. Elsewhere nothing exceeds the fundamental SU(d) value, which a twirling argument shows is a local maximum to first order; the best ratio at each d grows like 0.38 ln d/ln ln d, and A ≤ π‖h‖ log₂ d holds for everything computed.

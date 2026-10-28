@@ -2,26 +2,26 @@
 
 ## Claim
 
-Class and notation as in `../refined_conjecture/`. H = Σ_i h_{i,i+1} on periodic rings of (ℂ^d)^⊗L, one Hermitian h, low-energy theory a set of unitary CFTs (c_a, v_a), A = Σ c_a v_a from E_0(L) = e_0 L − πA/(6L) + o(1/L), ‖h‖ the half spread of spec h minimized over h → h + o⊗1 − 1⊗o, and R = A/(2π‖h‖). The refined conjecture is R ≤ 1.
+Class and notation as in `../refined_conjecture/`: periodic rings of (ℂ^d)^⊗L with H = Σ h_{i,i+1}, unitary CFTs (c_a, v_a) in the infrared, A = Σ c_a v_a from E_0(L) = e_0 L − πA/(6L) + o(1/L), ‖h‖ the half spread of spec h minimized over h → h + o⊗1 − 1⊗o, and R = A/(2π‖h‖). The refined conjecture is R ≤ 1.
 
-1. The integrable SU(N) chains with Sym^k(ℂ^N) on each site, which Astra's C14 run (`../../codex/work_C14/RESULT.md`) identified as counterexamples, pass every lattice test I could run. At (N, k) = (2, 1 to 4), (3, 1 to 3), (4, 1 and 2) and (5, 1), exact diagonalization reproduces the Bethe/WZW values of e_0, v, c and A to about 1%, and at N = 3 and 4 it confirms that rank two beats the fundamental chain by the predicted margin (R = 0.716 against 0.711 predicted and 0.667 for SU(3), and 0.842 against 0.833 and 0.75 for SU(4)). The violating members (k = 2, N ≥ 7, d ≥ 28) are out of reach of direct lattice numerics, for reasons given below. [numerical, with the Bethe/WZW input of C14]
-2. Outside that family nothing I examined exceeds the fundamental SU(d) value R = 1 − 1/d. Every one-parameter family through an SU(d) point (spin-1 BLBQ, the Sp(4) circle at d = 4, the SO(5) vector circle) peaks there, as a twirling argument says it must to first order. The d = 2 candidates have R ≤ 0.23, and the largest value outside the symmetric family is SU(4)'s 0.75. [numerical]
-3. Across everything computed here and the whole symmetric family, A ≤ π‖h‖ log₂ d holds, with equality only for the Heisenberg chain. The symmetric family forces any bound of the form A ≤ K(d)‖h‖ to grow at least like log d/log log d. [numerical and analytic]
-4. A adds exactly under stacking, but ‖h‖ is only subadditive. It adds for reflection-symmetric bonds and can drop strictly below the sum otherwise, because the optimal o may entangle the two stacked factors. [numerical]
+1. The integrable SU(N) chains with Sym^k(ℂ^N) on each site, found by Astra's C14 run (`../../codex/work_C14/RESULT.md`), violate it. ED at (N, k) = (2, 1 to 4), (3, 1 to 3), (4, 1 and 2) and (5, 1) reproduces the Bethe/WZW e_0, v, c and A to about 1%, and at N = 3 and 4 shows rank two beating the fundamental chain by the predicted margin. For the violating members, exact finite-size Bethe roots validated against this ED give A directly from E_0(L) on rings up to L = 105 and 120: R = 1.0156 at N = 7, d = 28 (1.0139 to 1.0177 over fit forms, predicted 64/63) and R = 1.0497 at N = 8, d = 36 (1.0481 to 1.0516, predicted 1.05). No WZW input enters this last step. [numerical]
+2. Outside that family nothing examined exceeds the SU(d) value 1 − 1/d. Every family through an SU(d) point peaks there, as a twirling argument requires to first order. [numerical]
+3. A ≤ π‖h‖ log₂ d holds for every chain computed and the whole symmetric family, with equality only for the Heisenberg chain. The symmetric family forces any bound A ≤ K(d)‖h‖ to grow at least like log d/log log d. [numerical and analytic]
+4. A adds exactly under stacking, but ‖h‖ is only subadditive. It adds for reflection-symmetric bonds and can fall strictly below the sum otherwise. [numerical]
 
 ## Status
 
-Numerical. Item 1 inherits the standard Bethe-ansatz and WZW identifications from C14 for N ≥ 5. A direct computation of A at N = 7 or 8 (for example from exact finite-size Bethe roots) would upgrade it.
+Numerical. At N ≥ 5 item 1 assumes that the continued Bethe root configuration stays the ground state, which ED confirms at every size it reaches. An SU(N)-symmetric DMRG at N = 7 would remove that assumption.
 
 ## How it was established and checked
 
 - Author: Claude (Anthropic, Opus 5.5), a subagent of the coordinating session, 2026-10-27.
-- AI assistance: gpt-6-astra (high) through `gpt_solve.sh`, two closed-book runs writing a finite-size Bethe solver (`astra_bethe/`), described below. All ED, fits and the survey are mine.
-- Checks: `core.hnorm` (smoothed convex minimization over o) agrees with Powell searches on random bonds to 10⁻⁹. The Sym^k bond (`chains.sym_rep_chain`, built from Schwinger bosons and Lagrange interpolation in X = Σ E_ab ⊗ E_ba) equals the Takhtajan–Babujian bond at N = k = 2 to 4·10⁻¹⁶ and C14's bond up to h_C14 = 2h − 2H_k, so R is the same in both normalizations. The ED engine is `../counterexample_search/ced.py`, already checked there against full diagonalization. Nobody else has rerun this.
+- AI assistance: gpt-6-astra (high) through `gpt_solve.sh`, two closed-book runs that wrote the Bethe solvers in `astra_bethe/` (specs included). The second ended with a backend capacity error after writing its script and results, so it left no report. I reran its validation (11 ED energies, to 4·10⁻¹¹) and its N = 7 production (identical energies, root residuals below 2·10⁻¹³). The fits (`bethe_refit.py`), all ED and the survey are mine.
+- Checks: `core.hnorm` agrees with Powell searches on random bonds to 10⁻⁹. `chains.sym_rep_chain` (Schwinger bosons, Lagrange interpolation in X = Σ E_ab ⊗ E_ba) equals the Takhtajan–Babujian bond at N = k = 2 to 4·10⁻¹⁶, and C14's bond is h_C14 = 2h − 2H_k, so R agrees between normalizations. The ED engine is `../counterexample_search/ced.py`. Nobody else has rerun this.
 
 ## Method and calibration
 
-Two estimators. A_cas fits E_0(L)/L = e_0 − πA/(6L²) + b/L⁴ over ring lengths commensurate with the ground state (L a multiple of N for SU(N)). A_cv multiplies c_half = 3[S(L₂/2) − S(L₁/2)]/ln(L₂/L₁), from periodic ground states, by v = L·[E(k_0 ± 2π/L) − E_0]/2π, the current state at the largest L. When e_0 is known exactly I also use A(L) = −6L[E_0(L) − e_0L]/π size by size.
+A_cas fits E_0(L)/L = e_0 − πA/(6L²) + b/L⁴ over commensurate ring lengths. A_cv is c_half = 3[S(L₂/2) − S(L₁/2)]/ln(L₂/L₁) times v = L[E(k_0 ± 2π/L) − E_0]/2π at the largest L. With exact e_0 I also use A(L) = −6L[E_0(L) − e_0L]/π.
 
 | chain | c | sizes | A_cas (exact) | c_half | v (exact) | R_cas, R_cv |
 |---|---|---|---|---|---|---|
@@ -32,13 +32,13 @@ Two estimators. A_cas fits E_0(L)/L = e_0 − πA/(6L²) + b/L⁴ over ring leng
 | SU(4), h = P | 3 | 4, 8, 12 | 4.743 (4.712) | 3.053 | 1.561 (1.571) | 0.755, 0.759 |
 | Takhtajan–Babujian S = 1 | 3/2 | 8 to 16 | 2.380 (2.356) | 1.505 | 1.595 (1.571) | 0.505, 0.509 |
 
-Without marginal operators A_cas is exact to 10⁻⁴. With them (SU(2)₁, SU(3)₁, SU(2)₂) it overshoots by 0.5 to 1%. A_cv tracks A_cas within 3%. Two-size fits (L = 8, 12 at d = 4 and 5, 10 at d = 5) overshoot by 5.3% and 11.7% on SU(4) and SU(5), and I divide by those factors where only two sizes exist.
+A_cas is exact to 10⁻⁴ without marginal operators and 0.5 to 1% high with them. Two-size fits (L = 8, 12 at d = 4, L = 5, 10 at d = 5) overshoot SU(4) and SU(5) by 5.3% and 11.7%, and I divide by those factors where only two sizes exist.
 
 ## Results
 
-### The symmetric family
+### The symmetric family by ED
 
-In my normalization h = Σ_j H_{k−j} Π_j (H_m harmonic numbers, Π_j the projector on the Young diagram (2k − j, j)), ‖h‖ = H_k/2, v = π/N, c = k(N² − 1)/(N + k), and e_0 = H_k − (1/N)Σ_{j=1}^{k}[ψ(1 + (j−1)/N) − ψ(j/N)] (C14 eq. 5). Ratios to the prediction:
+In my normalization h = Σ_j H_{k−j} Π_j (H_m harmonic numbers, Π_j the projector on the diagram (2k − j, j)), ‖h‖ = H_k/2, v = π/N, c = k(N² − 1)/(N + k), and e_0 is C14's eq. 5 shifted.
 
 | N, k | d | sizes | A_ED/A | e_0 free fit − exact | c_half (pred.) | v(L_max)/(π/N) | R_ED (pred.) |
 |---|---|---|---|---|---|---|---|
@@ -53,52 +53,55 @@ In my normalization h = Σ_j H_{k−j} Π_j (H_m harmonic numbers, Π_j the proj
 | 4, 2 | 10 | 4, 8 | 1.011* | | 5.296 (5) | 0.987 | 0.842 (0.833) |
 | 5, 1 | 5 | 5, 10 | 1.006* | | 4.605 (4) | 0.984 | 0.805 (0.800) |
 
-The starred entries extrapolate A(L) with exact e_0 linearly in 1/L² over the two sizes. c_half at these sizes carries the same 5 to 15% bias as on the SU(N) controls at equal sizes (4.605 for SU(5) at L = 5, 10). The overshoot of A_ED grows with k at N = 2 exactly as the marginal Takhtajan–Babujian logarithms do. Every number is consistent with the formula, including the free-fit e_0, which tests the Bethe ground state independently of any CFT input.
+Starred entries extrapolate A(L) with exact e_0 linearly in 1/L². c_half carries the bias of the SU(N) controls at equal sizes. The A_ED overshoot grows with k as the marginal Takhtajan–Babujian logarithms do. The free-fit e_0 tests the Bethe ground state without any CFT input.
 
-### Why N = 7 and 8 cannot be tested directly
+### The violating members, N = 7 and 8
 
-Rings must have L ≡ 0 mod N. At L = N the ground state is frustration free (E_0 = 0 exactly, the SU(N) singlet with every bond in the (k, k) component), so it carries no Casimir information, and its lowest gap equals that of the fundamental chain at the same L for every k I checked. The next size, L = 2N = 14 at N = 7, has a colour-balanced sector of 1.8·10¹⁶ states. Matrix-product methods fare no better. With c = 32/3 the finite-entanglement exponent is κ = 6/[c(1 + √(12/c))] ≈ 0.27, so χ = 10⁴ gives a correlation length of order ten sites, far from the 1.6% precision a test of R = 64/63 needs, and an SU(7)-symmetric DMRG was not available. Finite-size Bethe roots are the remaining route. [BA PARAGRAPH]
+Rings need L ≡ 0 mod N. At L = N the ground state is frustration free (E_0 = 0), so it carries no Casimir information, and at L = 14 the colour-balanced sector of N = 7 has 1.8·10¹⁶ states. Matrix-product states are no better: at c = 32/3 the finite-entanglement exponent is about 0.27, so χ = 10⁴ reaches a correlation length of order ten sites, far from the 1.6% a test of 64/63 needs.
 
-### Survey of other chains
+So I used Bethe roots. Astra's first solver, with ideal k-strings, misses ED by 0.4/L to 0.7/L in E_0 at k ≥ 2, which corrupts the Casimir term, and was discarded. The second (`astra_bethe/bethe_exact.py`) solves the full nested equations for complex roots, with strings only as seeds, and matches all eleven ED energies at k = 2, 3, 4 to 4·10⁻¹¹. Continuing that configuration in L, I fit A(L) with the Bethe e_0 (which free fits confirm to 10⁻⁸):
+
+| N, k | d | L | R(L_max) | R, 1/ln³L + 1/L² fit | range over forms | predicted |
+|---|---|---|---|---|---|---|
+| 2, 2 | 3 | 4 to 60 | 0.5023 | 0.5003 | 0.4998 to 0.5019 | 0.5 |
+| 3, 2 | 6 | 6 to 90 | 0.7133 | 0.7112 | 0.7106 to 0.7130 | 0.7111 |
+| 4, 2 | 10 | 8 to 120 | 0.8353 | 0.8333 | 0.8327 to 0.8350 | 0.8333 |
+| 5, 2 | 15 | 10 to 105 | 0.9166 | 0.9142 | 0.9130 to 0.9161 | 0.9143 |
+| 7, 2 | 28 | 14 to 105 | 1.0183 | 1.0156 | 1.0139 to 1.0177 | 1.0159 |
+| 8, 2 | 36 | 16 to 120 | 1.0522 | 1.0497 | 1.0481 to 1.0516 | 1.05 |
+
+The forms are A_∞ + a/L² (+ b/L⁴), A_∞ + a/ln³L and A_∞ + a/ln³L + b/L², each over the upper half and upper two thirds of the sizes. The mixed form hits the known answer to 3·10⁻⁴ in R for N ≤ 5, and the others bracket it. Every fit at N = 7 and 8 lies above 1.
+
+### Other chains
 
 | chain | d | c | R | notes |
 |---|---|---|---|---|
-| d = 2 candidates of `../d2_classification` (16 points, incl. 220, 1282) | 2 | 1 | 0.02 to 0.23 | rotor-twist fit to stored E_0(L), L = 10 to 26, VUMPS e_0 for 220 and 1282; Lieb–Robinson caps any c = 1 chain at e/π = 0.865 |
-| Takhtajan–Babujian S = 1/2 to 2 | 2 to 5 | 1 to 2 | 0.50 to 0.48 | table above |
-| spin-1 BLBQ, θ ∈ [π/4, 0.48π] | 3 | 2 | 0.67 to 0.04 | L = 6 to 15, both estimators within 2%, monotone from SU(3) to the ferromagnet |
-| supersymmetric t–J, n = 2/3 | 3 | 2 | about 0.42 | μ in the bond norm, L = 6, 12 |
-| Sp(4) circle cos θ P₅ + sin θ P₁₀, θ ∈ (π/2, 5π/4) | 4 | 3 | 0.74 to 0.20 | L = 8, 12, monotone from SU(4) toward the ferromagnet |
-| Sp(4) at θ = π, SO(5)₁ × Ising | 4 | 3 | 0.64 | split velocities, single-v Casimir artefact of `../counterexample_search` resolved |
-| spin-3/2 off the Sp(4) line near SU(4) | 4 | 3 | [SPIN32] | L = 8, 12 |
-| SO(5) vector cos θ P + sin θ K, θ ∈ [0, π/2) | 5 | 4 | 0.80 to 0.08 | L = 5, 10, monotone from SU(5) |
+| 16 candidates of `../d2_classification` (incl. 220, 1282) | 2 | 1 | 0.02 to 0.23 | rough rotor-twist fits to stored E_0(L), L = 10 to 26 |
+| Takhtajan–Babujian S = 1/2 to 2 | 2 to 5 | 1 to 2 | 0.50 to 0.48 | first table |
+| spin-1 BLBQ, θ from π/4 to 0.48π | 3 | 2 | 0.67 to 0.04 | L = 6 to 15, estimators within 2% |
+| supersymmetric t–J, n = 2/3, μ in the norm | 3 | 2 | about 0.42 | L = 6, 12 only |
+| Sp(4) circle cos θ P₅ + sin θ P₁₀, θ from 0.52π to 1.17π | 4 | 3 | 0.74 to 0.20 | L = 8, 12 |
+| Sp(4) at θ = π (SO(5)₁ × Ising) | 4 | 3 | 0.64 | split velocities |
+| spin 3/2, a₁ − a₃ = −0.1, −0.3, −0.6 off SU(4) | 4 | 3 | 0.73, 0.67, 0.58 | L = 8, 12 |
+| SO(5) vector cos θ P + sin θ K, θ from 0 to 0.42π | 5 | 4 | 0.80 to 0.08 | L = 5, 10 |
 | SU(d) swap | d | d − 1 | 1 − 1/d | |
 
-So the fundamental SU(d) chain is the best known chain at every d ≤ 20, and the rank-two symmetric chain takes over at d = 21 (R = 0.972 at N = 6 against 0.952 for SU(21)).
+Each family falls monotonically away from its SU(d) point. Lieb–Robinson caps every c = 1 chain at e/π = 0.865. The fundamental SU(d) chain is the best known chain for d ≤ 20, and the rank-two chain overtakes it at d = 21 (0.972 against 0.952).
 
-Why SU(d) points are local maxima. ‖h‖ is convex in h and invariant under h → (u⊗u)h(u⊗u)†, so twirling over SU(d) cannot increase it, ‖P + εV̄‖ ≤ ‖P + εV‖. In an SU(d)-singlet ground state only the twirled part V̄ = a + bP of a perturbation shifts E_0 at first order, and that rescales the swap without changing R. Hence R(P + εV) ≤ R(P) + O(ε²) for every perturbation. The symmetric-family counterexample sits far from any fundamental SU(d) point, at a different representation, which is why local searches and symmetric scans never saw it.
+Why SU(d) points are local maxima. ‖h‖ is convex and invariant under h → (u⊗u)h(u⊗u)†, so twirling cannot increase it, ‖P + εV̄‖ ≤ ‖P + εV‖. In an SU(d)-singlet ground state only V̄ = a + bP shifts E_0 at first order, and that leaves R unchanged. So R(P + εV) ≤ R(P) + O(ε²). The counterexample lives in another representation, which is why local scans never saw it.
 
 ### Scaling with d
 
-`scaling.py` evaluates R(N, k) = k(N² − 1)/[N(N + k)H_k] for all (N, k) with d up to 10⁴⁰. The envelope R_max(d) = max over binom(N + k − 1, k) ≤ d grows like 0.37 to 0.39 × ln d/ln ln d from d ≈ 10² to 10⁴⁰ (for example 1.40 at d = 10³, 2.03 at 10⁶, 2.60 at 10⁹). The largest R/ln d over the family and every chain in the survey is 1/(2 ln 2) = 0.721, attained by the Heisenberg chain. So
-
-A ≤ π‖h‖ log₂ d
-
-holds in every case examined, with equality only at d = 2 for the Heisenberg chain, and with room everywhere else (a factor 1.2 for SU(3), growing with d, since SU(d) has 2(1 − 1/d) ≤ log₂ d). It also agrees with the free-fermion and Majorana bounds A ≤ π‖h‖ and is closed under stacking even though ‖h‖ is subadditive, since ‖h_stack‖ ≥ max_i ‖h_i‖ (compress onto a product state of the other factors) gives ‖h_stack‖ Σ_j log₂ d_j ≥ Σ_i ‖h_i‖ log₂ d_i. A d-independent bound has no such closure. I have no argument that the log form is true. At d = 2 it says R ≤ 1/2 for every qubit chain, which Lieb–Robinson alone does not give (it gives e/π for c = 1), and which every qubit chain computed here satisfies.
+`scaling.py` evaluates R(N, k) = k(N² − 1)/[N(N + k)H_k] for d up to 10⁴⁰. The envelope max over binom(N + k − 1, k) ≤ d grows like 0.37 to 0.39 × ln d/ln ln d (1.40 at d = 10³, 2.03 at 10⁶, 2.60 at 10⁹). The largest R/ln d anywhere, family or survey, is 1/(2 ln 2), from the Heisenberg chain. So A ≤ π‖h‖ log₂ d holds in every case, tight only at d = 2, with a factor 1.2 to spare for SU(3) and more beyond. It contains the free-fermion and Majorana bounds A ≤ π‖h‖, and it is closed under stacking although ‖h‖ is subadditive, because compressing onto a product state of the other factors gives ‖h_stack‖ ≥ max_i ‖h_i‖. A d-independent bound has no such closure. I have no argument that the log form is true. At d = 2 it says R ≤ 1/2 for every qubit chain, stronger than Lieb–Robinson, and every qubit chain here satisfies it.
 
 ### Stacking
 
-Heisenberg ⊗ Ising as one d = 4 site gives E_0(L) equal to the sum of the two rings to 10⁻¹⁴ and ‖h‖ = 1 + √2 exactly. For three random pairs of bonds without reflection symmetry the stacked norm is 7.982 against 8.127 for the sum, 12.765 against 12.765, and 12.457 against 12.525. Restricting o to o₁⊗1 + 1⊗o₂ recovers the sum, so the deficit comes from entangling o.
+Heisenberg ⊗ Ising as one d = 4 site has E_0(L) equal to the sum of the two rings to 10⁻¹⁴ and ‖h‖ = 1 + √2 exactly. For three random pairs of bonds without reflection symmetry the stacked norm is 7.982 against a sum of 8.127, 12.765 against 12.765, and 12.457 against 12.525. Restricting o to o₁⊗1 + 1⊗o₂ restores the sum, so entangling o causes the deficit.
 
 ## Reproducing
 
-numpy and scipy only. Run inside this folder.
-
-- `core.py` (‖h‖, ring spectra through `../counterexample_search/ced.py`, both estimators), `chains.py` (bonds, including `sym_rep_chain(N, k)`), `run.py` (one chain, several L, JSON lines), `scan.py` (linear families with cached momentum blocks), `analyze.py`.
-- Calibration: `python3 run.py --model SU3 --L 6 9 12 15 --out data/calib.jsonl` and likewise for XX, Heisenberg, Ising, SU4, `TB --par 1`. Seconds to a minute per size up to L = 24 at d = 2.
-- Symmetric family: `python3 run.py --model symrep --par N k --L ... --out data/symrep_local.jsonl`, then `python3 analyze_symrep.py data/symrep*.jsonl`. (3, 2) at L = 9 takes a minute.
-- Survey: `scan.py --family blbq|sp4|so5|spin32`, `d2_points.py`, `tj_run.sh` and `tj_analyze.py`, `stack.py`, `survey_table.py`, `scaling.py`.
-- Typhon (`slurm_task.sh` with `tasks_*.txt`, results in `/scratch/lustre/jkudlerflam/casimir_survey/`): [JOBS].
+numpy and scipy only, run inside this folder. `core.py` (‖h‖, ring spectra through `../counterexample_search/ced.py`, estimators), `chains.py` (bonds), `run.py` (one chain, several L), `scan.py` (linear families), `analyze.py`, `analyze_symrep.py`, `survey_table.py`, `d2_points.py`, `tj_run.sh` and `tj_analyze.py`, `stack.py`, `scaling.py`, `bethe_refit.py`. Examples: `python3 run.py --model symrep --par 3 2 --L 3 6 9 --out data/symrep_local.jsonl` (a minute), `python3 astra_bethe/bethe_exact.py --validate-only`, then `--families 7 --max-multiple 15` (seconds). Typhon job 17513209 (task 2) ran (3, 3) at L = 9 (19 minutes, 7.7 GB). Larger calibration sizes and (3, 2) at L = 12 sat in the queue and were cancelled, and nothing here depends on them.
 
 ## Relation to the rest of the repository
 
-This tests `../refined_conjecture/` item 3 and complements C14, which found the counterexample analytically. Suggested STATUS line: "The Casimir bound A ≤ 2π‖h‖ is false (C14). ED at N ≤ 4 confirms the symmetric-representation family's e_0, v, c and A to about 1%, every other chain surveyed stays below 1 − 1/d, and A ≤ π‖h‖ log₂ d fits all data, tight only for the Heisenberg chain (`contrib/casimir_survey/`)."
+This tests `../refined_conjecture/` item 3 alongside C14. Suggested STATUS line: "A ≤ 2π‖h‖ is false. Exact finite-size Bethe roots give R = 1.016 at d = 28 and 1.050 at d = 36 for the rank-two symmetric SU(N) chains, ED confirms that family to about 1% at N ≤ 4, no other chain surveyed exceeds 1 − 1/d, and A ≤ π‖h‖ log₂ d fits everything, tight only for the Heisenberg chain (`contrib/casimir_survey/`)."
