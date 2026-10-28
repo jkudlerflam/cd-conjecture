@@ -1,0 +1,59 @@
+{
+  "parameters": {
+    "q": 4,
+    "m": 2,
+    "core_length": 8,
+    "cell_lengths": [
+      9,
+      10
+    ],
+    "core_dimension": 2232000,
+    "site_dimension": 214272048,
+    "selector_t": 1123.5321147205916,
+    "selector_mu": 1884.7858208518207,
+    "selector_penalty": 4503.128458882366,
+    "base_energy_density": -25.530428221759284,
+    "filter_scale": 4957.7496649787645,
+    "vacancy_hop": 0.1,
+    "endpoint_occupations": [
+      0.5050000341054943,
+      0.5000126259437893
+    ],
+    "two_site_occupations": [
+      0.5000500247435559,
+      0.5000000003188289
+    ],
+    "marker_visibility": 0.2331004452746574,
+    "marker_coefficient": 4.289996095124232,
+    "marker_field": 2.62203354475281,
+    "payload_energy_per_cell": -1.9854137723852285
+  },
+  "wrapper": {
+    "core_dimension": 2,
+    "wrapper_dimension": 15,
+    "columns": 225,
+    "max_error": 9.094947017729282e-13
+  },
+  "columns": {
+    "input_columns_per_part": 3232,
+    "entries": [
+      9265,
+      4667
+    ],
+    "max_relative_hermiticity_errors": [
+      2.856417297332542e-17,
+      1.8880809141724552e-16
+    ],
+    "selector_changing_entries": 247,
+    "charge_marker_and_legality_failures": 0
+  },
+  "compression": {
+    "clock_vertices": 5124,
+    "logical_dimension": 4,
+    "two_cell_dimension": 16,
+    "max_two_cell_Fock_matrix_error": 0.0,
+    "max_compensation_error": 6.580345664242157e-14,
+    "selected_reference_length_density": 0.4999999999999999
+  },
+  "scope": "Finite local matrix and projection checks, no CFT estimate."
+}

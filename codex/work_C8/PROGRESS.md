@@ -1,3 +1,26 @@
+# C8 progress, ninth run in progress
+
+2026-10-28. Resumed from the completed eighth-run controller. Read the
+project memory, repository status/background, requested historical sources,
+C19 and C21-C23 handoffs. No external writes, network or subagents.
+
+The earlier main target is complete in the saved run. This continuation
+is auditing the full microscopic composition and the remaining infrared
+step. The source audit has found no controller error so far. The C21/C22
+local source constructions still have the reported target-band obstruction
+and are not being duplicated.
+
+Active work: (i) implement the full periodic bond as a sparse column oracle,
+including wrapper, selector, helices, normalized ports and density fields;
+(ii) use exact total U(1) to replace exponentially crowded geometric Fermi
+points by an explicit rational Sidon construction with finite velocity
+bounds; (iii) examine which massive-sector estimates actually follow from
+the local defect bounds. Neither a conclusive result nor an all-order
+elimination theorem is currently claimed.
+
+The previous completed handoff follows and remains the source for all
+unchanged core proofs and checks.
+
 # C8 progress
 
 2026-10-28 UTC. Eighth run completed. Nonconclusive for the original

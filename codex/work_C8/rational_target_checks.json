@@ -1,0 +1,110 @@
+[
+  {
+    "m": 1,
+    "branch_count": 2,
+    "pair_sum_count": 3,
+    "denominator": 176,
+    "minimum_pair_sum_spacing_numerator": 16,
+    "certified_payload_margin_over_pi": "1/176",
+    "minimum_velocity": 0.28462967654657023,
+    "maximum_velocity": 0.28462967654657023,
+    "velocity_lower_bound": 0.09813534865483603,
+    "mixed_margin_lower_bound_over_pi": "7/8"
+  },
+  {
+    "m": 2,
+    "branch_count": 4,
+    "pair_sum_count": 10,
+    "denominator": 1184,
+    "minimum_pair_sum_spacing_numerator": 10,
+    "certified_payload_margin_over_pi": "1/1184",
+    "minimum_velocity": 0.1960342806591212,
+    "maximum_velocity": 0.29083603799462543,
+    "velocity_lower_bound": 0.09813534865483603,
+    "mixed_margin_lower_bound_over_pi": "7/8"
+  },
+  {
+    "m": 3,
+    "branch_count": 6,
+    "pair_sum_count": 21,
+    "denominator": 3792,
+    "minimum_pair_sum_spacing_numerator": 12,
+    "certified_payload_margin_over_pi": "1/3792",
+    "minimum_velocity": 0.16385499876419982,
+    "maximum_velocity": 0.29223162427859395,
+    "velocity_lower_bound": 0.09813534865483603,
+    "mixed_margin_lower_bound_over_pi": "7/8"
+  },
+  {
+    "m": 8,
+    "branch_count": 16,
+    "pair_sum_count": 136,
+    "denominator": 67712,
+    "minimum_pair_sum_spacing_numerator": 2,
+    "certified_payload_margin_over_pi": "1/67712",
+    "minimum_velocity": 0.12278039955199746,
+    "maximum_velocity": 0.29327737075384885,
+    "velocity_lower_bound": 0.09813534865483603,
+    "mixed_margin_lower_bound_over_pi": "7/8"
+  },
+  {
+    "m": 18,
+    "branch_count": 36,
+    "pair_sum_count": 666,
+    "denominator": 757152,
+    "minimum_pair_sum_spacing_numerator": 2,
+    "certified_payload_margin_over_pi": "1/757152",
+    "minimum_velocity": 0.1090621476868342,
+    "maximum_velocity": 0.2934240100323464,
+    "velocity_lower_bound": 0.09813534865483603,
+    "mixed_margin_lower_bound_over_pi": "7/8"
+  },
+  {
+    "m": 32,
+    "branch_count": 64,
+    "pair_sum_count": 2080,
+    "denominator": 4227584,
+    "minimum_pair_sum_spacing_numerator": 2,
+    "certified_payload_margin_over_pi": "1/4227584",
+    "minimum_velocity": 0.10427454096782714,
+    "maximum_velocity": 0.29344918771179,
+    "velocity_lower_bound": 0.09813534865483603,
+    "mixed_margin_lower_bound_over_pi": "7/8"
+  },
+  {
+    "m": 64,
+    "branch_count": 128,
+    "pair_sum_count": 8256,
+    "denominator": 33686528,
+    "minimum_pair_sum_spacing_numerator": 2,
+    "certified_payload_margin_over_pi": "1/33686528",
+    "minimum_velocity": 0.10120238541838052,
+    "maximum_velocity": 0.2934579969033209,
+    "velocity_lower_bound": 0.09813534865483603,
+    "mixed_margin_lower_bound_over_pi": "7/8"
+  },
+  {
+    "m": 128,
+    "branch_count": 256,
+    "pair_sum_count": 32896,
+    "denominator": 268961792,
+    "minimum_pair_sum_spacing_numerator": 2,
+    "certified_payload_margin_over_pi": "1/268961792",
+    "minimum_velocity": 0.09966818763376842,
+    "maximum_velocity": 0.2934602094534866,
+    "velocity_lower_bound": 0.09813534865483603,
+    "mixed_margin_lower_bound_over_pi": "7/8"
+  },
+  {
+    "m": 256,
+    "branch_count": 512,
+    "pair_sum_count": 131328,
+    "denominator": 2149584896,
+    "minimum_pair_sum_spacing_numerator": 2,
+    "certified_payload_margin_over_pi": "1/2149584896",
+    "minimum_velocity": 0.09890159332207174,
+    "maximum_velocity": 0.29346076386500625,
+    "velocity_lower_bound": 0.09813534865483603,
+    "mixed_margin_lower_bound_over_pi": "7/8"
+  }
+]
