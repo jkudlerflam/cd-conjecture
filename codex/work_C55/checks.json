@@ -1,0 +1,79 @@
+{
+  "scope": "Numerical controls of C55 lemmas, not interacting RG",
+  "shells": {
+    "linear_origin_residual": 9.102814934972181e-20,
+    "half_filled_origin_residual": 7.469426708152616e-20,
+    "max_E2_weighted_ratio": 0.0032048121682824826,
+    "cases": [
+      {
+        "p": 0.9,
+        "z": [
+          0.0,
+          0.0
+        ],
+        "scaled_first": 0.0009264208651505,
+        "scaled_last": 0.0009257948475077882
+      },
+      {
+        "p": 0.9,
+        "z": [
+          0.3,
+          1.0
+        ],
+        "scaled_first": 0.005612411729585218,
+        "scaled_last": 0.005612994695525903
+      },
+      {
+        "p": 0.9,
+        "z": [
+          1.2,
+          -2.0
+        ],
+        "scaled_first": 0.01342078838401742,
+        "scaled_last": 0.013460211106786428
+      },
+      {
+        "p": 1.9,
+        "z": [
+          0.0,
+          0.0
+        ],
+        "scaled_first": 0.0002731992752886236,
+        "scaled_last": 0.00027310583259612095
+      },
+      {
+        "p": 1.9,
+        "z": [
+          0.3,
+          1.0
+        ],
+        "scaled_first": 0.0035493775876147297,
+        "scaled_last": 0.003550207046295143
+      },
+      {
+        "p": 1.9,
+        "z": [
+          1.2,
+          -2.0
+        ],
+        "scaled_first": 0.009447165082944898,
+        "scaled_last": 0.009473478409482034
+      }
+    ]
+  },
+  "cofactors": {
+    "determinant_interpolation_residual": 5.551115123125783e-17
+  },
+  "sequences": {
+    "history_sum_residual": 8.881784197001252e-16,
+    "relevant_tail_norm_residual": 0.0,
+    "finite_recurrence_residual": 8.673617379884035e-19
+  },
+  "root_sources": {
+    "synthetic_root": 1.8990796832736194,
+    "root_residual": 1.5829351718288365e-17,
+    "displacement": 0.0009203167263804879,
+    "proved_radius": 0.003519200544942773,
+    "pair_overlap_residual": 0.0
+  }
+}

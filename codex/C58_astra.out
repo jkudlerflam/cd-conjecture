@@ -1,0 +1,13 @@
+Completed the thermodynamic version of (c). See [RESULT.md](<<repo>/codex/work_C58/RESULT.md>) and [PROOF.md](<<repo>/codex/work_C58/PROOF.md>).
+
+The original d₀=4464 chain and matched thermal action differ in pressure by
+\[
+|p_{\rm physical}-p_{\rm matched}|\le CT e^{-\delta/T},
+\]
+uniformly in the length-source window. The proof covers periodic gluing and fixed marker density, and removes the collaborator’s positive completion through an activated defect comparison.
+
+The final thermal theorem leaves only source-uniform (a) and (b). No \(o(1/L)\) spectral theorem is claimed.
+
+All new checks pass. The new proofs haven’t been independently reviewed.
+
+[gpt_solve: backend=codex model=gpt-6-astra effort=high transcript=20261028T151418-30114]

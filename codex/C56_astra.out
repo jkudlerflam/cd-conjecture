@@ -1,0 +1,11 @@
+I did not prove (7.1), including at \(n=1\). The normalized marked-tree comparison remains unresolved.
+
+[PROOF.md](<<repo>/codex/work_C56/PROOF.md>) contains three partial results:
+
+- A stronger connected-tree norm for C48’s actual polymer expansion.
+- A small, continuous first-order counterterm including all field degrees.
+- A continuous infinite-scale counterterm map, conditional on the collaborator’s RG hypotheses, with uniform cutoff convergence and the fixed-parameter Brouwer construction.
+
+The small checks passed. They do not verify the missing RG estimate. RESULT.md, PROGRESS.md and local STATE.md record the remaining assumptions.
+
+[gpt_solve: backend=codex model=gpt-6-astra effort=high transcript=20261028T151414-29721]

@@ -1,0 +1,23 @@
+{
+  "status": "Small algebra and geometry controls only; physical RG remains unproved.",
+  "connected_network_max_ratio": 0.33289841315929225,
+  "diameter_example_log_terms": {
+    "8": 70.58228018821112,
+    "16": 598.9570941330193,
+    "32": 3728.1083351957323,
+    "64": 20401.608617742353
+  },
+  "relevant_recursion_max_formula_error": 8.673617379884035e-19,
+  "counterterm_uniform_grid_errors": {
+    "0": 0.0026685756702780348,
+    "2": 0.0004836492946441147,
+    "8": 2.8792784605036897e-06,
+    "20": 1.0204456724061117e-10
+  },
+  "four_branch_toy_root_equation": {
+    "max_root_error": 6.776263578034403e-21,
+    "max_equation_residual": 0.0,
+    "max_root_shift": 3.486218031868882e-05,
+    "proved_general_shift_bound": 0.00019174366620686924
+  }
+}

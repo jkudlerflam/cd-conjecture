@@ -1,0 +1,17 @@
+I did not prove estimate (b). The remaining gap is a uniform comparison of the finite-temperature and zero-temperature RG flows, including all scalar normalization terms.
+
+The strongest literature finding is a [2024 Rutgers announcement](https://www.math.rutgers.edu/images/127_SMC_short_talks.pdf#page=10) by Renzi, Giuliani, Mastropietro and Santini of a thermal free-energy theorem for weakly interacting quantum chains. I found no full manuscript establishing its hypotheses or applicability to XXZ. The closest verified published scalar estimate is Giuliani–Mastropietro, equation (3.90), for perturbed Ising. Its vanishing localized quartic prevents directly importing that proof into XXZ.
+
+The completed partial results are:
+
+- A conditional comparison theorem that propagates both gains, \(\eta_h\) and \((T/q_h)^p\), with the terminal shell included.
+- The first interaction coefficient for XXZ. At fixed density,
+  \[
+  f_1(T)-f_1(0)=\frac{T^2}{12t^2}+O(T^4),
+  \]
+  agreeing with the first-order dressed sound velocity. This does not establish the fixed-interaction asymptotic.
+- Precise remaining requirements for retardation and multiple channels. Neither extension closes the missing estimate.
+
+Derivations and passing numerical checks are recorded in [PROOF.md](<<repo>/codex/work_C57/PROOF.md>). The [source audit](<<repo>/codex/work_C57/SOURCE_AUDIT.md>) identifies the published estimates and their limitations.
+
+[gpt_solve: backend=codex model=gpt-6-astra effort=high transcript=20261028T151416-29931]

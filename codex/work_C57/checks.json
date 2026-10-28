@@ -1,0 +1,117 @@
+{
+  "first_order": [
+    {
+      "t": 0.5,
+      "p": 1.9106332362490184,
+      "predicted_grand_canonical": 0.42005643434484136,
+      "predicted_canonical": 0.3333333333333333,
+      "error_grand_canonical": 4.15002476678028e-06,
+      "error_canonical": 2.1205459243556213e-06,
+      "rows": [
+        {
+          "T": 0.01,
+          "grand_canonical": 0.4203230341363884,
+          "canonical": 0.33346951721857643,
+          "mu_thermal": 0.333271576088421
+        },
+        {
+          "T": 0.005,
+          "grand_canonical": 0.4201228940547974,
+          "canonical": 0.3333672897182227,
+          "mu_thermal": 0.3333179075770607
+        },
+        {
+          "T": 0.0025,
+          "grand_canonical": 0.42007303747482183,
+          "canonical": 0.33334181687383335,
+          "mu_thermal": 0.33332947773812155
+        },
+        {
+          "T": 0.00125,
+          "grand_canonical": 0.42006058436960814,
+          "canonical": 0.33333545387925767,
+          "mu_thermal": 0.33333236948721984
+        }
+      ]
+    },
+    {
+      "t": 0.8,
+      "p": 0.9,
+      "predicted_grand_canonical": 0.32516190727562533,
+      "predicted_canonical": 0.13020833333333331,
+      "error_grand_canonical": 1.3411224348058859e-05,
+      "error_canonical": 2.5216798991700706e-06,
+      "rows": [
+        {
+          "T": 0.016,
+          "grand_canonical": 0.3260302902182062,
+          "canonical": 0.13037157741029362,
+          "mu_thermal": -0.9943085764716731
+        },
+        {
+          "T": 0.008,
+          "grand_canonical": 0.3253770745113936,
+          "canonical": 0.1302487886053723,
+          "mu_thermal": -0.9945092467397181
+        },
+        {
+          "T": 0.004,
+          "grand_canonical": 0.3252155814921325,
+          "canonical": 0.13021842547398382,
+          "mu_thermal": -0.9945592823016968
+        },
+        {
+          "T": 0.002,
+          "grand_canonical": 0.3251753184999734,
+          "canonical": 0.13021085501323248,
+          "mu_thermal": -0.9945717830419251
+        }
+      ]
+    },
+    {
+      "t": 0.5,
+      "p": 1.5707963267948966,
+      "predicted_grand_canonical": 0.3333333333333333,
+      "predicted_canonical": 0.3333333333333333,
+      "error_grand_canonical": 1.3708167567183516e-06,
+      "error_canonical": 1.3708167567183516e-06,
+      "rows": [
+        {
+          "T": 0.01,
+          "grand_canonical": 0.3334212245599544,
+          "canonical": 0.33342122455953804,
+          "mu_thermal": -2.393918396847994e-16
+        },
+        {
+          "T": 0.005,
+          "grand_canonical": 0.33335527584943403,
+          "canonical": 0.33335527584943403,
+          "mu_thermal": -6.245004513516506e-17
+        },
+        {
+          "T": 0.0025,
+          "grand_canonical": 0.33333881708674795,
+          "canonical": 0.33333881708674795,
+          "mu_thermal": -6.245004513516506e-17
+        },
+        {
+          "T": 0.00125,
+          "grand_canonical": 0.33333470415009003,
+          "canonical": 0.33333470415009003,
+          "mu_thermal": 2.42861286636753e-17
+        }
+      ]
+    }
+  ],
+  "four_history": {
+    "max_mixed_identity_error": 9.76430144388783e-93,
+    "max_normalized_scalar_ratio": 0.13,
+    "terminal_defect_ratios": [
+      0.37562567650664297,
+      0.14021197689510442,
+      0.019533572137747212,
+      0.0014107226706664515
+    ]
+  },
+  "scope": "First Taylor coefficient and abstract algebra only. No all-order RG claim."
+}

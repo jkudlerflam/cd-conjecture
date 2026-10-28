@@ -1,0 +1,16 @@
+{
+  "pinning": {
+    "trace_tests": 75,
+    "compression_residual": 3.284083995358298e-16,
+    "minimum_slack": 0.0
+  },
+  "selector": {
+    "literal_selector_moves": 6400
+  },
+  "defects": {
+    "noncommuting_comparisons": 9,
+    "minimum_slack": 0.0017613378146917975,
+    "matrix_dimension_per_flag_sector": 64,
+    "delta_bound": 0.9299999999999999
+  }
+}

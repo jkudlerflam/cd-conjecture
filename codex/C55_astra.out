@@ -1,0 +1,16 @@
+The full theorem remains open. I proved a uniform all-scale bound for the Gaussian one-vertex expansion, including arbitrary initial degree,
+\[
+\|(A_{h-1}-A_h)V\|_{\rho,s}
+\le C\gamma^{2h}\|V\|_{H,s+1}.
+\]
+This gives summable linear marginal shifts and a continuous first-order Fermi counterterm. The off-half-filled UV initialization and first infrared integration are also established using the existing finite-integration results.
+
+The missing step is the nonlinear renormalized-tree bound with uniform endpoint, history and source estimates. Lemma N states it explicitly. I proved a joint Brouwer closure conditional on those bounds, and explained how the source estimates would transfer the dimensions \(K\) and \(1/K\).
+
+The numerical controls pass. They do not test the interacting RG.
+
+[Result](RESULT.md) · [Full proof and remaining lemma](PROOF.md) · [Checks](checks.py)
+
+No Luttinger theorem through ports is claimed yet.
+
+[gpt_solve: backend=codex model=gpt-6-astra effort=high transcript=20261028T151412-29532]
