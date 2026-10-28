@@ -74,7 +74,15 @@ Folder `contrib/referee_C44_C45/` (rebuilt from the prose, imports nothing from 
 - [ ] `python3 -B ref_filter_selector.py`. Tested 6 s. Expected `selector_b_range` [4, 4470], `min_mu_c` 0.599, `min_eta_b4` 7.66 and `min_secant_slack` near -2e-10 (equality at the defining point, roundoff).
 - [ ] `python3 -B ref_equalize_gauss.py`. Tested 3 s. Expected `equalize_max_ratio` 0.537 over 12000 trials (C44 eq. 13 holds), `gauss_min_ratio` 0.77496 against `sqrt_3_5` 0.77460, and `min_dimension_of_D3_vertex` 2.325.
 
-Not yet independently reproduced. C44 eqs. 9 and 11 (transport overlap and source formula) are checked only by C44's own scripts. A rebuild is in progress in `contrib/verify_C44/`, which has no report yet.
+Folder `contrib/verify_C44/` (rule-table rebuild of C44 eqs. 9 and 11 by a separate Claude agent, imports nothing from C32, C39, C44 or C45; note Section 5.2).
+
+- [ ] `python3 -B compare_C44.py`. Tested 11 s. Compares the rebuilt second-order bonds with C44's saved ones. Expected `max_abs_diff` at most 5e-11 at n = 1 and at most 3.4e-9 at n = 2, with the scalar density terms agreeing to every quoted digit and the n = 2 traceless `ELR_traceless` near 4e-15 here against 3.3e-11 in C44 (C44's value is roundoff).
+- [ ] `python3 -B roundoff_check.py`. Tested 33 s. Expected `rotation_spread` at most 2.5e-16 under random core-basis rotations, and `C44_minus_rebuild` as in the previous step.
+- [ ] `python3 -B gap_attribution.py`. Tested 20 s. Expected the n = 2 residual to drop from 3.35e-9 to at most 1.8e-9 when C44's tunnelling gap is imposed.
+- [ ] `python3 -B transport.py`. Tested 3 s. Expected the literal marker-move overlap equal to `beta_formula` with `payload_identity_error` near 1e-16 at n = 1, 2, 3.
+- [ ] `python3 -B run_source.py 1 2` and `python3 -B run_source.py 3` regenerate the rebuilt bonds (quoted minutes, about 20 min at n = 3, not rerun for this checklist).
+
+The calibrated c = 2 of the projected n = 1 chain (note eq. 18) comes from `run_c.py prepare`, then `vumps_fes.py MODEL χ...` and `run_c.py MODEL finite χ L` (minutes to hours, Typhon arrays `jobs_*.sh`; quoted, not rerun). From the saved results, `python3 -B fitc.py` (tested under 1 s) prints for M1 `c_fes_chi>=16_calibrated` 1.9716 and `c_fes2_chi>=16_calibrated` 2.0037, for M2 1.9835 and 1.9999, and for the control C1 `c_fes_chi>=16_calibrated` 1.0, and writes `c_results.json`.
 
 ### A6. Local Schrieffer–Wolff, threshold and schedule (C45)
 
@@ -93,9 +101,17 @@ Folder `codex/work_C46/`.
 
 - [ ] `python3 -B checks.py`. Tested 1.3 s. Expected `"status": "numerical, independent toy controls only"`, nine partition-function comparisons with `log_ratio` below `log_upper`, the raw-coefficient growth of the one-cell example, and the chiral-speed thermal coefficient converging to 1.11112 (error 1.7e-5 at the smallest T). Writes `checks.json`.
 
+### A8. Proof attempts on input S (C47 to C62)
+
+Folders `codex/work_C47/` to `codex/work_C62/`, note Section 6. Each has `RESULT.md` (statements with status tags), `PROOF.md` and a `checks.py` of small exact or numerical controls. These controls test algebra, finite identities and scale sums used in the proofs. They do not verify the proofs, and they do not test Lemma N or lemma TP.
+
+- [ ] In each folder, `python3 -B checks.py`. Tested 0 to 1 s each, all sixteen exit with code 0. Each writes `checks.json`. Spot values: C48 `kernel_error` 8.7e-15, `polymer_error` 6.8e-21 and `partition_error` 6.7e-16; C58 positive `minimum_slack` 0.00176; C60 and C61 report `"status": "passed"` with exact rational arithmetic; C62 reports `"status": "passed"` with largest matrix dimension 256.
+
+Where to read. Proved: C48 `PROOF.md` (Eqs. 20, 26, 29 for the constants), C58 `PROOF.md` §§3, 8, 9, C51 `PROOF.md` §§2 to 3, C52 `PROOF.md` §2, C53 `PROOF.md` §§3 to 5, C54 `PROOF.md`. Open: Lemma N in C55 `PROOF.md` §9, with C60 `PROOF.md` §§5 to 6 (the free pair-source counterexample) and the corrected statement in C61 `PROOF.md` §2; lemma TP in C59 `PROOF.md` §7 and C62 `PROOF.md` §7.
+
 ## B. Claim B, the d = 24 chain
 
-Most of this folder is the work of a collaborator (GitHub: salpace)'s campaign with GPT-6-family Codex workers.
+Most of this folder is the work of the campaign of a collaborator (GitHub: salpace) with GPT-6-family Codex workers.
 
 ### B1. The bond
 
@@ -158,8 +174,8 @@ Folder `contrib/vacancy_mobile_numerics/`.
 
 ## D. What no script checks
 
-- Assumption S of the note (Section 5.3), that is, elimination of the massive sector at fixed coupling followed by weak-coupling RG with constants independent of the gap and the wrapper ratios.
+- Assumption S of the note (Section 5.3). Part (a) and the physical-ensemble transfer are now proved (C48, C58; note Section 6.1), and what remains is Lemma N in the corrected form of C61 and lemma TP, with their multichannel extensions (note Section 6.2). These are proofs to be read, and the `checks.py` controls of A8 do not test them.
 - For the d = 24 chain, inputs P (S for the frozen 23-letter chain) and M (vacancy matching), the positive dressed defect cost, and every-ring uniqueness.
-- A calibrated central charge for any chain with c > d - 1, or for any small member of the 46-letter family. None exists.
+- A calibrated central charge for any chain with c > d - 1, or for the microscopic chain of any member of the 46-letter family. The only calibrated value in the family is c = 2 for the second-order projected n = 1 chain (A5, `contrib/verify_C44/`).
 
-These are the items for human review, together with a reading of C39 to C45 (`codex/work_C39/PROOFS.md`, `codex/work_C42/PROOF.md`, `codex/work_C44/PROOFS.md`, `codex/work_C45/PROOF.md`).
+These are the items for human review, together with a reading of C39 to C45 (`codex/work_C39/PROOFS.md`, `codex/work_C42/PROOF.md`, `codex/work_C44/PROOFS.md`, `codex/work_C45/PROOF.md`) and of the proved parts of S (`codex/work_C48/PROOF.md`, `codex/work_C51/PROOF.md`, `codex/work_C52/PROOF.md`, `codex/work_C58/PROOF.md`).
