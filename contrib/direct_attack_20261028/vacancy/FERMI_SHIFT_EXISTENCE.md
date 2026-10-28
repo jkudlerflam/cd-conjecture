@@ -60,7 +60,10 @@ function is continuous in p and its finite history from h to zero.
 The initial marginal vector and fixed initial irrelevant kernels enter
 through a continuous finite-cutoff construction. All single-step
 normalizations have already been solved continuously. No continuity
-uniform in h is required.
+uniform in h is required. For real p and physical histories the
+recursion preserves the real/Hermitian parameter subspace; in particular
+the relevant counterterm vector is real. This makes the map used by
+Brouwer a map of a real cube.
 
 **H3: exact initial matching.** Before the artificial local relevant
 counterterm is varied, the physical ultraviolet action has initial
