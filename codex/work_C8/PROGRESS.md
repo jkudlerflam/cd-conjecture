@@ -1,4 +1,112 @@
-# Eleventh run in progress
+# C8 progress
+
+2026-10-28. Eleventh run completed. Nonconclusive for the original c-d
+conjecture. Start here, then RESULT Sections 55-58. The initialized core
+and readout machine are complete and should not be rebuilt.
+
+## Current best answer
+
+The preferred explicit finite candidate is now CertifiedPeriodicBond
+in certified_periodic_bond.py. It subclasses the prior
+PeriodicBond(flat_vacancies=True) and increases only the forbidden
+selector-bond penalty. Its entire legal Hamiltonian is unchanged.
+The dimension remains d=96*446400(q+1)+48, with m=q^2/8 projected
+payload modes and one length mode. Its fixed-coupling conformal
+interpretation remains unproved.
+
+New proved results close three obligations from the previous handoff.
+
+1. Local raising/lowering trial states give O(v) canonical energy
+   increments. A pinned-marker embedding handles the physical ring
+   quotient. At interior densities, the fixed-(M,L) ground state has
+   a factorial long-cell tail. A Sylvester equation extends this to
+   the operator norm on a complete true low-energy subspace. Min-max
+   bounds the error of cutting off every cell length.
+2. A chemical tilt absorbs the unbounded off-code length into the
+   positive atomic energy. Optimizing the exact projected pressure
+   proves that actual legal ground sectors have length-bit density
+   1/2+O(sqrt(epsilon)) at fixed small nonzero coupling. The finite
+   physical length constraint is retained throughout.
+3. Flipping one incoming selector arrow repairs each forbidden bond.
+   The cost of repairing a k-defect quantum state is at most 4Bk,
+   where B bounds the rest of the physical bond. The new Ksel>=8B
+   excludes all illegal sectors uniformly in L. Marker-free legal
+   rings are excluded by a separate positive-energy comparison.
+
+Together these apply to the full microscopic ground sectors. They
+also give a physical low-window cutoff R-b=O(log L/log log L) with
+spectral error o(1/L), using a prefactor greater than 5/2. An explicit
+positive coupling interval and all size conditions are in run11_audit.md.
+No CFT, positive dressed compressibility or every-ring uniqueness has
+been deduced from these energy estimates.
+
+## New files and verification
+
+- canonical_length_bounds.md and canonical_length_checks.py, canonical
+  increments, physical quotient, factorial tails and spectral cutoff.
+- marker_density_bounds.md and marker_density_checks.py, chemical tilt,
+  pressure and actual legal ground marker-density selection.
+- selector_repair.md, certified_periodic_bond.py and
+  selector_repair_checks.py, full-sector repair and strengthened bond.
+- run11_audit.md, combined low-window theorem, assumptions, limits,
+  reproduction and ranked continuation.
+
+All three scripts pass, and all four new Python files parse. Atomic
+controls cover 18 complex sectors. Four physical scalar-ring controls
+reach dimension 7007, with residual below 1.1e-14. Pressure controls
+cover 34 sectors through dimension 7007, with residual below 1.12e-12,
+five tilts per sector, 10001 Legendre checks and 967417 integer
+marker-count comparisons. The final integer test includes equality at
+the density boundary; its -8.9e-16 minimum margin is roundoff.
+
+Selector checks cover 21840 arrow words, 24 quantum sectors through
+block dimension 256, 8192 differential full-bond columns, and 3232
+active columns for each of the base and perturbation. Legal columns
+are exactly unchanged. At q=4, epsilon_max=1, the strengthened penalty
+is 1.67536545854e13 and the selector-defect gap lower bound is
+8.37682729270e12. These are selector bounds, not CFT measurements.
+
+Numerical scope is explicit. The scalar controls are not the C8
+high-channel chain. Their ED lengths are below the conservative
+asymptotic density-selection threshold. The low-state tests use the
+span of eight computed eigenvectors, not an exhaustive numerical
+fixed-width window. The analytic theorem covers the full window.
+No unchanged core/history suite was rerun. No calculation needed a
+cluster.
+
+## Remaining work, ranked
+
+1. Construct the irreducible low-frequency action with uniform connected
+   support and time bounds after retained-operator subtractions. The
+   new finite-volume cutoff does not solve this, even at fixed cell
+   dimension. The extensive code band still overlaps excited bands.
+   Do not reuse a global bare-Q inverse, finite-order dressing or
+   ordinary connected bare-source decay as an elimination proof.
+2. Bound dressed payload filling shifts and the complete Gaussian
+   quadratic form within the rational target's margins, then establish
+   the compact-boson infrared identification at fixed nonzero coupling.
+   Marker density and sector selection are now controlled; do not list
+   them as wholly unproved or redo their proofs.
+3. Obtain an independent audit of the periodic core and these new
+   estimates. No independent referee or subagent worked on this run.
+4. Reduce the implementation enough to permit two calibrated microscopic
+   CFT estimators. Even the nonviolating q=4 instance has 214272048
+   on-site states, so direct ED of the candidate is not practical.
+5. Keep C19's fixed-d program separate. Latest read-only collaborator
+   files describe additional spatial-bus progress but no completed
+   all-n fixed-d conformal result that closes the present IR gap.
+
+The attempt to turn the new cutoff into an elimination theorem stopped
+at the same retained-propagation subtraction problem as the prior run.
+The reason is recorded in run11_audit Section 6. This is progress, not
+a conclusive answer to any of the three original whole-class outcomes.
+
+Only this folder was modified. No network, external messages, subagents,
+independent referee, cluster job, commit or push. Project STATE.md is
+read-only under the task instruction, so this file carries the memory.
+RUN11_RESULT.md and RUN11_PROGRESS.md preserve the final handoff.
+
+# Eleventh-run chronological record
 
 2026-10-28. Resumed from the completed tenth run. The initialized core,
 collision table and periodic bond are complete and are not being rebuilt.

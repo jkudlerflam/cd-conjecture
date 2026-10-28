@@ -1,0 +1,217 @@
+##### compile:3:3e-4,1e-6,1.05:0.05:1e-7 mu 1e-07
+n=3 mu=0.000e+00 HF=True  #FP=6  body norms ['7.1e-07', '1.1e+00', '2.2e-06', '3.0e-12', '4.7e-12', '3.4e-12', '9.3e-13']
+   k=-1.592460 band 0 v=-1.089e-04
+   k=+1.601889 band 0 v=+1.636e-05
+   k=-1.553154 band 1 v=-2.648e-05
+   k=+1.561091 band 1 v=+1.472e-05
+   k=-1.520006 band 2 v=-2.375e-06
+   k=+1.502641 band 2 v=+2.950e-06
+   bands [(0, 0.00471, 0.5084), (1, 0.00397, 0.4956), (2, -0.00868, 0.4811)]
+   forward: min eig 1.0000 max offdiag 1.984e-05  K [1.0000128151554453, 1.0000049410082448, 0.9999993005713254]
+   res [0, 1, 2, 3] pair transfer                            mismatch 1.49e-03 gamma 8.11e-06 flow 5.28e-05
+   res [1, 2, 3, 4] inter-band exchange / mixed              mismatch 7.65e-03 gamma 3.00e-06 flow 1.46e-05
+   res [0, 4, 1, 3] inter-band exchange / mixed              mismatch 7.74e-03 gamma 4.79e-06 flow 2.33e-05
+   res [0, 3, 4, 5] inter-band exchange / mixed              mismatch 1.40e-02 gamma 6.73e-06 flow 2.87e-05
+   res [0, 3, 2, 5] inter-band exchange / mixed              mismatch 1.91e-02 gamma 6.01e-06 flow 2.38e-05
+   res [2, 3, 4, 5] pair transfer                            mismatch 2.53e-02 gamma 5.54e-06 flow 2.04e-05
+   worst {'points': [0, 1, 2, 3], 'kind': 'pair transfer', 'mismatch': 0.0014917349366219135, 'gamma': 8.106053005145349e-06, 'flow': 5.275269698056426e-05}
+   repeated-point closest {'points': (0, 4, 2, 2), 'mismatch': 0.006158858903213549, 'kind': 'involves a repeated point'}
+   proxy: #FP 6 forward min eig 0.9997 max offdiag 1.25e-04 worst gamma 1.05e-04 flow 2.85e-04
+##### compile:3:1e-3,1e-5,1.05:0.05:1e-6 mu 1e-06
+n=3 mu=0.000e+00 HF=True  #FP=6  body norms ['7.7e-06', '1.1e+00', '2.5e-05', '1.8e-12', '4.0e-12', '2.5e-12', '2.0e-13']
+   k=-1.598996 band 0 v=-8.431e-05
+   k=+1.620616 band 0 v=+3.652e-05
+   k=-1.560116 band 1 v=-1.904e-04
+   k=+1.560424 band 1 v=+1.386e-04
+   k=-1.062890 band 2 v=-1.934e-06
+   k=+1.040962 band 2 v=+2.002e-06
+   bands [(0, 0.01081, 0.5124), (1, 0.00015, 0.4966), (2, -0.01096, 0.3348)]
+   forward: min eig 0.9995 max offdiag 2.850e-04  K [1.000003596338805, 1.0000022464637808, 0.9999568649177126]
+   res [0, 3, 4, 5] inter-band exchange / mixed              mismatch 1.66e-02 gamma 5.24e-06 flow 2.15e-05
+   res [0, 1, 2, 3] pair transfer                            mismatch 2.13e-02 gamma 3.08e-06 flow 1.19e-05
+   res [2, 3, 4, 5] pair transfer                            mismatch 2.22e-02 gamma 4.57e-06 flow 1.74e-05
+   res [0, 1, 1, 2] inter-band exchange / mixed              mismatch 3.89e-02 gamma 1.59e-06 flow 5.16e-06
+   res [0, 3, 2, 3] inter-band exchange / mixed              mismatch 3.89e-02 gamma 2.91e-06 flow 9.45e-06
+   res [0, 4, 2, 4] inter-band exchange / mixed              mismatch 3.89e-02 gamma 2.15e-04 flow 6.99e-04
+   worst {'points': [0, 4, 2, 4], 'kind': 'inter-band exchange / mixed', 'mismatch': 0.03888085707193323, 'gamma': 0.00021512904116428245, 'flow': 0.0006985784792951799}
+   repeated-point closest {'points': (0, 2, 3, 3), 'mismatch': 0.003224256459307462, 'kind': 'involves a repeated point'}
+   proxy: #FP 6 forward min eig 0.9964 max offdiag 1.76e-03 worst gamma 9.29e-04 flow 3.02e-03
+##### compile:3:2e-3,1e-5,1.05:0.05:1e-6 mu 1e-06
+n=3 mu=0.000e+00 HF=True  #FP=6  body norms ['2.6e-05', '1.1e+00', '1.0e-04', '6.7e-13', '1.2e-12', '5.9e-13', '7.8e-14']
+   k=-1.598796 band 0 v=-8.516e-05
+   k=+1.620351 band 0 v=+3.672e-05
+   k=-1.560036 band 1 v=-1.896e-04
+   k=+1.560365 band 1 v=+1.380e-04
+   k=-1.062908 band 2 v=-1.934e-06
+   k=+1.041025 band 2 v=+2.002e-06
+   bands [(0, 0.01078, 0.5123), (1, 0.00016, 0.4966), (2, -0.01094, 0.3349)]
+   forward: min eig 0.9978 max offdiag 1.141e-03  K [1.0000145690774394, 1.0000090923644516, 0.9998276070550096]
+   res [0, 3, 4, 5] inter-band exchange / mixed              mismatch 1.65e-02 gamma 2.09e-05 flow 8.57e-05
+   res [0, 1, 2, 3] pair transfer                            mismatch 2.12e-02 gamma 1.24e-05 flow 4.79e-05
+   res [2, 3, 4, 5] pair transfer                            mismatch 2.22e-02 gamma 1.83e-05 flow 6.95e-05
+   res [0, 1, 1, 2] inter-band exchange / mixed              mismatch 3.88e-02 gamma 6.51e-06 flow 2.12e-05
+   res [0, 3, 2, 3] inter-band exchange / mixed              mismatch 3.88e-02 gamma 1.17e-05 flow 3.82e-05
+   res [0, 4, 2, 4] inter-band exchange / mixed              mismatch 3.88e-02 gamma 8.64e-04 flow 2.81e-03
+   worst {'points': [0, 4, 2, 4], 'kind': 'inter-band exchange / mixed', 'mismatch': 0.03875996804690729, 'gamma': 0.0008643670500021539, 'flow': 0.0028095104086509103}
+   repeated-point closest {'points': (0, 2, 3, 3), 'mismatch': 0.0036232968023606205, 'kind': 'involves a repeated point'}
+   proxy: #FP 6 forward min eig 0.9858 max offdiag 7.03e-03 worst gamma 3.73e-03 flow 1.21e-02
+##### compile:3:1e-3,1e-5,1.05:0.05:0 mu 0.0
+n=3 mu=0.000e+00 HF=True  #FP=6  body norms ['6.2e-06', '1.1e+00', '2.5e-05', '1.8e-12', '4.0e-12', '2.5e-12', '2.0e-13']
+   k=-1.665946 band 0 v=-4.401e-06
+   k=+1.715006 band 0 v=+4.366e-06
+   k=-1.570796 band 1 v=-6.164e-05
+   k=+1.570796 band 1 v=+7.912e-05
+   k=-1.475647 band 2 v=-4.401e-06
+   k=+1.426587 band 2 v=+4.366e-06
+   bands [(0, 0.02453, 0.5381), (1, -0.0, 0.5), (2, -0.02453, 0.4619)]
+   forward: min eig 0.9998 max offdiag 1.152e-04  K [0.9999740485812493, 0.9999997570144864, 0.9999740485889508]
+   res [0, 4, 1, 5] inter-band exchange / mixed              mismatch 5.92e-08 gamma 1.16e-04 flow 1.92e-03
+   res [0, 1, 3, 4] inter-band exchange / mixed              mismatch 4.61e-02 gamma 1.25e-05 flow 3.86e-05
+   res [0, 3, 4, 5] inter-band exchange / mixed              mismatch 4.61e-02 gamma 1.25e-05 flow 3.86e-05
+   res [0, 2, 3, 5] inter-band exchange / mixed              mismatch 4.91e-02 gamma 8.90e-06 flow 2.68e-05
+   res [0, 3, 2, 5] inter-band exchange / mixed              mismatch 4.91e-02 gamma 3.62e-06 flow 1.09e-05
+   res [2, 3, 4, 5] pair transfer                            mismatch 4.91e-02 gamma 6.55e-06 flow 1.97e-05
+   worst {'points': [0, 4, 1, 5], 'kind': 'inter-band exchange / mixed', 'mismatch': 5.921340839876166e-08, 'gamma': 0.00011554259105231691, 'flow': 0.0019228734143849763}
+   repeated-point closest {'points': (2, 2, 3, 3), 'mismatch': 3.8360852272489865e-09, 'kind': 'umklapp/pair (same point twice)'}
+   proxy: #FP 6 forward min eig 0.9961 max offdiag 1.93e-03 worst gamma 1.94e-03 flow 3.16e-02
+##### compile:3:1e-3,0,1.05:0.05:1e-6 mu 1e-06
+n=3 mu=0.000e+00 HF=True  #FP=6  body norms ['7.7e-06', '1.1e+00', '2.5e-05', '1.7e-12', '2.9e-12', '1.7e-12', '4.0e-14']
+   k=-1.591884 band 0 v=-1.244e-03
+   k=+1.591884 band 0 v=+1.244e-03
+   k=-1.550569 band 1 v=-1.132e-03
+   k=+1.550569 band 1 v=+1.132e-03
+   k=-1.083503 band 2 v=-1.898e-06
+   k=+1.083503 band 2 v=+1.898e-06
+   bands [(0, 0.0, 0.5067), (1, 0.0, 0.4936), (2, -0.0, 0.3449)]
+   forward: min eig 0.9979 max offdiag 7.506e-04  K [1.0000850173096025, 1.0000838777831023, 0.9999539241552095]
+   res [0, 1, 2, 3] pair transfer                            mismatch 0.00e+00 gamma 8.27e-05 flow 2.29e-03
+   res [0, 1, 4, 5] pair transfer                            mismatch 2.04e-14 gamma 8.75e-06 flow 2.42e-04
+   res [2, 3, 4, 5] pair transfer                            mismatch 2.04e-14 gamma 8.43e-06 flow 2.33e-04
+   res [0, 2, 1, 3] inter-band exchange / mixed              mismatch 1.72e-03 gamma 3.85e-06 flow 2.45e-05
+   res [0, 3, 4, 5] inter-band exchange / mixed              mismatch 4.13e-02 gamma 8.73e-06 flow 2.78e-05
+   res [0, 1, 0, 3] inter-band exchange / mixed              mismatch 4.13e-02 gamma 8.60e-05 flow 2.74e-04
+   worst {'points': [1, 5, 3, 5], 'kind': 'inter-band exchange / mixed', 'mismatch': 0.04131497019499086, 'gamma': 0.0007180059532227852, 'flow': 0.0022879477759562045}
+   repeated-point closest {'points': (0, 0, 3, 3), 'mismatch': 0.0017189620997086763, 'kind': 'umklapp/pair (same point twice)'}
+   proxy: #FP 6 forward min eig 0.9968 max offdiag 1.13e-03 worst gamma 1.02e-03 flow 3.26e-03
+##### compile:3:1e-3,1e-5,1.05:0:1e-6 mu 1e-06
+n=3 mu=0.000e+00 HF=True  #FP=6  body norms ['7.7e-06', '1.0e+00', '2.5e-05', '1.8e-12', '3.8e-12', '2.4e-12', '1.8e-13']
+   k=-1.600098 band 0 v=-7.454e-05
+   k=+1.622224 band 0 v=+3.448e-05
+   k=-1.560757 band 1 v=-1.876e-04
+   k=+1.560564 band 1 v=+1.382e-04
+   k=-1.025000 band 2 v=-1.776e-06
+   k=+1.003067 band 2 v=+1.833e-06
+   bands [(0, 0.01106, 0.5128), (1, -0.0001, 0.4968), (2, -0.01097, 0.3228)]
+   forward: min eig 0.9994 max offdiag 3.014e-04  K [1.0000029967314696, 1.0000020947929595, 0.9999561578295398]
+   res [0, 3, 4, 5] inter-band exchange / mixed              mismatch 1.76e-02 gamma 5.53e-06 flow 2.23e-05
+   res [2, 3, 4, 5] pair transfer                            mismatch 2.17e-02 gamma 4.66e-06 flow 1.78e-05
+   res [0, 1, 2, 3] pair transfer                            mismatch 2.23e-02 gamma 2.92e-06 flow 1.11e-05
+   res [0, 1, 1, 2] inter-band exchange / mixed              mismatch 3.93e-02 gamma 1.29e-06 flow 4.17e-06
+   res [0, 3, 2, 3] inter-band exchange / mixed              mismatch 3.93e-02 gamma 2.67e-06 flow 8.65e-06
+   res [0, 4, 2, 4] inter-band exchange / mixed              mismatch 3.93e-02 gamma 2.22e-04 flow 7.20e-04
+   worst {'points': [0, 4, 2, 4], 'kind': 'inter-band exchange / mixed', 'mismatch': 0.03934169045343383, 'gamma': 0.00022242149369817283, 'flow': 0.0007196381806696648}
+   repeated-point closest {'points': (0, 2, 3, 3), 'mismatch': 0.0012018991054310035, 'kind': 'involves a repeated point'}
+   proxy: #FP 6 forward min eig 0.9962 max offdiag 1.88e-03 worst gamma 9.65e-04 flow 3.12e-03
+##### compile:3:1e-3,1e-5,1.05:0.2:1e-6 mu 1e-06
+n=3 mu=0.000e+00 HF=True  #FP=6  body norms ['8.0e-06', '1.3e+00', '2.6e-05', '2.1e-12', '4.4e-12', '2.8e-12', '2.5e-13']
+   k=-1.596570 band 0 v=-1.188e-04
+   k=+1.616853 band 0 v=+4.242e-05
+   k=-1.558442 band 1 v=-2.065e-04
+   k=+1.560069 band 1 v=+1.401e-04
+   k=-1.149772 band 2 v=-2.389e-06
+   k=+1.127862 band 2 v=+2.493e-06
+   bands [(0, 0.01014, 0.5114), (1, 0.00081, 0.4963), (2, -0.01096, 0.3625)]
+   forward: min eig 0.9995 max offdiag 2.502e-04  K [1.0000053529751094, 1.0000028525333582, 0.9999591615048646]
+   res [0, 3, 4, 5] inter-band exchange / mixed              mismatch 1.46e-02 gamma 4.42e-06 flow 1.87e-05
+   res [0, 1, 2, 3] pair transfer                            mismatch 1.87e-02 gamma 3.84e-06 flow 1.53e-05
+   res [2, 3, 4, 5] pair transfer                            mismatch 2.35e-02 gamma 4.20e-06 flow 1.57e-05
+   res [0, 1, 1, 2] inter-band exchange / mixed              mismatch 3.81e-02 gamma 2.82e-06 flow 9.23e-06
+   res [0, 3, 2, 3] inter-band exchange / mixed              mismatch 3.81e-02 gamma 3.78e-06 flow 1.23e-05
+   res [0, 4, 2, 4] inter-band exchange / mixed              mismatch 3.81e-02 gamma 1.99e-04 flow 6.50e-04
+   worst {'points': [0, 4, 2, 4], 'kind': 'inter-band exchange / mixed', 'mismatch': 0.03812820307515086, 'gamma': 0.00019884458392954867, 'flow': 0.0006495856920876265}
+   repeated-point closest {'points': (0, 2, 3, 3), 'mismatch': 0.008035203246520517, 'kind': 'involves a repeated point'}
+   proxy: #FP 6 forward min eig 0.9970 max offdiag 1.49e-03 worst gamma 8.39e-04 flow 2.74e-03
+##### compile:4:1e-5,1e-7,1.05:0.05:1e-9 mu 1e-09
+n=4 mu=0.000e+00 HF=True  #FP=8  body norms ['4.5e-09', '1.1e+00', '1.0e-08', '2.6e-11', '4.5e-11', '4.3e-11', '2.3e-11', '5.5e-12', '4.6e-13']
+   k=-1.621902 band 0 v=-7.916e-08
+   k=+1.656624 band 0 v=+2.556e-08
+   k=-1.581605 band 1 v=-1.235e-07
+   k=+1.590000 band 1 v=+1.389e-07
+   k=-1.537573 band 2 v=-2.280e-07
+   k=+1.538046 band 2 v=+2.202e-07
+   k=-1.212930 band 3 v=-3.158e-09
+   k=+1.169340 band 3 v=+3.437e-09
+   bands [(0, 0.01736, 0.5218), (1, 0.0042, 0.5048), (2, 0.00024, 0.4895), (3, -0.02179, 0.3791)]
+   forward: min eig 0.9999 max offdiag 7.277e-05  K [1.0000060942901932, 1.0000021326935418, 1.0000012565986447, 1.000072772291468]
+   res [2, 5, 6, 7] inter-band exchange / mixed              mismatch 3.11e-05 gamma 1.11e-05 flow 1.15e-04
+   res [0, 4, 3, 5] inter-band exchange / mixed              mismatch 4.34e-03 gamma 8.58e-09 flow 4.67e-08
+   res [2, 3, 4, 5] pair transfer                            mismatch 7.92e-03 gamma 1.63e-06 flow 7.90e-06
+   res [0, 3, 2, 5] inter-band exchange / mixed              mismatch 1.17e-02 gamma 2.14e-06 flow 9.53e-06
+   res [0, 3, 6, 7] inter-band exchange / mixed              mismatch 1.17e-02 gamma 1.39e-05 flow 6.19e-05
+   res [0, 1, 3, 4] inter-band exchange / mixed              mismatch 1.77e-02 gamma 3.06e-06 flow 1.23e-05
+   worst {'points': [2, 5, 6, 7], 'kind': 'inter-band exchange / mixed', 'mismatch': 3.1063924980756497e-05, 'gamma': 1.1114501829260459e-05, 'flow': 0.00011536256472961635}
+   repeated-point closest {'points': (0, 2, 5, 5), 'mismatch': 0.003586655198796862, 'kind': 'involves a repeated point'}
+   proxy: #FP 8 forward min eig 0.9999 max offdiag 6.40e-05 worst gamma 1.04e-05 flow 3.35e-05
+##### compile:4:3e-5,1e-7,1.05:0.05:1e-9 mu 1e-09
+n=4 mu=0.000e+00 HF=True  #FP=8  body norms ['2.4e-08', '1.1e+00', '9.0e-08', '5.4e-11', '6.7e-11', '4.3e-11', '1.8e-11', '1.5e-11', '8.3e-12']
+   k=-1.621897 band 0 v=-7.919e-08
+   k=+1.656615 band 0 v=+2.556e-08
+   k=-1.581602 band 1 v=-1.235e-07
+   k=+1.589998 band 1 v=+1.389e-07
+   k=-1.537572 band 2 v=-2.280e-07
+   k=+1.538045 band 2 v=+2.202e-07
+   k=-1.212916 band 3 v=-3.158e-09
+   k=+1.169329 band 3 v=+3.437e-09
+   bands [(0, 0.01736, 0.5218), (1, 0.0042, 0.5048), (2, 0.00024, 0.4895), (3, -0.02179, 0.3791)]
+   forward: min eig 0.9999 max offdiag 1.311e-04  K [0.9999893194419779, 0.9999964785407297, 0.9999979547411723, 0.9998689204592656]
+   res [2, 5, 6, 7] inter-band exchange / mixed              mismatch 3.02e-05 gamma 1.96e-05 flow 2.04e-04
+   res [0, 4, 3, 5] inter-band exchange / mixed              mismatch 4.33e-03 gamma 7.13e-08 flow 3.88e-07
+   res [2, 3, 4, 5] pair transfer                            mismatch 7.92e-03 gamma 2.73e-06 flow 1.32e-05
+   res [0, 3, 2, 5] inter-band exchange / mixed              mismatch 1.17e-02 gamma 3.44e-06 flow 1.53e-05
+   res [0, 3, 6, 7] inter-band exchange / mixed              mismatch 1.17e-02 gamma 2.45e-05 flow 1.09e-04
+   res [0, 1, 3, 4] inter-band exchange / mixed              mismatch 1.77e-02 gamma 5.61e-06 flow 2.26e-05
+   worst {'points': [2, 5, 6, 7], 'kind': 'inter-band exchange / mixed', 'mismatch': 3.0225436187691912e-05, 'gamma': 1.9563150963909836e-05, 'flow': 0.00020359032237840863}
+   repeated-point closest {'points': (0, 2, 5, 5), 'mismatch': 0.0035961692942994006, 'kind': 'involves a repeated point'}
+   proxy: #FP 8 forward min eig 0.9998 max offdiag 1.42e-04 worst gamma 7.61e-05 flow 2.44e-04
+##### compile:4:3e-5,1e-7,1.05:0.05:0 mu 0.0
+n=4 mu=0.000e+00 HF=True  #FP=8  body norms ['2.2e-08', '1.1e+00', '9.0e-08', '5.4e-11', '6.7e-11', '4.3e-11', '1.8e-11', '1.5e-11', '8.3e-12']
+   k=-1.676041 band 0 v=-6.835e-09
+   k=+1.742973 band 0 v=+6.479e-09
+   k=-1.595029 band 1 v=-6.538e-08
+   k=+1.597623 band 1 v=+1.375e-07
+   k=-1.546564 band 2 v=-6.538e-08
+   k=+1.543969 band 2 v=+1.375e-07
+   k=-1.465553 band 3 v=-6.835e-09
+   k=+1.398621 band 3 v=+6.479e-09
+   bands [(0, 0.03347, 0.5442), (1, 0.0013, 0.5081), (2, -0.0013, 0.4919), (3, -0.03347, 0.4558)]
+   forward: min eig 0.9998 max offdiag 7.394e-05  K [0.9999260673876995, 0.9999948914735624, 0.9999948914752841, 0.9999260687534394]
+   res [2, 4, 3, 5] inter-band exchange / mixed              mismatch 1.98e-07 gamma 5.58e-08 flow 8.61e-07
+   res [1, 7, 3, 5] inter-band exchange / mixed              mismatch 6.93e-07 gamma 3.15e-07 flow 4.47e-06
+   res [1, 7, 2, 4] inter-band exchange / mixed              mismatch 8.91e-07 gamma 1.25e-06 flow 1.74e-05
+   res [0, 6, 2, 4] inter-band exchange / mixed              mismatch 9.40e-07 gamma 1.22e-06 flow 1.69e-05
+   res [0, 6, 3, 5] inter-band exchange / mixed              mismatch 1.14e-06 gamma 3.65e-07 flow 4.99e-06
+   res [0, 6, 1, 7] inter-band exchange / mixed              mismatch 1.83e-06 gamma 8.32e-06 flow 1.10e-04
+   worst {'points': [0, 1, 5, 6], 'kind': 'inter-band exchange / mixed', 'mismatch': 0.011484724482296649, 'gamma': 3.448940749116939e-05, 'flow': 0.00015405512746487777}
+   repeated-point closest {'points': (2, 2, 5, 5), 'mismatch': 0.005187794830278314, 'kind': 'umklapp/pair (same point twice)'}
+   proxy: #FP 8 forward min eig 0.9998 max offdiag 1.58e-04 worst gamma 1.60e-04 flow 1.81e-03
+##### compile:4:1e-5,0,1.05:0.05:1e-9 mu 1e-09
+n=4 mu=0.000e+00 HF=True  #FP=8  body norms ['4.5e-09', '1.1e+00', '1.0e-08', '3.8e-11', '6.9e-11', '7.5e-11', '5.0e-11', '1.9e-11', '3.5e-12']
+   k=-1.613951 band 0 v=-1.135e-06
+   k=+1.613951 band 0 v=+1.135e-06
+   k=-1.572502 band 1 v=-5.323e-07
+   k=+1.572502 band 1 v=+5.323e-07
+   k=-1.529408 band 2 v=-8.504e-07
+   k=+1.529408 band 2 v=+8.504e-07
+   k=-1.241279 band 3 v=-2.993e-09
+   k=+1.241279 band 3 v=+2.993e-09
+   bands [(0, -0.0, 0.5137), (1, 0.0, 0.5005), (2, 0.0, 0.4868), (3, -0.0, 0.3951)]
+   forward: min eig 0.9999 max offdiag 9.405e-05  K [1.0000007846400194, 1.0000013858479804, 1.000000828438973, 1.0000940520602057]
+   res [0, 1, 2, 3] pair transfer                            mismatch 4.44e-16 gamma 1.03e-06 flow 2.85e-05
+   res [2, 3, 4, 5] pair transfer                            mismatch 4.44e-16 gamma 1.07e-06 flow 2.96e-05
+   res [0, 1, 4, 5] pair transfer                            mismatch 8.88e-16 gamma 7.91e-07 flow 2.19e-05
+   res [0, 1, 6, 7] pair transfer                            mismatch 5.48e-13 gamma 4.37e-06 flow 1.21e-04
+   res [2, 3, 6, 7] pair transfer                            mismatch 5.49e-13 gamma 6.94e-06 flow 1.92e-04
+   res [4, 5, 6, 7] pair transfer                            mismatch 5.49e-13 gamma 5.67e-06 flow 1.57e-04
+   worst {'points': [2, 3, 6, 7], 'kind': 'pair transfer', 'mismatch': 5.488942633746774e-13, 'gamma': 6.940946815596989e-06, 'flow': 0.0001917854480262974}
+   repeated-point closest {'points': (0, 4, 2, 2), 'mismatch': 0.001645079223589363, 'kind': 'involves a repeated point'}
+   proxy: #FP 8 forward min eig 0.9999 max offdiag 9.36e-05 worst gamma 7.48e-06 flow 2.38e-05

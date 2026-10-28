@@ -1,0 +1,13 @@
+spatial:3:0.05,1e-5,4:0:auto:pfull --chis 8 16 32 48 64 96 128 192 256 --mpotol 1e-12
+spatial:3:0.05,1e-5,4:0:auto:pfree --chis 8 16 32 48 64 96 128 192 256 --mpotol 1e-12
+spatial:3:0.05,1e-5,4:0:auto:pxx --chis 8 16 32 48 64 96 128 192 256 --mpotol 1e-12
+spatial:3:0.1,1e-5,4:0:auto:pfull --chis 8 16 32 48 64 96 128 192 256 --mpotol 1e-12
+spatial:3:0.1,1e-5,4:0:auto:pfree --chis 8 16 32 48 64 96 128 192 256 --mpotol 1e-12
+spatial:3:0.1,1e-5,4:0:auto:pxx --chis 8 16 32 48 64 96 128 192 256 --mpotol 1e-12
+spatial:3:0.05,1e-5,4:0:auto:full --chis 8 16 32 48 64 96 128 --mpotol 1e-8
+spatial:3:0.05,1e-5,4:0:auto:xx --chis 8 16 32 48 64 96 128 --mpotol 1e-8
+compile:3:1e-3,1e-5,1.05:0.05:1e-6:pfull --chis 8 16 32 48 64 96 128 192 256 --mpotol 1e-12
+compile:3:1e-3,1e-5,1.05:0.05:1e-6:pfree --chis 8 16 32 48 64 96 128 192 256 --mpotol 1e-12
+compile:3:1e-3,1e-5,1.05:0.05:1e-6:pxx --chis 8 16 32 48 64 96 128 192 256 --mpotol 1e-12
+compile:4:3e-5,1e-7,1.05:0.05:1e-9:pfull --chis 8 16 32 48 64 96 128 --mpotol 1e-12
+compile:4:3e-5,1e-7,1.05:0.05:1e-9:pxx --chis 8 16 32 48 64 96 128 --mpotol 1e-12

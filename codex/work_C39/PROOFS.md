@@ -133,7 +133,7 @@ Empty determinants are one. Then, as v tends to zero through positive values,
 
     r_j(v)=kappa_j v^(4j)(1+o(1)).                       (13)
 
-[proved, derivation] Expand det(B-tA). In the coefficient of t^(n-k), choose k rows and columns from B. Its entries carry factors v^(2i+2j). The unique least exponent is attained by using row and column sets {0,...,k-1}; that exponent is 2k(k-1). Its coefficient is det C(0)[0:k] det A[k:n], with the determinant sign already accounted for by (-t)^(n-k). Every other minor has a strictly larger exponent. Dividing by det A proves that the k-th elementary symmetric polynomial of the generalized eigenvalues is c_k v^(2k(k-1))(1+o(1)). Positivity and the Newton polygon, or induction on these elementary symmetric polynomials, give the n different valuations 0,4,...,4n-4 and coefficients (13). For the inductive version, the first k largest eigenvalues dominate the k-th symmetric polynomial once the preceding valuation is separated; the next coefficient gives their successive quotient. Equivalently substitute t=v^(4j)y into the characteristic polynomial: its two lowest adjacent powers have the single nonzero positive root y=kappa_j, and the implicit-function theorem supplies that root. There are n such disjoint scales and n roots in total.
+[proved, derivation] Expand det(B-tA). In the coefficient of t^(n-k), choose k rows and columns from B. Its entries carry factors v^(2i+2j). The unique least exponent is attained by using row and column sets {0,...,k-1}; that exponent is 2k(k-1). Its coefficient is det C(0)[0:k] det A[k:n], with the determinant sign already accounted for by (-t)^(n-k). Every other minor has a strictly larger exponent. Dividing by det A proves that the k-th elementary symmetric polynomial of the generalized eigenvalues is c_k v^(2k(k-1))(1+o(1)). Positivity and the Newton polygon, or induction on these elementary symmetric polynomials, give the n different valuations 0,4,...,4n-4 and coefficients (13). For the inductive version, the first k largest eigenvalues dominate the k-th symmetric polynomial once the preceding valuation is separated; the next coefficient gives their successive quotient. Equivalently substitute t=v^(4j)y into the characteristic polynomial. The exponent of its k-th term is 2k(k-1)+4j(n-k), whose two minima are k=j and k=j+1. After division by the common power the limiting polynomial is (-y)^(n-j-1)[-c_j y+c_(j+1)], up to a common sign. Its nonzero root kappa_j is simple. The implicit-function theorem supplies that root. There are n such disjoint scales and n roots in total.
 
 [proved, eigenvectors] Normalize x_j(v) so that its j-th coordinate is one. It tends to the vector x_j^0 with
 
@@ -141,7 +141,23 @@ Empty determinants are one. Then, as v tends to zero through positive values,
     (A x_j^0)_i=0 for i>j,
     (x_j^0)_j=1.                                        (14)
 
-Thus its tail is A[j:n,j:n]^(-1)e_0 divided by that inverse's first entry. One proof is to eliminate the first j equations of B-r_j A, whose leading B block is invertible on its separated scales. They force the first j coordinates to vanish in the limit. In rows i>j the remaining B contributions divided by r_j vanish. The limiting equations are the second condition in (14). Positive definiteness makes this limiting system invertible. Substitution back into the eliminated equations gives a solution continuous at v=0. This also establishes the chosen normalization is valid for sufficiently small v. This proof uses the scaled equations, rather than setting v=0 in the singular pencil.
+Thus its tail is A[j:n,j:n]^(-1)e_0 divided by that inverse's first entry. Here is the scaled elimination in detail. Partition the first j coordinates as I and the tail as T. For j=0 there is no elimination. For j>0,
+
+    B_II=D_I C_II(wv) D_I,
+    ||B_II^(-1)||=O(v^(-4j+4)),
+    ||B_II^(-1)B_IT||=O(v^2),
+    r_j ||B_II^(-1)||=O(v^4).
+
+The middle estimate follows entrywise from D_I^(-1) C_II^(-1) C_IT D_T; every exponent is at least two. Hence the first block equation gives x_I=O(v^2)||x_T||, and its Schur complement is
+
+    D_T [C_TT-C_TI C_II^(-1)C_IT] D_T
+       -r_j A_TT+o(r_j).
+
+The terms omitted here contain either B_II^(-1)B_IT, its transpose, or r_j B_II^(-1), so the displayed estimates bound them in norm. Divide by v^(4j). The first matrix tends to c_* e_0 e_0^T, where c_*=det C(0)[0:j+1]/det C(0)[0:j]>0. Thus the limiting tail equation is
+
+    c_* e_0 e_0^T x_T=kappa_j A_TT x_T.
+
+It forces x_T to be proportional to A_TT^(-1)e_0. Its first entry is nonzero, so normalization by that entry gives (14). The identity kappa_j=c_* (A_TT^(-1))_00 follows from the displayed determinant ratios. All normalized subsequences have this same limit. Invertibility on the complementary directions supplies the continuous, in fact analytic after the scaling, eigenvector branch. This proves the eigenvector limit without setting v=0 in the unscaled singular pencil.
 
 ## 5. Centers, widths and all pair sums
 
@@ -171,6 +187,13 @@ where the signed label counts h have total zero and l1 norm at most four, and m_
     -sum_(j,s) s h_(j,s) s_j,
 
 whose coefficient l1 norm is at most four. Its magnitude is at least (7/8)s_(n-1). Thus the only zero-order coincidences split linearly at nonzero mu. This covers interflavor pair transfer, equal-width backscattering, repeated-point comparisons and umklapp. Quadratic root differences follow either by the same proof or by adding one common label to both pairs.
+
+[proved, velocity check] At mu=0 the physical, J-normalized Bloch matrix is D_w h(k) D_w. Its zero vector is D_w^(-1)x_j. The magnitude of its energy derivative is
+
+    2 sqrt(1+eta^2 r_j^2) x_j^T A x_j /
+                         ||D_w^(-1)x_j||^2 >0.
+
+The finite minimum over j is positive. Small mu and the later small matrix perturbations preserve a positive minimum. Congruence has therefore not been used to assign unphysical velocities.
 
 [proved, finite nonzero field] All 2n roots are analytic in mu on some interval around zero. Let L bound their first derivatives and R bound their second derivatives there. Both bounds are finite and computable from the finite polynomial pencil. Choose a rational mu>0 small enough that the roots remain simple, 4L mu<|theta_(n-1)|/8, and 2R mu<s_(n-1)/8. Comparisons with nonzero constant term retain a positive margin. Those with zero constant term have a linear term exceeding their quadratic remainder. A conservative lower bound is
 
@@ -209,3 +232,32 @@ The frozen implementation can use the same alphabet with marker hopping zero and
 [proved, mixed margins conditional on cell-coordinate translation] Once the payload points in (17) are fixed, only finitely many length densities are excluded by the norm-four and norm-eight local vertices of C20, with sum of payload charges zero imposed by exact U(1). Choose an interior density away from those finitely many points and pure length commensurabilities. An interval with positive mixed margin exists. C8/C27's identity-transport gluing is the inherited microscopic translation input. The finite bounds can be made smaller than the combined payload and mixed margins in the same ordered hierarchy as C32.
 
 [assumed thermodynamic input] Local elimination of massive sectors and weak-coupling Gaussian stability are still needed to conclude c=n in the frozen sector or c=n+1 in the mobile model at fixed nonzero coupling. The finite construction does not prove these statements, uniqueness on every finite ring, or a common Lorentz velocity. They are separate from the all-n finite-band construction.
+
+
+## 8. Exact small-n certificates and numerical checks
+
+[proved, rational certificate] certify.py computes Gamma using a second formula independent of the Lyapunov implementation. Put K=A(w) tensor I+I tensor A(w), R=K^(-1), z=R e_(0,0). Then
+
+    Gamma_ij=2 z^T(P_i tensor I) R(I tensor P_j)z.        (19)
+
+To derive it, expand each convolution in (7), partition the four time variables by the order of the two conversions, and integrate the three positive time intervals. Each integral is a copy of R. Transposition identifies the two orders, giving the factor two. This is also the two-conversion pair-resolvent expansion. All matrices in (19) are rational at the displayed parameters.
+
+[proved, certificate algorithm] Substitute x=tan(k/2) in (12). Its zero condition becomes
+
+    det[2A(x^2-1)+4 eta B x+mu E_u(1+x^2)]=0.            (20)
+
+The degree is at most 2n. Rational interpolation at 2n+1 integers computes this polynomial exactly. Sturm sequences isolate all 2n roots in (-2,2), each to interval width less than 2^(-220). There can be no additional root outside that interval because the degree and root count agree. The leading coefficient det(2A+mu E_u) is positive, so k=pi is not a missing root. The Sturm isolation and positive discriminant implied by the root count certify simplicity.
+
+[proved, angular certification] The intervals are mapped to k=2 arctan x using arctan x=sign(x) pi/4+arctan((x-sign(x))/(1+sign(x)x)). An alternating series with its next-term bound encloses the second term. Machin's formula pi=16 arctan(1/5)-4 arctan(1/239), with the same bounds, encloses pi. Every bound is an exact Fraction. Outward rounding to a denominator 2^250 reduces arithmetic size without weakening validity. Comparing all unordered pair sums, including repeated indices, to all relevant multiples of 2pi yields certified lower bounds. Floating-point numbers in the summaries only display those rational bounds.
+
+[proved, certified scope] The certificates concern the limiting Gaussian reference (12), with w=1/4, v=1/1024, u=1/64, eta=1/100, and mu=10^(-(8n+10)), for n=1,2,3. They do not claim these same fixed parameters work for every n, and do not certify the finite-D diagnostic used for ED. The all-n result uses the terminating search in Sections 4 through 6.
+
+[numerical, independent local rules] literal.py constructs the repeated 2116 by 2116 physical core bond from the 46 letters and its positive boundary operators. Restriction to the legal spaces of dimensions 54,160,424 agrees with model.py after the explicit tree gauge, with maximum row-sum differences 0,5.9e-16,2.1e-16. The physical onsite-charge commutator vanishes entrywise. The excited kinetic blocks pass the diagonal-dominance check. An initial test incorrectly applied that check also to the weighted vacuum block; it failed because its diagonal q^2 can be smaller than q. That block is positive by its rank-one form (1), and the corrected test checks diagonal dominance only on the excited blocks.
+
+[numerical, complete bond source ED] checks.py diagonalizes every excited-cell state, dimensions 24,72,192 per bus at n=1,2,3, and evaluates (6) on all 4,16,64 two-cell code states. No excitation or charge cutoff enters that bond. The saved three-cell coefficients are its two embeddings on code dimensions 8,64,512, as proved by the outer-cell rule following (6). These are full finite-g bonds, not the g^2 coefficients or their free fits. The direct g^2 pair inverse at D=10,100,1000 approaches (7) with relative matrix errors decreasing from .877 to .0223, .947 to .0302 and .979 to .0380 respectively. This checks the high-energy power and normalization, not an all-n extrapolation.
+
+[numerical, finite-coupling physical ED] ed.py diagonalizes the actual legal-cell cluster Hamiltonian at n=1,2,3 and two/three cells in total charges Q=0,1 and even parity for each excited bus. These are exact invariant sectors containing every code state of those charges. No vacuum-walker or carrier excitation is truncated inside them. A polar code identification gives the effective finite-coupling matrix, compared against lambda^2 times (6) and the compressed readout. The other total charges are not included in this cluster ED. They are included in the complete source bond just described. The wrapper, wrong-marker sectors and mobile charge/helix excitations are not diagonalized.
+
+[numerical, eigenvalue scope] The n=3 three-cell block solver returns the code-sector low vectors with residual below 2.8e-12. It does not return an additional excited level, so no next-level gap is reported for that run. ARPACK supplies that extra level for the smaller runs. The fourth-order error law is evidence for the finite-cluster reduction, not a rigorous eigenvalue enclosure or a central-charge measurement.
+
+[proved, infrared scope] Finite-dimensional coefficient bounds do not imply a convergent extensive Schrieffer-Wolff band. C40's completed result separately requires an irreducible low-frequency massive-sector remainder assumption and matching constants for the slowest velocity. The present construction supplies the missing bare momentum witness; it does not prove that additional assumption. Reduce g to control the lambda^2 g^4 interaction relative to the lambda^2 g^2 hopping before choosing lambda. Reducing lambda alone does not reduce this ratio.
