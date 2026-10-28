@@ -8,15 +8,15 @@ This repository is a shared notebook for proving or refuting it. Everything we k
 
 ### 1. Getting oriented
 
-Read "Where things stand" below, then [REPORT.md](REPORT.md). The report is the running account of what has been tried, organized as follows.
+Read [STATUS.md](STATUS.md) first. It is the current state of the project on one page, with the main construction written out step by step, what is checked, what is open, and a glossary of the run labels (C1 to C12, G1, route A and B, and so on). [REPORT.md](REPORT.md) is the chronological record behind it, organized as follows.
 
 - §1 states the conjecture precisely.
 - §2 surveys the literature.
 - §3 analyzes the proof routes.
-- §4 gives the current verdict.
-- §5 lists the next calculations.
+- §4 and §5 give the verdict and the next calculations as of 2026-10-21. Both are superseded by STATUS.md.
 - §6 records provenance.
-- §7 and §8 give the results of the model campaigns.
+- §7 and §8 give the results of the first model campaigns.
+- §9 is the log of the campaign of 2026-10-27: the cell construction, the small-d searches and the infrared analysis.
 
 [lit.md](lit.md) is the literature map. Every claim in this repository carries a tag saying how it was established, so check the tag before relying on it.
 
@@ -68,15 +68,17 @@ These are spelled out in [CONTRIBUTING.md](CONTRIBUTING.md). In brief, tag every
 
 ## Where things stand
 
-The conjecture is open. The working standard is theoretical physics (standard RG, controlled perturbation theory, calibrated numerics), not mathematical rigor.
+The conjecture is open. The working standard is theoretical physics (standard RG, controlled perturbation theory, calibrated numerics), not mathematical rigor. In brief:
 
-- **Small d: no counterexample.** At d = 2 every candidate found turned out to have c ≤ 1, and the last two suspicious points are c = 1 floating spirals. At d = 3 to 7 about 900 points in symmetric families gave nothing above d − 1. The best d = 4 target (a tricritical singlet Majorana on top of the c = 3 spin-3/2 phase, c = 16/5) was not found; it is codimension 2 and shows no fingerprint in the map of the phase.
-- **Large d: a candidate construction for c unbounded at fixed d₀.** Sites spontaneously form long cells (an explicit d = 4 period selector, with a mobile version for every ring length). Each cell runs a port-idle internal computation that prepares a logical code. Neighbouring cells couple through one small bond, either at first order (a free-Majorana chain, c = r/2) or at second order (any logical bond, any N). The target can be an incommensurate multi-flavour Luttinger liquid that needs no symmetry protection. If it holds, c–d fails for d ≥ d₀, roughly 10³ to 10⁴, and no bound c ≤ f(d) exists. Remaining steps: writing the cell machinery out explicitly (fixing d₀), confirming c at finite coupling numerically, an adversarial review, and ring lengths. See REPORT.md §9.
-- **Proved or conditional bounds.** The bound holds for quasi-free chains (c ≤ log₂ d), SU(d)-symmetric bonds, Gaussian IR theories resolved by commuting on-site charges, and WZW IR theories with level ceilings. There is a conditional f(d) bound, c ≤ 1 + (6/π) K(d) log d, if c-many conformal levels appear on rings of length K(d), and c < d² − 1 when the IR stress tensor is built from on-site symmetry currents. Entropic arguments alone can give at best c ≲ (onset length) × log d.
+- **Small d: no counterexample.** Nothing above d − 1 at d = 2, in symmetric families at d = 3 to 7, or at the best d = 4 target. A d = 3 hint from one model run is being checked.
+- **No general proof.** Every lattice quantity we know that bounds c grows like (a length scale) × log d. Proofs exist for quasi-free chains (c ≤ log₂ d), SU(d)-symmetric bonds, and some classes of IR theories, and there are conditional bounds.
+- **Large d: a candidate construction against it.** Sites form long cells that act as big effective sites, coupled so that the chain of cells flows to a stable multi-flavour Luttinger liquid. If it holds, c is unbounded at a fixed local dimension d₀, so no bound c ≤ f(d) exists. It is not yet a counterexample. The missing ingredient is a computation track with a fixed alphabet, without which d₀ is not fixed.
 
-The full account, with what was checked and how, is in [REPORT.md](REPORT.md).
+[STATUS.md](STATUS.md) has the details and the list of where help is most useful.
 
 ## Open problems
+
+These were written when the main line was a proof, and they are still open. For the tasks that matter most for the construction, see STATUS.md.
 
 1. Find a locality-based budget for neutral sectors: starting from a fixed two-site bond on ℂ^d ⊗ ℂ^d, bound all emergent stress-tensor sectors by d − 1.
 2. Find an improvement-independent version of the velocity-free stress response F_h(q) = ∫ S_h(q,ω)/ω² dω → C|q|/(24π), and a microscopic bound on it.
@@ -88,6 +90,7 @@ The full account, with what was checked and how, is in [REPORT.md](REPORT.md).
 
 | Path | Contents |
 |---|---|
+| `STATUS.md` | The current state on one page; start here |
 | `REPORT.md` | The running report, with every claim tagged and provenance in §6 |
 | `lit.md` | Literature map, claims tagged [read] or [recalled] |
 | `routes_draft.md` | Short derivations behind REPORT.md §3 |

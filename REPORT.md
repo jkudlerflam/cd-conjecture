@@ -5,7 +5,9 @@ Inputs: both arXiv versions, read in full. Literature map `lit.md` (Opus agent, 
 Codex: C1 is the free-fermion theorem and C2 is the lattice-Virasoro numerics, specs in `specs/` and transcripts in `codex/`, all closed-book on gpt-6-astra high (§6).
 Nothing here is refereed. §6 lists what I checked.
 
-## Bottom line
+## Bottom line (as of 2026-10-21, superseded)
+This section, §4 and §5 predate the cell construction of §9. The current state is in [STATUS.md](STATUS.md).
+
 The conjecture is open and probably true as stated. No citing paper proves a case, and no counterexample is known within its scope.
 A general proof is blocked, and the block can be located.
 No known lattice quantity bounds c from above and grows linearly in d.
