@@ -1,0 +1,554 @@
+The coefficient \(2\pi\) in the proposed inequality is correct. With the stated generator normalization, the resulting norm bound is
+\[
+\boxed{kv\leq \frac{8\pi T_R}{d}\,\|h\|.}
+\]
+There is a qualification to the exact f-sum identity. Without a symmetry relating \(q\) and \(-q\), the double commutator gives the average of their first moments. Using that average removes the need to assume inversion symmetry.
+
+I set the lattice spacing and \(\hbar\) to one, use periodic boundary conditions, and take the thermodynamic limit before \(q\to0\).
+
+The lattice sum rule follows directly from the spectral representation. Define the unsymmetrized positive-frequency structure factor by
+\[
+S_+^{aa}(q,\omega)
+=\frac1L\sum_n
+ |\langle n|\rho_q^a|0\rangle|^2
+ \delta\!\left(\omega-E_n+E_0\right).
+\]
+Equivalently,
+\[
+S_+^{aa}(q,\omega)
+=\frac{1}{2\pi L}\int_{\mathbb R}dt\,e^{i\omega t}
+ \langle \rho_{-q}^a(t)\rho_q^a(0)\rangle.
+\]
+Thus there is no extra \(2\pi\) multiplying the delta function. An elastic contribution at \(\omega=0\) does not affect the first moment.
+
+Writing \(M_1^a(q)=\int_0^\infty\omega S_+^{aa}(q,\omega)\,d\omega\), completeness gives
+\[
+LM_1^a(q)
+=\langle \rho_{-q}^a(H-E_0)\rho_q^a\rangle.
+\]
+Expanding the double commutator and using \(H|0\rangle=E_0|0\rangle\),
+\[
+\begin{aligned}
+\langle [[\rho_q^a,H],\rho_{-q}^a]\rangle
+&=\langle \rho_q^a(H-E_0)\rho_{-q}^a\rangle
+ +\langle \rho_{-q}^a(H-E_0)\rho_q^a\rangle\\
+&=L\bigl(M_1^a(-q)+M_1^a(q)\bigr).
+\end{aligned}
+\]
+Consequently, define
+\[
+S^{aa}(q,\omega)
+=\frac12\bigl[S_+^{aa}(q,\omega)+S_+^{aa}(-q,\omega)\bigr].
+\]
+Then the requested identity holds:
+\[
+\boxed{
+\int_0^\infty\omega S^{aa}(q,\omega)\,d\omega
+=\frac{1}{2L}
+ \langle [[\rho_q^a,H],\rho_{-q}^a]\rangle.}
+\]
+If the ground state and Hamiltonian have a symmetry making the two unsymmetrized first moments equal, the averaging is unnecessary.
+
+Now evaluate the commutator. For one fixed generator, abbreviate
+\[
+s_x=S_x^a,\qquad
+A_x=[s_x,h_{x,x+1}],\qquad
+D_{a,x}=-[s_x,[s_x,h_{x,x+1}]].
+\]
+Bondwise charge conservation gives
+\[
+[s_x+s_{x+1},h_{x,x+1}]=0,
+\qquad
+[s_{x+1},h_{x,x+1}]=-A_x.
+\]
+This is the first use of the symmetry. It implies
+\[
+[\rho_q^a,H]
+=(1-e^{-iq})\sum_xe^{-iqx}A_x.
+\]
+Only sites \(x,x+1\) contribute to \([A_x,\rho_{-q}^a]\). Moreover,
+\[
+[A_x,s_x]=D_{a,x}.
+\]
+The Jacobi identity and bondwise charge conservation give
+\[
+[A_x,s_x+s_{x+1}]
+=[[s_x,h_{x,x+1}],s_x+s_{x+1}]=0,
+\]
+where \([s_x,s_x+s_{x+1}]=0\) was also used. Therefore
+\[
+[A_x,s_{x+1}]=-D_{a,x}.
+\]
+Combining these identities,
+\[
+\begin{aligned}
+[[\rho_q^a,H],\rho_{-q}^a]
+&=(1-e^{-iq})(1-e^{iq})\sum_xD_{a,x}\\
+&=2(1-\cos q)\sum_xD_{a,x}.
+\end{aligned}
+\]
+Translation invariance now yields the single-bond formula
+\[
+\boxed{
+\int_0^\infty\omega S^{aa}(q,\omega)\,d\omega
+=(1-\cos q)
+\left\langle-[t_1^a,[t_1^a,h_{12}]]\right\rangle_0.}
+\tag{1}
+\]
+No assumption that the ground state is individually invariant under every generator was needed for this algebraic identity.
+
+For the infrared normalization, use affine modes satisfying
+\[
+[j_{\chi,m}^a,j_{\chi,n}^b]
+=if^{abc}j_{\chi,m+n}^c
++\frac{k}{2}m\,\delta^{ab}\delta_{m+n,0},
+\qquad \chi=L,R,
+\tag{2}
+\]
+with commuting left and right algebras. The factor \(1/2\) is required by the convention \(T_{\mathrm{fund}}=1/2\) for \(\mathfrak{su}(N)\). Equivalently, the holomorphic OPE is
+\[
+j^a(z)j^b(0)
+\sim \frac{k\delta^{ab}}{2z^2}
++\frac{if^{abc}j^c(0)}{z}.
+\]
+
+The physical continuum charge densities on a circle of circumference \(L\) are normalized by
+\[
+J_L^a(x)=\frac1L\sum_mj_{L,m}^a e^{2\pi imx/L},
+\qquad
+J_R^a(x)=\frac1L\sum_mj_{R,m}^a e^{-2\pi imx/L}.
+\]
+In particular,
+\[
+\int_0^L dx\,(J_L^a+J_R^a)=j_{L,0}^a+j_{R,0}^a.
+\]
+Matching this operator to the lattice charge fixes the coefficient in the density identification.
+
+For \(q=2\pi m/L>0\),
+\[
+\rho_q^a\longrightarrow j_{L,m}^a+j_{R,-m}^a.
+\]
+On the conformal vacuum, the positive modes annihilate the state, so
+\[
+\rho_q^a|0\rangle\longrightarrow j_{R,-m}^a|0\rangle.
+\]
+Its norm is
+\[
+\langle0|j_{R,m}^a j_{R,-m}^a|0\rangle
+=\langle0|[j_{R,m}^a,j_{R,-m}^a]|0\rangle
+=\frac{km}{2}.
+\]
+Its excitation energy is \(2\pi vm/L=vq\). Hence the current contribution is
+\[
+S_{\mathrm{curr}}^{aa}(q,\omega)
+=\frac{k|q|}{4\pi}\delta(\omega-v|q|)
+\tag{3}
+\]
+at the fixed point, and
+\[
+\int_0^\infty\omega S_{\mathrm{curr}}^{aa}(q,\omega)\,d\omega
+=\frac{kv}{4\pi}q^2.
+\tag{4}
+\]
+The opposite sign of momentum excites the other chirality and gives the same answer.
+
+For a lattice model, (3) is a scaling statement, not generally an exact delta function at finite \(q\). The sufficient spectral assertion is
+\[
+\liminf_{q\to0}\frac1{q^2}
+ \int_0^\infty\omega S^{aa}(q,\omega)\,d\omega
+\geq \frac{kv}{4\pi}.
+\tag{5}
+\]
+It follows by retaining a positive spectral window around \(\omega=v|q|\) and using the current scaling limit there. All omitted spectral weight is nonnegative.
+
+Since \(1-\cos q=q^2/2+O(q^4)\), equations (1) and (5) give
+\[
+kv\leq 2\pi
+ \left\langle-[t_1^a,[t_1^a,h_{12}]]\right\rangle_0.
+\]
+Summing over the generators,
+\[
+\boxed{
+kv\,\dim\mathfrak g
+\leq 2\pi\left\langle
+-\sum_a[t_1^a,[t_1^a,h_{12}]]
+\right\rangle_0.}
+\tag{6}
+\]
+
+Two normalization checks are useful here.
+
+For \(N\) free complex fermion species, take the density
+\[
+S^a=\psi^\dagger t^a\psi,
+\qquad \operatorname{tr}_{\mathrm{fund}}(t^at^b)=\tfrac12\delta^{ab}.
+\]
+For small positive \(q\), the particle-hole interval at the relevant Fermi point has length \(q\). Wick contraction gives
+\[
+\frac1L\langle\rho_{-q}^a\rho_q^a\rangle
+=\frac{q}{2\pi}\operatorname{tr}(t^at^a)
+=\frac{q}{4\pi}.
+\]
+This is (3) with \(k=1\). More generally, free complex fermions transforming in \(R\) have \(k=2T_R\) in convention (2).
+
+For the antiferromagnetic spin-\(\tfrac12\) Heisenberg chain,
+\[
+h=J\,\mathbf S_1\cdot\mathbf S_2,\qquad
+k=1,\qquad v=\frac{\pi J}{2}.
+\]
+Equation (3) predicts
+\[
+S^{zz}(q)=\frac{|q|}{4\pi}+o(|q|),
+\qquad
+M_{1,\mathrm{curr}}^{zz}(q)=\frac J8q^2+o(q^2),
+\]
+which is the \(K=\tfrac12\) spin-chain normalization. Marginally irrelevant interactions introduce logarithmic corrections that vanish in this limit.
+
+The adjoint Casimir identity gives
+\[
+-\sum_a[S_1^a,[S_1^a,h]]=-2h.
+\]
+Using the recalled Bethe-ansatz energy
+\[
+\langle h\rangle_0=J\left(\frac14-\log2\right),
+\]
+and spin rotation invariance,
+\[
+M_1^{zz}(q)
+=(1-\cos q)\frac{2J}{3}\left(\log2-\frac14\right).
+\]
+Its \(q^2\) coefficient is \(J(\log2-\tfrac14)/3\), larger than \(J/8\), as required.
+
+To obtain the norm bound, write
+\[
+C=C_2(R),\qquad M=\|h\|,
+\qquad
+\Phi(X)=\sum_at_1^aXt_1^a.
+\]
+Irreducibility gives
+\[
+\Phi(\mathbf1)=\sum_a(t_1^a)^2=C\mathbf1.
+\]
+Expanding the double commutator,
+\[
+\begin{aligned}
+\mathcal D
+&:=-\sum_a[t_1^a,[t_1^a,h]]\\
+&=-\sum_a\bigl((t_1^a)^2h-2t_1^aht_1^a+h(t_1^a)^2\bigr)\\
+&=2\Phi(h)-2Ch.
+\end{aligned}
+\tag{7}
+\]
+Both sides are unchanged by adding a scalar to \(h\). Center its spectrum:
+\[
+\widetilde h=h-\frac{\lambda_{\max}(h)+\lambda_{\min}(h)}2\mathbf1,
+\qquad
+-M\mathbf1\leq\widetilde h\leq M\mathbf1.
+\]
+The map \(\Phi\) is positive, so
+\[
+-CM\mathbf1\leq\Phi(\widetilde h)\leq CM\mathbf1.
+\]
+Therefore
+\[
+\boxed{\mathcal D
+=2\Phi(\widetilde h)-2C\widetilde h
+\leq4CM\mathbf1.}
+\tag{8}
+\]
+Combining (6), (8), and \(Cd=T_R\dim\mathfrak g\),
+\[
+kv\,\dim\mathfrak g
+\leq8\pi C\|h\|,
+\qquad
+\boxed{kv\leq\frac{8\pi T_R}{d}\|h\|.}
+\tag{9}
+\]
+
+In these conventions the Sugawara tensor is
+\[
+T_{\mathfrak g}(z)
+=\frac1{k+h^\vee}\sum_a:j^a(z)j^a(z):,
+\qquad
+c_{\mathfrak g}=\frac{k\dim\mathfrak g}{k+h^\vee}.
+\]
+Thus
+\[
+\boxed{
+c_{\mathfrak g}v
+\leq\frac{2\pi\langle\mathcal D\rangle_0}{k+h^\vee}
+\leq\frac{8\pi C_2(R)}{k+h^\vee}\|h\|.}
+\tag{10}
+\]
+Since \(k\geq1\), a weaker level-independent version replaces the denominator by \(1+h^\vee\).
+
+For a nonchiral sector with equal left and right velocities, its contribution to the periodic vacuum energy is
+\[
+E_0(L)=e_\infty L-\frac{\pi}{6L}c_{\mathfrak g}v+\cdots.
+\]
+There is no extra factor of two in \(c_{\mathfrak g}\).
+
+The SU(\(N\)) permutation chain checks both the constants and the slack. Here
+\[
+h=P,\qquad \|P\|=1,\qquad
+T_R=\frac12,\qquad
+C=\frac{N^2-1}{2N},\qquad h^\vee=N.
+\]
+The completeness identity is
+\[
+\sum_a(t^a)_{ij}(t^a)_{kl}
+=\frac12\left(\delta_{il}\delta_{jk}
+-\frac1N\delta_{ij}\delta_{kl}\right),
+\]
+or
+\[
+\sum_at_1^at_2^a=\frac12\left(P-\frac1N\mathbf1\right).
+\]
+Since \(Pt_1^a=t_2^aP\),
+\[
+\Phi(P)
+=\sum_at_1^aPt_1^a
+=\sum_at_1^at_2^aP
+=\frac12\left(\mathbf1-\frac1NP\right).
+\]
+Equation (7) therefore becomes
+\[
+\boxed{\mathcal D=\mathbf1-NP,\qquad
+\langle\mathcal D\rangle_0=1-Ne_0(N).}
+\tag{11}
+\]
+
+For the energy and velocity, I use recalled thermodynamic Bethe-ansatz input, not a finite-size extrapolation. The root-density equations in Fourier space are
+\[
+2\cosh(\omega/2)\widehat\rho_r
+-\widehat\rho_{r-1}-\widehat\rho_{r+1}
+=\delta_{r1},
+\quad
+\widehat\rho_0=\widehat\rho_N=0,
+\]
+with solution
+\[
+\widehat\rho_r(\omega)
+=\frac{\sinh((N-r)\omega/2)}{\sinh(N\omega/2)}.
+\]
+The energy formula for \(h=P\) is
+\[
+e_0=1-\int_{\mathbb R}
+ \frac{\rho_1(\lambda)}{\lambda^2+\tfrac14}\,d\lambda.
+\]
+Since the Fourier transform of \((\lambda^2+\tfrac14)^{-1}\) is
+\(2\pi e^{-|\omega|/2}\),
+\[
+\begin{aligned}
+e_0
+&=1-2\int_0^\infty d\omega\,
+ e^{-\omega/2}
+ \frac{\sinh((N-1)\omega/2)}{\sinh(N\omega/2)}\\
+&=1-2\int_0^\infty d\omega\,
+ \frac{e^{-\omega}-e^{-N\omega}}{1-e^{-N\omega}}\\
+&=1-\frac2N\int_0^\infty du\,
+ \frac{e^{-u/N}-e^{-u}}{1-e^{-u}}\\
+&=\boxed{1+\frac2N\left[\psi(1/N)+\gamma\right]}.
+\end{aligned}
+\tag{12}
+\]
+The last integral follows by expanding \(1/(1-e^{-u})\) into its geometric series.
+
+The corresponding dressed hole energy and momentum obey
+\[
+\epsilon_r(\lambda)=2\pi\rho_r(\lambda),
+\qquad
+|p_r'(\lambda)|=2\pi\rho_r(\lambda).
+\]
+The nearest poles of \(\widehat\rho_r\) give
+\[
+\rho_r(\lambda)\sim A_r e^{-2\pi|\lambda|/N}.
+\]
+Thus the velocity at the gapless endpoint is
+\[
+v=\lim_{|\lambda|\to\infty}
+\left|\frac{\epsilon_r'(\lambda)}{p_r'(\lambda)}\right|
+=\lim_{|\lambda|\to\infty}
+\left|\frac{\rho_r'(\lambda)}{\rho_r(\lambda)}\right|
+=\boxed{\frac{2\pi}{N}}.
+\tag{13}
+\]
+The velocity in the question is correct. In particular, \(N=2\) has
+\(P=2\mathbf S_1\cdot\mathbf S_2+\tfrac12\), so \(J=2\) and \(v=\pi\), consistent with the Heisenberg normalization above.
+
+For \(k=1\), define the ratio of the left and right sides of (6) by
+\[
+r_N
+=\frac{v(N^2-1)}{2\pi(1-Ne_0)}
+=\frac{N^2-1}{N(1-Ne_0)}.
+\tag{14}
+\]
+The values are
+
+| \(N\) | \(e_0(N)\) | \(1-Ne_0(N)\) | \(r_N\) |
+|---:|---:|---:|---:|
+| 2 | \(-0.386294361120\) | \(1.772588722240\) | \(0.846219983903\) |
+| 3 | \(-0.703212076746\) | \(3.109636230239\) | \(0.857549394600\) |
+| 4 | \(-0.825118934237\) | \(4.300475736949\) | \(0.871996548610\) |
+
+The energies can also be written
+\[
+\begin{aligned}
+e_0(2)&=1-2\log2,\\
+e_0(3)&=1-\log3-\frac{\pi}{3\sqrt3},\\
+e_0(4)&=1-\frac{\pi}{4}-\frac32\log2.
+\end{aligned}
+\]
+Using
+\[
+\psi(z)=-\gamma-\frac1z+\zeta(2)z-\zeta(3)z^2+O(z^3),
+\]
+one obtains
+\[
+\begin{aligned}
+e_0(N)&=-1+\frac{\pi^2}{3N^2}
+-\frac{2\zeta(3)}{N^3}+O(N^{-4}),\\
+1-Ne_0(N)&=N+1-\frac{\pi^2}{3N}
++\frac{2\zeta(3)}{N^2}+O(N^{-3}),\\
+r_N&=1-\frac1N+\frac{\pi^2}{3N^2}+O(N^{-3})
+\longrightarrow1.
+\end{aligned}
+\tag{15}
+\]
+Thus the coefficient \(2\pi\) in the expectation-value bound is asymptotically sharp.
+
+The generic norm bound, however, gives
+\[
+v\leq\frac{4\pi}{N},
+\qquad
+c_{\mathfrak g}v\leq\frac{4\pi(N-1)}N,
+\]
+whereas the actual values are
+\[
+v=\frac{2\pi}{N},
+\qquad
+c_{\mathfrak g}v=\frac{2\pi(N-1)}N.
+\]
+Their ratios to the norm bounds are \(1/2\) for every \(N\).
+
+For this particular representation and bond, (11) allows a better operator estimate:
+\[
+\mathcal D\leq(N+1)\mathbf1.
+\]
+It yields
+\[
+v\leq\frac{2\pi}{N-1},
+\qquad
+c_{\mathfrak g}v\leq2\pi.
+\]
+Both become sharp as \(N\to\infty\).
+
+For the U(1) example, the level convention must be stated separately. Normalize the chiral algebra by
+\[
+[j_m,j_n]=\kappa m\,\delta_{m+n,0}.
+\]
+Repeating the mode calculation gives
+\[
+S_{\mathrm{curr}}(q,\omega)
+=\frac{\kappa|q|}{2\pi}\delta(\omega-v|q|),
+\]
+and therefore
+\[
+\boxed{\kappa v\leq\pi\langle D_Q\rangle_0,\qquad
+D_Q=-[Q_1,[Q_1,h]].}
+\tag{16}
+\]
+The change from \(2\pi\) to \(\pi\) reflects the change from central term \(k/2\) to central term \(\kappa\).
+
+Take
+\[
+h_{12}=-t(c_1^\dagger c_2+c_2^\dagger c_1),
+\qquad
+Q_x=n_x-\frac12,\qquad t>0.
+\]
+Work in the fixed-filling sector \(n=k_F/\pi\), with \(0<k_F<\pi\). A chemical potential is not included in the quoted bond norm.
+
+Writing \(A=c_1^\dagger c_2\), \(B=c_2^\dagger c_1\),
+\[
+[Q_1,A]=A,\qquad [Q_1,B]=-B.
+\]
+Hence
+\[
+[Q_1,h]=-t(A-B),
+\qquad
+[Q_1,[Q_1,h]]=-t(A+B)=h,
+\]
+so
+\[
+D_Q=-h.
+\]
+The occupied momenta are \([-k_F,k_F]\), giving
+\[
+\langle c_x^\dagger c_{x+1}\rangle
+=\int_{-k_F}^{k_F}\frac{dp}{2\pi}e^{ip}
+=\frac{\sin k_F}{\pi}.
+\]
+Consequently,
+\[
+\langle D_Q\rangle_0=\frac{2t\sin k_F}{\pi},
+\qquad
+v=\left.\frac{d(-2t\cos p)}{dp}\right|_{k_F}
+=2t\sin k_F.
+\tag{17}
+\]
+The free-fermion charge has \(\kappa=1\), so (16) is saturated:
+\[
+\boxed{v=\pi\langle D_Q\rangle_0.}
+\]
+
+One can check this directly without the continuum theory. For small positive \(q\), the allowed particle-hole interval is \(p\in[k_F-q,k_F]\). Thus
+\[
+S(q,\omega)
+=\int_{k_F-q}^{k_F}\frac{dp}{2\pi}
+ \delta\!\left(\omega-\epsilon(p+q)+\epsilon(p)\right),
+\quad \epsilon(p)=-2t\cos p,
+\]
+and
+\[
+\int_0^\infty S(q,\omega)\,d\omega=\frac{q}{2\pi}.
+\]
+The first moment is
+\[
+\begin{aligned}
+M_1(q)
+&=\int_{k_F-q}^{k_F}\frac{dp}{2\pi}
+ [\epsilon(p+q)-\epsilon(p)]\\
+&=\frac{2t\sin k_F}{\pi}(1-\cos q)\\
+&=\frac{v}{2\pi}q^2+O(q^4).
+\end{aligned}
+\]
+This verifies the lattice sum rule, the current normalization, and saturation of the small-\(q\) inequality.
+
+The bond spectrum is \(\{-t,0,0,t\}\), so \(\|h\|=t\). The further norm estimate gives \(v\leq\pi t\), which is not saturated even at half filling, where \(v=2t\). Saturation pertains to the expectation-value bound.
+
+There are three distinct sharpness questions.
+
+- The infrared coefficient \(2\pi\) in (6) is sharp across the stated class, as shown by the SU(\(N\)) limit. The corresponding U(1) coefficient is saturated by free fermions.
+- The algebraic coefficient \(4\) in \(\mathcal D\leq4C_2(R)\|h\|\) is sharp as a two-site operator estimate. For spin-\(\tfrac12\), \(h=P\) gives \(\mathcal D=\mathbf1-2P\), whose singlet eigenvalue is \(3=4C_2(R)\|P\|\).
+- These facts do not establish that the combined coefficient \(8\pi\) in (9) is optimal for critical translation-invariant chains. A chain cannot put every overlapping pair in a pure singlet. The permutation examples require any universal coefficient replacing \(8\pi\) to be at least \(4\pi\), but do not settle the optimum.
+
+The slack comes from spectral weight outside the current scaling regime and from replacing the actual bond expectation by the operator bound. Representation-specific information can reduce the latter substantially.
+
+Finally, the hypotheses need the following interpretation.
+
+The infrared assumption must supply a nonchiral pair of current algebras with level \(k\), the stated velocity, and the charge-fixed overlap with the lattice density. It must hold at the level of the positive spectral scaling limit used in (5). A formal operator identification without control of that limit is insufficient.
+
+It is not necessary to exclude every other low-energy operator. Additional orthogonal spectral contributions only strengthen the inequality. What is necessary is that the claimed current component, with its stated normalization, is present. If the lattice charge is diagonal across several independent current sectors, their contributions add, giving
+\[
+\dim\mathfrak g\sum_i k_iv_i
+\leq2\pi\langle\mathcal D\rangle_0.
+\]
+One must then use this weighted sum instead of a single \(kv\).
+
+For several simple symmetry factors, the derivation applies separately to each factor, using its own \(C_2\), \(T_R\), level, and velocity. For U(1) factors, the lattice charge normalization fixes a level or level matrix; that level need not be an integer. A nontrivial on-site U(1) density also requires a reducible U(1) representation, since its irreducible unitary representations are one-dimensional.
+
+The Sugawara result bounds only the corresponding charged sector’s Casimir contribution. Neutral cosets or other sectors contribute additional terms to the total finite-size vacuum energy and are not bounded by this argument alone.
+
+I checked the SU(\(N\)) double commutators for \(N=2,3,4\), the exact Lehmann sum rule on a six-site SU(2) ring, and the free-fermion integrals at three fillings. All passed, with the largest lattice spectral discrepancy below \(5\times10^{-16}\). The checks are in [check_fsum.py](check_fsum.py), and the conclusions are recorded in the local [STATE.md](STATE.md). The parent project’s memory file is outside the writable workspace and was not changed.
+
+[gpt_solve: backend=codex model=gpt-6-astra effort=high transcript=20261027T200213-60434]

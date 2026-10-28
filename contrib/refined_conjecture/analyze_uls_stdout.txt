@@ -1,0 +1,14 @@
+d=2 L= 6 exact=1 Tlo=1.050 | T2_tor_0.1=nan T1_tor_0.1=1.950 T2_inf_0.1=nan T1_inf_0.1=1.950 T2_tor_0.2=2.300 T1_tor_0.2=2.300 T2_inf_0.2=2.300 T1_inf_0.2=2.300 | T1tor0.1: sigma*=0.844 l*=1.61 R_T=0.51
+d=3 L= 6 exact=1 Tlo=0.700 | T2_tor_0.1=0.775 T1_tor_0.1=0.775 T2_inf_0.1=0.770 T1_inf_0.1=0.770 T2_tor_0.2=0.985 T1_tor_0.2=0.985 T2_inf_0.2=0.980 T1_inf_0.2=0.980 | T1tor0.1: sigma*=0.635 l*=2.70 R_T=1.29
+d=6 L= 6 exact=1 Tlo=0.350 | T2_tor_0.1=nan T1_tor_0.1=nan T2_inf_0.1=nan T1_inf_0.1=nan T2_tor_0.2=nan T1_tor_0.2=nan T2_inf_0.2=nan T1_inf_0.2=nan | T1tor0.1: sigma*=nan l*=nan R_T=nan
+d=2 L= 8 exact=1 Tlo=0.790 | T2_tor_0.1=nan T1_tor_0.1=1.950 T2_inf_0.1=nan T1_inf_0.1=1.950 T2_tor_0.2=2.305 T1_tor_0.2=2.305 T2_inf_0.2=2.305 T1_inf_0.2=2.305 | T1tor0.1: sigma*=0.845 l*=1.61 R_T=0.51
+d=4 L= 8 exact=1 Tlo=0.395 | T2_tor_0.1=0.420 T1_tor_0.1=0.420 T2_inf_0.1=0.420 T1_inf_0.1=0.420 T2_tor_0.2=0.530 T1_tor_0.2=0.530 T2_inf_0.2=0.530 T1_inf_0.2=0.530 | T1tor0.1: sigma*=0.546 l*=3.74 R_T=2.38
+d=3 L= 9 exact=1 Tlo=0.470 | T2_tor_0.1=0.775 T1_tor_0.1=0.775 T2_inf_0.1=0.775 T1_inf_0.1=0.775 T2_tor_0.2=0.980 T1_tor_0.2=0.980 T2_inf_0.2=0.980 T1_inf_0.2=0.980 | T1tor0.1: sigma*=0.636 l*=2.70 R_T=1.29
+d=2 L=10 exact=1 Tlo=0.630 | T2_tor_0.1=nan T1_tor_0.1=1.950 T2_inf_0.1=nan T1_inf_0.1=1.950 T2_tor_0.2=2.305 T1_tor_0.2=2.305 T2_inf_0.2=2.305 T1_inf_0.2=2.305 | T1tor0.1: sigma*=0.845 l*=1.61 R_T=0.51
+d=5 L=10 exact=1 Tlo=0.255 | T2_tor_0.1=0.265 T1_tor_0.1=0.265 T2_inf_0.1=0.260 T1_inf_0.1=0.260 T2_tor_0.2=0.335 T1_tor_0.2=0.335 T2_inf_0.2=0.335 T1_inf_0.2=0.335 | T1tor0.1: sigma*=0.493 l*=4.74 R_T=3.77
+d=2 L=12 exact=1 Tlo=0.525 | T2_tor_0.1=nan T1_tor_0.1=1.950 T2_inf_0.1=0.540 T1_inf_0.1=1.950 T2_tor_0.2=2.305 T1_tor_0.2=2.305 T2_inf_0.2=2.305 T1_inf_0.2=2.305 | T1tor0.1: sigma*=0.845 l*=1.61 R_T=0.51
+d=3 L=12 exact=1 Tlo=0.350 | T2_tor_0.1=nan T1_tor_0.1=0.775 T2_inf_0.1=nan T1_inf_0.1=0.775 T2_tor_0.2=0.980 T1_tor_0.2=0.980 T2_inf_0.2=0.980 T1_inf_0.2=0.980 | T1tor0.1: sigma*=0.636 l*=2.70 R_T=1.29
+d=4 L=12 exact=1 Tlo=0.265 | T2_tor_0.1=0.415 T1_tor_0.1=0.415 T2_inf_0.1=0.415 T1_inf_0.1=0.415 T2_tor_0.2=0.530 T1_tor_0.2=0.530 T2_inf_0.2=0.530 T1_inf_0.2=0.530 | T1tor0.1: sigma*=0.541 l*=3.79 R_T=2.41
+d=6 L=12 exact=1 Tlo=0.175 | T2_tor_0.1=0.180 T1_tor_0.1=0.180 T2_inf_0.1=0.180 T1_inf_0.1=0.180 T2_tor_0.2=0.230 T1_tor_0.2=0.230 T2_inf_0.2=0.230 T1_inf_0.2=0.230 | T1tor0.1: sigma*=0.454 l*=5.82 R_T=5.56
+d=2 L=14 exact=0 Tlo=0.450 | T2_tor_0.1=0.490 T1_tor_0.1=1.950 T2_inf_0.1=0.510 T1_inf_0.1=1.950 T2_tor_0.2=2.305 T1_tor_0.2=2.305 T2_inf_0.2=2.305 T1_inf_0.2=2.305 | T1tor0.1: sigma*=0.845 l*=1.61 R_T=0.51
+d=2 L=18 exact=1 Tlo=0.350 | T2_tor_0.1=0.480 T1_tor_0.1=1.950 T2_inf_0.1=0.485 T1_inf_0.1=1.950 T2_tor_0.2=2.305 T1_tor_0.2=2.305 T2_inf_0.2=2.305 T1_inf_0.2=2.305 | T1tor0.1: sigma*=0.845 l*=1.61 R_T=0.51

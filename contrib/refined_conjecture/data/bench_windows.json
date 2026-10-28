@@ -1,0 +1,47 @@
+{
+ "Ising": {
+  "T_conv": 0.05,
+  "Tstar": 0.725,
+  "Tstar_onesided": 2.3,
+  "sigma": 0.3012108132974865,
+  "ell": 2.7586206896551726,
+  "R_T": 1.9506393931034485,
+  "max_ratio": 1.1360836857053127
+ },
+ "XX": {
+  "T_conv": 0.05,
+  "Tstar": 0.35,
+  "Tstar_onesided": 1.1,
+  "sigma": 0.2893987115841902,
+  "ell": 5.714285714285714,
+  "R_T": 2.857142857142857,
+  "max_ratio": 1.1365703281115882
+ },
+ "XXZ_D0.5": {
+  "T_conv": 0.275,
+  "Tstar": NaN,
+  "Tstar_onesided": 0.775,
+  "sigma": NaN,
+  "ell": NaN,
+  "R_T": NaN,
+  "max_ratio": 1.1757243430584425
+ },
+ "Potts3": {
+  "T_conv": 0.625,
+  "Tstar": 1.1,
+  "Tstar_onesided": 3.1,
+  "sigma": 0.35126263306933386,
+  "ell": 2.361890909090909,
+  "R_T": 2.1509363636363634,
+  "max_ratio": 1.1435617108459966
+ },
+ "TB_spin1": {
+  "T_conv": 2.2,
+  "Tstar": NaN,
+  "Tstar_onesided": NaN,
+  "sigma": NaN,
+  "ell": NaN,
+  "R_T": NaN,
+  "max_ratio": 1.2681570385341392
+ }
+}

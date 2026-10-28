@@ -1,0 +1,485 @@
+The exact spinon dispersions contain an energy scale \(N^{-2}\), despite the bond norm being one. My best thermodynamic estimate is
+\[
+T^*_{0.1}\sim \frac{6.11}{N^2},\qquad
+\ell^*\sim1.03N,\qquad
+\sigma^*\sim\frac{0.916}{\log N}.
+\]
+These large-\(N\) coefficients are conditional on a fermionic scaling limit motivated below. I have not established that limit by a controlled expansion of the full thermodynamic Bethe ansatz. The finite-\(N\) estimates below come from numerical TBA and have a firmer basis.
+
+I used no external sources. The recalled inputs are the nested Bethe equations and the thermodynamic string construction. I derive the ground-state formulas and dispersions from them.
+
+1. Ground state and velocity
+
+Write
+\[
+e_n(\lambda)=\frac{\lambda+in/2}{\lambda-in/2},\qquad
+a_n(\lambda)=\frac{n}{2\pi(\lambda^2+n^2/4)}.
+\]
+The nested Bethe equations in the normalization of the question are
+\[
+e_1(\lambda_j^{(r)})^{L\delta_{r1}}
+=
+\prod_{k\ne j}^{M_r}e_2(\lambda_j^{(r)}-\lambda_k^{(r)})
+\prod_{k=1}^{M_{r-1}}e_{-1}(\lambda_j^{(r)}-\lambda_k^{(r-1)})
+\prod_{k=1}^{M_{r+1}}e_{-1}(\lambda_j^{(r)}-\lambda_k^{(r+1)}),
+\]
+with \(M_0=M_N=0\), and
+\[
+E=L-\sum_{j=1}^{M_1}
+\frac{1}{(\lambda_j^{(1)})^2+1/4}.
+\]
+I am taking these equations as input, rather than deriving the nested algebraic Bethe ansatz from the permutation \(R\)-matrix.
+
+In the singlet thermodynamic ground state, the real-root densities obey
+\[
+\rho_r+a_2*\rho_r-a_1*(\rho_{r-1}+\rho_{r+1})
+=a_1\delta_{r1},
+\qquad \rho_0=\rho_N=0.
+\]
+With \(\widehat a_n(\omega)=e^{-n|\omega|/2}\), division by \(\widehat a_1\) gives
+\[
+2\cosh\frac{\omega}{2}\,\widehat\rho_r
+-\widehat\rho_{r-1}-\widehat\rho_{r+1}
+=\delta_{r1}.
+\]
+Solving this finite difference equation,
+\[
+\widehat\rho_r(\omega)
+=\frac{\sinh((N-r)|\omega|/2)}
+{\sinh(N|\omega|/2)}.
+\]
+Fourier inversion yields
+\[
+\boxed{\rho_r(\lambda)=
+\frac{\sin(\pi r/N)}
+{N[\cosh(2\pi\lambda/N)-\cos(\pi r/N)]}.}
+\]
+In particular,
+\[
+\int\rho_r\,d\lambda=\frac{N-r}{N},
+\]
+as required by the ground-state Bethe root numbers.
+
+The ground-state energy is
+\[
+e_0=1-2\pi\int a_1(\lambda)\rho_1(\lambda)\,d\lambda.
+\]
+Substituting the Fourier transforms,
+\[
+e_0
+=1-2\int_0^\infty
+\frac{e^{-\omega}-e^{-N\omega}}{1-e^{-N\omega}}\,d\omega.
+\]
+Expanding the denominator and integrating term by term,
+\[
+\begin{aligned}
+e_0
+&=1-2\sum_{k=0}^\infty
+\left[\frac1{Nk+1}-\frac1{N(k+1)}\right]\\
+&=\boxed{1+\frac2N[\psi(1/N)+\gamma]}.
+\end{aligned}
+\]
+The expansion
+\[
+\psi(z)=-\gamma-\frac1z+
+\sum_{m=1}^\infty(-1)^{m+1}\zeta(m+1)z^m
+\]
+therefore gives
+\[
+\boxed{
+e_0=-1+\frac{\pi^2}{3N^2}
+-\frac{2\zeta(3)}{N^3}
++\frac{\pi^4}{45N^4}
++O(N^{-5}).
+}
+\]
+
+To obtain the velocity, remove one root from sea \(r\). Dressing its energy and momentum with the same linear integral operator gives
+\[
+\epsilon_r(\lambda)=2\pi\rho_r(\lambda),
+\qquad
+\left|\frac{dp_r}{d\lambda}\right|=2\pi\rho_r(\lambda).
+\]
+At either rapidity endpoint,
+\[
+\rho_r(\lambda)\propto e^{-2\pi|\lambda|/N}.
+\]
+Thus
+\[
+v=\lim_{|\lambda|\to\infty}
+\left|\frac{d\epsilon_r/d\lambda}{dp_r/d\lambda}\right|
+=\boxed{\frac{2\pi}{N}}.
+\]
+This is independent of \(r\) and exact, so there are no subleading terms in its large-\(N\) expansion.
+
+For \(N=2\),
+\[
+v=\pi,\qquad
+e_0=1+\psi(1/2)+\gamma=1-2\log2,
+\]
+which checks the Hamiltonian normalization. Also, \(e_0\to-1\) from above, consistent with the lower bound on each bond.
+
+2. Spinons and the failure of linear dispersion
+
+There are \(N-1\) elementary hole branches. A rank-\(r\) hole carries the antisymmetric representation \(\wedge^r\mathbf N\), of dimension \(\binom Nr\). Physical states on a periodic ring obey additional representation and Bethe-number constraints. These branches should not be counted as independent gases with unrestricted occupations.
+
+Define
+\[
+\alpha_r=\pi\frac{N-r}{N}.
+\]
+Integrating the momentum derivative gives a momentum interval
+\[
+0\le p\le2\alpha_r.
+\]
+For example, choosing momentum decreasing with rapidity,
+\[
+p(\lambda)=\alpha_r
+-2\arctan\!\left[
+\cot\frac{\pi r}{2N}\,
+\tanh\frac{\pi\lambda}{N}
+\right].
+\]
+Eliminating \(\lambda\),
+\[
+\boxed{
+\epsilon_r(p)=\frac{2\pi}{N}
+\frac{\cos(p-\alpha_r)-\cos\alpha_r}{\sin\alpha_r},
+\qquad 0\le p\le2\alpha_r.
+}
+\]
+Both endpoint slopes have magnitude \(2\pi/N\).
+
+The maximum is at \(p=\alpha_r\), so the bandwidth is
+\[
+\boxed{
+W_r=\frac{2\pi}{N}\cot\frac{\pi r}{2N}.
+}
+\]
+Its different large-\(N\) regimes are
+\[
+\begin{array}{c|c|c}
+\text{branch}&\text{momentum width}&W_r\\ \hline
+r\text{ fixed}&2\pi-O(N^{-1})&
+\displaystyle\frac4r-\frac{\pi^2r}{3N^2}+O(N^{-4})\\[2mm]
+r/N\to x\in(0,1)&2\pi(1-x)&
+\displaystyle\frac{2\pi}{N}\cot\frac{\pi x}{2}\\[2mm]
+r=N-k,\ k\text{ fixed}&2\pi k/N&
+\displaystyle\frac{\pi^2k}{N^2}+O(N^{-4})
+\end{array}
+\]
+
+Bandwidth and linearity scale are different. Expanding about an endpoint,
+\[
+\epsilon_r(q)
+=vq-\frac v2\cot\alpha_r\,q^2-\frac v6q^3+\cdots.
+\]
+Consequently,
+
+- For \(r/N\) bounded away from the endpoints, linearity fails at \(q=O(1)\), hence energy \(O(N^{-1})\).
+- For \(r\) or \(N-r\) fixed, it fails already at \(q=O(N^{-1})\), hence energy \(O(N^{-2})\).
+
+The two fundamental/conjugate branches make the latter scale particularly transparent:
+\[
+\begin{aligned}
+\epsilon_1(q)&=\frac{2\pi}{N}q+q^2+\cdots,\\
+\epsilon_{N-1}(q)&=\frac{2\pi}{N}q-q^2+\cdots,
+\qquad 0\le q\le\frac{2\pi}{N}.
+\end{aligned}
+\]
+The first has an \(O(1)\) bandwidth but an \(O(N^{-2})\) endpoint linearity scale.
+
+For \(N=2\), the general formula reduces to
+\[
+\epsilon(p)=\pi\sin p,\qquad 0\le p\le\pi,
+\]
+another normalization check.
+
+3. Thermodynamics, numerical results, and the large-\(N\) gap
+
+First, a specification of the TBA used for the numerical estimates.
+
+Let \(Y_{r,n}=\rho^h_{r,n}/\rho_{r,n}\), where \(r=1,\ldots,N-1\) and \(n\ge1\) is the string length. Define
+\[
+K(\lambda)=\frac1{2\cosh\pi\lambda}.
+\]
+The partially decoupled equations are
+\[
+\begin{aligned}
+\log Y_{r,n}
+={}&-\frac{2\pi}{T}K\,\delta_{r1}\delta_{n1}\\
+&+K*\left[
+\log(1+Y_{r,n-1})+\log(1+Y_{r,n+1})\right.\\
+&\hspace{24mm}\left.
+-\log(1+Y_{r-1,n}^{-1})
+-\log(1+Y_{r+1,n}^{-1})
+\right].
+\end{aligned}
+\]
+The boundary conventions are \(Y_{r,0}=0\) and \(Y_{0,n}^{-1}=Y_{N,n}^{-1}=0\).
+
+Here is how these equations follow from the string construction. The string-density constraints have the form
+\[
+a_n\delta_{r1}
+=\rho^h_{r,n}+\sum_m A_{nm}*\rho_{r,m}
+-\sum_m B_{nm}*(\rho_{r-1,m}+\rho_{r+1,m}),
+\]
+where
+\[
+\begin{aligned}
+A_{nm}&=\delta_{nm}\delta+(1-\delta_{nm})a_{|n-m|}
++2\sum_{j=1}^{\min(n,m)-1}a_{|n-m|+2j}+a_{n+m},\\
+B_{nm}&=\sum_{j=1}^{\min(n,m)}a_{|n-m|+2j-1}.
+\end{aligned}
+\]
+Varying energy minus \(T\) times the Yang–Yang entropy,
+\[
+s_{\rm YY}=\sum_{r,n}\int
+\left[(\rho+\rho^h)\log(\rho+\rho^h)
+-\rho\log\rho-\rho^h\log\rho^h\right],
+\]
+gives the coupled TBA. Applying
+\[
+C_{nm}=\delta_{nm}\delta-K(\delta_{n,m-1}+\delta_{n,m+1})
+\]
+uses the identities \(CA=I\), \(CB=K I\), and \(Ca=K\delta_{n1}\), producing the displayed decoupled equations.
+
+The free energy can be written
+\[
+\boxed{
+f(T)=e_0-T\sum_{r=1}^{N-1}
+\int\rho_r(\lambda)\log(1+Y_{r,1}(\lambda))\,d\lambda.
+}
+\]
+Thus this calculation includes the marginal corrections automatically.
+
+For the entropy, I differentiated these equations rather than differencing free energies. If
+\[
+x_{r,n}=\log Y_{r,n},\qquad
+z_{r,n}=T\partial_Tx_{r,n},
+\]
+then
+\[
+s=\sum_r\int\rho_r
+\left[
+\log(1+e^{x_{r,1}})
++\frac{e^{x_{r,1}}}{1+e^{x_{r,1}}}z_{r,1}
+\right].
+\]
+Differentiating the TBA supplies a linear integral equation for \(z\).
+
+As a check, the infinite-temperature constant solution is
+\[
+Y_{r,n}=\frac{n(n+N)}{r(N-r)}.
+\]
+Substitution into the free-energy expression gives \(f/T\to-\log N\). Independently, the infinite-temperature variance per bond is \(1-N^{-2}\), since covariances between distinct bonds vanish. Hence
+\[
+s(T)=\log N-\frac{1-N^{-2}}{2T^2}+O(T^{-3}).
+\]
+For \(N=2,T=100\), the numerical result was
+\[
+s=0.693109434456,
+\]
+compared with \(0.693109680560\) from the displayed expansion.
+
+The main onset calculations used 40 strings, 48 for \(N=2\), and 1024 rapidity points. Integral-equation residuals were below \(2\times10^{-9}\). These residuals are not estimates of the string-truncation error. Separate cutoff checks support roughly three significant digits in the table below.
+
+The controlled bound supplied by entropy saturation becomes
+\[
+\boxed{
+T^*_{0.1}\le
+\frac{6\log N}{0.9N(N-1)},\qquad
+\ell^*\ge\frac{0.9\pi(N-1)}{3\log N}.
+}
+\]
+The exact dispersions alone do not improve this to a thermodynamic \(N^{-2}\) bound.
+
+The following gives the stronger, but conditional, estimate.
+
+Set \(k_F=\pi/N\). The fundamental particle and hole dispersions found above approach
+\[
+\epsilon_{\rm particle}(q)=(k_F+q)^2-k_F^2,
+\qquad
+\epsilon_{\rm hole}(q)=k_F^2-(k_F-q)^2.
+\]
+This suggests \(N\) fermion flavors with dispersion \(k^2\), density \(1/N\) per flavor, and fixed total density one.
+
+This identification is the heuristic step. Matching one-particle dispersions does not determine thermodynamics. In particular, the growing color and string sums must be controlled before weak individual scattering can justify an ideal-gas limit.
+
+Conditional on that reduction, the rest follows without further assumptions. Write
+\[
+t=N^2T,\qquad k=q/N,\qquad \mu=m/N^2.
+\]
+The density constraint becomes
+\[
+1=\frac1\pi\int_0^\infty
+\frac{dq}{1+\exp[(q^2-m)/t]}.
+\]
+Define \(n_q=[1+\exp((q^2-m)/t)]^{-1}\). Then
+\[
+f(T)=-1+\frac{\mathcal F(t)}{N^2}+o(N^{-2}),
+\]
+where
+\[
+\mathcal F(t)=m-\frac t\pi\int_0^\infty
+\log(1+e^{(m-q^2)/t})\,dq,
+\]
+and
+\[
+s(T)=\mathcal S(t)+o(1),\qquad
+\mathcal S(t)=\frac1\pi\int_0^\infty
+[-n_q\log n_q-(1-n_q)\log(1-n_q)]\,dq.
+\]
+The derivative of \(m(t)\) cancels from \(-\mathcal F'(t)\) by the density constraint.
+
+There are two useful analytic checks. At zero temperature, \(m=\pi^2\), giving
+\[
+\mathcal F(0)=\frac1\pi\int_0^\pi q^2\,dq=\frac{\pi^2}{3}.
+\]
+This reproduces the leading exact ground-state energy. A Sommerfeld expansion gives
+\[
+1=\frac{\sqrt m}{\pi}
+-\frac{\pi t^2}{24m^{3/2}}+\cdots,
+\qquad
+m=\pi^2+\frac{t^2}{12}+\cdots,
+\]
+and consequently
+\[
+\boxed{
+\mathcal S(t)=\frac t6+\frac{t^3}{45\pi^2}+\cdots.
+}
+\]
+The leading term agrees with
+\[
+s_{\rm CFT}=\frac{N(N-1)T}{6}
+=\frac t6(1-N^{-1}).
+\]
+
+Numerical quadrature gives
+\[
+\begin{array}{c|c|c}
+t&\mathcal S(t)&6\mathcal S(t)/t\\ \hline
+2&0.3542649212&1.0627947635\\
+6&0.9059908102&0.9059908102
+\end{array}
+\]
+and
+\[
+\max_t\frac{6\mathcal S(t)}t
+=1.06946707,\qquad t_{\rm max}=2.45739154.
+\]
+Thus the limiting candidate never exceeds the upper 10% tolerance. Its first failure is the lower crossing:
+\[
+\frac{6\mathcal S(a)}a=0.9,\qquad
+a=6.1079521206.
+\]
+It predicts
+\[
+\boxed{
+T^*_{0.1}\sim\frac{6.10795}{N^2},\quad
+\ell^*\sim1.02869N,\quad
+\sigma^*\sim\frac{0.916193}{\log N}.
+}
+\]
+
+The finite-\(N\) TBA supports this candidate. At \(t=2\), the ratios are
+\[
+1.08139286\quad(N=8),\qquad
+1.07395687\quad(N=16),
+\]
+approaching the candidate value \(1.06279476\). At \(t=6\), the \(N=16\) result is \(0.91374248\), compared with \(0.90599081\).
+
+This evidence favors \(N^{-2}\) over \((\log N)/N^2\). It is not a controlled proof excluding the latter. Establishing the uniform large-\(N\) reduction of the TBA remains the central unfinished step.
+
+In the intermediate regime, the same candidate has a classical dilute-gas limit. For \(t\gg1\), its fugacity satisfies
+\[
+1\simeq \frac z\pi\int_0^\infty e^{-q^2/t}\,dq
+=\frac{z\sqrt t}{2\sqrt\pi},
+\]
+so \(z\simeq2\sqrt{\pi/t}\). Therefore
+\[
+\boxed{
+s(T)\simeq
+\log(N\sqrt T)+\frac32-\log(2\sqrt\pi)
+=\log(N\sqrt T)+0.23448788
+}
+\]
+in the joint regime \(N^{-2}\ll T\ll1\), conditional on the same reduction. In particular, if \(T=N^{-\alpha}\), \(0<\alpha<2\),
+\[
+\frac{s(T)}{\log N}\longrightarrow1-\frac\alpha2.
+\]
+The entropy would therefore leave its linear CFT regime while still occupying a vanishing fraction of the on-site entropy.
+
+The short-segment observation is consistent with this picture but does not prove it. Stirling’s formula gives, for \(1\ll L\ll N\),
+\[
+\frac1L\log\binom NL
+=\log\frac NL+1-\frac{\log(2\pi L)}{2L}
+-\frac{L-1}{2N}+\cdots.
+\]
+For \(L=xN\), \(0<x<1\), it instead tends to \(h(x)/x\), which is \(O(1)\). Choosing a quadratic-dispersion thermal length \(L\sim T^{-1/2}\) reproduces the \(\log(N\sqrt T)\) dependence.
+
+There is an energetic obstruction to turning this into a block argument. Joining isolated blocks generally costs \(O(1/L)\) per site. At \(L\sim N\), that exceeds the proposed \(N^{-2}\) thermal scale. The segment entropy alone is insufficient.
+
+4. Finite volume
+
+For the identity-sector comparison, take \(L\) divisible by \(N\). Other congruence classes require the appropriate nontrivial charge sector, rather than the identity vacuum.
+
+The CFT prediction is
+\[
+E-E_{\rm bulk}
+=\frac{2\pi v}{L}\left(\Delta-\frac c{12}\right),
+\]
+with marginal logarithmic corrections.
+
+A momentum displacement carrying \(m\) conformal units has
+\[
+q\sim\frac{2\pi m}{L}.
+\]
+For the branches with the smallest linearity scale,
+\[
+\frac{|\epsilon-vq|}{vq}
+\sim\frac{q}{v}
+\sim\frac{mN}{L}.
+\]
+Thus fixed conformal levels suggest
+\[
+L\gg N.
+\]
+
+Uniform control through
+\[
+\Delta_{\max}\simeq \frac c4+2=O(N)
+\]
+is stronger. The spectrum includes descendants putting \(m=O(N)\) units into a single momentum. For those states,
+\[
+\frac{|\epsilon-vq|}{vq}=O(N^2/L).
+\]
+My resulting heuristic criterion is
+\[
+\boxed{L\gg N^2}
+\]
+for every level in that window to have small relative dispersion corrections.
+
+This is a worst-state criterion. Primary families and states distributing their conformal energy among many modes can approach CFT behavior on shorter rings. Marginal logarithms provide a separate limitation, so neither \(L\gg N\) nor \(L\gg N^2\) specifies a universal numerical accuracy threshold.
+
+5. Numerical table
+
+The finite-\(N\) onset estimates include marginal corrections through the TBA.
+
+| \(N\) | \(v\) | \(e_0\) | \(T^*_{0.1}\) | \(\ell^*\) | \(\sigma^*\) |
+|---:|---:|---:|---:|---:|---:|
+| 2 | 3.141593 | −0.386294 | 0.475 | 6.61 | 0.251 |
+| 3 | 2.094395 | −0.703212 | 0.213 | 9.82 | 0.214 |
+| 4 | 1.570796 | −0.825119 | 0.128 | 12.3 | 0.203 |
+| 5 | 1.256637 | −0.884730 | 0.0881 | 14.3 | 0.201 |
+| 8 | 0.785398 | −0.952819 | 0.0995 | 7.89 | 0.402 |
+| Large \(N\), conditional thermodynamics | \(2\pi/N\) | \(-1+\pi^2/(3N^2)-2\zeta(3)/N^3+\cdots\) | \(6.108/N^2\) | \(1.029N\) | \(0.9162/\log N\) |
+
+The nonmonotonicity between \(N=5\) and \(N=8\) follows from the definition. For \(N=2,3,4,5\), the first failure is an upward crossing of \(1.1\). For \(N=8\), the overshoot stays below 10%, and the first failure is the later downward crossing of \(0.9\).
+
+For numerical checks, increasing the \(N=2\) cutoff to 80 strings and 2048 rapidity points gave \(s/s_{\rm CFT}=1.09999865\) at the quoted root. For \(N=8\), increasing from 32 to 64 strings changed the ratio at \(t=2.5\) from \(1.09259108\) to \(1.09245282\). At \(T=0.0995\), the 64-string result was \(0.89993091\). These checks support the quoted precision and the distinction between the two types of crossing.
+
+The scripts and results are saved in the working directory as `tba_check.py`, `roots_tba.py`, `scan_tba.py`, `ideal_gas.py`, and `STATE.md`. I stopped an additional \(N=32\) cutoff check to respect the runtime limit; it is not used as a converged benchmark.
+
+The exact BA results and finite-\(N\) onset estimates are established to the qualifications above. The remaining research task is to derive, or replace, the proposed fermionic large-\(N\) scaling function.
+
+[gpt_solve: backend=codex model=gpt-6-astra effort=high transcript=20261027T200213-60432]

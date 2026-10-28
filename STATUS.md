@@ -44,6 +44,7 @@ At fixed d₀ the bonds h, modulo shifts and overall scale, form a compact space
 - Quasi-free chains of any period: c ≤ log₂ d [proved] (REPORT §4, `codex/work_C1_astra/`).
 - SU(d)-symmetric fundamental chains (h = a + bP), toroidal IR theories whose bosons come from on-site U(1)s, and WZW IR theories with level at most the embedding index [proved, given the IR identification] (REPORT §3.4, §4).
 - Conditional bounds [checked]: c ≤ 1 + (6/π) K(d) log d if c-many conformal levels appear on rings of length at most K(d); c < d² − 1 if the IR stress tensor is built from on-site symmetry currents (`codex/work_C7/`). Also c ≤ ⌊r(h)/2⌋, with r(h) the operator Schmidt rank of the bond, for Gaussian modes resolved by commuting on-site charges [Astra].
+- A proposed replacement for c–d that the construction does not threaten: Σ_a c_a v_a ≤ 2π‖h‖, with v_a the velocities and ‖h‖ half the spread of the bond's spectrum. It contains no d, the SU(d) chain approaches it (A = 2π(1 − 1/d)‖h‖), and it is proved for number-conserving free fermions and for current algebras built from on-site generators [heuristic in general] (`contrib/refined_conjecture/`). Unbounded c is then possible only if the velocities, and with them the conformal window, shrink, which is what happens in the construction.
 - What cannot work: entanglement, thermodynamic and Lieb–Robinson arguments give at best c ≲ ℓ* log d, with ℓ* the length at which conformal behaviour sets in, which is too weak for large d (REPORT §3.1 to §3.2, `tools/`).
 
 ## Superseded

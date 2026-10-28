@@ -1,0 +1,5 @@
+Ising {'T_conv': 0.05, 'Tstar': 0.725, 'Tstar_onesided': 2.3, 'sigma': 0.301, 'ell': 2.759, 'R_T': 1.951, 'max_ratio': 1.136}
+XX {'T_conv': 0.05, 'Tstar': 0.35, 'Tstar_onesided': 1.1, 'sigma': 0.289, 'ell': 5.714, 'R_T': 2.857, 'max_ratio': 1.137}
+XXZ_D0.5 {'T_conv': 0.275, 'Tstar': nan, 'Tstar_onesided': 0.775, 'sigma': nan, 'ell': nan, 'R_T': nan, 'max_ratio': 1.176}
+Potts3 {'T_conv': 0.625, 'Tstar': 1.1, 'Tstar_onesided': 3.1, 'sigma': 0.351, 'ell': 2.362, 'R_T': 2.151, 'max_ratio': 1.144}
+TB_spin1 {'T_conv': 2.2, 'Tstar': nan, 'Tstar_onesided': nan, 'sigma': nan, 'ell': nan, 'R_T': nan, 'max_ratio': 1.268}
