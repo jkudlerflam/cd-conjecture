@@ -564,6 +564,59 @@ the combined result is saved in the contribution's verification summary.
 - **Casimir survey, final** (`contrib/casimir_survey/`). The violation of A ≤ 2π‖h‖ is now seen directly on the lattice, without WZW input: finite-size Bethe roots for the rank-two SU(N) chain (solver written by Astra, validated against 11 exact-diagonalization energies to 4 × 10⁻¹¹, rerun and fitted by the Claude agent on rings up to L = 105 and 120) give A/(2π‖h‖) between 1.014 and 1.018 at N = 7 (d = 28) for every fit form, and 1.05 at N = 8 (d = 36). This assumes the continued root configuration remains the ground state. Elsewhere nothing exceeds the fundamental SU(d) value, which a twirling argument shows is a local maximum to first order; the best ratio at each d grows like 0.38 ln d/ln ln d, and A ≤ π‖h‖ log₂ d holds for everything computed.
 - **Mobile cells, final** (`contrib/mobile_cells/`, Claude agent with one Astra run). In a d = 6 toy whose cells carry a two-qubit payload (c_p = 1), frozen markers give ground-state degeneracy 3 when 3 | L and 5 to 14 otherwise (L = 9 to 16), while mobile markers give a unique ground state on L = 8 to 18 including primes, z = 1 with both mode velocities measured, Casimir energy over the sum of velocities 1.02 and 0.98, ring-entropy c = 1.90 to 2.11 and finite-entanglement c = 2.04 to 2.12, so c = c_p + 1. Breaking the reflection gaps the payload and leaves c = 1.00 from the length mode alone. The squeezed-space (Ogata–Shiba) reduction is exact and reproduces every eigenvalue at equal hopping to 4 × 10⁻¹⁴; power counting leaves no relevant cross-coupling at generic long-cell density, with isolated commensurate exceptions (a spin-Peierls point at ν = ½, near C8's natural density, so μ must be detuned). Moving a multi-site payload costs one vacancy symbol, d₀ = 4(k_c q + 1). The c_p = 2 extension (c = 3) has a unique ground state but c = 3 is not yet established; Typhon jobs are running.
 
-### 9.14 Route A assembled, and the first review of the species-graph candidate (2026-10-28)
+### 9.16a Route A assembled, and the first review of the species-graph candidate (2026-10-28)
 - **Route A assembly** (`contrib/routeA_assembly/`, Claude agent; Astra C23 in `codex/work_C23/` reached the same verdict independently; the coordinator reran `scales.py` and `third_order.py`, reproducing the visibility ρ² = 5.79 × 10⁻⁶ and 9.49 × 10⁻⁸, the clock gaps 1.1 × 10⁻⁶J and 4.9 × 10⁻⁸J, and the third-order coefficients 2.26, 4.47 and 6.52 at n = 1, 2, 3). Nothing found kills route A. Every condition in the scale hierarchy bounds a smaller scale by larger ones, so at each fixed n the scales can be chosen from the top down; nothing has to be uniform in n. Third-order corrections are only a few times ρ²λ³/Δ², allowing λ/Δ around 10⁻², but they include same-flavour pairing of 0.14 to 0.20 λ/Δ (the mechanism behind the pairing gap in `contrib/routeA_numerics/`), and C19's geometric Fermi points are unusable from n = 3 on, so the target must use a Sidon design. The accumulation point is gapless and not conformal (z = 2 wall motion, exponentially large degeneracy). Two architectural constraints: the clock-selected length works only for frozen cells, so mobile cells need C8's wrapper and d₀ above about 2000; and C8's wrapper theorem needs a frustration-free core, so the port interface must keep the code frustration-free (syndrome-mixing positive checks do). Ranked gaps: G1 a fixed-alphabet port interface giving parity-odd, logical-operator-valued second-order exchange with an exact frustration-free code (no-gos: bare Bell checks, unitary-decorated paths and trees, distant product layouts; live candidate: a syndrome-mixing check, being tested in `contrib/routeA_demonstrator/`); G2 the whole-cell compiler; G3 second-order composition with the wrapper; G4 finite-coupling numerics with the Sidon design; G5 C19 with a Sidon target; G6 the second-order infrared transfer; G7 gluing data; G8 the alphabet count; G9 scope.
 - **C24, Astra review of the species-graph candidate** (`codex/work_C24/RESULT.md`). No fatal algebraic error, unavoidable relevant resonance or contradiction in the fixed-coupling hierarchy. Accepted: the girth-six selection rule (independently checked for p = 2, 3, 5, 7), the sparse port construction, the charge-preserving circuit and the conditional Gaussian stability argument. Not yet accepted as an established refutation: two serious verification gaps remain, the complete autonomous sparse-encoding controller meeting its initialization and readout contract, and a local low-frequency elimination for the mobile microscopic model with corrections small relative to its first-order Hamiltonian. A Claude referee (`contrib/review_species_graph/`) is reviewing independently.
+
+### 9.17 Exact qubit subclasses and a staggered field reduction, 2026-10-28
+
+At the user's request to prioritize a simplified proof, Codex and three
+parallel workers added [d2_gap_reduction](contrib/d2_gap_reduction/README.md).
+The general d=2 conjecture remains open. The contribution combines exact
+algebra with a recently available rigorous gap theorem; the finite spectra
+check conventions rather than establish an unknown CFT numerically.
+
+- **Complete ferromagnetic rank-one class [proved using a cited theorem].**
+  For J=−κnnᵀ and arbitrary uniform field B, nonzero B·n gives a unique
+  ground state and Δ_L≥2|B·n|. At B·n=0 this is transverse-field Ising,
+  with its sole conformal locus |B|=κ>0 and c=1/2. The gap input is
+  Bravyi–Gosset–Liu–Wong, arXiv:2607.14401v1, Definition 1 and Theorem 1,
+  read directly and independently checked for applicability. More generally
+  the same exclusion holds when Jn=Jᵀn=λn and
+  λ≤−||(I−nnᵀ)J(I−nnᵀ)||op. Arbitrary transverse fields are allowed.
+  This adds genuinely interacting points outside the previous free,
+  uniform-U(1), and zero-field-XYZ sets.
+- **Exhaustive additive-charge reduction [proved algebraically].**
+  For any exact Q=Σ n_j·σ_j, local commutation is equivalent to
+  Ω(n_j)J=JΩ(n_(j+1)) and n_j×B=0. Classifying these equations at every
+  rank of J shows that zero-field models reduce to XXZ or commuting Ising.
+  At nonzero field the only additional interacting class is
+  a(XX−YY)+uZZ+bZ, whose charge is staggered and whose alternating-spin
+  rotation gives XXZ in a staggered field. This strengthens C6's example
+  into an exhaustive classification of this microscopic charge route.
+  It does not constrain emergent or multispin conserved currents.
+- **Exact gapped regions of that remaining class [proved].**
+  On even rings with a≠0, put r=sqrt(a²+b²/4). For u>r the only ground
+  states are the two Néel products and the exact gap above them is 4(u−r).
+  A positive-bond inequality supplies the lower bound and a closed
+  one-defect sector attains it. At u=r the L+1 ground states and quadratic
+  mode recover C15's nonconformal factorization line. For u≤−|a| and b≠0
+  the source gap theorem gives Δ_L≥2|b|. Thus, after a=1 and b>0,
+  the unresolved candidates in this charge class lie in
+  −1<u<sqrt(1+b²/4), u≠0. This is not an assertion that this whole region
+  is critical. Zhang–Song, arXiv:2609.29728v1, provides a matching exact
+  line and gapped side; its broader phase diagram uses DMRG.
+- **Exact limits of the rotation route [proved].**
+  Arbitrary product rotations followed by standard Jordan–Wigner do not
+  enlarge the known quadratic locus. Product rotations can turn a uniform
+  zero-field bond into homogeneous XYZ in the bulk if and only if
+  JJᵀ=JᵀJ, which is already the XYZ/axial-U(1) union. These statements
+  do not classify entangling circuits or nonlocal dualities.
+
+Saved NumPy checks cover 15 gap-theorem spectra at L=4,6,8; nine exact
+staggered-family gaps and nine boundary degeneracies; 14 charge-kernel cases
+and rotated copies; and independent full-matrix commutators. The largest
+charge-basis commutator residual is below 1.2×10⁻¹³. Critical Ising matrices
+also match their exact finite-size energies. Two workers independently
+derived and cross-reviewed the charge classification; the coordinator
+reran the saved checks. No human review is claimed.

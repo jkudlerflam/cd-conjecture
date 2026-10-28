@@ -72,6 +72,25 @@ No citing paper proves a case or gives an in-scope counterexample.
 - $E_0=e_0L-\pi cv/(6L)$ (Blöte-Cardy-Nightingale, Affleck 1986) [recalled].
 - The modular commutator sees only $c_L-c_R$ (2206.00027 [read, abstract]), so by 3(a) it vanishes here. The Casini-Huerta entropic c-theorem needs Lorentz invariance [recalled].
 
+**(e) Rigorous qubit gap exclusions, added 2026-10-28.**
+Bravyi–Gosset–Liu–Wong,
+[2607.14401v1, Definition 1 and Theorem 1](https://arxiv.org/html/2607.14401v1)
+[read, theorem and proof], prove a gap at least twice the smallest positive
+longitudinal field for Suzuki–Fisher Hamiltonians, allowing arbitrary
+transverse fields. The exchange condition is a dominant ferromagnetic ZZ
+term with transverse 2×2 block bounded by it in operator norm. The
+[new qubit contribution](contrib/d2_gap_reduction/README.md) applies this to
+mixed-field ferromagnetic rank-one chains and a larger interacting region.
+This is a gap theorem, not a general central-charge bound.
+
+Zhang–Song,
+[2609.29728v1, §§III–V](https://arxiv.org/html/2609.29728v1)
+[read], give an exact degenerate line and adjoining polarized regime for
+XXZ in a staggered longitudinal field. These map to the factorization line
+already derived in C15. The paper's broader Luttinger-liquid phase diagram
+uses finite-size DMRG, so its title does not supply an exhaustive analytic
+proof of c≤1 in this remaining family.
+
 ## Status
 
 The conjecture is open. It is believed true in its stated form, which assumes a TI, strictly NN, Hermitian chain on a tensor product of $d$-dimensional sites, flowing to unitary CFT(s), with $c_T\le d-1$. There is no proof in the literature for any class. [own] It does hold for all free-fermion NN chains, where $c\le\log_2 d$.

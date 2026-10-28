@@ -1,0 +1,508 @@
+{
+  "seed": 20261028,
+  "gap_examples": [
+    {
+      "name": "ferromagnetic_Ising_mixed",
+      "J": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          -1.0
+        ]
+      ],
+      "B": [
+        0.91,
+        0.17,
+        0.13
+      ],
+      "certificate": {
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "longitudinal_exchange": -1.0,
+        "transverse_norm": 0.0,
+        "axis_residual": 0.0,
+        "passes": true,
+        "gap_lower_bound": 0.26
+      },
+      "spectra": [
+        {
+          "L": 4,
+          "gap": 0.9503529711598286
+        },
+        {
+          "L": 6,
+          "gap": 1.3041766814416453
+        },
+        {
+          "L": 8,
+          "gap": 1.652982660101424
+        }
+      ]
+    },
+    {
+      "name": "interacting_chiral_mixed",
+      "J": [
+        [
+          -0.32,
+          0.21,
+          0.0
+        ],
+        [
+          -0.07,
+          0.18,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          -1.0
+        ]
+      ],
+      "B": [
+        0.41,
+        -0.23,
+        -0.19
+      ],
+      "certificate": {
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "longitudinal_exchange": -1.0,
+        "transverse_norm": 0.41613985813992865,
+        "axis_residual": 0.0,
+        "passes": true,
+        "gap_lower_bound": 0.38
+      },
+      "spectra": [
+        {
+          "L": 4,
+          "gap": 1.520413495887491
+        },
+        {
+          "L": 6,
+          "gap": 1.8829314509913448
+        },
+        {
+          "L": 8,
+          "gap": 2.222881793963511
+        }
+      ]
+    },
+    {
+      "name": "pure_field_saturates",
+      "J": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "B": [
+        0.0,
+        0.0,
+        0.27
+      ],
+      "certificate": {
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "longitudinal_exchange": 0.0,
+        "transverse_norm": 0.0,
+        "axis_residual": 0.0,
+        "passes": true,
+        "gap_lower_bound": 0.54
+      },
+      "spectra": [
+        {
+          "L": 4,
+          "gap": 0.54
+        },
+        {
+          "L": 6,
+          "gap": 0.54
+        },
+        {
+          "L": 8,
+          "gap": 0.54
+        }
+      ]
+    },
+    {
+      "name": "dominance_equality",
+      "J": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          -1.0
+        ]
+      ],
+      "B": [
+        0.24,
+        0.0,
+        0.11
+      ],
+      "certificate": {
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "longitudinal_exchange": -1.0,
+        "transverse_norm": 1.0,
+        "axis_residual": 0.0,
+        "passes": true,
+        "gap_lower_bound": 0.22
+      },
+      "spectra": [
+        {
+          "L": 4,
+          "gap": 3.56308031170164
+        },
+        {
+          "L": 6,
+          "gap": 2.3638404283312155
+        },
+        {
+          "L": 8,
+          "gap": 1.8029635711080676
+        }
+      ]
+    },
+    {
+      "name": "rotated_interacting_chiral",
+      "J": [
+        [
+          -0.38820043247792935,
+          0.44140061766306765,
+          -0.18977474840094502
+        ],
+        [
+          0.22085992378259792,
+          -0.01208751248150731,
+          0.3072389465205568
+        ],
+        [
+          -0.2897880196154627,
+          0.16667171021105165,
+          -0.7397120550405636
+        ]
+      ],
+      "B": [
+        0.14539591861731266,
+        -0.2193928967749686,
+        -0.4333898749326244
+      ],
+      "certificate": {
+        "axis": [
+          0.5020258439625185,
+          -0.35719025433756324,
+          0.787645335287392
+        ],
+        "longitudinal_exchange": -1.0000000000000004,
+        "transverse_norm": 0.4161398581399286,
+        "axis_residual": 2.5438405243138006e-16,
+        "passes": true,
+        "gap_lower_bound": 0.37999999999999995
+      },
+      "spectra": [
+        {
+          "L": 4,
+          "gap": 1.5204134958875057
+        },
+        {
+          "L": 6,
+          "gap": 1.8829314509913226
+        },
+        {
+          "L": 8,
+          "gap": 2.222881793963488
+        }
+      ]
+    }
+  ],
+  "charge_examples": [
+    {
+      "name": "generic_XYZ",
+      "L": 6,
+      "nullity": 0,
+      "max_commutator": 0.0
+    },
+    {
+      "name": "XXZ_uniform",
+      "L": 6,
+      "nullity": 1,
+      "max_commutator": 1.1798337166103333e-13
+    },
+    {
+      "name": "staggered_even",
+      "L": 6,
+      "nullity": 1,
+      "max_commutator": 1.525348013262122e-14
+    },
+    {
+      "name": "staggered_odd",
+      "L": 5,
+      "nullity": 0,
+      "max_commutator": 0.0
+    },
+    {
+      "name": "Heisenberg",
+      "L": 6,
+      "nullity": 3,
+      "max_commutator": 8.247978285311142e-14
+    },
+    {
+      "name": "proper_twist_compatible",
+      "L": 5,
+      "nullity": 3,
+      "max_commutator": 2.600164327975961e-14
+    },
+    {
+      "name": "proper_twist_incompatible",
+      "L": 6,
+      "nullity": 1,
+      "max_commutator": 7.36908135025074e-14
+    },
+    {
+      "name": "improper_twist_compatible",
+      "L": 5,
+      "nullity": 3,
+      "max_commutator": 2.600164327975961e-14
+    },
+    {
+      "name": "classical_Ising",
+      "L": 6,
+      "nullity": 6,
+      "max_commutator": 0.0
+    },
+    {
+      "name": "transverse_Ising",
+      "L": 6,
+      "nullity": 0,
+      "max_commutator": 0.0
+    },
+    {
+      "name": "oriented_rank_one",
+      "L": 6,
+      "nullity": 0,
+      "max_commutator": 0.0
+    },
+    {
+      "name": "onsite_only",
+      "L": 6,
+      "nullity": 6,
+      "max_commutator": 0.0
+    },
+    {
+      "name": "zero_H",
+      "L": 6,
+      "nullity": 18,
+      "max_commutator": 0.0
+    },
+    {
+      "name": "rank_two_staggered",
+      "L": 6,
+      "nullity": 1,
+      "max_commutator": 1.2378065653265497e-14
+    }
+  ],
+  "rejected_certificates": {
+    "antiferromagnet": {
+      "axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "longitudinal_exchange": 1.0,
+      "transverse_norm": 0.0,
+      "axis_residual": 0.0,
+      "passes": false,
+      "gap_lower_bound": null
+    },
+    "mixed_axis_exchange": {
+      "axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "longitudinal_exchange": -1.0,
+      "transverse_norm": 0.2,
+      "axis_residual": 0.08,
+      "passes": false,
+      "gap_lower_bound": null
+    }
+  },
+  "critical_Ising_ED": [
+    {
+      "L": 4,
+      "E0": -5.226251859505505,
+      "exact_E0": -5.226251859505506,
+      "gap": 0.397824734759312
+    },
+    {
+      "L": 6,
+      "E0": -7.727406610312547,
+      "exact_E0": -7.727406610312547,
+      "gap": 0.26330499517480543
+    },
+    {
+      "L": 8,
+      "E0": -10.251661790966047,
+      "exact_E0": -10.251661790966025,
+      "gap": 0.19698280671433466
+    }
+  ],
+  "critical_Ising_exact_Casimir": [
+    {
+      "L": 16,
+      "c_estimator": 0.5005628052757235
+    },
+    {
+      "L": 32,
+      "c_estimator": 0.5001405940512608
+    },
+    {
+      "L": 64,
+      "c_estimator": 0.5000351418148473
+    },
+    {
+      "L": 128,
+      "c_estimator": 0.5000087850344812
+    },
+    {
+      "L": 256,
+      "c_estimator": 0.5000021962336902
+    }
+  ],
+  "staggered_exact_wing": [
+    {
+      "a": 0.8,
+      "b": 0.6,
+      "c": 1.1044003745317532,
+      "L": 4,
+      "ground_degeneracy": 2,
+      "gap_above_vacua": 0.9999999999999991,
+      "exact_gap": 1.0,
+      "boundary_degeneracy": 5
+    },
+    {
+      "a": 0.8,
+      "b": 0.6,
+      "c": 1.1044003745317532,
+      "L": 6,
+      "ground_degeneracy": 2,
+      "gap_above_vacua": 1.0,
+      "exact_gap": 1.0,
+      "boundary_degeneracy": 7
+    },
+    {
+      "a": 0.8,
+      "b": 0.6,
+      "c": 1.1044003745317532,
+      "L": 8,
+      "ground_degeneracy": 2,
+      "gap_above_vacua": 1.0000000000000027,
+      "exact_gap": 1.0,
+      "boundary_degeneracy": 9
+    },
+    {
+      "a": 0.3,
+      "b": 1.4,
+      "c": 0.8615773105863908,
+      "L": 4,
+      "ground_degeneracy": 2,
+      "gap_above_vacua": 0.39999999999999725,
+      "exact_gap": 0.4,
+      "boundary_degeneracy": 5
+    },
+    {
+      "a": 0.3,
+      "b": 1.4,
+      "c": 0.8615773105863908,
+      "L": 6,
+      "ground_degeneracy": 2,
+      "gap_above_vacua": 0.40000000000000213,
+      "exact_gap": 0.4,
+      "boundary_degeneracy": 7
+    },
+    {
+      "a": 0.3,
+      "b": 1.4,
+      "c": 0.8615773105863908,
+      "L": 8,
+      "ground_degeneracy": 2,
+      "gap_above_vacua": 0.4000000000000039,
+      "exact_gap": 0.4,
+      "boundary_degeneracy": 9
+    },
+    {
+      "a": -0.7,
+      "b": -0.4,
+      "c": 1.0280109889280518,
+      "L": 4,
+      "ground_degeneracy": 2,
+      "gap_above_vacua": 1.200000000000002,
+      "exact_gap": 1.2,
+      "boundary_degeneracy": 5
+    },
+    {
+      "a": -0.7,
+      "b": -0.4,
+      "c": 1.0280109889280518,
+      "L": 6,
+      "ground_degeneracy": 2,
+      "gap_above_vacua": 1.2000000000000002,
+      "exact_gap": 1.2,
+      "boundary_degeneracy": 7
+    },
+    {
+      "a": -0.7,
+      "b": -0.4,
+      "c": 1.0280109889280518,
+      "L": 8,
+      "ground_degeneracy": 2,
+      "gap_above_vacua": 1.200000000000018,
+      "exact_gap": 1.2,
+      "boundary_degeneracy": 9
+    }
+  ],
+  "commutator_norm_identity_max_error": 1.7763568394002505e-15,
+  "elapsed_seconds": 0.07595566683448851
+}
