@@ -1,0 +1,9 @@
+[proved] The literal 47-state completion fails. C39’s 46 letters lack the autonomous selector; vacancy hopping preserves an exponentially degenerate ground space of unused L/R data strings.
+
+[numerical] Full microscopic ED for n=1,2, each with 103,823 states, confirms sixfold ground degeneracy. Larger invariant sectors verify squeezing, twists and first-order projection.
+
+[assumed/heuristic] The fallback remains d₀=4464, with c=n+1 conditional on C39’s inherited infrared inputs. Every-large-ring uniqueness is not established.
+
+The gluing derivation, conditional mixed-vertex analysis, proofs and reproducible checks are in [RESULT.md](<<repo>/codex/work_C43/RESULT.md>). PROGRESS.md is updated.
+
+[gpt_solve: backend=codex model=gpt-6-astra effort=high transcript=20261028T101237-31112]

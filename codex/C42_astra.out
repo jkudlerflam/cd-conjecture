@@ -1,0 +1,9 @@
+Proved the all-\(n\) finite-band result using C39’s modified 46-letter core, with a terminating rational parameter schedule and explicit finite-\(D\), finite-\(g\) error bounds.
+
+Two- and three-cell ED passed at \(n=1,2,3\). The conservative selected vacancy completion has fixed dimension 4465.
+
+The original 23-letter all-\(n\) problem and interacting mobile infrared transfer remain open.
+
+Written in [RESULT.md](<RESULT.md>) and [PROOF.md](<PROOF.md>), with `PROGRESS.md` and local `STATE.md` updated.
+
+[gpt_solve: backend=codex model=gpt-6-astra effort=high transcript=20261028T100017-27171]

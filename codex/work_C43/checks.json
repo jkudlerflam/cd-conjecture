@@ -1,0 +1,119 @@
+{
+  "full_rings": [
+    {
+      "n": 1,
+      "L": 3,
+      "dimension": 103823,
+      "bond_min_eigenvalue": 0.0,
+      "charge_commutator": 0.0,
+      "ground_energy": -2.34,
+      "ground_multiplicity": 6,
+      "next_energy": -2.17,
+      "components": 51860,
+      "largest_block": 48
+    },
+    {
+      "n": 2,
+      "L": 3,
+      "dimension": 103823,
+      "bond_min_eigenvalue": 0.0,
+      "charge_commutator": 0.0,
+      "ground_energy": -2.34,
+      "ground_multiplicity": 6,
+      "next_energy": -2.17,
+      "components": 51860,
+      "largest_block": 48
+    }
+  ],
+  "initialized_sectors": [
+    {
+      "n": 1,
+      "L": 4,
+      "N": 3,
+      "dimension": 648,
+      "initialized_cell_dimension": 54,
+      "squeeze_entry_error": 0.0,
+      "first_order_entry_error": 1.7763568394002505e-15,
+      "interaction_internal_shift_commutator_frobenius": 203.54770251712495,
+      "charge_ground_residual": 0.0,
+      "J0_full_spectrum_error": 8.881784197001252e-16,
+      "J0_blocks": {
+        "components": 54,
+        "largest_block": 12
+      },
+      "finite_J": [
+        {
+          "J": 0.02,
+          "energies": [
+            -1.8696938456699,
+            -1.8696938456698964,
+            -1.8582848730268091,
+            -1.8582848730267847,
+            -1.838561400937897
+          ],
+          "residual": 2.0642441944465785e-11,
+          "first_order_remainder_over_J2": -7.567947508083303
+        },
+        {
+          "J": 0.01,
+          "energies": [
+            -1.9340822079655657,
+            -1.934082207965565,
+            -1.92843130532877,
+            -1.9284313053287523,
+            -1.9185523632247818
+          ],
+          "residual": 9.223720271645154e-12,
+          "first_order_remainder_over_J2": -7.488746322324296
+        }
+      ]
+    },
+    {
+      "n": 2,
+      "L": 5,
+      "N": 4,
+      "dimension": 3200,
+      "initialized_cell_dimension": 160,
+      "squeeze_entry_error": 0.0,
+      "first_order_entry_error": 3.552713678800501e-15,
+      "interaction_internal_shift_commutator_frobenius": 398.4274689325524,
+      "charge_ground_residual": 0.0,
+      "J0_full_spectrum_error": 1.6653345369377348e-15,
+      "J0_blocks": {
+        "components": 160,
+        "largest_block": 20
+      },
+      "finite_J": [
+        {
+          "J": 0.02,
+          "energies": [
+            -1.853250350590806,
+            -1.8532503505907885,
+            -1.8532503505907796,
+            -1.853250350590766,
+            -1.845515823915432,
+            -1.8455158239154013,
+            -1.8455158239153977
+          ],
+          "residual": 1.1667302263133137e-11,
+          "first_order_remainder_over_J2": -8.1258764770141
+        },
+        {
+          "J": 0.01,
+          "energies": [
+            -1.9257969076374801,
+            -1.925796907637449,
+            -1.9257969076374355,
+            -1.9257969076374122,
+            -1.9219568665173834,
+            -1.9219568665173496,
+            -1.9219568665173101
+          ],
+          "residual": 3.1267965562849245e-11,
+          "first_order_remainder_over_J2": -7.969076374799433
+        }
+      ]
+    }
+  ],
+  "elapsed_seconds": 3.2365857081022114
+}

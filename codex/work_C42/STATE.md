@@ -1,0 +1,15 @@
+# C42 local handoff
+
+[proved, completed finite payload result] PROOF.md gives an all-n nonresonance theorem for C39's 46-letter two-bus initialized core. It preserves the complete 2^n zero-energy code, exact U(1) and parity, and vanishing first-order ports. The two-bus generalized eigenvalues separate centers; the biased-vacuum readout separates width derivatives. An exact rational search has proved termination at every n. Explicit finite-D and finite-g bounds preserve its root and quartic certificates.
+
+[proved, scale conventions] w=1/4; q=(wu)^2; p=2n+4; V0=q^(2n+2)/(sum_ell q^(2ell))^2; J0=2 V0 g^2 D^(-p). Physical logical energies carry lambda^2 J0. The field is lambda^2 J0 mu S/q^2 times the conditional vacuum-token density. The Cauchy disk radius is 1/16384, B0=128, and tau is computed from exact root-endpoint determinants in PROOF (7). No uniform-in-n lower margin is claimed.
+
+[proved, exact finite certificates] The n=1,2,3 reference witnesses use u=1/64,v=1/1024,eta=1/100,mu=10^(-8n-10). certificate_n*.json are rational Sturm/angle certificates. budgets_n*.json record D and g=2^(-1138),2^(-1738),2^(-2761), with integer inequalities verifying both error budgets. These fixed u,v,eta values are not an all-n schedule. The general terminating schedule is specified mathematically, not executed for arbitrary n.
+
+[numerical, verification] Twelve untruncated legal symmetry sectors were diagonalized, n=1,2,3, two/three cells, Q=0,1, lambda=.1,.05. Their second-order errors scale as lambda^4. Largest sector dimension 356325, largest residual 5.96e-11. The initial n=3 three-cell Q=1 run timed out at 180 seconds; the accepted warm-start run took 126 seconds. Literal two-site matrices and full-code g^2 source contractions were also checked at n=1,2,3. These are supporting numerical checks, not rigorous eigenvalue enclosures or central-charge measurements.
+
+[proved, alphabet and vacancy scope] The initialized alphabet is 46. The inherited C8/C32 complete wrapper has dimension 4464, and adding the specified species-independent vacancy gives a conservative fixed dimension 4465. A single-length selector detuning is justified in PROOF Section 8. The vacancy squeeze is algebraically compatible and multiplies the leading internal Hamiltonian by one positive scalar. The entire bond, including half-onsite terms, must be lifted.
+
+[assumed, remaining physics] Mobile finite-coupling elimination, dressed Gaussian stability, fractional marker harmonics and physical gluing are not proved here. The original 23-letter all-n loop nonidentity problem is still open. No central-charge violation is established.
+
+[proved, provenance and files] C39 authored the two-bus construction and the copied modules model.py, literal.py, ed.py, pencil.py, certify.py, checks.py. C42 strengthened the argument, added budgets.py and leading_checks.py, changed ED tolerance/warm start/diagnostics, and reran all reported checks locally. RESULT.md is the concise report. PROOF.md is the complete derivation. All files were written inside work_C42 only; the parent project STATE was not modified under the task's write restriction.
