@@ -1,0 +1,721 @@
+[
+  {
+    "L": 8,
+    "N": 4,
+    "density": 0.5,
+    "dimension": 35,
+    "alpha_exact": 0.28661165235168157,
+    "free_energy": -5.226251859505506,
+    "free_state_residual": 9.817002313187935e-16,
+    "susceptibility_kernel": [
+      0.07747687568464544,
+      -0.017071341557622105,
+      -0.018797287938063158,
+      -0.01707134155762211
+    ],
+    "susceptibility_abs_row_sum": 0.1304168467379528,
+    "susceptibility_local": 0.07747687568464544,
+    "response_residual": 2.7874582722235065e-16,
+    "runs": [
+      {
+        "defect_sites": [
+          0
+        ],
+        "J": 0.04,
+        "energy_cost": 0.011341246377101655,
+        "first_order": 0.011464466094067262,
+        "relative_cost": 0.9892520318037861,
+        "relaxation_per_defect_over_J2": 0.07701232310350467,
+        "eigenpair_residual": 3.1619436312659052e-15
+      },
+      {
+        "defect_sites": [
+          0
+        ],
+        "J": 0.02,
+        "energy_cost": 0.005701335095248616,
+        "first_order": 0.005732233047033631,
+        "relative_cost": 0.9946097879253175,
+        "relaxation_per_defect_over_J2": 0.07724487946253683,
+        "eigenpair_residual": 2.4404396653109638e-15
+      },
+      {
+        "defect_sites": [
+          0
+        ],
+        "J": 0.01,
+        "energy_cost": 0.0028583804285098324,
+        "first_order": 0.0028661165235168156,
+        "relative_cost": 0.9973008442107962,
+        "relaxation_per_defect_over_J2": 0.07736095006983124,
+        "eigenpair_residual": 2.2633986948989007e-15
+      },
+      {
+        "defect_sites": [
+          0,
+          1
+        ],
+        "J": 0.02,
+        "energy_cost": 0.01141627195058792,
+        "first_order": 0.011464466094067262,
+        "relative_cost": 0.9957962156210413,
+        "relaxation_per_defect_over_J2": 0.06024267934917832,
+        "eigenpair_residual": 2.1877662347223386e-15
+      },
+      {
+        "defect_sites": [
+          0,
+          2
+        ],
+        "J": 0.02,
+        "energy_cost": 0.011417617122241985,
+        "first_order": 0.011464466094067262,
+        "relative_cost": 0.9959135496201152,
+        "relaxation_per_defect_over_J2": 0.058561214781596094,
+        "eigenpair_residual": 1.7646086064862324e-15
+      },
+      {
+        "defect_sites": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "J": 0.02,
+        "energy_cost": 0.022889715510867603,
+        "first_order": 0.022928932188134524,
+        "relative_cost": 0.998289642232567,
+        "relaxation_per_defect_over_J2": 0.024510423291825793,
+        "eigenpair_residual": 1.804539373349869e-15
+      }
+    ],
+    "seconds": 0.004614333156496286,
+    "susceptibility_abs_first_moment": 0.07173725899137053,
+    "canonical_pedestal_coefficient": 0.0785757974922801,
+    "susceptibility_pedestal_subtracted_abs_first_moment": 0.0068385385009095655
+  },
+  {
+    "L": 10,
+    "N": 5,
+    "density": 0.5,
+    "dimension": 126,
+    "alpha_exact": 0.2905572809000084,
+    "free_energy": -6.47213595499958,
+    "free_state_residual": 1.9517049962168168e-15,
+    "susceptibility_kernel": [
+      0.08190444479053713,
+      -0.01328377398983974,
+      -0.015258618349206521,
+      -0.015258618349206518,
+      -0.013283773989839756
+    ],
+    "susceptibility_abs_row_sum": 0.13898922946862968,
+    "susceptibility_local": 0.08190444479053713,
+    "response_residual": 2.5313292582796072e-12,
+    "runs": [
+      {
+        "defect_sites": [
+          0
+        ],
+        "J": 0.04,
+        "energy_cost": 0.011492057856381521,
+        "first_order": 0.011622291236000335,
+        "relative_cost": 0.9887945176235635,
+        "relaxation_per_defect_over_J2": 0.0813958622617589,
+        "eigenpair_residual": 3.0765290279696177e-15
+      },
+      {
+        "defect_sites": [
+          0
+        ],
+        "J": 0.02,
+        "energy_cost": 0.005778485414042578,
+        "first_order": 0.005811145618000168,
+        "relative_cost": 0.9943797305893654,
+        "relaxation_per_defect_over_J2": 0.08165050989397464,
+        "eigenpair_residual": 8.547423424728081e-12
+      },
+      {
+        "defect_sites": [
+          0
+        ],
+        "J": 0.01,
+        "energy_cost": 0.0028973950520523317,
+        "first_order": 0.002905572809000084,
+        "relative_cost": 0.9971854923330706,
+        "relaxation_per_defect_over_J2": 0.08177756947752145,
+        "eigenpair_residual": 4.121094968021409e-12
+      },
+      {
+        "defect_sites": [
+          0,
+          1
+        ],
+        "J": 0.02,
+        "energy_cost": 0.01156756295548611,
+        "first_order": 0.011622291236000335,
+        "relative_cost": 0.9952910936920335,
+        "relaxation_per_defect_over_J2": 0.06841035064278139,
+        "eigenpair_residual": 3.019327945670753e-15
+      },
+      {
+        "defect_sites": [
+          0,
+          2,
+          4
+        ],
+        "J": 0.02,
+        "energy_cost": 0.017370320681317608,
+        "first_order": 0.017433436854000502,
+        "relative_cost": 0.9963795909428834,
+        "relaxation_per_defect_over_J2": 0.052596810569078535,
+        "eigenpair_residual": 4.231371411787573e-15
+      },
+      {
+        "defect_sites": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "J": 0.02,
+        "energy_cost": 0.029006145688566853,
+        "first_order": 0.02905572809000084,
+        "relative_cost": 0.998293541250097,
+        "relaxation_per_defect_over_J2": 0.024791200716993075,
+        "eigenpair_residual": 1.4920880897128812e-15
+      }
+    ],
+    "seconds": 0.002956167096272111,
+    "susceptibility_abs_first_moment": 0.08760202137650558,
+    "canonical_pedestal_coefficient": 0.0785757974922801,
+    "susceptibility_pedestal_subtracted_abs_first_moment": 0.00668893561423054
+  },
+  {
+    "L": 12,
+    "N": 6,
+    "density": 0.5,
+    "dimension": 462,
+    "alpha_exact": 0.29266384402395124,
+    "free_energy": -7.727406610312547,
+    "free_state_residual": 4.136816181565481e-15,
+    "susceptibility_kernel": [
+      0.08483382542866127,
+      -0.010703517925693878,
+      -0.012807863597055456,
+      -0.01283852723164366,
+      -0.01280786359705544,
+      -0.010703517925693901
+    ],
+    "susceptibility_abs_row_sum": 0.14469511570580362,
+    "susceptibility_local": 0.08483382542866127,
+    "response_residual": 5.452676050179788e-12,
+    "runs": [
+      {
+        "defect_sites": [
+          0
+        ],
+        "J": 0.04,
+        "energy_cost": 0.011571685548307009,
+        "first_order": 0.01170655376095805,
+        "relative_cost": 0.9884792556883109,
+        "relaxation_per_defect_over_J2": 0.08429263290690041,
+        "eigenpair_residual": 4.233448790263626e-13
+      },
+      {
+        "defect_sites": [
+          0
+        ],
+        "J": 0.02,
+        "energy_cost": 0.005819451426933853,
+        "first_order": 0.005853276880479025,
+        "relative_cost": 0.9942211082380227,
+        "relaxation_per_defect_over_J2": 0.08456363386293063,
+        "eigenpair_residual": 2.1472276121244948e-13
+      },
+      {
+        "defect_sites": [
+          0
+        ],
+        "J": 0.01,
+        "energy_cost": 0.0029181685568051563,
+        "first_order": 0.0029266384402395124,
+        "relative_cost": 0.9971059344680572,
+        "relaxation_per_defect_over_J2": 0.08469883434356149,
+        "eigenpair_residual": 1.0860489697250097e-13
+      },
+      {
+        "defect_sites": [
+          0,
+          1
+        ],
+        "J": 0.02,
+        "energy_cost": 0.011647445915022203,
+        "first_order": 0.01170655376095805,
+        "relative_cost": 0.9949508756255001,
+        "relaxation_per_defect_over_J2": 0.07388480741980828,
+        "eigenpair_residual": 7.151774907587126e-14
+      },
+      {
+        "defect_sites": [
+          0,
+          2,
+          4
+        ],
+        "J": 0.02,
+        "energy_cost": 0.017488903055951965,
+        "first_order": 0.017559830641437072,
+        "relative_cost": 0.9959608046949078,
+        "relaxation_per_defect_over_J2": 0.05910632123758894,
+        "eigenpair_residual": 5.63927390761041e-15
+      },
+      {
+        "defect_sites": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "J": 0.02,
+        "energy_cost": 0.03505979780370794,
+        "first_order": 0.035119661282874144,
+        "relative_cost": 0.9982954425817484,
+        "relaxation_per_defect_over_J2": 0.024943116319252914,
+        "eigenpair_residual": 5.413952343678148e-15
+      }
+    ],
+    "seconds": 0.004575833911076188,
+    "susceptibility_abs_first_moment": 0.11115407193454055,
+    "canonical_pedestal_coefficient": 0.0785757974922801,
+    "susceptibility_pedestal_subtracted_abs_first_moment": 0.006709624303879589
+  },
+  {
+    "L": 14,
+    "N": 7,
+    "density": 0.5,
+    "dimension": 1716,
+    "alpha_exact": 0.2939217412439875,
+    "free_energy": -8.987918414869869,
+    "free_state_residual": 5.8519432017066244e-15,
+    "susceptibility_kernel": [
+      0.08690917982125929,
+      -0.008840341126591225,
+      -0.011022522320910149,
+      -0.011059488754109148,
+      -0.011059488754109158,
+      -0.011022522320910161,
+      -0.008840341126591208
+    ],
+    "susceptibility_abs_row_sum": 0.14875388422448035,
+    "susceptibility_local": 0.08690917982125929,
+    "response_residual": 4.295795078475153e-12,
+    "runs": [
+      {
+        "defect_sites": [
+          0
+        ],
+        "J": 0.04,
+        "energy_cost": 0.011618720759768664,
+        "first_order": 0.011756869649759501,
+        "relative_cost": 0.9882495175921541,
+        "relaxation_per_defect_over_J2": 0.08634305624427335,
+        "eigenpair_residual": 6.168393666254253e-12
+      },
+      {
+        "defect_sites": [
+          0
+        ],
+        "J": 0.02,
+        "energy_cost": 0.0058437842028222775,
+        "first_order": 0.0058784348248797505,
+        "relative_cost": 0.9941054680217226,
+        "relaxation_per_defect_over_J2": 0.08662655514368256,
+        "eigenpair_residual": 3.05721532117232e-12
+      },
+      {
+        "defect_sites": [
+          0
+        ],
+        "J": 0.01,
+        "energy_cost": 0.0029305406143844692,
+        "first_order": 0.0029392174124398753,
+        "relative_cost": 0.9970479223419532,
+        "relaxation_per_defect_over_J2": 0.08676798055406043,
+        "eigenpair_residual": 1.5255132616751243e-12
+      },
+      {
+        "defect_sites": [
+          0,
+          1
+        ],
+        "J": 0.02,
+        "energy_cost": 0.011694632533901128,
+        "first_order": 0.011756869649759501,
+        "relative_cost": 0.9947063191383051,
+        "relaxation_per_defect_over_J2": 0.07779639482296619,
+        "eigenpair_residual": 3.574377858092257e-12
+      },
+      {
+        "defect_sites": [
+          0,
+          2,
+          4,
+          6
+        ],
+        "J": 0.02,
+        "energy_cost": 0.023426079818491985,
+        "first_order": 0.023513739299519002,
+        "relative_cost": 0.9962719889035765,
+        "relaxation_per_defect_over_J2": 0.05478717564188573,
+        "eigenpair_residual": 1.6778735066097285e-14
+      },
+      {
+        "defect_sites": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "J": 0.02,
+        "energy_cost": 0.04107894712434934,
+        "first_order": 0.041149043774158255,
+        "relative_cost": 0.9982965181355458,
+        "relaxation_per_defect_over_J2": 0.025034517788897735,
+        "eigenpair_residual": 3.049537810635555e-12
+      }
+    ],
+    "seconds": 0.010040499968454242,
+    "susceptibility_abs_first_moment": 0.12812770406147797,
+    "canonical_pedestal_coefficient": 0.0785757974922801,
+    "susceptibility_pedestal_subtracted_abs_first_moment": 0.006573663068145046
+  },
+  {
+    "L": 16,
+    "N": 8,
+    "density": 0.5,
+    "dimension": 6435,
+    "alpha_exact": 0.2947332627414986,
+    "free_energy": -10.251661790966025,
+    "free_state_residual": 7.764943709649695e-15,
+    "susceptibility_kernel": [
+      0.0884536404748453,
+      -0.007434609094448442,
+      -0.009667485965912279,
+      -0.009706534126713795,
+      -0.009712328603577633,
+      -0.00970653412671378,
+      -0.009667485965912288,
+      -0.007434609094448435
+    ],
+    "susceptibility_abs_row_sum": 0.15178322745257194,
+    "susceptibility_local": 0.0884536404748453,
+    "response_residual": 5.410874361445394e-12,
+    "runs": [
+      {
+        "defect_sites": [
+          0
+        ],
+        "J": 0.04,
+        "energy_cost": 0.011648741830400766,
+        "first_order": 0.011789330509659943,
+        "relative_cost": 0.9880749225629071,
+        "relaxation_per_defect_over_J2": 0.08786792453698575,
+        "eigenpair_residual": 1.2749424284882693e-13
+      },
+      {
+        "defect_sites": [
+          0
+        ],
+        "J": 0.02,
+        "energy_cost": 0.005859400757859845,
+        "first_order": 0.005894665254829972,
+        "relative_cost": 0.9940175573258835,
+        "relaxation_per_defect_over_J2": 0.08816124242531659,
+        "eigenpair_residual": 8.137134643358586e-14
+      },
+      {
+        "defect_sites": [
+          0
+        ],
+        "J": 0.01,
+        "energy_cost": 0.0029385018713572464,
+        "first_order": 0.002947332627414986,
+        "relative_cost": 0.9970038142367783,
+        "relaxation_per_defect_over_J2": 0.08830756057739454,
+        "eigenpair_residual": 1.6174013384655267e-11
+      },
+      {
+        "defect_sites": [
+          0,
+          1
+        ],
+        "J": 0.02,
+        "energy_cost": 0.011724750211566715,
+        "first_order": 0.011789330509659943,
+        "relative_cost": 0.9945221403335572,
+        "relaxation_per_defect_over_J2": 0.08072537261653595,
+        "eigenpair_residual": 5.836092852491616e-14
+      },
+      {
+        "defect_sites": [
+          0,
+          2,
+          4,
+          6
+        ],
+        "J": 0.02,
+        "energy_cost": 0.02348378605101864,
+        "first_order": 0.023578661019319887,
+        "relative_cost": 0.9959762359608331,
+        "relaxation_per_defect_over_J2": 0.05929685518827905,
+        "eigenpair_residual": 3.8092247733682544e-13
+      },
+      {
+        "defect_sites": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "J": 0.02,
+        "energy_cost": 0.04707702199926622,
+        "first_order": 0.04715732203863977,
+        "relative_cost": 0.9982971883070936,
+        "relaxation_per_defect_over_J2": 0.02509376230423483,
+        "eigenpair_residual": 1.0119938332772476e-14
+      }
+    ],
+    "seconds": 0.031715250108391047,
+    "susceptibility_abs_first_moment": 0.15062768122713927,
+    "canonical_pedestal_coefficient": 0.0785757974922801,
+    "susceptibility_pedestal_subtracted_abs_first_moment": 0.006523913757420922
+  },
+  {
+    "L": 18,
+    "N": 9,
+    "density": 0.5,
+    "dimension": 24310,
+    "alpha_exact": 0.29528742297823235,
+    "free_energy": -11.517540966287267,
+    "free_state_residual": 1.3760310137778568e-14,
+    "susceptibility_kernel": [
+      0.08964644437375609,
+      -0.006337500255952238,
+      -0.008605290549508286,
+      -0.008645244857491331,
+      -0.008652757862160645,
+      -0.008652757862160639,
+      -0.008645244857491324,
+      -0.008605290549508267,
+      -0.006337500255952236
+    ],
+    "susceptibility_abs_row_sum": 0.15412803142398104,
+    "susceptibility_local": 0.08964644437375609,
+    "response_residual": 5.855283156075524e-12,
+    "runs": [
+      {
+        "defect_sites": [
+          0
+        ],
+        "J": 0.04,
+        "energy_cost": 0.011669024970975883,
+        "first_order": 0.011811496919129295,
+        "relative_cost": 0.9879378584163476,
+        "relaxation_per_defect_over_J2": 0.08904496759588225,
+        "eigenpair_residual": 2.571573622458958e-12
+      },
+      {
+        "defect_sites": [
+          0
+        ],
+        "J": 0.02,
+        "energy_cost": 0.005870009986502112,
+        "first_order": 0.005905748459564647,
+        "relative_cost": 0.9939485277256169,
+        "relaxation_per_defect_over_J2": 0.0893461826563394,
+        "eigenpair_residual": 1.1321368547060153e-12
+      },
+      {
+        "defect_sites": [
+          0
+        ],
+        "J": 0.01,
+        "energy_cost": 0.0029439245860984897,
+        "first_order": 0.0029528742297823237,
+        "relative_cost": 0.9969691754584165,
+        "relaxation_per_defect_over_J2": 0.08949643683833948,
+        "eigenpair_residual": 5.734582901260651e-13
+      },
+      {
+        "defect_sites": [
+          0,
+          1
+        ],
+        "J": 0.02,
+        "energy_cost": 0.011745098367951456,
+        "first_order": 0.011811496919129295,
+        "relative_cost": 0.9943784812685086,
+        "relaxation_per_defect_over_J2": 0.0829981889722978,
+        "eigenpair_residual": 1.4947825684488775e-12
+      },
+      {
+        "defect_sites": [
+          0,
+          2,
+          4,
+          6,
+          8
+        ],
+        "J": 0.02,
+        "energy_cost": 0.02941687292948636,
+        "first_order": 0.029528742297823235,
+        "relative_cost": 0.9962115092065699,
+        "relaxation_per_defect_over_J2": 0.05593468416843772,
+        "eigenpair_residual": 7.864727442131567e-12
+      },
+      {
+        "defect_sites": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "J": 0.02,
+        "energy_cost": 0.053061252494742916,
+        "first_order": 0.053151736136081824,
+        "relative_cost": 0.9982976352624259,
+        "relaxation_per_defect_over_J2": 0.025134344816363306,
+        "eigenpair_residual": 1.5980396244485963e-13
+      }
+    ],
+    "seconds": 0.1282087080180645,
+    "susceptibility_abs_first_moment": 0.1681896947521707,
+    "canonical_pedestal_coefficient": 0.0785757974922801,
+    "susceptibility_pedestal_subtracted_abs_first_moment": 0.006423188564007294
+  },
+  {
+    "L": 20,
+    "N": 10,
+    "density": 0.5,
+    "dimension": 92378,
+    "alpha_exact": 0.29568270905469296,
+    "free_energy": -12.784906442999324,
+    "free_state_residual": 1.1417956397301437e-14,
+    "susceptibility_kernel": [
+      0.09059470493682228,
+      -0.0054580281377635455,
+      -0.0077508977023944235,
+      -0.00779132676315457,
+      -0.007799493860697664,
+      -0.007801189146278864,
+      -0.007799493860697681,
+      -0.007791326763154588,
+      -0.007750897702394413,
+      -0.00545802813776353
+    ],
+    "susceptibility_abs_row_sum": 0.15599538701112153,
+    "susceptibility_local": 0.09059470493682228,
+    "response_residual": 7.892378463603607e-12,
+    "runs": [
+      {
+        "defect_sites": [
+          0
+        ],
+        "J": 0.04,
+        "energy_cost": 0.011683339887561317,
+        "first_order": 0.011827308362187719,
+        "relative_cost": 0.987827452348611,
+        "relaxation_per_defect_over_J2": 0.08998029664150121,
+        "eigenpair_residual": 1.1780669290220924e-11
+      },
+      {
+        "defect_sites": [
+          0
+        ],
+        "J": 0.02,
+        "energy_cost": 0.005877538985027186,
+        "first_order": 0.0059136541810938595,
+        "relative_cost": 0.9938929137618269,
+        "relaxation_per_defect_over_J2": 0.09028799016668268,
+        "eigenpair_residual": 6.20524706454448e-12
+      },
+      {
+        "defect_sites": [
+          0
+        ],
+        "J": 0.01,
+        "energy_cost": 0.002947782943111932,
+        "first_order": 0.0029568270905469297,
+        "relative_cost": 0.9969412660402387,
+        "relaxation_per_defect_over_J2": 0.09044147434997957,
+        "eigenpair_residual": 3.5317353482874584e-12
+      },
+      {
+        "defect_sites": [
+          0,
+          1
+        ],
+        "J": 0.02,
+        "energy_cost": 0.011759458864155192,
+        "first_order": 0.011827308362187719,
+        "relative_cost": 0.9942633187573393,
+        "relaxation_per_defect_over_J2": 0.08481187254065839,
+        "eigenpair_residual": 7.0376094582129644e-12
+      },
+      {
+        "defect_sites": [
+          0,
+          2,
+          4,
+          6,
+          8
+        ],
+        "J": 0.02,
+        "energy_cost": 0.029449499910169763,
+        "first_order": 0.029568270905469297,
+        "relative_cost": 0.9959831606089091,
+        "relaxation_per_defect_over_J2": 0.05938549764976722,
+        "eigenpair_residual": 2.2910375722217294e-11
+      },
+      {
+        "defect_sites": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "J": 0.02,
+        "energy_cost": 0.05903588838794427,
+        "first_order": 0.059136541810938595,
+        "relative_cost": 0.9982979487823939,
+        "relaxation_per_defect_over_J2": 0.025163355748581556,
+        "eigenpair_residual": 1.8869349583294026e-12
+      }
+    ],
+    "seconds": 0.5028718751855195,
+    "susceptibility_abs_first_moment": 0.1900695042810079,
+    "canonical_pedestal_coefficient": 0.0785757974922801,
+    "susceptibility_pedestal_subtracted_abs_first_moment": 0.006369989449692312
+  }
+]

@@ -1,6 +1,10 @@
 # Counterexample campaign, 2026-10-28
 
-Status: active research, no established counterexample claimed.
+Status: **physics-level d=24, c=24 counterexample construction**, with
+three independent AI reviews. Read the
+[complete argument](COUNTEREXAMPLE_D24.md). The conclusion uses controlled
+weak-coupling matching and conventional Gaussian RG; it is not a measured
+microscopic c=24 or a rigorous lattice-to-CFT theorem.
 
 This campaign uses four simultaneous Codex workers: one coordinator and
 three independent research workers. It starts from collaborator commit
@@ -8,7 +12,10 @@ three independent research workers. It starts from collaborator commit
 The original conjecture concerns the total Virasoro central charge of
 unitary conformal infrared sectors, not an effective central charge.
 
-## Priority
+## Starting point and research progression
+
+The following checkpoints record how the construction developed; their
+earlier conditional statuses are superseded by the complete argument above.
 
 The most concrete existing candidate is the explicit 23-letter route-A
 bond in `../explicit_candidate/`. C33 now certifies 46 simple crossings
@@ -78,3 +85,22 @@ dimension Delta_payload+4h². The inherited payload margins exclude all
 non-Gaussian dimensions below three. Independent reviews agree; the
 finite-J phase conclusion remains under review. See `infrared/README.md`
 and `doping_check/LOCALITY_REVIEW.md`.
+
+## Final synthesis
+
+[proved local ingredients; controlled physics inference] The exact
+material-coordinate gap model makes the vacancy coupling local. At half
+occupied density it has K_gap=4, so its first commensurate harmonic is
+irrelevant. Fractional marker harmonics obey physical momentum selection;
+all surviving non-Gaussian resonances have reference dimension at least
+three. The canonical zero-mode correction is retained in the per-defect
+energy comparison. Separate primary-source audits supply an exact local
+Schrieffer-Wolff normal form and a positive auxiliary threshold above its
+ground state. Nested fixed nonzero g, lambda and J/t then place 23 payload
+bosons and one charge boson inside the conventional stable Gaussian phase.
+
+The literal physical alphabet has 24 states, giving c=24>d-1=23.
+The [synthesis](COUNTEREXAMPLE_D24.md) collects the parameters, proofs,
+numerics, continuum inputs and review reports. Collaborator C41 independently
+agrees with the physical harmonic and finite-ring gluing rules in its
+progress report. The stronger all-n/fixed-d question is separate.

@@ -68,7 +68,9 @@ These are spelled out in [CONTRIBUTING.md](CONTRIBUTING.md). In brief, tag every
 
 ## Where things stand
 
-A new candidate refutation is recorded below and needs independent review. The working standard is theoretical physics (standard RG, controlled perturbation theory, calibrated numerics), not mathematical rigor. In brief:
+A d=24 physics-level counterexample is now recorded with three independent AI reviews. The working standard is theoretical physics (standard RG, controlled perturbation theory, calibrated numerics), not mathematical rigor.
+
+- **d=24, c=24: a one-vacancy construction.** Add one mobile vacancy to the explicit 23-state chain, with its original bond acting on occupied pairs. The local phase-model representation, certified 23-band reference, nonzero-coupling sector bounds and physical momentum rules give 23 payload bosons plus one charge boson at sufficiently small fixed couplings. Published local perturbation bounds control the original cell machinery. The conclusion uses conventional Gaussian phase stability; no microscopic c=24 measurement or rigorous CFT-limit theorem is claimed. Read [the construction and independent reviews](contrib/counterexample_campaign/COUNTEREXAMPLE_D24.md).
 
 - **Small d: no counterexample.** Nothing above d − 1 at d = 2, in symmetric families at d = 3 to 7, or at the best d = 4 target. The d = 3 hint failed its own follow-up (C12); an independent check remains pending in the recorded status.
 - **New d = 2 proof reductions.** Arbitrary uniform fields in the symmetric ferromagnetic rank-one class give at most c = 1/2, using a recent rigorous gap theorem and the exact Ising solution. An exhaustive classification of additive on-site spin charges leaves one additional two-parameter staggered-field family; exact gap arguments exclude both outer regions. The full qubit conjecture remains open. See [the proofs and remaining region](contrib/d2_gap_reduction/README.md).

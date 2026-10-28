@@ -1,0 +1,18 @@
+{
+  "status": "passed",
+  "source_sha256": "28757fb04aa0e0fdfdee1c77db064b7923bcc31b30adff7242ec9ac2883bdac0",
+  "fixture_reconstruction_error": 0.0,
+  "fixture_nonzero_entries": 923,
+  "local_links": {
+    "../explicit_candidate/README.md": true,
+    "../explicit_candidate/bond23.py": true,
+    "route_a/C33_AUDIT.md": true,
+    "route_a/README.md": true,
+    "doping_check/README.md": true,
+    "infrared/README.md": true,
+    "doping_check/CHARGE_THRESHOLD.md": true,
+    "route_a/DEFECT_TRANSFER.md": true,
+    "infrared/PHYSICS_VERDICT.md": true
+  },
+  "scope": "Final synthesis formula/path review plus independently rebuilt moderate-scale bond fixture; not n=23 floating-point CFT simulation."
+}

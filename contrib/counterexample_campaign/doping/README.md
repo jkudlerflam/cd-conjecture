@@ -1,6 +1,10 @@
 # A one-vacancy mobile completion of the 23-state candidate
 
-Status: explicit microscopic candidate; conditional infrared conclusion.
+Historical construction note. The completed physics-level argument and
+independent reviews are in [COUNTEREXAMPLE_D24.md](../COUNTEREXAMPLE_D24.md).
+The conditional wording below records the initial stage of this work.
+
+Initial status: explicit microscopic candidate; conditional infrared conclusion.
 The proposed values are local dimension d=24 and total Virasoro central
 charge c=24. The latter has not been measured or established for the
 microscopic Hamiltonian. This note separates the exact construction from

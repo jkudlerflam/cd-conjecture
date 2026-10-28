@@ -771,3 +771,58 @@ human review is claimed.
 - **c at n = 3 and 4 on the logical chains** (`contrib/routeA_n34_chains/`, Claude agent, not rerun by the coordinator). Switch cell: all 2n Fermi points survive self-consistent Hartree–Fock with every generated term and the exact third-order bond, the dimensionless couplings at the Fermi points are at most 1.1 × 10⁻³ (n = 3) and 1.3 × 10⁻⁴ (n = 4), and a rescaled proxy chain with the same Fermi points gives c = 3.00 and 4.00 from the Casimir energy, with entropies matching the c = n calibrations to 0.004. 23-letter chain at n = 3: c = 3 at g = 0.05 (estimators 3.41 and 2.98), unresolved at g = 0.1, and c = 2 at g = 0.2, where Hartree–Fock empties one band, consistent with the red team's requirement of small g. At n ≥ 3 the phase must shrink (10⁻⁵ at n = 3, 10⁻⁷ at n = 4) and a small field is needed, without which particle-hole symmetry leaves a mixed umklapp resonant and pair transfer is exactly resonant. The true chains reach their conformal regime only beyond about 2000 cells, so c was measured on the proxy chains; n = 4 of the 23-letter chain needs extended precision.
 - **C39, all-n margins in a 46-letter core** (`codex/work_C39/RESULT.md`, `PROOFS.md`, Astra, unrefereed; the coordinator reran `checks.py` and the exact rational certificate at n = 2). A fixed-alphabet core of 46 letters with two independently phased buses and a biased frustration-free vacuum walker. Its proof gives, for every n, distinct band centres and positive pair-sum margins through a terminating parameter search with consecutive centre and slope ratios below 1/32 (lacunary), with exact rational certificates (Fraction arithmetic, Sturm root isolation) at n = 1, 2, 3 and full second-order bonds checked by two- and three-cell ED with fourth-order remainders. With the inherited mobile wrapper, d₀ = 4464. If it survives review, this is the all-n finite-dimensional input that unbounded c at fixed d₀ needs; the thermodynamic elimination of massive sectors remains the stated assumption.
 - **C8 run 11** (`codex/work_C8/` §55 to §58). Factorial length tails, control of the ground-state marker density, and exclusion of illegal selector sectors after strengthening one penalty, checked through dimension 7,007; the controlled local infrared reduction remains.
+
+### 9.21 One-vacancy d=24 counterexample at the physics standard (2026-10-28)
+
+[proved local ingredients; controlled physics inference; independently
+reviewed by AI] The
+[counterexample campaign](contrib/counterexample_campaign/COUNTEREXAMPLE_D24.md)
+adds one vacancy state to the explicit 23-letter bond. Species-independent
+vacancy hopping preserves the ordered occupied labels, and the original
+bond acts only on adjacent occupied pairs. This is a literal Hermitian,
+one-site invariant nearest-neighbour bond on d=24 states. At half occupied
+density its weak-coupling infrared theory contains 23 payload compact
+bosons and one charge boson, giving c=24>d-1=23. The conclusion uses
+conventional Gaussian RG stability; it is not a mathematical
+lattice-to-CFT theorem or a microscopic numerical c=24 determination.
+
+[proved and checked] The campaign independently replayed C33's
+n=23 matrix/inertia certificate, completed all-length and illegal-sector
+exclusion for compatible material rings at fixed nonzero port coupling,
+and checked squeezing, cyclic twists and the exact charge-sea projection.
+The 576-by-576 bond fixture was independently reconstructed with zero
+entry error. Exact momentum optimization through L=256 checks a positive
+free-charge threshold for restoring nonforward payload momentum, even
+with arbitrarily many particle-hole excitations and bounded number
+rounding. On arbitrary physical rings, rounding occupied number to a
+multiple of 24 costs O(1/L) and avoids fixed-energy material defects.
+
+[derived continuum analysis; numerical support] Material gap coordinates
+turn vacancy motion into the local q=0 phase model. At half physical
+occupancy K_gap=4. Physical translation makes every nonzero charge
+umklapp dressing cost at least four in scaling dimension, including the
+fractional marker harmonics. The other non-Gaussian resonances have
+dimension at least three. Local defect dressing is O(J^2/t) per defect,
+with the canonical zero-mode term explicitly separated; tagged-defect
+checks reach L=20. Choose g, then lambda, then J/t sufficiently small,
+all fixed before the thermodynamic limit and compared with the smallest
+payload speed and momentum margins.
+
+[read; proved application] Bravyi-DiVincenzo-Loss's fixed-order local
+Schrieffer-Wolff expansion supplies an exact local-unitary normal form
+with a full-space interaction-strength remainder O(lambda^(m+1)). Its
+block-diagonal stability lemma, applied after subtracting half the cell
+defect penalty, gives a uniform massive auxiliary threshold above the
+reference ground. These statements avoid an uncontrolled extensive-band
+projection and make C40's stronger all-order exact kernel unnecessary
+for the conventional phase-stability inference. Two independent
+primary-source audits are linked in the synthesis.
+
+Four Codex GPT-6-family workers (coordinator plus three repeatedly
+redeployed agents) produced and cross-checked this campaign. All three
+reviewers accept the final argument at the repository's physics standard;
+no human review is claimed. Fresh collaborator C41 progress independently
+agrees with the harmonic and number-rounding analysis, but its own final
+matching assessment remains pending. The new C39 all-n core and C42 work
+concern the stronger fixed-d unbounded-c program and are separate from
+this finite-d violation.
