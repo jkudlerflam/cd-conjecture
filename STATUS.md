@@ -8,6 +8,25 @@ Latorre and Sierra ([arXiv:2403.17242](https://arxiv.org/abs/2403.17242)) consid
 
 The working standard is theoretical physics (standard RG, controlled perturbation theory, numerics calibrated with at least two estimators), not mathematical rigor.
 
+## New coordinated audit: one-vacancy completion (2026-10-28)
+
+[proved finite ingredients; conditional infrared target] A new
+[parallel campaign](contrib/counterexample_campaign/README.md) tests a
+24-state mobile completion of the explicit 23-state chain. One added
+vacancy moves by species-independent swaps; the original bond acts on
+occupied pairs. Exact squeezed-space identities give a free charge mode
+and, at first order, a scalar multiple of the original internal chain.
+Six independent small-ring checks include boundary twists and charge-sea
+degeneracies. The literal 576-by-576 bond is implemented and checked.
+The desired c=24>d-1=23 remains conditional on finite-coupling infrared
+transfer; it is not a measured or established violation.
+
+[proved] The campaign also supplies all-length and illegal-sector bounds
+for the original 23-state bond at fixed nonzero port coupling, including
+a certified n=23 interval. C33's new finite-g certificate already supplies
+46 simple Fermi crossings and positive pair-sum margins at n=23; older
+summaries below that describe this finite-band question as open are stale.
+
 ## Summary
 
 1. **No counterexample at small d.** Nothing above d − 1 at d = 2, in symmetric families at d = 3 to 7, or at the best d = 4 target. The d = 3 hint failed C12's own follow-up; the independent check is still pending in the recorded status. New [qubit proof reductions](contrib/d2_gap_reduction/README.md) close symmetric ferromagnetic rank-one exchange with arbitrary uniform fields (c ≤ 1/2), add a rigorous interacting gapped region, and exhaust additive on-site spin symmetries, leaving one staggered-field family beyond the known controlled classes.

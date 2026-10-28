@@ -1,0 +1,54 @@
+{
+  "status": "numerical_finite_bond_fixture_only",
+  "dimension": 24,
+  "bond_shape": [
+    576,
+    576
+  ],
+  "nonzero_entries": 923,
+  "hermiticity_error": 0.0,
+  "occupied_block_error": 0.0,
+  "particle_number_error": 0.0,
+  "original_charge_error": 0.0,
+  "marker_number_error": 0.0,
+  "alpha_half": 0.29735763271532445,
+  "source_sha256": "28757fb04aa0e0fdfdee1c77db064b7923bcc31b30adff7242ec9ac2883bdac0",
+  "parameters": {
+    "t": 1.0,
+    "tx": 1.0,
+    "tsw": 1.0,
+    "td": 0.013,
+    "Delta": 2.5,
+    "delta": 0.0,
+    "Dx": 7.0,
+    "DM": 8.0,
+    "gp": 0.031,
+    "gm": 0.027,
+    "eps": 0.017,
+    "musel": 1.1,
+    "K": 10.0,
+    "lam": 0.023,
+    "phi": 1.5707963267948966,
+    "ph": {
+      "0": 0.21,
+      "+": -0.18,
+      "-": 0.32
+    },
+    "phx": {
+      "0": 0.44,
+      "+": 0.07,
+      "-": -0.11
+    },
+    "phsw": {
+      "0": 0.12,
+      "+": -0.13,
+      "-": 0.19
+    },
+    "phd": {
+      "0": 0.24,
+      "+": 0.39,
+      "-": -0.26
+    }
+  },
+  "scope": "No n=23 CFT, no finite-J charge elimination, no microscopic central charge measured."
+}

@@ -1,0 +1,249 @@
+{
+  "status": "passed",
+  "model": "arbitrary complex Hermitian internal bonds; t=1",
+  "cases": [
+    {
+      "L": 4,
+      "M": 2,
+      "q": 2,
+      "hilbert_dimension": 24,
+      "exact_hopping_error": 0.0,
+      "exact_interaction_error": 0.0,
+      "projected_first_order_error": 8.881784197001252e-16,
+      "low_space_gram_error": 5.551115123125783e-16,
+      "alpha_exact": 0.24999999999999994,
+      "ordered_bond_weights_at_theta_0": [
+        0.3750000000000003,
+        0.12500000000000014
+      ],
+      "sectors": [
+        {
+          "r": 0,
+          "spin_dimension": 3,
+          "charge_ground_degeneracy": 1,
+          "energy": -2.82842712474619,
+          "adjacency_factor": 0.24999999999999994,
+          "twist": 0.0
+        },
+        {
+          "r": 1,
+          "spin_dimension": 1,
+          "charge_ground_degeneracy": 2,
+          "energy": -1.9999999999999998,
+          "adjacency_factor": 0.24999999999999994,
+          "twist": 3.141592653589793
+        }
+      ]
+    },
+    {
+      "L": 5,
+      "M": 2,
+      "q": 3,
+      "hilbert_dimension": 90,
+      "exact_hopping_error": 0.0,
+      "exact_interaction_error": 0.0,
+      "projected_first_order_error": 7.776515945702111e-16,
+      "low_space_gram_error": 9.992007221626409e-16,
+      "alpha_exact": 0.1381966011250107,
+      "ordered_bond_weights_at_theta_0": [
+        0.2211145618000168,
+        0.05527864045000429
+      ],
+      "sectors": [
+        {
+          "r": 0,
+          "spin_dimension": 6,
+          "charge_ground_degeneracy": 1,
+          "energy": -3.23606797749979,
+          "adjacency_factor": 0.1381966011250107,
+          "twist": 0.0
+        },
+        {
+          "r": 1,
+          "spin_dimension": 3,
+          "charge_ground_degeneracy": 2,
+          "energy": -2.6180339887498945,
+          "adjacency_factor": 0.1381966011250107,
+          "twist": 3.141592653589793
+        }
+      ]
+    },
+    {
+      "L": 5,
+      "M": 3,
+      "q": 2,
+      "hilbert_dimension": 80,
+      "exact_hopping_error": 0.0,
+      "exact_interaction_error": 0.0,
+      "projected_first_order_error": 1.3322676295501878e-15,
+      "low_space_gram_error": 4.440892098500626e-16,
+      "alpha_exact": 0.425464400750007,
+      "ordered_bond_weights_at_theta_0": [
+        0.5105572809000083,
+        0.5105572809000088,
+        0.25527864045000453
+      ],
+      "sectors": [
+        {
+          "r": 0,
+          "spin_dimension": 4,
+          "charge_ground_degeneracy": 1,
+          "energy": -3.2360679774997916,
+          "adjacency_factor": 0.425464400750007,
+          "twist": 0.0
+        },
+        {
+          "r": 1,
+          "spin_dimension": 2,
+          "charge_ground_degeneracy": 1,
+          "energy": -2.956295201467611,
+          "adjacency_factor": 0.425464400750007,
+          "twist": 2.0943951023931953
+        },
+        {
+          "r": 2,
+          "spin_dimension": 2,
+          "charge_ground_degeneracy": 1,
+          "energy": -2.956295201467611,
+          "adjacency_factor": 0.425464400750007,
+          "twist": 4.1887902047863905
+        }
+      ]
+    },
+    {
+      "L": 6,
+      "M": 3,
+      "q": 2,
+      "hilbert_dimension": 160,
+      "exact_hopping_error": 0.0,
+      "exact_interaction_error": 0.0,
+      "projected_first_order_error": 2.797157557069881e-16,
+      "low_space_gram_error": 6.661338147750939e-16,
+      "alpha_exact": 0.27777777777777773,
+      "ordered_bond_weights_at_theta_0": [
+        0.34722222222222215,
+        0.34722222222222227,
+        0.13888888888888898
+      ],
+      "sectors": [
+        {
+          "r": 0,
+          "spin_dimension": 4,
+          "charge_ground_degeneracy": 1,
+          "energy": -3.9999999999999982,
+          "adjacency_factor": 0.27777777777777773,
+          "twist": 0.0
+        },
+        {
+          "r": 1,
+          "spin_dimension": 2,
+          "charge_ground_degeneracy": 1,
+          "energy": -3.7587704831436337,
+          "adjacency_factor": 0.27777777777777773,
+          "twist": 2.0943951023931953
+        },
+        {
+          "r": 2,
+          "spin_dimension": 2,
+          "charge_ground_degeneracy": 1,
+          "energy": -3.7587704831436324,
+          "adjacency_factor": 0.27777777777777773,
+          "twist": 4.1887902047863905
+        }
+      ]
+    },
+    {
+      "L": 6,
+      "M": 4,
+      "q": 2,
+      "hilbert_dimension": 240,
+      "exact_hopping_error": 0.0,
+      "exact_interaction_error": 0.0,
+      "projected_first_order_error": 3.136073851779205e-15,
+      "low_space_gram_error": 2.220446049250313e-15,
+      "alpha_exact": 0.5416666666666665,
+      "ordered_bond_weights_at_theta_0": [
+        0.6111111111111106,
+        0.5833333333333327,
+        0.6111111111111112,
+        0.36111111111111105
+      ],
+      "sectors": [
+        {
+          "r": 0,
+          "spin_dimension": 6,
+          "charge_ground_degeneracy": 1,
+          "energy": -3.4641016151377553,
+          "adjacency_factor": 0.5416666666666665,
+          "twist": 0.0
+        },
+        {
+          "r": 1,
+          "spin_dimension": 3,
+          "charge_ground_degeneracy": 1,
+          "energy": -3.3460652149512335,
+          "adjacency_factor": 0.5416666666666665,
+          "twist": 1.5707963267948966
+        },
+        {
+          "r": 2,
+          "spin_dimension": 4,
+          "charge_ground_degeneracy": 2,
+          "energy": -3.0000000000000004,
+          "adjacency_factor": 0.5416666666666665,
+          "twist": 3.141592653589793
+        },
+        {
+          "r": 3,
+          "spin_dimension": 3,
+          "charge_ground_degeneracy": 1,
+          "energy": -3.3460652149512304,
+          "adjacency_factor": 0.5416666666666665,
+          "twist": 4.71238898038469
+        }
+      ]
+    },
+    {
+      "L": 5,
+      "M": 3,
+      "q": 3,
+      "hilbert_dimension": 270,
+      "exact_hopping_error": 0.0,
+      "exact_interaction_error": 0.0,
+      "projected_first_order_error": 9.930136612989092e-16,
+      "low_space_gram_error": 2.220446049250313e-15,
+      "alpha_exact": 0.425464400750007,
+      "ordered_bond_weights_at_theta_0": [
+        0.5105572809000083,
+        0.5105572809000088,
+        0.25527864045000453
+      ],
+      "sectors": [
+        {
+          "r": 0,
+          "spin_dimension": 11,
+          "charge_ground_degeneracy": 1,
+          "energy": -3.2360679774997916,
+          "adjacency_factor": 0.425464400750007,
+          "twist": 0.0
+        },
+        {
+          "r": 1,
+          "spin_dimension": 8,
+          "charge_ground_degeneracy": 1,
+          "energy": -2.956295201467611,
+          "adjacency_factor": 0.425464400750007,
+          "twist": 2.0943951023931953
+        },
+        {
+          "r": 2,
+          "spin_dimension": 8,
+          "charge_ground_degeneracy": 1,
+          "energy": -2.956295201467611,
+          "adjacency_factor": 0.425464400750007,
+          "twist": 4.1887902047863905
+        }
+      ]
+    }
+  ]
+}

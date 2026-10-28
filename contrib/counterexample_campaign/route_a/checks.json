@@ -1,0 +1,71 @@
+{
+  "selector": {
+    "status": "proved_rational_inequalities",
+    "b": 24,
+    "gamma_interval": [
+      7.566715709125815e-05,
+      7.566715709125815e-05
+    ],
+    "marker_potential_interval": [
+      1.9538930972471098,
+      1.9538930972471098
+    ],
+    "energy_density_interval": [
+      -0.0012640127242435817,
+      -0.0012640127242435817
+    ],
+    "excited_fragment_gap_lower": 0.01577059737104434,
+    "lambda_max_power": -20,
+    "K": 10,
+    "wrong_length_sector_gap_lower": 6.613041392719565e-05,
+    "illegal_sector_gap_lower": 5.99998664855957,
+    "rational_witnesses": {
+      "gamma_lower": "6437049828297949510101184859743347/85070591730234615865843651857942052864",
+      "five_B_upper": "5/524288",
+      "kappa_lower": "1341614050294024225611356699416022607/85070591730234615865843651857942052864",
+      "K_minus_four_minus_seven_B_upper": "3145721/524288"
+    }
+  },
+  "finite": {
+    "status": "numerical_diagnostics_and_exact_support_checks",
+    "cells": [
+      {
+        "n": 0,
+        "dim": 4,
+        "vacuum_min": 0.7,
+        "excited_min": 7.2,
+        "proved_excited_lower": 0.9
+      },
+      {
+        "n": 1,
+        "dim": 22,
+        "vacuum_min": -0.30000000000000016,
+        "excited_min": 2.7018083653270546,
+        "proved_excited_lower": 0.9
+      },
+      {
+        "n": 2,
+        "dim": 72,
+        "vacuum_min": -0.714213562373095,
+        "excited_min": 1.9360506866219347,
+        "proved_excited_lower": 0.9
+      },
+      {
+        "n": 3,
+        "dim": 200,
+        "vacuum_min": -0.918033988749895,
+        "excited_min": 1.6098441435900015,
+        "proved_excited_lower": 0.9
+      },
+      {
+        "n": 4,
+        "dim": 512,
+        "vacuum_min": -1.0320508075688772,
+        "excited_min": 1.445826747905798,
+        "proved_excited_lower": 0.9
+      }
+    ],
+    "port_norm": 1.7320508075688772,
+    "checked_directed_move_entries": 144
+  }
+}

@@ -45,3 +45,16 @@ All workers are AI assistants in the GPT-6 family. No human review is
 claimed. Results must distinguish proofs, finite numerical checks,
 standard continuum inputs, and open hypotheses. Scripts and exact
 parameters are retained alongside their reports.
+
+## First checkpoint
+
+[proved finite identities; numerical cross-checks] The vacancy-lift bond is
+implemented in `doping/bond24.py` and a moderate-scale 576-by-576 fixture
+is saved. All three exact U(1) checks and Hermiticity pass. Independent
+squeezed-space checks cover q=2,3 rings with full dimensions 24 to 270,
+including the ring twist and complete first-order charge-ground projection.
+
+[proved] The original chain's global sector proof in `route_a/README.md`
+now excludes all wrong-length and illegal sectors on compatible rings
+for a fixed nonzero interval of port couplings. This does not supply the
+finite-coupling infrared conclusion of the vacancy construction.
