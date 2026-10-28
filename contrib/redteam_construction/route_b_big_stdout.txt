@@ -1,0 +1,21 @@
+
+=== q=4 q+=2 r=8 n=4 cell dim=4096 g=0.2 ===
+code splitting 5.1e-15, cell gap 1.1949, levels 12, alpha=-0.257863, compression residuals L 2.3e-15 R 2.8e-15
+quadratic second-order terms: 0 (max real part 0.0e+00, must be 0)
+  h2(0)  eigenvalues / (4 alpha^2): [0. 0. 0. 0. 0. 0. 0. 0.]
+  h2(pi) eigenvalues / (4 alpha^2): [0. 0. 0. 0. 0. 0. 0. 0.]
+  [Fermi-point shift of each mode is delta k = omega/(lambda * 4 alpha^2) at order lambda]
+parity-odd cubic terms: 0
+quartic terms: 144; singlet GN coefficient g_s = 0.042028 (= 9.5058 alpha^4); sign repulsive
+  |G - G^T|/|G| = 0.00e+00; eigenvalues of sym(G): [-0.063929 -0.063929 -0.063929 -0.063929 -0.063929 -0.063929 -0.063929
+ -0.063929 -0.063929 -0.063929 -0.063929 -0.063929 -0.04376  -0.04376
+ -0.04376  -0.04376  -0.04376  -0.04376  -0.04376  -0.04376  -0.04376
+ -0.012489 -0.012489 -0.012489 -0.012489 -0.012489 -0.012489  0.05912 ]
+  one-loop flow at the symmetric point (all SO(8) currents resonant): runaway (l = 1.02)
+  |omega| values [0.0]; ad_Q charges no shift
+  neutral currents 28; U(1)_Q forward coupling G_QQ = nan; resonant fraction |G_res|/|G| = 1.000
+    flow (a) neutral only, symmetric: runaway (l = 1.0)
+    flow (b) neutral + noise 1e-2: runaway (l = 1.0)
+    flow (b') neutral - same noise: runaway (l = 1.0)
+    flow (c) all resonant + noise 1e-2: runaway (l = 1.0)
+EXIT 0

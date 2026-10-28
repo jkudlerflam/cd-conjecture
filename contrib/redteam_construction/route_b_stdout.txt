@@ -1,0 +1,58 @@
+three-cell ED check (q=2, q+=1, g=0.3): lambda, |Heff-H1|, |Heff-H1-H2|, |Heff-H1-H2 without adjacent term|
+   0.040  9.808e-03  4.070e-05  1.162e-04
+   0.020  2.452e-03  5.085e-06  2.770e-05
+   0.010  6.131e-04  6.356e-07  6.840e-06
+
+=== q=3 q+=1 r=4 n=2 cell dim=324 g=0.2 ===
+code splitting 9.0e-15, cell gap 1.0739, levels 10, alpha=-0.299760, compression residuals L 5.7e-16 R 6.0e-16
+quadratic second-order terms: 2 (max real part 1.5e-33, must be 0)
+  h2(0)  eigenvalues / (4 alpha^2): [-0.330748 -0.330748  0.330748  0.330748]
+  h2(pi) eigenvalues / (4 alpha^2): [-0.330748 -0.330748  0.330748  0.330748]
+  [Fermi-point shift of each mode is delta k = omega/(lambda * 4 alpha^2) at order lambda]
+parity-odd cubic terms: 0
+quartic terms: 24; singlet GN coefficient g_s = 0.088388 (= 10.9471 alpha^4); sign repulsive
+  |G - G^T|/|G| = 0.00e+00; eigenvalues of sym(G): [-0.126432 -0.126432 -0.085082 -0.085082 -0.085082 -0.022216]
+  one-loop flow at the symmetric point (all SO(4) currents resonant): runaway (l = 0.82)
+  |omega| values [0.330748]; ad_Q charges [-1. -0.  0.  0.  0.  1.]
+  neutral currents 4; U(1)_Q forward coupling G_QQ = -0.022216; resonant fraction |G_res|/|G| = 0.640
+    flow (a) neutral only, symmetric: bounded to l=300 (final |G| 0.149) (l = 300.0)
+    flow (b) neutral + noise 1e-2: runaway (l = 8.5)
+    flow (b') neutral - same noise: runaway (l = 8.5)
+    flow (c) all resonant + noise 1e-2: runaway (l = 8.5)
+
+=== q=3 q+=1 r=4 n=2 cell dim=324 g=0.5 ===
+code splitting 9.5e-15, cell gap 1.3520, levels 10, alpha=-0.418584, compression residuals L 7.9e-16 R 1.0e-15
+quadratic second-order terms: 2 (max real part 1.9e-33, must be 0)
+  h2(0)  eigenvalues / (4 alpha^2): [-0.241485 -0.241485  0.241485  0.241485]
+  h2(pi) eigenvalues / (4 alpha^2): [-0.241485 -0.241485  0.241485  0.241485]
+  [Fermi-point shift of each mode is delta k = omega/(lambda * 4 alpha^2) at order lambda]
+parity-odd cubic terms: 0
+quartic terms: 24; singlet GN coefficient g_s = 0.260391 (= 8.4819 alpha^4); sign repulsive
+  |G - G^T|/|G| = 0.00e+00; eigenvalues of sym(G): [-0.397882 -0.397882 -0.247531 -0.247531 -0.247531 -0.023988]
+  one-loop flow at the symmetric point (all SO(4) currents resonant): runaway (l = 0.73)
+  |omega| values [0.241485]; ad_Q charges [-1. -0.  0.  0.  0.  1.]
+  neutral currents 4; U(1)_Q forward coupling G_QQ = -0.023988; resonant fraction |G_res|/|G| = 0.607
+    flow (a) neutral only, symmetric: bounded to l=300 (final |G| 0.056) (l = 300.0)
+    flow (b) neutral + noise 1e-2: runaway (l = 8.5)
+    flow (b') neutral - same noise: runaway (l = 8.5)
+    flow (c) all resonant + noise 1e-2: runaway (l = 8.7)
+
+=== q=4 q+=1 r=6 n=3 cell dim=2048 g=0.2 ===
+code splitting 2.9e-15, cell gap 1.1369, levels 12, alpha=-0.276526, compression residuals L 1.3e-15 R 1.4e-15
+quadratic second-order terms: 3 (max real part 8.5e-34, must be 0)
+  h2(0)  eigenvalues / (4 alpha^2): [-0.838945 -0.838945 -0.838945  0.838945  0.838945  0.838945]
+  h2(pi) eigenvalues / (4 alpha^2): [-0.838945 -0.838945 -0.838945  0.838945  0.838945  0.838945]
+  [Fermi-point shift of each mode is delta k = omega/(lambda * 4 alpha^2) at order lambda]
+parity-odd cubic terms: 0
+quartic terms: 63; singlet GN coefficient g_s = 0.055021 (= 9.4099 alpha^4); sign repulsive
+  |G - G^T|/|G| = 0.00e+00; eigenvalues of sym(G): [-0.089977 -0.089977 -0.089977 -0.089977 -0.089977 -0.089977 -0.043006
+ -0.043006 -0.043006 -0.043006 -0.043006 -0.043006 -0.043006 -0.043006
+  0.058599]
+  one-loop flow at the symmetric point (all SO(6) currents resonant): runaway (l = 0.84)
+  |omega| values [0.838945]; ad_Q charges [-1. -1. -1. -0. -0. -0.  0.  0.  0.  0.  0.  0.  1.  1.  1.]
+  neutral currents 9; U(1)_Q forward coupling G_QQ = 0.058599; resonant fraction |G_res|/|G| = 0.522
+    flow (a) neutral only, symmetric: bounded to l=300 (final |G| 0.434) (l = 300.0)
+    flow (b) neutral + noise 1e-2: runaway (l = 14.2)
+    flow (b') neutral - same noise: runaway (l = 15.0)
+    flow (c) all resonant + noise 1e-2: runaway (l = 15.5)
+EXIT 0
