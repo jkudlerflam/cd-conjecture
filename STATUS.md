@@ -56,7 +56,8 @@ The new [research continuation](contrib/research_continuation/README.md) records
 - Route A numerics: a symmetric target (SU(3)₁) drifts at larger coupling, and an XX target with Fermi points at ±k_F is gapped by a generated pairing term, so cells must keep an exact U(1) or displace each flavour's Fermi-sea centre (`contrib/routeA_numerics/`).
 - The mobile-cell infrared claim (c = n + 1 on an open set) is now confirmed by a blind closed-book run (C20) as well as C13.
 - d = 2: the first round (C15 to C17) found no proof and no counterexample; the leading open target is an Ising-like neutral sector alongside a c = 1 mode at intermediate coupling. Details in REPORT §9.14.
-- The species-graph candidate above is under independent review (Astra C24 and a Claude referee in `contrib/review_species_graph/`).
+- The species-graph candidate above: Astra's review (C24) finds no fatal error and accepts the selection rule, ports, circuit and conditional Gaussian stability, but not yet an established refutation, because the complete controller and the local elimination for the mobile microscopic model are unverified. A Claude referee is still reviewing (`contrib/review_species_graph/`).
+- Route A is now assembled end to end (`contrib/routeA_assembly/`): nothing found kills it, the scale hierarchy closes at each fixed n, and the decisive gap is a fixed-alphabet port interface that gives logical-operator-valued second-order exchange while keeping the code frustration-free (required by the mobile wrapper). Mobile route A costs d₀ above about 2000.
 
 ## Earlier construction and the separate fixed-d program, step by step
 

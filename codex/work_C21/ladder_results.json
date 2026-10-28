@@ -1,0 +1,257 @@
+{
+  "local_term": {
+    "d_site": 8,
+    "bond_dimension": 64,
+    "local_kernel_dimension": 4,
+    "least_positive_eigenvalue": 1.0999999999999985,
+    "parity_error": 0.0
+  },
+  "decorated_sources": [
+    {
+      "n": 1,
+      "single_excitation_dimension": 12,
+      "poles": 2,
+      "energies": [
+        2.5999999999999996,
+        3.4
+      ],
+      "endpoint_weights": [
+        0.4999999999999999,
+        0.5
+      ],
+      "spectral_error": 3.1086244689504383e-15,
+      "source_weight_error": 3.190107304372751e-15,
+      "parity_error": 0.0
+    },
+    {
+      "n": 2,
+      "single_excitation_dimension": 36,
+      "poles": 3,
+      "energies": [
+        2.4343145750507618,
+        3.0,
+        3.565685424949238
+      ],
+      "endpoint_weights": [
+        0.24999999999999994,
+        0.5,
+        0.25000000000000006
+      ],
+      "spectral_error": 6.217248937900877e-15,
+      "source_weight_error": 7.037536795459074e-15,
+      "parity_error": 0.0
+    },
+    {
+      "n": 3,
+      "single_excitation_dimension": 96,
+      "poles": 4,
+      "energies": [
+        2.352786404500042,
+        2.752786404500042,
+        3.2472135954999577,
+        3.647213595499958
+      ],
+      "endpoint_weights": [
+        0.1381966011250105,
+        0.36180339887498947,
+        0.3618033988749896,
+        0.1381966011250106
+      ],
+      "spectral_error": 7.105427357601002e-15,
+      "source_weight_error": 7.760540930770105e-15,
+      "parity_error": 0.0
+    }
+  ],
+  "ed": [
+    {
+      "n": 1,
+      "cells": 2,
+      "microscopic_sites": 4,
+      "full_syndrome_dimension": 256,
+      "sector_dimension": 64,
+      "exact_logical_multiplicity": 4,
+      "k2_scalar": -0.504524886877828,
+      "direct_resolvent_error": 5.551115123125783e-16,
+      "fitted_pairwise_powers": [
+        3.003762067065801,
+        3.002152472325132
+      ],
+      "runs": [
+        {
+          "lam": 0.08,
+          "energy": -0.003316341790138629,
+          "error": 8.738251412052957e-05,
+          "error_over_lambda3": 0.17066897289165928,
+          "eigen_residual": 1.9057171054483083e-15
+        },
+        {
+          "lam": 0.04,
+          "energy": -0.0008181341873211325,
+          "error": 1.089436831660769e-05,
+          "error_over_lambda3": 0.17022450494699512,
+          "eigen_residual": 2.3818266983433938e-15
+        },
+        {
+          "lam": 0.02,
+          "energy": -0.00020316972053301268,
+          "error": 1.3597657818814677e-06,
+          "error_over_lambda3": 0.16997072273518343,
+          "eigen_residual": 3.1078446153240936e-15
+        }
+      ],
+      "seconds": 0.005078667076304555
+    },
+    {
+      "n": 1,
+      "cells": 3,
+      "microscopic_sites": 6,
+      "full_syndrome_dimension": 4096,
+      "sector_dimension": 1024,
+      "exact_logical_multiplicity": 8,
+      "k2_scalar": -1.009049773755656,
+      "direct_resolvent_error": 1.1102230246251565e-15,
+      "fitted_pairwise_powers": [
+        3.0037177217871838,
+        3.0021319382266864
+      ],
+      "runs": [
+        {
+          "lam": 0.08,
+          "energy": -0.006632673361815314,
+          "error": 0.00017475480977911535,
+          "error_over_lambda3": 0.3413179878498346,
+          "eigen_residual": 3.0881463231866503e-15
+        },
+        {
+          "lam": 0.04,
+          "energy": -0.001636267770370043,
+          "error": 2.1788132360993275e-05,
+          "error_over_lambda3": 0.34043956814051984,
+          "eigen_residual": 3.1717778277738184e-15
+        },
+        {
+          "lam": 0.02,
+          "energy": -0.00040633940435131814,
+          "error": 2.719494849055706e-06,
+          "error_over_lambda3": 0.3399368561319632,
+          "eigen_residual": 5.007935371307471e-15
+        }
+      ],
+      "seconds": 0.006500749848783016
+    },
+    {
+      "n": 2,
+      "cells": 2,
+      "microscopic_sites": 6,
+      "full_syndrome_dimension": 4096,
+      "sector_dimension": 1024,
+      "exact_logical_multiplicity": 16,
+      "k2_scalar": -0.5045462999318054,
+      "direct_resolvent_error": 3.3306690738754696e-16,
+      "fitted_pairwise_powers": [
+        3.0037628883301495,
+        3.002152882934627
+      ],
+      "runs": [
+        {
+          "lam": 0.08,
+          "energy": -0.0033164863509461064,
+          "error": 8.73900313825512e-05,
+          "error_over_lambda3": 0.17068365504404528,
+          "eigen_residual": 1.834381131510825e-15
+        },
+        {
+          "lam": 0.04,
+          "energy": -0.0008181693792158996,
+          "error": 1.0895299325010765e-05,
+          "error_over_lambda3": 0.17023905195329317,
+          "eigen_residual": 1.7263233478349385e-15
+        },
+        {
+          "lam": 0.02,
+          "energy": -0.00020317840157011298,
+          "error": 1.3598815973907773e-06,
+          "error_over_lambda3": 0.16998519967384715,
+          "eigen_residual": 3.157679406882276e-15
+        }
+      ],
+      "seconds": 0.005809792084619403
+    },
+    {
+      "n": 2,
+      "cells": 3,
+      "microscopic_sites": 9,
+      "full_syndrome_dimension": 262144,
+      "sector_dimension": 65536,
+      "exact_logical_multiplicity": 64,
+      "k2_scalar": -1.0090925998636109,
+      "direct_resolvent_error": 1.1102230246251565e-15,
+      "fitted_pairwise_powers": [
+        3.003762677142241,
+        3.0021527823023897
+      ],
+      "runs": [
+        {
+          "lam": 0.08,
+          "energy": -0.006632972653107438,
+          "error": 0.00017478001398032756,
+          "error_over_lambda3": 0.3413672148053272,
+          "eigen_residual": 1.2476868727964112e-14
+        },
+        {
+          "lam": 0.04,
+          "energy": -0.0016363387555393878,
+          "error": 2.1790595757610175e-05,
+          "error_over_lambda3": 0.34047805871265896,
+          "eigen_residual": 4.834932265104751e-15
+        },
+        {
+          "lam": 0.02,
+          "energy": -0.00040635680296892515,
+          "error": 2.7197630234807556e-06,
+          "error_over_lambda3": 0.3399703779350944,
+          "eigen_residual": 5.271215965005264e-15
+        }
+      ],
+      "seconds": 0.8505261249374598
+    },
+    {
+      "n": 3,
+      "cells": 2,
+      "microscopic_sites": 8,
+      "full_syndrome_dimension": 65536,
+      "sector_dimension": 16384,
+      "exact_logical_multiplicity": 64,
+      "k2_scalar": -0.5045464018340186,
+      "direct_resolvent_error": 7.771561172376096e-16,
+      "fitted_pairwise_powers": [
+        3.0037629025041324,
+        3.002152889564163
+      ],
+      "runs": [
+        {
+          "lam": 0.08,
+          "energy": -0.0033164870400660806,
+          "error": 8.739006832836176e-05,
+          "error_over_lambda3": 0.17068372720383151,
+          "eigen_residual": 2.861634439294505e-15
+        },
+        {
+          "lam": 0.04,
+          "energy": -0.0008181695467585944,
+          "error": 1.0895303824164744e-05,
+          "error_over_lambda3": 0.1702391222525741,
+          "eigen_residual": 1.1458631404338921e-15
+        },
+        {
+          "lam": 0.02,
+          "energy": -0.00020317844288630484,
+          "error": 1.359882152697419e-06,
+          "error_over_lambda3": 0.16998526908717734,
+          "eigen_residual": 3.75533668776319e-15
+        }
+      ],
+      "seconds": 0.1707097920589149
+    }
+  ]
+}

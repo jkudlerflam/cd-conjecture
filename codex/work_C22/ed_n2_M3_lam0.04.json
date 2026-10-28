@@ -1,0 +1,23 @@
+{
+  "n": 2,
+  "cells": 3,
+  "dimension": 110592,
+  "cell_dimension": 48,
+  "lambda_": 0.04,
+  "g": 0.2,
+  "elapsed_seconds": 41.59248791704886,
+  "eigen_residual": 1.16218928937176e-12,
+  "code_overlap_min": 0.9999947923383204,
+  "next_gap": 1.4139890873840117,
+  "full_error": 1.4270527504592698e-08,
+  "traceless_error": 2.3941954760688374e-13,
+  "bandwidth": 1.4741369371522707e-09,
+  "visibility": 0.5000000000000009,
+  "phases": [
+    0.41,
+    0.31,
+    -0.07
+  ],
+  "commutator_charge": 0.0,
+  "hermiticity": 0.0
+}

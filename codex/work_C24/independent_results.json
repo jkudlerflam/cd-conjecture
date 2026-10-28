@@ -162,5 +162,11 @@
       "normalized_scaling_metric_min": 0.9929128939492016,
       "six_cycle_dimension_lower_bound": 2.978738681847605
     }
-  ]
+  ],
+  "positive_stiffness_countercheck": {
+    "K_eigenvalue_min": 0.03367350481121435,
+    "K_eigenvalue_max": 3.299659828522118,
+    "dimension": 1.0000000000000002,
+    "remark": "Positivity alone fails; this K violates the candidate kappa bound."
+  }
 }

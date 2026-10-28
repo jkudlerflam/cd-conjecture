@@ -1,0 +1,67 @@
+{
+  "grammar": {
+    "legal_words": [
+      [
+        1,
+        8
+      ],
+      [
+        2,
+        12
+      ],
+      [
+        3,
+        16
+      ],
+      [
+        4,
+        20
+      ],
+      [
+        5,
+        24
+      ],
+      [
+        6,
+        28
+      ]
+    ],
+    "context_rule_checks": 968,
+    "local_dimension": 17
+  },
+  "gauge_errors": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "H2": [
+    {
+      "n": 1,
+      "cells": 2,
+      "dimension": 256,
+      "error": 9.817339166483899e-17,
+      "cross": 0.0
+    },
+    {
+      "n": 1,
+      "cells": 3,
+      "dimension": 4096,
+      "error": 2.5082709394801277e-16,
+      "cross": 0.0
+    },
+    {
+      "n": 2,
+      "cells": 2,
+      "dimension": 2304,
+      "error": 3.7285808181048164e-16,
+      "cross": 0.0
+    },
+    {
+      "n": 2,
+      "cells": 3,
+      "dimension": 110592,
+      "error": 7.09345417607542e-16,
+      "cross": 0.0
+    }
+  ]
+}

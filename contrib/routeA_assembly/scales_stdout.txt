@@ -1,0 +1,59 @@
+A. rho^2(n), hopping-only and with geometric fields
+  n= 1 k= 2 r2max=2.4000e+01 rho2=6.5104e-04 rho2(fields)=6.5104e-04 D_ref=96
+  n= 2 k= 3 r2max=1.2000e+03 rho2=5.7870e-06 rho2(fields)=5.7870e-06 D_ref=256
+  n= 3 k= 4 r2max=4.1160e+04 rho2=9.4904e-08 rho2(fields)=9.4904e-08 D_ref=640
+  n= 4 k= 5 r2max=1.1642e+06 rho2=2.1473e-09 rho2(fields)=2.1473e-09 D_ref=1536
+  n= 5 k= 6 r2max=3.2130e+07 rho2=5.4034e-11 rho2(fields)=5.4034e-11 D_ref=3584
+  n= 6 k= 7 r2max=1.1361e+09 rho2=1.1227e-12 rho2(fields)=1.1227e-12 D_ref=8192
+  n= 7 k= 8 r2max=3.5351e+10 rho2=2.7625e-14 rho2(fields)=2.7625e-14 D_ref=18432
+  n= 8 k= 9 r2max=1.0026e+12 rho2=7.6961e-16 rho2(fields)=7.6961e-16 D_ref=40960
+  n= 9 k=10 r2max=3.3273e+13 rho2=1.8784e-17 rho2(fields)=1.8784e-17 D_ref=90112
+  n=10 k=11 r2max=1.0934e+15 rho2=4.7241e-19 rho2(fields)=4.7241e-19 D_ref=196608
+  n=11 k=12 r2max=3.3291e+16 rho2=1.3037e-20 rho2(fields)=1.3037e-20 D_ref=425984
+  n=12 k=13 r2max=1.0258e+18 rho2=3.6051e-22 rho2(fields)=3.6051e-22 D_ref=917504
+B. conditioning (cross-flavour hopping per unit relative weight / pole error)
+  n=1 cond(C)=3.847e+01 weight worst=6.000e+00 typ=0.000e+00 pole worst=4.500e+00 typ=0.000e+00
+  n=2 cond(C)=1.353e+03 weight worst=3.000e+01 typ=3.365e+00 pole worst=1.399e+01 typ=2.102e+00
+  n=3 cond(C)=4.588e+04 weight worst=1.600e+02 typ=2.344e+01 pole worst=4.544e+01 typ=1.012e+01
+  n=4 cond(C)=1.535e+06 weight worst=8.400e+02 typ=1.310e+02 pole worst=1.739e+02 typ=3.451e+01
+  n=5 cond(C)=5.110e+07 weight worst=4.494e+03 typ=6.873e+02 pole worst=7.460e+02 typ=1.650e+02
+  n=6 cond(C)=1.698e+09 weight worst=2.432e+04 typ=4.194e+03 pole worst=3.416e+03 typ=7.073e+02
+  n=7 cond(C)=5.639e+10 weight worst=1.329e+05 typ=2.142e+04 pole worst=1.627e+04 typ=2.972e+03
+  n=8 cond(C)=1.874e+12 weight worst=7.313e+05 typ=1.117e+05 pole worst=7.956e+04 typ=1.534e+04
+C. margins
+  1 {"delta2": 0.730559, "delta4": null, "delta_mix": 1.560697, "nu": 0.5, "v_min": 0.811107, "pair_momentum_min": 1.580896}
+   sidon {"delta2": 1.308997, "delta4": null, "delta_mix": 0.698132, "nu": 0.361111, "v_min": 1.217523, "pair_momentum_min": 2.96706, "bound_delta2": 0.523599, "bound_delta4": 0.005454, "bound_delta_mix": 0.15708}
+   C20 {'M': 9, 'delta_normalized': 0.027777777777777776, 'delta_angle': 0.17453292519943295}
+  2 {"delta2": 0.09887, "delta4": 0.516608, "delta_mix": 1.560697, "nu": 0.5, "v_min": 0.10064, "pair_momentum_min": 0.213951}
+   sidon {"delta2": 0.698132, "delta4": 0.023271, "delta_mix": 0.349066, "nu": 0.322222, "v_min": 1.43868, "pair_momentum_min": 2.396919, "bound_delta2": 0.261799, "bound_delta4": 0.001364, "bound_delta_mix": 0.031416}
+   C20 {'M': 49, 'delta_normalized': 0.00510204081632653, 'delta_angle': 0.0320570678937734}
+  3 {"delta2": 0.013381, "delta4": 0.069915, "delta_mix": 1.560697, "nu": 0.5, "v_min": 0.013414, "pair_momentum_min": 0.028955}
+   sidon {"delta2": 0.433323, "delta4": 0.012037, "delta_mix": 0.204625, "nu": 0.457854, "v_min": 1.375399, "pair_momentum_min": 2.010138, "bound_delta2": 0.174533, "bound_delta4": 0.000606, "bound_delta_mix": 0.012875}
+   C20 {'M': 217, 'delta_normalized': 0.001152073732718894, 'delta_angle': 0.007238692750206896}
+  4 {"delta2": 0.001811, "delta4": 0.009462, "delta_mix": 1.560697, "nu": 0.5, "v_min": 0.001811, "pair_momentum_min": 0.003919}
+   sidon {"delta2": 0.317689, "delta4": 0.005883, "delta_mix": 0.100013, "nu": 0.657303, "v_min": 1.350457, "pair_momentum_min": 1.829654, "bound_delta2": 0.1309, "bound_delta4": 0.000341, "bound_delta_mix": 0.00695}
+   C20 {'M': 737, 'delta_normalized': 0.00033921302578018993, 'delta_angle': 0.0021313382995860196}
+D. C7 walker
+  {'b': 8, 'a_b': 0.15224093497742647, 'eta_b': 0.002966128510250965, 'omega_head': 0.43354550264947833, 'U_over_t_max': 0.0013377008460853785, 'margin_over_U': 1.2173332093875735}
+  {'b': 10, 'a_b': 0.09788696740969285, 'eta_b': 0.0013357364298486052, 'omega_head': 0.28407904384041216, 'U_over_t_max': 0.0006144873988475941, 'margin_over_U': 1.173740962554541}
+  {'b': 12, 'a_b': 0.0681483474218634, 'eta_b': 0.0006865975874747673, 'omega_head': 0.1998008450092592, 'U_over_t_max': 0.00031994617549801823, 'margin_over_U': 1.1459784177949026}
+  {'b': 16, 'a_b': 0.038429439193539104, 'eta_b': 0.00023544396824336927, 'omega_head': 0.11381149578388738, 'U_over_t_max': 0.00011150032794801828, 'margin_over_U': 1.1115988856385588}
+  {'b': 20, 'a_b': 0.024623318809724546, 'eta_b': 0.00010124664945775422, 'omega_head': 0.07326364859996848, 'U_over_t_max': 4.842672820934149e-05, 'margin_over_U': 1.0907183533044011}
+  {'b': 32, 'a_b': 0.009630546655606228, 'eta_b': 1.6628119291868065e-05, 'omega_head': 0.028798892537932996, 'U_over_t_max': 8.078028397878627e-06, 'margin_over_U': 1.0584378356771782}
+D. C18 clock
+  {'bulk_sites': 2, 'period': 4, 'C': 30, 'a': 0.010261353216209707, 'gamma_len': 0.03945309424791379, 'Delta_density': 0.007890618849582757, 'omega': 0.030678764278801306, 'init_gap_lower_bound': 1.9654949379398184e-05, 'endpoint_pin_lift': 0.00036554090374405027}
+  {'bulk_sites': 4, 'period': 6, 'C': 192, 'a': 0.0002649570855522074, 'gamma_len': 0.0005303759683300645, 'Delta_density': 7.57679954757235e-05, 'omega': 0.0007948010543994379, 'init_gap_lower_bound': 2.1803833167143387e-09, 'endpoint_pin_lift': 1.39442788598652e-06}
+  {'bulk_sites': 6, 'period': 8, 'C': 1026, 'a': 9.35747163951481e-06, 'gamma_len': 1.5938221957408777e-05, 'Delta_density': 1.7709135508231975e-06, 'omega': 2.807232735626895e-05, 'init_gap_lower_bound': 5.115443399978969e-13, 'endpoint_pin_lift': 9.138136964221368e-09}
+  {'bulk_sites': 8, 'period': 10, 'C': 5124, 'a': 3.7576125038098696e-07, 'gamma_len': 5.894905048627983e-07, 'Delta_density': 5.3590045896618034e-08, 'omega': 1.1272836099464436e-06, 'init_gap_lower_bound': 1.6530301717479896e-16, 'endpoint_pin_lift': 7.33622060145308e-11}
+  {'bulk_sites': 10, 'period': 12, 'C': 24582, 'a': 1.6331646931894025e-08, 'gamma_len': 2.426105014239557e-08, 'Delta_density': 1.866234626338121e-09, 'omega': 4.899494052895939e-08, 'init_gap_lower_bound': 6.509929851498264e-20, 'endpoint_pin_lift': 6.644282698550914e-13}
+  {'bulk_sites': 12, 'period': 14, 'C': 114696, 'a': 7.502320752924647e-10, 'gamma_len': 1.0713995821089446e-09, 'Delta_density': 7.142663880726297e-11, 'omega': 2.2506962253145463e-09, 'init_gap_lower_bound': 2.944356863481256e-23, 'endpoint_pin_lift': 6.541162355208464e-15}
+  {'bulk_sites': 16, 'period': 18, 'C': 2359308, 'a': 1.7730872080334653e-12, 'gamma_len': 2.401433698287641e-12, 'Delta_density': 1.2639124727829691e-13, 'omega': 5.319261624097253e-12, 'init_gap_lower_bound': 7.995150056067949e-30, 'endpoint_pin_lift': 7.51529139515083e-19}
+D. helix
+  {'b': 8, 'beta_helix': 0.9692134950115991, 'helix_gap_bound': 0.006535947712418301, 'compensator_norm_bound': 1025.334375646228}
+  {'b': 10, 'beta_helix': 0.9752997458249376, 'helix_gap_bound': 0.004329004329004329, 'compensator_norm_bound': 1601.3340002646428}
+  {'b': 12, 'beta_helix': 0.9793762747383364, 'helix_gap_bound': 0.003076923076923077, 'compensator_norm_bound': 2305.333796423908}
+  {'b': 16, 'beta_helix': 0.9844939326524843, 'helix_gap_bound': 0.0017825311942959, 'compensator_norm_bound': 4097.333593790372}
+  {'b': 32, 'beta_helix': 0.9922176228221671, 'helix_gap_bound': 0.0004662004662004662, 'compensator_norm_bound': 16385.333398440023}
+E. worked
+  {'n': 2, 'ell_min': 10, 'C': 5124, 'clock_gap': 1.1272836099464436e-06, 'clock_length_margin': 5.894905048627983e-07, 'C7_eta': 0.0013357364298486052, 'C7_U_over_t': 0.0006144873988475941, 'rho2': 5.787037037037037e-06, 'v_delta2_sidon': 1.0043878366270977, 'S_worst': 30.00000000000004, 'c3': 4.465424419678164, 'eps_w': 0.003347959455423655, 'lam_over_Delta_src': 0.022492550365447388, 'frozen_chain': {'pin_lift': {'g_in': 7.33622060145308e-11, 'Delta_src': 2.4561369129708653e-13, 'lam': 5.524478321943165e-15, 'W': 7.190949473329219e-22, 'W_phys_velocity': 7.190949473329219e-21}, 'proved_bound': {'g_in': 1.6530301717479896e-16, 'Delta_src': 5.53427799360427e-19, 'lam': 1.2448002650753116e-20, 'W': 1.6202970287690223e-27, 'W_phys_velocity': 1.6202970287690223e-26}}, 'sidon': {'delta2': 0.6981317008387, 'delta4': 0.023271055890448977, 'delta_mix': 0.34906585041935, 'nu': np.float64(0.3222222222385626), 'v_min': 1.4386796007407732, 'pair_momentum_min': 2.3969188397705743, 'bound_delta2': 0.2617993877991494, 'bound_delta4': 0.00136353847812057, 'bound_delta_mix': 0.031415926535897934}, 'C20': {'M': 49, 'delta_normalized': 0.00510204081632653, 'delta_angle': 0.0320570678937734}}
+  {'n': 3, 'ell_min': 12, 'C': 24582, 'clock_gap': 4.899494052895939e-08, 'clock_length_margin': 2.426105014239557e-08, 'C7_eta': 0.0006865975874747673, 'C7_U_over_t': 0.00031994617549801823, 'rho2': 9.490403304178815e-08, 'v_delta2_sidon': 0.5959921567371106, 'S_worst': 159.99999999999983, 'c3': 6.520718041433397, 'eps_w': 0.00037249509796069455, 'lam_over_Delta_src': 0.00913997742196653, 'frozen_chain': {'pin_lift': {'g_in': 6.644282698550914e-13, 'Delta_src': 2.4749627346752706e-16, 'lam': 2.2621103515140514e-18, 'W': 1.9622013881456513e-27, 'W_phys_velocity': 2.3546416657747814e-26}, 'proved_bound': {'g_in': 6.509929851498264e-20, 'Delta_src': 2.4249169577510955e-23, 'lam': 2.2163686243988777e-25, 'W': 1.9225240663114178e-34, 'W_phys_velocity': 2.3070288795737014e-33}}, 'sidon': {'delta2': 0.4333231246740432, 'delta4': 0.012036752468979728, 'delta_mix': 0.20462480899737479, 'nu': np.float64(0.4578544061878825), 'v_min': 1.3753989178062704, 'pair_momentum_min': 2.010137827574825, 'bound_delta2': 0.17453292519943295, 'bound_delta4': 0.0006060171013869199, 'bound_delta_mix': 0.01287537972782702}, 'C20': {'M': 217, 'delta_normalized': 0.001152073732718894, 'delta_angle': 0.007238692750206896}}

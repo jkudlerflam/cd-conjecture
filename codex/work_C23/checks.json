@@ -1,0 +1,186 @@
+{
+  "2": {
+    "raw_columns": [
+      [
+        1,
+        -1,
+        0
+      ],
+      [
+        -2,
+        7,
+        -5
+      ]
+    ],
+    "h": [
+      "1/12",
+      "1/12"
+    ],
+    "rmax_squared": "1200",
+    "rho_squared": "1/172800",
+    "rho_squared_float": 5.787037037037037e-06,
+    "M": 49,
+    "delta": 0.00510204081632653,
+    "angular_margin": 0.0320570678937734,
+    "coordinate_shift_budget": 0.00031887755102040814,
+    "rational_coordinate_numerators": [
+      728872,
+      330410,
+      394497,
+      127563,
+      292196
+    ],
+    "denominator": 1000003,
+    "min_normalized_detuning": 0.016004951985144046,
+    "search_attempts": 1,
+    "centers": [
+      2.0760210292821193,
+      2.478690318055471
+    ],
+    "widths": [
+      0.801499562841061,
+      1.8359161062683278
+    ],
+    "mu": [
+      1.3912604117489866,
+      -0.5240497290839876
+    ],
+    "velocities": [
+      1.4368000788906021,
+      1.930122245208059
+    ],
+    "resources": {
+      "b": 8,
+      "selector_margin": 0.008898385530752895,
+      "selector_eta": 0.002966128510250965,
+      "head_gap": 0.3472963553338606,
+      "helix_gap_bound": 0.006535947712418301,
+      "assumed_gap": 0.006535947712418301,
+      "head_overlap": 0.9754576110451154,
+      "assumed_beta": 0.23055591277927462,
+      "clock_vertices": 2307,
+      "initialized_gap_per_Jc": 2.3486311895591506e-08,
+      "assumed_energy_event_norm": 9228,
+      "eps": 1.7009777233368142e-10,
+      "lambda_value": 1.5574290173493077e-24,
+      "logical_scale": 1.403695106528721e-53,
+      "marker_u": 6.088306691455642e-53,
+      "length_bandwidth": 5.614780426114884e-53,
+      "cubic_bound": 2.3876541065622512e-64,
+      "mixed_bound": 6.96365828492463e-73,
+      "marker_second_bound": 4.537059352392962e-102,
+      "clock_schur_budget": 2.387654106562251e-65,
+      "Jc": 1.5185494396106313e+80,
+      "clock_gap_Gamma": 3.566512576757098e+72,
+      "leakage_amplitude_bound": 7.148599189633322e-22,
+      "relevant_growth_budget": 1.247437269199178e-07,
+      "marginal_growth_budget": 8.977955456568591e-10
+    }
+  },
+  "3": {
+    "raw_columns": [
+      [
+        1,
+        -1,
+        0,
+        0
+      ],
+      [
+        -2,
+        7,
+        -5,
+        0
+      ],
+      [
+        3,
+        -21,
+        39,
+        -21
+      ]
+    ],
+    "h": [
+      "1/12",
+      "1/12",
+      "3/40"
+    ],
+    "rmax_squared": "41160",
+    "rho_squared": "1/10536960",
+    "rho_squared_float": 9.490403304178815e-08,
+    "M": 217,
+    "delta": 0.001152073732718894,
+    "angular_margin": 0.007238692750206896,
+    "coordinate_shift_budget": 7.200460829493088e-05,
+    "rational_coordinate_numerators": [
+      638850,
+      31803,
+      808569,
+      515884,
+      280072,
+      166260,
+      327734
+    ],
+    "denominator": 1000003,
+    "min_normalized_detuning": 0.007485977542067374,
+    "search_attempts": 2,
+    "centers": [
+      0.19982354285360382,
+      5.080373619520032,
+      3.2413850448538994
+    ],
+    "widths": [
+      1.7597389961354126,
+      1.044639255253912,
+      2.059207275841367
+    ],
+    "mu": [
+      -0.3756409728344314,
+      1.00442782128275,
+      -0.9384464454126739
+    ],
+    "velocities": [
+      1.964406744930388,
+      1.729486846389179,
+      1.766159185660318
+    ],
+    "resources": {
+      "b": 9,
+      "selector_margin": 0.005854876379802726,
+      "selector_eta": 0.001951625459934242,
+      "head_gap": 0.2840790438404123,
+      "helix_gap_bound": 0.005263157894736842,
+      "assumed_gap": 0.005263157894736842,
+      "head_overlap": 0.9803599528771991,
+      "assumed_beta": 0.23369056945719036,
+      "clock_vertices": 5124,
+      "initialized_gap_per_Jc": 4.76092972349739e-09,
+      "assumed_energy_event_norm": 25620,
+      "eps": 4.340393273252715e-12,
+      "lambda_value": 4.226129338454197e-28,
+      "logical_scale": 1.6950020864977482e-62,
+      "marker_u": 7.253189935883376e-62,
+      "length_bandwidth": 6.780008345990993e-62,
+      "cubic_bound": 7.356975654384142e-75,
+      "mixed_bound": 2.795546193230072e-85,
+      "marker_second_bound": 7.996532165391985e-120,
+      "clock_schur_budget": 7.356975654384143e-76,
+      "Jc": 1.873989533975375e+92,
+      "clock_gap_Gamma": 8.921932473826384e+83,
+      "leakage_amplitude_bound": 2.4088937229188924e-25,
+      "relevant_growth_budget": 2.044931374669844e-08,
+      "marginal_growth_budget": 2.9367933003850035e-11
+    }
+  },
+  "single_pole_counterexample": {
+    "matrix": [
+      [
+        0.5,
+        0.3333333333333333
+      ],
+      [
+        0.3333333333333333,
+        0.25
+      ]
+    ],
+    "determinant": 0.013888888888888902
+  }
+}

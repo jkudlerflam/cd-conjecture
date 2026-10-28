@@ -38,8 +38,6 @@ def ports(upper,lower,edges):
         if kind=='g':return 2*np.ones(q,dtype=int)-eye[i]
         a,b=edges[i];return 2*np.ones(q,dtype=int)+eye[a]-2*eye[b]
     def logical(s):return sum((weights[e] for e in range(n) if (s>>e)&1),np.zeros(q,dtype=int))
-    for row,x,_ in entries:
-        pass
     keys=list(rows)
     for row,x,_ in entries:
         l,fl,r,fr,z=keys[row]
@@ -157,8 +155,22 @@ def history_toy():
     return dict(total_dimension=times*d,history_vertices=times,all_time_kernel=4,terminal_only_kernel=8,all_time_gap=float(ea[4]))
 
 
+def positive_stiffness_countercheck():
+    # A resonant six-cycle can be relevant with a positive, but distant, K.
+    m=np.array([-1,-1,1,1,-1,1],float)
+    z=np.array([1,-1,1,-1,1,-1],float)
+    e1=m/np.linalg.norm(m)
+    perpendicular=z-(z@e1)*e1;e2=perpendicular/np.linalg.norm(perpendicular)
+    E=np.column_stack([e1,e2])
+    block=np.array([[1/3,-2*np.sqrt(2)/3],[-2*np.sqrt(2)/3,3]])
+    K=np.eye(6)+E@(block-np.eye(2))@E.T
+    delta=(m@K@m+z@np.linalg.solve(K,z))/4
+    assert np.linalg.eigvalsh(K)[0]>0 and abs(delta-1)<1e-12
+    return dict(K_eigenvalue_min=float(np.linalg.eigvalsh(K)[0]),K_eigenvalue_max=float(np.linalg.eigvalsh(K)[-1]),dimension=float(delta),remark='Positivity alone fails; this K violates the candidate kappa bound.')
+
+
 def main():
     graphs=[(1,1,[(0,1)]),(2,2,[(0,2),(1,2),(1,3)]),(2,2,[(0,2),(0,3),(1,2),(1,3)]),(3,3,[(a,3+b) for a in range(3) for b in range(3) if a!=b])]
-    out={'ports':[ports(*g) for g in graphs], 'planes':[plane(p) for p in [2,3,5,7]], 'acceptance':acceptance_tests(),'history_toy':history_toy(),'gaussian':gaussian()}
+    out={'ports':[ports(*g) for g in graphs], 'planes':[plane(p) for p in [2,3,5,7]], 'acceptance':acceptance_tests(),'history_toy':history_toy(),'gaussian':gaussian(),'positive_stiffness_countercheck':positive_stiffness_countercheck()}
     Path('independent_results.json').write_text(json.dumps(out,indent=2)+'\n');print(json.dumps(out,indent=2))
 if __name__=='__main__':main()
