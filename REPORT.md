@@ -832,3 +832,58 @@ this finite-d violation.
 - **C42, all-n finite-band result** (`codex/work_C42/`, Astra). Proves, in C39's 46-letter core, the all-n band statement with a terminating rational parameter schedule and explicit finite-D, finite-g error bounds, with two- and three-cell ED at n = 1, 2, 3; a conservative vacancy completion has fixed dimension 4465. The 23-letter all-n problem and the interacting mobile infrared transfer remain open.
 - **C43, vacancy completion of the all-n core** (`codex/work_C43/`, Astra). Full microscopic ED at n = 1, 2 (103,823 states each) finds a sixfold ground-state degeneracy at those sizes, and larger invariant sectors confirm the squeezing, twists and first-order projection; uniqueness on every large ring is not established, so the fallback remains the wrapper version at d₀ = 4464.
 - **Referee of C39's all-n proof** (`contrib/referee_C39/`, Claude agent). No fatal error; the finite all-n band claim holds. Checked by hand: the second-order bond formula and normalization, the Newton-polygon lemma, the slope formula and the pair-sum classification, which with exact U(1) is complete (it covers pair transfer, exchange and every umklapp; the smallest margin is the slowest flavour's 4k_F umklapp). The bond rebuilt from the rule table matches the stored bonds to 7 × 10⁻¹⁷ at n = 1, 2, 3, and margins stay positive in 900- to 1300-digit arithmetic at n = 4 to 8. Serious, as C39 itself flags: the mobile wrapper is inherited from C8 and C32 without audit (its hypotheses do hold for this core), and the thermodynamic elimination is assumed. Fixable: the parameter search lacks an explicit depth bound, and the cluster ED residual exceeds the logical hopping, so the ED does not test the bands. The d₀ = 4464 count is correct. The one-vacancy completion does not apply as it stands, because this core is frustration-free at every cell length and a selector would have to be added.
+
+### 9.22 Independent vacancy continuation and microscopic control (2026-10-28)
+
+The [independent continuation](contrib/vacancy_continuation/README.md)
+adds four complementary results, using a coordinator and three parallel
+GPT-6-family Codex workers. No human review is claimed. Existing
+collaborators' construction files were left unchanged.
+
+- **Density without exact tuning [proved; independently checked].** For
+  an arbitrary internal Hermitian bond h with one vacancy added, zero
+  occupied-particle chemical potential and J||h||/t<=1/1000, every
+  thermodynamic ground-state density lies in (19/40,21/40). The exact
+  finite-L bound is |N/L-1/2|^2<=3pi J||h||/(16t)+pi^2/(32L^2).
+  This entire window is below 1/sqrt(3); the existing physical-harmonic
+  analysis therefore retains its dimension-three stability budget.
+  The inherited C33 reference gives physical mismatch >6.24585e-9
+  throughout the window. This removes exact half-filling tuning under
+  the same matching/RG assumptions; the density estimate itself is
+  independent of those assumptions and does not prove criticality.
+- **Dynamical charge response [derived continuum bound].** The Gaussian
+  gap-density kernel is bounded by 1/e_gap'' at every momentum and
+  Euclidean frequency, equal to 4/(pi t) at half filling. Smooth
+  operator-valued internal sources therefore have an O(J^2/t) influence
+  coefficient. This strengthens the matching argument without replacing
+  it by a lattice operator-norm theorem. A fresh primary-source review
+  accepts the finite-order local SW construction and auxiliary threshold.
+- **All-n finite input [checked analytical argument; exact checks].**
+  An independent positive-matrix-pencil derivation validates C39's
+  lacunary eigenvalues, field slopes, repeated-label pair comparisons
+  and parameter order. A new exact n=4 reference certificate has eight
+  simple roots and 630 distinct-pair comparisons, independently bounded
+  by delta4>1.0437e-54. The Gram evaluator is inherited; a separate
+  determinant and rational Cayley verifier checks the resulting data.
+  This does not implement a selector/mobile completion. C43's final
+  report, received during synchronization, proves that the naive d=47
+  vacancy lift lacks a selector and has exponential ground degeneracy;
+  its fallback is the inherited d=4464 wrapper. The new finite-band
+  audit does not repair that separate obstruction.
+- **Microscopic mechanism test [numerical].** A literal d=3 vacancy/XX
+  chain on L=8,12,16, at J/t=.2,.1,.05, gives half-chain size slopes
+  c=2.026 to 2.038, or 2.011 to 2.019 on the two larger rings. Independent
+  flux and number-sector responses resolve the charge and spin velocities;
+  their sum agrees with the Casimir coefficient to within 0.2 percent
+  in the three-size fit. That fit has three coefficients for three data
+  points, so the agreement is a consistency diagnostic. Single-size
+  entropy shapes still drift, and no precision thermodynamic c is
+  claimed. An exact free-charge calibration validates the physical
+  partial trace. The largest response sector has 2,018,016 states.
+  This d=3,c=2 control saturates the conjectured bound and is not the
+  proposed d=24 counterexample.
+
+The new density proof, diagnostics, numerical scripts and data are
+reproducible from the linked folder. The main d=24 conclusion remains a
+controlled theoretical-physics inference with explicit continuum inputs,
+not a rigorous lattice-to-CFT theorem or a measured microscopic c=24.

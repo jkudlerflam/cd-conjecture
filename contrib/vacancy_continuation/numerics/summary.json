@@ -1,0 +1,99 @@
+{
+  "status": "numerical_c2_control_not_a_counterexample",
+  "local_dimension": 3,
+  "sizes": [
+    8,
+    12,
+    16
+  ],
+  "runs": [
+    {
+      "J": 0.2,
+      "half_chain_entropy": [
+        1.8164863914147968,
+        2.091518028453317,
+        2.284385828335288
+      ],
+      "c_entropy_three_sizes": 2.025753508950434,
+      "c_entropy_L12_L16": 2.0112598422096473,
+      "center_shape_c_by_L": [
+        2.5059350963106986,
+        2.2413634929597626,
+        2.1067261156514574
+      ],
+      "casimir_velocity_sum_Lminus1_Lminus3_fit": 2.149341012178917,
+      "casimir_velocity_sum_two_largest_sizes": 2.1792830919757478,
+      "fitted_bulk_energy": -0.6563087876279232,
+      "response_velocity_sum_L16": 2.153497843132142,
+      "response_charge_velocity_L16": 1.9187385057154127,
+      "response_spin_velocity_L16": 0.23475933741672958,
+      "casimir_to_response_ratio": 0.9980697306168744,
+      "velocity_sum_first_order": 2.1568291592583893,
+      "max_flux_vK_change_phi_halving": 7.905463226265397e-07,
+      "energy_remainder_over_J2_per_L": [
+        -0.017445068717505948,
+        -0.01830541694542072,
+        -0.018591446173099598
+      ]
+    },
+    {
+      "J": 0.1,
+      "half_chain_entropy": [
+        1.8233616217351192,
+        2.0997432938149707,
+        2.2930814267353385
+      ],
+      "c_entropy_three_sizes": 2.0337707116064885,
+      "c_entropy_L12_L16": 2.0161645590839563,
+      "center_shape_c_by_L": [
+        2.527492659124897,
+        2.253409585367283,
+        2.1129537932372733
+      ],
+      "casimir_velocity_sum_Lminus1_Lminus3_fit": 2.0760893968288316,
+      "casimir_velocity_sum_two_largest_sizes": 2.1039937204669834,
+      "fitted_bulk_energy": -0.6462769227040324,
+      "response_velocity_sum_L16": 2.0784776600154715,
+      "response_charge_velocity_L16": 1.9596881210436787,
+      "response_spin_velocity_L16": 0.11878953897179287,
+      "casimir_to_response_ratio": 0.998850955565901,
+      "velocity_sum_first_order": 2.078414579629195,
+      "max_flux_vK_change_phi_halving": 7.907695458442277e-07,
+      "energy_remainder_over_J2_per_L": [
+        -0.017589484620328385,
+        -0.01847207578434447,
+        -0.018765954741939424
+      ]
+    },
+    {
+      "J": 0.05,
+      "half_chain_entropy": [
+        1.8271406071418277,
+        2.1043129155368647,
+        2.297931752011806
+      ],
+      "c_entropy_three_sizes": 2.0384871765537445,
+      "c_entropy_L12_L16": 2.019091785853922,
+      "center_shape_c_by_L": [
+        2.5397931538994,
+        2.2606321547230044,
+        2.1167353600923993
+      ],
+      "casimir_velocity_sum_Lminus1_Lminus3_fit": 2.038236306616711,
+      "casimir_velocity_sum_two_largest_sizes": 2.065055511827494,
+      "fitted_bulk_energy": -0.641401027500189,
+      "response_velocity_sum_L16": 2.0396878940364505,
+      "response_charge_velocity_L16": 1.9799399765929144,
+      "response_spin_velocity_L16": 0.05974791744353593,
+      "casimir_to_response_ratio": 0.9992883286585249,
+      "velocity_sum_first_order": 2.0392072898145974,
+      "max_flux_vK_change_phi_halving": 7.86751521264506e-07,
+      "energy_remainder_over_J2_per_L": [
+        -0.017662838226284446,
+        -0.01855735297393579,
+        -0.01885548473694598
+      ]
+    }
+  ],
+  "interpretation": "Two independent numerical diagnostics support one charge and one payload boson at fixed J. Sizes are small; no thermodynamic theorem or violating central charge is established."
+}

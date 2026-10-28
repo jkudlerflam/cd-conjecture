@@ -1,0 +1,28 @@
+{
+  "small_sector_dimension": 420,
+  "energy_error_vs_saved": 2.6645352591003757e-15,
+  "max_full_tensor_entropy_error": 4.440892098500626e-16,
+  "small_sector_ground_residual": 4.000385474683743e-14,
+  "half_chain_fits": [
+    {
+      "J": 0.2,
+      "c_three_size": 2.025753508950434,
+      "c_L8_L16": 2.025108591839792,
+      "c_L12_L16": 2.0112598422096473
+    },
+    {
+      "J": 0.1,
+      "c_three_size": 2.0337707116064885,
+      "c_L8_L16": 2.0329872998434424,
+      "c_L12_L16": 2.0161645590839563
+    },
+    {
+      "J": 0.05,
+      "c_three_size": 2.0384871765537445,
+      "c_L8_L16": 2.0376241499950654,
+      "c_L12_L16": 2.019091785853922
+    }
+  ],
+  "casimir_slope_first_order": 0.7841457962919467,
+  "casimir_scope": "v_charge+v_spin = 2 + J*(2-12/pi^2) + O(J^2), t=1"
+}

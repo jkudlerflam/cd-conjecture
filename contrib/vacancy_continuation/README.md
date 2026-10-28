@@ -51,6 +51,17 @@ it does not supply its full spontaneous selector or mobile completion.
    reference: eight simple roots and all 630 pair comparisons, with
    delta4>1.0437e-54. The rational Gram evaluator is inherited.
 
+4. [Full microscopic numerical control](numerics/README.md). A literal
+   d=3 vacancy-plus-XX chain is diagonalized on L=8,12,16 at J/t=.2,.1,.05.
+   Physical half-chain entropy gives effective c=2.026 to 2.038 across
+   all three sizes, or 2.011 to 2.019 using the two larger rings.
+   Independently measured charge/spin stiffnesses and compressibilities
+   give velocity sums consistent with the finite-size Casimir coefficient.
+   An exact free-charge calibration validates the partial trace.
+   This supports the mobile mechanism with two different diagnostics;
+   d=3,c=2 saturates the bound and is not a counterexample. The three-size
+   energy fit and drifting single-size entropy slopes limit the precision.
+
 The [full d=24 synthesis](../counterexample_campaign/COUNTEREXAMPLE_D24.md)
 remains the main construction. These results strengthen specific steps;
 they do not change its stated standard of evidence.
@@ -74,6 +85,11 @@ kinetic formula discrepancy is 5.4e-15 and eigenvector residual is
 certificate replay takes roughly ten seconds. Runtime varies by machine.
 All generated outputs remain beside their scripts.
 
+The numerical control's [README](numerics/README.md) gives its separate
+reproduction commands. It requires numpy and scipy. The largest response
+sector contains 2,018,016 states; the complete L=16 response run takes
+roughly one minute here. No large eigenvectors are saved.
+
 ## Coordination and provenance
 
 The user requested an independent continuation alongside the existing
@@ -81,9 +97,21 @@ agents under the same guidance. A GPT-6-family Codex coordinator and
 three parallel research workers produced this folder on 2026-10-28.
 The density estimate received a separate analytical review. The
 coordinator reran the exact certificate verifier, the dynamical response
-checks, and the physical density diagnostics. Existing collaborators'
+checks, the physical density diagnostics, the free-charge calibration,
+and the L=12 and L=16 microscopic numerical controls. Existing collaborators'
 sources were read without modification; each new worker used a separate
 subfolder. No human review is claimed.
 
-The ongoing C43 task elsewhere handles the all-n mobile completion.
-This continuation deliberately supplies independent input checks for it.
+The final C43 report arrived during synchronization. It proves that
+simply adding a vacancy to C39's 46-letter initialized core fails:
+there is no spontaneous selector, and zero-energy arrow words give
+an exponentially degenerate ground space. Its fallback is the inherited
+4,464-state wrapper. Our all-n audit validates finite band input only
+and does not repair that obstruction. See
+[C43's final report](../../codex/work_C43/RESULT.md).
+
+C41's final independent report retains conditional status for the d=24
+prediction because finite-J matching and dressed defect stability remain
+continuum inputs. The new density estimate and numerical control here
+strengthen those inputs without proving a full microscopic CFT limit.
+See [C41](../../codex/work_C41/RESULT.md).
