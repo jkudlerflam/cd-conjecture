@@ -69,6 +69,16 @@ including noncommuting b=3 walkers. The
 derives exact cancellations but leaves the required spatially weighted
 infrared estimate open. The overall classification remains conditional.
 
+## Lead claim: unbounded c at fixed local dimension (how to reproduce)
+
+At the theoretical-physics standard, the current lead claim is c = n + 1 for every n at fixed local dimension d₀ = 4464, so no bound c ≤ f(d) exists. It rests on one stated standard Wilsonian input; no fatal error has been found by two independent referees; no human has checked it yet. To reproduce, read and rerun in this order:
+1. `codex/work_C39/` (the 46-letter frustration-free core and its all-n lacunary schedule; `checks.py`, `certify.py n`), refereed in `contrib/referee_C39/`.
+2. `codex/work_C42/` (explicit finite-D, finite-g bounds for every n).
+3. `codex/work_C44/` (the mobile wrapper at d₀ = 4464, audited for every n; `bounds_checks.py`, `consistency_checks.py`), built on `codex/work_C8/` and `codex/work_C32/`.
+4. `codex/work_C45/` (the infrared step and the coupling schedule; `checks.py`), refereed with C44 in `contrib/referee_C44_C45/`.
+5. Supporting evidence at small n: `contrib/routeA_demonstrator/`, `contrib/mobile_cells/`, `contrib/routeA_n2_chains/`, `contrib/routeA_n34_chains/`, `contrib/margins_audit/`; the infrared literature in `contrib/lit_ir_step/`.
+Open verification items: an independent rebuild of C44's source formula and transport overlap, a calibrated c for the n = 1 member (`contrib/verify_C44/`, in progress), and a human read of C39 to C45. A self-contained write-up is being assembled in `contrib/routeA_final/`.
+
 ## Summary
 
 1. **No counterexample at small d.** Nothing above d − 1 at d = 2, in symmetric families at d = 3 to 7, or at the best d = 4 target. The d = 3 hint failed C12's own follow-up; the independent check is still pending in the recorded status. New [qubit proof reductions](contrib/d2_gap_reduction/README.md) close symmetric ferromagnetic rank-one exchange with arbitrary uniform fields (c ≤ 1/2), add a rigorous interacting gapped region, and exhaust additive on-site spin symmetries, leaving one staggered-field family beyond the known controlled classes.
