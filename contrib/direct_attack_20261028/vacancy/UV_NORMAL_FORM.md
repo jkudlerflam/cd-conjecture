@@ -195,6 +195,12 @@ the layer order using the lattice geometry alone and use that same choice
 in every pattern. Independently recoloring two patterns could change the
 description far from the defect and invalidate an attempted cancellation
 of their local interactions. A common coloring avoids that problem.
+It guarantees equality of the transformed terms only where the original
+coefficient arrays agree at the same anchored positions throughout the
+relevant causal cone. A geometrically fixed coloring is not generally
+translation covariant. A translated or rephased selected bulk requires a
+separate comparison; common coloring alone does not identify its terms
+with those of the original selected phase.
 
 For a term `B_x` of original range `r0`, its causal cone through the
 `q` layers lies in an interval of diameter
@@ -281,6 +287,10 @@ walker gap and is therefore not invalidated by a long wrong cell's small
 level spacing. Applied there, (4) controls the ultraviolet remainder in a
 norm that can pay for finitely many interfaces after identical bulk
 interactions have actually been canceled.
+For this particular circuit, cancellation follows directly only for
+coefficient arrays equal at the same anchored positions away from the
+modified region. Translated selected domains are not covered by that
+observation without an additional argument.
 
 There are still two essential restrictions.
 

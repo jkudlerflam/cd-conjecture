@@ -76,6 +76,12 @@ def main():
     identity_error = float(np.linalg.norm(derivative - first_order, 2))
     antihermitian_error = float(max(np.linalg.norm(a + a.conj().T, 2) for a in ss))
     trials = []
+    exponential_trials = []
+    commutator_h0 = generator @ h0 - h0 @ generator
+    quadratic_coefficient = (
+        0.5 * (generator @ commutator_h0 - commutator_h0 @ generator)
+        + generator @ v - v @ generator
+    )
     for coupling in (0.02, 0.01, 0.005, 0.0025):
         unitary = np.eye(2**n, dtype=complex)
         for generator_local in ss:
@@ -85,16 +91,29 @@ def main():
         norm = float(np.linalg.norm(remainder, 2))
         trials.append({"s": coupling, "remainder_norm": norm,
                        "remainder_over_s_squared": norm / coupling**2})
+        single_unitary = expm(coupling * generator)
+        single_transformed = single_unitary @ (h0 + coupling * v) @ single_unitary.conj().T
+        single_remainder = single_transformed - h0 - coupling * first_order
+        single_norm = float(np.linalg.norm(single_remainder, 2))
+        coefficient_error = float(np.linalg.norm(
+            single_remainder / coupling**2 - quadratic_coefficient, 2))
+        exponential_trials.append({
+            "s": coupling, "remainder_norm": single_norm,
+            "remainder_over_s_squared": single_norm / coupling**2,
+            "quadratic_coefficient_error": coefficient_error,
+        })
     assert identity_error < 1e-11
     assert antihermitian_error < 1e-12
     ratios = [row["remainder_over_s_squared"] for row in trials]
     assert max(ratios) / min(ratios) < 1.1
+    assert exponential_trials[-1]["quadratic_coefficient_error"] < exponential_trials[0]["quadratic_coefficient_error"] / 7
     result = {
         "scope": "Finite matrix algebra sanity check only; no vacancy or locality conclusion",
         "sites": n, "delta": delta, "truncation_time": cutoff_time,
         "generator_antihermitian_error": antihermitian_error,
         "first_derivative_identity_error": identity_error,
         "quadratic_remainder_trials": trials,
+        "single_exponential_trials": exponential_trials,
     }
     output = Path(__file__).with_name("checks.json")
     output.write_text(json.dumps(result, indent=2) + "\n")

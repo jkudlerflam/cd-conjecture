@@ -26,5 +26,31 @@
       "remainder_norm": 1.9704872726242364e-05,
       "remainder_over_s_squared": 3.1527796361987783
     }
+  ],
+  "single_exponential_trials": [
+    {
+      "s": 0.02,
+      "remainder_norm": 0.0012610404299597169,
+      "remainder_over_s_squared": 3.152601074899292,
+      "quadratic_coefficient_error": 0.046316444419294105
+    },
+    {
+      "s": 0.01,
+      "remainder_norm": 0.0003152687328420167,
+      "remainder_over_s_squared": 3.1526873284201664,
+      "quadratic_coefficient_error": 0.02315627438870973
+    },
+    {
+      "s": 0.005,
+      "remainder_norm": 7.881772230224899e-05,
+      "remainder_over_s_squared": 3.1527088920899597,
+      "quadratic_coefficient_error": 0.011577597786697364
+    },
+    {
+      "s": 0.0025,
+      "remainder_norm": 1.9704464268859197e-05,
+      "remainder_over_s_squared": 3.1527142830174713,
+      "quadratic_coefficient_error": 0.005788657486882361
+    }
   ]
 }

@@ -41,15 +41,33 @@ of arbitrarily long wrong cells was disproved in the preceding
 
 ## New work
 
-- [Vacancy matching](vacancy/README.md): an explicit finite-depth local
-  change of basis gives a volume-independent ultraviolet remainder with one
-  spatial moment. At s=J/t and cutoff delta=s^a, 0<a<1/18, it is o(J).
+- [Vacancy matching](vacancy/README.md): an explicit local change of basis
+  gives a volume-independent ultraviolet remainder with one spatial moment.
+  The initial finite-depth proof has cutoff power 18; a
+  [translation-covariant single exponential](vacancy/SINGLE_EXPONENTIAL.md)
+  improves that power to 10. At s=J/t and cutoff delta=s^a, 0<a<1/10, its
+  physical remainder is o(J).
   This addresses a specific technical gap in the earlier matching route.
   It does not prove the remaining low-frequency energy comparison.
 - [Scope clarification](SCOPE.md): the original conjecture does not state
   ground-state uniqueness. A fixed number of ordered sectors does not
   multiply the entropy central charge. The frozen construction still has
   an unresolved all-ring spectrum issue and the payload infrared assumption.
+- [Hidden free-duality exclusion](alternatives/RESULT.md): six local Pauli
+  anticommutation obstructions show that a uniform nearest-neighbor qubit
+  Hamiltonian admitting a faithful term-by-term map to single Majorana
+  bilinears already rotates to the standard quadratic or commuting Ising
+  class. An exact check covers all 4,096 Pauli supports. This excludes a
+  particular shortcut to c>1, not general interacting qubit chains.
+- [Finite-cell massive matching](infrared/FINITE_CELL_MATCHING.md): a finite
+  spectral embedding and a published fermionic determinant expansion give
+  an exact small logical action correction, linear in the leakage, after a
+  locally block-diagonal reference. The bounds include spatial/time moments
+  and do not divide by the slow logical bandwidth. They require the stated
+  strengthened coefficient norms. The independent
+  [audit](alternatives/IR_AUDIT.md) found and repaired three bookkeeping
+  issues. This advances fixed finite-cell matching; the mobile wrapper's
+  unbounded cell lengths and the subsequent logical RG/CFT limit remain open.
 
 Further worker results are added only after their statements and scope have
 been reviewed. The active goal is to solve the conjecture, not to stop at this
@@ -58,7 +76,9 @@ partial reduction.
 ## Checking and reproduction
 
 The coordinator independently checked the vacancy proof's filter signs,
-causal-cone gate count, interaction-norm multiplicity, and cutoff exponent.
+causal-cone gate count, interaction-norm multiplicity, and cutoff exponents,
+and reran the finite-matrix and exact Pauli-support checks. A separate agent
+reviewed both the UV proof and the finite-cell massive matching argument.
 The proof uses the standard finite-range Lieb-Robinson estimate for bounded
 interactions and no many-body gap. Its detailed assumptions and limitations
 are in [UV_NORMAL_FORM.md](vacancy/UV_NORMAL_FORM.md).

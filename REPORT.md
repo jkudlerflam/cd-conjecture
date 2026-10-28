@@ -998,3 +998,15 @@ the withdrawn verified-counterexample wording in `contrib/routeA_final/` was
 corrected. The older claim that fixed-d route A still lacks a spatial
 construction was superseded by C39/C42/C44; its current central gap is C45's
 input S, which C46 has not proved. No new counterexample is established.
+
+[proved strengthening; independently audited] The direct-attack UV lemma now
+has a translation-covariant single-exponential version with cutoff power 10,
+proved by an explicit connected-commutator count. The companion
+`infrared/FINITE_CELL_MATCHING.md` establishes exact massive matching for a
+fixed finite cell after a locally block-diagonal reference. Finite spectral
+resummation, a strong coefficient norm and the Pedra-Salmhofer determinant
+expansion give a logical action correction linear in leakage, with spatial
+and temporal moments and no inverse logical-bandwidth factor. An independent
+agent audited the source-norm, equal-time and scalar bookkeeping; corrections
+are included. The theorem is not uniform over the mobile wrapper's unbounded
+cell space and does not establish the subsequent logical RG or central charge.

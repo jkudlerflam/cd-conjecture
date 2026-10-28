@@ -90,11 +90,21 @@ Open verification items: an independent rebuild of C44's source formula and tran
 
 [proved local reduction; infrared step open] The
 [direct-attack campaign](contrib/direct_attack_20261028/README.md) gives an
-explicit finite-depth ultraviolet change of basis with a volume-independent
-remainder carrying one spatial moment. For s=J/t and a Gaussian cutoff
-delta=s^a, 0<a<1/18, its weighted remainder is o(J). This resolves a
+explicit ultraviolet change of basis with a volume-independent remainder
+carrying one spatial moment. A translation-covariant version improves the
+cutoff power from 18 to 10. For s=J/t and a Gaussian cutoff delta=s^a,
+0<a<1/10, its weighted remainder is o(J). This resolves a
 technical ultraviolet estimate in the vacancy matching route, but not the
 inhomogeneous low-frequency energy comparison or the CFT inference.
+
+[proved finite-cell theorem; independently audited] The same campaign's
+[massive-matching theorem](contrib/direct_attack_20261028/infrared/FINITE_CELL_MATCHING.md)
+uses finite spectral embedding and a convergent determinant expansion to
+bound the logical action correction linearly in leakage, with time and space
+moments and no inverse logical-bandwidth factor. The hypotheses include a
+fixed finite cell, a locally block-diagonal reference, and strong coefficient
+norms. It does not yet apply uniformly to the mobile wrapper's unbounded
+cell lengths or establish the final logical RG/CFT limit.
 
 ## Parallel sparse first-order continuation
 
