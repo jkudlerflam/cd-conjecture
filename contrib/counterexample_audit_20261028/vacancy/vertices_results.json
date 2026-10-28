@@ -1,0 +1,40 @@
+{
+  "status": "passed",
+  "root_count": 46,
+  "unordered_pairs_with_replacement": 1081,
+  "quadratic_ordered_nonforward_count": 2070,
+  "quartic_ordered_nonforward_count": 1167480,
+  "quartic_dangerous_harmonic_branches": 56039040,
+  "delta2_exact": [
+    "99825624075052182264677201194022897218700470046132131119072106993403051",
+    "7120541574047372888783602635791165630296548354747311851383128032878264320"
+  ],
+  "delta4_exact": [
+    "1705630677079215454065672326142328635217296900937651448572499176070122802307966306624327743350572927653782556580284300779",
+    "5404618025732336992441310806274921506296717430140919349343451143844943839286672762600459424677804907161353266260139077565153280"
+  ],
+  "delta2": 0.014019386452133372,
+  "delta4": 3.155876454096123e-07,
+  "witness2": [
+    [
+      34
+    ],
+    [
+      35
+    ]
+  ],
+  "witness4": [
+    [
+      7,
+      38
+    ],
+    [
+      8,
+      37
+    ]
+  ],
+  "physical_margin_certified": 6.574742612700256e-09,
+  "physical_margin_all_quartic_branches": 8.325802713926578e-09,
+  "elapsed_seconds": 0.22070454200729728,
+  "input_scope": "Rational Fermi intervals inherited; their matrix-inertia proof is not rerun here."
+}

@@ -1,0 +1,81 @@
+{
+  "literal_second_order": [
+    {
+      "n": 1,
+      "D": 4,
+      "td": 3.875248015873016e-06,
+      "cell_code_residual": 2.220446049250313e-16,
+      "g_zero_scalar_error": 0.0,
+      "g_squared_nonquadratic_norm": 0.0,
+      "T_relative_error": 4.1814437282929394e-16,
+      "M_absolute_error": 5.421010862427522e-20,
+      "M_relative_error": null,
+      "M_imaginary_relative_error": null,
+      "T_literal": [
+        [
+          "(-2.532118696460664e-07-2.0216107676591218e-27j)"
+        ]
+      ],
+      "M_literal": [
+        [
+          "(5.421010862427522e-20+1.7902890618209426e-28j)"
+        ]
+      ]
+    },
+    {
+      "n": 2,
+      "D": 4,
+      "td": 1.968876008064516e-06,
+      "cell_code_residual": 2.220446049250313e-16,
+      "g_zero_scalar_error": 0.0,
+      "g_squared_nonquadratic_norm": 1.35525336184158e-20,
+      "T_relative_error": 5.116956160876726e-16,
+      "M_absolute_error": 1.3553173375515657e-20,
+      "M_relative_error": 1.2985470478887574e-06,
+      "M_imaginary_relative_error": 1.2680518874695566e-08,
+      "T_literal": [
+        [
+          "(-8.082740857518909e-10+0j)",
+          "(-9.368554141280364e-11-1.2116903504194741e-27j)"
+        ],
+        [
+          "(-2.057951903421727e-11+2.0194839173657902e-28j)",
+          "(-3.4942731062485655e-12-1.262177448353619e-29j)"
+        ]
+      ],
+      "M_literal": [
+        [
+          "(1.3552527156068805e-20-1.3234889800848443e-22j)",
+          "(2.105172019837949e-22+1.0437183156427142e-14j)"
+        ],
+        [
+          "(-2.2995601466456315e-22-1.0437183156840732e-14j)",
+          "(6.776263578034403e-21+7.940933880509066e-23j)"
+        ]
+      ]
+    }
+  ],
+  "bond": {
+    "dim": 529,
+    "herm": 0.0,
+    "charge_comm": 0.0,
+    "penalty_comm": 0.0,
+    "nonzero": 877,
+    "lift_hermiticity": 0.0,
+    "lift_occupied_error": 1.4907779871675686e-18,
+    "lift_number_commutator": 0.0,
+    "lift_charge_commutator": 0.0,
+    "lift_marker_commutator": 0.0,
+    "directed_pair_moves_preserving_all_bad_bonds": 168,
+    "port_norm": 1.7320508075688779
+  },
+  "selector": {
+    "gamma_lower_rational": "4380829103122493580711330097134651673228899577321535634563541386592440665/57896044618658097711785492504343953926634992332820282019728792003956564819968",
+    "gamma_lower": 7.566715709125815e-05,
+    "kappa_lower": 0.01577059737104434,
+    "vacuum_gap_lower": 0.047063080371693426,
+    "port_bound_upper": 1.9073486328125e-06,
+    "wrong_length_gap_lower": 6.613041392719565e-05,
+    "illegal_gap_lower": 5.99998664855957
+  }
+}

@@ -1,0 +1,140 @@
+{
+  "squeezing": [
+    {
+      "L": 4,
+      "N": 2,
+      "q": 2,
+      "dimension": 24,
+      "kinetic_error": 0.0,
+      "interaction_error": 0.0,
+      "projection_error": 2.7755575615628914e-16,
+      "half_flux_branches": 2
+    },
+    {
+      "L": 5,
+      "N": 2,
+      "q": 3,
+      "dimension": 90,
+      "kinetic_error": 0.0,
+      "interaction_error": 0.0,
+      "projection_error": 6.662783593823664e-16,
+      "half_flux_branches": 2
+    },
+    {
+      "L": 5,
+      "N": 3,
+      "q": 2,
+      "dimension": 80,
+      "kinetic_error": 0.0,
+      "interaction_error": 0.0,
+      "projection_error": 1.1102230246251565e-15,
+      "half_flux_branches": 0
+    },
+    {
+      "L": 6,
+      "N": 4,
+      "q": 2,
+      "dimension": 240,
+      "kinetic_error": 0.0,
+      "interaction_error": 0.0,
+      "projection_error": 7.327477343802942e-15,
+      "half_flux_branches": 2
+    },
+    {
+      "L": 7,
+      "N": 3,
+      "q": 2,
+      "dimension": 280,
+      "kinetic_error": 0.0,
+      "interaction_error": 0.0,
+      "projection_error": 1.5543128864942517e-15,
+      "half_flux_branches": 0
+    }
+  ],
+  "stiffness": [
+    {
+      "N": 3,
+      "H": 3,
+      "dimension": 10,
+      "energy_error": 1.7763568394002505e-15,
+      "drude": 1.3333320989161734,
+      "inverse_compressibility": 0.8099184451958381,
+      "K": 4.030866316914107,
+      "v": 1.0391776847507315
+    },
+    {
+      "N": 4,
+      "H": 4,
+      "dimension": 35,
+      "energy_error": -5.329070518200751e-15,
+      "drude": 1.3065622836450075,
+      "inverse_compressibility": 0.7990961137297035,
+      "K": 4.017125705636282,
+      "v": 1.0217968698359434
+    },
+    {
+      "N": 5,
+      "H": 5,
+      "dimension": 126,
+      "energy_error": 4.440892098500626e-15,
+      "drude": 1.2944267557379874,
+      "inverse_compressibility": 0.7941362176160727,
+      "K": 4.010893327568057,
+      "v": 1.0138792668670216
+    },
+    {
+      "N": 6,
+      "H": 6,
+      "dimension": 462,
+      "energy_error": -7.105427357601002e-15,
+      "drude": 1.2879008040300732,
+      "inverse_compressibility": 0.7914553604043029,
+      "K": 4.0075400148669615,
+      "v": 1.009611804120085
+    },
+    {
+      "N": 7,
+      "H": 7,
+      "dimension": 1716,
+      "energy_error": -1.7763568394002505e-15,
+      "drude": 1.2839881280157783,
+      "inverse_compressibility": 0.7898434997272759,
+      "K": 4.005528744053706,
+      "v": 1.0070499871606453
+    }
+  ],
+  "threshold": [
+    {
+      "L": 6,
+      "N": 3,
+      "all_states_and_twists": 60,
+      "minimum_bound_slack": 0.0
+    },
+    {
+      "L": 8,
+      "N": 4,
+      "all_states_and_twists": 280,
+      "minimum_bound_slack": -8.881784197001252e-16
+    },
+    {
+      "L": 10,
+      "N": 5,
+      "all_states_and_twists": 1260,
+      "minimum_bound_slack": -5.654319433712919e-16
+    },
+    {
+      "L": 12,
+      "N": 6,
+      "all_states_and_twists": 5544,
+      "minimum_bound_slack": -2.8271597168564594e-16
+    },
+    {
+      "L": 14,
+      "N": 7,
+      "all_states_and_twists": 24024,
+      "minimum_bound_slack": -2.3417887827715424e-15
+    }
+  ],
+  "elapsed_seconds": 0.10738654201850295,
+  "status": "passed"
+}

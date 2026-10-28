@@ -1,0 +1,233 @@
+[
+  {
+    "N": 6,
+    "physical_length": 12,
+    "dimension": 462,
+    "impurity_sites": [
+      0,
+      1
+    ],
+    "Delta": 0.2,
+    "u": 1.0,
+    "alpha_L": 0.29266384402395124,
+    "runs": [
+      {
+        "J": 0.04,
+        "energy_correction": -0.0002703769383426624,
+        "correction_over_J2": -0.16898558646416398,
+        "second_order": -0.00027030549719673965,
+        "second_order_over_J2": -0.16894093574796226,
+        "relative_error_vs_second": -0.0002642977914382726,
+        "error_over_J3": -0.0011162679050425383,
+        "susceptibility": [
+          [
+            0.08447046787398114,
+            -0.010717239848666436
+          ],
+          [
+            -0.010717239848666436,
+            0.08447046787398113
+          ]
+        ],
+        "eigenpair_residual": 6.0376670135558725e-15
+      },
+      {
+        "J": 0.02,
+        "energy_correction": -6.773036579422109e-05,
+        "correction_over_J2": -0.1693259144855527,
+        "second_order": -6.772132392067552e-05,
+        "second_order_over_J2": -0.16930330980168878,
+        "relative_error_vs_second": -0.0001335159004889281,
+        "error_over_J3": -0.0011302341931964221,
+        "susceptibility": [
+          [
+            0.08465165490084438,
+            -0.010710482348495896
+          ],
+          [
+            -0.01071048234849589,
+            0.08465165490084439
+          ]
+        ],
+        "eigenpair_residual": 6.3421771400893146e-15
+      },
+      {
+        "J": 0.01,
+        "energy_correction": -1.6949661087778747e-05,
+        "correction_over_J2": -0.16949661087778747,
+        "second_order": -1.694852332887964e-05,
+        "second_order_over_J2": -0.1694852332887964,
+        "relative_error_vs_second": -6.71302671643178e-05,
+        "error_over_J3": -0.0011377588991083628,
+        "susceptibility": [
+          [
+            0.0847426166443982,
+            -0.010707026198525503
+          ],
+          [
+            -0.010707026198525503,
+            0.0847426166443982
+          ]
+        ],
+        "eigenpair_residual": 6.2247379309408474e-15
+      }
+    ],
+    "static_cross_susceptibility": -0.010703517925729222,
+    "predicted_asymptotic_error_over_J3": -0.0011456529598640678,
+    "seconds": 0.014019374968484044
+  },
+  {
+    "N": 8,
+    "physical_length": 16,
+    "dimension": 6435,
+    "impurity_sites": [
+      0,
+      1
+    ],
+    "Delta": 0.2,
+    "u": 1.0,
+    "alpha_L": 0.29473326274149814,
+    "runs": [
+      {
+        "J": 0.04,
+        "energy_correction": -0.00028173481568998,
+        "correction_over_J2": -0.1760842598062375,
+        "second_order": -0.0002817000758970024,
+        "second_order_over_J2": -0.1760625474356265,
+        "relative_error_vs_second": -0.00012332191557618905,
+        "error_over_J3": -0.0005428092652746277,
+        "susceptibility": [
+          [
+            0.08803127371781325,
+            -0.0075005000514098445
+          ],
+          [
+            -0.007500500051409844,
+            0.08803127371781325
+          ]
+        ],
+        "eigenpair_residual": 1.0389729419317187e-14
+      },
+      {
+        "J": 0.02,
+        "energy_correction": -7.059778194206621e-05,
+        "correction_over_J2": -0.17649445485516552,
+        "second_order": -7.059340822986137e-05,
+        "second_order_over_J2": -0.1764835205746534,
+        "relative_error_vs_second": -6.195638253643993e-05,
+        "error_over_J3": -0.0005467140256050446,
+        "susceptibility": [
+          [
+            0.0882417602873267,
+            -0.00746783251567219
+          ],
+          [
+            -0.007467832515672191,
+            0.0882417602873267
+          ]
+        ],
+        "eigenpair_residual": 9.408773492199047e-15
+      },
+      {
+        "J": 0.01,
+        "energy_correction": -1.7670054476301798e-05,
+        "correction_over_J2": -0.17670054476301797,
+        "second_order": -1.7669505021932158e-05,
+        "second_order_over_J2": -0.17669505021932155,
+        "relative_error_vs_second": -3.109619476937093e-05,
+        "error_over_J3": -0.00054945436964038,
+        "susceptibility": [
+          [
+            0.08834752510966079,
+            -0.00745129088512959
+          ],
+          [
+            -0.0074512908851295905,
+            0.08834752510966079
+          ]
+        ],
+        "eigenpair_residual": 1.8087645478247378e-14
+      }
+    ],
+    "static_cross_susceptibility": -0.007434609094433664,
+    "predicted_asymptotic_error_over_J3": -0.0005527341238703574,
+    "seconds": 0.121909957844764
+  },
+  {
+    "N": 10,
+    "physical_length": 20,
+    "dimension": 92378,
+    "impurity_sites": [
+      0,
+      1
+    ],
+    "Delta": 0.2,
+    "u": 1.0,
+    "alpha_L": 0.29568270905470007,
+    "runs": [
+      {
+        "J": 0.04,
+        "energy_correction": -0.00028842600358156955,
+        "correction_over_J2": -0.18026625223848097,
+        "second_order": -0.00028840672625602624,
+        "second_order_over_J2": -0.1802542039100164,
+        "relative_error_vs_second": -6.684076267415392e-05,
+        "error_over_J3": -0.0003012082116141988,
+        "susceptibility": [
+          [
+            0.0901271019550082,
+            -0.005565903765255368
+          ],
+          [
+            -0.005565903765255368,
+            0.0901271019550082
+          ]
+        ],
+        "eigenpair_residual": 2.942575646400814e-14
+      },
+      {
+        "J": 0.02,
+        "energy_correction": -7.229038773697146e-05,
+        "correction_over_J2": -0.18072596934242866,
+        "second_order": -7.228800178431126e-05,
+        "second_order_over_J2": -0.18072000446077816,
+        "relative_error_vs_second": -3.300620575074132e-05,
+        "error_over_J3": -0.0002982440825253666,
+        "susceptibility": [
+          [
+            0.09036000223038908,
+            -0.005512430250812133
+          ],
+          [
+            -0.005512430250812132,
+            0.09036000223038906
+          ]
+        ],
+        "eigenpair_residual": 4.904205858812903e-14
+      },
+      {
+        "J": 0.01,
+        "energy_correction": -1.8095723065744847e-05,
+        "correction_over_J2": -0.18095723065744845,
+        "second_order": -1.8095425316455193e-05,
+        "second_order_over_J2": -0.18095425316455194,
+        "relative_error_vs_second": -1.645439576284384e-05,
+        "error_over_J3": -0.00029774928965393743,
+        "susceptibility": [
+          [
+            0.09047712658227597,
+            -0.00548534642386537
+          ],
+          [
+            -0.005485346423865368,
+            0.09047712658227597
+          ]
+        ],
+        "eigenpair_residual": 5.0963210473413265e-14
+      }
+    ],
+    "static_cross_susceptibility": -0.005458028137700996,
+    "predicted_asymptotic_error_over_J3": -0.00029790071151935795,
+    "seconds": 3.0182550840545446
+  }
+]

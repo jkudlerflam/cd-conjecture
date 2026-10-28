@@ -1,0 +1,312 @@
+{
+  "scope": "Exact phase fluid, not the full d=24 model",
+  "analytic": {
+    "alpha": 0.29735763271532445,
+    "alpha_prime": -0.3513211836423378,
+    "e_second": 0.7853981633974483,
+    "K": 4,
+    "velocity": 1,
+    "density_response_bound": 1.2732395447351628,
+    "static_energy_kernel_coefficient": 0.0785757974922801,
+    "current_contraction": [
+      {
+        "payload_velocity": 1.0,
+        "integral": 0.7853981633974483,
+        "analytic": 0.7853981633974483
+      },
+      {
+        "payload_velocity": 0.1,
+        "integral": 0.47206501180913507,
+        "analytic": 0.4720650118091348
+      },
+      {
+        "payload_velocity": 0.01,
+        "integral": 0.0609839775675223,
+        "analytic": 0.060983977567522364
+      },
+      {
+        "payload_velocity": 0.001,
+        "integral": 0.006264373387632065,
+        "analytic": 0.006264373387632156
+      }
+    ],
+    "two_speed_examples": [
+      {
+        "J": 1e-12,
+        "u": 1e-20,
+        "forward_coefficient": 1e-12,
+        "relative_stiffness_squared": 0.00039999999999999996,
+        "slow_speed_squared_ratio": 0.9996,
+        "stable": true
+      },
+      {
+        "J": 1e-11,
+        "u": 1e-19,
+        "forward_coefficient": 1e-11,
+        "relative_stiffness_squared": 0.004,
+        "slow_speed_squared_ratio": 0.996,
+        "stable": true
+      },
+      {
+        "J": 1e-10,
+        "u": 1e-18,
+        "forward_coefficient": 1e-10,
+        "relative_stiffness_squared": 0.04,
+        "slow_speed_squared_ratio": 0.9600000000000001,
+        "stable": true
+      },
+      {
+        "J": 1e-09,
+        "u": 1e-17,
+        "forward_coefficient": 1e-09,
+        "relative_stiffness_squared": 0.4,
+        "slow_speed_squared_ratio": 0.6,
+        "stable": true
+      },
+      {
+        "J": 1e-08,
+        "u": 1.0000000000000001e-16,
+        "forward_coefficient": 1e-08,
+        "relative_stiffness_squared": 4.0,
+        "slow_speed_squared_ratio": -3.0,
+        "stable": false
+      }
+    ],
+    "long_cell": {
+      "delta_selector": 0.04610690275289042,
+      "selected_energy_density": -0.0012640127242435906,
+      "cutoff": 73,
+      "margin_per_site": 0.0006320063621217953
+    }
+  },
+  "finite": [
+    {
+      "material_sites": 4,
+      "holes": 4,
+      "physical_sites": 8,
+      "dimension": 35,
+      "ground_energy": -5.226251859505504,
+      "ground_residual": 4.714854588435918e-15,
+      "contact_mean": 0.2866116523516815,
+      "seconds": 0.002306915819644928,
+      "responses": [
+        {
+          "mode": 0,
+          "q": 0.0,
+          "omega": 0.0,
+          "G_density": 0.0,
+          "G_contact": 0.04907380926267611,
+          "smooth_density_prediction": 0.0,
+          "residual": 7.890608593980164e-17
+        },
+        {
+          "mode": 1,
+          "q": 1.5707963267948966,
+          "omega": 0.0,
+          "G_density": 0.9697720832238421,
+          "G_contact": 0.19254832724541732,
+          "smooth_density_prediction": 1.2732395447351628,
+          "residual": 7.591107655352206e-16
+        },
+        {
+          "mode": 1,
+          "q": 1.5707963267948966,
+          "omega": 1.5707963267948966,
+          "G_density": 0.4974785305444111,
+          "G_contact": 0.11647096316287697,
+          "smooth_density_prediction": 0.6366197723675814,
+          "residual": 4.949623840593912e-13
+        },
+        {
+          "mode": 2,
+          "q": 3.141592653589793,
+          "omega": 0.0,
+          "G_density": 0.8133960024150574,
+          "G_contact": 0.185644541723653,
+          "smooth_density_prediction": 1.2732395447351628,
+          "residual": 3.488979606913701e-16
+        },
+        {
+          "mode": 2,
+          "q": 3.141592653589793,
+          "omega": 3.141592653589793,
+          "G_density": 0.31496362831475183,
+          "G_contact": 0.08570901903048414,
+          "smooth_density_prediction": 0.6366197723675814,
+          "residual": 7.260194916697364e-15
+        }
+      ]
+    },
+    {
+      "material_sites": 6,
+      "holes": 6,
+      "physical_sites": 12,
+      "dimension": 462,
+      "ground_energy": -7.7274066103125465,
+      "ground_residual": 2.13911962113242e-15,
+      "contact_mean": 0.29266384402395124,
+      "seconds": 0.005253375042229891,
+      "responses": [
+        {
+          "mode": 0,
+          "q": 0.0,
+          "omega": 0.0,
+          "G_density": 0.0,
+          "G_contact": 0.049945070303056255,
+          "smooth_density_prediction": 0.0,
+          "residual": 1.4474797463790421e-15
+        },
+        {
+          "mode": 1,
+          "q": 1.0471975511965976,
+          "omega": 0.0,
+          "G_density": 1.0992089012696422,
+          "G_contact": 0.1995533966632041,
+          "smooth_density_prediction": 1.2732395447351628,
+          "residual": 4.69692108363808e-11
+        },
+        {
+          "mode": 1,
+          "q": 1.0471975511965976,
+          "omega": 1.0471975511965976,
+          "G_density": 0.5587844397099093,
+          "G_contact": 0.1230571522100473,
+          "smooth_density_prediction": 0.6366197723675814,
+          "residual": 1.1220080951754113e-10
+        },
+        {
+          "mode": 3,
+          "q": 3.141592653589793,
+          "omega": 0.0,
+          "G_density": 0.8392230705933695,
+          "G_contact": 0.18692732263561082,
+          "smooth_density_prediction": 1.2732395447351628,
+          "residual": 1.6014714272244067e-11
+        },
+        {
+          "mode": 3,
+          "q": 3.141592653589793,
+          "omega": 3.141592653589793,
+          "G_density": 0.3136226179481701,
+          "G_contact": 0.08592431990434884,
+          "smooth_density_prediction": 0.6366197723675814,
+          "residual": 1.062575113842947e-10
+        }
+      ]
+    },
+    {
+      "material_sites": 8,
+      "holes": 8,
+      "physical_sites": 16,
+      "dimension": 6435,
+      "ground_energy": -10.251661790966024,
+      "ground_residual": 1.483573016801499e-13,
+      "contact_mean": 0.29473326274149814,
+      "seconds": 0.05717691592872143,
+      "responses": [
+        {
+          "mode": 0,
+          "q": 0.0,
+          "omega": 0.0,
+          "G_density": 0.0,
+          "G_contact": 0.05024810699434359,
+          "smooth_density_prediction": 0.0,
+          "residual": 7.013335892307782e-12
+        },
+        {
+          "mode": 1,
+          "q": 0.7853981633974483,
+          "omega": 0.0,
+          "G_density": 1.1609817206614808,
+          "G_contact": 0.20275791254359682,
+          "smooth_density_prediction": 1.2732395447351628,
+          "residual": 3.3017825925350864e-11
+        },
+        {
+          "mode": 1,
+          "q": 0.7853981633974483,
+          "omega": 0.7853981633974483,
+          "G_density": 0.5865958368215656,
+          "G_contact": 0.12557353546109543,
+          "smooth_density_prediction": 0.6366197723675814,
+          "residual": 1.3501321873395102e-10
+        },
+        {
+          "mode": 4,
+          "q": 3.141592653589793,
+          "omega": 0.0,
+          "G_density": 0.8490592465128772,
+          "G_contact": 0.18737725276319486,
+          "smooth_density_prediction": 1.2732395447351628,
+          "residual": 9.029279588530494e-11
+        },
+        {
+          "mode": 4,
+          "q": 3.141592653589793,
+          "omega": 3.141592653589793,
+          "G_density": 0.3130505473386615,
+          "G_contact": 0.08593611909806631,
+          "smooth_density_prediction": 0.6366197723675814,
+          "residual": 1.470094684289743e-10
+        }
+      ]
+    },
+    {
+      "material_sites": 10,
+      "holes": 10,
+      "physical_sites": 20,
+      "dimension": 92378,
+      "ground_energy": -12.784906442999299,
+      "ground_residual": 3.7929255762038635e-13,
+      "contact_mean": 0.29568270905469896,
+      "seconds": 1.0568839160259813,
+      "responses": [
+        {
+          "mode": 0,
+          "q": 0.0,
+          "omega": 0.0,
+          "G_density": 0.0,
+          "G_contact": 0.050388045725871584,
+          "smooth_density_prediction": 0.0,
+          "residual": 1.9721828170361275e-11
+        },
+        {
+          "mode": 1,
+          "q": 0.6283185307179586,
+          "omega": 0.0,
+          "G_density": 1.1946524395913805,
+          "G_contact": 0.20441890348003897,
+          "smooth_density_prediction": 1.273239544735163,
+          "residual": 2.953230456612026e-11
+        },
+        {
+          "mode": 1,
+          "q": 0.6283185307179586,
+          "omega": 0.6283185307179586,
+          "G_density": 0.6015579769055142,
+          "G_contact": 0.1268041565384468,
+          "smooth_density_prediction": 0.6366197723675815,
+          "residual": 1.2420006485410594e-10
+        },
+        {
+          "mode": 5,
+          "q": 3.141592653589793,
+          "omega": 0.0,
+          "G_density": 0.8537846308721104,
+          "G_contact": 0.1875876415162761,
+          "smooth_density_prediction": 1.2732395447351628,
+          "residual": 9.59068416271252e-11
+        },
+        {
+          "mode": 5,
+          "q": 3.141592653589793,
+          "omega": 3.141592653589793,
+          "G_density": 0.3127674193888591,
+          "G_contact": 0.08593108191975386,
+          "smooth_density_prediction": 0.6366197723675814,
+          "residual": 2.54574878979999e-10
+        }
+      ]
+    }
+  ]
+}
