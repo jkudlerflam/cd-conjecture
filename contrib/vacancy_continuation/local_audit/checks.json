@@ -1,0 +1,12 @@
+{
+  "status": "passed diagnostics; continuum assumptions not tested",
+  "K": 4.0,
+  "v": 1.0,
+  "e_gap_second_derivative": 0.7853981633974483,
+  "alpha": 0.29735763271532445,
+  "alpha_derivative_exact": -0.3513211836423378,
+  "alpha_derivative_finite_difference": -0.3513211836558838,
+  "C_times_t": 0.0785757974922801,
+  "max_normalized_dynamic_response": 1.0,
+  "max_canonical_quadratic_form_error": 1.1102230246251565e-16
+}

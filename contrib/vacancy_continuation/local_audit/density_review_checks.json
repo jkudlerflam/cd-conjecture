@@ -1,0 +1,9 @@
+{
+  "status": "passed independent numerical diagnostics",
+  "kinetic_twist_cases": 10710,
+  "kinetic_equality_max_error": 3.272513056521256e-14,
+  "harmonic_cases": 89532,
+  "harmonic_bound_min_slack": -2.2551405187698492e-17,
+  "thermodynamic_max_density_deviation_at_budget": 0.02427032390694624,
+  "window_half_width": 0.025
+}
