@@ -1,0 +1,25 @@
+{
+  "status": "all_exact_assertions_passed",
+  "global_jw_cases": 177796,
+  "neutral_wire_cases": 3586,
+  "missing_parity_counterexample": {
+    "n": 2,
+    "word": 5,
+    "left_mode": 0,
+    "right_mode": 1,
+    "correct": [
+      12,
+      -1
+    ],
+    "without_parity": [
+      12,
+      1
+    ]
+  },
+  "cell_dimension": 1384120320,
+  "excited_states_per_parity": 687865856,
+  "auxiliary_modes": 2063597568,
+  "total_modes": 2063597591,
+  "certified_roots": 46,
+  "note": "Checks exact algebra and saved certificate fields; does not rerun the original inertia certificate or establish RG."
+}

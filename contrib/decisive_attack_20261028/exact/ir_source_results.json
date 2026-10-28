@@ -1,0 +1,24 @@
+{
+  "matrix_checks": [
+    {
+      "branches": 2,
+      "factorization_error": 1.4821483875836085e-17,
+      "middle_formula_error": 1.3877787807814457e-17,
+      "physical_smallest_singular_value": 0.049087020958917704
+    },
+    {
+      "branches": 4,
+      "factorization_error": 1.962615573354719e-17,
+      "middle_formula_error": 1.3877787807814457e-17,
+      "physical_smallest_singular_value": 0.04858976279230821
+    },
+    {
+      "branches": 6,
+      "factorization_error": 2.1942709178604383e-17,
+      "middle_formula_error": 1.3877787807814457e-17,
+      "physical_smallest_singular_value": 0.04839241924071626
+    }
+  ],
+  "bounded_ratio_counterexample_at_scale_minus_1000": 8.881784197001252e-16,
+  "passed": true
+}

@@ -1,0 +1,59 @@
+{
+  "records": [
+    {
+      "branches": 2,
+      "stability_norm": 0.08075367168614296,
+      "smallest_energy_eigenvalue": 2.496994119798727,
+      "smallest_absolute_speed": 0.4694259707958966,
+      "positive_speeds": 1,
+      "negative_speeds": 1,
+      "kh_identity_error": 2.220446049250313e-16,
+      "contact_identity_error": 1.6658991298631904e-16,
+      "diagonal_mode_error": 1.1103585416259206e-16,
+      "physical_source_mode_error": 5.561946577567963e-17
+    },
+    {
+      "branches": 4,
+      "stability_norm": 0.11615046921908685,
+      "smallest_energy_eigenvalue": 2.482313763478563,
+      "smallest_absolute_speed": 0.3232166576583126,
+      "positive_speeds": 2,
+      "negative_speeds": 2,
+      "kh_identity_error": 6.661338147750939e-16,
+      "contact_identity_error": 2.7782125870216734e-16,
+      "diagonal_mode_error": 2.2205519258444853e-16,
+      "physical_source_mode_error": 1.942958357049352e-16
+    },
+    {
+      "branches": 6,
+      "stability_norm": 0.09031363342211389,
+      "smallest_energy_eigenvalue": 2.4966604773881214,
+      "smallest_absolute_speed": 0.4027495673597139,
+      "positive_speeds": 3,
+      "negative_speeds": 3,
+      "kh_identity_error": 4.440892098500626e-16,
+      "contact_identity_error": 5.928593550334434e-17,
+      "diagonal_mode_error": 4.718990422803232e-16,
+      "physical_source_mode_error": 4.441434166503682e-16
+    },
+    {
+      "branches": 8,
+      "stability_norm": 0.08867300487785944,
+      "smallest_energy_eigenvalue": 2.508072693315036,
+      "smallest_absolute_speed": 0.3938718928872435,
+      "positive_speeds": 4,
+      "negative_speeds": 4,
+      "kh_identity_error": 4.440892098500626e-16,
+      "contact_identity_error": 8.327689062194404e-17,
+      "diagonal_mode_error": 2.220513810852149e-16,
+      "physical_source_mode_error": 2.7764247878179436e-16
+    }
+  ],
+  "repeated_free_speeds": [
+    -1.9999999999999998,
+    -1.9999999999999998,
+    0.9999999999999998,
+    0.9999999999999998
+  ],
+  "passed": true
+}

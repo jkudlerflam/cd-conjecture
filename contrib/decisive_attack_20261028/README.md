@@ -19,8 +19,10 @@ translation degeneracy on incompatible ring lengths.
 
 The decisive remaining task is a controlled source-dependent infrared
 analysis of the small, high-degree retarded logical interaction produced
-by massive matching. A full-rank chiral current algebra could give the
-lower bound c>=23, using C46's existing Sugawara argument. A thermal proof
+by massive matching. A positive-level **Abelian** chiral current algebra
+could give the lower bound c>=23, using C46's existing Sugawara argument.
+Two-point rank alone is insufficient: non-Abelian currents can have a
+central charge smaller than their number. A thermal proof
 must instead retain the vacuum terms and identify each mode's contribution.
 Neither conclusion follows just from bounded action coefficients.
 
@@ -59,6 +61,36 @@ Neither conclusion follows just from bounded action coefficients.
   hopping code. An exponentially local exact dressing must have tails
   comparable to the hopping scale. The candidate's tiny hopping scale
   remains compatible with this inequality; it does not refute the candidate.
+- **[proved specialization conditional on the cited matching theorems]**
+  [The actual n=23 cell](frozen/N23_MATCHING.md) satisfies the fixed-cell
+  gap, grading, global Jordan--Wigner and coefficient-norm requirements.
+  The conversion strength is chosen before the final port coupling, so
+  both static and retarded errors are small in bandwidth units. The
+  [thermal addendum](frozen/N23_THERMAL_ADDENDUM.md) instantiates the
+  operator-valued representation, including its heat trace, scalar
+  density, tree norm and thermal periodization. Its auxiliary dimension
+  does not enter an expanded fermionic monomial count. The comparison
+  with the original physical model transfers pressure; it does not by
+  itself transfer every correlation function.
+- **[proved conditional source and covariance statements]**
+  [Infrared source review](exact/IR_SOURCE_REVIEW.md) isolates the
+  normalized marked-RG estimates needed for a nondegenerate source limit.
+  Under those additional estimates it proves full rank after removing
+  contact terms. [Multivelocity review](exact/MULTIVELOCITY_REVIEW.md)
+  gives a constant local change of fields to independent positive Gaussian
+  current modes. Gaussian four-point distributions force their brackets
+  to vanish; an additional ambient conformal-limit hypothesis then gives
+  c>=N/2. The microscopic marked estimates, distributional comparison and
+  conformal premise remain open.
+- **[proved finite reductions; infrared step remains open]**
+  [Single-channel retarded RG](demonstrator/SINGLE_CHANNEL_RG.md) constructs
+  an embedding that preserves particle-hole symmetry, treats equal-time
+  contacts, and proves ultraviolet initialization for arbitrary small
+  retarded endpoints, also for finite-range matrix dispersions. The
+  [independent UV audit](exact/UV_AUDIT.md) checks the determinant and
+  locality estimates. The note gives the localized operator list and a
+  conditional marginal-flow induction. These results do not replace the
+  infinite infrared construction or identify the full conformal limit.
 
 The separate [two-flavour selector audit](demonstrator/N2_SELECTOR_AUDIT.md)
 finds an unsupported global-sector inference, a missing infinite-length
@@ -68,12 +100,11 @@ bound and keeps those findings separate from the reported numerical c data.
 
 ## What would complete the proposed route
 
-For fixed n=23, preserve the certified band margins while choosing the
-conversion strength small enough to control all coefficient norms; choose
-the final port coupling afterwards. Apply finite-cell massive matching
-with physical sources. Then prove the retarded-kernel marginal-flow and
-source comparison, and obtain a sufficient conformal/current or thermal
-identification. The full frozen-sector pressure theorem transfers any
+For fixed n=23, the matching notes now give the parameter schedule and
+verify the massive-input hypotheses. The next step is to prove the
+retarded-kernel marginal-flow and source comparison, and obtain a
+sufficient conformal/current or thermal identification. The full
+frozen-sector pressure theorem transfers any
 proved selected-cell thermal coefficient to the complete microscopic chain.
 
 No limit in n or cell size is needed for a single d=23 violation. Constants
@@ -92,9 +123,14 @@ python3 -B contrib/decisive_attack_20261028/demonstrator/verify_tuning.py
 python3 -B contrib/decisive_attack_20261028/sources/check_interpolation.py
 python3 -B contrib/decisive_attack_20261028/exact/checks.py
 python3 -B contrib/decisive_attack_20261028/exact/source_checks.py
+python3 -B contrib/decisive_attack_20261028/frozen/check_n23_matching.py
+python3 -B contrib/decisive_attack_20261028/exact/ir_source_checks.py
+python3 -B contrib/decisive_attack_20261028/exact/multivelocity_checks.py
+python3 -B contrib/decisive_attack_20261028/demonstrator/verify_single_channel.py
 ```
 
-The first three use the Python standard library; the last two need numpy.
+The pressure, tuning, interpolation and n23 matching scripts use the Python
+standard library; the other listed checks need numpy.
 The interpolation check uses exact fractions and can take longer than the
 other checks. Outputs are written only beside their scripts. Finite checks
 supplement the written proofs and do not constitute an infrared simulation.

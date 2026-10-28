@@ -1,0 +1,54 @@
+{
+  "scope": "Finite algebra and covariance checks only; no infrared or central-charge claim.",
+  "numpy_version": "2.5.4",
+  "symmetry": {
+    "physical_C_commutes": 0.0,
+    "physical_Q_reverses": 0.0,
+    "physical_parity_reverses": 0.0,
+    "physical_code_intertwiner": 0.0,
+    "physical_reflection_commutes": 0.0,
+    "physical_reflection_C_commutes": 0.0,
+    "encoded_C_intertwiner": 0.0,
+    "encoded_C_involution": 0.0,
+    "encoded_C_logical": 0.0,
+    "encoded_C_a1": 0.0,
+    "encoded_C_a2": 0.0,
+    "charge_intertwiner_q-2": 0.0,
+    "charge_reversal_q-2": 0.0,
+    "charge_intertwiner_q0": 0.0,
+    "charge_reversal_q0": 0.0,
+    "charge_intertwiner_q2": 0.0,
+    "charge_reversal_q2": 0.0
+  },
+  "scalar_uv": {
+    "heat_kernel_cases": 24,
+    "maximum_error": 1.1879386363489175e-14,
+    "spatial_filter_absolute_sums": {
+      "4": 1.0,
+      "6": 0.48440070859901163,
+      "10": 0.851066757350465,
+      "50": 0.9999999998995391,
+      "101": 1.0000000000000013
+    }
+  },
+  "matrix_uv": {
+    "matrix_identity_cases": 27,
+    "maximum_error": 2.1474727592766422e-15,
+    "A0": 0.524,
+    "C_B_bound": 1.3159725841850634,
+    "spatial_filter_absolute_row_sums": {
+      "4": 1.0636900573497008,
+      "7": 1.0684509730527134,
+      "16": 1.0684722239699607,
+      "51": 1.068472235602437
+    }
+  },
+  "flow_sum": {
+    "gamma": 2,
+    "alpha": 0.2,
+    "theta": 0.6,
+    "finite_sum": 9.198675516364846,
+    "closed_value": 9.198675516364846,
+    "error": 0.0
+  }
+}
