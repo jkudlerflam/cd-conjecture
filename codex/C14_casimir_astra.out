@@ -1,0 +1,23 @@
+The bound is false at the requested physics standard, using the standard Bethe-ansatz/WZW identification.
+
+The symmetric rank-two SU(8) chain has
+\[
+d=36,\qquad \|h\|=\frac32,\qquad c=\frac{63}{5},\qquad v=\frac{\pi}{4},
+\]
+so
+\[
+\frac{A}{2\pi\|h\|}=\frac{21}{20}>1.
+\]
+Local matrix checks and two thermal estimators support the normalization.
+
+More strongly, symmetric rank-\(N\) SU(\(N\)) chains give
+\[
+\frac{A}{2\pi\|h\|}=\frac{N^2-1}{2NH_N}\longrightarrow\infty.
+\]
+Thus no finite dimension-independent constant repairs the conjecture.
+
+The positive extension is \(A\leq\pi\|h\|\) for all quadratic Majorana/BdG chains, including pairing and the full coboundary minimization.
+
+Derivations, assumptions, numerical data, reproduction commands, and unresolved classes are in [RESULT.md](< <repo>/codex/work_C14/RESULT.md>). Resumable state is in [PROGRESS.md](<<repo>/codex/work_C14/PROGRESS.md>).
+
+[gpt_solve: backend=codex model=gpt-6-astra effort=high transcript=20261027T210659-88695]

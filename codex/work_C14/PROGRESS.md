@@ -33,3 +33,21 @@ TBA cutoff increase N=8,k=2 to M=48,K=1024,R=48 yields c_free=12.614875,c_entrop
 Independent lattice ED normalization calibration implemented in ed_calibration.py. SU(2) fundamental rings L=8,10,12,14,16; spin-1 TB/2 rings L=6,8,10,12; SU(3) fundamental L=6,9. Both Casimir and spatial-entanglement estimators recorded. Small-size entropy estimates overshoot, as expected from existing notes; do not call them precise thermodynamic c. All sparse residuals <1.2e-10. Largest sector dimension 73789.
 
 Main conclusion now: the proposed universal bound is false at the requested physics standard, using the standard thermodynamic Bethe/string and WZW/CFT identifications. The stronger assertion of any dimension-independent constant is also false in this family. Remaining work: write full derivation and precise assumptions, finish free-Majorana extension, general-route obstructions, LL and symmetry/coset scope, and reproduction instructions.
+
+## Draft deliverable complete
+
+RESULT.md now contains the explicit rank-two polynomial counterexample, full fusion normalization and Bethe derivation, the Majorana doubling theorem with arbitrary-gauge handling, general sum-rule/variational obstructions, conditional LL and current-algebra bounds, graded-swap and stack checks, and consequences for the entropy window. Scope exclusions are explicit.
+
+Further cutoff check N=8,k=2,M=64,K=1024,R=48,T=.002 gives c_free=12.613358,c_entropy=12.618197, ratios1.051113,1.051516; residuals <1e-9. ED Casimir fits with free bulk energy yield c=1.005379 (SU2 fundamental) and1.517606 (TB/2); the spatial-entropy drifts are larger and are reported rather than treated as precision checks.
+
+Running one stronger-excess TBA point family N=k=8 at T=.003,.001, cutoff48, grid1024, half-length48. It should approach c31.5 and ratio1.448752. Then final consistency/readability audit and file inventory.
+
+## Completed, final resumable state
+
+The last TBA run finished. N=k=8,T=.001 gives c_free31.634722,c_entropy31.650391, approaching31.5; the ratios are1.454948 and1.455668, approaching1.448752. Both temperatures and the exact reproduction command are now in RESULT.md. All TBA solver/tangent residuals across all saved runs are below1e-9. The m=1,2,3 Majorana nuclear-norm and arbitrary-gauge extraction tests pass, and direct doubling has zero displayed matrix and number-commutator residual. Every Python file compiles. RESULT.md and this file contain no em dashes. No calculation remains running.
+
+Deliverables: RESULT.md (verdict, assumptions, derivations, class boundaries, numerical tables, reproduction commands and ranked next steps); fusion_tba.py with seven TBA JSON files; fusion_checks.py/.json; ed_calibration.py/.json; majorana_checks.py/.json. All are inside this directory. No outside writes, network, cluster jobs or delegated agents were used.
+
+Final verdict: A<=2*pi*||h|| is false at the standard Bethe/CFT physics level. Symmetric SU(N) rank-k fusion chains give ratio k(N^2-1)/(N(N+k)H_k); N=7,k=2 already violates, and k=N disproves every dimension-independent constant. Positive extension: every even quadratic Majorana/BdG NN chain satisfies A<=pi*||h||, with the full allowed coboundary minimization. Finite-density graded-swap and symplectic IR surveys remain undone and are marked as such. No implication for unbounded c at fixed d is claimed.
+
+Highest-value continuation: independently check primary-source fusion-chain normalization and IR identification, or solve finite-size Bethe equations for the SU7/SU8 rank-two model. Do not repeat the general proof search for the false universal statement. Parent STATE.md/STATUS.md were intentionally not edited because outside writes are forbidden.
