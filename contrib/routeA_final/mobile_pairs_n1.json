@@ -1,0 +1,46 @@
+{
+ "core": "C32 mobile 28-letter",
+ "n": 1,
+ "m": 1,
+ "D": 1000,
+ "td_power": -2000,
+ "field_power": -1000,
+ "psi0": "pi",
+ "psic": 0,
+ "express_phase": "pi/(2n)",
+ "port": "(1, i, -i)",
+ "p": 65521,
+ "image_of_i": 24297,
+ "carrier_dimension": 4,
+ "pair_resolvent_dimension": 16,
+ "f": [
+  55921,
+  63120,
+  55921
+ ],
+ "pair_product_polynomial": [
+  65520,
+  20968,
+  44553,
+  1
+ ],
+ "gcd": [
+  1
+ ],
+ "extra_determinant_checks": [
+  [
+   3,
+   27839
+  ],
+  [
+   5,
+   479
+  ],
+  [
+   9,
+   42964
+  ]
+ ],
+ "status": "no_pair_product_collision",
+ "seconds": 0.06
+}

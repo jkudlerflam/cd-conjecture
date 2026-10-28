@@ -77,7 +77,7 @@ At the theoretical-physics standard, the current lead claim is c = n + 1 for eve
 3. `codex/work_C44/` (the mobile wrapper at d₀ = 4464, audited for every n; `bounds_checks.py`, `consistency_checks.py`), built on `codex/work_C8/` and `codex/work_C32/`.
 4. `codex/work_C45/` (the infrared step and the coupling schedule; `checks.py`), refereed with C44 in `contrib/referee_C44_C45/`.
 5. Supporting evidence at small n: `contrib/routeA_demonstrator/`, `contrib/mobile_cells/`, `contrib/routeA_n2_chains/`, `contrib/routeA_n34_chains/`, `contrib/margins_audit/`; the infrared literature in `contrib/lit_ir_step/`.
-Open verification items: an independent rebuild of C44's source formula and transport overlap, a calibrated c for the n = 1 member (`contrib/verify_C44/`, in progress), and a human read of C39 to C45. A self-contained write-up is being assembled in `contrib/routeA_final/`.
+Open verification items: an independent rebuild of C44's source formula and transport overlap, a calibrated c for the n = 1 member (`contrib/verify_C44/`, in progress), and a human read of C39 to C45. The self-contained write-up of both mobile forms (the d = 24 vacancy chain and the d₀ = 4464 wrapper chain) is `contrib/routeA_final/README.md`.
 
 ## Summary
 
