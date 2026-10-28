@@ -1,0 +1,44 @@
+[
+  {
+    "branches": 2,
+    "range": 1,
+    "cardinal_entries_checked": 4,
+    "arithmetic": "exact Gaussian rational",
+    "passed": true
+  },
+  {
+    "branches": 4,
+    "range": 3,
+    "cardinal_entries_checked": 16,
+    "arithmetic": "exact Gaussian rational",
+    "passed": true
+  },
+  {
+    "branches": 8,
+    "range": 7,
+    "cardinal_entries_checked": 64,
+    "arithmetic": "exact Gaussian rational",
+    "passed": true
+  },
+  {
+    "branches": 12,
+    "range": 11,
+    "cardinal_entries_checked": 144,
+    "arithmetic": "exact Gaussian rational",
+    "passed": true
+  },
+  {
+    "branches": 24,
+    "range": 23,
+    "cardinal_entries_checked": 576,
+    "arithmetic": "exact Gaussian rational",
+    "passed": true
+  },
+  {
+    "branches": 46,
+    "range": 45,
+    "cardinal_entries_checked": 2116,
+    "arithmetic": "exact Gaussian rational",
+    "passed": true
+  }
+]

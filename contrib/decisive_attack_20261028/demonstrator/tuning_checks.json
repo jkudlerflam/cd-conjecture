@@ -1,0 +1,125 @@
+{
+  "status": "all exact rational assertions passed",
+  "cases": [
+    {
+      "D": "1",
+      "kappa": "1/5",
+      "Jp": "2",
+      "Jz": "-1",
+      "Jxy": "-1/48",
+      "Jzz": "1/6336",
+      "Delta_abs": "1/66",
+      "exact_matrix_match": true
+    },
+    {
+      "D": "1",
+      "kappa": "1/5",
+      "Jp": "1/10",
+      "Jz": "-1",
+      "Jxy": "-1/960",
+      "Jzz": "1/2534400",
+      "Delta_abs": "1/1320",
+      "exact_matrix_match": true
+    },
+    {
+      "D": "1",
+      "kappa": "1/5",
+      "Jp": "0",
+      "Jz": "1",
+      "Jxy": "0",
+      "Jzz": "0",
+      "Delta_abs": null,
+      "exact_matrix_match": true
+    },
+    {
+      "D": "1",
+      "kappa": "1/5",
+      "Jp": "1",
+      "Jz": "0",
+      "Jxy": "0",
+      "Jzz": "1/25344",
+      "Delta_abs": null,
+      "exact_matrix_match": true
+    },
+    {
+      "D": "1",
+      "kappa": "3/5",
+      "Jp": "2",
+      "Jz": "-1",
+      "Jxy": "-9/32",
+      "Jzz": "243/11648",
+      "Delta_abs": "27/182",
+      "exact_matrix_match": true
+    },
+    {
+      "D": "1",
+      "kappa": "3/5",
+      "Jp": "1/10",
+      "Jz": "-1",
+      "Jxy": "-9/640",
+      "Jzz": "243/4659200",
+      "Delta_abs": "27/3640",
+      "exact_matrix_match": true
+    },
+    {
+      "D": "1",
+      "kappa": "3/5",
+      "Jp": "0",
+      "Jz": "1",
+      "Jxy": "0",
+      "Jzz": "0",
+      "Delta_abs": null,
+      "exact_matrix_match": true
+    },
+    {
+      "D": "1",
+      "kappa": "3/5",
+      "Jp": "1",
+      "Jz": "0",
+      "Jxy": "0",
+      "Jzz": "243/46592",
+      "Delta_abs": null,
+      "exact_matrix_match": true
+    },
+    {
+      "D": "2",
+      "kappa": "1/2",
+      "Jp": "2",
+      "Jz": "-1",
+      "Jxy": "-1/60",
+      "Jzz": "1/5040",
+      "Delta_abs": "1/42",
+      "exact_matrix_match": true
+    },
+    {
+      "D": "2",
+      "kappa": "1/2",
+      "Jp": "1/10",
+      "Jz": "-1",
+      "Jxy": "-1/1200",
+      "Jzz": "1/2016000",
+      "Delta_abs": "1/840",
+      "exact_matrix_match": true
+    },
+    {
+      "D": "2",
+      "kappa": "1/2",
+      "Jp": "0",
+      "Jz": "1",
+      "Jxy": "0",
+      "Jzz": "0",
+      "Delta_abs": null,
+      "exact_matrix_match": true
+    },
+    {
+      "D": "2",
+      "kappa": "1/2",
+      "Jp": "1",
+      "Jz": "0",
+      "Jxy": "0",
+      "Jzz": "1/20160",
+      "Delta_abs": null,
+      "exact_matrix_match": true
+    }
+  ]
+}

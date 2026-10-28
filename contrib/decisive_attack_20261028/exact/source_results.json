@@ -1,0 +1,29 @@
+{
+  "length": 11,
+  "branches": 3,
+  "transferred_momenta": 11,
+  "records": [
+    {
+      "branch": 0,
+      "interpolation_error": 2.220446049250313e-16,
+      "coefficient_l1": 1.0597912416519102,
+      "l1_bound": 2.115985668410144,
+      "maximum_vertex_error": 2.2621489962394804e-15
+    },
+    {
+      "branch": 1,
+      "interpolation_error": 2.220446049250313e-16,
+      "coefficient_l1": 1.0597912416519106,
+      "l1_bound": 2.115985668410145,
+      "maximum_vertex_error": 3.0361951481788696e-15
+    },
+    {
+      "branch": 2,
+      "interpolation_error": 1.1102230246251565e-16,
+      "coefficient_l1": 0.9999999999999998,
+      "l1_bound": 1.460619481154745,
+      "maximum_vertex_error": 2.5678536333375607e-15
+    }
+  ],
+  "passed": true
+}

@@ -1,0 +1,33 @@
+{
+  "clifford_checks": [
+    {
+      "n": 1,
+      "car_error": 0.0,
+      "mixed_error": 0.0,
+      "commutator_identity_error": 0.0,
+      "bond_norm": 2.0,
+      "adjacent_commutator_norm": 4.0,
+      "minimum_bond_error_at_J1": 0.4494897427831779
+    },
+    {
+      "n": 2,
+      "car_error": 0.0,
+      "mixed_error": 0.0,
+      "commutator_identity_error": 0.0,
+      "bond_norm": 4.0,
+      "adjacent_commutator_norm": 8.0,
+      "minimum_bond_error_at_J1": 0.4721359549995796
+    },
+    {
+      "n": 3,
+      "car_error": 0.0,
+      "mixed_error": 0.0,
+      "commutator_identity_error": 0.0,
+      "bond_norm": 6.000000000000007,
+      "adjacent_commutator_norm": 12.000000000000028,
+      "minimum_bond_error_at_J1": 0.4807406984078604
+    }
+  ],
+  "collar_checks": 40,
+  "passed": true
+}
