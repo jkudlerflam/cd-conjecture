@@ -1,6 +1,6 @@
 """Finite-field specialization of the polynomial-size leading g^2 bond.
-Integer operations modulo p. NumPy matrix products use float64 only when
-all intermediate integer sums are below 2**53; reduction recovers integers.
+Integer operations modulo p. NumPy int64 products are used only when
+all intermediate integer sums are below 2**63.
 """
 import numpy as np
 import scipy.sparse as sp
@@ -11,8 +11,8 @@ P=65521
 
 def dot(a,b,p=P):
     a=np.asarray(a,dtype=np.int64);b=np.asarray(b,dtype=np.int64)
-    assert a.shape[-1]*(p-1)**2 < 2**53
-    return np.remainder(a.astype(float)@b.astype(float),p).astype(np.int64)
+    assert a.shape[-1]*(p-1)**2 < 2**63
+    return (a@b)%p
 
 def inv(a,p=P):
     a=np.array(a,dtype=np.int64,copy=True); n=len(a); b=np.eye(n,dtype=np.int64)

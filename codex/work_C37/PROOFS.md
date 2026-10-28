@@ -122,11 +122,11 @@ Indeed s_k^2 counts every unequal unordered pair twice and every equal pair once
 
 [Proved] Combining this test with Section 3, all 2n roots lie on the unit circle and are simple. Every ordered band has exactly two Fermi points. Every nontrivial pair sum differs modulo 2pi, including the pair sums that determine the sea centers.
 
-[Proved, arithmetic implementation] Sparse elimination, interpolation, Newton identities and polynomial gcd use integer residues. The only floating-point operations used for finite-field arithmetic are NumPy dot products of nonnegative integers. Before each such product, the code checks
+[Proved, arithmetic implementation] Sparse elimination, interpolation, Newton identities and polynomial gcd use integer residues. NumPy int64 dot products are used only after checking
 
-    inner_dimension * (p-1)^2 < 2^53.
+    inner_dimension * (p-1)^2 < 2^63.
 
-Every product and every possible partial sum is then an exactly representable integer in binary64. Reducing the result modulo p and converting to int64 is exact. Sparse ordering uses SciPy only to choose a permutation; no result of its floating-point factorization enters a finite-field solve. Every solve used in the certificate has an exact modular residual check.
+All input residues are nonnegative, so every product and every partial sum is within the signed-integer range. No arithmetic overflow occurs. The main modular coefficient calculation uses no floating-point arithmetic. Sparse ordering uses SciPy only to choose a permutation; no result of its floating-point factorization enters a finite-field solve. Every solve used in the certificate has an exact modular residual check.
 
 [Proved, independent finite audits] audit.py compares sparse solves against a separate dense modular inverse at product dimensions 9,25,49,81,121, compares the pair-product polynomial against direct multiplication for up to 46 prescribed roots and 1081 pairs, and compares the cached coefficient extraction with a direct uncached contraction at n=1,2,3. All checks agree exactly. These checks supplement the algebraic derivations and the stored certificates.
 
@@ -235,13 +235,19 @@ Also epsilon_NG*log(1/delta_n)/v_n < 10^(-6), since delta log(1/delta)<=1 for 0<
 
     C_n lambda^2/(a4_n g_n^2),                              (23)
 
-with finite C_n independent of ring length. An exponentially weighted local bound that controls the annulus is sufficient. The same assumption must bound the retained non-Gaussian coefficients and the interaction-induced self-energy, with the necessary matching constants. This is a quantitative version of the existing leakage/local-elimination input, not a theorem proved by the finite matrices here.
+with finite C_n independent of ring length. An exponentially weighted local bound that controls the annulus is sufficient. Equation (23) concerns the additional bare terms from massive-sector elimination. It does not include dressing by the order-lambda^2 g^4 interaction, whose normalized strength does not decrease with lambda. This is the existing leakage/local-elimination input, not a theorem proved by the finite matrices here.
 
-[Proved conditional schedule] Given such C_n>=1, take
+[Assumed, separate dressing input] Suppose the regular quadratic self-energy induced by the retained non-Gaussian interaction is bounded in the same normalized analytic norm by A_n C_NG(n) g^2, with finite A_n on a sufficiently small fixed-n coupling neighborhood. A_n includes the velocity denominators, mismatch logarithms and continuum matching constants. This stronger quantitative formulation is sufficient for the root argument; it is not proved by the finite-dimensional calculation.
 
-    0 < lambda^2 <= a4_n g_n^2 tau_n/(4 C_n),                (24)
+[Proved conditional schedule] Given such A_n,C_n>=1, first reduce the conversion, if necessary, to
 
-and decrease it if necessary for the inherited selector/exclusion hierarchy. Equations (21),(24) put the normalized quadratic corrections below tau_n. Thus the explicit momentum margins survive those corrections. The tiny physical field still removes the bare particle-hole umklapp, since the permitted root shifts were budgeted against the complete delta_n, not against the crossing amplitude alone.
+    0 < g^2 <= min(g_n^2, tau_n/[4 A_n C_NG(n)]),
+
+then take
+
+    0 < lambda^2 <= a4_n g^2 tau_n/(4 C_n),                (24)
+
+and decrease it if necessary for the inherited selector/exclusion hierarchy. The finite-g quadratic error, interaction dressing and higher-order bare error are then bounded by tau_n/8, tau_n/4 and tau_n/4, respectively. Their sum is below tau_n. Thus the explicit momentum margins survive those corrections. The tiny physical field still removes the bare particle-hole umklapp, since the permitted root shifts were budgeted against the complete delta_n, not against the crossing amplitude alone.
 
 [Assumed/heuristic, infrared conclusion] With (23), controlled dressing, positive Gaussian stiffness and the standard bosonization input of ir_control and C20, the weak non-Gaussian couplings yield the n-mode Luttinger description. This remains a physics-standard conditional conclusion. The present work does not establish the local-elimination hypothesis, a thermodynamic central charge, or a mobile length-fluid gluing rule.
 

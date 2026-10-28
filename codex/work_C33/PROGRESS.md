@@ -43,3 +43,11 @@
 [Numerical validation, n=2,3] Independent source-block enumeration agrees with the integer finite-loop g^2 matrices to relative errors below 1.1e-15. The full finite-g tree inverse at n=8, D=1000, g=.05 has positive numerical Hermitian margin. A simultaneous n=12,D=1000 run hit its 160-second cap; it is not claimed. Exact full-in-g inverses reached n=12 at D=10, and n=8 at D=1000. Leading scalar matrices were evaluated numerically through n=64, and tree positivity was certified through n=32.
 
 [Open] The all-n distinct-center and Sidon-margin theorem is not established. No n-dependent failure of the adjustable-parameter 23-letter family was found. No alphabet enlargement was needed for the certified n=23 target. The interacting infrared conclusion and global/mobile length-sector questions remain outside this finite-band result. PROOF.md contains the derivations and certificate explanation; RESULT.md and the local STATE handoff are being finalized.
+
+## Finished
+
+[Proved, computer-assisted] Final root certification was rerun with the full transpose-symmetric hopping error enclosure. All 46 endpoint-inertia changes, all pair-sum separations, the positive Hermitian margin, and the finite-g budget pass. The minimum endpoint congruence margin is 1.9305e-8; the certified additional normalized perturbation budget is 2^-33. The finite-g Hermitian margin in physical second-order coefficient units is greater than 10^-433.251.
+
+[Numerical, independent physical check] At n=2, D=2, a=3, td=.03, the literal ycell common-loop quadratic fit agrees with the leading formula with relative hopping errors .0037610, .00093848, .00023451 as g=.1,.05,.025. The factor-four decreases match the proved g^4 absolute correction. Syntax checks pass for all new computational scripts.
+
+[Scope] RESULT.md is the final outcome, PROOF.md contains the finite-dimensional derivations and certificates, and STATE.md is the local handoff. No writes occurred outside this folder, no network or subagents were used, and no CFT, mobility, or all-n Sidon conclusion is claimed. All-n crossings and the finite-g n=23 Sidon target are proved as stated.

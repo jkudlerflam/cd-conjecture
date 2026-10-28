@@ -13,3 +13,13 @@
 [Proved strategy] This excludes algebraic identities without resolving tiny Fermi-root differences. Arithmetic lifts D -> D+65521 j and exponent lifts E,L -> E,L+65520 j retain the certificate and permit arbitrarily large express energy and arbitrarily small field/loop. They can therefore be combined with the inherited positive Gram limit. An explicit discriminant bound supplies a positive, very conservative momentum margin.
 
 [In progress] Independently audit sparse modular solves, the leading-coefficient extraction, and the symmetric-square polynomial. Write the real-parameter schedule, denominator and velocity bounds, and the conditional higher-order transfer.
+
+## Completed finite result
+
+[Proved, computer-assisted] Every n=1,...,23 passes the audited pair-product certificate. C33's six existing positive-hopping certificates were reused; its exact certifier filled the other 17 sizes. verify_bounds.py checks the uniform 10^(-250) normalized crossing bound by integer inequalities at all 23 sizes. All final modular solves include exact residual checks.
+
+[Proved] RESULT.md and PROOFS.md give the concrete same-alphabet parameter choice, denominator/discriminant margins, simple-root velocities, analytic perturbation tolerance and explicit g schedule. The exact finite-g second-order quadratic projection keeps all margins. The all-n extension is open, and the higher-order thermodynamic transfer remains conditional on the prior local-elimination/dressing input.
+
+[Numerical, audit outcome] A finite-g Richardson subtraction failed to improve the small onsite signal, with discrepancies up to 4.5e-5 of the hopping at n=3. It is retained, not used as a certificate. A replacement direct literal g^2 coefficient calculation agrees at n=1,2,3, with hopping error at most 1.4e-12 and onsite error at most 2.3e-10 in hopping units. The latter includes all 28224 excited-pair states at n=3.
+
+[Proved, handoff] Project STATE is outside the write scope. Local STATE.md records the outcome and file map. No network or subagents were used.

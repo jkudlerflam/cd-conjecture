@@ -15,6 +15,26 @@ factorial length tail in fixed-L sectors without any gap in the
 retained chain. The physical reference-marker quotient must be handled
 explicitly. No conformal conclusion is claimed.
 
+Substantive step 55. canonical_length_bounds.md now proves the canonical
+energy increment bound using equal-payload local raising/lowering maps.
+It handles the reference-marker quotient with a pinned-marker trial
+state, and proves a factorial length tail in physical fixed-(M,L)
+sectors at interior densities. A Sylvester equation extends the tail
+to arbitrary superpositions in a true low-energy window. Min-max then
+gives an explicit spectral error for a cell-length cutoff growing as
+log M/log log M, small enough to resolve 1/M energy splittings.
+
+canonical_length_checks.py passes 18 complex charge-conserving atomic
+sectors, two independent rooted/physical quotient comparisons, and four
+physical scalar-ring fixtures through dimension 7007, including lengths
+17 and 21. The largest eigensolver residual is below 1.1e-14. These are
+controls, not C8 CFT measurements. No new controller test was needed.
+
+Next: use a bounded chemical tilt plus the exact projected free-fluid
+pressure to prove that the dressed legal-sector ground marker density
+actually stays in this interior interval. The tail theorem alone does
+not choose the marker number or exclude illegal selector sectors.
+
 Only this folder is being modified. The task prohibits editing the
 project STATE.md, so this file carries the resumable memory.
 
