@@ -39,8 +39,21 @@ physics inference. The
 [source audit](contrib/counterexample_campaign/route_a/M2_REVIEW.md) and
 [independent source review](contrib/counterexample_campaign/infrared/SOURCE_REVIEW.md)
 state precisely what is proved and what remains conventional RG input.
-The separate collaborator C41 progress report agrees with the harmonic
-and finite-ring rules; its own final assessment is pending.
+The separate collaborator [C41 report](codex/work_C41/RESULT.md) agrees
+with the harmonic and finite-ring rules and gives conditional acceptance,
+retaining local matching and positive dressed defect costs as assumptions.
+
+[fresh independent audit; physics-standard verdict] A second
+[adversarial audit](contrib/counterexample_audit_20261028/README.md)
+reconstructs the literal small-cell effective Hamiltonian, regenerates the
+full n=23 certificate, checks the finite-ring quotient and all dangerous
+quartic/marker branches, and strengthens quantum-interface and unequal-speed
+Gaussian control. Its verdict verifies the controlled physics argument,
+without supplying an all-order microscopic per-defect theorem or a
+certified numerical interval for the final lambda and J. Noncommuting
+quantum-impurity checks support the dressing mechanism; they are not a
+measurement of the 24-state chain. The synthesis now includes the finite-ring
+root quotient and the refined correlation bounds exposed by this audit.
 
 ## Summary
 

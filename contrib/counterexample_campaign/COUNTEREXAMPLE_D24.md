@@ -100,6 +100,16 @@ global qualification is the cyclic identification, retained as a boundary
 twist. The infinite auxiliary gap alphabet is a change of coordinates;
 it does not change the physical local dimension 24.
 
+More precisely, the full finite ring also retains a root position x in
+Z_L and the equivalence
+(x;g_1,...;sigma_1,...) ~ (x+1+g_1;rotate(g);rotate(sigma)).
+There are N equivalent roots, giving dimension
+L binomial(L-1,N-1) 23^N/N = binomial(L,N) 23^N.
+At fixed physical momentum the root becomes seam phases and a cyclic
+consistency condition. Gap compositions alone are not the full physical
+Hilbert space. The [fresh vacancy audit](../counterexample_audit_20261028/vacancy/REPORT.md)
+derives this quotient and checks the direct physical matrix independently.
+
 The gap chain is the q=0 phase model. At physical occupancy rho=1/2 its
 hole density per occupied site is r=1. Exact thermodynamics gives
 
@@ -179,6 +189,11 @@ nested weak-coupling regime at fixed, nonzero microscopic coefficients,
 using conventional strong-coupling matching and Gaussian RG. The stable
 neighborhood is within the exact number-conserving symmetry family;
 stability under arbitrary symmetry-breaking changes is not required.
+This is a controlled existence regime, not a certified numerical interval
+for the final lambda and J. Pure charge stiffness can receive O(J)
+corrections, small relative to t; the O(J^2/t) estimate above concerns
+induced internal terms. Raw mixed current coefficients can be O(J),
+with normalized stiffness vanishing as sqrt(J/t).
 
 Defect energies require a local comparison. The leading static gap-density
 susceptibility is local, with a separately retained canonical zero-mode
@@ -189,6 +204,17 @@ bare costs are O(J). The independent tagged-gap test reaches L=20 and
 checks single, paired and finite-density defects. It supports this
 matching argument; it does not replace it. See
 [defect transfer](route_a/DEFECT_TRANSFER.md).
+
+The [fresh infrared audit](../counterexample_audit_20261028/infrared/README.md)
+checks quantum sources beyond static scalar defects. Connected local
+material operators with dimension Delta_min>1/2 give a charge-mediated
+kernel whose first spatial moment converges; the quantitative Gaussian
+bound supplies Delta_min>=sqrt(3/5). Ports contribute at most
+O(J|lambda|) per affected boundary. Arbitrarily long wrong cells are
+handled with a separate linear-in-length selector margin, without using
+their shrinking walker gaps as uniform denominators. These are controlled
+physics estimates; a full all-order microscopic per-defect inequality
+is not asserted.
 
 [proved local normal form; standard infrared inference] In the selected
 material sector, block each complete 24-site cell. Its finite-dimensional
@@ -265,6 +291,14 @@ error; see [the synthesis audit](doping_check/synthesis_audit.json) and
 [C41 progress report](../../codex/work_C41/PROGRESS.md) independently
 recovers the physical harmonic and number-rounding rules; that report
 was still in progress when this synthesis was completed.
+
+A subsequent [fresh adversarial audit](../counterexample_audit_20261028/README.md)
+independently rebuilds the microscopic certificate, performs new literal
+two-cell comparisons and complete low-order vertex scans, and tests
+noncommuting quantum-impurity dressing. Its final verdict verifies the
+construction at the stated physics standard, with the matching and
+parameter-interval limitations explicit. The finite-ring root quotient
+and the refined quantum-interface bound above incorporate its corrections.
 
 ## Provenance
 

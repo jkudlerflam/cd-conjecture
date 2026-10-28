@@ -68,7 +68,7 @@ These are spelled out in [CONTRIBUTING.md](CONTRIBUTING.md). In brief, tag every
 
 ## Where things stand
 
-A d=24 physics-level counterexample is now recorded with three independent AI reviews. The working standard is theoretical physics (standard RG, controlled perturbation theory, calibrated numerics), not mathematical rigor.
+A d=24 physics-level counterexample is now recorded with independent AI reviews and a [fresh adversarial audit](contrib/counterexample_audit_20261028/README.md). The working standard is theoretical physics (standard RG, controlled perturbation theory, calibrated numerics), not mathematical rigor.
 
 - **d=24, c=24: a one-vacancy construction.** Add one mobile vacancy to the explicit 23-state chain, with its original bond acting on occupied pairs. The local phase-model representation, certified 23-band reference, nonzero-coupling sector bounds and physical momentum rules give 23 payload bosons plus one charge boson at sufficiently small fixed couplings. Published local perturbation bounds control the original cell machinery. The conclusion uses conventional Gaussian phase stability; no microscopic c=24 measurement or rigorous CFT-limit theorem is claimed. Read [the construction and independent reviews](contrib/counterexample_campaign/COUNTEREXAMPLE_D24.md).
 

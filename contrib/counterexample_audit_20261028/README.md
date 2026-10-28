@@ -1,8 +1,10 @@
 # Fresh adversarial audit of the d=24 construction
 
-Status at this checkpoint: **microscopic ingredients verified; independent
-vacancy and infrared audits support the construction at the repository's
-theoretical-physics standard; coordinating final review in progress**.
+Final verdict: **verified as a controlled counterexample argument at the
+repository's stated theoretical-physics standard**. The microscopic
+ingredients, vertex classification, and scale hierarchy pass independent
+audits. No refutation of the model was found. The finite-J conclusion uses
+the explicitly stated conventional local matching and Gaussian RG input.
 No rigorous lattice-to-CFT theorem or microscopic c=24 measurement is
 claimed. Prior AI endorsements were not used as evidence.
 
@@ -41,6 +43,43 @@ AI-assisted (OpenAI Codex GPT-6 family); no human referee is claimed.
   retain finite charge dressing. The pair test resolves an additional
   J^3 correction caused by induced quantum pair flips. This supports the
   mechanism but is not a simulation of the complete 24-state chain.
+* [Loop-scale check](microscopic/LOOP_SCALE.md): the tiny loop's visible
+  momentum shifts are consistent with the exceptionally small slopes at
+  every Fermi crossing. The onsite expectation divided by the actual
+  slope reproduces the displacement, and the certified centers remain
+  separated. The largest hopping entry is not the relevant denominator.
+
+## Meaning of the verdict
+
+The reviewed statement is an existence construction at fixed n=23:
+choose g sufficiently small, then nonzero lambda sufficiently small,
+then nonzero J/t sufficiently small, all independent of the eventual
+ring length. The resulting symmetry-preserving weak-coupling phase has
+24 right and 24 left compact Gaussian modes, hence c_L=c_R=24, conventionally
+reported as c=24. The repeated microscopic bond has d=24, so this exceeds
+d-1=23. It is not a claim about J=0 or about a size-dependent sequence
+of Hamiltonians.
+
+The certificate fixes the internal geometry and proves a finite-g
+reference. It does not provide a certified numerical interval for the
+final lambda and J. The saved moderate-scale bond fixture is a structural
+check, not a numerically demonstrated violating parameter point. The
+weak-coupling existence inference is the same type of bosonization/RG
+reasoning permitted by this repository's declared standard.
+
+This audit verifies more than a count of free modes. The argument keeps
+the gapless charge field, checks the whole low-dimension local vertex
+lattice, compares corrections with the slowest retained velocity, and
+addresses defect/interface energies separately from extensive bulk errors.
+The charged and internal U(1) symmetries remain exact. The stable region
+is asserted inside that symmetry family.
+
+The stronger statement still absent is a uniform microscopic all-order
+linked-sector inequality and a rigorous lattice-to-CFT limit for the full
+24-state Hamiltonian. Neither a finite-band certificate nor our finite
+numerics is that theorem. The verdict must retain this limitation; it
+does not constitute an unconditional mathematical disproof or a direct
+microscopic measurement of c=24.
 
 ## Clarifications uncovered
 

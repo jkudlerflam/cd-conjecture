@@ -889,3 +889,42 @@ controlled theoretical-physics inference with explicit continuum inputs,
 not a rigorous lattice-to-CFT theorem or a measured microscopic c=24.
 - **Margins audit, n = 1 to 23** (`contrib/margins_audit/`, Claude agent, high-precision numerics at 115 to 313 digits, not a certificate). At one explicit schedule inside the 23 letters, every n has exactly 2n simple Fermi points, distinct centres, and every quartic resonance (umklapp included) missed by a stated margin: δ₂ ≥ 0.014, umklapp ≥ 3.8 × 10⁻³, δ₄ and pair transfer ≥ 4.2 × 10⁻⁸ (the worst cases, n = 21 and 15, rise above 3.6 × 10⁻⁷ when the field power moves by one). The minimum velocity falls by about 8.7 decades per flavour, to about 10⁻²⁰⁶ at n = 23. It reproduces C33's n = 23 point to every printed digit, and finds C37's certificate consistent but its literal parameter point practically degenerate (margins of order 10⁻¹⁹⁰⁰ for pair transfer).
 - **Independent referee of the d = 24 vacancy counterexample** (`contrib/referee_d24/`, Claude agent). No fatal error. The 576 × 576 bond rebuilt from the prose matches the collaborator's fixture entry for entry and conserves its charges; C33's n = 23 computation reproduces. The vacancy step removes the frozen-cell objection in the letter of the conjecture: the 24 crystal offsets become charge-flux sectors split by O(1/L), marker order decays as a power law, and every long ring can choose an occupied number divisible by 24 (unstated consequence: the charge sector is a charge-24 liquid, and defect-free ground states are guaranteed only on very long rings); uniqueness on every ring is not proved (a toy gives a ±P doublet, which does not change c). The infrared operator bookkeeping is correct (K_gap = 4, charge umklapp dimension 4h², other non-Gaussian vertices at least 3, consistent order of limits), but the two decisive inputs are assumed rather than derived: c = 23 for the frozen chain at finite coupling, and the matching of the gapless charge fluid. The hierarchy needs λ ≲ 10⁻³¹ and J/t ≲ 10⁻⁵¹⁰, beyond any numerical test. The couplings t, J, μ and λ are not fixed numerically, so the claim defines a family. Suggested decisive test: a calibrated c = n + 1 for the vacancy lift of this bond family at n = 1 or 2 (in progress in `contrib/vacancy_mobile_numerics/`).
+
+
+### 9.23 Fresh adversarial audit of the d=24 argument (2026-10-28)
+
+[proved finite ingredients; checked calculations; controlled physics verdict]
+The [new audit](contrib/counterexample_audit_20261028/README.md) used a
+coordinator and three fresh parallel workers, followed by cross-review.
+It verifies the construction at the repository's physics standard. No
+refutation was found. The verdict retains conventional local matching
+and Gaussian RG, and does not claim an all-order microscopic per-defect
+inequality, a certified final lambda/J interval, or a measured c=24.
+
+New checks include a literal full-Fock two-cell calculation of the g-squared
+coefficient at n=1,2 (hopping agreement within 5.2e-16 relative error), exact
+regeneration of the full 512-bit n=23 certificate, and an independent scan
+of 1,167,480 ordered nonforward quartics and 56,039,040 dangerous marker
+branches. Independent phase-model number/flux curvatures recover K=4.
+An operator-geometric-mean proof extends the stiffness bound to arbitrary
+current mixing and unequal chiral velocities. A direct loop-scale check
+explains why a tiny onsite loop term moves the very slow Fermi crossings
+by the certified amount.
+
+The audit sharpened several statements: finite rings need the full rooted
+coordinate quotient; the bounded smooth response is Euclidean and does
+not bound the full contact operator; interacting bilinears need only have
+dimension above one half for the connected interface estimate; charge
+stiffness may shift at order J while induced internal energies shift at
+order J-squared/t. Long wrong cells have a separate volume selector bound,
+avoiding use of a nonexistent uniform walker gap. These clarifications
+are incorporated in the linked synthesis and reports.
+
+A new exact diagnostic couples the vacancy fluid to noncommuting quantum
+impurities whose gaps shrink as J. At 92,378 bath states, the single-impurity
+energy shift at J=.01 agrees with its retained-gap second-order resolvent
+to 1.42e-6 relative error. Adjacent impurities resolve the additional
+J-cubed correction from induced pair flips. This supports the matching
+mechanism and is explicitly not a simulation of the entire counterexample.
+All reports, scripts and data are saved; the reviews are AI-assisted,
+not human referee reports.
