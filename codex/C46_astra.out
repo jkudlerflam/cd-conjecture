@@ -1,0 +1,9 @@
+[proved, completed] Wrote [RESULT.md](<./RESULT.md>) and [PROOF.md](<./PROOF.md>), with updated progress and local state.
+
+[proved] New results include uniform thermal suppression of defects in the block-diagonal reference, explicit second-order time bounds, and the Gaussian reference’s thermal coefficient with physical gluing. A counterexample shows why a cell gap alone cannot justify the raw summed Grassmann expansion.
+
+[assumed, unresolved] The full chain’s c=n+1 remains conjectural. The shortest path is resummed massive-sector matching, constructive RG for that action, and control of the thermal vacuum terms to o(T²).
+
+[numerical] All small independent checks pass. No microscopic central charge was measured. All writes stayed inside this folder.
+
+[gpt_solve: backend=codex model=gpt-6-astra effort=high transcript=20261028T120313-66253]
