@@ -1,0 +1,17 @@
+c28:0.2:full:nu=0.45 obc --L 64 --chis 48 96 128 --sweeps 4
+c28:0.5:full:nu=0.45 obc --L 64 --chis 48 96 128 --sweeps 4
+c28:1.0:full:nu=0.45 obc --L 64 --chis 48 96 128 --sweeps 4
+c29:0.2:full obc --L 64 --chis 48 96 128 --sweeps 4
+c29:0.5:full obc --L 64 --chis 48 96 128 --sweeps 4
+c29:0.5:full:nu=1.2 obc --L 64 --chis 48 96 128 --sweeps 4
+c29:1.0:full:nu=1.2 obc --L 64 --chis 48 96 128 --sweeps 4
+spatial:0.05:full obc --L 64 --chis 48 96 128 --sweeps 4
+spatial:0.1:full obc --L 64 --chis 48 96 128 --sweeps 4
+spatial:0.2:full obc --L 64 --chis 48 96 128 --sweeps 4
+compile:0.003:full obc --L 64 --chis 48 96 128 --sweeps 4
+compile:0.01:full obc --L 64 --chis 48 96 128 --sweeps 4
+compile:0.01:full:nu=0.9 obc --L 64 --chis 48 96 128 --sweeps 4
+c28:0:lead obc --L 64 --chis 48 96 128 --sweeps 4
+c29:0.2:lead obc --L 64 --chis 48 96 128 --sweeps 4
+spatial:0.05:free obc --L 64 --chis 48 96 128 --sweeps 4
+compile:0.003:free obc --L 64 --chis 48 96 128 --sweeps 4

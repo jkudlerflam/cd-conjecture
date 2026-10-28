@@ -1,0 +1,13 @@
+c28:0.2:hf:nu=0.45 fes --chis 16 24 32 48 64 96 128 160
+c28:0.5:hf:nu=0.45 fes --chis 16 24 32 48 64 96 128 160
+c28:1.0:hf:nu=0.45 fes --chis 16 24 32 48 64 96 128 160
+c29:0.2:hf fes --chis 16 24 32 48 64 96 128 160
+c29:0.5:hf fes --chis 16 24 32 48 64 96 128 160
+c29:0.5:hf:nu=1.2 fes --chis 16 24 32 48 64 96 128 160
+c29:1.0:hf:nu=1.2 fes --chis 16 24 32 48 64 96 128 160
+spatial:0.05:hf fes --chis 16 24 32 48 64 96 128 160
+spatial:0.1:hf fes --chis 16 24 32 48 64 96 128 160
+spatial:0.2:hf fes --chis 16 24 32 48 64 96 128 160
+compile:0.003:hf fes --chis 16 24 32 48 64 96 128 160
+compile:0.01:hf fes --chis 16 24 32 48 64 96 128 160
+compile:0.01:hf:nu=0.9 fes --chis 16 24 32 48 64 96 128 160

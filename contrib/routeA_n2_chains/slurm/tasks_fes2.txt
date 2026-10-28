@@ -1,0 +1,13 @@
+c28:0.2:full:nu=0.45 fes2 --chis 16 32 64
+c28:0.5:full:nu=0.45 fes2 --chis 16 32 64
+c28:1.0:full:nu=0.45 fes2 --chis 16 32 64
+c29:0.2:full fes2 --chis 16 32 64
+c29:0.5:full fes2 --chis 16 32 64
+c29:0.5:full:nu=1.2 fes2 --chis 16 32 64
+c29:1.0:full:nu=1.2 fes2 --chis 16 32 64
+spatial:0.05:full fes2 --chis 16 32 64
+spatial:0.1:full fes2 --chis 16 32 64
+spatial:0.2:full fes2 --chis 16 32 64
+compile:0.003:full fes2 --chis 16 32 64
+compile:0.01:full fes2 --chis 16 32 64
+compile:0.01:full:nu=0.9 fes2 --chis 16 32 64

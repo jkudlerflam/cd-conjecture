@@ -1,0 +1,13 @@
+c28:0.2:full:nu=0.45 fes --chis 16 24 32 48 64 96 128 160 192
+c28:0.5:full:nu=0.45 fes --chis 16 24 32 48 64 96 128 160 192
+c28:1.0:full:nu=0.45 fes --chis 16 24 32 48 64 96 128 160 192
+c29:0.2:full fes --chis 16 24 32 48 64 96 128 160 192
+c29:0.5:full fes --chis 16 24 32 48 64 96 128 160 192
+c29:0.5:full:nu=1.2 fes --chis 16 24 32 48 64 96 128 160 192
+c29:1.0:full:nu=1.2 fes --chis 16 24 32 48 64 96 128 160 192
+spatial:0.05:full fes --chis 16 24 32 48 64 96 128 160 192
+spatial:0.1:full fes --chis 16 24 32 48 64 96 128 160 192
+spatial:0.2:full fes --chis 16 24 32 48 64 96 128 160 192
+compile:0.003:full fes --chis 16 24 32 48 64 96 128 160 192
+compile:0.01:full fes --chis 16 24 32 48 64 96 128 160 192
+compile:0.01:full:nu=0.9 fes --chis 16 24 32 48 64 96 128 160 192
