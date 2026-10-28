@@ -1,0 +1,4 @@
+python3 -u run.py --model SU4 --L 16 --ks near --noent --out data/big_calib.jsonl
+python3 -u run.py --model SU3 --L 18 --ks near --out data/big_calib.jsonl
+python3 -u run.py --model TB --par 1 --L 18 --ks near --out data/big_calib.jsonl
+python3 -u run.py --model sp4 --par 3.141592653589793 --L 16 --ks near --out data/big_sp4.jsonl
