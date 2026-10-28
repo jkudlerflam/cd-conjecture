@@ -1,0 +1,51 @@
+{
+ "eta": "1/16",
+ "kappa": [
+  "1.661022e+0",
+  "5.934598e-1"
+ ],
+ "u": "1/16",
+ "v": "1/4",
+ "theta": [
+  "-9.859229e-2",
+  "-1.522027e-4"
+ ],
+ "slopes": [
+  "2.118789e+2",
+  "1.022680e+0"
+ ],
+ "center_ratio": [
+  "1.543758e-3"
+ ],
+ "slope_ratio": [
+  "4.826719e-3"
+ ],
+ "mu_trials": [
+  {
+   "mu_exp2": 4,
+   "passed": false,
+   "delta4": null,
+   "bound17": "3.805067e-5",
+   "ge17": null
+  },
+  {
+   "mu_exp2": 8,
+   "passed": false,
+   "delta4": null,
+   "bound17": "3.805067e-5",
+   "ge17": null
+  },
+  {
+   "mu_exp2": 12,
+   "passed": true,
+   "delta4": "1.084821e-3",
+   "bound17": "3.805067e-5",
+   "ge17": true
+  }
+ ],
+ "mu": "2^-12",
+ "delta2": "4.706368e-2",
+ "delta4": "1.084821e-3",
+ "seconds": 0.5,
+ "n": 2
+}
