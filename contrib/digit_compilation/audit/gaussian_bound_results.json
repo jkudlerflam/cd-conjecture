@@ -1,0 +1,804 @@
+{
+  "status": "independent finite checks; analytic proof is separate",
+  "generic_matrices": [
+    {
+      "modes": 1,
+      "velocity_ratio": 1.0,
+      "delta": 0.05,
+      "certified_lower": 0.9511897312113418,
+      "observed_lower": 0.9905028989423952,
+      "observed_upper": 1.0095881607895787,
+      "riccati_relative_residual": 1.603158226539221e-15
+    },
+    {
+      "modes": 1,
+      "velocity_ratio": 1.0,
+      "delta": 0.25,
+      "certified_lower": 0.7745966692414834,
+      "observed_lower": 0.9025676654753034,
+      "observed_upper": 1.10795017177287,
+      "riccati_relative_residual": 1.008099327679272e-15
+    },
+    {
+      "modes": 1,
+      "velocity_ratio": 1.0,
+      "delta": 0.3846053846153846,
+      "certified_lower": 0.6666744907513361,
+      "observed_lower": 0.9111587005117334,
+      "observed_upper": 1.0975036505038807,
+      "riccati_relative_residual": 4.571703686020196e-16
+    },
+    {
+      "modes": 1,
+      "velocity_ratio": 1.0,
+      "delta": 0.6,
+      "certified_lower": 0.5,
+      "observed_lower": 0.9895525152879008,
+      "observed_upper": 1.0105577870306965,
+      "riccati_relative_residual": 1.3096666144281455e-15
+    },
+    {
+      "modes": 1,
+      "velocity_ratio": 100.0,
+      "delta": 0.05,
+      "certified_lower": 0.9511897312113418,
+      "observed_lower": 0.9573813889859979,
+      "observed_upper": 1.0445158131381087,
+      "riccati_relative_residual": 1.9942686397109963e-15
+    },
+    {
+      "modes": 1,
+      "velocity_ratio": 100.0,
+      "delta": 0.25,
+      "certified_lower": 0.7745966692414834,
+      "observed_lower": 0.7837303130678949,
+      "observed_upper": 1.2759491158196024,
+      "riccati_relative_residual": 6.421863701418634e-16
+    },
+    {
+      "modes": 1,
+      "velocity_ratio": 100.0,
+      "delta": 0.3846053846153846,
+      "certified_lower": 0.6666744907513361,
+      "observed_lower": 0.7959892322792135,
+      "observed_upper": 1.2562984013447396,
+      "riccati_relative_residual": 2.5071273074014313e-15
+    },
+    {
+      "modes": 1,
+      "velocity_ratio": 100.0,
+      "delta": 0.6,
+      "certified_lower": 0.5,
+      "observed_lower": 0.6711682410786077,
+      "observed_upper": 1.4899393904469331,
+      "riccati_relative_residual": 8.049435030579084e-16
+    },
+    {
+      "modes": 1,
+      "velocity_ratio": 10000.0,
+      "delta": 0.05,
+      "certified_lower": 0.9511897312113418,
+      "observed_lower": 0.9517489666560064,
+      "observed_upper": 1.050697226931095,
+      "riccati_relative_residual": 1.7240219927932565e-15
+    },
+    {
+      "modes": 1,
+      "velocity_ratio": 10000.0,
+      "delta": 0.25,
+      "certified_lower": 0.7745966692414834,
+      "observed_lower": 0.8867640126582549,
+      "observed_upper": 1.1276957406089325,
+      "riccati_relative_residual": 6.427084923263639e-16
+    },
+    {
+      "modes": 1,
+      "velocity_ratio": 10000.0,
+      "delta": 0.3846053846153846,
+      "certified_lower": 0.6666744907513361,
+      "observed_lower": 0.7101026590956654,
+      "observed_upper": 1.4082470853911824,
+      "riccati_relative_residual": 6.423107265917178e-16
+    },
+    {
+      "modes": 1,
+      "velocity_ratio": 10000.0,
+      "delta": 0.6,
+      "certified_lower": 0.5,
+      "observed_lower": 0.5234654719505512,
+      "observed_upper": 1.9103456743264704,
+      "riccati_relative_residual": 6.692429059786002e-16
+    },
+    {
+      "modes": 2,
+      "velocity_ratio": 1.0,
+      "delta": 0.05,
+      "certified_lower": 0.9511897312113418,
+      "observed_lower": 0.9670338888844893,
+      "observed_upper": 1.0340899233154515,
+      "riccati_relative_residual": 5.115215534637803e-15
+    },
+    {
+      "modes": 2,
+      "velocity_ratio": 1.0,
+      "delta": 0.25,
+      "certified_lower": 0.7745966692414834,
+      "observed_lower": 0.8924782302299625,
+      "observed_upper": 1.1204755097974002,
+      "riccati_relative_residual": 4.095799268370793e-15
+    },
+    {
+      "modes": 2,
+      "velocity_ratio": 1.0,
+      "delta": 0.3846053846153846,
+      "certified_lower": 0.6666744907513361,
+      "observed_lower": 0.8445028707318092,
+      "observed_upper": 1.1841285976132259,
+      "riccati_relative_residual": 2.3478580652513025e-15
+    },
+    {
+      "modes": 2,
+      "velocity_ratio": 1.0,
+      "delta": 0.6,
+      "certified_lower": 0.5,
+      "observed_lower": 0.5714067978120111,
+      "observed_upper": 1.7500666842416324,
+      "riccati_relative_residual": 5.264937845552824e-15
+    },
+    {
+      "modes": 2,
+      "velocity_ratio": 100.0,
+      "delta": 0.05,
+      "certified_lower": 0.9511897312113418,
+      "observed_lower": 0.9806447035285346,
+      "observed_upper": 1.0197373181151337,
+      "riccati_relative_residual": 3.916976415113629e-15
+    },
+    {
+      "modes": 2,
+      "velocity_ratio": 100.0,
+      "delta": 0.25,
+      "certified_lower": 0.7745966692414834,
+      "observed_lower": 0.8712655919898119,
+      "observed_upper": 1.1477556432777098,
+      "riccati_relative_residual": 5.6912519776218155e-15
+    },
+    {
+      "modes": 2,
+      "velocity_ratio": 100.0,
+      "delta": 0.3846053846153846,
+      "certified_lower": 0.6666744907513361,
+      "observed_lower": 0.8715899916972191,
+      "observed_upper": 1.1473284566436204,
+      "riccati_relative_residual": 4.7507171621471245e-15
+    },
+    {
+      "modes": 2,
+      "velocity_ratio": 100.0,
+      "delta": 0.6,
+      "certified_lower": 0.5,
+      "observed_lower": 0.8272689007976894,
+      "observed_upper": 1.208796799971271,
+      "riccati_relative_residual": 5.600304300685025e-15
+    },
+    {
+      "modes": 2,
+      "velocity_ratio": 10000.0,
+      "delta": 0.05,
+      "certified_lower": 0.9511897312113418,
+      "observed_lower": 0.9667006034055572,
+      "observed_upper": 1.034446442339164,
+      "riccati_relative_residual": 2.9656599221089436e-14
+    },
+    {
+      "modes": 2,
+      "velocity_ratio": 10000.0,
+      "delta": 0.25,
+      "certified_lower": 0.7745966692414834,
+      "observed_lower": 0.8801429840775348,
+      "observed_upper": 1.1361790278292276,
+      "riccati_relative_residual": 1.645514278575205e-14
+    },
+    {
+      "modes": 2,
+      "velocity_ratio": 10000.0,
+      "delta": 0.3846053846153846,
+      "certified_lower": 0.6666744907513361,
+      "observed_lower": 0.7135695478257235,
+      "observed_upper": 1.401405095056381,
+      "riccati_relative_residual": 9.509315828092295e-15
+    },
+    {
+      "modes": 2,
+      "velocity_ratio": 10000.0,
+      "delta": 0.6,
+      "certified_lower": 0.5,
+      "observed_lower": 0.7625859856619164,
+      "observed_upper": 1.311327533945896,
+      "riccati_relative_residual": 6.11540553830211e-14
+    },
+    {
+      "modes": 7,
+      "velocity_ratio": 1.0,
+      "delta": 0.05,
+      "certified_lower": 0.9511897312113418,
+      "observed_lower": 0.9618848583220694,
+      "observed_upper": 1.0396254721635008,
+      "riccati_relative_residual": 1.1242202809171637e-14
+    },
+    {
+      "modes": 7,
+      "velocity_ratio": 1.0,
+      "delta": 0.25,
+      "certified_lower": 0.7745966692414834,
+      "observed_lower": 0.8412902618464437,
+      "observed_upper": 1.1886503925591954,
+      "riccati_relative_residual": 1.0685988609915063e-14
+    },
+    {
+      "modes": 7,
+      "velocity_ratio": 1.0,
+      "delta": 0.3846053846153846,
+      "certified_lower": 0.6666744907513361,
+      "observed_lower": 0.7453644884052281,
+      "observed_upper": 1.3416254940446393,
+      "riccati_relative_residual": 1.201943074435196e-14
+    },
+    {
+      "modes": 7,
+      "velocity_ratio": 1.0,
+      "delta": 0.6,
+      "certified_lower": 0.5,
+      "observed_lower": 0.6008229564496811,
+      "observed_upper": 1.6643838076845392,
+      "riccati_relative_residual": 1.0203413587507811e-14
+    },
+    {
+      "modes": 7,
+      "velocity_ratio": 100.0,
+      "delta": 0.05,
+      "certified_lower": 0.9511897312113418,
+      "observed_lower": 0.9676820654789886,
+      "observed_upper": 1.0333972651492804,
+      "riccati_relative_residual": 1.556356946189969e-14
+    },
+    {
+      "modes": 7,
+      "velocity_ratio": 100.0,
+      "delta": 0.25,
+      "certified_lower": 0.7745966692414834,
+      "observed_lower": 0.8621255373084699,
+      "observed_upper": 1.15992388199283,
+      "riccati_relative_residual": 1.7340115668418342e-14
+    },
+    {
+      "modes": 7,
+      "velocity_ratio": 100.0,
+      "delta": 0.3846053846153846,
+      "certified_lower": 0.6666744907513361,
+      "observed_lower": 0.8329092143066641,
+      "observed_upper": 1.200611042384052,
+      "riccati_relative_residual": 5.0505355463476476e-15
+    },
+    {
+      "modes": 7,
+      "velocity_ratio": 100.0,
+      "delta": 0.6,
+      "certified_lower": 0.5,
+      "observed_lower": 0.6943153854238258,
+      "observed_upper": 1.440267666529638,
+      "riccati_relative_residual": 7.44560360943418e-15
+    },
+    {
+      "modes": 7,
+      "velocity_ratio": 10000.0,
+      "delta": 0.05,
+      "certified_lower": 0.9511897312113418,
+      "observed_lower": 0.9788904457154917,
+      "observed_upper": 1.0215647771177148,
+      "riccati_relative_residual": 3.176871009675786e-14
+    },
+    {
+      "modes": 7,
+      "velocity_ratio": 10000.0,
+      "delta": 0.25,
+      "certified_lower": 0.7745966692414834,
+      "observed_lower": 0.9014829976842308,
+      "observed_upper": 1.1092832616576283,
+      "riccati_relative_residual": 3.472802547273025e-14
+    },
+    {
+      "modes": 7,
+      "velocity_ratio": 10000.0,
+      "delta": 0.3846053846153846,
+      "certified_lower": 0.6666744907513361,
+      "observed_lower": 0.8359593446905076,
+      "observed_upper": 1.1962304223899964,
+      "riccati_relative_residual": 2.3708805778264277e-14
+    },
+    {
+      "modes": 7,
+      "velocity_ratio": 10000.0,
+      "delta": 0.6,
+      "certified_lower": 0.5,
+      "observed_lower": 0.7126625677175691,
+      "observed_upper": 1.4031886130945295,
+      "riccati_relative_residual": 2.7627395587340688e-14
+    },
+    {
+      "modes": 22,
+      "velocity_ratio": 1.0,
+      "delta": 0.05,
+      "certified_lower": 0.9511897312113418,
+      "observed_lower": 0.9646943617652093,
+      "observed_upper": 1.0365977449792378,
+      "riccati_relative_residual": 1.8940787850082923e-14
+    },
+    {
+      "modes": 22,
+      "velocity_ratio": 1.0,
+      "delta": 0.25,
+      "certified_lower": 0.7745966692414834,
+      "observed_lower": 0.8306161430865886,
+      "observed_upper": 1.2039255537268698,
+      "riccati_relative_residual": 1.9927593571641893e-14
+    },
+    {
+      "modes": 22,
+      "velocity_ratio": 1.0,
+      "delta": 0.3846053846153846,
+      "certified_lower": 0.6666744907513361,
+      "observed_lower": 0.7257703622545889,
+      "observed_upper": 1.3778462885884772,
+      "riccati_relative_residual": 1.5086638571663054e-14
+    },
+    {
+      "modes": 22,
+      "velocity_ratio": 1.0,
+      "delta": 0.6,
+      "certified_lower": 0.5,
+      "observed_lower": 0.5804119557220665,
+      "observed_upper": 1.7229141993740225,
+      "riccati_relative_residual": 1.598947141306098e-14
+    },
+    {
+      "modes": 22,
+      "velocity_ratio": 100.0,
+      "delta": 0.05,
+      "certified_lower": 0.9511897312113418,
+      "observed_lower": 0.9715330635405582,
+      "observed_upper": 1.0293010475173117,
+      "riccati_relative_residual": 2.1439128715419013e-14
+    },
+    {
+      "modes": 22,
+      "velocity_ratio": 100.0,
+      "delta": 0.25,
+      "certified_lower": 0.7745966692414834,
+      "observed_lower": 0.8550844364526793,
+      "observed_upper": 1.1694751504874799,
+      "riccati_relative_residual": 1.3474873766598327e-14
+    },
+    {
+      "modes": 22,
+      "velocity_ratio": 100.0,
+      "delta": 0.3846053846153846,
+      "certified_lower": 0.6666744907513361,
+      "observed_lower": 0.7825287240771038,
+      "observed_upper": 1.2779083619957516,
+      "riccati_relative_residual": 7.631393292795636e-15
+    },
+    {
+      "modes": 22,
+      "velocity_ratio": 100.0,
+      "delta": 0.6,
+      "certified_lower": 0.5,
+      "observed_lower": 0.6774583826897823,
+      "observed_upper": 1.476105434004078,
+      "riccati_relative_residual": 1.698738223144249e-14
+    },
+    {
+      "modes": 22,
+      "velocity_ratio": 10000.0,
+      "delta": 0.05,
+      "certified_lower": 0.9511897312113418,
+      "observed_lower": 0.9754551489116045,
+      "observed_upper": 1.025162459920202,
+      "riccati_relative_residual": 6.032884100438288e-14
+    },
+    {
+      "modes": 22,
+      "velocity_ratio": 10000.0,
+      "delta": 0.25,
+      "certified_lower": 0.7745966692414834,
+      "observed_lower": 0.8846181199035263,
+      "observed_upper": 1.1304312872418516,
+      "riccati_relative_residual": 4.827680698637955e-14
+    },
+    {
+      "modes": 22,
+      "velocity_ratio": 10000.0,
+      "delta": 0.3846053846153846,
+      "certified_lower": 0.6666744907513361,
+      "observed_lower": 0.8159315077423273,
+      "observed_upper": 1.2255930681816523,
+      "riccati_relative_residual": 2.8299704226428683e-14
+    },
+    {
+      "modes": 22,
+      "velocity_ratio": 10000.0,
+      "delta": 0.6,
+      "certified_lower": 0.5,
+      "observed_lower": 0.7379036606773388,
+      "observed_upper": 1.3551904581718561,
+      "riccati_relative_residual": 5.019413410196172e-14
+    },
+    {
+      "modes": 53,
+      "velocity_ratio": 1.0,
+      "delta": 0.05,
+      "certified_lower": 0.9511897312113418,
+      "observed_lower": 0.9624670735826728,
+      "observed_upper": 1.0389965822702045,
+      "riccati_relative_residual": 2.3869208416595605e-14
+    },
+    {
+      "modes": 53,
+      "velocity_ratio": 1.0,
+      "delta": 0.25,
+      "certified_lower": 0.7745966692414834,
+      "observed_lower": 0.8219108696073475,
+      "observed_upper": 1.2166769378262756,
+      "riccati_relative_residual": 2.1816940015812314e-14
+    },
+    {
+      "modes": 53,
+      "velocity_ratio": 1.0,
+      "delta": 0.3846053846153846,
+      "certified_lower": 0.6666744907513361,
+      "observed_lower": 0.7340325132326336,
+      "observed_upper": 1.3623374741209457,
+      "riccati_relative_residual": 1.9761283163654816e-14
+    },
+    {
+      "modes": 53,
+      "velocity_ratio": 1.0,
+      "delta": 0.6,
+      "certified_lower": 0.5,
+      "observed_lower": 0.5778285472036279,
+      "observed_upper": 1.7306171611621626,
+      "riccati_relative_residual": 1.87889711312331e-14
+    },
+    {
+      "modes": 53,
+      "velocity_ratio": 100.0,
+      "delta": 0.05,
+      "certified_lower": 0.9511897312113418,
+      "observed_lower": 0.9702544492093845,
+      "observed_upper": 1.0306574742479677,
+      "riccati_relative_residual": 1.546124555396209e-14
+    },
+    {
+      "modes": 53,
+      "velocity_ratio": 100.0,
+      "delta": 0.25,
+      "certified_lower": 0.7745966692414834,
+      "observed_lower": 0.8593140725959523,
+      "observed_upper": 1.1637188682119983,
+      "riccati_relative_residual": 1.575557284755715e-14
+    },
+    {
+      "modes": 53,
+      "velocity_ratio": 100.0,
+      "delta": 0.3846053846153846,
+      "certified_lower": 0.6666744907513361,
+      "observed_lower": 0.7850416834243046,
+      "observed_upper": 1.2738177107208621,
+      "riccati_relative_residual": 1.6692602400159878e-14
+    },
+    {
+      "modes": 53,
+      "velocity_ratio": 100.0,
+      "delta": 0.6,
+      "certified_lower": 0.5,
+      "observed_lower": 0.6671411903258129,
+      "observed_upper": 1.4989330811842496,
+      "riccati_relative_residual": 2.335731919465873e-14
+    },
+    {
+      "modes": 53,
+      "velocity_ratio": 10000.0,
+      "delta": 0.05,
+      "certified_lower": 0.9511897312113418,
+      "observed_lower": 0.9761414227918789,
+      "observed_upper": 1.0244417219176,
+      "riccati_relative_residual": 6.804526946467364e-14
+    },
+    {
+      "modes": 53,
+      "velocity_ratio": 10000.0,
+      "delta": 0.25,
+      "certified_lower": 0.7745966692414834,
+      "observed_lower": 0.8850569303231379,
+      "observed_upper": 1.1298708204396712,
+      "riccati_relative_residual": 7.003731611761425e-14
+    },
+    {
+      "modes": 53,
+      "velocity_ratio": 10000.0,
+      "delta": 0.3846053846153846,
+      "certified_lower": 0.6666744907513361,
+      "observed_lower": 0.817817032904909,
+      "observed_upper": 1.2227673914395831,
+      "riccati_relative_residual": 6.051038659685662e-14
+    },
+    {
+      "modes": 53,
+      "velocity_ratio": 10000.0,
+      "delta": 0.6,
+      "certified_lower": 0.5,
+      "observed_lower": 0.7093891506064762,
+      "observed_upper": 1.40966351000026,
+      "riccati_relative_residual": 4.4434779872181723e-14
+    }
+  ],
+  "sharpness": [
+    {
+      "delta": 0.05,
+      "kappa": 0.9511897312113418,
+      "six_field_lower_bound": 2.8535691936340255,
+      "error": 2.220446049250313e-16
+    },
+    {
+      "delta": 0.25,
+      "kappa": 0.7745966692414834,
+      "six_field_lower_bound": 2.32379000772445,
+      "error": 2.220446049250313e-16
+    },
+    {
+      "delta": 0.38461538461538464,
+      "kappa": 0.6666666666666667,
+      "six_field_lower_bound": 2.0,
+      "error": 1.1102230246251565e-16
+    },
+    {
+      "delta": 0.6,
+      "kappa": 0.5,
+      "six_field_lower_bound": 1.5,
+      "error": 4.440892098500626e-16
+    }
+  ],
+  "one_mode_drift": [
+    {
+      "A": 1.0,
+      "B": 1.0,
+      "C": -0.99,
+      "right_velocity": 0.010000000000000009,
+      "left_velocity": -1.99,
+      "covariance_drift_independence_error": 6.880034792760269e-15
+    },
+    {
+      "A": 1.0,
+      "B": 1.0,
+      "C": -0.4,
+      "right_velocity": 0.6,
+      "left_velocity": -1.4,
+      "covariance_drift_independence_error": 7.771561172376096e-16
+    },
+    {
+      "A": 1.0,
+      "B": 1.0,
+      "C": 0.0,
+      "right_velocity": 1.0,
+      "left_velocity": -1.0,
+      "covariance_drift_independence_error": 2.220446049250313e-16
+    },
+    {
+      "A": 1.0,
+      "B": 1.0,
+      "C": 0.7,
+      "right_velocity": 1.7,
+      "left_velocity": -0.30000000000000004,
+      "covariance_drift_independence_error": 8.881784197001252e-16
+    },
+    {
+      "A": 1.0,
+      "B": 1.0,
+      "C": 0.99,
+      "right_velocity": 1.99,
+      "left_velocity": -0.010000000000000009,
+      "covariance_drift_independence_error": 3.6637359812630166e-15
+    },
+    {
+      "A": 1.25,
+      "B": 0.75,
+      "C": -0.9585633781863357,
+      "right_velocity": 0.00968245836551851,
+      "left_velocity": -1.92680921473819,
+      "covariance_drift_independence_error": 4.6629367034256575e-15
+    },
+    {
+      "A": 1.25,
+      "B": 0.75,
+      "C": -0.3872983346207417,
+      "right_velocity": 0.5809475019311126,
+      "left_velocity": -1.355544171172596,
+      "covariance_drift_independence_error": 4.440892098500626e-16
+    },
+    {
+      "A": 1.25,
+      "B": 0.75,
+      "C": 0.0,
+      "right_velocity": 0.9682458365518543,
+      "left_velocity": -0.9682458365518543,
+      "covariance_drift_independence_error": 2.220446049250313e-16
+    },
+    {
+      "A": 1.25,
+      "B": 0.75,
+      "C": 0.677772085586298,
+      "right_velocity": 1.6460179221381521,
+      "left_velocity": -0.2904737509655563,
+      "covariance_drift_independence_error": 4.440892098500626e-16
+    },
+    {
+      "A": 1.25,
+      "B": 0.75,
+      "C": 0.9585633781863357,
+      "right_velocity": 1.92680921473819,
+      "left_velocity": -0.00968245836551851,
+      "covariance_drift_independence_error": 8.691001736021451e-16
+    },
+    {
+      "A": 0.2,
+      "B": 7.0,
+      "C": -1.171383797053724,
+      "right_velocity": 0.011832159566199207,
+      "left_velocity": -2.3545997536736474,
+      "covariance_drift_independence_error": 6.217248937900877e-15
+    },
+    {
+      "A": 0.2,
+      "B": 7.0,
+      "C": -0.4732863826479693,
+      "right_velocity": 0.7099295739719539,
+      "left_velocity": -1.6565023392678926,
+      "covariance_drift_independence_error": 8.881784197001252e-16
+    },
+    {
+      "A": 0.2,
+      "B": 7.0,
+      "C": 0.0,
+      "right_velocity": 1.1832159566199232,
+      "left_velocity": -1.1832159566199232,
+      "covariance_drift_independence_error": 8.881784197001252e-16
+    },
+    {
+      "A": 0.2,
+      "B": 7.0,
+      "C": 0.8282511696339462,
+      "right_velocity": 2.0114671262538693,
+      "left_velocity": -0.354964786985977,
+      "covariance_drift_independence_error": 2.6297452629902434e-16
+    },
+    {
+      "A": 0.2,
+      "B": 7.0,
+      "C": 1.171383797053724,
+      "right_velocity": 2.3545997536736474,
+      "left_velocity": -0.011832159566199207,
+      "covariance_drift_independence_error": 1.1546319456101628e-14
+    }
+  ],
+  "physical_coordinates": [
+    {
+      "payload_modes": 1,
+      "b": 4,
+      "marker_K": 0.04938271604938271,
+      "stiffness_min": 0.04921783492994863,
+      "certified_metric_lower": 0.7745966692414833,
+      "riccati_relative_residual": 2.791196017219718e-16
+    },
+    {
+      "payload_modes": 1,
+      "b": 100,
+      "marker_K": 9.900745031063588e-05,
+      "stiffness_min": 9.900681039899496e-05,
+      "certified_metric_lower": 0.7745966692414834,
+      "riccati_relative_residual": 2.8814644168703053e-16
+    },
+    {
+      "payload_modes": 1,
+      "b": 10000,
+      "marker_K": 9.999000074995e-09,
+      "stiffness_min": 9.999000068468696e-09,
+      "certified_metric_lower": 0.7745966692414834,
+      "riccati_relative_residual": 1.8308436284391833e-24
+    },
+    {
+      "payload_modes": 6,
+      "b": 4,
+      "marker_K": 0.04938271604938271,
+      "stiffness_min": 0.048416826881497364,
+      "certified_metric_lower": 0.7745966692414831,
+      "riccati_relative_residual": 9.826598754453294e-18
+    },
+    {
+      "payload_modes": 6,
+      "b": 100,
+      "marker_K": 9.900745031063588e-05,
+      "stiffness_min": 9.900363824058342e-05,
+      "certified_metric_lower": 0.7745966692414826,
+      "riccati_relative_residual": 1.440649831674433e-16
+    },
+    {
+      "payload_modes": 6,
+      "b": 10000,
+      "marker_K": 9.999000074995e-09,
+      "stiffness_min": 9.999000036115398e-09,
+      "certified_metric_lower": 0.7745966692414822,
+      "riccati_relative_residual": 3.575921060861822e-16
+    },
+    {
+      "payload_modes": 21,
+      "b": 4,
+      "marker_K": 0.04938271604938271,
+      "stiffness_min": 0.046170815387115476,
+      "certified_metric_lower": 0.7745966692414816,
+      "riccati_relative_residual": 3.7466584788946915e-16
+    },
+    {
+      "payload_modes": 21,
+      "b": 100,
+      "marker_K": 9.900745031063588e-05,
+      "stiffness_min": 9.899413542489217e-05,
+      "certified_metric_lower": 0.774596669241482,
+      "riccati_relative_residual": 5.0505282550003406e-20
+    },
+    {
+      "payload_modes": 21,
+      "b": 10000,
+      "marker_K": 9.999000074995e-09,
+      "stiffness_min": 9.998999939182415e-09,
+      "certified_metric_lower": 0.7745966692414816,
+      "riccati_relative_residual": 8.343815663208896e-16
+    }
+  ],
+  "resonances": [
+    {
+      "payload_modes": 1,
+      "low_payload_vertices": 2,
+      "min_payload_mismatch_over_2pi": "7/24",
+      "min_mixed_mismatch_over_2pi": "1/8",
+      "exact_large_b_harmonic_checks": 105
+    },
+    {
+      "payload_modes": 6,
+      "low_payload_vertices": 72,
+      "min_payload_mismatch_over_2pi": "1/84",
+      "min_mixed_mismatch_over_2pi": "2/21",
+      "exact_large_b_harmonic_checks": 105
+    },
+    {
+      "payload_modes": 21,
+      "low_payload_vertices": 882,
+      "min_payload_mismatch_over_2pi": "1/264",
+      "min_mixed_mismatch_over_2pi": "23/264",
+      "exact_large_b_harmonic_checks": 105
+    },
+    {
+      "payload_modes": 52,
+      "low_payload_vertices": 5408,
+      "min_payload_mismatch_over_2pi": "1/636",
+      "min_mixed_mismatch_over_2pi": "9/106",
+      "exact_large_b_harmonic_checks": 105
+    },
+    {
+      "payload_modes": 186,
+      "low_payload_vertices": 69192,
+      "min_payload_mismatch_over_2pi": "1/2244",
+      "min_mixed_mismatch_over_2pi": "47/561",
+      "exact_large_b_harmonic_checks": 105
+    }
+  ]
+}

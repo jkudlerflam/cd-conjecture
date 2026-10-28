@@ -1,0 +1,262 @@
+{
+  "schema": "cd-parameter-walk-v1",
+  "scope": "Pinned indexed helper to parameter bits at midpoint and exact cleanup; no generator/controller composition",
+  "initial_contract": "n>=m>=2; LEFT BULK^(n-2) RIGHT; H_(0,0) at RIGHT; neutral tracks zero; F:LAUNCH fresh head at RIGHT",
+  "neutral_alphabet_B": 12,
+  "direction_fixed_controls_K": 8,
+  "single_site_factor_times_Sigma": 204,
+  "prescribed_collision_entries": 52,
+  "midpoint_sweeps": "2m",
+  "full_cycle_sweeps": "4m",
+  "controls": [
+    {
+      "name": "F:LAUNCH",
+      "direction": -1,
+      "oracle": "I"
+    },
+    {
+      "name": "F:START",
+      "direction": 1,
+      "oracle": "I"
+    },
+    {
+      "name": "F:OUT",
+      "direction": -1,
+      "oracle": "PUSH"
+    },
+    {
+      "name": "F:BACK",
+      "direction": 1,
+      "oracle": "POP"
+    },
+    {
+      "name": "R:LAUNCH",
+      "direction": 1,
+      "oracle": "I"
+    },
+    {
+      "name": "R:START",
+      "direction": -1,
+      "oracle": "I"
+    },
+    {
+      "name": "R:OUT",
+      "direction": 1,
+      "oracle": "POP"
+    },
+    {
+      "name": "R:BACK",
+      "direction": -1,
+      "oracle": "PUSH"
+    }
+  ],
+  "neutral_symbols": [
+    [
+      "LEFT",
+      0,
+      0
+    ],
+    [
+      "LEFT",
+      0,
+      1
+    ],
+    [
+      "LEFT",
+      1,
+      0
+    ],
+    [
+      "LEFT",
+      1,
+      1
+    ],
+    [
+      "BULK",
+      0,
+      0
+    ],
+    [
+      "BULK",
+      0,
+      1
+    ],
+    [
+      "BULK",
+      1,
+      0
+    ],
+    [
+      "BULK",
+      1,
+      1
+    ],
+    [
+      "RIGHT",
+      0,
+      0
+    ],
+    [
+      "RIGHT",
+      0,
+      1
+    ],
+    [
+      "RIGHT",
+      1,
+      0
+    ],
+    [
+      "RIGHT",
+      1,
+      1
+    ]
+  ],
+  "collision_permutation_C": [
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    9,
+    22,
+    11,
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    32,
+    45,
+    34,
+    47,
+    24,
+    37,
+    26,
+    39,
+    28,
+    41,
+    30,
+    43,
+    44,
+    33,
+    46,
+    35,
+    36,
+    25,
+    38,
+    27,
+    40,
+    29,
+    42,
+    31,
+    92,
+    21,
+    94,
+    23,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    8,
+    57,
+    10,
+    59,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    93,
+    58,
+    95,
+    72,
+    85,
+    74,
+    87,
+    76,
+    89,
+    78,
+    91,
+    68,
+    81,
+    70,
+    83,
+    84,
+    73,
+    86,
+    75,
+    88,
+    77,
+    90,
+    79,
+    80,
+    69,
+    82,
+    71
+  ],
+  "full_collision_P": "controlled WRITE^-1 on reverse output control, after C, after controlled WRITE on forward input control",
+  "WRITE": [
+    "PARAM",
+    "COPY_DIGIT",
+    "PARAM",
+    "END",
+    "COPY_END",
+    "END"
+  ],
+  "WRITE_input_controls": [
+    [
+      "F:START",
+      "RIGHT"
+    ],
+    [
+      "F:OUT",
+      "LEFT"
+    ],
+    [
+      "F:OUT",
+      "BULK"
+    ]
+  ],
+  "WRITE_inverse_output_controls": [
+    [
+      "R:START",
+      "RIGHT"
+    ],
+    [
+      "R:OUT",
+      "LEFT"
+    ],
+    [
+      "R:OUT",
+      "BULK"
+    ]
+  ],
+  "movement_oracles": {
+    "I": [],
+    "PUSH": [
+      "SHIFT departure",
+      "Sigma SWAP"
+    ],
+    "POP": [
+      "Sigma SWAP",
+      "SHIFT_DAG arrival"
+    ]
+  },
+  "completion": "Within each (mark,digit,end), fix unused common domain/range; match remaining sorted indices"
+}

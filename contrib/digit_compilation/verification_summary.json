@@ -1,0 +1,27 @@
+{
+  "scope": "Local digit components and Gaussian bound; no complete core or counterexample",
+  "all_passed": true,
+  "tests": [
+    {
+      "script": "parameter/checks.py",
+      "passed": true,
+      "runtime_seconds": 1.982
+    },
+    {
+      "script": "arithmetic/checks.py",
+      "passed": true,
+      "runtime_seconds": 2.079
+    },
+    {
+      "script": "integration/checks.py",
+      "passed": true,
+      "runtime_seconds": 0.305
+    },
+    {
+      "script": "audit/gaussian_bound_checks.py",
+      "passed": true,
+      "runtime_seconds": 0.308
+    }
+  ],
+  "runtime_seconds": 2.08
+}

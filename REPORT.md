@@ -620,3 +620,56 @@ charge-basis commutator residual is below 1.2×10⁻¹³. Critical Ising matrice
 also match their exact finite-size energies. Two workers independently
 derived and cross-reviewed the charge classification; the coordinator
 reran the saved checks. No human review is claimed.
+
+### 9.18 Local digit components and a quantitative Gaussian certificate, 2026-10-28
+
+At the user's request to advance the strongest counterexample route,
+Codex and three workers added
+[digit_compilation](contrib/digit_compilation/README.md). The sparse
+species-graph first-order route remains the focus; no new counterexample,
+final violating dimension, or microscopic central-charge measurement is
+claimed.
+
+- **Parameter reader [explicit finite construction; checked].** A literal
+  96-entry collision permutation, eight controls and twelve neutral symbols
+  implement the parameter-oracle walk. Its standalone head/record dimension
+  is 204 D(q). It returns the parameter bits and restores all quantum
+  records after 2m sweeps, then autonomously resets in another 2m. Full-space
+  involution/charge checks include malformed H/T records, 289 exhaustive
+  short payloads and 222 larger cycles. Actual primitive events equal the
+  previous 10m-4 extraction word and its inverse. An independent worker
+  checked another 504 cases against a separately derived schedule.
+- **Arithmetic [explicit finite local rules; checked].** A frozen 4,428-rule
+  relation implements eleven aligned binary operations, with inputs and
+  scratch restored after 2b+3 transitions at width b. It uses 900 cell
+  symbols, independent of b; that is not a completed sweeping-controller
+  unitary dimension. Tests exhaust 60,060 signed cases, add 1,056 cases
+  through 4,096 bits, and check inverse intermediate states. Memory,
+  operand placement and the unitary sweep lift remain separate tasks.
+- **Real generator integration [checked finite execution].** Eight opcodes
+  execute through the local rules inside the frozen generator. Short
+  workloads reproduce p=2,3 incidence graphs and the complete one-edge
+  circuit. The full p=2 run executes 1,175,426 local arithmetic calls at
+  128 bits (304,435,334 local transitions), matches every word-machine
+  stack/instruction state and all 287,798 abstract circuit gates, and checks
+  the final complete state. The larger run retains no whole-VM inverse
+  journal; the short cases check exact journal reversal. This is hybrid
+  execution, not a fully local compiled generator.
+- **Gaussian certificate [proved matrix inequality; conditional infrared
+  application].** For delta=||G_ref^(-1/2)(G-G_ref)G_ref^(-1/2)||,
+  the complete vertex dimension form is bounded below by
+  sqrt((1-delta)/(1+delta)) times its reference form. Hence delta<5/13
+  keeps every reference-dimension-three-or-higher vertex irrelevant.
+  The proof includes arbitrary density-current blocks and noncommuting
+  velocities, and is sharp already for one mode. Independent numerical
+  tests cover 53 modes, velocity ratios through 10,000 and large-cell
+  coordinates; exact resonance checks extend through N=186. Actual
+  dressed fillings and nonresonance margins must also be controlled.
+
+The Gaussian bound is now linked from the candidate's infrared audit.
+The all-order local connected-excursion estimate with mobile cell
+projectors remains a stated physics input; this continuation does not
+upgrade it to a theorem. All four new check suites and the larger circuit
+integration passed coordinator reruns. Code, finite rule tables, proof,
+resource scope and reproduction reports are retained in the contribution.
+No human review is claimed.

@@ -1,0 +1,119 @@
+{
+  "scope": "Actual hybrid generator execution using finite local digit kernels; memory and dispatch are still abstract",
+  "all_passed": true,
+  "local_opcode_families": [
+    "ADD",
+    "AND",
+    "EQ",
+    "GT",
+    "LT",
+    "NE",
+    "SUB",
+    "XOR"
+  ],
+  "total_local_arithmetic_calls": 1183042,
+  "program_sha256": "c9e5dd5329c5200018454406852cdf298428dcba943c02cc13f0e3f002c6ba3f",
+  "checks": [
+    {
+      "case": "p=2 incidence graph",
+      "signed_width": 16,
+      "output_count": 21,
+      "word_steps": 5176,
+      "local_arithmetic_calls": 698,
+      "local_opcode_counts": {
+        "ADD": 367,
+        "EQ": 49,
+        "GT": 1,
+        "LT": 281
+      },
+      "remaining_host_arithmetic": {
+        "MOD": 49,
+        "MUL": 147,
+        "SHL": 9
+      },
+      "exact_stepwise_stack_match": true,
+      "exact_complete_state_match": true,
+      "exact_reference_output_match": true,
+      "exact_journal_and_rollback": true,
+      "runtime_seconds": 0.02
+    },
+    {
+      "case": "p=3 incidence graph",
+      "signed_width": 16,
+      "output_count": 52,
+      "word_steps": 16916,
+      "local_arithmetic_calls": 2295,
+      "local_opcode_counts": {
+        "ADD": 1222,
+        "EQ": 169,
+        "GT": 1,
+        "LT": 903
+      },
+      "remaining_host_arithmetic": {
+        "MOD": 169,
+        "MUL": 507,
+        "SHL": 11
+      },
+      "exact_stepwise_stack_match": true,
+      "exact_complete_state_match": true,
+      "exact_reference_output_match": true,
+      "exact_journal_and_rollback": true,
+      "runtime_seconds": 0.065
+    },
+    {
+      "case": "complete one-edge abstract circuit",
+      "signed_width": 16,
+      "output_count": 906,
+      "word_steps": 43426,
+      "local_arithmetic_calls": 4623,
+      "local_opcode_counts": {
+        "ADD": 2028,
+        "AND": 90,
+        "EQ": 164,
+        "GT": 470,
+        "LT": 1743,
+        "SUB": 124,
+        "XOR": 4
+      },
+      "remaining_host_arithmetic": {
+        "DIV": 4,
+        "MUL": 33,
+        "SHL": 18,
+        "SHR": 90
+      },
+      "exact_stepwise_stack_match": true,
+      "exact_complete_state_match": true,
+      "exact_reference_output_match": true,
+      "exact_journal_and_rollback": true,
+      "runtime_seconds": 0.157
+    },
+    {
+      "case": "complete p=2 21-mode abstract circuit",
+      "signed_width": 128,
+      "output_count": 287798,
+      "word_steps": 11027317,
+      "local_arithmetic_calls": 1175426,
+      "local_opcode_counts": {
+        "ADD": 557293,
+        "AND": 28474,
+        "EQ": 45313,
+        "GT": 144874,
+        "LT": 391432,
+        "SUB": 7704,
+        "XOR": 336
+      },
+      "remaining_host_arithmetic": {
+        "DIV": 20,
+        "MOD": 49,
+        "MUL": 1796,
+        "SHL": 1541,
+        "SHR": 28474
+      },
+      "exact_stepwise_stack_match": true,
+      "exact_complete_state_match": true,
+      "exact_reference_output_match": true,
+      "exact_journal_and_rollback": "not retained in this larger run",
+      "runtime_seconds": 137.348
+    }
+  ]
+}

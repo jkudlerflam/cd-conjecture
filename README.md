@@ -78,6 +78,17 @@ A new candidate refutation is recorded below and needs independent review. The w
 
 [STATUS.md](STATUS.md) has the details and the list of where help is most useful.
 
+**Digit compilation and infrared progress (2026-10-28):**
+[digit_compilation](contrib/digit_compilation/README.md) supplies an explicit
+96-entry parameter-reader table, eleven finite local arithmetic kernels,
+and checked execution of eight arithmetic opcodes inside the complete
+21-mode circuit generator. All 287,798 abstract gates match. A separate
+matrix theorem gives the explicit Gaussian stability budget delta<5/13,
+including density-current couplings and unequal velocities. The remaining
+memory/controller composition and microscopic low-energy reduction are
+still required; no new violating dimension or central-charge measurement
+is claimed.
+
 **Microscopic implementation progress (2026-10-28):**
 [executable circuit and controller work](contrib/controller_instantiation/README.md)
 now supplies a full sparse-encoding gate generator, explicit reversible

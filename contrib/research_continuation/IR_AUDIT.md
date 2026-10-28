@@ -163,11 +163,22 @@ For the actual quadratic theory require
 
     G=[[A,C],[C^T,B]]>0,
 
-or equivalently A>0 and B-C^T A^(-1) C>0. A sufficient energetic
-test is ||G_ref^(-1/2)(G-G_ref)G_ref^(-1/2)||<1. A smaller neighborhood
-is needed for the scaling-dimension lower bound kappa>2/3. At each
-fixed N,b the reference is strictly positive, so such a neighborhood
-exists by continuity. No N- or b-independent tolerance is asserted.
+or equivalently A>0 and B-C^T A^(-1) C>0. The new
+[explicit Gaussian certificate](../digit_compilation/audit/GAUSSIAN_CERTIFICATE.md)
+replaces a continuity-only statement by the proved matrix bound
+
+    delta = ||G_ref^(-1/2)(G-G_ref)G_ref^(-1/2)|| < 5/13,
+    Delta_G >= sqrt((1-delta)/(1+delta)) Delta_ref > (2/3) Delta_ref.
+
+This includes arbitrary density-current blocks C and noncommuting velocity
+matrices. For example delta<=1/4 leaves every reference-dimension-three
+vertex above 3 sqrt(3/5)>2.32. The relative threshold is independent of
+N and b; converting a microscopic perturbation into this relative norm
+still depends on the fixed core, geometry and smallest energy scales.
+The reference geometry must use the actual dressed fillings, or the
+fillings must be retuned; the stiffness bound alone does not certify the
+momentum margins. This is a theorem about the Gaussian theory, not a
+new microscopic elimination theorem.
 
 A failure of positivity would be a real physical instability, such as
 phase separation or a vanishing mode velocity. This is an independent

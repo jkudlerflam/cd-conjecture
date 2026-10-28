@@ -17,6 +17,20 @@ The working standard is theoretical physics (standard RG, controlled perturbatio
 
 ## Latest continuation: why the sparse first-order route leads
 
+**Digit compilation and explicit stability budget, 2026-10-28:**
+[digit_compilation](contrib/digit_compilation/README.md) removes the finite
+parameter-reader-table gap: 96 collision entries and eight controls,
+with exact output and autonomous cleanup. Eleven arithmetic kernels now
+have 4,428 width-independent adjacent-cell rules. The actual p=2, 21-mode
+circuit generator runs eight arithmetic opcodes through these rules:
+1,175,426 local calls reproduce all 287,798 gates. This remains a hybrid
+execution: memory, dispatch, operand placement and other arithmetic are
+not thereby compiled. A separate proved Gaussian matrix inequality gives
+an explicit relative stiffness threshold delta<5/13 protecting all
+reference-dimension-three vertices, conditional on actual filling and
+momentum margins. Full microscopic composition, the final alphabet count,
+and local massive-sector elimination remain open.
+
 **Autonomous continuation, 2026-10-28 UTC:**
 [autonomous_controller](contrib/autonomous_controller/README.md) supplies one
 3,200-entry reversible collision table (80 neutral symbols, 40 controls)

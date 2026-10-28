@@ -1,0 +1,113 @@
+{
+  "status": "passed",
+  "scope": "Finite parameter reader with initialized helper and exact reverse cleanup; no composed generator or counterexample",
+  "neutral_collision_entries": 96,
+  "prescribed_neutral_entries": 52,
+  "neutral_dimension_B": 12,
+  "controls_K": 8,
+  "local_factor_times_Sigma": 204,
+  "on_site": [
+    {
+      "p": 2,
+      "q": 2,
+      "m": 2,
+      "Sigma_dimension": 17,
+      "complete_F_columns_checked": 3468,
+      "full_collision_inverse_and_all_species_charges": true
+    },
+    {
+      "p": 2,
+      "q": 14,
+      "m": 10,
+      "Sigma_dimension": 317,
+      "complete_F_columns_checked": 64668,
+      "full_collision_inverse_and_all_species_charges": true
+    },
+    {
+      "p": 3,
+      "q": 26,
+      "m": 12,
+      "Sigma_dimension": 677,
+      "complete_F_columns_checked": 138108,
+      "full_collision_inverse_and_all_species_charges": true
+    }
+  ],
+  "two_site_movement": {
+    "all_Sigma_pairs_times_one_head_selectors": 9248,
+    "zero_or_two_head_selectors": 257,
+    "neutral_factors_unchanged_by_definition_and_checked": true
+  },
+  "complete_payload_basis": {
+    "q": 2,
+    "m": 2,
+    "n": 3,
+    "all_promised_helper_Sigma_basis_cases": 289,
+    "all_micro_sweeps_match_direct_step": true,
+    "primitive_event_word_matches_original_and_exact_inverse": true,
+    "same_schedule_for_all_untrusted_payloads": true
+  },
+  "larger_adversarial_cases": {
+    "payload_cycles": 222,
+    "sweeps": 17676,
+    "family_examples": [
+      {
+        "p": 2,
+        "q": 14,
+        "m": 10,
+        "midpoint_sweeps": 20,
+        "full_cycle_sweeps": 40
+      },
+      {
+        "p": 3,
+        "q": 26,
+        "m": 12,
+        "midpoint_sweeps": 24,
+        "full_cycle_sweeps": 48
+      },
+      {
+        "p": 5,
+        "q": 62,
+        "m": 16,
+        "midpoint_sweeps": 32,
+        "full_cycle_sweeps": 64
+      },
+      {
+        "p": 7,
+        "q": 114,
+        "m": 18,
+        "midpoint_sweeps": 36,
+        "full_cycle_sweeps": 72
+      },
+      {
+        "p": 11,
+        "q": 266,
+        "m": 22,
+        "midpoint_sweeps": 44,
+        "full_cycle_sweeps": 88
+      },
+      {
+        "p": 17,
+        "q": 614,
+        "m": 26,
+        "midpoint_sweeps": 52,
+        "full_cycle_sweeps": 104
+      },
+      {
+        "p": 31,
+        "q": 1986,
+        "m": 30,
+        "midpoint_sweeps": 60,
+        "full_cycle_sweeps": 120
+      },
+      {
+        "p": 127,
+        "q": 32514,
+        "m": 42,
+        "midpoint_sweeps": 84,
+        "full_cycle_sweeps": 168
+      }
+    ],
+    "loaded_T_and_malformed_H_included": true,
+    "n_equals_m_and_m_equals_2_boundaries_checked": true
+  }
+}

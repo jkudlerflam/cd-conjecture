@@ -1,0 +1,9 @@
+{
+  "rules": 4428,
+  "symbols_used": 900,
+  "tape_symbols_used": 74,
+  "control_states_used": 90,
+  "sha256": "ab4ce1e7c87040023e5dda9f1552bd0900a8754f9cd6a26a1e1691b656312f40",
+  "width_dependent_rules_or_states": false,
+  "scope": "Aligned signed digit kernels with autonomous compute/copy/uncompute; no addressed memory or full VM"
+}

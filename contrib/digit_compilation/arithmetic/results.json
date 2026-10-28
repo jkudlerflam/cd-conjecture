@@ -1,0 +1,55 @@
+{
+  "scope": "Fixed aligned digit kernels; neither a complete VM nor a counterexample",
+  "structural": {
+    "rules": 4428,
+    "symbols_used": 900,
+    "tape_symbols_used": 74,
+    "control_states_used": 90,
+    "sha256": "ab4ce1e7c87040023e5dda9f1552bd0900a8754f9cd6a26a1e1691b656312f40",
+    "width_dependent_rules_or_states": false,
+    "scope": "Aligned signed digit kernels with autonomous compute/copy/uncompute; no addressed memory or full VM",
+    "unique_forward_and_backward_pair_keys": true,
+    "unique_neighbor_side_per_head_symbol_both_directions": true,
+    "head_moves": {
+      "-1": 3184,
+      "0": 200,
+      "1": 1044
+    }
+  },
+  "exhaustive": {
+    "widths": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "operand_pairs_times_operations": 60060,
+    "forward_steps": 861036,
+    "semantic_match_and_full_inverse_every_case": true
+  },
+  "large_width": {
+    "widths": [
+      7,
+      31,
+      64,
+      257,
+      1024,
+      4096
+    ],
+    "cases": 1056,
+    "forward_steps": 1931776,
+    "semantic_match_and_full_inverse_every_case": true
+  },
+  "prefix_inverse": {
+    "prefix_states_checked": 242,
+    "every_prefix_has_exact_inverse_to_start": true
+  },
+  "initialization": {
+    "dirty_track_cases_stall": 21,
+    "scope": "A domain test, not a Hamiltonian penalty or illegal-sector gap proof"
+  },
+  "all_passed": true,
+  "elapsed_seconds": 2.035
+}
