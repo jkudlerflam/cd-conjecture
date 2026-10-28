@@ -1,0 +1,22 @@
+[
+ {
+  "lam": 0.05,
+  "L": 3,
+  "levels": 64,
+  "full_vs_2nd_abs": 2.451755881729622,
+  "full_vs_2nd_rel": 0.4010387100528972,
+  "full_vs_cluster_abs": 0.03095897089057639,
+  "full_vs_cluster_rel": 9.822990968657701e-05,
+  "bandwidth": 9.433598325127633
+ },
+ {
+  "lam": 0.1,
+  "L": 3,
+  "levels": 64,
+  "full_vs_2nd_abs": 5.0105891622478484,
+  "full_vs_2nd_rel": 0.8462719062207834,
+  "full_vs_cluster_abs": 0.13783288820217018,
+  "full_vs_cluster_rel": 0.0009327016815125406,
+  "bandwidth": 9.878831521295519
+ }
+]

@@ -1,0 +1,29 @@
+eff:INC:0.02 obc --L 64 --chis 32 64 128 --out data/obc_eff_INC_0.02_L64.json
+eff:INC:0.02 fes --n 2 --chis 8 12 16 24 32 48 64 96 128 192 --out data/fes_eff_INC_0.02.json
+eff:INC:0.02 ed --Ls 4 5 6 7 8 9 10 --nev 16 --out data/ed_eff_INC_0.02.json
+eff:INC:0.05 obc --L 64 --chis 32 64 128 --out data/obc_eff_INC_0.05_L64.json
+eff:INC:0.05 fes --n 2 --chis 8 12 16 24 32 48 64 96 128 192 --out data/fes_eff_INC_0.05.json
+eff:INC:0.05 ed --Ls 4 5 6 7 8 9 10 --nev 16 --out data/ed_eff_INC_0.05.json
+eff:INC:0.1 obc --L 64 --chis 32 64 128 --out data/obc_eff_INC_0.1_L64.json
+eff:INC:0.1 fes --n 2 --chis 8 12 16 24 32 48 64 96 128 192 --out data/fes_eff_INC_0.1.json
+eff:INC:0.1 ed --Ls 4 5 6 7 8 9 10 --nev 16 --out data/ed_eff_INC_0.1.json
+eff:INC:0.2 obc --L 64 --chis 32 64 128 --out data/obc_eff_INC_0.2_L64.json
+eff:INC:0.2 fes --n 2 --chis 8 12 16 24 32 48 64 96 128 192 --out data/fes_eff_INC_0.2.json
+eff:INC:0.2 ed --Ls 4 5 6 7 8 9 10 --nev 16 --out data/ed_eff_INC_0.2.json
+eff:INC:0.3 obc --L 64 --chis 32 64 128 --out data/obc_eff_INC_0.3_L64.json
+eff:INC:0.3 fes --n 2 --chis 8 12 16 24 32 48 64 96 128 192 --out data/fes_eff_INC_0.3.json
+eff:INC:0.3 ed --Ls 4 5 6 7 8 9 10 --nev 16 --out data/ed_eff_INC_0.3.json
+eff:SYM:0.1 fes --n 2 --chis 8 12 16 24 32 48 64 96 128 192 --out data/fes_eff_SYM_0.1.json
+eff:SYM:0.1 obc --L 64 --chis 32 64 128 --out data/obc_eff_SYM_0.1_L64.json
+eff:SYM:0.2 fes --n 2 --chis 8 12 16 24 32 48 64 96 128 192 --out data/fes_eff_SYM_0.2.json
+eff:SYM:0.2 obc --L 64 --chis 32 64 128 --out data/obc_eff_SYM_0.2_L64.json
+eff:SYM:0.3 fes --n 2 --chis 8 12 16 24 32 48 64 96 128 192 --out data/fes_eff_SYM_0.3.json
+eff:SYM:0.3 obc --L 64 --chis 32 64 128 --out data/obc_eff_SYM_0.3_L64.json
+free:SYM obc --L 64 --chis 32 64 128 --out data/obc_free_SYM_L64.json
+xx2 obc --L 64 --chis 32 64 128 --out data/obc_xx2_L64.json
+eff:INC:0.1 obc --L 96 --chis 64 128 --out data/obc_eff_INC_0.1_L96.json
+free:INC obc --L 96 --chis 64 128 --out data/obc_free_INC_L96.json
+eff3:INC:0.1 obc --L 64 --chis 32 64 128 --out data/obc_eff3_INC_0.1_L64.json
+eff3:SYM:0.1 fes --n 2 --chis 8 12 16 24 32 48 64 96 128 192 --out data/fes_eff3_SYM_0.1.json
+eff3:INC:0.2 obc --L 64 --chis 32 64 128 --out data/obc_eff3_INC_0.2_L64.json
+eff3:SYM:0.2 fes --n 2 --chis 8 12 16 24 32 48 64 96 128 192 --out data/fes_eff3_SYM_0.2.json
