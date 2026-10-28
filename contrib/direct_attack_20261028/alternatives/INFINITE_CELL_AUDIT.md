@@ -76,6 +76,8 @@ The component's spatial support satisfies \(|S|\le N\), giving the advertised \(
 
 The thermal baseline estimate controls nonconstant kernels as well as pressure. A nonzero baseline-only component cannot leave an entirely empty time layer. Cutting at such a layer would produce a vacuum amplitude, killed by its first baseline insertion. Every surviving component therefore has at least \(\lfloor\beta/\tau\rfloor\) nodes. The additional exponential cluster reserve suppresses its complete weighted coefficient norm, including arbitrary external logical degrees. This supplies the stated exponentially small baseline term without inferring a source bound from a pressure bound.
 
+I also checked the subsequent Section 10.4 extension to arbitrary interactions. A cluster with fewer than the number of time layers in total occupied-node count, including cluster multiplicities, leaves an empty layer. Cutting there identifies its thermal weight with a line cluster, with lifts counted modulo common translation by the period. Unmatched periodic clusters and line clusters spanning a full period use at least that many nodes. The same convergence reserve therefore bounds the difference from the periodized vacuum kernels exponentially in the period. The finite Trotter/coherent-state explanation supplies the antiperiodic signs before the continuous-time limit; no naive cyclic permutation of odd operator coefficients is assumed.
+
 ## Invalid states and the available C44/C46 input
 
 For the abstract embedding the invalid heat trace is exactly

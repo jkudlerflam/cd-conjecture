@@ -207,6 +207,17 @@ infinite RG iteration with the following properties:
 The initialization estimates here supply useful input for such a theorem.
 They do not establish any of its four conclusions.
 
+The subsequent [COUNTERTERM_INDUCTION.md](COUNTERTERM_INDUCTION.md)
+closes the nonlinear sequence argument under explicit normalized beta
+bounds, including their natural history-difference estimate. The
+subsequent [FERMI_SHIFT_EXISTENCE.md](FERMI_SHIFT_EXISTENCE.md) shows that
+continuous finite-cutoff counterterms suffice to select physical Fermi
+centers by Brouwer and diagonal compactness. Derivatives with respect
+to those centers, or independently adjustable microscopic chemical
+potentials, are not needed for that existence argument. Deriving the
+ordinary normalized beta bounds from the full endpoint class remains
+open; neither subsequent result asserts a CFT limit.
+
 ## 7. Why response does not yet identify c
 
 **[proved logical limitation]** Normalized correlators are invariant if

@@ -17,6 +17,13 @@ not human-refereed. Each subfolder records the scope and checks of its claims.
 This ranking is **[research judgment]**, not a proof or numerical confidence
 estimate.
 
+A subsequent parallel [frozen-sector thermal theorem](../decisive_attack_20261028/frozen/DEFECT_PRESSURE.md)
+makes the frozen d=23, n=23 construction a potentially shorter route under
+a bulk-CFT interpretation: wrong-length and illegal-sector contributions to
+the pressure are exponentially small at low temperature. It still needs
+the selected-cell infrared theorem and a sufficient CFT identification;
+incompatible rings retain their separate finite-size degeneracy issue.
+
 1. **For refuting c <= d-1 at a concrete small dimension: the d=24 vacancy
    construction.** Its n=23 finite band certificate and frozen-sector
    comparison already exist. The main extra task is the finite-J,
@@ -94,8 +101,22 @@ of arbitrarily long wrong cells was disproved in the preceding
   bandwidth normalization changes every pinned kernel norm by the same
   factor 1/W, regardless of field degree. Finite microscopic degree and
   analyticity recover the powers of the small coupling required by a
-  published RG tree estimate. The full marginal-flow and counterterm
-  induction is the remaining task; power counting alone does not close it.
+  published RG tree estimate. Power counting alone does not close the flow.
+- [Counterterm induction](vacancy/COUNTERTERM_INDUCTION.md) and
+  [physical Fermi-shift existence](vacancy/FERMI_SHIFT_EXISTENCE.md) close
+  the sequence and finite-cutoff compactness arguments under explicit beta
+  bounds. Brouwer's theorem avoids the need to differentiate charged
+  endpoint phases with respect to the Fermi points. The independent
+  [audit](alternatives/COUNTERTERM_AUDIT.md) repaired a missing coefficient
+  variation term and a continuity condition. Deriving the beta bounds for
+  arbitrary retarded endpoints remains open.
+- [Holomorphic massive matching under length tilts](infrared/TILTED_MATCHING.md)
+  treats the unbounded auxiliary length charge inside the semigroup.
+  A commuting relative bound gives uniform complex-strip estimates and
+  derivatives of the massive action without dividing by the logical
+  bandwidth. This supplies an input for the parallel
+  [physical-ensemble work](../thermal_ensemble_20261028/TILTED_EMBEDDING.md),
+  not analyticity or compressibility of the full gapless pressure.
 
 Further worker results are added only after their statements and scope have
 been reviewed. The active goal is to solve the conjecture, not to stop at this

@@ -65,6 +65,15 @@ The latter uses actual analytic perturbative order and finite microscopic
 degree; a generic small coefficient norm would not suffice. The complete
 multichannel induction and central-charge identification remain open.
 
+[COUNTERTERM_INDUCTION.md](COUNTERTERM_INDUCTION.md) proves the complete
+marginal/relevant sequence induction under explicit normalized beta
+majorants. [FERMI_SHIFT_EXISTENCE.md](FERMI_SHIFT_EXISTENCE.md) then proves
+that continuous finite-cutoff counterterms give physical Fermi shifts by
+Brouwer and diagonal compactness. This removes the need to differentiate
+charged endpoint phases with respect to the Fermi centers. The ordinary
+beta majorants still require derivation for all retarded endpoints, and
+central-charge identification remains a separate task.
+
 `check_normal_form.py` is a compact finite-matrix sanity check of the exact
 first derivative, boundary/filter error identity, and quadratic Taylor
 scaling. It does not test the asymptotic locality estimate or the vacancy
