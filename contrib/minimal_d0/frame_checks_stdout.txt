@@ -1,0 +1,12 @@
+(a) q=2: rank 46, predicted 4q^4-(4q^2-1)-(q^2-1) = 46
+(a) q=4: rank 946, predicted 4q^4-(4q^2-1)-(q^2-1) = 946
+(b) q=2 synthesis residual (after removing a constant): 6.473657049138938e-16
+    lowest levels: [0.         0.         1.22374028]
+    compression of X_p = -0.511233 x logical Majorana, residual 1.47e-16
+    compression of Y_p = -0.511233 x logical Majorana, residual 4.52e-33
+    (Z_p is even under the grading; its compression is the logical parity bilinear, not used by the bond)
+(c) q=4: lowest 18 levels minus ground: [0.         0.         0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.         0.         0.         0.         2.26669512 2.26669512]
+    alpha = -0.336827    alpha = -0.306377    alpha = -0.331012    alpha = -0.329267    alpha = -0.333674    alpha = -0.354035    alpha = -0.341489    alpha = -0.337227
+    max residual of compression minus alpha*Majorana: 1.98e-15

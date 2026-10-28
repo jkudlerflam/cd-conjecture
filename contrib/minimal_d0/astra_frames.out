@@ -1,0 +1,9 @@
+Completed [RESULT.md](<<repo>/contrib/minimal_d0/astra_frames/RESULT.md>), with proofs, explicit gates and weights, and numerical checks.
+
+The span statement holds. With entangling Cliffords allowed, positive synthesis works for every Q using \(q^2(q^2-2)/2\) frames. No non-Clifford rotation is needed.
+
+Ordinary Pauli-frame uniformity is impossible. Conjugating the gate words by a controlled-Q Clifford repairs it with unchanged weights. The report also proves impossibility for \(m\ge2\) if only single-qubit Cliffords and SWAP(s₁,c) are allowed.
+
+Verified every Q at \(m=1,2,3\). The largest Frobenius residual was \(9.12\times10^{-15}\). Scripts, explicit small-instance gate lists, and PROGRESS.md are saved alongside the report.
+
+[gpt_solve: backend=codex model=gpt-6-astra effort=high transcript=20261027T202744-73361]
