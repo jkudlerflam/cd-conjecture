@@ -1,0 +1,19 @@
+The conditional theorem is written in [PROOF.md](<<repo>/codex/work_C51/PROOF.md>), with conclusions in [RESULT.md](<<repo>/codex/work_C51/RESULT.md>).
+
+Assuming a complete compact Gaussian scaling limit, the proof gives
+\[
+c_R=c_L=n+1,\qquad c_{\mathrm{cd}}=n+1.
+\]
+It handles arbitrary positive velocities and moving irrational-density sectors. Those sectors can spoil an uncorrected Casimir fit but do not change the central terms or thermodynamic coefficient.
+
+The general thermal coefficient is
+\[
+f(\beta)=e_0-\frac{\pi}{12}\sum_a
+\left(u_{a,R}^{-1}+u_{a,L}^{-1}\right)\beta^{-2}
++o(\beta^{-2}).
+\]
+Your stated formula follows when the paired speeds agree.
+
+The microscopic transfer remains conditional. C50’s current proof leaves the all-scale RG theorem open, and correlation asymptotics alone do not control the thermal scalar term. I proved a quantitative sufficient scalar estimate and identified the separate requirements for full spectral towers. All small algebra checks pass; no microscopic central-charge measurement is claimed.
+
+[gpt_solve: backend=codex model=gpt-6-astra effort=high transcript=20261028T143803-14606]

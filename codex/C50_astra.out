@@ -1,0 +1,9 @@
+C50 remains partial. I did not prove the requested all-scale Luttinger theorem.
+
+I proved finite-scale integration bounds for arbitrary-degree retarded kernels, unequal-velocity covariance estimates, and a conversion from C48’s kernel norm with constants uniform for \(W/\Delta\le1\). The checks pass.
+
+The missing step is the all-scale comparison with the Luttinger reference theory, including counterterm construction and source estimates. Without it, the \(n+1\) gapless modes and correlation exponents remain unproved.
+
+The [result](RESULT.md), [derivations](PROOF.md), and [primary-source hypothesis audit](SOURCE_AUDIT.md) distinguish the proved statements from those remaining assumptions.
+
+[gpt_solve: backend=codex model=gpt-6-astra effort=high transcript=20261028T143801-14423]

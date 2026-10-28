@@ -1,9 +1,7 @@
 """C52 finite algebra controls. No microscopic IR or C42-margin computation."""
 import json
-import math
 from pathlib import Path
 import numpy as np
-from scipy.linalg import null_space
 
 
 def fermions(n):
@@ -90,6 +88,37 @@ def boundary_control():
                 rank_one_determinant_forbidden_fourier_error=float(tail))
 
 
+def adjacent_commutator_controls():
+    rng = np.random.default_rng(522)
+    rows = []
+    for n in (1,2):
+        d = 1 << n
+        t = rng.normal(size=(n,n))+1j*rng.normal(size=(n,n))+2*np.eye(n)
+        h = np.zeros((d*d,d*d),complex)
+        for a in range(n):
+            for b in range(n):
+                h[(1<<a)*d,1<<b] = t[a,b]
+                h[1<<b,(1<<a)*d] = np.conj(t[a,b])
+        # Arbitrary number-conserving changes outside the vacuum/one-particle
+        # sectors test that the argument does not require Gaussian higher sectors.
+        for number in range(2,2*n+1):
+            ids = [i for i in range(d*d) if i.bit_count()==number]
+            raw = rng.normal(size=(len(ids),len(ids)))+1j*rng.normal(size=(len(ids),len(ids)))
+            h[np.ix_(ids,ids)] = raw+raw.conj().T
+        tensor = h.reshape(d,d,d,d)
+        left = np.einsum('abcb->ac',tensor)/d
+        right = np.einsum('abad->bd',tensor)/d
+        connected = h-np.kron(left,np.eye(d))-np.kron(np.eye(d),right)+np.trace(h)/(d*d)*np.eye(d*d)
+        k12 = np.kron(connected,np.eye(d)); k23 = np.kron(np.eye(d),connected)
+        comm = k12@k23-k23@k12
+        outer = comm[np.ix_([(1<<i)*d*d for i in range(n)], [1<<i for i in range(n)])]
+        error = np.linalg.norm(outer-t@t)
+        assert error < 1e-12
+        rows.append(dict(n=n, outer_commutator_identity_error=float(error),
+                         outer_commutator_norm=float(np.linalg.norm(outer,2))))
+    return rows
+
+
 def head_controls():
     rows = []
     for b in (4,5,8,16):
@@ -132,6 +161,7 @@ def resolvent_control():
 if __name__ == '__main__':
     result = dict(scope='Finite algebra controls only; no central charge or microscopic matching claim.',
                   hopping=hopping_controls(), boundary=boundary_control(),
-                  marker_heads=head_controls(), virtual_resolvent=resolvent_control())
+                  marker_heads=head_controls(), adjacent_commutators=adjacent_commutator_controls(),
+                  virtual_resolvent=resolvent_control())
     Path(__file__).with_name('checks.json').write_text(json.dumps(result,indent=2)+'\n')
     print(json.dumps(result,indent=2))

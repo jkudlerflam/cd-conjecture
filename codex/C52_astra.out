@@ -1,0 +1,11 @@
+C52 did not close S. It establishes two obstructions to the direct redesign.
+
+Using C8’s theorem, an exactly invariant product-cell code with separated endpoints must have commuting neighboring connected logical bonds. For C39’s hopping, their one-particle commutator contains \(T^2\neq0\). Number-conserving quartic additions cannot remove this obstruction.
+
+The unchanged C44 marker move also has strictly positive leakage from its sine-head ground space. Its projected identity transport is insufficient for exact decoupling.
+
+Cross-boundary encodings or dressing with range comparable to the cell length remain open. No successful replacement bond or published-theorem application is claimed.
+
+Full derivations are in [PROOF.md](<<repo>/codex/work_C52/PROOF.md>), with the outcome in [RESULT.md](<<repo>/codex/work_C52/RESULT.md>). All finite algebra checks passed. Only work_C52 was modified.
+
+[gpt_solve: backend=codex model=gpt-6-astra effort=high transcript=20261028T143805-14789]

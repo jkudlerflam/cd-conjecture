@@ -1,0 +1,7 @@
+Under the stated rooted-model hypotheses, the resummed expansion gives exponentially decaying kernels and an error bounded by \(A_n C_{\rm SW}\lambda^3\), uniformly in cell count and sufficiently large \(\beta\). The proof addresses C46 by keeping the full excited-cell Hamiltonian unexpanded.
+
+Full Input S remains open. Physical length/source transfer, illegal-sector control and the gapless RG are not established. All small verification checks passed.
+
+The derivation and explicit constants are in [PROOF.md](PROOF.md), with the scope and remaining obligations in [RESULT.md](RESULT.md).
+
+[gpt_solve: backend=codex model=gpt-6-astra effort=high transcript=20261028T143757-14018]

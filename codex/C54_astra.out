@@ -1,0 +1,11 @@
+Completed [RESULT.md](<./RESULT.md>) and [PROOF.md](<./PROOF.md>), with explicit amplitude and scaling-dimension bounds.
+
+I found no refutation of the complete C45 schedule. Conditional on S’s operator lattice, the dangerous low-dimension vertices are exhausted: symmetry forbids pairing, the margins detune pair transfer and mixed resonances, and remaining nonlinear vertices have dimension at least \(3\sqrt{3/5}>2\).
+
+There is a concrete failure outside the schedule. An attractive scalar length interaction \(V<-2t\) produces phase separation. C44’s diagnostic parameters would enter this regime if length hopping were chosen at their tiny payload scale. The scheduled equalization excludes it. This is not a refutation of the full microscopic chain.
+
+The unresolved attacks concern exact matching and dressed defects. Fixed norm errors, prethermal control, and fixed pressure errors cannot establish \(c=n+1\). The report distinguishes these gaps from mechanisms conditionally excluded.
+
+All small algebra checks passed. No microscopic central-charge simulation was performed. Writes stayed inside `work_C54`.
+
+[gpt_solve: backend=codex model=gpt-6-astra effort=high transcript=20261028T144028-16111]
