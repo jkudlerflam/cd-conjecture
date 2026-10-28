@@ -1,0 +1,32 @@
+[
+  {
+    "n": 1,
+    "alphabet": 46,
+    "bond_dimension": 2116,
+    "core_dimension": 54,
+    "entry_error": 0.0,
+    "charge_commutator": 0.0,
+    "kinetic_gershgorin_lower": 0.0,
+    "code_residual": 7.850462293418876e-17
+  },
+  {
+    "n": 2,
+    "alphabet": 46,
+    "bond_dimension": 2116,
+    "core_dimension": 160,
+    "entry_error": 5.809865980296858e-16,
+    "charge_commutator": 0.0,
+    "kinetic_gershgorin_lower": 0.0,
+    "code_residual": 1.1102230246251565e-16
+  },
+  {
+    "n": 3,
+    "alphabet": 46,
+    "bond_dimension": 2116,
+    "core_dimension": 424,
+    "entry_error": 2.098970198406773e-16,
+    "charge_commutator": 0.0,
+    "kinetic_gershgorin_lower": 0.0,
+    "code_residual": 3.510833468576701e-16
+  }
+]

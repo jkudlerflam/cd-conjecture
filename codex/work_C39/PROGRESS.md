@@ -35,3 +35,11 @@
 [numerical, finite-coupling ED] All twelve requested n=1,2,3, two/three-cell checks in charges Q=0,1 completed. The largest sector has 356325 states. Block eigensolution repaired the timed-out n=3 ARPACK run in 118 seconds. The Q=1 error/lambda^4 values at lambda=.1,.05 are (0.03046,0.03037), (0.04485,0.04478), (0.02062,0.02054), (0.03371,0.03360), (0.01399,0.01392), (0.02374,0.02364), ordered by n then cell count. The largest eigenvector residual is below 2.8e-12. Complete cluster ED of all other charges and the mobile wrapper was not performed.
 
 [proved, coordination and remaining scope] Re-read completed C33/C37/C38/C40 progress. C37's finite original-alphabet certificates and C38's hierarchy obstruction are not duplicated. C40's exact low-frequency massive-sector remainder remains assumed here. The constructed core has 46 letters. The inherited full C8/C32 wrapper count is 4464 for frozen or mobile implementations. No unconditional thermodynamic CFT claim follows from these finite results.
+
+## Final handoff
+
+[proved, completed] RESULT.md, PROOFS.md and local STATE.md are written. The all-n proof includes the exact lowest-power determinant minors, the scaled Schur-complement eigenvector limit, separate center and width hierarchies, the exhaustive pair-sum argument, and the physical velocity check. The finite-parameter definition is an exact terminating search with no uniform running-time claim.
+
+[numerical, final independent source audit] At n=1,2 the full spectral source contraction agrees with direct sparse pair inversion in operator norm to 4.2e-17 and 6.2e-17. Full source bonds retain every charge sector. A normal-ordering diagnostic was corrected to use left-cell-first Jordan-Wigner order; the saved bond matrices and ED comparisons were unaffected.
+
+[proved, final checks] All Python files pass syntax compilation. All twelve finite-cluster ED records and three exact rational reference certificates are present. Prose checks pass. The finite-band construction is complete as stated, with the mobile wrapper inherited. The all-charge three-cell finite-coupling spectrum, full mobile microscopic ED, independent referee review, and thermodynamic massive-sector elimination were not supplied. These limits are explicit in RESULT.md.

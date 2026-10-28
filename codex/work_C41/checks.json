@@ -1,0 +1,140 @@
+{
+  "offset_spectra": [
+    {
+      "L": 5,
+      "M": 2,
+      "b": 2,
+      "dimension": 20,
+      "error": 3.552713678800501e-15,
+      "gap": 0.618033988749894
+    },
+    {
+      "L": 7,
+      "M": 4,
+      "b": 2,
+      "dimension": 70,
+      "error": 7.993605777301127e-15,
+      "gap": 0.4450418679126207
+    },
+    {
+      "L": 7,
+      "M": 3,
+      "b": 3,
+      "dimension": 105,
+      "error": 5.329070518200751e-15,
+      "gap": 0.1996539984978698
+    },
+    {
+      "L": 8,
+      "M": 4,
+      "b": 4,
+      "dimension": 280,
+      "error": 1.509903313490213e-14,
+      "gap": 0.10042096402249623
+    },
+    {
+      "L": 9,
+      "M": 6,
+      "b": 3,
+      "dimension": 252,
+      "error": 1.2434497875801753e-14,
+      "gap": 0.136505567263856
+    }
+  ],
+  "first_order": [
+    {
+      "L": 5,
+      "M": 3,
+      "q": 2,
+      "dimension": 80,
+      "retained_dimension": 8,
+      "branches": 3,
+      "error": 8.928843742575508e-16
+    },
+    {
+      "L": 6,
+      "M": 4,
+      "q": 2,
+      "dimension": 240,
+      "retained_dimension": 20,
+      "branches": 5,
+      "error": 3.5596458096434965e-15
+    },
+    {
+      "L": 6,
+      "M": 3,
+      "q": 2,
+      "dimension": 160,
+      "retained_dimension": 8,
+      "branches": 3,
+      "error": 4.44157209897029e-16
+    }
+  ],
+  "flux_asymptotics": [
+    {
+      "L": 96,
+      "exact": 0.00028156824174435256,
+      "prediction": 0.00028151820435446366,
+      "relative_error": 0.00017774122282299132
+    },
+    {
+      "L": 192,
+      "exact": 0.00014076535627147998,
+      "prediction": 0.00014075910217723183,
+      "relative_error": 4.4431188828353285e-05
+    },
+    {
+      "L": 384,
+      "exact": 7.038033282004115e-05,
+      "prediction": 7.037955108861591e-05,
+      "relative_error": 1.1107365891716015e-05
+    },
+    {
+      "L": 768,
+      "exact": 3.518987325158262e-05,
+      "prediction": 3.518977554430796e-05,
+      "relative_error": 2.776581355057317e-06
+    }
+  ],
+  "number_rounding_toy": [
+    {
+      "L": 4000,
+      "winner": 1886,
+      "compatible": false,
+      "rounding_cost": 0.08433232168369997,
+      "quadratic_bound": 0.11264127258746273
+    },
+    {
+      "L": 8000,
+      "winner": 3768,
+      "compatible": true,
+      "rounding_cost": 0.004095907118362163,
+      "quadratic_bound": 0.056320636293731366
+    },
+    {
+      "L": 16000,
+      "winner": 7536,
+      "compatible": true,
+      "rounding_cost": 0.008191814236724326,
+      "quadratic_bound": 0.028160318146865683
+    },
+    {
+      "L": 32000,
+      "winner": 15085,
+      "compatible": false,
+      "rounding_cost": 0.01195096485773206,
+      "quadratic_bound": 0.014080159073432841
+    },
+    {
+      "L": 64000,
+      "winner": 30168,
+      "compatible": true,
+      "rounding_cost": 0.00017451381495448004,
+      "quadratic_bound": 0.007040079536716421
+    }
+  ],
+  "rational_stability_checks": {
+    "higher_payload_lower_bound": "12/5",
+    "nonzero_umklapp_lower_bound": "20/9"
+  }
+}
