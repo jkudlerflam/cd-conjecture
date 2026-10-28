@@ -930,3 +930,17 @@ All reports, scripts and data are saved; the reviews are AI-assisted,
 not human referee reports.
 - **C44, wrapper audit on the all-n core** (`codex/work_C44/`, Astra). The finite wrapper audit passes for every n at d₀ = 4464, with explicit parameter budgets: equalization is approximate at finite parameters, the scalar length interaction and the mixed payload terms are retained and bounded against C39's lacunary scales, and the mixed marker-port term at order uλ vanishes. Small-cell ED confirms the code, and transport and projected-ring spectra confirm identity transport and momentum gluing. No full microscopic many-cell ED or central charge.
 - **C45, infrared step for the wrapped all-n chain** (`codex/work_C45/`, Astra). Concludes yes at the theoretical-physics standard, using one explicit standard Wilsonian RG input: with C44's audit and a volume-independent local Schrieffer–Wolff remainder bound, the coupling hierarchy closes for every fixed n (the schedule includes equalization errors, mixed terms and the smallest wrapper gap), giving c = n + 1 at fixed d₀ = 4464, hence unbounded c at fixed local dimension. Exact all-order infrared kernels and a rigorous microscopic CFT theorem remain unproved. An independent referee of C44 and C45 is running (`contrib/referee_C44_C45/`).
+
+
+**Correction to §§9.21 and 9.23, same-day referee cross-review:** the
+verified-counterexample headline was too strong and is withdrawn. The
+finite identities, certificate, normal-form and conditional RG checks
+remain valid. They do not complete the finite-J, common-bulk-subtracted
+sector comparison uniformly over ring lengths and defect patterns. The
+current classification is a credible conditional candidate, with no
+refutation of the model. See the
+[infrared reassessment](contrib/counterexample_audit_20261028/infrared/REFEREE_RESPONSE.md)
+and [referee comparison](contrib/counterexample_audit_20261028/vacancy/REFEREE_COMPARISON.md).
+New workers are pursuing the specific missing bound and possible
+countermechanisms. A human review or small-n simulation would improve
+confidence, but neither substitutes logically for that comparison.

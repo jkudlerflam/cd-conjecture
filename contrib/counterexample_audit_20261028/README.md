@@ -1,10 +1,11 @@
 # Fresh adversarial audit of the d=24 construction
 
-Final verdict: **verified as a controlled counterexample argument at the
-repository's stated theoretical-physics standard**. The microscopic
-ingredients, vertex classification, and scale hierarchy pass independent
-audits. No refutation of the model was found. The finite-J conclusion uses
-the explicitly stated conventional local matching and Gaussian RG input.
+Current verdict: **credible conditional counterexample candidate**.
+The microscopic ingredients, vertex classification, and conditional RG
+argument pass independent audits. No refutation of the model was found.
+The earlier headline claiming a verified counterexample was too strong
+and is withdrawn. A fresh referee comparison exposed an uncompleted
+finite-J matching step; active work now targets that step explicitly.
 No rigorous lattice-to-CFT theorem or microscopic c=24 measurement is
 claimed. Prior AI endorsements were not used as evidence.
 
@@ -49,12 +50,13 @@ AI-assisted (OpenAI Codex GPT-6 family); no human referee is claimed.
   slope reproduces the displacement, and the certified centers remain
   separated. The largest hopping entry is not the relevant denominator.
 
-## Meaning of the verdict
+## What is verified and what remains open
 
 The reviewed statement is an existence construction at fixed n=23:
 choose g sufficiently small, then nonzero lambda sufficiently small,
 then nonzero J/t sufficiently small, all independent of the eventual
-ring length. The resulting symmetry-preserving weak-coupling phase has
+ring length. If the stated matching and dressed-sector premises hold,
+the resulting symmetry-preserving weak-coupling phase has
 24 right and 24 left compact Gaussian modes, hence c_L=c_R=24, conventionally
 reported as c=24. The repeated microscopic bond has d=24, so this exceeds
 d-1=23. It is not a claim about J=0 or about a size-dependent sequence
@@ -64,22 +66,33 @@ The certificate fixes the internal geometry and proves a finite-g
 reference. It does not provide a certified numerical interval for the
 final lambda and J. The saved moderate-scale bond fixture is a structural
 check, not a numerically demonstrated violating parameter point. The
-weak-coupling existence inference is the same type of bosonization/RG
-reasoning permitted by this repository's declared standard.
+weak-coupling existence inference uses conventional bosonization/RG,
+but calling it standard does not establish every required premise for
+this microscopic model.
 
-This audit verifies more than a count of free modes. The argument keeps
+This audit checks more than a count of free modes. The argument keeps
 the gapless charge field, checks the whole low-dimension local vertex
 lattice, compares corrections with the slowest retained velocity, and
 addresses defect/interface energies separately from extensive bulk errors.
 The charged and internal U(1) symmetries remain exact. The stable region
 is asserted inside that symmetry family.
 
-The stronger statement still absent is a uniform microscopic all-order
-linked-sector inequality and a rigorous lattice-to-CFT limit for the full
-24-state Hamiltonian. Neither a finite-band certificate nor our finite
-numerics is that theorem. The verdict must retain this limitation; it
-does not constitute an unconditional mathematical disproof or a direct
-microscopic measurement of c=24.
+The substantive residual matching premise is a common-bulk-subtracted
+per-defect remainder small compared with the positive bare defect cost,
+uniform in ring length, separation and pattern. Very long wrong cells
+need a volume weight, rather than merely counting their interfaces.
+The displayed Gaussian and second-order calculations support this premise
+but do not complete it. This is distinct from merely requesting a fully
+rigorous CFT-limit theorem. A convincing controlled physical derivation
+could suffice; it must address the uniform sector comparison. The audit
+has not established the full microscopic c=24 conclusion and has not
+disproved it either.
+
+See the [infrared reassessment](infrared/REFEREE_RESPONSE.md),
+[referee comparison](vacancy/REFEREE_COMPARISON.md), and
+[separate collaborator referee](../referee_d24/README.md). The reviewers
+agree on the finite identities and find no fatal mechanism; they withhold
+established-counterexample status pending the matching/sector step.
 
 ## Clarifications uncovered
 
@@ -93,9 +106,7 @@ can change by O(J), which is small relative to t, while induced internal
 energy corrections are O(J^2/t). None of these corrections currently
 provides a refutation.
 
-The continuum-to-lattice matching and the uniform all-order microscopic
-per-defect inequality must not be confused. The reports assess the former
-at the stated controlled weak-coupling physics standard; they do not claim
-to have proved the latter. See each report for exact hypotheses and
-reproduction commands. The original construction is
+The second-order estimates and the required finite-J sector comparison
+must not be confused. See each report for exact hypotheses and reproduction
+commands. The original construction is
 [here](../counterexample_campaign/COUNTEREXAMPLE_D24.md).

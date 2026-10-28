@@ -8,16 +8,18 @@ Latorre and Sierra ([arXiv:2403.17242](https://arxiv.org/abs/2403.17242)) consid
 
 The working standard is theoretical physics (standard RG, controlled perturbation theory, numerics calibrated with at least two estimators), not mathematical rigor.
 
-## A d=24 physics-level counterexample (2026-10-28)
+## A d=24 conditional counterexample candidate (2026-10-28)
 
-[proved local ingredients; controlled physics inference] The
-[complete one-vacancy construction](contrib/counterexample_campaign/COUNTEREXAMPLE_D24.md)
-gives an explicit one-site invariant nearest-neighbour bond on 24 states
-whose weak-coupling infrared theory has 23 payload compact bosons and one
-charge boson: c=24>d-1=23. Three independent AI workers endorse the full
-argument at this repository's theoretical-physics standard. It relies on
-conventional Gaussian phase stability, not a rigorous lattice-to-CFT
-theorem or a numerical measurement of microscopic c=24.
+[proved local ingredients; conditional infrared conclusion] The
+[one-vacancy construction](contrib/counterexample_campaign/COUNTEREXAMPLE_D24.md)
+is an explicit one-site invariant nearest-neighbour family on 24 states
+with predicted c=24>d-1=23. The earlier statement that a counterexample
+was verified is withdrawn after fresh cross-review. The finite bond,
+frozen-sector bounds, band certificate and conditional vertex analysis
+pass, but finite-J matching and a uniform dressed-defect comparison
+are not yet established for the full microscopic chain. No fatal error
+or actual refutation has been found. The current status is a credible
+analytic candidate, not an established counterexample.
 
 [proved and checked] The campaign replays C33's n=23 finite-g band
 certificate, proves all-length/illegal-sector exclusion on compatible
@@ -32,8 +34,9 @@ through L=20 support the separate continuum per-defect comparison.
 Schrieffer-Wolff bounds provide an exact finite-order change of basis with
 a volume-independent quasi-local remainder. A block-diagonal stability
 argument gives a massive auxiliary threshold above the reference ground.
-Taking g small, then lambda small, then J/t small controls all errors
-relative to the slowest payload scale at fixed nonzero coefficients.
+Taking g small, then lambda small controls the frozen local reduction;
+the additional J/t hierarchy is consistent but still needs the uniform
+vacancy matching and defect comparison.
 This avoids requiring C40's stronger exact all-order kernel for the
 physics inference. The
 [source audit](contrib/counterexample_campaign/route_a/M2_REVIEW.md) and
@@ -43,23 +46,22 @@ The separate collaborator [C41 report](codex/work_C41/RESULT.md) agrees
 with the harmonic and finite-ring rules and gives conditional acceptance,
 retaining local matching and positive dressed defect costs as assumptions.
 
-[fresh independent audit; physics-standard verdict] A second
+[fresh audit; corrected verdict] The
 [adversarial audit](contrib/counterexample_audit_20261028/README.md)
 reconstructs the literal small-cell effective Hamiltonian, regenerates the
-full n=23 certificate, checks the finite-ring quotient and all dangerous
-quartic/marker branches, and strengthens quantum-interface and unequal-speed
-Gaussian control. Its verdict verifies the controlled physics argument,
-without supplying an all-order microscopic per-defect theorem or a
-certified numerical interval for the final lambda and J. Noncommuting
-quantum-impurity checks support the dressing mechanism; they are not a
-measurement of the 24-state chain. The synthesis now includes the finite-ring
-root quotient and the refined correlation bounds exposed by this audit.
+full n=23 certificate, checks the finite-ring quotient and dangerous
+quartic/marker branches, and strengthens quantum-interface and Gaussian
+control. The second-order estimates do not by themselves establish the
+finite-J common-bulk-subtracted defect comparison. Cross-review agrees
+with the separate referee's conditional classification. New workers are
+targeting that missing comparison directly. The finite results remain
+valid; no microscopic c=24 measurement is claimed.
 
 ## Summary
 
 1. **No counterexample at small d.** Nothing above d − 1 at d = 2, in symmetric families at d = 3 to 7, or at the best d = 4 target. The d = 3 hint failed C12's own follow-up; the independent check is still pending in the recorded status. New [qubit proof reductions](contrib/d2_gap_reduction/README.md) close symmetric ferromagnetic rank-one exchange with arbitrary uniform fields (c ≤ 1/2), add a rigorous interacting gapped region, and exhaust additive on-site spin symmetries, leaving one staggered-field family beyond the known controlled classes.
 2. **No general proof.** Every lattice quantity we know that bounds c grows like (a length scale) × log d, never like d. Proofs exist in restricted classes.
-3. **A physics-level counterexample at d=24.** The one-vacancy construction above supplies c=24 using the explicit 23-state chain and its n=23 certificate. Its controlled weak-coupling conclusion has three independent AI reviews, with the continuum inputs stated explicitly. The older sparse species-graph proposal remains a separate route toward an unbounded ratio c/d; its complete controller still needs composition and review.
+3. **A leading conditional candidate at d=24.** The one-vacancy construction predicts c=24 using the explicit 23-state chain and its n=23 certificate. Its finite ingredients and conditional infrared argument have been checked; uniform vacancy matching and dressed-sector stability remain open. The older sparse species-graph proposal remains a separate route toward an unbounded ratio c/d; its complete controller still needs composition and review.
 4. **The stronger fixed-d goal remains separate.** Route A aims for unbounded c at one fixed d₀, which would rule out every bound c≤f(d). Its spatial realization of the required excited spectrum remains unfinished. The new first-order family has growing d and does not establish that stronger claim.
 
 ## Latest continuation: why the sparse first-order route leads

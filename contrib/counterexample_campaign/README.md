@@ -1,10 +1,12 @@
 # Counterexample campaign, 2026-10-28
 
-Status: **physics-level d=24, c=24 counterexample construction**, with
-three independent AI reviews. Read the
-[complete argument](COUNTEREXAMPLE_D24.md). The conclusion uses controlled
-weak-coupling matching and conventional Gaussian RG; it is not a measured
-microscopic c=24 or a rigorous lattice-to-CFT theorem.
+Current status: **conditional d=24, c=24 counterexample candidate**.
+The earlier verified-counterexample claim is withdrawn after the
+[fresh adversarial audit](../counterexample_audit_20261028/README.md).
+The finite ingredients and conditional RG argument pass; a uniform
+finite-J dressed-defect comparison remains open. The full argument and
+its updated qualifications are in [the synthesis](COUNTEREXAMPLE_D24.md).
+Historical checkpoints below retain the research progression.
 
 This campaign uses four simultaneous Codex workers: one coordinator and
 three independent research workers. It starts from collaborator commit

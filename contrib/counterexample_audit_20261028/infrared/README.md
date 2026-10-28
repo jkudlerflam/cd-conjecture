@@ -1,12 +1,15 @@
 # Adversarial audit of the vacancy infrared step
 
-Status: **[physics inference, conditional on the frozen-chain inputs]** The
-vacancy completion passes this infrared audit at the stated theoretical-physics
-standard. I find no slow/fast instability that persists at arbitrarily small
-positive J/t, no missing marginal locking operator in the stated operator
-lattice, and no order-J charge dressing of a fixed material defect. This verdict
-does not independently certify the h23 band or sector calculations. It uses
-those as hypotheses. It does not follow merely from earlier AI endorsements.
+Status: **[physics inference, conditional on the frozen-chain and local
+matching inputs]** The vacancy completion survives the targeted infrared
+checks in this audit. I find no slow/fast instability that persists at
+arbitrarily small positive J/t, no missing marginal locking operator in the
+stated operator lattice, and no order-J charge dressing in the calculations
+performed. These results support the conventional weak-coupling inference;
+they do not independently verify the full microscopic c=24 conclusion.
+The h23 phase and the uniform finite-J linked-sector matching remain inputs.
+See [the response to the independent referee](REFEREE_RESPONSE.md) for the
+distinction and correction to this report's initial stronger wording.
 
 The dynamic smooth-density bound in
 `contrib/vacancy_continuation/local_audit/README.md` is correct, with two important
@@ -21,10 +24,11 @@ The remaining physical input is the usual local Wilsonian matching of a known
 Luttinger liquid coupled weakly to finite-dimensional local degrees of freedom,
 with the gapless Gaussian sector retained. There is no calculated universal
 constant giving a numerically specified admissible J for the full 24-state bond.
-No calculation here measures its central charge. The distinction is between a
-controlled existence construction at the physics standard and a certified
-numerical parameter interval; this audit establishes the former vacancy step,
-subject to the frozen inputs stated below.
+No calculation here measures its central charge. The explicit second-order
+and Gaussian estimates strengthen the local matching argument, but do not by
+themselves establish its uniform finite-J completion. This is a substantive
+remaining matching question even when a fully rigorous lattice-to-CFT theorem
+is not being requested.
 
 Audit by an OpenAI GPT-6-family Codex subagent, 2026-10-28. No human review.
 Only this folder was written. The other chat's local_audit files were read and
@@ -43,6 +47,10 @@ not modified.
    defects are massive; they are not omitted gapless vertex operators.
 4. Parameters g and lambda are fixed before choosing J/t. All constants below
    may depend, very badly, on that fixed h23 and on b=24.
+5. The local matching has a remainder small in the normalized bulk couplings
+   and per defect/interface, uniformly in system length and defect pattern.
+   The calculations below support this hypothesis; they do not prove it at
+   finite J for the full operator-valued microscopic coupling.
 
 No argument here says that U(1) alone protects 23 bands. Without the certified
 nonforward quadratic/quartic mismatches, pair transfer can be marginally
@@ -363,19 +371,21 @@ an unbounded payload-only RG time.
 
 The specific infrared objections audited here do not refute the model. The
 bounded Gaussian kernel, finite static first moment, connected quantum
-first-moment estimate, exact port boundary norm, and explicit velocity determinant
-give concrete control at the physical standard. The bare selector positivity
-is not merely repeated as the dressed conclusion: its possible reductions are
-assigned to independently reducible O(J|lambda|) and O(J^2/t) contributions.
-Subject to the frozen band/sector hypotheses and ordinary local matching, the
-result is 23 payload bosons plus the charge boson.
+first-moment estimate, exact port boundary norm, and explicit velocity
+determinant give concrete support for the physical construction. The possible
+reductions of the bare selector margin are assigned to independently reducible
+O(J|lambda|) and O(J^2/t) terms at the orders controlled here. Completing this
+assignment uniformly at finite J is part of the matching input. Subject to
+the frozen band/sector hypotheses and that local matching input, the result
+is 23 payload bosons plus the charge boson.
 
 The precise unproved stronger statement would be a uniform microscopic
 linked-sector inequality for the full operator-valued h_j, with a remainder
 per interface tending to zero in units of J. Neither the Gaussian bound nor
-the finite ED data is that theorem. Requesting it is a stronger validation
-than the physics standard, but concealing it behind an extensive error bound
-would be a genuine gap in the argument.
+the finite ED data supplies that statement. A rigorous theorem would be a
+stronger validation; asking for a convincing physical derivation of this
+uniformity is legitimate at the physics standard too. Concealing it behind an
+extensive error bound would be a genuine gap in the argument.
 
 Reproduce the finite checks with numpy/scipy:
 

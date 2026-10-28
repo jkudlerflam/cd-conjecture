@@ -1,16 +1,18 @@
-# A 24-state counterexample at the theoretical-physics standard
+# A 24-state conditional counterexample candidate
 
-Status: **physics-level counterexample construction, independently reviewed
-by three AI workers**. The finite bond, selected material sector, and 23-band reference
-are explicit and independently checked. The infrared conclusion uses
-standard local strong-coupling matching and weak-coupling bosonization/RG.
+Status: **credible conditional candidate; full microscopic c=24 not
+established**. A fresh audit and referee comparison withdrew the earlier
+verified-counterexample wording. The finite bond, frozen material-sector
+bounds, and 23-band reference are explicit and independently checked.
+The infrared conclusion still requires finite-J local matching and a
+uniform dressed-defect comparison, in addition to conventional Gaussian RG.
 It is not a mathematical lattice-to-CFT theorem, a measured microscopic
 c=24, or an assertion of exact uniqueness on every finite ring.
 
 The construction adds one mobile vacancy to the explicit
-23-state chain. The inferred infrared theory has 23 internal compact
-bosons and one charge boson. Its total Virasoro central charge is therefore
-24, exceeding the local-dimension bound d-1=23. The construction avoids
+23-state chain. Conditional on those premises, its infrared theory has
+23 internal compact bosons and one charge boson, giving total Virasoro
+central charge 24 and exceeding the local-dimension bound d-1=23. The construction avoids
 the earlier expensive mobile wrapper and the species-graph interpreter.
 
 ## 1. The physical Hamiltonian is a fixed nearest-neighbour bond
@@ -270,8 +272,9 @@ with different propagation speeds. It does not demand exact uniqueness
 on every finite ring. The compact-boson gluing here preserves 24 oscillator
 modes; see the independent [scope check](doping_check/CONJECTURE_SCOPE.md).
 
-At the stated theoretical-physics standard, the stable local Gaussian
-phase contains 23 payload bosons and one vacancy boson:
+Conditional on finite-J matching, dressed-sector stability, and the
+stated Gaussian RG inputs, the phase contains 23 payload bosons and one
+vacancy boson:
 
     c_total=24 > d-1=23,       d=24.
 
@@ -295,9 +298,10 @@ was still in progress when this synthesis was completed.
 A subsequent [fresh adversarial audit](../counterexample_audit_20261028/README.md)
 independently rebuilds the microscopic certificate, performs new literal
 two-cell comparisons and complete low-order vertex scans, and tests
-noncommuting quantum-impurity dressing. Its final verdict verifies the
-construction at the stated physics standard, with the matching and
-parameter-interval limitations explicit. The finite-ring root quotient
+noncommuting quantum-impurity dressing. Its referee cross-review withdrew the
+earlier verified-counterexample wording: the finite ingredients and
+conditional RG argument pass, but uniform finite-J defect matching is
+not yet established. No actual refutation of the model was found. The finite-ring root quotient
 and the refined quantum-interface bound above incorporate its corrections.
 
 ## Provenance
