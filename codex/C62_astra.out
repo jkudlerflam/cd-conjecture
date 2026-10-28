@@ -1,0 +1,11 @@
+Lemma TP remains unproved. The exact stopping point is the uniform all-depth comparison retaining
+\[
+q_h^\theta(T/q_h)^p,\qquad p>2+\theta,
+\]
+for the complete interacting effective actions, their four thermal histories, and the vacuum derivatives/Hessians. I did not establish that joint marked-tree bound. The scale summation itself works.
+
+There is progress on normalization. I constructed a Hamiltonian reference with matched \(v,K\) and proved that its finite fermion-window Gibbs traces converge to the oscillator trace, retaining every scalar factor. What remains unverified is placing this trace-defined reference inside the same uniformly controlled RG comparison.
+
+The [proof and obstruction](<<local> Dropbox/Jonah Kudler-Flam/Claude/Projects/Modular c-Theorem/notes/cd_conjecture/codex/work_C62/PROOF.md>) and [result](<<local> Dropbox/Jonah Kudler-Flam/Claude/Projects/Modular c-Theorem/notes/cd_conjecture/codex/work_C62/RESULT.md>) are written. All finite algebra and reference-trace checks pass. No unconditional interacting XXZ thermal \(c=1\) theorem is claimed.
+
+[gpt_solve: backend=codex model=gpt-6-astra effort=high transcript=20261028T164921-55170]

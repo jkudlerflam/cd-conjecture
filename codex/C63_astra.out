@@ -1,0 +1,12 @@
+Wrote [RESULT.md](<<local> Dropbox/Jonah Kudler-Flam/Claude/Projects/Modular c-Theorem/notes/cd_conjecture/codex/work_C63/RESULT.md>) and updated `PROGRESS.md` and local `STATE.md`.
+
+The global bound remains open. The report provides the status-tagged covering and identifies two limitations:
+
+- Two critical Ising sectors already occur in nearest-neighbor XY, with total \(c=1\).
+- Excluding coincident sectors would still leave non-product CFTs above one.
+
+Calibrated ED through \(L=20\) found no supported violation. An explicit boundary calculation gives an entropy-size estimate tending to \(3/2\), despite quadratic excitations. This is a nonconformal false positive.
+
+All files and calculations stayed inside `work_C63`.
+
+[gpt_solve: backend=codex model=gpt-6-astra effort=high transcript=20261028T165302-57696]

@@ -1,0 +1,282 @@
+{
+  "scope": "Finite algebra and positive scale sums only. TP remains unproved.",
+  "current_algebra": {
+    "exact_matrix_cases": [
+      {
+        "N": 1,
+        "m": 1,
+        "dimension": 4,
+        "commutator_trace": 0,
+        "operator_norm_defect": 2
+      },
+      {
+        "N": 2,
+        "m": 1,
+        "dimension": 16,
+        "commutator_trace": 0,
+        "operator_norm_defect": 2
+      },
+      {
+        "N": 2,
+        "m": 2,
+        "dimension": 16,
+        "commutator_trace": 0,
+        "operator_norm_defect": 4
+      },
+      {
+        "N": 3,
+        "m": 1,
+        "dimension": 64,
+        "commutator_trace": 0,
+        "operator_norm_defect": 2
+      },
+      {
+        "N": 3,
+        "m": 2,
+        "dimension": 64,
+        "commutator_trace": 0,
+        "operator_norm_defect": 4
+      },
+      {
+        "N": 3,
+        "m": 3,
+        "dimension": 64,
+        "commutator_trace": 0,
+        "operator_norm_defect": 6
+      },
+      {
+        "N": 4,
+        "m": 1,
+        "dimension": 256,
+        "commutator_trace": 0,
+        "operator_norm_defect": 2
+      },
+      {
+        "N": 4,
+        "m": 2,
+        "dimension": 256,
+        "commutator_trace": 0,
+        "operator_norm_defect": 4
+      },
+      {
+        "N": 4,
+        "m": 3,
+        "dimension": 256,
+        "commutator_trace": 0,
+        "operator_norm_defect": 6
+      },
+      {
+        "N": 4,
+        "m": 4,
+        "dimension": 256,
+        "commutator_trace": 0,
+        "operator_norm_defect": 8
+      }
+    ],
+    "largest_free_thermal_bound_ratio": 0.9999999998973811
+  },
+  "parameter_map": [
+    {
+      "tau": "-1/5",
+      "A": "91/60",
+      "B": "-7/12",
+      "K": "3/2"
+    },
+    {
+      "tau": "-1/17",
+      "A": "203/144",
+      "B": "-119/720",
+      "K": "9/8"
+    },
+    {
+      "tau": "0",
+      "A": "7/5",
+      "B": "0",
+      "K": "1"
+    },
+    {
+      "tau": "1/23",
+      "A": "371/264",
+      "B": "161/1320",
+      "K": "11/12"
+    },
+    {
+      "tau": "1/4",
+      "A": "119/75",
+      "B": "56/75",
+      "K": "3/5"
+    }
+  ],
+  "joint_scales": [
+    {
+      "sigma": 0.8,
+      "theta": 0.2,
+      "p": 3,
+      "depth": 0,
+      "normalized_joint_sum": 1.0,
+      "bound": 3.358913824127435
+    },
+    {
+      "sigma": 0.8,
+      "theta": 0.2,
+      "p": 3,
+      "depth": 4,
+      "normalized_joint_sum": 2.867637355082747,
+      "bound": 3.358913824127435
+    },
+    {
+      "sigma": 0.8,
+      "theta": 0.2,
+      "p": 3,
+      "depth": 16,
+      "normalized_joint_sum": 3.2846595591956342,
+      "bound": 3.358913824127435
+    },
+    {
+      "sigma": 0.8,
+      "theta": 0.2,
+      "p": 3,
+      "depth": 60,
+      "normalized_joint_sum": 3.287515129790005,
+      "bound": 3.358913824127435
+    },
+    {
+      "sigma": 0.8,
+      "theta": 0.2,
+      "p": 3,
+      "depth": 120,
+      "normalized_joint_sum": 3.287515129822253,
+      "bound": 3.358913824127435
+    },
+    {
+      "sigma": 0.4,
+      "theta": 0.3,
+      "p": 3,
+      "depth": 0,
+      "normalized_joint_sum": 1.0,
+      "bound": 17.065972769043388
+    },
+    {
+      "sigma": 0.4,
+      "theta": 0.3,
+      "p": 3,
+      "depth": 4,
+      "normalized_joint_sum": 4.955185454369468,
+      "bound": 17.065972769043388
+    },
+    {
+      "sigma": 0.4,
+      "theta": 0.3,
+      "p": 3,
+      "depth": 16,
+      "normalized_joint_sum": 11.770047001683524,
+      "bound": 17.065972769043388
+    },
+    {
+      "sigma": 0.4,
+      "theta": 0.3,
+      "p": 3,
+      "depth": 60,
+      "normalized_joint_sum": 16.773917578250423,
+      "bound": 17.065972769043388
+    },
+    {
+      "sigma": 0.4,
+      "theta": 0.3,
+      "p": 3,
+      "depth": 120,
+      "normalized_joint_sum": 17.018828780508656,
+      "bound": 17.065972769043388
+    },
+    {
+      "sigma": 1.2,
+      "theta": 0.6,
+      "p": 3,
+      "depth": 0,
+      "normalized_joint_sum": 1.0,
+      "bound": 3.358913824127435
+    },
+    {
+      "sigma": 1.2,
+      "theta": 0.6,
+      "p": 3,
+      "depth": 4,
+      "normalized_joint_sum": 2.8460576586968713,
+      "bound": 3.358913824127435
+    },
+    {
+      "sigma": 1.2,
+      "theta": 0.6,
+      "p": 3,
+      "depth": 16,
+      "normalized_joint_sum": 3.2630728060667953,
+      "bound": 3.358913824127435
+    },
+    {
+      "sigma": 1.2,
+      "theta": 0.6,
+      "p": 3,
+      "depth": 60,
+      "normalized_joint_sum": 3.265928376661166,
+      "bound": 3.358913824127435
+    },
+    {
+      "sigma": 1.2,
+      "theta": 0.6,
+      "p": 3,
+      "depth": 120,
+      "normalized_joint_sum": 3.265928376693414,
+      "bound": 3.358913824127435
+    }
+  ],
+  "critical_interpolation": [
+    {
+      "depth": 0,
+      "nu": "-1/1750",
+      "r": "1/50"
+    },
+    {
+      "depth": 4,
+      "nu": "-1229/224000",
+      "r": "1/800"
+    },
+    {
+      "depth": 16,
+      "nu": "-84442493013197/3758096384000",
+      "r": "1/3276800"
+    },
+    {
+      "depth": 32,
+      "nu": "-23768448754279301278063185101/16140901064495857664000",
+      "r": "1/214748364800"
+    }
+  ],
+  "reference_traces": [
+    {
+      "beta": 2.0,
+      "fermion_traces_N1_N2": [
+        2.6772347462529154,
+        2.9700274658402894
+      ],
+      "oscillator_trace": 2.9991532275962793,
+      "ground_energies_N1_N2": [
+        -0.015294643796590542,
+        -0.015475821910953407
+      ],
+      "oscillator_ground_energy": -0.015476742133487154
+    },
+    {
+      "beta": 4.0,
+      "fermion_traces_N1_N2": [
+        1.4023959307564025,
+        1.4279879824552328
+      ],
+      "oscillator_trace": 1.4283095155870367,
+      "ground_energies_N1_N2": [
+        -0.015294643796590542,
+        -0.015475821910953407
+      ],
+      "oscillator_ground_energy": -0.015476742133487154
+    }
+  ]
+}

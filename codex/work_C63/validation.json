@@ -1,0 +1,12 @@
+{
+  "numpy": "2.4.6",
+  "scipy": "1.17.1",
+  "matrix_and_spectrum_checks": {
+    "matrix_error": 1.7763568394002505e-15,
+    "rotation_spectrum_error": 1.7763568394002505e-14,
+    "wing_error": 1.1102230246251565e-15,
+    "xx_energy_error": 5.329070518200751e-15
+  },
+  "largest_scan_residual": 8.494626664000707e-10,
+  "all_sector_minima_verified_L18": true
+}

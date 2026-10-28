@@ -1,0 +1,7 @@
+C61 remains partial. I corrected Lemma N’s free-source subtraction and proved the local Taylor identity and scale-cut criterion, but neither proved (17) nor found a violating tree.
+
+The unresolved step is realizing the cut counts in the same expansion that bounds edge loads and anchor integrals. All 2,180 finite algebra checks passed.
+
+Details are in [RESULT.md](RESULT.md) and [PROOF.md](PROOF.md). PROGRESS.md and local STATE.md record the remaining obligation.
+
+[gpt_solve: backend=codex model=gpt-6-astra effort=high transcript=20261028T164919-54986]
