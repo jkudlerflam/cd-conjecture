@@ -1,0 +1,11 @@
+# C46: Close the infrared step rigorously
+
+Read `../../STATUS.md`, `../../contrib/lit_ir_step/README.md` (no published theorem covers the step; the sharpest missing statement is an imaginary-time decoupling theorem), `../work_C45/RESULT.md` and `PROOF.md` (the physics-standard closure and its one Wilsonian input), `../work_C40/`, `../work_C44/`, `../work_C42/` (explicit bounds), `../work_C39/` (the 46-letter core, exact U(1)), `../../contrib/ir_control/README.md` and its `astra_B/` (local Schrieffer–Wolff and leakage). If `PROGRESS.md` exists in your folder, continue from it.
+
+**Goal.** Turn the infrared step for the wrapped all-n chain (d₀ = 4464) into mathematics, as far as it can be pushed.
+1. Prove the imaginary-time decoupling theorem: after eliminating the massive cell sectors at fixed small couplings, the logical Grassmann (or coherent-state) action has exponentially decaying retarded kernels, uniformly in the number of cells and in inverse temperature, with explicit constants in terms of C42's and C44's bounds. Use cluster expansions, polymer or Brydges–Battle–Federbush bounds, or Lieb–Robinson-type locality, whichever works.
+2. Show the resulting logical theory satisfies the hypotheses of the multi-channel constructive RG (Mastropietro–Porta 2108.13708, Porta–Scola–Singh 2509.08665): exact U(1), distinct velocities, nonresonance at the margins C39 supplies, and kernels of the required decay. Identify precisely any hypothesis that fails and whether it can be repaired.
+3. From the constructive RG, derive a rigorous statement that identifies the central charge: for example the low-temperature free energy f(β) = e₀ − (π/6)Σ_a v_a⁻¹ β⁻² + o(β⁻²) with n + 1 terms, or the corresponding Casimir or correlation asymptotics, and say how it implies c = n + 1 in the conjecture's sense.
+State plainly at the end what is now a theorem, what remains a conjecture, and the shortest path to closing what remains.
+
+Rules: tag every claim as proved, numerical, heuristic, or assumed; full proofs for anything tagged proved. No probabilities, odds or percent-confidence estimates in any file. Python (numpy, scipy, standard library) only, inside your folder; no network; never modify files outside your folder. Plain prose without em-dashes. Keep `PROGRESS.md` updated and write `RESULT.md` and `PROOF.md` at the end.
