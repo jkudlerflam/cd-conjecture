@@ -1,0 +1,41 @@
+{
+  "cases": [
+    {
+      "n": 1,
+      "p": 1,
+      "dimension": 1728,
+      "filter_scale": 433.95293303198713,
+      "core_scale": 0.2,
+      "eigenvalues": [
+        2.5785727704895133e-16,
+        2.5785740939784934e-16,
+        0.014758063466249713,
+        0.014758063466282332
+      ],
+      "eigenpair_residual": 1.007301741970206e-13,
+      "code_residual": 2.487378126932855e-16,
+      "code_subspace_error": 1.0707215241761637e-15,
+      "charge_gap": 0.014758063466282056,
+      "scope": "All legal initialized core states, every vacancy configuration, and all occupation-filter states. Endpoint helix tracks factor exactly and are checked separately."
+    },
+    {
+      "n": 1,
+      "p": 2,
+      "dimension": 4320,
+      "filter_scale": 433.95293303198713,
+      "core_scale": 0.2,
+      "eigenvalues": [
+        2.9336569229123966e-16,
+        2.9336585110991727e-16,
+        3.3630954207130155e-05,
+        3.3630954207130196e-05
+      ],
+      "eigenpair_residual": 6.248742056210365e-15,
+      "code_residual": 3.3848210563316643e-16,
+      "code_subspace_error": 1.5124068811621531e-13,
+      "charge_gap": 3.36309542059432e-05,
+      "scope": "All legal initialized core states, every vacancy configuration, and all occupation-filter states. Endpoint helix tracks factor exactly and are checked separately."
+    }
+  ],
+  "seconds": 0.0639807500410825
+}

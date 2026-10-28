@@ -1,0 +1,78 @@
+[
+  {
+    "n": 1,
+    "k": 3,
+    "b": 4,
+    "t_selector": 89.98213207196933,
+    "mu_selector": 56.92794991640844,
+    "energy_density": -18.33424471347057,
+    "eta_selector": 0.029934535852605748,
+    "wrong_length_coefficient": 1.6935733586022717,
+    "illegal_selector_margin": 1,
+    "wrong_occupation_margin": 0.6,
+    "K_selector": 368.9285282878773,
+    "shortest_path_coefficients": {
+      "1": "2",
+      "2": "1/2"
+    },
+    "length_scan_max": 500,
+    "min_secant_ratio": 0.029934535852605748
+  },
+  {
+    "n": 2,
+    "k": 4,
+    "b": 5,
+    "t_selector": 163.0459804525912,
+    "mu_selector": 173.89948023275443,
+    "energy_density": -18.584911167999582,
+    "eta_selector": 0.014709963527673878,
+    "wrong_length_coefficient": 1.3984004257914449,
+    "illegal_selector_margin": 1,
+    "wrong_occupation_margin": 0.5,
+    "K_selector": 661.1839218103648,
+    "shortest_path_coefficients": {
+      "1": "2",
+      "2": "1/4"
+    },
+    "length_scan_max": 500,
+    "min_secant_ratio": 0.014709963527673878
+  },
+  {
+    "n": 3,
+    "k": 5,
+    "b": 6,
+    "t_selector": 287.0774550579757,
+    "mu_selector": 379.8948867190003,
+    "energy_density": -20.057976824916924,
+    "eta_selector": 0.008021866339408565,
+    "wrong_length_coefficient": 1.3028969735326505,
+    "illegal_selector_margin": 1,
+    "wrong_occupation_margin": 0.3999999999999999,
+    "K_selector": 1157.309820231903,
+    "shortest_path_coefficients": {
+      "1": "2",
+      "2": "1/8"
+    },
+    "length_scan_max": 500,
+    "min_secant_ratio": 0.008021866339408565
+  },
+  {
+    "n": 4,
+    "k": 6,
+    "b": 7,
+    "t_selector": 475.7791627275649,
+    "mu_selector": 707.7634236378393,
+    "energy_density": -21.795857795812125,
+    "eta_selector": 0.004731717556163935,
+    "wrong_length_coefficient": 1.2512526171349965,
+    "illegal_selector_margin": 1,
+    "wrong_occupation_margin": 0.29999999999999993,
+    "K_selector": 1912.1166509102595,
+    "shortest_path_coefficients": {
+      "1": "2",
+      "2": "1/16"
+    },
+    "length_scan_max": 500,
+    "min_secant_ratio": 0.004731717556163935
+  }
+]

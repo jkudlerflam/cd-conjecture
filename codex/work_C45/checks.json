@@ -1,0 +1,60 @@
+{
+  "tag": "numerical: independent local controls, 2 and 3 cells of dimension 4",
+  "scope": "Not a wrapper or central-charge calculation.",
+  "local_SW": [
+    {
+      "cells": 2,
+      "dimension": 16,
+      "code_dimension": 4,
+      "second_order_identity_error": 1.3985787785349405e-17,
+      "runs": [
+        {
+          "lambda": 0.02,
+          "remainder": 2.7424937042769057e-06,
+          "remainder_over_lambda3": 0.34281171303461316,
+          "defect_inequality_min_eigenvalue": -4.591596200476111e-17
+        },
+        {
+          "lambda": 0.01,
+          "remainder": 3.415057360573852e-07,
+          "remainder_over_lambda3": 0.34150573605738516,
+          "defect_inequality_min_eigenvalue": -3.7838655819744105e-17
+        },
+        {
+          "lambda": 0.005,
+          "remainder": 4.2607103315180816e-08,
+          "remainder_over_lambda3": 0.3408568265214465,
+          "defect_inequality_min_eigenvalue": -9.460360370639055e-18
+        }
+      ]
+    },
+    {
+      "cells": 3,
+      "dimension": 64,
+      "code_dimension": 8,
+      "second_order_identity_error": 6.591835390613777e-17,
+      "runs": [
+        {
+          "lambda": 0.02,
+          "remainder": 4.9540580076762495e-06,
+          "remainder_over_lambda3": 0.6192572509595311,
+          "defect_inequality_min_eigenvalue": -3.2083061743420606e-15
+        },
+        {
+          "lambda": 0.01,
+          "remainder": 6.201603497556085e-07,
+          "remainder_over_lambda3": 0.6201603497556084,
+          "defect_inequality_min_eigenvalue": -3.1022141239891982e-15
+        },
+        {
+          "lambda": 0.005,
+          "remainder": 7.757822628388483e-08,
+          "remainder_over_lambda3": 0.6206258102710785,
+          "defect_inequality_min_eigenvalue": -2.0864251229838403e-15
+        }
+      ]
+    }
+  ],
+  "exact_budget_checks": "passed",
+  "irrelevance_margin": 0.3237900077244502
+}

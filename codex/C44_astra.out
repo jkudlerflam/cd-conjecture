@@ -1,0 +1,9 @@
+The finite wrapper audit passes for every n at d₀=4464. [RESULT.md](RESULT.md) gives the verdict; [PROOFS.md](PROOFS.md) contains the derivations and explicit parameter budgets.
+
+Equalization is approximate at finite parameters. The scalar length interaction and mixed payload terms are retained and bounded against C39’s lacunary scales. The mixed marker-port term at order \(u\lambda\) vanishes.
+
+Small-cell ED confirms the code; transport and projected-ring spectra confirm identity transport and momentum gluing. No full microscopic many-cell ED or central charge was computed.
+
+The remaining assumption is thermodynamic infrared control, including massive-sector stability and Gaussian stability. `PROGRESS.md` and local `STATE.md` are updated.
+
+[gpt_solve: backend=codex model=gpt-6-astra effort=high transcript=20261028T105256-42361]

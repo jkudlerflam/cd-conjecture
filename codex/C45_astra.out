@@ -1,0 +1,7 @@
+Written [RESULT.md](RESULT.md) and the full derivation in [PROOF.md](PROOF.md).
+
+The conclusion is yes at the theoretical-physics standard, using one explicit standard Wilsonian/RG input. C44’s completed wrapper audit and a volume-independent local SW remainder bound close the coupling hierarchy for every fixed \(n\), giving \(c=n+1\) at \(d_0=4464\).
+
+The coupling schedule includes scalar equalization errors, mixed terms and the smallest wrapper gap. Small algebra checks pass. Exact all-order infrared kernels and a rigorous microscopic CFT theorem remain unproved.
+
+[gpt_solve: backend=codex model=gpt-6-astra effort=high transcript=20261028T110027-45010]

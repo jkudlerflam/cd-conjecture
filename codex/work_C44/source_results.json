@@ -1,0 +1,390 @@
+{
+  "status": "numerical",
+  "cases": [
+    {
+      "n": 1,
+      "wvac": 0.16,
+      "ratio": 0.03,
+      "s": 2.59812370231316e-07,
+      "core_dimension": 54,
+      "charge_dimensions": [
+        4,
+        10
+      ],
+      "charge_gaps": [
+        0.007779742825231639,
+        8.660412341043866e-06
+      ],
+      "source_dimensions_per_bus": [
+        480,
+        1440
+      ],
+      "first_order_port_norm": 0.0,
+      "code_residual": 2.376785622611123e-17,
+      "adjacency": [
+        [
+          0.9836219337322423,
+          0.9836219337322423
+        ],
+        [
+          0.9966253739316595,
+          0.9966253739316595
+        ]
+      ],
+      "endpoint_weights": [
+        0.5163780662677581,
+        0.5000857054007577
+      ],
+      "beta_length": 0.19454574120222304,
+      "compensator_norm": 2.2211363698911324,
+      "graph_residual": 5.401706107319e-13,
+      "bare_traceless_norm": 1.9730921959289358e-08,
+      "bare_error": 0.028729273771930835,
+      "length_error": 0.028243770918518023,
+      "fast_error": 0.02863682105089575,
+      "limiting_bare_error": 0.0004515309032860436,
+      "limiting_length_error": 0.00035907815591849305,
+      "scalar_density_interaction": -0.006190616294284457,
+      "mixed_density_payload_norm": 4.244865162493943e-12,
+      "max_hermiticity": 3.308722450218349e-24
+    },
+    {
+      "n": 1,
+      "wvac": 0.16,
+      "ratio": 0.003,
+      "s": 2.59812370231316e-08,
+      "core_dimension": 54,
+      "charge_dimensions": [
+        4,
+        10
+      ],
+      "charge_gaps": [
+        0.007779742825231639,
+        8.660412341043866e-06
+      ],
+      "source_dimensions_per_bus": [
+        480,
+        1440
+      ],
+      "first_order_port_norm": 0.0,
+      "code_residual": 2.376785622611123e-17,
+      "adjacency": [
+        [
+          0.9836219337322423,
+          0.9836219337322423
+        ],
+        [
+          0.9966253739316595,
+          0.9966253739316595
+        ]
+      ],
+      "endpoint_weights": [
+        0.5163780662677581,
+        0.5000857054007577
+      ],
+      "beta_length": 0.19454574120222304,
+      "compensator_norm": 2.2211363698911324,
+      "graph_residual": 5.524410265297779e-13,
+      "bare_traceless_norm": 1.9730921959289358e-08,
+      "bare_error": 0.0035177458185841636,
+      "length_error": 0.0030628174665545383,
+      "fast_error": 0.0034252930744128425,
+      "limiting_bare_error": 0.0004515309032860436,
+      "limiting_length_error": 0.00035907815591849305,
+      "scalar_density_interaction": -0.0006909106392307754,
+      "mixed_density_payload_norm": 4.07723610376407e-12,
+      "max_hermiticity": 3.308722450212654e-24
+    },
+    {
+      "n": 1,
+      "wvac": 0.1,
+      "ratio": 0.03,
+      "s": 1.518843089298727e-08,
+      "core_dimension": 54,
+      "charge_dimensions": [
+        4,
+        10
+      ],
+      "charge_gaps": [
+        0.0019602284896969024,
+        5.062810297662423e-07
+      ],
+      "source_dimensions_per_bus": [
+        480,
+        1440
+      ],
+      "first_order_port_norm": 0.0,
+      "code_residual": 2.376785622611123e-17,
+      "adjacency": [
+        [
+          0.9940467650459882,
+          0.9940467650459882
+        ],
+        [
+          0.9987243729134292,
+          0.9987243729134292
+        ]
+      ],
+      "endpoint_weights": [
+        0.5059532349540118,
+        0.5000127214188699
+      ],
+      "beta_length": 0.194902042543976,
+      "compensator_norm": 2.082380687173268,
+      "graph_residual": 2.1091021775442102e-13,
+      "bare_traceless_norm": 1.9730921959289358e-08,
+      "bare_error": 0.02871119885562505,
+      "length_error": 0.028539311076311205,
+      "fast_error": 0.028676286541324425,
+      "limiting_bare_error": 0.00016330041353231891,
+      "limiting_length_error": 0.00012838808902850145,
+      "scalar_density_interaction": -0.006224212826954477,
+      "mixed_density_payload_norm": 6.215976398432095e-13,
+      "max_hermiticity": 3.6992641586780656e-24
+    },
+    {
+      "n": 1,
+      "wvac": 0.1,
+      "ratio": 0.003,
+      "s": 1.518843089298727e-09,
+      "core_dimension": 54,
+      "charge_dimensions": [
+        4,
+        10
+      ],
+      "charge_gaps": [
+        0.0019602284896969024,
+        5.062810297662423e-07
+      ],
+      "source_dimensions_per_bus": [
+        480,
+        1440
+      ],
+      "first_order_port_norm": 0.0,
+      "code_residual": 2.376785622611123e-17,
+      "adjacency": [
+        [
+          0.9940467650459882,
+          0.9940467650459882
+        ],
+        [
+          0.9987243729134292,
+          0.9987243729134292
+        ]
+      ],
+      "endpoint_weights": [
+        0.5059532349540118,
+        0.5000127214188699
+      ],
+      "beta_length": 0.194902042543976,
+      "compensator_norm": 2.082380687173268,
+      "graph_residual": 2.1319430549589485e-13,
+      "bare_traceless_norm": 1.9730921959289358e-08,
+      "bare_error": 0.0034652656680451647,
+      "length_error": 0.0033011066587550486,
+      "fast_error": 0.003430353345165456,
+      "limiting_bare_error": 0.00016330041353231891,
+      "limiting_length_error": 0.00012838808902850145,
+      "scalar_density_interaction": -0.0006926575973807553,
+      "mixed_density_payload_norm": 5.501384695948043e-13,
+      "max_hermiticity": 1.2622545011860544e-29
+    },
+    {
+      "n": 2,
+      "wvac": 0.16,
+      "ratio": 0.03,
+      "s": 3.368728972441559e-09,
+      "core_dimension": 160,
+      "charge_dimensions": [
+        5,
+        15
+      ],
+      "charge_gaps": [
+        0.0012444830320205158,
+        1.1229096574805197e-07
+      ],
+      "source_dimensions_per_bus": [
+        2160,
+        7560
+      ],
+      "first_order_port_norm": 0.0,
+      "code_residual": 4.8479584935265373e-17,
+      "adjacency": [
+        [
+          0.9869396105447066,
+          0.998730085254718,
+          0.9869396105447066
+        ],
+        [
+          0.9966543137565533,
+          0.9999559499995465,
+          0.9966543137565536
+        ]
+      ],
+      "endpoint_weights": [
+        0.5136953468279342,
+        0.5000841114418967
+      ],
+      "beta_length": 0.20919151565786137,
+      "compensator_norm": 2.2385359227307506,
+      "graph_residual": 2.3762968975417273e-13,
+      "bare_traceless_norm": 4.2963269883836496e-10,
+      "bare_error": 0.014451885986252345,
+      "length_error": 0.014272374183157533,
+      "fast_error": 0.014406539157964972,
+      "limiting_bare_error": 0.0001781135988605853,
+      "limiting_length_error": 0.00013276676846266146,
+      "scalar_density_interaction": -0.0031259692713468132,
+      "mixed_density_payload_norm": 5.712730249333957e-12,
+      "max_hermiticity": 4.177097696350046e-25
+    },
+    {
+      "n": 2,
+      "wvac": 0.16,
+      "ratio": 0.003,
+      "s": 3.368728972441559e-10,
+      "core_dimension": 160,
+      "charge_dimensions": [
+        5,
+        15
+      ],
+      "charge_gaps": [
+        0.0012444830320205158,
+        1.1229096574805197e-07
+      ],
+      "source_dimensions_per_bus": [
+        2160,
+        7560
+      ],
+      "first_order_port_norm": 0.0,
+      "code_residual": 4.8479584935265373e-17,
+      "adjacency": [
+        [
+          0.9869396105447066,
+          0.998730085254718,
+          0.9869396105447066
+        ],
+        [
+          0.9966543137565533,
+          0.9999559499995465,
+          0.9966543137565536
+        ]
+      ],
+      "endpoint_weights": [
+        0.5136953468279342,
+        0.5000841114418967
+      ],
+      "beta_length": 0.20919151565786137,
+      "compensator_norm": 2.2385359227307506,
+      "graph_residual": 4.928242605001023e-13,
+      "bare_traceless_norm": 4.2963269883836496e-10,
+      "bare_error": 0.0017685456265003092,
+      "length_error": 0.001590292214792429,
+      "fast_error": 0.001723198797670506,
+      "limiting_bare_error": 0.0001781135988605853,
+      "limiting_length_error": 0.00013276676846266146,
+      "scalar_density_interaction": -0.00034838274056335017,
+      "mixed_density_payload_norm": 8.76264042341734e-13,
+      "max_hermiticity": 4.200060986000835e-25
+    },
+    {
+      "n": 2,
+      "wvac": 0.1,
+      "ratio": 0.03,
+      "s": 7.632377729827055e-11,
+      "core_dimension": 160,
+      "charge_dimensions": [
+        5,
+        15
+      ],
+      "charge_gaps": [
+        0.00019602004952434804,
+        2.544125909942352e-09
+      ],
+      "source_dimensions_per_bus": [
+        2160,
+        7560
+      ],
+      "first_order_port_norm": 0.0,
+      "code_residual": 4.8479584935265373e-17,
+      "adjacency": [
+        [
+          0.9949540107295688,
+          0.999802175846413,
+          0.9949540107295688
+        ],
+        [
+          0.9987279899756838,
+          0.9999935734402896,
+          0.9987279899756838
+        ]
+      ],
+      "endpoint_weights": [
+        0.5051449013472248,
+        0.5000126271424886
+      ],
+      "beta_length": 0.21010656203679867,
+      "compensator_norm": 2.0915567461525133,
+      "graph_residual": 5.762079763267712e-13,
+      "bare_traceless_norm": 4.2963269883836496e-10,
+      "bare_error": 0.014443709693664817,
+      "length_error": 0.014375012410394298,
+      "fast_error": 0.014426488918064322,
+      "limiting_bare_error": 6.847938406151406e-05,
+      "limiting_length_error": 5.1258607757012735e-05,
+      "scalar_density_interaction": -0.0031342884551000716,
+      "mixed_density_payload_norm": 3.31291259753878e-10,
+      "max_hermiticity": 4.1792031564764965e-25
+    },
+    {
+      "n": 2,
+      "wvac": 0.1,
+      "ratio": 0.003,
+      "s": 7.632377729827055e-12,
+      "core_dimension": 160,
+      "charge_dimensions": [
+        5,
+        15
+      ],
+      "charge_gaps": [
+        0.00019602004952434804,
+        2.544125909942352e-09
+      ],
+      "source_dimensions_per_bus": [
+        2160,
+        7560
+      ],
+      "first_order_port_norm": 0.0,
+      "code_residual": 4.8479584935265373e-17,
+      "adjacency": [
+        [
+          0.9949540107295688,
+          0.999802175846413,
+          0.9949540107295688
+        ],
+        [
+          0.9987279899756838,
+          0.9999935734402896,
+          0.9987279899756838
+        ]
+      ],
+      "endpoint_weights": [
+        0.5051449013472248,
+        0.5000126271424886
+      ],
+      "beta_length": 0.21010656203679867,
+      "compensator_norm": 2.0915567461525133,
+      "graph_residual": 5.079542956532567e-13,
+      "bare_traceless_norm": 4.2963269883836496e-10,
+      "bare_error": 0.0017429681689349055,
+      "length_error": 0.0016744669977615887,
+      "fast_error": 0.0017257473934110576,
+      "limiting_bare_error": 6.847938406151406e-05,
+      "limiting_length_error": 5.1258607757012735e-05,
+      "scalar_density_interaction": -0.0003486991155119781,
+      "mixed_density_payload_norm": 3.295772857506583e-11,
+      "max_hermiticity": 7.331685608669132e-26
+    }
+  ],
+  "seconds": 14.823692792095244
+}

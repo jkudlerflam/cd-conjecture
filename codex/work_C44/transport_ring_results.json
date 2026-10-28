@@ -1,0 +1,81 @@
+{
+  "transport": [
+    {
+      "n": 1,
+      "logical_pair_dimension": 4,
+      "charge_core_supports": [
+        24,
+        60
+      ],
+      "converted_overlap_error": 8.326672684688674e-17,
+      "unconverted_norm": 0.0,
+      "beta_vacancy": 0.2489680510340439,
+      "helix_overlap_error": 3.1109634363732752e-15
+    },
+    {
+      "n": 2,
+      "logical_pair_dimension": 16,
+      "charge_core_supports": [
+        80,
+        240
+      ],
+      "converted_overlap_error": 1.3877787807814457e-16,
+      "unconverted_norm": 0.0,
+      "beta_vacancy": 0.2472154486694121,
+      "helix_overlap_error": 4.110211252433133e-15
+    }
+  ],
+  "helix": [
+    {
+      "N": 4,
+      "dimension": 16,
+      "kernel_dimension": 1,
+      "gap": 0.07612046748871325,
+      "lower_bound": 0.03571428571428571
+    },
+    {
+      "N": 5,
+      "dimension": 32,
+      "kernel_dimension": 1,
+      "gap": 0.04894348370484638,
+      "lower_bound": 0.022222222222222223
+    },
+    {
+      "N": 6,
+      "dimension": 64,
+      "kernel_dimension": 1,
+      "gap": 0.034074173710931674,
+      "lower_bound": 0.015151515151515152
+    }
+  ],
+  "rings": [
+    {
+      "n": 1,
+      "M": 3,
+      "r": 1,
+      "L": 13,
+      "dimension": 104,
+      "spectrum_error": 5.10702591327572e-15,
+      "scope": "Projected physical marker graph with rescaled exact bare C39 second-order bond, all payload charges. Both marker and payload cyclic ordering retained."
+    },
+    {
+      "n": 1,
+      "M": 4,
+      "r": 2,
+      "L": 18,
+      "dimension": 432,
+      "spectrum_error": 1.687538997430238e-14,
+      "scope": "Projected physical marker graph with rescaled exact bare C39 second-order bond, all payload charges. Both marker and payload cyclic ordering retained."
+    },
+    {
+      "n": 2,
+      "M": 3,
+      "r": 1,
+      "L": 16,
+      "dimension": 1024,
+      "spectrum_error": 2.3092638912203256e-14,
+      "scope": "Projected physical marker graph with rescaled exact bare C39 second-order bond, all payload charges. Both marker and payload cyclic ordering retained."
+    }
+  ],
+  "seconds": 0.8273090000730008
+}
