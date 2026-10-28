@@ -1,0 +1,159 @@
+{
+  "full_spectra": [
+    {
+      "b": 2,
+      "M": 5,
+      "r": 2,
+      "L": 12,
+      "dimension": 24,
+      "complete_spectrum_error": 3.9968028886505635e-15,
+      "ground_energy": -3.2360679774997902,
+      "gap": 0.43355090061163937
+    },
+    {
+      "b": 2,
+      "M": 5,
+      "r": 3,
+      "L": 13,
+      "dimension": 26,
+      "complete_spectrum_error": 3.9968028886505635e-15,
+      "ground_energy": -3.2360679774997934,
+      "gap": 0.37067208739920776
+    },
+    {
+      "b": 3,
+      "M": 5,
+      "r": 2,
+      "L": 17,
+      "dimension": 34,
+      "complete_spectrum_error": 3.552713678800501e-15,
+      "ground_energy": -3.23606797749979,
+      "gap": 0.2185244560165147
+    },
+    {
+      "b": 4,
+      "M": 4,
+      "r": 2,
+      "L": 18,
+      "dimension": 27,
+      "complete_spectrum_error": 3.9968028886505635e-15,
+      "ground_energy": -2.8284271247461894,
+      "gap": 0.1705750271914872
+    },
+    {
+      "b": 4,
+      "M": 6,
+      "r": 3,
+      "L": 27,
+      "dimension": 90,
+      "complete_spectrum_error": 9.769962616701378e-15,
+      "ground_energy": -4.000000000000004,
+      "gap": 0.10782051768070744
+    },
+    {
+      "b": 4,
+      "M": 8,
+      "r": 4,
+      "L": 36,
+      "dimension": 315,
+      "complete_spectrum_error": 1.687538997430238e-14,
+      "ground_energy": -5.226251859505509,
+      "gap": 0.07939850907001578
+    }
+  ],
+  "continuum": [
+    {
+      "b": 1,
+      "velocity": 3.0,
+      "K": 0.4444444444444444,
+      "casimir_c": 0.9999997044189509,
+      "current_K_estimate": 0.44444761777594105,
+      "charge_inverse_K_estimate": 2.250056793935722,
+      "exact_inverse_K": 2.25
+    },
+    {
+      "b": 4,
+      "velocity": 9.0,
+      "K": 0.04938271604938271,
+      "casimir_c": 0.9999997044189513,
+      "current_K_estimate": 0.049385575878456246,
+      "charge_inverse_K_estimate": 20.238904717279183,
+      "exact_inverse_K": 20.25
+    },
+    {
+      "b": 9,
+      "velocity": 19.0,
+      "K": 0.0110803324099723,
+      "casimir_c": 0.9999997044189529,
+      "current_K_estimate": 0.011081028632709582,
+      "charge_inverse_K_estimate": 89.99785704436799,
+      "exact_inverse_K": 90.25
+    }
+  ],
+  "physical_entropies": [
+    {
+      "b": 4,
+      "M": 8,
+      "r": 4,
+      "L": 36,
+      "cut": 18,
+      "physical_dimension": 315,
+      "entropy": 2.003791045756825,
+      "norm_error": 3.1086244689504383e-15,
+      "largest_schmidt_block": [
+        34,
+        34
+      ],
+      "xx_control_entropy": 1.0437380304709085
+    },
+    {
+      "b": 4,
+      "M": 12,
+      "r": 6,
+      "L": 54,
+      "cut": 27,
+      "physical_dimension": 4158,
+      "entropy": 2.141880094436506,
+      "norm_error": 4.3298697960381105e-15,
+      "largest_schmidt_block": [
+        130,
+        130
+      ],
+      "xx_control_entropy": 1.1754758215304626
+    },
+    {
+      "b": 4,
+      "M": 16,
+      "r": 8,
+      "L": 72,
+      "cut": 36,
+      "physical_dimension": 57915,
+      "entropy": 2.23878096695573,
+      "norm_error": 2.2426505097428162e-14,
+      "largest_schmidt_block": [
+        500,
+        500
+      ],
+      "xx_control_entropy": 1.270191330997239
+    }
+  ],
+  "half_chain_entropy_slopes": [
+    {
+      "M_pair": [
+        8,
+        12
+      ],
+      "marker_c": 1.0217084966248953,
+      "xx_control_c": 0.9747161106480035
+    },
+    {
+      "M_pair": [
+        12,
+        16
+      ],
+      "marker_c": 1.0104995945007893,
+      "xx_control_c": 0.9877102385236599
+    }
+  ],
+  "limitation": "Projected marker model only, no microscopic finite-u CFT test."
+}

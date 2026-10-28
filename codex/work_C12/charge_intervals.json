@@ -1,0 +1,26 @@
+[
+  {
+    "L": 12,
+    "delta": 0.9,
+    "N": 4,
+    "mu_lower": -1.5869811815505264,
+    "mu_upper": -1.573244133366619,
+    "stable_against_tested_sectors": true
+  },
+  {
+    "L": 18,
+    "delta": 0.9,
+    "N": 6,
+    "mu_lower": -1.5824479906087454,
+    "mu_upper": -1.5604562064993281,
+    "stable_against_tested_sectors": true
+  },
+  {
+    "L": 18,
+    "delta": 0.75,
+    "N": 6,
+    "mu_lower": -1.6442408004529376,
+    "mu_upper": -1.626231230801963,
+    "stable_against_tested_sectors": true
+  }
+]

@@ -1,0 +1,98 @@
+[
+  {
+    "p": 1,
+    "epsilon": 1e-06,
+    "dimension": 32,
+    "gamma": 0.5000009999999996,
+    "predicted_complement_threshold": 0.024025778848533037,
+    "lowest_levels": [
+      3.909310536426505e-16,
+      8.860379324152306e-07,
+      0.23245553203367628
+    ],
+    "code_angle": 1.4535359940130877e-07,
+    "code_angle_bound": 0.0588648341759542,
+    "endpoint_error": 2.461849938389212e-09,
+    "endpoint_angle_bound": 4.1112206322615336e-07
+  },
+  {
+    "p": 1,
+    "epsilon": 1e-07,
+    "dimension": 32,
+    "gamma": 0.5000000999999997,
+    "predicted_complement_threshold": 0.02402576176036126,
+    "lowest_levels": [
+      7.873626512818635e-17,
+      8.860379574621168e-08,
+      0.2324555320336759
+    ],
+    "code_angle": 1.4535357917626733e-08,
+    "code_angle_bound": 0.01861399837813466,
+    "endpoint_error": 2.4618412888209375e-10,
+    "endpoint_angle_bound": 4.111220060210975e-08
+  },
+  {
+    "p": 1,
+    "epsilon": 1e-08,
+    "dimension": 32,
+    "gamma": 0.5000000099999998,
+    "predicted_complement_threshold": 0.024025760051542246,
+    "lowest_levels": [
+      5.7634283027975615e-18,
+      8.860378960021563e-09,
+      0.23245553203367597
+    ],
+    "code_angle": 1.4535357996907693e-09,
+    "code_angle_bound": 0.005886241095265687,
+    "endpoint_error": 2.4618182749272987e-11,
+    "endpoint_angle_bound": 4.111220082635017e-09
+  },
+  {
+    "p": 2,
+    "epsilon": 1e-06,
+    "dimension": 80,
+    "gamma": 0.5000009999999996,
+    "predicted_complement_threshold": 0.0049269305536345795,
+    "lowest_levels": [
+      3.316265892034055e-16,
+      9.200939416776297e-07,
+      0.033488286704737684
+    ],
+    "code_angle": 2.482693558361307e-07,
+    "code_angle_bound": 0.28709593195328265,
+    "endpoint_error": 1.1329002551382206e-08,
+    "endpoint_angle_bound": 7.02211780290176e-07
+  },
+  {
+    "p": 2,
+    "epsilon": 1e-07,
+    "dimension": 80,
+    "gamma": 0.5000000999999997,
+    "predicted_complement_threshold": 0.004926928012761914,
+    "lowest_levels": [
+      -3.476507264896909e-16,
+      9.200939824152988e-08,
+      0.03348828670473711
+    ],
+    "code_angle": 2.4826925672527584e-08,
+    "code_angle_bound": 0.09077110625387438,
+    "endpoint_error": 1.1328958548669287e-09,
+    "endpoint_angle_bound": 7.022114999623457e-08
+  },
+  {
+    "p": 2,
+    "epsilon": 1e-08,
+    "dimension": 80,
+    "gamma": 0.5000000099999998,
+    "predicted_complement_threshold": 0.004926927758674312,
+    "lowest_levels": [
+      -2.348437167148414e-16,
+      9.200938816204605e-09,
+      0.033488286704737365
+    ],
+    "code_angle": 2.482692718318367e-09,
+    "code_angle_bound": 0.028703819350137067,
+    "endpoint_error": 1.1329176695389898e-10,
+    "endpoint_angle_bound": 7.022115426901522e-09
+  }
+]

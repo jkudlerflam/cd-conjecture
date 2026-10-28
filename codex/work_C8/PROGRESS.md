@@ -1,118 +1,115 @@
 # C8 progress
 
-2026-10-27. Sixth run in progress, still nonconclusive. The full report is
-`RESULT.md`, with new proofs in Sections 25-29 and four supporting notes.
-All writes stayed in this folder. Start here; do not redo completed work.
+2026-10-27. Sixth run finished, nonconclusive. RESULT.md Sections 30-35
+contain the new proofs and checks. All writes stayed in this folder.
+Read this first and do not redo completed work.
 
 ## Current best answer
 
-No verified counterexample, bound for the full class, or construction
-of unbounded c at fixed d has been obtained. The main new result is a
-complete finite-cell wrapper: ANY initialized uniform frustration-free
-q-state core can be put into one repeated nearest-neighbor bond of
-local dimension 6q+3 whose COMPLETE open-chain ground code at BOTH
-lengths k+1,k+2 is the original payload, a fixed auxiliary helix, and
-a vacancy wavefunction. All competing particle numbers, endpoint
-counts, and illegal arrow sectors are excluded with explicit gaps.
-The wrapper alone fails on rings; a separate selector must supply resets.
+No verified counterexample, full-class bound, or fixed-d unbounded-c
+construction has been obtained. The remaining central bottlenecks are
+(i) a high-channel initialized uniform NN core and (ii) infrared control
+at fixed nonzero microscopic coupling.
+
+The finite-cell and all-ring interface is substantially more complete.
+For an exact initialized FF q-state core of length k>=3, there is a
+repeated NN bond at d=24q+12 whose COMPLETE unperturbed ground manifold
+on every sufficiently large ring consists of b/(b+1) cells, b=k+1,
+carrying the intended code. All other lengths, marker sectors, and
+wrapper sectors have explicit energy bounds. A two-site marker hop
+transports both payloads by a scalar after projection. Two more qubit
+tracks equalize the projected payload coupling at both lengths exactly,
+with total dimension d=96q+48. This is still conditional on the core.
 
 ## New proved results and files
 
-1. `classical_readout.md`: nonnegative equal-amplitude simultaneous
-   Clifford ports with n<=floor(q(q-1)/4) complex flavors, scale 1/(2n).
-   An exactly graded version has n<=floor(q_+ q_-/2). Its flat parent
-   is stoquastic. A clean classical-permutation history gives exact
-   ports and gap 1-cos(pi/(2C)). A scheduled local reversible readout
-   circuit is described, but its autonomous uniform controller is NOT
-   constructed. Proper edge coloring also gives independent logical
-   Z_f fields from diagonal two-site readout operators, so the code
-   can reach the incommensurate target at first order.
-2. `tagged_vacancy.md`: mobile endpoint tags extend the previous vacancy
-   construction to cores with positive one-site boundary penalties.
-   A quantitative within-sector gap is delta p_min gamma divided by
-   ((sqrt(delta)+sqrt(M))^2+p_min gamma).
-3. `length_filter.md`: a pinned qubit helix accepts only occupied length
-   k in the needed range, with explicit rejection energy of order k^-4.
-   At J_filter>=2U/epsilon_* and 0<w<U/(k+1), both physical lengths
-   k+1,k+2 select k occupied sites with margin >=U-w(N-1), initially
-   assuming the ordered endpoint-tag sector.
-4. `arrow_wrapper.md`: three arrow states and endpoint rewards remove
-   that sector assumption, giving the complete finite-cell theorem
-   above. Cut transport requires the local conversion |H_after><H_before|;
-   with it the overlap is beta I, while the identity overlap is zero.
-   Periodic use of this wrapper WITHOUT a separate selector is proved
-   to fail: legal closed paths cannot contain endpoint tags.
+1. `selector_wrapper.md`: explicit selector/wrapper bond, all-sector
+   selection and gap above the entire unperturbed manifold. The key
+   estimate H_wrap(N)>=-4U holds at EVERY open length, so unknown
+   wrong-length payload spectra cannot defeat the selector. Local
+   H_0-to-H_2 conversion gives scalar marker transport.
+2. `length_fluid.md`: complete spectrum of the projected physical marker
+   graph, including its momentum-dependent fermion twist and cyclic
+   reference constraint. One compact boson has v=2J(b+nu)sin(pi nu)
+   and physical K=(b+nu)^(-2). Every large ring has ordinary charge
+   rounding, not a forced quadratic defect. This is FIRST ORDER only.
+3. `helix_equalizer.md`: two nonorthogonal qubit helices compensate
+   r_1!=r_2 exactly at BOTH ports. A local auxiliary rotation preserves
+   scalar transport. With pitch 1/b the added transport factor tends
+   to one and the positive compensator norm is O(b^2). This removes
+   the leading r_p r_p' length/payload coupling, at a factor-four
+   alphabet cost. Existing parity is preserved.
+4. `joint_fluid.md`: complete projected spectrum with any translation-
+   invariant logical payload from its energy/momentum eigenpairs.
+   The cyclic constraint acts on gaps AND payloads. A marker crossing
+   the physical origin rotates the canonical payload ordering.
+5. `approximate_core.md`: a positive core with D eigenvalues in
+   [0,epsilon] and the rest >=gamma lifts to a D-state finite-cell
+   band of width <=epsilon, complement >=g0, and code angle
+   <=sqrt(M epsilon)/(g0-epsilon). Port and transport bounds follow.
+   This relaxes exact FF for the finite-cell interface, not for a
+   claimed globally isolated band on arbitrary rings.
 
 ## Verification
 
-All four new scripts passed with single-thread BLAS and compile:
+All five new scripts passed with single-thread BLAS and compiled.
 
-- `classical_readout_checks.py`: six static codes, two full global-clock
-  spectra at dimensions 160,900, and two colored density readouts.
-  Static port errors below 4e-16; projected-bond errors below 1e-15;
-  full-spectrum errors below 1.2e-14; colored readouts below 3e-17.
-- `tagged_vacancy_checks.py`: initialized q=3,k=3 cores at two vacancy
-  counts and two hoppings, sector dimensions 108,270. Errors below
-  8e-16, with complete codes and gap lower bounds checked.
-- `length_filter_checks.py`: k=3,4 and every allowed occupied number
-  at both lengths, up to dimension 240. Number-sector gaps obey the
-  analytic bounds; code residuals below 4.4e-13.
-- `arrow_wrapper_checks.py`: entire legal spaces of dimensions 315,961
-  within full physical spaces of dimensions 6561,59049. Ground-energy
-  errors below 7e-13. Illegal sectors excluded analytically and their
-  commuting violations checked. Converted transport error below 3e-16.
+- `selector_wrapper_checks.py`: legal wrapper spaces of dimensions
+  31,101,315,961,2903 at lengths 2 through 6; a physical bond of
+  dimension 1296 (d=36); both quantum ports and the full two-payload
+  transport map at d=60. Transport errors below 9e-15. Illegal
+  sectors are excluded analytically, not by full-ring ED.
+- `length_fluid_checks.py --max-M 16`: complete physical graph spectra
+  through dimension 315, errors below 1.7e-14. Actual physical-site
+  half-chain entropies at L=36,54,72 give c slopes 1.02171,1.01050,
+  calibrated against XX. Independent Casimir gives 0.999999704.
+  These estimators refer to the PROJECTED marker model.
+- `helix_equalizer_checks.py`: complete one-track parent spectra at
+  lengths 4,5 and actual two-cell conversion in dimension 262144.
+  Port, transport and projected bond errors below 5.1e-14.
+- `joint_fluid_checks.py`: every eigenvalue for an XX payload at
+  physical dimensions 162,340,1800, errors below 3.4e-14. Equal-
+  velocity joint Casimir c=1.999999409. Again, FIRST ORDER only.
+- `approximate_core_checks.py`: six non-FF positive-core examples at
+  dimensions 32,80 and epsilon=1e-6,1e-7,1e-8. The nonzero code
+  angles and endpoint errors obey the proved conservative bounds.
 
-These are code and finite-cell tests, NOT microscopic CFT estimates.
-No earlier numerical suites were rerun. No independent referee used.
+Earlier numerical suites were not rerun. No full finite-coupling
+microscopic CFT estimate, cluster job, network access, subagent,
+independent referee, commit, or push was used.
 
 ## Remaining problems, ranked
 
-1. Construct the initialized uniform NN core for the nonnegative graded
-   readout code. The circuit needs only classical reversible operations,
-   but a repeated-bond controller must implement the schedule, preserve
-   grading, gate density fields at readout, exclude malformed histories,
-   and return all logical bits and ancillas correctly. A global clock
-   or a sequence of externally scheduled gates is insufficient.
-2. Combine the complete two-length wrapper with the mobile selector.
-   The selector must provide arrow resets and the vacancy conversion,
-   select the two physical lengths despite the payload energy shifts,
-   and handle all ring lengths. The finite-cell theorem alone does not.
-3. Control the resulting length/payload theory at fixed nonzero coupling.
-   The new ir_control contribution remains heuristic for general-cell
-   leakage and a conformal spectral conclusion. Exact parity and the
-   incommensurate target are the preferred design inputs.
-4. A whole-class bound still needs control of neutral/emergent sectors
-   or conformal onset. The fourth-run symmetry bounds remain conditional.
-5. The rank-one d=20992 model still needs thermodynamic reduction and
-   infrared control. No new result here verifies its central charge.
+1. Supply the initialized high-channel uniform core. It may now be a
+   positive approximate code, but its error must obey epsilon much
+   smaller than g0^2/M for useful lifted port accuracy. A scheduled
+   classical circuit or a selected program sector is insufficient.
+   The repeated-bond controller must initialize its program and
+   exclude all malformed histories with a fixed alphabet overhead.
+2. Establish the microscopic finite-coupling infrared theory around
+   the exact joint projected model. Include leakage and mixed
+   resonances involving the length boson, with its physical
+   K=(b+nu)^(-2). The live ir_control work is still heuristic for
+   general cells, despite new toy detuned-target numerics.
+3. For approximate cores, account for the extensive retained bandwidth
+   and finite-cell splitting as local perturbations. Do not mistake
+   finite-cell band separation for a full-chain spectral gap.
+4. A full-class bound still needs a neutral-sector or onset-length
+   input. The earlier conditional symmetry/rank bounds do not give it.
 
-Do not repeat the old joint dilation, second-order synthesis, exact-code
-no-go, frozen-ring no-go, graded-swap core, K_FF(2)=4, or boundary-Schmidt-
-rank work. The earlier code no-gos remain valid, but the old restriction
-of vacancy repair to boundary-free cores and the old occupied-number
-selection problem are now superseded by the complete finite-cell wrapper.
+Do not repeat the joint dilation, second-order synthesis, exact-code
+no-go, frozen-ring no-go, graded-swap core, K_FF(2)=4, boundary-Schmidt
+rank theorem, classical readout code, or complete finite-cell wrapper.
+The old selector-reset and first-order port-equalization gaps are now
+resolved by this run. The high-channel core and finite-coupling IR
+are NOT resolved.
 
-Next action: item 1, a concrete reversible controller with initialized
-boundaries. Its high-channel code would feed directly into the new wrapper.
-
-Sixth-run live update. Re-read the requested context and current live
-contributions. No complete computation track or general-cell IR theorem
-has appeared. The proposed circuit-controller route still lacks a way
-to select its program and exclude all unwanted history components at
-fixed alphabet. A scheduled circuit or a chosen program sector does not
-close this. No controller theorem is claimed.
-
-Moved to remaining item 2. An explicit tensor composition of the C7
-selector and the complete arrow wrapper appears to select exactly the
-two required cell lengths, with all marker and wrapper sectors included.
-The selector kinetic scale can dominate all unknown wrong-length cell
-energies using the length-independent bound H_wrap(N)>=-4U. A local
-marker hop with the required H_0-to-H_2 conversion then has scalar
-payload transport. Derivation and physical-bond checks are in progress.
-This remains conditional on a supplied initialized FF core and does not
-establish a finite-coupling CFT.
+Next action: a concrete constant-alphabet initialized controller or a
+fully stated applicable local-simulation theorem with BOTH physical
+endpoint observables and quantitative positive-code errors preserved.
 
 The remainder is the chronological record. Its initial task list has been superseded by the ranking above.
+
 
 Read the project memory and the requested README, REPORT, C7, unbounded-c draft, C6 and tools index. No existing C8 progress file was present. All writes stay in this folder, as requested; the project STATE.md is read-only for this run.
 
@@ -536,3 +533,26 @@ the classical-readout script was rerun only after adding density
 readouts and removing a dtype warning. Compilation passed. Earlier
 suites were not rerun. No whole-class conclusion, independent referee,
 network use, cluster job, commit, or push. All writes stayed here.
+
+
+## Sixth run, completion record
+
+Re-read the requested context and live contributions. The first attempted
+line, turning the scheduled readout circuit into a repeated-bond controller,
+still lacked program selection and exclusion of all unwanted components.
+No implementation theorem was assumed. Moved to the independent local
+composition and ring-spectrum problems rather than stopping there.
+
+Substantive steps 27-31 are complete: selector/wrapper composition,
+full projected marker spectrum, helix port equalization, combined
+payload/ring spectral reduction, and positive approximate-core lifting.
+The five corresponding notes and scripts are listed at the top. They
+are reproduced in RESULT.md Sections 30-34, with audit and ranked next
+steps in Section 35. The previous steps remain in the chronology above.
+
+Final source audit checked all sector bounds, transfer orientations,
+auxiliary phases, ring momentum constraints, and approximation bounds.
+All five new numerical scripts and compilation passed. A final read of
+the live ir_control report found new toy numerics but no theorem closing
+the general-cell leakage or spectral step. The whole-class verdict is
+still nonconclusive. Only this folder was modified.

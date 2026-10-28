@@ -16,18 +16,22 @@ class PeriodicDMRG(CanonicalDMRG):
         H,ops=super().grow_left(env,M)
         if len(env)<4:return H,ops
         if env[3]==0:
-            first=np.einsum('asb,kst,atc->kbc',M,self.opB,M,optimize=True)
+            l,d,r=M.shape
+            acted=np.tensordot(self.opB,M,axes=(2,1)).transpose(0,2,1,3).reshape(self.rank,l*d,r)
+            first=np.matmul(M.reshape(l*d,r).T,acted)
         else:
-            first=np.einsum('asb,kac,csd->kbd',M,env[2],M,optimize=True)
+            first=sum(np.matmul(M[:,s,:].T,np.matmul(env[2],M[:,s,:])) for s in range(self.d))
         return H,ops,first,env[3]+1
 
     def grow_right(self,env,M):
         H,ops=super().grow_right(env,M)
         if len(env)<4:return H,ops
         if env[3]==0:
-            last=np.einsum('asb,kst,ctb->kac',M,self.opA,M,optimize=True)
+            l,d,r=M.shape
+            acted=np.tensordot(self.opA,M,axes=(2,1)).transpose(0,2,1,3).reshape(self.rank,l,d*r)
+            last=np.matmul(M.reshape(l,d*r),acted.transpose(0,2,1))
         else:
-            last=np.einsum('asb,kbd,csd->kac',M,env[2],M,optimize=True)
+            last=sum(np.matmul(M[:,s,:],np.matmul(env[2],M[:,s,:].T)) for s in range(self.d))
         return H,ops,last,env[3]+1
 
     def closure_ops(self,i,l,d,r):

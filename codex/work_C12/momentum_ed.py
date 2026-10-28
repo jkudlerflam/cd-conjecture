@@ -4,33 +4,39 @@ from scipy.sparse import coo_matrix
 from scipy.sparse.linalg import eigsh
 from qutrit_ed import basis,local_h
 
-def canonical(states,L):
+def rotate(states,L):
+    if states.dtype==object:
+        return ((states<<2)&((1<<(2*L))-1))|(states>>(2*(L-1)))
     mask=np.uint64((1<<(2*L))-1)
+    return ((states<<np.uint64(2))&mask)|(states>>np.uint64(2*(L-1)))
+
+def canonical(states,L):
     best=states.copy();shift=np.zeros(len(states),np.int16);cur=states.copy()
     for j in range(1,L):
-        cur=((cur<<np.uint64(2))&mask)|(cur>>np.uint64(2*(L-1)))
+        cur=rotate(cur,L)
         smaller=cur<best;best[smaller]=cur[smaller];shift[smaller]=j
     return best,shift
 
 class OrbitHamiltonian:
-    def __init__(self,L,N,**pars):
+    def __init__(self,L,N,custom_basis=None,custom_h=None,**pars):
         self.L=L;self.N=N;start=time.time()
-        states=basis(L,N)
+        self.custom_basis=custom_basis
+        states=basis(L,N) if custom_basis is None else custom_basis
         canon,_=canonical(states,L)
         self.reps=states[canon==states]
         self.full_dim=len(states)
         del states,canon
         reps=self.reps;D=len(reps)
-        cur=reps.copy();period=np.full(D,L,dtype=np.int16);mask=np.uint64((1<<(2*L))-1)
+        cur=reps.copy();period=np.full(D,L,dtype=np.int16)
         for j in range(1,L):
-            cur=((cur<<np.uint64(2))&mask)|(cur>>np.uint64(2*(L-1)))
+            cur=rotate(cur,L)
             hit=(cur==reps)&(period==L);period[hit]=j
         self.period=period
-        h=local_h(**pars);diag=np.zeros(D);rows=[];cols=[];vals=[];powers=[]
+        h=local_h(**pars) if custom_h is None else custom_h;diag=np.zeros(D);rows=[];cols=[];vals=[];powers=[]
         for i in range(L):
             j=(i+1)%L
-            a=((reps>>np.uint64(2*i))&np.uint64(3)).astype(np.int8)
-            b=((reps>>np.uint64(2*j))&np.uint64(3)).astype(np.int8)
+            a=((reps>>(2*i))&3).astype(np.int8)
+            b=((reps>>(2*j))&3).astype(np.int8)
             loc=3*a+b;diag+=np.diag(h)[loc]
             for old in range(9):
                 for new in range(9):
@@ -40,7 +46,8 @@ class OrbitHamiltonian:
                     if not len(ix):continue
                     aa,bb=divmod(new,3);ao,bo=divmod(old,3)
                     delta=(aa-ao)*(1<<(2*i))+(bb-bo)*(1<<(2*j))
-                    target=reps[ix]+np.uint64(delta) if delta>=0 else reps[ix]-np.uint64(-delta)
+                    if reps.dtype==object:target=reps[ix]+delta
+                    else:target=reps[ix]+np.uint64(delta) if delta>=0 else reps[ix]-np.uint64(-delta)
                     can,shift=canonical(target,L);dest=np.searchsorted(reps,can)
                     assert np.all(reps[dest]==can)
                     rows.append(dest);cols.append(ix);powers.append(shift)
@@ -71,7 +78,7 @@ class OrbitHamiltonian:
         return es,vs,dict(k=k,dim=H.shape[0],energies=es.tolist(),seconds=time.time()-start,residual=float(np.linalg.norm(H@vs[:,0]-es[0]*vs[:,0])))
 
     def reconstruct(self,k,v):
-        states=basis(self.L,self.N);can,shift=canonical(states,self.L)
+        states=basis(self.L,self.N) if self.custom_basis is None else self.custom_basis;can,shift=canonical(states,self.L)
         orb=np.searchsorted(self.reps,can)
         valid=(self.period*k)%self.L==0;remap=np.cumsum(valid)-1
         good=valid[orb]

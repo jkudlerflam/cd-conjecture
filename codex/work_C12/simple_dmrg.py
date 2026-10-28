@@ -48,13 +48,15 @@ class DMRG:
     def grow_left(self,env,M):
         l,d,r=M.shape;mat=M.reshape(l*d,r)
         H=mat.T@self.left_pair(env)@mat
-        ops=np.einsum('asb,kst,atc->kbc',M,self.opA,M,optimize=True)
+        acted=np.tensordot(self.opA,M,axes=(2,1)).transpose(0,2,1,3).reshape(self.rank,l*d,r)
+        ops=np.matmul(mat.T,acted)
         return H,ops
 
     def grow_right(self,env,M):
         l,d,r=M.shape;mat=M.reshape(l,d*r)
         H=mat@self.right_pair(env)@mat.T
-        ops=np.einsum('asb,kst,ctb->kac',M,self.opB,M,optimize=True)
+        acted=np.tensordot(self.opB,M,axes=(2,1)).transpose(0,2,1,3).reshape(self.rank,l,d*r)
+        ops=np.matmul(mat,acted.transpose(0,2,1))
         return H,ops
 
     def rebuild_right(self):
@@ -94,9 +96,10 @@ class DMRG:
         norm=np.ones((1,1));density=[]
         n=np.diag(np.arange(self.d));double=np.diag(np.arange(self.d)==2)
         for M in self.mps:
-            rho=np.einsum('ab,asc,btc->st',norm,M,M,optimize=True)
+            weighted=np.tensordot(norm,M,axes=(1,0))
+            rho=np.tensordot(M,weighted,axes=((0,2),(0,2)))
             density.append([float(np.trace(rho@n)),float(np.trace(rho@double))])
-            norm=np.einsum('ab,asc,bsd->cd',norm,M,M,optimize=True)
+            norm=sum(M[:,s,:].T@norm@M[:,s,:] for s in range(self.d))
         prof=[]
         center=self.mps[0].copy()
         for i in range(self.L-1):

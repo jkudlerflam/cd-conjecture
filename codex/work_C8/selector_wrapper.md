@@ -247,3 +247,34 @@ major tasks: a high-channel initialized uniform FF core, and control
 of the coupled length/payload theory at fixed u,lambda>0. A finite-order
 projection plus (10) does not control thermodynamic gaps of order 1/L.
 No finite-coupling central charge follows from this note.
+
+## 7. Checks
+
+Run
+
+    OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python3 selector_wrapper_checks.py
+
+At k=3,U=1,v=0.1, formula (7) gives t=89.98213207197,
+mu=56.92794991641, K_sel=368.92852828788, and e=-18.33424471347.
+The guaranteed wrong-length coefficient t eta_b-U is 1.69357335860.
+Complete legal wrapper spaces at lengths 2 through 6 have dimensions
+31,101,315,961,2903. Their spectra obey the lower and selection bounds;
+the two selected energies differ from eb,e(b+1) by less than 3e-13.
+Illegal wrapper sectors are excluded analytically, not by full ED.
+
+The constructed physical bond at d=36 is a 1296-by-1296 sparse matrix,
+with Hermiticity residual 5.5e-14. Exhaustive selector-neighbor checks
+give no violation of the overlapping legality projectors.
+
+A separate quantum test uses a graded qubit-swap core with D=2 and
+k=3, then tensors on the helix filter. Its wrapper alphabet has 15
+states and its selector composition d=60. The physical code supports
+have sizes 128 and 320 at the two lengths. Both endpoint maps agree
+within 3.2e-16. The actual two-cell H_0-to-H_2 conversion gives beta
+times I_4 with error 8.7e-15; the full head-plus-wrapper hopping error
+is below 7.2e-15. Unconverted transport is zero. The marker-pattern
+graphs at (L,M,r)=(18,4,2),(27,6,3),(36,8,4) agree with their projected
+ground-energy formulas below 1.4e-14.
+
+The output is selector_wrapper_checks.json. No full-ring microscopic
+diagonalization or finite-coupling central-charge estimate was performed.

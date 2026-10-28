@@ -74,3 +74,12 @@ A finite-density homogeneous phase containing atoms near k=0 and molecules near 
 In a dilute bosonization description, let theta_a, theta_+, theta_- denote the phases of the three fluids. A conversion a a -> p_+ carries momentum Q and is oscillatory away from density-dependent commensurabilities. The momentum-neutral process four atoms -> p_+ p_- has vertex 4 theta_a-theta_+-theta_-. At three decoupled Tonks fixed points, its scaling dimension is 16/4+1/4+1/4=9/2. For Q=pi/3, the three-pair valley conversion has vertex 3(theta_+-theta_-), also dimension 9/2 at that reference point. These power counts only show that a three-fluid fixed point is not immediately forbidden. The actual stiffness matrix can change the dimensions, and the microscopic model has not been shown to realize this fixed point.
 
 Taking U=-14/9+delta changes the molecular threshold and can compensate finite-density preferences. Numerical scans use V11=0, V12=V22=20, t21=0, g=2, tp=10/9. Delta=0.9 gave large short-ring entropy fits and is the main finite-density test point. The rational form is U=-59/90 at delta=9/10.
+
+## Tunable mass ratio, still only a vacuum construction
+
+The exact threshold formula also allows the atom and pair masses to coincide. Setting s0=1/5 and g^2=180 gives
+
+    g=6 sqrt(5), tp=275/4, U=269/2,
+    Q=2 arcsin(1/5), Z=1/16, Epair''(Q)=2.
+
+Hence mp=ma=1/2. This removes mass imbalance as an unavoidable feature of the two-body construction. It does not establish stability, miscibility, or a finite-density CFT for these stronger couplings. No many-body central-charge claim is made for this variant.

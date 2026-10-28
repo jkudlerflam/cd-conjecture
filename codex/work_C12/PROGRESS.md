@@ -61,3 +61,35 @@ The periodic L=21 entropy fits at delta=0.9 are c_vN=3.055 and c_Renyi2=3.032. N
 Open chains have substantial boundary accumulation of charge, so comparing their total density N/L to a periodic chain can change the bulk filling at these sizes. A periodic-Hamiltonian DMRG implementation is therefore being tested. Its first L=8 validation missed the 1e-8 energy tolerance after six sweeps, with error 3.77e-7. The error decreases monotonically; the same test is being continued to twelve sweeps before this implementation is used for production.
 
 Same- and opposite-valley two-pair energies were compared at L=18,24,30 for eleven interaction choices. Splittings are small and show size-dependent sign changes. These data do not establish a miscible valley mixture. Reducing V12 tends to favor the same-valley state in this screen.
+
+## L=24 result and an independent finite-size warning
+
+Translation-resolved L=24,N=8 ED gives E(k=0)=-14.18107312747 and E(k=2pi/L)=-14.17196929015. The resulting gap is 0.00910384, and L*gap=0.21849 agrees with L=21's 0.21853. Only selected additional sectors k=4,8,12 were tested at L=24; they are higher. All sectors were checked through L=21.
+
+The k=0 L=24 entropy fits are c_vN=2.92389 and c_Renyi2=2.75315. The half-chain entropies are S=2.46463 and S2=1.88008. The two shape estimators still exceed 2 but decrease with size. More importantly, half-chain *size* scaling between L=18 and L=24 gives a much smaller estimate (about 1.23 from von Neumann entropy). Shell changes and few molecular particles can invalidate either fit. The inconsistency prevents declaring a counterexample.
+
+Periodic DMRG at chi=96 significantly underestimates the L=24 exact entropy during convergence. Its energy error is also comparable to the small gaps. Larger-chain results at finite bond dimension must not be advertised as converged CFT data. A separate random fixed-charge initialization is running at L=48 as a metastability check.
+
+Periodic calibration has been added using exact free-fermion correlation matrices and translation-resolved SU(3) swap ED. This uses the same entropy fits as the candidate. Open-chain SU(3) calibration refined to chi=192 gives c=2.031 from half-chain von Neumann size scaling between L=24 and 48, while second-Renyi size scaling is 2.326, illustrating its larger corrections.
+
+## Scope of the candidate and numerical status
+
+All fixed-density tests must still be embedded in a full Hamiltonian with a chemical potential. Positive finite-size compressibility and absence of a lower convex-envelope sector are being checked; fixing N alone is not sufficient. The explicit bond includes -mu(n_i+n_j)/2 for this reason.
+
+A more systematic, momentum-resolved detuning scan at density 1/3 shows large shell effects. At L=18, delta=0.6 has raw shape estimates 4.52 and 5.47, while delta=0.9 gives 3.30 and 3.40. Such large finite-size numbers are not evidence for those central charges. Ground-state momentum changes and commensurate valley superpositions can inflate them. Delta=0.75 is being checked at L=21 and 24 as a nearby comparison, not selected solely because it maximizes a short-chain fit.
+
+The two-pair comparison was extended to L=60. Opposite-valley energies are lower at L=36,48,60 by 3.54e-6, 1.02e-6, and 3.95e-7. The splitting decays very rapidly and does not by itself establish the bulk valley phase.
+
+Periodic DMRG jobs were explicitly interrupted and resumed from their saved states after a contraction bottleneck was identified. NumPy's default einsum memory restriction chose a naive high-cost contraction for the boundary operator environments. Explicit matrix contractions give the same short-chain energy (validation error 6e-12) and permit larger bond dimensions. This is a performance correction, not a change to the Hamiltonian.
+
+## Important negative result: the detuned molecular minima disappear
+
+The two-body dispersion was rechecked at the detunings used for the finite-density entropy screen. At delta=0.15,0.30,0.45, local molecular minima remain, with positive binding below the continuum at the same momentum. At delta=0.60,0.75,0.90 they no longer exist. Solving the simultaneous stationary-point and zero-curvature conditions gives the saddle-node
+
+    delta_crit = 0.56981795454,
+    Q_crit = 1.00068764889,
+    E_crit = -3.69864239469.
+
+The residual of these two equations is 7.8e-13. Thus the large-entropy delta=0.75 and 0.9 points cannot be justified by the original three-minimum dilute-gas mechanism. A separate many-body mechanism would have to be demonstrated. This is a substantive obstruction, not a proof of their asymptotic central charge.
+
+The fixed-charge stability check also finds parity and shell effects. At L=18, delta=0.9, the N=6 sector is locally on the convex envelope over N=4..8 for approximately -1.58245 < mu < -1.56046. N=7 is skipped in favor of a two-particle jump to N=8. The rational value mu=-1.57 lies inside this finite-size interval. This does not establish the thermodynamic density or absence of remote density jumps.

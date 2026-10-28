@@ -4,45 +4,46 @@
 
 ## Verdict
 
-Fifth-run update. The verdict remains nonconclusive under the task's
-criteria. There is no verified microscopic counterexample, no bound for
-the full class, and no fixed-d construction with unbounded c. Sections
-25-29 contain the new results and supersede earlier next-step rankings.
+Sixth-run update. The verdict remains nonconclusive under the task's
+criteria. No verified microscopic counterexample, whole-class bound, or
+fixed-d construction with unbounded c has been obtained. Sections 30-35
+contain the new results and supersede earlier next-step rankings.
 
-The main advance is a complete finite-cell construction. Given any
-initialized uniform frustration-free q-state core of length k, an
-explicit repeated NN bond of dimension 6q+3 has the desired COMPLETE
-open-chain ground code at both lengths k+1,k+2. A qubit helix selects
-k occupied sites, arrow labels and endpoint rewards select the tags,
-and all competing sectors have explicit energy bounds. Endpoint maps
-survive, and a local vacancy-label conversion transports both payloads
-coherently when their boundary moves. This removes two assumptions from
-the previous vacancy construction. It is an open-cell theorem. Used
-unchanged on a ring, the wrapper is proved to lose the desired cells.
+The complete two-length wrapper can now be joined to the selector by one
+explicit repeated nearest-neighbor bond, of dimension 24q+12 for a q-state
+initialized core. Its COMPLETE unperturbed ground space on every sufficiently
+large ring consists of the desired two cell lengths and their payload codes.
+Every competing length and every illegal sector is excluded, with a positive
+volume-independent gap above that whole manifold. A local marker move gives
+scalar payload transport. This is conditional on supplying the initialized
+core; the manifold itself is extensively degenerate and is not a CFT.
 
-A different construction supplies nonnegative equal-amplitude joint
-Clifford codes with n<=floor(q(q-1)/4) complex flavors. With exact
-physical grading it supports n<=floor(q_+q_-/2). Both port maps and
-independent logical flavor densities have explicit formulas. A finite
-classical-permutation history has the complete code and an exact gap;
-a scheduled local readout circuit uses only reversible classical gates.
-The missing step is its autonomous initialized uniform NN controller.
-The abstract flat parent is stoquastic, so positivity of code amplitudes
-alone does not close the first-order channel window.
+Two additional qubit helices make the first-order payload bond independent
+of cell length exactly, at total dimension 96q+48. They retain nonzero local
+marker transport. The projected moving-length model is solved in every
+momentum sector, with c=1, physical velocity 2J(b+nu)sin(pi nu), and
+K=(b+nu)^(-2). Physical-site entropy and Casimir estimates agree with this
+identification. The complete joint spectrum with an arbitrary logical
+payload is reduced to its energy/momentum eigenpairs; an XX example is
+checked through dimension 1800. These are FIRST-ORDER results, not
+microscopic finite-coupling CFT measurements.
 
-All four new finite-dimensional check scripts pass. They validate code
-identities, initialized histories, number-sector selection, complete
-open-cell ground spaces, and transport, not a microscopic central charge.
-No new CFT estimator or cluster calculation was run. The live infrared-
-control contribution still reports an unproved general-cell reduction
-and no complete conformal spectral conclusion. Its literature and full
-proofs were not independently audited here.
+A further positive-core lemma permits a small code-energy error epsilon.
+It bounds the lifted low-band width, complement threshold, code angle,
+endpoint errors, and transport errors. Exact frustration freeness can thus
+be relaxed for the finite-cell interface. This does not imply a globally
+isolated low band on an arbitrarily long ring.
 
-Earlier sections preserve the joint dilation and second-order results,
-restricted no-gos, exact mobile selector, boundary-Schmidt-rank theorem,
-K_FF(2)=4, and conditional symmetry/rank bounds. A high-channel spatial
-core, its consistent mobile-ring implementation, and finite-coupling
-infrared control remain unresolved.
+All five new scripts pass and compile. They check finite-cell spectra,
+physical bond formulas, local transport, complete projected ring spectra,
+and approximate-code bounds. The main missing ingredients are still a
+high-channel initialized uniform core and infrared control at fixed nonzero
+coupling, now including the length mode. No network, cluster job, subagent,
+independent referee, commit, or push was used. All writes stayed here.
+
+Earlier sections retain the previous proved restricted obstructions,
+code constructions, and conditional bounds. No earlier restriction is
+silently promoted to a theorem for the full class.
 
 ## 1. Simultaneous boundary Clifford compression
 
@@ -3862,3 +3863,1120 @@ The next work is ranked as follows.
 The finite-cell sector and occupied-number problems are resolved under
 an initialized-core hypothesis. The high-channel spatial core and the
 conformal ring remain open.
+
+## 30. A complete selector and wrapper composition
+
+Status: proved local Hamiltonian, full unperturbed ring ground space,
+volume-independent gap above that entire space, and first-order projected
+operators. The theorem assumes an initialized uniform frustration-free
+payload core. It does not supply a high-channel core or prove a CFT at
+nonzero coupling. No microscopic counterexample is claimed.
+
+### 1. Inputs and the uniform lower bound
+
+Take the wrapper bond w of arrow_wrapper.md for an initialized q-state
+core of length k>=3. Put b=k+1 and D=dim ker H_core. Its physical alphabet
+has size s=6q+3. The wrapper parameters are
+
+    0<v<U/(k+1),   mu_wrap=2U,   K_wrap=6U.
+
+Here v denotes the vacancy hopping, to distinguish it from the marker
+hopping introduced below. All positive filter and payload terms are as
+specified in that note. On open lengths b and b+1 the COMPLETE ground
+codes W_1,W_2 have energies
+
+    epsilon_b=-4U+e_1,    epsilon_(b+1)=-4U+e_2,
+    0<=e_p<=U.                                           (1)
+
+They have positive gaps Delta_1,Delta_2 given there. The charge ground
+vectors are chi_p and their endpoint occupation probabilities are r_p.
+
+One further consequence of the wrapper proof is needed for EVERY open
+length l, including lengths that do not carry the intended payload.
+
+    H_wrap(l)>=-4U I.                                    (2)
+
+For l=1 the sum is zero. For l>=2, a sector with z bad wrapper bonds
+has at most 2(z+1) endpoint tags. Positivity of all terms other than the
+endpoint rewards gives
+
+    H_wrap(l)>=6Uz-4U(z+1)=2Uz-4U.
+
+Every bad-bond projector commutes with the wrapper Hamiltonian, so this
+is an operator bound on each complete sector. Minimizing over z proves
+(2). On a periodic wrapper chain, the stronger endpoint count 2z gives
+H_wrap,ring>=2Uz>=0. These bounds do not depend on the unknown core
+spectrum at other lengths or on the norm of its positive penalties.
+
+### 2. One repeated bond, including the resets
+
+The microscopic site is a selector letter tensored with a wrapper
+letter, of dimension
+
+    d=4s=24q+12.                                         (3)
+
+The selector letters #,L,X,R and their arrows are those of C7. Write
+Q for its forbidden-pair projector and M=|#><#|. Let P_int be the
+diagonal selector projector onto allowed pairs whose RIGHT letter is
+not #. Define the unperturbed bond, with the factors grouped by track,
+
+    h_base = K_sel Q tensor I
+       + (mu/2)(M tensor I+I tensor M) tensor I
+       - t(|LX><XR|+|XR><LX|) tensor I
+       + P_int tensor w.                                (4)
+
+The tensor grouping in (4) is just notation for a two-physical-site
+operator. In particular P_int tensor w is still a nearest-neighbor
+term. No site-dependent coefficient or imposed marker sector is used.
+
+All selector violations Q_i commute with (4), as do all marker
+positions at this stage. A head hop leaves both the marker positions
+and the legality pattern unchanged, so it leaves every P_int unchanged.
+Consequently the selector head Hamiltonian commutes with the whole
+wrapper Hamiltonian in each such sector.
+
+On a legal marker cell of length l, counting the first # and excluding
+the next #, exactly its l-1 internal bonds have P_int=1. The boundary
+bond into the next # has P_int=0. Thus the wrapper is an OPEN chain on
+that cell, with no wrapper constraint across its boundary. This is the
+required arrow reset. The head ground energy is -2t cos(pi/l), and the
+complete cell ground energy is
+
+    E_l=mu-2t cos(pi/l)+epsilon_l,   l>=2,                 (5)
+
+where epsilon_l=min spec H_wrap(l). The internal head and payload
+factorization is exact.
+
+### 3. Selecting exactly b and b+1 despite the payload energies
+
+Use dimensionless quantities
+
+    a_l=2(1-cos(pi/l)),
+    delta_b=(b+1)a_b-b a_(b+1),
+    e_c=a_(b+1)-a_b<0,    mu_c=2-delta_b>0,
+    eta_b=min{(a_(b-1)-2a_b+a_(b+1))/2,
+              (a_b-2a_(b+1)+a_(b+2))/3}>0.             (6)
+
+Here b>=4. Convexity of a(x) on x>=2 proves positivity of the second
+differences. The positive value of mu_c at b=4 and monotonic decrease
+of delta_b prove mu_c>0 for every b>=4.
+
+Choose, for example,
+
+    t=2U[1/eta_b+b/mu_c+1/|e_c|],
+    mu=t mu_c+4U-(b+1)e_1+b e_2,
+    e=t e_c+e_2-e_1,
+    K_sel=4t+9U.                                        (7)
+
+Then mu>0, e<0, and E_b=eb, E_(b+1)=e(b+1). All parameters depend
+on the chosen core but not on the total ring length.
+
+Here is an explicit lower bound for every competing length, without
+solving its payload problem. Set
+
+    d_l=a_l-a_b-(l-b)(a_(b+1)-a_b).
+
+For l>=b+2, writing s_j=a_(j+1)-a_j and using increasing s_j gives
+
+    d_l=sum_(j=b+1)^(l-1)(s_j-s_b)
+        >=(l-b-1)(s_(b+1)-s_b)
+        >=eta_b(1+|l-b|).
+
+For 2<=l<=b-1,
+
+    d_l=sum_(j=l)^(b-1)(s_b-s_j)
+        >=(b-l)(s_b-s_(b-1))
+        >=eta_b(1+|l-b|).
+
+Both final inequalities follow respectively from (m-1)/(m+1)>=1/3
+for m>=2 and m/(m+1)>=1/2 for m>=1. By (1),(2),
+
+    E_l-el = t d_l + epsilon_l-epsilon_b
+                      -(l-b)(epsilon_(b+1)-epsilon_b)
+            >=(t eta_b-U)(1+|l-b|)>0                   (8)
+
+for every l other than b,b+1. In particular the bound remains positive
+at arbitrarily large l. The unknown payload ground energy cannot win
+by forming very long cells.
+
+### 4. Complete ground space on all sufficiently large rings
+
+Suppose first that the selector sector is legal and contains markers.
+The cells are independent at u=lambda=0. Equations (5),(8) give H>=eL.
+Equality requires every cell to have length b or b+1, every head to be
+in its unique sine-wave ground state, and every wrapper to be in the
+complete code W_1 or W_2. Thus all these tilings and their D-dimensional
+payloads exhaust the ground space in legal marker sectors.
+
+Legal marker-free selector words are all L or all R. Their hopping and
+marker energies vanish, and their wrapper is periodic and nonnegative
+by (2)'s cyclic version. They lose to eL<0.
+
+Now take z>=1 selector violations. Their positions are conserved.
+Cutting at them gives z legal open strings, because P_int and the
+selector kinetic term vanish on every cut. Within a string, complete
+marker-to-marker cells have energy at least e times their length.
+There are at most two remaining fragments, the prefix and suffix.
+Each fragment has at most one head, with kinetic energy at least -2t,
+and one open wrapper chain, with energy at least -4U. Any unassigned
+marker energy is nonnegative since mu>0. Since e<0, a fragment of
+length l has energy at least el-2t-4U. Summing gives
+
+    H_sector>=eL+(K_sel-4t-8U)z=eL+Uz.                  (9)
+
+This proof includes overlapping violations, fragments of length one,
+and arbitrary illegal wrapper sectors. It does not require a bound
+on ||w||. The positive filter scale can be large without affecting
+the estimate.
+
+Every L>=b(b+1) admits a b/(b+1) tiling. Indeed choose an integer M
+in [L/(b+1),L/b], whose interval width is at least one; then
+r=L-bM lies between 0 and M. There are r long cells and M-r short
+cells. Consequently the full ring ground energy is eL for every such
+L, with the complete ground space just described. It has no externally
+selected marker, wrapper-tag, occupation, or program sector.
+
+The gap ABOVE THIS ENTIRE SPACE has the L-independent lower bound
+
+    Delta_base >= min {Delta_1,Delta_2,
+       2t[cos(pi/b)-cos(2pi/b)],
+       2t[cos(pi/(b+1))-cos(2pi/(b+1))],
+       t eta_b-U, U, |e|b(b+1)} >0.                    (10)
+
+The large degeneracy inside the space is not a CFT. Equation (10)
+does not assert a gap after adding interactions within it.
+
+### 5. A two-site marker hop with scalar payload transport
+
+Let C=|H_2><H_0| on the wrapper. Add the nearest-neighbor bond
+
+    h_move=-u[ |R#><#L| tensor(C tensor I)
+                    +|#L><R#| tensor(C^dag tensor I)].  (11)
+
+The first term moves the marker on site i to site i+1. Site i is
+transferred from the right cell to the left cell, so its vacancy
+must change from H_0 to H_2. This explains both the location and
+orientation of C. The same local move preserves all selector
+violations. It need not preserve wrapper violations or the low-energy
+cell space.
+
+Let P project onto the complete ground space of Section 4. A projected
+hop is nonzero only on neighboring lengths (b,b+1), which it changes
+to (b+1,b). The selector head overlap is A_b^2, with
+
+    A_b=sum_(i=1)^(b-1) sqrt(2/b)sin(pi i/b)
+                            sqrt(2/(b+1))sin(pi i/(b+1)).
+
+The converted wrapper overlap, proved in arrow_wrapper.md, is beta
+times the identity on both logical payloads, with
+
+    beta=[sum_(s=0)^k chi_1({s})chi_2({s,k+1})]^2>0.
+
+Therefore the exact first-order matrix element is
+
+    P h_move P = -u A_b^2 beta I_(D^2)                  (12)
+
+on each allowed length exchange. Physical marker-pattern coordinates
+retain the ring translation and relabeling constraints, as in
+mobile_selector.md. A local term (11), without an imposed long-range
+transport operation, produces the desired logical identity.
+
+### 6. Projected payload coupling and the remaining gap
+
+Suppose the input core has V^dag A_a(first)V=alpha Gamma_a and
+V^dag B_a(last)V=alpha R_a. Extend A_a only on wrapper L tags and
+B_a only on wrapper R tags, acting trivially on the helix. Write these
+as Atilde_a,Btilde_a. Add
+
+    h_link=lambda P_cut tensor sum_ab T_ab
+                            Btilde_a tensor Atilde_b,    (13)
+
+where P_cut projects onto the allowed selector pairs X# and R#.
+The coefficient matrix T is real. This is Hermitian, uniform, and
+nearest neighbor. On cells with p,p' vacancies, its compression is
+
+    lambda alpha^2 r_p r_(p') sum_ab T_ab R_a tensor Gamma_b. (14)
+
+There is no additional head-wavefunction factor, since P_cut sums
+both possible selector letters preceding a marker. In particular
+it cannot be replaced by R# alone without changing (14).
+
+Equations (12),(14) give the full first-order moving-cell interface.
+The length hopping is payload independent, while the payload hopping
+depends on adjacent lengths through r_1,r_2. Those probabilities are
+usually unequal at finite v. Their difference cannot be dropped when
+claiming an exact product of CFTs.
+
+This construction removes the earlier local arrow-reset and sector-
+selection gaps in joining the wrapper to the selector. It leaves two
+major tasks: a high-channel initialized uniform FF core, and control
+of the coupled length/payload theory at fixed u,lambda>0. A finite-order
+projection plus (10) does not control thermodynamic gaps of order 1/L.
+No finite-coupling central charge follows from this note.
+
+### 7. Checks
+
+Run
+
+    OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python3 selector_wrapper_checks.py
+
+At k=3,U=1,v=0.1, formula (7) gives t=89.98213207197,
+mu=56.92794991641, K_sel=368.92852828788, and e=-18.33424471347.
+The guaranteed wrong-length coefficient t eta_b-U is 1.69357335860.
+Complete legal wrapper spaces at lengths 2 through 6 have dimensions
+31,101,315,961,2903. Their spectra obey the lower and selection bounds;
+the two selected energies differ from eb,e(b+1) by less than 3e-13.
+Illegal wrapper sectors are excluded analytically, not by full ED.
+
+The constructed physical bond at d=36 is a 1296-by-1296 sparse matrix,
+with Hermiticity residual 5.5e-14. Exhaustive selector-neighbor checks
+give no violation of the overlapping legality projectors.
+
+A separate quantum test uses a graded qubit-swap core with D=2 and
+k=3, then tensors on the helix filter. Its wrapper alphabet has 15
+states and its selector composition d=60. The physical code supports
+have sizes 128 and 320 at the two lengths. Both endpoint maps agree
+within 3.2e-16. The actual two-cell H_0-to-H_2 conversion gives beta
+times I_4 with error 8.7e-15; the full head-plus-wrapper hopping error
+is below 7.2e-15. Unconverted transport is zero. The marker-pattern
+graphs at (L,M,r)=(18,4,2),(27,6,3),(36,8,4) agree with their projected
+ground-energy formulas below 1.4e-14.
+
+The output is selector_wrapper_checks.json. No full-ring microscopic
+diagonalization or finite-coupling central-charge estimate was performed.
+
+## 31. Exact all-ring spectrum of the projected length fluid
+
+Status: proved finite-volume spectrum and asymptotic towers for the
+projected marker Hamiltonian. Identifying the resulting free oscillator
+towers with a compact boson uses the standard free-fermion continuum
+input. Independent entropy and Casimir estimates are numerical. This
+is NOT a finite-coupling theorem for the microscopic selector or its
+payload. It does not settle the c-d conjecture.
+
+### 1. Physical Hilbert space and the missing ring constraint
+
+Fix integers b>=1, M>=2, 0<r<M and L=bM+r. A basis state is a set
+of M marker positions on a ring of L physical sites, with every
+consecutive spacing b or b+1 and exactly r long spacings. A marker
+moves right with amplitude -J when its left spacing is b and its
+right spacing is b+1, exchanging the two. The reverse move is its
+adjoint. Here J>0. A chemical term kappa M is allowed when different
+M sectors are combined at fixed L.
+
+This is the exact first-order graph in selector_wrapper.md, with
+J=u A_b^2 beta. Its physical Hilbert dimension is
+
+    dim H_(L,M)=(L/M) binomial(M,r).                      (1)
+
+To count, distinguish one reference marker at x in Z_L and record
+the successive gap bits eta=(eta_0,...,eta_(M-1)), sum eta=r.
+Each physical configuration has M choices of reference. Thus the
+cover has L binomial(M,r) elements, with the free identification
+
+    (x,eta) ~ (x+b+eta_0,S eta),                         (2)
+
+where S shifts the gap sequence one step left. This also explains
+why a periodic XX chain of M sites alone is not the full spectrum.
+
+The physical hopping graph is connected. On the reference cover,
+nonreference marker moves give all adjacent exchanges of 0 and 1
+on an OPEN gap chain, hence connect all gap strings of weight r
+at fixed x. Arrange eta_(M-1)=0, eta_0=1, which is possible since
+0<r<M. Moving the reference marker right changes x to x+1. Open-chain
+exchanges can then restore any desired gap string. Repeating reaches
+every x, so the cover and its physical quotient are connected. No
+numerical connectivity assumption is needed.
+
+### 2. Complete free-fermion spectrum
+
+Use the coefficient convention F(x,eta)=exp(iPx) phi(eta), with
+P=2pi ell/L, ell=0,...,L-1. The quotient condition (2) gives
+
+    phi(S eta)=exp[-iP(b+eta_0)] phi(eta).                 (3)
+
+Define Q_eta=sum_(j=0)^(M-1) j eta_j and write
+
+    phi(eta)=exp[-iP Q_eta/M] psi(eta).
+
+Since Q_(S eta)=Q_eta-r+M eta_0, (3) becomes
+
+    psi(S eta)=exp[-iP L/M] psi(eta).                    (4)
+
+The same gauge distributes the reference-hop twist evenly among all
+M gap bonds. Jordan-Wigner on these r hard-core particles gives
+distinct single-particle wave numbers
+
+    q_a=(2pi/M)[I_a+(r-1)/2],   I_a in {0,...,M-1},       (5)
+
+with the conventional parity-dependent fermion boundary condition.
+Use Slater coefficients exp(-i q_a j). Then cyclic shift of the
+configuration multiplies psi by exp(i sum_a q_a), so (4) imposes
+
+    m+ell=0 mod M,
+    m=sum_a I_a+r(r-1)/2 mod M.                          (6)
+
+With this sign convention the single-particle energy is
+-2J cos(q_a+P/M). The COMPLETE spectrum, with multiplicity, is
+
+    E=kappa M-2J sum_(a=1)^r cos(q_a+2pi ell/(LM)),        (7)
+
+for every r-element subset of {0,...,M-1} and every ell satisfying
+(6). There are no further choices or constraints. The Fourier
+decomposition in x, gauge transformation, and Jordan-Wigner map are
+unitary in their indicated sectors. They prove completeness, rather
+than just producing candidate eigenvalues. They also reproduce (1).
+
+At P=0 the positive ground vector of the periodic gap XX chain is
+cyclically invariant and lifts through (2). Connectedness and
+Perron-Frobenius make it the unique physical ground state at fixed
+M. Filling the symmetric Fermi interval gives
+
+    E0(L,M)=kappa M-2J sin(pi r/M)/sin(pi/M).              (8)
+
+Every nonzero-momentum state is therefore above this state, even
+though the twist in (7) varies with momentum.
+
+### 3. Thermodynamic density and every ring length
+
+Let nu=r/M in (0,1), rho=M/L=1/(b+nu). Up to a constant e_base L,
+the bulk energy density is
+
+    f(rho)=kappa rho-(2J/pi)rho sin[pi(1/rho-b)].          (9)
+
+Its derivatives are
+
+    f'(rho)=kappa-(2J/pi)[sin(pi nu)
+                                   -pi(b+nu)cos(pi nu)],
+    f''(rho)=2pi J (b+nu)^3 sin(pi nu)>0.                (10)
+
+Consequently any prescribed interior nu is the unique bulk minimum
+if
+
+    kappa=(2J/pi)[sin(pi nu)-pi(b+nu)cos(pi nu)].          (11)
+
+For kappa=0 this reduces to tan(pi nu)=pi(b+nu), the earlier
+mobile-selector equation. To select nu=1/2, use kappa=2J/pi.
+The microscopic selector chemical potential can supply this term
+at first order by a small change in its marker cost.
+
+At fixed L the allowed M are all integers in [L/(b+1),L/b]. For
+large L, minimizing (8) rounds the interior density to M=rho L+O(1).
+Strict convexity excludes other macroscopic densities. The finite-size
+correction shifts the continuous minimizer by only O(1/L), so for
+large L at most two adjacent integers compete for the ground state.
+Each fixed-M ground state is unique. Thus ground degeneracy stays
+bounded on EVERY sufficiently large ring, with the usual charge-sector
+offset from rounding rho L. There is no required isolated defect and
+no defect band with an L-dependent degeneracy.
+
+### 4. Conformal towers and the physical Luttinger parameter
+
+The gap-chain Fermi velocity is v_gap=2J sin(pi nu). Because its
+length is M=rho L, the velocity in physical site units is
+
+    v=v_gap/rho=2J(b+nu)sin(pi nu)>0.                    (12)
+
+Expanding (8) at fixed nu gives
+
+    E0(L,M)=L f(rho)-pi v/(6L)+O(L^-3).                 (13)
+
+This is the c=1 Casimir coefficient. It alone is not the tower
+argument; the zero modes and oscillator levels can also be read
+from the complete spectrum (7).
+
+First change M by delta M at fixed L near the minimizing density.
+Equations (10),(12) give
+
+    Delta E_charge = [pi v/(2K L)](delta M)^2+o(L^-1),
+    K=rho^2=(b+nu)^(-2).                                (14)
+
+If rho L is not integral, replace delta M by the integer's offset
+from rho L and subtract the smallest such energy when quoting gaps.
+No new mode is created by this rounding.
+
+For the current mode, boost the filled gap Fermi interval by j
+wave-number slots. Its total q changes by 2pi rj/M. Equations
+(6),(7) give allowed physical momenta
+
+    P=2pi(tM-rj)/L mod 2pi,
+
+for an integer t. The displacement of the center in the cosine is
+
+    (2pi j+P)/M=2pi(bj+t)/L mod 2pi/M.
+
+Put D=bj+t. As the boost and the momentum branch vary, D runs through
+the integers. Expanding the filled-sea energy gives
+
+    Delta E_current=2pi v K D^2/L+o(L^-1),
+    P=2pi rho D mod 2pi + O(L^-1).                     (15)
+
+For example D=1 can be taken with the unboosted symmetric sea and
+P=2pi M/L. Its exact gap is
+
+    [2J sin(pi nu)/sin(pi/M)] [1-cos(2pi/L)],             (16)
+
+which is 4pi J sin(pi nu)/[(b+nu)L]+O(L^-3). This small
+current gap explains the previously measured first marker-graph gaps.
+Using the XX value K=1 in physical coordinates would miss a factor
+(b+nu)^2.
+
+Particle-hole excitations a fixed number of slots from the two Fermi
+edges have the usual partition multiplicities and energies
+2pi v(N_R+N_L)/L. Their change in (6) adjusts P by O(1/L), changing
+the current displacement only at O(1/L^2). Including charge and
+current modes, the leading finite-size energies are therefore
+
+    E-L f(rho) = (2pi v/L)[-1/12
+                  +(delta M)^2/(4K)+K D^2+N_R+N_L]
+                  +o(L^-1).                            (17)
+
+The physical momentum also has the usual charge-current and oscillator
+terms of order 1/L. Exchanging the names R and L compensates the
+Slater sign convention used in Section 2. Thus (17) is one compact
+boson, with central charge one and the parameter (14), rather than
+additional quadratic defect states. Here the free-fermion continuum
+identification of the partition towers is the stated standard input.
+
+As nu approaches 0 or 1, the velocity vanishes. Those endpoints
+are excluded from the conformal statement, consistently with the
+isolated-defect quadratic spectrum of mobile_selector.md.
+
+### 5. Physical-site entropy, not entropy of the gap variables
+
+Let phi_XX(eta)>0 be the normalized periodic gap-chain ground
+wavefunction at r particles. It is invariant under cyclic shifts.
+The normalized physical marker wavefunction is
+
+    Psi({x_j})=sqrt(M/L) phi_XX(eta).                    (18)
+
+Any reference marker gives the same value. Its norm follows from
+the M-to-one cover in (1). The gap amplitude is the absolute value
+of the filled-sea Slater determinant, so (18) gives finite data
+without diagonalizing the physical graph.
+
+The script computes reduced density matrices using actual subsets
+of markers in a physical interval. It does not substitute the gap
+entropy. Sectors with different marker numbers in the interval
+form separate Schmidt blocks. This allows a physical bipartition
+of 72 sites with 57915 allowed full configurations and a largest
+Schmidt block of only 500 by 500.
+
+For b=4, nu=1/2, J=1, the half-chain results are
+
+| M | physical L | S(L/2) | XX control S(M/2) |
+| :-- | :-- | :-- | :-- |
+| 8 | 36 | 2.00379104576 | 1.04373803047 |
+| 12 | 54 | 2.14188009444 | 1.17547582153 |
+| 16 | 72 | 2.23878096696 | 1.27019133100 |
+
+The successive slopes 3 Delta S/Delta log L give c=1.0217085 and
+1.0104996. The known XX controls give 0.9747161 and 0.9877102 at
+the same cell counts. These are finite-size estimates approaching
+one from opposite sides, not exact equalities of the two entropies.
+
+Independently, Casimir fits at M=40,48,64,80,96,128,160 give
+c=0.999999704 for b=1,4,9, with velocities (12) and an L^-4
+correction included in E/L. At M=160 the current gaps reproduce
+K to relative error below 7e-5, and the neighboring-M charge
+stiffness reproduces 1/K to below 0.3 percent. The complete
+physical graph spectra at six (b,M,r) values, dimensions 24 to
+315, agree with (7) within 1.7e-14, including asymmetric fillings
+where the twist sign matters.
+
+Reproduce with
+
+    OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python3 length_fluid_checks.py --max-M 16
+
+The output is length_fluid_checks.json. These two central-charge
+estimators test the exact PROJECTED marker model. They cannot be
+reported as two estimators for the full microscopic candidate.
+
+### 6. Implication and limit
+
+The all-ring marker mechanism now has a complete first-order spectrum,
+not just a compatible-length subsequence or a ground-energy formula.
+The local composition in selector_wrapper.md produces this graph with
+the logical identity on the transported payloads. This removes a
+specific finite-size bookkeeping gap.
+
+The first-order payload couplings still depend on r_p r_p', and finite
+u,lambda generate higher-order terms and cell leakage. The present
+calculation does not prove that their infrared limit is the direct
+sum of this boson and the desired payload CFT. It also does not
+construct the missing high-channel initialized core. Both tasks
+remain necessary for a microscopic counterexample.
+
+## 32. Helix equalization of the two-length payload interface
+
+Status: proved local construction and exact first-order identities.
+It builds on selector_wrapper.md and does not construct the missing
+high-channel core. Its finite-coupling infrared behavior is not proved.
+
+### 1. Problem and construction
+
+The wrapped codes of lengths N=b,b+1 have port maps r_p alpha Gamma
+and r_p alpha R, p=N-b+1. At finite vacancy hopping, r_1 and r_2 are
+generally different. Thus their projected intercell interaction carries
+r_p r_p' and couples the length variables to the logical payload.
+
+This dependence can be removed exactly at first order using two qubit
+tracks per physical site. The total local dimension becomes
+
+    d_equal=4(24q+12)=96q+48.                             (1)
+
+Choose 0<phi<pi, and put
+
+    |+(theta)>=(|0>+exp(i theta)|1>)/sqrt(2),
+    h_phi=|s_phi><s_phi|,
+    |s_phi>=(|01>-exp(-i phi)|10>)/sqrt(2),
+    a=I-|+(0)><+(0)|.                                   (2)
+
+On a cell of N physical sites, track A has the uniform bond h_phi
+and pin a on its first site. Track B has the same bond and pin a
+on its last site. Their complete joint ground state is the product
+
+    |G_N>= product_(j=0)^(N-1)
+       |+(j phi)>_(A,j) |+((j-N+1)phi)>_(B,j).           (3)
+
+The single-pinned helix theorem in length_filter.md proves uniqueness
+and the gap bound 1/[N(2N-1)] for each track. This is a genuine
+repeated NN parent, not a length-dependent Hamiltonian. Only its
+ground state depends on N.
+
+In the full selector chain, put both helix bonds on P_int. On the
+cut projector P_cut=X# + R#, add pin a on track B of the left site
+and pin a on track A of the right site. Each pin is a one-site
+operator within the two-site bond. Thus every legal cell has exactly
+the two endpoint pins specified above. All added terms are positive,
+so the exclusion of selector violations and other lengths in
+selector_wrapper.md is unchanged. They have zero ground energy at
+every cell length. The new complete selected codes are W_p tensor G_N,
+and the base gap is further bounded by the smaller helix gap at
+N=b+1. No extra imposed boundary or marker condition is introduced.
+
+### 2. An explicit positive endpoint compensator
+
+At the first physical site, use the B-track states
+
+    u_1=|+(-(b-1)phi)>,   u_2=|+(-b phi)>.
+
+They are distinct and obey
+
+    chi=1-|<u_1,u_2>|^2=sin^2(phi/2)>0.
+
+For any desired positive expectation values m_1,m_2, define
+
+    M_L=[m_1(I-|u_2><u_2|)
+                 +m_2(I-|u_1><u_1|)]/chi.              (4)
+
+Then M_L>=0, ||M_L||<=(m_1+m_2)/chi, and
+
+    <u_p|M_L|u_p>=m_p,  p=1,2.                         (5)
+
+Indeed the term orthogonal to u_p gives zero, and the other
+projector has expectation chi. This proves the formula without
+requiring orthogonal length flags. Choose m_p=1/r_p. At the last
+site the A-track states are u_p^*, so use M_R=M_L^*.
+
+If Atilde_a,Btilde_a are the original wrapper port operators, replace
+them by physical single-site operators
+
+    Ahat_a=Atilde_a tensor I_A tensor M_L,
+    Bhat_a=Btilde_a tensor M_R tensor I_B.                (6)
+
+Tensor factorization of the cell code and (5) give, at BOTH lengths,
+
+    (W_p tensor G_N)^dag Ahat_a(first)(W_p tensor G_N)
+          =alpha Gamma_a,
+    (W_p tensor G_N)^dag Bhat_a(last)(W_p tensor G_N)
+          =alpha R_a.                                  (7)
+
+Consequently the microscopic cut bond
+lambda P_cut sum_ab T_ab Bhat_a tensor Ahat_b compresses to
+
+    lambda alpha^2 sum_ab T_ab R_a tensor Gamma_b,        (8)
+
+independently of both adjacent lengths. All compensators are fixed
+matrices once b,r_1,r_2 are chosen; they do not depend on total L.
+Both ancilla states have even grading, so an existing exact payload
+parity is preserved.
+
+A smaller Hermitian compensator is often useful. Write rho_p=|u_p><u_p|,
+mbar=(m_1+m_2)/2 and delta=m_1-m_2. Then
+
+    M_small=mbar I+[delta/(2chi)](rho_1-rho_2)            (8a)
+
+has the same two expectations, since
+<u_1|rho_1-rho_2|u_1>=chi and the second expectation is -chi.
+Its norm is mbar+|delta|/[2sin(phi/2)]. It is positive whenever
+mbar>=|delta|/[2sin(phi/2)], but positivity is not needed for a
+Hermitian boundary observable. Formula (4) is a positive choice
+without any additional condition. Either gives (7),(8).
+
+### 3. Local marker transport remains nonzero and payload independent
+
+Consider a marker move taking neighboring lengths (b,b+1) to
+(b+1,b). The transferred site starts as the first site of the right
+cell and ends as the last site of the left cell. On that site the
+two helix phases change as
+
+    (A,B): (0,-b phi) -> (b phi,0).
+
+Let U_b=diag(1,exp(i b phi)). Acting with U_b on each qubit makes
+this change exactly. At the b old sites of the left cell only
+track B changes, with every phase decreasing by phi. At the b
+retained sites of the right cell only track A changes, again by
+-phi. Thus the overlap from all unchanged physical sites is
+
+    [exp(i phi/2)cos(phi/2)]^(2b)
+          =exp(i b phi) cos(phi/2)^(2b).                (9)
+
+Replace the forward marker conversion C_wrap in selector_wrapper.md
+by the local operator, on the transferred site only,
+
+    C_new=exp(-i b phi) C_wrap tensor U_b tensor U_b.     (10)
+
+Its adjoint supplies the reverse move. Equations (9),(10) show that
+the projected hopping remains a positive real scalar times the
+identity on BOTH logical payloads, with coefficient
+
+    J=u A_b^2 beta_wrap beta_helix,
+    beta_helix=cos(phi/2)^(2b)>0.                       (11)
+
+No global change of the helix states is applied by the Hamiltonian.
+Their nonzero overlap is what allows a local move. Orthogonal length
+labels at untouched endpoints would instead kill this transport.
+
+There is no necessary exponential suppression from the new tracks.
+For phi=1/b,
+
+    beta_helix=exp[-1/(4b)+O(b^-3)],
+    ||M_L||<= (1/r_1+1/r_2)/sin^2(1/(2b))=O(b^2)
+
+when r_p are bounded away from zero. The compensation costs polynomial
+operator norm rather than vanishing transport. At every fixed b all
+norms are finite, and the microscopic perturbation coefficients can
+be chosen below the corresponding base gap. This is resource
+accounting, not a thermodynamic perturbation theorem.
+
+### 4. Internal readout fields
+
+The same two-state interpolation equalizes any physical operator
+supported near one endpoint whose compression is a positive scalar
+s_p times a fixed logical operator. For example, a two-site density
+readout at the first two occupied payload sites, lifted to the first
+two physical sites, acquires the probability s_p that both sites are
+occupied with the appropriate tags. Tensor (4), with m_p=1/s_p,
+onto track B of the first site. This remains a two-site physical
+operator, and its compression is the same logical density at both
+lengths. The selector projector must enable it on the first internal
+bond, beginning at #, and on both possible following letters L or X.
+
+This statement requires the original initialized core to have that
+endpoint readout. It does not create the independent logical density
+fields of classical_readout.md without its missing controller.
+
+### 5. What is now exact and what is not
+
+Within the complete base ground manifold, the first-order Hamiltonian
+has a payload-independent length hopping (11) and a length-independent
+logical bond (8). At fixed M its local terms are those of the gap XX
+chain plus the chosen logical chain. On a ring their cyclic reference
+identification still acts jointly on gaps and payloads. This is a
+global momentum constraint, not a new local interaction, and it must
+be retained when assigning individual levels.
+
+If the logical target is a free n-flavor fermion chain, its oscillator
+towers and the one length oscillator give the expected total c=n+1
+in this FIRST-ORDER model. The marker constraint shifts current and
+charge sectors; it does not justify discarding the length boson.
+The joint spectrum with an XX payload is now checked in
+joint_fluid.md, retaining the combined ring constraint. Its infrared
+stability under the microscopic higher-order terms is not proved.
+
+The construction removes the previous r_p r_p' obstruction exactly,
+at a fixed factor-four alphabet cost. It does not give an exact
+invariant product code: both the compensated bond and the marker
+move have leakage. The earlier exact-encoding no-go therefore
+remains intact. A high-channel initialized uniform core and control
+at fixed nonzero u,lambda are still missing.
+
+### 6. Checks
+
+Run
+
+    OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python3 helix_equalizer_checks.py
+
+At k=3, b=4, the two tested helix pitches are pi/2 and 1/4. The
+wrapper has r_1=0.505953234954 and r_2=0.500012721419. Both complete
+one-track parent spectra at N=4,5 obey the stated gap bound; the
+smallest gap is 0.048943483705 and ground residuals are below 3e-16.
+
+The actual local conversion is applied to the two-cell helix state
+in dimension 4^9=262144. It gives beta_helix=0.0625 and
+0.939259535981 respectively, with errors below 5.1e-14. The positive
+compensator (4) equalizes both endpoints within 2.6e-14 and the
+two-cell logical bond within 3.4e-14. These are finite code and
+transport tests, not CFT estimators. Results are saved in
+helix_equalizer_checks.json.
+
+## 33. The combined ring constraint and logical payload spectrum
+
+Status: proved finite-volume spectral reduction for the equalized
+first-order model and checked with a free XX payload. No finite-coupling
+microscopic infrared theorem is claimed.
+
+### 1. Arbitrary translation-invariant logical payload
+
+Use the physical marker Hilbert space of length_fluid.md and attach
+a D-dimensional logical state to every cell. The reference cover is
+
+    (x,eta,z_0,...,z_(M-1)),
+
+with x in Z_L and sum eta=r=L-bM. Its quotient is
+
+    (x,eta,z) ~ (x+b+eta_0,S eta,S z).                   (1)
+
+The dimension is (L/M) binomial(M,r) D^M. A marker move transports
+the cell states by the identity, and the logical bond is independent
+of adjacent lengths, as supplied by helix_equalizer.md. Let H_pay(M)
+be any translation-invariant logical ring Hamiltonian and choose
+simultaneous energy/translation eigenvectors with
+
+    H_pay chi_a=E_a chi_a,
+    chi_a(S z)=exp(2pi i m_a/M) chi_a(z),
+    m_a in Z_M.                                         (2)
+
+Degeneracies are included by repeating a. At fixed physical momentum
+P=2pi ell/L, the same gap gauge as in length_fluid.md gives a uniform
+gap hopping flux P. H_pay is unaffected by this gauge. The quotient
+(1) now requires
+
+    m_gap+m_a+ell=0 mod M.                              (3)
+
+Consequently the COMPLETE first-order spectrum is
+
+    E=kappa M+E_a-2J sum_(j=1)^r
+                         cos(q_j+2pi ell/(LM)),          (4)
+
+where q_j=2pi[I_j+(r-1)/2]/M for distinct I_j in {0,...,M-1},
+m_gap=sum_j I_j+r(r-1)/2 modulo M, and ell ranges over
+0,...,L-1 subject to (3). This is an exact finite-dimensional
+statement, with no continuum approximation.
+
+Proof. The marker reference shift rotates BOTH gap and payload
+coordinates, which explains the extra phase m_a in (3). The
+marker Hamiltonian in the cover acts only on eta and x, while the
+logical Hamiltonian acts only on z. They commute, including at the
+reference bond, since a global cyclic shift commutes with H_pay.
+Fourier transform in x, the diagonal gap gauge, and Jordan-Wigner
+on the gaps diagonalize the first part exactly as before. Applying
+the quotient condition selects (3). These are unitary decompositions
+of the entire invariant Hilbert space, proving completeness. In
+physical coordinates a marker crossing the origin cyclically
+rotates the canonically ordered payload labels. Ignoring this
+rotation would give a different spectrum.
+
+Equation (4) is more informative than saying the two systems are
+decoupled. Their local Hamiltonians separate, but their allowed
+global momentum sectors are linked. In particular a generic
+payload excitation cannot be combined with an arbitrary gap
+eigenstate at the same chosen physical momentum.
+
+### 2. One free XX payload
+
+Take a spin-1/2 logical XX ring with hopping amplitude g>0. In its
+sector of n up spins the free wave numbers are
+
+    p_j=(2pi/M)[A_j+(n-1)/2],
+    E_a=-2g sum_j cos(p_j),
+    m_a=sum_j A_j+n(n-1)/2 mod M.                       (5)
+
+Using (5) in (3),(4) gives every energy in a physical Hilbert space
+of dimension (L/M) binomial(M,r) binomial(M,n). The positive filled
+sea in both sectors has m_gap=m_a=0, so it lifts at P=0 and attains
+
+    E0=kappa M-[2J sin(pi r/M)+2g sin(pi n/M)]/sin(pi/M). (6)
+
+Each term individually has its lowest energy there. Thus (6) is
+the joint ground energy at those charges, without an assumption
+that momentum minimization leaves a product state available.
+
+At r/M=n/M=1/2, the two physical velocities are
+
+    v_len=2J(b+1/2),    v_pay=2g(b+1/2).
+
+The Casimir term is -pi(v_len+v_pay)/(6L), the sum of two c=1
+sectors. The two independent sets of Fermi-edge particle-hole
+partitions are present in (4): their total momentum changes the
+allowed ell through (3), but ell can always be chosen. The induced
+change of gap flux only shifts zero-mode sectors and does not
+remove either oscillator family. The charge and current energies
+are quadratic near interior fillings. Thus the standard free
+continuum identification gives two bosons, with their zero-mode
+quantization coupled by (3).
+
+At J=g and kappa=2(J+g)/pi, both physical velocities coincide and
+the bulk minimum has r/M=n/M=1/2. On compatible rings
+
+    E0=4JM/pi-4J/sin(pi/M),
+
+so the single-velocity Casimir coefficient measures c_total=2.
+The same mechanism adds one length oscillator to an n-flavor free
+logical target. This claim concerns the first-order Hamiltonian;
+it is not evidence that microscopic higher-order corrections
+preserve all n+1 modes.
+
+### 3. Independent physical-graph checks
+
+Run
+
+    OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python3 joint_fluid_checks.py
+
+The physical implementation labels marker positions in increasing
+order and stores one payload bit per cell. Marker moves that wrap
+from L-1 to 0 rotate the entire payload tuple. The XX term exchanges
+payload bits on neighboring cells. This directly builds a matrix
+in the physical basis, independently of (3),(4).
+
+For (b,M,r,n)=(4,4,2,2), (3,5,2,2), and (4,6,3,3), with J=1 and
+g=0.7, the full Hilbert dimensions are 162,340,1800. EVERY eigenvalue
+agrees with (4),(5), with maximum errors 1.1e-14,1.2e-14,3.4e-14.
+The asymmetric r=2,M=5 case is useful for detecting the twist sign.
+The ground energies agree with (6) within 1.6e-14.
+
+For J=g=1, b=4, M=40,48,64,80,96,128,160, a fit of E0/L against
+1,L^-2,L^-4 at known velocity v=9 gives c=1.999999409. This is a
+Casimir check of the projected joint model, not a second independent
+estimator for any microscopic counterexample. Output is saved in
+joint_fluid_checks.json.
+
+### 4. Limit of the reduction
+
+The equalizer and this calculation resolve the leading length/payload
+mixing and the global ring bookkeeping. A fixed nonzero microscopic
+coupling still produces leakage, additional local terms, and possibly
+relevant or marginal perturbations of the joint theory. The two missing
+pieces remain the initialized high-channel uniform core and an infrared
+argument that survives those corrections. No whole-class bound or
+verified counterexample follows from the reduction alone.
+
+## 34. Positive approximate cores and finite-cell error bounds
+
+Status: proved finite-cell spectral and observable bounds. This relaxes
+exact frustration freeness in the finite-cell input. It does not supply
+a uniform simulator or a thermodynamic infrared theorem.
+
+### 1. Hypotheses and spectrum
+
+Let h0,a,b be positive, and let
+
+    H_core=sum_(j=1)^(k-1) h0_j+a_1+b_k.
+
+Assume its lowest D eigenvalues lie in [0,epsilon], with isometry V
+onto that spectral subspace, and every other eigenvalue is at least
+gamma>epsilon. The terms need not annihilate V. Use the ordered-tag
+vacancy construction of tagged_vacancy.md at N=k+p, with charge
+ground vector chi, energy e_ch, and gap delta>0. Then
+
+    H_ext-e_ch=A+B,
+    A=(H_ch-e_ch) tensor I>=0,
+    B=sum_j D_j tensor h0_j+I tensor(a_1+b_k)>=0.          (1)
+
+Put
+
+    p_min=min_j <chi|D_j|chi>>0,
+    M=(k-1)||h0||+||a||+||b||,
+    g0=delta p_min gamma /
+           [(sqrt(delta)+sqrt(M))^2+p_min gamma].        (2)
+
+If epsilon<g0, the lowest D eigenvalues of H_ext-e_ch lie in
+[0,epsilon], and the (D+1)-st eigenvalue is at least g0. Thus the
+low code band is isolated by at least g0-epsilon.
+
+Proof. Let W0=chi tensor V and P=W0 W0^dag. Charge compression of
+B is sum_j p_j h0_j+a_1+b_k, which lies between p_min H_core and
+H_core as a quadratic form. Therefore P(A+B)P<=epsilon P.
+The min-max principle gives lambda_D<=epsilon; positivity gives
+lambda_1>=0.
+
+For a normalized psi perpendicular to range(W0), decompose
+psi=x+eta with x=chi tensor phi and eta perpendicular to the charge
+ground state. Then phi is perpendicular to V. If E=<psi|(A+B)|psi>,
+
+    ||eta||^2<=E/delta,
+    <x|B|x>>=p_min gamma ||x||^2,
+    sqrt(<x|B|x>)<=sqrt(E)+sqrt(M)||eta||.
+
+These are the same elementary inequalities as the exact-core gap
+proof, but only H_core>=gamma on V^perp was used. Eliminating eta
+gives E>=g0. Hence Q(A+B)Q>=g0 Q for Q=I-P. Applying min-max on
+this codimension-D space gives lambda_(D+1)>=g0. QED.
+
+### 2. Code angle and boundary errors
+
+Let P_low be the actual lowest-D spectral projector. Then
+
+    ||P_low-P||<=min{1,sqrt(M epsilon)/(g0-epsilon)}=:s.  (3)
+
+To prove it, note AP=0 and 0<=B<=M, so
+
+    ||Q(A+B)P||^2<=||BP||^2
+                     =||PB^2P||<=M||PBP||<=M epsilon.
+
+For an orthonormal low-band eigenframe U with eigenvalue matrix E_U,
+the Q component satisfies the Sylvester equation
+
+    Q(A+B)Q (QU)-(QU)E_U=-Q(A+B)P(PU).
+
+The first operator has spectrum >=g0 and the second <=epsilon.
+Its solution can be written as an integral of
+exp[-t Q(A+B)Q] times the right-hand side times exp(t E_U),
+giving ||QU||<=sqrt(M epsilon)/(g0-epsilon). For equal-rank
+projectors ||QU|| is their largest principal-angle sine, proving (3).
+
+Align the logical bases by the polar decomposition of U^dag W0,
+and call the resulting frame W. Principal angles give
+
+    ||W-W0||<=sqrt(2)s.
+
+For every physical operator F,
+
+    ||W^dag F W-W0^dag F W0||<=2sqrt(2)s ||F||.           (4)
+
+This applies to both endpoint maps. If two neighboring cells change
+length and the exact reference codes have projected transport beta I
+under a local operator C, the approximate codes obey
+
+    ||transport_actual-beta I||
+                   <=2sqrt(2)(s_1+s_2)||C||.             (5)
+
+There are four isometry differences, two before and two after the
+cut move; the product-isometry triangle inequality proves (5).
+The right side may be large, so a useful approximation requires
+epsilon small compared with g0^2/M, not merely below the core gap.
+
+### 3. Adding the filter and complete finite-cell sectors
+
+Tensor the occupied-coordinate helix filter onto the approximate core.
+Its desired length-k ground vector is unique. The input low band
+becomes V tensor g_k, with the same epsilon and with complement
+threshold at least min(gamma,J_filter gamma_filter).
+
+The filter's rejection estimates at wrong occupied numbers use only
+positivity of the payload terms, so they still hold. The arrow-wrapper
+endpoint and illegal-sector bounds likewise use positivity, not exact
+annihilation. Thus on each physical length N=k+1,k+2 there are exactly
+D eigenvalues in
+
+    [e_p-4U, e_p-4U+epsilon],
+
+and every other eigenvalue is at least
+
+    e_p-4U+min{g0,U-v(N-1)}.                             (6)
+
+Here the g0 for each length uses the combined payload/filter core.
+Equations (3)-(5) control the two-length code and its port/transport
+errors. The helix equalizer can be applied to the reference maps;
+actual errors are then multiplied by the norms of its compensators.
+
+This makes the finite-cell interface compatible with positive
+approximate history simulations, PROVIDED such a simulation actually
+preserves both endpoint observables to the required accuracy.
+The lemma is not itself a construction of such a simulation.
+
+### 4. Why this is not a volume-uniform low-band theorem
+
+On an array of M_cells the retained band can have width M_cells epsilon,
+while one auxiliary excitation costs a fixed amount. Its full spectrum
+can therefore overlap the excluded bands as M_cells grows. The exact
+base ground-space theorem of selector_wrapper.md cannot be quoted
+unchanged when epsilon>0.
+
+One can use the exact low-band projectors of each finite cell to define
+a reference Hamiltonian that flattens those bands. The difference is
+a local-in-cell perturbation of norm at most epsilon. This is a useful
+setup for a local effective-theory argument, but the flattening term
+need not be a microscopic nearest-neighbor bond. It is an analysis
+device, not a proposed physical modification. Infrared control at
+fixed error remains an independent obligation.
+
+### 5. Checks
+
+Run
+
+    OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python3 approximate_core_checks.py
+
+The core is the k=3 graded qubit-swap parent plus tau times the total
+occupation. It has the vacuum at energy zero and its symmetric
+one-particle code state at energy tau, with the complement beginning
+at 0.5+tau. The local decomposition uses positive bonds and positive
+endpoint terms. It is not frustration free on the complete D=2 code.
+
+At p=1,2, U=1, v=0.6 and tau=1e-6,1e-7,1e-8, all six complete
+ordered-tag matrices, dimensions 32 and 80, obey (2)-(4). Their
+proved complement thresholds are about 0.02403 and 0.004927, while
+their actual third eigenvalues are 0.23246 and 0.033488. The largest
+code angle is 2.5e-7 and the largest endpoint error is 1.2e-8. The
+bounds are deliberately conservative. At tau=1e-6 the larger angle
+bound is 0.2871, well above the observed angle. The charge hopping
+used here tests the finite-cell lemma, not the separate wrapper
+number-selection inequality v<U/(k+1).
+
+Output is approximate_core_checks.json. No full periodic low-band
+or conformal conclusion is drawn from these checks.
+
+## 35. Sixth-run verification, limitations, and ranked continuation
+
+The proposed scheduled classical controller was revisited first. It still
+does not specify a constant-alphabet repeated-bond program and clock with
+all unwanted history components excluded. A chosen program sector or an
+externally scheduled circuit is insufficient. No new controller theorem
+is claimed. Work then moved to the selector/core interface and the full
+projected ring spectrum, giving Sections 30-34.
+
+Five new scripts were run successfully with single-thread BLAS and passed
+Python compilation. Reproduction commands are in the corresponding
+sections and notes. The outputs are selector_wrapper_checks.json,
+length_fluid_checks.json, helix_equalizer_checks.json,
+joint_fluid_checks.json, and approximate_core_checks.json. Earlier suites
+were not rerun. The largest new complete-spectrum comparison error is
+3.4e-14. The approximate-core examples have deliberately nonzero code
+angles and endpoint errors, bounded as stated rather than reported as zero.
+
+The source-level audit checked the uniform wrong-length bound, the two
+kinds of illegal sectors, the orientation of the transferred vacancy,
+the helix rotation and its phase, the combined cyclic momentum constraint,
+and the min-max/Sylvester estimates for an approximate positive core.
+There was no independent referee. The latest ir_control contribution adds
+toy detuned-target numerics but still supplies neither the missing uniform
+core nor a general-cell finite-coupling spectral theorem.
+
+Remaining work, ranked:
+
+1. Construct an initialized uniform positive NN core with high-channel
+   boundary maps, exact or within the quantitative tolerances of Section
+   34. State its alphabet, repeated bond, initialization, complete low
+   space, parity, and both endpoint observables. The classical readout
+   controller remains one possible route. The new wrappers do not solve
+   its program/clock problem.
+2. Prove or numerically establish the infrared behavior at fixed nonzero
+   couplings of the microscopic moving-cell model. The exact first-order
+   spectrum now supplies a controlled reference. Higher-order errors,
+   leakage, mixed resonances involving the length mode, and the physical
+   K=(b+nu)^(-2) must be treated. A finite-order energy-density bound is
+   insufficient for levels of order 1/L.
+3. If using an approximate simulator, meet epsilon << g0^2/M before
+   applying the finite-cell port bounds, then include the residual
+   splitting as a local logical perturbation. Do not assert a globally
+   separated retained band merely from isolated finite-cell bands.
+4. Pursue an independent full-class bound only with an input controlling
+   neutral/emergent sectors or conformal onset. The earlier symmetry,
+   rank, and frustration-free results remain conditional or restricted.
+
+The arbitrary-period sector reset, complete two-length selection, scalar
+local transport, leading port equalization, and projected all-ring
+bookkeeping are now explicit. The high-channel core and the finite-coupling
+infrared step remain open. The result is progress, not a conclusion under
+the user's definition.
