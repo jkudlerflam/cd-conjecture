@@ -1,62 +1,62 @@
 # C8 result
 
-2026-10-28. Tenth run. Closed-book work by Codex, GPT-6. No network,
+2026-10-28. Eleventh run. Closed-book work by Codex, GPT-6. No network,
 subagents, independent referee, cluster computation, commit or push.
 
 ## Verdict
 
-Nonconclusive for the original c-d conjecture. The explicit periodic
-candidate and clean-readout controller from runs 8-9 are unchanged.
-This run proves uniform local estimates for their atomic formulation,
-but does not supply the all-order infrared reduction or a measured
-microscopic central charge.
+Nonconclusive for the original c-d conjecture. The clock and readout
+construction are complete. This run proves full-sector energy and
+length controls, but does not supply a local infrared reduction or
+measure the microscopic central charge.
 
-[proved] Section 48 gives an exact one-step local unitary normal form
-on the complete direct sum over cell lengths. It cancels first-order
-leakage with a per-cell remainder controlled only by the on-cell gap
-and bounded interaction norms. No upper cell energy or dimension cutoff
-is needed. The unitary preserves charge, total length and the ring
-quotient. Its dynamics converges to the projected model at fixed slow
-time, uniformly in ring length.
+[proved] Section 55 gives canonical energy increments and factorial
+long-cell tails at fixed physical length, retaining the ring quotient.
+A Sylvester equation bounds the entire true low-energy subspace.
+A cutoff R-b=O(log L/log log L) approximates low eigenvalues with an
+error o(1/L), for the specified coefficient in the cutoff. This resolves
+the earlier gap between the grand-canonical and physical length bounds.
 
-[proved] Section 50 bounds ground-energy errors and local defect
-occupation without assuming a gap in the retained theory. A one-step
-dressing has an O(epsilon^4) ground-energy-density error relative to
-its exact dressed P block in the unconstrained atomic problem. Physical
-fixed-length sectors retain an explicit reference-sector cost. The
-bare C8 cost is O(epsilon b^2/M) near the reference density. Linear
-wrong-length energy gives local cutoff bounds; one-site length transfer
-also gives factorial tails in the unconstrained atomic ground state.
+[proved] Section 56 combines a positive atomic chemical tilt with the
+exact projected free-fluid pressure. For the existing marker chemical
+potential, the actual legal ground sectors satisfy rho=1/2+O(sqrt(epsilon))
+at one fixed sufficiently small coupling. No differentiability or
+positive dressed compressibility is inferred.
 
-[proved] Section 52 bounds bare off-code sources compressed to true
-spectral windows, uniformly in volume. Smooth filtering gives an exact
-small low-frequency component and a high-frequency component with
-exponential Euclidean decay and quasi-local spatial tails. The filter
-uses the full interacting dynamics, so it is not itself an effective
-action or a constructive elimination theorem.
+[proved] Section 57 excludes every illegal selector sector by a local
+unitary repair after increasing only the forbidden-bond penalty.
+CertifiedPeriodicBond in certified_periodic_bond.py is the preferred
+explicit variant. Its complete legal Hamiltonian is unchanged. The
+marker-free sectors are excluded separately by the negative extensive
+base energy. Thus the new density and tail results apply to the full
+microscopic ground sectors, not just a chosen marker sector.
 
-[proved controls] Section 49 gives a literal d=4 chain with a critical
-Ising first-order projection and an exact nonzero mass at fixed coupling.
-Section 51 gives an exactly dressed XX chain whose bare massive source
-has an algebraic connected tail. These examples exclude two shortcuts,
-not the nonresonant C8 candidate or local integration in general.
+[proved composition] Section 58 gives a positive coupling interval and
+extends the cutoff statement to the full microscopic low-energy window.
+It also locates the remaining obstruction. A controlled length cutoff,
+small atomic occupation and energy-density errors do not construct the
+irreducible action after subtracting retained operator propagation.
+The prior crossover and source-tail controls remain relevant.
 
-[numerical] Five scripts verify the local dressing, energy/occupation
-bounds, true spectral-window bounds, exact control models and length
-tails. Dense dimensions reach 1024. Entropy and Casimir diagnostics of
-the crossover control are calibrated on c=1/2; they are not measurements
-of the C8 microscopic candidate. All sizes, conditioning limitations
-and reproduction commands are stated in Sections 48-54.
+[numerical] Three new check scripts pass. Physical scalar controls reach
+dimension 7007; quantum selector blocks reach dimension 256. The new
+penalty is checked against 8192 full-space columns, with zero change on
+legal columns, followed by the active port/color/marker column suite.
+These checks do not measure the C8 central charge. The density tests'
+finite ED sizes lie below the conservative asymptotic size threshold,
+which is explicitly recorded. Detailed residuals and reproduction
+instructions are in Section 58.
 
 The inherited family still has
 
     d=96*446400(q+1)+48, m=q^2/8, c_projected=m+1.
 
-Its projected count exceeds d-1 at the recorded large finite q, but no
-fixed-nonzero-coupling conformal conclusion is proved here. The fixed-d
-route-A spectral compiler is a separate unfinished problem. The full
-class has neither a proved upper bound nor a verified counterexample
-from this run. Start with Sections 48-54 and PROGRESS.md.
+Its projected count exceeds d-1 at a recorded large finite q, but the
+fixed-coupling CFT conclusion remains unproved. The class has neither
+a proved general upper bound nor a verified counterexample from this
+run. Start with Sections 55-58 and PROGRESS.md. Sections 1-54 are the
+chronological record of prior runs, whose old continuation lists are
+superseded by the current handoff.
 
 ## 1. Simultaneous boundary Clifford compression
 
@@ -8975,3 +8975,924 @@ stdout logs were inadvertently written in /tmp and removed during the
 final audit; they are not deliverables or persistent external changes.
 There was no network access, subagent, independent audit, commit or push.
 RUN10_RESULT.md and RUN10_PROGRESS.md preserve this handoff.
+
+
+## 55. Canonical energy increments and physical length tails
+
+Status: proved estimates under the explicit atomic and coordinate
+hypotheses below. They apply to the bare legal C8 Hamiltonian. They do
+not establish a conformal limit or an all-order effective action.
+
+### 1. Atomic assumptions and an equal-payload raising operator
+
+Use the exact coordinates of unprojected_cell_reduction.md. On a cell,
+let n=ell-b, with integer ell>=2, and let A>=0 commute with ell. Its
+kernel consists of two isomorphic finite spaces P0 and P1 at n=0 and
+n=1. The logical identification between them is an isometry R with
+
+    R dagger R=P0, R R dagger=P1,
+    [A,R]=0, [n,R]=R, ||R||=1.
+
+R is zero on the rest of the cell space. It is a mathematical local
+trial operator in cell coordinates, not an additional microscopic
+interaction. In C8 the two code spaces carry the same logical payload.
+
+Write P=P0+P1, Q=1-P, and assume the form inequalities
+
+    A>=Delta Q,
+    A|ell >= gamma(1+|ell-b|) for ell outside {b,b+1}.       (1)
+
+The weaker A|ell>=gamma(ell-b) for ell>=b+2 will be used for the tail.
+With
+
+    C=max(2/Delta,1/gamma),
+
+the following useful single-cell inequality holds:
+
+    |n-P1|+Q <= C A.                                      (2)
+
+To check it, on P0 and P1 both sides on the left vanish. On excited
+states of lengths b and b+1 the left side is respectively 1 and 2.
+On all other lengths it is |n|+1. Equation (1) covers all cases.
+
+On M cells let H=sum_j A_j+V, with bounded onsite or neighboring-cell
+terms V_X, conserving N=sum n_j, and
+
+    v=sup_j sum_(X contains j)||V_X||.
+
+The coupling is included in v. An additive scalar per cell is omitted.
+In particular ||V||<=Mv. No upper bound on A, cell dimension, or
+retained spectral gap is assumed. Open boundaries are allowed.
+
+### 2. Canonical increments from local trial states
+
+[proved] Let E_M(N) be the open atomic ground energy at charge N,
+and 0<=N<=M. There is an all-code trial state in this sector, so
+
+    -Mv <= E_M(N) <= Mv,
+    <A> <= 2Mv                                             (3)
+
+in any canonical ground vector. With rho=N/M, (2) implies
+
+    <sum_j P1_j> >= M(rho-2Cv),
+    <sum_j P0_j> >= M(1-rho-2Cv).                          (4)
+
+For the first inequality, N=sum P1_j+sum(n_j-P1_j) and the absolute
+value of the second expectation is at most C<A>. For the second,
+sum P0_j=M-sum P1_j-sum Q_j. The joint bound (2), rather than two
+separate estimates, gives the stated same constant.
+
+Apply R_j to a ground vector psi of charge N. The sum of trial norms
+squared is sum_j <P0_j>. Each trial lies in charge N+1. The variational
+principle, summed over j, gives
+
+    [E_M(N+1)-E_M(N)] sum_j <P0_j>
+      <= sum_j <R_j dagger [H,R_j]>
+      <= 2Mv.                                             (5)
+
+Here [A,R_j]=0 and only terms touching j contribute to [V,R_j].
+Thus ||[V,R_j]||<=2v. The identity in (5) is real in a ground vector;
+bounding the absolute value of each term is a valid upper bound.
+Using R_j dagger instead proves the lowering counterpart. Consequently
+
+    E_M(N+1)-E_M(N) <= 2v/(1-rho-2Cv),
+    E_M(N-1)-E_M(N) <= 2v/(rho-2Cv),                       (6)
+
+whenever the corresponding denominator is positive.
+
+[proved] If eta in (0,1/2), v<=eta/(4C), and both N/M and N'/M lie
+in [eta,1-eta], iterating the two inequalities gives
+
+    |E_M(N')-E_M(N)| <= (4v/eta)|N'-N|.                   (7)
+
+All intervening integer sectors stay in the same interval. This is
+a Lipschitz energy estimate, not a differentiability or compressibility
+claim. It survives level crossings, degeneracy and a critical payload.
+The same proof holds for a fixed ordinary atomic boundary twist, but
+we use the open chain below so that no twist is silently carried
+between different physical lengths.
+
+### 3. The physical quotient and a pinned-marker trial state
+
+The coordinate space at physical length L contains x in Z/LZ and
+ordered cell words of total length L. Its reference-label action is
+
+    U:(x;u1,...,uM) -> (x+ell1;u2,...,uM,u1),   U^M=1.
+
+The physical Hilbert space is the U-invariant subspace, with normalized
+orbit sums. On the full coordinate space the lifted H commutes with U.
+All terms preserve x except transfers across the reference marker,
+which change x by one. Each cell has ell>=2. These are established
+properties of the C8 coordinate representation.
+
+[proved] A normalized vector phi supported at x=0 has
+
+    Psi=M^(-1/2) sum_(a=0)^(M-1) U^a phi,
+    ||Psi||=1,  <Psi,H Psi>=<phi,H phi>.                    (8)
+
+For a nontrivial reference change the new coordinate is a nonempty
+proper sum of cell lengths, between 2 and L-2. Thus its support cannot
+overlap x=0, or reach x=0 under one application of H, which changes x
+by at most one. All cross terms in the norm and Hamiltonian expectation
+vanish. This argument allows superpositions of cell lengths.
+
+It gives the physical trial states needed below without choosing a
+physical momentum or assuming that an atomic ring ground state has
+the required cell momentum. It concerns the lowest energy over all
+physical momenta in the fixed-(M,L) legal sector.
+
+[proved] In particular, insertion of a length-b code vector at cell 1
+into a ground vector of the remaining open chain yields
+
+    E_phys(M,L) <= E_(M-1)(N)+v,  N=L-bM.                 (9)
+
+All terms meeting cell 1 have total norm at most v. Removing them
+leaves the open Hamiltonian on cells 2,...,M, independently of x.
+Their excess length is N because the inserted cell has excess zero.
+Equation (8) makes this an admissible physical variational state.
+Similarly, -Mv<=E_phys(M,L)<=Mv when 0<=N<=M.
+
+Deleting only the seam bond gives
+
+    |E_phys(M,L)-E_M(N)| <= v,                             (10)
+
+where the open chain keeps all onsite terms. The lower bound holds
+on the full lifted space before imposing U-invariance; the upper
+bound uses (8). Thus (7) also bounds physical energy increments,
+with an additional endpoint cost 2v. No smooth equation of state is
+deduced. Extra fixed payload-charge or fixed momentum constraints
+would need separate admissible trial states; they are not asserted.
+
+### 4. A fixed-length factorial tail
+
+[proved] Suppose, in addition, every V_X changes an individual cell
+length by at most one. Choose eta in (0,1/4], M>=1/eta, and
+
+    2eta <= rho=(L-bM)/M <= 1-2eta,
+    v <= min(eta/(4C), eta gamma/16).                     (11)
+
+For the lifted physical ground vector Psi, let
+
+    Q_R=1_(ell_1>=R),  a_R=||Q_R Psi||.
+
+Then for every integer r>=2,
+
+    a_(b+r) <= (2v/gamma)^(r-1)/r!.                       (12)
+
+This is uniform in M, L, the upper cell energy and cell dimension.
+For U-invariant states the squared norm is the mean long-cell
+occupation over physical markers. The statement does not select an
+absolute physical position as a distinguished marker.
+
+Proof. Remove every bounded term touching cell 1. The result is
+A1 plus an open (M-1)-cell Hamiltonian. In a cell-1 length block
+ell=b+s the rest has excess length N-s. Thus
+
+    H-E_phys >= A1+E_(M-1)(N-s)-v-E_phys                  (13)
+
+as a lower form bound after this decomposition; the subtracted v
+accounts for all removed terms, including off-diagonal length moves.
+
+First consider 2<=s<=eta M. All excess lengths between N-s and N
+have densities in [eta,1-eta] on M-1 cells. The lower endpoint obeys
+N-s>=eta M. For the upper endpoint, N<=(1-2eta)M and M>=1/eta
+give N/(M-1)<=1-eta. Equations (7), (9) and (13) therefore give
+
+    H-E_phys >= [gamma s-(4v/eta)s-2v] I
+
+for this part of the diagonal lower form. By (11), 4v/eta<=gamma/4
+and 2v<=gamma s/4, so it is at least gamma s/2.
+
+For s>eta M, use the elementary lower bound H>=A1-Mv and upper
+bound E_phys<=Mv. They give gamma s-2Mv >= (gamma-2v/eta)s,
+again at least gamma s/2. Combining the two ranges yields
+
+    Q_R(H-E_phys)Q_R >= (gamma/2)(R-b) Q_R,
+                       R>=b+2.                           (14)
+
+More formally, both comparisons lower-bound the same diagonal
+operator A1+H_rest-v-E_phys, so they can be combined by its length
+blocks before applying Q_R. No assumption that H itself commutes
+with Q_R is being made.
+
+The length bandwidth gives
+
+    Q_R H(1-Q_R)=Q_R V 1_(ell_1=R-1),
+    ||Q_R V 1_(ell_1=R-1)||<=v.
+
+Project the ground-state equation and invert the positive compression
+in (14). This gives a_R<=2v/[gamma(R-b)] a_(R-1). Iteration from
+a_(b+1)<=1 proves (12). The zero-coupling limit has zero wrong-length
+occupation, as it should. No inverse of the global bare-Q Hamiltonian
+has been used.
+
+### 5. True low-energy windows and a spectral cutoff consequence
+
+[proved] Let Pi_Omega project onto the physical legal-sector energies
+in [E_phys,E_phys+Omega], and lift its range to coordinate space.
+If 0<=Omega<=gamma/2, then
+
+    ||Q_(b+r) Pi_Omega||
+       <= a_r^*= (2v/gamma)^(r-1)/(r-1)!,   r>=2.          (15)
+
+This controls arbitrary superpositions in the window, with no factor
+equal to its dimension. To prove it, set T=Q_R Pi_Omega and use the
+Sylvester equation
+
+    (Q_R H Q_R)T-T H_window = -Q_R H(1-Q_R)Pi_Omega.
+
+The two diagonal spectra are separated by at least
+gamma(R-b)/2-Omega, by (14). The integral solution, obtained by
+integrating the decaying semigroup on the left and the contracting
+semigroup of H_window-E_phys-Omega on the right, has norm at most
+the source norm divided by this separation. Its source is bounded
+by v||Q_(R-1)Pi_Omega||. The denominator is at least
+gamma(R-b-1)/2. Iterating proves (15). This is a true spectral-window
+statement, unlike inversion of an extensive unperturbed code band.
+
+[proved] A useful finite-volume consequence is a controlled cutoff
+on every cell. Let C_R=product_j(1-Q_R,j), R=b+r, and
+
+    delta_R=sqrt(M) a_r^* <1.
+
+The union bound in quadratic forms gives
+||(1-C_R)Pi_Omega||<=delta_R. C_R is reference-invariant, so it
+defines a physical restricted Hamiltonian H_R=C_R H C_R. If e_k is
+any eigenvalue of H in this low window, counting multiplicity from
+the bottom, then its counterpart in H_R obeys
+
+    0 <= e_k(H_R)-e_k(H)
+      <= [Omega delta_R^2+Mv delta_R]/(1-delta_R^2).        (16)
+
+For clarity, the cutoff is a restriction, with no virtual correction.
+Here is the min-max proof. On the spectral subspace through e_k,
+let D=Pi(1-C_R)Pi, so ||D||<=delta_R^2. Since
+||H_window-e_k||<=Omega and H_window-e_k<=0, the real part of
+
+    Pi C_R(H-e_k)Pi=(I-D)(H_window-e_k)
+
+is bounded above by Omega delta_R^2. Inserting the second C_R
+subtracts Pi C_R H(1-C_R)Pi, of norm at most Mv delta_R, since
+[A,C_R]=0 and ||V||<=Mv. Also ||C_R psi||^2>=1-delta_R^2.
+The projected subspace has the same dimension, so min-max gives the
+upper bound. Restricting the variational space gives the lower one.
+
+For fixed v,gamma,b and M proportional to L, Stirling's formula shows
+that r proportional to log M/log log M can make (16) smaller than
+any specified inverse power of M. For example taking the proportionality
+constant larger than 5/2 makes the error o(1/M). This controls the
+unbounded length sum at a conformal finite-size energy scale with a
+slowly growing cutoff. It does not supply a fixed-cutoff effective
+Hamiltonian or prove that the spectrum is conformal.
+
+### 6. Scope for C8 and remaining limitations
+
+The hypotheses use the existing flat-wrapper gap and length growth,
+the identical payloads at b and b+1, and bandwidth-one marker transfer.
+Thus take Delta=Delta_at, gamma=gamma_wrong, and v=epsilon J with
+J<=2B_flat. The reference sectors M nearest L/(b+1/2) satisfy (11)
+for eta, for example, 1/5 and sufficiently large L. The required
+epsilon is positive and can be fixed before taking L to infinity.
+
+The theorem strengthens the earlier physical 1/(R-b) occupation
+bound to a factorial tail and extends it to an entire low-energy
+window. No one-step dressing is needed. The dressed Hamiltonian
+generally has larger length bandwidth, so the proof is not copied
+to it. It also does not choose the ground marker number, compare
+illegal selector sectors, integrate out the massive states, bound
+Gaussian stiffness, or identify conformal towers. Those remain
+separate obligations. The original c-d question remains open here.
+
+Finite checks and their scope are recorded by canonical_length_checks.py
+and canonical_length_checks.json. The physical ring control is a
+scalar variable-length cell model, not a new microscopic counterexample.
+
+
+## 56. Legal-sector marker selection at fixed coupling
+
+Status: proved energy and density bounds for the explicit C8 atomic
+formulation, using its inherited exact first-order projection. No
+conformal limit, effective action or illegal-sector comparison is
+claimed. In particular, "ground state" below means the ground state
+among legal sectors with at least one marker.
+
+### 1. Ingredients and normalization
+
+Subtract the common base energy e_base L. The legal microscopic
+Hamiltonian in cell coordinates is
+
+    H=sum_j A_j+epsilon V0, epsilon>0,
+    J=sup_j sum_(X contains j)||V0_X||.
+
+Use the same A, n=ell-b, Delta, gamma and
+C=max(2/Delta,1/gamma) as canonical_length_bounds.md. In particular
+
+    |n-P1| <= C A.                                        (1)
+
+The inherited code compression is the sum of a length hopping chain
+of amplitude J0>0, the specified translation-invariant payload chain,
+and kappa per marker. Write e_pay for the infinite-chain payload
+ground energy per cell, and B_pay for the norm of its intercell bond,
+with all onsite fields assigned onsite. These are finite and explicit
+for the existing free-fermion target. For example run9_audit.md gives
+
+    e_pay=sum_f[-2 sin(k_f)/pi+mu_f(k_f/pi-1/2)]
+
+at unit payload hopping. The implemented marker coefficient is
+
+    kappa=2J0/pi-e_pay.                                   (2)
+
+Define beta=J0+B_pay. This is a projected boundary bound, whereas J
+is the full unprojected perturbation norm. They must not be conflated.
+All constants remain fixed as L increases. The direct-sum on-cell
+Hilbert space remains untruncated.
+
+### 2. A chemical tilt without an unbounded perturbation norm
+
+[proved] Set mu=epsilon alpha with |alpha|<=2J0. On one cell define
+
+    A_mu=A-mu(n-P1).
+
+The operators commute, and (1) gives
+
+    A_mu >= (1-C|mu|)A,
+    gap(A_mu) >= Delta(1-C|mu|).                          (3)
+
+Its kernel is still P0+P1. For N=sum n_j,
+
+    H-mu N=sum_j A_mu,j+epsilon V0-mu sum_j P1_j.         (4)
+
+Only the last two terms in (4) are treated as bounded interactions.
+This is why no norm of the unbounded length operator enters.
+
+Apply the arbitrary-retained-theory energy bound of
+defect_energy_bounds.md with W=-mu sum P1 and F=epsilon V0. Its
+diagonal norm is at most |mu|, leakage bound is epsilon J, and
+
+    g_mu=Delta(1-C|mu|)-2(epsilon J+|mu|).
+
+Thus, if
+
+    D0=2J0 C Delta+2J+4J0,
+    epsilon D0 <= Delta/2,                               (5)
+
+then g_mu>=Delta/2 and
+
+    H-mu N >= E_ref(mu)-2M epsilon^2 J^2/Delta.           (6)
+
+Here E_ref is minimized over the entire code reference space, not
+over the given N. This deliberate grand-canonical comparison can
+then be optimized in mu to recover a canonical density cost.
+
+For the physical quotient, use the lifted space with x in Z/LZ and
+all total cell lengths temporarily allowed. The same local transfer
+rules define an extension conserving total length. Only the fixed-L
+sector is quotiented by the reference action. Fourier transformation
+in x turns the reference seam into a length-hopping flux. The proof
+of (6) also allows this finite spectator x: filling missing cell
+codes leaves x untouched, and all removed-interaction norm sums are
+still counted on their incident cells. No Lieb-Robinson argument or
+locality assumption on this spectator is used in the energy bound.
+Restriction to the physical fixed-L subspace preserves (6).
+
+### 3. Projected pressure and a canonical lower bound
+
+The bulk length ground energy at length-bit density rho in [0,1] is
+
+    e_len(rho)=-(2J0/pi)sin(pi rho),
+    p_len(alpha)=min_(0<=rho<=1)[e_len(rho)-alpha rho].     (7)
+
+[proved] Uniformly in the reference seam flux and in alpha,
+
+    E_ref(epsilon alpha)
+      >= epsilon M[kappa+e_pay+p_len(alpha)]-2epsilon beta.
+                                                               (8)
+
+One finite-volume boundary argument suffices. For an open M-site
+chain with bond norm B and arbitrary onsite terms, its ground energy
+E_open satisfies |E_open-M e_infinity|<=B. The lower inequality
+follows by tiling the infinite line with independent open-chain
+ground states and bounding every joining bond by B. For the upper
+inequality, cut a long-chain ground state into M-site blocks, bound
+the removed bonds by B, and use E_open as the lower energy of each
+block. Take the length of that long chain to infinity. Restoring a
+possibly twisted seam costs at most another B. Apply this separately
+to length and payload. The density field alpha and kappa are onsite,
+so they add no boundary cost. The existence and value of the bulk
+energies in (7) and e_pay also follow directly from their free bands.
+
+[proved] Put rho=(L-bM)/M. Optimizing (6)-(8) over |alpha|<=2J0 gives
+
+    E_phys(M,L) >= epsilon M G(rho)-2epsilon beta
+                                   -2M epsilon^2 J^2/Delta,   (9)
+
+where the convex function is
+
+    G(rho)=2J0/pi-2J0 rho,                         rho<=0,
+           (2J0/pi)[1-sin(pi rho)],                0<=rho<=1,
+           2J0/pi+2J0(rho-1),                      rho>=1.
+
+Indeed the derivative e_len'(rho)=-2J0 cos(pi rho) ranges over the
+whole permitted alpha interval. Its Legendre recovery equals e_len
+inside [0,1] and its endpoint supporting lines outside. Adding (2)
+proves (9), including sectors that have no all-code state. G is
+nonnegative and has its unique minimum at rho=1/2. The inequality is
+an energy comparison for the interacting microscopic chain, not just
+the first-order projected spectrum.
+
+For small M where a cyclic bond convention needs special treatment,
+increase the harmless boundary constant in (8) by a fixed amount.
+The density argument is thermodynamic. Alternatively the explicit
+C8 conventions for M=1,2 can be treated as finitely many exceptional
+sectors. Their wrong-length atomic cost grows linearly in L, while
+their perturbation norm is bounded by M epsilon J, so they cannot
+be the large-L minimum. All formulas below use M>=3.
+
+### 4. A physical upper trial near half length filling
+
+Let a=b+1/2, and choose M_*=round(L/a), N_*=L-bM_*.
+For sufficiently large L, M_*>=3 and 0<=N_*<=M_*. The rounding error
+obeys |N_*-M_*/2|<=a/2.
+
+[proved] There is a physical legal trial with energy at most
+
+    E_legal(L) <= epsilon B_L,
+    B_L=2beta+pi J0 a^2/(4M_*).                           (10)
+
+Use an open payload ground state, an open length-chain ground state
+at N_*, and the pinned-marker embedding of canonical_length_bounds.
+The payload open energy is at most M_* e_pay+B_pay. The length open
+energy is at most M_* e_len(N_*/M_*)+J0. To see the latter, remove
+one bond from the zero-flux hard-core ring, whose canonical energy is
+
+    -2J0 sin(pi N_*/M_*)/sin(pi/M_*)
+           <= M_* e_len(N_*/M_*).
+
+Removing the bond costs at most J0. The physical seam restored in
+the pinned-marker trial costs at most beta. Finally
+
+    M_* G(N_*/M_*) <= pi J0 (N_*-M_*/2)^2/M_*
+                        <= pi J0 a^2/(4M_*),
+
+using 1-cos x<=x^2/2. All trial states are in the exact atomic kernel,
+so this is also an upper bound on the unprojected microscopic energy.
+
+### 5. The actual legal ground marker density is interior
+
+[proved] Fix 0<delta<1/2 and define
+
+    g_delta=(2J0/pi)[1-cos(pi delta)]>0,
+    s_delta=2J0 sin(pi delta)>0.
+
+In addition to (5), assume
+
+    epsilon <= g_delta Delta/(4J^2).                      (11)
+
+Then every ground sector among legal positive-marker sectors satisfies
+|rho-1/2|<delta for all sufficiently large L. One explicit size
+condition, together with the trial admissibility above, is
+
+    g_delta L/[2(a+delta)] > 2beta+B_L.                   (12)
+
+Proof. Convexity and reflection about 1/2 give, for |rho-1/2|>=delta,
+
+    G(rho)>=g_delta+s_delta(|rho-1/2|-delta).
+
+The second-order subtraction in (9) is at most g_delta M/2 by (11).
+For rho>=1/2+delta, M<=L/(a+delta), and
+
+    M[G(rho)-g_delta/2]
+      >= s_delta L+[g_delta/2-s_delta(a+delta)]M
+      >= g_delta L/[2(a+delta)].
+
+The coefficient of M in the middle line is negative because
+g_delta<=delta s_delta and a>0. For rho<=1/2-delta the analogous
+linear expression is minimized at M=L/(a-delta), giving the larger
+lower bound g_delta L/[2(a-delta)]. The same comparison applies to
+all exterior densities, because the supporting line remains below
+the convex extension G. Equation (9) now exceeds the physical trial
+bound (10) whenever (12) holds. This excludes every exterior sector.
+The exceptional fixed small M sectors were excluded after (9).
+
+[proved] Once the density is in [0,1], (9)-(10) give the more useful
+quantitative estimate
+
+    |rho-1/2| <= sqrt{ pi/(4J0) *
+                 [2epsilon J^2/Delta+(2beta+B_L)/M] }.    (13)
+
+This uses 1-cos(pi x)>=2x^2 for |x|<=1/2. The displacement is
+O(sqrt(epsilon)) in the thermodynamic limit. It is not shown to be
+O(epsilon), unique, differentiable in the couplings, or governed by a
+positive interacting compressibility.
+
+### 6. Consequence for the length-tail theorem
+
+Take delta=1/10 and eta=1/5 in canonical_length_bounds.md. Impose
+(5), (11), and
+
+    epsilon J <= min[eta/(4C), eta gamma/16].              (14)
+
+All right sides are positive for the one fixed finite candidate.
+For sufficiently large L, every legal ground marker sector then has
+rho in (2eta,1-2eta) and M>=1/eta. Its ground state has the proved
+factorial cell-length tail. Its within-sector low-energy window also
+has the operator-norm tail and the spectral cutoff bound established
+there. This removes the need to impose the reference density by hand.
+
+It does not compare the invariant illegal selector sectors or the
+marker-free sector to these states. It does not turn the effective
+projected Gaussian theory into a CFT of the full microscopic chain.
+The latter still needs a controlled low-frequency local elimination
+and infrared identification at one fixed epsilon. Energy and length
+control alone do not meet that obligation.
+
+### 7. Verification
+
+marker_density_checks.py checks the chemical-tilt energy bound against
+literal physical scalar-ring diagonalization, tests every allowed
+marker number at the stated lengths, and checks the pressure formula
+and supporting-line inequalities independently. These controls have
+no payload, J0=1 and kappa=2/pi. They test the mechanism and quotient,
+not the high-channel C8 CFT. Inputs, finite sizes and residuals are
+stored in marker_density_checks.json.
+
+
+## 57. A uniform selector-defect gap
+
+Status: proved for the binary-arrow selector with a strengthened
+penalty. This changes only a forbidden-sector coefficient of the
+existing explicit C8 bond. The entire legal Hamiltonian, including
+all finite-coupling effects, is unchanged.
+
+### 1. Binary arrows and the repair unitary
+
+The selector alphabet is the set of all two-bit pairs (a,b):
+
+    #=(1,0), L=(0,0), X=(0,1), R=(1,1).
+
+A bond is legal when its outgoing bit b_i equals the next incoming
+bit a_(i+1). Its violation projector is
+
+    F_i=1_(b_i != a_(i+1)).
+
+All remaining onsite factors are spectators for this definition.
+Let X_in,j flip a_j without changing b_j or any other factor. In
+letter notation it swaps # with L and X with R.
+
+[proved] For any definite defect pattern f_i in {0,1}, the unitary
+
+    U_f=product_(i:f_i=1) X_in,(i+1)
+
+maps that sector onto the completely legal sector. It changes F_i
+to 1-F_i at each selected bond and leaves every other F_j invariant.
+This follows because each incoming arrow occurs in just one F_i.
+There is no global parity obstruction. Even an isolated single
+forbidden bond can be repaired. The map need not preserve marker
+number, which is appropriate when comparing the full ground state.
+It does preserve any charge acting only on the nonselector factors.
+
+### 2. An exact energy comparison with no volume error
+
+Write a translation-invariant nearest-neighbor ring Hamiltonian as
+
+    H=K sum_i F_i+sum_i g_(i,i+1),  ||g||<=B.
+
+Assume H preserves every F_i, as the C8 bond does. Let E_legal be
+its minimum over all zero-defect states, including marker-free ones.
+
+[proved] In a sector with k=sum f_i defects,
+
+    H|f >= [E_legal+(K-4B)k] I.                           (1)
+
+For a normalized state psi in that sector, U_f psi is a legal trial
+state. At most 2k bonds meet the k sites changed by U_f, and on each
+such bond ||U_f dagger g_i U_f-g_i||<=2B. Therefore
+
+    E_legal <= <U_f psi,H U_f psi>
+             <= <psi,H psi>-Kk+4Bk.
+
+This proves (1), including for entangled states and arbitrary
+spectator dimension. No gap in the legal Hamiltonian and no estimate
+of its extensive ground energy are needed. K>4B gives a positive
+defect gap uniform in ring length.
+
+The conserved-defect assertion for C8 can be read directly in arrow
+bits. Its nontrivial selector changes are LX <-> XR and #L <-> R#.
+Each flips both inner arrows b_i and a_(i+1), keeping their mismatch
+and both outer arrows unchanged. All other bond operations leave the
+selector letters fixed. Hence every overlapping F_j is conserved on
+the full physical Hilbert space, not just on promised legal words.
+
+### 3. An explicit strengthened C8 coefficient
+
+Use the flat wrapper, unit U and J0, and the original core at unit
+scales. For 0<=epsilon<=epsilon_max<=1 the bond other than K F obeys
+
+    B <= B0+epsilon_max B_flat,
+    B0=|mu_selector|+t+49,
+    B_flat=1+2m+4(k+2)+409600 pi^4 b^4 m^3+320 pi^2 b^2 m.  (2)
+
+All quantities are those in periodic_clean_bond.py. The marker density
+has norm at most |mu_selector|, head hopping at most t, the complete
+flat wrapper bond at most 45 by flat_vacancies.md, and the two internal
+helix terms and two cut pins cost at most four in a triangle bound.
+Equation (2) uses the full-space perturbation bound, not projected
+visibilities.
+
+[proved] Replace the old selector coefficient by
+
+    K_cert=max(K_old,8[B0+epsilon_max B_flat]).            (3)
+
+Then (1) excludes every forbidden selector sector by at least
+4[B0+epsilon_max B_flat] per defect throughout that coupling interval.
+This replacement is a single repeated diagonal two-site term. It
+does not change the on-site dimension, symmetries, any legal-sector
+matrix element, the clock, wrapper, atomic gap, or projected target.
+In particular none of the legal estimates has to be rederived.
+
+The executable implementation is CertifiedPeriodicBond in
+certified_periodic_bond.py. It subclasses the existing sparse oracle
+and changes only Ksel. Its formula is the specification at arbitrarily
+large finite q; numerical construction remains intended for modest q.
+The coefficient is fixed before L varies. No claim is made that the
+old smaller coefficient already satisfies this new proof.
+
+### 4. Marker-free legal rings
+
+[proved] A legal selector ring with no # is either all L or all R.
+There cannot be an X, since an X changes arrow 0 to 1 and only a #
+can change it back. Every perturbation term requires a marker, so
+the perturbation vanishes in these two selector sectors. There is no
+head hop. The periodic flat-wrapper Hamiltonian and helix terms are
+nonnegative by the inherited complete-sector bounds. Thus their
+absolute energy is at least zero.
+
+The legal positive-marker trial of marker_density_bounds.md has
+absolute energy at most e_base L+epsilon B_L, with the fixed
+e_base=t e_c<0. It is negative for all sufficiently large L.
+Consequently marker-free sectors are also excluded. Combined with
+(1)-(3), the full microscopic ground state of the strengthened bond
+lies in the positive-marker legal sectors at large L.
+
+The density and factorial-tail estimates now concern the actual
+full ground sectors, subject to their stated small-coupling bounds.
+At any fixed low-energy window, illegal and marker-free sectors are
+absent once the window is below their respective gaps. This does not
+identify the infrared theory inside the legal sectors. The all-order
+low-frequency elimination and Gaussian infrared identification remain
+unproved.
+
+### 5. Checks
+
+selector_repair_checks.py exhausts binary-arrow repair on short rings,
+tests the energy inequality in quantum selector-plus-spectator chains,
+and checks the strengthened full-space sparse columns. Its random
+quantum control preserves each defect pattern but has a general
+complex interaction within every permitted block. It is not a
+classical-energy check. Numerical sizes, norm comparisons, and the
+explicit q=4 coefficient are recorded in selector_repair_checks.json.
+
+
+## 58. Eleventh-run composition, audit and continuation
+
+Status: nonconclusive for the original c-d conjecture. This run closes
+three energy/length obligations of the explicit first-order candidate,
+with proofs and finite controls. It does not close the low-frequency
+massive-sector elimination or the subsequent Gaussian infrared step.
+
+### 1. Which Hamiltonian is now preferred
+
+Use certified_periodic_bond.CertifiedPeriodicBond, with epsilon_max=1,
+and multiply its perturbation by a fixed epsilon in the interval below.
+The only change from PeriodicBond(flat_vacancies=True) is the larger
+diagonal penalty for a forbidden selector bond. Its site dimension is
+still d=96*446400(q+1)+48, with m=q^2/8 projected payload modes and
+one projected length mode. The clean-readout machine, all its gates,
+ports, densities, the flat wrapper, and the legal perturbation are
+identical. No claim is made for the adequacy of the old smaller penalty
+under the new finite-coupling sector proof.
+
+The new penalty depends on the fixed q and epsilon_max, not on ring
+length. Its full-space meaning is specified in selector_repair.md.
+At q=4 the old coefficient was 4503.12845888; the new one is
+1.67536545854e13 for the deliberately generous epsilon_max=1.
+Its lower defect-gap bound is 8.37682729270e12. A smaller fixed
+epsilon_max can reduce this coefficient without changing any legal
+matrix element. This large penalty is not a measured many-body gap.
+
+### 2. One explicit positive coupling interval
+
+Fix the inherited positive atomic gap Delta, wrong-length slope gamma,
+and full unscaled per-cell perturbation bound J<=2B_flat. The projected
+length hopping is J0=1, and the marker coefficient is the existing
+kappa=2/pi-e_pay. Set
+
+    C=max(2/Delta,1/gamma), eta=1/5, delta=1/10,
+    g_delta=(2/pi)[1-cos(pi/10)],
+    D0=2C Delta+2J+4,
+    epsilon_* = min{1, Delta/(2D0),
+                    g_delta Delta/(4J^2),
+                    eta/(4CJ), eta gamma/(16J)}.          (1)
+
+[proved] Every fixed 0<epsilon<epsilon_* meets all new hypotheses.
+For sufficiently large L, the full ground state has no selector
+defects, has positive marker number, and its sector satisfies
+
+    2/5 < (L-bM)/M < 3/5.
+
+The proof combines the unitary defect repair, the negative-base-energy
+trial excluding marker-free rings, and the pressure comparison. No
+claim that this interval is sufficient for a CFT is made.
+
+The individual coefficients can be very small or large. Finiteness
+and positivity follow after fixing the finite q, b and core. This
+ordering of limits agrees with the earlier construction. The estimates
+do not allow epsilon or q to vary with L.
+
+### 3. A full microscopic low-window cutoff theorem
+
+[proved] Fix a positive Omega<=gamma/2 below the selector-defect gap.
+Increase L until the marker-free sector is also above E0+Omega and
+
+    g_delta L/[2(b+1/2+delta)] > 2beta+B_L+Omega/epsilon.   (2)
+
+Here beta=J0+B_pay and B_L is defined in marker_density_bounds.md.
+Every sector meeting [E0,E0+Omega] is then positive-marker legal and
+has density in the same interior interval. This follows from the
+same lower bound as marker selection, with Omega added to the trial
+upper bound. Sectors with fixed M=1,2 are excluded by their linear
+wrong-length cost. Each retained sector has its own ground energy
+at least E0; its part of the global window lies within Omega of that
+sector ground. The canonical spectral-window theorem therefore applies
+to each of them.
+
+Let C_R retain exactly those legal configurations all of whose cells
+have length less than R=b+r, r>=2. It is a well-defined physical
+projection, independent of the choice of reference marker. Define
+
+    a_r=(2epsilon J/gamma)^(r-1)/(r-1)!,
+    z_r=sqrt(L/2) a_r.
+
+Then the global physical low-energy projection satisfies
+
+    ||(1-C_R)Pi_[E0,E0+Omega]|| <= z_r.                  (3)
+
+Indeed each allowed sector has M<=L/2 cells, and the cell-wise
+operator bound plus the union bound gives sqrt(M) a_r. Direct sums
+over M do not add their norms. There is no factor counting the
+number of eigenvectors in the window.
+
+For z_r<1, the k-th eigenvalue, counting multiplicity from the bottom,
+of the restricted physical Hamiltonian H_R=C_R H C_R obeys
+
+    0 <= e_k(H_R)-e_k(H)
+      <= [Omega z_r^2+(L/2)epsilon J z_r]/(1-z_r^2)       (4)
+
+whenever e_k(H)<=E0+Omega. The proof is the same min-max comparison
+as canonical_length_bounds.md. The atomic part, including the common
+base scalar, commutes with C_R. The interaction norm on each relevant
+sector is at most (L/2)epsilon J. Unused illegal or marker-free sectors
+are invariant, so removing them creates no extra off-diagonal term.
+
+Taking r=A log L/log log L with any fixed A>5/2, rounded up and with
+L sufficiently large, makes the right side o(1/L). Larger A produces
+any desired fixed inverse power of L. All energy comparisons use the
+one fixed microscopic bond.
+
+This establishes a controlled finite-volume length truncation at the
+scale where conformal towers would be resolved. It does not establish
+that those towers occur. The truncated cell dimension grows with L,
+and the clock/internal excitations inside each allowed length remain.
+The cutoff is a cell-coordinate restriction with the original physical
+quotient; it is not another microscopic nearest-neighbor chain of a
+claimed smaller on-site dimension.
+
+### 4. Canonical bare defect occupation away from half filling
+
+[proved] The chemical-tilt method also strengthens the canonical
+occupation estimate. For any rho=N/M in [0,1], choose
+alpha=-2J0 cos(pi rho), mu=epsilon alpha. The exact reference has
+a physical canonical trial of energy at most
+epsilon M[kappa+e_pay+e_len(rho)]+2epsilon beta, by the open-chain
+construction. Its grand-canonical reference energy is at least the
+same bulk value minus mu N-2epsilon beta. Hence the reference-sector
+excess needed in defect_energy_bounds.md is at most 4epsilon beta.
+Writing g_mu as in marker_density_bounds.md gives
+
+    <sum_j Q_j>/M
+       <=4epsilon^2 J^2/g_mu^2+8epsilon beta/(g_mu M).     (5)
+
+This is a bare atomic defect bound for every such canonical ground
+state, and in particular for the full ground sectors just selected.
+It does not require rho to be the nearest finite-volume value to 1/2.
+The total all-code overlap still need not stay positive as L grows.
+
+### 5. Audit of possible shortcuts and hidden assumptions
+
+The raising operator R between the two code lengths is not a physical
+nearest-neighbor gate. It is used only to build a variational trial
+in an exact atomic coordinate space. The Hamiltonian itself is still
+the already specified repeated microscopic bond.
+
+Changing L changes the physical quotient. The proof never equates
+the ground energies of two arbitrary seam twists. It first proves
+canonical increments for open cells, then uses a pinned-marker state
+and explicit boundary-norm costs. Reference relabelings cannot give
+Hamiltonian cross terms in that trial because every cell has length
+at least two and the reference marker moves by at most one.
+
+The long-tail inverse is a positive compression of H-E_ground after
+a canonical energy comparison. It is not the global bare-Q inverse
+from the failed run-9 argument. The spectral-window extension uses a
+separated Sylvester equation and therefore controls a whole subspace,
+not just individual eigenvectors with an uncounted dimension factor.
+
+The pressure proof does not call the unbounded length operator a
+bounded perturbation. Its off-code part is absorbed into A_mu, with
+the explicit positive lower bound (3) of marker_density_bounds.md.
+The reference pressure is minimized over all length-bit charges and
+all reference phases before its Legendre transform is used.
+
+The selector repair compares energies by an exact local unitary and
+a norm cost per defect. It needs no extensive remainder estimate and
+does not assume that the legal chain is gapped. The strengthened
+coefficient is necessary for this proof; it is not silently ascribed
+to the old oracle. Its numerical class name certifies this selector
+statement, not a central charge or an infrared reduction.
+
+The marker-density conclusion allows sector degeneracies and level
+crossings. Neither the norm estimates nor the O(sqrt(epsilon)) density
+bound proves a unique ground state on every ring or a positive dressed
+compressibility. These cannot be inferred from a convex reference
+pressure alone.
+
+### 6. Attempt at the remaining local action, and where it stops
+
+Re-read the connected-excursion argument in
+../../contrib/research_continuation/IR_AUDIT.md Section 9 and its
+independent review. Its geometric majorants are explicitly not proved
+there. The present run supplies exact coordinates, canonical controls
+and a full-sector comparison that those arguments lacked, but it
+still does not construct their irreducible kernels.
+
+A tempting next step is to apply finite-dimensional elimination after
+(4). This does not close the argument. To resolve energies of order
+1/L, the cutoff grows with L. A theorem with constants depending on
+the cutoff dimension would need a new uniformity proof. More seriously,
+even at a fixed finite dimension the entire retained many-body band
+is extensive and overlaps excited bands. A global Schrieffer-Wolff
+inverse is still unavailable. None of the tail bounds separates
+retained propagation from operator mixing in the connected action.
+
+The previous exactly dressed XX source control still applies: an
+ordinary connected bare ancillary correlator can have a small algebraic
+tail. Removing its scalar expectation does not produce the required
+massive kernel. Filtering by the full interacting dynamics gives a
+useful operator split, but not independent local retained variables
+or a constructive effective action. The new length cutoff does not
+change this issue.
+
+Consequently the remaining inference to c=m+1 still requires
+(i) a local low-frequency elimination with uniform connected support
+and time bounds after retained-operator subtractions, and (ii) the
+Gaussian infrared argument inside the rational target's momentum,
+filling and stiffness margins. Treating (i) as a conclusion of the
+new energy bounds would repeat the gap identified in the prior audit.
+No new CFT conclusion, general upper bound or fixed-d unboundedness
+result follows from this run.
+
+### 7. Verification and next steps
+
+Run, with single-thread BLAS,
+
+    python3 canonical_length_checks.py
+    python3 marker_density_checks.py
+    python3 selector_repair_checks.py
+
+The first passes 18 complex atomic sectors, two reference-isometry
+checks and four physical scalar rings through dimension 7007, including
+the pinned trial, tail recursion, low-state operator norm and spectral
+cutoff. The largest residual is below 1.1e-14. Its
+eight-state spectral tests use the span of the eight computed lowest
+eigenvectors; they do not claim an exhaustive numerical diagonalization
+of every state in an entire fixed-width thermodynamic window.
+The second passes 34 physical sectors through dimension 7007, five
+chemical tilts per sector, 10001 Legendre checks and 967417 marker-count
+inequalities. The integer exterior-density test includes equality at
+both boundary densities; its smallest margin is -8.9e-16 from roundoff.
+The largest eigensolver residual is 1.12e-12. Its small ED rings are
+below the conservative analytic large-L threshold, which the output
+marks explicitly. The third passes 21840 arrow words, 24 quantum
+selector sectors through block dimension 256, 8192 differential
+physical-bond columns and 3232 active columns for each of the base and
+perturbation. The legal columns are unchanged exactly, and relative
+Hermiticity errors are below 3.2e-17.
+All are control calculations, not microscopic CFT measurements.
+
+The ranked continuation is (i) the uniform irreducible action, using
+the now established full-sector and canonical bounds; (ii) dressed
+payload fillings and the complete Gaussian quadratic form; (iii) an
+independent audit of the controller and the new proofs; (iv) a smaller
+implementation permitting two calibrated CFT estimators. The fixed-d
+C19 and later spatial-bus program remains separate. Their current
+source files do not supply a completed all-n conformal construction.
