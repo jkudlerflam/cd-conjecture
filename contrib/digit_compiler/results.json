@@ -1,0 +1,36 @@
+{
+  "status": "PASS",
+  "arithmetic_and_memory_executions": 57,
+  "random_table_executions": 24,
+  "source_steps_compared": 5321,
+  "single_physical_head_microsteps": 325046,
+  "capacity_negative_control": "PASS",
+  "manifests": {
+    "arithmetic": {
+      "source_tapes": 8,
+      "source_alphabet": 6,
+      "source_states_including_halts": 4754,
+      "source_rules": 28494,
+      "physical_alphabet_size": 98,
+      "physical_control_states": 47589,
+      "full_table_entries": 4663722,
+      "physical_cells_for_L_virtual_positions": "8*L+2",
+      "microstep_bound_per_source_step": "2*S+k+4, S=physical cells including endpoints",
+      "scope": "One physical head, deterministic table; not reversible and not yet a quantum gate"
+    },
+    "memory": {
+      "source_tapes": 5,
+      "source_alphabet": 6,
+      "source_states_including_halts": 98,
+      "source_rules": 207,
+      "physical_alphabet_size": 62,
+      "physical_control_states": 602,
+      "full_table_entries": 37324,
+      "physical_cells_for_L_virtual_positions": "5*L+2",
+      "microstep_bound_per_source_step": "2*S+k+4, S=physical cells including endpoints",
+      "scope": "One physical head, deterministic table; not reversible and not yet a quantum gate"
+    }
+  },
+  "runtime_seconds": 0.767,
+  "scope": "Exact classical spatial lowering; no reversible single-head or Hamiltonian claim"
+}

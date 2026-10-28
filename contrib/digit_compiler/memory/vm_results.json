@@ -1,0 +1,108 @@
+{
+  "status": "pass",
+  "program_sha256": "c9e5dd5329c5200018454406852cdf298428dcba943c02cc13f0e3f002c6ba3f",
+  "total_checked_memory_events": 8165,
+  "total_unique_replays": 4436,
+  "total_finite_table_transitions": 75446718,
+  "checks": [
+    {
+      "case": "plane_p2",
+      "frozen_vm_steps": 5176,
+      "checked_memory_events": 627,
+      "event_counts": {
+        "APPEND": 28,
+        "GET": 588,
+        "LEN": 11
+      },
+      "unique_finite_table_replays": 58,
+      "replay_counts": {
+        "APPEND": 28,
+        "GET": 28,
+        "LEN": 2
+      },
+      "finite_table_forward_reverse_copy_transitions": 26440,
+      "maximum_transitions_per_replay": 1730,
+      "maximum_array_words": 21,
+      "maximum_signed_word_bits": 6,
+      "maximum_address_bits": 3,
+      "event_trace_sha256": "82024d8876468e6c740d11da3c6521a7067916457738dfa94ea97c2e860fdf35",
+      "uncompiled_NEW_events": 31,
+      "every_replayed_operation_has_clean_workspace": true,
+      "exact_projective_graph_and_edge_order": true,
+      "p": 2,
+      "left_species": 7,
+      "right_species": 7,
+      "fermion_modes": 21,
+      "edge_sha256": "9b663326f0f3de21ab369dd69c34969f32823470c8fad5d819982d29c6912133"
+    },
+    {
+      "case": "plane_p3",
+      "frozen_vm_steps": 16916,
+      "checked_memory_events": 2110,
+      "event_counts": {
+        "APPEND": 65,
+        "GET": 2028,
+        "LEN": 17
+      },
+      "unique_finite_table_replays": 119,
+      "replay_counts": {
+        "APPEND": 65,
+        "GET": 52,
+        "LEN": 2
+      },
+      "finite_table_forward_reverse_copy_transitions": 145766,
+      "maximum_transitions_per_replay": 4886,
+      "maximum_array_words": 52,
+      "maximum_signed_word_bits": 8,
+      "maximum_address_bits": 4,
+      "event_trace_sha256": "51c508f63c9e6fd88d25f4c080fcf75be052f1893f82e9b9eea6c48039305486",
+      "uncompiled_NEW_events": 68,
+      "every_replayed_operation_has_clean_workspace": true,
+      "exact_projective_graph_and_edge_order": true,
+      "p": 3,
+      "left_species": 13,
+      "right_species": 13,
+      "fermion_modes": 52,
+      "edge_sha256": "89b01c633376b9a4d5d5f0bbae55f6997cf8bc9584720ec0358f5d3ff0de2d43"
+    },
+    {
+      "case": "complete_one_edge_abstract_circuit",
+      "frozen_vm_steps": 43426,
+      "checked_memory_events": 5428,
+      "event_counts": {
+        "APPEND": 1671,
+        "GET": 3023,
+        "LEN": 403,
+        "SET": 331
+      },
+      "unique_finite_table_replays": 4259,
+      "replay_counts": {
+        "APPEND": 1604,
+        "GET": 2058,
+        "LEN": 275,
+        "SET": 322
+      },
+      "finite_table_forward_reverse_copy_transitions": 75274512,
+      "maximum_transitions_per_replay": 120170,
+      "maximum_array_words": 905,
+      "maximum_signed_word_bits": 11,
+      "maximum_address_bits": 10,
+      "event_trace_sha256": "bc31cbb5bc12ea2643a2e066b470ef86de111ebbce1a519c400cb821a29f6fa7",
+      "uncompiled_NEW_events": 950,
+      "every_replayed_operation_has_clean_workspace": true,
+      "exact_complete_abstract_circuit": true,
+      "abstract_gates": 906,
+      "abstract_sha256": "9e8aca01fb81257147fccda7d6ef5565d84e46f95861038b67926208a1499b02"
+    }
+  ],
+  "scope": "Actual generator memory events replayed through fixed finite tape tables, with exact cleanup and final graph/circuit comparison",
+  "uncompiled": [
+    "VM instruction scheduling",
+    "host heap-block selection",
+    "NEW allocation",
+    "alias-preserving heap-block replacement",
+    "serialization/sign adapter",
+    "spatial nearest-neighbor head routing"
+  ],
+  "deduplication": "Within each case, identical operation, full input array, index and replacement values replay once; every occurrence is checked against the cached exact answer"
+}

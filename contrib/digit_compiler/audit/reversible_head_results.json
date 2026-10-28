@@ -1,0 +1,66 @@
+{
+  "local_table": {
+    "controls": 40,
+    "alphabet": 20,
+    "rules": 265,
+    "inverse_pairs_exhausted": 800,
+    "full_configuration_local_roundtrips": 10000,
+    "fixed_incoming_direction": true,
+    "injective_target_written_pairs": true
+  },
+  "destructive_source": {
+    "all_binary_strings_through_length": 6,
+    "complete_runs": 127,
+    "forward_microsteps": 14463,
+    "inverse_microsteps": 14463,
+    "all_work_and_history_restored": true
+  },
+  "actual_lowered_alu": [
+    {
+      "operation": "EQ",
+      "operands": [
+        0,
+        1
+      ],
+      "answer": 0,
+      "deterministic_source_microsteps": 760,
+      "reversible_physical_microsteps": 648266,
+      "inverse_physical_microsteps": 648266,
+      "exact_full_cleanup": true,
+      "manifest": {
+        "source_states": 47589,
+        "source_alphabet": 98,
+        "source_transition_count_upper_bound": 4663134,
+        "reversible_controls_upper_bound": 14179758,
+        "reversible_alphabet_upper_bound": 4663335,
+        "history_cells_per_source_step": 1,
+        "microstep_bound_per_source_step": "2*S+8; S is the entire allocated work and history interval",
+        "scope": "Finite single-head reversible partial transition table; initialized work/history format promised"
+      }
+    },
+    {
+      "operation": "ADD",
+      "operands": [
+        1,
+        1
+      ],
+      "answer": 2,
+      "deterministic_source_microsteps": 1704,
+      "reversible_physical_microsteps": 3055626,
+      "inverse_physical_microsteps": 3055626,
+      "exact_full_cleanup": true,
+      "manifest": {
+        "source_states": 47589,
+        "source_alphabet": 98,
+        "source_transition_count_upper_bound": 4663134,
+        "reversible_controls_upper_bound": 14179758,
+        "reversible_alphabet_upper_bound": 4663335,
+        "history_cells_per_source_step": 1,
+        "microstep_bound_per_source_step": "2*S+8; S is the entire allocated work and history interval",
+        "scope": "Finite single-head reversible partial transition table; initialized work/history format promised"
+      }
+    }
+  ],
+  "status": "pass",
+  "runtime_seconds": 2.379
+}

@@ -1,0 +1,36 @@
+{
+  "status": "pass",
+  "normalized_controls": 18,
+  "normalized_rules": 106,
+  "source_rule_bounce_contexts": 440,
+  "collision_full_space_inputs": 407,
+  "movement_full_space_pairs": 165649,
+  "movement_pair_counts_by_head_number": {
+    "0": 121,
+    "1": 8712,
+    "2": 156816
+  },
+  "independent_forward_only_autonomous_cycles": [
+    {
+      "word": "",
+      "sweeps": 38
+    },
+    {
+      "word": "0",
+      "sweeps": 70
+    },
+    {
+      "word": "1",
+      "sweeps": 70
+    },
+    {
+      "word": "010",
+      "sweeps": 158
+    },
+    {
+      "word": "10110",
+      "sweeps": 278
+    }
+  ],
+  "scope": "Full finite fixture gate spaces and initialized finite erasure orbits; no general malformed-sector Hamiltonian claim"
+}

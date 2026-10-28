@@ -1,0 +1,340 @@
+{
+  "alphabet": [
+    "_",
+    "^",
+    "0",
+    "1",
+    "#",
+    "$"
+  ],
+  "blank": "_",
+  "tapes": [
+    "R",
+    "P"
+  ],
+  "tape_count": 2,
+  "initial_state": "COPY",
+  "entry_states": [
+    "COPY"
+  ],
+  "halting_states": [
+    "COPYDONE"
+  ],
+  "active_tape": {
+    "COPY": 0,
+    "copyback:P": 1,
+    "copyback:R": 0,
+    "copyput:#": 1,
+    "copyput:$": 1,
+    "copyput:0": 1,
+    "copyput:1": 1,
+    "copyput:^": 1
+  },
+  "transitions": [
+    [
+      "COPY",
+      "#",
+      "copyput:#",
+      "#",
+      1
+    ],
+    [
+      "COPY",
+      "$",
+      "copyput:$",
+      "$",
+      0
+    ],
+    [
+      "COPY",
+      "0",
+      "copyput:0",
+      "0",
+      1
+    ],
+    [
+      "COPY",
+      "1",
+      "copyput:1",
+      "1",
+      1
+    ],
+    [
+      "COPY",
+      "^",
+      "copyput:^",
+      "^",
+      1
+    ],
+    [
+      "copyback:P",
+      "#",
+      "copyback:P",
+      "#",
+      -1
+    ],
+    [
+      "copyback:P",
+      "$",
+      "copyback:P",
+      "$",
+      -1
+    ],
+    [
+      "copyback:P",
+      "0",
+      "copyback:P",
+      "0",
+      -1
+    ],
+    [
+      "copyback:P",
+      "1",
+      "copyback:P",
+      "1",
+      -1
+    ],
+    [
+      "copyback:P",
+      "^",
+      "COPYDONE",
+      "^",
+      0
+    ],
+    [
+      "copyback:R",
+      "#",
+      "copyback:R",
+      "#",
+      -1
+    ],
+    [
+      "copyback:R",
+      "$",
+      "copyback:R",
+      "$",
+      -1
+    ],
+    [
+      "copyback:R",
+      "0",
+      "copyback:R",
+      "0",
+      -1
+    ],
+    [
+      "copyback:R",
+      "1",
+      "copyback:R",
+      "1",
+      -1
+    ],
+    [
+      "copyback:R",
+      "^",
+      "copyback:P",
+      "^",
+      0
+    ],
+    [
+      "copyput:#",
+      "_",
+      "COPY",
+      "#",
+      1
+    ],
+    [
+      "copyput:$",
+      "_",
+      "copyback:R",
+      "$",
+      0
+    ],
+    [
+      "copyput:0",
+      "_",
+      "COPY",
+      "0",
+      1
+    ],
+    [
+      "copyput:1",
+      "_",
+      "COPY",
+      "1",
+      1
+    ],
+    [
+      "copyput:^",
+      "_",
+      "COPY",
+      "^",
+      1
+    ]
+  ],
+  "entries": [
+    {
+      "state": "COPY",
+      "tape": "R",
+      "read": "#",
+      "write": "#",
+      "move": 1,
+      "target": "copyput:#"
+    },
+    {
+      "state": "COPY",
+      "tape": "R",
+      "read": "$",
+      "write": "$",
+      "move": 0,
+      "target": "copyput:$"
+    },
+    {
+      "state": "COPY",
+      "tape": "R",
+      "read": "0",
+      "write": "0",
+      "move": 1,
+      "target": "copyput:0"
+    },
+    {
+      "state": "COPY",
+      "tape": "R",
+      "read": "1",
+      "write": "1",
+      "move": 1,
+      "target": "copyput:1"
+    },
+    {
+      "state": "COPY",
+      "tape": "R",
+      "read": "^",
+      "write": "^",
+      "move": 1,
+      "target": "copyput:^"
+    },
+    {
+      "state": "copyback:P",
+      "tape": "P",
+      "read": "#",
+      "write": "#",
+      "move": -1,
+      "target": "copyback:P"
+    },
+    {
+      "state": "copyback:P",
+      "tape": "P",
+      "read": "$",
+      "write": "$",
+      "move": -1,
+      "target": "copyback:P"
+    },
+    {
+      "state": "copyback:P",
+      "tape": "P",
+      "read": "0",
+      "write": "0",
+      "move": -1,
+      "target": "copyback:P"
+    },
+    {
+      "state": "copyback:P",
+      "tape": "P",
+      "read": "1",
+      "write": "1",
+      "move": -1,
+      "target": "copyback:P"
+    },
+    {
+      "state": "copyback:P",
+      "tape": "P",
+      "read": "^",
+      "write": "^",
+      "move": 0,
+      "target": "COPYDONE"
+    },
+    {
+      "state": "copyback:R",
+      "tape": "R",
+      "read": "#",
+      "write": "#",
+      "move": -1,
+      "target": "copyback:R"
+    },
+    {
+      "state": "copyback:R",
+      "tape": "R",
+      "read": "$",
+      "write": "$",
+      "move": -1,
+      "target": "copyback:R"
+    },
+    {
+      "state": "copyback:R",
+      "tape": "R",
+      "read": "0",
+      "write": "0",
+      "move": -1,
+      "target": "copyback:R"
+    },
+    {
+      "state": "copyback:R",
+      "tape": "R",
+      "read": "1",
+      "write": "1",
+      "move": -1,
+      "target": "copyback:R"
+    },
+    {
+      "state": "copyback:R",
+      "tape": "R",
+      "read": "^",
+      "write": "^",
+      "move": 0,
+      "target": "copyback:P"
+    },
+    {
+      "state": "copyput:#",
+      "tape": "P",
+      "read": "_",
+      "write": "#",
+      "move": 1,
+      "target": "COPY"
+    },
+    {
+      "state": "copyput:$",
+      "tape": "P",
+      "read": "_",
+      "write": "$",
+      "move": 0,
+      "target": "copyback:R"
+    },
+    {
+      "state": "copyput:0",
+      "tape": "P",
+      "read": "_",
+      "write": "0",
+      "move": 1,
+      "target": "COPY"
+    },
+    {
+      "state": "copyput:1",
+      "tape": "P",
+      "read": "_",
+      "write": "1",
+      "move": 1,
+      "target": "COPY"
+    },
+    {
+      "state": "copyput:^",
+      "tape": "P",
+      "read": "_",
+      "write": "^",
+      "move": 1,
+      "target": "COPY"
+    }
+  ],
+  "states": 8,
+  "rules": 20,
+  "default": "missing transition rejects; execution history permits exact rollback"
+}

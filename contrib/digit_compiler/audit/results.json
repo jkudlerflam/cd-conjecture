@@ -1,0 +1,65 @@
+{
+  "full_space_fixture": {
+    "source_states": 2,
+    "source_rules": 12,
+    "source_work_tapes": 2,
+    "source_work_alphabet_sizes": [
+      4,
+      4
+    ],
+    "lift_control_states": 14,
+    "history_alphabet_size": 13,
+    "permutation_primitives_per_source_step": 4,
+    "history_cells_per_source_step": 1,
+    "scope": "Finite multitape permutations, not a one-head nearest-neighbor controller",
+    "exhaustive_collision_inputs": 2912,
+    "exhaustive_erasure_inputs": 182,
+    "malformed_full_configuration_roundtrips": 10000
+  },
+  "actual_arithmetic_table": {
+    "source_states": 4754,
+    "source_rules": 28494,
+    "source_work_tapes": 8,
+    "source_work_alphabet_sizes": [
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6
+    ],
+    "lift_control_states": 33248,
+    "history_alphabet_size": 28495,
+    "permutation_primitives_per_source_step": 4,
+    "history_cells_per_source_step": 1,
+    "scope": "Finite multitape permutations, not a one-head nearest-neighbor controller",
+    "supported_collision_checks": 170964,
+    "exact_source_run_comparisons": 60,
+    "source_steps_logged_and_reversed": 9746,
+    "arithmetic_results_checked_against_host_reference": 60
+  },
+  "actual_serial_memory_table": {
+    "source_states": 98,
+    "source_rules": 207,
+    "source_work_tapes": 5,
+    "source_work_alphabet_sizes": [
+      6,
+      6,
+      6,
+      6,
+      6
+    ],
+    "lift_control_states": 305,
+    "history_alphabet_size": 208,
+    "permutation_primitives_per_source_step": 4,
+    "history_cells_per_source_step": 1,
+    "scope": "Finite multitape permutations, not a one-head nearest-neighbor controller",
+    "supported_collision_checks": 1242,
+    "exact_source_run_comparisons": 14,
+    "source_steps_logged_and_reversed": 871
+  },
+  "status": "pass",
+  "runtime_seconds": 0.248
+}

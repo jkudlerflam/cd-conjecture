@@ -1,0 +1,156 @@
+{
+  "status": "pass",
+  "scope": "Fixed-control digit TM; history records are not yet a local Hamiltonian",
+  "operations": [
+    "ADD",
+    "SUB",
+    "MUL",
+    "DIV",
+    "MOD",
+    "SHL",
+    "SHR",
+    "AND",
+    "XOR",
+    "EQ",
+    "NE",
+    "LT",
+    "LE",
+    "GT",
+    "GE"
+  ],
+  "states": 4749,
+  "halting_states": 5,
+  "tapes": 8,
+  "alphabet_size": 6,
+  "transition_rules": 28494,
+  "every_local_rule_forward_inverse_checked": 28494,
+  "error_roundtrips": 4,
+  "by_operation": {
+    "ADD": {
+      "cases": 1143,
+      "microsteps": 120409,
+      "max_microsteps": 3129,
+      "max_input_bits": 257,
+      "rewound_cases": 135,
+      "rewound_steps": 38085
+    },
+    "SUB": {
+      "cases": 1143,
+      "microsteps": 118783,
+      "max_microsteps": 3119,
+      "max_input_bits": 257,
+      "rewound_cases": 135,
+      "rewound_steps": 36459
+    },
+    "MUL": {
+      "cases": 1143,
+      "microsteps": 7269542,
+      "max_microsteps": 2184009,
+      "max_input_bits": 257,
+      "rewound_cases": 135,
+      "rewound_steps": 6727382
+    },
+    "DIV": {
+      "cases": 1110,
+      "microsteps": 2654738,
+      "max_microsteps": 377952,
+      "max_input_bits": 257,
+      "rewound_cases": 126,
+      "rewound_steps": 2263866
+    },
+    "MOD": {
+      "cases": 1110,
+      "microsteps": 2677866,
+      "max_microsteps": 379739,
+      "max_input_bits": 257,
+      "rewound_cases": 126,
+      "rewound_steps": 2275336
+    },
+    "SHL": {
+      "cases": 483,
+      "microsteps": 346318,
+      "max_microsteps": 20910,
+      "max_input_bits": 257,
+      "rewound_cases": 99,
+      "rewound_steps": 145400
+    },
+    "SHR": {
+      "cases": 483,
+      "microsteps": 320111,
+      "max_microsteps": 46891,
+      "max_input_bits": 257,
+      "rewound_cases": 99,
+      "rewound_steps": 180473
+    },
+    "AND": {
+      "cases": 1143,
+      "microsteps": 107024,
+      "max_microsteps": 2608,
+      "max_input_bits": 257,
+      "rewound_cases": 135,
+      "rewound_steps": 31328
+    },
+    "XOR": {
+      "cases": 1143,
+      "microsteps": 105323,
+      "max_microsteps": 2346,
+      "max_input_bits": 257,
+      "rewound_cases": 135,
+      "rewound_steps": 31219
+    },
+    "EQ": {
+      "cases": 1143,
+      "microsteps": 33272,
+      "max_microsteps": 1037,
+      "max_input_bits": 257,
+      "rewound_cases": 135,
+      "rewound_steps": 7668
+    },
+    "NE": {
+      "cases": 1143,
+      "microsteps": 32773,
+      "max_microsteps": 1047,
+      "max_input_bits": 257,
+      "rewound_cases": 135,
+      "rewound_steps": 7169
+    },
+    "LT": {
+      "cases": 1143,
+      "microsteps": 33072,
+      "max_microsteps": 1045,
+      "max_input_bits": 257,
+      "rewound_cases": 135,
+      "rewound_steps": 7468
+    },
+    "LE": {
+      "cases": 1143,
+      "microsteps": 33877,
+      "max_microsteps": 1047,
+      "max_input_bits": 257,
+      "rewound_cases": 135,
+      "rewound_steps": 8273
+    },
+    "GT": {
+      "cases": 1143,
+      "microsteps": 34196,
+      "max_microsteps": 1045,
+      "max_input_bits": 257,
+      "rewound_cases": 135,
+      "rewound_steps": 8592
+    },
+    "GE": {
+      "cases": 1143,
+      "microsteps": 31884,
+      "max_microsteps": 792,
+      "max_input_bits": 257,
+      "rewound_cases": 135,
+      "rewound_steps": 6280
+    }
+  },
+  "cases": 15759,
+  "microsteps": 13919188,
+  "rewound_cases": 1935,
+  "rewound_steps": 11774998,
+  "table_sha256": "82bda7094d981ed1ba4a7d380db2255207e0032ebc762354c9f929778830f0a5",
+  "elapsed_seconds": 4.559
+}

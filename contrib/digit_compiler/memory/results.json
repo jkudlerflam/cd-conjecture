@@ -1,0 +1,33 @@
+{
+  "status": "pass",
+  "semantic_cases": 4158,
+  "base_forward_plus_reverse_and_copy_steps": 2714328,
+  "maximum_base_forward_steps": 5563,
+  "every_prefix_exact_rollback_steps": 620,
+  "malformed_input_rejections": 10,
+  "sampled_execution_rule_coverage": 171,
+  "base_control_states": 97,
+  "base_rules": 207,
+  "base_alphabet_size": 6,
+  "base_tapes": 5,
+  "copy_control_states": 8,
+  "copy_rules": 20,
+  "history_alphabet_size_including_blank": 208,
+  "maximum_tested_address_width": 513,
+  "claims": [
+    "serial digit access",
+    "GET",
+    "functional SET",
+    "APPEND",
+    "LEN",
+    "exact initialized rollback",
+    "clean scratch and history after output copy"
+  ],
+  "not_claimed": [
+    "heap allocator",
+    "VM integration",
+    "spatial nearest-neighbor single-head compiler",
+    "full-space Hamiltonian legality",
+    "c-d violation"
+  ]
+}

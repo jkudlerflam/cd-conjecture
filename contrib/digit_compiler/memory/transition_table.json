@@ -1,0 +1,3240 @@
+{
+  "alphabet": [
+    "_",
+    "^",
+    "0",
+    "1",
+    "#",
+    "$"
+  ],
+  "blank": "_",
+  "tapes": [
+    "R",
+    "C",
+    "A",
+    "M",
+    "V"
+  ],
+  "tape_count": 5,
+  "initial_state": "GET",
+  "entry_states": [
+    "GET",
+    "SET",
+    "APPEND",
+    "LEN"
+  ],
+  "halting_states": [
+    "ACCEPT"
+  ],
+  "active_tape": {
+    "APPEND": 0,
+    "APPEND:cstart": 1,
+    "APPEND:mstart": 3,
+    "APPEND:rstart": 1,
+    "APPEND:tail": 3,
+    "APPEND:tail_first": 3,
+    "APPEND:tailhash": 0,
+    "APPEND:tailput0": 0,
+    "APPEND:tailput1": 0,
+    "APPEND:value": 4,
+    "APPEND:vfirst": 4,
+    "APPEND:vhash": 0,
+    "APPEND:vput0": 0,
+    "APPEND:vput1": 0,
+    "APPEND:vstart": 4,
+    "GET": 0,
+    "GET:acopy": 2,
+    "GET:afirst": 2,
+    "GET:borrow": 1,
+    "GET:cend": 1,
+    "GET:crewind": 1,
+    "GET:cstart": 2,
+    "GET:czero": 1,
+    "GET:decback": 1,
+    "GET:decstart": 1,
+    "GET:mstart": 3,
+    "GET:nonzero_back": 1,
+    "GET:put0": 1,
+    "GET:put1": 1,
+    "GET:rstart": 1,
+    "GET:skip": 3,
+    "GET:skip_first": 3,
+    "GET:target": 3,
+    "GET:target_first": 3,
+    "GET:targetput0": 0,
+    "GET:targetput1": 0,
+    "GET:z0": 1,
+    "GET:z1": 1,
+    "GET:zero_back": 1,
+    "LEN": 0,
+    "LEN:carry": 1,
+    "LEN:cback": 1,
+    "LEN:cend": 1,
+    "LEN:cstart": 1,
+    "LEN:extend": 1,
+    "LEN:first": 3,
+    "LEN:incback": 1,
+    "LEN:incstart": 1,
+    "LEN:mstart": 3,
+    "LEN:out": 1,
+    "LEN:outstart": 1,
+    "LEN:put0": 0,
+    "LEN:put1": 0,
+    "LEN:rstart": 1,
+    "LEN:word": 3,
+    "SET": 0,
+    "SET:acopy": 2,
+    "SET:afirst": 2,
+    "SET:borrow": 1,
+    "SET:cend": 1,
+    "SET:crewind": 1,
+    "SET:cstart": 2,
+    "SET:czero": 1,
+    "SET:decback": 1,
+    "SET:decstart": 1,
+    "SET:mstart": 3,
+    "SET:nonzero_back": 1,
+    "SET:put0": 1,
+    "SET:put1": 1,
+    "SET:rstart": 1,
+    "SET:skip": 3,
+    "SET:skip_first": 3,
+    "SET:skiphash": 0,
+    "SET:skipput0": 0,
+    "SET:skipput1": 0,
+    "SET:tail": 3,
+    "SET:tail_first": 3,
+    "SET:tailhash": 0,
+    "SET:tailput0": 0,
+    "SET:tailput1": 0,
+    "SET:target": 3,
+    "SET:target_first": 3,
+    "SET:value": 4,
+    "SET:vfirst": 4,
+    "SET:vhash": 0,
+    "SET:vput0": 0,
+    "SET:vput1": 0,
+    "SET:vstart": 4,
+    "SET:z0": 1,
+    "SET:z1": 1,
+    "SET:zero_back": 1,
+    "finish": 0,
+    "reset:A": 2,
+    "reset:C": 1,
+    "reset:M": 3,
+    "reset:R": 0,
+    "reset:V": 4
+  },
+  "transitions": [
+    [
+      "APPEND",
+      "_",
+      "APPEND:rstart",
+      "^",
+      1
+    ],
+    [
+      "APPEND:cstart",
+      "_",
+      "APPEND:mstart",
+      "$",
+      0
+    ],
+    [
+      "APPEND:mstart",
+      "^",
+      "APPEND:tail_first",
+      "^",
+      1
+    ],
+    [
+      "APPEND:rstart",
+      "_",
+      "APPEND:cstart",
+      "^",
+      1
+    ],
+    [
+      "APPEND:tail",
+      "#",
+      "APPEND:tailhash",
+      "#",
+      1
+    ],
+    [
+      "APPEND:tail",
+      "0",
+      "APPEND:tailput0",
+      "0",
+      1
+    ],
+    [
+      "APPEND:tail",
+      "1",
+      "APPEND:tailput1",
+      "1",
+      1
+    ],
+    [
+      "APPEND:tail_first",
+      "$",
+      "APPEND:vstart",
+      "$",
+      0
+    ],
+    [
+      "APPEND:tail_first",
+      "0",
+      "APPEND:tailput0",
+      "0",
+      1
+    ],
+    [
+      "APPEND:tail_first",
+      "1",
+      "APPEND:tailput1",
+      "1",
+      1
+    ],
+    [
+      "APPEND:tailhash",
+      "_",
+      "APPEND:tail_first",
+      "#",
+      1
+    ],
+    [
+      "APPEND:tailput0",
+      "_",
+      "APPEND:tail",
+      "0",
+      1
+    ],
+    [
+      "APPEND:tailput1",
+      "_",
+      "APPEND:tail",
+      "1",
+      1
+    ],
+    [
+      "APPEND:value",
+      "$",
+      "APPEND:vhash",
+      "$",
+      0
+    ],
+    [
+      "APPEND:value",
+      "0",
+      "APPEND:vput0",
+      "0",
+      1
+    ],
+    [
+      "APPEND:value",
+      "1",
+      "APPEND:vput1",
+      "1",
+      1
+    ],
+    [
+      "APPEND:vfirst",
+      "0",
+      "APPEND:vput0",
+      "0",
+      1
+    ],
+    [
+      "APPEND:vfirst",
+      "1",
+      "APPEND:vput1",
+      "1",
+      1
+    ],
+    [
+      "APPEND:vhash",
+      "_",
+      "finish",
+      "#",
+      1
+    ],
+    [
+      "APPEND:vput0",
+      "_",
+      "APPEND:value",
+      "0",
+      1
+    ],
+    [
+      "APPEND:vput1",
+      "_",
+      "APPEND:value",
+      "1",
+      1
+    ],
+    [
+      "APPEND:vstart",
+      "^",
+      "APPEND:vfirst",
+      "^",
+      1
+    ],
+    [
+      "GET",
+      "_",
+      "GET:rstart",
+      "^",
+      1
+    ],
+    [
+      "GET:acopy",
+      "$",
+      "GET:cend",
+      "$",
+      0
+    ],
+    [
+      "GET:acopy",
+      "0",
+      "GET:put0",
+      "0",
+      1
+    ],
+    [
+      "GET:acopy",
+      "1",
+      "GET:put1",
+      "1",
+      1
+    ],
+    [
+      "GET:afirst",
+      "0",
+      "GET:put0",
+      "0",
+      1
+    ],
+    [
+      "GET:afirst",
+      "1",
+      "GET:put1",
+      "1",
+      1
+    ],
+    [
+      "GET:borrow",
+      "0",
+      "GET:borrow",
+      "1",
+      1
+    ],
+    [
+      "GET:borrow",
+      "1",
+      "GET:decback",
+      "0",
+      0
+    ],
+    [
+      "GET:cend",
+      "_",
+      "GET:crewind",
+      "$",
+      0
+    ],
+    [
+      "GET:crewind",
+      "#",
+      "GET:crewind",
+      "#",
+      -1
+    ],
+    [
+      "GET:crewind",
+      "$",
+      "GET:crewind",
+      "$",
+      -1
+    ],
+    [
+      "GET:crewind",
+      "0",
+      "GET:crewind",
+      "0",
+      -1
+    ],
+    [
+      "GET:crewind",
+      "1",
+      "GET:crewind",
+      "1",
+      -1
+    ],
+    [
+      "GET:crewind",
+      "^",
+      "GET:mstart",
+      "^",
+      0
+    ],
+    [
+      "GET:cstart",
+      "^",
+      "GET:afirst",
+      "^",
+      1
+    ],
+    [
+      "GET:czero",
+      "^",
+      "GET:z0",
+      "^",
+      1
+    ],
+    [
+      "GET:decback",
+      "#",
+      "GET:decback",
+      "#",
+      -1
+    ],
+    [
+      "GET:decback",
+      "$",
+      "GET:decback",
+      "$",
+      -1
+    ],
+    [
+      "GET:decback",
+      "0",
+      "GET:decback",
+      "0",
+      -1
+    ],
+    [
+      "GET:decback",
+      "1",
+      "GET:decback",
+      "1",
+      -1
+    ],
+    [
+      "GET:decback",
+      "^",
+      "GET:czero",
+      "^",
+      0
+    ],
+    [
+      "GET:decstart",
+      "^",
+      "GET:borrow",
+      "^",
+      1
+    ],
+    [
+      "GET:mstart",
+      "^",
+      "GET:czero",
+      "^",
+      1
+    ],
+    [
+      "GET:nonzero_back",
+      "#",
+      "GET:nonzero_back",
+      "#",
+      -1
+    ],
+    [
+      "GET:nonzero_back",
+      "$",
+      "GET:nonzero_back",
+      "$",
+      -1
+    ],
+    [
+      "GET:nonzero_back",
+      "0",
+      "GET:nonzero_back",
+      "0",
+      -1
+    ],
+    [
+      "GET:nonzero_back",
+      "1",
+      "GET:nonzero_back",
+      "1",
+      -1
+    ],
+    [
+      "GET:nonzero_back",
+      "^",
+      "GET:skip_first",
+      "^",
+      0
+    ],
+    [
+      "GET:put0",
+      "_",
+      "GET:acopy",
+      "0",
+      1
+    ],
+    [
+      "GET:put1",
+      "_",
+      "GET:acopy",
+      "1",
+      1
+    ],
+    [
+      "GET:rstart",
+      "_",
+      "GET:cstart",
+      "^",
+      1
+    ],
+    [
+      "GET:skip",
+      "#",
+      "GET:decstart",
+      "#",
+      1
+    ],
+    [
+      "GET:skip",
+      "0",
+      "GET:skip",
+      "0",
+      1
+    ],
+    [
+      "GET:skip",
+      "1",
+      "GET:skip",
+      "1",
+      1
+    ],
+    [
+      "GET:skip_first",
+      "0",
+      "GET:skip",
+      "0",
+      1
+    ],
+    [
+      "GET:skip_first",
+      "1",
+      "GET:skip",
+      "1",
+      1
+    ],
+    [
+      "GET:target",
+      "#",
+      "finish",
+      "#",
+      0
+    ],
+    [
+      "GET:target",
+      "0",
+      "GET:targetput0",
+      "0",
+      1
+    ],
+    [
+      "GET:target",
+      "1",
+      "GET:targetput1",
+      "1",
+      1
+    ],
+    [
+      "GET:target_first",
+      "0",
+      "GET:targetput0",
+      "0",
+      1
+    ],
+    [
+      "GET:target_first",
+      "1",
+      "GET:targetput1",
+      "1",
+      1
+    ],
+    [
+      "GET:targetput0",
+      "_",
+      "GET:target",
+      "0",
+      1
+    ],
+    [
+      "GET:targetput1",
+      "_",
+      "GET:target",
+      "1",
+      1
+    ],
+    [
+      "GET:z0",
+      "$",
+      "GET:zero_back",
+      "$",
+      0
+    ],
+    [
+      "GET:z0",
+      "0",
+      "GET:z0",
+      "0",
+      1
+    ],
+    [
+      "GET:z0",
+      "1",
+      "GET:z1",
+      "1",
+      1
+    ],
+    [
+      "GET:z1",
+      "$",
+      "GET:nonzero_back",
+      "$",
+      0
+    ],
+    [
+      "GET:z1",
+      "0",
+      "GET:z1",
+      "0",
+      1
+    ],
+    [
+      "GET:z1",
+      "1",
+      "GET:z1",
+      "1",
+      1
+    ],
+    [
+      "GET:zero_back",
+      "#",
+      "GET:zero_back",
+      "#",
+      -1
+    ],
+    [
+      "GET:zero_back",
+      "$",
+      "GET:zero_back",
+      "$",
+      -1
+    ],
+    [
+      "GET:zero_back",
+      "0",
+      "GET:zero_back",
+      "0",
+      -1
+    ],
+    [
+      "GET:zero_back",
+      "1",
+      "GET:zero_back",
+      "1",
+      -1
+    ],
+    [
+      "GET:zero_back",
+      "^",
+      "GET:target_first",
+      "^",
+      0
+    ],
+    [
+      "LEN",
+      "_",
+      "LEN:rstart",
+      "^",
+      1
+    ],
+    [
+      "LEN:carry",
+      "$",
+      "LEN:extend",
+      "1",
+      1
+    ],
+    [
+      "LEN:carry",
+      "0",
+      "LEN:incback",
+      "1",
+      0
+    ],
+    [
+      "LEN:carry",
+      "1",
+      "LEN:carry",
+      "0",
+      1
+    ],
+    [
+      "LEN:cback",
+      "#",
+      "LEN:cback",
+      "#",
+      -1
+    ],
+    [
+      "LEN:cback",
+      "$",
+      "LEN:cback",
+      "$",
+      -1
+    ],
+    [
+      "LEN:cback",
+      "0",
+      "LEN:cback",
+      "0",
+      -1
+    ],
+    [
+      "LEN:cback",
+      "1",
+      "LEN:cback",
+      "1",
+      -1
+    ],
+    [
+      "LEN:cback",
+      "^",
+      "LEN:mstart",
+      "^",
+      0
+    ],
+    [
+      "LEN:cend",
+      "_",
+      "LEN:cback",
+      "$",
+      0
+    ],
+    [
+      "LEN:cstart",
+      "_",
+      "LEN:cend",
+      "0",
+      1
+    ],
+    [
+      "LEN:extend",
+      "_",
+      "LEN:incback",
+      "$",
+      0
+    ],
+    [
+      "LEN:first",
+      "$",
+      "LEN:outstart",
+      "$",
+      0
+    ],
+    [
+      "LEN:first",
+      "0",
+      "LEN:word",
+      "0",
+      1
+    ],
+    [
+      "LEN:first",
+      "1",
+      "LEN:word",
+      "1",
+      1
+    ],
+    [
+      "LEN:incback",
+      "#",
+      "LEN:incback",
+      "#",
+      -1
+    ],
+    [
+      "LEN:incback",
+      "$",
+      "LEN:incback",
+      "$",
+      -1
+    ],
+    [
+      "LEN:incback",
+      "0",
+      "LEN:incback",
+      "0",
+      -1
+    ],
+    [
+      "LEN:incback",
+      "1",
+      "LEN:incback",
+      "1",
+      -1
+    ],
+    [
+      "LEN:incback",
+      "^",
+      "LEN:first",
+      "^",
+      0
+    ],
+    [
+      "LEN:incstart",
+      "^",
+      "LEN:carry",
+      "^",
+      1
+    ],
+    [
+      "LEN:mstart",
+      "^",
+      "LEN:first",
+      "^",
+      1
+    ],
+    [
+      "LEN:out",
+      "$",
+      "finish",
+      "$",
+      0
+    ],
+    [
+      "LEN:out",
+      "0",
+      "LEN:put0",
+      "0",
+      1
+    ],
+    [
+      "LEN:out",
+      "1",
+      "LEN:put1",
+      "1",
+      1
+    ],
+    [
+      "LEN:outstart",
+      "^",
+      "LEN:out",
+      "^",
+      1
+    ],
+    [
+      "LEN:put0",
+      "_",
+      "LEN:out",
+      "0",
+      1
+    ],
+    [
+      "LEN:put1",
+      "_",
+      "LEN:out",
+      "1",
+      1
+    ],
+    [
+      "LEN:rstart",
+      "_",
+      "LEN:cstart",
+      "^",
+      1
+    ],
+    [
+      "LEN:word",
+      "#",
+      "LEN:incstart",
+      "#",
+      1
+    ],
+    [
+      "LEN:word",
+      "0",
+      "LEN:word",
+      "0",
+      1
+    ],
+    [
+      "LEN:word",
+      "1",
+      "LEN:word",
+      "1",
+      1
+    ],
+    [
+      "SET",
+      "_",
+      "SET:rstart",
+      "^",
+      1
+    ],
+    [
+      "SET:acopy",
+      "$",
+      "SET:cend",
+      "$",
+      0
+    ],
+    [
+      "SET:acopy",
+      "0",
+      "SET:put0",
+      "0",
+      1
+    ],
+    [
+      "SET:acopy",
+      "1",
+      "SET:put1",
+      "1",
+      1
+    ],
+    [
+      "SET:afirst",
+      "0",
+      "SET:put0",
+      "0",
+      1
+    ],
+    [
+      "SET:afirst",
+      "1",
+      "SET:put1",
+      "1",
+      1
+    ],
+    [
+      "SET:borrow",
+      "0",
+      "SET:borrow",
+      "1",
+      1
+    ],
+    [
+      "SET:borrow",
+      "1",
+      "SET:decback",
+      "0",
+      0
+    ],
+    [
+      "SET:cend",
+      "_",
+      "SET:crewind",
+      "$",
+      0
+    ],
+    [
+      "SET:crewind",
+      "#",
+      "SET:crewind",
+      "#",
+      -1
+    ],
+    [
+      "SET:crewind",
+      "$",
+      "SET:crewind",
+      "$",
+      -1
+    ],
+    [
+      "SET:crewind",
+      "0",
+      "SET:crewind",
+      "0",
+      -1
+    ],
+    [
+      "SET:crewind",
+      "1",
+      "SET:crewind",
+      "1",
+      -1
+    ],
+    [
+      "SET:crewind",
+      "^",
+      "SET:mstart",
+      "^",
+      0
+    ],
+    [
+      "SET:cstart",
+      "^",
+      "SET:afirst",
+      "^",
+      1
+    ],
+    [
+      "SET:czero",
+      "^",
+      "SET:z0",
+      "^",
+      1
+    ],
+    [
+      "SET:decback",
+      "#",
+      "SET:decback",
+      "#",
+      -1
+    ],
+    [
+      "SET:decback",
+      "$",
+      "SET:decback",
+      "$",
+      -1
+    ],
+    [
+      "SET:decback",
+      "0",
+      "SET:decback",
+      "0",
+      -1
+    ],
+    [
+      "SET:decback",
+      "1",
+      "SET:decback",
+      "1",
+      -1
+    ],
+    [
+      "SET:decback",
+      "^",
+      "SET:czero",
+      "^",
+      0
+    ],
+    [
+      "SET:decstart",
+      "^",
+      "SET:borrow",
+      "^",
+      1
+    ],
+    [
+      "SET:mstart",
+      "^",
+      "SET:czero",
+      "^",
+      1
+    ],
+    [
+      "SET:nonzero_back",
+      "#",
+      "SET:nonzero_back",
+      "#",
+      -1
+    ],
+    [
+      "SET:nonzero_back",
+      "$",
+      "SET:nonzero_back",
+      "$",
+      -1
+    ],
+    [
+      "SET:nonzero_back",
+      "0",
+      "SET:nonzero_back",
+      "0",
+      -1
+    ],
+    [
+      "SET:nonzero_back",
+      "1",
+      "SET:nonzero_back",
+      "1",
+      -1
+    ],
+    [
+      "SET:nonzero_back",
+      "^",
+      "SET:skip_first",
+      "^",
+      0
+    ],
+    [
+      "SET:put0",
+      "_",
+      "SET:acopy",
+      "0",
+      1
+    ],
+    [
+      "SET:put1",
+      "_",
+      "SET:acopy",
+      "1",
+      1
+    ],
+    [
+      "SET:rstart",
+      "_",
+      "SET:cstart",
+      "^",
+      1
+    ],
+    [
+      "SET:skip",
+      "#",
+      "SET:skiphash",
+      "#",
+      1
+    ],
+    [
+      "SET:skip",
+      "0",
+      "SET:skipput0",
+      "0",
+      1
+    ],
+    [
+      "SET:skip",
+      "1",
+      "SET:skipput1",
+      "1",
+      1
+    ],
+    [
+      "SET:skip_first",
+      "0",
+      "SET:skipput0",
+      "0",
+      1
+    ],
+    [
+      "SET:skip_first",
+      "1",
+      "SET:skipput1",
+      "1",
+      1
+    ],
+    [
+      "SET:skiphash",
+      "_",
+      "SET:decstart",
+      "#",
+      1
+    ],
+    [
+      "SET:skipput0",
+      "_",
+      "SET:skip",
+      "0",
+      1
+    ],
+    [
+      "SET:skipput1",
+      "_",
+      "SET:skip",
+      "1",
+      1
+    ],
+    [
+      "SET:tail",
+      "#",
+      "SET:tailhash",
+      "#",
+      1
+    ],
+    [
+      "SET:tail",
+      "0",
+      "SET:tailput0",
+      "0",
+      1
+    ],
+    [
+      "SET:tail",
+      "1",
+      "SET:tailput1",
+      "1",
+      1
+    ],
+    [
+      "SET:tail_first",
+      "$",
+      "finish",
+      "$",
+      0
+    ],
+    [
+      "SET:tail_first",
+      "0",
+      "SET:tailput0",
+      "0",
+      1
+    ],
+    [
+      "SET:tail_first",
+      "1",
+      "SET:tailput1",
+      "1",
+      1
+    ],
+    [
+      "SET:tailhash",
+      "_",
+      "SET:tail_first",
+      "#",
+      1
+    ],
+    [
+      "SET:tailput0",
+      "_",
+      "SET:tail",
+      "0",
+      1
+    ],
+    [
+      "SET:tailput1",
+      "_",
+      "SET:tail",
+      "1",
+      1
+    ],
+    [
+      "SET:target",
+      "#",
+      "SET:vstart",
+      "#",
+      1
+    ],
+    [
+      "SET:target",
+      "0",
+      "SET:target",
+      "0",
+      1
+    ],
+    [
+      "SET:target",
+      "1",
+      "SET:target",
+      "1",
+      1
+    ],
+    [
+      "SET:target_first",
+      "0",
+      "SET:target",
+      "0",
+      1
+    ],
+    [
+      "SET:target_first",
+      "1",
+      "SET:target",
+      "1",
+      1
+    ],
+    [
+      "SET:value",
+      "$",
+      "SET:vhash",
+      "$",
+      0
+    ],
+    [
+      "SET:value",
+      "0",
+      "SET:vput0",
+      "0",
+      1
+    ],
+    [
+      "SET:value",
+      "1",
+      "SET:vput1",
+      "1",
+      1
+    ],
+    [
+      "SET:vfirst",
+      "0",
+      "SET:vput0",
+      "0",
+      1
+    ],
+    [
+      "SET:vfirst",
+      "1",
+      "SET:vput1",
+      "1",
+      1
+    ],
+    [
+      "SET:vhash",
+      "_",
+      "SET:tail_first",
+      "#",
+      1
+    ],
+    [
+      "SET:vput0",
+      "_",
+      "SET:value",
+      "0",
+      1
+    ],
+    [
+      "SET:vput1",
+      "_",
+      "SET:value",
+      "1",
+      1
+    ],
+    [
+      "SET:vstart",
+      "^",
+      "SET:vfirst",
+      "^",
+      1
+    ],
+    [
+      "SET:z0",
+      "$",
+      "SET:zero_back",
+      "$",
+      0
+    ],
+    [
+      "SET:z0",
+      "0",
+      "SET:z0",
+      "0",
+      1
+    ],
+    [
+      "SET:z0",
+      "1",
+      "SET:z1",
+      "1",
+      1
+    ],
+    [
+      "SET:z1",
+      "$",
+      "SET:nonzero_back",
+      "$",
+      0
+    ],
+    [
+      "SET:z1",
+      "0",
+      "SET:z1",
+      "0",
+      1
+    ],
+    [
+      "SET:z1",
+      "1",
+      "SET:z1",
+      "1",
+      1
+    ],
+    [
+      "SET:zero_back",
+      "#",
+      "SET:zero_back",
+      "#",
+      -1
+    ],
+    [
+      "SET:zero_back",
+      "$",
+      "SET:zero_back",
+      "$",
+      -1
+    ],
+    [
+      "SET:zero_back",
+      "0",
+      "SET:zero_back",
+      "0",
+      -1
+    ],
+    [
+      "SET:zero_back",
+      "1",
+      "SET:zero_back",
+      "1",
+      -1
+    ],
+    [
+      "SET:zero_back",
+      "^",
+      "SET:target_first",
+      "^",
+      0
+    ],
+    [
+      "finish",
+      "_",
+      "reset:M",
+      "$",
+      0
+    ],
+    [
+      "reset:A",
+      "#",
+      "reset:A",
+      "#",
+      -1
+    ],
+    [
+      "reset:A",
+      "$",
+      "reset:A",
+      "$",
+      -1
+    ],
+    [
+      "reset:A",
+      "0",
+      "reset:A",
+      "0",
+      -1
+    ],
+    [
+      "reset:A",
+      "1",
+      "reset:A",
+      "1",
+      -1
+    ],
+    [
+      "reset:A",
+      "^",
+      "reset:V",
+      "^",
+      0
+    ],
+    [
+      "reset:C",
+      "#",
+      "reset:C",
+      "#",
+      -1
+    ],
+    [
+      "reset:C",
+      "$",
+      "reset:C",
+      "$",
+      -1
+    ],
+    [
+      "reset:C",
+      "0",
+      "reset:C",
+      "0",
+      -1
+    ],
+    [
+      "reset:C",
+      "1",
+      "reset:C",
+      "1",
+      -1
+    ],
+    [
+      "reset:C",
+      "^",
+      "reset:R",
+      "^",
+      0
+    ],
+    [
+      "reset:M",
+      "#",
+      "reset:M",
+      "#",
+      -1
+    ],
+    [
+      "reset:M",
+      "$",
+      "reset:M",
+      "$",
+      -1
+    ],
+    [
+      "reset:M",
+      "0",
+      "reset:M",
+      "0",
+      -1
+    ],
+    [
+      "reset:M",
+      "1",
+      "reset:M",
+      "1",
+      -1
+    ],
+    [
+      "reset:M",
+      "^",
+      "reset:A",
+      "^",
+      0
+    ],
+    [
+      "reset:R",
+      "#",
+      "reset:R",
+      "#",
+      -1
+    ],
+    [
+      "reset:R",
+      "$",
+      "reset:R",
+      "$",
+      -1
+    ],
+    [
+      "reset:R",
+      "0",
+      "reset:R",
+      "0",
+      -1
+    ],
+    [
+      "reset:R",
+      "1",
+      "reset:R",
+      "1",
+      -1
+    ],
+    [
+      "reset:R",
+      "^",
+      "ACCEPT",
+      "^",
+      0
+    ],
+    [
+      "reset:V",
+      "#",
+      "reset:V",
+      "#",
+      -1
+    ],
+    [
+      "reset:V",
+      "$",
+      "reset:V",
+      "$",
+      -1
+    ],
+    [
+      "reset:V",
+      "0",
+      "reset:V",
+      "0",
+      -1
+    ],
+    [
+      "reset:V",
+      "1",
+      "reset:V",
+      "1",
+      -1
+    ],
+    [
+      "reset:V",
+      "^",
+      "reset:C",
+      "^",
+      0
+    ]
+  ],
+  "entries": [
+    {
+      "state": "APPEND",
+      "tape": "R",
+      "read": "_",
+      "write": "^",
+      "move": 1,
+      "target": "APPEND:rstart"
+    },
+    {
+      "state": "APPEND:cstart",
+      "tape": "C",
+      "read": "_",
+      "write": "$",
+      "move": 0,
+      "target": "APPEND:mstart"
+    },
+    {
+      "state": "APPEND:mstart",
+      "tape": "M",
+      "read": "^",
+      "write": "^",
+      "move": 1,
+      "target": "APPEND:tail_first"
+    },
+    {
+      "state": "APPEND:rstart",
+      "tape": "C",
+      "read": "_",
+      "write": "^",
+      "move": 1,
+      "target": "APPEND:cstart"
+    },
+    {
+      "state": "APPEND:tail",
+      "tape": "M",
+      "read": "#",
+      "write": "#",
+      "move": 1,
+      "target": "APPEND:tailhash"
+    },
+    {
+      "state": "APPEND:tail",
+      "tape": "M",
+      "read": "0",
+      "write": "0",
+      "move": 1,
+      "target": "APPEND:tailput0"
+    },
+    {
+      "state": "APPEND:tail",
+      "tape": "M",
+      "read": "1",
+      "write": "1",
+      "move": 1,
+      "target": "APPEND:tailput1"
+    },
+    {
+      "state": "APPEND:tail_first",
+      "tape": "M",
+      "read": "$",
+      "write": "$",
+      "move": 0,
+      "target": "APPEND:vstart"
+    },
+    {
+      "state": "APPEND:tail_first",
+      "tape": "M",
+      "read": "0",
+      "write": "0",
+      "move": 1,
+      "target": "APPEND:tailput0"
+    },
+    {
+      "state": "APPEND:tail_first",
+      "tape": "M",
+      "read": "1",
+      "write": "1",
+      "move": 1,
+      "target": "APPEND:tailput1"
+    },
+    {
+      "state": "APPEND:tailhash",
+      "tape": "R",
+      "read": "_",
+      "write": "#",
+      "move": 1,
+      "target": "APPEND:tail_first"
+    },
+    {
+      "state": "APPEND:tailput0",
+      "tape": "R",
+      "read": "_",
+      "write": "0",
+      "move": 1,
+      "target": "APPEND:tail"
+    },
+    {
+      "state": "APPEND:tailput1",
+      "tape": "R",
+      "read": "_",
+      "write": "1",
+      "move": 1,
+      "target": "APPEND:tail"
+    },
+    {
+      "state": "APPEND:value",
+      "tape": "V",
+      "read": "$",
+      "write": "$",
+      "move": 0,
+      "target": "APPEND:vhash"
+    },
+    {
+      "state": "APPEND:value",
+      "tape": "V",
+      "read": "0",
+      "write": "0",
+      "move": 1,
+      "target": "APPEND:vput0"
+    },
+    {
+      "state": "APPEND:value",
+      "tape": "V",
+      "read": "1",
+      "write": "1",
+      "move": 1,
+      "target": "APPEND:vput1"
+    },
+    {
+      "state": "APPEND:vfirst",
+      "tape": "V",
+      "read": "0",
+      "write": "0",
+      "move": 1,
+      "target": "APPEND:vput0"
+    },
+    {
+      "state": "APPEND:vfirst",
+      "tape": "V",
+      "read": "1",
+      "write": "1",
+      "move": 1,
+      "target": "APPEND:vput1"
+    },
+    {
+      "state": "APPEND:vhash",
+      "tape": "R",
+      "read": "_",
+      "write": "#",
+      "move": 1,
+      "target": "finish"
+    },
+    {
+      "state": "APPEND:vput0",
+      "tape": "R",
+      "read": "_",
+      "write": "0",
+      "move": 1,
+      "target": "APPEND:value"
+    },
+    {
+      "state": "APPEND:vput1",
+      "tape": "R",
+      "read": "_",
+      "write": "1",
+      "move": 1,
+      "target": "APPEND:value"
+    },
+    {
+      "state": "APPEND:vstart",
+      "tape": "V",
+      "read": "^",
+      "write": "^",
+      "move": 1,
+      "target": "APPEND:vfirst"
+    },
+    {
+      "state": "GET",
+      "tape": "R",
+      "read": "_",
+      "write": "^",
+      "move": 1,
+      "target": "GET:rstart"
+    },
+    {
+      "state": "GET:acopy",
+      "tape": "A",
+      "read": "$",
+      "write": "$",
+      "move": 0,
+      "target": "GET:cend"
+    },
+    {
+      "state": "GET:acopy",
+      "tape": "A",
+      "read": "0",
+      "write": "0",
+      "move": 1,
+      "target": "GET:put0"
+    },
+    {
+      "state": "GET:acopy",
+      "tape": "A",
+      "read": "1",
+      "write": "1",
+      "move": 1,
+      "target": "GET:put1"
+    },
+    {
+      "state": "GET:afirst",
+      "tape": "A",
+      "read": "0",
+      "write": "0",
+      "move": 1,
+      "target": "GET:put0"
+    },
+    {
+      "state": "GET:afirst",
+      "tape": "A",
+      "read": "1",
+      "write": "1",
+      "move": 1,
+      "target": "GET:put1"
+    },
+    {
+      "state": "GET:borrow",
+      "tape": "C",
+      "read": "0",
+      "write": "1",
+      "move": 1,
+      "target": "GET:borrow"
+    },
+    {
+      "state": "GET:borrow",
+      "tape": "C",
+      "read": "1",
+      "write": "0",
+      "move": 0,
+      "target": "GET:decback"
+    },
+    {
+      "state": "GET:cend",
+      "tape": "C",
+      "read": "_",
+      "write": "$",
+      "move": 0,
+      "target": "GET:crewind"
+    },
+    {
+      "state": "GET:crewind",
+      "tape": "C",
+      "read": "#",
+      "write": "#",
+      "move": -1,
+      "target": "GET:crewind"
+    },
+    {
+      "state": "GET:crewind",
+      "tape": "C",
+      "read": "$",
+      "write": "$",
+      "move": -1,
+      "target": "GET:crewind"
+    },
+    {
+      "state": "GET:crewind",
+      "tape": "C",
+      "read": "0",
+      "write": "0",
+      "move": -1,
+      "target": "GET:crewind"
+    },
+    {
+      "state": "GET:crewind",
+      "tape": "C",
+      "read": "1",
+      "write": "1",
+      "move": -1,
+      "target": "GET:crewind"
+    },
+    {
+      "state": "GET:crewind",
+      "tape": "C",
+      "read": "^",
+      "write": "^",
+      "move": 0,
+      "target": "GET:mstart"
+    },
+    {
+      "state": "GET:cstart",
+      "tape": "A",
+      "read": "^",
+      "write": "^",
+      "move": 1,
+      "target": "GET:afirst"
+    },
+    {
+      "state": "GET:czero",
+      "tape": "C",
+      "read": "^",
+      "write": "^",
+      "move": 1,
+      "target": "GET:z0"
+    },
+    {
+      "state": "GET:decback",
+      "tape": "C",
+      "read": "#",
+      "write": "#",
+      "move": -1,
+      "target": "GET:decback"
+    },
+    {
+      "state": "GET:decback",
+      "tape": "C",
+      "read": "$",
+      "write": "$",
+      "move": -1,
+      "target": "GET:decback"
+    },
+    {
+      "state": "GET:decback",
+      "tape": "C",
+      "read": "0",
+      "write": "0",
+      "move": -1,
+      "target": "GET:decback"
+    },
+    {
+      "state": "GET:decback",
+      "tape": "C",
+      "read": "1",
+      "write": "1",
+      "move": -1,
+      "target": "GET:decback"
+    },
+    {
+      "state": "GET:decback",
+      "tape": "C",
+      "read": "^",
+      "write": "^",
+      "move": 0,
+      "target": "GET:czero"
+    },
+    {
+      "state": "GET:decstart",
+      "tape": "C",
+      "read": "^",
+      "write": "^",
+      "move": 1,
+      "target": "GET:borrow"
+    },
+    {
+      "state": "GET:mstart",
+      "tape": "M",
+      "read": "^",
+      "write": "^",
+      "move": 1,
+      "target": "GET:czero"
+    },
+    {
+      "state": "GET:nonzero_back",
+      "tape": "C",
+      "read": "#",
+      "write": "#",
+      "move": -1,
+      "target": "GET:nonzero_back"
+    },
+    {
+      "state": "GET:nonzero_back",
+      "tape": "C",
+      "read": "$",
+      "write": "$",
+      "move": -1,
+      "target": "GET:nonzero_back"
+    },
+    {
+      "state": "GET:nonzero_back",
+      "tape": "C",
+      "read": "0",
+      "write": "0",
+      "move": -1,
+      "target": "GET:nonzero_back"
+    },
+    {
+      "state": "GET:nonzero_back",
+      "tape": "C",
+      "read": "1",
+      "write": "1",
+      "move": -1,
+      "target": "GET:nonzero_back"
+    },
+    {
+      "state": "GET:nonzero_back",
+      "tape": "C",
+      "read": "^",
+      "write": "^",
+      "move": 0,
+      "target": "GET:skip_first"
+    },
+    {
+      "state": "GET:put0",
+      "tape": "C",
+      "read": "_",
+      "write": "0",
+      "move": 1,
+      "target": "GET:acopy"
+    },
+    {
+      "state": "GET:put1",
+      "tape": "C",
+      "read": "_",
+      "write": "1",
+      "move": 1,
+      "target": "GET:acopy"
+    },
+    {
+      "state": "GET:rstart",
+      "tape": "C",
+      "read": "_",
+      "write": "^",
+      "move": 1,
+      "target": "GET:cstart"
+    },
+    {
+      "state": "GET:skip",
+      "tape": "M",
+      "read": "#",
+      "write": "#",
+      "move": 1,
+      "target": "GET:decstart"
+    },
+    {
+      "state": "GET:skip",
+      "tape": "M",
+      "read": "0",
+      "write": "0",
+      "move": 1,
+      "target": "GET:skip"
+    },
+    {
+      "state": "GET:skip",
+      "tape": "M",
+      "read": "1",
+      "write": "1",
+      "move": 1,
+      "target": "GET:skip"
+    },
+    {
+      "state": "GET:skip_first",
+      "tape": "M",
+      "read": "0",
+      "write": "0",
+      "move": 1,
+      "target": "GET:skip"
+    },
+    {
+      "state": "GET:skip_first",
+      "tape": "M",
+      "read": "1",
+      "write": "1",
+      "move": 1,
+      "target": "GET:skip"
+    },
+    {
+      "state": "GET:target",
+      "tape": "M",
+      "read": "#",
+      "write": "#",
+      "move": 0,
+      "target": "finish"
+    },
+    {
+      "state": "GET:target",
+      "tape": "M",
+      "read": "0",
+      "write": "0",
+      "move": 1,
+      "target": "GET:targetput0"
+    },
+    {
+      "state": "GET:target",
+      "tape": "M",
+      "read": "1",
+      "write": "1",
+      "move": 1,
+      "target": "GET:targetput1"
+    },
+    {
+      "state": "GET:target_first",
+      "tape": "M",
+      "read": "0",
+      "write": "0",
+      "move": 1,
+      "target": "GET:targetput0"
+    },
+    {
+      "state": "GET:target_first",
+      "tape": "M",
+      "read": "1",
+      "write": "1",
+      "move": 1,
+      "target": "GET:targetput1"
+    },
+    {
+      "state": "GET:targetput0",
+      "tape": "R",
+      "read": "_",
+      "write": "0",
+      "move": 1,
+      "target": "GET:target"
+    },
+    {
+      "state": "GET:targetput1",
+      "tape": "R",
+      "read": "_",
+      "write": "1",
+      "move": 1,
+      "target": "GET:target"
+    },
+    {
+      "state": "GET:z0",
+      "tape": "C",
+      "read": "$",
+      "write": "$",
+      "move": 0,
+      "target": "GET:zero_back"
+    },
+    {
+      "state": "GET:z0",
+      "tape": "C",
+      "read": "0",
+      "write": "0",
+      "move": 1,
+      "target": "GET:z0"
+    },
+    {
+      "state": "GET:z0",
+      "tape": "C",
+      "read": "1",
+      "write": "1",
+      "move": 1,
+      "target": "GET:z1"
+    },
+    {
+      "state": "GET:z1",
+      "tape": "C",
+      "read": "$",
+      "write": "$",
+      "move": 0,
+      "target": "GET:nonzero_back"
+    },
+    {
+      "state": "GET:z1",
+      "tape": "C",
+      "read": "0",
+      "write": "0",
+      "move": 1,
+      "target": "GET:z1"
+    },
+    {
+      "state": "GET:z1",
+      "tape": "C",
+      "read": "1",
+      "write": "1",
+      "move": 1,
+      "target": "GET:z1"
+    },
+    {
+      "state": "GET:zero_back",
+      "tape": "C",
+      "read": "#",
+      "write": "#",
+      "move": -1,
+      "target": "GET:zero_back"
+    },
+    {
+      "state": "GET:zero_back",
+      "tape": "C",
+      "read": "$",
+      "write": "$",
+      "move": -1,
+      "target": "GET:zero_back"
+    },
+    {
+      "state": "GET:zero_back",
+      "tape": "C",
+      "read": "0",
+      "write": "0",
+      "move": -1,
+      "target": "GET:zero_back"
+    },
+    {
+      "state": "GET:zero_back",
+      "tape": "C",
+      "read": "1",
+      "write": "1",
+      "move": -1,
+      "target": "GET:zero_back"
+    },
+    {
+      "state": "GET:zero_back",
+      "tape": "C",
+      "read": "^",
+      "write": "^",
+      "move": 0,
+      "target": "GET:target_first"
+    },
+    {
+      "state": "LEN",
+      "tape": "R",
+      "read": "_",
+      "write": "^",
+      "move": 1,
+      "target": "LEN:rstart"
+    },
+    {
+      "state": "LEN:carry",
+      "tape": "C",
+      "read": "$",
+      "write": "1",
+      "move": 1,
+      "target": "LEN:extend"
+    },
+    {
+      "state": "LEN:carry",
+      "tape": "C",
+      "read": "0",
+      "write": "1",
+      "move": 0,
+      "target": "LEN:incback"
+    },
+    {
+      "state": "LEN:carry",
+      "tape": "C",
+      "read": "1",
+      "write": "0",
+      "move": 1,
+      "target": "LEN:carry"
+    },
+    {
+      "state": "LEN:cback",
+      "tape": "C",
+      "read": "#",
+      "write": "#",
+      "move": -1,
+      "target": "LEN:cback"
+    },
+    {
+      "state": "LEN:cback",
+      "tape": "C",
+      "read": "$",
+      "write": "$",
+      "move": -1,
+      "target": "LEN:cback"
+    },
+    {
+      "state": "LEN:cback",
+      "tape": "C",
+      "read": "0",
+      "write": "0",
+      "move": -1,
+      "target": "LEN:cback"
+    },
+    {
+      "state": "LEN:cback",
+      "tape": "C",
+      "read": "1",
+      "write": "1",
+      "move": -1,
+      "target": "LEN:cback"
+    },
+    {
+      "state": "LEN:cback",
+      "tape": "C",
+      "read": "^",
+      "write": "^",
+      "move": 0,
+      "target": "LEN:mstart"
+    },
+    {
+      "state": "LEN:cend",
+      "tape": "C",
+      "read": "_",
+      "write": "$",
+      "move": 0,
+      "target": "LEN:cback"
+    },
+    {
+      "state": "LEN:cstart",
+      "tape": "C",
+      "read": "_",
+      "write": "0",
+      "move": 1,
+      "target": "LEN:cend"
+    },
+    {
+      "state": "LEN:extend",
+      "tape": "C",
+      "read": "_",
+      "write": "$",
+      "move": 0,
+      "target": "LEN:incback"
+    },
+    {
+      "state": "LEN:first",
+      "tape": "M",
+      "read": "$",
+      "write": "$",
+      "move": 0,
+      "target": "LEN:outstart"
+    },
+    {
+      "state": "LEN:first",
+      "tape": "M",
+      "read": "0",
+      "write": "0",
+      "move": 1,
+      "target": "LEN:word"
+    },
+    {
+      "state": "LEN:first",
+      "tape": "M",
+      "read": "1",
+      "write": "1",
+      "move": 1,
+      "target": "LEN:word"
+    },
+    {
+      "state": "LEN:incback",
+      "tape": "C",
+      "read": "#",
+      "write": "#",
+      "move": -1,
+      "target": "LEN:incback"
+    },
+    {
+      "state": "LEN:incback",
+      "tape": "C",
+      "read": "$",
+      "write": "$",
+      "move": -1,
+      "target": "LEN:incback"
+    },
+    {
+      "state": "LEN:incback",
+      "tape": "C",
+      "read": "0",
+      "write": "0",
+      "move": -1,
+      "target": "LEN:incback"
+    },
+    {
+      "state": "LEN:incback",
+      "tape": "C",
+      "read": "1",
+      "write": "1",
+      "move": -1,
+      "target": "LEN:incback"
+    },
+    {
+      "state": "LEN:incback",
+      "tape": "C",
+      "read": "^",
+      "write": "^",
+      "move": 0,
+      "target": "LEN:first"
+    },
+    {
+      "state": "LEN:incstart",
+      "tape": "C",
+      "read": "^",
+      "write": "^",
+      "move": 1,
+      "target": "LEN:carry"
+    },
+    {
+      "state": "LEN:mstart",
+      "tape": "M",
+      "read": "^",
+      "write": "^",
+      "move": 1,
+      "target": "LEN:first"
+    },
+    {
+      "state": "LEN:out",
+      "tape": "C",
+      "read": "$",
+      "write": "$",
+      "move": 0,
+      "target": "finish"
+    },
+    {
+      "state": "LEN:out",
+      "tape": "C",
+      "read": "0",
+      "write": "0",
+      "move": 1,
+      "target": "LEN:put0"
+    },
+    {
+      "state": "LEN:out",
+      "tape": "C",
+      "read": "1",
+      "write": "1",
+      "move": 1,
+      "target": "LEN:put1"
+    },
+    {
+      "state": "LEN:outstart",
+      "tape": "C",
+      "read": "^",
+      "write": "^",
+      "move": 1,
+      "target": "LEN:out"
+    },
+    {
+      "state": "LEN:put0",
+      "tape": "R",
+      "read": "_",
+      "write": "0",
+      "move": 1,
+      "target": "LEN:out"
+    },
+    {
+      "state": "LEN:put1",
+      "tape": "R",
+      "read": "_",
+      "write": "1",
+      "move": 1,
+      "target": "LEN:out"
+    },
+    {
+      "state": "LEN:rstart",
+      "tape": "C",
+      "read": "_",
+      "write": "^",
+      "move": 1,
+      "target": "LEN:cstart"
+    },
+    {
+      "state": "LEN:word",
+      "tape": "M",
+      "read": "#",
+      "write": "#",
+      "move": 1,
+      "target": "LEN:incstart"
+    },
+    {
+      "state": "LEN:word",
+      "tape": "M",
+      "read": "0",
+      "write": "0",
+      "move": 1,
+      "target": "LEN:word"
+    },
+    {
+      "state": "LEN:word",
+      "tape": "M",
+      "read": "1",
+      "write": "1",
+      "move": 1,
+      "target": "LEN:word"
+    },
+    {
+      "state": "SET",
+      "tape": "R",
+      "read": "_",
+      "write": "^",
+      "move": 1,
+      "target": "SET:rstart"
+    },
+    {
+      "state": "SET:acopy",
+      "tape": "A",
+      "read": "$",
+      "write": "$",
+      "move": 0,
+      "target": "SET:cend"
+    },
+    {
+      "state": "SET:acopy",
+      "tape": "A",
+      "read": "0",
+      "write": "0",
+      "move": 1,
+      "target": "SET:put0"
+    },
+    {
+      "state": "SET:acopy",
+      "tape": "A",
+      "read": "1",
+      "write": "1",
+      "move": 1,
+      "target": "SET:put1"
+    },
+    {
+      "state": "SET:afirst",
+      "tape": "A",
+      "read": "0",
+      "write": "0",
+      "move": 1,
+      "target": "SET:put0"
+    },
+    {
+      "state": "SET:afirst",
+      "tape": "A",
+      "read": "1",
+      "write": "1",
+      "move": 1,
+      "target": "SET:put1"
+    },
+    {
+      "state": "SET:borrow",
+      "tape": "C",
+      "read": "0",
+      "write": "1",
+      "move": 1,
+      "target": "SET:borrow"
+    },
+    {
+      "state": "SET:borrow",
+      "tape": "C",
+      "read": "1",
+      "write": "0",
+      "move": 0,
+      "target": "SET:decback"
+    },
+    {
+      "state": "SET:cend",
+      "tape": "C",
+      "read": "_",
+      "write": "$",
+      "move": 0,
+      "target": "SET:crewind"
+    },
+    {
+      "state": "SET:crewind",
+      "tape": "C",
+      "read": "#",
+      "write": "#",
+      "move": -1,
+      "target": "SET:crewind"
+    },
+    {
+      "state": "SET:crewind",
+      "tape": "C",
+      "read": "$",
+      "write": "$",
+      "move": -1,
+      "target": "SET:crewind"
+    },
+    {
+      "state": "SET:crewind",
+      "tape": "C",
+      "read": "0",
+      "write": "0",
+      "move": -1,
+      "target": "SET:crewind"
+    },
+    {
+      "state": "SET:crewind",
+      "tape": "C",
+      "read": "1",
+      "write": "1",
+      "move": -1,
+      "target": "SET:crewind"
+    },
+    {
+      "state": "SET:crewind",
+      "tape": "C",
+      "read": "^",
+      "write": "^",
+      "move": 0,
+      "target": "SET:mstart"
+    },
+    {
+      "state": "SET:cstart",
+      "tape": "A",
+      "read": "^",
+      "write": "^",
+      "move": 1,
+      "target": "SET:afirst"
+    },
+    {
+      "state": "SET:czero",
+      "tape": "C",
+      "read": "^",
+      "write": "^",
+      "move": 1,
+      "target": "SET:z0"
+    },
+    {
+      "state": "SET:decback",
+      "tape": "C",
+      "read": "#",
+      "write": "#",
+      "move": -1,
+      "target": "SET:decback"
+    },
+    {
+      "state": "SET:decback",
+      "tape": "C",
+      "read": "$",
+      "write": "$",
+      "move": -1,
+      "target": "SET:decback"
+    },
+    {
+      "state": "SET:decback",
+      "tape": "C",
+      "read": "0",
+      "write": "0",
+      "move": -1,
+      "target": "SET:decback"
+    },
+    {
+      "state": "SET:decback",
+      "tape": "C",
+      "read": "1",
+      "write": "1",
+      "move": -1,
+      "target": "SET:decback"
+    },
+    {
+      "state": "SET:decback",
+      "tape": "C",
+      "read": "^",
+      "write": "^",
+      "move": 0,
+      "target": "SET:czero"
+    },
+    {
+      "state": "SET:decstart",
+      "tape": "C",
+      "read": "^",
+      "write": "^",
+      "move": 1,
+      "target": "SET:borrow"
+    },
+    {
+      "state": "SET:mstart",
+      "tape": "M",
+      "read": "^",
+      "write": "^",
+      "move": 1,
+      "target": "SET:czero"
+    },
+    {
+      "state": "SET:nonzero_back",
+      "tape": "C",
+      "read": "#",
+      "write": "#",
+      "move": -1,
+      "target": "SET:nonzero_back"
+    },
+    {
+      "state": "SET:nonzero_back",
+      "tape": "C",
+      "read": "$",
+      "write": "$",
+      "move": -1,
+      "target": "SET:nonzero_back"
+    },
+    {
+      "state": "SET:nonzero_back",
+      "tape": "C",
+      "read": "0",
+      "write": "0",
+      "move": -1,
+      "target": "SET:nonzero_back"
+    },
+    {
+      "state": "SET:nonzero_back",
+      "tape": "C",
+      "read": "1",
+      "write": "1",
+      "move": -1,
+      "target": "SET:nonzero_back"
+    },
+    {
+      "state": "SET:nonzero_back",
+      "tape": "C",
+      "read": "^",
+      "write": "^",
+      "move": 0,
+      "target": "SET:skip_first"
+    },
+    {
+      "state": "SET:put0",
+      "tape": "C",
+      "read": "_",
+      "write": "0",
+      "move": 1,
+      "target": "SET:acopy"
+    },
+    {
+      "state": "SET:put1",
+      "tape": "C",
+      "read": "_",
+      "write": "1",
+      "move": 1,
+      "target": "SET:acopy"
+    },
+    {
+      "state": "SET:rstart",
+      "tape": "C",
+      "read": "_",
+      "write": "^",
+      "move": 1,
+      "target": "SET:cstart"
+    },
+    {
+      "state": "SET:skip",
+      "tape": "M",
+      "read": "#",
+      "write": "#",
+      "move": 1,
+      "target": "SET:skiphash"
+    },
+    {
+      "state": "SET:skip",
+      "tape": "M",
+      "read": "0",
+      "write": "0",
+      "move": 1,
+      "target": "SET:skipput0"
+    },
+    {
+      "state": "SET:skip",
+      "tape": "M",
+      "read": "1",
+      "write": "1",
+      "move": 1,
+      "target": "SET:skipput1"
+    },
+    {
+      "state": "SET:skip_first",
+      "tape": "M",
+      "read": "0",
+      "write": "0",
+      "move": 1,
+      "target": "SET:skipput0"
+    },
+    {
+      "state": "SET:skip_first",
+      "tape": "M",
+      "read": "1",
+      "write": "1",
+      "move": 1,
+      "target": "SET:skipput1"
+    },
+    {
+      "state": "SET:skiphash",
+      "tape": "R",
+      "read": "_",
+      "write": "#",
+      "move": 1,
+      "target": "SET:decstart"
+    },
+    {
+      "state": "SET:skipput0",
+      "tape": "R",
+      "read": "_",
+      "write": "0",
+      "move": 1,
+      "target": "SET:skip"
+    },
+    {
+      "state": "SET:skipput1",
+      "tape": "R",
+      "read": "_",
+      "write": "1",
+      "move": 1,
+      "target": "SET:skip"
+    },
+    {
+      "state": "SET:tail",
+      "tape": "M",
+      "read": "#",
+      "write": "#",
+      "move": 1,
+      "target": "SET:tailhash"
+    },
+    {
+      "state": "SET:tail",
+      "tape": "M",
+      "read": "0",
+      "write": "0",
+      "move": 1,
+      "target": "SET:tailput0"
+    },
+    {
+      "state": "SET:tail",
+      "tape": "M",
+      "read": "1",
+      "write": "1",
+      "move": 1,
+      "target": "SET:tailput1"
+    },
+    {
+      "state": "SET:tail_first",
+      "tape": "M",
+      "read": "$",
+      "write": "$",
+      "move": 0,
+      "target": "finish"
+    },
+    {
+      "state": "SET:tail_first",
+      "tape": "M",
+      "read": "0",
+      "write": "0",
+      "move": 1,
+      "target": "SET:tailput0"
+    },
+    {
+      "state": "SET:tail_first",
+      "tape": "M",
+      "read": "1",
+      "write": "1",
+      "move": 1,
+      "target": "SET:tailput1"
+    },
+    {
+      "state": "SET:tailhash",
+      "tape": "R",
+      "read": "_",
+      "write": "#",
+      "move": 1,
+      "target": "SET:tail_first"
+    },
+    {
+      "state": "SET:tailput0",
+      "tape": "R",
+      "read": "_",
+      "write": "0",
+      "move": 1,
+      "target": "SET:tail"
+    },
+    {
+      "state": "SET:tailput1",
+      "tape": "R",
+      "read": "_",
+      "write": "1",
+      "move": 1,
+      "target": "SET:tail"
+    },
+    {
+      "state": "SET:target",
+      "tape": "M",
+      "read": "#",
+      "write": "#",
+      "move": 1,
+      "target": "SET:vstart"
+    },
+    {
+      "state": "SET:target",
+      "tape": "M",
+      "read": "0",
+      "write": "0",
+      "move": 1,
+      "target": "SET:target"
+    },
+    {
+      "state": "SET:target",
+      "tape": "M",
+      "read": "1",
+      "write": "1",
+      "move": 1,
+      "target": "SET:target"
+    },
+    {
+      "state": "SET:target_first",
+      "tape": "M",
+      "read": "0",
+      "write": "0",
+      "move": 1,
+      "target": "SET:target"
+    },
+    {
+      "state": "SET:target_first",
+      "tape": "M",
+      "read": "1",
+      "write": "1",
+      "move": 1,
+      "target": "SET:target"
+    },
+    {
+      "state": "SET:value",
+      "tape": "V",
+      "read": "$",
+      "write": "$",
+      "move": 0,
+      "target": "SET:vhash"
+    },
+    {
+      "state": "SET:value",
+      "tape": "V",
+      "read": "0",
+      "write": "0",
+      "move": 1,
+      "target": "SET:vput0"
+    },
+    {
+      "state": "SET:value",
+      "tape": "V",
+      "read": "1",
+      "write": "1",
+      "move": 1,
+      "target": "SET:vput1"
+    },
+    {
+      "state": "SET:vfirst",
+      "tape": "V",
+      "read": "0",
+      "write": "0",
+      "move": 1,
+      "target": "SET:vput0"
+    },
+    {
+      "state": "SET:vfirst",
+      "tape": "V",
+      "read": "1",
+      "write": "1",
+      "move": 1,
+      "target": "SET:vput1"
+    },
+    {
+      "state": "SET:vhash",
+      "tape": "R",
+      "read": "_",
+      "write": "#",
+      "move": 1,
+      "target": "SET:tail_first"
+    },
+    {
+      "state": "SET:vput0",
+      "tape": "R",
+      "read": "_",
+      "write": "0",
+      "move": 1,
+      "target": "SET:value"
+    },
+    {
+      "state": "SET:vput1",
+      "tape": "R",
+      "read": "_",
+      "write": "1",
+      "move": 1,
+      "target": "SET:value"
+    },
+    {
+      "state": "SET:vstart",
+      "tape": "V",
+      "read": "^",
+      "write": "^",
+      "move": 1,
+      "target": "SET:vfirst"
+    },
+    {
+      "state": "SET:z0",
+      "tape": "C",
+      "read": "$",
+      "write": "$",
+      "move": 0,
+      "target": "SET:zero_back"
+    },
+    {
+      "state": "SET:z0",
+      "tape": "C",
+      "read": "0",
+      "write": "0",
+      "move": 1,
+      "target": "SET:z0"
+    },
+    {
+      "state": "SET:z0",
+      "tape": "C",
+      "read": "1",
+      "write": "1",
+      "move": 1,
+      "target": "SET:z1"
+    },
+    {
+      "state": "SET:z1",
+      "tape": "C",
+      "read": "$",
+      "write": "$",
+      "move": 0,
+      "target": "SET:nonzero_back"
+    },
+    {
+      "state": "SET:z1",
+      "tape": "C",
+      "read": "0",
+      "write": "0",
+      "move": 1,
+      "target": "SET:z1"
+    },
+    {
+      "state": "SET:z1",
+      "tape": "C",
+      "read": "1",
+      "write": "1",
+      "move": 1,
+      "target": "SET:z1"
+    },
+    {
+      "state": "SET:zero_back",
+      "tape": "C",
+      "read": "#",
+      "write": "#",
+      "move": -1,
+      "target": "SET:zero_back"
+    },
+    {
+      "state": "SET:zero_back",
+      "tape": "C",
+      "read": "$",
+      "write": "$",
+      "move": -1,
+      "target": "SET:zero_back"
+    },
+    {
+      "state": "SET:zero_back",
+      "tape": "C",
+      "read": "0",
+      "write": "0",
+      "move": -1,
+      "target": "SET:zero_back"
+    },
+    {
+      "state": "SET:zero_back",
+      "tape": "C",
+      "read": "1",
+      "write": "1",
+      "move": -1,
+      "target": "SET:zero_back"
+    },
+    {
+      "state": "SET:zero_back",
+      "tape": "C",
+      "read": "^",
+      "write": "^",
+      "move": 0,
+      "target": "SET:target_first"
+    },
+    {
+      "state": "finish",
+      "tape": "R",
+      "read": "_",
+      "write": "$",
+      "move": 0,
+      "target": "reset:M"
+    },
+    {
+      "state": "reset:A",
+      "tape": "A",
+      "read": "#",
+      "write": "#",
+      "move": -1,
+      "target": "reset:A"
+    },
+    {
+      "state": "reset:A",
+      "tape": "A",
+      "read": "$",
+      "write": "$",
+      "move": -1,
+      "target": "reset:A"
+    },
+    {
+      "state": "reset:A",
+      "tape": "A",
+      "read": "0",
+      "write": "0",
+      "move": -1,
+      "target": "reset:A"
+    },
+    {
+      "state": "reset:A",
+      "tape": "A",
+      "read": "1",
+      "write": "1",
+      "move": -1,
+      "target": "reset:A"
+    },
+    {
+      "state": "reset:A",
+      "tape": "A",
+      "read": "^",
+      "write": "^",
+      "move": 0,
+      "target": "reset:V"
+    },
+    {
+      "state": "reset:C",
+      "tape": "C",
+      "read": "#",
+      "write": "#",
+      "move": -1,
+      "target": "reset:C"
+    },
+    {
+      "state": "reset:C",
+      "tape": "C",
+      "read": "$",
+      "write": "$",
+      "move": -1,
+      "target": "reset:C"
+    },
+    {
+      "state": "reset:C",
+      "tape": "C",
+      "read": "0",
+      "write": "0",
+      "move": -1,
+      "target": "reset:C"
+    },
+    {
+      "state": "reset:C",
+      "tape": "C",
+      "read": "1",
+      "write": "1",
+      "move": -1,
+      "target": "reset:C"
+    },
+    {
+      "state": "reset:C",
+      "tape": "C",
+      "read": "^",
+      "write": "^",
+      "move": 0,
+      "target": "reset:R"
+    },
+    {
+      "state": "reset:M",
+      "tape": "M",
+      "read": "#",
+      "write": "#",
+      "move": -1,
+      "target": "reset:M"
+    },
+    {
+      "state": "reset:M",
+      "tape": "M",
+      "read": "$",
+      "write": "$",
+      "move": -1,
+      "target": "reset:M"
+    },
+    {
+      "state": "reset:M",
+      "tape": "M",
+      "read": "0",
+      "write": "0",
+      "move": -1,
+      "target": "reset:M"
+    },
+    {
+      "state": "reset:M",
+      "tape": "M",
+      "read": "1",
+      "write": "1",
+      "move": -1,
+      "target": "reset:M"
+    },
+    {
+      "state": "reset:M",
+      "tape": "M",
+      "read": "^",
+      "write": "^",
+      "move": 0,
+      "target": "reset:A"
+    },
+    {
+      "state": "reset:R",
+      "tape": "R",
+      "read": "#",
+      "write": "#",
+      "move": -1,
+      "target": "reset:R"
+    },
+    {
+      "state": "reset:R",
+      "tape": "R",
+      "read": "$",
+      "write": "$",
+      "move": -1,
+      "target": "reset:R"
+    },
+    {
+      "state": "reset:R",
+      "tape": "R",
+      "read": "0",
+      "write": "0",
+      "move": -1,
+      "target": "reset:R"
+    },
+    {
+      "state": "reset:R",
+      "tape": "R",
+      "read": "1",
+      "write": "1",
+      "move": -1,
+      "target": "reset:R"
+    },
+    {
+      "state": "reset:R",
+      "tape": "R",
+      "read": "^",
+      "write": "^",
+      "move": 0,
+      "target": "ACCEPT"
+    },
+    {
+      "state": "reset:V",
+      "tape": "V",
+      "read": "#",
+      "write": "#",
+      "move": -1,
+      "target": "reset:V"
+    },
+    {
+      "state": "reset:V",
+      "tape": "V",
+      "read": "$",
+      "write": "$",
+      "move": -1,
+      "target": "reset:V"
+    },
+    {
+      "state": "reset:V",
+      "tape": "V",
+      "read": "0",
+      "write": "0",
+      "move": -1,
+      "target": "reset:V"
+    },
+    {
+      "state": "reset:V",
+      "tape": "V",
+      "read": "1",
+      "write": "1",
+      "move": -1,
+      "target": "reset:V"
+    },
+    {
+      "state": "reset:V",
+      "tape": "V",
+      "read": "^",
+      "write": "^",
+      "move": 0,
+      "target": "reset:C"
+    }
+  ],
+  "states": 97,
+  "rules": 207,
+  "default": "missing transition rejects; execution history permits exact rollback"
+}

@@ -1,0 +1,52 @@
+{
+  "status": "pass",
+  "source_tape_counts": [
+    1,
+    2,
+    3
+  ],
+  "complete_local_control_symbol_pairs": 1190,
+  "initialized_source_macrosteps_compared": 918,
+  "physical_microsteps_executed": 17136,
+  "missing_selected_head_rejections": 3,
+  "explicit_noninjective_microstep_witness": true,
+  "fixture_manifests": [
+    {
+      "source_tapes": 1,
+      "source_alphabet": 3,
+      "source_states_including_halts": 4,
+      "source_rules": 9,
+      "physical_alphabet_size": 8,
+      "physical_control_states": 11,
+      "full_table_entries": 88,
+      "physical_cells_for_L_virtual_positions": "1*L+2",
+      "microstep_bound_per_source_step": "2*S+k+4, S=physical cells including endpoints",
+      "scope": "One physical head, deterministic table; not reversible and not yet a quantum gate"
+    },
+    {
+      "source_tapes": 2,
+      "source_alphabet": 3,
+      "source_states_including_halts": 7,
+      "source_rules": 18,
+      "physical_alphabet_size": 14,
+      "physical_control_states": 23,
+      "full_table_entries": 322,
+      "physical_cells_for_L_virtual_positions": "2*L+2",
+      "microstep_bound_per_source_step": "2*S+k+4, S=physical cells including endpoints",
+      "scope": "One physical head, deterministic table; not reversible and not yet a quantum gate"
+    },
+    {
+      "source_tapes": 3,
+      "source_alphabet": 3,
+      "source_states_including_halts": 10,
+      "source_rules": 27,
+      "physical_alphabet_size": 20,
+      "physical_control_states": 39,
+      "full_table_entries": 780,
+      "physical_cells_for_L_virtual_positions": "3*L+2",
+      "microstep_bound_per_source_step": "2*S+k+4, S=physical cells including endpoints",
+      "scope": "One physical head, deterministic table; not reversible and not yet a quantum gate"
+    }
+  ],
+  "scope": "Exact deterministic spatial simulation on initialized tagged tapes; no reversibility or general malformed-format theorem"
+}

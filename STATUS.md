@@ -17,6 +17,19 @@ The working standard is theoretical physics (standard RG, controlled perturbatio
 
 ## Latest continuation: why the sparse first-order route leads
 
+**Reversible single-head compilation, 2026-10-28:**
+[digit_compiler](contrib/digit_compiler/README.md) supplies all signed
+arithmetic operations (4,749 active controls, 28,494 digit rules) and serial
+GET/SET/APPEND/LEN (97 controls, 207 rules). A proved spatial compiler runs
+these finite tables with one reversible physical head and a finite history
+alphabet. Actual lowered arithmetic takes 648,266 and 3,055,626 microsteps
+in two checked runs, with exact complete cleanup. Explicit full-space
+onsite/two-site permutation gates pass 63 autonomous compute/reset cycles.
+Real-generator traces also validate 8,165 memory events and arithmetic for
+p=2,3,5. The full interpreter's stack, heap aliases, allocation, instruction
+dispatch and initialization still need a joined table. These component
+results do not give a final high-channel dimension or a new CFT conclusion.
+
 **Digit compilation and explicit stability budget, 2026-10-28:**
 [digit_compilation](contrib/digit_compilation/README.md) removes the finite
 parameter-reader-table gap: 96 collision entries and eight controls,

@@ -1,0 +1,125 @@
+{
+  "status": "PASS",
+  "frozen_program": {
+    "instruction_count": 3115,
+    "function_count": 34,
+    "opcode_families": [
+      "ADD",
+      "AND",
+      "APPEND",
+      "CALL",
+      "DIV",
+      "EMIT",
+      "EQ",
+      "GET",
+      "GETREG",
+      "GT",
+      "JMP",
+      "JZ",
+      "LEN",
+      "LT",
+      "MOD",
+      "MUL",
+      "NE",
+      "NEW",
+      "POP",
+      "PUSH",
+      "RET",
+      "SET",
+      "SETREG",
+      "SHL",
+      "SHR",
+      "SUB",
+      "XOR"
+    ],
+    "maximum_registers_per_frame": 38,
+    "sha256": "c9e5dd5329c5200018454406852cdf298428dcba943c02cc13f0e3f002c6ba3f",
+    "scope": "Fixed word-RAM program; arithmetic and addressing are not yet local tape transitions"
+  },
+  "runs": [
+    {
+      "entry": "plane",
+      "arguments": [
+        2
+      ],
+      "word_steps": 5176,
+      "arithmetic_events": 903,
+      "species": 14,
+      "fermion_channels": 21
+    },
+    {
+      "entry": "plane",
+      "arguments": [
+        3
+      ],
+      "word_steps": 16916,
+      "arithmetic_events": 2982,
+      "species": 26,
+      "fermion_channels": 52
+    },
+    {
+      "entry": "plane",
+      "arguments": [
+        5
+      ],
+      "word_steps": 92981,
+      "arithmetic_events": 16551,
+      "species": 62,
+      "fermion_channels": 186
+    },
+    {
+      "entry": "width",
+      "arguments": [
+        1
+      ],
+      "word_steps": 10,
+      "arithmetic_events": 2
+    },
+    {
+      "entry": "width",
+      "arguments": [
+        7
+      ],
+      "word_steps": 32,
+      "arithmetic_events": 8
+    },
+    {
+      "entry": "width",
+      "arguments": [
+        65
+      ],
+      "word_steps": 76,
+      "arithmetic_events": 20
+    },
+    {
+      "entry": "tiny",
+      "arguments": [
+        1
+      ],
+      "word_steps": 43426,
+      "arithmetic_events": 4768,
+      "abstract_gates": 906
+    }
+  ],
+  "arithmetic_events": 25234,
+  "unique_operand_replays": 1712,
+  "digit_steps_for_unique_replays": 142262,
+  "operations": {
+    "ADD": 10432,
+    "AND": 90,
+    "DIV": 4,
+    "EQ": 1343,
+    "GT": 473,
+    "LT": 7862,
+    "MOD": 1179,
+    "MUL": 3570,
+    "SHL": 63,
+    "SHR": 90,
+    "SUB": 124,
+    "XOR": 4
+  },
+  "table_states": 4749,
+  "table_rules": 28494,
+  "runtime_seconds": 0.122,
+  "scope": "Host-selected actual generator arithmetic; VM control and memory remain host operations"
+}

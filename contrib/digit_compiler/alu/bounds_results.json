@@ -1,0 +1,246 @@
+{
+  "status": "pass",
+  "scope": "Regression evidence for the documented loop-accounted bounds",
+  "cases": 750,
+  "microsteps": 15581175,
+  "by_operation": {
+    "ADD": 50,
+    "SUB": 50,
+    "MUL": 50,
+    "DIV": 50,
+    "MOD": 50,
+    "SHL": 50,
+    "SHR": 50,
+    "AND": 50,
+    "XOR": 50,
+    "EQ": 50,
+    "NE": 50,
+    "LT": 50,
+    "LE": 50,
+    "GT": 50,
+    "GE": 50
+  },
+  "largest_actual_to_bound_ratio": 0.16145833333333334,
+  "tightest_test_case": {
+    "op": "SHR",
+    "magnitude_width": 1,
+    "shift_count": 0,
+    "actual_steps": 62,
+    "bound": 384
+  },
+  "conditional_generator_parameter_grid": [
+    {
+      "A": 1,
+      "word_steps_T": 1,
+      "operand_bit_bound_B": 67,
+      "digit_steps_per_arithmetic_opcode": 1209856,
+      "ALU_digit_steps": 1209856
+    },
+    {
+      "A": 1,
+      "word_steps_T": 3,
+      "operand_bit_bound_B": 68,
+      "digit_steps_per_arithmetic_opcode": 1245312,
+      "ALU_digit_steps": 3735936
+    },
+    {
+      "A": 1,
+      "word_steps_T": 10,
+      "operand_bit_bound_B": 70,
+      "digit_steps_per_arithmetic_opcode": 1317760,
+      "ALU_digit_steps": 13177600
+    },
+    {
+      "A": 1,
+      "word_steps_T": 10000,
+      "operand_bit_bound_B": 80,
+      "digit_steps_per_arithmetic_opcode": 1710720,
+      "ALU_digit_steps": 17107200000
+    },
+    {
+      "A": 1,
+      "word_steps_T": 1000000000000,
+      "operand_bit_bound_B": 106,
+      "digit_steps_per_arithmetic_opcode": 2972032,
+      "ALU_digit_steps": 2972032000000000000
+    },
+    {
+      "A": 2,
+      "word_steps_T": 1,
+      "operand_bit_bound_B": 69,
+      "digit_steps_per_arithmetic_opcode": 1281280,
+      "ALU_digit_steps": 1281280
+    },
+    {
+      "A": 2,
+      "word_steps_T": 3,
+      "operand_bit_bound_B": 70,
+      "digit_steps_per_arithmetic_opcode": 1317760,
+      "ALU_digit_steps": 3953280
+    },
+    {
+      "A": 2,
+      "word_steps_T": 10,
+      "operand_bit_bound_B": 72,
+      "digit_steps_per_arithmetic_opcode": 1392256,
+      "ALU_digit_steps": 13922560
+    },
+    {
+      "A": 2,
+      "word_steps_T": 10000,
+      "operand_bit_bound_B": 82,
+      "digit_steps_per_arithmetic_opcode": 1795456,
+      "ALU_digit_steps": 17954560000
+    },
+    {
+      "A": 2,
+      "word_steps_T": 1000000000000,
+      "operand_bit_bound_B": 108,
+      "digit_steps_per_arithmetic_opcode": 3083392,
+      "ALU_digit_steps": 3083392000000000000
+    },
+    {
+      "A": 7,
+      "word_steps_T": 1,
+      "operand_bit_bound_B": 79,
+      "digit_steps_per_arithmetic_opcode": 1669120,
+      "ALU_digit_steps": 1669120
+    },
+    {
+      "A": 7,
+      "word_steps_T": 3,
+      "operand_bit_bound_B": 80,
+      "digit_steps_per_arithmetic_opcode": 1710720,
+      "ALU_digit_steps": 5132160
+    },
+    {
+      "A": 7,
+      "word_steps_T": 10,
+      "operand_bit_bound_B": 82,
+      "digit_steps_per_arithmetic_opcode": 1795456,
+      "ALU_digit_steps": 17954560
+    },
+    {
+      "A": 7,
+      "word_steps_T": 10000,
+      "operand_bit_bound_B": 92,
+      "digit_steps_per_arithmetic_opcode": 2249856,
+      "ALU_digit_steps": 22498560000
+    },
+    {
+      "A": 7,
+      "word_steps_T": 1000000000000,
+      "operand_bit_bound_B": 118,
+      "digit_steps_per_arithmetic_opcode": 3670912,
+      "ALU_digit_steps": 3670912000000000000
+    },
+    {
+      "A": 100,
+      "word_steps_T": 1,
+      "operand_bit_bound_B": 265,
+      "digit_steps_per_arithmetic_opcode": 18215680,
+      "ALU_digit_steps": 18215680
+    },
+    {
+      "A": 100,
+      "word_steps_T": 3,
+      "operand_bit_bound_B": 266,
+      "digit_steps_per_arithmetic_opcode": 18352512,
+      "ALU_digit_steps": 55057536
+    },
+    {
+      "A": 100,
+      "word_steps_T": 10,
+      "operand_bit_bound_B": 268,
+      "digit_steps_per_arithmetic_opcode": 18627712,
+      "ALU_digit_steps": 186277120
+    },
+    {
+      "A": 100,
+      "word_steps_T": 10000,
+      "operand_bit_bound_B": 278,
+      "digit_steps_per_arithmetic_opcode": 20034432,
+      "ALU_digit_steps": 200344320000
+    },
+    {
+      "A": 100,
+      "word_steps_T": 1000000000000,
+      "operand_bit_bound_B": 304,
+      "digit_steps_per_arithmetic_opcode": 23931520,
+      "ALU_digit_steps": 23931520000000000000
+    },
+    {
+      "A": 1000000,
+      "word_steps_T": 1,
+      "operand_bit_bound_B": 2000065,
+      "digit_steps_per_arithmetic_opcode": 1024068353140480,
+      "ALU_digit_steps": 1024068353140480
+    },
+    {
+      "A": 1000000,
+      "word_steps_T": 3,
+      "operand_bit_bound_B": 2000066,
+      "digit_steps_per_arithmetic_opcode": 1024069377174912,
+      "ALU_digit_steps": 3072208131524736
+    },
+    {
+      "A": 1000000,
+      "word_steps_T": 10,
+      "operand_bit_bound_B": 2000068,
+      "digit_steps_per_arithmetic_opcode": 1024071425245312,
+      "ALU_digit_steps": 10240714252453120
+    },
+    {
+      "A": 1000000,
+      "word_steps_T": 10000,
+      "operand_bit_bound_B": 2000078,
+      "digit_steps_per_arithmetic_opcode": 1024081665628032,
+      "ALU_digit_steps": 10240816656280320000
+    },
+    {
+      "A": 1000000,
+      "word_steps_T": 1000000000000,
+      "operand_bit_bound_B": 2000104,
+      "digit_steps_per_arithmetic_opcode": 1024108290862720,
+      "ALU_digit_steps": 1024108290862720000000000000
+    }
+  ],
+  "conditional_polynomial_bound_checks": [
+    {
+      "A": 1,
+      "operand_bit_bound_B": 123,
+      "coarse_ALU_digit_step_bound": 1208925819614629174706176
+    },
+    {
+      "A": 2,
+      "operand_bit_bound_B": 131,
+      "coarse_ALU_digit_step_bound": 309485009821345068724781056
+    },
+    {
+      "A": 3,
+      "operand_bit_bound_B": 136,
+      "coarse_ALU_digit_step_bound": 7931762302491582015247220736
+    },
+    {
+      "A": 7,
+      "operand_bit_bound_B": 152,
+      "coarse_ALU_digit_step_bound": 6969216773840233880975338110976
+    },
+    {
+      "A": 100,
+      "operand_bit_bound_B": 361,
+      "coarse_ALU_digit_step_bound": 12089258196146291747061760000000000000000
+    },
+    {
+      "A": 1000000,
+      "operand_bit_bound_B": 2000240,
+      "coarse_ALU_digit_step_bound": 1208925819614629174706176000000000000000000000000000000000000000000000000
+    },
+    {
+      "A": 1000000000000000000000000000000,
+      "operand_bit_bound_B": 2000000000000000000000000000719,
+      "coarse_ALU_digit_step_bound": 1208925819614629174706176000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+    }
+  ],
+  "elapsed_seconds": 2.258
+}

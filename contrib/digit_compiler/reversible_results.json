@@ -1,0 +1,389 @@
+{
+  "status": "PASS",
+  "autonomous_cycles": 63,
+  "complete_fixed_sweeps": 14202,
+  "all_forward_answers_and_exact_initial_returns": true,
+  "scheduling": "Repeat exactly the same onsite collision layer and left-to-right bond movement sweep",
+  "scope": "Classical erasure fixture, initialized tape. No output retained after reset or full Hamiltonian claim",
+  "cases": [
+    {
+      "word": "",
+      "physical_sites": 7,
+      "fixed_sweeps_per_cycle": 38,
+      "peak_history_records": 1
+    },
+    {
+      "word": "0",
+      "physical_sites": 9,
+      "fixed_sweeps_per_cycle": 70,
+      "peak_history_records": 2
+    },
+    {
+      "word": "1",
+      "physical_sites": 9,
+      "fixed_sweeps_per_cycle": 70,
+      "peak_history_records": 2
+    },
+    {
+      "word": "00",
+      "physical_sites": 11,
+      "fixed_sweeps_per_cycle": 110,
+      "peak_history_records": 3
+    },
+    {
+      "word": "01",
+      "physical_sites": 11,
+      "fixed_sweeps_per_cycle": 110,
+      "peak_history_records": 3
+    },
+    {
+      "word": "10",
+      "physical_sites": 11,
+      "fixed_sweeps_per_cycle": 110,
+      "peak_history_records": 3
+    },
+    {
+      "word": "11",
+      "physical_sites": 11,
+      "fixed_sweeps_per_cycle": 110,
+      "peak_history_records": 3
+    },
+    {
+      "word": "000",
+      "physical_sites": 13,
+      "fixed_sweeps_per_cycle": 158,
+      "peak_history_records": 4
+    },
+    {
+      "word": "001",
+      "physical_sites": 13,
+      "fixed_sweeps_per_cycle": 158,
+      "peak_history_records": 4
+    },
+    {
+      "word": "010",
+      "physical_sites": 13,
+      "fixed_sweeps_per_cycle": 158,
+      "peak_history_records": 4
+    },
+    {
+      "word": "011",
+      "physical_sites": 13,
+      "fixed_sweeps_per_cycle": 158,
+      "peak_history_records": 4
+    },
+    {
+      "word": "100",
+      "physical_sites": 13,
+      "fixed_sweeps_per_cycle": 158,
+      "peak_history_records": 4
+    },
+    {
+      "word": "101",
+      "physical_sites": 13,
+      "fixed_sweeps_per_cycle": 158,
+      "peak_history_records": 4
+    },
+    {
+      "word": "110",
+      "physical_sites": 13,
+      "fixed_sweeps_per_cycle": 158,
+      "peak_history_records": 4
+    },
+    {
+      "word": "111",
+      "physical_sites": 13,
+      "fixed_sweeps_per_cycle": 158,
+      "peak_history_records": 4
+    },
+    {
+      "word": "0000",
+      "physical_sites": 15,
+      "fixed_sweeps_per_cycle": 214,
+      "peak_history_records": 5
+    },
+    {
+      "word": "0001",
+      "physical_sites": 15,
+      "fixed_sweeps_per_cycle": 214,
+      "peak_history_records": 5
+    },
+    {
+      "word": "0010",
+      "physical_sites": 15,
+      "fixed_sweeps_per_cycle": 214,
+      "peak_history_records": 5
+    },
+    {
+      "word": "0011",
+      "physical_sites": 15,
+      "fixed_sweeps_per_cycle": 214,
+      "peak_history_records": 5
+    },
+    {
+      "word": "0100",
+      "physical_sites": 15,
+      "fixed_sweeps_per_cycle": 214,
+      "peak_history_records": 5
+    },
+    {
+      "word": "0101",
+      "physical_sites": 15,
+      "fixed_sweeps_per_cycle": 214,
+      "peak_history_records": 5
+    },
+    {
+      "word": "0110",
+      "physical_sites": 15,
+      "fixed_sweeps_per_cycle": 214,
+      "peak_history_records": 5
+    },
+    {
+      "word": "0111",
+      "physical_sites": 15,
+      "fixed_sweeps_per_cycle": 214,
+      "peak_history_records": 5
+    },
+    {
+      "word": "1000",
+      "physical_sites": 15,
+      "fixed_sweeps_per_cycle": 214,
+      "peak_history_records": 5
+    },
+    {
+      "word": "1001",
+      "physical_sites": 15,
+      "fixed_sweeps_per_cycle": 214,
+      "peak_history_records": 5
+    },
+    {
+      "word": "1010",
+      "physical_sites": 15,
+      "fixed_sweeps_per_cycle": 214,
+      "peak_history_records": 5
+    },
+    {
+      "word": "1011",
+      "physical_sites": 15,
+      "fixed_sweeps_per_cycle": 214,
+      "peak_history_records": 5
+    },
+    {
+      "word": "1100",
+      "physical_sites": 15,
+      "fixed_sweeps_per_cycle": 214,
+      "peak_history_records": 5
+    },
+    {
+      "word": "1101",
+      "physical_sites": 15,
+      "fixed_sweeps_per_cycle": 214,
+      "peak_history_records": 5
+    },
+    {
+      "word": "1110",
+      "physical_sites": 15,
+      "fixed_sweeps_per_cycle": 214,
+      "peak_history_records": 5
+    },
+    {
+      "word": "1111",
+      "physical_sites": 15,
+      "fixed_sweeps_per_cycle": 214,
+      "peak_history_records": 5
+    },
+    {
+      "word": "00000",
+      "physical_sites": 17,
+      "fixed_sweeps_per_cycle": 278,
+      "peak_history_records": 6
+    },
+    {
+      "word": "00001",
+      "physical_sites": 17,
+      "fixed_sweeps_per_cycle": 278,
+      "peak_history_records": 6
+    },
+    {
+      "word": "00010",
+      "physical_sites": 17,
+      "fixed_sweeps_per_cycle": 278,
+      "peak_history_records": 6
+    },
+    {
+      "word": "00011",
+      "physical_sites": 17,
+      "fixed_sweeps_per_cycle": 278,
+      "peak_history_records": 6
+    },
+    {
+      "word": "00100",
+      "physical_sites": 17,
+      "fixed_sweeps_per_cycle": 278,
+      "peak_history_records": 6
+    },
+    {
+      "word": "00101",
+      "physical_sites": 17,
+      "fixed_sweeps_per_cycle": 278,
+      "peak_history_records": 6
+    },
+    {
+      "word": "00110",
+      "physical_sites": 17,
+      "fixed_sweeps_per_cycle": 278,
+      "peak_history_records": 6
+    },
+    {
+      "word": "00111",
+      "physical_sites": 17,
+      "fixed_sweeps_per_cycle": 278,
+      "peak_history_records": 6
+    },
+    {
+      "word": "01000",
+      "physical_sites": 17,
+      "fixed_sweeps_per_cycle": 278,
+      "peak_history_records": 6
+    },
+    {
+      "word": "01001",
+      "physical_sites": 17,
+      "fixed_sweeps_per_cycle": 278,
+      "peak_history_records": 6
+    },
+    {
+      "word": "01010",
+      "physical_sites": 17,
+      "fixed_sweeps_per_cycle": 278,
+      "peak_history_records": 6
+    },
+    {
+      "word": "01011",
+      "physical_sites": 17,
+      "fixed_sweeps_per_cycle": 278,
+      "peak_history_records": 6
+    },
+    {
+      "word": "01100",
+      "physical_sites": 17,
+      "fixed_sweeps_per_cycle": 278,
+      "peak_history_records": 6
+    },
+    {
+      "word": "01101",
+      "physical_sites": 17,
+      "fixed_sweeps_per_cycle": 278,
+      "peak_history_records": 6
+    },
+    {
+      "word": "01110",
+      "physical_sites": 17,
+      "fixed_sweeps_per_cycle": 278,
+      "peak_history_records": 6
+    },
+    {
+      "word": "01111",
+      "physical_sites": 17,
+      "fixed_sweeps_per_cycle": 278,
+      "peak_history_records": 6
+    },
+    {
+      "word": "10000",
+      "physical_sites": 17,
+      "fixed_sweeps_per_cycle": 278,
+      "peak_history_records": 6
+    },
+    {
+      "word": "10001",
+      "physical_sites": 17,
+      "fixed_sweeps_per_cycle": 278,
+      "peak_history_records": 6
+    },
+    {
+      "word": "10010",
+      "physical_sites": 17,
+      "fixed_sweeps_per_cycle": 278,
+      "peak_history_records": 6
+    },
+    {
+      "word": "10011",
+      "physical_sites": 17,
+      "fixed_sweeps_per_cycle": 278,
+      "peak_history_records": 6
+    },
+    {
+      "word": "10100",
+      "physical_sites": 17,
+      "fixed_sweeps_per_cycle": 278,
+      "peak_history_records": 6
+    },
+    {
+      "word": "10101",
+      "physical_sites": 17,
+      "fixed_sweeps_per_cycle": 278,
+      "peak_history_records": 6
+    },
+    {
+      "word": "10110",
+      "physical_sites": 17,
+      "fixed_sweeps_per_cycle": 278,
+      "peak_history_records": 6
+    },
+    {
+      "word": "10111",
+      "physical_sites": 17,
+      "fixed_sweeps_per_cycle": 278,
+      "peak_history_records": 6
+    },
+    {
+      "word": "11000",
+      "physical_sites": 17,
+      "fixed_sweeps_per_cycle": 278,
+      "peak_history_records": 6
+    },
+    {
+      "word": "11001",
+      "physical_sites": 17,
+      "fixed_sweeps_per_cycle": 278,
+      "peak_history_records": 6
+    },
+    {
+      "word": "11010",
+      "physical_sites": 17,
+      "fixed_sweeps_per_cycle": 278,
+      "peak_history_records": 6
+    },
+    {
+      "word": "11011",
+      "physical_sites": 17,
+      "fixed_sweeps_per_cycle": 278,
+      "peak_history_records": 6
+    },
+    {
+      "word": "11100",
+      "physical_sites": 17,
+      "fixed_sweeps_per_cycle": 278,
+      "peak_history_records": 6
+    },
+    {
+      "word": "11101",
+      "physical_sites": 17,
+      "fixed_sweeps_per_cycle": 278,
+      "peak_history_records": 6
+    },
+    {
+      "word": "11110",
+      "physical_sites": 17,
+      "fixed_sweeps_per_cycle": 278,
+      "peak_history_records": 6
+    },
+    {
+      "word": "11111",
+      "physical_sites": 17,
+      "fixed_sweeps_per_cycle": 278,
+      "peak_history_records": 6
+    }
+  ],
+  "runtime_seconds": 0.089
+}

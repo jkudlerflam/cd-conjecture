@@ -1,0 +1,93 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "check": "alu/checks.py",
+      "status": "PASS",
+      "seconds": 4.605,
+      "stdout_sha256": "5ad64c2e5277f0b5499f16d829e264a6c63e4d8e6bf6e44a5e38ee8b40545e78"
+    },
+    {
+      "check": "alu/bounds_checks.py",
+      "status": "PASS",
+      "seconds": 2.298,
+      "stdout_sha256": "bcece8aebf02d490eeeb9349b232800795483f892acbcfc143b6ccccb0593ae3"
+    },
+    {
+      "check": "memory/checks.py",
+      "status": "PASS",
+      "seconds": 0.715,
+      "stdout_sha256": "58b5e5eeb8ce2deac11f1d71a21a49ce2fecb9bc04ea354088e50d16fe96179f"
+    },
+    {
+      "check": "memory/vm_checks.py",
+      "status": "PASS",
+      "seconds": 19.187,
+      "stdout_sha256": "3b03f29761a085b46773e4842180923e80d270a7cd1893371075d779a6822104"
+    },
+    {
+      "check": "audit/checks.py",
+      "status": "PASS",
+      "seconds": 0.288,
+      "stdout_sha256": "24d27690db68a09dac0c4761e806194484b5668ef52d8af11a60ecf729166a4a"
+    },
+    {
+      "check": "audit/single_head_checks.py",
+      "status": "PASS",
+      "seconds": 0.038,
+      "stdout_sha256": "b05fb293a505e9f5e25aa90e8a218a67dba41b5f5127c3408071c38a178e8d31"
+    },
+    {
+      "check": "audit/reversible_head_checks.py",
+      "status": "PASS",
+      "seconds": 2.42,
+      "stdout_sha256": "b30dcb9179bf4b76db9a0e8c7a82f004671221e05cf11bca824b260452c2cbff"
+    },
+    {
+      "check": "audit/gate_checks.py",
+      "status": "PASS",
+      "seconds": 0.101,
+      "stdout_sha256": "47262232b95bdb28713a05e7f400d785e48a0710780496880dcf0323ce42ce42"
+    },
+    {
+      "check": "checks.py",
+      "status": "PASS",
+      "seconds": 0.807,
+      "stdout_sha256": "1d7a60e9c2c0b4851cfca8efa75f51753a51c9b72c652510a9c94118c7a29ffc"
+    },
+    {
+      "check": "generator_checks.py",
+      "status": "PASS",
+      "seconds": 0.162,
+      "stdout_sha256": "ae1ee32973871c69283828a5b375c73640236a56ebb4342c6e3c38db40172789"
+    },
+    {
+      "check": "reversible_checks.py",
+      "status": "PASS",
+      "seconds": 0.114,
+      "stdout_sha256": "a747e746fd40b7ad089704c01e89b6400aecd19832df8dfc97168cdad97f616f"
+    }
+  ],
+  "source_sha256": {
+    "alu/bounds_checks.py": "4e0c3fa586c0dffe04806663db7a256f975e2031e6dee1d7978aeeae493073ff",
+    "alu/checks.py": "8ce57094216e551ada914aed35dbb7eeb2ea0625475442938591d70cdeb29267",
+    "alu/machine.py": "3d128fd2362528db5653955920364781793faa89e84c12f297bd8ecd155e6ffb",
+    "audit/checks.py": "1d7d4b25cd715d47d7b63b7eeaacd431f73cf694a87f29b369a3ec6617c7a188",
+    "audit/gate_checks.py": "e8e8b9118be92da90c8360a625aa13cb44a5e75c8d8a50f00e692bf289bb45e2",
+    "audit/logged_lift.py": "1e95a120faf6dcc7d5814084872a5657e3abede2c68b56c8b7f0afcc4cbcd14a",
+    "audit/reversible_head.py": "762c354405d0b2f7366d80cc685f7a23d9cd906dfd0630fe45a76431f8b545dc",
+    "audit/reversible_head_checks.py": "5a52ed9f4ed655008e9b1b7a855dc3a255fc341d8206abf32f2fc7d44b2a03d8",
+    "audit/single_head_checks.py": "b35e6b01b9ad1358dfaef6dd202fb75ec2870c3cc7cac087fe2854d5c02c66ff",
+    "checks.py": "e1bc1a65442670973cbb574d4b65c1077444a0d756731d5afd5ec01290b9064a",
+    "generator_checks.py": "505180b42af817a26658a5c70c7f9677bdbe4b6f1a14cd398f26746f4f2a64ae",
+    "memory/checks.py": "94d97f062d0a5c3d00ab7ba1fb30c208ee1e5a0cdcb1c4fd428a5f820b76220f",
+    "memory/machine.py": "690dc1b0f6111ed4ea42afe3214b9ab0b132e4e3b7c0749091686f8cfe3c4b22",
+    "memory/vm_checks.py": "27ee9ac77a4b5c46e8c371f9accf9cbdc8aaf52808a4049b6fcb2053be85cedc",
+    "reversible_checks.py": "033631452930560d59d2778cbd693be5c3aac261fb60d4d77da9b56d85e58dcd",
+    "reversible_gates.py": "1407424941e44182f150bd1921c4fba01ec8f43d187df8f2f52d352f4164f2aa",
+    "single_head.py": "41d0258219240748b37b9d09b2d0443426cb2f57ebf6f7c55c5d5e0ad36b2645",
+    "tm.py": "da0a2048827984cc27e4151132c2666f14e281e627cff857871dadca6c519c65",
+    "verify.py": "c466d6de1da21241564aebd871c822c7485380ba0f94d151e4b4833986596f98"
+  },
+  "runtime_seconds": 30.736
+}

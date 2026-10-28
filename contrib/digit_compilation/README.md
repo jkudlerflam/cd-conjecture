@@ -60,9 +60,11 @@ the existing [infrared audit](../research_continuation/IR_AUDIT.md).
 
 ## What the next complete implementation must supply
 
-The remaining finite tasks are multiplication/division/modulo and variable
-shifts; addressed memory and stack/register transport; a sweep-compatible
-arithmetic lift; and reversible handoffs joining parameter input, the real
+The complementary [reversible digit compiler](../digit_compiler/README.md)
+now supplies full signed multiplication/division/modulo and variable shifts,
+selected-array memory, and a reversible single-head gate construction.
+The remaining finite tasks are whole-heap and stack/register transport,
+instruction dispatch, and reversible handoffs joining parameter input, the real
 generator, format verification, charged execution and endpoint readout.
 Their combined alphabet must then be counted and a definite violating
 prime chosen. Standalone component factors cannot be multiplied or added

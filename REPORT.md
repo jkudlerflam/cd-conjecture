@@ -673,3 +673,64 @@ upgrade it to a theorem. All four new check suites and the larger circuit
 integration passed coordinator reruns. Code, finite rule tables, proof,
 resource scope and reproduction reports are retained in the contribution.
 No human review is claimed.
+
+### 9.19 Reversible single-head digit compilation, 2026-10-28
+
+Continuing the finite compiler work, Codex and three parallel workers added
+[digit_compiler](contrib/digit_compiler/README.md). This supplies a complete
+spatial reversible compilation layer for a supplied finite source table;
+the whole high-channel generator is still not such a joined table. No new
+counterexample, final violating dimension or central-charge estimate is
+claimed. The parameter-reader and Gaussian work in §9.18 is complementary.
+
+- **Finite arithmetic and serial memory [implemented and checked].**
+  A fixed eight-tape, six-symbol ALU has 4,749 active controls and 28,494
+  digit transitions. It implements all signed arithmetic operations needed
+  by the frozen generator, including multiplication, binary long division,
+  modulo and variable shifts. A separate five-tape machine implements
+  GET, variable-width functional SET, APPEND and LEN with 97 controls and
+  207 rules. A 20-rule copy machine preserves results before exact cleanup.
+  These are actual current-cell transition tables, with finite alphabets
+  independent of operand width. Canonical input and blank-scratch framing
+  are hypotheses, not yet a complete Hamiltonian format theorem.
+- **Reversible spatial compilation [proved and independently checked].**
+  Interleaved tagged cells simulate the digit machines with one physical
+  head and 98 arithmetic or 62 memory symbols. An independent audit gives
+  an explicit noninjectivity witness for this deterministic intermediate.
+  A subsequent construction repairs it: source rule labels are carried
+  to a right-hand history frontier, appended, and the head returns to its
+  marked work cell. Fixed incoming directions and unique target/written
+  pairs prove partial reversibility on the complete declared domain.
+  Its time and space overhead are explicitly polynomial. Actual lowered
+  ALU computations 0==1 and 1+1 take 648,266 and 3,055,626 reversible
+  physical microsteps; complete inverse execution restores all work and
+  history without a host journal.
+- **Full-space gates and autonomous fixtures [proved gates; checked cycles].**
+  Stationary transitions become reversible two-move excursions. Fresh and
+  updated head sectors complete collisions to onsite involutions, and a
+  two-site involution moves the head. All malformed collision inputs and
+  zero/two-head bond inputs have specified action. Independent exhaustive
+  checks cover 407 collision inputs and 165,649 movement pairs. Repeating
+  the same gate layers gives 63 complete erasure/reset cycles, with 14,202
+  sweeps, correct intermediate output and exact restoration. No host
+  direction change drives these cycles. They are finite initialized
+  fixtures, not a whole-generator readout or illegal-sector proof.
+- **Real-generator interfaces [checked hybrid execution].**
+  All 25,234 arithmetic events in the p=2,3,5 graph, width and complete
+  one-edge circuit runs agree with finite-table arithmetic; 1,712 distinct
+  operand pairs are replayed. Memory checks cover all 8,165 events in the
+  p=2,3 graphs and 906-gate one-edge circuit, using 4,436 distinct replays
+  and 75,446,718 digit transitions, including every SET event. The host
+  still selects heap blocks and schedules VM instructions. Source-loop
+  bounds give an arithmetic-only cost below 2^80 A^8 under the existing
+  generator assumptions; no word-step count is reused as a digit-history
+  count.
+
+All eleven new verification scripts pass coordinator reruns. Separate
+workers implemented arithmetic, memory and the compiler audit; independent
+review caught and repaired a missing declared return-control family. The
+remaining finite task is the complete interpreter's stack, heap aliases,
+allocation, dispatch and output table, then initialization, parameter input,
+charged execution and endpoint readout in one counted core. The full
+history kernel/gap and fixed-coupling infrared claims remain separate. No
+human review is claimed.

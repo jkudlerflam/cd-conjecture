@@ -78,6 +78,14 @@ A new candidate refutation is recorded below and needs independent review. The w
 
 [STATUS.md](STATUS.md) has the details and the list of where help is most useful.
 
+**Reversible digit compiler (2026-10-28):**
+[digit_compiler](contrib/digit_compiler/README.md) gives fixed tables for all
+generator arithmetic and selected-array operations, then compiles them to
+one physical reversible head. Actual arithmetic runs restore every work and
+history cell. Full-space local permutation gates also pass autonomous
+compute/reset cycles. Whole-interpreter storage and dispatch, initialized
+Hamiltonian composition, and the final violating dimension remain open.
+
 **Digit compilation and infrared progress (2026-10-28):**
 [digit_compilation](contrib/digit_compilation/README.md) supplies an explicit
 96-entry parameter-reader table, eleven finite local arithmetic kernels,
