@@ -7,11 +7,14 @@ os.environ['OPENBLAS_NUM_THREADS']='1'
 os.environ['OMP_NUM_THREADS']='1'
 import numpy as np
 from scipy.linalg import eigh
+import scipy.sparse as sp
+from scipy.sparse.linalg import splu
 from functools import lru_cache
 from model import Chain
 
 class Reduced:
- def __init__(self,n,xL=1.,phi=.0,w=.3):
+ def __init__(self,n,xL=1.,phi=.0,w=.3,method="positive"):
+  self.method=method
   self.n=n;self.S=3*n+3;self.xL=xL;self.phi=phi
   # Physical order differs from upstream only by putting data after dimers.
   self.data=list(range(4*self.S,4*self.S+2*n))
@@ -22,6 +25,11 @@ class Reduced:
   for i in range(2*n+2):edges.append((i,i+1,xL if i<n+1 else 1.))
   edges.append((n+1,2*n+3,1.))
   edges.extend((i,i+1,1.) for i in range(2*n+3,3*n+2))
+  depth=np.array(list(range(2*n+3))+list(range(n+2,2*n+2)))
+  self.gauge={'T':np.exp(1j*phi*depth),'H':(-1.)**depth,'D':(-1.)**depth}
+  K=np.eye(self.S)
+  for i,j,x in edges:K[i,j]=K[j,i]=-w*x
+  self.positive_lu=splu((sp.kron(sp.csc_matrix(K),sp.eye(self.S))+sp.kron(sp.eye(self.S),sp.csc_matrix(K))).tocsc())
   self.eigs={}
   for X in 'THD':
    H=np.eye(self.S,dtype=complex)
@@ -44,8 +52,13 @@ class Reduced:
  def resolve(self,blocks):
   out={}
   for (X,Y,bits),B in blocks.items():
-   ex,U=self.eigs[X];ey,W=self.eigs[Y]
-   out[X,Y,bits]=U@((U.conj().T@B@W.conj())/(ex[:,None]+ey[None,:]))@W.T
+   if self.method=='positive':
+    dx=self.gauge[X];dy=self.gauge[Y];src=dx.conj()[:,None]*B*dy.conj()[None,:]
+    flat=src.ravel();sol=self.positive_lu.solve(flat.real)+1j*self.positive_lu.solve(flat.imag)
+    out[X,Y,bits]=dx[:,None]*sol.reshape(self.S,self.S)*dy[None,:]
+   else:
+    ex,U=self.eigs[X];ey,W=self.eigs[Y]
+    out[X,Y,bits]=U@((U.conj().T@B@W.conj())/(ex[:,None]+ey[None,:]))@W.T
   return out
  def source(self,bits):
   bR=2*self.ports[0];bL=2*(self.S+self.ports[1]);qR=bR+1;qL=bL+1
@@ -92,6 +105,32 @@ class Reduced:
        key=nx,ny,nbits
        if key not in out:out[key]=np.zeros_like(B)
        out[key][r,s]+=-sg*sg1*gs*B[r,s]
+  return out
+ def junction(self,blocks):
+  # Q V Q within one carrier per cell. Other carrier-number sectors
+  # have zero overlap with the endpoint resolvent vectors at order lambda^3.
+  bR=2*self.ports[0];bL=2*(self.S+self.ports[1]);qR=bR+1;qL=bL+1
+  terms=[]
+  for a in [bR,qR]:
+   for b in [bL,qL]:terms.extend([(.5,[(a,1),(b,0)]),(.5,[(b,1),(a,0)])])
+  def dens(b,a):return [(.5,[(b,1),(b,0)]),(.5,[(a,1),(a,0)]),(.5,[(b,1),(a,0)]),(.5,[(a,1),(b,0)]),(-.5,[])]
+  terms.extend((cr*cl,op+ol) for cr,op in dens(bR,qR) for cl,ol in dens(bL,qL))
+  out={}
+  # The projected port operator is zero when a carrier is away from
+  # its port, since p and q have zero code compression.
+  for (X,Y,bits),B in blocks.items():
+   r,s=self.ports;val=B[r,s]
+   if val==0:continue
+   sg,st=self.state(X,Y,bits,r,s)
+   targets={self.state(nx,ny,bits,r,s)[1]:(nx,ny,self.state(nx,ny,bits,r,s)[0]) for nx in 'THD' for ny in 'THD'}
+   for coef,ops in terms:
+    res=Chain.apply(ops,[],st)
+    if res is None:continue
+    sg1,st1=res
+    if st1 not in targets:continue
+    nx,ny,gs=targets[st1];key=nx,ny,bits
+    if key not in out:out[key]=np.zeros_like(B)
+    out[key][r,s]+=coef*sg*sg1*gs*val
   return out
  def leading(self):
   Ys=[self.convert(self.resolve(self.source(b))) for b in [0]+[1<<a for a in range(2*self.n)]]

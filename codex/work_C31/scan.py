@@ -42,6 +42,7 @@ if __name__=='__main__':
   print('base',n,s,'Mnorm',la.norm(M0),flush=True)
   for asym,phi in [(.05,.001),(.005,.0001),(.001,.00001),(.0001,.000001),(.00001,.0000001)]:
    T,M=Reduced(n,1+asym,phi).leading()
+   T=T.real;M=1j*((M.imag-M.imag.T)/2)
    for mf in [0.,.3,1.]:
     mu=mf*s[0];rr=roots(T,M+mu*np.eye(n))
     row=dict(n=n,asym=asym,phi=phi,mu=mu,smin=s[0],smax=s[-1],**rr)

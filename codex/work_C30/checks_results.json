@@ -452,5 +452,39 @@
       "spectral_error": 7.549516567451064e-15,
       "E0": -3.9999999999999982
     }
+  ],
+  "initialized_patterns": [
+    {
+      "m": 1,
+      "k": 5,
+      "legal_endpoint_patterns": 1,
+      "zero_patterns": 1,
+      "min_wrong": null,
+      "proved_bound": 0.0012601285531232984
+    },
+    {
+      "m": 2,
+      "k": 7,
+      "legal_endpoint_patterns": 3,
+      "zero_patterns": 1,
+      "min_wrong": 0.02914533143813353,
+      "proved_bound": 0.0003758485735741824
+    },
+    {
+      "m": 3,
+      "k": 9,
+      "legal_endpoint_patterns": 5,
+      "zero_patterns": 1,
+      "min_wrong": 0.010232817259529884,
+      "proved_bound": 0.0001481345345492026
+    },
+    {
+      "m": 4,
+      "k": 11,
+      "legal_endpoint_patterns": 11,
+      "zero_patterns": 1,
+      "min_wrong": 0.004970834911403665,
+      "proved_bound": 6.952649997166559e-05
+    }
   ]
 }

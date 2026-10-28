@@ -28,6 +28,7 @@ def leading(n,p):
  return T,M
 if __name__=='__main__':
  import sys
- n=int(sys.argv[1]);T,M=leading(n,dict(wD=-.3,xL=1.05,phiT=.001))
+ n=int(sys.argv[1]);asym=float(sys.argv[2]) if len(sys.argv)>2 else .05;phi=float(sys.argv[3]) if len(sys.argv)>3 else .001
+ T,M=leading(n,dict(wD=-.3,xL=1+asym,phiT=phi))
  print('T',T,'M',M,flush=True)
- np.savez('full_leading_n%d.npz'%n,T=T,M=M)
+ np.savez(('full_target_n%d.npz' if len(sys.argv)>2 else 'full_leading_n%d.npz')%n,T=T,M=M)

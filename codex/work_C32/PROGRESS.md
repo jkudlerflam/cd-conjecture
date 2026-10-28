@@ -28,3 +28,26 @@ Write explicit parent and wrapper matrices. Check finite cores and mobile
 projected transport, retain scalar length interactions, then carry out
 bounded two- and three-cell diagonalizations. Record any missing general-n
 lemma rather than promoting a numerical pattern to a proof.
+
+## Positive core and wrapper constructed
+
+[Proved construction, numerical core checks] The final core adds five left
+marker letters to the 23-letter alphabet. Both markers have vacuum and
+three excited states plus an empty state. The vacuum moves on a positive
+path Laplacian. Excited hopping uses positive edge matrices and positive
+onsite conversion blocks. There are n data sites and two markers, k=n+2,
+with an exact 2^n code. The C8 wrapper therefore has d0=96*28+48=2736.
+The preliminary 23-state wrapper idea was replaced by this endpoint design.
+
+[Numerical, core dimensions 30 and 88] Code residual is zero; n=1,2
+core gaps are positive. Exact source calculations retain up to 7560 states
+per end, including reachable helix excitations. At a very small hopping
+signal the n=2 traceless subtraction loses useful relative accuracy. That
+run is preserved in small_signal_diagnostic.json. The check is being rerun
+at a larger diagnostic conversion, and the scalar errors remain reported.
+No small-signal result is being treated as a certified band calculation.
+
+[In progress] The full mobile microscopic Hilbert space is too large for
+three-cell n=2 diagonalization within minutes. The bounded ED will retain
+all legal core excitations and active mobile lengths in the controlled
+fast-wrapper limit. This limitation will be stated in the result.

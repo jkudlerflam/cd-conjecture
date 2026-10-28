@@ -1,0 +1,9 @@
+Completed [RESULT.md](RESULT.md), with proofs, explicit margins, alphabet counts, and reproducible checks.
+
+Symmetric frozen selection works with one chemical potential at \(d_0=120\). The adjacent-length crossing also admits asymmetric cells. The mobile construction therefore keeps a symmetric occupied core and varies neutral padding, giving \(d_0=8112\), or \(2028\) without endpoint compensators.
+
+All checks passed, including walker spectra through arm length 8 and complete selector rings through 59,049 states. `PROGRESS.md` and local `STATE.md` are updated.
+
+The all-\(n\) carrier band structure and finite-coupling infrared conclusion remain open.
+
+[gpt_solve: backend=codex model=gpt-6-astra effort=high transcript=20261028T012021-64484]

@@ -134,8 +134,35 @@ def pair_fluid_checks():
         out.append(dict(b=b,M=M,r=r,L=L,dimension=len(states),components=ncomp,spectral_error=err,E0=float(ev[0])))
     return out
 
+
+def initialized_pattern_checks(helix_rows):
+    out=[]
+    for m in range(1,5):
+        k=2*m+3
+        energies={v['r']:v['E0'] for v in helix_rows if v['m']==m}
+        def words(total):
+            if total==0:
+                yield ()
+            for a in range(1,total-3):
+                for c in range(1,total-a-2):
+                    remainder=total-a-c-3
+                    if remainder<0:continue
+                    for rest in words(remainder):yield ((a,c),)+rest
+        configs=list(words(k));zero=[];wrong=[]
+        for cells in configs:
+            energy=sum(energies[a]+energies[c] for a,c in cells)
+            if abs(energy)<1e-9:zero.append(cells)
+            else:wrong.append(energy)
+        assert zero==[((m,m),)]
+        kap=1/(k*(2*k-1));beta=np.sin(np.pi/(2*k+1))**2
+        eps=kap*beta/((1+np.sqrt(kap))**2+beta)
+        assert not wrong or min(wrong)>=eps-1e-10
+        out.append(dict(m=m,k=k,legal_endpoint_patterns=len(configs),zero_patterns=len(zero),min_wrong=None if not wrong else float(min(wrong)),proved_bound=float(eps)))
+    return out
+
 if __name__=='__main__':
     result=dict(local_contexts=local_checks(),segments=segment_checks(),rings=ring_checks(),helices=helix_checks(),assumed_pair_exchange_graph=pair_fluid_checks())
+    result['initialized_patterns']=initialized_pattern_checks(result['helices'])
     with open('checks_results.json','w') as handle:json.dump(result,handle,indent=2)
     print(json.dumps({k:v for k,v in result.items() if k not in ('helices','segments')},indent=2))
     print('Segment spectral error',result['segments']['spectral_error'])

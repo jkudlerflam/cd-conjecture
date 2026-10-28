@@ -1,0 +1,7 @@
+Still nonconclusive. This run added a complete periodic-bond implementation, proved a simpler uniform-vacancy wrapper, and replaced the exponentially slow target with rational Fermi points having uniformly positive velocities. All stated finite checks passed, including complete legal-sector spectra through dimension 2,903.
+
+The remaining gap is connected local elimination of the massive cell excitations, followed by infrared identification. No microscopic central charge was measured.
+
+Proofs, code references and continuation priorities are saved in [RESULT.md](<./RESULT.md>) and [PROGRESS.md](<./PROGRESS.md>), with matching RUN9 snapshots.
+
+[gpt_solve: backend=codex model=gpt-6-astra effort=high transcript=20261028T005222-55366]
