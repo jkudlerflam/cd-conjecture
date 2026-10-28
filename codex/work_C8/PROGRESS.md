@@ -71,6 +71,18 @@ column/history checks pass. Use PeriodicBond(flat_vacancies=True).
 The constant marker-visibility bound from the OLD wrapper does not
 apply to this variant; the new bound is 1/[2(k+2)].
 
+Substantive step 46. unprojected_cell_reduction.md gives an exact
+change of variables in every legal fixed-marker sector, BEFORE any
+low-energy projection. The on-cell Hilbert space is the direct sum over
+all lengths ell of the complete cell spaces; H0-eL is a sum of independent
+on-cell Hamiltonians. Marker transfer, port links and fields are bounded
+nearest-neighbor/on-cell operators in cell order, uniformly in ell.
+This removes moving projectors as a coordinate-level obstacle. The
+fixed total length and physical ring quotient remain. The residual
+elimination problem is now an atomic model with finite ground degeneracy,
+infinite on-cell direct sum and a uniform gap, not a global band inverse.
+No general connected-elimination theorem was supplied.
+
 The previous completed handoff follows and remains the source for all
 unchanged core proofs and checks.
 

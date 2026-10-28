@@ -1,6 +1,7 @@
 """Uniform-vacancy wrapper: complete sectors, gaps and closed-form weights."""
 import json
 from itertools import combinations
+from math import comb
 import numpy as np
 from arrow_wrapper_checks import local_bond,legal_words
 from selector_wrapper_checks import sparse_open
@@ -65,11 +66,31 @@ def sectors(k):
     return dict(k=k,lengths=out)
 
 
+def closed_weights():
+    rows=[]
+    for k in (3,4,8,14,24,64):
+        for p in (1,2):
+            hs=list(combinations(range(k+p),p));den=len(hs)
+            first=sum(0 not in h for h in hs)
+            two=sum(0 not in h and 1 not in h for h in hs)
+            assert first*(k+p)==k*den
+            assert two*(k+p)*(k+p-1)==k*(k-1)*den
+        assert (k+1)*(k+2)==2*comb(k+2,2)
+        rows.append(dict(k=k,r1=k/(k+1),r2=k/(k+2),beta_wrap=2/(k+2)))
+    return rows
+
+
 if __name__=='__main__':
-    out=dict(exclusion=gap_checks(),wrappers=[sectors(3),sectors(4)])
+    out=dict(exclusion=gap_checks(),wrappers=[sectors(3),sectors(4)],closed_weights=closed_weights())
+    H=PeriodicBond(flat_vacancies=True)
+    norms=[np.linalg.norm(x,2) for x in (H.ML,H.MR,H.MD)]
+    assert max(norms)<4*np.pi**2*H.b**2 and H.marker_norm>1/(2*(H.k+2))
+    B=abs(H.kappa)+2*H.marker_u+4*norms[0]*norms[1]*np.sum(1/(H.alpha[0]*H.alpha[1]))+norms[2]*np.max(abs(H.mu)/(2*H.beta[0]))
+    upper=1+2*H.m+4*(H.k+2)+409600*np.pi**4*H.b**4*H.m**3+320*np.pi**2*H.b**2*H.m
+    assert B<=upper
+    out['normalization']=dict(triangle_bound=float(B),polynomial_bound=float(upper))
     with open('flat_vacancy_checks.json','w') as f:
         json.dump(out,f,indent=2);f.write('\n')
-    H=PeriodicBond(flat_vacancies=True)
     oracle=dict(parameters=H.report(),wrapper=small_wrapper_comparison(H),
                 columns=actual_columns(H),compression=history_compression(H),
                 charge_form_identity=charge_form_identity(H))
