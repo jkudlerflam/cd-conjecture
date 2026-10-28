@@ -1,0 +1,109 @@
+{
+  "exact_checks": [
+    {
+      "parameters": [
+        "1",
+        "3/5",
+        "2",
+        "-1"
+      ],
+      "coefficients": {
+        "scalar": "-20505/11648",
+        "hopping": "-9/32",
+        "zz": "243/11648",
+        "anisotropy": "27/182",
+        "third_scalar": "154242993/67837952",
+        "third_hopping": "1845/2048",
+        "third_zz": "-8627715/67837952"
+      }
+    },
+    {
+      "parameters": [
+        "2",
+        "1/3",
+        "3/2",
+        "-2/3"
+      ],
+      "coefficients": {
+        "scalar": "-4565747/11531520",
+        "hopping": "-1/280",
+        "zz": "27/1281280",
+        "anisotropy": "27/2288",
+        "third_scalar": "3693490743/25651225600",
+        "third_hopping": "25729/7526400",
+        "third_zz": "-21595853/692583091200"
+      }
+    },
+    {
+      "parameters": [
+        "1",
+        "0",
+        "2",
+        "-1"
+      ],
+      "coefficients": {
+        "scalar": "-3/2",
+        "hopping": "0",
+        "zz": "0",
+        "anisotropy": "None",
+        "third_scalar": "3/2",
+        "third_hopping": "0",
+        "third_zz": "0"
+      }
+    }
+  ],
+  "numerical": {
+    "cell_gap": 0.3999999999999997,
+    "zero_modes": 2,
+    "code_residual": 6.284871192825117e-16,
+    "charge_commutator": 0.0,
+    "conjugation_commutator": 0.0,
+    "parity_multiplicities": [
+      16,
+      16
+    ],
+    "rational_second_order_error": 1.7763568394002505e-15,
+    "two_cell_residuals": [
+      {
+        "lam": 0.02,
+        "remainder_over_lam3": 3.1954268418536365,
+        "min_overlap": 0.9996428185199859
+      },
+      {
+        "lam": 0.01,
+        "remainder_over_lam3": 3.247058726869928,
+        "min_overlap": 0.9999077220177153
+      },
+      {
+        "lam": 0.005,
+        "remainder_over_lam3": 3.2740025183827153,
+        "min_overlap": 0.9999765351435136
+      }
+    ],
+    "finite_order_unitary": [
+      {
+        "lam": 0.0008,
+        "code_block_error": 5.141496978682437e-16,
+        "remainder_over_lam3": 10.777421433399976
+      },
+      {
+        "lam": 0.0004,
+        "code_block_error": 5.155629628485055e-16,
+        "remainder_over_lam3": 10.77600459044535
+      },
+      {
+        "lam": 0.0002,
+        "code_block_error": 4.912922688635918e-16,
+        "remainder_over_lam3": 10.775291573572096
+      }
+    ]
+  },
+  "embedding": {
+    "auxiliary_modes": 60,
+    "total_modes": 61,
+    "gap_floor": "1/5",
+    "input_field_weight": 32.983866769659336,
+    "sufficient_spatial_weight": 768,
+    "conversion_weight_with_reserve": 566.3601978933764
+  }
+}
