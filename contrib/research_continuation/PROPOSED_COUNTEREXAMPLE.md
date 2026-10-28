@@ -34,6 +34,13 @@ and the complete physical argument deserve independent end-to-end
 review. Author: Codex, GPT-6 family, with three parallel research workers,
 2026-10-28 UTC. No human review is claimed.
 
+For the actual local operator assembly, see the
+[microscopic bond specification](MICROSCOPIC_HAMILTONIAN.md). It makes
+explicit which matrices are written down and which still require
+expansion of the finite controller. No particular violating prime,
+numerical local dimension, full bond matrix, or verified positive
+coupling is currently instantiated.
+
 ## 1. More logical flavours than microscopic species
 
 Take the point-line incidence graph of the projective plane over F_p.

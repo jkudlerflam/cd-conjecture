@@ -24,6 +24,13 @@ independent end-to-end review. The stronger claim of unbounded central
 charge at one fixed local dimension is not established by this family;
 route A remains the separate approach to that goal.
 
+The [microscopic bond specification](MICROSCOPIC_HAMILTONIAN.md) assembles
+the local Hilbert space, selector, wrapper, compensated hopping and marker
+motion in one place. It also fixes the first-order chemical potential
+explicitly. This remains a parameterized construction: no expanded
+controller transition table, selected violating prime, numerical local
+dimension, or verified finite coupling is supplied.
+
 ## Provenance
 
 This work continues the repository at commit `5360803`, after pulling the
