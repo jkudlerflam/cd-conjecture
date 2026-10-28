@@ -95,5 +95,27 @@
       "gap": 0.015192246987787808,
       "predicted_gap": 0.01519224698779198
     }
+  ],
+  "density_readout": [
+    {
+      "q": 4,
+      "n": 2,
+      "physical_dimension": 1152,
+      "neighbor_colors": 2,
+      "max_port_error": 0.0,
+      "max_density_error": 0.0,
+      "distinct_density_support_overlap": 0.0,
+      "diagonal_field_norm": 0.9
+    },
+    {
+      "q": 6,
+      "n": 4,
+      "physical_dimension": 36864,
+      "neighbor_colors": 3,
+      "max_port_error": 2.7755575615628914e-17,
+      "max_density_error": 2.7755575615628914e-17,
+      "distinct_density_support_overlap": 0.0,
+      "diagonal_field_norm": 0.9
+    }
   ]
 }

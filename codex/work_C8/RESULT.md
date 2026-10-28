@@ -4,51 +4,45 @@
 
 ## Verdict
 
-Fourth-run update. The verdict remains nonconclusive under the definition
-in the task. There is no verified microscopic counterexample, no bound
-for the full class, and no fixed-d construction with unbounded c.
-Sections 20-24 contain this run's new results and supersede the earlier
-next-step rankings. All earlier proofs and checks remain below.
+Fifth-run update. The verdict remains nonconclusive under the task's
+criteria. There is no verified microscopic counterexample, no bound for
+the full class, and no fixed-d construction with unbounded c. Sections
+25-29 contain the new results and supersede earlier next-step rankings.
 
-The strongest new obstruction is a boundary-Schmidt-rank bound. If a
-code contains one state of Schmidt rank s across an active q-dimensional
-port, an exact scaled Clifford family has at most 2qs-s^2 generators.
-One product vector therefore forces c_target<=q-1 for the proposed even-
-channel Majorana target. This excludes complete ground codes of positive
-bonds with matrix rank below q, and gives a robust obstruction to their
-approximate joint ports. Commuting-projector parents and the specified
-injective two-site MPS parent class are also excluded as implementations
-of the proposed high-channel code. These are restricted construction
-no-gos, not a general c bound.
+The main advance is a complete finite-cell construction. Given any
+initialized uniform frustration-free q-state core of length k, an
+explicit repeated NN bond of dimension 6q+3 has the desired COMPLETE
+open-chain ground code at both lengths k+1,k+2. A qubit helix selects
+k occupied sites, arrow labels and endpoint rewards select the tags,
+and all competing sectors have explicit energy bounds. Endpoint maps
+survive, and a local vacancy-label conversion transports both payloads
+coherently when their boundary moves. This removes two assumptions from
+the previous vacancy construction. It is an open-cell theorem. Used
+unchanged on a ring, the wrapper is proved to lose the desired cells.
 
-The open-chain frustration-free witness length is now explicit and sharp
-for qubits, K_FF(2)=4. A positive bond with a three-site zero state and no
-four-site zero state proves sharpness. A q-state extension gives
-K_FF(q)>=q+2 for q>=2. Neither statement covers frustrated conformal chains
-or marker-dependent boundary penalties.
+A different construction supplies nonnegative equal-amplitude joint
+Clifford codes with n<=floor(q(q-1)/4) complex flavors. With exact
+physical grading it supports n<=floor(q_+q_-/2). Both port maps and
+independent logical flavor densities have explicit formulas. A finite
+classical-permutation history has the complete code and an exact gap;
+a scheduled local readout circuit uses only reversible classical gates.
+The missing step is its autonomous initialized uniform NN controller.
+The abstract flat parent is stoquastic, so positivity of code amplitudes
+alone does not close the first-order channel window.
 
-A constructive test supplies a repeated positive graded-swap parent on
-q=n+1 states, with a complete 2^n-dimensional ground code and controlled
-maps at both ends. Its normalized error from 2n Clifford generators is
-1-sqrt(1-(n-1)/N) on a cell of length N. It only approaches c_target=q-1
-before paying selector costs, so it does not produce a violation.
+All four new finite-dimensional check scripts pass. They validate code
+identities, initialized histories, number-sector selection, complete
+open-cell ground spaces, and transport, not a microscopic central charge.
+No new CFT estimator or cluster calculation was run. The live infrared-
+control contribution still reports an unproved general-cell reduction
+and no complete conformal spectral conclusion. Its literature and full
+proofs were not independently audited here.
 
-A separate conditional bound uses the connected bond itself. If the
-Schmidt singular values have multiplicities n_j, the dynamical image of
-any exact on-site symmetry algebra embeds in the direct sum of so(n_j).
-When the corresponding microscopic currents exhaust the IR stress tensor,
-this gives c<=min(d^2-1,sum_j n_j(n_j-1)/2). Gaussian modes resolved by
-commuting on-site charges obey c<=sum_j floor(n_j/2)<=floor(r(h)/2).
-Neutral and emergent sectors remain outside these hypotheses.
-
-Earlier work supplies joint two-port dilations, second-order synthesis
-of arbitrary logical bonds, an exact d=4 mobile selector with c=1,
-and conditional vacancy transport of frustration-free codes. It also
-identifies the finite-coupling stability and incompatible-ring issues.
-The unresolved construction still needs a sufficiently entangled
-high-channel code with a repeated local parent, number-sector selection,
-and thermodynamic infrared control. The new tests concern only finite
-codes and symmetry algebras. No new microscopic CFT was measured.
+Earlier sections preserve the joint dilation and second-order results,
+restricted no-gos, exact mobile selector, boundary-Schmidt-rank theorem,
+K_FF(2)=4, and conditional symmetry/rank bounds. A high-channel spatial
+core, its consistent mobile-ring implementation, and finite-coupling
+infrared control remain unresolved.
 
 ## 1. Simultaneous boundary Clifford compression
 
@@ -2743,3 +2737,1128 @@ The next steps, ranked, are:
    The q+2 lower bound is explicit, but neither its sharpness nor a
    useful upper bound at higher q has been established. This is a
    restricted algebraic question, not a substitute for a CFT bound.
+
+
+## 25. Nonnegative Clifford readouts and classical histories
+
+The numbered subsections and internal section references below are local to this section.
+
+Status: proved finite-dimensional code and history-Hamiltonian statements.
+The circuit interface uses reversible permutations only. A uniform
+nearest-neighbor Hamiltonian realizing the entire initialized computation
+has not been supplied. These results do not settle the c-d conjecture.
+
+### 1. A joint code with nonnegative amplitudes
+
+Let n>=1, D=2^n, and choose 2n distinct unordered pairs of letters from
+{0,...,q-1}. This is possible precisely when
+
+    2n <= q(q-1)/2.
+
+Label the pairs (a_{f,s},b_{f,s}), a<b, by f=1,...,n and s=+1,-1.
+An arbitrary fixed enumeration is sufficient. Define two Hermitian
+q-by-q matrices for each flavor,
+
+    X_f = sum_s s (|a_{f,s}><b_{f,s}| + |b_{f,s}><a_{f,s}|),
+    Y_f = sum_s s i (|b_{f,s}><a_{f,s}| - |a_{f,s}><b_{f,s}|).  (1)
+
+The left operators are A_{2f-1}=X_f, A_{2f}=Y_f. The right operators
+are B_{2f-1}=Y_f, B_{2f}=-X_f. All have zero diagonal. They are
+linearly independent, since distinct flavors use distinct pairs and
+the real and imaginary entries on each pair are independent.
+
+For a logical bit string x=(x_1,...,x_n), write z_f(x) for x with bit
+f deleted, and define
+
+    s_L(f,x)=(-1)^(sum_{j<f} x_j),
+    s_R(f,x)=(-1)^(sum_{j>f} x_j).
+
+Let ell_f(x) be a_{f,s_L} if x_f=0 and b_{f,s_L} if x_f=1.
+Define r_f(x) with s_R in place of s_L. The environment has orthonormal
+labels |L,f,z> and |R,f,z>, hence dimension nD. Fix any letter o at an
+inactive port, for example o=0, and set
+
+    V|x> = (2n)^(-1/2) sum_f [
+        |ell_f(x)>_L |o>_R |L,f,z_f(x)>
+      + |o>_L |r_f(x)>_R |R,f,z_f(x)> ].                  (2)
+
+This is an isometry C^D -> C^q tensor C^q tensor C^(nD).
+Each column has 2n distinct computational basis configurations. Two
+columns can share an environment label only if their bit strings differ
+at its specified flavor, and then their active port letters differ.
+Thus their full supports are disjoint. Every nonzero matrix entry of V
+is the same positive number (2n)^(-1/2).
+
+Use the conventional Jordan-Wigner matrices on the logical bit register,
+
+    Gamma_{2f-1}=Z_1 ... Z_{f-1} X_f(logical),
+    Gamma_{2f}  =Z_1 ... Z_{f-1} Y_f(logical),
+    P=Z_1 ... Z_n,   R_a=i Gamma_a P.                     (3)
+
+The claim is
+
+    V^dag A_a(left) V = Gamma_a/(2n),
+    V^dag B_a(right) V = R_a/(2n).                        (4)
+
+Proof of the left map. A boundary operator cannot change the environment
+label. Its diagonal contribution is zero by (1). Within the record
+|L,f,z>, only the two logical states x with x_f=0 and y=x xor e_f
+occur. A_{2f-1} has matrix element s_L from x to y, and A_{2f} has
+matrix element i s_L. These are the corresponding Gamma matrix
+elements. Each is multiplied by the product of the two amplitudes,
+1/(2n). The reverse entries are their complex conjugates. Other
+flavors have zero matrix element on this pair, since the pairs are
+distinct. In right records the left port is o, and its zero diagonal
+again gives zero. This proves the first identity.
+
+For the right map, take x_f=0. The two desired entries are
+
+    <y|i Gamma_{2f-1} P|x> = i s_L (-1)^(sum_j x_j) = i s_R,
+    <y|i Gamma_{2f} P|x>   = -s_L (-1)^(sum_j x_j) = -s_R.
+
+Those are precisely the entries of B_{2f-1}=Y_f and B_{2f}=-X_f
+on the pair labeled by s_R. The same environment and normalization
+argument proves the second identity. This also fixes the otherwise
+important parity-dressing signs. QED.
+
+It follows that the physical port bond
+
+    v = sum_{a=1}^{2n} B_a(right) tensor A_a(left)          (5)
+
+compresses on two codes to (2n)^(-2) sum_a R_a tensor Gamma_a.
+This is the free Majorana hopping target already derived and calibrated
+in RESULT.md Section 2, with c_target=n. No new CFT input is used here.
+
+In particular, n=floor(q(q-1)/4) grows quadratically in the port
+dimension. At q=5, n=5 exceeds q-1. The physical block in (2), however,
+has dimension q^2 n 2^n=4000 at this example. Declaring that entire block
+to be one site would not violate c-d. The number q is only its port
+dimension, and there is no local q-state parent in this construction.
+
+The flat parent Delta(I-VV^dag), Delta>0, is stoquastic in this basis.
+Its off-diagonal entries are nonpositive because VV^dag is entrywise
+nonnegative. It has the complete ground code (2) and gap Delta. It is
+an unrestricted block Hamiltonian. This proves that neither
+nonnegative code amplitudes nor stoquasticity of an unrestricted parent
+forces the linear-in-q channel budget. It says nothing about
+stoquasticity of the inter-block bond (5).
+
+### 2. Exact grading
+
+Split the q port letters into q_+ even and q_- odd letters. Require
+every selected pair to have a even and b odd. There are q_+q_- such
+pairs, so the same construction now permits
+
+    n <= floor(q_+ q_- / 2).                              (6)
+
+Every A_a and B_a is odd under the diagonal port grading omega.
+Give the environment record |L,f,z> the parity
+
+    omega_E(L,f,z) = (-1)^(sum_j x_j) omega(ell_f(x)) omega(o),
+
+where x is either extension of z by the missing bit. The value is
+independent of that choice: flipping x_f reverses both factors that
+depend on it. Define the right record parity in the same way using
+r_f(x). Then
+
+    (omega_L tensor omega_R tensor omega_E) V = V P.       (7)
+
+The flat parent is even. Thus the positive-amplitude construction
+also accommodates an exact total fermion parity, at a factor-two
+cost in the number of complex flavors relative to the unrestricted
+pair count. For balanced grades n is about q^2/8, which still leaves
+a quadratic rather than linear channel budget.
+
+This does not contradict the earlier boundary-Schmidt-rank theorem.
+Whenever n>q-1, (4) itself and that theorem imply that every nonzero
+code vector is entangled across either active port. Positivity of a
+vector's coefficients does not make it a product vector.
+
+### 3. A clean readout history with an exact gap
+
+There is an elementary history realization of the same boundary maps.
+It is useful because its propagation gates are permutations, and it
+does not require a quantum circuit that prepares the Choi dilation.
+The following explicit version uses a global clock and global gates.
+It is NOT the missing uniform nearest-neighbor parent.
+
+Add one inactive letter * to each port, and extend every A_a and B_a
+by zero on that letter. The data workspace has basis |x>, x in {0,1}^n.
+Define baseline configurations
+
+    b_x=|*>_L |*>_R |x>.
+
+For each flavor f define left and right readout configurations
+
+    a^L_{f,x}=|ell_f(x)>_L |*>_R |z_f(x)>,
+    a^R_{f,x}=|*>_L |r_f(x)>_R |z_f(x)>.
+
+The shorter bit string z is stored in the first D/2 workspace states.
+For each readout label (u,f), let U_{u,f} swap b_x with a^u_{f,x}
+for every x, and fix every other basis state. These transpositions
+are disjoint. U_{u,f} is a real permutation, Hermitian and unitary.
+
+Execute each U_{u,f} and immediately its inverse, in a fixed order
+over the 2n readouts. There are T=4n steps and C=T+1 clock values.
+The history at even clock values is the baseline, and each odd clock
+value is one designated readout. With W_t=U_t ... U_1 and W_0=I, use
+
+    H_prop = (1/2) sum_{t=0}^{C-2} [
+       |t><t| tensor I + |t+1><t+1| tensor I
+       - |t+1><t| tensor U_{t+1} - |t><t+1| tensor U_{t+1}^dag ],
+    H_init = |0><0| tensor (I-P_baseline).                 (8)
+
+Every term is positive semidefinite. The complete zero space is
+
+    V_hist|x> = C^(-1/2) sum_{t=0}^{C-1} |t> W_t b_x.      (9)
+
+To see completeness, conjugate by the controlled unitary
+W=sum_t |t><t| tensor W_t. The propagation becomes the path
+Laplacian L_C=(1/2)sum_t(|t>-|t+1>)(<t|-<t+1|), while H_init is
+unchanged. A path zero mode is constant, and its data vector must
+lie in the baseline space. This proves that there are exactly D
+zero states, not just D constructed ones.
+
+The same conjugation gives the entire spectrum. If K=(q+1)^2 D is
+the data-space dimension, the two blocks are
+
+    L_C,                         multiplicity D,
+    L_C+|0><0|,                  multiplicity K-D.
+
+Their eigenvalues, for j=0,...,C-1, are respectively
+
+    1-cos(pi j/C),
+    1-cos(pi(j+1/2)/C).                                   (10)
+
+For the first use the usual cosine eigenvectors
+cos(k(t+1/2)) with k=pi j/C. For the second use
+sin(k(t+1/2)): the left endpoint equation is the odd-reflection
+condition u_{-1}=-u_0, while the right equation is u_C=u_{C-1}.
+The latter requires cos(kC)=0. Both give the displayed eigenvalues.
+The gap is consequently
+
+    Delta_hist=1-cos(pi/(2C)) > 0.                        (11)
+
+Every intermediate gate and initial vector has nonnegative entries,
+so (9) has nonnegative amplitudes. The off-diagonal entries of (8)
+are nonpositive. Thus this is an exact frustration-free stoquastic
+history parent, with its full ground multiplicity and gap known.
+
+Since the clock is orthogonal, compression of a port operator is
+the average of its compressions at each time. It annihilates the
+baseline configurations. At its unique readout for flavor f its
+compression is the specified Gamma or R. Hence
+
+    V_hist^dag A_a(left) V_hist = Gamma_a/C,
+    V_hist^dag B_a(right) V_hist = R_a/C.                  (12)
+
+Unlike a computation that assumes the port operator is unchanged at
+all times, this history intentionally uses different port actions at
+different times. There is no limiting clock-coupling error in (12).
+Longer computation dilutes the amplitude but does not distort the
+normalized Clifford maps if only clean readouts activate the ports.
+
+### 4. A reversible circuit interface using a finite gate menu
+
+The global swaps in (8) are not nearest-neighbor gates. Nevertheless,
+their action on the initialized inputs admits a clean local circuit
+interface. The grading version is especially simple. This statement
+concerns a scheduled circuit, not an autonomous uniform Hamiltonian.
+
+Take a workspace bit register, parity-even auxiliary bits, a q-state
+partner next to each q+1-state port, and an inactive port letter * of
+even parity. Choose reference partner letters e_0 and o_0 of even
+and odd parity. For a left readout of bit f do the following.
+
+1. Reversibly compute sum_{j<f} x_j mod 2 into an auxiliary bit whose
+   two states both have even grading. The input bits are controls
+   and are unchanged. For a right readout use sum_{j>f} x_j instead.
+2. Move x_f to the partner neighborhood by adjacent swaps. Transfer
+   it into the partner by exchanging the two states (1,e_0) and
+   (0,o_0), leaving (0,e_0) fixed. The logical bit position is now
+   zero, and the partner letter is e_0 or o_0. The exchange preserves
+   total grading.
+3. Conditioned on the computed sign, rotate the even letters to send
+   e_0 to a_{f,s}, and the odd letters to send o_0 to b_{f,s}. Powers
+   of one cyclic permutation on each grade suffice. This uses at
+   most q_++q_- cycle operations for each sign branch. The sign
+   depends only on z_f(x), so no other register remembers x_f.
+4. Exchange the partner and inactive port, extending the partner by
+   the same inactive letter if needed. All other registers now
+   depend only on z_f(x). Idle for the same number of clock slices
+   at every readout, exchange back, and reverse the computation.
+
+While the computation is running the physical port is *, so every
+chosen boundary operator is zero there. During readout its only
+logical-bit dependence is the designated letter a or b. Consequently
+each readout slice contributes precisely the matrix elements used
+in Section 1. If there are w active slices per readout in a complete
+history of C slices, the compression scale is w/C at both ends.
+
+All elementary operations are permutations and preserve total grading.
+Parity can be accumulated by a moving even auxiliary bit, and data
+can be routed by adjacent swaps, so the scheduled circuit needs only
+local gates and a number of auxiliary registers polynomial in n and q.
+A fixed menu suffices: swaps, controlled toggles of an even auxiliary
+bit, the transfer above, controlled cycles within each grade, and
+the boundary exchange. Additional classical controls can be stored
+in a constant number of bits per gate location. No quantum phase
+gates or general unitary synthesis are needed.
+
+The fixed sequence selecting f, its sign branch, its cyclic-shift
+counts, and the return sweep is still external in this description.
+Replacing it by a repeated nearest-neighbor Hamiltonian requires a
+reversible controller with counters, initialization, and a proof that
+all malformed histories lie above the code. The local boundary
+exchange itself also has to be gated by that controller. No theorem
+in this note asserts that those obligations have been met.
+
+For the global-clock Hamiltonian, inserting such a finite permutation
+circuit and initialization projectors at t=0 preserves the proof of
+the complete history code. The simple spectrum (10) applies with a
+single projector onto the allowed input space; a sum of commuting
+initialization projectors only increases the invalid-sector penalty
+and retains the lower bound (11). A physical spatial clock is a
+separate construction.
+
+### 5. Resource accounting and the remaining bottlenecks
+
+The static isometry uses environment dimension n2^n and total dimension
+q^2 n2^n. Ignoring the missing parent, it can fit into k q-state sites
+whenever q^(k-2)>=n2^n. The nonnegative isometry is therefore no more
+expensive in leading block length than the earlier abstract dilation.
+
+With an exact port grading it supports n<=floor(q_+q_-/2). If a future
+controller and selector have a fixed dimension cost K per site, and
+the physical alphabet is K(q+1), the formal inequality
+
+    floor(q^2/8) > K(q+1)-1
+
+holds for sufficiently large even q. This is only resource accounting.
+Neither the constant K nor the required uniform parent has been
+constructed here. The inequality cannot be reported as a microscopic
+counterexample.
+
+The circuit route narrows one open step. A classical reversible
+controller with clean boundary exchanges could implement the needed
+first-order ports; it need not realize arbitrary quantum gates or
+the entire prescribed excited-state spectrum of the second-order
+gadget. But three substantial issues remain even after such a
+controller is written: selection of the correct initialized cell
+sectors, conformal infrared behavior at fixed nonzero inter-cell
+coupling, and compatible payload transport on all ring lengths.
+The exact code identities do not settle any of these three.
+
+### 6. Numerical checks
+
+Run
+
+    OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python3 classical_readout_checks.py
+
+The script writes classical_readout_checks.json. It constructs the
+isometry as an actual sparse matrix, applies the physical boundary
+operators, and compares both maps and the complete projected bond.
+Cases are (q,n)=(3,1),(4,3),(5,5),(6,6), and the exactly graded
+(4,2),(6,4). These include two static codes with n>q-1. Maximum
+operator errors are below 3e-16, and the maximum bond Frobenius error
+is below 1e-15. The graded intertwining errors vanish at this precision.
+
+The global-clock Hamiltonians at (q,n)=(3,1),(4,2) have dimensions
+160 and 900. Their complete spectra agree with (10) within 1.2e-14,
+their ground multiplicities are 2 and 4, and their gaps agree with
+(11). The code and both physical port maps agree within 4e-16.
+These are algebraic checks, not central-charge estimators. The
+large-q resource examples and the proposed spatial controller have
+not been simulated.
+
+### 7. Independent flavor densities from diagonal two-site readouts
+
+A stable-target proposal needs adjustable Fermi momenta in addition to
+the symmetric Majorana hopping. The graded code can supply independent
+logical Z_f fields through diagonal operators on a port and its neighbor.
+This is another code statement, not a complete local parent.
+
+Take q=2s with even letters a=0,...,s-1 and odd letters b=s,...,2s-1.
+Color the complete bipartite graph by
+
+    color(a,b)=(a+b-s) mod s.                             (13)
+
+At a fixed vertex no two incident edges have the same color. Thus the
+pair (vertex,color) identifies an edge uniquely. This remains true for
+any selected subset of the edges, including the 2n signed pairs.
+
+Augment each readout record in (2) by a register next to its active
+port carrying the color of its pair. The inactive neighbor carries a
+separate inactive color. The color is a function of f and s_L or s_R,
+hence of z_f(x), and is unchanged when x_f flips. All proofs of the
+Clifford maps therefore survive: they only used equality of the
+remaining record for those two logical inputs.
+
+Define a diagonal operator D_f on the left port and color register.
+For each of the two signed pairs belonging to flavor f, give its
+(a,color) slot eigenvalue +1 and its (b,color) slot eigenvalue -1.
+Set all other slots, including the inactive color, to zero. Proper
+edge coloring ensures these assignments are consistent and that the
+supports of D_f and D_g are disjoint for f!=g. Thus
+
+    V_col^dag D_f V_col = Z_f/(2n),
+    D_f D_g=0 for f!=g,   ||sum_f mu_f D_f||=max_f |mu_f|. (14)
+
+Indeed the left flavor-f readout sees +1 for x_f=0 and -1 for x_f=1,
+with probability 1/(2n). Every other left flavor and every right
+readout sees zero. This proves the compression and the norm statement.
+The operators are diagonal and preserve the exact grading.
+
+The color register is a separate neighboring site, not a second
+q-dimensional factor on the port site. In the scheduled circuit of
+Section 4, the partner can display the color after the logical bit
+has been transferred to the port. For balanced grades there are s
+colors and s even partner letters, so this display can preserve
+parity. It must be enabled only at completed readouts, for example
+by a fixed-size local controller flag; during partial computation
+(14) is not automatically the compression of an always-on field.
+This is an additional explicit obligation for a spatial controller.
+
+To see which target is accessible, let alpha=1/(2n) for the static
+colored code. With global Majoranas gamma_{j,a}, the already-proved
+identity R_{j,a} Gamma_{j+1,b}=i gamma_{j,a} gamma_{j+1,b} converts
+an arbitrary real coefficient matrix T in the boundary bond into
+an arbitrary real inter-site Majorana hopping matrix. For one
+complex flavor c_j=(gamma_{j,x}+i gamma_{j,y})/2,
+
+    -t(exp(-i theta)c_j^dag c_{j+1}+h.c.)
+      = (it/2)[sin(theta)(gamma_{j,x}gamma_{j+1,x}
+                            +gamma_{j,y}gamma_{j+1,y})
+                -cos(theta)gamma_{j,x}gamma_{j+1,y}
+                +cos(theta)gamma_{j,y}gamma_{j+1,x}].      (15)
+
+Also -mu c_j^dag c_j=(mu/2)Z_j-mu/2. Consequently a physical boundary
+bond lambda sum_ab T_ab B_a tensor A_b, together with the intra-cell
+field lambda alpha sum_f (mu_f/2)D_f, compresses to lambda alpha^2
+times the desired hopping and independent chemical potentials, up
+to a scalar. Formula (15) gives T explicitly, flavor by flavor.
+For history codes the field and port compression amplitudes may
+differ; their known scalar factors can be compensated in the field
+coefficient. This removes a separate controllability issue at first
+order. It does not prove stability at finite lambda.
+
+The script additionally checks the colored codes at (q,n)=(4,2),(6,4).
+It applies the actual boundary matrices and diagonal two-site fields
+to the augmented sparse isometry. Both port identities and all
+independent density identities hold below 3e-16, the density supports
+are disjoint, and the field norm agrees with (14). These tests are
+included in classical_readout_checks.json.
+
+
+## 26. Mobile boundary initialization and a quantitative gap
+
+The numbered subsections and internal section references below are local to this section.
+
+Status: proved in the specified invariant ordered-tag sector. The
+selection of that tag sector in an unrestricted ring remains open.
+There is no high-channel core or new CFT in this note.
+
+### 1. Repeated local bond
+
+Let a q-state core of k>=2 sites have positive operators h0,a,b and
+
+    H_core = g sum_{j=1}^{k-1} h0_{j,j+1} + a_1 + b_k,
+    ker H_core = range(V),   V^dag V=I_D,   g>0.           (1)
+
+This is frustration freeness with one-site boundary penalties, a
+larger class than the boundary-free cores in vacancy_parent.md.
+
+Enlarge the alphabet to
+
+    C|0> direct-sum (C^3_tag tensor C^q_payload),
+    tags L,B,R,   d_ext=3q+1.                             (2)
+
+Here 0 denotes a vacancy. Let n=|0><0|, and let h0_tilde act as h0
+on the payload of any two occupied sites, preserving their tags, and
+vanish otherwise. Put a_L=|L><L| tensor a on the occupied sector,
+b_R=|R><R| tensor b, both zero on all other letters. Use the repeated
+Hermitian bond
+
+    h_ext = U(n tensor I + I tensor n - 2n tensor n)
+      - w sum_{tag,alpha} (|0;tag,alpha><tag,alpha;0| + h.c.)
+      + g h0_tilde + a_L tensor I + I tensor b_R,          (3)
+
+with U,w>0. The orientation of the last two terms matters.
+
+On an open chain of N=k+p sites, restrict to the invariant sector
+whose occupied tags, read from left to right, are L B^(k-2) R.
+Vacancy hopping preserves this order. The sector is unitarily
+identified with
+
+    C^(binomial(N,p)) tensor (C^q)^(tensor k).             (4)
+
+In this sector (3) gives
+
+    H_ext = H_ch tensor I
+       + g sum_j D_j tensor h0_j + I tensor(a_1+b_k).     (5)
+
+H_ch has diagonal U times the number of vacant-occupied interfaces
+and hopping -w for each vacancy-particle exchange. D_j projects onto
+charge configurations in which occupied particles j and j+1 are
+adjacent. The L particle is never at site N because k>=2, so a_L in
+the left slot of (3) is counted exactly once. Likewise R is never at
+site 1, so b_R in the right slot is counted exactly once. There are
+no missing half-weights or charge-dependent endpoint coefficients.
+
+### 2. Complete code and boundary maps
+
+The charge graph is connected. Let chi_p>0 be its normalized unique
+ground vector and e_p its energy. Positivity in (5) shows H_ext>=e_p.
+Frustration freeness of (1) shows that
+
+    V_p = chi_p tensor V                                  (6)
+
+attains this bound. Conversely, any ground state must lie in the
+ground space of H_ch tensor I, so it is chi_p tensor phi. Every
+<chi_p|D_j|chi_p> is strictly positive, as every allowed charge
+configuration has positive amplitude. Zero expectation of the
+remaining positive terms in (5) forces every h0_j, a_1 and b_k to
+annihilate phi. Therefore (6) is the complete ground code in this
+sector. No reflection symmetry of the payload is assumed.
+
+Extend an original left endpoint operator F to |L><L| tensor F,
+zero on vacancies and other tags. The physical first site contains
+the L particle whenever it is occupied. Hence its compressed action
+is r_p V^dag F_1 V, where
+
+    r_p=1-Prob_chi_p(first site vacant).
+
+The right endpoint operator |R><R| tensor F similarly gives
+r_p V^dag F_k V. Equality of the probabilities follows from the
+reflection symmetry of H_ch alone. Thus boundary initialization
+does not change the earlier scalar dilution factors.
+
+For the two lengths p=1,2, a shift of the cut between cells can
+preserve the occupied counts only by transferring a vacancy. All
+ordered tags and payload labels stay in their respective cells.
+The exact overlap therefore remains
+
+    (V_2 tensor V_1)^dag (V_1 tensor V_2)=beta I_(D^2),
+    beta=[sum_{s=0}^{k} chi_1({s}) chi_2({s,k+1})]^2>0.   (7)
+
+Reflection of the charge state identifies the two overlap factors.
+The formula concerns projected transport and allows leakage from
+the code, just as the original vacancy extension did.
+
+### 3. A quantitative gap
+
+Write delta for the charge gap, gamma for the core gap in (1), and
+
+    p_min=min_j <chi_p|D_j|chi_p> >0,
+    M=g(k-1)||h0||+||a||+||b||.
+
+The spectral gap above the complete code (6) obeys
+
+    gap(H_ext) >= delta p_min gamma /
+                  [ (sqrt(delta)+sqrt(M))^2+p_min gamma ]. (8)
+
+Proof. Subtract e_p. Call the positive second part of (5) V_int,
+with ||V_int||<=M. For a normalized psi orthogonal to (6), write
+
+    psi=x+eta,  x=|chi_p><chi_p| psi,  eta perpendicular to chi_p,
+    E=<psi|H_ext-e_p|psi>.
+
+Then ||eta||^2<=E/delta, and x=chi_p tensor phi with phi perpendicular
+to the core kernel. Charge compression of V_int gives
+
+    g sum_j p_j h0_j + a_1+b_k >= p_min H_core.
+
+Consequently <x|V_int|x> >= p_min gamma ||x||^2. On the other hand,
+the triangle inequality for V_int^(1/2) gives
+
+    sqrt(<x|V_int|x>)
+       <= sqrt(<psi|V_int|psi>)+sqrt(M)||eta||
+       <= sqrt(E)(1+sqrt(M/delta)).
+
+Use ||x||^2=1-||eta||^2>=1-E/delta and rearrange to obtain (8).
+This argument also works if the last lower bound is negative, since
+the rearranged inequality still follows. QED.
+
+The bound respects the small tunneling gap of the charge state. It
+does not claim a uniform lower bound as k grows, or as w approaches
+zero. It makes the finite-scale assumption needed for later
+inter-cell perturbation estimates explicit.
+
+### 4. Checks and limitation
+
+Run
+
+    OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python3 tagged_vacancy_checks.py
+
+The example has q=3,k=3,h0=(I-swap)/2, a=.8|2><2|,
+b=1.1|2><2|, and g=.7. Its complete core is the four-dimensional
+symmetric space using only colors 0 and 1. The boundary-free core
+would instead have dimension ten, so the boundary penalties have
+a nontrivial effect. Compressed X,Y,Z on the two retained colors
+give noncommuting endpoint operators.
+
+The script directly assembles each term of (3), including the
+oriented boundary penalties, at p=1,2 and w=.3,.5 with U=1.
+Sector dimensions are 108 and 270. It checks complete ground
+multiplicities, the code, both endpoints, the cut overlap, and (8).
+All code/port/overlap errors are below 8e-16. The smallest measured
+gap is 0.00040717926, above its lower bound 0.000037792674.
+Outputs are in tagged_vacancy_checks.json.
+
+The result removes the restriction to boundary-free frustration-free
+cores from the vacancy extension. It does not establish a code with
+many Clifford channels, select the ordered L B...B R sector against
+arbitrary tag sequences, or prove a conformal phase after coupling
+cells. The number of occupied sites can be selected within the
+one-L/one-R ordered sector by the separate length filter below.
+
+
+## 27. The helix filter and occupied-number selection
+
+The numbered subsections and internal section references below are local to this section.
+
+Status: proved. The selection theorem is for the invariant sector with
+one L and one R endpoint tag in the correct order. It does not select
+that sector against arbitrary tag patterns, and is not an all-ring
+or conformal construction.
+
+### 1. An initialized helix accepts one desired length
+
+Fix k>=2 and set phi=2pi/(k+2). Write
+
+    |+_theta>=(|0>+exp(i theta)|1>)/sqrt(2),
+    |s_phi>=(|01>-exp(-i phi)|10>)/sqrt(2),
+    h_phi=|s_phi><s_phi|,
+    a=I-|+_0><+_0|,
+    b=I-|+_{(k-1)phi}><+_{(k-1)phi}|.
+
+On an r-site open chain use
+
+    F_r=sum_{j=1}^{r-1}(h_phi)_{j,j+1}+a_1+b_r.           (1)
+
+Every term is positive. The ground kernel is nonzero if and only if
+
+    r = k mod (k+2),                                     (2)
+
+and at those lengths it is one-dimensional, spanned by
+
+    |g_r>=tensor_{j=0}^{r-1}|+_{j phi}>.                  (3)
+
+In particular the only accepted length in 2<=r<=k+2 is r=k.
+
+Proof. The product of on-site rotations diag(1,exp(i j phi)) maps
+the usual spin-half ferromagnetic singlet projectors to h_phi on
+each bond. The kernel of the untwisted sum is the symmetric subspace,
+because the adjacent transpositions generate all permutations.
+The first boundary condition pins its first spin to |+_0>. Symmetry
+then pins every spin, so the simultaneous kernel of the bulk and
+left boundary term is exactly (3). Its right boundary expectation is
+
+    beta_r=<g_r|b_r|g_r>=sin^2((r-k)phi/2).               (4)
+
+It vanishes exactly when (2) holds. Positivity excludes other zero
+states. QED.
+
+The phase and boundary projector are fixed for the selected k and do
+not depend on the physical ring length. Using an irrational phi/(2pi)
+instead would accept exactly r=k among all positive lengths. The
+rational choice above has a useful explicit rejection bound on the
+finite range needed here.
+
+### 2. Explicit rejection energy
+
+For r>=2, the bulk plus left boundary Hamiltonian has gap at least
+
+    kappa_r=1/[r(2r-1)]                                  (5)
+
+above its unique ground state (3). Here and below the bounds are
+deliberately conservative.
+
+Proof of (5). Untwist and rotate |+_0> to |0>. Let
+
+    H_left=n_1+sum_{i=1}^{r-1} h_i,
+    n_j=|1><1|_j,   h_i=(I-S_{i,i+1})/2.
+
+For any normalized psi of energy E, move site 1 to site j by the
+j-1 adjacent swaps. If U is that product, n_j=U n_1 U^dag and
+
+    ||n_j psi|| <= ||n_1 psi||+||(U^dag-I)psi||
+       <= sqrt(<n_1>)+2 sum_{i<j} sqrt(<h_i>)
+       <= sqrt((4j-3) E).
+
+The product-minus-identity telescopes with the remaining unitaries
+on the left of each factor, so its norm is bounded by the stated
+sum on the original vector. Also (I-S_i)=2h_i and h_i is a projector.
+The last inequality is Cauchy-Schwarz. Since n_j is a projector,
+
+    <sum_j n_j> <= sum_j(4j-3) E = r(2r-1) E.
+
+On the orthogonal complement of |0>^r, sum_j n_j>=I. This proves
+(5). Unitary conjugation gives the twisted statement. QED.
+
+Adding the mismatched right boundary yields
+
+    lambda_min(F_r) >=
+      kappa_r beta_r / [(1+sqrt(kappa_r))^2+beta_r].        (6)
+
+To prove this, let psi=c g_r+eta, eta perpendicular to g_r, and
+E=<psi|F_r|psi>. Then ||eta||^2<=E/kappa_r. Because b_r is a
+projector,
+
+    sqrt(beta_r)|c| = ||b_r c g_r||
+       <= ||b_r psi||+||b_r eta||
+       <= sqrt(E)+sqrt(E/kappa_r).
+
+Together with |c|^2>=1-E/kappa_r, rearrangement gives (6).
+
+For all 2<=r<=k+2 with r!=k, define
+
+    kappa_* = 1/[(k+2)(2k+3)],
+    beta_* = sin^2(pi/(k+2)),
+    epsilon_* = kappa_* beta_* /
+                  [(1+sqrt(kappa_*))^2+beta_*] > 0.        (7)
+
+Then F_r>=epsilon_* I. The minimum nonzero sine-squared on the
+relevant integer phases is at least beta_*, and kappa_r>=kappa_*.
+The right side of (6) increases with either kappa_r or beta_r, which
+proves the uniform claim. In particular epsilon_* is of order k^-4.
+This is a finite interval of rejected lengths, not a uniform
+spectral gap over every r.
+
+### 3. Selecting k occupied sites at physical lengths k+1 and k+2
+
+Take any positive uniform payload bond h_pay on q states, with
+positive one-site boundary terms a_pay,b_pay. Suppose its k-site
+core is frustration free with complete code V. Tensor one filter
+qubit onto every occupied payload site. In occupied coordinates use
+
+    h_core = h_pay tensor I + J I tensor h_phi,
+    a_core = a_pay tensor I + J I tensor a,
+    b_core = b_pay tensor I + J I tensor b,                (8)
+
+where the tensor ordering on a two-site bond is understood by grouping
+payload and filter factors at each site. The occupied-site dimension
+is 2q. At length k the complete code is V tensor |g_k>.
+
+Apply the endpoint-tag construction of tagged_vacancy.md to these
+operators. Its local dimension is now 6q+1. Fix physical length
+N=k+1 or k+2, but allow EVERY occupied number r=2,...,N in the
+union of ordered-tag sectors L B^(r-2) R. The same repeated bond is
+used at both lengths. Choose
+
+    J >= 2U/epsilon_*,      0<w<U/(k+1).                 (9)
+
+Then the global ground space within that entire union is in the
+r=k sector. It is the complete code
+
+    chi_{N-k} tensor V tensor |g_k>,                    (10)
+
+and every other r sector lies at least
+
+    U-w(N-1)>0                                          (11)
+
+above it. There is no vacancy chemical potential in this theorem.
+
+Proof. First set w=0. A charge configuration contributes U per
+occupied-vacant interface. If it has at least two interfaces, its
+energy is at least 2U because all payload and filter terms are
+positive. If it has exactly one interface, all occupied sites form
+one contiguous interval touching a physical endpoint. Its filter
+Hamiltonian is then the full initialized F_r. For r!=k, (7)-(9)
+give filter energy at least 2U, in addition to its interface energy.
+The only configuration with no interface in the present r>=2
+sector is full occupation, r=N. This also has r!=k and its initialized
+filter energy is at least 2U. Therefore every wrong-r sector has
+energy at least 2U at w=0.
+
+The hopping operator on each physical bond exchanges a vacancy and
+an occupied site and has norm one before multiplication by w.
+There are N-1 bonds, so switching on hopping lowers any sector's
+ground energy by at most w(N-1). Every wrong sector thus has
+
+    E_wrong >= 2U-w(N-1).                                (12)
+
+At r=k the initialized payload and filter are frustration free.
+The endpoint-tag theorem proves the exact code (10) and energy
+E_target=e_{N-k}. An endpoint droplet of the N-k vacancies is a
+normalized charge trial state with expectation U and zero hopping
+expectation. Thus E_target<=U. Combining with (12) proves (11).
+Condition (9) makes it positive for both physical lengths. QED.
+
+The first and last payload maps retain their factors r_p, because
+the physical observable can act as F tensor I_filter and the filter
+state has norm one. The cut-shift transport coefficient remains
+beta I on the payload codes. Neither operation changes the number
+of occupied sites in a code cell. Thus (10) supplies the occupied-
+number selection that was absent from the original vacancy theorem,
+provided the ordered one-L/one-R sector is available.
+
+### 4. What this resolves and what it does not
+
+The earlier failure of a vacancy chemical potential did not establish
+that occupied-number selection is impossible. The filter changes the
+fully occupied sector by a positive frustration cost, and the
+interface energy prevents wrong-length particles from avoiding that
+cost cheaply by splitting into separate clusters. This is the
+mechanism of (11).
+
+The construction also explains why the boundary-free finite-witness
+theorem does not bound the initialized length selector. The filter
+uses boundary terms whose relative orientation depends on k. It
+can accept an arbitrarily late first length at fixed filter
+dimension two. The repeated tagged bond still has many other tag
+sectors, including zero-cost product sectors. The finite-witness
+theorem applies to the complete kernel and is not contradicted.
+
+Three restrictions remain. First, the theorem assumes the one-L/one-R
+ordered tag sector. Competing tag counts, invalid ordering, and
+marker sectors in a full ring need separate control. Second, it
+uses physical cell lengths k+1 and k+2, whose selection and mobile
+coupling must be combined consistently with the payload. Third,
+condition w<U/(k+1) places this charge Hamiltonian in a strongly
+attractive regime if it is used on an unrestricted long ring.
+The calculation therefore cannot be repurposed as a proof of a
+homogeneous gapless charge fluid. Its use is inside finite cells.
+
+There is still no uniform NN high-channel core, and no proof of
+finite-coupling conformal behavior for the combined model.
+
+### 5. Checks
+
+Run
+
+    OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python3 length_filter_checks.py
+
+The script checks k=3,4, every filter length 2<=r<=k+2, and all
+occupied-number sectors 2<=r<=N at N=k+1,k+2. It uses U=1,w=.1
+and J=2/epsilon_*, approximately 433.953 and 797.985. The filter
+has only the specified zero state at r=k, its mismatched energies
+obey (6)-(7), and the pinned-left gaps obey (5).
+
+Every number-sector inequality (12) holds. The measured wrong-sector
+separations for the four cells are about .99135, .89036, .99010,
+and .86476, above the respective guarantees .7,.6,.6,.5. The largest
+sector matrix has dimension 240. Ground-code residuals are below
+4.4e-13 despite the large conservative filter coupling. The output
+is length_filter_checks.json. These are exact finite-cell checks,
+not central-charge measurements.
+
+
+## 28. A complete two-length finite-cell wrapper
+
+The numbered subsections and internal section references below are local to this section.
+
+Status: proved open-chain theorem. It supplies a single repeated
+nearest-neighbor bond with the complete desired ground code at two
+adjacent lengths. It is conditional on an initialized frustration-free
+payload core. The resulting bond by itself does not form these cells
+on a periodic ring.
+
+### 1. Statement
+
+Assume a q-state uniform positive payload bond h_pay and positive
+one-site boundary terms a_pay,b_pay have a frustration-free k-site
+open core with complete code V:C^D -> (C^q)^tensor k, k>=2.
+
+There is an explicit repeated nearest-neighbor Hermitian bond on
+dimension
+
+    d_wrap=6q+3                                           (1)
+
+whose complete ground code, on each of the open lengths N=k+1,k+2,
+is the initialized payload code tensored with a unique helix and a
+vacancy charge state. No particle-number or tag sector is imposed
+externally. Every other sector has a positive explicit energy
+separation. Both endpoint maps are scalar multiples of the original
+payload maps, and a local vacancy-label conversion gives scalar
+transport when the boundary between two cells moves.
+
+The proof combines the two-state length filter with a finite arrow
+alphabet. Details below also specify the bond and the competing
+sector bounds.
+
+### 2. Alphabet and bond
+
+Tensor the filter of length_filter.md onto each occupied payload
+site. Its dimension is Q=2q, and define
+
+    h0=h_pay tensor I + J I tensor h_phi,
+    a=a_pay tensor I + J I tensor a_filter,
+    b=b_pay tensor I + J I tensor b_filter,                (2)
+
+with phi=2pi/(k+2) and J>=2U/epsilon_* as in that note.
+
+Use three arrow vertices 0,1,2 and the following site letters.
+
+| Letter | Arrow | Internal dimension |
+|---|---|---|
+| H_0 | 0 to 0 | 1 |
+| H_1 | 1 to 1 | 1 |
+| H_2 | 2 to 2 | 1 |
+| L_alpha | 0 to 1 | Q |
+| B_alpha | 1 to 1 | Q |
+| R_alpha | 1 to 2 | Q |
+
+The H letters are vacancies. A bond is legal when the outgoing
+vertex of its left letter equals the incoming vertex of its right
+letter. Let Pi_bad be the projector onto all mismatched pairs.
+
+Let n project onto the three vacancy letters. The charge part has
+diagonal U(n tensor I+I tensor n-2n tensor n) and the following
+off-diagonal terms, with amplitude -w for each rewrite and its
+reverse, for every alpha:
+
+    H_0 L_alpha <-> L_alpha H_1,
+    H_1 B_alpha <-> B_alpha H_1,
+    H_1 R_alpha <-> R_alpha H_2.                           (3)
+
+Every rewrite preserves the incoming and outgoing vertices of the
+pair. Both sides are legal. Therefore each Pi_bad on every physical
+bond commutes with every hopping term, including overlapping ones.
+The other terms below preserve each letter's arrow, so the full
+Hamiltonian commutes with all these violation projectors.
+
+Let h0_tilde act as h0 on internal labels of the legal occupied
+pair types LB, LR, BB, BR, preserving the types, and vanish otherwise.
+Let a_L=|L><L| tensor a and b_R=|R><R| tensor b. Let P_L,P_R denote
+the complete corresponding letter subspaces. The repeated bond is
+
+    h_wrap = K Pi_bad + h_charge + h0_tilde
+            +(a_L-mu P_L) tensor I
+            +I tensor(b_R-mu P_R).                       (4)
+
+Choose
+
+    0<w<U/(k+1),   mu=2U,   K=2mu+2U=6U.                (5)
+
+All coefficients are fixed for the selected k and independent of
+the length of any later ring. The bond is Hermitian. It need not
+be reflection invariant, owing to its oriented boundary terms.
+
+The charge bond is positive when U>=w. Its only nontrivial blocks
+are the disjoint two-by-two hopping blocks with diagonal U and
+off-diagonal -w. All other vacancy-occupied pairs have diagonal U,
+and all remaining charge entries vanish. Condition (5) implies
+this positivity. The filter, payload, and boundary penalties in
+(4) are also positive before the endpoint rewards are included.
+
+### 3. Selection of every tag and occupation sector
+
+First consider a legal open word. Its arrows form a path on the
+directed graph above. Such a path contains at most one L and one R,
+with L before R whenever both are present.
+
+If both are present, the occupied sequence is L B^(r-2) R for some
+r>=2. Vacancies before L must be H_0, between L and R must be H_1,
+and after R must be H_2. For every set of particle positions the
+vacancy labels are therefore unique. The rewrites (3) implement
+all usual vacancy-particle exchanges on those positions. The
+ordered-coordinate Hamiltonian is exactly the one in
+tagged_vacancy.md, with a constant reward -2mu. Neither reward is
+lost at an open endpoint, because L is not the last site and R is
+not the first site when both exist.
+
+At r=k the complete code is
+
+    W_p=chi_p tensor V tensor |g_k>,    p=N-k in {1,2},    (6)
+
+with energy E_p=e_p-2mu<=U-2mu. The length-filter theorem excludes
+all r!=k sectors in this legal two-endpoint class by at least
+U-w(N-1).
+
+If a legal word contains just one endpoint tag, its reward is at
+most mu. All other terms are positive, so its energy is at least
+-mu. A word with no endpoint tag has nonnegative energy. Relative
+to (6), these sectors lie at least mu-U=U and 2mu-U=3U higher,
+respectively. Missing oriented rewards at physical endpoints only
+increase these bounds.
+
+Now consider an arbitrary sector with v>=1 bad bonds. Cutting at
+these bonds produces v+1 legal open paths. Each contains at most
+one L and one R, hence the total number of endpoint tags is at
+most 2(v+1). Keeping the positive terms and bounding the rewards
+gives
+
+    H_wrap >= Kv-2mu(v+1).
+
+The violations commute with the Hamiltonian, so this is a bound
+on the entire corresponding invariant sector, not just on basis
+configurations. Comparing with E_p<=U-2mu gives
+
+    E_bad-E_p >= (K-2mu)v-U >= U.                       (7)
+
+Thus all illegal sectors are excluded as well. The full ground
+code on each length N=k+1,k+2 is exactly (6), with no imposed
+sector or external boundary term. QED.
+
+### 4. Gap and endpoint maps
+
+Let gamma be the gap of the initialized k-site core in (2), delta_p
+the charge gap, p_min the smallest adjacent-particle probability,
+and
+
+    M=(k-1)||h0||+||a||+||b||.
+
+The complete open-chain gap obeys
+
+    gap(H_wrap,N) >= min {
+       delta_p p_min gamma /
+         [(sqrt(delta_p)+sqrt(M))^2+p_min gamma],
+       U-w(N-1) }.                                      (8)
+
+The first term is the within-code-sector bound proved in
+tagged_vacancy.md. The second is the smallest of the occupation,
+missing-endpoint, and illegal-sector bounds above. This may be
+very small at fixed k; it is not a thermodynamic gap theorem for
+the eventual array of cells.
+
+For a payload endpoint observable F, define its physical lift on
+the L letters as F tensor I_filter, zero on other letters. The
+first-site compression is
+
+    W_p^dag F_L(first) W_p = r_p V^dag F(first) V,
+    r_p=1-Prob_chi_p(first site vacant).                  (9)
+
+The analogous R lift on the last physical site gives the same
+factor r_p times the original last-site compression. Core
+reflection symmetry is unnecessary.
+
+### 5. Moving a boundary requires a vacancy conversion
+
+Typed vacancies change the earlier transport rule. Let the initial
+left and right cells have lengths k+1,k+2 and shift their shared
+cut one site to the right, giving lengths k+2,k+1. The site crossing
+the cut is initially the first site of the right cell. For a
+nonzero projected overlap it must be vacant, since both cells
+still have k occupied labels.
+
+Before the shift that vacancy is H_0, since it precedes the right
+cell's first occupied site. Afterwards it must be H_2, since it
+follows the left cell's last occupied site. These are orthogonal
+physical letters. The identity operator on the crossing site
+therefore gives zero overlap, not the scalar overlap of the
+untyped construction.
+
+Use instead the local partial isometry
+
+    C_vac=|H_2><H_0|                                    (10)
+
+on the crossing site, with its adjoint for the reverse move.
+All remaining vacancy labels and ordered payload labels agree.
+Consequently
+
+    (W_2 tensor W_1)^dag C_vac(crossing site)
+       (W_1 tensor W_2) = beta I_(D^2),
+    beta=[sum_{s=0}^{k} chi_1({s}) chi_2({s,k+1})]^2>0.   (11)
+
+The filter states also overlap to one because their occupied
+coordinate sequences are unchanged. The same reasoning proves
+the identity for every payload V, not just for product payloads.
+If a two-site marker hop moves the cut, (10) can be included on
+the transferred site within that same two-site operator. This
+does not yet prove the infrared behavior of the resulting model.
+
+### 6. Why this bond alone does not solve the ring problem
+
+The arrow graph was deliberately acyclic apart from its loops.
+A legal closed path cannot contain L or R. On a periodic ring
+with v>=1 mismatches there are v legal segments, so the stronger
+cyclic bound #L+#R<=2v holds. Equation (4) then gives
+
+    H_ring >= (K-2mu)v > 0
+
+in every violating sector. All-H_0 and all-H_2 states are legal
+zero-energy ring states. Thus the uniform periodic model (4) has
+no ground-state cells of the desired type. A separate marker or
+selector must provide the arrow resets at cell boundaries and
+the intended boundary couplings. Applying (4) unchanged on a
+ring is a failed construction, not an untested conjecture.
+
+The theorem supplies a local finite-cell wrapper to insert into
+such a selector. What it removes is the need to assume particle
+number and endpoint-tag sectors inside each selected cell. The
+missing high-channel initialized core, consistent mobile selector,
+and finite-coupling CFT control remain separate open problems.
+
+### 7. Verification
+
+Run
+
+    OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python3 arrow_wrapper_checks.py
+
+The example uses k=3, a trivial one-dimensional payload, the qubit
+filter, and d_wrap=9. It constructs the complete bond (4) and
+diagonalizes the entire legal space at N=4,5, including absent
+and incomplete endpoint tags. Their dimensions are 315 and 961,
+inside full Hilbert spaces of dimensions 6561 and 59049. The
+ground energies agree with e_p-2mu within 7e-13. The ground-code
+residuals are below 2.6e-13. The measured gaps are .00196022849
+and 5.06281047e-7, illustrating the small tunneling scale.
+
+The program verifies the overlapping-bond violation commutators
+exactly to numerical precision, positivity of the charge bond,
+and #L+#R<=2(v+1) for every word of length five. This validates the
+algebra used to bound the illegal sectors. Those sectors are
+excluded by (7), not by a full diagonalization of dimension 59049.
+The unconverted cut overlap is zero; after (10) it is
+beta=.24951049536 with error below 3e-16. Results are written to
+arrow_wrapper_checks.json. There are no CFT estimates here.
+
+
+## 29. Fifth-run verification, limitations, and ranked continuation
+
+Status remains nonconclusive. Every new theorem and construction appears
+with its proof in Sections 25-28. The companion notes give the same
+arguments separately, and PROGRESS.md is the resumable handoff.
+
+Run the four scripts from this folder with OPENBLAS_NUM_THREADS=1 and
+OMP_NUM_THREADS=1. The scripts require only Python, numpy and scipy and
+write their corresponding *_checks.json outputs. The new scripts are
+classical_readout_checks.py, tagged_vacancy_checks.py,
+length_filter_checks.py, and arrow_wrapper_checks.py. All passed, as did
+Python compilation. Earlier suites were not rerun without a new reason.
+
+The largest ground-energy discrepancy in the new open-cell calculations
+was below 7e-13. Static Clifford-port and bond identities were checked
+below 1e-15. The full initialized-clock spectra agreed within 1.2e-14.
+The complete arrow-cell legal spaces had dimensions 315 and 961; their
+illegal sectors were excluded by the proved energy bounds rather than
+by diagonalizing the full 59049-dimensional matrix. The smallest tested
+arrow-cell gap was about 5.06e-7. These checks do not certify a large-c
+microscopic model. No independent referee or network/cluster computation
+was used, and no file outside this folder was modified.
+
+The attempts that stalled are explicit. The nonnegative isometry and
+the global history are complete codes, but neither is a uniform spatial
+core. A scheduled reversible circuit is still externally controlled.
+The initialized vacancy extension initially required a fixed tag sector;
+the arrow wrapper removes that requirement for finite open cells. The
+unmodified wrapper then fails on rings, proved in Section 28.6. Finite
+cell gaps and first-order target control do not establish fixed-coupling
+conformal behavior of a coupled array.
+
+The next work is ranked as follows.
+
+1. Build the initialized repeated-bond controller for the graded
+   classical readout. It must implement the sweeps and counters,
+   exclude malformed histories, restore logical input after its full
+   program, and gate the density operators only at completed readouts.
+   The required gate menu is smaller than a general quantum compiler's.
+2. Insert that core into the complete finite-cell wrapper and combine
+   it with the mobile selector. Include the vacancy conversion, arrow
+   resets, physical-length selection, and all periodic sectors in the
+   actual microscopic bond. The selector is a separate construction.
+3. Prove infrared control for the resulting length and payload modes.
+   Exact parity and well-separated incommensurate Fermi points are
+   useful design conditions. The finished ir_control contribution
+   does not supply the general leakage or conformal-spectrum theorem.
+4. For the bound direction, control neutral/emergent sectors without
+   assuming microscopic-current completeness or a conformal onset bound.
+   No new whole-class bound was obtained here.
+5. The earlier rank-one d=20992 candidate remains a separate test of
+   c<=r(h), subject to its original thermodynamic and IR premises. It
+   has not been promoted to a verified example.
+
+The finite-cell sector and occupied-number problems are resolved under
+an initialized-core hypothesis. The high-channel spatial core and the
+conformal ring remain open.

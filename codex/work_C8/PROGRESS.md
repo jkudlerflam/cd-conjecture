@@ -1,82 +1,99 @@
 # C8 progress
 
-2026-10-27. Fourth run finished, nonconclusive. The complete report is
-`RESULT.md`; new proofs are in Sections 20-24 and the four supporting
-notes listed below. All writes stayed in this folder.
+2026-10-27. Fifth run finished, nonconclusive. The full report is
+`RESULT.md`, with new proofs in Sections 25-29 and four supporting notes.
+All writes stayed in this folder. Start here; do not redo completed work.
 
-## Current best answer and restart point
+## Current best answer
 
-No verified counterexample, whole-class bound, or fixed-d unbounded-c
-construction has been obtained. Do not redo the previous joint-code,
-second-order, exact-encoding, frozen-ring, vacancy, or selector work.
-Their proofs and limitations remain in RESULT.md.
+No verified counterexample, bound for the full class, or construction
+of unbounded c at fixed d has been obtained. The main new result is a
+complete finite-cell wrapper: ANY initialized uniform frustration-free
+q-state core can be put into one repeated nearest-neighbor bond of
+local dimension 6q+3 whose COMPLETE open-chain ground code at BOTH
+lengths k+1,k+2 is the original payload, a fixed auxiliary helix, and
+a vacancy wavefunction. All competing particle numbers, endpoint
+counts, and illegal arrow sectors are excluded with explicit gaps.
+The wrapper alone fails on rings; a separate selector must supply resets.
 
-New proved results in this run:
+## New proved results and files
 
-1. `boundary_rank_obstruction.md`: a code vector of boundary Schmidt
-   rank s limits any exact scaled Clifford family to m<=2qs-s^2.
-   A single product vector therefore forces c_target<=q-1 for even
-   m. Rank(h0)<q positive uniform parents have arbitrary product
-   extensions, which give a stronger exact and approximate joint-port
-   obstruction. Commuting FF parents and the specified injective
-   2-site MPS edge-code class also fail as high-channel completions.
-   The earlier Choi code evades the product-state premise, since all
-   of its code vectors have full boundary Schmidt rank.
-2. `qubit_ff_witness.md`: K_FF(2)=4, sharply. The explicit projector
-   I-|01><01|-|1+><1+| is FF on three sites and not on four. A q-state
-   generalization proves K_FF(q)>=q+2 for q>=2. This concerns uniform
-   positive open chains without boundary terms, not general CFTs.
-3. `graded_core.md`: h0=(I-P_graded)/2 on q=n+1 states has a complete
-   2^n-dimensional ground code for N>=n, exact formulas at both ports,
-   and normalized Clifford error 1-sqrt(1-(n-1)/N). It supplies only
-   c_target=n=q-1, before selector cost. Adding even colors leaves a
-   product vector and cannot produce more exact channels on the
-   complete code. This constructive route stalls as a violation.
-4. `symmetry_rank_bound.md`: the active image of an on-site Lie algebra
-   embeds in direct_sum so(n_j), with n_j the connected bond's Schmidt
-   singular-value multiplicities. Current completeness gives
-   c<=min(d^2-1,sum_j n_j(n_j-1)/2). Gaussian modes resolved by commuting
-   on-site charges satisfy c<=sum_j floor(n_j/2)<=floor(r(h)/2).
-   Neutral and emergent sectors remain outside the assumptions.
+1. `classical_readout.md`: nonnegative equal-amplitude simultaneous
+   Clifford ports with n<=floor(q(q-1)/4) complex flavors, scale 1/(2n).
+   An exactly graded version has n<=floor(q_+ q_-/2). Its flat parent
+   is stoquastic. A clean classical-permutation history gives exact
+   ports and gap 1-cos(pi/(2C)). A scheduled local reversible readout
+   circuit is described, but its autonomous uniform controller is NOT
+   constructed. Proper edge coloring also gives independent logical
+   Z_f fields from diagonal two-site readout operators, so the code
+   can reach the incommensurate target at first order.
+2. `tagged_vacancy.md`: mobile endpoint tags extend the previous vacancy
+   construction to cores with positive one-site boundary penalties.
+   A quantitative within-sector gap is delta p_min gamma divided by
+   ((sqrt(delta)+sqrt(M))^2+p_min gamma).
+3. `length_filter.md`: a pinned qubit helix accepts only occupied length
+   k in the needed range, with explicit rejection energy of order k^-4.
+   At J_filter>=2U/epsilon_* and 0<w<U/(k+1), both physical lengths
+   k+1,k+2 select k occupied sites with margin >=U-w(N-1), initially
+   assuming the ordered endpoint-tag sector.
+4. `arrow_wrapper.md`: three arrow states and endpoint rewards remove
+   that sector assumption, giving the complete finite-cell theorem
+   above. Cut transport requires the local conversion |H_after><H_before|;
+   with it the overlap is beta I, while the identity overlap is zero.
+   Periodic use of this wrapper WITHOUT a separate selector is proved
+   to fail: legal closed paths cannot contain endpoint tags.
 
-Latest checks, with single-thread BLAS:
+## Verification
 
-- `python3 boundary_ff_checks.py`: low-rank product extensions and
-  compressed spectral extrema at q=2,3,4, N=4, errors below 3e-15;
-  real image dimensions through q=5; six qubit line families at
-  N=3,4,5 in three bases; explicit sharp-witness spectra at q=2,3,4
-  up through dimension 4096. All pass.
-- `python3 graded_core_checks.py`: five (n,N) pairs through physical
-  dimension 1024, port errors below 3e-16 and isometry below 1.5e-15;
-  complete ground multiplicities through dimension 256. All pass.
-- `python3 schmidt_symmetry_checks.py`: seven explicit models, including
-  Ising, XX, XXZ, XYZ, Heisenberg, and two XX chains. Invariance residuals
-  below 4e-16. All pass. These are algebraic tests, not CFT estimates.
-- All three new scripts compile. Earlier suites were not rerun. No new
-  microscopic CFT, independent referee, network or cluster computation.
+All four new scripts passed with single-thread BLAS and compile:
 
-Open problems, ranked:
+- `classical_readout_checks.py`: six static codes, two full global-clock
+  spectra at dimensions 160,900, and two colored density readouts.
+  Static port errors below 4e-16; projected-bond errors below 1e-15;
+  full-spectrum errors below 1.2e-14; colored readouts below 3e-17.
+- `tagged_vacancy_checks.py`: initialized q=3,k=3 cores at two vacancy
+  counts and two hoppings, sector dimensions 108,270. Errors below
+  8e-16, with complete codes and gap lower bounds checked.
+- `length_filter_checks.py`: k=3,4 and every allowed occupied number
+  at both lengths, up to dimension 240. Number-sector gaps obey the
+  analytic bounds; code residuals below 4.4e-13.
+- `arrow_wrapper_checks.py`: entire legal spaces of dimensions 315,961
+  within full physical spaces of dimensions 6561,59049. Ground-energy
+  errors below 7e-13. Illegal sectors excluded analytically and their
+  commuting violations checked. Converted transport error below 3e-16.
 
-1. A high-channel uniform core with controlled endpoint maps, now known
-   to require entangled boundaries for EVERY code vector. For the
-   existing vacancy extension it must be FF. High-rank noncommuting
-   history codes with boundary initialization remain possible. The
-   finite-history interface in the programmable-cell contribution
-   still does not establish its uniform microscopic embedding.
-2. Occupied-number selection at both cell lengths, then volume-uniform
-   infrared control of the coupled length/payload system. The new
-   graded core does not beat the unblocked channel budget.
-3. The thermodynamic effective theory and infrared-stability premises
-   for the rank-one d=20992 chain in RESULT.md Section 6. Its currents
-   must be emergent, consistent with the new symmetry theorem.
-4. A bound on neutral/emergent sectors or conformal onset without a
-   visibility assumption. The new current bound does not do this.
-5. K_FF(q) for q>=3, if pursuing the longest-FF-core selection mechanism.
-   The new lower bound q+2 need not be sharp.
+These are code and finite-cell tests, NOT microscopic CFT estimates.
+No earlier numerical suites were rerun. No independent referee used.
 
-Next action: pursue item 1 with the new necessary conditions, or item 3.
-Do not rescan low-rank, commuting, graded-ferromagnetic, or standard
-injective two-site MPS parents as candidate exact high-channel cores.
+## Remaining problems, ranked
+
+1. Construct the initialized uniform NN core for the nonnegative graded
+   readout code. The circuit needs only classical reversible operations,
+   but a repeated-bond controller must implement the schedule, preserve
+   grading, gate density fields at readout, exclude malformed histories,
+   and return all logical bits and ancillas correctly. A global clock
+   or a sequence of externally scheduled gates is insufficient.
+2. Combine the complete two-length wrapper with the mobile selector.
+   The selector must provide arrow resets and the vacancy conversion,
+   select the two physical lengths despite the payload energy shifts,
+   and handle all ring lengths. The finite-cell theorem alone does not.
+3. Control the resulting length/payload theory at fixed nonzero coupling.
+   The new ir_control contribution remains heuristic for general-cell
+   leakage and a conformal spectral conclusion. Exact parity and the
+   incommensurate target are the preferred design inputs.
+4. A whole-class bound still needs control of neutral/emergent sectors
+   or conformal onset. The fourth-run symmetry bounds remain conditional.
+5. The rank-one d=20992 model still needs thermodynamic reduction and
+   infrared control. No new result here verifies its central charge.
+
+Do not repeat the old joint dilation, second-order synthesis, exact-code
+no-go, frozen-ring no-go, graded-swap core, K_FF(2)=4, or boundary-Schmidt-
+rank work. The earlier code no-gos remain valid, but the old restriction
+of vacancy repair to boundary-free cores and the old occupied-number
+selection problem are now superseded by the complete finite-cell wrapper.
+
+Next action: item 1, a concrete reversible controller with initialized
+boundaries. Its high-channel code would feed directly into the new wrapper.
 
 The remainder is the chronological record. Its initial task list has been superseded by the ranking above.
 
@@ -434,3 +451,71 @@ Next: assess tag-sector enforcement and cyclic-history holonomy. Do not
 claim the attractive finite-cell vacancy model is itself a homogeneous
 conformal charge fluid. High-channel spatial cores and finite-coupling
 all-ring IR control remain the main unresolved issues.
+
+Substantive step 25 completed.
+
+`arrow_wrapper.md` removes the remaining sector assumption INSIDE an
+open cell. Use three arrow vertices, occupied letters L:0->1, B:1->1,
+R:1->2, and three vacancy loops. Legal paths have at most one L and R.
+Vacancy hopping changes its type when it passes an endpoint. Rewards
+-mu per endpoint select both; K times the matching-violation projector
+excludes every illegal sector. The violation projectors commute with
+all hopping terms. With mu=2U,K=6U, the length-filter theorem gives the
+COMPLETE desired code on both lengths k+1,k+2 at local dimension 6q+3,
+without external sector restrictions or boundary terms. An explicit
+full gap bound is included.
+
+Moving the cut now requires |H_after><H_before| on the crossing vacancy.
+The identity overlap is zero because those vacancy types are orthogonal.
+With the conversion, the overlap is again beta times the identity on
+both payloads. This conversion is local and can accompany a two-site
+marker hop.
+
+`arrow_wrapper_checks.py` passed complete legal-sector spectra of
+sizes 315 and 961, containing all tag and occupation sectors at physical
+dimension 9 and lengths 4,5. Ground-energy errors below 7e-13, code
+residuals below 2.6e-13, converted transport error below 3e-16.
+All length-five words obey the endpoint/violation count; overlapping
+violation commutators vanish. Illegal sectors are excluded analytically.
+
+A direct periodic use of this wrapper FAILS, proved: a closed legal
+arrow path cannot contain L/R, and illegal sectors cost (K-2mu)v>0.
+The all-vacancy ring is a zero-energy ground state. A selector must
+supply arrow resets at cell boundaries. Thus this is a complete finite-
+cell wrapper, not a microscopic ring counterexample.
+
+Next: final audit and integration into RESULT.md. The leading remaining
+construction problem is now a high-channel initialized uniform core,
+possibly via the new classical readout controller, followed by combining
+the wrapper with the mobile selector and controlling its infrared phase.
+
+Substantive step 26 completed.
+
+The graded classical readout code now also has independent logical
+Z_f fields from diagonal TWO-SITE physical operators. Properly color
+the selected bipartite port edges by color(a,b)=(a+b) mod(q/2), put
+that color in the adjacent readout register, and assign +/-1 to the
+two edge endpoints. Proper coloring makes the supports for distinct
+flavors disjoint. Compression is Z_f/(2n), and the norm of a combined
+field is max_f |mu_f|. Together with the arbitrary real boundary
+Majorana hopping matrix this reaches independent hopping phases and
+chemical potentials at first order. The spatial controller must gate
+the fields to completed readouts. Colored-code checks at (4,2),(6,4)
+pass below 3e-17, with port and density identities checked separately.
+
+The live `contrib/ir_control/` report finished during this run. Its
+verdict is still heuristic: exact grading and well-separated Fermi
+points are useful, but general-cell leakage and a full conformal
+spectral conclusion remain open. This run did not independently audit
+its literature or all of its proofs. No newly supplied theorem closes
+the main question.
+
+Fifth-run audit completed. The new finite-dimensional arguments were
+checked for port signs, complete-code hypotheses, initialization,
+charge-gap dependence, all competing open-cell sectors, and the
+necessary vacancy-type conversion. The periodic wrapper failure is
+proved and is recorded explicitly. All four numerical scripts passed;
+the classical-readout script was rerun only after adding density
+readouts and removing a dtype warning. Compilation passed. Earlier
+suites were not rerun. No whole-class conclusion, independent referee,
+network use, cluster job, commit, or push. All writes stayed here.

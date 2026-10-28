@@ -327,3 +327,81 @@ their ground multiplicities are 2 and 4, and their gaps agree with
 These are algebraic checks, not central-charge estimators. The
 large-q resource examples and the proposed spatial controller have
 not been simulated.
+
+## 7. Independent flavor densities from diagonal two-site readouts
+
+A stable-target proposal needs adjustable Fermi momenta in addition to
+the symmetric Majorana hopping. The graded code can supply independent
+logical Z_f fields through diagonal operators on a port and its neighbor.
+This is another code statement, not a complete local parent.
+
+Take q=2s with even letters a=0,...,s-1 and odd letters b=s,...,2s-1.
+Color the complete bipartite graph by
+
+    color(a,b)=(a+b-s) mod s.                             (13)
+
+At a fixed vertex no two incident edges have the same color. Thus the
+pair (vertex,color) identifies an edge uniquely. This remains true for
+any selected subset of the edges, including the 2n signed pairs.
+
+Augment each readout record in (2) by a register next to its active
+port carrying the color of its pair. The inactive neighbor carries a
+separate inactive color. The color is a function of f and s_L or s_R,
+hence of z_f(x), and is unchanged when x_f flips. All proofs of the
+Clifford maps therefore survive: they only used equality of the
+remaining record for those two logical inputs.
+
+Define a diagonal operator D_f on the left port and color register.
+For each of the two signed pairs belonging to flavor f, give its
+(a,color) slot eigenvalue +1 and its (b,color) slot eigenvalue -1.
+Set all other slots, including the inactive color, to zero. Proper
+edge coloring ensures these assignments are consistent and that the
+supports of D_f and D_g are disjoint for f!=g. Thus
+
+    V_col^dag D_f V_col = Z_f/(2n),
+    D_f D_g=0 for f!=g,   ||sum_f mu_f D_f||=max_f |mu_f|. (14)
+
+Indeed the left flavor-f readout sees +1 for x_f=0 and -1 for x_f=1,
+with probability 1/(2n). Every other left flavor and every right
+readout sees zero. This proves the compression and the norm statement.
+The operators are diagonal and preserve the exact grading.
+
+The color register is a separate neighboring site, not a second
+q-dimensional factor on the port site. In the scheduled circuit of
+Section 4, the partner can display the color after the logical bit
+has been transferred to the port. For balanced grades there are s
+colors and s even partner letters, so this display can preserve
+parity. It must be enabled only at completed readouts, for example
+by a fixed-size local controller flag; during partial computation
+(14) is not automatically the compression of an always-on field.
+This is an additional explicit obligation for a spatial controller.
+
+To see which target is accessible, let alpha=1/(2n) for the static
+colored code. With global Majoranas gamma_{j,a}, the already-proved
+identity R_{j,a} Gamma_{j+1,b}=i gamma_{j,a} gamma_{j+1,b} converts
+an arbitrary real coefficient matrix T in the boundary bond into
+an arbitrary real inter-site Majorana hopping matrix. For one
+complex flavor c_j=(gamma_{j,x}+i gamma_{j,y})/2,
+
+    -t(exp(-i theta)c_j^dag c_{j+1}+h.c.)
+      = (it/2)[sin(theta)(gamma_{j,x}gamma_{j+1,x}
+                            +gamma_{j,y}gamma_{j+1,y})
+                -cos(theta)gamma_{j,x}gamma_{j+1,y}
+                +cos(theta)gamma_{j,y}gamma_{j+1,x}].      (15)
+
+Also -mu c_j^dag c_j=(mu/2)Z_j-mu/2. Consequently a physical boundary
+bond lambda sum_ab T_ab B_a tensor A_b, together with the intra-cell
+field lambda alpha sum_f (mu_f/2)D_f, compresses to lambda alpha^2
+times the desired hopping and independent chemical potentials, up
+to a scalar. Formula (15) gives T explicitly, flavor by flavor.
+For history codes the field and port compression amplitudes may
+differ; their known scalar factors can be compensated in the field
+coefficient. This removes a separate controllability issue at first
+order. It does not prove stability at finite lambda.
+
+The script additionally checks the colored codes at (q,n)=(4,2),(6,4).
+It applies the actual boundary matrices and diagonal two-site fields
+to the augmented sparse isometry. Both port identities and all
+independent density identities hold below 3e-16, the density supports
+are disjoint, and the field norm agrees with (14). These tests are
+included in classical_readout_checks.json.

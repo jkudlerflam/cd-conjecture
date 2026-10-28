@@ -189,12 +189,65 @@ def history_check(q, n):
                 gap=float(spectrum[d]), predicted_gap=float(1-np.cos(np.pi/(2*c))))
 
 
+def colored_readout_check(q, n):
+    assert q % 2 == 0
+    s, d = q//2, 2**n
+    pairs, left, right = pairs_and_ops(q, n, True)
+    e = n*d
+    dims = (q, s+1, e, s+1, q)
+    rows, cols, coordinates = [], [], []
+    for x in range(d):
+        for side in range(2):
+            for f in range(n):
+                bs = bits(x,n)
+                neg = sum(bs[:f] if side == 0 else bs[f+1:]) % 2
+                a,b = pairs[f,neg]
+                color = (a+b-s) % s
+                val = port_value(x,n,f,side,pairs)
+                env = (side*n+f)*(d//2)+erased_bit(x,n,f)
+                coord = (val,color,env,s,0) if side == 0 else (0,s,env,color,val)
+                rows.append(np.ravel_multi_index(coord,dims)); cols.append(x)
+                coordinates.append(coord)
+    v = sp.csr_matrix((np.full(len(rows),1/np.sqrt(2*n)),(rows,cols)),
+                      shape=(int(np.prod(dims)),d))
+    gs,rs,_ = cliffords(n)
+    port_error = 0.
+    rest = v.shape[0]//q
+    for a,b,g,r in zip(left,right,gs,rs):
+        port_error = max(port_error,
+            opnorm(v.T@sp.kron(a,sp.eye(rest))@v-g/(2*n)),
+            opnorm(v.T@sp.kron(sp.eye(rest),b)@v-r/(2*n)))
+    masks = []
+    density_error = 0.
+    for f in range(n):
+        mask = np.zeros((q,s+1))
+        for a,b in pairs[f]:
+            color = (a+b-s) % s
+            mask[a,color],mask[b,color] = 1.,-1.
+        masks.append(mask)
+        values = np.array([mask[c[0],c[1]] for c in coordinates])
+        acted = sp.csr_matrix((values/np.sqrt(2*n),(rows,cols)),shape=v.shape)
+        z = sp.diags([(-1)**bits(x,n)[f] for x in range(d)],dtype=float)
+        density_error=max(density_error,opnorm(v.T@acted-z/(2*n)))
+    overlap = max(float(np.max(abs(a*b))) for i,a in enumerate(masks)
+                  for j,b in enumerate(masks) if i!=j)
+    mu = np.linspace(-.7,.9,n)
+    combined=sum(t*a for t,a in zip(mu,masks))
+    assert port_error<1e-13 and density_error<1e-13 and overlap==0
+    assert abs(np.max(abs(combined))-np.max(abs(mu)))<1e-13
+    return dict(q=q,n=n,physical_dimension=v.shape[0],neighbor_colors=s,
+                max_port_error=port_error,max_density_error=density_error,
+                distinct_density_support_overlap=overlap,
+                diagonal_field_norm=float(np.max(abs(combined))))
+
+
 def main():
     result = {'status': 'finite code checks, not CFT numerics',
               'static': [static_check(q, n, g) for q, n, g in
                          [(3, 1, False), (4, 3, False), (5, 5, False),
                           (6, 6, False), (4, 2, True), (6, 4, True)]],
-              'history': [history_check(3, 1), history_check(4, 2)]}
+              'history': [history_check(3, 1), history_check(4, 2)],
+              'density_readout': [colored_readout_check(4,2),colored_readout_check(6,4)]}
     with open('classical_readout_checks.json', 'w') as f:
         json.dump(result, f, indent=2)
     print(json.dumps(result, indent=2))

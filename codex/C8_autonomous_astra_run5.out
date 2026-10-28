@@ -1,0 +1,12 @@
+The run remains nonconclusive. No verified counterexample or full-class bound emerged.
+
+Two advances are proved:
+
+- A nearest-neighbor construction at dimension \(6q+3\) turns any initialized frustration-free core into complete ground codes at two adjacent cell lengths, with explicit sector and gap bounds.
+- Nonnegative joint Clifford codes support quadratically many channels and independently tunable flavor densities.
+
+All four numerical check scripts passed. These validate finite cells, not a microscopic CFT. The high-channel spatial core, periodic implementation, and infrared control remain open.
+
+Full proofs and reproduction instructions are in [RESULT.md](<work_C8/RESULT.md>), Sections 25–29. The resumable state and ranked next steps are in [PROGRESS.md](<work_C8/PROGRESS.md>). Only this folder was modified.
+
+[gpt_solve: backend=codex model=gpt-6-astra effort=high transcript=20261027T192025-38836]
