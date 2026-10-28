@@ -71,7 +71,7 @@ infrared estimate open. The overall classification remains conditional.
 
 ## Lead claim: unbounded c at fixed local dimension (how to reproduce)
 
-At the theoretical-physics standard, the current lead claim is c = n + 1 for every n at fixed local dimension d₀ = 4464, so no bound c ≤ f(d) exists. It rests on one stated standard Wilsonian input; no fatal error has been found by two independent referees; no human has checked it yet. To reproduce, read and rerun in this order:
+The current fixed-d candidate predicts c = n + 1 for every n at local dimension d₀ = 4464, which would exclude every bound c ≤ f(d). This is conditional on the stated Wilsonian input S, not an established refutation. The C44/C45 referee finds no fatal error and accepts the reduction to S; C46 explicitly leaves the full infrared step open. No human has checked it yet. To reproduce, read and rerun in this order:
 1. `codex/work_C39/` (the 46-letter frustration-free core and its all-n lacunary schedule; `checks.py`, `certify.py n`), refereed in `contrib/referee_C39/`.
 2. `codex/work_C42/` (explicit finite-D, finite-g bounds for every n).
 3. `codex/work_C44/` (the mobile wrapper at d₀ = 4464, audited for every n; `bounds_checks.py`, `consistency_checks.py`), built on `codex/work_C8/` and `codex/work_C32/`.
@@ -84,9 +84,19 @@ Open verification items: an independent rebuild of C44's source formula and tran
 1. **No counterexample at small d.** Nothing above d − 1 at d = 2, in symmetric families at d = 3 to 7, or at the best d = 4 target. The d = 3 hint failed C12's own follow-up; the independent check is still pending in the recorded status. New [qubit proof reductions](contrib/d2_gap_reduction/README.md) close symmetric ferromagnetic rank-one exchange with arbitrary uniform fields (c ≤ 1/2), add a rigorous interacting gapped region, and exhaust additive on-site spin symmetries, leaving one staggered-field family beyond the known controlled classes.
 2. **No general proof.** Every lattice quantity we know that bounds c grows like (a length scale) × log d, never like d. Proofs exist in restricted classes.
 3. **A leading conditional candidate at d=24.** The one-vacancy construction predicts c=24 using the explicit 23-state chain and its n=23 certificate. Its finite ingredients and conditional infrared argument have been checked; uniform vacancy matching and dressed-sector stability remain open. The older sparse species-graph proposal remains a separate route toward an unbounded ratio c/d; its complete controller still needs composition and review.
-4. **The stronger fixed-d goal remains separate.** Route A aims for unbounded c at one fixed d₀, which would rule out every bound c≤f(d). Its spatial realization of the required excited spectrum remains unfinished. The new first-order family has growing d and does not establish that stronger claim.
+4. **The stronger fixed-d candidate now has a finite spatial construction.** C39/C42 and the C44 wrapper supply the construction at d₀=4464; C45 closes a coupling schedule conditional on S. Its remaining central gap is microscopic infrared control, not the older missing spatial compiler. C46 proves partial thermal and finite-order results without establishing the full CFT limit. The sparse first-order family with growing d remains a separate construction.
 
-## Latest continuation: why the sparse first-order route leads
+## Direct attack on the remaining matching steps (2026-10-28)
+
+[proved local reduction; infrared step open] The
+[direct-attack campaign](contrib/direct_attack_20261028/README.md) gives an
+explicit finite-depth ultraviolet change of basis with a volume-independent
+remainder carrying one spatial moment. For s=J/t and a Gaussian cutoff
+delta=s^a, 0<a<1/18, its weighted remainder is o(J). This resolves a
+technical ultraviolet estimate in the vacancy matching route, but not the
+inhomogeneous low-frequency energy comparison or the CFT inference.
+
+## Parallel sparse first-order continuation
 
 **Reversible single-head compilation, 2026-10-28:**
 [digit_compiler](contrib/digit_compiler/README.md) supplies all signed

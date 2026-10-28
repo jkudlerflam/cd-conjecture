@@ -976,3 +976,25 @@ not been verified or refuted by these additions.
 - **One-vacancy mobile completion, numerics** (`contrib/vacancy_mobile_numerics/`, Claude agent; proposal credited to the collaborator). For the ten-letter demonstrator bond plus one vacancy (d = 11), exact diagonalization matched to the literal bond shows a unique ground state on L = 5 to 11, primes included (an exact Q = ±½ doublet when the occupied number is odd), against 3- to 22-fold degeneracy for the frozen chain; the frozen triplet's partners become charge-twist levels scaling as 1/L; the low spectrum matches free charge plus J times the frozen spectrum with error ∝ J²; the charge sector has z = 1 and calibrated Casimir c = 0.998. The payload is about 360 times slower than the charge, so full-chain finite-entanglement scaling sees only the charge boson (c ≈ 1.0 to 1.1) and a direct two-estimator c = 2 was out of reach; it rests on the demonstrated separation plus the demonstrator's c_payload = 1. Short rings keep a pattern defect (a slow rotor band, ground state still unique); the picture holds for J from 0.25 to 4 and densities 0 < ρ < 1 except ρ = 3/4. For d = 24 at n = 1, the frozen two- and fivefold ground states become unique on L = 5 to 8.
 - **C46, toward a rigorous infrared step** (`codex/work_C46/`, Astra). Proved: uniform thermal suppression of defects in the block-diagonal reference, explicit second-order time bounds, and the Gaussian reference's thermal coefficient with the physical gluing. A counterexample shows that a cell gap alone cannot justify the raw summed Grassmann expansion, so the decoupling theorem needs a resummed treatment. The full chain's c = n + 1 remains a conjecture at the rigorous level; the shortest path is a resummed matching of the massive sector, constructive RG for that action, and control of the thermal vacuum terms to o(T²).
 - **Final assembly of route A in mobile form** (`contrib/routeA_final/README.md`, Claude agent). One refereeable document covering the claim, every bond (written out or referenced), step tables with status tags, the order of limits, ranked gaps with closing calculations, and the likely referee attacks, in two forms: Form V (the 23-letter bond plus one vacancy, d = 24, c = 24 at n = 23, the primary claim against c ≤ d − 1) and Form W (C39's core in the C8 wrapper, d₀ = 4464, the route to unbounded c). New in the folder: C37's finite-field certificate ported to C32's core and checked for n ≤ 48, and the frozen 23-letter computation extended to n ≤ 40. Every finite-dimensional input is established at the working standard. Open: for Form V, the frozen payload's c = 23 at finite coupling and the vacancy matching, and uniqueness on every ring; for Form W, the one standard Wilsonian input of C45. A correction: the d = 47 vacancy completion of C39's core fails (no length selector), so the unbounded-c route is the wrapper version, or a vacancy lift of the full wrapper chain at d = 4465.
+
+
+## Direct-attack continuation, 2026-10-28
+
+[proved partial reduction; independently checked by parallel Codex agents] The
+new `contrib/direct_attack_20261028/vacancy/UV_NORMAL_FORM.md` replaces an
+unspecified ultraviolet locality estimate in the vacancy matching route by
+an explicit finite-depth circuit. Its first-spatial-moment remainder obeys
+C s^2 delta^-18 plus an exponentially small filter error, uniformly in volume
+and without a spectral gap. Choosing delta=s^a with 0<a<1/18 makes the
+physical remainder o(J). The inhomogeneous low-frequency energy comparison
+remains open. A separate exact Pauli-support argument in
+`contrib/direct_attack_20261028/alternatives/RESULT.md` proves that a uniform
+nearest-neighbor qubit Hamiltonian admitting a faithful term-by-term map to
+single Majorana bilinears already rotates to the usual quadratic or
+commuting Ising classes; it cannot yield c>1. All 4,096 supports were checked.
+
+[status correction] The current d=24 verdict is conditional. A quotation of
+the withdrawn verified-counterexample wording in `contrib/routeA_final/` was
+corrected. The older claim that fixed-d route A still lacks a spatial
+construction was superseded by C39/C42/C44; its current central gap is C45's
+input S, which C46 has not proved. No new counterexample is established.

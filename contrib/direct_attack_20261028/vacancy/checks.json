@@ -1,0 +1,30 @@
+{
+  "scope": "Finite matrix algebra sanity check only; no vacancy or locality conclusion",
+  "sites": 4,
+  "delta": 0.8,
+  "truncation_time": 1.5624999999999998,
+  "generator_antihermitian_error": 1.4972880762799149e-16,
+  "first_derivative_identity_error": 5.113939362477223e-15,
+  "quadratic_remainder_trials": [
+    {
+      "s": 0.02,
+      "remainder_norm": 0.0012610622051951587,
+      "remainder_over_s_squared": 3.1526555129878964
+    },
+    {
+      "s": 0.01,
+      "remainder_norm": 0.00031527500824579224,
+      "remainder_over_s_squared": 3.1527500824579224
+    },
+    {
+      "s": 0.005,
+      "remainder_norm": 7.881934313502745e-05,
+      "remainder_over_s_squared": 3.1527737254010977
+    },
+    {
+      "s": 0.0025,
+      "remainder_norm": 1.9704872726242364e-05,
+      "remainder_over_s_squared": 3.1527796361987783
+    }
+  ]
+}
