@@ -58,3 +58,23 @@ including the ring twist and complete first-order charge-ground projection.
 now excludes all wrong-length and illegal sectors on compatible rings
 for a fixed nonzero interval of port couplings. This does not supply the
 finite-coupling infrared conclusion of the vacancy construction.
+
+## Second checkpoint
+
+[checked] C33's n=23 512-bit loop matrices were independently regenerated
+with exact agreement, and its rational root certificate was rerun. The
+finite-g quadratic reference has 46 simple roots and the saved positive
+quadratic/quartic momentum margins. See `route_a/C33_AUDIT.md`.
+
+[proved free-charge bound] Charge boundary twists by themselves cost only
+O(1/L), but physical momentum restoration has a positive threshold at half
+filling. The bound holds for arbitrarily many particle-hole excitations
+and extends to bounded density rounding on arbitrary rings. Exact momentum
+optimization through L=256 checks it. See `doping_check/CHARGE_THRESHOLD.md`.
+
+[derived continuum selection rule] Including fractional period-24 marker
+harmonics, uniform vertices at half occupied density have reference
+dimension Delta_payload+4h². The inherited payload margins exclude all
+non-Gaussian dimensions below three. Independent reviews agree; the
+finite-J phase conclusion remains under review. See `infrared/README.md`
+and `doping_check/LOCALITY_REVIEW.md`.

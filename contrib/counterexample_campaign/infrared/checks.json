@@ -1,0 +1,36 @@
+{
+  "status": "exact_rational_root_to_resonance_check_passed",
+  "inherited_input": "codex/work_C33/root_certificate_exact_n23.json",
+  "root_count": 46,
+  "pair_count": 1081,
+  "delta2": 0.014019386452133372,
+  "delta4": 3.155876454096123e-07,
+  "delta4_witness": [
+    [
+      7,
+      38
+    ],
+    [
+      8,
+      37
+    ]
+  ],
+  "b": 24,
+  "rho": "1/2",
+  "physical_mismatch_lower": 6.574742612700256e-09,
+  "physical_mismatch_exact": [
+    "1705630677079215454065672326142328635217296900937651448572499176070122802307966306624327743350572927653782556580284300779",
+    "259421665235152175637182918701196232302242436646764128768485654904557304285760292604822052384534635543744956780486675723127357440"
+  ],
+  "free_charge_restoration_threshold_over_t": 8.371222290945348e-09,
+  "alpha_half": 0.29735763271532445,
+  "minimum_uniform_nonGaussian_dimension": 3,
+  "minimum_nonzero_h_charge_dimension": 4,
+  "charge_inequality_random_checks": 10000,
+  "smallest_sample_energy_to_bound_ratio": 1.1391464461389822,
+  "seconds": 0.11880699987523258,
+  "limitations": [
+    "Does not rerun C33 matrix inertia",
+    "Does not establish interacting matching or measure central charge"
+  ]
+}

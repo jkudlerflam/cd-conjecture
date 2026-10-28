@@ -41,7 +41,7 @@ supply a missing machine table. The following distinctions matter:
    exact cyclic reset or mobile infrared limit. Those interfaces remain
    necessary.
 
-The [existing scheduler](../../../exact_route/ORACLE_SCHEDULER.md) already
+The [existing scheduler](../../exact_route/ORACLE_SCHEDULER.md) already
 argues the constant-factor existential compilation. The digit compiler
 adds inspectable finite rules; its unfinished whole interpreter is an
 implementation gap and cannot, by itself, refute the existential argument.

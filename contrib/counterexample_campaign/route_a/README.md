@@ -10,9 +10,10 @@ This fills the global-sector qualification in that candidate's Section 2.3.
 The proof compares exact interacting cell chains; it does not compare an
 extensive perturbation bound with a finite defect gap.
 
-This is not by itself a counterexample. The independent C33 and C37 results
-give a certified nonresonant 23-flavour quadratic reference for this d=23
-bond. The interacting infrared transfer and the interpretation of frozen
+This is not by itself a counterexample. The C33 and C37 results give a
+certified nonresonant 23-flavour quadratic reference for this d=23 bond.
+The C33 matrices and certificate were independently rebuilt and audited
+here; see [the audit](C33_AUDIT.md). The interacting infrared transfer and the interpretation of frozen
 translation order remain separate questions. A vacancy-based mobile
 completion is being investigated by the coordinating worker.
 

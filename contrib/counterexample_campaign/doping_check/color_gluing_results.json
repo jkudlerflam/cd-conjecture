@@ -1,0 +1,164 @@
+{
+  "status": "passed",
+  "cases": [
+    {
+      "L": 5,
+      "M": 2,
+      "b": 2,
+      "dimension": 20,
+      "full_spectrum_error": 2.220446049250313e-15,
+      "ground_degeneracy": 1,
+      "ground_translation_phase": [
+        1.0000000000000009,
+        0.0
+      ],
+      "sector_ground_energies": [
+        {
+          "r": 0,
+          "twist": 0.0,
+          "energy": -3.23606797749979
+        },
+        {
+          "r": 1,
+          "twist": 3.141592653589793,
+          "energy": -2.618033988749895
+        }
+      ]
+    },
+    {
+      "L": 6,
+      "M": 2,
+      "b": 2,
+      "dimension": 30,
+      "full_spectrum_error": 1.7763568394002505e-15,
+      "ground_degeneracy": 1,
+      "ground_translation_phase": [
+        1.0000000000000009,
+        0.0
+      ],
+      "sector_ground_energies": [
+        {
+          "r": 0,
+          "twist": 0.0,
+          "energy": -3.464101615137755
+        },
+        {
+          "r": 1,
+          "twist": 3.141592653589793,
+          "energy": -3.0
+        }
+      ]
+    },
+    {
+      "L": 7,
+      "M": 4,
+      "b": 2,
+      "dimension": 70,
+      "full_spectrum_error": 5.329070518200751e-15,
+      "ground_degeneracy": 1,
+      "ground_translation_phase": [
+        1.0,
+        0.0
+      ],
+      "sector_ground_energies": [
+        {
+          "r": 0,
+          "twist": 0.0,
+          "energy": -4.493959207434934
+        },
+        {
+          "r": 1,
+          "twist": 3.141592653589793,
+          "energy": -4.048917339522306
+        }
+      ]
+    },
+    {
+      "L": 5,
+      "M": 3,
+      "b": 3,
+      "dimension": 30,
+      "full_spectrum_error": 2.6645352591003757e-15,
+      "ground_degeneracy": 1,
+      "ground_translation_phase": [
+        1.0000000000000007,
+        0.0
+      ],
+      "sector_ground_energies": [
+        {
+          "r": 0,
+          "twist": 0.0,
+          "energy": -3.23606797749979
+        },
+        {
+          "r": 1,
+          "twist": 2.0943951023931953,
+          "energy": -2.956295201467612
+        },
+        {
+          "r": 2,
+          "twist": 4.1887902047863905,
+          "energy": -2.956295201467611
+        }
+      ]
+    },
+    {
+      "L": 7,
+      "M": 3,
+      "b": 3,
+      "dimension": 105,
+      "full_spectrum_error": 4.440892098500626e-15,
+      "ground_degeneracy": 1,
+      "ground_translation_phase": [
+        0.9999999999999991,
+        0.0
+      ],
+      "sector_ground_energies": [
+        {
+          "r": 0,
+          "twist": 0.0,
+          "energy": -4.493959207434934
+        },
+        {
+          "r": 1,
+          "twist": 2.0943951023931953,
+          "energy": -4.294305208937062
+        },
+        {
+          "r": 2,
+          "twist": 4.1887902047863905,
+          "energy": -4.294305208937061
+        }
+      ]
+    },
+    {
+      "L": 8,
+      "M": 6,
+      "b": 3,
+      "dimension": 84,
+      "full_spectrum_error": 3.552713678800501e-15,
+      "ground_degeneracy": 1,
+      "ground_translation_phase": [
+        0.9999999999999996,
+        0.0
+      ],
+      "sector_ground_energies": [
+        {
+          "r": 0,
+          "twist": 0.0,
+          "energy": -3.695518130045148
+        },
+        {
+          "r": 1,
+          "twist": 2.0943951023931953,
+          "energy": -3.569596403330092
+        },
+        {
+          "r": 2,
+          "twist": 4.1887902047863905,
+          "energy": -3.5695964033300918
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,227 @@
+{
+  "status": "passed",
+  "t": 1,
+  "density": 0.5,
+  "rows": [
+    {
+      "L": 16,
+      "M": 8,
+      "r": 1,
+      "theta_over_pi": 0.25,
+      "fixed_momentum_threshold": 0.7917698843142311,
+      "proved_lower_bound": 0.3030171932856715,
+      "own_sea_energy_difference": 0.012348575596980993,
+      "candidate_thermodynamic_edge": 0.7653668647301796,
+      "all_occupations_optimized": 12870
+    },
+    {
+      "L": 16,
+      "M": 8,
+      "r": 2,
+      "theta_over_pi": 0.5,
+      "fixed_momentum_threshold": 1.5141854025741068,
+      "proved_lower_bound": 0.8030171932856716,
+      "own_sea_energy_difference": 0.0493645535876972,
+      "candidate_thermodynamic_edge": 1.414213562373095,
+      "all_occupations_optimized": 12870
+    },
+    {
+      "L": 16,
+      "M": 8,
+      "r": 3,
+      "theta_over_pi": 0.75,
+      "fixed_momentum_threshold": 2.017072694140678,
+      "proved_lower_bound": 1.3030171932856716,
+      "own_sea_energy_difference": 0.11095875923895626,
+      "candidate_thermodynamic_edge": 1.8477590650225735,
+      "all_occupations_optimized": 12870
+    },
+    {
+      "L": 16,
+      "M": 8,
+      "r": 4,
+      "theta_over_pi": 1.0,
+      "fixed_momentum_threshold": 2.1969828067143276,
+      "proved_lower_bound": 1.8030171932856716,
+      "own_sea_energy_difference": 0.19698280671432933,
+      "candidate_thermodynamic_edge": 2.0,
+      "all_occupations_optimized": 12870
+    },
+    {
+      "L": 32,
+      "M": 16,
+      "r": 2,
+      "theta_over_pi": 0.25,
+      "fixed_momentum_threshold": 0.7806380903644481,
+      "proved_lower_bound": 0.4017463004610655,
+      "own_sea_energy_difference": 0.006145482367330146,
+      "candidate_thermodynamic_edge": 0.7653668647301796,
+      "all_occupations_optimized": 601080390
+    },
+    {
+      "L": 32,
+      "M": 16,
+      "r": 4,
+      "theta_over_pi": 0.5,
+      "fixed_momentum_threshold": 1.4658314860094137,
+      "proved_lower_bound": 0.9017463004610655,
+      "own_sea_energy_difference": 0.024578227660541074,
+      "candidate_thermodynamic_edge": 1.414213562373095,
+      "all_occupations_optimized": 601080390
+    },
+    {
+      "L": 32,
+      "M": 16,
+      "r": 6,
+      "theta_over_pi": 0.75,
+      "fixed_momentum_threshold": 1.9327891011359952,
+      "proved_lower_bound": 1.4017463004610655,
+      "own_sea_energy_difference": 0.05528713268311236,
+      "candidate_thermodynamic_edge": 1.8477590650225735,
+      "all_occupations_optimized": 601080390
+    },
+    {
+      "L": 32,
+      "M": 16,
+      "r": 8,
+      "theta_over_pi": 1.0,
+      "fixed_momentum_threshold": 2.0982536995389367,
+      "proved_lower_bound": 1.9017463004610655,
+      "own_sea_energy_difference": 0.09825369953893315,
+      "candidate_thermodynamic_edge": 2.0,
+      "all_occupations_optimized": 601080390
+    },
+    {
+      "L": 64,
+      "M": 32,
+      "r": 4,
+      "theta_over_pi": 0.25,
+      "fixed_momentum_threshold": 0.7735209618647971,
+      "proved_lower_bound": 0.4509027557821491,
+      "own_sea_energy_difference": 0.0030691554832174006,
+      "candidate_thermodynamic_edge": 0.7653668647301796,
+      "all_occupations_optimized": 1832624140942590534
+    },
+    {
+      "L": 64,
+      "M": 32,
+      "r": 8,
+      "theta_over_pi": 0.5,
+      "fixed_momentum_threshold": 1.4404397062493075,
+      "proved_lower_bound": 0.9509027557821491,
+      "own_sea_energy_difference": 0.012276159729353253,
+      "candidate_thermodynamic_edge": 1.414213562373095,
+      "all_occupations_optimized": 1832624140942590534
+    },
+    {
+      "L": 64,
+      "M": 32,
+      "r": 12,
+      "theta_over_pi": 0.75,
+      "fixed_momentum_threshold": 1.8903904061489882,
+      "proved_lower_bound": 1.450902755782149,
+      "own_sea_energy_difference": 0.02761962619742775,
+      "candidate_thermodynamic_edge": 1.8477590650225735,
+      "all_occupations_optimized": 1832624140942590534
+    },
+    {
+      "L": 64,
+      "M": 32,
+      "r": 16,
+      "theta_over_pi": 1.0,
+      "fixed_momentum_threshold": 2.0490972442178546,
+      "proved_lower_bound": 1.950902755782149,
+      "own_sea_energy_difference": 0.04909724421784745,
+      "candidate_thermodynamic_edge": 2.0,
+      "all_occupations_optimized": 1832624140942590534
+    },
+    {
+      "L": 128,
+      "M": 64,
+      "r": 8,
+      "theta_over_pi": 0.25,
+      "fixed_momentum_threshold": 0.7695735854164099,
+      "proved_lower_bound": 0.47545507524086744,
+      "own_sea_energy_difference": 0.001534129995263811,
+      "candidate_thermodynamic_edge": 0.7653668647301796,
+      "all_occupations_optimized": 23951146041928082866135587776380551750
+    },
+    {
+      "L": 128,
+      "M": 64,
+      "r": 16,
+      "theta_over_pi": 0.5,
+      "fixed_momentum_threshold": 1.4274320376113394,
+      "proved_lower_bound": 0.9754550752408675,
+      "own_sea_energy_difference": 0.006136462221931538,
+      "candidate_thermodynamic_edge": 1.414213562373095,
+      "all_occupations_optimized": 23951146041928082866135587776380551750
+    },
+    {
+      "L": 128,
+      "M": 64,
+      "r": 24,
+      "theta_over_pi": 0.75,
+      "fixed_momentum_threshold": 1.8691066713872004,
+      "proved_lower_bound": 1.4754550752408675,
+      "own_sea_energy_difference": 0.013806823404820534,
+      "candidate_thermodynamic_edge": 1.8477590650225735,
+      "all_occupations_optimized": 23951146041928082866135587776380551750
+    },
+    {
+      "L": 128,
+      "M": 64,
+      "r": 32,
+      "theta_over_pi": 1.0,
+      "fixed_momentum_threshold": 2.024544924759141,
+      "proved_lower_bound": 1.9754550752408675,
+      "own_sea_energy_difference": 0.02454492475912673,
+      "candidate_thermodynamic_edge": 2.0,
+      "all_occupations_optimized": 23951146041928082866135587776380551750
+    },
+    {
+      "L": 256,
+      "M": 128,
+      "r": 16,
+      "theta_over_pi": 0.25,
+      "fixed_momentum_threshold": 0.7675026445509445,
+      "proved_lower_bound": 0.4877279996847532,
+      "own_sea_energy_difference": 0.000767009043897815,
+      "candidate_thermodynamic_edge": 0.7653668647301796,
+      "all_occupations_optimized": 5768658823449206338089748357862286887740211701975162032608436567264518750790
+    },
+    {
+      "L": 256,
+      "M": 128,
+      "r": 32,
+      "theta_over_pi": 0.5,
+      "fixed_momentum_threshold": 1.420849287169034,
+      "proved_lower_bound": 0.9877279996847532,
+      "own_sea_energy_difference": 0.003068028956164426,
+      "candidate_thermodynamic_edge": 1.414213562373095,
+      "all_occupations_optimized": 5768658823449206338089748357862286887740211701975162032608436567264518750790
+    },
+    {
+      "L": 256,
+      "M": 128,
+      "r": 48,
+      "theta_over_pi": 0.75,
+      "fixed_momentum_threshold": 1.8584412082725805,
+      "proved_lower_bound": 1.4877279996847532,
+      "own_sea_energy_difference": 0.006903038078831969,
+      "candidate_thermodynamic_edge": 1.8477590650225735,
+      "all_occupations_optimized": 5768658823449206338089748357862286887740211701975162032608436567264518750790
+    },
+    {
+      "L": 256,
+      "M": 128,
+      "r": 64,
+      "theta_over_pi": 1.0,
+      "fixed_momentum_threshold": 2.0122720003151358,
+      "proved_lower_bound": 1.9877279996847532,
+      "own_sea_energy_difference": 0.012272000315277865,
+      "candidate_thermodynamic_edge": 2.0,
+      "all_occupations_optimized": 5768658823449206338089748357862286887740211701975162032608436567264518750790
+    }
+  ]
+}
