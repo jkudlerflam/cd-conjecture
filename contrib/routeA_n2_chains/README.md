@@ -35,7 +35,7 @@ The second column gives the HF chain's number of Fermi seas, which is its exact 
 | cell, coupling, field | HF seas (= exact c of HF chain), ν | FES full / HF | OBC full / HF exact | Δ |
 |---|---|---|---|---|
 | calibration XX | 1 | 0.99 (48–128, 574) | – / 1.03 | – |
-| calibration C28 free | 2 | 2.02 (64–160, 70) | – / 2.11 | – |
+| calibration C28 free | 2 | 1.97 (96–192, 82) | – / 2.11 | – |
 | calibration C29 free | 2 | 1.98 (48–128, 43) | – / 1.92 | – |
 | C28 g = 0.2, source field | 0 (band full) | – | – | – |
 | C28 g = 0.2, ν = 0.45 | 2 | 1.89 (24–64, 31) / S equal to 4 × 10⁻³ | – / 2.06 | 10⁻⁶ / 10⁻⁶ |
