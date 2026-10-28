@@ -1,0 +1,118 @@
+{
+  "hexagons": [
+    {
+      "p": 2,
+      "q": 14,
+      "N": 21,
+      "hexagons": 28,
+      "resonant_hexagons": 9,
+      "unordered_equal_partitions": 9,
+      "chiral_assignments_one_z_orientation": 18,
+      "partitions_per_hexagon": {
+        "1": 9,
+        "0": 19
+      }
+    },
+    {
+      "p": 3,
+      "q": 26,
+      "N": 52,
+      "hexagons": 234,
+      "resonant_hexagons": 110,
+      "unordered_equal_partitions": 110,
+      "chiral_assignments_one_z_orientation": 220,
+      "partitions_per_hexagon": {
+        "0": 124,
+        "1": 110
+      }
+    },
+    {
+      "p": 5,
+      "q": 62,
+      "N": 186,
+      "hexagons": 3875,
+      "resonant_hexagons": 2290,
+      "unordered_equal_partitions": 2290,
+      "chiral_assignments_one_z_orientation": 4580,
+      "partitions_per_hexagon": {
+        "0": 1585,
+        "1": 2290
+      }
+    },
+    {
+      "p": 7,
+      "q": 114,
+      "N": 456,
+      "hexagons": 26068,
+      "resonant_hexagons": 17556,
+      "unordered_equal_partitions": 17556,
+      "chiral_assignments_one_z_orientation": 35112,
+      "partitions_per_hexagon": {
+        "0": 8512,
+        "1": 17556
+      }
+    }
+  ],
+  "all_band_kernel": [
+    {
+      "L": 4,
+      "matrix_dimension": 5,
+      "spectral_spread": 4.2982681919786225,
+      "delta": 1.0,
+      "s": 0.1,
+      "exponential_rate": -0.5701731808021377,
+      "log_prefactor": -11.841193451733586,
+      "ground_kernel_decay_rate": 1.0
+    },
+    {
+      "L": 8,
+      "matrix_dimension": 9,
+      "spectral_spread": 8.298268234713197,
+      "delta": 1.0,
+      "s": 0.1,
+      "exponential_rate": -0.17017317652868025,
+      "log_prefactor": -23.007256006197622,
+      "ground_kernel_decay_rate": 1.0
+    },
+    {
+      "L": 16,
+      "matrix_dimension": 17,
+      "spectral_spread": 16.298268234713188,
+      "delta": 1.0,
+      "s": 0.1,
+      "exponential_rate": 0.6298268234713189,
+      "log_prefactor": -50.49331821475077,
+      "ground_kernel_decay_rate": 1.0
+    },
+    {
+      "L": 32,
+      "matrix_dimension": 33,
+      "spectral_spread": 32.2982682347132,
+      "delta": 1.0,
+      "s": 0.1,
+      "exponential_rate": 2.22982682347132,
+      "log_prefactor": -116.1358835241768,
+      "ground_kernel_decay_rate": 1.0
+    }
+  ],
+  "active_majorants": [
+    {
+      "states": 8,
+      "max_column_sum": -1.8,
+      "spectral_abscissa": -1.9542939256300345,
+      "upper_bound": -0.9
+    },
+    {
+      "states": 32,
+      "max_column_sum": -0.8999999999999999,
+      "spectral_abscissa": -0.9807451370074248,
+      "upper_bound": -0.9
+    },
+    {
+      "states": 128,
+      "max_column_sum": -0.8999999999999996,
+      "spectral_abscissa": -0.9833495867906938,
+      "upper_bound": -0.9
+    }
+  ]
+}

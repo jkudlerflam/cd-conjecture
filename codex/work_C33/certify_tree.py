@@ -82,7 +82,7 @@ def certificate(n,D=1000,bits=256,max_seconds=175):
             log10_lambda_max_upper=log10int(sum(U[i,i]*2 for i in range(n)))-2*bits*math.log10(2),
             log10_entry_radius=log10int(err)-2*bits*math.log10(2),
             log10_beta=-log10int(detC),seconds=time.monotonic()-start)
-        np.savez(f'certificate_n{n}_D{D}.npz',lower_numerators=L,radius_numerators=E,
+        np.savez(f'certificate_n{n}_D{D}.npz',lower_numerators=L,radius_numerators=E,F_half_numerators=Q,
                  detC=np.array(detC,dtype=object),bits=bits)
     return result
 

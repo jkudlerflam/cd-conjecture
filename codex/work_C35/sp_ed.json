@@ -1,0 +1,263 @@
+{
+  "assumption": "Zero-Cartan sector contains the global ground state. No independent proof for these rings supplied.",
+  "energies": [
+    {
+      "d": 4,
+      "L": 4,
+      "zero_cartan": true,
+      "sector_dimension": 36,
+      "E0_sector": -3.265986323710902,
+      "residual": 3.4231815477955833e-15,
+      "seconds": 0.0013849735260009766
+    },
+    {
+      "d": 4,
+      "L": 6,
+      "zero_cartan": true,
+      "sector_dimension": 400,
+      "E0_sector": -3.789611996415759,
+      "residual": 4.171991634123386e-12,
+      "seconds": 0.0023050308227539062
+    },
+    {
+      "d": 4,
+      "L": 8,
+      "zero_cartan": true,
+      "sector_dimension": 4900,
+      "E0_sector": -5.569230580825034,
+      "residual": 1.8870712896622062e-11,
+      "seconds": 0.023215055465698242
+    },
+    {
+      "d": 4,
+      "L": 10,
+      "zero_cartan": true,
+      "sector_dimension": 63504,
+      "E0_sector": -6.492583601808426,
+      "residual": 8.031266948225161e-11,
+      "seconds": 0.5309410095214844
+    },
+    {
+      "d": 6,
+      "L": 4,
+      "zero_cartan": true,
+      "sector_dimension": 90,
+      "E0_sector": -3.701562118716422,
+      "residual": 6.872905952233314e-13,
+      "seconds": 0.0014109611511230469
+    },
+    {
+      "d": 6,
+      "L": 6,
+      "zero_cartan": true,
+      "sector_dimension": 1860,
+      "E0_sector": -5.590945053583034,
+      "residual": 1.159630682567909e-13,
+      "seconds": 0.009790897369384766
+    },
+    {
+      "d": 6,
+      "L": 8,
+      "zero_cartan": true,
+      "sector_dimension": 44730,
+      "E0_sector": -6.590354505185126,
+      "residual": 2.2385503166692603e-12,
+      "seconds": 0.44607090950012207
+    },
+    {
+      "d": 8,
+      "L": 4,
+      "zero_cartan": true,
+      "sector_dimension": 168,
+      "E0_sector": -4.000000000000002,
+      "residual": 1.2338184074460925e-14,
+      "seconds": 0.0018191337585449219
+    },
+    {
+      "d": 8,
+      "L": 6,
+      "zero_cartan": true,
+      "sector_dimension": 5120,
+      "E0_sector": -5.776565105125676,
+      "residual": 7.710395766285239e-12,
+      "seconds": 0.0386350154876709
+    }
+  ],
+  "fits": [
+    {
+      "d": 4,
+      "sizes": [
+        4.0,
+        6.0,
+        8.0,
+        10.0
+      ],
+      "form": "e+a/L^2",
+      "A": 5.741876313478743,
+      "q": 0.9138479979124111
+    },
+    {
+      "d": 4,
+      "sizes": [
+        6.0,
+        8.0,
+        10.0
+      ],
+      "form": "e+a/L^2",
+      "A": -3.217621465158516,
+      "q": -0.5121003611785645
+    },
+    {
+      "d": 4,
+      "sizes": [
+        8.0,
+        10.0
+      ],
+      "form": "e+a/L^2",
+      "A": 15.92244192658592,
+      "q": 2.5341353387097905
+    },
+    {
+      "d": 4,
+      "sizes": [
+        6.0,
+        8.0,
+        10.0
+      ],
+      "form": "e+a/L^2+b/L^4",
+      "A": 53.49561909695287,
+      "q": 8.514092213041245
+    },
+    {
+      "d": 6,
+      "sizes": [
+        4.0,
+        6.0,
+        8.0
+      ],
+      "form": "e+a/L^2",
+      "A": 3.1476770197846453,
+      "q": 0.38760203044781594
+    },
+    {
+      "d": 6,
+      "sizes": [
+        4.0,
+        6.0,
+        8.0
+      ],
+      "form": "e+a/L^2",
+      "A": 3.1476770197846453,
+      "q": 0.38760203044781594
+    },
+    {
+      "d": 6,
+      "sizes": [
+        6.0,
+        8.0
+      ],
+      "form": "e+a/L^2",
+      "A": 16.977339921485665,
+      "q": 2.090573900628732
+    },
+    {
+      "d": 6,
+      "sizes": [
+        4.0,
+        6.0,
+        8.0
+      ],
+      "form": "e+a/L^2+b/L^4",
+      "A": 33.02476200403471,
+      "q": 4.066638580566791
+    },
+    {
+      "d": 8,
+      "sizes": [
+        4.0,
+        6.0
+      ],
+      "form": "e+a/L^2",
+      "A": 2.0483002355597035,
+      "q": 0.21733140495041361
+    },
+    {
+      "d": 8,
+      "sizes": [
+        4.0,
+        6.0
+      ],
+      "form": "e+a/L^2",
+      "A": 2.0483002355597035,
+      "q": 0.21733140495041361
+    },
+    {
+      "d": 8,
+      "sizes": [
+        4.0,
+        6.0
+      ],
+      "form": "e+a/L^2",
+      "A": 2.0483002355597035,
+      "q": 0.21733140495041361
+    }
+  ],
+  "full_space_checks": [
+    {
+      "d": 4,
+      "L": 4,
+      "zero_cartan": false,
+      "sector_dimension": 256,
+      "E0_sector": -3.265986323710903,
+      "residual": 2.22497089527112e-15,
+      "seconds": 0.0013167858123779297
+    },
+    {
+      "d": 4,
+      "L": 6,
+      "zero_cartan": false,
+      "sector_dimension": 4096,
+      "E0_sector": -3.7896119964157577,
+      "residual": 6.700836373755108e-12,
+      "seconds": 0.013326883316040039
+    },
+    {
+      "d": 6,
+      "L": 4,
+      "zero_cartan": false,
+      "sector_dimension": 1296,
+      "E0_sector": -3.701562118716421,
+      "residual": 3.0583805871659134e-11,
+      "seconds": 0.0026140213012695312
+    },
+    {
+      "d": 6,
+      "L": 6,
+      "zero_cartan": false,
+      "sector_dimension": 46656,
+      "E0_sector": -5.590945053583023,
+      "residual": 6.278935420857554e-13,
+      "seconds": 0.1416640281677246
+    },
+    {
+      "d": 8,
+      "L": 4,
+      "zero_cartan": false,
+      "sector_dimension": 4096,
+      "E0_sector": -4.000000000000001,
+      "residual": 1.0702756448897904e-13,
+      "seconds": 0.0067899227142333984
+    }
+  ],
+  "fit_verdict": "REJECT all mixed-length fits as Casimir estimates: strong size-class drift; apparent violations are not evidence.",
+  "same_length_class_diagnostic": {
+    "d": 4,
+    "sizes": [
+      4,
+      8
+    ],
+    "A": 4.9032050822842415,
+    "q": 0.7803693258388404,
+    "status": "Two small sizes only; not a thermodynamic estimate."
+  }
+}

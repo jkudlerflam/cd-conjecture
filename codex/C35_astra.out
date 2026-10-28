@@ -1,0 +1,13 @@
+Wrote [RESULT.md](RESULT.md) and updated [PROGRESS.md](PROGRESS.md).
+
+Conditional on C14’s Bethe/CFT inputs, the bound holds for every symmetric SU(N)\(_k\) chain. Heisenberg saturates it; SU(3) is the runner-up with ratio 0.84124. Every \(k\ge2\) member has ratio below \(3/4\).
+
+The report also establishes conditional comparisons for SO(N), XXZ, free fermions and gl(1|1). Rectangular representations require an additional fusion input. General Sp(2N) and higher-rank finite-density graded chains remain unresolved; the new small-ring Sp fits were inconsistent and are explicitly rejected.
+
+Entropy and current sum rules leave a specific susceptibility bound missing. If the conjecture holds, it implies
+\[
+c^2\le\frac{3R(\log d)^2}{(1-\varepsilon)\log2}.
+\]
+The recorded Route-A hierarchies respect it through suppressed physical velocities, including the mobile length mode, conditional on their infrared claims.
+
+[gpt_solve: backend=codex model=gpt-6-astra effort=high transcript=20261028T073623-88716]

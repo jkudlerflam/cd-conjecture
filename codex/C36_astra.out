@@ -1,0 +1,7 @@
+[proved] Wrote [RESULT.md](<./RESULT.md>) and updated [PROGRESS.md](<./PROGRESS.md>). The report derives fixed cell coordinates, second-order local bounds, and bounds for histories attached to active defects. It also proves why extending those bounds to unrestricted retained-state operator norms fails.
+
+[proved] Non-oscillating hexagons satisfy an equal-sum triple criterion. The full metric bound gives their irrelevance for \(\kappa>2/3\). [numerical, \(p=2,3,5,7\)] All enumeration checks passed.
+
+[heuristic] The candidate remains conditional on the complete core and a local low-frequency resummation controlling the retained background. Once those are established, the report gives the physics-standard route to \(c=N+1\), including \(Ng\log(1/\delta)\ll1\) and the fixed-\(p\), fixed-coupling limits.
+
+[gpt_solve: backend=codex model=gpt-6-astra effort=high transcript=20261028T073625-88899]

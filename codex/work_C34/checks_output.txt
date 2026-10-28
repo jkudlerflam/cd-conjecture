@@ -1,0 +1,380 @@
+{
+  "examples": {
+    "TR_only": {
+      "unitary_actions": [
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      "antiunitary_actions": [
+        [
+          -1,
+          -1,
+          -1
+        ]
+      ],
+      "certificate": 0.0,
+      "axis_dim": 0
+    },
+    "reflection_DM": {
+      "unitary_actions": [
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      "antiunitary_actions": [
+        [
+          1,
+          1,
+          -1
+        ]
+      ],
+      "certificate": 0.0,
+      "axis_dim": 1
+    },
+    "reflection_symmetric_gap": {
+      "unitary_actions": [
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      "antiunitary_actions": [
+        [
+          1,
+          1,
+          -1
+        ]
+      ],
+      "certificate": 0.8,
+      "axis_dim": 1,
+      "gaps": {
+        "4": 3.051848333359504,
+        "6": 4.470042164946588,
+        "8": 4.612187089809904
+      }
+    },
+    "none_misaligned": {
+      "unitary_actions": [
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      "antiunitary_actions": [],
+      "certificate": 0.0,
+      "axis_dim": 0
+    },
+    "none_aligned_gap": {
+      "unitary_actions": [
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      "antiunitary_actions": [],
+      "certificate": 1.0,
+      "axis_dim": 1,
+      "gaps": {
+        "4": 3.7330341829877653,
+        "6": 4.6994818720859595,
+        "8": 4.572773136814849
+      }
+    },
+    "none_symmetric_gap": {
+      "unitary_actions": [
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      "antiunitary_actions": [],
+      "certificate": 0.8,
+      "axis_dim": 1,
+      "gaps": {
+        "4": 3.031308913054933,
+        "6": 4.430296657267515,
+        "8": 4.682727602017994
+      }
+    },
+    "none_aligned_fail": {
+      "unitary_actions": [
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      "antiunitary_actions": [],
+      "certificate": 0.0,
+      "axis_dim": 0
+    }
+  },
+  "rotating_axes": {
+    "L": 6,
+    "bond_error": 5.139136150086571e-16,
+    "mean_axis": [
+      -6.47630097698008e-17,
+      -5.551115123125783e-17,
+      0.7999999999999999
+    ],
+    "rotating_bound": 0.8521539030917347,
+    "uniform_bound": 1.4
+  },
+  "block_norm_error": 1.3322676295501878e-15,
+  "TR_product_eigenstate": {
+    "L": 6,
+    "leakage": 0.0,
+    "eigenvalue": -6.6,
+    "ground_energy": -6.6
+  },
+  "product_witness": {
+    "random_bonds": 100,
+    "two_site_energy_error": 8.881784197001252e-16,
+    "threshold_error": 1.7763568394002505e-15
+  },
+  "wall_bound": [
+    {
+      "parameters": [
+        0.4,
+        -1.4,
+        0.2,
+        0.3,
+        0.0
+      ],
+      "L": 4,
+      "operator_remainder_min": 0.0,
+      "gap": 2.8784069784755233,
+      "bound": 1.4111456180001678
+    },
+    {
+      "parameters": [
+        0.4,
+        -1.4,
+        0.2,
+        0.3,
+        0.0
+      ],
+      "L": 6,
+      "operator_remainder_min": -1.7763568394002505e-15,
+      "gap": 2.952048555045403,
+      "bound": 1.4111456180001678
+    },
+    {
+      "parameters": [
+        0.4,
+        -1.4,
+        0.2,
+        0.3,
+        0.0
+      ],
+      "L": 8,
+      "operator_remainder_min": -1.7763568394002505e-15,
+      "gap": 2.9552716368591074,
+      "bound": 1.4111456180001678
+    },
+    {
+      "parameters": [
+        0.4,
+        -1.4,
+        0.2,
+        0.3,
+        0.23
+      ],
+      "L": 4,
+      "operator_remainder_min": -2.220446049250313e-16,
+      "gap": 1.8399999999999999,
+      "bound": 0.46
+    },
+    {
+      "parameters": [
+        0.4,
+        -1.4,
+        0.2,
+        0.3,
+        0.23
+      ],
+      "L": 6,
+      "operator_remainder_min": -1.7763568394002505e-15,
+      "gap": 2.7600000000000016,
+      "bound": 0.46
+    },
+    {
+      "parameters": [
+        0.4,
+        -1.4,
+        0.2,
+        0.3,
+        0.23
+      ],
+      "L": 8,
+      "operator_remainder_min": -3.552713678800501e-15,
+      "gap": 3.6800000000000033,
+      "bound": 0.46
+    },
+    {
+      "parameters": [
+        0.4,
+        -1.4,
+        0.2,
+        0.3,
+        -0.23
+      ],
+      "L": 4,
+      "operator_remainder_min": -2.220446049250313e-16,
+      "gap": 1.8399999999999999,
+      "bound": 0.46
+    },
+    {
+      "parameters": [
+        0.4,
+        -1.4,
+        0.2,
+        0.3,
+        -0.23
+      ],
+      "L": 6,
+      "operator_remainder_min": -1.7763568394002505e-15,
+      "gap": 2.7600000000000016,
+      "bound": 0.46
+    },
+    {
+      "parameters": [
+        0.4,
+        -1.4,
+        0.2,
+        0.3,
+        -0.23
+      ],
+      "L": 8,
+      "operator_remainder_min": -3.552713678800501e-15,
+      "gap": 3.6800000000000033,
+      "bound": 0.46
+    },
+    {
+      "parameters": [
+        0.4,
+        -1.4,
+        0.0,
+        0.3,
+        0.23
+      ],
+      "L": 4,
+      "operator_remainder_min": -2.220446049250313e-16,
+      "gap": 1.8399999999999999,
+      "bound": 0.46
+    },
+    {
+      "parameters": [
+        0.4,
+        -1.4,
+        0.0,
+        0.3,
+        0.23
+      ],
+      "L": 6,
+      "operator_remainder_min": -1.7763568394002505e-15,
+      "gap": 2.7600000000000016,
+      "bound": 0.46
+    },
+    {
+      "parameters": [
+        0.4,
+        -1.4,
+        0.0,
+        0.3,
+        0.23
+      ],
+      "L": 8,
+      "operator_remainder_min": -3.552713678800501e-15,
+      "gap": 3.6800000000000033,
+      "bound": 0.46
+    },
+    {
+      "parameters": [
+        -0.3,
+        -1.6,
+        -0.4,
+        0.25,
+        0.0
+      ],
+      "L": 4,
+      "operator_remainder_min": 0.0,
+      "gap": 4.51320377358868,
+      "bound": 2.4000000000000004
+    },
+    {
+      "parameters": [
+        -0.3,
+        -1.6,
+        -0.4,
+        0.25,
+        0.0
+      ],
+      "L": 6,
+      "operator_remainder_min": 1.7763568394002505e-15,
+      "gap": 4.258298380692395,
+      "bound": 2.4000000000000004
+    },
+    {
+      "parameters": [
+        -0.3,
+        -1.6,
+        -0.4,
+        0.25,
+        0.0
+      ],
+      "L": 8,
+      "operator_remainder_min": 1.7763568394002505e-15,
+      "gap": 4.288465397756722,
+      "bound": 2.4000000000000004
+    },
+    {
+      "parameters": [
+        0.4,
+        -1.047213595499958,
+        0.2,
+        0.3,
+        0.23
+      ],
+      "L": 4,
+      "operator_remainder_min": -2.220446049250313e-16,
+      "gap": 1.8399999999999999,
+      "bound": 0.46
+    },
+    {
+      "parameters": [
+        0.4,
+        -1.047213595499958,
+        0.2,
+        0.3,
+        0.23
+      ],
+      "L": 6,
+      "operator_remainder_min": -8.881784197001252e-16,
+      "gap": 2.3547730545323464,
+      "bound": 0.46
+    },
+    {
+      "parameters": [
+        0.4,
+        -1.047213595499958,
+        0.2,
+        0.3,
+        0.23
+      ],
+      "L": 8,
+      "operator_remainder_min": -1.7763568394002505e-15,
+      "gap": 2.3543110235199816,
+      "bound": 0.46
+    }
+  ]
+}

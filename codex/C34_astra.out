@@ -1,0 +1,9 @@
+Wrote [RESULT.md](< <repo>/codex/work_C34/RESULT.md >), with complete derivations and a dimension-by-dimension test table.
+
+The main new result is a rigorous domain-wall gap bound covering genuine time-reversal-only, reflection-only, and symmetry-free subclasses missed by the supplied gap theorem. I also proved that site-dependent spin rotations cannot enlarge that theorem’s direct applicability. All finite checks passed, including 18 operator-inequality checks at \(L=4,6,8\).
+
+The full \(c\leq1\) argument remains open. The explicit search regions retain maximal dimensions \(5,5,8\); the actual unresolved critical subsets cannot yet be assigned dimensions. The missing step is a dynamical classification controlling neutral sectors, isolated interacting fixed points, and singular neighborhoods. The numerical hunts do not supply that exclusion.
+
+`PROGRESS.md` and local `STATE.md` are updated. No files outside this folder were modified.
+
+[gpt_solve: backend=codex model=gpt-6-astra effort=high transcript=20261028T073621-88499]
