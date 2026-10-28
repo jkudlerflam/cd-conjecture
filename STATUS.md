@@ -17,6 +17,18 @@ The working standard is theoretical physics (standard RG, controlled perturbatio
 
 ## Latest continuation: why the sparse first-order route leads
 
+**Latest implementation work, 2026-10-28 UTC:**
+[controller_instantiation](contrib/controller_instantiation/README.md) replaces
+several algorithms with executable finite data. The encoding circuit now
+lowers to 17 two-site gate families; an explicit preloaded dispatcher has
+88 neutral symbols and 150 controls, and a separate blank-to-length counter
+has 12 symbols and 16 controls. A complete d=240 one-mode fixture bond is
+saved and independently checked, including its physical hopping projection.
+An audit found and repaired an ambiguity in the neutral input-format check.
+The full autonomous program generator, accepted program sector and endpoint
+readout are still uncomposed; these component counts are not the full core's
+constant C. No new violating example or thermodynamic determination is claimed.
+
 [proved finite ingredients; conditional infrared conclusion] Let the species graph be the point-line incidence graph over F_p: q=2(p²+p+1) species and N=(p+1)(p²+p+1) logical fermions. Girth six forbids every flavour-changing quartic. Explicit endpoint maps realize all N hopping channels. A sparse reversible preparation, exact indexed algebraic rotations, a single-record moving head, and the existing fifteen-letter full-sweep clock give an initialized core of dimension at most Cq(1+log₂q). All-time FAIL penalties select exactly 2^N inputs; cyclic READY readout avoids an invalid absorbing halt. The complete mobile wrapper costs 96d_core+48 and preserves the species torus and marker number.
 
 [physics-level inference] Choose k_a=π/4+aπ/[12(N+1)] and length density in [5/12,7/12]. Payload mismatches are at least π/[6(N+1)], mixed mismatches at least π/6, and all other non-Gaussian resonances have free dimension at least three. At each fixed p and cell length, choose a sufficiently small **fixed nonzero** physical coupling, including all visibility factors and small gaps. Standard local integration and RG then give N+1 compact bosons, hence c>d−1 for sufficiently large p. The [infrared audit](contrib/research_continuation/IR_AUDIT.md) states the input and the distinction from a global band Schrieffer–Wolff argument.
@@ -28,7 +40,7 @@ The new [research continuation](contrib/research_continuation/README.md) records
 - Route A's finite cell is now uniform: C19 gives n logical fermion flavours with exact parity, independent hopping phases and chemical potentials from second-order exchange, and only n + 1 port-accessible energies [Astra, checks rerun]. What is missing is a translation-invariant constant-alphabet controller. The cheapest frustration-free port interface provably fails (scalar source resolvents, C18 and C19 §9), so the interface must be non-frustration-free; C8 run 7 supplies a 15-letter initialized clock. Four Astra runs (C21 to C23, C8 run 8) and a microscopic demonstrator are on this now.
 - Route A numerics: a symmetric target (SU(3)₁) drifts at larger coupling, and an XX target with Fermi points at ±k_F is gapped by a generated pairing term, so cells must keep an exact U(1) or displace each flavour's Fermi-sea centre (`contrib/routeA_numerics/`).
 - The mobile-cell infrared claim (c = n + 1 on an open set) is now confirmed by a blind closed-book run (C20) as well as C13.
-- d = 2: the first round (C15 to C17) found no proof and no counterexample; the leading open target is an Ising-like neutral sector alongside a c = 1 mode at intermediate coupling. Details in REPORT §9.13.
+- d = 2: the first round (C15 to C17) found no proof and no counterexample; the leading open target is an Ising-like neutral sector alongside a c = 1 mode at intermediate coupling. Details in REPORT §9.14.
 - The species-graph candidate above is under independent review (Astra C24 and a Claude referee in `contrib/review_species_graph/`).
 
 ## Earlier construction and the separate fixed-d program, step by step

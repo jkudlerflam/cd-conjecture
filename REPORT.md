@@ -431,7 +431,7 @@ independent end-to-end review**. Its compiler constant is not numerically
 expanded or optimized. Unlike the older route-A goal, this family does
 not prove unbounded central charge at one fixed microscopic dimension.
 
-### 9.13 Route A, route B and d = 2, evening of 2026-10-27 (coordinator; check scripts of every Astra run below rerun by Claude and passing)
+### 9.14 Route A, route B and d = 2, evening of 2026-10-27 (coordinator; check scripts of every Astra run below rerun by Claude and passing)
 - **C19, a uniform route-A cell** (`codex/work_C19/RESULT.md`, Astra). A uniform family of finite matrix cells with two qubit ports, n logical fermion modes, an exactly degenerate 2^n code and exact parity, whose second-order exchange is independent flavour hopping with arbitrary phases and chemical potentials. It needs only n + 1 port-accessible excitation energies, with Jacobi-polynomial coefficients from bounded loop bodies; as a matrix the cell has dimension 16(n + 2)2^n. Two obstructions are proved: a pole-count bound 2n ≤ 4(k − 1) for k accessible energies, and (from C18) the failure of the cheapest frustration-free interface, whose source resolvents are scalar. No local controller and no d₀ yet.
 - **C18, clock-selected cell length** (`codex/work_C18/RESULT.md`, Astra). Found the frustration-free interface obstruction above; the clock and interface checks pass. No unbounded-c d₀.
 - **C8 run 7** (`codex/work_C8/RESULT.md` §36 to §39). A 15-letter initialized nearest-neighbour clock with one legal history and explicit exclusion of unwanted sectors, checked through 100,000-state ring spectra. Missing: the clean-readout program that produces both high-channel boundary maps.
@@ -440,3 +440,61 @@ not prove unbounded central charge at one fixed microscopic dimension.
 - **Route B numerics, final** (`contrib/encoded_chain_numerics/`). r = 2: c = 1 confirmed (0.98 to 1.05) at λ/Δ from 0.05 to 0.8. r = 4: the derived logical chain gives c = 1.97 ± 0.06, with the doping predicted by one loop matching VUMPS (0.061 against 0.062 per cell); the full chain of big cells could not be pushed to long distances.
 - **d = 2 program, first round** (`codex/work_C15/` to `codex/work_C17/`, Astra). No proof and no counterexample. Established: exclusions for conserved one-site markers, literal sublattice decoupling and exact U(1) chains; the K ≥ 1/2 lore is not universal (strong repulsion gives K = (1 − ρ)², which can make atom–pair conversion irrelevant), but nearest-neighbour attraction favours larger clusters over a stable adjacent-pair fluid; compactness cannot exclude an isolated finite-c > 1 point. The leading open target is an isolated neutral critical sector (for example Ising) alongside a c = 1 mode at intermediate coupling.
 - **Now running on route A**: C21 (compile C19's cell into a constant-alphabet chain with a non-frustration-free interface), C22 (a computation-free spatial cell), C23 (end-to-end assembly with the full scale hierarchy), C8 run 8 (clean-readout table), and a Claude agent building a microscopic end-to-end demonstrator (`contrib/routeA_demonstrator/`). Reviewing the collaborator's species-graph candidate: Astra C24 and a Claude referee (`contrib/review_species_graph/`).
+
+### 9.15 Executable microscopic components and initialization repair, 2026-10-28 UTC
+
+At Pace's request to instantiate the proposed Hamiltonian, Codex and three
+parallel workers added [controller_instantiation](contrib/controller_instantiation/README.md).
+This is concrete finite implementation progress, not a newly verified
+counterexample or thermodynamic central-charge measurement.
+
+- **Encoding circuit [implemented; finite exact/numerical checks].** The
+  complete two-port transducer now generates explicit Boolean gates,
+  charged routing, algebraic branch preparation and inverse cleanup,
+  lowered to 17 two-site families. The p=2 manifest has 21 logical modes,
+  317 local record states, 81,342 circuit sites and 287,798 abstract gates.
+  Its 1,213,761,392 localized gates were counted, not all simulated. A
+  one-edge fixture executes all 36,140 actual local gates coherently and
+  restores every auxiliary to blank; amplitude error is below 1.2e-16.
+- **Controller tables [implemented; proved local permutations].** A
+  preloaded dispatcher has 88 neutral symbols, 150 direction-fixed
+  controls and 13,200 collision entries. Its head-overlay factor is
+  26,488 times the quantum-record dimension. A separate blank-to-length
+  primitive has 12 neutral symbols and 16 controls, computes n-1 and
+  reverses, in exactly twice n^2+3n-4-2 popcount(n-1) steps. The latter
+  passed complete cycles at all lengths four through 128, totaling
+  1,461,216 elementary steps. These are component counts, not the entire
+  initialized core's constant C.
+- **Input-format repair [proved and checked].** TYPE/species queries
+  could not distinguish neutral bit zero from one. The accepted untrusted
+  neutral format is now explicitly the unique blank; a full-space
+  blank-to-bit0 involution initializes circuit scratch after verification.
+  The fixed helper and verifier scratch remain separately pinned. The
+  construction notes have been corrected. An independent all-sector
+  d=150 two-site history fixture also checks the initialization mechanism
+  on all 22,500 basis states and 14,800 propagation edges.
+- **Actual physical bond [implemented; independently projected].** The
+  uniform bond assembler accepts explicit core/port matrices and includes
+  all selector, wrapper, helix, hopping, marker and field terms. A complete
+  d=240 one-logical-mode fixture is saved as a 57,600-square sparse bond
+  with 122,192 entries. Every column passes Hermiticity and charge checks.
+  Independent contraction of the actual hopping entries through cell
+  endpoint reductions reproduces all four short/long length combinations
+  to relative error below 5.8e-13. Negative controls detect omission of
+  X# cuts or endpoint compensators. This fixture is not a c-d violation.
+
+Source-loop accounting also supplies explicit circuit/dispatcher resource
+bounds: for A=(N+4q)^2 times the maximum bit width, at most 32A neutral
+records, 128A abstract gates, 70,000A^2 local gates, and 2,310,035A^3
+preloaded tape sites. For projective planes the latter is below
+2^50 p^21; this excludes the autonomous generator and is not a final
+selected core length. The coordinating agent reran all nine new check
+scripts successfully.
+The full autonomous program generator, verified program initialization,
+endpoint transport and elementary-clock READY protocol remain to be
+composed. The dispatcher demonstrably conserves its program symbols and
+therefore cannot generate its own instruction tape from blank. The new
+length reader is a separate primitive and needs a reversible handoff.
+The full controller count, a numerical violating choice, and the
+fixed-positive-coupling infrared conclusion are still outstanding. No
+human review is claimed.

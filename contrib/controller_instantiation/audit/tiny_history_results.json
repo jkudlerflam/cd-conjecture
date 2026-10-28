@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "scope": "all-sector two-site permutation-history toy core; not the universal controller",
+  "physical_local_dimension": 150,
+  "full_hilbert_space_dimension": 22500,
+  "decorated_propagation_edges": 14800,
+  "clock_work_components": 9700,
+  "legal_clock_history_components_before_pins": 100,
+  "unpinned_components_after_all_pins": 2,
+  "exact_ground_space_dimension": 2,
+  "vertices_in_each_surviving_history": 30,
+  "all_zero_one_two_head_and_illegal_clock_states_included": true
+}

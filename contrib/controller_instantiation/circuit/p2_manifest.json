@@ -1,0 +1,233 @@
+{
+  "u": 7,
+  "v": 7,
+  "q": 14,
+  "N": 21,
+  "edges": [
+    [
+      0,
+      4
+    ],
+    [
+      0,
+      5
+    ],
+    [
+      0,
+      6
+    ],
+    [
+      1,
+      1
+    ],
+    [
+      1,
+      3
+    ],
+    [
+      1,
+      4
+    ],
+    [
+      2,
+      2
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      2,
+      6
+    ],
+    [
+      3,
+      1
+    ],
+    [
+      3,
+      2
+    ],
+    [
+      3,
+      5
+    ],
+    [
+      4,
+      0
+    ],
+    [
+      4,
+      1
+    ],
+    [
+      4,
+      6
+    ],
+    [
+      5,
+      0
+    ],
+    [
+      5,
+      3
+    ],
+    [
+      5,
+      5
+    ],
+    [
+      6,
+      0
+    ],
+    [
+      6,
+      2
+    ],
+    [
+      6,
+      4
+    ]
+  ],
+  "neutral_bits": 81265,
+  "charged_sites": 77,
+  "total_sites": 81342,
+  "local_sigma_dimension": 317,
+  "index_states": 10,
+  "opcode_counts": {
+    "CCX": 51740,
+    "CH": 44,
+    "CSWAPD": 2352,
+    "CX": 204814,
+    "H": 2,
+    "P": 2,
+    "QUERY": 1176,
+    "R": 20,
+    "X": 27648
+  },
+  "abstract_gate_count": 287798,
+  "abstract_gate_sha256": "80d584313583541c7e80931a37e8afb00ac22d6ddf57a14d5e164022bbbefe49",
+  "local_gate_count": 1213761392,
+  "local_opcode_counts": {
+    "CH": 44,
+    "CNOT": 308294,
+    "CV": 103480,
+    "CV_DAG": 51740,
+    "EXCHANGE": 2352,
+    "H": 2,
+    "INIT": 162530,
+    "LOAD": 4704,
+    "QUERY": 1176,
+    "ROT": 20,
+    "SHIFT": 1854,
+    "SHIFT_DAG": 1854,
+    "SWAP": 1213088596,
+    "TYPE": 7096,
+    "X": 27648,
+    "Z": 2
+  },
+  "exact_rotation_probabilities": [
+    [
+      [
+        1,
+        1
+      ],
+      [
+        0,
+        1
+      ]
+    ],
+    [
+      [
+        1,
+        1
+      ],
+      [
+        0,
+        1
+      ]
+    ],
+    [
+      [
+        4,
+        7
+      ],
+      [
+        3,
+        7
+      ]
+    ],
+    [
+      [
+        2,
+        3
+      ],
+      [
+        1,
+        3
+      ]
+    ],
+    [
+      [
+        1,
+        1
+      ],
+      [
+        0,
+        1
+      ]
+    ],
+    [
+      [
+        16,
+        21
+      ],
+      [
+        5,
+        21
+      ]
+    ],
+    [
+      [
+        1,
+        1
+      ],
+      [
+        0,
+        1
+      ]
+    ],
+    [
+      [
+        4,
+        5
+      ],
+      [
+        1,
+        5
+      ]
+    ],
+    [
+      [
+        1,
+        1
+      ],
+      [
+        0,
+        1
+      ]
+    ],
+    [
+      [
+        1,
+        1
+      ],
+      [
+        0,
+        1
+      ]
+    ]
+  ],
+  "input_contract": "All neutral registers are unique BLANK; INIT makes bit0 before the circuit and restores BLANK afterwards.",
+  "scope": "Externally scheduled circuit. No initialized TI history controller or infrared conclusion."
+}

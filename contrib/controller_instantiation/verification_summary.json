@@ -1,0 +1,52 @@
+{
+  "scope": "Finite component checks, not a complete counterexample",
+  "all_passed": true,
+  "tests": [
+    {
+      "script": "circuit/verify.py",
+      "passed": true,
+      "runtime_seconds": 0.8540301669854671
+    },
+    {
+      "script": "circuit/resource_checks.py",
+      "passed": true,
+      "runtime_seconds": 2.4845738341100514
+    },
+    {
+      "script": "controller/checks.py",
+      "passed": true,
+      "runtime_seconds": 0.6239192918874323
+    },
+    {
+      "script": "controller/integration_check.py",
+      "passed": true,
+      "runtime_seconds": 0.09564920794218779
+    },
+    {
+      "script": "controller/length_counter_checks.py",
+      "passed": true,
+      "runtime_seconds": 0.4292812079656869
+    },
+    {
+      "script": "audit/format_query_checks.py",
+      "passed": true,
+      "runtime_seconds": 0.08059012494049966
+    },
+    {
+      "script": "audit/tiny_history_checks.py",
+      "passed": true,
+      "runtime_seconds": 0.04503937507979572
+    },
+    {
+      "script": "local/checks.py",
+      "passed": true,
+      "runtime_seconds": 0.3326052080374211
+    },
+    {
+      "script": "local/port_projection_checks.py",
+      "passed": true,
+      "runtime_seconds": 0.4199267909862101
+    }
+  ],
+  "runtime_seconds": 2.484928499907255
+}

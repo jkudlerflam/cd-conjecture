@@ -39,6 +39,15 @@ This result supplies no initialization penalties, clock spectrum,
 illegal-sector bound, cell selector or output-time port filter.
 The circuit writes and may temporarily move the eventual port registers.
 
+The [executable circuit generator](../controller_instantiation/circuit/README.md)
+now instantiates both port stages, every Boolean computation, the local
+gate lowering, and inverse cleanup. Its neutral auxiliary records start
+and finish in the unique blank state: an explicit blank-to-bit0 involution
+is applied before use and undone afterwards. This avoids the ambiguity
+of verifying an ordinary zero bit using TYPE/species queries alone.
+The generator is externally scheduled; its complete autonomous execution
+and initialized program sector remain separate requirements.
+
 ## 1. The reversible map in the occupation basis
 
 Fix an ordering of the \(N\) edges. For the left stage, the coherent branch

@@ -215,7 +215,12 @@ plus clock legality, initialization, and FAIL penalties. Some core
 instructions and initialization pins are boundary operators \(a_c,b_c\);
 they are incorporated into the repeated wrapper bond through (4).
 The clock rules are explicit, but the compiler's full finite controller
-defining the \(U_{ab}\) has not been expanded. That expansion, selected
+defining the \(U_{ab}\) has not been expanded. The
+[implementation continuation](../controller_instantiation/README.md) now
+supplies the entire encoding circuit, an explicit preloaded dispatcher,
+a blank-to-length counter, and a complete microscopic bond assembler with
+a saved d=240 one-mode fixture. These are separately checked components,
+not a completed autonomous high-channel core. The full composition, selected
 \(p,k\), and evaluation of the finite overlaps are needed to print every
 entry of (7) and give a numerical \(d\). A numerical nonzero \(s\) remains
 unchosen. This formula does not fill in those omitted data.

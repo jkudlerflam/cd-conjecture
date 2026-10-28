@@ -1,0 +1,18 @@
+{
+  "all_collision_pairs_and_inverses": 13200,
+  "prescribed_injective_collision_entries": 1860,
+  "program_symbol_conserved_on_all_local_inputs": true,
+  "B_K_and_factor": [
+    88,
+    150,
+    26488
+  ],
+  "saved_table_exactly_reproduced": true,
+  "ordered_sweep_one_move_cases": 4200,
+  "exhaustive_short_legal_program_cycles": 2271,
+  "maximum_short_program_steps": 102,
+  "random_full_menu_addressed_scripts": 100,
+  "coherent_input_independent_trajectory_trials": 20,
+  "max_coherent_forward_and_cleanup_error": 2.5589376332604516e-16,
+  "all_passed": true
+}

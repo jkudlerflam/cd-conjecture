@@ -77,6 +77,14 @@ A new candidate refutation is recorded below and needs independent review. The w
 
 [STATUS.md](STATUS.md) has the details and the list of where help is most useful.
 
+**Microscopic implementation progress (2026-10-28):**
+[executable circuit and controller work](contrib/controller_instantiation/README.md)
+now supplies a full sparse-encoding gate generator, explicit reversible
+dispatcher and length-counter tables, a repaired input-format check, and
+a saved d=240 one-mode test Hamiltonian. The autonomous program generator,
+verified program initialization and endpoint readout still need to be
+composed into the high-channel core. The saved fixture is not a c-d violation.
+
 Additional derivations from the chat "Prove c d conjecture" are collected in
 [contrib/chat_followup/](contrib/chat_followup/README.md): a species-torus
 selection rule for the encoded target, a massive-auxiliary construction,

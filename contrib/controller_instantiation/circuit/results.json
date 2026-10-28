@@ -1,0 +1,55 @@
+{
+  "status": "finite circuit checks only; not a counterexample",
+  "exhaustive_graphs": [
+    {
+      "u": 1,
+      "v": 1,
+      "N": 1,
+      "basis_branch_cases": 8,
+      "max_compression_error": 2.220446049250313e-16,
+      "max_preparation_error": 1.1102230246251565e-16
+    },
+    {
+      "u": 2,
+      "v": 2,
+      "N": 3,
+      "basis_branch_cases": 200,
+      "max_compression_error": 2.220446049250313e-16,
+      "max_preparation_error": 1.1102230246251565e-16
+    },
+    {
+      "u": 2,
+      "v": 2,
+      "N": 4,
+      "basis_branch_cases": 576,
+      "max_compression_error": 2.220446049250313e-16,
+      "max_preparation_error": 1.1102230246251565e-16
+    },
+    {
+      "u": 3,
+      "v": 2,
+      "N": 2,
+      "basis_branch_cases": 100,
+      "max_compression_error": 2.220446049250313e-16,
+      "max_preparation_error": 1.1102230246251565e-16
+    }
+  ],
+  "local_full_space_permutation_inputs": 2890,
+  "local_routing_checks": 64,
+  "toffoli_max_error": 0.0,
+  "full_nearest_neighbor_unitary": {
+    "local_gates": 36140,
+    "sites": 288,
+    "basis_columns_checked": 2,
+    "max_intermediate_support": 8,
+    "max_amplitude_error": 1.1102230246251565e-16,
+    "all_scratch_returned_to_blank": true
+  },
+  "projective_plane_p2": {
+    "basis_branch_cases": 2592,
+    "max_preparation_error": 5.551115123125783e-17,
+    "all_species_counts_preserved": true,
+    "all_neutral_scratch_cleared": true
+  },
+  "elapsed_seconds": 0.44
+}

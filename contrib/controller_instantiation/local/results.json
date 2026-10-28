@@ -1,0 +1,76 @@
+{
+  "manifest": {
+    "core": "one-fermion positive-core fixture; not a c-d violation",
+    "core_dimension": 2,
+    "core_length": 3,
+    "local_dimension": 240,
+    "bond_shape": [
+      57600,
+      57600
+    ],
+    "selected_lengths": [
+      4,
+      5
+    ],
+    "perturbation_strength": 1e-07,
+    "filter_scale": 433.95293303198713,
+    "selector_hop": 89.98213207196933,
+    "selector_penalty": 368.9285282878773,
+    "marker_chemical_potential": 56.94919933056821,
+    "base_energy_density": -18.33056477123447,
+    "endpoint_occupancies": [
+      0.5096190130897942,
+      0.5000313679905815
+    ],
+    "selector_overlap": 0.9119498989098852,
+    "vacancy_overlap": 0.2493044891824023,
+    "helix_overlap": 0.9392595359811344,
+    "marker_amplitude": 2.5675111212737987,
+    "logical_chemical_potential_per_cell": 0.4414727396180363,
+    "status": "Explicit assembly fixture; no thermodynamic or c-d violation claim"
+  },
+  "core": {
+    "dimension": 8,
+    "code_dimension": 2,
+    "gap": 0.4999999999999999,
+    "port_error": 0.0
+  },
+  "selected_wrapper_sectors": [
+    {
+      "length": 4,
+      "sector_dimension": 256,
+      "ground_energy": -3.0175068680800323,
+      "code_residual": 3.4702123593605327e-13,
+      "gap_in_selected_occupation_sector": 0.0037853394994589173,
+      "port_error": 1.1102230246251565e-16
+    },
+    {
+      "length": 5,
+      "sector_dimension": 640,
+      "ground_energy": -3.007875114112206,
+      "code_residual": 3.4337129795701017e-13,
+      "gap_in_selected_occupation_sector": 1.944889860272525e-06,
+      "port_error": 2.220717083251841e-16
+    }
+  ],
+  "equalizer": {
+    "compensated_port_error": 3.5269424566472484e-14,
+    "helix_transport_error": 3.2197070826986937e-15
+  },
+  "full_bond": {
+    "local_dimension": 240,
+    "matrix_shape": [
+      57600,
+      57600
+    ],
+    "every_column_evaluated": true,
+    "stored_entries": 122192,
+    "hermiticity_error": 6.296756457786712e-15,
+    "species_charge_error": 0,
+    "marker_number_error": 0,
+    "decomposition_error": 0.0,
+    "operator_norm_upper_bound": 1390.8409312679305,
+    "data_file": "fixture_bond.npz"
+  },
+  "runtime_seconds": 0.2574151670560241
+}

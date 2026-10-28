@@ -1,0 +1,136 @@
+{
+  "status": "Source-loop bounds for circuit plus preloaded dispatcher only",
+  "excluded": "Autonomous program generation, verifier, history clock, endpoint transport, full core and wrapper",
+  "cases": [
+    {
+      "case": "one-edge",
+      "q": 2,
+      "N": 1,
+      "exact": {
+        "neutral_bits": 279,
+        "total_data_sites": 288,
+        "abstract_gates": 906,
+        "local_gates": 36140,
+        "cursor_program_symbols": 84763,
+        "preloaded_tape_sites": 85053
+      },
+      "bounds": {
+        "L": 9,
+        "w": 1,
+        "A": 81,
+        "neutral_bits": 2592,
+        "abstract_gates": 10368,
+        "total_data_sites": 2673,
+        "local_gates": 459270000,
+        "cursor_program_symbols": 1227628710000,
+        "preloaded_tape_sites": 1227647310435,
+        "dispatcher_cycle_steps": 8472886094430000000000000,
+        "unsimplified_wire_bound": 1894,
+        "unsimplified_abstract_gate_bound": 7235
+      }
+    },
+    {
+      "case": "isolated-upper",
+      "q": 9,
+      "N": 1,
+      "exact": {
+        "neutral_bits": 12863,
+        "total_data_sites": 12900,
+        "abstract_gates": 43492,
+        "local_gates": 38199202
+      },
+      "bounds": {
+        "L": 37,
+        "w": 4,
+        "A": 5476,
+        "neutral_bits": 175232,
+        "abstract_gates": 700928,
+        "total_data_sites": 180708,
+        "local_gates": 2099060320000,
+        "cursor_program_symbols": 379316992306560000,
+        "preloaded_tape_sites": 379322739533716160,
+        "dispatcher_cycle_steps": 808913142477623535329280000000000000,
+        "unsimplified_wire_bound": 107458,
+        "unsimplified_abstract_gate_bound": 472319
+      }
+    },
+    {
+      "case": "complete-3x2",
+      "q": 5,
+      "N": 6,
+      "exact": {
+        "neutral_bits": 6960,
+        "total_data_sites": 6986,
+        "abstract_gates": 23908,
+        "local_gates": 11696604
+      },
+      "bounds": {
+        "L": 26,
+        "w": 3,
+        "A": 2028,
+        "neutral_bits": 64896,
+        "abstract_gates": 259584,
+        "total_data_sites": 66924,
+        "local_gates": 287894880000,
+        "cursor_program_symbols": 19267076949120000,
+        "preloaded_tape_sites": 19267368874528320,
+        "dispatcher_cycle_steps": 2087031282190989189120000000000000,
+        "unsimplified_wire_bound": 40880,
+        "unsimplified_abstract_gate_bound": 175876
+      }
+    },
+    {
+      "case": "projective-p2",
+      "q": 14,
+      "N": 21,
+      "exact": {
+        "neutral_bits": 81265,
+        "total_data_sites": 81342,
+        "abstract_gates": 287798,
+        "local_gates": 1213761392
+      },
+      "bounds": {
+        "L": 77,
+        "w": 5,
+        "A": 29645,
+        "neutral_bits": 948640,
+        "abstract_gates": 3794560,
+        "total_data_sites": 978285,
+        "local_gates": 61517821750000,
+        "cursor_program_symbols": 60181962250698750000,
+        "preloaded_tape_sites": 60182874098611639375,
+        "dispatcher_cycle_steps": 20362447744670429834962968750000000000000,
+        "unsimplified_wire_bound": 558262,
+        "unsimplified_abstract_gate_bound": 2529235
+      }
+    },
+    {
+      "case": "projective-p3",
+      "q": 26,
+      "N": 52,
+      "exact": {
+        "neutral_bits": 447340,
+        "total_data_sites": 447496,
+        "abstract_gates": 1588624,
+        "local_gates": 32902530508
+      },
+      "bounds": {
+        "L": 156,
+        "w": 6,
+        "A": 146016,
+        "neutral_bits": 4672512,
+        "abstract_gates": 18690048,
+        "total_data_sites": 4818528,
+        "local_gates": 1492447057920000,
+        "cursor_program_symbols": 7191397937105141760000,
+        "preloaded_tape_sites": 7191506897679946383360,
+        "dispatcher_cycle_steps": 290752821104177705295576280596480000000000000,
+        "unsimplified_wire_bound": 2691950,
+        "unsimplified_abstract_gate_bound": 12381426
+      }
+    }
+  ],
+  "projective_parameter_only_checks": 999,
+  "all_passed": true,
+  "runtime_seconds": 2.4286442089360207
+}

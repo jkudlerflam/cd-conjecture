@@ -45,6 +45,16 @@ and checked between those agents. No independent human review is
 claimed. The construction is analytic; no numerical matrix diagonalization
 at these very large selected lengths is claimed.
 
+**Implementation update, 2026-10-28 UTC.** The
+[controller instantiation work](../controller_instantiation/README.md)
+now supplies an executable sparse circuit, a finite preloaded dispatcher,
+and an all-sector initialized toy core. The complete autonomous
+length-to-program generator, accepted program sector, and endpoint readout
+have not yet been combined into a single expanded high-channel controller.
+The composition argument here is not a report that such a complete table
+has been generated or simulated. The accepted neutral input format below
+has been sharpened to repair an ambiguity found during that implementation.
+
 ## 1. Ingredients and their precise use
 
 The proof uses the following results, with distinct responsibilities.
@@ -222,8 +232,21 @@ The classical format predicate requires:
    its two specified species states.
 2. The prescribed charged reference records needed by the two-stage
    sparse isometry, in their prescribed places.
-3. Every other quantum-data/work slot in its prescribed neutral or
-   charged reference state.
+3. Every other untrusted quantum-data/work slot in the unique blank state,
+   or, where a charged reference is required, its specified ordinary
+   charged state. No ordinary neutral bit or indexed H/T record is an
+   accepted untrusted reference.
+
+This restriction is necessary for the stated query menu: TYPE and species
+queries cannot distinguish an ordinary neutral zero bit from a one bit.
+Each ordinary charged label and the unique blank do have distinct complete
+query signatures. Thus the format above can select exactly the intended
+2^N-dimensional input space. The boundary H_(0,0) helper is separately pinned.
+After verification, convert each designated blank ancillary record to an
+ordinary zero bit by the full-space involution blank <-> bit0. This INIT
+gate is included in the preparation word and its inverse cleanup. All
+other alphabet states are fixed, so the conversion preserves every species
+charge. See the [exact alias and repair checks](../controller_instantiation/audit/README.md).
 
 A TYPE query checks the complete underlying alphabet before species
 queries are interpreted: an unexpected loaded, unloaded or other

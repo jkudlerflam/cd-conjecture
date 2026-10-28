@@ -27,9 +27,16 @@ route A remains the separate approach to that goal.
 The [microscopic bond specification](MICROSCOPIC_HAMILTONIAN.md) assembles
 the local Hilbert space, selector, wrapper, compensated hopping and marker
 motion in one place. It also fixes the first-order chemical potential
-explicitly. This remains a parameterized construction: no expanded
-controller transition table, selected violating prime, numerical local
+explicitly. This remains a parameterized construction: no complete
+autonomous controller table, selected violating prime, numerical local
 dimension, or verified finite coupling is supplied.
+
+[Executable controller work](../controller_instantiation/README.md) now
+provides the explicit encoding circuit, finite dispatcher and length-counter
+tables, an initialization-format repair, and a fully saved nonviolating
+microscopic bond fixture. Autonomous program generation, verified program
+initialization and endpoint readout still need to be composed into the
+actual high-channel core. The fixture is not a violating numerical example.
 
 ## Provenance
 

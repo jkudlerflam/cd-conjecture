@@ -40,6 +40,13 @@ minimal transition table, an initialized history Hamiltonian or its
 illegal sectors. Hypothesis 4 is an input to this lemma, not its
 conclusion.
 
+An [explicit dispatcher table](../controller_instantiation/controller/README.md)
+now implements a preloaded instance of this interface. Its exact count is
+88 neutral tape symbols and 150 direction-fixed controls for the 17-family
+preparation menu. It does not generate the program from blank: its program
+symbols are conserved. The length-to-program computation and energetic
+verification remain separate parts of the full compiler claim.
+
 ## 1. Keep classical control separate from quantum scratch
 
 An ordinary site is
@@ -231,6 +238,14 @@ species QUERY may act trivially outside the ordinary charged-data type;
 the acceptance predicate rejects those types separately.
 
 The fixed boundary helper is omitted from the untrusted-input count.
+All other accepted untrusted neutral records must be the unique blank:
+TYPE plus species queries do not distinguish ordinary bit 0 from bit 1.
+Convert designated accepted blanks to zero bits with an explicit
+blank-to-bit0 involution after verification; include its inverse in
+cleanup. Trusted verifier Q scratch is separately pinned. The
+[format audit](../controller_instantiation/audit/README.md) proves and
+checks this exact input contract, including malformed H/T records.
+
 After the format check, the other quantum work records are known to
 have their specified blank/reference states on the accepted subspace.
 The helper may then be moved into the auxiliary workspace and a charged

@@ -1,0 +1,30 @@
+{
+  "local_collision_pairs_and_inverses": 192,
+  "prescribed_injective_entries": 54,
+  "static_marks_preserved_on_all_inputs": true,
+  "B_K_factor": [
+    12,
+    16,
+    396
+  ],
+  "blank_input_lengths_checked": [
+    4,
+    128
+  ],
+  "blank_to_parameter_to_blank_cycles": 125,
+  "total_elementary_steps_checked": 1461216,
+  "exact_running_time_formula_checked": "2(n^2+3n-4-2 popcount(n-1))",
+  "arbitrary_nonoverflowing_binary_increments": 8149,
+  "largest_example": {
+    "sites": 128,
+    "midpoint": {
+      "tick": 16750,
+      "counter": 127,
+      "frontiers": [
+        127
+      ]
+    },
+    "full_cycle_steps": 33500
+  },
+  "all_passed": true
+}

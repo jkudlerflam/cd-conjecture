@@ -1,0 +1,56 @@
+{
+  "status": "passed",
+  "scope": "finite gate and input-format audit, not a full controller or CFT verification",
+  "local_gates": [
+    {
+      "q": 2,
+      "m": 2,
+      "alphabet_size": 17,
+      "whole_space_query_columns_checked": 1156,
+      "bit_zero_one_alias_demonstrated": true,
+      "all_blank_and_species_references_separated": true,
+      "blank_bit_zero_conversion_is_charge_preserving_involution": true
+    },
+    {
+      "q": 3,
+      "m": 4,
+      "alphabet_size": 38,
+      "whole_space_query_columns_checked": 5776,
+      "bit_zero_one_alias_demonstrated": true,
+      "all_blank_and_species_references_separated": true,
+      "blank_bit_zero_conversion_is_charge_preserving_involution": true
+    },
+    {
+      "q": 5,
+      "m": 6,
+      "alphabet_size": 80,
+      "whole_space_query_columns_checked": 25600,
+      "bit_zero_one_alias_demonstrated": true,
+      "all_blank_and_species_references_separated": true,
+      "blank_bit_zero_conversion_is_charge_preserving_involution": true
+    }
+  ],
+  "helper_walks": [
+    {
+      "q": 2,
+      "m": 2,
+      "n": 3,
+      "basis_round_trips": 4624
+    },
+    {
+      "q": 3,
+      "m": 4,
+      "n": 3,
+      "basis_round_trips": 28880
+    }
+  ],
+  "repaired_product_format": {
+    "accepted_slot_dimensions": [
+      2,
+      2,
+      1,
+      1
+    ],
+    "accepted_space_dimension": 4
+  }
+}
