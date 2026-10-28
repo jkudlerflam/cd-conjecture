@@ -1,0 +1,72 @@
+{
+  "run": 11,
+  "verdict": "nonconclusive for the original c-d conjecture",
+  "files": {
+    "canonical_length_bounds.md": {
+      "bytes": 12310,
+      "sha256": "c022e66eaad87be3f7d8d75d7729317e77f5074b91b6959cf0f24b0144c633e1"
+    },
+    "canonical_length_checks.py": {
+      "bytes": 11428,
+      "sha256": "4e0ab0ab4fd3333e97e53aaa3cccb6231612d439fe285266c58abd6aa6e4afd3"
+    },
+    "canonical_length_checks.json": {
+      "bytes": 13071,
+      "sha256": "98fc82c2f8b618d33494f983bffe9b299fe292e1188df0e48a25c7ff50789fc6"
+    },
+    "marker_density_bounds.md": {
+      "bytes": 10311,
+      "sha256": "119e691b174278acfd1fcb3bb0dbd54c90a47a25c7a8a1cc75e0093d60edf4f2"
+    },
+    "marker_density_checks.py": {
+      "bytes": 4750,
+      "sha256": "c02bf82e36cf41dcbd5007e583bec79901f9c23ccb53a1bea283edecf6ba6426"
+    },
+    "marker_density_checks.json": {
+      "bytes": 39006,
+      "sha256": "502905f151395aac016f4bdc097a1db7c65f403fd7810ce1b3335c91049848ba"
+    },
+    "selector_repair.md": {
+      "bytes": 5977,
+      "sha256": "a9f7a81688fd74bc42bd2a4f4a6b286f4ba9b50e0f7204feb5c861b8afa2f61c"
+    },
+    "selector_repair_checks.py": {
+      "bytes": 5495,
+      "sha256": "d4e0d0c3489ddd44ee6122e4c92e12e88a83697f0525224350a44310e4312762"
+    },
+    "selector_repair_checks.json": {
+      "bytes": 9465,
+      "sha256": "b99a06e3a5cbd61c570992770200da6b18a4abb04ccc2f376a74967b889ee670"
+    },
+    "certified_periodic_bond.py": {
+      "bytes": 1588,
+      "sha256": "e2ff89b5d152487a1e7ecc375c1230cfb55d3e5dde72993aaabc970c9284980b"
+    },
+    "run11_audit.md": {
+      "bytes": 12176,
+      "sha256": "3e9b6608c9b561d2e6a111de565b62965e0481e9169c088dfc6fa55e6f02119d"
+    },
+    "RESULT.md": {
+      "bytes": 474921,
+      "sha256": "b0651566eff0f537f5712a018f7f1015a7cb83df97f5eb30cc11694a0ffb5297"
+    },
+    "PROGRESS.md": {
+      "bytes": 102267,
+      "sha256": "edcdb3a531c250ea042d68896f34b6e1beef744198262e650e898a4e7940ba77"
+    },
+    "RUN11_RESULT.md": {
+      "bytes": 474921,
+      "sha256": "b0651566eff0f537f5712a018f7f1015a7cb83df97f5eb30cc11694a0ffb5297"
+    },
+    "RUN11_PROGRESS.md": {
+      "bytes": 102267,
+      "sha256": "edcdb3a531c250ea042d68896f34b6e1beef744198262e650e898a4e7940ba77"
+    }
+  },
+  "checks": [
+    "canonical_length_checks.py passed",
+    "marker_density_checks.py passed",
+    "selector_repair_checks.py passed"
+  ],
+  "scope": "finite control models and exact algebra; no microscopic CFT estimator"
+}

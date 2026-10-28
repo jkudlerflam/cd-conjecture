@@ -1,0 +1,66 @@
+
+=== tuned: g = [0.35, 0.5, 0.65, 0.8], bond weights w = [1.0, 1.0, 1.0, 1.0] ===
+torus: logical charge sign -1; max_s |[T_s, H_cell]| = 0.0e+00, |[T_s, bond]| = 0.0e+00
+cell: code splitting 8.4e-15, gap 1.8417, lowest levels [0.         1.84171392 1.89323556 1.94810084 2.0048425 ], compression residual 4.6e-15 (392s)
+compressions per flavour: aL = [-0.20659 -0.28557 -0.35556 -0.41533], aR = [-0.20659 -0.28557 -0.35556 -0.41533], first-order Majorana hopping / lam = w aL aR = [0.04268 0.08155 0.12643 0.1725 ]
+logical torus: relative |[T, T1]| = 3.9e-15, |[T, T2]| = 3.6e-15, |[T, T3]| = 3.1e-14
+physical upper-species charge on the code = -Q + -0.000, residual 2.3e-14 (so mu0 Q is a physical, torus-symmetric term, added exactly after SW)
+T3 from factors: |T3 - rebuilt| = 0.0e+00
+quartic monomials 144; |G| (per lam^2) = 0.4697; largest torus-charged component 1.4e-16 (allowed components 52 of 784)
+  allowed couplings by kind (Frobenius, per lam^2): umklapp e_a + e_b | -(e_a + e_b): 0.4010, exchange e_a - e_b | e_b - e_a: 0.1416, rectangle: 0.0659, Cartan (forward): 0.1881
+lam = 0.1, kappa = 1.0: mu0 = 0.01269; Fermi points k0/pi = [-0.2668 -0.1271 -0.0809 -0.0589], kpi/pi = [-0.7332 -0.8729 -0.9191 -0.9411], velocities [0.0114 0.0301 0.0489 0.0678]; smallest nonzero mismatch of an allowed coupling 0.1380; max|G|/(2 pi v) = 0.0057
+   one-loop, all allowed couplings resonant: runaway (l = 55.90); with the actual detuning: bounded (l = 80.05), final max non-Cartan coupling 0.00e+00 (initial 2.17e-03)
+lam = 0.1, kappa = 10.0: mu0 = 0.01269; Fermi points k0/pi = [-0.2663 -0.1259 -0.0821 -0.0593], kpi/pi = [-0.7337 -0.8741 -0.9179 -0.9407], velocities [0.0114 0.0301 0.0489 0.0678]; smallest nonzero mismatch of an allowed coupling 0.1431; max|G|/(2 pi v) = 0.0575
+   one-loop, all allowed couplings resonant: runaway (l = 5.59); with the actual detuning: bounded (l = 80.05), final max non-Cartan coupling 0.00e+00 (initial 2.17e-02)
+lam = 0.2, kappa = 1.0: mu0 = 0.02539; Fermi points k0/pi = [-0.2668 -0.127  -0.081  -0.059 ], kpi/pi = [-0.7332 -0.873  -0.919  -0.941 ], velocities [0.0228 0.0601 0.0979 0.1356]; smallest nonzero mismatch of an allowed coupling 0.1385; max|G|/(2 pi v) = 0.0115
+   one-loop, all allowed couplings resonant: runaway (l = 27.95); with the actual detuning: bounded (l = 80.05), final max non-Cartan coupling 0.00e+00 (initial 8.66e-03)
+lam = 0.2, kappa = 10.0: mu0 = 0.02539; Fermi points k0/pi = [-0.2658 -0.1245 -0.0834 -0.0597], kpi/pi = [-0.7342 -0.8755 -0.9166 -0.9403], velocities [0.0229 0.0603 0.0977 0.1356]; smallest nonzero mismatch of an allowed coupling 0.1487; max|G|/(2 pi v) = 0.1150
+   one-loop, all allowed couplings resonant: runaway (l = 2.80); with the actual detuning: bounded (l = 80.04), final max non-Cartan coupling 0.00e+00 (initial 8.66e-02)
+lam = 0.4, kappa = 1.0: mu0 = 0.05078; Fermi points k0/pi = [-0.2667 -0.1267 -0.0813 -0.0591], kpi/pi = [-0.7333 -0.8733 -0.9187 -0.9409], velocities [0.0457 0.1203 0.1957 0.2713]; smallest nonzero mismatch of an allowed coupling 0.1397; max|G|/(2 pi v) = 0.0230
+   one-loop, all allowed couplings resonant: runaway (l = 13.97); with the actual detuning: bounded (l = 80.05), final max non-Cartan coupling 0.00e+00 (initial 3.46e-02)
+lam = 0.4, kappa = 10.0: mu0 = 0.05078; Fermi points k0/pi = [-0.2646 -0.1219 -0.086  -0.0605], kpi/pi = [-0.7354 -0.8781 -0.914  -0.9395], velocities [0.046  0.121  0.1949 0.271 ]; smallest nonzero mismatch of an allowed coupling 0.1601; max|G|/(2 pi v) = 0.2300
+   one-loop, all allowed couplings resonant: runaway (l = 1.40); with the actual detuning: bounded (l = 80.01), final max non-Cartan coupling 0.00e+00 (initial 3.46e-01)
+
+=== uniform_mu: g = [0.5, 0.5, 0.5, 0.5], bond weights w = [1.0, 1.0, 1.0, 1.0] ===
+torus: logical charge sign -1; max_s |[T_s, H_cell]| = 0.0e+00, |[T_s, bond]| = 0.0e+00
+cell: code splitting 8.0e-15, gap 1.7861, lowest levels [0.         1.78614184 1.94445424 2.12157858 2.57842883], compression residual 3.2e-15 (508s)
+compressions per flavour: aL = [-0.32245 -0.32245 -0.32245 -0.32245], aR = [-0.32245 -0.32245 -0.32245 -0.32245], first-order Majorana hopping / lam = w aL aR = [0.10397 0.10397 0.10397 0.10397]
+logical torus: relative |[T, T1]| = 3.2e-15, |[T, T2]| = 3.0e-15, |[T, T3]| = 7.1e-14
+physical upper-species charge on the code = -Q + 0.000, residual 1.8e-14 (so mu0 Q is a physical, torus-symmetric term, added exactly after SW)
+T3 from factors: |T3 - rebuilt| = 0.0e+00
+quartic monomials 144; |G| (per lam^2) = 0.4473; largest torus-charged component 1.6e-16 (allowed components 52 of 784)
+  allowed couplings by kind (Frobenius, per lam^2): umklapp e_a + e_b | -(e_a + e_b): 0.3758, exchange e_a - e_b | e_b - e_a: 0.1483, rectangle: 0.0886, Cartan (forward): 0.1704
+lam = 0.1, kappa = 1.0: mu0 = 0.01248; Fermi points k0/pi = [-0.097 -0.097 -0.097 -0.097], kpi/pi = [-0.903 -0.903 -0.903 -0.903], velocities [0.0397 0.0397 0.0397 0.0397]; smallest nonzero mismatch of an allowed coupling 1.2188; max|G|/(2 pi v) = 0.0034
+   one-loop, all allowed couplings resonant: runaway (l = 79.10); with the actual detuning: bounded (l = 80.05), final max non-Cartan coupling 8.09e-04 (initial 1.08e-03)
+lam = 0.1, kappa = 10.0: mu0 = 0.01248; Fermi points k0/pi = [-0.097 -0.097 -0.097 -0.097], kpi/pi = [-0.903 -0.903 -0.903 -0.903], velocities [0.0397 0.0397 0.0397 0.0397]; smallest nonzero mismatch of an allowed coupling 1.2188; max|G|/(2 pi v) = 0.0340
+   one-loop, all allowed couplings resonant: runaway (l = 7.91); with the actual detuning: runaway (l = 15.82), final max non-Cartan coupling 4.36e-02 (initial 1.08e-02)
+lam = 0.2, kappa = 1.0: mu0 = 0.02495; Fermi points k0/pi = [-0.097 -0.097 -0.097 -0.097], kpi/pi = [-0.903 -0.903 -0.903 -0.903], velocities [0.0793 0.0793 0.0793 0.0793]; smallest nonzero mismatch of an allowed coupling 1.2188; max|G|/(2 pi v) = 0.0068
+   one-loop, all allowed couplings resonant: runaway (l = 39.55); with the actual detuning: runaway (l = 78.95), final max non-Cartan coupling 1.71e-02 (initial 4.34e-03)
+lam = 0.2, kappa = 10.0: mu0 = 0.02495; Fermi points k0/pi = [-0.097 -0.097 -0.097 -0.097], kpi/pi = [-0.903 -0.903 -0.903 -0.903], velocities [0.0793 0.0793 0.0793 0.0793]; smallest nonzero mismatch of an allowed coupling 1.2188; max|G|/(2 pi v) = 0.0680
+   one-loop, all allowed couplings resonant: runaway (l = 3.96); with the actual detuning: runaway (l = 7.91), final max non-Cartan coupling 1.75e-01 (initial 4.34e-02)
+lam = 0.4, kappa = 1.0: mu0 = 0.04991; Fermi points k0/pi = [-0.097 -0.097 -0.097 -0.097], kpi/pi = [-0.903 -0.903 -0.903 -0.903], velocities [0.1587 0.1587 0.1587 0.1587]; smallest nonzero mismatch of an allowed coupling 1.2188; max|G|/(2 pi v) = 0.0136
+   one-loop, all allowed couplings resonant: runaway (l = 19.80); with the actual detuning: runaway (l = 39.50), final max non-Cartan coupling 6.90e-02 (initial 1.74e-02)
+lam = 0.4, kappa = 10.0: mu0 = 0.04991; Fermi points k0/pi = [-0.097 -0.097 -0.097 -0.097], kpi/pi = [-0.903 -0.903 -0.903 -0.903], velocities [0.1587 0.1587 0.1587 0.1587]; smallest nonzero mismatch of an allowed coupling 1.2188; max|G|/(2 pi v) = 0.1360
+   one-loop, all allowed couplings resonant: runaway (l = 1.98); with the actual detuning: runaway (l = 3.95), final max non-Cartan coupling 6.94e-01 (initial 1.74e-01)
+
+=== untuned: g = [0.5, 0.5, 0.5, 0.5], bond weights w = [1.0, 1.0, 1.0, 1.0] ===
+torus: logical charge sign -1; max_s |[T_s, H_cell]| = 0.0e+00, |[T_s, bond]| = 0.0e+00
+cell: code splitting 8.0e-15, gap 1.7861, lowest levels [0.         1.78614184 1.94445424 2.12157858 2.57842883], compression residual 3.2e-15 (437s)
+compressions per flavour: aL = [-0.32245 -0.32245 -0.32245 -0.32245], aR = [-0.32245 -0.32245 -0.32245 -0.32245], first-order Majorana hopping / lam = w aL aR = [0.10397 0.10397 0.10397 0.10397]
+logical torus: relative |[T, T1]| = 3.2e-15, |[T, T2]| = 3.0e-15, |[T, T3]| = 7.1e-14
+physical upper-species charge on the code = -Q + 0.000, residual 1.8e-14 (so mu0 Q is a physical, torus-symmetric term, added exactly after SW)
+T3 from factors: |T3 - rebuilt| = 0.0e+00
+quartic monomials 144; |G| (per lam^2) = 0.4473; largest torus-charged component 1.6e-16 (allowed components 52 of 784)
+  allowed couplings by kind (Frobenius, per lam^2): umklapp e_a + e_b | -(e_a + e_b): 0.3758, exchange e_a - e_b | e_b - e_a: 0.1483, rectangle: 0.0886, Cartan (forward): 0.1704
+lam = 0.1, kappa = 1.0: mu0 = 0.00000; Fermi points k0/pi = [-0.  0. -0.  0.], kpi/pi = [1. 1. 1. 1.], velocities [0.0416 0.0416 0.0416 0.0416]; smallest nonzero mismatch of an allowed coupling nan; max|G|/(2 pi v) = 0.0032
+   one-loop, all allowed couplings resonant: bounded (l = 80.05); with the actual detuning: bounded (l = 80.05), final max non-Cartan coupling 4.05e-03 (initial 1.08e-03)
+lam = 0.1, kappa = 10.0: mu0 = 0.00000; Fermi points k0/pi = [-0.  0. -0.  0.], kpi/pi = [1. 1. 1. 1.], velocities [0.0416 0.0416 0.0416 0.0416]; smallest nonzero mismatch of an allowed coupling nan; max|G|/(2 pi v) = 0.0324
+   one-loop, all allowed couplings resonant: runaway (l = 8.31); with the actual detuning: runaway (l = 8.31), final max non-Cartan coupling 5.04e-02 (initial 1.08e-02)
+lam = 0.2, kappa = 1.0: mu0 = 0.00000; Fermi points k0/pi = [-0.  0. -0.  0.], kpi/pi = [1. 1. 1. 1.], velocities [0.0832 0.0832 0.0832 0.0832]; smallest nonzero mismatch of an allowed coupling nan; max|G|/(2 pi v) = 0.0065
+   one-loop, all allowed couplings resonant: runaway (l = 41.45); with the actual detuning: runaway (l = 41.45), final max non-Cartan coupling 1.99e-02 (initial 4.34e-03)
+lam = 0.2, kappa = 10.0: mu0 = 0.00000; Fermi points k0/pi = [-0.  0. -0.  0.], kpi/pi = [1. 1. 1. 1.], velocities [0.0832 0.0832 0.0832 0.0832]; smallest nonzero mismatch of an allowed coupling nan; max|G|/(2 pi v) = 0.0649
+   one-loop, all allowed couplings resonant: runaway (l = 4.15); with the actual detuning: runaway (l = 4.15), final max non-Cartan coupling 2.01e-01 (initial 4.34e-02)
+lam = 0.4, kappa = 1.0: mu0 = 0.00000; Fermi points k0/pi = [-0.  0. -0.  0.], kpi/pi = [1. 1. 1. 1.], velocities [0.1664 0.1664 0.1664 0.1664]; smallest nonzero mismatch of an allowed coupling nan; max|G|/(2 pi v) = 0.0130
+   one-loop, all allowed couplings resonant: runaway (l = 20.75); with the actual detuning: runaway (l = 20.75), final max non-Cartan coupling 8.03e-02 (initial 1.74e-02)
+lam = 0.4, kappa = 10.0: mu0 = 0.00000; Fermi points k0/pi = [-0.  0. -0.  0.], kpi/pi = [1. 1. 1. 1.], velocities [0.1664 0.1664 0.1664 0.1664]; smallest nonzero mismatch of an allowed coupling nan; max|G|/(2 pi v) = 0.1298
+   one-loop, all allowed couplings resonant: runaway (l = 2.08); with the actual detuning: runaway (l = 2.08), final max non-Cartan coupling 8.12e-01 (initial 1.74e-01)

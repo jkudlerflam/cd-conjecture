@@ -1,0 +1,410 @@
+{
+  "status": "passed, selector-sector controls only",
+  "arrow_words": 21840,
+  "quantum": {
+    "bond_norm": 1.0,
+    "penalty": 4.5,
+    "rows": [
+      {
+        "length": 3,
+        "defects": 0,
+        "pattern": [
+          0,
+          0,
+          0
+        ],
+        "dimension": 64,
+        "energy": -1.596622413061946,
+        "legal_energy": -1.596622413061946,
+        "repair_norm": 0.0,
+        "repair_bound": 0.0,
+        "sector_lower": -1.596622413061946
+      },
+      {
+        "length": 3,
+        "defects": 1,
+        "pattern": [
+          0,
+          0,
+          1
+        ],
+        "dimension": 64,
+        "energy": 2.8238039786024807,
+        "legal_energy": -1.596622413061946,
+        "repair_norm": 2.0136824870762275,
+        "repair_bound": 4.0,
+        "sector_lower": -1.096622413061946
+      },
+      {
+        "length": 3,
+        "defects": 1,
+        "pattern": [
+          0,
+          1,
+          0
+        ],
+        "dimension": 64,
+        "energy": 2.8238039786024807,
+        "legal_energy": -1.596622413061946,
+        "repair_norm": 2.0136824870762275,
+        "repair_bound": 4.0,
+        "sector_lower": -1.096622413061946
+      },
+      {
+        "length": 3,
+        "defects": 2,
+        "pattern": [
+          0,
+          1,
+          1
+        ],
+        "dimension": 64,
+        "energy": 7.346943234235572,
+        "legal_energy": -1.596622413061946,
+        "repair_norm": 2.4569780846929365,
+        "repair_bound": 8.0,
+        "sector_lower": -0.596622413061946
+      },
+      {
+        "length": 3,
+        "defects": 1,
+        "pattern": [
+          1,
+          0,
+          0
+        ],
+        "dimension": 64,
+        "energy": 2.8238039786024807,
+        "legal_energy": -1.596622413061946,
+        "repair_norm": 2.0136824870762196,
+        "repair_bound": 4.0,
+        "sector_lower": -1.096622413061946
+      },
+      {
+        "length": 3,
+        "defects": 2,
+        "pattern": [
+          1,
+          0,
+          1
+        ],
+        "dimension": 64,
+        "energy": 7.346943234235572,
+        "legal_energy": -1.596622413061946,
+        "repair_norm": 2.4569780846929357,
+        "repair_bound": 8.0,
+        "sector_lower": -0.596622413061946
+      },
+      {
+        "length": 3,
+        "defects": 2,
+        "pattern": [
+          1,
+          1,
+          0
+        ],
+        "dimension": 64,
+        "energy": 7.346943234235572,
+        "legal_energy": -1.596622413061946,
+        "repair_norm": 2.4569780846929348,
+        "repair_bound": 8.0,
+        "sector_lower": -0.596622413061946
+      },
+      {
+        "length": 3,
+        "defects": 3,
+        "pattern": [
+          1,
+          1,
+          1
+        ],
+        "dimension": 64,
+        "energy": 11.796737334069766,
+        "legal_energy": -1.596622413061946,
+        "repair_norm": 2.328952659702613,
+        "repair_bound": 12.0,
+        "sector_lower": -0.09662241306194597
+      },
+      {
+        "length": 4,
+        "defects": 0,
+        "pattern": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "dimension": 256,
+        "energy": -2.1057875863788924,
+        "legal_energy": -2.1057875863788924,
+        "repair_norm": 0.0,
+        "repair_bound": 0.0,
+        "sector_lower": -2.1057875863788924
+      },
+      {
+        "length": 4,
+        "defects": 1,
+        "pattern": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "dimension": 256,
+        "energy": 2.2925635183255406,
+        "legal_energy": -2.1057875863788924,
+        "repair_norm": 2.052296198285888,
+        "repair_bound": 4.0,
+        "sector_lower": -1.6057875863788924
+      },
+      {
+        "length": 4,
+        "defects": 1,
+        "pattern": [
+          0,
+          0,
+          1,
+          0
+        ],
+        "dimension": 256,
+        "energy": 2.29256351832554,
+        "legal_energy": -2.1057875863788924,
+        "repair_norm": 2.052296198285891,
+        "repair_bound": 4.0,
+        "sector_lower": -1.6057875863788924
+      },
+      {
+        "length": 4,
+        "defects": 2,
+        "pattern": [
+          0,
+          0,
+          1,
+          1
+        ],
+        "dimension": 256,
+        "energy": 6.746823625440829,
+        "legal_energy": -2.1057875863788924,
+        "repair_norm": 2.768577773634737,
+        "repair_bound": 8.0,
+        "sector_lower": -1.1057875863788924
+      },
+      {
+        "length": 4,
+        "defects": 1,
+        "pattern": [
+          0,
+          1,
+          0,
+          0
+        ],
+        "dimension": 256,
+        "energy": 2.2925635183255406,
+        "legal_energy": -2.1057875863788924,
+        "repair_norm": 2.05229619828589,
+        "repair_bound": 4.0,
+        "sector_lower": -1.6057875863788924
+      },
+      {
+        "length": 4,
+        "defects": 2,
+        "pattern": [
+          0,
+          1,
+          0,
+          1
+        ],
+        "dimension": 256,
+        "energy": 6.696001200543455,
+        "legal_energy": -2.1057875863788924,
+        "repair_norm": 3.692055928211596,
+        "repair_bound": 8.0,
+        "sector_lower": -1.1057875863788924
+      },
+      {
+        "length": 4,
+        "defects": 2,
+        "pattern": [
+          0,
+          1,
+          1,
+          0
+        ],
+        "dimension": 256,
+        "energy": 6.746823625440829,
+        "legal_energy": -2.1057875863788924,
+        "repair_norm": 2.7685777736347323,
+        "repair_bound": 8.0,
+        "sector_lower": -1.1057875863788924
+      },
+      {
+        "length": 4,
+        "defects": 3,
+        "pattern": [
+          0,
+          1,
+          1,
+          1
+        ],
+        "dimension": 256,
+        "energy": 11.28262273418301,
+        "legal_energy": -2.1057875863788924,
+        "repair_norm": 3.0767856098102166,
+        "repair_bound": 12.0,
+        "sector_lower": -0.6057875863788924
+      },
+      {
+        "length": 4,
+        "defects": 1,
+        "pattern": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "dimension": 256,
+        "energy": 2.2925635183255406,
+        "legal_energy": -2.1057875863788924,
+        "repair_norm": 2.052296198285901,
+        "repair_bound": 4.0,
+        "sector_lower": -1.6057875863788924
+      },
+      {
+        "length": 4,
+        "defects": 2,
+        "pattern": [
+          1,
+          0,
+          0,
+          1
+        ],
+        "dimension": 256,
+        "energy": 6.746823625440829,
+        "legal_energy": -2.1057875863788924,
+        "repair_norm": 2.7685777736347275,
+        "repair_bound": 8.0,
+        "sector_lower": -1.1057875863788924
+      },
+      {
+        "length": 4,
+        "defects": 2,
+        "pattern": [
+          1,
+          0,
+          1,
+          0
+        ],
+        "dimension": 256,
+        "energy": 6.696001200543453,
+        "legal_energy": -2.1057875863788924,
+        "repair_norm": 3.692055928211608,
+        "repair_bound": 8.0,
+        "sector_lower": -1.1057875863788924
+      },
+      {
+        "length": 4,
+        "defects": 3,
+        "pattern": [
+          1,
+          0,
+          1,
+          1
+        ],
+        "dimension": 256,
+        "energy": 11.28262273418301,
+        "legal_energy": -2.1057875863788924,
+        "repair_norm": 3.0767856098102273,
+        "repair_bound": 12.0,
+        "sector_lower": -0.6057875863788924
+      },
+      {
+        "length": 4,
+        "defects": 2,
+        "pattern": [
+          1,
+          1,
+          0,
+          0
+        ],
+        "dimension": 256,
+        "energy": 6.746823625440829,
+        "legal_energy": -2.1057875863788924,
+        "repair_norm": 2.768577773634725,
+        "repair_bound": 8.0,
+        "sector_lower": -1.1057875863788924
+      },
+      {
+        "length": 4,
+        "defects": 3,
+        "pattern": [
+          1,
+          1,
+          0,
+          1
+        ],
+        "dimension": 256,
+        "energy": 11.28262273418301,
+        "legal_energy": -2.1057875863788924,
+        "repair_norm": 3.076785609810224,
+        "repair_bound": 12.0,
+        "sector_lower": -0.6057875863788924
+      },
+      {
+        "length": 4,
+        "defects": 3,
+        "pattern": [
+          1,
+          1,
+          1,
+          0
+        ],
+        "dimension": 256,
+        "energy": 11.28262273418301,
+        "legal_energy": -2.1057875863788924,
+        "repair_norm": 3.07678560981022,
+        "repair_bound": 12.0,
+        "sector_lower": -0.6057875863788924
+      },
+      {
+        "length": 4,
+        "defects": 4,
+        "pattern": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "dimension": 256,
+        "energy": 15.747594919237105,
+        "legal_energy": -2.1057875863788924,
+        "repair_norm": 3.1375742364687227,
+        "repair_bound": 16.0,
+        "sector_lower": -0.1057875863788924
+      }
+    ]
+  },
+  "oracle": {
+    "q": 4,
+    "dimension": 214272048,
+    "columns_compared": 8192,
+    "legal_error": 0.0,
+    "illegal_relative_error": 0.0,
+    "old_penalty": 4503.128458882366,
+    "new_penalty": 16753654585395.943,
+    "norm_without_penalty_bound": 2094206823174.493,
+    "defect_gap_bound": 8376827292697.972,
+    "full_space_checks": {
+      "input_columns_per_part": 3232,
+      "entries": [
+        9265,
+        4667
+      ],
+      "max_relative_hermiticity_errors": [
+        1.0086930686980286e-17,
+        3.1632729969262556e-17
+      ],
+      "selector_changing_entries": 247,
+      "charge_marker_and_legality_failures": 0
+    }
+  }
+}

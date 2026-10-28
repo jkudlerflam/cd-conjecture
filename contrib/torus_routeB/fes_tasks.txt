@@ -1,0 +1,10 @@
+model --case free --ncells 2 --out data/fes_free.json
+model --case freeeq --ncells 2 --out data/fes_freeeq.json
+model --case i --s 1 --g 0.3 --ncells 2 --out data/fes_i_p_g0.3.json
+model --case i --s -1 --g 0.3 --ncells 2 --out data/fes_i_m_g0.3.json
+model --case ii --s 1 --g 0.3 --ncells 2 --out data/fes_ii_p_g0.3.json
+model --case ii --s -1 --g 0.3 --ncells 2 --out data/fes_ii_m_g0.3.json
+model --case iii --s 1 --g 0.3 --ncells 2 --out data/fes_iii_p_g0.3.json
+model --case iii --s -1 --g 0.3 --ncells 2 --out data/fes_iii_m_g0.3.json
+model --case ii --s 1 --g 0.2 --ncells 2 --out data/fes_ii_p_g0.2.json
+model --case ip --s 1 --g 0.3 --ncells 2 --out data/fes_ip_p_g0.3.json

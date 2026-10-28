@@ -1,0 +1,7 @@
+model --case free --ncells 2 --mode_v damped --out data/fesd_free.json
+model --case i --s 1 --g 0.3 --ncells 2 --mode_v damped --out data/fesd_i_p_g0.3.json
+model --case i --s -1 --g 0.3 --ncells 2 --mode_v damped --out data/fesd_i_m_g0.3.json
+model --case ii --s 1 --g 0.3 --ncells 2 --mode_v damped --out data/fesd_ii_p_g0.3.json
+model --case ii --s -1 --g 0.3 --ncells 2 --mode_v damped --out data/fesd_ii_m_g0.3.json
+model --case ii --s 1 --g 0.2 --ncells 2 --mode_v damped --out data/fesd_ii_p_g0.2.json
+model --case ip --s 1 --g 0.3 --ncells 2 --mode_v damped --out data/fesd_ip_p_g0.3.json
