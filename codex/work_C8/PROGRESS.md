@@ -1,3 +1,22 @@
+# C8 progress, tenth run in progress
+
+2026-10-28. Resumed from the completed ninth run. The 58-control core,
+full periodic bond and flat wrapper are already complete finite
+constructions. They are not being rebuilt. Read the previous summary
+below for the inherited resources. Only this folder is writable.
+
+Current focus: the atomic cell reduction and its remaining local
+massive-sector elimination. The first test is a dimension-independent
+local dressing estimate for unbounded on-cell Hamiltonians, followed by
+low-energy defect and length-tail bounds. A finite-order normal form
+will not be promoted to a thermodynamic infrared theorem. The separate
+C19 spectral compiler remains with the other workers.
+
+Read the requested background and C21-C23 handoffs. No new conclusive
+answer, network, external writes, or subagents. Next: construct and verify
+an explicit local dressing with constants that depend on the on-cell
+gap and local interaction norm, not the largest cell length.
+
 # C8 progress
 
 2026-10-28. Ninth run completed. Nonconclusive for the original c-d

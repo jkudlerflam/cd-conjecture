@@ -1,0 +1,10 @@
+Wrote [RESULT.md](RESULT.md) and updated [PROGRESS.md](PROGRESS.md).
+
+- [Numerical, n=2,3,4] Arm asymmetry, a carrier phase and a uniform chemical potential produce displaced seas with positive margins against every non-density quartic resonance.
+- [Proved] Zero-field particle-hole symmetry leaves umklapp resonances despite displaced centers. The chemical potential removes that constraint.
+- [Numerical + heuristic RG, n=2,3,4] The centered alternative also works: the cell’s generated forward interactions make pair tunnelling irrelevant, including its one-loop feedback.
+- [Proved] The leading hopping has full rank for every n. Non-Gaussian corrections start at \(\lambda^2\tau^4\) and \(\lambda^3\tau^4\). The hierarchy closes conditionally at each fixed n, with physical hopping scale \(W=\lambda^2\tau^2\|T\|\).
+
+The all-n phase claim remains open. Neither separated centers nor favorable interaction signs have been established for arbitrary n. Independent occupation-basis checks reached 188,418 states; no thermodynamic central charge was measured.
+
+[gpt_solve: backend=codex model=gpt-6-astra effort=high transcript=20261028T012023-64677]
