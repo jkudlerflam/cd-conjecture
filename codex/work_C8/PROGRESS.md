@@ -42,6 +42,35 @@ Active next steps: prove polynomial bounds on all visibility and wrapper
 normalizations; then isolate what is missing in the connected massive
 excursion argument. The original task remains nonconclusive.
 
+Substantive step 43. Proved all original-core port and density counts
+are at least 1/(80m). For the original small-hopping wrapper, proved
+endpoint/color weights >1/4 and total marker visibility >1/64, giving
+an explicit O(m^7) bound on the full physical perturbation. Checks at
+q=4,8 pass. The old charge eigensolver lost small positive tails at
+q=8; a positive inverse iteration in the even reflection sector repairs
+coefficient evaluation without changing the analytic model.
+
+Substantive step 44. A soluble independent-ancilla model proves that
+the global bare-Q resolvent can have a vanishing gap despite a uniform
+physical massive gap and additive local defect costs. Its local energy
+expansion still converges. This rules out a global-projector shortcut,
+not connected local elimination. An explicit finite-order local bound
+is recorded; all-order linked cancellations remain unproved.
+
+Substantive step 45. A new preferred wrapper sets vacancy hopping equal
+to its diagonal interface coefficient, making it an exclusion Laplacian.
+The filter strength can now be one. Complete selection of k occupied
+sites at both N=k+1,k+2 is proved with a new pinning/gap argument, not
+by extrapolating the old small-hopping proof. Charge ground states are
+uniform, r_p=k/(k+p), s_p=k(k-1)/[(k+p)(k+p-1)], beta_wrap=2/(k+2),
+and both cell ground energies are exactly -4. All coefficients are now
+elementary apart from the already explicit clock counts. The wrapper
+adds no exponential tunneling gap. flat_vacancies.md contains proofs.
+Full legal spectra through dimension 2903 and the actual q=4 periodic
+column/history checks pass. Use PeriodicBond(flat_vacancies=True).
+The constant marker-visibility bound from the OLD wrapper does not
+apply to this variant; the new bound is 1/[2(k+2)].
+
 The previous completed handoff follows and remains the source for all
 unchanged core proofs and checks.
 
