@@ -40,6 +40,31 @@ def model(a):
         h = -(A + a.r * B)
         z = np.diag([1., -1.])
         return h, 4, [np.kron(z, I2), np.kron(I2, z)], None
+    if a.model == 'lv':
+        # logical vacancy model LV_n of logical_vac.py (n = len(taus) flavours)
+        import logical_vac as LV
+        nf = len(a.taus)
+        h = LV.model_bond(nf, a.t, a.J, a.mu_v, a.taus, a.eps)
+        d = 1 + 2 ** nf
+        n = np.diag(np.r_[0, np.ones(d - 1)])
+        fl = [np.diag(np.r_[0, [(b >> (nf - 1 - f)) & 1 for b in range(d - 1)]]).astype(float) for f in range(nf)]
+        return h, d, [n] + fl, np.kron(n, n)
+    if a.model == 'kxx':
+        # k decoupled XX chains with velocities a.vels on a d = 2^k site (c = k)
+        k = len(a.vels)
+        I = np.eye(2)
+
+        def emb(o, i):
+            m = np.ones((1, 1))
+            for j in range(k):
+                m = np.kron(m, o if j == i else I)
+            return m
+        h = 0
+        for i, v in enumerate(a.vels):
+            A = np.kron(emb(sp, i), emb(sm, i))
+            h = h - v * (A + A.T)
+        z = np.diag([1., -1.])
+        return h, 2 ** k, [emb(z, i) for i in range(k)], None
     raise ValueError(a.model)
 
 
@@ -98,6 +123,9 @@ def main():
     ap.add_argument('--model', default='vac')
     for k, v in dict(t=1.0, J=0.25, mu_v=0.6, lam=0.15, r=0.01).items():
         ap.add_argument('--' + k, type=float, default=v)
+    ap.add_argument('--taus', type=float, nargs='+', default=[1.0], help='lv: flavour hoppings')
+    ap.add_argument('--eps', type=float, nargs='+', default=[0.0], help='lv: flavour fields')
+    ap.add_argument('--vels', type=float, nargs='+', default=[1.0, 0.5], help='kxx: chain velocities')
     ap.add_argument('--chis', type=int, nargs='+', default=[16, 24, 32])
     ap.add_argument('--n', type=int, default=1)
     ap.add_argument('--mode', default='damped')
