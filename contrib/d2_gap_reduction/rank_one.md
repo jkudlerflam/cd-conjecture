@@ -146,9 +146,9 @@ positive-field hypothesis of the gap theorem then fails. The mixed-field
 antiferromagnetic Ising problem is therefore not closed by this argument.
 
 For a nonsymmetric rank-one matrix \(J=\alpha uv^T\) with nonparallel
-\(u,v\), a common nonzero eigenvector of \(J\) and \(J^T\) would have to
+\(u,v\), a common eigenvector of \(J\) and \(J^T\) with nonzero eigenvalue would have to
 lie in both \(\operatorname{span}(u)\) and \(\operatorname{span}(v)\),
-which is impossible. A common zero eigenvector lies perpendicular to both;
+which is impossible. A common null vector lies perpendicular to both;
 then \(PJP=J\ne0\), violating (1). Thus the displayed gap criterion does
 not accidentally classify this additional family. If the field is
 perpendicular to both \(u\) and \(v\), that family instead lies in the
