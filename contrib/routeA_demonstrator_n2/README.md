@@ -93,9 +93,9 @@ Microscopic gradient errors are 10⁻⁹ to 10⁻⁵, except 3 × 10⁻³ at λ 
 | two XX (c = 2) | 1.13 | 1.22, 1.34 |
 | effective, λ = 0.15 (c = 2) | 1.26 | 1.37, 1.48 |
 | microscopic, λ = 0.15 | 1.25 | 1.39 |
-| microscopic, λ = 0.20 | 1.28 | |
+| microscopic, λ = 0.20 | 1.28 | 1.42 |
 
-The microscopic values sit inside the c = 2 band and about twice the c = 1 value. Scaling by the mean c = 2 calibration at each ξ gives c ≈ 2.09 and 2.06, with ± 0.15 from the spread of the two calibration chains.
+The microscopic values sit inside the c = 2 band and about twice the c = 1 value. Scaling by the mean c = 2 calibration at each ξ gives c ≈ 2.09, 2.06 (λ = 0.15) and 2.1 (λ = 0.2), with ± 0.15 from the spread of the two calibration chains.
 
 **Rings** (`ring2.py`, both charges and momentum resolved, no truncation). Microscopic rings of M = 3 cells (L = 9, up to 1.6 × 10⁶ states per sector), in the five lowest charge sectors at λ = 0.15 and the two lowest at λ = 0.1 and 0.2, all momenta. They match the effective ring with the exact two-cell bond to 0.3% (λ = 0.1), 0.7% (0.15) and 1.4% (0.2) in every gap. M = 4 sectors have 4 × 10⁸ states and were not attempted, so rings are a spectral check here and not a c estimator.
 
