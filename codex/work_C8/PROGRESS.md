@@ -1,3 +1,125 @@
+# C8 progress
+
+2026-10-28. Ninth run completed. Nonconclusive for the original c-d
+conjecture. Start here, then read RESULT Sections 44-46. The previous
+core/controller work is complete and should not be repeated.
+
+## Current best answer
+
+The full periodic microscopic bond now has an executable sparse column
+oracle in periodic_clean_bond.py. Use PeriodicBond(flat_vacancies=True).
+Its site dimension is d=96*446400(q+1)+48, with m=q^2/8 payload modes
+at first order plus the mobile length mode. All gates, initialization,
+ports, fields, wrapper, selector, helices and marker moves are specified.
+The original 58-control clean-readout machine is unchanged.
+
+The preferred wrapper uses a vacancy exclusion Laplacian. Its charge
+ground states are uniform; both selected cell energies are exactly -4;
+its endpoint, density and transport factors are elementary. The occupied
+length filter can have strength one. The complete sector and gap proof
+is new and is in flat_vacancies.md. This removes the old vacancy tunneling
+scale, but the binary-clock payload gap remains exponentially small.
+
+The new rational target uses a_i=i+(4m+1)i^2 and
+p_i=pi/4+pi*a_i/(8*a_(2m)), assigning the first m branches to L and the
+last m to R. Pair sums are unique. Its exact total U(1) gives low-shell
+momentum margin pi/(8*a_(2m)), mixed margin >7pi/8 at nu=1/2, and
+payload velocities >2sin(pi/64). All readout visibilities are at least
+1/(80m). The full physical perturbation has an explicit O(m^7) bound.
+
+The unprojected legal model admits exact cell coordinates: H0-eL is a
+sum of independent on-cell Hamiltonians, with a fixed finite ground
+space and a uniform on-cell gap. All perturbations are bounded on-cell
+or nearest-neighbor terms in cell order, even for long excited cells.
+The on-cell space is a direct sum over lengths; total length and the
+physical ring quotient must be retained. See unprojected_cell_reduction.md.
+
+The decisive missing input is still a connected local massive-sector
+elimination, then the stated Gaussian infrared identification. A new
+soluble example proves that the global bare-Q resolvent is insufficient
+even for independent massive spins. Their local connected expansion
+converges, so this is not a no-go for the required local theorem.
+No CFT estimator or thermodynamic microscopic simulation was performed.
+
+## New files and reproduction
+
+- run9_audit.md, full periodic specification, rational target, visibility
+  and original-wrapper norm bounds, global-projection obstruction,
+  finite-order locality bound, and ranked continuation.
+- flat_vacancies.md, preferred complete wrapper and its gap proof.
+- unprojected_cell_reduction.md, exact atomic reformulation before projection.
+- periodic_clean_bond.py, complete sparse periodic bond, both variants.
+- periodic_bond_checks.py, full-space and actual-history checks.
+- rational_target.py, exact integer resonance checks.
+- normalization_bounds_checks.py, original-wrapper normalization checks.
+- massive_projection_checks.py, exact independent-ancilla obstruction.
+- flat_vacancy_checks.py, preferred wrapper spectra and periodic checks.
+
+Run the four check scripts and rational_target.py with
+OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1. Their JSON files record all
+sizes, residuals and scope. All six Python files compile. No old suite
+was rerun without a changed implementation or a new check to justify it.
+
+## Verification and implementation fixes
+
+Both periodic variants passed 3232 base and 3232 perturbation columns,
+including active port/color states and both marker orientations. Every
+tested entry preserves exact charge, marker number and selector legality.
+The actual four q=4 histories (5124 vertices each) give zero discrepancy
+from the independent 16-dimensional two-cell Fock matrix. The physical
+charge-definite and Hermitian-component port definitions also agree.
+
+The flat wrapper passed complete legal spectra at dimensions
+315,961,961,2903, with ground energy -4 and gaps above the proved bounds.
+Every exclusion sector through N=9 passes the gap estimate. Closed-form
+occupation weights are checked by integer counting through k=64.
+Rational target checks reach m=256, 512 branches and 131328 pair sums.
+
+Two numerical issues were found and repaired. Summing XX/YY/XY/YX terms
+left tiny forbidden charge entries through roundoff; charge-definite
+assembly removes them identically. The old dense charge eigensolver lost
+small positive tails at q=8; an even-sector positive inverse iteration
+fixes the legacy variant. The preferred flat variant needs no such solver.
+
+## Remaining work, ranked
+
+1. Establish connected local elimination for the explicit atomic model
+   of unprojected_cell_reduction.md. Treat its direct sum over lengths,
+   fixed total length and ring quotient. Do not try a global bare-Q
+   inverse, an extensive band gap, or finite-order SW as an IR theorem.
+2. Bound the actual effective Gaussian perturbation and filling shifts
+   inside the new rational target's margins, then justify compact-boson
+   identification for the physical ring sectors at fixed nonzero coupling.
+3. Obtain an independent audit of the full sparse bond and the original
+   core. All current new proofs and checks are by this agent.
+4. For numerical central charges, first construct a far smaller equivalent
+   implementation. Even q=4 has 214272048 on-site states. Direct many-body
+   simulation of the violating resource example is not a practical job.
+5. Keep C19's fixed-d spectral construction separate. The present family
+   has growing d and leaves that stronger question open.
+
+Do not reuse the old wrapper's constant marker-visibility bound for the
+flat variant. The flat bound is zeta>1/[2(k+2)], with beta_wrap=2/(k+2).
+Its full perturbation norm bound is in flat_vacancies.md Section 5.
+The old geometric target in RESULT Section 41 is superseded.
+
+Only this folder was modified. The project STATE.md is read-only under
+the task's instruction, so this file carries the session memory. No
+subagents, independent referee, network, cluster job, commit or push.
+RUN9_RESULT.md and RUN9_PROGRESS.md preserve the completed handoff.
+
+Final audit. The two periodic implementations, rational target, original
+normalization bounds, flat-wrapper spectrum/weight checks, and massive-
+projection control all passed. Six Python files compiled and parsed.
+The preferred flat perturbation has a measured triangle bound
+1884294314.269233 at q=4, below its proved polynomial bound
+2094206820116.2297. These are operator norm bounds, not measured couplings
+of a conformal chain. The final source read of C28 reports an n=2 doped
+bus and a partial one-loop result, not an all-n fixed-d conclusion; none
+of that work was duplicated or promoted here.
+
+## Ninth-run chronological record
+
 # C8 progress, ninth run in progress
 
 2026-10-28. Resumed from the completed eighth-run controller. Read the

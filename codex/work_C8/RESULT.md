@@ -1,46 +1,60 @@
 # C8 result
 
-2026-10-28. Eighth run. Closed-book work by Codex, GPT-6. All writes
-are confined to this folder. No network, subagents or external changes.
+2026-10-28. Ninth run. Closed-book work by Codex, GPT-6. All writes
+are confined to this folder. No network, subagents or external review.
 
 ## Verdict
 
-Nonconclusive for the original conjecture. The missing autonomous
-high-channel readout core is now explicit. The remaining issue is the
-finite-coupling infrared reduction, not the controller or its alphabet.
-Sections 40-43 supersede the earlier continuation rankings.
+Nonconclusive for the original conjecture. The explicit high-channel
+core is retained, and the full periodic candidate now has a sparse
+matrix-element implementation. The preferred wrapper has uniform vacancy
+states and elementary coefficients. The remaining task is a connected
+local massive-sector reduction followed by the stated Gaussian infrared
+input. No microscopic central charge was measured.
 
-[proved finite construction] A positive uniform NN core with one-site
-boundary terms has dimension 446400(q+1), exactly 2^(q^2/8) ground
-states at length q^2/8+6, exact total logical-number U(1), both graded
-Clifford endpoint maps, and independently normalized colored density
-readouts. Its 58-control machine has 799 prescribed collision blocks
-and a complete 928-block permutation. It uses a moving cursor and four
-q-state tape counters, with no preloaded program or growing control set.
-The initialization pins reject every surplus register and head sector.
-The complete finite gap and every partial-time readout are proved.
+[proved finite construction] The saved 58-control machine gives a
+positive initialized core of dimension 446400(q+1), with 2^(q^2/8)
+ground states, both graded Clifford endpoint maps, colored density
+readouts and exact total-number U(1). Its complete initialization and
+partial-time readout proofs are in Section 40. This run found no core
+error and did not reconstruct that controller.
 
-[numerical finite checks] All 256 logical inputs at q=8 pass a complete
-cycle and 51200 paired environment checks. Complete-clock tests reach
-524298 vertices. Direct physical compression and actual-Hamiltonian
-zero-state tests cover all four q=4 inputs and 5124 vertices per input.
-A polynomial-cycle counting formula agrees with those histories and
-computes the q=12 counts for a clock with 872415252 vertices. No central
-charge estimator was applied to the microscopic chain.
+[proved new results] Sections 44-46 give the full periodic sparse bond,
+rational Fermi points with velocities greater than 2sin(pi/64) and
+low-shell detuning at least pi/[8(16m^3+4m^2+2m)], visibility bounds
+alpha,beta>=1/(80m), and polynomial physical perturbation norms.
+Here m=q^2/8. The new vacancy Laplacian selects the same two physical
+lengths with an explicit complete-sector gap, while removing the old
+charge tunneling scale and large filter coefficient. Its port and
+transport factors are closed formulas.
 
-[conditional infrared consequence] The existing mobile wrapper gives
-an explicit one-site-uniform NN family with d=96*446400(q+1)+48 and
-projected m+1 modes, m=q^2/8. At q=685670400 the projected count exceeds
-d-1. Conformal behavior at a fixed nonzero physical coupling still uses
-the massive-sector integration and Gaussian infrared inputs stated in
-Section 41. Their application to this bond is not proved or measured
-here. No verified violation, full-class upper bound, or fixed-d
-unbounded-c construction is claimed.
+[proved exact reduction] Before projection, every legal marker sector
+can be written in cell coordinates as a sum of independent on-cell
+Hamiltonians plus bounded neighboring-cell interactions. The physical
+length constraint and ring quotient remain. A separate soluble example
+shows that a global bare-Q inverse can have arbitrarily small denominators
+even for independent uniformly gapped massive spins. It does not forbid
+a connected local expansion, which remains to be established here.
 
-The full rules and proofs follow. Earlier statements that the clean
-readout program was missing describe the preceding runs and are now
-superseded by Section 40. C19's separate excited-spectrum problem remains
-open; the new construction is a first-order core, not its spectral compiler.
+[numerical finite checks] Both periodic wrapper variants pass 3232
+full-space column checks separately for their base and perturbation.
+Actual q=4 histories reproduce the 16-dimensional two-cell fermion
+matrix with zero measured error. The flat-wrapper complete legal
+spectra reach dimension 2903 and obey every gap bound tested. Exact
+integer resonance checks reach 512 Fermi branches. These are finite
+algebraic checks, not microscopic CFT estimators.
+
+[conditional consequence] The dimension remains
+
+    d=96*446400(q+1)+48,    c_projected=m+1.
+
+At q=685670400 the projected count exceeds d-1, as in Section 41.
+The fixed-nonzero-coupling conformal conclusion still requires the
+local elimination and Gaussian inputs. No verified counterexample,
+full-class upper bound, or unbounded-c construction at fixed d is
+claimed. Sections 44-46 supersede earlier continuation rankings and
+replace the geometric target by the number-conserving rational target.
+Use PeriodicBond(flat_vacancies=True) for the preferred candidate.
 
 ## 1. Simultaneous boundary Clifford compression
 
@@ -6917,3 +6931,984 @@ physical norm factors, momentum margins and ring offsets retained, and
 (iv) the separate fixed-d C19 spectral problem. Do not redo the completed
 clock, alphabet count, parity toy or a generic program-generation
 argument. The original conjecture remains nonconclusive in this report.
+
+
+## 44. Ninth-run periodic audit and polynomial target
+
+2026-10-28. Closed-book continuation by Codex, GPT-6. No independent
+referee, network, cluster job or external write was used.
+
+### 1. Verdict
+
+Nonconclusive under the task's definition. The eighth run's initialized
+core survives the present source audit and new composition checks. The
+complete periodic bond now has an executable sparse column oracle. Its
+reference target can have payload velocities bounded away from zero,
+detunings of order m^(-3), and perturbation norm bounded by a polynomial
+in m. Its finite clock gap is still very small.
+
+The remaining thermodynamic step has not been proved. A new soluble
+example shows why an inverse on the global bare excited-space projector
+cannot provide that step, even when the physical massive sector is a
+collection of independent, uniformly gapped spins. Connected local
+elimination is still a separate requirement. This example does not
+disprove local effective field theory or the candidate.
+
+The new results are (i) a finite-matrix implementation and audit,
+(ii) an elementary number-conserving momentum design,
+(iii) analytic normalization bounds, and (iv) a precise obstruction to
+a proposed elimination shortcut. None is a verified microscopic CFT.
+
+### 2. The complete microscopic bond
+
+[proved finite specification] Use the core of clean_readout_core.md,
+with q divisible by four,
+
+    m=q^2/8, k=m+6, b=k+1, Q=446400(q+1).
+
+The on-site basis of periodic_clean_bond.py is
+
+    selector x wrapper x equalizer A x equalizer B,
+    dim = 4(6Q+3)4 = 96Q+48.
+
+Selector labels are #,L,X,R. Wrapper labels are H0,H1,H2 and
+L,B,R, each occupied tag carrying a Q-state core record and one filter
+qubit. The two equalizer bits are present also on vacant sites. The
+encode/decode functions specify the order of every basis vector.
+
+The functions CoreBond.bulk and CoreBond.boundary supply the complete
+positive core matrices. PeriodicBond.wrapper implements arrow_wrapper
+equation (4), including its oriented boundary penalties on all sectors.
+PeriodicBond.column implements selector_wrapper equation (4), both
+equalizer helix bonds on internal selector bonds, both pins on cuts,
+and all perturbations described below. It returns a dictionary of row
+pairs and matrix entries for an arbitrary column pair. Neither input
+nor output is restricted to a legal clock, role, marker or head sector.
+
+Choose U=1, vacancy hopping w=0.9/(k+1), filter scale as in
+length_filter.md, and equalizer pitch phi=1/b. Selector coefficients
+are the explicit functions in selector_wrapper equation (7). Charge
+ground vectors in the one- and two-vacancy sectors determine the
+endpoint factors r_p, the first-two-sites occupation factors s_p,
+and the cut overlap beta_wrap. They are unique positive ground vectors
+of the finite charge matrices specified in vacancy_parent.py and,
+independently, in positive_charge_ground in the new oracle.
+
+The new numerical routine works in the even reflection sector and
+uses positive inverse iteration. Ordinary dense diagonalization at
+k=14 lost positivity in very small wavefunction tails because the
+even/odd tunneling doublet is nearly degenerate. The even-sector
+Stieltjes inverse avoids that problem. No negative amplitudes were
+clipped. This changes coefficient evaluation, not the mathematical
+definition of the charge ground state.
+
+For definiteness use the target of Section 3 with t_f=J0=1 and nu=1/2.
+Let C_uf be the raw charge-lowering record map
+
+    C_uf = sum_(p=0,1) (-1)^p |e_a><o_(b+p)|,
+    a=f div(q/4), b=2[f mod(q/4)],
+
+with the local READY, no-head and endpoint-role projectors. Lift it
+onto the appropriate wrapper endpoint, apply the helix compensator
+and divide by alpha_uf. Write the resulting operator as Chat_uf.
+The Hermitian cut interaction is
+
+    v_cut = -P_cut sum_f [exp(i theta_f) Chat_Rf† tensor Chat_Lf
+                        +exp(-i theta_f) Chat_Rf tensor Chat_Lf†].
+
+This equals the J_f contraction in run8_microscopic_reduction.md.
+To check, put X=C+C† and Y=i(C†-C). The right pair is (Y,-X), and
+
+    sum_uv J_f[uv] B_u tensor A_v
+      =-(cos(theta_f)/2)(X tensor X+Y tensor Y)
+       -(sin(theta_f)/2)(Y tensor X-X tensor Y)
+      =-exp(i theta_f) C† tensor C-exp(-i theta_f) C tensor C†.
+
+The direct charge form is used in the code. Floating-point cancellation
+between the four Hermitian components initially left forbidden entries
+of size 7.45e-9 in a matrix whose allowed entries are much larger.
+The charge form makes every forbidden entry absent by construction.
+This was an implementation issue, not a failure of the exact symmetry.
+
+The field is -sum_f(mu_f/2) Dhat_f on the first internal bond, with
+the separate density count beta_Lf and compensation 1/s_p. Both #L
+and #X are enabled. The marker move is the typed-vacancy conversion
+with its local equalizer phase, divided by
+
+    zeta=A_b^2 beta_wrap cos(phi/2)^(2b).
+
+It therefore has retained hopping J0=1. Its matrix entries also
+conserve total microscopic charge and the number of markers.
+
+The remaining marker chemical potential is explicit. For the target
+widths k_f, the payload energy per squeezed cell is
+
+    e_pay=sum_f[-2 sin(k_f)/pi+mu_f(k_f/pi-1/2)].
+
+Set kappa=2/pi-e_pay and use the split on-site marker density. At
+fixed length density nu, the projected energy per physical site is
+
+    e_1(nu)=[kappa+e_pay-2 sin(pi nu)/pi]/(b+nu).
+
+Its derivative vanishes at nu=1/2. More generally its numerator after
+differentiation is
+
+    -2(b+nu)cos(pi nu)-kappa-e_pay+2sin(pi nu)/pi,
+
+whose derivative is 2pi(b+nu)sin(pi nu)>0 in (0,1). Thus this is the
+unique projected thermodynamic minimum, with positive curvature.
+This calculation uses the complete field constant -mu_f/2. Omitting
+it would select the wrong marker density.
+
+All microscopic coefficients are fixed before the ring length is
+varied. The constructor evaluates them numerically only for modest q.
+At large q their finite spectral definitions still specify matrices;
+the code is not a claim to evaluate an astronomical selected cell on
+one machine. In particular no finite nonzero coupling has been
+certified to produce the predicted CFT.
+
+### 3. Rational Fermi points with uniformly nonzero payload velocities
+
+[proved algebraic theorem] For every m>=1 define N=2m, B=2N+1,
+
+    a_i=i+B i^2, 1<=i<=N,    A=a_N,
+    p_i=pi/4+pi a_i/(8A).
+
+Assign p_(f,L)=p_f and p_(f,R)=p_(m+f), for f=1,...,m. Set
+
+    k_f=(p_(f,R)-p_(f,L))/2,
+    theta_f=-(p_(f,R)+p_(f,L))/2,
+    mu_f=2 cos(k_f).
+
+Then the dispersion -2cos(p+theta_f)+mu_f has these two roots and
+
+    pi/64 < k_f < pi/16,
+    2sin(pi/64) < |v_f| < 2sin(pi/16).
+
+The lower bound is independent of m. In physical coordinates the
+payload speed is multiplied by b+nu, as in the inherited squeezed
+coordinate dictionary. The length speed for J0=1 and nu=1/2 is
+2(b+1/2), so it also remains positive.
+
+Proof of the width bounds. The smallest numerator difference is
+
+    a_(m+1)-a_1=m+B(m^2+2m)>A/4,
+    A=2m+4Bm^2.
+
+Every such difference is less than A. Divide by 16A and multiply
+by pi. The velocity statement follows by monotonicity of sine in
+the displayed interval.
+
+[proved] All unordered pair sums a_i+a_j, including i=j, are distinct.
+If two sums agree, reducing modulo B gives i+j=r+s, since all these
+sums lie between 2 and 2N<B. The remaining equality gives
+i^2+j^2=r^2+s^2. The two elementary symmetric polynomials agree,
+so {i,j}={r,s}. Consequently any nontrivial two-branch difference
+or two-minus-two branch sum obeys
+
+    dist(momentum,2pi Z)>=delta_pay=pi/(8A).
+
+There is no modular wrap: all p_i lie in (pi/4,3pi/8], so branch
+differences have magnitude less than pi/8 and pair-sum differences
+have magnitude less than pi/4. Since A=16m^3+4m^2+2m, the stated
+margin is polynomial, of order m^(-3).
+
+[proved conditional on the inherited bosonization dictionary] Exact
+total U(1) restricts a local payload vertex with integer chiral charges
+z_i to sum_i z_i=0. At the free point its dimension is
+
+    Delta_pay=(1/2) sum_i z_i^2.
+
+The nonzero vertices with Delta_pay<=2 are neutral bilinears and
+neutral quartics. The pair-sum theorem excludes their uniform
+non-Gaussian resonances. Equal creation/annihilation multisets instead
+give densities and current products, which deform the Gaussian action.
+Pauli-forced derivatives increase the dimension, so they do not add
+another dangerous case. Integrality and sum z_i=0 make Delta_pay an
+integer. Every remaining nonzero resonant vertex has Delta_pay>=3.
+
+The mobile locality dictionary of C13 gives, at a uniform resonance,
+
+    Delta_ref=h^2+Delta_pay,
+    sum_i z_i p_i-2pi h nu=0 modulo 2pi.
+
+At nu=1/2 the only new dimension-two possibility is h=+/-1 times a
+neutral payload bilinear. Since |p_i-p_j|<pi/8, its mismatch is
+strictly greater than 7pi/8. Pure h=+/-1 is nonresonant, and |h|>=2
+has dimension at least four. Thus all non-Gaussian resonant vertices
+have reference dimension at least three, including the mixed sector.
+
+This replaces the geometric momentum prescription of RESULT Section
+41 for this total-number-conserving family. It does not require the
+sparse species torus of the separate collaborator construction.
+Rational higher-order resonances are allowed. Their free dimension is
+at least three, which is sufficient for the conditional Gaussian
+stability argument. No all-order irrationality assertion is needed.
+
+[assumed infrared input] Apply the positive Gaussian stability
+criterion to the actual dressed parameters, including mixed
+density-current terms and the inherited ring quotient. The matrix
+certificate in contrib/digit_compilation/audit/GAUSSIAN_CERTIFICATE.md
+is available as a source result: a relative Gaussian perturbation
+delta<5/13 keeps every reference-dimension-three vertex irrelevant.
+That is a continuum matrix statement, not a bound on the corrections
+generated by this microscopic bond. Dressed momenta must separately
+retain their nonzero margins. This run does not rederive that source
+result or use it to assume the missing elimination.
+
+### 4. Polynomial lower bounds for every readout visibility
+
+[proved] For the autonomous core, with m>=2,
+
+    alpha_uf >= 1/(80m),    beta_uf >= 1/(80m)
+
+for both ports u and every flavor f. The exact values remain those
+computed by clean_readout_counts.py; these are uniform lower bounds.
+
+Proof. Let n=m+6, T=11m^2+105m and S=2^n. The saved machine proof
+gives T<=S. Every history therefore contains floor(S/T) complete work
+cycles. During a readout walk, a move between two sites strictly
+inside the physical endpoints leaves the port active at all 2n+1
+vertices of its complete clock sweep. There are 2(n-3) such moves
+per flavor and port. For density, exclude the adjacent color site
+as well, leaving 2(n-4) moves per flavor and port. None of these
+moves changes READY or a record.
+
+The total clock vertex count obeys
+
+    C_n=(2n+4)S+n-4 <= (2n+5)S.
+
+Using floor(S/T)>=S/(2T), and ignoring additional active carry
+and overflow vertices, gives
+
+    alpha_uf >= (n-3)(2n+1)/[T(2n+5)],
+    beta_uf  >= (n-4)(2n+1)/[T(2n+5)].
+
+For m>=2, T<=64m^2, n-4=m+2>=m, and
+(2n+1)/(2n+5)>=4/5. Both bounds imply 1/(80m).
+The counts are independent of the logical input by the all-time
+clean-readout theorem. Truncated later cycles only add nonnegative
+contributions.
+
+This removes an apparent exponential normalization cost from the
+history length. It does not remove the exponentially small clock gap.
+
+### 5. Wrapper occupation weights, transport, and a complete norm bound
+
+[proved] For k>=8 and 0<w<U/(k+1), both vacancy sectors p=1,2 obey
+
+    r_p>1/4, s_p>1/4, beta_wrap>1/16.
+
+Here r_p is the endpoint occupation weight and s_p is the weight
+of configurations in which the first two sites are occupied.
+
+Proof. In the p-hole basis write H_charge=U D-w A, where D counts
+vacancy/particle domain walls and A is the hole hopping adjacency
+matrix. Its degree is at most 2p, so ||A||<=2p. The only configurations
+with D=1 are the left and right contiguous endpoint droplets. Every
+other configuration has D>=2. A single endpoint droplet is a trial
+state of energy U. Therefore the ground vector chi satisfies
+
+    U >= <H_charge> >= U(1+W_non-droplet)-2pw,
+    W_non-droplet<=2pw/U.
+
+Perron positivity and reflection invariance give equal weights for
+the two endpoint droplets. Each has weight at least
+(1-2pw/U)/2>1/4, since p<=2 and k>=8. The right droplet leaves the
+first two sites occupied, proving the r_p,s_p bounds. In the positive
+overlap sum for beta_wrap, retain just the term pairing the last-site
+one-hole droplet with the last-two-sites two-hole droplet. Squaring
+gives the product of their weights, greater than 1/16.
+
+[proved] At phi=1/b the positive endpoint and density compensators
+satisfy
+
+    ||M_L||, ||M_R||, ||M_D|| <= 8pi^2 b^2.
+
+Indeed their norms are at most the sum of two requested inverse
+occupation weights divided by sin^2(phi/2). Each inverse weight is
+less than four, and sin(1/(2b))>=1/(pi b).
+
+[proved] The complete marker visibility obeys zeta>1/64, so the
+coefficient needed for retained hopping J0 is less than 64J0.
+For t=b/(b+1), concavity of sine on [0,pi] gives
+
+    sin(t x)>=t sin(x),
+    A_b>=t^(3/2),    A_b^2>1/2.
+
+Also Bernoulli's inequality and cos x>=1-x^2/2 give
+
+    cos(1/(2b))^(2b)>=1-1/(4b)>1/2.
+
+Combine these two inequalities with beta_wrap>1/16.
+
+[proved conservative bound] Let v be the full physical perturbation
+bond at J0=t_f=1, before multiplying by epsilon. Its norm is at most
+
+    B_m =129+2m+1638400 pi^4 b^4 m^3+640 pi^2 b^2 m.
+
+This bounds the actual full-space matrix, including illegal sectors.
+To see this, each raw C_f has norm sqrt(2), and hence
+
+    ||v_cut|| <=4 ||M_R|| ||M_L|| sum_f 1/(alpha_Rf alpha_Lf).
+
+The colored density supports for different flavors are disjoint, so
+
+    ||v_field|| <=||M_D|| max_f |mu_f|/(2 beta_Lf).
+
+The marker terms cost at most 2u+|kappa|. With |mu_f|<=2,
+|e_pay|<2m, |kappa|<=2/pi+2m, u<64, and the preceding bounds,
+the displayed polynomial follows. No small norm was assumed from
+the visibility of a projected matrix element.
+
+Thus the physical perturbation normalization is at worst O(m^7).
+The much smaller unperturbed gap, and the unknown all-order local
+elimination constants, remain in any finite-coupling hierarchy.
+
+### 6. Why the global bare-Q resolvent is insufficient
+
+[proved obstruction to a shortcut] Consider L independent two-level
+ancillas,
+
+    H0=Delta sum_j |1><1|_j,
+    V=g sum_j X_j,    H=H0+V,
+    P=|0...0><0...0|, Q=I-P,
+
+with Delta>0 and any fixed nonzero real g. Their exact massive gap is
+Omega=sqrt(Delta^2+4g^2), independent of L. Define
+
+    e_-=(Delta-Omega)/2,
+    p=(1+Delta/Omega)/2 in (0,1),
+    E0=L e_-.
+
+Then
+
+    0<lambda_min[Q(H-E0)Q on ran Q]
+      <=(-L e_-) p^L/(1-p^L),
+
+which tends to zero exponentially with L.
+
+Proof. The exact ground state is the product psi=|g>^tensor L and
+||P psi||^2=p^L. Since (H-E0)psi=0, one has
+
+    <Qpsi|(H-E0)|Qpsi>=<Ppsi|(H-E0)|Ppsi>
+                       =(-L e_-)p^L.
+
+Divide by ||Qpsi||^2=1-p^L. Strict positivity at finite L follows
+from the unique full ground state having nonzero overlap with P.
+The same example may be tensored with any independent critical
+retained chain; neither the bound nor the massive gap changes.
+
+This model meets additive defect-energy and bounded local-insertion
+hypotheses in their strongest form. Nevertheless propagation in the
+global bare Q space, after resumming QVQ and shifting to the true
+ground energy, does not decay at a rate bounded below independently
+of L. Thus that propagation cannot be inserted as a uniform fast
+kernel in a Feshbach argument.
+
+The example is also a control showing what a correct integration must
+do. An on-site rotation diagonalizes each ancilla, giving the scalar
+energy density e_- and a gap Omega. Its local expansion converges
+near g=0. The failure is in the global projector, not in local
+integration or in the existence of an effective theory.
+
+In fact the connected energy per site is explicitly
+
+    e_-=sum_(r>=1) (-1)^r Cat_(r-1) g^(2r)/Delta^(2r-1),
+    Cat_j=binomial(2j,j)/(j+1).
+
+The binomial series for the square root proves the identity. The bound
+Cat_(r-1)<=4^(r-1) proves absolute convergence for |g|<Delta/2,
+uniformly in volume after division by L. Thus this same example has
+both a vanishing global bare-Q gap and a well-controlled local
+connected expansion. A global-resolvent obstruction must not be
+reported as a no-go for the required local theorem.
+
+Consequently an excursion defined only by "the system has not yet
+returned to P" is not necessarily a connected local excursion.
+It includes newly created defects arbitrarily far from an existing
+one. Their cancellation requires an actual connected-cumulant or
+local dressing construction. Merely retaining propagation in P
+unexpanded does not demonstrate that cancellation. The geometric
+connected-excursion estimates in the collaborator IR_AUDIT remain
+stated inputs until that construction and its bound are established.
+This is consistent with that file's own qualification that it is
+not a convergence theorem.
+
+### 7. A finite-order bound that does follow
+
+[proved, finite order] For the new periodic bond, second-order
+elimination around H0 is local uniformly in L. Write E_base=eL,
+P for its complete code and R=Q(H0-E_base)^(-1)Q. The inherited
+uniform gap gives ||R||<=1/Delta_base. For local v_i,
+
+    H2=-sum_ij P v_i R v_j P,
+    ||P v_i R v_j P||<=B_m^2/Delta_base.
+
+There is also a support restriction. Fix an initial legal selected
+marker pattern and order its cells cyclically. A single v_j changes
+only one cell or two neighboring cells. A marker move shifts their
+boundary by one site and leaves all other cells untouched. The
+unperturbed Hamiltonian fixes the new marker positions and is a sum
+of independent cell Hamiltonians. Every untouched cell remains in
+its zero code during the resolvent. Thus the inverse in a single
+excursion acts only on the affected cell patch, with a denominator
+independent of spectator code states.
+
+If v_i touches a disjoint cell patch, it cannot erase the nonzero
+excitation left by Qv_jP. Final projection onto P therefore kills
+that term. Nonzero pairs have overlapping patches. In particular
+they involve at most three consecutive initial cells, or a single
+boundary displacement and the cells meeting it. The conservative
+physical radius R0=4(b+2) around the first insertion contains every
+such process, including the one-site displacements.
+
+Summing over first-bond anchors and second insertions in that radius
+gives a safe interaction-norm bound
+
+    ||H2||_local <= (2R0+3)^2 B_m^2/Delta_base.
+
+Here the local norm sums norms of the represented patch interactions
+whose support contains a specified physical site. The marker-pattern
+projectors needed to specify a selected patch lie within the same
+radius; direct summation over their orthogonal sectors does not
+introduce a factor depending on the number of tilings of the ring.
+For rings shorter than twice this radius the whole finite ring is
+the patch, which obeys the same conservative counting bound.
+
+This proves a finite-order statement, not convergence of the
+connected expansion. At higher orders a patch can grow, and the
+necessary linked subtractions and critical propagation must be
+controlled. A fixed-order error in an extensive Hamiltonian does
+not resolve conformal levels of order 1/L. No claim that this last
+bound proves M is made.
+
+### 8. Numerical checks and reproduction
+
+[numerical finite checks] Run with single-thread BLAS:
+
+    python3 rational_target.py
+    python3 periodic_bond_checks.py
+    python3 normalization_bounds_checks.py
+    python3 massive_projection_checks.py
+
+The rational arithmetic tests use m=1,2,3,8,18,32,64,128,256.
+The largest test has 512 branches and 131328 unordered pair sums,
+all distinct by integer arithmetic. Velocity checks use the stated
+dispersion, not a central-charge estimator.
+
+At q=4 the complete periodic site dimension is 214272048. The oracle
+is checked on 3232 input columns separately for the base and
+perturbation matrices. The samples include random full-space inputs
+and exhaustive active endpoint record/equalizer combinations, both
+cut selector letters, both first-internal-bond letters, and both
+marker-move orientations. Every nonzero tested entry conserves total
+charge and marker number. All selector changes preserve the three
+overlapping legality indicators for every external selector pair.
+
+An independent dense wrapper builder agrees on all 225 columns of a
+two-state payload fixture within 9.1e-13. All four q=4 histories,
+each of 5124 vertices, are contracted using the new oracle's actual
+port and field definitions. The resulting 16-dimensional two-cell
+Hamiltonian agrees with an independently assembled fermionic Fock
+matrix with zero measured error. Helix compensation errors are below
+7e-14. The projected marker-field minimum is nu=1/2.
+
+Normalization bounds are checked at q=4,8. The q=8 calculation was
+the test that exposed loss of Perron-vector positivity in the older
+unrestricted diagonalization. The replacement solver has residuals
+below 5e-13 by assertion and keeps every component positive.
+
+The massive-projection example uses Delta=1, g=1/2 and
+L=4,8,16,32,64,96,128. Permutation symmetry reduces the bare-Q
+calculation to an L-dimensional tridiagonal matrix. At L=128 its
+gap is about 3.98e-8, below the proved 4.18e-8 variational bound,
+while the full massive gap is sqrt(2) at every size. Perron
+uniqueness makes the lowest bare-Q vector permutation symmetric,
+so this reduction includes its actual lowest eigenvalue.
+
+No microscopic CFT estimator, thermodynamic simulation, external
+source verification or independent referee was performed.
+
+### 9. Ranked continuation
+
+1. Prove a connected local massive-sector reduction for the concrete
+   sparse periodic matrix. Use local dressed degrees of freedom or
+   connected cumulants. The global bare-Q inverse is insufficient,
+   as Section 6 demonstrates even for independent massive spins.
+2. Carry the resulting interaction bound into the total-U(1) Gaussian
+   theory, retaining actual dressed fillings and the joint ring
+   quotient. Sections 3-5 remove exponential velocity and port-norm
+   costs, but do not replace this step.
+3. Independently audit the full periodic oracle and its core. The new
+   finite tests are a second implementation path by this agent,
+   not an independent referee report.
+4. For numerical central charges, first find a substantially smaller
+   equivalent microscopic implementation. Even q=4 has over two
+   hundred million on-site states and is not a feasible direct local
+   many-body job. A cluster alone does not make the violating
+   example practical.
+5. Keep C19's fixed-d spectral problem separate. This first-order
+   family has growing d and does not establish unbounded c at fixed d.
+
+
+## 45. Uniform-vacancy wrapper with elementary coefficients
+
+Status: proved finite construction and gap bounds, with complete-sector
+finite checks. This is the preferred ninth-run wrapper for the explicit
+clean-readout core. It does not prove the microscopic infrared limit.
+
+### 1. The modification
+
+The earlier wrapper used a positive vacancy Hamiltonian with diagonal
+domain-wall cost U and hopping w<U/(k+1). Its two endpoint droplets
+produce a small even/odd tunneling splitting. Replace it by the
+vacancy hopping Laplacian, w=U, and set the occupied-length filter
+strength to one. Keep the same arrow alphabet, endpoint rewards
+mu=2U, and violation penalty K=6U.
+
+The local bond is still arrow_wrapper equation (4), with these changed
+parameters. On each allowed vacancy/particle pair the charge block is
+
+    U [[1,-1],[-1,1]].
+
+On unmatched vacancy/particle pairs it has the positive diagonal U.
+Consequently the charge term is positive on the full physical space.
+All arrow violation projectors are conserved as before. The local
+dimension remains 6Q+3, or 96Q+48 after the selector and equalizers.
+
+The earlier proof using a large filter energy above nonzero charge
+ground energies does not apply at w=U. Sections 2-4 give its replacement.
+This parameter change is not being justified by extrapolating the
+earlier small-w estimate to its boundary.
+
+For all explicit constants below set U=1. Restoring a general U in
+the exclusion gap is immediate; the payload and filter need not be
+rescaled.
+
+### 2. Uniform charge states and an elementary gap bound
+
+[proved] In a legal N-site sector with both endpoint tags and r occupied
+sites, write p=N-r. The ordered occupied sequence is L B^(r-2) R.
+Vacancies have uniquely determined arrow labels. For 0<p<N the charge
+Hamiltonian is the simple-exclusion Laplacian
+
+    H_ch=U sum_(j=1)^(N-1) (I-S_(j,j+1))
+
+on the p-hole configurations, where S exchanges binary vacancy labels.
+Its unique zero vector is uniform,
+
+    chi_(N,p)=binomial(N,p)^(-1/2) sum_(|S|=p) |S>,
+
+and its gap is at least U/N^2. The p=0 sector is one dimensional,
+with zero charge Hamiltonian and no charge excitation.
+
+Proof. Connectedness of nearest-neighbor vacancy motion proves the
+kernel assertion. For the gap, introduce the complete-graph exchange
+Laplacian H_comp=sum_(i<j)(I-S_ij), at U=1. In the spin-half
+representation,
+
+    H_comp=N(N+2)/4-S_tot^2.
+
+The largest total spin is N/2. In a fixed vacancy-number sector its
+fully symmetric vector is unique. The next allowed total spin is at
+most N/2-1, so H_comp>=N(I-P_chi).
+
+Compare a transposition i<j with the adjacent exchange word that moves
+the letter at i to j and backtracks to exchange the endpoints. Its
+length is 2(j-i)-1<=2N and it traverses each path edge at most twice.
+For any function f of the hole configuration, telescope f along this
+word and apply Cauchy-Schwarz. Each intermediate configuration remains
+uniformly distributed, so the mean-square increment at edge e is the
+Dirichlet form of I-S_e on f. Summing over i<j gives
+
+    <f,H_comp f> <= N^3 <f,H_ch f>.
+
+Indeed an edge has at most N^2/4 crossing pairs, each contributing
+at most 2N times two edge traversals. Combining the two inequalities
+proves the gap U/N^2. This is deliberately weaker than the known exact
+exclusion gap and needs no gap theorem as an external input.
+
+[proved] Every adjacent pair of occupied labels in occupied order is
+physically adjacent with weight r/N in chi_(N,p). One proof uses gaps:
+each hole configuration corresponds to a weak composition of p into
+r+1 gaps, and these compositions have equal weights. Setting a
+specified internal gap to zero leaves binomial(N-1,r-1) configurations,
+out of binomial(N,r). Their ratio is r/N.
+
+### 3. A positive pinning estimate
+
+[proved] Let A>=delta(I-P), W>=0, ||W||<=M, and let P0<=P satisfy
+W P0=0. Suppose
+
+    P W P >= a(P-P0),    a>0.
+
+Then ker(A+W)=ran P0 when A vanishes on P, and the gap above this
+kernel is at least a delta/(a+M+delta). If P0=0 this is a lower bound
+on the entire spectrum.
+
+Proof. For psi orthogonal to P0 write x=Ppsi and y=(I-P)psi.
+The triangle inequality for W^(1/2) gives the energy lower bound
+
+    delta ||y||^2+(sqrt(a)||x||-sqrt(M)||y||)_+^2.
+
+In the region with a positive bracket, the corresponding two-by-two
+matrix has determinant a delta and trace a+M+delta. Its smaller
+eigenvalue is at least the determinant divided by the trace. In the
+other region, ||y||^2>=a/(a+M) for a unit vector, giving the stronger
+lower bound a delta/(a+M). Positivity proves the kernel statement.
+
+This lemma is also recorded in the collaborator IR_AUDIT. The proof
+is included here to make the new wrapper argument self-contained.
+
+### 4. Complete occupied-length selection at both physical lengths
+
+[proved] Let the positive payload core at occupied length k>=8 have
+complete kernel V and gap gamma_pay. Use the inherited filter of
+length_filter.md at strength one, with phase 2pi/(k+2), left pin
+|+(0)> and right pin |+((k-1)phase)>. Put
+
+    gamma=min{gamma_pay,1/[k(2k-1)]},
+    epsilon_* = kappa sin^2(pi/(k+2)) /
+                [(1+sqrt(kappa))^2+sin^2(pi/(k+2))],
+    kappa=1/[(k+2)(2k+3)].
+
+The filter has a unique zero state at r=k and rejection energy at
+least epsilon_* at every 2<=r<=k+2 with r!=k. These inherited filter
+facts are used without rederivation.
+
+Fix N=k+1 or k+2 and a legal sector with both endpoint tags. In ordered
+coordinates let W be the sum of adjacency-conditioned payload/filter
+bonds and the two endpoint penalties. Let P project onto uniform
+chi_(N,N-r), tensored with the entire occupied internal space. Section
+2 gives
+
+    PWP = (r/N) sum_(a=1)^(r-1) h0_(a,a+1)+a_left+b_right
+         >= (r/N) H_core+filter(r).
+
+All terms on the right are positive. At r=k its kernel is exactly
+V tensor |helix_k>, with gap at least gamma. Every adjacency term
+and both boundary penalties annihilate that kernel, so it is also
+annihilated by the unaveraged W. Section 3 therefore gives the complete
+ground code
+
+    chi_(N,N-k) tensor V tensor |helix_k>.
+
+At r!=k the filter alone makes PWP>=(r/N)epsilon_* P. Applying the
+same lemma with P0=0 gives a strictly positive rejection energy.
+At r=N there is no charge space to eliminate, and the filter bound
+epsilon_* applies directly. No condition on the payload spectrum
+at these wrong occupied lengths is needed beyond positivity.
+
+For the explicit clean-readout core the local norm bounds at unit
+scales are ||h_pay||<=17, ||a_pay||<=7, ||b_pay||<=6. Hence
+
+    ||W|| <= (r-1)18+8+7 =18r-3.
+
+With delta=1/N^2, the lemma gives the following simple conservative
+bounds, using gamma<=1 and N>=k:
+
+    selected-sector gap >= gamma/(40N^3),
+    wrong-occupation rejection >= epsilon_* /(10N^4).
+
+For the first inequality use a=k gamma/N, denominator at most 20N,
+and k>=N/2. For the second use a>=2epsilon_*/N and the same denominator.
+The p=0 rejection obeys this weaker bound as well.
+
+Restoring the rewards gives energy -4 at r=k. A legal sector with
+one endpoint tag has energy at least -2, and one with none at least
+zero. With v>=1 arrow violations, the endpoint count is at most
+2(v+1), so its energy is at least 6v-4(v+1)=2v-4. Thus all these
+other sectors have separation at least two from -4. This includes
+missing oriented rewards at physical endpoints, which only increase
+their energies.
+
+Consequently the complete open-cell code at each N=k+1,k+2 is the
+stated code, with gap at least
+
+    min{2, gamma/[40(k+2)^3], epsilon_* /[10(k+2)^4]}.
+
+The complete ground energy is -4 at both lengths. The charge sector
+no longer adds an exponentially small tunneling scale. The payload's
+binary-clock gap remains in gamma.
+
+The lower bound H_wrap(l)>=-4 for every open length l, and the
+periodic-wrapper nonnegativity bound, still follow from the same
+arrow count and positivity. They did not require w<U/(k+1).
+Therefore the existing selector proof applies with e1=e2=0,
+
+    mu_selector=t mu_c+4,    e_base=t e_c.
+
+All wrong physical lengths, selector violations and marker-free
+rings are excluded by the inherited proof. The new selected-cell
+gap above replaces the old Delta_1,Delta_2 in its final gap minimum.
+The positive equalizer tracks can then be attached unchanged.
+
+### 5. Exact port factors and marker transport
+
+[proved] For N=k+p, p=1,2, uniform charge weights give
+
+    r_p=k/(k+p),
+    s_p=k(k-1)/[(k+p)(k+p-1)].
+
+These follow by counting hole subsets that avoid one or two specified
+sites. They multiply the original core's endpoint and two-site density
+maps. Core reflection symmetry is not needed.
+
+The typed-vacancy cut conversion still has scalar payload transport.
+Every term in its positive overlap sum has the same amplitude, so
+
+    beta_wrap=[(k+1)/sqrt((k+1) binomial(k+2,2))]^2
+              =2/(k+2).
+
+Thus every wrapper normalization is elementary. There is no finite
+charge eigenvalue or eigenvector left to compute. The full periodic
+bond is periodic_clean_bond.PeriodicBond(flat_vacancies=True).
+
+At k>=8 both r_p and s_p exceed 1/2. With phi=1/b the compensators
+therefore obey
+
+    ||M_L||,||M_R||,||M_D|| <=4pi^2 b^2.
+
+The earlier elementary bounds A_b^2>1/2 and
+cos(1/(2b))^(2b)>1/2 give
+
+    zeta=A_b^2 beta_wrap beta_helix >1/[2(k+2)],
+    u<2(k+2) J0.
+
+This polynomial transport bound replaces the old wrapper's constant
+1/64 bound. The constant bound must not be reused for this variant.
+
+For J0=t_f=1, a full-space perturbation norm bound is consequently
+
+    B_flat <= 1+2m+4(k+2)
+              +409600 pi^4 b^4 m^3+320 pi^2 b^2 m.
+
+The proof is the same triangle bound as run9_audit Section 5, using
+the smaller compensators and u<2(k+2). The unperturbed wrapper bond
+itself has norm at most 45 at unit scales: 6 for the arrow penalty,
+2 for the charge block, 18 for the internal positive core/filter
+bond, and 10 and 9 for the two oriented boundary terms including
+their rewards. This bound is independent of k and q.
+
+### 6. Numerical checks and scope
+
+[numerical] Run
+
+    OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python3 flat_vacancy_checks.py
+
+The exclusion-gap test covers every 1<=p<N through N=9, 36 cases.
+The minimum measured gap times N^2 is eight, above the proved one.
+The comparison inequality H_comp<=N^3 H_ch is also checked through
+N=6 in every such sector, with numerical negative eigenvalues below
+1.2e-13.
+
+Filter-only wrapper controls at k=3,4 include every occupied-number
+sector and the complete legal arrow space at both selected lengths.
+The legal dimensions are 315,961,961,2903. All ground energies are
+-4 within 4.3e-14; all gaps exceed the bounds. The measured complete
+gaps are approximately .0485006,.0381404,.0271197,.0219921.
+Illegal arrows are excluded analytically by Section 4, not by a
+full-Hilbert-space diagonalization.
+
+For the actual q=4 clean core, the new periodic bond has the same
+214272048 on-site states and is checked on 3232 base and perturbation
+columns separately. All tested entries conserve microscopic charge,
+marker number and the overlapping selector-legality projectors.
+The wrapper agrees with the independent dense fixture below 9e-16.
+The actual 5124-vertex histories reproduce the two-cell fermion matrix
+with zero error, and compensation errors are below 3.1e-14. The new
+marker visibility is .1869524555657523.
+
+These are finite-dimensional checks. The flat wrapper preserves the
+same first-order m+1-mode target and exact symmetries. It does not
+supply a connected massive-sector integration theorem, measured
+microscopic central charge, full-class bound or fixed-d construction.
+The original conjecture remains nonconclusive.
+
+
+## 46. Exact unprojected cell-coordinate reduction
+
+Status: proved representation of the legal marker sectors. This reduces
+the local elimination problem to an atomic model in cell coordinates.
+It is not an all-order elimination theorem or a CFT identification.
+
+### 1. The exact local Hilbert space
+
+Fix the microscopic parameters, including the selected finite b, and
+let s=6Q+3 be the wrapper alphabet. In a legal marker sector with M>0
+markers, every cell has a selector word
+
+    # L^(a-1) X R^(ell-1-a),    1<=a<=ell-1, ell>=2.
+
+No low-energy projection is used here. The cell retains every wrapper,
+filter, clock and work state. Including the two equalizer qubits,
+its full Hilbert space is
+
+    K_ell = C^(ell-1) tensor (C^(4s))^tensor ell,
+    K = direct_sum_(ell>=2) K_ell.
+
+The first factor stores the selector head position. Define the on-cell
+length operator ellhat by ellhat|K_ell=ell I. For a rooted ordered list
+of M cells, the physical length constraint is sum_j ellhat_j=L.
+This is a global conserved charge constraint, not a local truncation
+of K to its two low lengths.
+
+[proved] There is a basis bijection between legal physical words with
+a chosen reference marker and an absolute reference position x in
+Z/LZ together with the ordered cell tensor word satisfying that length
+constraint. Changing the reference marker identifies
+
+    (x;u_1,...,u_M) ~ (x+ell_1;u_2,...,u_M,u_1).
+
+Quotient by this free reference-label action, with normalized orbit
+sums, recovers the physical legal Hilbert space. The action is free
+because the reference marker changes, including when cells have
+identical internal states. Physical translation shifts x. This is the
+same ring-coordinate issue as joint_fluid.md, now with full cell spaces.
+
+### 2. The unperturbed Hamiltonian is on-cell
+
+[proved] On the rooted space, after subtracting e_base L, the full
+unperturbed Hamiltonian is
+
+    H0-e_base L = sum_j A_j,
+
+where on K_ell
+
+    A_ell = mu_selector I + H_head(ell)+H_wrap(ell)
+              +H_equalizer(ell)-e_base ell I.
+
+H_head is the open (ell-1)-vertex selector path. H_wrap is the complete
+open wrapper, not its selected subspace. H_equalizer contains both
+uniform helix bonds and the two endpoint pins. Pins on a physical
+cut separate into a last-site B pin for the left cell and a first-site
+A pin for the right cell, so no inter-cell base interaction remains.
+Each marker's chemical potential is counted once.
+
+The existing selector and wrapper proofs imply A_ell>=0. At ell=b,b+1
+its kernel is the complete D-dimensional selected code, D=2^m, and
+the smallest positive eigenvalue has the stated positive cell lower
+bound. At every other ell,
+
+    A_ell >= gamma_wrong(1+|ell-b|) I,
+    gamma_wrong=t eta_b-1>0
+
+for U=1, using the conservative inherited selector bound. The flat
+wrapper actually permits a stronger convexity estimate, which is
+not needed here. Thus A on K has a finite ground space
+
+    ker A = K_b^0 direct_sum K_(b+1)^0
+           isomorphic to C^2 tensor C^D,
+
+and an on-cell gap Delta_at>0 independent of M and L. It also
+penalizes sufficiently long cells proportionally to their length.
+
+The ground-space projectors in this representation are fixed on-site
+projectors. Their motion in physical coordinates is a coordinate
+effect, not a failure of an on-cell decomposition of the full H0.
+
+### 3. The perturbation is bounded and local in cell order
+
+[proved] The complete microscopic perturbation becomes
+
+    V = kappa M + sum_j F_j + sum_j (T_(j,j+1)+T_(j,j+1)†+B_(j,j+1)).
+
+F is the colored field at the first internal bond. B is the physical
+port bond across a cut, acting on the last site of one cell and the
+first site of the next. Both preserve cell lengths.
+
+T transfers the first physical site of the right cell to the end of
+the left cell, converting H0 to H2 on that site's wrapper and applying
+the specified two equalizer phases. Its selector condition is #L to
+R#. The inverse is its adjoint. Thus
+
+    T: K_ell tensor K_r -> K_(ell+1) tensor K_(r-1).
+
+The condition on the right selector word makes T zero if the move
+would destroy a legal cell of minimum length. Its inverse conditions
+are those of the original physical bond. This is a partial isometry
+times its fixed amplitude, on the whole direct sum, not just on two
+selected codes. Hence ||T||<=u independently of ell,r.
+
+The endpoint and field operators also have norms bounded independently
+of ell. Their compensators and visibility factors were fixed using b,
+not the actual length of an excited cell. Therefore
+
+    ||F|| <= B_field,
+    ||B|| <= B_cut,
+    ||T+T†|| <= 2u,
+
+with the full-space constants proved in run9_audit.md and
+flat_vacancies.md. There is no factor proportional to the length of
+a wrong cell in these perturbation norms. Although V is a sum over
+physical bonds, its nonzero perturbation terms occur only at a marker
+or the first internal bond following a marker. Internal clock and
+wrapper propagation belong to A, not to V.
+
+All terms preserve total length sum ellhat, microscopic total charge,
+and M. They are translation invariant in the cell index away from
+the rooted-ring seam. At the seam the reference coordinate changes
+when the reference marker moves. Keeping x and taking the quotient
+above gives the exact operator. Working at fixed physical momentum
+instead gives the corresponding boundary twist, which must not be
+discarded in spectral comparisons. Local norm bounds do not depend
+on that twist.
+
+Consequently the legal-sector bulk problem is an ordinary nearest-
+neighbor perturbation of a sum of independent on-cell Hamiltonians,
+with a finite-dimensional degenerate ground space at each cell and
+uniformly bounded perturbation terms. The total-length constraint
+and the global reference quotient remain part of the model.
+
+### 4. What this resolves and what it leaves
+
+[proved] There is no need to control moving cell projectors directly
+in physical coordinates to formulate the local elimination. The
+exact change of variables supplies a fixed tensor product, an on-cell
+gap, and bounded neighboring-cell interactions. This is stronger
+than the first-order projected cell description alone.
+
+There are still three distinct tasks.
+
+1. A connected low-frequency elimination theorem is needed for this
+   atomic model with its finite on-cell ground degeneracy. The bare-Q
+   counterexample in run9_audit applies already to product on-cell
+   Hamiltonians, so the atomic reformulation does not validate a global
+   inverse or an all-band Schrieffer-Wolff transformation.
+2. K is an infinite direct sum before imposing fixed L. A theorem whose
+   bounds depend only on the on-cell gap and bounded interaction norms
+   could cover it, or one must prove a uniform high-length truncation
+   estimate using A_ell's linear growth. An arbitrary finite alphabet
+   theorem cannot be invoked without checking this point.
+3. The resulting local effective action still needs the Gaussian
+   infrared input and the inherited physical ring quotient. Illegal
+   selector sectors are invariant and do not occur virtually, but
+   their positive dressed defect cost must also be retained when
+   identifying the full physical ground state.
+
+The reduction is an exact finite-dimensional statement on every fixed
+ring and a well-defined direct-sum statement before fixing its length.
+No new numerical calculation is claimed for it. The separate periodic
+column tests verify the local transfer and selector rules it uses.
+It narrows M to a more familiar atomic problem without claiming to
+have solved M or the original conjecture.
+
+
+## 47. Ninth-run final audit
+
+[finite verification] All six new Python files compile and parse. The
+five numerical/algebraic entry points pass. Both periodic variants
+pass all stated column, charge and projection tests. The new flat
+wrapper's complete legal spectra and closed-form weight checks pass.
+No microscopic central charge, finite-coupling phase, or all-order
+local elimination was certified. The exact statements and their proofs
+are in Sections 44-46; the remaining work is ranked in PROGRESS.md.
+
+[provenance] C21-C23 handoffs were read before the new work. A final
+read of C28 found a partial n=2 doped-bus result and an open all-n
+construction. These are source reports, not independently checked
+results of this run. Only this folder was modified. The project
+STATE.md was not edited because the task expressly forbids outside
+writes. No subagents, external referee, network, cluster job, commit
+or push was used. The original conjecture remains nonconclusive.
