@@ -1,0 +1,137 @@
+{
+  "singlet": [
+    {
+      "L": 3,
+      "open_dimension": 4,
+      "periodic_dimension": 4
+    },
+    {
+      "L": 4,
+      "open_dimension": 5,
+      "periodic_dimension": 5
+    },
+    {
+      "L": 5,
+      "open_dimension": 6,
+      "periodic_dimension": 6
+    },
+    {
+      "L": 6,
+      "open_dimension": 7,
+      "periodic_dimension": 7
+    },
+    {
+      "L": 7,
+      "open_dimension": 8,
+      "periodic_dimension": 8
+    }
+  ],
+  "generic_entangled": [
+    {
+      "L": 3,
+      "open_dimension": 4,
+      "periodic_dimension": 2
+    },
+    {
+      "L": 4,
+      "open_dimension": 5,
+      "periodic_dimension": 2
+    },
+    {
+      "L": 5,
+      "open_dimension": 6,
+      "periodic_dimension": 2
+    },
+    {
+      "L": 6,
+      "open_dimension": 7,
+      "periodic_dimension": 2
+    },
+    {
+      "L": 7,
+      "open_dimension": 8,
+      "periodic_dimension": 2
+    }
+  ],
+  "aligned_product": [
+    {
+      "L": 3,
+      "open_dimension": 5,
+      "periodic_dimension": 4
+    },
+    {
+      "L": 4,
+      "open_dimension": 8,
+      "periodic_dimension": 7
+    },
+    {
+      "L": 5,
+      "open_dimension": 13,
+      "periodic_dimension": 11
+    },
+    {
+      "L": 6,
+      "open_dimension": 21,
+      "periodic_dimension": 18
+    },
+    {
+      "L": 7,
+      "open_dimension": 34,
+      "periodic_dimension": 29
+    }
+  ],
+  "independent_product": [
+    {
+      "L": 3,
+      "open_dimension": 4,
+      "periodic_dimension": 2
+    },
+    {
+      "L": 4,
+      "open_dimension": 5,
+      "periodic_dimension": 2
+    },
+    {
+      "L": 5,
+      "open_dimension": 6,
+      "periodic_dimension": 2
+    },
+    {
+      "L": 6,
+      "open_dimension": 7,
+      "periodic_dimension": 2
+    },
+    {
+      "L": 7,
+      "open_dimension": 8,
+      "periodic_dimension": 2
+    }
+  ],
+  "rank_two_tangent": [
+    {
+      "L": 3,
+      "open_dimension": 2,
+      "periodic_dimension": 2
+    },
+    {
+      "L": 4,
+      "open_dimension": 2,
+      "periodic_dimension": 2
+    },
+    {
+      "L": 5,
+      "open_dimension": 2,
+      "periodic_dimension": 2
+    },
+    {
+      "L": 6,
+      "open_dimension": 2,
+      "periodic_dimension": 2
+    },
+    {
+      "L": 7,
+      "open_dimension": 2,
+      "periodic_dimension": 2
+    }
+  ]
+}

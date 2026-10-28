@@ -121,3 +121,22 @@ if __name__ == '__main__':
                       + (f" dimer={o['dimer']:.2e}" if 'dimer' in o else ''))
             except Exception as exc:
                 print('!!', f, exc)
+
+
+def md_rows(files, k=3):
+    """Markdown rows: g, lam, lam/(alpha^2 Delta), chi range, xi range, c_fit, spread, p, leak, Q."""
+    rows = []
+    for f in files:
+        o = fes_table(f, k)
+        a = o['args']
+        R = o['rows']
+        if len(R) < 3:
+            continue
+        cp = o['c_pair'][-k + 1:] if len(o['c_pair']) >= k - 1 else o['c_pair']
+        spread = max(abs(x - o['c_fit']) for x in cp)
+        al = json.load(open(f))['info'].get('alpha', float('nan'))
+        ratio = a.get('lam', 0) / al ** 2 if al == al else float('nan')
+        rows.append(f"| {a.get('g')} | {a.get('lam')} | {ratio:.2f} | {R[-k]['chi']}–{R[-1]['chi']} | "
+                    f"{R[-k]['xi']:.0f}–{R[-1]['xi']:.0f} | {o['c_fit']:.3f} ± {spread:.3f} | "
+                    f"{o.get('p', float('nan')):.2f} | {R[-1].get('leak', float('nan')):.2f} | {R[-1].get('Q', 0):+.3f} |")
+    return rows

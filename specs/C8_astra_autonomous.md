@@ -18,9 +18,9 @@ The repository is two levels above your working directory (`../../`). Read, in t
 
 Other agents are working at the same time: one on d = 2 numerics, one searching for counterexamples at d ≥ 3 in symmetric families, and one trying to build an explicit chain with c > d − 1. Their folders under `../../contrib/` may change while you work. Read them for the latest state, but make your own contribution distinct.
 
-## Current focus (added before run 7)
+## Current focus (run 8 onward)
 
-Read `../../STATUS.md` first; it is the current one-page state of the project. Your own ranked continuation (RESULT.md §35) puts first an initialized uniform positive nearest-neighbour core with high-channel boundary maps and a constant alphabet, together with a program and clock that exclude every unwanted history component. Make that your main target in this run, since it is what fixes d0 (see also `../../contrib/minimal_d0/README.md`, which estimates d0 ≈ 130 on a Bausch–Cubitt–Ozols-class machine and ≈ 45 if the machine's clock can select the cell length, and names the longest-penalty-free-path property as the open design problem). The infrared behaviour of the moving-cell model at finite coupling is being handled by a separate run (C13, `../work_C13/`); read its PROGRESS.md for context but do not duplicate it.
+Read `../../specs/_routeA_background.md` and `../../STATUS.md` first. Your own ranked continuation (RESULT.md §39) puts first the clean-readout collision table for the fifteen-letter clock of §36 to §38: counters stored on the tape, a control alphabet independent of q, preserved grading, surplus inputs tested, coloured density readouts, and both ports verified at every active partial-sweep time, with s0 and r counted so that K = 30 s0 r² is concrete. Make that your main target, using C19's uniform cell (`../work_C19/RESULT.md`) as the preferred logical target, and keep in mind the frustration-free interface obstruction (C18, C19 §9). C21 (`../work_C21/`) works on compiling C19's filters into local terms and C22 (`../work_C22/`) on a computation-free cell; C23 (`../work_C23/`) assembles everything. Read their PROGRESS.md and do not duplicate them.
 
 Do not put probabilities, odds or percent-confidence estimates in any file.
 

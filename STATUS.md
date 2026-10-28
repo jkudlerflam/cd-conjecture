@@ -23,6 +23,14 @@ The working standard is theoretical physics (standard RG, controlled perturbatio
 
 The new [research continuation](contrib/research_continuation/README.md) records the proofs, algorithms and reproducible finite checks. The constant C is not numerically optimized, and there is no expanded full-machine transition table or thermodynamic simulation of a violating chain. Three AI workers cross-reviewed the construction; no human review is claimed. A parity-compatible repair of C9 and a separate-left/right-port realization also strengthen route A without completing its spatial compiler.
 
+## Route A (fixed d) and the d = 2 program, latest (coordinator, 2026-10-27 evening)
+
+- Route A's finite cell is now uniform: C19 gives n logical fermion flavours with exact parity, independent hopping phases and chemical potentials from second-order exchange, and only n + 1 port-accessible energies [Astra, checks rerun]. What is missing is a translation-invariant constant-alphabet controller. The cheapest frustration-free port interface provably fails (scalar source resolvents, C18 and C19 §9), so the interface must be non-frustration-free; C8 run 7 supplies a 15-letter initialized clock. Four Astra runs (C21 to C23, C8 run 8) and a microscopic demonstrator are on this now.
+- Route A numerics: a symmetric target (SU(3)₁) drifts at larger coupling, and an XX target with Fermi points at ±k_F is gapped by a generated pairing term, so cells must keep an exact U(1) or displace each flavour's Fermi-sea centre (`contrib/routeA_numerics/`).
+- The mobile-cell infrared claim (c = n + 1 on an open set) is now confirmed by a blind closed-book run (C20) as well as C13.
+- d = 2: the first round (C15 to C17) found no proof and no counterexample; the leading open target is an Ising-like neutral sector alongside a c = 1 mode at intermediate coupling. Details in REPORT §9.13.
+- The species-graph candidate above is under independent review (Astra C24 and a Claude referee in `contrib/review_species_graph/`).
+
 ## Earlier construction and the separate fixed-d program, step by step
 
 The steps below describe the earlier route-A program and its Majorana alternative. Their missing fixed-alphabet spectral compiler remains an issue for that stronger program; the new sparse first-order core above uses a different exact preparation and readout.

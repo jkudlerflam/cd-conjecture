@@ -1,0 +1,24 @@
+MARKER L=4 nullity=2 (Jzz,Bz), projector error 4.440892098500626e-16
+SUBLATTICE L=4 nullity=3 (fields only), projector error 0.0
+CLASSICAL 40 random directed binary costs, rings L=2..10, violation 4.440892098500626e-16
+PAIR relative-coordinate half-line truncated to r=1..200
+  V=-3 K/pi=0 lambda=0.666666667 E_bound=-4.333333333333 error=0 global_two_atom_min=-4
+  V=-1.5 K/pi=0.5 lambda=0.942809042 E_bound=-2.833333333332 error=1.09e-12 global_two_atom_min=-4
+  V=-1 K/pi=0.8 lambda=0.618033989 E_bound=-1.381966011250 error=2.22e-16 global_two_atom_min=-4
+PARTON states [[0, 0, 0, 1], [1, 1, 1, 0]] affine_rank 1 formal_one_constraint_c=3 completed_torus_c=1
+CONVERSION two bosons K_a=K_p=1: Delta=1.25; K_a=K_p=0.25: Delta=5.0 (kinematic examples, not realized fluids)
+CALIBRATION XX v=2, full spin PBC ED, not a new candidate
+  L= 6 E0=-4.000000000000 c_S=1.07776797 residual=4.26e-15
+  L= 8 E0=-5.226251859506 c_S=1.05250331 residual=5.46e-14
+  L=10 E0=-6.472135955000 c_S=1.04034743 residual=4.74e-12
+  L=12 E0=-7.727406610313 c_S=1.03283902 residual=5.58e-12
+  L=14 E0=-8.987918414870 c_S=1.02771239 residual=8.24e-14
+  all-size c_Cas=0.999204198, expected=1
+CALIBRATION Ising v=2, full spin PBC ED, not a new candidate
+  L= 6 E0=-7.727406610313 c_S=0.50504745 residual=5.76e-12
+  L= 8 E0=-10.251661790966 c_S=0.50364367 residual=5.06e-14
+  L=10 E0=-12.784906442999 c_S=0.50286004 residual=1.27e-12
+  L=12 E0=-15.322595151081 c_S=0.50235872 residual=5.29e-12
+  L=14 E0=-17.862808540761 c_S=0.50201101 residual=1.47e-13
+  all-size c_Cas=0.499975969, expected=0.5
+ALL CHECKS PASSED

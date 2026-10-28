@@ -1,0 +1,20 @@
+eff3:0.02 fes --n 6 --chis 8 12 16 24 32 48 64 96 128 192 256 --out data/fes_eff3_0.02.json
+eff3:0.05 fes --n 6 --chis 8 12 16 24 32 48 64 96 128 192 256 --out data/fes_eff3_0.05.json
+eff3:0.1 fes --n 6 --chis 8 12 16 24 32 48 64 96 128 192 256 --out data/fes_eff3_0.1.json
+eff3:0.2 fes --n 6 --chis 8 12 16 24 32 48 64 96 128 192 256 --out data/fes_eff3_0.2.json
+amp:0.1:2 fes --n 6 --chis 8 12 16 24 32 48 64 96 128 192 256 --out data/fes_amp_0.1_2.json
+amp:0.1:4 fes --n 6 --chis 8 12 16 24 32 48 64 96 128 192 256 --out data/fes_amp_0.1_4.json
+amp:0.1:8 fes --n 6 --chis 8 12 16 24 32 48 64 96 128 192 256 --out data/fes_amp_0.1_8.json
+amp:0.1:16 fes --n 6 --chis 8 12 16 24 32 48 64 96 128 192 256 --out data/fes_amp_0.1_16.json
+blbq:0.22 fes --n 6 --chis 8 12 16 24 32 48 64 96 128 192 256 --out data/fes_blbq_0.22.json
+blbq:0.24298 fes --n 6 --chis 8 12 16 24 32 48 64 96 128 192 256 --out data/fes_blbq_0.24298.json
+eff3:0.02 obc --L 48 --chis 48 96 160 --sweeps 6 --out data/obc_eff3_0.02_L48.json
+eff3:0.05 obc --L 48 --chis 48 96 160 --sweeps 6 --out data/obc_eff3_0.05_L48.json
+eff3:0.1 obc --L 48 --chis 48 96 160 --sweeps 6 --out data/obc_eff3_0.1_L48.json
+eff3:0.2 obc --L 48 --chis 48 96 160 --sweeps 6 --out data/obc_eff3_0.2_L48.json
+uls ed --Ls 6 9 12 --nev 40 --out data/ed40_uls.json
+eff3:0.02 ed --Ls 6 9 12 --nev 40 --out data/ed40_eff3_0.02.json
+eff3:0.05 ed --Ls 6 9 12 --nev 40 --out data/ed40_eff3_0.05.json
+eff3:0.1 ed --Ls 6 9 12 --nev 40 --out data/ed40_eff3_0.1.json
+eff3:0.2 ed --Ls 6 9 12 --nev 40 --out data/ed40_eff3_0.2.json
+heis ed --Ls 8 10 12 14 16 18 20 --nev 24 --out data/ed24_heis.json

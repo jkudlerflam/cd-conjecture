@@ -1,0 +1,32 @@
+{
+  "ising": {
+    "c_half_fit": 0.5000055935528467,
+    "c_step": 0.4987084244797029,
+    "c_velocity_weighted": 0.999990073511952,
+    "max_residual": 3.326261092771151e-14
+  },
+  "xx": {
+    "c_half_fit": 1.0002186759211993,
+    "c_step": 0.9895992760047062,
+    "c_velocity_weighted": 1.9996778052954658,
+    "max_residual": 1.259923093898408e-14
+  },
+  "free_collision": {
+    "c_half_fit": 0.49826458882474783,
+    "c_step": 0.5109234086101945,
+    "c_velocity_weighted": 0.5016690035636444,
+    "max_residual": 5.626486382762249e-14
+  },
+  "collision_interacting_probe": {
+    "c_half_fit": 0.4392639083566666,
+    "c_step": 0.46657623577519813,
+    "c_velocity_weighted": 0.44878138869168216,
+    "max_residual": 1.5193124770996222e-13
+  },
+  "attractive_pair_probe": {
+    "c_half_fit": 1.0016241961479144,
+    "c_step": 1.009881660013772,
+    "c_velocity_weighted": 0.782702043878426,
+    "max_residual": 1.8162834716580107e-13
+  }
+}

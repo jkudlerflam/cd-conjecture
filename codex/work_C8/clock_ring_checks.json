@@ -1,0 +1,38 @@
+[
+  {
+    "L": 3,
+    "selected_interior_length": 2,
+    "full_dimension": 1000,
+    "components": 519,
+    "largest_component": 14,
+    "mu": 1.5688172328043366,
+    "ground_energy": -0.3874779686632748,
+    "ground_multiplicity": 3,
+    "predicted_energy": -0.3874779686632746,
+    "lowest_illegal_energy": 6.198062264195162
+  },
+  {
+    "L": 4,
+    "selected_interior_length": 3,
+    "full_dimension": 10000,
+    "components": 4169,
+    "largest_component": 31,
+    "mu": 1.90763094895031,
+    "ground_energy": -0.08273850439408381,
+    "ground_multiplicity": 4,
+    "predicted_energy": -0.08273850439408378,
+    "lowest_illegal_energy": 6.120614758428183
+  },
+  {
+    "L": 5,
+    "selected_interior_length": 4,
+    "full_dimension": 100000,
+    "components": 33499,
+    "largest_component": 70,
+    "mu": 1.9750480166246729,
+    "ground_energy": -0.022616437039980175,
+    "ground_multiplicity": 5,
+    "predicted_energy": -0.02261643703998039,
+    "lowest_illegal_energy": 6.081014052771005
+  }
+]

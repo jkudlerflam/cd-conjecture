@@ -35,6 +35,14 @@ def build(a):
     if a.model == 'logical':
         dims, terms = C.logical_chain_terms(c, 1.0, a.ncells)
         return dims, C.mpo_from_terms(dims, terms), [1] * len(dims), 1, info, c
+    if a.model == 'core':
+        import effective as EF
+        so = EF.second_order(c)
+        hb = np.load(os.path.join(HERE, 'data', 'core_bonds.npz'))[f'g{a.g}_l{a.lam}']
+        dims = [c['N']] * a.ncells
+        terms = [(j, 2, hb) for j in range(a.ncells)] + [(j, 3, a.lam ** 2 * so['T3']) for j in range(a.ncells)]
+        info.update(alpha=float(so['alpha']), t1=float(a.lam * so['alpha'] ** 2))
+        return dims, C.mpo_from_terms(dims, terms), [1] * len(dims), 1, info, c
     if a.model == 'effective':
         import effective as EF
         so = EF.second_order(c)
@@ -107,7 +115,7 @@ def measure(psi, a, c, sub):
         Q = C.u1_charge(c)[0]
         out['charge'] = [U.one_site_expect(psi, j, Q) for j in range(a.ncells)]
         return out
-    if a.model == 'effective':
+    if a.model in ('effective', 'core'):
         gam = c['gam']
         Ql = 0.5j * sum(gam[2 * k] @ gam[2 * k + 1] for k in range(len(gam) // 2))
         out['charge'] = [U.one_site_expect(psi, j, Ql) for j in range(a.ncells)]
@@ -134,7 +142,7 @@ def measure(psi, a, c, sub):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument('model', choices=['ising', 'logical', 'encoded', 'bigsite', 'sparse', 'effective', 'trunc'])
+    ap.add_argument('model', choices=['ising', 'logical', 'encoded', 'bigsite', 'sparse', 'effective', 'trunc', 'core'])
     ap.add_argument('--q', type=int, default=2)
     ap.add_argument('--qp', type=int, default=1)
     ap.add_argument('--n', type=int, default=1)

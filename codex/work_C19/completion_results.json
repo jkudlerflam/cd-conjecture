@@ -1,0 +1,148 @@
+{
+  "reflection": [
+    {
+      "n": 1,
+      "N": 2,
+      "D": 96,
+      "k": 2,
+      "rho": 0.025515518153991442,
+      "exchange": 0.0006510416666666668,
+      "code_error": 0.0,
+      "kernel_error": 4.161097641174642e-16,
+      "first_order_compression": 0.0,
+      "zero_eigenvalues": 2,
+      "gap": 0.9999999999999978,
+      "parity_error": 0.0,
+      "min_weight": 0.375,
+      "bond_error": 3.6574255639447715e-15,
+      "fermion_sign_error": 0.0,
+      "sqrt_error": 2.830524433501838e-16,
+      "cubic_relative_error": 3.02164434557893e-17,
+      "momenta": [
+        [
+          0.42516833158763634,
+          1.1557273497909217
+        ]
+      ],
+      "hopping": [
+        1.1353352832366128
+      ],
+      "mu": [
+        2.12086070095575
+      ],
+      "reflection_error": 2.054864321740151e-15
+    },
+    {
+      "n": 2,
+      "N": 4,
+      "D": 256,
+      "k": 3,
+      "rho": 0.002405626121623441,
+      "exchange": 5.7870370370370384e-06,
+      "code_error": 0.0,
+      "kernel_error": 9.45468474723183e-16,
+      "first_order_compression": 0.0,
+      "zero_eigenvalues": 4,
+      "gap": 0.9999999999999941,
+      "parity_error": 0.0,
+      "min_weight": 0.24999999999999997,
+      "bond_error": 2.1217185535306106e-14,
+      "fermion_sign_error": 0.0,
+      "sqrt_error": 2.6706379462128893e-16,
+      "cubic_relative_error": 2.767504244958148e-15,
+      "momenta": [
+        [
+          0.42516833158763634,
+          1.1557273497909217
+        ],
+        [
+          0.05754027657865083,
+          0.15641068822825416
+        ]
+      ],
+      "hopping": [
+        1.1353352832366128,
+        1.0183156388887342
+      ],
+      "mu": [
+        2.12086070095575,
+        2.0341431844896967
+      ],
+      "reflection_error": 2.9995763848354673e-15
+    }
+  ],
+  "third_order": [
+    {
+      "norm": 0.8022268022693696,
+      "gaussian_residual": 2.1636189270338581e-07,
+      "hermitian_error": 2.997788225617721e-16,
+      "n": 1,
+      "completion": "reflection"
+    },
+    {
+      "norm": 0.7765926378440726,
+      "gaussian_residual": 4.797724753538319e-15,
+      "hermitian_error": 1.30335351929563e-16,
+      "n": 1,
+      "completion": "compact"
+    },
+    {
+      "norm": 0.511623691393579,
+      "gaussian_residual": 1.3511797698314767e-09,
+      "hermitian_error": 4.1458003012719344e-16,
+      "n": 2,
+      "completion": "reflection"
+    },
+    {
+      "norm": 0.461128536736732,
+      "gaussian_residual": 4.311379371719768e-05,
+      "hermitian_error": 4.279880505690504e-16,
+      "n": 2,
+      "completion": "compact"
+    }
+  ],
+  "reflection_ed": [
+    {
+      "n": 1,
+      "cells": 2,
+      "dimension": 9216,
+      "lambda_": 0.04,
+      "seconds": 1.3129379749298096,
+      "low_band_dimension": 4,
+      "min_overlap_singular": 0.9996573035881281,
+      "isolation": 0.9739862018399993,
+      "eigenpair_residual": 1.6065643488349246e-12,
+      "error": 5.2001303268571957e-05,
+      "error_over_lambda3": 0.8125203635714366,
+      "traceless_error": 6.820303625835965e-08,
+      "parity_error": 2.0571990864753876e-16,
+      "low_eigenvalues": [
+        -0.0017541408981850666,
+        -0.0017531839441886107,
+        -0.0017506822805254502,
+        -0.0017497252780301292
+      ]
+    },
+    {
+      "n": 1,
+      "cells": 2,
+      "dimension": 9216,
+      "lambda_": 0.02,
+      "seconds": 1.466580867767334,
+      "low_band_dimension": 4,
+      "min_overlap_singular": 0.9999170164481525,
+      "isolation": 0.9878149676279812,
+      "eigenpair_residual": 1.3910791856913356e-12,
+      "error": 6.460062623174754e-06,
+      "error_over_lambda3": 0.807507827896844,
+      "traceless_error": 8.454631860386819e-09,
+      "parity_error": 3.0712802691855546e-16,
+      "low_eigenvalues": [
+        -0.00043200382738724723,
+        -0.00043175572285318435,
+        -0.0004311474963953805,
+        -0.0004308993853294457
+      ]
+    }
+  ]
+}

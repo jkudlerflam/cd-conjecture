@@ -1,0 +1,142 @@
+{
+  "magnon": {
+    "L": 7,
+    "dispersion_error": 5.329070518200751e-15
+  },
+  "product_not_magnon_invariant": {
+    "vacuum_residual": 0.0,
+    "one_magnon_leakage_norm": 0.9728309205612248
+  },
+  "cubic_edge": {
+    "k": [
+      0.1,
+      0.05,
+      0.025,
+      0.0125
+    ],
+    "positive_slow_energy": [
+      0.00012492189452850528,
+      1.562255874633253e-05,
+      1.9530487072467703e-06,
+      2.441382408235222e-07
+    ],
+    "effective_z": [
+      2.9993236838584396,
+      2.9998309308727027,
+      2.9999577333373435
+    ],
+    "energy_over_k_cubed": [
+      0.12492189452850526,
+      0.12498046997066022,
+      0.12499511726379327,
+      0.12499877930164334
+    ]
+  },
+  "blockade_dimensions": [
+    {
+      "L": 4,
+      "dimension": 7
+    },
+    {
+      "L": 5,
+      "dimension": 11
+    },
+    {
+      "L": 6,
+      "dimension": 18
+    },
+    {
+      "L": 7,
+      "dimension": 29
+    },
+    {
+      "L": 8,
+      "dimension": 47
+    },
+    {
+      "L": 9,
+      "dimension": 76
+    },
+    {
+      "L": 10,
+      "dimension": 123
+    },
+    {
+      "L": 11,
+      "dimension": 199
+    },
+    {
+      "L": 12,
+      "dimension": 322
+    }
+  ],
+  "blockade_projection": {
+    "L": 8,
+    "dimension": 47,
+    "max_entry_error": 1.7763568394002505e-15
+  },
+  "blockade_hopping": {
+    "rho": 0.3333333333333333,
+    "velocity": 3.0,
+    "K": 0.4444444444444444,
+    "rows": [
+      {
+        "L": 12,
+        "N": 4,
+        "dimension": 105,
+        "energy": -5.226251859505508,
+        "energy_formula": -5.226251859505506,
+        "eigen_residual": 2.1306359313395503e-15,
+        "entropy_half": 1.2304908402810513,
+        "c_entropy_profile": 1.1764651822800651,
+        "c_casimir_exact_bulk_and_velocity": 1.0182887109508365
+      },
+      {
+        "L": 15,
+        "N": 5,
+        "dimension": 378,
+        "energy": -6.472135954999577,
+        "energy_formula": -6.47213595499958,
+        "eigen_residual": 2.564646539378669e-15,
+        "entropy_half": 1.3043880601053144,
+        "c_entropy_profile": 1.1323256479165158,
+        "c_casimir_exact_bulk_and_velocity": 1.0116355906553718
+      },
+      {
+        "L": 18,
+        "N": 6,
+        "dimension": 1386,
+        "energy": -7.7274066103125465,
+        "energy_formula": -7.727406610312547,
+        "eigen_residual": 4.947966734875519e-15,
+        "entropy_half": 1.367491610390305,
+        "c_entropy_profile": 1.1031617706829766,
+        "c_casimir_exact_bulk_and_velocity": 1.0080544035006658
+      },
+      {
+        "L": 21,
+        "N": 7,
+        "dimension": 5148,
+        "energy": -8.987918414869869,
+        "energy_formula": -8.987918414869869,
+        "eigen_residual": 2.4698887619710224e-15,
+        "entropy_half": 1.418377192499257,
+        "c_entropy_profile": 1.0874722033520579,
+        "c_casimir_exact_bulk_and_velocity": 1.0059061186005804
+      },
+      {
+        "L": 24,
+        "N": 8,
+        "dimension": 19305,
+        "energy": -10.251661790966049,
+        "energy_formula": -10.251661790966025,
+        "eigen_residual": 1.567149225273993e-13,
+        "entropy_half": 1.4640167423071289,
+        "c_entropy_profile": 1.0739839446242347,
+        "c_casimir_exact_bulk_and_velocity": 1.0045162234708642
+      }
+    ],
+    "c_half_size_fit": 1.0104802070180787,
+    "c_half_size_fit_with_Lminus2": 0.9974973352847856
+  }
+}

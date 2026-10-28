@@ -1,0 +1,23 @@
+heis fes --n 2 --chis 8 12 16 24 32 48 64 96 128 192 --out data/fes_heis.json
+uls fes --n 6 --chis 8 12 16 24 32 48 64 96 128 192 256 --out data/fes_uls.json
+eff:0.02 fes --n 6 --chis 8 12 16 24 32 48 64 96 128 192 256 --out data/fes_eff_0.02.json
+eff:0.05 fes --n 6 --chis 8 12 16 24 32 48 64 96 128 192 256 --out data/fes_eff_0.05.json
+eff:0.1 fes --n 6 --chis 8 12 16 24 32 48 64 96 128 192 256 --out data/fes_eff_0.1.json
+eff:0.2 fes --n 6 --chis 8 12 16 24 32 48 64 96 128 192 256 --out data/fes_eff_0.2.json
+blbq:0.23374 fes --n 6 --chis 8 12 16 24 32 48 64 96 128 192 256 --out data/fes_blbq_0.23374.json
+blbq:0.2 fes --n 6 --chis 8 12 16 24 32 48 64 96 128 192 256 --out data/fes_blbq_0.2.json
+heis ed --Ls 8 10 12 14 16 18 20 --nev 16 --out data/ed_heis.json
+uls ed --Ls 6 9 12 15 --nev 24 --out data/ed_uls.json
+eff:0.02 ed --Ls 6 9 12 15 --nev 24 --out data/ed_eff_0.02.json
+eff:0.05 ed --Ls 6 9 12 15 --nev 24 --out data/ed_eff_0.05.json
+eff:0.1 ed --Ls 6 9 12 15 --nev 24 --out data/ed_eff_0.1.json
+eff:0.2 ed --Ls 6 9 12 15 --nev 24 --out data/ed_eff_0.2.json
+heis obc --L 192 --chis 64 128 256 --out data/obc_heis_L192.json
+uls obc --L 96 --chis 64 128 256 400 --out data/obc_uls_L96.json
+uls obc --L 192 --chis 64 128 256 400 --out data/obc_uls_L192.json
+eff:0.02 obc --L 96 --chis 64 128 256 400 --out data/obc_eff_0.02_L96.json
+eff:0.05 obc --L 96 --chis 64 128 256 400 --out data/obc_eff_0.05_L96.json
+eff:0.1 obc --L 96 --chis 64 128 256 400 --out data/obc_eff_0.1_L96.json
+eff:0.2 obc --L 96 --chis 64 128 256 400 --out data/obc_eff_0.2_L96.json
+eff:0.1 obc --L 192 --chis 64 128 256 400 --out data/obc_eff_0.1_L192.json
+eff:0.2 obc --L 192 --chis 64 128 256 400 --out data/obc_eff_0.2_L192.json

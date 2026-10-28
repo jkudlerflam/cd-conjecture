@@ -1,0 +1,30 @@
+## Background for the route-A runs (C21, C22, C23, and C8 from run 8)
+
+The repository is two levels above your folder (`../../`). Read `../../STATUS.md` first.
+
+**Goal.** An explicit one-site translation-invariant, nearest-neighbour Hermitian bond h on ℂ^{d0}, with d0 fixed, such that for every n a member h_n of the family flows to a unitary CFT with c ≥ n. That shows c is unbounded at fixed local dimension, so no bound c ≤ f(d) exists and c ≤ d − 1 fails for d ≥ d0. The standard is theoretical physics (standard RG and bosonization, controlled Schrieffer–Wolff perturbation theory, calibrated numerics), but every finite-dimensional statement should be proved.
+
+**The pieces that exist** (read the ones relevant to your task):
+- Spontaneous cells: the C7 selector (`../work_C7/C7_result.md`), and a clock-selected version (`../work_C18/RESULT.md`).
+- History-state cells whose computation never touches the ports, so codes and port compressions are exact (`../../contrib/programmable_cell/README.md`).
+- Second-order exchange through qubit ports: G1 (`../../contrib/unbounded_c/G1/G1_result.md`), any logical bond in C9 (`../work_C9/RESULT.md`), and the uniform cell of C19 (`../work_C19/RESULT.md`): n logical fermion modes, an exactly degenerate 2^n code, exact parity, second-order exchange giving independent flavour hopping with arbitrary phases and chemical potentials, only n + 1 port-accessible excitation energies, coefficients from Jacobi polynomials with bounded loop bodies, cell dimension 16(n + 2)2^n as a matrix.
+- The stable target: n complex fermion flavours with distinct incommensurate Fermi momenta and an on-site Z₂ acting as logical fermion parity, c = n (`../../contrib/ir_control/README.md`). Symmetric targets such as SU(N)₁ are unstable.
+- Mobile cells for a unique ground state on every ring: `../work_C8/` (mobile selector, padding transport, helix equalizer, joint length–payload spectrum) and the finite-coupling analysis `../work_C13/RESULT.md`, independently confirmed blind by `../work_C20/RESULT.md` (an (n + 1)-boson phase on an open set, momentum margins of order n^{-4}).
+- A constant-alphabet clock: C8 run 7 built a 15-letter initialized nearest-neighbour clock with one legal history and explicit exclusion of unwanted sectors (`../work_C8/RESULT.md` §36 to §39, `RUN7_RESULT.md`).
+- Alphabet accounting: `../../contrib/minimal_d0/README.md` (one static Bell-check term on the port–partner bond suffices for port couplings in the general setting; d0 ≈ 130 on a Bausch–Cubitt–Ozols-class machine with C7's walker, ≈ 45 if the clock selects the length).
+- Numerics: route B at finite coupling gives c = 1.00 for r = 2 and c ≈ 2 for r = 4 at accessible scales (`../../contrib/encoded_chain_numerics/README.md`).
+
+**New material from a collaborator (read it; it may solve part of your task).** A collaborator (GitHub salpace) and his Codex workers pushed, after these specs were first written:
+- `../../contrib/research_continuation/` (README, PROPOSED_COUNTEREXAMPLE.md, IR_AUDIT.md, SCALE_HIERARCHY.md): a candidate first-order refutation of c ≤ d − 1 using the point-line incidence graph over F_p as a species graph (q = 2(p² + p + 1) species, N = (p + 1)(p² + p + 1) flavours, girth six forbids flavour-changing quartics), with c = N + 1 at d = O(p² log p). It grows d, so it is not the fixed-d result route A wants, but its finite machinery is relevant.
+- `../../contrib/exact_route/` (exact sparse ports, an exact charge-preserving circuit, an oracle scheduler, a sweep interface), `../../contrib/torus_bottleneck/` (the species-torus selection rule, an existential initialized core, a compiler interface), and `../../contrib/graded_route_a/` (a parity-compatible repair of C9's graded exchange synthesis, separate left and right ports, and a formalized sweeping clock).
+- A numerical warning from `../../contrib/routeA_numerics/README.md`: an identical second-order cell built for an incommensurate XX target generated a relevant pairing term (about 0.4λ) and gapped the chain, because the Fermi points sat symmetrically at ±k_F. Route A cells must keep an exact U(1) (for example species-torus charges) or displace each flavour's Fermi-sea centre with a complex hopping phase.
+Reuse what applies and say explicitly what you take from where.
+
+**The current bottleneck, as located by C18 and C19.**
+1. No translation-invariant nearest-neighbour controller with a constant alphabet yet implements C19's spectral filters. A formula with bounded loop bodies is not a local Hamiltonian.
+2. The cheapest exact frustration-free interface fails: if every positive static Bell check and port-idle term annihilates the code at its clock time, the source resolvents G†F_a e^{−tH} F_b G are scalar in the logical register, so no hopping or fields arise (C18, C19 §9). The interface must therefore be non-frustration-free, or the port must couple through something other than positive checks that annihilate the code.
+3. A pole-count bound: a graded qubit-port cell with k accessible positive energies supports at most 2n ≤ 4(k − 1), so longer cells must carry more spectral poles (C19 §8).
+4. C8's own next step: a clean-readout collision table for the 15-letter clock that produces both high-channel boundary maps.
+5. Third-order corrections in C19 are non-Gaussian; their infrared fate at the target's margins is not yet checked.
+
+**Rules for all route-A runs.** Tag every claim as proved, numerical (with sizes and estimator), heuristic, or assumed; a precisely located obstruction counts as progress, but say clearly whether it kills route A or only one implementation. Do not put probabilities, odds or percent-confidence estimates in any file. Python (numpy and scipy) only, inside your folder; no network; never modify files outside your folder; keep each computation to minutes on one machine. Write prose plainly, without em-dashes. Keep `PROGRESS.md` updated after every substantive step and write `RESULT.md` at the end. Other route-A runs work in parallel (`../work_C8/`, `../work_C21/`, `../work_C22/`, `../work_C23/`); read their PROGRESS.md and do not duplicate them.

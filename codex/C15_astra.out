@@ -1,0 +1,12 @@
+The full four-parameter bound remains open. [RESULT.md](RESULT.md) contains the derivations, controlled regions, residual set, and reproducible ED tests.
+
+Main findings:
+
+- \(K\geq1/2\) is not universal. Strong repulsion gives \(K=(1-\rho)^2\), allowing irrelevant atom-pair conversion.
+- Nearest-neighbor attraction favors larger clusters over a stable adjacent-pair fluid.
+- The singular pairing-only corner has an exact line with \(L+1\) ground states and quadratic excitations, not two conformal fluids.
+- Symmetry and parameter counting do not exclude an intermediate-coupling Ising × Luttinger point.
+
+Small ED found no supported \(c>1\) candidate. The remaining work is recorded in [PROGRESS.md](PROGRESS.md) and [STATE.md](STATE.md).
+
+[gpt_solve: backend=codex model=gpt-6-astra effort=high transcript=20261027T211742-93815]

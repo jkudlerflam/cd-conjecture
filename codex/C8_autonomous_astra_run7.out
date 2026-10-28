@@ -1,0 +1,9 @@
+This run remains nonconclusive.
+
+I constructed and proved a 15-letter initialized nearest-neighbor clock with one legal history and explicit exclusion of unwanted sectors. Four check scripts passed, including complete ring spectra through 100,000 states.
+
+The missing step is the clean-readout program that produces both high-channel boundary maps. Microscopic conformality also remains unresolved.
+
+Proofs, checks, and ranked continuation are saved in [RESULT.md](RESULT.md), Sections 36–39, and [PROGRESS.md](PROGRESS.md), with separate run-seven snapshots.
+
+[gpt_solve: backend=codex model=gpt-6-astra effort=high transcript=20261027T205401-83461]

@@ -1,0 +1,11 @@
+Saved [RESULT.md](<./RESULT.md>) and [PROGRESS.md](<./PROGRESS.md>), with four reproducible scripts and their data.
+
+The result is partial:
+
+- Proved merged-clock selection with idle ports, illegal-sector bounds and explicit gaps.
+- Proved an obstruction to exact route-A synthesis using only positive Bell checks.
+- Constructed a \(d_0=64\) test cell with an exact code and nonzero second-order \(ZZ\) interaction.
+
+All numerical checks passed. The unbounded route-A energy compiler and its final \(d_0\) remain open.
+
+[gpt_solve: backend=codex model=gpt-6-astra effort=high transcript=20261027T212511-98526]

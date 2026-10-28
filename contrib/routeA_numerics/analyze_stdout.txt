@@ -1,0 +1,63 @@
+FES amp_0.1_16             chi<=   96 xi=    4.90 S=0.7286 c_fit(last4)=0.000 c_local=0.000 e_inf=-1.272238482 bond-mod=4.96e-13 err=1e-09
+FES amp_0.1_2              chi<=   64 xi=   16.25 S=1.5654 c_fit(last4)=2.000 c_local=1.909 e_inf=-1.034467589 bond-mod=1.85e-02 err=4e-09
+FES amp_0.1_4              chi<=   48 xi=   12.78 S=1.4351 c_fit(last4)=1.826 c_local=1.837 e_inf=-1.036107844 bond-mod=2.46e-02 err=8e-09
+FES amp_0.1_8              chi<=   96 xi=    5.88 S=1.0679 c_fit(last4)=0.168 c_local=0.052 e_inf=-1.064271551 bond-mod=1.32e-11 err=4e-08
+FES amp_0.1_8_n6           chi<=   64 xi=    5.61 S=1.0675 c_fit(last4)=0.259 c_local=0.126 e_inf=-1.064323766 bond-mod=2.26e-11 err=1e-07
+FES blbq_0.2               chi<=  256 xi=    9.81 S=1.2303 c_fit(last4)=0.046 c_local=0.010 e_inf=-0.013119168 bond-mod=1.23e-10 err=4e-07
+FES blbq_0.23374           chi<=  128 xi=   32.00 S=1.7495 c_fit(last4)=1.939 c_local=2.035 e_inf=0.141779993 bond-mod=5.39e-03 err=2e-05
+FES eff3_0.05              chi<=   24 xi=    6.85 S=1.2858 c_fit(last4)=2.095 c_local=1.927 e_inf=-1.036332692 bond-mod=2.39e-02 err=3e-05
+FES eff3_0.1               chi<=   64 xi=   16.44 S=1.5794 c_fit(last4)=1.981 c_local=2.187 e_inf=-1.035099441 bond-mod=1.58e-02 err=7e-07
+FES eff3_0.2               chi<=   64 xi=   16.33 S=1.5532 c_fit(last4)=1.947 c_local=1.781 e_inf=-1.031914955 bond-mod=2.04e-02 err=7e-09
+FES eff_0.02               chi<=   96 xi=   23.24 S=1.6972 c_fit(last4)=2.117 c_local=2.029 e_inf=-1.036579338 bond-mod=7.54e-03 err=3e-06
+FES eff_0.05               chi<=   96 xi=   23.51 S=1.6975 c_fit(last4)=2.049 c_local=2.017 e_inf=-1.036611858 bond-mod=1.16e-02 err=3e-06
+FES eff_0.1                chi<=  128 xi=   30.77 S=1.7863 c_fit(last4)=2.020 c_local=2.053 e_inf=-1.036837693 bond-mod=1.45e-02 err=7e-06
+FES eff_0.2                chi<=  128 xi=   31.81 S=1.7859 c_fit(last4)=1.969 c_local=2.037 e_inf=-1.038153690 bond-mod=1.21e-02 err=2e-06
+FES ff_0.02                chi<=  128 xi=   56.69 S=0.6716 c_fit(last4)=0.061 c_local=0.012 e_inf=-1.545972356 bond-mod=2.04e-03 err=5e-08
+FES ff_0.05                chi<=  128 xi=   24.70 S=0.5178 c_fit(last4)=0.004 c_local=0.000 e_inf=-1.600172929 bond-mod=7.47e-03 err=8e-08
+FES ff_0.1                 chi<=  128 xi=   12.71 S=0.4014 c_fit(last4)=0.000 c_local=0.000 e_inf=-1.690856800 bond-mod=2.27e-02 err=1e-09
+FES ff_0.2                 chi<=  128 xi=    6.50 S=0.2885 c_fit(last4)=0.000 c_local=0.000 e_inf=-1.864706666 bond-mod=8.35e-02 err=2e-10
+FES ff_target              chi<=   96 xi=  413.37 S=1.1451 c_fit(last4)=0.983 c_local=0.960 e_inf=-1.510190195 bond-mod=1.87e-10 err=9e-07
+FES ffsym_0.05             chi<=   96 xi=  410.89 S=1.1449 c_fit(last4)=0.985 c_local=0.964 e_inf=-1.599258214 bond-mod=5.21e-10 err=1e-06
+FES ffsym_0.2              chi<=   64 xi=  238.49 S=1.0604 c_fit(last4)=0.997 c_local=1.012 e_inf=-1.851295306 bond-mod=7.87e-12 err=6e-08
+FES heis                   chi<=  192 xi=  622.93 S=1.4187 c_fit(last4)=1.004 c_local=0.991 e_inf=-0.443147176 bond-mod=1.86e-04 err=7e-07
+FES uls                    chi<=  128 xi=   30.29 S=1.7804 c_fit(last4)=2.023 c_local=1.998 e_inf=-0.703211275 bond-mod=3.20e-03 err=1e-06
+OBC eff_0.02_L96           L=96 chi=64 trunc=3.2e-05 c=0.849  S_mid(chi)=[1.624]
+OBC eff_0.05_L96           L=96 chi=128 trunc=5.4e-06 c=1.498  S_mid(chi)=[1.6238, 1.765]
+OBC eff_0.1_L96            L=96 chi=64 trunc=2.9e-05 c=0.810  S_mid(chi)=[1.6163]
+OBC eff_0.2_L96            L=96 chi=64 trunc=2.1e-05 c=0.734  S_mid(chi)=[1.6013]
+OBC heis_L192              L=192 chi=256 trunc=2.8e-12 c=0.924  S_mid(chi)=[1.0329, 1.0342, 1.0342]
+OBC uls_L96                L=96 chi=128 trunc=5.4e-06 c=1.497  S_mid(chi)=[1.6239, 1.7648]
+ED  eff3_0.02              L=  6 E0/L=-1.10085403 v=nan x_prim/x_cur=nan c_Casimir=nan c_2pt=nan first gap*L/2pi=1.3273 (k=2.0)
+ED  eff3_0.02              L=  9 E0/L=-1.06431489 v=2.0362 x_prim/x_cur=0.6486 c_Casimir=nan c_2pt=2.221 first gap*L/2pi=1.3207 (k=3.0)
+ED  eff3_0.02              L= 12 E0/L=-1.05197848 v=2.0662 x_prim/x_cur=0.6383 c_Casimir=nan c_2pt=2.111 first gap*L/2pi=1.3190 (k=4.0)
+ED  eff3_0.1               L=  6 E0/L=-1.09920335 v=1.8923 x_prim/x_cur=0.6734 c_Casimir=2.329 c_2pt=nan first gap*L/2pi=1.2743 (k=2.0)
+ED  eff3_0.1               L=  9 E0/L=-1.06278063 v=1.9709 x_prim/x_cur=0.6330 c_Casimir=2.173 c_2pt=2.287 first gap*L/2pi=1.2476 (k=3.0000000000000004)
+ED  eff3_0.1               L= 12 E0/L=-1.05048309 v=1.9805 x_prim/x_cur=0.6192 c_Casimir=2.136 c_2pt=2.196 first gap*L/2pi=1.2264 (k=4.000000000000001)
+ED  eff3_0.2               L=  6 E0/L=-1.09443524 v=1.7872 x_prim/x_cur=0.6516 c_Casimir=2.405 c_2pt=nan first gap*L/2pi=1.1646 (k=2.0)
+ED  eff3_0.2               L=  9 E0/L=-1.05848631 v=1.8199 x_prim/x_cur=0.6001 c_Casimir=2.259 c_2pt=2.445 first gap*L/2pi=1.0922 (k=3.0)
+ED  eff3_0.2               L= 12 E0/L=-1.04635165 v=1.7850 x_prim/x_cur=0.5752 c_Casimir=2.224 c_2pt=2.404 first gap*L/2pi=1.0267 (k=4.000000000000001)
+ED  eff_0.02               L=  6 E0/L=-1.10093063 v=nan x_prim/x_cur=nan c_Casimir=nan c_2pt=nan first gap*L/2pi=1.3276 (k=2.0)
+ED  eff_0.02               L=  9 E0/L=-1.06438806 v=2.0365 x_prim/x_cur=0.6487 c_Casimir=2.112 c_2pt=2.221 first gap*L/2pi=1.3210 (k=3.0)
+ED  eff_0.02               L= 12 E0/L=-1.05205051 v=2.0666 x_prim/x_cur=0.6384 c_Casimir=2.059 c_2pt=2.111 first gap*L/2pi=1.3194 (k=4.000000000000001)
+ED  eff_0.05               L=  6 E0/L=-1.10096238 v=nan x_prim/x_cur=nan c_Casimir=nan c_2pt=nan first gap*L/2pi=1.3113 (k=2.0)
+ED  eff_0.05               L=  9 E0/L=-1.06442508 v=2.0176 x_prim/x_cur=0.6438 c_Casimir=2.133 c_2pt=2.241 first gap*L/2pi=1.2990 (k=3.0000000000000004)
+ED  eff_0.05               L= 12 E0/L=-1.05208936 v=2.0413 x_prim/x_cur=0.6328 c_Casimir=2.085 c_2pt=2.137 first gap*L/2pi=1.2917 (k=4.0)
+ED  eff_0.05               L= 15 E0/L=-1.04646124 v=2.0451 x_prim/x_cur=0.6282 c_Casimir=2.070 c_2pt=2.102 first gap*L/2pi=1.2846 (k=4.999999999999999)
+ED  eff_0.1                L=  6 E0/L=-1.10109990 v=1.9032 x_prim/x_cur=0.6738 c_Casimir=2.322 c_2pt=nan first gap*L/2pi=1.2823 (k=2.0000000000000004)
+ED  eff_0.1                L=  9 E0/L=-1.06458597 v=1.9850 x_prim/x_cur=0.6349 c_Casimir=2.163 c_2pt=2.277 first gap*L/2pi=1.2603 (k=3.0000000000000004)
+ED  eff_0.1                L= 12 E0/L=-1.05225850 v=1.9977 x_prim/x_cur=0.6226 c_Casimir=2.123 c_2pt=2.182 first gap*L/2pi=1.2438 (k=4.000000000000001)
+ED  eff_0.1                L= 15 E0/L=-1.04663427 v=1.9907 x_prim/x_cur=0.6166 c_Casimir=2.115 c_2pt=2.158 first gap*L/2pi=1.2276 (k=5.000000000000002)
+ED  eff_0.2                L=  6 E0/L=-1.10190994 v=1.8571 x_prim/x_cur=0.6543 c_Casimir=2.360 c_2pt=nan first gap*L/2pi=1.2150 (k=2.0000000000000004)
+ED  eff_0.2                L=  9 E0/L=-1.06554312 v=1.9157 x_prim/x_cur=0.6120 c_Casimir=2.212 c_2pt=2.349 first gap*L/2pi=1.1724 (k=3.0000000000000004)
+ED  eff_0.2                L= 12 E0/L=-1.05327028 v=1.9064 x_prim/x_cur=0.5969 c_Casimir=2.181 c_2pt=2.276 first gap*L/2pi=1.1379 (k=4.000000000000001)
+ED  eff_0.2                L= 15 E0/L=-1.04767299 v=1.8778 x_prim/x_cur=0.5883 c_Casimir=2.178 c_2pt=2.277 first gap*L/2pi=1.1048 (k=4.999999999999999)
+ED  heis                   L=  8 E0/L=-0.45638668 v=1.5182 x_prim/x_cur=nan c_Casimir=1.066 c_2pt=nan first gap*L/2pi=0.6655 (k=-4.0)
+ED  heis                   L= 10 E0/L=-0.45154464 v=1.5473 x_prim/x_cur=nan c_Casimir=1.037 c_2pt=1.063 first gap*L/2pi=0.6736 (k=-2.5541298234291344e-16)
+ED  heis                   L= 12 E0/L=-0.44894924 v=1.5623 x_prim/x_cur=nan c_Casimir=1.021 c_2pt=1.038 first gap*L/2pi=0.6796 (k=6.0)
+ED  heis                   L= 14 E0/L=-0.44739640 v=1.5708 x_prim/x_cur=nan c_Casimir=1.013 c_2pt=1.025 first gap*L/2pi=0.6843 (k=2.1702442399218722e-18)
+ED  heis                   L= 16 E0/L=-0.44639352 v=1.5760 x_prim/x_cur=nan c_Casimir=1.007 c_2pt=1.016 first gap*L/2pi=0.6880 (k=-8.0)
+ED  heis                   L= 18 E0/L=-0.44570828 v=1.5793 x_prim/x_cur=nan c_Casimir=1.004 c_2pt=1.011 first gap*L/2pi=0.6911 (k=1.0357598803542468e-16)
+ED  heis                   L= 20 E0/L=-0.44521933 v=1.5814 x_prim/x_cur=nan c_Casimir=1.001 c_2pt=1.007 first gap*L/2pi=0.6937 (k=-10.0)
+ED  uls                    L=  6 E0/L=-0.76759188 v=nan x_prim/x_cur=nan c_Casimir=nan c_2pt=nan first gap*L/2pi=1.3380 (k=-2.13804070626625)
+ED  uls                    L=  9 E0/L=-0.73104842 v=2.0489 x_prim/x_cur=0.6517 c_Casimir=2.102 c_2pt=2.207 first gap*L/2pi=1.3353 (k=-3.669108882530302)
+ED  uls                    L= 12 E0/L=-0.71871057 v=2.0831 x_prim/x_cur=0.6421 c_Casimir=2.046 c_2pt=2.094 first gap*L/2pi=1.3375 (k=-5.321347982363353)

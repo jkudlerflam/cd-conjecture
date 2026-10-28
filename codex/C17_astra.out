@@ -1,0 +1,9 @@
+Completed [RESULT.md](RESULT.md), covering every requested mechanism with tagged arguments, numerical tests, and ranked open cases.
+
+The strongest exclusions are conserved one-site qubit markers, literal physical sublattice decoupling, and exact U(1) chains using the XXZ classification. General quantum-selected cells and emergent higher-level currents remain open. The leading remaining target is an isolated neutral critical sector alongside a \(c=1\) mode.
+
+All small checks passed, including entropy and Casimir calibrations for XX and Ising. Reproduction instructions and results are included. No counterexample or general proof was obtained.
+
+Updated `PROGRESS.md` and local `STATE.md`. All edits stayed inside `work_C17`.
+
+[gpt_solve: backend=codex model=gpt-6-astra effort=high transcript=20261027T211748-94269]

@@ -99,8 +99,10 @@ program must still be attached without altering this property.
 Attach a work space W=C^w to every clock letter. For each directed
 rule a->b choose a unitary U on the work sites touched by that rule.
 The same rule has the same U at every position. One-site rules have
-one-site U's. The initialization move IZ->LI and the activation
-I->R0 are assigned identity. No gates run during initialization.
+one-site U's. The initialization move IZ->LI is assigned identity. The activation
+I->R0 can carry a fixed seed unitary after the last initialization
+check. It is identity in binary_clock_checks.py. No gates run while
+the head is I.
 
 For a rule with support on one or two sites put
 
@@ -342,3 +344,19 @@ a reversible interpreter into this deterministic clock without adding
 unchecked input sectors. Fixed arbitrary gates on the rules give only
 one recursively structured circuit family. They are not a proof of
 universality or of the required high-channel compression.
+
+
+A separate full periodic-bond check is
+
+    OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python3 clock_ring_checks.py
+
+It enumerates every word and every component for the ten-letter ring
+clock (nine letters plus #) at L=3,4,5, of dimensions 1000,10000,100000.
+Choosing the selected interior length n=L-1 gives ground multiplicities
+3,4,5 and energies -0.3874779687, -0.0827385044, -0.0226164370, agreeing
+with (12) and the marker potential within 3e-16. Every illegal component
+obeys (18). Their minimum energies exceed 6.08 for K=8. Some illegal
+components are larger than the legal one; the conserved penalties, not
+a bound on their unpenalized path length, exclude them. These are complete
+small-ring selector spectra, not conformal data. Output is
+clock_ring_checks.json.

@@ -1,74 +1,72 @@
-# Encoded route-B chain: does the logical chain really flow to c = r/2?
+# Encoded route-B chain: does the logical chain flow to c = r/2?
 
 ## Claim
 
-Class: the chain of route-B cells of `contrib/programmable_cell/` §3(B), each cell treated as one site of dimension D = q⁴2ⁿ (port pL, partner sL, n logical qubits, sR, pR). H = Σ_j H_cell(j) + λ Σ_j Σ_a F_a(pR_j) F_a(pL_{j+1}), with H_cell = H_L + H_R as in that README (η_a = iγ_aP at the right end), F_a the r = 2q₊q₋ odd port channels, Δ = 1. This is translation invariant, nearest neighbour in the big sites and Hermitian. At first order it is r uniform Majorana chains, c = r/2. The question is the Virasoro c of the full chain at finite λ/Δ.
+Class: the chain of route-B cells of `contrib/programmable_cell/` §3(B), each cell one site of dimension D = q⁴2ⁿ (pL, sL, n logical qubits, sR, pR), H = Σ_j H_cell(j) + λ Σ_j Σ_a F_a(pR_j) F_a(pL_{j+1}), H_cell = H_L + H_R as there (η_a = iγ_aP on the right), F_a the r = 2q₊q₋ odd port channels, Δ = 1. Translation invariant, nearest neighbour in big sites, Hermitian. At first order it is r Majorana chains, c = r/2. Question: the Virasoro c at finite λ/Δ.
 
-1. q = 2 (q₊ = q₋ = 1, r = 2, n = 1, D = 32). c = 1.00 ± 0.03 for λ/Δ = 0.05, 0.1, 0.2, 0.4, 0.8 at g/Δ = 0.5 and for λ/Δ = 0.05 to 0.4 at g/Δ = 0.2, with z = 1 and no translation breaking. The chain has an exact U(1) with half-odd charge per cell and is particle-hole symmetric, and at second order it is an XXZ chain on the attractive side (anisotropy −0.46 λ/Δ at g = 0.5), so umklapp is irrelevant. Verdict: c = r/2 confirmed. [numerical]
-2. q = 3 (q₊ = 1, q₋ = 2, r = 4, n = 2, D = 324). One graded port per end already gives r = 4 with exact compressions, so no second port is needed. RESULT-Q3. Verdict: VERDICT-Q3.
-3. Mechanism for q = 3 [one-loop, heuristic]. The chain has an exact U(2) = (U(1) × SU(2))/Z₂. At second order the spin current coupling has the sign of the repulsive Hubbard chain (marginally irrelevant). At commensurate filling the charge sector would flow to a Mott gap, but q₊ ≠ q₋ generates a chemical potential μ ∝ λ²/Δ that dopes it first, leaving a Luttinger liquid. Reversing the sign of the λ² terms gaps the spin sector (c → 1 numerically), so the estimators do see a marginally relevant coupling when one is present.
+1. q = 2 (q₊ = q₋ = 1, r = 2, n = 1, D = 32). c = 0.98 to 1.05, each within its error of 1, for λ/Δ = 0.05 to 0.8 (g/Δ = 0.5) and 0.05 to 0.2 (g/Δ = 0.2), with z = 1 and no translation breaking. An exact U(1) with half-odd charge per cell, particle-hole symmetry, and an attractive second-order XXZ anisotropy make umklapp irrelevant. Verdict: c = r/2 confirmed. [numerical]
+2. q = 3 (q₊ = 1, q₋ = 2, r = 4, n = 2, D = 324). One graded port per end gives r = 4 with exact compressions, so no second port is needed. The logical chain with the bond to all orders in λ gives c = 2.1 ± 0.3 (λ = 0.4, ξ ≤ 11 cells), the second-order chain c = 1.97 ± 0.06 (ξ ≤ 23). The full D = 324 chain is resolved only to ξ ≈ 2.5 cells, where its logical charge matches them. Mechanism [one-loop]: the SU(2) current coupling is marginally irrelevant, and a chemical potential ∝ λ²/Δ from q₊ ≠ q₋ dopes the charge sector before umklapp can open a Mott gap. With the sign of the λ² terms reversed, c → 1, so the estimator does see a relevant coupling when there is one. Verdict: c = 2 at all accessible scales for λ/Δ ≤ 0.4, one-loop beyond. Near λ ≈ 0.75Δ (g = 0.5) two cells have a level crossing and the encoded description ends. [numerical, one-loop]
 
 ## Status
 
-Numerical for q = 2. For q = 3, numerical at the accessible scales (ξ ≲ XI3 cells) plus a one-loop argument for longer scales. A spectral check on rings, or the full q = 3 chain at larger χ, would upgrade it.
+Numerical for q = 2. For q = 3, numerical on logical chains derived from the full one up to ξ ≈ 25, and one-loop beyond. The full q = 3 chain at χ of several hundred would upgrade it.
 
 ## How it was established and checked
 
 - Author: Claude (Anthropic, Opus 5.5), sub-session of the coordinating session, 2026-10-27. No Codex/GPT was used.
-- Code: new here (`cells.py`, `umps_md.py`, `sparse_mpo.py`, `fdmrg_md.py`, `effective.py`, `marginal.py`, `run_fes.py`, `analyze.py`), built on `../programmable_cell/majorana_bank_check.py` (cell) and `../d2_followup_220_1282/vumps.py` (VUMPS core).
-- Checks: the cell reproduces α and exact 2ⁿ-fold degeneracy (residual 10⁻¹⁵). The sparse big-site MPO, the dense big-site MPO and the three-sub-site factorization give identical energies (12 digits). The second-order effective Hamiltonian matches two-cell exact diagonalization with residual ∝ λ³. The one-loop projection respects SU(2) × U(1) to machine precision and is calibrated on the Hubbard chain. All estimators were run on Ising and on the first-order chains (exact c = 1/2, 1, 2).
+- Code: new, on top of `../programmable_cell/majorana_bank_check.py` (cell) and `../d2_followup_220_1282/vumps.py` (VUMPS).
+- Checks: exact cell degeneracy and compressions (10⁻¹⁵). Sparse, dense and factorized MPOs agree to 12 digits. The second-order chain matches two-cell diagonalization with residual ∝ λ³. The continuum projection respects SU(2) × U(1) to 10⁻¹² and is calibrated on the Hubbard chain. All estimators were run on Ising and the first-order chains.
 - Not rerun by anyone else.
 
 ## Method
 
-Each cell is one site. For VUMPS (Zauner-Stauber et al. 2018, multi-site, with a low-rank null-space expansion so the D = 324 site never needs two-site tensors) the MPO is sparse. Unit cells: 4 cells for q = 2 (the finite-χ state of the first-order chain is a period-4 spiral; 1- and 2-cell runs fail or converge badly) and 2 cells for q = 3. Two cells per unit cell detect one-cell translation breaking through the cell-resolved bond energies, entropies and charges.
+VUMPS with the cell as one site (a low-rank null-space expansion avoids two-site tensors at D = 324), in unit cells of 4 cells (q = 2, whose finite-χ state is a period-4 spiral) or 2 (q = 3), so translation breaking shows in cell-resolved entropies, bond energies and U(1) charge. Finite-entanglement scaling: c = 6 dS/d ln ξ over the last three χ (cell-boundary S, ξ in cells), and e(χ) − e∞ ∝ ξ^−p, p = 1 + z. Open chains: two-site DMRG on [pL | sL⊗logical⊗sR | pR] (inner bonds qχ, lossless), Calabrese–Cardy fits with a staggered term.
 
-Estimators. (i) Finite-entanglement scaling: S at the cell boundary against ln ξ (ξ from the transfer matrix, in cells), c = 6 dS/d ln ξ over the last three χ. (ii) Open chains of L cells by two-site DMRG on the factorization [pL | sL ⊗ logical ⊗ sR | pR], whose inner bonds (q times the cell-boundary χ) make it a lossless big-site MPS: Calabrese–Cardy fits of S(ℓ) at cell boundaries with a staggered term, and the lowest gap from a penalty-projected second state (z from L·gap). (iii) In VUMPS, e(χ) − e∞ ∝ ξ^−p with p = 1 + z.
-
-The second-order Schrieffer–Wolff chain (`effective.py`) is exact through O(λ²) and contains a two-cell term T2 and a three-cell term T3 (middle cell excited). `marginal.py` expands its quartic terms in continuum fields c_{a,j} → ψ_{aR} + (−1)^j ψ_{aL} and projects onto so(4) = su(2)₊ ⊕ su(2)₋ currents (su(2)₊ contains the U(1) charge).
+Logical chains (q = 3). `effective.py` gives the Schrieffer–Wolff chain through O(λ²), a two-cell term T2 and a three-cell term T3 (middle cell excited). `core_bond` replaces the two-cell part by its all-order value from two-cell diagonalization. `marginal.py` expands quartic terms with c_{a,j} → ψ_{aR} + (−1)^j ψ_{aL} and projects on so(4) = su(2)₊ ⊕ su(2)₋ currents (su(2)₊ holds the U(1) charge).
 
 ## Results
 
-### Calibration
+Calibration: Ising 0.498 (ξ to 2190 cells), first-order r = 2 chain 0.988 (ξ to 491), first-order r = 4 chain 2.08 (χ = 128 to 256, ξ = 26 to 44, pairwise slopes 1.92 to 2.08). The penalty-projected excited state reproduces the exact open-chain gap of the r = 2 chain to six digits.
 
-| model (exact c) | χ | ξ (cells) | c (FES) |
-|---|---|---|---|
-| Ising (1/2) | 8–64 | 34–2190 | 0.498 |
-| first-order chain r = 2 (1) | 8–128 | 11–491 | 0.988 |
-| first-order chain r = 4 (2) | 8–256 | 2–44 | CAL4 |
+q = 2 (c ± spread of the last pairwise slopes; leak = weight of the left pair outside |Ω⟩):
 
-The first-order r = 2 chain reproduces the exact open-chain gap 4t sin(π/2(L+1)) to six digits, which checks the excited-state DMRG.
+| g | λ | λ/α² | χ | ξ | c | p | leak |
+|---|---|---|---|---|---|---|---|
+| 0.2 | 0.05 | 0.46 | 32–64 | 18–52 | 1.054 ± 0.107 | 1.42 | 0.07 |
+| 0.2 | 0.1 | 0.92 | 32–64 | 18–47 | 0.995 ± 0.050 | 1.55 | 0.07 |
+| 0.2 | 0.2 | 1.84 | 32–64 | 17–44 | 0.985 ± 0.011 | 1.71 | 0.10 |
+| 0.5 | 0.05 | 0.19 | 24–48 | 18–43 | 0.977 ± 0.088 | 1.79 | 0.18 |
+| 0.5 | 0.1 | 0.38 | 32–64 | 25–59 | 0.993 ± 0.075 | 2.05 | 0.19 |
+| 0.5 | 0.2 | 0.77 | 32–64 | 23–57 | 0.990 ± 0.070 | 2.13 | 0.21 |
+| 0.5 | 0.4 | 1.54 | 48–96 | 37–89 | 1.006 ± 0.030 | 1.99 | 0.26 |
+| 0.5 | 0.8 | 3.07 | 32–64 | 19–47 | 1.007 ± 0.047 | 1.93 | 0.37 |
 
-### q = 2
+All runs have Q = 0 and cell-to-cell differences of S and bond energy below 10⁻⁸. p ≈ 2 at g = 0.5 gives z = 1 (at g = 0.2 the energy differences sit near the convergence threshold). Open chains (g = 0.5, L = 16 at χ = 64, L = 32 at χ = 32) give c = 0.85 to 1.01, against 0.93 for the first-order chain at L = 32, so they agree within that finite-size bias. At second order T2 adds −0.120 λ² Z_jZ_{j+1} (g = 0.5; −0.026 λ² at g = 0.2) and T3 a correlated hopping: XXZ with Δ_xxz = −0.46λ/Δ (−0.24λ/Δ), K > 1, umklapp (dimension 4K) irrelevant. Half-odd charge per cell excludes a trivial gap, and dimerization would need K < 1/2. The two-cell level crossing is near λ ≈ 1.0Δ.
 
-TABLE-Q2
+q = 3 couplings per λ², normalized so that the Hubbard chain with U = 1 has +0.5 (charge) and −0.5 (spin), positive meaning marginally relevant ("all orders": exact two-cell bond plus second-order T3):
 
-Every run has Q = 0 per cell, cell-to-cell differences in S and bond energy below 10⁻⁸, and p ≈ 1.8–2.1 (z = 1). The leakage out of the Bell pair grows from 0.07 (g = 0.2, λ = 0.05) to 0.37 (g = 0.5, λ = 0.8), so the strongest points are far from perturbative, yet c does not move. OBC-Q2
+| g | λ | spin | charge, U(1) axis | charge, umklapp | μ/λ² |
+|---|---|---|---|---|---|
+| 0.5 | O(λ²) | −0.495 | −0.048 | −0.796 | 0.0423 |
+| 0.5 | 0.2, all orders | −0.488 | −0.052 | −0.783 | 0.0386 |
+| 0.5 | 0.4, all orders | −0.461 | −0.059 | −0.732 | 0.0293 |
+| 0.2 | O(λ²) | −0.170 | −0.044 | −0.253 | 0.0297 |
+| 0.2 | 0.4, all orders | −0.150 | −0.016 | −0.237 | 0.0176 |
 
-Second order (`effective.py`): T2 contains only the constant and −0.120 λ² Z_jZ_{j+1} (g = 0.5; −0.026 λ² at g = 0.2), and T3 a correlated hopping. With first-order hopping λα² this is XXZ with Δ_xxz = −0.46 λ/Δ (g = 0.5) or −0.24 λ/Δ (g = 0.2), so K > 1 and umklapp (dimension 4K) is irrelevant. Charge per cell is half-odd, so a trivially gapped phase is excluded and dimerization would need K < 1/2, the opposite side.
+The spin coupling is irrelevant throughout. With |g_⊥| ≫ |g_∥| the charge sector alone would open a Mott gap ∼ v exp(−π/2y), y ≈ 0.7λ/Δ, about 10⁻³ at λ = 0.4. But T2 contains μλ² i(c₀c₁ + c₂c₃) on each cell of each bond (absent for q₊ = q₋), a fermion chemical potential μ_f = 4μλ² (0.027 at λ = 0.4) that dopes the charge sector by δn = 2μ_f/πv = 0.061 per cell, the value VUMPS finds (−0.062). Keeping only the 68 cell states below 2Δ changes these couplings by under 2% (6% for the U(1)-axis one).
 
-### q = 3
+VUMPS on the logical chains (g = 0.5). Second order, λ = 0.4: c = 1.97 ± 0.06 (χ = 32 to 64, ξ = 13 to 23). All-order bond, λ = 0.4: c = 2.1 ± 0.3 (χ = 24 to 48, ξ = 6 to 11, pairwise 1.76 to 2.39). Doping sets in abruptly once v/ξ < μ_f, as one χ step with jumps in Q and S, and pairs straddling it are dropped. With the λ² terms multiplied by −4 the spin coupling turns relevant and c = 1.01 (ξ = 7 to 15, Q = +0.144).
 
-TABLE-Q3
-
-Second-order couplings per λ² (g = 0.5; g = 0.2 in brackets), in a normalization where the Hubbard chain with U = 1 has +0.5 in the charge algebra and −0.5 in the spin algebra (positive means marginally relevant):
-
-- spin su(2)₋, isotropic: −0.495 (−0.170), marginally irrelevant;
-- charge su(2)₊: g_∥ = −0.048 (−0.044) along the U(1) axis, g_⊥ = −0.796 (−0.253) for the charge-2 (umklapp) components. Since |g_⊥| ≫ |g_∥| this flows to a Mott gap at commensurate filling;
-- chemical potential: T2 contains 0.0423 λ² (0.0297 λ²) i(c₀c₁ + c₂c₃) per cell per bond, absent for q₊ = q₋. Its doping, δn = 2μ/(πv) with v = 4λα², is 0.061 per cell at λ = 0.4, which is the charge per cell found by VUMPS on the effective chain (−0.0617). Against a Mott gap of order v exp(−π/2g̃_⊥), μ wins for every λ in the range, so umklapp is detuned.
-
-The same projection on the truncated cell of 68 states (everything below 2Δ) changes these numbers by less than 2%. The effective chain gives c = 1.97 at λ = 0.4 and 0.8 (ξ up to 23), and EFFLOW. With the λ² terms multiplied by −4 the spin coupling becomes relevant, and c falls to 1.01 at ξ ≈ 15 while the charge sector stays doped (Q = 0.144). With them multiplied by +4 c stays near 2.
+Full chain, D = 324, χ ≤ 32. The cell boundary carries the bond's port fluctuations besides the logical entanglement, so ξ reaches only 1.4 to 2.5 cells, too short for a slope. No translation breaking at λ = 0.2, 0.8 or g = 0.2 (below 10⁻⁹). At g = 0.5, λ = 0.4 the run keeps a period-2 asymmetry (ΔS = 0.04) at χ = 24 that the 68-state truncated cell does not show. The logical charge, −0.014 (λ = 0.2) and −0.022 (λ = 0.4), matches the logical chains at comparable ξ (−0.016, −0.033).
 
 ## Translation to the fixed-d₀ construction
 
-In `programmable_cell` §4 the cell is a segment of b sites of the C7 selector chain, with d₀ = 4k_c q. The big site here is its logical content: the port and partner live on the register factor ℂ^q of the two end sites and the next ones inward, and the n logical qubits on ancilla registers, so D = q⁴2ⁿ costs no extra local dimension. Δ and g are energy terms of the port-idle history cell, reproduced up to O(1/J_c), and λ is the bond term of item 5. The numerics fix the window that the construction must hit. λ must sit below the cell gap (here up to λ = 0.8Δ, beyond first-order perturbation theory), and the relevant ratio of second to first order is λ/(α²Δ), between 0.2 and 3 here. In the microscopic chain the cell gap is the clock-tower gap ∝ J_c/b², so λ, and with it the logical bandwidth ∝ λα², scale down with b, but nothing in the infrared analysis depends on the absolute scale. Two lessons carry over. First, q₊ ≠ q₋ (needed for c > d₀ − 1 in route B) generically produces a chemical potential at O(λ²), which removes umklapp, a useful effect. Second, the non-abelian current couplings of SU(q₊) × SU(q₋) at first order are marginal, and their signs must be computed for the target (q₊, q₋). For q = 3 only SU(2) is present and its sign is benign. For q₊ = 8k_c these signs are unknown.
+In `programmable_cell` §4 a cell is a segment of b sites with d₀ = 4k_c q. The big site is its logical content (port and partner on the register factors ℂ^q of the end sites and their neighbours, logical qubits on ancillas), so D = q⁴2ⁿ costs no extra local dimension. Δ and g are energy terms of the port-idle history cell, λ the bond term of its item 5. The conditions found are dimensionless: λ below the two-cell level crossing (0.75Δ to 1.0Δ here), while λ/(α²Δ) may reach 3. Microscopically Δ is the clock-tower gap ∝ J_c/b², so λ and the bandwidth λα² shrink with b, which the infrared analysis does not see. Two lessons carry over. q₊ ≠ q₋, which route B needs for c > d₀ − 1, generically produces an O(λ²) chemical potential that removes umklapp. The SU(q₊) × SU(q₋) current couplings are marginal and their signs must be computed for the target (q₊, q₋). For q = 3 only SU(2) appears and its sign is benign. For q₊ = 8k_c they are unknown.
 
 ## Reproducing
 
-numpy and scipy only. `python3 cells.py` (cell checks, seconds), `python3 effective.py` (second order, a minute), `python3 marginal.py` (couplings, a minute). VUMPS: `run_fes.py {sparse|trunc|effective|logical|ising} --q --qp --n --g --lam --ncells --chis ... --out`, with `--lanczos --eig_factor 0.1` for q = 3. Open chains: `fdmrg_md.py encoded --q --g --lam --L --chis --nstates 2`. `analyze.py fes|obc data/*.json` makes the tables. Task lists: `fes_tasks.txt`, `fes_q3_tasks.txt`, `obc_tasks.txt`, `eff_tasks.txt`, with the slurm scripts beside them.
-
-Typhon jobs (partition typhon): 17512493 (controls and q = 2 VUMPS), 17512848 (q = 3 VUMPS, `*_arr.json`), 17512851 (q = 2, g = 0.2), 17512979 and 17512980 (open chains). Several runs (effective chains, truncated cells, some open chains) ran as `srun --overlap` steps inside the 17512493 allocations because of queue limits. Times: q = 2 VUMPS to χ = 192 in hours on 8 cores; q = 3 at D = 324 takes about an hour per χ step at χ ≈ 32 and grows like χ³. Data in `data/`.
+numpy and scipy only. `cells.py`, `effective.py`, `marginal.py`, `core_couplings.py` run in minutes. VUMPS: `run_fes.py {sparse|trunc|effective|core|logical|ising} --q --qp --n --g --lam --ncells --chis ... --out` (`--lanczos --eig_factor 0.1` for D = 324). Open chains: `fdmrg_md.py encoded --q --g --lam --L --chis`. Tables: `analyze.py fes|obc`. Task lists and slurm scripts are beside them. Typhon jobs 17512493 (controls, q = 2), 17512848 (q = 3, `*_arr.json`), 17512851 (q = 2, g = 0.2), 17512979 and 17512980 (open chains). Logical-chain, truncated-cell and some open-chain runs were `srun --overlap` steps inside 17512493 because of queue limits. Data: `data/typhon/` (cluster), `data/core/` and `data/eff/` (local logical-chain runs), `data/dev/` (unit-cell and factorization tests).
 
 ## Relation to the rest of the repository
 
-This tests §5 item 2 of `contrib/programmable_cell/` and the infrared step of REPORT §9.6 numerically, and complements the analytic `contrib/ir_control/`. Its §3 claim that the SO(2n) point sits on a separatrix and that incommensurate detuning removes the non-Gaussian channels is borne out for q = 3 in one respect (the chemical potential removes umklapp) and qualified in another (the SU(2) current coupling within degenerate Fermi points survives detuning, and its sign decides). "Where things stand" could say that the encoded logical chain flows to c = r/2 for q = 2 and, at accessible scales, for q = 3.
+This tests §5 item 2 of `contrib/programmable_cell/` (REPORT §9.6) and complements `contrib/ir_control/`, whose detuning argument holds here for umklapp but not for the SU(2) coupling between degenerate Fermi points, whose sign decides. "Where things stand" could say that the encoded chain flows to c = r/2 for q = 2, and for q = 3 at all accessible scales, with the non-abelian coupling signs the open issue at large q.

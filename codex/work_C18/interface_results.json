@@ -1,0 +1,84 @@
+{
+  "positive_bell_no_go": {
+    "clock_vertices": 9,
+    "cell_dimension": 288,
+    "logical_dimension": 2,
+    "cell_gap": 0.28407904384041166,
+    "first_order_norm": 2.1086069329840622e-18,
+    "resolvents": [
+      {
+        "z": 0.0,
+        "nonscalar_error": 2.6150619112791577e-15
+      },
+      {
+        "z": 0.3,
+        "nonscalar_error": 1.6052538654453943e-15
+      },
+      {
+        "z": 1.0,
+        "nonscalar_error": 6.959063800550737e-16
+      }
+    ],
+    "second_order_scalar": -1.1051382646224133,
+    "second_order_nonscalar_error": 1.0992464660467186e-14
+  },
+  "nonfrustration_free_example": {
+    "clock_vertices": 3,
+    "cell_dimension": 24,
+    "averaged_ground_energy": 0.25000000000000017,
+    "averaged_port_compression_norm": 0.33333333333333315,
+    "finite_J": [
+      {
+        "J": 10.0,
+        "energy_shift": 0.2434874992761656,
+        "ground_splitting": 2.756128658631951e-14,
+        "port_compression_norm": 0.33303180036219904
+      },
+      {
+        "J": 100.0,
+        "energy_shift": 0.24933825874525303,
+        "ground_splitting": 1.0664247263036941e-12,
+        "port_compression_norm": 0.3333302193744351
+      },
+      {
+        "J": 1000.0,
+        "energy_shift": 0.24993372045820839,
+        "ground_splitting": 6.111833261712718e-12,
+        "port_compression_norm": 0.3333333020998314
+      }
+    ]
+  },
+  "richer_syndrome_terms": {
+    "clock_vertices": 5,
+    "cell_dimension": 40,
+    "nonuniform_weights": [
+      0.08333333333333329,
+      0.24999999999999994,
+      0.3333333333333333,
+      0.25,
+      0.08333333333333329
+    ],
+    "target_resolvent_nonscalar_norm": 0.12831775136371687,
+    "finite_J": [
+      {
+        "J": 100.0,
+        "resolvent_error": 8.197998067759125e-05,
+        "bound": 0.023175323758765982,
+        "ground_residual": 4.348966865949069e-14
+      },
+      {
+        "J": 1000.0,
+        "resolvent_error": 8.341765890268305e-06,
+        "bound": 0.0022112747502295096,
+        "ground_residual": 3.4352205152120853e-13
+      },
+      {
+        "J": 10000.0,
+        "resolvent_error": 8.356595964392789e-07,
+        "bound": 0.00022011824458996137,
+        "ground_residual": 4.248022948799031e-12
+      }
+    ]
+  },
+  "seconds": 0.2146044159308076
+}

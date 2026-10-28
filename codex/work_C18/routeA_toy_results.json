@@ -1,0 +1,77 @@
+{
+  "d0": 64,
+  "period_b": 4,
+  "bulk_n": 2,
+  "clock_vertices": 30,
+  "legal_cell_dimension": 1920,
+  "block_dimension": 120,
+  "ground_dimension": 2,
+  "full_legal_gap": 0.000941163372332468,
+  "ground_residual": 4.800142737026931e-16,
+  "outward_swap_edges": [
+    4,
+    10,
+    18,
+    24
+  ],
+  "initialization_time": 1,
+  "second_order_diagonal": [
+    -1.2000000000000015,
+    -1.364745428448327,
+    -1.3301009198385212,
+    -1.5403543626727165
+  ],
+  "second_order_coefficients_I_ZI_IZ_ZZ": [
+    -1.3588001777398917,
+    0.07642746351572727,
+    0.09374971782063019,
+    -0.011377003596467483
+  ],
+  "first_order": "zero analytically from both Bell pairs",
+  "selector_delta": 0.20295143299848714,
+  "selector_mu": 1.7970485670015128,
+  "length_excess": 0.03945309424791379,
+  "bare_clock_gap": 0.030678764278801306,
+  "finite_lambda": [
+    {
+      "lam": 0.004,
+      "dimension": 3600,
+      "energies": [
+        -1.926148836152671e-05,
+        -2.191620044346227e-05,
+        -2.1357891064442863e-05,
+        -2.474951349160937e-05
+      ],
+      "second_order_error": 1.0384368884590707e-07,
+      "error_over_lam3": 1.622557638217298,
+      "eigenpair_residual": 6.092191896524133e-15
+    },
+    {
+      "lam": 0.002,
+      "dimension": 3600,
+      "energies": [
+        -4.807683044889407e-06,
+        -5.469009530265641e-06,
+        -5.329932205526967e-06,
+        -6.1743846513891075e-06
+      ],
+      "second_order_error": 1.2967200698241602e-08,
+      "error_over_lam3": 1.6209000872802002,
+      "eigenpair_residual": 5.936343635992336e-15
+    },
+    {
+      "lam": 0.001,
+      "dimension": 3600,
+      "energies": [
+        -1.2009601899507993e-06,
+        -1.3659985049133736e-06,
+        -1.3312916072039588e-06,
+        -1.5419744304832948e-06
+      ],
+      "second_order_error": 1.6200678105783057e-09,
+      "error_over_lam3": 1.6200678105783055,
+      "eigenpair_residual": 3.899360350236565e-15
+    }
+  ],
+  "scope": "Explicit small cell, not the unbounded-target compiler."
+}

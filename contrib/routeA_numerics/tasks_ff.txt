@@ -1,0 +1,7 @@
+file:data/ff_target.npz fes --n 2 --chis 8 12 16 24 32 48 64 96 128 192 256 --out data/fes_ff_target.json
+file:data/ff_lam0.02.npz fes --n 2 --chis 8 12 16 24 32 48 64 96 128 192 256 --out data/fes_ff_0.02.json
+file:data/ff_lam0.05.npz fes --n 2 --chis 8 12 16 24 32 48 64 96 128 192 256 --out data/fes_ff_0.05.json
+file:data/ff_lam0.1.npz fes --n 2 --chis 8 12 16 24 32 48 64 96 128 192 256 --out data/fes_ff_0.1.json
+file:data/ff_lam0.2.npz fes --n 2 --chis 8 12 16 24 32 48 64 96 128 192 256 --out data/fes_ff_0.2.json
+file:data/ffsym_lam0.05.npz fes --n 2 --chis 8 12 16 24 32 48 64 96 128 192 256 --out data/fes_ffsym_0.05.json
+file:data/ffsym_lam0.2.npz fes --n 2 --chis 8 12 16 24 32 48 64 96 128 192 256 --out data/fes_ffsym_0.2.json

@@ -1,0 +1,41 @@
+[
+  {
+    "L": 4,
+    "V": 4.0,
+    "delta": 1.0,
+    "mu": 0.5358983848622456,
+    "h": 1.7320508075688772,
+    "E0": -4.000000000000001,
+    "ground_degeneracy": 5,
+    "ground_energy_error": -8.881784197001252e-16,
+    "first_gap": 0.5358983848622452,
+    "predicted_defect_branch": 0.5358983848622456,
+    "branch_spectrum_distance": 0.0
+  },
+  {
+    "L": 6,
+    "V": 4.0,
+    "delta": 1.0,
+    "mu": 0.5358983848622456,
+    "h": 1.7320508075688772,
+    "E0": -6.000000000000005,
+    "ground_degeneracy": 7,
+    "ground_energy_error": -5.329070518200751e-15,
+    "first_gap": 0.35167216773987686,
+    "predicted_defect_branch": 0.3944487245360109,
+    "branch_spectrum_distance": 3.1086244689504383e-15
+  },
+  {
+    "L": 8,
+    "V": 4.0,
+    "delta": 1.0,
+    "mu": 0.5358983848622456,
+    "h": 1.7320508075688772,
+    "E0": -8.000000000000004,
+    "ground_degeneracy": 9,
+    "ground_energy_error": -3.552713678800501e-15,
+    "first_gap": 0.24734360539282907,
+    "predicted_defect_branch": 0.25834261322605867,
+    "branch_spectrum_distance": 1.3322676295501878e-15
+  }
+]

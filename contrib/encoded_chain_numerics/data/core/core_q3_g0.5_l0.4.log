@@ -1,0 +1,9 @@
+<repo>/contrib/encoded_chain_numerics/effective.py:43: RuntimeWarning: divide by zero encountered in divide
+  w = 1.0 / (2 * ec - Eb[:, None] - Eb[None, :] + 0j)
+<repo>/contrib/encoded_chain_numerics/effective.py:43: RuntimeWarning: invalid value encountered in divide
+  w = 1.0 / (2 * ec - Eb[:, None] - Eb[None, :] + 0j)
+{"dims": [4, 4], "mpo": [26, 26], "info": {"alpha": -0.4185842795175495, "t1": 0.0700851196236904}}
+chi=16 [16, 16] e_cell=-0.428639093848 err=1.4e-06 it=173 S0=[1.163673, 1.199353] xi_cells=4.189 t=51s
+chi=24 [24, 24] e_cell=-0.428848265577 err=4.0e-08 it=203 S0=[1.293492, 1.318014] xi_cells=6.343 t=132s
+chi=32 [32, 32] e_cell=-0.428928592079 err=9.8e-07 it=154 S0=[1.38299, 1.392864] xi_cells=8.394 t=251s
+chi=48 [48, 48] e_cell=-0.428991861900 err=4.7e-06 it=78 S0=[1.501531, 1.509144] xi_cells=11.277 t=383s

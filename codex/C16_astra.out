@@ -1,0 +1,14 @@
+Wrote [RESULT.md](<./RESULT.md>) with derivations, claim tags, tests, and ranked next steps. Resumable state is in [PROGRESS.md](<./PROGRESS.md>).
+
+The requested finite reduction remains unproved. Compactness cannot exclude an isolated finite-c > 1 point, and symmetry counting does not establish microscopic reachability.
+
+Results obtained include:
+
+- An exhaustive classification of frustration-free ground-space dimensions.
+- The full first-order perturbation theory of the exponentially degenerate blockade parent.
+- An explicit mixed linear/cubic band touching.
+- Conditional multicritical operator counts, including translation and mixed couplings.
+
+Constrained-hopping checks through L = 24 support c = 1 using both entropy and Casimir energy. No counterexample was found.
+
+[gpt_solve: backend=codex model=gpt-6-astra effort=high transcript=20261027T211745-94004]

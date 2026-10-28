@@ -1,9 +1,9 @@
-sparse --q 3 --qp 1 --n 2 --g 0.5 --lam 0.05 --ncells 2 --chis 16 24 32 48 64 96 128 --lanczos --eig_factor 0.1 --save_state --out data/fes_q3_g0.5_l0.05.json
-sparse --q 3 --qp 1 --n 2 --g 0.5 --lam 0.1 --ncells 2 --chis 16 24 32 48 64 96 128 --lanczos --eig_factor 0.1 --save_state --out data/fes_q3_g0.5_l0.1.json
-sparse --q 3 --qp 1 --n 2 --g 0.5 --lam 0.2 --ncells 2 --chis 16 24 32 48 64 96 128 --lanczos --eig_factor 0.1 --save_state --out data/fes_q3_g0.5_l0.2.json
-sparse --q 3 --qp 1 --n 2 --g 0.5 --lam 0.4 --ncells 2 --chis 16 24 32 48 64 96 128 --lanczos --eig_factor 0.1 --save_state --out data/fes_q3_g0.5_l0.4.json
-sparse --q 3 --qp 1 --n 2 --g 0.5 --lam 0.8 --ncells 2 --chis 16 24 32 48 64 96 128 --lanczos --eig_factor 0.1 --save_state --out data/fes_q3_g0.5_l0.8.json
+sparse --q 3 --qp 1 --n 2 --g 0.5 --lam 0.05 --ncells 2 --chis 16 24 32 48 64 96 128 --lanczos --eig_factor 0.1 --save_state --out data/fes_q3_g0.5_l0.05_arr.json
+sparse --q 3 --qp 1 --n 2 --g 0.5 --lam 0.1 --ncells 2 --chis 16 24 32 48 64 96 128 --lanczos --eig_factor 0.1 --save_state --out data/fes_q3_g0.5_l0.1_arr.json
+sparse --q 3 --qp 1 --n 2 --g 0.5 --lam 0.2 --ncells 2 --chis 16 24 32 48 64 96 128 --lanczos --eig_factor 0.1 --save_state --out data/fes_q3_g0.5_l0.2_arr.json
+sparse --q 3 --qp 1 --n 2 --g 0.5 --lam 0.4 --ncells 2 --chis 16 24 32 48 64 96 128 --lanczos --eig_factor 0.1 --save_state --out data/fes_q3_g0.5_l0.4_arr.json
+sparse --q 3 --qp 1 --n 2 --g 0.5 --lam 0.8 --ncells 2 --chis 16 24 32 48 64 96 128 --lanczos --eig_factor 0.1 --save_state --out data/fes_q3_g0.5_l0.8_arr.json
 sparse --q 3 --qp 1 --n 2 --g 0.2 --lam 0.05 --ncells 2 --chis 16 24 32 48 64 96 128 --lanczos --eig_factor 0.1 --save_state --out data/fes_q3_g0.2_l0.05.json
 sparse --q 3 --qp 1 --n 2 --g 0.2 --lam 0.1 --ncells 2 --chis 16 24 32 48 64 96 128 --lanczos --eig_factor 0.1 --save_state --out data/fes_q3_g0.2_l0.1.json
 sparse --q 3 --qp 1 --n 2 --g 0.2 --lam 0.2 --ncells 2 --chis 16 24 32 48 64 96 128 --lanczos --eig_factor 0.1 --save_state --out data/fes_q3_g0.2_l0.2.json
-sparse --q 3 --qp 1 --n 2 --g 0.2 --lam 0.4 --ncells 2 --chis 16 24 32 48 64 96 128 --lanczos --eig_factor 0.1 --save_state --out data/fes_q3_g0.2_l0.4.json
+sparse --q 3 --qp 1 --n 2 --g 0.2 --lam 0.4 --ncells 2 --chis 16 24 32 48 64 96 128 --lanczos --eig_factor 0.1 --save_state --out data/fes_q3_g0.2_l0.4_arr.json

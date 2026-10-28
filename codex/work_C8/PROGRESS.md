@@ -1,114 +1,138 @@
 # C8 progress
 
-2026-10-27. Sixth run finished, nonconclusive. RESULT.md Sections 30-35
-contain the new proofs and checks. All writes stayed in this folder.
-Read this first and do not redo completed work.
+2026-10-27. Seventh run finished, nonconclusive. RESULT.md Sections 36-39
+contain the new proofs, constructions, checks, and ranked continuation.
+All writes stayed in this folder. Read this first and do not redo
+completed work.
 
 ## Current best answer
 
-No verified counterexample, full-class bound, or fixed-d unbounded-c
-construction has been obtained. The remaining central bottlenecks are
-(i) a high-channel initialized uniform NN core and (ii) infrared control
-at fixed nonzero microscopic coupling.
+No verified microscopic counterexample, full-class bound, or fixed-d
+unbounded-c construction has been obtained. The initialized clock is now
+explicit, but its high-channel clean-readout work program is still missing.
+Finite-coupling infrared control is a separate task, treated by C13.
 
-The finite-cell and all-ring interface is substantially more complete.
-For an exact initialized FF q-state core of length k>=3, there is a
-repeated NN bond at d=24q+12 whose COMPLETE unperturbed ground manifold
-on every sufficiently large ring consists of b/(b+1) cells, b=k+1,
-carrying the intended code. All other lengths, marker sectors, and
-wrapper sectors have explicit energy bounds. A two-site marker hop
-transports both payloads by a scalar after projection. Two more qubit
-tracks equalize the projected payload coupling at both lengths exactly,
-with total dimension d=96q+48. This is still conditional on the core.
+A nine-letter uniform positive NN clock has exactly one legal history
+path at every length n, with C_n=n+4(2^n-1) vertices. The path includes
+an initialization sweep. A fifteen-letter extension inserts complete
+outward/return sweeps and has C_n=(2n+4)2^n+n-4 vertices, with exactly
+2^n full sweeps. Every local legality-defect projector is conserved.
+There are no extra penalty-free histories, cycles, or internal lengths.
+
+The full-sweep version executes a partitioned local work update. Any
+specified finite injective graded collision table can be completed
+canonically to a permutation and executed on this clock. Initialization
+and later checks determine the COMPLETE quantum ground code, with a
+finite-length gap. The work machine may have arbitrary other orbits;
+these cannot create additional ground states after initialization pins.
+This removes the need to assume a chosen work-machine sector.
+
+It does not supply the desired collision table. The tested packet
+machine computes total logical parity at a boundary, but its off-diagonal
+accumulator compression is zero because the logical bits remain recorded
+elsewhere. A successful readout must erase all other records of the
+exposed bit before activating the port. All active partial-sweep times
+must have the intended matrix elements and input-independent counts.
 
 ## New proved results and files
 
-1. `selector_wrapper.md`: explicit selector/wrapper bond, all-sector
-   selection and gap above the entire unperturbed manifold. The key
-   estimate H_wrap(N)>=-4U holds at EVERY open length, so unknown
-   wrong-length payload spectra cannot defeat the selector. Local
-   H_0-to-H_2 conversion gives scalar marker transport.
-2. `length_fluid.md`: complete spectrum of the projected physical marker
-   graph, including its momentum-dependent fermion twist and cyclic
-   reference constraint. One compact boson has v=2J(b+nu)sin(pi nu)
-   and physical K=(b+nu)^(-2). Every large ring has ordinary charge
-   rounding, not a forced quadratic defect. This is FIRST ORDER only.
-3. `helix_equalizer.md`: two nonorthogonal qubit helices compensate
-   r_1!=r_2 exactly at BOTH ports. A local auxiliary rotation preserves
-   scalar transport. With pitch 1/b the added transport factor tends
-   to one and the positive compensator norm is O(b^2). This removes
-   the leading r_p r_p' length/payload coupling, at a factor-four
-   alphabet cost. Existing parity is preserved.
-4. `joint_fluid.md`: complete projected spectrum with any translation-
-   invariant logical payload from its energy/momentum eigenpairs.
-   The cyclic constraint acts on gaps AND payloads. A marker crossing
-   the physical origin rotates the canonical payload ordering.
-5. `approximate_core.md`: a positive core with D eigenvalues in
-   [0,epsilon] and the rest >=gamma lifts to a D-state finite-cell
-   band of width <=epsilon, complement >=g0, and code angle
-   <=sqrt(M epsilon)/(g0-epsilon). Port and transport bounds follow.
-   This relaxes exact FF for the finite-cell interface, not for a
-   claimed globally isolated band on arbitrary rings.
+1. initialized_binary_clock.md gives the nine-letter alphabet, repeated
+   positive bond and boundary terms, complete path proof, initialized
+   code, gap, hopping spectrum, and a merged frozen selector. Strict
+   convexity selects every interior length n>=2. Full illegal sectors
+   are controlled. It is not a conformal ring model.
+2. sweeping_clock.md gives the fifteen-letter full-sweep extension,
+   a local update identity on the whole work space, canonical collision
+   completion, and input/check-kernel theorems. For classical permutation
+   programs with diagonal checks, every rejected input has a path pin,
+   giving gap >=min(K_penalty,J[1-cos(pi/C)],eta/(2C),J/(4C^2)).
+3. readout_machine_contract.md specifies the unfinished clean-readout
+   program. If its ordinary tape alphabet and packet state set are fixed
+   as q grows, the core dimension is K(q+1), with K=30 s0 r^2. Both
+   boundary Clifford maps then follow exactly by counting active times.
+   The conditional wrapped dimension is d=96K(q+1)+48 and target c=q^2/8.
+   K is NOT supplied. This is a conditional reduction, not a counterexample.
+4. run7_audit.md is the final audit and ranked continuation, also included
+   as RESULT Section 39.
 
-## Verification
+## Verification this run
 
-All five new scripts passed with single-thread BLAS and compiled.
+All four new scripts passed with single-thread BLAS and compiled.
 
-- `selector_wrapper_checks.py`: legal wrapper spaces of dimensions
-  31,101,315,961,2903 at lengths 2 through 6; a physical bond of
-  dimension 1296 (d=36); both quantum ports and the full two-payload
-  transport map at d=60. Transport errors below 9e-15. Illegal
-  sectors are excluded analytically, not by full-ring ED.
-- `length_fluid_checks.py --max-M 16`: complete physical graph spectra
-  through dimension 315, errors below 1.7e-14. Actual physical-site
-  half-chain entropies at L=36,54,72 give c slopes 1.02171,1.01050,
-  calibrated against XX. Independent Casimir gives 0.999999704.
-  These estimators refer to the PROJECTED marker model.
-- `helix_equalizer_checks.py`: complete one-track parent spectra at
-  lengths 4,5 and actual two-cell conversion in dimension 262144.
-  Port, transport and projected bond errors below 5.1e-14.
-- `joint_fluid_checks.py`: every eigenvalue for an XX payload at
-  physical dimensions 162,340,1800, errors below 3.4e-14. Equal-
-  velocity joint Casimir c=1.999999409. Again, FIRST ORDER only.
-- `approximate_core_checks.py`: six non-FF positive-core examples at
-  dimensions 32,80 and epsilon=1e-6,1e-7,1e-8. The nonzero code
-  angles and endpoint errors obey the proved conservative bounds.
+- binary_clock_checks.py exhausts all clock words through n=5 (59049
+  words), checks every defect on every edge, and computes complete small
+  illegal-component spectra. Both legal spectra through n=8 (1028
+  vertices) agree below 4e-15. A 224-dimensional entangling initialized
+  core has exactly four zero states, gap .0062877901, and code residual
+  below 1.7e-15; the proved gap bound is .0012755102.
+- sweeping_clock_checks.py exhausts graphs through n=4 (50625 words,
+  16477 components, 3855 illegal components containing cycles). Full
+  legal spectra through 1026 vertices agree below 5.3e-15. On a
+  64-dimensional work space all eight completed updates agree with
+  powers of the intended local update below 8e-15.
+- sweep_machine_checks.py builds a literal eighteen-state collision
+  permutation, checks grading, and tests every initialized input through
+  n=5. The diagonal parity readout succeeds with zero residual and the
+  off-diagonal readout vanishes. This is a controller test, not a
+  high-channel code or a CFT measurement.
+- clock_ring_checks.py computes every component spectrum on complete
+  ten-letter rings of dimensions 1000,10000,100000 at L=3,4,5. The
+  selected ground multiplicities are 3,4,5, and the analytic energies
+  agree within 3e-16. Every illegal component obeys the ring bound.
 
-Earlier numerical suites were not rerun. No full finite-coupling
-microscopic CFT estimate, cluster job, network access, subagent,
-independent referee, commit, or push was used.
+Outputs have the corresponding .json names. Earlier suites were not
+rerun. No microscopic CFT estimators, network, cluster jobs, subagents,
+independent referee, commit, or push were used by this run.
+
+## Earlier interfaces, retained
+
+For a q-state initialized positive FF core of length k>=3, the existing
+selector/wrapper has dimension 24q+12 and selects exactly b/(b+1) cells,
+b=k+1, on every sufficiently large ring, with the complete unperturbed
+manifold proved. Marker hopping transports payloads by a scalar. Two
+qubit helices equalize leading couplings at d=96q+48. The full projected
+length/payload spectrum and the physical K=(b+nu)^(-2) are known. Positive
+approximate-core bounds are also available. These are RESULT Sections
+30-35 and their separate notes. They have not been re-derived this run.
+
+C13 finished while this run was active. Its final PROGRESS reports a
+conditional positive Gaussian-phase analysis and an all-integer fixed-
+vacuum qualification. Generic projected numerics remain too small for
+accurate central charges. It still requires the actual microscopic core
+and corrections. These are source-reported results, not independently
+audited C8 claims.
 
 ## Remaining problems, ranked
 
-1. Supply the initialized high-channel uniform core. It may now be a
-   positive approximate code, but its error must obey epsilon much
-   smaller than g0^2/M for useful lifted port accuracy. A scheduled
-   classical circuit or a selected program sector is insufficient.
-   The repeated-bond controller must initialize its program and
-   exclude all malformed histories with a fixed alphabet overhead.
-2. Establish the microscopic finite-coupling infrared theory around
-   the exact joint projected model. Include leakage and mixed
-   resonances involving the length boson, with its physical
-   K=(b+nu)^(-2). The live ir_control work is still heuristic for
-   general cells, despite new toy detuned-target numerics.
-3. For approximate cores, account for the extensive retained bandwidth
-   and finite-cell splitting as local perturbations. Do not mistake
-   finite-cell band separation for a full-chain spectral gap.
-4. A full-class bound still needs a neutral-sector or onset-length
-   input. The earlier conditional symmetry/rank bounds do not give it.
+1. Write the actual clean-readout collision table described in
+   readout_machine_contract.md. Begin with the fifteen-letter clock.
+   Keep control states independent of q, put counters on the tape,
+   preserve parity, test surplus input bits, include colored flavor-density
+   readouts, and verify both ports at
+   ALL active partial-sweep times. Count s0,r and hence K. A generic
+   reversible simulator retaining copies of the exposed bit fails.
+2. Put that core through the existing wrapper/equalizer and calculate
+   actual finite-coupling corrections below its very small but positive
+   cell gap. A cell gap does not isolate an extensive many-cell band.
+3. Use C13's resonance and sector analysis for the microscopic model,
+   with calibrated estimators or a complete reduction to stated IR
+   inputs. Do not duplicate its projected-fluid work.
+4. Only then consider a universal quantum work program for route A.
+   The clock does not supply the required excited-state spectral weights
+   and does not prove unbounded c at fixed d.
 
-Do not repeat the joint dilation, second-order synthesis, exact-code
-no-go, frozen-ring no-go, graded-swap core, K_FF(2)=4, boundary-Schmidt
-rank theorem, classical readout code, or complete finite-cell wrapper.
-The old selector-reset and first-order port-equalization gaps are now
-resolved by this run. The high-channel core and finite-coupling IR
-are NOT resolved.
+Do not redo the nine-letter counter, full-sweep clock, defect conservation,
+initialization-gap proof, bare-clock selector, or packet parity toy. Do
+not redo the earlier joint dilation, spectral synthesis, exact-code
+no-go, frozen-ring no-go, graded-swap core, FF witness, boundary-rank
+bound, classical readout code, or mobile-cell interface.
 
-Next action: a concrete constant-alphabet initialized controller or a
-fully stated applicable local-simulation theorem with BOTH physical
-endpoint observables and quantitative positive-code errors preserved.
+Next action: a concrete finite reversible clean-readout program and its
+collision table, not another clock or an unspecified universality claim.
 
-The remainder is the chronological record. Its initial task list has been superseded by the ranking above.
+The remainder is the chronological record. Its initial task list has
+been superseded by the ranking above.
+
 
 
 Read the project memory and the requested README, REPORT, C7, unbounded-c draft, C6 and tools index. No existing C8 progress file was present. All writes stay in this folder, as requested; the project STATE.md is read-only for this run.
@@ -621,3 +645,68 @@ of illegal components with cycles, all separated by conserved penalties.
 Next: give the mechanical reversible-machine-to-sweep reduction, then
 try to complete the actual initialized readout program. Avoid treating
 an unspecified universal machine as the missing explicit construction.
+
+Substantive step 34 completed, mechanical work interface and readout audit.
+
+`sweeping_clock.md` gives a canonical graded permutation completion for
+an injective local collision table. Transport lanes plus onsite
+collisions implement a specified reversible packet/tape machine on the
+full work space. The clock does not require every work-machine orbit to
+be valid: input pins select the complete history kernel. Later diagonal
+verification checks for a classical permutation program retain the
+explicit path-pin gap bound, even at input-dependent checking times.
+
+`sweep_machine_checks.py` builds a literal 18-state work machine and
+checks every initialized input through five sites. A left endpoint
+observable compresses to alpha times total logical parity. Its
+accumulator-X compression is exactly zero, because the original logical
+bits remain in the tape. This confirms the clean-readout requirement;
+it is not a high-channel code or a new general boundary-complexity result.
+
+`readout_machine_contract.md` isolates the still missing program. It
+states a sufficient finite collision-table contract, proves the ensuing
+complete high-channel core conditionally, and gives the dimension count
+q_core=K(q+1), d=96K(q+1)+48. K is NOT supplied, and the resource inequality
+is NOT a counterexample. A generic reversible simulator retaining copies
+of the exposed bit is insufficient. The active flag must follow complete
+cleanup, and the schedule must give input-independent readout counts at
+partial sweep times as well as full updates.
+
+Substantive step 35 completed, full periodic selector check.
+
+`clock_ring_checks.py` exhausts the entire ten-letter ring Hilbert space
+at L=3,4,5, dimensions 1000,10000,100000. Selected cells have interiors
+2,3,4 and ground multiplicities 3,4,5. Energies agree with the analytic
+formula within 3e-16; all illegal components obey the proved bound.
+Some illegal components are longer than the legal clock path, but their
+conserved defects exclude them. This is a frozen selector, not a CFT.
+
+Latest C13 PROGRESS was read after its final update. It reports a
+conditional positive Gaussian-phase analysis, an all-integer fixed-vacuum
+qualification, and finite-size generic numerics that remain too small
+for accurate central charges. No part of that analysis was duplicated
+or promoted to a complete microscopic theorem here.
+
+Next: audit and integrate the results into RESULT Sections 36-39. The
+actual clean-readout collision table remains unfinished. The next run
+should start there, not reconstruct the now explicit clock.
+
+
+Seventh-run final audit completed.
+
+RESULT Sections 36-39 and the top of this file now hold the complete
+handoff. The source audit checked the clock boundary seed, all legality
+constraints, positive core terms, both convexity calculations, ring
+fragment bounds, local update order, and the clean-readout condition.
+Four new scripts passed and compiled. No additional machine compiler or
+microscopic conformal result was claimed. The result is nonconclusive
+under the user's stated definition, with the remaining step localized
+in the finite readout program. Only this folder was modified.
+
+
+Handoff persistence note. A concurrent repository update temporarily
+restored older tracked versions of RESULT and PROGRESS during final
+integration, then restored the new versions. The final seventh-run
+contents are also saved as RUN7_RESULT.md and RUN7_PROGRESS.md. These
+snapshots preserve the handoff if another synchronization touches the
+shared tracked files. No external repository files were changed here.

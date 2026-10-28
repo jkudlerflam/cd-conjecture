@@ -141,3 +141,37 @@ if __name__ == '__main__':
                 print('  T2 bilinears:')
                 for mm, cf in quad:
                     print('    ', mm, np.round(cf, 6))
+
+
+# ----------------------------------------------------------------------------- all-order two-cell (CORE)
+def core_bond(c, lam, so=None):
+    """All-order nearest-neighbour logical bond from exact diagonalization of two cells:
+    with Psi the lowest N^2 two-cell eigenstates and A = (G x G)^dag Psi, the canonical
+    (des Cloizeaux) effective Hamiltonian H2 = (A A^dag)^{-1/2} A E A^dag (A A^dag)^{-1/2};
+    h_bond = H2 - 2 e_c.  Agrees with lam T1 + lam^2 T2 + O(lam^3).  Also returns the gap from
+    the N^2-dim manifold to the next two-cell level and the smallest singular value of A."""
+    so = so or second_order(c)
+    N = c['N']
+    G = C.cell_spectrum_and_alpha(c)['G']
+    H = sp.csr_matrix(C.bigsite_H(c))
+    D = H.shape[0]
+    FL, FR = C.bigsite_ports(c)
+    I = sp.identity(D, format='csr')
+    Ht = sp.kron(H, I) + sp.kron(I, H) + lam * sum(sp.kron(sp.csr_matrix(fr), sp.csr_matrix(fl)) for fr, fl in zip(FR, FL))
+    k = N * N
+    if D * D <= 3000:
+        E, Psi = linalg.eigh(Ht.toarray())
+        gap = E[k] - E[k - 1]
+        E, Psi = E[:k], Psi[:, :k]
+    else:
+        E, Psi = eigsh(Ht.tocsc(), k=k + 4, which='SA', tol=1e-12)
+        o = np.argsort(E); E, Psi = E[o], Psi[:, o]
+        gap = E[k] - E[k - 1]
+        E, Psi = E[:k], Psi[:, :k]
+    GG = np.kron(G, G)
+    A = GG.conj().T @ Psi
+    w, U = linalg.eigh(A @ A.conj().T)
+    Sm = U @ np.diag(w ** -0.5) @ U.conj().T
+    H2 = Sm @ A @ np.diag(E) @ A.conj().T @ Sm
+    return (H2 + H2.conj().T) / 2 - 2 * so['ec'] * np.eye(k), float(gap), float(np.sqrt(w.min()))
+
