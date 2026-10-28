@@ -249,3 +249,90 @@ The upper bound uses the harmonic mean of eigenvalues. No floating-point eigenva
 Charged + and - propagators are identical here. These formulas follow by listing the four matching one-conversion source pairs for T and pairing creation and annihilation processes for mu. They are implemented in fast_loop.py and agree with the independently enumerated source blocks.
 
 [Open] Positivity is an open condition, so a sufficiently small loop preserves the crossings. It does not follow that every difference of distinct pair sums of Fermi points becomes nonzero. To prove this for all n, one must exclude an identically vanishing resonance function of the loop parameters and bound the smallest nonzero mismatch. Neither (4), Gram positivity, nor nonzero individual center shifts proves that assertion. Numerical results and the precisely retained limitations are in RESULT.md.
+
+## 9. A finite-loop, finite-g certificate at n=23
+
+[Proved, computer-assisted] The center obstruction in Section 8 is removed at n=23 without enlarging the alphabet. Use
+
+    n=23, D_x=D_M=1000, Delta=4-2 cos(pi/25),
+    t=t_x=t_switch=1, delta=0,
+    phi_x,0=pi/46, phi_x,+ = phi_x,- = 0,
+    phi_port=pi/2,
+    phi_d,0=pi, phi_d,+ = phi_d,- = pi/2.
+
+Let d_0=1, d_1=1004, d_(j+1)=1004 d_j-d_(j-1), and beta=1/d_24. Set
+
+    t_d = beta 2^(-136),
+    g_+=g_-=2^(-365),
+    E_unit = 2 alpha^4 beta^2 g^2,
+    epsilon = E_unit 2^(-214).                                    (18)
+
+The physical common field is lambda^2 epsilon. Energies and velocities quoted for the second-order logical Hamiltonian acquire a factor lambda^2. The certificate is independent of that common positive factor.
+
+After removing the express phases, all three species now have the same scalar path-plus-loop matrix. The loop entry from the far stub to M is -i t_d. The three source phases are still -iP, i, -i. Thus (17) reduces to
+
+    T/g^2 = -4 alpha^4 Re(U^dagger R V),
+    mu/g^2 = -4i alpha^4 Im(U^dagger R U + V^dagger R V),            (19)
+
+at leading conversion order, with one common complex two-carrier inverse R. This uses a phase choice within the existing weak-link terms, not an extra local state or a new interaction range.
+
+### Entry enclosures
+
+[Proved] full_loop_integer.py evaluates (19) by fixed-point integer arithmetic at 512 bits. Normalize source vectors by beta, as in Section 7. The complex Jacobi contraction in the infinity norm is at most
+
+    rho <= 1/2 + t_d/4.
+
+Each real and imaginary component is rounded by integer division. There are two divisions per step, one for the rational loop coefficient and one for the positive diagonal. The complex rounding error per step is less than 2/S, where S=2^512. The accumulated error is less than 5/S. With N=bit_length(d_24)+512+20 steps, the tail is less than 1/S. The restricted-source error contributes less than another 2/S in the next inverse. The code uses the conservative common bound 10/S for both source and resolved restricted vectors. The assertion d_24 2^136>100N controls the small change from the tree contraction ratio.
+
+If x,y denote scaled complex approximations with componentwise errors at most 10/S, then the real or imaginary part of their product has error at most
+
+    [10(|x_R|+|x_I|+|y_R|+|y_I|)+100]/S^2.
+
+Here the x and y on the right are integer numerators. Summing this bound encloses every entry of T and mu. Antisymmetrizing the onsite numerator preserves the exact particle-hole identity and averages its two valid enclosures. The resulting rational matrices and entry radii are saved in full_loop_n23.npz. No finite-loop Taylor truncation is made.
+
+### Exact conditioning of the narrow channels
+
+[Proved] Direct floating-point diagonalization is inadequate at these scales. Fraction-free symmetric elimination of the integer tree Gram enclosure gives an integer matrix R_0 with
+
+    R_0 N R_0^T = diag(d_i),       d_i>0.
+
+The identity is checked in integer arithmetic. Choose b_i=floor(log2(d_i)/2) and define
+
+    W_0 = 2^256 diag(2^(-b_i)) R_0.
+
+Its transformed tree metric is diagonal with entries in [1,4). All congruences of the full-loop matrices are performed on integer numerators before any conversion to floating point. Their exact entry-error row bound in this metric is less than 1.697e-50. A rational Gershgorin test proves a positive Hermitian hopping margin greater than 0.5028 in this metric.
+
+### Root existence, simplicity and pair-sum margins
+
+[Proved, computer-assisted] Floating-point generalized eigenvalues only propose 46 disjoint brackets. Each endpoint is then replaced by a dyadic rational t=tan(k/2). At such a point,
+
+    cos(k)=(1-t^2)/(1+t^2),       sin(k)=2t/(1+t^2),
+
+so the Bloch matrix and its propagated entry enclosure are rational. Its real and imaginary parts are enclosed by fixed-point matrices at 80 bits. Numerical eigenvectors propose a further 46-bit dyadic complex congruence. Integer diagonal-dominance checks prove that this congruence is invertible and prove the inertia of the enclosed exact Bloch matrix. Numerical eigenvalue signs are never used for acceptance.
+
+For each of the 46 brackets the endpoint inertias differ by one. The counts run from 0 to 23 along the negative-momentum roots and back to 0 along the positive-momentum roots. The smallest remaining endpoint congruence margin is greater than 1.9305e-8. The determinant of an n by n nearest-neighbor Bloch symbol, multiplied by z^n, is a polynomial in z=exp(ik) of degree at most 2n. Thus 46 distinct bracketed roots exhaust the degree bound. Each root is simple, and there are no additional roots.
+
+The quartic test includes all unordered pairs with replacement, 1081 pairs at n=23. At a rational bracket midpoint, exp(ik) is a rational point on the unit circle. Form every pair product, sort their phases by exact rational orientation tests, and test every neighboring pair on the circle. The coordinate difference gives a rational lower bound on chord distance. The root uncertainty is subtracted using
+
+    |2 atan(t)-2 atan(t_mid)| <= 2|t-t_mid|.
+
+All remaining bounds are strictly positive. Since angular distance is at least chord distance, the exact rational tests prove
+
+    delta_2 > 0.0140193,
+    delta_4 > 3.1558e-7.                                          (20)
+
+The decimal inequalities are rounded outward from saved rational lower bounds. Pair transfer between two bands is among these tests. Their sea centers are therefore distinct modulo pi. The exact brackets and rational lower bounds are in root_certificate_exact_n23.json.
+
+### Extension from g^2 to the exact finite-g quadratic projection
+
+[Proved] On the looped graph, the free two-carrier inverse has A>=3I. For g<=1/2, the same even-conversion expansion used in (12) gives
+
+    ||remainder|| <= alpha^4 g^4/4.
+
+The quadratic Bloch error is at most 4n alpha^4 g^4. In E_unit units, after congruence by W_0, this is at most
+
+    2n g^2 beta^(-2) tr(W_0 W_0^dagger).                            (21)
+
+The trace is computed rationally. The code verifies, with integers, that g=2^(-365) makes (21) at most 2^(-33). Every root-endpoint inertia certificate remains strict under this additional error, and the positive Hermitian hopping certificate remains strict as well. The degree argument still applies to the exact quadratic projection at finite g. Therefore (20), all 46 simple crossings, and distinct band centers hold for that finite-g matrix, not just for its leading coefficient. The one-particle hopping is also positive because its remainder bound is smaller.
+
+[Proved limitation] The nonquadratic part of H_2 is not discarded by this statement. Its norm is controlled by the same conversion expansion, but an interacting lattice-to-CFT conclusion also requires the infrared and length-sector arguments. This run proves the finite band conditions at n=23 and all-n tree positivity. It does not prove distinct centers for every n.

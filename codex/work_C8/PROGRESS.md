@@ -1,3 +1,23 @@
+# Eleventh run in progress
+
+2026-10-28. Resumed from the completed tenth run. The initialized core,
+collision table and periodic bond are complete and are not being rebuilt.
+Read the saved handoff, current background/status and C21-C23 progress.
+The first active continuation is a canonical energy comparison using
+local maps between the equal-payload b and b+1 code spaces. This targets
+the physical fixed-length tail gap in RESULT Sections 50 and 53.
+
+Working claim, under audit: local charge-raising trial states bound the
+canonical ground-energy increment by O(v) at densities bounded away
+from zero and one. A comparison through this density interval, joined
+to the elementary extensive energy bound outside it, may prove a
+factorial length tail in fixed-L sectors without any gap in the
+retained chain. The physical reference-marker quotient must be handled
+explicitly. No conformal conclusion is claimed.
+
+Only this folder is being modified. The task prohibits editing the
+project STATE.md, so this file carries the resumable memory.
+
 # C8 progress
 
 2026-10-28. Tenth run completed. Nonconclusive for the original c-d

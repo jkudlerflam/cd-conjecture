@@ -1051,6 +1051,20 @@
   "gcd": [
     1
   ],
+  "extra_determinant_checks": [
+    [
+      45,
+      29396
+    ],
+    [
+      47,
+      46090
+    ],
+    [
+      51,
+      21357
+    ]
+  ],
   "status": "proved_no_pair_product_collision",
-  "seconds": 10.246069499989972
+  "seconds": 24.579392709070817
 }

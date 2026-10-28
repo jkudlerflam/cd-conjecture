@@ -9,7 +9,7 @@ import scipy.sparse as sp
 from scipy.sparse.linalg import splu
 from scipy.linalg import eigvalsh
 
-def carrier(n,D=10.,a=4.,td=0.,flux=None,loopflux=.9):
+def carrier(n,D=10.,a=4.,td=0.,flux=None,loopflux=.9,chargedloopflux=0.):
     if flux is None: flux=np.pi/(2*n)
     S=2*n+1
     H=[]
@@ -18,7 +18,7 @@ def carrier(n,D=10.,a=4.,td=0.,flux=None,loopflux=.9):
         edges=[(j,j+1,-1.) for j in range(n-1)]
         edges += [(n+j,n+j+1,-np.exp(1j*(flux if typ==0 else 0.))) for j in range(n)]
         edges += [(0,n,-1.)]
-        if td:edges += [(n-1,2*n,-td*np.exp(1j*(loopflux if typ==0 else 0.)))]
+        if td:edges += [(n-1,2*n,-td*np.exp(1j*(loopflux if typ==0 else chargedloopflux)))]
         for i,j,v in edges:A[j,i]+=v;A[i,j]+=np.conj(v)
         H.append(sp.csc_matrix(A))
     return H
@@ -49,12 +49,12 @@ class Leading:
     """Two-carrier resolvent and one conversion on each source vector.
     No logical Fock-space matrix is built. State keys only store reached bits.
     """
-    def __init__(self,n,D=10.,a=4.,td=0.,flux=None,loopflux=.9,bphi=np.pi/2):
+    def __init__(self,n,D=10.,a=4.,td=0.,flux=None,loopflux=.9,bphi=np.pi/2,chargedloopflux=0.):
         self.n=n;self.S=2*n+1;self.bphi=bphi
         if flux is None:flux=np.pi/(2*n)
         self.source_phase=np.exp(-1j*n*flux)
         if abs(self.source_phase.real)<1e-15:self.source_phase=1j*self.source_phase.imag
-        self.H=carrier(n,D,a,td,0.,loopflux-n*flux)
+        self.H=carrier(n,D,a,td,0.,loopflux-n*flux,chargedloopflux)
         self.lu={}
         for x in range(3):
             for y in range(3):

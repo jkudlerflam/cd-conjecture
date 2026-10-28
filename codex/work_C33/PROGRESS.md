@@ -33,3 +33,13 @@
 [Numerical, n=23, linear loop response only] Integer source arithmetic and fraction-free whitening give 46 unit-circle roots with delta2 about 0.0142 and delta4 about 2.0e-7 for a loop response of metric norm 8.5e-4. This is not yet a finite-loop result.
 
 [Rejected numerical calculation] A full finite-loop solve at 256 fixed-point bits had an error enclosure much larger than the narrow bands. The output full_loop_256bit_rejected.json is preserved as a failed diagnostic. The cause is multiplication of tiny imaginary errors by express-sector source amplitudes proportional to beta^(-1), followed by whitening. The finite-loop solve is being repeated at 512 bits. No physical inference is drawn from the rejected roots.
+
+## Finite n=23 band conditions certified
+
+[Proved, computer-assisted] The 512-bit finite-loop calculation passes. A phase choice within the original 23 letters makes the scalar loop common to all three species after gauging: physical loop phases (pi,pi/2,pi/2), neutral express phase pi/(2n), port phase pi/2. At n=23 use a=4, D=1000, beta=1/det C, t_d=beta*2^(-136). Exact entry enclosures, fraction-free conditioning, rational endpoint inertia and rational pair-phase chord tests prove 46 simple roots, delta2>0.0140193, and delta4>3.1558e-7. The pair enumeration includes repeated Fermi points.
+
+[Proved, finite conversion] A rational perturbation budget extends this certificate to the exact quadratic projection of H_2 at g=2^(-365), with common field epsilon=(2 alpha^4 beta^2 g^2)*2^(-214). The Hermitian hopping remains positive. This is not merely a g^2 asymptotic statement. T_1 and T_q are still distinguished; the full inverse was not explicitly evaluated at n=23.
+
+[Numerical validation, n=2,3] Independent source-block enumeration agrees with the integer finite-loop g^2 matrices to relative errors below 1.1e-15. The full finite-g tree inverse at n=8, D=1000, g=.05 has positive numerical Hermitian margin. A simultaneous n=12,D=1000 run hit its 160-second cap; it is not claimed. Exact full-in-g inverses reached n=12 at D=10, and n=8 at D=1000. Leading scalar matrices were evaluated numerically through n=64, and tree positivity was certified through n=32.
+
+[Open] The all-n distinct-center and Sidon-margin theorem is not established. No n-dependent failure of the adjustable-parameter 23-letter family was found. No alphabet enlargement was needed for the certified n=23 target. The interacting infrared conclusion and global/mobile length-sector questions remain outside this finite-band result. PROOF.md contains the derivations and certificate explanation; RESULT.md and the local STATE handoff are being finalized.

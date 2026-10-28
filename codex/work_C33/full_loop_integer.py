@@ -80,7 +80,7 @@ def analyze(n=23):
     # Rigorous row bounds in the dyadically scaled congruence. Its diagonal
     # tree metric lies in [1,4], so they also bound the whitened matrix norm.
     powers=[(int(d).bit_length()-1)//2 for d in ds]
-    E=abs(R)@(2*EF+EM)@abs(R).T
+    E=abs(R)@(EF+EF.T+EM)@abs(R).T
     rowbounds=[sum((Fraction(int(E[i,j]),extra*(1<<(powers[i]+powers[j]+1))) for j in range(n)),Fraction(0)) for i in range(n)]
     rad=max(rowbounds)
     W=congruence(np.eye(n,dtype=object)*(scale*scale),R,ds)

@@ -19,7 +19,6 @@ def fast(n,D=100.,a=2.2,td=0.,loopflux=np.pi):
         return U,V
     U,V=restrict(x);W,Z=restrict(y)
     RU=luc0.solve(U);RV=lu0c.solve(V);RW=lu0c.solve(W);RZ=luc0.solve(Z)
-    T=-2*visibility(n)*np.real(Z.conj().T@RU+(W.conj().T@RV).T).T
     # First cross matrix above has (j,i), second has (i,j).
     T=-2*visibility(n)*np.real((Z.conj().T@RU).T+W.conj().T@RV)
     M=-2j*visibility(n)*np.imag(U.conj().T@RU+W.conj().T@RW+V.conj().T@RV+Z.conj().T@RZ)
@@ -28,4 +27,4 @@ if __name__=='__main__':
  for n in [2,3,4]:
     P=dict(n=n,D=10.,a=3.,td=1e-5)
     T,M=fast(**P);R,N,_=Leading(**P,loopflux=np.pi).calculate()
-    print(n,'T relative',np.max(abs(T-R))/np.max(abs(T)),'M imaginary relative',np.max(abs(M-N*1j/1j*0-1j*N.imag))/np.max(abs(M)),flush=True)
+    print(n,'T relative',np.max(abs(T-R))/np.max(abs(T)),'M imaginary relative',np.max(abs(M-1j*N.imag))/np.max(abs(M)),flush=True)
