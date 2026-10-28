@@ -1,0 +1,8 @@
+effective --q 3 --qp 1 --n 2 --g 0.5 --lam 0.1 --kappa 1 --ncells 2 --chis 16 24 32 48 64 96 128 192 256 --out data/eff_q3_g0.5_l0.1_k1.json
+effective --q 3 --qp 1 --n 2 --g 0.5 --lam 0.2 --kappa 1 --ncells 2 --chis 16 24 32 48 64 96 128 192 256 --out data/eff_q3_g0.5_l0.2_k1.json
+effective --q 3 --qp 1 --n 2 --g 0.5 --lam 0.4 --kappa 1 --ncells 2 --chis 16 24 32 48 64 96 128 192 256 --out data/eff_q3_g0.5_l0.4_k1.json
+effective --q 3 --qp 1 --n 2 --g 0.5 --lam 0.8 --kappa 1 --ncells 2 --chis 16 24 32 48 64 96 128 192 256 --out data/eff_q3_g0.5_l0.8_k1.json
+effective --q 3 --qp 1 --n 2 --g 0.5 --lam 0.4 --kappa 4 --ncells 2 --chis 16 24 32 48 64 96 128 192 256 --out data/eff_q3_g0.5_l0.4_k4.json
+effective --q 3 --qp 1 --n 2 --g 0.5 --lam 0.4 --kappa -4 --ncells 2 --chis 16 24 32 48 64 96 128 192 256 --out data/eff_q3_g0.5_l0.4_k-4.json
+effective --q 3 --qp 1 --n 2 --g 0.2 --lam 0.4 --kappa 1 --ncells 2 --chis 16 24 32 48 64 96 128 192 256 --out data/eff_q3_g0.2_l0.4_k1.json
+effective --q 2 --qp 1 --n 1 --g 0.5 --lam 0.8 --kappa 1 --ncells 4 --chis 16 24 32 48 64 96 128 192 256 --out data/eff_q2_g0.5_l0.8_k1.json

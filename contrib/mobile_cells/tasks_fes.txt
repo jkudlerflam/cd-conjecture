@@ -1,0 +1,7 @@
+A_u1 --model cells --u 1 --mu -1 --J 0.5 --chis 16 24 32 48 64 96 128 160
+B_u03 --model cells --u 0.3 --mu -0.4 --J 0.5 --chis 16 24 32 48 64 96 128 160
+C_u01 --model cells --u 0.1 --mu 0.0 --J 0.5 --chis 16 24 32 48 64 96 128 160
+S_u0 --model cells --u 0 --mu -1 --J 0.5 --n 3 --chis 16 24 32 48 64 96 128
+cal_txx --model txx --t 1 --J 1 --mu 0 --chis 16 24 32 48 64 96 128 160
+A_u1_heis --model cells --u 1 --mu -1 --J 0.5 --Jz 0.5 --chis 16 24 32 48 64 96 128 160
+D_u03_dJ05 --model cells --u 0.3 --mu -0.4 --J 0.5 --dJ 0.5 --chis 16 24 32 48 64 96 128 160

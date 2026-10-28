@@ -1,0 +1,10 @@
+run_modes.py A_u1_L16 --u 1 --mu -1 --J 0.5 --LW 16:10
+run_modes.py B_u03_L16 --u 0.3 --mu -0.4 --J 0.5 --LW 16:10
+run_modes.py A_u1_L17W10 --u 1 --mu -1 --J 0.5 --LW 17:10
+run_modes.py A_u1_L17W12 --u 1 --mu -1 --J 0.5 --LW 17:12
+run_modes.py B_u03_L17W10 --u 0.3 --mu -0.4 --J 0.5 --LW 17:10
+run_modes.py B_u03_L17W12 --u 0.3 --mu -0.4 --J 0.5 --LW 17:12
+run_modes.py A_u1_L18 --u 1 --mu -1 --J 0.5 --LW 18:12
+run_modes.py B_u03_L18 --u 0.3 --mu -0.4 --J 0.5 --LW 18:12
+ed_one.py data/ed/L17_A_W10_Sz1.json 17 10 6 1 1 -1 0.5 2
+ed_one.py data/ed/L17_B_W10_Sz1.json 17 10 6 1 0.3 -0.4 0.5 2

@@ -1,0 +1,48 @@
+{
+  "all_sectors": [
+    {
+      "n": 1,
+      "full_words": 15,
+      "legal_vertices": 9,
+      "components": 7,
+      "largest_component": 9,
+      "components_with_cycles": 0
+    },
+    {
+      "n": 2,
+      "full_words": 225,
+      "legal_vertices": 30,
+      "components": 97,
+      "largest_component": 30,
+      "components_with_cycles": 12
+    },
+    {
+      "n": 3,
+      "full_words": 3375,
+      "legal_vertices": 79,
+      "components": 1267,
+      "largest_component": 79,
+      "components_with_cycles": 216
+    },
+    {
+      "n": 4,
+      "full_words": 50625,
+      "legal_vertices": 192,
+      "components": 16477,
+      "largest_component": 192,
+      "components_with_cycles": 3855
+    }
+  ],
+  "qca": {
+    "n": 3,
+    "work_dimension": 64,
+    "sweeps": 8,
+    "qca_cycle_error": 7.801507675034302e-15
+  },
+  "spectra": {
+    "max_spectral_n": 6,
+    "max_vertices": 1026,
+    "spectrum_error": 5.218048215738236e-15,
+    "selected_n_max": 34
+  }
+}

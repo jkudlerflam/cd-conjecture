@@ -1,0 +1,31 @@
+encoded --q 2 --qp 1 --n 1 --g 0.5 --lam 0.05 --L 16 --chis 32 64 128 --nstates 2 --out data/obc_q2_g0.5_l0.05_L16.json
+encoded --q 2 --qp 1 --n 1 --g 0.5 --lam 0.05 --L 32 --chis 32 64 128 --nstates 2 --out data/obc_q2_g0.5_l0.05_L32.json
+encoded --q 2 --qp 1 --n 1 --g 0.5 --lam 0.05 --L 64 --chis 32 64 128 192 --nstates 1 --out data/obc_q2_g0.5_l0.05_L64.json
+encoded --q 2 --qp 1 --n 1 --g 0.5 --lam 0.1 --L 16 --chis 32 64 128 --nstates 2 --out data/obc_q2_g0.5_l0.1_L16.json
+encoded --q 2 --qp 1 --n 1 --g 0.5 --lam 0.1 --L 32 --chis 32 64 128 --nstates 2 --out data/obc_q2_g0.5_l0.1_L32.json
+encoded --q 2 --qp 1 --n 1 --g 0.5 --lam 0.1 --L 64 --chis 32 64 128 192 --nstates 1 --out data/obc_q2_g0.5_l0.1_L64.json
+encoded --q 2 --qp 1 --n 1 --g 0.5 --lam 0.2 --L 16 --chis 32 64 128 --nstates 2 --out data/obc_q2_g0.5_l0.2_L16.json
+encoded --q 2 --qp 1 --n 1 --g 0.5 --lam 0.2 --L 32 --chis 32 64 128 --nstates 2 --out data/obc_q2_g0.5_l0.2_L32.json
+encoded --q 2 --qp 1 --n 1 --g 0.5 --lam 0.2 --L 64 --chis 32 64 128 192 --nstates 1 --out data/obc_q2_g0.5_l0.2_L64.json
+encoded --q 2 --qp 1 --n 1 --g 0.5 --lam 0.4 --L 16 --chis 32 64 128 --nstates 2 --out data/obc_q2_g0.5_l0.4_L16.json
+encoded --q 2 --qp 1 --n 1 --g 0.5 --lam 0.4 --L 32 --chis 32 64 128 --nstates 2 --out data/obc_q2_g0.5_l0.4_L32.json
+encoded --q 2 --qp 1 --n 1 --g 0.5 --lam 0.4 --L 64 --chis 32 64 128 192 --nstates 1 --out data/obc_q2_g0.5_l0.4_L64.json
+encoded --q 2 --qp 1 --n 1 --g 0.5 --lam 0.8 --L 16 --chis 32 64 128 --nstates 2 --out data/obc_q2_g0.5_l0.8_L16.json
+encoded --q 2 --qp 1 --n 1 --g 0.5 --lam 0.8 --L 32 --chis 32 64 128 --nstates 2 --out data/obc_q2_g0.5_l0.8_L32.json
+encoded --q 2 --qp 1 --n 1 --g 0.5 --lam 0.8 --L 64 --chis 32 64 128 192 --nstates 1 --out data/obc_q2_g0.5_l0.8_L64.json
+encoded --q 2 --qp 1 --n 1 --g 0.2 --lam 0.1 --L 16 --chis 32 64 128 --nstates 2 --out data/obc_q2_g0.2_l0.1_L16.json
+encoded --q 2 --qp 1 --n 1 --g 0.2 --lam 0.1 --L 32 --chis 32 64 128 --nstates 2 --out data/obc_q2_g0.2_l0.1_L32.json
+encoded --q 2 --qp 1 --n 1 --g 0.2 --lam 0.1 --L 64 --chis 32 64 128 192 --nstates 1 --out data/obc_q2_g0.2_l0.1_L64.json
+encoded --q 2 --qp 1 --n 1 --g 0.2 --lam 0.4 --L 16 --chis 32 64 128 --nstates 2 --out data/obc_q2_g0.2_l0.4_L16.json
+encoded --q 2 --qp 1 --n 1 --g 0.2 --lam 0.4 --L 32 --chis 32 64 128 --nstates 2 --out data/obc_q2_g0.2_l0.4_L32.json
+encoded --q 2 --qp 1 --n 1 --g 0.2 --lam 0.4 --L 64 --chis 32 64 128 192 --nstates 1 --out data/obc_q2_g0.2_l0.4_L64.json
+encoded --q 3 --qp 1 --n 2 --g 0.5 --lam 0.1 --L 12 --chis 24 48 64 --nstates 1 --sparse --out data/obc_q3_g0.5_l0.1_L12.json
+encoded --q 3 --qp 1 --n 2 --g 0.5 --lam 0.1 --L 24 --chis 24 48 64 --nstates 1 --sparse --out data/obc_q3_g0.5_l0.1_L24.json
+encoded --q 3 --qp 1 --n 2 --g 0.5 --lam 0.4 --L 12 --chis 24 48 64 --nstates 1 --sparse --out data/obc_q3_g0.5_l0.4_L12.json
+encoded --q 3 --qp 1 --n 2 --g 0.5 --lam 0.4 --L 24 --chis 24 48 64 --nstates 1 --sparse --out data/obc_q3_g0.5_l0.4_L24.json
+encoded --q 3 --qp 1 --n 2 --g 0.5 --lam 0.8 --L 12 --chis 24 48 64 --nstates 1 --sparse --out data/obc_q3_g0.5_l0.8_L12.json
+encoded --q 3 --qp 1 --n 2 --g 0.5 --lam 0.8 --L 24 --chis 24 48 64 --nstates 1 --sparse --out data/obc_q3_g0.5_l0.8_L24.json
+logical --q 2 --qp 1 --n 1 --L 32 --chis 32 64 128 --nstates 2 --out data/obc_logical_r2_L32.json
+logical --q 3 --qp 1 --n 2 --L 32 --chis 32 64 128 --nstates 2 --out data/obc_logical_r4_L32.json
+logical --q 2 --qp 1 --n 1 --L 64 --chis 32 64 128 --nstates 2 --out data/obc_logical_r2_L64.json
+logical --q 3 --qp 1 --n 2 --L 64 --chis 32 64 128 --nstates 2 --out data/obc_logical_r4_L64.json

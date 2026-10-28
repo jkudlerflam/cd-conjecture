@@ -1,0 +1,46 @@
+{
+  "collision_partial_states": 8,
+  "collision_total_states": 18,
+  "checks": [
+    {
+      "n": 2,
+      "clock_vertices": 30,
+      "logical_dimension": 4,
+      "work_site_dimension": 18,
+      "active_vertices": 8,
+      "parity_scale": 0.26666666666666666,
+      "parity_residual": 0.0,
+      "offdiagonal_readout_norm": 0.0
+    },
+    {
+      "n": 3,
+      "clock_vertices": 79,
+      "logical_dimension": 8,
+      "work_site_dimension": 18,
+      "active_vertices": 8,
+      "parity_scale": 0.10126582278481013,
+      "parity_residual": 0.0,
+      "offdiagonal_readout_norm": 0.0
+    },
+    {
+      "n": 4,
+      "clock_vertices": 192,
+      "logical_dimension": 16,
+      "work_site_dimension": 18,
+      "active_vertices": 28,
+      "parity_scale": 0.14583333333333334,
+      "parity_residual": 0.0,
+      "offdiagonal_readout_norm": 0.0
+    },
+    {
+      "n": 5,
+      "clock_vertices": 449,
+      "logical_dimension": 32,
+      "work_site_dimension": 18,
+      "active_vertices": 36,
+      "parity_scale": 0.0801781737193764,
+      "parity_residual": 0.0,
+      "offdiagonal_readout_norm": 0.0
+    }
+  ]
+}

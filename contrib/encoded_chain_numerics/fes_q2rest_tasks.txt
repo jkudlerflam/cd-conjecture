@@ -1,0 +1,2 @@
+sparse --q 2 --qp 1 --n 1 --g 0.2 --lam 0.1 --ncells 4 --chis 8 12 16 24 32 48 64 96 128 192 --out data/fes_q2_g0.2_l0.1.json
+sparse --q 2 --qp 1 --n 1 --g 0.2 --lam 0.2 --ncells 4 --chis 8 12 16 24 32 48 64 96 128 192 --out data/fes_q2_g0.2_l0.2.json

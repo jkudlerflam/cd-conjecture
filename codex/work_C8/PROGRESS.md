@@ -556,3 +556,68 @@ All five new numerical scripts and compilation passed. A final read of
 the live ir_control report found new toy numerics but no theorem closing
 the general-cell leakage or spectral step. The whole-class verdict is
 still nonconclusive. Only this folder was modified.
+
+## Seventh run, in progress
+
+Read the saved state, STATUS, requested context, minimal_d0 and C13's
+live progress. C13 is treating finite-coupling length/payload resonances;
+this run will not duplicate it. No external source or network used.
+
+Substantive step 32, explicit clock construction derived, checks running.
+
+A nine-letter repeated NN clock now has exactly ONE legal path at every
+open length n. Its C_n=n+4(2^n-1) vertices include a dedicated n-step
+initialization sweep, then a reversible binary carry/return counter.
+All locally legal configurations lie on that path. The local rules
+preserve EACH legality-defect projector, including boundary defects.
+There is no uninitialized clock cycle or independent internal tape length.
+The first implementation is `binary_clock_checks.py`.
+
+Unitary decorations of its transitions can act on a fixed work register.
+Pins during the idle initialization sweep give an exact positive core
+with the complete initialized history code and an explicit finite-length
+gap. This initializes a product workspace; it does NOT yet implement
+or validate the high-channel readout program. A counter is not a compiler.
+
+The hopping version has energy -2J cos(pi/(C_n+1)). Its shifted energy
+appears strictly convex in n, so it can select cell lengths without a
+separate walker. The proof, illegal-sector comparison, and full checks
+are being completed before recording that as established.
+
+Substantive step 32 completed.
+
+`initialized_binary_clock.md` proves the complete nine-letter graph,
+positive initialized core, gap bound, and an optional merged frozen
+selector. The shifted hopping energy is strictly convex, so every
+interior length n>=2 is selectable with one chemical potential. The
+full ring illegal-sector comparison is included. This does not repair
+frozen-ring conformality and is not used as such.
+
+`binary_clock_checks.py` passed. Exhaustive clock graphs at n=1,...,5
+cover up to 59049 words and all their components. Every local legality
+projector is conserved. Complete illegal spectra through n=4 obey the
+bounds; both legal spectra through n=8 (1028 vertices) agree below
+4e-15. A 224-dimensional entangling-work example has exactly four
+initialized zero states and gap .0062877901, above .0012755102.
+
+Substantive step 33 completed, full-sweep extension.
+
+The sparse counter visits the far end too few times for a straightforward
+interpreter. A 15-letter extension inserts an outward and return sweep
+before EVERY increment. Its complete legal graph is again one path,
+now C_n=(2n+4)2^n+n-4 vertices, with exactly 2^n full sweeps. The
+initialization and illegal-sector proofs transfer. Each sweep executes
+one partitioned local update U=(tensor F_j) product G_(j,j+1) when G
+acts on disjoint subregisters. Arbitrary boundary F_j are available
+through boundary rules. This is an exact gate interface, not yet the
+readout program.
+
+`sweeping_clock_checks.py` passed complete graphs through n=4 (50625
+words), full legal hopping spectra through 1026 vertices, and an
+entangling three-site update on a 64-dimensional work space repeated
+eight times, with error below 8e-15. It explicitly includes thousands
+of illegal components with cycles, all separated by conserved penalties.
+
+Next: give the mechanical reversible-machine-to-sweep reduction, then
+try to complete the actual initialized readout program. Avoid treating
+an unspecified universal machine as the missing explicit construction.

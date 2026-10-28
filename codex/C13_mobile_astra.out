@@ -1,0 +1,12 @@
+Wrote [RESULT.md](RESULT.md), [PROGRESS.md](PROGRESS.md), and reproducible Python code and data.
+
+The verdict is conditional. An \(n+1\)-boson phase survives the operator analysis when mixed resonances are avoided and the full stiffness matrix stays positive. The microscopic finite-coupling construction remains unverified.
+
+Two qualifications matter:
+
+- Finite-ring uniqueness does not guarantee one fixed vacuum-sector limit across all \(L\). Irrational charge rounding produces moving zero-mode offsets.
+- Entropy and Casimir controls recover \(c=2,3\), but the generic interacting ED sizes are too small for an accurate central-charge determination.
+
+The report gives the extended Sidon margins, momentum-glued zero-mode lattice, instability conditions, numerical limitations, and ranked next steps.
+
+[gpt_solve: backend=codex model=gpt-6-astra effort=high transcript=20261027T204517-80570]
