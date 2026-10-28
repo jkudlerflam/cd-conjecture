@@ -1,0 +1,32 @@
+[
+  {
+    "n": 1,
+    "excited_cell_dimension": 18,
+    "pair_dimension": 324,
+    "code_bond_dimension": 4,
+    "T_relative_error": 5.7749862481736e-15,
+    "M_error_over_T": 6.486663799669265e-14,
+    "nonGaussian_over_T": 1.5235218538079463e-13,
+    "seconds": 0.0070258749183267355
+  },
+  {
+    "n": 2,
+    "excited_cell_dimension": 60,
+    "pair_dimension": 3600,
+    "code_bond_dimension": 16,
+    "T_relative_error": 1.931496891112813e-13,
+    "M_error_over_T": 9.824659156194485e-12,
+    "nonGaussian_over_T": 1.2123318519079173e-11,
+    "seconds": 0.08858166704885662
+  },
+  {
+    "n": 3,
+    "excited_cell_dimension": 168,
+    "pair_dimension": 28224,
+    "code_bond_dimension": 64,
+    "T_relative_error": 1.3565952451399332e-12,
+    "M_error_over_T": 2.2186146249529665e-10,
+    "nonGaussian_over_T": 1.1298743394934286e-09,
+    "seconds": 0.3362814588472247
+  }
+]

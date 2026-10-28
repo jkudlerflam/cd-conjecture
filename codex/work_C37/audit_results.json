@@ -1,0 +1,89 @@
+{
+  "prime": 65521,
+  "prime_trial_division": true,
+  "solver": [
+    {
+      "n": 1,
+      "dimension": 9,
+      "rhs": 7,
+      "match": true
+    },
+    {
+      "n": 2,
+      "dimension": 25,
+      "rhs": 7,
+      "match": true
+    },
+    {
+      "n": 3,
+      "dimension": 49,
+      "rhs": 7,
+      "match": true
+    },
+    {
+      "n": 4,
+      "dimension": 81,
+      "rhs": 7,
+      "match": true
+    },
+    {
+      "n": 5,
+      "dimension": 121,
+      "rhs": 7,
+      "match": true
+    }
+  ],
+  "symmetric_square": [
+    {
+      "roots": 2,
+      "pairs": 3,
+      "match": true
+    },
+    {
+      "roots": 4,
+      "pairs": 10,
+      "match": true
+    },
+    {
+      "roots": 6,
+      "pairs": 21,
+      "match": true
+    },
+    {
+      "roots": 10,
+      "pairs": 55,
+      "match": true
+    },
+    {
+      "roots": 20,
+      "pairs": 210,
+      "match": true
+    },
+    {
+      "roots": 46,
+      "pairs": 1081,
+      "match": true
+    }
+  ],
+  "leading": [
+    {
+      "n": 1,
+      "pair_dimension": 9,
+      "logical_inputs": 3,
+      "match": true
+    },
+    {
+      "n": 2,
+      "pair_dimension": 25,
+      "logical_inputs": 5,
+      "match": true
+    },
+    {
+      "n": 3,
+      "pair_dimension": 49,
+      "logical_inputs": 7,
+      "match": true
+    }
+  ],
+  "seconds": 0.2653641658835113
+}

@@ -1,60 +1,62 @@
 # C8 result
 
-2026-10-28. Ninth run. Closed-book work by Codex, GPT-6. All writes
-are confined to this folder. No network, subagents or external review.
+2026-10-28. Tenth run. Closed-book work by Codex, GPT-6. No network,
+subagents, independent referee, cluster computation, commit or push.
 
 ## Verdict
 
-Nonconclusive for the original conjecture. The explicit high-channel
-core is retained, and the full periodic candidate now has a sparse
-matrix-element implementation. The preferred wrapper has uniform vacancy
-states and elementary coefficients. The remaining task is a connected
-local massive-sector reduction followed by the stated Gaussian infrared
-input. No microscopic central charge was measured.
+Nonconclusive for the original c-d conjecture. The explicit periodic
+candidate and clean-readout controller from runs 8-9 are unchanged.
+This run proves uniform local estimates for their atomic formulation,
+but does not supply the all-order infrared reduction or a measured
+microscopic central charge.
 
-[proved finite construction] The saved 58-control machine gives a
-positive initialized core of dimension 446400(q+1), with 2^(q^2/8)
-ground states, both graded Clifford endpoint maps, colored density
-readouts and exact total-number U(1). Its complete initialization and
-partial-time readout proofs are in Section 40. This run found no core
-error and did not reconstruct that controller.
+[proved] Section 48 gives an exact one-step local unitary normal form
+on the complete direct sum over cell lengths. It cancels first-order
+leakage with a per-cell remainder controlled only by the on-cell gap
+and bounded interaction norms. No upper cell energy or dimension cutoff
+is needed. The unitary preserves charge, total length and the ring
+quotient. Its dynamics converges to the projected model at fixed slow
+time, uniformly in ring length.
 
-[proved new results] Sections 44-46 give the full periodic sparse bond,
-rational Fermi points with velocities greater than 2sin(pi/64) and
-low-shell detuning at least pi/[8(16m^3+4m^2+2m)], visibility bounds
-alpha,beta>=1/(80m), and polynomial physical perturbation norms.
-Here m=q^2/8. The new vacancy Laplacian selects the same two physical
-lengths with an explicit complete-sector gap, while removing the old
-charge tunneling scale and large filter coefficient. Its port and
-transport factors are closed formulas.
+[proved] Section 50 bounds ground-energy errors and local defect
+occupation without assuming a gap in the retained theory. A one-step
+dressing has an O(epsilon^4) ground-energy-density error relative to
+its exact dressed P block in the unconstrained atomic problem. Physical
+fixed-length sectors retain an explicit reference-sector cost. The
+bare C8 cost is O(epsilon b^2/M) near the reference density. Linear
+wrong-length energy gives local cutoff bounds; one-site length transfer
+also gives factorial tails in the unconstrained atomic ground state.
 
-[proved exact reduction] Before projection, every legal marker sector
-can be written in cell coordinates as a sum of independent on-cell
-Hamiltonians plus bounded neighboring-cell interactions. The physical
-length constraint and ring quotient remain. A separate soluble example
-shows that a global bare-Q inverse can have arbitrarily small denominators
-even for independent uniformly gapped massive spins. It does not forbid
-a connected local expansion, which remains to be established here.
+[proved] Section 52 bounds bare off-code sources compressed to true
+spectral windows, uniformly in volume. Smooth filtering gives an exact
+small low-frequency component and a high-frequency component with
+exponential Euclidean decay and quasi-local spatial tails. The filter
+uses the full interacting dynamics, so it is not itself an effective
+action or a constructive elimination theorem.
 
-[numerical finite checks] Both periodic wrapper variants pass 3232
-full-space column checks separately for their base and perturbation.
-Actual q=4 histories reproduce the 16-dimensional two-cell fermion
-matrix with zero measured error. The flat-wrapper complete legal
-spectra reach dimension 2903 and obey every gap bound tested. Exact
-integer resonance checks reach 512 Fermi branches. These are finite
-algebraic checks, not microscopic CFT estimators.
+[proved controls] Section 49 gives a literal d=4 chain with a critical
+Ising first-order projection and an exact nonzero mass at fixed coupling.
+Section 51 gives an exactly dressed XX chain whose bare massive source
+has an algebraic connected tail. These examples exclude two shortcuts,
+not the nonresonant C8 candidate or local integration in general.
 
-[conditional consequence] The dimension remains
+[numerical] Five scripts verify the local dressing, energy/occupation
+bounds, true spectral-window bounds, exact control models and length
+tails. Dense dimensions reach 1024. Entropy and Casimir diagnostics of
+the crossover control are calibrated on c=1/2; they are not measurements
+of the C8 microscopic candidate. All sizes, conditioning limitations
+and reproduction commands are stated in Sections 48-54.
 
-    d=96*446400(q+1)+48,    c_projected=m+1.
+The inherited family still has
 
-At q=685670400 the projected count exceeds d-1, as in Section 41.
-The fixed-nonzero-coupling conformal conclusion still requires the
-local elimination and Gaussian inputs. No verified counterexample,
-full-class upper bound, or unbounded-c construction at fixed d is
-claimed. Sections 44-46 supersede earlier continuation rankings and
-replace the geometric target by the number-conserving rational target.
-Use PeriodicBond(flat_vacancies=True) for the preferred candidate.
+    d=96*446400(q+1)+48, m=q^2/8, c_projected=m+1.
+
+Its projected count exceeds d-1 at the recorded large finite q, but no
+fixed-nonzero-coupling conformal conclusion is proved here. The fixed-d
+route-A spectral compiler is a separate unfinished problem. The full
+class has neither a proved upper bound nor a verified counterexample
+from this run. Start with Sections 48-54 and PROGRESS.md.
 
 ## 1. Simultaneous boundary Clifford compression
 
@@ -7912,3 +7914,1064 @@ results of this run. Only this folder was modified. The project
 STATE.md was not edited because the task expressly forbids outside
 writes. No subagents, external referee, network, cluster job, commit
 or push was used. The original conjecture remains nonconclusive.
+
+
+## 48. Local dressing on the full atomic space
+
+Status: proved one-step normal form and fixed-slow-time comparison.
+These estimates are uniform in volume and in the upper on-cell energy.
+They do not establish an all-order infrared reduction or a CFT.
+
+### 1. Hypotheses and norms
+
+Consider a finite open chain or ring of M cells. Each cell may have a
+separable, infinite-dimensional Hilbert space. Let A_j be positive
+self-adjoint on that space, P_j its finite-dimensional kernel, and
+
+    A_j >= Delta (1-P_j),    Delta>0.
+
+The operators A_j act on separate cells. Write A=sum_j A_j and
+P=product_j P_j. The perturbation is V=sum_X v_X, where X is a site or
+neighboring pair, v_X is bounded and Hermitian, and
+
+    J=sup_j sum_(X contains j) ||v_X|| < infinity.
+
+A scalar energy per cell can be omitted. All statements concern the
+specified interaction decomposition. For a general represented
+interaction Phi define
+
+    ||Phi||_kappa=sup_j sum_(X contains j) exp(kappa |X|)||Phi_X||.
+
+The unweighted norm is ||Phi||_0. Supports may be connected intervals
+on a ring. Repeated supports are allowed and their norms are summed.
+Counting representation terms rather than combining them can only make
+the upper bounds larger.
+
+### 2. Explicit generator and exact first cancellation
+
+[proved] For every X let
+
+    P_X=product_(j in X) P_j, Q_X=1-P_X, A_X=sum_(j in X) A_j,
+    R_X=Q_X (A_X|Q_X)^(-1) Q_X,
+    O_X=Q_X v_X P_X+P_X v_X Q_X,
+    D_X=P_X v_X P_X+Q_X v_X Q_X,
+    S_X=R_X v_X P_X-P_X v_X R_X.
+
+Then S_X is bounded and anti-Hermitian, and
+
+    ||R_X||<=1/Delta, ||S_X||<=||v_X||/Delta,
+    ||O_X||<=||v_X||, ||D_X||<=||v_X||,
+    [S_X,A]=-O_X.
+
+Proof. In the decomposition P_X plus Q_X, S_X has off-diagonal
+blocks B and -B dagger, where B=R_X v_X P_X. Its norm is ||B||.
+The same block argument proves the O_X estimate. D_X is the
+block-diagonal conditional expectation of v_X and is contractive.
+Finally A_X R_X=Q_X and A_X P_X=0 give
+S_X A_X=-P_X v_X Q_X and A_X S_X=Q_X v_X P_X.
+All A_j outside X commute with S_X.
+
+These identities are valid on Dom(A). The resolvent maps into
+Dom(A_X); S_X preserves Dom(A), and its commutator with A has a
+bounded extension. On each finite ring, the exponential of the finite
+sum S=sum_X S_X preserves Dom(A) and the commutator integral formula
+holds. This can also be proved first with bounded spectral cutoffs of
+A_j, then using the uniform commutator identities to pass to the
+strong resolvent limit. No norm of A_j enters.
+
+Set U=exp(epsilon S), D=sum_X D_X and O=sum_X O_X. Then
+
+    U(A+epsilon V)U dagger = A+epsilon D+epsilon^2 R(epsilon),    (1)
+
+where the exact remainder is
+
+    R(epsilon)=int_0^1 exp(t epsilon ad_S)[S,V] dt
+               -int_0^1 (1-t)exp(t epsilon ad_S)[S,O] dt.       (2)
+
+Here ad_S B=[S,B]. Expanding only the first commutator of A proves
+(2). The remaining expansion contains bounded interactions only.
+
+[proved] Every D_X preserves the global all-code space P, so [D,P]=0
+and PDP=PVP. Thus (1) has the exact first-order target in its P block.
+It is not necessary to divide by logical energy differences.
+
+### 3. A volume-independent remainder bound
+
+[proved] For kappa>=0 and 2 exp(kappa)|epsilon|J/Delta<1, (2) has an
+interaction representation satisfying
+
+    ||R(epsilon)||_kappa
+       <= 12 exp(3 kappa) J^2/Delta
+          /[1-2 exp(kappa)|epsilon|J/Delta]^5.                 (3)
+
+Proof with the combinatorics included. Let a represented interaction
+Phi have support size at most r and norm J_Phi=||Phi||_0. An intersecting
+pair S_X,Phi_Y has support X union Y, size at most r+1. Split the
+anchored sum according to whether the anchor is in X or in Y. Using
+||[B,C]||<=2||B||||C|| gives
+
+    ||[S,Phi]||_0 <= 2(r+2)(J/Delta) J_Phi.                    (4)
+
+The two contributions use sum_(Y meets X)||Phi_Y||<=2J_Phi and
+sum_(X meets Y)||S_X||<=rJ/Delta. Double counting is harmless.
+Iterating (4), starting with support size r, yields
+
+    ||ad_S^n Phi||_0
+      <= (2J/Delta)^n (r+n+1)!/(r+1)! J_Phi.
+
+Its support size is at most r+n. Consequently the exponential series
+has weighted norm at most
+
+    exp(kappa r) J_Phi
+      sum_(n>=0) binomial(n+r+1,r+1)
+                   [2 exp(kappa)|epsilon|J/Delta]^n
+    =exp(kappa r)J_Phi/[1-2 exp(kappa)|epsilon|J/Delta]^(r+2).
+
+Both [S,V] and [S,O] have support size at most three and unweighted
+norm at most 8J^2/Delta by (4). The integrals in (2) have total weights
+one and one half. Replacing t by one in the bound gives (3).
+This also proves absolute convergence of this single conjugation in
+the represented interaction norm. It does not prove convergence of
+successive block diagonalizations.
+
+For example, |epsilon|J/Delta<=1/8 and kappa=log 2 give the conservative
+constant ||R||_(log 2)<=3072 J^2/Delta. The unweighted bound is much
+smaller. Neither bound depends on M or the dimension of a cell.
+
+### 4. Charges, physical length, and the C8 application
+
+[proved] Suppose A_X and v_X commute with the total charge on X.
+Their kernel projections, reduced inverses and S_X do also. Therefore
+U preserves that charge. This applies to total microscopic U(1), total
+cell length, and any additional exact charge. Translation covariance
+of the local terms makes the sum S covariant as well.
+
+In unprojected_cell_reduction.md, take the complete direct-sum cell
+space K, the stated atomic gap Delta_at, and the full bounded endpoint,
+field and marker-transfer terms. For the flat wrapper one may use
+
+    J <= |kappa_marker|+B_field+2 B_cut+4u <= 2 B_flat.
+
+Here kappa_marker is the marker chemical potential in the perturbation,
+not the norm weight in (3). The first inequality counts each cut term
+at both of its incident cells. All quantities are the full-space norms,
+not their projected visibilities.
+
+The generator therefore exists on the infinite direct sum without
+truncating long cells. It preserves sum ellhat=L. The cyclic sum of its
+terms is compatible with the rooted-ring reference action, so (1)
+descends to the physical quotient. Equivalently, work at each physical
+momentum with its induced seam twist; unitary twists leave the estimates
+unchanged. This uses the exact cell representation from run 9.
+
+Illegal-selector sectors are invariant and are not included in this
+legal-sector theorem. Comparing their ground energy with the dressed
+legal sector remains a separate task.
+
+### 5. The explicit second-order Hamiltonian
+
+[proved, finite order] At epsilon=0 the remainder is
+
+    R(0)=[S,V]-(1/2)[S,O]=[S,D]+(1/2)[S,O].
+
+Its global P compression is the usual second-order expression
+
+    P R(0) P = -P V Q (A|Q)^(-1) Q V P, Q=1-P.                (5)
+
+To see this without a band-gap assumption, note that SP=Q A_Q^(-1)VP,
+PS=-PV A_Q^(-1)Q and OP=QVP. Also [D,P]=0, PSP=0, hence
+P[S,D]P=0. The two terms of P[S,O]P agree and have the negative sign
+in (5). The inverse here is that of the unperturbed A at finite volume;
+it is not the dressed bare-Q inverse ruled out in run9_audit.md.
+Nonzero terms in (5) involve overlapping insertion supports, so their
+cell support has size at most three. This improves the coordinate
+bookkeeping, while leaving the finite-order scope unchanged.
+
+### 6. A uniform fixed-time statement in slow time
+
+[proved] Let O_Z be a bounded operator on a fixed set Z of cells. In
+the dressed variables, compare the full dynamics generated by the
+left-hand side of (1) with A+epsilon D. For t real and
+J_R=||R(epsilon)||_0, one has the safe bound
+
+    ||tau_full(t)(O_Z)-tau_bd(t)(O_Z)||
+       <=6 |Z| ||O_Z|| epsilon^2 J_R |t|
+                                      exp(8|epsilon|J|t|).     (6)
+
+Proof. Pass to the interaction picture for the sum of on-cell A_j.
+This changes no support or interaction norm, even for unbounded A_j.
+For the nearest-neighbor interaction epsilon D, define the propagation
+matrix K_xy=sum_(X contains x,y)||D_X||. With mu=log 2 its weighted
+row sum is at most 2 exp(mu)J=4J. Iterating the commutator integral
+inequality gives the Lieb-Robinson estimate
+
+    ||[tau_bd(t)(O_Z),B_Y]||
+       <=2 ||O_Z||||B_Y|| exp(8|epsilon|J|t|)
+                            sum_(z in Z,y in Y) exp(-mu dist(z,y)).
+
+The bound is deliberately also nonzero for initially disjoint supports
+at t=0. It remains valid for time-dependent on-cell conjugates.
+Sum this bound over the terms R_Y. At each y their norm sum is at
+most J_R. On a chain or ring, sum_y exp(-mu dist(z,y))<=3.
+The Duhamel comparison of the two evolutions has the single factor
+epsilon^2 and a time integral. Bounding the exponential by its endpoint
+proves (6). Absolute interaction convergence in (3) justifies the sum.
+
+Compressing the comparison by P gives reference dynamics with
+Hamiltonian epsilon PVP and observable PO_ZP, because [A+epsilon D,P]=0.
+This applies to every initial state in P, including entangled states.
+The physical preparation and observable are dressed by U dagger.
+For a bare local observable the additional dressing error obeys
+
+    ||U O_Z U dagger-O_Z||<=2|epsilon||Z|J||O_Z||/Delta,          (7)
+
+by integrating U_s[S,O_Z]U_s dagger and using the local commutator
+bound. The dressed observable is quasi-local by the same estimates.
+
+For epsilon>0 and T=epsilon t fixed, (6) is O(epsilon), uniformly
+in volume. It is a rigorous slow-dynamics limit. The exponential in
+T prevents using it at arbitrarily late times at one fixed epsilon.
+It does not compare ground states or establish conformal towers.
+
+### 7. Where this line stops
+
+The whole direct sum over cell lengths no longer obstructs a one-step
+local dressing or finite-slow-time dynamics. Only Delta and bounded
+interaction norms are used. Iterating the construction is possible to
+any prescribed finite order, but (3) does not give a uniform convergence
+bound for that iteration: supports and the inverse-problem bookkeeping
+grow. No such convergence is asserted here.
+
+The infrared question takes L and times to infinity at one fixed
+nonzero epsilon. Neither an O(epsilon^2) per-cell remainder nor (6)
+controls that limit. The soluble massive-auxiliary test in
+critical_crossover.md shows why this qualification matters, even when
+the first-order model is a familiar critical chain.
+
+### 8. Finite checks and numerical conditioning
+
+[numerical] Run local_dressing_checks.py with single-thread BLAS.
+The tests use two to four four-state cells, dimensions 16,64,256,
+with a two-state local kernel and charge-conserving random bonds.
+The upper local excitation energy is varied through 1,17,10^6 while
+the gap remains one. The generator identities, conserved charge,
+complete second-order compression, quadratic remainder scaling and
+linear slow-time error all pass. Ground-energy and atomic-occupation
+bounds from defect_energy_bounds.md are tested after dressing as well.
+
+The large-energy fixture exposed an eigensolver precision issue.
+Direct lowest-eigenvalue extraction lost a positive energy difference
+of order 10^-11 against an upper energy of 10^6, returning a spurious
+negative difference of order 10^-10. The test now obtains the ground
+vector from a shifted positive inverse and evaluates its Rayleigh
+quotient. At epsilon=.01 the difference is 1.12177e-11 and the full
+residual is 4.98e-10; the residual is in the large-energy components.
+The ordinary-energy fixtures have residuals near machine precision.
+This repair concerns the numerical test, not the analytic bounds.
+No original microscopic C8 CFT was simulated.
+
+
+## 49. An exact critical-to-massive crossover control
+
+Status: proved soluble control, with two calibrated numerical diagnostics.
+This is a four-state nearest-neighbor chain. It is not the C8 candidate
+and is not a counterexample to the c-d conjecture.
+
+### 1. Literal microscopic bond
+
+Each physical site has two qubits. Let XI=X tensor I and similarly for
+other two-qubit products. For Delta>0 and 0<epsilon<=Delta/4 put
+
+    a=(Delta/2)(II-IZ)-(epsilon/2)ZI
+                                  +(epsilon/2)(YX+XY),
+    h=(a tensor II+II tensor a)/2
+                                  -(epsilon/2)XZ tensor XI.    (1)
+
+Use the same Hermitian h on every bond of a periodic ring. The on-site
+massive Hamiltonian is Delta(II-IZ)/2. Its complete local zero space
+is the first qubit tensored with |0> on the second qubit, and its gap
+is Delta. The interaction has a bounded norm independent of ring length.
+Product ZZ parity is an exact symmetry.
+
+[proved] The first-order compression is the critical transverse-field
+Ising chain
+
+    P H P=-(epsilon/2)sum_j (X_j X_(j+1)+Z_j).                 (2)
+
+The mixing terms in (1) have zero P compression; the IZ in XZ restricts
+to +1. The projected theory has one massless Majorana, velocity epsilon,
+and c=1/2 under the standard free-Ising CFT identification.
+
+### 2. Exact bands at fixed nonzero coupling
+
+[proved] Choose four on-site Majorana matrices
+
+    a_j=XI, b_j=YI, alpha_j=ZX, beta_j=ZY,
+
+and attach the product ZZ parity string on all previous sites. Equation
+(1), apart from the constant M Delta/2, is the quadratic Hamiltonian
+
+    H=(i/2)sum_j [epsilon a_j b_j+epsilon b_j a_(j+1)
+                 +Delta alpha_j beta_j
+                 +epsilon a_j alpha_j-epsilon b_j beta_j].    (3)
+
+For example i b_j a_(j+1)=-XZ_j XI_(j+1), including its string.
+The on-site terms follow from the Pauli multiplication table. The ring
+seam has the usual parity-dependent Jordan-Wigner twist.
+
+The Hermitian single-particle Bloch matrix is iA(k), with
+
+    A(k)=[[0,t,epsilon,0],[-t*,0,0,-epsilon],
+          [-epsilon,0,0,Delta],[0,epsilon,-Delta,0]],
+    t=epsilon(1-exp(-ik)).
+
+After ordering the two bipartite sets as (a,beta) and (b,alpha), its
+positive energies are the singular values s_-,s_+ of
+
+    T(k)=[[t,epsilon],[epsilon,-Delta]].
+
+Set x=sin^2(k/2). Then
+
+    s_-^2+s_+^2=Delta^2+2epsilon^2+4epsilon^2 x = F(x),
+    s_-^2 s_+^2=epsilon^4
+                    +4Delta epsilon(Delta epsilon+epsilon^2)x = G(x).
+
+In particular G(x)>0 for every real k at every epsilon>0. There is
+no zero-energy bulk mode.
+
+[proved] For epsilon<=Delta/4 the minimum is at k=0 and the bulk gap is
+
+    gap=(sqrt(Delta^2+4epsilon^2)-Delta)/2
+        =epsilon^2/Delta+O(epsilon^4/Delta^3).                  (4)
+
+For completeness, let lambda(x)=s_-^2. Differentiating
+lambda^2-F lambda+G=0 gives
+
+    lambda'=(G'-F'lambda)/(F-2lambda).
+
+The denominator is positive in this range. The numerator is positive
+because G'/F'=Delta^2+Delta epsilon, while
+lambda<=|t|^2+epsilon^2<=5epsilon^2<=5Delta^2/16.
+At x=0 the two singular values can be read from the real symmetric
+T(0), giving (4). Thus the gap is the global minimum, not merely the
+value at a sampled momentum.
+
+This is the disordered massive side of the Ising point. The low
+Schur complement is t+epsilon^2/Delta at zero frequency, so the
+on-site Ising field increases while the inter-site coefficient stays
+fixed at leading order. There is no massless conformal sector at any
+of the fixed couplings in (4). The antiperiodic free vacuum belongs to the even fermion sector. Its
+energy is compared directly to the spin ground energy at the finite
+lengths tested below. No finite-size uniqueness assertion is needed
+for the absence of a massless bulk mode.
+
+The mass is also visible directly in second order. YX+XY couples
+|00> only to |11>, with matrix element 2i, and annihilates |10>.
+The virtual energy at epsilon=0 is Delta. Consequently
+
+    H_eff=-(epsilon/2)sum(XX+Z)
+           -(epsilon^2/(2Delta))sum(I+Z)+O(epsilon^3).          (5)
+
+The coefficient in (5) agrees with the exact low-band gap (4).
+The O(epsilon^2) relevant mass is compatible with uniform convergence
+to (2) at fixed slow time epsilon*t. Resolving it takes much longer
+physical times, of order Delta/epsilon^2.
+
+### 3. Two diagnostics and microscopic checks
+
+[numerical] Reproduce with
+
+    OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python3 critical_crossover.py
+
+The script first diagonalizes the actual 4-by-4 Bloch matrix on 4097
+momenta at epsilon/Delta=.25,.1,.02,.005, Delta=1. The two positive
+bands agree with the singular-value formulas to below 1.6e-15. Their
+minimum agrees with (4). Independent dense diagonalization of the
+literal spin bond (1) on L=3,4,5, dimensions 64,256,1024, matches the
+free-fermion ground energies below 3.1e-16 at epsilon=.1.
+
+The entropy calculation uses the ground-state covariance symbol
+C(k)=-sign(iA(k)), on 32768 half-shifted momenta, and diagonalizes
+its restriction to ell consecutive physical sites. If its eigenvalues
+are nu_r, then
+
+    S(ell)=(1/2)sum_r h((1+nu_r)/2),
+    c_S(ell)=3[S(2ell)-S(ell)]/log 2,
+    h(p)=-p log p-(1-p)log(1-p).
+
+The energy calculation uses the antiperiodic free-vacuum energy E(L)
+and the bulk-canceling combination
+
+    c_E(L)=4L[E(2L)-2E(L)]/(pi epsilon).
+
+For a massless mode with velocity epsilon this tends to its c. In the
+massive model these are apparent central-charge diagnostics, not actual
+CFT central charges. They do not assume that the massive model has a
+conformal velocity.
+
+Set the mixing terms to zero for the calibration. This leaves the
+critical Ising chain plus an inert massive qubit. At epsilon=.02,
+c_S(128)=.4999461 and c_E(512)=.5000007, matching c=1/2.
+Restoring the mixing at the same epsilon gives
+
+| size | c_S(size) | c_E(size) |
+| :-- | :-- | :-- |
+| 8 | .388948 | .504089 |
+| 16 | .277357 | .491574 |
+| 32 | .135105 | .452822 |
+| 64 | .031449 | .338250 |
+| 128 | .001854 | .139201 |
+| 256 | not evaluated | .015465 |
+| 512 | not evaluated | .000134 |
+
+The entropy at ell=256 is already .975540, approaching a constant.
+At epsilon=.005, c_E(8)=.503842 and c_S(8)=.481175, but both decrease
+as sizes grow. The crossover length grows as Delta/epsilon. The full
+input and output values are in critical_crossover_checks.json.
+
+### 4. Scope of the obstruction
+
+[proved] A positive additive on-cell gap, bounded neighboring-cell
+couplings, an exactly critical first-order Hamiltonian, and convergence
+of dressed local dynamics at fixed slow time do not imply a CFT at
+fixed nonzero coupling. Equations (1)-(5) are an explicit example.
+Even two small-size estimates near the reference c would not fix this
+order-of-limits problem.
+
+This does not refute the C8 candidate. That candidate was designed to
+exclude the low-dimension resonances that are allowed in this Ising
+control. Its Gaussian stability conditions must still be combined with
+a valid low-frequency reduction. The example only excludes replacing
+that step by first-order criticality or the one-step dynamics estimate.
+
+
+## 50. Ground energy, defects and length tails
+
+Status: proved energy and occupation estimates. They do not identify
+an infrared CFT. These estimates use no upper bound on the on-cell
+energy and no finite truncation of the direct sum over cell lengths.
+
+### 1. A block-diagonal interaction may be arbitrarily critical
+
+Use the atomic setting of local_dressing.md. Let
+
+    H=A+W+F, A=sum_j A_j, A_j>=Delta(1-P_j),
+    W=sum_X W_X, F=sum_X F_X,
+    P_X=product_(j in X)P_j, Q_X=1-P_X.
+
+The bounded Hermitian interactions may have long supports, provided
+
+    w=sup_j sum_(X contains j)||W_X||<infinity,
+    f=sup_j sum_(X contains j)||F_X||<infinity.
+
+Assume each W_X is block diagonal with respect to P_X plus Q_X.
+F is the possible leakage. Define the complete reference Hamiltonian
+H_ref=P(W+F)P on P=product P_j, and E_ref=inf spec H_ref.
+No gap, uniqueness, or frustration-free property of H_ref is assumed.
+
+[proved] Put g=Delta-2(w+f). If g>0, then
+
+    E_ref-M f^2/g <= E0(H) <= E_ref.                           (1)
+
+For a normalized state with energy at most E_ref+E_ex, E_ex>=0,
+
+    <A>/M <=4 Delta f^2/g^2+2 Delta E_ex/(g M),
+    <sum_j(1-P_j)>/M <=4 f^2/g^2+2 E_ex/(g M).                (2)
+
+In particular E_ex=0 applies to every ground state. The estimates
+hold for density matrices as well. Finite-volume ground states exist
+in the C8 fixed-length sectors; the infimum formulation also covers
+other atomic models.
+
+### 2. Proof, including the comparison with a critical reference
+
+Decompose F_X into its two diagonal blocks and its off-diagonal part.
+Let H_keep=sum_X P_X(W_X+F_X)P_X. It commutes with each P_j.
+In a sector whose defect set is B, it is the reference interaction
+with all terms meeting B removed. Fill the missing sites with any
+code state. The total norm of the removed terms is at most
+
+    sum_(X meets B)(||W_X||+||F_X||)<=(w+f)|B|.
+
+The variational principle for the full reference therefore implies
+
+    H_keep >= E_ref-(w+f)N, N=sum_j(1-P_j).
+
+This argument also applies to entangled states of the remaining code
+sites, by filling with a density matrix and taking its expectation.
+The Q_X diagonal blocks obey
+
+    sum_X Q_X(W_X+F_X)Q_X >= -(w+f)N,
+
+because Q_X<=sum_(j in X)(1-P_j). Thus the entire diagonal part is
+at least E_ref-2(w+f)N. This proves the necessary comparison without
+inverting a critical reference Hamiltonian or assuming a global band.
+
+For delta>0 and f>0, Cauchy-Schwarz and Young's inequality give
+
+    |<Q_X F_X P_X+P_X F_X Q_X>|
+       <=(delta/f)||F_X|| <Q_X>
+                          +(f/delta)||F_X|| <P_X>.
+
+Sum over X. The first sum is at most delta<N>, and the second at
+most M f^2/delta. The f=0 case is immediate by continuity. Since
+N<=A/Delta, for 0<delta<=g we have the quadratic-form inequality
+
+    H >= E_ref+[(g-delta)/Delta]A-M f^2/delta.                 (3)
+
+Set delta=g for the lower energy bound in (1). The upper bound uses
+a reference ground state as trial state. Set delta=g/2 in (3) and
+use the stated energy upper bound to obtain (2). Every step involves
+bounded interactions and positive forms; it remains valid for
+unbounded A and infinite-dimensional cell spaces.
+
+### 3. Conserved-charge constraints must be retained
+
+[proved] If C is a conserved sector and its all-code reference space
+is nonempty, let E_ref^C be that reference ground energy and put
+
+    dE_C=E_ref^C-E_ref >=0.
+
+The global lower bounds above still hold after restriction to C.
+For a ground state in C, replace E_ex in (2) by dE_C. For a state
+E_ex above that constrained ground energy, replace it by dE_C+E_ex.
+
+One cannot silently set dE_C to zero. Filling a missing site in the
+proof can change the conserved charge, so E_ref in that proof is the
+unconstrained reference energy. This distinction matters for fixed
+physical length in C8.
+
+### 4. Consequences before and after the one-step dressing
+
+[proved] Applied directly to A+epsilon V, take W=0, F=epsilon V.
+Then f=|epsilon|J and g=Delta-2|epsilon|J. The unconstrained ground
+energy differs from the first-order reference by at most
+
+    M epsilon^2 J^2/(Delta-2|epsilon|J),
+
+and the mean bare defect occupation is at most
+
+    4 epsilon^2 J^2/(Delta-2|epsilon|J)^2.                     (4)
+
+This is a local occupation statement. The total overlap with the
+all-code subspace can still vanish exponentially with M.
+
+[proved] Apply the same theorem to the exact dressed Hamiltonian
+from local_dressing.md. There W=epsilon D, F=epsilon^2 R(epsilon),
+w<=|epsilon|J, f<=epsilon^2 J_R, J_R=||R(epsilon)||_0. Its complete
+all-code reference is
+
+    H_ref,dressed=epsilon PVP+epsilon^2 P R(epsilon)P.
+
+At g_d=Delta-2(|epsilon|J+epsilon^2 J_R)>0,
+
+    0<=E_ref,dressed-E0(H)<=M epsilon^4 J_R^2/g_d,
+    <N>_dressed/M<=4 epsilon^4 J_R^2/g_d^2.                    (5)
+
+Thus a single local dressing gives a fourth-order error in the ground
+energy density relative to its exact dressed P block. The P block
+includes all the powers contained in this one conjugation. Equation
+(5) is not an all-order block diagonalization.
+
+For a constrained sector, add the dE_C terms of Section 3. Without a
+bound on the constrained-versus-unconstrained dressed reference
+energy, the fourth-order occupation estimate is not a claim for every
+fixed-length physical ring. The bare estimate below has an explicit
+such comparison for the selected reference density.
+
+### 5. Bare C8 estimates at the physical reference density
+
+Use the unperturbed atomic gap Delta_at and J<=2B_flat. Fix M and L
+with r=L-bM in [0,M]. The exact first-order spectrum in joint_fluid.md
+allows a direct estimate of the constraint cost. The payload ground
+state on M cells can be chosen with cell momentum m_pay in Z_M.
+At zero length flux the length ground sea has m_gap=0 and energy
+
+    E_len(M,r)=-2 sin(pi r/M)/sin(pi/M), M>=2.
+
+Choose ell in {0,...,M-1} such that ell+m_pay=0 modulo M. This satisfies
+the physical quotient, because L>=bM>=M. The length momenta then acquire
+phi=2pi ell/(LM), while the payload state is unchanged. The symmetric
+length sea has zero sine sum, so its energy increases by at most
+
+    phi^2/sin(pi/M)<=2pi^2/(b^2 M).
+
+The minimum length energy over r differs from E_len(M,r) by at most
+
+    pi^2(r-M/2)^2/(2M).
+
+Indeed compare to -2/sin(pi/M), use 1-cos x<=x^2/2 and
+sin(pi/M)>=2/M. A flux cannot lower the hard-core hopping ground
+energy below zero flux, by applying the variational principle to the
+absolute values of its components. This supplies the matching
+unconstrained lower reference bound in every physical momentum sector.
+The marker chemical potential and payload ground energy cancel in
+the difference.
+
+Consequently the actual first-order constraint excess is bounded by
+
+    dE_C <= epsilon C_b(M,r),
+    C_b(M,r)=pi^2(r-M/2)^2/(2M)+2pi^2/(b^2 M).                (6)
+
+Here epsilon>0 and E_ref includes its factor epsilon. For
+M=round[L/(b+1/2)], sufficiently large L makes r admissible and
+|r-M/2|<=(b+1/2)/2. Hence
+
+    C_b(M,r)<=[pi^2(b+1/2)^2/8+2pi^2/b^2]/M.
+
+Using (2), the bare mean defect occupation in the ground state of
+these legal fixed-M physical sectors is therefore at most
+
+    4 epsilon^2 J^2/(Delta_at-2epsilon J)^2
+       +2 epsilon C_b(M,r)/[(Delta_at-2epsilon J)M].           (7)
+
+The last term is O(epsilon b^2/M^2), for the one fixed candidate b.
+The estimate concerns these chosen marker sectors. It does not prove
+that the full microscopic ground state chooses this M after dressing,
+or compare it to illegal-selector sectors.
+
+### 6. Quantitative control of arbitrarily long cells
+
+In the C8 atomic representation, for ell outside {b,b+1},
+
+    A_ell>=gamma_wrong(1+|ell-b|).
+
+For any R>b+1 this implies the operator bound
+
+    1_(ellhat>=R)<=A/[gamma_wrong(R-b)].
+
+Thus any state to which (2) applies obeys
+
+    (1/M)sum_j <1_(ellhat_j>=R)>
+       <=[4 Delta f^2/g^2+2 Delta E_ex/(gM)]
+                                    /[gamma_wrong(R-b)].      (8)
+
+Before dressing, use f=epsilon J and the constraint cost in (6).
+After dressing, (5) gives the stronger bound when its reference
+constraint cost is controlled. No dimension factor appears in (8).
+
+For a cell-translation-invariant state, let rho_Z be its reduced state
+on a fixed finite cell interval. Let Pi_R project every cell there to
+length less than R, and p_R=tr(Pi_R rho_Z). The union bound gives
+1-p_R<=|Z| times the right-hand side of (8). If p_R>0, the normalized
+truncated reduced state satisfies
+
+    ||rho_Z-Pi_R rho_Z Pi_R/p_R||_1<=2 sqrt(1-p_R).
+
+This follows by projecting a purification and using the trace distance
+of the two pure states, then taking a partial trace. For states without
+cell-translation invariance, the occupation estimate is spatially
+averaged; no individual-site bound is asserted.
+
+This proves local-state tightness as the length cutoff increases.
+It is not a global-norm truncation, a spectral approximation at O(1/L),
+or a bound on low-frequency response kernels. The critical crossover
+control shows that even much stronger small ground-energy errors do
+not alone identify the infrared phase.
+
+### 7. A stronger grand-canonical length tail from one-site transfers
+
+[proved, unconstrained atomic ground state] There is a factorial tail
+when the perturbation changes an individual cell length by at most one.
+This uses an additional property of the C8 marker transfer, beyond
+bounded interaction norm. Suppose [A_j,ellhat_j]=0, and for ell>=b+2,
+
+    A_j|ell >= gamma(ell-b),
+
+while A_j has a zero vector at a selected length. Let v be the actual
+local interaction norm of H-A, including its coupling. If v<=gamma/2,
+then any unconstrained ground state obeys, at each cell j and every
+integer R>=b+2,
+
+    ||1_(ellhat_j>=R)psi||
+          <= (v/gamma)^(R-b-1)/(R-b-1)!.                      (9)
+
+This is independent of volume and local internal dimension.
+
+Proof. Remove cell j and every interaction touching it. Call the
+remaining Hamiltonian H_rest and its ground energy E_rest. The sum
+of removed interactions has norm at most v. Filling site j with a
+zero vector gives E0(H)<=E_rest+v. With Q_R=1_(ellhat_j>=R), positivity
+of the local energy and the interaction norm imply
+
+    Q_R(H-E0)Q_R >= [gamma(R-b)-2v]Q_R.
+
+All unperturbed terms preserve ellhat_j. The perturbation's length
+bandwidth one therefore gives
+
+    Q_R H(1-Q_R)=Q_R(H-A)1_(ellhat_j=R-1).
+
+Apply Q_R to the ground-state equation and invert its strictly
+positive compressed operator. The result is
+
+    ||Q_R psi|| <= v/[gamma(R-b)-2v] ||Q_(R-1)psi||.
+
+For v<=gamma/2 the denominator is at least gamma(R-b-1). Iterating
+from R=b+2 and using ||Q_(b+1)psi||<=1 proves (9). The same argument
+applies to every vector in a degenerate ground space. It requires
+no spectral gap in H_rest.
+
+The complete C8 atomic Hamiltonian has this length bandwidth: fields
+and ports preserve length, and marker moves transfer one site. Thus
+(9) applies to its unconstrained atomic version, for v<=gamma_wrong/2.
+It gives a stronger cutoff estimate than (8) in that setting.
+
+It cannot be copied to the physical fixed-L quotient. Filling cell j
+in the proof can change total length, and the best remaining-cell
+energy in a fixed charge sector depends on the removed length. A
+uniform canonical chemical-potential bound would repair that proof,
+but it has not been established here for the dressed physical model.
+For physical fixed-length sectors the proved statement remains (8),
+with the explicit reference constraint cost of Section 5. The two
+statements have different hypotheses.
+
+
+## 51. Slow tails of a bare massive source
+
+Status: proved exact control. It excludes an incorrect definition of a
+fast kernel, not local massive-sector integration itself.
+
+### 1. A model whose massive sector can be removed exactly
+
+On each four-state site, use a logical qubit s and an ancillary qubit a.
+Let
+
+    H_dec=-(J/2)sum_j(X_s,j X_s,j+1+Y_s,j Y_s,j+1)
+                              +(Delta/2)sum_j(1-Z_a,j),
+    U_theta=product_j exp[(i theta/2)Z_s,j Y_a,j],
+    H_theta=U_theta dagger H_dec U_theta.                      (1)
+
+J,Delta>0. Equation (1) is a short explicit repeated nearest-neighbor
+Hermitian bond, obtained by conjugating each bond and each split on-site
+term by the same on-site unitary. It preserves total Z_s. It has a
+critical XX sector and exactly independent massive ancillas after the
+known on-site change of basis. Its spectrum and spatial entanglement
+across site cuts agree with those of H_dec. In particular its massless
+sector is the usual free c=1 theory, and the ancillary excitation cost
+is Delta.
+
+One may set J=epsilon and theta=epsilon/Delta. Then H_theta is a weak
+bounded nearest-neighbor perturbation of Delta sum n_a, with the XX
+chain as its first-order retained Hamiltonian. No spectrum of a large
+cell or unspecified effective interaction is used in this control.
+
+### 2. The connected bare-source correlation is not fast
+
+[proved] The elementary on-site identity is
+
+    U_theta X_a U_theta dagger
+                    =cos(theta) X_a+sin(theta) Z_s Z_a.        (2)
+
+The bare operator X_a is off diagonal between the zero and excited
+spaces of the unperturbed ancillary Hamiltonian. Nevertheless its
+connected Euclidean correlation in the exact thermodynamic ground
+state of H_theta is
+
+    C_X(tau)=cos^2(theta) exp(-Delta tau)
+                         +sin^2(theta) C_Z(tau), tau>=0,       (3)
+
+where C_Z is the connected local Z_s correlation of the half-filled
+XX chain. To prove (3), transform both insertions using (2). The mixed
+terms have zero ancillary vacuum expectation. The X_a term creates
+one ancilla and hence has factor exp(-Delta tau). The Z_a term acts
+as +1 in the ancillary vacuum. At half filling <Z_s>=0, so subtracting
+the one-point functions does not remove the second term.
+
+[proved] Wick contraction for the XX chain gives
+
+    C_Z(tau)=4 a(tau)^2,
+    a(tau)=(1/pi)int_0^(pi/2) exp[-2J tau cos(k)] dk.           (4)
+
+Both particle and hole propagators equal a(tau) by the half-filled
+particle-hole symmetry. Z_s=1-2n_s supplies the factor four.
+Writing x=pi/2-k, the only unsuppressed endpoint as tau grows is x=0.
+Since sin x=x+O(x^3), endpoint Laplace asymptotics yields
+
+    a(tau)=1/(2pi J tau)[1+O((J tau)^(-2))],
+    C_X(tau)=sin^2(theta)/(pi^2 J^2 tau^2)
+                    [1+O((J tau)^(-2))]+O(exp(-Delta tau)).    (5)
+
+The asymptotic can also be bounded directly by splitting the integral
+at a fixed small x, Taylor bounding sin x there, and bounding the other
+interval exponentially. Thus no positive exponential rate bounds the
+full connected bare-source correlation when sin(theta) is nonzero.
+The microscopic model nevertheless has an exactly removable massive
+sector with gap Delta.
+
+### 3. The necessary subtraction is an operator subtraction
+
+In the decoupled frame, let P_a be the ancillary vacuum projector.
+The retained part of the source (2) is sin(theta) Z_s P_a.
+Subtract that operator, rather than just its expectation. Its remaining
+source creates an ancilla with amplitude cos(theta); the extra term
+proportional to Z_s(1-P_a) annihilates the ground state. The resulting
+two-source function is cos^2(theta) exp(-Delta tau).
+
+Equivalently use the known dressed local projector
+U_theta dagger P_a U_theta in physical variables. This construction
+is completely local in the control. It illustrates what a valid
+irreducible massive kernel must remove.
+
+[proved limitation] Additive defect cost, small defect occupation, and
+ordinary connected correlations of bare off-code sources do not imply
+exponential temporal decay. A proposed massive-sector proof has to
+separate retained propagation and the operator mixing in (2). The
+word connected alone does not specify that separation. The earlier
+global bare-Q resolvent obstruction and this local source example are
+different failures of shortcuts. Neither is a no-go for the desired
+low-frequency reduction.
+
+### 4. Reproduction
+
+[numerical finite and quadrature checks] Run
+
+    OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python3 massive_source_tails.py
+
+At J=.2, Delta=1, theta=.1, the literal repeated spin Hamiltonian on
+L=4, dimension 256, agrees with the full on-site conjugation below
+1.5e-15. Its exact total-Z_s commutator vanishes. Spectral sums for the
+source correlator at tau=.1,1,10 agree with (3), using the independently
+diagonalized finite XX reference, below 1.5e-15.
+
+Thermodynamic quadrature of (4) at tau=1,10,30,100,300,1000 gives
+
+    (pi J tau)^2 C_slow(tau)/sin^2(theta)=1.0000125007
+
+at the largest time. There C_slow=2.52463e-8, while the massive
+exponential is below floating-point range. These computations check
+(2)-(5); they are not estimates of the C8 candidate's central charge.
+
+
+## 52. True low-frequency source bounds
+
+Status: proved operator estimates for the full microscopic Hamiltonian.
+They control the size of retained source components, but do not construct
+an effective action or prove a conformal infrared limit.
+
+### 1. A local commutator inverse
+
+Let H=A+V, where A=sum_j A_j has the atomic properties in
+local_dressing.md and V is a bounded nearest-neighbor interaction with local norm
+
+    v=sup_j sum_(Y contains j)||V_Y||.
+
+Here v includes the weak coupling. Let O_X be Hermitian and supported
+on a finite set X, with
+
+    O_X=Q_X O_X P_X+P_X O_X Q_X.
+
+Thus it is off diagonal relative to the local all-code subspace, not
+necessarily relative to any interacting spectral subspace. With the
+same reduced inverse as before set
+
+    S_X=R_X O_X P_X-P_X O_X R_X.
+
+[proved] S_X is bounded and anti-Hermitian and
+
+    O_X=[A,S_X]=[H,S_X]-[V,S_X],
+    ||S_X||<=||O_X||/Delta,
+    ||[V,S_X]||<=2|X|v||O_X||/Delta.                          (1)
+
+The first identity and the norm follow from the local block matrices.
+Only interaction terms meeting X contribute to the last commutator.
+These are exact identities, without a perturbation expansion.
+
+### 2. True spectral windows, uniformly in ring length
+
+[proved] Let Pi_I be the spectral projection of the full H onto any
+energy interval I of width Omega. Then
+
+    ||Pi_I O_X Pi_I||
+       <=(Omega+2|X|v)||O_X||/Delta.                           (2)
+
+Proof. Compress (1). Since Pi_I commutes with H, the first compressed
+commutator is [H_I,Pi_I S_X Pi_I]. Subtract the midpoint of I from
+H_I, whose norm is then at most Omega/2. The commutator norm is at
+most Omega||S_X||. The other term is bounded by (1).
+
+For a ground vector psi_0 of energy E0, the same identity gives the
+one-sided spectral-weight estimate
+
+    ||Pi_[E0,E0+Omega] O_X psi_0||^2
+        <=[(Omega+2|X|v)||O_X||/Delta]^2.                     (3)
+
+Indeed [H,S_X]psi_0=(H-E0)S_X psi_0. This proof applies also to a
+degenerate ground space, one vector at a time. The possible one-point
+component is included rather than silently subtracted. At Omega=0,
+(2) bounds the source's complete ground-space compression by
+2|X|v||O_X||/Delta.
+
+Unlike a bare-Q resolvent, Pi_I is a true spectral projector. Its
+nonlocality causes no volume factor in this estimate because it is
+used only after the local identity (1). The estimate is valid at any
+energy density, although the low-energy application is the useful one.
+
+### 3. An exact smooth high/low operator split
+
+Choose a fixed real even smooth function f_0 with f_0(x)=1 for |x|<=1
+and f_0(x)=0 for |x|>=2. One explicit choice uses eta(x)=exp(-1/x) for
+x>0 and zero otherwise:
+
+    f_0(x)=eta(2-|x|)/[eta(2-|x|)+eta(|x|-1)].
+
+The ratio is well defined for every x; at zero the function is constant
+on a neighborhood, so the absolute value introduces no nonsmoothness.
+Let g_0 be its inverse Fourier transform, with convention
+
+    f_0(omega)=int g_0(t) exp(i omega t) dt,
+    C_0=int |g_0(t)|dt, C_1=int |g_0'(t)|dt.
+
+Both constants are finite because f_0 is smooth with compact support.
+For Omega>0 define g_Omega(t)=Omega g_0(Omega t) and
+
+    O_low=int g_Omega(t) exp(itH)O_X exp(-itH) dt,
+    O_high=O_X-O_low.
+
+[proved] These bounded operators satisfy
+
+    ||O_low|| <=(C_1 Omega+2C_0|X|v)||O_X||/Delta.             (4)
+
+To prove this, insert (1). Integrating the [H,S_X] term by parts gives
+i int g_Omega'(t)tau_t(S_X)dt, of norm at most
+Omega C_1||S_X||. The other term costs C_0||[V,S_X]||.
+The boundary terms vanish. This is an operator-norm bound on the full
+Hilbert space, not only on ground-state matrix elements.
+
+[proved] In a ground state, O_high has no spectral weight below Omega,
+including in the ground eigenspace. Its Euclidean two-source function
+therefore obeys
+
+    0<=<O_high exp[-tau(H-E0)] O_high>
+                          <=||O_high||^2 exp(-Omega tau).     (5)
+
+This follows from the spectral multiplier 1-f_0((E-E0)/Omega), which
+vanishes for 0<=E-E0<=Omega. Equation (5) concerns the high-filtered
+source. It does not assert exponential decay for O_X itself.
+
+The split is quasi-local in cell coordinates. On-site A evolution does
+not propagate support, while the bounded interaction V has a finite
+Lieb-Robinson velocity proportional to v. Approximate tau_t(O_X) by
+its evolution in a ball of radius R. Split the filter integral into
+|t|<=R/(2v_LR) and its complement. The first contribution is bounded
+by the exponential Lieb-Robinson tail; the second by the tail of
+g_Omega. Since g_0 decays faster than every inverse power, for each
+fixed power p one obtains a spatial error bounded by a constant times
+
+    ||O_X|| [exp(-aR)+C_p(1+Omega R/(2v_LR))^(-p)].
+
+Constants may depend on the fixed support X and the chosen filter,
+but not total ring length or the upper on-cell energy. No assertion
+of exponential spatial decay for a compact-frequency filter is made.
+
+### 4. What the split does and does not accomplish
+
+For v/Delta small, choose for example Omega=sqrt(v Delta). Then
+O_low has norm O(sqrt(v/Delta))||O_X||, and O_high has a strictly
+positive spectral threshold at the intermediate scale Omega, much
+larger than v. All scales remain fixed before the thermodynamic limit.
+At Omega of order v, the low part is O(v/Delta), but the high-source
+threshold is then of the same order as the retained dynamics.
+
+These estimates explain quantitatively the algebraic tails in
+massive_source_tails.md. Their amplitudes can be small while their
+asymptotic decay is slow. They also show why subtracting a one-point
+function does not supply the required operator separation.
+
+The definition uses the full interacting dynamics. It is not an
+explicit change of degrees of freedom or a convergent expansion of an
+irreducible effective action. The high-filtered source need not create
+one independently countable massive particle, and overlapping filtered
+sources are not independent variables. Thus (4)-(5) cannot be substituted
+for the connected-kernel construction still missing in C8.
+
+Exact symmetries are preserved by this filtering: conjugating by a
+symmetry commuting with H can be taken inside the integral. This is
+useful for a future construction, but does not by itself establish its
+Gaussian stiffness or dressed momentum bounds.
+
+### 5. Finite checks
+
+[numerical] The last part of massive_source_tails.py tests (2)-(3)
+on the literal four-cell spin Hamiltonian, dimension 256. Besides the
+J=.2, theta=.1 control, it uses J=.02, theta=.02, Delta=1. The exact
+perturbation local norm is bounded by
+
+    v=Delta |sin(theta/2)|+2J.
+
+There is one on-site difference and two incident XX bonds. Spectral
+windows of widths J,2J,Delta/2 are formed from the full interacting
+eigenvectors. Every compression and ground-source weight obeys the
+bound. For the smaller-coupling fixture, the width-.5 window has
+source norm .0199986667 and weight .0003999467, below the respective
+bounds .5999996667 and .3599996000. These constants are conservative;
+the point is independence of volume in the proof, not tightness at
+this one size. No spectral filter constants are estimated numerically.
+
+## 53. Ranked continuation after the tenth run
+
+1. Construct the irreducible low-frequency action for the explicit C8
+   atomic Hamiltonian, with connected support bounds and retained
+   operator subtractions. Section 51 shows why ordinary connected
+   bare-source correlations are insufficient; Section 52 gives useful
+   uniform source estimates but its filter is not a constructive action.
+   A global bare-Q inverse and an extensive isolated band remain invalid
+   substitutes. Do not rebuild the completed clean-readout controller.
+2. Keep the canonical length constraint and reference quotient in that
+   construction. The energy and cutoff estimates of Section 50 are
+   available now. A uniform canonical chemical-potential comparison
+   would strengthen the physical long-cell tail to the factorial form.
+   The dressed choice of marker density and comparison to illegal
+   selector sectors also require a thermodynamic energy argument.
+3. Carry the resulting effective interaction bound into the rational
+   total-U(1) target from run 9. Bound changes in fillings and the full
+   Gaussian quadratic form, including density-current blocks. Apply
+   the stated compact-boson infrared input only after those bounds.
+4. Independently audit the existing full-space periodic bond and core.
+   The current numerical checks are alternative calculations by the
+   same agent, not an independent referee report. For a microscopic
+   two-estimator CFT test, first reduce the implementation drastically.
+   The present violating resource example is not a practical ED job.
+5. Keep C19's fixed-d spectral compiler separate. C21-C23 do not report
+   a completed compiler, and the results here do not repair their
+   second-order source-weight and mobile-interface problems.
+
+The new estimates narrow the missing theorem but do not prove it. No
+complete argument from the full microscopic chain to a CFT at fixed
+nonzero coupling has been supplied in this run.
+
+## 54. Reproduction and final audit
+
+[numerical and exact algebra checks] From this folder, run
+
+    OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python3 local_dressing_checks.py
+    OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python3 critical_crossover.py
+    OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python3 defect_energy_checks.py
+    OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python3 massive_source_tails.py
+    OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python3 length_tail_checks.py
+
+The first script covers dimensions 16,64,256 and upper on-cell energies
+1,17,10^6. It checks first cancellation, exact charge, complete second
+order, remainder scaling, slow-time dynamics, dressed energy and
+occupation. Its high-energy conditioning repair is documented in
+Section 48. The second has literal spin ED through dimension 1024,
+4097-momentum band checks at four couplings, entropy blocks through
+256 sites on a 32768-point grid, and Casimir combinations through
+L=512. The third covers dimensions 25,125,625 in full and fixed-length
+sectors, plus 105849 quotient/constraint inequalities. The fourth uses
+two dimension-256 exact source fixtures, true spectral windows and
+thermodynamic quadrature through tau=1000. The fifth checks length-tail
+recursion on a dimension-1000 scalar atomic fixture.
+
+All five scripts passed and parsed. Their corresponding JSON records
+contain the inputs and outputs. These are controls and algebraic
+checks, not a microscopic central-charge measurement of the C8 family.
+No unchanged core/controller suite was rerun. No new computation needed
+a cluster.
+
+[provenance] The requested project memory and source handoffs were read.
+No other research folder, project STATE, or concurrent worker file was
+modified. All research artifacts are in this folder. Two temporary
+stdout logs were inadvertently written in /tmp and removed during the
+final audit; they are not deliverables or persistent external changes.
+There was no network access, subagent, independent audit, commit or push.
+RUN10_RESULT.md and RUN10_PROGRESS.md preserve this handoff.

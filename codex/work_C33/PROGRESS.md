@@ -23,3 +23,13 @@
 [Proved, computer-assisted integer certificate] For a=4, D=1000, the normalized leading Hermitian matrix is positive at n=2,4,8,12,16,23. Floor-rounded Jacobi iteration gives rational entry enclosures; fraction-free integer determinants certify positivity and an inverse-trace eigenvalue bound. At n=23 the smallest eigenvalue lies between 10^(-63.615) and 10^(-62.253). The entry-enclosure row-norm error is below 10^(-75.929). No floating-point sign test is used. The n=23 certificate took 15 seconds. The unnormalized hopping has an additional beta(0)^2 with log10 beta=-72.0416, endpoint visibility and 2g^2.
 
 [In progress] Check larger integer certificates, write the all-n analytic schedule and finite-g remainder proof, and test the loop using a gauge in which tree matrices are real. Distinct centers and Sidon-compatible margins remain unproved for general n.
+
+## Loop precision audit
+
+[Proved, computer-assisted] The tree integer certificate also passes at n=32, D=1000, with 384 bits. Its smallest normalized Hermitian eigenvalue is between 10^(-88.644) and 10^(-87.139). The n=48 certificate hit its 175-second cap and is not claimed.
+
+[Numerical, n=2 through 10] The direct imaginary same-cell formula in fast_loop.py agrees with independent source-block enumeration. The loop spectra have positive pair-sum mismatch estimates through n=10. These are leading g^2 calculations, not certified root intervals.
+
+[Numerical, n=23, linear loop response only] Integer source arithmetic and fraction-free whitening give 46 unit-circle roots with delta2 about 0.0142 and delta4 about 2.0e-7 for a loop response of metric norm 8.5e-4. This is not yet a finite-loop result.
+
+[Rejected numerical calculation] A full finite-loop solve at 256 fixed-point bits had an error enclosure much larger than the narrow bands. The output full_loop_256bit_rejected.json is preserved as a failed diagnostic. The cause is multiplication of tiny imaginary errors by express-sector source amplitudes proportional to beta^(-1), followed by whitening. The finite-loop solve is being repeated at 512 bits. No physical inference is drawn from the rejected roots.

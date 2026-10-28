@@ -1,0 +1,41 @@
+{
+  "n": 1,
+  "D": 1000,
+  "a": 4,
+  "td_power": -2000,
+  "field_power": -1000,
+  "p": 65521,
+  "image_of_i": 24297,
+  "carrier_dimension": 3,
+  "pair_resolvent_dimension": 9,
+  "f": [
+    47192,
+    63120,
+    47192
+  ],
+  "pair_product_polynomial": [
+    65520,
+    46515,
+    19006,
+    1
+  ],
+  "gcd": [
+    1
+  ],
+  "extra_determinant_checks": [
+    [
+      3,
+      6070
+    ],
+    [
+      5,
+      35609
+    ],
+    [
+      9,
+      47917
+    ]
+  ],
+  "status": "proved_no_pair_product_collision",
+  "seconds": 0.01245233416557312
+}

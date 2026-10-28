@@ -1,0 +1,83 @@
+{
+  "literal": [
+    {
+      "n": 1,
+      "cell_dimension": 22,
+      "code_bond_dimension": 4,
+      "T_relative_error": 1.2102653038818467e-09,
+      "M_error_over_T": 1.0726942116439044e-07,
+      "M_imag_error_over_T": 2.5280112554628445e-09,
+      "M_real_error_over_T": 1.0723962829120414e-07,
+      "T_previous_error": 2.305245627288774e-08,
+      "M_previous_error": 1.254016277553119e-07,
+      "measured_gap": 2.000000000000001
+    },
+    {
+      "n": 2,
+      "cell_dimension": 72,
+      "code_bond_dimension": 16,
+      "T_relative_error": 7.6027828786658e-09,
+      "M_error_over_T": 3.1482135753811606e-06,
+      "M_imag_error_over_T": 4.04446350762892e-07,
+      "M_real_error_over_T": 3.1221262087594166e-06,
+      "T_previous_error": 6.736891697163524e-08,
+      "M_previous_error": 1.6357780023383642e-06,
+      "measured_gap": 1.4142135623730956
+    },
+    {
+      "n": 3,
+      "cell_dimension": 200,
+      "code_bond_dimension": 64,
+      "T_relative_error": 6.391393448804723e-08,
+      "M_error_over_T": 4.4304116770344934e-05,
+      "M_imag_error_over_T": 1.6195151769639692e-05,
+      "M_real_error_over_T": 4.3294989282236855e-05,
+      "T_previous_error": 1.0517121300600954e-07,
+      "M_previous_error": 3.96022124817889e-05,
+      "measured_gap": 1.0000000000000022
+    }
+  ],
+  "controls": [
+    {
+      "n": 1,
+      "control": "tree",
+      "gcd_degree": 0
+    },
+    {
+      "n": 1,
+      "control": "zero_field",
+      "gcd_degree": 1
+    },
+    {
+      "n": 2,
+      "control": "tree",
+      "gcd_degree": 1
+    },
+    {
+      "n": 2,
+      "control": "zero_field",
+      "gcd_degree": 1
+    },
+    {
+      "n": 3,
+      "control": "tree",
+      "gcd_degree": 2
+    },
+    {
+      "n": 3,
+      "control": "zero_field",
+      "gcd_degree": 3
+    },
+    {
+      "n": 4,
+      "control": "tree",
+      "gcd_degree": 3
+    },
+    {
+      "n": 4,
+      "control": "zero_field",
+      "gcd_degree": 3
+    }
+  ],
+  "seconds": 0.6046973329503089
+}

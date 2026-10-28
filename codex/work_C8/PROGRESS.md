@@ -1,4 +1,94 @@
-# C8 progress, tenth run in progress
+# C8 progress
+
+2026-10-28. Tenth run completed. Nonconclusive for the original c-d
+conjecture. Start here, then read RESULT Sections 48-54. The initialized
+core and periodic bond from runs 8-9 are unchanged and should not be
+rebuilt.
+
+## Current best answer
+
+The explicit finite candidate remains PeriodicBond(flat_vacancies=True),
+with d=96*446400(q+1)+48 and m=q^2/8 projected payload modes plus one
+length mode. The controller is complete. Its conformal interpretation
+at fixed nonzero coupling remains unproved.
+
+New this run: an exact one-step local dressing on the complete atomic
+direct sum, preserving charge, length and the physical ring quotient.
+The remainder has an explicit exponentially weighted per-cell bound
+that is independent of ring length, cell dimension and upper cell
+energy. A uniform dynamics comparison holds at fixed slow time.
+
+A new variational theorem compares to an arbitrary critical retained
+Hamiltonian. It gives an O(epsilon^2) bare defect density and an
+O(epsilon^4) dressed ground-energy-density error relative to the exact
+dressed P block in the unconstrained atomic problem. Canonical costs
+are retained explicitly. For bare physical sectors at the reference
+marker density, that cost is O(epsilon b^2/M). Long-cell occupation
+has a proved local cutoff bound. Length bandwidth one also gives
+factorial ground-state tails in the unconstrained atomic model.
+
+True spectral-window estimates bound the retained component of a bare
+off-code source. Smooth filtering gives a small low-frequency operator
+and an exponentially decaying high-frequency source, with quasi-local
+spatial tails. The filter depends on full interacting dynamics and is
+not a constructive elimination or effective action.
+
+Two exact controls delimit these results. A four-state chain has a
+critical-Ising first-order projection but a bulk gap of order epsilon^2
+at every fixed coupling. An onsite-dressed XX chain has removable
+gapped ancillas but algebraic connected correlations of a bare ancillary
+source. The latter tail disappears only after subtracting its retained
+operator component. Neither example disproves the nonresonant C8 target.
+
+## Files and verification
+
+- local_dressing.md and local_dressing_checks.py, normal form, second
+  order, dynamics, and numerical conditioning.
+- defect_energy_bounds.md and defect_energy_checks.py, arbitrary
+  retained theory, physical constraint costs and length tails.
+- length_tail_checks.py, the additional factorial-tail control.
+- critical_crossover.md and critical_crossover.py, literal d=4 gapped
+  crossover with calibrated entropy and Casimir diagnostics.
+- massive_source_tails.md and massive_source_tails.py, exact slow
+  source tails and true spectral-window checks.
+- low_frequency_sources.md, the local commutator and smooth-filter
+  theorems, with their remaining constructive limitation.
+
+All five scripts pass and parse. Largest dense dimension is 1024.
+The entropy control uses blocks through 256 and 32768 Fourier points;
+Casimir checks reach L=512. Fixed-length comparison checks cover
+105849 cases. These are control models, not C8 CFT measurements.
+
+A numerical issue was repaired: the 10^6 upper-energy fixture lost a
+positive 10^-11 energy difference under direct eigensolver subtraction.
+A shifted positive inverse and Rayleigh quotient recover it. The
+residual and precision limitation are recorded, not hidden.
+
+## Remaining work, ranked
+
+1. Construct the connected irreducible low-frequency action, removing
+   retained operator propagation rather than only disconnected scalar
+   expectations. Do not reuse the bare-Q inverse, an isolated extensive
+   band, or ordinary connected source decay as an elimination proof.
+2. Retain the fixed-length quotient and prove the dressed marker-density
+   and illegal-sector energy comparisons. A canonical chemical-potential
+   bound would upgrade the physical long-length tail to factorial decay.
+3. Bound the resulting changes in fillings and Gaussian stiffness in
+   the rational target's margins, then justify the compact-boson IR at
+   one fixed nonzero microscopic coupling.
+4. Obtain an independent audit of the periodic oracle/core. A numerical
+   microscopic CFT test needs a substantially smaller implementation.
+5. Keep the fixed-d C19 spectral program separate. Nothing here supplies
+   its missing compiler or establishes unbounded c at fixed d.
+
+All research artifacts remain here. Two temporary stdout files in /tmp
+were removed at the final audit. No external research files were edited,
+and no network, subagents, independent referee, cluster job, commit or
+push was used. The task forbids editing project STATE.md, so this file
+carries the new memory. RUN10_RESULT.md and RUN10_PROGRESS.md preserve
+the completed handoff. Earlier runs and the chronological record follow.
+
+# Tenth-run chronological record
 
 2026-10-28. Resumed from the completed ninth run. The 58-control core,
 full periodic bond and flat wrapper are already complete finite
@@ -88,6 +178,41 @@ energy-density bounds, small defect occupation, and ordinary connected
 source correlations are now explicitly distinguished. A convergent
 irreducible action after the retained-operator subtractions is still
 missing. No original conjecture conclusion has been reached.
+
+Substantive step 52. low_frequency_sources.md proves a uniform bound
+on true low-energy windows. For a local bare off-code source O_X,
+its compression to an energy interval of width Omega has norm at most
+(Omega+2|X|v)||O_X||/Delta, where v is the actual perturbation local
+norm. The proof uses a local commutator inverse, not a bare global
+resolvent. A smooth spectral filter gives an exact split into a small
+low-frequency operator and a high-frequency source with exponential
+Euclidean decay and quasi-local spatial tails. The split uses full
+interacting dynamics and is not an effective-action construction.
+The source test now also verifies the spectral-window estimates in
+two literal 256-dimensional fixtures.
+
+Next: final adversarial audit and handoff. The missing all-order local
+action and Gaussian infrared identification have not been proved.
+The new results establish uniform local dressing, energy/occupation
+and true-frequency estimates, not a conclusive original answer.
+
+Substantive step 53. The actual marker transfer changes a cell length
+by at most one. This yields a factorial grand-canonical ground-state
+tail, ||1_(ell>=R)psi|| <= (v/gamma)^(R-b-1)/(R-b-1)!, for
+v<=gamma/2. The proof compares to the Hamiltonian with one cell removed
+and uses the projected ground-state equation. It needs no gap in the
+remaining cells. A three-cell scalar fixture, dimension 1000, verifies
+the recursion. The physical fixed-length version still needs a uniform
+canonical chemical-potential comparison, so the earlier 1/(R-b) bound
+remains the proved physical-sector statement.
+
+Final numerical audit found and repaired an eigensolver conditioning
+issue in the 10^6 upper-energy dressing test: direct eigenvalue
+subtraction gave a spurious negative 10^-10 energy difference. A
+shifted positive inverse plus Rayleigh evaluation recovers the positive
+1.12177e-11 value at epsilon=.01. The full residual is 4.98e-10;
+ordinary-energy fixtures are near machine precision. This numerical
+limitation and repair are recorded in local_dressing.md.
 
 # C8 progress
 
