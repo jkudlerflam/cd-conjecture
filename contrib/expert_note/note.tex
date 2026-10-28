@@ -1,0 +1,354 @@
+% Expert-review note on a candidate refutation of the c-d conjecture.
+% Compile with:  lualatex note.tex ; lualatex note.tex   (or xelatex)
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{booktabs,tabularx,array}
+\usepackage[hidelinks]{hyperref}
+\usepackage{microtype}
+
+\theoremstyle{definition}
+\newtheorem{claim}{Claim}
+\renewcommand{\theclaim}{\Alph{claim}}
+\newtheorem*{assumption}{Assumption S}
+
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\ket}[1]{|#1\rangle}
+\newcommand{\bra}[1]{\langle #1|}
+\DeclareUrlCommand\repo{\urlstyle{tt}}
+\newcommand{\dd}{\mathrm{d}}
+
+\title{Unbounded central charge at fixed local dimension?\\
+\large A candidate refutation of the $c$--$d$ conjecture, prepared for expert review}
+\author{Compiled for J.~Kudler-Flam (Institute for Advanced Study)\\
+\small from the repository \repo{github.com/jkudlerflam/cd-conjecture}, folder \repo{notes/cd_conjecture}}
+\date{28 October 2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Latorre and Sierra conjecture that a one-site translation-invariant, nearest-neighbour chain on $(\C^d)^{\otimes L}$ whose low-energy spectrum is a collection of unitary CFTs has total central charge $c\le d-1$. We describe a construction that, for every $n$, gives a Hermitian nearest-neighbour bond on $\C^{4464}\otimes\C^{4464}$ whose predicted infrared theory is $n+1$ compact bosons, so no bound of the form $c\le f(d)$ would hold. A related 24-state chain is predicted to have $c=24>d-1$. Every finite-dimensional ingredient is proved, or certified in exact arithmetic at small $n$ and checked in high precision beyond. The infrared conclusion rests on one standard but unproved input, the elimination of a massive local sector at fixed coupling followed by weak-coupling RG for a multi-component Luttinger liquid with extremely separated scales. No chain with $c>d-1$ has been simulated. The work was produced with AI assistance and has not been refereed by humans. This note states what a reviewer would need to check, and in which order.
+\end{abstract}
+
+\section{The conjecture and the claim}
+
+Latorre and Sierra~\cite{LS} consider
+\begin{align}
+H=\sum_{i=1}^{L} h_{i,i+1},\qquad h=h^\dagger \ \text{on}\ \C^d\otimes\C^d,\qquad h_{L,L+1}\equiv h_{L,1},
+\label{eq:H}
+\end{align}
+with one fixed bond $h$ on every link. If the low-energy spectrum is described by a collection of unitary CFTs with central charges $c_a$, possibly with different velocities, they conjecture
+\begin{align}
+c_T=\sum_a c_a\le d-1 .
+\label{eq:cd}
+\end{align}
+The bound is saturated by the Uimin--Lai--Sutherland chain $h=P$ (the swap), whose infrared theory is $SU(d)_1$~\cite{Sutherland}. Blocking $k$ sites raises the local dimension to $d^k$, a remark in~\cite{LS} that will matter below. A weaker question is whether any bound $c\le f(d)$ exists. Known proofs cover restricted classes (quasi-free chains obey $c\le\log_2 d$, for example), and every general lattice quantity we know that bounds $c$ grows like a length scale times $\log d$.
+
+In this note, we describe two forms of one construction.
+
+\begin{claim}[unbounded $c$ at fixed $d$]
+For every $n\ge1$ there is a Hermitian bond $h_n$ on $\C^{d_0}\otimes\C^{d_0}$, $d_0=4464$, built from one fixed alphabet and one fixed list of terms with $n$-dependent coefficients, such that, assuming the input S of Section~\ref{sec:S}, the periodic chain~\eqref{eq:H} has on every ring with $L\ge(n+3)(n+4)$ an infrared theory of $n+1$ compact bosons with positive velocities, so $c_T=n+1$. Hence $c_T$ is unbounded at $d=4464$, and $c\le d-1$ itself fails once $n\ge 4463$.
+\end{claim}
+
+\begin{claim}[a concrete instance of $c>d-1$]
+An explicit bond $h_{24}$ on $\C^{24}\otimes\C^{24}$, at a certified parameter point with $n=23$, is predicted to have $c_T=24>d-1=23$. The prediction assumes the same kind of input as Claim A for a frozen 23-letter chain, plus a matching statement for a gapless vacancy fluid and a positive dressed defect energy (Section~\ref{sec:V}).
+\end{claim}
+
+Claim A is the stronger statement and the one we ask reviewers to focus on. Claim B is cheaper and more concrete, but it has more open inputs. The finite-dimensional ingredients of both are established at the working standard of theoretical physics (proofs in the repository, exact rational or interval certificates where they exist, high-precision numerics otherwise). The infrared step of Claim A has been reduced, with explicit constants, to the single input S. In our assessment both claims are credible conditional candidates and neither is an established counterexample. The AI referee reports on the two forms reach the same verdict~\cite{refC44,refd24}.
+
+\section{The mechanism}
+\label{sec:mech}
+
+The idea fits in a paragraph. Sites group spontaneously into long cells. Each cell carries an exactly degenerate code of $n$ logical fermion modes, which acts as one large effective site. Neighbouring cells interact only through the single bond at their junction, and only at second order in that bond, so the cells form an effective chain with a logical Hamiltonian we can design. We design a stable multi-component Luttinger liquid with $c=n$. Finally the cells are made mobile, so that translation is unbroken and the cell lengths contribute one more boson. Each step is described below in physical terms.
+
+\subsection{Spontaneous cells}
+
+Letters carry conserved types (marker, data, token, hole), so a configuration is a sequence of segments between markers. A walker confined to a segment of $\ell$ sites has a confinement energy of order $t[1-\cos(\pi/(\ell+1))]$, which favours long segments, while a marker chemical potential favours short ones. The energy per site is then minimized at one chosen length $b$, with a selection margin of order $b^{-4}$ in units of $t$. Wrong lengths and illegal words (pairs whose arrows do not match) are excluded by operator lower bounds, at any fixed small value of the inter-cell coupling~\cite{campaign,C44}. A ten-letter example forms cells of length three unaided in VUMPS~\cite{demo}.
+
+\subsection{Codes with idle ports}
+
+Inside a selected cell the Hamiltonian is a sum of positive terms whose common zero space is one fixed state of a ``token'' (a walker in its vacuum species) tensored with $n$ free data bits. This is the code, of dimension $2^n$, and it is frustration free. The two end sites of a cell, the ports, are touched by the inter-cell coupling $\lambda V$ only through operators that change the token species at the port from vacuum to excited. Their compression onto the code therefore vanishes, $PVP=0$, and first order in $\lambda$ is absent.
+
+\subsection{Second-order exchange}
+
+At order $\lambda^2$ the port excites the tokens of the two cells adjacent to a junction. Each excited token runs into its cell, where a number-conserving conversion of amplitude $g$ exchanges one unit of charge with the data site $j$ under it, flipping that data bit, and then returns. The port de-excites the pair. When the two conversions carry opposite charge, the net process moves one logical fermion from one cell to the next, with an amplitude set by return filters $f_j$ of the excited token. A Jordan--Wigner sign carried by the neutral token makes this a fermion bilinear, and the total charge $Q$ (data occupation plus token charge) is an exact on-site $U(1)$. At order $\lambda^2g^2$ the effective chain is
+\begin{align}
+H_{\rm eff}=\sum_x\Big[\sum_{i,j=1}^{n}T_{ij}\,c^\dagger_{x,i}c_{x+1,j}+\text{h.c.}+\sum_{i,j}M_{ij}\,c^\dagger_{x,i}c_{x,j}\Big]+\text{const}+O(\lambda^2g^4)+O(\lambda^3),
+\label{eq:Heff}
+\end{align}
+with $T$ and $M$ of order $\lambda^2g^2$ and no three-cell term at order $\lambda^2$. Non-Gaussian terms first appear at order $g^4$. A large energy $D$ on an ``express'' rail makes $T$ a Gram matrix, $T\propto -D^{-(2n+4)}\Gamma$ with $\Gamma>0$, so every band crosses a common chemical potential~\cite{C39}.
+
+\subsection{An incommensurate multi-flavour target with exact \texorpdfstring{$U(1)$}{U(1)}}
+
+The logical symbol $h(k)=Te^{ik}+T^\dagger e^{-ik}+M$ gives $n$ bands. Write $p_{a,\pm}$ for the two Fermi points of band $a$ and $\theta_a=(p_{a,+}+p_{a,-})/2$ for its sea centre. The target requires $2n$ simple Fermi points, distinct centres, and positive margins
+\begin{align}
+\delta_2=\min_{\alpha\neq\beta}|p_\alpha-p_\beta|,\qquad
+\delta_4=\min_{\{\alpha,\beta\}\neq\{\gamma,\delta\}}\big|p_\alpha+p_\beta-p_\gamma-p_\delta\ \mathrm{mod}\ 2\pi\big|,
+\label{eq:margins}
+\end{align}
+where the minimum runs over unordered pairs with repetition, so it includes pair transfer between bands, exchange, and every umklapp. With exact $U(1)$, a number-conserving vertex is then either a density or current product (Gaussian and marginal), or oscillating with momentum at least $\delta_4$, or of scaling dimension at least three. A relative change of the Gaussian stiffness of at most $1/4$ keeps those dimensions above $3\sqrt{3/5}\approx2.32$, whatever the velocity ratios~\cite{C45}. This is the standard stability of a non-resonant multi-component Luttinger liquid~\cite{BFM,MP}. Symmetric targets are avoided on purpose. $SU(N)_1$ and the $SO(2n)$ point sit on separatrices and run away under small anisotropy, which is the familiar fate of the $SU(3)$ point of the spin-1 chain~\cite{ItoiKato}.
+
+The difficulty is the centres. A real hopping matrix pins every centre at $0$, and pair transfer $2\theta_a-2\theta_b=0$ is then resonant. The 46-letter core of~\cite{C39} solves this with two independent excited buses, with stub hoppings $w$ and $wv$ and port phases differing by $\pi/2$, which give
+\begin{align}
+T=-J\big[\Gamma(w)+i\eta\,\Gamma(wv)\big],\qquad
+J=2\lambda^2g^2\,\frac{q^{2n+2}}{S^2}\,D^{-(2n+4)},\qquad S=\sum_{\ell=0}^{n+1}q^{2\ell},
+\label{eq:T}
+\end{align}
+where $q=(wu)^2$ is the bias of the vacuum walker, $J_0=J/\lambda^2$ is the coupling-independent part, and
+\begin{align}
+\Gamma_{ij}(w)=\int_0^\infty f_i(t)f_j(t)\,\dd t,\qquad
+f_j(t)=\int_0^t\big[e^{-s\mathcal A}\big]_{0j}\big[e^{-(t-s)\mathcal A}\big]_{j0}\,\dd s,\qquad \mathcal A=4I-w\,\mathrm{adj}(P_n),
+\label{eq:Gamma}
+\end{align}
+with $P_n$ the path on the $n$ data sites. The relative factor $i$ is a gauge-invariant loop phase. With $D_w=\mathrm{diag}(w^{2j})$, $C(w)=D_w^{-1}\Gamma(w)D_w^{-1}$ and $B(v)=D_vC(wv)D_v$, a positive congruence turns the zero-energy problem into $h(k)=-2C(w)\cos k+2\eta B(v)\sin k+\mu E_u$. Its centres at $\mu=0$ are $\theta_j=-\arctan(\eta r_j)$, with $r_j=\kappa_jv^{4j}(1+o(1))$ the generalized eigenvalues of $B(v)$ against $C(w)$. A weak on-site readout, which counts a data bit only where the biased walker sits, adds a geometric field $\mu E_u$, $E_u=\mathrm{diag}(u^{4j})$, which moves the two Fermi points of band $j$ in opposite directions with slopes $s_j\propto u^{4j}$. Centres and slopes are both lacunary, with consecutive ratios below $1/32$. A nonzero signed combination of at most four of them is then dominated by its first nonzero term, and this proves, for every $n$, that a small field leaves
+\begin{align}
+\delta_4\ \ge\ \min\big(|\theta_{n-1}|/4,\ \mu s_{n-1}/4\big)>0 .
+\label{eq:delta4}
+\end{align}
+The parameters $(\eta,u,v,\mu)$ come from a dyadic search that accepts a tuple only after exact Sturm isolation of all $2n$ roots and rational comparison of all pair sums. Its termination is proved analytically, though no depth bound is given~\cite{C39,C42,refC39}.
+
+\subsection{Mobile cells}
+\label{sec:mobile}
+
+With frozen cells the chain breaks translation $b$-fold on rings with $b\mid L$ and carries immobile defects on other rings. It is then outside the hypothesis of~\cite{LS} on most ring lengths, and Latorre and Sierra's blocking remark applies~\cite{redteam}. There are two mobile completions.
+
+Form W (wrapper). A separate selector track lets cells take two lengths, $n+3$ and $n+4$. Typed holes and a length filter keep $n+2$ occupied core sites in both, a helix of compensators makes the port coupling independent of the two lengths, and a marker move moves a hole over a cell boundary while acting as the identity on the payload~\cite{C8,C32,C44}. The sequence of long and short cells is a hard-core gas, a $c=1$ ``length fluid'', so the predicted total is $c=n+1$. The payload rides on the length fluid as spin rides on charge in the Ogata--Shiba picture~\cite{OgataShiba}.
+
+Form V (vacancy). Add one vacancy state $\ket{\varnothing}$ that swaps freely with any letter, and let a weak copy of the frozen bond act only on adjacent occupied sites. In squeezed coordinates the vacancies are a free hard-core gas (one charge boson) and the occupied sites carry the frozen chain. The $b$ translates of a frozen pattern become charge boundary twists, that is, a finer charge-winding lattice, instead of a $b$-fold degeneracy~\cite{campaign,C41}. This completion was proposed in S.~the collaborator's campaign~\cite{campaign}, and at $n=23$ it gives $c=23+1=24$ with $d=24$.
+
+\section{The explicit ingredients}
+
+\subsection{Form W at \texorpdfstring{$d_0=4464$}{d0=4464}}
+
+The site space is
+\begin{align}
+\C^{4464}=\C^4_{\rm sel}\otimes\Big[\big(\C^3_{\rm tag}\otimes\C^2_{\rm filter}\otimes\C^{46}_{\rm core}\big)\oplus\C^3_{\rm hole}\Big]\otimes\C^2_{\rm helix\,A}\otimes\C^2_{\rm helix\,B},
+\label{eq:site}
+\end{align}
+so $d_0=4\cdot(3\cdot2\cdot46+3)\cdot4=4464$, and the bond is
+\begin{align}
+h_n=h_{\rm sel}+P_{\rm int}\otimes h_{\rm wrap}+h_{\rm helix}+h_{\rm move}+\lambda\,h_{\rm port}+h_{\rm field},
+\label{eq:hn}
+\end{align}
+with every term written out in~\cite[\S2]{routeAfinal}. The 46 core letters are ten shared data, vacuum and marker letters plus eighteen excited letters for each of the two buses. Every core move enters as a positive edge matrix, and each vacuum edge is replaced by $(q\ket{j}-\ket{j+1})(q\bra{j}-\bra{j+1})$, so the core is positive and frustration free with code
+\begin{align}
+G\ket{b}=S^{-1/2}\sum_{\ell=0}^{n+1}q^{\ell}\,\ket{\ell,v;b},\qquad b\in\{0,1\}^n,\qquad
+\gamma_{\rm core}\ge\min\big(K,\,1-|g|,\,1+q^2-2q\cos\tfrac{\pi}{n+2}\big).
+\label{eq:code}
+\end{align}
+The exact coefficient of $\lambda^2$ between two cells is~\cite{C39}
+\begin{align}
+K_2=-\frac{q^{2n+2}}{S^2}\sum_{r=1,2}b_r^2\,B_r^\dagger\big(H_r\otimes I+I\otimes H_r\big)^{-1}B_r,\qquad b_1=1,\ b_2=\sqrt\eta,
+\label{eq:K2}
+\end{align}
+with $H_r$ the excited-cell Hamiltonian of bus $r$ and $B_r$ its pair-source map. Its Gaussian part at order $g^2$ is~\eqref{eq:T}. The literal $2116\times2116$ core bond is in \repo{codex/work_C39/literal.py}. Certified points at $n=1,2,3$ ($w=1/4$, $v=1/1024$, $u=1/64$, $\eta=1/100$, $\mu=10^{-(8n+10)}$) have $\delta_4>5.11\times10^{-16}$, $1.23\times10^{-28}$, $2.36\times10^{-41}$. They transfer to finite $D$ and $g$ with $\log_{10}D\approx102,121,155$ and $g=2^{-1138},2^{-1738},2^{-2761}$~\cite{C42}.
+
+\subsection{Form V at \texorpdfstring{$d=24$}{d=24}}
+\label{sec:V}
+
+With $h_{23}$ the explicit 23-letter frozen bond (data letters, a token on a data or express rail, five marker letters, a port $\lambda V$ and on-site terms~\cite{explicit}) and $n_{\rm occ}=1-\ket{\varnothing}\bra{\varnothing}$, the bond is
+\begin{align}
+h_{24}=-t\sum_{a=1}^{23}\big(\ket{\varnothing a}\bra{a\varnothing}+\text{h.c.}\big)+J\,(\iota\otimes\iota)\,h_{23}\,(\iota\otimes\iota)^\dagger-\frac{\mu}{2}\big(n_{\rm occ}\otimes1+1\otimes n_{\rm occ}\big).
+\label{eq:h24}
+\end{align}
+Occupied number, internal charge and marker number are conserved. In squeezed coordinates, and for any internal bond, the vacancy hopping becomes $-t(T_{\rm bulk}\otimes1+B\otimes R+\text{h.c.})$, where $R$ cyclically shifts the internal word when a particle crosses the cut, and the internal coupling becomes $\sum_jA_j\otimes h_{23}(j,j+1)$, with $A_j$ the indicator that occupied sites $j$ and $j+1$ are adjacent. On a charge sea of density $\rho$ the first-order coupling is
+\begin{align}
+P_{\rm sea}\,V\,P_{\rm sea}=\alpha(\rho)\,H_{23}^{\rm squeezed},\qquad \alpha(\rho)=\rho-\frac{\sin^2(\pi\rho)}{\pi^2\rho},\qquad \alpha(\tfrac12)=\tfrac12-\tfrac{2}{\pi^2}.
+\label{eq:alpha}
+\end{align}
+In material coordinates the vacancy problem is the $q=0$ phase model~\cite{BortzSergeev}, with Luttinger parameter $K_{\rm gap}=4$ at $\rho=1/2$. For $2/5<\rho<3/5$, and a dressed scaling metric at least $4/5$ of the reference, every uniform vertex carrying a nonzero charge harmonic has dimension at least $(4/5)/\rho^2>20/9$, fractional marker harmonics included, so only the payload's own resonances remain, and those are excluded by its certified margins~\cite{campaign,C41}. The internal point at $n=23$ (cell length 24) has $D_x=D_M=1000$, $\Delta=4-2\cos(\pi/25)$, $g=2^{-365}$, a weak loop $t_d=\beta 2^{-136}$ and a data field $2^{-214}$ in units of the leading hopping scale~\cite{C33}. Its integer interval certificate gives 46 simple Fermi points with $\delta_2>0.0140193$ and $\delta_4>3.1558\times10^{-7}$. The cell-length selector has margin $\gamma_{24}=7.567\times10^{-5}$, and all wrong lengths and illegal words are excluded for $0<\lambda\le2^{-20}$~\cite{campaign}.
+
+\begin{table}[t]
+\centering\small
+\begin{tabularx}{\textwidth}{>{\raggedright\arraybackslash}p{0.33\textwidth}>{\raggedright\arraybackslash}X>{\raggedright\arraybackslash}p{0.2\textwidth}}
+\toprule
+Ingredient & Where & Status \\
+\midrule
+46-letter core, code, $K_2$, all-$n$ band lemma & \repo{codex/work_C39/} (\repo{PROOFS.md}, \repo{literal.py}, \repo{certify.py}) & proved, certified $n\le3$, AI referee~\cite{refC39} \\
+Finite $D$, $g$ budgets for every $n$ & \repo{codex/work_C42/} (\repo{PROOF.md}, \repo{budgets.py}) & proved \\
+Wrapper on the 46-letter core, $d_0=4464$ & \repo{codex/work_C44/}, built on \repo{codex/work_C8/}, \repo{codex/work_C32/} & proved, AI referee~\cite{refC44} \\
+Local Schrieffer--Wolff, threshold, schedule & \repo{codex/work_C45/} (\repo{PROOF.md} \S3--8) & proved, conditional on S \\
+Attempted proof of S & \repo{codex/work_C46/} & partial results \\
+23-letter frozen bond, $n=23$ certificate & \repo{contrib/explicit_candidate/}, \repo{codex/work_C33/}, \repo{codex/work_C37/} & certified, rerun twice \\
+Margins of the 23-letter chain, $n\le23$ & \repo{contrib/margins_audit/} & high-precision numerics \\
+Vacancy lift, squeezing, sector bounds, harmonics & \repo{contrib/counterexample_campaign/} & finite parts proved, AI referee~\cite{refd24} \\
+Assembled argument, both forms & \repo{contrib/routeA_final/README.md} & synthesis \\
+Mechanism checks at small $d$ & \repo{contrib/routeA_demonstrator/}, \repo{contrib/vacancy_mobile_numerics/}, \repo{contrib/mobile_cells/} & numerical \\
+\bottomrule
+\end{tabularx}
+\caption{Where each ingredient lives in the repository. Paths are relative to \texttt{notes/cd\_conjecture/}.}
+\label{tab:pointers}
+\end{table}
+
+\section{Order of limits and scales}
+\label{sec:limits}
+
+The order is as follows. (i) Fix $n$. (ii) Choose every coupling, each after the quantities it must beat. For Form W this is the rational witness $(\eta,u,v,\mu)$ with its margins and a length density avoiding the finitely many mixed resonances, then $D$, then $g$, then the wrapper ratios, then the marker hopping and readout, and the port coupling $\lambda$ last~\cite{C45}. For Form V it is the internal point, then $\lambda$, then $t$, then a density in $(2/5,3/5)$, then $J/t$, then $\mu$. None of these is sent to zero and none depends on $L$. (iii) Take $L\to\infty$ over all ring lengths above a fixed threshold. (iv) Only then compare different $n$. Nothing is uniform in $n$.
+
+Two interchanges are illegal. A finite-cluster or finite-ring expansion in $\lambda$ is not uniform in $L$, since the retained code band has width growing with $L$ and the length or charge fluid is gapless, so no global Schrieffer--Wolff argument reaches the thermodynamic limit. And the limits that equalize the two cell lengths of Form W are never taken. The mismatch is bounded at fixed small wrapper ratios chosen before $\lambda$.
+
+The central charge should be read from the conformal towers or from the entanglement of an interval of the infinite chain,
+\begin{align}
+S(\ell)=\frac{n+1}{3}\log\ell+O(1),
+\label{eq:Sl}
+\end{align}
+which does not depend on the velocities. The Casimir coefficient is velocity weighted, and at irrational length density the zero-mode sectors drift with $L$ (as for an XXZ chain in a generic field), so $L(E_0-eL)$ has no limit~\cite{refC44}.
+
+The scales are extreme. Carrying out the Form W schedule with the constants of S set to one gives, in $\log_{10}$, $D\approx114$, $J_0\approx-1472$, $\lambda\approx-38263$ and a payload energy unit $W\approx-65472$ at $n=1$, with $W\approx-230507$ and $-639244$ at $n=2,3$. The conformal regime begins beyond about $10^{35}$, $10^{130}$ and $10^{303}$ cells~\cite{refC44}. For Form V at $n=23$ the referee estimates $\lambda$ below $10^{-31}$ (below $10^{-435}$ with the generic second-order remainder), $J/t$ below $10^{-510}$, payload speeds below $10^{-1000}t$, and a defect crossover length above $10^{517}$ sites~\cite{refd24}. Existence at fixed $n$ does not need moderate numbers, since the conjecture concerns each fixed $h$ and no step bounds a small scale from below by a larger one. But nothing at these parameters will ever be checked by simulation.
+
+Two consistency checks follow. At fixed $d$ the normalized bonds $h_n/\|h_n\|$ have accumulation points, and $c$-theorem reasoning then requires a limit point to be gapless and non-conformal or to have a diverging crossover scale. The construction meets this, since its crossover energy vanishes faster than any power of $\|h_n\|$, and its natural limit points are a dilute $z=2$ threshold where cells become infinitely long or a point with extensive degeneracy. Second, a proved conditional bound in the repository, $c\le1+(6/\pi)K\log d$ when $c$ conformal levels appear on rings of length at most $K$, forces any counterexample to have a conformal crossover length of at least $\pi(c-1)/(6\log d)$ sites. The crossover lengths above grow much faster.
+
+\section{What is proved, what is computed, and what is assumed}
+
+\subsection{Proved}
+
+For Claim A the following hold for every $n$, with proofs in the cited folders. The core is positive and frustration free with the exact $2^n$ code~\eqref{eq:code}, exact $U(1)$ and fermion parity~\cite{C39}. The second-order bond~\eqref{eq:K2} has no first-order or three-cell part and its order-$g^2$ part is the Gaussian chain~\eqref{eq:T}. The lacunary pencil gives $2n$ simple Fermi points, distinct centres and $\delta_2,\delta_4>0$, and explicit $D$ and $g$ preserve all of this together with a bound on the complete non-Gaussian remainder~\cite{C39,C42}. The wrapper keeps positivity, the code, the gap and the $U(1)$, its occupation filter and selector secant bound exclude every illegal, marker-free and wrong-length sector, and on every ring with $L\ge(n+3)(n+4)$ the unperturbed ground space is the set of selected tilings with their codes~\cite{C44}. The two lengths' bonds agree up to an explicit error that can be made smaller than any prescribed fraction of $J_0$~\cite{C44}.
+
+The infrared reduction~\cite{C45} writes the chain in ordered cell coordinates as $H=A+\lambda V+\lambda^2F$ with $A_j\ge\Delta(1-P_j)$ and $\dim P_j=2^{n+1}$, and builds a range-three generator $S_{\rm loc}=\lambda S_1+\lambda^2S_2$ such that
+\begin{align}
+e^{S_{\rm loc}}He^{-S_{\rm loc}}=D+R,\qquad PDP=\lambda^2\big[PFP-PVQA^{-1}QVP\big],\qquad \|R\|_a\le C_{\rm SW}\lambda^3,
+\label{eq:SW}
+\end{align}
+with $D$ locally block diagonal, $C_{\rm SW}=2^{16}(v_0G/\Delta+v_0^3/\Delta^2)$, $G=f_0+48v_0^2/\Delta$, valid for $\lambda\le\min(v_0/G,\Delta/(192v_0))$, and the norm $\|\cdot\|_a$ independent of the number of cells. A completely positive extension argument gives the ground-relative threshold
+\begin{align}
+D\ \ge\ E_P\,I+\frac{\Delta}{2}\sum_j(1-P_j),
+\label{eq:threshold}
+\end{align}
+which allows moving defects and does not require a gap inside the extensive code band. The schedule then ends with
+\begin{align}
+\lambda\ \le\ \frac{\epsilon_n\,J_0/s}{16\,A_{{\rm dec},n}\,C_{\rm SW}},\qquad W=\lambda^2J_0/s,
+\label{eq:lambda}
+\end{align}
+where $\epsilon_n$ is the tolerance built from the margins and $A_{{\rm dec},n}$ is a constant of S. A separate attempt to prove S~\cite{C46} establishes a uniform thermal comparison for the block-diagonal reference, the free energy of the Gaussian reference over its $2n+2$ chiral speeds, invariance of the pressure under the cyclic gluing, and $c\ge n+1$ from the Sugawara bound once a unitary CFT limit is granted.
+
+For Claim B the proved parts are the bond and its conservation laws, the squeezing identity and~\eqref{eq:alpha}, global length selection and illegal-word exclusion at fixed nonzero $\lambda$, the free-charge momentum threshold at half filling, and the harmonic selection rule within the bosonization dictionary~\cite{campaign,C41}.
+
+\subsection{Computed}
+
+Exact rational certificates exist for the band lemma at $n=1,2,3$, and a referee reproduced the margins at the certified tuple through $n=8$ in 500 to 1300 digits~\cite{refC39}. The literal core bond and the complete second-order bond at $n\le3$ agree with the formulas, and an independent reimplementation reproduces the bond to $7\times10^{-17}$~\cite{refC39}. Two- and three-cell exact diagonalizations give fourth-order residuals stable as $\lambda$ is halved, though at those parameters they resolve the scalar bond and the readout, not the tiny hopping~\cite{refC39}. For the wrapper, the $n=1$ legal cell (dimensions 1728 and 4320) has the two-dimensional code at both lengths, and projected marker-graph spectra match the joint length--payload momentum formula to $2.4\times10^{-14}$. The referee of C44 and C45 rebuilt the charge-gap bounds, the selector bounds for $b$ up to 4470, the equalization inequality, the local Schrieffer--Wolff identity (to $7\times10^{-16}$, with $\|R\|/\lambda^3$ converging and linear in the number of cells) and the Gaussian metric bound, from the prose and without importing the authors' code~\cite{refC44}.
+
+For Claim B, the 576-by-576 bond was rebuilt independently entry by entry, the $n=23$ certificate was regenerated bit for bit twice, and a margins audit finds positive $\delta_4$ at every $n\le23$ in 115- to 313-digit arithmetic~\cite{refd24,margins}.
+
+The mechanism has been seen at small $d$. A ten-letter frozen bond forms cells unaided and its microscopic chain gives $c=1.00$ to $1.02$ by finite-entanglement scaling at three couplings, with ring spectra matching the effective logical chain to better than $6\times10^{-3}$ relative and $z=1$~\cite{demo,FES}. Calibration chains at the same correlation lengths read $0.90$ to $0.92$, so that estimate carries a systematic uncertainty near $0.1$. A $d=6$ mobile toy has a unique ground state on rings $L=8$ to $18$ and $c=2$ from three estimators~\cite{mobile}. The vacancy lift of the ten-letter bond ($d=11$) has a unique ground state on rings $L=5$ to $11$ up to a payload doublet, and a calibrated charge boson with $c=0.998$, but its payload is 360 times slower and its half of $c=2$ is not resolved~\cite{vacnum}. No chain with $c>d-1$ has been simulated, and none of the small-$d$ checks uses the two-bus core.
+
+\subsection{The load-bearing assumption}
+\label{sec:S}
+
+Everything above is finite-dimensional or a fixed-order local statement. The passage to an infrared CFT rests on one input, stated in~\cite[\S5]{C45} and restated by the referee~\cite{refC44}.
+
+\begin{assumption}
+Let $D+R$ be as in~\eqref{eq:SW}, with $D$ locally block diagonal and the threshold~\eqref{eq:threshold}. Suppose the retained block is $W$ times a number-conserving quadratic reference with finitely many simple Fermi points and positive margins~\eqref{eq:margins}, plus a relative correction $\epsilon$ in a weighted local coefficient norm, and $R$ is symmetric, quasi-local and $\|R\|_a\le\epsilon W$. Suppose also that the local operator lattice is that of the compact bosons with identity transport, with no extra fractional vertex. Then (a) integrating out the auxiliary sector, with the retained fields left unintegrated, changes the connected low-frequency retained vertices by
+\begin{align}
+\|\delta S_R\|_{\rm LE}\le A_{\rm dec}\|R\|_a,\qquad \|\delta S_R(\omega)-\delta S_R(0)\|_{\rm LE}\le A_{\rm dec}\|R\|_a\,|\omega|/\Delta,
+\label{eq:Sa}
+\end{align}
+with $A_{\rm dec}$ finite and uniform as $W/\Delta\to0$, and (b) the resulting multi-component compact-boson theory obeys weak-coupling RG, with a marginal majorant $x(\ell)\le X_0+A_\beta\int_0^\ell x^2$ and irrelevant couplings decaying as a positive power of the energy, set by $\sigma=3\sqrt{3/5}-2$. All constants depend only on the normalized reference, not on $\Delta$, the core scale or the wrapper ratios.
+\end{assumption}
+
+Under S, choosing $\epsilon_n$ so that $A_\beta X_0\,\ell_*<1/2$ over the whole interval $\ell_*=\log(e_{\rm top}/e_{\rm det})$ between the top bandwidth and the lowest detuning scale gives $n$ payload bosons and one length boson. The last clause of S matters. If the constants depended on $\Delta$ or on the wrapper ratios, the choice of $\epsilon_n$ in~\eqref{eq:lambda} would be circular~\cite{refC44}.
+
+In physics terms, S is how the Heisenberg chain is obtained from the large-$U$ Hubbard chain. One writes $(4t^2/U)\sum(\mathbf S_i\cdot\mathbf S_j-\tfrac14)$, treats higher orders as small local symmetric corrections, and invokes the stability of $SU(2)_1$~\cite{OgataShiba}. Part (a) is the first step and part (b) the second. The application here is unusual in three ways. The protection comes from momentum margins, not a symmetry ($\delta_4\sim10^{-16},10^{-28},10^{-41}$ at $n=1,2,3$). Many small parameters are chosen in sequence. And the velocities span many decades, with $n$ separate crossover scales.
+
+Literature status. We know of no theorem that covers S~\cite{litIR}. Hamiltonian-simulation results control low-energy spectra only with couplings that grow with system size~\cite{CMP,KPBC}. The local Schrieffer--Wolff transformation of Bravyi, DiVincenzo and Loss gives a volume-independent local remainder at fixed order, the same kind of statement as~\eqref{eq:SW}, which C45 proves directly with explicit constants, but for the spectrum it gives only an extensive energy error~\cite{BDL}. Volume-independent effective Hamiltonians exist to finite order~\cite{DFF}. Prethermal results keep local dynamics in the low-energy sector for times $\exp[(\Delta/\epsilon)^a]$, not for the thermodynamic limit~\cite{YinLucas}. Constructive RG controls correlations of multi-channel Luttinger liquids with arbitrary velocities and pairwise non-resonance~\cite{BFM,MP,PSS}, which is close to part (b), but it has not been applied to a model obtained by integrating out a massive sector, and it does not compute $c$. On the physics side the step is confirmed in large-$U$ Hubbard and related models with up to four flavours and two velocity scales. The documented failures involve marginal flows or symmetry-allowed relevant operators missed at low order~\cite{ItoiKato,OshikawaAffleck}, which the margins are designed to exclude. Reference~\cite{C46} also shows, with a one-cell example (an auxiliary level of gap $\Delta$ whose energy depends on two logical occupations through $u$, coupled by $\lambda\sigma_x$), that the raw Grassmann expansion of the eliminated action has coefficients $\lambda^2u^m/\Delta^{m+1}$ and diverges for $u\ge\Delta$ even at zero temperature, while the operator effective Hamiltonian is bounded. A rigorous route therefore needs a resummed retarded action. A sufficient theorem would be a decoupling statement in imaginary time, with kernels decaying in time at a rate proportional to $\Delta$ and exponentially in space, uniformly in volume and temperature, fed into the constructive RG~\cite{litIR}.
+
+\subsection{Additional inputs for Form V}
+
+Claim B needs S for the frozen 23-letter chain after blocking 24-site cells (input P), and two further statements~\cite{refd24,C41,campaign}. M (matching) says that, with the charge field retained, the remaining induced correction obeys $\|R\|_{\rm LE}/J\to0$ as $J/t\to0$, for example $\|R\|_{\rm LE}\le C(J^2/t)(1+|\log J/t|^p)$. The dressed cost of a wrong-length cell must stay positive at finite $J$. Its bare cost is of order $J$ and the dressing per defect is argued to be $O(J^2/t)$ from a finite local susceptibility, with tagged-defect numerics to $L=20$ and 264 exact diagonalizations without an undercut. The collaborator's own adversarial audit~\cite{audit} withdrew an earlier ``verified'' verdict because a uniform finite-$J$ dressed-defect comparison is not established. Uniqueness of the ground state on every ring is also open for these complex bonds, though~\cite{LS} does not require it.
+
+\section{What a reviewer should check, in order}
+
+\begin{enumerate}
+\item Scope. Does an infrared theory of $n+1$ compact bosons with different velocities, unbroken translation and $L$-dependent zero-mode sectors count as ``a collection of unitary CFTs'' in~\eqref{eq:cd}? Latorre and Sierra allow different velocities~\cite{LS}, and the XXZ chain in a generic field has the same zero-mode drift. If the answer is no, the construction does not bear on the conjecture as stated and nothing below matters.
+\item Assumption S (Section~\ref{sec:S}). Is it true here, with margins near $10^{-41}$ at $n=3$, many sequential small parameters and velocities spread over many decades? Is there a mechanism, such as a relevant operator generated at high order, a marginal flow, or an orthogonality effect from the extensive code band, that defeats it? Are its constants independent of $\Delta$ and the wrapper ratios? This is the decisive question.
+\item The band lemma for the 46-letter core~\cite[PROOFS \S2--5]{C39} and its finite-parameter transfer~\cite[PROOF]{C42}. The lacunarity argument and the pair-sum classification can be checked by hand. \repo{certify.py} reruns the exact certificates in seconds.
+\item The local reduction~\cite[PROOF \S3--4]{C45}, Eqs.~\eqref{eq:SW} and~\eqref{eq:threshold}, which are short, and the schedule~\cite[PROOF \S8]{C45} for circularity.
+\item The wrapper~\cite[PROOFS]{C44}. The exclusion bounds were rebuilt by the referee. The transport overlap and the source formula (C44 Eqs.~9 and~11) were checked only by the pipeline that wrote them, at $n\le2$, and an independent rebuild is in progress (\repo{contrib/verify_C44/}, no report yet).
+\item For Claim B, the squeezing identity, the sector bounds, the $n=23$ certificate, the harmonic selection rule, and inputs M and the dressed defect cost~\cite{campaign,audit}.
+\end{enumerate}
+The scripts that reproduce every finite claim are listed in \repo{contrib/expert_note/REPRODUCE.md}. The two AI referees asked, before acceptance, for a calibrated $c=n+1$ from two estimators on a small member of the same family at couplings where the payload is resolved, for the rebuild in item 5, and for a human reading of C39 to C45~\cite{refC44,refd24}.
+
+\section{Provenance and contributions}
+
+This note and the work it summarizes were produced with AI assistance, and none of it has been refereed by a human. J.~Kudler-Flam directed the project, set the working standard, and coordinated the work, with Claude Opus 5.5 (Anthropic) as coordinating agent, Claude agents (Opus 5.5, and Sonnet 5.5 for the literature check) as authors of the referee, red-team, literature and numerical folders, and closed-book runs of gpt-6-astra (OpenAI, through the Codex CLI) for most derivations. The runs are labelled C1 to C47, and C32, C33, C37, C39, C41, C42, C44, C45 and C46 are the ones cited here. S.~the collaborator ran a parallel campaign with GPT-6-family Codex workers. It proposed the one-vacancy completion and wrote the $d=24$ synthesis, proved the global sector bounds of the 23-letter chain, regenerated the $n=23$ certificate, carried out the vacancy infrared analysis, and later ran an adversarial audit that revised its own $d=24$ verdict from verified to conditional. That campaign continues on the remaining matching step~\cite{campaign,audit}. The 23-letter internal bond and its certificate came from the coordinating side. The referees and the red team were separate agents, but all were AI models, and the C39 to C45 chain comes from one model family. This note was drafted by Claude Opus 5.5 from the repository at its state of 28 October 2026.
+
+\begin{thebibliography}{99}\small
+
+\bibitem{LS} J.~I. Latorre and G.~Sierra, ``The $c$--$d$ conjecture,'' J. Stat. Mech. (2024) 113103, arXiv:2403.17242.
+
+\bibitem{Sutherland} B.~Sutherland, ``Model for a multicomponent quantum system,'' Phys. Rev. B 12 (1975) 3795. G.~V. Uimin, JETP Lett. 12 (1970) 225. C.~K. Lai, J. Math. Phys. 15 (1974) 1675.
+
+\bibitem{OgataShiba} M.~Ogata and H.~Shiba, ``Bethe-ansatz wave function, momentum distribution, and spin correlation in the one-dimensional strongly correlated Hubbard model,'' Phys. Rev. B 41 (1990) 2326.
+
+\bibitem{BDL} S.~Bravyi, D.~P. DiVincenzo and D.~Loss, ``Schrieffer--Wolff transformation for quantum many-body systems,'' Ann. Phys. 326 (2011) 2793, arXiv:1105.0675.
+
+\bibitem{DFF} N.~Datta, R.~Fern\'andez and J.~Fr\"ohlich, ``Effective Hamiltonians and phase diagrams for tight-binding models,'' J. Stat. Phys. 96 (1999) 545, arXiv:math-ph/9809007.
+
+\bibitem{YinLucas} C.~Yin and A.~Lucas, ``Prethermalization and the local robustness of gapped systems,'' arXiv:2209.11242.
+
+\bibitem{CMP} T.~Cubitt, A.~Montanaro and S.~Piddock, ``Universal quantum Hamiltonians,'' Proc. Natl. Acad. Sci. 115 (2018) 9497, arXiv:1701.05182.
+
+\bibitem{KPBC} T.~Kohler, S.~Piddock, J.~Bausch and T.~Cubitt, ``Translationally-invariant universal quantum Hamiltonians in 1D,'' arXiv:2003.13753.
+
+\bibitem{BFM} G.~Benfatto, P.~Falco and V.~Mastropietro, ``Universality of one-dimensional Fermi systems, I. Response functions and critical exponents,'' Commun. Math. Phys. 330 (2014) 153, arXiv:1303.3681.
+
+\bibitem{MP} V.~Mastropietro and M.~Porta, ``Multi-channel Luttinger liquids at the edge of quantum Hall systems,'' Commun. Math. Phys. 395 (2022), arXiv:2108.13708.
+
+\bibitem{PSS} M.~Porta, G.~Scola and H.~P. Singh, ``Large scale dynamical response of interacting $1d$ Fermi systems,'' arXiv:2509.08665.
+
+\bibitem{BortzSergeev} M.~Bortz and S.~Sergeev, ``The $q$-deformed Bose gas: integrability and thermodynamics,'' arXiv:cond-mat/0603093.
+
+\bibitem{ItoiKato} C.~Itoi and M.-H. Kato, ``An extended massless phase and the Haldane phase in a spin-1 isotropic antiferromagnetic chain,'' Phys. Rev. B 55 (1997) 8295, arXiv:cond-mat/9605105.
+
+\bibitem{OshikawaAffleck} M.~Oshikawa and I.~Affleck, ``Theory of the field-induced gap in $S=1/2$ antiferromagnetic chains,'' Phys. Rev. Lett. 79 (1997) 2883, arXiv:cond-mat/9706085.
+
+\bibitem{FES} F.~Pollmann, S.~Mukerjee, A.~Turner and J.~E. Moore, ``Theory of finite-entanglement scaling at one-dimensional quantum critical points,'' Phys. Rev. Lett. 102 (2009) 255701, arXiv:0812.2903.
+
+\bibitem{C8} gpt-6-astra run C8, mobile selector, arrow wrapper, length filter and helix equalizer, \repo{codex/work_C8/} (unrefereed).
+
+\bibitem{C32} gpt-6-astra run C32, the original mobile core at $d_0=2736$, \repo{codex/work_C32/} (unrefereed).
+
+\bibitem{C33} gpt-6-astra run C33, finite-$g$ interval certificate of the 23-letter chain at $n=23$, \repo{codex/work_C33/}.
+
+\bibitem{C39} gpt-6-astra run C39, two folded buses and a geometric readout, \repo{codex/work_C39/}.
+
+\bibitem{C41} gpt-6-astra run C41, vacancy completion of the 23-letter core, \repo{codex/work_C41/}.
+
+\bibitem{C42} gpt-6-astra run C42, all-$n$ schedule with explicit finite-$D$ and finite-$g$ budgets, \repo{codex/work_C42/}.
+
+\bibitem{C44} gpt-6-astra run C44, audit of the mobile wrapper on the 46-letter core, \repo{codex/work_C44/}.
+
+\bibitem{C45} gpt-6-astra run C45, local reduction and the infrared budget, \repo{codex/work_C45/}.
+
+\bibitem{C46} gpt-6-astra run C46, attempted rigorous infrared step, \repo{codex/work_C46/}.
+
+\bibitem{explicit} The explicit 23-letter bond, \repo{contrib/explicit_candidate/README.md}.
+
+\bibitem{redteam} Red-team report on the 23-letter chain, \repo{contrib/redteam_routeA_cells/README.md}.
+
+\bibitem{refC39} Referee report on C39, \repo{contrib/referee_C39/README.md}.
+
+\bibitem{refC44} Referee report on C44 and C45, \repo{contrib/referee_C44_C45/README.md}.
+
+\bibitem{refd24} Referee report on the $d=24$ chain, \repo{contrib/referee_d24/README.md}.
+
+\bibitem{campaign} S.~the collaborator and GPT-6-family Codex workers, the $d=24$ campaign, \repo{contrib/counterexample_campaign/} (synthesis in \repo{COUNTEREXAMPLE_D24.md}).
+
+\bibitem{audit} S.~the collaborator and GPT-6-family Codex workers, adversarial audit and matching attack, \repo{contrib/counterexample_audit_20261028/} and \repo{contrib/direct_attack_20261028/}.
+
+\bibitem{routeAfinal} Assembled argument for both mobile forms, \repo{contrib/routeA_final/README.md}.
+
+\bibitem{margins} Margins audit of the 23-letter chain, \repo{contrib/margins_audit/README.md}.
+
+\bibitem{demo} Ten-letter demonstrator, \repo{contrib/routeA_demonstrator/README.md}.
+
+\bibitem{mobile} Mobile-cell toy model at $d=6$, \repo{contrib/mobile_cells/README.md}.
+
+\bibitem{vacnum} Vacancy lift numerics, \repo{contrib/vacancy_mobile_numerics/README.md}.
+
+\bibitem{litIR} Literature check of the integrate-out-then-bosonize step, \repo{contrib/lit_ir_step/README.md}.
+
+\end{thebibliography}
+
+\end{document}
