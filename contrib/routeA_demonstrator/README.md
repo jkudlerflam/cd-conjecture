@@ -10,7 +10,7 @@ Class: one Hermitian nearest-neighbour bond h on ℂ¹⁰ ⊗ ℂ¹⁰, one-site
 
 ## Status
 
-Items 1 and 2 are exact, checked to machine precision. Item 3 is numerical, with FES reaching ξ ≈ 30 cells. Frozen cells and one flavour give c = 1 at d = 10, far below d − 1. The point is the mechanism, not the bound.
+Items 1 and 2 are exact, checked to machine precision. Item 3 is numerical, with FES reaching ξ ≈ 50 cells. Frozen cells and one flavour give c = 1 at d = 10, far below d − 1. The point is the mechanism, not the bound.
 
 ## How it was established and checked
 
@@ -79,9 +79,9 @@ The exact bond is XXZ plus a constant at every λ. Three cells (32768 states) gi
 | XX | 16 to 96 | 32 to 345 | 0.995 ± 0.004 |
 | effective, second order | 16 to 96 | 30 to 328 | 0.993 ± 0.003 |
 | effective, exact bond (λ = 0.1) | 16 to 96 | 31 to 333 | 0.992 ± 0.004 |
-| microscopic, λ = 0.05 | 16 to 48 | 4.0 to 18 | 1.01 ± 0.04 |
-| microscopic, λ = 0.10 | 16 to 64 | 4.0 to 30 | 1.01 ± 0.03 |
-| microscopic, λ = 0.15 | 16 to 64 | 4.0 to 30 | 1.00 ± 0.03 |
+| microscopic, λ = 0.05 | 16 to 96 | 4.0 to 54 | 1.02 ± 0.02 |
+| microscopic, λ = 0.10 | 16 to 96 | 4.0 to 54 | 1.01 ± 0.02 |
+| microscopic, λ = 0.15 | 16 to 96 | 4.0 to 52 | 1.00 ± 0.02 |
 
 Port dressing splits each logical Schmidt value, so the microscopic chain needs about four times XX's bond dimension for the same ξ, and its pairwise slopes alternate between 0.75 and 1.19. On the window ξ ≤ 32 alone the calibration chains give 0.90 to 0.92 (three points), so at these correlation lengths the estimator carries a systematic uncertainty of about 0.1 beyond the quoted fit errors.
 
@@ -110,7 +110,7 @@ Limitations: frozen cells (three-fold broken translation, defects when 3 ∤ L),
 
 ## Reproducing
 
-numpy and scipy only. `cell.py` (bond, cell), `effective.py` and `ed_check.py` (task 1, 30 s), `selector.py`, `run_fes.py` (models `micro`, `cell`, `eff`, `xx`), `ring_ed.py` (microscopic rings), `eff_ring.py` (logical rings), `analyze.py` (tables, `data/summary.json`). Typhon array 17514348 tasks 9 to 17 ran the M = 6 rings, and M ≤ 5 ran locally. Array 17514347 was cancelled while queued, and its FES and selection runs went to the Typhon login node at nice 19 (`tasks_fes.txt`, `tasks_cell.txt`). Continuations to χ = 96 and 128 (`tasks_cellB.txt`) were still running when this was written. Logs in `data/logs/`.
+numpy and scipy only. `cell.py` (bond, cell), `effective.py` and `ed_check.py` (task 1, 30 s), `selector.py`, `run_fes.py` (models `micro`, `cell`, `eff`, `xx`), `ring_ed.py` (microscopic rings), `eff_ring.py` (logical rings), `analyze.py` (tables, `data/summary.json`). Typhon array 17514348 tasks 9 to 17 ran the M = 6 rings, and M ≤ 5 ran locally. Array 17514347 was cancelled while queued, and its FES and selection runs went to the Typhon login node at nice 19 (`tasks_fes.txt`, `tasks_cell.txt`). The χ = 96 points (and χ = 64 at λ = 0.05) come from the damped continuations of `tasks_cellB.txt`, whose gradient errors stop at 10⁻³ to 10⁻⁶ (10⁻⁹ to 10⁻¹¹ for the others). Without them the fits are 1.01, 1.01, 1.00 ± 0.04 up to ξ ≈ 30. Logs in `data/logs/`.
 
 ## Relation to the rest of the repository
 
