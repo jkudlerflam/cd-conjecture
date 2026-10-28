@@ -1,0 +1,19 @@
+{
+  "all_passed": true,
+  "work_dimension": 12960,
+  "two_site_matrix_dimension": 167961600,
+  "all_F_seed_encode_decode_basis_states_checked": 12960,
+  "initially_allowed_local_states": 10,
+  "seed_changed_local_states": 64,
+  "one_head_G_columns_and_involution_checks": 153600,
+  "all_zero_head_G_columns_checked": 25600,
+  "two_head_control_phase_quantum_cases_checked": 25600,
+  "neutral_symbol_note": "All left symbols and three right anchors for one-head blocks; neutral factors are spectators by construction",
+  "literal_sparse_local_gate_cycle": {
+    "sites": 6,
+    "local_gate_applications": 1826,
+    "maximum_quantum_basis_support": 3,
+    "exact_final_return": true
+  },
+  "scope": "Explicit full-space F/G/LEFT-seed gates; no global clock-sector theorem supplied here"
+}

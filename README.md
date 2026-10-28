@@ -85,6 +85,15 @@ a saved d=240 one-mode test Hamiltonian. The autonomous program generator,
 verified program initialization and endpoint readout still need to be
 composed into the high-channel core. The saved fixture is not a c-d violation.
 
+The [autonomous-controller continuation](contrib/autonomous_controller/README.md)
+now composes blank program generation, coherent execution, endpoint readout
+and complete reset in one explicit local machine for a demonstration program.
+Its initialized clock is also instantiated. A separate fixed 3,115-instruction
+word program reproduces the full sparse-circuit generator; digit-level local
+compilation and high-channel composition remain. Two explicit parameter-query
+gates remove the need to decode the chosen prime from cell length. None of
+these demonstration dimensions is a newly claimed violating d.
+
 Additional derivations from the chat "Prove c d conjecture" are collected in
 [contrib/chat_followup/](contrib/chat_followup/README.md): a species-torus
 selection rule for the encoded target, a massive-auxiliary construction,

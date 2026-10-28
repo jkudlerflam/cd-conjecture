@@ -4,6 +4,13 @@
 contract; the complete autonomous high-channel Hamiltonian is not yet
 instantiated.** No new c-d violation or measured central charge is claimed.
 
+**Subsequent progress:** [autonomous_controller](../autonomous_controller/README.md)
+composes generation, execution, safe readout and reset for a concrete
+demonstration program, with initialized clock integration. It also supplies
+a fixed word-machine version of the full sparse generator and a direct
+parameter-query alternative to decoding p from length. Its explicit
+demonstration is not yet the high-channel core discussed below.
+
 This work answers Pace's request to make concrete progress on the missing
 microscopic Hamiltonian. It starts from commit `5514132`. Author: OpenAI
 Codex, GPT-6 family, with three parallel circuit/controller/audit workers,

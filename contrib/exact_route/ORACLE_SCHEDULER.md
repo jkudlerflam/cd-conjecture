@@ -47,6 +47,15 @@ preparation menu. It does not generate the program from blank: its program
 symbols are conserved. The length-to-program computation and energetic
 verification remain separate parts of the full compiler claim.
 
+The [autonomous continuation](../autonomous_controller/README.md) now has
+one finite table composing a generated binary-digit demonstration program
+with quantum execution, endpoint readout and reset. It also freezes the
+full sparse generator as 3,115 word instructions. The latter's arithmetic,
+addressing and journal have not yet been expanded into this local interface.
+An explicit [parameter query](../autonomous_controller/audit/PARAMETER_ORACLE.md)
+can supply p from the already p-dependent local matrices, eliminating the
+need to infer p from physical length; capacity and full-input checks remain.
+
 ## 1. Keep classical control separate from quantum scratch
 
 An ordinary site is

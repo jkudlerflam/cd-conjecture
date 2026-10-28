@@ -1,0 +1,69 @@
+{
+  "scope": "Explicit initialized open-chain demonstration core; no high-channel or c-d violation claim",
+  "local": {
+    "work_dimension": 12960,
+    "core_local_dimension": 194400,
+    "both_boundary_hermiticity_columns_exhausted": 388800,
+    "full_work_F_and_seed_involution_columns": 12960,
+    "initialized_local_states": 10,
+    "bulk_hermiticity_source_columns_sampled": 17000,
+    "bulk_sample_nonzero_entries": 23347,
+    "all_checked_entries_exact_complex_quarter_integers": true
+  },
+  "clock": {
+    "all_clock_sectors": [
+      {
+        "n": 1,
+        "full_clock_words": 15,
+        "legal_vertices": 9,
+        "all_directed_clock_transitions_checked": 8
+      },
+      {
+        "n": 2,
+        "full_clock_words": 225,
+        "legal_vertices": 30,
+        "all_directed_clock_transitions_checked": 148
+      },
+      {
+        "n": 3,
+        "full_clock_words": 3375,
+        "legal_vertices": 79,
+        "all_directed_clock_transitions_checked": 2640
+      },
+      {
+        "n": 4,
+        "full_clock_words": 50625,
+        "legal_vertices": 192,
+        "all_directed_clock_transitions_checked": 45900
+      }
+    ],
+    "static_grammar_lengths": [
+      4,
+      29
+    ]
+  },
+  "initialized_histories": {
+    "n4_all_input_basis_histories": 16,
+    "n4_clock_vertices": 192,
+    "n4_complete_global_H_residual": 0,
+    "n4_history_Gram_equals_C_times_identity": true,
+    "n6_coherent_clock_vertices": 1026,
+    "n6_input_basis_support": 4,
+    "n6_history_support": 4362,
+    "n6_contains_genuine_coherent_gate_branching": true,
+    "n6_complete_global_H_residual": 0,
+    "n9_input": "|111101111>; zero-based site4=0 activates CV; classical input blank",
+    "n9_clock_vertices": 11269,
+    "n9_history_support": 14049,
+    "n9_genuine_coherent_gate_branching": true,
+    "n9_exact_quantum_and_classical_cleanup_at_first_complete_cycle": true,
+    "n9_complete_controller_cycles_within_clock": 1,
+    "n9_active_endpoint_clock_vertices": [
+      658,
+      656
+    ],
+    "n9_complete_global_H_residual": 0,
+    "scope": "Explicit zero-mode residuals; completeness and positive gap follow from the stated path-and-pins proof"
+  },
+  "all_passed": true
+}

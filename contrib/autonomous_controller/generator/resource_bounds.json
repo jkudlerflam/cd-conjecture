@@ -1,0 +1,203 @@
+{
+  "scope": "Source-derived word-instruction bound, not local-TM transitions",
+  "loop_trip_bound": "B = 128 A, A = (N+4q)^2 max(1,ceil(log2 q),ceil(log2 max(u,N)))",
+  "T_polynomial_coefficients_in_ascending_powers_of_B": [
+    193,
+    4010,
+    7469,
+    5021,
+    1306,
+    424,
+    40
+  ],
+  "polynomial_degree": 6,
+  "coefficient_sum": 18463,
+  "simpler_bound": "T <= 18463 B^6 for B >= 1",
+  "maximum_call_depth": 9,
+  "function_polynomials": {
+    "alloc": [
+      12,
+      23
+    ],
+    "and_bits": [
+      63,
+      20
+    ],
+    "bit": [
+      12
+    ],
+    "circuit": [
+      29,
+      751,
+      2605,
+      2902,
+      1306,
+      424,
+      40
+    ],
+    "clone": [
+      12,
+      15
+    ],
+    "combine": [
+      12,
+      52,
+      48
+    ],
+    "const": [
+      26,
+      49
+    ],
+    "controlled_swap": [
+      465,
+      552,
+      120
+    ],
+    "cswap_words": [
+      17,
+      183,
+      80
+    ],
+    "eq_bits": [
+      67,
+      199,
+      40
+    ],
+    "extend": [
+      11,
+      15
+    ],
+    "flag": [
+      75,
+      32,
+      13
+    ],
+    "flag_value": [
+      13,
+      21
+    ],
+    "gate": [
+      29,
+      38
+    ],
+    "generate": [
+      98,
+      3937,
+      7421,
+      4998,
+      1306,
+      424,
+      40
+    ],
+    "graph": [
+      47,
+      22
+    ],
+    "inverse": [
+      164,
+      955,
+      1351,
+      295
+    ],
+    "lower": [
+      2825,
+      4512,
+      2096
+    ],
+    "main": [
+      193,
+      4010,
+      7469,
+      5021,
+      1306,
+      424,
+      40
+    ],
+    "neg": [
+      41,
+      20
+    ],
+    "one": [
+      151,
+      152
+    ],
+    "or_bits": [
+      101,
+      40
+    ],
+    "pair": [
+      115,
+      248,
+      152
+    ],
+    "plane": [
+      90,
+      73,
+      48,
+      23
+    ],
+    "prepare": [
+      18,
+      30,
+      31,
+      328,
+      284,
+      40
+    ],
+    "queries": [
+      30,
+      34,
+      23
+    ],
+    "reverse_extend": [
+      15,
+      15
+    ],
+    "route": [
+      33,
+      50,
+      257,
+      469,
+      140
+    ],
+    "same": [
+      83,
+      246,
+      60
+    ],
+    "select_word": [
+      12,
+      83,
+      20
+    ],
+    "target": [
+      194,
+      1268,
+      1143,
+      214
+    ],
+    "tiny": [
+      155,
+      3959,
+      7421,
+      4998,
+      1306,
+      424,
+      40
+    ],
+    "width": [
+      10,
+      11
+    ],
+    "xor_bits": [
+      26,
+      20
+    ]
+  },
+  "largest_literal_array_arity": 7,
+  "largest_function_argument_count": 6,
+  "journal_words_per_step_upper_bound": 64,
+  "working_and_history_words_upper_bound": "100 T + 40000",
+  "serialized_word_bit_width_upper_bound": "b = 2 A + ceil(log2(T+1)) + 64",
+  "serialized_data_and_journal_bits_upper_bound": "(100 T + 40000) (2 b + 4)"
+}

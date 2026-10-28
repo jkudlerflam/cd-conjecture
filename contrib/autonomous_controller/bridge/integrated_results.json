@@ -1,0 +1,56 @@
+{
+  "all_passed": true,
+  "B_K_factor_qubit_dimension": [
+    80,
+    40,
+    6480,
+    12960
+  ],
+  "complete_collision_pairs_and_inverses": 3200,
+  "prescribed_injective_entries": 497,
+  "full_classical_F_involution_basis_checked": 6480,
+  "blank_input_lengths_checked": [
+    4,
+    128
+  ],
+  "complete_cycles": 125,
+  "total_elementary_steps": 1590466,
+  "readout_safety_lengths_checked": [
+    4,
+    24
+  ],
+  "readout_safety_local_G_F_vertices": 535782,
+  "coherent_operator_test": {
+    "physical_sites": 6,
+    "arbitrary_coherent_code_dimension": 4,
+    "complete_cycle_vertices": 1826,
+    "active_endpoint_vertices": [
+      99,
+      99
+    ],
+    "simultaneously_active_vertices": 40,
+    "maximum_active_vertex_operator_errors": [
+      2.797157557069881e-17,
+      3.1031676915590914e-17
+    ],
+    "uniform_vertex_sample_weights": [
+      0.05421686746987952,
+      0.05421686746987952
+    ],
+    "weighted_endpoint_operator_errors": [
+      6.969320381211996e-18,
+      1.179739509965479e-17
+    ],
+    "missing_READY_negative_control_errors": [
+      0.13377116396836128,
+      0.12017066687595197
+    ],
+    "final_quantum_cleanup_error": 3.925231146709438e-17
+  },
+  "weight_scope": "Uniform samples after every listed G/F gate; actual initialized-clock weights still require that clock",
+  "limitations": [
+    "Static output-mark grammar and initial fresh head remain assumed",
+    "Binary-digit circuit demonstration, not full sparse-encoding generator",
+    "No full Hamiltonian legal-sector or infrared theorem established by these tests"
+  ]
+}

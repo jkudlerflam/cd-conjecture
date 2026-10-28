@@ -17,6 +17,21 @@ The working standard is theoretical physics (standard RG, controlled perturbatio
 
 ## Latest continuation: why the sparse first-order route leads
 
+**Autonomous continuation, 2026-10-28 UTC:**
+[autonomous_controller](contrib/autonomous_controller/README.md) supplies one
+3,200-entry reversible collision table (80 neutral symbols, 40 controls)
+that starts with blank dynamic tracks, generates a binary-digit program, executes noncommuting
+quantum gates, exposes both endpoints, and resets. All 125 lengths 4–128
+pass complete cycles. Actual C8-clock refinement checks initialization and
+every intermediate vertex; a full cycle fits for n>=9. The initialized
+demonstration core is explicitly specified, but its program is not the
+many-fermion sparse encoding. A frozen 3,115-instruction word machine now
+generates that encoding exactly at p=2,3 in the checked abstract streams;
+its arithmetic, arrays and journal still need local digit-level compilation.
+Explicit neutral parameter queries can supply p from the already
+p-dependent matrices, removing length-to-prime decoding. No final
+high-channel constant C, violating d, or new infrared conclusion is claimed.
+
 **Latest implementation work, 2026-10-28 UTC:**
 [controller_instantiation](contrib/controller_instantiation/README.md) replaces
 several algorithms with executable finite data. The encoding circuit now

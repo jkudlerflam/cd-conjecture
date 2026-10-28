@@ -1,0 +1,38 @@
+{
+  "status": "passed",
+  "scope": "Separate readout primitive; no high-channel preparation or global core-sector proof",
+  "neutral_alphabet_B": 10,
+  "controls_K": 8,
+  "head_overlay_factor": 170,
+  "collision_entries": 80,
+  "prescribed_entries": 20,
+  "toy_quantum_dimension": 2,
+  "one_site_states_checked": 340,
+  "two_site_states_checked": 115600,
+  "valid_geometries": 364,
+  "elementary_vertices_checked": 402948,
+  "cycle_head_moves": "4(n-1)",
+  "coherent_operator_checks": [
+    {
+      "endpoint": 0,
+      "input_output_site": 1,
+      "active_vertices": 99,
+      "sampled_vertices": 220,
+      "uniform_sample_weight": 0.45,
+      "operator_error": 1.8041124150158794e-16,
+      "worst_active_vertex_error": 2.8609792490763984e-17,
+      "missing_ready_negative_control_error": 0.07802259440965019
+    },
+    {
+      "endpoint": 5,
+      "input_output_site": 4,
+      "active_vertices": 99,
+      "sampled_vertices": 220,
+      "uniform_sample_weight": 0.45,
+      "operator_error": 1.1114420827879992e-16,
+      "worst_active_vertex_error": 2.7755575615628914e-17,
+      "missing_ready_negative_control_error": 0.06806344211977046
+    }
+  ],
+  "visibility_note": "Weights are for the listed uniform G/F samples, not the full C8 history; safety holds at every vertex and under any additional clock-idle weighting"
+}

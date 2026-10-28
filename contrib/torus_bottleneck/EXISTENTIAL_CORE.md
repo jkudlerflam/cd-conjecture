@@ -161,6 +161,16 @@ the desired code dimension.
 
 ## 3. The uniform program and its resources
 
+**Implementation simplification (2026-10-28):** the
+[parameter interface](../autonomous_controller/audit/PARAMETER_ORACLE.md)
+provides p through two explicit neutral permutation gate families using
+the existing indexed helper. Since the microscopic family already depends
+on p, the length-to-prime decoding in the following sufficient construction
+is optional. The [fixed word generator](../autonomous_controller/generator/README.md)
+now makes the classical program explicit, while its local digit-level
+compilation remains unfinished. Cell length still must accommodate all
+work and allow at least one verified readout interval.
+
 The controller first counts the distance between the immutable endpoint
 marks and decodes `p` from the designated length `n=C₀p^K`. Integer-root
 decoding and the prime-field incidence test are fixed algorithms; their

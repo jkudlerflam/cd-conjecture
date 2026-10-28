@@ -1,0 +1,398 @@
+{
+  "status": "passed",
+  "scope": "Independent supplied-readout clock refinement and word-machine audit",
+  "full_outer_clock": [
+    {
+      "sites": 4,
+      "output_positions": [
+        1,
+        2
+      ],
+      "actual_clock_vertices": 192,
+      "full_sweeps": 16,
+      "active_vertices": [
+        91,
+        58
+      ],
+      "exact_weights": [
+        "91/192",
+        "58/192"
+      ]
+    },
+    {
+      "sites": 5,
+      "output_positions": [
+        1,
+        3
+      ],
+      "actual_clock_vertices": 449,
+      "full_sweeps": 32,
+      "active_vertices": [
+        196,
+        196
+      ],
+      "exact_weights": [
+        "196/449",
+        "196/449"
+      ]
+    },
+    {
+      "sites": 6,
+      "output_positions": [
+        1,
+        4
+      ],
+      "actual_clock_vertices": 1026,
+      "full_sweeps": 64,
+      "active_vertices": [
+        475,
+        426
+      ],
+      "exact_weights": [
+        "475/1026",
+        "426/1026"
+      ]
+    },
+    {
+      "sites": 6,
+      "output_positions": [
+        2,
+        3
+      ],
+      "actual_clock_vertices": 1026,
+      "full_sweeps": 64,
+      "active_vertices": [
+        453,
+        444
+      ],
+      "exact_weights": [
+        "453/1026",
+        "444/1026"
+      ]
+    },
+    {
+      "sites": 7,
+      "output_positions": [
+        1,
+        5
+      ],
+      "actual_clock_vertices": 2307,
+      "full_sweeps": 128,
+      "active_vertices": [
+        1110,
+        1021
+      ],
+      "exact_weights": [
+        "1110/2307",
+        "1021/2307"
+      ]
+    },
+    {
+      "sites": 7,
+      "output_positions": [
+        2,
+        4
+      ],
+      "actual_clock_vertices": 2307,
+      "full_sweeps": 128,
+      "active_vertices": [
+        1082,
+        970
+      ],
+      "exact_weights": [
+        "1082/2307",
+        "970/2307"
+      ]
+    },
+    {
+      "sites": 8,
+      "output_positions": [
+        1,
+        6
+      ],
+      "actual_clock_vertices": 5124,
+      "full_sweeps": 256,
+      "active_vertices": [
+        2393,
+        2318
+      ],
+      "exact_weights": [
+        "2393/5124",
+        "2318/5124"
+      ]
+    },
+    {
+      "sites": 8,
+      "output_positions": [
+        2,
+        5
+      ],
+      "actual_clock_vertices": 5124,
+      "full_sweeps": 256,
+      "active_vertices": [
+        2355,
+        2336
+      ],
+      "exact_weights": [
+        "2355/5124",
+        "2336/5124"
+      ]
+    },
+    {
+      "sites": 9,
+      "output_positions": [
+        1,
+        7
+      ],
+      "actual_clock_vertices": 11269,
+      "full_sweeps": 512,
+      "active_vertices": [
+        5280,
+        5280
+      ],
+      "exact_weights": [
+        "5280/11269",
+        "5280/11269"
+      ]
+    },
+    {
+      "sites": 9,
+      "output_positions": [
+        2,
+        6
+      ],
+      "actual_clock_vertices": 11269,
+      "full_sweeps": 512,
+      "active_vertices": [
+        5248,
+        5248
+      ],
+      "exact_weights": [
+        "5248/11269",
+        "5248/11269"
+      ]
+    },
+    {
+      "sites": 10,
+      "output_positions": [
+        1,
+        8
+      ],
+      "actual_clock_vertices": 24582,
+      "full_sweeps": 1024,
+      "active_vertices": [
+        11777,
+        11499
+      ],
+      "exact_weights": [
+        "11777/24582",
+        "11499/24582"
+      ]
+    },
+    {
+      "sites": 10,
+      "output_positions": [
+        2,
+        7
+      ],
+      "actual_clock_vertices": 24582,
+      "full_sweeps": 1024,
+      "active_vertices": [
+        11697,
+        11645
+      ],
+      "exact_weights": [
+        "11697/24582",
+        "11645/24582"
+      ]
+    }
+  ],
+  "coherent_compression": [
+    {
+      "endpoint": 0,
+      "arbitrary_entangled_code_dimension": 5,
+      "active_vertices": 475,
+      "clock_vertices": 1026,
+      "compression_error": 5.382117619469058e-16,
+      "worst_active_vertex_error": 4.2207643840401616e-17
+    },
+    {
+      "endpoint": 5,
+      "arbitrary_entangled_code_dimension": 5,
+      "active_vertices": 426,
+      "clock_vertices": 1026,
+      "compression_error": 4.3825034364392356e-16,
+      "worst_active_vertex_error": 2.8609792490763984e-17
+    }
+  ],
+  "journal_machine": {
+    "adversarial_program_runs": 8,
+    "every_instruction_inverse_checks": 1660,
+    "covers": [
+      "nested calls/RET",
+      "array aliasing",
+      "NEW/APPEND/SET",
+      "register overwrite",
+      "both branch outcomes",
+      "negative integers",
+      "EMIT",
+      "halt reversal"
+    ],
+    "scope": "Journalled word-machine semantic states, not local machine transitions"
+  },
+  "left_seed_initialization_prefix": [
+    {
+      "sites": 2,
+      "complete_initial_head_words": 16,
+      "accepted_words": 1,
+      "final_head_position": 0
+    },
+    {
+      "sites": 3,
+      "complete_initial_head_words": 64,
+      "accepted_words": 1,
+      "final_head_position": 0
+    },
+    {
+      "sites": 4,
+      "complete_initial_head_words": 256,
+      "accepted_words": 1,
+      "final_head_position": 0
+    },
+    {
+      "sites": 5,
+      "complete_initial_head_words": 1024,
+      "accepted_words": 1,
+      "final_head_position": 0
+    },
+    {
+      "sites": 6,
+      "complete_initial_head_words": 4096,
+      "accepted_words": 1,
+      "final_head_position": 0
+    }
+  ],
+  "initialized_integrated_C8_clock": [
+    {
+      "sites": 4,
+      "clock_vertices": 192,
+      "sweeps_checked_against_macro_machine": 16,
+      "actual_circuit_oracle_events": 0,
+      "complete_work_cycles": 0,
+      "active_endpoint_vertices": [
+        0,
+        0
+      ],
+      "active_weights": [
+        "0/192",
+        "0/192"
+      ]
+    },
+    {
+      "sites": 5,
+      "clock_vertices": 449,
+      "sweeps_checked_against_macro_machine": 32,
+      "actual_circuit_oracle_events": 0,
+      "complete_work_cycles": 0,
+      "active_endpoint_vertices": [
+        0,
+        0
+      ],
+      "active_weights": [
+        "0/449",
+        "0/449"
+      ]
+    },
+    {
+      "sites": 6,
+      "clock_vertices": 1026,
+      "sweeps_checked_against_macro_machine": 64,
+      "actual_circuit_oracle_events": 3,
+      "complete_work_cycles": 0,
+      "active_endpoint_vertices": [
+        0,
+        0
+      ],
+      "active_weights": [
+        "0/1026",
+        "0/1026"
+      ]
+    },
+    {
+      "sites": 7,
+      "clock_vertices": 2307,
+      "sweeps_checked_against_macro_machine": 128,
+      "actual_circuit_oracle_events": 10,
+      "complete_work_cycles": 0,
+      "active_endpoint_vertices": [
+        192,
+        198
+      ],
+      "active_weights": [
+        "192/2307",
+        "198/2307"
+      ]
+    },
+    {
+      "sites": 8,
+      "clock_vertices": 5124,
+      "sweeps_checked_against_macro_machine": 256,
+      "actual_circuit_oracle_events": 16,
+      "complete_work_cycles": 0,
+      "active_endpoint_vertices": [
+        264,
+        266
+      ],
+      "active_weights": [
+        "264/5124",
+        "266/5124"
+      ]
+    },
+    {
+      "sites": 9,
+      "clock_vertices": 11269,
+      "sweeps_checked_against_macro_machine": 512,
+      "actual_circuit_oracle_events": 29,
+      "complete_work_cycles": 1,
+      "active_endpoint_vertices": [
+        658,
+        656
+      ],
+      "active_weights": [
+        "658/11269",
+        "656/11269"
+      ]
+    },
+    {
+      "sites": 10,
+      "clock_vertices": 24582,
+      "sweeps_checked_against_macro_machine": 1024,
+      "actual_circuit_oracle_events": 60,
+      "complete_work_cycles": 2,
+      "active_endpoint_vertices": [
+        1212,
+        1236
+      ],
+      "active_weights": [
+        "1212/24582",
+        "1236/24582"
+      ]
+    }
+  ],
+  "full_Hamiltonian_interface": {
+    "local_dimension": 194400,
+    "work_dimension": 12960,
+    "complete_work_initial_pin_columns": 12960,
+    "allowed_qubit_states_per_static_mark": {
+      "LEFT": 2,
+      "BULK": 2,
+      "RIGHT": 2,
+      "OUT_L": 2,
+      "OUT_R": 2
+    },
+    "sampled_Hamiltonian_columns": 3160,
+    "Hermitian_reverse_entries_checked": 4853,
+    "nonreal_entries_checked": 8,
+    "all_two_site_columns_enumerated": false
+  }
+}

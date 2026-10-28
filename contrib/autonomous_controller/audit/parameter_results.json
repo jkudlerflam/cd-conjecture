@@ -1,0 +1,66 @@
+{
+  "status": "passed",
+  "scope": "Exact parameter oracle and extraction word; no compiled control table",
+  "local_permutations": [
+    {
+      "p": 2,
+      "q": 14,
+      "index_count_m": 10,
+      "Sigma_dimension": 317,
+      "with_two_neutral_tracks": 1268,
+      "all_local_gate_columns_checked": 7608
+    },
+    {
+      "p": 3,
+      "q": 26,
+      "index_count_m": 12,
+      "Sigma_dimension": 677,
+      "with_two_neutral_tracks": 2708,
+      "all_local_gate_columns_checked": 16248
+    },
+    {
+      "p": 5,
+      "q": 62,
+      "index_count_m": 16,
+      "Sigma_dimension": 2081,
+      "with_two_neutral_tracks": 8324,
+      "all_local_gate_columns_checked": 49944
+    },
+    {
+      "p": 7,
+      "q": 114,
+      "index_count_m": 18,
+      "Sigma_dimension": 4257,
+      "with_two_neutral_tracks": 17028,
+      "all_local_gate_columns_checked": 102168
+    },
+    {
+      "p": 11,
+      "q": 266,
+      "index_count_m": 22,
+      "Sigma_dimension": 12017,
+      "with_two_neutral_tracks": 48068,
+      "all_local_gate_columns_checked": 288408
+    }
+  ],
+  "complete_small_basis": {
+    "p": 2,
+    "q": 2,
+    "m": 2,
+    "sites": 3,
+    "complete_promised_helper_basis_cases": 18496,
+    "arbitrary_target_tracks_included": true,
+    "all_untrusted_payloads_restored": true
+  },
+  "uniform_algorithm": {
+    "malformed_payload_walks": 300,
+    "gate_vertices_checked": 45900,
+    "last_example": {
+      "p": 11,
+      "sites": 27,
+      "digits": 22,
+      "elementary_gates": 216
+    },
+    "one_stopping_oracle_for_all_sizes": true
+  }
+}

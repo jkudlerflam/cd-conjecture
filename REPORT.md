@@ -498,4 +498,66 @@ length reader is a separate primitive and needs a reversible handoff.
 The full controller count, a numerical violating choice, and the
 fixed-positive-coupling infrared conclusion are still outstanding. No
 human review is claimed.
+
 - **Casimir survey and literature, after C14** (`contrib/casimir_survey/`, Claude agent with two Astra Bethe-solver runs, in progress; `contrib/lit_casimir_d2/`, Sonnet literature agent, final). Exact diagonalization of the Sym^k SU(N) chains at (N, k) = (2, 1 to 4), (3, 1 to 3), (4, 1 and 2), (5, 1) reproduces the Bethe/WZW values of e₀, v, c and A to about 1%, and at N = 3, 4 confirms that rank two beats the fundamental chain by the predicted margin. The central charge c = k(N² − 1)/(N + k) is in the literature (Führinger et al., 0806.2563); no paper quotes v for general (N, k), but the string density equations are k-independent, giving v = 2π/N. No paper bounds Σ c v or the Casimir coefficient by a local norm. Outside the symmetric family nothing examined exceeds the fundamental SU(d) value of A/(2π‖h‖); across everything computed, A ≤ π‖h‖ log₂ d holds, with equality only for the Heisenberg chain [numerical], and the symmetric family forces any bound A ≤ K(d)‖h‖ to grow at least like log d/log log d. For qubit chains, every published c > 1 example (c = 3/2, 2) needs range three or more; Chepiga–Mila's nearest-neighbour interacting Kitaev chain has c ≤ 1.
+
+### 9.16 Autonomous program/readout cycle and a fixed generator, 2026-10-28 UTC
+
+At Pace's request to continue the most promising implementation direction,
+Codex and three parallel workers added
+[autonomous_controller](contrib/autonomous_controller/README.md).
+The high-channel program remains unfinished; no new c-d violation or
+central-charge measurement is claimed.
+
+- **Generated program, execution and readout [implemented; finite checks].**
+  One completed local collision permutation now starts with blank dynamic
+  tracks, counts the sites, copies n-1 into a binary instruction tape,
+  executes noncommuting CV/CNOT gates, exposes two physical endpoint
+  records, and uncomputes the generated program and counter. It has 80
+  neutral symbols, 40 controls, 3,200 table entries and 497 prescribed
+  rules. All 125 lengths 4–128 pass complete cycles, totaling 1,590,466
+  moves; 535,782 elementary gate vertices pass endpoint-safety checks.
+  This is a demonstration program, not the desired sparse encoding.
+- **Initialized microscopic core [finite construction and checks].**
+  Full-space local work gates are combined with the fifteen-letter C8
+  clock in explicit sparse bulk and boundary matrix-column evaluators.
+  A LEFT-controlled seed on the first initialization departure creates
+  exactly one head; the dynamic tracks are initially pinned during the I sweep.
+  The demonstration's core dimension is 194,400, independent of length.
+  Its complete ground space is the history encoding of n free input
+  qubits, dimension 2^n. With C=(2n+4)2^n+n-4 and
+  gamma=1-cos(pi/C), the gap is at least gamma/(1+C+C gamma).
+  An exponential code dimension alone is not a high-channel port theorem.
+  The actual clock has positive readout weights from n=7 in the checked
+  examples, and a full controller cycle fits for every n>=9; n=4,5,6
+  have zero readout weight. At n=9 the endpoint weights are exactly
+  658/11269 and 656/11269, independent of quantum input.
+- **Full circuit generator [implemented word-machine intermediate].**
+  A frozen 3,115-instruction program, with 34 functions and 27 opcode
+  families, constructs the graph, circuit, local gates and dispatcher
+  tape. Exact abstract comparisons cover all 287,798 operations at p=2
+  and all 1,588,624 at p=3. The complete one-edge local/dispatcher streams
+  also match. A journal inverse clears its tested computations, including
+  adversarial array aliasing and nested calls. Source-loop accounting
+  bounds word instructions by 18463(128A)^6 for the earlier parameter A.
+  Arbitrary-length arithmetic, addressed arrays and journal operations
+  still need compilation to finite local tape rules; the word instruction
+  count is not the final local alphabet count.
+- **Parameter-input shortcut [explicit gates and circuit checks].**
+  Two neutral permutation families expose bit_j(p) and the last index
+  through the existing helper H_(j,c). Since the family already has
+  p-dependent local matrices, this avoids decoding p from cell length
+  without adding a species register or a growing number of controls.
+  A 10m-4-gate extraction/cleanup word restores all untrusted records;
+  its compact walk still needs finite-table compilation.
+
+Independent AI audit checks the actual initialized clock path, including
+carry and idle vertices, and verifies the finite-core initialization and
+gap argument. The decisive remaining finite task is compiling and joining
+the real generator, format verifier, charged dispatcher and readout into
+one counted high-channel core. The standard fixed-coupling infrared inputs
+remain separate obligations. All artifacts identify their proof and test
+scope; no human review is claimed.
+
+The coordinating agent reran all nine new verification scripts successfully;
+the combined result is saved in the contribution's verification summary.
