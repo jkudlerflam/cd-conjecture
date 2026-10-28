@@ -1,0 +1,79 @@
+{
+  "scope": "Finite algebra controls only; no central charge or microscopic matching claim.",
+  "hopping": [
+    {
+      "n": 1,
+      "hopping_rank": 1,
+      "transfer_rank": 2,
+      "hopping_operator_schmidt_rank": 2,
+      "quartic_and_onsite_extraction_error": 0.0
+    },
+    {
+      "n": 2,
+      "hopping_rank": 2,
+      "transfer_rank": 4,
+      "hopping_operator_schmidt_rank": 4,
+      "quartic_and_onsite_extraction_error": 0.0
+    },
+    {
+      "n": 3,
+      "hopping_rank": 3,
+      "transfer_rank": 6,
+      "hopping_operator_schmidt_rank": 6,
+      "quartic_and_onsite_extraction_error": 0.0
+    }
+  ],
+  "boundary": {
+    "encoded_hopping_rank": 1,
+    "encoded_boundary_schmidt_rank": 2,
+    "rank_one_determinant_forbidden_fourier_error": 2.1204065298682846e-15
+  },
+  "marker_heads": [
+    {
+      "b": 4,
+      "projected_amplitude": 0.8316526181217498,
+      "output_norm_squared": 0.8618033988749897,
+      "head_leakage_squared": 0.1701573216462289,
+      "lower_bound": 0.11909830056250527,
+      "formula_error": 4.718447854656915e-16
+    },
+    {
+      "b": 5,
+      "projected_amplitude": 0.885886893985272,
+      "output_norm_squared": 0.9166666666666665,
+      "head_leakage_squared": 0.1318710777317938,
+      "lower_bound": 0.07638888888888883,
+      "formula_error": 2.7755575615628914e-16
+    },
+    {
+      "b": 8,
+      "projected_amplitude": 0.9515175509458436,
+      "output_norm_squared": 0.9740049381243309,
+      "head_leakage_squared": 0.06861928836635486,
+      "lower_bound": 0.02531931863374927,
+      "formula_error": 1.942890293094024e-16
+    },
+    {
+      "b": 16,
+      "projected_amplitude": 0.9870339085324875,
+      "output_norm_squared": 0.9960277782002567,
+      "head_leakage_squared": 0.021791841607337697,
+      "lower_bound": 0.0039564432537174095,
+      "formula_error": 3.157196726277789e-16
+    }
+  ],
+  "virtual_resolvent": [
+    {
+      "cell_code_dimension": 2,
+      "effective_operator_schmidt_rank": 2
+    },
+    {
+      "cell_code_dimension": 3,
+      "effective_operator_schmidt_rank": 3
+    },
+    {
+      "cell_code_dimension": 4,
+      "effective_operator_schmidt_rank": 4
+    }
+  ]
+}

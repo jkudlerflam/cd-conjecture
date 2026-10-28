@@ -1,0 +1,84 @@
+{
+  "vertex_counts": {
+    "1": {
+      "1": 4,
+      "2": 4
+    },
+    "2": {
+      "1": 14,
+      "2": 30,
+      "3": 36
+    },
+    "3": {
+      "1": 32,
+      "2": 150,
+      "3": 320
+    },
+    "4": {
+      "1": 58,
+      "2": 532,
+      "3": 1736
+    }
+  },
+  "dimension_bound": {
+    "metric_factor": 0.7745966692414834,
+    "d3_min": 2.32379000772445,
+    "d4_min": 3.0983866769659336
+  },
+  "xxz_assumed_benchmark": {
+    "delta": "27/182",
+    "K": 0.9134142719544881,
+    "umklapp_dimension": 3.6536570878179524,
+    "relative_metric_eta_before_d4_reaches_2": 0.5388839061372501
+  },
+  "length_attraction": [
+    {
+      "V_over_t": -3.0,
+      "shifted_eigenvalues": [
+        0.0,
+        0.0,
+        0.49999999999999994,
+        2.5
+      ]
+    },
+    {
+      "V_over_t": -2.0,
+      "shifted_eigenvalues": [
+        0.0,
+        0.0,
+        0.0,
+        2.0
+      ]
+    },
+    {
+      "V_over_t": -1.9,
+      "shifted_eigenvalues": [
+        -0.0500000000000001,
+        0.0,
+        0.0,
+        1.95
+      ]
+    }
+  ],
+  "diagnostic_attraction_ratios": [
+    {
+      "n": 1,
+      "V_over_2t": -17535.786802030456
+    },
+    {
+      "n": 2,
+      "V_over_2t": -405093.023255814
+    }
+  ],
+  "weak_bound_countermodel": {
+    "mass": 0.01,
+    "single_particle_band_gap": 0.02,
+    "symmetry_caveat": "breaks one-cell translation; not a C39 counterexample"
+  },
+  "winding_M2_exp_minus_M": {
+    "10": 0.004539992976248485,
+    "20": 8.244614489754232e-07,
+    "40": 6.797366808466542e-15,
+    "80": 1.1551048882210658e-31
+  }
+}

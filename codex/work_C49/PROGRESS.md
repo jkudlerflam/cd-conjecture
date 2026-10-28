@@ -1,0 +1,13 @@
+# C49 progress
+
+[proved, scope] Read the requested Input S background first, the project memory, the lead claim, expert note, C39/C42/C44 handoffs and construction formulas, C45 local reduction, C46 partial results, and the supplied infrared literature review. C47 is complete. C48/C50/C51/C52 had no PROGRESS.md at the initial check. No network or delegated agents are used. All writes stay in work_C49.
+
+[assumed, imported construction] C45 supplies U H U* = D + R on ordered rooted cells, A_j >= Delta Q_j, local block diagonality of D, and ||R||_a <= C_SW lambda^3. The gap is the complete wrapper gap. W=lambda^2 J0/s. These finite construction results are imported, not re-derived.
+
+[proved, new intermediate estimate] If O_X=P_X R_X Q_X+Q_X R_X P_X and P is the all-code projection, disjoint excitation supports are orthogonal. Thus ||Q(sum_X O_X)P||^2 <= M epsilon^2, where epsilon=sup_j sum_(X contains j)||R_X||. This improves the global norm estimate M epsilon to sqrt(M) epsilon for leakage from the code. The proof and its finite-window spectral consequences are being written.
+
+[heuristic, work in progress] Absorb the local diagonal part of R into D and combine the ground-relative reference threshold with a defect-number form bound. Aim for a finite-volume eigenvalue error O(M epsilon^2/Delta), including the exact retained diagonal correction. Test whether this remains useful as M tends to infinity at fixed couplings. Audit low-energy spectral flow separately from an isolated extensive code band, and distinguish physical locality from ordered-cell locality.
+
+[assumed, source limitation] The local literature files summarize Chen-Lucas-Yin and Yin-Lucas, but do not contain their primary theorem statements. No remembered prethermal exponent or gapped-stability theorem will be asserted to apply to the mobile direct-sum cell space. General implications of an assumed prethermal remainder will be proved directly.
+
+[proved, new iterative estimate] The local inverse against A can be iterated with a controlled loss of the exponential support weight. For 0<h<a, ||[B,C]||_(a-h)<=4||B||_a||C||_a/h. Therefore ||ad_S^k B||_(a-h)/k!<=(4e||S||_a/h)^k||B||_a. Taking h=64e Lambda/Delta, where Lambda bounds the initial diagonal plus off-diagonal interaction norm, gives at least a factor-two leakage reduction per step. N=floor(a Delta/(128e Lambda)) steps retain weight a/2 and give epsilon_N<=2^(-N)epsilon_0. This is an explicit prethermal construction for the product-cell reference, not an invocation of a primary theorem unavailable locally. The remaining spectral and physical-ensemble qualifications are still being audited.

@@ -1,0 +1,192 @@
+{
+  "second_order_max_error": 1.5543122344752192e-15,
+  "tuned_chain": [
+    {
+      "g": "0",
+      "diagonal_counterterm": "-243/11648",
+      "residuals": [
+        {
+          "lambda": 0.02,
+          "error": 2.5560705499458477e-05,
+          "error_over_lambda3": 3.195088187432309,
+          "min_overlap": 0.9996428143544851
+        },
+        {
+          "lambda": 0.01,
+          "error": 3.246882883577492e-06,
+          "error_over_lambda3": 3.2468828835774914,
+          "min_overlap": 0.9999077217459343
+        },
+        {
+          "lambda": 0.005,
+          "error": 4.092390985370423e-07,
+          "error_over_lambda3": 3.2739127882963377,
+          "min_overlap": 0.9999765351260965
+        },
+        {
+          "lambda": 0.0025,
+          "error": 5.137078875193081e-08,
+          "error_over_lambda3": 3.2877304801235714,
+          "min_overlap": 0.9999940828175395
+        }
+      ]
+    },
+    {
+      "g": "1/50",
+      "diagonal_counterterm": "-657/36400",
+      "residuals": [
+        {
+          "lambda": 0.02,
+          "error": 2.556107068559016e-05,
+          "error_over_lambda3": 3.1951338356987695,
+          "min_overlap": 0.9996428149159506
+        },
+        {
+          "lambda": 0.01,
+          "error": 3.2469065883547945e-06,
+          "error_over_lambda3": 3.246906588354794,
+          "min_overlap": 0.9999077217825729
+        },
+        {
+          "lambda": 0.005,
+          "error": 4.092406101730326e-07,
+          "error_over_lambda3": 3.2739248813842603,
+          "min_overlap": 0.9999765351284448
+        },
+        {
+          "lambda": 0.0025,
+          "error": 5.13708837959825e-08,
+          "error_over_lambda3": 3.2877365629428796,
+          "min_overlap": 0.9999940828176881
+        }
+      ]
+    },
+    {
+      "g": "-1/50",
+      "diagonal_counterterm": "-3447/145600",
+      "residuals": [
+        {
+          "lambda": 0.02,
+          "error": 2.5560340310995674e-05,
+          "error_over_lambda3": 3.1950425388744588,
+          "min_overlap": 0.9996428137930168
+        },
+        {
+          "lambda": 0.01,
+          "error": 3.2468591781417515e-06,
+          "error_over_lambda3": 3.246859178141751,
+          "min_overlap": 0.999907721709296
+        },
+        {
+          "lambda": 0.005,
+          "error": 4.0923758634923005e-07,
+          "error_over_lambda3": 3.2739006907938397,
+          "min_overlap": 0.9999765351237482
+        },
+        {
+          "lambda": 0.0025,
+          "error": 5.137069338634373e-08,
+          "error_over_lambda3": 3.2877243767259983,
+          "min_overlap": 0.9999940828173908
+        }
+      ]
+    }
+  ],
+  "exact_redesign": {
+    "dimension": 1024,
+    "lambda": 0.1,
+    "scale": 0.0056250000000000015,
+    "g": 0.02,
+    "intertwiner_max_error": 2.5126385347351565e-16,
+    "low_spectrum_max_error": 1.3174357438305861e-14,
+    "first_noncode_energy_above_ground": 0.4011481170390756,
+    "thermal_comparison": [
+      {
+        "beta": 5.0,
+        "Z_full_over_Z_logical": 1.682777017742339,
+        "bound": 9.181077247063572
+      },
+      {
+        "beta": 10.0,
+        "Z_full_over_Z_logical": 1.0749440353528243,
+        "bound": 1.6249482579400905
+      },
+      {
+        "beta": 20.0,
+        "Z_full_over_Z_logical": 1.0013414162201613,
+        "bound": 1.0100891992513872
+      }
+    ]
+  },
+  "logical_ED": [
+    {
+      "M": 8,
+      "g": 0.0,
+      "ground_N": 5,
+      "density": 0.625,
+      "ground_energy": -2.747546895706428,
+      "max_free_spectrum_error": 8.881784197001252e-16
+    },
+    {
+      "M": 8,
+      "g": 0.02,
+      "ground_N": 5,
+      "density": 0.625,
+      "ground_energy": -2.759673498770847,
+      "max_free_spectrum_error": null
+    },
+    {
+      "M": 10,
+      "g": 0.0,
+      "ground_N": 6,
+      "density": 0.6,
+      "ground_energy": -3.4110168705085857,
+      "max_free_spectrum_error": 2.6645352591003757e-15
+    },
+    {
+      "M": 10,
+      "g": 0.02,
+      "ground_N": 6,
+      "density": 0.6,
+      "ground_energy": -3.4280414470148806,
+      "max_free_spectrum_error": null
+    },
+    {
+      "M": 12,
+      "g": 0.0,
+      "ground_N": 7,
+      "density": 0.5833333333333334,
+      "ground_energy": -4.065384140902212,
+      "max_free_spectrum_error": 7.105427357601002e-15
+    },
+    {
+      "M": 12,
+      "g": 0.02,
+      "ground_N": 7,
+      "density": 0.5833333333333334,
+      "ground_energy": -4.087034885847612,
+      "max_free_spectrum_error": null
+    }
+  ],
+  "free_density": 0.6081734479693927,
+  "free_velocity": 0.9428090415820635,
+  "free_thermal_coefficient": [
+    {
+      "T": 0.04,
+      "thermal_c_estimator": 1.0029443177015966
+    },
+    {
+      "T": 0.02,
+      "thermal_c_estimator": 1.0007178961401062
+    },
+    {
+      "T": 0.01,
+      "thermal_c_estimator": 1.0001784491127181
+    },
+    {
+      "T": 0.005,
+      "thermal_c_estimator": 1.0000445494315753
+    }
+  ],
+  "limitations": "Finite ED checks algebra and scale only. g=.02 is not certified inside the existential RG radius."
+}
