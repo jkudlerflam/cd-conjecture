@@ -1,0 +1,101 @@
+{
+  "scope": "Analytic lemma controls only. No interacting XXZ computation.",
+  "gaussian_symbol": {
+    "maximum_residual": 3.101135850663763e-17,
+    "rows": [
+      {
+        "T_over_q": 0.5,
+        "derivative": 0,
+        "poisson_residual": 3.469446951953614e-18,
+        "thermal_difference": -0.011881083887248402
+      },
+      {
+        "T_over_q": 0.5,
+        "derivative": 1,
+        "poisson_residual": 0.0,
+        "thermal_difference": -0.04802637002539569
+      },
+      {
+        "T_over_q": 0.5,
+        "derivative": 2,
+        "poisson_residual": 3.469446951953614e-18,
+        "thermal_difference": 0.028729534748959614
+      },
+      {
+        "T_over_q": 0.3,
+        "derivative": 0,
+        "poisson_residual": 2.8189256484623115e-18,
+        "thermal_difference": -0.001828180136711155
+      },
+      {
+        "T_over_q": 0.3,
+        "derivative": 1,
+        "poisson_residual": 3.469446951953614e-18,
+        "thermal_difference": -0.006266055094850648
+      },
+      {
+        "T_over_q": 0.3,
+        "derivative": 2,
+        "poisson_residual": 1.0408340855860843e-17,
+        "thermal_difference": 0.01265007113916377
+      },
+      {
+        "T_over_q": 0.2,
+        "derivative": 0,
+        "poisson_residual": 1.4177875699158894e-18,
+        "thermal_difference": -1.1251950612564676e-07
+      },
+      {
+        "T_over_q": 0.2,
+        "derivative": 1,
+        "poisson_residual": 1.1519648082658485e-17,
+        "thermal_difference": 0.00022841976032141054
+      },
+      {
+        "T_over_q": 0.2,
+        "derivative": 2,
+        "poisson_residual": 4.9873299934333204e-18,
+        "thermal_difference": 0.001439896577582818
+      },
+      {
+        "T_over_q": 0.12,
+        "derivative": 0,
+        "poisson_residual": 4.014353834834146e-18,
+        "thermal_difference": -3.908695085305669e-08
+      },
+      {
+        "T_over_q": 0.12,
+        "derivative": 1,
+        "poisson_residual": 3.101135850663763e-17,
+        "thermal_difference": -1.2345373420069583e-06
+      },
+      {
+        "T_over_q": 0.12,
+        "derivative": 2,
+        "poisson_residual": 1.160943357506744e-17,
+        "thermal_difference": -1.2121239409506462e-05
+      }
+    ]
+  },
+  "history": {
+    "contraction_factor": 0.3101487032791553,
+    "proved_bound": 0.15083775743752095,
+    "runs": [
+      {
+        "depth": 12,
+        "maximum_normalized_difference": 0.15083762609727774
+      },
+      {
+        "depth": 40,
+        "maximum_normalized_difference": 0.15083775743752098
+      },
+      {
+        "depth": 100,
+        "maximum_normalized_difference": 0.15083775743752098
+      }
+    ]
+  },
+  "normalization": {
+    "maximum_log_ratio_residual": 4.301632216851174e-16
+  }
+}

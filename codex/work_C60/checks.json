@@ -1,0 +1,29 @@
+{
+  "status": "passed",
+  "wick_closed_max_absolute_error": 3.469446951953614e-18,
+  "free_pair_tail": [
+    {
+      "x": 3,
+      "x4_remainder": 0.08548974869822248,
+      "nonzero_limit": 0.07599088773175333
+    },
+    {
+      "x": 30,
+      "x4_remainder": 0.0760754159717219,
+      "nonzero_limit": 0.07599088773175333
+    },
+    {
+      "x": 300,
+      "x4_remainder": 0.07599173208433205,
+      "nonzero_limit": 0.07599088773175333
+    },
+    {
+      "x": 3000,
+      "x4_remainder": 0.07599089617518624,
+      "nonzero_limit": 0.07599088773175333
+    }
+  ],
+  "degree_inequality_cases": 35014,
+  "fixed_cutoff_shell_identity_max_absolute_error": 4.965068306494546e-16,
+  "scope": "Exact-formula controls only. No interacting RG or routing test."
+}

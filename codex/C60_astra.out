@@ -1,0 +1,13 @@
+I found a counterexample to C55’s source remainder bound (30a), interpreted with a local continuum reference and a fixed smooth crossover.
+
+For the free nearest-neighbor pair at \(p_F=\pi/3\), subtracting the matched continuum correlation leaves, for \(x=3m\),
+\[
+\frac{3}{4\pi^2x^2(x^2-1)}.
+\]
+This is nonzero at \(\epsilon=0\), and a finite smooth crossover cannot absorb its algebraic tail. The remainder needs a separate free-source/curvature budget or an explicit free subtraction. This does not refute the action-tree majorant or the Luttinger limit.
+
+The second route passes the degree-hierarchy test. BM permits time-nonlocal scale-zero kernels, but matching its displayed degree bound alone does not justify applying the induction verbatim. The nonlinear localization estimate remains unresolved.
+
+Derivations, qualifications, and the explicit routing target are in [PROOF.md](< <local> Dropbox/Jonah Kudler-Flam/Claude/Projects/Modular c-Theorem/notes/cd_conjecture/codex/work_C60/PROOF.md>). Checks passed.
+
+[gpt_solve: backend=codex model=gpt-6-astra effort=high transcript=20261028T155106-39949]

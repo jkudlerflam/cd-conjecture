@@ -1,0 +1,15 @@
+Estimate P remains unproved for interacting XXZ. The outcome is recorded in [RESULT.md](<./RESULT.md>), with the remaining lemma stated in [PROOF.md, Section 7](<./PROOF.md#7-exact-remaining-lemma>).
+
+The search confirmed the [Rutgers announcement](https://math.rutgers.edu/images/127_SMC_short_talks.pdf#page=10), but found no corresponding 2024–2026 manuscript. Its coverage of off-half-filled XXZ and the matched retarded action remains unverified.
+
+The new partial results establish curvature gains, thermal derivative bounds for smooth Gaussian normalization factors, and an explicit history criterion allowing a nonzero marginal coupling. All numerical controls pass.
+
+The missing step is the uniform renormalized-tree comparison retaining both the lattice/reference defect and the thermal replacement, including the vacuum scalar. The full interacting reference must be retained: convergence of the marginal coupling alone does not control its generated higher-degree kernels. Its trace normalization also needs identification.
+
+Under the stated lemma,
+\[
+f(T)=e_0-\frac{\pi}{6v}T^2+o(T^2),
+\]
+with dressed velocity \(v\). This remains conditional, and no retarded-action extension is claimed.
+
+[gpt_solve: backend=codex model=gpt-6-astra effort=high transcript=20261028T155104-39766]
