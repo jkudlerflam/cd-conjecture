@@ -1,0 +1,6 @@
+python3 run_fes.py vac_P1 --model vac --J 0.25 --mu_v 0.6 --n 1 --chis 16 24 32 48 64 96 128 160 200 --state_dir data/fes/states
+python3 run_fes.py vac_P1n2 --model vac --J 0.25 --mu_v 0.6 --n 2 --chis 16 24 32 48 64 96 128 --seed 1
+python3 run_fes.py xx --model xx --n 1 --chis 8 12 16 24 32 48 64 96
+python3 run_fes.py twoxx_r0.01 --model twoxx --r 0.01 --n 1 --chis 8 12 16 24 32 48 64 96 128 160 200
+python3 run_fes.py twoxx_r0.05 --model twoxx --r 0.05 --n 1 --chis 8 12 16 24 32 48 64 96 128 160 200
+python3 run_fes.py twoxx_r0.3 --model twoxx --r 0.3 --n 1 --chis 8 12 16 24 32 48 64 96 128

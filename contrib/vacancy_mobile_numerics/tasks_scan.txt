@@ -1,0 +1,19 @@
+python3 scan.py --L 5 --J 0.25 --mu_v 0.6 --out data/scan/vac_J0.25_mu0.6_L5.json
+python3 scan.py --L 6 --J 0.25 --mu_v 0.6 --out data/scan/vac_J0.25_mu0.6_L6.json
+python3 scan.py --L 7 --J 0.25 --mu_v 0.6 --out data/scan/vac_J0.25_mu0.6_L7.json
+python3 scan.py --L 8 --J 0.25 --mu_v 0.6 --out data/scan/vac_J0.25_mu0.6_L8.json
+python3 scan.py --L 9 --J 0.25 --mu_v 0.6 --out data/scan/vac_J0.25_mu0.6_L9.json
+python3 scan.py --L 10 --J 0.25 --mu_v 0.6 --out data/scan/vac_J0.25_mu0.6_L10.json
+python3 scan.py --L 11 --J 0.25 --mu_v 0.6 --out data/scan/vac_J0.25_mu0.6_L11.json
+python3 scan.py --L 12 --J 0.25 --mu_v 0.6 --out data/scan/vac_J0.25_mu0.6_L12.json
+python3 scan.py --L 13 --J 0.25 --mu_v 0.6 --out data/scan/vac_J0.25_mu0.6_L13.json
+python3 scan.py --L 14 --J 0.25 --mu_v 0.6 --out data/scan/vac_J0.25_mu0.6_L14.json
+python3 scan.py --L 5 --frozen --out data/scan/frozen_L5.json
+python3 scan.py --L 6 --frozen --out data/scan/frozen_L6.json
+python3 scan.py --L 7 --frozen --out data/scan/frozen_L7.json
+python3 scan.py --L 8 --frozen --out data/scan/frozen_L8.json
+python3 scan.py --L 9 --frozen --out data/scan/frozen_L9.json
+python3 scan.py --L 10 --frozen --out data/scan/frozen_L10.json
+python3 scan.py --L 11 --frozen --out data/scan/frozen_L11.json
+python3 scan.py --L 12 --frozen --out data/scan/frozen_L12.json
+python3 scan.py --L 13 --frozen --out data/scan/frozen_L13.json

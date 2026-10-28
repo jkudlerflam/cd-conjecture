@@ -1,0 +1,19 @@
+Traceback (most recent call last):
+  File "/scratch/lustre/jkudlerflam/vacmob/contrib/vacancy_mobile_numerics/d24.py", line 220, in <module>
+    main()
+  File "/scratch/lustre/jkudlerflam/vacmob/contrib/vacancy_mobile_numerics/d24.py", line 208, in main
+    res = scan(a.L, P, a.mode == 'frozen', a.t, a.J, a.mu_v)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/lustre/jkudlerflam/vacmob/contrib/vacancy_mobile_numerics/d24.py", line 156, in scan
+    eint[w] = frozen_energy(w, P, alph, range(0, ncell + 2))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/lustre/jkudlerflam/vacmob/contrib/vacancy_mobile_numerics/d24.py", line 139, in frozen_energy
+    r = sqed.Ring(len(word), word, Q, 0.0, 1.0, 0.0, P['lam'], alph=alph)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/lustre/jkudlerflam/vacmob/contrib/vacancy_mobile_numerics/sqed.py", line 179, in __init__
+    self.inn = Internal(word, Q2, alph['hb'], alph['letters'], alph['q2'], alph.get('allowed'))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/lustre/jkudlerflam/vacmob/contrib/vacancy_mobile_numerics/sqed.py", line 67, in __init__
+    dig = np.array(np.unravel_index(np.arange(tot), dims))          # (M, tot)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+numpy._core._exceptions._ArrayMemoryError: Unable to allocate 50.7 GiB for an array with shape (850305600, 8) and data type int64

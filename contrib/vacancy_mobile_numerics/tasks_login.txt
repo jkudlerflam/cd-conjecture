@@ -1,0 +1,15 @@
+# Commands run on the Typhon login node at nice 19 (from contrib/vacancy_mobile_numerics on /scratch)
+python3 scan.py --L {5..10} --J 0.25 --mu_v 0.6 --out data/scan/vac_J0.25_mu0.6_L$L.json
+python3 scan.py --L {5..10} --frozen --out data/scan/frozen_L$L.json
+python3 scan.py --L {6..10} --J 1.0 --mu_v 0.34 ; --J 2.0 --mu_v 0.07 ; --J 4.0 --mu_v -0.48
+python3 separated.py --L 10 --word BPPBPP --Q2 0 --J 0.05 0.1 0.25 0.5 1.0 --mu_v 0.6 --nlev 6 --out data/sep/L10_M6_Q0.json
+python3 separated.py --L 10 --word BPPBPP --Q2 2 --J 0.25 --mu_v 0.6 --nlev 4 --out data/sep/L10_M6_Q2.json
+python3 separated.py --L 5 --word BPP --Q2 1 --J 0.05 0.1 0.25 0.5 1.0 --mu_v 0.6 --nlev 6 --out data/sep/L5_M3_Q1.json
+python3 modes.py --L L --word W --Q2 q --J 0.25 --mu_v 0.6 --k 100   for (L, W, q) = (5,BPP,1) (6,BPP,1) (9..13,BPPBPP,0)
+python3 run_fes.py xx --model xx --n 1 --chis 8 12 16 24 32 48 64 96
+python3 run_fes.py twoxx_r0.3 --model twoxx --r 0.3 --n 1 --chis 8 12 16 24 32 48 64 96 128
+python3 run_fes.py twoxx_r0.05 --model twoxx --r 0.05 --n 1 --chis 8 12 16 24 32 48 64 96 128 160
+python3 run_fes.py vac_P1 --model vac --J 0.25 --mu_v 0.6 --n 1 --init pattern --rho0 0.6 --chis 18 24 32 ...   (stopped after chi = 32)
+python3 run_fes.py vac_P2 --model vac --J 0.5 --mu_v 1.74 --n 1 --init pattern --rho0 0.92 --chis 18 24 32 48 64 96 128 160
+python3 d24.py frozen --L {4..6} --point fast ; python3 d24.py vac --L {5..8} --point fast --J 0.25 --mu_v 0.0
+python3 gs_quick.py --L 13 (14) --ncand 2 --nev 6

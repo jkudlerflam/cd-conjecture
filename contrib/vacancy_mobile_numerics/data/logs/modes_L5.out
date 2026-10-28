@@ -1,0 +1,4 @@
+probe n: dominant omega=2.214497 v=1.76224 weight frac=0.942; peaks [(2.2145, np.float64(0.942)), (2.2145, np.float64(0.057))]
+probe q: dominant omega=0.320787 v=0.25527 weight frac=0.412; peaks [(0.27968, np.float64(0.099)), (0.27968, np.float64(0.003)), (0.32079, np.float64(0.002)), (0.32079, np.float64(0.412)), (0.32131, np.float64(0.051)), (0.4009, np.float64(0.06))]
+twist level at m=1: gap 0.279685
+E0=-5.099163065760  t=1s
