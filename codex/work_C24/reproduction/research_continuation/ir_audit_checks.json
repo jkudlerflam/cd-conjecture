@@ -1,0 +1,33 @@
+{
+  "scope": "Momentum inequalities only, not microscopic or thermodynamic CFT verification.",
+  "cases": [
+    {
+      "payload_modes": 21,
+      "payload_margin": 0.023799944345377355,
+      "expected_payload_margin": 0.02379994434537722,
+      "sampled_mixed_margin": 0.5473987199436756,
+      "proved_mixed_lower_bound": 0.5235987755982988
+    },
+    {
+      "payload_modes": 52,
+      "payload_margin": 0.009879222181099934,
+      "expected_payload_margin": 0.009879222181099979,
+      "sampled_mixed_margin": 0.5334779977793982,
+      "proved_mixed_lower_bound": 0.5235987755982988
+    },
+    {
+      "payload_modes": 186,
+      "payload_margin": 0.0027999934523972314,
+      "expected_payload_margin": 0.00279999345239732,
+      "sampled_mixed_margin": 0.5263987690506955,
+      "proved_mixed_lower_bound": 0.5235987755982988
+    },
+    {
+      "payload_modes": 456,
+      "payload_margin": 0.0011457303623592097,
+      "expected_payload_margin": 0.001145730362359516,
+      "sampled_mixed_margin": 0.5247445059606584,
+      "proved_mixed_lower_bound": 0.5235987755982988
+    }
+  ]
+}

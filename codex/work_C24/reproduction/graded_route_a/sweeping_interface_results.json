@@ -1,0 +1,39 @@
+{
+  "graph": [
+    {
+      "n": 1,
+      "all_words": 15,
+      "legal_words": 9,
+      "all_directed_transitions": 8,
+      "full_sweeps": 2
+    },
+    {
+      "n": 2,
+      "all_words": 225,
+      "legal_words": 30,
+      "all_directed_transitions": 148,
+      "full_sweeps": 4
+    },
+    {
+      "n": 3,
+      "all_words": 3375,
+      "legal_words": 79,
+      "all_directed_transitions": 2640,
+      "full_sweeps": 8
+    },
+    {
+      "n": 4,
+      "all_words": 50625,
+      "legal_words": 192,
+      "all_directed_transitions": 45900,
+      "full_sweeps": 16
+    }
+  ],
+  "ordered_circuit": {
+    "n": 3,
+    "work_dimension": 8,
+    "cycles": 8,
+    "overlapping_gate_commutator": 2.4559065079816964,
+    "maximum_cycle_error": 2.322838134402806e-15
+  }
+}

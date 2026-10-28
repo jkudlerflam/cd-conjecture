@@ -1,0 +1,127 @@
+{
+  "k": 3,
+  "U": 1.0,
+  "v": 0.1,
+  "parameters": {
+    "b": 4,
+    "t": 89.98213207196922,
+    "mu": 56.92794991640833,
+    "energy_density": -18.334244713470557,
+    "eta": 0.029934535852605804,
+    "K_selector": 368.9285282878769,
+    "wrong_length_margin": 1.693573358602273,
+    "e1": 0.9890227771353557,
+    "e2": 0.9949745888670841,
+    "sampled_min_convexity_ratio": 0.029934535852605804
+  },
+  "physical_bond": {
+    "site_dimension": 36,
+    "bond_dimension": 1296,
+    "nonzero_entries": 1792,
+    "hermiticity_error": 5.466342004740316e-14,
+    "overlapping_selector_legality_failures": 0
+  },
+  "complete_cell_selection": [
+    {
+      "length": 2,
+      "legal_dimension": 31,
+      "legal_ground_energy": -1.9999999999998934,
+      "legal_gap": 7.105427357601002e-15,
+      "full_cell_excess_lower_bound": 91.59643934334943,
+      "proved_excess_lower_bound": 5.080720075806819
+    },
+    {
+      "length": 3,
+      "legal_dimension": 101,
+      "legal_ground_energy": -3.999999999999635,
+      "legal_gap": 1.9995240514305475,
+      "full_cell_excess_lower_bound": 17.948551984851136,
+      "proved_excess_lower_bound": 3.387146717204546
+    },
+    {
+      "length": 4,
+      "legal_dimension": 315,
+      "legal_ground_energy": -3.0109772228643554,
+      "legal_gap": 0.001960228489710225,
+      "full_cell_excess_lower_bound": 2.8421709430404007e-13,
+      "proved_excess_lower_bound": 0.0
+    },
+    {
+      "length": 5,
+      "legal_dimension": 961,
+      "legal_ground_energy": -3.005025411132663,
+      "legal_gap": 5.062810277678409e-07,
+      "full_cell_excess_lower_bound": 2.4158453015843406e-13,
+      "proved_excess_lower_bound": 0.0
+    },
+    {
+      "length": 6,
+      "legal_dimension": 2903,
+      "legal_ground_energy": -3.005012626089393,
+      "legal_gap": 1.2753575973079023e-10,
+      "full_cell_excess_lower_bound": 8.074781049118613,
+      "proved_excess_lower_bound": 5.080720075806819
+    }
+  ],
+  "quantum_payload": {
+    "payload_dimension": 2,
+    "wrapper_site_dimension": 15,
+    "composite_site_dimension": 60,
+    "physical_support_sizes": [
+      128,
+      320
+    ],
+    "isometry_error": 8.006171816907989e-16,
+    "port_error": 3.1411692979670066e-16,
+    "r1": 0.5059532349540118,
+    "r2": 0.5000127214188699,
+    "beta": 0.2495104953607317,
+    "conversion_error": 8.63627035932428e-15,
+    "unconverted_transport_norm": 0.0,
+    "marker_hop_coefficient_per_u": 0.20750605671560723,
+    "combined_marker_hop_error": 7.183015109057599e-15,
+    "incorrect_R_only_selector_factor": 0.75
+  },
+  "first_order_marker_graphs": [
+    {
+      "b": 4,
+      "M": 4,
+      "r": 2,
+      "L": 18,
+      "dimension": 27,
+      "components": 1,
+      "energy": -2.82842712474619,
+      "free_gap_chain_energy": -2.8284271247461903,
+      "gap": 0.1705750271914921,
+      "L_gap": 3.0703504894468576,
+      "L2_gap": 55.26630881004344
+    },
+    {
+      "b": 4,
+      "M": 6,
+      "r": 3,
+      "L": 27,
+      "dimension": 90,
+      "components": 1,
+      "energy": -3.999999999999999,
+      "free_gap_chain_energy": -4.000000000000001,
+      "gap": 0.10782051768070389,
+      "L_gap": 2.911153977379005,
+      "L2_gap": 78.60115738923314
+    },
+    {
+      "b": 4,
+      "M": 8,
+      "r": 4,
+      "L": 36,
+      "dimension": 315,
+      "components": 1,
+      "energy": -5.226251859505493,
+      "free_gap_chain_energy": -5.226251859505506,
+      "gap": 0.07939850907000068,
+      "L_gap": 2.8583463265200244,
+      "L2_gap": 102.90046775472088
+    }
+  ],
+  "limitation": "No full-ring diagonalization or finite-coupling CFT estimate."
+}

@@ -1,0 +1,37 @@
+{
+  "k": 3,
+  "q": 2,
+  "local_dimension": 9,
+  "U": 1.0,
+  "w": 0.1,
+  "mu": 2.0,
+  "K": 6.0,
+  "filter_scale": 433.95293303198713,
+  "max_violation_commutator": 0.0,
+  "endpoint_count_excess": 0,
+  "cells": [
+    {
+      "length": 4,
+      "legal_dimension": 315,
+      "full_dimension": 6561,
+      "ground_energy": -3.0109772228643554,
+      "predicted_ground_energy": -3.0109772228646445,
+      "code_residual": 2.563265355720277e-13,
+      "measured_gap": 0.001960228489710225,
+      "guaranteed_illegal_sector_separation": 1.0
+    },
+    {
+      "length": 5,
+      "legal_dimension": 961,
+      "full_dimension": 59049,
+      "ground_energy": -3.005025411133584,
+      "predicted_ground_energy": -3.005025411132916,
+      "code_residual": 2.461332696611865e-13,
+      "measured_gap": 5.062810473077661e-07,
+      "guaranteed_illegal_sector_separation": 1.0
+    }
+  ],
+  "plain_transport_magnitude": 0.0,
+  "beta": 0.2495104953607317,
+  "converted_transport_error": 2.220450052944974e-16
+}

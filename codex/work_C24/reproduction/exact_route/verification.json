@@ -1,0 +1,211 @@
+{
+  "cases": [
+    {
+      "u": 1,
+      "v": 1,
+      "edges": [
+        [
+          0,
+          0
+        ]
+      ],
+      "logical_modes": 1,
+      "port_dimension": 2,
+      "flags_per_stage": 2,
+      "joint_matrix_shape": [
+        32,
+        2
+      ],
+      "left_visibility": 0.4999999999999999,
+      "right_visibility": 0.25,
+      "logical_hopping_factor": 0.12499999999999997,
+      "max_errors": {
+        "normalization": 4.440892098500626e-16,
+        "one_port_normalization": 2.220446049250313e-16,
+        "left_port": 1.1102230246251565e-16,
+        "right_port": 1.1102230246251565e-16,
+        "missing_edge": 0.0,
+        "dressed_channel": 2.220446049250313e-16,
+        "undressed_channel": 2.220446049250313e-16,
+        "dressed_car": 0.0,
+        "species_covariance": 0,
+        "parity_covariance": 0,
+        "flag_length": 0,
+        "negative_flag_charge": 0,
+        "link_norm": 0.0
+      },
+      "basis_transducer": {
+        "basis_branches_checked": 8,
+        "largest_stable_routing_swap_count": 3
+      }
+    },
+    {
+      "u": 2,
+      "v": 2,
+      "edges": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "logical_modes": 3,
+      "port_dimension": 4,
+      "flags_per_stage": 5,
+      "joint_matrix_shape": [
+        3200,
+        8
+      ],
+      "left_visibility": 0.20412414523193154,
+      "right_visibility": 0.17010345435994292,
+      "logical_hopping_factor": 0.03472222222222223,
+      "max_errors": {
+        "normalization": 0.0,
+        "one_port_normalization": 2.220446049250313e-16,
+        "left_port": 5.551115123125783e-17,
+        "right_port": 5.551115123125783e-17,
+        "missing_edge": 0.0,
+        "dressed_channel": 2.220446049250313e-16,
+        "undressed_channel": 2.7755575615628914e-17,
+        "dressed_car": 0.0,
+        "species_covariance": 0,
+        "parity_covariance": 0,
+        "flag_length": 0,
+        "negative_flag_charge": 0,
+        "link_norm": 0.0
+      },
+      "basis_transducer": {
+        "basis_branches_checked": 80,
+        "largest_stable_routing_swap_count": 19
+      }
+    },
+    {
+      "u": 2,
+      "v": 2,
+      "edges": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "logical_modes": 4,
+      "port_dimension": 4,
+      "flags_per_stage": 6,
+      "joint_matrix_shape": [
+        9216,
+        16
+      ],
+      "left_visibility": 0.17677669529663687,
+      "right_visibility": 0.15467960838455724,
+      "logical_hopping_factor": 0.027343749999999993,
+      "max_errors": {
+        "normalization": 0.0,
+        "one_port_normalization": 0.0,
+        "left_port": 2.7755575615628914e-17,
+        "right_port": 0.0,
+        "missing_edge": 0.0,
+        "dressed_channel": 0.0,
+        "undressed_channel": 1.942890293094024e-16,
+        "dressed_car": 0.0,
+        "species_covariance": 0,
+        "parity_covariance": 0,
+        "flag_length": 0,
+        "negative_flag_charge": 0,
+        "link_norm": 1.1102230246251565e-16
+      },
+      "basis_transducer": {
+        "basis_branches_checked": 192,
+        "largest_stable_routing_swap_count": 25
+      }
+    },
+    {
+      "u": 3,
+      "v": 2,
+      "edges": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "logical_modes": 3,
+      "port_dimension": 5,
+      "flags_per_stage": 6,
+      "joint_matrix_shape": [
+        7200,
+        8
+      ],
+      "left_visibility": 0.1666666666666667,
+      "right_visibility": 0.13888888888888892,
+      "logical_hopping_factor": 0.02314814814814816,
+      "max_errors": {
+        "normalization": 6.661338147750939e-16,
+        "one_port_normalization": 2.220446049250313e-16,
+        "left_port": 5.551115123125783e-17,
+        "right_port": 5.551115123125783e-17,
+        "missing_edge": 0.0,
+        "dressed_channel": 3.3306690738754696e-16,
+        "undressed_channel": 1.3877787807814457e-16,
+        "dressed_car": 0.0,
+        "species_covariance": 0,
+        "parity_covariance": 0,
+        "flag_length": 0,
+        "negative_flag_charge": 0,
+        "link_norm": 0.0
+      },
+      "basis_transducer": {
+        "basis_branches_checked": 96,
+        "largest_stable_routing_swap_count": 26
+      }
+    }
+  ],
+  "head_gates": [
+    {
+      "q": 2,
+      "local_alphabet": 11,
+      "controlled_swaps_checked": 8
+    },
+    {
+      "q": 3,
+      "local_alphabet": 22,
+      "controlled_swaps_checked": 36
+    },
+    {
+      "q": 4,
+      "local_alphabet": 27,
+      "controlled_swaps_checked": 64
+    },
+    {
+      "q": 5,
+      "local_alphabet": 44,
+      "controlled_swaps_checked": 150
+    }
+  ],
+  "runtime_seconds": 0.07916637510061264
+}

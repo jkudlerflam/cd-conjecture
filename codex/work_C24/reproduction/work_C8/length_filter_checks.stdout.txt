@@ -1,0 +1,201 @@
+[
+  {
+    "k": 3,
+    "phase": 1.2566370614359172,
+    "U": 1.0,
+    "w": 0.1,
+    "uniform_filter_bound": 0.004608794751140852,
+    "filter_scale": 433.95293303198713,
+    "cores": [
+      {
+        "r": 2,
+        "ground_energy": 0.09522476235653508,
+        "individual_bound": 0.024727545861128162,
+        "left_gap": 0.29289321881345265,
+        "left_gap_bound": 0.16666666666666666
+      },
+      {
+        "r": 3,
+        "ground_energy": 2.6984171797836683e-16,
+        "individual_bound": 0.0,
+        "left_gap": 0.13397459621556157,
+        "left_gap_bound": 0.06666666666666667
+      },
+      {
+        "r": 4,
+        "ground_energy": 0.04850055165222525,
+        "individual_bound": 0.007014092105292064,
+        "left_gap": 0.07612046748871353,
+        "left_gap_bound": 0.03571428571428571
+      },
+      {
+        "r": 5,
+        "ground_energy": 0.147227353827731,
+        "individual_bound": 0.00903430792441075,
+        "left_gap": 0.048943483704846684,
+        "left_gap_bound": 0.022222222222222223
+      }
+    ],
+    "number_selection": [
+      {
+        "length": 4,
+        "sectors": [
+          {
+            "r": 2,
+            "dimension": 24,
+            "ground_energy": 1.98037149691349
+          },
+          {
+            "r": 3,
+            "dimension": 32,
+            "ground_energy": 0.989022777135497
+          },
+          {
+            "r": 4,
+            "dimension": 16,
+            "ground_energy": 21.04695664315264
+          }
+        ],
+        "target_code_error": 2.316084306405064e-13,
+        "measured_selection_margin": 0.991348719777993,
+        "guaranteed_selection_margin": 0.7
+      },
+      {
+        "length": 5,
+        "sectors": [
+          {
+            "r": 2,
+            "dimension": 40,
+            "ground_energy": 1.980005561263404
+          },
+          {
+            "r": 3,
+            "dimension": 80,
+            "ground_energy": 0.9949745888672267
+          },
+          {
+            "r": 4,
+            "dimension": 80,
+            "ground_energy": 1.8853327822139079
+          },
+          {
+            "r": 5,
+            "dimension": 32,
+            "ground_energy": 63.889742016082
+          }
+        ],
+        "target_code_error": 2.280759715637255e-13,
+        "measured_selection_margin": 0.8903581933466812,
+        "guaranteed_selection_margin": 0.6
+      }
+    ]
+  },
+  {
+    "k": 4,
+    "phase": 1.0471975511965976,
+    "U": 1.0,
+    "w": 0.1,
+    "uniform_filter_bound": 0.0025063139861636065,
+    "filter_scale": 797.9846144741757,
+    "cores": [
+      {
+        "r": 2,
+        "ground_energy": 0.24293153533235487,
+        "individual_bound": 0.04573455321778505,
+        "left_gap": 0.29289321881345276,
+        "left_gap_bound": 0.16666666666666666
+      },
+      {
+        "r": 3,
+        "ground_energy": 0.044979069851105065,
+        "individual_bound": 0.009092242611312376,
+        "left_gap": 0.1339745962155615,
+        "left_gap_bound": 0.06666666666666667
+      },
+      {
+        "r": 4,
+        "ground_energy": -1.3162396630260465e-16,
+        "individual_bound": 0.0,
+        "left_gap": 0.07612046748871351,
+        "left_gap_bound": 0.03571428571428571
+      },
+      {
+        "r": 5,
+        "ground_energy": 0.02715716784704658,
+        "individual_bound": 0.003537748805310729,
+        "left_gap": 0.048943483704846795,
+        "left_gap_bound": 0.022222222222222223
+      },
+      {
+        "r": 6,
+        "ground_energy": 0.08812890667719425,
+        "individual_bound": 0.005649799364532981,
+        "left_gap": 0.034074173710931625,
+        "left_gap_bound": 0.015151515151515152
+      }
+    ],
+    "number_selection": [
+      {
+        "length": 5,
+        "sectors": [
+          {
+            "r": 2,
+            "dimension": 40,
+            "ground_energy": 1.980005737126157
+          },
+          {
+            "r": 3,
+            "dimension": 80,
+            "ground_energy": 1.980632615551204
+          },
+          {
+            "r": 4,
+            "dimension": 80,
+            "ground_energy": 0.9899020285910745
+          },
+          {
+            "r": 5,
+            "dimension": 32,
+            "ground_energy": 21.671002114635986
+          }
+        ],
+        "target_code_error": 4.340406676307346e-13,
+        "measured_selection_margin": 0.9901037085350826,
+        "guaranteed_selection_margin": 0.6
+      },
+      {
+        "length": 6,
+        "sectors": [
+          {
+            "r": 2,
+            "dimension": 60,
+            "ground_energy": 1.980000076591383
+          },
+          {
+            "r": 3,
+            "dimension": 160,
+            "ground_energy": 1.984754998426294
+          },
+          {
+            "r": 4,
+            "dimension": 240,
+            "ground_energy": 0.9949748730183889
+          },
+          {
+            "r": 5,
+            "dimension": 192,
+            "ground_energy": 1.8597369235932693
+          },
+          {
+            "r": 6,
+            "dimension": 64,
+            "ground_energy": 70.3255116188316
+          }
+        ],
+        "target_code_error": 3.786341713224722e-13,
+        "measured_selection_margin": 0.8647620505748803,
+        "guaranteed_selection_margin": 0.5
+      }
+    ]
+  }
+]

@@ -1,0 +1,49 @@
+{
+  "quantum_gate_case": {
+    "local_alphabet": 18,
+    "two_site_dimension": 324,
+    "unitarity_error": 0.0,
+    "involution_error": 0.0,
+    "species_conservation_error": 0,
+    "sweep": {
+      "basis_inputs": 272,
+      "maximum_sweep_error": 0.0
+    }
+  },
+  "loaded_exchange_cases": [
+    {
+      "species": 2,
+      "tape_alphabet": 4,
+      "head_alphabet": 20,
+      "two_site_basis_pairs": 400,
+      "exact_permutation_and_charge_checks": true,
+      "sweep": {
+        "basis_inputs": 288,
+        "maximum_sweep_error": 0.0
+      }
+    },
+    {
+      "species": 3,
+      "tape_alphabet": 6,
+      "head_alphabet": 30,
+      "two_site_basis_pairs": 900,
+      "exact_permutation_and_charge_checks": true,
+      "sweep": {
+        "basis_inputs": 936,
+        "maximum_sweep_error": 0.0
+      }
+    },
+    {
+      "species": 5,
+      "tape_alphabet": 10,
+      "head_alphabet": 50,
+      "two_site_basis_pairs": 2500,
+      "exact_permutation_and_charge_checks": true,
+      "sweep": {
+        "basis_inputs": 4200,
+        "maximum_sweep_error": 0.0
+      }
+    }
+  ],
+  "runtime_seconds": 0.11674804100766778
+}

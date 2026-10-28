@@ -1,0 +1,40 @@
+{
+  "full_spectra": [
+    {
+      "b": 4,
+      "M": 4,
+      "r": 2,
+      "payload_number": 2,
+      "L": 18,
+      "full_dimension": 162,
+      "complete_spectrum_error": 1.0658141036401503e-14,
+      "ground_energy": -4.808326112068522,
+      "predicted_ground_energy": -4.8083261120685235
+    },
+    {
+      "b": 3,
+      "M": 5,
+      "r": 2,
+      "payload_number": 2,
+      "L": 17,
+      "full_dimension": 340,
+      "complete_spectrum_error": 1.199040866595169e-14,
+      "ground_energy": -5.501315561749649,
+      "predicted_ground_energy": -5.501315561749642
+    },
+    {
+      "b": 4,
+      "M": 6,
+      "r": 3,
+      "payload_number": 3,
+      "L": 27,
+      "full_dimension": 1800,
+      "complete_spectrum_error": 3.375077994860476e-14,
+      "ground_energy": -6.799999999999985,
+      "predicted_ground_energy": -6.800000000000001
+    }
+  ],
+  "equal_velocity": 9.0,
+  "joint_casimir_c": 1.9999994088379025,
+  "limitation": "First-order model with one XX payload, not a microscopic counterexample."
+}

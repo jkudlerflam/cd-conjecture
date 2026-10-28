@@ -1,0 +1,166 @@
+{
+  "ports": [
+    {
+      "N": 1,
+      "q": 2,
+      "joint_nonzero_rows": 8,
+      "fock_dimension": 2,
+      "maximum_entry_error": 4.440892098500626e-16,
+      "charge_checks": 8
+    },
+    {
+      "N": 3,
+      "q": 4,
+      "joint_nonzero_rows": 200,
+      "fock_dimension": 8,
+      "maximum_entry_error": 5.551115123125783e-17,
+      "charge_checks": 200
+    },
+    {
+      "N": 4,
+      "q": 4,
+      "joint_nonzero_rows": 576,
+      "fock_dimension": 16,
+      "maximum_entry_error": 2.7755575615628914e-17,
+      "charge_checks": 576
+    },
+    {
+      "N": 6,
+      "q": 6,
+      "joint_nonzero_rows": 5184,
+      "fock_dimension": 64,
+      "maximum_entry_error": 6.661338147750939e-16,
+      "charge_checks": 5184
+    }
+  ],
+  "planes": [
+    {
+      "p": 2,
+      "q": 14,
+      "N": 21,
+      "one_two_edge_multisets": 231,
+      "six_cycles": 28,
+      "resonant_cycle_chiral_assignments": 18,
+      "example": {
+        "edge_labels": [
+          1,
+          6,
+          5,
+          8,
+          9,
+          3
+        ],
+        "z": [
+          1,
+          -1,
+          1,
+          -1,
+          1,
+          -1
+        ],
+        "m": [
+          -1,
+          -1,
+          1,
+          1,
+          -1,
+          1
+        ]
+      }
+    },
+    {
+      "p": 3,
+      "q": 26,
+      "N": 52,
+      "one_two_edge_multisets": 1378,
+      "six_cycles": 234,
+      "resonant_cycle_chiral_assignments": 220,
+      "example": {
+        "edge_labels": [
+          1,
+          8,
+          6,
+          27,
+          28,
+          4
+        ],
+        "z": [
+          1,
+          -1,
+          1,
+          -1,
+          1,
+          -1
+        ],
+        "m": [
+          -1,
+          -1,
+          1,
+          1,
+          -1,
+          1
+        ]
+      }
+    },
+    {
+      "p": 5,
+      "q": 62,
+      "N": 186,
+      "one_two_edge_multisets": 17391,
+      "six_cycles": null,
+      "resonant_cycle_chiral_assignments": null,
+      "example": null
+    },
+    {
+      "p": 7,
+      "q": 114,
+      "N": 456,
+      "one_two_edge_multisets": 104196,
+      "six_cycles": null,
+      "resonant_cycle_chiral_assignments": null,
+      "example": null
+    }
+  ],
+  "acceptance": {
+    "cases": 60,
+    "dimensions": [
+      8,
+      15,
+      25
+    ],
+    "minimum_actual_gap_over_bound": 4.563388463477137
+  },
+  "history_toy": {
+    "total_dimension": 144,
+    "history_vertices": 9,
+    "all_time_kernel": 4,
+    "terminal_only_kernel": 8,
+    "all_time_gap": 0.06030737921409133
+  },
+  "gaussian": [
+    {
+      "N": 1,
+      "b": 4,
+      "reference_stiffness_min": 0.04921783492994863,
+      "KAK_error": 7.949501638480627e-18,
+      "normalized_scaling_metric_min": 0.9937512560343279,
+      "six_cycle_dimension_lower_bound": 2.9812537681029836
+    },
+    {
+      "N": 6,
+      "b": 20,
+      "reference_stiffness_min": 0.002377332109043748,
+      "KAK_error": 4.440898459514981e-16,
+      "normalized_scaling_metric_min": 0.9942865653206016,
+      "six_cycle_dimension_lower_bound": 2.9828596959618046
+    },
+    {
+      "N": 21,
+      "b": 100,
+      "reference_stiffness_min": 9.899413542489217e-05,
+      "KAK_error": 3.845925412791845e-16,
+      "normalized_scaling_metric_min": 0.9929128939492016,
+      "six_cycle_dimension_lower_bound": 2.978738681847605
+    }
+  ]
+}

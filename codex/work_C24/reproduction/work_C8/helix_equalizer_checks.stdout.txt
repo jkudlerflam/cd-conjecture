@@ -1,0 +1,56 @@
+[
+  {
+    "k": 3,
+    "b": 4,
+    "phi": 1.5707963267948966,
+    "r_values": [
+      0.5059532349540118,
+      0.5000127214188699
+    ],
+    "compensator_expectations": [
+      [
+        1.9764672521382236,
+        1.9764672521382236
+      ],
+      [
+        1.9999491156191649,
+        1.9999491156191649
+      ]
+    ],
+    "equalized_port_error": 6.687288017502645e-16,
+    "compensator_norm": 6.788216371996786,
+    "beta_helix": 0.06250000000000003,
+    "local_conversion_error": 4.163336342344337e-17,
+    "parent_max_residual": 2.580777641370693e-16,
+    "parent_min_gap": 0.048943483704846455,
+    "projected_two_cell_bond_error": 1.0021390450445587e-15,
+    "transport_state_dimension": 262144
+  },
+  {
+    "k": 3,
+    "b": 4,
+    "phi": 0.25,
+    "r_values": [
+      0.5059532349540118,
+      0.5000127214188699
+    ],
+    "compensator_expectations": [
+      [
+        1.976467252138273,
+        1.976467252138273
+      ],
+      [
+        1.999949115619212,
+        1.999949115619212
+      ]
+    ],
+    "equalized_port_error": 2.577284965085252e-14,
+    "compensator_norm": 254.8223095483629,
+    "beta_helix": 0.9392595359811344,
+    "local_conversion_error": 5.064528182806439e-14,
+    "parent_max_residual": 2.480532535670427e-16,
+    "parent_min_gap": 0.04894348370484659,
+    "projected_two_cell_bond_error": 3.354068486539753e-14,
+    "transport_state_dimension": 262144
+  }
+]

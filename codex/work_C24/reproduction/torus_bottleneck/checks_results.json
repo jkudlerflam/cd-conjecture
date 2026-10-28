@@ -1,0 +1,101 @@
+{
+  "projective_planes": [
+    {
+      "prime": 2,
+      "port_dimension": 14,
+      "channels": 21,
+      "degree": 3,
+      "four_cycles": 0,
+      "incidence_rank": 13,
+      "kernel_rank": 8,
+      "short_integer_kernel_check": {
+        "vectors_checked": 143528,
+        "nonzero_neutral_vectors": []
+      }
+    },
+    {
+      "prime": 3,
+      "port_dimension": 26,
+      "channels": 52,
+      "degree": 4,
+      "four_cycles": 0,
+      "incidence_rank": 25,
+      "kernel_rank": 27
+    },
+    {
+      "prime": 5,
+      "port_dimension": 62,
+      "channels": 186,
+      "degree": 6,
+      "four_cycles": 0,
+      "incidence_rank": 61,
+      "kernel_rank": 125
+    },
+    {
+      "prime": 7,
+      "port_dimension": 114,
+      "channels": 456,
+      "degree": 8,
+      "four_cycles": 0,
+      "incidence_rank": 113,
+      "kernel_rank": 343
+    }
+  ],
+  "momenta": [
+    {
+      "N": 21,
+      "minimum_low_dimension_mismatch": 0.023799944345377355,
+      "claimed_bound": 0.02379994434537722,
+      "mobile_mixed_minimum": 0.8541157814472129,
+      "pure_length_mismatch": 0.740480489693061,
+      "velocity_range": [
+        1.0240877246244222,
+        1.6854100466155726
+      ]
+    },
+    {
+      "N": 52,
+      "minimum_low_dimension_mismatch": 0.009879222181099934,
+      "claimed_bound": 0.009879222181099979,
+      "mobile_mixed_minimum": 0.8401950592829355,
+      "pure_length_mismatch": 0.740480489693061,
+      "velocity_range": [
+        1.0099283450945091,
+        1.7124598176652688
+      ]
+    },
+    {
+      "N": 186,
+      "minimum_low_dimension_mismatch": 0.0027999934523972314,
+      "claimed_bound": 0.00279999345239732,
+      "mobile_mixed_minimum": 0.8331158305542328,
+      "pure_length_mismatch": 0.740480489693061,
+      "velocity_range": [
+        1.002803920764174,
+        1.7264643633898238
+      ]
+    },
+    {
+      "N": 456,
+      "minimum_low_dimension_mismatch": 0.0011457303623592097,
+      "claimed_bound": 0.001145730362359516,
+      "mobile_mixed_minimum": 0.8314615674641948,
+      "pure_length_mismatch": 0.740480489693061,
+      "velocity_range": [
+        1.001146387213083,
+        1.729761617999967
+      ]
+    }
+  ],
+  "compression": {
+    "graph": "six-cycle",
+    "q": 6,
+    "N": 6,
+    "degree_bound": 2,
+    "left_right_choi_norms": [
+      1.8477590650225777,
+      1.8477590650225777
+    ],
+    "epsilon_sufficient": 0.020833333333333332
+  }
+}

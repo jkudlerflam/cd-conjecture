@@ -1,0 +1,80 @@
+[
+  {
+    "q": 3,
+    "microscopic_dimension": 10,
+    "k": 3,
+    "w": 0.3,
+    "U": 1.0,
+    "g": 0.7,
+    "core_gap": 0.35,
+    "cells": [
+      {
+        "holes": 1,
+        "length": 4,
+        "sector_dimension": 108,
+        "code_residual": 6.603260856647041e-16,
+        "code_error": 7.021666937153402e-16,
+        "port_error": 3.8459253727671276e-16,
+        "ground_degeneracy": 4,
+        "full_gap": 0.045086169700826684,
+        "lower_gap_bound": 0.0033360720687751625,
+        "endpoint_occupation": 0.5601858494086757,
+        "min_adjacency": 0.9398141505913244
+      },
+      {
+        "holes": 2,
+        "length": 5,
+        "sector_dimension": 270,
+        "code_residual": 6.443873135841481e-16,
+        "code_error": 3.1401849173675503e-16,
+        "port_error": 1.3597399555105182e-16,
+        "ground_degeneracy": 4,
+        "full_gap": 0.0004071792604821711,
+        "lower_gap_bound": 3.7792673580536996e-05,
+        "endpoint_occupation": 0.50118983386872,
+        "min_adjacency": 0.9862056435122666
+      }
+    ],
+    "beta": 0.25149955601253837,
+    "transport_error": 7.152111528976949e-16
+  },
+  {
+    "q": 3,
+    "microscopic_dimension": 10,
+    "k": 3,
+    "w": 0.5,
+    "U": 1.0,
+    "g": 0.7,
+    "core_gap": 0.35,
+    "cells": [
+      {
+        "holes": 1,
+        "length": 4,
+        "sector_dimension": 108,
+        "code_residual": 2.9373740229761033e-16,
+        "code_error": 2.482534153247273e-16,
+        "port_error": 3.8459253727671276e-16,
+        "ground_degeneracy": 4,
+        "full_gap": 0.1576291755089494,
+        "lower_gap_bound": 0.009140404941338835,
+        "endpoint_occupation": 0.6381966011250106,
+        "min_adjacency": 0.8618033988749894
+      },
+      {
+        "holes": 2,
+        "length": 5,
+        "sector_dimension": 270,
+        "code_residual": 7.353918196335446e-16,
+        "code_error": 6.280369834735101e-16,
+        "port_error": 2.3551386880256624e-16,
+        "ground_degeneracy": 4,
+        "full_gap": 0.0103941764966482,
+        "lower_gap_bound": 0.0008522802317556211,
+        "endpoint_occupation": 0.5121236704581557,
+        "min_adjacency": 0.939338933779866
+      }
+    ],
+    "beta": 0.29057968333690887,
+    "transport_error": 3.764949453935611e-16
+  }
+]
