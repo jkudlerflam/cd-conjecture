@@ -78,5 +78,43 @@ ladder_checks.py checks the decorated source measures, microscopic
 bond parity and positivity, then exact finite-coupling spectra for the
 undecorated control on two and three cells. These are deliberately
 tests of a failed interface, not a claim of reproducing C19's bond.
-The n=2 three-cell and n=3 two-cell runs were started with the smaller
-cases already passing. Full results will be recorded after completion.
+All ladder runs finished. The largest symmetry block has dimension
+65,536 (n=2, three cells); the n=3 two-cell block has dimension 16,384.
+Resolvent errors are <=1.2e-15, ED residuals <=1.3e-14, and halving-
+coupling exponents are 3.0021 to 3.0038. These are scalar-bond controls.
+
+## Step 4, a local interface that does carry all Majoranas
+
+[proved] A different 16-state site has a vacuum, two lanes of three
+cursor syndromes, a filler, and a data qubit. The cursor visits X_i
+and Y_i at consecutive lane positions. Controlled-Z hopping between
+sites makes the one-cursor gauge Hamiltonian a scalar path with
+onsite potentials g A tensor gamma_j, where A exchanges X and Z
+syndromes. Its source resolvent stays in scalar plus Clifford-vector
+form under the continued-fraction recursion. A local right-port
+rotation supplies the parity-dressed eta_j. No arbitrary reflection
+or history controller appears in this local module.
+
+[proved] The complete isolated-cell code has exactly 2^n states,
+product parity is exact, and all nonvacuum sectors have gap at least
+Delta-g-2t. The second-order bond is exactly Gaussian and has hopping
+matrix J=-2 R G, where R reverses 2n indices and G is positive definite.
+Strict positivity follows from distinct first nonzero Taylor orders
+of the 2n filter functions. This is a genuine escape from scalar
+source resolvents, with unbounded second-order hopping rank.
+
+[proved limitation] This particular J is not C19's target. Since
+J^{-1}J^T is similar to a positive-definite matrix, a zero of its
+zero-field Bloch symbol can occur only at k=0 or pi. Generic choices
+are gapped. The checked n=1 instance is gapped. Independent displaced
+flavours and chemical potentials have NOT been realized. Changing the
+source geometry is required before attempting the final selector.
+
+[numerical] clifford_cursor_checks.py directly resolves the local
+one-cursor Hamiltonian for n=1,2,3 (dimensions 12,48,144). It finds
+6,12,18 accessible energies and Gaussian bond residuals below 5e-15.
+The smallest n=3 hopping singular value is only 5.75e-14, so full rank
+is established analytically rather than inferred from that number.
+Full n=1 ED on two and three cells (dimensions 256,4096) has cubic
+canonical-matrix residuals. An additional n=2 two-cell full ED was
+started; n=2 three-cell ED for this interacting cursor has not been run.

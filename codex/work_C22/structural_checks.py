@@ -56,6 +56,7 @@ def direct_second_order(n,M):
                for i in range(len(W)) for j in range(i)] or [0.])
     Kb,_=h2(n,g=.2,phases=(.41,.31,-.07))
     pred=sum(np.kron(np.kron(np.eye(2**(n*j)),Kb),np.eye(2**(n*(M-j-2)))) for j in range(M-1))*a**4
+    assert np.linalg.norm(K-pred,2)<1e-12 and cross<1e-12
     return dict(n=n,cells=M,dimension=len(H)**M,error=float(np.linalg.norm(K-pred,2)),cross=cross)
 
 

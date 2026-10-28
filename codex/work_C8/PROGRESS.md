@@ -1,5 +1,74 @@
 # C8 progress
 
+## Run 8, active continuation
+
+Substantive step 37, new main result, 2026-10-28 UTC. The autonomous
+clean-readout machine is now implemented in clean_readout_machine.py.
+It avoids a program generator: a moving logical cursor selects the bit,
+and two q-state registers next to each port hold row/column counters.
+All counters are on the tape. A constant set of explicit two-site modular
+permutations updates them. The head carries only a neutral parity bit
+and the single graded data bit being moved; that data bit is zeroed in
+the head before READY. Both port maps and colored density maps are clean.
+
+The actual table has Q=58 direction-fixed controls, 799 prescribed
+collision blocks and 928 completed blocks, each decorated by one of seven
+explicit local permutations. The work dimension is 29760(q+1), and the
+15-letter-clock core dimension is 446400(q+1). For q divisible by four,
+m=q^2/8 logical data sites plus six endpoint/counter sites give n=m+6.
+Static role syntax selects this layout, and role-dependent I-sweep pins
+initialize every surplus bit, record, flag and head state. There is no
+preloaded program and no position-dependent instruction list.
+
+Checks passed: full primitive permutation/grade tests at q=4,8,12;
+complete cycles for all 4 inputs at q=4 and all 256 at q=8, plus 24
+q=12 inputs. Every paired active environment was identical under flipping
+the exposed bit (51200 pairs at q=8). The full machine resets in
+T=11m^2+105m sweeps, below 2^(m+6) for m>=2. A first guessed timing
+formula failed at m=8; it was replaced by this derived formula.
+Every one of 5124 clock vertices was tested for all q=4 inputs, and every
+one of 524298 vertices at q=8 for a representative input, comparing with
+the machine after each complete sweep. Nonuniform flavor counts occur
+and must be compensated. No central charge measurement is claimed.
+
+Next, urgently: write the all-sector initialization/core theorem with
+proof, independently check the full initialized kernel in a small
+reachable-state fixture and physical compression matrices rather than
+only the clean-state invariants, and audit compatibility with the mobile
+wrapper. C19 spectral filters are not implied by this first-order core.
+The original conjecture is not yet declared settled.
+
+2026-10-28 UTC. The saved run-7 results are retained below. No conclusive
+answer has been obtained in this continuation.
+
+Read STATUS, route-A background, C19 and the new sparse-controller files.
+C21, C22 and C23 PROGRESS files are absent in this checkout. The new
+controller_instantiation contribution supplies a preloaded dispatcher and
+a blank length counter, but explicitly leaves their autonomous composition,
+format verifier and endpoint readout incomplete. Its status is narrower
+than the earlier existential-core composition claim. No external files
+were changed and no old clock calculation was repeated.
+
+Substantive step 36. Wrote endpoint_shuttle.py and its complete 378-entry
+collision permutation, with 336 prescribed entries, 21 direction-fixed
+controls and 18 neutral tape symbols. It transports four marked output
+records to the two physical endpoints and their inner neighbors, opens
+READY windows, clears them, and reverses all record moves. The cycle uses
+no stored travel history and no q-valued controller. It is conditional on
+prepared, marked outputs, not a complete initialized core. Its standalone
+15-letter-clock factor is 11610 times the quantum-record dimension.
+
+The first check caught an incorrect proposed cycle-length formula, which
+omitted the source positions. Corrected it to 10n+8a-4b-12. Full local
+unitarity, complete cycles, all partial-clock vertices, both Clifford maps
+and colored density checks are now running in endpoint_shuttle_checks.py.
+All checks passed. endpoint_shuttle.md contains the complete proof and
+count. Checks covered 75 cycles through length 32, 12096 bond cases, every
+clock vertex at lengths 8,9,10, and both graded Clifford/color maps through
+(q,m)=(8,8), logical dimension 256. Port and density active counts differ
+and must be normalized separately. Next: surplus-input checking and the
+C19 spectral interface; the full autonomous encoder is still missing.
+
 2026-10-27. Seventh run finished, nonconclusive. RESULT.md Sections 36-39
 contain the new proofs, constructions, checks, and ranked continuation.
 All writes stayed in this folder. Read this first and do not redo

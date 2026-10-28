@@ -1,0 +1,28 @@
+[
+  {
+    "n": 1,
+    "physical_cell_dimension": 289,
+    "legal_dimension": 16,
+    "h_shape": [
+      289,
+      289
+    ],
+    "cell_error": 4.440892098500626e-16,
+    "port_error": 0.0,
+    "charge_error": 0.0,
+    "hermiticity": 0.0
+  },
+  {
+    "n": 2,
+    "physical_cell_dimension": 4913,
+    "legal_dimension": 48,
+    "h_shape": [
+      289,
+      289
+    ],
+    "cell_error": 7.691850745534256e-15,
+    "port_error": 0.0,
+    "charge_error": 0.0,
+    "hermiticity": 0.0
+  }
+]

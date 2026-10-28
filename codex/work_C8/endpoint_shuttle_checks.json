@@ -1,0 +1,91 @@
+{
+  "local": {
+    "collision_entries": 378,
+    "prescribed": 336,
+    "bond_involution_cases": 12096
+  },
+  "cycles": {
+    "cases": 75,
+    "steps": 14100,
+    "largest": {
+      "n": 32,
+      "a": 26,
+      "b": 28,
+      "steps": 404,
+      "active": [
+        62,
+        62
+      ]
+    }
+  },
+  "clock": [
+    {
+      "n": 8,
+      "clock_vertices": 5124,
+      "sweeps": 256,
+      "port_active": [
+        1028,
+        1040
+      ],
+      "density_active": [
+        884,
+        880
+      ]
+    },
+    {
+      "n": 9,
+      "clock_vertices": 11269,
+      "sweeps": 512,
+      "port_active": [
+        2300,
+        2300
+      ],
+      "density_active": [
+        2020,
+        2020
+      ]
+    },
+    {
+      "n": 10,
+      "clock_vertices": 24582,
+      "sweeps": 1024,
+      "port_active": [
+        5276,
+        5356
+      ],
+      "density_active": [
+        4704,
+        4628
+      ]
+    }
+  ],
+  "code": [
+    {
+      "q": 4,
+      "m": 2,
+      "logical_dimension": 4,
+      "code_nonzeros": 16,
+      "port_error": 0.0,
+      "density_error": 0.0,
+      "nonzero_port_entries": 32
+    },
+    {
+      "q": 8,
+      "m": 4,
+      "logical_dimension": 16,
+      "code_nonzeros": 128,
+      "port_error": 0.0,
+      "density_error": 0.0,
+      "nonzero_port_entries": 256
+    },
+    {
+      "q": 8,
+      "m": 8,
+      "logical_dimension": 256,
+      "code_nonzeros": 4096,
+      "port_error": 0.0,
+      "density_error": 0.0,
+      "nonzero_port_entries": 8192
+    }
+  ]
+}

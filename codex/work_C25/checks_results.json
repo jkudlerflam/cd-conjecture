@@ -1,0 +1,53 @@
+{
+  "raw_source_inverse_check": {
+    "dimension": 450,
+    "absolute_scaled_error": 1.719159259394587e-09,
+    "code_residual": 1.6597264715252342e-16,
+    "s": 1.1229096574805199e-08
+  },
+  "helix_checks": [
+    {
+      "N": 5,
+      "full_dimension": 32,
+      "reduced_dimension": 6,
+      "max_heat_kernel_error": 1.0516032489249483e-12
+    },
+    {
+      "N": 6,
+      "full_dimension": 64,
+      "reduced_dimension": 7,
+      "max_heat_kernel_error": 1.3642420526593924e-12
+    }
+  ],
+  "G1_positive_check": {
+    "local_dimension": 8,
+    "cell_dimension": 32,
+    "nullity": 2,
+    "gap": 0.4999999999999991,
+    "code_residual": 3.251767952832689e-17,
+    "port_error": 1.7431527984210495e-32
+  },
+  "mixed_term_selection_check": {
+    "Bell_pair_dimension": 16,
+    "source_labels": [
+      5,
+      10,
+      15
+    ],
+    "ground_label": 0,
+    "source_error": 7.698354467087702e-16,
+    "mixed_coefficient": 0.0
+  },
+  "charge_gap_leading_paths": [
+    {
+      "p": 1,
+      "min_hops": 4,
+      "gap_leading_coefficient": 2.0
+    },
+    {
+      "p": 2,
+      "min_hops": 8,
+      "gap_leading_coefficient": 0.25
+    }
+  ]
+}
