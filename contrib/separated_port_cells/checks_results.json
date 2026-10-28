@@ -1,0 +1,42 @@
+{
+  "scope": "Abstract cells only; no spatial compiler or central-charge estimate.",
+  "cases": [
+    {
+      "name": "odd_rank_one",
+      "logical_dimension": 2,
+      "boundary_dimension": 12,
+      "cell_dimension": 288,
+      "two_cell_dimension": 82944,
+      "single_port_realization_error": 7.92932710704285e-16,
+      "code_error": 9.627234755156107e-15,
+      "code_degeneracy": 2,
+      "gap": 0.9999999999999903,
+      "lower_bound_min_eigenvalue": -1.3839378676863356e-15,
+      "parity_commutator": 0.0,
+      "other_code_projector_commutator": 0.0,
+      "gadget_commutator": 114.14789291751036,
+      "first_order_port_error": 1.7431527984210495e-32,
+      "second_order_error": 3.400681912121602e-15,
+      "second_order_error_relative_to_exchange": 2.6721038623308255e-12
+    },
+    {
+      "name": "mixed_parity",
+      "logical_dimension": 2,
+      "boundary_dimension": 16,
+      "cell_dimension": 512,
+      "two_cell_dimension": 262144,
+      "single_port_realization_error": 4.792561929496197e-16,
+      "code_error": 4.07637551134835e-14,
+      "code_degeneracy": 2,
+      "gap": 0.9999999999999519,
+      "lower_bound_min_eigenvalue": -4.993943066929247e-14,
+      "parity_commutator": 0.0,
+      "other_code_projector_commutator": 0.0,
+      "gadget_commutator": 1799.2257163891811,
+      "first_order_port_error": 1.7431527984210495e-32,
+      "second_order_error": 3.205938244565604e-15,
+      "second_order_error_relative_to_exchange": 3.533576301799608e-11
+    }
+  ],
+  "runtime_seconds": 0.17560172080993652
+}

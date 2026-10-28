@@ -1,0 +1,176 @@
+{
+  "scope": "Abstract cells only; no microscopic realization or CFT estimate.",
+  "cases": [
+    {
+      "N": 2,
+      "m": 1,
+      "k": 3,
+      "rho": 0.03567437213632505,
+      "rho_squared": 0.0012726608273210052,
+      "scalar": -0.42463235294117646,
+      "min_weight_eigenvalue": 0.16666666666666666,
+      "weight_sum_error": 0.0,
+      "source_parity_commutator": 0.0,
+      "C_metric_error": 1.1102230246251565e-16,
+      "linear_cancellation_error": 2.7755575615628914e-17,
+      "target_parity_commutator": 0.0,
+      "weight_formula_error": 5.551176109162981e-16,
+      "weight_formula_error_relative_to_exchange": 4.361866091885925e-13,
+      "name": "odd_rank_one",
+      "physical_cell": {
+        "D": 40,
+        "parity_plus": 20,
+        "parity_minus": 20,
+        "G_isometry_error": 0.0,
+        "syndrome_isometry_error": 0.0,
+        "code_intertwining_error": 0.0,
+        "dilation_intertwining_error": 0.0,
+        "realization_error": 8.501641210240184e-16,
+        "cell_parity_commutator": 0.0,
+        "cell_ground_error": 8.930046436205045e-15,
+        "cell_gap": 0.9999999999999828,
+        "first_order_port_norm": 0.0
+      },
+      "clusters": [
+        {
+          "cells": 2,
+          "physical_dimension": 1600,
+          "first_order_norm": 0.0,
+          "full_resolvent_second_order_error": 4.656628717709911e-15
+        },
+        {
+          "cells": 3,
+          "physical_dimension": 64000,
+          "first_order_norm": 0.0,
+          "full_resolvent_second_order_error": 8.615367834852774e-15
+        }
+      ]
+    },
+    {
+      "N": 2,
+      "m": 2,
+      "k": 4,
+      "rho": 0.009525117447604344,
+      "rho_squared": 9.072786239065669e-05,
+      "scalar": -0.2562919789309955,
+      "min_weight_eigenvalue": 0.12499999999999997,
+      "weight_sum_error": 1.2566871346510768e-16,
+      "source_parity_commutator": 0.0,
+      "C_metric_error": 4.605473658851153e-15,
+      "linear_cancellation_error": 3.805881705931918e-16,
+      "target_parity_commutator": 0.0,
+      "weight_formula_error": 9.6154247058617e-17,
+      "weight_formula_error_relative_to_exchange": 1.0598094623302745e-12,
+      "name": "mixed_parity",
+      "physical_cell": {
+        "D": 52,
+        "parity_plus": 26,
+        "parity_minus": 26,
+        "G_isometry_error": 0.0,
+        "syndrome_isometry_error": 0.0,
+        "code_intertwining_error": 0.0,
+        "dilation_intertwining_error": 0.0,
+        "realization_error": 4.211355557425522e-16,
+        "cell_parity_commutator": 0.0,
+        "cell_ground_error": 3.333970224936151e-14,
+        "cell_gap": 0.9999999999999242,
+        "first_order_port_norm": 0.0
+      },
+      "clusters": [
+        {
+          "cells": 2,
+          "physical_dimension": 2704,
+          "first_order_norm": 0.0,
+          "full_resolvent_second_order_error": 3.2965115131694377e-15
+        }
+      ]
+    },
+    {
+      "N": 2,
+      "m": 4,
+      "k": 6,
+      "rho": 0.001525962086870049,
+      "rho_squared": 2.328560290564795e-06,
+      "scalar": -0.11730248896716286,
+      "min_weight_eigenvalue": 0.08333333333333333,
+      "weight_sum_error": 3.1416407594300217e-16,
+      "source_parity_commutator": 0.0,
+      "C_metric_error": 1.2757091808741313e-14,
+      "linear_cancellation_error": 6.267851828121138e-16,
+      "target_parity_commutator": 0.0,
+      "weight_formula_error": 1.3165625735560516e-16,
+      "weight_formula_error_relative_to_exchange": 5.653976746450133e-11,
+      "name": "free_target_n1"
+    },
+    {
+      "N": 4,
+      "m": 6,
+      "k": 8,
+      "rho": 0.00013021652269249248,
+      "rho_squared": 1.695634278212441e-08,
+      "scalar": -0.0661591942975942,
+      "min_weight_eigenvalue": 0.062499999999999924,
+      "weight_sum_error": 1.1116007324716778e-16,
+      "source_parity_commutator": 0.0,
+      "C_metric_error": 5.513544397792177e-14,
+      "linear_cancellation_error": 6.635381523053018e-16,
+      "target_parity_commutator": 0.0,
+      "weight_formula_error": 1.271920262296525e-16,
+      "weight_formula_error_relative_to_exchange": 7.50114737971327e-09,
+      "name": "free_target_n2"
+    },
+    {
+      "N": 8,
+      "m": 8,
+      "k": 10,
+      "rho": 1.294609711252742e-05,
+      "rho_squared": 1.676014304469908e-10,
+      "scalar": -0.0423512348647512,
+      "min_weight_eigenvalue": 0.05000000000000011,
+      "weight_sum_error": 6.753326037352181e-16,
+      "source_parity_commutator": 0.0,
+      "C_metric_error": 2.909199098751262e-13,
+      "linear_cancellation_error": 2.2581658121772657e-15,
+      "target_parity_commutator": 0.0,
+      "weight_formula_error": 3.6434149011186373e-16,
+      "weight_formula_error_relative_to_exchange": 2.1738566857106754e-06,
+      "name": "free_target_n3"
+    }
+  ],
+  "fermion_hopping_identity_error": 0.0,
+  "clifford_square_root_checks": [
+    {
+      "n": 1,
+      "rotation_count": 1,
+      "square_root_error": 6.206335383118183e-17,
+      "square_root_vs_eigendecomposition": 3.8507297786038176e-16,
+      "alignment_error": 3.510833468576701e-16,
+      "alignment_parity_commutator": 0.0
+    },
+    {
+      "n": 2,
+      "rotation_count": 3,
+      "square_root_error": 3.945211506957732e-17,
+      "square_root_vs_eigendecomposition": 1.2470197967144378e-15,
+      "alignment_error": 5.90117484834943e-16,
+      "alignment_parity_commutator": 0.0
+    },
+    {
+      "n": 3,
+      "rotation_count": 5,
+      "square_root_error": 1.119417020347845e-16,
+      "square_root_vs_eigendecomposition": 1.7741387461769222e-15,
+      "alignment_error": 1.6978091667389814e-15,
+      "alignment_parity_commutator": 0.0
+    },
+    {
+      "n": 4,
+      "rotation_count": 7,
+      "square_root_error": 2.670059199396141e-16,
+      "square_root_vs_eigendecomposition": 2.489567122042817e-15,
+      "alignment_error": 3.2434943106861463e-15,
+      "alignment_parity_commutator": 0.0
+    }
+  ],
+  "runtime_seconds": 0.06906604766845703
+}

@@ -1,0 +1,323 @@
+{
+  "scope": "Gate scheduling only; no universality claim.",
+  "cases": [
+    {
+      "n": 1,
+      "vertices": 5,
+      "carry_by_edge": [],
+      "return_by_edge": [],
+      "turns_by_site": [
+        1
+      ],
+      "final_word": [
+        "C1"
+      ]
+    },
+    {
+      "n": 2,
+      "vertices": 14,
+      "carry_by_edge": [
+        2
+      ],
+      "return_by_edge": [
+        2
+      ],
+      "turns_by_site": [
+        2,
+        1
+      ],
+      "final_word": [
+        "L",
+        "C1"
+      ]
+    },
+    {
+      "n": 3,
+      "vertices": 31,
+      "carry_by_edge": [
+        4,
+        2
+      ],
+      "return_by_edge": [
+        4,
+        2
+      ],
+      "turns_by_site": [
+        4,
+        2,
+        1
+      ],
+      "final_word": [
+        "L",
+        "L",
+        "C1"
+      ]
+    },
+    {
+      "n": 4,
+      "vertices": 64,
+      "carry_by_edge": [
+        8,
+        4,
+        2
+      ],
+      "return_by_edge": [
+        8,
+        4,
+        2
+      ],
+      "turns_by_site": [
+        8,
+        4,
+        2,
+        1
+      ],
+      "final_word": [
+        "L",
+        "L",
+        "L",
+        "C1"
+      ]
+    },
+    {
+      "n": 5,
+      "vertices": 129,
+      "carry_by_edge": [
+        16,
+        8,
+        4,
+        2
+      ],
+      "return_by_edge": [
+        16,
+        8,
+        4,
+        2
+      ],
+      "turns_by_site": [
+        16,
+        8,
+        4,
+        2,
+        1
+      ],
+      "final_word": [
+        "L",
+        "L",
+        "L",
+        "L",
+        "C1"
+      ]
+    },
+    {
+      "n": 6,
+      "vertices": 258,
+      "carry_by_edge": [
+        32,
+        16,
+        8,
+        4,
+        2
+      ],
+      "return_by_edge": [
+        32,
+        16,
+        8,
+        4,
+        2
+      ],
+      "turns_by_site": [
+        32,
+        16,
+        8,
+        4,
+        2,
+        1
+      ],
+      "final_word": [
+        "L",
+        "L",
+        "L",
+        "L",
+        "L",
+        "C1"
+      ]
+    },
+    {
+      "n": 7,
+      "vertices": 515,
+      "carry_by_edge": [
+        64,
+        32,
+        16,
+        8,
+        4,
+        2
+      ],
+      "return_by_edge": [
+        64,
+        32,
+        16,
+        8,
+        4,
+        2
+      ],
+      "turns_by_site": [
+        64,
+        32,
+        16,
+        8,
+        4,
+        2,
+        1
+      ],
+      "final_word": [
+        "L",
+        "L",
+        "L",
+        "L",
+        "L",
+        "L",
+        "C1"
+      ]
+    },
+    {
+      "n": 8,
+      "vertices": 1028,
+      "carry_by_edge": [
+        128,
+        64,
+        32,
+        16,
+        8,
+        4,
+        2
+      ],
+      "return_by_edge": [
+        128,
+        64,
+        32,
+        16,
+        8,
+        4,
+        2
+      ],
+      "turns_by_site": [
+        128,
+        64,
+        32,
+        16,
+        8,
+        4,
+        2,
+        1
+      ],
+      "final_word": [
+        "L",
+        "L",
+        "L",
+        "L",
+        "L",
+        "L",
+        "L",
+        "C1"
+      ]
+    },
+    {
+      "n": 9,
+      "vertices": 2053,
+      "carry_by_edge": [
+        256,
+        128,
+        64,
+        32,
+        16,
+        8,
+        4,
+        2
+      ],
+      "return_by_edge": [
+        256,
+        128,
+        64,
+        32,
+        16,
+        8,
+        4,
+        2
+      ],
+      "turns_by_site": [
+        256,
+        128,
+        64,
+        32,
+        16,
+        8,
+        4,
+        2,
+        1
+      ],
+      "final_word": [
+        "L",
+        "L",
+        "L",
+        "L",
+        "L",
+        "L",
+        "L",
+        "L",
+        "C1"
+      ]
+    },
+    {
+      "n": 10,
+      "vertices": 4102,
+      "carry_by_edge": [
+        512,
+        256,
+        128,
+        64,
+        32,
+        16,
+        8,
+        4,
+        2
+      ],
+      "return_by_edge": [
+        512,
+        256,
+        128,
+        64,
+        32,
+        16,
+        8,
+        4,
+        2
+      ],
+      "turns_by_site": [
+        512,
+        256,
+        128,
+        64,
+        32,
+        16,
+        8,
+        4,
+        2,
+        1
+      ],
+      "final_word": [
+        "L",
+        "L",
+        "L",
+        "L",
+        "L",
+        "L",
+        "L",
+        "L",
+        "L",
+        "C1"
+      ]
+    }
+  ]
+}
