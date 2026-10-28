@@ -1,0 +1,203 @@
+{
+  "diagonalization": [
+    {
+      "N": 1,
+      "speeds": [
+        0.5626705034870955,
+        2.1811717507143675
+      ],
+      "max_errors": [
+        6.661338147750939e-16,
+        8.881784197001252e-16,
+        8.881784197001252e-16
+      ]
+    },
+    {
+      "N": 2,
+      "speeds": [
+        2.141156778620431,
+        3.869022008825067,
+        3.4874412195902282,
+        0.7225039993064428
+      ],
+      "max_errors": [
+        1.6653345369377348e-15,
+        2.220446049250313e-15,
+        3.1086244689504383e-15
+      ]
+    },
+    {
+      "N": 3,
+      "speeds": [
+        0.42681657624762326,
+        2.3490215398550873,
+        16.1267898943035,
+        16.004717942834787,
+        4.223849155473548,
+        0.4234768083830684
+      ],
+      "max_errors": [
+        3.3306690738754696e-15,
+        2.1316282072803006e-14,
+        3.552713678800501e-14
+      ]
+    }
+  ],
+  "virasoro": {
+    "dimension": 139,
+    "tested_levels_through": 3,
+    "reports": [
+      {
+        "charge": 0.0,
+        "maximum_commutator_error": 6.217248937900877e-15
+      },
+      {
+        "charge": 0.37,
+        "maximum_commutator_error": 6.217248937900877e-15
+      },
+      {
+        "charge": 1.4142135623730951,
+        "maximum_commutator_error": 6.217248937900877e-15
+      }
+    ],
+    "partition_numbers": [
+      1,
+      1,
+      2,
+      3,
+      5,
+      7,
+      11,
+      15,
+      22,
+      30,
+      42
+    ]
+  },
+  "shifted_sectors": {
+    "raw_casimir_coefficient_range": [
+      -0.6210973882748779,
+      2.3296086371585703
+    ],
+    "corrected_coefficient": -0.6283185307179586,
+    "maximum_corrected_error": 0.0,
+    "theta_records": [
+      {
+        "L": 256,
+        "log_theta": 4.066276480720134,
+        "pressure_magnitude": 0.006906040218614359
+      },
+      {
+        "L": 1024,
+        "log_theta": 5.452570841840025,
+        "pressure_magnitude": 0.0023151200924932175
+      },
+      {
+        "L": 4096,
+        "log_theta": 6.838865202959916,
+        "pressure_magnitude": 0.0007259325325832112
+      }
+    ]
+  },
+  "shell_bounds": {
+    "power_law": [
+      {
+        "p": 2.25,
+        "omega": 0.4,
+        "rows": [
+          {
+            "k": 6,
+            "error_over_T_squared": 1.8954190805303255,
+            "ratio_to_bound": 5.361054740133455
+          },
+          {
+            "k": 10,
+            "error_over_T_squared": 1.2343473013137585,
+            "ratio_to_bound": 6.982522776786186
+          },
+          {
+            "k": 14,
+            "error_over_T_squared": 0.7117288489643425,
+            "ratio_to_bound": 8.052292727500522
+          },
+          {
+            "k": 18,
+            "error_over_T_squared": 0.3870560075250207,
+            "ratio_to_bound": 8.758077683837872
+          }
+        ]
+      },
+      {
+        "p": 2.4,
+        "omega": 0.4,
+        "rows": [
+          {
+            "k": 6,
+            "error_over_T_squared": 1.3705397865828017,
+            "ratio_to_bound": 1.4021935067753255
+          },
+          {
+            "k": 10,
+            "error_over_T_squared": 0.7021095226062504,
+            "ratio_to_bound": 1.4163515469813817
+          },
+          {
+            "k": 14,
+            "error_over_T_squared": 0.31407901175028785,
+            "ratio_to_bound": 1.4231750952902305
+          },
+          {
+            "k": 18,
+            "error_over_T_squared": 0.1308121402560633,
+            "ratio_to_bound": 1.427190988263438
+          }
+        ]
+      },
+      {
+        "p": 4.0,
+        "omega": 0.4,
+        "rows": [
+          {
+            "k": 6,
+            "error_over_T_squared": 0.3268986371609253,
+            "ratio_to_bound": 1.7253813510188762
+          },
+          {
+            "k": 10,
+            "error_over_T_squared": 0.10787551008069184,
+            "ratio_to_bound": 1.7260081612910694
+          },
+          {
+            "k": 14,
+            "error_over_T_squared": 0.035585800262385094,
+            "ratio_to_bound": 1.7260155836872697
+          },
+          {
+            "k": 18,
+            "error_over_T_squared": 0.011738936837123175,
+            "ratio_to_bound": 1.7260156715798387
+          }
+        ]
+      }
+    ],
+    "slow_convergence": [
+      {
+        "k": 8,
+        "error_over_T_squared": 0.18742179924091584
+      },
+      {
+        "k": 32,
+        "error_over_T_squared": 0.05054651819104923
+      },
+      {
+        "k": 128,
+        "error_over_T_squared": 0.012920587027670105
+      },
+      {
+        "k": 512,
+        "error_over_T_squared": 0.0032488738717236236
+      }
+    ],
+    "p_equals_2_fixed_shell_error_over_T_squared": 1.0
+  }
+}

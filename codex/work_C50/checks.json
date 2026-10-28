@@ -1,0 +1,49 @@
+{
+  "status": "small controls only, no all-scale RG or microscopic calculation",
+  "weighted_cayley": [
+    {
+      "vertices": 2,
+      "tree_sum": 6,
+      "formula": 6
+    },
+    {
+      "vertices": 3,
+      "tree_sum": 216,
+      "formula": 216
+    },
+    {
+      "vertices": 4,
+      "tree_sum": 23520,
+      "formula": 23520
+    },
+    {
+      "vertices": 5,
+      "tree_sum": 5760000,
+      "formula": 5760000
+    },
+    {
+      "vertices": 6,
+      "tree_sum": 2678462640,
+      "formula": 2678462640
+    }
+  ],
+  "finite_grassmann": {
+    "input_H_norm": 0.00019536285806404842,
+    "output_norm": 2.2900701818152193e-12,
+    "bound": 0.00019540103216816147,
+    "six_field_to_quartic_coefficient": "2/5",
+    "exact_partition_function": "100000000000019/100000000000000"
+  },
+  "conditional_recurrence": {
+    "condition": 0.11343633958863956,
+    "max_bound_ratio": 0.5639752928379707,
+    "sum_161_increments": 0.09542059817050214,
+    "geometric_bound": 0.18109418890113876
+  },
+  "conditional_root_map": {
+    "velocity_ratio": 10000.0,
+    "residual": 5.5461791296155256e-17,
+    "shift": 2.999993996932737e-05,
+    "shift_bound": 7.6e-05
+  }
+}

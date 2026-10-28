@@ -1,0 +1,10 @@
+eff --tag tuned --lam 0.1 --mu0 0.3 --mode_v damped --out data/effv_tuned_l0.1.json
+eff --tag tuned --lam 0.2 --mu0 0.3 --mode_v damped --out data/effv_tuned_l0.2.json
+eff --tag tuned --lam 0.4 --mu0 0.3 --mode_v damped --out data/effv_tuned_l0.4.json
+eff --tag untuned --lam 0.2 --mu0 0 --mode_v damped --out data/effv_untuned_l0.2.json
+eff --tag untuned --lam 0.4 --mu0 0 --mode_v damped --out data/effv_untuned_l0.4.json
+eff --tag tuned --lam 0.4 --mu0 0.3 --kappa 10 --mode_v damped --out data/effv_tuned_l0.4_k10.json
+eff --tag untuned --lam 0.4 --mu0 0 --kappa 10 --mode_v damped --out data/effv_untuned_l0.4_k10.json
+eff --tag tuned --lam 0.4 --mu0 0.3 --order 1 --mode_v damped --out data/effv_tuned_first.json
+eff --tag untuned --lam 0.4 --mu0 0 --order 1 --mode_v damped --out data/effv_untuned_first.json
+eff --tag untuned --lam 0.4 --mu0 0.3 --kappa 10 --mode_v damped --out data/effv_uniformmu_l0.4_k10.json

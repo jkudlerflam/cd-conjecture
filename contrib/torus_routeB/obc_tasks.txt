@@ -1,0 +1,8 @@
+model --case free --L 24 --out data/obc_free_L24.json
+model --case freeeq --L 24 --out data/obc_freeeq_L24.json
+model --case i --s 1 --g 0.3 --L 24 --out data/obc_i_p_g0.3_L24.json
+model --case i --s -1 --g 0.3 --L 24 --out data/obc_i_m_g0.3_L24.json
+model --case ii --s 1 --g 0.3 --L 24 --out data/obc_ii_p_g0.3_L24.json
+model --case ii --s -1 --g 0.3 --L 24 --out data/obc_ii_m_g0.3_L24.json
+model --case iii --s 1 --g 0.3 --L 24 --out data/obc_iii_p_g0.3_L24.json
+model --case iii --s -1 --g 0.3 --L 24 --out data/obc_iii_m_g0.3_L24.json

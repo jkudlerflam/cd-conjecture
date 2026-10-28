@@ -2,7 +2,7 @@
 
 [proved, status] This note does not prove S(b). It proves a finite-scale integration theorem for general even kernels, a retardation localization estimate, and conditional estimates that specify the remaining all-scale problem. No microscopic power-law exponent or gapless-mode count is claimed as an established result.
 
-[assumed, inputs] Fix n and put N=n+1. Import C39/C42's finite spectral data, C44's rooted length/payload representation, C45's normalization W, and C46 Section 5's exact charges and momentum classification. Do not assume C45's RG estimates. Assume a C48/C49 reduction supplies the logical theory. At the time of the initial inspection those runs supplied no completed action theorem. The results below say what a usable output must contain.
+[assumed, inputs] Fix n and put N=n+1. Import C39/C42's finite spectral data, C44's rooted length/payload representation, C45's normalization W, and C46 Section 5's exact charges and momentum classification. Do not assume C45's RG estimates. Assume a C48/C49 reduction supplies the logical theory. At the initial inspection those runs supplied no completed action theorem. C48's subsequently completed result is incorporated in Section 2A. The results below say what a usable output must contain.
 
 [proved, conventions] A proved tag refers to the stated mathematical implication, including any explicit assumptions. An assumed tag marks an input not established here. A read tag refers to SOURCE_AUDIT.md. Numerical checks are supplementary. No probability estimates are used. All writes stay in work_C50.
 
@@ -48,6 +48,53 @@ For a measure this means the corresponding pushforward, with the overall factor 
 Proof. The p time differentials in the action each contribute W^(-1). Integrating the p-1 relative times contributes W^(p-1), leaving W^(-1). A jth time moment contributes W^j. Inequality (2.1) bounds the physical jth moment by epsilon W a_p Delta^(-j). Multiplying proves (2.3). Approximation by measures, or the defining pushforward identity, gives the same result for delta functions. No covariance estimate is used.
 
 [proved, consequence] If W/Delta<=1, the normalized zero, first and second time moments are bounded by epsilon a_p independently of Delta. The spatial weights are unchanged. Thus a bound already supplied in the strong physical norm (2.1) removes explicit inverse auxiliary-gap factors from the subsequent endpoint estimates. A claim of exponential decay without its prefactor, degree sum and moments is insufficient to apply this lemma.
+
+## 2A. Converting the completed C48 norm
+
+[assumed, contemporaneous input] C48 completed its RESULT.md and PROOF.md during this run. Take its theorem for the enlarged rooted model as an input, without independently certifying its cluster proof or its physical-sector extension. Its output uses field weight 4 and an exponential spatial-support and temporal-diameter weight, with temporal rate kappa=c_n Delta>0. Its elementary coefficient conversion, equation (5), is stated for every h>=1. The following argument adapts that theorem's norm to Section 5.
+
+[proved conditional on C48, lemma 1A, field radius] Any prescribed finite output field radius B>=4 can replace 4 in that theorem by imposing the corresponding stronger input coefficient norm. Define an algebra homomorphism on external fields by
+
+    psi = (B/4) chi,
+    V_B(chi)=V((B/4)chi).                                      (2A.1)
+
+Then v_(L,4)(V_B)=v_(L,B)(V). The auxiliary trace and its connected logarithm commute with this substitution because no external Grassmann variable is integrated in the massive step. Hence
+
+    W[V_B](chi)=W[V]((B/4)chi),
+    ||W[V_B]||_(4,exp)=||W[V]||_(B,exp).                       (2A.2)
+
+Apply C48's radius-4 theorem to V_B. The same cluster smallness threshold and output constants apply. The two-sided auxiliary-vacuum annihilation property is unchanged coefficient by coefficient. C48's coefficient conversion pays for the new norm using
+
+    a >= L + (n+1) log(8B^2) + 1                              (2A.3)
+
+as the input exponential support weight. This is a change in the required norm and ensuing coupling schedule, not a rescaling of the physical logical Hamiltonian or of its covariance.
+
+Proof. A degree-p monomial acquires (B/4)^p, which proves the norm equalities. The trace acts only on auxiliary coefficients, so it commutes with substitution term by term. Analytic convergence extends the formal identities to the stated norm ball. Equation (2A.3) is C48's bound (8B^2)^((n+1)r) on r-cell logical matrix coefficients, absorbed by the support weight. All constants are fixed before the final coupling is chosen. This proves the claim.
+
+[proved conditional on C48, lemma 1B, diameter to anchored moments] Suppose the physical output, at radius B, is bounded by epsilon W in the norm with weight
+
+    exp(alpha D_x + c_n Delta D_t),  alpha>0,                  (2A.4)
+
+where D_x is the covering spatial interval length, including intermediate sites, and D_t is the temporal diameter. After retained-time normalization t'=Wt, choose a target radius H with B>=2H. For every fixed s>=0 its Section 5 norm satisfies
+
+    ||V'||_(H,s) <= C_(s,alpha,c_n) epsilon,
+    W/Delta<=1.                                               (2A.5)
+
+The constant is independent of W, Delta and the wrapper ratios.
+
+Proof. At p external points, connect all points vertically to the time of the first point and then along the spatial covering interval. This constructs a network of length at most D_x+(p-1)D'_t. Consequently
+
+    (1+T(X'))^s <= p^s(1+D_x)^s(1+D'_t)^s.
+
+The normalization contributes W^(-1) to the anchored measure, as in lemma 1, and changes the temporal rate to c_n Delta/W>=c_n. Divide the target weight by the input weight. Its supremum is at most
+
+    C_(s,alpha,c_n) = sup_(p>=2) p^s 2^(-p)
+        times sup_(x>=0) (1+x)^s exp(-alpha x)
+        times sup_(t>=0) (1+t)^s exp(-c_n t).                 (2A.6)
+
+Every factor is finite. Integrate and sum over p to get (2A.5). On periodic cylinders, connect each time to the first one along a shortest circular path. Each path has length at most D_t, so the same network bound holds. Scalar terms use the density norm and do not require the p factor. They can be bounded separately by epsilon. This proves the lemma.
+
+[proved, consequence and boundary] Under C48's stated theorem hypotheses, choose B=max(4,2H) and redo its input support budget with (2A.3). This supplies the field-radius and moment norm required for theorem 4, with no new inverse-gap dependence. A completed C48 output at radius 4 alone cannot be reweighted after the fact without this stronger input check. The published parameter choice can be strengthened at fixed n by recomputing the local norms, rather than by varying a coupling with ring length. These lemmas do not establish the missing ultraviolet limit or all-scale infrared estimate.
 
 ## 3. Separated velocities at the propagator level
 
@@ -176,7 +223,7 @@ Proof of the volume assertion. Periodization expresses the kernel as a sum of tr
 
 [proved, what corollary 5 resolves] Extremely small E_d changes K_s,D and the permitted epsilon. It does not make them infinite at fixed n. No hypothesis of comparable velocities is used. General even, time-nonlocal vertices are permitted with the degree-weighted norm stated above. This gives a rigorous finite crossover result, not merely a count of the number of crossover shells.
 
-[assumed, limitations for the proposed application] The supplied logical output must meet that norm at radius H and must already have a controlled ultraviolet representation. A radius-2 norm alone does not automatically satisfy a larger-radius estimate. A local Hamiltonian ultraviolet limit requires its own determinant/time-ordering estimates; the elementary compact-frequency Gram argument does not prove them uniformly as Lambda tends to infinity. These requirements have not been verified for an actual C48 action. Nor does (5.5) iterate indefinitely with a fixed radius, since it trades H for rho. An infrared proof needs dimensional rescaling, localization and the reference cancellation together.
+[assumed, limitations for the proposed application] The supplied logical output must meet that norm at radius H and must already have a controlled ultraviolet representation. A radius-2 norm alone does not automatically satisfy a larger-radius estimate. A local Hamiltonian ultraviolet limit requires its own determinant/time-ordering estimates; the elementary compact-frequency Gram argument does not prove them uniformly as Lambda tends to infinity. Section 2A supplies the radius and moment conversion conditional on C48's completed theorem and a strengthened input support weight. Its ultraviolet compatibility and the complete physical action have not been verified here. Nor does (5.5) iterate indefinitely with a fixed radius, since it trades H for rho. An infrared proof needs dimensional rescaling, localization and the reference cancellation together.
 
 ## 6. Higher-degree vertices change marginal initial data at first order
 

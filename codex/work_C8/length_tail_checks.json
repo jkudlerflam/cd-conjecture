@@ -1,0 +1,30 @@
+{
+  "status": "finite check of unconstrained length-tail theorem",
+  "cells": 3,
+  "site_dimension": 10,
+  "dimension": 1000,
+  "b": 3,
+  "hopping": 0.02,
+  "local_norm": 0.07675943788915979,
+  "ground": -0.040949604051835495,
+  "rows": [
+    {
+      "cutoff": 5,
+      "tail_amplitude": 0.0033157497916782666,
+      "recursion_bound": 0.024005475988068223,
+      "factorial_bound": 0.07675943788915979
+    },
+    {
+      "cutoff": 6,
+      "tail_amplitude": 1.1663172999145284e-05,
+      "recursion_bound": 8.941393920534606e-05,
+      "factorial_bound": 0.0029460056525298897
+    },
+    {
+      "cutoff": 7,
+      "tail_amplitude": 4.469127137034051e-21,
+      "recursion_bound": 2.3274743187504132e-07,
+      "factorial_bound": 7.53779126354939e-05
+    }
+  ]
+}

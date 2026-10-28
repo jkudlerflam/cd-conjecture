@@ -1,0 +1,112 @@
+{
+  "status": "all checks passed",
+  "finite_spectral": [
+    {
+      "cells": 2,
+      "dimension": 9,
+      "low_levels": 4,
+      "epsilon": 0.005238364385725212,
+      "delta": 0.9590250972274156,
+      "leakage_norm": 0.005002309980365937,
+      "leakage_bound": 0.0074081659589448024,
+      "spectral_bound": 0.00045780593674915707,
+      "max_level_shift": 1.340980915704934e-05,
+      "max_gap_error": 4.074003366188149e-06,
+      "form_min": 6.264860462111278e-05,
+      "max_mixing_ratio": 0.003637118983715722
+    },
+    {
+      "cells": 3,
+      "dimension": 27,
+      "low_levels": 8,
+      "epsilon": 0.006860399375654002,
+      "delta": 0.9403952462788276,
+      "leakage_norm": 0.005282551790435131,
+      "leakage_bound": 0.011882560278846536,
+      "spectral_bound": 0.0012011565506238812,
+      "max_level_shift": 1.9218620446383172e-05,
+      "max_gap_error": 1.0056755920452576e-05,
+      "form_min": 0.00024278874134235173,
+      "max_mixing_ratio": 0.004354850945859233
+    },
+    {
+      "cells": 4,
+      "dimension": 81,
+      "low_levels": 16,
+      "epsilon": 0.007310253813149405,
+      "delta": 0.9438800488150976,
+      "leakage_norm": 0.0071957845687758305,
+      "leakage_bound": 0.01462050762629881,
+      "spectral_bound": 0.001811749224016377,
+      "max_level_shift": 3.548163255797862e-05,
+      "max_gap_error": 2.1463318709009915e-05,
+      "form_min": 0.0003468520336382878,
+      "max_mixing_ratio": 0.005866837276907166
+    },
+    {
+      "cells": 5,
+      "dimension": 243,
+      "low_levels": 32,
+      "epsilon": 0.006731976189684498,
+      "delta": 0.9471909726618435,
+      "leakage_norm": 0.005766367953883727,
+      "leakage_bound": 0.015053156383044556,
+      "spectral_bound": 0.0019138486208803225,
+      "max_level_shift": 2.0029062990633076e-05,
+      "max_gap_error": 8.753543247211337e-06,
+      "form_min": 0.00040941519724080366,
+      "max_mixing_ratio": 0.0044263814502511975
+    }
+  ],
+  "conjugation": {
+    "commutator_error": 0.0,
+    "series_error": 1.230129989304174e-16,
+    "weighted_remainder": 7.45469873998782e-10,
+    "majorant": 9.31670320247392e-07,
+    "required_contraction_bound": 2.2239378272081745e-06,
+    "locality_loss": 0.03325805643694775
+  },
+  "product_rotation": [
+    {
+      "cells": 1,
+      "overlap_squared": 0.8904344047215151,
+      "complementary_gap": 1.140312423743285,
+      "trial_upper_bound": 1.1403124237432847,
+      "formula_error": 2.220446049250313e-16
+    },
+    {
+      "cells": 2,
+      "overlap_squared": 0.7928734291117591,
+      "complementary_gap": 1.0256414039594945,
+      "trial_upper_bound": 1.074222318104687,
+      "formula_error": 2.220446049250313e-16
+    },
+    {
+      "cells": 4,
+      "overlap_squared": 0.6286482745914396,
+      "complementary_gap": 0.8445310796311181,
+      "trial_upper_bound": 0.950119868089086,
+      "formula_error": 1.1102230246251565e-16
+    },
+    {
+      "cells": 6,
+      "overlap_squared": 0.49843851318050536,
+      "complementary_gap": 0.7051915528230708,
+      "trial_upper_bound": 0.8366326088732414,
+      "formula_error": 2.220446049250313e-16
+    },
+    {
+      "cells": 8,
+      "overlap_squared": 0.395198653146794,
+      "complementary_gap": 0.5936833802802799,
+      "trial_upper_bound": 0.733480917946001,
+      "formula_error": 3.3306690738754696e-16
+    }
+  ],
+  "schedule": {
+    "steps": 28,
+    "final_weight": 0.5128838963401391,
+    "remainder": 3.725290298461914e-16,
+    "exponential_bound": 4.459158597560056e-16
+  }
+}

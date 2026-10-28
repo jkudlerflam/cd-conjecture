@@ -1,0 +1,130 @@
+{
+  "status": "finite checks of energy, occupation and constraint bounds",
+  "atomic_cases": [
+    {
+      "cells": 2,
+      "site_dimension": 5,
+      "Delta": 2.0,
+      "w": 0.05,
+      "f": 0.01,
+      "g": 1.88,
+      "sectors": [
+        {
+          "total_length": null,
+          "dimension": 25,
+          "reference": -0.03230321266490141,
+          "unrestricted_reference": -0.03230321266490141,
+          "ground": -0.03231192086823573,
+          "atomic_energy": 8.643540370853014e-06,
+          "atomic_bound": 0.00045269352648257135,
+          "defects": 2.8811801236176713e-06,
+          "defect_bound": 0.00022634676324128567,
+          "long_cells": 2.8168746516179274e-32,
+          "long_cell_bound": 0.00015089784216085713
+        },
+        {
+          "total_length": 9,
+          "dimension": 4,
+          "reference": -0.006659472756350002,
+          "unrestricted_reference": -0.03230321266490141,
+          "ground": -0.006663763051694208,
+          "atomic_energy": 4.261905774094484e-06,
+          "atomic_bound": 0.05501384226808131,
+          "defects": 1.7047623096377937e-06,
+          "defect_bound": 0.027506921134040654,
+          "long_cells": 0.0,
+          "long_cell_bound": 0.01833794742269377
+        }
+      ]
+    },
+    {
+      "cells": 3,
+      "site_dimension": 5,
+      "Delta": 2.0,
+      "w": 0.1,
+      "f": 0.02,
+      "g": 1.76,
+      "sectors": [
+        {
+          "total_length": null,
+          "dimension": 125,
+          "reference": -0.07488321545425299,
+          "unrestricted_reference": -0.07488321545425299,
+          "ground": -0.07489705084434717,
+          "atomic_energy": 1.3571467015214608e-05,
+          "atomic_bound": 0.003099173553719008,
+          "defects": 5.653943626011237e-06,
+          "defect_bound": 0.001549586776859504,
+          "long_cells": 2.2534112742097134e-32,
+          "long_cell_bound": 0.0010330578512396692
+        },
+        {
+          "total_length": 14,
+          "dimension": 15,
+          "reference": -0.05702673643088882,
+          "unrestricted_reference": -0.07488321545425299,
+          "ground": -0.05703427119711783,
+          "atomic_energy": 7.438765934890833e-06,
+          "atomic_bound": 0.0436820804250012,
+          "defects": 2.813685859104061e-06,
+          "defect_bound": 0.0218410402125006,
+          "long_cells": 3.0924484997857087e-12,
+          "long_cell_bound": 0.0145606934750004
+        }
+      ]
+    },
+    {
+      "cells": 4,
+      "site_dimension": 5,
+      "Delta": 2.0,
+      "w": 0.1,
+      "f": 0.02,
+      "g": 1.76,
+      "sectors": [
+        {
+          "total_length": null,
+          "dimension": 625,
+          "reference": -0.060769511797027075,
+          "unrestricted_reference": -0.060769511797027075,
+          "ground": -0.06077889220182272,
+          "atomic_energy": 9.29858091958672e-06,
+          "atomic_bound": 0.004132231404958678,
+          "defects": 3.6873248851775654e-06,
+          "defect_bound": 0.002066115702479339,
+          "long_cells": 2.055324262839061e-12,
+          "long_cell_bound": 0.0013774104683195593
+        },
+        {
+          "total_length": 18,
+          "dimension": 56,
+          "reference": -0.06076951179702708,
+          "unrestricted_reference": -0.060769511797027075,
+          "ground": -0.06077889220182517,
+          "atomic_energy": 9.298580919588812e-06,
+          "atomic_bound": 0.004132231404958678,
+          "defects": 3.6873248851784053e-06,
+          "defect_bound": 0.002066115702479339,
+          "long_cells": 2.055324262567311e-12,
+          "long_cell_bound": 0.0013774104683195593
+        }
+      ]
+    }
+  ],
+  "ring_constraint": [
+    {
+      "b": 3,
+      "cases": 35283,
+      "max_cost_over_bound": 0.6191481593633694
+    },
+    {
+      "b": 9,
+      "cases": 35283,
+      "max_cost_over_bound": 0.652410454298293
+    },
+    {
+      "b": 39,
+      "cases": 35283,
+      "max_cost_over_bound": 0.6704647118443737
+    }
+  ]
+}

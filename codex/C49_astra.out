@@ -1,0 +1,14 @@
+Input S remains unproved, but the dressing route now has two concrete results.
+
+Using C45’s reduction, I constructed a quasi-local unitary with leakage \(\varepsilon_*\) exponentially small in \(1/\lambda\). I also proved a rooted-cell low-energy spectral error
+\[
+|\Delta E_i-\Delta E_i^{\mathrm{eff}}|
+\le \frac{8M\varepsilon_*^2}{\delta}.
+\]
+This gives an exponentially large finite-size window, not thermodynamic \(1/M\) control at fixed coupling.
+
+The missing step is a ground-relative, energy-weighted self-energy estimate. I proved a criterion that would suffice and identified the additional physical-sector comparison it needs. All small-matrix checks passed; no microscopic central charge was established.
+
+Full derivations are in [PROOF.md](<./PROOF.md>), with the verdict in [RESULT.md](<./RESULT.md>).
+
+[gpt_solve: backend=codex model=gpt-6-astra effort=high transcript=20261028T143759-14160]

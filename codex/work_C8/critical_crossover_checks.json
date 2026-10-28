@@ -1,0 +1,256 @@
+{
+  "status": "soluble crossover control, not the C8 microscopic candidate",
+  "band_checks": [
+    {
+      "epsilon": 0.25,
+      "bulk_gap": 0.059016994374947424,
+      "gap_over_epsilon2": 0.9442719099991588,
+      "band_error": 1.5543122344752192e-15,
+      "gap_grid_points": 4097
+    },
+    {
+      "epsilon": 0.1,
+      "bulk_gap": 0.009901951359278483,
+      "gap_over_epsilon2": 0.9901951359278481,
+      "band_error": 1.1102230246251565e-15,
+      "gap_grid_points": 4097
+    },
+    {
+      "epsilon": 0.02,
+      "bulk_gap": 0.0003998401278721432,
+      "gap_over_epsilon2": 0.999600319680358,
+      "band_error": 1.1102230246251565e-15,
+      "gap_grid_points": 4097
+    },
+    {
+      "epsilon": 0.005,
+      "bulk_gap": 2.499937503124805e-05,
+      "gap_over_epsilon2": 0.9999750012499219,
+      "band_error": 1.1102230246251565e-15,
+      "gap_grid_points": 4097
+    }
+  ],
+  "dense_spin_checks": [
+    {
+      "length": 3,
+      "dimension": 64,
+      "spin_ground": -0.22214925973079044,
+      "free_ground": -0.22214925973079014,
+      "error": 3.0531133177191805e-16
+    },
+    {
+      "length": 4,
+      "dimension": 256,
+      "spin_ground": -0.29072648326700934,
+      "free_ground": -0.2907264832670091,
+      "error": 2.220446049250313e-16
+    },
+    {
+      "length": 5,
+      "dimension": 1024,
+      "spin_ground": -0.3603399035394764,
+      "free_ground": -0.3603399035394763,
+      "error": 1.1102230246251565e-16
+    }
+  ],
+  "estimators": [
+    {
+      "epsilon": 0.02,
+      "mixing": 0,
+      "entropy_grid": 32768,
+      "entropy": [
+        {
+          "length": 8,
+          "entropy": 0.8250987097580683,
+          "c_entropy_apparent": 0.500106779680433
+        },
+        {
+          "length": 16,
+          "entropy": 0.9406479111962036,
+          "c_entropy_apparent": 0.5000256494302214
+        },
+        {
+          "length": 32,
+          "entropy": 1.0561783675662748,
+          "c_entropy_apparent": 0.500003214411114
+        },
+        {
+          "length": 64,
+          "entropy": 1.171703640346266,
+          "c_entropy_apparent": 0.49998807206811435
+        },
+        {
+          "length": 128,
+          "entropy": 1.287225414502138,
+          "c_entropy_apparent": 0.4999460946125809
+        },
+        {
+          "length": 256,
+          "entropy": 1.40273748980636
+        }
+      ],
+      "casimir": [
+        {
+          "length": 8,
+          "c_casimir_apparent": 0.5028232138882882
+        },
+        {
+          "length": 16,
+          "c_casimir_apparent": 0.5007035423509696
+        },
+        {
+          "length": 32,
+          "c_casimir_apparent": 0.5001757447966777
+        },
+        {
+          "length": 64,
+          "c_casimir_apparent": 0.5000439274132242
+        },
+        {
+          "length": 128,
+          "c_casimir_apparent": 0.5000109812879497
+        },
+        {
+          "length": 256,
+          "c_casimir_apparent": 0.5000027452732096
+        },
+        {
+          "length": 512,
+          "c_casimir_apparent": 0.5000006863554703
+        }
+      ]
+    },
+    {
+      "epsilon": 0.02,
+      "mixing": 1,
+      "entropy_grid": 32768,
+      "entropy": [
+        {
+          "length": 8,
+          "entropy": 0.7826802201932052,
+          "c_entropy_apparent": 0.38894756640766953
+        },
+        {
+          "length": 16,
+          "entropy": 0.8725461898735812,
+          "c_entropy_apparent": 0.2773566900795297
+        },
+        {
+          "length": 32,
+          "entropy": 0.9366291924529361,
+          "c_entropy_apparent": 0.13510530424235326
+        },
+        {
+          "length": 64,
+          "entropy": 0.967845146024363,
+          "c_entropy_apparent": 0.03144877624770939
+        },
+        {
+          "length": 128,
+          "entropy": 0.9751113562204164,
+          "c_entropy_apparent": 0.0018540760690261599
+        },
+        {
+          "length": 256,
+          "entropy": 0.9755397387536795
+        }
+      ],
+      "casimir": [
+        {
+          "length": 8,
+          "c_casimir_apparent": 0.5040889879084832
+        },
+        {
+          "length": 16,
+          "c_casimir_apparent": 0.49157388738444247
+        },
+        {
+          "length": 32,
+          "c_casimir_apparent": 0.45282236677802873
+        },
+        {
+          "length": 64,
+          "c_casimir_apparent": 0.338250427846347
+        },
+        {
+          "length": 128,
+          "c_casimir_apparent": 0.13920076265223622
+        },
+        {
+          "length": 256,
+          "c_casimir_apparent": 0.015465479560483981
+        },
+        {
+          "length": 512,
+          "c_casimir_apparent": 0.0001336662730806391
+        }
+      ]
+    },
+    {
+      "epsilon": 0.005,
+      "mixing": 1,
+      "entropy_grid": 32768,
+      "entropy": [
+        {
+          "length": 8,
+          "entropy": 0.814775701070085,
+          "c_entropy_apparent": 0.48117450099544806
+        },
+        {
+          "length": 16,
+          "entropy": 0.9259506173108628,
+          "c_entropy_apparent": 0.45160487410891853
+        },
+        {
+          "length": 32,
+          "entropy": 1.0302934990494381,
+          "c_entropy_apparent": 0.38801949450825085
+        },
+        {
+          "length": 64,
+          "entropy": 1.1199450385896679,
+          "c_entropy_apparent": 0.2758998092921724
+        },
+        {
+          "length": 128,
+          "entropy": 1.1836914302322998,
+          "c_entropy_apparent": 0.13363903847181674
+        },
+        {
+          "length": 256,
+          "entropy": 1.2145686044754604
+        }
+      ],
+      "casimir": [
+        {
+          "length": 8,
+          "c_casimir_apparent": 0.5038422677815693
+        },
+        {
+          "length": 16,
+          "c_casimir_apparent": 0.5010460773051143
+        },
+        {
+          "length": 32,
+          "c_casimir_apparent": 0.49784653808873586
+        },
+        {
+          "length": 64,
+          "c_casimir_apparent": 0.4872622302516787
+        },
+        {
+          "length": 128,
+          "c_casimir_apparent": 0.44877277657705117
+        },
+        {
+          "length": 256,
+          "c_casimir_apparent": 0.33403496001836097
+        },
+        {
+          "length": 512,
+          "c_casimir_apparent": 0.136159778200133
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+eff --tag tuned --lam 0.4 --mu0 0.3 --L 24 --out data/effobc_tuned_l0.4.json
+eff --tag tuned --lam 0.4 --mu0 0.3 --kappa 10 --L 24 --out data/effobc_tuned_l0.4_k10.json
+eff --tag untuned --lam 0.4 --mu0 0 --kappa 10 --L 24 --out data/effobc_untuned_l0.4_k10.json
+eff --tag tuned --lam 0.4 --mu0 0.3 --order 1 --L 24 --out data/effobc_tuned_first.json

@@ -1,0 +1,9 @@
+Completed in [RESULT.md](RESULT.md), with derivations and theorem hypotheses in [PROOF.md](PROOF.md).
+
+The exact redesign keeps \(d=10\) but uses four-site interactions. Its frozen sector is exactly a Benfatto–Mastropietro spin chain, with a proved \(2/5\) massive threshold and exponentially small thermal correction.
+
+The imported theorems give interacting exponents and responses. The free member has proved thermal \(c=1\). Interacting thermal \(c\), unrestricted sector selection and the original nearest-neighbor construction remain unresolved.
+
+[Python checks](checks.py) pass, including full \(1024\)-dimensional two-cell diagonalization.
+
+[gpt_solve: backend=codex model=gpt-6-astra effort=high transcript=20261028T144026-15891]

@@ -1,0 +1,330 @@
+{
+  "status": "finite checks only; no CFT or all-order elimination",
+  "cases": [
+    {
+      "cells": 2,
+      "site_dimension": 4,
+      "dimension": 16,
+      "high_energy": 1,
+      "interaction_norm": 1.0,
+      "generator_error": 0.0,
+      "second_order_identity_error": 0.0,
+      "charge_error": 0.0,
+      "remainder": [
+        {
+          "epsilon": 0.04,
+          "remainder_norm": 0.0006657019272516136,
+          "rigorous_bound": 0.05826289866776832,
+          "second_order_error": 0.010617492419092172,
+          "dressed_energy_error": 5.03035260130541e-08,
+          "energy_error_bound": 0.001969606133890891,
+          "dressed_atomic_energy": 5.0748737267637694e-08,
+          "atomic_energy_bound": 0.009142491977406618,
+          "ground_residual": 7.821257601422032e-16
+        },
+        {
+          "epsilon": 0.02,
+          "remainder_norm": 0.000166544011631881,
+          "rigorous_bound": 0.011773756992669757,
+          "second_order_error": 0.005309786595345063,
+          "dressed_energy_error": 3.179437617698011e-09,
+          "energy_error_bound": 7.30950839763714e-05,
+          "dressed_atomic_energy": 3.194314489982695e-09,
+          "atomic_energy_bound": 0.0003083444885243757,
+          "ground_residual": 4.476001929607242e-16
+        },
+        {
+          "epsilon": 0.01,
+          "remainder_norm": 4.165042410989423e-05,
+          "rigorous_bound": 0.0026550998809810773,
+          "second_order_error": 0.0026551254172218863,
+          "dressed_energy_error": 1.9986833108692759e-10,
+          "energy_error_bound": 3.606482919759058e-06,
+          "dressed_atomic_energy": 2.0034832272179875e-10,
+          "atomic_energy_bound": 1.476032839305702e-05,
+          "ground_residual": 5.008870918965857e-16
+        }
+      ],
+      "slow_dynamics": [
+        {
+          "epsilon": 0.04,
+          "slow_time": 0.1,
+          "error": 0.0009388586225682368,
+          "bound": 0.9724984919829576
+        },
+        {
+          "epsilon": 0.02,
+          "slow_time": 0.1,
+          "error": 0.00046821118353455155,
+          "bound": 0.39304467103966395
+        },
+        {
+          "epsilon": 0.01,
+          "slow_time": 0.1,
+          "error": 0.00023376156658861405,
+          "bound": 0.17727100363076598
+        }
+      ]
+    },
+    {
+      "cells": 3,
+      "site_dimension": 4,
+      "dimension": 64,
+      "high_energy": 1,
+      "interaction_norm": 2.0,
+      "generator_error": 0.0,
+      "second_order_identity_error": 0.0,
+      "charge_error": 0.0,
+      "remainder": [
+        {
+          "epsilon": 0.04,
+          "remainder_norm": 0.0015110317380455434,
+          "rigorous_bound": 0.5509168357981354,
+          "second_order_error": 0.030357587483742305,
+          "dressed_energy_error": 3.318277800642283e-07,
+          "energy_error_bound": 0.21401534776774464,
+          "dressed_atomic_energy": 3.373351803342204e-07,
+          "atomic_energy_bound": 1.8109188758582733,
+          "ground_residual": 1.2648996987428533e-15
+        },
+        {
+          "epsilon": 0.02,
+          "remainder_norm": 0.0003781738689321342,
+          "rigorous_bound": 0.08739434800165248,
+          "second_order_error": 0.015184806261638574,
+          "dressed_energy_error": 2.0768871350149154e-08,
+          "energy_error_bound": 0.002954409200836337,
+          "dressed_atomic_energy": 2.0940988202622836e-08,
+          "atomic_energy_bound": 0.013713737966109932,
+          "ground_residual": 1.3263100904641293e-15
+        },
+        {
+          "epsilon": 0.01,
+          "remainder_norm": 9.459377694013264e-05,
+          "rigorous_bound": 0.017660635489004633,
+          "second_order_error": 0.007593748245567084,
+          "dressed_energy_error": 1.2988324229069176e-09,
+          "energy_error_bound": 0.00010964262596455714,
+          "dressed_atomic_energy": 1.3042087611054889e-09,
+          "atomic_energy_bound": 0.00046251673278656363,
+          "ground_residual": 1.7552163597089131e-15
+        }
+      ],
+      "slow_dynamics": [
+        {
+          "epsilon": 0.04,
+          "slow_time": 0.1,
+          "error": 0.0016483786096729194,
+          "bound": 13.643544754266618
+        },
+        {
+          "epsilon": 0.02,
+          "slow_time": 0.1,
+          "error": 0.0008211935971469723,
+          "bound": 4.328670393610551
+        },
+        {
+          "epsilon": 0.01,
+          "slow_time": 0.1,
+          "error": 0.0004098423182168826,
+          "bound": 1.7494740042492603
+        }
+      ]
+    },
+    {
+      "cells": 4,
+      "site_dimension": 4,
+      "dimension": 256,
+      "high_energy": 1,
+      "interaction_norm": 2.0,
+      "generator_error": 0.0,
+      "second_order_identity_error": 0.0,
+      "charge_error": 0.0,
+      "remainder": [
+        {
+          "epsilon": 0.04,
+          "remainder_norm": 0.002744220144735308,
+          "rigorous_bound": 0.7345557810641805,
+          "second_order_error": 0.06358861891221529,
+          "dressed_energy_error": 4.135737147886731e-07,
+          "energy_error_bound": 0.2853537970236595,
+          "dressed_atomic_energy": 4.122752261519223e-07,
+          "atomic_energy_bound": 2.4145585011443638,
+          "ground_residual": 2.8675004437838436e-15
+        },
+        {
+          "epsilon": 0.02,
+          "remainder_norm": 0.0006867495111683082,
+          "rigorous_bound": 0.11652579733553664,
+          "second_order_error": 0.0318096256376687,
+          "dressed_energy_error": 2.589645867710766e-08,
+          "energy_error_bound": 0.003939212267781782,
+          "dressed_atomic_energy": 2.5849947011609082e-08,
+          "atomic_energy_bound": 0.018284983954813237,
+          "ground_residual": 4.142551526571071e-15
+        },
+        {
+          "epsilon": 0.01,
+          "remainder_norm": 0.00017176968107420157,
+          "rigorous_bound": 0.023547513985339514,
+          "second_order_error": 0.015908066604146832,
+          "dressed_energy_error": 1.6200625172976824e-09,
+          "energy_error_bound": 0.0001461901679527428,
+          "dressed_atomic_energy": 1.618512176408004e-09,
+          "atomic_energy_bound": 0.0006166889770487514,
+          "ground_residual": 2.9885611340419253e-15
+        }
+      ],
+      "slow_dynamics": [
+        {
+          "epsilon": 0.04,
+          "slow_time": 0.1,
+          "error": 0.0019009178263743648,
+          "bound": 13.643544754266618
+        },
+        {
+          "epsilon": 0.02,
+          "slow_time": 0.1,
+          "error": 0.0009383426652426017,
+          "bound": 4.328670393610551
+        },
+        {
+          "epsilon": 0.01,
+          "slow_time": 0.1,
+          "error": 0.00046611192815903434,
+          "bound": 1.7494740042492603
+        }
+      ]
+    },
+    {
+      "cells": 3,
+      "site_dimension": 4,
+      "dimension": 64,
+      "high_energy": 17,
+      "interaction_norm": 2.0,
+      "generator_error": 5.551115123125783e-17,
+      "second_order_identity_error": 1.0842021724855044e-19,
+      "charge_error": 0.0,
+      "remainder": [
+        {
+          "epsilon": 0.04,
+          "remainder_norm": 0.0008663453387080077,
+          "rigorous_bound": 0.5509168357981354,
+          "second_order_error": 0.012037091136150698,
+          "dressed_energy_error": 9.213753004479186e-09,
+          "energy_error_bound": 0.21401534776774464,
+          "dressed_atomic_energy": 9.343069508137284e-09,
+          "atomic_energy_bound": 1.8109188758582733,
+          "ground_residual": 1.1217596133686452e-14
+        },
+        {
+          "epsilon": 0.02,
+          "remainder_norm": 0.0002167599617892028,
+          "rigorous_bound": 0.08739434800165248,
+          "second_order_error": 0.006020960040728388,
+          "dressed_energy_error": 5.668196307283269e-10,
+          "energy_error_bound": 0.002954409200836337,
+          "dressed_atomic_energy": 5.708040638525613e-10,
+          "atomic_energy_bound": 0.013713737966109932,
+          "ground_residual": 1.7115584533971213e-14
+        },
+        {
+          "epsilon": 0.01,
+          "remainder_norm": 5.4211207169104564e-05,
+          "rigorous_bound": 0.017660635489004633,
+          "second_order_error": 0.003011051239374901,
+          "dressed_energy_error": 3.516084775764816e-11,
+          "energy_error_bound": 0.00010964262596455714,
+          "dressed_atomic_energy": 3.5284498382789905e-11,
+          "atomic_energy_bound": 0.00046251673278656363,
+          "ground_residual": 1.5378358573719016e-14
+        }
+      ],
+      "slow_dynamics": [
+        {
+          "epsilon": 0.04,
+          "slow_time": 0.1,
+          "error": 0.0008748575038288463,
+          "bound": 13.643544754266618
+        },
+        {
+          "epsilon": 0.02,
+          "slow_time": 0.1,
+          "error": 0.00043550605000446037,
+          "bound": 4.328670393610551
+        },
+        {
+          "epsilon": 0.01,
+          "slow_time": 0.1,
+          "error": 0.0002172630040280046,
+          "bound": 1.7494740042492603
+        }
+      ]
+    },
+    {
+      "cells": 3,
+      "site_dimension": 4,
+      "dimension": 64,
+      "high_energy": 1000000.0,
+      "interaction_norm": 2.0,
+      "generator_error": 8.790787167173247e-17,
+      "second_order_identity_error": 2.481541837659083e-24,
+      "charge_error": 0.0,
+      "remainder": [
+        {
+          "epsilon": 0.04,
+          "remainder_norm": 0.0008577165422298549,
+          "rigorous_bound": 0.5509168357981354,
+          "second_order_error": 0.011852343462144439,
+          "dressed_energy_error": 2.9819417031104467e-09,
+          "energy_error_bound": 0.21401534776774464,
+          "dressed_atomic_energy": 3.0415401190770186e-09,
+          "atomic_energy_bound": 1.8109188758582733,
+          "ground_residual": 9.786424435362119e-11
+        },
+        {
+          "epsilon": 0.02,
+          "remainder_norm": 0.00021459521452415396,
+          "rigorous_bound": 0.08739434800165248,
+          "second_order_error": 0.005928513795670062,
+          "dressed_energy_error": 1.8160401134281745e-10,
+          "energy_error_bound": 0.002954409200836337,
+          "dressed_atomic_energy": 1.8343888021865216e-10,
+          "atomic_energy_bound": 0.013713737966109932,
+          "ground_residual": 2.9260298737449346e-10
+        },
+        {
+          "epsilon": 0.01,
+          "remainder_norm": 5.3669081721462975e-05,
+          "rigorous_bound": 0.017660635489004633,
+          "second_order_error": 0.002964823929797172,
+          "dressed_energy_error": 1.1217704499674741e-11,
+          "energy_error_bound": 0.00010964262596455714,
+          "dressed_atomic_energy": 1.1274624713737007e-11,
+          "atomic_energy_bound": 0.00046251673278656363,
+          "ground_residual": 4.983597780589388e-10
+        }
+      ],
+      "slow_dynamics": [
+        {
+          "epsilon": 0.04,
+          "slow_time": 0.1,
+          "error": 0.0009104847638719215,
+          "bound": 13.643544754266618
+        },
+        {
+          "epsilon": 0.02,
+          "slow_time": 0.1,
+          "error": 0.0004535102455460669,
+          "bound": 4.328670393610551
+        },
+        {
+          "epsilon": 0.01,
+          "slow_time": 0.1,
+          "error": 0.00022631384526464375,
+          "bound": 1.7494740042492603
+        }
+      ]
+    }
+  ]
+}

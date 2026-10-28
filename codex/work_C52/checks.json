@@ -62,6 +62,18 @@
       "formula_error": 3.157196726277789e-16
     }
   ],
+  "adjacent_commutators": [
+    {
+      "n": 1,
+      "outer_commutator_identity_error": 0.0,
+      "outer_commutator_norm": 4.551409843085002
+    },
+    {
+      "n": 2,
+      "outer_commutator_identity_error": 0.0,
+      "outer_commutator_norm": 5.76433686091394
+    }
+  ],
   "virtual_resolvent": [
     {
       "cell_code_dimension": 2,

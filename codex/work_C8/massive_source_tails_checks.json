@@ -1,0 +1,164 @@
+{
+  "status": "exact soluble source test; not a no-go for local elimination",
+  "finite": [
+    {
+      "length": 4,
+      "dimension": 256,
+      "J": 0.2,
+      "theta": 0.1,
+      "hamiltonian_error": 1.4615560434085125e-15,
+      "charge_error": 0.0,
+      "observable_identity_error": 1.3877787807814457e-17,
+      "correlations": [
+        {
+          "time": 0.1,
+          "direct": 0.9052377239246948,
+          "predicted": 0.9052377239246934,
+          "error": 1.4432899320127035e-15
+        },
+        {
+          "time": 1.0,
+          "direct": 0.36987369305741874,
+          "predicted": 0.36987369305741796,
+          "error": 7.771561172376096e-16
+        },
+        {
+          "time": 10.0,
+          "direct": 7.976604005876044e-05,
+          "predicted": 7.97660400587602e-05,
+          "error": 2.303929616531697e-19
+        }
+      ],
+      "true_spectral_windows": [
+        {
+          "width": 0.2,
+          "states": 3,
+          "source_norm": 0.04991670832341414,
+          "norm_bound": 1.0999583385413567,
+          "ground_weight": 4.660184154806292e-33,
+          "weight_bound": 1.209908346526662
+        },
+        {
+          "width": 0.4,
+          "states": 3,
+          "source_norm": 0.04991670832341414,
+          "norm_bound": 1.299958338541357,
+          "ground_weight": 4.660184154806292e-33,
+          "weight_bound": 1.689891681943205
+        },
+        {
+          "width": 0.5,
+          "states": 3,
+          "source_norm": 0.04991670832341414,
+          "norm_bound": 1.3999583385413568,
+          "ground_weight": 4.660184154806292e-33,
+          "weight_bound": 1.959883349651476
+        }
+      ]
+    },
+    {
+      "length": 4,
+      "dimension": 256,
+      "J": 0.02,
+      "theta": 0.02,
+      "hamiltonian_error": 4.476614810199884e-16,
+      "charge_error": 0.0,
+      "observable_identity_error": 0.0,
+      "correlations": [
+        {
+          "time": 0.1,
+          "direct": 0.9048732219407595,
+          "predicted": 0.9048732219407585,
+          "error": 9.992007221626409e-16
+        },
+        {
+          "time": 1.0,
+          "direct": 0.3681102593005611,
+          "predicted": 0.3681102593005611,
+          "error": 0.0
+        },
+        {
+          "time": 10.0,
+          "direct": 0.0002725397668608554,
+          "predicted": 0.00027253976686085734,
+          "error": 1.951563910473908e-18
+        }
+      ],
+      "true_spectral_windows": [
+        {
+          "width": 0.02,
+          "states": 3,
+          "source_norm": 0.009999333346666693,
+          "norm_bound": 0.11999966666833334,
+          "ground_weight": 2.2204350617051653e-32,
+          "weight_bound": 0.01439992000051111
+        },
+        {
+          "width": 0.04,
+          "states": 3,
+          "source_norm": 0.009999333346666693,
+          "norm_bound": 0.13999966666833333,
+          "ground_weight": 2.2204350617051653e-32,
+          "weight_bound": 0.01959990666724444
+        },
+        {
+          "width": 0.5,
+          "states": 16,
+          "source_norm": 0.019998666693333438,
+          "norm_bound": 0.5999996666683334,
+          "ground_weight": 0.0003999466695110306,
+          "weight_bound": 0.3599996000021112
+        }
+      ]
+    }
+  ],
+  "thermodynamic": {
+    "J": 0.2,
+    "Delta": 1.0,
+    "theta": 0.1,
+    "rows": [
+      {
+        "time": 1.0,
+        "slow": 0.006082383727443734,
+        "fast": 0.36421289306924315,
+        "total": 0.3702952767966869,
+        "scaled_power_tail": 0.24092489780182216
+      },
+      {
+        "time": 10.0,
+        "slow": 0.0002909996039188066,
+        "fast": 4.494744177951807e-05,
+        "total": 0.00033594704569832464,
+        "scaled_power_tail": 1.1526574608927904
+      },
+      {
+        "time": 30.0,
+        "slow": 2.847330538216844e-05,
+        "fast": 9.264358244319984e-14,
+        "total": 2.847330547481202e-05,
+        "scaled_power_tail": 1.015051934736424
+      },
+      {
+        "time": 100.0,
+        "slow": 2.5277721905942303e-06,
+        "fast": 3.6829990535744975e-44,
+        "total": 2.5277721905942303e-06,
+        "scaled_power_tail": 1.0012575397658299
+      },
+      {
+        "time": 300.0,
+        "slow": 2.805498088010915e-07,
+        "fast": 5.096889598216438e-131,
+        "total": 2.805498088010915e-07,
+        "scaled_power_tail": 1.0001389806742356
+      },
+      {
+        "time": 1000.0,
+        "slow": 2.5246289683013788e-08,
+        "fast": 0.0,
+        "total": 2.5246289683013788e-08,
+        "scaled_power_tail": 1.0000125007423024
+      }
+    ]
+  }
+}
