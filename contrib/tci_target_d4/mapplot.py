@@ -8,7 +8,7 @@ import json, glob, sys
 import numpy as np
 from analyze import load, summary
 
-files = sys.argv[1:] or glob.glob('data/grid/*.jsonl') + glob.glob('data/grid_local/*.jsonl') + glob.glob('data/fine/*.jsonl')
+files = sys.argv[1:] or glob.glob('data/grid/*.jsonl') + glob.glob('data/fine/*.jsonl') + glob.glob('data/left/*.jsonl')
 recs = load(files)
 rows = []
 for key, b in recs.items():

@@ -35,14 +35,14 @@ Heuristic, verdict (b). §7 lists the three steps to a theorem. The last, a spec
 
 ### 2. The statement and its hypotheses
 
-- H0, selector [heuristic, elementary]. Conserved markers decouple sectors exactly. Defect sectors must cost δ_sel ≫ W uniformly in M.
+- H0, selector [heuristic, elementary]. Conserved markers decouple sectors exactly. Defect sectors must cost δ_sel ≫ W uniformly in M. C8's mobile selector would instead add a c = 1 length fluid coupled to the payload, which I have not analyzed.
 - H1, exact grading [design]. An on-site Z₂ commutes with every term of h and restricts to P_log on the code. Jordan–Wigner then makes the sector a local fermionic chain. C8 §11 builds graded joint codes, and C8 Thm 3 forbids only large simple symmetries.
 - H2, local SW [proved modulo the Cauchy coefficient bound, Astra B §A]. For λ/Δ ≤ [32C(k+1)]⁻¹ there is a generator of range ≤ k + 1 with remainder ‖R_k‖_μ ≤ C_*^k k! λ^{k+1}/Δ^k in an exponentially weighted norm. This corrects my spec. Block diagonality holds for the all-code projection P only, not for the number of excited cells, since degenerate excited configurations mix at first order.
 - H3, target [design]. 4n simple zeros of the Bogoliubov symbol, minimum velocity v_min, and margins δ₂ = min d(p_i ± p_j, 2p_i) and δ₄ = min d(Σ_{i∈I} ±p_i) over four distinct indices. These are the momenta of every non-neutral parity-even operator of dimension ≤ 2 (A §B–§C) [derived, bosonization input].
 - H4, smallness. A quadratic perturbation of C¹-norm below 10⁻³v_min δ₂ keeps exactly 4n simple zeros, and this is sharp up to the constant, since opposite chiralities annihilate once |h| > vδ/2 (A §A) [proved]. Interacting: ε ≪ v_min δ₂ and ε log(1/δ₄) ≪ 1 [heuristic]. Dressed Fermi points must also be non-resonant. That fails on a parameter set of measure at most 8·C(2n,4)(1 − b_*)^{−2n} r/π for margin r (A §D) [proved, given Lipschitz dressing].
 - H5, fermionic IR theorem [open, routine-looking], §3.
 - H6, leakage [open], §5.
-- H7, correlations to spectrum [open for every non-integrable gapless chain]. Under the c–d premise that the spectrum is a collection of unitary CFTs, H5 supplies 2n independent chiral U(1) currents, so c ≥ n by Sugawara and unitarity [standard CFT]. A counterexample needs only this lower bound.
+- H7, correlations to spectrum [open for every non-integrable gapless chain]. Under the c–d premise that the spectrum is a collection of unitary CFTs, H5 supplies 2n independent chiral U(1) currents, so c ≥ n by Sugawara and unitarity [standard CFT; identifying lattice currents with CFT currents is heuristic]. A counterexample needs only this lower bound.
 
 ### 3. Is the target within the Benfatto–Mastropietro framework?
 
@@ -56,7 +56,7 @@ So the fermionic core is an unwritten but low-risk extension.
 
 ### 4. Targets that do not work as stated, parity, and margins
 
-At the symmetric point every Majorana flavour sits at k = 0 and π, and every current coupling g_{AB}J_R^A J_L^B is allowed. Under ġ_{EF} = ½f^{ACE}f^{BDF}g_{AB}g_{CD}, the isotropic irrelevant coupling lies on the separatrix for m ≥ 4, and an arbitrarily small SO(2) × SO(m − 2) anisotropy runs away (A §G) [proved at one loop; checked: for so(4) at g = −0.05, a +0.01 anisotropy blows up at ℓ ≈ 61 while −0.01 flows to the Gaussian line]. The same Kosterlitz–Thouless structure makes SU(N)₁ need an easy-plane sign on its O(λ³/Δ²) anisotropies. For N > 2 it also has no free-fermion reference. After detuning, every non-neutral quartic component oscillates, so C8 §11's attractive Gross–Neveu sign is harmless once ε log(1/δ₄) ≪ 1. Equal k_a = k_b must be avoided, since 2(k_a − k_b) is a four-index momentum.
+At the symmetric point every Majorana flavour sits at k = 0 and π, and every current coupling g_{AB}J_R^A J_L^B is allowed. Under ġ_{EF} = ½f^{ACE}f^{BDF}g_{AB}g_{CD}, the isotropic irrelevant coupling lies on the separatrix for m ≥ 4, and an arbitrarily small SO(2) × SO(m − 2) anisotropy runs away (A §G) [proved at one loop; checked: for so(4) at g = −0.05, a +0.01 anisotropy blows up at ℓ ≈ 61 while −0.01 flows to the Gaussian line]. The same Kosterlitz–Thouless structure makes SU(N)₁ need an easy-plane sign on its O(λ³/Δ²) anisotropies. It also has no weakly interacting fermion reference, even at N = 2, where the Heisenberg point lies far from the XX point that constructive RG controls. After detuning, every non-neutral quartic component oscillates, so C8 §11's attractive Gross–Neveu sign is harmless once ε log(1/δ₄) ≪ 1. Equal k_a = k_b must be avoided, since 2(k_a − k_b) is a four-index momentum.
 
 Without exact Z₂, twist fields have dimension n/4. They are irrelevant for n ≥ 9 (A §F) [derived, bosonization input], but they are non-local in the fermions, so no constructive method reaches them. H1 is essential to any proof.
 
@@ -64,7 +64,7 @@ C8's n = 40 example crowds its Fermi points near ±π/2. It has δ₂ = 4.515 ×
 
 ### 5. Leakage
 
-Per-cell remainders fix the ground-energy density and the free energy per cell uniformly in M and β (B §B) [proved]. They cannot fix the infrared spectrum, since εΣb†b shifts levels by more than 2πv/M. Exact quasi-local removal of leakage would create an extra conserved quantity, while a cell excitation can decay into about Δ/W logical quanta. So exact removal is not expected, though not disproved (B §C). Imaginary time suffices for the infrared, and there excursions decay as e^{−Δs}.
+Per-cell remainders fix the ground-energy density and the free energy per cell uniformly in M and β (B §B) [proved]. They cannot fix the infrared spectrum, since εΣb†b shifts levels by more than 2πv/M. Exact quasi-local removal of leakage would make the dressed code space invariant, while a cell excitation can decay into about Δ/W logical quanta. So exact removal is not expected, though not disproved (B §C). Imaginary time suffices for the infrared, and there excursions decay as e^{−Δs}.
 
 Astra B §D–§E [checked by hand, not re-derived] shows three things. A graded factorization K = K_aux ⊗̂ F_n exists if and only if D₊ = D₋ = Ld/2, after padding. A naive Gaussian-reference expansion fails when H_c acts on the logical factor of excited cells, already at order e^{−βΔ}. Integration is exact when one free auxiliary fermion per cell (H_c = Δa†a) couples linearly, V = h₁ + g(a†B + B†a). That gives a retarded even interaction of weighted kernel norm ≤ 2g²b_n²Δ(λ/Δ)^{3/2}, with b_n = 8^{2n}. For general cells an excursion-polymer expansion is the missing new mathematics.
 

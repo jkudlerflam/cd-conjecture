@@ -1,6 +1,6 @@
 # C8 progress
 
-2026-10-27. Fifth run finished, nonconclusive. The full report is
+2026-10-27. Sixth run in progress, still nonconclusive. The full report is
 `RESULT.md`, with new proofs in Sections 25-29 and four supporting notes.
 All writes stayed in this folder. Start here; do not redo completed work.
 
@@ -94,6 +94,23 @@ selection problem are now superseded by the complete finite-cell wrapper.
 
 Next action: item 1, a concrete reversible controller with initialized
 boundaries. Its high-channel code would feed directly into the new wrapper.
+
+Sixth-run live update. Re-read the requested context and current live
+contributions. No complete computation track or general-cell IR theorem
+has appeared. The proposed circuit-controller route still lacks a way
+to select its program and exclude all unwanted history components at
+fixed alphabet. A scheduled circuit or a chosen program sector does not
+close this. No controller theorem is claimed.
+
+Moved to remaining item 2. An explicit tensor composition of the C7
+selector and the complete arrow wrapper appears to select exactly the
+two required cell lengths, with all marker and wrapper sectors included.
+The selector kinetic scale can dominate all unknown wrong-length cell
+energies using the length-independent bound H_wrap(N)>=-4U. A local
+marker hop with the required H_0-to-H_2 conversion then has scalar
+payload transport. Derivation and physical-bond checks are in progress.
+This remains conditional on a supplied initialized FF core and does not
+establish a finite-coupling CFT.
 
 The remainder is the chronological record. Its initial task list has been superseded by the ranking above.
 
