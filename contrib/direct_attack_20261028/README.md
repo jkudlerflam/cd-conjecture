@@ -68,6 +68,20 @@ of arbitrarily long wrong cells was disproved in the preceding
   [audit](alternatives/IR_AUDIT.md) found and repaired three bookkeeping
   issues. This advances fixed finite-cell matching; the mobile wrapper's
   unbounded cell lengths and the subsequent logical RG/CFT limit remain open.
+- [Length-cutoff stabilization](alternatives/LENGTH_CUTOFF.md): projected
+  perturbative coefficients agree exactly below order
+  `4 C(K-b)`, where `C(r)=sum_(j=1)^r ceil(j/4)` and lengths through K
+  are retained. The quadratic growth comes from the finite supply of holes
+  in nearby cells. This is a coefficient identity, not a convergent
+  cutoff-removal theorem. The exact combinatorial checks pass in 870 finite
+  cases and 24 explicit paths.
+- [RG initialization](vacancy/RG_EXTENSION.md) and
+  [degree reparameterization](vacancy/DEGREE_REPARAMETERIZATION.md):
+  bandwidth normalization changes every pinned kernel norm by the same
+  factor 1/W, regardless of field degree. Finite microscopic degree and
+  analyticity recover the powers of the small coupling required by a
+  published RG tree estimate. The full marginal-flow and counterterm
+  induction is the remaining task; power counting alone does not close it.
 
 Further worker results are added only after their statements and scope have
 been reviewed. The active goal is to solve the conjecture, not to stop at this

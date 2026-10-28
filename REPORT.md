@@ -1010,3 +1010,16 @@ and temporal moments and no inverse logical-bandwidth factor. An independent
 agent audited the source-norm, equal-time and scalar bookkeeping; corrections
 are included. The theorem is not uniform over the mobile wrapper's unbounded
 cell space and does not establish the subsequent logical RG or central charge.
+
+[proved finite-order and initialization results] The same campaign now
+proves exact stabilization of projected coefficients under a length cutoff:
+retaining lengths through K changes no coefficient below lambda-degree
+4 C(K-b), C(r)=sum_{j=1}^r ceil(j/4). The quadratic order threshold follows
+from conserved occupied counts and the limited nearby supply of holes.
+870 finite-ring combinatorial checks and 24 abstract sharp paths pass.
+Separately, exact bandwidth rescaling and a finite degree/order relation
+recover the initial endpoint powers used in the constructive-RG proof.
+These are inputs toward cutoff removal and bounded marginal flow, not
+proofs of either. See `alternatives/LENGTH_CUTOFF.md`,
+`vacancy/RG_EXTENSION.md`, and `vacancy/DEGREE_REPARAMETERIZATION.md` under
+`contrib/direct_attack_20261028/`.

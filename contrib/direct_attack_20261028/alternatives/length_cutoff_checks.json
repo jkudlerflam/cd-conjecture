@@ -1,0 +1,152 @@
+{
+  "status": "passed",
+  "finite_ring_checks": 870,
+  "explicit_path_checks": 24,
+  "scope": "abstract nearest-neighbor hole-transfer graph only",
+  "thresholds": [
+    {
+      "extra_holes": 1,
+      "inbound_moves": 1,
+      "round_trip_moves": 2,
+      "first_possible_lambda_degree": 4
+    },
+    {
+      "extra_holes": 2,
+      "inbound_moves": 2,
+      "round_trip_moves": 4,
+      "first_possible_lambda_degree": 8
+    },
+    {
+      "extra_holes": 3,
+      "inbound_moves": 3,
+      "round_trip_moves": 6,
+      "first_possible_lambda_degree": 12
+    },
+    {
+      "extra_holes": 4,
+      "inbound_moves": 4,
+      "round_trip_moves": 8,
+      "first_possible_lambda_degree": 16
+    },
+    {
+      "extra_holes": 5,
+      "inbound_moves": 6,
+      "round_trip_moves": 12,
+      "first_possible_lambda_degree": 24
+    },
+    {
+      "extra_holes": 6,
+      "inbound_moves": 8,
+      "round_trip_moves": 16,
+      "first_possible_lambda_degree": 32
+    },
+    {
+      "extra_holes": 7,
+      "inbound_moves": 10,
+      "round_trip_moves": 20,
+      "first_possible_lambda_degree": 40
+    },
+    {
+      "extra_holes": 8,
+      "inbound_moves": 12,
+      "round_trip_moves": 24,
+      "first_possible_lambda_degree": 48
+    },
+    {
+      "extra_holes": 9,
+      "inbound_moves": 15,
+      "round_trip_moves": 30,
+      "first_possible_lambda_degree": 60
+    },
+    {
+      "extra_holes": 10,
+      "inbound_moves": 18,
+      "round_trip_moves": 36,
+      "first_possible_lambda_degree": 72
+    },
+    {
+      "extra_holes": 11,
+      "inbound_moves": 21,
+      "round_trip_moves": 42,
+      "first_possible_lambda_degree": 84
+    },
+    {
+      "extra_holes": 12,
+      "inbound_moves": 24,
+      "round_trip_moves": 48,
+      "first_possible_lambda_degree": 96
+    },
+    {
+      "extra_holes": 13,
+      "inbound_moves": 28,
+      "round_trip_moves": 56,
+      "first_possible_lambda_degree": 112
+    },
+    {
+      "extra_holes": 14,
+      "inbound_moves": 32,
+      "round_trip_moves": 64,
+      "first_possible_lambda_degree": 128
+    },
+    {
+      "extra_holes": 15,
+      "inbound_moves": 36,
+      "round_trip_moves": 72,
+      "first_possible_lambda_degree": 144
+    },
+    {
+      "extra_holes": 16,
+      "inbound_moves": 40,
+      "round_trip_moves": 80,
+      "first_possible_lambda_degree": 160
+    },
+    {
+      "extra_holes": 17,
+      "inbound_moves": 45,
+      "round_trip_moves": 90,
+      "first_possible_lambda_degree": 180
+    },
+    {
+      "extra_holes": 18,
+      "inbound_moves": 50,
+      "round_trip_moves": 100,
+      "first_possible_lambda_degree": 200
+    },
+    {
+      "extra_holes": 19,
+      "inbound_moves": 55,
+      "round_trip_moves": 110,
+      "first_possible_lambda_degree": 220
+    },
+    {
+      "extra_holes": 20,
+      "inbound_moves": 60,
+      "round_trip_moves": 120,
+      "first_possible_lambda_degree": 240
+    },
+    {
+      "extra_holes": 21,
+      "inbound_moves": 66,
+      "round_trip_moves": 132,
+      "first_possible_lambda_degree": 264
+    },
+    {
+      "extra_holes": 22,
+      "inbound_moves": 72,
+      "round_trip_moves": 144,
+      "first_possible_lambda_degree": 288
+    },
+    {
+      "extra_holes": 23,
+      "inbound_moves": 78,
+      "round_trip_moves": 156,
+      "first_possible_lambda_degree": 312
+    },
+    {
+      "extra_holes": 24,
+      "inbound_moves": 84,
+      "round_trip_moves": 168,
+      "first_possible_lambda_degree": 336
+    }
+  ]
+}

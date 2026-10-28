@@ -54,7 +54,16 @@ separate alternatives agent independently checked the original filter
 signs, causal-cone count and weighted-norm exponent. The coordinating
 agent then proposed the single-exponential improvement, independently
 verified by the vacancy worker using explicit connected-commutator
-counting. The improved proof awaits a separate complete review.
+counting, and subsequently reviewed by the coordinating agent.
+
+Two further finite-cell RG contributions are recorded in
+[RG_EXTENSION.md](RG_EXTENSION.md) and
+[DEGREE_REPARAMETERIZATION.md](DEGREE_REPARAMETERIZATION.md). They prove
+bandwidth-normalized initialization and Taylor bounds, then recover the
+published endpoint degree powers by sacrificing fixed-cell smallness.
+The latter uses actual analytic perturbative order and finite microscopic
+degree; a generic small coefficient norm would not suffice. The complete
+multichannel induction and central-charge identification remain open.
 
 `check_normal_form.py` is a compact finite-matrix sanity check of the exact
 first derivative, boundary/filter error identity, and quadratic Taylor
