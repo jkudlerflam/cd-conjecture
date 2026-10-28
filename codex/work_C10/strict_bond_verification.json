@@ -1,0 +1,35 @@
+{
+  "k_c": 24,
+  "q": 2,
+  "d0": 192,
+  "b": 5,
+  "J": 100.0,
+  "kappa": 20.0,
+  "nu": 20.0,
+  "K": 5.0,
+  "t": 1.0,
+  "mu": 0.9,
+  "Delta": 1.0,
+  "g": 0.2,
+  "C": 0.6000000000000001,
+  "rho": 0.6000000000000001,
+  "bare_marker_chemical_potential": 0.29999999999999993,
+  "illegal_shared_boundary_bound": 9.4,
+  "unused_register_gap": 20.0,
+  "shape": [
+    36864,
+    36864
+  ],
+  "nnz": 42168,
+  "hermiticity_max_error": 0.0,
+  "same_bond_selector_commutator_max_error": 0.0,
+  "all_sector_propagation_port_commutator_errors": [
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "legal_projection_error": 1.1102230246251565e-16,
+  "legal_ground_energy": -0.07658244945481611,
+  "scope": "Actual strict two-site bond and its 48-dimensional initialized legal-cell compression. Full illegal quantum Hilbert space of this enlarged variant was not diagonalized; the positivity proof supplies its bounds."
+}

@@ -49,3 +49,25 @@ The final report will distinguish the explicit hard-coded construction and its p
 The final bond uses an explicit counterterm rho=C=3|g| per marker, rather than a computed ground energy. Let e0 be the valid-cell ground energy before this counterterm. The history variational state gives 0 <= e0 <= C+E_minus <= C. Thus a=(e0-rho)/b <= 0. A good cell contributes at least a b, while a bad cell of any marker spacing B contributes at least kappa/2-rho >= 0 >= a B. Summing over cells proves H_comp >= a L, attained in the desired all-good b-periodic sector. Adding the computation therefore cannot reduce the selector energy margin. This argument uses only rho >= e0 and kappa/2 >= rho, and works generally with rho=C+v, v=max_t ||h_t||.
 
 The default built bond now has rho=0.6, bare marker chemical potential mu-rho=0.3, and the conservative illegal-cell bound 9.4. The optional exact-counterterm mode remains available. Earlier reported 19.47658245 values used the exact counterterm; the final default exhaustive test instead has illegal minimum 19.4.
+
+## Strict port-idle implementation
+
+The compact d0=96 track leaves the ports idle in its legal circuit, but a mislabeled illegal site can cause a gate to touch a marker-adjacent physical data register. This qualification is now removed in `build_strict_bond_c10.py`.
+
+The strict local order is selector / clock letter / workspace z / physical register p. The computation alphabet contains (clock letter,z), so k_c=24 and d0=192 for q=2. Every propagation gate acts only on z. Thus all physical p registers commute with propagation, on every sector. Positive onsite energies pin the unused registers and both marker registers. Bell preparation remains a two-site energy on p at site 1 and z at site 2.
+
+The strict bond is 36,864 by 36,864 with 42,168 nonzero entries. Its Hermiticity and selector commutator errors are zero. Its propagation commutators with X_p and Y_p on both endpoints are zero without a legality projection. Its 48-dimensional legal-cell compression agrees with the compact model to 1.12e-16.
+
+Position indices at each site are conserved even in illegal sectors. In each fixed-index block, identifying the active register as p at port indices and z at workspace indices makes the strict Hamiltonian the compact Hamiltonian plus decoupled nonnegative unused-register pins. This proves that the compact illegal-sector bounds and measured minimum transfer to the strict version. The enlarged full quantum space was not separately diagonalized.
+
+RESULT.md now includes the strict construction as Section 11, with d0=192 as the final short-example dimension. Neither the fixed-alphabet compiler nor exact finite-J Route B history ground states is claimed.
+
+## Final status
+
+RESULT.md is complete. It gives the literal bond formulas and code, the alphabet and transition table, the path-spectrum and initialization derivations, all-illegal-sector bounds, the selector-density comparison, finite Clifford energy synthesis for the stated Pauli choices, and the numerical checks. The strict short example has k_c=24, q=2, d0=192; the compact comparison has k_c=12, d0=96.
+
+The report explicitly distinguishes proven facts from numerical checks and missing work. It does not claim a fixed-alphabet decoder, exact finite-J Route B ground histories, a two-ended Route B implementation, or a c-d counterexample. It also notes that the particular equal-dimension workspace duplication is too costly to yield a Route B violation by increasing q. This is a cost of this implementation, not a general impossibility theorem.
+
+The finite-J obstruction is compatible with the supplied 1/J convergence. The exact statement proved is that a uniform history V psi is an eigenvector if and only if every rotated time energy A_t has the same eigenvector psi with the same eigenvalue. The explicit Route B schedule violates that criterion, and its actual port spectrum differs from the ideal one.
+
+All computations and edits stayed in the working directory. No existing project files were read or changed. No external information or agents were used. The work finished well within the 90-minute limit.

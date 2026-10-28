@@ -1,0 +1,7 @@
+Wrote [RESULT.md](<work_C10/RESULT.md>) and [PROGRESS.md](<work_C10/PROGRESS.md>), with executable Hamiltonian builders and numerical checks.
+
+The partial construction has \(k_c=24\), \(q=2\), and \(d_0=192\), with proved illegal-sector and selector-margin bounds.
+
+Two gaps remain: a fixed-alphabet compiler, and exact finite-\(J_c\) history ground states. The explicit Route B schedule fails the latter requirement, proved algebraically and confirmed numerically. No conjecture violation is claimed.
+
+[gpt_solve: backend=codex model=gpt-6-astra effort=high transcript=20261027T192619-40808]

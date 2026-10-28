@@ -2,7 +2,7 @@
 
 This is a partial construction with a concrete obstruction, not a fixed-dimension counterexample to the c–d conjecture.
 
-I constructed a translation-invariant nearest-neighbor track for any hard-coded finite nearest-neighbor gate program. I prove its path-clock spectrum, initialization bound, illegal-sector bound, and preservation of the supplied selector ordering. A three-time program implements the left Route B Hamiltonian under history compression using only a workspace SWAP gate, with Bell preparation appearing as an energy term. Its alphabet has k_c=12 and its full local dimension is d0=96. The actual two-site bond is implemented in `build_bond_c10.py`.
+I constructed a translation-invariant nearest-neighbor track for any hard-coded finite nearest-neighbor gate program. I prove its path-clock spectrum, initialization bound, illegal-sector bound, and preservation of the supplied selector ordering. A three-time program implements the left Route B Hamiltonian under history compression using only a workspace SWAP gate, with Bell preparation appearing as an energy term. The compact version has k_c=12 and d0=96. Section 11 gives a stronger version with k_c=24 and d0=192 whose propagation leaves every physical port register idle even in illegal sectors. Both actual two-site bonds are implemented, in `build_bond_c10.py` and `build_strict_bond_c10.py`, respectively.
 
 Two requested conclusions are not established. First, the hard-coded alphabet grows with program length and workspace size. I have not supplied a fixed-alphabet decoder of N from b or a coupling phase. Second, selected-time energies generally do not have uniform propagation histories as their exact ground states at finite clock coupling. This is an algebraic obstruction, demonstrated below in the explicit Route B program. Exact port compression holds on the ideal history code, but not on that program's actual finite-J ground space.
 
@@ -116,7 +116,7 @@ Here I_bond denotes the optional positive initialization terms. The selector bon
                  + (mu/2)(p_i+p_(i+1))
                  - t_sel (|LX><XR|+|XR><LX|),                    (3.5)
 
-tensored with identity on the other tracks. The coefficient J is the clock coupling and is unrelated to t_sel.
+tensored with identity on the other tracks. The coefficient J is the clock coupling and is unrelated to t_sel. Throughout, J,kappa,kappa_M,nu and Delta are positive, t_sel>0, K>4 t_sel, and g and mu are real. The symbol nu is used for the extra pins in Section 11.
 
 The factors chi_i chi_(i+1) prohibit every propagation and time-energy term across an actual selector marker. Marker-data pinning also never involves a neighboring register. Hence the computation decomposes into finite segments for each fixed marker pattern, even in the presence of malformed computation strings.
 
@@ -128,7 +128,7 @@ Every computation term is either independent of the selector or depends only on 
 
 This proves [H_selector,H_comp]=0, including terms on overlapping bonds. Same-bond commutation alone would not have sufficed.
 
-The circuit on the legal cell is port-idle. There is a distinction in illegal configurations: a workspace position label placed next to a real marker can make a propagation rule act on that site's data before its penalty is paid. The construction does not assert that every propagation term commutes with every marker-defined port operator on the entire illegal Hilbert space. The exact circuit and port statements below apply to the invariant legal subspace. A stronger all-sectors interpretation of port-idle is not established.
+The circuit on the legal cell is port-idle. There is a distinction in illegal configurations: a workspace position label placed next to a real marker can make a propagation rule act on that site's data before its penalty is paid. The construction does not assert that every propagation term commutes with every marker-defined port operator on the entire illegal Hilbert space. The exact circuit and port statements for this compact version apply to the invariant legal subspace. Section 11 repairs this issue and establishes port-idle propagation on the entire Hilbert space.
 
 ## 4. Exact propagation histories and initialization
 
@@ -222,7 +222,7 @@ There are two sufficient special cases for exactness.
 1. Each h_t is positive and annihilates the desired propagated code U_t G. Then the sum is frustration-free, and its ground space is the intersection of the propagation kernel with those energy kernels.
 2. Every A_t equals the same target Hamiltonian. Then the legal Hamiltonian is unitarily equivalent to J L_n tensor I plus I_clock tensor H_target.
 
-Neither condition is automatic for selected-time energies. In the Route B example, one time has h_t=0 and the target ground energy is negative. Equation (5.2) would force E=0 at the idle time, whereas the history variational state has negative energy. Therefore its uniform target histories cannot be exact ground eigenvectors for any finite J. Adding C at every clock time changes both energies by C and does not repair the contradiction.
+Neither condition is automatic for selected-time energies. In the Route B example, one time has h_t=0 and the target ground energy is negative. Equation (5.2) would force E=0 at the idle time, whereas the history variational state has negative energy. Therefore its uniform target histories cannot be exact ground eigenvectors for any finite J. Adding C at every clock time changes both energies by C and does not repair the contradiction. This is compatible with the supplied 1/J low-energy convergence; it is the stronger exact finite-J ground-history identification that fails for this program.
 
 ### Port operators
 
@@ -488,6 +488,7 @@ All computations used numpy/scipy locally and completed in seconds. No large com
     OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python3 verify_c10.py
     OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python3 build_bond_c10.py
     OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python3 verify_full_cell_c10.py
+    OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python3 build_strict_bond_c10.py
 
 The executable named `python` was unavailable; the successful runs used `python3`.
 
@@ -509,7 +510,7 @@ The final default parameters are
     K=5, t_sel=1, mu=0.9,
     Delta=1, g=0.2, C=rho=0.6.
 
-Thus K>4 t_sel, and the bare marker coefficient in the total bond is 0.3. The selector-period claim uses the supplied selector result and a choice of mu selecting b=5; the computation proof itself does not depend on independently re-deriving that selection interval.
+Thus K>4 t_sel, and the bare marker coefficient in the total bond is 0.3. The numerical value mu=0.9 was used to test the bond, not to perform a new selector optimization. The period-selection conclusion is conditional on the supplied choice of selector parameters selecting b=5. The preservation proof applies to any such choice, and no selector optimization was rerun.
 
 An independent contraction of the physical bond over the two boundary markers and the legal clock basis agrees with the 48-dimensional legal-sector matrix. With the final explicit counterterm the measured difference is zero at the tested floating-point precision. The earlier exact-counterterm version differed by 1.42e-14.
 
@@ -523,7 +524,7 @@ matching J[1-cos(k pi/3)].
 
 With only the positive energy 3 Delta(1-P_Omega) at time zero, the ground space is the uniform propagation history of a Bell pair and arbitrary logical and right-port qubits. Its dimension is four. The measured eigenvector residual is 4.4e-16, and the ground-projector error is 2.1e-14. Its gap is 0.635209481, above the bound 0.269230769 from (4.5), with kappa_0=3 Delta.
 
-This is an exact history-ground example with Bell preparation by energy. It does not include g(B+B^dagger).
+This is an exact history-ground example with Bell preparation by energy. It is also the g=0 limit of the Route B program. It does not include g(B+B^dagger).
 
 ### Route B compression and its finite-J failure
 
@@ -572,13 +573,87 @@ The good-cell ground energy before the counterterm is 0.523417550545. After it, 
 
 Endpoint-marker mismatches, arbitrary other lengths, and the full selector Hilbert space are not included in this finite ED. They are covered by the analytic synchronization, length, and commuting-track arguments. No two-cell intercell interaction or many-cell critical spectrum was diagonalized.
 
-## 11. Dimension and unresolved claims
+## 11. A version with port-idle propagation in every sector
 
-For the implemented short program,
+The compact version economizes on data registers by using a site's q-dimensional register either as a port or as workspace, according to its legal position. There is a direct way to remove the illegal-sector qualification without introducing nonlocal terms.
 
-    k_c=12, q=2, d0=4*12*2=96.
+Give every site a q-dimensional workspace register z inside its computation alphabet and retain its q-dimensional register p as the physical port register. The local factors are now
 
-Its left Route B example has r=2. It is a verification gadget, not a large-central-charge construction. For the general hard-coded track the only proved formula is d0=4q(2m+T+2).
+    selector s, clock letter a, workspace z, physical register p.
+
+The full computation alphabet is
+
+    C_strict = {(a,z) : a in C, 0 <= z < q},
+    k_c,strict = q(2m+T+2),
+    d0,strict = 4 q^2(2m+T+2).                                (11.1)
+
+A two-site pair ((a,z),(b,z')) is allowed if and only if (a,b) is allowed in Section 2, for every z,z'. Synchronization tests a=M, independently of z. In particular, neither workspace data nor Bell entanglement is a legality condition. The legal clock-pattern proof applies unchanged to the a factors, while the z factors are quantum workspace.
+
+Every propagation gate acts on the z registers, tensor identity on both physical p registers. The clock-pattern transitions and the chi_i chi_(i+1) marker guards are unchanged. Thus, as an operator identity on the whole Hilbert space,
+
+    [H_prop, F_(p,i)] = 0
+
+for every site i and every physical-register operator F. Since marker projectors also commute with propagation, the same is true of a port operator conditioned on an adjacent actual selector marker. Illegal workspace labels can no longer violate port idleness.
+
+### Explicit bond prescriptions for the short program
+
+Take q=2. Keep the twelve clock letters, fourteen allowed clock pairs, and two transition patterns from Section 6. The actual alphabet has 24 letters (a,z). The two gates are SWAP of z_left,z_right and identity. Their propagation terms are (3.1), with those gates acting on z and identity on p.
+
+On a bond in local register order (z_left,p_left,z_right,p_right), the three energy matrices are
+
+    A1 H0: 3 Delta(1-P_Omega on p_left,z_right),
+    H0 R3: (3g/2)(X_(z,left) X_(z,right)-Y_(z,left) Y_(z,right)),
+    A1 H2: (3g/2)(X_(p,left) X_(z,right)+Y_(p,left) Y_(z,right)).  (11.2)
+
+They are controlled only by the displayed clock-letter pair and by chi_left chi_right. The unused registers carry identity in these matrices. The Bell partner is z at site 2; the logical qubit is z at site 3. The left and right ports are p at sites 1 and 4.
+
+To remove spectator degeneracies, set Q_z=I-|0><0| on z and Q_p=I-|0><0| on p. Add the positive onsite term
+
+    H_pin,site = nu p_selector# (Q_z+Q_p)
+        + nu chi [ sum_(a: position(a) in {1,m}) |a><a| Q_z
+                 + sum_(a: 2 <= position(a) <= m-1) |a><a| Q_p ]. (11.3)
+
+The position of H_t is j_t. M has no position and is omitted from the two sums. The first term replaces the compact marker-data pinning term. All these are finite energy penalties.
+
+For the short example this pins z at sites 1 and 4, p at sites 2 and 3, and both registers on actual markers. The active four qubits are (p_1,z_2,z_3,p_4). The pinning is independent of Bell preparation.
+
+The full bond is now (3.4), with the lifted clock and energy operators just specified, marker pinning replaced by (11.3), and the same C S_head-rho p_selector# counterterm. Distribute all onsite terms equally between adjacent bonds. This is an explicit nearest-neighbor construction on the 24-letter computation alphabet.
+
+### Spectral relation to the compact version
+
+Each propagation transition preserves the position index attached to each physical site: H_t and the A or R letter replacing it have the same index. Thus the full string of position indices, including the locations of M, is conserved. This statement holds in illegal sectors as well.
+
+Within a fixed index string, identify the compact data register with p on indices 1,m and with z on indices 2 through m-1. At a computation M with no active interactions, either factor can be chosen. Every term in the compact Hamiltonian acts on these active registers in the strict version. The other register is unused. Every pin in (11.3) acts on an unused register, except that the actual-marker pin on the active register reproduces the compact marker-data pin.
+
+Consequently each such block of the strict Hamiltonian is unitarily equivalent to the corresponding compact block plus nonnegative, decoupled unused-register pins. Setting all unused registers to |0> attains the compact spectrum. This proves that the entire legality and bad-cell energy comparison transfers, not just the legal ground energy. Excitations of a pinned unused register cost nu. Unpinned unused factors at a misplaced computation M can add degeneracy only inside an already penalized illegal sector.
+
+In a good cell, the initialized active Hamiltonian is exactly the compact one, tensor the fixed unused-register state. Its ideal code compression, actual finite-J compression, and actual ground energy are therefore the same as those in Section 10. The good-cell gap gains an additional possible scale nu, with no other change. The bad-cell lower bound remains kappa/2-rho, and the selector-preservation proof is unchanged.
+
+### Numerical check of the strict physical bond
+
+`build_strict_bond_c10.py` constructs this bond using
+
+    k_c=24, q=2, d0=192, nu=20,
+
+with the other parameters from Section 10. Its two-site matrix is 36,864 by 36,864 and has 42,168 nonzero entries. Hermiticity and same-bond selector commutation have zero measured error. The propagation commutators with both X_p and Y_p on either endpoint are zero on the full two-site matrix, with no legality projection.
+
+Independently projecting that actual bond onto the three legal clock states and the sixteen active-register states gives the compact 48-dimensional matrix to 1.12e-16. The actual ground energy is -0.076582449455, as before. These results are in `strict_bond_verification.json`.
+
+The enlarged illegal quantum Hilbert space was not directly diagonalized. The block equivalence above transfers the exhaustive compact-sector calculation: its minimum illegal energy with correct fixed endpoint markers is still 20 before the counterterm and 19.4 afterward. The all-sector shared-boundary bound remains 9.4. This transfer is an analytic argument, not an additional ED claim.
+
+The strict version repairs all-sectors port idleness. It does not repair the growing alphabet or the finite-J exact-history obstruction.
+
+The equal-dimension register duplication used here also has a dimension cost for Route B. The supplied flavor count gives c=q_+q_-<=q^2/4, whereas this implementation has d0=4q^2(2m+T+2). Thus this particular duplicated family cannot produce a Route B violation by increasing q. It is a literal port-idle track and a finite-program verification, not a dimension-efficient Route B construction. This cost is not a no-go theorem for other encodings; fixed qubit ports in Route A also do not incur a growing-q cost.
+
+## 12. Dimension and unresolved claims
+
+For the implemented short program with port-idle propagation on every sector,
+
+    k_c=24, q=2, d0=4*24*2=192.
+
+The compact legal-sector-only version has k_c=12 and d0=96.
+
+Its left Route B example has r=2. It is a verification gadget, not a large-central-charge construction. For the general hard-coded track with the stronger port condition, the proved formula is d0=4q^2(2m+T+2), which still grows with the program.
 
 The completed parts are an explicit finite bond, exact path histories before incompatible energies are added, exact ideal port compression, exact energetic Bell preparation in the frustration-free example, an all-illegal-sector penalty bound for this alphabet, and a selector-preservation comparison using explicit couplings.
 
@@ -590,8 +665,9 @@ The two next technical tasks are separate. A uniform machine must replace the po
 
 - `PROGRESS.md` records the work and the change from the exact-energy to explicit-upper-bound counterterm.
 - `RESULT.md` is this derivation and scope statement.
-- `build_bond_c10.py` constructs the sparse physical bond and checks it.
+- `build_bond_c10.py` constructs and checks the compact sparse physical bond.
+- `build_strict_bond_c10.py` constructs and checks the strict all-sectors port-idle bond.
 - `verify_c10.py` checks legality, clock energies, Bell preparation, and Route B compression.
 - `verify_full_cell_c10.py` diagonalizes every quantum computation component of the small cell and independently checks the physical-bond projection.
-- `verification.json`, `bond_verification.json`, and `full_cell_verification.json` contain the numerical results.
+- `verification.json`, `bond_verification.json`, `full_cell_verification.json`, and `strict_bond_verification.json` contain the numerical results.
 - `verification_run.txt` is the saved output of the updated small-program verification.
