@@ -315,3 +315,35 @@ Jonah's standard for this question is theoretical physics (standard RG, controll
 - **C13, mobile cells at finite coupling, final** (`codex/work_C13/RESULT.md`, Astra; the soluble controls rerun by Claude reproduce c = 1.00003, 2.00006, 3.00009 from the Casimir energy and 1.00008, 2.0003, 3.0007 from cell entropy for zero, one and two payload flavours plus the length mode). Conditional positive result at the physics standard: at fixed n and cell length, with exact marker conservation, exact payload parity, displaced and jointly non-resonant Fermi points (including the length fluid's), controlled elimination of gapped cell sectors and a positive stiffness matrix, the mobile construction is an (n + 1)-boson Gaussian phase, and the extra length mode forces no relevant mixed resonance; an explicit open weak-coupling region exists in standard bosonization. Finite-ring uniqueness is proved for a positive-hopping subclass and checked over the stated ranges. Qualifications: (i) at irrational densities the zero modes drift with L, so the spectrum converges to CFT towers in L-dependent charge and flux sectors rather than to one fixed vacuum sector, exactly as for the XXZ chain in a generic field, which is universally counted as c = 1; (ii) the local-boundedness use of the c-theorem near a conformal point needs a uniform crossover hypothesis; (iii) the high-channel microscopic core and its coefficients are still not specified, and generic interacting numerics at accessible sizes do not yet meet the two-estimator standard.
 - **Mobile cells, toy model** (`contrib/mobile_cells/`, in progress, Claude agent with one Astra run). A d = 6 chain whose cells carry a spin payload (c_p = 1): the frozen chain has degenerate ground states (3 on rings with 3 | L, up to L otherwise), while the mobile chain has a unique ground state on every ring tested including primes, z = 1 with two velocities, and c = 2 from three estimators. Squeezed-space factorization (Ogata–Shiba) is exact and checked against brute force to 10⁻¹⁴.
 - **Encoded route-B chain at finite coupling** (`contrib/encoded_chain_numerics/`, in progress). For q = 2 (r = 2), c = 1.00 ± 0.03 for λ/Δ from 0.05 to 0.8, with z = 1 and no translation breaking, so the first-order prediction c = r/2 survives at finite coupling. The q = 3 case is still running.
+
+### 9.11 Chat material imported and status reconciled, 2026-10-27
+
+Codex (GPT-6) compared the available text of "Prove c d conjecture" against
+commit `58ef8a9` and added [contrib/chat_followup/](contrib/chat_followup/README.md)
+at the user's request. The import adds the species-torus charge-incidence
+argument excluding marginal Cooper transfer, a direct-sum realization of
+finite cell excitations by massive auxiliary fermions, explicit closure and
+symmetry arguments for controlled classes, and a sourced qubit Hamiltonian
+catalog. The original chat's model identity was unavailable. Two construction
+replies and the catalog were truncated in retrieval; the contribution states
+this and does not reconstruct missing text or references.
+
+The finite-dimensional arguments are separated from the proposed
+c = r², d = O(r log r) microscopic family [heuristic]. In particular, the
+compiler, initialization/illegal-sector checks and thermodynamic RG transfer
+remain to be supplied. The source chat's stronger suggestion that only the
+last RG extension remains is not adopted. The earlier C1/C6 results and
+generic boundary-compression lemmas were already recorded and are linked
+rather than treated as new work. No new numerical evidence for a violation
+of c-d is added.
+
+Separately, the already committed [C14 progress log](codex/work_C14/PROGRESS.md)
+supersedes the favorable general Casimir-conjecture summary above. It reports
+the symmetric-rank-2 SU(8) chain with d = 36, c = 12.6, v = π/4 and
+‖h‖ = 3/2, so cv/(2π‖h‖) = 1.05 [Astra; algebraic and TBA checks, standard
+Bethe/string and WZW inputs; full write-up and independent review pending].
+It also reports a family inconsistent with any dimension-independent
+constant in that bound. These statements concern the velocity-weighted
+proposal, not the original c-d conjecture. STATUS and the refinement note
+now point to this newer result. The on-site-current f-sum argument's actual
+constant is 8πC₂(R)/(k+h^∨); it did not establish 2π in general.

@@ -1,5 +1,16 @@
 # A refined c–d conjecture: central charge against the conformal window
 
+**Update, 2026-10-27:** [C14's later progress log](../../codex/work_C14/PROGRESS.md)
+reports a physics-level counterexample to the universal 2π Casimir bound
+proposed below: the symmetric-rank-2 SU(8) chain has d = 36 and
+cv/(2π‖h‖) = 1.05. The report uses standard Bethe/string and WZW inputs and
+records algebraic and TBA checks; its complete write-up and independent
+review remain pending. The proposal and its conditional consequences below
+are retained as the earlier record. This update does not invalidate the
+restricted free-fermion bound or the representation-dependent current-algebra
+estimate, and it does not refute the original c-d conjecture. Added by Codex
+during the chat-material import; the C14 result itself was already in GitHub.
+
 ## Claim
 
 Class. Critical, translation-invariant, nearest-neighbour Hermitian chains H = Σ h_{i,i+1} on (ℂ^d)^⊗L whose low-energy theory is a set of unitary CFTs (c_a, v_a), c = Σ c_a (Virasoro). ‖h‖ is half the spread of spec h (minimized over h → h + o⊗1 − 1⊗o, which leaves H unchanged). With s_CFT(T) = (πT/3) Σ c_a/v_a, the window edge T*_ε is the largest T with |s/s_CFT − 1| ≤ ε below it (ε = 0.1 throughout). Hierarchy ratios are R = ‖h‖/T*, the onset length ℓ* = v_max/T*, and the Casimir coefficient A = Σ c_a v_a, defined by E_0(L) = L e_0 − πA/(6L).

@@ -10,7 +10,7 @@ The working standard is theoretical physics (standard RG, controlled perturbatio
 
 ## Summary
 
-1. **No counterexample at small d.** Nothing above d − 1 at d = 2, in symmetric families at d = 3 to 7, or at the best d = 4 target. One d = 3 hint is being checked.
+1. **No counterexample at small d.** Nothing above d − 1 at d = 2, in symmetric families at d = 3 to 7, or at the best d = 4 target. The d = 3 hint failed C12's own follow-up; the independent check is still pending in the recorded status.
 2. **No general proof.** Every lattice quantity we know that bounds c grows like (a length scale) × log d, never like d. Proofs exist in restricted classes.
 3. **A candidate construction against it at large d.** If it holds, c is unbounded at a fixed local dimension d₀, so there is no bound c ≤ f(d) and c–d fails for every d ≥ d₀ (direct sums propagate a violation upward). It is not yet a counterexample, because one ingredient, a fixed-alphabet computation track, is missing and d₀ is not yet fixed.
 
@@ -39,13 +39,15 @@ At fixed d₀ the bonds h, modulo shifts and overall scale, form a compact space
 - **d = 3 to 7.** Targeted symmetric families at d = 3 and 4 (C4-D3), and about 900 further points in spin-orbital, spin-3/2, SO(5)-vector and Sp(4) families, show nothing above d − 1 (a G₂ family at d = 7 was inconclusive). Every apparent excess was traced to rotor towers, dimer doublets, ferromagnetic multiplets or incommensurate sizes [numerical] (`contrib/counterexample_search/`). At d = 3, a qutrit chain designed as a three-fluid mixture of atoms and bound pairs gave entropy fits c ≈ 3.05 on rings up to L = 21. Astra's own follow-up finds that the bound-pair minima the mechanism needs disappear in a saddle-node at δ ≈ 0.570, below the δ = 0.75 and 0.9 points that gave the large estimates, and that those estimates fail a size-scaling check, so it is not a counterexample [Astra] (`codex/work_C12/RESULT.md`). An independent check is still running (`contrib/qutrit_candidate/`).
 - **d = 4.** Pure Sp(4)_k cannot be the IR of an Sp(4) chain on ℂ⁴ at any level, since it contains SU(2)_{10k}, whose even level cannot carry the spin-3/2 anomaly [checked]. The best target, a tricritical Ising singlet on top of the c = 3 spin-3/2 phase (c = 16/5), needs two tunings, and a map of the whole two-parameter SU(2) family at L = 8 and 12 shows no sign of it [Astra field theory, checked; numerical] (`contrib/tci_target_d4/`).
 
-## Bounds that hold
+## Bounds and proposed refinements
 
 - Quasi-free chains of any period: c ≤ log₂ d [proved] (REPORT §4, `codex/work_C1_astra/`).
 - SU(d)-symmetric fundamental chains (h = a + bP), toroidal IR theories whose bosons come from on-site U(1)s, and WZW IR theories with level at most the embedding index [proved, given the IR identification] (REPORT §3.4, §4).
 - Conditional bounds [checked]: c ≤ 1 + (6/π) K(d) log d if c-many conformal levels appear on rings of length at most K(d); c < d² − 1 if the IR stress tensor is built from on-site symmetry currents (`codex/work_C7/`). Also c ≤ ⌊r(h)/2⌋, with r(h) the operator Schmidt rank of the bond, for Gaussian modes resolved by commuting on-site charges [Astra].
-- A proposed replacement for c–d that the construction does not threaten: Σ_a c_a v_a ≤ 2π‖h‖, with v_a the velocities and ‖h‖ half the spread of the bond's spectrum. It contains no d, the SU(d) chain approaches it (A = 2π(1 − 1/d)‖h‖), and it is proved for number-conserving free fermions and for current algebras built from on-site generators [heuristic in general] (`contrib/refined_conjecture/`). Unbounded c is then possible only if the velocities, and with them the conformal window, shrink, which is what happens in the construction.
+- **Casimir proposal: C14 reports a counterexample.** The proposed general bound A = Σ_a c_a v_a ≤ 2π‖h‖, with ‖h‖ the gauge-minimized half-spread of the bond spectrum, is challenged by the symmetric-rank-2 SU(8) fusion chain: d = 36, c = 12.6, v = π/4 and ‖h‖ = 3/2 give A/(2π‖h‖) = 1.05. C14 records algebraic and TBA checks and concludes that the bound fails at the physics standard, using the standard Bethe/string and SU(N)_k CFT inputs [Astra; progress report, full write-up and independent review pending] (`codex/work_C14/PROGRESS.md`). This does not violate c-d because 12.6 < 35. The restricted number-conserving free-fermion result A ≤ π‖h‖ survives. The on-site-current argument in `contrib/refined_conjecture/` yields the representation-dependent constant 8πC₂(R)/(k + h^∨), not the sharp 2π bound in general. Bounds derived by assuming the universal 2π proposal remain conditional and cannot now be used as established consequences.
 - What cannot work: entanglement, thermodynamic and Lieb–Robinson arguments give at best c ≲ ℓ* log d, with ℓ* the length at which conformal behaviour sets in, which is too weak for large d (REPORT §3.1 to §3.2, `tools/`).
+
+Additional material from "Prove c d conjecture" is in [contrib/chat_followup/](contrib/chat_followup/README.md): the species-torus selection rule, a direct-sum massive-auxiliary embedding, exact extensions of controlled classes, and a detailed qubit catalog. The chat's proposed c = r², d = O(r log r) family remains conditional and is distinct from unbounded c at fixed d. Its compiler and general infrared transfer are not established by the imported notes.
 
 ## Superseded
 

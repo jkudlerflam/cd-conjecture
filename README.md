@@ -70,11 +70,19 @@ These are spelled out in [CONTRIBUTING.md](CONTRIBUTING.md). In brief, tag every
 
 The conjecture is open. The working standard is theoretical physics (standard RG, controlled perturbation theory, calibrated numerics), not mathematical rigor. In brief:
 
-- **Small d: no counterexample.** Nothing above d − 1 at d = 2, in symmetric families at d = 3 to 7, or at the best d = 4 target. A d = 3 hint from one model run is being checked.
+- **Small d: no counterexample.** Nothing above d − 1 at d = 2, in symmetric families at d = 3 to 7, or at the best d = 4 target. The d = 3 hint failed its own follow-up (C12); an independent check remains pending in the recorded status.
 - **No general proof.** Every lattice quantity we know that bounds c grows like (a length scale) × log d. Proofs exist for quasi-free chains (c ≤ log₂ d), SU(d)-symmetric bonds, and some classes of IR theories, and there are conditional bounds.
 - **Large d: a candidate construction against it.** Sites form long cells that act as big effective sites, coupled so that the chain of cells flows to a stable multi-flavour Luttinger liquid. If it holds, c is unbounded at a fixed local dimension d₀, so no bound c ≤ f(d) exists. It is not yet a counterexample. Two ingredients are missing: a computation track with a fixed alphabet, without which d₀ is not fixed (estimates give d₀ ≈ 130, possibly 45), and an explicit microscopic core for the version with mobile cells, which is needed for a unique ground state. For mobile cells, a bosonization analysis at finite coupling and a small microscopic toy both support c = n + 1 with a unique ground state on every ring.
 
 [STATUS.md](STATUS.md) has the details and the list of where help is most useful.
+
+Additional derivations from the chat "Prove c d conjecture" are collected in
+[contrib/chat_followup/](contrib/chat_followup/README.md): a species-torus
+selection rule for the encoded target, a massive-auxiliary construction,
+exact extensions of controlled classes, and a detailed qubit catalog. The
+counterexample proposal remains conditional. Also see [C14's progress
+log](codex/work_C14/PROGRESS.md) for its reported physics-level counterexample
+to the proposed velocity-weighted Casimir bound; that does not refute c-d.
 
 ## Open problems
 
