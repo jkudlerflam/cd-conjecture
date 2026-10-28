@@ -18,6 +18,12 @@ The repository is two levels above your working directory (`../../`). Read, in t
 
 Other agents are working at the same time: one on d = 2 numerics, one searching for counterexamples at d ≥ 3 in symmetric families, and one trying to build an explicit chain with c > d − 1. Their folders under `../../contrib/` may change while you work. Read them for the latest state, but make your own contribution distinct.
 
+## Current focus (added before run 7)
+
+Read `../../STATUS.md` first; it is the current one-page state of the project. Your own ranked continuation (RESULT.md §35) puts first an initialized uniform positive nearest-neighbour core with high-channel boundary maps and a constant alphabet, together with a program and clock that exclude every unwanted history component. Make that your main target in this run, since it is what fixes d0 (see also `../../contrib/minimal_d0/README.md`, which estimates d0 ≈ 130 on a Bausch–Cubitt–Ozols-class machine and ≈ 45 if the machine's clock can select the cell length, and names the longest-penalty-free-path property as the open design problem). The infrared behaviour of the moving-cell model at finite coupling is being handled by a separate run (C13, `../work_C13/`); read its PROGRESS.md for context but do not duplicate it.
+
+Do not put probabilities, odds or percent-confidence estimates in any file.
+
 ## The questions, in priority order
 
 The class is translation-invariant, nearest-neighbour, Hermitian chains H = Σ h_{i,i+1} on (ℂ^d)^{⊗L}, with periodic boundary conditions, whose low-energy spectrum is described by unitary CFT(s) with total central charge c.
