@@ -1,0 +1,72 @@
+[
+ {
+  "n": 2,
+  "roots_per_band": [
+   2,
+   2
+  ],
+  "max_centre_diff": 8.493216014651087e-10,
+  "max_kF_diff": 8.535396833764253e-10,
+  "min_centre_sep_grid": 0.00020632201376047377,
+  "min_centre_sep_hp": 0.000206322862989827,
+  "narrow_over_wide": 0.0014235665331424846
+ },
+ {
+  "n": 3,
+  "roots_per_band": [
+   2,
+   2,
+   2
+  ],
+  "max_centre_diff": 1.4247641299180644e-10,
+  "max_kF_diff": 1.5740793113394602e-09,
+  "min_centre_sep_grid": 9.779841040336024e-07,
+  "min_centre_sep_hp": 9.780029035820275e-07,
+  "narrow_over_wide": 2.328607348403438e-06
+ },
+ {
+  "n": 4,
+  "roots_per_band": [
+   2,
+   2,
+   2,
+   2
+  ],
+  "max_centre_diff": 3.273792966319161e-10,
+  "max_kF_diff": 1.888519784998266e-09,
+  "min_centre_sep_grid": 2.420766786692674e-06,
+  "min_centre_sep_hp": 2.420375614308815e-06,
+  "narrow_over_wide": 3.8342612045021236e-09
+ },
+ {
+  "n": 5,
+  "roots_per_band": [
+   2,
+   2,
+   2,
+   2,
+   2
+  ],
+  "max_centre_diff": 2.5628312457117016e-10,
+  "max_kF_diff": 9.348175566969985e-10,
+  "min_centre_sep_grid": 3.491767028518389e-06,
+  "min_centre_sep_hp": 3.491537352481031e-06,
+  "narrow_over_wide": 6.322699176367884e-12
+ },
+ {
+  "n": 6,
+  "roots_per_band": [
+   2,
+   2,
+   2,
+   2,
+   2,
+   2
+  ],
+  "max_centre_diff": 4.183018735537912e-10,
+  "max_kF_diff": 1.2935270632397078e-09,
+  "min_centre_sep_grid": 7.855265991896232e-06,
+  "min_centre_sep_hp": 7.854910380088836e-06,
+  "narrow_over_wide": 1.0435053756593609e-14
+ }
+]
