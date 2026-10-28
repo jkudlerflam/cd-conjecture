@@ -101,5 +101,13 @@
     ],
     "causal_relevant_amplification": 2.05,
     "max_recurrence_to_proved_bound_ratio": 1.0
+  },
+  "thermal_localization": {
+    "exact_rational_cases": 96,
+    "largest_A_error_to_bound_ratio": 0.791403439958613,
+    "largest_B_error_to_bound_ratio": 0.11426841240037244,
+    "A_weight_absolute_sum": "5/4",
+    "quadratic_thermal_comparison_power": 3,
+    "quartic_thermal_comparison_power": 4
   }
 }

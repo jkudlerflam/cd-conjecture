@@ -8,6 +8,17 @@ or c-d violation is proved in this folder.
 
 ## Results
 
+- [WINDING_ESTIMATE.md](WINDING_ESTIMATE.md) proves a single-scale thermal
+  comparison with retarded endpoints and determinant contractions. Tree
+  unfolding, a mixed Gram cofactor bound, and one temporal moment give
+  an arbitrary fixed thermal power p>=3. Cauchy differentiation extracts
+  a reference defect linearly. This closes the fixed-history winding step;
+  multiscale localization and finite-temperature histories still need work.
+- [THERMAL_LOCALIZATION.md](THERMAL_LOCALIZATION.md) constructs a projection
+  using four allowed Matsubara frequencies. Its mismatch with line Taylor
+  localization has power three for the temporal kinetic coefficient and
+  power four for relevant/quartic coefficients. It supplies the other
+  one-step thermal forcing term, with an explicit finite moment cost.
 - [THERMAL_CRITERION.md](THERMAL_CRITERION.md) proves an abstract scalar
   comparison theorem. A residual scale modulus omega(s) tending to zero,
   together with a thermal comparison power p>2, suffices for o(T^2).

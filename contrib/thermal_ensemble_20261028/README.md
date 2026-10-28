@@ -54,22 +54,46 @@ Every theorem states its hypotheses and proof. An all-word coordinate
 representation does not by itself verify the stronger positive onsite
 and small intercell decomposition on every malformed sector.
 
+The subsequent [positive completion](ensemble/ILLEGAL_SECTORS.md),
+independently checked in [the audit](exact/COMPLETION_AUDIT.md), supplies
+that full decomposition for a modified 4464-letter bond. It adds positive
+helix pins only on illegal selector pairs, leaving the entire legal
+Hamiltonian unchanged. It proves the all-string gap and heat trace and
+absorbs the unbounded positive multi-token readout exactly. The
+[two-charge Jordan-Wigner dictionary](exact/SEPARATE_JW.md) preserves
+locality even for logical-auxiliary charge exchange. Its isometric
+reference extension includes necessary auxiliary parity factors.
+
+[MOBILE_MATCHING_APPLICATION.md](MOBILE_MATCHING_APPLICATION.md) combines
+these results with the massive theorem and C45's local reduction.
+It gives explicit positive choices of the final coupling, a uniform length
+tilt interval, and an interior physical-pressure zero. The independent
+[application audit](ensemble/APPLICATION_AUDIT.md) checks the constants.
+The remaining conclusion concerns the interacting logical infrared theory.
+
 ## Remaining work
 
 The separate [massive theorem](../direct_attack_20261028/infrared/INFINITE_CELL_PROGRESS.md)
 controls thermal periodization and scalar terms before integrating logical
-fields. The ensemble results here then apply once the microscopic
-all-sector decomposition and the pressure-zero location are established.
-The latter has an explicit low-temperature bracket including all scalar
-shifts and the retained bandwidth.
+fields. The ensemble results now apply to the explicitly completed bond
+using the full-space construction and pressure-zero bracket above. This
+repairs the original rule's full-space decomposition rather than asserting
+that the unmodified rule already had it.
 
 The decisive analytic task is the multichannel retarded logical RG,
 including normalized marginal flows and either positive-level current
 algebras or scalar vacuum estimates relative to the dressed Luttinger
 reference. A small fixed pressure error is not `o(T^2)`. A thermal
 coefficient is velocity weighted and does not alone identify the
-unweighted central charge. Work continues on these obligations and the
-full microscopic sector application.
+unweighted central charge. Work continues on these logical infrared obligations.
+
+The [single-scale winding proof](thermal/WINDING_ESTIMATE.md) controls
+thermal corrections with BBF trees and Gram determinants, without a
+factorial Wick expansion. It permits retarded endpoints and external
+kernels. The [Matsubara localization lemma](thermal/THERMAL_LOCALIZATION.md)
+supplies thermal powers three and four with an exact projection. These
+are one-step results; the uniform all-scale history and moment estimates
+remain to be established.
 
 ## Checks and provenance
 
@@ -86,9 +110,14 @@ Python with numpy is sufficient. From the repository:
     python3 -B contrib/thermal_ensemble_20261028/exact/checks.py
     python3 -B contrib/thermal_ensemble_20261028/check_tilted_embedding.py
     python3 -B contrib/thermal_ensemble_20261028/thermal/checks.py
+    python3 -B contrib/thermal_ensemble_20261028/ensemble/illegal_checks.py
+    python3 -B contrib/thermal_ensemble_20261028/exact/jw_checks.py
 
 Saved controls include 13 generic complex physical/rooted matrix pairs
 and 39 thermal comparisons, 18 tilted reference inequalities, four renewal
 controls, 18 invalid-embedding comparisons, and 30 heat-kernel derivative
 bounds. All pass. These check algebra and the stated comparisons; they
-do not measure a central charge for either candidate.
+do not measure a central charge for either candidate. The completion
+passes 3,280 fragment and 2,080 marker-reanchoring cases, 176 core rewrite
+and 12 port checks; the 256-dimensional Jordan-Wigner checks have zero
+matrix error; all 96 exact-rational thermal-localization checks pass.

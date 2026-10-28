@@ -1061,3 +1061,19 @@ remains open.
 
 - C47 (`codex/work_C47/`, checks rerun and passing) proves that the ten-letter demonstrator's complete second-order logical bond is a spin-1/2 XXZ chain with J = (9/16)λ² and Δ = 27/182, gives a range-three unitary with U H U† = D + R, ‖R‖ ≤ C|λ|³ uniform in ring size and temperature, and a charge-, grading- and C-preserving embedding into one logical plus 60 massive fermions with a uniform free-energy comparison. Conditional on the finite-cell matching theorem in `contrib/direct_attack_20261028/infrared/` (Pedra–Salmhofer input), the logical retarded action is within 4C|λ|³ of XXZ. It does not prove c = 1. The obstructions it locates are concrete: Δ = 27/182 does not shrink with λ, so a theorem valid only near the free XX point does not apply; half filling brings umklapp; the matched action is retarded with vertices of all degrees; and the T² coefficient is not delivered.
 - Seven Astra runs now attack input S from different directions (specs C48 to C54, shared background `specs/_S_background.md`): a resummed cluster expansion for the massive sector (C48), quasi-local dressing with Lieb–Robinson bounds (C49), the constructive multichannel RG extension of Mastropietro–Porta and Porta–Scola–Singh (C50), identification of c from the RG output (C51), redesigning the cell so S reduces to a published theorem (C52), modifying the demonstrator to sit inside a fully stated theorem (tunable Δ, off half filling; C53), and an adversarial search for a mechanism that breaks S (C54).
+
+[proved completed-bond massive/ensemble reduction; independently AI-audited]
+The thermal-ensemble campaign now adds an explicit positive completion of
+C44's helix pins on L# and ##. The d0=4464 alphabet and entire legal
+Hamiltonian are unchanged. This repairs the strong cross-cell pin on
+illegal words and proves an all-string onsite gap and linear heat-trace
+bound. Conserved per-cell token number permits exact absorption of the
+positive unbounded multi-token readout. A separate-charge Jordan-Wigner
+dictionary includes auxiliary charges, preserves interval norms, and
+requires an auxiliary-parity-twisted reference extension. The audited
+MOBILE_MATCHING_APPLICATION gives explicit final-coupling, uniform-tilt,
+and physical-pressure-zero inequalities. All local rule and 256-dimensional
+algebra checks pass. New BBF/Gram winding and four-Matsubara localization
+proofs control one RG step, with 96 exact localization checks. The
+all-scale interacting logical flow and current/stress or scalar thermal
+identification remain open. This is not a proved c-d violation.

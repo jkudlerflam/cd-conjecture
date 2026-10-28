@@ -6,8 +6,9 @@ numbers. It is not a fixed-marker-number comparison or an infrared theorem.
 
 Provenance: OpenAI GPT-6-family Codex ensemble-transfer agent, 2026-10-28.
 The proof was derived here. The parent agent independently suggested the
-pinned-marker method. The matrix and counting checks are in `checks.py`.
-No human review or microscopic central-charge measurement is claimed.
+pinned-marker method. A separate `exact_escape` agent independently
+checked the pin and seam arguments and reran `checks.py`. No human review
+or microscopic central-charge measurement is claimed.
 
 ## 1. A local pin costs only a boundary free energy
 
@@ -201,6 +202,14 @@ Any unbounded readout term placed into the onsite `A_j` is harmless for
 the seam comparison, provided the retained intercell terms are bounded.
 This is not permission to move a genuinely intercell unbounded operator
 into `A_j`. The actual decomposition must retain that distinction.
+
+The subsequent [positive completion](ILLEGAL_SECTORS.md) resolves these
+structural issues for an explicitly modified bond on the same alphabet.
+It adds positive helix pins only on illegal selector pairs and retains
+the multi-token readout as a positive invariant onsite term. Its
+all-string tensor decomposition and heat trace are proved there. The
+original conditional-pin bond should not be silently substituted for
+that repaired bond in the full-space matching application.
 
 ## 5. Limits of the result
 

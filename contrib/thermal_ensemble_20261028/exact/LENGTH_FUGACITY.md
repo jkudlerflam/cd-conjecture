@@ -1,9 +1,10 @@
 # Length fugacity closes the reference ensemble gap
 
 Status: **[proved abstract pressure and thermal comparison theorems]**.
-Application to the locally block-diagonal C44/C45 reference is conditional
-on its recorded local reduction and on the root-to-physical comparison
-in the sibling `ensemble/` folder. No theorem about the leakage remainder,
+Application to the positively completed C44/C45 reference uses its recorded
+local reduction and the root-to-physical comparison in the sibling
+`ensemble/` folder. The full-space completion is independently audited in
+`COMPLETION_AUDIT.md`. No theorem about the leakage remainder,
 interacting Gaussian limit, or central charge is asserted.
 
 Provenance: OpenAI GPT-6-family Codex agent `exact_escape`, 2026-10-28.
@@ -314,11 +315,18 @@ stress-tensor identification and the relevant propagation speeds.
 
 **[proved conditional on the stated imported inequalities]** Use d0=4464,
 b>=2, code rank d_P=2^(n+1), and equal code ranks at b and b+1, so
-ell_bar=b+1/2. Import precisely the C46 all-length inputs:
+ell_bar=b+1/2. The following are the heat-trace hypotheses used in C46:
 
 * At the exceptional lengths {1,b,b+1}, excluded states have A>=Delta.
 * At other lengths ell>=2, A>=gamma(1+|ell-b|), gamma>=Delta>0.
 * dim K_ell<=d0^ell, and J<=Delta/48.
+
+For the full positively completed bond, take gamma to mean gamma_all
+from `COMPLETION_AUDIT.md` (5), and shrink Delta to at most that number
+and the complete selected-cell gaps. These hypotheses then cover all
+strings. The original selector-legal gamma must not be reused for illegal
+strings without that adjustment. The sibling's simpler kappa bound is
+an alternative way to get the same trace-class conclusion.
 
 Fix s0>0 such that
 
@@ -376,11 +384,15 @@ upgrade C45's finite-order local remainder to a microscopic central-charge
 theorem. The missing low-temperature leakage and interacting retained
 pressure estimates are exactly the obligations left in the other folders.
 
-There are two additional application boundaries. The sibling pin theorem
-applies to the full physical rooted cell space, whereas C45's local
-reduction is initially stated in a well-formed invariant sector.
-Malformed sectors still need their own thermal comparison before (4)
-can be used for that reduction. Also, the finite-rank projected code is
+The original C45 application had an additional full-space boundary:
+conditional endpoint pins were not on-cell on arbitrary malformed words.
+The positive completion and token-count split in the sibling
+`ensemble/ILLEGAL_SECTORS.md`, independently checked in
+`COMPLETION_AUDIT.md`, repair that structural problem for the modified
+bond. They provide the complete on-cell gap, linear heat-trace cost, and
+bounded residual interactions without discarding malformed sectors.
+
+The finite-rank projected code is
 a constrained physical subspace. A full-local-space pinning dimension
 ratio does not automatically apply to its trace. Without a separate
 projected-code seam comparison, s_P is a rigorously defined *selected

@@ -123,9 +123,15 @@ it is not a completed counterexample.
 extends pressure transfer to arbitrary length-dependent interacting bonds
 by pinning a marker and controlling the root seam. A length-fugacity
 pressure-zero theorem and a tilted C46 thermal comparison control the
-all-length reference at fixed physical length. The full microscopic
-sector application and retarded logical RG/current or thermal-pressure
-conclusion remain open; no central-charge violation is asserted.
+all-length reference at fixed physical length. Its new
+[positive completion](contrib/thermal_ensemble_20261028/ensemble/ILLEGAL_SECTORS.md)
+adds helix pins only on illegal selector pairs, preserving the complete
+legal Hamiltonian at d0=4464 while supplying the full all-string cell
+gap and heat trace. An independently checked two-charge fermion
+dictionary and [explicit parameter reduction](contrib/thermal_ensemble_20261028/MOBILE_MATCHING_APPLICATION.md)
+instantiate massive matching and the physical-pressure zero for this
+completed bond. The interacting logical RG/current or thermal-pressure
+conclusion remains open; no central-charge violation is asserted.
 
 [proved pressure bound; conformal interpretation conditional] The parallel
 [frozen-chain campaign](contrib/decisive_attack_20261028/README.md) bounds

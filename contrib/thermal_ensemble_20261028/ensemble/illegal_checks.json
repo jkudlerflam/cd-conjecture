@@ -1,0 +1,9 @@
+{
+  "status": "all exact local checks passed",
+  "selector_outer_neighbor_cases": 32,
+  "selector_cell_fragment_cases": 3280,
+  "marker_reanchoring_cases": 2080,
+  "core_pair_rewrites": 176,
+  "endpoint_port_cases": 12,
+  "scope": "Positive pin completion, selector fragmentation and token invariance"
+}

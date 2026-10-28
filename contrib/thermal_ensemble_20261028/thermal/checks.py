@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import json
 import math
+from fractions import Fraction
 from pathlib import Path
 
 import numpy as np
@@ -140,15 +141,62 @@ def thermal_modulus_control() -> dict:
     }
 
 
+def localization_control() -> dict:
+    """Exact rational checks of projection, remainder constants, and signs."""
+
+    def evaluate(coefficients, value):
+        return sum(c * value**degree for degree, c in enumerate(coefficients))
+
+    cases = 0
+    largest_a_ratio = Fraction(0)
+    largest_b_ratio = Fraction(0)
+    for denominator in (4, 10, 40, 100):
+        a = Fraction(1, denominator)
+        for trial in range(20):
+            coefficients = [Fraction(((trial + 3) * (k + 5)) % 17 - 8, k + 1) for k in range(9)]
+            values = {node: evaluate(coefficients, node * a) for node in (-3, -1, 1, 3)}
+            a_value = (9 * (values[1] + values[-1]) - values[3] - values[-3]) / 16
+            b_value = (27 * (values[1] - values[-1]) - values[3] + values[-3]) / (48 * a)
+            m4 = sum(
+                abs(coefficients[k]) * Fraction(math.factorial(k), math.factorial(k - 4)) * (3 * a) ** (k - 4)
+                for k in range(4, len(coefficients))
+            )
+            a_bound = Fraction(15, 32) * m4 * a**4
+            b_bound = Fraction(3, 16) * m4 * a**3
+            a_error, b_error = abs(a_value - coefficients[0]), abs(b_value - coefficients[1])
+            assert a_error <= a_bound and b_error <= b_bound
+            largest_a_ratio = max(largest_a_ratio, a_error / a_bound)
+            largest_b_ratio = max(largest_b_ratio, b_error / b_bound)
+            cases += 1
+
+        for degree in range(4):
+            coefficients = [Fraction(int(k == degree)) for k in range(4)]
+            values = {node: evaluate(coefficients, node * a) for node in (-3, -1, 1, 3)}
+            a_value = (9 * (values[1] + values[-1]) - values[3] - values[-3]) / 16
+            b_value = (27 * (values[1] - values[-1]) - values[3] + values[-3]) / (48 * a)
+            assert a_value == int(degree == 0)
+            assert b_value == int(degree == 1)
+            cases += 1
+    return {
+        "exact_rational_cases": cases,
+        "largest_A_error_to_bound_ratio": float(largest_a_ratio),
+        "largest_B_error_to_bound_ratio": float(largest_b_ratio),
+        "A_weight_absolute_sum": "5/4",
+        "quadratic_thermal_comparison_power": 3,
+        "quartic_thermal_comparison_power": 4,
+    }
+
+
 def main() -> None:
     data = {
         "scope": "Exact quadratic memory and abstract scalar RG checks only",
         "quadratic": quadratic_control(),
         "thermal_criterion": thermal_modulus_control(),
+        "thermal_localization": localization_control(),
     }
     path = Path(__file__).with_name("checks.json")
     path.write_text(json.dumps(data, indent=2) + "\n")
-    print("PASS: exact quadratic thermal coefficient, scalar bound, and abstract scale estimates")
+    print("PASS: quadratic thermal coefficient, scalar bound, scale estimates, and exact localization checks")
     print(f"Saved {path}")
 
 
