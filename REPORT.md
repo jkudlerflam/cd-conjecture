@@ -350,3 +350,83 @@ constant is 8πC₂(R)/(k+h^∨); it did not establish 2π in general.
 
 ### 9.12 C14 final, 2026-10-27
 - **C14, the Casimir bound is false** (`codex/work_C14/RESULT.md`, Astra; the bond spectrum and the velocity independently checked by Claude with `contrib/refined_conjecture/check_C14_velocity.py`). The integrable SU(N) chain with the rank-k symmetric representation on each site, h = Σ_j 2(H_{k−j} − H_k)Π_j (for k = 2, h = −X²/8 + 3X/4 − 1 with X = Σ E_ab ⊗ E_ba and spectrum {0, −1, −3}), has ‖h‖ = H_k, c = k(N² − 1)/(N + k) (SU(N)_k) and v = 2π/N independent of k, so A/(2π‖h‖) = k(N² − 1)/(N(N + k)H_k). This exceeds 1 for k = 2 and N ≥ 7 (d = 28, ratio 64/63) and grows like N/(2 log N) for k = N, so no d-independent constant works. Claude's ED gives v = 3.142 at N = 2, L = 10 (target π) and 2.088 at N = 3, L = 9 (target 2.094). Positive by-product: every even quadratic Majorana or BdG chain, any number of orbitals per site, obeys A ≤ π‖h‖ [Astra, physics level]. The family does not threaten c ≤ d − 1 (c < N² while d = C(N + k − 1, k)). For k = N, A/‖h‖ grows roughly like log d/log log d, so a bound of the form A ≤ C‖h‖ log d is still open.
+
+
+### 9.13 Sparse-graph continuation: a candidate physics-level refutation, 2026-10-28 UTC
+
+At Pace's request, Codex (GPT-6 family) pursued the most promising route
+with three parallel research workers, starting from collaborator commit
+`5360803`. The result is a [candidate counterexample argument](contrib/research_continuation/PROPOSED_COUNTEREXAMPLE.md)
+at this project's stated theoretical-physics standard. Its finite
+construction claims are exact; the conformal conclusion uses explicitly
+stated local massive-sector integration and stable Gaussian RG inputs.
+No rigorous thermodynamic CFT theorem, human review, or numerical
+measurement of a violating chain is claimed.
+
+- **Sparse simultaneous ports [proved, independently checked].** For any
+  simple bipartite graph with u upper vertices and N edges, an explicit
+  isometry gives left ε f† and right ε(1−1/(2N))f†P, with
+  ε=1/(2√(uN)). The physical edge-swap bond has norm equal to its largest
+  hopping amplitude. The map is species preserving and has a sparse
+  reversible basis description. Full small-case isometries reproduce
+  both compressions to below 7×10⁻¹⁶. See [exact_route](contrib/exact_route/README.md).
+- **Graph protection [proved].** The projective-plane incidence graph has
+  q=2(p²+p+1) species and N=(p+1)(p²+p+1) logical fermions. Girth six
+  excludes every nonzero neutral flavour transfer with fewer than six
+  fields. Thus all flavour-changing quartics are forbidden exactly.
+  Enumeration checked 143,528 short charge vectors at p=2; graph and
+  momentum checks also cover p=3,5,7. See [torus_bottleneck](contrib/torus_bottleneck/README.md).
+- **Local circuit and compiler [proved by constructive composition with
+  classical reversible computation].** Local species queries, loaded
+  exchanges and neutral reversible operations prepare the code with
+  O(q log q) local states. Exact interval amplitudes need only O(log q)
+  indexed algebraic rotations, so approximate gate synthesis is optional.
+  A classical oracle scheduler has fixed finite control and an input-
+  independent trajectory. The moving head overlays one species record,
+  avoiding a hidden q² on-site factor. The existing fifteen-letter C8
+  clock executes 2^n ordered full sweeps. Independent exhaustive checks
+  cover all 50,625 length-four clock words and the quantum sweep blocks.
+- **Initialized positive core [proved finite theorem].** Static endpoint
+  marks, trusted neutral scratch and a single boundary-pinned query helper
+  initialize the computation. A reversible full-format checker and
+  all-time FAIL penalties select exactly 2^N inputs. A noncommuting
+  acceptance estimate gives gap at least aγ/(a+B+γ). Cyclic preparation,
+  flagged readout and exact inverse preparation give exact endpoint
+  matrices times positive computable history weights. Compact scans and
+  SWAP walks avoid storing a history proportional to n log n in n sites.
+  See [EXISTENTIAL_CORE](contrib/torus_bottleneck/EXISTENTIAL_CORE.md).
+- **Mobile composition and infrared inference [exact composition;
+  conditional physics conclusion].** The existing wrapper preserves the
+  species torus and costs d=96d_core+48. Choose
+  k_a=π/4+aπ/[12(N+1)] and length density in [5/12,7/12]. Payload
+  mismatches are at least π/[6(N+1)], mixed mismatches at least π/6,
+  and all other non-Gaussian resonances start at dimension three.
+  With both retained energy scales first order, fixed sufficiently small
+  coupling puts the higher-order local corrections inside a strict
+  Gaussian stability neighborhood. The [infrared audit](contrib/research_continuation/IR_AUDIT.md)
+  derives an additive local defect-energy bound and gives the controlled
+  physics excursion argument, while explicitly withholding an all-order
+  mathematical convergence claim. Under these standard infrared inputs,
+  c=N+1 grows as p³ while d=O(p² log p), hence c/d→∞.
+- **Route-A repairs [proved finite algebra].** The original diagonal
+  syndrome prescription cannot encode odd hopping factors while keeping
+  the desired parity. Off-diagonal graded weights repair it. Independent
+  left/right dilations can share the logical register with a complete
+  gapped product code even when the gadget Hamiltonians do not commute.
+  Full resolvent checks agree below 9×10⁻¹⁵, with relative errors reported
+  against the small exchange scale. See [graded_route_a](contrib/graded_route_a/README.md)
+  and [separated_port_cells](contrib/separated_port_cells/README.md).
+
+All ten recorded check scripts were rerun by the coordinating agent;
+independent workers also rederived the key port, acceptance, sweep and
+infrared-selection arguments. The exact-amplitude checks cover 256
+interval states and 1,024 two-branch preparations, with error below
+2×10⁻¹⁵. Another 29,359 verifier-helper round trips, including 18,364
+malformed helper-like target records, pass exactly. These checks concern finite ingredients, not an expanded universal
+machine or a thermodynamic central-charge fit.
+
+The candidate's status is **complete at the construction-argument level,
+conditional on the stated standard infrared inputs, and in need of
+independent end-to-end review**. Its compiler constant is not numerically
+expanded or optimized. Unlike the older route-A goal, this family does
+not prove unbounded central charge at one fixed microscopic dimension.

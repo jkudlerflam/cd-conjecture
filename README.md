@@ -68,11 +68,12 @@ These are spelled out in [CONTRIBUTING.md](CONTRIBUTING.md). In brief, tag every
 
 ## Where things stand
 
-The conjecture is open. The working standard is theoretical physics (standard RG, controlled perturbation theory, calibrated numerics), not mathematical rigor. In brief:
+A new candidate refutation is recorded below and needs independent review. The working standard is theoretical physics (standard RG, controlled perturbation theory, calibrated numerics), not mathematical rigor. In brief:
 
 - **Small d: no counterexample.** Nothing above d − 1 at d = 2, in symmetric families at d = 3 to 7, or at the best d = 4 target. The d = 3 hint failed its own follow-up (C12); an independent check remains pending in the recorded status.
 - **No general proof.** Every lattice quantity we know that bounds c grows like (a length scale) × log d. Proofs exist for quasi-free chains (c ≤ log₂ d), SU(d)-symmetric bonds, and some classes of IR theories, and there are conditional bounds.
-- **Large d: a candidate construction against it.** Sites form long cells that act as big effective sites, coupled so that the chain of cells flows to a stable multi-flavour Luttinger liquid. If it holds, c is unbounded at a fixed local dimension d₀, so no bound c ≤ f(d) exists. It is not yet a counterexample. Two ingredients are missing: a computation track with a fixed alphabet, without which d₀ is not fixed (estimates give d₀ ≈ 130, possibly 45), and an explicit microscopic core for the version with mobile cells, which is needed for a unique ground state. For mobile cells, a bosonization analysis at finite coupling and a small microscopic toy both support c = n + 1 with a unique ground state on every ring.
+- **Large d: a candidate physics-level refutation.** The new sparse species-graph family has predicted c=(p+1)(p²+p+1)+1 and microscopic d=O(p² log p), so c/d diverges. Exact finite constructions now supply the ports, reversible circuit, O(q log q) controller and initialized positive core; the existing mobile wrapper applies. The conformal conclusion uses stated standard massive-sector integration and Gaussian RG inputs. It is not a rigorous thermodynamic theorem or a measured numerical violation. Read [the complete candidate argument](contrib/research_continuation/PROPOSED_COUNTEREXAMPLE.md) and [the infrared audit](contrib/research_continuation/IR_AUDIT.md).
+- **Unbounded c at one fixed d is a separate, unfinished goal.** Route A still requires a spatial implementation of its engineered excited spectrum. The new first-order family has growing d and does not prove that no bound c≤f(d) exists.
 
 [STATUS.md](STATUS.md) has the details and the list of where help is most useful.
 
@@ -80,7 +81,7 @@ Additional derivations from the chat "Prove c d conjecture" are collected in
 [contrib/chat_followup/](contrib/chat_followup/README.md): a species-torus
 selection rule for the encoded target, a massive-auxiliary construction,
 exact extensions of controlled classes, and a detailed qubit catalog. The
-counterexample proposal remains conditional. Also see [C14's progress
+imported proposal remains conditional; the [new continuation](contrib/research_continuation/README.md) gives a different sparse-graph construction. Also see [C14's progress
 log](codex/work_C14/PROGRESS.md) for its reported physics-level counterexample
 to the proposed velocity-weighted Casimir bound; that does not refute c-d.
 
