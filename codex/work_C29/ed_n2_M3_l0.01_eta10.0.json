@@ -1,0 +1,32 @@
+{
+  "n": 2,
+  "cells": 3,
+  "lambda_": 0.01,
+  "g": 0.2,
+  "eta": 10.0,
+  "full_legal_dimension": 592704,
+  "even_type_dimension": 95040,
+  "charge_sizes": [
+    4887,
+    11502,
+    18711,
+    21924,
+    18711,
+    11502,
+    4887
+  ],
+  "code_levels": 64,
+  "full_error": 5.111051938058666e-06,
+  "traceless_error": 3.976953970240659e-11,
+  "error_over_lambda3": 5.111051938058665,
+  "cubic_norm": 5.374152738821003,
+  "after_cubic_error": 2.631009516880307e-07,
+  "eigen_residual": 3.330411955078251e-13,
+  "overlap_min": 0.999987096281349,
+  "next_gap": 1.4135457522383201,
+  "bandwidth": 4.246430280433096e-10,
+  "hermiticity": 0.0,
+  "charge_error": 0.0,
+  "type_parity_error": 0.0,
+  "elapsed_seconds": 83.95245041698217
+}

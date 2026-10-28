@@ -1,0 +1,118 @@
+{
+ "six_cycle": {
+  "u": 3,
+  "v": 3,
+  "N": 6,
+  "q": 6,
+  "out_dim": 186624,
+  "isometry_err": 1.1102230246251565e-15,
+  "left_compression_err": 9.71445146547012e-17,
+  "right_compression_err": 8.326672684688674e-17,
+  "missing_edge_compression": 0.0,
+  "channel_dressed_err": 3.3306690738754696e-16,
+  "channel_undressed_err": 6.938893903907228e-17,
+  "charge_violations_VL": 0,
+  "flags_nonneg_sum_2q-1": true,
+  "flags_distinct": true,
+  "flag_upper_parity_odd": true
+ },
+ "four_cycle_isolated": {
+  "u": 3,
+  "v": 2,
+  "N": 4,
+  "q": 5,
+  "out_dim": 19600,
+  "isometry_err": 4.440892098500626e-16,
+  "left_compression_err": 2.7755575615628914e-17,
+  "right_compression_err": 5.551115123125783e-17,
+  "missing_edge_compression": 0.0,
+  "channel_dressed_err": 1.1102230246251565e-16,
+  "channel_undressed_err": 1.3877787807814457e-16,
+  "charge_violations_VL": 0,
+  "flags_nonneg_sum_2q-1": true,
+  "flags_distinct": true,
+  "flag_upper_parity_odd": true
+ },
+ "path": {
+  "u": 2,
+  "v": 2,
+  "N": 3,
+  "q": 4,
+  "out_dim": 3200,
+  "isometry_err": 0.0,
+  "left_compression_err": 8.326672684688674e-17,
+  "right_compression_err": 5.551115123125783e-17,
+  "missing_edge_compression": 0.0,
+  "channel_dressed_err": 1.1102230246251565e-16,
+  "channel_undressed_err": 1.3877787807814457e-16,
+  "charge_violations_VL": 0,
+  "flags_nonneg_sum_2q-1": true,
+  "flags_distinct": true,
+  "flag_upper_parity_odd": true
+ },
+ "six_cycle_transducer": {
+  "inputs": 64,
+  "branches_checked": 1152,
+  "species_multiset_violations": 0,
+  "injectivity_violations": 0,
+  "word_length_violations": 0,
+  "transducer_vs_algebraic_VL": 0.0
+ },
+ "fano_sampled_transducer": {
+  "inputs": 300,
+  "branches_checked": 8400,
+  "species_multiset_violations": 0,
+  "injectivity_violations": 0,
+  "word_length_violations": 0
+ },
+ "local_gates_q3_l2": {
+  "load": {
+   "permutation": true,
+   "involution": true,
+   "charge_conserving": true
+  },
+  "controlled_exchange": {
+   "permutation": true,
+   "involution": true,
+   "charge_conserving": true
+  },
+  "query": {
+   "permutation": true,
+   "involution": true,
+   "charge_conserving": true
+  },
+  "controlled_swap_all_words": {
+   "words": 10648,
+   "correct_and_conserving": true
+  }
+ },
+ "local_gates_q5_l3": {
+  "load": {
+   "permutation": true,
+   "involution": true,
+   "charge_conserving": true
+  },
+  "controlled_exchange": {
+   "permutation": true,
+   "involution": true,
+   "charge_conserving": true
+  },
+  "query": {
+   "permutation": true,
+   "involution": true,
+   "charge_conserving": true
+  },
+  "controlled_swap_all_words": {
+   "words": 85184,
+   "correct_and_conserving": true
+  }
+ },
+ "uniform_amplitudes": {
+  "max_err": 1.1102230246251565e-16,
+  "at_most_ell_exceptional": true
+ },
+ "fano_channel_identities": {
+  "N": 21,
+  "max_err": 5.551115123125783e-16
+ }
+}

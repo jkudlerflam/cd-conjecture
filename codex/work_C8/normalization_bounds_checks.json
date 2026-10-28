@@ -1,0 +1,60 @@
+[
+  {
+    "q": 4,
+    "m": 2,
+    "port_visibility_min": 0.04957064793130367,
+    "density_visibility_min": 0.04254488680718189,
+    "visibility_lower_bound": 0.00625,
+    "droplets": [
+      {
+        "vacancies": 1,
+        "measured_endpoint_droplet_weight": 0.49499996589450557,
+        "lower_bound": 0.4
+      },
+      {
+        "vacancies": 2,
+        "measured_endpoint_droplet_weight": 0.4987248115601722,
+        "lower_bound": 0.3
+      }
+    ],
+    "compensator_norms": [
+      1289.8995069582777,
+      1289.8995069582777,
+      1296.2685421113508
+    ],
+    "compensator_upper_bound": 6395.503651905904,
+    "marker_visibility": 0.2331004452746586,
+    "marker_lower_bound": 0.015625,
+    "norm_triangle_bound": 5291946042.213195,
+    "polynomial_norm_bound": 8376826257137.334
+  },
+  {
+    "q": 8,
+    "m": 8,
+    "port_visibility_min": 0.015201278662134892,
+    "density_visibility_min": 0.01399967194229236,
+    "visibility_lower_bound": 0.0015625,
+    "droplets": [
+      {
+        "vacancies": 1,
+        "measured_endpoint_droplet_weight": 0.4981999999999998,
+        "lower_bound": 0.44
+      },
+      {
+        "vacancies": 2,
+        "measured_endpoint_droplet_weight": 0.4995467512362393,
+        "lower_bound": 0.38
+      }
+    ],
+    "compensator_norms": [
+      3593.870147934505,
+      3593.870147934505,
+      3600.310021974701
+    ],
+    "compensator_upper_bound": 17765.287921960844,
+    "marker_visibility": 0.24203707697835938,
+    "marker_lower_bound": 0.015625,
+    "norm_triangle_bound": 1582486847874.9993,
+    "polynomial_norm_bound": 4136703830492769.0
+  }
+]

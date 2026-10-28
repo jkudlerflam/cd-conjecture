@@ -1,0 +1,67 @@
+{
+  "parameters": {
+    "q": 4,
+    "m": 2,
+    "flat_vacancies": true,
+    "core_length": 8,
+    "cell_lengths": [
+      9,
+      10
+    ],
+    "core_dimension": 2232000,
+    "site_dimension": 214272048,
+    "selector_t": 1123.5321147205916,
+    "selector_mu": 1885.731046884464,
+    "selector_penalty": 4503.128458882366,
+    "base_energy_density": -25.535403105932144,
+    "filter_scale": 1.0,
+    "vacancy_hop": 1.0,
+    "endpoint_occupations": [
+      0.8888888888888888,
+      0.8
+    ],
+    "two_site_occupations": [
+      0.7777777777777778,
+      0.6222222222222222
+    ],
+    "marker_visibility": 0.1869524555657523,
+    "marker_coefficient": 5.348953545294804,
+    "marker_field": 2.62203354475281,
+    "payload_energy_per_cell": -1.9854137723852285,
+    "charge_ground_residuals": [
+      0.0,
+      0.0
+    ]
+  },
+  "wrapper": {
+    "core_dimension": 2,
+    "wrapper_dimension": 15,
+    "columns": 225,
+    "max_error": 8.881784197001252e-16
+  },
+  "columns": {
+    "input_columns_per_part": 3232,
+    "entries": [
+      9265,
+      4667
+    ],
+    "max_relative_hermiticity_errors": [
+      1.0086930686980286e-17,
+      3.1632729969262556e-17
+    ],
+    "selector_changing_entries": 247,
+    "charge_marker_and_legality_failures": 0
+  },
+  "compression": {
+    "clock_vertices": 5124,
+    "logical_dimension": 4,
+    "two_cell_dimension": 16,
+    "max_two_cell_Fock_matrix_error": 0.0,
+    "max_compensation_error": 3.0402122684583166e-14,
+    "selected_reference_length_density": 0.4999999999999999
+  },
+  "charge_form_identity": {
+    "columns": 160,
+    "max_relative_error": 0.0
+  }
+}

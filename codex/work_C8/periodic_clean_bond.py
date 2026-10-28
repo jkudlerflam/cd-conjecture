@@ -7,11 +7,12 @@ For general q the same coefficients are finite spectral definitions.
 """
 from collections import defaultdict
 from dataclasses import dataclass,replace
+from itertools import combinations
 import numpy as np
+from scipy.linalg import cho_factor,cho_solve
 from clean_core_bond import CoreBond
 from clean_readout_counts import counts
 from length_filter_checks import filter_data,plus
-from vacancy_parent import charge_hamiltonian
 from rational_target import target
 
 
@@ -35,29 +36,70 @@ def compensator(states,values):
             values[1]*(np.eye(2)-np.outer(u,u.conj())))/chi
 
 
+def positive_charge_ground(k,p,U,w):
+    """Perron vector in the even reflection sector, without a tiny doublet.
+
+    Inverse iteration of a positive Stieltjes inverse retains tiny positive
+    tails that an unrestricted dense eigenvector can lose to roundoff.
+    """
+    N=k+p;states=list(combinations(range(N),p));index={s:i for i,s in enumerate(states)}
+    H=np.zeros((len(states),len(states)))
+    for i,s in enumerate(states):
+        occupied=set(s)
+        for j in range(N-1):
+            if (j in occupied)==(j+1 in occupied):continue
+            H[i,i]+=U
+            t=tuple(sorted(occupied.symmetric_difference((j,j+1))))
+            H[index[t],i]-=w
+    seen=set();orbits=[]
+    for i,s in enumerate(states):
+        if i in seen:continue
+        orbit=sorted({i,index[tuple(sorted(N-1-j for j in s))]})
+        seen.update(orbit);orbits.append(orbit)
+    R=np.zeros((len(states),len(orbits)))
+    for j,orbit in enumerate(orbits):R[orbit,j]=1/np.sqrt(len(orbit))
+    reduced=R.T@H@R
+    shift=U-2*p*w-.1*U
+    factor=cho_factor(reduced-shift*np.eye(len(orbits)),lower=True)
+    v=np.ones(len(orbits));v/=np.linalg.norm(v)
+    for _ in range(300):
+        v=cho_solve(factor,v);v/=np.linalg.norm(v)
+        energy=float(v@reduced@v)
+        if np.linalg.norm(reduced@v-energy*v)<1e-14*U:break
+    chi=R@v;residual=float(np.linalg.norm(H@chi-energy*chi))
+    assert chi.min()>0 and residual<5e-13*U
+    return states,H,chi,energy,residual
+
+
 class PeriodicBond:
     selector_arrows=((1,0),(0,0),(0,1),(1,1))
     wrapper_arrows=((0,0),(1,1),(2,2),(0,1),(1,1),(1,2))
 
-    def __init__(self,q=4,U=1.,vacancy_hop=None,J0=1.):
+    def __init__(self,q=4,U=1.,vacancy_hop=None,J0=1.,flat_vacancies=False):
         self.core=CoreBond(q)
         self.q=q;self.m=q*q//8;self.k=self.m+6;self.b=self.k+1
         self.Q=self.core.d;self.s=6*self.Q+3;self.d=16*self.s
-        self.U=U;self.w=.9*U/(self.k+1) if vacancy_hop is None else vacancy_hop
-        assert 0<self.w<U/(self.k+1)
+        self.U=U;self.flat_vacancies=flat_vacancies
+        self.w=(U if flat_vacancies else .9*U/(self.k+1)) if vacancy_hop is None else vacancy_hop
+        assert self.w==U if flat_vacancies else 0<self.w<U/(self.k+1)
         self.J0=J0
         phase,hf,af,bf,eps=filter_data(self.k)
-        self.filter_phase=phase;self.filter_scale=2*U/eps
+        self.filter_phase=phase;self.filter_scale=1. if flat_vacancies else 2*U/eps
         self.hf=hf*self.filter_scale;self.af=af*self.filter_scale;self.bf=bf*self.filter_scale
         self.phi=1/self.b;self.he=qubit_bond(self.phi)
         self.pin=np.eye(2)-np.outer(plus(0),plus(0).conj())
-        self.holes=[];self.chis=[];self.charge_energies=[];self.r=[];self.s2=[]
+        self.holes=[];self.chis=[];self.charge_energies=[];self.r=[];self.s2=[];self.charge_residuals=[]
         for p in (1,2):
-            hs,hc,chi,ev=charge_hamiltonian(self.k,p,U,self.w)
+            if flat_vacancies:
+                hs=list(combinations(range(self.k+p),p))
+                chi=np.ones(len(hs))/np.sqrt(len(hs));energy=0.;residual=0.
+            else:
+                hs,hc,chi,energy,residual=positive_charge_ground(self.k,p,U,self.w)
             self.holes.append(hs);self.chis.append(chi)
-            self.charge_energies.append(float(chi@hc@chi))
-            self.r.append(sum(float(z*z) for h,z in zip(hs,chi) if 0 not in h))
-            self.s2.append(sum(float(z*z) for h,z in zip(hs,chi) if 0 not in h and 1 not in h))
+            self.charge_energies.append(energy);self.charge_residuals.append(residual)
+            self.r.append(self.k/(self.k+p) if flat_vacancies else sum(float(z*z) for h,z in zip(hs,chi) if 0 not in h))
+            self.s2.append(self.k*(self.k-1)/((self.k+p)*(self.k+p-1)) if flat_vacancies else
+                           sum(float(z*z) for h,z in zip(hs,chi) if 0 not in h and 1 not in h))
         a=lambda l:4*np.sin(np.pi/(2*l))**2
         b=self.b;ec=a(b+1)-a(b);muc=2-((b+1)*a(b)-b*a(b+1))
         eta=min((a(b-1)-2*a(b)+a(b+1))/2,(a(b)-2*a(b+1)+a(b+2))/3)
@@ -70,7 +112,7 @@ class PeriodicBond:
         self.ML=compensator(self.states,[1/x for x in self.r]);self.MR=self.ML.conj()
         self.MD=compensator(self.states,[1/x for x in self.s2])
         lookup={h:i for i,h in enumerate(self.holes[1])}
-        self.beta_wrap=sum(z*self.chis[1][lookup[(h[0],self.k+1)]]
+        self.beta_wrap=2/(self.k+2) if flat_vacancies else sum(z*self.chis[1][lookup[(h[0],self.k+1)]]
                            for h,z in zip(self.holes[0],self.chis[0]))**2
         j=np.arange(1,b)
         self.head_overlap=float(np.sum(2*np.sin(np.pi*j/b)*np.sin(np.pi*j/(b+1))/np.sqrt(b*(b+1))))
@@ -240,11 +282,12 @@ class PeriodicBond:
         return {key:v for key,v in out.items() if v}
 
     def report(self):
-        return dict(q=self.q,m=self.m,core_length=self.k,cell_lengths=[self.b,self.b+1],
+        return dict(q=self.q,m=self.m,flat_vacancies=self.flat_vacancies,core_length=self.k,cell_lengths=[self.b,self.b+1],
                     core_dimension=self.Q,site_dimension=self.d,
                     selector_t=self.t,selector_mu=self.marker_mu,selector_penalty=self.Ksel,
                     base_energy_density=self.base_density,filter_scale=self.filter_scale,
                     vacancy_hop=self.w,endpoint_occupations=self.r,
                     two_site_occupations=self.s2,marker_visibility=self.marker_norm,
                     marker_coefficient=self.marker_u,marker_field=self.kappa,
-                    payload_energy_per_cell=self.payload_energy)
+                    payload_energy_per_cell=self.payload_energy,
+                    charge_ground_residuals=self.charge_residuals)

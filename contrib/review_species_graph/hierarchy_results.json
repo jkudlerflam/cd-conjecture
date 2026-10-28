@@ -1,0 +1,168 @@
+{
+ "component_factor": 4767840,
+ "table": [
+  {
+   "p": 2,
+   "q": 14,
+   "N": 21,
+   "eps": 0.041239304942116126,
+   "eta": 0.0016601878846776805,
+   "payload_mismatch": 0.02379994434537722,
+   "mixed_mismatch": 0.5235987755982988,
+   "D_exact": 317,
+   "d_core_lower": 1511405280.0,
+   "C_lower": 22456740.088953726,
+   "d_lower": 145094906928.0,
+   "c": 22,
+   "ratio_c_over_d_lower": 1.5162489480707266e-10
+  },
+  {
+   "p": 3,
+   "q": 26,
+   "N": 52,
+   "eps": 0.019230769230769232,
+   "eta": 0.000366266499772417,
+   "payload_mismatch": 0.009879222181099979,
+   "mixed_mismatch": 0.5235987755982988,
+   "D_exact": 677,
+   "d_core_lower": 3227827680.0,
+   "C_lower": 21778533.692138184,
+   "d_lower": 309871457328.0,
+   "c": 53,
+   "ratio_c_over_d_lower": 1.7103866376405013e-10
+  },
+  {
+   "p": 5,
+   "q": 62,
+   "N": 186,
+   "eps": 0.006584649846191339,
+   "eta": 4.324106087222465e-05,
+   "payload_mismatch": 0.00279999345239732,
+   "mixed_mismatch": 0.5235987755982988,
+   "D_exact": 2081,
+   "d_core_lower": 9921875040.0,
+   "C_lower": 23012039.844434932,
+   "d_lower": 952500003888.0,
+   "c": 187,
+   "ratio_c_over_d_lower": 1.9632545851620641e-10
+  },
+  {
+   "p": 7,
+   "q": 114,
+   "N": 456,
+   "eps": 0.0031013455315199454,
+   "eta": 9.607797675938077e-06,
+   "payload_mismatch": 0.001145730362359516,
+   "mixed_mismatch": 0.5235987755982988,
+   "D_exact": 4257,
+   "d_core_lower": 20296694880.0,
+   "C_lower": 22729948.05696632,
+   "d_lower": 1948482708528.0,
+   "c": 457,
+   "ratio_c_over_d_lower": 2.345414706529498e-10
+  },
+  {
+   "p": 11,
+   "q": 266,
+   "N": 1596,
+   "eps": 0.0010852448668977929,
+   "eta": 1.177387449818131e-06,
+   "payload_mismatch": 0.00032786397971089473,
+   "mixed_mismatch": 0.5235987755982988,
+   "D_exact": 12017,
+   "d_core_lower": 57295133280.0,
+   "C_lower": 23786694.60935651,
+   "d_lower": 5500332794928.0,
+   "c": 1597,
+   "ratio_c_over_d_lower": 2.903460680547612e-10
+  },
+  {
+   "p": 101,
+   "q": 20606,
+   "N": 1050906,
+   "eps": 4.805141914863022e-06,
+   "eta": 2.3089377836505297e-11,
+   "payload_mismatch": 4.982351203277729e-07,
+   "mixed_mismatch": 0.5235987755982988,
+   "D_exact": 1751597,
+   "d_core_lower": 8351334240480.0,
+   "C_lower": 26436137.836223923,
+   "d_lower": 801728087086128.0,
+   "c": 1050907,
+   "ratio_c_over_d_lower": 1.3108022743964354e-09
+  },
+  {
+   "p": 1009,
+   "q": 2038182,
+   "N": 1029281910,
+   "eps": 1.543818892345121e-08,
+   "eta": 2.3833767712039305e-16,
+   "payload_mismatch": 5.087029802064585e-10,
+   "mixed_mismatch": 0.5235987755982988,
+   "D_exact": 246620145,
+   "d_core_lower": 1175845392136800.0,
+   "C_lower": 26272272.435527727,
+   "d_lower": 1.1288115764513285e+17,
+   "c": 1029281911,
+   "ratio_c_over_d_lower": 9.118279192668964e-09
+  },
+  {
+   "p": 10007,
+   "q": 200300114,
+   "N": 1002301770456,
+   "eps": 4.990512585729791e-11,
+   "eta": 2.4905215868315022e-21,
+   "payload_mismatch": 5.22396339138026e-13,
+   "mixed_mismatch": 0.5235987755982988,
+   "D_exact": 32248318517,
+   "d_core_lower": 1.5375482295809328e+17,
+   "C_lower": 26860987.84276696,
+   "d_lower": 1.4760463003976954e+19,
+   "c": 1002301770457,
+   "ratio_c_over_d_lower": 6.790449392996324e-08
+  }
+ ],
+ "first_violation": [
+  {
+   "extra_factor": 1.0,
+   "p_first_approx": 425672835072,
+   "N_plus_1": 7.713079501106806e+34,
+   "d": 7.713078053829112e+34,
+   "C_implied": 27971135.84663775
+  },
+  {
+   "extra_factor": 100.0,
+   "p_first_approx": 50256855171072,
+   "N_plus_1": 1.2693632691579276e+41,
+   "d": 1.2693630848014826e+41,
+   "C_implied": 2813693145.1472545
+  },
+  {
+   "extra_factor": 10000.0,
+   "p_first_approx": 5794645321711616,
+   "N_plus_1": 1.9457210461648848e+47,
+   "d": 1.945719938324854e+47,
+   "C_implied": 282780805354.4013
+  },
+  {
+   "extra_factor": 1000000.0,
+   "p_first_approx": 652698689550155776,
+   "N_plus_1": 2.7805981036348864e+53,
+   "d": 2.7805961230451933e+53,
+   "C_implied": 28244561378669.363
+  }
+ ],
+ "orders": {
+  "circuit_sites_p2_actual": 81342,
+  "cell_length_lower_order": "n >= 32 A with A = L^2 w, L = N+4q ~ p^3: n >~ 32 p^6 log p; dispatcher layer fits in 2,310,035 A^3 ~ p^18 log^3 p sites",
+  "history_length": "C_n = (2n+4) 2^n + n - 4",
+  "clock_gap": ">= J/(4 C_n^2) ~ 4^-n / n^2",
+  "fail_acceptance": "a_n >= eta_F / C_n ; B_n = eta_F n",
+  "core_gap": "Delta_n >= a_n gamma_n/(a_n+B_n+gamma_n) ~ 8^-n / n^4",
+  "wrapper_cell_gap": "tagged-vacancy bound ~ Delta_n / poly(n)",
+  "compensator_norm": "||E_L|| <= (1/r1+1/r2)/sin^2(1/(2b)) ~ 8 b^2",
+  "normalised_link_norm_B_p": "~ ||E_L|| ||E_R|| 4uN/(p_L p_R) ~ 256 b^4 p^5/(p_L p_R)",
+  "coupling_condition": "s << Delta_base * eps_p /(C_p B_p^2): doubly exponentially small in p",
+  "payload_RG_condition": "N g log(1/delta_pay) << 1 with g ~ s B_p^2/Delta_base, i.e. g << 1/(p^3 log p)"
+ }
+}

@@ -1,0 +1,152 @@
+{
+  "exclusion": {
+    "cases": 36,
+    "maximum_N": 9,
+    "minimum_gap_times_N_squared": 8.0,
+    "comparison_matrix_negativity": 1.147872660009327e-13
+  },
+  "wrappers": [
+    {
+      "k": 3,
+      "lengths": [
+        {
+          "length": 4,
+          "sectors": [
+            {
+              "occupied": 2,
+              "dimension": 24,
+              "gap_or_rejection_energy": 0.05539417601365505,
+              "lower_bound": 4.699315757197486e-05
+            },
+            {
+              "occupied": 3,
+              "dimension": 32,
+              "gap_or_rejection_energy": 0.4310478542952811,
+              "lower_bound": 0.0007598784194528876
+            },
+            {
+              "occupied": 4,
+              "dimension": 16,
+              "gap_or_rejection_energy": 0.04850055165222525,
+              "lower_bound": 0.004608794751140852
+            }
+          ],
+          "complete_legal_dimension": 315,
+          "ground_energy": -4.000000000000002,
+          "complete_gap": 0.048500551652210344,
+          "complete_gap_lower_bound": 4.699315757197486e-05
+        },
+        {
+          "length": 5,
+          "sectors": [
+            {
+              "occupied": 2,
+              "dimension": 40,
+              "gap_or_rejection_energy": 0.04466521250817369,
+              "lower_bound": 2.4242113568403087e-05
+            },
+            {
+              "occupied": 3,
+              "dimension": 80,
+              "gap_or_rejection_energy": 0.36631468096549663,
+              "lower_bound": 0.0003921568627450981
+            },
+            {
+              "occupied": 4,
+              "dimension": 80,
+              "gap_or_rejection_energy": 0.03814037610602499,
+              "lower_bound": 2.924079765252285e-05
+            },
+            {
+              "occupied": 5,
+              "dimension": 32,
+              "gap_or_rejection_energy": 0.147227353827731,
+              "lower_bound": 0.004608794751140852
+            }
+          ],
+          "complete_legal_dimension": 961,
+          "ground_energy": -3.999999999999998,
+          "complete_gap": 0.038140376106019946,
+          "complete_gap_lower_bound": 2.4242113568403087e-05
+        }
+      ]
+    },
+    {
+      "k": 4,
+      "lengths": [
+        {
+          "length": 5,
+          "sectors": [
+            {
+              "occupied": 2,
+              "dimension": 40,
+              "gap_or_rejection_energy": 0.10252001574357109,
+              "lower_bound": 1.3186777531787355e-05
+            },
+            {
+              "occupied": 3,
+              "dimension": 80,
+              "gap_or_rejection_energy": 0.02711974299055117,
+              "lower_bound": 1.4883453985790682e-05
+            },
+            {
+              "occupied": 4,
+              "dimension": 80,
+              "gap_or_rejection_energy": 0.24887854580265525,
+              "lower_bound": 0.00022547914317925594
+            },
+            {
+              "occupied": 5,
+              "dimension": 32,
+              "gap_or_rejection_energy": 0.02715716784704658,
+              "lower_bound": 0.0025063139861636065
+            }
+          ],
+          "complete_legal_dimension": 961,
+          "ground_energy": -3.999999999999999,
+          "complete_gap": 0.027119742990541873,
+          "complete_gap_lower_bound": 1.3186777531787355e-05
+        },
+        {
+          "length": 6,
+          "sectors": [
+            {
+              "occupied": 2,
+              "dimension": 60,
+              "gap_or_rejection_energy": 0.08269544817721157,
+              "lower_bound": 7.662454506285315e-06
+            },
+            {
+              "occupied": 3,
+              "dimension": 160,
+              "gap_or_rejection_energy": 0.02209051990503637,
+              "lower_bound": 8.639773940200401e-06
+            },
+            {
+              "occupied": 4,
+              "dimension": 240,
+              "gap_or_rejection_energy": 0.21245508541226427,
+              "lower_bound": 0.00013092432573972245
+            },
+            {
+              "occupied": 5,
+              "dimension": 192,
+              "gap_or_rejection_energy": 0.021992110442428173,
+              "lower_bound": 9.621527886508596e-06
+            },
+            {
+              "occupied": 6,
+              "dimension": 64,
+              "gap_or_rejection_energy": 0.08812890667719425,
+              "lower_bound": 0.0025063139861636065
+            }
+          ],
+          "complete_legal_dimension": 2903,
+          "ground_energy": -4.000000000000042,
+          "complete_gap": 0.021992110442466295,
+          "complete_gap_lower_bound": 7.662454506285315e-06
+        }
+      ]
+    }
+  ]
+}

@@ -81,6 +81,24 @@ def actual_columns(H):
                 charge_marker_and_legality_failures=0)
 
 
+def charge_form_identity(H):
+    error=0.;columns=0
+    for side,f,record,A,B,raising in product(('L','R'),range(H.m),range(H.q+1),range(2),range(2),(True,False)):
+        tag=0 if side=='L' else 2
+        c=H.core.encode(Site('D0',side,0,0,1,record,0))
+        s=PhysicalSite(0,H.occupied(tag,c,0),A,B)
+        coeff=(.5,(-.5j if raising else .5j)) if side=='L' else ((-.5j if raising else .5j),-.5)
+        combined={}
+        for u in range(2):
+            for row,v in H.port(s,side,f,u).items():combined[row]=combined.get(row,0)+coeff[u]*v
+        direct=H.charge_port(s,side,f,raising)
+        for row in combined.keys()|direct.keys():
+            error=max(error,abs(combined.get(row,0)-direct.get(row,0))/(1+abs(direct.get(row,0))))
+        columns+=1
+    assert error<1e-13
+    return dict(columns=columns,max_relative_error=float(error))
+
+
 def history_compression(H):
     m=H.m;D=2**m;assert H.q==4
     bits=list(product(range(2),repeat=m));cs=[H.core.M.initialize(H.q,x) for x in bits]
@@ -151,6 +169,7 @@ if __name__=='__main__':
     H=PeriodicBond()
     out=dict(parameters=H.report(),wrapper=small_wrapper_comparison(H),
              columns=actual_columns(H),compression=history_compression(H),
+             charge_form_identity=charge_form_identity(H),
              scope='Finite local matrix and projection checks, no CFT estimate.')
     with open('periodic_bond_checks.json','w') as f:
         json.dump(out,f,indent=2);f.write('\n')

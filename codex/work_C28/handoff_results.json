@@ -1,0 +1,21 @@
+{
+  "quartic_min_nonzero_mismatch": 0.1026788366675693,
+  "resonant_pair_differences": 1,
+  "full_in_g_pair": [
+    {
+      "g": 0.2,
+      "pair_over_g4": [
+        -6.572725433278107e-07,
+        8.160973213840843e-08
+      ]
+    },
+    {
+      "g": 0.1,
+      "pair_over_g4": [
+        -6.480985879081468e-07,
+        8.070882904303287e-08
+      ]
+    }
+  ],
+  "full_g002_minus_through_g4_norm": 1.2120140970496799e-11
+}

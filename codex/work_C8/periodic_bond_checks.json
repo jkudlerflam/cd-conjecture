@@ -16,17 +16,21 @@
     "filter_scale": 4957.7496649787645,
     "vacancy_hop": 0.1,
     "endpoint_occupations": [
-      0.5050000341054943,
-      0.5000126259437893
+      0.5050000341054942,
+      0.5000126259437894
     ],
     "two_site_occupations": [
-      0.5000500247435559,
-      0.5000000003188289
+      0.5000500247435558,
+      0.500000000318829
     ],
-    "marker_visibility": 0.2331004452746574,
-    "marker_coefficient": 4.289996095124232,
+    "marker_visibility": 0.2331004452746586,
+    "marker_coefficient": 4.28999609512421,
     "marker_field": 2.62203354475281,
-    "payload_energy_per_cell": -1.9854137723852285
+    "payload_energy_per_cell": -1.9854137723852285,
+    "charge_ground_residuals": [
+      3.289577413551966e-15,
+      4.184143127806545e-15
+    ]
   },
   "wrapper": {
     "core_dimension": 2,
@@ -52,8 +56,12 @@
     "logical_dimension": 4,
     "two_cell_dimension": 16,
     "max_two_cell_Fock_matrix_error": 0.0,
-    "max_compensation_error": 6.580345664242157e-14,
+    "max_compensation_error": 6.558242877492115e-14,
     "selected_reference_length_density": 0.4999999999999999
+  },
+  "charge_form_identity": {
+    "columns": 160,
+    "max_relative_error": 0.0
   },
   "scope": "Finite local matrix and projection checks, no CFT estimate."
 }

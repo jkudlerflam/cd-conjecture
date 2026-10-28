@@ -1,0 +1,63 @@
+{
+ "query_signatures": {
+  "q": 3,
+  "m": 2,
+  "alphabet": 22,
+  "signature_classes": 7,
+  "aliased_classes": [
+   [
+    "('bit', 0)",
+    "('bit', 1)"
+   ],
+   [
+    "('H', 0, 0)",
+    "('H', 0, 1)",
+    "('H', 1, 0)",
+    "('H', 1, 1)"
+   ],
+   [
+    "('T', 0, 0, 0)",
+    "('T', 0, 0, 1)",
+    "('T', 0, 0, 2)",
+    "('T', 0, 1, 0)",
+    "('T', 0, 1, 1)",
+    "('T', 0, 1, 2)",
+    "('T', 1, 0, 0)",
+    "('T', 1, 0, 1)",
+    "('T', 1, 0, 2)",
+    "('T', 1, 1, 0)",
+    "('T', 1, 1, 1)",
+    "('T', 1, 1, 2)"
+   ]
+  ],
+  "accepted_words": {
+   "original_neutral_bit0": 8,
+   "repaired_blank": 4
+  },
+  "intended": 4
+ },
+ "tiny_history": {
+  "initialized_kernel_dim": 9,
+  "all_time": {
+   "kernel_dim": 4,
+   "gap": 0.004265823704964728
+  },
+  "terminal_only": {
+   "kernel_dim": 9,
+   "gap": 0.00426582370496385
+  },
+  "acceptance_bound": {
+   "gamma": 0.004265823704961967,
+   "a": 0.6470588235294118,
+   "B": 1.0,
+   "bound": 0.0016715301092001468,
+   "holds": true
+  },
+  "readout": {
+   "active_times": 3,
+   "C": 17,
+   "err": 2.8609792490763984e-17,
+   "kernel_spans_valid_histories": 1.5180364385274786e-13
+  }
+ }
+}

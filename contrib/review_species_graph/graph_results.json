@@ -1,0 +1,99 @@
+{
+ "p=2": {
+  "p": 2,
+  "u": 7,
+  "v": 7,
+  "q": 14,
+  "N": 21,
+  "expected_N": 21,
+  "degrees": [
+   3
+  ],
+  "two_points_one_line": true,
+  "two_lines_one_point": true,
+  "girth": 6,
+  "connected": true,
+  "rank_W": 13,
+  "kernel_rank": 8,
+  "expected_kernel_rank": 8,
+  "monomials": {
+   "1": {
+    "multisets": 42,
+    "neutral": 0,
+    "neutral_flavour_changing": 0
+   },
+   "2": {
+    "multisets": 903,
+    "neutral": 21,
+    "neutral_flavour_changing": 0
+   },
+   "3": {
+    "multisets": 13244,
+    "neutral": 0,
+    "neutral_flavour_changing": 0
+   },
+   "4": {
+    "multisets": 148995,
+    "neutral": 231,
+    "neutral_flavour_changing": 0
+   },
+   "5": {
+    "multisets": 1370754,
+    "neutral": 0,
+    "neutral_flavour_changing": 0
+   },
+   "6": {
+    "multisets": 10737573,
+    "neutral": 1827,
+    "neutral_flavour_changing": 56
+   }
+  },
+  "flavour_changing_neutral_with_at_most_4_fields": 0,
+  "hexagons": 28,
+  "seconds": 20.1,
+  "six_field_conversions_expected": 56
+ },
+ "p=3": {
+  "p": 3,
+  "u": 13,
+  "v": 13,
+  "q": 26,
+  "N": 52,
+  "expected_N": 52,
+  "degrees": [
+   4
+  ],
+  "two_points_one_line": true,
+  "two_lines_one_point": true,
+  "girth": 6,
+  "connected": true,
+  "rank_W": 25,
+  "kernel_rank": 27,
+  "expected_kernel_rank": 27,
+  "monomials": {
+   "1": {
+    "multisets": 104,
+    "neutral": 0,
+    "neutral_flavour_changing": 0
+   },
+   "2": {
+    "multisets": 5460,
+    "neutral": 52,
+    "neutral_flavour_changing": 0
+   },
+   "3": {
+    "multisets": 192920,
+    "neutral": 0,
+    "neutral_flavour_changing": 0
+   },
+   "4": {
+    "multisets": 5160610,
+    "neutral": 1378,
+    "neutral_flavour_changing": 0
+   }
+  },
+  "flavour_changing_neutral_with_at_most_4_fields": 0,
+  "hexagons": 234,
+  "seconds": 8.3
+ }
+}

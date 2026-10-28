@@ -1,0 +1,27 @@
+{
+  "n": 2,
+  "cells": 2,
+  "lambda_": 0.08,
+  "g": 0.2,
+  "dimension": 2304,
+  "cell_dimension": 48,
+  "sector_dimensions": [
+    252,
+    504,
+    630,
+    504,
+    252
+  ],
+  "full_error": 3.6118946263236264e-07,
+  "traceless_error": 2.2645493590472156e-11,
+  "eigenpair_residual": 8.725817427052153e-14,
+  "overlap_min": 0.9999813077714074,
+  "next_gap": 0.999318898903936,
+  "bandwidth": 3.657687863044745e-08,
+  "physical_field_coefficients": [
+    1.4239592836207585e-06,
+    1.4239592836207702e-06
+  ],
+  "elapsed_seconds": 1.530439916998148,
+  "charge_commutator": 0.0
+}

@@ -1,0 +1,23 @@
+{
+  "status": "proved by rational alternating-series bounds",
+  "point_intervals": [
+    [
+      2.142192653589793,
+      2.142392653589793
+    ],
+    [
+      -0.49409265358979326,
+      -0.49389265358979323
+    ],
+    [
+      -0.3737,
+      -0.3735
+    ],
+    [
+      2.0528,
+      2.053
+    ]
+  ],
+  "bilinear_lower_bound": "0.088",
+  "distinct_pair_sum_lower_bound": "0.030"
+}

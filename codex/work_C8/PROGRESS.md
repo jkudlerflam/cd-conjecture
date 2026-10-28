@@ -18,6 +18,30 @@ bounds; (iii) examine which massive-sector estimates actually follow from
 the local defect bounds. Neither a conclusive result nor an all-order
 elimination theorem is currently claimed.
 
+Substantive step 41. periodic_clean_bond.py now implements the complete
+periodic matrix, including all illegal sectors, all wrapper/filter/helix
+terms, marker hopping, the two physical ports and colored fields. Its
+q=4 dimension is 214272048, but individual columns remain sparse. Checks
+pass on 3232 base and perturbation columns separately, with exact charge,
+marker number and selector-legality preservation. A separate dense wrapper
+implementation agrees on all 225 columns of a two-state payload fixture.
+Actual q=4 history readouts reproduce the 16-dimensional two-cell fermion
+Hamiltonian with zero matrix discrepancy. No microscopic CFT measurement.
+The first assembly left charge-violating roundoff entries from cancellation
+of Hermitian components; direct charge-definite assembly removes them.
+
+Substantive step 42. rational_target.py supplies exact integer Sidon
+momenta for the total-U(1) core. All pair sums are unique, so the finite
+quadratic/quartic detuning margin is at least pi/(8 A), A=O(m^3).
+Payload velocities exceed 2 sin(pi/64), independent of m. Mixed low-shell
+margins exceed 7pi/8 at length density 1/2. Integer checks pass through
+m=256 (512 branches and 131328 unordered pair sums). This replaces the
+exponentially slow geometric target, conditional on the same IR inputs.
+
+Active next steps: prove polynomial bounds on all visibility and wrapper
+normalizations; then isolate what is missing in the connected massive
+excursion argument. The original task remains nonconclusive.
+
 The previous completed handoff follows and remains the source for all
 unchanged core proofs and checks.
 
