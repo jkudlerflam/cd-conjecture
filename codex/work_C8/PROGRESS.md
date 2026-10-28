@@ -72,6 +72,23 @@ occupation bounds. Next: audit the thermodynamic meaning of these
 results, and test whether local defect observables really have fast
 correlations after coupling to a critical retained sector.
 
+Substantive step 51. massive_source_tails.md supplies an exactly
+onsite-dressed XX chain with independent gapped ancillas. A bare
+ancillary X source has connected correlation
+cos^2(theta) exp(-Delta tau)+sin^2(theta) C_Z(tau), with
+C_Z(tau)~1/(pi J tau)^2. Thus even ordinary connected local source
+correlations need not be fast. Subtracting the retained operator
+component, using the known dressed projector, restores the exponential.
+This narrows the required kernel definition; it does not rule out
+local integration. Literal 256-dimensional ED and independent spectral
+sums pass below 1.5e-15; endpoint quadrature confirms the power tail.
+
+The all-order elimination route remains open. Single-step dressing,
+energy-density bounds, small defect occupation, and ordinary connected
+source correlations are now explicitly distinguished. A convergent
+irreducible action after the retained-operator subtractions is still
+missing. No original conjecture conclusion has been reached.
+
 # C8 progress
 
 2026-10-28. Ninth run completed. Nonconclusive for the original c-d
