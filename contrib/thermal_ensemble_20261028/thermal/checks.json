@@ -1,0 +1,105 @@
+{
+  "scope": "Exact quadratic memory and abstract scalar RG checks only",
+  "quadratic": {
+    "parameters": {
+      "Delta": 3.0,
+      "eta": 0.8,
+      "mu": 0.2
+    },
+    "k_F": 1.7789631700963175,
+    "frequency_residue_Z": 1.0711111111111111,
+    "velocity_formula": 1.8269092733784318,
+    "velocity_full_matrix_difference": 1.8269092731879668,
+    "coefficient_formula": 0.28660360053350004,
+    "incorrect_coefficient_if_Z_dropped": 0.2675759756018154,
+    "temperature_results": [
+      {
+        "T": 0.08,
+        "minus_f_minus_e_over_T2": 0.28747213874101424,
+        "absolute_coefficient_error": 0.0008685382075142023,
+        "auxiliary_abs_free_energy": 4.140444004641495e-18,
+        "auxiliary_bound": 4.140444004641495e-18
+      },
+      {
+        "T": 0.04,
+        "minus_f_minus_e_over_T2": 0.28681591747958707,
+        "absolute_coefficient_error": 0.00021231694608703222,
+        "auxiliary_abs_free_energy": 1.0714547847232312e-34,
+        "auxiliary_bound": 1.0714547847232312e-34
+      },
+      {
+        "T": 0.02,
+        "minus_f_minus_e_over_T2": 0.28665640418571925,
+        "absolute_coefficient_error": 5.280365221921324e-05,
+        "auxiliary_abs_free_energy": 1.4350191946328821e-67,
+        "auxiliary_bound": 1.4350191946328821e-67
+      },
+      {
+        "T": 0.01,
+        "minus_f_minus_e_over_T2": 0.2866167845447051,
+        "absolute_coefficient_error": 1.3184011205091828e-05,
+        "auxiliary_abs_free_energy": 5.1482002224120135e-133,
+        "auxiliary_bound": 5.1482002224120135e-133
+      },
+      {
+        "T": 0.005,
+        "minus_f_minus_e_over_T2": 0.2866068954847884,
+        "absolute_coefficient_error": 3.2949512883684307e-06,
+        "auxiliary_abs_free_energy": 1.3251982765021554e-263,
+        "auxiliary_bound": 1.3251982765021554e-263
+      },
+      {
+        "T": 0.0025,
+        "minus_f_minus_e_over_T2": 0.2866044242056744,
+        "absolute_coefficient_error": 8.236721743548614e-07,
+        "auxiliary_abs_free_energy": 0.0,
+        "auxiliary_bound": 0.0
+      }
+    ]
+  },
+  "thermal_criterion": {
+    "gamma": 2.0,
+    "theta": 0.25,
+    "thermal_power_p": 4.0,
+    "modulus_results": [
+      {
+        "minus_log2_T": 4,
+        "power_error_over_T2": 0.7098903196878387,
+        "power_bound_over_T2": 0.71154299937042,
+        "logarithmic_error_over_T2": 0.3855793898496191
+      },
+      {
+        "minus_log2_T": 8,
+        "power_error_over_T2": 0.3557650439052,
+        "power_bound_over_T2": 0.35577149968521,
+        "logarithmic_error_over_T2": 0.21262452079900818
+      },
+      {
+        "minus_log2_T": 16,
+        "power_error_over_T2": 0.08894287482279513,
+        "power_bound_over_T2": 0.0889428749213025,
+        "logarithmic_error_over_T2": 0.11262037124879444
+      },
+      {
+        "minus_log2_T": 32,
+        "power_error_over_T2": 0.005558929682581406,
+        "power_bound_over_T2": 0.005558929682581406,
+        "logarithmic_error_over_T2": 0.05812303324164834
+      },
+      {
+        "minus_log2_T": 64,
+        "power_error_over_T2": 2.1714569072583618e-05,
+        "power_bound_over_T2": 2.1714569072583618e-05,
+        "logarithmic_error_over_T2": 0.029547217526083396
+      },
+      {
+        "minus_log2_T": 128,
+        "power_error_over_T2": 3.3133802906163967e-10,
+        "power_bound_over_T2": 3.3133802906163967e-10,
+        "logarithmic_error_over_T2": 0.014899348337371797
+      }
+    ],
+    "causal_relevant_amplification": 2.05,
+    "max_recurrence_to_proved_bound_ratio": 1.0
+  }
+}

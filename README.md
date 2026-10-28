@@ -84,6 +84,13 @@ A d=24 conditional counterexample candidate is recorded with independent AI revi
 
 The [direct-attack continuation](contrib/direct_attack_20261028/README.md) supplies ultraviolet matching bounds, an exact exclusion of a hidden free-fermion qubit mechanism, and an independently AI-audited thermal massive-matching theorem allowing infinite excited cell spaces. Its explicit hypotheses still need a complete microscopic and physical-ensemble application; the retarded multichannel RG and central-charge conclusion remain open.
 
+The [physical-ensemble continuation](contrib/thermal_ensemble_20261028/README.md)
+proves interacting physical-to-rooted pressure transfer, an all-length
+pressure-zero theorem and a length-tilted thermal reference comparison.
+The parallel [frozen-chain continuation](contrib/decisive_attack_20261028/README.md)
+controls the frozen-defect pressure while retaining the incompatible-ring
+qualification. The logical infrared conclusion remains open in both.
+
 **Reversible digit compiler (2026-10-28):**
 [digit_compiler](contrib/digit_compiler/README.md) gives fixed tables for all
 generator arithmetic and selected-array operations, then compiles them to

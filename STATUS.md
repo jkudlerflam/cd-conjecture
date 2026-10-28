@@ -118,6 +118,22 @@ The arbitrary-degree retarded multichannel RG and central-charge inference
 are still open. This strengthens the analytic case for pursuing C44/C45;
 it is not a completed counterexample.
 
+[proved ensemble comparisons; infrared conclusion open] The
+[physical-ensemble campaign](contrib/thermal_ensemble_20261028/README.md)
+extends pressure transfer to arbitrary length-dependent interacting bonds
+by pinning a marker and controlling the root seam. A length-fugacity
+pressure-zero theorem and a tilted C46 thermal comparison control the
+all-length reference at fixed physical length. The full microscopic
+sector application and retarded logical RG/current or thermal-pressure
+conclusion remain open; no central-charge violation is asserted.
+
+[proved pressure bound; conformal interpretation conditional] The parallel
+[frozen-chain campaign](contrib/decisive_attack_20261028/README.md) bounds
+the full frozen-defect thermal contribution exponentially, strengthening
+the d=23 bulk route. Its selected-cell RG/CFT limit remains open, and the
+pressure result does not remove forced defects or translation degeneracy
+on incompatible ring lengths.
+
 ## Parallel sparse first-order continuation
 
 **Reversible single-head compilation, 2026-10-28:**

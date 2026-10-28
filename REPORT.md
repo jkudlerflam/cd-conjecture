@@ -1039,3 +1039,20 @@ a candidate heat bound for its specified rooted space. The complete
 physical-ensemble application and retarded multichannel RG/CFT limit
 remain open; no violating microscopic central charge is asserted.
 - **Route A end to end at two flavours** (`contrib/routeA_demonstrator_n2/`, Claude agent). A 13-letter bond (P: a port qutrit with its partner; B: two logical modes) with both flavour numbers exactly conserved, so pair tunnelling and inter-flavour hopping are forbidden at every order, and fillings near 0.49 and 0.41. Exact diagonalization shows period-3 cells winning by at least 0.022 per site, an exactly fourfold code with vanishing port compressions, independent second-order hopping of the two flavours (no inter-flavour term to 3 × 10⁻¹⁵, residual scaling as λ³), and a scalar bond at κ = 0 (the C18 obstruction). On the full microscopic chain, finite-entanglement scaling gives c = 1.98 ± 0.08 at λ = 0.15 (correlation lengths up to about 5 cells; calibrations 2.08, 2.00, 1.98, and 0.95 for a c = 1 control), block entropies against c = 2 and c = 1 chains at the same ξ give about 2.1 ± 0.15, and three-cell rings match the effective chain to 0.3 to 1.4%. The n = 1 demonstrator's scaling now reaches ξ ≈ 50 cells with c = 1.02, 1.01, 1.00 ± 0.02. This two-flavour design does not extend to n flavours at fixed d (each flavour needs its own port charge); it tests the mechanism at n = 2, not the all-n construction.
+
+[proved abstract ensemble and thermal comparisons; independently AI-checked]
+The physical-ensemble continuation in `contrib/thermal_ensemble_20261028/`
+proves a rank-q pinned-site trace comparison, exact all-word rooted-cell
+pressure transfer for interacting length-dependent bonds, and a
+length-fugacity pressure-zero theorem. Orthogonal prefix-length subspaces
+give an actual selected fixed-length renewal pressure limit. A tilted
+C46 comparison makes the full-reference auxiliary contribution
+exponentially small in physical pressure, conditional on the stated
+all-sector cell decomposition. Uniform tilted embedding and invalid-state
+bounds, a scalar thermal modulus criterion, and an exact retarded
+quadratic control supply further inputs. All accompanying finite checks
+pass. The parallel `contrib/decisive_attack_20261028/` frozen-defect
+pressure theorem strengthens the d=23 bulk route while retaining forced
+defects on incompatible rings. Neither campaign establishes the selected
+interacting RG/current/stress or thermal coefficient. The conjecture
+remains open.

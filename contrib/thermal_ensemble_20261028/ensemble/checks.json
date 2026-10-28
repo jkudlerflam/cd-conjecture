@@ -1,0 +1,359 @@
+{
+  "status": "all checks passed",
+  "cases": 13,
+  "thermal_checks": 39,
+  "scope": "Generic complex marker-conserving bonds; no CFT inference",
+  "results": [
+    {
+      "d": 2,
+      "marker_rank": 1,
+      "length": 3,
+      "physical_dimension": 8,
+      "pinned_dimension": 4,
+      "root_hermiticity_error": 0.0,
+      "root_seam_entries": 4,
+      "root_seam_norm": 0.45346925507503033,
+      "trace_checks": [
+        {
+          "beta": 0.2,
+          "pin_log_residual": -0.05857609990769641,
+          "rooted_log_residual": -0.061929950022227565
+        },
+        {
+          "beta": 1.7,
+          "pin_log_residual": -0.254440662256198,
+          "rooted_log_residual": -0.1756809602225261
+        },
+        {
+          "beta": 5.0,
+          "pin_log_residual": -0.2749104670401631,
+          "rooted_log_residual": -0.13871787724965656
+        }
+      ]
+    },
+    {
+      "d": 2,
+      "marker_rank": 1,
+      "length": 4,
+      "physical_dimension": 16,
+      "pinned_dimension": 8,
+      "root_hermiticity_error": 0.0,
+      "root_seam_entries": 8,
+      "root_seam_norm": 0.6413023706463324,
+      "trace_checks": [
+        {
+          "beta": 0.2,
+          "pin_log_residual": -0.058497979015709745,
+          "rooted_log_residual": -0.06026039304715647
+        },
+        {
+          "beta": 1.7,
+          "pin_log_residual": -0.20965374349337107,
+          "rooted_log_residual": -0.2309029656110967
+        },
+        {
+          "beta": 5.0,
+          "pin_log_residual": 0.05443980728901032,
+          "rooted_log_residual": -0.09302509708880258
+        }
+      ]
+    },
+    {
+      "d": 2,
+      "marker_rank": 1,
+      "length": 5,
+      "physical_dimension": 32,
+      "pinned_dimension": 16,
+      "root_hermiticity_error": 0.0,
+      "root_seam_entries": 16,
+      "root_seam_norm": 0.7337286675644947,
+      "trace_checks": [
+        {
+          "beta": 0.2,
+          "pin_log_residual": -0.05850490785028384,
+          "rooted_log_residual": -0.06045847358151313
+        },
+        {
+          "beta": 1.7,
+          "pin_log_residual": -0.22389059402872646,
+          "rooted_log_residual": -0.31564703233515246
+        },
+        {
+          "beta": 5.0,
+          "pin_log_residual": -0.050275931172762856,
+          "rooted_log_residual": -0.48965704349824246
+        }
+      ]
+    },
+    {
+      "d": 2,
+      "marker_rank": 1,
+      "length": 6,
+      "physical_dimension": 64,
+      "pinned_dimension": 32,
+      "root_hermiticity_error": 0.0,
+      "root_seam_entries": 32,
+      "root_seam_norm": 0.7854317894603635,
+      "trace_checks": [
+        {
+          "beta": 0.2,
+          "pin_log_residual": -0.05850514917440053,
+          "rooted_log_residual": -0.06101161238637498
+        },
+        {
+          "beta": 1.7,
+          "pin_log_residual": -0.22973509062050457,
+          "rooted_log_residual": -0.3612895901294383
+        },
+        {
+          "beta": 5.0,
+          "pin_log_residual": -0.17940965365549022,
+          "rooted_log_residual": -0.682913215501788
+        }
+      ]
+    },
+    {
+      "d": 2,
+      "marker_rank": 1,
+      "length": 7,
+      "physical_dimension": 128,
+      "pinned_dimension": 64,
+      "root_hermiticity_error": 0.0,
+      "root_seam_entries": 64,
+      "root_seam_norm": 0.8171233627470077,
+      "trace_checks": [
+        {
+          "beta": 0.2,
+          "pin_log_residual": -0.05850513793702772,
+          "rooted_log_residual": -0.06149749007286942
+        },
+        {
+          "beta": 1.7,
+          "pin_log_residual": -0.2287355386251554,
+          "rooted_log_residual": -0.3735474114028289
+        },
+        {
+          "beta": 5.0,
+          "pin_log_residual": -0.1607214202220567,
+          "rooted_log_residual": -0.599454401308165
+        }
+      ]
+    },
+    {
+      "d": 3,
+      "marker_rank": 1,
+      "length": 3,
+      "physical_dimension": 27,
+      "pinned_dimension": 9,
+      "root_hermiticity_error": 8.993834424997155e-17,
+      "root_seam_entries": 24,
+      "root_seam_norm": 1.1549644947896667,
+      "trace_checks": [
+        {
+          "beta": 0.2,
+          "pin_log_residual": 0.0120861187217709,
+          "rooted_log_residual": 0.024947233112613043
+        },
+        {
+          "beta": 1.7,
+          "pin_log_residual": 0.3771429889529305,
+          "rooted_log_residual": -0.0036933157428220564
+        },
+        {
+          "beta": 5.0,
+          "pin_log_residual": 1.916622285630072,
+          "rooted_log_residual": 0.26315220178319465
+        }
+      ]
+    },
+    {
+      "d": 3,
+      "marker_rank": 1,
+      "length": 4,
+      "physical_dimension": 81,
+      "pinned_dimension": 27,
+      "root_hermiticity_error": 8.092071311423672e-17,
+      "root_seam_entries": 72,
+      "root_seam_norm": 1.1691159393269364,
+      "trace_checks": [
+        {
+          "beta": 0.2,
+          "pin_log_residual": 0.0125313302108776,
+          "rooted_log_residual": 0.01025861775760295
+        },
+        {
+          "beta": 1.7,
+          "pin_log_residual": 0.5193938576289174,
+          "rooted_log_residual": -0.037524063922549145
+        },
+        {
+          "beta": 5.0,
+          "pin_log_residual": 2.0612302036222134,
+          "rooted_log_residual": -0.6172031560380773
+        }
+      ]
+    },
+    {
+      "d": 3,
+      "marker_rank": 1,
+      "length": 5,
+      "physical_dimension": 243,
+      "pinned_dimension": 81,
+      "root_hermiticity_error": 8.092071311423672e-17,
+      "root_seam_entries": 216,
+      "root_seam_norm": 1.1802416018211512,
+      "trace_checks": [
+        {
+          "beta": 0.2,
+          "pin_log_residual": 0.012506192507625302,
+          "rooted_log_residual": 0.006895931322926652
+        },
+        {
+          "beta": 1.7,
+          "pin_log_residual": 0.47816642418947297,
+          "rooted_log_residual": 0.028047315644779802
+        },
+        {
+          "beta": 5.0,
+          "pin_log_residual": 2.084182263903979,
+          "rooted_log_residual": -0.01037381753136013
+        }
+      ]
+    },
+    {
+      "d": 3,
+      "marker_rank": 2,
+      "length": 3,
+      "physical_dimension": 27,
+      "pinned_dimension": 18,
+      "root_hermiticity_error": 0.0,
+      "root_seam_entries": 24,
+      "root_seam_norm": 1.1524238794810377,
+      "trace_checks": [
+        {
+          "beta": 0.2,
+          "pin_log_residual": 0.00738776976272848,
+          "rooted_log_residual": 0.006876639731323797
+        },
+        {
+          "beta": 1.7,
+          "pin_log_residual": 0.17894657110305734,
+          "rooted_log_residual": -0.010431435307145298
+        },
+        {
+          "beta": 5.0,
+          "pin_log_residual": 0.6596190854749262,
+          "rooted_log_residual": -0.15986288644583868
+        }
+      ]
+    },
+    {
+      "d": 3,
+      "marker_rank": 2,
+      "length": 4,
+      "physical_dimension": 81,
+      "pinned_dimension": 54,
+      "root_hermiticity_error": 0.0,
+      "root_seam_entries": 72,
+      "root_seam_norm": 1.152423879481037,
+      "trace_checks": [
+        {
+          "beta": 0.2,
+          "pin_log_residual": 0.007422817482919841,
+          "rooted_log_residual": 0.0049914221906306455
+        },
+        {
+          "beta": 1.7,
+          "pin_log_residual": 0.18102581427089715,
+          "rooted_log_residual": 0.011241386492512051
+        },
+        {
+          "beta": 5.0,
+          "pin_log_residual": 0.5803935771938253,
+          "rooted_log_residual": -0.1150806226102794
+        }
+      ]
+    },
+    {
+      "d": 3,
+      "marker_rank": 2,
+      "length": 5,
+      "physical_dimension": 243,
+      "pinned_dimension": 162,
+      "root_hermiticity_error": 0.0,
+      "root_seam_entries": 216,
+      "root_seam_norm": 1.1524238794810382,
+      "trace_checks": [
+        {
+          "beta": 0.2,
+          "pin_log_residual": 0.007420351003373016,
+          "rooted_log_residual": 0.004315835938537349
+        },
+        {
+          "beta": 1.7,
+          "pin_log_residual": 0.17684656890380723,
+          "rooted_log_residual": 0.01642559772941099
+        },
+        {
+          "beta": 5.0,
+          "pin_log_residual": 0.49233901806526537,
+          "rooted_log_residual": -0.06384872210867942
+        }
+      ]
+    },
+    {
+      "d": 4,
+      "marker_rank": 2,
+      "length": 3,
+      "physical_dimension": 64,
+      "pinned_dimension": 32,
+      "root_hermiticity_error": 3.925231146709438e-17,
+      "root_seam_entries": 128,
+      "root_seam_norm": 0.9425887715344692,
+      "trace_checks": [
+        {
+          "beta": 0.2,
+          "pin_log_residual": -0.00019135786644663977,
+          "rooted_log_residual": -0.004872660732504364
+        },
+        {
+          "beta": 1.7,
+          "pin_log_residual": 0.37778575077666876,
+          "rooted_log_residual": 0.175737799197779
+        },
+        {
+          "beta": 5.0,
+          "pin_log_residual": 2.124000389069235,
+          "rooted_log_residual": 1.1787313534833608
+        }
+      ]
+    },
+    {
+      "d": 4,
+      "marker_rank": 2,
+      "length": 4,
+      "physical_dimension": 256,
+      "pinned_dimension": 128,
+      "root_hermiticity_error": 1.8515278288508872e-16,
+      "root_seam_entries": 512,
+      "root_seam_norm": 1.084956300124586,
+      "trace_checks": [
+        {
+          "beta": 0.2,
+          "pin_log_residual": -0.00021348883699434662,
+          "rooted_log_residual": -0.004077824378914019
+        },
+        {
+          "beta": 1.7,
+          "pin_log_residual": 0.35599457671128587,
+          "rooted_log_residual": 0.12664384763392278
+        },
+        {
+          "beta": 5.0,
+          "pin_log_residual": 1.7753297527112384,
+          "rooted_log_residual": 0.521875475935616
+        }
+      ]
+    }
+  ]
+}
