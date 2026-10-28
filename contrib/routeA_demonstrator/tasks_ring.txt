@@ -1,0 +1,18 @@
+--M 3 --lam 0.05 --nev 3
+--M 3 --lam 0.10 --nev 3
+--M 3 --lam 0.15 --nev 3
+--M 4 --lam 0.05 --nev 3
+--M 4 --lam 0.10 --nev 3
+--M 4 --lam 0.15 --nev 3
+--M 5 --lam 0.05 --nev 3
+--M 5 --lam 0.10 --nev 3
+--M 5 --lam 0.15 --nev 3
+--M 6 --lam 0.05 --nev 2 --Q2 0 --m 0
+--M 6 --lam 0.10 --nev 2 --Q2 0 --m 0
+--M 6 --lam 0.15 --nev 2 --Q2 0 --m 0
+--M 6 --lam 0.05 --nev 1 --Q2 0 --m 1
+--M 6 --lam 0.10 --nev 1 --Q2 0 --m 1
+--M 6 --lam 0.15 --nev 1 --Q2 0 --m 1
+--M 6 --lam 0.05 --nev 1 --Q2 2 --m 0
+--M 6 --lam 0.10 --nev 1 --Q2 2 --m 0
+--M 6 --lam 0.15 --nev 1 --Q2 2 --m 0

@@ -1,0 +1,13 @@
+micro_l0.05 --model micro --lam 0.05 --n 3 --chis 16 24 32 48 64 96 --maxit 1500 --tol 1e-8 --stol 1e-7 --tau_max 500
+micro_l0.10 --model micro --lam 0.10 --n 3 --chis 16 24 32 48 64 96 --maxit 1500 --tol 1e-8 --stol 1e-7 --tau_max 500
+micro_l0.15 --model micro --lam 0.15 --n 3 --chis 16 24 32 48 64 96 --maxit 1500 --tol 1e-8 --stol 1e-7 --tau_max 500
+sel_n2 --model micro --lam 0.10 --n 2 --chis 16 24 --maxit 1000 --tol 1e-8 --stol 1e-7
+sel_n4 --model micro --lam 0.10 --n 4 --chis 16 24 --maxit 1000 --tol 1e-8 --stol 1e-7
+sel_n5 --model micro --lam 0.10 --n 5 --chis 16 24 --maxit 1000 --tol 1e-8 --stol 1e-7
+sel_n6 --model micro --lam 0.10 --n 6 --chis 16 24 --maxit 1000 --tol 1e-8 --stol 1e-7
+sel_n3_s1 --model micro --lam 0.10 --n 3 --chis 16 24 --maxit 1000 --tol 1e-8 --stol 1e-7 --seed 1
+xx --model xx --n 1 --chis 8 12 16 24 32 48 64 96 --maxit 1500 --tol 1e-10 --stol 1e-9 --tau_max 500
+eff2 --model eff --Jxy -1 --Jzz 0.07417 --n 1 --chis 8 12 16 24 32 48 64 96 --maxit 1500 --tol 1e-10 --stol 1e-9 --tau_max 500
+effx_0.05 --model eff --Jxy -1 --Jzz 0.06613 --n 1 --chis 8 12 16 24 32 48 64 96 --maxit 1500 --tol 1e-10 --stol 1e-9 --tau_max 500
+effx_0.10 --model eff --Jxy -1 --Jzz 0.06126 --n 1 --chis 8 12 16 24 32 48 64 96 --maxit 1500 --tol 1e-10 --stol 1e-9 --tau_max 500
+effx_0.15 --model eff --Jxy -1 --Jzz 0.05758 --n 1 --chis 8 12 16 24 32 48 64 96 --maxit 1500 --tol 1e-10 --stol 1e-9 --tau_max 500

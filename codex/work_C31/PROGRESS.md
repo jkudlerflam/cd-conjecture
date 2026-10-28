@@ -29,3 +29,11 @@
 [numerical, n=2,3,4; heuristic infrared interpretation] At symmetric arms, phase zero, and mu=0.3*s_min, the leading interflavour opposite-chirality forward couplings are negative, the same-flavour couplings positive, and all pair-transfer dimensions exceed two. Their minimum excess divided by tau^2 is 9.0884, 16.5500, 42.2787. The one-loop Cooper/forward flow remains in the irrelevant basin in all three sizes. Cubic bare quartic vertices have the same favorable signs in these cases. No all-n sign theorem has been obtained.
 
 [proved, limitation] These checks do not prove distinct displaced centers or favorable relative stiffness for arbitrary n. The all-n conclusion must remain conditional. The finite-coupling hierarchy closes at each fixed n once one of those infrared conditions is supplied, but that algebra cannot establish the missing condition.
+
+## Final handoff
+
+[proved, file accounting] RESULT.md is complete. It contains the microscopic symmetry proof, the all-n Gram rank proof and explicit lower bound, the missing all-n conditions, displaced targets and complete marginal-momentum enumeration, actual quartic extraction, one-loop equations and flows, and conditional physical energy scales. Only this folder was modified. Project STATE.md was intentionally left untouched under the explicit task restriction.
+
+[numerical, final validation] The positive tree-gauge inverse agrees with literal occupation-space leading coefficients at about 1e-15 relative. At the actual n=4 displaced target the largest independent root discrepancy is 1.68e-13 radians, much smaller than delta_4=2.16352e-6. The final n=2 quartic comparisons, dimension 11,680, agree to 9.53e-16 and 5.58e-16 relative for lambda^2 tau^4 and lambda^3 tau^4. All Python files parse. The final one-loop runs preserve positive pair-transfer dimensions at n=2,3,4.
+
+[heuristic, verdict] Stable fixed-pattern c=n phases are supported at n=2,3,4 under the stated local-integration and bosonization inputs. The general-n conclusion remains open. Continue with an analytic sign decomposition for the centered forward interactions, or an all-n proof of separated displaced centers. No selector, mobile-wrapper construction, full finite-coupling thermodynamic computation or central-charge measurement was performed.

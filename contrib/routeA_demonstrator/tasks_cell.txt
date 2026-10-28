@@ -1,0 +1,3 @@
+cell_l0.05 --model cell --lam 0.05 --n 1 --chis 8 12 16 24 32 48 64 96 128 --mode vumps --maxit 400 --tol 1e-10 --stol 1e-9
+cell_l0.10 --model cell --lam 0.10 --n 1 --chis 8 12 16 24 32 48 64 96 128 --mode vumps --maxit 400 --tol 1e-10 --stol 1e-9
+cell_l0.15 --model cell --lam 0.15 --n 1 --chis 8 12 16 24 32 48 64 96 128 --mode vumps --maxit 400 --tol 1e-10 --stol 1e-9
