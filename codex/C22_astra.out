@@ -1,0 +1,9 @@
+I did not obtain a successful route-A cell. [RESULT.md](< <repo>/codex/work_C22/RESULT.md>) contains the construction and obstruction.
+
+The computation-free cell has d₀=17, an exact 2ⁿ-dimensional code, exact parity, vanishing first-order coupling, and sufficient spatial poles. But its n=2 second-order hopping matrix is provably gapped. Uniform flux does not supply independent flavor phases.
+
+Full ED passed for two and three cells at n=1,2, up to dimension 110,592. The separate tree-bus obstruction rules out simple unitary return wires at second order, not all spatial designs.
+
+PROGRESS.md is updated with the derivations, checks, and remaining construction problem.
+
+[gpt_solve: backend=codex model=gpt-6-astra effort=high transcript=20261027T224540-22961]

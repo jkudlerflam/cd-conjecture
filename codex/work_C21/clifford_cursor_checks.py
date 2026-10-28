@@ -8,6 +8,7 @@ os.environ.setdefault('OPENBLAS_NUM_THREADS', '1')
 os.environ.setdefault('OMP_NUM_THREADS', '1')
 from pathlib import Path
 import json
+import signal
 import numpy as np
 import scipy.linalg as la
 import scipy.sparse as sp
@@ -179,6 +180,29 @@ def chain_ed(n, cells, H2):
         # Dense n=1 two-cell check; sparse n=1 three-cell check.
         if dim < 1000:
             ev, vec = la.eigh(H.toarray(), subset_by_index=(0, N))
+        elif dim > 10000:
+            # Work on the complete code band in each exact parity sector.
+            # A scalar ARPACK run stalled on its very small internal splittings.
+            site_grade = np.kron(np.array([1, -1, -1, 1, -1, -1, 1, 1]), np.array([1, -1]))
+            par = site_grade
+            for _ in range(sites-1):
+                par = np.kron(par, site_grade)
+            vecs, energies = [], []
+            for sign in (1, -1):
+                ix = np.flatnonzero(par == sign)
+                sub = H[ix][:, ix]
+                guess = G[ix, :]
+                guess = guess[:, np.linalg.norm(guess, axis=0) > .5]
+                pre = sp.diags(1/np.maximum(sub.diagonal().real+.1, .1))
+                ee, vv = sla.lobpcg(sub, guess, M=pre, largest=False,
+                                    tol=2e-12, maxiter=120)
+                full = np.zeros((dim, len(ee)), complex); full[ix, :] = vv
+                energies.extend(ee); vecs.append(full)
+            retained_all = np.concatenate(vecs, axis=1)
+            order = np.argsort(energies)
+            vec = retained_all[:, order]
+            # The extra entry records a rigorous lower bound, not an eigenvalue.
+            ev = np.r_[np.array(energies)[order], DELTA-GCOUP-2*HOP-3*abs(lam)*(cells-1)]
         else:
             ev, vec = sla.eigsh(H, k=N+1, which='SA', tol=1e-12,
                                v0=np.random.default_rng(219).normal(size=dim))
@@ -194,7 +218,8 @@ def chain_ed(n, cells, H2):
         residual = la.norm(H@retained-retained*ee, 2)
         assert residual < 1e-10
         runs.append(dict(lam=lam, canonical_error=err, error_over_lambda3=err/lam**3,
-                         eigen_residual=residual, next_gap=float(ev[N]-ee[-1])))
+                         eigen_residual=residual, next_gap=float(ev[N]-ee[-1]),
+                         next_gap_kind='lower_bound' if dim > 10000 else 'measured'))
     powers = [np.log(runs[j]['canonical_error']/runs[j+1]['canonical_error'])/np.log(2)
               for j in range(2)]
     assert min(powers) > 2.8 and max(powers) < 3.2
@@ -210,7 +235,9 @@ def main():
         print(json.dumps(row), flush=True)
     result = dict(sources=rows, ed=[])
     for n, c in ((1, 2), (1, 3), (2, 2)):
+        signal.alarm(180)
         result['ed'].append(chain_ed(n, c, h2s[n-1]))
+        signal.alarm(0)
         print(json.dumps(result['ed'][-1]), flush=True)
         Path(__file__).with_name('clifford_cursor_results.json').write_text(json.dumps(result, indent=2)+'\n')
     Path(__file__).with_name('clifford_cursor_results.json').write_text(json.dumps(result, indent=2)+'\n')

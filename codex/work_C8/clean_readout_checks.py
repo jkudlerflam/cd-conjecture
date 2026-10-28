@@ -8,7 +8,7 @@ from clean_readout_machine import Machine,local_op,record_gate,ROLES,STATIC_ALLO
 
 def grade(z,q):
     data,ready,v,p,x=z
-    return (data+x+int(q//2<=v<q))%2
+    return data+x+int(q//2<=v<q)
 
 
 def local_checks():
@@ -30,7 +30,7 @@ def local_checks():
                 outputs=[record_gate(g,*z,q,inverse) for z in states2]
                 assert len(set(outputs))==len(states2)
                 for z,w in zip(states2,outputs):
-                    assert sum(q//2<=v<q for v in z)%2==sum(q//2<=v<q for v in w)%2
+                    assert sum(q//2<=v<q for v in z)==sum(q//2<=v<q for v in w)
                     assert record_gate(g,*w,q,not inverse)==z
                     count+=1
         cases.append(dict(q=q,checked_columns=count))

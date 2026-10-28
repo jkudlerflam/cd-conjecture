@@ -143,6 +143,14 @@ def main():
         assert rec['effective_parity_error']<2e-12
         if scale==1:
             rec['algebra']=algebra(c)
+            aa=rec['algebra']
+            assert aa['zero_count']==c['N'] and abs(aa['gap']-1)<1e-11
+            assert aa['min_weight']>=3/(4*c['k'])-1e-12
+            for test in ['code_error','kernel_error','reflection_error','first_order',
+                         'parity_error','sum_weight_error','source_measure_error',
+                         'cubic_relative_error','fermion_sign_error']:
+                assert aa[test]<2e-12, (test,aa[test])
+            assert aa['margins']['root_error']<2e-12
             full=pair_engine(c,False)
             rec['full_vs_reduced']={key:norm(e[key]-full[key]) for key in ['K2','K3','K4']}
             assert max(rec['full_vs_reduced'].values())<3e-12

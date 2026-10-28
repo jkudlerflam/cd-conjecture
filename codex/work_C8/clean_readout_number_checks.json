@@ -1,0 +1,23 @@
+{
+  "exact_number_local": {
+    "cases": [
+      {
+        "q": 4,
+        "checked_columns": 1420
+      },
+      {
+        "q": 8,
+        "checked_columns": 2988
+      },
+      {
+        "q": 12,
+        "checked_columns": 4940
+      }
+    ],
+    "complete_blocks": 928,
+    "prescribed_blocks": 799
+  },
+  "exact_number_whole_space": {
+    "random_whole_space_GF_involution_tests": 12000
+  }
+}

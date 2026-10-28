@@ -25,3 +25,15 @@
 [proved, algebra conditional on that continuum map] Physical resonance means Q_T=2 pi t for an integer t. It is equivalent to q_payload-2 pi t nu being in 2 pi Z, and the length-field coefficient then becomes 2t. Thus C20's parity-even local lattice and resonance/dimension test apply on resonances. Nonresonant physical dimensions are generally different. A pure marker harmonic has free dimension rho^2 D^2, a useful consistency check.
 
 [assumed] Stability under integration of the actual microscopic gapped modes and the existence of the spatial compiler remain separate. G7 is resolved for the specified projected identity-transport wrapper, with the continuum identification stated as physics input. Final derivation and audit are in preparation.
+
+## Final audit and handoff
+
+[proved, completed] RESULT.md contains the finite seam proof, the ordinary translation character, the full quotient spectrum, the common-parity winding cosets and relative winding congruences, and the physical harmonic derivation with its continuum assumptions separated. A notation audit distinguished the orbital-coefficient center Theta from the annihilation-field center theta=-Theta; this prevents transferring C19's hopping sign into the opposite Fourier convention.
+
+[proved, conditional conclusion] For physical resonance, the reciprocal harmonic integer reduces the dressed vertex to (2t,A;0,B), and q_payload-2 pi t nu is an integer multiple of 2 pi. Thus the C20 resonant lattice and dimension test survive the specified gluing. Nonresonant physical dimensions are not identified with cell dimensions. The n=0 marker check, rational-length umklapp check, pairing check, and common-versus-independent spin-structure checks are in RESULT.md.
+
+[numerical] All finite checks passed with the sizes and errors in checks.json and RESULT.md. No additional numerical run was needed after the subsequent prose and convention audit. The checks do not measure a central charge or establish a parity-only gapless phase.
+
+[proved, coordination] Read newly available C25 and C26 progress before completion. Their second-order wrapper and fourth-order/Sidon tasks were not duplicated. The three named Claude contribution PROGRESS files were still absent. All files written in this run are in work_C27.
+
+[assumed, remaining work] G7 is closed for the projected identity-transport wrapper at the stated physics standard, conditional on standard bosonization for the continuum vertex identification. A microscopic compiler, its grading and transport verification, wrapper composition, and local infrared elimination remain outside this result. No route-A obstruction was found here. Changes to transport holonomy or marker conservation would require revisiting the gluing.

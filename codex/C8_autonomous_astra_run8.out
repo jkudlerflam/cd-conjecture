@@ -1,0 +1,7 @@
+The autonomous clean-readout core is now explicit: dimension \(446400(q+1)\), \(q^2/8\) logical fermions, exact U(1), both Clifford ports, and colored density readouts. The new finite checks pass.
+
+The conjecture remains unresolved. The resulting microscopic candidate still needs finite-coupling infrared control.
+
+Proofs, code, checks, and ranked next steps are recorded in [RESULT.md](RESULT.md) and [PROGRESS.md](PROGRESS.md).
+
+[gpt_solve: backend=codex model=gpt-6-astra effort=high transcript=20261027T224536-22551]

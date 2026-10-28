@@ -1,5 +1,11 @@
 # What remains after the clock construction
 
+Run-8 update, 2026-10-28. The missing finite program is now supplied by
+clean_readout_core.md and clean_readout_machine.py. The direct-sum clock
+core has K=446400; a literal two-lane padding has s0=32, r=465 and
+K=207576000. The finite-coupling infrared step remains open. The text
+below records the run-7 specification, not the current missing work.
+
 Status: a proved conditional reduction and a specification for the
 unfinished readout machine. No collision table meeting the complete
 specification is supplied. This is progress, not a conclusive answer.

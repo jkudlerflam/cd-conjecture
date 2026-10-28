@@ -75,10 +75,15 @@ def sidon_data(n):
     aa=2*q*ids+ids**2%q
     da=int(np.diff(aa).min()); bb=(da+1)//2
     period=2*int(aa[-1])+4*bb+2
-    jitter=1e-10*np.sqrt(np.array(ps[:2*n]))
+    # Preserve the finite resonance margins also at arbitrarily large n.
+    rootmax=np.sqrt(ps[2*n-1])
+    jitter_scale=min(1e-10,(2*np.pi*da/period)/(8*rootmax))
+    if n>=2:
+        jitter_scale=min(jitter_scale,(2*np.pi/(3*period))/(16*rootmax))
+    jitter=jitter_scale*np.sqrt(np.array(ps[:2*n]))
     points=2*np.pi*(aa+bb+1/6)/period+jitter
     return dict(q=q,A=aa.tolist(),d=da,B=bb,T=period,points=points.tolist(),
-                max_jitter=float(jitter.max()))
+                max_jitter=float(jitter.max()),jitter_scale=float(jitter_scale))
 
 def target_parameters(n):
     points=np.array(sidon_data(n)['points'])

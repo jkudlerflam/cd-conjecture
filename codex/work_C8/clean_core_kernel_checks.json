@@ -1,0 +1,42 @@
+[
+  {
+    "input": [
+      0,
+      0
+    ],
+    "history_support": 5124,
+    "applied_matrix_entries": 21002,
+    "max_unnormalized_residual": 0.0,
+    "distinct_bulk_columns": 3852
+  },
+  {
+    "input": [
+      0,
+      1
+    ],
+    "history_support": 5124,
+    "applied_matrix_entries": 21002,
+    "max_unnormalized_residual": 0.0,
+    "distinct_bulk_columns": 3897
+  },
+  {
+    "input": [
+      1,
+      0
+    ],
+    "history_support": 5124,
+    "applied_matrix_entries": 21002,
+    "max_unnormalized_residual": 0.0,
+    "distinct_bulk_columns": 3922
+  },
+  {
+    "input": [
+      1,
+      1
+    ],
+    "history_support": 5124,
+    "applied_matrix_entries": 21002,
+    "max_unnormalized_residual": 0.0,
+    "distinct_bulk_columns": 3972
+  }
+]

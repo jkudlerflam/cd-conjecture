@@ -1,46 +1,46 @@
 # C8 result
 
-2026-10-27. Closed-book work by Codex, GPT-6. No network access or subagents. All project changes are confined to this folder.
+2026-10-28. Eighth run. Closed-book work by Codex, GPT-6. All writes
+are confined to this folder. No network, subagents or external changes.
 
 ## Verdict
 
-Seventh-run update. The verdict remains nonconclusive under the task's
-criteria. No verified microscopic counterexample, full-class bound, or
-fixed-d construction with unbounded c has been obtained. Sections 36-39
-contain the new work and supersede earlier next-step rankings.
+Nonconclusive for the original conjecture. The missing autonomous
+high-channel readout core is now explicit. The remaining issue is the
+finite-coupling infrared reduction, not the controller or its alphabet.
+Sections 40-43 supersede the earlier continuation rankings.
 
-The clock part of the initialized-core problem now has explicit local
-rules. A nine-letter positive NN clock has exactly one legal history at
-every length, including an initialization sweep. A fifteen-letter extension
-makes 2^n full work-tape sweeps at length n, still with one legal component.
-All malformed clock sectors are excluded by conserved local penalties.
-Both constructions have explicit finite-length gaps. Their hopping forms
-can select any cell length by a chemical potential, but remain frozen
-selectors when used directly on a ring.
+[proved finite construction] A positive uniform NN core with one-site
+boundary terms has dimension 446400(q+1), exactly 2^(q^2/8) ground
+states at length q^2/8+6, exact total logical-number U(1), both graded
+Clifford endpoint maps, and independently normalized colored density
+readouts. Its 58-control machine has 799 prescribed collision blocks
+and a complete 928-block permutation. It uses a moving cursor and four
+q-state tape counters, with no preloaded program or growing control set.
+The initialization pins reject every surplus register and head sector.
+The complete finite gap and every partial-time readout are proved.
 
-Each full sweep executes a fixed local work update. An injective graded
-collision table has an explicit completion to a local permutation, and
-input pins select its complete quantum history code. A small packet machine
-checks this interface. It gives a nonlocal diagonal parity readout, while
-its off-diagonal readout vanishes because the bit remains recorded on the
-tape. The high-channel program must clear every such record before its
-port becomes active. That program and its alphabet count are still missing.
+[numerical finite checks] All 256 logical inputs at q=8 pass a complete
+cycle and 51200 paired environment checks. Complete-clock tests reach
+524298 vertices. Direct physical compression and actual-Hamiltonian
+zero-state tests cover all four q=4 inputs and 5124 vertices per input.
+A polynomial-cycle counting formula agrees with those histories and
+computes the q=12 counts for a clock with 872415252 vertices. No central
+charge estimator was applied to the microscopic chain.
 
-Four new scripts passed, including exhaustive open-clock spaces through
-59049 words, complete periodic-ring spaces through dimension 100000,
-quantum initialization, and the full local-update matrix. None is a CFT
-measurement. All new proofs, limitations, reproduction commands, and the
-remaining finite-program contract appear below.
+[conditional infrared consequence] The existing mobile wrapper gives
+an explicit one-site-uniform NN family with d=96*446400(q+1)+48 and
+projected m+1 modes, m=q^2/8. At q=685670400 the projected count exceeds
+d-1. Conformal behavior at a fixed nonzero physical coupling still uses
+the massive-sector integration and Gaussian infrared inputs stated in
+Section 41. Their application to this bond is not proved or measured
+here. No verified violation, full-class upper bound, or fixed-d
+unbounded-c construction is claimed.
 
-The earlier two-length wrapper, scalar marker transport, exact leading
-port equalization at d=96q+48 for a q-state core, and combined projected
-length/payload spectrum remain available. They still need an actual
-high-channel core and finite-coupling infrared control. C13 handles the
-latter question separately; its final progress was read, not rederived.
-
-No external files were changed, and no network, cluster job, subagent,
-independent referee, commit, or push was used. Earlier restricted results
-are not promoted to statements about the full class.
+The full rules and proofs follow. Earlier statements that the clean
+readout program was missing describe the preceding runs and are now
+superseded by Section 40. C19's separate excited-spectrum problem remains
+open; the new construction is a first-order core, not its spectral compiler.
 
 ## 1. Simultaneous boundary Clifford compression
 
@@ -5919,3 +5919,1001 @@ Do not redo the nine-letter counter, fifteen-letter full-sweep clock,
 conserved-defect proof, initialization-gap proof, or bare-clock selector.
 Those parts now have explicit local rules and all-sector checks. The
 clean-readout work machine is the next construction task.
+
+
+## 40. Autonomous initialized high-channel core
+
+Subsection numbers and references below are local to this section.
+
+Status: proved finite construction, with a literal collision table and
+finite checks. This closes the clean-readout program left open in run 7.
+It does not by itself prove a microscopic CFT at nonzero coupling, and it
+does not realize C19's second-order spectral filters.
+
+### 1. The theorem
+
+Let q be divisible by four, s=q/2, m=q^2/8, and n=m+6. There is an
+explicit positive, uniform nearest-neighbor Hamiltonian on an open
+length-n segment, with one-site positive boundary terms, whose site
+dimension is
+
+    d_core = 446400(q+1).
+
+Its complete zero space has dimension 2^m. Its product grading acts on
+this space as logical fermion parity. There are 2m specified odd
+single-site operators at each endpoint and m specified even two-site
+operators at each end with exact compressions
+
+    V† A_(2f-1) V = alpha_Lf Gamma_(2f-1),
+    V† A_(2f)   V = alpha_Lf Gamma_(2f),
+    V† B_(2f-1) V = alpha_Rf i Gamma_(2f-1) P,
+    V† B_(2f)   V = alpha_Rf i Gamma_(2f) P,
+    V† D_uf V = beta_uf Z_f.
+
+Every alpha and beta is a positive, explicitly computable rational
+number. The gate table, initialization projectors and readout matrices
+are supplied below and in clean_readout_machine.py. They do not require
+a preloaded program, a universal-machine theorem, position-dependent
+instructions or a control state for each flavor.
+
+For positive propagation scale J, initialization strength eta and clock
+and role penalties kappa_clock,kappa_role, a valid gap lower bound is
+
+    min{kappa_clock,kappa_role,
+        J[1-cos(pi/C_n)], eta/(2C_n), J/(4C_n^2)},
+    C_n=(2n+4)2^n+n-4.
+
+The bound is for this finite core. It is not a gap above an interacting
+many-cell low-energy band.
+
+### 2. Registers, grammar and initialized input
+
+Each ordinary work site contains a static role, one cursor bit c, one
+logical-data bit d, one READY bit, and one record v in
+
+    {e_0,...,e_(s-1),o_0,...,o_(s-1),*}.
+
+The ordinary factor is 8*2*2*2*(q+1)=64(q+1). A site can instead carry a
+head overlay consisting of one of 58 direction-fixed controls, a fresh
+or updated phase, a neutral parity bit p, and a graded carrier bit x.
+The overlay holds the same site record, not an additional q-state record.
+Thus
+
+    w = 64[1+2*58*2*2](q+1) = 29760(q+1).
+
+The data bit d, the head's x bit and each odd record o_j are odd. All
+other labels are even. The site's grading is the product of these signs.
+For an ordinary site omit the head's x factor.
+
+Allowed neighboring roles are
+
+    L A, A B, B S, S D, S E, D D, D E, E F, F R.
+
+The left endpoint is pinned to L and the right endpoint to R. For each
+n>=7 these constraints have the unique solution
+
+    L A B S D^(n-7) E F R.
+
+Indeed L forces A and then B and S. A string of D's can only terminate
+through E,F,R, and cannot enter a second S. Every other role sector has
+a positive conserved diagonal penalty. At n=m+6 the S,D sites number m.
+They are the logical input bits. Roles A,B hold the left row and column
+counters; F,E hold the right row and column counters.
+
+During the clock's I initialization sweep impose the following one-site
+pins, conditioned on the local immutable role.
+
+| Role | Cursor | Data | READY | Record | Head |
+| :-- | :-- | :-- | :-- | :-- | :-- |
+| L | 0 | 0 | 0 | * | fresh L0, p=x=0 |
+| A,B,E,F | 0 | 0 | 0 | e_0 | absent |
+| S | 1 | arbitrary | 0 | * | absent |
+| D | 0 | arbitrary | 0 | * | absent |
+| R | 0 | 0 | 0 | * | absent |
+
+For each role the pin is I minus the projector onto the displayed local
+subspace. Every entry outside it is penalized, including additional heads,
+unused record values, unexpected carrier bits, cursor bits, READY bits,
+and surplus data bits on the six endpoint/counter sites. No supposedly
+blank untrusted input is tested using uninitialized scratch. Only the m
+S,D data bits remain free. The initialization sweep acts as identity on
+work, including its activation at the far end; the initial head is already
+pinned at L. This is allowed by the inherited clock theorem.
+
+This regular layout avoids the program-generation problem. It differs
+from a compiler that accepts an arbitrary instruction tape and later has
+to certify its contents.
+
+### 3. Local quantum permutations
+
+The complete record alphabet is represented in code by integers
+0,...,s-1,s,...,2s-1,2s, with *=2s. All modular arithmetic below is modulo s.
+The finite menu is defined on the entire local space, not only on valid
+inputs.
+
+The onsite operations are as follows.
+
+* PARITY sends p to p xor d.
+* TAKE exchanges d and x.
+* LOAD exchanges (x,v)=(0,*) with (0,e_0), and exchanges (1,*) with
+  (0,o_0), fixing all other pairs.
+* ODD_P sends o_j to o_(j+p), fixing even records and *.
+* EVEN_P sends e_j to e_(j+p), fixing odd records and *.
+* FLAG toggles READY. Identity is the seventh operation.
+
+Their inverses are literal inverses; LOAD, PARITY, TAKE and FLAG are
+involutions. In particular LOAD removes x from the head. Copying x into
+a port while retaining x elsewhere would not work.
+
+The two-site record gates use departure record a and arrival record b.
+They leave all static roles, cursor and data bits unchanged.
+
+* SWAP exchanges the records.
+* EVEN_ADD sends (e_i,e_j) to (e_(i+j),e_j).
+* ODD_ADD sends (o_i,e_j) to (o_(i+j),e_j).
+* SUM sends (e_i,e_j) to (e_i,e_(j+i)).
+* INC sends (e_a,e_b) to (e_(a+carry),e_((b+2) mod s)), where carry=1
+  if b+2>=s and zero otherwise.
+
+Each gate is identity on every type pair not displayed. Every displayed
+type sector is invariant and the map on it is bijective, so these are
+whole-space permutations. INC has inverse b_old=(b-2) mod s,
+a_old=a-1_(b_old+2>=s). Starting at (0,0) with even s, its orbit has
+length s^2/2 and lists
+
+    (a,b)=(0,0),(0,2),...,(0,s-2),(1,0),...,(s-1,s-2).
+
+The loop counters are therefore on two sites of the existing record
+track. The controller does not store a or b. Arbitrary q-dependent
+matrix entries in a fixed gate family are allowed by the microscopic
+problem; their count does not introduce a q-dependent control alphabet.
+All listed onsite and bond gates preserve total product grading.
+
+There is a stronger exact symmetry. Define the integer onsite charge
+as data d plus the indicator of an odd record, plus x if a head is present.
+Every listed operation conserves the sum of this charge, not merely its
+parity. TAKE and LOAD transfer a unit between registers; the other gates
+preserve each charged occupation. Neutral-block completion uses identity
+quantum gates and therefore preserves the charge as well. Initialization
+is diagonal in it. On the core code the charge is sum_f x_f. Thus the core
+has an exact on-site U(1) whose restriction is total logical fermion number.
+It does not give U(1)^m flavor symmetry. This stronger conservation was
+checked on all primitive columns at q=4,8,12 and on 12000 full-space G,F
+samples, in clean_readout_number_checks.json.
+
+### 4. One readout and its inverse
+
+Use zero-based flavor f. The cursor is on physical site j=f+3. During
+the left readout the counters are a=f div(s/2), b=2(f mod(s/2)). A head
+starting at L with p=x=0 follows these eleven preparatory segments.
+An endpoint operation occurs after the move, on arrival. A scan operation
+occurs at each intermediate S,D site, but not at the endpoint cursor.
+
+| Control | Segment | Record gate on each move | Scan | Endpoint operation |
+| :-- | :-- | :-- | :-- | :-- |
+| L0 | L to cursor | I | PARITY | TAKE |
+| L1 | cursor to L | I | I | LOAD |
+| L2 | L to A | EVEN_ADD | I | I |
+| L3 | A to B | SWAP | I | I |
+| L4 | B to L | I | I | I |
+| L5 | L to A | ODD_ADD | I | I |
+| L6 | A to B | SWAP | I | I |
+| L7 | B to L | I | I | ODD_P |
+| L8 | L to B | I | I | I |
+| L9 | B to A | SUM | I | EVEN_P |
+| L10 | A to L | I | I | Enable READY |
+
+The only nontrivial moving gates in this table have adjacent start and
+end sites; the longer segments have identity moving gates. On L0 the
+head accumulates the prefix parity, then swaps x_f into x, leaving the
+cursor's data bit zero. L1 moves it to the physical endpoint and LOAD
+sets x=0. The endpoint record is now e_0 or o_0.
+
+L2 adds the row index to an even endpoint. L3 temporarily swaps the
+counter records so L5 can add the column index to an odd endpoint.
+L6 restores their positions. L7 adds p to the odd endpoint. L9 changes
+A from e_a to e_(a+b+p). B remains e_b. Thus at activation,
+
+    p = sum_(i<f) x_i mod 2,
+    v_L = e_a if x_f=0, o_(b+p) if x_f=1,
+    v_A = e_(a+b+p),    v_B=e_b,    head x=0,
+    data_f=0,          data_i=x_i for i!=f.
+
+Every record outside v_L is independent of x_f. The stored p is permitted
+because it depends only on the other bits.
+
+With READY enabled, the head walks L to R and back using identity gates
+on all data and record registers. On its return it clears READY and
+executes the literal inverse of all eleven preparatory segments. It
+restores the logical input, both counters, all port and color records,
+and p=x=0. No active readout occurs during uncomputation.
+
+The right readout is the reflection of this construction. Replace
+(L,A,B,R) by (R,F,E,L), reverse every direction, and compute the suffix
+parity instead. Its active endpoint is e_a or o_(b+p) with
+p=sum_(i>f)x_i mod 2. Its adjacent color is again e_(a+b+p).
+
+For clarity about the inverse implementation, each reversed control
+moves opposite its corresponding forward control and applies the adjoint
+moving gate in the reversed departure/arrival convention. A reversed
+collision is the inverse of the forward collision at the arrived-at site.
+The endpoint READY clearing switches to reverse L10 or R10 before any
+record changes. This is the move-then-collide normal form, not an
+informal instruction to reverse a computation while keeping its gates.
+
+### 5. The complete autonomous cycle and collision completion
+
+After the left readout and its inverse, the head travels neutrally to R
+and performs the right readout and its inverse. It then executes INC on
+F,E, travels to L and executes INC on A,B. It finds the cursor, clears
+its mark and moves one site right. If that site is D, it places the mark
+there and returns to L. If it is E, it returns to the first data role S,
+marks S, and returns to L. The directions of these scans depend only on
+roles and cursor, never on quantum input bits or counter values.
+
+There are 44 preparatory/reverse controls, four readout-walk controls,
+and ten travel/counter/cursor controls, giving Q=58. The local neutral
+collision labels are (control,role,cursor), 58*8*2=928 possibilities.
+clean_readout_machine.py supplies 799 prescribed transitions, each with
+one of the seven onsite permutations above. All other entries are
+completed explicitly within each immutable-role sector, first fixing
+common unused domain/range entries and then pairing the remaining lists
+in increasing order. clean_readout_table.json contains all 928 blocks.
+
+The prescribed neutral map is an injection. A phase's scan loop excludes
+its starting mark and its terminal mark. Entry from the preceding phase
+has the starting mark, and exit to the next has the terminal mark. A
+cursor-clearing exit has c=0 in its new NEXT phase. Its subsequent marked
+entry to RETURN has c=1, excluded from RETURN's scan loop. The last-bit
+branch enters RESET at E, excluded from RESET's loop; RESET reaches S,
+places c=1, and enters RETURN on S rather than D. These ranges do not
+collide. Forward and reversed controls have disjoint labels. The generator
+checks every domain and range, including malformed neutral labels.
+
+Since every decoration is itself a whole-space graded permutation, the
+completed block map C is a whole-space graded permutation as well. This
+supplies a finite collision table with no undefined quantum operation.
+
+The work head makes one move and one collision per full clock sweep.
+Use the fresh/updated G,F construction proved for endpoint_shuttle.md.
+On a bond with one fresh head in its outgoing orientation, G applies the
+specified moving gate and transfers the full head, including p,x, to the
+neighbor in updated phase. On the reverse subspace use the adjoint. All
+other two-site sectors, including two-head sectors, are identity. F maps
+updated through C to fresh, and fresh through C^{-1} to updated. These
+are Hermitian unitaries on their full spaces. The fixed direction and
+phase prevent a head from moving twice in an ordered outward sweep.
+
+Each flavor iteration takes 10n+46+2f moves, including both clean
+readouts, both counter updates and cursor advance. To verify this,
+the left preparation has length 2j+12, its inverse the same, and its
+readout walk length 2(n-1), totaling 4j+2n+22. The reflected right total
+is 6n-4j+18. Their sum is 8n+40. Travel to the right costs n-1; the
+remaining update/advance/return route costs n+2j+1. Adding gives the
+stated expression. On the last flavor the return via S has the same
+length as the ordinary return route.
+
+Consequently the complete cycle has
+
+    T_m = sum_(f=0)^(m-1) (10n+46+2f) = 11m^2+105m
+
+moves. After m=s^2/2 iterations, INC has returned both counter pairs to
+zero and the cursor returns to S. The whole quantum and neutral state
+returns to its initialized value. At m=2, T_m=254<256=2^(m+6).
+For m>=2, T_(m+1)<2T_m, since 2T_m-T_(m+1)=11m^2+83m-116>0.
+Induction gives T_m<2^(m+6). Every history therefore contains a full
+cycle, including both readouts of every flavor. Truncating a later
+cycle cannot introduce an unclean active time.
+
+### 6. The microscopic positive core
+
+Tensor this work site with the inherited 15-letter sweeping clock.
+For a clock edge u to v decorated with work unitary U use the positive
+term
+
+    (J/2)[ |u><u| tensor I + |v><v| tensor I
+           - |v><u| tensor U - |u><v| tensor U† ].
+
+Decorate outward bond rules with G, departing-site return rules with F,
+and the final left return with F. All other clock rules carry identity,
+including initialization, activation, binary carry and right bounce.
+clean_core_bond.py evaluates every column of the resulting complete
+bulk and boundary matrices without restricting the work sector.
+The complete neutral clock rules and legality projectors are given in
+sweeping_clock.md and implemented in sweeping_clock_checks.py. No clock
+rules are added or removed.
+
+Add the forbidden-role-pair projectors, the role endpoint pins, the
+clock legality projectors and the I-sweep initialization pins of Section
+2. All terms are positive. Bulk one-site terms can be divided equally
+between neighboring bonds, with the missing half restored in the one-site
+boundary term. Thus this is one repeated Hermitian NN bulk matrix and
+one fixed one-site matrix at either end, in the sense required by the
+existing cell wrapper.
+
+There is no dimension-dependent norm hidden in the controller. The 13
+bond rewrite terms each have norm J. The shared onsite turn and input
+pin contribute at most J+eta to one bulk bond. Hence
+
+    ||h_pay|| <= 14J+eta+kappa_clock+kappa_role.
+
+The left and right boundary norms are bounded respectively by
+(9J+eta)/2+kappa_clock+kappa_role and
+(7J+eta)/2+kappa_clock+kappa_role. At unit scales these bounds are
+17,7,6. They are uniform in q and n, although the finite-core gap and
+normalized readout strengths are not.
+
+Role defects are conserved since neither G nor F changes a role.
+Clock defects are conserved by the inherited clock rules. A zero vector
+therefore has legal roles and lies on the unique legal clock path.
+On that path gauge away the work permutations. Propagation becomes the
+scalar path Laplacian tensored with the entire work space. Its zero
+vectors are constant in clock time. The I-sweep gates are identity, so
+its initialization pins restrict their common input to exactly the
+product subspace in Section 2, of dimension 2^m. This proves completeness
+of the ground code, including all malformed head-number and work sectors.
+No work-machine-sector assumption remains.
+
+Every rejected computational-basis input violates at least one initial
+projector of weight eta. After gauging, each such input is a path with a
+positive pin. The run-7 path-pin bound gives the stated gap. Positivity
+and the conserved defects add the minima kappa_clock and kappa_role.
+On the accepted inputs the product grading is (-1)^(sum x_f), and all
+gates preserve it. Hence the full history isometry intertwines grading
+with logical parity.
+
+### 7. Physical readouts and all-time correctness
+
+For each f define the two signed edges by
+
+    (a_(f,p),b_(f,p)) = (floor(2f/s), (2f mod s)+p), p=0,1,
+
+joining e_a to o_b. Define record matrices
+
+    X_f=sum_(p=0,1) (-1)^p (|e_a><o_b|+|o_b><e_a|),
+    Y_f=sum_(p=0,1) (-1)^p i(|o_b><e_a|-|e_a><o_b|).
+
+They annihilate *. At the left endpoint use X_f,Y_f; at the right use
+Y_f,-X_f. Multiply each by the local READY projector and the no-head
+projector, and, if desired, by its endpoint-role projector. They are
+one-site Hermitian odd operators, identity on the clock factor.
+
+During every active clock vertex, the head carrier x is zero, the
+selected input site is zero and all other registers depend only on
+z_f, the bit string with x_f removed. The head's p is prefix or suffix
+parity of z_f. This statement follows from Section 4 during the readout
+walk. At partial sweeps, work changes only at the unique G head move
+and the unique F collision. All these moves during READY use identity
+record gates. At activation or clearing the head is at the endpoint,
+where the readout projector is zero. Thus no partial update is measured.
+
+The rest configurations for x_f=0 and x_f=1 are equal at each active
+time. Conversely the data and neutral registers distinguish all z_f's.
+The edge matrix elements are therefore the Jordan-Wigner prefix/suffix
+signs. Distinct edge pairs give zero for a different flavor operator.
+Averaging over the orthogonal clock states proves the four port identities
+in Section 1 with alpha_uf=N_port,uf/C_n.
+
+For the density readout use the proper edge color c=(a+b) mod s. On the
+endpoint and its neighbor define D_f to have value +1 on (e_a,e_c)
+and -1 on (o_b,e_c) for the two edges of f, and zero elsewhere. A fixed
+vertex and color determine a unique edge, so these assignments never
+conflict and different f have disjoint supports. Multiply by READY and
+no-head projectors on both sites. Its compression is beta_uf Z_f,
+where beta_uf=N_density,uf/C_n. These even NN fields permit independently
+chosen chemical potentials. In general beta is not alpha.
+
+The schedule is independent of all logical values. All visibility counts
+are therefore input independent. Each readout lasts two full traversals
+of a segment with n>=8, so every port and density count is positive.
+Both left and right readouts are proved, including the right parity
+dressing, and both are implemented by the same repeated bond.
+
+### 8. Counts without exponentially long simulation
+
+For a full work sweep k, let a_k count its active vertices including the
+begin, all n-1 outward moves, the bounce, and all n return/finish moves.
+There are 2n+1 such vertices. Let b_k be the active indicator after the
+completed sweep. Both are periodic in k with period T_m.
+
+There are 2n inactive initialization/return vertices before the first
+begin. Between sweep k and k+1, 1<=k<2^n, the binary clock adds
+2 nu_2(k)+1 vertices, all with work configuration k. The final overflow
+adds n-1 vertices. Therefore, componentwise for every port and density,
+
+    N = sum_(k=1)^(2^n) a_k
+        +sum_(k=1)^(2^n-1) [2 nu_2(k)+1] b_k
+        +(n-1)b_(2^n).
+
+This reproduces C_n when all indicators are one and the initialization
+is included. The only exponentially large integers have O(n) bits.
+Use nu_2(k)=sum_(t=1)^(n-1) 1_(2^t divides k). At fixed t, b_(2^t j)
+has period T_m/gcd(T_m,2^t), so complete periods and one residual prefix
+suffice. clean_readout_counts.py implements this finite formula with
+integer arithmetic and simulates only one polynomial-length machine
+cycle. It is an explicit definition of every rational normalization,
+without a circuit list of length 2^n.
+
+### 9. Alphabet accounting and scope
+
+The direct-sum realization gives the advertised K_direct=446400 in
+q_core=K_direct(q+1). If the literal tensor shape of the old contract is
+desired, take s0=32 for role,cursor,data, the separate READY bit, and two
+lanes each of dimension r=465=1+8*58. Embed the head overlay in the first
+lane with the other empty. Extend all operations by identity outside this
+local subspace. Initialization excludes those additional states. Then
+
+    K_padded=30 s0 r^2=207576000.
+
+This is a concrete but unnecessary padding. Its outward gate is the
+ordered G above, not the simple lane SWAP of the old packet toy. The
+clock works for an ordered product of arbitrary G's; commutation of
+neighboring work gates is not required. The smaller direct-sum count
+is the implemented one and should be used for the microscopic dimension.
+
+This construction supplies first-order Clifford channels. It does not
+supply C19's port-accessible excited energies or spectral weights. Its
+port-touching gates also do not satisfy the hypotheses of the C18/C19
+static-Bell, port-idle obstruction, so that obstruction is respected.
+The stronger fixed-d unbounded-c program remains separate.
+
+### 10. Reproduction and actual checks
+
+    OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python3 clean_readout_machine.py
+    OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python3 clean_readout_checks.py --clock-q8
+    OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python3 clean_readout_physical_checks.py
+    OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python3 clean_readout_counts.py
+    OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python3 clean_core_bond.py
+    OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python3 clean_core_kernel_checks.py
+
+The tests include all local permutation/inverse/grade columns at q=4,8,12;
+all 4 and 256 initialized inputs for complete cycles at q=4 and q=8;
+24 q=12 inputs; 51200 paired clean environments at q=8; all 5124 clock
+vertices for all q=4 inputs; all 524298 vertices for one q=8 input;
+and comparison with the machine after every full sweep. Separate tests
+apply the actual physical endpoint matrices to all four q=4 histories,
+recovering the four Clifford operators and both sets of densities with
+zero integer-matrix discrepancy. They do not insert the target matrix
+as the measured operator.
+
+The full immutable-role grammar is counted through length 30. The entire
+onsite I-pin alphabet at q=4 rejects 148790 columns and retains exactly
+one or two columns according to the role, including every head phase
+and carrier state. Another 12000 random full-work-space G,F involution
+and grading tests include inputs outside the promised machine sector.
+
+At q=4, the port counts are (254,254) on the left and (260,260) on the
+right; the density counts are (218,218) and (220,220). At q=8 the counts
+are flavor dependent; their full lists are in clean_readout_checks.json.
+The polynomial counting formula agrees with both complete-clock checks
+and also evaluates the q=12 history, whose clock has over 800 million
+vertices, without traversing that history.
+
+The sparse core-bond oracle passed Hermiticity and exact number-conservation
+checks on 1600 arbitrary bulk columns at each q=4,8, together with both
+boundary matrices. Applying that actual full-space Hamiltonian to every
+one of the four q=4 history columns (5124 configurations per column)
+gives zero residual, using 21002 local matrix entries per column. This
+checks the core Hamiltonian independently of reading a program trajectory.
+It is a zero-state test, not a numerical full-spectrum completeness test;
+completeness and the gap follow from the positive initialization proof.
+
+These are finite algebraic and controller tests. No microscopic central
+charge was measured and no thermodynamic extrapolation was performed.
+
+
+## 41. Microscopic composition and the remaining infrared input
+
+Subsection numbers and references below are local to this section.
+
+Status: exact finite construction and first-order reduction. Conditional
+infrared consequence under the two stated continuum inputs. No microscopic
+CFT measurement or unconditional counterexample is claimed here.
+
+### 1. A concrete microscopic family
+
+The new core meets the hypotheses of arrow_wrapper.md,
+selector_wrapper.md and helix_equalizer.md. Those earlier finite results
+are used as proved inputs, not rederived. With K=446400, put
+
+    Q=K(q+1),  m=q^2/8,  k=m+6,  b=k+1,
+    d=96Q+48.
+
+Q denotes the core's full site dimension here, not its control count.
+The complete on-site alphabet and every matrix element of the positive
+core are specified by clean_readout_machine.py and clean_core_bond.py.
+The latter evaluates an arbitrary column of its full bulk or boundary
+matrix, including clock-illegal, role-illegal and multiple-head sectors.
+It does not enumerate an exponentially large block Hamiltonian first.
+
+Use arrow_wrapper equations (2)-(5), with this h_pay,a_pay,b_pay and
+selected occupied length k. Then use selector_wrapper equations (4),(7)
+and the two helix tracks in helix_equalizer equations (2)-(6). This
+specifies the unperturbed periodic bond h_base and the complete base
+code on cells of lengths b,b+1. All its coefficients are fixed once q
+and k are fixed. They do not depend on the later ring length L.
+
+Let Abar_a=A_a/alpha_Lf and Bbar_a=B_a/alpha_Rf for a=2f-1,2f, and
+Dbar_f=D_Lf/beta_Lf. Lift them through the wrapper and apply the endpoint
+helix compensators. Denote the resulting physical operators by Ahat,
+Bhat,Dhat. The density lift is on the first internal bond, including
+both possible selector letters after #, as in helix_equalizer Section 4.
+It compensates the joint endpoint/neighbor occupation factor separately
+from the single-site port occupation. Then their compressions at BOTH
+cell lengths are Gamma_a, i Gamma_a P and Z_f, respectively.
+
+For a desired quadratic payload, take
+
+    H_pay = sum_(j,f) [-t_f(exp(i theta_f)c†_(j,f)c_(j+1,f)+h.c.)
+                       +mu_f(n_(j,f)-1/2)],
+
+and its real two-by-two block in the R tensor Gamma convention,
+
+    J_f=-(t_f/2) [[sin theta_f,cos theta_f],
+                  [-cos theta_f,sin theta_f]].
+
+The following is a short specification of the full repeated microscopic
+bond, using only the explicitly defined two-site terms above:
+
+    h(epsilon)=h_base
+        +epsilon [h_marker + kappa h_marker_number
+                   +P_cut sum_(f,u,v) J_f[u,v]
+                           Bhat_(2f-2+u) tensor Ahat_(2f-2+v)
+                   -(1/2) sum_f mu_f Dhat_f].
+
+Here h_marker is the compensated local H_0 to H_2 marker conversion of
+helix_equalizer equation (10), divided by its positive projected overlap
+so its retained hopping is the chosen J_0>0. h_marker_number is the
+usual split on-site marker density. kappa selects an interior length
+fluid density. P_cut includes X# and R#, not only R#. The field term
+has its stated first-internal-bond projector. Every displayed term is
+Hermitian and nearest neighbor. There is no explicit spatial period in h.
+
+The actual positive core bulk is not small as a matrix, even at q=4 its
+site dimension is 2232000, but its sparse column oracle is executable.
+The full ring bond is equally a finite-matrix formula through the cited
+wrapper definitions. A full violating instance has not been materialized.
+
+### 2. A stronger exact symmetry
+
+The machine preserves the integer charge d+1_(v odd)+x_head on every
+operation. The code charge is sum_f n_f. Give all wrapper vacancies,
+selector letters and helix tracks zero charge, and give occupied wrapper
+letters the charge of their core record. Vacancy hopping transports that
+charge unchanged, as do the marker conversion and all positive filters.
+The compensators act only on neutral helix factors.
+
+Each physical X_f+iY_f lowers the record charge by one. Although B uses
+(Y,-X), the block J_f above combines the physical operators into a
+linear combination of XX+YY and YX-XY on the two records. Each conserves
+the sum of charges. Density readouts are diagonal in charge. Hence the
+entire microscopic h(epsilon) has exact total U(1), in addition to exact
+marker conservation. No exact U(1)^m is claimed. This improves the
+parity-only hypothesis used in C13 and removes uniform pairing from the
+allowed corrections without relying on momentum detuning.
+
+### 3. The exact retained theory and explicit nonresonance
+
+The existing projection and ring quotient give a free length fluid plus
+the m-flavor quadratic payload at first order. It has m+1 oscillator
+families. The quotient retains the common fermion spin structure and
+combined marker/payload momentum condition. It applies to every
+sufficiently large integer L because both b and b+1 cells are mobile.
+There is no restriction to b dividing L. As in C13, finite-size zero-mode
+backgrounds can drift with L; this is the usual incommensurate-chain
+interpretation, not convergence to one fixed untwisted vacuum sector.
+
+A fully explicit, deliberately inefficient choice avoids a genericity
+assumption about Fermi momenta. Use the C19 geometric design with
+alpha=exp(-1), simplifying the hopping amplitudes to t_f=1:
+
+    p_(f,R)=pi alpha^(2f-1), p_(f,L)=pi alpha^(2f),
+    k_f=(p_(f,R)-p_(f,L))/2,
+    theta_f=-(p_(f,R)+p_(f,L))/2,
+    mu_f=2cos(k_f),
+    nu=1/2+alpha^(2m+1)/10.
+
+The payload dispersion is -2cos(p+theta_f)+mu_f. Its two roots are the
+displayed p's, with speeds 2sin(k_f)>0. The length reference speed is
+2J_0(b+nu)sin(pi nu)>0 in physical coordinates. Thus the first-order
+spectrum is z=1, with positive speeds, for each one fixed finite m.
+No speed lower bound uniform in m is asserted.
+
+The following elementary bounds make the finite momentum margins explicit.
+For distinct exponents i in {1,...,2m},
+
+    |sum_i sigma_i alpha^i| >= alpha^(2m)(1-2alpha)/(1-alpha)
+
+whenever sigma_i=+1 or -1 and the sum is nonempty. The smallest exponent
+term dominates the entire possible tail because alpha<1/2. Also the
+absolute sum of all powers is alpha/(1-alpha)<1. Therefore the same
+lower bound, times pi, applies to distance from 2pi Z for every distinct
+signed two- or four-branch sum. Doubled branches have distance at least
+2pi alpha^(2m). In particular one may use
+
+    delta_pay=pi alpha^(2m)(1-2alpha)/(1-alpha)>0.
+
+For a mixed length/payload bilinear,
+|p_i +/-p_j|<=pi(alpha+alpha^2). Its distance from either sign of
+2pi nu, modulo 2pi, is at least
+
+    delta_mix=pi[1-alpha-alpha^2-alpha^(2m+1)/5]>0.
+
+The potentially dangerous pure length harmonic h=1 is excluded by
+0<nu<1. Higher pure harmonics have free dimension at least four on
+resonance, as derived in C13. More generally a purported exact mixed
+relation sum z_i p_i-2pi h nu=2pi l would give a rational polynomial
+in alpha with coefficient -h/5 at alpha^(2m+1). Its transcendence forces
+h=0 and then all z_i=l=0. Only the finite low-dimension margins are
+needed for weak-coupling stability; an all-order Diophantine estimate is
+not being assumed.
+
+The C13 operator classification therefore has no non-Gaussian uniform
+resonance through free dimension two. Exact total number conservation
+further restricts that list. Neutral currents and their quadratic
+products shift fillings, speeds and the positive Gaussian stiffness.
+All remaining allowed resonant vertices have free dimension at least
+three. At each fixed finite m there is consequently a nonzero Gaussian
+stability neighborhood, conditional on the standard RG input below.
+
+### 4. What a finite-coupling conclusion still uses
+
+There are two distinct inputs.
+
+M, massive-sector integration. In the mobile-cell model, after keeping
+propagation in the entire retained manifold unexpanded, integrating out
+local machinery defects produces exponentially local spatial kernels
+and short-time kernels. Their norm after dividing by epsilon is at most
+C epsilon B^2/Delta, and their frequency dependence is suppressed by
+omega/Delta. B includes the FULL physical norms of normalized ports,
+fields, marker conversion and compensators. C and Delta may depend on
+the chosen finite q,k, but not on L. Defect costs stay positive at
+sufficiently small epsilon.
+
+G, Gaussian infrared stability and identification. A sufficiently small
+number-conserving, quasi-local deformation of the mobile m+1-mode
+reference, with the stated momentum margins and positive stiffness,
+flows to a compact Gaussian theory with m+1 oscillator sectors and its
+specified ring zero-mode quotient. It therefore has c=m+1 and z=1.
+
+G is the standard bosonization/RG conclusion used in C13 and ir_control.
+M is the usual massive-mode elimination used in the later
+research_continuation/IR_AUDIT, but that file explicitly does not prove
+the connected-excursion convergence estimate for moving cells. It is
+stronger than the finite-order local SW theorem. Neither M nor G was
+proved for this new microscopic bond or numerically verified here.
+
+There is substantial microscopic support for M, beyond an isolated
+finite-volume gap. In a fixed legal marker pattern the established
+wrapper theorem gives the additive operator lower bound
+
+    H_base-eL >= Delta_* sum_(selected cells j) Q_j
+                    +gamma sum_(wrong cells j)(1+|l_j-b|),
+    gamma=t eta_b-U>0.
+
+The selected-cell projectors are on disjoint finite cells. A wrong cell's
+cost also obeys gamma(1+|l-b|)>=gamma l/(b+1), so arbitrarily long wrong
+cells pay for their volume. A local perturbation creates or moves defects
+in a bounded number of adjacent cells. These facts are the microscopic
+inputs to a connected-excursion estimate. They do not by themselves
+prove its resummation in a critical retained sector.
+
+Assuming M and G, choose a positive tolerance tau inside the Gaussian
+neighborhood, including the smallest velocity and all momentum margins.
+At fixed q,k and all physical normalizations, choose one fixed epsilon>0
+with epsilon B<<Delta and C epsilon B^2/Delta<tau. Then the normalized
+retained action lies in that neighborhood for all sufficiently large L.
+This gives the conditional conclusion c=m+1. Sending epsilon to zero
+with L would not establish it and is not part of the prescription.
+
+This conditional reduction is complete at the finite-dimensional end.
+Whether M can be accepted without a separate model-specific argument is
+now the decisive issue. The report does not promote a finite-order SW
+error proportional to L into control of conformal levels proportional
+to 1/L. No additional compiler or clean-readout assumption is hidden in M.
+
+### 5. A concrete resource inequality, not a measured violation
+
+For K=446400, take q=1536K. Exact integer arithmetic gives
+
+    q = 685670400,
+    m = 58767987179520000,
+    k = 58767987179520006,
+    Q = 306083267006400,
+    d = 29383993632614448.
+
+The conditional central charge m+1 exceeds d-1 by
+29383993546905554. These integers are in clean_readout_resources.json.
+They are an existence-scale example, not a practical simulation proposal.
+The construction gives d=O(q), c_projected=O(q^2), so optimizing this
+large controller constant is not needed for the resource inequality.
+
+The conclusion is conditional on M and G, with no microscopic central
+charge estimator. Under the task's verified-result criterion, this run
+is recorded as nonconclusive. Its new result is the explicit initialized
+core and the resulting finite-matrix candidate family. No full-class
+upper bound and no unbounded-c construction at fixed d follows.
+
+### 6. Next work, ranked
+
+1. Independently audit the 58-control machine and its microscopic bond
+   oracle, particularly counter restoration, reversed collision order,
+   the I-pins, and every partial-time READY convention. The new proof
+   and tests are by the same author; no independent referee is claimed.
+2. Establish M for this concrete number-conserving first-order family,
+   or provide a precise standard theorem whose hypotheses it meets.
+   The additive defect-energy bound above is available. A proof of only
+   finite-order SW or prethermal behavior is insufficient.
+3. Apply the number-conserving version of C13's Gaussian analysis to
+   that effective action. Keep the common ring quotient, relative error
+   scale, velocity minimum and drifting zero modes explicit. A numerical
+   check would require a much cheaper equivalent core or cluster work;
+   a direct violating-chain calculation is not a reasonable local job.
+4. Separately, use the completed port-touching controller interface to
+   revisit C19's source filters. Ground-code readout alone does not
+   implement their resolvent, so fixed-d unbounded c remains open.
+
+
+## 42. Auxiliary endpoint and color shuttle
+
+Subsection numbers and references below are local to this section.
+
+Status: proved finite interface, with exhaustive local checks and finite
+history checks. Conditional on prepared marked output records. It is not a
+complete initialized high-channel core or a conformal-chain construction.
+
+### 1. What this adds
+
+The run-7 clock and clean-readout contract are inherited. The new sparse
+construction in contrib/controller_instantiation supplies a circuit and a
+preloaded dispatcher, but its README explicitly leaves endpoint transport
+and elementary-clock readout unfinished. The following machine supplies
+that interface for any four prepared output records. It uses no travel
+history, no logical-value-dependent control, and no growing controller.
+The implementation is independent of that dispatcher and can be called by
+one. Its integration with a generator and verifier is still required.
+
+Let n>=8. The ordinary tape has static marks
+
+    L LI ... LP LC ... RC RP ... RI R,
+
+with LP at a, LC at a+1, RC at b, RP at b+1, where
+2<=a, a+1<b, b+1<=n-3. Unlisted sites have mark B. Each site has one
+READY bit and one quantum record of dimension D. The latter can be a
+q+1-state graded port register. Other inert work factors can be tensored
+on, but their dimensions must then be counted.
+
+The intended source records are LP, LC, RC and RP. These may be entangled
+with each other and with all the other work registers. The machine starts
+at L with READY=0 everywhere. It does not assume the source code is a
+product state or retain a copy of a quantum record in its control.
+
+### 2. The literal collision table
+
+endpoint_shuttle.py defines 21 direction-fixed controls, one for each
+segment in the following itinerary. The letter S means SWAP the quantum
+records at every elementary move. The letter I means identity on records.
+A flag toggle occurs on arrival at the end of a starred segment.
+
+| Phase | Segment | Gate |
+| :-- | :-- | :-- |
+| 0 | L to LP | I |
+| 1 | LP to L | S |
+| 2 | L to LC | I |
+| 3 | LC to LI | S |
+| 4 | LI to RP | I |
+| 5 | RP to R | S |
+| 6 | R to RC | I |
+| 7 | RC to RI | S |
+| 8 | RI to R, toggle right READY | I |
+| 9 | R to L, toggle left READY | I |
+| 10 | L to R, clear right READY | I |
+| 11 | R to L, clear left READY | I |
+| 12 | L to RI | I |
+| 13 to 20 | Reverse phases 7 to 0 | Same gate, reverse direction |
+
+The ordinary neutral symbol is (mark,READY), giving B=18 states. At the
+end of a segment its control advances modulo 21 and its specified flag
+is toggled. At a mark different from its start and end, the control and
+flag are unchanged. No semantic rule is specified at the starting mark.
+Those local pairs never occur as arrivals in the promised trajectory.
+
+These are 336 rules. Their domains and ranges are disjoint. For any
+control k, its scan-loop range excludes its starting mark; the sole rule
+entering control k from the preceding phase arrives at that mark. Its
+scan-loop domain excludes its endpoint; the rule leaving that phase uses
+that endpoint. Flag toggles are permutations and the static marks are
+unchanged. Thus this is an injection on local pairs, not merely an
+invertible trajectory.
+
+For each static mark, fix every unused domain/range pair common to both
+sets, then pair the remaining domain/range lists in increasing order.
+There are equal numbers, since all prescribed entries preserve that mark.
+This specifies the complete permutation C on 378 states, exported as
+endpoint_shuttle_table.json. No behavior on malformed local inputs is
+left undefined.
+
+### 3. The repeated-bond implementation and its count
+
+Use the single-head ordered-sweep interface of
+contrib/exact_route/SWEEP_INTERFACE.md. This is an explicit alternative to
+the two-lane packet layout of run 7. A site is either an ordinary record
+or a record with one of 21 controls and a fresh/updated head bit. Its
+dimension is
+
+    w = 18(1+2*21)D = 774D.
+
+A control has a fixed direction, so no additional direction factor is
+needed. For a right-moving fresh head, G moves it from the left site to
+the right, changes fresh to updated, and applies its I or SWAP record
+gate. Its reverse block applies the inverse gate. For a left-moving head,
+use the opposite orientation. All other two-site sectors are identity,
+including the zero-head and two-head sectors. These subspaces are
+orthogonal, so G is a Hermitian unitary on the entire two-site space.
+
+The onsite F maps an updated head through C to a fresh head, and maps a
+fresh head through C^{-1} to an updated head. It fixes ordinary sites.
+Thus F is also a Hermitian unitary on the entire onsite space.
+
+In an ordered left-to-right sweep, a fresh head makes only one move. A
+right-moving updated head cannot match the forward rule at the next bond
+or its inverse, which requires it in the right slot. A left-moving head
+moves behind all remaining bonds. The subsequent onsite return sweep
+performs one collision. Hence a complete clock sweep executes one of the
+machine's elementary move-and-collision steps.
+
+Decorate the 15-letter clock outward moves with G and return moves with
+F. Its complete clock graph and conserved legality penalties are unchanged.
+This gives a uniform positive NN propagation Hamiltonian of dimension
+
+    d_shuttle = 15w = 11610D.
+
+For D=q+1, 11610 is the concrete linear prefactor for this module only.
+It is not the K of the completed machine in readout_machine_contract.md.
+In particular it excludes input encoding, generation, verification and
+any other work factors. The formula K=30 s0 r^2 applies to the different
+two-lane architecture; substituting this module's 18 and 21 there would
+not describe this machine.
+
+All controls and marks are even. Give fresh and updated overlays the
+grade of their underlying record. Identity and ordinary SWAP preserve
+the total product grading on the two sites. The onsite collision does
+not change records. The entire circuit therefore preserves grading on
+all states, including malformed ones. No fermionic SWAP convention is
+being assumed for the microscopic tensor-product sites.
+
+### 4. Clean ports at every clock vertex
+
+The first eight segments move LP to L, LC to LI, RP to R and RC to RI.
+The paths do not disturb an already placed record. LP travels left from
+a, leaving LC at a+1 unchanged. LC then stops at LI rather than entering
+L. RP travels right from b+1, leaving RC at b unchanged; RC stops at RI.
+The ordering of source positions keeps the two pairs separated.
+
+No flag is enabled during any of these record moves. After phase 7,
+the next five phases use identity quantum gates only. The right flag is
+enabled first, the left second, the right cleared third and the left
+cleared fourth. Only after both are clear does the inverse transport
+start. It returns the whole record permutation to identity, not only the
+four designated records. The neutral configuration also returns to its
+start. The cycle length is
+
+    T(n,a,b) = 10n+8a-4b-12.
+
+Indeed the first eight distances sum to 4a+3n-2b-4, the readout itinerary
+to 4n-4, and inverse transport has the same length as forward transport.
+This is less than 14n for all the allowed positions, so one full cycle
+fits among 2^n sweeps for all n>=8. There is no absorbing halt.
+
+Define the endpoint readout to be READY times the projector onto no head
+at that endpoint times the desired record operator. Define a colored
+readout on an endpoint and its adjacent site with no-head projectors at
+both sites. The head overlay is not silently identified with an ordinary
+record by either physical observable.
+
+At every active elementary clock vertex, the selected record is already
+at its intended site. During a partial outward sweep the one head may
+be fresh or updated, and during a partial return it may or may not have
+collided. Those differences change only neutral control. If a head sits
+on a readout support, the physical operator vanishes by definition. If it
+does not, its pullback is exactly the intended source-record operator.
+This proves the claim at all partial-sweep vertices, including flag
+activation and removal, not just at completed sweeps.
+
+The scheduling and all active-time sets are independent of quantum data.
+Therefore if an input isometry V has source port maps A_L,A_R and source
+colored maps D_L,D_R, its normalized clock history has maps
+
+    A'_u = (N_port,u/C_n) A_u,
+    D'_u = (N_density,u/C_n) D_u.
+
+Here C_n=(2n+4)2^n+n-4. The counts are positive but need not agree with
+each other or between ports. An incomplete last cycle adds only clean or
+inactive vertices and does not spoil either identity. Input-independent
+counts, rather than equal dwell lengths, are the necessary condition.
+
+These statements preserve the correct C8 Clifford parity dressing and
+its colored densities when applied to that prepared code. They also
+apply to arbitrary prepared entangled codes. They do not construct V.
+
+### 5. Finite checks and limitations
+
+Run
+
+    OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python3 endpoint_shuttle.py
+    OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python3 endpoint_shuttle_checks.py
+
+The first writes the complete collision table. The second checks:
+
+* all 378 collision entries and their inverse, preserving every static mark;
+* 12096 fresh/updated bond cases, including inverse branches and grading;
+* 75 complete cycles, n=8,...,32, totaling 14100 machine steps;
+* every clock vertex at n=8,9,10, respectively 5124,11269,24582 vertices,
+  including exact comparison with the machine after every complete sweep;
+* source-code port and colored-density matrices at (q,m)=(4,2),(8,4),(8,8),
+  with logical dimensions 4,16,256 and up to 4096 code entries.
+
+All pass. Port and density matrix discrepancies are zero in the
+implemented arithmetic. The clock active counts (left,right) are
+(1028,1040), (2300,2300), (5276,5356) for ports, and (884,880),
+(2020,2020), (4704,4628) for densities. They are not CFT estimators.
+
+The source code in the algebraic test has an abstract residual-environment
+label. The test does not assert that this label has already been compiled
+into this module's D-dimensional records. The finite-history check proves
+transport as an operator identity for arbitrary records, while the
+separate source-code test verifies the inherited Clifford formulas. Their
+composition is exact, conditional on the actual prepared input code.
+
+Remaining tasks are an autonomous input encoder/verifier and a counted
+composition with this module. For C19, the excited-state spectral measures
+are another requirement. A theorem about ground-code port compression
+does not identify the source resolvents of the enlarged history cell.
+
+
+## 43. Eighth-run audit and ranked continuation
+
+[proved finite result] The clean-readout program is now supplied. The
+core has Q=58 controls, 928 completed collision blocks, full-space
+nearest-neighbor matrices, complete initialized code and finite gap,
+exact total-number conservation, both endpoint Clifford maps and both
+colored-density maps. No program-generation or surplus-input assumption
+remains in this first-order core. The direct-sum prefactor is 446400;
+the literal two-lane padding has s0=32,r=465,K=207576000. The optimized
+count is the one used in the microscopic resource calculation.
+
+[numerical] The eight new scripts compile and all their checks pass.
+The source-level norm bounds are uniform in q. A sparse core-bond column
+was also evaluated at the resource example q=685670400, where the actual
+core dimension is 306083267006400. This checks that the matrix-element
+oracle has no implicit allocation proportional to q or the block length;
+it does not simulate that astronomical cell. The full periodic bond and
+its target parameters at that size are exact formulas, not a claim about
+double-precision materialization or numerical infrared spectra.
+
+[provenance] All new finite proofs and tests were performed by this
+agent, without an independent referee. C21-C23 progress files were absent
+at the initial read and appeared during the run. Their completed handoffs
+were read during this final audit. C21 has a local Clifford-cursor source
+measure but a zero-field Bloch obstruction to its intended many-flavor
+phase. C22 has a charged 17-state bus with a related n=2 band-gap
+obstruction. C23 records the second-order equalization obstruction and
+conditional assembly ledger. None supplies the C19 spectral compiler.
+Those are source-reported results, not independently checked C8 theorems.
+The new C8 construction is first order and does not invoke their missing
+second-order equalization. No external file was modified.
+
+The finite-coupling conclusion remains conditional on M and G in Section
+41. The precise remaining task is an infrared reduction for the actual
+mobile first-order bond, retaining local massive defects and the gapless
+payload/length manifold in the correct order. Standard finite-order SW
+alone is insufficient. The exact U(1) is useful for that task, but is not
+a substitute for it. No microscopic central charge was measured.
+
+Ranked next steps are (i) an independent audit of this concrete machine
+and core bond, (ii) massive-sector integration for that concrete model,
+(iii) the number-conserving mobile Gaussian infrared analysis with all
+physical norm factors, momentum margins and ring offsets retained, and
+(iv) the separate fixed-d C19 spectral problem. Do not redo the completed
+clock, alphabet count, parity toy or a generic program-generation
+argument. The original conjecture remains nonconclusive in this report.

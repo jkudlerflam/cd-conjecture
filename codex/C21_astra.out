@@ -1,0 +1,7 @@
+Saved the partial result in [RESULT.md](RESULT.md) and updated PROGRESS.md.
+
+I constructed a 16-state local cell with exact code degeneracy, exact parity, and rank-\(2n\) Gaussian second-order exchange. ED confirms cubic residuals for \(n=1\) on two/three cells and \(n=2\) on two cells.
+
+The compiler remains incomplete. The resulting hopping matrix cannot produce displaced zero-field Fermi points. Independent flavour phases, chemical potentials, and the completed chain’s \(d_0\) remain unresolved. The files include full isolated-cell rules, this obstruction’s proof, and delayed Jacobi filters that address a separate locality constraint.
+
+[gpt_solve: backend=codex model=gpt-6-astra effort=high transcript=20261027T224538-22745]

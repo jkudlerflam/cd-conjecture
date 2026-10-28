@@ -91,12 +91,12 @@ def whole_space_checks():
         for _ in range(6000):
             c=Config(list(rng.choice(ROLES,2)),[[int(rng.integers(2)),int(rng.integers(2)),int(rng.integers(2)),int(rng.integers(q+1))] for _ in range(2)],
                      int(rng.integers(2)),str(rng.choice(M.names)),int(rng.integers(2)),int(rng.integers(2)),int(rng.integers(2)))
-            initial=c.snapshot();parity=(sum(t[1]+int(q//2<=t[3]<q) for t in c.tape)+c.x)%2
+            initial=c.snapshot();parity=(sum(t[1]+int(q//2<=t[3]<q) for t in c.tape)+c.x)
             M.bond(c,0,q)
-            assert (sum(t[1]+int(q//2<=t[3]<q) for t in c.tape)+c.x)%2==parity
+            assert (sum(t[1]+int(q//2<=t[3]<q) for t in c.tape)+c.x)==parity
             M.bond(c,0,q);assert c.snapshot()==initial
             j=c.pos;M.onsite(c,j,q)
-            assert (sum(t[1]+int(q//2<=t[3]<q) for t in c.tape)+c.x)%2==parity
+            assert (sum(t[1]+int(q//2<=t[3]<q) for t in c.tape)+c.x)==parity
             M.onsite(c,j,q);assert c.snapshot()==initial;count+=1
     return dict(random_whole_space_GF_involution_tests=count)
 

@@ -1,0 +1,9 @@
+Completed [RESULT.md](<./RESULT.md>) and updated [PROGRESS.md](<./PROGRESS.md>), with every derivation and reproducible checks.
+
+[Proved] The Sidon target preserves C19’s exact construction. Every finite-order traceless effective coefficient carries \(\rho^2\).
+
+[Numerical, \(n=1,2\)] Fourth-order norms divided by \(\rho^2\) are \(1.2376,4.3766\) for one bond and \(0.8622,1.6116\) for connected adjacent bonds. Independent checks passed.
+
+[Heuristic, conditional] The second-order infrared transfer remains viable. Local massive-sector elimination and wrapper control remain assumptions; nothing found here kills route A.
+
+[gpt_solve: backend=codex model=gpt-6-astra effort=high transcript=20261028T001241-42662]

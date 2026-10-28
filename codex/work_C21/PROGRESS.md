@@ -1,6 +1,7 @@
 # C21 progress
 
-2026-10-28. Initial investigation. No completed fixed-alphabet compiler.
+2026-10-28. Completed partial result. Read RESULT.md first.
+No completed fixed-alphabet compiler of the intended target.
 
 Read the route-A background, project STATE, repository STATUS, C19 RESULT,
 C18's interface construction, C8's current handoff, and the collaborator
@@ -116,5 +117,41 @@ one-cursor Hamiltonian for n=1,2,3 (dimensions 12,48,144). It finds
 The smallest n=3 hopping singular value is only 5.75e-14, so full rank
 is established analytically rather than inferred from that number.
 Full n=1 ED on two and three cells (dimensions 256,4096) has cubic
-canonical-matrix residuals. An additional n=2 two-cell full ED was
-started; n=2 three-cell ED for this interacting cursor has not been run.
+canonical-matrix residuals. The n=2 two-cell full ED also finished,
+dimension 65536, retaining all 16 code levels. Scalar ARPACK stalled
+and was interrupted; complete-parity-sector block LOBPCG succeeded.
+The final script bounds each cluster calculation to 180 seconds.
+Eigenpair residuals are <=1.82e-12 and halving exponents 3.0019,3.0037.
+n=2 three-cell ED for this interacting cursor has not been run.
+
+## Final handoff
+
+RESULT.md records task-by-task completion and limitations.
+LOCAL_CURSOR.md contains the entire 16-state isolated-cell rule table,
+full port completions, exclusion of every nonvacuum sector, exact parity,
+continued-fraction proof, growing-pole bound, full-rank proof, and the
+Bloch obstruction. MOMENTS_AND_FILTERS.md contains the product-code
+moment obstruction and its delayed-Jacobi algebraic repair.
+SCALAR_LADDER.md records the failed eight-state ladder and tree lemma.
+
+The remaining problem is the target's flavour structure, not merely
+the existence of local nonscalar source resolvents. For the new cursor,
+J^{-1}J^T has positive real spectrum, so its zero-field Fermi points
+cannot leave 0 or pi. Do not promote full hopping rank to n gapless
+flavours. A revised source geometry must be tested before the selector
+and full ring alphabet are assembled.
+
+Read C22 and C23's later progress during the final audit. C22 independently
+found the tree-gauge lemma and is testing a distinct charged bus, with
+a related wrong-band-structure obstruction. That numerical construction
+was not duplicated. C23 completes a conditional assembly/IR ledger,
+not the missing spectral compiler. No external files were changed.
+
+Final audit passed. All three Python files parse, all local Markdown
+links exist, and all reported numerical maxima and tested cluster sets
+agree with the saved JSON records. The exact local code/gap bound,
+right-port parity dressing, Clifford continued fraction, pole count,
+Gaussian contraction, and Bloch limitation were checked in the write-up.
+No independent referee or full n=2 three-cell cursor ED was performed.
+Project STATE.md remains unchanged because the task forbids outside
+writes; this file and RESULT.md carry the handoff.

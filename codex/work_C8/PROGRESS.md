@@ -1,5 +1,114 @@
 # C8 progress
 
+2026-10-28 UTC. Eighth run completed. Nonconclusive for the original
+c-d conjecture. The autonomous high-channel initialized core is now
+explicit, and its alphabet is counted. Start with this summary.
+
+## Current best answer
+
+The first-order core bottleneck from run 7 is closed by
+clean_readout_core.md and RESULT Section 40. For q divisible by four,
+m=q^2/8 and n=m+6, the 15-letter-clock core has site dimension
+446400(q+1), complete zero-space dimension 2^m, a positive explicit
+finite-length gap, both Clifford endpoint maps, colored flavor densities,
+and exact on-site U(1) restricting to total logical number. All source
+records of the exposed bit are removed before READY, at every partial
+clock step. The input pins reject every surplus work/head state.
+
+The machine has 58 direction-fixed controls, 799 prescribed collision
+blocks and 928 completed blocks. Its counters live on four existing
+q-state tape registers. The cursor selects the logical bit. No generic
+compiler, external instruction list or program verification is needed.
+The full cycle has 11m^2+105m steps, below the clock's 2^(m+6) sweeps.
+The first-order logical target is C19's displaced flavor hopping plus
+independent fields; C19's second-order spectral filters are NOT realized.
+
+Composing with the already proved mobile wrapper/equalizer gives
+physical d=96*446400(q+1)+48 and projected m+1 modes. A counted resource
+example is q=685670400, d=29383993632614448, projected c=58767987179520001.
+This is conditional resource accounting, not a measured violation.
+run8_microscopic_reduction.md and RESULT Section 41 specify the bond
+family, exact symmetries, an explicit nonresonant target, and two remaining
+inputs: uniform massive-sector elimination in the mobile critical system,
+and Gaussian infrared stability/identification. No conclusive original
+answer, full-class bound or fixed-d unbounded-c result is claimed.
+
+## Files to read and run
+
+* clean_readout_core.md, the full main theorem, construction, initialization,
+  grading, all-time proof, counts and reproduction instructions.
+* clean_readout_machine.py and clean_readout_table.json, actual complete
+  controller. q-dependent operations are six fixed record-gate families
+  and seven onsite families, each explicitly defined on its whole space.
+* clean_core_bond.py, sparse column oracle for the complete microscopic
+  positive core bulk/boundary matrices, including every illegal sector.
+* clean_readout_checks.py, cycle and full-clock checks.
+* clean_readout_physical_checks.py, direct physical port matrices, the
+  entire local initialization alphabet, and full-space involution tests.
+* clean_core_kernel_checks.py, actual Hamiltonian acting on sparse codes.
+* clean_readout_counts.py, exact active counts from one polynomial cycle
+  and binary valuation sums, without exponential clock simulation.
+* run8_microscopic_reduction.md and clean_readout_resources.json, counted
+  periodic candidate and the remaining finite-coupling assumptions.
+* endpoint_shuttle.py, endpoint_shuttle.md and associated checks/table,
+  an earlier independent 21-control generic transport module. Useful for
+  the sparse-route compiler, but not needed inside the new direct machine.
+
+## Verification completed
+
+All eight new Python files compile. All new scripts passed.
+Full primitive permutation and exact number checks at q=4,8,12.
+All 4/256 inputs at q=4/8 pass complete cycles; 24 q=12 samples pass.
+At q=8, 51200 paired active environments agree under flipping the exposed
+bit. Full-clock checks cover 5124 vertices for every q=4 input and
+524298 vertices at q=8. Direct physical compression at q=4 has zero
+integer error. The full local Hamiltonian annihilates all four q=4
+histories with zero residual, using 21002 matrix entries per column.
+The local input pins reject 148790 onsite q=4 columns, retaining exactly
+the stated 1 or 2 by role. Full-space G,F tests cover 12000 samples.
+Hermiticity and charge checks test 1600 bulk columns at each q=4,8 and
+both boundaries. Polynomial count results agree with both explicit-clock
+runs and extend to the 872415252-vertex q=12 history.
+
+No microscopic CFT numerics, cluster jobs, network, subagents, independent
+referee, commit or push. Only this folder was modified. C21/C22/C23 PROGRESS files were absent initially, appeared during the run,
+and were read in the final audit. They report local second-order buses
+with target-band obstructions and a conditional assembly ledger, not a
+completed C19 compiler. These are source reports, not audited C8 results.
+New sparse-route and C19 material was read but not modified or counted
+as new C8 work.
+
+## Remaining work, ranked
+
+1. Independent adversarial audit of the new machine and the full-space
+   core bond. Focus on reverse collisions, full initialization, exact
+   charge, color support and partial-time flags. Do not repeat the old
+   clock, parity toy or unspecified compiler argument.
+2. Establish the massive-sector integration input for this explicit
+   first-order mobile model. The complete finite code, positive gap and
+   additive defect-energy/volume bounds are now available. Finite-order
+   SW and prethermal control alone do not establish a CFT at fixed coupling.
+3. Apply the number-conserving C13 Gaussian analysis with the explicit
+   momenta of Section 41, tracking the smallest velocity, complete physical
+   norms, mixed resonances and ring zero modes. A microscopic two-estimator
+   study needs a much smaller equivalent implementation or cluster work.
+4. Only separately revisit C19's fixed-d spectral filters. The first-order
+   core does not fix their source resolvents or prove unbounded c at fixed d.
+
+The next run should begin with an independent audit or the concrete
+massive-sector reduction, not try to reconstruct the completed controller.
+
+Final audit: the positive core bulk/boundary norms obey 17,7,6 at unit
+scales, independent of q and n. Its sparse column oracle also runs at
+q=685670400 without allocating a q-sized or block-sized matrix. All new
+prose was checked for em dashes and forbidden confidence language. The
+complete current handoff is duplicated as RUN8_RESULT.md and
+RUN8_PROGRESS.md to survive the shared-repository synchronization issue
+seen at the end of run 7. Only local files were changed.
+
+## Earlier chronological record
+
+
 ## Run 8, active continuation
 
 Substantive step 37, new main result, 2026-10-28 UTC. The autonomous

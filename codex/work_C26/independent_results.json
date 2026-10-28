@@ -1,0 +1,38 @@
+{
+  "exact_Sidon": [
+    {
+      "n": 1,
+      "delta2_over_2pi": "5/24",
+      "delta4_over_2pi": null
+    },
+    {
+      "n": 2,
+      "delta2_over_2pi": "1/9",
+      "delta4_over_2pi": "1/270"
+    }
+  ],
+  "three_cell_dimension": 55296,
+  "direct_vs_streamed_K4": 2.088348796599686e-14,
+  "K2_additivity_error": 6.534933662163352e-15,
+  "K3_additivity_error": 6.833112574657158e-15,
+  "finite_coupling": [
+    {
+      "lambda_": 0.04,
+      "iterations": 12,
+      "graph_residual": 3.848168501713956e-16,
+      "hermiticity": 6.62326800065863e-19,
+      "error_after_2": 1.3335897403777932e-07,
+      "error_after_3": 3.3328559709819792e-09,
+      "error_after_4": 3.7091661431974364e-10
+    },
+    {
+      "lambda_": 0.02,
+      "iterations": 10,
+      "graph_residual": 3.311618373936412e-17,
+      "hermiticity": 1.2284476394907612e-19,
+      "error_after_2": 1.6626746996897685e-08,
+      "error_after_3": 2.0660526192739132e-10,
+      "error_after_4": 1.1164774107128936e-11
+    }
+  ]
+}

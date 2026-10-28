@@ -1,0 +1,13 @@
+Completed G7 for C8’s projected identity-transport wrapper. The [full derivation](<<repo>/codex/work_C27/RESULT.md>) gives the common Jordan–Wigner boundary sign, translation character, and winding lattice.
+
+The physical harmonic carries momentum
+\[
+Q_T=\rho(q_{\rm pay}+2\pi D)\pmod{2\pi}.
+\]
+Including its length-field dressing recovers C20’s resonance and dimension test. This continuum identification uses standard bosonization; the finite-ring statements are proved.
+
+Numerical full-spectrum checks passed through physical dimension 512, with maximum error \(2.67\times10^{-14}\). Payload translation checks reached dimension 1024.
+
+No obstruction to route A was found. The microscopic compiler and infrared control remain unproved. `PROGRESS.md` is updated, and all writes stayed in this folder.
+
+[gpt_solve: backend=codex model=gpt-6-astra effort=high transcript=20261028T001243-42848]

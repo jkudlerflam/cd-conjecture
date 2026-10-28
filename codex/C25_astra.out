@@ -1,0 +1,9 @@
+Completed the calculation and derivation in [RESULT.md](RESULT.md).
+
+The mismatch is tunable, \(O((w/U)^2)+O(\Delta_{\rm src}/\Delta_{\rm wrap})\), but \(\Delta_{\rm wrap}\) includes a vacancy tunneling gap scaling as \(w^8/U^7\). Equalization is not exact at finite parameters.
+
+The \(u\lambda\) term vanishes for this cell. The proposed G1 check preserves frustration freeness. Numerical checks passed; `PROGRESS.md` is updated.
+
+This supports the small-cell composition mechanism. The hopping-producing implementation remains untested.
+
+[gpt_solve: backend=codex model=gpt-6-astra effort=high transcript=20261028T001239-42478]
