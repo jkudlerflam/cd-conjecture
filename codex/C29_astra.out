@@ -1,0 +1,9 @@
+[RESULT.md](<<repo>/codex/work_C29/RESULT.md>) records a partial repair.
+
+[Proved] A 26-state, computation-free two-bus cell gives normal leading-order exchange at \(n=2\), independently adjustable phases and chemical potentials, and distinct displaced Fermi points. Arbitrary nonuniform flux alone cannot achieve this in C22’s balanced single-bus family.
+
+[Numerical] All requested two/three-cell checks at \(n=1,2\) are complete. Errors approach \(\lambda^3\); subtracting the proved cubic term leaves \(\lambda^4\) scaling. The effective \(n=2\) chain is runnable.
+
+[Limitation] Normality holds at leading \(\lambda^2g^2\), not at fixed finite \(g\). The repeated rules provably fail at \(n=3\). The arbitrary-\(n\) mechanism and mobile construction remain open; no universal computation-free obstruction was proved.
+
+[gpt_solve: backend=codex model=gpt-6-astra effort=high transcript=20261028T005220-55180]

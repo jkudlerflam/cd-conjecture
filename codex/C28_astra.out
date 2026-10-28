@@ -1,0 +1,10 @@
+Wrote [RESULT.md](RESULT.md), updated `PROGRESS.md`, and saved the [n = 2 numerics bond](logical_chain_n2.npz).
+
+- [Proved] A frustration-free 17-letter core with exact U(1), plus four simple Fermi crossings at n = 2.
+- [Numerical/heuristic] Generated pair tunnelling is irrelevant at one loop. Pairing is exactly forbidden.
+- [Numerical] All requested two/three-cell ED checks passed, with λ⁴ residuals.
+- [Proved] Diagonal readouts on this code supply at most four independent field profiles.
+
+The all-n construction remains open. These restricted obstructions do not kill route A.
+
+[gpt_solve: backend=codex model=gpt-6-astra effort=high transcript=20261028T005019-54079]
