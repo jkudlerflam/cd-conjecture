@@ -23,11 +23,14 @@ estimate.
    common-bulk-subtracted comparison uniformly over competing material
    patterns, followed by the low-energy matching needed to retain all 24
    modes. Repeating finite certificates will not resolve that task.
-2. **For unbounded c at fixed d: C39/C42/C44/C45, d0=4464.** The finite
-   spatial construction and coupling schedule now exist. Its main missing
-   input is the stated Wilsonian decoupling and infrared stability statement
-   S, with the physical ensemble and all cell lengths retained. C46 supplies
-   useful partial theorems, but explicitly does not prove S. The large
+2. **For the strongest current analytic route and unbounded c at fixed d:
+   C39/C42/C44/C45, d0=4464.** The finite spatial construction and coupling
+   schedule now exist. Its main missing input is now the retarded-action
+   multichannel infrared theorem and its physical-ensemble application.
+   The new abstract thermal matching theorem below handles an infinite
+   excited cell space under explicit hypotheses; their complete microscopic
+   instantiation is still required. C46 supplies useful partial theorems,
+   but explicitly does not prove all of S. The large
    alphabet is a disadvantage for the first numerical violation, not a
    mathematical objection to a fixed-n existence argument.
 3. **For a direct general proof:** no current route provides the needed
@@ -66,8 +69,19 @@ of arbitrarily long wrong cells was disproved in the preceding
   and do not divide by the slow logical bandwidth. They require the stated
   strengthened coefficient norms. The independent
   [audit](alternatives/IR_AUDIT.md) found and repaired three bookkeeping
-  issues. This advances fixed finite-cell matching; the mobile wrapper's
-  unbounded cell lengths and the subsequent logical RG/CFT limit remain open.
+  issues. This advances fixed finite-cell matching; the subsequent logical
+  RG/CFT limit remains open.
+- [Arbitrary-cell thermal matching](infrared/INFINITE_CELL_PROGRESS.md):
+  an operator-valued auxiliary representation and convergent time-block
+  polymer expansion remove the finite-cell dimension dependence. With an
+  explicit gap, heat-trace bound and small exponential interaction norm,
+  the full thermal action correction is linear in leakage, with time/space
+  moments, scalar density and source control. Its kernels approach the
+  periodized zero-temperature kernels exponentially in inverse temperature.
+  A separate [audit](alternatives/INFINITE_CELL_AUDIT.md) checked the proof,
+  including the thermal trace and continuous-time limits. C46 supplies a
+  candidate heat bound on its specified rooted space. Physical sectors,
+  fixed length and the final multichannel RG/CFT still require proof.
 - [Length-cutoff stabilization](alternatives/LENGTH_CUTOFF.md): projected
   perturbative coefficients agree exactly below order
   `4 C(K-b)`, where `C(r)=sum_(j=1)^r ceil(j/4)` and lengths through K

@@ -82,7 +82,7 @@ A d=24 conditional counterexample candidate is recorded with independent AI revi
 
 [STATUS.md](STATUS.md) has the details and the list of where help is most useful.
 
-The [direct-attack continuation](contrib/direct_attack_20261028/README.md) supplies a volume-independent ultraviolet matching lemma and an exact exclusion of hidden free-fermion dualities as a qubit counterexample mechanism. Neither result closes the remaining infrared comparison.
+The [direct-attack continuation](contrib/direct_attack_20261028/README.md) supplies ultraviolet matching bounds, an exact exclusion of a hidden free-fermion qubit mechanism, and an independently AI-audited thermal massive-matching theorem allowing infinite excited cell spaces. Its explicit hypotheses still need a complete microscopic and physical-ensemble application; the retarded multichannel RG and central-charge conclusion remain open.
 
 **Reversible digit compiler (2026-10-28):**
 [digit_compiler](contrib/digit_compiler/README.md) gives fixed tables for all

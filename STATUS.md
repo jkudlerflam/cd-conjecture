@@ -103,8 +103,20 @@ uses finite spectral embedding and a convergent determinant expansion to
 bound the logical action correction linearly in leakage, with time and space
 moments and no inverse logical-bandwidth factor. The hypotheses include a
 fixed finite cell, a locally block-diagonal reference, and strong coefficient
-norms. It does not yet apply uniformly to the mobile wrapper's unbounded
-cell lengths or establish the final logical RG/CFT limit.
+norms. It does not establish the final logical RG/CFT limit.
+
+[proved abstract extension; independently AI-audited] The new
+[operator-valued thermal theorem](contrib/direct_attack_20261028/infrared/INFINITE_CELL_PROGRESS.md)
+allows an infinite excited cell space with a finite code, positive gap and
+finite heat trace. Its full thermal influence functional has a correction
+linear in leakage, with spatial/time moments, source and scalar control,
+and exponential convergence to the zero-temperature kernels. Constants are
+independent of auxiliary cutoffs and the logical bandwidth. C46 supplies a
+candidate heat bound on its specified legal rooted space; the complete
+microscopic sector and physical-ensemble application remains conditional.
+The arbitrary-degree retarded multichannel RG and central-charge inference
+are still open. This strengthens the analytic case for pursuing C44/C45;
+it is not a completed counterexample.
 
 ## Parallel sparse first-order continuation
 

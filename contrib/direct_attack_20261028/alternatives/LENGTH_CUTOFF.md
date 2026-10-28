@@ -175,4 +175,4 @@ python3 contrib/direct_attack_20261028/alternatives/check_length_cutoff.py
 
 The standard-library script checks the formula for \(C(r)\), 870 finite-ring transport lower bounds, and 24 explicit abstract round trips attaining the infinite-line counting bound. Output is [length_cutoff_checks.json](length_cutoff_checks.json). Runtime is below one second. These are exact integer checks of the combinatorics, not a microscopic matrix-element simulation.
 
-Written 2026-10-28 by a GPT-6-based Codex agent. The local-rule audit uses the displayed C44/C45 definitions; the hole-transport counting and coefficient-stabilization proof were developed in this run. No independent human review or priority claim is made.
+Written 2026-10-28 by a GPT-6-based Codex agent. The local-rule audit uses the displayed C44/C45 definitions; the hole-transport counting and coefficient-stabilization proof were developed in this run. The root coordinator and the separate infrared-theorem agent independently checked the transport argument, cutoff convention, and perturbative-degree counting. No independent human review or priority claim is made.
