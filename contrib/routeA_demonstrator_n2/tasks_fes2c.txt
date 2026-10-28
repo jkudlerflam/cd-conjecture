@@ -1,0 +1,3 @@
+micg_l0.10 --model cell3 --lam 0.10 --chis 16 24 32 48 64 96 128 192 256 --mode vumps --load_eff states/effg_l0.10_chi16.npz --maxit 400 --tol 1e-9 --stol 1e-9 --state_dir statesA
+micg_l0.15 --model cell3 --lam 0.15 --chis 16 24 32 48 64 96 128 192 256 --mode vumps --load_eff states/effg_l0.15_chi16.npz --maxit 400 --tol 1e-9 --stol 1e-9 --state_dir statesA
+micg_l0.20 --model cell3 --lam 0.20 --chis 16 24 32 48 64 96 128 192 256 --mode vumps --load_eff states/effg_l0.20_chi16.npz --maxit 400 --tol 1e-9 --stol 1e-9 --state_dir statesA

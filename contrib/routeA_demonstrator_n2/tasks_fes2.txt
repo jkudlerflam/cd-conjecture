@@ -1,0 +1,7 @@
+cell3_l0.10 --model cell3 --lam 0.10 --chis 1 4 8 12 16 24 32 48 64 96 --mode damped --init product --maxit 2000 --tol 1e-9 --stol 1e-8 --state_dir states
+cell3_l0.15 --model cell3 --lam 0.15 --chis 1 4 8 12 16 24 32 48 64 96 --mode damped --init product --maxit 2000 --tol 1e-9 --stol 1e-8 --state_dir states
+cell3_l0.20 --model cell3 --lam 0.20 --chis 1 4 8 12 16 24 32 48 64 96 --mode damped --init product --maxit 2000 --tol 1e-9 --stol 1e-8 --state_dir states
+sel_n3 --model micro --lam 0.15 --n 3 --chis 8 12 16 --mode damped --maxit 1500 --tol 1e-9 --stol 1e-8 --seed 3
+sel_n6 --model micro --lam 0.15 --n 6 --chis 8 12 16 --mode damped --maxit 1500 --tol 1e-9 --stol 1e-8 --seed 4
+eff_l0.15 --model eff --lam 0.15 --n 1 --chis 1 8 12 16 24 32 48 64 96 128 --mode damped --init product --maxit 2000 --tol 1e-10 --stol 1e-9 --state_dir states
+xx2 --model xx2 --ratio 0.7 --n 1 --chis 8 12 16 24 32 48 64 96 128 --mode vumps --switch_chi 32 --maxit 800 --tol 1e-10 --stol 1e-9 --state_dir states

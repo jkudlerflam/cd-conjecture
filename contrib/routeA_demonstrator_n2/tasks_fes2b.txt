@@ -1,0 +1,3 @@
+effg_l0.10 --model eff --lam 0.10 --n 1 --chis 16 24 32 48 64 96 128 --mode damped --maxit 1500 --tol 1e-10 --stol 1e-10 --tau_max 50 --state_dir states
+effg_l0.15 --model eff --lam 0.15 --n 1 --chis 16 24 32 48 64 96 128 --mode damped --maxit 1500 --tol 1e-10 --stol 1e-10 --tau_max 50 --state_dir states
+effg_l0.20 --model eff --lam 0.20 --n 1 --chis 16 24 32 48 64 96 128 --mode damped --maxit 1500 --tol 1e-10 --stol 1e-10 --tau_max 50 --state_dir states
