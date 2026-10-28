@@ -57,6 +57,18 @@ with the separate referee's conditional classification. New workers are
 targeting that missing comparison directly. The finite results remain
 valid; no microscopic c=24 measurement is claimed.
 
+[proved partial reductions; numerical stress tests] The latest
+[matching attack](contrib/counterexample_audit_20261028/matching_attack/README.md)
+disproves an overly strong two-sided remainder bound that counted an
+arbitrarily long wrong cell as one defect; the growing correction favors
+selection and does not refute the candidate. It excludes a whole-ring giant
+cell directly. A [quantum-selector test](contrib/counterexample_audit_20261028/selector_numerics/README.md)
+finds no undercut in 264 exact diagonalizations at b=2,3 through L=20,
+including noncommuting b=3 walkers. The
+[new matching route](contrib/counterexample_audit_20261028/uniform_matching/README.md)
+derives exact cancellations but leaves the required spatially weighted
+infrared estimate open. The overall classification remains conditional.
+
 ## Summary
 
 1. **No counterexample at small d.** Nothing above d − 1 at d = 2, in symmetric families at d = 3 to 7, or at the best d = 4 target. The d = 3 hint failed C12's own follow-up; the independent check is still pending in the recorded status. New [qubit proof reductions](contrib/d2_gap_reduction/README.md) close symmetric ferromagnetic rank-one exchange with arbitrary uniform fields (c ≤ 1/2), add a rigorous interacting gapped region, and exhaust additive on-site spin symmetries, leaving one staggered-field family beyond the known controlled classes.

@@ -49,6 +49,21 @@ AI-assisted (OpenAI Codex GPT-6 family); no human referee is claimed.
   every Fermi crossing. The onsite expectation divided by the actual
   slope reproduces the displacement, and the certified centers remain
   separated. The largest hopping entry is not the relevant denominator.
+* [Quantum-selector stress test](selector_numerics/README.md): 264 exact
+  diagonalizations of the literal zero-port vacancy/walker restriction,
+  through physical length 20 and 2,217,072 quotient states, find no sector
+  undercut. The b=3 cases retain noncommuting walker dynamics. These are
+  finite-size diagnostics, not an n=23 phase verification.
+* [Long-cell attack](matching_attack/README.md): the literal two-sided
+  remainder bound counting one arbitrarily long wrong cell as one defect
+  is false. Its extensive correction favors the selected phase. An exact
+  one-sided bound excludes the whole-ring giant-cell sector for sufficiently
+  large rings at each fixed J; islands and arbitrary patterns remain open.
+* [Uniform-matching route](uniform_matching/README.md): an exact
+  cell-gradient identity forces two charge-difference endpoints in vacuum
+  excursions. A Gaussian energy inequality and spectral-filter algebra
+  isolate useful parts of a possible proof. The spatially weighted,
+  convergent infrared expansion is stated as a missing estimate, not a result.
 
 ## What is verified and what remains open
 

@@ -945,3 +945,30 @@ New workers are pursuing the specific missing bound and possible
 countermechanisms. A human review or small-n simulation would improve
 confidence, but neither substitutes logically for that comparison.
 - **Literature on the infrared step** (`contrib/lit_ir_step/`, Sonnet literature agent). No published theorem covers eliminating a gapped sector at fixed coupling and concluding a gapless CFT. The Hamiltonian-simulation framework (Cubitt–Montanaro–Piddock, Kohler et al.) needs couplings growing with system size; perturbation gadgets at fixed coupling (Bravyi–DiVincenzo–Loss–Terhal) leave extensive energy errors; a fully block-diagonalizing quasi-local unitary does not exist in general (Chen–Lucas–Yin), and rigorous dressing results need a gapped infrared. The clean physical confirmation is the large-U Hubbard chain (Ogata–Shiba, Lieb–Wu, two flavours with velocity ratio growing as U/t), with SU(N) Hubbard checks to N = 4; no confirmation with many flavours or strongly hierarchical velocities was found. Known failures all involve marginal flows or symmetry-allowed relevant operators generated at higher order (for example a relevant term appearing only at third order in Schrieffer–Wolff, Prembabu–Verresen 2509.20431); none involves a robustly critical target with all non-Gaussian operators detuned. The sharpest theorem that would close the step is an imaginary-time decoupling statement (exponentially decaying retarded kernels for the logical Grassmann action, uniformly in system size and temperature), feeding an extension of Mastropietro–Porta.
+
+### 9.24 Targeted attacks on the remaining d=24 matching step (2026-10-28)
+
+[proved partial statements; numerical diagnostics; unresolved conclusion]
+Three parallel audit workers isolated the outstanding comparison more
+precisely. The [long-cell attack](contrib/counterexample_audit_20261028/matching_attack/README.md)
+shows that a two-sided remainder bound cannot count one arbitrarily long
+wrong cell as one bounded defect. The discrepancy is favorable to selection,
+and an exact variational comparison excludes the whole-ring giant-cell
+sector for sufficiently large length at each fixed J. This is neither a
+refutation of the candidate nor a proof for islands and arbitrary patterns.
+
+The [quantum-selector diagnostic](contrib/counterexample_audit_20261028/selector_numerics/README.md)
+performs 264 exact diagonalizations of the zero-port microscopic restriction
+at selected lengths b=2 and b=3, through L=20 and 2,217,072 quotient states.
+Independent physical-word and quotient constructions agree within 1.3e-14.
+No wrong sector undercuts the selected one. Noncommuting b=3 walkers give a
+substantial quantum correction beyond fixed scalar-source calculations.
+Scripts, complete energies, residuals, and reproduction instructions are saved.
+
+The [uniform-matching note](contrib/counterexample_audit_20261028/uniform_matching/README.md)
+derives an exact cell-gradient cancellation, an all-order Gaussian energy
+inequality, and gap-free spectral-filter algebra. It states the missing
+spatially weighted RG bound explicitly and explains why available
+single-impurity or homogeneous sine-Gordon theorems do not supply it directly.
+The corrected conditional verdict remains in force; the counterexample has
+not been verified or refuted by these additions.

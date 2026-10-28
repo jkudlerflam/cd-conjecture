@@ -44,9 +44,9 @@ At fixed h23, one needs a local matching scale and remainder satisfying both:
 1. The normalized bulk stiffness, Fermi-point displacements and all relevant
    matching couplings approach the specified 23-band-plus-charge reference
    as J/t tends to zero, while retaining all gapless oscillators.
-2. After common bulk contributions are subtracted, the correction to the
-   energy difference between the selected sector and a sector with k
-   material defects/interfaces is bounded by
+2. For bounded-size material defects and interfaces, after common bulk
+   contributions are subtracted, the correction to the energy difference
+   between the selected sector and a sector with k such defects is bounded by
 
        |delta E_defect(J,L)| <= J k epsilon_h(J/t) + boundary rounding terms,
        epsilon_h(s) -> 0,
@@ -54,6 +54,16 @@ At fixed h23, one needs a local matching scale and remainder satisfying both:
    with constants uniform in L, defect separation and allowed defect pattern.
    Fixed port changes may instead be budgeted explicitly by O(J lambda),
    below the selector margin.
+
+**Same-day correction from the [long-cell attack](../matching_attack/README.md):**
+the original wording allowed an arbitrarily long wrong cell to count as one
+defect in this absolute bound. That version is false: removal of the selected
+bulk's charge-relaxation energy gives a positive correction proportional to
+J-squared times the replaced length. This favors the selected sector and does
+not refute the one-sided exclusion inequality. For unbounded wrong cells,
+use a length-weighted remainder controlled by their extensive bare cost, or
+retain the favorable contribution in a one-sided comparison. Neither repair
+has yet been established for arbitrary arrangements and interfaces.
 
 The second-order calculation supports the second assertion around the chosen
 reference. It does not establish it uniformly for the exact interacting ground

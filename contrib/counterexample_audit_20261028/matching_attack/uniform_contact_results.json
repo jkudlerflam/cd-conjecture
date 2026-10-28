@@ -1,0 +1,253 @@
+{
+  "description": "Uniform scalar contact ground-energy curvature and local-commutator bound; not a c=24 simulation.",
+  "thermodynamic_B_per_physical_site": 0.37564594739836754,
+  "seconds": 0.11321616172790527,
+  "rows": [
+    {
+      "L": 6,
+      "N": 3,
+      "dimension": 20,
+      "energy": -4.000000000000002,
+      "contact_per_material_site": 0.2777777777777777,
+      "B_per_physical_site": 0.44444444444444486,
+      "wick_B_per_physical_site": 0.4444444444444444,
+      "wick_error": 4.440892098500626e-16,
+      "residual": 2.232901126344307e-15,
+      "checks": [
+        {
+          "v": -0.04,
+          "relaxation": -0.00011502326168322946,
+          "relaxation_per_physical_site_over_v2": -0.011981589758669735,
+          "variational_upper_bound": -5.064893953782852e-06,
+          "passes": true
+        },
+        {
+          "v": -0.02,
+          "relaxation": -2.8729591129154214e-05,
+          "relaxation_per_physical_site_over_v2": -0.011970662970480921,
+          "variational_upper_bound": -1.2910513999838643e-06,
+          "passes": true
+        },
+        {
+          "v": 0.02,
+          "relaxation": -2.8678149634194655e-05,
+          "relaxation_per_physical_site_over_v2": -0.011949229014247772,
+          "variational_upper_bound": -1.2910513999838643e-06,
+          "passes": true
+        },
+        {
+          "v": 0.04,
+          "relaxation": -0.000114611701674254,
+          "relaxation_per_physical_site_over_v2": -0.011938718924401457,
+          "variational_upper_bound": -5.064893953782852e-06,
+          "passes": true
+        }
+      ]
+    },
+    {
+      "L": 8,
+      "N": 4,
+      "dimension": 70,
+      "energy": -5.226251859505505,
+      "contact_per_material_site": 0.2866116523516817,
+      "B_per_physical_site": 0.40830092652386785,
+      "wick_B_per_physical_site": 0.40830092652386774,
+      "wick_error": 1.1102230246251565e-16,
+      "residual": 3.3510762927353794e-15,
+      "checks": [
+        {
+          "v": -0.04,
+          "relaxation": -0.0001573812810091446,
+          "relaxation_per_physical_site_over_v2": -0.012295412578839423,
+          "variational_upper_bound": -5.699475097444408e-06,
+          "passes": true
+        },
+        {
+          "v": -0.02,
+          "relaxation": -3.93019266087119e-05,
+          "relaxation_per_physical_site_over_v2": -0.01228185206522247,
+          "variational_upper_bound": -1.4528073777799472e-06,
+          "passes": true
+        },
+        {
+          "v": 0.02,
+          "relaxation": -3.921667726870803e-05,
+          "relaxation_per_physical_site_over_v2": -0.01225521164647126,
+          "variational_upper_bound": -1.4528073777799472e-06,
+          "passes": true
+        },
+        {
+          "v": 0.04,
+          "relaxation": -0.00015669924361641496,
+          "relaxation_per_physical_site_over_v2": -0.012242128407532419,
+          "variational_upper_bound": -5.699475097444408e-06,
+          "passes": true
+        }
+      ]
+    },
+    {
+      "L": 10,
+      "N": 5,
+      "dimension": 252,
+      "energy": -6.472135954999581,
+      "contact_per_material_site": 0.29055728090000515,
+      "B_per_physical_site": 0.3951609730300021,
+      "wick_B_per_physical_site": 0.39516097302997233,
+      "wick_error": 2.9753977059954195e-14,
+      "residual": 1.8002481288718825e-12,
+      "checks": [
+        {
+          "v": -0.04,
+          "relaxation": -0.00019902061260577975,
+          "relaxation_per_physical_site_over_v2": -0.012438788287861232,
+          "variational_upper_bound": -6.67317070965889e-06,
+          "passes": true
+        },
+        {
+          "v": -0.02,
+          "relaxation": -4.969690159022794e-05,
+          "relaxation_per_physical_site_over_v2": -0.012424225397556984,
+          "variational_upper_bound": -1.7010042985405017e-06,
+          "passes": true
+        },
+        {
+          "v": 0.02,
+          "relaxation": -4.9582401432775314e-05,
+          "relaxation_per_physical_site_over_v2": -0.012395600358193827,
+          "variational_upper_bound": -1.7010042985405017e-06,
+          "passes": true
+        },
+        {
+          "v": 0.04,
+          "relaxation": -0.00019810455120018722,
+          "relaxation_per_physical_site_over_v2": -0.0123815344500117,
+          "variational_upper_bound": -6.67317070965889e-06,
+          "passes": true
+        }
+      ]
+    },
+    {
+      "L": 12,
+      "N": 6,
+      "dimension": 924,
+      "energy": -7.727406610312545,
+      "contact_per_material_site": 0.2926638440239518,
+      "B_per_physical_site": 0.3887323913566146,
+      "wick_B_per_physical_site": 0.3887323913566107,
+      "wick_error": 3.885780586188048e-15,
+      "residual": 3.516491533772266e-13,
+      "checks": [
+        {
+          "v": -0.04,
+          "relaxation": -0.00024031095689719395,
+          "relaxation_per_physical_site_over_v2": -0.01251619567172885,
+          "variational_upper_bound": -7.749378055888829e-06,
+          "passes": true
+        },
+        {
+          "v": -0.02,
+          "relaxation": -6.0005501115872883e-05,
+          "relaxation_per_physical_site_over_v2": -0.01250114606580685,
+          "variational_upper_bound": -1.9753316613049957e-06,
+          "passes": true
+        },
+        {
+          "v": 0.02,
+          "relaxation": -5.986347917161239e-05,
+          "relaxation_per_physical_site_over_v2": -0.01247155816075258,
+          "variational_upper_bound": -1.9753316613049957e-06,
+          "passes": true
+        },
+        {
+          "v": 0.04,
+          "relaxation": -0.00023917470398798768,
+          "relaxation_per_physical_site_over_v2": -0.012457015832707691,
+          "variational_upper_bound": -7.749378055888829e-06,
+          "passes": true
+        }
+      ]
+    },
+    {
+      "L": 14,
+      "N": 7,
+      "dimension": 3432,
+      "energy": -8.987918414869869,
+      "contact_per_material_site": 0.29392174124398984,
+      "B_per_physical_site": 0.38506658137582045,
+      "wick_B_per_physical_site": 0.385066581375789,
+      "wick_error": 3.147482274812319e-14,
+      "residual": 3.5030443990065465e-12,
+      "checks": [
+        {
+          "v": -0.04,
+          "relaxation": -0.00028140472844881415,
+          "relaxation_per_physical_site_over_v2": -0.012562711091464916,
+          "variational_upper_bound": -8.871229954249824e-06,
+          "passes": true
+        },
+        {
+          "v": -0.02,
+          "relaxation": -7.026537130254418e-05,
+          "relaxation_per_physical_site_over_v2": -0.012547387732597174,
+          "variational_upper_bound": -2.261293909906818e-06,
+          "passes": true
+        },
+        {
+          "v": 0.02,
+          "relaxation": -7.009664981279251e-05,
+          "relaxation_per_physical_site_over_v2": -0.01251725889514152,
+          "variational_upper_bound": -2.261293909906818e-06,
+          "passes": true
+        },
+        {
+          "v": 0.04,
+          "relaxation": -0.00028005486261442614,
+          "relaxation_per_physical_site_over_v2": -0.01250244922385831,
+          "variational_upper_bound": -8.871229954249824e-06,
+          "passes": true
+        }
+      ]
+    },
+    {
+      "L": 16,
+      "N": 8,
+      "dimension": 12870,
+      "energy": -10.25166179096604,
+      "contact_per_material_site": 0.2947332627414986,
+      "B_per_physical_site": 0.3827658190882144,
+      "wick_B_per_physical_site": 0.382765819088203,
+      "wick_error": 1.1379786002407855e-14,
+      "residual": 8.717580800103271e-14,
+      "checks": [
+        {
+          "v": -0.04,
+          "relaxation": -0.00032237665486231637,
+          "relaxation_per_physical_site_over_v2": -0.012592838080559233,
+          "variational_upper_bound": -1.0017755368360454e-05,
+          "passes": true
+        },
+        {
+          "v": -0.02,
+          "relaxation": -8.049500797101261e-05,
+          "relaxation_per_physical_site_over_v2": -0.01257734499547072,
+          "variational_upper_bound": -2.5535454860526654e-06,
+          "passes": true
+        },
+        {
+          "v": 0.02,
+          "relaxation": -8.03000393593406e-05,
+          "relaxation_per_physical_site_over_v2": -0.01254688114989697,
+          "variational_upper_bound": -2.5535454860526654e-06,
+          "passes": true
+        },
+        {
+          "v": 0.04,
+          "relaxation": -0.00032081679575515776,
+          "relaxation_per_physical_site_over_v2": -0.01253190608418585,
+          "variational_upper_bound": -1.0017755368360454e-05,
+          "passes": true
+        }
+      ]
+    }
+  ]
+}
