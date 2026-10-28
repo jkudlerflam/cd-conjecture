@@ -83,3 +83,7 @@ The exact threshold formula also allows the atom and pair masses to coincide. Se
     Q=2 arcsin(1/5), Z=1/16, Epair''(Q)=2.
 
 Hence mp=ma=1/2. This removes mass imbalance as an unavoidable feature of the two-body construction. It does not establish stability, miscibility, or a finite-density CFT for these stronger couplings. No many-body central-charge claim is made for this variant.
+
+## Final finite-density caveat
+
+The molecular minima disappear when U is varied alone at delta=0.56981795454 for g=2 and tp=10/9. Consequently the delta=0.75 and 0.9 finite-density entropy tests do not retain this two-body mechanism. RESULT.md reports this obstruction and the unresolved many-body scaling. The vacuum construction above remains valid.

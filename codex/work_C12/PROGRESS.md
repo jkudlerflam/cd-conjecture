@@ -66,7 +66,7 @@ Same- and opposite-valley two-pair energies were compared at L=18,24,30 for elev
 
 Translation-resolved L=24,N=8 ED gives E(k=0)=-14.18107312747 and E(k=2pi/L)=-14.17196929015. The resulting gap is 0.00910384, and L*gap=0.21849 agrees with L=21's 0.21853. Only selected additional sectors k=4,8,12 were tested at L=24; they are higher. All sectors were checked through L=21.
 
-The k=0 L=24 entropy fits are c_vN=2.92389 and c_Renyi2=2.75315. The half-chain entropies are S=2.46463 and S2=1.88008. The two shape estimators still exceed 2 but decrease with size. More importantly, half-chain *size* scaling between L=18 and L=24 gives a much smaller estimate (about 1.23 from von Neumann entropy). Shell changes and few molecular particles can invalidate either fit. The inconsistency prevents declaring a counterexample.
+The k=0 L=24 entropy fits are c_vN=2.92389 and c_Renyi2=2.75315. The half-chain entropies are S=2.46463 and S2=1.88008. The two shape estimators still exceed 2 but decrease with size. More importantly, half-chain size scaling between L=18 and L=24 gives a much smaller estimate (about 1.23 from von Neumann entropy). Shell changes and few molecular particles can invalidate either fit. The inconsistency prevents declaring a counterexample.
 
 Periodic DMRG at chi=96 significantly underestimates the L=24 exact entropy during convergence. Its energy error is also comparable to the small gaps. Larger-chain results at finite bond dimension must not be advertised as converged CFT data. A separate random fixed-charge initialization is running at L=48 as a metastability check.
 
@@ -93,3 +93,23 @@ The two-body dispersion was rechecked at the detunings used for the finite-densi
 The residual of these two equations is 7.8e-13. Thus the large-entropy delta=0.75 and 0.9 points cannot be justified by the original three-minimum dilute-gas mechanism. A separate many-body mechanism would have to be demonstrated. This is a substantive obstruction, not a proof of their asymptotic central charge.
 
 The fixed-charge stability check also finds parity and shell effects. At L=18, delta=0.9, the N=6 sector is locally on the convex envelope over N=4..8 for approximately -1.58245 < mu < -1.56046. N=7 is skipped in favor of a two-particle jump to N=8. The rational value mu=-1.57 lies inside this finite-size interval. This does not establish the thermodynamic density or absence of remote density jumps.
+
+## Convergence check at chi=256
+
+For L=24,N=8,delta=0.9, the first completed chi=256 periodic DMRG sweep gives E=-14.18086640658, compared with the exact k=0 value -14.18107312747. Its half-chain entropy is 2.41662, still below the exact 2.46463. The finite-size shape estimates are 2.868 and 2.595, also below the exact 2.924 and 2.753.
+
+At the same time, the L=36 and 48 runs have appreciable density modulation and entropy dependence on bond dimension. A lower raw fit on these larger systems cannot be used to infer the asymptotic c without convergence. The negative result is that no counterexample has been established, not that these data prove c<=2 for this family.
+
+## Stopping and final checks
+
+The auxiliary delta=0.75 scan finished at L=24. Its lowest tested state is k=8 rather than k=0, with shape estimates 2.448 and 1.903 and half-chain S=2.21472. At L=21, the estimates were 3.650 and 3.791 with S=2.66052. This sharp shell/momentum change is another failure of a stable c>2 extrapolation.
+
+The large DMRG refinements have explicit 25-minute wall-clock limits. Only completed sweeps will be reported. The L=24 momentum completion also reached its 15-minute limit after checking six of the eight remaining sectors. Its last two sectors are being resumed from the saved list, so the global-sector check can be finished without repeating the completed diagonalizations.
+
+## Final status
+
+Completed in approximately 80 minutes of wall-clock time. No verified counterexample was found. All L=24 momenta k=0 through 12 were checked, with the remaining momenta following by complex conjugation. The lowest state is k=0, E=-14.18107312747; the largest residual among these diagonalizations is below 6.3e-9.
+
+The final completed periodic DMRG checkpoints have chi=256 at L=24 and chi=192 at L=36 and 48. The L=24 energy error is 1.17e-4 and the half-chain entropy deficit is 0.0101. Larger-size data remain unconverged for a central-charge extrapolation. All three refinements stopped at their explicit 25-minute limits, and their saved MPS arrays were checked for finite entries and matching bond dimensions. The remaining ED continuation completed normally. No numerical job remains intentionally running.
+
+RESULT.md is the final report. DERIVATION.md contains the analytic construction and its limitations; MECHANISM_SCREEN.md contains the other mechanism screens; NUMERICAL_APPENDIX.md records the final completed numerical data; diagnostics.png shows the main inconsistencies; REPRODUCE.md gives commands. No existing project memory was read or updated, in accordance with the closed-book instruction.

@@ -3,8 +3,12 @@ from momentum_ed import OrbitHamiltonian
 from qutrit_observables import entropy_profile,cfit
 signal.alarm(900)
 ob=OrbitHamiltonian(24,8,U=-14/9+.9)
-base=json.load(open('ed_L24_results.json'));levels=[];best=None
+base=json.load(open('ed_L24_results.json'))
+try:levels=json.load(open('ed_L24_remaining_sectors.json'))
+except FileNotFoundError:levels=[]
+best=None
 for k in [2,3,5,6,7,9,10,11]:
+ if k in {r['k'] for r in levels}:continue
  es,vs,r=ob.solve(k,nev=1,tol=5e-10);levels.append(r)
  print(json.dumps(r),flush=True)
  if es[0]<min(x['energies'][0] for x in base['levels']):

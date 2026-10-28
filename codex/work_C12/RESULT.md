@@ -1,6 +1,6 @@
 # C12 result
 
-Status: numerical appendix being finalized. No verified counterexample has been found.
+No verified counterexample was found.
 
 The most concrete result is a simple d=3 nearest-neighbor Hamiltonian with an analytically controllable atom band and two bound-pair minima. It provides a possible route to three gapless fluids without cells or a computation track. However, the finite-density points with the largest short-chain entropy estimates do not retain those two molecular minima. Their entropy estimators also fail a size-scaling consistency check. They cannot be reported as counterexamples to c <= d-1.
 
@@ -174,9 +174,13 @@ A naive local Z2 gauge projection also does not compress fermion flavors for fre
 
 [MECHANISM_SCREEN.md](MECHANISM_SCREEN.md) gives the individual arguments and their limits. None is a general no-go theorem.
 
+## Diagnostic figure
+
+![Two-body dispersion, finite-size entropy fits, gap scaling, and DMRG convergence](diagnostics.png)
+
 ## What remains plausible
 
-The qutrit atom-pair route is simpler than the computation-cell construction, but a stable three-fluid phase has not been obtained. A useful next analytic target would co-tune U and tp, or add V11, while preserving molecular minima and controlling atom-pair and valley interactions. Varying U alone through the large-entropy region is not sufficient.
+The qutrit atom-pair route is simpler than the computation-cell construction, but a stable three-fluid phase has not been obtained. A useful next analytic target would co-tune U and tp, or add V11, while preserving molecular minima and controlling atom-pair and valley interactions. Varying U alone through the large-entropy region is not sufficient. Mass imbalance is adjustable within the exact threshold family: s0=1/5, g=6 sqrt(5), tp=275/4, and U=269/2 give mp=ma=1/2. The two-body curvature was checked numerically, but this stronger-coupling variant was not tested as a many-body CFT.
 
 For the cell route, the missing resource is an explicit boundary operator system that accesses many logical modes while the core remains simple. Conventional fixed MPS edges and ferromagnetic collective spins do not supply it. This search does not show that a computation track is necessary, nor does it establish a minimum d for a counterexample.
 
@@ -188,4 +192,26 @@ The bond is implemented in qutrit_ed.py. Pair dispersions and the saddle-node ar
 
 The DMRG implementations were checked against short-chain ED. One early periodic test failed its energy tolerance after six sweeps; twelve sweeps reduced the error to 6e-12. A translation-basis normalization issue caused by float32 square roots of integer periods was fixed and revalidated. Performance changes to tensor contractions were checked against the same energy. These checks validate the implementation at small size, not convergence of every larger run.
 
-Numerical appendix to be finalized after the running convergence checks.
+## Final numerical appendix
+
+At L=24, all momentum sectors k=0,...,12 were checked. Reality of h gives the remaining sectors by complex conjugation. The lowest state is in k=0, with E=-14.18107312747. The largest reported eigenvector residual in this check is 6.2e-09.
+
+The completed periodic DMRG checkpoints are listed below. These are raw finite-bond-dimension fits, not claims for the thermodynamic central charge.
+
+| L | Largest completed chi | Energy | Half-chain S | Half-chain S2 | Shape fit, vN | Shape fit, Renyi2 | Density range |
+|---:|---:|---:|---:|---:|---:|---:|---|
+| 24 | 256 | -14.18095565151 | 2.454555 | 1.864485 | 2.9110 | 2.7302 | 0.3295 to 0.3359 |
+| 36 | 192 | -21.27165110127 | 1.680674 | 1.014356 | 1.2272 | 0.6464 | 0.2710 to 0.4172 |
+| 48 | 192 | -28.35843670102 | 1.827161 | 1.335844 | 0.8680 | 0.4691 | 0.2387 to 0.4617 |
+
+At L=24, the last checkpoint has energy error 0.000117 and half-chain entropy deficit 0.0101 relative to ED. Density modulation and continuing bond-dimension dependence prevent a reliable large-L extrapolation. The interrupted runs and wall-clock stopping condition are recorded in PROGRESS.md.
+
+The nearby detuning delta=0.75 is also affected by momentum and size effects.
+At L=21, the lowest tested momentum is k=0, the shape estimates are 3.6497 and 3.7907, and half-chain S=2.660515.
+At L=24, the lowest tested momentum is k=8, the shape estimates are 2.4480 and 1.9032, and half-chain S=2.214717.
+All sectors were checked at L=21; only k=0,1,4,8,12 were checked at L=24 in this auxiliary detuning scan. Its molecular minima have already disappeared, so this does not rescue the original three-fluid argument.
+
+Numerical environment: Python 3.12.3, NumPy 2.4.6, SciPy 1.17.1. BLAS was limited to one thread per Python process. All random scans use fixed seeds in their scripts.
+
+
+The run finished in approximately 80 minutes of wall-clock time, with overlapping numerical jobs. All running computations were completed or stopped at their stated time limits. The last completed bond dimensions were 256 at L=24 and 192 at L=36 and 48. Higher requested bond dimensions that did not complete are not reported as results. Reproduction commands are in [REPRODUCE.md](REPRODUCE.md).

@@ -36,7 +36,10 @@ xx=np.linspace(15,25,100);ref=y[-2]
 ax[1,0].loglog(xx,ref*(21/xx),ls='--',color='.4',label=r'$L^{-1}$ guide')
 ax[1,0].loglog(xx,ref*(21/xx)**2,ls=':',color='#b35806',label=r'$L^{-2}$ guide')
 ax[1,0].set(xlabel='L',ylabel=r'$\Delta E(2\pi/L)$',title='Size drift prevents a clean exponent')
-ax[1,0].set_xticks([15,18,21,24],labels=['15','18','21','24']);ax[1,0].legend(frameon=False,fontsize=8)
+ax[1,0].set_xticks([15,18,21,24],labels=['15','18','21','24'])
+from matplotlib.ticker import NullFormatter
+ax[1,0].xaxis.set_minor_formatter(NullFormatter())
+ax[1,0].legend(frameon=False,fontsize=8)
 points=[]
 for f in ['periodic_L24_N8_d09.json','periodic_L24_refined.json','periodic_L24_highchi.json']:
  rr=json.load(open(f))

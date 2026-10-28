@@ -18,7 +18,7 @@ For the supplied spin-charge construction, if c_i<=d_i-1 then c_1+c_2+1<=d_1+d_2
 
 An extended molecule containing b q-state constituents has q^b internal states, but an ordinary collision exchanges or couples its exposed constituents first. A whole-molecule SU(q^b) permutation does not follow from its internal dimension. If microscopic exchange is forbidden entirely, the internal labels become frozen zero modes, not a collection of unitary CFTs. Protecting whole-molecule exchange while canceling partial exchange is the additional engineering problem.
 
-The odd-conversion qutrit model in DERIVATION.md is a different squeezed-space possibility. It seeks extra *momentum valleys* of mobile bound objects rather than counting their internal labels. It has an explicit nearest-neighbor bond and passes the two-body test, but its many-body CFT is unresolved.
+The odd-conversion qutrit model in DERIVATION.md is a different squeezed-space possibility. It seeks extra momentum valleys of mobile bound objects rather than counting their internal labels. It has an explicit nearest-neighbor bond and passes the two-body test, but its many-body CFT is unresolved.
 
 ## Gauge constraints
 
