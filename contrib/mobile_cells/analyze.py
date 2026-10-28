@@ -17,15 +17,23 @@ D = os.path.join(HERE, 'data')
 
 def fes(nfit=4, errmax=1e-4):
     runs = {}
-    for f in sorted(glob.glob(os.path.join(D, 'fes', '*.json'))):
-        d = json.load(open(f))
+    files = sorted(glob.glob(os.path.join(D, 'fes', '*.json'))) + sorted(glob.glob(os.path.join(D, 'fes', 'typhon', '*.json')))
+    best = {}
+    for f in files:                                  # laptop and Typhon runs: use one run per point, the one
+        d = json.load(open(f))                       # that reached the largest chi (runs are not mixed)
         base = d['name'].replace('_hi', '')
-        for r in d['results']:
-            runs.setdefault(base, {})[r['chi']] = r            # later (hi) runs override equal chi
+        if not d['results']:
+            continue
+        key = (max(r['chi'] for r in d['results']), len(d['results']))
+        if base not in best or key > best[base][0]:
+            best[base] = (key, d)
+    for base, (key, d) in best.items():
+        runs[base] = {r['chi']: r for r in d['results']}
         runs[base]['_args'] = d['args']
+        runs[base]['_file'] = d['name']
     out = {}
     for name, byc in runs.items():
-        args = byc.pop('_args')
+        args = byc.pop('_args'); byc.pop('_file')
         rs = [byc[c] for c in sorted(byc) if byc[c]['err'] < errmax and np.isfinite(byc[c]['xi']) and byc[c]['xi'] < 1e6]
         chi = np.array([r['chi'] for r in rs], float)
         S = np.array([np.mean(r['S']) for r in rs]); xi = np.array([r['xi'] for r in rs])
@@ -59,10 +67,8 @@ def ed():
                 x = json.load(open(g))
                 S.setdefault(('L18', W), (W, x['S'][0], x['E'][0]))
         seq = [L for L in (9, 12, 15) if L in S and S[L][0] == 2 * L // 3]
-        if ('L18', 12) in S:
-            E18 = {W: S[('L18', W)][2] for W in (10, 12, 14) if ('L18', W) in S}
-            if min(E18, key=E18.get) == 12:
-                S[18] = (12, S[('L18', 12)][1]); seq.append(18)
+        if ('L18', 12) in S:                       # fixed density W/L = 2/3 (canonical), whatever W wins at L = 18
+            S[18] = (12, S[('L18', 12)][1]); seq.append(18)
         pairs = []
         for a, b in zip(seq[:-1], seq[1:]):
             pairs.append(dict(L1=a, L2=b, c_half=3 * (S[b][1] - S[a][1]) / np.log(b / a)))
@@ -103,20 +109,27 @@ def modes():
                      v_S=r['Sz']['v'], w_S=r['Sz']['peak_weight']) for r in sorted(recs, key=lambda r: (r['L'], r['W']))]
         o = dict(rows=rows)
         seq = [(L, 2 * L // 3) for L in (9, 12, 15, 18) if (L, 2 * L // 3) in byLW]
+        E0s = {k: byLW[k]['E0'] for k in seq}
+        g = os.path.join(D, 'ed', f"L18_{tag.split('_')[0]}_W12.json")
+        if (18, 12) not in byLW and os.path.exists(g):     # L = 18 energy from the cluster ED, velocities from L = 15
+            E0s[(18, 12)] = json.load(open(g))['E'][0]
         if len(seq) >= 2:
-            Ls = np.array([L for L, W in seq], float)
-            e = np.array([byLW[k]['E0'] for k in seq]) / Ls
+            seqE = sorted(E0s)
+            Ls = np.array([L for L, W in seqE], float)
+            e = np.array([E0s[k] for k in seqE]) / Ls
+            o['casimir_L'] = Ls.tolist()
             pairs = []
-            for i in range(len(seq) - 1):
+            vlast = byLW[seq[-1]]['rho']['v'] + byLW[seq[-1]]['Sz']['v']
+            for i in range(len(seqE) - 1):
                 L1, L2 = Ls[i], Ls[i + 1]
                 C = 6 / np.pi * (e[i + 1] - e[i]) / (1 / L1 ** 2 - 1 / L2 ** 2)
-                vs = byLW[seq[i + 1]]['rho']['v'] + byLW[seq[i + 1]]['Sz']['v']
+                vs = (byLW[seqE[i + 1]]['rho']['v'] + byLW[seqE[i + 1]]['Sz']['v']) if seqE[i + 1] in byLW else vlast
                 pairs.append(dict(L1=int(L1), L2=int(L2), C=float(C), v_sum_at_L2=float(vs), ratio=float(C / vs)))
             o['casimir_pairs'] = pairs
-            if len(seq) >= 3:
+            if len(seqE) >= 3:
                 X = np.column_stack([np.ones_like(Ls), -np.pi / (6 * Ls ** 2)])
                 coef = np.linalg.lstsq(X, e, rcond=None)[0]
-                vs = byLW[seq[-1]]['rho']['v'] + byLW[seq[-1]]['Sz']['v']
+                vs = vlast
                 o['casimir_fit'] = dict(L=Ls.tolist(), e_inf=float(coef[0]), C=float(coef[1]), v_sum_at_Lmax=float(vs),
                                         ratio=float(coef[1] / vs))
         out[tag] = o

@@ -1,0 +1,3 @@
+run_fes.py E2_u03 --model cells2 --u 0.3 --mu -0.4 --J 0.5 --Jb 0.35 --V 0.3 --hb 0.06 --chis 16 24 32 48 64 96 128 --maxit 600
+run_ed2.py u03 --L 12 --maxdim 4e7
+run_ed2.py u03 --L 13 --maxdim 4e7

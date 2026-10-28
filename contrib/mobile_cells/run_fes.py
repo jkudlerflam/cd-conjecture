@@ -7,6 +7,7 @@ Models
   cells : the d = 6 chain of ed.py (letters L, R, #up, #dn, Xup, Xdn), bond ed.dense_bond
   xx    : spin-1/2 XX chain (c = 1), calibration
   xx2   : two decoupled XX chains with velocities 1 and 0.4, as one d = 4 site (c = 2), calibration
+  cells2: two-flavour payload of ed2.py (d = 10; --J is J_a, plus --Jb --V --hb), c = 3 expected
   txx   : d = 3 t-XX chain (hole, up, dn): hard-core hopping t, XX exchange J between adjacent
           particles, chemical potential mu per particle (c = 2 Luttinger liquid, Ogata-Shiba setting)
 Writes after every chi: energy, gradient error, entropy, transfer-matrix eigenvalues (xi), local
@@ -33,6 +34,18 @@ def model(a):
         sx = np.zeros((d, d)); sx[2, 3] = sx[3, 2] = sx[4, 5] = sx[5, 4] = 0.5
         n[3] = sx
         return h, d, n, 1.0 + 1.0
+    if a.model == 'cells2':
+        from ed2 import dense_bond2
+        h = dense_bond2(t=a.t, u=a.u, mu=a.mu, Ja=a.J, Jb=a.Jb, V=a.V, ha=0.0, hb=a.hb, K=a.K)
+        d = 10
+        n = np.zeros((4, d, d))
+        for x in range(2, 10):
+            sa, sb = ((x - 2) % 4) >> 1, ((x - 2) % 4) & 1
+            n[0][x, x] = 1.0 if x < 6 else 0.0            # marker
+            n[1][x, x] = 1.0                              # wall
+            n[2][x, x] = sa - 0.5                         # S^z_a
+            n[3][x, x] = sb - 0.5                         # S^z_b
+        return h, d, n, 3.0
     if a.model == 'xx':
         sp = np.array([[0, 1], [0, 0]]); sm = sp.T
         h = -0.5 * (np.kron(sp, sm) + np.kron(sm, sp))       # ferro sign: one-site cell suffices
@@ -67,7 +80,7 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('name')
     ap.add_argument('--model', default='cells')
-    for k, v in dict(t=1.0, u=1.0, mu=-1.0, J=1.0, Jz=0.0, K=8.0, dJ=0.0).items():
+    for k, v in dict(t=1.0, u=1.0, mu=-1.0, J=1.0, Jz=0.0, K=8.0, dJ=0.0, Jb=0.35, V=0.3, hb=0.05).items():
         ap.add_argument('--' + k, type=float, default=v)
     ap.add_argument('--chis', type=int, nargs='+', default=[16, 24, 32, 48, 64])
     ap.add_argument('--n', type=int, default=1, help='unit cell (3 for the static period-3 crystal)')

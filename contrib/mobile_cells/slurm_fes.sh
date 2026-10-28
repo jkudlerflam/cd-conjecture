@@ -5,7 +5,7 @@
 #SBATCH --mem=32G
 #SBATCH -t 48:00:00
 #SBATCH -o logs/fes_%A_%a.log
-#SBATCH --array=0-5
+#SBATCH --array=0-6
 # Finite-entanglement scaling runs for contrib/mobile_cells (VUMPS, numpy/scipy).
 export OPENBLAS_NUM_THREADS=4 OMP_NUM_THREADS=4
 cd /scratch/lustre/jkudlerflam/mobile_cells
