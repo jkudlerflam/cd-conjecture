@@ -1,0 +1,2 @@
+# C48: Input S by a resummed cluster expansion
+Read `../../specs/_S_background.md` first. Route: integrate out the massive cell sectors with a resummed polymer or cluster expansion (Brydges–Battle–Federbush, Mayer-type bounds, or a Glimm–Jaffe–Spencer style expansion in imaginary time), proving that the effective logical action has exponentially decaying retarded kernels uniformly in the number of cells and in inverse temperature, with explicit constants from C42 and C44. Address the counterexample in C46 that defeats the raw summed expansion.
