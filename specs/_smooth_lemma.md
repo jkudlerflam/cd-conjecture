@@ -1,0 +1,7 @@
+## The symmetry-free core: energy deficit under smooth modulation
+
+For positive weights w_x varying slowly in x, consider the inhomogeneous chain H_w = sum_x w_x h_{x,x+1}. Translation invariance gives <H_w>_{GS of H} = e_0 sum_x w_x exactly, so E_0(H_w) <= e_0 sum w_x, and the deficit Def(w) = e_0 sum_x w_x - E_0(H_w) >= 0 measures how much the ground state can lower its energy by adapting to the modulation. In the infrared CFT, an inhomogeneous chain is a CFT on a curved background (local velocity v_a w(x)), and the deficit is a conformal-anomaly (Liouville/Schwarzian) term proportional to sum_a c_a v_a times a quadratic functional of grad log w: schematically Def(w) = kappa A sum_x (w_{x+1} - w_x)^2 / w_x + (higher derivatives), with a universal constant kappa to be fixed (the Rindler/Boulware result of fable_bound_modular is the special case w_x = x). This holds for every sector, charged or neutral, because it only involves the stress tensor. Hence the symmetry-free target is the lattice lemma
+
+    Smooth-modulation lemma: Def(w) <= C M f(d) sum_x (w_{x+1} - w_x)^2 / w_x + (terms negligible for slowly varying w)
+
+for all positive w, with explicit C and any f, which together with the CFT evaluation gives A <= (C/kappa) M f(d). C105 showed that decompositions into uniform open intervals lose O(M) per unit of max w and cannot prove it, and found a nonlocal positive certificate with logarithmic loss for XX; fable_kappa showed gradient-norm arguments fail.
