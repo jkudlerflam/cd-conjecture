@@ -1,0 +1,5 @@
+task 1: python3 scan.py --L 16 --J 0.25 --mu_v 0.6 --out data/scan/vac_J0.25_mu0.6_L16.json
+Wed Oct 28 17:45:25 UTC 2026
+<slurm> line 12: 2173383 Killed                  python3 scan.py --L 16 --J 0.25 --mu_v 0.6 --out data/scan/vac_J0.25_mu0.6_L16.json
+Wed Oct 28 17:58:24 UTC 2026
+[2026-10-28T17:58:24.906] error: Detected 1 oom_kill event in StepId=17518613.batch. Some of the step tasks have been OOM Killed.

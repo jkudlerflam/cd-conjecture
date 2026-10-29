@@ -1,0 +1,19 @@
+Traceback (most recent call last):
+  File "d24.py", line 220, in <module>
+    main()
+  File "d24.py", line 208, in main
+    res = scan(a.L, P, a.mode == 'frozen', a.t, a.J, a.mu_v)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d24.py", line 156, in scan
+    eint[w] = frozen_energy(w, P, alph, range(0, ncell + 2))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d24.py", line 139, in frozen_energy
+    r = sqed.Ring(len(word), word, Q, 0.0, 1.0, 0.0, P['lam'], alph=alph)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "sqed.py", line 179, in __init__
+    self.inn = Internal(word, Q2, alph['hb'], alph['letters'], alph['q2'], alph.get('allowed'))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "sqed.py", line 67, in __init__
+    dig = np.array(np.unravel_index(np.arange(tot), dims))          # (M, tot)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+numpy._core._exceptions._ArrayMemoryError: Unable to allocate 285. GiB for an array with shape (4251528000, 9) and data type int64

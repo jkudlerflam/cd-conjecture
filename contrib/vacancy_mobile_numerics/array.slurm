@@ -6,7 +6,7 @@
 #SBATCH --output=data/logs/%x_%a.out
 # usage: sbatch --job-name=NAME --array=0-N --cpus-per-task=C --mem=XG array.slurm TASKFILE
 export OMP_NUM_THREADS=${SLURM_CPUS_PER_TASK:-4} OPENBLAS_NUM_THREADS=${SLURM_CPUS_PER_TASK:-4} MKL_NUM_THREADS=${SLURM_CPUS_PER_TASK:-4}
-cd /scratch/lustre/jkudlerflam/vacmob/contrib/vacancy_mobile_numerics
+cd "${SLURM_SUBMIT_DIR:-.}"
 line=$(sed -n "$((SLURM_ARRAY_TASK_ID+1))p" "$1")
 echo "task $SLURM_ARRAY_TASK_ID: $line"; date
 eval "$line"

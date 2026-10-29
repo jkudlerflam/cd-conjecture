@@ -1,0 +1,9 @@
+python3 -B logical_vac.py ring --n 1 --L 18 --M 12 --N 6 --J 0.5 --out data/lv/ring_n1_J0.5_r23_L18.json
+python3 -B logical_vac.py ring --n 1 --L 18 --M 12 --N 6 --J 0.25 --out data/lv/ring_n1_J0.25_r23_L18.json
+python3 -B logical_vac.py ring --n 1 --L 18 --M 12 --N 6 --vz 6 --J 0.5 --out data/lv/ctrl_n1_J0.5_r23_L18.json
+python3 -B logical_vac.py ring --n 2 --L 12 --M 8 --N 4 4 --taus 1 0.5 --eps 0 0 --J 0.5 --out data/lv/ring_n2_J0.5_r23_L12.json
+python3 -B logical_vac.py ring --n 2 --L 12 --M 8 --N 4 4 --taus 1 0.5 --eps 0 0 --vz 0 3 --J 0.5 --out data/lv/ctrl_n2_J0.5_r23_L12.json
+python3 -B logical_vac.py ring --n 2 --L 12 --M 9 --N 4 4 --taus 1 0.5 --eps 0 0 --J 0.5 --out data/lv/ring_n2_J0.5_r34_L12.json
+python3 -B logical_vac.py ring --n 2 --L 14 --M 8 --N 4 4 --taus 1 0.5 --eps 0 0 --J 0.5 --out data/lv/ring_n2_J0.5_r47_L14.json
+python3 -B logical_vac.py ring --n 2 --L 16 --M 8 --N 4 4 --taus 1 0.5 --eps 0 0 --J 0.5 --out data/lv/ring_n2_J0.5_r12_L16.json
+python3 -B logical_vac.py ring --n 2 --L 14 --M 8 --N 4 2 --taus 1 0.5 --eps 0 0 --J 0.5 --out data/lv/ring_n2g_J0.5_M8_L14.json

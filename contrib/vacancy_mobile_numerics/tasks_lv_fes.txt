@@ -1,0 +1,10 @@
+python3 -B run_fes.py lv_n1_J0.5 --model lv --taus 1 --eps 0 --J 0.5 --mu_v 0.5 --chis 8 12 16 24 32 48 64 96 128 160 200
+python3 -B run_fes.py lv_n2_J0.5 --model lv --taus 1 0.5 --eps 0 0 --J 0.5 --mu_v 0.25 --chis 8 12 16 24 32 48 64 96 128 160 200
+python3 -B run_fes.py lv_ctrl1_J0.5 --model lv --taus 1 --eps 0 --vz 6 --J 0.5 --mu_v -0.3 --chis 8 12 16 24 32 48 64 96 128 160 200
+python3 -B run_fes.py lv_ctrl2_J0.5 --model lv --taus 1 0.5 --eps 0 0 --vz 0 3 --J 0.5 --mu_v 0.25 --chis 8 12 16 24 32 48 64 96 128 160 200
+python3 -B run_fes.py kxx_1_0.48 --model kxx --vels 1 0.48 --chis 8 12 16 24 32 48 64 96 128 160 200
+python3 -B run_fes.py kxx_1_0.48_0.24 --model kxx --vels 1 0.48 0.24 --chis 8 12 16 24 32 48 64 96 128 160 200
+python3 -B run_fes.py lv_n1_J0.25 --model lv --taus 1 --eps 0 --J 0.25 --mu_v 0.55 --chis 8 12 16 24 32 48 64 96 128 160 200
+python3 -B run_fes.py kxx_1_0.24 --model kxx --vels 1 0.24 --chis 8 12 16 24 32 48 64 96 128 160 200
+python3 -B run_fes.py lv_n2g_J0.5 --model lv --taus 1 0.5 --eps 0 0.4 --J 0.5 --mu_v 0.3 --chis 8 12 16 24 32 48 64 96 128 160 200
+python3 -B run_fes.py kxx_1_0.48_0.22 --model kxx --vels 1 0.48 0.22 --chis 8 12 16 24 32 48 64 96 128 160 200

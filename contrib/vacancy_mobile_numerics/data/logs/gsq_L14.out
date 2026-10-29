@@ -1,8 +1,8 @@
 L=14 M=9 BPPBPPBPP 2Q=1 dim=19305x2002 levels=[-13.725245924, -13.713778832, -13.713778832, -13.687973526, -13.68362118, -13.682459637] cos k=[1.0, 0.901, 0.901, 1.0, 0.6235, 1.0] t=12744s
 Traceback (most recent call last):
-  File "/scratch/lustre/jkudlerflam/vacmob/contrib/vacancy_mobile_numerics/gs_quick.py", line 55, in <module>
+  File "gs_quick.py", line 55, in <module>
     main()
-  File "/scratch/lustre/jkudlerflam/vacmob/contrib/vacancy_mobile_numerics/gs_quick.py", line 45, in main
+  File "gs_quick.py", line 45, in main
     w, U = eigsh(op, k=a.nev, which='SA', tol=1e-11, ncv=max(3 * a.nev, 30), maxiter=20000)
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
   File "/opt/sns/anaconda3/2024.06/lib/python3.12/site-packages/scipy/sparse/linalg/_eigen/arpack/arpack.py", line 1696, in eigsh

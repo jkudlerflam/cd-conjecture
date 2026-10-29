@@ -6,15 +6,15 @@ L=7 DDMDMDM Q=4 done, lowest -3.1375145376
 L=7 DDDMDDM Q=0 done, lowest -2.8346761032
 L=7 DDDMDDM Q=1 done, lowest -2.8346569534
 Traceback (most recent call last):
-  File "/scratch/lustre/jkudlerflam/vacmob/contrib/vacancy_mobile_numerics/d24.py", line 220, in <module>
+  File "d24.py", line 220, in <module>
     main()
-  File "/scratch/lustre/jkudlerflam/vacmob/contrib/vacancy_mobile_numerics/d24.py", line 208, in main
+  File "d24.py", line 208, in main
     res = scan(a.L, P, a.mode == 'frozen', a.t, a.J, a.mu_v)
           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/scratch/lustre/jkudlerflam/vacmob/contrib/vacancy_mobile_numerics/d24.py", line 174, in scan
+  File "d24.py", line 174, in scan
     lev = r.lowest(m, nev=nev, tol=1e-12)
           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/scratch/lustre/jkudlerflam/vacmob/contrib/vacancy_mobile_numerics/sqed.py", line 257, in lowest
+  File "sqed.py", line 257, in lowest
     out = eigsh(op, k=k, which='SA', v0=v0, tol=tol, ncv=max(2 * k + 10, 24), maxiter=50000,
           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
   File "/opt/sns/anaconda3/2024.06/lib/python3.12/site-packages/scipy/sparse/linalg/_eigen/arpack/arpack.py", line 1573, in eigsh

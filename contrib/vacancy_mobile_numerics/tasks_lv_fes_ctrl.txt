@@ -1,0 +1,2 @@
+python3 -B run_fes.py lv_ctrl1_J0.5 --model lv --taus 1 --eps 0 --vz 6 --J 0.5 --mu_v -0.3 --chis 8 12 16 24 32 48 64 96 128 160 200
+python3 -B run_fes.py lv_ctrl2_J0.5 --model lv --taus 1 0.5 --eps 0 0 --vz 0 3 --J 0.5 --mu_v 0.25 --chis 8 12 16 24 32 48 64 96 128 160 200
