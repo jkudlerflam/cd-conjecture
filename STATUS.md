@@ -1,6 +1,18 @@
 # Where the c–d conjecture stands
 
-Last updated 2026-10-28 UTC. Read this page first. It is the current state of the project in one place. [REPORT.md](REPORT.md) is the chronological record behind it, and where the two disagree, this page is the one to trust. Every claim carries a tag saying how it was established (see "Tags" at the end).
+Last updated 2026-10-29 UTC. Read this page first. It is the current state of the project in one place. [REPORT.md](REPORT.md) is the chronological record behind it, and where the two disagree, this page is the one to trust. Every claim carries a tag saying how it was established (see "Tags" at the end).
+
+## Conclusion of the campaign (2026-10-29)
+
+[conclusion at the theoretical-physics standard] The c–d conjecture is false. Fixed-alphabet route-A chains have central charge that grows without bound at fixed local dimension, because the infrared can carry arbitrarily many gapless species if each one is made slow enough.
+
+1. Unbounded c at fixed d0 = 4464 (C39, C42, C44, C45): c = n + 1 for every n. All finite inputs are proved for every n and refereed. The Wilsonian step S is the same kind of input as large-U Hubbard to Heisenberg; its massive-sector matching (C48), physical-ensemble transfer (C58), identification of c from a Gaussian limit (C51) and the imported collaborator lemmas are proved and refereed, and the full microscopic demonstrator flows to its matched XXZ Luttinger liquid numerically (REPORT §9.58). What remains for S is constructive RG at the level of mathematical physics (Lemma N and lemma TP), not a physics gap.
+2. Smallest counterexamples: d = 11 frozen with c = 11 > 10, and d = 13 mobile with c = 14 > 12 (explicit bonds in [contrib/small_d_note/](contrib/small_d_note/note.pdf)), each with a certified finite member, refereed and red-teamed, resting on the same infrared inputs as the d = 24 candidate of a collaborator (GitHub: salpace). A d = 12 mobile design with heuristic mobile steps is recorded in `contrib/mobile_below_13/` (REPORT §9.72).
+3. Numerical evidence: the logical vacancy model gives calibrated c = n + 1 for n = 1, 2, 3 (2.0, 2.9 ± 0.1, 3.98 ± 0.05), each about one unit above a control. The certified members themselves are beyond numerical reach (couplings of order 2^-600 and bond dimensions of order 10^9).
+4. At d = 2 no c > 1 was found anywhere (about 103,000 sampled chains, the staggered branch to L = 256, floating phases), and simple mechanisms at d = 3 to 12 at best saturate c = d − 1.
+5. The natural replacement: the velocity-weighted Casimir coefficient A = Σ_a c_a v_a ≤ π M log₂ d, with M the gauge-optimized bond half-spread. It is saturated by the Heisenberg chain, holds in every solvable family (REPORT §9.69), is proved with the sharp constant A ≤ 2M for all quasi-free chains (§9.71), and is satisfied by every counterexample above by an enormous margin. A general proof is open; every crossover-free route tried so far fails for identified reasons (§9.68 to §9.70).
+
+Not established: a rigorous lattice-to-CFT theorem for any of the counterexamples, and independent human review. These are the next steps; a short paper presenting (i) the d = 13 counterexample, (ii) unbounded c at fixed d, and (iii) the velocity-weighted bound is proposed.
 
 ## The question
 
