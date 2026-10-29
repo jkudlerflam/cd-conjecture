@@ -1,0 +1,34 @@
+{
+  "status": "numerical_checks_of_proved_identities",
+  "reflection": [
+    {
+      "status": "numerical_consistency_check",
+      "vertices": 4,
+      "gram_integral_relative_residual": 1.0017980617771279e-15,
+      "quadrature_error_estimate": 9.769435573459373e-17,
+      "hopping_reflection_relative_residual": 1.4507415328473383e-16,
+      "onsite_reflection_relative_residual": 2.457764029915818e-15,
+      "bloch_reflection_relative_residual": 2.346432020343358e-16
+    },
+    {
+      "status": "numerical_consistency_check",
+      "vertices": 5,
+      "gram_integral_relative_residual": 7.862724273165344e-16,
+      "quadrature_error_estimate": 9.931547583617319e-17,
+      "hopping_reflection_relative_residual": 2.906393322447813e-16,
+      "onsite_reflection_relative_residual": 8.149576646974222e-16,
+      "bloch_reflection_relative_residual": 3.1653280461397666e-16
+    },
+    {
+      "status": "numerical_consistency_check",
+      "vertices": 6,
+      "gram_integral_relative_residual": 1.613459206254791e-15,
+      "quadrature_error_estimate": 9.898652762973014e-17,
+      "hopping_reflection_relative_residual": 2.9055967966782274e-16,
+      "onsite_reflection_relative_residual": 1.2708149005484717e-15,
+      "bloch_reflection_relative_residual": 3.2335187008950473e-16
+    }
+  ],
+  "equal_source_symmetry_relative_residual": 6.114768725387531e-17,
+  "note": "Quadrature and eigenvalues are consistency checks, not acceptance certificates."
+}

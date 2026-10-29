@@ -1,0 +1,8 @@
+{
+  "status": "rejected_checker_assumption",
+  "test": "first two-site-source interval run",
+  "failure": "AssertionError in two_site_certificate at the requirement that both diagonals and the off-diagonal lower endpoint be positive",
+  "reason": "Signed or complex superposed sources need not have positive matrix entries. Entrywise positivity is unnecessary for a negative principal determinant.",
+  "repair": "Use the maximum of all four endpoint diagonal products and a lower bound on the absolute off-diagonal entry. Require the resulting determinant upper bound to be strictly negative.",
+  "scope": "No acceptance used the failed checker. This is a correction to the checker, not a claim that the tested sources are positive."
+}
