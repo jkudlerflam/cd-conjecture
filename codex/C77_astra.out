@@ -1,0 +1,23 @@
+The smallest dimension left open by these arguments is d=2. The qubit studies found no counterexample, but did not establish a global exclusion.
+
+1. For a complete q-component Luttinger liquid, spin-charge separation gives
+   \[
+   c=1+(q-1)=q=d-1.
+   \]
+   The hole is not another independent mode. There’s a qualification: literal hopping plus density interactions preserves particle color order. It does not automatically generate propagating spin modes. The symmetric case has one charge spectrum with frozen color degeneracy, as in the [infinite-U Hubbard solution](https://arxiv.org/html/0812.2977v1). Thus \(c\le q\) is a conditional liquid count, not a general theorem for every species-dependent hard-core model.
+
+2. None of the proposed general counts closes the gap. Conserved currents can coexist with neutral sectors, and bare Fermi-point bounds do not control arbitrary interacting modes. Entropy plus Lieb–Robinson gives
+   \[
+   c\le \frac{3v_{\rm LR}\log d}{\pi(1-\epsilon)T_0},
+   \]
+   where conformal thermodynamics must hold at \(T_0\) within relative error \(\epsilon\). Without a lower bound on that crossover scale, this does not bound \(c\).
+
+3. A concrete d=2 search family is
+   \[
+   H=\sum_j[(1+\gamma)XX+(1-\gamma)YY+uZZ+D(XY-YX)+bZ].
+   \]
+   The target is an independent Ising transition inside a finite-velocity Luttinger liquid, giving \(c=3/2\). This remains speculative, with no identified violating point.
+
+Full derivations and qualifications are in [RESULT.md](RESULT.md) and [PROOF.md](PROOF.md). Small algebra and spectrum checks passed. No thermodynamic central-charge measurement was performed.
+
+[gpt_solve: backend=codex model=gpt-6-astra effort=high transcript=20261028T212943-43456]

@@ -1,0 +1,12 @@
+TP remains unproved, and I found no failing coefficient.
+
+Two partial results are established:
+
+- Analytic preparation of one high chirality, retaining all cycles and open chains, with uniform thermal bounds.
+- Cutoff stabilization of every fixed-order zero-temperature reference coefficient, including vacuum terms.
+
+The high four-cycle survives at \(g^4\), but remains finite and thermally controlled. It is not a TP obstruction. The missing step is an exponential-in-order bound coupling both chiralities, followed by the infrared comparison.
+
+Derivations and limitations are in [PROOF.md](<./PROOF.md>) and [RESULT.md](<./RESULT.md>). PROGRESS.md is updated. Numerical controls pass; all writes stayed inside work_C73.
+
+[gpt_solve: backend=codex model=gpt-6-astra effort=high transcript=20261028T204946-31819]

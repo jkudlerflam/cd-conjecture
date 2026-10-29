@@ -1,0 +1,46 @@
+{
+  "hardcore_check": {
+    "q": 2,
+    "L": 6,
+    "N": 3,
+    "colored_dimension": 160,
+    "charge_dimension": 20,
+    "word_violations": 0,
+    "spectrum_max_error": 1.199040866595169e-14
+  },
+  "candidate_algebra": {
+    "gamma": 0.17,
+    "u": 0.4,
+    "D": 0.5,
+    "b": 0.23,
+    "hermiticity_error": 0.0,
+    "parity_error": 0.0,
+    "additive_uniform_charge_singular_values": [
+      5.234118837015454,
+      3.786819245752298,
+      1.9233304448274091
+    ]
+  },
+  "formal_thermodynamic_checks": [
+    {
+      "formal_c": 1.0,
+      "linear_entropy_slope": 1.0471975511965976,
+      "crossover": 0.6619068004579548
+    },
+    {
+      "formal_c": 1.5,
+      "linear_entropy_slope": 1.5707963267948966,
+      "crossover": 0.4412712003053032
+    },
+    {
+      "formal_c": 10.0,
+      "linear_entropy_slope": 10.471975511965978,
+      "crossover": 0.06619068004579548
+    },
+    {
+      "formal_c": 100.0,
+      "linear_entropy_slope": 104.71975511965978,
+      "crossover": 0.006619068004579547
+    }
+  ]
+}

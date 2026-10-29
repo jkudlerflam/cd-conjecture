@@ -1,0 +1,15 @@
+# C73 source and proof boundary
+
+[proved work record] Read the project memory, S2 and S backgrounds, and all files in C59, C62, C65 and C71, including their scripts and recorded checks. Their settled parameter conversion, trace regulator, bubble preparation and conditional TP reductions are imported. The new arguments are in PROOF Sections 2-7. Context from the earlier round results, the lattice UV audit and the thermal collaborator's winding, moment-allocation and history statements was also consulted. The broader microscopic construction is not rederived or newly verified.
+
+[assumed, imported local results] C65 Section 5 supplies the sea-preserving smooth regulator and its Gibbs trace limit. C71 supplies the uniform singular covariance majorant and the prepared two-cycle with its speed derivatives and thermal bound. C59 supplies the full-kernel TP target and its pressure implication. C62's shared-short-memory scale sum and the collaborator's MOMENT_RESERVE Section 6 remain conditional inputs. The single-scale WINDING_ESTIMATE explicitly assumes a bounded smooth-shell covariance and cannot be applied unchanged to the full continuum high covariance.
+
+[proved, primary-source scope check] [Benfatto and Mastropietro, 0907.2837](https://arxiv.org/html/0907.2837), equations (81) and (89), was checked through the browser. The former states constant-history beta-function decay; the latter discusses the ultraviolet effective functional for its specified reference. Its reference definition and Appendix D distinguish the Hamiltonian convention. These statements are context for retaining cutoff correction terms. They are not invoked as a theorem proving the full thermal kernel or vacuum estimates of C59 TP for the C65 regulator.
+
+[assumed, literature lead not used as a theorem] The primary abstract of [Kopper and Magnen, cond-mat/0007478](https://arxiv.org/abs/cond-mat/0007478) concerns cancellations in symmetrized density loops through Ward identities. No bound in this note is imported from that abstract. The rational cycle identity and cutoff line identity used here are proved directly in PROOF Section 5.
+
+[proved search boundary] Searches located author bibliographies listing Gentile and Scoppola's 1993 Luttinger ultraviolet paper, but its full theorem was not retrieved and is not applied. No absence or novelty claim is made about constructive Luttinger ultraviolet results. This was not a new search for the previously announced thermal manuscript.
+
+[proved distinction] The loop sum, its analytic one-chirality norm, and the fixed-order cutoff plateau are new derivations within this run, not statements attributed to BM. The one-chirality result keeps the other chirality as external Grassmann variables. The full reference scalar remains fixed by C65, but its differentiated two-chirality RG expansion is not bounded here. A surviving high four-cycle is not presented as a counterexample to the vanishing beta function.
+
+[proved scope] No shell network commands, downloaded sources, subagents, author messages, or writes outside work_C73 were used. The proofs have not received independent or human review.

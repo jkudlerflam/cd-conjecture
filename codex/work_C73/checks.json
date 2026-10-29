@@ -1,0 +1,130 @@
+{
+  "scope": "Chiral cycle algebra and fixed-order controls. Full TP remains unproved.",
+  "cycles": {
+    "full_four_cycle_residual": 0.0,
+    "high_four_cycle": 6.2254326829807976e-06,
+    "formula": 6.225432682980797e-06,
+    "formula_residual": 8.470329472543003e-22,
+    "odd_cycles": [
+      {
+        "length": 3,
+        "residual": 3.469446951953614e-18
+      },
+      {
+        "length": 5,
+        "residual": 1.5722959959318313e-20
+      }
+    ]
+  },
+  "ward": {
+    "maximum_residual": 5.551115123125783e-17,
+    "retained_remainder_magnitudes": [
+      0.2656041843644137,
+      0.2598239179404442
+    ]
+  },
+  "loops": {
+    "maximum_frequency_quadrature_error": 2.220446049250313e-16,
+    "maximum_plateau_error": 6.075403082579775e-18,
+    "cases": [
+      {
+        "cycle_length": 2,
+        "momentum_span": 0.41,
+        "plateau_checks": [
+          {
+            "cutoff": 0.61,
+            "plateau_residual": 0.0
+          },
+          {
+            "cutoff": 1.8199999999999998,
+            "plateau_residual": 0.0
+          },
+          {
+            "cutoff": 3.6399999999999997,
+            "plateau_residual": 0.0
+          }
+        ]
+      },
+      {
+        "cycle_length": 3,
+        "momentum_span": 0.9,
+        "plateau_checks": [
+          {
+            "cutoff": 1.1,
+            "plateau_residual": 5.898697549827395e-18
+          },
+          {
+            "cutoff": 2.8,
+            "plateau_residual": 5.898697549827395e-18
+          },
+          {
+            "cutoff": 5.6,
+            "plateau_residual": 5.898697549827395e-18
+          }
+        ]
+      },
+      {
+        "cycle_length": 4,
+        "momentum_span": 1.4699999999999998,
+        "plateau_checks": [
+          {
+            "cutoff": 1.6699999999999997,
+            "plateau_residual": 6.075403082579775e-18
+          },
+          {
+            "cutoff": 3.9399999999999995,
+            "plateau_residual": 6.075403082579775e-18
+          },
+          {
+            "cutoff": 7.879999999999999,
+            "plateau_residual": 6.075403082579775e-18
+          }
+        ]
+      },
+      {
+        "cycle_length": 5,
+        "momentum_span": 2.12,
+        "plateau_checks": [
+          {
+            "cutoff": 2.3200000000000003,
+            "plateau_residual": 1.465929947199727e-18
+          },
+          {
+            "cutoff": 5.24,
+            "plateau_residual": 1.465929947199727e-18
+          },
+          {
+            "cutoff": 10.48,
+            "plateau_residual": 1.465929947199727e-18
+          }
+        ]
+      }
+    ]
+  },
+  "winding": [
+    {
+      "cycle_length": 3,
+      "beta": 2.0,
+      "unfolding_residual": 1.0245245861377152e-16,
+      "thermal_defect_magnitude": 0.0166707696689435
+    },
+    {
+      "cycle_length": 3,
+      "beta": 3.0,
+      "unfolding_residual": 1.0780110487166277e-16,
+      "thermal_defect_magnitude": 0.004086284350878372
+    },
+    {
+      "cycle_length": 4,
+      "beta": 2.0,
+      "unfolding_residual": 4.1233906303300403e-17,
+      "thermal_defect_magnitude": 0.016354678071919267
+    },
+    {
+      "cycle_length": 4,
+      "beta": 3.0,
+      "unfolding_residual": 4.0148286060821495e-17,
+      "thermal_defect_magnitude": 0.0041018225777669035
+    }
+  ]
+}

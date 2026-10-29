@@ -1,0 +1,7 @@
+[proved] C74 establishes bounded field-derivative counters through general contractions, an exact Taylor-contraction identity, and full cut coverage with bounded spatial loads for arbitrary-depth quartic pair ladders. All finite checks pass.
+
+[unresolved] General branching trees remain open. I did not prove C60 (17) or corrected Lemma N, or find an unavoidable counter-growth pattern.
+
+Written in [RESULT.md](<./RESULT.md>), [PROOF.md](<./PROOF.md>), and [PROGRESS.md](<./PROGRESS.md>), with checks and local STATE.md.
+
+[gpt_solve: backend=codex model=gpt-6-astra effort=high transcript=20261028T211154-39313]

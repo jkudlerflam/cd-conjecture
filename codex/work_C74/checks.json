@@ -1,0 +1,18 @@
+{
+  "status": "passed",
+  "arithmetic": "exact rational and integer",
+  "contraction_jet_cases": 64,
+  "child_parent_cases": 32,
+  "moment_differentiated_cases": 192,
+  "spatial_split_cases": 405,
+  "field_counter_cases": 826,
+  "ladder_multiplier_cases": 240,
+  "cut_cases": 1024,
+  "bbf_cases": 40,
+  "false_commutation_example": {
+    "correct": "q/3",
+    "omitted_jet": "0"
+  },
+  "maximum_checked_ladder_depth": 64,
+  "scope": "Finite algebra and ladder controls, not a general GN routing theorem."
+}
