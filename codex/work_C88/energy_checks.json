@@ -1,0 +1,196 @@
+{
+  "energy": [
+    {
+      "bits": [
+        0,
+        0
+      ],
+      "dimension": 320,
+      "legal_dimension": 80,
+      "constrained_energy": -3.298130829682714,
+      "color_shift_coefficient": -0.6691032812348758,
+      "vacuum_shift_coefficient": -0.44805229574714533,
+      "runs": [
+        {
+          "K": 100.0,
+          "dimension": 320,
+          "energy": -3.3091479325250326,
+          "residual": 4.6269004509975185e-14,
+          "illegal_material_weight": 4.436304803657272e-05,
+          "extended_bad_expectation": 0.00010865195592315148,
+          "K_energy_shift": -1.1017102842318494
+        },
+        {
+          "K": 1000.0,
+          "dimension": 320,
+          "energy": -3.2992464173535034,
+          "residual": 1.056283722543763e-12,
+          "illegal_material_weight": 4.476106722954035e-07,
+          "extended_bad_expectation": 1.1140224150229067e-06,
+          "K_energy_shift": -1.115587670789342
+        },
+        {
+          "K": 10000.0,
+          "dimension": 320,
+          "energy": -3.298242529537461,
+          "residual": 8.59613567611955e-14,
+          "illegal_material_weight": 4.48008137866334e-09,
+          "extended_bad_expectation": 1.1168415442964232e-08,
+          "K_energy_shift": -1.1169985474701605
+        }
+      ]
+    },
+    {
+      "bits": [
+        0,
+        1
+      ],
+      "dimension": 230,
+      "legal_dimension": 80,
+      "constrained_energy": -3.298130829682714,
+      "color_shift_coefficient": -0.5146993462815267,
+      "vacuum_shift_coefficient": -0.1024562307004946,
+      "runs": [
+        {
+          "K": 100.0,
+          "dimension": 230,
+          "energy": -3.304176468044198,
+          "residual": 7.52347470380373e-14,
+          "illegal_material_weight": 1.0022947754132012e-05,
+          "extended_bad_expectation": 5.9226379432583225e-05,
+          "K_energy_shift": -0.6045638361483974
+        },
+        {
+          "K": 1000.0,
+          "dimension": 230,
+          "energy": -3.2987466992402545,
+          "residual": 4.2093005966374757e-13,
+          "illegal_material_weight": 1.0222688784192229e-07,
+          "extended_bad_expectation": 6.145865882614028e-07,
+          "K_energy_shift": -0.6158695575404494
+        },
+        {
+          "K": 10000.0,
+          "dimension": 230,
+          "energy": -3.2981925323527084,
+          "residual": 1.1205121112908395e-13,
+          "illegal_material_weight": 1.0243322714265293e-09,
+          "extended_bad_expectation": 6.168978534579725e-09,
+          "K_energy_shift": -0.6170266999427909
+        }
+      ]
+    },
+    {
+      "bits": [
+        1,
+        0
+      ],
+      "dimension": 230,
+      "legal_dimension": 80,
+      "constrained_energy": -3.298130829682714,
+      "color_shift_coefficient": -0.6396299069758717,
+      "vacuum_shift_coefficient": -0.34559606504665075,
+      "runs": [
+        {
+          "K": 100.0,
+          "dimension": 230,
+          "energy": -3.307823741918822,
+          "residual": 7.590440445401583e-14,
+          "illegal_material_weight": 3.402958448801758e-05,
+          "extended_bad_expectation": 9.536396560654874e-05,
+          "K_energy_shift": -0.9692912236107798
+        },
+        {
+          "K": 1000.0,
+          "dimension": 230,
+          "energy": -3.2991144362086176,
+          "residual": 8.16399981700223e-13,
+          "illegal_material_weight": 3.450618427158506e-07,
+          "extended_bad_expectation": 9.819900205416057e-07,
+          "K_energy_shift": -0.9836065259034577
+        },
+        {
+          "K": 10000.0,
+          "dimension": 230,
+          "energy": -3.2982293360589328,
+          "residual": 5.014793889757854e-12,
+          "illegal_material_weight": 3.4554259991642894e-09,
+          "extended_bad_expectation": 9.849015819504827e-09,
+          "K_energy_shift": -0.9850637621866554
+        }
+      ]
+    },
+    {
+      "bits": [
+        1,
+        1
+      ],
+      "dimension": 145,
+      "legal_dimension": 80,
+      "constrained_energy": -3.298130829682714,
+      "color_shift_coefficient": -0.48522597202252243,
+      "vacuum_shift_coefficient": -0.0,
+      "runs": [
+        {
+          "K": 100.0,
+          "dimension": 145,
+          "energy": -3.302875032696036,
+          "residual": 4.849151267154019e-14,
+          "illegal_material_weight": 0.0,
+          "extended_bad_expectation": 4.638636555606427e-05,
+          "K_energy_shift": -0.47442030133217905
+        },
+        {
+          "K": 1000.0,
+          "dimension": 145,
+          "energy": -3.2986149521760657,
+          "residual": 9.14508037372998e-15,
+          "illegal_material_weight": 0.0,
+          "extended_bad_expectation": 4.830216171816383e-07,
+          "K_energy_shift": -0.48412249335161306
+        },
+        {
+          "K": 10000.0,
+          "dimension": 145,
+          "energy": -3.298179341221658,
+          "residual": 1.6973241577557594e-12,
+          "illegal_material_weight": 0.0,
+          "extended_bad_expectation": 4.8500483292975305e-09,
+          "K_energy_shift": -0.4851153894369631
+        }
+      ]
+    }
+  ],
+  "small_J": [
+    {
+      "K": 10000.0,
+      "dimension": 268,
+      "energy": -2.015319590838101,
+      "residual": 6.22838810667368e-15,
+      "illegal_material_weight": 3.993442732885342e-11,
+      "extended_bad_expectation": 5.901984497178884e-05,
+      "kappa": 100.0,
+      "J": 0.01
+    },
+    {
+      "K": 100000.0,
+      "dimension": 268,
+      "energy": -2.0100216913213824,
+      "residual": 5.268027483932035e-14,
+      "illegal_material_weight": 3.4056183992901684e-13,
+      "extended_bad_expectation": 5.850492331254872e-07,
+      "kappa": 1000.0,
+      "J": 0.01
+    },
+    {
+      "K": 1000000.0,
+      "dimension": 268,
+      "energy": -2.0094957001319123,
+      "residual": 8.346334753104365e-13,
+      "illegal_material_weight": 3.3342184739750487e-15,
+      "extended_bad_expectation": 5.837947250405327e-09,
+      "kappa": 10000.0,
+      "J": 0.01
+    }
+  ]
+}

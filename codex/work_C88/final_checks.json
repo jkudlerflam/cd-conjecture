@@ -1,0 +1,12 @@
+{
+  "tag": "numerical_final_checks",
+  "all_eight_scripts_passed": true,
+  "illegal_weight_ratio_K1000_to_K10000": {
+    "full_one_vacancy": 98.48419994681338,
+    "full_two_vacancies": 98.6078711489712,
+    "two_cells_nonzero_bits": 99.90754774559682,
+    "two_cells_two_vacancies_port": 98.92346718851228
+  },
+  "largest_lift_residual": 5.084764794403389e-11,
+  "project_memory_outside_folder_unchanged": true
+}

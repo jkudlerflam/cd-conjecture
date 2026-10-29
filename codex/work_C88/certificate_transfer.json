@@ -1,0 +1,20 @@
+{
+  "tag": "exact_comparison",
+  "unchanged_C85_sources": {
+    "certify_tree.py": true,
+    "certify_roots.py": true,
+    "rational_bands.py": true,
+    "full_loop_integer.py": true,
+    "structured.py": true,
+    "loop_scan.py": true,
+    "bond18.py": true,
+    "run_certificate.py": true,
+    "finite_budget.py": true,
+    "selector_certificate.py": true
+  },
+  "exact_certificate_comparisons": {
+    "root_certificate_exact_n13.json": true,
+    "finite_budget_exact.json": true,
+    "selector_exact.json": true
+  }
+}

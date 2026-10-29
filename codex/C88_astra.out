@@ -1,0 +1,7 @@
+Built the d=13 lift. All eight checks pass, and C85’s exact material certificate reproduces unchanged. The conditional candidate is c=14>12.
+
+Frozen pin-sector selection is proved. Mobile ground-state selection remains an explicit dressed-defect assumption. No further letter can be removed by the same superselection argument.
+
+Derivations, checks, and limitations are in [RESULT.md](RESULT.md) and [PROOF.md](PROOF.md), with [PROGRESS.md](PROGRESS.md) updated. All work stayed inside `work_C88`.
+
+[gpt_solve: backend=codex model=gpt-6-astra effort=high transcript=20261029T024627-27465]
