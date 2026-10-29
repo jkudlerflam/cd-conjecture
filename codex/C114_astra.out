@@ -1,0 +1,14 @@
+The general bound remains open. I wrote [RESULT.md](RESULT.md), [PROOF.md](PROOF.md), and the progress and local memory files.
+
+The main new result is a symmetry-free coherent-reconnection bound,
+\[
+E_0(2L)-2E_0(L)\le
+\frac{2(b_L-E_0(L)/L)}{\sum_{r=0}^{L-1}\operatorname{tr}\rho_r^2}.
+\]
+For real ground states, this is optimal within the entire coherent seam-position subspace. I proved analytically that this subspace cannot achieve \(O(1/L)\) cost even on XX.
+
+The exact-lift premise fails, and exact finite-range positive certificates cannot accommodate a positive Casimir coefficient. A quantitative approximate certificate remains an open route.
+
+Small ED checks passed on XX, Heisenberg, XXZ, and SU(3), with maximum residual \(1.33\times10^{-13}\). Typhon timed out on three attempts. The expanded SLURM suite is prepared but unrun; no heavy numerics ran locally.
+
+[gpt_solve: backend=codex model=gpt-6-astra effort=high transcript=20261029T185910-91250]

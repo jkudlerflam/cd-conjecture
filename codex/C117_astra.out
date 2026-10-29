@@ -1,0 +1,13 @@
+Written [RESULT.md](<./RESULT.md>), [PROOF.md](<./PROOF.md>), and [CHECKS.md](<./CHECKS.md>). No route establishes a general crossover-free bound on A.
+
+The main results are:
+
+- Fixed-support local SDPs, including local ground-state positivity, cannot resolve the asymptotic Casimir term. Shorter-ring ground states remain feasible.
+- The exact moment inequality is \(\lvert[q^4]m_1(q)\rvert\le3M^3\). However, a gapped Ising chain contributes at this order with \(A=0\), so this coefficient does not isolate conformal data.
+- All 15 local certificates and 10 small-ring energy intervals passed independent integer verification. Random d=3 searches reached iteration limits; their lower bounds remain certified, but optimality is unproved.
+
+The remaining spectral lemma is an upper bound on the infrared-filtered inverse moment, which would give \(A\le24\pi K M f(d)\). A paired ring-certificate bound would instead give \(A\le(4K/\pi)M f(d)\). Modular bootstrap still needs quantitative field-counting and support lemmas.
+
+Larger experiments remain unrun because Typhon SSH timed out. The SLURM driver is prepared.
+
+[gpt_solve: backend=codex model=gpt-6-astra effort=high transcript=20261029T190228-92652]

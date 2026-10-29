@@ -1,0 +1,20 @@
+Completed [RESULT.md](<./RESULT.md>), [PROOF.md](<./PROOF.md>) and the progress/handoff files. The general bound remains open.
+
+Two concrete obstructions are proved:
+
+- The tower inclusion is reversed. The window \(2\pi ux/L\) reaches dimension \(ux/v_a\), so it favors slow sectors.
+- An unfiltered ring trace cannot have the proposed uniform bound. Two XX chains at fixed \(d=4\), \(M=1\), \(N(1)=1\) give an arbitrarily large infrared excitation trace as one chain becomes slow, while \(A=2M\).
+
+A precise sufficient lemma is recorded. If the central charge \(C_j\) in
+\[
+4eM\,2^{-j-1}<v_a\le4eM\,2^{-j}
+\]
+satisfies \(C_j\le K(d)2^{j/2}\), then
+\[
+A\le4e(2+\sqrt2)\,M K(d).
+\]
+The missing step is a lattice bound on velocity-resolved infrared state content. Lieb–Robinson and information capacity alone did not supply it.
+
+Free-fermion, XX-stack and qualified slow-construction checks are included. All small numerical checks passed. No heavy numerics or files outside `work_C115` were used or modified.
+
+[gpt_solve: backend=codex model=gpt-6-astra effort=high transcript=20261029T185912-91437]

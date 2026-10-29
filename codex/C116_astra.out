@@ -1,0 +1,16 @@
+The universal bound remains open. I wrote [RESULT.md](<<local> Dropbox/Jonah Kudler-Flam/Claude/Projects/Modular c-Theorem/notes/cd_conjecture/codex/work_C116/RESULT.md>), with derivations in PROOF.md and checks in CHECKS.md.
+
+The useful full-spectrum quantity is
+\[
+R_L(\beta)=\log\frac{Z(L,\beta)^2}{Z(2L,\beta)},\qquad
+A=\frac4\pi\lim_{\tau\to\infty}\lim_{L\to\infty}\frac{R_L(\tau L)}{\tau},
+\]
+under the stated infrared assumptions and compatible ring lengths.
+
+I proved the all-scale estimate \(|R_L(\beta)|\le4\beta M\), but it still loses a factor of \(L\). An upper bound \(K(d)+kMf(d)\beta/L\) would give the requested result with \(C=4k/\pi\); that estimate remains unproved.
+
+The proposed temperature-independent spatial transfer dimension \(d^2\) fails analytically already for XX, even without transfer positivity. Same-shape comparisons also retain an unbounded reciprocal-velocity contribution. Massive spectators contribute no extracted slope under the explicit gap and finite-size hypotheses.
+
+Small full-spectrum tests on XX, Heisenberg and SU(3) passed the gluing estimate and rejected the \(d^2\) rank estimate. Larger tests remain unperformed: both Typhon SSH attempts timed out during banner exchange. The SLURM run is prepared, and no heavy numerics ran locally.
+
+[gpt_solve: backend=codex model=gpt-6-astra effort=high transcript=20261029T185914-91621]
