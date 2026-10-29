@@ -1,0 +1,9 @@
+[Proved] Three vacancy colors are necessary for this grammar’s pair-penalty lift, giving \(d=14\). The regenerated \(n=13\), cell-length-15 certificate has 26 simple Fermi points and 351 separated pair sums, meeting \(n+1=14>d-1=13\).
+
+[Numerical] All seven verification scripts pass, including nonzero-bit \(K^{-2}\) leakage suppression and F3/F4 diagnostics. The proof explicitly identifies the \(t^2/(JK)\) bit field, the \(J/K\) vacuum field and the port self-energy. The mixed \(t/K\) term vanishes.
+
+The \(c=14\) conclusion remains conditional on infrared matching and stability.
+
+Written [RESULT.md](<./RESULT.md>), [PROOF.md](<./PROOF.md>) and [PROGRESS.md](<./PROGRESS.md>). All work stayed inside `work_C85`.
+
+[gpt_solve: backend=codex model=gpt-6-astra effort=high transcript=20261029T005011-97671]

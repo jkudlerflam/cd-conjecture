@@ -1,0 +1,278 @@
+{
+  "parent_checks": [
+    {
+      "n": 2,
+      "entry_error": 0.0
+    },
+    {
+      "n": 13,
+      "entry_error": 0.0
+    }
+  ],
+  "commutators": {
+    "N": 0.0,
+    "M": 0.0,
+    "Q": 0.0
+  },
+  "runs": [
+    {
+      "case": "two_cells_nonzero_bits",
+      "colored": false,
+      "K": 10.0,
+      "dimension": 1296,
+      "energy": -5.050716353266173,
+      "residual": 1.3607789961819588e-14,
+      "illegal_material_weight": 0.03929252219461092,
+      "extended_bad_expectation": 0.007948536082968215
+    },
+    {
+      "case": "two_cells_nonzero_bits",
+      "colored": false,
+      "K": 100.0,
+      "dimension": 1296,
+      "energy": -4.975402751519257,
+      "residual": 3.446352888163799e-14,
+      "illegal_material_weight": 0.02393523486760481,
+      "extended_bad_expectation": 8.80074702636993e-05
+    },
+    {
+      "case": "two_cells_nonzero_bits",
+      "colored": false,
+      "K": 1000.0,
+      "dimension": 1296,
+      "energy": -4.967441174481282,
+      "residual": 5.774603409038707e-13,
+      "illegal_material_weight": 0.023074299862234266,
+      "extended_bad_expectation": 8.891948790036963e-07
+    },
+    {
+      "case": "two_cells_nonzero_bits",
+      "colored": false,
+      "K": 10000.0,
+      "dimension": 1296,
+      "energy": -4.966640484181547,
+      "residual": 3.3434156454773563e-12,
+      "illegal_material_weight": 0.02299591583189296,
+      "extended_bad_expectation": 8.90117230651493e-09
+    },
+    {
+      "case": "two_cells_nonzero_bits",
+      "colored": true,
+      "K": 10.0,
+      "dimension": 3348,
+      "energy": -5.105501328576787,
+      "residual": 1.604059458970037e-14,
+      "illegal_material_weight": 0.007484367744346561,
+      "extended_bad_expectation": 0.01596632238034404
+    },
+    {
+      "case": "two_cells_nonzero_bits",
+      "colored": true,
+      "K": 100.0,
+      "dimension": 3348,
+      "energy": -4.942718399351292,
+      "residual": 3.756089697578732e-13,
+      "illegal_material_weight": 8.306755631168515e-05,
+      "extended_bad_expectation": 0.00020501558724445043
+    },
+    {
+      "case": "two_cells_nonzero_bits",
+      "colored": true,
+      "K": 1000.0,
+      "dimension": 3348,
+      "energy": -4.924016749673051,
+      "residual": 7.304160705803612e-14,
+      "illegal_material_weight": 8.391273497521226e-07,
+      "extended_bad_expectation": 2.1061391148261475e-06
+    },
+    {
+      "case": "two_cells_nonzero_bits",
+      "colored": true,
+      "K": 10000.0,
+      "dimension": 3348,
+      "energy": -4.922118651136107,
+      "residual": 2.622218445865719e-11,
+      "illegal_material_weight": 8.399757817682201e-09,
+      "extended_bad_expectation": 2.1118614427368228e-08
+    },
+    {
+      "case": "full_one_vacancy",
+      "colored": false,
+      "K": 10.0,
+      "dimension": 180,
+      "energy": -3.0183437527044,
+      "residual": 5.4361950255551576e-14,
+      "illegal_material_weight": 3.071608758727781e-05,
+      "extended_bad_expectation": 3.013220398106167e-06
+    },
+    {
+      "case": "full_one_vacancy",
+      "colored": false,
+      "K": 100.0,
+      "dimension": 180,
+      "energy": -3.018294543166329,
+      "residual": 8.46908826009835e-14,
+      "illegal_material_weight": 2.5683988611835893e-05,
+      "extended_bad_expectation": 9.987555038505649e-08
+    },
+    {
+      "case": "full_one_vacancy",
+      "colored": false,
+      "K": 1000.0,
+      "dimension": 180,
+      "energy": -3.018284729969599,
+      "residual": 9.914904377144542e-14,
+      "illegal_material_weight": 2.520069016099649e-05,
+      "extended_bad_expectation": 1.1906274214181149e-09
+    },
+    {
+      "case": "full_one_vacancy",
+      "colored": false,
+      "K": 10000.0,
+      "dimension": 180,
+      "energy": -3.018283648429179,
+      "residual": 9.051866666598893e-12,
+      "illegal_material_weight": 2.5157799015663156e-05,
+      "extended_bad_expectation": 1.212902220146797e-11
+    },
+    {
+      "case": "full_one_vacancy",
+      "colored": true,
+      "K": 10.0,
+      "dimension": 368,
+      "energy": -3.1079824917042576,
+      "residual": 8.054032550821679e-14,
+      "illegal_material_weight": 7.785048485072264e-06,
+      "extended_bad_expectation": 0.007308955009378531
+    },
+    {
+      "case": "full_one_vacancy",
+      "colored": true,
+      "K": 100.0,
+      "dimension": 368,
+      "energy": -3.028843300402075,
+      "residual": 3.0367062444946866e-13,
+      "illegal_material_weight": 2.3036361068164566e-07,
+      "extended_bad_expectation": 0.00010540815870849916
+    },
+    {
+      "case": "full_one_vacancy",
+      "colored": true,
+      "K": 1000.0,
+      "dimension": 368,
+      "energy": -3.019168802140186,
+      "residual": 2.1506854261366865e-12,
+      "illegal_material_weight": 2.6756919105382538e-09,
+      "extended_bad_expectation": 1.0961667243290204e-06
+    },
+    {
+      "case": "full_one_vacancy",
+      "colored": true,
+      "K": 10000.0,
+      "dimension": 368,
+      "energy": -3.0181803058314447,
+      "residual": 5.617037420180948e-13,
+      "illegal_material_weight": 2.717839614359761e-11,
+      "extended_bad_expectation": 1.1004954629866339e-08
+    },
+    {
+      "case": "full_two_vacancies",
+      "colored": false,
+      "K": 10.0,
+      "dimension": 450,
+      "energy": -3.9371852546732473,
+      "residual": 1.2634982832347006e-14,
+      "illegal_material_weight": 2.9242962895240656e-05,
+      "extended_bad_expectation": 8.592513131450877e-07
+    },
+    {
+      "case": "full_two_vacancies",
+      "colored": false,
+      "K": 100.0,
+      "dimension": 450,
+      "energy": -3.9371713660191094,
+      "residual": 6.12960894017238e-14,
+      "illegal_material_weight": 2.6775726980392013e-05,
+      "extended_bad_expectation": 2.8116214374947704e-08
+    },
+    {
+      "case": "full_two_vacancies",
+      "colored": false,
+      "K": 1000.0,
+      "dimension": 450,
+      "energy": -3.93716860043466,
+      "residual": 6.060110510449885e-13,
+      "illegal_material_weight": 2.6472622443137746e-05,
+      "extended_bad_expectation": 3.359940973888615e-10
+    },
+    {
+      "case": "full_two_vacancies",
+      "colored": false,
+      "K": 10000.0,
+      "dimension": 450,
+      "energy": -3.937168295171393,
+      "residual": 1.216638284197652e-11,
+      "illegal_material_weight": 2.644275969437042e-05,
+      "extended_bad_expectation": 3.424005957221458e-12
+    },
+    {
+      "case": "full_two_vacancies",
+      "colored": true,
+      "K": 10.0,
+      "dimension": 1945,
+      "energy": -4.09407654058967,
+      "residual": 7.893749679177114e-14,
+      "illegal_material_weight": 4.552553629699341e-06,
+      "extended_bad_expectation": 0.01311581858880516
+    },
+    {
+      "case": "full_two_vacancies",
+      "colored": true,
+      "K": 100.0,
+      "dimension": 1945,
+      "energy": -3.9553893473538366,
+      "residual": 8.651212469147421e-14,
+      "illegal_material_weight": 1.316159360243001e-07,
+      "extended_bad_expectation": 0.00018056585519756935
+    },
+    {
+      "case": "full_two_vacancies",
+      "colored": true,
+      "K": 1000.0,
+      "dimension": 1945,
+      "energy": -3.938860000444663,
+      "residual": 2.0717558689243112e-12,
+      "illegal_material_weight": 1.5211425832006692e-09,
+      "extended_bad_expectation": 1.8679964198042277e-06
+    },
+    {
+      "case": "full_two_vacancies",
+      "colored": true,
+      "K": 10000.0,
+      "dimension": 1945,
+      "energy": -3.9371759305492073,
+      "residual": 2.2834078715793242e-11,
+      "illegal_material_weight": 1.544259982234952e-11,
+      "extended_bad_expectation": 1.8743859357710438e-08
+    }
+  ],
+  "unique_legal_four_site_colorings": 2127,
+  "four_site_grammar_words": 38335,
+  "projections": [
+    {
+      "case": "two_cells_nonzero_bits",
+      "legal_dimension": 576,
+      "entry_error": 0.0
+    },
+    {
+      "case": "full_one_vacancy",
+      "legal_dimension": 36,
+      "entry_error": 0.0
+    },
+    {
+      "case": "full_two_vacancies",
+      "legal_dimension": 90,
+      "entry_error": 0.0
+    }
+  ]
+}

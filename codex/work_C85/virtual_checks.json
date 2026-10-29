@@ -1,0 +1,74 @@
+[
+  {
+    "L": 3,
+    "legal_dimension": 313,
+    "illegal_intermediates": 144,
+    "tt_diagonal_formula_error": 0.0,
+    "ww_diagonal_formula_error": 2.220446049250313e-16,
+    "mixed_tW_error": 0.0,
+    "illegal_penalty_values": [
+      1
+    ],
+    "ambiguity": {
+      "('L', 0)": 1,
+      "('L', 1)": 1,
+      "('R', 0)": 2,
+      "('R', 1)": 0,
+      "('d', 'A')": 1,
+      "('d', 'B')": 1,
+      "('x', 'A')": 1,
+      "('x', 'B')": 1,
+      "('e', 0)": 1,
+      "('m', 'A')": 0,
+      "('m', 'B')": 0
+    }
+  },
+  {
+    "L": 4,
+    "legal_dimension": 2127,
+    "illegal_intermediates": 1256,
+    "tt_diagonal_formula_error": 0.0,
+    "ww_diagonal_formula_error": 4.440892098500626e-16,
+    "mixed_tW_error": 0.0,
+    "illegal_penalty_values": [
+      1
+    ],
+    "ambiguity": {
+      "('L', 0)": 1,
+      "('L', 1)": 1,
+      "('R', 0)": 2,
+      "('R', 1)": 0,
+      "('d', 'A')": 1,
+      "('d', 'B')": 1,
+      "('x', 'A')": 1,
+      "('x', 'B')": 1,
+      "('e', 0)": 1,
+      "('m', 'A')": 0,
+      "('m', 'B')": 0
+    }
+  },
+  {
+    "L": 5,
+    "legal_dimension": 14497,
+    "illegal_intermediates": 10690,
+    "tt_diagonal_formula_error": 0.0,
+    "ww_diagonal_formula_error": 4.440892098500626e-16,
+    "mixed_tW_error": 0.0,
+    "illegal_penalty_values": [
+      1
+    ],
+    "ambiguity": {
+      "('L', 0)": 1,
+      "('L', 1)": 1,
+      "('R', 0)": 2,
+      "('R', 1)": 0,
+      "('d', 'A')": 1,
+      "('d', 'B')": 1,
+      "('x', 'A')": 1,
+      "('x', 'B')": 1,
+      "('e', 0)": 1,
+      "('m', 'A')": 0,
+      "('m', 'B')": 0
+    }
+  }
+]

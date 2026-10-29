@@ -1,0 +1,40 @@
+{
+  "tag": "numerical_and_integer_rational_checks",
+  "checks": [
+    {
+      "script": "run_certificate.py",
+      "status": "passed",
+      "seconds": 12.092992458026856
+    },
+    {
+      "script": "selector_certificate.py",
+      "status": "passed",
+      "seconds": 3.154330041958019
+    },
+    {
+      "script": "check_lift.py",
+      "status": "passed",
+      "seconds": 0.5217433329671621
+    },
+    {
+      "script": "check_virtual.py",
+      "status": "passed",
+      "seconds": 1.1724003329873085
+    },
+    {
+      "script": "check_energy.py",
+      "status": "passed",
+      "seconds": 0.08687254111282527
+    },
+    {
+      "script": "check_frozen.py",
+      "status": "passed",
+      "seconds": 0.10890687513165176
+    },
+    {
+      "script": "check_sw.py",
+      "status": "passed",
+      "seconds": 0.013799000065773726
+    }
+  ]
+}
