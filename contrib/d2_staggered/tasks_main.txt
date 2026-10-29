@@ -1,0 +1,154 @@
+fes_point.py xx --chis 8 12 16 24 32 48 64 96 128 192 256
+fes_point.py ising --chis 8 12 16 24 32 48 64 96 128 192 256
+fes_point.py isxx --chis 8 12 16 24 32 48 64 96 128 192 256
+fes_point.py stag --u 0.5 --b 0 --chis 8 12 16 24 32 48 64 96 128 192 256
+fes_point.py stag --u 0.8 --b 0.5 --chis 8 12 16 24 32 48 64 96 128 192 256
+fes_point.py stag --u 0.83 --b 0.5 --chis 8 12 16 24 32 48 64 96 128 192 256
+fes_point.py stag --u 0.88 --b 0.5 --chis 8 12 16 24 32 48 64 96 128 192 256
+fes_point.py stag --u 0.93 --b 0.5 --chis 8 12 16 24 32 48 64 96 128 192 256
+fes_point.py stag --u 0.98 --b 0.5 --chis 8 12 16 24 32 48 64 96 128 192 256
+fes_point.py stag --u 1.0258 --b 0.5 --chis 8 12 16 24 32 48 64 96 128 192 256
+fes_point.py stag --u 0.95 --b 1.0 --chis 8 12 16 24 32 48 64 96 128 192 256
+fes_point.py stag --u 1.0 --b 1.0 --chis 8 12 16 24 32 48 64 96 128 192 256
+fes_point.py stag --u 1.068 --b 1.0 --chis 8 12 16 24 32 48 64 96 128 192 256
+fes_point.py stag --u 1.098 --b 1.0 --chis 8 12 16 24 32 48 64 96 128 192 256
+fes_point.py stag --u 1.113 --b 1.0 --chis 8 12 16 24 32 48 64 96 128 192 256
+fes_point.py stag --u 1.35 --b 2.0 --chis 8 12 16 24 32 48 64 96 128 192 256
+fes_point.py stag --u 1.364 --b 2.0 --chis 8 12 16 24 32 48 64 96 128 192 256
+fes_point.py stag --u 1.38 --b 2.0 --chis 8 12 16 24 32 48 64 96 128 192 256
+fes_point.py stag --u 1.394 --b 2.0 --chis 8 12 16 24 32 48 64 96 128 192 256
+fes_point.py stag --u 1.4042 --b 2.0 --chis 8 12 16 24 32 48 64 96 128 192 256
+fes_point.py stag --u 1.4092 --b 2.0 --chis 8 12 16 24 32 48 64 96 128 192 256
+fes_point.py stag --u 2.2 --b 4.0 --chis 8 12 16 24 32 48 64 96 128 192 256
+fes_point.py stag --u 2.21 --b 4.0 --chis 8 12 16 24 32 48 64 96 128 192 256
+fes_point.py stag --u 2.216 --b 4.0 --chis 8 12 16 24 32 48 64 96 128 192 256
+fes_point.py stag --u 2.2261 --b 4.0 --chis 8 12 16 24 32 48 64 96 128 192 256
+fes_point.py stag --u 2.2311 --b 4.0 --chis 8 12 16 24 32 48 64 96 128 192 256
+run_point.py stag --u 0 --b 0 --L 20 --pbc --chis 64 128 256 384 --nexc 4 --nexc1 1
+run_point.py stag --u 0.5 --b 0 --L 20 --pbc --chis 64 128 256 384 --nexc 4 --nexc1 1
+run_point.py stag --u 0.93 --b 0.5 --L 20 --pbc --chis 64 128 256 384 --nexc 4 --nexc1 1
+run_point.py stag --u 1.098 --b 1.0 --L 20 --pbc --chis 64 128 256 384 --nexc 4 --nexc1 1
+run_point.py stag --u 1.38 --b 2.0 --L 20 --pbc --chis 64 128 256 384 --nexc 4 --nexc1 1
+run_point.py stag --u 2.216 --b 4.0 --L 20 --pbc --chis 64 128 256 384 --nexc 4 --nexc1 1
+run_point.py stag --u 0 --b 0 --L 24 --pbc --chis 64 128 256 384 --nexc 4 --nexc1 1
+run_point.py stag --u 0.5 --b 0 --L 24 --pbc --chis 64 128 256 384 --nexc 4 --nexc1 1
+run_point.py stag --u 0.93 --b 0.5 --L 24 --pbc --chis 64 128 256 384 --nexc 4 --nexc1 1
+run_point.py stag --u 1.098 --b 1.0 --L 24 --pbc --chis 64 128 256 384 --nexc 4 --nexc1 1
+run_point.py stag --u 1.38 --b 2.0 --L 24 --pbc --chis 64 128 256 384 --nexc 4 --nexc1 1
+run_point.py stag --u 2.216 --b 4.0 --L 24 --pbc --chis 64 128 256 384 --nexc 4 --nexc1 1
+run_point.py stag --u 0 --b 0 --L 32 --pbc --chis 64 128 256 384 --nexc 4 --nexc1 1
+run_point.py stag --u 0.5 --b 0 --L 32 --pbc --chis 64 128 256 384 --nexc 4 --nexc1 1
+run_point.py stag --u 0.93 --b 0.5 --L 32 --pbc --chis 64 128 256 384 --nexc 4 --nexc1 1
+run_point.py stag --u 1.098 --b 1.0 --L 32 --pbc --chis 64 128 256 384 --nexc 4 --nexc1 1
+run_point.py stag --u 1.38 --b 2.0 --L 32 --pbc --chis 64 128 256 384 --nexc 4 --nexc1 1
+run_point.py stag --u 2.216 --b 4.0 --L 32 --pbc --chis 64 128 256 384 --nexc 4 --nexc1 1
+run_point.py stag --u 0 --b 0 --L 40 --pbc --chis 64 128 256 384 --nexc 4 --nexc1 1
+run_point.py stag --u 0.5 --b 0 --L 40 --pbc --chis 64 128 256 384 --nexc 4 --nexc1 1
+run_point.py stag --u 0.93 --b 0.5 --L 40 --pbc --chis 64 128 256 384 --nexc 4 --nexc1 1
+run_point.py stag --u 1.098 --b 1.0 --L 40 --pbc --chis 64 128 256 384 --nexc 4 --nexc1 1
+run_point.py stag --u 1.38 --b 2.0 --L 40 --pbc --chis 64 128 256 384 --nexc 4 --nexc1 1
+run_point.py stag --u 2.216 --b 4.0 --L 40 --pbc --chis 64 128 256 384 --nexc 4 --nexc1 1
+run_point.py stag --u 0 --b 0 --L 32 --chis 64 128 256
+run_point.py stag --u 0.5 --b 0 --L 32 --chis 64 128 256
+run_point.py tfi --L 32 --chis 32 64 128 --nexc 3
+run_point.py isxx --L 32 --chis 64 128 256 384
+run_point.py stag --u 0.8 --b 0.5 --L 32 --chis 64 128 256
+run_point.py stag --u 0.83 --b 0.5 --L 32 --chis 64 128 256
+run_point.py stag --u 0.88 --b 0.5 --L 32 --chis 64 128 256
+run_point.py stag --u 0.93 --b 0.5 --L 32 --chis 64 128 256
+run_point.py stag --u 0.98 --b 0.5 --L 32 --chis 64 128 256
+run_point.py stag --u 1.0258 --b 0.5 --L 32 --chis 64 128 256
+run_point.py stag --u 0.95 --b 1.0 --L 32 --chis 64 128 256
+run_point.py stag --u 1.0 --b 1.0 --L 32 --chis 64 128 256
+run_point.py stag --u 1.068 --b 1.0 --L 32 --chis 64 128 256
+run_point.py stag --u 1.098 --b 1.0 --L 32 --chis 64 128 256
+run_point.py stag --u 1.113 --b 1.0 --L 32 --chis 64 128 256
+run_point.py stag --u 1.35 --b 2.0 --L 32 --chis 64 128 256
+run_point.py stag --u 1.364 --b 2.0 --L 32 --chis 64 128 256
+run_point.py stag --u 1.38 --b 2.0 --L 32 --chis 64 128 256
+run_point.py stag --u 1.394 --b 2.0 --L 32 --chis 64 128 256
+run_point.py stag --u 1.4042 --b 2.0 --L 32 --chis 64 128 256
+run_point.py stag --u 1.4092 --b 2.0 --L 32 --chis 64 128 256
+run_point.py stag --u 2.2 --b 4.0 --L 32 --chis 64 128 256
+run_point.py stag --u 2.21 --b 4.0 --L 32 --chis 64 128 256
+run_point.py stag --u 2.216 --b 4.0 --L 32 --chis 64 128 256
+run_point.py stag --u 2.2261 --b 4.0 --L 32 --chis 64 128 256
+run_point.py stag --u 2.2311 --b 4.0 --L 32 --chis 64 128 256
+run_point.py stag --u 0 --b 0 --L 64 --chis 64 128 256
+run_point.py stag --u 0.5 --b 0 --L 64 --chis 64 128 256
+run_point.py tfi --L 64 --chis 32 64 128 --nexc 3
+run_point.py isxx --L 64 --chis 64 128 256 384
+run_point.py stag --u 0.8 --b 0.5 --L 64 --chis 64 128 256
+run_point.py stag --u 0.83 --b 0.5 --L 64 --chis 64 128 256
+run_point.py stag --u 0.88 --b 0.5 --L 64 --chis 64 128 256
+run_point.py stag --u 0.93 --b 0.5 --L 64 --chis 64 128 256
+run_point.py stag --u 0.98 --b 0.5 --L 64 --chis 64 128 256
+run_point.py stag --u 1.0258 --b 0.5 --L 64 --chis 64 128 256
+run_point.py stag --u 0.95 --b 1.0 --L 64 --chis 64 128 256
+run_point.py stag --u 1.0 --b 1.0 --L 64 --chis 64 128 256
+run_point.py stag --u 1.068 --b 1.0 --L 64 --chis 64 128 256
+run_point.py stag --u 1.098 --b 1.0 --L 64 --chis 64 128 256
+run_point.py stag --u 1.113 --b 1.0 --L 64 --chis 64 128 256
+run_point.py stag --u 1.35 --b 2.0 --L 64 --chis 64 128 256
+run_point.py stag --u 1.364 --b 2.0 --L 64 --chis 64 128 256
+run_point.py stag --u 1.38 --b 2.0 --L 64 --chis 64 128 256
+run_point.py stag --u 1.394 --b 2.0 --L 64 --chis 64 128 256
+run_point.py stag --u 1.4042 --b 2.0 --L 64 --chis 64 128 256
+run_point.py stag --u 1.4092 --b 2.0 --L 64 --chis 64 128 256
+run_point.py stag --u 2.2 --b 4.0 --L 64 --chis 64 128 256
+run_point.py stag --u 2.21 --b 4.0 --L 64 --chis 64 128 256
+run_point.py stag --u 2.216 --b 4.0 --L 64 --chis 64 128 256
+run_point.py stag --u 2.2261 --b 4.0 --L 64 --chis 64 128 256
+run_point.py stag --u 2.2311 --b 4.0 --L 64 --chis 64 128 256
+run_point.py stag --u 0 --b 0 --L 96 --chis 64 128 256
+run_point.py stag --u 0.5 --b 0 --L 96 --chis 64 128 256
+run_point.py tfi --L 96 --chis 32 64 128 --nexc 3
+run_point.py isxx --L 96 --chis 64 128 256 384
+run_point.py stag --u 0.8 --b 0.5 --L 96 --chis 64 128 256
+run_point.py stag --u 0.83 --b 0.5 --L 96 --chis 64 128 256
+run_point.py stag --u 0.88 --b 0.5 --L 96 --chis 64 128 256
+run_point.py stag --u 0.93 --b 0.5 --L 96 --chis 64 128 256
+run_point.py stag --u 0.98 --b 0.5 --L 96 --chis 64 128 256
+run_point.py stag --u 1.0258 --b 0.5 --L 96 --chis 64 128 256
+run_point.py stag --u 0.95 --b 1.0 --L 96 --chis 64 128 256
+run_point.py stag --u 1.0 --b 1.0 --L 96 --chis 64 128 256
+run_point.py stag --u 1.068 --b 1.0 --L 96 --chis 64 128 256
+run_point.py stag --u 1.098 --b 1.0 --L 96 --chis 64 128 256
+run_point.py stag --u 1.113 --b 1.0 --L 96 --chis 64 128 256
+run_point.py stag --u 1.35 --b 2.0 --L 96 --chis 64 128 256
+run_point.py stag --u 1.364 --b 2.0 --L 96 --chis 64 128 256
+run_point.py stag --u 1.38 --b 2.0 --L 96 --chis 64 128 256
+run_point.py stag --u 1.394 --b 2.0 --L 96 --chis 64 128 256
+run_point.py stag --u 1.4042 --b 2.0 --L 96 --chis 64 128 256
+run_point.py stag --u 1.4092 --b 2.0 --L 96 --chis 64 128 256
+run_point.py stag --u 2.2 --b 4.0 --L 96 --chis 64 128 256
+run_point.py stag --u 2.21 --b 4.0 --L 96 --chis 64 128 256
+run_point.py stag --u 2.216 --b 4.0 --L 96 --chis 64 128 256
+run_point.py stag --u 2.2261 --b 4.0 --L 96 --chis 64 128 256
+run_point.py stag --u 2.2311 --b 4.0 --L 96 --chis 64 128 256
+run_point.py stag --u 0 --b 0 --L 128 --chis 64 128 256
+run_point.py stag --u 0.5 --b 0 --L 128 --chis 64 128 256
+run_point.py tfi --L 128 --chis 32 64 128 --nexc 3
+run_point.py isxx --L 128 --chis 64 128 256 384
+run_point.py stag --u 0.8 --b 0.5 --L 128 --chis 64 128 256
+run_point.py stag --u 0.83 --b 0.5 --L 128 --chis 64 128 256
+run_point.py stag --u 0.88 --b 0.5 --L 128 --chis 64 128 256
+run_point.py stag --u 0.93 --b 0.5 --L 128 --chis 64 128 256
+run_point.py stag --u 0.98 --b 0.5 --L 128 --chis 64 128 256
+run_point.py stag --u 1.0258 --b 0.5 --L 128 --chis 64 128 256
+run_point.py stag --u 0.95 --b 1.0 --L 128 --chis 64 128 256
+run_point.py stag --u 1.0 --b 1.0 --L 128 --chis 64 128 256
+run_point.py stag --u 1.068 --b 1.0 --L 128 --chis 64 128 256
+run_point.py stag --u 1.098 --b 1.0 --L 128 --chis 64 128 256
+run_point.py stag --u 1.113 --b 1.0 --L 128 --chis 64 128 256
+run_point.py stag --u 1.35 --b 2.0 --L 128 --chis 64 128 256
+run_point.py stag --u 1.364 --b 2.0 --L 128 --chis 64 128 256
+run_point.py stag --u 1.38 --b 2.0 --L 128 --chis 64 128 256
+run_point.py stag --u 1.394 --b 2.0 --L 128 --chis 64 128 256
+run_point.py stag --u 1.4042 --b 2.0 --L 128 --chis 64 128 256
+run_point.py stag --u 1.4092 --b 2.0 --L 128 --chis 64 128 256
+run_point.py stag --u 2.2 --b 4.0 --L 128 --chis 64 128 256
+run_point.py stag --u 2.21 --b 4.0 --L 128 --chis 64 128 256
+run_point.py stag --u 2.216 --b 4.0 --L 128 --chis 64 128 256
+run_point.py stag --u 2.2261 --b 4.0 --L 128 --chis 64 128 256
+run_point.py stag --u 2.2311 --b 4.0 --L 128 --chis 64 128 256

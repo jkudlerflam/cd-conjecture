@@ -1,0 +1,32 @@
+run_point.py stag --u 0 --b 0 --L 192 --chis 64 128 256 --nexc 1 --nexc1 0 --qs 0 1
+run_point.py stag --u 0.5 --b 0 --L 192 --chis 64 128 256 --nexc 1 --nexc1 0 --qs 0 1
+run_point.py isxx --L 192 --chis 128 256 --nexc 1 --nexc1 0 --qs 0 1
+run_point.py stag --u 0.83 --b 0.5 --L 192 --chis 64 128 256 --nexc 1 --nexc1 0 --qs 0 1
+run_point.py stag --u 0.93 --b 0.5 --L 192 --chis 64 128 256 --nexc 1 --nexc1 0 --qs 0 1
+run_point.py stag --u 0.98 --b 0.5 --L 192 --chis 64 128 256 --nexc 1 --nexc1 0 --qs 0 1
+run_point.py stag --u 1.0258 --b 0.5 --L 192 --chis 64 128 256 --nexc 1 --nexc1 0 --qs 0 1
+run_point.py stag --u 1.0 --b 1.0 --L 192 --chis 64 128 256 --nexc 1 --nexc1 0 --qs 0 1
+run_point.py stag --u 1.098 --b 1.0 --L 192 --chis 64 128 256 --nexc 1 --nexc1 0 --qs 0 1
+run_point.py stag --u 1.113 --b 1.0 --L 192 --chis 64 128 256 --nexc 1 --nexc1 0 --qs 0 1
+run_point.py stag --u 1.364 --b 2.0 --L 192 --chis 64 128 256 --nexc 1 --nexc1 0 --qs 0 1
+run_point.py stag --u 1.394 --b 2.0 --L 192 --chis 64 128 256 --nexc 1 --nexc1 0 --qs 0 1
+run_point.py stag --u 1.4042 --b 2.0 --L 192 --chis 64 128 256 --nexc 1 --nexc1 0 --qs 0 1
+run_point.py stag --u 1.4092 --b 2.0 --L 192 --chis 64 128 256 --nexc 1 --nexc1 0 --qs 0 1
+run_point.py stag --u 2.2261 --b 4.0 --L 192 --chis 64 128 256 --nexc 1 --nexc1 0 --qs 0 1
+run_point.py stag --u 2.2311 --b 4.0 --L 192 --chis 64 128 256 --nexc 1 --nexc1 0 --qs 0 1
+run_point.py stag --u 0 --b 0 --L 256 --chis 64 128 256 --nexc 1 --nexc1 0 --qs 0 1
+run_point.py stag --u 0.5 --b 0 --L 256 --chis 64 128 256 --nexc 1 --nexc1 0 --qs 0 1
+run_point.py isxx --L 256 --chis 128 256 --nexc 1 --nexc1 0 --qs 0 1
+run_point.py stag --u 0.83 --b 0.5 --L 256 --chis 64 128 256 --nexc 1 --nexc1 0 --qs 0 1
+run_point.py stag --u 0.93 --b 0.5 --L 256 --chis 64 128 256 --nexc 1 --nexc1 0 --qs 0 1
+run_point.py stag --u 0.98 --b 0.5 --L 256 --chis 64 128 256 --nexc 1 --nexc1 0 --qs 0 1
+run_point.py stag --u 1.0258 --b 0.5 --L 256 --chis 64 128 256 --nexc 1 --nexc1 0 --qs 0 1
+run_point.py stag --u 1.0 --b 1.0 --L 256 --chis 64 128 256 --nexc 1 --nexc1 0 --qs 0 1
+run_point.py stag --u 1.098 --b 1.0 --L 256 --chis 64 128 256 --nexc 1 --nexc1 0 --qs 0 1
+run_point.py stag --u 1.113 --b 1.0 --L 256 --chis 64 128 256 --nexc 1 --nexc1 0 --qs 0 1
+run_point.py stag --u 1.364 --b 2.0 --L 256 --chis 64 128 256 --nexc 1 --nexc1 0 --qs 0 1
+run_point.py stag --u 1.394 --b 2.0 --L 256 --chis 64 128 256 --nexc 1 --nexc1 0 --qs 0 1
+run_point.py stag --u 1.4042 --b 2.0 --L 256 --chis 64 128 256 --nexc 1 --nexc1 0 --qs 0 1
+run_point.py stag --u 1.4092 --b 2.0 --L 256 --chis 64 128 256 --nexc 1 --nexc1 0 --qs 0 1
+run_point.py stag --u 2.2261 --b 4.0 --L 256 --chis 64 128 256 --nexc 1 --nexc1 0 --qs 0 1
+run_point.py stag --u 2.2311 --b 4.0 --L 256 --chis 64 128 256 --nexc 1 --nexc1 0 --qs 0 1
