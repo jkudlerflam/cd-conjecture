@@ -1,0 +1,34 @@
+Random-bond checks of the two general operator inequalities
+  max ||h~ - pinch h~|| / ||h~|| over random bonds = 1.0604 (proved <= 2)
+  max ||sum_alpha ad_alpha^2 h~|| / ||h~|| over random bonds = 2.1207 (proved <= 4; equals 2 x pinch ratio)
+  explicit bond (J - 1) x 1 at d = 3: ratio = 1.3333 (= 4/3)
+
+Reference bonds
+Heisenberg S.S: d = 2, M = 0.5000, ||h~ - pinch h~|| = 0.5000 (ratio to M 1.000), ||[q,[q,h~]]|| = 0.5000, sigma_q^2 M = 0.5000
+  SU(2) Casimir budget ||C h~|| = 1.5000 (= 2 ||S.S|| = 3 M); sum_{x,y,z} D_alpha = 3 v K/pi = 3/4; implied A = c v <= (2 pi/(k+2)) ||C h~|| = 3.1416 against A = pi/2 = 1.5708
+XXZ Delta = 0.5: d = 2, M = 0.5000, ||h~ - pinch h~|| = 0.5000 (ratio to M 1.000), ||[q,[q,h~]]|| = 0.5000, sigma_q^2 M = 0.5000; single-twist bound A <= (pi/K) ||h''|| = 2.0944 against A = 1.2990
+XXZ Delta = 0.0: d = 2, M = 0.5000, ||h~ - pinch h~|| = 0.5000 (ratio to M 1.000), ||[q,[q,h~]]|| = 0.5000, sigma_q^2 M = 0.5000; single-twist bound A <= (pi/K) ||h''|| = 1.5708 against A = 1.0000
+XXZ Delta = -0.5: d = 2, M = 0.5000, ||h~ - pinch h~|| = 0.5000 (ratio to M 1.000), ||[q,[q,h~]]|| = 0.5000, sigma_q^2 M = 0.5000; single-twist bound A <= (pi/K) ||h''|| = 1.0472 against A = 0.6495
+SU(2) swap P: d = 2, M = 1.0000, ||h~ - pinch h~|| = 1.0000 (ratio to M 1.000), ||[q,[q,h~]]|| = 2.0000, sigma_q^2 M = 2.0000
+  Cartan budget ||sum ad^2 h~|| = 2.0000; sum_Cartan D = A/pi = 1.0000; full Casimir ||C_SU(N) h~|| = 6.0000 = 2(N+1); implied A <= pi ||C h~||/(N+1) = 6.2832, A exact = 3.1416, conjecture pi M log2 N = 3.1416
+SU(3) swap P: d = 3, M = 1.0000, ||h~ - pinch h~|| = 1.0000 (ratio to M 1.000), ||[q,[q,h~]]|| = 2.0000, sigma_q^2 M = 2.0000
+  Cartan budget ||sum ad^2 h~|| = 2.0000; sum_Cartan D = A/pi = 1.3333; full Casimir ||C_SU(N) h~|| = 8.0000 = 2(N+1); implied A <= pi ||C h~||/(N+1) = 6.2832, A exact = 4.1888, conjecture pi M log2 N = 4.9793
+SU(4) swap P: d = 4, M = 1.0000, ||h~ - pinch h~|| = 1.0000 (ratio to M 1.000), ||[q,[q,h~]]|| = 2.0000, sigma_q^2 M = 2.0000
+  Cartan budget ||sum ad^2 h~|| = 2.0000; sum_Cartan D = A/pi = 1.5000; full Casimir ||C_SU(N) h~|| = 10.0000 = 2(N+1); implied A <= pi ||C h~||/(N+1) = 6.2832, A exact = 4.7124, conjecture pi M log2 N = 6.2832
+SU(5) swap P: d = 5, M = 1.0000, ||h~ - pinch h~|| = 1.0000 (ratio to M 1.000), ||[q,[q,h~]]|| = 2.0000, sigma_q^2 M = 2.0000
+  Cartan budget ||sum ad^2 h~|| = 2.0000; sum_Cartan D = A/pi = 1.6000; full Casimir ||C_SU(N) h~|| = 12.0000 = 2(N+1); implied A <= pi ||C h~||/(N+1) = 6.2832, A exact = 5.0265, conjecture pi M log2 N = 7.2946
+SU(8) swap P: d = 8, M = 1.0000, ||h~ - pinch h~|| = 1.0000 (ratio to M 1.000), ||[q,[q,h~]]|| = 2.0000, sigma_q^2 M = 2.0000
+  Cartan budget ||sum ad^2 h~|| = 2.0000; sum_Cartan D = A/pi = 1.7500; full Casimir ||C_SU(N) h~|| = 18.0000 = 2(N+1); implied A <= pi ||C h~||/(N+1) = 6.2832, A exact = 5.4978, conjecture pi M log2 N = 9.4248
+spin-1 TB (beta = -1.0): d = 3, M = 3.0000, ||h~ - pinch h~|| = 3.3723 (ratio to M 1.124), ||[q,[q,h~]]|| = 5.4641, sigma_q^2 M = 12.0000
+  SU(2)_2: ||C_SU(2) h~|| = 16.0000; sum_{x,y,z} D = 3 k v/(2 pi) = 6.0000; implied A <= (2 pi/(k+2)) ||C h~|| = 25.1327, A exact = c v = 9.4248, conjecture = 14.9379
+spin-1 ULS (beta = 1.0): d = 3, M = 1.0000, ||h~ - pinch h~|| = 1.0000 (ratio to M 1.000), ||[q,[q,h~]]|| = 4.0000, sigma_q^2 M = 4.0000
+  (same as SU(3) swap up to a constant; S^z = sqrt2 x orthonormal Cartan charge)
+
+spin-1 bilinear-biquadratic cos(theta) S.S + sin(theta) (S.S)^2, Casimir and torus budgets vs M
+  theta = -0.7854: M = 2.1213, ||C_SU(2) h~||/M = 5.3333, ||[Sz,[Sz,h~]]||/M = 1.8214, ||h~ - pinch||/M = 1.1241
+  theta = -0.5236: M = 2.0490, ||C_SU(2) h~||/M = 4.6188, ||[Sz,[Sz,h~]]||/M = 1.5497, ||h~ - pinch||/M = 1.0727
+  theta = -0.2618: M = 1.8371, ||C_SU(2) h~||/M = 3.7937, ||[Sz,[Sz,h~]]||/M = 1.2658, ||h~ - pinch||/M = 1.0159
+  theta = +0.0000: M = 1.5000, ||C_SU(2) h~||/M = 2.6667, ||[Sz,[Sz,h~]]||/M = 0.9428, ||h~ - pinch||/M = 0.9428
+  theta = +0.2618: M = 1.0607, ||C_SU(2) h~||/M = 2.7974, ||[Sz,[Sz,h~]]||/M = 1.5497, ||h~ - pinch||/M = 1.0727
+  theta = +0.5236: M = 0.8660, ||C_SU(2) h~||/M = 4.3094, ||[Sz,[Sz,h~]]||/M = 2.4549, ||h~ - pinch||/M = 1.0000
+  theta = +0.7854: M = 0.7071, ||C_SU(2) h~||/M = 8.0000, ||[Sz,[Sz,h~]]||/M = 4.0000, ||h~ - pinch||/M = 1.0000
