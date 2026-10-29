@@ -1,0 +1,5 @@
+python3 fes.py NS_11_249 --n 2 --chis 8 12 16 24 32 48 64 96 128 192 256 --tag _long
+python3 fes.py NS_11_249 --n 4 --chis 8 12 16 24 32 48 64 96 128 192 --tag _long
+python3 fes.py RA_23_433 --n 2 --chis 8 12 16 24 32 48 64 96 128 192 256 --tag _long
+python3 fes.py RA_5_88 --n 2 --chis 8 12 16 24 32 48 64 96 128 192 256 --tag _long
+python3 fes.py RA_24_106 --n 3 --chis 8 12 16 24 32 48 64 96 128 192 --tag _long

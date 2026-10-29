@@ -1,0 +1,6 @@
+python3 fes_auto.py stag_u1.4_b2.0 --cells 1 2 3 4 6 8 --chis 8 12 16 24 32 48 64 96 128
+python3 fes_auto.py stag_u1.0_b0.05 --cells 1 2 3 4 6 8 --chis 8 12 16 24 32 48 64 96 128
+python3 fes_auto.py stag_u1.3_b1.7 --cells 1 2 3 4 6 8 --chis 8 12 16 24 32 48 64 96 128
+python3 fes_auto.py stag_u0.9_b0.5 --cells 1 2 3 4 6 8 --chis 8 12 16 24 32 48 64 96 128
+python3 fes_auto.py stag_u0.5_b0.3 --cells 1 2 3 4 6 8 --chis 8 12 16 24 32 48 64 96 128
+python3 fes_auto.py stag_u-0.5_b0.1 --cells 1 2 3 4 6 8 --chis 8 12 16 24 32 48 64 96 128

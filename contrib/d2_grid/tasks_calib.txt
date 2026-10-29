@@ -1,0 +1,11 @@
+python3 fes.py ising --n 1 --chis 8 12 16 24 32 48 64 96 128
+python3 fes.py xx --n 2 --chis 8 12 16 24 32 48 64 96 128
+python3 fes.py xx_nnn --n 4 --chis 8 12 16 24 32 48 64 96 128
+python3 fes.py xydm --n 5 --chis 8 12 16 24 32 48 64 96
+python3 obc.py ising --L 96 --chis 32 64 96 128
+python3 obc.py xx --L 96 --chis 32 64 96 128
+python3 obc.py ising --L 192 --chis 32 64 96 128
+python3 obc.py xx --L 192 --chis 32 64 96 128
+python3 obc.py xydm --L 96 --chis 32 64 96 128
+python3 obc.py xydm --L 192 --chis 32 64 96 128
+python3 scan.py points controls_points.json --sizes 12 16 20 --procs 4

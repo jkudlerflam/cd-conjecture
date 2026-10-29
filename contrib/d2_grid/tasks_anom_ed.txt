@@ -1,0 +1,1 @@
+python3 scan.py points anom_points.json --sizes 18 20 22 --k 3 --procs 16

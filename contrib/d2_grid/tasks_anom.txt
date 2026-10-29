@@ -1,0 +1,36 @@
+python3 obc.py NS_11_249 --L 96 --chis 32 64 96 128 --edgefield
+python3 obc.py NS_11_249 --L 192 --chis 32 64 96 128 --edgefield
+mkdir -p data/fes24 && python3 fes_auto.py NS_11_249 --cells 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 --chis 8 12 16 24 32 48 64 96 128
+python3 obc.py NS_20_482 --L 96 --chis 32 64 96 128 --edgefield
+python3 obc.py NS_20_482 --L 192 --chis 32 64 96 128 --edgefield
+mkdir -p data/fes24 && python3 fes_auto.py NS_20_482 --cells 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 --chis 8 12 16 24 32 48 64 96 128
+python3 obc.py RA_24_106 --L 96 --chis 32 64 96 128 --edgefield
+python3 obc.py RA_24_106 --L 192 --chis 32 64 96 128 --edgefield
+mkdir -p data/fes24 && python3 fes_auto.py RA_24_106 --cells 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 --chis 8 12 16 24 32 48 64 96 128
+python3 obc.py RA_23_433 --L 96 --chis 32 64 96 128 --edgefield
+python3 obc.py RA_23_433 --L 192 --chis 32 64 96 128 --edgefield
+mkdir -p data/fes24 && python3 fes_auto.py RA_23_433 --cells 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 --chis 8 12 16 24 32 48 64 96 128
+python3 obc.py RA_23_218 --L 96 --chis 32 64 96 128 --edgefield
+python3 obc.py RA_23_218 --L 192 --chis 32 64 96 128 --edgefield
+mkdir -p data/fes24 && python3 fes_auto.py RA_23_218 --cells 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 --chis 8 12 16 24 32 48 64 96 128
+python3 obc.py NS_30_144 --L 96 --chis 32 64 96 128 --edgefield
+python3 obc.py NS_30_144 --L 192 --chis 32 64 96 128 --edgefield
+mkdir -p data/fes24 && python3 fes_auto.py NS_30_144 --cells 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 --chis 8 12 16 24 32 48 64 96 128
+python3 obc.py NS_34_153 --L 96 --chis 32 64 96 128 --edgefield
+python3 obc.py NS_34_153 --L 192 --chis 32 64 96 128 --edgefield
+mkdir -p data/fes24 && python3 fes_auto.py NS_34_153 --cells 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 --chis 8 12 16 24 32 48 64 96 128
+python3 obc.py TR_19_122 --L 96 --chis 32 64 96 128 --edgefield
+python3 obc.py TR_19_122 --L 192 --chis 32 64 96 128 --edgefield
+mkdir -p data/fes24 && python3 fes_auto.py TR_19_122 --cells 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 --chis 8 12 16 24 32 48 64 96 128
+python3 obc.py NS_20_461 --L 96 --chis 32 64 96 128 --edgefield
+python3 obc.py NS_20_461 --L 192 --chis 32 64 96 128 --edgefield
+mkdir -p data/fes24 && python3 fes_auto.py NS_20_461 --cells 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 --chis 8 12 16 24 32 48 64 96 128
+python3 obc.py NS_36_224 --L 96 --chis 32 64 96 128 --edgefield
+python3 obc.py NS_36_224 --L 192 --chis 32 64 96 128 --edgefield
+mkdir -p data/fes24 && python3 fes_auto.py NS_36_224 --cells 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 --chis 8 12 16 24 32 48 64 96 128
+python3 obc.py RA_5_88 --L 96 --chis 32 64 96 128 --edgefield
+python3 obc.py RA_5_88 --L 192 --chis 32 64 96 128 --edgefield
+mkdir -p data/fes24 && python3 fes_auto.py RA_5_88 --cells 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 --chis 8 12 16 24 32 48 64 96 128
+python3 obc.py NS_23_470 --L 96 --chis 32 64 96 128 --edgefield
+python3 obc.py NS_23_470 --L 192 --chis 32 64 96 128 --edgefield
+mkdir -p data/fes24 && python3 fes_auto.py NS_23_470 --cells 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 --chis 8 12 16 24 32 48 64 96 128

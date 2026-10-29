@@ -1,0 +1,34 @@
+python3 obc.py NS_11_446_p00 --L 96 --chis 32 64 96 128 --edgefield
+python3 obc.py NS_11_446_p00 --L 192 --chis 32 64 96 128 --edgefield
+python3 obc.py NS_17_417 --L 96 --chis 32 64 96 128 --edgefield
+python3 obc.py NS_17_417 --L 192 --chis 32 64 96 128 --edgefield
+python3 obc.py NS_22_116 --L 96 --chis 32 64 96 128 --edgefield
+python3 obc.py NS_22_116 --L 192 --chis 32 64 96 128 --edgefield
+python3 obc.py NS_22_183 --L 96 --chis 32 64 96 128 --edgefield
+python3 obc.py NS_22_183 --L 192 --chis 32 64 96 128 --edgefield
+python3 obc.py NS_23_380 --L 96 --chis 32 64 96 128 --edgefield
+python3 obc.py NS_23_380 --L 192 --chis 32 64 96 128 --edgefield
+python3 obc.py NS_24_427 --L 96 --chis 32 64 96 128 --edgefield
+python3 obc.py NS_24_427 --L 192 --chis 32 64 96 128 --edgefield
+python3 obc.py NS_28_524 --L 96 --chis 32 64 96 128 --edgefield
+python3 obc.py NS_28_524 --L 192 --chis 32 64 96 128 --edgefield
+python3 obc.py NS_28_561 --L 96 --chis 32 64 96 128 --edgefield
+python3 obc.py NS_28_561 --L 192 --chis 32 64 96 128 --edgefield
+python3 obc.py NS_2_12 --L 96 --chis 32 64 96 128 --edgefield
+python3 obc.py NS_2_12 --L 192 --chis 32 64 96 128 --edgefield
+python3 obc.py NS_4_570 --L 96 --chis 32 64 96 128 --edgefield
+python3 obc.py NS_4_570 --L 192 --chis 32 64 96 128 --edgefield
+python3 obc.py RA_14_244 --L 96 --chis 32 64 96 128 --edgefield
+python3 obc.py RA_14_244 --L 192 --chis 32 64 96 128 --edgefield
+python3 obc.py RA_16_296 --L 96 --chis 32 64 96 128 --edgefield
+python3 obc.py RA_16_296 --L 192 --chis 32 64 96 128 --edgefield
+python3 obc.py RA_18_269 --L 96 --chis 32 64 96 128 --edgefield
+python3 obc.py RA_18_269 --L 192 --chis 32 64 96 128 --edgefield
+python3 obc.py RA_2_10 --L 96 --chis 32 64 96 128 --edgefield
+python3 obc.py RA_2_10 --L 192 --chis 32 64 96 128 --edgefield
+python3 obc.py RA_2_432 --L 96 --chis 32 64 96 128 --edgefield
+python3 obc.py RA_2_432 --L 192 --chis 32 64 96 128 --edgefield
+python3 obc.py Z2_22_54_p01 --L 96 --chis 32 64 96 128 --edgefield
+python3 obc.py Z2_22_54_p01 --L 192 --chis 32 64 96 128 --edgefield
+python3 fes.py TR_14_450 --n 7 --chis 8 12 16 24 32 48 64 96 128
+python3 fes.py stag_u1.0_b0.05 --n 6 --chis 8 12 16 24 32 48 64 96 128
