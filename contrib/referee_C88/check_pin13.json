@@ -1,0 +1,189 @@
+{
+ "conservation": [
+  {
+   "coloured": true,
+   "L": 2,
+   "words": 169,
+   "directed_transitions": 148,
+   "F_changes": 0
+  },
+  {
+   "coloured": true,
+   "L": 3,
+   "words": 2197,
+   "directed_transitions": 2886,
+   "F_changes": 0
+  },
+  {
+   "coloured": true,
+   "L": 4,
+   "words": 28561,
+   "directed_transitions": 50024,
+   "F_changes": 0
+  },
+  {
+   "coloured": true,
+   "L": 5,
+   "words": 371293,
+   "directed_transitions": 812890,
+   "F_changes": 0
+  },
+  {
+   "coloured": true,
+   "L": 6,
+   "words": 4826809,
+   "directed_transitions": 12681084,
+   "F_changes": 0
+  },
+  {
+   "coloured": false,
+   "L": 2,
+   "words": 144,
+   "directed_transitions": 140,
+   "F_changes": 0
+  },
+  {
+   "coloured": false,
+   "L": 3,
+   "words": 1728,
+   "directed_transitions": 2520,
+   "F_changes": 0
+  },
+  {
+   "coloured": false,
+   "L": 4,
+   "words": 20736,
+   "directed_transitions": 40320,
+   "F_changes": 0
+  },
+  {
+   "coloured": false,
+   "L": 5,
+   "words": 248832,
+   "directed_transitions": 604800,
+   "F_changes": 0
+  },
+  {
+   "coloured": false,
+   "L": 6,
+   "words": 2985984,
+   "directed_transitions": 8709120,
+   "F_changes": 0
+  }
+ ],
+ "colouring": [
+  {
+   "L": 2,
+   "nonempty_words": 165,
+   "violations_Nmatbad_le_Nbad": 0,
+   "zero_penalty_nonempty": 53,
+   "colourings_per_pattern": [
+    1
+   ],
+   "predicted_legal_squeezed_count": 53,
+   "all_vacancy_zero_penalty": 2
+  },
+  {
+   "L": 3,
+   "nonempty_words": 2189,
+   "violations_Nmatbad_le_Nbad": 0,
+   "zero_penalty_nonempty": 376,
+   "colourings_per_pattern": [
+    1
+   ],
+   "predicted_legal_squeezed_count": 376,
+   "all_vacancy_zero_penalty": 2
+  },
+  {
+   "L": 4,
+   "nonempty_words": 28545,
+   "violations_Nmatbad_le_Nbad": 0,
+   "zero_penalty_nonempty": 2685,
+   "colourings_per_pattern": [
+    1
+   ],
+   "predicted_legal_squeezed_count": 2685,
+   "all_vacancy_zero_penalty": 2
+  },
+  {
+   "L": 5,
+   "nonempty_words": 371261,
+   "violations_Nmatbad_le_Nbad": 0,
+   "zero_penalty_nonempty": 19267,
+   "colourings_per_pattern": [
+    1
+   ],
+   "predicted_legal_squeezed_count": 19267,
+   "all_vacancy_zero_penalty": 2
+  },
+  {
+   "L": 6,
+   "nonempty_words": 4826745,
+   "violations_Nmatbad_le_Nbad": 0,
+   "zero_penalty_nonempty": 138488,
+   "colourings_per_pattern": [
+    1
+   ],
+   "predicted_legal_squeezed_count": 138488,
+   "all_vacancy_zero_penalty": 2
+  }
+ ],
+ "rule_facts": {
+  "pin_pair_never_input_or_output": true,
+  "L1_output_right_partners": [
+   "DA",
+   "DB",
+   "R0",
+   "XA",
+   "XB"
+  ],
+  "L1_input_right_partners": [
+   "DA",
+   "DB",
+   "R0",
+   "XA",
+   "XB"
+  ],
+  "right_letter_becomes_L1": false,
+  "left_letter_becomes_L1_from_other": [
+   [
+    "DA",
+    "R1",
+    "L1",
+    "DA"
+   ],
+   [
+    "DB",
+    "R1",
+    "L1",
+    "DB"
+   ],
+   [
+    "R0",
+    "R1",
+    "L1",
+    "R0"
+   ],
+   [
+    "XA",
+    "R1",
+    "L1",
+    "XA"
+   ],
+   [
+    "XB",
+    "R1",
+    "L1",
+    "XB"
+   ]
+  ],
+  "right_marker_type_changes_left_inputs": [
+   "DA",
+   "DB",
+   "L0",
+   "XA",
+   "XB"
+  ],
+  "marker_to_nonmarker": false
+ }
+}

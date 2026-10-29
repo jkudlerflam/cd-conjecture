@@ -1,0 +1,43 @@
+{
+ "MEMBER.json": "identical",
+ "certificate_n13.json": {
+  "differing_leaves": 1,
+  "differing_non_timing": [],
+  "max_abs_numeric_diff_non_timing": null
+ },
+ "certificate_n13_D1000.npz": "identical",
+ "certificate_transfer.json": "identical",
+ "derivative_n13.npz": "identical",
+ "energy_checks.json": "identical",
+ "final_checks.json": "identical",
+ "finite_budget.json": "identical",
+ "finite_budget_exact.json": "identical",
+ "frozen_checks.json": "identical",
+ "full_loop_bands_n13.json": "identical",
+ "full_loop_n13.npz": "identical",
+ "full_loop_whitened_n13.npz": "identical",
+ "lift_checks.json": "identical",
+ "rational_bands_n13.json": {
+  "differing_leaves": 1,
+  "differing_non_timing": [],
+  "max_abs_numeric_diff_non_timing": null
+ },
+ "root_certificate_exact_n13.json": "identical",
+ "root_certificate_n13.json": {
+  "differing_leaves": 1,
+  "differing_non_timing": [],
+  "max_abs_numeric_diff_non_timing": null
+ },
+ "sector_checks.json": "identical",
+ "selector_certificate.json": "identical",
+ "selector_exact.json": "identical",
+ "sw_checks.json": "identical",
+ "verification.json": {
+  "differing_leaves": 8,
+  "differing_non_timing": [],
+  "max_abs_numeric_diff_non_timing": null
+ },
+ "verification_output.txt": "identical",
+ "virtual_checks.json": "identical",
+ "whitened_n13.npz": "identical"
+}

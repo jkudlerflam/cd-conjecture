@@ -1,0 +1,153 @@
+{
+ "bond_comparison": [
+  {
+   "point": {
+    "p": 2,
+    "K": 37.0,
+    "musel": 0.93,
+    "field": 0.021,
+    "flux": 0.37,
+    "theta": -0.21,
+    "g": 0.13,
+    "td": 0.21,
+    "D": 3.1,
+    "lam": 0.17,
+    "J": 0.7,
+    "t": 1.3,
+    "mu": 0.4
+   },
+   "max_entry_diff_coloured": 0.0,
+   "hermiticity": 0.0,
+   "nonzero_offdiag": 74,
+   "commutator_N": 0.0,
+   "commutator_M": 0.0,
+   "commutator_Q": 0.0,
+   "max_entry_diff_uncoloured": 0.0,
+   "allowed_table_agrees": true,
+   "C84_astra_minus_pin": 0.0,
+   "C85_occupied_block": 8.881784197001252e-16
+  },
+  {
+   "point": {
+    "p": 3,
+    "K": 1000.0,
+    "musel": 0.0,
+    "field": 0.0,
+    "flux": 0.5235987755982988,
+    "theta": -0.7853981633974483,
+    "g": 0.07,
+    "td": 0.003,
+    "D": 4.0,
+    "lam": 0.1,
+    "J": 1.0,
+    "t": 1.0,
+    "mu": 0.0
+   },
+   "max_entry_diff_coloured": 0.0,
+   "hermiticity": 0.0,
+   "nonzero_offdiag": 74,
+   "commutator_N": 0.0,
+   "commutator_M": 0.0,
+   "commutator_Q": 0.0,
+   "max_entry_diff_uncoloured": 0.0,
+   "allowed_table_agrees": true,
+   "C84_astra_minus_pin": 0.0,
+   "C85_occupied_block": 0.0,
+   "C84_referee_my11": 0.0
+  },
+  {
+   "point": {
+    "p": 14,
+    "K": 1048576.0,
+    "musel": 1.889,
+    "field": 0.001,
+    "flux": 0.1121997376282069,
+    "theta": -0.7853981633974483,
+    "g": 0.01,
+    "td": 0.002,
+    "D": 1000.0,
+    "lam": 0.3,
+    "J": 0.2,
+    "t": 2.5,
+    "mu": -0.3
+   },
+   "max_entry_diff_coloured": 0.0,
+   "hermiticity": 0.0,
+   "nonzero_offdiag": 74,
+   "commutator_N": 0.0,
+   "commutator_M": 0.0,
+   "commutator_Q": 0.0,
+   "max_entry_diff_uncoloured": 0.0,
+   "allowed_table_agrees": true,
+   "C84_astra_minus_pin": 0.0,
+   "C85_occupied_block": 5.684341886080802e-14,
+   "C84_referee_my11": 0.0
+  },
+  {
+   "point": {
+    "p": 5,
+    "K": 11.0,
+    "musel": -0.4,
+    "field": 0.5,
+    "flux": 1.1,
+    "theta": 0.8,
+    "g": 0.9,
+    "td": 0.6,
+    "D": 2.0,
+    "lam": 0.9,
+    "J": 2.0,
+    "t": 0.3,
+    "mu": 1.1
+   },
+   "max_entry_diff_coloured": 0.0,
+   "hermiticity": 0.0,
+   "nonzero_offdiag": 74,
+   "commutator_N": 0.0,
+   "commutator_M": 0.0,
+   "commutator_Q": 0.0,
+   "max_entry_diff_uncoloured": 0.0,
+   "allowed_table_agrees": true,
+   "C84_astra_minus_pin": 0.0,
+   "C85_occupied_block": 0.0
+  }
+ ],
+ "parent_comparison": [],
+ "ring_zero_sector": [
+  {
+   "L": 2,
+   "words": 121,
+   "F0_words": 115,
+   "C88_conserves_F": true,
+   "C85_conserves_F": true,
+   "max_diff_on_F0": 0.0,
+   "identity_H85_eq_H88_plus_KF": 7.105427357601002e-15
+  },
+  {
+   "L": 3,
+   "words": 1331,
+   "F0_words": 1232,
+   "C88_conserves_F": true,
+   "C85_conserves_F": true,
+   "max_diff_on_F0": 0.0,
+   "identity_H85_eq_H88_plus_KF": 7.105427357601002e-15
+  },
+  {
+   "L": 4,
+   "words": 14641,
+   "F0_words": 13207,
+   "C88_conserves_F": true,
+   "C85_conserves_F": true,
+   "max_diff_on_F0": 0.0,
+   "identity_H85_eq_H88_plus_KF": 2.842170943040401e-14
+  },
+  {
+   "L": 5,
+   "words": 161051,
+   "F0_words": 141581,
+   "C88_conserves_F": true,
+   "C85_conserves_F": true,
+   "max_diff_on_F0": 0.0,
+   "identity_H85_eq_H88_plus_KF": 2.842170943040401e-14
+  }
+ ]
+}

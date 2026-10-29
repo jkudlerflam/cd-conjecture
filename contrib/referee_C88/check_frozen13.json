@@ -1,0 +1,112 @@
+{
+ "r_pin": {
+  "two_cos_lower_bound": 1.9615397183684877,
+  "log2_eps": -2528.0,
+  "r_pin_gt_1": true,
+  "r_pin_lower": 1.9615397183684877
+ },
+ "B_cell_estimate": {
+  "bond_norm": 1003.9284294391936,
+  "bonds_in_cell": 15,
+  "crude_bound": 15058.926441587904,
+  "below_2_16": true
+ },
+ "pinned_words_frozen": [
+  {
+   "p": 2,
+   "lam": 0.0,
+   "pinned_words": 6,
+   "max_closure_dim_neighbour_terminal_L0E": 4,
+   "states_where_pinned_data_letters_changed_mobile_neighbour": 0
+  },
+  {
+   "p": 2,
+   "lam": 0.2,
+   "pinned_words": 6,
+   "max_closure_dim_neighbour_terminal_L0E": 23,
+   "states_where_pinned_data_letters_changed_mobile_neighbour": 0
+  },
+  {
+   "p": 3,
+   "lam": 0.0,
+   "pinned_words": 12,
+   "max_closure_dim_neighbour_terminal_L0E": 8,
+   "states_where_pinned_data_letters_changed_mobile_neighbour": 0
+  },
+  {
+   "p": 3,
+   "lam": 0.2,
+   "pinned_words": 12,
+   "max_closure_dim_neighbour_terminal_L0E": 60,
+   "states_where_pinned_data_letters_changed_mobile_neighbour": 0
+  },
+  {
+   "p": 4,
+   "lam": 0.0,
+   "pinned_words": 24,
+   "max_closure_dim_neighbour_terminal_L0E": 16,
+   "states_where_pinned_data_letters_changed_mobile_neighbour": 0
+  },
+  {
+   "p": 4,
+   "lam": 0.2,
+   "pinned_words": 24,
+   "max_closure_dim_neighbour_terminal_L0E": 147,
+   "states_where_pinned_data_letters_changed_mobile_neighbour": 0
+  },
+  {
+   "p": 5,
+   "lam": 0.0,
+   "pinned_words": 48,
+   "max_closure_dim_neighbour_terminal_L0E": 32,
+   "states_where_pinned_data_letters_changed_mobile_neighbour": 0
+  },
+  {
+   "p": 5,
+   "lam": 0.2,
+   "pinned_words": 48,
+   "max_closure_dim_neighbour_terminal_L0E": 346,
+   "states_where_pinned_data_letters_changed_mobile_neighbour": 0
+  },
+  {
+   "p": 6,
+   "lam": 0.0,
+   "pinned_words": 96,
+   "max_closure_dim_neighbour_terminal_L0E": 64,
+   "states_where_pinned_data_letters_changed_mobile_neighbour": 0
+  },
+  {
+   "p": 6,
+   "lam": 0.2,
+   "pinned_words": 96,
+   "max_closure_dim_neighbour_terminal_L0E": 793,
+   "states_where_pinned_data_letters_changed_mobile_neighbour": 0
+  }
+ ],
+ "quadratic_form": [
+  {
+   "mu": 1.889,
+   "B": 65536.0,
+   "K": 1099511627776.0,
+   "exact_min_minus_mu": -0.003906250232837305,
+   "bound": -0.003906250465661343,
+   "holds": true
+  },
+  {
+   "mu": 1.889,
+   "B": 10.0,
+   "K": 100.0,
+   "exact_min_minus_mu": -1.1206782386469696,
+   "bound": -1.25,
+   "holds": true
+  },
+  {
+   "mu": 0.5,
+   "B": 3.0,
+   "K": 9.0,
+   "exact_min_minus_mu": -1.3197051490249267,
+   "bound": -3.0,
+   "holds": true
+  }
+ ]
+}
