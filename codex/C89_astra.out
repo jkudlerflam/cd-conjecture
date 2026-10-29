@@ -1,0 +1,12 @@
+S_pin remains unresolved. The missing step is a uniform common-bulk comparison for the low-frequency quantum defect energies.
+
+Completed in [PROOF.md](PROOF.md) and [RESULT.md](RESULT.md):
+
+- Proved finite-size pin exclusion in the zero-port logical clock model.
+- Derived length-weighted defect budgets, retaining \(t\), \(J\), the \(\lambda^2\) band, and finite-\(K\) corrections.
+- Excluded marker-free and sufficiently large one-marker sectors in the legal projected model.
+- Ran 48 positive ED comparisons, with residuals below \(9\times10^{-12}\), and computed quantum second-order dressing coefficients.
+
+C88 leaves \(J/t\) and the complete mobile \(K\) threshold implicit, so positivity at a scheduled microscopic point cannot yet be certified. All files and computations stayed inside `work_C89`.
+
+[gpt_solve: backend=codex model=gpt-6-astra effort=high transcript=20261029T034937-44090]

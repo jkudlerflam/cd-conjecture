@@ -1,0 +1,59 @@
+{
+  "tag": "numerical_arithmetic_and_finite_ED_summary",
+  "mu_sel": 1.8891880765550195,
+  "e15": -0.004825498950096089,
+  "alpha_half": 0.29735763271532445,
+  "pin_bare": 1.9615705608064609,
+  "pin_leading_over_J": 0.5832879783654806,
+  "wrong": {
+    "1": {
+      "excess": 1.8940135755051153,
+      "leading_cost_over_J": 0.5631993931428885,
+      "density_margin": 1.8940135755051153
+    },
+    "2": {
+      "excess": 0.8988390744552115,
+      "leading_cost_over_J": 0.26727665937203493,
+      "density_margin": 0.44941953722760575
+    },
+    "14": {
+      "excess": 0.00044986038875338696,
+      "leading_cost_over_J": 0.0001337694202521027,
+      "density_margin": 3.2132884910955964e-05
+    },
+    "16": {
+      "excess": 0.0004498603887533731,
+      "leading_cost_over_J": 0.00013376942025209858,
+      "density_margin": 2.8116274297085818e-05
+    },
+    "30": {
+      "excess": 0.04421439827411189,
+      "leading_cost_over_J": 0.013147488802722438,
+      "density_margin": 0.0014738132758037293
+    },
+    "60": {
+      "excess": 0.1813698337911238,
+      "leading_cost_over_J": 0.053931704422100435,
+      "density_margin": 0.0030228305631853965
+    },
+    "1000": {
+      "excess": 4.714696876537785,
+      "leading_cost_over_J": 1.4019511021776099,
+      "density_margin": 0.004714696876537785
+    }
+  },
+  "weighted_margin_conservative": 7.62939453125e-06,
+  "alpha_weighted_margin": 2.2686586968637424e-06,
+  "log2_Eunit": -858.5774100800829,
+  "log2_lambda2": -1216,
+  "log2_lambda2_Eunit": -2074.5774100800827,
+  "log2_field": -2194.5774100800827,
+  "one_marker_asymptotic_length_threshold": 2787.652757996186,
+  "clock_comparisons": 24,
+  "scalar_comparisons": 24,
+  "largest_eigenpair_residual": 8.886779345259707e-12,
+  "all_clock_costs_positive": true,
+  "all_scalar_costs_positive": true,
+  "max_clock_dimension": 6750,
+  "max_scalar_dimension": 6435
+}

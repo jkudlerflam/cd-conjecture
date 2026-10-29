@@ -1,0 +1,498 @@
+{
+  "tag": "numerical_finite_volume_quantum_source_susceptibility",
+  "largest_linear_solve_residual": 2.483946767705923e-13,
+  "rows": [
+    {
+      "b": 3,
+      "N": 6,
+      "V": 6,
+      "lengths": [
+        3,
+        3
+      ],
+      "pins": [
+        true,
+        false
+      ],
+      "J": 0.04,
+      "B_reference": 0.20300507294473066,
+      "B_defect": 0.13290220772580033,
+      "delta_B": -0.07010286521893033,
+      "predicted_residual_over_J2": 0.07010286521893033,
+      "measured_residual_over_J2": 0.06989209445657808,
+      "second_order_cost": 0.016667731681746928,
+      "exact_cost": 0.016667394448527162
+    },
+    {
+      "b": 3,
+      "N": 6,
+      "V": 6,
+      "lengths": [
+        3,
+        3
+      ],
+      "pins": [
+        true,
+        true
+      ],
+      "J": 0.04,
+      "B_reference": 0.20300507294473066,
+      "B_defect": 0.011506560849523112,
+      "delta_B": -0.19149851209520755,
+      "predicted_residual_over_J2": 0.19149851209520755,
+      "measured_residual_over_J2": 0.19167647405817162,
+      "second_order_cost": 0.03341753181414561,
+      "exact_cost": 0.03341781655328635
+    },
+    {
+      "b": 3,
+      "N": 6,
+      "V": 6,
+      "lengths": [
+        2,
+        4
+      ],
+      "pins": [
+        false,
+        false
+      ],
+      "J": 0.04,
+      "B_reference": 0.20300507294473066,
+      "B_defect": 0.18456485504907333,
+      "delta_B": -0.018440217895657335,
+      "predicted_residual_over_J2": 0.018440217895657335,
+      "measured_residual_over_J2": 0.018382340530339984,
+      "second_order_cost": 0.002492482906110239,
+      "exact_cost": 0.002492390302325731
+    },
+    {
+      "b": 3,
+      "N": 6,
+      "V": 6,
+      "lengths": [
+        3,
+        3
+      ],
+      "pins": [
+        true,
+        false
+      ],
+      "J": 0.02,
+      "B_reference": 0.20300507294473066,
+      "B_defect": 0.13290220772580033,
+      "delta_B": -0.07010286521893033,
+      "predicted_residual_over_J2": 0.07010286521893033,
+      "measured_residual_over_J2": 0.06999707251189083,
+      "second_order_cost": 0.008305824694785892,
+      "exact_cost": 0.008305782377703075
+    },
+    {
+      "b": 3,
+      "N": 6,
+      "V": 6,
+      "lengths": [
+        3,
+        3
+      ],
+      "pins": [
+        true,
+        true
+      ],
+      "J": 0.02,
+      "B_reference": 0.20300507294473066,
+      "B_defect": 0.011506560849523112,
+      "delta_B": -0.19149851209520755,
+      "predicted_residual_over_J2": 0.19149851209520755,
+      "measured_residual_over_J2": 0.19158839346625645,
+      "second_order_cost": 0.016632166502234723,
+      "exact_cost": 0.01663220245478314
+    },
+    {
+      "b": 3,
+      "N": 6,
+      "V": 6,
+      "lengths": [
+        2,
+        4
+      ],
+      "pins": [
+        false,
+        false
+      ],
+      "J": 0.02,
+      "B_reference": 0.20300507294473066,
+      "B_defect": 0.18456485504907333,
+      "delta_B": -0.018440217895657335,
+      "predicted_residual_over_J2": 0.018440217895657335,
+      "measured_residual_over_J2": 0.018411296259851148,
+      "second_order_cost": 0.0012388653658968567,
+      "exact_cost": 0.001238853797242534
+    },
+    {
+      "b": 3,
+      "N": 6,
+      "V": 6,
+      "lengths": [
+        3,
+        3
+      ],
+      "pins": [
+        true,
+        false
+      ],
+      "J": 0.01,
+      "B_reference": 0.20300507294473066,
+      "B_defect": 0.13290220772580033,
+      "delta_B": -0.07010286521893033,
+      "predicted_residual_over_J2": 0.07010286521893033,
+      "measured_residual_over_J2": 0.07004986817785815,
+      "second_order_cost": 0.004145902060871053,
+      "exact_cost": 0.004145896761166945
+    },
+    {
+      "b": 3,
+      "N": 6,
+      "V": 6,
+      "lengths": [
+        3,
+        3
+      ],
+      "pins": [
+        true,
+        true
+      ],
+      "J": 0.01,
+      "B_reference": 0.20300507294473066,
+      "B_defect": 0.011506560849523112,
+      "delta_B": -0.19149851209520755,
+      "predicted_residual_over_J2": 0.19149851209520755,
+      "measured_residual_over_J2": 0.19154367442515174,
+      "second_order_cost": 0.00829693339990784,
+      "exact_cost": 0.008296937916140834
+    },
+    {
+      "b": 3,
+      "N": 6,
+      "V": 6,
+      "lengths": [
+        2,
+        4
+      ],
+      "pins": [
+        false,
+        false
+      ],
+      "J": 0.01,
+      "B_reference": 0.20300507294473066,
+      "B_defect": 0.18456485504907333,
+      "delta_B": -0.018440217895657335,
+      "predicted_residual_over_J2": 0.018440217895657335,
+      "measured_residual_over_J2": 0.018425762225004333,
+      "second_order_cost": 0.0006175886611588625,
+      "exact_cost": 0.0006175872155917972
+    },
+    {
+      "b": 15,
+      "N": 15,
+      "V": 2,
+      "lengths": [
+        15
+      ],
+      "pins": [
+        true
+      ],
+      "J": 0.04,
+      "B_reference": 0.6844550545335464,
+      "B_defect": 0.26818859181852367,
+      "delta_B": -0.4162664627150227,
+      "predicted_residual_over_J2": 0.4162664627150227,
+      "measured_residual_over_J2": 0.40089177722778807,
+      "second_order_cost": 0.06870869534613265,
+      "exact_cost": 0.06868409584935309
+    },
+    {
+      "b": 15,
+      "N": 15,
+      "V": 2,
+      "lengths": [
+        15
+      ],
+      "pins": [
+        true
+      ],
+      "J": 0.02,
+      "B_reference": 0.6844550545335464,
+      "B_defect": 0.26818859181852367,
+      "delta_B": -0.4162664627150227,
+      "predicted_residual_over_J2": 0.4162664627150227,
+      "measured_residual_over_J2": 0.4084780001024468,
+      "second_order_cost": 0.03418784108798032,
+      "exact_cost": 0.03418472570293529
+    },
+    {
+      "b": 15,
+      "N": 15,
+      "V": 2,
+      "lengths": [
+        15
+      ],
+      "pins": [
+        true
+      ],
+      "J": 0.01,
+      "B_reference": 0.6844550545335464,
+      "B_defect": 0.26818859181852367,
+      "delta_B": -0.4162664627150227,
+      "predicted_residual_over_J2": 0.4162664627150227,
+      "measured_residual_over_J2": 0.41234589581736747,
+      "second_order_cost": 0.017052293897718656,
+      "exact_cost": 0.017051901841028894
+    },
+    {
+      "b": 15,
+      "N": 30,
+      "V": 1,
+      "lengths": [
+        15,
+        15
+      ],
+      "pins": [
+        true,
+        false
+      ],
+      "J": 0.02,
+      "B_reference": 0.7390291115992886,
+      "B_defect": 0.6157986013414831,
+      "delta_B": -0.12323051025780551,
+      "predicted_residual_over_J2": 0.12323051025780551,
+      "measured_residual_over_J2": 0.14006944942487648,
+      "second_order_cost": 0.03797298971302804,
+      "exact_cost": 0.037979725288694866
+    },
+    {
+      "b": 15,
+      "N": 30,
+      "V": 1,
+      "lengths": [
+        14,
+        16
+      ],
+      "pins": [
+        false,
+        false
+      ],
+      "J": 0.02,
+      "B_reference": 0.7390291115992886,
+      "B_defect": 0.7387182511695005,
+      "delta_B": -0.0003108604297881179,
+      "predicted_residual_over_J2": 0.0003108604297881179,
+      "measured_residual_over_J2": 0.00038366025830577875,
+      "second_order_cost": 1.7518945870379546e-05,
+      "exact_cost": 1.7548065801786805e-05
+    },
+    {
+      "b": 15,
+      "N": 30,
+      "V": 1,
+      "lengths": [
+        10,
+        20
+      ],
+      "pins": [
+        false,
+        false
+      ],
+      "J": 0.02,
+      "B_reference": 0.7390291115992886,
+      "B_defect": 0.7326428731826683,
+      "delta_B": -0.006386238416620338,
+      "predicted_residual_over_J2": 0.006386238416620338,
+      "measured_residual_over_J2": 0.008129294235536275,
+      "second_order_cost": 0.000514762586084267,
+      "exact_cost": 0.0005154598084118334
+    },
+    {
+      "b": 15,
+      "N": 30,
+      "V": 1,
+      "lengths": [
+        30
+      ],
+      "pins": [
+        false
+      ],
+      "J": 0.02,
+      "B_reference": 0.7390291115992886,
+      "B_defect": 0.7480713006493682,
+      "delta_B": 0.009042189050079585,
+      "predicted_residual_over_J2": -0.009042189050079585,
+      "measured_residual_over_J2": -0.015984780412400097,
+      "second_order_cost": 0.0008511948243461314,
+      "exact_cost": 0.0008484177878012034
+    },
+    {
+      "b": 15,
+      "N": 30,
+      "V": 1,
+      "lengths": [
+        15,
+        15
+      ],
+      "pins": [
+        true,
+        false
+      ],
+      "J": 0.01,
+      "B_reference": 0.7390291115992886,
+      "B_defect": 0.6157986013414831,
+      "delta_B": -0.12323051025780551,
+      "predicted_residual_over_J2": 0.12323051025780551,
+      "measured_residual_over_J2": 0.13219185426776658,
+      "second_order_cost": 0.018974171805488237,
+      "exact_cost": 0.018975067939889234
+    },
+    {
+      "b": 15,
+      "N": 30,
+      "V": 1,
+      "lengths": [
+        14,
+        16
+      ],
+      "pins": [
+        false,
+        false
+      ],
+      "J": 0.01,
+      "B_reference": 0.7390291115992886,
+      "B_defect": 0.7387182511695005,
+      "delta_B": -0.0003108604297881179,
+      "predicted_residual_over_J2": 0.0003108604297881179,
+      "measured_residual_over_J2": 0.00034942238939751277,
+      "second_order_cost": 8.72838689221096e-06,
+      "exact_cost": 8.732243088171998e-06
+    },
+    {
+      "b": 15,
+      "N": 30,
+      "V": 1,
+      "lengths": [
+        10,
+        20
+      ],
+      "pins": [
+        false,
+        false
+      ],
+      "J": 0.01,
+      "B_reference": 0.7390291115992886,
+      "B_defect": 0.7326428731826683,
+      "delta_B": -0.006386238416620338,
+      "predicted_residual_over_J2": 0.006386238416620338,
+      "measured_residual_over_J2": 0.007308184826169701,
+      "second_order_cost": 0.0002567426692004715,
+      "exact_cost": 0.0002568348638414264
+    },
+    {
+      "b": 15,
+      "N": 30,
+      "V": 1,
+      "lengths": [
+        30
+      ],
+      "pins": [
+        false
+      ],
+      "J": 0.01,
+      "B_reference": 0.7390291115992886,
+      "B_defect": 0.7480713006493682,
+      "delta_B": 0.009042189050079585,
+      "predicted_residual_over_J2": -0.009042189050079585,
+      "measured_residual_over_J2": -0.012400084270007506,
+      "second_order_cost": 0.0004265016310780736,
+      "exact_cost": 0.00042616584155608095
+    },
+    {
+      "b": 15,
+      "N": 30,
+      "V": 1,
+      "lengths": [
+        15,
+        15
+      ],
+      "pins": [
+        true,
+        false
+      ],
+      "J": 0.005,
+      "B_reference": 0.7390291115992886,
+      "B_defect": 0.6157986013414831,
+      "delta_B": -0.12323051025780551,
+      "predicted_residual_over_J2": 0.12323051025780551,
+      "measured_residual_over_J2": 0.12785018963145256,
+      "second_order_cost": 0.009484005139987674,
+      "exact_cost": 0.009484120631972015
+    },
+    {
+      "b": 15,
+      "N": 30,
+      "V": 1,
+      "lengths": [
+        14,
+        16
+      ],
+      "pins": [
+        false,
+        false
+      ],
+      "J": 0.005,
+      "B_reference": 0.7390291115992886,
+      "B_defect": 0.7387182511695005,
+      "delta_B": -0.0003108604297881179,
+      "predicted_residual_over_J2": 0.0003108604297881179,
+      "measured_residual_over_J2": 0.00033065363899600214,
+      "second_order_cost": 4.3564219353607776e-06,
+      "exact_cost": 4.3569167655910235e-06
+    },
+    {
+      "b": 15,
+      "N": 30,
+      "V": 1,
+      "lengths": [
+        10,
+        20
+      ],
+      "pins": [
+        false,
+        false
+      ],
+      "J": 0.005,
+      "B_reference": 0.7390291115992886,
+      "B_defect": 0.7326428731826683,
+      "delta_B": -0.006386238416620338,
+      "predicted_residual_over_J2": 0.006386238416620338,
+      "measured_residual_over_J2": 0.006859158689872559,
+      "second_order_cost": 0.0001282116786398202,
+      "exact_cost": 0.00012822350164665153
+    },
+    {
+      "b": 15,
+      "N": 30,
+      "V": 1,
+      "lengths": [
+        30
+      ],
+      "pins": [
+        false
+      ],
+      "J": 0.005,
+      "B_reference": 0.7390291115992886,
+      "B_defect": 0.7480713006493682,
+      "delta_B": 0.009042189050079585,
+      "predicted_residual_over_J2": -0.009042189050079585,
+      "measured_residual_over_J2": -0.010691989355113198,
+      "second_order_cost": 0.0002134768702652888,
+      "exact_cost": 0.00021343562525766302
+    }
+  ]
+}

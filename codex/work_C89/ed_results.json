@@ -1,0 +1,1827 @@
+{
+  "clock": [
+    {
+      "tag": "numerical_exact_vacuum_clock_block",
+      "b": 3,
+      "mu_sel": 0.48716257924825324,
+      "reference": {
+        "lengths": [
+          3,
+          3
+        ],
+        "pins": [
+          false,
+          false
+        ],
+        "N": 6,
+        "V": 6,
+        "L": 12,
+        "J": 0.04,
+        "t": 1.0,
+        "density": 0.5,
+        "dimension": 4158,
+        "energy": -7.749436829636427,
+        "free_energy": -7.727406610312547,
+        "alpha": 0.29266384402395124,
+        "frozen_energy": -1.8541019662496838,
+        "dressing_residual": -0.00032507497767999063,
+        "pin_terminal_contacts": [],
+        "eigenpair_residual": 4.0517548615382e-14,
+        "free_state_residual": 4.136816181565481e-15
+      },
+      "defect": {
+        "lengths": [
+          3,
+          3
+        ],
+        "pins": [
+          true,
+          false
+        ],
+        "N": 6,
+        "V": 6,
+        "L": 12,
+        "J": 0.04,
+        "t": 1.0,
+        "density": 0.5,
+        "dimension": 1386,
+        "energy": -7.7327694351879,
+        "free_energy": -7.727406610312547,
+        "alpha": 0.29266384402395124,
+        "frozen_energy": -0.4398884038765887,
+        "dressing_residual": -0.0002132476265494657,
+        "pin_terminal_contacts": [
+          0.29026540407049206
+        ],
+        "eigenpair_residual": 1.4339068920537377e-14,
+        "free_state_residual": 4.136816181565481e-15
+      },
+      "cost": 0.016667394448527162,
+      "leading_cost": 0.01655556709739664,
+      "ratio": 1.006754667506866,
+      "residual_difference": 0.00011182735113052494,
+      "pin_variational_lower_bound": 0.011610616162819682
+    },
+    {
+      "tag": "numerical_exact_vacuum_clock_block",
+      "b": 3,
+      "mu_sel": 0.48716257924825324,
+      "reference": {
+        "lengths": [
+          3,
+          3
+        ],
+        "pins": [
+          false,
+          false
+        ],
+        "N": 6,
+        "V": 6,
+        "L": 12,
+        "J": 0.04,
+        "t": 1.0,
+        "density": 0.5,
+        "dimension": 4158,
+        "energy": -7.749436829636427,
+        "free_energy": -7.727406610312547,
+        "alpha": 0.29266384402395124,
+        "frozen_energy": -1.8541019662496838,
+        "dressing_residual": -0.00032507497767999063,
+        "pin_terminal_contacts": [],
+        "eigenpair_residual": 4.0517548615382e-14,
+        "free_state_residual": 4.136816181565481e-15
+      },
+      "defect": {
+        "lengths": [
+          3,
+          3
+        ],
+        "pins": [
+          true,
+          true
+        ],
+        "N": 6,
+        "V": 6,
+        "L": 12,
+        "J": 0.04,
+        "t": 1.0,
+        "density": 0.5,
+        "dimension": 462,
+        "energy": -7.716019013083141,
+        "free_energy": -7.727406610312547,
+        "alpha": 0.29266384402395124,
+        "frozen_energy": 0.9743251584965065,
+        "dressing_residual": -1.8392619186916037e-05,
+        "pin_terminal_contacts": [
+          0.2917204374743152,
+          0.29172043747431525
+        ],
+        "eigenpair_residual": 4.746329225381675e-15,
+        "free_state_residual": 4.136816181565481e-15
+      },
+      "cost": 0.03341781655328635,
+      "leading_cost": 0.03311113419479328,
+      "ratio": 1.009262212423436,
+      "residual_difference": 0.0003066823584930746,
+      "pin_variational_lower_bound": 0.023337634997945216
+    },
+    {
+      "tag": "numerical_exact_vacuum_clock_block",
+      "b": 3,
+      "mu_sel": 0.48716257924825324,
+      "reference": {
+        "lengths": [
+          3,
+          3
+        ],
+        "pins": [
+          false,
+          false
+        ],
+        "N": 6,
+        "V": 6,
+        "L": 12,
+        "J": 0.04,
+        "t": 1.0,
+        "density": 0.5,
+        "dimension": 4158,
+        "energy": -7.749436829636427,
+        "free_energy": -7.727406610312547,
+        "alpha": 0.29266384402395124,
+        "frozen_energy": -1.8541019662496838,
+        "dressing_residual": -0.00032507497767999063,
+        "pin_terminal_contacts": [],
+        "eigenpair_residual": 4.0517548615382e-14,
+        "free_state_residual": 4.136816181565481e-15
+      },
+      "defect": {
+        "lengths": [
+          2,
+          4
+        ],
+        "pins": [
+          false,
+          false
+        ],
+        "N": 6,
+        "V": 6,
+        "L": 12,
+        "J": 0.04,
+        "t": 1.0,
+        "density": 0.5,
+        "dimension": 3696,
+        "energy": -7.746944439334102,
+        "free_energy": -7.727406610312547,
+        "alpha": 0.29266384402395124,
+        "frozen_energy": -1.6437088302533887,
+        "dressing_residual": -0.00029566323283144666,
+        "pin_terminal_contacts": [],
+        "eigenpair_residual": 6.916568896575759e-12,
+        "free_state_residual": 4.136816181565481e-15
+      },
+      "cost": 0.002492390302325731,
+      "leading_cost": 0.0024629785574771875,
+      "ratio": 1.0119415350812757,
+      "residual_difference": 2.9411744848543975e-05
+    },
+    {
+      "tag": "numerical_exact_vacuum_clock_block",
+      "b": 3,
+      "mu_sel": 0.48716257924825324,
+      "reference": {
+        "lengths": [
+          3,
+          3
+        ],
+        "pins": [
+          false,
+          false
+        ],
+        "N": 6,
+        "V": 6,
+        "L": 12,
+        "J": 0.02,
+        "t": 1.0,
+        "density": 0.5,
+        "dimension": 4158,
+        "energy": -7.73834041823077,
+        "free_energy": -7.727406610312547,
+        "alpha": 0.29266384402395124,
+        "frozen_energy": -1.8541019662496838,
+        "dressing_residual": -8.123574512265176e-05,
+        "pin_terminal_contacts": [],
+        "eigenpair_residual": 4.3538401578115857e-13,
+        "free_state_residual": 4.136816181565481e-15
+      },
+      "defect": {
+        "lengths": [
+          3,
+          3
+        ],
+        "pins": [
+          true,
+          false
+        ],
+        "N": 6,
+        "V": 6,
+        "L": 12,
+        "J": 0.02,
+        "t": 1.0,
+        "density": 0.5,
+        "dimension": 1386,
+        "energy": -7.730034635853067,
+        "free_energy": -7.727406610312547,
+        "alpha": 0.29266384402395124,
+        "frozen_energy": -0.4398884038765887,
+        "dressing_residual": -5.323691611789543e-05,
+        "pin_terminal_contacts": [
+          0.2914653221927423
+        ],
+        "eigenpair_residual": 9.886296305932594e-15,
+        "free_state_residual": 4.136816181565481e-15
+      },
+      "cost": 0.008305782377703075,
+      "leading_cost": 0.00827778354869832,
+      "ratio": 1.0033824065149852,
+      "residual_difference": 2.7998829004756334e-05,
+      "pin_variational_lower_bound": 0.005829306443854846
+    },
+    {
+      "tag": "numerical_exact_vacuum_clock_block",
+      "b": 3,
+      "mu_sel": 0.48716257924825324,
+      "reference": {
+        "lengths": [
+          3,
+          3
+        ],
+        "pins": [
+          false,
+          false
+        ],
+        "N": 6,
+        "V": 6,
+        "L": 12,
+        "J": 0.02,
+        "t": 1.0,
+        "density": 0.5,
+        "dimension": 4158,
+        "energy": -7.73834041823077,
+        "free_energy": -7.727406610312547,
+        "alpha": 0.29266384402395124,
+        "frozen_energy": -1.8541019662496838,
+        "dressing_residual": -8.123574512265176e-05,
+        "pin_terminal_contacts": [],
+        "eigenpair_residual": 4.3538401578115857e-13,
+        "free_state_residual": 4.136816181565481e-15
+      },
+      "defect": {
+        "lengths": [
+          3,
+          3
+        ],
+        "pins": [
+          true,
+          true
+        ],
+        "N": 6,
+        "V": 6,
+        "L": 12,
+        "J": 0.02,
+        "t": 1.0,
+        "density": 0.5,
+        "dimension": 462,
+        "energy": -7.721708215775987,
+        "free_energy": -7.727406610312547,
+        "alpha": 0.29266384402395124,
+        "frozen_energy": 0.9743251584965065,
+        "dressing_residual": -4.600387736149181e-06,
+        "pin_terminal_contacts": [
+          0.2921917972629379,
+          0.2921917972629379
+        ],
+        "eigenpair_residual": 1.4203370240498723e-15,
+        "free_state_residual": 4.136816181565481e-15
+      },
+      "cost": 0.01663220245478314,
+      "leading_cost": 0.01655556709739664,
+      "ratio": 1.0046289780915176,
+      "residual_difference": 7.663535738650258e-05,
+      "pin_variational_lower_bound": 0.011687671890517518
+    },
+    {
+      "tag": "numerical_exact_vacuum_clock_block",
+      "b": 3,
+      "mu_sel": 0.48716257924825324,
+      "reference": {
+        "lengths": [
+          3,
+          3
+        ],
+        "pins": [
+          false,
+          false
+        ],
+        "N": 6,
+        "V": 6,
+        "L": 12,
+        "J": 0.02,
+        "t": 1.0,
+        "density": 0.5,
+        "dimension": 4158,
+        "energy": -7.73834041823077,
+        "free_energy": -7.727406610312547,
+        "alpha": 0.29266384402395124,
+        "frozen_energy": -1.8541019662496838,
+        "dressing_residual": -8.123574512265176e-05,
+        "pin_terminal_contacts": [],
+        "eigenpair_residual": 4.3538401578115857e-13,
+        "free_state_residual": 4.136816181565481e-15
+      },
+      "defect": {
+        "lengths": [
+          2,
+          4
+        ],
+        "pins": [
+          false,
+          false
+        ],
+        "N": 6,
+        "V": 6,
+        "L": 12,
+        "J": 0.02,
+        "t": 1.0,
+        "density": 0.5,
+        "dimension": 3696,
+        "energy": -7.7371015644335275,
+        "free_energy": -7.727406610312547,
+        "alpha": 0.29266384402395124,
+        "frozen_energy": -1.6437088302533887,
+        "dressing_residual": -7.38712266187113e-05,
+        "pin_terminal_contacts": [],
+        "eigenpair_residual": 8.886779345259707e-12,
+        "free_state_residual": 4.136816181565481e-15
+      },
+      "cost": 0.001238853797242534,
+      "leading_cost": 0.0012314892787385937,
+      "ratio": 1.0059801726503732,
+      "residual_difference": 7.364518503940459e-06
+    },
+    {
+      "tag": "numerical_exact_vacuum_clock_block",
+      "b": 3,
+      "mu_sel": 0.48716257924825324,
+      "reference": {
+        "lengths": [
+          3,
+          3
+        ],
+        "pins": [
+          false,
+          false
+        ],
+        "N": 6,
+        "V": 6,
+        "L": 12,
+        "J": 0.01,
+        "t": 1.0,
+        "density": 0.5,
+        "dimension": 4158,
+        "energy": -7.732853201142933,
+        "free_energy": -7.727406610312547,
+        "alpha": 0.29266384402395124,
+        "frozen_energy": -1.8541019662496838,
+        "dressing_residual": -2.030474383557957e-05,
+        "pin_terminal_contacts": [],
+        "eigenpair_residual": 1.4483448952591495e-12,
+        "free_state_residual": 4.136816181565481e-15
+      },
+      "defect": {
+        "lengths": [
+          3,
+          3
+        ],
+        "pins": [
+          true,
+          false
+        ],
+        "N": 6,
+        "V": 6,
+        "L": 12,
+        "J": 0.01,
+        "t": 1.0,
+        "density": 0.5,
+        "dimension": 1386,
+        "energy": -7.728707304381766,
+        "free_energy": -7.727406610312547,
+        "alpha": 0.29266384402395124,
+        "frozen_energy": -0.4398884038765887,
+        "dressing_residual": -1.3299757017793757e-05,
+        "pin_terminal_contacts": [
+          0.29206476576179574
+        ],
+        "eigenpair_residual": 6.16217996778766e-15,
+        "free_state_residual": 4.136816181565481e-15
+      },
+      "cost": 0.004145896761166945,
+      "leading_cost": 0.00413889177434916,
+      "ratio": 1.0016924788565864,
+      "residual_difference": 7.004986817785814e-06,
+      "pin_variational_lower_bound": 0.0029206476576179577
+    },
+    {
+      "tag": "numerical_exact_vacuum_clock_block",
+      "b": 3,
+      "mu_sel": 0.48716257924825324,
+      "reference": {
+        "lengths": [
+          3,
+          3
+        ],
+        "pins": [
+          false,
+          false
+        ],
+        "N": 6,
+        "V": 6,
+        "L": 12,
+        "J": 0.01,
+        "t": 1.0,
+        "density": 0.5,
+        "dimension": 4158,
+        "energy": -7.732853201142933,
+        "free_energy": -7.727406610312547,
+        "alpha": 0.29266384402395124,
+        "frozen_energy": -1.8541019662496838,
+        "dressing_residual": -2.030474383557957e-05,
+        "pin_terminal_contacts": [],
+        "eigenpair_residual": 1.4483448952591495e-12,
+        "free_state_residual": 4.136816181565481e-15
+      },
+      "defect": {
+        "lengths": [
+          3,
+          3
+        ],
+        "pins": [
+          true,
+          true
+        ],
+        "N": 6,
+        "V": 6,
+        "L": 12,
+        "J": 0.01,
+        "t": 1.0,
+        "density": 0.5,
+        "dimension": 462,
+        "energy": -7.724556263226792,
+        "free_energy": -7.727406610312547,
+        "alpha": 0.29266384402395124,
+        "frozen_energy": 0.9743251584965065,
+        "dressing_residual": -1.150376393064395e-06,
+        "pin_terminal_contacts": [
+          0.29242773463125993,
+          0.29242773463126
+        ],
+        "eigenpair_residual": 1.5363326427079486e-15,
+        "free_state_residual": 4.136816181565481e-15
+      },
+      "cost": 0.008296937916140834,
+      "leading_cost": 0.00827778354869832,
+      "ratio": 1.0023139488161086,
+      "residual_difference": 1.9154367442515176e-05,
+      "pin_variational_lower_bound": 0.005848554692625199
+    },
+    {
+      "tag": "numerical_exact_vacuum_clock_block",
+      "b": 3,
+      "mu_sel": 0.48716257924825324,
+      "reference": {
+        "lengths": [
+          3,
+          3
+        ],
+        "pins": [
+          false,
+          false
+        ],
+        "N": 6,
+        "V": 6,
+        "L": 12,
+        "J": 0.01,
+        "t": 1.0,
+        "density": 0.5,
+        "dimension": 4158,
+        "energy": -7.732853201142933,
+        "free_energy": -7.727406610312547,
+        "alpha": 0.29266384402395124,
+        "frozen_energy": -1.8541019662496838,
+        "dressing_residual": -2.030474383557957e-05,
+        "pin_terminal_contacts": [],
+        "eigenpair_residual": 1.4483448952591495e-12,
+        "free_state_residual": 4.136816181565481e-15
+      },
+      "defect": {
+        "lengths": [
+          2,
+          4
+        ],
+        "pins": [
+          false,
+          false
+        ],
+        "N": 6,
+        "V": 6,
+        "L": 12,
+        "J": 0.01,
+        "t": 1.0,
+        "density": 0.5,
+        "dimension": 3696,
+        "energy": -7.732235613927341,
+        "free_energy": -7.727406610312547,
+        "alpha": 0.29266384402395124,
+        "frozen_energy": -1.6437088302533887,
+        "dressing_residual": -1.8462167613079138e-05,
+        "pin_terminal_contacts": [],
+        "eigenpair_residual": 6.147153089149026e-15,
+        "free_state_residual": 4.136816181565481e-15
+      },
+      "cost": 0.0006175872155917972,
+      "leading_cost": 0.0006157446393692969,
+      "ratio": 1.0029924356700655,
+      "residual_difference": 1.8425762225004333e-06
+    },
+    {
+      "tag": "numerical_exact_vacuum_clock_block",
+      "b": 15,
+      "mu_sel": 1.8891880765550195,
+      "reference": {
+        "lengths": [
+          15
+        ],
+        "pins": [
+          false
+        ],
+        "N": 15,
+        "V": 2,
+        "L": 17,
+        "J": 0.04,
+        "t": 1.0,
+        "density": 0.8823529411764706,
+        "dimension": 1800,
+        "energy": -3.9354817459960536,
+        "free_energy": -3.9318923987356107,
+        "alpha": 0.8671962962399657,
+        "frozen_energy": -0.07238248425144134,
+        "dressing_residual": -0.0010785543702230066,
+        "pin_terminal_contacts": [],
+        "eigenpair_residual": 2.440005513581332e-12,
+        "free_state_residual": 9.57691044077328e-15
+      },
+      "defect": {
+        "lengths": [
+          15
+        ],
+        "pins": [
+          true
+        ],
+        "N": 15,
+        "V": 2,
+        "L": 17,
+        "J": 0.04,
+        "t": 1.0,
+        "density": 0.8823529411764706,
+        "dimension": 120,
+        "energy": -3.8667976501467005,
+        "free_energy": -3.9318923987356107,
+        "alpha": 0.8671962962399657,
+        "frozen_energy": 1.8891880765550195,
+        "dressing_residual": -0.0004371275266585456,
+        "pin_terminal_contacts": [
+          0.8555242116554391
+        ],
+        "eigenpair_residual": 1.2576606900737773e-14,
+        "free_state_residual": 9.57691044077328e-15
+      },
+      "cost": 0.06868409584935309,
+      "leading_cost": 0.06804266900578862,
+      "ratio": 1.0094268324999112,
+      "residual_difference": 0.000641426843564461,
+      "pin_variational_lower_bound": 0.03422096846621757
+    },
+    {
+      "tag": "numerical_exact_vacuum_clock_block",
+      "b": 15,
+      "mu_sel": 1.8891880765550195,
+      "reference": {
+        "lengths": [
+          15
+        ],
+        "pins": [
+          false
+        ],
+        "N": 15,
+        "V": 2,
+        "L": 17,
+        "J": 0.02,
+        "t": 1.0,
+        "density": 0.8823529411764706,
+        "dimension": 1800,
+        "energy": -3.93341948021022,
+        "free_energy": -3.9318923987356107,
+        "alpha": 0.8671962962399657,
+        "frozen_energy": -0.07238248425144134,
+        "dressing_residual": -0.00027168502949916377,
+        "pin_terminal_contacts": [],
+        "eigenpair_residual": 6.6818372149556134e-12,
+        "free_state_residual": 9.57691044077328e-15
+      },
+      "defect": {
+        "lengths": [
+          15
+        ],
+        "pins": [
+          true
+        ],
+        "N": 15,
+        "V": 2,
+        "L": 17,
+        "J": 0.02,
+        "t": 1.0,
+        "density": 0.8823529411764706,
+        "dimension": 120,
+        "energy": -3.8992347545072845,
+        "free_energy": -3.9318923987356107,
+        "alpha": 0.8671962962399657,
+        "frozen_energy": 1.8891880765550195,
+        "dressing_residual": -0.00010829382945818505,
+        "pin_terminal_contacts": [
+          0.8614374371148403
+        ],
+        "eigenpair_residual": 3.705265389761496e-15,
+        "free_state_residual": 9.57691044077328e-15
+      },
+      "cost": 0.03418472570293529,
+      "leading_cost": 0.03402133450289431,
+      "ratio": 1.0048026099630831,
+      "residual_difference": 0.00016339120004097872,
+      "pin_variational_lower_bound": 0.017228748742296806
+    },
+    {
+      "tag": "numerical_exact_vacuum_clock_block",
+      "b": 15,
+      "mu_sel": 1.8891880765550195,
+      "reference": {
+        "lengths": [
+          15
+        ],
+        "pins": [
+          false
+        ],
+        "N": 15,
+        "V": 2,
+        "L": 17,
+        "J": 0.01,
+        "t": 1.0,
+        "density": 0.8823529411764706,
+        "dimension": 1800,
+        "energy": -3.9325882786091215,
+        "free_energy": -3.9318923987356107,
+        "alpha": 0.8671962962399657,
+        "frozen_energy": -0.07238248425144134,
+        "dressing_residual": -6.818165095585373e-05,
+        "pin_terminal_contacts": [],
+        "eigenpair_residual": 2.066594897714205e-14,
+        "free_state_residual": 9.57691044077328e-15
+      },
+      "defect": {
+        "lengths": [
+          15
+        ],
+        "pins": [
+          true
+        ],
+        "N": 15,
+        "V": 2,
+        "L": 17,
+        "J": 0.01,
+        "t": 1.0,
+        "density": 0.8823529411764706,
+        "dimension": 120,
+        "energy": -3.9155363767680926,
+        "free_energy": -3.9318923987356107,
+        "alpha": 0.8671962962399657,
+        "frozen_energy": 1.8891880765550195,
+        "dressing_residual": -2.6947061374116982e-05,
+        "pin_terminal_contacts": [
+          0.8643367907357953
+        ],
+        "eigenpair_residual": 5.578076639445832e-15,
+        "free_state_residual": 9.57691044077328e-15
+      },
+      "cost": 0.017051901841028894,
+      "leading_cost": 0.017010667251447155,
+      "ratio": 1.0024240430414764,
+      "residual_difference": 4.123458958173675e-05,
+      "pin_variational_lower_bound": 0.008643367907357953
+    },
+    {
+      "tag": "numerical_exact_vacuum_clock_block",
+      "b": 15,
+      "mu_sel": 1.8891880765550195,
+      "reference": {
+        "lengths": [
+          15,
+          15
+        ],
+        "pins": [
+          false,
+          false
+        ],
+        "N": 30,
+        "V": 1,
+        "L": 31,
+        "J": 0.02,
+        "t": 1.0,
+        "density": 0.967741935483871,
+        "dimension": 6750,
+        "energy": -2.0030907761207395,
+        "free_energy": -2.000000000000011,
+        "alpha": 0.9666666666666667,
+        "frozen_energy": -0.14476496850288267,
+        "dressing_residual": -0.0002919867296726571,
+        "pin_terminal_contacts": [],
+        "eigenpair_residual": 5.950806387659422e-13,
+        "free_state_residual": 2.2614918717340534e-14
+      },
+      "defect": {
+        "lengths": [
+          15,
+          15
+        ],
+        "pins": [
+          true,
+          false
+        ],
+        "N": 30,
+        "V": 1,
+        "L": 31,
+        "J": 0.02,
+        "t": 1.0,
+        "density": 0.967741935483871,
+        "dimension": 450,
+        "energy": -1.9651110508320446,
+        "free_energy": -2.000000000000011,
+        "alpha": 0.9666666666666667,
+        "frozen_energy": 1.8168055923035782,
+        "dressing_residual": -0.0002359589499027065,
+        "pin_terminal_contacts": [
+          0.9629869824057035
+        ],
+        "eigenpair_residual": 1.9867529779155458e-12,
+        "free_state_residual": 2.2614918717340534e-14
+      },
+      "cost": 0.037979725288694866,
+      "leading_cost": 0.037923697508924915,
+      "ratio": 1.0014773817810556,
+      "residual_difference": 5.602777976995059e-05,
+      "pin_variational_lower_bound": 0.01925973964811407
+    },
+    {
+      "tag": "numerical_exact_vacuum_clock_block",
+      "b": 15,
+      "mu_sel": 1.8891880765550195,
+      "reference": {
+        "lengths": [
+          15,
+          15
+        ],
+        "pins": [
+          false,
+          false
+        ],
+        "N": 30,
+        "V": 1,
+        "L": 31,
+        "J": 0.02,
+        "t": 1.0,
+        "density": 0.967741935483871,
+        "dimension": 6750,
+        "energy": -2.0030907761207395,
+        "free_energy": -2.000000000000011,
+        "alpha": 0.9666666666666667,
+        "frozen_energy": -0.14476496850288267,
+        "dressing_residual": -0.0002919867296726571,
+        "pin_terminal_contacts": [],
+        "eigenpair_residual": 5.950806387659422e-13,
+        "free_state_residual": 2.2614918717340534e-14
+      },
+      "defect": {
+        "lengths": [
+          14,
+          16
+        ],
+        "pins": [
+          false,
+          false
+        ],
+        "N": 30,
+        "V": 1,
+        "L": 31,
+        "J": 0.02,
+        "t": 1.0,
+        "density": 0.967741935483871,
+        "dimension": 6720,
+        "energy": -2.0030732280549377,
+        "free_energy": -2.000000000000011,
+        "alpha": 0.9666666666666667,
+        "frozen_energy": -0.1438652477253759,
+        "dressing_residual": -0.0002918332655693348,
+        "pin_terminal_contacts": [],
+        "eigenpair_residual": 7.32082257170499e-13,
+        "free_state_residual": 2.2614918717340534e-14
+      },
+      "cost": 1.7548065801786805e-05,
+      "leading_cost": 1.7394601698464297e-05,
+      "ratio": 1.0088225132131687,
+      "residual_difference": 1.534641033223115e-07
+    },
+    {
+      "tag": "numerical_exact_vacuum_clock_block",
+      "b": 15,
+      "mu_sel": 1.8891880765550195,
+      "reference": {
+        "lengths": [
+          15,
+          15
+        ],
+        "pins": [
+          false,
+          false
+        ],
+        "N": 30,
+        "V": 1,
+        "L": 31,
+        "J": 0.02,
+        "t": 1.0,
+        "density": 0.967741935483871,
+        "dimension": 6750,
+        "energy": -2.0030907761207395,
+        "free_energy": -2.000000000000011,
+        "alpha": 0.9666666666666667,
+        "frozen_energy": -0.14476496850288267,
+        "dressing_residual": -0.0002919867296726571,
+        "pin_terminal_contacts": [],
+        "eigenpair_residual": 5.950806387659422e-13,
+        "free_state_residual": 2.2614918717340534e-14
+      },
+      "defect": {
+        "lengths": [
+          10,
+          20
+        ],
+        "pins": [
+          false,
+          false
+        ],
+        "N": 30,
+        "V": 1,
+        "L": 31,
+        "J": 0.02,
+        "t": 1.0,
+        "density": 0.967741935483871,
+        "dimension": 6000,
+        "energy": -2.0025753163123277,
+        "free_energy": -2.000000000000011,
+        "alpha": 0.9666666666666667,
+        "frozen_energy": -0.11827144656921273,
+        "dressing_residual": -0.0002887350119784426,
+        "pin_terminal_contacts": [],
+        "eigenpair_residual": 7.229240580991596e-13,
+        "free_state_residual": 2.2614918717340534e-14
+      },
+      "cost": 0.0005154598084118334,
+      "leading_cost": 0.0005122080907176189,
+      "ratio": 1.0063484309466075,
+      "residual_difference": 3.25171769421451e-06
+    },
+    {
+      "tag": "numerical_exact_vacuum_clock_block",
+      "b": 15,
+      "mu_sel": 1.8891880765550195,
+      "reference": {
+        "lengths": [
+          15,
+          15
+        ],
+        "pins": [
+          false,
+          false
+        ],
+        "N": 30,
+        "V": 1,
+        "L": 31,
+        "J": 0.02,
+        "t": 1.0,
+        "density": 0.967741935483871,
+        "dimension": 6750,
+        "energy": -2.0030907761207395,
+        "free_energy": -2.000000000000011,
+        "alpha": 0.9666666666666667,
+        "frozen_energy": -0.14476496850288267,
+        "dressing_residual": -0.0002919867296726571,
+        "pin_terminal_contacts": [],
+        "eigenpair_residual": 5.950806387659422e-13,
+        "free_state_residual": 2.2614918717340534e-14
+      },
+      "defect": {
+        "lengths": [
+          30
+        ],
+        "pins": [
+          false
+        ],
+        "N": 30,
+        "V": 1,
+        "L": 31,
+        "J": 0.02,
+        "t": 1.0,
+        "density": 0.967741935483871,
+        "dimension": 900,
+        "energy": -2.0022423583329383,
+        "free_energy": -2.000000000000011,
+        "alpha": 0.9666666666666667,
+        "frozen_energy": -0.10055057022877079,
+        "dressing_residual": -0.0002983806418376171,
+        "pin_terminal_contacts": [],
+        "eigenpair_residual": 8.910731488897601e-13,
+        "free_state_residual": 2.2614918717340534e-14
+      },
+      "cost": 0.0008484177878012034,
+      "leading_cost": 0.0008548116999661632,
+      "ratio": 0.992520092828382,
+      "residual_difference": -6.3939121649600385e-06
+    },
+    {
+      "tag": "numerical_exact_vacuum_clock_block",
+      "b": 15,
+      "mu_sel": 1.8891880765550195,
+      "reference": {
+        "lengths": [
+          15,
+          15
+        ],
+        "pins": [
+          false,
+          false
+        ],
+        "N": 30,
+        "V": 1,
+        "L": 31,
+        "J": 0.01,
+        "t": 1.0,
+        "density": 0.967741935483871,
+        "dimension": 6750,
+        "energy": -2.001472827628704,
+        "free_energy": -2.000000000000011,
+        "alpha": 0.9666666666666667,
+        "frozen_energy": -0.14476496850288267,
+        "dressing_residual": -7.343293316496393e-05,
+        "pin_terminal_contacts": [],
+        "eigenpair_residual": 1.1126463470414642e-12,
+        "free_state_residual": 2.2614918717340534e-14
+      },
+      "defect": {
+        "lengths": [
+          15,
+          15
+        ],
+        "pins": [
+          true,
+          false
+        ],
+        "N": 30,
+        "V": 1,
+        "L": 31,
+        "J": 0.01,
+        "t": 1.0,
+        "density": 0.967741935483871,
+        "dimension": 450,
+        "energy": -1.9824977596888147,
+        "free_energy": -2.000000000000011,
+        "alpha": 0.9666666666666667,
+        "frozen_energy": 1.8168055923035782,
+        "dressing_residual": -6.021374773818727e-05,
+        "pin_terminal_contacts": [
+          0.9648410983668088
+        ],
+        "eigenpair_residual": 9.080324392049337e-14,
+        "free_state_residual": 2.2614918717340534e-14
+      },
+      "cost": 0.018975067939889234,
+      "leading_cost": 0.018961848754462458,
+      "ratio": 1.0006971464437857,
+      "residual_difference": 1.3219185426776659e-05,
+      "pin_variational_lower_bound": 0.009648410983668088
+    },
+    {
+      "tag": "numerical_exact_vacuum_clock_block",
+      "b": 15,
+      "mu_sel": 1.8891880765550195,
+      "reference": {
+        "lengths": [
+          15,
+          15
+        ],
+        "pins": [
+          false,
+          false
+        ],
+        "N": 30,
+        "V": 1,
+        "L": 31,
+        "J": 0.01,
+        "t": 1.0,
+        "density": 0.967741935483871,
+        "dimension": 6750,
+        "energy": -2.001472827628704,
+        "free_energy": -2.000000000000011,
+        "alpha": 0.9666666666666667,
+        "frozen_energy": -0.14476496850288267,
+        "dressing_residual": -7.343293316496393e-05,
+        "pin_terminal_contacts": [],
+        "eigenpair_residual": 1.1126463470414642e-12,
+        "free_state_residual": 2.2614918717340534e-14
+      },
+      "defect": {
+        "lengths": [
+          14,
+          16
+        ],
+        "pins": [
+          false,
+          false
+        ],
+        "N": 30,
+        "V": 1,
+        "L": 31,
+        "J": 0.01,
+        "t": 1.0,
+        "density": 0.967741935483871,
+        "dimension": 6720,
+        "energy": -2.0014640953856158,
+        "free_energy": -2.000000000000011,
+        "alpha": 0.9666666666666667,
+        "frozen_energy": -0.1438652477253759,
+        "dressing_residual": -7.339799092602418e-05,
+        "pin_terminal_contacts": [],
+        "eigenpair_residual": 2.567790647208389e-12,
+        "free_state_residual": 2.2614918717340534e-14
+      },
+      "cost": 8.732243088171998e-06,
+      "leading_cost": 8.697300849232149e-06,
+      "ratio": 1.0040175957513227,
+      "residual_difference": 3.494223893975128e-08
+    },
+    {
+      "tag": "numerical_exact_vacuum_clock_block",
+      "b": 15,
+      "mu_sel": 1.8891880765550195,
+      "reference": {
+        "lengths": [
+          15,
+          15
+        ],
+        "pins": [
+          false,
+          false
+        ],
+        "N": 30,
+        "V": 1,
+        "L": 31,
+        "J": 0.01,
+        "t": 1.0,
+        "density": 0.967741935483871,
+        "dimension": 6750,
+        "energy": -2.001472827628704,
+        "free_energy": -2.000000000000011,
+        "alpha": 0.9666666666666667,
+        "frozen_energy": -0.14476496850288267,
+        "dressing_residual": -7.343293316496393e-05,
+        "pin_terminal_contacts": [],
+        "eigenpair_residual": 1.1126463470414642e-12,
+        "free_state_residual": 2.2614918717340534e-14
+      },
+      "defect": {
+        "lengths": [
+          10,
+          20
+        ],
+        "pins": [
+          false,
+          false
+        ],
+        "N": 30,
+        "V": 1,
+        "L": 31,
+        "J": 0.01,
+        "t": 1.0,
+        "density": 0.967741935483871,
+        "dimension": 6000,
+        "energy": -2.0012159927648625,
+        "free_energy": -2.000000000000011,
+        "alpha": 0.9666666666666667,
+        "frozen_energy": -0.11827144656921273,
+        "dressing_residual": -7.270211468234696e-05,
+        "pin_terminal_contacts": [],
+        "eigenpair_residual": 3.199088038198272e-12,
+        "free_state_residual": 2.2614918717340534e-14
+      },
+      "cost": 0.0002568348638414264,
+      "leading_cost": 0.00025610404535880943,
+      "ratio": 1.0028535999171473,
+      "residual_difference": 7.308184826169701e-07
+    },
+    {
+      "tag": "numerical_exact_vacuum_clock_block",
+      "b": 15,
+      "mu_sel": 1.8891880765550195,
+      "reference": {
+        "lengths": [
+          15,
+          15
+        ],
+        "pins": [
+          false,
+          false
+        ],
+        "N": 30,
+        "V": 1,
+        "L": 31,
+        "J": 0.01,
+        "t": 1.0,
+        "density": 0.967741935483871,
+        "dimension": 6750,
+        "energy": -2.001472827628704,
+        "free_energy": -2.000000000000011,
+        "alpha": 0.9666666666666667,
+        "frozen_energy": -0.14476496850288267,
+        "dressing_residual": -7.343293316496393e-05,
+        "pin_terminal_contacts": [],
+        "eigenpair_residual": 1.1126463470414642e-12,
+        "free_state_residual": 2.2614918717340534e-14
+      },
+      "defect": {
+        "lengths": [
+          30
+        ],
+        "pins": [
+          false
+        ],
+        "N": 30,
+        "V": 1,
+        "L": 31,
+        "J": 0.01,
+        "t": 1.0,
+        "density": 0.967741935483871,
+        "dimension": 900,
+        "energy": -2.001046661787148,
+        "free_energy": -2.000000000000011,
+        "alpha": 0.9666666666666667,
+        "frozen_energy": -0.10055057022877079,
+        "dressing_residual": -7.467294159196468e-05,
+        "pin_terminal_contacts": [],
+        "eigenpair_residual": 9.55372407170139e-13,
+        "free_state_residual": 2.2614918717340534e-14
+      },
+      "cost": 0.00042616584155608095,
+      "leading_cost": 0.0004274058499830816,
+      "ratio": 0.9970987565400667,
+      "residual_difference": -1.2400084270007506e-06
+    },
+    {
+      "tag": "numerical_exact_vacuum_clock_block",
+      "b": 15,
+      "mu_sel": 1.8891880765550195,
+      "reference": {
+        "lengths": [
+          15,
+          15
+        ],
+        "pins": [
+          false,
+          false
+        ],
+        "N": 30,
+        "V": 1,
+        "L": 31,
+        "J": 0.005,
+        "t": 1.0,
+        "density": 0.967741935483871,
+        "dimension": 6750,
+        "energy": -2.0007181131449556,
+        "free_energy": -2.000000000000011,
+        "alpha": 0.9666666666666667,
+        "frozen_energy": -0.14476496850288267,
+        "dressing_residual": -1.8415797180588067e-05,
+        "pin_terminal_contacts": [],
+        "eigenpair_residual": 3.640876400329669e-12,
+        "free_state_residual": 2.2614918717340534e-14
+      },
+      "defect": {
+        "lengths": [
+          15,
+          15
+        ],
+        "pins": [
+          true,
+          false
+        ],
+        "N": 30,
+        "V": 1,
+        "L": 31,
+        "J": 0.005,
+        "t": 1.0,
+        "density": 0.967741935483871,
+        "dimension": 450,
+        "energy": -1.9912339925129836,
+        "free_energy": -2.000000000000011,
+        "alpha": 0.9666666666666667,
+        "frozen_energy": 1.8168055923035782,
+        "dressing_residual": -1.5219542439801753e-05,
+        "pin_terminal_contacts": [
+          0.9657569394650594
+        ],
+        "eigenpair_residual": 6.083871754082074e-13,
+        "free_state_residual": 2.2614918717340534e-14
+      },
+      "cost": 0.009484120631972015,
+      "leading_cost": 0.009480924377231229,
+      "ratio": 1.0003371248006643,
+      "residual_difference": 3.196254740786314e-06,
+      "pin_variational_lower_bound": 0.0048287846973252965
+    },
+    {
+      "tag": "numerical_exact_vacuum_clock_block",
+      "b": 15,
+      "mu_sel": 1.8891880765550195,
+      "reference": {
+        "lengths": [
+          15,
+          15
+        ],
+        "pins": [
+          false,
+          false
+        ],
+        "N": 30,
+        "V": 1,
+        "L": 31,
+        "J": 0.005,
+        "t": 1.0,
+        "density": 0.967741935483871,
+        "dimension": 6750,
+        "energy": -2.0007181131449556,
+        "free_energy": -2.000000000000011,
+        "alpha": 0.9666666666666667,
+        "frozen_energy": -0.14476496850288267,
+        "dressing_residual": -1.8415797180588067e-05,
+        "pin_terminal_contacts": [],
+        "eigenpair_residual": 3.640876400329669e-12,
+        "free_state_residual": 2.2614918717340534e-14
+      },
+      "defect": {
+        "lengths": [
+          14,
+          16
+        ],
+        "pins": [
+          false,
+          false
+        ],
+        "N": 30,
+        "V": 1,
+        "L": 31,
+        "J": 0.005,
+        "t": 1.0,
+        "density": 0.967741935483871,
+        "dimension": 6720,
+        "energy": -2.00071375622819,
+        "free_energy": -2.000000000000011,
+        "alpha": 0.9666666666666667,
+        "frozen_energy": -0.1438652477253759,
+        "dressing_residual": -1.8407530839613167e-05,
+        "pin_terminal_contacts": [],
+        "eigenpair_residual": 1.8463395081367557e-12,
+        "free_state_residual": 2.2614918717340534e-14
+      },
+      "cost": 4.3569167655910235e-06,
+      "leading_cost": 4.348650424616074e-06,
+      "ratio": 1.001900898018419,
+      "residual_difference": 8.266340974900054e-09
+    },
+    {
+      "tag": "numerical_exact_vacuum_clock_block",
+      "b": 15,
+      "mu_sel": 1.8891880765550195,
+      "reference": {
+        "lengths": [
+          15,
+          15
+        ],
+        "pins": [
+          false,
+          false
+        ],
+        "N": 30,
+        "V": 1,
+        "L": 31,
+        "J": 0.005,
+        "t": 1.0,
+        "density": 0.967741935483871,
+        "dimension": 6750,
+        "energy": -2.0007181131449556,
+        "free_energy": -2.000000000000011,
+        "alpha": 0.9666666666666667,
+        "frozen_energy": -0.14476496850288267,
+        "dressing_residual": -1.8415797180588067e-05,
+        "pin_terminal_contacts": [],
+        "eigenpair_residual": 3.640876400329669e-12,
+        "free_state_residual": 2.2614918717340534e-14
+      },
+      "defect": {
+        "lengths": [
+          10,
+          20
+        ],
+        "pins": [
+          false,
+          false
+        ],
+        "N": 30,
+        "V": 1,
+        "L": 31,
+        "J": 0.005,
+        "t": 1.0,
+        "density": 0.967741935483871,
+        "dimension": 6000,
+        "energy": -2.000589889643309,
+        "free_energy": -2.000000000000011,
+        "alpha": 0.9666666666666667,
+        "frozen_energy": -0.11827144656921273,
+        "dressing_residual": -1.8244318213341253e-05,
+        "pin_terminal_contacts": [],
+        "eigenpair_residual": 2.194149520487269e-12,
+        "free_state_residual": 2.2614918717340534e-14
+      },
+      "cost": 0.00012822350164665153,
+      "leading_cost": 0.00012805202267940471,
+      "ratio": 1.0013391351706808,
+      "residual_difference": 1.7147896724681398e-07
+    },
+    {
+      "tag": "numerical_exact_vacuum_clock_block",
+      "b": 15,
+      "mu_sel": 1.8891880765550195,
+      "reference": {
+        "lengths": [
+          15,
+          15
+        ],
+        "pins": [
+          false,
+          false
+        ],
+        "N": 30,
+        "V": 1,
+        "L": 31,
+        "J": 0.005,
+        "t": 1.0,
+        "density": 0.967741935483871,
+        "dimension": 6750,
+        "energy": -2.0007181131449556,
+        "free_energy": -2.000000000000011,
+        "alpha": 0.9666666666666667,
+        "frozen_energy": -0.14476496850288267,
+        "dressing_residual": -1.8415797180588067e-05,
+        "pin_terminal_contacts": [],
+        "eigenpair_residual": 3.640876400329669e-12,
+        "free_state_residual": 2.2614918717340534e-14
+      },
+      "defect": {
+        "lengths": [
+          30
+        ],
+        "pins": [
+          false
+        ],
+        "N": 30,
+        "V": 1,
+        "L": 31,
+        "J": 0.005,
+        "t": 1.0,
+        "density": 0.967741935483871,
+        "dimension": 900,
+        "energy": -2.000504677519698,
+        "free_energy": -2.000000000000011,
+        "alpha": 0.9666666666666667,
+        "frozen_energy": -0.10055057022877079,
+        "dressing_residual": -1.8683096914465897e-05,
+        "pin_terminal_contacts": [],
+        "eigenpair_residual": 5.398803204607164e-13,
+        "free_state_residual": 2.2614918717340534e-14
+      },
+      "cost": 0.00021343562525766302,
+      "leading_cost": 0.0002137029249915408,
+      "ratio": 0.9987491994604737,
+      "residual_difference": -2.6729973387782996e-07
+    }
+  ],
+  "scalar": [
+    {
+      "tag": "numerical_scalar_contact_surrogate",
+      "N": 6,
+      "L": 12,
+      "dimension": 462,
+      "J": 0.04,
+      "t": 1,
+      "name": "pin",
+      "alpha": 0.29266384402395124,
+      "cost": 0.022448239036314988,
+      "leading_cost": 0.02296323122599346,
+      "ratio": 0.9775731827716161,
+      "eigenpair_residual": 4.7366301691781124e-15,
+      "reference_residual": 2.7438191397483347e-15,
+      "relaxation_over_J2": 0.3218701185490457
+    },
+    {
+      "tag": "numerical_scalar_contact_surrogate",
+      "N": 6,
+      "L": 12,
+      "dimension": 462,
+      "J": 0.04,
+      "t": 1,
+      "name": "pin_pair",
+      "alpha": 0.29266384402395124,
+      "cost": 0.04502694105073424,
+      "leading_cost": 0.04592646245198692,
+      "ratio": 0.9804138757215827,
+      "eigenpair_residual": 5.8065474703693156e-15,
+      "reference_residual": 2.7438191397483347e-15,
+      "relaxation_over_J2": 0.5622008757829277
+    },
+    {
+      "tag": "numerical_scalar_contact_surrogate",
+      "N": 6,
+      "L": 12,
+      "dimension": 462,
+      "J": 0.04,
+      "t": 1,
+      "name": "wrong_14_16",
+      "alpha": 0.29266384402395124,
+      "cost": 1.0532928592432711e-05,
+      "leading_cost": 1.053262965173386e-05,
+      "ratio": 1.0000283823421818,
+      "eigenpair_residual": 1.4597079597502121e-15,
+      "reference_residual": 2.7438191397483347e-15,
+      "relaxation_over_J2": -1.8683793678139978e-07
+    },
+    {
+      "tag": "numerical_scalar_contact_surrogate",
+      "N": 6,
+      "L": 12,
+      "dimension": 462,
+      "J": 0.04,
+      "t": 1,
+      "name": "wrong_60",
+      "alpha": 0.29266384402395124,
+      "cost": 0.0021188255729329697,
+      "leading_cost": 0.0021232157098918162,
+      "ratio": 0.9979323170328886,
+      "eigenpair_residual": 8.51758679746861e-15,
+      "reference_residual": 2.7438191397483347e-15,
+      "relaxation_over_J2": 0.002743835599279098
+    },
+    {
+      "tag": "numerical_scalar_contact_surrogate",
+      "N": 6,
+      "L": 12,
+      "dimension": 462,
+      "J": 0.02,
+      "t": 1,
+      "name": "pin",
+      "alpha": 0.29266384402395124,
+      "cost": 0.011352049862368041,
+      "leading_cost": 0.01148161561299673,
+      "ratio": 0.9887153729060546,
+      "eigenpair_residual": 8.811246761178967e-15,
+      "reference_residual": 2.360771516944126e-15,
+      "relaxation_over_J2": 0.32391437657172323
+    },
+    {
+      "tag": "numerical_scalar_contact_surrogate",
+      "N": 6,
+      "L": 12,
+      "dimension": 462,
+      "J": 0.02,
+      "t": 1,
+      "name": "pin_pair",
+      "alpha": 0.29266384402395124,
+      "cost": 0.022736892814317677,
+      "leading_cost": 0.02296323122599346,
+      "ratio": 0.9901434423819424,
+      "eigenpair_residual": 5.834774420064141e-15,
+      "reference_residual": 2.360771516944126e-15,
+      "relaxation_over_J2": 0.5658460291894581
+    },
+    {
+      "tag": "numerical_scalar_contact_surrogate",
+      "N": 6,
+      "L": 12,
+      "dimension": 462,
+      "J": 0.02,
+      "t": 1,
+      "name": "wrong_14_16",
+      "alpha": 0.29266384402395124,
+      "cost": 5.266389560887319e-06,
+      "leading_cost": 5.26631482586693e-06,
+      "ratio": 1.000014191141787,
+      "eigenpair_residual": 1.6520778277994242e-15,
+      "reference_residual": 2.360771516944126e-15,
+      "relaxation_over_J2": -1.868375509716566e-07
+    },
+    {
+      "tag": "numerical_scalar_contact_surrogate",
+      "N": 6,
+      "L": 12,
+      "dimension": 462,
+      "J": 0.02,
+      "t": 1,
+      "name": "wrong_60",
+      "alpha": 0.29266384402395124,
+      "cost": 0.0010605097079947612,
+      "leading_cost": 0.0010616078549459081,
+      "ratio": 0.9989655813622415,
+      "eigenpair_residual": 6.494262497943269e-15,
+      "reference_residual": 2.360771516944126e-15,
+      "relaxation_over_J2": 0.002745367377867346
+    },
+    {
+      "tag": "numerical_scalar_contact_surrogate",
+      "N": 6,
+      "L": 12,
+      "dimension": 462,
+      "J": 0.01,
+      "t": 1,
+      "name": "pin",
+      "alpha": 0.29266384402395124,
+      "cost": 0.005708314568614092,
+      "leading_cost": 0.005740807806498365,
+      "ratio": 0.9943399537174034,
+      "eigenpair_residual": 1.048605300914268e-14,
+      "reference_residual": 2.2464410310887804e-15,
+      "relaxation_over_J2": 0.324932378842728
+    },
+    {
+      "tag": "numerical_scalar_contact_surrogate",
+      "N": 6,
+      "L": 12,
+      "dimension": 462,
+      "J": 0.01,
+      "t": 1,
+      "name": "pin_pair",
+      "alpha": 0.29266384402395124,
+      "cost": 0.011424847466774857,
+      "leading_cost": 0.01148161561299673,
+      "ratio": 0.9950557353481148,
+      "eigenpair_residual": 6.123445361714013e-15,
+      "reference_residual": 2.2464410310887804e-15,
+      "relaxation_over_J2": 0.5676814622187359
+    },
+    {
+      "tag": "numerical_scalar_contact_surrogate",
+      "N": 6,
+      "L": 12,
+      "dimension": 462,
+      "J": 0.01,
+      "t": 1,
+      "name": "wrong_14_16",
+      "alpha": 0.29266384402395124,
+      "cost": 2.633176097610601e-06,
+      "leading_cost": 2.633157412933465e-06,
+      "ratio": 1.000007095921058,
+      "eigenpair_residual": 2.712220668798796e-15,
+      "reference_residual": 2.2464410310887804e-15,
+      "relaxation_over_J2": -1.8684677135939184e-07
+    },
+    {
+      "tag": "numerical_scalar_contact_surrogate",
+      "N": 6,
+      "L": 12,
+      "dimension": 462,
+      "J": 0.01,
+      "t": 1,
+      "name": "wrong_60",
+      "alpha": 0.29266384402395124,
+      "cost": 0.0005305293141812939,
+      "leading_cost": 0.0005308039274729541,
+      "ratio": 0.9994826464586132,
+      "eigenpair_residual": 5.861045563330472e-15,
+      "reference_residual": 2.2464410310887804e-15,
+      "relaxation_over_J2": 0.0027461329166016384
+    },
+    {
+      "tag": "numerical_scalar_contact_surrogate",
+      "N": 8,
+      "L": 16,
+      "dimension": 6435,
+      "J": 0.04,
+      "t": 1,
+      "name": "pin",
+      "alpha": 0.2947332627414986,
+      "cost": 0.022588869236358278,
+      "leading_cost": 0.023125603659366344,
+      "ratio": 0.9767904686548289,
+      "eigenpair_residual": 1.238476937568146e-13,
+      "reference_residual": 4.896688909475252e-15,
+      "relaxation_over_J2": 0.3354590143800416
+    },
+    {
+      "tag": "numerical_scalar_contact_surrogate",
+      "N": 8,
+      "L": 16,
+      "dimension": 6435,
+      "J": 0.04,
+      "t": 1,
+      "name": "pin_pair",
+      "alpha": 0.2947332627414986,
+      "cost": 0.045269179453232056,
+      "leading_cost": 0.04625120731873267,
+      "ratio": 0.9787675193269415,
+      "eigenpair_residual": 1.1152340370299985e-13,
+      "reference_residual": 4.896688909475252e-15,
+      "relaxation_over_J2": 0.6137674159378825
+    },
+    {
+      "tag": "numerical_scalar_contact_surrogate",
+      "N": 8,
+      "L": 16,
+      "dimension": 6435,
+      "J": 0.04,
+      "t": 1,
+      "name": "wrong_14_16",
+      "alpha": 0.2947332627414986,
+      "cost": 1.0607402202822414e-05,
+      "leading_cost": 1.0607105612435398e-05,
+      "ratio": 1.0000279614814684,
+      "eigenpair_residual": 2.2779564133742073e-15,
+      "reference_residual": 4.896688909475252e-15,
+      "relaxation_over_J2": -1.853689918847757e-07
+    },
+    {
+      "tag": "numerical_scalar_contact_surrogate",
+      "N": 8,
+      "L": 16,
+      "dimension": 6435,
+      "J": 0.04,
+      "t": 1,
+      "name": "wrong_60",
+      "alpha": 0.2947332627414986,
+      "cost": 0.0021336490923236084,
+      "leading_cost": 0.0021382289150456467,
+      "ratio": 0.9978581232861401,
+      "eigenpair_residual": 2.580111549895939e-14,
+      "reference_residual": 4.896688909475252e-15,
+      "relaxation_over_J2": 0.0028623892012739254
+    },
+    {
+      "tag": "numerical_scalar_contact_surrogate",
+      "N": 8,
+      "L": 16,
+      "dimension": 6435,
+      "J": 0.02,
+      "t": 1,
+      "name": "pin",
+      "alpha": 0.2947332627414986,
+      "cost": 0.011427732937903556,
+      "leading_cost": 0.011562801829683172,
+      "ratio": 0.9883186710479741,
+      "eigenpair_residual": 7.173147271165105e-14,
+      "reference_residual": 6.102827492321134e-15,
+      "relaxation_over_J2": 0.3376722294490394
+    },
+    {
+      "tag": "numerical_scalar_contact_surrogate",
+      "N": 8,
+      "L": 16,
+      "dimension": 6435,
+      "J": 0.02,
+      "t": 1,
+      "name": "pin_pair",
+      "alpha": 0.2947332627414986,
+      "cost": 0.0228783518524871,
+      "leading_cost": 0.023125603659366334,
+      "ratio": 0.9893083090707087,
+      "eigenpair_residual": 6.36997890516818e-14,
+      "reference_residual": 6.102827492321134e-15,
+      "relaxation_over_J2": 0.618129517198085
+    },
+    {
+      "tag": "numerical_scalar_contact_surrogate",
+      "N": 8,
+      "L": 16,
+      "dimension": 6435,
+      "J": 0.02,
+      "t": 1,
+      "name": "wrong_14_16",
+      "alpha": 0.2947332627414986,
+      "cost": 5.3036269527240165e-06,
+      "leading_cost": 5.303552806217699e-06,
+      "ratio": 1.0000139805351294,
+      "eigenpair_residual": 6.283464203624754e-15,
+      "reference_residual": 6.102827492321134e-15,
+      "relaxation_over_J2": -1.8536626579393825e-07
+    },
+    {
+      "tag": "numerical_scalar_contact_surrogate",
+      "N": 8,
+      "L": 16,
+      "dimension": 6435,
+      "J": 0.02,
+      "t": 1,
+      "name": "wrong_60",
+      "alpha": 0.2947332627414986,
+      "cost": 0.0010679688380808017,
+      "leading_cost": 0.0010691144575228234,
+      "ratio": 0.9989284407913853,
+      "eigenpair_residual": 1.2094819971502689e-14,
+      "reference_residual": 6.102827492321134e-15,
+      "relaxation_over_J2": 0.0028640486050542178
+    },
+    {
+      "tag": "numerical_scalar_contact_surrogate",
+      "N": 8,
+      "L": 16,
+      "dimension": 6435,
+      "J": 0.01,
+      "t": 1,
+      "name": "pin",
+      "alpha": 0.2947332627414986,
+      "cost": 0.005747523498367713,
+      "leading_cost": 0.005781400914841586,
+      "ratio": 0.9941402755192248,
+      "eigenpair_residual": 4.3470000632195985e-14,
+      "reference_residual": 3.4013226215567296e-15,
+      "relaxation_over_J2": 0.3387741647387348
+    },
+    {
+      "tag": "numerical_scalar_contact_surrogate",
+      "N": 8,
+      "L": 16,
+      "dimension": 6435,
+      "J": 0.01,
+      "t": 1,
+      "name": "pin_pair",
+      "alpha": 0.2947332627414986,
+      "cost": 0.011500769256567622,
+      "leading_cost": 0.011562801829683167,
+      "ratio": 0.9946351607482973,
+      "eigenpair_residual": 3.405550934425926e-14,
+      "reference_residual": 3.4013226215567296e-15,
+      "relaxation_over_J2": 0.6203257311554466
+    },
+    {
+      "tag": "numerical_scalar_contact_surrogate",
+      "N": 8,
+      "L": 16,
+      "dimension": 6435,
+      "J": 0.01,
+      "t": 1,
+      "name": "wrong_14_16",
+      "alpha": 0.2947332627414986,
+      "cost": 2.6517949383020323e-06,
+      "leading_cost": 2.6517764031088495e-06,
+      "ratio": 1.0000069897270227,
+      "eigenpair_residual": 2.1883019623917148e-15,
+      "reference_residual": 3.4013226215567296e-15,
+      "relaxation_over_J2": -1.8535193182806636e-07
+    },
+    {
+      "tag": "numerical_scalar_contact_surrogate",
+      "N": 8,
+      "L": 16,
+      "dimension": 6435,
+      "J": 0.01,
+      "t": 1,
+      "name": "wrong_60",
+      "alpha": 0.2947332627414986,
+      "cost": 0.0005342707409798919,
+      "leading_cost": 0.0005345572287614117,
+      "ratio": 0.9994640652747628,
+      "eigenpair_residual": 1.1862214432740007e-14,
+      "reference_residual": 3.4013226215567296e-15,
+      "relaxation_over_J2": 0.0028648778151976924
+    }
+  ]
+}
