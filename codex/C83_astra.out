@@ -1,0 +1,10 @@
+Two vacancy colors are necessary for this grammar-preserving pair-penalty repair, giving d=14.
+
+- [Proved, computer-assisted] Certified n=13 with 26 simple Fermi points, distinct centers, all 351 pair-sum margins positive, exact U(1), and finite-g/K budgets including zero-port splitting.
+- [Numerical] Colored illegal-material weight falls as K^-2 through dimension 4,608. The uncolored lift retains a plateau.
+- [Proved] F3 transfers for frozen marker-sector selection. F4 transfers with mobile penalty scale JK.
+- [Conditional] The candidate has c=14. Mobile matching, dressed-defect stability and infrared identification remain assumed.
+
+Written [RESULT.md](<<local> Dropbox/Jonah Kudler-Flam/Claude/Projects/Modular c-Theorem/notes/cd_conjecture/codex/work_C83/RESULT.md>), [PROOF.md](<<local> Dropbox/Jonah Kudler-Flam/Claude/Projects/Modular c-Theorem/notes/cd_conjecture/codex/work_C83/PROOF.md>) and [PROGRESS.md](<<local> Dropbox/Jonah Kudler-Flam/Claude/Projects/Modular c-Theorem/notes/cd_conjecture/codex/work_C83/PROGRESS.md>), with reproducible code and certificates. All changes stayed inside `work_C83`.
+
+[gpt_solve: backend=codex model=gpt-6-astra effort=high transcript=20261028T234944-81289]

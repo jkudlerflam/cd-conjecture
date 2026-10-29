@@ -81,7 +81,7 @@ Verification done since the referee report (`contrib/verify_C44/`, REPORT §9.28
 
 ## Smallest candidate so far (2026-10-28, updated)
 
-[proved finite ingredients; conditional infrared conclusion; not yet refereed] Astra C80 reduced the alphabet further to 12 letters with a certified n = 12 member (24 simple Fermi points, positive pair-sum margins): predicted c = 12 > 11 for the frozen chain at d = 12 (REPORT §9.43). For a mobile version, C82 repaired the vacancy lift with two coloured vacancies; on the 15-letter core this gives a certified conditional candidate c = 17 > 16 at d = 17, and C83 is applying the same repair to the 12-letter bond. Earlier steps follow.
+[proved finite ingredients; conditional infrared conclusion; not yet refereed] Astra C80 reduced the alphabet further to 12 letters with a certified n = 12 member (24 simple Fermi points, positive pair-sum margins): predicted c = 12 > 11 for the frozen chain at d = 12 (REPORT §9.43). For a mobile version, C82 repaired the vacancy lift with two coloured vacancies; on the 15-letter core this gives a certified conditional candidate c = 17 > 16 at d = 17, and C83 applied it to the 12-letter bond: two vacancy colours, d = 14, with a certified n = 13 member, giving the mobile conditional candidate c = 14 > 13 (REPORT §9.44). Earlier steps follow.
 
 ### d = 15 (C75)
 

@@ -1,0 +1,29 @@
+{
+  "n": 13,
+  "material_alphabet": 12,
+  "vacancy_colors": 2,
+  "dimension": 14,
+  "cell_length": 14,
+  "g_power": -256,
+  "K_min_power": 2304,
+  "lambda_power": -576,
+  "loop_eta_power": -74,
+  "field_normalized_power": -121,
+  "beta_denominator": "1057465916474394622835156134815119148592575",
+  "Eunit_lower_log10": -243.59443045868383,
+  "metric_trace_log10": 35.63457725334001,
+  "conversion_error_log10": -32.72824442621004,
+  "penalty_including_zero_port_error_log10": -39.95296432214536,
+  "two_cell_lambda_error_log10": -49.58592418339276,
+  "budget_power": -35,
+  "sum_below_one_eighth_budget": true,
+  "selector_density_gap_lower": 3.880059217048131e-05,
+  "selected_density_upper": -0.0058573682214068425,
+  "mu_sel": [
+    1.8742920463679156,
+    1.8742920463679156
+  ],
+  "vacuum_gap_lower": 0.12920428618240948,
+  "frozen_F3_gamma_lower_power": -16,
+  "frozen_F3_port_bound_pass": true
+}
