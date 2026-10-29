@@ -1,0 +1,35 @@
+python3 scan.py --family kk --par x=0.25 y=0.25 --Ls 4 8 12 --out data/typhon/families_d4.jsonl
+python3 scan.py --family kk --par x=0.5 y=0.5 --Ls 4 8 12 --out data/typhon/families_d4.jsonl
+python3 scan.py --family kk --par x=0.75 y=0.75 --Ls 4 8 12 --out data/typhon/families_d4.jsonl
+python3 scan.py --family kk --par x=1.0 y=1.0 --Ls 4 8 12 --out data/typhon/families_d4.jsonl
+python3 scan.py --family kk --par x=0.0 y=1.0 --Ls 4 8 12 --out data/typhon/families_d4.jsonl
+python3 scan.py --family kk --par x=0.25 y=0.75 --Ls 4 8 12 --out data/typhon/families_d4.jsonl
+python3 scan.py --family kk --par x=0.5 y=1.0 --Ls 4 8 12 --out data/typhon/families_d4.jsonl
+python3 scan.py --family kk --par x=0.0 y=0.5 --Ls 4 8 12 --out data/typhon/families_d4.jsonl
+python3 scan.py --family kk --par x=0.25 y=0.5 --Ls 4 8 12 --out data/typhon/families_d4.jsonl
+python3 scan.py --family twochain --par lam=0.5 mode=zz --Ls 4 8 12 --out data/typhon/families_d4.jsonl
+python3 scan.py --family twochain --par lam=1.0 mode=zz --Ls 4 8 12 --out data/typhon/families_d4.jsonl
+python3 scan.py --family twochain --par lam=2.0 mode=zz --Ls 4 8 12 --out data/typhon/families_d4.jsonl
+python3 scan.py --family twochain --par lam=4.0 mode=zz --Ls 4 8 12 --out data/typhon/families_d4.jsonl
+python3 scan.py --family twochain --par lam=0.25 mode=cross --Ls 4 8 12 --out data/typhon/families_d4.jsonl
+python3 scan.py --family twochain --par lam=0.5 mode=cross --Ls 4 8 12 --out data/typhon/families_d4.jsonl
+python3 scan.py --family twochain --par lam=1.0 mode=cross --Ls 4 8 12 --out data/typhon/families_d4.jsonl
+python3 scan.py --family twochain --par lam=0.5 mode=rung --Ls 4 8 12 --out data/typhon/families_d4.jsonl
+python3 scan.py --family twochain --par lam=-0.5 mode=rung --Ls 4 8 12 --out data/typhon/families_d4.jsonl
+python3 canonical.py --family hubbard --par U=0 --dens 1.0 --Ls 4 8 12 --out data/typhon/families_d4.jsonl
+python3 canonical.py --family hubbard --par U=0 --dens 0.5 --Ls 4 8 12 --out data/typhon/families_d4.jsonl
+python3 canonical.py --family hubbard --par U=2 --dens 1.0 --Ls 4 8 12 --out data/typhon/families_d4.jsonl
+python3 canonical.py --family hubbard --par U=2 --dens 0.5 --Ls 4 8 12 --out data/typhon/families_d4.jsonl
+python3 canonical.py --family hubbard --par U=4 --dens 1.0 --Ls 4 8 12 --out data/typhon/families_d4.jsonl
+python3 canonical.py --family hubbard --par U=4 --dens 0.5 --Ls 4 8 12 --out data/typhon/families_d4.jsonl
+python3 canonical.py --family hubbard --par U=8 --dens 1.0 --Ls 4 8 12 --out data/typhon/families_d4.jsonl
+python3 canonical.py --family hubbard --par U=8 --dens 0.5 --Ls 4 8 12 --out data/typhon/families_d4.jsonl
+python3 canonical.py --family gperm --par 'par=[0,0,0,1]' sign=1 --dens 0.25 0.25 0.25 --Ls 4 8 12 --out data/typhon/families_d4.jsonl
+python3 canonical.py --family gperm --par 'par=[0,1,1,1]' sign=-1 --dens 0.25 0.25 0.25 --Ls 4 8 12 --out data/typhon/families_d4.jsonl
+python3 canonical.py --family gperm --par 'par=[0,0,1,1]' sign=1 --dens 0.25 0.25 0.25 --Ls 4 8 12 --out data/typhon/families_d4.jsonl
+python3 canonical.py --family gperm --par 'par=[0,0,0,1]' sign=1 --dens 0.1667 0.1667 0.5 --Ls 6 12 --out data/typhon/families_d4.jsonl
+python3 canonical.py --family gperm --par 'par=[0,0,0,1]' sign=1 --dens 0.3333 0.3333 0.0 --Ls 6 12 --out data/typhon/families_d4.jsonl
+python3 canonical.py --family tj --dens 0.6667 --Ls 6 9 12 15 --out data/typhon/families_d3.jsonl
+python3 canonical.py --family tj --dens 0.5333 --Ls 15 --out data/typhon/families_d3.jsonl
+python3 canonical.py --family tj --dens 0.8 --Ls 6 9 12 15 --out data/typhon/families_d3.jsonl
+python3 scan.py --family blbq --par theta=0.7853981634 --Ls 6 9 12 15 --out data/typhon/families_d3.jsonl

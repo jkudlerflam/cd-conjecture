@@ -1,0 +1,32 @@
+python3 optimize_random.py --d 2 --Ls 8 10 12 14 16 --starts 10 --evals 500 --seed 401 --init mix --noise 0.3 --out data/typhon/opt2_d2_s401.jsonl
+python3 optimize_random.py --d 2 --Ls 8 10 12 14 16 --starts 10 --evals 500 --seed 402 --init mix --noise 0.3 --out data/typhon/opt2_d2_s402.jsonl
+python3 optimize_random.py --d 2 --Ls 8 10 12 14 16 --starts 10 --evals 500 --seed 403 --init mix --noise 0.3 --out data/typhon/opt2_d2_s403.jsonl
+python3 optimize_random.py --d 2 --Ls 8 10 12 14 16 --starts 10 --evals 500 --seed 404 --init mix --noise 0.3 --out data/typhon/opt2_d2_s404.jsonl
+python3 optimize_random.py --d 2 --Ls 8 10 12 14 16 --starts 10 --evals 500 --seed 405 --init mix --noise 0.3 --out data/typhon/opt2_d2_s405.jsonl
+python3 optimize_random.py --d 2 --Ls 8 10 12 14 16 --starts 10 --evals 500 --seed 406 --init mix --noise 0.3 --out data/typhon/opt2_d2_s406.jsonl
+python3 optimize_random.py --d 2 --Ls 8 10 12 14 16 --starts 10 --evals 500 --seed 407 --init mix --noise 0.3 --out data/typhon/opt2_d2_s407.jsonl
+python3 optimize_random.py --d 2 --Ls 8 10 12 14 16 --starts 10 --evals 500 --seed 408 --init mix --noise 0.3 --out data/typhon/opt2_d2_s408.jsonl
+python3 optimize_random.py --d 2 --Ls 8 10 12 14 16 --starts 10 --evals 500 --seed 409 --init mix --noise 0.3 --out data/typhon/opt2_d2_s409.jsonl
+python3 optimize_random.py --d 2 --Ls 8 10 12 14 16 --starts 10 --evals 500 --seed 410 --init mix --noise 0.3 --out data/typhon/opt2_d2_s410.jsonl
+python3 optimize_random.py --d 2 --Ls 8 10 12 14 16 --starts 10 --evals 500 --seed 411 --init mix --noise 0.3 --out data/typhon/opt2_d2_s411.jsonl
+python3 optimize_random.py --d 2 --Ls 8 10 12 14 16 --starts 10 --evals 500 --seed 412 --init mix --noise 0.3 --out data/typhon/opt2_d2_s412.jsonl
+python3 optimize_random.py --d 2 --Ls 8 10 12 14 16 --starts 10 --evals 500 --seed 421 --init heis --noise 0.5 --out data/typhon/opt2_d2_heis_s421.jsonl
+python3 optimize_random.py --d 2 --Ls 8 10 12 14 16 --starts 10 --evals 500 --seed 422 --init heis --noise 0.5 --out data/typhon/opt2_d2_heis_s422.jsonl
+python3 optimize_random.py --d 2 --Ls 8 10 12 14 16 --starts 10 --evals 500 --seed 423 --init heis --noise 0.5 --out data/typhon/opt2_d2_heis_s423.jsonl
+python3 optimize_random.py --d 2 --Ls 8 10 12 14 16 --starts 10 --evals 500 --seed 424 --init heis --noise 0.5 --out data/typhon/opt2_d2_heis_s424.jsonl
+python3 optimize_random.py --d 2 --Ls 8 10 12 14 16 --starts 10 --evals 500 --seed 431 --init mix --noise 0.3 --complex --out data/typhon/opt2_d2_cplx_s431.jsonl
+python3 optimize_random.py --d 2 --Ls 8 10 12 14 16 --starts 10 --evals 500 --seed 432 --init mix --noise 0.3 --complex --out data/typhon/opt2_d2_cplx_s432.jsonl
+python3 optimize_random.py --d 3 --Ls 6 8 10 12 --starts 6 --evals 250 --seed 501 --init mix --noise 0.3 --out data/typhon/opt2_d3_s501.jsonl
+python3 optimize_random.py --d 3 --Ls 6 8 10 12 --starts 6 --evals 250 --seed 502 --init mix --noise 0.3 --out data/typhon/opt2_d3_s502.jsonl
+python3 optimize_random.py --d 3 --Ls 6 8 10 12 --starts 6 --evals 250 --seed 503 --init mix --noise 0.3 --out data/typhon/opt2_d3_s503.jsonl
+python3 optimize_random.py --d 3 --Ls 6 8 10 12 --starts 6 --evals 250 --seed 504 --init mix --noise 0.3 --out data/typhon/opt2_d3_s504.jsonl
+python3 optimize_random.py --d 3 --Ls 6 8 10 12 --starts 6 --evals 250 --seed 505 --init mix --noise 0.3 --out data/typhon/opt2_d3_s505.jsonl
+python3 optimize_random.py --d 3 --Ls 6 8 10 12 --starts 6 --evals 250 --seed 506 --init mix --noise 0.3 --out data/typhon/opt2_d3_s506.jsonl
+python3 optimize_random.py --d 3 --Ls 6 8 10 12 --starts 6 --evals 250 --seed 507 --init mix --noise 0.3 --out data/typhon/opt2_d3_s507.jsonl
+python3 optimize_random.py --d 3 --Ls 6 8 10 12 --starts 6 --evals 250 --seed 508 --init mix --noise 0.3 --out data/typhon/opt2_d3_s508.jsonl
+python3 optimize_random.py --d 3 --Ls 6 9 12 --starts 6 --evals 250 --seed 521 --init su --noise 0.3 --out data/typhon/opt2_d3_su_s521.jsonl
+python3 optimize_random.py --d 3 --Ls 6 9 12 --starts 6 --evals 250 --seed 522 --init su --noise 0.3 --out data/typhon/opt2_d3_su_s522.jsonl
+python3 optimize_random.py --d 3 --Ls 6 9 12 --starts 6 --evals 250 --seed 523 --init su --noise 0.3 --out data/typhon/opt2_d3_su_s523.jsonl
+python3 optimize_random.py --d 3 --Ls 6 9 12 --starts 6 --evals 250 --seed 524 --init su --noise 0.3 --out data/typhon/opt2_d3_su_s524.jsonl
+python3 optimize_random.py --d 3 --Ls 6 9 12 --starts 6 --evals 250 --seed 531 --init su --noise 0.6 --reflect --out data/typhon/opt2_d3_su_refl_s531.jsonl
+python3 optimize_random.py --d 3 --Ls 6 9 12 --starts 6 --evals 250 --seed 532 --init su --noise 0.6 --reflect --out data/typhon/opt2_d3_su_refl_s532.jsonl

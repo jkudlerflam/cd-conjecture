@@ -1,0 +1,73 @@
+python3 optimize_random.py --d 2 --Ls 8 10 12 14 16 --starts 12 --evals 500 --seed 101 --init mix --noise 0.3 --out data/typhon/opt_d2_s101.jsonl
+python3 optimize_random.py --d 2 --Ls 8 10 12 14 16 --starts 12 --evals 500 --seed 102 --init mix --noise 0.3 --out data/typhon/opt_d2_s102.jsonl
+python3 optimize_random.py --d 2 --Ls 8 10 12 14 16 --starts 12 --evals 500 --seed 103 --init mix --noise 0.3 --out data/typhon/opt_d2_s103.jsonl
+python3 optimize_random.py --d 2 --Ls 8 10 12 14 16 --starts 12 --evals 500 --seed 104 --init mix --noise 0.3 --out data/typhon/opt_d2_s104.jsonl
+python3 optimize_random.py --d 2 --Ls 8 10 12 14 16 --starts 12 --evals 500 --seed 105 --init mix --noise 0.3 --out data/typhon/opt_d2_s105.jsonl
+python3 optimize_random.py --d 2 --Ls 8 10 12 14 16 --starts 12 --evals 500 --seed 106 --init mix --noise 0.3 --out data/typhon/opt_d2_s106.jsonl
+python3 optimize_random.py --d 2 --Ls 8 10 12 14 16 --starts 12 --evals 500 --seed 107 --init mix --noise 0.3 --out data/typhon/opt_d2_s107.jsonl
+python3 optimize_random.py --d 2 --Ls 8 10 12 14 16 --starts 12 --evals 500 --seed 108 --init mix --noise 0.3 --out data/typhon/opt_d2_s108.jsonl
+python3 optimize_random.py --d 2 --Ls 8 10 12 14 16 --starts 12 --evals 500 --seed 109 --init mix --noise 0.3 --out data/typhon/opt_d2_s109.jsonl
+python3 optimize_random.py --d 2 --Ls 8 10 12 14 16 --starts 12 --evals 500 --seed 110 --init mix --noise 0.3 --out data/typhon/opt_d2_s110.jsonl
+python3 optimize_random.py --d 2 --Ls 8 10 12 14 16 --starts 12 --evals 500 --seed 111 --init mix --noise 0.3 --out data/typhon/opt_d2_s111.jsonl
+python3 optimize_random.py --d 2 --Ls 8 10 12 14 16 --starts 12 --evals 500 --seed 112 --init mix --noise 0.3 --out data/typhon/opt_d2_s112.jsonl
+python3 optimize_random.py --d 2 --Ls 8 10 12 14 16 --starts 12 --evals 500 --seed 113 --init mix --noise 0.3 --out data/typhon/opt_d2_s113.jsonl
+python3 optimize_random.py --d 2 --Ls 8 10 12 14 16 --starts 12 --evals 500 --seed 114 --init mix --noise 0.3 --out data/typhon/opt_d2_s114.jsonl
+python3 optimize_random.py --d 2 --Ls 8 10 12 14 16 --starts 12 --evals 500 --seed 115 --init mix --noise 0.3 --out data/typhon/opt_d2_s115.jsonl
+python3 optimize_random.py --d 2 --Ls 8 10 12 14 16 --starts 12 --evals 500 --seed 116 --init mix --noise 0.3 --out data/typhon/opt_d2_s116.jsonl
+python3 optimize_random.py --d 2 --Ls 8 10 12 14 16 --starts 12 --evals 500 --seed 121 --init mix --noise 0.3 --reflect --out data/typhon/opt_d2_refl_s121.jsonl
+python3 optimize_random.py --d 2 --Ls 8 10 12 14 16 --starts 12 --evals 500 --seed 122 --init mix --noise 0.3 --reflect --out data/typhon/opt_d2_refl_s122.jsonl
+python3 optimize_random.py --d 2 --Ls 8 10 12 14 16 --starts 12 --evals 500 --seed 123 --init mix --noise 0.3 --reflect --out data/typhon/opt_d2_refl_s123.jsonl
+python3 optimize_random.py --d 2 --Ls 8 10 12 14 16 --starts 12 --evals 500 --seed 124 --init mix --noise 0.3 --reflect --out data/typhon/opt_d2_refl_s124.jsonl
+python3 optimize_random.py --d 2 --Ls 8 10 12 14 16 --starts 12 --evals 500 --seed 131 --init mix --noise 0.3 --complex --out data/typhon/opt_d2_cplx_s131.jsonl
+python3 optimize_random.py --d 2 --Ls 8 10 12 14 16 --starts 12 --evals 500 --seed 132 --init mix --noise 0.3 --complex --out data/typhon/opt_d2_cplx_s132.jsonl
+python3 optimize_random.py --d 2 --Ls 8 10 12 14 16 --starts 12 --evals 500 --seed 133 --init mix --noise 0.3 --complex --out data/typhon/opt_d2_cplx_s133.jsonl
+python3 optimize_random.py --d 2 --Ls 8 10 12 14 16 --starts 12 --evals 500 --seed 134 --init mix --noise 0.3 --complex --out data/typhon/opt_d2_cplx_s134.jsonl
+python3 optimize_random.py --d 3 --Ls 6 8 10 --starts 8 --evals 400 --seed 201 --init mix --noise 0.3 --out data/typhon/opt_d3_s201.jsonl
+python3 optimize_random.py --d 3 --Ls 6 8 10 --starts 8 --evals 400 --seed 202 --init mix --noise 0.3 --out data/typhon/opt_d3_s202.jsonl
+python3 optimize_random.py --d 3 --Ls 6 8 10 --starts 8 --evals 400 --seed 203 --init mix --noise 0.3 --out data/typhon/opt_d3_s203.jsonl
+python3 optimize_random.py --d 3 --Ls 6 8 10 --starts 8 --evals 400 --seed 204 --init mix --noise 0.3 --out data/typhon/opt_d3_s204.jsonl
+python3 optimize_random.py --d 3 --Ls 6 8 10 --starts 8 --evals 400 --seed 205 --init mix --noise 0.3 --out data/typhon/opt_d3_s205.jsonl
+python3 optimize_random.py --d 3 --Ls 6 8 10 --starts 8 --evals 400 --seed 206 --init mix --noise 0.3 --out data/typhon/opt_d3_s206.jsonl
+python3 optimize_random.py --d 3 --Ls 6 8 10 --starts 8 --evals 400 --seed 207 --init mix --noise 0.3 --out data/typhon/opt_d3_s207.jsonl
+python3 optimize_random.py --d 3 --Ls 6 8 10 --starts 8 --evals 400 --seed 208 --init mix --noise 0.3 --out data/typhon/opt_d3_s208.jsonl
+python3 optimize_random.py --d 3 --Ls 6 8 10 --starts 8 --evals 400 --seed 209 --init mix --noise 0.3 --out data/typhon/opt_d3_s209.jsonl
+python3 optimize_random.py --d 3 --Ls 6 8 10 --starts 8 --evals 400 --seed 210 --init mix --noise 0.3 --out data/typhon/opt_d3_s210.jsonl
+python3 optimize_random.py --d 3 --Ls 6 8 10 --starts 8 --evals 400 --seed 221 --init mix --noise 0.3 --reflect --out data/typhon/opt_d3_refl_s221.jsonl
+python3 optimize_random.py --d 3 --Ls 6 8 10 --starts 8 --evals 400 --seed 222 --init mix --noise 0.3 --reflect --out data/typhon/opt_d3_refl_s222.jsonl
+python3 optimize_random.py --d 3 --Ls 6 8 10 --starts 8 --evals 400 --seed 223 --init mix --noise 0.3 --reflect --out data/typhon/opt_d3_refl_s223.jsonl
+python3 optimize_random.py --d 3 --Ls 6 8 10 --starts 8 --evals 400 --seed 224 --init mix --noise 0.3 --reflect --out data/typhon/opt_d3_refl_s224.jsonl
+python3 scan.py --family kk --par x=0.25 y=0.25 --Ls 4 8 12 --out data/typhon/families_d4.jsonl
+python3 scan.py --family kk --par x=0.5 y=0.5 --Ls 4 8 12 --out data/typhon/families_d4.jsonl
+python3 scan.py --family kk --par x=0.75 y=0.75 --Ls 4 8 12 --out data/typhon/families_d4.jsonl
+python3 scan.py --family kk --par x=1.0 y=1.0 --Ls 4 8 12 --out data/typhon/families_d4.jsonl
+python3 scan.py --family kk --par x=0.0 y=1.0 --Ls 4 8 12 --out data/typhon/families_d4.jsonl
+python3 scan.py --family kk --par x=0.25 y=0.75 --Ls 4 8 12 --out data/typhon/families_d4.jsonl
+python3 scan.py --family kk --par x=0.5 y=1.0 --Ls 4 8 12 --out data/typhon/families_d4.jsonl
+python3 scan.py --family kk --par x=0.0 y=0.5 --Ls 4 8 12 --out data/typhon/families_d4.jsonl
+python3 scan.py --family kk --par x=0.25 y=0.5 --Ls 4 8 12 --out data/typhon/families_d4.jsonl
+python3 scan.py --family twochain --par lam=0.5 mode=zz --Ls 4 8 12 --out data/typhon/families_d4.jsonl
+python3 scan.py --family twochain --par lam=1.0 mode=zz --Ls 4 8 12 --out data/typhon/families_d4.jsonl
+python3 scan.py --family twochain --par lam=2.0 mode=zz --Ls 4 8 12 --out data/typhon/families_d4.jsonl
+python3 scan.py --family twochain --par lam=4.0 mode=zz --Ls 4 8 12 --out data/typhon/families_d4.jsonl
+python3 scan.py --family twochain --par lam=0.25 mode=cross --Ls 4 8 12 --out data/typhon/families_d4.jsonl
+python3 scan.py --family twochain --par lam=0.5 mode=cross --Ls 4 8 12 --out data/typhon/families_d4.jsonl
+python3 scan.py --family twochain --par lam=1.0 mode=cross --Ls 4 8 12 --out data/typhon/families_d4.jsonl
+python3 scan.py --family twochain --par lam=0.5 mode=rung --Ls 4 8 12 --out data/typhon/families_d4.jsonl
+python3 scan.py --family twochain --par lam=-0.5 mode=rung --Ls 4 8 12 --out data/typhon/families_d4.jsonl
+python3 canonical.py --family hubbard --par U=0 --dens 1.0 --Ls 4 8 12 --out data/typhon/families_d4.jsonl
+python3 canonical.py --family hubbard --par U=0 --dens 0.5 --Ls 4 8 12 --out data/typhon/families_d4.jsonl
+python3 canonical.py --family hubbard --par U=2 --dens 1.0 --Ls 4 8 12 --out data/typhon/families_d4.jsonl
+python3 canonical.py --family hubbard --par U=2 --dens 0.5 --Ls 4 8 12 --out data/typhon/families_d4.jsonl
+python3 canonical.py --family hubbard --par U=4 --dens 1.0 --Ls 4 8 12 --out data/typhon/families_d4.jsonl
+python3 canonical.py --family hubbard --par U=4 --dens 0.5 --Ls 4 8 12 --out data/typhon/families_d4.jsonl
+python3 canonical.py --family hubbard --par U=8 --dens 1.0 --Ls 4 8 12 --out data/typhon/families_d4.jsonl
+python3 canonical.py --family hubbard --par U=8 --dens 0.5 --Ls 4 8 12 --out data/typhon/families_d4.jsonl
+python3 canonical.py --family gperm --par 'par=[0,0,0,1]' sign=1 --dens 0.25 0.25 0.25 --Ls 4 8 12 --out data/typhon/families_d4.jsonl
+python3 canonical.py --family gperm --par 'par=[0,1,1,1]' sign=-1 --dens 0.25 0.25 0.25 --Ls 4 8 12 --out data/typhon/families_d4.jsonl
+python3 canonical.py --family gperm --par 'par=[0,0,1,1]' sign=1 --dens 0.25 0.25 0.25 --Ls 4 8 12 --out data/typhon/families_d4.jsonl
+python3 canonical.py --family gperm --par 'par=[0,0,0,1]' sign=1 --dens 0.1667 0.1667 0.5 --Ls 6 12 --out data/typhon/families_d4.jsonl
+python3 canonical.py --family gperm --par 'par=[0,0,0,1]' sign=1 --dens 0.3333 0.3333 0.0 --Ls 6 12 --out data/typhon/families_d4.jsonl
+python3 canonical.py --family tj --dens 0.6667 --Ls 6 9 12 15 --out data/typhon/families_d3.jsonl
+python3 canonical.py --family tj --dens 0.5333 --Ls 15 --out data/typhon/families_d3.jsonl
+python3 canonical.py --family tj --dens 0.8 --Ls 6 9 12 15 --out data/typhon/families_d3.jsonl
+python3 scan.py --family blbq --par theta=0.7853981634 --Ls 6 9 12 15 --out data/typhon/families_d3.jsonl
