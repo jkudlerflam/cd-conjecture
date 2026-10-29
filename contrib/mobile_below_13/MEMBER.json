@@ -1,0 +1,73 @@
+{
+ "tag": "definition_conditional_mobile_family",
+ "physical_dimension": 12,
+ "material_letters": 11,
+ "vacancy_colors": 1,
+ "vacancy_automaton": "o(V)=0, I(V)={0}",
+ "vacancy_hop_letters": [
+  "L_0",
+  "L_1",
+  "E",
+  "M_A",
+  "M_B"
+ ],
+ "vacancy_context_switch": "-J(|V X_s><V D_s| + h.c.)",
+ "contact_energy": "w on the ordered pair (V, R_0)",
+ "onsite": "genuine on-site material energies, o(V)=0",
+ "material_schedule": "C84 MEMBER.json unchanged (p=12, b=13, n=11, K=2^2048, lambda=2^-480, g=2^-216)",
+ "active_bits_n": 11,
+ "conditional_c": 12,
+ "d_minus_1": 11,
+ "pin": "F=0 sector of the pinless grammar, where the material operator equals C84 (H_C84 = H_pinless + K F)",
+ "vacancy_filling": "nu = vacancies per inter-cell gap, 0 < nu < 1/2",
+ "perturbative_coefficients": {
+  "X4": -14.216860665908714,
+  "X2_over_minus_w": 0.0007712779324037591,
+  "U2": 123.05826101497631,
+  "BL2": 123.05826101497631,
+  "t_eff_coefficient": 1920777970.9617233
+ },
+ "windows": {
+  "normalized_allowance": {
+   "log2_t": -30,
+   "log2_minus_w": -40,
+   "log2_entry_gap": -6.970808278936459,
+   "log2_X_repulsive": -110.34046154606773,
+   "log2_X_attractive_t4": -116.1704689775492,
+   "log2_U": -53.05680229972467,
+   "log2_t_eff": -359.1609563832337,
+   "log2_port_scalar_per_contact": -974.2866579599004,
+   "log2_NNN_estimate": -1017.4299869398506,
+   "log2_W_payload": -1665.5467560132356,
+   "log2_relative_clock_distortion": -47.11958990970486,
+   "tolerance_log2": -38.0,
+   "ok_perturbative": true,
+   "ok_repulsive": true,
+   "ok_tolerance": true,
+   "ok_hopping_beats_NNN": true,
+   "ok_hopping_beats_payload": true,
+   "ok_hard_rods": true
+  },
+  "raw_tolerance": {
+   "log2_t": -88,
+   "log2_minus_w": -158,
+   "log2_entry_gap": -6.970808278936459,
+   "log2_X_repulsive": -344.34046154606773,
+   "log2_X_attractive_t4": -348.1704689775492,
+   "log2_U": -169.05680229972467,
+   "log2_t_eff": -1113.1609563832337,
+   "log2_port_scalar_per_contact": -974.2866579599004,
+   "log2_NNN_estimate": -1135.4299869398506,
+   "log2_W_payload": -1665.5467560132356,
+   "log2_relative_clock_distortion": -165.050630117039,
+   "tolerance_log2": -163,
+   "ok_perturbative": true,
+   "ok_repulsive": true,
+   "ok_tolerance": true,
+   "ok_hopping_beats_NNN": true,
+   "ok_hopping_beats_payload": true,
+   "ok_hard_rods": true
+  }
+ },
+ "status": "finite bond facts proved or numerical; mobile reduction heuristic; infrared assumed"
+}

@@ -1,0 +1,29 @@
+{
+ "material_block_vs_C88_max_error": 1.4210854715202004e-14,
+ "commutator_N": 0.0,
+ "commutator_M": 0.0,
+ "commutator_Q": 0.0,
+ "nonzero_entries": 199,
+ "offdiagonal_nonzero_entries": 62,
+ "letters_allowed_left_of_V": [
+  "('L', 0)",
+  "('L', 1)",
+  "('e', 0)",
+  "('m', 'A')",
+  "('m', 'B')"
+ ],
+ "letters_allowed_right_of_V": [
+  "('L', 0)",
+  "('L', 1)",
+  "('R', 0)",
+  "('d', 'A')",
+  "('d', 'B')",
+  "('x', 'A')",
+  "('x', 'B')",
+  "('e', 0)",
+  "('m', 'A')",
+  "('m', 'B')"
+ ],
+ "squeeze_violations": 0,
+ "material_grammar_equals_C88": true
+}

@@ -1,0 +1,72 @@
+{
+ "2": {
+  "L": 2,
+  "words": 144,
+  "squeeze_violations": 0,
+  "legal_words": 50,
+  "F_violations": 0,
+  "leaks": {
+   "hop": 0,
+   "vswitch": 0,
+   "material": 8
+  },
+  "hop_leaks_not_E_context": 0,
+  "transitions": 124
+ },
+ "3": {
+  "L": 3,
+  "words": 1728,
+  "squeeze_violations": 0,
+  "legal_words": 344,
+  "F_violations": 0,
+  "leaks": {
+   "hop": 15,
+   "vswitch": 0,
+   "material": 39
+  },
+  "hop_leaks_not_E_context": 0,
+  "transitions": 2232
+ },
+ "4": {
+  "L": 4,
+  "words": 20736,
+  "squeeze_violations": 0,
+  "legal_words": 2402,
+  "F_violations": 0,
+  "leaks": {
+   "hop": 160,
+   "vswitch": 0,
+   "material": 304
+  },
+  "hop_leaks_not_E_context": 0,
+  "transitions": 35712
+ },
+ "5": {
+  "L": 5,
+  "words": 248832,
+  "squeeze_violations": 0,
+  "legal_words": 16808,
+  "F_violations": 0,
+  "leaks": {
+   "hop": 1425,
+   "vswitch": 0,
+   "material": 2585
+  },
+  "hop_leaks_not_E_context": 0,
+  "transitions": 535680
+ },
+ "6": {
+  "L": 6,
+  "words": 2985984,
+  "squeeze_violations": 0,
+  "legal_words": 117650,
+  "F_violations": 0,
+  "leaks": {
+   "hop": 12000,
+   "vswitch": 0,
+   "material": 21624
+  },
+  "hop_leaks_not_E_context": 0,
+  "transitions": 7713792
+ }
+}
