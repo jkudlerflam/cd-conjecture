@@ -1,0 +1,249 @@
+{
+  "single_letter_merges": [
+    {
+      "letters": [
+        [
+          "L",
+          0
+        ],
+        [
+          "R",
+          0
+        ]
+      ],
+      "legal_cell_images": 48,
+      "parent_legal_dimension": 52,
+      "rule_coefficient_conflicts": 0,
+      "merges_marker_with_data": false,
+      "zero_excitation_cell_dimension": 18,
+      "lowest_six_energies_at_K100": [
+        -2.0,
+        -1.618033988749895,
+        -1.618033988749895,
+        -1.4142135623730951,
+        -8.109357550611348e-17,
+        0.6180339887498948
+      ]
+    },
+    {
+      "letters": [
+        [
+          "L",
+          0
+        ],
+        [
+          "e",
+          0
+        ]
+      ],
+      "legal_cell_images": 52,
+      "parent_legal_dimension": 52,
+      "rule_coefficient_conflicts": 0,
+      "merges_marker_with_data": true
+    },
+    {
+      "letters": [
+        [
+          "L",
+          1
+        ],
+        [
+          "R",
+          1
+        ]
+      ],
+      "legal_cell_images": 52,
+      "parent_legal_dimension": 52,
+      "rule_coefficient_conflicts": 0,
+      "merges_marker_with_data": false,
+      "zero_excitation_cell_dimension": 18,
+      "lowest_six_energies_at_K100": [
+        -1.8019377358048383,
+        -1.4166894118759714,
+        -1.4142135623730943,
+        -1.246979603717467,
+        -0.44504186791262895,
+        -0.0049996875382751745
+      ]
+    },
+    {
+      "letters": [
+        [
+          "L",
+          1
+        ],
+        [
+          "e",
+          1
+        ]
+      ],
+      "legal_cell_images": 52,
+      "parent_legal_dimension": 52,
+      "rule_coefficient_conflicts": 0,
+      "merges_marker_with_data": true
+    },
+    {
+      "letters": [
+        [
+          "R",
+          0
+        ],
+        [
+          "e",
+          0
+        ]
+      ],
+      "legal_cell_images": 52,
+      "parent_legal_dimension": 52,
+      "rule_coefficient_conflicts": 0,
+      "merges_marker_with_data": true
+    },
+    {
+      "letters": [
+        [
+          "R",
+          1
+        ],
+        [
+          "e",
+          1
+        ]
+      ],
+      "legal_cell_images": 52,
+      "parent_legal_dimension": 52,
+      "rule_coefficient_conflicts": 0,
+      "merges_marker_with_data": true
+    },
+    {
+      "letters": [
+        [
+          "d",
+          "A"
+        ],
+        [
+          "x",
+          "A"
+        ]
+      ],
+      "legal_cell_images": 44,
+      "parent_legal_dimension": 52,
+      "rule_coefficient_conflicts": 9,
+      "merges_marker_with_data": false
+    },
+    {
+      "letters": [
+        [
+          "d",
+          "A"
+        ],
+        [
+          "m",
+          "A"
+        ]
+      ],
+      "legal_cell_images": 52,
+      "parent_legal_dimension": 52,
+      "rule_coefficient_conflicts": 1,
+      "merges_marker_with_data": true
+    },
+    {
+      "letters": [
+        [
+          "d",
+          "B"
+        ],
+        [
+          "x",
+          "B"
+        ]
+      ],
+      "legal_cell_images": 44,
+      "parent_legal_dimension": 52,
+      "rule_coefficient_conflicts": 5,
+      "merges_marker_with_data": false
+    },
+    {
+      "letters": [
+        [
+          "d",
+          "B"
+        ],
+        [
+          "m",
+          "B"
+        ]
+      ],
+      "legal_cell_images": 52,
+      "parent_legal_dimension": 52,
+      "rule_coefficient_conflicts": 1,
+      "merges_marker_with_data": true
+    },
+    {
+      "letters": [
+        [
+          "x",
+          "A"
+        ],
+        [
+          "m",
+          "A"
+        ]
+      ],
+      "legal_cell_images": 52,
+      "parent_legal_dimension": 52,
+      "rule_coefficient_conflicts": 0,
+      "merges_marker_with_data": true
+    },
+    {
+      "letters": [
+        [
+          "x",
+          "B"
+        ],
+        [
+          "m",
+          "B"
+        ]
+      ],
+      "legal_cell_images": 52,
+      "parent_legal_dimension": 52,
+      "rule_coefficient_conflicts": 0,
+      "merges_marker_with_data": true
+    }
+  ],
+  "different_fold": {
+    "n": 2,
+    "F": [
+      [
+        7.515914351851854e-05,
+        5.714699074074072e-06
+      ],
+      [
+        0.002227936921296297,
+        7.515914351851848e-05
+      ]
+    ],
+    "bc_minus_a_squared": 7.083092206790118e-09,
+    "band_intervals": [
+      [
+        -0.002383969907407408,
+        -0.002083333333333334
+      ],
+      [
+        0.002083333333333334,
+        0.002383969907407408
+      ]
+    ],
+    "common_field_interval_overlap": -0.004166666666666668
+  },
+  "two_token_order": {
+    "sites": 6,
+    "dimension": 30,
+    "order_commutator": 0.0,
+    "cross_order_matrix_element": 0.0,
+    "two_order_total_charges": [
+      0,
+      0
+    ]
+  }
+}

@@ -1,0 +1,9 @@
+Found a 12-letter bond with a certified n=12 member.
+
+[Proved, computer-assisted] It has 24 simple Fermi points, distinct centers, exact U(1), and pair-sum separation greater than \(5.5894\times10^{-7}\). Small ED at n=1,2 confirms second-order agreement. The finite-penalty code splitting is included in the error budget.
+
+[Conditional] The infrared prediction is \(c=12>11\). Dressed-defect and infrared matching remain open. Twelve is the smallest certified alphabet found, not a proved minimum.
+
+The explicit bond, derivations, alternative tests and reproduction instructions are in [RESULT.md](RESULT.md) and [PROOF.md](PROOF.md), with the work recorded in [PROGRESS.md](PROGRESS.md).
+
+[gpt_solve: backend=codex model=gpt-6-astra effort=high transcript=20261028T224949-65171]

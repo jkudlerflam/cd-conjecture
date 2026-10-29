@@ -1,0 +1,38 @@
+[
+  {
+    "n": 1,
+    "merge_track": "d",
+    "alphabet": 14,
+    "legal_image_pair_dimension": 225,
+    "code_residual": 4.440892098500626e-16,
+    "g_zero_non_scalar_norm": 5.966821237009273e-05,
+    "g_zero_non_gaussian_relative_residual": 2.8039729609229567e-05
+  },
+  {
+    "n": 2,
+    "merge_track": "d",
+    "alphabet": 14,
+    "legal_image_pair_dimension": 2304,
+    "code_residual": 2.220446049250313e-16,
+    "g_zero_non_scalar_norm": 4.592427742787771e-06,
+    "g_zero_non_gaussian_relative_residual": 0.00046288568965218883
+  },
+  {
+    "n": 1,
+    "merge_track": "x",
+    "alphabet": 14,
+    "legal_image_pair_dimension": 225,
+    "code_residual": 4.440892098500626e-16,
+    "g_zero_non_scalar_norm": 7.587977110090094e-05,
+    "g_zero_non_gaussian_relative_residual": 5.057838343446961e-05
+  },
+  {
+    "n": 2,
+    "merge_track": "x",
+    "alphabet": 14,
+    "legal_image_pair_dimension": 2304,
+    "code_residual": 2.220446049250313e-16,
+    "g_zero_non_scalar_norm": 9.791072325117708e-06,
+    "g_zero_non_gaussian_relative_residual": 4.881534740089677e-05
+  }
+]

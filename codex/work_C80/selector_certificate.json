@@ -1,0 +1,26 @@
+{
+  "selector_density_gap_lower": 5.4743300270682065e-05,
+  "selected_density_upper": -0.007205783307753611,
+  "mu_sel": [
+    1.8561806413628503,
+    1.8561806413628503
+  ],
+  "vacuum_gap_lower": 0.14791808855880897,
+  "rational_acceptance": true,
+  "small_checks": [
+    {
+      "n": 1,
+      "dimension": 346,
+      "good_form_min": 8.065754036755225e-16,
+      "energy": -2.000000000000008,
+      "uniform_lower_bound": -2.0000000000000004
+    },
+    {
+      "n": 2,
+      "dimension": 8224,
+      "good_form_min": -3.708536433414522e-15,
+      "energy": -2.833378823751925,
+      "uniform_lower_bound": -2.8492604580795238
+    }
+  ]
+}

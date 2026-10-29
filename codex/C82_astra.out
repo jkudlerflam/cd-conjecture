@@ -1,0 +1,10 @@
+Completed in [RESULT.md](<./RESULT.md>), with derivations in [PROOF.md](<./PROOF.md>) and status in [PROGRESS.md](<./PROGRESS.md>).
+
+- [Proved] A two-color vacancy repair gives d = 17 and detects illegal material pairs across vacancies.
+- [Numerical] At J = t, repaired leakage falls as K⁻², reaching 1.08 × 10⁻⁸ at K = 10,000.
+- [Proved] Added the volume-independent finite-order Schrieffer–Wolff step and closed frozen nonzero-port sector selection.
+- [Computer-assisted] A new n = 16 certificate gives 32 simple Fermi points, supporting the conditional candidate c = 17 > d − 1.
+
+Finite-J matching and dressed defect stability remain assumed. K must increase sufficiently after choosing J. All writes stayed inside work_C82.
+
+[gpt_solve: backend=codex model=gpt-6-astra effort=high transcript=20261028T230840-71168]

@@ -1,0 +1,30 @@
+[
+  {
+    "K": 20.0,
+    "dim": 96,
+    "remainder_norm": 0.018547103917331047,
+    "remainder_times_K_squared": 7.41884156693242,
+    "unitarity_error": 4.442996769173674e-16
+  },
+  {
+    "K": 40.0,
+    "dim": 96,
+    "remainder_norm": 0.0046086862189490775,
+    "remainder_times_K_squared": 7.373897950318524,
+    "unitarity_error": 3.3345569950153756e-16
+  },
+  {
+    "K": 80.0,
+    "dim": 96,
+    "remainder_norm": 0.001148642241603871,
+    "remainder_times_K_squared": 7.351310346264775,
+    "unitarity_error": 4.441315646845621e-16
+  },
+  {
+    "K": 160.0,
+    "dim": 96,
+    "remainder_norm": 0.0002867179725051389,
+    "remainder_times_K_squared": 7.339980096131555,
+    "unitarity_error": 2.2205448883585115e-16
+  }
+]

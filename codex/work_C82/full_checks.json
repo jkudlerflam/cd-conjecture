@@ -1,0 +1,43 @@
+{
+  "hermiticity": 0.0,
+  "commutators": {
+    "occupied_number": 0.0,
+    "marker_number": 0.0,
+    "charge": 0.0
+  },
+  "four_site_grammar_words_checked": 83505,
+  "full_bond_runs": [
+    {
+      "K": 10.0,
+      "dim": 1344,
+      "energy": -3.0896135909166027,
+      "residual": 7.259127366693868e-14,
+      "illegal_material_weight": 0.0012131116085679413,
+      "local_bad_expectation": 0.005895857084451517
+    },
+    {
+      "K": 100.0,
+      "dim": 1344,
+      "energy": -3.0265769117127217,
+      "residual": 8.162400629240522e-12,
+      "illegal_material_weight": 1.485405064707364e-05,
+      "local_bad_expectation": 8.327090753439855e-05
+    },
+    {
+      "K": 1000.0,
+      "dim": 1344,
+      "energy": -3.0189373879828647,
+      "residual": 2.982326708220268e-13,
+      "illegal_material_weight": 1.5200404206807872e-07,
+      "local_bad_expectation": 8.652869513272859e-07
+    },
+    {
+      "K": 10000.0,
+      "dim": 1344,
+      "energy": -3.018157116288556,
+      "residual": 2.109681011197878e-11,
+      "illegal_material_weight": 1.5236179896534685e-09,
+      "local_bad_expectation": 8.686535448548785e-09
+    }
+  ]
+}

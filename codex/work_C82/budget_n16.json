@@ -1,0 +1,24 @@
+{
+  "n": 16,
+  "g_power": -288,
+  "K_min_power": 1280,
+  "lambda_power": -704,
+  "field_normalized_power": -149,
+  "beta_denominator": "1070203148426556361690845698709164233427868288299340",
+  "trace_log10": 44.44102282610311,
+  "Eunit_lower_log10": -281.47280986431156,
+  "conversion_error_log10": -25.087142253787533,
+  "penalty_error_log10": -37.73040207167469,
+  "budget_power": -35,
+  "combined_below_one_eighth_budget": true,
+  "finite_two_cell_fourth_order_ratio_log10": -82.88490142127193,
+  "selector_density_gap_lower": 1.561682987733149e-05,
+  "selector_density_bound_power": -17,
+  "selected_density_upper": -0.0033882037188205953,
+  "selected_density_bound_power": -9,
+  "mu_sel": [
+    1.912016042804466,
+    1.912016042804466
+  ],
+  "vacuum_gap_lower": 0.09023026445259935
+}
