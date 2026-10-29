@@ -1,0 +1,66 @@
+{
+  "words": [
+    {
+      "data_sites": 0,
+      "flavours": 0,
+      "legal_dimension": 3,
+      "injective": true,
+      "complete": true
+    },
+    {
+      "data_sites": 1,
+      "flavours": 0,
+      "legal_dimension": 8,
+      "injective": true,
+      "complete": true
+    },
+    {
+      "data_sites": 2,
+      "flavours": 1,
+      "legal_dimension": 26,
+      "injective": true,
+      "complete": true
+    },
+    {
+      "data_sites": 3,
+      "flavours": 2,
+      "legal_dimension": 72,
+      "injective": true,
+      "complete": true
+    },
+    {
+      "data_sites": 4,
+      "flavours": 3,
+      "legal_dimension": 184,
+      "injective": true,
+      "complete": true
+    },
+    {
+      "data_sites": 5,
+      "flavours": 4,
+      "legal_dimension": 448,
+      "injective": true,
+      "complete": true
+    },
+    {
+      "data_sites": 6,
+      "flavours": 5,
+      "legal_dimension": 1056,
+      "injective": true,
+      "complete": true
+    },
+    {
+      "data_sites": 7,
+      "flavours": 6,
+      "legal_dimension": 2432,
+      "injective": true,
+      "complete": true
+    }
+  ],
+  "local_bad_pair_audit": [
+    {
+      "all_local_contexts": 396,
+      "only_vacuum_predecessor_changes": true
+    }
+  ]
+}

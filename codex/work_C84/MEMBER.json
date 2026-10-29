@@ -1,0 +1,47 @@
+{
+  "status": "frozen_finite_certificate_IR_conditional",
+  "alphabet": 11,
+  "flavours": 11,
+  "data_sites": 12,
+  "cell_length": 13,
+  "D": 1000,
+  "Delta": "4-2*cos(pi/14)",
+  "alpha": "sqrt(2/14)*sin(pi/14)",
+  "beta": "1/d_13",
+  "recurrence": {
+    "d0": 1,
+    "d1": 1004,
+    "next": "1004*d_j-d_(j-1)"
+  },
+  "phi_A_pi_fraction": [
+    1,
+    24
+  ],
+  "phi_B": 0,
+  "psi_A_pi_fraction": [
+    1,
+    1
+  ],
+  "psi_B_pi_fraction": [
+    1,
+    2
+  ],
+  "port_phases_pi_fractions": [
+    [
+      -1,
+      4
+    ],
+    [
+      1,
+      4
+    ]
+  ],
+  "td": "beta*2^-55",
+  "g_power": -216,
+  "K_power": 2048,
+  "lambda_power": -480,
+  "field": "lambda^2*alpha^4*beta^2*g^2*2^-101",
+  "mu_sel": "2-(delta_13+delta_12)/2; delta_b=(b+1)*a_b-b*a_(b+1); a_b=2*(1-cos(pi/(b+1)))",
+  "penalty": "K on every forbidden pair in PROOF Section 1",
+  "active_conversions": "D_0 through D_10; D_11 is inactive"
+}

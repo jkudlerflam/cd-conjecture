@@ -1,0 +1,20 @@
+{
+  "status": "rejected_pair_bracket_overlap",
+  "n": 11,
+  "data_sites": 12,
+  "loop_eta_power": -66,
+  "root_half_width": 1e-09,
+  "numerical_pair_margin": 4.4581049962744146e-10,
+  "failed_pairs": [
+    [
+      4,
+      17
+    ],
+    [
+      5,
+      16
+    ]
+  ],
+  "rational_margin_float": -6.1527933065623845e-09,
+  "replacement_loop_eta_power": -55
+}

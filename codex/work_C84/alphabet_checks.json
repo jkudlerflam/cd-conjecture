@@ -1,0 +1,244 @@
+{
+  "additive_charge_rank": 8,
+  "additive_charge_dimension": 3,
+  "charge_basis": [
+    "identity",
+    "marker",
+    "payload_charge"
+  ],
+  "single_letter_merges": [
+    {
+      "letters": [
+        [
+          "L",
+          0
+        ],
+        [
+          "R",
+          0
+        ]
+      ],
+      "parent_dimension": 72,
+      "image_dimension": 64,
+      "marker_data_merge": false,
+      "single_site_transition_components": 2,
+      "vacuum_dimension": 27,
+      "lowest_four_energies": [
+        -3.0,
+        -2.618033988749895,
+        -2.0,
+        -1.801937735804839
+      ],
+      "parent_vacuum_energy": -1.618033988749895,
+      "legal_vacuum_dimension": 8,
+      "lowest_four_energies_infinite_K": [
+        -3.0,
+        -2.618033988749895,
+        -2.0,
+        -1.801937735804839
+      ],
+      "exact_rayleigh_witness": {
+        "vector": [
+          10000,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "numerator": -300000000,
+        "denominator": 100000000,
+        "strictly_below_minus_two": true
+      }
+    },
+    {
+      "letters": [
+        [
+          "L",
+          0
+        ],
+        [
+          "e",
+          0
+        ]
+      ],
+      "parent_dimension": 72,
+      "image_dimension": 72,
+      "marker_data_merge": true,
+      "single_site_transition_components": 1
+    },
+    {
+      "letters": [
+        [
+          "L",
+          1
+        ],
+        [
+          "R",
+          1
+        ]
+      ],
+      "parent_dimension": 72,
+      "image_dimension": 72,
+      "marker_data_merge": false,
+      "single_site_transition_components": 2,
+      "vacuum_dimension": 27,
+      "lowest_four_energies": [
+        -2.020008247719404,
+        -1.6244046717235225,
+        -1.6180339887498978,
+        -1.5499026655240775
+      ],
+      "parent_vacuum_energy": -1.618033988749895,
+      "legal_vacuum_dimension": 21,
+      "lowest_four_energies_infinite_K": [
+        -2.0153160671925985,
+        -1.6180339887498953,
+        -1.618033988749895,
+        -1.5480111533882606
+      ],
+      "exact_rayleigh_witness": {
+        "vector": [
+          0,
+          0,
+          0,
+          -1052,
+          0,
+          -2119,
+          -3219,
+          0,
+          -1344,
+          0,
+          -2709,
+          0,
+          0,
+          0,
+          0,
+          -4116,
+          -2771,
+          0,
+          -5585,
+          -4369,
+          0
+        ],
+        "numerator": -201539920,
+        "denominator": 100004126,
+        "strictly_below_minus_two": true
+      }
+    },
+    {
+      "letters": [
+        [
+          "R",
+          0
+        ],
+        [
+          "e",
+          0
+        ]
+      ],
+      "parent_dimension": 72,
+      "image_dimension": 72,
+      "marker_data_merge": true,
+      "single_site_transition_components": 1
+    },
+    {
+      "letters": [
+        [
+          "d",
+          "A"
+        ],
+        [
+          "x",
+          "A"
+        ]
+      ],
+      "parent_dimension": 72,
+      "image_dimension": 60,
+      "marker_data_merge": false,
+      "single_site_transition_components": 2
+    },
+    {
+      "letters": [
+        [
+          "d",
+          "A"
+        ],
+        [
+          "m",
+          "A"
+        ]
+      ],
+      "parent_dimension": 72,
+      "image_dimension": 72,
+      "marker_data_merge": true,
+      "single_site_transition_components": 1
+    },
+    {
+      "letters": [
+        [
+          "d",
+          "B"
+        ],
+        [
+          "x",
+          "B"
+        ]
+      ],
+      "parent_dimension": 72,
+      "image_dimension": 60,
+      "marker_data_merge": false,
+      "single_site_transition_components": 2
+    },
+    {
+      "letters": [
+        [
+          "d",
+          "B"
+        ],
+        [
+          "m",
+          "B"
+        ]
+      ],
+      "parent_dimension": 72,
+      "image_dimension": 72,
+      "marker_data_merge": true,
+      "single_site_transition_components": 1
+    },
+    {
+      "letters": [
+        [
+          "x",
+          "A"
+        ],
+        [
+          "m",
+          "A"
+        ]
+      ],
+      "parent_dimension": 72,
+      "image_dimension": 72,
+      "marker_data_merge": true,
+      "single_site_transition_components": 1
+    },
+    {
+      "letters": [
+        [
+          "x",
+          "B"
+        ],
+        [
+          "m",
+          "B"
+        ]
+      ],
+      "parent_dimension": 72,
+      "image_dimension": 72,
+      "marker_data_merge": true,
+      "single_site_transition_components": 1
+    }
+  ]
+}
