@@ -1,0 +1,302 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage[hidelinks]{hyperref}
+
+\newcommand{\tg}[1]{\textsf{[#1]}}
+\newcommand{\ket}[1]{|#1\rangle}
+\newcommand{\bra}[1]{\langle #1|}
+\newcommand{\kb}[2]{|#1\rangle\langle #2|}
+\newcommand{\repo}[1]{\texttt{#1}}
+\allowdisplaybreaks
+\setlength{\emergencystretch}{2em}
+
+\title{The smallest current candidates against the $c$--$d$ conjecture:\\ an eleven-state frozen chain and a thirteen-state mobile chain}
+\author{Compiled for Jonah Kudler-Flam from the \repo{cd\_conjecture} repository\\ (Claude, 29 October 2026)}
+\date{}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Two explicit one-site translation-invariant nearest-neighbour chains currently give the smallest local dimensions at which the bound $c\le d-1$ of Latorre and Sierra is predicted to fail. The first is a frozen chain on $\mathbb{C}^{11}$ with predicted $c=11$. The second is a mobile chain on $\mathbb{C}^{13}$ with predicted $c=14$. Both rest on finite facts that are proved, many by exact integer and rational certificates, and on infrared inputs that are not. This note writes both bonds out term by term, collects the certified numbers, records what each referee checked, and states the conclusion as a conditional. Nothing here is an established counterexample.
+\end{abstract}
+
+\paragraph{Tags and provenance.} Every claim carries one tag. \tg{proved} means an algebraic argument, an exhaustive finite enumeration, or an integer/rational certificate (``computer-assisted'' when a script supplies it). \tg{numerical} means floating-point evidence at stated finite sizes, almost always at diagnostic parameters far from the certified schedule. \tg{heuristic} means a physics argument that has not been made controlled. \tg{assumed} means an input that is used but not established. Definitions of the bonds and schedules are marked \tg{definition}. The constructions C75 to C89 are Codex runs on the Astra model (\repo{codex/work\_C*}); the referee reports in \repo{contrib/referee\_*} are Claude subagents. No human has refereed any of this material. The working standard of the project is theoretical physics (controlled perturbation theory, standard RG, calibrated numerics), not mathematical rigor.
+
+\section{The conjecture and why a fixed alphabet is enough}
+
+Latorre and Sierra \cite{latorre2024} consider $H=\sum_i h_{i,i+1}$ on $(\mathbb{C}^d)^{\otimes L}$ with one Hermitian $h$ on $\mathbb{C}^d\otimes\mathbb{C}^d$, periodic boundary conditions and one-site translation invariance, and conjecture that whenever the low-energy theory is a unitary CFT its total central charge obeys
+\begin{align}
+c\le d-1 .\label{eq:conj}
+\end{align}
+The $SU(d)$ swap chain of Uimin, Lai and Sutherland \cite{sutherland1975} flows to $SU(d)_1$ and saturates \eqref{eq:conj}.
+
+The route-A constructions in the repository attack \eqref{eq:conj} with a family $h_n$ built from a fixed alphabet of $a$ letters and a fixed list of terms, in which only the coefficients depend on an integer $n$. The ground state breaks translation spontaneously into cells, each cell stores $n$ fermionic flavours, and the predicted infrared is $n$ compact bosons. For the frozen chain $d=a$ and the prediction is $c=n$. For a mobile chain, $k$ vacancy colours are added, $d=a+k$, and the vacancy fluid contributes one more boson, so $c=n+1$. The logic is then elementary. \tg{proved} If one member of the family with
+\begin{align}
+n\ge a \quad\text{(frozen)},\qquad n\ge a+k-1\quad\text{(mobile)}\label{eq:threshold}
+\end{align}
+has its finite ingredients under control, and the infrared inputs of Section~\ref{sec:referees} hold, that member violates \eqref{eq:conj}. No uniformity in $n$ is needed, because each $h_n$ is a separate chain. Everything therefore reduces to (i) making $a$ small, (ii) certifying one member above the threshold, and (iii) the infrared step. This note concerns (i) and (ii) for the two smallest current members, and states (iii) as open.
+
+One caveat about the frozen chain should be stated at the start. Its cells are frozen, so its ground space carries the degeneracy of a spontaneously broken translation, and ``$c=n$'' refers to the gapless sector above a fixed cell pattern on rings of compatible length. The referees list this ``frozen-cell reading of CFT'' as an inherited issue \cite{refC80}. The mobile chain was introduced to remove it.
+
+\section{The mechanism in one page}\label{sec:mech}
+
+The mechanism goes back to the 23-letter chain of \repo{contrib/explicit\_candidate} and has survived every compression. Its six ingredients are as follows.
+
+\textbf{Spontaneous cells.} \tg{proved} Markers are conserved on-site labels, and a marker chemical potential $\mu_{\rm sel}$ fixes the cell length. Between markers a single ``vacuum walker'' sweeps a clock of $b$ positions with hopping $-1$, at energy $-2\cos(\pi/(b+1))$. With $a_b=2[1-\cos(\pi/(b+1))]$ the energy density of a ring of length-$b$ cells is $e_b=(\mu_{\rm sel}-2+a_b)/b$, and convexity of $a(x)$ makes $\delta_b=(b+1)a_b-b\,a_{b+1}$ strictly decreasing. Choosing $\mu_{\rm sel}$ at the midpoint of a window selects one $b$ uniquely, with a density margin of order $b^{-4}$.
+
+\textbf{A degenerate code per cell.} \tg{proved} The walker acts as the identity on the data letters it passes, so each bit string carries one clock ground state and the cell has an exactly degenerate $2^n$-dimensional code (at infinite penalty).
+
+\textbf{Silent ports and second-order exchange.} \tg{proved} The only intercell term, the port $\lambda V$, turns the vacuum walker of a cell into an excited token in that cell and its neighbour, so $G^\dagger V G=0$ and first order vanishes. At second order a pair of excited tokens is created and reabsorbed, which moves one unit of payload from one cell to the next. With the bit-dependent signs $z_A(a)=(-1)^a$ on the hops of one species, the payload behaves as Jordan--Wigner fermions $c_j$, and the $g^2$ coefficient is a number-conserving quadratic form with no quartic part.
+
+\textbf{The folded express track.} \tg{proved as $D\to\infty$; certified at the members below} An excited token reaches the marker only by switching onto a second rail $X$ at the start of the cell. Its scalar graph is the path $M$, $X_{p-1},\dots,X_0$, $D_0,\dots,D_{p-1}$, so both ports see data site $j$ at the same graph distance. This makes the leading hopping a phase times a positive Gram matrix, and the express phase $\phi_A=\pi/(2p)$ avoids the sine cancellation that kills it for real rails. In the explicit candidate this folding repaired an earlier design whose two ports saw the flavours in opposite orders.
+
+\textbf{Conversions and separated Fermi-sea centres.} \tg{proved symmetry statements; the separation is numerical at small $n$ and certified at the members below} The conversion $g$ flips a data bit while exchanging the two token species, conserving charge. A weak direct link $t_d$ from the data rail into the marker closes a loop with a species-dependent flux. Without it all Fermi seas share one centre and inter-flavour Cooper transfer is resonant. With it the reflection $k\to-k$ is broken, the centres separate linearly in $t_d$, and the pair-sum margins below become positive.
+
+\textbf{Exact $U(1)$.} \tg{proved} An additive on-site charge is conserved by every term, including illegal configurations. On the code it is twice the logical fermion number, so pairing is forbidden at every order.
+
+The outcome is an $n$-band logical chain with Bloch matrix $h(k)=\mu+Te^{ik}+T^\dagger e^{-ik}$, whose $2n$ simple Fermi points, distinct centres and nonresonant pair sums are certified at one member. \tg{heuristic} Multichannel bosonization \cite{giamarchi2004} then gives $n$ compact bosons and $c=n$, provided the interacting Luttinger liquid is stable. For the mobile version a vacancy fluid with hopping $t$ is added and the material bond is multiplied by $J$, which adds one charge boson.
+
+\section{The two explicit bonds}\label{sec:bonds}
+
+\subsection{The frozen eleven-letter bond (C84, $d=11$)}
+
+\textbf{Alphabet and charges.} \tg{definition} The letters, in the matrix order of \repo{bond11.py}, are
+\begin{align}
+L_0,\ L_1,\ R_0,\ R_1,\ D_A,\ D_B,\ X_A,\ X_B,\ E,\ M_A,\ M_B ,\label{eq:alph}
+\end{align}
+with markers $\mathcal{M}=\{E,M_A,M_B\}$ and charges
+\begin{align}
+&q(L_a)=q(R_a)=2a,\qquad q(E)=0,\nonumber\\
+&q(D_A)=q(X_A)=q(M_A)=-1,\qquad q(D_B)=q(X_B)=q(M_B)=+1.\label{eq:charge}
+\end{align}
+$L_a$ and $R_a$ are data sites storing bit $a$ to the left and right of the walker. $R_0$ also serves as the vacuum walker, $E$ as the empty and vacuum marker. $D_s$ and $X_s$ are an excited token of species $s$ on the data and express rails, $M_s$ the marker holding it. A cell has $p$ data sites, physical length $b=p+1$, and $n=p-1$ payload flavours, because the last displaced bit is fixed to zero.
+
+\textbf{Grammar.} \tg{definition} An ordered pair $(\ell,r)$ costs $K$ unless it appears in Table~\ref{tab:pairs}. Relative to the twelve-letter parent, the only new forbidden pairs are $L_1$ followed by a marker (the ``boundary pin'').
+
+\begin{table}[h]
+\centering
+\begin{tabular}{ll}
+\toprule
+Left letter & Allowed right letters\\
+\midrule
+$L_0$ or any marker & $L_0,L_1,R_0,D_A,D_B,X_A,X_B,E,M_A,M_B$\\
+$L_1$ & $L_0,L_1,R_0,D_A,D_B,X_A,X_B$\\
+$R_0,R_1,D_A,D_B,X_A,X_B$ & $R_0,R_1,E$\\
+\bottomrule
+\end{tabular}
+\caption{Allowed ordered pairs of the $d=11$ bond. Every other pair carries the penalty $K$.}\label{tab:pairs}
+\end{table}
+
+\textbf{The bond.} \tg{definition} With $a\in\{0,1\}$, $s\in\{A,B\}$, $z_A(a)=(-1)^a$, $z_B(a)=1$, $\phi_B=0$, and $P_\ell=\kb{\ell}{\ell}$,
+\begin{align}
+h_{11}&=w+K\,\Pi_{\rm bad}+\tfrac12\left(o\otimes 1+1\otimes o\right),\label{eq:h11}\\
+w&=\sum_{a}\Big[-\kb{L_aR_0}{R_0R_a}-\sum_s z_s(a)\big(\kb{L_aD_s}{D_sR_a}+e^{i\phi_s}\kb{L_aX_s}{X_sR_a}\big)\Big]-\kb{L_0E}{R_0E}\nonumber\\
+&\quad-\sum_s\Big[e^{i\phi_s}\kb{L_0M_s}{X_sE}+t_d\,e^{i\psi_s}\kb{L_0M_s}{D_sE}+\sum_{m\in\mathcal{M}}\kb{mX_s}{mD_s}\Big]\nonumber\\
+&\quad+g\,\kb{D_BR_0}{D_AR_1}+\lambda\left(e^{-i\pi/4}\kb{M_AD_B}{ER_0}+e^{+i\pi/4}\kb{M_BD_A}{ER_0}\right)+\text{h.c.},\label{eq:w}\\
+o&=\Delta\sum_s\left(P_{D_s}+P_{X_s}+P_{M_s}\right)+D\sum_s\left(P_{X_s}+P_{M_s}\right)\nonumber\\
+&\quad+\mu_{\rm sel}\left(P_E+P_{M_A}+P_{M_B}\right)+f\left(P_{L_1}+P_{R_1}\right).\label{eq:onsite}
+\end{align}
+The last line of \eqref{eq:w} is the whole port. There is no conversion on a token followed by $E$. \tg{proved} $h_{11}$ is Hermitian on $\mathbb{C}^{11}\otimes\mathbb{C}^{11}$, conserves the charge \eqref{eq:charge} and each on-site marker projector, and so freezes the cells. \tg{numerical, exact in floating point} The script \repo{regen\_bonds.py} in this folder rebuilds \eqref{eq:h11}--\eqref{eq:onsite} with no repository import and matches \repo{codex/work\_C84/bond11.py} to $1.4\times10^{-14}$ (rounding of the halved on-site term) at eight generic points; at a generic point the matrix has 166 nonzero entries, 48 of them off-diagonal, as C84 states.
+
+\textbf{Legal cells and the code.} \tg{proved} Starting after a marker, the zero-penalty cells with bits $a_0,\dots,a_{n-1}$ are
+\begin{align}
+&L_{a_0}\cdots L_{a_{j-1}}\,T\,R_{a_j}\cdots R_{a_{n-1}}\,E,\qquad T\in\{R_0,D_A,D_B,X_A,X_B\},\quad 0\le j\le p-1,\nonumber\\
+&L_{a_0}\cdots L_{a_{n-1}}L_0\,m,\qquad m\in\mathcal{M},\label{eq:words}
+\end{align}
+so a cell has $(5p+3)2^{p-1}$ legal states. The constrained vacuum is
+\begin{align}
+E_v(p)=-2\cos\frac{\pi}{p+2},\qquad v_j=\sqrt{\frac{2}{p+2}}\sin\frac{\pi(j+1)}{p+2},\qquad \alpha=v_0=v_p ,\label{eq:vac}
+\end{align}
+with one ground state per bit string. \tg{proved} On legal cells, C84 is unitarily equivalent to C80's $p$-bit cell with its last bit fixed to zero and its last conversion deleted.
+
+\textbf{Scalar carrier and the Gaussian coefficient.} \tg{proved} After gauging the $A$ carrier by the parity of crossed bits, both species see the scalar graph $M,X_{p-1},\dots,X_0,D_0,\dots,D_{p-1}$ ($2p+1$ vertices), with diagonal $4+D$ on $M,X$ and $4$ on $D$ (energies above $E_v$), path entries $-1$, and closing entry $H_{M,D_{p-1}}=-it_d$. Only $D_0,\dots,D_{p-2}$ convert. With $R=(H\otimes1+1\otimes H)^{-1}$, $x=R\ket{M,D_0}$, $U_i$ and $V_i$ the row and column $D_i$ of $x$,
+\begin{align}
+C_{ij}=U_i^\dagger RV_j,\qquad A_{ij}=U_i^\dagger RU_j+V_i^\dagger RV_j,\qquad T=-2\alpha^4g^2\,\mathrm{Re}\,C,\qquad \mu=-2i\alpha^4g^2\,\mathrm{Im}\,A .\label{eq:TA}
+\end{align}
+The inactive endpoint $D_{p-1}$ and its $X$ partner must be kept in the propagator. The finite-$g$ tail obeys $\|H_2(g)-H_2(0)-g^2H_{22}\|\le\alpha^4g^4/4$.
+
+\textbf{Parameter schedule.} \tg{definition} The certified member has $p=12$, $b=13$, $n=11$:
+\begin{align}
+&D=1000,\quad \Delta=4-2\cos\tfrac{\pi}{14},\quad \phi_A=\tfrac{\pi}{24},\quad \phi_B=0,\quad \psi_A=\pi,\quad \psi_B=\tfrac{\pi}{2},\nonumber\\
+&d_0=1,\quad d_1=1004,\quad d_{j+1}=1004\,d_j-d_{j-1},\quad \beta=1/d_{13},\quad \alpha=\sqrt{2/14}\,\sin\tfrac{\pi}{14},\nonumber\\
+&t_d=\beta\,2^{-55},\quad g=2^{-216},\quad K=2^{2048},\quad \lambda=2^{-480},\quad E_{\rm unit}=\alpha^4\beta^2g^2,\quad f=\lambda^2E_{\rm unit}2^{-101},\nonumber\\
+&\mu_{\rm sel}=2-\tfrac12(\delta_{13}+\delta_{12}),\qquad a_b=2\left[1-\cos\tfrac{\pi}{b+1}\right],\qquad \delta_b=(b+1)a_b-b\,a_{b+1}.\label{eq:sched11}
+\end{align}
+These couplings are the same on cells of every length; the selector does not retune the bond cell by cell. The hierarchy is extreme ($K$ near $10^{616}$, $\lambda^2E_{\rm unit}$ near $10^{-502}$), so no direct numerical test at the certified point is possible.
+
+\subsection{The mobile thirteen-letter bond (C88, $d=13$)}
+
+\textbf{Letters and the two-colour automaton.} \tg{definition} The eleven material letters of \eqref{eq:alph} are kept, the boundary pin is dropped, and two vacancy colours $V_0,V_1$ are appended. Each letter has an outgoing state $o$ and an incoming set $I$ (Table~\ref{tab:auto}). A pair $ab$ is legal when $o(a)\in I(b)$. On material pairs this reproduces Table~\ref{tab:pairs} without the pin, so $L_1$ may now precede a marker.
+
+\begin{table}[h]
+\centering
+\begin{tabular}{lcc}
+\toprule
+Letter & $o$ & $I$\\
+\midrule
+$L_0,L_1$ & 0 & $\{0\}$\\
+$R_0$ & 1 & $\{0,1\}$\\
+$R_1$ & 1 & $\{1\}$\\
+$D_A,D_B,X_A,X_B$ & 1 & $\{0\}$\\
+$E$ & 0 & $\{0,1\}$\\
+$M_A,M_B$ & 0 & $\{0\}$\\
+$V_q$ & $q$ & $\{q\}$\\
+\bottomrule
+\end{tabular}
+\caption{Outgoing state and incoming set of the $d=13$ automaton (C83's automaton with $E_1$ deleted).}\label{tab:auto}
+\end{table}
+
+\textbf{The bond.} \tg{definition} Let $b_{11}=w+\frac12(o\otimes1+1\otimes o)$ be \eqref{eq:h11} without its penalty, let $p_{\rm ext}$ project onto pairs with $o(a)\notin I(b)$, and let $n_{\rm occ}=1-P_{V_0}-P_{V_1}$. Then
+\begin{align}
+h_{13}=JK\,p_{\rm ext}+J\,\mathrm{embed}(b_{11})-t\sum_{a\ \rm material}\ \sum_{q\in I(a)}\left(\kb{a,V_{o(a)}}{V_q,a}+\text{h.c.}\right)-\frac{\mu}{2}\left(n_{\rm occ}\otimes1+1\otimes n_{\rm occ}\right),\label{eq:h13}
+\end{align}
+where the embedding vanishes outside the material-material block, so the material on-site energies are contact terms. \tg{proved} $h_{13}$ is Hermitian and conserves $Q$ (with $q(V_q)=0$), the occupied number $N$ and the marker number. \tg{numerical, exact in floating point} \repo{regen\_bonds.py} matches \repo{codex/work\_C88/bond13.py} to $1.4\times10^{-14}$ at twelve generic points. In \repo{bond13.py} the parameter named \texttt{n} counts data sites, so the certified bond is \texttt{params(n=14)}.
+
+\textbf{The pin as a superselection label.} \tg{proved} Remove vacancies to get the cyclic material word $s(w)$ and let
+\begin{align}
+F(w)=\sum_j \mathbf{1}\left(s_j=L_1,\ s_{j+1}\in\mathcal{M}\right).\label{eq:F}
+\end{align}
+Then $[H,F]=0$ at every $K,J,t,g,t_d,\lambda$, including on illegal words, and on full occupancy $H_{\rm C84}=H_{\rm pinless}+KF$. On $F=0$ the finite-$K$ material operator, its code and every virtual port path coincide with C85's, so C85's certificate applies unchanged. The referee checked conservation exhaustively on all rings of 2 to 6 sites (12.7 million directed transitions at $L=6$) \cite{refC88}. A pinned cell $L_{a_0}\cdots L_{a_{p-2}}L_1m$ has no clock kinetic energy and is a physical defect, not an extra bit.
+
+\textbf{Colouring and the leading grammar correction.} \tg{proved} At every nonempty occupancy each legal squeezed word has exactly one legal colouring, so the colours add no degree of freedom, and the illegal material weight obeys $N_{\rm matbad}\le N_{\rm bad}$. Two colours are the minimum for a nonnegative pair-penalty repair that retains every legal placement, because one vacancy would admit $R_0VL_0$. The complete order-$1/K$ correction on the legal space is
+\begin{align}
+D_2\big|_P=-\frac{P\left(t^2C+J^2A+2J^2\lambda^2Z\right)P}{JK},\label{eq:D2}
+\end{align}
+where $C$ counts $R_0$ or $E$ followed by a vacancy, $A$ counts the vacuum-tail contexts $o(a_{i-1})=1$, $a_i=R_0$, $a_{i+1}\in\{R_0,R_1,E\}$, and $Z$ counts $o(a_{i-1})=1$, $a_i=E$, $a_{i+1}=R_0$. The $t^2C/(JK)$ term is a bit-dependent field coupled to vacancy and clock fluctuations with no $\lambda^2$ suppression, so $JK\gg t$ alone is not enough. \tg{numerical} \eqref{eq:D2} holds to $4.5\times10^{-16}$ on every legal ring of 3 to 5 sites (up to 19267 states), and to $4.4\times10^{-16}$ at 6 sites in the referee's check.
+
+\textbf{Parameter schedule.} \tg{definition} The material schedule is C85's, with $n=13$, $p=14$, $b=15$:
+\begin{align}
+&D=1000,\quad \Delta=4-2\cos\tfrac{\pi}{16},\quad \phi_A=\tfrac{\pi}{28},\quad \phi_B=0,\quad \psi_A=\pi,\quad \psi_B=\tfrac{\pi}{2},\nonumber\\
+&\beta=1/d_{15}\ \text{(same recursion)},\quad \alpha=\sqrt{2/16}\,\sin\tfrac{\pi}{16},\quad E_{\rm unit}=\alpha^4\beta^2g^2,\nonumber\\
+&t_d=\beta\,2^{-66},\quad g=2^{-272},\quad \lambda=2^{-608},\quad K\ge2^{2560},\quad f=\lambda^2E_{\rm unit}2^{-120},\nonumber\\
+&\mu_{\rm sel}=2-\tfrac12(\delta_{15}+\delta_{14}),\label{eq:sched13}
+\end{align}
+with fixed positive $J,t$ and $\mu$ tuned to half occupancy. The mobile chain also needs
+\begin{align}
+&\frac{\nu}{JK}\ \text{in the fixed-order conjugation domain},\qquad K>\frac{2A_2}{J^2\tau},\qquad K>\sqrt{\frac{2C_3\nu^3}{J^3\tau}},\nonumber\\
+&A_2=2t^2+3J^2+6J^2\lambda^2,\label{eq:Kmobile}
+\end{align}
+with $\nu\le2^{13}J+4t+2|\mu|$ and a tolerance $\tau<\alpha_{\rm contact}\lambda^2E_{\rm unit}2^{-35}/(128\,n\,\tau_W)$, where $\alpha_{\rm contact}=\frac12-\frac{2}{\pi^2}$ is the half-density contact probability of the vacancy reference and $\tau_W=\mathrm{tr}(WW^\dagger)$ is the trace of the certificate's dyadic congruence. \tg{proved} The second condition holds at $K=2^{2560}$ for $J=t=1$ (it needs about $2^{2244}$) \cite{refC88}. The constant $C_3$ of the Schrieffer--Wolff remainder \cite{bdl2011} and the full infrared tolerance are not fixed numerically, so the mobile member is an implicitly bounded family.
+
+\section{Certified finite facts}\label{sec:facts}
+
+Table~\ref{tab:cert} collects the certified numbers. The root and pair-sum entries come from 256-bit tree and 512-bit loop solves, integer LDL congruences into a dyadic metric, rational endpoint inertia tests at rational $\tan(k/2)$, and rational chord bounds on pair sums. Multiplying $\det h(k)$ by $e^{nik}$ gives a polynomial of degree at most $2n$, so $2n$ disjoint sign-changing brackets prove simplicity and completeness of the roots. The pair-sum statement is low-order nonresonance, not rational independence to all orders.
+
+\begin{table}[h]
+\centering
+\footnotesize
+\begin{tabular}{lll}
+\toprule
+Quantity & C84 (frozen, $d=11$) & C85 material (C88, $d=13$)\\
+\midrule
+active flavours $n$, data sites $p$, cell length $b$ & $11,\ 12,\ 13$ & $13,\ 14,\ 15$\\
+carrier vertices / product dimension & $25$ / $625$ & $29$ / $841$\\
+simple Fermi points & $22$ & $26$\\
+unordered pair sums with repeats & $253$ & $351$\\
+root separation $\delta_2>$ & $0.0164202883$ & $0.0156742281$\\
+pair-sum separation $\delta_4>$ & $9.11916\times10^{-7}$ & $3.2513114\times10^{-6}$\\
+Hermitian hopping margin $>$ & $0.56526$ & $0.5560750$\\
+finite-$g$ error $<$ & $3.380\times10^{-21}$ & $1.727\times10^{-37}$\\
+finite-$K$ error (with zero-port splitting) $<$ & $7.946\times10^{-59}$ & $3.024\times10^{-83}$\\
+two-cell port remainder $<$ & $2.518\times10^{-29}$ & $2.396\times10^{-54}$\\
+sum of errors & $<2^{-35}/8$ & $<2^{-35}/8$\\
+$\mu_{\rm sel}$ & $1.8561806413628503\ldots$ & $1.8891880765550189\ldots$\\
+selector density gap $\min_{b'\ne b}(e_{b'}-e_b)>$ & $5.4743300\times10^{-5}$ & $2.8116274\times10^{-5}$\\
+selected density $e_b<$ & $-0.0072057833$ & $-0.0048254989$\\
+vacuum gap $>$ & $0.14791808$ & $0.11381149$\\
+frozen defect excess per defect & $\gamma-5\sqrt2|\lambda|>0$ (via C82) & $\min(\gamma,r_{\rm pin})-5\sqrt2|\lambda|>0$\\
+\bottomrule
+\end{tabular}
+\caption{\tg{proved, computer-assisted} Certified finite quantities. Errors are normalized to the Bloch allowance $2^{-35}$. In the last row $\gamma>2^{-17}$ for C88 and $r_{\rm pin}=2\cos(\pi/16)-2^{32}/(K-2^{17})>1$ is the excess of a pinned length-15 cell.}\label{tab:cert}
+\end{table}
+
+Three structural facts complete the finite picture. \tg{proved} The zero-port selector survives finite $K$ uniformly in cell length,
+\begin{align}
+\mu_{\rm sel}+E_v(k)-\frac{(k-1)_+}{K-4}\le E_K(k)\le\mu_{\rm sel}+E_v(k),\label{eq:selector}
+\end{align}
+for $k$ data sites, including all illegal strings and excited sectors, by compressing C80's all-string bound. \tg{proved} On compatible frozen rings a cut-and-glue argument with almost-additive good runs gives $E_{\rm defect}-S_m\ge k[\min(\gamma,r_{\rm pin})-5\sqrt2|\lambda|]>0$ for $k$ defects, so the frozen ground state lies in the $F=0$, length-$b$ sector at nonzero port. \tg{proved, fixed order} A local Schrieffer--Wolff layer at gap $\kappa=JK$ removes illegal words with remainder $\|R_r\|\le C_r\nu(\nu/\kappa)^r$ in a local exponential norm; this is not convergence in $r$ and not a global band gap.
+
+\tg{numerical} Illegal material weight in the C88 ground states falls as $K^{-2}$. In a nonzero-port closure with two vacancies (dimension 1045) it is $1.33\times10^{-7}$, $1.52\times10^{-9}$, $1.54\times10^{-11}$ at $K=10^2,10^3,10^4$, while the uncoloured control plateaus at $2.64\times10^{-5}$. In two cells with nonzero bits (dimension 2484) it is $8.31\times10^{-5}$, $8.39\times10^{-7}$, $8.40\times10^{-9}$. All of these are at diagnostic parameters ($D=4$, $g=0.07$, $t_d=0.003$), not at \eqref{eq:sched13}.
+
+\tg{proved conditional on the C81/C83/C85 vacancy dictionary} For $b=15$ a payload vertex has physical momentum $k_{\rm phys}=(q+2\pi\ell)/30$, a uniform term needs $Q_h=60\pi h$, the $h\neq0$ branches cost charge dimension at least four, and the physical low-order mismatch is bounded by $\delta_{\rm phys}\ge\min(\delta_{\rm internal}/30,\pi(2-\sqrt3))>1.08\times10^{-7}$. Exact $Q$ and $N$ forbid pairing and number-changing charge terms.
+
+\section{What the referees checked, and what remains}\label{sec:referees}
+
+\textbf{C75 referee} (\repo{contrib/referee\_C75}) \cite{refC75}. \tg{proved, numerical} The 15-letter bond rebuilt from text alone, the legal-cell count $(5n+3)2^n$, the degenerate code at every $K$, vanishing first order, the Gaussian second order (one half of C33's matrices) for $n\le3$, the finite-$K$ selector on cell spaces up to dimension 62208, and the $n=15$ certificate bit for bit. It raised three gaps that shaped everything after: the compressed grammar is not exactly invariant, so nonzero-$\lambda$ sector selection (F3) and a many-body elimination of illegal words (F4) had to be supplied, and an uncoloured vacancy lets a domain wall form next to a vacancy with no penalty (F5, illegal weight $2.6\times10^{-2}$ at $J=t$, independent of $K$).
+
+\textbf{C80/C82/C83 referee} \cite{refC80}. \tg{proved, numerical} C80's 12-letter bond entry for entry, its legal-word bijection for $n\le7$, second-order agreement with C75 to $10^{-18}$, the vacuum-code splitting as a one-body bit field of about $0.5(n-1)/K$. C82's two coloured vacancies close F5 ($K^{-2}$ suppression reproduced) and its arguments close F3 and F4. C83's two-colour lift at $d=14$ and its certificate are confirmed. C80's own 13-letter single-vacancy claim was withdrawn (G1). A $t^2/(JK)$ bit field was named here for the first time (G5).
+
+\textbf{C84/C85 referee} \cite{refC84}. \tg{proved, numerical} The 11-letter bond rebuilt entry for entry, the compression identity $H_{11}=J^\dagger H_{12}J+K\sum\Pi_{(L_1,\mathcal{M})}$ exactly, the word count $(5p+3)2^{p-1}$ for $p\le7$, the Gaussian $g^2$ coefficient to relative residual $10^{-15}$, projected ED at $n=1,2,3$, and the $n=11$ certificate bit for bit with an independent floating-point recomputation ($\delta_2=0.0164205$, $\delta_4=9.2009\times10^{-7}$). Its main finding (H1) was that the boundary pin is dynamically inert, which made C85's third vacancy colour unnecessary and pointed to $d=13$.
+
+\textbf{C88 referee} \cite{refC88}. \tg{proved, numerical} The bond from text alone, conservation of $F$ on all rings up to six sites, $H_{\rm C85}=H_{\rm C88}+KF$ on all $11^L$ words for $L\le5$, unique colouring, \eqref{eq:D2} at six sites, $K^{-2}$ suppression up to dimension 103716, the frozen pin bound, and byte identity of the regenerated certificate with C85's. It also proved a replacement bound: at $K=\infty$ and zero port, replacing a pinned cell by the zero-bit clock state with the same vacancy amplitudes gives
+\begin{align}
+E_{F=0,\ \text{same lengths}}\le E_{\rm pinned}-J\,\lambda_{\max}\!\left(P(\langle c\rangle)\right),\label{eq:R1}
+\end{align}
+with $P$ the path matrix weighted by contact probabilities on the pinned cell. With the half-density value $\alpha_{\rm contact}=\frac12-\frac{2}{\pi^2}$ this reproduces the reference cost $J\alpha_{\rm contact}2\cos(\pi/16)\approx0.58J$. \tg{numerical} Small-ring ED (0 to 6 vacancies, $t/J$ from $0.1$ to $10$) satisfies \eqref{eq:R1} in every run, and two pins never cost less than twice one pin. \tg{heuristic} A uniform lower bound on the contact probability, which \eqref{eq:R1} still needs, is plausible at fixed positive density but not proved.
+
+No referee found a fatal gap in any construction. The one new serious gap found along the way (F5) was repaired by coloured vacancies, and the serious items still open are all inherited from the 23-letter chain.
+
+\textbf{Remaining inputs.} The conclusion depends on the following, none of which is established.
+\begin{itemize}
+\item[(I1)] \tg{assumed} Volume-uniform elimination of the massive sectors (finite-cell bounds and two-cell remainders are proved; a many-cell theorem is not), together with the many-cell infrared transfer.
+\item[(I2)] \tg{assumed} Infrared stability of the weakly interacting multichannel Luttinger liquid with $2n$ Fermi points, including the non-Gaussian higher orders in $g$ and $\lambda$ and, for the mobile chain, the payload-contact coupling of \eqref{eq:D2}.
+\item[(I3)] \tg{assumed} A common-bulk-subtracted dressed-defect comparison at nonzero port, which for C88 includes the wrong-length and marker-free competitors and the pin part reduced by \eqref{eq:R1} to a contact-probability bound (hypothesis $S_{\rm pin}$).
+\item[(I4)] \tg{assumed, mobile only} Finite-$J$ low-frequency vacancy matching, current, stress and thermal control sufficient to identify conformal modes, and explicit values for the implicit constants in \eqref{eq:Kmobile}.
+\end{itemize}
+
+\textbf{Conditional statement.} \tg{heuristic, conditional on (I1)--(I3)} The frozen chain \eqref{eq:h11} at \eqref{eq:sched11}, on rings of length divisible by 13, has a gapless sector with $c=11>10=d-1$. \tg{heuristic, conditional on (I1)--(I4)} The mobile chain \eqref{eq:h13} at \eqref{eq:sched13}, \eqref{eq:Kmobile} and half occupancy has $c=13+1=14>12=d-1$, the first candidate with $c-(d-1)=2$. Neither is a measured central charge. Later work on the infrared step for these chains (REPORT \S\S9.54 to 9.59) is not summarized here.
+
+\section{How the alphabet came down}\label{sec:history}
+
+\begin{table}[h]
+\centering
+\small
+\begin{tabular}{>{\raggedright\arraybackslash}p{0.07\textwidth}>{\raggedright\arraybackslash}p{0.29\textwidth}>{\raggedright\arraybackslash}p{0.3\textwidth}>{\raggedright\arraybackslash}p{0.22\textwidth}}
+\toprule
+Letters & Frozen chain & Mobile chain & Main saving\\
+\midrule
+23 & $d=23$, $c=23$ ($n=23$, C33 certificate) & $d=24$, $c=24$ (one vacancy) & original mechanism\\
+15 & $d=15$, $c=15$ (C75, $n=15$) & $d=16$ fails (F5); $d=17$, $c=17$ (C82) & charged tokens, merged markers\\
+12 & $d=12$, $c=12$ (C80, $n=12$) & $d=13$ withdrawn (G1); $d=14$, $c=14$ (C83) & bitless tokens, shifted bit\\
+11 & $d=11$, $c=11$ (C84, $n=11$) & $d=14$ (C85, 3 colours); $d=13$, $c=14$ (C88) & last bit fixed, $E_1$ deleted\\
+\bottomrule
+\end{tabular}
+\caption{The route-A alphabet reductions. Every entry is a conditional candidate in the sense of Section~\ref{sec:referees}.}\label{tab:history}
+\end{table}
+
+\textbf{23 letters.} The explicit candidate (\repo{contrib/explicit\_candidate}, a Claude assembly building on Astra C22, with Astra C33's $n=23$ positivity certificate) has data letters $L_a,R_a$, fourteen token letters carrying a bit, and five markers. Its grammar is exactly invariant. The one-vacancy lift to $d=24$, with predicted $c=24>23$, is due to a collaborator (GitHub: salpace) \cite{d24}. Its finite bond, frozen-sector bounds and band certificate pass independent checks, and its classification is a credible conditional candidate.
+
+\textbf{23 to 15 (C75).} Excited charges $\pm1$ replace the neutral and charged triplet, a vacuum domain wall replaces the explicit vacuum token, and the vacuum markers merge; the express fold is kept. The price was the loss of exact grammar invariance, hence F3 to F5.
+
+\textbf{15 to 12 (C80).} Tokens no longer carry bits. The displaced bit shifts to the next site, the final bit is stored on the empty marker, conversion becomes a two-site term, the vacuum marker is identified with $E_0$ and the vacuum token with $R_0$.
+
+\textbf{12 to 11 (C84).} The letter $E_1$ is deleted and the last displaced bit is fixed to zero, at the cost of one payload flavour per cell ($n=p-1$). This costs nothing asymptotically for a fixed-alphabet family. C88 then dropped the boundary pin, which C85 had needed a third vacancy colour to encode, so the mobile lift needs only two colours.
+
+\textbf{Restricted lower bounds.} \tg{proved, restricted} Within C84's shifted-bit two-rail encoding, eleven letters are needed (four binary backgrounds, four charged rail states, three marker states), and all ten literal charge-preserving single identifications fail; keeping only the on-site charge roles and port equations gives $a\ge7$ \cite{C84}. C86 showed that in the single-token product class (four binary $L/R$ backgrounds, frozen markers, matched carrier species, payload-independent pair ports, nearest-neighbour token motion) at least eleven letters are required: with ten there is one transport type per species, the scalar graph is a path with point sources, and the spectrum is reciprocal, which kills the pair-sum margin. A reflection-symmetric cell fails for a separate reason, since its hopping $GJ$ has one negative Hermitian direction per odd flavour \cite{C86}. C87 extended the obstructions beyond one token: homogeneous exchanges of any number of tokens on a path generate no configuration-space flux, $k$ tokens storing data in their positions give a code of dimension $O(b^k)$, and diagonal occupation-dependent port phases preserve Gaussianity only trivially \cite{C87}. C88 showed that no remaining letter can be deleted by the superselection argument that removed the pin. \tg{heuristic} General interacting or contextual ports are not covered, so a ten-letter design, or a twelve-state mobile chain, is not excluded.
+
+\section{Summary and outlook}
+
+In short, an explicit bond on $\mathbb{C}^{11}$ has a certified member whose logical chain has 22 simple Fermi points with positive margins, predicting $c=11>10$, and an explicit bond on $\mathbb{C}^{13}$ reuses a certified $n=13$ member through an exact superselection identity, predicting $c=14>12$. The finite ingredients are proved and have been rebuilt independently. The infrared step is assumed in a well-specified form. The interesting directions appear to be (i) the many-cell matching and dressed-defect comparison (I1, I3), which every route-A candidate shares and which would promote all of Table~\ref{tab:history} at once; (ii) a uniform contact-probability bound, which would close the pin part of $S_{\rm pin}$ for C88 via \eqref{eq:R1}; and (iii) an encoding outside the single-token product class, the only place where ten letters, or $d=12$ for a mobile chain, remain possible.
+
+\paragraph{Reproduction.} \repo{python3 -B regen\_bonds.py} in this folder rebuilds \eqref{eq:h11} and \eqref{eq:h13} from the tables above and compares them with the repository bonds (read-only). The certificates regenerate with \repo{run\_certificate.py} in \repo{codex/work\_C84} and \repo{run\_all.py} in \repo{codex/work\_C88}.
+
+\begin{thebibliography}{99}
+\bibitem{latorre2024} J.~I. Latorre and G.~Sierra, J.\ Stat.\ Mech.\ (2024) 113103, arXiv:2403.17242.
+\bibitem{sutherland1975} B.~Sutherland, ``Model for a multicomponent quantum system,'' Phys.\ Rev.\ B \textbf{12}, 3795 (1975).
+\bibitem{giamarchi2004} T.~Giamarchi, \textit{Quantum Physics in One Dimension} (Oxford University Press, 2004).
+\bibitem{bdl2011} S.~Bravyi, D.~P. DiVincenzo and D.~Loss, ``Schrieffer--Wolff transformation for quantum many-body systems,'' Ann.\ Phys.\ \textbf{326}, 2793 (2011).
+\bibitem{d24} \repo{contrib/counterexample\_campaign/COUNTEREXAMPLE\_D24.md} (collaborator, GitHub: salpace).
+\bibitem{C84} \repo{codex/work\_C84/PROOF.md} and \repo{ALPHABET.md} (Astra C84).
+\bibitem{C86} \repo{codex/work\_C86/RESULT.md} (Astra C86).
+\bibitem{C87} \repo{codex/work\_C87/RESULT.md} (Astra C87).
+\bibitem{refC75} \repo{contrib/referee\_C75/README.md}.
+\bibitem{refC80} \repo{contrib/referee\_C80\_C82/README.md}.
+\bibitem{refC84} \repo{contrib/referee\_C84\_C85/README.md}.
+\bibitem{refC88} \repo{contrib/referee\_C88/README.md}.
+\end{thebibliography}
+
+\end{document}
