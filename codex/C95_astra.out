@@ -1,0 +1,7 @@
+Equation (26) remains unproved.
+
+I proved a uniform bound on the signed contact-kernel sum, controlled the thermodynamic density contribution, and showed that C94’s linear crossing term is subextensive. The required first absolute spatial moment and full relative thermal remainder remain open, so the d=13 comparison is still conditional.
+
+Written in [RESULT.md](RESULT.md), [PROOF.md](PROOF.md), and [PROGRESS.md](PROGRESS.md), with tagged claims. All checks pass. All writes and Python execution stayed inside `work_C95`; no network commands were used.
+
+[gpt_solve: backend=codex model=gpt-6-astra effort=high transcript=20261029T061249-80145]

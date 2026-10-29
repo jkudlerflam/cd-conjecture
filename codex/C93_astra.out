@@ -1,0 +1,15 @@
+Wrote [RESULT.md](RESULT.md), [PROOF.md](PROOF.md), and [PROGRESS.md).
+
+The main new result is the exact finite-\(K\) block charge
+\[
+\widehat N_j=\frac{Q_j-(-1)^jE_j}{2},
+\]
+which implements payload parity on the rooted bulk. Code-connected trajectories have root-independent total parity.
+
+Also derived explicit fixed-cutoff strong spatial bounds for the ultraviolet remainder and absorbed the leading color fields into the logical chemical matrix.
+
+The full matched action remains unproved. The missing step is the dressed gap-clock threshold and control of material-label contact kernels. Contact fluctuations can generate marginal forward couplings, so they cannot all be discarded as irrelevant.
+
+All small checks pass. Nothing outside `work_C93` was modified.
+
+[gpt_solve: backend=codex model=gpt-6-astra effort=high transcript=20261029T054940-74354]
