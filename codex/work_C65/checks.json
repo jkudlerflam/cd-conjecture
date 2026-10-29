@@ -1,0 +1,104 @@
+{
+  "scope": "Regulator coefficient, moment and finite CAR checks. TP remains unproved.",
+  "bubble": {
+    "sharp": [
+      {
+        "p": 0.08,
+        "direct": 0.11615799989685308,
+        "boundary": 0.11615799989685312,
+        "right_slope": -0.005538600377394572,
+        "cusp_coefficient": -0.005280951608973986
+      },
+      {
+        "p": 0.02,
+        "direct": 0.11649421294445453,
+        "boundary": 0.11649421294445439,
+        "right_slope": -0.0053437491295146855,
+        "cusp_coefficient": -0.005280951608973986
+      },
+      {
+        "p": 0.005,
+        "direct": 0.11657460516560335,
+        "boundary": 0.1165746051656046,
+        "right_slope": -0.005296552288017176,
+        "cusp_coefficient": -0.005280951608973986
+      },
+      {
+        "p": 0.00125,
+        "direct": 0.11659448186998615,
+        "boundary": 0.11659448186998955,
+        "right_slope": -0.0052848456441045855,
+        "cusp_coefficient": -0.005280951608973986
+      }
+    ],
+    "sharp_slope_errors": [
+      0.0002576487684205859,
+      6.279752054069981e-05,
+      1.5600679043189895e-05,
+      3.894035130599764e-06
+    ],
+    "smooth": [
+      {
+        "p": 0.04,
+        "one_sided_slope": -9.867334750425505e-05,
+        "symmetric_derivative": 0.0
+      },
+      {
+        "p": 0.02,
+        "one_sided_slope": -4.935024705485236e-05,
+        "symmetric_derivative": 0.0
+      },
+      {
+        "p": 0.01,
+        "one_sided_slope": -2.4676825224889676e-05,
+        "symmetric_derivative": -6.938893903907228e-16
+      },
+      {
+        "p": 0.005,
+        "one_sided_slope": -1.2338625487995358e-05,
+        "symmetric_derivative": -2.7755575615628914e-15
+      }
+    ]
+  },
+  "cusp_moment": {
+    "rows": [
+      {
+        "R": 4.0,
+        "truncated_first_moment": 0.40034255264846424
+      },
+      {
+        "R": 8.0,
+        "truncated_first_moment": 0.7995974007752193
+      },
+      {
+        "R": 16.0,
+        "truncated_first_moment": 1.2298574104085886
+      },
+      {
+        "R": 32.0,
+        "truncated_first_moment": 1.6683423054659088
+      },
+      {
+        "R": 64.0,
+        "truncated_first_moment": 2.1089148051979825
+      },
+      {
+        "R": 128.0,
+        "truncated_first_moment": 2.5500111971172745
+      }
+    ],
+    "doubling_increment_limit": 0.4412712003053032,
+    "last_doubling_increment": 0.44109639191929206
+  },
+  "attenuation": {
+    "system_dimension": 16,
+    "doubled_dimension": 256,
+    "attenuation_identity_residual": 2.220446049250313e-16,
+    "two_sided_bound_minimum_eigenvalues": [
+      0.11715728752538102,
+      0.11715728752538102,
+      0.19554820222217612,
+      0.19593892753039613
+    ]
+  }
+}

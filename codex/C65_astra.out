@@ -1,0 +1,7 @@
+The literal sharp-window comparison fails in TP’s kernel norm. At finite cutoff and \(T>0\), a connected order-\(g^2\) quartic kernel contains a nonzero \(|p|\) cusp. It survives infrared subtraction and antisymmetrization, so even its first spatial absolute moment diverges. The requested thermal bound therefore fails for these finite regulators.
+
+I also proved a repair: a smooth fermion regulator preserves the quartic interaction and stability bound, converges to C62’s full Gibbs trace, and removes the cusp. It supplies uniform single-scale bounds, but the all-depth joint comparison remains unproved. BM’s smooth fermion cutoff avoids the same obstruction; its scalar identification remains separate.
+
+Full derivations are in [PROOF.md](PROOF.md), with the verdict in [RESULT.md](RESULT.md). PROGRESS.md and local STATE.md are updated. All numerical checks passed. No files outside this folder were changed.
+
+[gpt_solve: backend=codex model=gpt-6-astra effort=high transcript=20261028T194025-816]

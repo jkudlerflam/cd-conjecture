@@ -44,7 +44,7 @@ def model(a):
         # logical vacancy model LV_n of logical_vac.py (n = len(taus) flavours)
         import logical_vac as LV
         nf = len(a.taus)
-        h = LV.model_bond(nf, a.t, a.J, a.mu_v, a.taus, a.eps)
+        h = LV.model_bond(nf, a.t, a.J, a.mu_v, a.taus, a.eps, a.vz)
         d = 1 + 2 ** nf
         n = np.diag(np.r_[0, np.ones(d - 1)])
         fl = [np.diag(np.r_[0, [(b >> (nf - 1 - f)) & 1 for b in range(d - 1)]]).astype(float) for f in range(nf)]
@@ -125,6 +125,7 @@ def main():
         ap.add_argument('--' + k, type=float, default=v)
     ap.add_argument('--taus', type=float, nargs='+', default=[1.0], help='lv: flavour hoppings')
     ap.add_argument('--eps', type=float, nargs='+', default=[0.0], help='lv: flavour fields')
+    ap.add_argument('--vz', type=float, nargs='+', default=None, help='lv: Ising terms (controls)')
     ap.add_argument('--vels', type=float, nargs='+', default=[1.0, 0.5], help='kxx: chain velocities')
     ap.add_argument('--chis', type=int, nargs='+', default=[16, 24, 32])
     ap.add_argument('--n', type=int, default=1)

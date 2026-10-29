@@ -1,0 +1,16 @@
+{
+  "status": "passed",
+  "arithmetic": "exact rational and integer",
+  "weighted_leibniz_identities": 117,
+  "anchored_taylor_identities": 390,
+  "covariance_only_error_identities": 195,
+  "two_cut_incidence_cases": 396,
+  "bbf_three_contraction_cases": 24,
+  "maximum_local_leibniz_coefficient_mass": 7,
+  "nonzero_operator_error": {
+    "covariance_only": 4,
+    "whole_weight": 10,
+    "difference": -6
+  },
+  "scope": "Local identities and two-cut records, not a global GN routing theorem."
+}

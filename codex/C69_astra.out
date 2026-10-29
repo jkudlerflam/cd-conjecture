@@ -1,0 +1,16 @@
+Wrote [RESULT.md](< <local> Dropbox/Jonah Kudler-Flam/Claude/Projects/Modular c-Theorem/notes/cd_conjecture/codex/work_C69/RESULT.md>) and [PROGRESS.md](<<local> Dropbox/Jonah Kudler-Flam/Claude/Projects/Modular c-Theorem/notes/cd_conjecture/codex/work_C69/PROGRESS.md>).
+
+The boundary-state entropy rate measures \(\pi A/(12\ell)\). With lattice matching accuracy \(\alpha\), SIE proves
+\[
+A\le \frac{216}{\pi\alpha}\,\ell\,\|h\|\log d.
+\]
+The uncontrolled preparation length remains. I proved an obstruction for scale-covariant entropy rates, not a theorem excluding every observable. The universal bound remains unresolved.
+
+The crossover bound is proved under a one-temperature lower entropy estimate. In your \(\pi/6\) convention,
+\[
+c\le \frac{6}{\pi\alpha}\,\xi_{\rm cross}\log d,
+\qquad \xi_{\rm cross}=u_{\max}/T_*.
+\]
+The report also gives the nonchiral normalization and a spatial entropy-increment version. All formula checks passed.
+
+[gpt_solve: backend=codex model=gpt-6-astra effort=high transcript=20261028T194033-1609]

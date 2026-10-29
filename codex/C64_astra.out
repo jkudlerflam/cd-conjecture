@@ -1,0 +1,5 @@
+C64 remains unresolved. I proved a local weighted-line repair and realized \(F_{\rm child}=1\), \(F_{\rm parent}=2\) simultaneously in a quartic-to-quadratic BBF configuration, including derivative-consumption terms. The global bounded-load routing is still missing. No violating tree was found.
+
+All finite algebra checks pass. Details and limitations are in [RESULT.md](RESULT.md) and [PROOF.md](PROOF.md). PROGRESS.md and local STATE.md are updated.
+
+[gpt_solve: backend=codex model=gpt-6-astra effort=high transcript=20261028T194023-590]
