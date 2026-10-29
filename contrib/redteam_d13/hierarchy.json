@@ -1,0 +1,123 @@
+{
+ "scales_log2": {
+  "beta": -149.57313327212012,
+  "E_unit": -858.5774100800829,
+  "W_ref_over_J": -2076.327139067007,
+  "lambda2": -1216,
+  "zero_port_split_2p84_over_K": -2476,
+  "vacuum_tail_J_over_K": -2560,
+  "grammar_port_2Jlam2_over_K": -3775,
+  "finite_g_relative_g2_over_beta2": -244.85373345575977,
+  "material_allowance_relative_to_Wref": -162.63230865817624
+ },
+ "ratios_to_Wref_log2": {
+  "zero_port_split": -399.672860932993,
+  "vacuum_tail_A_term": -483.672860932993,
+  "colour_field_t2_over_JK_at_t_eq_J": -483.672860932993,
+  "lambda2_scalar_part": 860.327139067007
+ },
+ "colour_field": {
+  "max_weight": 0.6864370767,
+  "log2_tJ_max_for_raw_allowance": 160.79167644505438,
+  "log2_tJ_max_for_normalised_2m35": 224.6078307741425,
+  "C93_K_condition": "K >= max(2^2560, 2^2243 (t/J)^2)"
+ },
+ "cell_lockin": {
+  "note": "uniform cell-harmonic terms; relevant (dim<2) only for rho_m >= 15/21",
+  "relevant": [
+   {
+    "ell": 15,
+    "h": 1,
+    "rho_m": "1",
+    "rho_m_float": 1.0,
+    "vacancies_per_cell": 0.0,
+    "dim_free": 1.0
+   },
+   {
+    "ell": 16,
+    "h": 1,
+    "rho_m": "15/16",
+    "rho_m_float": 0.9375,
+    "vacancies_per_cell": 1.0,
+    "dim_free": 1.1377777777777778
+   },
+   {
+    "ell": 17,
+    "h": 1,
+    "rho_m": "15/17",
+    "rho_m_float": 0.8823529411764706,
+    "vacancies_per_cell": 2.0,
+    "dim_free": 1.2844444444444443
+   },
+   {
+    "ell": 18,
+    "h": 1,
+    "rho_m": "5/6",
+    "rho_m_float": 0.8333333333333334,
+    "vacancies_per_cell": 3.0,
+    "dim_free": 1.44
+   },
+   {
+    "ell": 19,
+    "h": 1,
+    "rho_m": "15/19",
+    "rho_m_float": 0.7894736842105263,
+    "vacancies_per_cell": 4.0,
+    "dim_free": 1.6044444444444443
+   },
+   {
+    "ell": 20,
+    "h": 1,
+    "rho_m": "3/4",
+    "rho_m_float": 0.75,
+    "vacancies_per_cell": 5.0,
+    "dim_free": 1.7777777777777777
+   },
+   {
+    "ell": 21,
+    "h": 1,
+    "rho_m": "5/7",
+    "rho_m_float": 0.7142857142857143,
+    "vacancies_per_cell": 6.0,
+    "dim_free": 1.9599999999999997
+   }
+  ],
+  "at_half_occupancy": [
+   {
+    "ell": 30,
+    "h": 1,
+    "rho_m": "1/2",
+    "rho_m_float": 0.5,
+    "vacancies_per_cell": 15.0,
+    "dim_free": 4.0
+   },
+   {
+    "ell": 60,
+    "h": 2,
+    "rho_m": "1/2",
+    "rho_m_float": 0.5,
+    "vacancies_per_cell": 15.0,
+    "dim_free": 16.0
+   }
+  ]
+ },
+ "luttinger": {
+  "mu_sel": 1.8891880765550195,
+  "E15": -0.07238248425144134,
+  "mean_bond_energy": -0.004825498950096089,
+  "K_f_formula": "pi/(2(pi - arccos(Delta))), Delta = J e_b/(2t)",
+  "K_f(J/t=0.001)": 1.000001536006381,
+  "umklapp_dim_4Kf(J/t=0.001)": 4.000006144025524,
+  "K_f(J/t=0.005)": 1.0000076800790914,
+  "umklapp_dim_4Kf(J/t=0.005)": 4.000030720316365,
+  "K_f(J/t=0.1)": 1.0001536240003572,
+  "umklapp_dim_4Kf(J/t=0.1)": 4.000614496001429,
+  "K_f(J/t=1.0)": 1.001538368454286,
+  "umklapp_dim_4Kf(J/t=1.0)": 4.006153473817144
+ },
+ "phase_separation": {
+  "J_over_t_instability_mean_field": 325.519981050585,
+  "attractive": true
+ },
+ "marker_contact_half_mu": 0.9445940382775098
+}

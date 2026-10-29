@@ -84,7 +84,7 @@ Verification done since the referee report (`contrib/verify_C44/`, REPORT §9.28
 [proved finite ingredients; conditional infrared conclusion; refereed] Two explicit bonds, written out in full in [contrib/small_d_note/](contrib/small_d_note/note.pdf):
 
 - Frozen chain at d = 11 (C84, refereed in `contrib/referee_C84_C85/`): an eleven-letter route-A bond with a certified n = 11 member (22 simple Fermi points, positive pair-sum margins), predicting c = 11 > 10.
-- Mobile chain at d = 13 (C88, refereed in `contrib/referee_C88/`): the same eleven letters plus two vacancy colours, using C85's certified n = 13 member, predicting c = 14 > 12.
+- Mobile chain at d = 13 (C88, refereed in `contrib/referee_C88/`): the same eleven letters plus two vacancy colours, using C85's certified n = 13 member, predicting c = 14 > 12. A red team (`contrib/redteam_d13/`, REPORT §9.63) found no fatal failure; the schedule needs J/t small enough that the cell-length selector does not shift (J/t well below 0.0056) and that the mobile payload band stays within the certificate's allowance (J/t of order 2⁻⁴⁷ or smaller).
 
 Both rest on the same inherited infrared inputs as the collaborator's d = 24 candidate (multichannel Luttinger stability, the common-bulk-subtracted dressed-defect comparison, and for the mobile chain the finite-J vacancy matching; REPORT §9.54 to §9.60). Numerically, the logical vacancy model gives c = 2 at n = 1 and c = 2.9 ± 0.1 at n = 2 (§9.34, §9.55). The alphabet history is 23 → 15 → 12 → 11 (§9.41 to §9.51); eleven letters is minimal within the single-token product class (§9.48, §9.49). Earlier steps follow.
 
