@@ -1,0 +1,20 @@
+Convexity and subadditivity fail already within critical XXZ at constant \(M=1/2\):
+\[
+A(h_0)=1>\frac{A(h_{-1/2})+A(h_{1/2})}{2}
+=\frac{9\sqrt3}{16}.
+\]
+
+A is instead concave and superadditive on the XXZ cone. Its monotonicity towards Heisenberg proves the bound there. The gauge envelope changes nothing, and an explicit exposed-extreme-bond example defeats convex interpolation.
+
+All 136 recorded ED checks passed validation. Spin-1 curvature remains numerical evidence.
+
+Written in `work_C102`:
+
+- [RESULT.md](RESULT.md)
+- [PROOF.md](PROOF.md)
+- [PROGRESS.md](PROGRESS.md)
+- [NUMERICS.md](NUMERICS.md), with reproducible Python scripts.
+
+No general interacting-bond bound is claimed.
+
+[gpt_solve: backend=codex model=gpt-6-astra effort=high transcript=20261029T114253-71132]

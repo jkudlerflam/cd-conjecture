@@ -1,0 +1,119 @@
+{
+  "method": "half-line spectral quadrature",
+  "max_x": 8193,
+  "orders": [
+    400,
+    800
+  ],
+  "cutoff": 12.0,
+  "absolute_tail_bound": 1.7987363357198726e-33,
+  "max_quadrature_difference": 2.0747292772682613e-15,
+  "smooth_prediction": 0.013262911924324612,
+  "rows": [
+    {
+      "x": 3,
+      "deficit": 0.013876681876706794,
+      "raw_scaled": 0.12489013689036114,
+      "binomial_scaled": 0.006841309532847623,
+      "alternating_normalized": 0.28736323747517567,
+      "quadrature_difference": 1.1362438767648086e-15
+    },
+    {
+      "x": 5,
+      "deficit": 0.007406538039045443,
+      "raw_scaled": 0.18516345097613607,
+      "binomial_scaled": 0.009424327595214475,
+      "alternating_normalized": 0.3744892520567925,
+      "quadrature_difference": 8.031769693772617e-16
+    },
+    {
+      "x": 9,
+      "deficit": 0.0036251139184494247,
+      "raw_scaled": 0.2936342273944034,
+      "binomial_scaled": 0.011234731252208849,
+      "alternating_normalized": 0.4504208489079386,
+      "quadrature_difference": 5.234528088760015e-16
+    },
+    {
+      "x": 17,
+      "deficit": 0.0016955661937750198,
+      "raw_scaled": 0.4900186300009807,
+      "binomial_scaled": 0.012273341854347032,
+      "alternating_normalized": 0.513124578064309,
+      "quadrature_difference": 3.2461013044216003e-16
+    },
+    {
+      "x": 33,
+      "deficit": 0.0007785903594533417,
+      "raw_scaled": 0.8478849014446891,
+      "binomial_scaled": 0.012800058891932479,
+      "alternating_normalized": 0.5644653685614668,
+      "quadrature_difference": 1.927711462679227e-16
+    },
+    {
+      "x": 65,
+      "deficit": 0.0003559614392608215,
+      "raw_scaled": 1.503937080876971,
+      "binomial_scaled": 0.013050406675801525,
+      "alternating_normalized": 0.6068605640781071,
+      "quadrature_difference": 1.0804074648818052e-16
+    },
+    {
+      "x": 129,
+      "deficit": 0.00016305608011008671,
+      "raw_scaled": 2.713416229111953,
+      "binomial_scaled": 0.013165899966785995,
+      "alternating_normalized": 0.642282488672553,
+      "quadrature_difference": 5.64327230778705e-17
+    },
+    {
+      "x": 257,
+      "deficit": 7.501870765456279e-05,
+      "raw_scaled": 4.954910621876218,
+      "binomial_scaled": 0.013218592839502408,
+      "alternating_normalized": 0.6722073388296028,
+      "quadrature_difference": 2.6942423986264785e-17
+    },
+    {
+      "x": 513,
+      "deficit": 3.4689049362653206e-05,
+      "raw_scaled": 9.129082431720082,
+      "binomial_scaled": 0.013242592051281886,
+      "alternating_normalized": 0.6977396764203405,
+      "quadrature_difference": 1.1478990501190278e-17
+    },
+    {
+      "x": 1025,
+      "deficit": 1.612032656050932e-05,
+      "raw_scaled": 16.936418092635105,
+      "binomial_scaled": 0.0132535515832276,
+      "alternating_normalized": 0.7197210136704376,
+      "quadrature_difference": 4.2487172634275705e-18
+    },
+    {
+      "x": 2049,
+      "deficit": 7.525946361375054e-06,
+      "raw_scaled": 31.596940729543388,
+      "binomial_scaled": 0.013258578816122787,
+      "alternating_normalized": 0.7388034184357448,
+      "quadrature_difference": 1.232432938255007e-18
+    },
+    {
+      "x": 4097,
+      "deficit": 3.5283230888265602e-06,
+      "raw_scaled": 59.224346130097146,
+      "binomial_scaled": 0.01326089649339074,
+      "alternating_normalized": 0.7554985438336316,
+      "quadrature_difference": 1.367958209815695e-19
+    },
+    {
+      "x": 8191,
+      "deficit": 1.6608391913326042e-06,
+      "raw_scaled": 111.42982188853811,
+      "binomial_scaled": 0.013261970108659244,
+      "alternating_normalized": 0.7702067286176146,
+      "quadrature_difference": 1.4907779871675686e-19
+    }
+  ],
+  "elapsed_seconds": 0.11954487510956824
+}
