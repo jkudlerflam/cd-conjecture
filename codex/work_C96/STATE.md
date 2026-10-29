@@ -1,0 +1,17 @@
+# C96 handoff
+
+[Status] Read RESULT.md and PROOF.md. The requested uniform tagged-kernel bound and full quantum thermal remainder remain open. No full d=13 mobile defect comparison or dressed clock gap is proved.
+
+[Proved, exact finite tagged calculation] A complete gap eigenbasis consists of rooted Slater determinants on twists theta_m=2pi m/N. Momenta are p_a=2pi(I_a+xi+m/N)/L with sum I_a+Nxi+m=0 mod L. Normalization is sqrt(N L^(N-1)). The number of states is binom(L-1,N-1). The A_0 form factor is the zw coefficient of det(S+zU+wV)/(N L^(N-1)), with S summing physical sites 2,...,L-1, U the site-0 outer product and V the site-1 outer product. PROOF equations (4)-(14) give the kernel. Only the zero material mode reduces to C95's two-particle-hole formula. Nonzero modes require different twisted grids.
+
+[Open] The exact formula has not supplied an all-N tail estimate. With k_N=chi_N+c_dens/N, half-density first moments through N=8 are near 0.1102/t. This is finite evidence, not a proof of boundedness or of a logarithmic tail.
+
+[Proved, new weaker comparison theorem] For chi=k-c/N, set S=sum|k| and D=sum(1+dist)|2k-k_shift_plus-k_shift_minus|. C94's zero-port product-cell coefficient obeys |Delta B|<=32 M^2 bW(S+b^2D+|c|). Means have a bounded primitive on good cells; connected cell covariances need only ||chi||_op. Smooth nonoscillatory r^-2 tails satisfy this norm after periodization. Resonant oscillatory r^-2 tails can still have logarithmic interface costs. Taking k=chi,c=0 also works, so the constant subtraction need not be identified for this alternative criterion. The actual tagged norm remains unbounded by this work.
+
+[Proved, thermal quadratic extension] At fixed J retain Href=Hb+Ja_0 Hmat and expand only in an independent centered-interaction parameter z. For real bath contacts, its covariance matrix is real positive semidefinite. For any Hermitian material sources, 0<=Re Cmat(tau)<=Re Cmat(0). Hence the resummed connected quadratic coefficient is bounded by the static thermal bath response contracted with equal-time covariance. The preceding W-relative theorem extends to isolated product thermal cells, including their full internal states, uniformly in J/T and their gaps. The nonzero port destroys the cellwise cancellation used here.
+
+[Proved, stronger remainder diagnostic] Two bath spins with opposite projector sources h_1=h and h_2=-h have Hmat=0. Even this exact frozen reference leaves a fourth-order coefficient J^4[tanh(t/T)-t/T]/(128t^3). At low T the exact residual is -J^2/(4t)+O(J^4/t^3), versus quadratic -J^2/(8t). The uniform full bound is -J^2/(4t)<=R<=0. Independent replication takes volume first. This is not a C88 counterexample. It requires retaining induced material interactions inside the thermal exponential, not merely retaining the frozen dynamics.
+
+[Open, application] PROOF (42) is the full relative interpolation target. The exact tagged static calculation does not control interacting multi-time correlations, a nonzero-port thermal comparison, the finite-K relative correction, or C93's dressed clock threshold/product auxiliary heat trace.
+
+[Checks] python3 -B tagged_kernel.py and python3 -B checks.py pass. Maximum bath dimension 6435; kernel discrepancies below 3e-15, linear residuals below 4e-13. CHECKS.md records a corrected provisional norm-test threshold. All files and execution stayed here. No network, external edits, agents, or cluster jobs. The project STATE.md was not changed under the explicit folder restriction.

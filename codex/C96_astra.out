@@ -1,0 +1,17 @@
+Partial resolution. Written in [RESULT.md](RESULT.md), [PROOF.md](PROOF.md), and [PROGRESS.md](PROGRESS.md).
+
+[Proved] An exact finite-\(N\) tagged-contact formula using twisted Slater determinants. Only the zero material-momentum mode reduces to C95’s two-particle-hole calculation.
+
+[Proved] C94 can use the weaker norm
+\[
+\sum_r|k(r)|+b^2\sum_r(1+\mathrm{dist}(r,0))|\Delta k(r)|+|c|.
+\]
+It accommodates smooth nonoscillatory \(r^{-2}\) tails despite their divergent first moment.
+
+[Proved] The quadratic comparison extends to product thermal cells uniformly in \(J/T\). A new exact diagnostic shows why retaining frozen dynamics alone still does not control the full remainder.
+
+[Open] I did not establish a uniform norm for the actual tagged kernel, the full relative thermal remainder, or the dressed contact-clock threshold. The \(d=13\) comparison therefore remains conditional.
+
+Checks pass through \(N=8\), with kernel discrepancies below \(3\times10^{-15}\). All writes and Python execution stayed inside `work_C96`.
+
+[gpt_solve: backend=codex model=gpt-6-astra effort=high transcript=20261029T064937-89102]
