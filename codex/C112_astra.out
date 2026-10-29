@@ -1,0 +1,14 @@
+The CFT constant is \(\kappa=1/(24\pi)\). XX checks confirm it for cosine and Gaussian profiles. On rings, a Casimir correction is necessary; the fundamental cosine has zero CFT adaptation deficit.
+
+The lemma as written is false. An exact gapped family at \(d=2,3,4\) has
+\[
+\frac{\mathrm{Def}(w)}{M\sum(\nabla w)^2/w}\longrightarrow\frac{t^2}{2\delta^2},
+\qquad A=0.
+\]
+Evaluated ratios reach approximately \(500{,}000\) in each dimension, and the supremum is infinite. The mechanism is a discrete-divergence addition to the bond. A version restricted to a specified minimizing representative remains unresolved.
+
+Small XXZ, Heisenberg, SU(d), and unrestricted random-bond checks are complete. The moderate-size survey remains unrun because both Typhon connections timed out. Guarded SLURM jobs are prepared.
+
+Results and derivations are in [RESULT.md](<<local> Dropbox/Jonah Kudler-Flam/Claude/Projects/Modular c-Theorem/notes/cd_conjecture/codex/work_C112/RESULT.md>) and [PROOF.md](<<local> Dropbox/Jonah Kudler-Flam/Claude/Projects/Modular c-Theorem/notes/cd_conjecture/codex/work_C112/PROOF.md>).
+
+[gpt_solve: backend=codex model=gpt-6-astra effort=high transcript=20261029T170153-64825]

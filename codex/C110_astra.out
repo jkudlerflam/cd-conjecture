@@ -1,0 +1,11 @@
+The main problem remains open. I proved three obstructions to the proposed prescriptions:
+
+- Twist infima give \(-4t\) for XX instead of \(A=2t\).
+- Unrestricted seam twists can depend on the gauge representative.
+- A canonical-gauge, uniformly gapped spin chain has a positive smooth-cutoff energy deficit of order \(1/L\), despite \(A=0\).
+
+I also constructed a finite, gauge-invariant upper semicontinuous cutoff observable. Its comparison with physical \(A\) remains unproved, so this does not establish finite \(F(d)\). No divergent physical-\(A\) sequence was found.
+
+All checks passed. Derivations and results are in [PROOF.md](PROOF.md) and [RESULT.md](RESULT.md); progress and local memory were updated.
+
+[gpt_solve: backend=codex model=gpt-6-astra effort=high transcript=20261029T165943-63830]

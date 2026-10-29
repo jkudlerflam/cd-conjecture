@@ -1,0 +1,9 @@
+The lemma is false, even for the unique bond representative minimizing \(M\).
+
+I constructed a \(d=4\), \(M=8\) chain with a ferromagnetic \(z=2\) infrared for which the deficit stays positive as the modulation wavelength grows, while the proposed gradient allowance tends to zero. A gapped variant also defeats any universal coefficient.
+
+The continuum calculation gives \(\kappa=1/(24\pi)\). The implication \(A\leq24\pi C M f(d)\) survives under explicit matching assumptions, but the converse fails because additional gradient response is invisible to \(A\). The bound on \(A\) itself remains open.
+
+Full derivations and counterexamples are in [PROOF.md](<PROOF.md>), with the conclusions in [RESULT.md](<RESULT.md>). I also completed PROGRESS.md and local STATE.md. All small algebra and spectral checks passed; no heavy numerics were needed.
+
+[gpt_solve: backend=codex model=gpt-6-astra effort=high transcript=20261029T170155-65009]

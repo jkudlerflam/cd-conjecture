@@ -1,0 +1,12 @@
+Completed C109. The general neutral-sector bound remains unproved, but the missing inputs are explicit.
+
+- Under dynamical CFT matching, locality gives \(v_a\le4eM\). Thus one minimal-model factor satisfies \(cv<4eM\), and one standard parafermion factor satisfies \(cv<8eM\). Uncontrolled multiplicity prevents a general sum bound.
+- Discrete twists need a bound on \(L\,\Delta E_{\mathrm{twist}}\). The bond norm only bounds \(\Delta E_{\mathrm{twist}}\). Replica twists reduce exactly to C98 ring gluing.
+- The spatial energy-current tail measures \(\sum c_av_a^4\). Moreover, a velocity floor is false already for a \(d=2\) Ising family with \(v=2\gamma\) and \(M=\sqrt{1+\gamma^2}\).
+- A charged extension still needs a quantitative comparison of the original and extended Casimir coefficients.
+
+Derivations and sufficient replacement hypotheses are in [PROOF.md](<<local> Dropbox/Jonah Kudler-Flam/Claude/Projects/Modular c-Theorem/notes/cd_conjecture/codex/work_C109/PROOF.md>), with the summary in [RESULT.md](<<local> Dropbox/Jonah Kudler-Flam/Claude/Projects/Modular c-Theorem/notes/cd_conjecture/codex/work_C109/RESULT.md>).
+
+All small checks passed. PROGRESS.md and local STATE.md are updated. No heavy numerics or writes outside the folder.
+
+[gpt_solve: backend=codex model=gpt-6-astra effort=high transcript=20261029T165941-63646]

@@ -1,0 +1,15 @@
+The lemma is false as stated, even when the bond attains the optimized \(M\).
+
+I constructed a family with fixed \(d=8\), \(M=3/2\), and infrared \(A=1\), but
+\[
+\liminf_{\text{smooth limit}}
+\frac{\operatorname{Def}(w)}{M\sum_x(\Delta w_x)^2/w_x}
+\ge \frac{1}{300\delta}.
+\]
+Here \(2\delta>0\) is a spectator gap that can be arbitrarily small. For quadratic modular weights, the spectator contributes \((100\delta)^{-1}\log L+O_\delta(1)\), so the obstruction survives at logarithmic order. This does not disprove the velocity-weighted bound.
+
+Full derivation in [PROOF.md](<<local> Dropbox/Jonah Kudler-Flam/Claude/Projects/Modular c-Theorem/notes/cd_conjecture/codex/work_C111/PROOF.md>), summary in [RESULT.md](<<local> Dropbox/Jonah Kudler-Flam/Claude/Projects/Modular c-Theorem/notes/cd_conjecture/codex/work_C111/RESULT.md>). All requested records were written.
+
+Small checks passed on the construction, XX, Heisenberg, XXZ, SU(3), and random bonds. Typhon timed out during banner exchange; the large Gaussian run is prepared but unrun.
+
+[gpt_solve: backend=codex model=gpt-6-astra effort=high transcript=20261029T170151-64605]

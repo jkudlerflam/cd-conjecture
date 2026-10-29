@@ -1,0 +1,126 @@
+{
+  "status": "numerical",
+  "xx_susceptibility": [
+    {
+      "q": 0.4,
+      "second_order_deficit_per_site": 0.001072476079114216,
+      "kappa_eff": 0.013405950988927696,
+      "kappa_eff_over_kappa": 1.0107848913888018,
+      "closed_form_error": 1.0842021724855044e-18
+    },
+    {
+      "q": 0.2,
+      "second_order_deficit_per_site": 0.0002659675363397136,
+      "kappa_eff": 0.013298376816985678,
+      "kappa_eff_over_kappa": 1.0026739899098644,
+      "closed_form_error": 3.63207727782644e-18
+    },
+    {
+      "q": 0.1,
+      "second_order_deficit_per_site": 6.635879961301986e-05,
+      "kappa_eff": 0.013271759922603968,
+      "kappa_eff_over_kappa": 1.0006671233534417,
+      "closed_form_error": 5.854691731421724e-18
+    },
+    {
+      "q": 0.05,
+      "second_order_deficit_per_site": 1.6581403484997135e-05,
+      "kappa_eff": 0.013265122787997706,
+      "kappa_eff_over_kappa": 1.0001666951937633,
+      "closed_form_error": 8.59569034873664e-18
+    }
+  ],
+  "ferromagnetic_trial_bounds": [
+    {
+      "L": 128,
+      "epsilon": 0.1,
+      "t": 1.0,
+      "b": 0.5,
+      "M": 0.5,
+      "trial_deficit_lower_bound": 0.07336803610194788,
+      "analytic_deficit_lower_bound": 0.06439577913634238,
+      "ratio_lower_bound": 94.93211950169685,
+      "G": 0.001545694681358852
+    },
+    {
+      "L": 512,
+      "epsilon": 0.1,
+      "t": 1.0,
+      "b": 0.5,
+      "M": 0.5,
+      "trial_deficit_lower_bound": 0.07724805757350685,
+      "analytic_deficit_lower_bound": 0.07500528547493306,
+      "ratio_lower_bound": 399.7360538391576,
+      "G": 0.0003864953227590988
+    },
+    {
+      "L": 2048,
+      "epsilon": 0.1,
+      "t": 1.0,
+      "b": 0.5,
+      "M": 0.5,
+      "trial_deficit_lower_bound": 0.07821696448851521,
+      "analytic_deficit_lower_bound": 0.07765627602921894,
+      "ratio_lower_bound": 1618.9806920663243,
+      "G": 9.662495034290492e-05
+    },
+    {
+      "L": 8192,
+      "epsilon": 0.1,
+      "t": 1.0,
+      "b": 0.5,
+      "M": 0.5,
+      "trial_deficit_lower_bound": 0.07845910908097148,
+      "analytic_deficit_lower_bound": 0.07831893703748155,
+      "ratio_lower_bound": 6495.96626793938,
+      "G": 2.41562550803885e-05
+    }
+  ],
+  "gauge_spectrum_check": [
+    {
+      "d": 2,
+      "draw": 0,
+      "uniform_energy_change": 1.7763568394002505e-15
+    },
+    {
+      "d": 2,
+      "draw": 1,
+      "uniform_energy_change": 7.105427357601002e-15
+    },
+    {
+      "d": 2,
+      "draw": 2,
+      "uniform_energy_change": 1.1546319456101628e-14
+    },
+    {
+      "d": 3,
+      "draw": 0,
+      "uniform_energy_change": 1.3322676295501878e-15
+    },
+    {
+      "d": 3,
+      "draw": 1,
+      "uniform_energy_change": 1.7763568394002505e-15
+    },
+    {
+      "d": 3,
+      "draw": 2,
+      "uniform_energy_change": 4.440892098500626e-16
+    },
+    {
+      "d": 4,
+      "draw": 0,
+      "uniform_energy_change": 1.3322676295501878e-15
+    },
+    {
+      "d": 4,
+      "draw": 1,
+      "uniform_energy_change": 8.881784197001252e-16
+    },
+    {
+      "d": 4,
+      "draw": 2,
+      "uniform_energy_change": 3.552713678800501e-15
+    }
+  ]
+}

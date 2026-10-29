@@ -1,0 +1,13 @@
+Wrote [RESULT.md](<<local> Dropbox/Jonah Kudler-Flam/Claude/Projects/Modular c-Theorem/notes/cd_conjecture/codex/work_C108/RESULT.md>) and [PROOF.md](<<local> Dropbox/Jonah Kudler-Flam/Claude/Projects/Modular c-Theorem/notes/cd_conjecture/codex/work_C108/PROOF.md>).
+
+Three results emerged.
+
+- Proved a chemical-potential range bound of \(8M\) for integer-normalized charges, hence an integrated curvature bound including Mott cusp contributions.
+- Assuming local real-time Luttinger matching, proved \(v_a\le6\mathrm e M\) using Lieb–Robinson locality. Thus \(D e''\le36\mathrm e^2M^2\) for a non-drifting single sector, so large curvature forces small stiffness.
+- If microscopic charges independently resolve every Gaussian mode, this gives \(A_{\mathrm{U(1)}}\le6\mathrm e M(d-1)\).
+
+The general sum remains open. Several modes can couple to the same charge, so nonzero coupling does not justify the proposed sector count. A pointwise bound on smooth \(e''\) alone also remains unproved.
+
+Small matrix and analytic consistency checks passed. Updated local progress and memory files; no heavy numerics or files outside C108 were touched.
+
+[gpt_solve: backend=codex model=gpt-6-astra effort=high transcript=20261029T165939-63460]

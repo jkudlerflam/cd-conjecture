@@ -1,0 +1,43 @@
+{
+  "status": "numerical checks of proved formulas",
+  "rows": [
+    {
+      "R": 32,
+      "G": 0.10275468946719851,
+      "gapped_Def_over_G": 0.24452182626264973,
+      "ferromagnet_Def_lower": 0.28539903190227495,
+      "ferromagnet_lower_over_G": 2.7774793868982535
+    },
+    {
+      "R": 128,
+      "G": 0.025745072163352707,
+      "gapped_Def_over_G": 0.24496996373630917,
+      "ferromagnet_Def_lower": 0.4012334136961052,
+      "ferromagnet_lower_over_G": 15.58486265450241
+    },
+    {
+      "R": 512,
+      "G": 0.00643714872477787,
+      "gapped_Def_over_G": 0.24499812214342068,
+      "ferromagnet_Def_lower": 0.4301820470618891,
+      "ferromagnet_lower_over_G": 66.82804226753882
+    },
+    {
+      "R": 2048,
+      "G": 0.0016093009413264065,
+      "gapped_Def_over_G": 0.24499988263165806,
+      "ferromagnet_Def_lower": 0.437413229514578,
+      "ferromagnet_lower_over_G": 271.8032521338466
+    }
+  ],
+  "gapped_limit": 0.24499999999999997,
+  "ferromagnet_witness_limit": 0.439822971502571,
+  "circle_mobius_defect": -6.245004513516506e-17,
+  "gapped_raw_halfspread": 1.720465053408525,
+  "gapped_optimized_M": 1.0,
+  "four_state_bond_extrema": [
+    -4.0,
+    12.0
+  ],
+  "two_adjacent_B_bonds_min": -3.1726399403066667e-16
+}
