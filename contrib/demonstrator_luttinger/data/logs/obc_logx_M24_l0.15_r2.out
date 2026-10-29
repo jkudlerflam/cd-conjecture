@@ -1,0 +1,33 @@
+[      0s] sector Q=4.0
+[      0s]   chi=32 sweep=0 E=-0.0522245194736 trunc=3.1e-27
+[      1s]   chi=32 sweep=1 E=-0.0551472049478 trunc=4.1e-08
+[      1s]   chi=32 sweep=2 E=-0.0551682542767 trunc=9.7e-10
+[      2s]   chi=32 sweep=3 E=-0.0551682542791 trunc=3.8e-10
+[      3s]   chi=64 sweep=0 E=-0.0551682543167 trunc=6.0e-14
+[      4s]   chi=64 sweep=1 E=-0.0551682543167 trunc=6.1e-14
+[      5s]   chi=64 sweep=2 E=-0.0551682543167 trunc=6.1e-14
+[      5s] sector Q=5.0
+[      6s]   chi=32 sweep=0 E=-0.0466136503249 trunc=6.0e-27
+[      6s]   chi=32 sweep=1 E=-0.0500136120721 trunc=5.8e-08
+[      7s]   chi=32 sweep=2 E=-0.0500875640427 trunc=6.1e-09
+[      7s]   chi=32 sweep=3 E=-0.0500875641188 trunc=1.2e-10
+[      8s]   chi=64 sweep=0 E=-0.0500875641294 trunc=3.6e-15
+[      9s]   chi=64 sweep=1 E=-0.0500875641294 trunc=3.8e-15
+[     10s]   chi=64 sweep=2 E=-0.0500875641294 trunc=3.8e-15
+[     10s] sector Q=3.0
+[     10s]   chi=32 sweep=0 E=-0.0579083243994 trunc=0.0e+00
+[     11s]   chi=32 sweep=1 E=-0.0592150067453 trunc=9.3e-09
+[     11s]   chi=32 sweep=2 E=-0.0592151153092 trunc=5.8e-10
+[     12s]   chi=32 sweep=3 E=-0.0592151153093 trunc=5.9e-10
+[     13s]   chi=64 sweep=0 E=-0.0592151153791 trunc=1.2e-13
+[     14s]   chi=64 sweep=1 E=-0.0592151153791 trunc=1.2e-13
+[     16s]   chi=64 sweep=2 E=-0.0592151153791 trunc=1.2e-13
+[     16s] excited state at Q0
+[     16s]   chi=32 sweep=0 E=-0.0536764185828 trunc=0.0e+00
+[     16s]   chi=32 sweep=1 E=-0.0541958483476 trunc=1.5e-08
+[     17s]   chi=32 sweep=2 E=-0.0541958524460 trunc=1.0e-08
+[     17s]   chi=32 sweep=3 E=-0.0541958524461 trunc=9.9e-09
+[     19s]   chi=64 sweep=0 E=-0.0541958533246 trunc=1.7e-12
+[     20s]   chi=64 sweep=1 E=-0.0541958533246 trunc=1.8e-12
+[     21s]   chi=64 sweep=2 E=-0.0541958533246 trunc=1.8e-12
+[     21s] summary {'E0': -0.055168254316748634, 'charge_gap': 0.001033829125006533, 'E1': 0.0009724009921456486, 'K_gap': 0.9405819285072897, 'J': np.float64(0.012656249999999999), 'time_s': 21.467090845108032}

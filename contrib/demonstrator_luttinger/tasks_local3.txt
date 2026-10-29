@@ -1,0 +1,9 @@
+vumps_fes.py fesS_logx_l0.05_r2 --model logical_x --lam 0.05 --rho 2 --chis 3 4 5 6 8 10 12 16
+vumps_fes.py fesS_logx_l0.05_r1 --model logical_x --lam 0.05 --rho 1 --chis 3 4 5 6 8 10 12 16
+vumps_fes.py fesS_logx_l0.05_r0.5 --model logical_x --lam 0.05 --rho 0.5 --chis 3 4 5 6 8 10 12 16
+vumps_fes.py fesS_logx_l0.10_r2 --model logical_x --lam 0.10 --rho 2 --chis 3 4 5 6 8 10 12 16
+vumps_fes.py fesS_logx_l0.10_r1 --model logical_x --lam 0.10 --rho 1 --chis 3 4 5 6 8 10 12 16
+vumps_fes.py fesS_logx_l0.10_r0.5 --model logical_x --lam 0.10 --rho 0.5 --chis 3 4 5 6 8 10 12 16
+vumps_fes.py fesS_logx_l0.15_r2 --model logical_x --lam 0.15 --rho 2 --chis 3 4 5 6 8 10 12 16
+vumps_fes.py fesS_logx_l0.15_r1 --model logical_x --lam 0.15 --rho 1 --chis 3 4 5 6 8 10 12 16
+vumps_fes.py fesS_logx_l0.15_r0.5 --model logical_x --lam 0.15 --rho 0.5 --chis 3 4 5 6 8 10 12 16

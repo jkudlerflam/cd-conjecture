@@ -1,0 +1,45 @@
+[      0s] sector Q=8.0
+[      1s]   chi=32 sweep=0 E=-0.0864652860585 trunc=1.1e-26
+[      2s]   chi=32 sweep=1 E=-0.0918136227908 trunc=1.2e-07
+[      3s]   chi=32 sweep=2 E=-0.0945124004761 trunc=1.6e-07
+[      4s]   chi=32 sweep=3 E=-0.0952472545067 trunc=6.9e-08
+[      5s]   chi=32 sweep=4 E=-0.0952651039748 trunc=1.3e-08
+[      6s]   chi=32 sweep=5 E=-0.0952651046325 trunc=2.1e-08
+[      7s]   chi=32 sweep=6 E=-0.0952651046357 trunc=2.2e-08
+[     10s]   chi=64 sweep=0 E=-0.0952651089216 trunc=3.2e-11
+[     15s]   chi=64 sweep=1 E=-0.0952651089216 trunc=4.3e-11
+[     18s]   chi=64 sweep=2 E=-0.0952651089216 trunc=4.3e-11
+[     18s] sector Q=9.0
+[     19s]   chi=32 sweep=0 E=-0.0835087179172 trunc=3.5e-27
+[     20s]   chi=32 sweep=1 E=-0.0886925627435 trunc=4.6e-08
+[     21s]   chi=32 sweep=2 E=-0.0917680757238 trunc=1.1e-07
+[     22s]   chi=32 sweep=3 E=-0.0927207827844 trunc=5.7e-08
+[     23s]   chi=32 sweep=4 E=-0.0927844559404 trunc=2.1e-08
+[     24s]   chi=32 sweep=5 E=-0.0927844731423 trunc=1.6e-08
+[     25s]   chi=32 sweep=6 E=-0.0927844731249 trunc=1.6e-08
+[     28s]   chi=64 sweep=0 E=-0.0927844765637 trunc=2.5e-11
+[     32s]   chi=64 sweep=1 E=-0.0927844765638 trunc=3.2e-11
+[     36s]   chi=64 sweep=2 E=-0.0927844765638 trunc=3.2e-11
+[     36s] sector Q=7.0
+[     37s]   chi=32 sweep=0 E=-0.0897626642439 trunc=8.6e-27
+[     38s]   chi=32 sweep=1 E=-0.0949357411482 trunc=8.4e-08
+[     39s]   chi=32 sweep=2 E=-0.0970988206981 trunc=6.1e-08
+[     40s]   chi=32 sweep=3 E=-0.0974672676094 trunc=5.3e-08
+[     41s]   chi=32 sweep=4 E=-0.0974709963508 trunc=2.4e-08
+[     42s]   chi=32 sweep=5 E=-0.0974709966022 trunc=2.5e-08
+[     43s]   chi=32 sweep=6 E=-0.0974709966019 trunc=2.5e-08
+[     46s]   chi=64 sweep=0 E=-0.0974710020417 trunc=4.2e-11
+[     50s]   chi=64 sweep=1 E=-0.0974710020419 trunc=5.6e-11
+[     53s]   chi=64 sweep=2 E=-0.0974710020418 trunc=5.7e-11
+[     53s] excited state at Q0
+[     54s]   chi=32 sweep=0 E=-0.0827500599107 trunc=1.3e-26
+[     55s]   chi=32 sweep=1 E=-0.0894731298277 trunc=2.3e-07
+[     56s]   chi=32 sweep=2 E=-0.0936259102229 trunc=6.9e-08
+[     57s]   chi=32 sweep=3 E=-0.0947154568225 trunc=6.9e-08
+[     59s]   chi=32 sweep=4 E=-0.0949220064761 trunc=9.9e-08
+[     60s]   chi=32 sweep=5 E=-0.0949223442458 trunc=1.8e-07
+[     61s]   chi=32 sweep=6 E=-0.0949223442089 trunc=1.9e-07
+[     64s]   chi=64 sweep=0 E=-0.0949223862420 trunc=6.0e-10
+[     68s]   chi=64 sweep=1 E=-0.0949223862406 trunc=6.4e-10
+[     71s]   chi=64 sweep=2 E=-0.0949223862406 trunc=6.4e-10
+[     71s] summary {'E0': -0.09526510892164877, 'charge_gap': 0.00027473923771692554, 'E1': 0.00034272268104672265, 'K_gap': 1.2474471571470365, 'J': np.float64(0.012656249999999999), 'time_s': 71.29040908813477}

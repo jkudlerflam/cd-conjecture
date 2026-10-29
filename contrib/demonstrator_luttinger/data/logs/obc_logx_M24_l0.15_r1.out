@@ -1,0 +1,34 @@
+[      0s] sector Q=4.0
+[      0s]   chi=32 sweep=0 E=-0.0524491688411 trunc=2.9e-29
+[      1s]   chi=32 sweep=1 E=-0.0550125113508 trunc=4.2e-08
+[      1s]   chi=32 sweep=2 E=-0.0550303759136 trunc=9.9e-10
+[      2s]   chi=32 sweep=3 E=-0.0550303759292 trunc=3.6e-10
+[      3s]   chi=64 sweep=0 E=-0.0550303759612 trunc=5.5e-14
+[      4s]   chi=64 sweep=1 E=-0.0550303759612 trunc=5.7e-14
+[      5s]   chi=64 sweep=2 E=-0.0550303759612 trunc=5.7e-14
+[      5s] sector Q=5.0
+[      6s]   chi=32 sweep=0 E=-0.0474802587123 trunc=8.0e-27
+[      6s]   chi=32 sweep=1 E=-0.0505443911392 trunc=6.3e-08
+[      7s]   chi=32 sweep=2 E=-0.0506388000105 trunc=8.2e-09
+[      7s]   chi=32 sweep=3 E=-0.0506388002046 trunc=1.4e-10
+[      8s]   chi=32 sweep=4 E=-0.0506388002046 trunc=1.4e-10
+[      9s]   chi=64 sweep=0 E=-0.0506388002149 trunc=4.2e-15
+[     10s]   chi=64 sweep=1 E=-0.0506388002149 trunc=4.6e-15
+[     10s]   chi=64 sweep=2 E=-0.0506388002149 trunc=4.6e-15
+[     10s] sector Q=3.0
+[     11s]   chi=32 sweep=0 E=-0.0565990469430 trunc=0.0e+00
+[     11s]   chi=32 sweep=1 E=-0.0585166872381 trunc=2.2e-08
+[     11s]   chi=32 sweep=2 E=-0.0585176034558 trunc=6.1e-10
+[     12s]   chi=32 sweep=3 E=-0.0585176034555 trunc=6.6e-10
+[     13s]   chi=64 sweep=0 E=-0.0585176035257 trunc=1.1e-13
+[     14s]   chi=64 sweep=1 E=-0.0585176035257 trunc=1.1e-13
+[     15s]   chi=64 sweep=2 E=-0.0585176035257 trunc=1.1e-13
+[     15s] excited state at Q0
+[     16s]   chi=32 sweep=0 E=-0.0535695381738 trunc=0.0e+00
+[     16s]   chi=32 sweep=1 E=-0.0541076102656 trunc=1.2e-08
+[     16s]   chi=32 sweep=2 E=-0.0541076251354 trunc=1.2e-08
+[     17s]   chi=32 sweep=3 E=-0.0541076251355 trunc=1.2e-08
+[     18s]   chi=64 sweep=0 E=-0.0541076259800 trunc=1.9e-12
+[     19s]   chi=64 sweep=1 E=-0.0541076259800 trunc=2.1e-12
+[     20s]   chi=64 sweep=2 E=-0.0541076259800 trunc=2.1e-12
+[     20s] summary {'E0': -0.05503037596120976, 'charge_gap': 0.0009043481818442889, 'E1': 0.0009227499811739343, 'K_gap': 1.02034813548485, 'J': np.float64(0.012656249999999999), 'time_s': 20.482328176498413}

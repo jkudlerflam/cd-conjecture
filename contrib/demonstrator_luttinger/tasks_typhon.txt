@@ -1,0 +1,36 @@
+run_obc.py obc_micro_M48_l0.05_r2 --model micro --M 48 --lam 0.05 --rho 2 --chis 64 128 192
+run_obc.py obc_micro_M24_l0.05_r2 --model micro --M 24 --lam 0.05 --rho 2 --chis 48 96 160
+vumps_fes.py fes_micro_l0.05_r2 --model micro --lam 0.05 --rho 2 --chis 8 12 16 24 32 48 64
+run_obc.py obc_micro_M12_l0.05_r2 --model micro --M 12 --lam 0.05 --rho 2 --chis 32 64 128
+run_obc.py obc_micro_M48_l0.05_r1 --model micro --M 48 --lam 0.05 --rho 1 --chis 64 128 192
+run_obc.py obc_micro_M24_l0.05_r1 --model micro --M 24 --lam 0.05 --rho 1 --chis 48 96 160
+vumps_fes.py fes_micro_l0.05_r1 --model micro --lam 0.05 --rho 1 --chis 8 12 16 24 32 48 64
+run_obc.py obc_micro_M12_l0.05_r1 --model micro --M 12 --lam 0.05 --rho 1 --chis 32 64 128
+run_obc.py obc_micro_M48_l0.05_r0.5 --model micro --M 48 --lam 0.05 --rho 0.5 --chis 64 128 192
+run_obc.py obc_micro_M24_l0.05_r0.5 --model micro --M 24 --lam 0.05 --rho 0.5 --chis 48 96 160
+vumps_fes.py fes_micro_l0.05_r0.5 --model micro --lam 0.05 --rho 0.5 --chis 8 12 16 24 32 48 64
+run_obc.py obc_micro_M12_l0.05_r0.5 --model micro --M 12 --lam 0.05 --rho 0.5 --chis 32 64 128
+run_obc.py obc_micro_M48_l0.10_r2 --model micro --M 48 --lam 0.10 --rho 2 --chis 64 128 192
+run_obc.py obc_micro_M24_l0.10_r2 --model micro --M 24 --lam 0.10 --rho 2 --chis 48 96 160
+vumps_fes.py fes_micro_l0.10_r2 --model micro --lam 0.10 --rho 2 --chis 8 12 16 24 32 48 64
+run_obc.py obc_micro_M12_l0.10_r2 --model micro --M 12 --lam 0.10 --rho 2 --chis 32 64 128
+run_obc.py obc_micro_M48_l0.10_r1 --model micro --M 48 --lam 0.10 --rho 1 --chis 64 128 192
+run_obc.py obc_micro_M24_l0.10_r1 --model micro --M 24 --lam 0.10 --rho 1 --chis 48 96 160
+vumps_fes.py fes_micro_l0.10_r1 --model micro --lam 0.10 --rho 1 --chis 8 12 16 24 32 48 64
+run_obc.py obc_micro_M12_l0.10_r1 --model micro --M 12 --lam 0.10 --rho 1 --chis 32 64 128
+run_obc.py obc_micro_M48_l0.10_r0.5 --model micro --M 48 --lam 0.10 --rho 0.5 --chis 64 128 192
+run_obc.py obc_micro_M24_l0.10_r0.5 --model micro --M 24 --lam 0.10 --rho 0.5 --chis 48 96 160
+vumps_fes.py fes_micro_l0.10_r0.5 --model micro --lam 0.10 --rho 0.5 --chis 8 12 16 24 32 48 64
+run_obc.py obc_micro_M12_l0.10_r0.5 --model micro --M 12 --lam 0.10 --rho 0.5 --chis 32 64 128
+run_obc.py obc_micro_M48_l0.15_r2 --model micro --M 48 --lam 0.15 --rho 2 --chis 64 128 192
+run_obc.py obc_micro_M24_l0.15_r2 --model micro --M 24 --lam 0.15 --rho 2 --chis 48 96 160
+vumps_fes.py fes_micro_l0.15_r2 --model micro --lam 0.15 --rho 2 --chis 8 12 16 24 32 48 64
+run_obc.py obc_micro_M12_l0.15_r2 --model micro --M 12 --lam 0.15 --rho 2 --chis 32 64 128
+run_obc.py obc_micro_M48_l0.15_r1 --model micro --M 48 --lam 0.15 --rho 1 --chis 64 128 192
+run_obc.py obc_micro_M24_l0.15_r1 --model micro --M 24 --lam 0.15 --rho 1 --chis 48 96 160
+vumps_fes.py fes_micro_l0.15_r1 --model micro --lam 0.15 --rho 1 --chis 8 12 16 24 32 48 64
+run_obc.py obc_micro_M12_l0.15_r1 --model micro --M 12 --lam 0.15 --rho 1 --chis 32 64 128
+run_obc.py obc_micro_M48_l0.15_r0.5 --model micro --M 48 --lam 0.15 --rho 0.5 --chis 64 128 192
+run_obc.py obc_micro_M24_l0.15_r0.5 --model micro --M 24 --lam 0.15 --rho 0.5 --chis 48 96 160
+vumps_fes.py fes_micro_l0.15_r0.5 --model micro --lam 0.15 --rho 0.5 --chis 8 12 16 24 32 48 64
+run_obc.py obc_micro_M12_l0.15_r0.5 --model micro --M 12 --lam 0.15 --rho 0.5 --chis 32 64 128

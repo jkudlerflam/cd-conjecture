@@ -1,0 +1,5 @@
+run_obc.py obc_micro_M48_l0.025_r2 --model micro --M 48 --lam 0.025 --rho 2 --chis 64 128 --kmax 60
+run_obc.py obc_micro_M48_l0.025_r1 --model micro --M 48 --lam 0.025 --rho 1 --chis 64 128 --kmax 60
+run_obc.py obc_micro_M48_l0.025_r0.5 --model micro --M 48 --lam 0.025 --rho 0.5 --chis 64 128 --kmax 60
+run_obc.py obc_micro_M48_l0.0125_r1 --model micro --M 48 --lam 0.0125 --rho 1 --chis 64 128 --kmax 80
+run_obc.py obc_micro_M48_l0.0125_r0.5 --model micro --M 48 --lam 0.0125 --rho 0.5 --chis 64 128 --kmax 80

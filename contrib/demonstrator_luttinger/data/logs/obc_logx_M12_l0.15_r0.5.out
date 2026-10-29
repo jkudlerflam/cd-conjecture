@@ -1,0 +1,29 @@
+[      0s] sector Q=2.0
+[      0s]   chi=32 sweep=0 E=-0.0228424632272 trunc=0.0e+00
+[      0s]   chi=32 sweep=1 E=-0.0228426313063 trunc=1.9e-14
+[      0s]   chi=32 sweep=2 E=-0.0228426313063 trunc=3.9e-26
+[      0s]   chi=64 sweep=0 E=-0.0228426313063 trunc=9.3e-32
+[      0s]   chi=64 sweep=1 E=-0.0228426313063 trunc=9.6e-32
+[      0s]   chi=64 sweep=2 E=-0.0228426313063 trunc=9.3e-32
+[      0s] sector Q=3.0
+[      0s]   chi=32 sweep=0 E=-0.0200872592455 trunc=0.0e+00
+[      1s]   chi=32 sweep=1 E=-0.0200884240141 trunc=9.3e-13
+[      1s]   chi=32 sweep=2 E=-0.0200884240141 trunc=1.3e-22
+[      1s]   chi=64 sweep=0 E=-0.0200884240141 trunc=1.2e-26
+[      1s]   chi=64 sweep=1 E=-0.0200884240141 trunc=7.3e-35
+[      1s]   chi=64 sweep=2 E=-0.0200884240141 trunc=4.9e-35
+[      1s] sector Q=1.0
+[      1s]   chi=32 sweep=0 E=-0.0245452881207 trunc=0.0e+00
+[      1s]   chi=32 sweep=1 E=-0.0245452928535 trunc=2.2e-15
+[      1s]   chi=32 sweep=2 E=-0.0245452928535 trunc=7.9e-26
+[      1s]   chi=64 sweep=0 E=-0.0245452928535 trunc=1.9e-31
+[      1s]   chi=64 sweep=1 E=-0.0245452928535 trunc=1.9e-31
+[      1s]   chi=64 sweep=2 E=-0.0245452928535 trunc=2.0e-31
+[      1s] excited state at Q0
+[      1s]   chi=32 sweep=0 E=-0.0215200427397 trunc=0.0e+00
+[      1s]   chi=32 sweep=1 E=-0.0215203349893 trunc=8.5e-14
+[      1s]   chi=32 sweep=2 E=-0.0215203349893 trunc=2.2e-23
+[      1s]   chi=64 sweep=0 E=-0.0215203349893 trunc=3.2e-27
+[      1s]   chi=64 sweep=1 E=-0.0215203349893 trunc=6.0e-32
+[      1s]   chi=64 sweep=2 E=-0.0215203349893 trunc=5.6e-32
+[      1s] summary {'E0': -0.02284263130630567, 'charge_gap': 0.0010515457449946225, 'E1': 0.0013222963170157614, 'K_gap': 1.2574786435206615, 'J': np.float64(0.012656249999999999), 'time_s': 1.218756914138794}

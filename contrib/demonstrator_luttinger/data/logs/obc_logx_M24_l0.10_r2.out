@@ -1,0 +1,33 @@
+[      0s] sector Q=4.0
+[      0s]   chi=32 sweep=0 E=-0.0266141798494 trunc=1.9e-28
+[      1s]   chi=32 sweep=1 E=-0.0279496130826 trunc=3.1e-08
+[      2s]   chi=32 sweep=2 E=-0.0279574620848 trunc=9.4e-10
+[      3s]   chi=32 sweep=3 E=-0.0279574620867 trunc=3.9e-10
+[      4s]   chi=64 sweep=0 E=-0.0279574621059 trunc=6.0e-14
+[      6s]   chi=64 sweep=1 E=-0.0279574621059 trunc=6.1e-14
+[      8s]   chi=64 sweep=2 E=-0.0279574621059 trunc=6.1e-14
+[      8s] sector Q=5.0
+[      8s]   chi=32 sweep=0 E=-0.0234624953619 trunc=3.1e-27
+[      9s]   chi=32 sweep=1 E=-0.0253384536839 trunc=6.0e-08
+[      9s]   chi=32 sweep=2 E=-0.0253660404320 trunc=2.5e-09
+[     10s]   chi=32 sweep=3 E=-0.0253660404614 trunc=1.2e-10
+[     12s]   chi=64 sweep=0 E=-0.0253660404667 trunc=3.5e-15
+[     13s]   chi=64 sweep=1 E=-0.0253660404667 trunc=3.7e-15
+[     14s]   chi=64 sweep=2 E=-0.0253660404667 trunc=3.7e-15
+[     14s] sector Q=3.0
+[     14s]   chi=32 sweep=0 E=-0.0294472913207 trunc=0.0e+00
+[     15s]   chi=32 sweep=1 E=-0.0300218934571 trunc=8.2e-09
+[     16s]   chi=32 sweep=2 E=-0.0300219087358 trunc=5.8e-10
+[     16s]   chi=32 sweep=3 E=-0.0300219087358 trunc=5.8e-10
+[     18s]   chi=64 sweep=0 E=-0.0300219087713 trunc=1.2e-13
+[     20s]   chi=64 sweep=1 E=-0.0300219087713 trunc=1.2e-13
+[     22s]   chi=64 sweep=2 E=-0.0300219087713 trunc=1.2e-13
+[     22s] excited state at Q0
+[     23s]   chi=32 sweep=0 E=-0.0272725419660 trunc=0.0e+00
+[     23s]   chi=32 sweep=1 E=-0.0274636423683 trunc=9.6e-09
+[     24s]   chi=32 sweep=2 E=-0.0274636427882 trunc=9.7e-09
+[     25s]   chi=32 sweep=3 E=-0.0274636427882 trunc=9.6e-09
+[     27s]   chi=64 sweep=0 E=-0.0274636432277 trunc=1.7e-12
+[     29s]   chi=64 sweep=1 E=-0.0274636432277 trunc=1.8e-12
+[     31s]   chi=64 sweep=2 E=-0.0274636432277 trunc=1.8e-12
+[     31s] summary {'E0': -0.027957462105898792, 'charge_gap': 0.0005269749737686624, 'E1': 0.0004938188782119199, 'K_gap': 0.9370822198260638, 'J': np.float64(0.0056250000000000015), 'time_s': 30.589703798294067}

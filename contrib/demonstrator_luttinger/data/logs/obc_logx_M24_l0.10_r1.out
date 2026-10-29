@@ -1,0 +1,33 @@
+[      0s] sector Q=4.0
+[      0s]   chi=32 sweep=0 E=-0.0266785051125 trunc=1.7e-28
+[      1s]   chi=32 sweep=1 E=-0.0279218122415 trunc=2.3e-08
+[      1s]   chi=32 sweep=2 E=-0.0279283064585 trunc=1.2e-09
+[      2s]   chi=32 sweep=3 E=-0.0279283064602 trunc=3.8e-10
+[      3s]   chi=64 sweep=0 E=-0.0279283064775 trunc=6.0e-14
+[      4s]   chi=64 sweep=1 E=-0.0279283064775 trunc=6.3e-14
+[      5s]   chi=64 sweep=2 E=-0.0279283064775 trunc=6.3e-14
+[      5s] sector Q=5.0
+[      6s]   chi=32 sweep=0 E=-0.0239543987108 trunc=2.7e-27
+[      6s]   chi=32 sweep=1 E=-0.0255723898943 trunc=5.4e-08
+[      7s]   chi=32 sweep=2 E=-0.0256027662641 trunc=3.9e-09
+[      7s]   chi=32 sweep=3 E=-0.0256027662958 trunc=1.4e-10
+[      8s]   chi=64 sweep=0 E=-0.0256027663010 trunc=4.6e-15
+[      9s]   chi=64 sweep=1 E=-0.0256027663010 trunc=5.1e-15
+[     10s]   chi=64 sweep=2 E=-0.0256027663010 trunc=5.1e-15
+[     10s] sector Q=3.0
+[     10s]   chi=32 sweep=0 E=-0.0291379904283 trunc=0.0e+00
+[     11s]   chi=32 sweep=1 E=-0.0297764365287 trunc=7.1e-09
+[     11s]   chi=32 sweep=2 E=-0.0297764769857 trunc=6.7e-10
+[     12s]   chi=32 sweep=3 E=-0.0297764769858 trunc=6.8e-10
+[     13s]   chi=64 sweep=0 E=-0.0297764770214 trunc=1.1e-13
+[     14s]   chi=64 sweep=1 E=-0.0297764770214 trunc=1.2e-13
+[     15s]   chi=64 sweep=2 E=-0.0297764770214 trunc=1.2e-13
+[     15s] excited state at Q0
+[     16s]   chi=32 sweep=0 E=-0.0272447332768 trunc=0.0e+00
+[     16s]   chi=32 sweep=1 E=-0.0274527301827 trunc=1.1e-08
+[     17s]   chi=32 sweep=2 E=-0.0274527304833 trunc=1.5e-08
+[     17s]   chi=32 sweep=3 E=-0.0274527304834 trunc=1.4e-08
+[     18s]   chi=64 sweep=0 E=-0.0274527309499 trunc=1.9e-12
+[     19s]   chi=64 sweep=1 E=-0.0274527309499 trunc=2.1e-12
+[     21s]   chi=64 sweep=2 E=-0.0274527309499 trunc=2.1e-12
+[     21s] summary {'E0': -0.027928306477515385, 'charge_gap': 0.00047736963265115895, 'E1': 0.00047557552757266155, 'K_gap': 0.996241685780192, 'J': np.float64(0.0056250000000000015), 'time_s': 20.613993883132935}
