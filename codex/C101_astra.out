@@ -1,0 +1,9 @@
+Written in [RESULT.md](RESULT.md), with derivations in [PROOF.md](PROOF.md).
+
+The main additions are conditional proofs for balanced Hubbard at all fillings and flavor-symmetric supersymmetric t-J chains, including an exact rational four-site certificate. Gauge-optimized bond widths are explicit.
+
+No violation was found. Heisenberg saturates the bound; products reduce the ratio. The completed searches give no reason to replace \(\log_2 d\).
+
+The full requested theorem remains incomplete. General finite-density SU(N|M) phases and Sp(2r) continuum completeness remain unresolved. Typhon timed out, so larger ED was prepared but not submitted.
+
+[gpt_solve: backend=codex model=gpt-6-astra effort=high transcript=20261029T100855-42628]

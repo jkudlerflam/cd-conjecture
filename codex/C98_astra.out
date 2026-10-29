@@ -1,0 +1,9 @@
+The asymptotic logarithmic bound remains open. I wrote [RESULT.md](<../work_C98/RESULT.md>) and the full derivations in [PROOF.md](<../work_C98/PROOF.md>).
+
+The main new result is an exact formula expressing \(E_0(2L)-2E_0(L)\) as half an integrated susceptibility between two distant bond reconnections. Bounding that response by \(O(M\log d/L)\) would prove the conjecture. I identified the required constant, but did not derive the response bound from locality.
+
+The checks expose several obstructions. Product gluing costs \(O(M)\), raw open-chain closure has a nonzero boundary term, and smooth partial swaps incur an extensive cost. The sharp finite-size inequality without its remainder fails already at Heisenberg \(L=4\).
+
+XX, XXZ, Heisenberg, and SU(N) checks passed; symmetric-representation tests used the established C14/C35 formulas. Only `work_C98` was modified.
+
+[gpt_solve: backend=codex model=gpt-6-astra effort=high transcript=20261029T100849-42035]

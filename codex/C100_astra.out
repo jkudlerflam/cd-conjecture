@@ -1,0 +1,22 @@
+The transport route gives a rigorous spectral bound, but I did not obtain an inequality without a crossover scale.
+
+Writing \(A=\sum_a c_av_a\), the CFT calculations give
+\[
+\frac{\operatorname{Var}(J)}L=\frac{\pi}{3}AT^3,
+\qquad D_{\rm th}=\frac{\pi}{3}AT,
+\]
+with \(\operatorname{Re}\kappa=\pi D_{\rm th}\delta(\omega)+\cdots\), matching the [published convention](https://link.springer.com/article/10.1007/s10955-018-2025-x).
+
+The main lattice result is
+\[
+0\le \frac{\langle[h_{-q},[H,h_q]]\rangle}{2L}\le 8M^3q^2.
+\]
+Controlled positive spectral matching at temperature \(T_*\), with lower factor \(\alpha\), therefore implies
+\[
+A\le \frac{48M^3}{\pi\alpha T_*^2}.
+\]
+This allows broadened transport peaks. Entropy, high-temperature convexity, and modular invariance do not remove the matching scale in the arguments examined.
+
+The route comparison is in [RESULT.md](<<local> Dropbox/Jonah Kudler-Flam/Claude/Projects/Modular c-Theorem/notes/cd_conjecture/codex/work_C100/RESULT.md>), with derivations and assumptions in [PROOF.md](<<local> Dropbox/Jonah Kudler-Flam/Claude/Projects/Modular c-Theorem/notes/cd_conjecture/codex/work_C100/PROOF.md>). All final normalization checks passed. All writes stayed in `work_C100`.
+
+[gpt_solve: backend=codex model=gpt-6-astra effort=high transcript=20261029T100853-42443]

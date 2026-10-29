@@ -1,0 +1,19 @@
+I did not obtain a universal bound on \(A\), or a counterexample to it. The findings and full derivations are in [RESULT.md](<./RESULT.md>) and [PROOF.md](<./PROOF.md>).
+
+Three new results sharpen C69’s obstruction.
+
+- Weighted sums, repeated protocols, and integrals of calibrated conformal rates retain the smallest controlled length when bounded through separate SIE estimates.
+- An unrestricted supremum of correlation length times entropy rate is infinite, even for one fixed \(d=4\) critical Hamiltonian with a gapped spectator.
+- A Euclidean analogue of ancillary SIE is false. A bounded one-qubit filter can change entropy at rate \(M\log N\), with arbitrarily large spectator Schmidt rank \(N\).
+
+A local joining quench also gives the positive continuum identity
+\[
+A=\frac{6\epsilon}{\pi}\int_0^\infty \frac{\dot S(t)}{t}\,dt.
+\]
+But its SIE envelope diverges, and truncation retains \(\epsilon\).
+
+The remaining route is a microscopic lower bound \(\mathcal E(h)\ge\kappa A\). Combined with [SIE](https://arxiv.org/pdf/1304.5931), it would give \(C=18/\kappa\). Nothing here excludes that possibility.
+
+All small matrix and quadrature checks passed. Only `work_C99` was modified, including its local state and progress records.
+
+[gpt_solve: backend=codex model=gpt-6-astra effort=high transcript=20261029T100851-42255]
