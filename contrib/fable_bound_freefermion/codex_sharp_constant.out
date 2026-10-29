@@ -1,0 +1,223 @@
+The inequality is true. Under the stated assumption that \(\det h(k)\) is not identically zero, equality holds if and only if
+\[
+B\ \text{is normal},\qquad A_0B=0.
+\]
+Thus, when \(B\) is invertible, equality requires \(A_0=0\). When \(B\) has a kernel, \(A_0\) may act on that kernel.
+
+The proof uses a trace inequality for vectors that are orthogonal with respect to a Hermitian form.
+
+Let \(J\) be a Hermitian matrix, and let \(x_1,\ldots,x_m\) be Euclidean unit vectors satisfying
+\[
+x_i^\dagger Jx_j=0\qquad(i\ne j).
+\]
+Write \(d_j=x_j^\dagger Jx_j\). Then
+\[
+\boxed{\ \sum_j|d_j|\leq \operatorname{tr}|J|.\ }
+\tag{1}
+\]
+Moreover, equality holds precisely when the vectors with \(d_j\ne0\) form an orthonormal eigenbasis of \(\operatorname{ran}J\).
+
+To prove this, first retain only the vectors with \(d_j>0\). Put them into a matrix \(X\), so that
+\[
+X^\dagger JX=D,\qquad D=\operatorname{diag}(d_1,\ldots,d_p)>0.
+\]
+These vectors are linearly independent, and \(J\) is positive definite on their span \(W\).
+
+Choose an orthonormal basis matrix \(V\) for \(W\), and write \(X=VC\), with \(C\) invertible. Define
+\[
+H=V^\dagger JV,\qquad G=C^\dagger C=X^\dagger X.
+\]
+Then \(C^\dagger HC=D\), and hence
+\[
+\operatorname{tr}H
+=\operatorname{tr}\!\left(DG^{-1}\right)
+=\sum_{j=1}^p d_j(G^{-1})_{jj}.
+\tag{2}
+\]
+Since each \(x_j\) is a unit vector, \(G_{jj}=1\). Cauchy–Schwarz gives
+\[
+1
+=\left|\left(G^{1/2}e_j\right)^\dagger
+              \left(G^{-1/2}e_j\right)\right|^2
+\leq G_{jj}(G^{-1})_{jj}
+=(G^{-1})_{jj}.
+\]
+Consequently,
+\[
+\sum_{d_j>0}d_j
+\leq\operatorname{tr}H
+=\operatorname{tr}(P_WJ)
+\leq\operatorname{tr}J_+,
+\tag{3}
+\]
+where \(J_+\) is the positive part of \(J\). The last inequality follows from
+\[
+\operatorname{tr}J_+-\operatorname{tr}(P_WJ)
+=
+\operatorname{tr}\bigl((I-P_W)J_+\bigr)
++\operatorname{tr}(P_WJ_-)
+\geq0.
+\]
+Applying the same argument to \(-J\) and the vectors with \(d_j<0\) proves (1).
+
+We will also need the equality conditions. Equality in (2)–(3) forces \((G^{-1})_{jj}=1\) for every \(j\). Equality in the Cauchy–Schwarz step then makes every \(e_j\) an eigenvector of \(G\), and \(G_{jj}=1\) gives \(G=I\). Thus the positive vectors are orthonormal.
+
+Equality in the last part of (3) forces \(W\) to contain the positive spectral subspace of \(J\) and to be orthogonal to its negative spectral subspace. Since \(J\) is positive definite on \(W\), there can be no additional null directions. Therefore \(W\) is the positive spectral subspace itself. The vectors are an orthonormal basis of this invariant subspace, and their mutual \(J\)-orthogonality makes them eigenvectors of \(J\). The same reasoning applies to the negative vectors. This proves the equality assertion in (1).
+
+Now index the chosen Fermi vectors by \(a\), and write
+\[
+z_a=e^{ik_a},\qquad h(k_a)u_a=0,\qquad \|u_a\|=1,
+\]
+with velocity \(v_a\). Introduce the \(2n\times2n\) Hermitian matrix
+\[
+J=
+\begin{pmatrix}
+0&iB\\
+-iB^\dagger&0
+\end{pmatrix},
+\qquad
+x_a=\frac1{\sqrt2}
+\begin{pmatrix}
+u_a\\ z_a u_a
+\end{pmatrix}.
+\tag{4}
+\]
+Each \(x_a\) is a unit vector, and
+\[
+x_a^\dagger Jx_a
+=\frac{i}{2}u_a^\dagger
+       (z_aB-\bar z_aB^\dagger)u_a
+=\frac{v_a}{2}.
+\tag{5}
+\]
+
+The crucial point is that distinct Fermi terms give mutually \(J\)-orthogonal vectors.
+
+If \(z_a\ne z_b\), Hermiticity and the kernel equations give
+\[
+u_b^\dagger h(k_a)u_a
+=u_b^\dagger h(k_b)u_a=0.
+\]
+Subtracting,
+\[
+0=(z_a-z_b)u_b^\dagger Bu_a
+  +(\bar z_a-\bar z_b)u_b^\dagger B^\dagger u_a.
+\]
+Because \(\bar z_a-\bar z_b=-(z_a-z_b)/(z_az_b)\), this implies
+\[
+u_b^\dagger B^\dagger u_a
+=z_az_b\,u_b^\dagger Bu_a.
+\]
+It follows that
+\[
+x_b^\dagger Jx_a
+=\frac{i}{2}\left(
+z_a u_b^\dagger Bu_a
+-\bar z_b u_b^\dagger B^\dagger u_a
+\right)=0.
+\tag{6}
+\]
+
+If \(z_a=z_b=z\), the prescribed choice of kernel basis instead gives
+\[
+x_b^\dagger Jx_a
+=\frac12u_b^\dagger h'(k_a)u_a
+=\frac12v_a\delta_{ab}.
+\tag{7}
+\]
+Thus (1) applies to all Fermi terms, including degeneracies and zero velocities.
+
+Finally,
+\[
+J^2=
+\begin{pmatrix}
+BB^\dagger&0\\
+0&B^\dagger B
+\end{pmatrix},
+\]
+so
+\[
+\operatorname{tr}|J|
+=\operatorname{tr}\sqrt{BB^\dagger}
++\operatorname{tr}\sqrt{B^\dagger B}
+=2\|B\|_1.
+\]
+Combining this with (1) and (5) proves
+\[
+\boxed{\quad
+S(A_0,B)=2\sum_a|x_a^\dagger Jx_a|
+\leq2\operatorname{tr}|J|
+=4\|B\|_1.
+\quad}
+\tag{8}
+\]
+
+For equality, suppose first that \(S=4\|B\|_1\) and \(B\ne0\). The equality statement in (1) says that the lifted vectors with \(v_a\ne0\) form an orthonormal eigenbasis of \(\operatorname{ran}J\). In particular,
+\[
+Jx_a=d_ax_a,\qquad d_a=\frac{v_a}{2}\ne0.
+\]
+Using (4), its two block equations are
+\[
+iz_aBu_a=d_au_a,\qquad
+-iB^\dagger u_a=d_az_au_a.
+\]
+Equivalently,
+\[
+Bu_a=b_au_a,\qquad
+B^\dagger u_a=\bar b_au_a,
+\qquad b_a=-id_a\bar z_a.
+\tag{9}
+\]
+Moreover,
+\[
+z_ab_a+\bar z_a\bar b_a=-id_a+id_a=0.
+\]
+The Fermi equation therefore reduces to
+\[
+A_0u_a=0.
+\tag{10}
+\]
+
+Since these \(x_a\) span \(\operatorname{ran}J\), and
+\[
+\operatorname{ran}J
+=\operatorname{ran}B\oplus\operatorname{ran}B^\dagger,
+\]
+their upper and lower components imply
+\[
+M:=\operatorname{span}\{u_a:v_a\ne0\}
+=\operatorname{ran}B
+=\operatorname{ran}B^\dagger.
+\tag{11}
+\]
+Equation (9) shows that \(BB^\dagger-B^\dagger B\) vanishes on \(M\). Both \(B\) and \(B^\dagger\) vanish on \(M^\perp\), so their commutator vanishes everywhere. Hence \(B\) is normal. Equation (10) shows that \(A_0\) annihilates \(\operatorname{ran}B\), giving \(A_0B=0\).
+
+Conversely, suppose \(B\) is normal and \(A_0B=0\). Choose an orthonormal eigenbasis of \(B\), with nonzero eigenvalues \(b_1,\ldots,b_r\). On the corresponding eigenvectors, \(A_0=0\). Hermiticity of \(A_0\) then gives the decomposition
+\[
+h(k)=
+\bigoplus_{s=1}^r
+\left[2\operatorname{Re}(e^{ik}b_s)\right]
+\ \oplus\ A_0|_{\ker B}.
+\tag{12}
+\]
+The restriction \(A_0|_{\ker B}\) must be invertible, since otherwise \(h(k)\) would have a common kernel vector for every \(k\).
+
+Writing \(b_s=|b_s|e^{i\theta_s}\), each scalar block has two Fermi points,
+\[
+k=\frac{\pi}{2}-\theta_s,\qquad
+k=-\frac{\pi}{2}-\theta_s
+\pmod{2\pi},
+\]
+with velocities \(-2|b_s|\) and \(+2|b_s|\), respectively. Therefore
+\[
+S=4\sum_{s=1}^r|b_s|=4\|B\|_1.
+\]
+When \(B=0\), the determinant assumption makes \(A_0\) invertible, and both sides vanish.
+
+As a scalar check, for \(n=1\), \(A_0=a\), and \(B=b\ne0\), the two simple crossings when \(|a|<2|b|\) give
+\[
+S=2\sqrt{4|b|^2-a^2}\leq4|b|.
+\]
+Equality occurs precisely at \(a=0\), in agreement with the general characterization. The argument above also covers tangential crossings, whose zero velocities contribute nothing.
+
+[gpt_solve: backend=codex model=gpt-6-astra effort=high transcript=20261029T105919-60032]
