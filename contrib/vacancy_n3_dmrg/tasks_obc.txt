@@ -1,0 +1,14 @@
+python3 -B run_obc.py lv3_L30 --model lv --L 30 --M 18 --N 6 4 3 --chis 64 128 256 384 512 768 1024 1536 --maxsweeps 3 --noise_sweeps 1 --state state/lv3_L30.pkl
+python3 -B run_obc.py lv3_L40 --model lv --L 40 --M 24 --N 8 6 4 --chis 64 128 256 384 512 768 1024 1536 --maxsweeps 3 --noise_sweeps 1 --state state/lv3_L40.pkl
+python3 -B run_obc.py lv3_L50 --model lv --L 50 --M 30 --N 10 8 5 --chis 64 128 256 384 512 768 1024 1536 --maxsweeps 3 --noise_sweeps 1 --state state/lv3_L50.pkl
+python3 -B run_obc.py lv3_L60 --model lv --L 60 --M 36 --N 12 9 6 --chis 64 128 256 384 512 768 1024 1536 --maxsweeps 3 --noise_sweeps 1 --state state/lv3_L60.pkl
+python3 -B run_obc.py ref4_L30 --model kxx --vels 1 0.549 0.290 0.452 --L 30 --M 18 --N 6 4 3 --chis 64 128 256 384 512 768 1024 1536 --maxsweeps 3 --noise_sweeps 1 --state state/ref4_L30.pkl
+python3 -B run_obc.py ref4_L40 --model kxx --vels 1 0.549 0.290 0.452 --L 40 --M 24 --N 8 6 4 --chis 64 128 256 384 512 768 1024 1536 --maxsweeps 3 --noise_sweeps 1 --state state/ref4_L40.pkl
+python3 -B run_obc.py ref4_L50 --model kxx --vels 1 0.549 0.290 0.452 --L 50 --M 30 --N 10 8 5 --chis 64 128 256 384 512 768 1024 1536 --maxsweeps 3 --noise_sweeps 1 --state state/ref4_L50.pkl
+python3 -B run_obc.py ref4_L60 --model kxx --vels 1 0.549 0.290 0.452 --L 60 --M 36 --N 12 9 6 --chis 64 128 256 384 512 768 1024 1536 --maxsweeps 3 --noise_sweeps 1 --state state/ref4_L60.pkl
+python3 -B run_obc.py ctrl_L35 --model lv --vz 0 0 4.5 --L 35 --M 21 --N 7 5 11 --chis 64 128 256 384 512 768 1024 1536 --maxsweeps 3 --noise_sweeps 1 --state state/ctrl_L35.pkl
+python3 -B run_obc.py ctrl_L45 --model lv --vz 0 0 4.5 --L 45 --M 27 --N 9 7 14 --chis 64 128 256 384 512 768 1024 1536 --maxsweeps 3 --noise_sweeps 1 --state state/ctrl_L45.pkl
+python3 -B run_obc.py ctrl_L55 --model lv --vz 0 0 4.5 --L 55 --M 33 --N 11 8 17 --chis 64 128 256 384 512 768 1024 1536 --maxsweeps 3 --noise_sweeps 1 --state state/ctrl_L55.pkl
+python3 -B run_obc.py ref3_L35 --model kxx --vels 1 0.549 0.290 --L 35 --M 21 --N 7 5 --chis 64 128 256 384 512 768 1024 1536 --maxsweeps 3 --noise_sweeps 1 --state state/ref3_L35.pkl
+python3 -B run_obc.py ref3_L45 --model kxx --vels 1 0.549 0.290 --L 45 --M 27 --N 9 7 --chis 64 128 256 384 512 768 1024 1536 --maxsweeps 3 --noise_sweeps 1 --state state/ref3_L45.pkl
+python3 -B run_obc.py ref3_L55 --model kxx --vels 1 0.549 0.290 --L 55 --M 33 --N 11 8 --chis 64 128 256 384 512 768 1024 1536 --maxsweeps 3 --noise_sweeps 1 --state state/ref3_L55.pkl
