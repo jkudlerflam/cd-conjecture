@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "arithmetic": "exact rational and integer",
+  "geometric_terminal_pairs": 534,
+  "geometric_convex_pairs": 64,
+  "minimum_load_surplus": 6561,
+  "factorial_absorption": 301,
+  "weighted_ancestor_sums": 12,
+  "routing_factorizations": 27,
+  "homogeneity_identities": 243,
+  "engineering_counter_cases": 16275,
+  "branching_cut_records": 100,
+  "maximum_factorial_load": 300,
+  "scope": "Finite checks of convex routing, factorial surplus, route sums, and cut algebra. No interacting RG simulation."
+}

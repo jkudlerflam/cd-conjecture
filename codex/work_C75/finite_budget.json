@@ -1,0 +1,17 @@
+{
+  "n": 15,
+  "alphabet": 15,
+  "cell_length": 16,
+  "g_power": -256,
+  "K_power": 1152,
+  "lambda_power": -640,
+  "Eunit_lower_log10": -255.9023935822178,
+  "trace_metric_log10": 41.34942889670265,
+  "conversion_whitened_error_log10": -14.944311748228301,
+  "penalty_whitened_error_log10": -27.888601561779524,
+  "combined_below_one_eighth_budget": true,
+  "budget_power": -32,
+  "local_lambda_ratio_log10": -73.0150721877767,
+  "delta2_lower": 0.014554025253406,
+  "delta4_lower": 1.1444044416118114e-07
+}

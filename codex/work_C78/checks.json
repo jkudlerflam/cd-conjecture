@@ -1,0 +1,157 @@
+{
+  "scope": "Mixed ring and finite coefficient controls. Complete TP remains unresolved.",
+  "pairings": [
+    {
+      "vertices": 2,
+      "connected_pairings": 1,
+      "exponential_series_coefficient": "1/2"
+    },
+    {
+      "vertices": 4,
+      "connected_pairings": 6,
+      "exponential_series_coefficient": "1/4"
+    },
+    {
+      "vertices": 6,
+      "connected_pairings": 120,
+      "exponential_series_coefficient": "1/6"
+    },
+    {
+      "vertices": 8,
+      "connected_pairings": 5040,
+      "exponential_series_coefficient": "1/8"
+    }
+  ],
+  "fourth_cumulant": {
+    "connected_four_vertex_cumulant": "-2708638613/3240609120000",
+    "ring_sector": "30943854769/22684263840000",
+    "nonring_sector": "-831738751/378071064000",
+    "high_density_four_cumulants": [
+      "-23/1080",
+      "-5/1323"
+    ],
+    "scope": "Exact finite Gaussian algebra, not an integrated continuum coefficient."
+  },
+  "thermal": {
+    "predicted_coefficient": -0.00012073656735843981,
+    "thermal_integrals": [
+      {
+        "T": 0.4,
+        "thermal_coefficient_over_T_squared": -0.00011621554611057675,
+        "ratio_to_limit": 0.9625546646987141
+      },
+      {
+        "T": 0.2,
+        "thermal_coefficient_over_T_squared": -0.00012063120517364186,
+        "ratio_to_limit": 0.9991273382447162
+      },
+      {
+        "T": 0.1,
+        "thermal_coefficient_over_T_squared": -0.00012073651965529654,
+        "ratio_to_limit": 0.9999996048989604
+      },
+      {
+        "T": 0.05,
+        "thermal_coefficient_over_T_squared": -0.00012073656735842752,
+        "ratio_to_limit": 0.9999999999998982
+      }
+    ],
+    "frequency_logarithm_checks": [
+      {
+        "p": 0.3,
+        "residual": 1.2739375526704677e-17
+      },
+      {
+        "p": 0.8,
+        "residual": 2.2158381900172497e-17
+      },
+      {
+        "p": 1.4,
+        "residual": 6.325642050095115e-17
+      }
+    ]
+  },
+  "gaussian_shells": [
+    {
+      "q": 0.125,
+      "zero_temperature_shell": -2.411199849117539e-07,
+      "shell_over_q_four": -0.000987627458198544,
+      "thermal": [
+        {
+          "T_over_q": 0.2,
+          "difference": 3.4367665348444165e-08,
+          "normalized_power_three": 0.01759624465840341
+        },
+        {
+          "T_over_q": 0.1,
+          "difference": 6.202418412421426e-09,
+          "normalized_power_three": 0.025405105817278156
+        },
+        {
+          "T_over_q": 0.05,
+          "difference": 1.761444790825569e-10,
+          "normalized_power_three": 0.005771902290577223
+        },
+        {
+          "T_over_q": 0.025,
+          "difference": 2.539078940293034e-13,
+          "normalized_power_three": 6.656043097241769e-05
+        }
+      ]
+    },
+    {
+      "q": 0.0625,
+      "zero_temperature_shell": -1.5495687832433184e-08,
+      "shell_over_q_four": -0.0010155253977863412,
+      "thermal": [
+        {
+          "T_over_q": 0.2,
+          "difference": 2.2106114764051223e-09,
+          "normalized_power_three": 0.018109329214710757
+        },
+        {
+          "T_over_q": 0.1,
+          "difference": 3.969002054619809e-10,
+          "normalized_power_three": 0.026011251865156376
+        },
+        {
+          "T_over_q": 0.05,
+          "difference": 1.13786758224264e-11,
+          "normalized_power_three": 0.0059657031895882905
+        },
+        {
+          "T_over_q": 0.025,
+          "difference": 1.41124757856843e-14,
+          "normalized_power_three": 5.919201363779879e-05
+        }
+      ]
+    },
+    {
+      "q": 0.03125,
+      "zero_temperature_shell": -9.75294404041376e-10,
+      "shell_over_q_four": -0.0010226703050120898,
+      "thermal": [
+        {
+          "T_over_q": 0.2,
+          "difference": 1.3916591183479312e-10,
+          "normalized_power_three": 0.01824075439601
+        },
+        {
+          "T_over_q": 0.1,
+          "difference": 2.4953521024617217e-11,
+          "normalized_power_three": 0.026165663261909018
+        },
+        {
+          "T_over_q": 0.05,
+          "difference": 7.171276485592061e-13,
+          "normalized_power_three": 0.006015702729724943
+        },
+        {
+          "T_over_q": 0.025,
+          "difference": 8.529542113086009e-16,
+          "normalized_power_three": 5.724078816493615e-05
+        }
+      ]
+    }
+  ]
+}

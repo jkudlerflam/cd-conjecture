@@ -1,0 +1,17 @@
+I found a 15-letter candidate, down from 23. Two excited species replace three, and an L/R domain wall replaces the explicit vacuum token.
+
+At n = 15, cell length 16, the finite-g, finite-penalty second-order quadratic Hamiltonian has certified bounds
+
+\[
+N_{\mathrm{Fermi}}=30,\qquad
+\delta_2>0.0145540,\qquad
+\delta_4>1.1444\times10^{-7}.
+\]
+
+Exact U(1) survives. The zero-port length selector is controlled uniformly over all lengths and illegal sectors. Small ED through dimension 15,404 confirms the second-order energies with λ⁴ errors.
+
+The hierarchy remains severe: \(g=2^{-256}\), \(K=2^{1152}\), \(\lambda=2^{-640}\). The conditional predictions are \(c=15\) at \(d=15\), or \(c=16\) after adding one vacancy. Nonzero-port defect control and infrared transfer remain open. I have not proved that 15 is minimal.
+
+The explicit bond, derivations, alphabet audit, and reproducible certificates are in [RESULT.md](<<local> Dropbox/Jonah Kudler-Flam/Claude/Projects/Modular c-Theorem/notes/cd_conjecture/codex/work_C75/RESULT.md>) and [PROOF.md](<<local> Dropbox/Jonah Kudler-Flam/Claude/Projects/Modular c-Theorem/notes/cd_conjecture/codex/work_C75/PROOF.md>).
+
+[gpt_solve: backend=codex model=gpt-6-astra effort=high transcript=20261028T212939-43087]

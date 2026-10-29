@@ -1,0 +1,13 @@
+# C78 sources and scope
+
+[proved work record] The project memory was read first. The S2 and S backgrounds, C62, C65, C71 and C73 material, and C59's TP statement were consulted. The preceding round summaries and collaborator thermal criterion, lattice ultraviolet audit and matching summaries provide the broader ledger. The encoded-chain construction and ensemble transfer are not new applications proved here.
+
+[assumed, imported local results] C62 provides the trace-defined Hamiltonian and the parameter conversion. C65 provides its smooth attenuation regulator and trace limit. C71 provides the singular covariance bound and distributional bubble prescription. C73 provides one-chirality analyticity, the surviving high four-cycle and fixed-order zero-temperature cutoff stabilization. Their assumptions and stated limits are retained. The new proofs in C78 concern weighted L2 gluing and the coupled ring vacuum subseries.
+
+[assumed, primary-source context] [Benfatto and Mastropietro, 0907.2837](https://arxiv.org/html/0907.2837), equations (81), (89) and (93)-(96), was inspected through the browser. Its zero-temperature matching and its specified reference preparation do not by themselves supply the thermal scalar extension being requested here. C78 does not claim that the Gaussian smoothing comparison in PROOF Section 7 is a theorem about that complete fermionic reference.
+
+[assumed, literature leads only] The [Rutgers conference announcement, B12](https://www.math.rutgers.edu/images/127_SMC_short_talks.pdf) again appeared in the browser search for the Renzi-Giuliani-Mastropietro-Santini thermal result. No full manuscript with verified hypotheses was obtained. [Gentile's publication list](https://www.mat.uniroma3.it/users/gentile/ricerca/publications.html) identifies the 1993 Gentile-Scoppola ultraviolet paper, but direct retrieval of the page timed out and the paper's theorem was not retrieved. Neither lead is invoked as a substitute for the missing estimate. No absence or novelty claim is made.
+
+[proved provenance distinction] The exact rational check in checks.py uses finite Grassmann density moments. Its nonzero fourth cumulant is a check of the algebraic decomposition, not a computed coefficient of the spatially integrated continuum action. The latter remains defined by the inherited regulator prescription. The shell quadrature concerns the explicitly defined Gaussian test determinants, not XXZ or BM histories.
+
+[proved work boundary] Sources were accessed only with the browsing tool. All Python execution and writes are inside work_C78. No network shell command, subagent, author correspondence or independent review was used.

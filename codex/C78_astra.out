@@ -1,0 +1,9 @@
+[unresolved] TP remains unproved. I did not find a mixed-chirality coefficient that violates it.
+
+[proved partial] I controlled the mixed two-bubble vacuum graph and summed all alternating bubble rings analytically, uniformly in the sea cutoff, with fixed-scale thermal bounds \(O(T^P)\). The full integration also contains mixed \(g^4\) terms involving connected density four-cycles. I wrote these explicitly, but did not establish the required all-order bound or the actual BM infrared comparison.
+
+[numerical] Final checks pass. An initial unsupported numerical threshold failed and is documented.
+
+The derivations and remaining estimates are in [PROOF.md](PROOF.md), with the verdict in [RESULT.md](RESULT.md) and work record in [PROGRESS.md](PROGRESS.md).
+
+[gpt_solve: backend=codex model=gpt-6-astra effort=high transcript=20261028T221110-54252]

@@ -1,0 +1,9 @@
+[proved] A general-tree moment bound works with a fixed Gevrey cutoff. A load \(b\) supplies surplus at least \(\lfloor(b-1)^2/4\rfloor\), which pays the factorial moment constants and routing sum. This covers branching and arbitrary-degree retarded endpoints, with engineering dimensions retained explicitly.
+
+[unresolved] Full corrected Lemma N remains incomplete. The reference comparison and Gaussian-subtracted source estimates are not proved. No branching obstruction was found.
+
+[numerical] All finite exact-arithmetic checks passed.
+
+Written in [RESULT.md](<<local> Dropbox/Jonah Kudler-Flam/Claude/Projects/Modular c-Theorem/notes/cd_conjecture/codex/work_C79/RESULT.md>) and [PROOF.md](<<local> Dropbox/Jonah Kudler-Flam/Claude/Projects/Modular c-Theorem/notes/cd_conjecture/codex/work_C79/PROOF.md>), with PROGRESS.md and local STATE.md updated.
+
+[gpt_solve: backend=codex model=gpt-6-astra effort=high transcript=20261028T214943-49259]
