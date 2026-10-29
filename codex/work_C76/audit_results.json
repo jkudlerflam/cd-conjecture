@@ -1,0 +1,33 @@
+{
+  "swap_fermionic_identity_error": 0.0,
+  "half_chain": [
+    {
+      "model": "swap",
+      "d": 3,
+      "sizes": [
+        6,
+        12
+      ],
+      "c": 1.982402837903262
+    },
+    {
+      "model": "swap",
+      "d": 4,
+      "sizes": [
+        4,
+        8
+      ],
+      "c": 3.0890793329401216
+    },
+    {
+      "model": "tj",
+      "d": 3,
+      "sizes": [
+        6,
+        12
+      ],
+      "c": 1.9818499869537984
+    }
+  ],
+  "free_hubbard_L8_entropy_vs_correlation_max_error": 2.220446049250313e-15
+}

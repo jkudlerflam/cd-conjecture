@@ -1,0 +1,43 @@
+{
+  "sign_audit": [
+    {
+      "K_sign": -1,
+      "L": 4,
+      "commutator_norm": 82.62364471909166
+    },
+    {
+      "K_sign": 1,
+      "L": 4,
+      "commutator_norm": 8.534625962562135e-15
+    }
+  ],
+  "finite_size": [
+    {
+      "L": 4,
+      "dimension": 36,
+      "E0": -3.2659863237109024,
+      "e_bulk_reference": -0.6605960994653087,
+      "v_slow_reference": 1.0471975511965976,
+      "velocity_weighted_effective_c": 4.549254137908536,
+      "residual": 3.575345872052734e-15
+    },
+    {
+      "L": 6,
+      "dimension": 400,
+      "E0": -3.789611996415757,
+      "e_bulk_reference": -0.6605960994653087,
+      "v_slow_reference": 1.0471975511965976,
+      "velocity_weighted_effective_c": -1.9036403159730038,
+      "residual": 2.6247580570537998e-15
+    },
+    {
+      "L": 8,
+      "dimension": 4900,
+      "E0": -5.569230580825038,
+      "e_bulk_reference": -0.6605960994653087,
+      "v_slow_reference": 1.0471975511965976,
+      "velocity_weighted_effective_c": 4.150368686535053,
+      "residual": 9.30952661444434e-15
+    }
+  ]
+}

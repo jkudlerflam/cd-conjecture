@@ -1,0 +1,170 @@
+{
+  "osp": [
+    {
+      "n": 1,
+      "m": 1,
+      "d": 3,
+      "E_squared_minus_zE": 0.0,
+      "h_nonhermiticity_Frobenius": 2.6666666666666665,
+      "expected_nonhermiticity": 2.6666666666666665
+    },
+    {
+      "n": 2,
+      "m": 1,
+      "d": 4,
+      "E_squared_minus_zE": 0.0,
+      "h_nonhermiticity_Frobenius": 5.656854249492381,
+      "expected_nonhermiticity": 5.656854249492381
+    },
+    {
+      "n": 3,
+      "m": 1,
+      "d": 5,
+      "E_squared_minus_zE": 0.0,
+      "h_nonhermiticity_Frobenius": 13.856406460551018,
+      "expected_nonhermiticity": 13.856406460551018
+    },
+    {
+      "n": 1,
+      "m": 2,
+      "d": 5,
+      "E_squared_minus_zE": 0.0,
+      "h_nonhermiticity_Frobenius": 2.2627416997969525,
+      "expected_nonhermiticity": 2.262741699796952
+    }
+  ],
+  "hubbard": [
+    {
+      "L": 4,
+      "Nu": 1,
+      "Nd": 1,
+      "U": 0.0,
+      "dimension": 16,
+      "energies": [
+        -2.8284271247461907,
+        -2.8284271247461907,
+        -2.82842712474619
+      ],
+      "entropy": {
+        "1": 0.9571449893476758,
+        "2": 1.223815429511716
+      },
+      "residual": 1.098560809150614e-15,
+      "ground_degenerate": true,
+      "use_for_c_extrapolation": false,
+      "note": "Spectrum check only; no thermodynamic c inferred from these shell-dependent sizes."
+    },
+    {
+      "L": 8,
+      "Nu": 2,
+      "Nd": 2,
+      "U": 0.0,
+      "dimension": 784,
+      "energies": [
+        -7.391036260090286,
+        -6.308644059797902,
+        -6.308644059797896
+      ],
+      "entropy": {
+        "1": 1.1246702892376168,
+        "2": 1.5733256621719347,
+        "3": 1.7823464130520614,
+        "4": 1.8446918584258483
+      },
+      "residual": 1.0848968940102783e-14,
+      "ground_degenerate": false,
+      "use_for_c_extrapolation": false,
+      "note": "Spectrum check only; no thermodynamic c inferred from these shell-dependent sizes."
+    },
+    {
+      "L": 12,
+      "Nu": 3,
+      "Nd": 3,
+      "U": 0.0,
+      "dimension": 48400,
+      "energies": [
+        -10.55583373505877,
+        -10.555833735058743,
+        -10.038195644853733
+      ],
+      "entropy": {
+        "1": 1.0590062159533418,
+        "2": 1.6429070499890115,
+        "3": 2.007556963688663,
+        "4": 2.006825156178314,
+        "5": 1.9446686875075097,
+        "6": 2.1090194929244355
+      },
+      "residual": 4.182474743561108e-14,
+      "ground_degenerate": true,
+      "use_for_c_extrapolation": false,
+      "note": "Spectrum check only; no thermodynamic c inferred from these shell-dependent sizes."
+    },
+    {
+      "L": 4,
+      "Nu": 1,
+      "Nd": 1,
+      "U": 4.0,
+      "dimension": 16,
+      "energies": [
+        -2.828427124746189,
+        -2.340172973252069,
+        -2.3401729732520677
+      ],
+      "entropy": {
+        "1": 1.039720770839918,
+        "2": 1.352851446819334
+      },
+      "residual": 2.3790150416645713e-15,
+      "ground_degenerate": false,
+      "use_for_c_extrapolation": false,
+      "note": "Spectrum check only; no thermodynamic c inferred from these shell-dependent sizes."
+    },
+    {
+      "L": 8,
+      "Nu": 2,
+      "Nd": 2,
+      "U": 4.0,
+      "dimension": 784,
+      "energies": [
+        -6.245317025012073,
+        -5.542530274389997,
+        -5.469920422793033
+      ],
+      "entropy": {
+        "1": 1.0926170906666237,
+        "2": 1.5468427956838708,
+        "3": 1.758670691037468,
+        "4": 1.8221603708328808
+      },
+      "residual": 4.245163599986288e-15,
+      "ground_degenerate": false,
+      "use_for_c_extrapolation": false,
+      "note": "Spectrum check only; no thermodynamic c inferred from these shell-dependent sizes."
+    },
+    {
+      "L": 12,
+      "Nu": 3,
+      "Nd": 3,
+      "U": 4.0,
+      "dimension": 48400,
+      "energies": [
+        -9.016974198517289,
+        -8.875343942235297,
+        -8.858715488321087
+      ],
+      "entropy": {
+        "1": 1.0886608426410949,
+        "2": 1.5914798854231427,
+        "3": 1.8891655587024263,
+        "4": 2.0798687848327266,
+        "5": 2.1983018907661993,
+        "6": 2.2407500574153585
+      },
+      "residual": 2.5878884256987644e-14,
+      "ground_degenerate": false,
+      "use_for_c_extrapolation": false,
+      "note": "Spectrum check only; no thermodynamic c inferred from these shell-dependent sizes."
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+The survey found no admissible counterexample. The best excess is \(c-(d-1)=0\), and the largest surveyed \(c/d\) is \(11/12\), at \(d=12\).
+
+- Interactions can exceed the free-fermion bound C1. Explicit fermionic swap chains give \(d=4,c=3\) and \(d=8,c=7\), saturating \(c=d-1\).
+- For \(q\) hard-core species plus a hole, the usual liquid has \(c=q\). Spin-charge separation partitions these modes into \(1+(q-1)\); it does not add another sector. Pure hopping instead preserves particle order and leaves frozen species degeneracy.
+- This does not prove a universal prohibition on \(c\ge q+1\). An additional neutral critical sector remains a logical possibility, but none was established in the surveyed models.
+
+Small ED checks reach \(L=12\). Half-chain entropy estimates give \(c\simeq1.982\) for both SU(3) and the two-species supersymmetric t–J chain, consistent with \(c=2\).
+
+The explicit Hamiltonians, source audit, numerical results, and limitations are in [RESULT.md](RESULT.md). Detailed derivations are in [PROOF.md](PROOF.md), with reproducible scripts alongside them.
+
+[gpt_solve: backend=codex model=gpt-6-astra effort=high transcript=20261028T212941-43183]
