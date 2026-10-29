@@ -1,0 +1,79 @@
+[
+  {
+    "N": 3,
+    "V": 3,
+    "label": "one_pin",
+    "W": 1,
+    "delta_B_over_W": -0.09326902302792447,
+    "linear_residual": 6.546139416680338e-17,
+    "constant_choice": 0.06921750181554102,
+    "regular_first_moment": 0.09313725490196077,
+    "note": "The constant is a finite-size diagnostic choice, not a proved asymptotic kernel coefficient."
+  },
+  {
+    "N": 6,
+    "V": 6,
+    "label": "one_pin",
+    "W": 1,
+    "delta_B_over_W": -0.07010286521893033,
+    "linear_residual": 2.1012064910040288e-13,
+    "constant_choice": 0.0770311633900467,
+    "regular_first_moment": 0.10639637169216931,
+    "note": "The constant is a finite-size diagnostic choice, not a proved asymptotic kernel coefficient."
+  },
+  {
+    "N": 6,
+    "V": 6,
+    "label": "length_pair",
+    "W": 6,
+    "delta_B_over_W": -0.0030733696492762225,
+    "linear_residual": 2.1012064910040288e-13,
+    "constant_choice": 0.0770311633900467,
+    "regular_first_moment": 0.10639637169216931,
+    "note": "The constant is a finite-size diagnostic choice, not a proved asymptotic kernel coefficient."
+  },
+  {
+    "N": 6,
+    "V": 6,
+    "label": "long_cell",
+    "W": 6,
+    "delta_B_over_W": -0.005954793663522223,
+    "linear_residual": 2.1012064910040288e-13,
+    "constant_choice": 0.0770311633900467,
+    "regular_first_moment": 0.10639637169216931,
+    "note": "The constant is a finite-size diagnostic choice, not a proved asymptotic kernel coefficient."
+  },
+  {
+    "N": 9,
+    "V": 9,
+    "label": "one_pin",
+    "W": 1,
+    "delta_B_over_W": -0.06166325106841669,
+    "linear_residual": 2.498575895495532e-13,
+    "constant_choice": 0.07787482075932461,
+    "regular_first_moment": 0.10790514057421743,
+    "note": "The constant is a finite-size diagnostic choice, not a proved asymptotic kernel coefficient."
+  },
+  {
+    "N": 9,
+    "V": 9,
+    "label": "length_pair",
+    "W": 6,
+    "delta_B_over_W": -0.003047388697578137,
+    "linear_residual": 2.498575895495532e-13,
+    "constant_choice": 0.07787482075932461,
+    "regular_first_moment": 0.10790514057421743,
+    "note": "The constant is a finite-size diagnostic choice, not a proved asymptotic kernel coefficient."
+  },
+  {
+    "N": 9,
+    "V": 9,
+    "label": "long_cell",
+    "W": 6,
+    "delta_B_over_W": -0.005725152135716681,
+    "linear_residual": 2.498575895495532e-13,
+    "constant_choice": 0.07787482075932461,
+    "regular_first_moment": 0.10790514057421743,
+    "note": "The constant is a finite-size diagnostic choice, not a proved asymptotic kernel coefficient."
+  }
+]

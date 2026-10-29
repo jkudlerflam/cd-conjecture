@@ -1,0 +1,32 @@
+{
+  "tag": "proved_by_rational_interval_arithmetic",
+  "N": 15,
+  "V_pair": [
+    15,
+    16
+  ],
+  "tilt_interval": [
+    0.6101161483169374,
+    0.6101161483169374
+  ],
+  "contact_difference_interval": [
+    0.02232071316834841,
+    0.02232071316834841
+  ],
+  "other_vacancy_margin_lower": 0.0474359884274062,
+  "tail_from_V": 40,
+  "tail_margin_lower": 4.386448174934688,
+  "moment_difference_strict_lower": 4293187.786982249,
+  "response_T_times_difference_strict_lower": 534.7318186928459,
+  "selected_lengths": [
+    15
+  ],
+  "wrong_lengths": [
+    3,
+    3,
+    3,
+    3,
+    3
+  ],
+  "W": 15
+}

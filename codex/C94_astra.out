@@ -1,0 +1,7 @@
+C92’s pointwise bound (29) is false with its stated finite-volume uniformity. I proved this for the full legal C88 trace: a vacancy-sector crossing produces a positive \(c/T\) response difference.
+
+The integrated bound (26), including its subextensive allowance, remains open. I obtained a conditional \(W\)-weighted quantum second-order bound and completed 50 canonical and 10 thermal ED comparisons. The observed normalized residuals decrease toward zero as \(J/t\) decreases, including cases with unfavorable sign.
+
+Derivations, limitations and numerical results are in [PROOF.md](PROOF.md), [RESULT.md](RESULT.md) and [PROGRESS.md](PROGRESS.md). All files and Python execution stayed in `work_C94`.
+
+[gpt_solve: backend=codex model=gpt-6-astra effort=high transcript=20261029T054942-74538]
