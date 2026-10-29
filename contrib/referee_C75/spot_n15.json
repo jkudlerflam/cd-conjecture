@@ -1,0 +1,34 @@
+{
+ "T_ratio_mean": 2.200260610625276e-97,
+ "T_ratio_rel_spread": 2.59854461943937e-15,
+ "beta2": 8.801042442501067e-97,
+ "T_ratio_over_beta2": 0.25000000000000105,
+ "M_ratio_mean": 2.2002606106252701e-97,
+ "M_ratio_rel_spread": 6.023898890518556e-15,
+ "M_ratio_over_beta2": 0.2500000000000004,
+ "T_entry_dynamic_range": 7.224466392755106e+32,
+ "grid_crossings": 30,
+ "max_root_mismatch": 1.5510356375258993e-05,
+ "grid_step": 1.5707963267885816e-05,
+ "reported_delta2": 0.014554248939888215,
+ "reported_delta4": 1.851177346967603e-07,
+ "recomputed_margins_from_reported_roots": [
+  0.014554248939888215,
+  1.851177353628941e-07,
+  0
+ ],
+ "inertia_sequence": [
+  [
+   0,
+   1
+  ],
+  [
+   1,
+   2
+  ],
+  [
+   2,
+   3
+  ]
+ ]
+}

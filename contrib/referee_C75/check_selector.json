@@ -1,0 +1,326 @@
+{
+ "cells": [
+  {
+   "case": "C75_Delta",
+   "k": 0,
+   "K": 6.0,
+   "dim": 3,
+   "E": 0.0,
+   "upper": -1.2246467991473532e-16,
+   "lower": -1.2246467991473532e-16,
+   "within_bounds": true
+  },
+  {
+   "case": "C75_Delta",
+   "k": 0,
+   "K": 10.0,
+   "dim": 3,
+   "E": 0.0,
+   "upper": -1.2246467991473532e-16,
+   "lower": -1.2246467991473532e-16,
+   "within_bounds": true
+  },
+  {
+   "case": "C75_Delta",
+   "k": 0,
+   "K": 100.0,
+   "dim": 3,
+   "E": 0.0,
+   "upper": -1.2246467991473532e-16,
+   "lower": -1.2246467991473532e-16,
+   "within_bounds": true
+  },
+  {
+   "case": "C75_Delta",
+   "k": 1,
+   "K": 6.0,
+   "dim": 36,
+   "E": -1.0,
+   "upper": -1.0000000000000002,
+   "lower": -1.0000000000000002,
+   "within_bounds": true
+  },
+  {
+   "case": "C75_Delta",
+   "k": 1,
+   "K": 10.0,
+   "dim": 36,
+   "E": -1.0,
+   "upper": -1.0000000000000002,
+   "lower": -1.0000000000000002,
+   "within_bounds": true
+  },
+  {
+   "case": "C75_Delta",
+   "k": 1,
+   "K": 100.0,
+   "dim": 36,
+   "E": -1.0000000000000056,
+   "upper": -1.0000000000000002,
+   "lower": -1.0000000000000002,
+   "within_bounds": true
+  },
+  {
+   "case": "C75_Delta",
+   "k": 2,
+   "K": 6.0,
+   "dim": 432,
+   "E": -1.449837857192275,
+   "upper": -1.4142135623730951,
+   "lower": -1.9142135623730951,
+   "within_bounds": true
+  },
+  {
+   "case": "C75_Delta",
+   "k": 2,
+   "K": 10.0,
+   "dim": 432,
+   "E": -1.4369381655446791,
+   "upper": -1.4142135623730951,
+   "lower": -1.5808802290397619,
+   "within_bounds": true
+  },
+  {
+   "case": "C75_Delta",
+   "k": 2,
+   "K": 100.0,
+   "dim": 432,
+   "E": -1.4166894118760298,
+   "upper": -1.4142135623730951,
+   "lower": -1.4246302290397619,
+   "within_bounds": true
+  },
+  {
+   "case": "C75_Delta",
+   "k": 3,
+   "K": 6.0,
+   "dim": 5184,
+   "E": -1.720084827344959,
+   "upper": -1.618033988749895,
+   "lower": -2.618033988749895,
+   "within_bounds": true
+  },
+  {
+   "case": "C75_Delta",
+   "k": 3,
+   "K": 10.0,
+   "dim": 5184,
+   "E": -1.6804943992081727,
+   "upper": -1.618033988749895,
+   "lower": -1.9513673220832282,
+   "within_bounds": true
+  },
+  {
+   "case": "C75_Delta",
+   "k": 3,
+   "K": 100.0,
+   "dim": 5184,
+   "E": -1.6244046717235816,
+   "upper": -1.618033988749895,
+   "lower": -1.6388673220832282,
+   "within_bounds": true
+  },
+  {
+   "case": "C75_Delta",
+   "k": 4,
+   "K": 6.0,
+   "dim": 62208,
+   "E": -1.9208523010166323,
+   "upper": -1.7320508075688774,
+   "lower": -3.2320508075688776,
+   "within_bounds": true
+  },
+  {
+   "case": "C75_Delta",
+   "k": 4,
+   "K": 10.0,
+   "dim": 62208,
+   "E": -1.8442610827173773,
+   "upper": -1.7320508075688774,
+   "lower": -2.2320508075688776,
+   "within_bounds": true
+  },
+  {
+   "case": "C75_Delta",
+   "k": 4,
+   "K": 100.0,
+   "dim": 62208,
+   "E": -1.7429321413409764,
+   "upper": -1.7320508075688774,
+   "lower": -1.7633008075688774,
+   "within_bounds": true
+  },
+  {
+   "case": "Delta_below_2_hypothesis_violated",
+   "k": 2,
+   "K": 6.0,
+   "dim": 432,
+   "E": -1.4498378571922825,
+   "upper": -1.4142135623730951,
+   "lower": -1.9142135623730951,
+   "within_bounds": true
+  },
+  {
+   "case": "Delta_below_2_hypothesis_violated",
+   "k": 2,
+   "K": 10.0,
+   "dim": 432,
+   "E": -1.436938165544688,
+   "upper": -1.4142135623730951,
+   "lower": -1.5808802290397619,
+   "within_bounds": true
+  },
+  {
+   "case": "Delta_below_2_hypothesis_violated",
+   "k": 2,
+   "K": 100.0,
+   "dim": 432,
+   "E": -1.4166894118759972,
+   "upper": -1.4142135623730951,
+   "lower": -1.4246302290397619,
+   "within_bounds": true
+  },
+  {
+   "case": "Delta_below_2_hypothesis_violated",
+   "k": 3,
+   "K": 6.0,
+   "dim": 5184,
+   "E": -1.720084827344968,
+   "upper": -1.618033988749895,
+   "lower": -2.618033988749895,
+   "within_bounds": true
+  },
+  {
+   "case": "Delta_below_2_hypothesis_violated",
+   "k": 3,
+   "K": 10.0,
+   "dim": 5184,
+   "E": -1.6804943992081853,
+   "upper": -1.618033988749895,
+   "lower": -1.9513673220832282,
+   "within_bounds": true
+  },
+  {
+   "case": "Delta_below_2_hypothesis_violated",
+   "k": 3,
+   "K": 100.0,
+   "dim": 5184,
+   "E": -1.6244046717235547,
+   "upper": -1.618033988749895,
+   "lower": -1.6388673220832282,
+   "within_bounds": true
+  },
+  {
+   "case": "Delta_below_2_hypothesis_violated",
+   "k": 4,
+   "K": 6.0,
+   "dim": 62208,
+   "E": -1.9208523010166265,
+   "upper": -1.7320508075688774,
+   "lower": -3.2320508075688776,
+   "within_bounds": true
+  },
+  {
+   "case": "Delta_below_2_hypothesis_violated",
+   "k": 4,
+   "K": 10.0,
+   "dim": 62208,
+   "E": -1.844261082717389,
+   "upper": -1.7320508075688774,
+   "lower": -2.2320508075688776,
+   "within_bounds": true
+  },
+  {
+   "case": "Delta_below_2_hypothesis_violated",
+   "k": 4,
+   "K": 100.0,
+   "dim": 62208,
+   "E": -1.742932141340995,
+   "upper": -1.7320508075688774,
+   "lower": -1.7633008075688774,
+   "within_bounds": true
+  }
+ ],
+ "rings": [
+  {
+   "ring": 2,
+   "K": 6.0,
+   "dim": 144,
+   "E": -0.31662479035540725,
+   "claimed_lower": -1.0,
+   "ok": true
+  },
+  {
+   "ring": 2,
+   "K": 10.0,
+   "dim": 144,
+   "E": -0.19615242270663202,
+   "claimed_lower": -0.3333333333333333,
+   "ok": true
+  },
+  {
+   "ring": 2,
+   "K": 100.0,
+   "dim": 144,
+   "E": -0.01999600159923887,
+   "claimed_lower": -0.020833333333333332,
+   "ok": true
+  },
+  {
+   "ring": 3,
+   "K": 6.0,
+   "dim": 1728,
+   "E": -0.47466709611813734,
+   "claimed_lower": -1.5,
+   "ok": true
+  },
+  {
+   "ring": 3,
+   "K": 10.0,
+   "dim": 1728,
+   "E": -0.29420243566313,
+   "claimed_lower": -0.5,
+   "ok": true
+  },
+  {
+   "ring": 3,
+   "K": 100.0,
+   "dim": 1728,
+   "E": -0.029994002099582466,
+   "claimed_lower": -0.03125,
+   "ok": true
+  },
+  {
+   "ring": 4,
+   "K": 6.0,
+   "dim": 20736,
+   "E": -0.6328819166065203,
+   "claimed_lower": -2.0,
+   "ok": true
+  },
+  {
+   "ring": 4,
+   "K": 10.0,
+   "dim": 20736,
+   "E": -0.3922696002778138,
+   "claimed_lower": -0.6666666666666666,
+   "ok": true
+  },
+  {
+   "ring": 4,
+   "K": 100.0,
+   "dim": 20736,
+   "E": -0.0399920027988996,
+   "claimed_lower": -0.041666666666666664,
+   "ok": true
+  }
+ ],
+ "selector_float": {
+  "mu_sel": 1.9015866376241621,
+  "argmin_b": 16,
+  "e16": -0.00402247260897759,
+  "min_density_gap": 2.0774467786183366e-05,
+  "gap_over_2m16": 1.361475520835313,
+  "inv_K_minus_4_below_2m17": true
+ }
+}

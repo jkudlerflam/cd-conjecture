@@ -81,7 +81,7 @@ Verification done since the referee report (`contrib/verify_C44/`, REPORT §9.28
 
 ## Smallest candidate so far: d = 15 or 16 (2026-10-28)
 
-[proved finite ingredients; conditional infrared conclusion; not yet refereed] Astra C75 reduced the route-A alphabet from 23 to 15 letters (`codex/work_C75/`, REPORT §9.41) with a certified member at n = 15: 30 simple Fermi points, distinct sea centres, exact U(1), positive pair-sum margins. The predicted infrared is c = 15 > d − 1 = 14 for the frozen chain, or c = 16 > 15 at d = 16 with one vacancy. It is conditional on the same steps as the d = 24 candidate. A survey of simpler mechanisms at d = 3 to 12 (C76, §9.39) and a hard-core multi-species analysis (C77, §9.38) found nothing beyond c = d − 1.
+[proved finite ingredients; conditional infrared conclusion; not yet refereed] Astra C75 reduced the route-A alphabet from 23 to 15 letters (`codex/work_C75/`, REPORT §9.41) with a certified member at n = 15: 30 simple Fermi points, distinct sea centres, exact U(1), positive pair-sum margins. The predicted infrared is c = 15 > d − 1 = 14 for the frozen chain, or c = 16 > 15 at d = 16 with one vacancy. It is conditional on the same steps as the d = 24 candidate. An independent referee (`contrib/referee_C75/`, REPORT §9.42) found no fatal gap and confirmed the finite claims; the frozen d = 15 chain stands on the same footing as the 23-letter frozen chain, while the d = 16 vacancy lift has a serious open gap (a domain wall can form next to a vacancy without penalty). A survey of simpler mechanisms at d = 3 to 12 (C76, §9.39) and a hard-core multi-species analysis (C77, §9.38) found nothing beyond c = d − 1.
 
 ## Summary
 

@@ -1,0 +1,16 @@
+{
+ "certificate_n15.json": "identical",
+ "root_certificate_exact_n15.json": "identical",
+ "root_certificate_n15.json": "identical",
+ "full_loop_bands_n15.json": "identical",
+ "rational_bands_n15.json": "identical",
+ "finite_budget.json": "identical",
+ "finite_budget_exact.json": "identical",
+ "selector_certificate.json": "equal within 1e-9 relative (float noise)",
+ "small_checks.json": "equal within 1e-9 relative (float noise)",
+ "certificate_n15_D1000.npz": "identical",
+ "derivative_n15.npz": "identical",
+ "full_loop_n15.npz": "identical",
+ "full_loop_whitened_n15.npz": "identical",
+ "whitened_n15.npz": "identical"
+}
