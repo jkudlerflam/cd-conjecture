@@ -1,6 +1,6 @@
 # Reproducing the finite claims behind `note.pdf`
 
-This is an ordered checklist of the scripts that regenerate every load-bearing finite claim in the note. It follows the note's structure, Claim A first, then Claim B, then the small-d mechanism checks. The infrared input S, and inputs P and M of the d = 24 chain, are not finite claims and no script tests them.
+This is an ordered checklist of the scripts that regenerate every load-bearing finite claim in the note. It follows the note's structure, Claim A first, then Claim B, then the small-d mechanism checks, then the smaller-d candidates and the d = 2 surveys of note Section 7 (added 2026-10-29). The infrared input S, and inputs P and M of the d = 24 chain, are not finite claims and no script tests them.
 
 Everything was produced with AI assistance and has not been refereed by a human. The scripts are the authors' own, and where a referee rebuilt something independently that script is listed separately.
 
@@ -107,6 +107,14 @@ Folders `codex/work_C47/` to `codex/work_C62/`, note Section 6. Each has `RESULT
 
 - [ ] In each folder, `python3 -B checks.py`. Tested 0 to 1 s each, all sixteen exit with code 0. Each writes `checks.json`. Spot values: C48 `kernel_error` 8.7e-15, `polymer_error` 6.8e-21 and `partition_error` 6.7e-16; C58 positive `minimum_slack` 0.00176; C60 and C61 report `"status": "passed"` with exact rational arithmetic; C62 reports `"status": "passed"` with largest matrix dimension 256.
 
+### A9. Progress on Lemma N and lemma TP (C64 to C79), note end of Section 6.2
+
+Folders `codex/work_C64/` to `codex/work_C79/` (Lemma N: C64, C70, C72, C74, C79; lemma TP: C65, C71, C73, C78; C66 is the explicit n = 1 matched action).
+
+- [ ] In each folder, `python3 -B checks.py`. Each writes `checks.json`. These are finite exact or numerical controls (for C79, the load surplus q(b) = floor((b-1)^2/4), factorial absorption through load 300 and route summation). They were rerun by the coordinating agent when the runs landed (REPORT §§9.32 to 9.41), not for this checklist. They do not verify the proofs.
+
+Where to read. C79 `RESULT.md` and `PROOF.md` §§2 to 6 (general-tree moment estimate, scope of C60's (17)), C73 and C78 `RESULT.md` (one-chirality and bubble-ring TP bounds, the mixed-chirality coefficient -g^2 T^2/(48 pi A^3)), C65 and C71 `RESULT.md` (regulator cusp, failure of a majorant-only route).
+
 Where to read. Proved: C48 `PROOF.md` (Eqs. 20, 26, 29 for the constants), C58 `PROOF.md` §§3, 8, 9, C51 `PROOF.md` §§2 to 3, C52 `PROOF.md` §2, C53 `PROOF.md` §§3 to 5, C54 `PROOF.md`. Open: Lemma N in C55 `PROOF.md` §9, with C60 `PROOF.md` §§5 to 6 (the free pair-source counterexample) and the corrected statement in C61 `PROOF.md` §2; lemma TP in C59 `PROOF.md` §7 and C62 `PROOF.md` §7.
 
 ## B. Claim B, the d = 24 chain
@@ -172,10 +180,36 @@ Folder `contrib/vacancy_mobile_numerics/`.
 - [ ] `python3 -B d24.py check`. Tested 64 s. Literal 576 x 576 lift against the squeezed solver. Expected `max_diff` at most 2.3e-13 in sectors of dimension 780 to 3360.
 - [ ] The ground-state scans, the charge-boson Casimir c = 0.998 and the FES runs (`scan.py`, `separated.py`, `modes.py`, `run_fes.py`) ran partly on Typhon (arrays listed in that README). Quoted, not rerun.
 
+### C3. The vacancy count at n = 2 and S on the microscopic demonstrator (note Section 5.2, eqs. 19 and 20)
+
+Folder `contrib/vacancy_n2_dmrg/` (logical vacancy model, calibrated c = 2.9 ± 0.1 at n = 2 against a c ≈ 2 control; REPORT §9.55).
+
+- [ ] `python3 -B check_ed.py` (about a minute, quoted) checks the block-sparse DMRG against exact diagonalization at L = 8, 9 and writes `data/check_ed.json`.
+- [ ] `python3 -B analyze.py` prints every table of the README from the saved `data/` and writes `data/summary.json`. The DMRG and FES runs themselves (`run_obc.py`, `fes2.py`, task lists `tasks_obc*.txt`, `tasks_fes.txt`) ran on Typhon at χ up to 1536. Quoted, not rerun.
+
+Folder `contrib/demonstrator_luttinger/` (full microscopic ten-letter chain against XXZ at the matched anisotropy; REPORT §9.58).
+
+- [ ] `python3 -B test_small.py` runs the small consistency checks (two cells against `cell.inter_cell`, Bethe-ansatz limits), and `python3 -B analyze.py` regenerates the c, K and v tables from `data/`. The open-chain and VUMPS runs (`run_obc.py`, `vumps_fes.py`, `array*.slurm`, `tasks_typhon*.txt`) ran on Typhon. Quoted from the README, not rerun for this checklist.
+
+## E. Smaller-d candidates (note Section 7)
+
+Full details live in the companion note `contrib/small_d_note/` (being written in parallel). Commands below are quoted from the source READMEs and were not rerun for this checklist.
+
+- [ ] Frozen d = 11 (C84), folder `codex/work_C84/`: `python3 run_certificate.py`, `python3 checks.py`, `python3 selector_checks.py`, `python3 grammar_audit.py`, `python3 alphabet_audit.py` (with `OPENBLAS_NUM_THREADS=1`). Expected 22 simple Fermi points and pair-sum separation above 9.12e-7 over 253 pair sums at n = 11.
+- [ ] Mobile d = 13 (C88), folder `codex/work_C88/`: `python3 -B run_all.py`. It reuses C85's n = 13 certificate (`codex/work_C85/`), with 26 simple Fermi points and pair-sum separation above 3.25e-6.
+- [ ] Referees, `contrib/referee_C84_C85/` and `contrib/referee_C88/`: the `check_*.py` scripts and `compare_rerun.py` listed at the end of each README (seconds to about 40 minutes each; they expect a scratch copy of the `codex/work_C84`, `work_C85`, `work_C88` folders).
+- [ ] Defect and infrared inputs (proofs to read, `checks.py` controls only): `codex/work_C89/` to `codex/work_C95/`.
+
+## F. The d = 2 surveys (note Section 7)
+
+- [ ] `contrib/d2_grid/` (about 103,000 points, 173 flagged points decided by calibrated FES): `python3 summary.py` gives the verdict counts from the saved summaries. Scans and FES ran on Typhon (`*_array.slurm`, `tasks_*.txt`); raw data stay there.
+- [ ] `contrib/d2_staggered/` (charge-resolved DMRG to L = 256): `python3 analyze.py` (and the `--sub pbc`, `--pattern 'cut*'` variants) regenerate `summary*.json` from `data/`. Single points rerun with `run_point.py` and `fes_point.py` as in the README (minutes to hours).
+
 ## D. What no script checks
 
-- Assumption S of the note (Section 5.3). Part (a) and the physical-ensemble transfer are now proved (C48, C58; note Section 6.1), and what remains is Lemma N in the corrected form of C61 and lemma TP, with their multichannel extensions (note Section 6.2). These are proofs to be read, and the `checks.py` controls of A8 do not test them.
+- Assumption S of the note (Section 5.3). Part (a) and the physical-ensemble transfer are now proved (C48, C58; note Section 6.1), and what remains is Lemma N in the corrected form of C61 (its source-free localization estimate is proved for general trees by C79, its comparison and source parts are open) and lemma TP (controlled on two subseries by C73 and C78), with their multichannel extensions (note Section 6.2). These are proofs to be read, and the `checks.py` controls of A8 do not test them.
 - For the d = 24 chain, inputs P (S for the frozen 23-letter chain) and M (vacancy matching), the positive dressed defect cost, and every-ring uniqueness.
-- A calibrated central charge for any chain with c > d - 1, or for the microscopic chain of any member of the 46-letter family. The only calibrated value in the family is c = 2 for the second-order projected n = 1 chain (A5, `contrib/verify_C44/`).
+- A calibrated central charge for any chain with c > d - 1, or for the microscopic chain of any member of the 46-letter family. The only calibrated value in the family is c = 2 for the second-order projected n = 1 chain (A5, `contrib/verify_C44/`). The vacancy count (C3) concerns a logical model, and the step back to the microscopic chain is heuristic.
+- For the d = 11 and d = 13 candidates, S for the frozen chain, vacancy matching, the legal charge comparison and the finite-J mobile representation (note Section 7).
 
 These are the items for human review, together with a reading of C39 to C45 (`codex/work_C39/PROOFS.md`, `codex/work_C42/PROOF.md`, `codex/work_C44/PROOFS.md`, `codex/work_C45/PROOF.md`) and of the proved parts of S (`codex/work_C48/PROOF.md`, `codex/work_C51/PROOF.md`, `codex/work_C52/PROOF.md`, `codex/work_C58/PROOF.md`).

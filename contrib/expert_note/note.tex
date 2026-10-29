@@ -25,13 +25,13 @@
 \large A candidate refutation of the $c$--$d$ conjecture, prepared for expert review}
 \author{Compiled for J.~Kudler-Flam (Institute for Advanced Study)\\
 \small from the repository \repo{github.com/jkudlerflam/cd-conjecture}, folder \repo{notes/cd_conjecture}}
-\date{28 October 2026}
+\date{28 October 2026, revised 29 October 2026}
 
 \begin{document}
 \maketitle
 
 \begin{abstract}
-Latorre and Sierra conjecture that a one-site translation-invariant, nearest-neighbour chain on $(\C^d)^{\otimes L}$ whose low-energy spectrum is a collection of unitary CFTs has total central charge $c\le d-1$. We describe a construction that, for every $n$, gives a Hermitian nearest-neighbour bond on $\C^{4464}\otimes\C^{4464}$ whose predicted infrared theory is $n+1$ compact bosons, so no bound of the form $c\le f(d)$ would hold. A related 24-state chain is predicted to have $c=24>d-1$. Every finite-dimensional ingredient is proved, or certified in exact arithmetic at small $n$ and checked in high precision beyond. The infrared conclusion rests on one standard but unproved input S, the elimination of a massive local sector at fixed coupling followed by weak-coupling RG for a multi-component Luttinger liquid with extremely separated scales. Since the first version, the elimination step, uniformly in volume, and the transfer to the physical ring in thermodynamic form have been proved at fixed $n$, and S now reduces to two constructive-RG estimates about the logical fermion action, neither of them closed (Section~\ref{sec:Sstatus}). An independent rebuild of the wrapper agrees with the original, and its projected $n=1$ chain gives a calibrated $c=2$. No chain with $c>d-1$ has been simulated. The work was produced with AI assistance and has not been refereed by humans. This note states what a reviewer would need to check, and in which order.
+Latorre and Sierra conjecture that a one-site translation-invariant, nearest-neighbour chain on $(\C^d)^{\otimes L}$ whose low-energy spectrum is a collection of unitary CFTs has total central charge $c\le d-1$. We describe a construction that, for every $n$, gives a Hermitian nearest-neighbour bond on $\C^{4464}\otimes\C^{4464}$ whose predicted infrared theory is $n+1$ compact bosons, so no bound of the form $c\le f(d)$ would hold. A related 24-state chain is predicted to have $c=24>d-1$. Every finite-dimensional ingredient is proved, or certified in exact arithmetic at small $n$ and checked in high precision beyond. The infrared conclusion rests on one standard but unproved input S, the elimination of a massive local sector at fixed coupling followed by weak-coupling RG for a multi-component Luttinger liquid with extremely separated scales. Since the first version, the elimination step, uniformly in volume, and the transfer to the physical ring in thermodynamic form have been proved at fixed $n$, and S now reduces to two constructive-RG estimates about the logical fermion action, neither of them closed (Section~\ref{sec:Sstatus}). An independent rebuild of the wrapper agrees with the original, and its projected $n=1$ chain gives a calibrated $c=2$. A logical vacancy model gives calibrated $c=2$ and $2.9\pm0.1$ at $n=1,2$, and a ten-letter demonstrator flows to the Luttinger liquid of its matched logical chain, as S predicts. An eleven-letter alphabet gives refereed conditional candidates at $d=11$ (frozen, $c=11$) and $d=13$ (mobile, $c=14$). No chain with $c>d-1$ has been simulated. The work was produced with AI assistance and has not been refereed by humans. This note states what a reviewer would need to check, and in which order.
 \end{abstract}
 
 \section{The conjecture and the claim}
@@ -58,7 +58,7 @@ For every $n\ge1$ there is a Hermitian bond $h_n$ on $\C^{d_0}\otimes\C^{d_0}$, 
 An explicit bond $h_{24}$ on $\C^{24}\otimes\C^{24}$, at a certified parameter point with $n=23$, is predicted to have $c_T=24>d-1=23$. The prediction assumes the same kind of input as Claim A for a frozen 23-letter chain, plus a matching statement for a gapless vacancy fluid and a positive dressed defect energy (Section~\ref{sec:V}).
 \end{claim}
 
-Claim A is the stronger statement and the one we ask reviewers to focus on. Claim B is cheaper and more concrete, but it has more open inputs. The finite-dimensional ingredients of both are established at the working standard of theoretical physics (proofs in the repository, exact rational or interval certificates where they exist, high-precision numerics otherwise). The infrared step of Claim A has been reduced, with explicit constants, to the single input S, and S has since been reduced to two named estimates (Section~\ref{sec:Sstatus}). In our assessment both claims are credible conditional candidates and neither is an established counterexample. The AI referee reports on the two forms reach the same verdict~\cite{refC44,refd24}.
+Claim A is the stronger statement and the one we ask reviewers to focus on. Claim B is cheaper and more concrete, but it has more open inputs. The finite-dimensional ingredients of both are established at the working standard of theoretical physics (proofs in the repository, exact rational or interval certificates where they exist, high-precision numerics otherwise). The infrared step of Claim A has been reduced, with explicit constants, to the single input S, and S has since been reduced to two named estimates (Section~\ref{sec:Sstatus}). In our assessment both claims are credible conditional candidates and neither is an established counterexample. The AI referee reports on the two forms reach the same verdict~\cite{refC44,refd24}. Smaller conditional candidates of the same kind, down to $d=11$, are described in Section~\ref{sec:smalld}.
 
 \section{The mechanism}
 \label{sec:mech}
@@ -174,12 +174,15 @@ Wrapper on the 46-letter core, $d_0=4464$ & \repo{codex/work_C44/}, built on \re
 Rule-table rebuild of C44, calibrated $c$ at $n=1$ & \repo{contrib/verify_C44/} & numerical \\
 Local Schrieffer--Wolff, threshold, schedule & \repo{codex/work_C45/} (\repo{PROOF.md} \S3--8) & proved, conditional on S \\
 Massive matching, ensemble transfer, $c$ from a Gaussian limit, no-go, adversarial ledger & \repo{codex/work_C48/}, \repo{work_C58/}, \repo{work_C51/}, \repo{work_C52/}, \repo{work_C54/} & proved, with stated conditions \\
-Lemma N and lemma TP & \repo{codex/work_C55/}, \repo{work_C60/}, \repo{work_C61/}; \repo{work_C57/}, \repo{work_C59/}, \repo{work_C62/} & open, partial results \\
+Lemma N and lemma TP & \repo{codex/work_C55/}, \repo{work_C60/}, \repo{work_C61/}; \repo{work_C57/}, \repo{work_C59/}, \repo{work_C62/}; progress in \repo{work_C64/} to \repo{work_C79/} & open, partial results \\
 23-letter frozen bond, $n=23$ certificate & \repo{contrib/explicit_candidate/}, \repo{codex/work_C33/}, \repo{codex/work_C37/} & certified, rerun twice \\
 Margins of the 23-letter chain, $n\le23$ & \repo{contrib/margins_audit/} & high-precision numerics \\
 Vacancy lift, squeezing, sector bounds, harmonics & \repo{contrib/counterexample_campaign/} & finite parts proved, AI referee~\cite{refd24} \\
 Assembled argument, both forms & \repo{contrib/routeA_final/README.md} & synthesis \\
 Mechanism checks at small $d$ & \repo{contrib/routeA_demonstrator/}, \repo{contrib/vacancy_mobile_numerics/}, \repo{contrib/mobile_cells/} & numerical \\
+Vacancy count at $n=2$, S on the microscopic demonstrator & \repo{contrib/vacancy_n2_dmrg/}, \repo{contrib/demonstrator_luttinger/} & numerical \\
+Frozen $d=11$, mobile $d=13$ & \repo{codex/work_C84/}, \repo{work_C85/}, \repo{work_C88/}, referees in \repo{contrib/referee_C84_C85/}, \repo{contrib/referee_C88/}; companion note \repo{contrib/small_d_note/} & certified, AI referee, infrared assumed \\
+$d=2$ surveys & \repo{contrib/d2_grid/}, \repo{contrib/d2_staggered/} & numerical \\
 \bottomrule
 \end{tabularx}
 \caption{Where each ingredient lives in the repository. Paths are relative to \texttt{notes/cd\_conjecture/}.}
@@ -247,6 +250,20 @@ For Claim B, the 576-by-576 bond was rebuilt independently entry by entry, the $
 
 The mechanism has been seen at small $d$. A ten-letter frozen bond forms cells unaided and its microscopic chain gives $c=1.00$ to $1.02$ by finite-entanglement scaling at three couplings, with ring spectra matching the effective logical chain to better than $6\times10^{-3}$ relative and $z=1$~\cite{demo,FES}. Calibration chains at the same correlation lengths read $0.90$ to $0.92$, so that estimate carries a systematic uncertainty near $0.1$. A $d=6$ mobile toy has a unique ground state on rings $L=8$ to $18$ and $c=2$ from three estimators~\cite{mobile}. The vacancy lift of the ten-letter bond ($d=11$) has a unique ground state on rings $L=5$ to $11$ up to a payload doublet, and a calibrated charge boson with $c=0.998$, but its payload is 360 times slower and its half of $c=2$ is not resolved~\cite{vacnum}. No chain with $c>d-1$ has been simulated. None of the small-$d$ checks in this paragraph uses the two-bus core, and the projected $n=1$ chain of~\eqref{eq:cn1} is the only computation of $c$ that does.
 
+The vacancy count \st{numerical}. The payloads of the real lifts are far too slow to resolve. A logical vacancy model keeps the mechanism, each site being a vacancy or a cell of $n$ Jordan--Wigner flavours that hops through vacancies by the same lift, with the small non-Gaussian part dropped. At $n=1$ two calibrated estimators give $1.92$ to $2.04$, against $1.05$ for a gapped-payload control~\cite{vacnum}. At $n=2$, a DMRG conserving cell and flavour numbers, with interval entanglement calibrated against the exact three-free-chain reference, gives $2.86$ to $2.91$ on open chains of $L=40$ to $100$ and $2.8$ to $3.2$ by finite-entanglement scaling, while the control with one flavour gapped gives $1.85$ to $2.0$~\cite{vacn2}. So
+\begin{align}
+c(n=1)=2.0,\qquad c(n=2)=2.9\pm0.1\quad\text{against a } c=2 \text{ control},
+\label{eq:vaccount}
+\end{align}
+and $c$ rises as $n+1$. The step from the logical model back to the microscopic chain is first-order spin--charge separation \st{heuristic}.
+
+Input S on a full microscopic chain \st{numerical}. In the ten-letter demonstrator with the collaborator's coupling tuning, the second-order logical chain is XXZ at anisotropy $g=27/182$, $27/364$ or $27/728$, and the exact two-cell bond shifts it to $g_x(\lambda)$. DMRG on the unchanged microscopic chain (up to 48 cells, $0.0125\le\lambda\le0.15$) gives $c=0.98$ to $1.01$, equal to the logical chain within $0.002$, Bethe-ansatz velocities within $1.5$ percent, and
+\begin{align}
+K_{\rm micro}(\lambda)=K_{\rm XXZ}\big(g_x(\lambda)\big)+O(\lambda^2)=K_{\rm XXZ}(g)+\lambda\,\frac{\dd K_{\rm XXZ}}{\dd g}\,\frac{\dd g_x}{\dd\lambda}+O(\lambda^2),
+\label{eq:Kdemo}
+\end{align}
+with fitted slopes $0.16,\,0.35,\,0.74$ against predicted $0.18,\,0.35,\,0.72$, and agreement with $K_{\rm XXZ}(g_x(\lambda))$ to $2\times10^{-4}$ for $\lambda\le0.05$~\cite{demoLL}. This is S in a family where the answer is known: the full chain flows to the Luttinger liquid of its matched logical chain, with the $O(\lambda)$ correction a local shift of the anisotropy. It has one channel and no velocity hierarchy.
+
 \subsection{The load-bearing assumption}
 \label{sec:S}
 
@@ -274,7 +291,7 @@ Claim B needs S for the frozen 23-letter chain after blocking 24-site cells (inp
 \section{Status of input S}
 \label{sec:Sstatus}
 
-After the reduction to S, sixteen gpt-6-astra runs (C47 to C62) attacked it in four rounds, and the coordinating agent reran every check script. No human has read these proofs. The upshot is that part (a) of S and the passage to the physical ring are proved at fixed $n$, while part (b) is reduced to two estimates about the constructive RG of the logical fermion action.
+After the reduction to S, sixteen gpt-6-astra runs (C47 to C62) attacked it in four rounds, and the coordinating agent reran every check script. No human has read these proofs. The upshot is that part (a) of S and the passage to the physical ring are proved at fixed $n$, while part (b) is reduced to two estimates about the constructive RG of the logical fermion action. Later runs (C64 to C79) made progress on both, summarized at the end of Section~\ref{sec:remain}.
 
 \subsection{What is now proved}
 
@@ -322,7 +339,7 @@ which no remainder proportional to the interaction can absorb. C61 therefore spl
 D_O(u)=D_O(0)+\big[D_O(u)-D_O(0)\big],
 \label{eq:Dsplit}
 \end{align}
-with only the bracket carrying an interaction prefactor, and reduces C60's scale-allocation inequality to a cut-coverage condition in the reduced scale tree. Realizing those counts in the actual spatial tree is open, and the inequality is neither proved nor refuted. Given Lemma N, the scaling dimensions $K$ and $1/K$ transfer~\cite[PROOF \S11]{C55}.
+with only the bracket carrying an interaction prefactor, and reduces C60's scale-allocation inequality to a cut-coverage condition in the reduced scale tree. C79 has since proved that inequality for general trees (below). Given Lemma N, the scaling dimensions $K$ and $1/K$ transfer~\cite[PROOF \S11]{C55}.
 
 Lemma TP~\cite[PROOF \S7]{C59},~\cite[PROOF \S7]{C62}. Let $X_h^T$, $Y_h^T$ be the effective data of the lattice and of a Luttinger reference with the dressed $v$, $K$ at scale $q_h$ and temperature $T$. TP asks for
 \begin{align}
@@ -331,7 +348,40 @@ Lemma TP~\cite[PROOF \S7]{C59},~\cite[PROOF \S7]{C62}. Let $X_h^T$, $Y_h^T$ be t
 \end{align}
 with $\theta>0$, $p>2$ and compatible vacuum derivative and Hessian bounds, uniformly in depth and regulators. Under TP, $f(T)=e_0-(\pi/6v)T^2+o(T^2)$ for XXZ at fixed nonzero anisotropy~\cite{C59}. C62 builds a trace-defined, smoothed reference whose scalar is the oscillator trace, with coefficient $-\pi/(6v)$, and shows that $p=3$ suffices given a joint marked-tree majorant with one short-memory factor. That majorant is the missing step. No counterexample to the thermal formula was found. The analogous bound is proved for non-solvable Ising models ($c=1/2$)~\cite{GM13}, and a 2024 talk announces the thermal correction for weakly interacting chains, with no manuscript located~\cite{Renzi}.
 
+Progress on Lemma N (C64, C70, C72, C74, C79) \st{proved, partial}. After partial steps (C64 to C74, including all quartic pair ladders), C79 treats general trees. A moment born at scale $u$ and routed to an edge at scale $t\ge u$ carries an extra $2^{-(t-u)}$, so an edge with load $b$ has a surplus
+\begin{align}
+q(b)=\big\lfloor (b-1)^2/4\big\rfloor ,\qquad b\ge1,
+\label{eq:surplus}
+\end{align}
+half of which pays $(b!)^2$ and half the routing choices, for a total $C^{\sum_ip_i+n}$ independent of depth, with several quartic children per vertex and retarded endpoints of any degree. This proves C60's scale-allocation inequality, the source-free localization estimate~\cite{C64}. The comparison and source parts of Lemma N remain open \st{assumed}.
+
+Progress on lemma TP (C65, C71, C73, C78) \st{proved, partial}. With C62's sharp windows the thermal density bubble has a $|p|$ cusp at every finite cutoff, so TP cannot hold uniformly in that regulator, and C65 supplies a smooth one with the same Gibbs limit. C71 shows that a majorant-only route fails, so cancellations must be kept before norms. C73 integrates one chirality to all orders on a cutoff-independent disk, with $\|\partial_A^j(F^T-{\rm Per}_\beta F^0)\|\le C|g|^2T^P$, $P>1$, and C78 does the same for the bubble-ring subseries of both chiralities, finding
+\begin{align}
+f^{(2)}(T)-f^{(2)}(0)=-\frac{g^2T^2}{48\pi A^3}+o(T^2),
+\label{eq:C78}
+\end{align}
+consistent with the sound dispersion of C62's reference. The complete two-chirality integration and the infrared comparison remain open \st{assumed}~\cite{C64}.
+
 In sum, Lemma N with its multichannel comparison would give the complete Gaussian limit with dressed speeds, TP the thermal coefficient, C58 would carry it to the physical ring as~\eqref{eq:fT}, and C51 would identify $c=n+1$. The collaborator's ledger lists the same two obligations~\cite{direct}.
+
+\section{Smaller local dimension}
+\label{sec:smalld}
+
+A second line of runs (C75 to C95) asked how small $d$ can be made with the same mechanism. Full details are in a companion note being written in parallel, \repo{contrib/small_d_note/}. The two smallest candidates, conditional on the inputs below, are
+\begin{align}
+d=11:\quad c_T=11>d-1=10\ \ \text{(frozen)},\qquad\qquad d=13:\quad c_T=14>d-1=12\ \ \text{(mobile)}.
+\label{eq:smalld}
+\end{align}
+
+Frozen, $d=11$ (C84) \st{proved finite construction, certified, AI referee}. The eleven letters are $L_{0,1}$, $R_{0,1}$, $D_{A,B}$, $X_{A,B}$, $E$, $M_{A,B}$ (bond in \repo{codex/work_C84/bond11.py}). Tokens carry no bit, the displaced bit is shifted to the next site, and a vacuum domain wall replaces the vacuum token. A certified member at $n=11$ (cell length 13) has 22 simple Fermi points and pair-sum separation above $9.12\times10^{-7}$ over all 253 pair sums, with all finite-coupling errors in budget. As a frozen chain it carries the caveat of Section~\ref{sec:mobile}.
+
+Mobile, $d=13$ (C88) \st{proved finite construction, certified, AI referee}. Two vacancy colours $V_0,V_1$ carry the grammar state of the preceding material letter, so every illegal squeezed pair forces a local mismatch across any number of vacancies. The boundary pin of the eleven-letter grammar is a superselection label, which removes the third colour of an earlier $d=14$ lift (C85), and in the pin-free sector C85's certified $n=13$ member applies unchanged (26 simple Fermi points, pair-sum separation above $3.25\times10^{-6}$). The predicted infrared is 13 payload bosons plus the vacancy charge boson. Claude referees rebuilt both bonds, reproduced both certificates bit for bit and found no fatal or serious new gap~\cite{refC84}.
+
+Inputs \st{assumed}. Both inherit the infrared inputs of the larger chains, S for the frozen chain and, at $d=13$, vacancy matching and a positive dressed defect cost. C90 transfers C48, C58 and C51 to them under stated hypotheses \st{proved}. Open are the legal charge comparison that the $d=24$ chain also needs (C94 refutes a sufficient finite-volume form, C95 proves parts of the thermodynamic one) and the finite-$J$ mobile representation for C48 (C91, C93).
+
+Lower bounds. Eleven letters are minimal in the single-token product class (C86, C87) \st{proved within stated classes}, and simpler mechanisms at $3\le d\le12$ give at best $c=d-1$ (C76) \st{proved or numerical, case by case}.
+
+The case $d=2$ \st{numerical}. A calibrated survey sampled about $103{,}000$ points across the four residual symmetry strata of the qubit chain and decided all 173 flagged points by finite-entanglement scaling calibrated on Ising, XX, cluster-Ising ($1.500$) and two XX chains ($2.01$). None has $c>1$. A charge-resolved DMRG on the staggered branch, open chains to $L=256$ at 22 points, finds a single boson tower in every charge sector, no coexisting Ising sector, and at most $1.05\pm0.05$~\cite{d2grid}. A value slightly above 1 could escape the screens.
 
 \section{What a reviewer should check, in order}
 
@@ -342,15 +392,16 @@ In sum, Lemma N with its multichannel comparison would give the complete Gaussia
 \item The local reduction~\cite[PROOF \S3--4]{C45}, Eqs.~\eqref{eq:SW} and~\eqref{eq:threshold}, which are short, and the schedule~\cite[PROOF \S8]{C45} for circularity.
 \item The wrapper~\cite[PROOFS]{C44}. The exclusion bounds were rebuilt by the referee. The transport overlap and the source formula (C44 Eqs.~9 and~11) have now been rebuilt from the rule text and agree at $n=1,2,3$~\cite{verC44}, but C44's traceless length--payload numbers at $n=2$ are roundoff and should be disregarded.
 \item For Claim B, the squeezing identity, the sector bounds, the $n=23$ certificate, the harmonic selection rule, and inputs M and the dressed defect cost~\cite{campaign,audit}.
+\item For the smaller candidates, the finite constructions C84 and C88 and the legal charge comparison (Section~\ref{sec:smalld} and \repo{contrib/small_d_note/}).
 \end{enumerate}
-The scripts that reproduce every finite claim are listed in \repo{contrib/expert_note/REPRODUCE.md}. The two AI referees asked, before acceptance, for a calibrated $c=n+1$ from two estimators on a small member of the same family at couplings where the payload is resolved, for the rebuild in item 5, and for a human reading of C39 to C45~\cite{refC44,refd24}. The first two are now done at the level stated in Section~\ref{sec:computed}, the first only for the projected $n=1$ chain. The human reading is still outstanding, and it now extends to C48, C51, C52 and C58.
+The scripts that reproduce every finite claim are listed in \repo{contrib/expert_note/REPRODUCE.md}. The two AI referees asked, before acceptance, for a calibrated $c=n+1$ from two estimators on a small member of the same family at couplings where the payload is resolved, for the rebuild in item 5, and for a human reading of C39 to C45~\cite{refC44,refd24}. The first two are now done at the level stated in Section~\ref{sec:computed}, the first only for the projected $n=1$ chain and for the logical vacancy model at $n=1,2$. The human reading is still outstanding, and it now extends to C48, C51, C52 and C58.
 
 \section{Provenance and contributions}
 
-This note and the work it summarizes were produced with AI assistance, and none of it has been refereed by a human. J.~Kudler-Flam directed the project, set the working standard, and coordinated the work, with Claude Opus 5.5 (Anthropic) as coordinating agent, Claude agents (Opus 5.5, and Sonnet 5.5 for the literature check) as authors of the referee, red-team, literature and numerical folders, and closed-book runs of gpt-6-astra (OpenAI, through the Codex CLI) for most derivations. The runs are labelled C1 to C63, and C32, C33, C37, C39, C41, C42 and C44 to C62 are the ones cited here. The rebuild of C44 and the $n=1$ central charge~\cite{verC44} are the work of a separate Claude Opus 5.5 agent, partly run on the IAS Typhon cluster. A collaborator (GitHub: salpace) ran a parallel campaign with GPT-6-family Codex workers. It proposed the one-vacancy completion, wrote the $d=24$ synthesis and its sector bounds, regenerated the $n=23$ certificate, ran an adversarial audit that revised its own $d=24$ verdict from verified to conditional, proposed the matching route that C48 completes, and keeps a ledger of the obligations on S~\cite{campaign,audit,direct,thermal}. The 23-letter internal bond and its certificate came from the coordinating side. The referees and the red team were separate agents, but all were AI models, and the C39 to C45 chain comes from one model family. This note was drafted by Claude Opus 5.5 from the repository on 28 October 2026 and revised the same day to include C47 to C62 and the rebuild of C44.
+This note and the work it summarizes were produced with AI assistance, and none of it has been refereed by a human. J.~Kudler-Flam directed the project, set the working standard, and coordinated the work, with Claude Opus 5.5 (Anthropic) as coordinating agent, Claude agents (Opus 5.5, and Sonnet 5.5 for the literature check) as authors of the referee, red-team, literature and numerical folders, and closed-book runs of gpt-6-astra (OpenAI, through the Codex CLI) for most derivations. The runs are labelled C1 to C97, and C32, C33, C37, C39, C41, C42, C44 to C62 and C64 to C95 are the ones cited here. The rebuild of C44 and the $n=1$ central charge~\cite{verC44}, the vacancy and demonstrator numerics~\cite{vacnum,vacn2,demoLL} and the $d=2$ surveys~\cite{d2grid} are the work of separate Claude Opus 5.5 agents, partly run on the IAS Typhon cluster. The tuning of the demonstrator used in~\cite{demoLL} is the collaborator's. A collaborator (GitHub: salpace) ran a parallel campaign with GPT-6-family Codex workers. It proposed the one-vacancy completion, wrote the $d=24$ synthesis and its sector bounds, regenerated the $n=23$ certificate, ran an adversarial audit that revised its own $d=24$ verdict from verified to conditional, proposed the matching route that C48 completes, and keeps a ledger of the obligations on S~\cite{campaign,audit,direct,thermal}. The 23-letter internal bond and its certificate came from the coordinating side. The referees and the red team were separate agents, but all were AI models, and the C39 to C45 chain comes from one model family. This note was drafted by Claude Opus 5.5 from the repository on 28 October 2026 and revised the same day to include C47 to C62 and the rebuild of C44, and again on 29 October 2026 to include C64 to C95, the smaller candidates and the numerics of REPORT \S\S9.34 to 9.58.
 
 \begin{multicols}{2}\raggedright
-\begin{thebibliography}{99}\footnotesize\setlength{\itemsep}{0.5pt}
+\begin{thebibliography}{99}\footnotesize\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}
 
 \bibitem{LS} J.~I. Latorre and G.~Sierra, ``The $c$--$d$ conjecture,'' J. Stat. Mech. (2024) 113103, arXiv:2403.17242.
 
@@ -463,6 +514,16 @@ This note and the work it summarizes were produced with AI assistance, and none 
 \bibitem{mobile} Mobile-cell toy model at $d=6$, \repo{contrib/mobile_cells/README.md}.
 
 \bibitem{vacnum} Vacancy lift numerics, \repo{contrib/vacancy_mobile_numerics/README.md}.
+
+\bibitem{C64} gpt-6-astra runs C64 to C79, \repo{codex/work_C64/} to \repo{work_C79/}.
+
+\bibitem{vacn2} The $n=2$ vacancy model, \repo{contrib/vacancy_n2_dmrg/}.
+
+\bibitem{demoLL} S on the microscopic demonstrator, \repo{contrib/demonstrator_luttinger/}.
+
+\bibitem{refC84} Referee reports on C84, C85 and C88, \repo{contrib/referee_C84_C85/}, \repo{contrib/referee_C88/}.
+
+\bibitem{d2grid} The $d=2$ surveys, \repo{contrib/d2_grid/}, \repo{contrib/d2_staggered/}.
 
 \bibitem{litIR} Literature check of the integrate-out-then-bosonize step, \repo{contrib/lit_ir_step/README.md}.
 
