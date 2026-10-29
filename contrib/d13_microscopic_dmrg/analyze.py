@@ -47,7 +47,13 @@ def analyse(d):
         dens = np.array(r['dens'])          # per site <Q>, <occ>, <marker>
         row = dict(chi=r['chi'], maxchi=r['maxchi'], trunc=r['trunc'], E=r['E'], S_mid=float(S[L // 2]),
                    vac_density=float(1 - dens[:, 1].mean()), marker_per_occ=float(dens[:, 2].sum() / max(dens[:, 1].sum(), 1e-12)))
-        if N == L:     # frozen control: cell boundaries
+        if N == L:     # frozen markers: cell lengths from marker positions (marker density is 0 or 1 there)
+            mpos = np.flatnonzero(dens[:, 2] > 0.5)
+            row['marker_sharp'] = float(np.abs(dens[:, 2] - np.round(dens[:, 2])).max())
+            row['cell_lengths'] = np.diff(np.concatenate([[-1], mpos])).tolist() + [int(L - 1 - mpos[-1])] if len(mpos) else []
+        if N == L and row['cell_lengths'][:-1] != [b] * Mk:
+            row['note'] = 'cells not all of length b; cell-boundary estimator skipped'
+        elif N == L:     # frozen control: cell boundaries
             Sc = S[b * np.arange(Mk + 1)]
             ref = free_profile(Mk, Nl) * n if n == 1 else None
             if n == 1:
@@ -86,7 +92,7 @@ def main():
         r = analyse(d); out.append(r)
         print(r['name'], 'L', r['L'], 'N', r['N'], 'Nlog', r['Nlog'], 'Mk', r['Mk'])
         for w in r['rows']:
-            extra = ' '.join(f'{k}={np.round(v, 3).tolist()}' for k, v in w.items() if k in ('cA', 'cB', 'c_raw'))
+            extra = ' '.join(f'{k}={np.round(v, 3).tolist()}' for k, v in w.items() if k in ('cA', 'cB', 'c_raw', 'cell_lengths', 'marker_sharp'))
             print(f"  chi={w['chi']} maxchi={w['maxchi']} trunc={w['trunc']:.1e} E={w['E']:.10f} Smid={w['S_mid']:.4f} "
                   f"vac={w['vac_density']:.4f} mk/occ={w['marker_per_occ']:.4f} {extra}")
     # estimator C: half-chain pairs of mobile n = 1 runs at the same J

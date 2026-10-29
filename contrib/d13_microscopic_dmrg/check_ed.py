@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """Check cqdmrg.py on the d = 13 bond against exact diagonalization of a short open chain.
 
-The exact space is the closure of the seed under all moves of the bond (finite K, illegal words
-included), so it is the full charge sector connected to the seed.  Writes data/check_ed.json.
+The exact space is the full (Q, N, Mk) sector of the seed (finite K, illegal words included),
+the same space the DMRG explores.  Writes data/check_ed.json.
 Claude (Opus 5.5) for Jonah Kudler-Flam, 2026-10-29.
 """
 import os, sys, json
@@ -18,26 +18,26 @@ B = RM.B
 
 
 def ed(h, seed, d=13):
-    trans = {i: [(int(j), h[j, i]) for j in np.flatnonzero(np.abs(h[:, i]) > 0)] for i in range(d * d)}
-    states = [tuple(seed)]; index = {states[0]: 0}; rows, cols, vals = [], [], []
-    L = len(seed); cur = 0
-    while cur < len(states):
-        w = states[cur]
-        for i in range(L - 1):
-            for q, v in trans[w[i] * d + w[i + 1]]:
-                z = list(w); z[i], z[i + 1] = divmod(q, d); z = tuple(z)
-                if z not in index:
-                    index[z] = len(states); states.append(z)
-                rows.append(index[z]); cols.append(cur); vals.append(v)
-        cur += 1
-    H = sp.coo_matrix((vals, (rows, cols)), shape=(cur, cur)).tocsr()
-    e, v = eigsh(H, k=1, which='SA', tol=1e-13)
-    return float(e[0]), cur
+    """Ground energy in the full (Q, N, Mk) sector of the seed on an open chain (sparse kron build)."""
+    L = len(seed)
+    q = RM.charges()
+    hs = sp.csr_matrix(np.where(np.abs(h) > 0, h, 0))
+    H = None
+    for i in range(L - 1):
+        t = sp.kron(sp.kron(sp.identity(d ** i, format='csr'), hs, format='csr'), sp.identity(d ** (L - i - 2), format='csr'), format='csr')
+        H = t if H is None else H + t
+    idx = np.indices([d] * L).reshape(L, -1)
+    tot = q[idx].sum(axis=0)
+    want = q[list(seed)].sum(axis=0)
+    sel = np.flatnonzero(np.all(tot == want, axis=1))
+    Hs = H[sel][:, sel]
+    e, v = eigsh(Hs, k=1, which='SA', tol=1e-12)
+    return float(e[0]), len(sel)
 
 
 def main():
     out = []
-    for (p, L, N, Nlog, K) in [(2, 6, 6, 1, 30.0), (2, 7, 6, 1, 30.0), (2, 8, 6, 1, 30.0)]:
+    for (p, L, N, Nlog, K) in [(2, 5, 3, 1, 30.0), (2, 6, 3, 1, 30.0), (2, 6, 6, 1, 30.0)]:
         P = B.params(n=p, D=0.0, Delta=0.5, g=0.3, td=0.2, K=K, musel=0.0)
         h = B.bond(P, lam=0.3, J=0.5, t=1.0)
         cfg, Mk = RM.config(p, L, N, Nlog)

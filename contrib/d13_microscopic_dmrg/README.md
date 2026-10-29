@@ -10,16 +10,17 @@ Mechanism check on the full thirteen-state chain of `codex/work_C88/bond13.py` (
 
 ## Status
 
-Partial. The code is written and the frozen-ring scales are measured. The open-chain DMRG runs had completed only their first χ = 64 sweep when this file was written, so no calibrated c is available for any member or control. Not done: VUMPS or iDMRG finite-entanglement scaling (no complex symmetric uMPS code was adapted in the time available), and the cell-length selection beyond what the fixed (N, Mk) sector enforces.
+Partial. The code is written and checked against exact diagonalization, and the frozen-ring scales are measured. A first launch of the DMRG used a version of `cqdmrg.py` with a conjugation error in the right environments (see below). It was killed, and the corrected runs were relaunched at about 09:40 on 2026-10-29, so no calibrated c is available for any member or control. Not done: VUMPS or iDMRG finite-entanglement scaling (no complex symmetric uMPS code was adapted in the time available), and the cell-length selection beyond what the fixed (N, Mk) sector enforces.
 
-Two points to check when the runs finish. The control `ctl1_L45` reported E = +117.23 after its first sweep while `ctl1_L30` reported -5.64, so the L = 45 start may be stuck in a high-energy configuration. And the redteam colour field t²/(JK) is 2 × 10⁻⁴ at K = 10⁴, J = 0.5, which is comparable to the n = 1 logical bandwidth (about J α_c × 10⁻⁴). The redteam conditions F1 and F2 (J/t ≪ 0.0056, D J/t small) are met here in the second sense (D = 0) but not the first. At b = 3 the selector window is much wider than at b = 15, and in a fixed (N, Mk) sector μ_sel drops out, so F1 only enters through wrong-length pair defects, which the runs do not measure directly.
+Two points to check when the runs finish. First, at full occupancy the marker positions are conserved site by site, so the frozen control's (Q, N, Mk) sector contains every marker arrangement, and the DMRG is free to pick one. In the L = 6 exact check the sector ground state (E = -1.6203) is not in the seed's two-cells-of-three component (E = -1.4211), so on short open chains the boundary already prefers a different cell pattern. `analyze.py` therefore reads the cell lengths off the marker density of each control run and skips the cell-boundary estimator when they are not all b. That readout is also the cell-length selection measurement for the controls. Second, the redteam colour field t²/(JK) is 2 × 10⁻⁴ at K = 10⁴, J = 0.5, which is comparable to the n = 1 logical bandwidth (about J α_c × 10⁻⁴). The redteam conditions F1 and F2 (J/t ≪ 0.0056, D J/t small) are met here in the second sense (D = 0) but not the first. At b = 3 the selector window is much wider than at b = 15, and in a fixed (N, Mk) sector μ_sel drops out, so F1 only enters through wrong-length pair defects, which the runs do not measure directly.
 
 ## How it was established and checked
 
 - Author: Claude (Opus 5.5) subagent for Jonah Kudler-Flam, 2026-10-29. No Codex call (repository-bound numerics). Nobody else has rerun anything.
 - `bond13.py` is imported read-only. Nothing outside this folder was modified.
 - `cqdmrg.py` is `../vacancy_n2_dmrg/qdmrg.py` with complex dtypes and Hermitian conjugates in the environments, Lanczos inner products and densities (the d = 13 bond is complex through φ_A, ψ_A and the port phase θ). Conserved charges are Q (the bond13 charge, twice the logical fermion number on the code), the occupied number N and the marker number Mk.
-- `check_ed.py` compares `cqdmrg.py` with exact diagonalization of open chains of 6 to 8 sites in the seed's full connected sector (finite K = 30, illegal words included). It was running on the Typhon login node when this file was written. Its output (`data/check_ed.json`) should be confirmed before any DMRG number is used.
+- `check_ed.py` compares `cqdmrg.py` with exact diagonalization in the full (Q, N, Mk) sector of open chains (finite K = 30, illegal words included). [numerical] Ground energies agree to 1.3e-12 (L = 5, N = 3, 4320 states), 2.7e-11 (L = 6, N = 3, 17280 states) and 6.1e-12 (L = 6, N = 6, 84960 states), in `data/check_ed.json`.
+- The check caught an error in my first complex port: for a right-canonical tensor the right environment is M* H_R Mᵀ, not M H_R M† (the two coincide for real tensors, which is why the parent code did not need to distinguish them). Before the fix the L = 6 energy was off by 0.58. All runs from that version were killed and their output deleted.
 
 ## Method and results
 
@@ -47,7 +48,7 @@ Two points to check when the runs finish. The control `ctl1_L45` reported E = +1
 | n2_L64 | 3 | 64 | 40 | 10 | 7 | 3 |
 | ctl2_L40 | 3 | 40 | 40 | 10 | 7 | 2 (frozen control) |
 
-χ grows through 64, 128, 192, 256, 384, 512. First-sweep timings on the loaded login node were 3 to 5 minutes per sweep at χ = 64, so χ = 512 will take days.
+χ grows through 64, 128, 192, 256, 384, 512. First-sweep timings of the (killed) first launch on the loaded login node were 3 to 5 minutes per sweep at χ = 64, so χ = 512 will take days.
 
 **Estimators** (`analyze.py`). (A) Difference estimator of `../vacancy_n2_dmrg`: c = m + slope of S_model(ℓ) - S_ref(ℓ) in the chord variable, with S_ref the exact profile of m free open chains carrying the sector's numbers (m = 2 for the mobile n = 1 member: the vacancy fluid with N particles and the payload with Nlog on L sites), and Friedel terms at 2πN/(L + 1), 2πNlog/(L + 1) and 2πMk/(L + 1). (B) Ratio m c_fit(model)/c_fit(ref) with the same fit. (C) Half-chain pairs between sizes, calibrated by the same pair on the reference. For the frozen controls the entropy is sampled at cell boundaries and compared with a free chain of Mk sites. For n = 2 the payload Fermi seas are not known in closed form, so `analyze.py` reports only the raw fit for the n = 2 control and does not build an n = 2 mobile reference. The vacancy density and markers per occupied site are printed for every run (both are fixed by the sector, so they serve as sanity checks rather than measurements).
 
@@ -56,16 +57,16 @@ Two points to check when the runs finish. The control `ctl1_L45` reported E = +1
 numpy and scipy only, `python3 -B` from this folder. `bond13.py` is found at `../../codex/work_C88/`.
 
 - `python3 -B scales.py --p 2 --M 3 --D 0 --Delta 0.5 --g 0.3 --lam 0.3 --td 0.2` prints one row of the scales table (seconds for M = 3, p = 2).
-- `python3 -B check_ed.py` writes `data/check_ed.json` (minutes to tens of minutes, dominated by the closure at L = 8).
+- `python3 -B check_ed.py` writes `data/check_ed.json` (about a minute, dominated by the L = 6 sparse build).
 - `python3 -B run_mobile.py NAME <line of tasks.txt>` writes `data/obc/NAME.json` after every χ. `job.slurm` is the array over `tasks.txt`.
 - `python3 -B analyze.py` prints every estimator and writes `data/summary.json`.
 
-Runs in flight on Typhon (2026-10-29, about 09:10 local), all under `/scratch/lustre/jkudlerflam/d13_microscopic_dmrg/contrib/d13_microscopic_dmrg/`:
-- login node at nice 19: tasks 1, 2, 4, 5, 8 (`n1_L48`, `n1_L72`, `ctl1_L30`, `ctl1_L45`, `n2_L64`) and `check_ed.py`, logs in `logs/login_*.out` and `logs/check_ed.out`;
-- SLURM array 17526426, tasks 3, 6, 7, 9 (`n1_L96`, `ctl1_L60`, `n1J1_L72`, `ctl2_L40`), pending on QOSMaxJobsPerUserLimit, logs in `logs/d13dmrg_*.out`.
+Runs in flight on Typhon (corrected code, relaunched 2026-10-29 at about 09:40 local), all under `/scratch/lustre/jkudlerflam/d13_microscopic_dmrg/contrib/d13_microscopic_dmrg/`:
+- login node at nice 19: tasks 1, 2, 4, 5, 8 (`n1_L48`, `n1_L72`, `ctl1_L30`, `ctl1_L45`, `n2_L64`), logs in `logs/login_*.out`;
+- SLURM array 17526555, tasks 3, 6, 7, 9 (`n1_L96`, `ctl1_L60`, `n1J1_L72`, `ctl2_L40`), pending on priority, logs in `logs/d13dmrg_*.out`. Array 17526426 was the buggy first launch and is cancelled.
 
-To collect: `scp 'typhon:/scratch/lustre/jkudlerflam/d13_microscopic_dmrg/contrib/d13_microscopic_dmrg/data/obc/*.json' data/obc/` and `scp typhon:/scratch/lustre/jkudlerflam/d13_microscopic_dmrg/contrib/d13_microscopic_dmrg/data/check_ed.json data/`, then `python3 -B analyze.py`. The JSON files hold energies, bond entropies and charge densities only (no MPS), well under 1 MB each.
+To collect: `scp 'typhon:/scratch/lustre/jkudlerflam/d13_microscopic_dmrg/contrib/d13_microscopic_dmrg/data/obc/*.json' data/obc/`, then `python3 -B analyze.py` here. The JSON files hold energies, bond entropies and charge densities only (no MPS), well under 1 MB each.
 
 ## What remains
 
-(i) Confirm `check_ed.json`, then read the calibrated c of the n = 1 member and its control at converged χ. (ii) A VUMPS or iDMRG FES run on the period-b frozen control and on the mobile chain, which needs a complex, symmetry-resolved uMPS code. (iii) The n = 2 member seems out of reach with this bond at any resolvable coupling, because its bandwidth is a further factor of about 25 below n = 1. A resolvable n = 2 check would need either Δ even closer to the token threshold (where the code picture weakens) or a reduced logical model of the kind used in `../vacancy_n2_dmrg`.
+(i) Read the calibrated c of the n = 1 member and its control at converged χ. (ii) A VUMPS or iDMRG FES run on the period-b frozen control and on the mobile chain, which needs a complex, symmetry-resolved uMPS code. (iii) The n = 2 member seems out of reach with this bond at any resolvable coupling, because its bandwidth is a further factor of about 25 below n = 1. A resolvable n = 2 check would need either Δ even closer to the token threshold (where the code picture weakens) or a reduced logical model of the kind used in `../vacancy_n2_dmrg`.

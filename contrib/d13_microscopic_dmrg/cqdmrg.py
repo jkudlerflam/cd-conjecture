@@ -219,7 +219,7 @@ class QDMRG:
                 D[key] = M.copy()
         for (qa, s), M in B.items():
             qb = qa + int(q[s])
-            add(H, qa, M @ HR[qb] @ M.conj().T)
+            add(H, qa, M.conj() @ HR[qb] @ M.T)
         for kk in range(len(self.terms)):
             de = self.dk[kk]
             Ok = OR[kk]
@@ -230,7 +230,7 @@ class QDMRG:
                     X = Ok.get(qa + int(q[s])); Mt = B.get((qa, t))
                     if X is None or Mt is None:
                         continue
-                    add(H, qa, cf * (Mt @ (X @ Ms.conj().T)))
+                    add(H, qa, cf * (Mt.conj() @ (X @ Ms.T)))
             for (t, s, cf) in self.nzB[kk]:
                 for (qa, s_), Ms in B.items():
                     if s_ != s:
@@ -238,7 +238,7 @@ class QDMRG:
                     Mt = B.get((qa + de, t))
                     if Mt is None:
                         continue
-                    add(O[kk], qa, cf * (Mt @ Ms.conj().T))
+                    add(O[kk], qa, cf * (Mt.conj() @ Ms.T))
         self.HR[i] = H; self.OR[i] = O
 
     # ------------------------------------------------------------------ two-site problem
