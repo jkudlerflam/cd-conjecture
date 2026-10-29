@@ -1,0 +1,4 @@
+OPENBLAS_NUM_THREADS=4 python3 fes_fi.py 'N68:b=1.05,eta=0.225' --tag N_09_07 --cells 1 2 3 4 5 6 7 8 --chis 8 12 16 24 32 48 64
+OPENBLAS_NUM_THREADS=4 python3 fes_fi.py 'N68:b=0.9,eta=0.225' --tag N_09_06 --cells 1 2 3 4 5 6 7 8 --chis 8 12 16 24 32 48 64
+OPENBLAS_NUM_THREADS=4 python3 fes_fi.py 'N68:b=1.05,eta=0' --tag N_00_07 --cells 1 2 3 4 5 6 7 8 --chis 8 12 16 24 32 48 64
+OPENBLAS_NUM_THREADS=4 python3 fes_fi.py 'N68:b=1.2,eta=0.1' --tag N_04_08 --cells 1 2 3 4 5 6 7 8 --chis 8 12 16 24 32 48 64

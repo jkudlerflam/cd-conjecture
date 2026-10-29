@@ -1,0 +1,16 @@
+OPENBLAS_NUM_THREADS=8 python3 fes_fi.py 'Z2:D=0.5,b=1.5,g=0.3,u=0.95' --tag B_14_10 --cells 1 2 3 4 5 6 7 8 9 10 --chis 8 12 16 24 32 48 64 96
+OPENBLAS_NUM_THREADS=8 python3 fes_fi.py 'Z2:D=0.5,b=1.65,g=0.3,u=1.075' --tag B_15_11 --cells 1 2 3 4 5 6 7 8 9 10 --chis 8 12 16 24 32 48 64 96
+OPENBLAS_NUM_THREADS=8 python3 fes_fi.py 'Z2:D=0.5,b=1.8,g=0.3,u=1.075' --tag B_15_12 --cells 1 2 3 4 5 6 7 8 9 10 --chis 8 12 16 24 32 48 64 96
+OPENBLAS_NUM_THREADS=8 python3 fes_fi.py 'Z2:D=0.5,b=1.65,g=0.3,u=0.95' --tag B_14_11 --cells 1 2 3 4 5 6 7 8 9 10 --chis 8 12 16 24 32 48 64 96
+OPENBLAS_NUM_THREADS=8 python3 fes_fi.py 'Z2:D=0.5,b=1.5,g=0.3,u=0.825' --tag B_13_10 --cells 1 2 3 4 5 6 7 8 9 10 --chis 8 12 16 24 32 48 64 96
+OPENBLAS_NUM_THREADS=8 python3 fes_fi.py 'N68:b=1.05,eta=0.025' --tag N_01_07 --cells 1 2 3 4 5 6 7 8 9 10 --chis 8 12 16 24 32 48 64 96
+OPENBLAS_NUM_THREADS=8 python3 fes_fi.py 'Z2:D=0.6,b=1.2,g=0.4,u=0.4' --tag C_08_12 --cells 1 2 3 4 5 6 7 8 9 10 --chis 8 12 16 24 32 48 64 96
+OPENBLAS_NUM_THREADS=8 python3 fes_fi.py 'N68:b=1.2,eta=0.025' --tag N_01_08 --cells 1 2 3 4 5 6 7 8 9 10 --chis 8 12 16 24 32 48 64 96
+OPENBLAS_NUM_THREADS=8 python3 fes_fi.py 'Z2:D=0.5,b=1.95,g=0.3,u=1.075' --tag B_15_13 --cells 1 2 3 4 5 6 7 8 9 10 --chis 8 12 16 24 32 48 64 96
+OPENBLAS_NUM_THREADS=8 python3 fes_fi.py 'Z2:D=0.65,b=1.2,g=0.5,u=0.4' --tag C_10_13 --cells 1 2 3 4 5 6 7 8 9 10 --chis 8 12 16 24 32 48 64 96
+OPENBLAS_NUM_THREADS=8 python3 fes_fi.py 'Z2:D=0.5,b=0.9,g=0.3,u=-0.425' --tag B_03_06 --cells 1 2 3 4 5 6 7 8 9 10 --chis 8 12 16 24 32 48 64 96
+OPENBLAS_NUM_THREADS=8 python3 fes_fi.py 'Z2:D=0.5,b=0.9,g=0.3,u=-0.55' --tag B_02_06 --cells 1 2 3 4 5 6 7 8 9 10 --chis 8 12 16 24 32 48 64 96
+OPENBLAS_NUM_THREADS=8 python3 fes_fi.py 'Z2:D=0.5,b=1.05,g=0.3,u=-0.425' --tag B_03_07 --cells 1 2 3 4 5 6 7 8 9 10 --chis 8 12 16 24 32 48 64 96
+OPENBLAS_NUM_THREADS=8 python3 fes_fi.py 'J67:D=0.25,gf=1.9' --tag J_10_06 --cells 1 2 3 4 5 6 7 8 9 10 --chis 8 12 16 24 32 48 64 96
+OPENBLAS_NUM_THREADS=8 python3 fes_fi.py 'Z2:g=0,u=0.4,D=0.5,b=0' --tag anchor --cells 1 2 3 4 5 6 7 8 9 10 --chis 8 12 16 24 32 48 64 96
+OPENBLAS_NUM_THREADS=8 python3 fes_fi.py 'P1282:s=0,t=0' --tag p1282 --cells 1 2 3 4 5 6 7 8 9 10 --chis 8 12 16 24 32 48 64 96

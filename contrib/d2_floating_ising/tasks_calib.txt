@@ -1,0 +1,9 @@
+OPENBLAS_NUM_THREADS=8 python3 fes_fi.py ising --n 1 --chis 8 12 16 24 32 48 64 96 128
+OPENBLAS_NUM_THREADS=8 python3 fes_fi.py xx --n 2 --chis 8 12 16 24 32 48 64 96 128
+OPENBLAS_NUM_THREADS=8 python3 fes_fi.py isxx --n 2 --chis 8 12 16 24 32 48 64 96 128
+OPENBLAS_NUM_THREADS=8 python3 obc_fi.py ising --L 64 --chis 32 64 128
+OPENBLAS_NUM_THREADS=8 python3 obc_fi.py ising --L 128 --chis 32 64 128
+OPENBLAS_NUM_THREADS=8 python3 obc_fi.py xx --L 64 --chis 32 64 128
+OPENBLAS_NUM_THREADS=8 python3 obc_fi.py xx --L 128 --chis 32 64 128
+OPENBLAS_NUM_THREADS=8 python3 obc_fi.py isxx --L 64 --chis 32 64 128
+OPENBLAS_NUM_THREADS=8 python3 obc_fi.py isxx --L 128 --chis 32 64 128
