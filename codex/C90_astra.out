@@ -1,0 +1,9 @@
+Completed [RESULT.md](RESULT.md), [PROOF.md](PROOF.md), and [PROGRESS.md](PROGRESS.md).
+
+The routine transfer statements are proved. The d=13 theorem gives c=14 conditionally, but the existing N, TP, and ground-energy defect bound leave additional obligations: finite-J vacancy initialization, thermal defect comparison, and Gaussian completeness.
+
+The proof also tracks K_gap=4, colored-vacancy corrections, finite-K parameter ordering, and physical-coordinate/source issues.
+
+All local checks pass, including 54 pinning tests. No microscopic infrared claim was verified, and nothing outside work_C90 was modified.
+
+[gpt_solve: backend=codex model=gpt-6-astra effort=high transcript=20261029T034939-44185]

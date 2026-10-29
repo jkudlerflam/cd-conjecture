@@ -1,0 +1,95 @@
+{
+  "status": "numerical controls passed; no microscopic infrared test",
+  "reference": {
+    "curvatures": [
+      {
+        "rho": 0.25,
+        "K_from_curvature": 16.000000128042892,
+        "K_exact": 16.0,
+        "curvature_relative_error": 8.002680740304413e-09
+      },
+      {
+        "rho": 0.4,
+        "K_from_curvature": 6.249999996072423,
+        "K_exact": 6.249999999999999,
+        "curvature_relative_error": 6.284122111566148e-10
+      },
+      {
+        "rho": 0.5,
+        "K_from_curvature": 4.000000001001962,
+        "K_exact": 4.0,
+        "curvature_relative_error": 2.5049051721737214e-10
+      },
+      {
+        "rho": 0.65,
+        "K_from_curvature": 2.36686390493367,
+        "K_exact": 2.3668639053254434,
+        "curvature_relative_error": 1.6552426096438921e-10
+      },
+      {
+        "rho": 0.8,
+        "K_from_curvature": 1.562499999959497,
+        "K_exact": 1.5624999999999998,
+        "curvature_relative_error": 2.592170922355308e-11
+      }
+    ],
+    "thermal": [
+      {
+        "T": 0.08,
+        "coefficient": 0.2016056757400686,
+        "relative_error": 0.00110004330170832
+      },
+      {
+        "T": 0.04,
+        "coefficient": 0.20143915078145447,
+        "relative_error": 0.0002731412679859435
+      },
+      {
+        "T": 0.02,
+        "coefficient": 0.20139787305556434,
+        "relative_error": 6.817117959778685e-05
+      },
+      {
+        "T": 0.01,
+        "coefficient": 0.20138757518162187,
+        "relative_error": 1.7035704309886768e-05
+      }
+    ],
+    "thermal_predicted": 0.20138414446088415,
+    "half_density_contact": 0.29735763271532445
+  },
+  "pinning": {
+    "number_of_trace_tests": 54,
+    "largest_matrix_dimension": 64,
+    "compression_identity_residual": 1.1102230246251565e-16
+  },
+  "penalty_and_harmonics": {
+    "synthetic_budget": [
+      {
+        "J": 0.1,
+        "synthetic_K": 29875696160.40436,
+        "explicit_over_J_tau": 0.0679484082680711,
+        "remainder_over_J_tau": 0.03125000000000001
+      },
+      {
+        "J": 0.01,
+        "synthetic_K": 1600240048000.0002,
+        "explicit_over_J_tau": 0.125,
+        "remainder_over_J_tau": 1.2384615833407697e-05
+      },
+      {
+        "J": 0.001,
+        "synthetic_K": 160000240048000.03,
+        "explicit_over_J_tau": 0.12499999999999997,
+        "remainder_over_J_tau": 3.539595203082665e-09
+      }
+    ],
+    "fixed_K_color_over_J": [
+      9.999999999999998e-11,
+      1e-08,
+      1e-06
+    ],
+    "C88_physical_margin_lower_bound": 1.0837704666666666e-07,
+    "dimension_three_lower_bound": 2.32379000772445
+  }
+}
