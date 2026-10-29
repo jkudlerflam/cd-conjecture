@@ -1,0 +1,65 @@
+{
+ "grammar_matches_C80_table": true,
+ "tests": [
+  {
+   "n": 2,
+   "coloured": true,
+   "dim": 196,
+   "max_entry_difference": 0.0,
+   "hermiticity": 0.0,
+   "charge_comm": 0.0,
+   "occupied_comm": 0.0,
+   "marker_number_comm": 0.0
+  },
+  {
+   "n": 2,
+   "coloured": false,
+   "dim": 169,
+   "max_entry_difference": 0.0,
+   "hermiticity": 0.0,
+   "charge_comm": 0.0,
+   "occupied_comm": 0.0,
+   "marker_number_comm": 0.0
+  },
+  {
+   "n": 13,
+   "coloured": true,
+   "dim": 196,
+   "max_entry_difference": 0.0,
+   "hermiticity": 0.0,
+   "charge_comm": 0.0,
+   "occupied_comm": 0.0,
+   "marker_number_comm": 0.0
+  },
+  {
+   "n": 13,
+   "coloured": false,
+   "dim": 169,
+   "max_entry_difference": 0.0,
+   "hermiticity": 0.0,
+   "charge_comm": 0.0,
+   "occupied_comm": 0.0,
+   "marker_number_comm": 0.0
+  },
+  {
+   "n": 3,
+   "coloured": true,
+   "dim": 196,
+   "max_entry_difference": 0.0,
+   "hermiticity": 0.0,
+   "charge_comm": 0.0,
+   "occupied_comm": 0.0,
+   "marker_number_comm": 0.0
+  },
+  {
+   "n": 3,
+   "coloured": false,
+   "dim": 169,
+   "max_entry_difference": 0.0,
+   "hermiticity": 0.0,
+   "charge_comm": 0.0,
+   "occupied_comm": 0.0,
+   "marker_number_comm": 0.0
+  }
+ ]
+}

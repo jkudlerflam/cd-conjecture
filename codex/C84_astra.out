@@ -1,0 +1,9 @@
+Found a=11 with a certified frozen member n=11, cell length 13.
+
+The saving removes `E_1` and fixes the last displaced bit to zero. The fold remains. The certificate proves 22 simple Fermi points and separation greater than 9.11916×10⁻⁷ for all 253 unordered pair sums, including finite-g and finite-K corrections.
+
+Eleven is minimal for the faithful shifted-bit, two-rail encoding. A redesigned ten-letter construction is not excluded. The prediction c=11 remains conditional on the unresolved thermodynamic steps.
+
+Written in [RESULT.md](RESULT.md), [PROOF.md](PROOF.md), [ALPHABET.md](ALPHABET.md), and [PROGRESS.md](PROGRESS.md), with reproducible scripts and exact certificates. Only `work_C84` was modified.
+
+[gpt_solve: backend=codex model=gpt-6-astra effort=high transcript=20261028T234946-81498]
