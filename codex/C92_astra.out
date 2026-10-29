@@ -1,0 +1,7 @@
+The full finite-K theorem remains open. I proved a uniform contact bound in the positive length-tilt ensemble and used it to establish activated thermal suppression of d=13 pins at infinite grammar penalty.
+
+[PROOF.md](PROOF.md) identifies the two remaining estimates, the one-sided thermal charge comparison for wrong lengths and the relative finite-penalty trace bound, and proves that they imply the requested \(o(T^2)\) pressure comparison.
+
+[RESULT.md](RESULT.md) and [PROGRESS.md](PROGRESS.md) record the outcome. All 64 finite checks pass. All writes stayed in `work_C92`; no network commands were used.
+
+[gpt_solve: backend=codex model=gpt-6-astra effort=high transcript=20261029T044939-60039]

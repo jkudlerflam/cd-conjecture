@@ -1,0 +1,100 @@
+{
+  "status": "all finite controls passed; mobile initialization remains open",
+  "phase_filter": {
+    "dimension": 35,
+    "first_order_identity_error": 3.940945239504381e-15,
+    "antihermitian_error": 2.250302797649858e-16,
+    "trials": [
+      {
+        "s": 0.02,
+        "remainder_over_s2": 0.2682395643865892,
+        "second_coefficient_error": 0.0028720293682621936
+      },
+      {
+        "s": 0.01,
+        "remainder_over_s2": 0.26823207803503873,
+        "second_coefficient_error": 0.0014360249332888082
+      },
+      {
+        "s": 0.005,
+        "remainder_over_s2": 0.26822773840431596,
+        "second_coefficient_error": 0.000718013747788916
+      }
+    ]
+  },
+  "clock": {
+    "clock_residual": 2.3055512673781017e-16,
+    "one_contact_code_leakage": 0.1507149408065349,
+    "min_color_field": 0.003342841592192853,
+    "max_color_field": 0.6864370766531883,
+    "color_field_spread": 0.6830942350609954,
+    "log2_E_unit": -858.5774100800829,
+    "log2_reference_scale_over_J": -2076.327139067007,
+    "K_floor_examples": [
+      {
+        "J_over_t_power": -100,
+        "log2_color_to_reference": -284.2156615483832
+      },
+      {
+        "J_over_t_power": -250,
+        "log2_color_to_reference": 15.78433845161635
+      },
+      {
+        "J_over_t_power": -1000,
+        "log2_color_to_reference": 1515.7843384516166
+      }
+    ],
+    "max_exponent_of_t_over_J_for_color_budget_2neg35": 224.6078307741917
+  },
+  "parity": {
+    "assignments_checked": 8192,
+    "conserving_assignments": 16,
+    "all_assignments_bit_blind": true,
+    "literal_moves": 37
+  },
+  "constants": {
+    "C_R": 356.9400740427578,
+    "log2_C_UV": 79.91815229266209,
+    "log2_C_exp": 87.91815229266209,
+    "sample_domains": [
+      {
+        "s": 0.01,
+        "delta": 0.7943282347242815,
+        "radius": 565,
+        "q": 1165382.2179962134,
+        "theorem_domain": false
+      },
+      {
+        "s": 0.001,
+        "delta": 0.7079457843841379,
+        "radius": 711,
+        "q": 164546.83758211537,
+        "theorem_domain": false
+      },
+      {
+        "s": 0.0001,
+        "delta": 0.6309573444801932,
+        "radius": 895,
+        "q": 23240.36660842818,
+        "theorem_domain": false
+      },
+      {
+        "s": 6.223015277861142e-61,
+        "delta": 0.0009765624999999997,
+        "radius": 373230220,
+        "q": 3.896705315452917e-44,
+        "theorem_domain": true
+      }
+    ],
+    "illustrative_point": {
+      "J_over_t_power": -5000,
+      "K_power": 14000,
+      "lambda_power": -608,
+      "cutoff_power": -250,
+      "UV_over_J_upper_power": -2419,
+      "color_over_reference_upper_power": -1920,
+      "scope": "Only ultraviolet first-moment and leading color budgets"
+    },
+    "filter_centered_lower_at_delta_half": 0.5453431602343903
+  }
+}
