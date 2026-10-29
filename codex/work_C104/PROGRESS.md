@@ -15,3 +15,7 @@
 [Proved] The pairing README mixes fundamental-trace normalization with trace in the actual on-site representation. For generators normalized by tr_R(t^a t^b)=delta_ab, the correct WZW response is D_t = k v/(2 pi I_R), with I_R defined in the long-root SU(2) normalization. For spin S, I_R=S(S+1)(2S+1)/3. The missing factor matters beyond fundamental representations.
 
 [Proved, limitation] No fixed-d nearest-neighbor lattice family with K tending to zero has been established in this run. Arbitrary compact-boson radii disprove the proposed continuum inference, but do not settle the stronger finite-d lattice question. The general U(1) conclusion remains open.
+
+[Proved, completed write-up] RESULT.md and PROOF.md now contain the polynomial WZW theorem, the Gaussian quantization obstruction with its precise scope, the neutral-sector distinction, and normalization corrections. STATE.md records local memory. The general charged Gaussian goal is still open, and no universal A/M counterexample is claimed.
+
+[Numerical] check.py passed small deterministic checks: spin matrices through d=8; all 914 SU(2) decompositions through d=16; 401 root-system ratio checks; Heisenberg and spin-1 stiffness conventions. Maximum spin trace residual was 4.441e-16. No heavy numerics were performed.

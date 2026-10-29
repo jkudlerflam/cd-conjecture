@@ -83,6 +83,23 @@ for delta in [1e-2,1e-3,1e-4]:
             assert abs(ratio-1) < 1e-3
         if factor == 10.:
             assert ratio < 0.5
-lines += ['', '[Proved check] A/M = 2r = 1/2 in this family, so the free bound A <= 2M is respected.', '', '[Numerical] All assertions passed.']
+lines += ['', '[Numerical] Additional one-temperature and entropy-increment checks at r=0.025, epsilon=1e-8.']
+r_small = 0.025
+delta_small = 1e-8
+a_small = a_for_ratio(delta_small, r_small, t)
+M_small = np.sqrt(4*t*t+delta_small*delta_small)
+v_small = r_small*M_small
+w_small = 0.75*v_small
+for kappa in [0.1, 1., 10.]:
+    for p in [1., 1.5, 2.]:
+        T = kappa*M_small*(w_small/M_small)**p
+        quotient = entropy(delta_small,T,a_small,t)/(2*np.pi*T/(3*v_small))
+        assert quotient < 0.5
+    T = kappa*w_small*w_small/M_small
+    increment = entropy(delta_small,T,a_small,t)-entropy(delta_small,T/2,a_small,t)
+    quotient = increment/(2*np.pi/(3*v_small)*(T/2))
+    assert 0 < quotient < 0.5
+    lines.append(f'[Numerical] kappa={kappa:g}: all tested E_p ratios below 1/2; increment ratio {quotient:.10f}, also below 1/2.')
+lines += ['', '[Proved check] In the main r=1/4 family A/M = 2r = 1/2, so the free bound A <= 2M is respected.', '', '[Numerical] All assertions passed.']
 Path('CHECKS.md').write_text('\n'.join(lines)+'\n')
 print('\n'.join(lines))

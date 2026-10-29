@@ -24,6 +24,11 @@
 | 0.0001 | 1 | 0.2269263566 |
 | 0.0001 | 10 | 0.2496223136 |
 
-[Proved check] A/M = 2r = 1/2 in this family, so the free bound A <= 2M is respected.
+[Numerical] Additional one-temperature and entropy-increment checks at r=0.025, epsilon=1e-8.
+[Numerical] kappa=0.1: all tested E_p ratios below 1/2; increment ratio 0.0250000003, also below 1/2.
+[Numerical] kappa=1: all tested E_p ratios below 1/2; increment ratio 0.0250000125, also below 1/2.
+[Numerical] kappa=10: all tested E_p ratios below 1/2; increment ratio 0.0250012455, also below 1/2.
+
+[Proved check] In the main r=1/4 family A/M = 2r = 1/2, so the free bound A <= 2M is respected.
 
 [Numerical] All assertions passed.

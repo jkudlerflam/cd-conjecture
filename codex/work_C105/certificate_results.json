@@ -1,0 +1,133 @@
+{
+  "certificate": [
+    {
+      "n": 8,
+      "defect": 0.12156415774263696,
+      "allowance": 0.24570787737804253,
+      "dirichlet": 1.5438281250000003,
+      "factor_residual": 4.440892098500626e-16
+    },
+    {
+      "n": 16,
+      "defect": 0.13818894468927212,
+      "allowance": 0.29656463855293375,
+      "dirichlet": 1.863370579584818,
+      "factor_residual": 3.1086244689504383e-15
+    },
+    {
+      "n": 32,
+      "defect": 0.15522674191446129,
+      "allowance": 0.3495703083518683,
+      "dirichlet": 2.1964150252626964,
+      "factor_residual": 1.9539925233402755e-14
+    },
+    {
+      "n": 64,
+      "defect": 0.17254045910715377,
+      "allowance": 0.4036578681038907,
+      "dirichlet": 2.5362571859978016,
+      "factor_residual": 1.971756091734278e-13
+    },
+    {
+      "n": 128,
+      "defect": 0.19005084377533876,
+      "allowance": 0.45828378098086925,
+      "dirichlet": 2.8794819191777052,
+      "factor_residual": 1.3145040611561853e-12
+    },
+    {
+      "n": 256,
+      "defect": 0.2077077034946342,
+      "allowance": 0.5131771861117153,
+      "dirichlet": 3.2243873557568934,
+      "factor_residual": 5.8122395785176195e-12
+    }
+  ],
+  "fixed_range_sdp": [
+    {
+      "r": 2,
+      "minimum_local_eigenvalue": 0.033011297458547084,
+      "affine_step": 0.06602259491709417,
+      "feasible_energy": -0.3393255308574094,
+      "strict_improvement": 0.02101564467361876
+    },
+    {
+      "r": 3,
+      "minimum_local_eigenvalue": 0.0012421046030612491,
+      "affine_step": 0.0049684184122449964,
+      "feasible_energy": -0.3198913828831058,
+      "strict_improvement": 0.0015814966993151548
+    },
+    {
+      "r": 4,
+      "minimum_local_eigenvalue": 6.421356097327093e-06,
+      "affine_step": 5.1370848778616745e-05,
+      "feasible_energy": -0.31832623803281856,
+      "strict_improvement": 1.6351849027886217e-05
+    },
+    {
+      "r": 5,
+      "minimum_local_eigenvalue": 1.5527706397935583e-08,
+      "affine_step": 2.4844330236696933e-07,
+      "feasible_energy": -0.31830996526575,
+      "strict_improvement": 7.90819592995551e-08
+    },
+    {
+      "r": 6,
+      "minimum_local_eigenvalue": 5.380859773774908e-12,
+      "affine_step": 1.7218751276079706e-10,
+      "feasible_energy": -0.3183098862385997,
+      "strict_improvement": 5.480898758915932e-11
+    },
+    {
+      "r": 7,
+      "minimum_local_eigenvalue": 8.153198888230599e-16,
+      "affine_step": 5.218047288467583e-14,
+      "feasible_energy": -0.3183098861838073,
+      "strict_improvement": 1.660956038493754e-14
+    },
+    {
+      "r": 8,
+      "minimum_local_eigenvalue": 1.8292949685699222e-20,
+      "affine_step": 2.3414975597695005e-18,
+      "feasible_energy": -0.3183098861837907,
+      "strict_improvement": 7.453218217498533e-19
+    }
+  ],
+  "first_bond_exact": 0.05291698652698151,
+  "first_bond_quadrature": 0.05291698652697543,
+  "naive_interacting_extension": [
+    {
+      "model": "XX",
+      "n": 12,
+      "defect": 0.1312278502615145,
+      "centered_e0": -0.3183098861837907,
+      "allowance": 0.2751087865421074,
+      "passes": true
+    },
+    {
+      "model": "Heisenberg",
+      "n": 12,
+      "defect": 0.22135420019146856,
+      "centered_e0": -0.1931471805599453,
+      "allowance": 0.16693319552505226,
+      "passes": false
+    },
+    {
+      "model": "XXZ_half",
+      "n": 12,
+      "defect": 0.17912500244232454,
+      "centered_e0": -0.25,
+      "allowance": 0.21606993568467178,
+      "passes": true
+    },
+    {
+      "model": "SU3",
+      "n": 9,
+      "defect": 0.5065675124010571,
+      "centered_e0": -0.7032120767461824,
+      "allowance": 0.5614209616038989,
+      "passes": true
+    }
+  ]
+}
