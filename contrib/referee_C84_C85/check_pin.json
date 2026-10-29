@@ -1,0 +1,110 @@
+{
+ "frozen_pin_conservation": {
+  "3": {
+   "transitions": 1584,
+   "pin_count_changes": 0
+  },
+  "4": {
+   "transitions": 23232,
+   "pin_count_changes": 0
+  },
+  "5": {
+   "transitions": 319440,
+   "pin_count_changes": 0
+  }
+ },
+ "mobile_pin_conservation": {
+  "4": {
+   "transitions": 40320,
+   "squeezed_pin_count_changes": 0
+  },
+  "5": {
+   "transitions": 604800,
+   "squeezed_pin_count_changes": 0
+  }
+ },
+ "automaton_reproduces_pinless_table": true,
+ "two_colour_pinless_rings": {
+  "3": {
+   "legal_squeezed": 376,
+   "zero_penalty": 376,
+   "N_material_bad_gt_N_bad": 0,
+   "colouring_not_unique_or_missing": 0
+  },
+  "4": {
+   "legal_squeezed": 2685,
+   "zero_penalty": 2685,
+   "N_material_bad_gt_N_bad": 0,
+   "colouring_not_unique_or_missing": 0
+  },
+  "5": {
+   "legal_squeezed": 19267,
+   "zero_penalty": 19267,
+   "N_material_bad_gt_N_bad": 0,
+   "colouring_not_unique_or_missing": 0
+  }
+ },
+ "two_colour_pinless_leakage": {
+  "seed": [
+   "R0",
+   "R1",
+   "V1",
+   "R1",
+   "E",
+   "L0",
+   "R0",
+   "R1",
+   "E"
+  ],
+  "runs": [
+   {
+    "J": 1.0,
+    "K": 100.0,
+    "JK": 100.0,
+    "dim": 3222,
+    "illegal_material_weight": 1.1888187371906124e-05,
+    "residual": 3.9642827080372256e-11
+   },
+   {
+    "J": 1.0,
+    "K": 1000.0,
+    "JK": 1000.0,
+    "dim": 3222,
+    "illegal_material_weight": 1.2113831921688348e-07,
+    "residual": 3.7938034228388124e-10
+   },
+   {
+    "J": 1.0,
+    "K": 10000.0,
+    "JK": 10000.0,
+    "dim": 3222,
+    "illegal_material_weight": 1.21370521284409e-09,
+    "residual": 5.612910667607395e-09
+   },
+   {
+    "J": 0.1,
+    "K": 1000.0,
+    "JK": 100.0,
+    "dim": 3222,
+    "illegal_material_weight": 1.2211825154128517e-07,
+    "residual": 9.287995101990604e-12
+   },
+   {
+    "J": 0.1,
+    "K": 10000.0,
+    "JK": 1000.0,
+    "dim": 3222,
+    "illegal_material_weight": 1.205335235633359e-09,
+    "residual": 1.9672454626410894e-10
+   },
+   {
+    "J": 0.1,
+    "K": 100000.0,
+    "JK": 10000.0,
+    "dim": 3222,
+    "illegal_material_weight": 1.2037269296661591e-11,
+    "residual": 2.6951800631050665e-09
+   }
+  ]
+ }
+}

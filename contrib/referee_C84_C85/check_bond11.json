@@ -1,0 +1,58 @@
+{
+ "tests": [
+  {
+   "p": 2,
+   "lam": 0.1,
+   "K": 100.0,
+   "max_entry_difference_vs_bond11": 0.0,
+   "nonzero_entries_offdiag_and_diag": 166,
+   "hermiticity": 0.0,
+   "charge_commutator": 0.0,
+   "marker_left_commutator": 0.0,
+   "marker_right_commutator": 0.0,
+   "compression_identity_error": 0.0,
+   "marker_left_bond_identity_on_marker_dev": 1.4210854715202004e-14
+  },
+  {
+   "p": 12,
+   "lam": 0.37,
+   "K": 1048576,
+   "max_entry_difference_vs_bond11": 0.0,
+   "nonzero_entries_offdiag_and_diag": 166,
+   "hermiticity": 0.0,
+   "charge_commutator": 0.0,
+   "marker_left_commutator": 0.0,
+   "marker_right_commutator": 0.0,
+   "compression_identity_error": 0.0,
+   "marker_left_bond_identity_on_marker_dev": 8.881784197001252e-16
+  },
+  {
+   "p": 3,
+   "lam": 0.21,
+   "K": 37.0,
+   "max_entry_difference_vs_bond11": 0.0,
+   "nonzero_entries_offdiag_and_diag": 166,
+   "hermiticity": 0.0,
+   "charge_commutator": 0.0,
+   "marker_left_commutator": 0.0,
+   "marker_right_commutator": 0.0,
+   "compression_identity_error": 0.0,
+   "marker_left_bond_identity_on_marker_dev": 3.608224830031759e-16
+  },
+  {
+   "p": 5,
+   "lam": 1.0,
+   "K": 1000.0,
+   "max_entry_difference_vs_bond11": 0.0,
+   "nonzero_entries_offdiag_and_diag": 152,
+   "hermiticity": 0.0,
+   "charge_commutator": 0.0,
+   "marker_left_commutator": 0.0,
+   "marker_right_commutator": 0.0,
+   "compression_identity_error": 0.0,
+   "marker_left_bond_identity_on_marker_dev": 0.0
+  }
+ ],
+ "allowed_table_matches_bond11": true,
+ "note": "C84 states 166 nonzero entries at a generic diagnostic point; our count includes the diagonal penalties and onsite terms at the same kind of point."
+}

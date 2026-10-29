@@ -1,0 +1,60 @@
+{
+ "MEMBER.json": "identical",
+ "alphabet_checks.json": "identical",
+ "certificate_n11.json": {
+  "differing_leaves": 1,
+  "differing_non_timing": [],
+  "max_abs_numeric_diff_non_timing": null
+ },
+ "certificate_n11_D1000.npz": "identical",
+ "derivative_n11.npz": "identical",
+ "finite_budget.json": "identical",
+ "finite_budget_exact.json": "identical",
+ "full_loop_bands_n11.json": "identical",
+ "full_loop_n11.npz": "identical",
+ "full_loop_whitened_n11.npz": "identical",
+ "grammar_checks.json": "identical",
+ "rational_bands_n11.json": {
+  "differing_leaves": 1,
+  "differing_non_timing": [],
+  "max_abs_numeric_diff_non_timing": null
+ },
+ "rejected_parameters.json": "identical",
+ "root_certificate_exact_n11.json": "identical",
+ "root_certificate_n11.json": {
+  "differing_leaves": 1,
+  "differing_non_timing": [],
+  "max_abs_numeric_diff_non_timing": null
+ },
+ "selector_certificate.json": {
+  "differing_leaves": 6,
+  "differing_non_timing": [
+   "/small_checks[0]/energy",
+   "/small_checks[0]/good_form_min",
+   "/small_checks[1]/energy",
+   "/small_checks[1]/good_form_min",
+   "/small_checks[2]/energy",
+   "/small_checks[2]/good_form_min"
+  ],
+  "max_abs_numeric_diff_non_timing": 1.5987211554602254e-14
+ },
+ "small_checks.json": {
+  "differing_leaves": 19,
+  "differing_non_timing": [
+   "/ed[0]/eigenpair_residual",
+   "/ed[0]/error_over_lambda4",
+   "/ed[0]/max_energy_error",
+   "/ed[1]/eigenpair_residual",
+   "/ed[1]/error_over_lambda4",
+   "/ed[1]/max_energy_error",
+   "/ed[2]/eigenpair_residual",
+   "/ed[2]/error_over_lambda4",
+   "/ed[2]/max_energy_error",
+   "/ed[3]/eigenpair_residual",
+   "/ed[3]/error_over_lambda4",
+   "/ed[3]/max_energy_error"
+  ],
+  "max_abs_numeric_diff_non_timing": 1.4210854715202004e-10
+ },
+ "whitened_n11.npz": "identical"
+}

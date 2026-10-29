@@ -1,0 +1,197 @@
+{
+ "p2_n1": {
+  "cell_matrix_vs_C80_minus_last_conversion": 0.0,
+  "code_eigen_residual": 2.220446049250313e-16,
+  "vacuum_gap": 1.4142135623730951,
+  "first_order_GVG": 0.0,
+  "V_image_in_11_sector": 1.0,
+  "min_11_denominator": 5.785693777261084,
+  "H2_g0_scalar_dev": 3.512740965567927e-18,
+  "H2_g1_max": 4.0442190203390307e-19,
+  "H22_hermiticity": 3.3881317890172014e-20,
+  "H22_gaussian_residual": {
+   "relative_to_traceless": 1.1747906333454893e-10,
+   "relative_to_full": 8.578226481610426e-16,
+   "traceless_over_full": 7.3019193702472185e-06
+  },
+  "H22_norm": 3.923223027080207e-05,
+  "H2_exact_vs_taylor_rel": 3.727671412753933e-05,
+  "projected_ED": [
+   {
+    "lam": 0.2,
+    "dim": 436,
+    "err_over_lam4": 0.0006768001273305123
+   },
+   {
+    "lam": 0.1,
+    "dim": 436,
+    "err_over_lam4": 0.0006756363291060551
+   },
+   {
+    "lam": 0.05,
+    "dim": 436,
+    "err_over_lam4": 0.0006753461434527707
+   }
+  ]
+ },
+ "p3_n2": {
+  "cell_matrix_vs_C80_minus_last_conversion": 0.0,
+  "code_eigen_residual": 2.220446049250313e-16,
+  "vacuum_gap": 1.0000000000498948,
+  "first_order_GVG": 0.0,
+  "V_image_in_11_sector": 1.0,
+  "min_11_denominator": 5.068443950836367,
+  "H2_g0_scalar_dev": 1.7545690567505426e-18,
+  "H2_g1_max": 1.2470892654967436e-19,
+  "H22_hermiticity": 1.3552527156068805e-20,
+  "H22_gaussian_residual": {
+   "relative_to_traceless": 1.3220918096309918e-08,
+   "relative_to_full": 1.016095517603432e-15,
+   "traceless_over_full": 7.685514048279549e-08
+  },
+  "H22_norm": 1.2080446948452647e-05,
+  "H2_exact_vs_taylor_rel": 3.771652211810459e-05,
+  "projected_ED": [
+   {
+    "lam": 0.2,
+    "dim": 3392,
+    "err_over_lam4": 0.00020764883562618405
+   },
+   {
+    "lam": 0.1,
+    "dim": 3392,
+    "err_over_lam4": 0.0002072638327632603
+   },
+   {
+    "lam": 0.05,
+    "dim": 3392,
+    "err_over_lam4": 0.00020716889537197855
+   }
+  ]
+ },
+ "p4_n3": {
+  "cell_matrix_vs_C80_minus_last_conversion": 0.0,
+  "code_eigen_residual": 1.1102230246251565e-16,
+  "vacuum_gap": 0.7320508075688774,
+  "first_order_GVG": 0.0,
+  "V_image_in_11_sector": 1.0,
+  "min_11_denominator": 4.707629566765125,
+  "H2_g0_scalar_dev": 8.487438692056598e-19,
+  "H2_g1_max": 3.075195616250748e-20,
+  "H22_hermiticity": 5.403784442469161e-21,
+  "H22_gaussian_residual": {
+   "relative_to_traceless": 6.470407222246471e-08,
+   "relative_to_full": 1.1977706952076235e-15,
+   "traceless_over_full": 1.851151950822297e-08
+  },
+  "H22_norm": 4.392906768302323e-06,
+  "H2_exact_vs_taylor_rel": 3.772358498178517e-05,
+  "projected_ED": [
+   {
+    "lam": 0.2,
+    "dim": 22336,
+    "err_over_lam4": 7.307469102046936e-05
+   },
+   {
+    "lam": 0.1,
+    "dim": 22336,
+    "err_over_lam4": 7.29418614398014e-05
+   },
+   {
+    "lam": 0.05,
+    "dim": 22336,
+    "err_over_lam4": 7.292314307960622e-05
+   }
+  ]
+ },
+ "finite_K_ED": [
+  {
+   "p": 2,
+   "n": 1,
+   "K": 100.0,
+   "closure_dim": 803,
+   "code_band_width": 0.004951699005784516,
+   "code_gap": 1.4067380253318877,
+   "runs": [
+    {
+     "lam": 0.2,
+     "err_over_lam4": 0.000730795202408263
+    },
+    {
+     "lam": 0.1,
+     "err_over_lam4": 0.0007296263770939503
+    },
+    {
+     "lam": 0.05,
+     "err_over_lam4": 0.0007293400017260864
+    }
+   ]
+  },
+  {
+   "p": 2,
+   "n": 1,
+   "K": 1000.0,
+   "closure_dim": 803,
+   "code_band_width": 0.0004995141765276045,
+   "code_gap": 1.4134638055975388,
+   "runs": [
+    {
+     "lam": 0.2,
+     "err_over_lam4": 0.0006801897214914198
+    },
+    {
+     "lam": 0.1,
+     "err_over_lam4": 0.0006790248940902187
+    },
+    {
+     "lam": 0.05,
+     "err_over_lam4": 0.0006787288953091774
+    }
+   ]
+  },
+  {
+   "p": 3,
+   "n": 2,
+   "K": 100.0,
+   "closure_dim": 14022,
+   "code_band_width": 0.012741365947266825,
+   "code_gap": 0.9850356654854724,
+   "runs": [
+    {
+     "lam": 0.2,
+     "err_over_lam4": 0.0002574596119631067
+    },
+    {
+     "lam": 0.1,
+     "err_over_lam4": 0.0002570174961746829
+    },
+    {
+     "lam": 0.05,
+     "err_over_lam4": 0.0002569085211234778
+    }
+   ]
+  },
+  {
+   "p": 3,
+   "n": 2,
+   "K": 1000.0,
+   "closure_dim": 14022,
+   "code_band_width": 0.0012761712179405471,
+   "code_gap": 0.9985003475911913,
+   "runs": [
+    {
+     "lam": 0.2,
+     "err_over_lam4": 0.00021091890151092582
+    },
+    {
+     "lam": 0.1,
+     "err_over_lam4": 0.00021053676135807106
+    },
+    {
+     "lam": 0.05,
+     "err_over_lam4": 0.00021057260823909016
+    }
+   ]
+  }
+ ]
+}

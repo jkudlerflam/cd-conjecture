@@ -1,0 +1,163 @@
+{
+ "bond_tests": [
+  {
+   "p": 3,
+   "coloured": true,
+   "dim": 196,
+   "max_entry_difference": 0.0,
+   "hermiticity": 0.0,
+   "Q_comm": 0.0,
+   "N_comm": 0.0,
+   "M_comm": 0.0
+  },
+  {
+   "p": 3,
+   "coloured": false,
+   "dim": 144,
+   "max_entry_difference": 0.0,
+   "hermiticity": 0.0,
+   "Q_comm": 0.0,
+   "N_comm": 0.0,
+   "M_comm": 0.0
+  },
+  {
+   "p": 14,
+   "coloured": true,
+   "dim": 196,
+   "max_entry_difference": 0.0,
+   "hermiticity": 0.0,
+   "Q_comm": 0.0,
+   "N_comm": 0.0,
+   "M_comm": 0.0
+  },
+  {
+   "p": 14,
+   "coloured": false,
+   "dim": 144,
+   "max_entry_difference": 0.0,
+   "hermiticity": 0.0,
+   "Q_comm": 0.0,
+   "N_comm": 0.0,
+   "M_comm": 0.0
+  },
+  {
+   "p": 2,
+   "coloured": true,
+   "dim": 196,
+   "max_entry_difference": 0.0,
+   "hermiticity": 0.0,
+   "Q_comm": 0.0,
+   "N_comm": 0.0,
+   "M_comm": 0.0
+  },
+  {
+   "p": 2,
+   "coloured": false,
+   "dim": 144,
+   "max_entry_difference": 0.0,
+   "hermiticity": 0.0,
+   "Q_comm": 0.0,
+   "N_comm": 0.0,
+   "M_comm": 0.0
+  }
+ ],
+ "automaton_reproduces_C84_table": true,
+ "bond14_allowed_matches": true,
+ "maximal_rectangles": 5,
+ "minimality": {
+  "all_allowed": {
+   "required_pairs": 65,
+   "min_rectangles": 3,
+   "fooling_set_example": [
+    [
+     "DA",
+     "E"
+    ],
+    [
+     "E",
+     "MA"
+    ],
+    [
+     "L1",
+     "DA"
+    ]
+   ]
+  },
+  "rings_p1_to_6": {
+   "required_pairs": 56,
+   "min_rectangles": 3,
+   "fooling_set_example": [
+    [
+     "DA",
+     "E"
+    ],
+    [
+     "L0",
+     "MA"
+    ],
+    [
+     "L1",
+     "DA"
+    ]
+   ]
+  },
+  "rings_fixed_p6": {
+   "required_pairs": 56,
+   "min_rectangles": 3,
+   "fooling_set_example": [
+    [
+     "DA",
+     "E"
+    ],
+    [
+     "L0",
+     "MA"
+    ],
+    [
+     "L1",
+     "DA"
+    ]
+   ]
+  }
+ },
+ "distinct_rows": [
+  [
+   "E",
+   "L0",
+   "MA",
+   "MB"
+  ],
+  [
+   "L1"
+  ],
+  [
+   "DA",
+   "DB",
+   "R0",
+   "R1",
+   "XA",
+   "XB"
+  ]
+ ],
+ "deterministic_three_colour_tables_up_to_relabelling": 1,
+ "exhaustive_rings": {
+  "3": {
+   "zero_penalty_words": 313,
+   "legal_squeezed_patterns": 313,
+   "N_material_bad_gt_N_bad": 0,
+   "colouring_not_unique_or_missing": 0
+  },
+  "4": {
+   "zero_penalty_words": 2127,
+   "legal_squeezed_patterns": 2127,
+   "N_material_bad_gt_N_bad": 0,
+   "colouring_not_unique_or_missing": 0
+  },
+  "5": {
+   "zero_penalty_words": 14497,
+   "legal_squeezed_patterns": 14497,
+   "N_material_bad_gt_N_bad": 0,
+   "colouring_not_unique_or_missing": 0
+  }
+ }
+}
