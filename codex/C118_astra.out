@@ -1,0 +1,13 @@
+The general estimate remains unproved. I proved for XX, every even \(L\ge4\) and all \(\beta\ge0\),
+\[
+R_L(\beta)\le 2\log2+\frac{5\pi}{3}\frac{\beta}{L}.
+\]
+This gives \(k=10\pi/3\), \(f(2)=1\). I also proved \(R_L\le\log d\) for diagonal classical chains.
+
+The general arguments encounter explicit obstructions: seam averaging retains an \(O(M)\) norm, \(R_L\) is neither convex nor concave, and the information identity contains marginal relative entropies that dimension alone cannot bound.
+
+Full-trace checks cover XX through paired length 8192, Heisenberg through length 8, and SU(3) through length 6. Larger interacting runs are SLURM-ready but unsubmitted.
+
+Derivations and limitations are in [PROOF.md](PROOF.md), with the summary in [RESULT.md](RESULT.md) and numerical findings in [CHECKS.md](CHECKS.md).
+
+[gpt_solve: backend=codex model=gpt-6-astra effort=high transcript=20261029T194241-2281]
