@@ -1,0 +1,17 @@
+{
+  "status": "passed",
+  "arithmetic": "exact rational and integer",
+  "affine_product_rule_cases": 72,
+  "radial_transposition_cases": 36,
+  "nonzero_exterior_derivative_cases": 72,
+  "survival_split_cases": 14,
+  "homogeneous_remainder_cases": 30,
+  "cut_record_cases": 837,
+  "taylor_cancellation_cases": 39,
+  "missing_exterior_term_example": {
+    "correct": "9/2",
+    "omitted_exterior": "443/120",
+    "difference": "97/120"
+  },
+  "scope": "Finite local algebra controls. No global routing construction or projected-tree counterexample."
+}

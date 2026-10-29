@@ -1,0 +1,9 @@
+TP remains unproved. I located an explicit obstruction to the direct absolute ultraviolet bound: the smooth regulator still gives a two-line majorant growing as \(\log\Lambda/(4\pi A)\).
+
+[proved] The integrated order-\(g^2\) density-loop coefficient cancels this divergence. It has uniform fifth moments and arbitrary fixed thermal powers, including two speed derivatives. This is a failure of the majorant, not a counterexample to TP.
+
+The remaining work is all-order ultraviolet preparation retaining these cancellations, followed by the joint \(q_h^\theta(T/q_h)^p\) comparison.
+
+Wrote [RESULT.md](RESULT.md), [PROOF.md](PROOF.md), and updated `PROGRESS.md`. Numerical checks pass. All writes stayed inside `work_C71`.
+
+[gpt_solve: backend=codex model=gpt-6-astra effort=high transcript=20261028T201208-19183]

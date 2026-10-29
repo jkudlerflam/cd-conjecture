@@ -1,0 +1,119 @@
+{
+  "scope": "Ultraviolet coefficient and image controls. TP remains unproved.",
+  "logarithm": {
+    "rows": [
+      {
+        "cutoff": 4.0,
+        "absolute_loop": 0.17409515164052633,
+        "subtracted_constant": 0.08923530542796802
+      },
+      {
+        "cutoff": 8.0,
+        "absolute_loop": 0.21652459020845746,
+        "subtracted_constant": 0.08923482088962001
+      },
+      {
+        "cutoff": 16.0,
+        "absolute_loop": 0.25895451328432734,
+        "subtracted_constant": 0.08923482085921072
+      },
+      {
+        "cutoff": 32.0,
+        "absolute_loop": 0.3013844363906064,
+        "subtracted_constant": 0.08923482085921064
+      },
+      {
+        "cutoff": 64.0,
+        "absolute_loop": 0.3438143594968856,
+        "subtracted_constant": 0.0892348208592107
+      },
+      {
+        "cutoff": 128.0,
+        "absolute_loop": 0.38624428260316473,
+        "subtracted_constant": 0.0892348208592107
+      }
+    ],
+    "doubling_increments": [
+      0.04242943856793113,
+      0.042429923075869874,
+      0.04242992310627908,
+      0.04242992310627919,
+      0.04242992310627913
+    ],
+    "predicted_doubling_increment": 0.042429923106279153
+  },
+  "dynamic": {
+    "plateau_max_residual": 1.3877787807814457e-17,
+    "plateau_cases": 36,
+    "matsubara": [
+      {
+        "T": 0.3,
+        "k": -0.17,
+        "p": 0.4,
+        "bosonic_mode": 1,
+        "extrapolated_residual": 3.718502059746802e-12
+      },
+      {
+        "T": 0.2,
+        "k": 0.5,
+        "p": -0.3,
+        "bosonic_mode": 2,
+        "extrapolated_residual": 2.8143459699369675e-11
+      },
+      {
+        "T": 0.4,
+        "k": -0.4,
+        "p": 0.2,
+        "bosonic_mode": 0,
+        "extrapolated_residual": 1.1972645105793764e-12
+      }
+    ]
+  },
+  "chiral_derivative": [
+    {
+      "t": 0.23,
+      "x": 0.41,
+      "derivative_residual": 5.984681720519734e-14
+    },
+    {
+      "t": -0.7,
+      "x": 0.11,
+      "derivative_residual": 2.586334299225828e-14
+    },
+    {
+      "t": 0.13,
+      "x": -1.2,
+      "derivative_residual": 5.4699454712947106e-15
+    }
+  ],
+  "images": {
+    "finite_sum_identity_residual": 7.942397286687723e-17,
+    "gaussian_high_covariance": [
+      {
+        "beta": 2.0,
+        "absolute_single_winding": 0.07556972691239293,
+        "normalized_power_three": 0.6045578152991434
+      },
+      {
+        "beta": 3.0,
+        "absolute_single_winding": 0.0231323940210132,
+        "normalized_power_three": 0.6245746385673564
+      },
+      {
+        "beta": 4.0,
+        "absolute_single_winding": 0.005740699067122604,
+        "normalized_power_three": 0.36740474029584663
+      },
+      {
+        "beta": 6.0,
+        "absolute_single_winding": 0.00020261178439605332,
+        "normalized_power_three": 0.04376414542954752
+      },
+      {
+        "beta": 8.0,
+        "absolute_single_winding": 3.366961681460475e-06,
+        "normalized_power_three": 0.0017238843809077632
+      }
+    ]
+  }
+}

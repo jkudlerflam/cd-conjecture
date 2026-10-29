@@ -1,0 +1,5 @@
+C60 (17) remains unresolved. I proved local cut coverage including derivatives of ancestor exterior fields, but not the simultaneous global bounded-load construction. No legal nonvanishing counterexample was found.
+
+The derivations and remaining gap are in [PROOF.md](PROOF.md), summarized in [RESULT.md](RESULT.md). Exact-arithmetic local checks passed. PROGRESS.md and STATE.md are updated; all writes stayed in work_C70.
+
+[gpt_solve: backend=codex model=gpt-6-astra effort=high transcript=20261028T201206-18993]

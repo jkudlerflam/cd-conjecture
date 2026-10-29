@@ -36,11 +36,11 @@ Vacancy swaps carry a letter with its type, so the cyclic P/B word along the occ
 
 | L | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 |
 |---|---|---|---|---|---|---|---|---|
-| frozen | 10 | 3 | 14 | 8 | 6 | 10 | 22 | 3* |
-| mobile | 2 | 1 | 1 | 2 | 2 | 1 | 2* | running |
-| word (M) | BPP (3) | BPPP (4) | BPPP (4) | BPBPP (5) | BPBPP (5) | BPPBPP (6) | BPPBPPP (7) | |
+| frozen | 10 | 3 | 14 | 8 | 6 | 10 | 22 | 3 |
+| mobile | 2 | 1 | 1 | 2 | 2 | 1 | 2 | 2† |
+| word (M) | BPP (3) | BPPP (4) | BPPP (4) | BPBPP (5) | BPBPP (5) | BPPBPP (6) | BPPBPPP (7) | BPPBPPP (7) |
 
-Every 2 is the Q = ±½ pair. Entries marked * come from the best first-order sector in all momenta, with competitors (0.007 and 0.16 higher at first order) still running. J = 1, 2 and 4 give the same pattern on L = 6 to 10. The mechanism is the Ogata–Shiba gluing. Translates of a word are exactly degenerate inside the payload, each R eigenvalue e^{iθ} acts as a charge flux θ, and the hard-core charge fluid picks θ = 0.
+The L = 11 and 12 entries were completed from the late Typhon results (section "Late results and calibrated c", below), and † marks a partial sector search. Every 2 is the Q = ±½ pair. When this was first written, the L = 11 and 12 entries came from the best first-order sector in all momenta, with competitors (0.007 and 0.16 higher at first order) still running. J = 1, 2 and 4 give the same pattern on L = 6 to 10. The mechanism is the Ogata–Shiba gluing. Translates of a word are exactly degenerate inside the payload, each R eigenvalue e^{iθ} acts as a charge flux θ, and the hard-core charge fluid picks θ = 0.
 
 **What becomes of the period.** The frozen triplet's partners sit at flux ±2π/3. Their gaps match free hard-core bosons to 4 × 10⁻⁴ (0.13446 against 0.13451 at L = 10). With x = L·gap/(2πv_c) we find 0.1263, 0.1165, 0.1160, 0.1155, 0.1151, 0.1147 at L = 5 and 9 to 13, against free values 0.1251, 0.1152, 0.1144, 0.1138, 0.1134, 0.1131. These are 1/L conformal levels of a charge boson compactified by the three-site cell.
 
