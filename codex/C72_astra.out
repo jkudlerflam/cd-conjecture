@@ -1,0 +1,7 @@
+C72 remains unresolved. I proved a local moment-first interpolation formula and a depth-independent bound for nested projectors on one fixed kernel. I did not establish closure under GN contractions or an obstruction to every reorganization.
+
+The new cancellation combines different survival components to remove third and fourth derivatives. All exact-arithmetic checks pass.
+
+Derivations and limitations are in [PROOF.md](PROOF.md), with the outcome in [RESULT.md](RESULT.md). `PROGRESS.md` and local `STATE.md` are updated. All writes stayed inside `work_C72`.
+
+[gpt_solve: backend=codex model=gpt-6-astra effort=high transcript=20261028T204944-31632]

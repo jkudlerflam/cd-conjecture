@@ -1,0 +1,16 @@
+{
+  "status": "passed",
+  "arithmetic": "exact rational and integer",
+  "flag_identities": 42,
+  "integral_remainders": 42,
+  "moment_first_identities": 330,
+  "factor_normal_forms": 6222,
+  "partial_commutations": 110,
+  "local_counter_cases": 2997,
+  "cross_component_cancellations": 18,
+  "obstruction_sequence": 100,
+  "nested_flag_reductions": 480,
+  "nested_flag_moment_commutations": 3040,
+  "retained_pair_interpolations": 4,
+  "scope": "Local projector and interpolation identities; no global GN routing test."
+}
