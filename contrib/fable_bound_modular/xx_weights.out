@@ -1,0 +1,6 @@
+ell=  128   tent: defect=0.22568   quartic: defect=0.01768   ramp+wall: defect=8.83260
+ell=  256   tent: defect=0.24316 slope=0.02522   quartic: defect=0.01768 slope=-0.00000   ramp+wall: defect=17.58408 slope=12.62572
+ell=  512   tent: defect=0.26079 slope=0.02544   quartic: defect=0.01768 slope=-0.00000   ramp+wall: defect=35.07942 slope=25.24044
+ell= 1024   tent: defect=0.27855 slope=0.02562   quartic: defect=0.01768 slope=-0.00000   ramp+wall: defect=70.06225 slope=50.46955
+ell= 2048   tent: defect=0.29640 slope=0.02575   quartic: defect=0.01768 slope=-0.00000   ramp+wall: defect=140.01987 slope=100.92751
+CFT slopes: tent 1/(12 pi) = 0.02653, quartic 0, ramp+wall 1/(24 pi) = 0.01326 plus wall term (-f_b) ell = 0.1366 ell

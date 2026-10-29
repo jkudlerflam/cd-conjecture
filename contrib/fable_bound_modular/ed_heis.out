@@ -1,0 +1,34 @@
+
+==== Heisenberg: d=2, A=1.57080, v=1.57080, c=1
+  ring L=10  E0/L=-0.45154464  (E0/L + pi A/(6 L^2) = -0.44331997)
+  ring L=12  E0/L=-0.44894924  (E0/L + pi A/(6 L^2) = -0.44323767)
+  ring L=14  E0/L=-0.44739640  (E0/L + pi A/(6 L^2) = -0.44320013)
+  ring L=16  E0/L=-0.44639352  (E0/L + pi A/(6 L^2) = -0.44318076)
+  ring L=18  E0/L=-0.44570828  (E0/L + pi A/(6 L^2) = -0.44316980)
+  e_0 exact = -0.44314718
+  open n= 5 bonds: f_b(n)=-0.277841   f_b(n)+pi A/(24 n)=-0.236718
+  open n= 9 bonds: f_b(n)=-0.269711   f_b(n)+pi A/(24 n)=-0.246864
+  open n=13 bonds: f_b(n)=-0.265811   f_b(n)+pi A/(24 n)=-0.249995
+  open n=17 bonds: f_b(n)=-0.263509   f_b(n)+pi A/(24 n)=-0.251414
+  weighted intervals, CFT slope A/(12 pi) = 0.041667
+  ell= 4  defect=0.178570  layer-cake: E0-lc=0.11308 (must be >= 0)
+  ell= 5  defect=0.104270  layer-cake: E0-lc=0.06545 (must be >= 0)   slope vs ell=4: -0.332968
+  ell= 6  defect=0.194100  layer-cake: E0-lc=0.23187 (must be >= 0)   slope vs ell=5: 0.492698
+  ell= 7  defect=0.122056  layer-cake: E0-lc=0.15119 (must be >= 0)   slope vs ell=6: -0.467362
+  ell= 8  defect=0.205330  layer-cake: E0-lc=0.35294 (must be >= 0)   slope vs ell=7: 0.623631
+  ell= 9  defect=0.135003  layer-cake: E0-lc=0.24743 (must be >= 0)   slope vs ell=8: -0.597091
+  ell=10  defect=0.214125  layer-cake: E0-lc=0.47523 (must be >= 0)   slope vs ell=9: 0.750970
+  ell=11  defect=0.145177  layer-cake: E0-lc=0.35011 (must be >= 0)   slope vs ell=10: -0.723410
+  ell=12  defect=0.221354  layer-cake: E0-lc=0.59829 (must be >= 0)   slope vs ell=11: 0.875486
+  ell=13  defect=0.153552  layer-cake: E0-lc=0.45712 (must be >= 0)   slope vs ell=12: -0.847072
+  ell=14  defect=0.227491  layer-cake: E0-lc=0.72188 (must be >= 0)   slope vs ell=13: 0.997712
+  ell=15  defect=0.160666  layer-cake: E0-lc=0.56726 (must be >= 0)   slope vs ell=14: -0.968575
+  ell=16  defect=0.232822  layer-cake: E0-lc=0.84588 (must be >= 0)   slope vs ell=15: 1.118029
+  ell=17  defect=0.166846  layer-cake: E0-lc=0.67972 (must be >= 0)   slope vs ell=16: -1.088270
+  ell=18  defect=0.237535  layer-cake: E0-lc=0.97018 (must be >= 0)   slope vs ell=17: 1.236720
+  ring L=10 -> ell=5: S(rho_I)=1.12410  -log p_max=0.80454 (CFT S/2=0.56205)  defect(eL)=0.07068  chi-defect=0.06997  rho-defect=-0.00000   S(rho||tau_beta) at beta v/(2pi)=1/2,1,2: 0.33707, 0.01299, 0.14794
+  ring L=12 -> ell=6: S(rho_I)=1.18422  -log p_max=0.47829 (CFT S/2=0.59211)  defect(eL)=0.16025  chi-defect=0.15967  rho-defect=0.00000   S(rho||tau_beta) at beta v/(2pi)=1/2,1,2: 0.35847, 0.01326, 0.23722
+  ring L=14 -> ell=7: S(rho_I)=1.23529  -log p_max=0.84298 (CFT S/2=0.61765)  defect(eL)=0.08806  chi-defect=0.08717  rho-defect=0.00000   S(rho||tau_beta) at beta v/(2pi)=1/2,1,2: 0.37371, 0.01338, 0.18318
+  ring L=16 -> ell=8: S(rho_I)=1.27965  -log p_max=0.52907 (CFT S/2=0.63982)  defect(eL)=0.17124  chi-defect=0.17067  rho-defect=0.00000   S(rho||tau_beta) at beta v/(2pi)=1/2,1,2: 0.38564, 0.01345, 0.25388
+  ring L=18 -> ell=9: S(rho_I)=1.31884  -log p_max=0.87332 (CFT S/2=0.65942)  defect(eL)=0.10085  chi-defect=0.09990  rho-defect=0.00000   S(rho||tau_beta) at beta v/(2pi)=1/2,1,2: 0.39549, 0.01350, 0.20849
+  CFT slopes of S(rho||tau) in log ell at beta v/(2pi)=n:  [0.08333, 0.0, 0.08333]

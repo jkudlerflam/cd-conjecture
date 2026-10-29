@@ -1,0 +1,38 @@
+== (a),(b),(d): single XX chain, A=B=C=1, M=1/2.  Predicted slopes: defect A/(12pi)=0.026526
+   S(rho||tau) slope beta/(12pi)+pi/(3beta)-1/3: {'1pi': 0.083333, '2pi': 0.0, '4pi': 0.083333, '8pi': 0.375}
+ell=  128  defect=0.190051 slope=0.025262   chi-defect slope=0.025262   S slope=0.33334 (c/3=0.33333)   S(rho||tau) slopes={'1pi': np.float64(0.083205), '2pi': np.float64(-0.0), '4pi': np.float64(0.082039), '8pi': np.float64(0.3483)}
+ell=  256  defect=0.207708 slope=0.025473   chi-defect slope=0.025473   S slope=0.33333 (c/3=0.33333)   S(rho||tau) slopes={'1pi': np.float64(0.083294), '2pi': np.float64(-0.0), '4pi': np.float64(0.082688), '8pi': np.float64(0.356003)}
+ell=  512  defect=0.225477 slope=0.025636   chi-defect slope=0.025636   S slope=0.33333 (c/3=0.33333)   S(rho||tau) slopes={'1pi': np.float64(0.083322), '2pi': np.float64(-0.0), '4pi': np.float64(0.083011), '8pi': np.float64(0.361501)}
+ell= 1024  defect=0.243335 slope=0.025763   chi-defect slope=0.025763   S slope=0.33333 (c/3=0.33333)   S(rho||tau) slopes={'1pi': np.float64(0.08333), '2pi': np.float64(-0.0), '4pi': np.float64(0.083172), '8pi': np.float64(0.365419)}
+ell= 2048  defect=0.261263 slope=0.025865   chi-defect slope=0.025865   S slope=0.33333 (c/3=0.33333)   S(rho||tau) slopes={'1pi': np.float64(0.083332), '2pi': np.float64(-0.0), '4pi': np.float64(0.083253), '8pi': np.float64(0.368207)}
+
+== (c): profile x^2 (ell-x)^2 delta_x / ell^2  vs  A/(24 pi) = 0.013263   (ell = 2048; x measured from the virtual bond, x -> x+1)
+   (smoothed over three bonds; raw delta_x alternates in sign with amplitude ~ 0.03/x)
+   x=    2  0.034359
+   x=    4  0.020779
+   x=    8  0.016507
+   x=   16  0.014819
+   x=   64  0.013808
+   x=  256  0.013613
+   x=  512  0.013586
+   x= 1024  0.013577
+
+== (e): two decoupled XX chains t=1/2 and t=1/4 (v=1 and 1/2), d=4, M=3/4: A=1.5, B=3, C=2
+   predicted S(rho||tau) slopes: {'1pi': 0.458333, '2pi': 0.083333, '4pi': 0.083333, '8pi': 0.458333}   defect slope A/(12pi)=0.039789
+ell=  128  defect slope=0.037893   S(rho||tau) slopes={'1pi': np.float64(0.457099), '2pi': np.float64(0.083205), '4pi': np.float64(0.082039), '8pi': np.float64(0.430338)}
+ell=  256  defect slope=0.038210   S(rho||tau) slopes={'1pi': np.float64(0.457942), '2pi': np.float64(0.083294), '4pi': np.float64(0.082688), '8pi': np.float64(0.43869)}
+ell=  512  defect slope=0.038454   S(rho||tau) slopes={'1pi': np.float64(0.458214), '2pi': np.float64(0.083322), '4pi': np.float64(0.083011), '8pi': np.float64(0.444512)}
+ell= 1024  defect slope=0.038645   S(rho||tau) slopes={'1pi': np.float64(0.458298), '2pi': np.float64(0.08333), '4pi': np.float64(0.083172), '8pi': np.float64(0.448591)}
+ell= 2048  defect slope=0.038798   S(rho||tau) slopes={'1pi': np.float64(0.458323), '2pi': np.float64(0.083332), '4pi': np.float64(0.083253), '8pi': np.float64(0.45146)}
+
+== (f): layer cake and boundary energy, single XX chain
+   n_bonds=   9  f_b(n)=E_open-n e0=-0.148548   exact limit 1/2-2/pi=-0.136620   (n+2)*(f_b(n)-f_b)=-0.13121  (CFT: -pi A/24 = -0.13090)
+   n_bonds=  17  f_b(n)=E_open-n e0=-0.143515   exact limit 1/2-2/pi=-0.136620   (n+2)*(f_b(n)-f_b)=-0.13100  (CFT: -pi A/24 = -0.13090)
+   n_bonds=  33  f_b(n)=E_open-n e0=-0.140361   exact limit 1/2-2/pi=-0.136620   (n+2)*(f_b(n)-f_b)=-0.13093  (CFT: -pi A/24 = -0.13090)
+   n_bonds=  65  f_b(n)=E_open-n e0=-0.138574   exact limit 1/2-2/pi=-0.136620   (n+2)*(f_b(n)-f_b)=-0.13091  (CFT: -pi A/24 = -0.13090)
+   n_bonds= 129  f_b(n)=E_open-n e0=-0.137619   exact limit 1/2-2/pi=-0.136620   (n+2)*(f_b(n)-f_b)=-0.13090  (CFT: -pi A/24 = -0.13090)
+   n_bonds= 257  f_b(n)=E_open-n e0=-0.137125   exact limit 1/2-2/pi=-0.136620   (n+2)*(f_b(n)-f_b)=-0.13090  (CFT: -pi A/24 = -0.13090)
+   ell=  32  E_0(K_w)=-54.42706  layer-cake lower bound=-55.41894  e0 W=-54.27184  defect=0.15523  layer-cake allowance=1.14711
+   ell=  64  E_0(K_w)=-217.41904  layer-cake lower bound=-219.49086  e0 W=-217.24650  defect=0.17254  layer-cake allowance=2.24436
+   ell= 128  E_0(K_w)=-869.33520  layer-cake lower bound=-873.57823  e0 W=-869.14514  defect=0.19005  layer-cake allowance=4.43309
+   ell= 256  E_0(K_w)=-3476.94744  layer-cake lower bound=-3485.54640  e0 W=-3476.73973  defect=0.20771  layer-cake allowance=8.80667

@@ -1,0 +1,25 @@
+
+==== SU(3) swap: d=3, A=4.18879, v=2.09440, c=2
+  ring L= 9  E0/L=-0.73104842  (E0/L + pi A/(6 L^2) = -0.70397131)
+  ring L=12  E0/L=-0.71871057  (E0/L + pi A/(6 L^2) = -0.70347970)
+  ring L=15  E0/L=-0.71308146  (E0/L + pi A/(6 L^2) = -0.70333371)
+  e_0 estimated from the two largest rings: -0.70340670
+  open n= 5 bonds: f_b(n)=-0.552751   f_b(n)+pi A/(24 n)=-0.443088
+  open n= 8 bonds: f_b(n)=-0.535541   f_b(n)+pi A/(24 n)=-0.467002
+  open n=11 bonds: f_b(n)=-0.525714   f_b(n)+pi A/(24 n)=-0.475868
+  weighted intervals, CFT slope A/(12 pi) = 0.111111
+  ell= 3  defect=0.395458  layer-cake: E0-lc=0.00000 (must be >= 0)
+  ell= 4  defect=0.241483  layer-cake: E0-lc=0.06066 (must be >= 0)   slope vs ell=3: -0.535224
+  ell= 5  defect=0.277576  layer-cake: E0-lc=0.25073 (must be >= 0)   slope vs ell=4: 0.161746
+  ell= 6  defect=0.463506  layer-cake: E0-lc=0.19855 (must be >= 0)   slope vs ell=5: 1.019790
+  ell= 7  defect=0.318396  layer-cake: E0-lc=0.37673 (must be >= 0)   slope vs ell=6: -0.941346
+  ell= 8  defect=0.338395  layer-cake: E0-lc=0.50551 (must be >= 0)   slope vs ell=7: 0.149765
+  ell= 9  defect=0.503973  layer-cake: E0-lc=0.51272 (must be >= 0)   slope vs ell=8: 1.405787
+  ell=10  defect=0.364192  layer-cake: E0-lc=0.67193 (must be >= 0)   slope vs ell=9: -1.326684
+  ell=11  defect=0.377681  layer-cake: E0-lc=0.83230 (must be >= 0)   slope vs ell=10: 0.141526
+  ell=12  defect=0.532083  layer-cake: E0-lc=0.81326 (must be >= 0)   slope vs ell=11: 1.774496
+  ell=13  defect=0.396090  layer-cake: E0-lc=1.01411 (must be >= 0)   slope vs ell=12: -1.699000
+  ring L= 9 -> ell=4: S(rho_I)=1.91681  -log p_max=1.32924 (CFT S/2=0.95840)  defect(eL)=0.17238  chi-defect=0.17186  rho-defect=-0.00000   S(rho||tau_beta) at beta v/(2pi)=1/2,1,2: 0.39027, 0.01298, 0.25289
+  ring L=12 -> ell=6: S(rho_I)=2.11946  -log p_max=0.86187 (CFT S/2=1.05973)  defect(eL)=0.37423  chi-defect=0.37294  rho-defect=-0.00000   S(rho||tau_beta) at beta v/(2pi)=1/2,1,2: 0.58303, 0.02799, 0.37852
+  ring L=15 -> ell=7: S(rho_I)=2.26435  -log p_max=1.45705 (CFT S/2=1.13217)  defect(eL)=0.24100  chi-defect=0.23951  rho-defect=-0.00000   S(rho||tau_beta) at beta v/(2pi)=1/2,1,2: 0.60868, 0.02175, 0.34628
+  CFT slopes of S(rho||tau) in log ell at beta v/(2pi)=n:  [0.16667, 0.0, 0.16667]
