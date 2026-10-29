@@ -1,0 +1,11 @@
+No ≤10-letter certified design was obtained.
+
+[Proved] The main new obstructions cover homogeneous multi-token exchanges, position-only charge encoding, and diagonal port dressings that preserve Gaussianity. These are restricted results, not a universal eleven-letter bound.
+
+[Proved] Complementary interacting source channels can cancel exactly to a Gaussian second-order operator. This leaves a viable algebraic route open, but no microscopic implementation was found.
+
+[Numerical] Small ED checks pass through dimension 80. Exact integer and rational checks also pass.
+
+Written inside work_C87: [RESULT.md](RESULT.md), [PROOF.md](PROOF.md), and [PROGRESS.md](PROGRESS.md), with reproducible checks and a local handoff.
+
+[gpt_solve: backend=codex model=gpt-6-astra effort=high transcript=20261029T014954-12686]

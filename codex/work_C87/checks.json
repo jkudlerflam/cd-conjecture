@@ -1,0 +1,481 @@
+{
+  "tokens": {
+    "flat_cases": [
+      {
+        "status": "exact_gauge_and_components_numerical_ED",
+        "length": 3,
+        "dimension": 6,
+        "exchange": false,
+        "components": 2,
+        "component_ground_gaps": [
+          3.8234388884749073,
+          3.196017199017513
+        ],
+        "max_eigenpair_matrix_residual": 4.167891660169588e-15
+      },
+      {
+        "status": "exact_gauge_and_components_numerical_ED",
+        "length": 3,
+        "dimension": 6,
+        "exchange": true,
+        "components": 1,
+        "component_ground_gaps": [
+          2.1116068930783296
+        ],
+        "max_eigenpair_matrix_residual": 1.5461886589848404e-14
+      },
+      {
+        "status": "exact_gauge_and_components_numerical_ED",
+        "length": 4,
+        "dimension": 12,
+        "exchange": false,
+        "components": 2,
+        "component_ground_gaps": [
+          3.5944272069242196,
+          2.9116010830659587
+        ],
+        "max_eigenpair_matrix_residual": 2.0845635384276236e-14
+      },
+      {
+        "status": "exact_gauge_and_components_numerical_ED",
+        "length": 4,
+        "dimension": 12,
+        "exchange": true,
+        "components": 1,
+        "component_ground_gaps": [
+          2.091946891718857
+        ],
+        "max_eigenpair_matrix_residual": 2.1428634316704372e-14
+      },
+      {
+        "status": "exact_gauge_and_components_numerical_ED",
+        "length": 5,
+        "dimension": 20,
+        "exchange": false,
+        "components": 2,
+        "component_ground_gaps": [
+          3.587269289972747,
+          2.896064437304201
+        ],
+        "max_eigenpair_matrix_residual": 2.5054519041385585e-14
+      },
+      {
+        "status": "exact_gauge_and_components_numerical_ED",
+        "length": 5,
+        "dimension": 20,
+        "exchange": true,
+        "components": 1,
+        "component_ground_gaps": [
+          2.0912339847336803
+        ],
+        "max_eigenpair_matrix_residual": 3.264719133626129e-14
+      },
+      {
+        "status": "exact_gauge_and_components_numerical_ED",
+        "length": 6,
+        "dimension": 30,
+        "exchange": false,
+        "components": 2,
+        "component_ground_gaps": [
+          3.5871905642524027,
+          2.8957538815096484
+        ],
+        "max_eigenpair_matrix_residual": 4.4612519207036506e-14
+      },
+      {
+        "status": "exact_gauge_and_components_numerical_ED",
+        "length": 6,
+        "dimension": 30,
+        "exchange": true,
+        "components": 1,
+        "component_ground_gaps": [
+          2.0912240494965264
+        ],
+        "max_eigenpair_matrix_residual": 4.5670967239879114e-14
+      },
+      {
+        "status": "exact_gauge_and_components_numerical_ED",
+        "length": 7,
+        "dimension": 42,
+        "exchange": false,
+        "components": 2,
+        "component_ground_gaps": [
+          3.587190143162582,
+          2.89575090368446
+        ],
+        "max_eigenpair_matrix_residual": 5.3895624800826747e-14
+      },
+      {
+        "status": "exact_gauge_and_components_numerical_ED",
+        "length": 7,
+        "dimension": 42,
+        "exchange": true,
+        "components": 1,
+        "component_ground_gaps": [
+          2.0912239752602666
+        ],
+        "max_eigenpair_matrix_residual": 5.831456067602299e-14
+      },
+      {
+        "status": "exact_gauge_and_components_numerical_ED",
+        "length": 8,
+        "dimension": 56,
+        "exchange": false,
+        "components": 2,
+        "component_ground_gaps": [
+          3.5871901418248946,
+          2.895750886829802
+        ],
+        "max_eigenpair_matrix_residual": 5.734545895890062e-14
+      },
+      {
+        "status": "exact_gauge_and_components_numerical_ED",
+        "length": 8,
+        "dimension": 56,
+        "exchange": true,
+        "components": 1,
+        "component_ground_gaps": [
+          2.0912239749124524
+        ],
+        "max_eigenpair_matrix_residual": 8.578359667504594e-14
+      },
+      {
+        "status": "exact_gauge_and_components_numerical_ED",
+        "length": 9,
+        "dimension": 72,
+        "exchange": false,
+        "components": 2,
+        "component_ground_gaps": [
+          3.587190141822063,
+          2.8957508867666384
+        ],
+        "max_eigenpair_matrix_residual": 7.995341255589873e-14
+      },
+      {
+        "status": "exact_gauge_and_components_numerical_ED",
+        "length": 9,
+        "dimension": 72,
+        "exchange": true,
+        "components": 1,
+        "component_ground_gaps": [
+          2.0912239749113244
+        ],
+        "max_eigenpair_matrix_residual": 7.400922335500594e-14
+      }
+    ],
+    "multispecies": [
+      {
+        "status": "exact_integer_gauge_check",
+        "sites": 3,
+        "configurations": 6,
+        "edges": 6,
+        "independent_cycles": 1
+      },
+      {
+        "status": "exact_integer_gauge_check",
+        "sites": 4,
+        "configurations": 24,
+        "edges": 36,
+        "independent_cycles": 13
+      },
+      {
+        "status": "exact_integer_gauge_check",
+        "sites": 5,
+        "configurations": 60,
+        "edges": 108,
+        "independent_cycles": 49
+      },
+      {
+        "status": "exact_integer_gauge_check",
+        "sites": 6,
+        "configurations": 120,
+        "edges": 240,
+        "independent_cycles": 121
+      },
+      {
+        "status": "exact_integer_gauge_check",
+        "sites": 7,
+        "configurations": 210,
+        "edges": 450,
+        "independent_cycles": 241
+      }
+    ],
+    "nonuniform_exchange_cycle": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        2,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        1
+      ]
+    ],
+    "nonuniform_exchange_flux_pi_over_two": 1
+  },
+  "coefficient": {
+    "status": "proved_exact_finite_check",
+    "carrier_dimension": 6,
+    "pair_dimension": 36,
+    "active_projector_ranks": [
+      2,
+      2,
+      2
+    ],
+    "C": [
+      [
+        [
+          "60313721844230864932463080033493514854581955092808477295951012344847977329",
+          "696316415817924265066522992467617927709453035427207408534015857919989976490842582400"
+        ],
+        [
+          "234638511473575619590801757654889922128431551264534733916904887157967111",
+          "261118655931721599399946122175356722891044888285202778200255946719996241184065968400"
+        ],
+        [
+          "6534772906824327484913092459555493166643659380525526941785974876923473",
+          "2088949247453772795199568977402853783128359106281622225602047573759969929472527747200"
+        ]
+      ],
+      [
+        [
+          "14894075249009999834301534249067864912381494824130928955842879401132181377899",
+          "261118655931721599399946122175356722891044888285202778200255946719996241184065968400"
+        ],
+        [
+          "31730749916993345720950802495648317094944717189170315884963946769469576387",
+          "104447462372688639759978448870142689156417955314081111280102378687998496473626387360"
+        ],
+        [
+          "39380906629360959206631606352598958017743309260548018259470769785003401",
+          "58026367984827022088876916038968160642454419618933950711167988159999164707570215200"
+        ]
+      ],
+      [
+        [
+          "64995777447343699249045100995509093665774476694433313801596034760370920984073277",
+          "2088949247453772795199568977402853783128359106281622225602047573759969929472527747200"
+        ],
+        [
+          "2330643572294148422614397050754666891726763039071409178984240822996459959841",
+          "34815820790896213253326149623380896385472651771360370426700792895999498824542129120"
+        ],
+        [
+          "181946300037998772251805199085085310649784925650432603488085433535094401299",
+          "2088949247453772795199568977402853783128359106281622225602047573759969929472527747200"
+        ]
+      ]
+    ],
+    "onsite_imaginary_part_exactly_zero": true,
+    "inverse_identity_exact": true
+  },
+  "phase_classification": {
+    "status": "proved_exhaustive_finite_check",
+    "modes": 3,
+    "diagonal_sign_unitaries": 256,
+    "gaussian_preserving": 64
+  },
+  "ports": {
+    "checks": [
+      {
+        "status": "exact_Gram_numerical_ED",
+        "name": "conditional_phase",
+        "code_dimension": 16,
+        "excited_dimension": 48,
+        "full_dimension": 64,
+        "gaussian_second_order": false,
+        "exact_reconstruction_residual_max": 2,
+        "ed": [
+          {
+            "lambda_": 0.1,
+            "max_second_order_energy_error": 0.00322356371699814,
+            "error_over_lambda4": 32.235637169981395,
+            "eigenpair_residual": 2.16026695489895e-15
+          },
+          {
+            "lambda_": 0.05,
+            "max_second_order_energy_error": 0.00021849295065029008,
+            "error_over_lambda4": 34.95887210404641,
+            "eigenpair_residual": 3.2147293831808187e-15
+          },
+          {
+            "lambda_": 0.025,
+            "max_second_order_energy_error": 1.3958009753189688e-05,
+            "error_over_lambda4": 35.73250496816559,
+            "eigenpair_residual": 2.380541766395455e-15
+          }
+        ]
+      },
+      {
+        "status": "exact_Gram_numerical_ED",
+        "name": "conditional_amplitude",
+        "code_dimension": 16,
+        "excited_dimension": 16,
+        "full_dimension": 32,
+        "gaussian_second_order": false,
+        "exact_reconstruction_residual_max": 9,
+        "ed": [
+          {
+            "lambda_": 0.1,
+            "max_second_order_energy_error": 0.019687576256715356,
+            "error_over_lambda4": 196.87576256715352,
+            "eigenpair_residual": 3.027658007472491e-16
+          },
+          {
+            "lambda_": 0.05,
+            "max_second_order_energy_error": 0.0014835192865498559,
+            "error_over_lambda4": 237.3630858479769,
+            "eigenpair_residual": 3.027658007472491e-16
+          },
+          {
+            "lambda_": 0.025,
+            "max_second_order_energy_error": 9.804864072181924e-05,
+            "error_over_lambda4": 251.0045202478572,
+            "eigenpair_residual": 3.114397125908322e-16
+          }
+        ]
+      },
+      {
+        "status": "exact_Gram_numerical_ED",
+        "name": "complementary_channels",
+        "code_dimension": 16,
+        "excited_dimension": 64,
+        "full_dimension": 80,
+        "gaussian_second_order": true,
+        "exact_reconstruction_residual_max": 0,
+        "ed": [
+          {
+            "lambda_": 0.1,
+            "max_second_order_energy_error": 0.0014835192865506538,
+            "error_over_lambda4": 14.835192865506535,
+            "eigenpair_residual": 1.9012031319137648e-15
+          },
+          {
+            "lambda_": 0.05,
+            "max_second_order_energy_error": 9.804864072361814e-05,
+            "error_over_lambda4": 15.6877825157789,
+            "eigenpair_residual": 2.4714188120892926e-15
+          },
+          {
+            "lambda_": 0.025,
+            "max_second_order_energy_error": 6.218943957083181e-06,
+            "error_over_lambda4": 15.92049653013294,
+            "eigenpair_residual": 1.827366286196604e-15
+          }
+        ]
+      }
+    ],
+    "phase_hopping_amplitudes": [
+      -1,
+      1
+    ],
+    "phase_distance_to_any_Gaussian_lower": [
+      "1",
+      "1"
+    ],
+    "amplitude_mixed_difference": -9,
+    "amplitude_distance_to_any_Gaussian_lower": [
+      "9",
+      "4"
+    ],
+    "complementary_component_non_gaussian": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "complementary_fourth_order_non_gaussian": true
+  },
+  "counts": {
+    "status": "proved_exact_finite_counts",
+    "positions": [
+      {
+        "n": 9,
+        "distinct_same_chain_minimum_sites": 24,
+        "identical_same_chain_minimum_sites": 33,
+        "separate_rails_minimum_sites_per_rail": 23
+      },
+      {
+        "n": 10,
+        "distinct_same_chain_minimum_sites": 33,
+        "identical_same_chain_minimum_sites": 46,
+        "separate_rails_minimum_sites_per_rail": 32
+      },
+      {
+        "n": 11,
+        "distinct_same_chain_minimum_sites": 46,
+        "identical_same_chain_minimum_sites": 65,
+        "separate_rails_minimum_sites_per_rail": 46
+      }
+    ],
+    "markers": [
+      {
+        "bits": 1,
+        "neutral_dimension": 2,
+        "excited_dimension_lower": 3,
+        "total_dimension_lower": 5
+      },
+      {
+        "bits": 2,
+        "neutral_dimension": 4,
+        "excited_dimension_lower": 6,
+        "total_dimension_lower": 10
+      },
+      {
+        "bits": 3,
+        "neutral_dimension": 8,
+        "excited_dimension_lower": 11,
+        "total_dimension_lower": 19
+      },
+      {
+        "bits": 4,
+        "neutral_dimension": 16,
+        "excited_dimension_lower": 22,
+        "total_dimension_lower": 38
+      },
+      {
+        "bits": 5,
+        "neutral_dimension": 32,
+        "excited_dimension_lower": 42,
+        "total_dimension_lower": 74
+      },
+      {
+        "bits": 6,
+        "neutral_dimension": 64,
+        "excited_dimension_lower": 84,
+        "total_dimension_lower": 148
+      },
+      {
+        "bits": 7,
+        "neutral_dimension": 128,
+        "excited_dimension_lower": 163,
+        "total_dimension_lower": 291
+      },
+      {
+        "bits": 8,
+        "neutral_dimension": 256,
+        "excited_dimension_lower": 326,
+        "total_dimension_lower": 582
+      }
+    ]
+  }
+}

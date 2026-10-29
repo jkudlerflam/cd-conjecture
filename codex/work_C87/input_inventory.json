@@ -1,0 +1,384 @@
+[
+  {
+    "file": "../work_C84/ALPHABET.md",
+    "lines": 109
+  },
+  {
+    "file": "../work_C84/MEMBER.json",
+    "lines": 47,
+    "keys_or_length": [
+      "status",
+      "alphabet",
+      "flavours",
+      "data_sites",
+      "cell_length",
+      "D",
+      "Delta",
+      "alpha",
+      "beta",
+      "recurrence",
+      "phi_A_pi_fraction",
+      "phi_B",
+      "psi_A_pi_fraction",
+      "psi_B_pi_fraction",
+      "port_phases_pi_fractions",
+      "td",
+      "g_power",
+      "K_power",
+      "lambda_power",
+      "field",
+      "mu_sel",
+      "penalty",
+      "active_conversions"
+    ]
+  },
+  {
+    "file": "../work_C84/PROGRESS.md",
+    "lines": 51
+  },
+  {
+    "file": "../work_C84/PROOF.md",
+    "lines": 590
+  },
+  {
+    "file": "../work_C84/RESULT.md",
+    "lines": 95
+  },
+  {
+    "file": "../work_C84/STATE.md",
+    "lines": 52
+  },
+  {
+    "file": "../work_C84/alphabet_audit.py",
+    "lines": 89
+  },
+  {
+    "file": "../work_C84/alphabet_checks.json",
+    "lines": 244,
+    "keys_or_length": [
+      "additive_charge_rank",
+      "additive_charge_dimension",
+      "charge_basis",
+      "single_letter_merges"
+    ]
+  },
+  {
+    "file": "../work_C84/bond11.py",
+    "lines": 77
+  },
+  {
+    "file": "../work_C84/bond18.py",
+    "lines": 114
+  },
+  {
+    "file": "../work_C84/certificate_n11.json",
+    "lines": 15,
+    "keys_or_length": [
+      "n",
+      "D",
+      "bits",
+      "iterations",
+      "product_dimension",
+      "status",
+      "log10_lambda_min_lower",
+      "log10_lambda_min_upper",
+      "log10_lambda_max_lower",
+      "log10_lambda_max_upper",
+      "log10_entry_radius",
+      "log10_beta",
+      "seconds"
+    ]
+  },
+  {
+    "file": "../work_C84/certify_roots.py",
+    "lines": 123
+  },
+  {
+    "file": "../work_C84/certify_tree.py",
+    "lines": 97
+  },
+  {
+    "file": "../work_C84/checks.py",
+    "lines": 81
+  },
+  {
+    "file": "../work_C84/finite_budget.json",
+    "lines": 15,
+    "keys_or_length": [
+      "n",
+      "alphabet",
+      "cell_length",
+      "g_power",
+      "K_power",
+      "lambda_power",
+      "Eunit_lower_log10",
+      "metric_trace_log10",
+      "conversion_error_log10",
+      "penalty_including_zero_port_error_log10",
+      "two_cell_lambda_error_log10",
+      "budget_power",
+      "sum_below_one_eighth_budget"
+    ]
+  },
+  {
+    "file": "../work_C84/finite_budget.py",
+    "lines": 33
+  },
+  {
+    "file": "../work_C84/finite_budget_exact.json",
+    "lines": 26,
+    "keys_or_length": [
+      "trace",
+      "unit_lower",
+      "conversion",
+      "penalty",
+      "lambda_local",
+      "budget"
+    ],
+    "budget_checked": true
+  },
+  {
+    "file": "../work_C84/full_loop_bands_n11.json",
+    "lines": 62,
+    "keys_or_length": [
+      "n",
+      "status",
+      "D",
+      "eta_power",
+      "field_power",
+      "roots",
+      "centres",
+      "delta2",
+      "delta4",
+      "witness",
+      "unit_circle_error",
+      "whitened_entry_error_bound",
+      "max_whitened_root_residual",
+      "min_whitened_root_slope",
+      "log10_min_speed_normalized",
+      "log10_beta"
+    ]
+  },
+  {
+    "file": "../work_C84/full_loop_integer.py",
+    "lines": 109
+  },
+  {
+    "file": "../work_C84/grammar_audit.py",
+    "lines": 39
+  },
+  {
+    "file": "../work_C84/grammar_checks.json",
+    "lines": 66,
+    "keys_or_length": [
+      "words",
+      "local_bad_pair_audit"
+    ]
+  },
+  {
+    "file": "../work_C84/loop_scan.py",
+    "lines": 74
+  },
+  {
+    "file": "../work_C84/parent_checks.py",
+    "lines": 35
+  },
+  {
+    "file": "../work_C84/parent_shift.py",
+    "lines": 128
+  },
+  {
+    "file": "../work_C84/rational_bands.py",
+    "lines": 117
+  },
+  {
+    "file": "../work_C84/rational_bands_n11.json",
+    "lines": 58,
+    "keys_or_length": [
+      "n",
+      "status",
+      "eta_power_of_two",
+      "whitened_loop_norm",
+      "unit_circle_error",
+      "roots",
+      "centres",
+      "delta2",
+      "delta4",
+      "witness",
+      "whitening_hermitian_residual",
+      "seconds"
+    ]
+  },
+  {
+    "file": "../work_C84/rejected_parameters.json",
+    "lines": 20,
+    "keys_or_length": [
+      "status",
+      "n",
+      "data_sites",
+      "loop_eta_power",
+      "root_half_width",
+      "numerical_pair_margin",
+      "failed_pairs",
+      "rational_margin_float",
+      "replacement_loop_eta_power"
+    ]
+  },
+  {
+    "file": "../work_C84/root_certificate_exact_n11.json",
+    "lines": 234,
+    "keys_or_length": [
+      "intervals",
+      "delta2",
+      "delta4",
+      "perturbation_budget_power",
+      "g_power"
+    ]
+  },
+  {
+    "file": "../work_C84/root_certificate_n11.json",
+    "lines": 121,
+    "keys_or_length": [
+      "n",
+      "status",
+      "root_count",
+      "D",
+      "loop_eta_power",
+      "field_normalized_power",
+      "delta2_lower",
+      "delta4_lower",
+      "delta4_witness",
+      "minimum_endpoint_congruence_margin",
+      "whitened_matrix_error_bound",
+      "additional_normalized_perturbation_power",
+      "finite_g_power",
+      "hermitian_margin_in_dyadic_metric",
+      "log10_finite_g_hermitian_margin_normalized",
+      "seconds",
+      "inertia_changes",
+      "carrier_diagonal",
+      "alphabet",
+      "data_sites",
+      "cell_length"
+    ]
+  },
+  {
+    "file": "../work_C84/run_certificate.py",
+    "lines": 20
+  },
+  {
+    "file": "../work_C84/selector_certificate.json",
+    "lines": 36,
+    "keys_or_length": [
+      "selector_density_gap_lower",
+      "selected_density_upper",
+      "mu_sel",
+      "vacuum_gap_lower",
+      "rational_acceptance",
+      "small_checks"
+    ]
+  },
+  {
+    "file": "../work_C84/selector_checks.py",
+    "lines": 71
+  },
+  {
+    "file": "../work_C84/small_checks.json",
+    "lines": 180,
+    "keys_or_length": [
+      "bond",
+      "projection",
+      "conversion",
+      "finite_penalty",
+      "ed",
+      "seconds"
+    ]
+  },
+  {
+    "file": "../work_C84/structured.py",
+    "lines": 108
+  },
+  {
+    "file": "../work_C86/ALPHABET.md",
+    "lines": 48
+  },
+  {
+    "file": "../work_C86/PROGRESS.md",
+    "lines": 52
+  },
+  {
+    "file": "../work_C86/PROOF.md",
+    "lines": 536
+  },
+  {
+    "file": "../work_C86/RESULT.md",
+    "lines": 82
+  },
+  {
+    "file": "../work_C86/STATE.md",
+    "lines": 52
+  },
+  {
+    "file": "../work_C86/certify_obstructions.py",
+    "lines": 159
+  },
+  {
+    "file": "../work_C86/consistency_checks.json",
+    "lines": 34,
+    "keys_or_length": [
+      "status",
+      "reflection",
+      "equal_source_symmetry_relative_residual",
+      "note"
+    ]
+  },
+  {
+    "file": "../work_C86/consistency_checks.py",
+    "lines": 67
+  },
+  {
+    "file": "../work_C86/exploration.json",
+    "lines": 1930,
+    "keys_or_length": [
+      "single_rail",
+      "reflection",
+      "two_site_sources"
+    ]
+  },
+  {
+    "file": "../work_C86/explore.py",
+    "lines": 92
+  },
+  {
+    "file": "../work_C86/independent_checks.json",
+    "lines": 72,
+    "keys_or_length": 4
+  },
+  {
+    "file": "../work_C86/independent_checks.py",
+    "lines": 61
+  },
+  {
+    "file": "../work_C86/obstruction_certificate.json",
+    "lines": 5625,
+    "keys_or_length": [
+      "status",
+      "two_vertex_formula_checks",
+      "single_rail_certificates",
+      "two_site_source_certificates"
+    ],
+    "negative_determinants_checked": 118
+  },
+  {
+    "file": "../work_C86/rejected_checks.json",
+    "lines": 8,
+    "keys_or_length": [
+      "status",
+      "test",
+      "failure",
+      "reason",
+      "repair",
+      "scope"
+    ]
+  }
+]

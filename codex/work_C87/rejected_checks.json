@@ -1,0 +1,8 @@
+{
+  "status": "rejected_checker_repaired",
+  "test": "first exact 36-dimensional product resolvent inverse",
+  "failure": "RuntimeWarning: overflow encountered in scalar multiply; inverse identity AssertionError",
+  "cause": "Fraction constructed directly from numpy.int64 retained fixed-width arithmetic",
+  "repair": "convert every inverse input to Python int before Fraction, and use Python object integers in the identity product",
+  "scope": "No conclusion uses the failed inverse. Rerun requires the exact inverse identity to pass."
+}
