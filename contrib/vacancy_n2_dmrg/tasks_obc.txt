@@ -1,0 +1,14 @@
+python3 -B run_obc.py lv2_L40 --model lv --L 40 --M 24 --N 8 6 --chis 64 128 256 384 512 768 1024
+python3 -B run_obc.py lv2_L60 --model lv --L 60 --M 36 --N 12 9 --chis 64 128 256 384 512 768 1024
+python3 -B run_obc.py lv2_L80 --model lv --L 80 --M 48 --N 16 12 --chis 64 128 256 384 512 768 1024
+python3 -B run_obc.py lv2_L100 --model lv --L 100 --M 60 --N 20 15 --chis 64 128 256 384 512 768 1024
+python3 -B run_obc.py lv2_L120 --model lv --L 120 --M 72 --N 24 18 --chis 64 128 256 384 512 768 1024
+python3 -B run_obc.py lv2_L160 --model lv --L 160 --M 96 --N 32 24 --chis 64 128 256 384 512 768 1024
+python3 -B run_obc.py lv2_L200 --model lv --L 200 --M 120 --N 40 30 --chis 64 128 256 384 512 768 1024
+python3 -B run_obc.py ctrl_L45 --model lv --vz 0 3 --L 45 --M 27 --N 9 14 --chis 64 128 256 384 512 768 1024
+python3 -B run_obc.py ctrl_L75 --model lv --vz 0 3 --L 75 --M 45 --N 15 23 --chis 64 128 256 384 512 768 1024
+python3 -B run_obc.py ctrl_L105 --model lv --vz 0 3 --L 105 --M 63 --N 21 32 --chis 64 128 256 384 512 768 1024
+python3 -B run_obc.py ctrl_L135 --model lv --vz 0 3 --L 135 --M 81 --N 27 41 --chis 64 128 256 384 512 768 1024
+python3 -B run_obc.py ctrl_L165 --model lv --vz 0 3 --L 165 --M 99 --N 33 50 --chis 64 128 256 384 512 768 1024
+python3 -B run_obc.py ctrl_L195 --model lv --vz 0 3 --L 195 --M 117 --N 39 59 --chis 64 128 256 384 512 768 1024
+python3 -B run_obc.py kxx_L80 --model kxx --L 80 --M 48 --N 16 12 --chis 64 128 256 384 512 768

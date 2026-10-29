@@ -1,0 +1,4 @@
+python3 -B fes2.py fes_lv2 --model lv --taus 1 0.5 --eps 0.313 0.3 --J 0.5 --mu_v 0.3 --chis 16 24 32 48 64 96 128 160 192 256 320 384 512
+python3 -B fes2.py fes_ctrl --model lv --taus 1 0.5 --eps 0.313 0 --vz 0 3 --J 0.5 --mu_v 0.3 --chis 16 24 32 48 64 96 128 160 192 256 320 384 512
+python3 -B fes2.py fes_ref3 --model kxx --vels 1 0.40 0.19 --fills 0.61 0.275 0.244 --chis 16 24 32 48 64 96 128 160 192 256 320 384 512
+python3 -B fes2.py fes_ref2 --model kxx --vels 1 0.40 --fills 0.61 0.275 --chis 16 24 32 48 64 96 128 160 192 256 320 384 512
