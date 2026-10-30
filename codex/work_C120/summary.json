@@ -1,0 +1,243 @@
+{
+  "seconds": 10.350206136703491,
+  "ed_rows": 27,
+  "max_identity_error": 1.9184653865522705e-13,
+  "trotter_rows": 24,
+  "xx_large_rows": 35,
+  "models": {
+    "XX": {
+      "beta16": {
+        "beta": 16.0,
+        "R": 3.3703821501630102,
+        "relative_forward": 7.490176201880082,
+        "relative_reverse": 7.9345775914255015,
+        "seam_forward": -4.119794051717111,
+        "seam_reverse": 11.304959741588492,
+        "root_fidelity": 0.770163394247788,
+        "trace_distance": 0.6275950897612419,
+        "fidelity_divergence": 0.5223051726478173,
+        "support_D0": 0.0,
+        "cap_one_cut": 1.3862943611198906,
+        "cap_four_sites": 2.772588722239781,
+        "fidelity_mixed_term": 2.848076977515193,
+        "logZ_ratio_identity_error": 3.907985046680551e-14,
+        "renyi": [
+          {
+            "alpha": 0.05,
+            "Petz": 0.28448445988198456,
+            "Petz_reverse": 0.2607473473412177,
+            "mixed_term": 3.0858976902810222,
+            "identity_error": 3.552713678800501e-15,
+            "forward_replacement_slack": -7.2056917419981374,
+            "reverse_bound_slack": 7.6738302440842645
+          },
+          {
+            "alpha": 0.1,
+            "Petz": 0.43049403440523604,
+            "Petz_reverse": 0.40162490089001535,
+            "mixed_term": 2.93988811575778,
+            "identity_error": 5.773159728050814e-15,
+            "forward_replacement_slack": -7.059682167474886,
+            "reverse_bound_slack": 7.532952690535467
+          },
+          {
+            "alpha": 0.25,
+            "Petz": 0.6357615774826134,
+            "Petz_reverse": 0.6284615441320548,
+            "mixed_term": 2.7346205726803987,
+            "identity_error": 1.7763568394002505e-15,
+            "forward_replacement_slack": -6.854414624397508,
+            "reverse_bound_slack": 7.306116047293427
+          },
+          {
+            "alpha": 0.5,
+            "Petz": 0.9864284260072949,
+            "Petz_reverse": 0.9864284260072949,
+            "mixed_term": 2.3839537241557167,
+            "identity_error": 1.3322676295501878e-15,
+            "forward_replacement_slack": -6.503747775872826,
+            "reverse_bound_slack": 6.948149165418187
+          },
+          {
+            "alpha": 0.75,
+            "Petz": 1.8853846323961645,
+            "Petz_reverse": 1.9072847324478404,
+            "mixed_term": 1.4849975177668284,
+            "identity_error": 1.7319479184152442e-14,
+            "forward_replacement_slack": -5.604791569483957,
+            "reverse_bound_slack": 6.027292858977642
+          },
+          {
+            "alpha": 0.9,
+            "Petz": 3.6146241080101387,
+            "Petz_reverse": 3.8744463096471247,
+            "mixed_term": -0.24424195784718,
+            "identity_error": 5.1514348342607263e-14,
+            "forward_replacement_slack": -3.875552093869983,
+            "reverse_bound_slack": 4.060131281778357
+          }
+        ]
+      },
+      "ground_conditional_min": [
+        -0.6931471805599452,
+        -0.6931471805599464
+      ]
+    },
+    "Heisenberg": {
+      "beta16": {
+        "beta": 16.0,
+        "R": 5.581805924342298,
+        "relative_forward": 14.140437279517393,
+        "relative_reverse": 10.418191374813013,
+        "seam_forward": -8.55863135517513,
+        "seam_reverse": 15.99999729915531,
+        "root_fidelity": 0.7991444474818737,
+        "trace_distance": 0.6009240567168499,
+        "fidelity_divergence": 0.4484271284431038,
+        "support_D0": 0.0,
+        "cap_one_cut": 1.3862943611198906,
+        "cap_four_sites": 2.772588722239781,
+        "fidelity_mixed_term": 5.133378795899194,
+        "logZ_ratio_identity_error": 3.552713678800501e-14,
+        "renyi": [
+          {
+            "alpha": 0.05,
+            "Petz": 0.3215211602179508,
+            "Petz_reverse": 0.3818342138359605,
+            "mixed_term": 5.260284764124343,
+            "identity_error": 4.440892098500626e-15,
+            "forward_replacement_slack": -13.818916119299477,
+            "reverse_bound_slack": 10.036357160977053
+          },
+          {
+            "alpha": 0.1,
+            "Petz": 0.4410518774413877,
+            "Petz_reverse": 0.4800963903745762,
+            "mixed_term": 5.140754046900919,
+            "identity_error": 8.881784197001252e-15,
+            "forward_replacement_slack": -13.699385402076041,
+            "reverse_bound_slack": 9.938094984438436
+          },
+          {
+            "alpha": 0.25,
+            "Petz": 0.5918039391294788,
+            "Petz_reverse": 0.5973831501357687,
+            "mixed_term": 4.990001985212824,
+            "identity_error": 4.440892098500626e-15,
+            "forward_replacement_slack": -13.54863334038795,
+            "reverse_bound_slack": 9.820808224677243
+          },
+          {
+            "alpha": 0.5,
+            "Petz": 0.8960063305926202,
+            "Petz_reverse": 0.8960063305926202,
+            "mixed_term": 4.685799593749678,
+            "identity_error": 0.0,
+            "forward_replacement_slack": -13.244430948924808,
+            "reverse_bound_slack": 9.522185044220393
+          },
+          {
+            "alpha": 0.75,
+            "Petz": 1.792149450407306,
+            "Petz_reverse": 1.7754118173884363,
+            "mixed_term": 3.789656473934997,
+            "identity_error": 5.329070518200751e-15,
+            "forward_replacement_slack": -12.348287829110122,
+            "reverse_bound_slack": 8.642779557424577
+          },
+          {
+            "alpha": 0.9,
+            "Petz": 4.320867513371187,
+            "Petz_reverse": 3.96946689697249,
+            "mixed_term": 1.2609384109710933,
+            "identity_error": 1.7763568394002505e-14,
+            "forward_replacement_slack": -9.819569766146241,
+            "reverse_bound_slack": 6.448724477840523
+          }
+        ]
+      },
+      "ground_conditional_min": [
+        -0.6931471805599457,
+        -0.6931471805599452
+      ]
+    },
+    "SU3": {
+      "beta16": {
+        "beta": 16.0,
+        "R": 22.311179589638627,
+        "relative_forward": 44.18692445180544,
+        "relative_reverse": 20.355487077027917,
+        "seam_forward": -21.8757448621668,
+        "seam_reverse": 42.66666666666667,
+        "root_fidelity": 0.7346560661431779,
+        "trace_distance": 0.6784397272672607,
+        "fidelity_divergence": 0.6167056530125069,
+        "support_D0": 0.0,
+        "cap_one_cut": 2.1972245773362196,
+        "cap_four_sites": 4.394449154672439,
+        "fidelity_mixed_term": 21.69447393662612,
+        "logZ_ratio_identity_error": 1.4210854715202004e-14,
+        "renyi": [
+          {
+            "alpha": 0.05,
+            "Petz": 0.5464358423481556,
+            "Petz_reverse": 0.641801812472573,
+            "mixed_term": 21.764743747290478,
+            "identity_error": 7.105427357601002e-15,
+            "forward_replacement_slack": -43.64048860945727,
+            "reverse_bound_slack": 19.713685264555473
+          },
+          {
+            "alpha": 0.1,
+            "Petz": 0.6711634125406563,
+            "Petz_reverse": 0.6851643268173011,
+            "mixed_term": 21.640016177097973,
+            "identity_error": 3.552713678800501e-15,
+            "forward_replacement_slack": -43.515761039264774,
+            "reverse_bound_slack": 19.670322750210744
+          },
+          {
+            "alpha": 0.25,
+            "Petz": 0.8222415214897767,
+            "Petz_reverse": 0.8222742029881426,
+            "mixed_term": 21.488938068148855,
+            "identity_error": 3.552713678800501e-15,
+            "forward_replacement_slack": -43.36468293031565,
+            "reverse_bound_slack": 19.533212874039904
+          },
+          {
+            "alpha": 0.5,
+            "Petz": 1.2334113016285428,
+            "Petz_reverse": 1.2334113016285428,
+            "mixed_term": 21.077768288010077,
+            "identity_error": 7.105427357601002e-15,
+            "forward_replacement_slack": -42.95351315017689,
+            "reverse_bound_slack": 19.1220757753995
+          },
+          {
+            "alpha": 0.75,
+            "Petz": 2.466822608964428,
+            "Petz_reverse": 2.46672456446933,
+            "mixed_term": 19.844356980674206,
+            "identity_error": 7.105427357601002e-15,
+            "forward_replacement_slack": -41.720101842841004,
+            "reverse_bound_slack": 17.888762512558714
+          },
+          {
+            "alpha": 0.9,
+            "Petz": 6.166478941355711,
+            "Petz_reverse": 6.040470712865907,
+            "mixed_term": 16.14470064828311,
+            "identity_error": 1.9184653865522705e-13,
+            "forward_replacement_slack": -38.02044551044972,
+            "reverse_bound_slack": 14.31501636416214
+          }
+        ]
+      },
+      "ground_conditional_min": [
+        -1.0986122886681096,
+        -1.0986122886681091
+      ]
+    }
+  }
+}

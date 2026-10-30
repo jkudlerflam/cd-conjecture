@@ -1,0 +1,13 @@
+Proved a uniform bound for XX, independent XX stacks, and C106, on even rings:
+\[
+R_L(\beta)\le 3\log d+\frac{10\pi}{3}M\frac{\beta}{L}.
+\]
+It remains valid through the slow-sector, avoided-crossing, and massive crossovers.
+
+The exact traces and subleading corrections are in [PROOF.md](<./PROOF.md>). Two qualifications matter: slow sectors need not be negligible at \(\beta\sim L/v\), and light primary towers can enlarge \(R\) without adding fast sectors.
+
+No interacting fixed-\(d,M\) counterexample or general impossibility proof was obtained. The conjectural interacting slope estimate and the sufficient Euclidean seam lemma are stated explicitly.
+
+[RESULT.md](<./RESULT.md>) summarizes the findings. Small checks pass, including C106 trace agreement to \(5\times10^{-14}\). The extended scan is SLURM-ready but unsubmitted.
+
+[gpt_solve: backend=codex model=gpt-6-astra effort=high transcript=20261029T194243-2492]

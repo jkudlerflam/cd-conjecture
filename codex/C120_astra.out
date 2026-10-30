@@ -1,0 +1,14 @@
+C120 is complete. The universal ratio bound remains unproved, and I found no counterexample to it.
+
+The main findings are:
+
+- Max-relative entropy and Rényi divergences below one have no dimension-only ceiling.
+- Conditional min-entropy gives an exact identity, but its remaining normalization term retains the entire doubling-energy slope.
+- Even strictly positive completely positive maps can violate the proposed trace Cauchy–Schwarz bound.
+- Controlling transfer-matrix signs still leaves the growing time-history dimension.
+
+The ED identities passed with residuals below \(2\times10^{-13}\). Checks include XX/Heisenberg through length 8, SU(3) through length 6, full XX thermal traces through length 16384, and ground-state overlap determinants through length 1024.
+
+Written up in [RESULT.md](RESULT.md), with full derivations in [PROOF.md](PROOF.md) and numerical scope and failed candidates in [CHECKS.md](CHECKS.md). PROGRESS.md and local STATE.md are updated.
+
+[gpt_solve: backend=codex model=gpt-6-astra effort=high transcript=20261029T195913-7069]
