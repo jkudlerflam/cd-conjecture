@@ -1,0 +1,30 @@
+I proved the coarse pinching estimate, but the proposed spatial positivity step fails.
+
+[Proved] For the positive imaginary-time measurement channel defined in [PROOF.md](PROOF.md), \(N\) seam pinchings satisfy
+\[
+d^{-N}Z_L\le Q_L\le Z_L.
+\]
+This holds at arbitrary spacing. Choosing \(N=\max(1,\lceil\beta M/(aL)\rceil)\) gives the required \(O(1)\) cost per insertion without a gap or recovery assumption.
+
+[Proved] Cauchy–Schwarz over the positive recorded histories gives
+\[
+R_L\le 3N\log d+G,\qquad
+G=\log\frac{\sum_{\mathbf s}q_{L,\mathbf s}^{\,2}}{Q_D},
+\]
+where \(Q_D\) pinches both seams of the reconnected ring.
+
+[Numerical and analytic counterexamples] The proposed positivity step \(G\le0\) fails, including for stoquastic XX. At one insertion with \(\tau=L/M\), the measured values are \(0.762551\), \(1.888216\), and \(2.292663\) for XX, Heisenberg, and SU(3). Coarse labels leave unobserved quantum propagation between measurements. Continuous pinching removes it, but costs order \(\beta M\) on XX.
+
+[Open] The precise remaining lemma is
+\[
+G\le b_0(d)+b_1(d)N.
+\]
+It would imply
+\[
+A\le \frac{4M}{\pi a}\bigl[3\log d+b_1(d)\bigr].
+\]
+This remains comparable in strength to the original target, since \(R_L-3N\log d\le G\le R_L+2N\log d\).
+
+The checks include full small-ring ED and an exact one-pinch XX formula through \(L=8192\), calibrated against ED to \(3.22\times10^{-15}\). The general bound remains open. Results, derivations, and numerical limitations are in [RESULT.md](RESULT.md), [PROOF.md](PROOF.md), and [CHECKS.md](CHECKS.md).
+
+[gpt_solve: backend=codex model=gpt-6-astra effort=high transcript=20261029T201855-11839]
