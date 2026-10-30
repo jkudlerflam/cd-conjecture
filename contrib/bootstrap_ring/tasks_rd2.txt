@@ -1,0 +1,13 @@
+timeout 20h python3 ring_boot.py --model random_real_d2 --L 8 --k 4 --s 2 --mloc 2 --out out/random_real_d2_L8_k4_s2_k4.json
+timeout 20h python3 ring_boot.py --model random_real_d2 --L 10 --k 4 --s 2 --mloc 2 --out out/random_real_d2_L10_k4_s2_k4.json
+timeout 20h python3 ring_boot.py --model random_real_d2 --L 12 --k 4 --s 2 --mloc 2 --out out/random_real_d2_L12_k4_s2_k4.json
+timeout 20h python3 ring_boot.py --model random_real_d2 --L 14 --k 4 --s 2 --mloc 2 --out out/random_real_d2_L14_k4_s2_k4.json
+timeout 20h python3 ring_boot.py --model random_real_d2 --L 16 --k 4 --s 2 --mloc 2 --out out/random_real_d2_L16_k4_s2_k4.json
+timeout 20h python3 ring_boot.py --model random_real_d2 --L 18 --k 4 --s 2 --mloc 2 --out out/random_real_d2_L18_k4_s2_k4.json
+timeout 20h python3 ring_boot.py --model random_real_d2 --L 20 --k 4 --s 2 --mloc 2 --out out/random_real_d2_L20_k4_s2_k4.json
+timeout 20h python3 ring_boot.py --model random_real_d2 --L 24 --k 4 --s 2 --mloc 2 --out out/random_real_d2_L24_k4_s2_k4.json
+timeout 20h python3 ring_boot.py --model random_real_d2 --L 8 --k 6 --s 1 --out out/random_real_d2_L8_k6_s1.json
+timeout 20h python3 ring_boot.py --model random_real_d2 --L 12 --k 6 --s 1 --out out/random_real_d2_L12_k6_s1.json
+timeout 20h python3 ring_boot.py --model random_real_d2 --L 16 --k 6 --s 1 --out out/random_real_d2_L16_k6_s1.json
+timeout 20h python3 ring_boot.py --model random_real_d2 --L 20 --k 6 --s 1 --out out/random_real_d2_L20_k6_s1.json
+timeout 20h python3 ring_boot.py --model random_real_d2 --L 24 --k 6 --s 1 --out out/random_real_d2_L24_k6_s1.json

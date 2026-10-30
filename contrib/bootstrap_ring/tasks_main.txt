@@ -1,0 +1,340 @@
+timeout 20h python3 ed.py --mode energies --model SU3_swap --Ls 6,9,12,15 --out out/main/ed_SU3_swap.json
+timeout 20h python3 ed.py --mode energies --model random_real_d3 --Ls 5,6,7,8,9,10,11,12,13 --out out/main/ed_random_real_d3.json
+timeout 20h python3 ring_boot.py --model Heisenberg --L 48 --k 6 --s 1  --out out/main/Heisenberg_L48_k6_s1.json
+timeout 20h python3 ring_boot.py --model XXZ_half --L 48 --k 6 --s 1  --out out/main/XXZ_half_L48_k6_s1.json
+timeout 20h python3 ring_boot.py --model random_real_d2 --L 48 --k 6 --s 1  --out out/main/random_real_d2_L48_k6_s1.json
+timeout 20h python3 ring_boot.py --model Heisenberg --L 46 --k 6 --s 1  --out out/main/Heisenberg_L46_k6_s1.json
+timeout 20h python3 ring_boot.py --model XXZ_half --L 46 --k 6 --s 1  --out out/main/XXZ_half_L46_k6_s1.json
+timeout 20h python3 ring_boot.py --model random_real_d2 --L 46 --k 6 --s 1  --out out/main/random_real_d2_L46_k6_s1.json
+timeout 20h python3 ring_boot.py --model SU3_swap --L 39 --k 4 --s 1 --mloc 2 --out out/main/SU3_swap_L39_k4_s1.json
+timeout 20h python3 ring_boot.py --model Heisenberg --L 44 --k 6 --s 1  --out out/main/Heisenberg_L44_k6_s1.json
+timeout 20h python3 ring_boot.py --model XXZ_half --L 44 --k 6 --s 1  --out out/main/XXZ_half_L44_k6_s1.json
+timeout 20h python3 ring_boot.py --model random_real_d2 --L 44 --k 6 --s 1  --out out/main/random_real_d2_L44_k6_s1.json
+timeout 20h python3 ring_boot.py --model Heisenberg --L 42 --k 6 --s 1  --out out/main/Heisenberg_L42_k6_s1.json
+timeout 20h python3 ring_boot.py --model XXZ_half --L 42 --k 6 --s 1  --out out/main/XXZ_half_L42_k6_s1.json
+timeout 20h python3 ring_boot.py --model random_real_d2 --L 42 --k 6 --s 1  --out out/main/random_real_d2_L42_k6_s1.json
+timeout 20h python3 ring_boot.py --model SU3_swap --L 36 --k 4 --s 1 --mloc 2 --out out/main/SU3_swap_L36_k4_s1.json
+timeout 20h python3 ring_boot.py --model Heisenberg --L 48 --k 5 --s 1  --out out/main/Heisenberg_L48_k5_s1.json
+timeout 20h python3 ring_boot.py --model Heisenberg --L 40 --k 6 --s 1  --out out/main/Heisenberg_L40_k6_s1.json
+timeout 20h python3 ring_boot.py --model Heisenberg --L 40 --k 6 --s 2  --out out/main/Heisenberg_L40_k6_s2.json
+timeout 20h python3 ring_boot.py --model XXZ_half --L 48 --k 5 --s 1  --out out/main/XXZ_half_L48_k5_s1.json
+timeout 20h python3 ring_boot.py --model XXZ_half --L 40 --k 6 --s 1  --out out/main/XXZ_half_L40_k6_s1.json
+timeout 20h python3 ring_boot.py --model XXZ_half --L 40 --k 6 --s 2  --out out/main/XXZ_half_L40_k6_s2.json
+timeout 20h python3 ring_boot.py --model random_real_d2 --L 48 --k 5 --s 1  --out out/main/random_real_d2_L48_k5_s1.json
+timeout 20h python3 ring_boot.py --model random_real_d2 --L 40 --k 6 --s 1  --out out/main/random_real_d2_L40_k6_s1.json
+timeout 20h python3 ring_boot.py --model random_real_d2 --L 40 --k 6 --s 2  --out out/main/random_real_d2_L40_k6_s2.json
+timeout 20h python3 ring_boot.py --model SU3_swap --L 33 --k 4 --s 1 --mloc 2 --out out/main/SU3_swap_L33_k4_s1.json
+timeout 20h python3 ring_boot.py --model Heisenberg --L 46 --k 5 --s 1  --out out/main/Heisenberg_L46_k5_s1.json
+timeout 20h python3 ring_boot.py --model XXZ_half --L 46 --k 5 --s 1  --out out/main/XXZ_half_L46_k5_s1.json
+timeout 20h python3 ring_boot.py --model random_real_d2 --L 46 --k 5 --s 1  --out out/main/random_real_d2_L46_k5_s1.json
+timeout 20h python3 ring_boot.py --model Heisenberg --L 38 --k 6 --s 1  --out out/main/Heisenberg_L38_k6_s1.json
+timeout 20h python3 ring_boot.py --model Heisenberg --L 38 --k 6 --s 2  --out out/main/Heisenberg_L38_k6_s2.json
+timeout 20h python3 ring_boot.py --model XXZ_half --L 38 --k 6 --s 1  --out out/main/XXZ_half_L38_k6_s1.json
+timeout 20h python3 ring_boot.py --model XXZ_half --L 38 --k 6 --s 2  --out out/main/XXZ_half_L38_k6_s2.json
+timeout 20h python3 ring_boot.py --model random_real_d2 --L 38 --k 6 --s 1  --out out/main/random_real_d2_L38_k6_s1.json
+timeout 20h python3 ring_boot.py --model random_real_d2 --L 38 --k 6 --s 2  --out out/main/random_real_d2_L38_k6_s2.json
+timeout 20h python3 ring_boot.py --model Heisenberg --L 44 --k 5 --s 1  --out out/main/Heisenberg_L44_k5_s1.json
+timeout 20h python3 ring_boot.py --model XXZ_half --L 44 --k 5 --s 1  --out out/main/XXZ_half_L44_k5_s1.json
+timeout 20h python3 ring_boot.py --model random_real_d2 --L 44 --k 5 --s 1  --out out/main/random_real_d2_L44_k5_s1.json
+timeout 20h python3 ed.py --mode energies --model Heisenberg --Ls 6,8,10,12,14,16,18,20,22,24 --out out/main/ed_Heisenberg.json
+timeout 20h python3 ed.py --mode energies --model XXZ_half --Ls 6,8,10,12,14,16,18,20,22,24 --out out/main/ed_XXZ_half.json
+timeout 20h python3 ed.py --mode energies --model random_real_d2 --Ls 6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22 --out out/main/ed_random_real_d2.json
+timeout 20h python3 ring_boot.py --model Heisenberg --L 36 --k 6 --s 1  --out out/main/Heisenberg_L36_k6_s1.json
+timeout 20h python3 ring_boot.py --model Heisenberg --L 36 --k 6 --s 2  --out out/main/Heisenberg_L36_k6_s2.json
+timeout 20h python3 ring_boot.py --model XXZ_half --L 36 --k 6 --s 1  --out out/main/XXZ_half_L36_k6_s1.json
+timeout 20h python3 ring_boot.py --model XXZ_half --L 36 --k 6 --s 2  --out out/main/XXZ_half_L36_k6_s2.json
+timeout 20h python3 ring_boot.py --model random_real_d2 --L 36 --k 6 --s 1  --out out/main/random_real_d2_L36_k6_s1.json
+timeout 20h python3 ring_boot.py --model random_real_d2 --L 36 --k 6 --s 2  --out out/main/random_real_d2_L36_k6_s2.json
+timeout 20h python3 ring_boot.py --model Heisenberg --L 42 --k 5 --s 1  --out out/main/Heisenberg_L42_k5_s1.json
+timeout 20h python3 ring_boot.py --model XXZ_half --L 42 --k 5 --s 1  --out out/main/XXZ_half_L42_k5_s1.json
+timeout 20h python3 ring_boot.py --model random_real_d2 --L 42 --k 5 --s 1  --out out/main/random_real_d2_L42_k5_s1.json
+timeout 20h python3 ring_boot.py --model SU3_swap --L 30 --k 4 --s 1 --mloc 2 --out out/main/SU3_swap_L30_k4_s1.json
+timeout 20h python3 ring_boot.py --model random_real_d3 --L 30 --k 4 --s 1 --mloc 2 --out out/main/random_real_d3_L30_k4_s1.json
+timeout 20h python3 ring_boot.py --model Heisenberg --L 34 --k 6 --s 1  --out out/main/Heisenberg_L34_k6_s1.json
+timeout 20h python3 ring_boot.py --model Heisenberg --L 34 --k 6 --s 2  --out out/main/Heisenberg_L34_k6_s2.json
+timeout 20h python3 ring_boot.py --model XXZ_half --L 34 --k 6 --s 1  --out out/main/XXZ_half_L34_k6_s1.json
+timeout 20h python3 ring_boot.py --model XXZ_half --L 34 --k 6 --s 2  --out out/main/XXZ_half_L34_k6_s2.json
+timeout 20h python3 ring_boot.py --model random_real_d2 --L 34 --k 6 --s 1  --out out/main/random_real_d2_L34_k6_s1.json
+timeout 20h python3 ring_boot.py --model random_real_d2 --L 34 --k 6 --s 2  --out out/main/random_real_d2_L34_k6_s2.json
+timeout 20h python3 ring_boot.py --model Heisenberg --L 40 --k 5 --s 1  --out out/main/Heisenberg_L40_k5_s1.json
+timeout 20h python3 ring_boot.py --model XXZ_half --L 40 --k 5 --s 1  --out out/main/XXZ_half_L40_k5_s1.json
+timeout 20h python3 ring_boot.py --model random_real_d2 --L 40 --k 5 --s 1  --out out/main/random_real_d2_L40_k5_s1.json
+timeout 20h python3 ring_boot.py --model random_real_d3 --L 28 --k 4 --s 1 --mloc 2 --out out/main/random_real_d3_L28_k4_s1.json
+timeout 20h python3 ring_boot.py --model Heisenberg --L 48 --k 4 --s 1  --out out/main/Heisenberg_L48_k4_s1.json
+timeout 20h python3 ring_boot.py --model Heisenberg --L 32 --k 6 --s 1  --out out/main/Heisenberg_L32_k6_s1.json
+timeout 20h python3 ring_boot.py --model Heisenberg --L 32 --k 6 --s 2  --out out/main/Heisenberg_L32_k6_s2.json
+timeout 20h python3 ring_boot.py --model Heisenberg --L 32 --k 6 --s 1 --momenta 0,1,2 --out out/main/Heisenberg_L32_k6_s1_low.json
+timeout 20h python3 ring_boot.py --model Heisenberg --L 32 --k 6 --s 1 --no-pair-psd --out out/main/Heisenberg_L32_k6_s1_nopair.json
+timeout 20h python3 ring_boot.py --model XXZ_half --L 48 --k 4 --s 1  --out out/main/XXZ_half_L48_k4_s1.json
+timeout 20h python3 ring_boot.py --model XXZ_half --L 32 --k 6 --s 1  --out out/main/XXZ_half_L32_k6_s1.json
+timeout 20h python3 ring_boot.py --model XXZ_half --L 32 --k 6 --s 2  --out out/main/XXZ_half_L32_k6_s2.json
+timeout 20h python3 ring_boot.py --model XXZ_half --L 32 --k 6 --s 1 --momenta 0,1,2 --out out/main/XXZ_half_L32_k6_s1_low.json
+timeout 20h python3 ring_boot.py --model XXZ_half --L 32 --k 6 --s 1 --no-pair-psd --out out/main/XXZ_half_L32_k6_s1_nopair.json
+timeout 20h python3 ring_boot.py --model random_real_d2 --L 48 --k 4 --s 1  --out out/main/random_real_d2_L48_k4_s1.json
+timeout 20h python3 ring_boot.py --model random_real_d2 --L 32 --k 6 --s 1  --out out/main/random_real_d2_L32_k6_s1.json
+timeout 20h python3 ring_boot.py --model random_real_d2 --L 32 --k 6 --s 2  --out out/main/random_real_d2_L32_k6_s2.json
+timeout 20h python3 ring_boot.py --model random_real_d2 --L 32 --k 6 --s 1 --momenta 0,1,2 --out out/main/random_real_d2_L32_k6_s1_low.json
+timeout 20h python3 ring_boot.py --model random_real_d2 --L 32 --k 6 --s 1 --no-pair-psd --out out/main/random_real_d2_L32_k6_s1_nopair.json
+timeout 20h python3 ring_boot.py --model Heisenberg --L 38 --k 5 --s 1  --out out/main/Heisenberg_L38_k5_s1.json
+timeout 20h python3 ring_boot.py --model XXZ_half --L 38 --k 5 --s 1  --out out/main/XXZ_half_L38_k5_s1.json
+timeout 20h python3 ring_boot.py --model random_real_d2 --L 38 --k 5 --s 1  --out out/main/random_real_d2_L38_k5_s1.json
+timeout 20h python3 ring_boot.py --model SU3_swap --L 27 --k 4 --s 1 --mloc 2 --out out/main/SU3_swap_L27_k4_s1.json
+timeout 20h python3 ring_boot.py --model Heisenberg --L 46 --k 4 --s 1  --out out/main/Heisenberg_L46_k4_s1.json
+timeout 20h python3 ring_boot.py --model XXZ_half --L 46 --k 4 --s 1  --out out/main/XXZ_half_L46_k4_s1.json
+timeout 20h python3 ring_boot.py --model random_real_d2 --L 46 --k 4 --s 1  --out out/main/random_real_d2_L46_k4_s1.json
+timeout 20h python3 ring_boot.py --model random_real_d3 --L 26 --k 4 --s 1 --mloc 2 --out out/main/random_real_d3_L26_k4_s1.json
+timeout 20h python3 ring_boot.py --model Heisenberg --L 36 --k 5 --s 1  --out out/main/Heisenberg_L36_k5_s1.json
+timeout 20h python3 ring_boot.py --model Heisenberg --L 30 --k 6 --s 1  --out out/main/Heisenberg_L30_k6_s1.json
+timeout 20h python3 ring_boot.py --model Heisenberg --L 30 --k 6 --s 2  --out out/main/Heisenberg_L30_k6_s2.json
+timeout 20h python3 ring_boot.py --model XXZ_half --L 36 --k 5 --s 1  --out out/main/XXZ_half_L36_k5_s1.json
+timeout 20h python3 ring_boot.py --model XXZ_half --L 30 --k 6 --s 1  --out out/main/XXZ_half_L30_k6_s1.json
+timeout 20h python3 ring_boot.py --model XXZ_half --L 30 --k 6 --s 2  --out out/main/XXZ_half_L30_k6_s2.json
+timeout 20h python3 ring_boot.py --model random_real_d2 --L 36 --k 5 --s 1  --out out/main/random_real_d2_L36_k5_s1.json
+timeout 20h python3 ring_boot.py --model random_real_d2 --L 30 --k 6 --s 1  --out out/main/random_real_d2_L30_k6_s1.json
+timeout 20h python3 ring_boot.py --model random_real_d2 --L 30 --k 6 --s 2  --out out/main/random_real_d2_L30_k6_s2.json
+timeout 20h python3 ring_boot.py --model Heisenberg --L 44 --k 4 --s 1  --out out/main/Heisenberg_L44_k4_s1.json
+timeout 20h python3 ring_boot.py --model XXZ_half --L 44 --k 4 --s 1  --out out/main/XXZ_half_L44_k4_s1.json
+timeout 20h python3 ring_boot.py --model random_real_d2 --L 44 --k 4 --s 1  --out out/main/random_real_d2_L44_k4_s1.json
+timeout 20h python3 ring_boot.py --model Heisenberg --L 34 --k 5 --s 1  --out out/main/Heisenberg_L34_k5_s1.json
+timeout 20h python3 ring_boot.py --model XXZ_half --L 34 --k 5 --s 1  --out out/main/XXZ_half_L34_k5_s1.json
+timeout 20h python3 ring_boot.py --model random_real_d2 --L 34 --k 5 --s 1  --out out/main/random_real_d2_L34_k5_s1.json
+timeout 20h python3 ring_boot.py --model Heisenberg --L 42 --k 4 --s 1  --out out/main/Heisenberg_L42_k4_s1.json
+timeout 20h python3 ring_boot.py --model Heisenberg --L 28 --k 6 --s 1  --out out/main/Heisenberg_L28_k6_s1.json
+timeout 20h python3 ring_boot.py --model Heisenberg --L 28 --k 6 --s 2  --out out/main/Heisenberg_L28_k6_s2.json
+timeout 20h python3 ring_boot.py --model XXZ_half --L 42 --k 4 --s 1  --out out/main/XXZ_half_L42_k4_s1.json
+timeout 20h python3 ring_boot.py --model XXZ_half --L 28 --k 6 --s 1  --out out/main/XXZ_half_L28_k6_s1.json
+timeout 20h python3 ring_boot.py --model XXZ_half --L 28 --k 6 --s 2  --out out/main/XXZ_half_L28_k6_s2.json
+timeout 20h python3 ring_boot.py --model random_real_d2 --L 42 --k 4 --s 1  --out out/main/random_real_d2_L42_k4_s1.json
+timeout 20h python3 ring_boot.py --model random_real_d2 --L 28 --k 6 --s 1  --out out/main/random_real_d2_L28_k6_s1.json
+timeout 20h python3 ring_boot.py --model random_real_d2 --L 28 --k 6 --s 2  --out out/main/random_real_d2_L28_k6_s2.json
+timeout 20h python3 ring_boot.py --model SU3_swap --L 24 --k 4 --s 1 --mloc 2 --out out/main/SU3_swap_L24_k4_s1.json
+timeout 20h python3 ring_boot.py --model random_real_d3 --L 24 --k 4 --s 1 --mloc 2 --out out/main/random_real_d3_L24_k4_s1.json
+timeout 20h python3 ring_boot.py --model Heisenberg --L 40 --k 4 --s 1  --out out/main/Heisenberg_L40_k4_s1.json
+timeout 20h python3 ring_boot.py --model Heisenberg --L 32 --k 5 --s 1  --out out/main/Heisenberg_L32_k5_s1.json
+timeout 20h python3 ring_boot.py --model XXZ_half --L 40 --k 4 --s 1  --out out/main/XXZ_half_L40_k4_s1.json
+timeout 20h python3 ring_boot.py --model XXZ_half --L 32 --k 5 --s 1  --out out/main/XXZ_half_L32_k5_s1.json
+timeout 20h python3 ring_boot.py --model random_real_d2 --L 40 --k 4 --s 1  --out out/main/random_real_d2_L40_k4_s1.json
+timeout 20h python3 ring_boot.py --model random_real_d2 --L 32 --k 5 --s 1  --out out/main/random_real_d2_L32_k5_s1.json
+timeout 20h python3 ring_boot.py --model Heisenberg --L 26 --k 6 --s 1  --out out/main/Heisenberg_L26_k6_s1.json
+timeout 20h python3 ring_boot.py --model Heisenberg --L 26 --k 6 --s 2  --out out/main/Heisenberg_L26_k6_s2.json
+timeout 20h python3 ring_boot.py --model XXZ_half --L 26 --k 6 --s 1  --out out/main/XXZ_half_L26_k6_s1.json
+timeout 20h python3 ring_boot.py --model XXZ_half --L 26 --k 6 --s 2  --out out/main/XXZ_half_L26_k6_s2.json
+timeout 20h python3 ring_boot.py --model random_real_d2 --L 26 --k 6 --s 1  --out out/main/random_real_d2_L26_k6_s1.json
+timeout 20h python3 ring_boot.py --model random_real_d2 --L 26 --k 6 --s 2  --out out/main/random_real_d2_L26_k6_s2.json
+timeout 20h python3 ring_boot.py --model random_real_d3 --L 22 --k 4 --s 1 --mloc 2 --out out/main/random_real_d3_L22_k4_s1.json
+timeout 20h python3 ring_boot.py --model Heisenberg --L 38 --k 4 --s 1  --out out/main/Heisenberg_L38_k4_s1.json
+timeout 20h python3 ring_boot.py --model XXZ_half --L 38 --k 4 --s 1  --out out/main/XXZ_half_L38_k4_s1.json
+timeout 20h python3 ring_boot.py --model random_real_d2 --L 38 --k 4 --s 1  --out out/main/random_real_d2_L38_k4_s1.json
+timeout 20h python3 ring_boot.py --model Heisenberg --L 30 --k 5 --s 1  --out out/main/Heisenberg_L30_k5_s1.json
+timeout 20h python3 ring_boot.py --model XXZ_half --L 30 --k 5 --s 1  --out out/main/XXZ_half_L30_k5_s1.json
+timeout 20h python3 ring_boot.py --model random_real_d2 --L 30 --k 5 --s 1  --out out/main/random_real_d2_L30_k5_s1.json
+timeout 20h python3 ring_boot.py --model SU3_swap --L 21 --k 4 --s 1 --mloc 2 --out out/main/SU3_swap_L21_k4_s1.json
+timeout 20h python3 ring_boot.py --model Heisenberg --L 36 --k 4 --s 1  --out out/main/Heisenberg_L36_k4_s1.json
+timeout 20h python3 ring_boot.py --model Heisenberg --L 24 --k 6 --s 1  --out out/main/Heisenberg_L24_k6_s1.json
+timeout 20h python3 ring_boot.py --model Heisenberg --L 24 --k 6 --s 2  --out out/main/Heisenberg_L24_k6_s2.json
+timeout 20h python3 ring_boot.py --model XXZ_half --L 36 --k 4 --s 1  --out out/main/XXZ_half_L36_k4_s1.json
+timeout 20h python3 ring_boot.py --model XXZ_half --L 24 --k 6 --s 1  --out out/main/XXZ_half_L24_k6_s1.json
+timeout 20h python3 ring_boot.py --model XXZ_half --L 24 --k 6 --s 2  --out out/main/XXZ_half_L24_k6_s2.json
+timeout 20h python3 ring_boot.py --model random_real_d2 --L 36 --k 4 --s 1  --out out/main/random_real_d2_L36_k4_s1.json
+timeout 20h python3 ring_boot.py --model random_real_d2 --L 24 --k 6 --s 1  --out out/main/random_real_d2_L24_k6_s1.json
+timeout 20h python3 ring_boot.py --model random_real_d2 --L 24 --k 6 --s 2  --out out/main/random_real_d2_L24_k6_s2.json
+timeout 20h python3 ring_boot.py --model Heisenberg --L 28 --k 5 --s 1  --out out/main/Heisenberg_L28_k5_s1.json
+timeout 20h python3 ring_boot.py --model XXZ_half --L 28 --k 5 --s 1  --out out/main/XXZ_half_L28_k5_s1.json
+timeout 20h python3 ring_boot.py --model random_real_d2 --L 28 --k 5 --s 1  --out out/main/random_real_d2_L28_k5_s1.json
+timeout 20h python3 ring_boot.py --model random_real_d3 --L 20 --k 4 --s 1 --mloc 2 --out out/main/random_real_d3_L20_k4_s1.json
+timeout 20h python3 ring_boot.py --model Heisenberg --L 34 --k 4 --s 1  --out out/main/Heisenberg_L34_k4_s1.json
+timeout 20h python3 ring_boot.py --model XXZ_half --L 34 --k 4 --s 1  --out out/main/XXZ_half_L34_k4_s1.json
+timeout 20h python3 ring_boot.py --model random_real_d2 --L 34 --k 4 --s 1  --out out/main/random_real_d2_L34_k4_s1.json
+timeout 20h python3 ring_boot.py --model Heisenberg --L 22 --k 6 --s 1  --out out/main/Heisenberg_L22_k6_s1.json
+timeout 20h python3 ring_boot.py --model Heisenberg --L 22 --k 6 --s 2  --out out/main/Heisenberg_L22_k6_s2.json
+timeout 20h python3 ring_boot.py --model XXZ_half --L 22 --k 6 --s 1  --out out/main/XXZ_half_L22_k6_s1.json
+timeout 20h python3 ring_boot.py --model XXZ_half --L 22 --k 6 --s 2  --out out/main/XXZ_half_L22_k6_s2.json
+timeout 20h python3 ring_boot.py --model random_real_d2 --L 22 --k 6 --s 1  --out out/main/random_real_d2_L22_k6_s1.json
+timeout 20h python3 ring_boot.py --model random_real_d2 --L 22 --k 6 --s 2  --out out/main/random_real_d2_L22_k6_s2.json
+timeout 20h python3 ring_boot.py --model Heisenberg --L 26 --k 5 --s 1  --out out/main/Heisenberg_L26_k5_s1.json
+timeout 20h python3 ring_boot.py --model XXZ_half --L 26 --k 5 --s 1  --out out/main/XXZ_half_L26_k5_s1.json
+timeout 20h python3 ring_boot.py --model random_real_d2 --L 26 --k 5 --s 1  --out out/main/random_real_d2_L26_k5_s1.json
+timeout 20h python3 ring_boot.py --model Heisenberg --L 32 --k 4 --s 1  --out out/main/Heisenberg_L32_k4_s1.json
+timeout 20h python3 ring_boot.py --model XXZ_half --L 32 --k 4 --s 1  --out out/main/XXZ_half_L32_k4_s1.json
+timeout 20h python3 ring_boot.py --model random_real_d2 --L 32 --k 4 --s 1  --out out/main/random_real_d2_L32_k4_s1.json
+timeout 20h python3 ring_boot.py --model SU3_swap --L 18 --k 4 --s 1 --mloc 2 --out out/main/SU3_swap_L18_k4_s1.json
+timeout 20h python3 ring_boot.py --model random_real_d3 --L 18 --k 4 --s 1 --mloc 2 --out out/main/random_real_d3_L18_k4_s1.json
+timeout 20h python3 ring_boot.py --model Heisenberg --L 30 --k 4 --s 1  --out out/main/Heisenberg_L30_k4_s1.json
+timeout 20h python3 ring_boot.py --model Heisenberg --L 24 --k 5 --s 1  --out out/main/Heisenberg_L24_k5_s1.json
+timeout 20h python3 ring_boot.py --model Heisenberg --L 20 --k 6 --s 1  --out out/main/Heisenberg_L20_k6_s1.json
+timeout 20h python3 ring_boot.py --model Heisenberg --L 20 --k 6 --s 2  --out out/main/Heisenberg_L20_k6_s2.json
+timeout 20h python3 ring_boot.py --model XXZ_half --L 30 --k 4 --s 1  --out out/main/XXZ_half_L30_k4_s1.json
+timeout 20h python3 ring_boot.py --model XXZ_half --L 24 --k 5 --s 1  --out out/main/XXZ_half_L24_k5_s1.json
+timeout 20h python3 ring_boot.py --model XXZ_half --L 20 --k 6 --s 1  --out out/main/XXZ_half_L20_k6_s1.json
+timeout 20h python3 ring_boot.py --model XXZ_half --L 20 --k 6 --s 2  --out out/main/XXZ_half_L20_k6_s2.json
+timeout 20h python3 ring_boot.py --model random_real_d2 --L 30 --k 4 --s 1  --out out/main/random_real_d2_L30_k4_s1.json
+timeout 20h python3 ring_boot.py --model random_real_d2 --L 24 --k 5 --s 1  --out out/main/random_real_d2_L24_k5_s1.json
+timeout 20h python3 ring_boot.py --model random_real_d2 --L 20 --k 6 --s 1  --out out/main/random_real_d2_L20_k6_s1.json
+timeout 20h python3 ring_boot.py --model random_real_d2 --L 20 --k 6 --s 2  --out out/main/random_real_d2_L20_k6_s2.json
+timeout 1h python3 -c "import json;from models import *;json.dump({nm:gauge_M(h,d) for nm,d,h in bonds()},open('out/main/M.json','w'))"
+timeout 20h python3 ring_boot.py --model Heisenberg --L 28 --k 4 --s 1  --out out/main/Heisenberg_L28_k4_s1.json
+timeout 20h python3 ring_boot.py --model XXZ_half --L 28 --k 4 --s 1  --out out/main/XXZ_half_L28_k4_s1.json
+timeout 20h python3 ring_boot.py --model random_real_d2 --L 28 --k 4 --s 1  --out out/main/random_real_d2_L28_k4_s1.json
+timeout 20h python3 ring_boot.py --model random_real_d3 --L 16 --k 4 --s 1 --mloc 2 --out out/main/random_real_d3_L16_k4_s1.json
+timeout 20h python3 ring_boot.py --model Heisenberg --L 14 --k 8 --s 1 --mloc 3 --solver SCS --out out/main/Heisenberg_L14_k8_s1_wrap.json
+timeout 20h python3 ring_boot.py --model XXZ_half --L 14 --k 8 --s 1 --mloc 3 --solver SCS --out out/main/XXZ_half_L14_k8_s1_wrap.json
+timeout 20h python3 ring_boot.py --model random_real_d2 --L 14 --k 8 --s 1 --mloc 3 --solver SCS --out out/main/random_real_d2_L14_k8_s1_wrap.json
+timeout 20h python3 ring_boot.py --model Heisenberg --L 22 --k 5 --s 1  --out out/main/Heisenberg_L22_k5_s1.json
+timeout 20h python3 ring_boot.py --model XXZ_half --L 22 --k 5 --s 1  --out out/main/XXZ_half_L22_k5_s1.json
+timeout 20h python3 ring_boot.py --model random_real_d2 --L 22 --k 5 --s 1  --out out/main/random_real_d2_L22_k5_s1.json
+timeout 20h python3 ring_boot.py --model Heisenberg --L 18 --k 6 --s 1  --out out/main/Heisenberg_L18_k6_s1.json
+timeout 20h python3 ring_boot.py --model Heisenberg --L 18 --k 6 --s 2  --out out/main/Heisenberg_L18_k6_s2.json
+timeout 20h python3 ring_boot.py --model XXZ_half --L 18 --k 6 --s 1  --out out/main/XXZ_half_L18_k6_s1.json
+timeout 20h python3 ring_boot.py --model XXZ_half --L 18 --k 6 --s 2  --out out/main/XXZ_half_L18_k6_s2.json
+timeout 20h python3 ring_boot.py --model random_real_d2 --L 18 --k 6 --s 1  --out out/main/random_real_d2_L18_k6_s1.json
+timeout 20h python3 ring_boot.py --model random_real_d2 --L 18 --k 6 --s 2  --out out/main/random_real_d2_L18_k6_s2.json
+timeout 20h python3 ring_boot.py --model SU3_swap --L 15 --k 4 --s 1 --mloc 2 --out out/main/SU3_swap_L15_k4_s1.json
+timeout 20h python3 ring_boot.py --model Heisenberg --L 26 --k 4 --s 1  --out out/main/Heisenberg_L26_k4_s1.json
+timeout 20h python3 ring_boot.py --model XXZ_half --L 26 --k 4 --s 1  --out out/main/XXZ_half_L26_k4_s1.json
+timeout 20h python3 ring_boot.py --model random_real_d2 --L 26 --k 4 --s 1  --out out/main/random_real_d2_L26_k4_s1.json
+timeout 20h python3 ring_boot.py --model Heisenberg --L 20 --k 5 --s 1  --out out/main/Heisenberg_L20_k5_s1.json
+timeout 20h python3 ring_boot.py --model XXZ_half --L 20 --k 5 --s 1  --out out/main/XXZ_half_L20_k5_s1.json
+timeout 20h python3 ring_boot.py --model random_real_d2 --L 20 --k 5 --s 1  --out out/main/random_real_d2_L20_k5_s1.json
+timeout 20h python3 ring_boot.py --model random_real_d3 --L 14 --k 4 --s 1 --mloc 2 --out out/main/random_real_d3_L14_k4_s1.json
+timeout 20h python3 ring_boot.py --model Heisenberg --L 24 --k 4 --s 1  --out out/main/Heisenberg_L24_k4_s1.json
+timeout 20h python3 ring_boot.py --model Heisenberg --L 16 --k 6 --s 1  --out out/main/Heisenberg_L16_k6_s1.json
+timeout 20h python3 ring_boot.py --model Heisenberg --L 16 --k 6 --s 2  --out out/main/Heisenberg_L16_k6_s2.json
+timeout 20h python3 ring_boot.py --model Heisenberg --L 16 --k 6 --s 1 --momenta 0,1,2 --out out/main/Heisenberg_L16_k6_s1_low.json
+timeout 20h python3 ring_boot.py --model Heisenberg --L 16 --k 6 --s 1 --no-pair-psd --out out/main/Heisenberg_L16_k6_s1_nopair.json
+timeout 20h python3 ring_boot.py --model XXZ_half --L 24 --k 4 --s 1  --out out/main/XXZ_half_L24_k4_s1.json
+timeout 20h python3 ring_boot.py --model XXZ_half --L 16 --k 6 --s 1  --out out/main/XXZ_half_L16_k6_s1.json
+timeout 20h python3 ring_boot.py --model XXZ_half --L 16 --k 6 --s 2  --out out/main/XXZ_half_L16_k6_s2.json
+timeout 20h python3 ring_boot.py --model XXZ_half --L 16 --k 6 --s 1 --momenta 0,1,2 --out out/main/XXZ_half_L16_k6_s1_low.json
+timeout 20h python3 ring_boot.py --model XXZ_half --L 16 --k 6 --s 1 --no-pair-psd --out out/main/XXZ_half_L16_k6_s1_nopair.json
+timeout 20h python3 ring_boot.py --model random_real_d2 --L 24 --k 4 --s 1  --out out/main/random_real_d2_L24_k4_s1.json
+timeout 20h python3 ring_boot.py --model random_real_d2 --L 16 --k 6 --s 1  --out out/main/random_real_d2_L16_k6_s1.json
+timeout 20h python3 ring_boot.py --model random_real_d2 --L 16 --k 6 --s 2  --out out/main/random_real_d2_L16_k6_s2.json
+timeout 20h python3 ring_boot.py --model random_real_d2 --L 16 --k 6 --s 1 --momenta 0,1,2 --out out/main/random_real_d2_L16_k6_s1_low.json
+timeout 20h python3 ring_boot.py --model random_real_d2 --L 16 --k 6 --s 1 --no-pair-psd --out out/main/random_real_d2_L16_k6_s1_nopair.json
+timeout 20h python3 ring_boot.py --model Heisenberg --L 12 --k 8 --s 1 --mloc 3 --solver SCS --out out/main/Heisenberg_L12_k8_s1_wrap.json
+timeout 20h python3 ring_boot.py --model XXZ_half --L 12 --k 8 --s 1 --mloc 3 --solver SCS --out out/main/XXZ_half_L12_k8_s1_wrap.json
+timeout 20h python3 ring_boot.py --model random_real_d2 --L 12 --k 8 --s 1 --mloc 3 --solver SCS --out out/main/random_real_d2_L12_k8_s1_wrap.json
+timeout 20h python3 ring_boot.py --model Heisenberg --L 18 --k 5 --s 1  --out out/main/Heisenberg_L18_k5_s1.json
+timeout 20h python3 ring_boot.py --model XXZ_half --L 18 --k 5 --s 1  --out out/main/XXZ_half_L18_k5_s1.json
+timeout 20h python3 ring_boot.py --model random_real_d2 --L 18 --k 5 --s 1  --out out/main/random_real_d2_L18_k5_s1.json
+timeout 20h python3 ring_boot.py --model Heisenberg --L 22 --k 4 --s 1  --out out/main/Heisenberg_L22_k4_s1.json
+timeout 20h python3 ring_boot.py --model XXZ_half --L 22 --k 4 --s 1  --out out/main/XXZ_half_L22_k4_s1.json
+timeout 20h python3 ring_boot.py --model random_real_d2 --L 22 --k 4 --s 1  --out out/main/random_real_d2_L22_k4_s1.json
+timeout 20h python3 ring_boot.py --model Heisenberg --L 14 --k 6 --s 1  --out out/main/Heisenberg_L14_k6_s1.json
+timeout 20h python3 ring_boot.py --model Heisenberg --L 14 --k 6 --s 2  --out out/main/Heisenberg_L14_k6_s2.json
+timeout 20h python3 ring_boot.py --model XXZ_half --L 14 --k 6 --s 1  --out out/main/XXZ_half_L14_k6_s1.json
+timeout 20h python3 ring_boot.py --model XXZ_half --L 14 --k 6 --s 2  --out out/main/XXZ_half_L14_k6_s2.json
+timeout 20h python3 ring_boot.py --model random_real_d2 --L 14 --k 6 --s 1  --out out/main/random_real_d2_L14_k6_s1.json
+timeout 20h python3 ring_boot.py --model random_real_d2 --L 14 --k 6 --s 2  --out out/main/random_real_d2_L14_k6_s2.json
+timeout 20h python3 ring_boot.py --model SU3_swap --L 12 --k 4 --s 0 --no-gram --no-G --mloc 2 --out out/main/SU3_swap_L12_k4_s0_local.json
+timeout 20h python3 ring_boot.py --model SU3_swap --L 12 --k 4 --s 1 --mloc 2 --out out/main/SU3_swap_L12_k4_s1.json
+timeout 20h python3 ring_boot.py --model random_real_d3 --L 12 --k 4 --s 0 --no-gram --no-G --mloc 2 --out out/main/random_real_d3_L12_k4_s0_local.json
+timeout 20h python3 ring_boot.py --model random_real_d3 --L 12 --k 4 --s 1 --mloc 2 --out out/main/random_real_d3_L12_k4_s1.json
+timeout 20h python3 ring_boot.py --model Heisenberg --L 12 --k 7 --s 1 --mloc 3 --out out/main/Heisenberg_L12_k7_s1_wrap.json
+timeout 20h python3 ring_boot.py --model XXZ_half --L 12 --k 7 --s 1 --mloc 3 --out out/main/XXZ_half_L12_k7_s1_wrap.json
+timeout 20h python3 ring_boot.py --model random_real_d2 --L 12 --k 7 --s 1 --mloc 3 --out out/main/random_real_d2_L12_k7_s1_wrap.json
+timeout 20h python3 ring_boot.py --model Heisenberg --L 20 --k 4 --s 1  --out out/main/Heisenberg_L20_k4_s1.json
+timeout 20h python3 ring_boot.py --model Heisenberg --L 16 --k 5 --s 1  --out out/main/Heisenberg_L16_k5_s1.json
+timeout 20h python3 ring_boot.py --model XXZ_half --L 20 --k 4 --s 1  --out out/main/XXZ_half_L20_k4_s1.json
+timeout 20h python3 ring_boot.py --model XXZ_half --L 16 --k 5 --s 1  --out out/main/XXZ_half_L16_k5_s1.json
+timeout 20h python3 ring_boot.py --model random_real_d2 --L 20 --k 4 --s 1  --out out/main/random_real_d2_L20_k4_s1.json
+timeout 20h python3 ring_boot.py --model random_real_d2 --L 16 --k 5 --s 1  --out out/main/random_real_d2_L16_k5_s1.json
+timeout 20h python3 ring_boot.py --model Heisenberg --L 18 --k 4 --s 1  --out out/main/Heisenberg_L18_k4_s1.json
+timeout 20h python3 ring_boot.py --model Heisenberg --L 12 --k 6 --s 0 --no-gram --no-G --out out/main/Heisenberg_L12_k6_s0_local.json
+timeout 20h python3 ring_boot.py --model Heisenberg --L 12 --k 6 --s 1  --out out/main/Heisenberg_L12_k6_s1.json
+timeout 20h python3 ring_boot.py --model Heisenberg --L 12 --k 6 --s 2  --out out/main/Heisenberg_L12_k6_s2.json
+timeout 20h python3 ring_boot.py --model XXZ_half --L 18 --k 4 --s 1  --out out/main/XXZ_half_L18_k4_s1.json
+timeout 20h python3 ring_boot.py --model XXZ_half --L 12 --k 6 --s 0 --no-gram --no-G --out out/main/XXZ_half_L12_k6_s0_local.json
+timeout 20h python3 ring_boot.py --model XXZ_half --L 12 --k 6 --s 1  --out out/main/XXZ_half_L12_k6_s1.json
+timeout 20h python3 ring_boot.py --model XXZ_half --L 12 --k 6 --s 2  --out out/main/XXZ_half_L12_k6_s2.json
+timeout 20h python3 ring_boot.py --model random_real_d2 --L 18 --k 4 --s 1  --out out/main/random_real_d2_L18_k4_s1.json
+timeout 20h python3 ring_boot.py --model random_real_d2 --L 12 --k 6 --s 0 --no-gram --no-G --out out/main/random_real_d2_L12_k6_s0_local.json
+timeout 20h python3 ring_boot.py --model random_real_d2 --L 12 --k 6 --s 1  --out out/main/random_real_d2_L12_k6_s1.json
+timeout 20h python3 ring_boot.py --model random_real_d2 --L 12 --k 6 --s 2  --out out/main/random_real_d2_L12_k6_s2.json
+timeout 20h python3 ring_boot.py --model SU3_swap --L 9 --k 5 --s 1 --mloc 2 --no-pair-psd --solver SCS --out out/main/SU3_swap_L9_k5_s1_wrap.json
+timeout 5h python3 ed.py --mode feasible --model XXZ_half --L 12 --k 6 --s 2 --mloc 4 --out out/main/feas_XXZ_half_L12_k6_s2.json
+timeout 20h python3 ring_boot.py --model Heisenberg --L 14 --k 5 --s 1  --out out/main/Heisenberg_L14_k5_s1.json
+timeout 20h python3 ring_boot.py --model XXZ_half --L 14 --k 5 --s 1  --out out/main/XXZ_half_L14_k5_s1.json
+timeout 20h python3 ring_boot.py --model random_real_d2 --L 14 --k 5 --s 1  --out out/main/random_real_d2_L14_k5_s1.json
+timeout 20h python3 ring_boot.py --model random_real_d3 --L 10 --k 4 --s 1 --mloc 2 --out out/main/random_real_d3_L10_k4_s1.json
+timeout 20h python3 ring_boot.py --model Heisenberg --L 10 --k 7 --s 1 --mloc 3 --out out/main/Heisenberg_L10_k7_s1_wrap.json
+timeout 20h python3 ring_boot.py --model XXZ_half --L 10 --k 7 --s 1 --mloc 3 --out out/main/XXZ_half_L10_k7_s1_wrap.json
+timeout 20h python3 ring_boot.py --model random_real_d2 --L 10 --k 7 --s 1 --mloc 3 --out out/main/random_real_d2_L10_k7_s1_wrap.json
+timeout 20h python3 ring_boot.py --model Heisenberg --L 16 --k 4 --s 1  --out out/main/Heisenberg_L16_k4_s1.json
+timeout 20h python3 ring_boot.py --model XXZ_half --L 16 --k 4 --s 1  --out out/main/XXZ_half_L16_k4_s1.json
+timeout 20h python3 ring_boot.py --model random_real_d2 --L 16 --k 4 --s 1  --out out/main/random_real_d2_L16_k4_s1.json
+timeout 20h python3 ring_boot.py --model random_real_d3 --L 8 --k 5 --s 1 --mloc 2 --no-pair-psd --solver SCS --out out/main/random_real_d3_L8_k5_s1_wrap.json
+timeout 20h python3 ring_boot.py --model SU3_swap --L 9 --k 4 --s 1 --mloc 2 --out out/main/SU3_swap_L9_k4_s1.json
+timeout 5h python3 ed.py --mode feasible --model SU3_swap --L 9 --k 4 --s 1 --mloc 2 --out out/main/feas_SU3_swap_L9_k4_s1.json
+timeout 20h python3 ring_boot.py --model Heisenberg --L 12 --k 5 --s 0 --no-gram --no-G --out out/main/Heisenberg_L12_k5_s0_local.json
+timeout 20h python3 ring_boot.py --model Heisenberg --L 12 --k 5 --s 1  --out out/main/Heisenberg_L12_k5_s1.json
+timeout 20h python3 ring_boot.py --model Heisenberg --L 10 --k 6 --s 1  --out out/main/Heisenberg_L10_k6_s1.json
+timeout 20h python3 ring_boot.py --model Heisenberg --L 10 --k 6 --s 2  --out out/main/Heisenberg_L10_k6_s2.json
+timeout 20h python3 ring_boot.py --model XXZ_half --L 12 --k 5 --s 0 --no-gram --no-G --out out/main/XXZ_half_L12_k5_s0_local.json
+timeout 20h python3 ring_boot.py --model XXZ_half --L 12 --k 5 --s 1  --out out/main/XXZ_half_L12_k5_s1.json
+timeout 20h python3 ring_boot.py --model XXZ_half --L 10 --k 6 --s 1  --out out/main/XXZ_half_L10_k6_s1.json
+timeout 20h python3 ring_boot.py --model XXZ_half --L 10 --k 6 --s 2  --out out/main/XXZ_half_L10_k6_s2.json
+timeout 20h python3 ring_boot.py --model random_real_d2 --L 12 --k 5 --s 0 --no-gram --no-G --out out/main/random_real_d2_L12_k5_s0_local.json
+timeout 20h python3 ring_boot.py --model random_real_d2 --L 12 --k 5 --s 1  --out out/main/random_real_d2_L12_k5_s1.json
+timeout 20h python3 ring_boot.py --model random_real_d2 --L 10 --k 6 --s 1  --out out/main/random_real_d2_L10_k6_s1.json
+timeout 20h python3 ring_boot.py --model random_real_d2 --L 10 --k 6 --s 2  --out out/main/random_real_d2_L10_k6_s2.json
+timeout 20h python3 ring_boot.py --model Heisenberg --L 10 --k 6 --s 1 --mloc 3 --out out/main/Heisenberg_L10_k6_s1_wrap.json
+timeout 20h python3 ring_boot.py --model XXZ_half --L 10 --k 6 --s 1 --mloc 3 --out out/main/XXZ_half_L10_k6_s1_wrap.json
+timeout 20h python3 ring_boot.py --model random_real_d2 --L 10 --k 6 --s 1 --mloc 3 --out out/main/random_real_d2_L10_k6_s1_wrap.json
+timeout 20h python3 ring_boot.py --model Heisenberg --L 14 --k 4 --s 1  --out out/main/Heisenberg_L14_k4_s1.json
+timeout 20h python3 ring_boot.py --model XXZ_half --L 14 --k 4 --s 1  --out out/main/XXZ_half_L14_k4_s1.json
+timeout 20h python3 ring_boot.py --model random_real_d2 --L 14 --k 4 --s 1  --out out/main/random_real_d2_L14_k4_s1.json
+timeout 20h python3 ring_boot.py --model random_real_d3 --L 8 --k 4 --s 1 --mloc 2 --out out/main/random_real_d3_L8_k4_s1.json
+timeout 20h python3 ring_boot.py --model Heisenberg --L 8 --k 7 --s 1 --mloc 3 --out out/main/Heisenberg_L8_k7_s1_wrap.json
+timeout 20h python3 ring_boot.py --model XXZ_half --L 8 --k 7 --s 1 --mloc 3 --out out/main/XXZ_half_L8_k7_s1_wrap.json
+timeout 20h python3 ring_boot.py --model random_real_d2 --L 8 --k 7 --s 1 --mloc 3 --out out/main/random_real_d2_L8_k7_s1_wrap.json
+timeout 20h python3 ring_boot.py --model Heisenberg --L 10 --k 5 --s 1  --out out/main/Heisenberg_L10_k5_s1.json
+timeout 20h python3 ring_boot.py --model XXZ_half --L 10 --k 5 --s 1  --out out/main/XXZ_half_L10_k5_s1.json
+timeout 20h python3 ring_boot.py --model random_real_d2 --L 10 --k 5 --s 1  --out out/main/random_real_d2_L10_k5_s1.json
+timeout 5h python3 ed.py --mode feasible --model Heisenberg --L 10 --k 5 --s 1 --mloc 3 --out out/main/feas_Heisenberg_L10_k5_s1.json
+timeout 5h python3 ed.py --mode feasible --model random_real_d2 --L 10 --k 5 --s 1 --mloc 3 --out out/main/feas_random_real_d2_L10_k5_s1.json
+timeout 20h python3 ring_boot.py --model random_real_d3 --L 7 --k 4 --s 1 --mloc 2 --out out/main/random_real_d3_L7_k4_s1_wrap.json
+timeout 5h python3 ed.py --mode feasible --model random_real_d3 --L 7 --k 4 --s 1 --mloc 2 --out out/main/feas_random_real_d3_L7_k4_s1.json
+timeout 20h python3 ring_boot.py --model Heisenberg --L 12 --k 4 --s 0 --no-gram --no-G --out out/main/Heisenberg_L12_k4_s0_local.json
+timeout 20h python3 ring_boot.py --model Heisenberg --L 12 --k 4 --s 1  --out out/main/Heisenberg_L12_k4_s1.json
+timeout 20h python3 ring_boot.py --model Heisenberg --L 8 --k 6 --s 1  --out out/main/Heisenberg_L8_k6_s1.json
+timeout 20h python3 ring_boot.py --model Heisenberg --L 8 --k 6 --s 2  --out out/main/Heisenberg_L8_k6_s2.json
+timeout 20h python3 ring_boot.py --model XXZ_half --L 12 --k 4 --s 0 --no-gram --no-G --out out/main/XXZ_half_L12_k4_s0_local.json
+timeout 20h python3 ring_boot.py --model XXZ_half --L 12 --k 4 --s 1  --out out/main/XXZ_half_L12_k4_s1.json
+timeout 20h python3 ring_boot.py --model XXZ_half --L 8 --k 6 --s 1  --out out/main/XXZ_half_L8_k6_s1.json
+timeout 20h python3 ring_boot.py --model XXZ_half --L 8 --k 6 --s 2  --out out/main/XXZ_half_L8_k6_s2.json
+timeout 20h python3 ring_boot.py --model random_real_d2 --L 12 --k 4 --s 0 --no-gram --no-G --out out/main/random_real_d2_L12_k4_s0_local.json
+timeout 20h python3 ring_boot.py --model random_real_d2 --L 12 --k 4 --s 1  --out out/main/random_real_d2_L12_k4_s1.json
+timeout 20h python3 ring_boot.py --model random_real_d2 --L 8 --k 6 --s 1  --out out/main/random_real_d2_L8_k6_s1.json
+timeout 20h python3 ring_boot.py --model random_real_d2 --L 8 --k 6 --s 2  --out out/main/random_real_d2_L8_k6_s2.json
+timeout 20h python3 ring_boot.py --model Heisenberg --L 8 --k 6 --s 1 --mloc 3 --out out/main/Heisenberg_L8_k6_s1_wrap.json
+timeout 20h python3 ring_boot.py --model XXZ_half --L 8 --k 6 --s 1 --mloc 3 --out out/main/XXZ_half_L8_k6_s1_wrap.json
+timeout 20h python3 ring_boot.py --model random_real_d2 --L 8 --k 6 --s 1 --mloc 3 --out out/main/random_real_d2_L8_k6_s1_wrap.json
+timeout 20h python3 ring_boot.py --model SU3_swap --L 6 --k 5 --s 1 --mloc 2 --no-pair-psd --solver SCS --out out/main/SU3_swap_L6_k5_s1_wrap.json
+timeout 20h python3 ring_boot.py --model SU3_swap --L 6 --k 4 --s 1 --mloc 2 --out out/main/SU3_swap_L6_k4_s1.json
+timeout 20h python3 ring_boot.py --model random_real_d3 --L 6 --k 4 --s 1 --mloc 2 --out out/main/random_real_d3_L6_k4_s1.json
+timeout 20h python3 ring_boot.py --model SU3_swap --L 6 --k 4 --s 1 --mloc 2 --out out/main/SU3_swap_L6_k4_s1_wrap.json
+timeout 20h python3 ring_boot.py --model random_real_d3 --L 6 --k 4 --s 1 --mloc 2 --out out/main/random_real_d3_L6_k4_s1_wrap.json
+timeout 5h python3 ed.py --mode feasible --model SU3_swap --L 6 --k 4 --s 1 --mloc 2 --out out/main/feas_SU3_swap_L6_k4_s1.json
+timeout 20h python3 ring_boot.py --model Heisenberg --L 10 --k 4 --s 1  --out out/main/Heisenberg_L10_k4_s1.json
+timeout 20h python3 ring_boot.py --model Heisenberg --L 8 --k 5 --s 1  --out out/main/Heisenberg_L8_k5_s1.json
+timeout 20h python3 ring_boot.py --model XXZ_half --L 10 --k 4 --s 1  --out out/main/XXZ_half_L10_k4_s1.json
+timeout 20h python3 ring_boot.py --model XXZ_half --L 8 --k 5 --s 1  --out out/main/XXZ_half_L8_k5_s1.json
+timeout 20h python3 ring_boot.py --model random_real_d2 --L 10 --k 4 --s 1  --out out/main/random_real_d2_L10_k4_s1.json
+timeout 20h python3 ring_boot.py --model random_real_d2 --L 8 --k 5 --s 1  --out out/main/random_real_d2_L8_k5_s1.json
+timeout 20h python3 ring_boot.py --model Heisenberg --L 8 --k 5 --s 1 --mloc 3 --out out/main/Heisenberg_L8_k5_s1_wrap.json
+timeout 20h python3 ring_boot.py --model XXZ_half --L 8 --k 5 --s 1 --mloc 3 --out out/main/XXZ_half_L8_k5_s1_wrap.json
+timeout 20h python3 ring_boot.py --model random_real_d2 --L 8 --k 5 --s 1 --mloc 3 --out out/main/random_real_d2_L8_k5_s1_wrap.json
+timeout 5h python3 ed.py --mode feasible --model Heisenberg --L 8 --k 5 --s 1 --mloc 3 --out out/main/feas_Heisenberg_L8_k5_s1.json
+timeout 20h python3 ring_boot.py --model Heisenberg --L 6 --k 6 --s 1 --mloc 3 --out out/main/Heisenberg_L6_k6_s1_wrap.json
+timeout 20h python3 ring_boot.py --model XXZ_half --L 6 --k 6 --s 1 --mloc 3 --out out/main/XXZ_half_L6_k6_s1_wrap.json
+timeout 20h python3 ring_boot.py --model random_real_d2 --L 6 --k 6 --s 1 --mloc 3 --out out/main/random_real_d2_L6_k6_s1_wrap.json
+timeout 20h python3 ring_boot.py --model Heisenberg --L 8 --k 4 --s 1  --out out/main/Heisenberg_L8_k4_s1.json
+timeout 20h python3 ring_boot.py --model XXZ_half --L 8 --k 4 --s 1  --out out/main/XXZ_half_L8_k4_s1.json
+timeout 20h python3 ring_boot.py --model random_real_d2 --L 8 --k 4 --s 1  --out out/main/random_real_d2_L8_k4_s1.json
+timeout 20h python3 ring_boot.py --model Heisenberg --L 6 --k 5 --s 1 --mloc 3 --out out/main/Heisenberg_L6_k5_s1_wrap.json
+timeout 20h python3 ring_boot.py --model XXZ_half --L 6 --k 5 --s 1 --mloc 3 --out out/main/XXZ_half_L6_k5_s1_wrap.json
+timeout 20h python3 ring_boot.py --model random_real_d2 --L 6 --k 5 --s 1 --mloc 3 --out out/main/random_real_d2_L6_k5_s1_wrap.json
+timeout 20h python3 ring_boot.py --model Heisenberg --L 6 --k 4 --s 1  --out out/main/Heisenberg_L6_k4_s1_wrap.json
+timeout 20h python3 ring_boot.py --model XXZ_half --L 6 --k 4 --s 1  --out out/main/XXZ_half_L6_k4_s1_wrap.json
+timeout 20h python3 ring_boot.py --model random_real_d2 --L 6 --k 4 --s 1  --out out/main/random_real_d2_L6_k4_s1_wrap.json
