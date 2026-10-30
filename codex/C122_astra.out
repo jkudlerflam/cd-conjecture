@@ -1,0 +1,13 @@
+The full operator-order route fails already on XX. Any \(Y\le cX\) requires
+\[
+\log c\ge \frac{2\beta}{L}\csc(\pi/L)-2\log2,
+\]
+which grows as \(2\tau L/\pi\) at \(\beta=\tau L\). Sharper expansional norm estimates cannot recover the required \(O(\tau)\) scale through this comparison.
+
+I derived an explicit locality bound, analyzed seam widening and low-energy restriction, and completed 84 SDP solves. The numerical log-ratio brackets have width at most \(3.11\times10^{-6}\). Widening the seam changes the bounded offset but preserves the ground-energy slope.
+
+The scalar target remains open. The remaining lemma must compare optimized SDP witnesses while retaining their partial-trace constraint.
+
+Results and derivations are in [RESULT.md](<./RESULT.md>) and [PROOF.md](<./PROOF.md>), with numerical details in [CHECKS.md](<./CHECKS.md>). No files outside work_C122 were modified.
+
+[gpt_solve: backend=codex model=gpt-6-astra effort=high transcript=20261029T202715-14159]

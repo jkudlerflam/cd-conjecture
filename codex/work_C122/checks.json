@@ -1,0 +1,1590 @@
+{
+  "results": [
+    {
+      "model": "XX",
+      "L": 4,
+      "d": 2,
+      "seam": [
+        0,
+        3,
+        4,
+        7
+      ],
+      "dimension": 256,
+      "complement_dimension": 16,
+      "SDP_variables": 43,
+      "energy_defect": 0.21530119499343758,
+      "ground": [
+        {
+          "lower": 8.492634753089392,
+          "upper": 8.492640710406851,
+          "value": 8.492637731748122,
+          "gap": 5.957317458893385e-06,
+          "iterations": 211,
+          "primal_min_slack": 1.4554006545686748e-09,
+          "dual_min_eigenvalue": 1.0960883321480634e-08,
+          "dual_partial_trace_max": 0.9999999999900003,
+          "pure_exact": 8.492640687119287,
+          "degeneracy": 1
+        },
+        {
+          "lower": 7.576477177143644,
+          "upper": 7.576483134451997,
+          "value": 7.576480155797821,
+          "gap": 5.957308352400048e-06,
+          "iterations": 116,
+          "primal_min_slack": 1.4554007887084956e-09,
+          "dual_min_eigenvalue": 1.1470075047694063e-08,
+          "dual_partial_trace_max": 0.9999999999900003,
+          "pure_exact": 7.576483111164593,
+          "degeneracy": 1
+        }
+      ],
+      "rows": [
+        {
+          "tau": 0.0,
+          "beta": 0.0,
+          "R": 0.0,
+          "log_mu_ratio": 1.397681970161102e-11,
+          "ratio_interval": [
+            -3.7261911037836036e-07,
+            3.7264706416226836e-07
+          ],
+          "log_mu_Y": 2.772588908278456,
+          "log_mu_X": 2.772588908264479,
+          "energy_part": 0.0,
+          "entropy_difference": -1.397681970161102e-11,
+          "centered_ratio": 1.397681970161102e-11,
+          "SDP_Y": {
+            "lower": 15.999999995665636,
+            "upper": 16.00000595757251,
+            "value": 16.000002976619072,
+            "gap": 5.961906875739942e-06,
+            "iterations": 68,
+            "primal_min_slack": 3.7234827908048695e-07,
+            "dual_min_eigenvalue": 0.06249999976778808,
+            "dual_partial_trace_max": 0.99999999999
+          },
+          "SDP_X": {
+            "lower": 15.999999995218376,
+            "upper": 16.00000595757251,
+            "value": 16.000002976395443,
+            "gap": 5.96235413574675e-06,
+            "iterations": 68,
+            "primal_min_slack": 3.7234827874530193e-07,
+            "dual_min_eigenvalue": 0.06249999970504337,
+            "dual_partial_trace_max": 0.9999999999899998
+          },
+          "order_log_lower_bound": -0.0,
+          "full_order_log_c": 1.3322676295501875e-15
+        },
+        {
+          "tau": 0.1,
+          "beta": 0.4,
+          "R": 0.0003894944181048743,
+          "log_mu_ratio": 0.033977800180055695,
+          "ratio_interval": [
+            0.0339773288777003,
+            0.033978271482404614
+          ],
+          "log_mu_Y": 3.642521876422758,
+          "log_mu_X": 3.608544076242702,
+          "energy_part": 0.08612047799737504,
+          "entropy_difference": -0.03358830576195082,
+          "centered_ratio": -0.05214267781731935,
+          "SDP_Y": {
+            "lower": 12.319098537007829,
+            "upper": 12.319104494362739,
+            "value": 12.319101515685283,
+            "gap": 5.95735490982463e-06,
+            "iterations": 83,
+            "primal_min_slack": 1.4554000156104973e-09,
+            "dual_min_eigenvalue": 2.1423315278327526e-08,
+            "dual_partial_trace_max": 0.99999999999
+          },
+          "SDP_X": {
+            "lower": 12.97849133864812,
+            "upper": 12.978497296009351,
+            "value": 12.978494317328735,
+            "gap": 5.957361231878622e-06,
+            "iterations": 76,
+            "primal_min_slack": 1.455399533713065e-09,
+            "dual_min_eigenvalue": 2.402695958471295e-08,
+            "dual_partial_trace_max": 0.9999999999900007
+          },
+          "order_log_lower_bound": 0.03998961798309651,
+          "full_order_log_c": 0.5704212366030864
+        },
+        {
+          "tau": 1.0,
+          "beta": 4.0,
+          "R": 0.6193933613446987,
+          "log_mu_ratio": 0.9489514769014509,
+          "ratio_interval": [
+            0.9489507450233831,
+            0.9489522087795428
+          ],
+          "log_mu_Y": 13.455304972538501,
+          "log_mu_X": 12.50635349563705,
+          "energy_part": 0.8612047799737503,
+          "entropy_difference": -0.3295581155567522,
+          "centered_ratio": 0.08774669692770054,
+          "SDP_Y": {
+            "lower": 8.513014614766115,
+            "upper": 8.513020572084143,
+            "value": 8.513017593425129,
+            "gap": 5.957318027327574e-06,
+            "iterations": 126,
+            "primal_min_slack": 1.4554010469650595e-09,
+            "dual_min_eigenvalue": 1.0987265517866826e-08,
+            "dual_partial_trace_max": 0.99999999999
+          },
+          "SDP_X": {
+            "lower": 7.79786044888089,
+            "upper": 7.7978664061906695,
+            "value": 7.79786342753578,
+            "gap": 5.9573097797027685e-06,
+            "iterations": 193,
+            "primal_min_slack": 1.455400405664913e-09,
+            "dual_min_eigenvalue": 1.1711353612162665e-08,
+            "dual_partial_trace_max": 0.9999999999899993
+          },
+          "order_log_lower_bound": 2.5350929370968163,
+          "full_order_log_c": 10.306706270811892
+        },
+        {
+          "tau": 4.0,
+          "beta": 16.0,
+          "R": 3.3703821501630102,
+          "log_mu_ratio": 3.558967153921593,
+          "ratio_interval": [
+            3.558966410043635,
+            3.5589678977995853
+          ],
+          "log_mu_Y": 47.394033635007446,
+          "log_mu_X": 43.83506648108585,
+          "energy_part": 3.4448191198950013,
+          "entropy_difference": -0.18858500375858256,
+          "centered_ratio": 0.11414803402659146,
+          "SDP_Y": {
+            "lower": 8.492634753957086,
+            "upper": 8.492640711274992,
+            "value": 8.49263773261604,
+            "gap": 5.957317906535309e-06,
+            "iterations": 128,
+            "primal_min_slack": 1.4554008152698925e-09,
+            "dual_min_eigenvalue": 1.0960883390350565e-08,
+            "dual_partial_trace_max": 0.9999999999899999
+          },
+          "SDP_X": {
+            "lower": 7.576498941592785,
+            "upper": 7.576504898901116,
+            "value": 7.576501920246951,
+            "gap": 5.957308331083766e-06,
+            "iterations": 116,
+            "primal_min_slack": 1.4554009310491915e-09,
+            "dual_min_eigenvalue": 1.1470099603970994e-08,
+            "dual_partial_trace_max": 0.9999999999900001
+          },
+          "order_log_lower_bound": 11.304959741588494
+        },
+        {
+          "tau": 16.0,
+          "beta": 64.0,
+          "R": 13.779270560025509,
+          "log_mu_ratio": 13.893427386133567,
+          "ratio_interval": [
+            13.89342664225448,
+            13.893428130012659
+          ],
+          "log_mu_Y": 183.15853562272238,
+          "log_mu_X": 169.26510823658882,
+          "energy_part": 13.779276479580005,
+          "entropy_difference": -0.11415682610805788,
+          "centered_ratio": 0.11415090655356153,
+          "SDP_Y": {
+            "lower": 8.492634753089197,
+            "upper": 8.492640710406851,
+            "value": 8.492637731748024,
+            "gap": 5.957317654292638e-06,
+            "iterations": 129,
+            "primal_min_slack": 1.455400653311873e-09,
+            "dual_min_eigenvalue": 1.0960883105057575e-08,
+            "dual_partial_trace_max": 0.9999999999900002
+          },
+          "SDP_X": {
+            "lower": 7.57647717714368,
+            "upper": 7.5764831344519985,
+            "value": 7.576480155797839,
+            "gap": 5.957308318649268e-06,
+            "iterations": 118,
+            "primal_min_slack": 1.4554007535030168e-09,
+            "dual_min_eigenvalue": 1.147007570905095e-08,
+            "dual_partial_trace_max": 0.9999999999899994
+          },
+          "order_log_lower_bound": 45.25483399585766
+        }
+      ]
+    },
+    {
+      "model": "Heisenberg",
+      "L": 4,
+      "d": 2,
+      "seam": [
+        0,
+        3,
+        4,
+        7
+      ],
+      "dimension": 256,
+      "complement_dimension": 16,
+      "SDP_variables": 43,
+      "energy_defect": 0.3489065910628275,
+      "ground": [
+        {
+          "lower": 8.999994065965359,
+          "upper": 9.000000023286944,
+          "value": 8.999997044626152,
+          "gap": 5.957321585370323e-06,
+          "iterations": 190,
+          "primal_min_slack": 1.4553997631481031e-09,
+          "dual_min_eigenvalue": 1.0342982502511371e-08,
+          "dual_partial_trace_max": 0.9999999999899999,
+          "pure_exact": 9.000000000000005,
+          "degeneracy": 1
+        },
+        {
+          "lower": 8.845981225813787,
+          "upper": 8.845987183133799,
+          "value": 8.845984204473794,
+          "gap": 5.9573200115181635e-06,
+          "iterations": 126,
+          "primal_min_slack": 1.4553996240252097e-09,
+          "dual_min_eigenvalue": 1.0372254899094171e-08,
+          "dual_partial_trace_max": 0.9999999999899999,
+          "pure_exact": 8.845987159846928,
+          "degeneracy": 1
+        }
+      ],
+      "rows": [
+        {
+          "tau": 0.0,
+          "beta": 0.0,
+          "R": 0.0,
+          "log_mu_ratio": -8.735678846960582e-12,
+          "ratio_interval": [
+            -3.7264124024011185e-07,
+            3.726237688053125e-07
+          ],
+          "log_mu_Y": 2.7725889082673913,
+          "log_mu_X": 2.772588908276127,
+          "energy_part": 0.0,
+          "entropy_difference": 8.735678846960582e-12,
+          "centered_ratio": -8.735678846960582e-12,
+          "SDP_Y": {
+            "lower": 15.999999995311565,
+            "upper": 16.00000595757251,
+            "value": 16.00000297644204,
+            "gap": 5.9622609462905984e-06,
+            "iterations": 68,
+            "primal_min_slack": 3.7234827404941263e-07,
+            "dual_min_eigenvalue": 0.06249999901078294,
+            "dual_partial_trace_max": 0.9999999999900002
+          },
+          "SDP_X": {
+            "lower": 15.9999999955911,
+            "upper": 16.00000595757252,
+            "value": 16.00000297658181,
+            "gap": 5.96198141877835e-06,
+            "iterations": 68,
+            "primal_min_slack": 3.723482638907339e-07,
+            "dual_min_eigenvalue": 0.062499997086574444,
+            "dual_partial_trace_max": 0.9999999999900001
+          },
+          "order_log_lower_bound": 0.0,
+          "full_order_log_c": 8.437694987151172e-15
+        },
+        {
+          "tau": 0.1,
+          "beta": 0.4,
+          "R": 0.0006568920851943716,
+          "log_mu_ratio": 0.052357695795649306,
+          "ratio_interval": [
+            0.05235721599510411,
+            0.052358175596183
+          ],
+          "log_mu_Y": 4.076359169544853,
+          "log_mu_X": 4.024001473749204,
+          "energy_part": 0.139562636425131,
+          "entropy_difference": -0.051700803710454935,
+          "centered_ratio": -0.0872049406294817,
+          "SDP_Y": {
+            "lower": 11.897864368634801,
+            "upper": 11.897870325984542,
+            "value": 11.89786734730967,
+            "gap": 5.957349740626228e-06,
+            "iterations": 81,
+            "primal_min_slack": 1.4553996749350327e-09,
+            "dual_min_eigenvalue": 1.758167219125578e-08,
+            "dual_partial_trace_max": 0.9999999999899998
+          },
+          "SDP_X": {
+            "lower": 12.9820012737442,
+            "upper": 12.982007231104419,
+            "value": 12.982004252424309,
+            "gap": 5.957360219355223e-06,
+            "iterations": 72,
+            "primal_min_slack": 1.4553996918358457e-09,
+            "dual_min_eigenvalue": 2.027531278092709e-08,
+            "dual_partial_trace_max": 0.9999999999899997
+          },
+          "order_log_lower_bound": 0.06538534573703321,
+          "full_order_log_c": 0.7056551963862899
+        },
+        {
+          "tau": 1.0,
+          "beta": 4.0,
+          "R": 1.1224099879081901,
+          "log_mu_ratio": 1.4019260051224904,
+          "ratio_interval": [
+            1.4019253412546673,
+            1.401926668990317
+          ],
+          "log_mu_Y": 18.197447878283683,
+          "log_mu_X": 16.795521873161192,
+          "energy_part": 1.39562636425131,
+          "entropy_difference": -0.27951601721429853,
+          "centered_ratio": 0.006299640871180401,
+          "SDP_Y": {
+            "lower": 9.002006954267964,
+            "upper": 9.002012911589533,
+            "value": 9.002009932928749,
+            "gap": 5.957321569383112e-06,
+            "iterations": 107,
+            "primal_min_slack": 1.4553999108262632e-09,
+            "dual_min_eigenvalue": 1.0345695917662666e-08,
+            "dual_partial_trace_max": 0.9999999999899993
+          },
+          "SDP_X": {
+            "lower": 8.945475774592667,
+            "upper": 8.945481731913167,
+            "value": 8.945478753252917,
+            "gap": 5.957320500016294e-06,
+            "iterations": 104,
+            "primal_min_slack": 1.4553992522471093e-09,
+            "dual_min_eigenvalue": 1.047877581612553e-08,
+            "dual_partial_trace_max": 0.99999999999
+          },
+          "order_log_lower_bound": 3.887006346877352,
+          "full_order_log_c": 13.01627429181119
+        },
+        {
+          "tau": 4.0,
+          "beta": 16.0,
+          "R": 5.581805924342298,
+          "log_mu_ratio": 5.599765989082613,
+          "ratio_interval": [
+            5.599765321395623,
+            5.5997666567696065
+          ],
+          "log_mu_Y": 66.19722424896129,
+          "log_mu_X": 60.59745825987868,
+          "energy_part": 5.58250545700524,
+          "entropy_difference": -0.017960064740314863,
+          "centered_ratio": 0.01726053207737266,
+          "SDP_Y": {
+            "lower": 8.999994065964989,
+            "upper": 9.00000002328702,
+            "value": 8.999997044626005,
+            "gap": 5.95732203123589e-06,
+            "iterations": 190,
+            "primal_min_slack": 1.4554000638673699e-09,
+            "dual_min_eigenvalue": 1.0342982232536964e-08,
+            "dual_partial_trace_max": 0.9999999999899999
+          },
+          "SDP_X": {
+            "lower": 8.845982314326339,
+            "upper": 8.845988271647133,
+            "value": 8.845985292986736,
+            "gap": 5.95732079489153e-06,
+            "iterations": 119,
+            "primal_min_slack": 1.4553999286270202e-09,
+            "dual_min_eigenvalue": 1.0372256054852304e-08,
+            "dual_partial_trace_max": 0.9999999999899993
+          },
+          "order_log_lower_bound": 15.999997299155302
+        },
+        {
+          "tau": 16.0,
+          "beta": 64.0,
+          "R": 22.33002182802096,
+          "log_mu_ratio": 22.347282483149968,
+          "ratio_interval": [
+            22.347281815463027,
+            22.34728315083694
+          ],
+          "log_mu_Y": 258.19722424896133,
+          "log_mu_X": 235.84994176581137,
+          "energy_part": 22.33002182802096,
+          "entropy_difference": -0.01726065512900732,
+          "centered_ratio": 0.01726065512900732,
+          "SDP_Y": {
+            "lower": 8.999994065965359,
+            "upper": 9.000000023286944,
+            "value": 8.999997044626152,
+            "gap": 5.957321585370323e-06,
+            "iterations": 190,
+            "primal_min_slack": 1.4553997631481031e-09,
+            "dual_min_eigenvalue": 1.0342982502511371e-08,
+            "dual_partial_trace_max": 0.9999999999899999
+          },
+          "SDP_X": {
+            "lower": 8.845981225813924,
+            "upper": 8.845987183133799,
+            "value": 8.845984204473861,
+            "gap": 5.957319874738687e-06,
+            "iterations": 119,
+            "primal_min_slack": 1.455399852757915e-09,
+            "dual_min_eigenvalue": 1.0372254981278284e-08,
+            "dual_partial_trace_max": 0.9999999999899991
+          },
+          "order_log_lower_bound": 64.00000000000001
+        }
+      ]
+    },
+    {
+      "model": "SU3",
+      "L": 3,
+      "d": 3,
+      "seam": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "dimension": 729,
+      "complement_dimension": 9,
+      "SDP_variables": 12,
+      "energy_defect": 1.3944487245360042,
+      "ground": [
+        {
+          "lower": 8.999992803663988,
+          "upper": 9.000000009893963,
+          "value": 8.999996406778976,
+          "gap": 7.206229975409428e-06,
+          "iterations": 62,
+          "primal_min_slack": 1.0993290917673388e-09,
+          "dual_min_eigenvalue": 9.884954053117083e-09,
+          "dual_partial_trace_max": 0.99999999999,
+          "pure_exact": 9.000000000000002,
+          "degeneracy": 1
+        },
+        {
+          "lower": 8.571456160743839,
+          "upper": 8.571463366968954,
+          "value": 8.571459763856396,
+          "gap": 7.206225115297116e-06,
+          "iterations": 86,
+          "primal_min_slack": 1.0993294274069523e-09,
+          "dual_min_eigenvalue": 8.962176157424308e-09,
+          "dual_partial_trace_max": 0.99999999999,
+          "pure_exact": 8.571463357074903,
+          "degeneracy": 1
+        }
+      ],
+      "rows": [
+        {
+          "tau": 0.0,
+          "beta": 0.0,
+          "R": 0.0,
+          "log_mu_ratio": 6.086242620995108e-12,
+          "ratio_interval": [
+            -8.008236651858768e-07,
+            8.008358378296914e-07
+          ],
+          "log_mu_Y": 2.1972249776063184,
+          "log_mu_X": 2.197224977600232,
+          "energy_part": 0.0,
+          "entropy_difference": -6.085798531785258e-12,
+          "centered_ratio": 6.086242620995108e-12,
+          "SDP_Y": {
+            "lower": 8.999999998723677,
+            "upper": 9.000007206139548,
+            "value": 9.000003602431612,
+            "gap": 7.207415871235412e-06,
+            "iterations": 62,
+            "primal_min_slack": 8.006821658978785e-07,
+            "dual_min_eigenvalue": 0.012345683147558201,
+            "dual_partial_trace_max": 0.99999999999
+          },
+          "SDP_X": {
+            "lower": 8.999999998614122,
+            "upper": 9.000007206139548,
+            "value": 9.000003602376836,
+            "gap": 7.207525426267125e-06,
+            "iterations": 62,
+            "primal_min_slack": 8.006821684249354e-07,
+            "dual_min_eigenvalue": 0.012345683194188935,
+            "dual_partial_trace_max": 0.9999999999899998
+          },
+          "order_log_lower_bound": 0.0,
+          "full_order_log_c": 2.664535259100358e-14
+        },
+        {
+          "tau": 0.1,
+          "beta": 0.30000000000000004,
+          "R": -0.011528944141987907,
+          "log_mu_ratio": 0.4529043551527918,
+          "ratio_interval": [
+            0.4529035403786181,
+            0.4529051699269782
+          ],
+          "log_mu_Y": 3.997224178089378,
+          "log_mu_X": 3.544319822936586,
+          "energy_part": 0.41833461736080135,
+          "entropy_difference": -0.4644332992947797,
+          "centered_ratio": 0.03456973779199046,
+          "SDP_Y": {
+            "lower": 8.999992803664364,
+            "upper": 9.000000009893961,
+            "value": 8.999996406779163,
+            "gap": 7.2062295970454215e-06,
+            "iterations": 63,
+            "primal_min_slack": 1.09932842820623e-09,
+            "dual_min_eigenvalue": 1.0162637056576371e-08,
+            "dual_partial_trace_max": 0.99999999999
+          },
+          "SDP_X": {
+            "lower": 8.694181648271902,
+            "upper": 8.694188854498323,
+            "value": 8.694185251385113,
+            "gap": 7.206226420919393e-06,
+            "iterations": 81,
+            "primal_min_slack": 1.0993299130558715e-09,
+            "dual_min_eigenvalue": 9.575830494272558e-09,
+            "dual_partial_trace_max": 0.9999999999899996
+          },
+          "order_log_lower_bound": 0.1572189447324826,
+          "full_order_log_c": 1.079039411208699
+        },
+        {
+          "tau": 1.0,
+          "beta": 3.0,
+          "R": 3.9232849856056937,
+          "log_mu_ratio": 4.232124411561648,
+          "ratio_interval": [
+            4.232123590857086,
+            4.2321252322662275
+          ],
+          "log_mu_Y": 20.197224178089364,
+          "log_mu_X": 15.965099766527716,
+          "energy_part": 4.183346173608013,
+          "entropy_difference": -0.30883942595595393,
+          "centered_ratio": 0.048778237953635006,
+          "SDP_Y": {
+            "lower": 8.999992803664464,
+            "upper": 9.000000009893963,
+            "value": 8.999996406779214,
+            "gap": 7.206229499345795e-06,
+            "iterations": 62,
+            "primal_min_slack": 1.0993289833177424e-09,
+            "dual_min_eigenvalue": 9.884953795588438e-09,
+            "dual_partial_trace_max": 0.99999999999
+          },
+          "SDP_X": {
+            "lower": 8.571523771476214,
+            "upper": 8.571530977702043,
+            "value": 8.571527374589127,
+            "gap": 7.206225829392565e-06,
+            "iterations": 87,
+            "primal_min_slack": 1.0993286363730472e-09,
+            "dual_min_eigenvalue": 8.962309150507313e-09,
+            "dual_partial_trace_max": 0.9999999999900001
+          },
+          "order_log_lower_bound": 7.988174183757831
+        },
+        {
+          "tau": 4.0,
+          "beta": 12.0,
+          "R": 16.733383895706453,
+          "log_mu_ratio": 16.782170820244673,
+          "ratio_interval": [
+            16.78216999953678,
+            16.7821716409526
+          ],
+          "log_mu_Y": 74.19722417808926,
+          "log_mu_X": 57.415053357844585,
+          "energy_part": 16.73338469443205,
+          "entropy_difference": -0.04878692453821998,
+          "centered_ratio": 0.048786125812622316,
+          "SDP_Y": {
+            "lower": 8.999992803663806,
+            "upper": 9.000000009893963,
+            "value": 8.999996406778884,
+            "gap": 7.206230156597826e-06,
+            "iterations": 62,
+            "primal_min_slack": 1.099329010621332e-09,
+            "dual_min_eigenvalue": 9.884953890918095e-09,
+            "dual_partial_trace_max": 0.99999999999
+          },
+          "SDP_X": {
+            "lower": 8.571456160743342,
+            "upper": 8.571463366968961,
+            "value": 8.57145976385615,
+            "gap": 7.206225619782458e-06,
+            "iterations": 86,
+            "primal_min_slack": 1.0993294673676305e-09,
+            "dual_min_eigenvalue": 8.962175197386285e-09,
+            "dual_partial_trace_max": 0.99999999999
+          },
+          "order_log_lower_bound": 31.999999999999915
+        },
+        {
+          "tau": 16.0,
+          "beta": 48.0,
+          "R": 66.93353877772819,
+          "log_mu_ratio": 66.98232490354081,
+          "ratio_interval": [
+            66.98232408283295,
+            66.9823257242487
+          ],
+          "log_mu_Y": 290.197224178089,
+          "log_mu_X": 223.2148992745482,
+          "energy_part": 66.9335387777282,
+          "entropy_difference": -0.04878612581262587,
+          "centered_ratio": 0.04878612581261166,
+          "SDP_Y": {
+            "lower": 8.999992803663988,
+            "upper": 9.000000009893963,
+            "value": 8.999996406778976,
+            "gap": 7.206229975409428e-06,
+            "iterations": 62,
+            "primal_min_slack": 1.0993290917673388e-09,
+            "dual_min_eigenvalue": 9.884954053117083e-09,
+            "dual_partial_trace_max": 0.99999999999
+          },
+          "SDP_X": {
+            "lower": 8.571456160743839,
+            "upper": 8.571463366968954,
+            "value": 8.571459763856396,
+            "gap": 7.206225115297116e-06,
+            "iterations": 86,
+            "primal_min_slack": 1.0993294274069523e-09,
+            "dual_min_eigenvalue": 8.962176157424308e-09,
+            "dual_partial_trace_max": 0.99999999999
+          },
+          "order_log_lower_bound": 128.0
+        }
+      ]
+    },
+    {
+      "model": "XX",
+      "L": 2,
+      "d": 2,
+      "seam": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "dimension": 16,
+      "complement_dimension": 1,
+      "SDP_variables": 1,
+      "energy_defect": 0.5857864376269044,
+      "ground": [
+        {
+          "lower": 0.9999992046479604,
+          "upper": 1.0000000530238478,
+          "value": 0.9999996288359041,
+          "gap": 8.483758873190084e-07,
+          "iterations": 58,
+          "primal_min_slack": 5.3023847788049014e-08,
+          "dual_min_eigenvalue": 5.3022918035775215e-08,
+          "dual_partial_trace_max": 0.99999999999,
+          "pure_exact": 1.0,
+          "degeneracy": 1
+        },
+        {
+          "lower": 0.9999992046479612,
+          "upper": 1.0000000530238475,
+          "value": 0.9999996288359043,
+          "gap": 8.483758863198076e-07,
+          "iterations": 58,
+          "primal_min_slack": 5.30238475766681e-08,
+          "dual_min_eigenvalue": 5.302291799352901e-08,
+          "dual_partial_trace_max": 0.99999999999,
+          "pure_exact": 0.9999999999999998,
+          "degeneracy": 1
+        }
+      ],
+      "rows": [
+        {
+          "tau": 0.0,
+          "beta": 0.0,
+          "R": 0.0,
+          "log_mu_ratio": 4.44089051031385e-16,
+          "ratio_interval": [
+            -8.483755274318375e-07,
+            8.483755278924777e-07
+          ],
+          "log_mu_Y": 4.241778539172828e-07,
+          "log_mu_X": 4.2417785347319376e-07,
+          "energy_part": 0.0,
+          "entropy_difference": -2.5741802429135098e-16,
+          "centered_ratio": 4.44089051031385e-16,
+          "SDP_Y": {
+            "lower": 0.99999999999,
+            "upper": 1.0000008483658875,
+            "value": 1.0000004241779439,
+            "gap": 8.48375887541053e-07,
+            "iterations": 55,
+            "primal_min_slack": 8.483658871866162e-07,
+            "dual_min_eigenvalue": 0.06250013604134608,
+            "dual_partial_trace_max": 0.99999999999
+          },
+          "SDP_X": {
+            "lower": 0.9999999999899998,
+            "upper": 1.0000008483658873,
+            "value": 1.0000004241779434,
+            "gap": 8.48375887541053e-07,
+            "iterations": 55,
+            "primal_min_slack": 8.483658869051746e-07,
+            "dual_min_eigenvalue": 0.06250013603182408,
+            "dual_partial_trace_max": 0.99999999999
+          },
+          "order_log_lower_bound": 0.0,
+          "full_order_log_c": 4.4408920985006257e-16
+        },
+        {
+          "tau": 0.1,
+          "beta": 0.2,
+          "R": 0.00996681056114923,
+          "log_mu_ratio": 0.11715728752531862,
+          "ratio_interval": [
+            0.11715643914911916,
+            0.11715813590151808
+          ],
+          "log_mu_Y": 0.399999628835937,
+          "log_mu_X": 0.28284234131061836,
+          "energy_part": 0.11715728752538089,
+          "entropy_difference": -0.10719047696416928,
+          "centered_ratio": -6.226963389366347e-14,
+          "SDP_Y": {
+            "lower": 0.9999992046480644,
+            "upper": 1.0000000530239486,
+            "value": 0.9999996288360065,
+            "gap": 8.483758842103839e-07,
+            "iterations": 62,
+            "primal_min_slack": 5.302394848728875e-08,
+            "dual_min_eigenvalue": 9.628782391150515e-08,
+            "dual_partial_trace_max": 0.99999999999
+          },
+          "SDP_X": {
+            "lower": 0.9999992046481263,
+            "upper": 1.0000000530240112,
+            "value": 0.9999996288360687,
+            "gap": 8.483758848765177e-07,
+            "iterations": 60,
+            "primal_min_slack": 5.302401125892973e-08,
+            "dual_min_eigenvalue": 1.2272990708509933e-07,
+            "dual_partial_trace_max": 0.99999999999
+          },
+          "order_log_lower_bound": 0.019933598924991146,
+          "full_order_log_c": 0.28378519992355644
+        },
+        {
+          "tau": 1.0,
+          "beta": 2.0,
+          "R": 0.7694065045709113,
+          "log_mu_ratio": 1.1715728752538053,
+          "ratio_interval": [
+            1.1715720268776044,
+            1.1715737236300061
+          ],
+          "log_mu_Y": 3.9999996288358317,
+          "log_mu_X": 2.8284267535820264,
+          "energy_part": 1.1715728752538088,
+          "entropy_difference": -0.40216637068289396,
+          "centered_ratio": -3.552713678800501e-15,
+          "SDP_Y": {
+            "lower": 0.9999992046479642,
+            "upper": 1.0000000530238498,
+            "value": 0.999999628835907,
+            "gap": 8.483758855426515e-07,
+            "iterations": 57,
+            "primal_min_slack": 5.3023849573149906e-08,
+            "dual_min_eigenvalue": 5.304071110340535e-08,
+            "dual_partial_trace_max": 0.99999999999
+          },
+          "SDP_X": {
+            "lower": 0.9999992046479672,
+            "upper": 1.0000000530238538,
+            "value": 0.9999996288359105,
+            "gap": 8.483758865418523e-07,
+            "iterations": 57,
+            "primal_min_slack": 5.302385382024599e-08,
+            "dual_min_eigenvalue": 5.320880239057372e-08,
+            "dual_partial_trace_max": 0.99999999999
+          },
+          "order_log_lower_bound": 1.5231883119115286,
+          "full_order_log_c": 3.6828952499357803
+        },
+        {
+          "tau": 4.0,
+          "beta": 8.0,
+          "R": 4.61728271928626,
+          "log_mu_ratio": 4.686291501015235,
+          "ratio_interval": [
+            4.686290652639033,
+            4.6862923493914375
+          ],
+          "log_mu_Y": 15.99999962883581,
+          "log_mu_X": 11.313708127820576,
+          "energy_part": 4.686291501015235,
+          "entropy_difference": -0.06900878172897507,
+          "centered_ratio": 0.0,
+          "SDP_Y": {
+            "lower": 0.9999992046479609,
+            "upper": 1.0000000530238478,
+            "value": 0.9999996288359043,
+            "gap": 8.483758868749192e-07,
+            "iterations": 58,
+            "primal_min_slack": 5.302384789010514e-08,
+            "dual_min_eigenvalue": 5.3022918003082066e-08,
+            "dual_partial_trace_max": 0.99999999999
+          },
+          "SDP_X": {
+            "lower": 0.9999992046479601,
+            "upper": 1.0000000530238478,
+            "value": 0.9999996288359039,
+            "gap": 8.483758876520753e-07,
+            "iterations": 58,
+            "primal_min_slack": 5.302384766804439e-08,
+            "dual_min_eigenvalue": 5.302291808604959e-08,
+            "dual_partial_trace_max": 0.99999999999
+          },
+          "order_log_lower_bound": 7.994634397912535
+        },
+        {
+          "tau": 16.0,
+          "beta": 32.0,
+          "R": 18.74516250035245,
+          "log_mu_ratio": 18.74516600406094,
+          "ratio_interval": [
+            18.745165155684738,
+            18.745166852437144
+          ],
+          "log_mu_Y": 63.99999962883574,
+          "log_mu_X": 45.2548336247748,
+          "energy_part": 18.74516600406094,
+          "entropy_difference": -3.5037084913369654e-06,
+          "centered_ratio": 0.0,
+          "SDP_Y": {
+            "lower": 0.9999992046479604,
+            "upper": 1.0000000530238478,
+            "value": 0.9999996288359041,
+            "gap": 8.483758873190084e-07,
+            "iterations": 58,
+            "primal_min_slack": 5.3023847788049014e-08,
+            "dual_min_eigenvalue": 5.3022918035775215e-08,
+            "dual_partial_trace_max": 0.99999999999
+          },
+          "SDP_X": {
+            "lower": 0.9999992046479611,
+            "upper": 1.0000000530238475,
+            "value": 0.9999996288359043,
+            "gap": 8.4837588643083e-07,
+            "iterations": 58,
+            "primal_min_slack": 5.30238475766681e-08,
+            "dual_min_eigenvalue": 5.302291799352901e-08,
+            "dual_partial_trace_max": 0.99999999999
+          },
+          "order_log_lower_bound": 31.99999999999919
+        }
+      ]
+    },
+    {
+      "model": "Heisenberg",
+      "L": 2,
+      "d": 2,
+      "seam": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "dimension": 16,
+      "complement_dimension": 1,
+      "SDP_variables": 1,
+      "energy_defect": 0.9999999999999987,
+      "ground": [
+        {
+          "lower": 0.9999992046479615,
+          "upper": 1.0000000530238478,
+          "value": 0.9999996288359047,
+          "gap": 8.483758862087853e-07,
+          "iterations": 58,
+          "primal_min_slack": 5.302384770478228e-08,
+          "dual_min_eigenvalue": 5.302291805401658e-08,
+          "dual_partial_trace_max": 0.99999999999,
+          "pure_exact": 1.0,
+          "degeneracy": 1
+        },
+        {
+          "lower": 0.9999992046479622,
+          "upper": 1.0000000530238475,
+          "value": 0.9999996288359049,
+          "gap": 8.483758853206069e-07,
+          "iterations": 58,
+          "primal_min_slack": 5.3023847640209736e-08,
+          "dual_min_eigenvalue": 5.302291803367447e-08,
+          "dual_partial_trace_max": 0.99999999999,
+          "pure_exact": 1.0,
+          "degeneracy": 1
+        }
+      ],
+      "rows": [
+        {
+          "tau": 0.0,
+          "beta": 0.0,
+          "R": 0.0,
+          "log_mu_ratio": 2.220445519854721e-16,
+          "ratio_interval": [
+            -8.483755274318375e-07,
+            8.483755278924777e-07
+          ],
+          "log_mu_Y": 4.241778539172828e-07,
+          "log_mu_X": 4.2417785369523826e-07,
+          "energy_part": 0.0,
+          "entropy_difference": -3.5373525245438074e-17,
+          "centered_ratio": 2.220445519854721e-16,
+          "SDP_Y": {
+            "lower": 0.99999999999,
+            "upper": 1.0000008483658875,
+            "value": 1.0000004241779439,
+            "gap": 8.48375887541053e-07,
+            "iterations": 55,
+            "primal_min_slack": 8.483658870626094e-07,
+            "dual_min_eigenvalue": 0.06250013602393567,
+            "dual_partial_trace_max": 0.99999999999
+          },
+          "SDP_X": {
+            "lower": 0.9999999999899999,
+            "upper": 1.0000008483658873,
+            "value": 1.0000004241779437,
+            "gap": 8.483758874300307e-07,
+            "iterations": 55,
+            "primal_min_slack": 8.48365886775626e-07,
+            "dual_min_eigenvalue": 0.06250013602569707,
+            "dual_partial_trace_max": 0.99999999999
+          },
+          "order_log_lower_bound": 0.0,
+          "full_order_log_c": 8.88178419700125e-16
+        },
+        {
+          "tau": 0.1,
+          "beta": 0.2,
+          "R": 0.016444390414405596,
+          "log_mu_ratio": 0.19999999999996004,
+          "ratio_interval": [
+            0.19999915162375864,
+            0.20000084837616133
+          ],
+          "log_mu_Y": 0.5999996288358901,
+          "log_mu_X": 0.39999962883593004,
+          "energy_part": 0.19999999999999973,
+          "entropy_difference": -0.18355560958555434,
+          "centered_ratio": -3.9690473130349346e-14,
+          "SDP_Y": {
+            "lower": 0.9999992046480166,
+            "upper": 1.0000000530239026,
+            "value": 0.9999996288359596,
+            "gap": 8.483758859867407e-07,
+            "iterations": 61,
+            "primal_min_slack": 5.302390241269078e-08,
+            "dual_min_eigenvalue": 9.628782400341322e-08,
+            "dual_partial_trace_max": 0.99999999999
+          },
+          "SDP_X": {
+            "lower": 0.9999992046480559,
+            "upper": 1.0000000530239428,
+            "value": 0.9999996288359994,
+            "gap": 8.483758868749192e-07,
+            "iterations": 61,
+            "primal_min_slack": 5.302394264764029e-08,
+            "dual_min_eigenvalue": 1.1751835575307284e-07,
+            "dual_partial_trace_max": 0.99999999999
+          },
+          "order_log_lower_bound": 0.03284798923026996,
+          "full_order_log_c": 0.34870562546465095
+        },
+        {
+          "tau": 1.0,
+          "beta": 2.0,
+          "R": 1.6709160534739231,
+          "log_mu_ratio": 1.9999999999999951,
+          "ratio_interval": [
+            1.9999991516237927,
+            2.000000848376198
+          ],
+          "log_mu_Y": 5.999999628835828,
+          "log_mu_X": 3.9999996288358326,
+          "energy_part": 1.9999999999999973,
+          "entropy_difference": -0.329083946526072,
+          "centered_ratio": -2.220446049250313e-15,
+          "SDP_Y": {
+            "lower": 0.9999992046479595,
+            "upper": 1.0000000530238482,
+            "value": 0.9999996288359039,
+            "gap": 8.48375888651276e-07,
+            "iterations": 58,
+            "primal_min_slack": 5.302384779679307e-08,
+            "dual_min_eigenvalue": 5.304071119939877e-08,
+            "dual_partial_trace_max": 0.99999999999
+          },
+          "SDP_X": {
+            "lower": 0.9999992046479622,
+            "upper": 1.0000000530238493,
+            "value": 0.9999996288359058,
+            "gap": 8.483758870969638e-07,
+            "iterations": 58,
+            "primal_min_slack": 5.3023849444417376e-08,
+            "dual_min_eigenvalue": 5.315467528142718e-08,
+            "dual_partial_trace_max": 0.99999999999
+          },
+          "order_log_lower_bound": 2.7916599753100617,
+          "full_order_log_c": 4.668067246884052
+        },
+        {
+          "tau": 4.0,
+          "beta": 8.0,
+          "R": 7.998994006253497,
+          "log_mu_ratio": 7.999999999999991,
+          "ratio_interval": [
+            7.999999151623789,
+            8.00000084837619
+          ],
+          "log_mu_Y": 23.99999962883581,
+          "log_mu_X": 15.999999628835818,
+          "energy_part": 7.999999999999989,
+          "entropy_difference": -0.001005993746494127,
+          "centered_ratio": 1.7763568394002505e-15,
+          "SDP_Y": {
+            "lower": 0.9999992046479627,
+            "upper": 1.0000000530238478,
+            "value": 0.9999996288359052,
+            "gap": 8.483758850985623e-07,
+            "iterations": 58,
+            "primal_min_slack": 5.3023847668060537e-08,
+            "dual_min_eigenvalue": 5.3022917979776014e-08,
+            "dual_partial_trace_max": 0.99999999999
+          },
+          "SDP_X": {
+            "lower": 0.9999992046479608,
+            "upper": 1.0000000530238478,
+            "value": 0.9999996288359043,
+            "gap": 8.483758869859415e-07,
+            "iterations": 58,
+            "primal_min_slack": 5.302384760600514e-08,
+            "dual_min_eigenvalue": 5.3022918082893666e-08,
+            "dual_partial_trace_max": 0.99999999999
+          },
+          "order_log_lower_bound": 11.999994598313437
+        },
+        {
+          "tau": 16.0,
+          "beta": 32.0,
+          "R": 31.999999999999922,
+          "log_mu_ratio": 31.999999999999957,
+          "ratio_interval": [
+            31.999999151623758,
+            32.00000084837616
+          ],
+          "log_mu_Y": 95.99999962883572,
+          "log_mu_X": 63.999999628835766,
+          "energy_part": 31.999999999999957,
+          "entropy_difference": -3.552713678800501e-14,
+          "centered_ratio": 0.0,
+          "SDP_Y": {
+            "lower": 0.9999992046479615,
+            "upper": 1.0000000530238478,
+            "value": 0.9999996288359047,
+            "gap": 8.483758862087853e-07,
+            "iterations": 58,
+            "primal_min_slack": 5.302384770478228e-08,
+            "dual_min_eigenvalue": 5.302291805401658e-08,
+            "dual_partial_trace_max": 0.99999999999
+          },
+          "SDP_X": {
+            "lower": 0.9999992046479624,
+            "upper": 1.0000000530238475,
+            "value": 0.999999628835905,
+            "gap": 8.483758850985623e-07,
+            "iterations": 58,
+            "primal_min_slack": 5.302384761597779e-08,
+            "dual_min_eigenvalue": 5.3022918002196196e-08,
+            "dual_partial_trace_max": 0.99999999999
+          },
+          "order_log_lower_bound": 48.0
+        }
+      ]
+    },
+    {
+      "model": "XX",
+      "L": 4,
+      "d": 2,
+      "seam": [
+        0,
+        1,
+        3,
+        4,
+        5,
+        7
+      ],
+      "dimension": 256,
+      "complement_dimension": 4,
+      "SDP_variables": 5,
+      "energy_defect": 0.21530119499343758,
+      "ground": [
+        {
+          "lower": 3.9999940660159754,
+          "upper": 4.000000023274403,
+          "value": 3.9999970446451893,
+          "gap": 5.9572584274469875e-06,
+          "iterations": 67,
+          "primal_min_slack": 5.81860102611848e-09,
+          "dual_min_eigenvalue": 2.327170433936947e-08,
+          "dual_partial_trace_max": 0.9999999999899999,
+          "pure_exact": 4.0,
+          "degeneracy": 1
+        },
+        {
+          "lower": 3.678238569535565,
+          "upper": 3.678244526791422,
+          "value": 3.678241548163493,
+          "gap": 5.957255857058641e-06,
+          "iterations": 78,
+          "primal_min_slack": 5.818603399016491e-09,
+          "dual_min_eigenvalue": 1.845850790851454e-08,
+          "dual_partial_trace_max": 0.9999999999899999,
+          "pure_exact": 3.678244503516718,
+          "degeneracy": 1
+        }
+      ],
+      "rows": [
+        {
+          "tau": 0.0,
+          "beta": 0.0,
+          "R": 0.0,
+          "log_mu_ratio": -1.0482725798510728e-11,
+          "ratio_interval": [
+            -1.4894595838016567e-06,
+            1.489438618561127e-06
+          ],
+          "log_mu_Y": 1.3862951057793946,
+          "log_mu_X": 1.3862951057898774,
+          "energy_part": 0.0,
+          "entropy_difference": 1.0482725798510728e-11,
+          "centered_ratio": -1.0482725798510728e-11,
+          "SDP_Y": {
+            "lower": 3.999999999717739,
+            "upper": 4.000005957560511,
+            "value": 4.000002978639125,
+            "gap": 5.957842771575628e-06,
+            "iterations": 71,
+            "primal_min_slack": 1.4893901247009996e-06,
+            "dual_min_eigenvalue": 0.015625000024816437,
+            "dual_partial_trace_max": 0.99999999999
+          },
+          "SDP_X": {
+            "lower": 3.9999999998016,
+            "upper": 4.000005957560511,
+            "value": 4.000002978681056,
+            "gap": 5.957758910657418e-06,
+            "iterations": 71,
+            "primal_min_slack": 1.489390124368155e-06,
+            "dual_min_eigenvalue": 0.015625000020025002,
+            "dual_partial_trace_max": 0.99999999999
+          },
+          "order_log_lower_bound": -0.0,
+          "full_order_log_c": 1.3322676295501875e-15
+        },
+        {
+          "tau": 0.1,
+          "beta": 0.4,
+          "R": 0.0003894944181048743,
+          "log_mu_ratio": 0.1246996577820636,
+          "ratio_interval": [
+            0.12469813917681162,
+            0.12470117638735925
+          ],
+          "log_mu_Y": 2.5176644721793835,
+          "log_mu_X": 2.39296481439732,
+          "energy_part": 0.08612047799737504,
+          "entropy_difference": -0.12431016336395873,
+          "centered_ratio": 0.038579179784688555,
+          "SDP_Y": {
+            "lower": 3.999994066015889,
+            "upper": 4.000000023274426,
+            "value": 3.9999970446451574,
+            "gap": 5.957258537137022e-06,
+            "iterations": 71,
+            "primal_min_slack": 5.818606402503044e-09,
+            "dual_min_eigenvalue": 2.597476302900072e-08,
+            "dual_partial_trace_max": 0.9999999999899999
+          },
+          "SDP_X": {
+            "lower": 3.848616251687608,
+            "upper": 3.848622208945352,
+            "value": 3.84861923031648,
+            "gap": 5.9572577439936936e-06,
+            "iterations": 76,
+            "primal_min_slack": 5.818611559155722e-09,
+            "dual_min_eigenvalue": 2.4691287241625067e-08,
+            "dual_partial_trace_max": 0.9999999999899999
+          },
+          "order_log_lower_bound": 0.03998961798309651,
+          "full_order_log_c": 0.5704212366030864
+        },
+        {
+          "tau": 1.0,
+          "beta": 4.0,
+          "R": 0.6193933613446987,
+          "log_mu_ratio": 0.9448143698181362,
+          "ratio_interval": [
+            0.9448128155654143,
+            0.9448159240709586
+          ],
+          "log_mu_Y": 12.700002121265669,
+          "log_mu_X": 11.755187751447533,
+          "energy_part": 0.8612047799737503,
+          "entropy_difference": -0.32542100847343747,
+          "centered_ratio": 0.08360958984438582,
+          "SDP_Y": {
+            "lower": 3.999994066015912,
+            "upper": 4.000000023274403,
+            "value": 3.9999970446451574,
+            "gap": 5.9572584909517445e-06,
+            "iterations": 66,
+            "primal_min_slack": 5.8186011577311635e-09,
+            "dual_min_eigenvalue": 2.3271704826251685e-08,
+            "dual_partial_trace_max": 0.9999999999899999
+          },
+          "SDP_X": {
+            "lower": 3.6791554289610566,
+            "upper": 3.6791613862169004,
+            "value": 3.6791584075889787,
+            "gap": 5.957255843735965e-06,
+            "iterations": 78,
+            "primal_min_slack": 5.8186034915256405e-09,
+            "dual_min_eigenvalue": 1.846918099128924e-08,
+            "dual_partial_trace_max": 0.9999999999900001
+          },
+          "order_log_lower_bound": 2.5350929370968163,
+          "full_order_log_c": 10.306706270811892
+        },
+        {
+          "tau": 4.0,
+          "beta": 16.0,
+          "R": 3.3703821501630102,
+          "log_mu_ratio": 3.5286779443416165,
+          "ratio_interval": [
+            3.528676389887096,
+            3.5286794987962247
+          ],
+          "log_mu_Y": 46.64112761821997,
+          "log_mu_X": 43.11244967387835,
+          "energy_part": 3.4448191198950013,
+          "entropy_difference": -0.15829579417860629,
+          "centered_ratio": 0.08385882444661519,
+          "SDP_Y": {
+            "lower": 3.9999940660160203,
+            "upper": 4.000000023274402,
+            "value": 3.999997044645211,
+            "gap": 5.957258381705799e-06,
+            "iterations": 67,
+            "primal_min_slack": 5.818600734481232e-09,
+            "dual_min_eigenvalue": 2.3271703996875848e-08,
+            "dual_partial_trace_max": 0.9999999999899999
+          },
+          "SDP_X": {
+            "lower": 3.67823856964015,
+            "upper": 3.678244526896006,
+            "value": 3.678241548268078,
+            "gap": 5.957255855726373e-06,
+            "iterations": 78,
+            "primal_min_slack": 5.818603475305318e-09,
+            "dual_min_eigenvalue": 1.8458508004688667e-08,
+            "dual_partial_trace_max": 0.9999999999899999
+          },
+          "order_log_lower_bound": 11.304959741588494
+        },
+        {
+          "tau": 16.0,
+          "beta": 64.0,
+          "R": 13.779270560025509,
+          "log_mu_ratio": 13.86313530405505,
+          "ratio_interval": [
+            13.863133749600522,
+            13.863136858509684
+          ],
+          "log_mu_Y": 182.40562960603708,
+          "log_mu_X": 168.54249430198203,
+          "energy_part": 13.779276479580005,
+          "entropy_difference": -0.08386474402954036,
+          "centered_ratio": 0.083858824475044,
+          "SDP_Y": {
+            "lower": 3.9999940660159754,
+            "upper": 4.000000023274403,
+            "value": 3.9999970446451893,
+            "gap": 5.9572584274469875e-06,
+            "iterations": 67,
+            "primal_min_slack": 5.818600492570463e-09,
+            "dual_min_eigenvalue": 2.327170419770991e-08,
+            "dual_partial_trace_max": 0.9999999999899999
+          },
+          "SDP_X": {
+            "lower": 3.6782385695354862,
+            "upper": 3.6782445267914223,
+            "value": 3.678241548163454,
+            "gap": 5.95725593610652e-06,
+            "iterations": 78,
+            "primal_min_slack": 5.818602843904974e-09,
+            "dual_min_eigenvalue": 1.845850791092395e-08,
+            "dual_partial_trace_max": 0.99999999999
+          },
+          "order_log_lower_bound": 45.25483399585766
+        }
+      ]
+    },
+    {
+      "model": "Heisenberg",
+      "L": 4,
+      "d": 2,
+      "seam": [
+        0,
+        1,
+        3,
+        4,
+        5,
+        7
+      ],
+      "dimension": 256,
+      "complement_dimension": 4,
+      "SDP_variables": 5,
+      "energy_defect": 0.3489065910628275,
+      "ground": [
+        {
+          "lower": 3.9999940660162814,
+          "upper": 4.000000023274405,
+          "value": 3.999997044645343,
+          "gap": 5.957258123245879e-06,
+          "iterations": 67,
+          "primal_min_slack": 5.818600339974696e-09,
+          "dual_min_eigenvalue": 2.327170413480549e-08,
+          "dual_partial_trace_max": 0.9999999999899999,
+          "pure_exact": 4.000000000000002,
+          "degeneracy": 1
+        },
+        {
+          "lower": 3.841508469268045,
+          "upper": 3.8415144265251846,
+          "value": 3.8415114478966146,
+          "gap": 5.957257139588279e-06,
+          "iterations": 74,
+          "primal_min_slack": 5.818601955726559e-09,
+          "dual_min_eigenvalue": 2.1688425056664438e-08,
+          "dual_partial_trace_max": 0.9999999999899999,
+          "pure_exact": 3.8415144032506476,
+          "degeneracy": 1
+        }
+      ],
+      "rows": [
+        {
+          "tau": 0.0,
+          "beta": 0.0,
+          "R": 0.0,
+          "log_mu_ratio": -8.589795541524836e-12,
+          "ratio_interval": [
+            -1.4894476455556913e-06,
+            1.489430465761511e-06
+          ],
+          "log_mu_Y": 1.3862951057853639,
+          "log_mu_X": 1.3862951057939537,
+          "energy_part": 0.0,
+          "entropy_difference": 8.589573496919911e-12,
+          "centered_ratio": -8.589795541524836e-12,
+          "SDP_Y": {
+            "lower": 3.999999999765493,
+            "upper": 4.000005957560511,
+            "value": 4.000002978663002,
+            "gap": 5.957795017774714e-06,
+            "iterations": 71,
+            "primal_min_slack": 1.4893901196628525e-06,
+            "dual_min_eigenvalue": 0.015624999976747923,
+            "dual_partial_trace_max": 0.99999999999
+          },
+          "SDP_X": {
+            "lower": 3.9999999998342113,
+            "upper": 4.000005957560512,
+            "value": 4.000002978697362,
+            "gap": 5.95772630029856e-06,
+            "iterations": 71,
+            "primal_min_slack": 1.489390109354033e-06,
+            "dual_min_eigenvalue": 0.015624999856381426,
+            "dual_partial_trace_max": 0.99999999999
+          },
+          "order_log_lower_bound": 0.0,
+          "full_order_log_c": 8.437694987151172e-15
+        },
+        {
+          "tau": 0.1,
+          "beta": 0.4,
+          "R": 0.0006568920851943716,
+          "log_mu_ratio": 0.165977790341711,
+          "ratio_interval": [
+            0.16597628109383872,
+            0.1659792995896134
+          ],
+          "log_mu_Y": 2.9862936222809697,
+          "log_mu_X": 2.8203158319392587,
+          "energy_part": 0.139562636425131,
+          "entropy_difference": -0.16532089825651664,
+          "centered_ratio": 0.026415153916580003,
+          "SDP_Y": {
+            "lower": 3.9999940660163977,
+            "upper": 4.000000023274415,
+            "value": 3.9999970446454065,
+            "gap": 5.957258017552647e-06,
+            "iterations": 69,
+            "primal_min_slack": 5.818603438683362e-09,
+            "dual_min_eigenvalue": 2.559349431938662e-08,
+            "dual_partial_trace_max": 0.9999999999899999
+          },
+          "SDP_X": {
+            "lower": 3.895716841193946,
+            "upper": 3.895722798451442,
+            "value": 3.895719819822694,
+            "gap": 5.9572574961919145e-06,
+            "iterations": 74,
+            "primal_min_slack": 5.818606035703564e-09,
+            "dual_min_eigenvalue": 2.4657650633843376e-08,
+            "dual_partial_trace_max": 0.9999999999899999
+          },
+          "order_log_lower_bound": 0.06538534573703321,
+          "full_order_log_c": 0.7056551963862899
+        },
+        {
+          "tau": 1.0,
+          "beta": 4.0,
+          "R": 1.1224099879081901,
+          "log_mu_ratio": 1.436049112851542,
+          "ratio_interval": [
+            1.4360475928182428,
+            1.4360506328848834
+          ],
+          "log_mu_Y": 17.38629362228092,
+          "log_mu_X": 15.950244509429378,
+          "energy_part": 1.39562636425131,
+          "entropy_difference": -0.31363912494335366,
+          "centered_ratio": 0.040422748600231984,
+          "SDP_Y": {
+            "lower": 3.9999940660159767,
+            "upper": 4.000000023274405,
+            "value": 3.9999970446451907,
+            "gap": 5.957258427891077e-06,
+            "iterations": 69,
+            "primal_min_slack": 5.818600956525837e-09,
+            "dual_min_eigenvalue": 2.3271704498267386e-08,
+            "dual_partial_trace_max": 0.9999999999899999
+          },
+          "SDP_X": {
+            "lower": 3.841527593514336,
+            "upper": 3.8415335507714556,
+            "value": 3.841530572142896,
+            "gap": 5.9572571196042645e-06,
+            "iterations": 74,
+            "primal_min_slack": 5.818601622659652e-09,
+            "dual_min_eigenvalue": 2.168860394920847e-08,
+            "dual_partial_trace_max": 0.9999999999899999
+          },
+          "order_log_lower_bound": 3.887006346877352,
+          "full_order_log_c": 13.01627429181119
+        },
+        {
+          "tau": 4.0,
+          "beta": 16.0,
+          "R": 5.581805924342298,
+          "log_mu_ratio": 5.6229331839060634,
+          "ratio_interval": [
+            5.622931663868921,
+            5.622934703943248
+          ],
+          "log_mu_Y": 65.38629362228095,
+          "log_mu_X": 59.76336043837488,
+          "energy_part": 5.58250545700524,
+          "entropy_difference": -0.041127259563765506,
+          "centered_ratio": 0.0404277269008233,
+          "SDP_Y": {
+            "lower": 3.999994066016092,
+            "upper": 4.0000000232744055,
+            "value": 3.999997044645249,
+            "gap": 5.957258313316061e-06,
+            "iterations": 67,
+            "primal_min_slack": 5.818600682138204e-09,
+            "dual_min_eigenvalue": 2.327170403211331e-08,
+            "dual_partial_trace_max": 0.9999999999899999
+          },
+          "SDP_X": {
+            "lower": 3.841508469268087,
+            "upper": 3.841514426525185,
+            "value": 3.841511447896636,
+            "gap": 5.957257097843893e-06,
+            "iterations": 74,
+            "primal_min_slack": 5.818602710409356e-09,
+            "dual_min_eigenvalue": 2.1688424375066217e-08,
+            "dual_partial_trace_max": 0.9999999999899999
+          },
+          "order_log_lower_bound": 15.999997299155302
+        },
+        {
+          "tau": 16.0,
+          "beta": 64.0,
+          "R": 22.33002182802096,
+          "log_mu_ratio": 22.370449554921777,
+          "ratio_interval": [
+            22.37044803488469,
+            22.370451074958883
+          ],
+          "log_mu_Y": 257.386293622281,
+          "log_mu_X": 235.01584406735924,
+          "energy_part": 22.33002182802096,
+          "entropy_difference": -0.0404277269008162,
+          "centered_ratio": 0.0404277269008162,
+          "SDP_Y": {
+            "lower": 3.9999940660162814,
+            "upper": 4.000000023274405,
+            "value": 3.999997044645343,
+            "gap": 5.957258123245879e-06,
+            "iterations": 67,
+            "primal_min_slack": 5.818600339974696e-09,
+            "dual_min_eigenvalue": 2.327170413480549e-08,
+            "dual_partial_trace_max": 0.9999999999899999
+          },
+          "SDP_X": {
+            "lower": 3.84150846926842,
+            "upper": 3.841514426525183,
+            "value": 3.841511447896801,
+            "gap": 5.957256763000629e-06,
+            "iterations": 74,
+            "primal_min_slack": 5.8186012895927446e-09,
+            "dual_min_eigenvalue": 2.1688424110432372e-08,
+            "dual_partial_trace_max": 0.9999999999899999
+          },
+          "order_log_lower_bound": 64.00000000000001
+        }
+      ]
+    }
+  ],
+  "seconds": 91.05614805221558
+}

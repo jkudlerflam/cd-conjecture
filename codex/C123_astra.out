@@ -1,0 +1,19 @@
+Proved the XX reconnection lemma, uniformly in even \(L\ge4\) and \(\beta\),
+\[
+G\le 2\log2+\left(2\log2+\frac{10\pi}{3}a\right)N.
+\]
+There is no finite largest admissible \(a\). More generally, validity at one positive spacing implies validity at every finite spacing, with changed constants.
+
+Computed the actual multi-pinch \(G\) through \(L=8192\), including both Jordan–Wigner sectors and the doubly pinched denominator. Derived
+\[
+G=R_L-N\log2+O_{a,N}(L^{-2})
+\]
+for fixed \(a,N\). At \(L=8192,\beta=4L,N=1\), \(G=2.372986\). The earlier \(0.986692\) used the unpinched denominator.
+
+Interacting full-spectrum ED reaches 12 qubit sites and 8 SU(3) sites. All checks pass, but these sizes do not establish uniform boundedness.
+
+The general proof remains open. I derived an exact positive temporal-transfer representation and isolated sufficient spectral-radius and boundary-overlap estimates. The available locality and gap bounds do not supply them. Larger cluster calculations were not submitted because network commands are forbidden.
+
+Results and derivations are in [RESULT.md](<<local> Dropbox/Jonah Kudler-Flam/Claude/Projects/Modular c-Theorem/notes/cd_conjecture/codex/work_C123/RESULT.md>) and [PROOF.md](<<local> Dropbox/Jonah Kudler-Flam/Claude/Projects/Modular c-Theorem/notes/cd_conjecture/codex/work_C123/PROOF.md>).
+
+[gpt_solve: backend=codex model=gpt-6-astra effort=high transcript=20261029T204902-19774]
