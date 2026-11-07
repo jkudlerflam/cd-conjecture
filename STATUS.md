@@ -1,6 +1,6 @@
 # Where the c–d conjecture stands
 
-Last updated 2026-10-30 UTC. Read this page first. It is the current state of the project in one place. [REPORT.md](REPORT.md) is the chronological record behind it, and where the two disagree, this page is the one to trust. Every claim carries a tag saying how it was established (see "Tags" at the end).
+Last updated 2026-11-07 UTC. Read this page first. It is the current state of the project in one place. [REPORT.md](REPORT.md) is the chronological record behind it, and where the two disagree, this page is the one to trust. Every claim carries a tag saying how it was established (see "Tags" at the end).
 
 ## Conclusion of the campaign (2026-10-29, updated 2026-10-30)
 
@@ -14,6 +14,12 @@ Last updated 2026-10-30 UTC. Read this page first. It is the current state of th
    - Proved: A ≤ 2M, sharp, for all quasi-free chains (§9.71); the ratio estimate R_L = log[Z(L)²/Z(2L)] ≤ K(d) + kMβ/L, which implies the bound, for all free-fermion families and all classical chains (§9.80, §9.81); the Kohn-stiffness budget Σ D_α ≤ 4M for interacting chains with conserved charges (§9.75); and, given the WZW dictionary, A ≤ (4π/3)d(d² − 1)M for WZW sectors coupled to on-site symmetries (§9.77).
    - Evidence: every solvable family satisfies A/(π M log₂ d) ≤ 1 with equality only at Heisenberg (§9.69); an adversarial search found no violation, and all data fit the tighter A ≤ π M H_{d−1} (§9.73); ring-aware bootstraps track the Casimir term (§9.83).
    - Open: a general proof. Every local route fails for a proved reason (gradient norms, local energy functionals, fixed-support bootstraps, operator-order comparisons, dimension-bounded divergences), and the coarse-seam reconnection lemma turned out to be equivalent to the ratio bound itself (§9.86). The remaining statement is the ground-state reconnection bound L(E_{2L} − 2E_L) ≤ C(d)M.
+   - Round of 2026-11-06/07 on C(d) < ∞, with C(2) as the first target (REPORT §9.88 to §9.95). The work is organized as a compactness cover of the d = 2 bonds (proved reduction, C131) plus one universal route.
+     - Proved and refereed (independent Claude referee, no human check): L(E_{2L} − 2E_L) ≤ C(δ)M on the whole U(1) spin-1/2 class (XXZ plus DM_z plus field) with J_z/J ∈ [−1 + δ, 0], for every field, DM angle and length, with an explicit if enormous C(δ) (C134 at half filling, C136 at all fillings, both by a real-axis Bethe-ansatz argument that uses the negative scattering kernel; §9.94).
+     - Proved, not yet refereed: E_L ≥ e_0 L − π²M/(6L) and the telescoping-certificate form with K = π²/2 for every quadratic qubit bond (C132, C135, C137); K = 0 for frustration-free and classical bonds (C137); the exact point Δ = 1/2 with C = 2π²/9 (C134); zero defect for J_z ≤ −J and the elementary dilute and near-ferromagnetic bands (C129).
+     - Reformulations: variant (a) is equivalent to a purely kinematic statement, that nearest-neighbour marginals of translation-invariant ring states lie within trace distance K(d)/L² of the infinite-chain set (cd_free_route with the C132 correction); this is implied by a telescoping operator inequality h ⊗ 1 + X ⊗ 1 − 1 ⊗ X ≥ e_0 − KM/n² (C135), which numerically loses nothing when X is a sine-weighted sum of bonds plus one-site terms (the window lemma, C137).
+     - Corrections: Kozlowski's rigorous Bethe asymptotics do not cover half filling (C129); ring saturation of the translation-invariant relaxation is false (C135); unbounded A does not need many fast sectors, since v_k = M/k already gives A = M H_N, so the missing lemma is an integrable bound on the central charge above each velocity (C133).
+     - Open: the ferromagnetic crossover Δ → −1 (C138, running), the repulsive side 0 < Δ ≤ 1 including Heisenberg (C139, running), everything off the U(1) class, and the window lemma in its ZZ, transverse-DM and transverse-field directions.
 
 Not established: a rigorous lattice-to-CFT theorem for any of the counterexamples, and independent human review. These are the next steps; a short paper presenting (i) the d = 13 counterexample, (ii) unbounded c at fixed d, and (iii) the velocity-weighted bound is proposed.
 
