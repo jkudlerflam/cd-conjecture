@@ -1,0 +1,23 @@
+# C133: Can a fixed-d chain host an unbounded tower of fast sectors?
+
+Your folder is `../work_C133/`. Paths below are repository-relative, so prefix them with `../../` from your folder. Read `specs/_Cd_target.md` first, then `specs/_bound_background.md` with all updates, STATUS.md item 1 and `contrib/routeA_final/README.md` (the fixed-d construction with c = n + 1), REPORT.md sections 9.71, 9.73, 9.75, 9.77 (C104 to C107) and 9.88, `codex/work_C104/RESULT.md`, `codex/work_C106/RESULT.md` and `contrib/fable_bound_attack/README.md`. Rules of `_bound_background.md` apply (tag claims proved, numerical, heuristic or assumed; no probabilities in files; Python only in your folder; no network commands except a browsing tool for literature; plain prose without em-dashes; PROGRESS.md, RESULT.md, PROOF.md). Your sandbox cannot reach Typhon; write any large computation as a SLURM-ready script and say so.
+
+## The question
+
+This run is adversarial. The campaign is trying to prove C(d) < infinity, equivalently A = sum_a c_a v_a <= C(d) M for every nearest-neighbour chain at local dimension d. Your job is to try to break it, and, if you cannot, to say precisely why.
+
+What is known.
+- At d_0 = 4464 there is a construction (conditional on a Wilsonian input S) with c = n + 1 for every n, so the plain central charge is unbounded at fixed d. Its extra sectors are slow: the logical couplings are of order 2^-600, so their contribution to A is negligible.
+- Each velocity obeys v_a <= 4 e M (Lieb–Robinson). Quadratic (free-fermion) chains obey A <= pi M (proved), so any counterexample must be interacting. Stacking cannot help at fixed d (REPORT 9.73).
+- C104: sectors that are full simple WZW factors of a conserved on-site semisimple symmetry obey A_WZW <= (4 pi/3) d (d^2 - 1) M, conditional on the stiffness dictionary, because levels are quantized and the Kohn stiffness budget sum rho_s <= 4M is proved. Open loopholes listed there: charged U(1) sectors with small Luttinger weight (no lower bound on K), coset stress tensors, and neutral sectors.
+- C106: a d = 4 free chain keeps v/M fixed while its crossover length diverges, so fast sectors can hide until long scales. The entropy bound s(T) <= log d limits the number of sectors that are conformal at temperature T to about (M/T) log d, which allows a tower that grows as T decreases.
+- All known chains satisfy A <= pi M H_{d-1} (REPORT 9.73).
+
+So a counterexample would be a family of interacting bonds at one fixed d, with M bounded, carrying N sectors of velocity of order M each (or a sector with c of order N and v of order M), with N unbounded. The obvious danger is a hierarchy in which sector k becomes conformal only beyond a length xi_k growing with k.
+
+## Tasks
+
+1. Diagnose the slowness of the c = n + 1 construction. Identify which step forces the logical velocities to be small (perturbative elimination of massive sectors, the encoding of n logical channels in cells of bounded dimension, the coupling schedule, or something else), and whether it is forced or an artifact. Give a quantitative relation between the number of encoded channels, the cell size, and the largest achievable logical velocity in units of M, with proof where possible.
+2. Try to build a fast tower. Candidates, each to be carried as far as possible and then either completed or obstructed with a precise reason. (a) Hierarchical emergence: sector k is conformal only beyond length xi_k = b^k, with velocity of order M, at fixed d. (b) The U(1) loophole of C104: many U(1) bosons of velocity of order M and small Luttinger weight coupled to a bounded number of on-site charges, so that the Kohn budget sum v_a K_a <= 4 pi M is respected while sum v_a grows. (c) Neutral or coset sectors (Ising and Majorana type, parafermions, coset stress tensors of a large symmetric chain) produced at fixed d by an encoding with velocities of order M. (d) Any construction you find in the literature on large-c or many-sector chains at fixed local dimension.
+3. Test numerically every candidate small enough for exact diagonalization or DMRG at d <= 6: measure A/M from the Casimir energy on rings (vacuum-compatible lengths), and the doubling ratio Q_L = L (E_{2L} - 2 E_L)/M, against the tuning parameter that is supposed to grow N. Growth of A/M with the parameter is the signal. Compare with the envelope pi M H_{d-1}.
+4. If no tower can be built, state the obstruction as a lemma about fixed-d locality (for example a bound on the number of sectors of velocity at least u, in terms of d and M/u, valid whatever the crossover lengths), prove as much of it as you can, and say which missing step would turn it into a proof of C(d) < infinity. Say how it relates to lessons 1 to 5 of `_Cd_target.md`.
