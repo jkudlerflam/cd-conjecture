@@ -1,0 +1,71 @@
+{
+ "T1_crossed_equals_direct_trace": {
+  "ok": true,
+  "max_abs_error": 4.440892098500626e-15
+ },
+ "X1_xx_product_vs_ED": {
+  "ok": true,
+  "err_L2": 8.094823629178904e-07,
+  "err_L_ge_4": 2.3506641078085977e-11
+ },
+ "X2_xx_theorem": {
+  "ok": true,
+  "X2_r1.5": "{'Vprime_over_M': np.float64(4.1562), 'K': np.float64(2.0384), 'max_violation': np.float64(-1.3889)}",
+  "X2_r2": "{'Vprime_over_M': np.float64(5.5416), 'K': np.float64(1.4413), 'max_violation': np.float64(-1.2575)}"
+ },
+ "X3_xx_optimal_Vprime_S2_Kln2": {
+  "ok": true,
+  "Vprime_over_M": 4.087414954051105
+ },
+ "X4_xx_finite_m_levels_converge": {
+  "ok": true,
+  "levels_n1": "[np.float64(1.40586), np.float64(1.41549)]",
+  "exact_n1": 1.4424509774535597,
+  "m2_times_diff_n1": "[np.float64(1.317), np.float64(1.321)]",
+  "levels_Q1": "[np.float64(0.41056), np.float64(0.41211)]",
+  "delta_beta": 0.4164451752784813,
+  "m2_times_diff_Q1": "[np.float64(0.212), np.float64(0.213)]"
+ },
+ "Z1_zeroT_deficit_decreasing": {
+  "ok": true,
+  "D2_and_D12_over_M": "{'XX': [np.float64(1.4535), np.float64(1.0556)], 'XXZ05': [np.float64(2.0), np.float64(1.3745)], 'HEIS': [np.float64(2.4548), np.float64(1.671)], 'XXZ2': [np.float64(2.0415), np.float64(0.8552)], 'TFIM': [np.float64(0.3987), np.float64(0.371)], 'XYI': [np.float64(1.0823), np.float64(0.501)]}"
+ },
+ "E1_eps0_extrapolation_XX": {
+  "ok": true,
+  "extrapolated": -1.4152076413257402,
+  "exact": -1.4152076398462619,
+  "error": -1.4794783176341753e-09
+ },
+ "I1_heisenberg_composite": {
+  "ok": true,
+  "eps_t": 0.17220894145346308,
+  "eps_s": 0.3049846141965979,
+  "ratio": 1.7710149753113458,
+  "overlap_singlet": 9.421734056865316e-32,
+  "nearest_partner_gap": 0.13277567274313287,
+  "lambda_global": 0.8855074876556729,
+  "eps_s_over_2eps_t": 0.8855074876556729,
+  "fock_margin_min_L248": 0.42851037897313415
+ },
+ "I2_fock_domination_all_models_m5_b4": {
+  "ok": true,
+  "lambda_global_margin_fmin": "{'XX': (1.0, 0.0, 0.407), 'XXZ05': (1.0, 0.0, 0.955), 'HEIS': (0.953, 0.0, 0.982), 'XXZ2': (1.0, 0.0014, 0.888), 'TFIM': (1.0, 0.0, 0.512), 'XYI': (1.0, 0.0, 0.382), 'XYZ': (1.0, 0.0, 0.93), 'XXZSTAG': (1.0, 0.0, 0.853)}"
+ },
+ "I3_su2_column_representation": {
+  "ok": true,
+  "commutator_alternating": 4.444606016413297e-16,
+  "commutator_uniform": 1.3294300489527855
+ },
+ "I4_two_insertion_nonadditive": {
+  "ok": true,
+  "opposite_pair": "((-1, 5, 0.5729), (1, 1, 0.5729), 1.146, 0.454, 0.662)",
+  "like_pair": "((1, 0, 0.2501), (1, 0, 0.2501), 0.5, 0.89)"
+ },
+ "M1_infinite_m_spot_check": {
+  "ok": true,
+  "recomputed": 0.6135079032515032,
+  "stored": 0.6135079032515032
+ },
+ "runtime_seconds": 84.79761004447937,
+ "all_pass": true
+}
