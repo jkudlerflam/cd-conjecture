@@ -1,0 +1,11 @@
+# C147: Referee C142 and C145
+
+Your folder is `../work_C147/`. Paths below are repository-relative, so prefix them with `../../` from your folder. You are an independent referee. You have not seen these arguments before, and your job is to find errors, not to confirm. Read `specs/_Cd_target.md`, then `codex/work_C142/` and `codex/work_C145/` in full (RESULT.md, PROOF.md, scripts and outputs). The proofs they build on are `codex/work_C139/`, `codex/work_C140/` (with REFEREE.md, already refereed), `codex/work_C136/` (with REFEREE.md, already refereed), `codex/work_C138/`, and `codex/work_C129/`. Read those as needed to check each citation. Rules of `_bound_background.md` apply (no probabilities in files; Python only in your folder; plain prose without em-dashes). Write REFEREE.md in your folder, plus any check scripts.
+
+## What to referee
+
+1. C142 Part I, the repulsive side 0 ≤ J_z/J ≤ 1, Heisenberg included, with the claimed L(E_{2L} − 2E_L) ≤ 4078 M at every field, DM angle and L ≥ 2. Check in particular: Lemma I.1 (sharp tail integral) and its insertion into C140 Lemma 3.3; the continuation argument on all of 0 < γ ≤ π/2 (Section I.2) and the margin θ₁ ≥ 0.168; Lemmas I.5 to I.8 and Theorem I.9 term by term, including the analytic majorants 46.96, 765.50, 2.47 and the small-L treatment (L < 29); Corollary I.10, the doubling arithmetic 5K + π²/4 and the seam bound 4L ≤ 112 for L < 29; and the extension to Δ = 1 by continuity at fixed L. Rerun the numerical checks independently (Bethe and ED at L ≤ 12).
+2. C142 Part II, Theorem II.6 (the log-bounded (D) and (D1)): Lemmas II.1 to II.5, especially the unimodality of calR (Wintner), the bound on calR(0), and the restricted-kernel variation bound uniform in Q.
+3. C145: Theorem A.2 and its reduction of the strip to (G), (W1'), (W3'); the proof of (W2) by reflection (Theorem B.1); Lemma B.2 and Proposition B.3; and its claim that C138 Theorem B is correct (spot-check the arithmetic 124.87 ≤ 125, 627.5 ≤ 628 and the revised 647.4 and 686).
+
+For each item give a verdict (correct, correct after minor repairs, gap, or error), the precise location of any problem, and a repair where you can. Say what you checked numerically and what you only read. End with an overall verdict for the claim "L(E_{2L} − 2E_L) ≤ 4078 M on 0 ≤ J_z/J ≤ 1" and for the conditional strip theorem.
