@@ -1,0 +1,16 @@
+{
+  "cases": 9,
+  "failures": 2,
+  "maxima": {
+    "identity_error": 1.0695654431569501e-15,
+    "mass_identity_error": 1.3600232051658168e-15,
+    "quadrature_change": 5.666785929392404e-10,
+    "cdf_ratio": 0.03556097063139038,
+    "density_ratio": 0.02525531935591868,
+    "mass_ratio": 0.023965051405656516,
+    "midpoint_ratio": 4.8894922998688935e-11,
+    "sampled_epsilon_derivative_ratio": 0.0031276299458610967,
+    "sampled_epsilon_second_ratio": 0.0006750352452379038,
+    "sampled_sigma_derivative_ratio": 0.0036321931280731135
+  }
+}

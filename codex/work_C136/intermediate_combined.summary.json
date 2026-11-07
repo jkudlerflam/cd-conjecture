@@ -1,0 +1,85 @@
+{
+  "cases": 54,
+  "successful": 43,
+  "unresolved": 11,
+  "failures": [
+    {
+      "L": 8,
+      "n": 1,
+      "delta": -0.9999,
+      "error": "f(a) and f(b) must have different signs"
+    },
+    {
+      "L": 8,
+      "n": 2,
+      "delta": -0.9999,
+      "error": "f(a) and f(b) must have different signs"
+    },
+    {
+      "L": 8,
+      "n": 3,
+      "delta": -0.9999,
+      "error": "f(a) and f(b) must have different signs"
+    },
+    {
+      "L": 17,
+      "n": 1,
+      "delta": -0.9999,
+      "error": "f(a) and f(b) must have different signs"
+    },
+    {
+      "L": 17,
+      "n": 4,
+      "delta": -0.9999,
+      "error": "f(a) and f(b) must have different signs"
+    },
+    {
+      "L": 17,
+      "n": 8,
+      "delta": -0.9999,
+      "error": "f(a) and f(b) must have different signs"
+    },
+    {
+      "L": 32,
+      "n": 1,
+      "delta": -0.9999,
+      "error": "f(a) and f(b) must have different signs"
+    },
+    {
+      "L": 32,
+      "n": 8,
+      "delta": -0.9999,
+      "error": "f(a) and f(b) must have different signs"
+    },
+    {
+      "L": 32,
+      "n": 15,
+      "delta": -0.9999,
+      "error": "f(a) and f(b) must have different signs"
+    },
+    {
+      "L": 17,
+      "n": 8,
+      "delta": -0.999,
+      "error": "Quadrature unresolved: 9.313208249039917e-08"
+    },
+    {
+      "L": 32,
+      "n": 15,
+      "delta": -0.999,
+      "error": "Quadrature unresolved: 5.762225274708044e-08"
+    }
+  ],
+  "maxima": {
+    "identity_error": 1.7763568394002505e-15,
+    "mass_identity_error": 1.3600232051658168e-15,
+    "quadrature_change": 2.5764421707208385e-09,
+    "cdf_ratio": 1.0000000000000018,
+    "density_ratio": 0.084901187691231,
+    "mass_ratio": 0.05577962990293885,
+    "midpoint_ratio": 0.04142917260334185
+  },
+  "max_boundary_ratio": 0.03775045685129265,
+  "max_velocity_variation_ratio": 8.252023912447602e-07,
+  "min_density_comparison": 0.13951317932542895
+}

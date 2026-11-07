@@ -1,0 +1,69 @@
+{
+  "mode": "moderate",
+  "cases": 672,
+  "failures": 0,
+  "largest_Q": 1.5796657148062536,
+  "largest_at": {
+    "status": "ok",
+    "L": 16,
+    "n": 8,
+    "delta": 0.0,
+    "E": -5.125830895483013,
+    "E2": -10.20229723737833,
+    "Q": 1.5796657148062536,
+    "free_trial": 185.5264884038935,
+    "band": 247.74193548387098,
+    "dilute": 631.6546816697189,
+    "min_variational_slack": 183.94682268908724,
+    "diag": {
+      "residual": 1.1102230246251565e-16,
+      "steps": 0,
+      "newton_energy_correction": 2.220446049250313e-16,
+      "largest_root": 1.1588930050873056
+    },
+    "diag2": {
+      "residual": 2.220446049250313e-16,
+      "steps": 0,
+      "newton_energy_correction": 1.6653345369377348e-15,
+      "largest_root": 1.5066747775806584
+    },
+    "correction_indicator": 6.750155989720952e-14,
+    "all_filling_constant_ratio": 2.0906237275622627e-13,
+    "free_Q_error": 5.0182080713057076e-14,
+    "half_constant_ratio": 0.0037246163991734443
+  },
+  "max_ed_error": 0,
+  "max_ed2_error": 0,
+  "max_free_Q_error": 2.1262991367621e-12,
+  "min_variational_slack": -2.886579864025407e-14,
+  "max_correction_indicator": 6.481926106971514e-12,
+  "max_residual": 3.9745984281580604e-14,
+  "maxL": 65,
+  "max_paired_L": 130,
+  "per_delta": [
+    {
+      "delta": -0.9999,
+      "max_Q": 0.003216403053656336
+    },
+    {
+      "delta": -0.999,
+      "max_Q": 0.025426730725754965
+    },
+    {
+      "delta": -0.99,
+      "max_Q": 0.11286120458159132
+    },
+    {
+      "delta": -0.9,
+      "max_Q": 0.3991122877059752
+    },
+    {
+      "delta": -0.5,
+      "max_Q": 1.0234158850008157
+    },
+    {
+      "delta": 0.0,
+      "max_Q": 1.5796657148062536
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "mode": "spot",
+  "cases": 144,
+  "failures": 0,
+  "largest_Q": 1.5709343288181117,
+  "largest_at": {
+    "status": "ok",
+    "L": 128,
+    "n": 64,
+    "delta": 0.0,
+    "E": -40.74775633446288,
+    "E2": -81.48937620670381,
+    "Q": 1.5709343288181117,
+    "free_trial": 11906.719691083828,
+    "band": 16319.749019607843,
+    "dilute": 40425.89962686201,
+    "min_variational_slack": 11905.14875675501,
+    "diag": {
+      "residual": 2.220446049250313e-16,
+      "steps": 0,
+      "newton_energy_correction": 1.8041124150158794e-15,
+      "largest_root": 2.2001986787311036
+    },
+    "diag2": {
+      "residual": 2.220446049250313e-16,
+      "steps": 0,
+      "newton_energy_correction": 8.971989817752046e-15,
+      "largest_root": 2.546791094614441
+    },
+    "correction_indicator": 3.220534949832654e-12,
+    "all_filling_constant_ratio": 2.079068091106892e-13,
+    "free_Q_error": 7.360778653264788e-13,
+    "half_constant_ratio": 0.003704029091913354,
+    "half_root_checks": {
+      "cdf_scaled": 0.5000000000000036,
+      "cdf_bound": 1.0,
+      "density_scaled": 1.4210854715202004e-14,
+      "density_bound": 1.0,
+      "minimum_sigma": 7.164211733247373e-08,
+      "cutoff": 1.8533487200889776,
+      "sampled_variation": 25.10244339944444,
+      "variation_bound": 75.39822368615503
+    }
+  },
+  "max_ed_error": 0,
+  "max_ed2_error": 0,
+  "max_free_Q_error": 1.797473281328621e-11,
+  "min_variational_slack": -5.684341886080802e-14,
+  "max_correction_indicator": 1.7626788917368685e-11,
+  "max_residual": 3.970435091815716e-14,
+  "maxL": 257,
+  "max_paired_L": 514,
+  "per_delta": [
+    {
+      "delta": -0.9999,
+      "max_Q": 0.0088172254966139
+    },
+    {
+      "delta": -0.999,
+      "max_Q": 0.034955317181015744
+    },
+    {
+      "delta": -0.99,
+      "max_Q": 0.11583226949363734
+    },
+    {
+      "delta": -0.9,
+      "max_Q": 0.3996969419240486
+    },
+    {
+      "delta": -0.5,
+      "max_Q": 1.0203115936092217
+    },
+    {
+      "delta": 0.0,
+      "max_Q": 1.5709343288181117
+    }
+  ]
+}

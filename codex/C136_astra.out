@@ -1,0 +1,13 @@
+Task 1 is proved for every fixed \(\delta>0\):
+\[
+L(E_{2L}-2E_L)\le \frac{6\times10^{15}}{\delta^{25/3}}\,M,
+\]
+uniformly over \(\Delta\in[-1+\delta,0]\), all fillings, fields, DM angles, and \(L\ge2\). The proof controls the Fermi-boundary corrections and extends C134’s clipping argument.
+
+The constant uniform through \(\Delta=-1\) remains unproved. C134’s tracked estimates do not close that crossover. The missing estimate and conditional assembly are stated explicitly.
+
+All 1,032 Bethe pairs passed, with ED discrepancies below \(1.25\times10^{-14}\). Eleven continuum-quadrature diagnostics remain underresolved. The full grid and refinement jobs are SLURM-ready but unsubmitted.
+
+[RESULT.md](<./RESULT.md>) and [PROOF.md](<./PROOF.md>) contain the conclusions and derivation. The new proof has not been independently refereed.
+
+[gpt_solve: backend=codex model=gpt-6-astra effort=high transcript=20261107T080704-72592]
