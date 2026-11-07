@@ -1,0 +1,12 @@
+L=10, manifold size D=16; width = E_D - E_1 of lowest D states; gap = E_(D+1) - E_D
+xx: widths ['3.57e-03', '1.43e-02', '5.65e-02']  apparent order in eps 1.99;  gaps above ['0.275', '0.230', '0.128']
+xy: widths ['2.40e-14', '1.78e-14', '2.93e-14']  apparent order in eps nan;  gaps above ['0.317', '0.317', '0.318']
+yx: widths ['2.52e-02', '8.48e-02', '2.36e-01']  apparent order in eps 1.61;  gaps above ['0.316', '0.312', '0.300']
+yy: widths ['1.51e-01', '2.78e-01', '3.77e-01']  apparent order in eps 0.66;  gaps above ['0.146', '0.000', '0.053']
+yz: widths ['2.22e-14', '2.31e-14', '1.15e-14']  apparent order in eps nan;  gaps above ['0.317', '0.317', '0.318']
+zx: widths ['2.34e-01', '3.88e-01', '5.79e-01']  apparent order in eps 0.65;  gaps above ['0.089', '0.035', '0.000']
+zy: widths ['2.52e-02', '8.48e-02', '2.36e-01']  apparent order in eps 1.61;  gaps above ['0.316', '0.312', '0.300']
+zz: widths ['3.57e-03', '1.43e-02', '5.65e-02']  apparent order in eps 1.99;  gaps above ['0.275', '0.230', '0.128']
+Bx: widths ['2.58e-02', '8.75e-02', '2.48e-01']  apparent order in eps 1.63;  gaps above ['0.316', '0.315', '0.309']
+By: widths ['3.57e-03', '1.43e-02', '5.65e-02']  apparent order in eps 1.99;  gaps above ['0.275', '0.231', '0.135']
+Bz: widths ['2.58e-02', '8.75e-02', '2.48e-01']  apparent order in eps 1.63;  gaps above ['0.316', '0.315', '0.309']

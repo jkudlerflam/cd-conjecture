@@ -1,0 +1,10 @@
+PT points: slice c = 1, g = 0.5, several B
+  B=0.0: a_c=0.500000, k0=1.57080 (k0/pi=0.50000), f(k0)=-1.1e-16, f''(k0)=2.0000  -> quadratic touching, z=2
+  B=0.3: a_c=0.500000, k0=1.87550 (k0/pi=0.59699), f(k0)=5.6e-17, f''(k0)=1.9079  -> quadratic touching, z=2
+  B=0.6: a_c=0.500000, k0=2.21429 (k0/pi=0.70483), f(k0)=-5.6e-17, f''(k0)=1.6000  -> quadratic touching, z=2
+  B=1.5: a_c=1.224745, k0=2.30053 (k0/pi=0.73228), f(k0)=-1.4e-13, f''(k0)=1.3693  -> quadratic touching, z=2
+ED check, slice c=1, B=0.3, g=0.5: many-body gap above ground state vs a
+  L=10: a/a_c = 0.6,0.9,1,1.1,1.4 -> gaps 0.0029, 0.0029, 0.0029, 0.0029, 0.2101
+  L=12: a/a_c = 0.6,0.9,1,1.1,1.4 -> gaps 0.0005, 0.0005, 0.0005, 0.0005, 0.1984
+  L=14: a/a_c = 0.6,0.9,1,1.1,1.4 -> gaps 0.0000, 0.0000, 0.0000, 0.0000, 0.0977
+  prediction: gap(a) for a < a_c is about 2*min f in the bulk (single quasiparticle, parity-changing): 0.3795, 0.0953
