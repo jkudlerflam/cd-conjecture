@@ -1,0 +1,999 @@
+{
+  "trotter_contraction": [
+    {
+      "model": "XX",
+      "beta": 2.0,
+      "m": 2,
+      "relative_residual": 0.0
+    },
+    {
+      "model": "XXZ_m09",
+      "beta": 2.0,
+      "m": 2,
+      "relative_residual": 1.6727078548300589e-16
+    },
+    {
+      "model": "Heisenberg",
+      "beta": 2.0,
+      "m": 2,
+      "relative_residual": 0.0
+    },
+    {
+      "model": "SU3",
+      "beta": 2.0,
+      "m": 2,
+      "relative_residual": 6.640482101184339e-16
+    }
+  ],
+  "exact_recoupling": [
+    {
+      "k": 1,
+      "exact_recurrence": true,
+      "exact_coefficients": true
+    },
+    {
+      "k": 2,
+      "exact_recurrence": true,
+      "exact_coefficients": true
+    },
+    {
+      "k": 3,
+      "exact_recurrence": true,
+      "exact_coefficients": true
+    },
+    {
+      "k": 4,
+      "exact_recurrence": true,
+      "exact_coefficients": true
+    },
+    {
+      "k": 5,
+      "exact_recurrence": true,
+      "exact_coefficients": true
+    },
+    {
+      "k": 6,
+      "exact_recurrence": true,
+      "exact_coefficients": true
+    },
+    {
+      "k": 7,
+      "exact_recurrence": true,
+      "exact_coefficients": true
+    },
+    {
+      "k": 8,
+      "exact_recurrence": true,
+      "exact_coefficients": true
+    },
+    {
+      "k": 9,
+      "exact_recurrence": true,
+      "exact_coefficients": true
+    },
+    {
+      "k": 10,
+      "exact_recurrence": true,
+      "exact_coefficients": true
+    },
+    {
+      "k": 11,
+      "exact_recurrence": true,
+      "exact_coefficients": true
+    },
+    {
+      "k": 12,
+      "exact_recurrence": true,
+      "exact_coefficients": true
+    }
+  ],
+  "countermodel_covariances": [
+    {
+      "n": 1,
+      "beta": 2.0,
+      "L": 1.0,
+      "a": 0.0,
+      "rank": 1,
+      "cone_margin": 0.0,
+      "hessian_min_eigenvalue": 0.0,
+      "R": 0.0,
+      "R_derivative": 0.0
+    },
+    {
+      "n": 1,
+      "beta": 2.0,
+      "L": 1.0,
+      "a": 0.04598493014643029,
+      "rank": 1,
+      "cone_margin": 0.0,
+      "hessian_min_eigenvalue": 0.0,
+      "R": 0.0,
+      "R_derivative": 0.0
+    },
+    {
+      "n": 1,
+      "beta": 2.0,
+      "L": 1.0,
+      "a": 0.09105016168993198,
+      "rank": 1,
+      "cone_margin": 0.0,
+      "hessian_min_eigenvalue": 0.0,
+      "R": 0.0,
+      "R_derivative": 0.0
+    },
+    {
+      "n": 1,
+      "beta": 2.0,
+      "L": 4.0,
+      "a": 0.0,
+      "rank": 1,
+      "cone_margin": 0.0,
+      "hessian_min_eigenvalue": 0.0,
+      "R": 0.0,
+      "R_derivative": 0.0
+    },
+    {
+      "n": 1,
+      "beta": 2.0,
+      "L": 4.0,
+      "a": 0.18393972058572117,
+      "rank": 1,
+      "cone_margin": 0.0,
+      "hessian_min_eigenvalue": 0.0,
+      "R": 0.0,
+      "R_derivative": 0.0
+    },
+    {
+      "n": 1,
+      "beta": 2.0,
+      "L": 4.0,
+      "a": 0.3642006467597279,
+      "rank": 1,
+      "cone_margin": 0.0,
+      "hessian_min_eigenvalue": 0.0,
+      "R": 0.0,
+      "R_derivative": 0.0
+    },
+    {
+      "n": 1,
+      "beta": 2.0,
+      "L": 16.0,
+      "a": 0.0,
+      "rank": 1,
+      "cone_margin": 0.0,
+      "hessian_min_eigenvalue": 0.0,
+      "R": 0.0,
+      "R_derivative": 0.0
+    },
+    {
+      "n": 1,
+      "beta": 2.0,
+      "L": 16.0,
+      "a": 0.7357588823428847,
+      "rank": 1,
+      "cone_margin": 0.0,
+      "hessian_min_eigenvalue": 0.0,
+      "R": 0.0,
+      "R_derivative": 0.0
+    },
+    {
+      "n": 1,
+      "beta": 2.0,
+      "L": 16.0,
+      "a": 1.4568025870389116,
+      "rank": 1,
+      "cone_margin": 0.0,
+      "hessian_min_eigenvalue": 0.0,
+      "R": 0.0,
+      "R_derivative": 0.0
+    },
+    {
+      "n": 1,
+      "beta": 4.0,
+      "L": 1.0,
+      "a": 0.0,
+      "rank": 5,
+      "cone_margin": 0.0,
+      "hessian_min_eigenvalue": 0.0,
+      "R": 1.4709880581838926,
+      "R_derivative": -0.3013673351099072
+    },
+    {
+      "n": 1,
+      "beta": 4.0,
+      "L": 1.0,
+      "a": 0.04598493014643029,
+      "rank": 5,
+      "cone_margin": 0.0,
+      "hessian_min_eigenvalue": 0.0,
+      "R": 1.4709880581838926,
+      "R_derivative": -0.3013673351099072
+    },
+    {
+      "n": 1,
+      "beta": 4.0,
+      "L": 1.0,
+      "a": 0.09105016168993198,
+      "rank": 5,
+      "cone_margin": 0.0,
+      "hessian_min_eigenvalue": 0.0,
+      "R": 1.4709880581838926,
+      "R_derivative": -0.3013673351099072
+    },
+    {
+      "n": 1,
+      "beta": 4.0,
+      "L": 4.0,
+      "a": 0.0,
+      "rank": 5,
+      "cone_margin": 0.0,
+      "hessian_min_eigenvalue": 0.0,
+      "R": 0.3114410321091504,
+      "R_derivative": -0.21985774369961886
+    },
+    {
+      "n": 1,
+      "beta": 4.0,
+      "L": 4.0,
+      "a": 0.18393972058572117,
+      "rank": 5,
+      "cone_margin": 0.0,
+      "hessian_min_eigenvalue": 0.0,
+      "R": 0.3114410321091504,
+      "R_derivative": -0.21985774369961886
+    },
+    {
+      "n": 1,
+      "beta": 4.0,
+      "L": 4.0,
+      "a": 0.3642006467597279,
+      "rank": 5,
+      "cone_margin": 0.0,
+      "hessian_min_eigenvalue": 0.0,
+      "R": 0.3114410321091504,
+      "R_derivative": -0.21985774369961886
+    },
+    {
+      "n": 1,
+      "beta": 4.0,
+      "L": 16.0,
+      "a": 0.0,
+      "rank": 5,
+      "cone_margin": 0.0,
+      "hessian_min_eigenvalue": 0.0,
+      "R": 2.7898495620347334e-05,
+      "R_derivative": -2.1911236191328872e-05
+    },
+    {
+      "n": 1,
+      "beta": 4.0,
+      "L": 16.0,
+      "a": 0.7357588823428847,
+      "rank": 5,
+      "cone_margin": 0.0,
+      "hessian_min_eigenvalue": 0.0,
+      "R": 2.7898495620347334e-05,
+      "R_derivative": -2.1911236191328872e-05
+    },
+    {
+      "n": 1,
+      "beta": 4.0,
+      "L": 16.0,
+      "a": 1.4568025870389116,
+      "rank": 5,
+      "cone_margin": 0.0,
+      "hessian_min_eigenvalue": 0.0,
+      "R": 2.7898495620347334e-05,
+      "R_derivative": -2.1911236191328872e-05
+    },
+    {
+      "n": 1,
+      "beta": 8.0,
+      "L": 1.0,
+      "a": 0.0,
+      "rank": 36,
+      "cone_margin": 0.0,
+      "hessian_min_eigenvalue": 0.2657162699216423,
+      "R": 3.324475364581735,
+      "R_derivative": -0.5304199446450883
+    },
+    {
+      "n": 1,
+      "beta": 8.0,
+      "L": 1.0,
+      "a": 0.04598493014643029,
+      "rank": 36,
+      "cone_margin": 0.0,
+      "hessian_min_eigenvalue": 0.2653916515363167,
+      "R": 3.324475364581735,
+      "R_derivative": -0.5304199446450883
+    },
+    {
+      "n": 1,
+      "beta": 8.0,
+      "L": 1.0,
+      "a": 0.09105016168993198,
+      "rank": 36,
+      "cone_margin": 0.0,
+      "hessian_min_eigenvalue": 0.26444892187224983,
+      "R": 3.324475364581735,
+      "R_derivative": -0.5304199446450883
+    },
+    {
+      "n": 1,
+      "beta": 8.0,
+      "L": 4.0,
+      "a": 0.0,
+      "rank": 36,
+      "cone_margin": 0.0,
+      "hessian_min_eigenvalue": 0.10988429573240319,
+      "R": 1.4022860709876335,
+      "R_derivative": -0.4749348329181624
+    },
+    {
+      "n": 1,
+      "beta": 8.0,
+      "L": 4.0,
+      "a": 0.18393972058572117,
+      "rank": 36,
+      "cone_margin": 0.0,
+      "hessian_min_eigenvalue": 0.10156254066797997,
+      "R": 1.4022860709876335,
+      "R_derivative": -0.4749348329181624
+    },
+    {
+      "n": 1,
+      "beta": 8.0,
+      "L": 4.0,
+      "a": 0.3642006467597279,
+      "rank": 36,
+      "cone_margin": 0.0,
+      "hessian_min_eigenvalue": 0.0911923673853859,
+      "R": 1.4022860709876335,
+      "R_derivative": -0.4749348329181624
+    },
+    {
+      "n": 1,
+      "beta": 8.0,
+      "L": 16.0,
+      "a": 0.0,
+      "rank": 36,
+      "cone_margin": 0.0,
+      "hessian_min_eigenvalue": 1.2843181051731969e-05,
+      "R": 0.0149117125794957,
+      "R_derivative": -0.005844914584008868
+    },
+    {
+      "n": 1,
+      "beta": 8.0,
+      "L": 16.0,
+      "a": 0.7357588823428847,
+      "rank": 36,
+      "cone_margin": 0.0,
+      "hessian_min_eigenvalue": 1.4993926560290168e-05,
+      "R": 0.0149117125794957,
+      "R_derivative": -0.005844914584008868
+    },
+    {
+      "n": 1,
+      "beta": 8.0,
+      "L": 16.0,
+      "a": 1.4568025870389116,
+      "rank": 36,
+      "cone_margin": 0.0,
+      "hessian_min_eigenvalue": 2.1920078224605508e-05,
+      "R": 0.0149117125794957,
+      "R_derivative": -0.005844914584008868
+    },
+    {
+      "n": 2,
+      "beta": 2.0,
+      "L": 1.0,
+      "a": 0.0,
+      "rank": 1,
+      "cone_margin": 0.0,
+      "hessian_min_eigenvalue": 0.0,
+      "R": 0.0,
+      "R_derivative": 0.0
+    },
+    {
+      "n": 2,
+      "beta": 2.0,
+      "L": 1.0,
+      "a": 0.04598493014643029,
+      "rank": 1,
+      "cone_margin": 0.0,
+      "hessian_min_eigenvalue": 0.0,
+      "R": 0.0,
+      "R_derivative": 0.0
+    },
+    {
+      "n": 2,
+      "beta": 2.0,
+      "L": 1.0,
+      "a": 0.09105016168993198,
+      "rank": 1,
+      "cone_margin": 0.0,
+      "hessian_min_eigenvalue": 0.0,
+      "R": 0.0,
+      "R_derivative": 0.0
+    },
+    {
+      "n": 2,
+      "beta": 2.0,
+      "L": 4.0,
+      "a": 0.0,
+      "rank": 1,
+      "cone_margin": 0.0,
+      "hessian_min_eigenvalue": 0.0,
+      "R": 0.0,
+      "R_derivative": 0.0
+    },
+    {
+      "n": 2,
+      "beta": 2.0,
+      "L": 4.0,
+      "a": 0.18393972058572117,
+      "rank": 1,
+      "cone_margin": 0.0,
+      "hessian_min_eigenvalue": 0.0,
+      "R": 0.0,
+      "R_derivative": 0.0
+    },
+    {
+      "n": 2,
+      "beta": 2.0,
+      "L": 4.0,
+      "a": 0.3642006467597279,
+      "rank": 1,
+      "cone_margin": 0.0,
+      "hessian_min_eigenvalue": 0.0,
+      "R": 0.0,
+      "R_derivative": 0.0
+    },
+    {
+      "n": 2,
+      "beta": 2.0,
+      "L": 16.0,
+      "a": 0.0,
+      "rank": 1,
+      "cone_margin": 0.0,
+      "hessian_min_eigenvalue": 0.0,
+      "R": 0.0,
+      "R_derivative": 0.0
+    },
+    {
+      "n": 2,
+      "beta": 2.0,
+      "L": 16.0,
+      "a": 0.7357588823428847,
+      "rank": 1,
+      "cone_margin": 0.0,
+      "hessian_min_eigenvalue": 0.0,
+      "R": 0.0,
+      "R_derivative": 0.0
+    },
+    {
+      "n": 2,
+      "beta": 2.0,
+      "L": 16.0,
+      "a": 1.4568025870389116,
+      "rank": 1,
+      "cone_margin": 0.0,
+      "hessian_min_eigenvalue": 0.0,
+      "R": 0.0,
+      "R_derivative": 0.0
+    },
+    {
+      "n": 2,
+      "beta": 4.0,
+      "L": 1.0,
+      "a": 0.0,
+      "rank": 1,
+      "cone_margin": 0.0,
+      "hessian_min_eigenvalue": 0.0,
+      "R": 0.0,
+      "R_derivative": 0.0
+    },
+    {
+      "n": 2,
+      "beta": 4.0,
+      "L": 1.0,
+      "a": 0.04598493014643029,
+      "rank": 1,
+      "cone_margin": 0.0,
+      "hessian_min_eigenvalue": 0.0,
+      "R": 0.0,
+      "R_derivative": 0.0
+    },
+    {
+      "n": 2,
+      "beta": 4.0,
+      "L": 1.0,
+      "a": 0.09105016168993198,
+      "rank": 1,
+      "cone_margin": 0.0,
+      "hessian_min_eigenvalue": 0.0,
+      "R": 0.0,
+      "R_derivative": 0.0
+    },
+    {
+      "n": 2,
+      "beta": 4.0,
+      "L": 4.0,
+      "a": 0.0,
+      "rank": 1,
+      "cone_margin": 0.0,
+      "hessian_min_eigenvalue": 0.0,
+      "R": 0.0,
+      "R_derivative": 0.0
+    },
+    {
+      "n": 2,
+      "beta": 4.0,
+      "L": 4.0,
+      "a": 0.18393972058572117,
+      "rank": 1,
+      "cone_margin": 0.0,
+      "hessian_min_eigenvalue": 0.0,
+      "R": 0.0,
+      "R_derivative": 0.0
+    },
+    {
+      "n": 2,
+      "beta": 4.0,
+      "L": 4.0,
+      "a": 0.3642006467597279,
+      "rank": 1,
+      "cone_margin": 0.0,
+      "hessian_min_eigenvalue": 0.0,
+      "R": 0.0,
+      "R_derivative": 0.0
+    },
+    {
+      "n": 2,
+      "beta": 4.0,
+      "L": 16.0,
+      "a": 0.0,
+      "rank": 1,
+      "cone_margin": 0.0,
+      "hessian_min_eigenvalue": 0.0,
+      "R": 0.0,
+      "R_derivative": 0.0
+    },
+    {
+      "n": 2,
+      "beta": 4.0,
+      "L": 16.0,
+      "a": 0.7357588823428847,
+      "rank": 1,
+      "cone_margin": 0.0,
+      "hessian_min_eigenvalue": 0.0,
+      "R": 0.0,
+      "R_derivative": 0.0
+    },
+    {
+      "n": 2,
+      "beta": 4.0,
+      "L": 16.0,
+      "a": 1.4568025870389116,
+      "rank": 1,
+      "cone_margin": 0.0,
+      "hessian_min_eigenvalue": 0.0,
+      "R": 0.0,
+      "R_derivative": 0.0
+    },
+    {
+      "n": 2,
+      "beta": 8.0,
+      "L": 1.0,
+      "a": 0.0,
+      "rank": 37,
+      "cone_margin": 0.0,
+      "hessian_min_eigenvalue": 0.05264494511328203,
+      "R": 3.5581615547946828,
+      "R_derivative": -0.12043337825374456
+    },
+    {
+      "n": 2,
+      "beta": 8.0,
+      "L": 1.0,
+      "a": 0.04598493014643029,
+      "rank": 37,
+      "cone_margin": 0.0,
+      "hessian_min_eigenvalue": 0.05262721880010435,
+      "R": 3.5581615547946828,
+      "R_derivative": -0.12043337825374456
+    },
+    {
+      "n": 2,
+      "beta": 8.0,
+      "L": 1.0,
+      "a": 0.09105016168993198,
+      "rank": 37,
+      "cone_margin": 0.0,
+      "hessian_min_eigenvalue": 0.05257552854562916,
+      "R": 3.5581615547946828,
+      "R_derivative": -0.12043337825374456
+    },
+    {
+      "n": 2,
+      "beta": 8.0,
+      "L": 4.0,
+      "a": 0.0,
+      "rank": 37,
+      "cone_margin": 0.0,
+      "hessian_min_eigenvalue": 0.08259128180474515,
+      "R": 2.3730299339919463,
+      "R_derivative": -0.5750087894640268
+    },
+    {
+      "n": 2,
+      "beta": 8.0,
+      "L": 4.0,
+      "a": 0.18393972058572117,
+      "rank": 37,
+      "cone_margin": 0.0,
+      "hessian_min_eigenvalue": 0.07928012199574905,
+      "R": 2.3730299339919463,
+      "R_derivative": -0.5750087894640268
+    },
+    {
+      "n": 2,
+      "beta": 8.0,
+      "L": 4.0,
+      "a": 0.3642006467597279,
+      "rank": 37,
+      "cone_margin": 0.0,
+      "hessian_min_eigenvalue": 0.07489261311797275,
+      "R": 2.3730299339919463,
+      "R_derivative": -0.5750087894640268
+    },
+    {
+      "n": 2,
+      "beta": 8.0,
+      "L": 16.0,
+      "a": 0.0,
+      "rank": 37,
+      "cone_margin": 0.0,
+      "hessian_min_eigenvalue": 2.5431597403168395e-05,
+      "R": 0.02982260069812789,
+      "R_derivative": -0.011688861431543678
+    },
+    {
+      "n": 2,
+      "beta": 8.0,
+      "L": 16.0,
+      "a": 0.7357588823428847,
+      "rank": 37,
+      "cone_margin": 0.0,
+      "hessian_min_eigenvalue": 2.9691955435028566e-05,
+      "R": 0.02982260069812789,
+      "R_derivative": -0.011688861431543678
+    },
+    {
+      "n": 2,
+      "beta": 8.0,
+      "L": 16.0,
+      "a": 1.4568025870389116,
+      "rank": 37,
+      "cone_margin": 0.0,
+      "hessian_min_eigenvalue": 4.341332205017884e-05,
+      "R": 0.02982260069812789,
+      "R_derivative": -0.011688861431543678
+    },
+    {
+      "n": 4,
+      "beta": 2.0,
+      "L": 1.0,
+      "a": 0.0,
+      "rank": 1,
+      "cone_margin": 0.0,
+      "hessian_min_eigenvalue": 0.0,
+      "R": 0.0,
+      "R_derivative": 0.0
+    },
+    {
+      "n": 4,
+      "beta": 2.0,
+      "L": 1.0,
+      "a": 0.04598493014643029,
+      "rank": 1,
+      "cone_margin": 0.0,
+      "hessian_min_eigenvalue": 0.0,
+      "R": 0.0,
+      "R_derivative": 0.0
+    },
+    {
+      "n": 4,
+      "beta": 2.0,
+      "L": 1.0,
+      "a": 0.09105016168993198,
+      "rank": 1,
+      "cone_margin": 0.0,
+      "hessian_min_eigenvalue": 0.0,
+      "R": 0.0,
+      "R_derivative": 0.0
+    },
+    {
+      "n": 4,
+      "beta": 2.0,
+      "L": 4.0,
+      "a": 0.0,
+      "rank": 1,
+      "cone_margin": 0.0,
+      "hessian_min_eigenvalue": 0.0,
+      "R": 0.0,
+      "R_derivative": 0.0
+    },
+    {
+      "n": 4,
+      "beta": 2.0,
+      "L": 4.0,
+      "a": 0.18393972058572117,
+      "rank": 1,
+      "cone_margin": 0.0,
+      "hessian_min_eigenvalue": 0.0,
+      "R": 0.0,
+      "R_derivative": 0.0
+    },
+    {
+      "n": 4,
+      "beta": 2.0,
+      "L": 4.0,
+      "a": 0.3642006467597279,
+      "rank": 1,
+      "cone_margin": 0.0,
+      "hessian_min_eigenvalue": 0.0,
+      "R": 0.0,
+      "R_derivative": 0.0
+    },
+    {
+      "n": 4,
+      "beta": 2.0,
+      "L": 16.0,
+      "a": 0.0,
+      "rank": 1,
+      "cone_margin": 0.0,
+      "hessian_min_eigenvalue": 0.0,
+      "R": 0.0,
+      "R_derivative": 0.0
+    },
+    {
+      "n": 4,
+      "beta": 2.0,
+      "L": 16.0,
+      "a": 0.7357588823428847,
+      "rank": 1,
+      "cone_margin": 0.0,
+      "hessian_min_eigenvalue": 0.0,
+      "R": 0.0,
+      "R_derivative": 0.0
+    },
+    {
+      "n": 4,
+      "beta": 2.0,
+      "L": 16.0,
+      "a": 1.4568025870389116,
+      "rank": 1,
+      "cone_margin": 0.0,
+      "hessian_min_eigenvalue": 0.0,
+      "R": 0.0,
+      "R_derivative": 0.0
+    },
+    {
+      "n": 4,
+      "beta": 4.0,
+      "L": 1.0,
+      "a": 0.0,
+      "rank": 1,
+      "cone_margin": 0.0,
+      "hessian_min_eigenvalue": 0.0,
+      "R": 0.0,
+      "R_derivative": 0.0
+    },
+    {
+      "n": 4,
+      "beta": 4.0,
+      "L": 1.0,
+      "a": 0.04598493014643029,
+      "rank": 1,
+      "cone_margin": 0.0,
+      "hessian_min_eigenvalue": 0.0,
+      "R": 0.0,
+      "R_derivative": 0.0
+    },
+    {
+      "n": 4,
+      "beta": 4.0,
+      "L": 1.0,
+      "a": 0.09105016168993198,
+      "rank": 1,
+      "cone_margin": 0.0,
+      "hessian_min_eigenvalue": 0.0,
+      "R": 0.0,
+      "R_derivative": 0.0
+    },
+    {
+      "n": 4,
+      "beta": 4.0,
+      "L": 4.0,
+      "a": 0.0,
+      "rank": 1,
+      "cone_margin": 0.0,
+      "hessian_min_eigenvalue": 0.0,
+      "R": 0.0,
+      "R_derivative": 0.0
+    },
+    {
+      "n": 4,
+      "beta": 4.0,
+      "L": 4.0,
+      "a": 0.18393972058572117,
+      "rank": 1,
+      "cone_margin": 0.0,
+      "hessian_min_eigenvalue": 0.0,
+      "R": 0.0,
+      "R_derivative": 0.0
+    },
+    {
+      "n": 4,
+      "beta": 4.0,
+      "L": 4.0,
+      "a": 0.3642006467597279,
+      "rank": 1,
+      "cone_margin": 0.0,
+      "hessian_min_eigenvalue": 0.0,
+      "R": 0.0,
+      "R_derivative": 0.0
+    },
+    {
+      "n": 4,
+      "beta": 4.0,
+      "L": 16.0,
+      "a": 0.0,
+      "rank": 1,
+      "cone_margin": 0.0,
+      "hessian_min_eigenvalue": 0.0,
+      "R": 0.0,
+      "R_derivative": 0.0
+    },
+    {
+      "n": 4,
+      "beta": 4.0,
+      "L": 16.0,
+      "a": 0.7357588823428847,
+      "rank": 1,
+      "cone_margin": 0.0,
+      "hessian_min_eigenvalue": 0.0,
+      "R": 0.0,
+      "R_derivative": 0.0
+    },
+    {
+      "n": 4,
+      "beta": 4.0,
+      "L": 16.0,
+      "a": 1.4568025870389116,
+      "rank": 1,
+      "cone_margin": 0.0,
+      "hessian_min_eigenvalue": 0.0,
+      "R": 0.0,
+      "R_derivative": 0.0
+    },
+    {
+      "n": 4,
+      "beta": 8.0,
+      "L": 1.0,
+      "a": 0.0,
+      "rank": 17,
+      "cone_margin": 0.0,
+      "hessian_min_eigenvalue": 0.0,
+      "R": 2.8211737289684042,
+      "R_derivative": -0.02814496478418893
+    },
+    {
+      "n": 4,
+      "beta": 8.0,
+      "L": 1.0,
+      "a": 0.04598493014643029,
+      "rank": 17,
+      "cone_margin": 0.0,
+      "hessian_min_eigenvalue": 0.0,
+      "R": 2.8211737289684042,
+      "R_derivative": -0.02814496478418893
+    },
+    {
+      "n": 4,
+      "beta": 8.0,
+      "L": 1.0,
+      "a": 0.09105016168993198,
+      "rank": 17,
+      "cone_margin": 0.0,
+      "hessian_min_eigenvalue": 0.0,
+      "R": 2.8211737289684042,
+      "R_derivative": -0.02814496478418893
+    },
+    {
+      "n": 4,
+      "beta": 8.0,
+      "L": 4.0,
+      "a": 0.0,
+      "rank": 17,
+      "cone_margin": 0.0,
+      "hessian_min_eigenvalue": 0.0,
+      "R": 2.403750502142015,
+      "R_derivative": -0.28279184377881067
+    },
+    {
+      "n": 4,
+      "beta": 8.0,
+      "L": 4.0,
+      "a": 0.18393972058572117,
+      "rank": 17,
+      "cone_margin": 0.0,
+      "hessian_min_eigenvalue": 0.0,
+      "R": 2.403750502142015,
+      "R_derivative": -0.28279184377881067
+    },
+    {
+      "n": 4,
+      "beta": 8.0,
+      "L": 4.0,
+      "a": 0.3642006467597279,
+      "rank": 17,
+      "cone_margin": 0.0,
+      "hessian_min_eigenvalue": 0.0,
+      "R": 2.403750502142015,
+      "R_derivative": -0.28279184377881067
+    },
+    {
+      "n": 4,
+      "beta": 8.0,
+      "L": 16.0,
+      "a": 0.0,
+      "rank": 17,
+      "cone_margin": 0.0,
+      "hessian_min_eigenvalue": 0.0,
+      "R": 0.05882700586166312,
+      "R_derivative": -0.022742327445769747
+    },
+    {
+      "n": 4,
+      "beta": 8.0,
+      "L": 16.0,
+      "a": 0.7357588823428847,
+      "rank": 17,
+      "cone_margin": 0.0,
+      "hessian_min_eigenvalue": 0.0,
+      "R": 0.05882700586166312,
+      "R_derivative": -0.022742327445769747
+    },
+    {
+      "n": 4,
+      "beta": 8.0,
+      "L": 16.0,
+      "a": 1.4568025870389116,
+      "rank": 17,
+      "cone_margin": 0.0,
+      "hessian_min_eigenvalue": 0.0,
+      "R": 0.05882700586166312,
+      "R_derivative": -0.022742327445769747
+    }
+  ],
+  "attractive_R_monotonicity": [
+    {
+      "delta": -0.9,
+      "beta": 21.928721376782434,
+      "R4": 1.0734773353388434,
+      "R6": 1.1374736414958306,
+      "increase": 0.06399630615698726
+    },
+    {
+      "delta": -0.5,
+      "beta": 0.1,
+      "R4": 1.5794499512722382e-06,
+      "R6": 9.5667118671372e-10,
+      "increase": -1.5784932800855245e-06
+    }
+  ]
+}
