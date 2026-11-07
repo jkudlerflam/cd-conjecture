@@ -16,3 +16,6 @@
 
 
 [Consolidated] Concurrent work in this directory was preserved and checked. COPY_ROTATION_PROOF.md supplies the signed-cycle admissibility proof, the arbitrary-rung-unitary Ising minimum JN for every N>=2 and L>=3, and the stronger Heisenberg profile lower bound 1/3. The shared PROOF.md, RESULT.md, and STATE.md now point to the supplement. copy_rotation_checks.py validates explicit Gaussian trial vectors, including odd initial parity and paired two-mode sites. Independent overlapping ED and trial costs agree to 3.78e-14.
+
+
+[Numerical, prepared larger trial] su3_pending_trial.py computes the L=9 SU(3) ground state and all trial costs without the large E18 calculation. It gives E9=-6.5794357590864685, optimized fractional excess 1.9518332831194254, and coherent excess 0.6769252653558792. The ground-sector dimension is 1680 and residual is 3.06e-12. These are recorded in su3_L9_trial.json. No trial-to-exact ratio is asserted until E18 is computed on the cluster.

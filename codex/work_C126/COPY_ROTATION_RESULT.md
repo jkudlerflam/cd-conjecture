@@ -52,3 +52,6 @@ Every profile costs at least 2 min(k_plus,k_minus) when both coefficients are po
 [Proved distinction] Growth of trial/exact ratios diagnoses failure to track the critical defect. At Delta=2 the exact defect is eventually much smaller than 1/L, so ratio growth alone does not exclude a trial satisfying the weaker target O(M/L). The order-one fractional-swap obstruction is a separate issue. The general interacting bound remains unresolved.
 
 [Assumed missing input] The single completion lemma is the integrated seam-curvature estimate in PROOF.md section 9 and COPY_ROTATION_PROOF.md section 6. It is equivalent to the target. The disconnected stabilizer and the arbitrary-unitary cat obstruction are new microscopic failures of this proposed route. Ignoring the bulk interpolation cost would repeat lesson 2; treating the remaining seam estimate as already reduced would repeat lesson 4.
+
+
+[Numerical, prepared larger trial] su3_pending_trial.py computes the L=9 SU(3) ground state and all trial costs without the large E18 calculation. It gives E9=-6.5794357590864685, optimized fractional excess 1.9518332831194254, and coherent excess 0.6769252653558792. The ground-sector dimension is 1680 and residual is 3.06e-12. These are recorded in su3_L9_trial.json. No trial-to-exact ratio is asserted until E18 is computed on the cluster.
