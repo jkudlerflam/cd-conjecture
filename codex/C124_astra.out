@@ -1,0 +1,9 @@
+Proved \(G\le0\) for commuting nearest-neighbor bonds in an adapted basis, and \(G\le(2N+1)\log d\) in any basis. The general noncommuting stoquastic case remains open.
+
+Also disproved C123’s separate boundary-overlap estimate, including in a critical stoquastic \(d=4\) family. This does not disprove the reconnection lemma.
+
+Checks passed on XX through \(L=8192\), Heisenberg/XXZ through doubled length 12, and SU(3) through doubled length 6.
+
+Derivations, the explicit remaining estimate, and numerical limitations are in [RESULT.md](RESULT.md), [PROOF.md](PROOF.md), and [CHECKS.md](CHECKS.md). PROGRESS.md and local STATE.md are updated.
+
+[gpt_solve: backend=codex model=gpt-6-astra effort=high transcript=20261030T101421-97671]
