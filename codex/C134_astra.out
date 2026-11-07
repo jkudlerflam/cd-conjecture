@@ -1,0 +1,16 @@
+I obtained an explicit partial theorem, including odd lengths:
+\[
+L(F_{2L}-2F_L)\le \frac{3000}{\delta^3}J,
+\qquad \Delta\in[-1+\delta,0],\quad L\ge2.
+\]
+The proof uses cumulative Bethe-root control and midpoint quadrature of the dressed energy. It also gives the Casimir lower bound. Smaller constants and all steps are in [PROOF.md](<<repo>/codex/work_C134/PROOF.md>).
+
+At \(\Delta=1/2\), the [exact supersymmetric twisted energy](https://arxiv.org/pdf/cond-mat/0101385) gives \(C=2\pi^2/9\).
+
+The full positive-anisotropy interval, \(\Delta=1\), and a constant uniform near \(-1\) remain unresolved. The new proof has not had an independent referee review.
+
+Numerically, 152 paired cases passed through \(L=129\), with doubled rings through 258. ED through \(L=12\) agrees within \(8.44\times10^{-15}\). The several-thousand-site scan is SLURM-ready but was not submitted because Typhon is unavailable.
+
+[RESULT.md](<<repo>/codex/work_C134/RESULT.md>) links the literature audit, checks, scripts, and remaining gaps.
+
+[gpt_solve: backend=codex model=gpt-6-astra effort=high transcript=20261107T074405-63866]

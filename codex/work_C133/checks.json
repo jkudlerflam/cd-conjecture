@@ -1,0 +1,66 @@
+{
+  "route_A_charge_index": 3279.483870967742,
+  "visibility_max_ratio": 1.0000000000000004,
+  "gram": [
+    {
+      "n": 1,
+      "trace": 0.00390625,
+      "bound": 0.0058309037900874635,
+      "ratio": 0.669921875,
+      "integration_error": 3.265603120820532e-16
+    },
+    {
+      "n": 2,
+      "trace": 0.0039370226548424035,
+      "bound": 0.0058309037900874635,
+      "ratio": 0.6751993853054722,
+      "integration_error": 2.938488583269658e-16
+    },
+    {
+      "n": 4,
+      "trace": 0.0039370688995750535,
+      "bound": 0.0058309037900874635,
+      "ratio": 0.6752073162771217,
+      "integration_error": 2.940350432627623e-16
+    },
+    {
+      "n": 8,
+      "trace": 0.003937068899651663,
+      "bound": 0.0058309037900874635,
+      "ratio": 0.6752073162902602,
+      "integration_error": 2.9403733039805796e-16
+    },
+    {
+      "n": 12,
+      "trace": 0.0039370688996516485,
+      "bound": 0.0058309037900874635,
+      "ratio": 0.6752073162902578,
+      "integration_error": 2.9404225507697994e-16
+    }
+  ],
+  "xx_energy_error": 3.1086244689504383e-15,
+  "ising_energy_error": 1.7763568394002505e-14,
+  "ashkin_teller_decoupled_error": 1.5987211554602254e-14,
+  "c106_max_relative_error_last": 0.00020304376934143775,
+  "matrixfree_controls": [
+    {
+      "family": "xxz",
+      "L": 6,
+      "energy_difference": 8.881784197001252e-16,
+      "matrixfree_residual": 2.8256751426335126e-15
+    },
+    {
+      "family": "ashkin_teller",
+      "L": 4,
+      "energy_difference": 5.329070518200751e-15,
+      "matrixfree_residual": 9.198450688065657e-15
+    },
+    {
+      "family": "spin1_blbq",
+      "L": 4,
+      "energy_difference": 3.552713678800501e-15,
+      "matrixfree_residual": 3.372595760849947e-15
+    }
+  ],
+  "rank_one_determinant_forbidden_coefficients": 6.28603239852682e-19
+}

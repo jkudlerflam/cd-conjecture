@@ -1,0 +1,13 @@
+No counterexample was found, and a general obstruction remains unproved. The results are in [RESULT.md](<<repo>/codex/work_C133/RESULT.md>), with derivations in [PROOF.md](<<repo>/codex/work_C133/PROOF.md>).
+
+The main findings are:
+
+- The controlled route-A encoder is slow for identifiable reasons. I proved bounds on endpoint visibility and the bus Gram trace, yielding an explicit bound on the total payload velocity. Transfer to the microscopic infrared still requires S.
+- Exact first-order quadratic block encodings obey a physical-cut rank bound. Second-order resolvents evade that rank argument, so it does not settle interacting encodings.
+- There is an additional loophole: \(v_k=M/k\), \(c_k=1\) gives \(A/M=H_N\) without an unbounded number of order-\(M\) velocities. A counting theorem needs an integrable bound near zero velocity.
+
+I computed 107 unrestricted small-ring energies at \(d\le6\), plus vacuum-compatible C106 Casimir sums. No tower emerged. Finite-size overshoots and unresolved crossover effects are explicitly identified rather than counted as violations.
+
+The hierarchical, small-weight U(1), and neutral interacting proposals remain open because no suitable microscopic bond was constructed. Larger-ring calculations are prepared in `large.sbatch`, but were not submitted. All files, including `PROGRESS.md` and the local `STATE.md`, are confined to `work_C133`.
+
+[gpt_solve: backend=codex model=gpt-6-astra effort=high transcript=20261107T074405-63867]
