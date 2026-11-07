@@ -1562,3 +1562,23 @@ At the theoretical-physics standard set at the start of the campaign (standard R
 - Proved, replacing (W1'): Theorem A.2 needs only Var(v_Q) bounded, and Var(v_Q) ≤ 92.9 for every η and Q (59.2 as η → 0), from an exact first-order identity for v_Q' whose edge terms integrate to Z(Q) − 1. Monotonicity of v_Q itself is still unproved and no longer needed.
 - Partly proved, (G): its derivative half follows from its comparability half at the cost of log log(1/η). What remains is one one-sided inequality, σ_L ≥ (3/4) r_Q on the shell 2 ≤ ηL r_Q < 4C_D(η). Numerical margin: min σ/r = 0.995 against 0.75 (C145, 36 cases, L to 16384, 1 + Δ to 1e-6).
 - Strip constant: conditional on the comparability inequality alone, C_strip runs from 838 at η = 0.1 to 867 at η = 1e-12, length-uniform at each η but growing like log log(1/η). Given full (G) with C_GS = 1, C_strip = 773. The constant on the whole U(1) class [−1, 1] would stay 4078.
+
+### 9.106 The easy-axis side, and the U(1) class assembled (C148, Claude Opus agent, 2026-11-07; `codex/work_C148/`; not yet refereed)
+
+- Proved: for every J_z/J > 1, every field, DM angle and L ≥ 2, L(E_{2L} − 2E_L) ≤ 10781 M. The sector theorem |F_L(n) − L e_bulk(n/L)| ≤ K/L holds with K ≤ 4311 M_0 (M_0 = J(1 + Δ)/4), matched doubling gives (5/2)K ≤ 10778 M_0, and the C129 twist adds π²/4. The exact λ-dependent constant on a grid is 10386, worst as Δ → 1+. K/M_0 ≤ 462 for Δ ≥ 2.08 and tends to zero as Δ → ∞.
+- Method: on Δ = cosh λ the Bethe roots live on a circle, and the C139/C140/C142 machinery transfers with constants uniform in the Fermi point, half filling and the dilute regime near h_c1 included. Positivity of the counting density uses a circle version of C140's pairing argument and an elliptic-function bound on the outermost root, L r_0(x_n) ≥ 4 sin(π/8) k K_e/π², which give σ_L ≥ (1 − Φ) r_0(x_n) with Φ ≤ 0.804 for λ ≤ 1 (analytic) and Φ ≤ 0.939 on 1 ≤ λ ≤ 1.36 (cell bracketing of explicit monotone functions). For λ ≥ 1.36, σ_L > 0 for every configuration since min a_1 > (1/2) max K. I redid the cell bracketing in interval arithmetic (pos_interval.py, mpmath iv at 30 digits) after checking the monotonicity direction of each factor: worst cell 0.93895 < 1, direct margin 0.0210 > 0. So the step is rigorous.
+- Half filling: the odd-ring spinon gives a positive defect decaying in L, and on even rings the defect is exponentially small beyond the correlation length.
+- Glue at Δ = 1: C142's Bethe branch continues analytically through Δ = 1 in XXX rapidities, which identifies the ground state on Δ > 1 at both parities, and both sector bounds are uniform up to Δ = 1 from their sides with the same C129 reductions.
+- Numerical: the largest computed defect is 3.9993 M_0 (ED at L = 2, Δ = 1.001, against Heisenberg's 4), and the largest sector error is L|F − L e_bulk| = 1.82 M_0 against the proved 4311 M_0.
+
+The U(1) class, assembled. For the bond h = J_⊥(SˣSˣ + SʸSʸ) + D(SˣSʸ − SʸSˣ) + J_z SᶻSᶻ − (B/2)(Sᶻ⊗1 + 1⊗Sᶻ), with J = √(J_⊥² + D²) and Δ = J_z/J, at every field B, DM angle and length L ≥ 2:
+
+| Δ = J_z/J | bound on L(E_{2L} − 2E_L)/M | source | status |
+|---|---|---|---|
+| Δ ≤ −1 | 0 | C129 | proved |
+| −1 < Δ < −1 + δ | 773, given σ_L ≥ (3/4) r_Q on the shell | C145, C146 | conditional |
+| −1 + δ ≤ Δ ≤ 0 | 6·10¹⁵ δ^(−25/3) | C134, C136 | refereed |
+| 0 ≤ Δ ≤ 1 | 4078 | C139, C140, C142 | refereed (C140 referee, C147) |
+| Δ > 1 | 10781 | C148 | proved, not refereed |
+
+So the bound is proved on all of the class except a strip −1 < Δ < −1 + δ next to the ferromagnet, for every δ > 0, and given one inequality on the shell (numerical margin 0.995 against 0.75) the whole class has the single constant C = 10781.
