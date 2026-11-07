@@ -1,0 +1,7 @@
+Proved the compactness reduction and wrote the [proof and stratification table](<./PROOF.md>). The cover remains conditional on ambient perturbation bounds, the gapped ring-energy estimate, and an exhaustive phase classification. \(C(2)<\infty\) remains open.
+
+The [numerical report](<./NUMERICS.md>) records 12-start searches giving best values \(Q_2=4\), \(Q_4=2.7912527285\), and \(Q_3\approx2.03694\). These are empirical lower bounds on the suprema. The consistency checks passed.
+
+Full optimization at \(L=6,8\), and additional odd lengths, is [SLURM-ready](<./submit_c131.slurm>) but was not submitted because Typhon is inaccessible. No C130 coverage fraction is reported because its neighborhood radii are unavailable.
+
+[gpt_solve: backend=codex model=gpt-6-astra effort=high transcript=20261107T062902-45816]

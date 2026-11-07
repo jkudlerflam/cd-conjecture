@@ -1,0 +1,6 @@
+SU3 6 4 17 9
+{'energy': -0.5594176894596048, 'status': 'optimal', 'input_rank': 17, 'output_rank': 9, 'choi_size': 153, 'dual': -0.5594169716266671, 'dual_min_eig': 3.845063556628413e-08, 'corrected_dual': -0.5594169716266671, 'gap': -7.178329376467119e-07, 'tp_res': 1.4817467253180894e-09, 'rec_res': 4.1472314471491245e-10, 'min_eig': -1.0493775976553843e-06, 'choi_rank': 3, 'petz_energy': -0.5594163175148803, 'distance_petz': 0.00011525796292202026, 'iterations': 350, 'name': 'SU3', 'L': 6, 'l': 4, 'M': 1.0000000017660327, 'E': np.float64(-4.605551275463989), 'petz': np.float64(7.494320209013026), 'opt': np.float64(7.494270819003031), 'dual_scaled': np.float64(7.4942966609887405)}
+<repo>/codex/work_C132/optimal_recovery.py:66: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  p.solve(solver='CLARABEL',tol_gap_abs=1e-9,tol_feas=1e-9,tol_gap_rel=1e-9)
+C106 6 3 16 64
+C106 6 4 64 16

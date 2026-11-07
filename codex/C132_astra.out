@@ -1,0 +1,16 @@
+Wrote [RESULT.md](RESULT.md), [PROOF.md](PROOF.md), and [PROGRESS.md](PROGRESS.md).
+
+The main results are:
+
+- Proved the arbitrary-CPTP extension and formulated Lemma P′ as a support-reduced SDP.
+- Proved Petz optimality for the d = 2 ferromagnetic ground-space mixture, with δ = 1/[2l(l+1)].
+- Proved variant (a) with K = π²/6 for the quadratic class, starting at d = 2 and extending to d = 2^m.
+- Identified a gap in the claimed trace-norm obstruction. Its remaining log L prevents the asserted contradiction.
+
+The supplied quick checks pass. Small SDPs show substantial improvement for TFIM, small improvement for XXZ, and no material improvement for XX, Heisenberg or SU(3). The asymptotic factor-2 question remains unresolved.
+
+The falsification search found nonmonotonicity, including a fixed random qubit bond, but no divergent defect through the tested lengths. General Lemma P′ remains open even at d = 2.
+
+Larger calculations are prepared as SLURM scripts, not submitted. The original long-run numbers were not independently reproduced.
+
+[gpt_solve: backend=codex model=gpt-6-astra effort=high transcript=20261107T062902-45817]

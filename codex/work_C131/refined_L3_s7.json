@@ -1,0 +1,39 @@
+{
+  "L": 3,
+  "parity": "odd",
+  "Q": 1.335024822394176,
+  "M": {
+    "lower": 0.33304725945188074,
+    "upper": 0.3330476117273539,
+    "gap": 3.522754731810629e-07,
+    "o": [
+      -0.0309362955354037,
+      0.04240844299526484,
+      0.00020680937607653555
+    ],
+    "dual_success": false
+  },
+  "E_L": -0.7819665775385074,
+  "E_2L": -1.415724212178643,
+  "residual_L": 1.6979584840625332e-16,
+  "residual_2L": 1.6376537652296364e-15,
+  "coefficients": [
+    -0.9906161516402283,
+    -2.229465272486185,
+    1.037557140820393,
+    -0.47568551855905444,
+    -0.09251496371545948,
+    1.0400167114889136,
+    0.06581028630033128,
+    -0.002302798523776528,
+    0.8162606554726489
+  ],
+  "seed": 7,
+  "nfev": 3664,
+  "success": true,
+  "message": "Optimization terminated successfully.",
+  "seconds": 17.732707023620605,
+  "method": "Nelder-Mead, eight angles",
+  "numpy": "2.4.6",
+  "gauge_verification": "Retained best feasible dual iterate, recomputed after search; no new outer iterations."
+}

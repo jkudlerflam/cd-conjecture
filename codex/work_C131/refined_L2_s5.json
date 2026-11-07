@@ -1,0 +1,39 @@
+{
+  "L": 2,
+  "parity": "even",
+  "Q": 3.871341852411631,
+  "M": {
+    "lower": 0.29691180291229446,
+    "upper": 0.2969121462374066,
+    "gap": 3.4332511211765393e-07,
+    "o": [
+      0.0009375770655170514,
+      -0.012439732703596329,
+      0.006321956925247969
+    ],
+    "dual_success": true
+  },
+  "E_L": -0.8629737932901251,
+  "E_2L": -1.151223377471133,
+  "residual_L": 4.0250725993716536e-16,
+  "residual_2L": 4.871060095730371e-16,
+  "coefficients": [
+    1.9216221466464556,
+    -1.9643180667761968,
+    -1.9260820482134235,
+    0.23782971161198782,
+    0.03625571123354549,
+    0.09585671667216407,
+    -0.11621523762679183,
+    -0.002363629549349145,
+    0.043299108548419105
+  ],
+  "seed": 5,
+  "nfev": 4000,
+  "success": false,
+  "message": "Maximum number of function evaluations has been exceeded.",
+  "seconds": 17.871346950531006,
+  "method": "Nelder-Mead, eight angles",
+  "numpy": "2.4.6",
+  "gauge_verification": "Retained best feasible dual iterate, recomputed after search; no new outer iterations."
+}

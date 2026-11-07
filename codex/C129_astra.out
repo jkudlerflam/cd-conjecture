@@ -1,0 +1,14 @@
+The full \(C_{U(1)}<\infty\) theorem remains unproved. I wrote [RESULT.md](RESULT.md), [PROOF.md](PROOF.md), and [PROGRESS.md](PROGRESS.md).
+
+The decisive correction is that [Kozlowski’s Theorem 3.5](https://arxiv.org/html/1508.05741) gives half-filled convergence without a finite-size rate. Corollary 4.3 already supplies the energy correction below half filling. Piece (a) therefore needs an additional theorem.
+
+Proved results include:
+
+- Steps 1–3, with an exact trigonometric twist bound.
+- An explicit constant \(8-4\sqrt2+\pi^2/4\) for \(J_z=0\).
+- Zero defect for \(\Delta\le-1\).
+- Uniform sector bounds on \(n^3\le L\) and \((\Delta+1)L^2\le A\).
+
+All 250 Bethe/ED comparisons, 144 field/DM checks, and twist checks through \(L=12\) passed. The [SLURM scan](run_typhon.slurm) reaches paired length 8192 but was not submitted.
+
+[gpt_solve: backend=codex model=gpt-6-astra effort=high transcript=20261107T062902-45815]

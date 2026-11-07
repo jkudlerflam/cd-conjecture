@@ -1,0 +1,27 @@
+PASS 1 XX box smoothing E_L >= -csc(pi/L), equality on even L = 2..12
+   XX M=0.5000  L^2 delta/M = 2.5337 2.2504 2.1666 2.1379, pi A/(3M) = 2.0944
+PASS 2 XX Petz defect bounded and nonincreasing in L, e_trial >= e_0 where known
+   XXZ0.5 M=0.5000  L^2 delta/M = 3.3199 2.9392 2.8245 2.7845, pi A/(3M) = 2.7207
+PASS 2 XXZ0.5 Petz defect bounded and nonincreasing in L, e_trial >= e_0 where known
+   Heis M=0.5000  L^2 delta/M = 4.0536 3.5856 3.4408 3.3900, pi A/(3M) = 3.2899
+PASS 2 Heis Petz defect bounded and nonincreasing in L, e_trial >= e_0 where known
+   XXZ2 M=0.7500  L^2 delta/M = 3.2856 2.7466 2.5345 2.3403
+PASS 2 XXZ2 Petz defect bounded and nonincreasing in L, e_trial >= e_0 where known
+   SU(3) L^2 delta/M = 9.0000 7.4943
+PASS 3 SU(3) Petz defect decreasing on L = 3, 6 (and 9)
+   FM Heisenberg L^2 delta/M = 1.3333 1.2000 1.1429 1.1111
+PASS 4 FM Heisenberg multiplet: defect bounded (< 1.5) and decreasing
+   TFIM g=1.0 L^2 delta/M = 0.7710 0.7592 0.7532
+   TFIM g=1.6 L^2 delta/M = 0.1632 0.0829 0.0404
+PASS 5 TFIM g=1.6 defect decays with L (massive modes suppressed)
+   Heis L=8  L^2 ||X - rho||_1 = 4.406  L^2 CMI = 3.521  (c/3)pi^2 = 3.290  L^2 delta = 1.793 <= M L^2 ||.||_1 = 2.203
+PASS 6 Heis L=8 reduction (4.1): delta <= M ||X - rho_{l+1}||_1
+   Heis L=12  L^2 ||X - rho||_1 = 4.738  L^2 CMI = 3.387  (c/3)pi^2 = 3.290  L^2 delta = 1.695 <= M L^2 ||.||_1 = 2.369
+PASS 6 Heis L=12 reduction (4.1): delta <= M ||X - rho_{l+1}||_1
+   stack: delta = 4.082094e-02, delta_1 + delta_2 = 4.082094e-02, delta_2/delta_Heis = 0.100000
+PASS 7 decoupled stack: Petz defect additive, slow copy weighted by its bond
+PASS 8 Lemma 3.1: iterated Petz bond marginals all equal
+   C106 L^2 delta/M (eps = 1, 0.1, 0.03; L = 4, 5): 1.337 2.466 3.301 2.374 3.313 2.383
+PASS 9 C106 chain: defect uniformly bounded in eps (< 4)
+
+ALL PASS

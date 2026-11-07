@@ -1,0 +1,24 @@
+XX 4 2 Petz 3.313708 opt 3.313708 optimal
+XX 4 3 Petz 3.313708 opt 3.313709 optimal
+XX 6 2 Petz 6.111456 opt 6.111456 optimal
+XX 6 3 Petz 2.533747 opt 2.533748 optimal
+XX 6 4 Petz 2.533747 opt 2.533750 optimal
+XX 6 5 Petz 6.111456 opt 6.111456 optimal
+XX 8 2 Petz 10.155020 opt 10.155020 optimal
+XX 8 3 Petz 3.632191 opt 3.632190 optimal
+Failure:interrupted
+Traceback (most recent call last):
+  File "<repo>/codex/work_C132/scan_sdp.py", line 28, in <module>
+    b=len(support(F.ptrace_first(r,d,l))[0]); q=len(support(r)[0])
+      ^^^^^^^^^^^^^^
+  File "<repo>/codex/work_C132/optimal_recovery.py", line 31, in solve
+    val=prob.solve(solver='SCS',eps=eps,max_iters=max_iters,verbose=False)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/cvxpy/problems/problem.py", line 687, in solve
+    return solve_func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/cvxpy/problems/problem.py", line 1148, in _solve
+    self.unpack_results(solution, solving_chain, inverse_data)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/cvxpy/problems/problem.py", line 1453, in unpack_results
+    raise error.SolverError(
+cvxpy.error.SolverError: Solver 'SCS' failed. Try another solver, or solve with verbose=True for more information.

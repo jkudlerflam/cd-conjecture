@@ -1,0 +1,38 @@
+<repo>/codex/work_C132/optimal_recovery.py:66: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  p.solve(solver='CLARABEL',tol_gap_abs=1e-9,tol_feas=1e-9,tol_gap_rel=1e-9)
+<repo>/codex/work_C132/optimal_recovery.py:34: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  val=prob.solve(solver=solver,tol_gap_abs=eps,tol_feas=eps,tol_gap_rel=eps,verbose=False)
+{'name': 'random5', 'L': 4, 'l': 2, 'petz': np.float64(3.2448416414765395), 'opt': np.float64(3.1113756383801285), 'dual_scaled': np.float64(3.1113755556361613), 'tp_res': 2.220446049250313e-16, 'rec_res': 3.3306690738754696e-16, 'min_eig': -1.2799964470477343e-09, 'gap': 5.171497952094484e-09, 'status': 'optimal_inaccurate'}
+{'name': 'random5', 'L': 4, 'l': 3, 'petz': np.float64(3.2509231738017066), 'opt': np.float64(3.120980862271669), 'dual_scaled': np.float64(3.1209805769915793), 'tp_res': 2.646771690706373e-13, 'rec_res': 2.0672352718520415e-13, 'min_eig': -7.827416582549328e-10, 'gap': 1.7830005638597157e-08, 'status': 'optimal_inaccurate'}
+{'name': 'random5', 'L': 6, 'l': 2, 'petz': np.float64(4.414519285572681), 'opt': np.float64(4.144443336357735), 'dual_scaled': np.float64(4.144442868319487), 'tp_res': 2.220446049250313e-16, 'rec_res': 1.1102230246251565e-16, 'min_eig': -4.619446155274526e-09, 'gap': 1.3001062448836365e-08, 'status': 'optimal_inaccurate'}
+{'name': 'random5', 'L': 6, 'l': 3, 'petz': np.float64(1.9789096571529265), 'opt': np.float64(1.7468363157235145), 'dual_scaled': np.float64(1.74683604197862), 'tp_res': 1.284217177044411e-11, 'rec_res': 1.5585656950376073e-11, 'min_eig': -9.504283803855882e-10, 'gap': 7.604024854224178e-09, 'status': 'optimal_inaccurate'}
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/_core/fromnumeric.py:83: RuntimeWarning: invalid value encountered in reduce
+  return ufunc.reduce(obj, axis, dtype, out, **passkwargs)
+{'name': 'random5', 'L': 6, 'l': 4, 'petz': np.float64(2.059045531695906), 'opt': np.float64(1.7765297388206172), 'dual_scaled': np.float64(1.776528686176913), 'tp_res': 1.1102230246251565e-16, 'rec_res': 6.441286924393402e-15, 'min_eig': -1.5458106419854407e-09, 'gap': 2.9240102894512177e-08, 'status': 'optimal_inaccurate'}
+{'name': 'random5', 'L': 6, 'l': 5, 'petz': np.float64(4.41556355149129), 'opt': np.float64(3.9900381805169154), 'dual_scaled': np.float64(3.9900374763862696), 'tp_res': 2.220446049250313e-16, 'rec_res': 2.220446049250313e-16, 'min_eig': -4.3903222656246975e-10, 'gap': 1.9559184605277835e-08, 'status': 'optimal_inaccurate'}
+{'name': 'random5', 'L': 8, 'l': 2, 'petz': np.float64(8.978896786961982)}
+{'name': 'random5', 'L': 8, 'l': 3, 'petz': np.float64(3.409377193313758)}
+{'name': 'random5', 'L': 8, 'l': 4, 'petz': np.float64(1.8820106982178586)}
+{'name': 'random5', 'L': 8, 'l': 5, 'petz': np.float64(1.9065038149139928)}
+{'name': 'random5', 'L': 8, 'l': 6, 'petz': np.float64(3.4078650438933655)}
+{'name': 'random5', 'L': 8, 'l': 7, 'petz': np.float64(8.97753584458197)}
+{'name': 'random5', 'L': 10, 'l': 5, 'petz': np.float64(1.677072078616571)}
+{'name': 'random5', 'L': 10, 'l': 6, 'petz': np.float64(1.6814752709073886)}
+{'name': 'random5', 'L': 12, 'l': 6, 'petz': np.float64(1.2744005002818484)}
+{'name': 'random5', 'L': 12, 'l': 7, 'petz': np.float64(1.2886980413366995)}
+{'name': 'random13', 'L': 4, 'l': 2, 'petz': np.float64(2.566697347504546), 'opt': np.float64(1.9155838256459947), 'dual_scaled': np.float64(1.9155835472516274), 'tp_res': 2.220446049250313e-16, 'rec_res': 2.220446049250313e-16, 'min_eig': -3.5941024362062597e-09, 'gap': 1.7399647944671415e-08, 'status': 'optimal_inaccurate'}
+{'name': 'random13', 'L': 4, 'l': 3, 'petz': np.float64(2.5664035297428045), 'opt': np.float64(1.9142739351646587), 'dual_scaled': np.float64(1.914273543278034), 'tp_res': 4.440892098500626e-16, 'rec_res': 3.608224830031759e-16, 'min_eig': 5.488724811008085e-10, 'gap': 2.4492914030282975e-08, 'status': 'optimal_inaccurate'}
+{'name': 'random13', 'L': 6, 'l': 2, 'petz': np.float64(7.476280141987682), 'opt': np.float64(7.169445773511224), 'dual_scaled': np.float64(7.169445000621942), 'tp_res': 2.220446049250313e-16, 'rec_res': 9.71445146547012e-17, 'min_eig': -5.4373501484678176e-09, 'gap': 2.14691466826622e-08, 'status': 'optimal_inaccurate'}
+{'name': 'random13', 'L': 6, 'l': 3, 'petz': np.float64(3.123251932062086), 'opt': np.float64(2.740561693241087), 'dual_scaled': np.float64(2.740561253107445), 'tp_res': 1.992628284597231e-12, 'rec_res': 1.5752143513181327e-12, 'min_eig': -1.8025272467805164e-09, 'gap': 1.222593448702014e-08, 'status': 'optimal_inaccurate'}
+{'name': 'random13', 'L': 6, 'l': 4, 'petz': np.float64(3.121149331293562), 'opt': np.float64(2.735890719353663), 'dual_scaled': np.float64(2.7358885543223432), 'tp_res': 5.551115123125783e-16, 'rec_res': 2.4424906541753444e-15, 'min_eig': -8.725408258398481e-10, 'gap': 6.013975883956135e-08, 'status': 'optimal_inaccurate'}
+{'name': 'random13', 'L': 6, 'l': 5, 'petz': np.float64(7.464086773650258), 'opt': np.float64(7.158598033482787), 'dual_scaled': np.float64(7.158597517035601), 'tp_res': 4.440892098500626e-16, 'rec_res': 5.551115123125783e-16, 'min_eig': -9.36537742412238e-10, 'gap': 1.4345755139366645e-08, 'status': 'optimal_inaccurate'}
+{'name': 'random13', 'L': 8, 'l': 2, 'petz': np.float64(12.260627372768942)}
+{'name': 'random13', 'L': 8, 'l': 3, 'petz': np.float64(4.459919840185988)}
+{'name': 'random13', 'L': 8, 'l': 4, 'petz': np.float64(2.682034611685345)}
+{'name': 'random13', 'L': 8, 'l': 5, 'petz': np.float64(2.6714674059778263)}
+{'name': 'random13', 'L': 8, 'l': 6, 'petz': np.float64(4.45425559240427)}
+{'name': 'random13', 'L': 8, 'l': 7, 'petz': np.float64(12.252275493111613)}
+{'name': 'random13', 'L': 10, 'l': 5, 'petz': np.float64(2.40149105287293)}
+{'name': 'random13', 'L': 10, 'l': 6, 'petz': np.float64(2.411186277305236)}
+{'name': 'random13', 'L': 12, 'l': 6, 'petz': np.float64(2.0882822303400697)}
+{'name': 'random13', 'L': 12, 'l': 7, 'petz': np.float64(2.095602436633823)}

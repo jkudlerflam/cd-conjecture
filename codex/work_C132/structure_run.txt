@@ -1,0 +1,7 @@
+{'name': 'XX', 'kraus_weights': [1.9999999780723454, 1.9999999780876987], 'distance_petz': 6.0819191468030844e-05, 'input_discarded_mass': 2.220446049250313e-16, 'output_discarded_mass': 1.1102230246251565e-16}
+{'name': 'Heis', 'kraus_weights': [1.9999999916222841, 1.999999991623617], 'distance_petz': 1.5865917149648263e-08, 'input_discarded_mass': 0.0, 'output_discarded_mass': 1.5543122344752192e-15}
+{'name': 'XXZ0.5', 'kraus_weights': [1.9999999834768494, 1.9999999835847513], 'distance_petz': 0.014179920676396833, 'input_discarded_mass': 1.1102230246251565e-16, 'output_discarded_mass': 3.3306690738754696e-16}
+{'name': 'TFIM1.0', 'kraus_weights': [0.06807481259635725, 3.9319236937813136], 'distance_petz': 2.9685437738489893, 'input_discarded_mass': -1.3322676295501878e-15, 'output_discarded_mass': 7.771561172376096e-16}
+<repo>/codex/work_C132/optimal_recovery.py:34: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  val=prob.solve(solver=solver,tol_gap_abs=eps,tol_feas=eps,tol_gap_rel=eps,verbose=False)
+{'name': 'TFIM1.6', 'kraus_weights': [0.01064742266958139, 0.08808464195486143, 0.2956558991090596, 3.6056113553833846], 'distance_petz': 2.73514393242539, 'input_discarded_mass': -2.220446049250313e-16, 'output_discarded_mass': 1.5543122344752192e-15}
