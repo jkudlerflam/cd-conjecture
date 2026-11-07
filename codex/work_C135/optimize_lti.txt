@@ -1,0 +1,40 @@
+<repo>/codex/work_C135/core.py:91: UserWarning: You are solving a parameterized problem that is not DPP. Because the problem is not DPP, subsequent solves will not be faster than the first one. For more information, see the documentation on Disciplined Parametrized Programming, at https://www.cvxpy.org/tutorial/dpp/index.html
+  self.problem.solve(solver=solver,**opts)
+<repo>/codex/work_C135/core.py:24: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  p.solve(solver='CLARABEL',tol_gap_abs=1e-10,tol_feas=1e-10,tol_gap_rel=1e-10)
+<repo>/codex/work_C135/core.py:91: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  self.problem.solve(solver=solver,**opts)
+{"kind": "lti", "L": 0, "n": 2, "seed": 0, "score": 1.9999999998361302, "point": {"lti": [{"n": 2, "value": -1.5000004420019688, "lower": -1.500000000003, "upper": -1.4999999999610325, "status": "optimal", "solver": "SCS", "seconds": 0.00545811653137207, "iterations": 50, "trace_residual": 2.7383650902379486e-10, "lti_residual": 1.5700924693380688e-15, "min_rho": -7.360483028374379e-08, "repair_mix": 2.946939577107688e-07, "repaired_lti_residual": 0.0, "dual_gap": 4.196754055385554e-11, "slackness": 5.10261491798684e-07, "scs": {"res_pri": 7.359540961484845e-08, "res_dual": 1.818003986435733e-08, "gap": 4.601820482385383e-07, "status": "solved"}}, {"n": 4, "value": -0.9999999999957365, "lower": -1.000000000002, "upper": -0.9999999999925357, "status": "optimal", "solver": "SCS", "seconds": 0.014535903930664062, "iterations": 225, "trace_residual": 1.1213252548714081e-14, "lti_residual": 1.4244144516659378e-15, "min_rho": 1.4945621919093898e-13, "repair_mix": 3.2e-12, "repaired_lti_residual": 1.6718270938682e-16, "dual_gap": 9.46420719571961e-12, "slackness": 4.456897528244022e-12, "scs": {"res_pri": 6.387767158946603e-13, "res_dual": 6.877165070437377e-13, "gap": 3.2321925458350944e-12, "status": "solved"}}], "coefficients": [1.9999999999999993, 1.9999999999999996, 1.9999999999999996, 3.12481436537329e-16, 7.691850745534253e-16, 3.12481436537329e-16, 3.8459253727671266e-16, 5.047777051756853e-16, 4.086295708565072e-16], "n": 2}, "evaluations": 100, "success": false, "message": "Maximum number of function evaluations has been exceeded.", "seconds": 16.18064594268799, "tag": "numerical exploratory; finite-budget local search"}
+{"kind": "lti", "L": 0, "n": 2, "seed": 1, "score": 1.7865613166144292, "point": {"lti": [{"n": 2, "value": -1.345678728432143, "lower": -1.3456787295740986, "upper": -1.3456787284310665, "status": "optimal", "solver": "SCS", "seconds": 0.012218236923217773, "iterations": 125, "trace_residual": 1.0186296250935811e-12, "lti_residual": 4.8772999061592416e-14, "min_rho": 1.7297071988385534e-10, "repair_mix": 8e-13, "repaired_lti_residual": 1.1102230246251565e-16, "dual_gap": 1.1430321134042742e-09, "slackness": 1.3178242379867255e-09, "scs": {"res_pri": 2.0815937952224373e-10, "res_dual": 3.942268982613916e-10, "gap": 1.7056112812411183e-09, "status": "solved"}}, {"n": 4, "value": -0.8990381562678491, "lower": -0.8990383992774592, "upper": -0.899038089010779, "status": "optimal", "solver": "SCS", "seconds": 0.164686918258667, "iterations": 575, "trace_residual": 6.713052336237979e-11, "lti_residual": 7.84281339264774e-11, "min_rho": -4.668686268096398e-09, "repair_mix": 7.478704634113245e-08, "repaired_lti_residual": 1.2070282719558575e-16, "dual_gap": 3.102666802368148e-07, "slackness": 1.9104145197329845e-07, "scs": {"res_pri": 2.2839920408861562e-08, "res_dual": 5.060067991669346e-08, "gap": 1.2967682157286367e-07, "status": "solved"}}], "coefficients": [2.188048242889495, 0.6403706578579706, 0.5249810377164507, -1.390430846145139, 0.6902652432014862, 0.005926331132901075, -0.07471880921569139, 0.19998640470791637, -0.15068853922025613], "n": 2}, "evaluations": 100, "success": false, "message": "Maximum number of function evaluations has been exceeded.", "seconds": 39.21296191215515, "tag": "numerical exploratory; finite-budget local search"}
+Traceback (most recent call last):
+  File "<repo>/codex/work_C135/optimize.py", line 44, in <module>
+    ap=argparse.ArgumentParser();ap.add_argument('--large',action='store_true');ap.add_argument('--starts',type=int,default=2);ap.add_argument('--budget',type=int,default=24);ap.add_argument('--kind');ap.add_argument('--L',type=int);run(ap.parse_args())
+                                                                                                                                                                                                                                         ^^^^^^^^^^^^^^^^^^^^
+  File "<repo>/codex/work_C135/optimize.py", line 40, in run
+    result=minimize(loss,a,method='Nelder-Mead',options=dict(maxfev=args.budget,xatol=1e-5,fatol=1e-7,initial_simplex=np.vstack([a,a+.12*np.eye(8)])))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/scipy/optimize/_minimize.py", line 772, in minimize
+    res = _minimize_neldermead(fun, x0, args, callback, bounds=bounds,
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/scipy/optimize/_optimize.py", line 883, in _minimize_neldermead
+    fxe = func(xe)
+          ^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/scipy/optimize/_optimize.py", line 560, in function_wrapper
+    fx = function(np.copy(x), *(wrapper_args + args))
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<repo>/codex/work_C135/optimize.py", line 37, in loss
+    cc=rot@from_angles(ang);q,rec=evaluate(cc,kind,L,n,args.large);count+=1
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<repo>/codex/work_C135/optimize.py", line 14, in evaluate
+    h=np.einsum('a,aij->ij',c,B);m=gauge(h)['upper'];h/=m
+                                   ^^^^^^^^
+  File "<repo>/codex/work_C135/core.py", line 24, in gauge
+    p.solve(solver='CLARABEL',tol_gap_abs=1e-10,tol_feas=1e-10,tol_gap_rel=1e-10)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/cvxpy/problems/problem.py", line 687, in solve
+    return solve_func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/cvxpy/problems/problem.py", line 1148, in _solve
+    self.unpack_results(solution, solving_chain, inverse_data)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/cvxpy/problems/problem.py", line 1453, in unpack_results
+    raise error.SolverError(
+cvxpy.error.SolverError: Solver 'CLARABEL' failed. Try another solver, or solve with verbose=True for more information.

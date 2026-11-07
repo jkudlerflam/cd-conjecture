@@ -1,0 +1,19 @@
+# C135 session memory
+
+[Proved] F1 to F4 hold. Singular Petz input supports require a CPTP completion; the periodization proof uses stabilization of finite windows. Reversal and reality symmetrizations preserve LTI in the stated symmetry classes. A twisted-translation invariant ground state in a fixed linear ordering has LTI windows, but arbitrary cyclic seam-crossing windows need not.
+
+[Proved] Ring saturation is false for h=(XX+YY)/4+(ZI+IZ)/8, M=1/2. E_LTI(3)=-5/12 by an exact W-state primal and rational dual. The best untwisted ring density at length >=3 is -3/8. A rational Toeplitz occupation covariance at n=4 has coefficients (3187,-2870,2007,-756)/10000 and energy -7553/20000, below the best symmetry-twisted ring density -3/8 at every length >=4. Integer minors prove feasibility. Free momentum smoothing bounds the tail L>=8, so the comparison includes infinitely many lengths.
+
+[Proved] A sine-window covariance construction proves e0-E_LTI(n)<=M[1-cos(pi/(n+1))] for every nearest-neighbor quadratic qubit bond, including pairing and transverse field. Thus K=pi²/2 suffices. For XX, the explicit weighted-bond dual in PROOF.md section 6 gives K=pi. It applies C105's weighted XX positivity bound to the LTI problem. No claim of novelty beyond this application was researched.
+
+[Proved limitation] Complementary slackness supplies no small upper bound on the energy of the recovered state outside the dual kernel. Classical conditional extension and the previously known ferromagnetic symmetric mixture are controlled; general interacting Petz or optimal-channel bounds remain open. The C132 audit of the entropy/trace-norm obstruction is retained.
+
+[Numerical] Scripts completed a 62-bond scan, including 30 seeded random real/complex bonds, all requested named families and 21 fixed near-critical TFIM bonds. 738 ring-energy rows, 345 LTI rows at n=2,...,8 plus 48 free covariance rows at n=9,10, 372 hull upper distances, 161 lower distances. Generic complex n=6 was stopped as too expensive locally. Full finite coverage is explicit in TABLES.md and summary.json. Larger cases and largest-level all-angle searches are unrun SLURM continuations.
+
+[Numerical] The full-spin X matrices for XX, Heisenberg and TFIM at n=4,...,8 are retained. They contain multi-site Pauli terms but this does not prove necessity. A bond-only restricted dual matches XX through n=8. The analytic certificate itself is bond-only. The largest sampled L² hull upper distance is about 3.94536 at random_29, L=6. No finite data establish unbounded growth or a uniform all-bond bound.
+
+[Numerical] Four starts of eight-angle optimization ran for the n=2 to 4 LTI difference and Petz upper endpoints at L=6,8,10. All hit evaluation limits. Best LTI difference is 2 at Heisenberg. Ring-upper maxima sampled are 4.053601, 3.648031 and 3.440815. L=8's best point is near a U(1) DM-and-field family, while the other two are Heisenberg. No systematic asymptotic drift is inferred.
+
+[Proved, file map] PROOF.md contains the derivations; RESULT.md contains the conclusions and limitations; NUMERICS.md describes the algorithms; TABLES.md and tables.json contain all requested table positions, with NA for missing entries. core.py implements gauge normalization, symmetry-block LTI, residual repair, ring ED and Petz periodization. campaign.py, distances.py, quadratic_lti.py, free_rings.py and optimize.py perform the scans. certificates.py, restricted_dual.py, verify_math.py and free_covariance.py check the explicit mathematics and dual structure. report.py rebuilds tables. refine_gauge.py tightens numerical scale brackets. Results and matrices are stored locally.
+
+[Assumed next step] The remaining lemma is a uniform O(M/n²) LTI dual certificate for interacting qubit bonds. Exact ring saturation is unavailable. The prepared cluster jobs resume the missing scans; none has been submitted. Parent STATE.md was read but not modified under the task's folder restriction.

@@ -1,0 +1,74 @@
+{
+  "kind": "lti",
+  "L": 0,
+  "n": 2,
+  "seed": 2,
+  "score": 1.812525384589153,
+  "point": {
+    "lti": [
+      {
+        "n": 2,
+        "value": -1.3700736340583284,
+        "lower": -1.3700736250144638,
+        "upper": -1.3700736183646227,
+        "status": "optimal",
+        "solver": "SCS",
+        "seconds": 0.010703802108764648,
+        "iterations": 125,
+        "trace_residual": 9.947376256036478e-12,
+        "lti_residual": 1.8880380985846897e-12,
+        "min_rho": -2.8604822829736356e-09,
+        "repair_mix": 1.145464415747786e-08,
+        "repaired_lti_residual": 3.9557781533026204e-17,
+        "dual_gap": 6.649841122197131e-09,
+        "slackness": 1.0795538396179128e-08,
+        "scs": {
+          "res_pri": 2.658181260789881e-09,
+          "res_dual": 3.303906121732314e-09,
+          "gap": 1.4870422004875646e-08,
+          "status": "solved"
+        }
+      },
+      {
+        "n": 4,
+        "value": -0.9169568847473505,
+        "lower": -0.9169422722173345,
+        "upper": -0.9162931662023667,
+        "status": "optimal_inaccurate",
+        "solver": "SCS",
+        "seconds": 0.3878509998321533,
+        "iterations": 1500,
+        "trace_residual": 5.763602040076421e-09,
+        "lti_residual": 8.223667682536944e-08,
+        "min_rho": -4.524258608377179e-05,
+        "repair_mix": 0.0007243588841491039,
+        "repaired_lti_residual": 8.147460118737325e-17,
+        "dual_gap": 0.0006491060149678152,
+        "slackness": 0.00010683157268448816,
+        "scs": {
+          "res_pri": 2.3604128069447703e-05,
+          "res_dual": 2.886612628760673e-06,
+          "gap": 1.4306374531071348e-05,
+          "status": "solved (inaccurate - reached max_iters)"
+        }
+      }
+    ],
+    "coefficients": [
+      1.876168298373889,
+      -0.08614678154888375,
+      -0.3302477666640454,
+      -1.7807928359469156,
+      -0.2699218623790023,
+      0.022249035578860512,
+      0.19070658971961374,
+      -0.3194055026281034,
+      -0.03592074976390846
+    ],
+    "n": 2
+  },
+  "evaluations": 100,
+  "success": false,
+  "message": "Maximum number of function evaluations has been exceeded.",
+  "seconds": 39.50713801383972,
+  "tag": "numerical exploratory; finite-budget local search"
+}

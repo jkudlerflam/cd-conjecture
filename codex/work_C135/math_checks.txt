@@ -1,0 +1,75 @@
+{
+  "exact_n3_eigenvalues": [
+    -0.41666666666666663,
+    -0.33333333333333337,
+    -0.25,
+    -0.16666666666666669,
+    0.16666666666666669,
+    0.25,
+    0.33333333333333337,
+    0.41666666666666663
+  ],
+  "w_lti_residual": 0.0,
+  "cyclic_window_lti_residual": 0.9428090415820637,
+  "twisted_n3_eigenvalues": [
+    -1.2499999999999998,
+    -0.75,
+    -0.75,
+    0.25,
+    0.2500000000000001,
+    0.75,
+    0.75,
+    0.7500000000000001
+  ],
+  "w_twisted_residual": 0.0,
+  "rational_n4": {
+    "lti_residual": 1.6031743759652435e-15,
+    "energy": -0.3776499999999998,
+    "covariance_residual": 1.988208040134332e-15
+  },
+  "tail_lower": -0.37184882844148115,
+  "twisted_rings": {
+    "4": {
+      "minimum": -0.375,
+      "occupation": 1
+    },
+    "5": {
+      "minimum": -0.3736067977499789,
+      "occupation": 2
+    },
+    "6": {
+      "minimum": -0.37200846792814624,
+      "occupation": 2
+    },
+    "7": {
+      "minimum": -0.36456253368640545,
+      "occupation": 2
+    }
+  },
+  "covariance_smoothing": [
+    {
+      "name": "XX",
+      "min_symbol": 0.005065095430804403,
+      "max_symbol": 0.9949349045691958,
+      "particle_hole_residual": 3.284502038874697e-16,
+      "onsite_residual": 2.220588152375369e-16,
+      "neighbor_residual": 1.1505191239962094e-16
+    },
+    {
+      "name": "TFIM_1",
+      "min_symbol": 0.007730648257839023,
+      "max_symbol": 0.9922693517421609,
+      "particle_hole_residual": 3.232926447150155e-16,
+      "onsite_residual": 2.243870893844179e-16,
+      "neighbor_residual": 8.768927453521127e-17
+    },
+    {
+      "name": "Heisenberg",
+      "min_symbol": 0.033370968151796215,
+      "max_symbol": 0.966629031848204,
+      "particle_hole_residual": 3.279155086913989e-16,
+      "onsite_residual": 1.570370612679521e-16,
+      "neighbor_residual": 1.7823395906159877e-16
+    }
+  ]
+}

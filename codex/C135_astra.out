@@ -1,0 +1,13 @@
+[Proved] For all nearest-neighbor quadratic qubit bonds,
+\[
+e_0-E_{\mathrm{LTI}}(n)\le M\!\left[1-\cos\frac{\pi}{n+1}\right].
+\]
+I also constructed an explicit weighted-bond XX telescoping certificate with \(K=\pi\).
+
+[Proved] Ring saturation is false, including its symmetry-twisted version. XX with field \(b=1/2\) supplies exact counterexamples at \(n=3,4\).
+
+[Numerical] Ran the 62-bond scan, including 30 random bonds. Larger interacting computations and the largest-level search remain unrun, with SLURM scripts prepared. The general interacting LTI lemma remains open.
+
+The conclusions, derivations and coverage are in [RESULT.md](<<local> Dropbox/Jonah Kudler-Flam/Claude/Projects/Modular c-Theorem/notes/cd_conjecture/codex/work_C135/RESULT.md>), [PROOF.md](<<local> Dropbox/Jonah Kudler-Flam/Claude/Projects/Modular c-Theorem/notes/cd_conjecture/codex/work_C135/PROOF.md>) and [TABLES.md](<<local> Dropbox/Jonah Kudler-Flam/Claude/Projects/Modular c-Theorem/notes/cd_conjecture/codex/work_C135/TABLES.md>).
+
+[gpt_solve: backend=codex model=gpt-6-astra effort=high transcript=20261107T080459-71730]

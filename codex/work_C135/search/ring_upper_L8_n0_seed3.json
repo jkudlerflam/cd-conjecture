@@ -1,0 +1,40 @@
+{
+  "kind": "ring_upper",
+  "L": 8,
+  "n": 0,
+  "seed": 3,
+  "score": 3.578583141287382,
+  "point": {
+    "L": 8,
+    "ring": {
+      "L": 8,
+      "E": -7.289455083375639,
+      "e": -0.9111818854219549,
+      "residual": 1.1132359370989618e-14,
+      "multiplicity_sampled": 1,
+      "groundspace_complete": true
+    },
+    "e0_upper": -0.8552665238393395,
+    "petz_diagnostics": {
+      "trace_residual": 1.4436897554912214e-15,
+      "lti_input_residual": 8.811393386548941e-17,
+      "min_output": 0.10534235228077933
+    },
+    "coefficients": [
+      1.9978235780903935,
+      0.0919962869881264,
+      0.089021204127352,
+      1.995673582477035,
+      -0.005634843936201641,
+      -0.002256957222659768,
+      0.0035545146620290795,
+      -0.011429812488727712,
+      0.02553140837083299
+    ]
+  },
+  "evaluations": 300,
+  "success": false,
+  "message": "Maximum number of function evaluations has been exceeded.",
+  "seconds": 4.224261999130249,
+  "tag": "numerical exploratory; finite-budget local search"
+}
