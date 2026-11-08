@@ -1,0 +1,7 @@
+export OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1; timeout 9h python3 controls.py dmrg xx 64 > ctrl/dmrg_xx_64.out 2>&1
+export OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1; timeout 9h python3 controls.py dmrg xx 128 > ctrl/dmrg_xx_128.out 2>&1
+export OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1; timeout 9h python3 controls.py dmrg xx 256 > ctrl/dmrg_xx_256.out 2>&1
+export OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1; timeout 9h python3 controls.py dmrg twoxx 32 > ctrl/dmrg_twoxx_32.out 2>&1
+export OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1; timeout 9h python3 controls.py dmrg twoxx 64 > ctrl/dmrg_twoxx_64.out 2>&1
+export OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1; timeout 9h python3 controls.py fes xx 8 12 16 24 32 48 64 96 128 192 256 ctrl/fes_xx.json > ctrl/fes_xx.out 2>&1
+export OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1; timeout 9h python3 controls.py fes twoxx 8 12 16 24 32 48 64 96 128 ctrl/fes_twoxx.json > ctrl/fes_twoxx.out 2>&1

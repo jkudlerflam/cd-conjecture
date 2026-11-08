@@ -1,0 +1,20 @@
+# part 1, eps = 0.2, N = 120 free sites (continuum length 24)
+h=0.02380  E_pl/eps=-0.02186  lowest Hessian eigenvalues / eps^2 = [-0.054  -0.      0.0473]  out-of-plane weight [1. 0. 0.]
+h=0.02663  E_pl/eps=+0.00000  lowest Hessian eigenvalues / eps^2 = [-0.0544  0.      0.0528]  out-of-plane weight [1. 0. 0.]   <- lattice planar onset
+h=0.03000  E_pl/eps=+0.02555  lowest Hessian eigenvalues / eps^2 = [-0.0548 -0.      0.0593]  out-of-plane weight [1. 0. 0.]
+# 0 s
+# part 1, eps = 0.1, N = 240 free sites (continuum length 24)
+h=0.02380  E_pl/eps=-0.00433  lowest Hessian eigenvalues / eps^2 = [-0.0644 -0.      0.0468]  out-of-plane weight [1. 0. 0.]
+h=0.02435  E_pl/eps=+0.00000  lowest Hessian eigenvalues / eps^2 = [-0.0645 -0.      0.0478]  out-of-plane weight [1. 0. 0.]   <- lattice planar onset
+h=0.03000  E_pl/eps=+0.04336  lowest Hessian eigenvalues / eps^2 = [-0.0653  0.      0.0587]  out-of-plane weight [1. 0. 0.]
+# 1 s
+# part 1, eps = 0.05, N = 480 free sites (continuum length 24)
+h=0.02380  E_pl/eps=+0.00009  lowest Hessian eigenvalues / eps^2 = [-0.0671  0.      0.0467]  out-of-plane weight [1. 0. 0.]
+h=0.02379  E_pl/eps=+0.00000  lowest Hessian eigenvalues / eps^2 = [-0.0671  0.      0.0466]  out-of-plane weight [1. 0. 0.]   <- lattice planar onset
+h=0.03000  E_pl/eps=+0.04784  lowest Hessian eigenvalues / eps^2 = [-0.068  -0.      0.0586]  out-of-plane weight [1. 0. 0.]
+# 2 s
+# part 1, eps = 0.025, N = 960 free sites (continuum length 24)
+h=0.02380  E_pl/eps=+0.00119  lowest Hessian eigenvalues / eps^2 = [-0.0677  0.      0.0466]  out-of-plane weight [1. 0. 0.]
+h=0.02365  E_pl/eps=+0.00000  lowest Hessian eigenvalues / eps^2 = [-0.0677 -0.      0.0463]  out-of-plane weight [1. 0. 0.]   <- lattice planar onset
+h=0.03000  E_pl/eps=+0.04896  lowest Hessian eigenvalues / eps^2 = [-0.0687 -0.      0.0585]  out-of-plane weight [1. 0. 0.]
+# 8 s
