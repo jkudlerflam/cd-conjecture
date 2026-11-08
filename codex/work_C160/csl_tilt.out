@@ -1,0 +1,20 @@
+h      T_CSL     e_CSL     kappa_c   argmin_k(band)  pairing   (full-min checks below)
+0.05    6.2911  -0.50063  -0.99875   0.0000          1.0000   min psi0 = 5.94e-02 (nodeless if > 0)
+0.15    6.3563  -0.50567  -0.98875   0.0000          1.0000   min psi0 = 5.33e-02 (nodeless if > 0)
+0.30    6.6097  -0.52319  -0.95497   0.0000          0.9999   min psi0 = 4.43e-02 (nodeless if > 0)
+0.45    7.2215  -0.55464  -0.89823   0.0000          0.9991   min psi0 = 3.57e-02 (nodeless if > 0)
+0.55    8.2949  -0.58625  -0.84628   0.0000          0.9951   min psi0 = 3.06e-02 (nodeless if > 0)
+
+full two-component minimization across kappa_c (period optimized), compared with the uniform state
+h=0.15 kappa=-0.8387 (kappa-kappa_c=+0.15): texture e=-0.50536 T=6.356 max|n_z|=0.001 <n_z>=+0.001 ; uniform e=-0.43279 -> texture
+h=0.15 kappa=-0.9387 (kappa-kappa_c=+0.05): texture e=-0.50536 T=6.356 max|n_z|=0.001 <n_z>=+0.001 ; uniform e=-0.48136 -> texture
+h=0.15 kappa=-1.0387 (kappa-kappa_c=-0.05): texture e=-0.53020 T=5.085 max|n_z|=0.990 <n_z>=+0.990 ; uniform e=-0.53020 -> uniform
+h=0.15 kappa=-1.1387 (kappa-kappa_c=-0.15): texture e=-0.57925 T=7.628 max|n_z|=0.991 <n_z>=+0.991 ; uniform e=-0.57925 -> uniform
+h=0.30 kappa=-0.8050 (kappa-kappa_c=+0.15): texture e=-0.52287 T=6.610 max|n_z|=0.001 <n_z>=-0.001 ; uniform e=-0.45839 -> texture
+h=0.30 kappa=-0.9050 (kappa-kappa_c=+0.05): texture e=-0.52287 T=6.610 max|n_z|=0.002 <n_z>=+0.002 ; uniform e=-0.50221 -> texture
+h=0.30 kappa=-1.0050 (kappa-kappa_c=-0.05): texture e=-0.54726 T=6.610 max|n_z|=0.955 <n_z>=+0.954 ; uniform e=-0.54726 -> uniform
+h=0.30 kappa=-1.1050 (kappa-kappa_c=-0.15): texture e=-0.59321 T=5.949 max|n_z|=0.963 <n_z>=+0.962 ; uniform e=-0.59321 -> uniform
+h=0.45 kappa=-0.7482 (kappa-kappa_c=+0.15): texture e=-0.55429 T=7.221 max|n_z|=0.000 <n_z>=-0.000 ; uniform e=-0.50943 -> texture
+h=0.45 kappa=-0.8482 (kappa-kappa_c=+0.05): texture e=-0.55429 T=7.221 max|n_z|=0.011 <n_z>=-0.007 ; uniform e=-0.54348 -> texture
+h=0.45 kappa=-0.9482 (kappa-kappa_c=-0.05): texture e=-0.58089 T=11.554 max|n_z|=0.881 <n_z>=+0.880 ; uniform e=-0.58089 -> uniform
+h=0.45 kappa=-1.0482 (kappa-kappa_c=-0.15): texture e=-0.62070 T=11.554 max|n_z|=0.903 <n_z>=+0.903 ; uniform e=-0.62070 -> uniform
