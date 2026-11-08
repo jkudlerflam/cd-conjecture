@@ -1,0 +1,6 @@
+max anticommutator [a_j, b_k]: 0
+a_j anticommutes with a_k only for |j-k| = 1: True
+b likewise: True
+X_3 anticommutes with a at [2] and b at [3]
+Z_3 anticommutes with a at [3] and b at [2]
+Y_3 anticommutes with a at [2, 3] and b at [2, 3]

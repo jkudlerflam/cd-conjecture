@@ -1,0 +1,43 @@
+fes bis0.05_n2 python3 -s -B fesx.py bis --hp 0.05 --n 2 --chis 8 12 16 24 32 48 64 96 128 160 192 256 --maxit 800 --out fes/bis0.05_n2.json --npz state/bis0.05_n2.npz 
+fes bis0.1_n2 python3 -s -B fesx.py bis --hp 0.1 --n 2 --chis 8 12 16 24 32 48 64 96 128 160 192 256 --maxit 800 --out fes/bis0.1_n2.json --npz state/bis0.1_n2.npz 
+fes bis0.2_n2 python3 -s -B fesx.py bis --hp 0.2 --n 2 --chis 8 12 16 24 32 48 64 96 128 160 192 256 320 384 --maxit 800 --out fes/bis0.2_n2.json --npz state/bis0.2_n2.npz 
+fes bis0.3_n2 python3 -s -B fesx.py bis --hp 0.3 --n 2 --chis 8 12 16 24 32 48 64 96 128 160 192 256 320 384 --maxit 800 --out fes/bis0.3_n2.json --npz state/bis0.3_n2.npz 
+fes bis0.4_n2 python3 -s -B fesx.py bis --hp 0.4 --n 2 --chis 8 12 16 24 32 48 64 96 128 160 192 256 320 384 --maxit 800 --out fes/bis0.4_n2.json --npz state/bis0.4_n2.npz 
+fes bis0.45_n2 python3 -s -B fesx.py bis --hp 0.45 --n 2 --chis 8 12 16 24 32 48 64 96 128 160 192 256 --maxit 800 --out fes/bis0.45_n2.json --npz state/bis0.45_n2.npz 
+fes bis0.5_n2 python3 -s -B fesx.py bis --hp 0.5 --n 2 --chis 8 12 16 24 32 48 64 96 128 160 192 256 --maxit 800 --out fes/bis0.5_n2.json --npz state/bis0.5_n2.npz 
+fes bis0.2_n4 python3 -s -B fesx.py bis --hp 0.2 --n 4 --chis 8 12 16 24 32 48 64 96 128 160 192 --maxit 800 --out fes/bis0.2_n4.json --npz state/bis0.2_n4.npz 
+fes bis0.3_n4 python3 -s -B fesx.py bis --hp 0.3 --n 4 --chis 8 12 16 24 32 48 64 96 128 160 192 --maxit 800 --out fes/bis0.3_n4.json --npz state/bis0.3_n4.npz 
+fes bis0.45_n4 python3 -s -B fesx.py bis --hp 0.45 --n 4 --chis 8 12 16 24 32 48 64 96 128 160 192 --maxit 800 --out fes/bis0.45_n4.json --npz state/bis0.45_n4.npz 
+fes bis0.3_n2s1 python3 -s -B fesx.py bis --hp 0.3 --n 2 --chis 8 12 16 24 32 48 64 96 128 160 192 256 --maxit 800 --out fes/bis0.3_n2s1.json --npz state/bis0.3_n2s1.npz --seed 1
+fes bis0.4_n4 python3 -s -B fesx.py bis --hp 0.4 --n 4 --chis 8 12 16 24 32 48 64 96 128 160 192 --maxit 800 --out fes/bis0.4_n4.json --npz state/bis0.4_n4.npz 
+fes bis0.3_n1 python3 -s -B fesx.py bis --hp 0.3 --n 1 --chis 8 12 16 24 32 48 64 96 128 160 192 256 --maxit 800 --out fes/bis0.3_n1.json --npz state/bis0.3_n1.npz 
+fes bis0.6_n2 python3 -s -B fesx.py bis --hp 0.6 --n 2 --chis 8 12 16 24 32 48 64 96 128 160 192 --maxit 800 --out fes/bis0.6_n2.json --npz state/bis0.6_n2.npz 
+fes tfi python3 -s -B fesx.py tfi --n 2 --chis 8 12 16 24 32 48 64 96 128 --maxit 800 --out fes/tfi.json --npz state/tfi.npz 
+fes xx python3 -s -B fesx.py xx --n 2 --chis 8 12 16 24 32 48 64 96 128 --maxit 800 --out fes/xx.json --npz state/xx.npz 
+fes heis python3 -s -B fesx.py heis --n 2 --chis 8 12 16 24 32 48 64 96 128 --maxit 800 --out fes/heis.json --npz state/heis.npz 
+fes xzzx python3 -s -B fesx.py xzzx --n 2 --chis 8 12 16 24 32 48 64 96 128 --maxit 800 --out fes/xzzx.json --npz state/xzzx.npz 
+fes xzdim0.2 python3 -s -B fesx.py xzdim --eps 0.2 --n 2 --chis 8 12 16 24 32 48 64 96 128 160 192 --maxit 800 --out fes/xzdim0.2.json --npz state/xzdim0.2.npz 
+fes xzdim0.05 python3 -s -B fesx.py xzdim --eps 0.05 --n 2 --chis 8 12 16 24 32 48 64 96 128 160 192 --maxit 800 --out fes/xzdim0.05.json --npz state/xzdim0.05.npz 
+fes xzeps0.3 python3 -s -B fesx.py xzeps --eps 0.3 --n 2 --chis 8 12 16 24 32 48 64 96 128 160 192 256 --maxit 800 --out fes/xzeps0.3.json --npz state/xzeps0.3.npz 
+fes xzeps0.1 python3 -s -B fesx.py xzeps --eps 0.1 --n 2 --chis 8 12 16 24 32 48 64 96 128 160 192 256 --maxit 800 --out fes/xzeps0.1.json --npz state/xzeps0.1.npz 
+fes xzeps0.03 python3 -s -B fesx.py xzeps --eps 0.03 --n 2 --chis 8 12 16 24 32 48 64 96 128 160 192 256 --maxit 800 --out fes/xzeps0.03.json --npz state/xzeps0.03.npz 
+fes xzalt0.1 python3 -s -B fesx.py xzalt --eps 0.1 --n 2 --chis 8 12 16 24 32 48 64 96 128 160 192 --maxit 800 --out fes/xzalt0.1.json --npz state/xzalt0.1.npz 
+fes yx0.05_n6 python3 -s -B fesx.py dir --dirs yx=0.05 --n 6 --chis 8 12 16 24 32 48 64 96 128 160 --maxit 800 --out fes/yx0.05_n6.json --npz state/yx0.05_n6.npz 
+fes yx0.1_n6 python3 -s -B fesx.py dir --dirs yx=0.1 --n 6 --chis 8 12 16 24 32 48 64 96 128 160 --maxit 800 --out fes/yx0.1_n6.json --npz state/yx0.1_n6.npz 
+fes yx0.2_n6 python3 -s -B fesx.py dir --dirs yx=0.2 --n 6 --chis 8 12 16 24 32 48 64 96 128 160 --maxit 800 --out fes/yx0.2_n6.json --npz state/yx0.2_n6.npz 
+fes yx0.3_n6 python3 -s -B fesx.py dir --dirs yx=0.3 --n 6 --chis 8 12 16 24 32 48 64 96 128 160 --maxit 800 --out fes/yx0.3_n6.json --npz state/yx0.3_n6.npz 
+fes yx0.5_n6 python3 -s -B fesx.py dir --dirs yx=0.5 --n 6 --chis 8 12 16 24 32 48 64 96 128 160 --maxit 800 --out fes/yx0.5_n6.json --npz state/yx0.5_n6.npz 
+fes zy0.2_n6 python3 -s -B fesx.py dir --dirs zy=0.2 --n 6 --chis 8 12 16 24 32 48 64 96 128 160 --maxit 800 --out fes/zy0.2_n6.json --npz state/zy0.2_n6.npz 
+fes yx0.2_n3 python3 -s -B fesx.py dir --dirs yx=0.2 --n 3 --chis 8 12 16 24 32 48 64 96 128 160 192 --maxit 800 --out fes/yx0.2_n3.json --npz state/yx0.2_n3.npz 
+fes at_b0.3_a0.09 python3 -s -B fesx.py dir --dirs zx=0.09,yy=0.3 --n 2 --chis 8 12 16 24 32 48 64 96 128 160 192 256 --maxit 800 --out fes/at_b0.3_a0.09.json --npz state/at_b0.3_a0.09.npz 
+fes at_b0.3_a0.18 python3 -s -B fesx.py dir --dirs zx=0.18,yy=0.3 --n 2 --chis 8 12 16 24 32 48 64 96 128 160 192 256 --maxit 800 --out fes/at_b0.3_a0.18.json --npz state/at_b0.3_a0.18.npz 
+fes at_b0.3_a0.198 python3 -s -B fesx.py dir --dirs zx=0.198,yy=0.3 --n 2 --chis 8 12 16 24 32 48 64 96 128 160 192 256 --maxit 800 --out fes/at_b0.3_a0.198.json --npz state/at_b0.3_a0.198.npz 
+fes at_b0.3_a0.3 python3 -s -B fesx.py dir --dirs zx=0.3,yy=0.3 --n 2 --chis 8 12 16 24 32 48 64 96 128 160 192 256 --maxit 800 --out fes/at_b0.3_a0.3.json --npz state/at_b0.3_a0.3.npz 
+fes T_yx0.1 python3 -s -B fesx.py dir --dirs zx=0.191,yy=0.3,yx=0.1 --n 6 --chis 8 12 16 24 32 48 64 96 128 160 --maxit 800 --out fes/T_yx0.1.json --npz state/T_yx0.1.npz 
+fes T_zy0.1 python3 -s -B fesx.py dir --dirs zx=0.191,yy=0.3,zy=0.1 --n 6 --chis 8 12 16 24 32 48 64 96 128 160 --maxit 800 --out fes/T_zy0.1.json --npz state/T_zy0.1.npz 
+fes T_mix0.1 python3 -s -B fesx.py dir --dirs zx=0.191,yy=0.3,xx=0.1,zz=0.1 --n 2 --chis 8 12 16 24 32 48 64 96 128 160 192 256 --maxit 800 --out fes/T_mix0.1.json --npz state/T_mix0.1.npz 
+fes T_By0.1 python3 -s -B fesx.py dir --dirs zx=0.191,yy=0.3,By=0.1 --n 2 --chis 8 12 16 24 32 48 64 96 128 160 192 256 --maxit 800 --out fes/T_By0.1.json --npz state/T_By0.1.npz 
+fes T_bis0.15 python3 -s -B fesx.py dir --dirs zx=0.191,yy=0.3,Bx=-0.212132,Bz=-0.212132 --n 2 --chis 8 12 16 24 32 48 64 96 128 160 192 256 --maxit 800 --out fes/T_bis0.15.json --npz state/T_bis0.15.npz 
+dmrg bisL256_h0.2 python3 -s -B dmrg_run.py 256 16,32,48,64,96,128,160,160 dmrg/bis_h0.2_L256.jsonl 'bis0.2;0;0;Bx=-0.282843,Bz=-0.282843'
+dmrg bisL256_h0.4 python3 -s -B dmrg_run.py 256 16,32,48,64,96,128,160,160 dmrg/bis_h0.4_L256.jsonl 'bis0.4;0;0;Bx=-0.565685,Bz=-0.565685'
+dmrg bisL192_h0.1 python3 -s -B dmrg_run.py 192 16,32,48,64,96,128,160,160 dmrg/bis_h0.1_L192.jsonl 'bis0.1;0;0;Bx=-0.141421,Bz=-0.141421'

@@ -1,0 +1,28 @@
+chi=8 e=-0.687862624361 err=2.3e-07 it=125 S=[1.01678, 0.73467] xi=6.96 arg/pi=1.0000 t=2s
+done local/bis0.3.json 2s
+chi=8 rc=0 21:39:06
+restarting from local/bis0.3.npz chi 8
+chi=12 e=-0.688100506538 err=7.1e-07 it=155 S=[1.07362, 0.88538] xi=7.26 arg/pi=-1.0000 t=8s
+done local/bis0.3.json 8s
+chi=12 rc=0 21:39:15
+restarting from local/bis0.3.npz chi 12
+chi=16 e=-0.688169267070 err=7.2e-07 it=178 S=[1.12381, 0.99138] xi=7.80 arg/pi=-1.0000 t=24s
+done local/bis0.3.json 24s
+chi=16 rc=0 21:39:39
+restarting from local/bis0.3.npz chi 16
+chi=24 e=-0.688206041456 err=8.3e-07 it=271 S=[1.20027, 1.12023] xi=9.57 arg/pi=0.6000 t=10s
+done local/bis0.3.json 10s
+chi=24 rc=0 21:39:50
+restarting from local/bis0.3.npz chi 24
+chi=32 e=-0.688215062945 err=7.2e-07 it=420 S=[1.24207, 1.18431] xi=12.89 arg/pi=-0.5990 t=42s
+done local/bis0.3.json 42s
+chi=32 rc=0 21:40:32
+restarting from local/bis0.3.npz chi 32
+chi=40 e=-0.688220296647 err=5.2e-07 it=526 S=[1.28624, 1.24126] xi=17.32 arg/pi=0.5970 t=66s
+done local/bis0.3.json 66s
+chi=40 rc=0 21:41:39
+restarting from local/bis0.3.npz chi 40
+chi=48 e=-0.688222863623 err=5.6e-07 it=561 S=[1.31999, 1.28455] xi=21.25 arg/pi=-0.5956 t=101s
+done local/bis0.3.json 101s
+chi=48 rc=0 21:43:21
+restarting from local/bis0.3.npz chi 48

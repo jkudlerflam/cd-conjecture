@@ -1,0 +1,42 @@
+grid cyc_grid.jsonl 1.0,0.1,-0.09 1.0,0.1,-0.06
+grid cyc_grid.jsonl 1.0,0.1,-0.03 1.0,0.1,0.0
+grid cyc_grid.jsonl 1.0,0.1,0.03 1.0,0.1,0.06
+grid cyc_grid.jsonl 1.0,0.1,0.09 1.0,0.25,-0.225
+grid cyc_grid.jsonl 1.0,0.25,-0.15 1.0,0.25,-0.075
+grid cyc_grid.jsonl 1.0,0.25,0.0 1.0,0.25,0.075
+grid cyc_grid.jsonl 1.0,0.25,0.15 1.0,0.25,0.225
+grid cyc_grid.jsonl 1.0,0.4,-0.36 1.0,0.4,-0.24
+grid cyc_grid.jsonl 1.0,0.4,-0.12 1.0,0.4,0.0
+grid cyc_grid.jsonl 1.0,0.4,0.12 1.0,0.4,0.24
+grid cyc_grid.jsonl 1.0,0.4,0.36 1.0,0.55,-0.495
+grid cyc_grid.jsonl 1.0,0.55,-0.33 1.0,0.55,-0.165
+grid cyc_grid.jsonl 1.0,0.55,0.0 1.0,0.55,0.165
+grid cyc_grid.jsonl 1.0,0.55,0.33 1.0,0.55,0.495
+grid cyc_grid.jsonl 1.0,0.7,-0.63 1.0,0.7,-0.42
+grid cyc_grid.jsonl 1.0,0.7,-0.21 1.0,0.7,0.0
+grid cyc_grid.jsonl 1.0,0.7,0.21 1.0,0.7,0.42
+grid cyc_grid.jsonl 1.0,0.7,0.63 1.0,0.85,-0.765
+grid cyc_grid.jsonl 1.0,0.85,-0.51 1.0,0.85,-0.255
+grid cyc_grid.jsonl 1.0,0.85,0.0 1.0,0.85,0.255
+grid cyc_grid.jsonl 1.0,0.85,0.51 1.0,0.85,0.765
+grid cyc_grid.jsonl 1.0,1.0,-0.9 1.0,1.0,-0.6
+grid cyc_grid.jsonl 1.0,1.0,-0.3 1.0,1.0,0.0
+grid cyc_grid.jsonl 1.0,1.0,0.3 1.0,1.0,0.6
+grid cyc_grid.jsonl 1.0,1.0,0.9 1.0,1.0,1.0
+grid cyc_grid.jsonl 1.0,1.0,-0.98 1.0,0.05,0.045
+grid cyc_grid.jsonl 1.0,0.05,-0.045
+path 32 16,32,64,96,96 path1282.jsonl 0
+path 32 16,32,64,96,96 path1282.jsonl 0.25
+path 32 16,32,64,96,96 path1282.jsonl 0.5
+path 32 16,32,64,96,96 path1282.jsonl 0.75
+path 32 16,32,64,96,96 path1282.jsonl 1
+path 64 16,32,64,96,96 path1282.jsonl 0
+path 64 16,32,64,96,96 path1282.jsonl 0.25
+path 64 16,32,64,96,96 path1282.jsonl 0.5
+path 64 16,32,64,96,96 path1282.jsonl 0.75
+path 64 16,32,64,96,96 path1282.jsonl 1
+path 128 16,32,64,128,128 path1282.jsonl 0
+path 128 16,32,64,128,128 path1282.jsonl 0.25
+path 128 16,32,64,128,128 path1282.jsonl 0.5
+path 128 16,32,64,128,128 path1282.jsonl 0.75
+path 128 16,32,64,128,128 path1282.jsonl 1
