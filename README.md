@@ -8,7 +8,7 @@ This repository is a shared notebook for proving or refuting it. Everything we k
 
 ### 1. Getting oriented
 
-Read [STATUS.md](STATUS.md) first. It is the current state of the project on one page, with the main construction written out step by step, what is checked, what is open, and a glossary of the run labels (C1 to C12, G1, route A and B, and so on). [REPORT.md](REPORT.md) is the chronological record behind it, organized as follows.
+Read [STATUS.md](STATUS.md) first. It lists the main results and what is open, on one short page. The earlier long version, with the main construction written out step by step and a glossary of the run labels (C1 to C12, G1, route A and B, and so on), is kept in [STATUS_DETAIL.md](STATUS_DETAIL.md). [REPORT.md](REPORT.md) is the chronological record behind it, organized as follows.
 
 - §1 states the conjecture precisely.
 - §2 surveys the literature.
@@ -88,7 +88,7 @@ A d=24 conditional counterexample candidate is recorded with independent AI revi
 - **Large d: a candidate physics-level refutation.** The new sparse species-graph family has predicted c=(p+1)(p²+p+1)+1 and microscopic d=O(p² log p), so c/d diverges. Exact finite constructions now supply the ports, reversible circuit, O(q log q) controller and initialized positive core; the existing mobile wrapper applies. The conformal conclusion uses stated standard massive-sector integration and Gaussian RG inputs. It is not a rigorous thermodynamic theorem or a measured numerical violation. Read [the complete candidate argument](contrib/research_continuation/PROPOSED_COUNTEREXAMPLE.md) and [the infrared audit](contrib/research_continuation/IR_AUDIT.md).
 - **Unbounded c at one fixed d remains conditional.** C39/C42 and the C44 wrapper now supply a finite spatial construction at d₀=4464. C45 gives a coupling schedule conditional on a stated Wilsonian input S; C46 proves partial rigorous results but leaves the full infrared step open. Read [the referee](contrib/referee_C44_C45/README.md) and [C46](codex/work_C46/RESULT.md). The sparse first-order family with growing d is a separate route.
 
-[STATUS.md](STATUS.md) has the details and the list of where help is most useful.
+[STATUS.md](STATUS.md) has the list of where help is most useful, and [STATUS_DETAIL.md](STATUS_DETAIL.md) the details.
 
 The [direct-attack continuation](contrib/direct_attack_20261028/README.md) supplies ultraviolet matching bounds, an exact exclusion of a hidden free-fermion qubit mechanism, and an independently AI-audited thermal massive-matching theorem allowing infinite excited cell spaces. The retarded multichannel RG and central-charge conclusion remain open.
 
