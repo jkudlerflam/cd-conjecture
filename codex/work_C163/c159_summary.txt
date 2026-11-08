@@ -1,0 +1,212 @@
+== Stage A: ring scans (12, 16)
+K: n=24000 gapless(crit<0.15)=2848 (0.119)  ndeg>=2 at L16: 936
+   c_S over gapless: pct 5/50/95/max = 0.486 0.992 1.074 4.160
+   c_obj over gapless: pct 50/95/99/max = 0.990 1.038 1.135 1.833
+   n(c_obj>1.1)=44 n(c_obj>1.2)=15 n(c_obj>1.3)=9
+   symmetric Ising-like (0.3<c_S<0.7, unique GS at 12 and 16): 225
+   parent Delta in [-9,-0.6): n_gapless=228 median c_obj=0.487 max=1.396
+   parent Delta in [-0.6,0.6): n_gapless=1913 median c_obj=0.990 max=1.833
+   parent Delta in [0.6,1.0): n_gapless=429 median c_obj=0.995 max=1.428
+   parent Delta in [1.0,99): n_gapless=278 median c_obj=0.863 max=1.369
+   top [-0.065, 0.666, -0.345, 0.0, 0.0, 0.63, 0.188, -0.037, 0.0] c_S=1.833 c_cas=11.623 crit=0.050 Delta=-0.49 th=2.02 harm=0.44
+   top [-0.199, 0.535, -0.073, 0.0, 0.0, -0.444, -0.164, 0.667, 0.0] c_S=1.732 c_cas=2.086 crit=0.145 Delta=-0.15 th=1.93 harm=0.61
+   top [-0.012, -0.169, 0.11, 0.0, 0.0, 0.544, -0.555, 0.595, 0.0] c_S=2.362 c_cas=1.563 crit=0.013 Delta=0.20 th=1.74 harm=0.14
+   top [-0.121, -0.411, 0.381, 0.0, 0.0, 0.516, 0.431, 0.468, 0.0] c_S=1.925 c_cas=1.428 crit=0.011 Delta=0.66 th=2.05 harm=0.22
+   top [-0.37, 0.036, 0.296, 0.0, 0.0, 0.465, -0.296, -0.686, 0.0] c_S=2.050 c_cas=1.417 crit=0.082 Delta=0.60 th=1.92 harm=0.35
+KFM: n=4000 gapless(crit<0.15)=88 (0.022)  ndeg>=2 at L16: 179
+   c_S over gapless: pct 5/50/95/max = -0.085 0.453 1.027 1.403
+   c_obj over gapless: pct 50/95/99/max = 0.306 0.908 1.021 1.175
+   n(c_obj>1.1)=1 n(c_obj>1.2)=0 n(c_obj>1.3)=0
+   symmetric Ising-like (0.3<c_S<0.7, unique GS at 12 and 16): 40
+   parent Delta in [-9,-0.6): n_gapless=73 median c_obj=0.311 max=0.545
+   parent Delta in [-0.6,0.6): n_gapless=15 median c_obj=-0.073 max=1.175
+   top [-0.674, -0.438, -0.106, 0.0, 0.0, 0.507, -0.064, 0.285, 0.0] c_S=1.175 c_cas=1.757 crit=0.124 Delta=-0.14 th=0.74 harm=0.15
+   top [-0.491, -0.376, -0.168, 0.0, 0.0, -0.717, 0.071, -0.263, 0.0] c_S=0.998 c_cas=4.622 crit=0.047 Delta=-0.20 th=1.03 harm=0.07
+   top [-0.53, -0.489, 0.047, 0.0, 0.0, 0.685, -0.065, 0.063, 0.0] c_S=0.985 c_cas=1.663 crit=0.035 Delta=0.05 th=2.21 harm=0.02
+   top [-0.232, -0.546, -0.356, 0.0, 0.0, -0.681, -0.24, -0.006, 0.0] c_S=0.951 c_cas=4.721 crit=0.000 Delta=-0.45 th=1.05 harm=0.19
+   top [-0.43, -0.499, -0.338, 0.0, 0.0, 0.64, -0.201, -0.045, 0.0] c_S=0.974 c_cas=0.934 crit=0.116 Delta=-0.43 th=0.94 harm=0.04
+T: n=24000 gapless(crit<0.15)=10800 (0.450)  ndeg>=2 at L16: 765
+   c_S over gapless: pct 5/50/95/max = 0.886 0.993 1.072 4.554
+   c_obj over gapless: pct 50/95/99/max = 0.991 1.043 1.115 1.936
+   n(c_obj>1.1)=137 n(c_obj>1.2)=38 n(c_obj>1.3)=18
+   symmetric Ising-like (0.3<c_S<0.7, unique GS at 12 and 16): 92
+   parent Delta in [-9,-0.6): n_gapless=1038 median c_obj=0.947 max=1.936
+   parent Delta in [-0.6,0.6): n_gapless=8196 median c_obj=0.990 max=1.221
+   parent Delta in [0.6,1.0): n_gapless=1145 median c_obj=1.004 max=1.223
+   parent Delta in [1.0,99): n_gapless=421 median c_obj=1.009 max=1.666
+   top [-0.61, 0.38, -0.135, -0.678, -0.042, -0.065, 0.0, 0.0, 0.0] c_S=2.819 c_cas=1.936 crit=0.043 Delta=-0.88 th=1.75 harm=0.31
+   top [-0.105, 0.544, -0.605, 0.4, 0.141, -0.382, 0.0, 0.0, 0.0] c_S=1.733 c_cas=2.100 crit=0.116 Delta=-0.99 th=1.92 harm=0.58
+   top [0.558, -0.57, -0.204, 0.141, 0.117, -0.536, 0.0, 0.0, 0.0] c_S=1.666 c_cas=2.321 crit=0.006 Delta=1.17 th=2.55 harm=0.70
+   top [0.465, 0.149, -0.686, -0.168, 0.264, 0.439, 0.0, 0.0, 0.0] c_S=1.649 c_cas=1.992 crit=0.113 Delta=-1.18 th=2.12 harm=0.40
+   top [-0.582, -0.027, 0.625, 0.4, 0.299, -0.141, 0.0, 0.0, 0.0] c_S=1.859 c_cas=1.643 crit=0.018 Delta=-1.02 th=2.12 harm=0.54
+TAF: n=6000 gapless(crit<0.15)=1987 (0.331)  ndeg>=2 at L16: 14
+   c_S over gapless: pct 5/50/95/max = 0.955 1.003 1.052 2.151
+   c_obj over gapless: pct 50/95/99/max = 1.001 1.045 1.070 1.321
+   n(c_obj>1.1)=2 n(c_obj>1.2)=1 n(c_obj>1.3)=1
+   symmetric Ising-like (0.3<c_S<0.7, unique GS at 12 and 16): 14
+   parent Delta in [-0.6,0.6): n_gapless=535 median c_obj=0.989 max=1.321
+   parent Delta in [0.6,1.0): n_gapless=996 median c_obj=1.005 max=1.091
+   parent Delta in [1.0,99): n_gapless=456 median c_obj=1.009 max=1.102
+   top [-0.166, 0.537, 0.731, 0.346, 0.112, 0.128, 0.0, 0.0, 0.0] c_S=1.321 c_cas=11.406 crit=0.071 Delta=-0.23 th=2.63 harm=0.24
+   top [0.019, 0.596, 0.631, -0.053, 0.199, -0.452, 0.0, 0.0, 0.0] c_S=1.102 c_cas=2.928 crit=0.096 Delta=1.06 th=1.01 harm=0.37
+   top [0.83, 0.397, 0.038, -0.149, -0.004, 0.361, 0.0, 0.0, 0.0] c_S=1.091 c_cas=5.495 crit=0.010 Delta=0.78 th=0.71 harm=0.56
+   top [0.592, 0.047, 0.751, 0.203, -0.119, 0.166, 0.0, 0.0, 0.0] c_S=1.087 c_cas=2.265 crit=0.130 Delta=1.34 th=0.64 harm=0.47
+   top [0.103, 0.445, 0.807, 0.315, -0.114, 0.164, 0.0, 0.0, 0.0] c_S=1.085 c_cas=6.153 crit=0.042 Delta=0.84 th=0.68 harm=0.49
+TFM: n=6000 gapless(crit<0.15)=1283 (0.214)  ndeg>=2 at L16: 1814
+   c_S over gapless: pct 5/50/95/max = -0.184 0.995 1.153 3.940
+   c_obj over gapless: pct 50/95/99/max = -0.021 1.052 1.118 1.720
+   n(c_obj>1.1)=25 n(c_obj>1.2)=6 n(c_obj>1.3)=1
+   symmetric Ising-like (0.3<c_S<0.7, unique GS at 12 and 16): 35
+   parent Delta in [-9,-0.6): n_gapless=1027 median c_obj=-0.031 max=1.720
+   parent Delta in [-0.6,0.6): n_gapless=256 median c_obj=0.860 max=1.110
+   top [-0.328, -0.375, -0.641, -0.118, -0.122, 0.558, 0.0, 0.0, 0.0] c_S=1.720 c_cas=8.687 crit=0.063 Delta=-0.91 th=1.02 harm=0.10
+   top [-0.518, -0.105, -0.649, -0.492, 0.212, -0.106, 0.0, 0.0, 0.0] c_S=1.287 c_cas=2.185 crit=0.046 Delta=-0.73 th=0.95 harm=0.35
+   top [-0.585, -0.444, -0.593, 0.231, -0.04, -0.233, 0.0, 0.0, 0.0] c_S=1.266 c_cas=14.100 crit=0.064 Delta=-0.96 th=0.57 harm=0.10
+   top [-0.263, -0.449, -0.596, -0.176, 0.288, 0.511, 0.0, 0.0, 0.0] c_S=1.266 c_cas=3.332 crit=0.070 Delta=-0.77 th=1.02 harm=0.17
+   top [-0.489, -0.265, -0.572, -0.198, 0.161, 0.547, 0.0, 0.0, 0.0] c_S=1.236 c_cas=2.776 crit=0.038 Delta=-0.77 th=1.00 harm=0.16
+
+== Stage B: refinement
+dist_KFM_29.json: scan c_S=-0.012 c_obj=-0.012 | ring16/20 c_S=0.763 c_cas=0.256 crit=1.861 ndeg=[1, 1] | DMRG L32: prof=0.657 sm=0.690 tr=3e-16 L64: prof=0.349 sm=0.353 tr=9e-15 L128: prof=0.065 sm=0.066 tr=1e-14 c_two=0.176
+dist_KFM_30.json: scan c_S=0.508 c_obj=0.469 | ring16/20 c_S=0.507 c_cas=0.457 crit=0.075 ndeg=[1, 1] | DMRG L32: prof=0.564 sm=0.572 tr=5e-20 L64: prof=0.598 sm=0.599 tr=7e-20 L128: prof=0.682 sm=0.682 tr=1e-17 c_two=0.686
+dist_KFM_31.json: scan c_S=0.608 c_obj=0.416 | ring16/20 c_S=0.469 c_cas=0.453 crit=0.571 ndeg=[1, 1] | DMRG L32: prof=0.528 sm=0.593 tr=3e-18 L64: prof=0.770 sm=0.767 tr=3e-16 L128: prof=0.592 sm=0.592 tr=5e-15 c_two=0.847
+dist_KFM_32.json: scan c_S=0.531 c_obj=0.531 | ring16/20 c_S=0.527 c_cas=0.593 crit=0.058 ndeg=[1, 1] | DMRG L32: prof=0.741 sm=0.753 tr=2e-19 L64: prof=0.597 sm=0.600 tr=2e-17 L128: prof=0.613 sm=0.614 tr=9e-16 c_two=0.617
+dist_K_16.json: scan c_S=1.000 c_obj=1.000 | ring16/20 c_S=1.023 c_cas=1.066 crit=0.337 ndeg=[1, 1] | DMRG L32: prof=1.211 sm=1.007 tr=2e-16 L64: prof=1.029 sm=0.933 tr=2e-13 L128: prof=0.879 sm=0.896 tr=2e-11 c_two=1.115
+dist_K_17.json: scan c_S=0.990 c_obj=0.990 | ring16/20 c_S=0.997 c_cas=1.022 crit=0.006 ndeg=[1, 1] | DMRG L32: prof=0.639 sm=0.567 tr=2e-16 L64: prof=0.723 sm=0.691 tr=3e-13 L128: prof=0.741 sm=0.747 tr=1e-11 c_two=0.545
+dist_K_18.json: scan c_S=1.025 c_obj=0.816 | ring16/20 c_S=0.939 c_cas=-1.359 crit=12.938 ndeg=[1, 1] | DMRG L32: prof=0.916 sm=0.846 tr=2e-15 L64: prof=0.945 sm=0.920 tr=2e-12 L128: prof=1.000 sm=0.992 tr=8e-11 c_two=0.993
+dist_K_19.json: scan c_S=0.959 c_obj=0.959 | ring16/20 c_S=1.131 c_cas=1.494 crit=0.089 ndeg=[1, 1] | DMRG L32: prof=1.032 sm=0.948 tr=7e-16 L64: prof=0.900 sm=0.943 tr=8e-13 L128: prof=0.988 sm=0.978 tr=5e-11 c_two=0.998
+dist_TAF_55.json: scan c_S=0.997 c_obj=0.997 | ring16/20 c_S=0.998 c_cas=1.025 crit=0.000 ndeg=[1, 1] | DMRG L32: prof=0.907 sm=0.838 tr=2e-15 L64: prof=0.921 sm=0.896 tr=1e-12 L128: prof=0.943 sm=0.935 tr=8e-11 c_two=0.940
+dist_TAF_56.json: scan c_S=1.045 c_obj=1.045 | ring16/20 c_S=0.934 c_cas=-3.377 crit=12.189 ndeg=[1, 1] | DMRG L32: prof=0.886 sm=0.818 tr=2e-15 L64: prof=0.895 sm=0.871 tr=2e-12 L128: prof=0.915 sm=0.906 tr=9e-11 c_two=0.911
+dist_TAF_57.json: scan c_S=0.990 c_obj=0.377 | ring16/20 c_S=0.991 c_cas=-0.642 crit=0.981 ndeg=[1, 1] | DMRG L32: prof=0.916 sm=0.848 tr=2e-15 L64: prof=0.928 sm=0.905 tr=2e-12 L128: prof=0.949 sm=0.941 tr=9e-11 c_two=0.946
+dist_TAF_58.json: scan c_S=0.958 c_obj=-0.273 | ring16/20 c_S=0.974 c_cas=2.325 crit=0.026 ndeg=[1, 1] | DMRG L32: prof=0.967 sm=0.901 tr=2e-15 L64: prof=0.965 sm=0.944 tr=1e-12 L128: prof=0.976 sm=0.970 tr=9e-11 c_two=0.976
+dist_TFM_75.json: scan c_S=-0.000 c_obj=-0.000 | ring16/20 c_S=-0.000 c_cas=0.000 crit=0.344 ndeg=[2, 2] | DMRG L32: prof=-0.004 sm=-0.011 tr=3e-20 L64: prof=-0.003 sm=-0.004 tr=4e-20 L128: prof=-0.000 sm=-0.000 tr=4e-20 c_two=-3.000
+dist_TFM_76.json: scan c_S=-0.045 c_obj=-0.045 | ring16/20 c_S=-0.017 c_cas=0.008 crit=0.302 ndeg=[2, 2] | DMRG L32: prof=-0.010 sm=-0.012 tr=4e-20 L64: prof=0.001 sm=0.001 tr=4e-20 L128: prof=0.000 sm=0.000 tr=4e-20 c_two=0.000
+dist_TFM_77.json: scan c_S=1.019 c_obj=1.019 | ring16/20 c_S=1.119 c_cas=6.140 crit=0.073 ndeg=[1, 1] | DMRG L32: prof=0.966 sm=0.962 tr=5e-15 L64: prof=0.989 sm=0.987 tr=3e-12 L128: prof=0.988 sm=0.988 tr=1e-10 c_two=1.002
+dist_TFM_78.json: scan c_S=1.008 c_obj=-3.168 | ring16/20 c_S=0.970 c_cas=0.569 crit=0.041 ndeg=[1, 1] | DMRG L32: prof=0.976 sm=0.970 tr=5e-15 L64: prof=0.981 sm=0.981 tr=3e-12 L128: prof=0.989 sm=0.989 tr=1e-10 c_two=0.993
+dist_T_49.json: scan c_S=0.977 c_obj=0.977 | ring16/20 c_S=0.990 c_cas=3.998 crit=0.004 ndeg=[1, 1] | DMRG L32: prof=0.964 sm=0.900 tr=2e-15 L64: prof=0.965 sm=0.945 tr=1e-12 L128: prof=0.976 sm=0.970 tr=9e-11 c_two=0.976
+dist_T_50.json: scan c_S=0.891 c_obj=0.891 | ring16/20 c_S=1.022 c_cas=-0.955 crit=5.011 ndeg=[1, 1] | DMRG L32: prof=1.143 sm=1.051 tr=1e-14 L64: prof=1.176 sm=1.141 tr=3e-12 L128: prof=1.266 sm=1.255 tr=1e-10 c_two=1.266
+dist_T_51.json: scan c_S=1.000 c_obj=1.000 | ring16/20 c_S=1.002 c_cas=1.028 crit=0.031 ndeg=[1, 1] | DMRG L32: prof=1.122 sm=1.098 tr=2e-14 L64: prof=1.052 sm=1.045 tr=6e-12 L128: prof=0.930 sm=0.927 tr=2e-10 c_two=0.955
+dist_T_52.json: scan c_S=0.991 c_obj=0.991 | ring16/20 c_S=0.994 c_cas=1.016 crit=0.006 ndeg=[1, 1] | DMRG L32: prof=0.974 sm=0.914 tr=1e-15 L64: prof=0.972 sm=0.954 tr=1e-12 L128: prof=0.980 sm=0.975 tr=9e-11 c_two=0.981
+hi_KFM_20.json: scan c_S=1.175 c_obj=1.175 | ring16/20 c_S=0.941 c_cas=-4.413 crit=0.174 ndeg=[1, 1] | DMRG L32: prof=0.427 sm=0.439 tr=4e-17 L64: prof=0.562 sm=0.575 tr=7e-14 L128: prof=0.707 sm=0.727 tr=9e-12 c_two=0.059
+hi_K_0.json: scan c_S=1.833 c_obj=1.833 | ring16/20 c_S=0.434 c_cas=-8.779 crit=8.594 ndeg=[1, 1] | DMRG L32: prof=1.841 sm=1.864 tr=7e-15 L64: prof=0.369 sm=0.378 tr=1e-13 L128: prof=1.609 sm=1.618 tr=2e-11 c_two=0.407
+hi_K_1.json: scan c_S=1.732 c_obj=1.732 | ring16/20 c_S=1.317 c_cas=1.725 crit=0.471 ndeg=[1, 1] | DMRG L32: prof=1.397 sm=1.358 tr=9e-13 L64: prof=1.365 sm=1.338 tr=6e-11 L128: prof=1.261 sm=1.252 tr=5e-10 c_two=0.797
+hi_K_2.json: scan c_S=2.362 c_obj=1.563 | ring16/20 c_S=0.146 c_cas=-2.243 crit=21.181 ndeg=[1, 1] | DMRG L32: prof=2.408 sm=2.392 tr=6e-20 L64: prof=0.206 sm=0.256 tr=2e-14 L128: prof=0.825 sm=0.841 tr=5e-12 c_two=2.039
+hi_K_3.json: scan c_S=1.925 c_obj=1.428 | ring16/20 c_S=0.423 c_cas=-1.897 crit=8.649 ndeg=[1, 1] | DMRG L32: prof=1.851 sm=1.839 tr=3e-18 L64: prof=0.566 sm=0.586 tr=3e-13 L128: prof=0.844 sm=0.860 tr=3e-11 c_two=1.150
+hi_K_4.json: scan c_S=2.050 c_obj=1.417 | ring16/20 c_S=0.350 c_cas=-1.897 crit=8.822 ndeg=[1, 1] | DMRG L32: prof=1.899 sm=1.892 tr=2e-18 L64: prof=0.501 sm=0.526 tr=2e-13 L128: prof=0.812 sm=0.829 tr=2e-11 c_two=1.226
+hi_K_5.json: scan c_S=1.396 c_obj=1.396 | ring16/20 c_S=1.555 c_cas=4.011 crit=0.634 ndeg=[1, 1] | DMRG L32: prof=1.561 sm=1.606 tr=1e-13 L64: prof=0.340 sm=0.377 tr=3e-12 L128: prof=0.012 sm=0.015 tr=4e-12 c_two=-0.046
+hi_K_6.json: scan c_S=1.403 c_obj=1.369 | ring16/20 c_S=0.501 c_cas=-1.108 crit=8.859 ndeg=[1, 1] | DMRG L32: prof=1.857 sm=1.803 tr=5e-17 L64: prof=1.119 sm=1.121 tr=4e-13 L128: prof=0.965 sm=0.967 tr=9e-12 c_two=1.306
+hi_K_7.json: scan c_S=1.717 c_obj=1.348 | ring16/20 c_S=0.552 c_cas=-1.676 crit=7.101 ndeg=[1, 1] | DMRG L32: prof=1.455 sm=1.454 tr=2e-17 L64: prof=0.772 sm=0.775 tr=5e-13 L128: prof=0.846 sm=0.863 tr=4e-11 c_two=0.715
+hi_TAF_53.json: scan c_S=1.321 c_obj=1.321 | ring16/20 c_S=0.768 c_cas=-6.082 crit=7.032 ndeg=[1, 1] | DMRG L32: prof=0.958 sm=0.908 tr=8e-16 L64: prof=0.953 sm=0.939 tr=1e-12 L128: prof=0.966 sm=0.961 tr=7e-11 c_two=0.964
+hi_TAF_54.json: scan c_S=1.102 c_obj=1.102 | ring16/20 c_S=0.897 c_cas=-3.254 crit=21.701 ndeg=[1, 1] | DMRG L32: prof=0.901 sm=0.831 tr=2e-15 L64: prof=0.904 sm=0.879 tr=1e-12 L128: prof=0.920 sm=0.912 tr=8e-11 c_two=0.917
+hi_TFM_59.json: scan c_S=1.720 c_obj=1.720 | ring16/20 c_S=0.192 c_cas=-13.708 crit=0.330 ndeg=[1, 1] | DMRG L32: prof=1.103 sm=1.113 tr=5e-13 L64: prof=1.043 sm=1.045 tr=6e-11 L128: prof=0.984 sm=0.986 tr=1e-09 c_two=0.962
+hi_TFM_60.json: scan c_S=1.287 c_obj=1.287 | ring16/20 c_S=1.052 c_cas=-4.917 crit=0.099 ndeg=[1, 1] | DMRG L32: prof=0.992 sm=0.965 tr=2e-14 L64: prof=1.000 sm=0.993 tr=6e-12 L128: prof=0.999 sm=0.997 tr=2e-10 c_two=1.004
+hi_TFM_61.json: scan c_S=1.266 c_obj=1.266 | ring16/20 c_S=1.668 c_cas=0.000 crit=0.541 ndeg=[1, 1] | DMRG L32: prof=0.799 sm=0.824 tr=5e-13 L64: prof=1.051 sm=1.033 tr=5e-11 L128: prof=0.936 sm=0.932 tr=1e-11 c_two=-2.016
+hi_TFM_62.json: scan c_S=1.266 c_obj=1.266 | ring16/20 c_S=0.722 c_cas=-7.587 crit=0.164 ndeg=[1, 1] | DMRG L32: prof=1.012 sm=1.007 tr=4e-14 L64: prof=0.994 sm=0.993 tr=1e-11 L128: prof=0.989 sm=0.990 tr=3e-10 c_two=0.993
+hi_TFM_63.json: scan c_S=1.236 c_obj=1.236 | ring16/20 c_S=0.754 c_cas=-7.334 crit=0.142 ndeg=[1, 1] | DMRG L32: prof=1.021 sm=1.018 tr=5e-14 L64: prof=1.002 sm=1.001 tr=1e-11 L128: prof=0.994 sm=0.995 tr=4e-10 c_two=1.000
+hi_TFM_64.json: scan c_S=1.227 c_obj=1.227 | ring16/20 c_S=0.773 c_cas=-4.829 crit=0.151 ndeg=[1, 1] | DMRG L32: prof=0.979 sm=0.957 tr=7e-15 L64: prof=0.980 sm=0.975 tr=3e-12 L128: prof=0.985 sm=0.985 tr=2e-10 c_two=0.992
+hi_TFM_65.json: scan c_S=1.198 c_obj=1.198 | ring16/20 c_S=0.806 c_cas=-5.401 crit=0.161 ndeg=[1, 1] | DMRG L32: prof=0.986 sm=0.968 tr=1e-14 L64: prof=0.982 sm=0.978 tr=4e-12 L128: prof=0.985 sm=0.985 tr=2e-10 c_two=0.991
+hi_TFM_66.json: scan c_S=1.197 c_obj=1.197 | ring16/20 c_S=1.057 c_cas=-5.287 crit=0.145 ndeg=[1, 1] | DMRG L32: prof=0.992 sm=0.965 tr=1e-14 L64: prof=0.994 sm=0.987 tr=4e-12 L128: prof=0.994 sm=0.992 tr=2e-10 c_two=0.997
+hi_T_33.json: scan c_S=2.819 c_obj=1.936 | ring16/20 c_S=0.321 c_cas=-0.663 crit=6.766 ndeg=[1, 1] | DMRG L32: prof=0.446 sm=0.431 tr=6e-12 L64: prof=0.185 sm=0.181 tr=6e-11 L128: prof=0.047 sm=0.047 tr=1e-10 c_two=0.069
+hi_T_34.json: scan c_S=1.733 c_obj=1.733 | ring16/20 c_S=0.706 c_cas=-1.763 crit=6.583 ndeg=[1, 1] | DMRG L32: prof=1.079 sm=0.993 tr=1e-14 L64: prof=1.058 sm=1.025 tr=3e-12 L128: prof=1.030 sm=1.019 tr=1e-10 c_two=1.026
+hi_T_35.json: scan c_S=1.666 c_obj=1.666 | ring16/20 c_S=0.713 c_cas=-2.039 crit=7.581 ndeg=[1, 1] | DMRG L32: prof=1.027 sm=0.943 tr=1e-14 L64: prof=1.043 sm=1.009 tr=3e-12 L128: prof=1.029 sm=1.018 tr=1e-10 c_two=1.026
+hi_T_36.json: scan c_S=1.649 c_obj=1.649 | ring16/20 c_S=0.807 c_cas=-2.279 crit=5.299 ndeg=[1, 1] | DMRG L32: prof=1.254 sm=1.161 tr=1e-13 L64: prof=1.061 sm=1.032 tr=2e-11 L128: prof=0.996 sm=0.987 tr=4e-10 c_two=0.988
+hi_T_37.json: scan c_S=1.859 c_obj=1.643 | ring16/20 c_S=0.530 c_cas=-1.037 crit=7.739 ndeg=[1, 1] | DMRG L32: prof=1.277 sm=1.187 tr=7e-15 L64: prof=1.329 sm=1.296 tr=2e-12 L128: prof=1.077 sm=1.069 tr=4e-11 c_two=1.287
+hi_T_38.json: scan c_S=1.543 c_obj=1.543 | ring16/20 c_S=1.019 c_cas=-2.619 crit=8.268 ndeg=[1, 1] | DMRG L32: prof=0.815 sm=0.761 tr=3e-15 L64: prof=0.943 sm=0.924 tr=2e-12 L128: prof=0.997 sm=0.991 tr=1e-10 c_two=0.996
+hi_T_39.json: scan c_S=1.484 c_obj=1.484 | ring16/20 c_S=0.335 c_cas=-4.821 crit=1.101 ndeg=[1, 1] | DMRG L32: prof=1.223 sm=1.176 tr=7e-13 L64: prof=1.053 sm=1.044 tr=8e-11 L128: prof=1.018 sm=1.016 tr=1e-09 c_two=1.014
+hi_T_40.json: scan c_S=1.446 c_obj=1.446 | ring16/20 c_S=0.703 c_cas=-2.071 crit=13.207 ndeg=[1, 1] | DMRG L32: prof=1.019 sm=0.940 tr=2e-15 L64: prof=1.056 sm=1.027 tr=1e-12 L128: prof=1.150 sm=1.140 tr=7e-11 c_two=1.147
+ising_KFM_21.json: scan c_S=0.465 c_obj=0.390 | ring16/20 c_S=0.360 c_cas=0.323 crit=0.188 ndeg=[1, 1] | DMRG L32: prof=0.905 sm=0.916 tr=5e-20 L64: prof=0.607 sm=0.611 tr=2e-19 L128: prof=0.140 sm=0.141 tr=8e-19 c_two=0.375
+ising_KFM_22.json: scan c_S=0.349 c_obj=0.178 | ring16/20 c_S=0.203 c_cas=0.128 crit=0.195 ndeg=[1, 1] | DMRG L32: prof=1.158 sm=1.186 tr=3e-20 L64: prof=0.332 sm=0.339 tr=4e-20 L128: prof=-0.007 sm=-0.008 tr=1e-19 c_two=-2.895
+ising_KFM_23.json: scan c_S=0.463 c_obj=0.388 | ring16/20 c_S=0.347 c_cas=0.316 crit=0.229 ndeg=[1, 1] | DMRG L32: prof=1.016 sm=1.027 tr=5e-20 L64: prof=0.631 sm=0.636 tr=3e-19 L128: prof=0.131 sm=0.132 tr=2e-17 c_two=0.368
+ising_KFM_24.json: scan c_S=0.493 c_obj=0.493 | ring16/20 c_S=0.527 c_cas=0.518 crit=0.108 ndeg=[1, 1] | DMRG L32: prof=0.267 sm=0.309 tr=1e-18 L64: prof=0.362 sm=0.361 tr=9e-17 L128: prof=0.374 sm=0.375 tr=3e-15 c_two=0.406
+ising_KFM_25.json: scan c_S=0.608 c_obj=0.416 | ring16/20 c_S=0.469 c_cas=0.453 crit=0.571 ndeg=[1, 1] | DMRG L32: prof=0.528 sm=0.593 tr=3e-18 L64: prof=0.770 sm=0.767 tr=3e-16 L128: prof=0.592 sm=0.592 tr=5e-15 c_two=0.847
+ising_KFM_26.json: scan c_S=0.502 c_obj=0.477 | ring16/20 c_S=0.502 c_cas=0.464 crit=0.040 ndeg=[1, 1] | DMRG L32: prof=0.426 sm=0.445 tr=6e-20 L64: prof=0.504 sm=0.505 tr=4e-19 L128: prof=0.572 sm=0.572 tr=6e-17 c_two=0.584
+ising_KFM_27.json: scan c_S=0.514 c_obj=0.493 | ring16/20 c_S=0.517 c_cas=0.482 crit=0.002 ndeg=[1, 1] | DMRG L32: prof=0.408 sm=0.409 tr=6e-20 L64: prof=0.520 sm=0.521 tr=5e-19 L128: prof=0.599 sm=0.599 tr=4e-17 c_two=0.633
+ising_KFM_28.json: scan c_S=0.376 c_obj=0.301 | ring16/20 c_S=0.249 c_cas=0.232 crit=0.189 ndeg=[1, 1] | DMRG L32: prof=0.757 sm=0.768 tr=4e-20 L64: prof=0.353 sm=0.357 tr=5e-20 L128: prof=0.048 sm=0.049 tr=2e-18 c_two=0.158
+ising_K_10.json: scan c_S=0.645 c_obj=0.645 | ring16/20 c_S=1.425 c_cas=-1.174 crit=2.047 ndeg=[1, 1] | DMRG L32: prof=0.099 sm=0.291 tr=2e-17 L64: prof=1.410 sm=1.328 tr=3e-13 L128: prof=1.036 sm=1.027 tr=2e-11 c_two=1.253
+ising_K_11.json: scan c_S=0.496 c_obj=0.495 | ring16/20 c_S=0.498 c_cas=0.468 crit=0.056 ndeg=[1, 1] | DMRG L32: prof=0.404 sm=0.367 tr=2e-19 L64: prof=0.365 sm=0.364 tr=3e-17 L128: prof=0.325 sm=0.325 tr=1e-15 c_two=0.343
+ising_K_12.json: scan c_S=0.490 c_obj=0.484 | ring16/20 c_S=0.495 c_cas=0.468 crit=0.008 ndeg=[1, 1] | DMRG L32: prof=0.470 sm=0.443 tr=5e-20 L64: prof=0.459 sm=0.459 tr=3e-19 L128: prof=0.461 sm=0.461 tr=3e-17 c_two=0.475
+ising_K_13.json: scan c_S=0.495 c_obj=0.469 | ring16/20 c_S=0.498 c_cas=0.459 crit=0.010 ndeg=[1, 1] | DMRG L32: prof=0.412 sm=0.388 tr=7e-20 L64: prof=0.436 sm=0.436 tr=4e-18 L128: prof=0.453 sm=0.453 tr=3e-16 c_two=0.469
+ising_K_14.json: scan c_S=0.415 c_obj=0.415 | ring16/20 c_S=0.373 c_cas=0.468 crit=0.038 ndeg=[1, 1] | DMRG L32: prof=1.907 sm=1.743 tr=5e-18 L64: prof=2.782 sm=2.742 tr=2e-16 L128: prof=3.369 sm=3.360 tr=4e-15 c_two=0.720
+ising_K_15.json: scan c_S=0.544 c_obj=0.544 | ring16/20 c_S=0.374 c_cas=0.861 crit=0.002 ndeg=[1, 1] | DMRG L32: prof=2.176 sm=2.023 tr=2e-17 L64: prof=3.000 sm=2.960 tr=3e-15 L128: prof=3.636 sm=3.628 tr=1e-13 c_two=0.743
+ising_K_8.json: scan c_S=0.373 c_obj=0.373 | ring16/20 c_S=2.085 c_cas=-1.232 crit=3.345 ndeg=[1, 1] | DMRG L32: prof=3.102 sm=3.072 tr=1e-13 L64: prof=0.834 sm=0.893 tr=3e-11 L128: prof=0.954 sm=0.969 tr=5e-10 c_two=1.257
+ising_K_9.json: scan c_S=0.498 c_obj=0.254 | ring16/20 c_S=0.499 c_cas=0.253 crit=0.002 ndeg=[1, 1] | DMRG L32: prof=0.525 sm=0.533 tr=3e-20 L64: prof=0.510 sm=0.511 tr=4e-20 L128: prof=0.498 sm=0.498 tr=7e-20 c_two=0.506
+ising_TFM_67.json: scan c_S=0.562 c_obj=0.562 | ring16/20 c_S=0.298 c_cas=0.688 crit=0.075 ndeg=[1, 1] | DMRG L32: prof=0.608 sm=0.609 tr=4e-16 L64: prof=0.180 sm=0.181 tr=2e-14 L128: prof=0.009 sm=0.009 tr=2e-14 c_two=0.035
+ising_TFM_68.json: scan c_S=0.686 c_obj=0.686 | ring16/20 c_S=0.440 c_cas=2.050 crit=0.317 ndeg=[1, 1] | DMRG L32: prof=0.559 sm=0.568 tr=3e-14 L64: prof=0.126 sm=0.129 tr=3e-13 L128: prof=-0.046 sm=-0.047 tr=3e-15 c_two=-2.992
+ising_TFM_69.json: scan c_S=0.611 c_obj=0.611 | ring16/20 c_S=0.358 c_cas=1.078 crit=0.367 ndeg=[1, 1] | DMRG L32: prof=0.712 sm=0.714 tr=3e-15 L64: prof=1.288 sm=1.286 tr=1e-12 L128: prof=1.081 sm=1.081 tr=1e-10 c_two=1.160
+ising_TFM_70.json: scan c_S=0.687 c_obj=0.687 | ring16/20 c_S=0.476 c_cas=1.031 crit=0.073 ndeg=[1, 1] | DMRG L32: prof=0.719 sm=0.716 tr=2e-15 L64: prof=0.329 sm=0.330 tr=4e-13 L128: prof=0.712 sm=0.712 tr=1e-11 c_two=0.567
+ising_TFM_71.json: scan c_S=0.532 c_obj=0.532 | ring16/20 c_S=0.239 c_cas=1.028 crit=0.174 ndeg=[1, 1] | DMRG L32: prof=0.478 sm=0.485 tr=2e-15 L64: prof=0.092 sm=0.094 tr=3e-14 L128: prof=-0.039 sm=-0.039 tr=7e-15 c_two=-2.564
+ising_TFM_72.json: scan c_S=0.323 c_obj=0.323 | ring16/20 c_S=0.036 c_cas=0.590 crit=0.124 ndeg=[1, 1] | DMRG L32: prof=0.415 sm=0.419 tr=3e-16 L64: prof=0.036 sm=0.037 tr=7e-15 L128: prof=-0.014 sm=-0.014 tr=5e-15 c_two=-0.021
+ising_TFM_73.json: scan c_S=0.606 c_obj=0.606 | ring16/20 c_S=0.448 c_cas=0.685 crit=0.026 ndeg=[1, 1] | DMRG L32: prof=0.997 sm=0.949 tr=3e-16 L64: prof=0.567 sm=0.560 tr=2e-14 L128: prof=0.113 sm=0.113 tr=5e-14 c_two=0.289
+ising_TFM_74.json: scan c_S=0.358 c_obj=0.358 | ring16/20 c_S=0.026 c_cas=0.615 crit=0.097 ndeg=[1, 1] | DMRG L32: prof=0.414 sm=0.424 tr=5e-16 L64: prof=0.108 sm=0.110 tr=1e-13 L128: prof=2.720 sm=2.717 tr=8e-12 c_two=1.757
+ising_T_41.json: scan c_S=0.427 c_obj=0.427 | ring16/20 c_S=2.081 c_cas=2.316 crit=0.055 ndeg=[1, 1] | DMRG L32: prof=1.075 sm=1.030 tr=2e-12 L64: prof=0.999 sm=0.995 tr=1e-10 L128: prof=0.990 sm=0.988 tr=1e-09 c_two=1.010
+ising_T_42.json: scan c_S=0.326 c_obj=0.326 | ring16/20 c_S=0.132 c_cas=0.411 crit=0.108 ndeg=[1, 1] | DMRG L32: prof=0.697 sm=0.665 tr=8e-16 L64: prof=0.373 sm=0.368 tr=5e-14 L128: prof=0.079 sm=0.079 tr=9e-14 c_two=0.194
+ising_T_43.json: scan c_S=0.666 c_obj=-4.048 | ring16/20 c_S=0.909 c_cas=-0.905 crit=0.056 ndeg=[1, 1] | DMRG L32: prof=1.017 sm=0.996 tr=2e-14 L64: prof=0.996 sm=0.992 tr=6e-12 L128: prof=0.995 sm=0.994 tr=2e-10 c_two=0.997
+ising_T_44.json: scan c_S=0.618 c_obj=-1.763 | ring16/20 c_S=0.723 c_cas=0.623 crit=0.484 ndeg=[1, 1] | DMRG L32: prof=1.759 sm=1.671 tr=1e-11 L64: prof=1.242 sm=1.220 tr=6e-10 L128: prof=1.090 sm=1.087 tr=5e-09 c_two=1.088
+ising_T_45.json: scan c_S=0.686 c_obj=0.686 | ring16/20 c_S=0.568 c_cas=0.732 crit=0.041 ndeg=[1, 1] | DMRG L32: prof=1.135 sm=1.058 tr=4e-16 L64: prof=0.857 sm=0.838 tr=5e-14 L128: prof=0.271 sm=0.269 tr=2e-13 c_two=0.531
+ising_T_46.json: scan c_S=0.475 c_obj=-1.070 | ring16/20 c_S=0.839 c_cas=3.024 crit=0.159 ndeg=[1, 1] | DMRG L32: prof=1.021 sm=0.996 tr=1e-13 L64: prof=0.991 sm=0.989 tr=2e-11 L128: prof=0.989 sm=0.988 tr=5e-10 c_two=0.990
+ising_T_47.json: scan c_S=0.588 c_obj=0.588 | ring16/20 c_S=0.438 c_cas=0.698 crit=0.042 ndeg=[1, 1] | DMRG L32: prof=1.063 sm=1.000 tr=3e-16 L64: prof=0.569 sm=0.558 tr=2e-14 L128: prof=0.104 sm=0.103 tr=3e-14 c_two=0.279
+ising_T_48.json: scan c_S=0.588 c_obj=-1.021 | ring16/20 c_S=1.477 c_cas=1.343 crit=0.684 ndeg=[1, 1] | DMRG L32: prof=0.984 sm=0.946 tr=1e-14 L64: prof=0.953 sm=0.939 tr=5e-12 L128: prof=0.966 sm=0.961 tr=2e-10 c_two=0.962
+
+== Stage V: VUMPS (transfer-matrix momenta, FES)
+K_C68.json n = 2
+  chi=8 S=0.8144 xi=12.92 |lam|@arg/pi: 0.8565@+0.2960 0.8565@-0.2960 0.7819@-0.0000 0.5275@+0.2963 0.5275@-0.2963 0.5161@+0.0000
+  chi=12 S=0.9215 xi=25.35 |lam|@arg/pi: 0.9241@+0.2960 0.9241@-0.2960 0.8660@-0.0000 0.7346@+0.2960 0.7346@-0.2960 0.7033@-0.0000
+  chi=16 S=0.9720 xi=34.38 |lam|@arg/pi: 0.9435@-0.2960 0.9435@+0.2960 0.9018@-0.0000 0.7975@-0.2961 0.7975@+0.2961 0.7744@+0.0000
+  chi=24 S=1.0729 xi=60.83 |lam|@arg/pi: 0.9677@+0.2960 0.9677@-0.2960 0.9455@+0.0000 0.8724@+0.2960 0.8724@-0.2960 0.8608@+0.0000
+  chi=32 S=1.1397 xi=92.86 |lam|@arg/pi: 0.9787@+0.2960 0.9787@-0.2960 0.9619@+0.0000 0.9177@+0.2961 0.9177@-0.2961 0.9097@+0.0000
+  chi=48 S=1.2253 xi=156.04 |lam|@arg/pi: 0.9873@-0.2960 0.9873@+0.2960 0.9780@+0.0000 0.9504@+0.2960 0.9504@-0.2960 0.9454@-0.0000
+  chi=64 S=1.2919 xi=233.03 |lam|@arg/pi: 0.9915@-0.2960 0.9915@+0.2960 0.9850@-0.0000 0.9667@+0.2960 0.9667@-0.2960 0.9628@-0.0000
+  chi=96 S=1.3796 xi=395.09 |lam|@arg/pi: 0.9950@+0.2960 0.9950@-0.2960 0.9913@-0.0000 0.9802@+0.2960 0.9802@-0.2960 0.9784@+0.0000
+  chi=128 S=1.4379 xi=561.42 |lam|@arg/pi: 0.9964@-0.2960 0.9964@+0.2960 0.9939@+0.0000 0.9861@+0.2960 0.9861@-0.2960 0.9847@+0.0000
+== fes/K_C68.json  n=2  exact_e=None
+  chi=   8 e=-1.6033356842 S=0.81440(spread 7.5e-02) xi=    12.92 1/delta=    21.93 arg1/pi=+0.2960 err=2e-08 it=54 xi0=8.1 xipi=nan xiic=12.9
+  chi=  12 e=-1.6043332321 S=0.92150(spread 4.5e-02) xi=    25.35 1/delta=    30.78 arg1/pi=+0.2960 err=9e-10 it=31 xi0=13.9 xipi=nan xiic=25.4  c_pair=0.953
+  chi=  16 e=-1.6045158211 S=0.97203(spread 3.5e-02) xi=    34.38 1/delta=    44.30 arg1/pi=-0.2960 err=1e-08 it=252 xi0=19.4 xipi=nan xiic=34.4  c_pair=0.995
+  chi=  24 e=-1.6046690788 S=1.07294(spread 2.1e-02) xi=    60.83 1/delta=    86.44 arg1/pi=+0.2960 err=3e-07 it=118 xi0=35.7 xipi=nan xiic=60.8  c_pair=1.061
+  chi=  32 e=-1.6047092222 S=1.13966(spread 1.6e-02) xi=    92.86 1/delta=   115.38 arg1/pi=+0.2960 err=2e-06 it=127 xi0=51.5 xipi=nan xiic=92.9  c_pair=0.946
+  chi=  48 e=-1.6047310021 S=1.22534(spread 8.6e-03) xi=   156.04 1/delta=   212.18 arg1/pi=-0.2960 err=5e-08 it=366 xi0=89.9 xipi=nan xiic=156.0  c_pair=0.990
+  chi=  64 e=-1.6047373363 S=1.29186(spread 5.5e-03) xi=   233.03 1/delta=   305.26 arg1/pi=-0.2960 err=1e-07 it=305 xi0=132.1 xipi=nan xiic=233.0  c_pair=0.995
+  chi=  96 e=-1.6047409040 S=1.37965(spread 2.5e-03) xi=   395.09 1/delta=   542.19 arg1/pi=+0.2960 err=9e-07 it=600 xi0=228.5 xipi=nan xiic=395.1  c_pair=0.998
+  chi= 128 e=-1.6047418858 S=1.43787(spread 2.5e-03) xi=   561.42 1/delta=   768.07 arg1/pi=-0.2960 err=4e-07 it=485 xi0=324.3 xipi=nan xiic=561.4  c_pair=0.994
+  c_ls3=0.996  c_d3=0.946  c_ls4=0.996  c_d4=0.979  c_ic3=0.996  c_kappa=1.096  kappa=1.271
+N_C68.json n = 2
+  chi=8 S=0.8050 xi=12.30 |lam|@arg/pi: 0.8499@-0.3336 0.8499@+0.3336 0.7834@-0.0000 0.5235@+0.3334 0.5235@-0.3334 0.5164@+0.0000
+  chi=12 S=0.8575 xi=18.61 |lam|@arg/pi: 0.8981@-0.3308 0.8981@+0.3308 0.8367@+0.0000 0.6885@+0.3307 0.6885@-0.3307 0.6562@+0.0000
+  chi=16 S=0.8793 xi=21.53 |lam|@arg/pi: 0.9113@-0.3299 0.9113@+0.3299 0.8609@-0.0000 0.7260@-0.3296 0.7260@+0.3296 0.6976@-0.0000
+  chi=24 S=0.8873 xi=23.09 |lam|@arg/pi: 0.9170@+0.3297 0.9170@-0.3297 0.8708@-0.0000 0.7536@-0.3295 0.7536@+0.3295 0.7246@+0.0000
+  chi=32 S=0.9044 xi=26.65 |lam|@arg/pi: 0.9277@+0.3295 0.9277@-0.3295 0.8883@+0.0000 0.7950@-0.3291 0.7950@+0.3291 0.7665@+0.0000
+  chi=48 S=0.9173 xi=29.29 |lam|@arg/pi: 0.9340@-0.3292 0.9340@+0.3292 0.8989@-0.0000 0.8193@-0.3291 0.8193@+0.3291 0.7921@-0.0000
+  chi=64 S=0.9270 xi=31.92 |lam|@arg/pi: 0.9393@+0.3291 0.9393@-0.3291 0.9071@-0.0000 0.8368@+0.3292 0.8368@-0.3292 0.8105@-0.0000
+  chi=96 S=0.9329 xi=34.83 |lam|@arg/pi: 0.9442@-0.3290 0.9442@+0.3290 0.9150@-0.0000 0.8529@+0.3289 0.8529@-0.3289 0.8277@-0.0000
+  chi=128 S=0.9301 xi=35.94 |lam|@arg/pi: 0.9459@-0.3289 0.9459@+0.3289 0.9175@+0.0000 0.8575@-0.3285 0.8575@+0.3285 0.8333@+0.0000
+== fes/N_C68.json  n=2  exact_e=None
+  chi=   8 e=-1.6335644593 S=0.80500(spread 7.6e-02) xi=    12.30 1/delta=    24.56 arg1/pi=-0.3336 err=1e-01 it=600 xi0=8.2 xipi=nan xiic=12.3
+  chi=  12 e=-1.6352052515 S=0.85753(spread 6.1e-02) xi=    18.61 1/delta=    28.24 arg1/pi=-0.3308 err=1e-01 it=600 xi0=11.2 xipi=nan xiic=18.6  c_pair=0.761
+  chi=  16 e=-1.6353997063 S=0.87935(spread 5.3e-02) xi=    21.53 1/delta=    35.20 arg1/pi=-0.3299 err=2e-01 it=600 xi0=13.4 xipi=nan xiic=21.5  c_pair=0.898
+  chi=  24 e=-1.6354861573 S=0.88729(spread 4.9e-02) xi=    23.09 1/delta=    38.69 arg1/pi=+0.3297 err=2e-01 it=600 xi0=14.5 xipi=nan xiic=23.1  c_pair=0.681
+  chi=  32 e=-1.6355501266 S=0.90442(spread 4.2e-02) xi=    26.65 1/delta=    46.03 arg1/pi=+0.3295 err=3e-01 it=600 xi0=16.9 xipi=nan xiic=26.6  c_pair=0.716
+  chi=  48 e=-1.6356033380 S=0.91728(spread 3.5e-02) xi=    29.29 1/delta=    52.20 arg1/pi=-0.3292 err=3e-01 it=600 xi0=18.8 xipi=nan xiic=29.3  c_pair=0.817
+  chi=  64 e=-1.6356297804 S=0.92705(spread 2.7e-02) xi=    31.92 1/delta=    57.29 arg1/pi=+0.3291 err=4e-01 it=600 xi0=20.5 xipi=nan xiic=31.9  c_pair=0.680
+  chi=  96 e=-1.6356569485 S=0.93286(spread 1.9e-02) xi=    34.83 1/delta=    63.64 arg1/pi=-0.3290 err=6e-01 it=600 xi0=22.5 xipi=nan xiic=34.8  c_pair=0.400
+  chi= 128 e=-1.6356649834 S=0.93012(spread 1.6e-02) xi=    35.94 1/delta=    65.76 arg1/pi=-0.3289 err=7e-01 it=600 xi0=23.2 xipi=nan xiic=35.9  c_pair=-0.523
+  c_ls3=0.208  c_d3=0.182  c_ls4=0.409  c_d4=0.358  c_ic3=0.208  c_kappa=19.289  kappa=0.174
+T_C68.json n = 2
+  chi=8 S=0.8106 xi=12.60 |lam|@arg/pi: 0.8532@+0.3278 0.8532@-0.3278 0.7891@-0.0000 0.5271@+0.3280 0.5271@-0.3280 0.5212@+0.0000
+  chi=12 S=0.9082 xi=23.59 |lam|@arg/pi: 0.9187@-0.3276 0.9187@+0.3276 0.8647@+0.0000 0.7263@-0.3275 0.7263@+0.3275 0.7000@+0.0000
+  chi=16 S=0.9659 xi=32.55 |lam|@arg/pi: 0.9404@-0.3277 0.9404@+0.3277 0.9056@+0.0000 0.7852@+0.3275 0.7852@-0.3275 0.7708@+0.0000
+  chi=24 S=1.0603 xi=57.43 |lam|@arg/pi: 0.9658@-0.3277 0.9658@+0.3277 0.9460@-0.0000 0.8716@-0.3277 0.8716@+0.3277 0.8656@+0.0000
+  chi=32 S=1.1276 xi=87.71 |lam|@arg/pi: 0.9775@+0.3277 0.9775@-0.3277 0.9625@-0.0000 0.9167@+0.3277 0.9167@-0.3277 0.9102@+0.0000
+  chi=48 S=1.2187 xi=152.34 |lam|@arg/pi: 0.9870@+0.3277 0.9870@-0.3277 0.9787@+0.0000 0.9513@-0.3277 0.9513@+0.3277 0.9483@+0.0000
+  chi=64 S=1.2805 xi=219.64 |lam|@arg/pi: 0.9909@-0.3277 0.9909@+0.3277 0.9852@+0.0000 0.9658@+0.3277 0.9658@-0.3277 0.9633@-0.0000
+  chi=96 S=1.3691 xi=373.72 |lam|@arg/pi: 0.9947@-0.3277 0.9947@+0.3277 0.9913@+0.0000 0.9797@-0.3277 0.9797@+0.3277 0.9785@-0.0000
+  chi=128 S=1.4273 xi=530.72 |lam|@arg/pi: 0.9962@-0.3277 0.9962@+0.3277 0.9939@-0.0000 0.9857@+0.3277 0.9857@-0.3277 0.9848@+0.0000
+== fes/T_C68.json  n=2  exact_e=None
+  chi=   8 e=-1.6305584300 S=0.81056(spread 8.1e-02) xi=    12.60 1/delta=    25.59 arg1/pi=+0.3278 err=5e-08 it=55 xi0=8.4 xipi=nan xiic=12.6
+  chi=  12 e=-1.6314544431 S=0.90821(spread 5.3e-02) xi=    23.59 1/delta=    33.04 arg1/pi=-0.3276 err=1e-09 it=47 xi0=13.8 xipi=nan xiic=23.6  c_pair=0.935
+  chi=  16 e=-1.6316617631 S=0.96594(spread 3.9e-02) xi=    32.55 1/delta=    53.10 arg1/pi=-0.3277 err=3e-09 it=211 xi0=20.2 xipi=nan xiic=32.6  c_pair=1.075
+  chi=  24 e=-1.6318093434 S=1.06030(spread 2.3e-02) xi=    57.43 1/delta=    96.76 arg1/pi=-0.3277 err=2e-06 it=88 xi0=36.0 xipi=nan xiic=57.4  c_pair=0.997
+  chi=  32 e=-1.6318491960 S=1.12760(spread 1.7e-02) xi=    87.71 1/delta=   129.66 arg1/pi=+0.3277 err=5e-06 it=600 xi0=52.3 xipi=nan xiic=87.7  c_pair=0.953
+  chi=  48 e=-1.6318714400 S=1.21868(spread 4.9e-03) xi=   152.34 1/delta=   236.92 arg1/pi=+0.3277 err=8e-08 it=543 xi0=92.7 xipi=nan xiic=152.3  c_pair=0.990
+  chi=  64 e=-1.6318771046 S=1.28054(spread 3.6e-03) xi=   219.64 1/delta=   342.14 arg1/pi=-0.3277 err=8e-07 it=93 xi0=133.8 xipi=nan xiic=219.6  c_pair=1.015
+  chi=  96 e=-1.6318806445 S=1.36905(spread 2.9e-03) xi=   373.72 1/delta=   596.40 arg1/pi=-0.3277 err=2e-07 it=600 xi0=229.8 xipi=nan xiic=373.7  c_pair=0.999
+  chi= 128 e=-1.6318816084 S=1.42732(spread 2.8e-03) xi=   530.72 1/delta=   853.22 arg1/pi=-0.3277 err=3e-07 it=600 xi0=327.2 xipi=nan xiic=530.7  c_pair=0.997
+  c_ls3=0.998  c_d3=0.963  c_ls4=1.002  c_d4=0.974  c_ic3=0.998  c_kappa=1.089  kappa=1.275

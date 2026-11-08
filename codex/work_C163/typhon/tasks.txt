@@ -1,0 +1,68 @@
+timeout 450m python3 refine_big.py hi_T_40 256 192
+timeout 450m python3 refine_big.py dist_T_50 256 192
+timeout 450m python3 refine_big.py hi_T_37 256 192
+timeout 450m python3 refine_big.py hi_K_1 256 192
+timeout 420m python3 fesx.py gen --J -0.402699769639 -0.216785261248 0.024769178208 0.216785261248 -0.423436265948 -0.430489731979 -0.024769178208 0.430489731979 0.652383210383 --B 0 0 0 --n 2 --chis 8 12 16 24 32 48 64 96 128 160 192 --out fes/T40.json
+timeout 420m python3 fesx.py gen --J -0.581045573124 -0.174723330659 0.476857365165 0.174723330659 0.053691440582 0.008284265795 -0.476857365165 -0.008284265795 0.633650892143 --B 0 0 0 --n 2 --chis 8 12 16 24 32 48 64 96 128 160 192 --out fes/T50.json
+timeout 400m python3 refine_big.py hi_T_40 192 160
+timeout 400m python3 refine_big.py dist_T_50 192 160
+timeout 400m python3 refine_big.py hi_T_40@1 192 160
+timeout 400m python3 refine_big.py hi_T_40@2 192 160
+timeout 300m python3 refine_big.py hi_T_40@1 128 128
+timeout 300m python3 refine_big.py hi_T_40@2 128 128
+timeout 300m python3 twisted.py G_1.000_0.15_T
+timeout 300m python3 twisted.py G_1.000_0.15_N
+timeout 300m python3 twisted.py G_1.000_0.30_T
+timeout 300m python3 twisted.py G_1.000_0.30_N
+timeout 300m python3 twisted.py G_2.000_0.15_T
+timeout 300m python3 twisted.py G_2.000_0.15_N
+timeout 300m python3 twisted.py G_2.000_0.30_T
+timeout 300m python3 twisted.py G_2.000_0.30_N
+timeout 300m python3 twisted.py G_2.094_0.15_T
+timeout 300m python3 twisted.py G_2.094_0.15_N
+timeout 300m python3 twisted.py G_2.094_0.30_T
+timeout 300m python3 twisted.py G_2.094_0.30_N
+timeout 300m python3 twisted.py G_1.571_0.15_T
+timeout 300m python3 twisted.py G_1.571_0.15_N
+timeout 300m python3 twisted.py G_1.571_0.30_T
+timeout 300m python3 twisted.py G_1.571_0.30_N
+timeout 360m python3 path_scan.py T00
+timeout 360m python3 path_scan.py T01
+timeout 360m python3 path_scan.py T02
+timeout 360m python3 path_scan.py T03
+timeout 360m python3 path_scan.py T04
+timeout 360m python3 path_scan.py T05
+timeout 360m python3 path_scan.py T06
+timeout 360m python3 path_scan.py T07
+timeout 360m python3 path_scan.py T08
+timeout 360m python3 path_scan.py T09
+timeout 360m python3 path_scan.py T10
+timeout 360m python3 path_scan.py T11
+timeout 360m python3 path_scan.py T12
+timeout 360m python3 path_scan.py T13
+timeout 360m python3 path_scan.py T14
+timeout 360m python3 path_scan.py T15
+timeout 360m python3 path_scan.py KI16
+timeout 360m python3 path_scan.py KI17
+timeout 360m python3 path_scan.py KI18
+timeout 360m python3 path_scan.py KI19
+timeout 360m python3 path_scan.py KI20
+timeout 360m python3 path_scan.py KI21
+timeout 360m python3 path_scan.py KI22
+timeout 360m python3 path_scan.py KI23
+timeout 360m python3 path_scan.py KI24
+timeout 360m python3 path_scan.py KI25
+timeout 360m python3 path_scan.py KI26
+timeout 360m python3 path_scan.py KI27
+timeout 360m python3 path_scan.py N28
+timeout 360m python3 path_scan.py N29
+timeout 360m python3 path_scan.py N30
+timeout 360m python3 path_scan.py N31
+timeout 360m python3 path_scan.py N32
+timeout 360m python3 path_scan.py N33
+timeout 360m python3 path_scan.py N34
+timeout 360m python3 path_scan.py N35
+timeout 360m python3 path_scan.py N36
+timeout 360m python3 path_scan.py N37
+timeout 360m python3 path_scan.py N38
+timeout 360m python3 path_scan.py N39
