@@ -1,0 +1,17 @@
+# C157: Constructing a qubit chain with c > 1 at the XZ point
+
+Your folder is `../work_C157/`. Read `specs/_qubit_c_context.md` first, then all of `codex/work_C144/` (RESULT.md, PROOF.md, and its scripts: kernel.py, bmodel.py, validate_bmodel.py, bscan.py, dmrg.py and their outputs) and `codex/work_C143/` PROOF.md §4.2.
+
+## Why XZ
+
+At h = X⊗Z the qubit chain splits exactly into two commuting Majorana chains, A (critical, c = 1/2) and B (exactly degenerate, dimension 2^(L/2−1)). It is the only known point of B_2 carrying two independent fermionic species, which is the loophole in the one-species-per-site heuristic for c ≤ 1. Perturbations δh give B dynamics: at first order a hopping of order δ, except on a 7-dimensional tuned hyperplane dJ_zx + ⟨a⟩ dJ_yy = 0 where the first-order hopping vanishes and the second-order B Hamiltonian is purely quartic with kernel tail (−1)^r/(2πr) (C144). Interacting Majorana chains of the Rahmani–Zhu–Franz–Affleck type (PRL 115, 166401; PRB 92, 235123) have Ising (1/2), tricritical Ising (7/10) and an incommensurate c = 3/2 phase. If the emergent B chain reaches the c = 3/2 phase, then c_tot = 3/2 with A gapped, or 2 with A critical. C144 explored only the Ashkin–Teller plane (XZ + αZX + βYY), where it found a gapped wedge with a c = 1/2 line. In the YX and ZY directions A gaps and a slow sector reads c ≈ 1 at L = 64, not converged, which a single free Majorana cannot give.
+
+## Tasks
+
+1. Derive the effective B Hamiltonian to second order for a general perturbation on the 7-dimensional tuned hyperplane and for the YX/ZY directions, with all couplings explicit: nearest and further-neighbour Majorana hoppings, quartic terms and their ranges, and the A-sector mass where A is gapped (which changes the kernels from power-law to exponential tails). Validate against exact diagonalization of the full qubit chain at small δ.
+2. Map the phase diagram of the effective B model as a function of its coupling ratios, with DMRG or ED on the B chain alone at large sizes (it is a one-chain problem with half as many sites), locating Ising, tricritical Ising and any c = 3/2 or other c > 1/2 phase. Compare with RZFA's phase diagram after matching their couplings.
+3. Determine the image of the qubit-bond directions in the effective-coupling space, and decide whether any direction (or combination, at second order) reaches a c > 1/2 phase of B. If so, construct an explicit qubit bond h = XZ + δ·(direction) for which c_tot > 1.
+4. Verify on the full qubit chain. Choose δ as large as the effective description allows, so the B crossover length is reachable, and use DMRG at L = 128 to 512 on Typhon, with entanglement fits (open-boundary and parity corrections), Casimir energies with velocities, and the low-level spectrum times L. A counterexample needs c clearly above 1 with converging finite-size estimates. Also collect the L = 128 to 256 YX/ZY outputs of Typhon jobs 17580192 and 17580432 in /scratch/lustre/jkudlerflam/c144/ if they have finished (C154 may also read them; do not delete anything there).
+5. If no direction reaches c > 1/2 in B, say exactly why (which coupling ratios are reachable versus where the c = 3/2 phase sits), so the XZ loophole is closed.
+
+Rules as in the shared context. Typhon via `ssh -o LogLevel=ERROR typhon`, scratch /scratch/lustre/jkudlerflam/c157/, SLURM only, one packed 48-core node job at a time, never block on a queued job.
