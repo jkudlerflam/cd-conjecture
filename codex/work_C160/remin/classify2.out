@@ -1,0 +1,49 @@
+  0 0  uniform   var=1.9e-07 dE(bulk-ring)=-5.6e-09 
+  0 1  uniform   var=4.3e-08 dE(bulk-ring)=+3.1e-08 
+  0 2  uniform   var=4.9e-08 dE(bulk-ring)=+3.0e-08 
+  0 3  uniform   var=3.1e-09 dE(bulk-ring)=+2.5e-11 
+ 10 0  uniform   var=4.6e-09 dE(bulk-ring)=-2.0e-08 
+ 10 1  uniform   var=7.3e-09 dE(bulk-ring)=+2.2e-08 
+ 10 2  uniform   var=2.3e-08 dE(bulk-ring)=+1.0e-08 
+ 10 3  uniform   var=3.0e-09 dE(bulk-ring)=-3.5e-09 
+ 11 0  uniform   var=4.8e-09 dE(bulk-ring)=-1.2e-09 
+ 11 1  uniform   var=4.0e-08 dE(bulk-ring)=+2.5e-09 
+ 11 2  uniform   var=2.2e-08 dE(bulk-ring)=-6.6e-09 
+ 11 3  uniform   var=1.9e-08 dE(bulk-ring)=-3.6e-09 
+  1 0  single-q  var=9.7e-01 dE(bulk-ring)=-1.4e-05 q=0.1885 npeaks=3 nonharmonic=[]
+  1 1  single-q  var=9.8e-01 dE(bulk-ring)=+7.6e-05 q=0.1704 npeaks=3 nonharmonic=[]
+  1 2  uniform   var=1.2e-07 dE(bulk-ring)=+2.8e-08 
+  1 3  uniform   var=3.2e-08 dE(bulk-ring)=+2.3e-08 
+  2 0  single-q  var=9.7e-01 dE(bulk-ring)=+2.7e-05 q=0.1893 npeaks=2 nonharmonic=[]
+  2 1  uniform   var=2.2e-08 dE(bulk-ring)=-2.8e-09 
+  2 2  uniform   var=5.1e-08 dE(bulk-ring)=-2.0e-08 
+  2 3  uniform   var=4.4e-08 dE(bulk-ring)=+5.7e-09 
+  3 0  single-q  var=9.4e-01 dE(bulk-ring)=-8.9e-05 q=0.1736 npeaks=3 nonharmonic=[]
+  3 1  single-q  var=1.0e+00 dE(bulk-ring)=-1.5e-05 q=0.1901 npeaks=3 nonharmonic=[]
+  3 2  uniform   var=1.7e-08 dE(bulk-ring)=-2.6e-08 
+  3 3  uniform   var=3.8e-09 dE(bulk-ring)=+1.3e-08 
+  4 0  uniform   var=1.1e-07 dE(bulk-ring)=-5.1e-09 
+  4 1  single-q  var=9.7e-01 dE(bulk-ring)=-1.4e-05 q=0.1830 npeaks=2 nonharmonic=[]
+  4 2  uniform   var=7.3e-08 dE(bulk-ring)=+5.7e-09 
+  4 3  single-q  var=7.4e-01 dE(bulk-ring)=-4.6e-04 q=0.1728 npeaks=2 nonharmonic=[]
+  5 0  uniform   var=3.7e-08 dE(bulk-ring)=+6.7e-09 
+  5 1  uniform   var=4.3e-08 dE(bulk-ring)=+3.6e-08 
+  5 2  uniform   var=5.1e-08 dE(bulk-ring)=-4.0e-09 
+  5 3  single-q  var=9.7e-01 dE(bulk-ring)=-6.6e-06 q=0.1901 npeaks=3 nonharmonic=[]
+  6 0  single-q  var=9.4e-01 dE(bulk-ring)=-7.7e-06 q=0.1901 npeaks=2 nonharmonic=[]
+  6 1  single-q  var=9.9e-01 dE(bulk-ring)=+8.8e-05 q=0.1854 npeaks=3 nonharmonic=[]
+  6 2  uniform   var=1.8e-08 dE(bulk-ring)=-7.2e-09 
+  6 3  uniform   var=2.6e-07 dE(bulk-ring)=+1.0e-08 
+  7 0  uniform   var=5.6e-08 dE(bulk-ring)=-2.4e-09 
+  7 1  single-q  var=9.9e-01 dE(bulk-ring)=+4.8e-05 q=0.1916 npeaks=3 nonharmonic=[]
+  7 2  uniform   var=5.4e-08 dE(bulk-ring)=-3.9e-08 
+  7 3  single-q  var=9.6e-01 dE(bulk-ring)=-7.0e-05 q=0.1744 npeaks=3 nonharmonic=[]
+  8 0  uniform   var=3.2e-08 dE(bulk-ring)=+6.8e-09 
+  8 1  uniform   var=3.5e-08 dE(bulk-ring)=+4.6e-08 
+  8 2  uniform   var=1.1e-11 dE(bulk-ring)=-9.3e-10 
+  8 3  uniform   var=1.9e-08 dE(bulk-ring)=-6.3e-09 
+  9 0  single-q  var=9.9e-01 dE(bulk-ring)=+3.6e-05 q=0.1775 npeaks=3 nonharmonic=[]
+  9 1  single-q  var=9.4e-01 dE(bulk-ring)=+2.0e-05 q=0.1814 npeaks=2 nonharmonic=[]
+  9 2  uniform   var=2.3e-12 dE(bulk-ring)=-2.0e-10 
+  9 3  uniform   var=5.6e-08 dE(bulk-ring)=-2.3e-09 
+48 bonds {'uniform': 34, 'single-q': 14}
