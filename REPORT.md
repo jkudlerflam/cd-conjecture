@@ -1582,3 +1582,11 @@ The U(1) class, assembled. For the bond h = J_⊥(SˣSˣ + SʸSʸ) + D(SˣSʸ �
 | Δ > 1 | 10781 | C148 | proved, not refereed |
 
 So the bound is proved on all of the class except a strip −1 < Δ < −1 + δ next to the ferromagnet, for every δ > 0, and given one inequality on the shell (numerical margin 0.995 against 0.75) the whole class has the single constant C = 10781.
+
+### 9.107 The strip by comparing L with 2L (C150, Claude Opus agent, 2026-11-07; `codex/work_C150/`; not yet refereed)
+
+- Proved, unconditional on the strip (η₀ = 1/2, every L ≥ 2, 0 ≤ n ≤ L/2): L|F_{2L}(2n) − 2F_L(n)| ≤ (85.8 log(1/η) + 180) J, and |D| ≤ π sin(η) n/L for every Δ ∈ (−1, 0]. This is the best unconditional strip bound so far, still logarithmic.
+- Proved, conditional on (H_I): ∫ over S′ = {2 ≤ ηL r_Q < 2C_D(η)} of dy/(ηL σ_L) ≤ C_I, the bound is L·D ≤ (112.2 + 4.87 C_I) J. Any lower bound σ_L ≥ c_* r_Q on S′ with c_* > 0 implies (H_I) with C_I = 3.18/c_*, so C145's comparability with c_* = 3/4 gives 133. No derivative or variation bound is needed, and there is no log log.
+- Decomposition: with the quantum numbers matched exactly (t′_{2j∓1} = t_j ∓ 1/(4L)), the 2L trial is the refined grid z_L⁻¹(t′) on a central block and doubled roots outside. D = A + B with A a Richardson difference of midpoint rules (zero off the block) and B the self-consistency correction.
+- Key lemma, proved (checked by me): for any trial configuration with residual ρ in counting units, |E(true) − E(trial)| ≤ 2a Σ|ρ_k|, a = π sin η. Along the homotopy F(y(s)) = (1 − s)ρ, the Gaudin Jacobian is a symmetric M-matrix for every configuration with J·1 = 2πL a₁, so a₁ᵀJ⁻¹ = 1ᵀ/(2πL), and |e′| ≤ 2a a₁ cancels the 1/η amplification exactly.
+- Checks: 216 cases (1 + Δ from 0.1 to 1e-6, L to 2048, eight fillings). Δ = 0 is exact, the CFT ratio is 0.99997 at 1 + Δ = 1e-2, L = 2048, and the η → 0 log-gas limit agrees to 1e-3. Numerical margin for (H_I): λ_L/λ_Q ≥ 0.9993 on S′ (any positive c_* suffices), I₁ ≤ 0.97 against the 6.45 used.
