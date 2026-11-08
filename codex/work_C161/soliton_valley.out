@@ -1,0 +1,16 @@
+# console capture, soliton_valley.py functions (X = 20, N = 500), C161 2026-11-08
+# onset of the planar soliton (E_planar = 0) and lowest out-of-plane Hessian eigenvalue there (X = 12, N = 300)
+kappa mu  h_c(planar)  lam0(H_z) at h_c   (background stable needs kappa > -h_c)
+-0.3 0.0  0.6169   +0.4503   stable_bg=True
+-0.3 1.0  0.3162   +0.1108   stable_bg=True
+-0.3 1.5  0.1889   -0.0712   stable_bg=False
++0.0 2.0  0.0788   +0.0170   stable_bg=True
++0.0 2.3  0.0238   -0.1170   stable_bg=True
++0.3 2.3  0.0238   +0.1830   stable_bg=True
+# kappa = 0.05, mu = 2.3: full 3-component minimization from tilt +0.5 and -0.5
+# (E_t, max n_z, min n_z, Omega/(2 pi) seen from the pole opposite the tilt, min n_x)
+h=0.02 Epl=-0.02993 lam0=-0.0666 [(-0.04952, 0.549, 0.0, -1.443, -0.95), (-0.04952, -0.0, -0.549, 1.443, -0.95)]
+h=0.03 Epl=+0.04816 lam0=-0.0680 [(0.02848, 0.551, 0.0, -1.4454, -0.944), (0.02848, -0.0, -0.551, 1.4454, -0.944)]
+h=0.04 Epl=+0.12179 lam0=-0.0697 [(0.10169, 0.554, 0.0, -1.45, -0.937), (0.10169, -0.0, -0.554, 1.45, -0.937)]
+h=0.06 Epl=+0.25982 lam0=-0.0737 [(0.23789, 0.568, 0.0, -1.4642, -0.923), (0.23789, -0.0, -0.568, 1.4642, -0.923)]
+# Omega mod 4 pi = 2 pi (1 -+ 0.443): Haldane momentum P = Omega/2 = pi -+ 0.443 pi for the two tilts.

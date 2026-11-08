@@ -1,3 +1,5 @@
+Refereed by C161 (codex/work_C161/REFEREE.md, REPORT §9.119): the classical lemmas are sound, but the theorem covers only the K → ∞ corner of the C159 window, away from the twisted curve J = −R(φ) and from soliton onsets. Read the verdict below with that restriction.
+
 This run was done by a Claude Opus agent (2026-11-08), not by Codex. Astra was not used (out of credits).
 
 # C160 result: c <= 1 near the ferromagnetic Heisenberg point

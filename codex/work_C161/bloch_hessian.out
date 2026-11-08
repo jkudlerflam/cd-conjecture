@@ -1,0 +1,20 @@
+# console capture of: python3 bloch_hessian.py h kappa mu   (C161, 2026-11-08); eigenvalues of the discrete Hessian / dx
+h=0.015 kappa=0.05 mu=2.3: T=8.8500, e=-0.010447, max|n_z|=0.603, <n_z>=+0.437, max|D.n|=0.603
+residual gradient norm 4.4917489052892967e-07
+k*T/pi=0.000  lambda_0=+0.000000  lambda_1=+0.066141
+k*T/pi=0.125  lambda_0=+0.000427  lambda_1=+0.065639
+k*T/pi=0.250  lambda_0=+0.001678  lambda_1=+0.064174
+k*T/pi=0.375  lambda_0=+0.003668  lambda_1=+0.061864
+k*T/pi=0.500  lambda_0=+0.006236  lambda_1=+0.058919
+k*T/pi=0.625  lambda_0=+0.009125  lambda_1=+0.055655
+k*T/pi=0.750  lambda_0=+0.011932  lambda_1=+0.052529
+k*T/pi=0.875  lambda_0=+0.014075  lambda_1=+0.050174
+k*T/pi=1.000  lambda_0=+0.014896  lambda_1=+0.049278
+h=0.015 kappa=0.15 mu=2.3: T=9.4502, e=-0.006318, max|n_z|=0.000 (planar CSL)
+k*T/pi=0.000  lambda_0=-0.000000  lambda_1=+0.015161
+k*T/pi=0.125  lambda_0=+0.000177  lambda_1=+0.016319
+k*T/pi=1.000  lambda_0=+0.005416  lambda_1=+0.034801
+h=0.015 kappa=0.25 mu=2.3: T=9.4502, e=-0.006318, max|n_z|=0.000 (planar CSL)
+k*T/pi=0.000  lambda_0=-0.000000  lambda_1=+0.040746
+k*T/pi=0.125  lambda_0=+0.000177  lambda_1=+0.040549
+k*T/pi=1.000  lambda_0=+0.005415  lambda_1=+0.034801
