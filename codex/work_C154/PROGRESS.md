@@ -42,3 +42,4 @@ codex/work_C67, work_C68 (strata T, K, N; floating-region argument; operator cou
 - Local 1282 path pilot: L = 32 complete (Sbar smooth in lam), L = 64 only lam = 0 (c_mid 0.99) and 0.25 (c_mid 0.51, unexplained) before the machine load made local runs impractical.
 - PROOF.md sections 1 to 8 and RESULT.md written.
 - Pending at close: 17594697 (running, DMRG L = 96, 144), 17594764 and 17594765 (queued). Outputs in /scratch/lustre/jkudlerflam/c154/. C144's 17580192 and 17580432 still running, no YX/ZY outputs yet.
+- 2026-11-08: L = 96 DMRG collected (PROOF 9). Job 17594764 started; 17594765 still queued; L = 144 still running.
