@@ -1,0 +1,36 @@
+/Users/jkudlerflam/IAS Dropbox/Jonah Kudler-Flam/Claude/Projects/Modular c-Theorem/notes/cd_conjecture/codex/work_C149/continuum.py:39: RuntimeWarning: overflow encountered in square
+  return -np.sin(self.eta)**2/(2*(np.sinh(x)**2+np.cos(self.eta/2)**2))
+/Users/jkudlerflam/IAS Dropbox/Jonah Kudler-Flam/Claude/Projects/Modular c-Theorem/notes/cd_conjecture/codex/work_C149/continuum.py:39: RuntimeWarning: overflow encountered in multiply
+  return -np.sin(self.eta)**2/(2*(np.sinh(x)**2+np.cos(self.eta/2)**2))
+multiprocessing.pool.RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/multiprocessing/pool.py", line 125, in worker
+    result = (True, func(*args, **kwds))
+                    ^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/multiprocessing/pool.py", line 48, in mapstar
+    return list(map(*args))
+           ^^^^^^^^^^^^^^^^
+  File "/Users/jkudlerflam/IAS Dropbox/Jonah Kudler-Flam/Claude/Projects/Modular c-Theorem/notes/cd_conjecture/codex/work_C149/scan_phi.py", line 12, in case
+    R,P=continuum_trial(eta,L,n,N=700)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jkudlerflam/IAS Dropbox/Jonah Kudler-Flam/Claude/Projects/Modular c-Theorem/notes/cd_conjecture/codex/work_C149/trial.py", line 41, in continuum_trial
+    R = bulk_at(ker, nu, N=N)
+        ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jkudlerflam/IAS Dropbox/Jonah Kudler-Flam/Claude/Projects/Modular c-Theorem/notes/cd_conjecture/codex/work_C149/continuum.py", line 199, in bulk_at
+    raise RuntimeError('bulk_at did not converge')
+RuntimeError: bulk_at did not converge
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/jkudlerflam/IAS Dropbox/Jonah Kudler-Flam/Claude/Projects/Modular c-Theorem/notes/cd_conjecture/codex/work_C149/scan_phi.py", line 31, in <module>
+    res=p.map(case,jobs)
+        ^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/multiprocessing/pool.py", line 367, in map
+    return self._map_async(func, iterable, mapstar, chunksize).get()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/multiprocessing/pool.py", line 774, in get
+    raise self._value
+RuntimeError: bulk_at did not converge
