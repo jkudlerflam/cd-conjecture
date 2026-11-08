@@ -1,0 +1,1 @@
+task 0 restart 0 rand crit_min 0.053 c_obj@min 0.001 labels [] ball {'0.03': {'n': 12, 'frac_gapless': 0.25, 'max_c_obj': 0.0010091123797443715}, '0.08': {'n': 12, 'frac_gapless': 0.08333333333333333, 'max_c_obj': 0.3736514370961831}} slide c_obj 0.001 crit 0.053 278s

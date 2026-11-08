@@ -1,0 +1,5 @@
+YX       d=0.45 ED12/16 S 1.02 cas 2.03 crit 0.05 ndeg [1, 1] | ED16/20 S 1.01 cas 0.28 crit 0.02 | L64:0.96/0.93(tr5e-10,dE4e-11) L128:0.95/0.94(tr8e-09,dE1e-09) two 0.95 two128/256 nan ['T']
+ZY       d=0.30 ED12/16 S 1.04 cas 2.08 crit 0.08 ndeg [1, 1] | ED16/20 S 1.02 cas 0.31 crit 0.05 | L64:1.00/0.97(tr7e-10,dE3e-12) L128:0.98/0.97(tr1e-08,dE8e-09) two 0.97 two128/256 nan ['T']
+ZY       d=0.45 ED12/16 S 1.02 cas 2.03 crit 0.05 ndeg [1, 1] | ED16/20 S 1.01 cas 0.28 crit 0.02 | L64:0.96/0.93(tr5e-10,dE5e-11) L128:0.95/0.94(tr8e-09,dE-4e-10) two 0.95 two128/256 nan ['T']
+YX+ZY    d=0.30 ED12/16 S 1.03 cas 2.05 crit 0.07 ndeg [1, 1] | ED16/20 S 1.01 cas 0.29 crit 0.04 | L64:0.95/0.92(tr7e-10,dE2e-10) L128:0.95/0.94(tr9e-09,dE1e-09) two 0.95 two128/256 nan ['T']
+YX+ZY    d=0.45 ED12/16 S 1.02 cas 2.02 crit 0.06 ndeg [1, 1] | ED16/20 S 1.00 cas 0.27 crit 0.01 | L64:0.92/0.90(tr7e-10,dE1e-11) L128:0.93/0.92(tr1e-08,dE2e-08) two 0.93 two128/256 nan ['T']

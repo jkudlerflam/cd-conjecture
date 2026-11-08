@@ -1,0 +1,11 @@
+B=0.5 ED(12, 16): c_S 1.249 c_fit 2.903 c_cas 63.294 crit 0.579 gap1 [0.00935, 0.00174] ndeg [1, 1] m0 [0, 8] (8s)
+B=0.4 ED(12, 16): c_S 1.096 c_fit 2.939 c_cas 0.000 crit 0.180 gap1 [0.00533, 0.00286] ndeg [1, 1] m0 [0, 8] (8s)
+B=0.8 ED(12, 16): c_S 0.791 c_fit 2.577 c_cas 14.362 crit 5.342 gap1 [0.00182, 0.00635] ndeg [1, 1] m0 [6, 0] (10s)
+B=0.3 ED(12, 16): c_S 0.975 c_fit 2.953 c_cas 0.000 crit 1.795 gap1 [0.00162, 0.00203] ndeg [1, 1] m0 [0, 8] (10s)
+B=0.2 ED(12, 16): c_S 0.896 c_fit 2.959 c_cas 0.000 crit 2.561 gap1 [0.00025, 0.0004] ndeg [1, 1] m0 [0, 8] (15s)
+B=0.1 ED(12, 16): c_S 7.132 c_fit 2.962 c_cas 0.000 crit 0.563 gap1 [1e-05, 1e-05] ndeg [2, 2] m0 [6, 8] (19s)
+B=0.5 ED(16, 20): c_S 2.915 c_fit 2.738 c_cas 0.000 crit 1.188 gap1 [0.00174, 0.00182] ndeg [1, 1] m0 [8, 10] (357s)
+B=0.8 ED(16, 20): c_S 2.123 c_fit 2.461 c_cas 0.000 crit 2.138 gap1 [0.00635, 0.0035] ndeg [1, 1] m0 [0, 0] (359s)
+B=0.4 ED(16, 20): c_S 0.926 c_fit 2.668 c_cas 0.000 crit 0.418 gap1 [0.00286, 0.00068] ndeg [1, 1] m0 [8, 0] (409s)
+B=0.3 ED(16, 20): c_S 0.974 c_fit 2.686 c_cas 0.000 crit 0.255 gap1 [0.00203, 0.00127] ndeg [1, 1] m0 [8, 0] (528s)
+  warnings.warn('resource_tracker: There appear to be %d '
