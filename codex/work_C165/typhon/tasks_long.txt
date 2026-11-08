@@ -1,0 +1,22 @@
+python3 dmrgq.py 'fam:a=0.9,Dz=1.15,g=0.3,hx=0.2,hz=0.05,Dx=0.03' 128 128 dm/Q2_Dz1.15_L128.json
+python3 dmrgq.py 'fam:a=0.9,Dz=1.2,g=0.3,hx=0.2,hz=0.05,Dx=0.03' 128 128 dm/Q2_Dz1.2_L128.json
+python3 dmrgq.py 'fam:a=0.9,Dz=1.25,g=0.3,hx=0.2,hz=0.05,Dx=0.03' 128 128 dm/Q2_Dz1.25_L128.json
+python3 dmrgq.py 'fam:a=0.9,Dz=1.3,g=0.3,hx=0.2,hz=0.05,Dx=0.03' 128 128 dm/Q2_Dz1.3_L128.json
+python3 dmrgq.py 'fam:nfloat=dict(eta=0.1,b=1.05)' 128 128 dm/nfloat_L128.json
+python3 dmrgq.py xx 128 128 dm/xx_L128.json
+python3 dmrgq.py 'fam:a=0.9,Dz=1.15,g=0.3,hx=0.2,hz=0.05,Dx=0.03' 256 160 dm/Q2_Dz1.15_L256.json
+python3 dmrgq.py 'fam:a=0.9,Dz=1.2,g=0.3,hx=0.2,hz=0.05,Dx=0.03' 256 160 dm/Q2_Dz1.2_L256.json
+python3 dmrgq.py 'fam:a=0.9,Dz=1.25,g=0.3,hx=0.2,hz=0.05,Dx=0.03' 256 160 dm/Q2_Dz1.25_L256.json
+python3 dmrgq.py 'fam:a=0.9,Dz=1.3,g=0.3,hx=0.2,hz=0.05,Dx=0.03' 256 160 dm/Q2_Dz1.3_L256.json
+python3 dmrgq.py 'fam:nfloat=dict(eta=0.1,b=1.05)' 256 160 dm/nfloat_L256.json
+python3 dmrgq.py xx 256 160 dm/xx_L256.json
+python3 dmrgq.py tfi 128 64 dm/tfi_L128.json
+python3 dmrgq.py isxx 64 128 dm/isxx_L64.json
+python3 dmrgq.py isxx 128 128 dm/isxx_L128.json
+python3 fes_c153.py isxx --chis 8 12 16 24 32 48 64 96 128 160 192 256 --outdir fes_cal
+python3 fesx.py xx --n 2 --chis 8 12 16 24 32 48 64 96 128 160 192 256 --out fes_cal/xx.json
+python3 fesx.py tfi --n 2 --chis 8 12 16 24 32 48 64 96 128 160 --out fes_cal/tfi.json
+python3 runq.py "nfloat=dict(eta=0.1,b=1.05)" fes/nfloat.json 8 12 16 24 32 48 64 96 128 160 192 256 --n 2 --npz npz/nfloat.npz
+python3 runq.py "a=0.9,Dz=1.2,g=0.3,hx=0.2,hz=0.05,Dx=0.03" fes/Q2big_Dz1.2.json 8 12 16 24 32 48 64 96 128 160 192 256 --n 2 --npz npz/Q2big_Dz1.2.npz
+python3 runq.py "a=0.9,Dz=1.25,g=0.3,hx=0.2,hz=0.05,Dx=0.03" fes/Q2big_Dz1.25.json 8 12 16 24 32 48 64 96 128 160 192 256 --n 2 --npz npz/Q2big_Dz1.25.npz
+python3 runq.py "a=0.9,Dz=1.3,g=0.3,hx=0.2,hz=0.05,Dx=0.03" fes/Q2big_Dz1.3.json 8 12 16 24 32 48 64 96 128 160 192 256 --n 2 --npz npz/Q2big_Dz1.3.npz

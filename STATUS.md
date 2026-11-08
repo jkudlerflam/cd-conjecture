@@ -20,7 +20,7 @@ At d = 2 on the U(1) class (XXZ plus DM along z plus field) this is proved with 
 
 ## Is c ≤ 1 at d = 2?
 
-No nearest-neighbour qubit chain with c > 1 has been found, in about 103,000 sampled chains, targeted searches, or the literature (REPORT §9.110 to §9.123, refereed only where noted).
+No nearest-neighbour qubit chain with c > 1 has been found, in about 103,000 sampled chains, targeted searches, or the literature (REPORT §9.110 to §9.124, refereed only where noted).
 
 - c ≤ 1 is derived at the physics standard on every symmetric class: U(1), free fermion, XYZ, cyclic, parity, staggered charge, and the singular strata. On the time-reversal strata it holds given one assumption.
 - The XZ point, the only bond with a second decoupled gapless species, gives no c > 1. Its induced interaction has the wrong sign for the c = 3/2 phase.
@@ -29,7 +29,7 @@ No nearest-neighbour qubit chain with c > 1 has been found, in about 103,000 sam
 
 Open, in order of importance:
 1. Generic bonds with no symmetry, and attractive liquids whose U(1)-breaking is as large as the exchange, far from every controlled region (adversarial Typhon search running).
-2. Two specific mechanisms for a second gapless sector: a staggered Ising transition inside an incommensurate liquid (construction in progress), and accidental two-valley soliton onsets (local search null, large search pending).
+2. Two specific mechanisms for a second gapless sector at strong U(1)-breaking: a staggered Ising transition inside an incommensurate liquid (exists classically, but at spin 1/2 the two orders are one SU(2)₁ field and it fails to all orders in weak coupling), and accidental two-valley soliton onsets (local search null). Large searches for both are pending.
 3. Two points near XZ whose c readings still rise at L = 128 (up to 1.27), probably the slow XZ crossover; L = 256 runs are pending.
 
 ## Small d other than 2
