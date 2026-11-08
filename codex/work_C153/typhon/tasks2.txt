@@ -1,0 +1,45 @@
+fes.py xx --chis 8 12 16 24 32 48 64 96 128 --outdir fes_data
+fes.py isxx --chis 8 12 16 24 32 48 64 96 128 --outdir fes_data
+fes.py stag --u 1.79977564 --b 3 --chis 8 12 16 24 32 48 64 96 128 --outdir fes_data
+fes.py stag --u 1.79477564 --b 3 --chis 8 12 16 24 32 48 64 96 128 --outdir fes_data
+fes.py stag --u 1.78777564 --b 3 --chis 8 12 16 24 32 48 64 96 128 --outdir fes_data
+fes.py stag --u 1.77277564 --b 3 --chis 8 12 16 24 32 48 64 96 128 --outdir fes_data
+fes.py stag --u 3.16177766 --b 6 --chis 8 12 16 24 32 48 64 96 128 --outdir fes_data
+fes.py stag --u 3.16127766 --b 6 --chis 8 12 16 24 32 48 64 96 128 --outdir fes_data
+fes.py stag --u 3.16027766 --b 6 --chis 8 12 16 24 32 48 64 96 128 --outdir fes_data
+fes.py stag --u 3.15927766 --b 6 --chis 8 12 16 24 32 48 64 96 128 --outdir fes_data
+fes.py stag --u 3.15727766 --b 6 --chis 8 12 16 24 32 48 64 96 128 --outdir fes_data
+fes.py stag --u 4.12290563 --b 8 --chis 8 12 16 24 32 48 64 96 128 --outdir fes_data
+fes.py stag --u 4.12260563 --b 8 --chis 8 12 16 24 32 48 64 96 128 --outdir fes_data
+fes.py stag --u 4.12210563 --b 8 --chis 8 12 16 24 32 48 64 96 128 --outdir fes_data
+fes.py stag --u 4.12160563 --b 8 --chis 8 12 16 24 32 48 64 96 128 --outdir fes_data
+fes.py stag --u 4.12060563 --b 8 --chis 8 12 16 24 32 48 64 96 128 --outdir fes_data
+fes.py stag --u 6.08266253 --b 12 --chis 8 12 16 24 32 48 64 96 128 --outdir fes_data
+fes.py stag --u 6.08246253 --b 12 --chis 8 12 16 24 32 48 64 96 128 --outdir fes_data
+fes.py stag --u 6.08216253 --b 12 --chis 8 12 16 24 32 48 64 96 128 --outdir fes_data
+drun.py --u 1.79277564 --b 3 --L 128 --chis 64 128 192 --nexc 1 --qs 0 1 --outdir strip_data
+drun.py --u 1.79277564 --b 3 --L 64 --chis 64 128 --nexc 1 --qs 0 1 --outdir strip_data
+drun.py --u 3.16127766 --b 6 --L 128 --chis 64 128 192 --nexc 2 --qs 0 1 --outdir strip_data
+drun.py --u 3.16127766 --b 6 --L 64 --chis 64 128 --nexc 2 --qs 0 1 --outdir strip_data
+drun.py --u 3.16027766 --b 6 --L 128 --chis 64 128 192 --nexc 2 --qs 0 1 --outdir strip_data
+drun.py --u 3.16027766 --b 6 --L 64 --chis 64 128 --nexc 2 --qs 0 1 --outdir strip_data
+drun.py --u 3.15927766 --b 6 --L 128 --chis 64 128 192 --nexc 2 --qs 0 1 --outdir strip_data
+drun.py --u 3.15927766 --b 6 --L 64 --chis 64 128 --nexc 2 --qs 0 1 --outdir strip_data
+drun.py --u 4.12260563 --b 8 --L 128 --chis 64 128 192 --nexc 2 --qs 0 1 --outdir strip_data
+drun.py --u 4.12260563 --b 8 --L 64 --chis 64 128 --nexc 2 --qs 0 1 --outdir strip_data
+drun.py --u 4.12210563 --b 8 --L 128 --chis 64 128 192 --nexc 2 --qs 0 1 --outdir strip_data
+drun.py --u 4.12210563 --b 8 --L 64 --chis 64 128 --nexc 2 --qs 0 1 --outdir strip_data
+drun.py --u 4.12160563 --b 8 --L 128 --chis 64 128 192 --nexc 2 --qs 0 1 --outdir strip_data
+drun.py --u 4.12160563 --b 8 --L 64 --chis 64 128 --nexc 2 --qs 0 1 --outdir strip_data
+drun.py --u 0.40000000 --b 0.25 --L 64 --chis 48 96 --nexc 0 --qs 0 1 --outdir grid_data
+drun.py --u 0.75778222 --b 0.25 --L 64 --chis 48 96 --nexc 0 --qs 0 1 --outdir grid_data
+drun.py --u 0.85778222 --b 0.25 --L 64 --chis 48 96 --nexc 0 --qs 0 1 --outdir grid_data
+drun.py --u 0.92778222 --b 0.25 --L 64 --chis 48 96 --nexc 0 --qs 0 1 --outdir grid_data
+drun.py --u 0.96778222 --b 0.25 --L 64 --chis 48 96 --nexc 0 --qs 0 1 --outdir grid_data
+drun.py --u 0.99778222 --b 0.25 --L 64 --chis 48 96 --nexc 0 --qs 0 1 --outdir grid_data
+drun.py --u 0.00000000 --b 6 --L 64 --chis 48 96 --nexc 0 --qs 0 1 --outdir grid_data
+drun.py --u 2.56227766 --b 6 --L 64 --chis 48 96 --nexc 0 --qs 0 1 --outdir grid_data
+drun.py --u 2.91227766 --b 6 --L 64 --chis 48 96 --nexc 0 --qs 0 1 --outdir grid_data
+drun.py --u 3.08227766 --b 6 --L 64 --chis 48 96 --nexc 0 --qs 0 1 --outdir grid_data
+drun.py --u 3.12227766 --b 6 --L 64 --chis 48 96 --nexc 0 --qs 0 1 --outdir grid_data
+drun.py --u 3.15227766 --b 6 --L 64 --chis 48 96 --nexc 0 --qs 0 1 --outdir grid_data

@@ -1,4 +1,4 @@
-This run was done by a Claude Opus agent (2026-11-07), not by Codex.
+This run was done by Claude Opus agents (2026-11-07), not by Codex. It was interrupted and resumed by a second Claude Opus agent, which added sections 5.1, 7 and 8 and the numbers in 6.1.
 
 # C153 derivations: the staggered-charge box
 
@@ -150,7 +150,7 @@ lswt.py minimizes the classical energy of (0.2) for unit vectors on two sublatti
 - canted in-plane antiferromagnet with a staggered z moment for b/2 - 1 < u < r;
 - z ferromagnet (original Neel) for u > r: stable iff (u - b/2)(u + b/2) > 1, i.e. u > r. The classical boundary coincides with the exact one, as expected for a factorization line.
 
-In the canted phase the spectrum has one Goldstone branch with velocity sqrt(e''_cl D_cl), equal to v_0 of (3.11) near u = r (b = 1, r - u = 0.01: 0.291 against 0.2906), and one optical branch whose minimum is 4.0 at every canted point computed (b = 0 to 8, lswt.out). Classically there is a single soft mode. The quantum lower edge of the liquid is the BKT line, far above the classical edge b/2 - 1 (at b = 0, 1/sqrt(2) against -1), because vortices of the in-plane angle are where cos(2 phi) comes from and spin waves do not see them.
+In the canted phase the spectrum has one Goldstone branch with velocity sqrt(e''_cl D_cl), equal to v_0 of (3.11) near u = r (b = 1, r - u = 0.01: 0.291 against 0.2906), and one optical branch whose minimum is 4.0 at every canted point computed (b = 0 to 8, lswt.out). [derived, resumed run] The value 4.0 is not an independent mode. At b = 0 the two-site cell folds the single easy-plane ferromagnetic magnon band omega(k) = 4 sqrt((1 - cos k)(1 - u cos k)) (per-site momentum k, rotated frame mapped to a ferromagnet by a pi rotation about z on odd sites), and the folded branch has its minimum at the zone boundary k = pi/2, where omega = 4 for every u. At b > 0 the staggered field only opens a splitting at the fold, and lswt.out shows the optical minimum pinned at 4.0. Classically there is a single soft mode. The quantum lower edge of the liquid is the BKT line, far above the classical edge b/2 - 1 (at b = 0, 1/sqrt(2) against -1), because vortices of the in-plane angle are where cos(2 phi) comes from and spin waves do not see them.
 
 ## 5. Large b: two species and their conversion [derived at second order; heuristic beyond]
 
@@ -164,7 +164,42 @@ In the canted phase the spectrum has one Goldstone branch with velocity sqrt(e''
 
 [heuristic] Why no second mode at large b. Write the low-energy theory as two dilute bosonic species with phases theta_e, theta_o and densities rho_e, rho_o. The conversion term lambda (psi_e^dagger psi_o^dagger + h.c.) depends on theta_+ = theta_e + theta_o and pins it once relevant, which gaps the total-density (+) mode and leaves the Q-carrying relative mode theta_- gapless. Its scaling dimension is (1/4)(1/K_e + 1/K_o) in a decoupled two-component bosonization, at most of order 1 for dilute species with K of order 1 or larger (it is smaller still near the ferromagnetic threshold, where K_e, K_o are large). It would be irrelevant only for K_+ below 1/4, which needs repulsion much stronger than hard core between the species. A useful alternative picture: in one dimension the hard-core e-o repulsion makes the species mutually impenetrable, so the total density behaves like a fermionized Tonks gas (K_c near 1) and the species sequence like a spin chain carrying Q; conversion is then a pairing operator of dimension about 1/(2 K_c) in the charge sector times an order-one spin factor, relevant. Either way the (+) sector is gapped and c = 1. The gap of the (+) sector and the liquid scale both come from the same order (lambda p and p^3/M, both of order b^{-4} with lambda of order b^{-2}), so there is no parametric separation that could create a long c = 2 crossover; the crossover length is a few interparticle spacings, of order b sites.
 
+[derived, resumed run] Correction to the hopping scale above. The intermediate state of the hop j -> j + 2 has particles on j, j + 1, j + 2, so two occupied bonds and energy 2V + 2(2b - 4u), and the amplitude is t_2 = delta^2/(2V) = 1/(2u), about 1/b. The energy unit delta^2/V = 1/u of C15 is twice the hop amplitude. None of the scalings below depend on this factor.
+
 The second-order picture also explains why the liquid strip closes faster than 1/b: at second order (lambda = 0) the Q = 0 sector is the empty vacuum for m < 2 and phase separates into the one-sublattice (Neel) states for m > 2, so the liquid exists only through the conversion and the fine structure of the threshold.
+
+### 5.1 The large-b scaling limit [derived for the scale counting; heuristic for the collapse; numerical checks]
+
+Every coupling of the dilute two-species problem is of the same order b^{-3} per particle once r - u is of order b^{-3}. Per particle, with p = s/(1 + s), s = r - b/2 = 1/(r + b/2) (exact, the root of s + 1/s = 2r below one), so p = 1/b + O(b^{-2}):
+
+- kinetic energy p^2/(2 M_site) with M_site = r/4 (the exact one-defect branch E = 2 q^2/r in per-site momentum q): about 4 b^{-3};
+- conversion lambda p with lambda of order delta^3/V^2, about 2 b^{-2}: of order b^{-3};
+- detuning: the charge energy per site 4 r (r - u) m^2 with m of order p, divided by the particle density p, is 4 r (r - u) p, about 2 (r - u).
+
+Lengths are measured in units of the spacing 1/p, about b. So when b -> infinity at fixed
+
+    g := b^3 (r - u),                                                                          (5.2)
+
+all three energies are b^{-3} times functions of g, the velocity scales as b^{-2} V(g), and K, c and every dimensionless ratio are functions of g alone, up to corrections in 1/b. The ratio interaction over kinetic energy is g (up to an order-one factor), which reproduces (5.1). [derived, scale counting with the exact p, M_site and e''] Whether the lattice problem really collapses onto one continuum problem requires that no other process enter at order b^{-3}. Fourth-order one-body shifts are of order delta^4/V^3, also b^{-3}, but they renormalize the single-particle energy, whose zero is fixed exactly by the factorization line u = r. Second-order two-body terms of range at most three are of order b^{-1} times a contact probability. At u = r they are exactly compensated, because the Q = 0 kernel state is the projected product measure (3.1) with no e-e, o-o or e-o correlations at all (it is the ferromagnetic point of each sublattice chain, as C15's threshold says). So the collapse is [heuristic]: plausible, and consistent with the data below, but not derived.
+
+The physical picture this gives is not the impenetrable Tonks gas used in the alternative picture of section 5. Near u = r both species are condensed (each sublattice chain sits next to its ferromagnetic point, K_e and K_o are large), and the conversion vertex cos(theta_+) has dimension (1/4)(1/K_e + 1/K_o), far below 2. It locks theta_+ at energies of order b^{-3}, the same order as everything else, which is why the total-density mode is gapped but not parametrically so. [heuristic]
+
+Data in the scaling variable [numerical]:
+
+| b | r - u_BKT estimate | g_c = b^3 (r - u_BKT) | source |
+| ---: | ---: | ---: | --- |
+| 0.5 | about 0.20 (u near 0.83) | about 0.025 | contrib/d2_staggered |
+| 1 | about 0.12 (u near 1.0) | about 0.12 | contrib/d2_staggered; ring K(L = 20) = 2 gives r - u < 0.138 |
+| 1.5 | below 0.087 | below 0.29 | ring K(L = 20) = 2 crossing (kscan.json) |
+| 2 | about 0.050 | about 0.40 | contrib/d2_staggered; crossing gives below 0.056 (0.45) |
+| 3 | below 0.026 | below 0.69 | ring crossing |
+| 4 | about 0.010 | about 0.64 | contrib/d2_staggered |
+| 6 | between 0.003 and 0.008 | between 0.65 and 1.7 | local FES, chi <= 32 (section 7.3) |
+| 8 | between 0.0015 and 0.004 | between 0.77 and 2.0 | local FES, chi <= 32 |
+
+The ring crossings K(L) = 2 move toward u = r with L (for example 1.7760, 1.7767, 1.7772 at b = 3 for L = 12, 16, 20), as expected on the liquid side of a BKT point where K(L) decreases to 2 only logarithmically. So each crossing is an upper bound on r - u_BKT. g_c grows with b for b <= 2 and appears to saturate at a value between 0.6 and 1 for b >= 4, consistent with (5.2). The velocity at fixed g also collapses roughly: v b^2 at L = 20 is 3.67 at (b, g) = (3, 0.54), 3.80 at (6, 0.43) and 4.26 at (8, 0.51) (spec_ed_b6_b8.out, kscan.json), while at b <= 2 the scaling regime is not reached (v b^2 = 2.07 at (2, 0.24) against 2.47 at (3, 0.27)).
+
+Consequence for the question of this run: the whole large-b corner of the box is one universal problem in g in (0, g_c), and the numerics at b = 4 to 12 probe it directly. A c > 1 window at large b would have to appear at fixed g for all large b, not only at one b.
 
 ## 6. The central charge in the box
 
@@ -174,7 +209,7 @@ Combining sections 1 to 5, for b > 0 and -1 < u < r(b):
 
 - P, the polarized phase, -1 < u < u_BKT(b): unique gapped ground state, adiabatically connected to the polarized product state at large b and to the pinned XXZ boson at small b (the two descriptions are the same state, the rotated-frame Neel order along the field). c = 0. Contains the exact free line u = 0 (item 4 of section 1) and borders the Suzuki-Fisher region u <= -1 (item 3). [derived; proved on u = 0]
 - G, the liquid, u_BKT(b) < u < r(b): one compact boson for the staggered charge, ground state in Q = 0, K in (2, infinity), K -> infinity and v -> 0 as u -> r, given by (3.10) near the line. c = 1. [derived]
-- The BKT line u = u_BKT(b): c = 1 with K = 2 and a marginal cos(2 phi) (logarithmic corrections). It starts at u = 1/sqrt(2) at b = 0 with slope kappa of about 0.25 and approaches u = r as r - u_BKT ~ C b^{-3} at large b. [derived at small b; heuristic and numerical at large b]
+- The BKT line u = u_BKT(b): c = 1 with K = 2 and a marginal cos(2 phi) (logarithmic corrections). It starts at u = 1/sqrt(2) at b = 0 with slope kappa of about 0.25 and approaches u = r as r - u_BKT = g_c b^{-3} at large b, with g_c between about 0.6 and 1 (table of section 5.1). [derived at small b; heuristic and numerical at large b]
 - The line u = r: L + 1 ground states, z = 2. Not a CFT. [proved]
 - N, u > r (outside the box): Neel, gapped. [proved]
 
@@ -192,8 +227,70 @@ The central question is whether a second sector, neutral or charged, can become 
 
 (e) [derived] Symmetry. A neutral Ising sector would need a Z2 order parameter outside the boson. The discrete symmetries are G, reflection and complex conjugation. Their order parameters built from the boson (dimerization sin(2 phi), Neel cos(2 phi), cos(4 phi)) are vertex operators of dimension K or 4K > 2 in G, so none orders and none produces an Ising line. An independent Ising line would have to come from the optical/(+) sector closing its gap on a codimension-one curve inside G.
 
-(f) [numerical, sections 7 and 8] No such curve was found: ring ED neutral spectra show only the boson tower, and DMRG/FES (contrib/d2_staggered, b <= 4) give c between 0.95 and 1.05 wherever critical. Section 7 adds b = 6, 8 and the grid.
+(f) [numerical, section 7] No such curve was found for b <= 4: ring ED neutral spectra show only the boson tower at b <= 2, and DMRG/FES (contrib/d2_staggered, b <= 4) give c between 0.95 and 1.05 wherever critical. At b = 6 and 8 the ring sizes L <= 20 are inside the crossover (fewer than three particles per species), and the infinite-size FES at chi <= 32 gives c near 1 where it is gapless (section 7.3). The decisive large-b numbers are in Typhon job 17596442 (section 7.4).
 
-Conclusion: c <= 1 at every gapless point of the box, at the theoretical-physics standard in the three controlled corners (small b, u -> r, large b at the heuristic level) and numerically in between.
+Conclusion: c <= 1 at every gapless point of the box, at the theoretical-physics standard in two controlled corners (small b at fixed u; u -> r at fixed b), heuristically in the large-b scaling regime of section 5.1, and numerically in between (b <= 4 to L = 256 and chi = 256, b = 6, 8 so far only at small chi and L <= 20).
 
-(Sections 7 and 8, numerics, follow.)
+
+## 7. Numerics
+
+### 7.1 Calibration [numerical]
+
+ed.py (even rings, Sz sectors, twisted boundary): K from the twist curvature and the charge gap, K = pi sqrt(D_s/e''), v = sqrt(D_s e''). On XXZ (b = 0) it gives K = 1.0010, 1.5008, 3.4834 at u = 0, 0.5, 0.9 for L = 20 (exact 1, 1.5, 3.4827) and v within 1 percent of the Bethe-ansatz value (ed_calib.out). spec_ed.py adds momentum resolution through G and the ring c from E0(L)/L; at XXZ u = 0.5 it gives c(12, 16) = 1.001, c(16, 20) = 1.000 and at L = 20 the oscillator doublet at x = 1.007 and the vertex pair at x = 1.486 (exact K = 1.5), in the expected momenta (spec_ed_12_16_20.out). The DMRG (udmrg.py) and FES (vumps.py) codes are the ones validated in contrib/d2_staggered against XX, XXZ, critical Ising (c = 1/2) and an Ising x XX control (c = 3/2 read as 1.50 by FES and 1.49 by open chains).
+
+### 7.2 Ring ED across the box (kscan.json, 120 points, b = 0.25 to 3, L = 12, 16, 20) [numerical]
+
+- For u <= 0.6 at every b, and for r - u >= 0.1 at b >= 1.5, K(L) decreases with L at fixed (u, b), for example K = 0.71, 0.57, 0.44 at (0, 0.25) and 0.42, 0.26, 0.16 at (1.70, 3). This is the gapped polarized phase P (K(L) -> 0).
+- Close to u = r, K(L) is L-independent to three digits at b <= 1 and slowly rising at b = 1.5 to 3, with K > 2 and growing like (r - u)^{-1/2}: at b = 0.25, K = 2.08, 3.42, 6.32, 10.99 at r - u = 0.25, 0.1, 0.03, 0.01. Section 3.4 predicts pi sqrt(D_s/(8 r (r - u))) = 11.06 at r - u = 0.01 with D_s near 1 at b = 0.25. This is the liquid G.
+- The crossing K(L) = 2 (BKT bounds) is tabulated in section 5.1.
+- Between P and G there is no third behaviour, such as a K(L) that rises above the trend and then falls, at any of the 120 points.
+
+### 7.3 Large b, local runs [numerical]
+
+Ring spectra at b = 6, r - u = 0.002 (g = 0.43) and b = 8, r - u = 0.001 (g = 0.51), L = 12, 16, 20 (spec_ed_b6_b8.out). In units x = (E - E0)/(2 pi v/L), with G-momentum in units of 2 pi/L in brackets:
+
+| (b, g) | L | K | v | lowest Sz = 0 levels x | Sz = 1, x and 1/(4K) |
+| --- | ---: | ---: | ---: | --- | --- |
+| (6, 0.43) | 12 | 3.39 | 0.102 | 2.62[0], 3.13[+-5], 6.09[+-2] | 0.074, 0.074 |
+| | 16 | 3.52 | 0.106 | 2.33[0], 2.45[+-7], 4.97[+-2] | 0.071, 0.071 |
+| | 20 | 3.66 | 0.105 | 2.08[+-9], 2.24[0], 4.24[+-2] | 0.068, 0.068 |
+| (8, 0.51) | 12 | 3.10 | 0.060 | 3.01[0], 4.06[+-5], 7.98[0] | 0.081, 0.081 |
+| | 16 | 3.18 | 0.065 | 2.44[0], 3.01[+-7], 5.87[0] | 0.079, 0.079 |
+| | 20 | 3.26 | 0.067 | 2.21[0], 2.45[+-9], 4.83[0] | 0.077, 0.077 |
+
+The charge level x = 1/(4K) is exact by construction, and the oscillator doublet (momentum +-(L/2 - 1), the folded +-2 pi/L) is still at x = 2 to 3 instead of 1, with c(16, 20) = 0.61 (b = 6) and 0.51 (b = 8). These rings hold fewer than three particles of each species (p of about 1/b), so they are inside the z = 2 crossover from the line u = r, as the sizes of section 3.3 already showed at b = 8. A zero-momentum neutral level sits next to the doublet. Its ratio to the doublet is 0.84, 0.95, 1.08 (b = 6) and 0.74, 0.81, 0.90 (b = 8) for L = 12, 16, 20, rising with L. In one boson that level becomes the x = 2 descendant (ratio 2); if it is the gapped total-density mode of section 5, its x grows like L. A second critical sector would make the ratio converge to a constant below 2 instead. L <= 20 cannot separate these, and at u = r the analogous zero-momentum level is a two-defect scattering state whose ratio to the one-defect level approaches 2 with L (1.67, 1.93 at b = 2, L = 12, 16, boundary_spec.out). [heuristic] So the level is read as the two-defect continuum of the crossover, not as an extra mode, pending the strips of 7.4.
+
+Infinite-size FES (fes.py, damped VUMPS, two-site cell, chi = 8 to 24 or 32, analysed with fesfit.py, which follows C158's estimators):
+
+| (b, r - u) | g | S, xi at largest chi | c_ls3 / c_ls4 | c_kappa | reading |
+| --- | ---: | --- | --- | ---: | --- |
+| (2, 0.034) | 0.27 | 0.583, 66.7 (chi 24) | 1.06 / - | 1.04 | critical, c near 1 (agrees with contrib/d2_staggered's 0.98 at (1.38, 2)) |
+| (6, 0.003) | 0.65 | 0.477, 77.4 (chi 24) | 0.91 / 0.96 | 0.98 | critical, c near 1 |
+| (6, 0.008) | 1.73 | 0.437, 17.6 (chi 32) | 0.14 / 0.15 | - | gapped (S and xi saturate) |
+| (8, 0.0005) | 0.26 | 0.280, 63.3 (chi 24) | 1.09 / 0.73 | 0.91 | critical, not converged at small chi |
+| (8, 0.0015) | 0.77 | 0.437, 69.4 (chi 24) | 0.88 / 1.05 | 1.42 | critical or very close to BKT; pair scatter 0.67 to 1.37 |
+| (8, 0.004) | 2.05 | 0.372, 17.4 (chi 32) | 0.11 / 0.26 | - | gapped |
+| (6, 0.001) | 0.22 | did not converge (err 5e-2 at chi 32) | - | - | discarded |
+
+These are short runs (local machine, under 5 minutes each) and the pair-to-pair scatter at chi <= 24 is about +-0.3, like C158's slow two-velocity calibrations. None of them reads c above 1 beyond that scatter, and the least-squares values sit at 0.9 to 1.1. [numerical, low chi]
+
+### 7.4 Pending: Typhon job 17596442
+
+One packed 48-core node (partition typhon, 20 h limit), 45 tasks, submitted 2026-11-07, PENDING at the end of this run with an estimated start of 2026-11-12. The previous submission 17594700 was cancelled before it ran; its scratch directory also lacked vumps.py, which is fixed. Inputs: typhon/c153b.slurm, typhon/tasks2.txt, scripts fes.py, drun.py, udmrg.py, vumps.py. Outputs in /scratch/lustre/jkudlerflam/c153/:
+
+- fes_data/: FES to chi = 128 for xx, isxx (controls, c = 1 and 3/2), b = 3 (r - u = 0.003, 0.008, 0.015, 0.03), b = 6 (0.0005, 0.001, 0.002, 0.003, 0.005), b = 8 (0.0002, 0.0005, 0.001, 0.0015, 0.0025), b = 12 (0.0001, 0.0003, 0.0006). The b = 6, 8, 12 points span g = 0.1 to 1.0, so they test the collapse of 5.1 and locate g_c. Read with python3 fesfit.py fes_data/*.json.
+- strip_data/: open chains L = 64, 128 (chi to 128 and 192) at b = 3 (r - u = 0.01), b = 6 (0.001, 0.002, 0.003), b = 8 (0.0005, 0.001, 0.0015), sectors q = 0 (ground state and two excited states at b = 6, 8) and q = 1. The ratio of the first two neutral levels and its L dependence decide the question raised in 7.3.
+- grid_data/: L = 64 grid at b = 0.25 (u = 0.4 to r - 0.01) and b = 6 (u = 0 to r - 0.01).
+- logs/, slurm_17596442.out.
+
+## 8. Theorem-style summary
+
+Model H = sum_j [X_j X_{j+1} - Y_j Y_{j+1} + u Z_j Z_{j+1} + b Z_j] with b > 0, -1 < u < r = sqrt(1 + b^2/4), u != 0 (the staggered-charge box, equivalently the XXZ chain with Delta = -u in a staggered field 2b, in spin-1/2 units J = 4).
+
+Statement A [proved]. (i) On u = 0 the chain is free with gap 2b. (ii) On u = r the ground space has dimension L + 1, one state in each sector of Q = sum (-1)^j Z_j, each a projected product measure (3.1), and the one-defect branch over the Neel state is E(k) = 4r - 4 sqrt(r^2 - sin^2(k/2)) = k^2/(2r) + O(k^4), quadratic (z = 2). (iii) For u > r and for u <= -1 the chain is gapped. (iv) Near u = r, to first order in r - u, the energy per site in the sector of S^z density m is e(m) = -u - 2(r - u) f(m) with e''(0) = 8 r (r - u), and the diamagnetic stiffness of the Q = 0 kernel state is 2/(1 + r).
+
+Statement B [derived]. The box splits into a gapped polarized phase P (-1 < u < u_BKT(b), unique ground state, c = 0) and a Luttinger liquid G (u_BKT(b) < u < r, c = 1) of the staggered charge, separated by a BKT line (c = 1, K = 2) along which cos(2 phi), of dimension K, becomes marginal. Near b = 0 the line is u_BKT = 1/sqrt(2) + kappa b + O(b^2), and near u = r at fixed b the liquid has K = pi sqrt(D_s(b)/(8 r (r - u))) and v = sqrt(8 r (r - u) D_s(b)) to leading order, with D_s(b) <= 2/(1 + r). The strip G is open and nonempty at every b > 0 (given D_s(b) > 0, which is numerical and heuristic for b > 0, section 3.3). At large b the strip is r - u < g_c b^{-3} [derived scale counting; heuristic collapse].
+
+Statement C [derived at small b and near u = r at fixed b; heuristic in the large-b scaling regime; numerical in between]. At every gapless point of the box, c = 1, carried by a single compact boson for the exact charge Q; the total-density (neutral) sector stays gapped. In particular c <= 1 on the box, which is input A4 of C154's conditional theorem for this class.
+
+Numerical status [numerical]: kappa of about 0.25 (b <= 1); g_c between about 0.6 and 1 at b >= 4; c between 0.95 and 1.05 by FES at all 16 critical points of contrib/d2_staggered (b = 0.5 to 4); c near 1 (0.9 to 1.1, low chi) at b = 6, 8 in this run; no ring ED point among 120 shows a third phase. No candidate with c > 1 was found. Open items: the b = 6, 8, 12 FES to chi = 128 and the L = 128 strips (job 17596442), and a derivation, not just a scale count, of the large-b continuum limit.
