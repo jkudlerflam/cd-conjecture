@@ -1,0 +1,12 @@
+psi=0.3: planar onset h_c=0.02486, background phi_bg=0.0032 (global True), m_u^2=2.3237, m_w^2=0.0737, lam0=-0.0672
+h=0.02486: isolated tilted soliton E=-0.018025, max n_z=0.558, min n_z=+3.49e-04
+h=0.02886: isolated tilted soliton E=+0.011636, max n_z=0.559, min n_z=+2.85e-04
+h=0.03286: isolated tilted soliton E=+0.040550, max n_z=0.561, min n_z=+2.34e-04
+h=0.02886: E_sol=+0.011636; n_z tails: right slope -0.2785, left slope +0.2792 (m_w = 0.2785); B_R=0.3600, B_L=1.0281; min n_z/max n_z = +5.09e-04
+T      U_same        U_alt        U_alt-U_same
+  8.0  +2.714540e-03  +2.714540e-03  -2.735590e-13  (alternating start relaxed to same tilt)
+ 10.0  -8.794423e-03  +1.685404e-02  +2.564847e-02  
+ 12.0  -6.221014e-03  +8.426918e-03  +1.464793e-02  
+ 15.0  -2.936704e-03  +3.351405e-03  +6.288109e-03  
+ 18.0  -1.319077e-03  +1.400230e-03  +2.719306e-03  
+ 22.0  -4.413503e-04  +4.506054e-04  +8.919557e-04  
