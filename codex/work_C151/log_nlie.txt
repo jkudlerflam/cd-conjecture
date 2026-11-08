@@ -12,10 +12,10 @@
 {'eta': 0.03, 'L': 256, 'it': -1, 'bethe_residual': 1.1683765088836337e-11, 'conv': 2.387558370813567e-12, 'dtheta_line': 4.886412544883234e-10, 'droot': 4.921458880424723e-07, 'LdevE_nlie': -0.007641579330468692, 'LdevE_bethe': -0.007641579344635829, 'sec': 107.1}
 {'eta': 0.01, 'L': 16, 'it': -1, 'bethe_residual': 2.0428140496770818e-07, 'conv': 3.3363390493545085e-12, 'dtheta_line': 0.00017975217269741286, 'droot': 5.7514585709572685e-06, 'LdevE_nlie': -0.00020664215039635817, 'LdevE_bethe': -0.00020664147736226823, 'sec': 227.3}
 Traceback (most recent call last):
-  File "/Users/jkudlerflam/IAS Dropbox/Jonah Kudler-Flam/Claude/Projects/Modular c-Theorem/notes/cd_conjecture/codex/work_C151/nlie.py", line 110, in <module>
+  File "codex/work_C151/nlie.py", line 110, in <module>
     S = solve_nlie(e, L, guess=guess, check=(D.theta if e == etas[-1] else None))
         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/jkudlerflam/IAS Dropbox/Jonah Kudler-Flam/Claude/Projects/Modular c-Theorem/notes/cd_conjecture/codex/work_C151/nlie.py", line 91, in solve_nlie
+  File "codex/work_C151/nlie.py", line 91, in solve_nlie
     v = newton_krylov(res, np.concatenate([th.real, th.imag]), f_tol=tol, maxiter=200, method='lgmres')
         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
   File "<string>", line 6, in newton_krylov
