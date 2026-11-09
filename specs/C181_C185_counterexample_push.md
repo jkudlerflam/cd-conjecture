@@ -149,6 +149,28 @@ The Fibonacci cusp exists because a dominant nearest-neighbour term has an exten
 
 ## C186: unbind the pair by changing the microscopic bond
 
+**New shared input, 2026-11-09 (commit `3c7dda4`).** The collaborator has
+now carried this route further in
+[`contrib/counterexample_push_20261109/FACILITATED_ROUTE.md`](../contrib/counterexample_push_20261109/FACILITATED_ROUTE.md).
+Read it before repeating the reduction. A genuine transverse DM term
+`(lambda/2)(XZ-ZX)` generates both the desired repulsion and an
+unavoidable leading density-assisted creation term. The complete model,
+literal 4-by-4 bonds, independent operator checks, dressed atom/pair
+resolvents and all-number ring spectra through L=24 are supplied.
+After balancing the two dressed valley energies, the calculated
+order-r² direction weakens binding; the apparent finite-ring crossing
+has strong size drift. No infinite-volume unbinding or c=2 is claimed.
+
+For this family the next unresolved step is **dressed scattering with
+particle-number mixing**, including larger-cluster channels and
+nonperturbative valley retuning. A fixed-N two-body calculation or the
+replacement `v=4(lambda/Delta)^2` alone omits a term of the same leading
+scale and does not test the actual microscopic deformation. The
+exploratory small-u path in the linked calculation additionally needs
+chemical-potential retuning and a remainder bound on the binding-energy
+scale. The general-bond classification below remains useful for finding
+other independent interaction knobs.
+
 A collaborator (GitHub: salpace) proved the binding boundary exactly (`contrib/cusp_binding_certificate_20261109/`, `contrib/cusp_scattering_20261109/`, `contrib/cusp_validation_20261109/`, read them first).
 - In the symmetric effective model take NN hop u, NNN hop +1, V₂ = −2 + v and V₃ = −g, with 0 < u < 4 and 0 < g < 2. A bound opposite-valley pair exists exactly when v < g u²/[2(2 − g)].
 - At the Schrieffer–Wolff values (v = 0, g = 2/3) the pair is bound. With V₂ = V₃ = 0 the gas is two-component (C175, Mishra–Greschner–Santos).
