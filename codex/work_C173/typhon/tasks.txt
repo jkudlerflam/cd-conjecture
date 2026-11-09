@@ -1,0 +1,12 @@
+timeout 2300m python3 block_dmrg.py T_sym32 typhon/cfg/T_sym32.json
+timeout 2300m python3 block_dmrg.py T_sym48 typhon/cfg/T_sym48.json
+timeout 2300m python3 block_dmrg.py T_sym64 typhon/cfg/T_sym64.json
+timeout 2300m python3 block_dmrg.py T_sym32lo typhon/cfg/T_sym32lo.json
+timeout 2300m python3 block_dmrg.py T_154_32 typhon/cfg/T_154_32.json
+timeout 2300m python3 block_dmrg.py T_154_48 typhon/cfg/T_154_48.json
+timeout 2300m python3 block_dmrg.py T_152_32 typhon/cfg/T_152_32.json
+timeout 2300m python3 block_dmrg.py T_c2_48 typhon/cfg/T_c2_48.json
+timeout 2300m python3 block_dmrg.py T_c1_48 typhon/cfg/T_c1_48.json
+timeout 2300m python3 full_dmrg.py F40_96 typhon/cfg/F40_96.json
+timeout 2300m python3 full_dmrg.py F40_144 typhon/cfg/F40_144.json
+timeout 2300m python3 full_dmrg.py F80_96 typhon/cfg/F80_96.json
