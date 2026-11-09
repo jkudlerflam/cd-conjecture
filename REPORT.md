@@ -1808,3 +1808,40 @@ The main conclusion survives. For weak harmonics there is no staggered Ising tra
   - a four-site cell, and the charge-separated bonds;
   - pinned open chains at L = 128 and 256.
   It writes `summary.txt`. Collection: scp `summary.txt`, `vc`, `oc` into `codex/work_C167/typhon_out/`. Prediction registered before the output: x_π crosses 1/2 between λ = 0.98 and 0.985, c_pair stays at or below about 1.05, and pinned S_mid stays within 0.05 of the VUMPS entropy.
+
+### 9.130 Referee of C159 and C163: the T and K_I reduction to (A_W) is incomplete (C171, Claude Opus 5.5 agent, 2026-11-08; `codex/work_C171/`)
+
+Most of the individual lemmas hold. They were re-derived by hand, with an operator-counting script (`opcount.py`) that reproduces every row of C159's table 4.1. But five routes to c > 1 on T and K_I end neither in (A_W) nor in a derived exclusion.
+
+- C159. Correct as written:
+  - Lemma 1, the normal form of K and its sheets;
+  - Ogata–Tasaki on T;
+  - the liquid-stability conditions;
+  - Lemma B (the D and E series are assumed, as tagged);
+  - the SU(2)₂ and SU(2)₃ exclusions;
+  - the rows of table 4.1.
+
+  Gaps and errors:
+  - Lemma A is correct for one boson on which translation acts as a shift. It does not cover translation acting by charge conjugation, nor two bosons swapped by time reversal.
+  - Table 4.1 as a complete list, and Proposition C as used: wrong.
+  - Dismissing codimension ≥ 2 candidates, and replacing H_T by A6_TK: wrong.
+- Missing routes.
+  - R1. Three-state Potts order at momentum 2π/3 × a half-floating boson, c = 9/5. It needs one tuning at every K > 1/2 and no attraction. C154's table for N lacks it too, though (A6) covers it as worded. Whether a chiral Huse–Fisher term makes the transition non-conformal is not settled.
+  - R2. Codimension-2 loci are generic, so "they must lie near symmetric strata" is a non-sequitur. In T, uniform Θ-odd Ising × boson (P2) has codimension 2 at any K and only c = 1 neighbours.
+  - R3. C163's Lemma L locks Q₂ = nQ₁ only for n = 1, 2. For n ≥ 3 it holds only where n²/(4K₁) + 1/(4K₂) < 2. The nQ₁ + π branch is wrong, and n = 0 is untreated. Two-boson phases with wavevectors inside Zθ + Zπ survive at codimension 0.
+  - R4. A second boson whose θ is the field time reversal flips has x₂ = 1/(4K₂). This gives a codimension-0 c = 2 candidate with a repulsive host (K₁ = 0.9, K₂ = 0.2).
+  - R5. A sector on which translation acts by charge conjugation reaches codimension 1 for K₁ > 3/2.
+- C163.
+  - Fact 1: correct, tag [derived].
+  - Fact 2: correct.
+  - "Every soft wavevector lies in Zα + Zπ": wrong at finite field, harmless on T and K_I.
+  - Lemma U: the count is correct.
+  - "Dimerization needs frustration": wrong, but not load-bearing.
+  - Proposition P: correct, with the 0.3 threshold heuristic.
+  - Proposition G: correct as conditionally tagged. It covers only the large-K corner, not the window.
+  - KI22 is still an open first-stage pass, and its FES is in C166's job 17602270.
+- Corrected residual (A_W′) [assumed]. In T and K_I, outside the controlled neighbourhoods, no gapped sector becomes critical or forms an independent liquid while a half-floating liquid is present, at any K and codimension. This is C154's (A6) restricted to T ∪ K_I. The "harmonics comparable to the exchange" restriction survives. The "attractive" restriction survives only for the codimension-1 Ising-at-π row (K > 15/8), the charge-conjugation row (K₁ > 3/2) and the composites Lemma L locks. C167's charge-1 reduction (§9.129) applies to the (A_W) part. K_II is covered by none of this.
+- Two lemmas would restore part of the narrowing:
+  - an exclusion of Z_N order (N ≥ 3) independent of the boson, the period-3 analogue of C165;
+  - a dynamical argument that a codimension-2 c > 1 point forces a codimension ≤ 1 one nearby. Kinematically this is false for P2.
+- The new rows were passed to C168, C169 and C173. The Potts × boson route is now a construction target for C169, alongside C174's parafermion route.
