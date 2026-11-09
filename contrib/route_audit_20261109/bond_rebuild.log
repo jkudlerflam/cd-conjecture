@@ -1,0 +1,31 @@
+d = 11: max |bond11.bond - note Table 1| = 1.4210854715202004e-14
+d = 11: nonzero entries at a generic point = 166
+d = 13: max |bond13.bond - note eq. (h13)| = 1.4210854715202004e-14
+pin identity residual = 0.0
+
+Rows of Table 1 at phi_A = pi/24, psi_A = pi, t_d = 0.003, g = 0.07, lambda = 1 (each also with h.c.):
+  L0  R0  <- R0  R0  : (-1+0j)
+  L0  DA  <- DA  R0  : (-1+0j)
+  L0  XA  <- XA  R0  : (-0.991445-0.130526j)
+  L0  DB  <- DB  R0  : (-1+0j)
+  L0  XB  <- XB  R0  : (-1+0j)
+  L1  R0  <- R0  R1  : (-1+0j)
+  L1  DA  <- DA  R1  : (1+0j)
+  L1  XA  <- XA  R1  : (0.991445+0.130526j)
+  L1  DB  <- DB  R1  : (-1+0j)
+  L1  XB  <- XB  R1  : (-1+0j)
+  L0  E   <- R0  E   : (-1+0j)
+  L0  MA  <- XA  E   : (-0.991445-0.130526j)
+  L0  MA  <- DA  E   : (0.003-0j)
+  E   XA  <- E   DA  : (-1+0j)
+  MA  XA  <- MA  DA  : (-1+0j)
+  MB  XA  <- MB  DA  : (-1+0j)
+  L0  MB  <- XB  E   : (-1+0j)
+  L0  MB  <- DB  E   : (-0-0.003j)
+  E   XB  <- E   DB  : (-1+0j)
+  MA  XB  <- MA  DB  : (-1+0j)
+  MB  XB  <- MB  DB  : (-1+0j)
+  DB  R0  <- DA  R1  : (0.07+0j)
+  MA  DB  <- E   R0  : (0.707107-0.707107j)
+  MB  DA  <- E   R0  : (0.707107+0.707107j)
+  off-diagonal nonzero entries: 48 (twice the number of rows)

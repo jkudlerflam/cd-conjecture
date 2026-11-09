@@ -52,5 +52,41 @@ is warranted. GitHub synchronization happens at reviewable checkpoints.
   defect comparison and infrared estimates. Open PR 6 concerns a
   replacement bound, not the new qubit candidate.
 
-This is the initial checkpoint; results will be appended as independently
-checked calculations finish.
+## Checked checkpoint
+
+The continuation pulled C175 (`1a4015f`) during the calculation. Its new
+binding result agrees with our independent two-body calculation. The
+d=13 route is therefore the strongest mature route; the qubit route
+needs a finite-density pairing test or a modified microscopic bond.
+
+- **[proved] Exact binding boundary.** For the symmetric effective model
+  with nearest hop u, next-nearest hop +1, V2=-2+v and V3=-g,
+  0<u<4, 0<g<2, a bound pair in the opposite-valley total-momentum
+  sector exists exactly when v<g u^2/[2(2-g)]. A half-line square
+  factorization proves both directions. A 24-component integer vector
+  independently certifies binding greater than 1/100 at the candidate.
+  See [the theorem and checks](../cusp_binding_certificate_20261109/README.md).
+- **[proved algebra; numerical evaluations] Exact pair and scattering
+  tools.** An algebraic bound-state energy, normalized wavefunction,
+  pair mass, and a probability-flux scattering audit agree with an
+  independent banded diagonalization. At u=1 the bound energy is
+  -4.5195265346664 versus the free threshold -4.5. See
+  [the calculation](../cusp_scattering_20261109/README.md).
+- **[proved local coefficient; finite-matrix checks] Microscopic
+  reduction correction.** The first omitted term is distance-three
+  pair creation, 2 Delta^3/(3V^2), already relative order Delta/V.
+  Direct low-energy atomic pairing is off resonance, but a separate
+  elimination is required before claiming a relative-order
+  (Delta/V)^2 bound on its effect. See
+  [the independent audit](../cusp_validation_20261109/README.md).
+- **[proved under C92's hypotheses] Stronger d=13 contact and pin
+  estimates.** Contact exceeds 1/264, and pin activation is at least
+  J/135, replacing 1/4096 and J/4096 under the same legal-space,
+  positive-tilt assumptions. See
+  [the proof and route ledger](../route_audit_20261109/README.md).
+
+The coordinating agent reviewed the derivations and reran the checks;
+two other Codex agents independently reviewed the binding theorem.
+No finite-density c=2 conclusion or unconditional d=13 infrared
+identification follows. The next high-value analytic task for d=13 is
+the dressed contact-clock reduction and common-bulk defect comparison.
