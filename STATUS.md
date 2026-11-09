@@ -20,15 +20,15 @@ At d = 2 on the U(1) class (XXZ plus DM along z plus field) this is proved with 
 
 ## Is c ≤ 1 at d = 2?
 
-No nearest-neighbour qubit chain with c > 1 has been found, in about 103,000 sampled chains, targeted searches, or the literature (REPORT §9.110 to §9.126, refereed only where noted).
+No nearest-neighbour qubit chain with c > 1 has been found, in about 103,000 sampled chains, targeted searches, or the literature (REPORT §9.110 to §9.127, refereed only where noted).
 
-- c ≤ 1 is derived at the physics standard on every symmetric class: U(1), free fermion, XYZ, cyclic, parity, staggered charge, and the singular strata. On the time-reversal strata it holds given one assumption.
+- c ≤ 1 is derived at the physics standard at generic points of every symmetric class: U(1), free fermion, XYZ, cyclic, parity, staggered charge, and the singular strata. On the time-reversal strata it holds given one assumption. Isolated multicritical points on the strata have not been inventoried.
 - The XZ point, the only bond with a second decoupled gapless species, gives no c > 1. Its induced interaction has the wrong sign for the c = 3/2 phase.
 - Close to the ferromagnetic Heisenberg point every conformal bond has c ≤ 1, given standard semiclassics. The chain is a semiclassical ferromagnet there with at most one soft mode (refereed, and checked on 48 lattice bonds). The neighbourhood of its twisted images and the bound-state route to a second fluid are also covered.
 - Where a symmetry makes two soliton valleys degenerate, the two-valley gas does not mix, so c = 1.
 
 Open, in order of importance:
-1. Generic bonds with no symmetry, and attractive liquids whose U(1)-breaking is as large as the exchange, far from every controlled region. The adversarial search (about 150,000 evaluations) has no survivor outside item 3.
+1. Generic bonds with no symmetry, and attractive liquids whose U(1)-breaking is as large as the exchange, far from every controlled region. The symmetric results do not propagate into this region, so it needs a dynamical argument of its own (REPORT §9.127). Besides two-species phases, this includes single-species c > 1 theories such as Z₅ parafermions, which could sit where commensurate locked phases melt. The adversarial search (about 150,000 evaluations) has no survivor outside item 3.
 2. Two specific mechanisms for a second gapless sector at strong U(1)-breaking: a staggered Ising transition inside an incommensurate liquid (exists classically, but at spin 1/2 the two orders are one SU(2)₁ field and it fails to all orders in weak coupling), and accidental two-valley soliton onsets (a search over about 48,000 classical bonds and 6,000 quantum restarts found none). A large search for the first is pending.
 3. The XZ neighbourhood, where open-chain DMRG reads c ≈ 1.3 at L = 256. This appears to be a Néel-ordered gapped bulk seen through a slowly relaxing cat state, not a critical one. Edge fields along the order turn the open chain into the gapped VUMPS state at the same energy. Open chains to L = 512, which test this directly, are pending.
 
