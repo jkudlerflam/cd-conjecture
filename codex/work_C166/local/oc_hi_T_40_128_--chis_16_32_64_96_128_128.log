@@ -1,0 +1,7 @@
+  sweep 0 chi=16 E=-122.328982214848 trunc=0.00e+00
+  sweep 1 chi=32 E=-122.351823705606 trunc=1.27e-07
+  sweep 2 chi=64 E=-122.353637191518 trunc=5.00e-09
+  sweep 3 chi=96 E=-122.353642152311 trunc=5.51e-10
+  sweep 4 chi=128 E=-122.353642365763 trunc=6.65e-11
+  sweep 5 chi=128 E=-122.353642365674 trunc=7.20e-11
+done local/oc/hi_T_40_128.json E=-122.3536423657 c_prof=1.150 Smid=1.0664 trunc=7.2e-11 emid=-0.9592918466 S(1)=0.6931 |m|max=0.0000 zz(L/4,3L/4)=+0.0729 t=264s

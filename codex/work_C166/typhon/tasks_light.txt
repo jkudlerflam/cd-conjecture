@@ -1,0 +1,46 @@
+timeout 2000m python3 vumps_cells.py hi_T_40 --n 2 --seed 0 --chis 8 16 32 48 64 96 128 192 256 320 384 512 --out vc/hi_T_40_n2_s0.json --npz vc/hi_T_40_n2_s0.npz
+timeout 2000m python3 vumps_cells.py dist_T_50 --n 2 --seed 0 --chis 8 16 32 48 64 96 128 192 256 320 384 512 --out vc/dist_T_50_n2_s0.json --npz vc/dist_T_50_n2_s0.npz
+timeout 2000m python3 vumps_cells.py cand_60 --n 2 --seed 0 --chis 8 16 32 48 64 96 128 192 256 320 384 512 --out vc/cand_60_n2_s0.json --npz vc/cand_60_n2_s0.npz
+timeout 2000m python3 vumps_cells.py cand_61 --n 2 --seed 0 --chis 8 16 32 48 64 96 128 192 256 320 384 512 --out vc/cand_61_n2_s0.json --npz vc/cand_61_n2_s0.npz
+timeout 2000m python3 vumps_cells.py hi_T_40 --n 4 --seed 0 --chis 8 16 32 64 96 128 192 256 320 384 --out vc/hi_T_40_n4_s0.json --npz vc/hi_T_40_n4_s0.npz
+timeout 2000m python3 vumps_cells.py dist_T_50 --n 4 --seed 0 --chis 8 16 32 64 96 128 192 256 320 384 --out vc/dist_T_50_n4_s0.json --npz vc/dist_T_50_n4_s0.npz
+timeout 2000m python3 vumps_cells.py hi_T_40 --n 10 --seed 0 --chis 8 16 32 64 96 128 192 --out vc/hi_T_40_n10_s0.json --npz vc/hi_T_40_n10_s0.npz
+timeout 2000m python3 vumps_cells.py dist_T_50 --n 20 --seed 0 --chis 8 16 32 64 96 128 192 --out vc/dist_T_50_n20_s0.json --npz vc/dist_T_50_n20_s0.npz
+timeout 2000m python3 vumps_cells.py KI22 --n 2 --seed 0 --chis 8 16 32 48 64 96 128 192 256 320 384 --out vc/KI22_n2_s0.json --npz vc/KI22_n2_s0.npz
+timeout 2000m python3 vumps_cells.py KI26 --n 2 --seed 0 --chis 8 16 32 48 64 96 128 192 256 320 384 --out vc/KI26_n2_s0.json --npz vc/KI26_n2_s0.npz
+timeout 2000m python3 vumps_cells.py N34 --n 2 --seed 0 --chis 8 16 32 48 64 96 128 192 256 320 384 --out vc/N34_n2_s0.json --npz vc/N34_n2_s0.npz
+timeout 2000m python3 vumps_cells.py KI22 --n 4 --seed 1 --chis 8 16 32 64 96 128 192 256 --out vc/KI22_n4_s1.json --npz vc/KI22_n4_s1.npz
+timeout 2000m python3 vumps_cells.py KI26 --n 4 --seed 1 --chis 8 16 32 64 96 128 192 256 --out vc/KI26_n4_s1.json --npz vc/KI26_n4_s1.npz
+timeout 2000m python3 vumps_cells.py N34 --n 4 --seed 1 --chis 8 16 32 64 96 128 192 256 --out vc/N34_n4_s1.json --npz vc/N34_n4_s1.npz
+timeout 2000m python3 vumps_cells.py hi_T_40 --n 2 --seed 1 --chis 8 16 32 64 96 128 192 256 --out vc/hi_T_40_n2_s1.json
+timeout 2000m python3 vumps_cells.py dist_T_50 --n 2 --seed 1 --chis 8 16 32 64 96 128 192 256 --out vc/dist_T_50_n2_s1.json
+timeout 2000m python3 vumps_cells.py hi_T_40 --n 6 --seed 2 --chis 8 16 32 64 96 128 192 256 --out vc/hi_T_40_n6_s2.json --npz vc/hi_T_40_n6_s2.npz
+timeout 2000m python3 vumps_cells.py hi_T_40 --n 8 --seed 3 --chis 8 16 32 64 96 128 192 256 --out vc/hi_T_40_n8_s3.json --npz vc/hi_T_40_n8_s3.npz
+timeout 2000m python3 vumps_cells.py dist_T_50 --n 6 --seed 2 --chis 8 16 32 64 96 128 192 256 --out vc/dist_T_50_n6_s2.json --npz vc/dist_T_50_n6_s2.npz
+timeout 2000m python3 vumps_cells.py dist_T_50 --n 8 --seed 3 --chis 8 16 32 64 96 128 192 256 --out vc/dist_T_50_n8_s3.json --npz vc/dist_T_50_n8_s3.npz
+timeout 2000m python3 vumps_cells.py cand_60 --n 4 --seed 1 --chis 8 16 32 64 96 128 192 256 --out vc/cand_60_n4_s1.json --npz vc/cand_60_n4_s1.npz
+timeout 2000m python3 vumps_cells.py cand_61 --n 4 --seed 1 --chis 8 16 32 64 96 128 192 256 --out vc/cand_61_n4_s1.json --npz vc/cand_61_n4_s1.npz
+timeout 2000m python3 open_chain.py hi_T_40 256 --chis 16 32 64 128 192 256 256 --outdir oc
+timeout 2000m python3 open_chain.py dist_T_50 256 --chis 16 32 64 128 192 256 256 --outdir oc
+timeout 2000m python3 open_chain.py cand_60 256 --chis 16 32 64 128 192 256 256 --outdir oc
+timeout 2000m python3 open_chain.py cand_61 256 --chis 16 32 64 128 192 256 256 --outdir oc
+timeout 2000m python3 open_chain.py hi_T_40 256 --chis 16 32 64 96 128 192 192 --left 0.0118 0.0006 0.1997 --right -0.0118 -0.0006 -0.1997 --tag LRst --outdir oc
+timeout 2000m python3 open_chain.py hi_T_40 256 --chis 16 32 64 96 128 192 192 --left 0.0118 0.0006 0.1997 --tag Lst --outdir oc
+timeout 2000m python3 open_chain.py hi_T_40 256 --chis 16 32 64 96 128 192 192 --left 0.2 0 0 --tag Lx --outdir oc
+timeout 2000m python3 open_chain.py dist_T_50 256 --chis 16 32 64 96 128 192 192 --left 0.0003 -0.0395 -0.1961 --right -0.0003 0.0395 0.1961 --tag LRst --outdir oc
+timeout 2000m python3 open_chain.py dist_T_50 256 --chis 16 32 64 96 128 192 192 --left 0.0003 -0.0395 -0.1961 --tag Lst --outdir oc
+timeout 2000m python3 open_chain.py dist_T_50 256 --chis 16 32 64 96 128 192 192 --left 0.2 0 0 --tag Lx --outdir oc
+timeout 2000m python3 open_chain.py cand_60 256 --chis 16 32 64 96 128 192 192 --left 0 0 -0.2 --right 0 0 0.2 --tag LRst --outdir oc
+timeout 2000m python3 open_chain.py cand_61 256 --chis 16 32 64 96 128 192 192 --left 0 0 0.2 --right 0 0 -0.2 --tag LRst --outdir oc
+timeout 2000m python3 open_chain.py hi_T_40 128 --chis 16 32 64 96 128 128 --left 0.0118 0.0006 0.1997 --right -0.0118 -0.0006 -0.1997 --tag LRst --outdir oc
+timeout 2000m python3 open_chain.py hi_T_40 128 --chis 16 32 64 96 128 128 --left 0.0118 0.0006 0.1997 --tag Lst --outdir oc
+timeout 2000m python3 open_chain.py hi_T_40 128 --chis 16 32 64 96 128 128 --left 0.2 0 0 --tag Lx --outdir oc
+timeout 2000m python3 open_chain.py dist_T_50 128 --chis 16 32 64 96 128 128 --left 0.0003 -0.0395 -0.1961 --right -0.0003 0.0395 0.1961 --tag LRst --outdir oc
+timeout 2000m python3 open_chain.py dist_T_50 128 --chis 16 32 64 96 128 128 --left 0.0003 -0.0395 -0.1961 --tag Lst --outdir oc
+timeout 2000m python3 open_chain.py dist_T_50 128 --chis 16 32 64 96 128 128 --left 0.2 0 0 --tag Lx --outdir oc
+timeout 2000m python3 open_chain.py cand_60 128 --chis 16 32 64 96 128 128 --left 0 0 -0.2 --right 0 0 0.2 --tag LRst --outdir oc
+timeout 2000m python3 open_chain.py cand_61 128 --chis 16 32 64 96 128 128 --left 0 0 0.2 --right 0 0 -0.2 --tag LRst --outdir oc
+timeout 2000m python3 open_chain.py hi_T_40 128 --chis 16 32 64 96 128 192 192 --outdir oc
+timeout 2000m python3 open_chain.py dist_T_50 128 --chis 16 32 64 96 128 192 192 --outdir oc
+timeout 2000m python3 open_chain.py cand_60 128 --chis 16 32 64 96 128 192 192 --outdir oc
+timeout 2000m python3 open_chain.py cand_61 128 --chis 16 32 64 96 128 192 192 --outdir oc

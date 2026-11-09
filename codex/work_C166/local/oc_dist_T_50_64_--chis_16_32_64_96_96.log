@@ -1,0 +1,6 @@
+  sweep 0 chi=16 E=-53.158247136186 trunc=0.00e+00
+  sweep 1 chi=32 E=-53.167499706946 trunc=6.43e-08
+  sweep 2 chi=64 E=-53.167523344809 trunc=6.98e-10
+  sweep 3 chi=96 E=-53.167523476180 trunc=3.07e-11
+  sweep 4 chi=96 E=-53.167523476129 trunc=3.40e-11
+done local/oc/dist_T_50_64.json E=-53.1675234761 c_prof=1.176 Smid=0.9565 trunc=3.4e-11 emid=-0.8370964677 S(1)=0.6931 |m|max=0.0000 zz(L/4,3L/4)=+0.0771 t=64s

@@ -1,0 +1,6 @@
+timeout 2000m python3 open_chain.py cand_60 512 --chis 32 64 128 192 256 320 384 --outdir oc
+timeout 2000m python3 open_chain.py cand_61 512 --chis 32 64 128 192 256 320 384 --outdir oc
+timeout 2000m python3 open_chain.py hi_T_40 512 --chis 32 64 128 192 256 320 320 --outdir oc
+timeout 2000m python3 open_chain.py dist_T_50 512 --chis 32 64 128 192 256 320 320 --outdir oc
+timeout 2000m python3 open_chain.py hi_T_40 384 --chis 32 64 128 192 256 256 --outdir oc
+timeout 2000m python3 open_chain.py dist_T_50 384 --chis 32 64 128 192 256 256 --outdir oc

@@ -1,0 +1,13 @@
+Traceback (most recent call last):
+  File "/scratch/lustre/jkudlerflam/c164/controls.py", line 32, in <module>
+    r = D.dmrg(h, L, chis=chis)
+        ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/lustre/jkudlerflam/c164/dmrg_d.py", line 151, in dmrg
+    U, s, Vh = np.linalg.svd(th, full_matrices=False)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "~/.local/lib/python3.12/site-packages/numpy/linalg/_linalg.py", line 1841, in svd
+    u, s, vh = gufunc(a, signature=signature)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "~/.local/lib/python3.12/site-packages/numpy/linalg/_linalg.py", line 153, in _raise_linalgerror_svd_nonconvergence
+    raise LinAlgError("SVD did not converge")
+numpy.linalg.LinAlgError: SVD did not converge

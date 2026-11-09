@@ -1,0 +1,138 @@
+== (1) VUMPS cells (vc/): last chi reached per file
+  KI22       n= 2 s=0 chi=  32 e=-0.658290381510 (|e-e(chi/2)|=1.1e-05) S=1.14021 (spread 8.3e-03) xi=   52.12 |m|max=0.1640 TR=0.94026 bond_e spread=1.2e-02 c_ls3=nan last c_pair=nan arg1/pi=+0.169 xi(last chis [8, 16, 32])=[8.5, 19.1, 52.1]
+  KI26       n= 2 s=0 chi=  32 e=-0.768963273197 (|e-e(chi/2)|=1.5e-05) S=1.16558 (spread 3.2e-06) xi=   98.99 |m|max=0.4138 TR=0.66033 bond_e spread=7.2e-06 c_ls3=nan last c_pair=nan arg1/pi=-0.304 xi(last chis [8, 16, 32])=[13.5, 38.7, 99.0]
+  N34        n= 2 s=0 chi=  32 e=-0.853253484190 (|e-e(chi/2)|=3.9e-15) S=0.01278 (spread 5.1e-11) xi=    1.07 |m|max=0.7771 TR=0.14427 bond_e spread=1.3e-11 c_ls3=nan last c_pair=nan arg1/pi=+0.000 xi(last chis [8, 16, 32])=[1.0, 1.1, 1.1]
+  cand_60    n= 2 s=0 chi=  32 e=-0.775100032400 (|e-e(chi/2)|=4.0e-05) S=0.98903 (spread 8.0e-02) xi=   21.53 |m|max=0.2338 TR=0.85025 bond_e spread=6.5e-02 c_ls3=nan last c_pair=nan arg1/pi=+0.830 xi(last chis [8, 16, 32])=[4.6, 9.7, 21.5]
+  cand_61    n= 2 s=0 chi=  32 e=-0.770087452027 (|e-e(chi/2)|=2.4e-05) S=0.84501 (spread 1.1e-01) xi=   13.17 |m|max=0.2836 TR=0.78525 bond_e spread=9.6e-02 c_ls3=nan last c_pair=nan arg1/pi=-0.775 xi(last chis [8, 16, 32])=[4.0, 6.5, 13.2]
+  dist_T_50  n=10 s=0 chi=  32 e=-0.837123110661 (|e-e(chi/2)|=1.2e-05) S=0.67638 (spread 4.6e-12) xi=   18.40 |m|max=0.3591 TR=0.83095 bond_e spread=4.9e-12 c_ls3=0.361 last c_pair=0.235 arg1/pi=+0.992 xi(last chis [8, 16, 24, 32])=[5.5, 10.6, 14.7, 18.4]
+  dist_T_50  n=10 s=1 chi=  32 e=-0.837123110661 (|e-e(chi/2)|=1.2e-05) S=0.67638 (spread 4.7e-12) xi=   18.40 |m|max=0.3591 TR=0.83095 bond_e spread=4.9e-12 c_ls3=0.361 last c_pair=0.235 arg1/pi=-0.992 xi(last chis [8, 16, 24, 32])=[5.5, 10.6, 14.7, 18.4]
+  dist_T_50  n=11 s=0 chi=  32 e=19443562.011363636702 (|e-e(chi/2)|=1.9e+07) S=1.21230 (spread 1.9e-01) xi=4503599627370490.00 |m|max=0.2423 TR=1.00000 bond_e spread=1.2e-07 c_ls3=-0.000 last c_pair=-0.000 [non-injective or unconverged, excluded] arg1/pi=-0.000 xi(last chis [8, 16, 24, 32])=[538851650348.0, 1.6513198633691814e+16, 4.953959590107545e+16, 4503599627370489.5]
+  dist_T_50  n=11 s=1 chi=  32 e=-0.835600431344 (|e-e(chi/2)|=2.3e+07) S=1.12447 (spread 5.3e-02) xi=9907919180215086.00 |m|max=0.1616 TR=1.00000 bond_e spread=1.6e-07 c_ls3=-0.001 last c_pair=-0.000 [non-injective or unconverged, excluded] arg1/pi=+1.000 xi(last chis [8, 16, 24, 32])=[2.4769797950537724e+16, 2.4769797950537724e+16, 1.6513198633691814e+16, 9907919180215086.0]
+  dist_T_50  n=12 s=0 chi=  32 e=-0.837123110661 (|e-e(chi/2)|=1.2e-05) S=0.67638 (spread 3.4e-12) xi=   18.40 |m|max=0.3591 TR=0.80073 bond_e spread=3.1e-12 c_ls3=0.361 last c_pair=0.235 arg1/pi=-0.410 xi(last chis [8, 16, 24, 32])=[5.5, 10.6, 14.7, 18.4]
+  dist_T_50  n=12 s=1 chi=  32 e=-0.837123110661 (|e-e(chi/2)|=1.2e-05) S=0.67638 (spread 3.6e-12) xi=   18.40 |m|max=0.3591 TR=0.80073 bond_e spread=3.1e-12 c_ls3=0.361 last c_pair=0.235 arg1/pi=+0.410 xi(last chis [8, 16, 24, 32])=[5.5, 10.6, 14.7, 18.4]
+  dist_T_50  n=13 s=0 chi=  32 e=-0.837111182042 (|e-e(chi/2)|=1.2e-04) S=1.33703 (spread 1.6e-08) xi=141150080893.00 |m|max=0.0000 TR=1.00000 bond_e spread=1.4e-08 c_ls3=0.027 last c_pair=0.031 [non-injective or unconverged, excluded] arg1/pi=+1.000 xi(last chis [8, 16, 24, 32])=[13.7, 2411.6, 365800121.4, 141150080893.0]
+  dist_T_50  n=13 s=1 chi=  32 e=-0.837111182042 (|e-e(chi/2)|=1.2e-04) S=1.33703 (spread 1.7e-08) xi=158716737205.51 |m|max=0.0000 TR=1.00000 bond_e spread=1.2e-08 c_ls3=0.027 last c_pair=0.030 [non-injective or unconverged, excluded] arg1/pi=+1.000 xi(last chis [8, 16, 24, 32])=[13.7, 2411.6, 363596291.7, 158716737205.5]
+  dist_T_50  n=14 s=0 chi=  32 e=-0.837123110661 (|e-e(chi/2)|=1.2e-05) S=0.67638 (spread 3.6e-12) xi=   18.40 |m|max=0.3591 TR=0.77162 bond_e spread=2.3e-12 c_ls3=0.361 last c_pair=0.235 arg1/pi=-0.188 xi(last chis [8, 16, 24, 32])=[5.5, 10.6, 14.7, 18.4]
+  dist_T_50  n=14 s=1 chi=  32 e=-0.837123110661 (|e-e(chi/2)|=1.2e-05) S=0.67638 (spread 3.6e-12) xi=   18.40 |m|max=0.3591 TR=0.77162 bond_e spread=2.3e-12 c_ls3=0.361 last c_pair=0.235 arg1/pi=+0.188 xi(last chis [8, 16, 24, 32])=[5.5, 10.6, 14.7, 18.4]
+  dist_T_50  n= 1 s=0 chi=  32 e=-0.835985969063 (|e-e(chi/2)|=1.1e+12) S=1.09289 (spread 0.0e+00) xi=900719925474098.75 |m|max=0.1521 TR=1.00000 bond_e spread=0.0e+00 c_ls3=0.001 last c_pair=0.001 [non-injective or unconverged, excluded] arg1/pi=+0.000 xi(last chis [8, 16, 24, 32])=[132458812569720.0, 118515779667644.1, 92857724275679.8, 900719925474098.8]
+  dist_T_50  n= 1 s=1 chi=  32 e=-2044090.020507812500 (|e-e(chi/2)|=1.7e+08) S=1.21981 (spread 0.0e+00) xi=1125899906842623.50 |m|max=0.1118 TR=1.00000 bond_e spread=0.0e+00 c_ls3=0.000 last c_pair=0.000 [non-injective or unconverged, excluded] arg1/pi=+1.000 xi(last chis [8, 16, 24, 32])=[6944640905736.6, 173215370283480.1, 98980211590559.9, 1125899906842623.6]
+  dist_T_50  n=20 s=0 chi=  32 e=-0.837123110661 (|e-e(chi/2)|=1.2e-05) S=0.67638 (spread 1.1e-10) xi=   18.40 |m|max=0.3591 TR=0.69047 bond_e spread=9.8e-11 c_ls3=0.361 last c_pair=0.235 arg1/pi=+0.017 xi(last chis [8, 16, 24, 32])=[5.5, 10.6, 14.7, 18.4]
+  dist_T_50  n=20 s=1 chi=  32 e=-0.837123110661 (|e-e(chi/2)|=1.2e-05) S=0.67638 (spread 1.1e-10) xi=   18.40 |m|max=0.3591 TR=0.69047 bond_e spread=9.8e-11 c_ls3=0.361 last c_pair=0.235 arg1/pi=+0.017 xi(last chis [8, 16, 24, 32])=[5.5, 10.6, 14.7, 18.4]
+  dist_T_50  n=21 s=0 chi=  32 e=-0.837111182042 (|e-e(chi/2)|=1.2e-04) S=1.33703 (spread 1.8e-07) xi=416000317457.58 |m|max=0.0002 TR=1.00000 bond_e spread=1.5e-08 c_ls3=-0.047 last c_pair=0.113 [non-injective or unconverged, excluded] arg1/pi=+1.000 xi(last chis [8, 16, 24, 32])=[13.9, 47501553076222.8, 82897563675.2, 416000317457.6]
+  dist_T_50  n=21 s=1 chi=  32 e=-0.837111182042 (|e-e(chi/2)|=1.2e-04) S=1.33703 (spread 1.7e-07) xi=144723965982.50 |m|max=0.0002 TR=1.00000 bond_e spread=2.1e-08 c_ls3=-0.048 last c_pair=4.075 [non-injective or unconverged, excluded] arg1/pi=-1.000 xi(last chis [8, 16, 24, 32])=[13.9, 100079991719333.9, 138374415733.1, 144723965982.5]
+  dist_T_50  n= 2 s=0 chi=  32 e=-0.837123110661 (|e-e(chi/2)|=1.2e-05) S=0.67638 (spread 2.3e-11) xi=   18.40 |m|max=0.3591 TR=0.96364 bond_e spread=3.1e-11 c_ls3=0.361 last c_pair=0.235 arg1/pi=+0.598 xi(last chis [8, 16, 24, 32])=[5.5, 10.6, 14.7, 18.4]
+  dist_T_50  n= 2 s=1 chi=  32 e=-0.837123110661 (|e-e(chi/2)|=1.2e-05) S=0.67638 (spread 2.5e-11) xi=   18.40 |m|max=0.3591 TR=0.96364 bond_e spread=2.9e-11 c_ls3=0.361 last c_pair=0.235 arg1/pi=-0.598 xi(last chis [8, 16, 24, 32])=[5.5, 10.6, 14.7, 18.4]
+  dist_T_50  n= 3 s=0 chi=  32 e=-3076838907.768229007721 (|e-e(chi/2)|=3.0e+10) S=1.08268 (spread 1.3e-01) xi=    -inf |m|max=0.2542 TR=1.00000 bond_e spread=1.8e-05 c_ls3=nan last c_pair=nan [non-injective or unconverged, excluded] arg1/pi=+1.000 xi(last chis [8, 16, 24, 32])=[772045650406369.1, 2251799813685246.5, 2702159776422296.0, -inf]
+  dist_T_50  n= 3 s=1 chi=  32 e=-0.835556551507 (|e-e(chi/2)|=6.1e+10) S=1.10382 (spread 7.9e-02) xi=4503599627370494.50 |m|max=0.1983 TR=1.00000 bond_e spread=1.0e-04 c_ls3=0.000 last c_pair=inf [non-injective or unconverged, excluded] arg1/pi=+1.000 xi(last chis [8, 16, 24, 32])=[1039292221700882.2, 1174852076705345.2, 4503599627370494.5, 4503599627370494.5]
+  dist_T_50  n= 4 s=0 chi=  32 e=-0.837123110661 (|e-e(chi/2)|=1.2e-05) S=0.67638 (spread 1.2e-11) xi=   18.40 |m|max=0.3591 TR=0.92860 bond_e spread=1.4e-11 c_ls3=0.361 last c_pair=0.235 arg1/pi=+0.803 xi(last chis [8, 16, 24, 32])=[5.5, 10.6, 14.7, 18.4]
+  dist_T_50  n= 4 s=1 chi=  32 e=-0.837123110661 (|e-e(chi/2)|=1.2e-05) S=0.67638 (spread 1.2e-11) xi=   18.40 |m|max=0.3591 TR=0.92860 bond_e spread=1.4e-11 c_ls3=0.361 last c_pair=0.235 arg1/pi=+0.803 xi(last chis [8, 16, 24, 32])=[5.5, 10.6, 14.7, 18.4]
+  dist_T_50  n= 5 s=0 chi=  32 e=2406017719.159375190735 (|e-e(chi/2)|=2.4e+10) S=1.13482 (spread 1.5e-02) xi=3752999689475410.50 |m|max=0.0878 TR=1.00000 bond_e spread=3.8e-06 c_ls3=-0.000 last c_pair=-0.000 [non-injective or unconverged, excluded] arg1/pi=-0.000 xi(last chis [8, 16, 24, 32])=[1324588125697202.2, 5629499534213118.0, 1.1258999068426238e+16, 3752999689475410.5]
+  dist_T_50  n= 5 s=1 chi=  32 e=-0.836746567491 (|e-e(chi/2)|=1.2e+10) S=1.15598 (spread 7.8e-02) xi=3464307405669610.00 |m|max=0.1865 TR=1.00000 bond_e spread=1.3e-05 c_ls3=0.232 last c_pair=0.513 [non-injective or unconverged, excluded] arg1/pi=+0.000 xi(last chis [8, 16, 24, 32])=[2501999792983606.5, 1364727159809238.5, 2251799813685245.5, 3464307405669610.0]
+  dist_T_50  n= 6 s=0 chi=  32 e=-0.837123110661 (|e-e(chi/2)|=1.2e-05) S=0.67638 (spread 7.1e-12) xi=   18.40 |m|max=0.3591 TR=0.89484 bond_e spread=6.6e-12 c_ls3=0.361 last c_pair=0.235 arg1/pi=+0.205 xi(last chis [8, 16, 24, 32])=[5.5, 10.6, 14.7, 18.4]
+  dist_T_50  n= 6 s=1 chi=  32 e=-0.837123110661 (|e-e(chi/2)|=1.2e-05) S=0.67638 (spread 6.9e-12) xi=   18.40 |m|max=0.3591 TR=0.89484 bond_e spread=6.5e-12 c_ls3=0.361 last c_pair=0.235 arg1/pi=-0.205 xi(last chis [8, 16, 24, 32])=[5.5, 10.6, 14.7, 18.4]
+  dist_T_50  n= 7 s=0 chi=  32 e=-0.837111182042 (|e-e(chi/2)|=1.2e-04) S=1.33703 (spread 2.1e-07) xi=93365251730.43 |m|max=0.0002 TR=1.00000 bond_e spread=1.5e-08 c_ls3=-0.041 last c_pair=0.068 [non-injective or unconverged, excluded] arg1/pi=+1.000 xi(last chis [8, 16, 24, 32])=[13.9, 543861389816.2, 6396179921.8, 93365251730.4]
+  dist_T_50  n= 7 s=1 chi=  32 e=-0.837111182042 (|e-e(chi/2)|=1.2e-04) S=1.33703 (spread 2.1e-07) xi=88744751397.60 |m|max=0.0002 TR=1.00000 bond_e spread=1.3e-08 c_ls3=-0.116 last c_pair=0.257 [non-injective or unconverged, excluded] arg1/pi=+1.000 xi(last chis [8, 16, 24, 32])=[13.9, 557100399225.9, 43513700538.0, 88744751397.6]
+  dist_T_50  n= 8 s=0 chi=  32 e=-0.837123110661 (|e-e(chi/2)|=1.2e-05) S=0.67638 (spread 7.0e-12) xi=   18.40 |m|max=0.3591 TR=0.86230 bond_e spread=6.9e-12 c_ls3=0.361 last c_pair=0.235 arg1/pi=+0.393 xi(last chis [8, 16, 24, 32])=[5.5, 10.6, 14.7, 18.4]
+  dist_T_50  n= 8 s=1 chi=  32 e=-0.837123110661 (|e-e(chi/2)|=1.2e-05) S=0.67638 (spread 7.1e-12) xi=   18.40 |m|max=0.3591 TR=0.86230 bond_e spread=6.9e-12 c_ls3=0.361 last c_pair=0.235 arg1/pi=+0.393 xi(last chis [8, 16, 24, 32])=[5.5, 10.6, 14.7, 18.4]
+  hi_T_40    n=10 s=0 chi=  32 e=-0.959308071976 (|e-e(chi/2)|=1.7e-05) S=0.69044 (spread 3.0e-12) xi=   22.66 |m|max=0.3448 TR=0.86396 bond_e spread=1.6e-12 c_ls3=0.399 last c_pair=0.317 arg1/pi=-0.092 xi(last chis [8, 16, 24, 32])=[5.9, 12.8, 18.3, 22.7]
+  hi_T_40    n=10 s=1 chi=  32 e=-0.959308071976 (|e-e(chi/2)|=1.7e-05) S=0.69044 (spread 3.0e-12) xi=   22.66 |m|max=0.3448 TR=0.86396 bond_e spread=1.6e-12 c_ls3=0.399 last c_pair=0.317 arg1/pi=-0.092 xi(last chis [8, 16, 24, 32])=[5.9, 12.8, 18.3, 22.7]
+  hi_T_40    n=11 s=0 chi=  32 e=-0.959290705412 (|e-e(chi/2)|=2.0e-04) S=1.34587 (spread 9.5e-10) xi=220993165393.11 |m|max=0.0000 TR=1.00000 bond_e spread=9.4e-10 c_ls3=0.024 last c_pair=-0.038 [non-injective or unconverged, excluded] arg1/pi=+1.000 xi(last chis [8, 16, 24, 32])=[14.0, 30182068.5, 41438390548782.0, 220993165393.1]
+  hi_T_40    n=11 s=1 chi=  32 e=-0.959290705412 (|e-e(chi/2)|=2.0e-04) S=1.34587 (spread 4.4e-10) xi=843083660666.31 |m|max=0.0000 TR=1.00000 bond_e spread=4.6e-10 c_ls3=0.026 last c_pair=-0.051 [non-injective or unconverged, excluded] arg1/pi=-1.000 xi(last chis [8, 16, 24, 32])=[14.0, 29911817.7, 40908006524416.8, 843083660666.3]
+  hi_T_40    n=12 s=0 chi=  32 e=-0.959308071976 (|e-e(chi/2)|=1.7e-05) S=0.69044 (spread 9.7e-13) xi=   22.66 |m|max=0.3448 TR=0.83906 bond_e spread=8.1e-13 c_ls3=0.399 last c_pair=0.317 arg1/pi=+0.289 xi(last chis [8, 16, 24, 32])=[5.9, 12.8, 18.3, 22.7]
+  hi_T_40    n=12 s=1 chi=  32 e=-0.959308071976 (|e-e(chi/2)|=1.7e-05) S=0.69044 (spread 9.6e-13) xi=   22.66 |m|max=0.3448 TR=0.83906 bond_e spread=1.1e-12 c_ls3=0.399 last c_pair=0.317 arg1/pi=+0.289 xi(last chis [8, 16, 24, 32])=[5.9, 12.8, 18.3, 22.7]
+  hi_T_40    n=13 s=0 chi=  32 e=-0.959270883101 (|e-e(chi/2)|=1.8e-04) S=1.27191 (spread 1.4e-01) xi=2168399820585787.75 |m|max=0.1933 TR=1.00000 bond_e spread=2.4e-07 c_ls3=0.041 last c_pair=-0.005 [non-injective or unconverged, excluded] arg1/pi=+1.000 xi(last chis [8, 16, 24, 32])=[3673.2, 2173229218843.4, 2927339757790815.5, 2168399820585787.5]
+  hi_T_40    n=13 s=1 chi=  32 e=-0.959290257344 (|e-e(chi/2)|=2.0e-04) S=1.26898 (spread 2.0e-01) xi=15688073.17 |m|max=0.2219 TR=0.99999 bond_e spread=1.2e-05 c_ls3=-0.030 last c_pair=0.129 [non-injective or unconverged, excluded] arg1/pi=-1.000 xi(last chis [8, 16, 24, 32])=[4524.0, 1766703737457.4, 3441755.3, 15688073.2]
+  hi_T_40    n=14 s=0 chi=  32 e=-0.959308071976 (|e-e(chi/2)|=1.7e-05) S=0.69044 (spread 1.1e-12) xi=   22.66 |m|max=0.3448 TR=0.81488 bond_e spread=8.9e-13 c_ls3=0.399 last c_pair=0.317 arg1/pi=-0.671 xi(last chis [8, 16, 24, 32])=[5.9, 12.8, 18.3, 22.7]
+  hi_T_40    n=14 s=1 chi=  32 e=-0.959308071976 (|e-e(chi/2)|=1.7e-05) S=0.69044 (spread 9.9e-13) xi=   22.66 |m|max=0.3448 TR=0.81488 bond_e spread=7.2e-13 c_ls3=0.399 last c_pair=0.317 arg1/pi=+0.671 xi(last chis [8, 16, 24, 32])=[5.9, 12.8, 18.3, 22.7]
+  hi_T_40    n= 1 s=0 chi=  32 e=-31182482629.765625000000 (|e-e(chi/2)|=1.7e+10) S=1.11795 (spread 0.0e+00) xi=474063118670578.00 |m|max=0.0710 TR=1.00000 bond_e spread=0.0e+00 c_ls3=0.004 last c_pair=-0.004 [non-injective or unconverged, excluded] arg1/pi=+0.000 xi(last chis [8, 16, 24, 32])=[214457125112880.2, 428914250225761.0, 562949953421311.5, 474063118670578.0]
+  hi_T_40    n= 1 s=1 chi=  32 e=-28363277033.991699218750 (|e-e(chi/2)|=2.2e+12) S=1.12262 (spread 0.0e+00) xi=500399958596721.31 |m|max=0.0539 TR=1.00000 bond_e spread=0.0e+00 c_ls3=0.001 last c_pair=-0.000 [non-injective or unconverged, excluded] arg1/pi=+0.000 xi(last chis [8, 16, 24, 32])=[70368744177663.5, 225179981368524.3, 2251799813685247.5, 500399958596721.3]
+  hi_T_40    n=20 s=0 chi=  32 e=-0.959308071976 (|e-e(chi/2)|=1.7e-05) S=0.69044 (spread 2.2e-12) xi=   22.66 |m|max=0.3448 TR=0.74643 bond_e spread=7.4e-13 c_ls3=0.399 last c_pair=0.317 arg1/pi=-0.185 xi(last chis [8, 16, 24, 32])=[5.9, 12.8, 18.3, 22.7]
+  hi_T_40    n=20 s=1 chi=  32 e=-0.959308071976 (|e-e(chi/2)|=1.7e-05) S=0.69044 (spread 1.9e-12) xi=   22.66 |m|max=0.3448 TR=0.74643 bond_e spread=4.5e-13 c_ls3=0.399 last c_pair=0.317 arg1/pi=+0.185 xi(last chis [8, 16, 24, 32])=[5.9, 12.8, 18.3, 22.7]
+  hi_T_40    n=21 s=0 chi=  32 e=-0.959290705406 (|e-e(chi/2)|=1.4e-04) S=1.34587 (spread 1.3e-08) xi=2319731710.61 |m|max=0.0000 TR=1.00000 bond_e spread=1.8e-08 c_ls3=0.087 last c_pair=0.048 [non-injective or unconverged, excluded] arg1/pi=-1.000 xi(last chis [8, 16, 24, 32])=[13.6, 76.0, 456.1, 2319731710.6]
+  hi_T_40    n=21 s=1 chi=  32 e=-0.959290705407 (|e-e(chi/2)|=1.4e-04) S=1.34587 (spread 2.7e-08) xi=1979391242.54 |m|max=0.0000 TR=1.00000 bond_e spread=7.5e-09 c_ls3=0.088 last c_pair=0.049 [non-injective or unconverged, excluded] arg1/pi=-1.000 xi(last chis [8, 16, 24, 32])=[13.6, 76.0, 456.1, 1979391242.5]
+  hi_T_40    n= 2 s=0 chi=  32 e=-0.959308071976 (|e-e(chi/2)|=1.7e-05) S=0.69044 (spread 1.5e-12) xi=   22.66 |m|max=0.3448 TR=0.97118 bond_e spread=4.0e-12 c_ls3=0.399 last c_pair=0.317 arg1/pi=-0.382 xi(last chis [8, 16, 24, 32])=[5.9, 12.8, 18.3, 22.7]
+  hi_T_40    n= 2 s=1 chi=  32 e=-0.959308071976 (|e-e(chi/2)|=1.7e-05) S=0.69044 (spread 1.4e-12) xi=   22.66 |m|max=0.3448 TR=0.97118 bond_e spread=3.8e-12 c_ls3=0.399 last c_pair=0.317 arg1/pi=+0.382 xi(last chis [8, 16, 24, 32])=[5.9, 12.8, 18.3, 22.7]
+  hi_T_40    n= 3 s=0 chi=  32 e=-0.956851970331 (|e-e(chi/2)|=1.7e+10) S=1.09431 (spread 5.3e-02) xi=844424930131966.50 |m|max=0.1668 TR=1.00000 bond_e spread=7.4e-06 c_ls3=nan last c_pair=nan [non-injective or unconverged, excluded] arg1/pi=+1.000 xi(last chis [8, 16, 24, 32])=[1.3510798882111486e+16, 1501199875790163.8, -inf, 844424930131966.5]
+  hi_T_40    n= 3 s=1 chi=  32 e=-0.956991862904 (|e-e(chi/2)|=2.8e-04) S=1.10664 (spread 4.1e-02) xi=2251799813685246.25 |m|max=0.1530 TR=1.00000 bond_e spread=9.1e-07 c_ls3=-0.001 last c_pair=-0.001 [non-injective or unconverged, excluded] arg1/pi=-0.000 xi(last chis [8, 16, 24, 32])=[4503599627370494.5, 1.3510798882111486e+16, 5404319552844593.0, 2251799813685246.5]
+  hi_T_40    n= 4 s=0 chi=  32 e=-0.959308071976 (|e-e(chi/2)|=1.7e-05) S=0.69044 (spread 1.2e-12) xi=   22.66 |m|max=0.3448 TR=0.94319 bond_e spread=1.7e-12 c_ls3=0.399 last c_pair=0.317 arg1/pi=-0.763 xi(last chis [8, 16, 24, 32])=[5.9, 12.8, 18.3, 22.7]
+  hi_T_40    n= 4 s=1 chi=  32 e=-0.959308071976 (|e-e(chi/2)|=1.7e-05) S=0.69044 (spread 1.3e-12) xi=   22.66 |m|max=0.3448 TR=0.94319 bond_e spread=1.9e-12 c_ls3=0.399 last c_pair=0.317 arg1/pi=-0.763 xi(last chis [8, 16, 24, 32])=[5.9, 12.8, 18.3, 22.7]
+  hi_T_40    n= 5 s=0 chi=  32 e=778334.312500000000 (|e-e(chi/2)|=1.2e+06) S=1.11098 (spread 3.6e-02) xi=22517998136852476.00 |m|max=0.1369 TR=1.00000 bond_e spread=6.3e-07 c_ls3=0.000 last c_pair=0.000 [non-injective or unconverged, excluded] arg1/pi=+1.000 xi(last chis [8, 16, 24, 32])=[577384567611599.5, 1732153702834803.5, 2251799813685245.5, 2.2517998136852476e+16]
+  hi_T_40    n= 5 s=1 chi=  32 e=-0.956890984511 (|e-e(chi/2)|=4.2e+08) S=1.12024 (spread 1.8e-02) xi=3002399751580328.00 |m|max=0.0957 TR=1.00000 bond_e spread=2.3e-05 c_ls3=nan last c_pair=nan [non-injective or unconverged, excluded] arg1/pi=-1.000 xi(last chis [8, 16, 24, 32])=[7505999378950824.0, -inf, -inf, 3002399751580328.0]
+  hi_T_40    n= 6 s=0 chi=  32 e=-0.959308071976 (|e-e(chi/2)|=1.7e-05) S=0.69044 (spread 9.7e-13) xi=   22.66 |m|max=0.3448 TR=0.91600 bond_e spread=1.5e-12 c_ls3=0.399 last c_pair=0.317 arg1/pi=+0.855 xi(last chis [8, 16, 24, 32])=[5.9, 12.8, 18.3, 22.7]
+  hi_T_40    n= 6 s=1 chi=  32 e=-0.959308071976 (|e-e(chi/2)|=1.7e-05) S=0.69044 (spread 9.8e-13) xi=   22.66 |m|max=0.3448 TR=0.91600 bond_e spread=1.4e-12 c_ls3=0.399 last c_pair=0.317 arg1/pi=-0.855 xi(last chis [8, 16, 24, 32])=[5.9, 12.8, 18.3, 22.7]
+  hi_T_40    n= 7 s=0 chi=  32 e=-0.853515625000 (|e-e(chi/2)|=2.2e+01) S=1.22982 (spread 4.1e-02) xi=4503599627370492.50 |m|max=0.1261 TR=1.00000 bond_e spread=3.7e-08 c_ls3=-0.000 last c_pair=0.002 [non-injective or unconverged, excluded] arg1/pi=+1.000 xi(last chis [8, 16, 24, 32])=[1964982540688.6, 3.1525197391593464e+16, 4203359652212459.0, 4503599627370493.0]
+  hi_T_40    n= 7 s=1 chi=  32 e=-4.089285714286 (|e-e(chi/2)|=7.5e+00) S=1.20636 (spread 1.4e-01) xi=5254199565265575.00 |m|max=0.2083 TR=1.00000 bond_e spread=6.4e-08 c_ls3=-0.000 last c_pair=0.000 [non-injective or unconverged, excluded] arg1/pi=-1.000 xi(last chis [8, 16, 24, 32])=[2039871713192.9, 3.1525197391593464e+16, 2335199806784698.0, 5254199565265575.0]
+  hi_T_40    n= 8 s=0 chi=  32 e=-0.959308071976 (|e-e(chi/2)|=1.7e-05) S=0.69044 (spread 1.3e-12) xi=   22.66 |m|max=0.3448 TR=0.88960 bond_e spread=7.6e-13 c_ls3=0.399 last c_pair=0.317 arg1/pi=+0.474 xi(last chis [8, 16, 24, 32])=[5.9, 12.8, 18.3, 22.7]
+  hi_T_40    n= 8 s=1 chi=  32 e=-0.959308071976 (|e-e(chi/2)|=1.7e-05) S=0.69044 (spread 1.3e-12) xi=   22.66 |m|max=0.3448 TR=0.88960 bond_e spread=8.6e-13 c_ls3=0.399 last c_pair=0.317 arg1/pi=-0.474 xi(last chis [8, 16, 24, 32])=[5.9, 12.8, 18.3, 22.7]
+  lowest e for KI22: KI22_n2_quick.json e0=-0.658290381510 chi=32 FES c_ls3=nan m_site0=[0.0, 0.164, -0.0531]
+  lowest e for KI26: KI26_n2_quick.json e0=-0.768963273197 chi=32 FES c_ls3=nan m_site0=[0.4138, -0.0021, -0.2623]
+  lowest e for N34: N34_n2_quick.json e0=-0.853253484190 chi=32 FES c_ls3=nan m_site0=[-0.7771, -0.3096, -0.5369]
+  lowest e for cand_60: cand_60_n2_quick.json e0=-0.775100032400 chi=32 FES c_ls3=nan m_site0=[0.2338, -0.0012, -0.0762]
+  lowest e for cand_61: cand_61_n2_quick.json e0=-0.770087452027 chi=32 FES c_ls3=nan m_site0=[-0.2836, -0.004, 0.1405]
+  lowest e for dist_T_50: dist_T_50_n14_s0.json e0=-0.837123110661 chi=32 FES c_ls3=0.361 m_site0=[0.0005, -0.0724, -0.3591]
+  lowest e for hi_T_40: hi_T_40_n4_s0.json e0=-0.959308071976 chi=32 FES c_ls3=0.399 m_site0=[-0.0203, -0.0011, -0.3448]
+
+== (2) open chains without edge field (oc/)
+  dist_T_50
+    L=  64 c_prof=1.176 c_sm=1.141 Smid=0.9565 trunc=3.4e-11 E=-53.16752348 emid=-0.8370964677 emid-e0=+2.66e-05 S(1)=0.6931 order corr (n.C.n)(-1)^r at r=L/2: +0.0801 (VUMPS m^2=0.1342) t=64s
+    two-size slopes: 32-64: 1.196  64-128: 1.336  128-192: 1.462  192-256: 1.405
+    S(x) at fixed x (smoothed over x-1..x+1):
+      L=  64 x=8:0.8002 x=16:0.9053
+      L= 192 x=8:0.8074 x=16:0.9310 x=32:1.0645 x=64:1.1822
+      L= 256 x=8:0.8082 x=16:0.9336 x=32:1.0730 x=64:1.2075
+  hi_T_40
+    L=  32 c_prof=1.019 c_sm=0.940 Smid=0.8015 trunc=7.8e-12 E=-30.27464650 emid=-0.9593127913 emid-e0=-4.72e-06 S(1)=0.6931 order corr (n.C.n)(-1)^r at r=L/2: +0.0915 (VUMPS m^2=0.1193) t=70s
+    L=  64 c_prof=1.056 c_sm=1.027 Smid=0.9264 trunc=2.2e-11 E=-60.96407087 emid=-0.9592949187 emid-e0=+1.32e-05 S(1)=0.6931 order corr (n.C.n)(-1)^r at r=L/2: +0.0758 (VUMPS m^2=0.1193) t=70s
+    L= 128 c_prof=1.150 c_sm=1.140 Smid=1.0664 trunc=7.2e-11 E=-122.35364237 emid=-0.9592918466 emid-e0=+1.62e-05 S(1)=0.6931 order corr (n.C.n)(-1)^r at r=L/2: +0.0731 (VUMPS m^2=0.1193) t=264s
+    two-size slopes: 32-64: 1.081  64-128: 1.212  128-192: 1.363  192-256: 1.437
+    S(x) at fixed x (smoothed over x-1..x+1):
+      L=  32 x=8:0.7709
+      L=  64 x=8:0.7861 x=16:0.8811
+      L= 128 x=8:0.7911 x=16:0.8991 x=32:1.0077
+      L= 192 x=8:0.7925 x=16:0.9039 x=32:1.0244 x=64:1.1331
+      L= 256 x=8:0.7931 x=16:0.9061 x=32:1.0320 x=64:1.1578
+
+== (3) pinning (edge fields along the VUMPS order parameter: Lst left only, LRst both ends compatible; Lx perpendicular, left only)
+  dist_T_50  LRst  L=  64 c_prof=0.482 Smid=0.6530 (no field 0.9565, drop +0.3035) trunc=5.9e-12 emid=-0.8371404612 central staggered m=[-0.0005, 0.0737, 0.3674]
+  hi_T_40    LRst  L=  64 c_prof=0.477 Smid=0.6712 (no field 0.9264, drop +0.2552) trunc=5.2e-12 emid=-0.9593271255 central staggered m=[-0.0202, -0.0011, -0.3474]
+  hi_T_40    LRst  L= 128 c_prof=0.287 Smid=0.6901 (no field 1.0664, drop +0.3763) trunc=1.0e-11 emid=-0.9593132461 central staggered m=[-0.0203, -0.0011, -0.345]
+  hi_T_40    LRst  Smid(128) - Smid(64) = +0.0189
+  hi_T_40    Lx    L=  64 c_prof=1.054 Smid=0.9182 (no field 0.9264, drop +0.0081) trunc=2.0e-11 emid=-0.9591796321 central staggered m=[-0.0023, 0.0023, -0.054]
+  hi_T_40    Lx    L= 128 c_prof=1.084 Smid=1.0388 (no field 1.0664, drop +0.0276) trunc=6.8e-11 emid=-0.9592530840 central staggered m=[-0.0058, 0.001, -0.0969]
+  hi_T_40    Lx    Smid(128) - Smid(64) = +0.1205
+  hi_T_40    Lz    L=  64 c_prof=0.682 Smid=0.7810 (no field 0.9264, drop +0.1454) trunc=1.2e-11 emid=-0.9589007521 central staggered m=[-0.0152, -0.0018, -0.2617]
+
+== (4) pre-fixed criterion (RESULT.md)
+  hi_T_40    C1: L = 512 missing
+  hi_T_40    C2: lowest cell hi_T_40_n4_s0.json chi=32 c_ls3=0.399 -> False
+  hi_T_40    c > 1 candidate: False
+  dist_T_50  C1: L = 512 missing
+  dist_T_50  C2: lowest cell dist_T_50_n14_s0.json chi=32 c_ls3=0.361 -> False
+  dist_T_50  c > 1 candidate: False
+  cand_60    C1: L = 512 missing
+  cand_60    C2: lowest cell cand_60_n2_quick.json chi=32 c_ls3=nan -> False
+  cand_60    c > 1 candidate: False
+  cand_61    C1: L = 512 missing
+  cand_61    C2: lowest cell cand_61_n2_quick.json chi=32 c_ls3=nan -> False
+  cand_61    c > 1 candidate: False
+  KI22       FES second stage: lowest cell KI22_n2_quick.json chi=32 S=1.1402 xi=52.1 c_ls3=nan -> passes (> 1.2 at chi >= 256): False
+  KI26       FES second stage: lowest cell KI26_n2_quick.json chi=32 S=1.1656 xi=99.0 c_ls3=nan -> passes (> 1.2 at chi >= 256): False
+  N34        FES second stage: lowest cell N34_n2_quick.json chi=32 S=0.0128 xi=1.1 c_ls3=nan -> passes (> 1.2 at chi >= 256): False
+** On entry to DLASCL, parameter number  4 had an illegal value
+** On entry to DLASCL, parameter number  4 had an illegal value
+** On entry to DLASCL, parameter number  4 had an illegal value
+** On entry to DLASCL, parameter number  4 had an illegal value
+** On entry to DLASCL, parameter number  5 had an illegal value
+** On entry to DLASCL, parameter number  4 had an illegal value
+** On entry to DLASCL, parameter number  4 had an illegal value
+** On entry to DLASCL, parameter number  4 had an illegal value
+** On entry to DLASCL, parameter number  4 had an illegal value
+** On entry to DLASCL, parameter number  4 had an illegal value
+** On entry to DLASCL, parameter number  5 had an illegal value
+** On entry to DLASCL, parameter number  4 had an illegal value
+** On entry to DLASCL, parameter number  4 had an illegal value
+** On entry to DLASCL, parameter number  4 had an illegal value
+** On entry to DLASCL, parameter number  4 had an illegal value
+** On entry to DLASCL, parameter number  4 had an illegal value
+** On entry to DLASCL, parameter number  5 had an illegal value
+** On entry to DLASCL, parameter number  4 had an illegal value
