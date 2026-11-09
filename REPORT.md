@@ -1881,3 +1881,30 @@ The target was C170's restated A_S: no bound magnon along the quantum switch set
 - The KT end [derived, conditional]. If the KT point stays in the SU(2)_1 basin at that amplitude, the massive spinons of the SU(2) Thirring model have no bound states. The width of that neighbourhood is not computed.
 - Ring ED, L = 10 to 18, at Dz = 1.6 and 2 [numerical]. Harmonics of amplitude up to 1.4 shift the binding measure (kink-even gap minus twice the kink gap) by at most 0.105, against twice the kink gap of 0.9 to 1.9. Along field paths the kink gap closes first. The resolution is about 0.1, so weak binding is not excluded.
 - Residual A_S′ [assumed]. On the plateau-edge part of the switch set at intermediate anisotropy, between the KT crossover and the Ising regime, at order-one amplitude with |P| < |A|, the two-kink channel has no bound state below the two-kink continuum. This is a two-body statement on a gapped background, testable directly by odd and even sector DMRG at resolution well below 0.1. The liquid interior stays under (A6), with the locking lemma's detuning condition added.
+
+### 9.133 The symmetry-free stratum N: residual (R_N), and a corrected sampling bound (C168, Claude Opus 5.5 agent, 2026-11-09; `codex/work_C168/`)
+
+(H)/(A6) is not derived. It is reduced to a strictly narrower residual, and no c > 1 bond was found.
+
+- Kinematics cannot do it [proved/derived]. A symmetry-free qubit chain with three-site terms has c = 2 (two floating bosons) on an open set. Translation alone carries no LSM anomaly. So any exclusion in N must use the nearest-neighbour range and the dynamics.
+- Lemma O [derived]. This replaces C154's Lemma 3 in N, as C174 R9 asks, and works for any gapped periodic reference. At a generic onset one species softens, so c ≤ 1. Translation acting by charge conjugation, and swapped boson pairs, come only from a pair of real modes at 0 and π, which gives one boson.
+- Lemma D [derived, with numerical checks]. Two independent species softening together out of a gapped phase is a codimension-2 event. Dilute particles in one dimension are impenetrable, so the mass imbalance costs 0.31 η² n²/M per unlike neighbour pair (C164 found 0.3). Passing costs only order n³. So the two-species gas separates or alternates, and c ≤ 1 on a full neighbourhood. A c = 2 region can come out of an onset only at codimension-3 exceptions: equal masses, a zero-energy transmission resonance, or a bound state.
+- Lemma P [derived]. This addresses C174's P4. At weak locking, clock tongues of every order melt through c ≤ 1. A Z_m parafermion with m ≥ 5 needs clock amplitudes of order the exchange, at codimension at least 2.
+- Potts × floating boson in N [derived]. It has codimension 2, not 1, because nothing in N forbids the chiral Huse–Fisher operator. On T and K_I the antiunitary may forbid it, which is C171's case, and that remains open.
+- Lemma H [derived]. c ≤ 1 holds on a full neighbourhood of the AF Heisenberg point in N, uniformly in direction.
+- Residual (R_N) [assumed], on N outside the controlled set:
+  - (i) inside a c = 1 liquid, no independent excitation softens, at momentum 0, π, 2π/3 or incommensurate, composites included (A_S and A_W restated for N);
+  - (ii) there is no P1 corner, where a c ≤ 1 transition of a gapped phase meets the onset of an independent branch;
+  - (iii) none of Lemma D's codimension-3 exceptions occurs with an easy-plane pseudospin;
+  - (iv) there is no P4 fixed point at amplitudes of order the exchange;
+  - (v) there is no c > 1 region whose boundary is entirely first order.
+
+  The method stops at (i) and (ii). They need a lattice-scale branch to come down at harmonics of order the exchange, where nothing is small. A Wentzel–Bardeen-type instability argument for a dilute guest inside a dense liquid was tried and rejected, since the Hubbard chain near saturation is a stable counterexample. K_II is outside scope.
+- Sampling, a correction to §9.115 and §9.125 [numerical, job 17602943].
+  - C155's stage-A flags, 28 gapless points with c_obj > 1.1, were never refined. C155's refine stage reads only the search and gap-closing outputs.
+  - On 1600 range-3 qubit chains with known c, C155's rule flags only 1.8 percent of near-free c = 2 chains and 0.6 percent of interacting ones. A two-stage ring screen (c_S > 1.5 at rings 12/16 and again at 16/20) flags 34 and 18 percent.
+  - All 416 candidates went to rings 16/20, and 45 went to DMRG at L = 32, 64, 128. Of those 45, 43 read c_prof(128) ≤ 1.16.
+  - Two points pass the first stage. idx 10193 reads 0.51, 0.61, 1.94, but its L = 128 energy lies 0.06 above the trend of the smaller sizes, so the state is probably unconverged. idx 450 reads 1.62 at L = 64 and 1.21 at 128, falling.
+  - If both fail the second stage, the normalized volume of any open c > 1 set is below 7.3e-4 to 1.4e-3 at 95 percent confidence. With C155's rule alone the bound would have been about 4e-2.
+  - Caveats: the proxies have range 3 and are close to free, the bound uses C155's coordinate measure, and it says nothing about small-volume sets.
+  - Job 17603367 (pending) runs FES on a four-site cell to χ = 256, and DMRG reseeds at L = 128 and 192, on 10193, 450 and the control 10540.

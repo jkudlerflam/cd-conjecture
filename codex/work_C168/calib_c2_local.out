@@ -1,0 +1,4 @@
+local near-free proxy family (eps_w = 0.1), rings 12/16, N = 324
+c = 0: N  57  C155 rule (crit<0.15 & c_obj>1.1) 0.000  crit<0.15 0.018  F1 (c_S>1.5) 0.035  c_S median -0.00
+c = 1: N 208  C155 rule (crit<0.15 & c_obj>1.1) 0.010  crit<0.15 0.058  F1 (c_S>1.5) 0.149  c_S median 1.00
+c = 2: N  59  C155 rule (crit<0.15 & c_obj>1.1) 0.051  crit<0.15 0.085  F1 (c_S>1.5) 0.610  c_S median 1.99

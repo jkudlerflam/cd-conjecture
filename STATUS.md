@@ -20,7 +20,7 @@ At d = 2 on the U(1) class (XXZ plus DM along z plus field) this is proved with 
 
 ## Is c ≤ 1 at d = 2?
 
-No nearest-neighbour qubit chain with c > 1 has been found, in about 103,000 sampled chains, targeted searches, or the literature (REPORT §9.110 to §9.131, refereed only where noted).
+No nearest-neighbour qubit chain with c > 1 has been found, in about 103,000 sampled chains, targeted searches, or the literature (REPORT §9.110 to §9.133, refereed only where noted). The early screens were weakly sensitive to c = 2. A recalibrated screen of the uniform sample bounds any open c > 1 region at about 0.1 percent of bond space, pending a second-stage check of two points.
 
 - c ≤ 1 is derived at the physics standard at generic points of every symmetric class: U(1), free fermion, XYZ, cyclic, parity, staggered charge, and the singular strata. On the time-reversal strata T and K_I it holds given a one-species assumption of the same kind as item 1 below, and the sheet K_II is open. Isolated multicritical points on the strata have not been inventoried.
 - The XZ point, the only bond with a second decoupled gapless species, gives no c > 1. Its induced interaction has the wrong sign for the c = 3/2 phase.
