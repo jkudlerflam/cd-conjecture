@@ -1,0 +1,50 @@
+u=1.0 v=0.25 r=0.500 valley a k=-0.2527 Nmax=1 R1=40 e-eps=0.000000  N-weights 1.0000
+u=1.0 v=0.25 r=0.500 valley a k=-0.2527 Nmax=2 R1=40 e-eps=-0.041510  N-weights 0.9473 0.0527
+u=1.0 v=0.25 r=0.500 valley a k=-0.2527 Nmax=3 R1=40 e-eps=-0.043672  N-weights 0.9374 0.0605 0.0021
+u=1.0 v=0.25 r=0.500 valley a k=-0.2527 Nmax=4 R1=40 e-eps=-0.043845  N-weights 0.9359 0.0610 0.0027 0.0003
+u=1.0 v=0.25 r=0.500 valley a k=-0.2527 Nmax=5 R1=26 e-eps=-0.043902  N-weights 0.9346 0.0607 0.0032 0.0012 0.0002
+u=1.0 v=0.25 r=0.500 valley b k=-2.8890 Nmax=1 R1=40 e-eps=0.000000  N-weights 1.0000
+u=1.0 v=0.25 r=0.500 valley b k=-2.8890 Nmax=2 R1=40 e-eps=-0.080066  N-weights 0.8018 0.1982
+u=1.0 v=0.25 r=0.500 valley b k=-2.8890 Nmax=3 R1=40 e-eps=-0.102927  N-weights 0.6075 0.3498 0.0427
+u=1.0 v=0.25 r=0.500 valley b k=-2.8890 Nmax=4 R1=40 e-eps=-0.110432  N-weights 0.4870 0.4075 0.0961 0.0094
+u=1.0 v=0.25 r=0.500 valley b k=-2.8890 Nmax=5 R1=26 e-eps=-0.109196  N-weights 0.5284 0.3827 0.0794 0.0088 0.0007
+u=1.0 v=0.5 r=0.707 valley a k=-0.2527 Nmax=1 R1=40 e-eps=0.000000  N-weights 1.0000
+u=1.0 v=0.5 r=0.707 valley a k=-0.2527 Nmax=2 R1=40 e-eps=-0.069068  N-weights 0.9317 0.0683
+u=1.0 v=0.5 r=0.707 valley a k=-0.2527 Nmax=3 R1=40 e-eps=-0.073677  N-weights 0.9153 0.0813 0.0034
+u=1.0 v=0.5 r=0.707 valley a k=-0.2527 Nmax=4 R1=40 e-eps=-0.074087  N-weights 0.9126 0.0823 0.0046 0.0005
+u=1.0 v=0.5 r=0.707 valley a k=-0.2527 Nmax=5 R1=26 e-eps=-0.075207  N-weights 0.8152 0.0763 0.0383 0.0555 0.0146
+u=1.0 v=0.5 r=0.707 valley b k=-2.8890 Nmax=1 R1=40 e-eps=0.000000  N-weights 1.0000
+u=1.0 v=0.5 r=0.707 valley b k=-2.8890 Nmax=2 R1=40 e-eps=-0.112864  N-weights 0.8119 0.1881
+u=1.0 v=0.5 r=0.707 valley b k=-2.8890 Nmax=3 R1=40 e-eps=-0.154648  N-weights 0.4715 0.4448 0.0837
+u=1.0 v=0.5 r=0.707 valley b k=-2.8890 Nmax=4 R1=40 e-eps=-0.210145  N-weights 0.0394 0.5464 0.3505 0.0636
+u=1.0 v=0.5 r=0.707 valley b k=-2.8890 Nmax=5 R1=26 e-eps=-0.204150  N-weights 0.0898 0.4823 0.3220 0.0927 0.0131
+u=2.0 v=1.0 r=1.000 valley a k=-0.5235 Nmax=1 R1=40 e-eps=0.000000  N-weights 1.0000
+u=2.0 v=1.0 r=1.000 valley a k=-0.5235 Nmax=2 R1=40 e-eps=-0.241823  N-weights 0.9211 0.0789
+u=2.0 v=1.0 r=1.000 valley a k=-0.5235 Nmax=3 R1=40 e-eps=-0.255905  N-weights 0.9054 0.0912 0.0034
+u=2.0 v=1.0 r=1.000 valley a k=-0.5235 Nmax=4 R1=40 e-eps=-0.814782  N-weights 0.0000 0.0019 0.6085 0.3896
+u=2.0 v=1.0 r=1.000 valley a k=-0.5235 Nmax=5 R1=26 e-eps=-1.518570  N-weights 0.0000 0.0007 0.3382 0.4899 0.1712
+u=2.0 v=1.0 r=1.000 valley b k=-2.6179 Nmax=1 R1=40 e-eps=-0.000000  N-weights 1.0000
+u=2.0 v=1.0 r=1.000 valley b k=-2.6179 Nmax=2 R1=40 e-eps=-0.422671  N-weights 0.7438 0.2562
+u=2.0 v=1.0 r=1.000 valley b k=-2.6179 Nmax=3 R1=40 e-eps=-0.564617  N-weights 0.1744 0.5869 0.2388
+u=2.0 v=1.0 r=1.000 valley b k=-2.6179 Nmax=4 R1=40 e-eps=-0.899774  N-weights 0.0000 0.4201 0.4759 0.1040
+u=2.0 v=1.0 r=1.000 valley b k=-2.6179 Nmax=5 R1=26 e-eps=-1.086952  N-weights 0.0000 0.1623 0.4436 0.3380 0.0561
+u=2.0 v=2.0 r=1.414 valley a k=-0.5235 Nmax=1 R1=40 e-eps=0.000000  N-weights 1.0000
+u=2.0 v=2.0 r=1.414 valley a k=-0.5235 Nmax=2 R1=40 e-eps=-0.375473  N-weights 0.9103 0.0897
+u=2.0 v=2.0 r=1.414 valley a k=-0.5235 Nmax=3 R1=40 e-eps=-0.399729  N-weights 0.8900 0.1058 0.0042
+u=2.0 v=2.0 r=1.414 valley a k=-0.5235 Nmax=4 R1=40 e-eps=-1.411107  N-weights 0.0000 0.0004 0.6649 0.3348
+u=2.0 v=2.0 r=1.414 valley a k=-0.5235 Nmax=5 R1=26 e-eps=-2.284234  N-weights 0.0000 0.0004 0.3934 0.4654 0.1408
+u=2.0 v=2.0 r=1.414 valley b k=-2.6179 Nmax=1 R1=40 e-eps=-0.000000  N-weights 1.0000
+u=2.0 v=2.0 r=1.414 valley b k=-2.6179 Nmax=2 R1=40 e-eps=-0.553851  N-weights 0.7819 0.2181
+u=2.0 v=2.0 r=1.414 valley b k=-2.6179 Nmax=3 R1=40 e-eps=-0.985111  N-weights 0.0015 0.6962 0.3023
+u=2.0 v=2.0 r=1.414 valley b k=-2.6179 Nmax=4 R1=40 e-eps=-1.606537  N-weights 0.0000 0.3938 0.4750 0.1312
+u=2.0 v=2.0 r=1.414 valley b k=-2.6179 Nmax=5 R1=26 e-eps=-1.914218  N-weights 0.0000 0.2412 0.4567 0.2587 0.0434
+u=0.5 v=0.0625 r=0.250 valley a k=-0.1252 Nmax=1 R1=40 e-eps=0.000000  N-weights 1.0000
+u=0.5 v=0.0625 r=0.250 valley a k=-0.1252 Nmax=2 R1=40 e-eps=-0.006256  N-weights 0.9688 0.0312
+u=0.5 v=0.0625 r=0.250 valley a k=-0.1252 Nmax=3 R1=40 e-eps=-0.006494  N-weights 0.9646 0.0346 0.0008
+u=0.5 v=0.0625 r=0.250 valley a k=-0.1252 Nmax=4 R1=40 e-eps=-0.006505  N-weights 0.9643 0.0347 0.0009 0.0000
+u=0.5 v=0.0625 r=0.250 valley a k=-0.1252 Nmax=5 R1=26 e-eps=-0.006399  N-weights 0.9687 0.0305 0.0007 0.0000 0.0000
+u=0.5 v=0.0625 r=0.250 valley b k=-3.0162 Nmax=1 R1=40 e-eps=-0.000000  N-weights 1.0000
+u=0.5 v=0.0625 r=0.250 valley b k=-3.0162 Nmax=2 R1=40 e-eps=-0.012370  N-weights 0.8652 0.1348
+u=0.5 v=0.0625 r=0.250 valley b k=-3.0162 Nmax=3 R1=40 e-eps=-0.014847  N-weights 0.7809 0.2069 0.0122
+u=0.5 v=0.0625 r=0.250 valley b k=-3.0162 Nmax=4 R1=40 e-eps=-0.015115  N-weights 0.7677 0.2157 0.0160 0.0006
+u=0.5 v=0.0625 r=0.250 valley b k=-3.0162 Nmax=5 R1=26 e-eps=-0.014016  N-weights 0.8242 0.1670 0.0085 0.0003 0.0000

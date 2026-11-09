@@ -1,0 +1,8 @@
+timeout 690m python3 -u bm_driver.py 1.035276180410083 0.3 locked 0.03 64 16,32,64,96,128,128 u1.035_v0.3_locked_dmu0.03 > out/bm_u1.035_v0.3_locked_dmu0.03_Lb64.log 2> logs/bm_u1.035_v0.3_locked_dmu0.03_Lb64.err
+timeout 690m python3 -u bm_driver.py 1.035276180410083 0.3 locked 0.06 64 16,32,64,96,128,128 u1.035_v0.3_locked_dmu0.06 > out/bm_u1.035_v0.3_locked_dmu0.06_Lb64.log 2> logs/bm_u1.035_v0.3_locked_dmu0.06_Lb64.err
+timeout 690m python3 -u block_dmrg_C173.py ctrl_c1_64 typhon_bf/cfg_ctrl_c1_64.json > out/ctrl_c1_Lb64.log 2> logs/ctrl_c1_Lb64.err
+timeout 690m python3 -u block_dmrg_C173.py ctrl_c2_64 typhon_bf/cfg_ctrl_c2_64.json > out/ctrl_c2_Lb64.log 2> logs/ctrl_c2_Lb64.err
+timeout 690m python3 -u bm_driver.py 1.035276180410083 0.3 locked 0.03 32 16,32,64,96,128,128 u1.035_v0.3_locked_dmu0.03 > out/bm_u1.035_v0.3_locked_dmu0.03_Lb32.log 2> logs/bm_u1.035_v0.3_locked_dmu0.03_Lb32.err
+timeout 690m python3 -u bm_driver.py 1.035276180410083 0.3 locked 0.06 32 16,32,64,96,128,128 u1.035_v0.3_locked_dmu0.06 > out/bm_u1.035_v0.3_locked_dmu0.06_Lb32.log 2> logs/bm_u1.035_v0.3_locked_dmu0.06_Lb32.err
+timeout 690m python3 -u block_dmrg_C173.py ctrl_c1_32 typhon_bf/cfg_ctrl_c1_32.json > out/ctrl_c1_Lb32.log 2> logs/ctrl_c1_Lb32.err
+timeout 690m python3 -u block_dmrg_C173.py ctrl_c2_32 typhon_bf/cfg_ctrl_c2_32.json > out/ctrl_c2_Lb32.log 2> logs/ctrl_c2_Lb32.err

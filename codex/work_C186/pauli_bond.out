@@ -1,0 +1,4 @@
+ring L=8: max |H_pauli - H_boson - const| = 3.55e-15
+ring L=8: max |H_pauli - H_boson - const| = 3.55e-15
+ring L=8: max |H_pauli - H_boson - const| = 3.33e-16
+example cusp bond (Delta=1, V=40, u=1, phi=pi/2, mu_eff=-2.2, v=0.25): {'Jx': np.float64(0.49921875), 'Jy': np.float64(-0.50078125), 'D': np.float64(0.00625), 'Jz': 10.0, 'hz': np.float64(-19.9778125), 'Gxz': np.float64(0.125), 'Gzx': np.float64(-0.125)}

@@ -1,0 +1,60 @@
+python3 -u bm_driver.py 1.035276180410083 0.0 zero 0.03 64 16,32,64,96,128,128 u1.035_v0.0_zero_dmu0.03 > out/bm_u1.035_v0.0_zero_dmu0.03_Lb64.log 2> logs/bm_u1.035_v0.0_zero_dmu0.03_Lb64.err
+python3 -u bm_driver.py 1.035276180410083 0.0 zero 0.06 64 16,32,64,96,128,128 u1.035_v0.0_zero_dmu0.06 > out/bm_u1.035_v0.0_zero_dmu0.06_Lb64.log 2> logs/bm_u1.035_v0.0_zero_dmu0.06_Lb64.err
+python3 -u bm_driver.py 1.035276180410083 0.4 zero 0.03 64 16,32,64,96,128,128 u1.035_v0.4_zero_dmu0.03 > out/bm_u1.035_v0.4_zero_dmu0.03_Lb64.log 2> logs/bm_u1.035_v0.4_zero_dmu0.03_Lb64.err
+python3 -u bm_driver.py 1.035276180410083 0.4 zero 0.06 64 16,32,64,96,128,128 u1.035_v0.4_zero_dmu0.06 > out/bm_u1.035_v0.4_zero_dmu0.06_Lb64.log 2> logs/bm_u1.035_v0.4_zero_dmu0.06_Lb64.err
+python3 -u bm_driver.py 1.035276180410083 0.1 locked 0.03 64 16,32,64,96,128,128 u1.035_v0.1_locked_dmu0.03 > out/bm_u1.035_v0.1_locked_dmu0.03_Lb64.log 2> logs/bm_u1.035_v0.1_locked_dmu0.03_Lb64.err
+python3 -u bm_driver.py 1.035276180410083 0.1 locked 0.06 64 16,32,64,96,128,128 u1.035_v0.1_locked_dmu0.06 > out/bm_u1.035_v0.1_locked_dmu0.06_Lb64.log 2> logs/bm_u1.035_v0.1_locked_dmu0.06_Lb64.err
+python3 -u bm_driver.py 1.035276180410083 0.2 locked 0.03 64 16,32,64,96,128,128 u1.035_v0.2_locked_dmu0.03 > out/bm_u1.035_v0.2_locked_dmu0.03_Lb64.log 2> logs/bm_u1.035_v0.2_locked_dmu0.03_Lb64.err
+python3 -u bm_driver.py 1.035276180410083 0.2 locked 0.06 64 16,32,64,96,128,128 u1.035_v0.2_locked_dmu0.06 > out/bm_u1.035_v0.2_locked_dmu0.06_Lb64.log 2> logs/bm_u1.035_v0.2_locked_dmu0.06_Lb64.err
+python3 -u pairbind2.py 0.522104768880206 locked 0.017037 48 5 > out/pb_u0.522_f0.25_N5.jsonl 2> logs/pb_u0.522_f0.25_N5.err
+python3 -u pairbind2.py 0.522104768880206 locked 0.034074 48 5 > out/pb_u0.522_f0.5_N5.jsonl 2> logs/pb_u0.522_f0.5_N5.err
+python3 -u pairbind2.py 0.522104768880206 locked 0.068148 48 5 > out/pb_u0.522_f1.0_N5.jsonl 2> logs/pb_u0.522_f1.0_N5.err
+python3 -u pairbind2.py 0.522104768880206 locked 0.102223 48 5 > out/pb_u0.522_f1.5_N5.jsonl 2> logs/pb_u0.522_f1.5_N5.err
+python3 -u pairbind2.py 0.522104768880206 locked 0.136297 48 5 > out/pb_u0.522_f2.0_N5.jsonl 2> logs/pb_u0.522_f2.0_N5.err
+python3 -u pairbind2.py 1.035276180410083 locked 0.066987 48 5 > out/pb_u1.035_f0.25_N5.jsonl 2> logs/pb_u1.035_f0.25_N5.err
+python3 -u pairbind2.py 1.035276180410083 locked 0.133975 48 5 > out/pb_u1.035_f0.5_N5.jsonl 2> logs/pb_u1.035_f0.5_N5.err
+python3 -u pairbind2.py 1.035276180410083 locked 0.267949 48 5 > out/pb_u1.035_f1.0_N5.jsonl 2> logs/pb_u1.035_f1.0_N5.err
+python3 -u pairbind2.py 1.035276180410083 locked 0.401924 48 5 > out/pb_u1.035_f1.5_N5.jsonl 2> logs/pb_u1.035_f1.5_N5.err
+python3 -u pairbind2.py 1.035276180410083 locked 0.535898 48 5 > out/pb_u1.035_f2.0_N5.jsonl 2> logs/pb_u1.035_f2.0_N5.err
+python3 -u pairbind2.py 1.530733729460359 locked 0.146447 48 5 > out/pb_u1.531_f0.25_N5.jsonl 2> logs/pb_u1.531_f0.25_N5.err
+python3 -u pairbind2.py 1.530733729460359 locked 0.292893 48 5 > out/pb_u1.531_f0.5_N5.jsonl 2> logs/pb_u1.531_f0.5_N5.err
+python3 -u pairbind2.py 1.530733729460359 locked 0.585786 48 5 > out/pb_u1.531_f1.0_N5.jsonl 2> logs/pb_u1.531_f1.0_N5.err
+python3 -u pairbind2.py 1.530733729460359 locked 0.878680 48 5 > out/pb_u1.531_f1.5_N5.jsonl 2> logs/pb_u1.531_f1.5_N5.err
+python3 -u pairbind2.py 1.530733729460359 locked 1.171573 48 5 > out/pb_u1.531_f2.0_N5.jsonl 2> logs/pb_u1.531_f2.0_N5.err
+python3 -u pairbind2.py 2.000000000000000 locked 0.250000 48 5 > out/pb_u2.0_f0.25_N5.jsonl 2> logs/pb_u2.0_f0.25_N5.err
+python3 -u pairbind2.py 2.000000000000000 locked 0.500000 48 5 > out/pb_u2.0_f0.5_N5.jsonl 2> logs/pb_u2.0_f0.5_N5.err
+python3 -u pairbind2.py 2.000000000000000 locked 1.000000 48 5 > out/pb_u2.0_f1.0_N5.jsonl 2> logs/pb_u2.0_f1.0_N5.err
+python3 -u pairbind2.py 2.000000000000000 locked 1.500000 48 5 > out/pb_u2.0_f1.5_N5.jsonl 2> logs/pb_u2.0_f1.5_N5.err
+python3 -u pairbind2.py 2.000000000000000 locked 2.000000 48 5 > out/pb_u2.0_f2.0_N5.jsonl 2> logs/pb_u2.0_f2.0_N5.err
+python3 -u bm_driver.py 1.035276180410083 0.0 zero 0.03 32 16,32,64,96,128,128 u1.035_v0.0_zero_dmu0.03 > out/bm_u1.035_v0.0_zero_dmu0.03_Lb32.log 2> logs/bm_u1.035_v0.0_zero_dmu0.03_Lb32.err
+python3 -u bm_driver.py 1.035276180410083 0.0 zero 0.06 32 16,32,64,96,128,128 u1.035_v0.0_zero_dmu0.06 > out/bm_u1.035_v0.0_zero_dmu0.06_Lb32.log 2> logs/bm_u1.035_v0.0_zero_dmu0.06_Lb32.err
+python3 -u bm_driver.py 1.035276180410083 0.4 zero 0.03 32 16,32,64,96,128,128 u1.035_v0.4_zero_dmu0.03 > out/bm_u1.035_v0.4_zero_dmu0.03_Lb32.log 2> logs/bm_u1.035_v0.4_zero_dmu0.03_Lb32.err
+python3 -u bm_driver.py 1.035276180410083 0.4 zero 0.06 32 16,32,64,96,128,128 u1.035_v0.4_zero_dmu0.06 > out/bm_u1.035_v0.4_zero_dmu0.06_Lb32.log 2> logs/bm_u1.035_v0.4_zero_dmu0.06_Lb32.err
+python3 -u bm_driver.py 1.035276180410083 0.1 locked 0.03 32 16,32,64,96,128,128 u1.035_v0.1_locked_dmu0.03 > out/bm_u1.035_v0.1_locked_dmu0.03_Lb32.log 2> logs/bm_u1.035_v0.1_locked_dmu0.03_Lb32.err
+python3 -u bm_driver.py 1.035276180410083 0.1 locked 0.06 32 16,32,64,96,128,128 u1.035_v0.1_locked_dmu0.06 > out/bm_u1.035_v0.1_locked_dmu0.06_Lb32.log 2> logs/bm_u1.035_v0.1_locked_dmu0.06_Lb32.err
+python3 -u bm_driver.py 1.035276180410083 0.2 locked 0.03 32 16,32,64,96,128,128 u1.035_v0.2_locked_dmu0.03 > out/bm_u1.035_v0.2_locked_dmu0.03_Lb32.log 2> logs/bm_u1.035_v0.2_locked_dmu0.03_Lb32.err
+python3 -u bm_driver.py 1.035276180410083 0.2 locked 0.06 32 16,32,64,96,128,128 u1.035_v0.2_locked_dmu0.06 > out/bm_u1.035_v0.2_locked_dmu0.06_Lb32.log 2> logs/bm_u1.035_v0.2_locked_dmu0.06_Lb32.err
+python3 -u pairbind2.py 0.522104768880206 locked 0.017037 48 4 > out/pb_u0.522_f0.25_N4.jsonl 2> logs/pb_u0.522_f0.25_N4.err
+python3 -u pairbind2.py 0.522104768880206 locked 0.034074 48 4 > out/pb_u0.522_f0.5_N4.jsonl 2> logs/pb_u0.522_f0.5_N4.err
+python3 -u pairbind2.py 0.522104768880206 locked 0.068148 48 4 > out/pb_u0.522_f1.0_N4.jsonl 2> logs/pb_u0.522_f1.0_N4.err
+python3 -u pairbind2.py 0.522104768880206 locked 0.102223 48 4 > out/pb_u0.522_f1.5_N4.jsonl 2> logs/pb_u0.522_f1.5_N4.err
+python3 -u pairbind2.py 0.522104768880206 locked 0.136297 48 4 > out/pb_u0.522_f2.0_N4.jsonl 2> logs/pb_u0.522_f2.0_N4.err
+python3 -u pairbind2.py 0.522104768880206 zero 0.0,0.034074,0.061334,0.074963,0.102223 48 2 > out/pb_u0.522_zero.jsonl 2> logs/pb_u0.522_zero.err
+python3 -u pairbind2.py 1.035276180410083 locked 0.066987 48 4 > out/pb_u1.035_f0.25_N4.jsonl 2> logs/pb_u1.035_f0.25_N4.err
+python3 -u pairbind2.py 1.035276180410083 locked 0.133975 48 4 > out/pb_u1.035_f0.5_N4.jsonl 2> logs/pb_u1.035_f0.5_N4.err
+python3 -u pairbind2.py 1.035276180410083 locked 0.267949 48 4 > out/pb_u1.035_f1.0_N4.jsonl 2> logs/pb_u1.035_f1.0_N4.err
+python3 -u pairbind2.py 1.035276180410083 locked 0.401924 48 4 > out/pb_u1.035_f1.5_N4.jsonl 2> logs/pb_u1.035_f1.5_N4.err
+python3 -u pairbind2.py 1.035276180410083 locked 0.535898 48 4 > out/pb_u1.035_f2.0_N4.jsonl 2> logs/pb_u1.035_f2.0_N4.err
+python3 -u pairbind2.py 1.035276180410083 zero 0.0,0.133975,0.241154,0.294744,0.401924 48 2 > out/pb_u1.035_zero.jsonl 2> logs/pb_u1.035_zero.err
+python3 -u pairbind2.py 1.530733729460359 locked 0.146447 48 4 > out/pb_u1.531_f0.25_N4.jsonl 2> logs/pb_u1.531_f0.25_N4.err
+python3 -u pairbind2.py 1.530733729460359 locked 0.292893 48 4 > out/pb_u1.531_f0.5_N4.jsonl 2> logs/pb_u1.531_f0.5_N4.err
+python3 -u pairbind2.py 1.530733729460359 locked 0.585786 48 4 > out/pb_u1.531_f1.0_N4.jsonl 2> logs/pb_u1.531_f1.0_N4.err
+python3 -u pairbind2.py 1.530733729460359 locked 0.878680 48 4 > out/pb_u1.531_f1.5_N4.jsonl 2> logs/pb_u1.531_f1.5_N4.err
+python3 -u pairbind2.py 1.530733729460359 locked 1.171573 48 4 > out/pb_u1.531_f2.0_N4.jsonl 2> logs/pb_u1.531_f2.0_N4.err
+python3 -u pairbind2.py 1.530733729460359 zero 0.0,0.292893,0.527208,0.644365,0.878680 48 2 > out/pb_u1.531_zero.jsonl 2> logs/pb_u1.531_zero.err
+python3 -u pairbind2.py 2.000000000000000 locked 0.250000 48 4 > out/pb_u2.0_f0.25_N4.jsonl 2> logs/pb_u2.0_f0.25_N4.err
+python3 -u pairbind2.py 2.000000000000000 locked 0.500000 48 4 > out/pb_u2.0_f0.5_N4.jsonl 2> logs/pb_u2.0_f0.5_N4.err
+python3 -u pairbind2.py 2.000000000000000 locked 1.000000 48 4 > out/pb_u2.0_f1.0_N4.jsonl 2> logs/pb_u2.0_f1.0_N4.err
+python3 -u pairbind2.py 2.000000000000000 locked 1.500000 48 4 > out/pb_u2.0_f1.5_N4.jsonl 2> logs/pb_u2.0_f1.5_N4.err
+python3 -u pairbind2.py 2.000000000000000 locked 2.000000 48 4 > out/pb_u2.0_f2.0_N4.jsonl 2> logs/pb_u2.0_f2.0_N4.err
+python3 -u pairbind2.py 2.000000000000000 zero 0.0,0.500000,0.900000,1.100000,1.500000 48 2 > out/pb_u2.0_zero.jsonl 2> logs/pb_u2.0_zero.err

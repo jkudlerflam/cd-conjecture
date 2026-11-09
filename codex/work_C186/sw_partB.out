@@ -1,0 +1,68 @@
+
+Part B: des Cloizeaux effective Hamiltonian of the full chain, L = 11, ring = False
+  V =   20.0  t2 = 2.500e-02  gap = 19.63  min sv = 0.9858
+     hop2                   meas = -2.495379e-02-3.035756e-04j  pred = -2.500000e-02+0.000000e+00j  |meas-pred|/t2 = 1.23e-02
+     V2                     meas = -3.995898e-02+0.000000e+00j  pred = -4.000000e-02+0.000000e+00j  |meas-pred|/t2 = 1.64e-03
+     V3                     meas = -1.688180e-02+0.000000e+00j  pred = -1.666667e-02+0.000000e+00j  |meas-pred|/t2 = 8.61e-03
+     V4                     meas = 1.708735e-04+0.000000e+00j  pred = 0.000000e+00+0.000000e+00j  |meas-pred|/t2 = 6.83e-03
+     hop1 (b+_{j+1} b_j)    meas = 1.005299e-02+1.324815e-02j  pred = 1.070187e-02+1.330000e-02j  |meas-pred|/t2 = 2.60e-02
+     onsite+mu              meas = 1.310526e-01+0.000000e+00j  pred = 1.314037e-01+0.000000e+00j  |meas-pred|/t2 = 1.40e-02
+     dN1 uniform            meas = -6.207611e-03+1.469670e-02j  pred = -6.489391e-03+1.326668e-02j  |meas-pred|/t2 = 5.83e-02
+     dN1 n_{j+2}            meas = -1.317134e-02-9.290468e-03j  pred = -1.285245e-02-9.209486e-03j  |meas-pred|/t2 = 1.32e-02
+     dN1 n_{j-2}            meas = 1.318446e-02+8.964107e-03j  pred = 1.285245e-02+9.209486e-03j  |meas-pred|/t2 = 1.65e-02
+     dN2 sep2               meas = -5.213139e-04-1.435516e-04j  pred = 0.000000e+00+0.000000e+00j  |meas-pred|/t2 = 2.16e-02
+     dN2 sep3               meas = 1.585910e-03+4.694350e-04j  pred = 0.000000e+00+0.000000e+00j  |meas-pred|/t2 = 6.62e-02
+  V =   40.0  t2 = 1.250e-02  gap = 39.81  min sv = 0.9964
+     hop2                   meas = -1.249919e-02-8.034849e-05j  pred = -1.250000e-02+0.000000e+00j  |meas-pred|/t2 = 6.43e-03
+     V2                     meas = -2.002688e-02+0.000000e+00j  pred = -2.000000e-02+0.000000e+00j  |meas-pred|/t2 = 2.15e-03
+     V3                     meas = -8.412270e-03+0.000000e+00j  pred = -8.333333e-03+0.000000e+00j  |meas-pred|/t2 = 6.31e-03
+     V4                     meas = 2.150123e-05+0.000000e+00j  pred = 0.000000e+00+0.000000e+00j  |meas-pred|/t2 = 1.72e-03
+     hop1 (b+_{j+1} b_j)    meas = 5.105974e-03+6.568396e-03j  pred = 5.270547e-03+6.575000e-03j  |meas-pred|/t2 = 1.32e-02
+     onsite+mu              meas = 6.548719e-02+0.000000e+00j  pred = 6.554109e-02+0.000000e+00j  |meas-pred|/t2 = 4.31e-03
+     dN1 uniform            meas = -3.091455e-03+7.353704e-03j  pred = -3.157920e-03+6.987294e-03j  |meas-pred|/t2 = 2.98e-02
+     dN1 n_{j+2}            meas = -6.506522e-03-4.633314e-03j  pred = -6.426223e-03-4.604743e-03j  |meas-pred|/t2 = 6.82e-03
+     dN1 n_{j-2}            meas = 6.514668e-03+4.540575e-03j  pred = 6.426223e-03+4.604743e-03j  |meas-pred|/t2 = 8.74e-03
+     dN2 sep2               meas = -1.296113e-04-3.786868e-05j  pred = 0.000000e+00+0.000000e+00j  |meas-pred|/t2 = 1.08e-02
+     dN2 sep3               meas = 3.978989e-04+1.204360e-04j  pred = 0.000000e+00+0.000000e+00j  |meas-pred|/t2 = 3.33e-02
+  V =   80.0  t2 = 6.250e-03  gap = 79.91  min sv = 0.9991
+     hop2                   meas = -6.251150e-03-2.065077e-05j  pred = -6.250000e-03+0.000000e+00j  |meas-pred|/t2 = 3.31e-03
+     V2                     meas = -1.001140e-02+0.000000e+00j  pred = -1.000000e-02+0.000000e+00j  |meas-pred|/t2 = 1.82e-03
+     V3                     meas = -4.189590e-03+0.000000e+00j  pred = -4.166667e-03+0.000000e+00j  |meas-pred|/t2 = 3.67e-03
+     V4                     meas = 2.690924e-06+0.000000e+00j  pred = 0.000000e+00+0.000000e+00j  |meas-pred|/t2 = 4.31e-04
+     hop1 (b+_{j+1} b_j)    meas = 2.573255e-03+3.267916e-03j  pred = 2.614678e-03+3.268750e-03j  |meas-pred|/t2 = 6.63e-03
+     onsite+mu              meas = 3.272012e-02+0.000000e+00j  pred = 3.272936e-02+0.000000e+00j  |meas-pred|/t2 = 1.48e-03
+     dN1 uniform            meas = -1.541147e-03+3.674824e-03j  pred = -1.557266e-03+3.582135e-03j  |meas-pred|/t2 = 1.51e-02
+     dN1 n_{j+2}            meas = -3.233244e-03-2.310535e-03j  pred = -3.213112e-03-2.302371e-03j  |meas-pred|/t2 = 3.48e-03
+     dN1 n_{j-2}            meas = 3.235881e-03+2.286005e-03j  pred = 3.213112e-03+2.302371e-03j  |meas-pred|/t2 = 4.49e-03
+     dN2 sep2               meas = -3.226462e-05-9.702244e-06j  pred = 0.000000e+00+0.000000e+00j  |meas-pred|/t2 = 5.39e-03
+     dN2 sep3               meas = 9.953442e-05+3.045846e-05j  pred = 0.000000e+00+0.000000e+00j  |meas-pred|/t2 = 1.67e-02
+  V =  160.0  t2 = 3.125e-03  gap = 159.95  min sv = 0.9998
+     hop2                   meas = -3.125457e-03-5.233690e-06j  pred = -3.125000e-03+0.000000e+00j  |meas-pred|/t2 = 1.68e-03
+     V2                     meas = -5.003435e-03+0.000000e+00j  pred = -5.000000e-03+0.000000e+00j  |meas-pred|/t2 = 1.10e-03
+     V3                     meas = -2.089464e-03+0.000000e+00j  pred = -2.083333e-03+0.000000e+00j  |meas-pred|/t2 = 1.96e-03
+     V4                     meas = 3.363931e-07+0.000000e+00j  pred = 0.000000e+00+0.000000e+00j  |meas-pred|/t2 = 1.08e-04
+     hop1 (b+_{j+1} b_j)    meas = 1.291738e-03+1.629583e-03j  pred = 1.302128e-03+1.629687e-03j  |meas-pred|/t2 = 3.32e-03
+     onsite+mu              meas = 1.635248e-02+0.000000e+00j  pred = 1.635426e-02+0.000000e+00j  |meas-pred|/t2 = 5.70e-04
+     dN1 uniform            meas = -7.692416e-04+1.836495e-03j  pred = -7.732096e-04+1.813190e-03j  |meas-pred|/t2 = 7.57e-03
+     dN1 n_{j+2}            meas = -1.611595e-03-1.153353e-03j  pred = -1.606556e-03-1.151186e-03j  |meas-pred|/t2 = 1.76e-03
+     dN1 n_{j-2}            meas = 1.612329e-03+1.147056e-03j  pred = 1.606556e-03+1.151186e-03j  |meas-pred|/t2 = 2.27e-03
+     dN2 sep2               meas = -8.045782e-06-2.454052e-06j  pred = 0.000000e+00+0.000000e+00j  |meas-pred|/t2 = 2.69e-03
+     dN2 sep3               meas = 2.488359e-05+7.656006e-06j  pred = 0.000000e+00+0.000000e+00j  |meas-pred|/t2 = 8.33e-03
+
+Part B: des Cloizeaux effective Hamiltonian of the full chain, L = 12, ring = True
+** On entry to ZHEEVD, parameter number 10 had an illegal value
+Traceback (most recent call last):
+  File "codex/work_C186/sw_general.py", line 258, in <module>
+    partB(12, True)
+  File "codex/work_C186/sw_general.py", line 238, in partB
+    He, pos, gap, smin = des_cloizeaux(L, V, w, p0, beta0, betap0, mu, lam, ring)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "codex/work_C186/sw_general.py", line 172, in des_cloizeaux
+    e, U = np.linalg.eigh(H)
+           ^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py", line 1655, in eigh
+    w, vt = gufunc(a, signature=signature)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py", line 150, in _raise_linalgerror_eigenvalues_nonconvergence
+    raise LinAlgError("Eigenvalues did not converge")
+numpy.linalg.LinAlgError: Eigenvalues did not converge
