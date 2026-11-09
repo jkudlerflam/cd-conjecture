@@ -1,0 +1,24 @@
+  sweep 0 chi=16 E=-42.610849583155 trunc=0.00e+00 mv/solve=26.5 (max 47) res_max=9.8e-07
+  sweep 1 chi=32 E=-42.610868977627 trunc=2.80e-18 mv/solve=7.1 (max 30) res_max=9.8e-07
+  sweep 2 chi=64 E=-42.610868977627 trunc=3.89e-31 mv/solve=0.8 (max 1) res_max=8.1e-07
+  sweep 3 chi=96 E=-42.610868977627 trunc=4.31e-24 mv/solve=6.3 (max 21) res_max=1.0e-10
+  sweep 4 chi=96 E=-42.610868977627 trunc=7.94e-25 mv/solve=0.8 (max 1) res_max=5.9e-11
+{'kind': 'xx', 'L': 24, 'sites': 24, 'HZ': -1.721484054007887, 'chis': [16, 32, 64, 96, 96], 'E': -42.61086897762698, 'exact_E': np.float64(-42.610868977627085), 'energy_error': np.float64(1.0658141036401503e-13), 'exact_N': 4, 'max_entropy_error': 4.918621065996831e-12, 'Sbar': 0.6840837808875438, 'exact_Sbar': 0.6840837808852688, 'c_prof': 0.3559275801532081, 'c_sm': 0.5863142228114291, 'time_s': 0.20193696022033691}
+  sweep 0 chi=16 E=-85.421665788567 trunc=0.00e+00 mv/solve=33.3 (max 50) res_max=1.0e-06
+  sweep 1 chi=32 E=-85.434887698456 trunc=3.91e-10 mv/solve=23.7 (max 56) res_max=1.0e-06
+  sweep 2 chi=64 E=-85.434887740188 trunc=1.58e-13 mv/solve=3.5 (max 11) res_max=9.9e-07
+  sweep 3 chi=96 E=-85.434887740197 trunc=2.61e-16 mv/solve=11.5 (max 28) res_max=9.9e-11
+  sweep 4 chi=96 E=-85.434887740197 trunc=2.68e-16 mv/solve=3.7 (max 12) res_max=9.9e-11
+{'kind': 'xx', 'L': 48, 'sites': 48, 'HZ': -1.721484054007887, 'chis': [16, 32, 64, 96, 96], 'E': -85.43488774019684, 'exact_E': np.float64(-85.43488774019708), 'energy_error': np.float64(2.4158453015843406e-13), 'exact_N': 8, 'max_entropy_error': 4.129141473185882e-12, 'Sbar': 0.8069716151378589, 'exact_Sbar': 0.8069716151380194, 'c_prof': 1.1520853413975845, 'c_sm': 1.0983265098912556, 'time_s': 3.1921050548553467}
+  sweep 0 chi=16 E=-42.394896498413 trunc=4.14e-07 mv/solve=37.4 (max 61) res_max=2.3e-04
+  sweep 1 chi=32 E=-42.394927608760 trunc=5.74e-14 mv/solve=9.1 (max 31) res_max=9.8e-07
+  sweep 2 chi=64 E=-42.394927608760 trunc=6.38e-31 mv/solve=1.0 (max 1) res_max=4.8e-07
+  sweep 3 chi=96 E=-42.394927608760 trunc=4.86e-24 mv/solve=9.0 (max 29) res_max=9.9e-11
+  sweep 4 chi=96 E=-42.394927608760 trunc=7.52e-25 mv/solve=1.0 (max 1) res_max=7.4e-11
+{'kind': 'leg2', 'L': 24, 'sites': 12, 'HZ': -1.721484054007887, 'chis': [16, 32, 64, 96, 96], 'E': -42.39492760876033, 'exact_E': np.float64(-42.39492760876029), 'energy_error': np.float64(-3.552713678800501e-14), 'exact_N': 4, 'max_entropy_error': 1.4124257319281242e-11, 'Sbar': 1.123220891900867, 'exact_Sbar': 1.1232208918909945, 'c_prof': 3.9847843865910844, 'c_sm': 2.508904919176982, 'time_s': 0.560373067855835}
+  sweep 0 chi=16 E=-85.161749037002 trunc=2.40e-05 mv/solve=40.1 (max 56) res_max=9.9e-07
+  sweep 1 chi=32 E=-85.219458623839 trunc=2.58e-05 mv/solve=36.6 (max 61) res_max=2.5e-06
+  sweep 2 chi=64 E=-85.221698163971 trunc=1.39e-06 mv/solve=22.0 (max 53) res_max=1.0e-06
+  sweep 3 chi=96 E=-85.221736743953 trunc=2.82e-08 mv/solve=33.6 (max 74) res_max=9.9e-11
+  sweep 4 chi=96 E=-85.221736755395 trunc=2.77e-08 mv/solve=22.2 (max 51) res_max=9.9e-11
+{'kind': 'leg2', 'L': 48, 'sites': 24, 'HZ': -1.721484054007887, 'chis': [16, 32, 64, 96, 96], 'E': -85.22173675539547, 'exact_E': np.float64(-85.22173795525417), 'energy_error': np.float64(1.199858701284029e-06), 'exact_N': 8, 'max_entropy_error': 3.806384614080116e-05, 'Sbar': 1.3681306283079788, 'exact_Sbar': 1.3681675617705376, 'c_prof': 0.7116148507652412, 'c_sm': 1.1723972852828068, 'time_s': 33.43834590911865}

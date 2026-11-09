@@ -41,5 +41,16 @@ if __name__=='__main__':
                  entropy_error=float(np.max(np.abs(np.array(S)-r['entropy']))),gap=float(en[1]-en[0]))
         assert row['matrix_error']<1e-12 and row['energy_error']<1e-8 and row['entropy_error']<1e-6,row
         results.append(row)
+    for parity,bit in [('even',0),('odd',1)]:
+        name='c181153';L=8;p=couplings(name);A=literal_matrix(L,p)
+        inds=[j for j in range(2**L) if j.bit_count()%2==bit]
+        en,vs=eigh(A[np.ix_(inds,inds)],subset_by_index=[0,0])
+        v=np.zeros(2**L,complex);v[inds]=vs[:,0];S=[]
+        for cut in range(1,L):
+            sv=np.linalg.svd(v.reshape(2**cut,-1),compute_uv=False);p2=sv*sv;p2=p2[p2>1e-25];S.append(float(-p2@np.log(p2)))
+        r,_,_=run(dict(name=name,L=L,chi=32,sweeps=12,seed=1,parity=parity))
+        row=dict(name=name,L=L,parity=parity,energy_error=abs(r['E_unshifted']-en[0]),entropy_error=float(np.max(np.abs(np.array(S)-r['entropy']))))
+        assert row['energy_error']<1e-8 and row['entropy_error']<1e-6,row
+        results.append(row)
     Path(__file__).with_name('validation.json').write_text(json.dumps(results,indent=2)+'\n')
     print(json.dumps(results,indent=2))

@@ -1,0 +1,7 @@
+  sweep 0 chi=16 E=-9.382602410400 trunc=0.00e+00 mv/solve=49.1 (max 61) res_max=2.4e-02
+  sweep 1 chi=32 E=-9.383236593825 trunc=4.38e-11 mv/solve=44.2 (max 61) res_max=2.0e-03
+  sweep 2 chi=48 E=-9.383236628689 trunc=3.32e-12 mv/solve=23.2 (max 61) res_max=1.7e-05
+  sweep 3 chi=48 E=-9.383236628705 trunc=4.07e-12 mv/solve=9.7 (max 33) res_max=1.0e-06
+  sweep 4 chi=64 E=-9.383236628922 trunc=2.92e-13 mv/solve=81.3 (max 251) res_max=1.0e-09
+  sweep 5 chi=64 E=-9.383236628922 trunc=3.26e-13 mv/solve=59.7 (max 204) res_max=1.0e-09
+done /Users/pace/Documents/GitHub/cd-conjecture/contrib/d2_dmrg_priority_20261109/results/hop_m0p005_24.json E=-100.1481366289 Sbar=0.2065 c_prof=0.244 trunc=3.3e-13 n_mid=0.1052 N=3.821 emid=-4.0100966408 t=23s

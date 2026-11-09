@@ -1,0 +1,5 @@
+  sweep 0 chi=16 E=-9.383719946402 trunc=0.00e+00 mv/solve=49.1 (max 61) res_max=1.8e-02
+  sweep 1 chi=32 E=-9.384976887596 trunc=5.25e-11 mv/solve=43.7 (max 61) res_max=1.9e-03
+  sweep 2 chi=48 E=-9.384976951139 trunc=3.54e-12 mv/solve=23.7 (max 61) res_max=1.7e-05
+  sweep 3 chi=48 E=-9.384976951166 trunc=4.14e-12 mv/solve=9.7 (max 35) res_max=9.8e-07
+  sweep 4 chi=64 E=-9.384976951382 trunc=3.45e-13 mv/solve=80.0 (max 246) res_max=9.9e-10

@@ -1,0 +1,7 @@
+  sweep 0 chi=16 E=-9.388718866290 trunc=0.00e+00 mv/solve=49.1 (max 61) res_max=2.3e-02
+  sweep 1 chi=32 E=-9.390354775585 trunc=5.86e-11 mv/solve=44.8 (max 61) res_max=2.4e-03
+  sweep 2 chi=48 E=-9.390354875155 trunc=6.33e-12 mv/solve=26.9 (max 61) res_max=3.7e-05
+  sweep 3 chi=48 E=-9.390354875145 trunc=7.35e-12 mv/solve=12.5 (max 43) res_max=1.0e-06
+  sweep 4 chi=64 E=-9.390354875590 trunc=5.58e-13 mv/solve=91.9 (max 292) res_max=1.0e-09
+  sweep 5 chi=64 E=-9.390354875588 trunc=6.24e-13 mv/solve=63.9 (max 215) res_max=1.0e-09
+done /Users/pace/Documents/GitHub/cd-conjecture/contrib/d2_dmrg_priority_20261109/results/lad_m7p9455_24.json E=-100.1368548756 Sbar=0.2907 c_prof=0.819 trunc=6.2e-13 n_mid=0.1529 N=4.662 emid=-4.0102206377 t=18s

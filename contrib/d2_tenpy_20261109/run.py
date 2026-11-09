@@ -31,6 +31,12 @@ def couplings(name, hz=None):
                  Jz=10., Dz=.00625, Dy=.075, hz=-19.9774375)
     elif name == 'xx':
         p = dict(Jx=.5, Jy=.5, Jz=0., Dz=0., Dy=0., hz=0.)
+    elif name == 'c181':
+        p = dict(Jx=.500098723, Jy=-.499901277, Jz=10., Dz=.006249220,
+                 Dy=0., hz=-19.97589125)
+    elif name == 'c181153':
+        w=np.exp(1.53j)/80
+        p=dict(Jx=(1+w.real)/2,Jy=(-1+w.real)/2,Jz=10.,Dz=w.imag/2,Dy=0.,hz=-19.97589125)
     elif name == 'two_xx':
         # Two independent even/odd sublattices. This is an estimator control,
         # NOT a nearest-neighbour d=2 counterexample.
@@ -44,7 +50,7 @@ def couplings(name, hz=None):
 
 class PauliChain(CouplingMPOModel):
     def init_sites(self, model_params):
-        return SpinHalfSite(conserve=None)
+        return SpinHalfSite(conserve=model_params.get('conserve',None))
 
     def init_terms(self, model_params):
         p = model_params['couplings']
@@ -61,6 +67,14 @@ class PauliChain(CouplingMPOModel):
         bonds = L if self.lat.bc_MPS == 'infinite' else L-distance
         self.energy_offset = bonds*p['Jz']+L*p['hz']
         self.add_onsite(-self.energy_offset/L,0,'Id')
+
+
+class ProgressEngine(dmrg.TwoSiteDMRGEngine):
+    def run_iteration(self):
+        result=super().run_iteration()
+        st=self.sweep_stats
+        print(json.dumps({k:plain(st[k][-1]) for k in ('sweep','E','Delta_E','Delta_S','max_trunc_err','max_chi')}),flush=True)
+        return result
 
 
 def entropy_fits(S):
@@ -86,11 +100,20 @@ def plain(x):
 
 def run(cfg):
     start=time.time(); L=cfg['L']; p=couplings(cfg['name'],cfg.get('hz'))
-    model=PauliChain(dict(L=L,bc_MPS='finite',bc_x='open',couplings=p))
+    parity=cfg.get('parity')
+    if parity and p['Dy']:
+        raise ValueError('Transverse DM breaks spin parity; projection forbidden.')
+    model=PauliChain(dict(L=L,bc_MPS='finite',bc_x='open',couplings=p,conserve='parity' if parity else None))
     rng=np.random.default_rng(cfg.get('seed',1))
     density=cfg.get('init_density',.12)
     # Random complex product state provides a nonzero overlap with all sectors.
     state=[np.array([np.sqrt(1-density),np.sqrt(density)*np.exp(2j*np.pi*rng.random())]) for _ in range(L)]
+    if parity:
+        count=max(2,round(density*L))
+        desired=0 if parity=='even' else 1
+        count += (desired-count)%2
+        occupied=set(np.linspace(1,L-2,count,dtype=int).tolist())
+        state=['down' if j in occupied else 'up' for j in range(L)]
     psi=MPS.from_product_state(model.lat.mps_sites(),state,bc='finite',dtype=complex)
     chi=cfg.get('chi',96); sweeps=cfg.get('sweeps',16)
     options=dict(mixer=True,max_sweeps=sweeps,min_sweeps=min(8,sweeps),
@@ -99,7 +122,7 @@ def run(cfg):
                  chi_list={0:min(16,chi),2:min(32,chi),4:min(64,chi),6:chi},
                  lanczos_params=dict(N_max=80,P_tol=1e-13),
                  mixer_params=dict(amplitude=1e-5,decay=2.,disable_after=8))
-    eng=dmrg.TwoSiteDMRGEngine(psi,model,options)
+    eng=ProgressEngine(psi,model,options)
     E,psi=eng.run()
     psi.canonical_form()
     S=psi.entanglement_entropy()
@@ -123,6 +146,7 @@ if __name__=='__main__':
     ap.add_argument('--hz',type=float);ap.add_argument('--chi',type=int,default=96)
     ap.add_argument('--sweeps',type=int,default=16);ap.add_argument('--seed',type=int,default=1)
     ap.add_argument('--out',required=True);ap.add_argument('--init-density',type=float,default=.12)
+    ap.add_argument('--parity',choices=['even','odd'])
     args=vars(ap.parse_args());out=Path(args.pop('out'))
     logging.basicConfig(level=logging.WARNING)
     rec,_,_=run(args)

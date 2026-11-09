@@ -1,0 +1,5 @@
+  sweep 0 chi=16 E=-8.628180570182 trunc=0.00e+00 mv/solve=35.7 (max 61) res_max=2.9e-02
+  sweep 1 chi=32 E=-8.628286602917 trunc=1.89e-24 mv/solve=21.3 (max 61) res_max=5.3e-04
+  sweep 2 chi=32 E=-8.628286602918 trunc=5.52e-27 mv/solve=17.9 (max 146) res_max=9.6e-10
+  sweep 3 chi=32 E=-8.628286602918 trunc=4.81e-31 mv/solve=0.6 (max 1) res_max=9.5e-10
+done contrib/d2_dmrg_priority_20261109/results/DM16_h9463_12.json E=-52.0375866029 Sbar=0.1058 c_prof=0.292 trunc=4.8e-31 n_mid=0.0625 N=2.034 emid=-3.9984615134 t=0s

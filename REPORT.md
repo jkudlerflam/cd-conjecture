@@ -2331,3 +2331,60 @@ This is the low-density version of the quick test in §9.149. It uses the effect
   - sw: 2.51, 2.25, 2.16.
 - At L = 144 both gaps are 0.015, below the two-body binding energy, and both are still closing roughly as 1/L.
 - Reading. The unbound point reads about 0.9 times the c = 2 control at both size pairs. The bound point reads lower but rises with L. At this density (n times the pair size ≈ 1.75) the many-body pair gap of the bound model is well below 0.015, and neither the gap nor the entropy resolves it at L ≤ 144. So the parity gap cannot settle pairing on the symmetric line at accessible sizes. Routes where the pair gap is irrelevant (C181's imbalanced liquid) or absent (the transverse-DM bond) are the ones a finite-size test can decide.
+
+### 9.155 Independent full-qubit DMRG, a rational transverse-DM family, and a uniform-Y correction (OpenAI Codex, GPT-6 family, 2026-11-09)
+
+The d=2 route was prioritized explicitly. Fresh full-spin calculations,
+independent of the effective-model blockade numerics, now test the literal
+microscopic Hamiltonian. This is AI-assisted research without human review.
+
+- [checked numerical] TeNPy MPOs and ground states agree with independent
+  Kronecker-product ED at L=8 (matrix error below 3e-14, entropy below
+  3e-12), and C183 L=12 also agrees with the separately run repository
+  Davidson solver and sparse ED. No number or parity projection is used
+  for the transverse-DM family. Pauli fields are uniform on open chains.
+- [numerical] C183's V=16 retuned bond at hz=-7.9463 has three-central-cut
+  entropy .32228975 at L=32 and .44301798 at L=64. The two-size c estimate
+  is 1.04504. The simpler rational bond below gives 1.02180. Controls
+  measured by the same method give .94672 (XX, c=1) and 1.94135 (two XX
+  legs, c=2). The latter has discarded weight 1.9e-6, enough for this
+  coarse distinction, not a high-precision calibration. Candidate final
+  discarded weights are below 1e-10. The high central-quarter profile
+  fits fall from 2.25 to 1.15 (C183) and from 1.99 to 1.01 (rational).
+  These readings do not support c>1 at those fields; they do not settle
+  the infrared limit or exclude a nearby retuned window.
+- [numerical] Independent full-chain field scans and matched L=24/48
+  controls are recorded in `contrib/d2_dmrg_priority_20261109/`. Density
+  drifts and fit-window dependence must be retained. The original V=40,
+  r=.15 point quoted in the chat has Sbar=.04685 at L=32 and .01748 at
+  L=64, with middle-half density falling .0292 to .0082. It is not a
+  demonstrated finite-density critical point.
+- [explicit construction; numerical comparison] A simpler one-field
+  test family fixes Jx=255/512, Jy=-257/512, Jz=4, Dz=1/64, Dy=9/64 and
+  varies hz. Full-ring ED through L=16 reproduces the reference's nearby
+  finite-size behavior but shifts its onset by about 5e-4 in field.
+  Removing XX+YY entirely creates a much larger valley imbalance and
+  is not a faithful dilute simplification. The rational family is not
+  a counterexample claim.
+- [proved symmetry; exact finite-ring algebra] C183's antiunitary PIK
+  forbids uniform X but permits uniform Y. Its X-only check does not
+  prove every uniform charge-one source vanishes. In the canonical
+  effective Hamiltonian with real pairing p, facilitated amplitude f,
+  w=(a+ib)/V and mu=m/V, exact Gaussian-integer perturbation on L=6,7,8
+  gives the first vacuum-to-one source i*2*p^3*f*b/V^5. Lower orders
+  vanish exactly. This is a finite-ring polynomial identity, not an
+  infinite-volume remainder theorem. The leading Pauli hy coefficient
+  at C183's V=16 point is only 2.54e-7, so it does not by itself establish
+  a relevant perturbation or a gap. Pure open-chain transverse DM also
+  differs from the facilitated form by transverse edge fields.
+- [independent data audit] C181's phi=1.53 effective-model c>1 signal at
+  L=128 survives multiple fitting windows and visible chi convergence;
+  it is the cleaner simpler backup (no transverse DM). Incomplete L=192
+  data and the old mismatched c=1 control cannot be used. The microscopic
+  parity-family tests remain separate from those effective-model data.
+
+Reproducible scripts, full profiles, convergence histories and limitations:
+[TeNPy runs](contrib/d2_tenpy_20261109/RESULT.md),
+[independent Davidson runs](contrib/d2_dmrg_priority_20261109/RESULT.md),
+[simplification](contrib/d2_simplification_20261109/README.md), and
+[source/data audit](contrib/d2_priority_audit_20261109/README.md).
