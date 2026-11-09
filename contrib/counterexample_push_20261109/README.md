@@ -5,6 +5,13 @@ parallel Codex reviews. No human referee or new counterexample is claimed.
 
 ## Starting point and priorities
 
+**Latest recommendation:** prioritize dressed scattering and then
+converged numerics for the [new transverse-DM qubit family](FACILITATED_ROUTE.md).
+Unlike the original dilute cusp, its full leading model has a
+perturbative direction that weakens pair binding after balancing both
+valley energies. Small-ring checks support the trend but do not establish
+unbinding. The d=13 construction remains the most mature analytic route.
+
 The checkout was synchronized to `a45ecf5` before work. The latest project
 status separates three routes:
 
@@ -90,3 +97,22 @@ two other Codex agents independently reviewed the binding theorem.
 No finite-density c=2 conclusion or unconditional d=13 infrared
 identification follows. The next high-value analytic task for d=13 is
 the dressed contact-clock reduction and common-bulk defect comparison.
+
+## Constructive follow-up
+
+The binding calculation led to a new, literal nearest-neighbour qubit
+family, rather than adding a forbidden microscopic next-nearest bond.
+Its transverse DM term generates effective repulsion and a
+density-assisted creation term. All of those terms are retained.
+The dressed two-body/three-body calculation gives a binding slope
+-2.32510095709 r^2 at mu_eff=-2.27 after a real-hop retuning; the
+formal zero near r=.0916 is an uncontrolled extrapolation. Exact
+constrained rings through L=24 reproduce the direction of motion,
+with strong finite-size drift at the apparent crossing.
+
+See [the complete new route and decisive tests](FACILITATED_ROUTE.md),
+[literal microscopic bond generator](microscopic_bond.py), and
+[16 test bonds](microscopic_candidates.json). No central charge is
+assigned to these test points. They are ready for larger spectroscopy
+and, if the bound-state obstruction is removed, a converged two-mode
+and full-microscopic-chain test.

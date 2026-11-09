@@ -1,0 +1,36 @@
+{
+  "scope": "review of isolated-branch coefficients and finite-cutoff resolvent positivity only",
+  "atoms": [
+    {
+      "K": -0.25268025514207865,
+      "mu": -2.27,
+      "cutoff": 512,
+      "bare_atom_energy": -2.25,
+      "cutoff_resolvent_gap": 0.14329373108139462,
+      "boundary_resolvent": 0.8252248713959409,
+      "energy_shift_over_r_squared": -0.8252248713959409
+    },
+    {
+      "K": 3.394272908731872,
+      "mu": -2.27,
+      "cutoff": 512,
+      "bare_atom_energy": -2.25,
+      "cutoff_resolvent_gap": 0.10554033175694698,
+      "boundary_resolvent": 2.6634000534598177,
+      "energy_shift_over_r_squared": -2.663400053459819
+    }
+  ],
+  "q": -0.4746147911696791,
+  "trimer_denominator_checks": [
+    {
+      "cutoff": 40,
+      "trimer_energy_at_pi": -6.684221648305511,
+      "denominator_gap": 0.10530488636088808
+    },
+    {
+      "cutoff": 80,
+      "trimer_energy_at_pi": -6.69442028945727,
+      "denominator_gap": 0.09510624520912803
+    }
+  ]
+}

@@ -51,6 +51,13 @@ point. It does **not** determine whether the model at density approximately
 prove that a many-particle pair gas is stable against larger clusters.
 Those remain separate questions, also acknowledged in C175.
 
+A [constructive extension](FACILITATED_EXTENSION.md) adds an allowed
+nearest-neighbour qubit term, retains its full particle-number-changing
+effective interaction, and computes the leading change in the binding.
+After balancing the dressed valleys, that change is negative. This gives
+a concrete next calculation, but the finite-amplitude and finite-density
+phases are still open.
+
 ## Reproduce
 
 From the repository root, using Python with NumPy and SciPy:
