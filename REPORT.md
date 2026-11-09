@@ -1779,3 +1779,32 @@ The main conclusion survives. For weak harmonics there is no staggered Ising tra
 - A_S restated. Along the quantum switch set (the KT point and the plateau edge h_eff = hz_c1(Δ_eff) for Δ_eff > 1), at order-one harmonic amplitude, there is no second low-energy sector, in particular no bound magnon. The old wording "fields up to the plateau edge" covered an exponentially small range (hz_c1 = 0.0004 at Δ = 1.1).
 - Caveat for C165's Typhon job 17601089, family A2. Its fields mostly lie above the parent plateau edges, so any A2 point that reads gapped Néel above the edge needs an energy comparison against a magnetized start before it is used. The restated A_S has been passed to C172.
 - C165 §4.4 and §4.5 were checked for consistency only, not refereed.
+
+### 9.129 (A_W) narrowed to its charge-1 part (C167, Claude Opus 5.5 agent, 2026-11-08; `codex/work_C167/`)
+
+- Lemma R0 [proved; checked to 1.2e-13 on 200 random bonds]. The U(1)_m-breaking harmonics split by charge. The charge-1 parts are the parts odd under the π rotation about the spiral axis m, so a bond with no charge-1 part is a parity-class bond (XYZ + D_m). In T the charge-1 part is the exchange block S_{m⊥}. In K_I it is the in-plane field and nothing else. (The coordinator checked the identity.)
+- Proposition R [derived; inputs are C152's G1 liquid, π-parity and momentum bookkeeping]. Expand to every order in the charge-1 part, at any charge-2 amplitude. The infrared is one boson, with liquid, KT-ordered period-2 and clock-locked phases, all with c ≤ 1. The large-charge-2 part of (A_W) therefore rests on A4 (c ≤ 1 on the parity class), already an input of C159. C163's Proposition P is the special case of small charge-2.
+- Lemma C [derived, constant not computed]. The charge-1 harmonic couples to the boson's own e^{iϑ} at the twist θ_F. The liquid survives only for g < C₀ v (K θ̃)^{2−1/(4K)}, so a lattice-size charge-1 harmonic needs θ̃ of order one.
+- Lemma Θ2, case (b) [derived]. The antiunitary pairs each composite minimum P* with −P*. A c = 2 phase then has one of two forms.
+  - With the antiunitary unbroken, the second boson needs K₂ > 2, so a local operator at ±P* outside the charge lattice has quasi-long-range order with η₂ < 1/4.
+  - With the antiunitary broken, there is spontaneous uniform magnetization along m at zero field.
+- Lemma O, case (a) [derived]. The diagnostic is x_π, the dimension of the leading momentum-π operator. In the liquid x_π = K, and the boson orders by KT at x_π = 1/2. Next to an independent Ising surface x_π drops to 1/8.
+- Negative results.
+  - The antiunitary forces no mixing.
+  - Perron–Frobenius covers only θ ∈ {0, π} with no charge-1 part.
+  - Concavity of E₀ gives upper bounds only.
+  - C165's SU(2)₁ mechanism has no analogue here.
+- hi_K_1 [numerical; local VUMPS on two- and four-site cells, χ ≤ 96]. This was the one window point whose open-chain c read above 1 at L = 256.
+  - The bulk is period-2 ordered, with a staggered moment of 0.183 converged in χ and c_pair = 0.08.
+  - Pinning the edges along the order lowers c_prof(64) from 1.37 to 0.62. Like the XZ points of §9.126, the open-chain reading is a crossover in an ordered bulk.
+  - Along its harmonic path, x_π starts at the parent K = 1.06 and falls continuously through 1/2 (0.98 → 0.47 for λ from 0.90 to 0.98), and c_pair never exceeds 1.06. The order is the boson's own KT, so the liquid before it is repulsive and hi_K_1 is not in the window. The ring K_S is not a reliable window test at large harmonics.
+- Two attractive T points on the infinite chain [numerical, χ ≤ 48]. ising_T_43 reads c_pair 1.00. hi_T_34 reads 0.91 to 0.98, and its slow in-plane moment is unidentified.
+- Residual (A_W1) [assumed]. It applies when the charge-1 harmonic is about 0.3 of the exchange or more and θ̃ is of order one, with charge-2 arbitrary.
+  - Case (a), K > 15/8: x_π stays equal to K.
+  - Case (b), K > 1: no c = 2 phase of either form in Lemma Θ2.
+  - It bites for −1 < Δ < −0.67 in case (a) and −1 < Δ < 0 in case (b), away from h_F and γ. There is no small parameter, extra symmetry or hidden Heisenberg point to continue with.
+- Typhon job 17602938 (pending) runs:
+  - the hi_K_1 path to χ = 192 (256 at λ = 1) and past λ = 1;
+  - a four-site cell, and the charge-separated bonds;
+  - pinned open chains at L = 128 and 256.
+  It writes `summary.txt`. Collection: scp `summary.txt`, `vc`, `oc` into `codex/work_C167/typhon_out/`. Prediction registered before the output: x_π crosses 1/2 between λ = 0.98 and 0.985, c_pair stays at or below about 1.05, and pinned S_mid stays within 0.05 of the VUMPS entropy.

@@ -1,0 +1,18 @@
+python3 path_hiK1.py 0.96 --chis 8 16 24 32 48 64 96 128 192 --out vc/f_0.96.json
+python3 path_hiK1.py 0.97 --chis 8 16 24 32 48 64 96 128 192 --out vc/f_0.97.json
+python3 path_hiK1.py 0.975 --chis 8 16 24 32 48 64 96 128 192 --out vc/f_0.975.json
+python3 path_hiK1.py 0.98 --chis 8 16 24 32 48 64 96 128 192 --out vc/f_0.98.json
+python3 path_hiK1.py 0.985 --chis 8 16 24 32 48 64 96 128 192 --out vc/f_0.985.json
+python3 path_hiK1.py 0.99 --chis 8 16 24 32 48 64 96 128 192 --out vc/f_0.99.json
+python3 path_hiK1.py 0.995 --chis 8 16 24 32 48 64 96 128 192 --out vc/f_0.995.json
+python3 path_hiK1.py 1.0 --chis 8 16 24 32 48 64 96 128 192 256 --out vc/f_1.0.json
+python3 path_hiK1.py 0.95 --chis 8 16 24 32 48 64 96 128 192 --out vc/f_0.95.json
+python3 path_hiK1.py 0.9 --chis 8 16 24 32 48 64 96 128 192 --out vc/f_0.9.json
+python3 path_hiK1.py 1.0 --s2 0 --chis 8 16 24 32 48 64 96 128 --out vc/q1only_1.0.json
+python3 path_hiK1.py 1.0 --s1 0 --chis 8 16 24 32 48 64 96 128 --out vc/q2only_1.0.json
+python3 path_hiK1.py 1.0 --n 4 --chis 8 16 32 64 96 128 --seed 1 --out vc/f4_1.0.json
+python3 path_hiK1.py 1.02 --chis 8 16 24 32 48 64 96 --out vc/f_1.02.json
+python3 path_hiK1.py 1.01 --chis 8 16 24 32 48 64 96 --out vc/f_1.01.json
+python3 open_chain.py hi_K_1 128 --chis 16 32 64 96 128 128 --left -0.1671 0.2492 0 --right -0.2992 -0.0222 0 --tag LRst --outdir oc
+python3 open_chain.py hi_K_1 256 --chis 16 32 64 96 128 160 160 --left -0.1671 0.2492 0 --right -0.2992 -0.0222 0 --tag LRst --outdir oc
+python3 open_chain.py hi_K_1 128 --chis 16 32 64 96 128 128 --outdir oc
