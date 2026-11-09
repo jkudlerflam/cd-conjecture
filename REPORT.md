@@ -1755,3 +1755,27 @@ Part of the swarm C169 to C174 (`specs/C169_C174_swarm.md`), launched alongside 
 - R8 [partial fix, numerical to 2e-14 for p ≤ 7]. Only one bond crosses each cell boundary, so det h(K) is a degree-2 trigonometric polynomial for any period p. In the parity class this gives c ≤ 1 at mean-field level for every period, and at most two soft momenta at any onset. The central charge c must be defined per superselection sector, or cats and first-order surfaces read c = 2.
 - R9 to R12 [low]. The strata list is complete for on-site product symmetries, and spatial-reflection strata are unanalysed. Gap stability, constancy of c on a component, and the torus count are sound. No connectivity test in N has been completed (C68's point 1282).
 - Reading. What c ≤ 1 at d = 2 needs is a dynamical exclusion of c > 1 fixed points in N away from S_ctrl, P4 included, plus junction inventories on each stratum. The critical path is longer than the three named assumptions.
+
+### 9.128 Referee of C165 (C170, Claude Opus 5.5 agent, 2026-11-08; `codex/work_C170/`)
+
+The main conclusion survives. For weak harmonics there is no staggered Ising transition inside the liquid at spin 1/2, so c ≤ 1 near the switch. Three statements are wrong, and one regime needed a new argument.
+
+- §1.2, the exact map of the parent to the spin-1/2 AF XXZ chain in a field: correct. Spectra agree to 5.5e-14, and the full bond commutes with T_μ exp(−i(a−π)S^z) to 4e-15. The ν frame is classical bookkeeping only.
+- §2.1, rigid-cone linearity: correct for every q ∉ {0, π}.
+- §2.2, the classical N⁴ coefficient: wrong for DM. "DM gives no quartic term" fails because in the ν frame the bond matrix is not antisymmetric.
+  - Corrected coefficient c_2 − c_1, with c_2 = (g² + g_xy²) cot²q/4 and c_1 = sin²(q/2)|tan(q/2)Γ_c − iD_c|², where Γ_c = Γ_xz − iΓ_yz and D_c = D_y + iD_x.
+  - It matches exact linear response on eight random harmonic vectors. In a full minimization, D_x = 0.25 turns the g = 0.2 coexistence window into a first-order jump.
+  - Charge-2 terms remain the only convex source. The sentence "DM and fields do not enter" in §9.124 is corrected here for DM. The fields part stands.
+- §4.1 and §4.2, the SU(2)_1 multiplet with the quartic of dimension ≥ 8, to all orders in weak harmonics: correct at Δ_eff = 1, h_eff = 0, and stronger than claimed.
+  - The selection rule P − Qα ∈ 2πZ is exact, so no relevant momentum-π operator is ever generated while the infrared stays in the SU(2)_1 basin.
+  - A uniform field is generated at second order (ED scaling as amplitude²), so the point sits at h_eff = 0.
+  - Charged relevant operators appear only in resonance tongues near q ∈ {0, π}.
+- The spin-flop line: a gap, now closed [derived]. At hz ≠ 0 the switch is the Néel plateau edge, a Pokrovsky–Talapov transition, so the dimension-8 argument does not reach it. The replacement:
+  - off resonance the chain is U(1) with one boson;
+  - coexistence needs a magnon bound below the two-spinon threshold;
+  - weak harmonics cannot create one.
+- "The quantum shift of the Néel onset is O(1)": wrong at hz = 0, where both shifts are O(harmonics²).
+- "Gapped Néel up to hz = 2.2 at Dz = 2": wrong. The plateau ends at hz_c1 = 0.78. The VUMPS energy at hz = 2.2 is about 0.1 above two ED estimates, so those states are metastable.
+- A_S restated. Along the quantum switch set (the KT point and the plateau edge h_eff = hz_c1(Δ_eff) for Δ_eff > 1), at order-one harmonic amplitude, there is no second low-energy sector, in particular no bound magnon. The old wording "fields up to the plateau edge" covered an exponentially small range (hz_c1 = 0.0004 at Δ = 1.1).
+- Caveat for C165's Typhon job 17601089, family A2. Its fields mostly lie above the parent plateau edges, so any A2 point that reads gapped Néel above the edge needs an energy comparison against a magnetized start before it is used. The restated A_S has been passed to C172.
+- C165 §4.4 and §4.5 were checked for consistency only, not refereed.
