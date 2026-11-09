@@ -1,0 +1,43 @@
+== FES calibrations and long VUMPS
+isxx.json: chi_max=256 xi=192.1 c_pair(last4)=1.591,1.447,1.449,1.506 c_ls3=1.485
+tfi.json: chi_max=160 xi=5859.1 c_pair(last4)=0.445,0.381,0.335,0.419 c_ls3=0.369 N=0.000,0.000,0.000,0.000
+xx.json: chi_max=256 xi=1162.9 c_pair(last4)=1.057,0.944,1.003,0.994 c_ls3=0.997 N=0.176,0.164,0.155,0.142
+nfloat.json: chi_max=256 xi=26.5 c_pair(last4)=-0.188,-0.052,0.010,0.034 c_ls3=0.033 N=0.140,0.141,0.142,0.157
+Q2big_Dz1.2.json: chi_max=256 xi=174.4 c_pair(last4)=0.329,0.185,0.135,0.113 c_ls3=0.121 N=0.182,0.182,0.181,0.181
+Q2big_Dz1.25.json: chi_max=256 xi=113.2 c_pair(last4)=0.111,0.056,0.035,0.014 c_ls3=0.022 N=0.247,0.247,0.247,0.247
+Q2big_Dz1.3.json: chi_max=256 xi=68.6 c_pair(last4)=0.029,0.013,0.005,0.002 c_ls3=0.004 N=0.308,0.308,0.308,0.308
+== DMRG
+== stage B selection
+screened 252 ordered 169 coexist 0 highc 1 selected 24
+
+  {"N": 0.064, "rN": 0.179, "c_last": 2.314, "rxi": 13.775, "chi": 64, "ordered": 0.0, "coexist": 0.0, "highc": true} | A2_Dz1.6_h0_hz2.0.json: chi_max=256 xi=1392.0 c_pair(last4)=0.228,0.216,0.223,0.228 c_ls3=0.225 N=0.056,0.056,0.056,0.056
+  {"N": 0.199, "rN": 0.915, "c_last": 0.578, "rxi": 1.293, "chi": 64, "ordered": 0.0, "coexist": 0.0, "highc": 0.0} | A1_a0.7_g0.2_hz0.05_Dz1.2.json: chi_max=256 xi=165.4 c_pair(last4)=0.291,0.158,0.104,0.087 c_ls3=0.093 N=0.193,0.192,0.192,0.192
+  {"N": 0.317, "rN": 0.987, "c_last": 0.139, "rxi": 1.17, "chi": 64, "ordered": 1.0, "coexist": 0.0, "highc": 0.0} | A1_a0.7_g0.2_hz0.05_Dz1.3.json: chi_max=256 xi=63.8 c_pair(last4)=0.024,0.009,0.004,0.002 c_ls3=0.003 N=0.317,0.317,0.317,0.317
+  {"N": 0.102, "rN": 0.948, "c_last": 0.683, "rxi": 1.049, "chi": 64, "ordered": 0.0, "coexist": 0.0, "highc": 0.0} | A1_a0.7_g0.2_hz0.3_Dz1.0.json: chi_max=256 xi=80.7 c_pair(last4)=0.753,0.828,0.940,1.083 c_ls3=1.024 N=0.097,0.096,0.094,0.092
+  {"N": 0.15, "rN": 0.973, "c_last": 0.59, "rxi": 1.053, "chi": 64, "ordered": 1.0, "coexist": 0.0, "highc": 0.0} | A1_a0.7_g0.2_hz0.3_Dz1.1.json: chi_max=256 xi=68.9 c_pair(last4)=0.667,0.749,0.851,0.974 c_ls3=0.930 N=0.145,0.143,0.142,0.139
+  {"N": 0.173, "rN": 0.883, "c_last": 0.679, "rxi": 1.337, "chi": 64, "ordered": 0.0, "coexist": 0.0, "highc": 0.0} | A1_a0.7_g0.35_hz0.05_Dz1.2.json: chi_max=256 xi=198.5 c_pair(last4)=0.426,0.248,0.195,0.151 c_ls3=0.174 N=0.164,0.163,0.163,0.163
+  {"N": 0.293, "rN": 0.98, "c_last": 0.193, "rxi": 1.193, "chi": 64, "ordered": 1.0, "coexist": 0.0, "highc": 0.0} | A1_a0.7_g0.35_hz0.05_Dz1.3.json: chi_max=256 xi=77.1 c_pair(last4)=0.042,0.018,0.008,0.004 c_ls3=0.006 N=0.292,0.292,0.292,0.292
+  {"N": 0.136, "rN": 0.969, "c_last": 0.613, "rxi": 1.057, "chi": 64, "ordered": 0.0, "coexist": 0.0, "highc": 0.0} | A1_a0.7_g0.35_hz0.3_Dz1.1.json: chi_max=256 xi=71.5 c_pair(last4)=0.690,0.770,0.866,0.996 c_ls3=0.948 N=0.131,0.129,0.128,0.125
+  {"N": 0.207, "rN": 0.975, "c_last": 0.525, "rxi": 1.057, "chi": 64, "ordered": 1.0, "coexist": 0.0, "highc": 0.0} | A1_a0.7_g0.35_hz0.3_Dz1.2.json: chi_max=256 xi=56.9 c_pair(last4)=0.548,0.618,0.678,0.753 c_ls3=0.732 N=0.202,0.200,0.200,0.197
+  {"N": 0.199, "rN": 0.914, "c_last": 0.584, "rxi": 1.294, "chi": 64, "ordered": 0.0, "coexist": 0.0, "highc": 0.0} | A1_a0.9_g0.2_hz0.05_Dz1.2.json: chi_max=256 xi=166.5 c_pair(last4)=0.289,0.162,0.108,0.091 c_ls3=0.096 N=0.193,0.192,0.192,0.192
+  {"N": 0.318, "rN": 0.987, "c_last": 0.139, "rxi": 1.17, "chi": 64, "ordered": 1.0, "coexist": 0.0, "highc": 0.0} | A1_a0.9_g0.2_hz0.05_Dz1.3.json: chi_max=256 xi=64.1 c_pair(last4)=0.023,0.011,0.004,0.002 c_ls3=0.003 N=0.317,0.317,0.317,0.317
+  {"N": 0.098, "rN": 0.947, "c_last": 0.686, "rxi": 1.049, "chi": 64, "ordered": 0.0, "coexist": 0.0, "highc": 0.0} | A1_a0.9_g0.2_hz0.3_Dz1.0.json: chi_max=256 xi=83.5 c_pair(last4)=0.813,0.900,0.970,1.072 c_ls3=1.025 N=0.094,0.092,0.090,0.088
+  {"N": 0.146, "rN": 0.97, "c_last": 0.568, "rxi": 1.053, "chi": 64, "ordered": 1.0, "coexist": 0.0, "highc": 0.0} | A1_a0.9_g0.2_hz0.3_Dz1.1.json: chi_max=256 xi=73.4 c_pair(last4)=0.612,0.688,0.720,0.810 c_ls3=0.780 N=0.142,0.140,0.139,0.137
+  {"N": 0.183, "rN": 0.896, "c_last": 0.641, "rxi": 1.321, "chi": 64, "ordered": 0.0, "coexist": 0.0, "highc": 0.0} | A1_a0.9_g0.35_hz0.05_Dz1.2.json: chi_max=256 xi=184.2 c_pair(last4)=0.368,0.206,0.157,0.134 c_ls3=0.142 N=0.175,0.175,0.175,0.174
+  {"N": 0.303, "rN": 0.983, "c_last": 0.169, "rxi": 1.185, "chi": 64, "ordered": 1.0, "coexist": 0.0, "highc": 0.0} | A1_a0.9_g0.35_hz0.05_Dz1.3.json: chi_max=256 xi=71.7 c_pair(last4)=0.032,0.015,0.006,0.003 c_ls3=0.004 N=0.303,0.303,0.303,0.303
+  {"N": 0.14, "rN": 0.966, "c_last": 0.606, "rxi": 1.054, "chi": 64, "ordered": 0.0, "coexist": 0.0, "highc": 0.0} | A1_a0.9_g0.35_hz0.3_Dz1.1.json: chi_max=256 xi=71.7 c_pair(last4)=0.668,0.743,0.792,0.876 c_ls3=0.845 N=0.136,0.134,0.132,0.130
+  {"N": 0.209, "rN": 0.974, "c_last": 0.47, "rxi": 1.045, "chi": 64, "ordered": 1.0, "coexist": 0.0, "highc": 0.0} | A1_a0.9_g0.35_hz0.3_Dz1.2.json: chi_max=256 xi=59.6 c_pair(last4)=0.546,0.593,0.629,0.712 c_ls3=0.677 N=0.204,0.203,0.202,0.200
+  {"N": 0.199, "rN": 0.914, "c_last": 0.572, "rxi": 1.298, "chi": 64, "ordered": 0.0, "coexist": 0.0, "highc": 0.0} | A1_a1.1_g0.2_hz0.05_Dz1.2.json: chi_max=256 xi=169.8 c_pair(last4)=0.294,0.170,0.100,0.086 c_ls3=0.091 N=0.193,0.192,0.192,0.192
+  {"N": 0.318, "rN": 0.987, "c_last": 0.139, "rxi": 1.171, "chi": 64, "ordered": 1.0, "coexist": 0.0, "highc": 0.0} | A1_a1.1_g0.2_hz0.05_Dz1.3.json: chi_max=256 xi=64.2 c_pair(last4)=0.025,0.010,0.004,0.002 c_ls3=0.003 N=0.318,0.318,0.318,0.318
+  {"N": 0.153, "rN": 0.961, "c_last": 0.631, "rxi": 1.089, "chi": 64, "ordered": 0.0, "coexist": 0.0, "highc": 0.0} | A1_a1.1_g0.2_hz0.3_Dz1.1.json: chi_max=256 xi=68.2 c_pair(last4)=0.739,0.797,0.852,1.105 c_ls3=1.049 N=0.147,0.145,0.143,0.136
+  {"N": 0.222, "rN": 0.979, "c_last": 0.432, "rxi": 1.045, "chi": 64, "ordered": 1.0, "coexist": 0.0, "highc": 0.0} | A1_a1.1_g0.2_hz0.3_Dz1.2.json: chi_max=256 xi=58.8 c_pair(last4)=0.458,0.524,0.527,0.583 c_ls3=0.574 N=0.218,0.216,0.216,0.213
+  {"N": 0.189, "rN": 0.902, "c_last": 0.612, "rxi": 1.314, "chi": 64, "ordered": 0.0, "coexist": 0.0, "highc": 0.0} | A1_a1.1_g0.35_hz0.05_Dz1.2.json: chi_max=256 xi=180.3 c_pair(last4)=0.348,0.201,0.116,0.099 c_ls3=0.107 N=0.181,0.181,0.181,0.180
+  {"N": 0.309, "rN": 0.984, "c_last": 0.158, "rxi": 1.181, "chi": 64, "ordered": 1.0, "coexist": 0.0, "highc": 0.0} | A1_a1.1_g0.35_hz0.05_Dz1.3.json: chi_max=256 xi=69.0 c_pair(last4)=0.028,0.012,0.006,0.002 c_ls3=0.004 N=0.308,0.308,0.308,0.308
+  {"N": 0.144, "rN": 0.96, "c_last": 0.628, "rxi": 1.081, "chi": 64, "ordered": 0.0, "coexist": 0.0, "highc": 0.0} | A1_a1.1_g0.35_hz0.3_Dz1.1.json: chi_max=192 xi=67.3 c_pair(last4)=0.710,0.713,0.782,0.846 c_ls3=0.808 N=0.140,0.139,0.137,0.135
+== all screen points with c_last > 1.1 or coexist flag
+  A2_Dz1.6_h0_hz1.8 {'N': 0.466, 'rN': 0.93, 'c_last': 2.967, 'rxi': 1.027, 'chi': 64, 'ordered': 0.0, 'coexist': 0.0, 'highc': False}
+  A2_Dz1.6_h0_hz2.0 {'N': 0.064, 'rN': 0.179, 'c_last': 2.314, 'rxi': 13.775, 'chi': 64, 'ordered': 0.0, 'coexist': 0.0, 'highc': True}
+  A2_Dz1.6_h1_hz2.0 {'N': 0.261, 'rN': 1.054, 'c_last': 1.297, 'rxi': 1.017, 'chi': 64, 'ordered': 1.0, 'coexist': False, 'highc': False}
+  A2_Dz1.6_h2_hz1.6 {'N': 0.492, 'rN': 0.957, 'c_last': 1.991, 'rxi': 1.104, 'chi': 64, 'ordered': 0.0, 'coexist': 0.0, 'highc': False}
+  A2_Dz1.6_h2_hz1.8 {'N': 0.404, 'rN': 0.934, 'c_last': 1.89, 'rxi': 1.01, 'chi': 64, 'ordered': 0.0, 'coexist': 0.0, 'highc': False}
+  A2_Dz2.0_h2_hz2.7 {'N': 0.436, 'rN': 0.985, 'c_last': 2.112, 'rxi': 1.002, 'chi': 64, 'ordered': 1.0, 'coexist': False, 'highc': False}

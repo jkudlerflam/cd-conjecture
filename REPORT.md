@@ -1845,3 +1845,23 @@ Most of the individual lemmas hold. They were re-derived by hand, with an operat
   - an exclusion of Z_N order (N ≥ 3) independent of the boson, the period-3 analogue of C165;
   - a dynamical argument that a codimension-2 c > 1 point forces a codimension ≤ 1 one nearby. Kinematically this is false for P2.
 - The new rows were passed to C168, C169 and C173. The Potts × boson route is now a construction target for C169, alongside C174's parafermion route.
+
+### 9.131 Typhon output of C158 (FES near XZ) and C165 (staggered Ising screen) (coordinator, Claude Opus 5.5, 2026-11-09; `codex/work_C158/typhon_out/`, `codex/work_C165/typhon_out/`)
+
+- C158, job 17595611, completed in 18 h 39 min. Digest: `fesfit_summary.txt` (C158's fesfit.py). Per C158's rule, the bisector chain is read only at bond dimensions where the incommensurate correlation length ξ_ic leads and ξ_π has saturated.
+  - Bisector field [numerical]. At hp = 0.2, 0.3, 0.4 and 0.45, c = 1.00 ± 0.02 out to χ = 384. The three-point fit c_ic3 is 1.001, 0.997, 1.002 and 0.985 (two-site cell). Four-site cells, a second seed and a one-site cell agree (0.99 to 1.06). This is one boson, consistent with C158's 1 : 2 : 4 tower and with C157.
+    - hp = 0.05 and 0.1 stay in the crossover: ξ_π leads, VUMPS errors of about 1e-4 are unconverged at 800 iterations, and the pair slopes swing in sign. They are undetermined, not c > 1.
+    - hp = 0.5 is gapped up to χ = 160, then jumps at χ = 192 to an unconverged state (error 5e-2). It is undetermined. hp = 0.6 is gapped, as the control.
+  - The five tuned-hyperplane points are all gapped, with c fits of 0.000 to 0.006 and S saturated.
+  - YX at ε = 0.1 to 0.5 and ZY at 0.2 give c = 1.00 (six-site cell). YX at 0.05 reads 0.46, in C154's dimerization window.
+  - Ashkin–Teller plane at β = 0.3: α = 0.18 and 0.198 are gapped. α = 0.09 and 0.3 have falling slopes (0.37 and 0.74 at χ = 256), so nothing is above 1.
+  - Controls. XX and XZZX give 1.000, Heisenberg 1.007, and the XZ ε points 0.98 to 0.99. The critical TFI reads 0.50 at χ ≤ 48 but drifts to 0.34 at larger χ, where VUMPS stops converging (800 iterations). So late-χ fits on very long ξ are not reliable.
+  - Open-chain DMRG of the bisector chain: S_mid = 1.41 (hp = 0.1, L = 192), 1.25 (0.2, L = 256), 1.21 (0.4, L = 256). There is only one size each, so these give no c.
+  - Verdict: no point near XZ has c above 1 where FES is past its crossover. The small-field end hp ≤ 0.1 of the bisector line is still unresolved.
+- C165, job 17601089, hit its 14 h limit. No summary.txt was written, and the DMRG directory `dm/` is empty, so the long open-chain tasks did not finish. C165's summarize.py was run locally on the copied VUMPS output (`summary_local.txt`).
+  - Calibrations. The Ising × XX ladder (c = 3/2, outside B_2) gives an FES slope of 1.49 at χ = 256, so the pipeline sees 3/2. XX gives 0.997. TFI again drifts low (0.37) at large χ.
+  - The N-stratum floating control (`nfloat`) is not a c = 1 control. It reads 0.03 at χ = 256 with a staggered moment of 0.14 to 0.16, so it is ordered and gapped.
+  - Screen (252 points, χ ≤ 64). 169 points are ordered and 0 are flagged as coexisting (floating + staggered order). On the 24 stage-B points continued to χ = 256, every c fit is at most 1.05, and the ordered ones go to 0.
+  - Q2 at Dz = 1.2, 1.25, 1.3 is gapped Néel (c → 0.12, 0.02, 0.00, with N saturating at 0.18, 0.25, 0.31). This agrees with C165's local reading of the onset near Dz = 1.2.
+  - Six A2 points read c_last of 1.3 to 3.0 at χ = 64. Their fields (hz = 1.6 to 2.7) lie far above the parent plateau edges (0.27 at Dz = 1.6, 0.78 at Dz = 2), where C170 showed the gapped-Néel VUMPS states are metastable. They sit in the magnetized liquid regime. The one continued to χ = 256 (A2_Dz1.6_h0_hz2.0) falls to 0.23. The other five were not continued, and a χ = 64 last-pair slope is noise at this level. Per C170's caveat, none is usable without an energy check against a magnetized start.
+  - Verdict by the pre-fixed criteria: no c = 3/2 candidate. Two things are incomplete: the DMRG stage, lost to the time limit, and the five uncontinued A2 points, which need χ ≥ 256 from a magnetized start before they say anything.
