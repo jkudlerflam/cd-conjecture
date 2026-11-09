@@ -1,0 +1,8 @@
+  sweep 0 chi=16 E=-7.747525823651 trunc=0.00e+00 mv/solve=46.7 (max 61) res_max=5.7e-02
+  sweep 1 chi=32 E=-7.762417859225 trunc=4.75e-08 mv/solve=38.4 (max 61) res_max=3.0e-03
+  sweep 2 chi=64 E=-7.762446171082 trunc=6.11e-10 mv/solve=26.8 (max 61) res_max=2.8e-04
+  sweep 3 chi=96 E=-7.762446193594 trunc=1.77e-11 mv/solve=9.3 (max 46) res_max=9.9e-07
+  sweep 4 chi=128 E=-7.762446194028 trunc=6.73e-13 mv/solve=3.4 (max 24) res_max=9.7e-07
+  sweep 5 chi=128 E=-7.762446194026 trunc=8.26e-13 mv/solve=20.7 (max 105) res_max=9.9e-09
+  sweep 6 chi=128 E=-7.762446194026 trunc=8.26e-13 mv/solve=11.2 (max 53) res_max=9.9e-09
+done local/par/F8podd_24.json E=-49.9823785990 Sbar=1.3004 c_prof=3.824 trunc=8.3e-13 n_mid=0.1860 N=6.169 emid=-2.0050291177 t=48s
