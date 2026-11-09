@@ -1,0 +1,51 @@
+{
+  "status": "passed",
+  "scope": "L8 smoke only; no large runs",
+  "lanczos": {
+    "updates": 108,
+    "checkpoint_sweeps": [
+      2,
+      4,
+      6,
+      8
+    ],
+    "final": {
+      "status": "residual_threshold_pass_no_global_certificate",
+      "updates": 12,
+      "max_absolute_residual": 9.097753407385244e-09,
+      "residual_threshold": 1e-08,
+      "residual_threshold_pass": true,
+      "iteration_cap_count": 0,
+      "max_N_lanczos": 2,
+      "sweep": 9
+    },
+    "E": -0.1737273085631921,
+    "residual_over_t2": 7.278202725908196e-07
+  },
+  "ed_resume": {
+    "updates": 24,
+    "final": {
+      "status": "residual_threshold_pass_no_global_certificate",
+      "updates": 12,
+      "max_absolute_residual": 1.3374393642959105e-13,
+      "residual_threshold": 1e-08,
+      "residual_threshold_pass": true,
+      "iteration_cap_count": 0,
+      "max_N_lanczos": -1,
+      "sweep": 2
+    },
+    "E": -0.17372730856320281
+  },
+  "energy_difference": 1.071365218763276e-14,
+  "configuration": {
+    "name": "c181153",
+    "L": 8,
+    "parity": "odd",
+    "chi": 16,
+    "strict_local": true,
+    "lanczos_sweeps": 8,
+    "ed_resume_sweeps": 1,
+    "checkpoint_every": 2
+  },
+  "method": "Harness subclass forces Lanczos for first run; default ED fallback resumes its trusted final checkpoint. Assertions checked diagnostics, truncation-error serialization, atomic checkpoint cadence, and strict JSON serialization."
+}

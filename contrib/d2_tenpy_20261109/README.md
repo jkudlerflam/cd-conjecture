@@ -59,6 +59,9 @@ The save/resume path was checked at L=8 to an energy difference below
 infinite-chain branch and its method checks are described separately in
 `INFINITE_VALIDATION.md` and `INFINITE_LIQUID_BRANCH.md`; failed attempts
 are explicitly tagged and excluded from physical estimates.
+Undefined first-sweep energy differences are encoded as JSON `null`.
+Earlier NaN tokens in these fields were normalized without changing any
+physical measurement, so all saved records are valid standard JSON.
 
 Sources: [TeNPy model documentation](https://tenpy.readthedocs.io/en/stable/intro/model_details.html),
 [Calabrese and Cardy](https://arxiv.org/abs/hep-th/0405152),

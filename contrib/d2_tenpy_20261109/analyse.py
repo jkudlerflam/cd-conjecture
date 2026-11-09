@@ -63,7 +63,7 @@ summary=dict(status='No established c>1: parity-family c~2 at 32-64 is not susta
 plt.rcParams.update({'font.size':11,'axes.spines.top':False,'axes.spines.right':False})
 fig,(ax,bx)=plt.subplots(1,2,figsize=(11,4.2),layout='constrained')
 colors={'c183':'#2367a3','dyadic':'#d27625','original':'#888888','c181153':'#7b4eaa'}
-labels={'c183':'Transverse DM reference','dyadic':'Rational approximation','original':'Original V=40 point','c181153':'Parity family, phase 1.53'}
+labels={'c183':'Transverse DM reference','dyadic':'Rational transverse DM','original':'Original V=40 point','c181153':'Parity family, phase 1.53'}
 for name in ['c183','dyadic','original','c181153']:
     data=[r for r in records if r['name']==name and r['L']>=32]
     if len(data)<2:continue

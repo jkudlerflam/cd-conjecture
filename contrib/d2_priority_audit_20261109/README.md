@@ -5,12 +5,14 @@ collaborator results: `524aaeda0821d152edfe0f5e6778d140a040f3f0`. The parent
 agent handles Git synchronization and new microscopic DMRG. This folder
 contains lightweight independent algebra and analysis, not new large DMRG.
 
-**The transverse-DM candidate remains the most direct new d=2 experiment,
-but the simpler off-symmetric parity family has the strongest existing
-finite-size c>1 evidence. Neither has established c>1 in the microscopic
-nearest-neighbour qubit chain.** The original symmetric parity cusp remains
-a poor choice for a quick numerical decision because its pair gap can sit
-well below the finite-size resolution.
+**The full microscopic tests have not confirmed c>1.** The transverse-DM
+points read near one. The simpler parity family initially read about two
+at 32→64, but its L=128 follow-up falls to 0.738–0.931 across every parity
+pairing and remains incompletely optimized. The positive effective-model
+data below must not be substituted for that negative microscopic size
+check. The most informative next calculation is now a fixed-Hamiltonian
+solver/χ convergence study, specified in [NEXT_STEPS.md](NEXT_STEPS.md).
+The latest full-chain evidence is reviewed [separately](../d2_tenpy_20261109/REVIEW.md).
 
 The new analytic correction is in [UNIFORM_Y_SOURCE.md](UNIFORM_Y_SOURCE.md):
 the surviving antiunitary permits a uniform Y source, while C183 checked
@@ -23,32 +25,35 @@ it does not by itself close the route or establish the need for a counterterm.
 
 | Priority | Target | Why it is useful | What still decides it |
 |---|---|---|---|
-| 1 | Actual transverse-DM qubit chain, C183 full-chain retune V=16, with a density/field scan | C186's complete number-mixing two-body calculation removes the original pairing obstruction; C183 already retuned the microscopic valleys | Homogeneous bulk gas, stable density, increasing L and bond dimension, then infinite-chain entropy/correlation-length scaling |
-| 2 | Simpler parity family, \(|w|=1,\phi=1.53,n\approx3/16,V=40\) | Calibrated c>1 at effective-model L=128, a genuine valley imbalance, no visible parity gap, no transverse DM term | Microscopic field retune; compare with already-running L=192/256 effective-model stages and eventual FES |
-| 3 | Same parity family at \(\phi=1.555\) | Stronger raw c≈2 but a near-balanced small-size shell crossing | Larger-L polarization and gaps, where the baseline gap is positive |
+| 1 | Strict solver and χ escalation for the **same** microscopic C181153 L=128 bond, both parities | Resolves whether the failed larger-size check is physical crossover or optimizer bias | Converged fixed-H states, stable entropy across χ/starts, and the matched L=64 comparison |
+| Supporting check | Existing rounded parity-family independent-solver work | Tests code independence and simplification | Its own local residuals and larger sizes; it cannot override the different unrounded bond's L=128 result |
+| Conditional follow-up | Larger V with matched effective parameters and actual density | Tests finite-V effects after numerical conditioning is understood | Validated solver and physical-field matching; no automatic transfer of the effective-model c≈2 reading |
+| Deprioritize for now | Further transverse-DM grids or the near-balanced φ=1.555 point | Existing transverse-DM full-chain readings are near one; φ=1.555 has stronger shell ambiguity | A specific new mechanism or evidence, rather than selecting a larger finite-size fit |
 | Deprioritize | Symmetric parity cusp or far-vacuum V=8 fitted coefficients | Both can show c≈2 before their pairing scale is resolved; the V=8 “unbinding” fit used the wrong chemical-potential regime | They are controls for crossover, not decisive first targets |
 
-For target 1 the C183 Pauli parameters are
+For reference, the tested C183 Pauli parameters are
 
 ```
 Jx = 0.4979983, Jy = -0.5020017, Dz = 0.0152122, Jz = 4
 Gamma_xz = -Gamma_zx = 0.13693064, hz near -7.9463
 ```
 
-The quoted field is near onset, not a demonstrated target-density point.
-The parent agent's new microscopic runs should be read separately from
-C186's second-order predictions. The original V=40 parameter point can also
-land in the dressed vacuum at a nominally plausible effective chemical
-potential; a field scan is more useful than blindly increasing L there.
+The parent agent's calibrated microscopic runs at this field read close
+to one, separately from C186's second-order unbinding prediction. The
+original V=40 transverse-DM point has decreasing central entropy and
+density with L; it is not a demonstrated finite-density critical target.
 
-For target 2 the leading V=40 bond at \(\phi=1.53\) has
+The leading V=40 parity bond at \(\phi=1.53\) has
 \(J_x-J_y=1\), \(J_x+J_y=\cos(1.53)/80\),
 \(D_z=\sin(1.53)/160\), \(J_z=10\), and no transverse DM. The independent
 L=128 finite-difference chemical potential is -2.1518497755, giving the
 **leading-order starting field** \(h_z=-19.9759490611\). Microscopic and
 finite-size corrections still require density tuning. Larger V is motivated
 by C181/C179's analysis of the number-changing two-pair vertex; this audit
-does not certify that vertex's thermodynamic irrelevance.
+does not certify that vertex's thermodynamic irrelevance. The actual
+microscopic runs instead used hz=-19.97589125. **Keep that actual field
+fixed for the convergence diagnostic**; the effective-model starting-field
+estimate above is not a reason to change the Hamiltonian during that test.
 
 Work already registered upstream should be collected before launching
 duplicates: C186's effective transverse-DM DMRG jobs 17604628 and 17604527;
@@ -91,7 +96,8 @@ fixed to 3/16. At L=128 the 16-site-smoothed central profile varies by less
 than 0.8%. This supports a fluid rather than a droplet at these sizes, while
 the boundary-induced density drift remains a systematic error in c_two.
 
-φ=1.53 is the cleaner follow-up. At φ=1.555 the negative L=64 parity gap
+Within these effective-model data, φ=1.53 is the cleaner comparison. At
+φ=1.555 the negative L=64 parity gap
 and near-zero polarization show a shell crossing. C181's literal registered
 condition that L·gap grow by less than 50% has no meaningful positive
 baseline at that point; the broad “first-stage pass” language in REPORT
@@ -123,8 +129,11 @@ configs restoring t2=-1 at L=192 and 256. Compare actual configs, not labels.
 - **C181:** Strongest current effective-model finite-size evidence is the
   imbalanced |w|=1 fluid at L=128. The earlier negative 64→96 preview and
   stale RESULT.md verdict are superseded by the committed backfill data
-  for this purpose. The FFLO momentum shift, larger sizes, FES, microscopic
-  chain and the finite-V vertices are still required.
+  for this effective-model purpose. The microscopic chain has now been
+  tested separately: its initial 32→64 excess does not persist in the
+  unfinished L=128 optimization. Solver/χ convergence, the FFLO momentum
+  shift, larger effective-model sizes, FES and finite-V vertices remain
+  unresolved; there is no confirmed microscopic c≈2 phase.
 - **C178/C187 symmetric line:** A 1/L parity-like gap does not discriminate
   when the paired control also passes. The L≤144 entropy and parity data
   do not resolve the weak pair gap. This explains why the symmetric line

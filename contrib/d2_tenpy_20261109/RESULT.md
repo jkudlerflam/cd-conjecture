@@ -24,6 +24,11 @@ averages three central cuts, the completed L=32 to 64 results are:
 | Two independent XX legs, c=2 estimator control | 1.48793688 | 1.71220998 | 1.94135 |
 | Parity family, phi=1.53 (lowest tested parity at each L) | 1.35323214 | 1.60105887 | 2.14523 |
 
+![Full-spin size scaling and calibrated entropy slopes](scaling.png)
+
+Hollow markers identify L=128 runs that reached their sweep limit. The
+parity-family curve flattens substantially in the larger-size test.
+
 The two-leg control is a range-two calibration, not a d=2 NN candidate.
 Its largest discarded weight is 1.9e-6 at chi=96, so it calibrates the
 large separation of the two readings, not high-precision c. Transverse-DM
