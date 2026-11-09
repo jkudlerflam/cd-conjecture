@@ -2349,7 +2349,7 @@ microscopic Hamiltonian. This is AI-assisted research without human review.
   measured by the same method give .94672 (XX, c=1) and 1.94135 (two XX
   legs, c=2). The latter has discarded weight 1.9e-6, enough for this
   coarse distinction, not a high-precision calibration. Candidate final
-  discarded weights are below 1e-10. The high central-quarter profile
+  discarded weights are below 1e-10. The high central-half profile
   fits fall from 2.25 to 1.15 (C183) and from 1.99 to 1.01 (rational).
   These readings do not support c>1 at those fields; they do not settle
   the infrared limit or exclude a nearby retuned window.
@@ -2382,6 +2382,26 @@ microscopic Hamiltonian. This is AI-assisted research without human review.
   it is the cleaner simpler backup (no transverse DM). Incomplete L=192
   data and the old mismatched c=1 control cannot be used. The microscopic
   parity-family tests remain separate from those effective-model data.
+- [new numerical microscopic evidence] The simpler parity-family bond
+  w=exp(1.53i)/80, Delta=1, V=40, hz=-19.97589125, transverse DM=0
+  gives Sbar=1.35323214 at L=32 (odd parity) and 1.60105887 at L=64
+  (even parity), selecting the lower of the two independently optimized
+  sectors at each size. Thus c(32 to 64)=2.14523. The L=64 profile
+  fits over four preselected windows range from 2.05 to 2.40.
+  This strengthens the finite-size microscopic case for the imbalanced
+  route. It is not an asymptotic or counterexample claim: bulk density
+  drifts .25494 to .21826, parity switches, and last sweep energy changes
+  remain around 5e-7 (odd sector 8e-7), despite discarded weights below
+  2e-9. Larger sizes, local solver convergence and independent tests of
+  the nearby rational bond are being checked.
+- [numerical follow-up] C183's transverse-DM point at L=128 reads
+  c(64 to 128)=1.10032 and central-half c_profile=.98583. A different
+  L=64 initialization reproduces its energy within 6.8e-8 and entropy
+  within .000195. Its apparent short-chain excess therefore does not
+  become a two-mode signal in this extension. The exact XX controls
+  give .946721 and 2.047422 at 32 to 64, and .972275 and 2.025433 at
+  64 to 128, exposing a downward finite-chi bias of .106 in the recorded
+  two-leg DMRG control. No strict thermodynamic bound is inferred.
 
 Reproducible scripts, full profiles, convergence histories and limitations:
 [TeNPy runs](contrib/d2_tenpy_20261109/RESULT.md),

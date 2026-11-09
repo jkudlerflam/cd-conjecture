@@ -26,7 +26,7 @@ Files: `results/DM16_h9463_12.json`, `results/ED_DM16_h9463_12.json`, `results/E
 | -7.9450 | 0.17276 | 0.32399 | -0.33383 | 1.016 |
 | -7.9440 | 0.20579 | 0.39942 | -0.34472 | 1.422 |
 | -7.9420 | 0.24574 | 0.44786 | -0.33507 | 1.427 |
-| -7.9400 | 0.27193 | 0.47030 | -0.31271 | 1.261 |
+| -7.9400 | 0.27193 | 0.47030 | -0.31271 | 1.229 |
 
 All final local residuals are below 1e-9, last-sweep energy movements below 2.5e-12, and discarded weights below 1.3e-12. Density and entropy profiles, rather than just their central values, are saved in `results/lad_*.json`.
 
@@ -47,7 +47,23 @@ The largest energy error is 1.2e-6 for the two-leg L=48 control, whose discarded
 
 ## Matched size tests
 
-Selected before their output: hz=-7.9450, which has raw central density near 0.17 at L=24, and hz=-7.9440, the first ladder point with the broad profile estimate above 1.2. Both are being continued to L=48 with chi=16,32,48,64,64,96,96. At hz=-7.9450, L=48 has Sbar=0.4636847 and the matched 24-to48 slope is 1.20918. Its central density rises from 0.17276 to 0.23968 and Y=-0.42421. Fitted-window slopes are 1.353, 1.302, 0.257, -0.535, so this is not a stable c>1 estimate. The final local residual is 2.14e-9, discarded weight 8.94e-12 and last-sweep energy movement 1.1e-10; the run took 358 seconds. The other field remains pending. No positive conclusion is drawn from the L=24 profile readings alone.
+Selected before their output: hz=-7.9450, which has raw central density near 0.17 at L=24, and hz=-7.9440, the first ladder point with the broad profile estimate above 1.2. Both are being continued to L=48 with chi=16,32,48,64,64,96,96. At hz=-7.9450, L=48 has Sbar=0.4636847 and the matched 24-to48 slope is 1.20918. Its central density rises from 0.17276 to 0.23968 and Y=-0.42421. Fitted-window slopes are 1.353, 1.302, 0.257, -0.535, so this is not a stable c>1 estimate. The final local residual is 2.14e-9, discarded weight 8.94e-12 and last-sweep energy movement 1.1e-10; the run took 358 seconds. At hz=-7.9440, L=48 has Sbar=0.501014 and the matched size-pair slope is 0.87940. Its central density is 0.26721, Y=-0.41759, final residual 2.77e-9 and discarded weight 8.18e-12. Its nested profile slopes are 1.302,1.339,0.022,-0.937. This run took 375 seconds. Neither field produces a stable c>1 reading on these sizes. No positive conclusion is drawn from the L=24 profile readings alone.
+
+## Actual-density real-hopping scan
+
+[numerical] C183's real-hopping balance was obtained far below the gas onset. At the coordinator's request we scanned Jx+Jy from -0.0065 to -0.0035 at fixed hz=-7.9463 on L=24, keeping Jx-Jy=1 and all other coefficients fixed. Entropy rises from 0.0751 to 0.2439, but central density also rises from 0.0734 to 0.1219, and every broad profile slope is below 0.61. This does not improve the c>1 evidence.
+
+The ground-energy derivative measures the whole-chain sum of XX+YY. Its zero is near Jx+Jy=-0.00584 on this short chain, suggesting a focused follow-up. This is only a guide: boundaries contribute, and a zero whole-chain hopping response need not imply equal bulk dressed-valley densities.
+
+At fixed Jx+Jy=-0.0058, a three-field follow-up gives:
+
+| hz | central raw density | Sbar | central XX+YY | central Y |
+|---:|---:|---:|---:|---:|
+| -7.9460 | 0.11548 | 0.22871 | -0.05591 | -0.35430 |
+| -7.9455 | 0.14673 | 0.32367 | -0.07888 | -0.37603 |
+| -7.9450 | 0.16787 | 0.34953 | -0.08939 | -0.38205 |
+
+All final local residuals are below 1e-9. The last point has a raw density close to the original matched point and slightly larger entropy, so one additional L=48 comparison was selected before its output. It uses the same chi schedule with residual target1e-8 and saves an MPS checkpoint for further convergence work. That final comparison is pending. No further parameter grid is scheduled by this contribution.
 
 ## Reproduction
 

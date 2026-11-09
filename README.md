@@ -90,6 +90,9 @@ are under test; these points are not established counterexamples.
 An [independent audit](contrib/d2_priority_audit_20261109/README.md)
 also corrects the uniform-Y symmetry inference and checks the simpler
 off-symmetric parity family's effective-model evidence.
+A new full-microscopic parity-family test at phase 1.53 gives a preliminary
+c=2.15 from L=32 to 64, with both parity sectors checked; larger sizes,
+density drift and solver convergence remain essential.
 
 **Conclusion (2026-10-29, updated 2026-10-30), at the theoretical-physics standard: the c–d conjecture is false.** Explicit chains have c = 14 at d = 13 and c unbounded at fixed d = 4464, conditional only on standard Wilsonian RG input whose main pieces are now proved; the natural replacement, Σ_a c_a v_a ≤ π M log₂ d, survives every test, is proved for free fermions (A ≤ 2M) and for every solvable family, and is open in general. See the conclusion at the top of [STATUS.md](STATUS.md).
 

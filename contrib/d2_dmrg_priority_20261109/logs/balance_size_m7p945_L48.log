@@ -1,0 +1,8 @@
+  sweep 0 chi=16 E=-10.898303014628 trunc=0.00e+00 mv/solve=55.0 (max 61) res_max=3.9e-02
+  sweep 1 chi=32 E=-10.910435767217 trunc=4.70e-08 mv/solve=53.6 (max 61) res_max=1.4e-02
+  sweep 2 chi=48 E=-10.910735382959 trunc=5.72e-10 mv/solve=46.9 (max 61) res_max=1.7e-03
+  sweep 3 chi=64 E=-10.910735527410 trunc=1.57e-10 mv/solve=38.8 (max 61) res_max=2.8e-05
+  sweep 4 chi=64 E=-10.910735525893 trunc=2.01e-10 mv/solve=34.9 (max 61) res_max=3.1e-06
+  sweep 5 chi=96 E=-10.910735550451 trunc=1.08e-11 mv/solve=184.9 (max 401) res_max=2.1e-08
+  sweep 6 chi=96 E=-10.910735550265 trunc=1.52e-11 mv/solve=138.9 (max 328) res_max=1.0e-08
+done /Users/pace/Documents/GitHub/cd-conjecture/contrib/d2_dmrg_priority_20261109/results/balance_size_m7p945_48.json E=-196.3257355503 Sbar=0.4617 c_prof=1.549 trunc=1.5e-11 n_mid=0.2380 N=10.734 emid=-4.0078249463 t=249s

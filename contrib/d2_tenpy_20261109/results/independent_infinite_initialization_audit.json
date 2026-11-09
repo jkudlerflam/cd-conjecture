@@ -1,0 +1,217 @@
+{
+  "config": {
+    "name": "c183",
+    "chi": 8,
+    "cell": 4,
+    "sweeps": 2,
+    "diag": "default",
+    "env_init": "iter",
+    "update_env": 1,
+    "mixer": false,
+    "out": "/private/tmp/cd_iter_matrix_check.json"
+  },
+  "hermiticity_checks": [
+    {
+      "sweep": 0,
+      "size": 4,
+      "relative_defect": 0.030528962221304294,
+      "skew_scalar": [
+        0.0,
+        0.5498674953929421
+      ],
+      "traceless_skew_norm": 4.0137767731650484e-16
+    },
+    {
+      "sweep": 0,
+      "size": 8,
+      "relative_defect": 0.023815513785876537,
+      "skew_scalar": [
+        0.0,
+        0.5498674953929438
+      ],
+      "traceless_skew_norm": 5.459150533679232e-15
+    },
+    {
+      "sweep": 0,
+      "size": 8,
+      "relative_defect": 0.025367151003002648,
+      "skew_scalar": [
+        0.0,
+        0.549867495392942
+      ],
+      "traceless_skew_norm": 3.756549351286352e-15
+    },
+    {
+      "sweep": 0,
+      "size": 16,
+      "relative_defect": 0.02005369924638315,
+      "skew_scalar": [
+        0.0,
+        0.5498674953929426
+      ],
+      "traceless_skew_norm": 3.613393508649797e-15
+    },
+    {
+      "sweep": 0,
+      "size": 32,
+      "relative_defect": 0.01729041991204868,
+      "skew_scalar": [
+        0.0,
+        0.5498674953929413
+      ],
+      "traceless_skew_norm": 1.4500136745116762e-14
+    },
+    {
+      "sweep": 0,
+      "size": 32,
+      "relative_defect": 0.01729041991204874,
+      "skew_scalar": [
+        0.0,
+        0.5498674953929437
+      ],
+      "traceless_skew_norm": 1.0706753387609688e-14
+    },
+    {
+      "sweep": 0,
+      "size": 32,
+      "relative_defect": 0.018147814425733273,
+      "skew_scalar": [
+        0.0,
+        0.5498674953929422
+      ],
+      "traceless_skew_norm": 2.0050267902511925e-14
+    },
+    {
+      "sweep": 0,
+      "size": 64,
+      "relative_defect": 0.01763085435224491,
+      "skew_scalar": [
+        0.0,
+        0.5498674953929422
+      ],
+      "traceless_skew_norm": 3.7857980310332756e-14
+    },
+    {
+      "sweep": 1,
+      "size": 128,
+      "relative_defect": 0.015159628468340002,
+      "skew_scalar": [
+        0.0,
+        0.5498674953929445
+      ],
+      "traceless_skew_norm": 7.297526627364849e-14
+    },
+    {
+      "sweep": 1,
+      "size": 128,
+      "relative_defect": 0.015159628468340082,
+      "skew_scalar": [
+        0.0,
+        0.5498674953929465
+      ],
+      "traceless_skew_norm": 6.70250303490409e-14
+    },
+    {
+      "sweep": 1,
+      "size": 128,
+      "relative_defect": 0.014313250522796795,
+      "skew_scalar": [
+        0.0,
+        0.5498674953929468
+      ],
+      "traceless_skew_norm": 8.991356094232782e-14
+    },
+    {
+      "sweep": 1,
+      "size": 256,
+      "relative_defect": 0.017621653691419478,
+      "skew_scalar": [
+        0.0,
+        0.5498674953929417
+      ],
+      "traceless_skew_norm": 1.2482301612388583e-13
+    },
+    {
+      "sweep": 1,
+      "size": 256,
+      "relative_defect": 0.016598704303818792,
+      "skew_scalar": [
+        0.0,
+        0.5498674953929426
+      ],
+      "traceless_skew_norm": 1.3847712185412716e-13
+    },
+    {
+      "sweep": 1,
+      "size": 256,
+      "relative_defect": 0.01859565768562514,
+      "skew_scalar": [
+        0.0,
+        0.5498674953929424
+      ],
+      "traceless_skew_norm": 1.1622460718450484e-13
+    },
+    {
+      "sweep": 1,
+      "size": 256,
+      "relative_defect": 0.0158223424069327,
+      "skew_scalar": [
+        0.0,
+        0.5498674953929461
+      ],
+      "traceless_skew_norm": 1.4410627424415793e-13
+    },
+    {
+      "sweep": 1,
+      "size": 256,
+      "relative_defect": 0.019874399562430426,
+      "skew_scalar": [
+        0.0,
+        0.5498674953929416
+      ],
+      "traceless_skew_norm": 1.3101192088690523e-13
+    },
+    {
+      "sweep": 2,
+      "size": 256,
+      "relative_defect": 0.02159440566592815,
+      "skew_scalar": [
+        0.0,
+        0.5498674953929443
+      ],
+      "traceless_skew_norm": 1.1129941286603791e-13
+    },
+    {
+      "sweep": 2,
+      "size": 256,
+      "relative_defect": 0.020633190049786497,
+      "skew_scalar": [
+        0.0,
+        0.5498674953929441
+      ],
+      "traceless_skew_norm": 1.458337635484085e-13
+    },
+    {
+      "sweep": 2,
+      "size": 256,
+      "relative_defect": 0.020406418671945935,
+      "skew_scalar": [
+        0.0,
+        0.5498674953929419
+      ],
+      "traceless_skew_norm": 1.2572250012899383e-13
+    },
+    {
+      "sweep": 2,
+      "size": 256,
+      "relative_defect": 0.019577995861655637,
+      "skew_scalar": [
+        0.0,
+        0.5498674953929428
+      ],
+      "traceless_skew_norm": 1.3305078064937334e-13
+    }
+  ],
+  "runtime_seconds": 0.46872496604919434,
+  "status": "initialization_audit_only_no_optimization_result_used"
+}

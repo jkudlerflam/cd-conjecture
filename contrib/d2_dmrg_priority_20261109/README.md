@@ -28,3 +28,20 @@ After the ladder output through hz=-7.9440, two follow-ups were selected and rec
 The coordinator requested an actual-density valley-tuning scan, since C183's real-hopping tuning came from the far-field band. Registered before its output: at L=24, hz=-7.9450, fixed Jx-Jy=1 and all other couplings fixed, scan Jx+Jy=-0.0065,-0.0060,-0.0055,-0.00525,-0.0050,-0.0045,-0.0040034,-0.0035. Record density changes along with entropy; a larger entropy at a different density is not automatically a better c>1 candidate. This runs after the matched L=48 tests.
 
 Amendment before any real-hopping-scan output: fix hz=-7.9463 instead of -7.9450. The matched L=48 run at -7.9450 reached raw central density0.2397, whereas the coordinator's independent L=64 run at -7.9463 reached0.1716. This uses the longer-chain density information to target the intended region and avoids drifting toward quarter filling. The eight Jx+Jy values and convergence schedule remain as registered.
+
+After the real-hopping scan, the coordinator authorized one density-matched follow-up around its zero hopping response: fixed Jx+Jy=-0.0058, L=24, hz=-7.9460,-7.9455,-7.9450, same convergence schedule. The wrapper now measures <XX+YY> directly and saves a local MPS checkpoint in /private/tmp/cd-conjecture-mps. At most one new L=48 point will be selected if the density-matched data warrant it; no unlimited parameter grid is planned.
+
+One final matched-size point selected after the three-field follow-up: Jx+Jy=-0.0058, hz=-7.9450. Its L=24 raw density0.1679 is close to the original matched point's0.1728, with Sbar higher by0.0255. Run L=48 at chi=16,32,48,64,64,96,96, local residual target1e-8 (the registered physics tolerance), and report all residuals and last-sweep energy changes. This is a bounded check of actual-gas real-hopping retuning, not selection by an uncalibrated c fit. No further grid is scheduled here.
+
+## New priority: rational parity-class candidate
+
+After the transverse-DM tests, the coordinator reported substantially stronger c≈2 finite-size readings in the simpler partially polarized C181 family and requested an independent solver and rational-coefficient simplification. This is a new, explicitly registered stage. Use the literal qubit Hamiltonian
+
+```
+H = sum_j [10 Z_j Z_(j+1) + (X_j X_(j+1)-Y_j Y_(j+1))/2
+           +(X_j X_(j+1)+Y_j Y_(j+1))/4000
+           +(X_j Y_(j+1)-Y_j X_(j+1))/160
+           -(199759/10000) Z_j].
+```
+
+It has no transverse DM term and conserves parity. First validate both parity selectors against sparse ED at L=10. Then run L=32 and64 in each parity using the independent Davidson solver, chi96 and128 respectively, local residual target1e-8, repeated final sweeps. Measure the selected parity directly and remove the selector energy using its measured expectation. Compare the lower-energy parity at each length; never form a ground-state size slope by silently keeping the same parity when the minimum switches. The exact coefficient simplification and the new sizes are set before this stage's output. A two-size reading alone remains insufficient for a thermodynamic CFT claim.

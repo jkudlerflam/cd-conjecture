@@ -33,6 +33,10 @@ a c>1 claim at those fields. Larger-size and density/hopping scans are
 ongoing. The [new audit](contrib/d2_priority_audit_20261109/UNIFORM_Y_SOURCE.md)
 also shows the antiunitary forbids uniform X but permits a tiny uniform
 Y source; that correction alone is not a phase verdict.
+The simpler parity-family point at phase 1.53 now has a preliminary
+full-microscopic c=2.15 reading from L=32 to 64 and profile fits near 2;
+this is promising finite-size evidence with density/parity drift and
+remaining convergence checks, not an established counterexample.
 
 ## A replacement bound
 

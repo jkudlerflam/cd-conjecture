@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # GPT-6 Codex 2026-11-09: C183 fc.py wrapper; numerical solver unchanged.
-# Only additions: source imports fixed, physical X/Y profiles alongside Z.
+# Additions: fixed source imports, physical X/Y and hopping profiles, local MPS checkpoint, corrected V/Delta metadata.
 """[C183 copy of C177 fc.py: adds --cp (full couplings as a JSON string, incl. Kxz) and --kxz; otherwise unchanged.]
 C177 (Claude Opus 5.5 agent, 2026-11-09): open-chain DMRG of the full qubit chain at the Fibonacci cusp.
 
@@ -203,14 +203,33 @@ def main():
     e = np.array([eb[j % 2][j] for j in range(L - 1)])
     w = L // 8
     emid = float(np.mean(e[c - w:c + w]))
-    pshift = 0.0 if plam is None else abs(plam)
+    Pval=None
+    if plam is not None:
+        pe=np.ones((1,1),complex)
+        for A in M:
+            pe=np.einsum('ab,asc,st,btd->cd',pe,np.conj(A),SZ,A,optimize=True)
+        Pval=float(np.real(pe[0,0]))
+    pshift = 0.0 if plam is None else -plam*Pval
     out = dict(tag=a.tag, L=L, r=(4*cp['Jz']/abs(cp['Jx']-cp['Jy']) if cp['Jx']!=cp['Jy'] else None), couplings=cp, shift=shift, chis=a.chis, E=r['E'] + shift * (L - 1) + pshift, parity=a.parity,
-               P_total=None,
+               P_total=Pval,
                hist=[(x[0], x[1] + shift * (L - 1), x[2]) for x in r['hist']], trunc=r['hist'][-1][2],
                c_prof=cpf, c_sm=csm, Smid=mid, Sbar=Sbar, S=S.tolist(), X=Xprof.tolist(), Y=Yprof.tolist(), Z=Z.tolist(),
                Xmid=float(np.mean(Xprof[c-w:c+w])),Ymid=float(np.mean(Yprof[c-w:c+w])),
                n_mid=float(np.mean((1 - Z[c - w:c + w]) / 2)), N=float(np.sum((1 - Z) / 2)),
                ebond=e.tolist(), emid=emid, t_dmrg=time.time() - t0, gauge=bool(gauge), stats=r.get('stats'))
+    # Save a local, git-ignored checkpoint and a cheap direct hopping-response profile.
+    checkpoint_dir=os.environ.get("CD_DMRG_CHECKPOINT_DIR","/private/tmp/cd-conjecture-mps")
+    os.makedirs(checkpoint_dir,exist_ok=True)
+    statefile=os.path.join(checkpoint_dir,f"{a.tag}_{L}_mps.npz")
+    np.savez_compressed(statefile,**{f"M{j}":A for j,A in enumerate(M)},gauge_angles=th)
+    Pbond=np.kron(B.SX,B.SX)+np.kron(B.SY,B.SY)
+    Pop=[]
+    for j in range(2 if gauge else 1):
+        ug=np.kron(u(th[j]),u(th[j+1]));Pop.append(ug@Pbond@ug.conj().T)
+    Pvalues=[X.bond_energies(M,p) for p in Pop]
+    Pprofile=np.array([Pvalues[j%len(Pop)][j] for j in range(L-1)])
+    out['P_hop']=Pprofile.tolist();out['P_hop_mid']=float(np.mean(Pprofile[c-w:c+w]))
+    out['mps_checkpoint']=statefile
     if not a.nocorr:
         hp = hop_profiles(M, (1, 2))
         for rr in (1, 2):  # undo the gauge: physical <s+_i s-_j> = exp(-i th_i + i th_j) <...>'

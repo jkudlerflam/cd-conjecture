@@ -16,18 +16,25 @@ def slopes(d):
     return out
 
 def row(d):
-    return dict(hz=d['couplings']['hz'],L=d['L'],E=d['E'],Sbar=d['Sbar'],n_mid=d['n_mid'],N=d['N'],
+    return dict(hz=d['couplings']['hz'],Jx_plus_Jy=d['couplings']['Jx']+d['couplings']['Jy'],P_hop_mid=d.get('P_hop_mid'),L=d['L'],E=d['E'],Sbar=d['Sbar'],n_mid=d['n_mid'],N=d['N'],
                 Xmid=d['Xmid'],Ymid=d['Ymid'],c_prof=d['c_prof'],window_fits=slopes(d),trunc=d['trunc'],
                 final_residual=d['stats'][-1]['res_max'],energy_change_last=d['hist'][-1][1]-d['hist'][-2][1],seconds=d['time_s'])
 
 def main():
     ladders=sorted([read(p) for p in (HERE/'results').glob('lad_*.json')],key=lambda d:d['couplings']['hz'])
-    sizes=sorted([read(p) for p in (HERE/'results').glob('size_*.json')],key=lambda d:d['couplings']['hz'])
+    sizes=sorted([read(p) for p in list((HERE/'results').glob('size_*.json'))+list((HERE/'results').glob('balance_size_*.json'))],key=lambda d:d['couplings']['hz'])
     out=dict(ladder=[row(d) for d in ladders],sizes=[row(d) for d in sizes],two_size=[],controls=[])
+    hops=sorted([read(p) for p in (HERE/'results').glob('hop_*.json')],key=lambda d:d['couplings']['Jx']+d['couplings']['Jy'])
+    out['realhop']=[row(d) for d in hops]
+    out['balance']=[row(read(p)) for p in sorted((HERE/'results').glob('balance_*.json'))]
+    if len(hops)>=3:
+        xx=np.array([d['couplings']['Jx']+d['couplings']['Jy'] for d in hops]);ee=np.array([d['E'] for d in hops]);pc=2*np.gradient(ee,xx,edge_order=2)/(hops[0]['L']-1)
+        out['realhop_Hellmann_Feynman_Pmean']=list(zip(xx.tolist(),pc.tolist()))
+        xx0=xx[:3]-xx[1];a,b,c=np.polyfit(xx0,ee[:3]-ee[1],2);out['local_energy_maximum_Jsum']=float(xx[1]-b/(2*a))
     for d in sizes:
-        match=[a for a in ladders if a['couplings']==d['couplings']]
+        match=[a for a in ladders+[read(p) for p in (HERE/'results').glob('balance_*.json') if read(p)['L']==24] if a['couplings']==d['couplings']]
         if match:
-            a=match[0];out['two_size'].append(dict(hz=d['couplings']['hz'],lengths=[a['L'],d['L']],
+            a=match[0];out['two_size'].append(dict(hz=d['couplings']['hz'],Jx_plus_Jy=d['couplings']['Jx']+d['couplings']['Jy'],lengths=[a['L'],d['L']],
                 central_three_c=6*(d['Sbar']-a['Sbar'])/math.log(d['L']/a['L'])))
     for kind in ('xx','leg2'):
         ps=[HERE/'results'/f'control_{kind}_{L}.json' for L in (24,48)]

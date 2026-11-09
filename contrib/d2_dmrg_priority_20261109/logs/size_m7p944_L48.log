@@ -4,3 +4,5 @@
   sweep 3 chi=64 E=-10.937140655402 trunc=1.17e-10 mv/solve=38.6 (max 61) res_max=9.0e-06
   sweep 4 chi=64 E=-10.937140653553 trunc=1.42e-10 mv/solve=35.2 (max 61) res_max=3.2e-06
   sweep 5 chi=96 E=-10.937140673919 trunc=6.22e-12 mv/solve=241.5 (max 401) res_max=1.1e-08
+  sweep 6 chi=96 E=-10.937140673814 trunc=8.18e-12 mv/solve=210.2 (max 401) res_max=2.8e-09
+done /Users/pace/Documents/GitHub/cd-conjecture/contrib/d2_dmrg_priority_20261109/results/size_m7p944_48.json E=-196.3051406738 Sbar=0.5010 c_prof=1.302 trunc=8.2e-12 n_mid=0.2672 N=12.115 emid=-4.0074452912 t=375s

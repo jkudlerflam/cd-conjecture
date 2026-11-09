@@ -1,0 +1,6 @@
+  sweep 0 chi=16 E=-9.390765990160 trunc=0.00e+00 mv/solve=49.0 (max 61) res_max=1.8e-02
+  sweep 1 chi=32 E=-9.392883094059 trunc=8.08e-11 mv/solve=46.1 (max 61) res_max=4.1e-03
+  sweep 2 chi=48 E=-9.392883416361 trunc=9.14e-12 mv/solve=33.0 (max 61) res_max=6.5e-05
+  sweep 3 chi=64 E=-9.392883416947 trunc=7.35e-13 mv/solve=136.6 (max 401) res_max=4.4e-09
+  sweep 4 chi=64 E=-9.392883416946 trunc=8.29e-13 mv/solve=75.0 (max 257) res_max=1.0e-09
+done contrib/d2_dmrg_priority_20261109/results/balance_seed1_24.json E=-100.1278834169 Sbar=0.3495 c_prof=0.956 trunc=8.3e-13 n_mid=0.1679 N=4.881 emid=-4.0098091968 t=28s

@@ -1,4 +1,6 @@
-"""Independent full-spin TeNPy DMRG; no number/parity projection or effective truncation.
+"""Independent full-spin TeNPy DMRG; no number projection or effective truncation.
+
+Optional exact parity sectors are available only when transverse DM is absent.
 
 Pauli convention, uniform fields, open boundaries. A scalar is subtracted so
 the all-up product has energy zero; E_unshifted restores the literal chain.

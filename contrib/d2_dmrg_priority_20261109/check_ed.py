@@ -24,7 +24,10 @@ def build(L,cp,periodic=False):
 def main():
     a=argparse.ArgumentParser();a.add_argument('input');a.add_argument('--output',required=True);a.add_argument('--periodic',action='store_true');a.add_argument('--L',type=int);args=a.parse_args()
     d=json.loads(Path(args.input).read_text());L=args.L or d['L'];H=build(L,d['couplings'],args.periodic);t=time.time()
-    e,vs=eigsh(H,k=2,which='SA',tol=1e-12,maxiter=100000,v0=np.random.default_rng(41).normal(size=H.shape[0]));ii=np.argsort(e);e=e[ii];v=vs[:,ii[0]]
+    sector=d.get('parity')
+    ids=np.array([s for s in range(1<<L) if s.bit_count()%2==(1 if sector=='odd' else 0)]) if sector else np.arange(1<<L)
+    Hsector=H[ids][:,ids]
+    e,vs=eigsh(Hsector,k=2,which='SA',tol=1e-12,maxiter=100000,v0=np.random.default_rng(41).normal(size=Hsector.shape[0]));ii=np.argsort(e);e=e[ii];v=np.zeros(1<<L,complex);v[ids]=vs[:,ii[0]]
     mag=[]
     for op in (X,Y,Z):
         m=[]
@@ -34,7 +37,7 @@ def main():
     S=[]
     for j in range(1,L):
         sv=np.linalg.svd(v.reshape(2**j,-1),compute_uv=False);p=sv*sv;p=p[p>1e-15];S.append(float(-p@np.log(p)))
-    res=dict(L=L,couplings=d['couplings'],E=float(e[0]),gap=float(e[1]-e[0]),
+    res=dict(L=L,parity=sector,couplings=d['couplings'],E=float(e[0]),gap=float(e[1]-e[0]),
              dmrg_energy_error=(float(d['E']-e[0]) if not args.periodic else None),max_entropy_error=(float(np.max(np.abs(np.array(S)-d['S']))) if not args.periodic else None),
              max_X_error=(float(np.max(np.abs(np.array(mag[0])-d['X']))) if not args.periodic else None),max_Y_error=(float(np.max(np.abs(np.array(mag[1])-d['Y']))) if not args.periodic else None),
              max_Z_error=(float(np.max(np.abs(np.array(mag[2])-d['Z']))) if not args.periodic else None),X=mag[0],Y=mag[1],Z=mag[2],S=S,seconds=time.time()-t)

@@ -1,0 +1,10 @@
+{
+  "registered_after": "Original V40 field has decreasing entropy and density from L32 to L64, consistent with a dressed-vacuum target rather than the desired fluid.",
+  "purpose": "Raise only the longitudinal field in the original literal bond; scan density before promoting a size comparison.",
+  "name": "original",
+  "fields": [-19.9771875, -19.9768875, -19.9765875],
+  "L": 32,
+  "chi": 64,
+  "sweeps": 20,
+  "selection": "At most one finite-density point to L64; a large single-size entropy is not a central-charge criterion. Report every scan point."
+}

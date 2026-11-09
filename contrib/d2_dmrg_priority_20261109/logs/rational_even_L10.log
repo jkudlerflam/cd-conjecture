@@ -1,0 +1,5 @@
+  sweep 0 chi=16 E=-21.199046204530 trunc=0.00e+00 mv/solve=28.5 (max 61) res_max=3.0e-02
+  sweep 1 chi=32 E=-21.199046659741 trunc=1.83e-24 mv/solve=9.5 (max 61) res_max=3.8e-05
+  sweep 2 chi=32 E=-21.199046659742 trunc=3.33e-28 mv/solve=9.4 (max 86) res_max=1.0e-08
+  sweep 3 chi=32 E=-21.199046659742 trunc=1.01e-31 mv/solve=0.6 (max 1) res_max=6.8e-09
+done /Users/pace/Documents/GitHub/cd-conjecture/contrib/d2_dmrg_priority_20261109/results/rational_even_10.json E=-109.9821466597 Sbar=0.5683 c_prof=2.179 trunc=1.0e-31 n_mid=0.3390 N=3.993 emid=-10.0010971654 t=0s
