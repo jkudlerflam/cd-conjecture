@@ -1934,3 +1934,17 @@ The target was C170's restated A_S: no bound magnon along the quantum switch set
   - Potts × half-floating boson, c = 9/5 (C171 R1) [derived]. The chiral term is allowed on T and K_I as well, so R1 needs two tunings there and at least three in N. C168 independently finds codimension 2 in N. A period-3 order on one qubit per site is either the host's own locked spiral, which gaps the host, or a period-3 density wave, which no nearest-neighbour U(1) liquid has (all have K > 1/4). So the Potts sector needs a second species, and it falls under (A_W′) or (R_N).
   - Repulsive-host c = 2 (C171 R4) [derived near U(1), assumed beyond]. It needs a fluid of bound pairs with K₂ < 1/4, the n ≥ 2 gap of C163's Lemma L. In a repulsive host that branch never softens near the U(1) class, and beyond that it is (A6).
 - Open: interacting nearest-neighbour chains of period p > 1, where a structured period-2 search would test whether one-site translation matters at all; bonds not aligned with a Pauli frame, in the hidden-free-fermion enumeration; the DM integrability step; and order-one harmonic amplitude, where all three routes would have to live (PROOF §9 names a Z₅ test family).
+
+### 9.135 Typhon output of C157: the bisector line, the Ashkin–Teller wedge and the mixing directions near XZ (coordinator, Claude Opus 5.5, 2026-11-09; `codex/work_C157/typhon_out/`)
+
+Job 17595396 completed in 22 h 33 min. The estimates below use C157's own `cscale.py` and `cfit.py`, plus central pair estimates 6 ΔS_mid / Δ ln L computed by the coordinator. Truncation is 1e-8 or below throughout.
+
+- Bisector field, open chains at L = 192 and 256.
+  - At h = 0.3 the smoothed profile fits are 0.83 and 0.81, and c_pair(192, 256) = 0.89.
+  - At h = 0.45 the fits are 1.02 and 1.00, and c_pair = 1.01.
+  - Window fits at h = 0.45 lie between 0.97 and 1.05 at both sizes.
+
+  So the line is one boson out to L = 256, which agrees with the C158 FES result of §9.131 at the same fields. On the C157 estimator calibration, the known c = 3/2 RZFA phase read 1.5 to 1.7 at L = 128, so a c = 3/2 sector would have been visible.
+- Ashkin–Teller wedge boundary at β = 0.5, α = 0.21 to 0.27. The pair estimates are all below 0.83 and fall with L. At α = 0.225 they go 0.74 → 0.68 over 64 → 128 → 192, and at α = 0.25 they go 0.52 → 0.38. Nothing reaches 1.
+- Mixing plus plaquette, XZ + α ZX + 0.3 YY + 0.1(XX + ZZ). At α = −0.15, −0.05, 0.05, c_pair(64, 128) = 1.04, 1.06, 1.09, consistent with one boson at these sizes. α = 0.19 is gapped (S_mid = 0.068 at both sizes).
+- Verdict [numerical]: no c > 1 reading near XZ in C157's directions. This closes the numerical side of C157's argument that the XZ loophole has the wrong sign. The mixing points were taken only to L = 128.
