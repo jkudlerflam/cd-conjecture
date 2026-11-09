@@ -1,0 +1,16 @@
+timeout 690m python3 run.py typhon_bf/cfg/bf_w1n316_p1.5300_L128_N24.json out_bf > logs_bf/bf_w1n316_p1.5300_L128_N24.log 2>&1
+timeout 690m python3 run.py typhon_bf/cfg/bf_w1n316_p1.5300_L128_N23.json out_bf > logs_bf/bf_w1n316_p1.5300_L128_N23.log 2>&1
+timeout 690m python3 run.py typhon_bf/cfg/bf_w1n316_p1.5300_L128_N25.json out_bf > logs_bf/bf_w1n316_p1.5300_L128_N25.log 2>&1
+timeout 690m python3 run.py typhon_bf/cfg/bf_w1n316_p1.5550_L128_N24.json out_bf > logs_bf/bf_w1n316_p1.5550_L128_N24.log 2>&1
+timeout 690m python3 run.py typhon_bf/cfg/bf_w1n316_p1.5550_L128_N23.json out_bf > logs_bf/bf_w1n316_p1.5550_L128_N23.log 2>&1
+timeout 690m python3 run.py typhon_bf/cfg/bf_w1n316_p1.5550_L128_N25.json out_bf > logs_bf/bf_w1n316_p1.5550_L128_N25.log 2>&1
+timeout 690m python3 run.py typhon_bf/cfg/bf_ctl1_L128_N24.json out_bf > logs_bf/bf_ctl1_L128_N24.log 2>&1
+timeout 690m python3 run.py typhon_bf/cfg/bf_ctl2_L128_N24.json out_bf > logs_bf/bf_ctl2_L128_N24.log 2>&1
+timeout 690m python3 run.py typhon_bf/cfg/bf_w1n316_p1.5300_L64_N12.json out_bf > logs_bf/bf_w1n316_p1.5300_L64_N12.log 2>&1
+timeout 690m python3 run.py typhon_bf/cfg/bf_w1n316_p1.5300_L64_N11.json out_bf > logs_bf/bf_w1n316_p1.5300_L64_N11.log 2>&1
+timeout 690m python3 run.py typhon_bf/cfg/bf_w1n316_p1.5300_L64_N13.json out_bf > logs_bf/bf_w1n316_p1.5300_L64_N13.log 2>&1
+timeout 690m python3 run.py typhon_bf/cfg/bf_w1n316_p1.5550_L64_N12.json out_bf > logs_bf/bf_w1n316_p1.5550_L64_N12.log 2>&1
+timeout 690m python3 run.py typhon_bf/cfg/bf_w1n316_p1.5550_L64_N11.json out_bf > logs_bf/bf_w1n316_p1.5550_L64_N11.log 2>&1
+timeout 690m python3 run.py typhon_bf/cfg/bf_w1n316_p1.5550_L64_N13.json out_bf > logs_bf/bf_w1n316_p1.5550_L64_N13.log 2>&1
+timeout 690m python3 run.py typhon_bf/cfg/bf_ctl1_L64_N12.json out_bf > logs_bf/bf_ctl1_L64_N12.log 2>&1
+timeout 690m python3 run.py typhon_bf/cfg/bf_ctl2_L64_N12.json out_bf > logs_bf/bf_ctl2_L64_N12.log 2>&1

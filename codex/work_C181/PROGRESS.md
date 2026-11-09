@@ -19,3 +19,4 @@ This run was done by a Claude Opus 5.5 agent (2026-11-09), not by Codex (Astra o
 - Local previews done: |w| = 2 (φ = π/2, 1.50; L = 32, 64, 96), |w| = 1 (φ = 1.555 at L = 64 with N ± 1 and L = 96; φ = 1.53 at L = 64, 96; φ = 1.50 at L = 64), controls at L = 64, 96. summarize.py and relwin.py (L-proportional window, chosen after the controls were seen, flagged as unregistered). Results in PROOF 5.2.
 - Ring runs: ringmag_w2_L28/L32, ringmag_w2V0_L32, ringmag_w1_L30/L36 complete; ringmag_w2_L36 partial at write-up (still running locally).
 - RESULT.md and PROOF.md written. Typhon job 17604471 still pending.
+- Coordinator request: backfill job 17604615 (16 cores, 11 h 55 min, 16 runs: |w| = 1, φ = 1.53 and 1.555, L = 64 and 128 with N ± 1, ctl1 and ctl2 at L = 64 and 128, χ to 384, one thread each), typhon_bf/. Job 17604471 trimmed in place on scratch to 124 tasks (removed w1n316_p1.5550 and ctl1/ctl2). Both recorded in RESULT.md.

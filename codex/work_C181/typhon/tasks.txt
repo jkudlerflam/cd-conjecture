@@ -34,9 +34,6 @@ timeout 2000m python3 run.py typhon/cfg/w2n38_p1.5200_L64_N25.json out > logs/w2
 timeout 2000m python3 run.py typhon/cfg/w1n316_p1.5650_L64_N12.json out > logs/w1n316_p1.5650_L64_N12.log 2>&1
 timeout 2000m python3 run.py typhon/cfg/w1n316_p1.5650_L64_N11.json out > logs/w1n316_p1.5650_L64_N11.log 2>&1
 timeout 2000m python3 run.py typhon/cfg/w1n316_p1.5650_L64_N13.json out > logs/w1n316_p1.5650_L64_N13.log 2>&1
-timeout 2000m python3 run.py typhon/cfg/w1n316_p1.5550_L64_N12.json out > logs/w1n316_p1.5550_L64_N12.log 2>&1
-timeout 2000m python3 run.py typhon/cfg/w1n316_p1.5550_L64_N11.json out > logs/w1n316_p1.5550_L64_N11.log 2>&1
-timeout 2000m python3 run.py typhon/cfg/w1n316_p1.5550_L64_N13.json out > logs/w1n316_p1.5550_L64_N13.log 2>&1
 timeout 2000m python3 run.py typhon/cfg/w1n316_p1.5400_L64_N12.json out > logs/w1n316_p1.5400_L64_N12.log 2>&1
 timeout 2000m python3 run.py typhon/cfg/w1n316_p1.5400_L64_N11.json out > logs/w1n316_p1.5400_L64_N11.log 2>&1
 timeout 2000m python3 run.py typhon/cfg/w1n316_p1.5400_L64_N13.json out > logs/w1n316_p1.5400_L64_N13.log 2>&1
@@ -49,8 +46,6 @@ timeout 2000m python3 run.py typhon/cfg/w1n8_p1.5650_L64_N9.json out > logs/w1n8
 timeout 2000m python3 run.py typhon/cfg/w1n8_p1.5500_L64_N8.json out > logs/w1n8_p1.5500_L64_N8.log 2>&1
 timeout 2000m python3 run.py typhon/cfg/w1n8_p1.5500_L64_N7.json out > logs/w1n8_p1.5500_L64_N7.log 2>&1
 timeout 2000m python3 run.py typhon/cfg/w1n8_p1.5500_L64_N9.json out > logs/w1n8_p1.5500_L64_N9.log 2>&1
-timeout 2000m python3 run.py typhon/cfg/ctl1_L64_N12.json out > logs/ctl1_L64_N12.log 2>&1
-timeout 2000m python3 run.py typhon/cfg/ctl2_L64_N12.json out > logs/ctl2_L64_N12.log 2>&1
 timeout 2000m python3 run.py typhon/cfg/ctlV0_w2_p1.5350_L64_N18.json out > logs/ctlV0_w2_p1.5350_L64_N18.log 2>&1
 timeout 2000m python3 run.py typhon/cfg/eos_w2_p1.5708_L64_N4.json out > logs/eos_w2_p1.5708_L64_N4.log 2>&1
 timeout 2000m python3 run.py typhon/cfg/eos_w2_p1.5708_L64_N6.json out > logs/eos_w2_p1.5708_L64_N6.log 2>&1
@@ -90,13 +85,10 @@ timeout 2000m python3 run.py typhon/cfg/w2n38_p1.5708_L128_N48.json out > logs/w
 timeout 2000m python3 run.py typhon/cfg/w2n38_p1.5450_L128_N48.json out > logs/w2n38_p1.5450_L128_N48.log 2>&1
 timeout 2000m python3 run.py typhon/cfg/w2n38_p1.5200_L128_N48.json out > logs/w2n38_p1.5200_L128_N48.log 2>&1
 timeout 2000m python3 run.py typhon/cfg/w1n316_p1.5650_L128_N24.json out > logs/w1n316_p1.5650_L128_N24.log 2>&1
-timeout 2000m python3 run.py typhon/cfg/w1n316_p1.5550_L128_N24.json out > logs/w1n316_p1.5550_L128_N24.log 2>&1
 timeout 2000m python3 run.py typhon/cfg/w1n316_p1.5400_L128_N24.json out > logs/w1n316_p1.5400_L128_N24.log 2>&1
 timeout 2000m python3 run.py typhon/cfg/w1n316_p1.5000_L128_N24.json out > logs/w1n316_p1.5000_L128_N24.log 2>&1
 timeout 2000m python3 run.py typhon/cfg/w1n8_p1.5650_L128_N16.json out > logs/w1n8_p1.5650_L128_N16.log 2>&1
 timeout 2000m python3 run.py typhon/cfg/w1n8_p1.5500_L128_N16.json out > logs/w1n8_p1.5500_L128_N16.log 2>&1
-timeout 2000m python3 run.py typhon/cfg/ctl1_L128_N24.json out > logs/ctl1_L128_N24.log 2>&1
-timeout 2000m python3 run.py typhon/cfg/ctl2_L128_N24.json out > logs/ctl2_L128_N24.log 2>&1
 timeout 2000m python3 run.py typhon/cfg/ctlV0_w2_p1.5350_L128_N36.json out > logs/ctlV0_w2_p1.5350_L128_N36.log 2>&1
 timeout 2000m python3 run.py typhon/cfg/w2n932_p1.5708_L128_N35.json out > logs/w2n932_p1.5708_L128_N35.log 2>&1
 timeout 2000m python3 run.py typhon/cfg/w2n932_p1.5708_L128_N37.json out > logs/w2n932_p1.5708_L128_N37.log 2>&1
@@ -122,8 +114,6 @@ timeout 2000m python3 run.py typhon/cfg/w2n38_p1.5200_L128_N47.json out > logs/w
 timeout 2000m python3 run.py typhon/cfg/w2n38_p1.5200_L128_N49.json out > logs/w2n38_p1.5200_L128_N49.log 2>&1
 timeout 2000m python3 run.py typhon/cfg/w1n316_p1.5650_L128_N23.json out > logs/w1n316_p1.5650_L128_N23.log 2>&1
 timeout 2000m python3 run.py typhon/cfg/w1n316_p1.5650_L128_N25.json out > logs/w1n316_p1.5650_L128_N25.log 2>&1
-timeout 2000m python3 run.py typhon/cfg/w1n316_p1.5550_L128_N23.json out > logs/w1n316_p1.5550_L128_N23.log 2>&1
-timeout 2000m python3 run.py typhon/cfg/w1n316_p1.5550_L128_N25.json out > logs/w1n316_p1.5550_L128_N25.log 2>&1
 timeout 2000m python3 run.py typhon/cfg/w1n316_p1.5400_L128_N23.json out > logs/w1n316_p1.5400_L128_N23.log 2>&1
 timeout 2000m python3 run.py typhon/cfg/w1n316_p1.5400_L128_N25.json out > logs/w1n316_p1.5400_L128_N25.log 2>&1
 timeout 2000m python3 run.py typhon/cfg/w1n316_p1.5000_L128_N23.json out > logs/w1n316_p1.5000_L128_N23.log 2>&1
