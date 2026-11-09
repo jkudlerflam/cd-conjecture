@@ -58,7 +58,8 @@ class PauliChain(CouplingMPOModel):
             if j:
                 self.add_coupling(j,0,a,0,b,distance)
         self.add_onsite(p['hz'],0,'Sigmaz')
-        self.energy_offset = (L-distance)*p['Jz']+L*p['hz']
+        bonds = L if self.lat.bc_MPS == 'infinite' else L-distance
+        self.energy_offset = bonds*p['Jz']+L*p['hz']
         self.add_onsite(-self.energy_offset/L,0,'Id')
 
 

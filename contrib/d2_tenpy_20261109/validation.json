@@ -1,0 +1,34 @@
+[
+  {
+    "name": "c183",
+    "L": 8,
+    "matrix_error": 2.842170943040401e-14,
+    "energy_error": 0.0,
+    "entropy_error": 1.300098917411674e-12,
+    "gap": 0.017571908128871883
+  },
+  {
+    "name": "dyadic",
+    "L": 8,
+    "matrix_error": 0.0,
+    "energy_error": 0.0,
+    "entropy_error": 7.514960875809606e-13,
+    "gap": 0.01805625533886257
+  },
+  {
+    "name": "xx",
+    "L": 8,
+    "matrix_error": 0.0,
+    "energy_error": 1.0658141036401503e-14,
+    "entropy_error": 1.3322676295501878e-15,
+    "gap": 0.34729635533386194
+  },
+  {
+    "name": "two_xx",
+    "L": 8,
+    "matrix_error": 0.0,
+    "energy_error": 2.6645352591003757e-15,
+    "entropy_error": 1.7763568394002505e-15,
+    "gap": 0.6180339887498931
+  }
+]
