@@ -1,0 +1,15 @@
+timeout 1200 python3 run.py local/pre/pre_sym16_L48.json local/pre >> local/pre/pre.log 2>&1
+timeout 1200 python3 run.py local/pre/pre_sym18_L48.json local/pre >> local/pre/pre.log 2>&1
+timeout 1200 python3 run.py local/pre/pre_c1_L48.json local/pre >> local/pre/pre.log 2>&1
+timeout 1200 python3 run.py local/pre/pre_c2_L48.json local/pre >> local/pre/pre.log 2>&1
+timeout 1200 python3 run.py local/pre/pre_sym316_L64.json local/pre >> local/pre/pre.log 2>&1
+timeout 1200 python3 run.py local/pre/pre_sym18_L64.json local/pre >> local/pre/pre.log 2>&1
+timeout 1200 python3 run.py local/pre/pre_sym532_L64.json local/pre >> local/pre/pre.log 2>&1
+timeout 1200 python3 run.py local/pre/pre_c1_L64.json local/pre >> local/pre/pre.log 2>&1
+timeout 1200 python3 run.py local/pre/pre_c2_L64.json local/pre >> local/pre/pre.log 2>&1
+timeout 1200 python3 run.py local/pre/pre_sym18p1_L48.json local/pre >> local/pre/pre.log 2>&1
+timeout 1200 python3 run.py local/pre/pre_sym18m1_L48.json local/pre >> local/pre/pre.log 2>&1
+timeout 1200 python3 run.py local/pre/pre_sym18p1_L64.json local/pre >> local/pre/pre.log 2>&1
+timeout 1200 python3 run.py local/pre/pre_sym18m1_L64.json local/pre >> local/pre/pre.log 2>&1
+timeout 1200 python3 run.py local/pre/pre_sym16p1_L48.json local/pre >> local/pre/pre.log 2>&1
+timeout 1200 python3 run.py local/pre/pre_sym16m1_L48.json local/pre >> local/pre/pre.log 2>&1

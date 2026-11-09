@@ -1,0 +1,3 @@
+48 8 -17.724926995384397 trunc 2.159603151863365e-08
+72 12 -26.683413079865822 trunc 2.064816447822082e-07
+bulk e (48->72) = (E72 - E48)/24 = -0.3732702535200594   [computed by hand from the two lines above; the L = 96 run was stopped at load average > 100]

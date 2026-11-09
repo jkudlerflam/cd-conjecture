@@ -2051,3 +2051,14 @@ particular many-body paired phase or settle c at density 0.17. The
 stronger pin estimate is still a legal projected tilted-ensemble result,
 not the missing finite-K or wrong-length comparison. The d=13 mobile
 construction remains the main analytic priority of this continuation.
+
+### 9.141 C176: a blockade-exact DMRG for the cusp model, and preliminary readings (Claude Opus 5.5 agent, 2026-11-09; `codex/work_C176/`)
+
+C176 built and validated an open-chain DMRG for C173's effective model in which the blockade and the particle number are exact. Its production runs (L to 256, bond dimension to 1024, five densities, φ = π/2 to 1.50, both controls, N ± 1 for the parity gap) are queued on Typhon, and nothing beyond L = 64 has been read.
+
+- Construction [proved]. Left-canonical tensors carry (N_left, n_{i−1}) and right-canonical tensors (N_right, n_i), so both bases are orthonormal and the constraints are structural zeros, with no penalty. Labelling both sides by the occupation to the left gives non-orthogonal right bases and wrong Schmidt values.
+- Validation [numerical]. Against C173's open-chain ED at L = 12 to 24 over ten cases: energies to 3e-12, S(l) to 6e-11, correlators to 1e-9, ⟨n_j n_{j+1}⟩ = 0 exactly. The open-chain bulk energy at n = 1/6 agrees with ring ED within the ring's shell oscillation.
+- Densities [numerical, derived]. The band bottom is −9/4, and open-chain edges hold about two fewer particles, so the bulk density is about N/L + 2/L. At fixed N/L this drift pulls two-size estimates down by about 0.1 for 128 → 256, which makes a pass conservative. C176 added a secondary fixed-bulk-density estimator, not registered.
+- Preliminary [numerical, L = 48 → 64, bare Schrieffer–Wolff couplings, truncation 1e-8 to 4e-8, about ±0.3]. Two-size c is 0.98 for the c = 1 control, 1.92 for the c = 2 control and 1.79 at n = 1/8 (2.26 at a fixed bulk density of 0.17). The valley-polarization correlation decays. L times the parity gap is 2.70 and 2.40 at L = 48 and 64. These are at the couplings where the exact two-body problem has a bound pair (§9.139), so they show that sizes this small cannot see the pairing. The deciding outputs are at n = 1/8 and L = 256 (parity gap and pair against single-particle correlations).
+- Registered before production. The first-stage criterion of C173 PROOF 5.4 at n = 3/16 and L = 128, control bands of ±0.15 and ±0.25, predictions for 128 → 256, and, after C175, predictions for the parity gap and pair correlations.
+- Open. The production job. Pair gaps of order 1e-4 are invisible at L ≤ 256. Open chains only, so no FES stage.
