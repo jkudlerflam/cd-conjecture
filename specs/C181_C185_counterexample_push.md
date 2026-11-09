@@ -26,7 +26,7 @@ Typhon also has C173's and C175's effective-model runs.
 - C171 listed routes R3 (composite second bosons) and R4 that remain open.
 - STATUS notes that isolated multicritical points have not been inventoried.
 
-Six agents work in parallel (C181 to C186). Your role is the section with your number, and you do only that.
+Agents C181 to C186 and C188 work in parallel. Your role is the section with your number, and you do only that.
 
 ## Shared reading for every agent
 
@@ -181,3 +181,15 @@ So the c = 2 route at the cusp needs a nearest-neighbour qubit bond whose genera
 - Check the symmetry (the valley degeneracy needs the C173 PROOF 3.3 symmetry or a substitute), the number-changing terms, and the two-pair vertex of C179 for any modified bond.
 - If a modified bond unbinds the pair, test it. Run the two-body problem (the collaborator's exact_pair.py or C175's code), then C175's pseudospin criterion, then effective-model DMRG with the parity gap, then the full qubit chain at moderate V/Δ. Give the explicit qubit bond.
 - If no nearest-neighbour bond can unbind it, prove that, and say what the obstruction is.
+
+## C188: the cyclic stratum's SU(2)₁/ordered boundary, the one single-tuning route
+
+C184 (REPORT §9.143, `codex/work_C184/`) found one place where c > 1 needs only a single tuning inside a stratum and no dynamical argument excludes it. That place is the boundary between the SU(2)₁ phase and the ordered phase in the cyclic stratum (C154's strata, see C154 PROOF 7 and the cyclic-class results it cites). An SU(2)_k point with k ≥ 2 (c = 3/2 at k = 2, c = 9/5 at k = 3), or any other c > 1 multicritical theory, could sit on it. C154's old job saw a level crossing there, with the Casimir c falling from 0.93 to 0.69 and no SU(2)₃ tower, but on a coarse grid.
+- Map the boundary finely in the cyclic stratum. Use ring ED with momentum and spin resolution, at L up to about 28 or 30, and DMRG.
+- Along the boundary, look for any segment where:
+  - the transition is continuous rather than first order;
+  - the spectrum shows an SU(2)_k (k ≥ 2) or other c > 1 tower;
+  - the Casimir c and the entanglement c exceed 1.
+- Explain field-theoretically why the transition is generically first order, or else find the multicritical point where it is not.
+- Read C184's PROOF on the inventory and C154's collected job output first.
+- Register predictions before looking at any output.
