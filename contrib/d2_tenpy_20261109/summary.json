@@ -1,5 +1,5 @@
 {
-  "status": "Finite-size diagnostics, not an infrared central-charge determination",
+  "status": "No established c>1: parity-family c~2 at 32-64 is not sustained at unconverged L128",
   "records": [
     {
       "name": "c183",
@@ -27,6 +27,7 @@
           "rms": 0.003796346848115277
         }
       },
+      "status": "finite-size diagnostic; see convergence history",
       "final_four_energy_span": 7.438494264988549e-15,
       "last_mean_entropy_change": -2.596273207811084e-07,
       "last_discarded": 1.3163342608934155e-16
@@ -57,6 +58,7 @@
           "rms": 0.012539594104841883
         }
       },
+      "status": "finite-size diagnostic; see convergence history",
       "final_four_energy_span": 1.4426015937374359e-11,
       "last_mean_entropy_change": -8.851798535824962e-08,
       "last_discarded": 1.4859604512897634e-14
@@ -87,6 +89,7 @@
           "rms": 0.008695777665480827
         }
       },
+      "status": "finite-size diagnostic; see convergence history",
       "final_four_energy_span": 4.1230219238741483e-10,
       "last_mean_entropy_change": 4.172915069045047e-08,
       "last_discarded": 7.2161568146726735e-12
@@ -117,6 +120,7 @@
           "rms": 0.010700489226169873
         }
       },
+      "status": "finite-size diagnostic; see convergence history",
       "final_four_energy_span": 5.4469094123987816e-08,
       "last_mean_entropy_change": -4.846949667458578e-06,
       "last_discarded": 3.714294889973475e-11
@@ -147,6 +151,7 @@
           "rms": 0.017952628787529294
         }
       },
+      "status": "finite-size diagnostic; see convergence history",
       "final_four_energy_span": 1.779909553079051e-11,
       "last_mean_entropy_change": 7.0160238729854996e-09,
       "last_discarded": 2.699715207105927e-13
@@ -177,6 +182,7 @@
           "rms": 0.01242959640158877
         }
       },
+      "status": "finite-size diagnostic; see convergence history",
       "final_four_energy_span": 2.8791209416567654e-09,
       "last_mean_entropy_change": -1.6080787190730916e-07,
       "last_discarded": 5.2505909433256936e-12
@@ -207,6 +213,7 @@
           "rms": 0.0012110229894978443
         }
       },
+      "status": "finite-size diagnostic; see convergence history",
       "final_four_energy_span": 1.7182921752123548e-12,
       "last_mean_entropy_change": 4.6690351879208336e-07,
       "last_discarded": 9.709945609644805e-15
@@ -237,6 +244,7 @@
           "rms": 0.0018163608200134954
         }
       },
+      "status": "finite-size diagnostic; see convergence history",
       "final_four_energy_span": 1.1200063099181534e-10,
       "last_mean_entropy_change": -5.7095699418363566e-09,
       "last_discarded": 5.0827289321704986e-14
@@ -267,6 +275,7 @@
           "rms": 0.041564387090498575
         }
       },
+      "status": "finite-size diagnostic; see convergence history",
       "final_four_energy_span": 3.382165358889466e-08,
       "last_mean_entropy_change": -2.7362116994389396e-07,
       "last_discarded": 1.2666825510117416e-10
@@ -297,9 +306,41 @@
           "rms": 0.025563317232850564
         }
       },
+      "status": "finite-size diagnostic; see convergence history",
       "final_four_energy_span": 9.304161190382132e-07,
       "last_mean_entropy_change": 9.477201897478693e-06,
       "last_discarded": 1.2283076445413606e-09
+    },
+    {
+      "name": "c181153",
+      "L": 128,
+      "parity": "odd",
+      "S": 1.6919158280069315,
+      "density": 0.213922319923049,
+      "E": -3.1992969312091244,
+      "chi": 128,
+      "profile_fits": {
+        "0.125": {
+          "c": 1.3663717579146286,
+          "rms": 0.024580702200035085
+        },
+        "0.2": {
+          "c": 1.2405642747041483,
+          "rms": 0.023119976486753565
+        },
+        "0.25": {
+          "c": 1.0758479249321196,
+          "rms": 0.022443016841188806
+        },
+        "0.33": {
+          "c": 0.9118451242491474,
+          "rms": 0.021951549109167245
+        }
+      },
+      "status": "unconverged; nominal parity selection only",
+      "final_four_energy_span": 1.3810609327258305e-06,
+      "last_mean_entropy_change": 7.574326035864054e-05,
+      "last_discarded": 3.781020831829503e-09
     },
     {
       "name": "xx",
@@ -327,6 +368,7 @@
           "rms": 0.02413218906224566
         }
       },
+      "status": "finite-size diagnostic; see convergence history",
       "final_four_energy_span": 2.19912976717751e-12,
       "last_mean_entropy_change": 6.797418183879245e-11,
       "last_discarded": 4.82683629501935e-14
@@ -357,6 +399,7 @@
           "rms": 0.01253153737703651
         }
       },
+      "status": "finite-size diagnostic; see convergence history",
       "final_four_energy_span": 4.4302339574642247e-11,
       "last_mean_entropy_change": 1.3397805087578263e-09,
       "last_discarded": 1.66833151785603e-11
@@ -387,6 +430,7 @@
           "rms": 0.061944168125257826
         }
       },
+      "status": "finite-size diagnostic; see convergence history",
       "final_four_energy_span": 2.0194295302644605e-07,
       "last_mean_entropy_change": 6.442677540352548e-07,
       "last_discarded": 2.0263551241659642e-07
@@ -417,6 +461,7 @@
           "rms": 0.03572163631873057
         }
       },
+      "status": "finite-size diagnostic; see convergence history",
       "final_four_energy_span": 2.1113673867034777e-06,
       "last_mean_entropy_change": -1.5663754892702997e-05,
       "last_discarded": 1.875847798949713e-06
@@ -464,6 +509,14 @@
       "density2": 0.21825608250895245
     },
     {
+      "name": "c181153",
+      "L1": 64,
+      "L2": 128,
+      "c_two": 0.786473284313156,
+      "density1": 0.21825608250895245,
+      "density2": 0.213922319923049
+    },
+    {
       "name": "xx",
       "L1": 32,
       "L2": 64,
@@ -504,6 +557,64 @@
       "L": 64,
       "exact_middle3": 1.724866272505607,
       "max_entropy_error": 0.013064826809035646
+    }
+  ],
+  "parity_sensitivity": [
+    {
+      "L1": 32,
+      "L2": 64,
+      "parity1": "even",
+      "parity2": "even",
+      "c_two": 2.5008612525864855
+    },
+    {
+      "L1": 32,
+      "L2": 64,
+      "parity1": "even",
+      "parity2": "odd",
+      "c_two": 2.3567091602779784
+    },
+    {
+      "L1": 32,
+      "L2": 64,
+      "parity1": "odd",
+      "parity2": "even",
+      "c_two": 2.145230371089983
+    },
+    {
+      "L1": 32,
+      "L2": 64,
+      "parity1": "odd",
+      "parity2": "odd",
+      "c_two": 2.001078278781476
+    },
+    {
+      "L1": 64,
+      "L2": 128,
+      "parity1": "even",
+      "parity2": "even",
+      "c_two": 0.7379934185496902
+    },
+    {
+      "L1": 64,
+      "L2": 128,
+      "parity1": "even",
+      "parity2": "odd",
+      "c_two": 0.786473284313156
+    },
+    {
+      "L1": 64,
+      "L2": 128,
+      "parity1": "odd",
+      "parity2": "even",
+      "c_two": 0.8821455108581976
+    },
+    {
+      "L1": 64,
+      "L2": 128,
+      "parity1": "odd",
+      "parity2": "odd",
+      "c_two": 0.9306253766216633
     }
   ]
 }

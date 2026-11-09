@@ -1,0 +1,31 @@
+{
+  "status": "provisional_two_bond_dimensions_not_converged_fes",
+  "c_proxy": 1.0463506459277647,
+  "chi32": {
+    "source": "infinite_c183_c8_chi32_hardcore.json",
+    "mean_entropy": 1.0196320084380908,
+    "correlation_length": 59.57854341817567,
+    "energy": -0.0627222840416326
+  },
+  "chi64": {
+    "source": "infinite_c183_c8_chi64_checkpoint10.json",
+    "mean_entropy": 1.1626551264433522,
+    "correlation_length": 135.29003306227352,
+    "energy": -0.06272454394089255
+  },
+  "limitations": [
+    "Only two bond dimensions, with a capped continuation at chi64.",
+    "Chi64 local solver residual approximately 1.48e-5 and canonical sweep norm approximately 7.94e-5.",
+    "No asymptotic central charge or global-ground-state proof."
+  ],
+  "interpretation": "Numerically consistent with the finite-chain c approximately 1 interpretation at this C183 point; not evidence for c>1.",
+  "arpack_baseline_check": {
+    "source": "infinite_c183_c8_chi32_arpack_checked.json",
+    "c_proxy": 1.046667842633802,
+    "mean_entropy": 1.0195131299082316,
+    "correlation_length": 59.55275587785281,
+    "maximum_local_residual": 4.917464269405658e-10,
+    "final_sweep_norm": 0.002805069614887234,
+    "status": "local_solver_verified_global_optimization_unconverged"
+  }
+}

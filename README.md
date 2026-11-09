@@ -85,14 +85,17 @@ a counterexample claim.
 gives c estimates 1.05 and 1.02 from L=32 to 64 for the transverse-DM
 reference and a [simpler rational bond](contrib/d2_simplification_20261109/README.md),
 against 0.95 and 1.94 for the c=1 and c=2 controls. The large short-chain
-profile fits do not persist. Density/hopping retuning and larger sizes
-are under test; these points are not established counterexamples.
+profile fits do not persist; extending the reference to L=128 gives 1.10.
+Density/hopping retuning has not established a c>1 point.
 An [independent audit](contrib/d2_priority_audit_20261109/README.md)
 also corrects the uniform-Y symmetry inference and checks the simpler
 off-symmetric parity family's effective-model evidence.
-A new full-microscopic parity-family test at phase 1.53 gives a preliminary
-c=2.15 from L=32 to 64, with both parity sectors checked; larger sizes,
-density drift and solver convergence remain essential.
+A simpler full-microscopic parity-family test at phase 1.53 gives c=2.15
+from L=32 to 64, but **the L=128 follow-up does not sustain that signal**:
+every 64-to-128 parity pairing reads below one (.74–.93). The larger runs
+are incompletely optimized, so crossover versus numerical bias remains
+unresolved. A [rational Hamiltonian](contrib/d2_dmrg_priority_20261109/SIMPLE_PARITY_CANDIDATE.md)
+and independent solver checks are recorded; no d=2 counterexample is established.
 
 **Conclusion (2026-10-29, updated 2026-10-30), at the theoretical-physics standard: the c–d conjecture is false.** Explicit chains have c = 14 at d = 13 and c unbounded at fixed d = 4464, conditional only on standard Wilsonian RG input whose main pieces are now proved; the natural replacement, Σ_a c_a v_a ≤ π M log₂ d, survives every test, is proved for free fermions (A ≤ 2M) and for every solvable family, and is open in general. See the conclusion at the top of [STATUS.md](STATUS.md).
 

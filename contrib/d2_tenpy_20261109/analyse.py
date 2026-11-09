@@ -34,6 +34,7 @@ for name in ['c183','dyadic','original','c181153','xx','two_xx']:
         st=a['sweep_stats'];n=max(1,len(st['E'])-4)
         records.append(dict(name=name,L=L,parity=a.get('parity'),S=a['S_middle3'],density=a['bulk_density'],
                             E=a['E_shifted'],chi=a['chi'],profile_fits=a['profile_fits'],
+                            status=('unconverged; nominal parity selection only' if name=='c181153' and L==128 else 'finite-size diagnostic; see convergence history'),
                             final_four_energy_span=max(st['E'][n:])-min(st['E'][n:]),
                             last_mean_entropy_change=st['Delta_S'][-1],last_discarded=st['max_trunc_err'][-1]))
         if name in ('xx','two_xx'):
@@ -48,7 +49,15 @@ for name in ['c183','dyadic','original','c181153','xx','two_xx']:
         if a is not None and b is not None:
             pairs.append(dict(name=name,L1=L,L2=2*L,c_two=6*(b['S_middle3']-a['S_middle3'])/math.log(2),
                               density1=a['bulk_density'],density2=b['bulk_density']))
-summary=dict(status='Finite-size diagnostics, not an infrared central-charge determination',records=records,pairs=pairs,exact_controls=exact)
+sector_pairs=[]
+for L in [32,64]:
+    for p in ('even','odd'):
+        for q in ('even','odd'):
+            f=BASE/'results'/f'c181153_L{L}_{p}.json';g=BASE/'results'/f'c181153_L{2*L}_{q}.json'
+            if f.exists() and g.exists():
+                a,b=json.loads(f.read_text()),json.loads(g.read_text())
+                sector_pairs.append(dict(L1=L,L2=2*L,parity1=p,parity2=q,c_two=6*(b['S_middle3']-a['S_middle3'])/math.log(2)))
+summary=dict(status='No established c>1: parity-family c~2 at 32-64 is not sustained at unconverged L128',records=records,pairs=pairs,exact_controls=exact,parity_sensitivity=sector_pairs)
 (BASE/'summary.json').write_text(json.dumps(summary,indent=2)+'\n')
 
 plt.rcParams.update({'font.size':11,'axes.spines.top':False,'axes.spines.right':False})
@@ -59,20 +68,23 @@ for name in ['c183','dyadic','original','c181153']:
     data=[r for r in records if r['name']==name and r['L']>=32]
     if len(data)<2:continue
     x=np.array([r['L'] for r in data]);y=np.array([r['S'] for r in data]);y-=y[0]
-    ax.plot(x,y,'o-',color=colors[name],label=labels[name])
+    ax.plot(x,y,'-',color=colors[name],label=labels[name])
+    ax.scatter(x[x<128],y[x<128],color=colors[name],s=30)
+    ax.scatter(x[x==128],y[x==128],facecolors='white',edgecolors=colors[name],s=40,zorder=3)
 grid=np.linspace(32,128,200)
 for c in [1,2]:ax.plot(grid,c*np.log(grid/32)/6,'--',color='#666666',alpha=.7,label=f'c={c} slope')
 ax.set_xscale('log',base=2);ax.set_xticks([32,64,128],['32','64','128'])
 ax.set_xlabel('Sites L');ax.set_ylabel('Change in central entropy from L=32')
-ax.set_title('Full microscopic chains: size scaling');ax.legend(fontsize=8,loc='upper left')
-short=[p for p in pairs if p['L1']==32 and p['name'] in ['xx','two_xx','c183','dyadic','c181153']]
-names=[{'xx':'XX control','two_xx':'Two XX legs',**labels}[p['name']] for p in short]
+ax.set_title('Full microscopic chains: size scaling');ax.legend(fontsize=8,loc='lower right')
+ax.text(.02,.98,'Hollow: L=128, sweep limit reached',transform=ax.transAxes,ha='left',va='top',fontsize=8)
+short=[p for p in pairs if p['name'] in ['xx','two_xx','c183','dyadic','c181153']]
+names=[f"{ {'xx':'XX control','two_xx':'Two XX legs','c183':'Transverse DM','dyadic':'Rational DM','c181153':'Parity family'}[p['name']]}  {p['L1']}→{p['L2']}" for p in short]
 vals=[p['c_two'] for p in short]
 bx.barh(names,vals,color=[colors.get(p['name'],'#9da5af') for p in short])
 bx.axvline(1,color='#444444',ls='--',lw=1);bx.axvline(2,color='#444444',ls=':',lw=1)
 for i,v in enumerate(vals):bx.text(v+.025,i,f'{v:.2f}',va='center',fontsize=10)
-bx.set_xlim(0,max(2.4,max(vals,default=2)+.3));bx.set_xlabel('Two-size c estimate, L=32 to 64')
-bx.set_title('Calibrated finite-size estimate')
+bx.set_xlim(0,max(2.4,max(vals,default=2)+.3));bx.set_xlabel('Two-size entropy slope (not extrapolated c)')
+bx.set_title('The parity-family signal falls at L=128')
 fig.savefig(BASE/'scaling.png',dpi=180)
 fig.savefig(BASE/'scaling.pdf')
 print(json.dumps(pairs,indent=2))

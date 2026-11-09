@@ -37,7 +37,10 @@ engine = dmrg.TwoSiteDMRGEngine(psi, model, options, resume_data=resume_data)
 
 The independent diagnostic uses this route by default. Initial effective-matrix
 Hermiticity defects then fall to approximately `5e-16`. It does **not** alter the
-model. No installed TeNPy source or original root script was changed.
+model. No installed TeNPy source was changed. A later follow-up updated
+`infinite.py` with explicit experimental status, safe initialization, and local
+energy/residual checks; see `INFINITE_LIQUID_BRANCH.md` for the lower-energy branch
+found with a better initial MPS.
 
 ## Checks and limits
 

@@ -2388,12 +2388,30 @@ microscopic Hamiltonian. This is AI-assisted research without human review.
   (even parity), selecting the lower of the two independently optimized
   sectors at each size. Thus c(32 to 64)=2.14523. The L=64 profile
   fits over four preselected windows range from 2.05 to 2.40.
-  This strengthens the finite-size microscopic case for the imbalanced
-  route. It is not an asymptotic or counterexample claim: bulk density
+  This was encouraging short-size evidence, superseded as a persistence
+  test by the negative L=128 follow-up below. Bulk density
   drifts .25494 to .21826, parity switches, and last sweep energy changes
   remain around 5e-7 (odd sector 8e-7), despite discarded weights below
-  2e-9. Larger sizes, local solver convergence and independent tests of
-  the nearby rational bond are being checked.
+  2e-9. Local solver convergence remains unresolved.
+- [negative larger-size follow-up, incompletely optimized] Both parity
+  sectors at L=128 return Sbar=1.68631521 (even) and 1.69191583 (odd).
+  Nominal lower-energy selection gives c(64→128)=.78647; every parity
+  pairing lies below one (.738–.931). Central-half profile fits fall to
+  .749 and 1.076. Interior density stays smooth with modest mean drift.
+  Thus the microscopic c≈2 signal is not sustained by the larger test.
+  Both chi=128 runs hit the sweep cap. The even branch's last energy
+  change 5.77e-6 is comparable to the 9.00e-6 parity splitting, and its
+  mean entropy changes .00405 in the final sweep. Recovering c=2 would
+  require about .1402 additional central entropy. The data distinguish
+  neither a physical crossover from optimization bias nor c=1 from a
+  small gap. Small discarded weights are not a convergence certificate.
+- [explicit simplification] A nearby parity-preserving rational candidate
+  is 10 ZZ + (XX-YY)/2 + (XX+YY)/4000 + (XY-YX)/160, with uniform
+  field -199759 Z/10000. It removes transverse DM; d=2, nearest-neighbour
+  range and one-site translation invariance are exact. Both parity
+  sectors pass independent L=10 ED checks. Independent larger-size
+  Davidson results and residual limitations are retained in
+  `contrib/d2_dmrg_priority_20261109/SIMPLE_PARITY_CANDIDATE.md`.
 - [numerical follow-up] C183's transverse-DM point at L=128 reads
   c(64 to 128)=1.10032 and central-half c_profile=.98583. A different
   L=64 initialization reproduces its energy within 6.8e-8 and entropy
@@ -2402,6 +2420,19 @@ microscopic Hamiltonian. This is AI-assisted research without human review.
   give .946721 and 2.047422 at 32 to 64, and .972275 and 2.025433 at
   64 to 128, exposing a downward finite-chi bias of .106 in the recorded
   two-leg DMRG control. No strict thermodynamic bound is inferred.
+- [provisional infinite-chain diagnostic] Corrected environments and a
+  coherent excluded-gas initialization find a C183 liquid branch whose
+  chi=32→64 entropy/correlation-length proxy is 1.04635; an independent
+  ARPACK local solve changes it to 1.04667. Global convergence is not
+  established, and the chi=64 local residual remains 1.48e-5. Earlier
+  failed infinite runs are retained and excluded. This diagnostic does
+  not recover a c≈2 signal; details are in `INFINITE_LIQUID_BRANCH.md`.
+- [bounded original-point field scan] At hz=-19.9771875, the original
+  V=40 transverse-DM chain has rapidly growing central entropy from
+  L=32 to64 but density nearly halves (.1344→.0708), while L=64
+  profile fits vary from4.05 to14.58. These inhomogeneous, unconverged
+  onset data cannot support a CFT interpretation. Two other registered
+  L=32 field points are retained in the same raw-results folder.
 
 Reproducible scripts, full profiles, convergence histories and limitations:
 [TeNPy runs](contrib/d2_tenpy_20261109/RESULT.md),

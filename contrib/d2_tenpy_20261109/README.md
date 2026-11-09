@@ -1,4 +1,4 @@
-# Independent full-qubit DMRG of the transverse-DM candidate
+# Independent full-qubit DMRG of d=2 candidates
 
 OpenAI Codex, GPT-6 family, 2026-11-09. Numerical investigation, not a
 counterexample claim. Uses TeNPy 1.1.1, NumPy and SciPy in an isolated environment.
@@ -37,6 +37,28 @@ Install `physics-tenpy==1.1.1 numpy scipy`. For example:
 ```sh
 OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python run.py --name c183 --L 32 --hz -7.9463 --chi 96 --sweeps 16 --out results/c183_L32.json
 ```
+
+The simpler full-spin parity-family test uses `--name c181153`.
+Run **both** `--parity even` and `--parity odd` at identical couplings
+before selecting the lower energy; parity projection is rejected for
+the transverse-DM family. See `RESULT.md` and the independent `REVIEW.md`
+for convergence limits and the exact finite-size control values.
+Its c≈2 reading at L=32→64 is not sustained at L=128: all parity
+pairings give a 64→128 slope below one. The larger states remain
+incompletely optimized. Neither c>1 nor asymptotic c=1 is established.
+
+For expensive future runs, use `--save-state /private/tmp/my_state.pkl`.
+Continuation with `--resume-state /private/tmp/my_state.pkl` verifies
+the length, Hamiltonian and parity, preserves the existing bond dimension,
+and can be combined with `--strict-local` for a longer reorthogonalized
+local eigensolve. Checkpoints are local working files, not Git artifacts.
+The save/resume path was checked at L=8 to an energy difference below
+4e-14. Only load trusted checkpoints produced by this code.
+
+`analyse.py` saves the finite-chain summary and scientific plots. An
+infinite-chain branch and its method checks are described separately in
+`INFINITE_VALIDATION.md` and `INFINITE_LIQUID_BRANCH.md`; failed attempts
+are explicitly tagged and excluded from physical estimates.
 
 Sources: [TeNPy model documentation](https://tenpy.readthedocs.io/en/stable/intro/model_details.html),
 [Calabrese and Cardy](https://arxiv.org/abs/hep-th/0405152),

@@ -1,0 +1,151 @@
+{
+  "status": "provisional_variational_checkpoint_not_converged_ground_state",
+  "checkpoint": "/private/tmp/cd_c183_i64_hardcore.pkl",
+  "checkpoint_sweep": 10,
+  "couplings": {
+    "Jx": 0.4979983,
+    "Jy": -0.5020017,
+    "Jz": 4.0,
+    "Dz": 0.0152122,
+    "Dy": 0.13693064,
+    "hz": -7.9463
+  },
+  "cell": 8,
+  "chi": 64,
+  "local_energy_density": -0.06272454394089255,
+  "local_energy_terms": [
+    -0.06304466843390788,
+    -0.06216514821066621,
+    -0.06155587647116878,
+    -0.06180450936411663,
+    -0.062397802844121664,
+    -0.0632707210842911,
+    -0.06389039258821949,
+    -0.06366723253064865
+  ],
+  "density": [
+    0.1888725558896105,
+    0.18891157471086784,
+    0.1888400472112972,
+    0.18869273330466785,
+    0.1885773957324401,
+    0.18853795211102198,
+    0.1886074174478461,
+    0.18875472016345546
+  ],
+  "mean_density": 0.18872429957140086,
+  "density_span": 0.00037362259984585755,
+  "entropy": [
+    1.1630628143750494,
+    1.1634260876822817,
+    1.163337477549688,
+    1.1628482039103991,
+    1.162250069697134,
+    1.161895337247826,
+    1.161965844856526,
+    1.1624551762279123
+  ],
+  "mean_entropy": 1.1626551264433522,
+  "entropy_span": 0.0015307504344557188,
+  "X": [
+    -2.849942973669889e-05,
+    2.5102168573210015e-05,
+    7.603081754804786e-05,
+    8.577267517675957e-05,
+    7.206639335899379e-05,
+    -1.3368035360582231e-05,
+    -3.3706064586306456e-05,
+    -6.571864629055166e-05
+  ],
+  "Y": [
+    -0.39794795138017713,
+    -0.39796212195709274,
+    -0.39795285442824896,
+    -0.39792320103069256,
+    -0.39791288753561527,
+    -0.3979083698285337,
+    -0.39790897402075265,
+    -0.3979479590356825
+  ],
+  "correlation_length": 135.29003306227352,
+  "norm_before_canonicalization": 7.942916988267129e-05,
+  "norm_after": 6.554871282323611e-15,
+  "run_checkpoints": [
+    {
+      "sweep": 2,
+      "E": -0.06272445676837624,
+      "norm_err": 0.00019529587500628177,
+      "max_trunc_err": 1.1758004500639718e-08,
+      "local_solver": {
+        "max_residual": 3.092649540062625e-05,
+        "max_orthogonal_residual": 3.092649540062587e-05,
+        "max_abs_imag_rayleigh": 7.438494264988549e-15,
+        "max_iterations": 160,
+        "updates": 16
+      }
+    },
+    {
+      "sweep": 4,
+      "E": -0.06272453167368175,
+      "norm_err": 0.00018114310018423128,
+      "max_trunc_err": 2.407076556986425e-08,
+      "local_solver": {
+        "max_residual": 1.2944208832267495e-05,
+        "max_orthogonal_residual": 1.2944208832258301e-05,
+        "max_abs_imag_rayleigh": 4.618527782440649e-14,
+        "max_iterations": 160,
+        "updates": 16
+      }
+    },
+    {
+      "sweep": 6,
+      "E": -0.06272453884708895,
+      "norm_err": 0.00014412423264179572,
+      "max_trunc_err": 2.9033582861663476e-08,
+      "local_solver": {
+        "max_residual": 1.187371196196376e-05,
+        "max_orthogonal_residual": 1.1873711962006141e-05,
+        "max_abs_imag_rayleigh": 1.678657213233236e-13,
+        "max_iterations": 160,
+        "updates": 16
+      }
+    },
+    {
+      "sweep": 8,
+      "E": -0.0627245424792724,
+      "norm_err": 0.00010975907531341378,
+      "max_trunc_err": 3.073411238961157e-08,
+      "local_solver": {
+        "max_residual": 1.3068541024505176e-05,
+        "max_orthogonal_residual": 1.3068541024422944e-05,
+        "max_abs_imag_rayleigh": 8.881784197001252e-14,
+        "max_iterations": 160,
+        "updates": 16
+      }
+    },
+    {
+      "sweep": 10,
+      "E": -0.06272454393828042,
+      "norm_err": 7.942916988267129e-05,
+      "max_trunc_err": 3.1262767854860414e-08,
+      "local_solver": {
+        "max_residual": 2.0082497569966036e-05,
+        "max_orthogonal_residual": 2.0082497569855823e-05,
+        "max_abs_imag_rayleigh": 5.6665783176868e-13,
+        "max_iterations": 160,
+        "updates": 16
+      }
+    }
+  ],
+  "run_config": {
+    "chi": 64,
+    "cell": 8,
+    "env_init": "TM",
+    "update_env": 20,
+    "lanczos_max": 160,
+    "diag": "default",
+    "load_state": "/private/tmp/cd_c183_i32_hardcore.pkl",
+    "saved_at_sweep": 10,
+    "termination": "Interrupted intentionally after checkpoint10 to prioritize the newly promising parity route."
+  }
+}

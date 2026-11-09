@@ -1,9 +1,11 @@
 # Full-spin DMRG: transverse-DM and simpler parity-family tests
 
-OpenAI Codex, GPT-6 family, 2026-11-09. Interim numerical report; larger
-checks continue. No d=2 counterexample is established. The strongest new
-positive signal is the simpler parity family below, not the transverse-DM
-point initially prioritized.
+OpenAI Codex, GPT-6 family, 2026-11-09. No d=2 counterexample is established.
+The simpler parity family gives an encouraging c≈2 entropy slope at
+L=32→64, but **the completed L=128 test does not sustain it**. Every
+64→128 parity pairing reads below one. Those larger states are not fully
+optimized, leaving physical crossover versus numerical bias unresolved.
+The transverse-DM points instead give provisional readings near one.
 
 The literal microscopic spin chain is used with no blockade projection.
 TeNPy's matrices and L=8 ground-state entropies agree with independent
@@ -24,8 +26,8 @@ averages three central cuts, the completed L=32 to 64 results are:
 
 The two-leg control is a range-two calibration, not a d=2 NN candidate.
 Its largest discarded weight is 1.9e-6 at chi=96, so it calibrates the
-large separation of the two readings, not high-precision c. Candidate
-discarded weights are much smaller (below 1e-10 in the final sweeps).
+large separation of the two readings, not high-precision c. Transverse-DM
+candidate discarded weights are much smaller (below 1e-10 at L=32,64).
 The C183 L=64 energy changes alternate by about 4e-10 and entropy changes
 are below 5e-8; the simple point has changes around 3e-9 and 2e-7. These
 are useful numerical tolerances, not rigorous eigenstate error bounds.
@@ -51,10 +53,10 @@ initialization at L=64, chi=64 reproduces the chi=128 energy within
 64-to-128 control estimates are .97227 and 2.02543.
 
 The original V=40 point quoted in the chat is much less entangled at
-L=32 (Sbar=.04685, middle-half density .02916); it needs a field scan
-before it can be treated as a finite-density critical target.
+L=32 (Sbar=.04685, middle-half density .02916) and L=64 (Sbar=.01748,
+density .00822). A bounded field scan was subsequently performed; see below.
 
-## Encouraging simpler full-microscopic point
+## Simpler full-microscopic point: short-size signal fails its larger test
 
 Set V=40, Delta=1, w=exp(1.53 i)/80, Dy=0, and hz=-19.97589125:
 Jx=(1+Re w)/2, Jy=(-1+Re w)/2, Jz=10, Dz=Im w/2. This is the
@@ -76,14 +78,75 @@ the selected parity changes; the L=64 last energy changes are of order
 The final discarded weights are below 2e-9, but small discarded weight
 alone does not certify local eigensolver convergence or the global
 ground state. No extrapolated c, gapless theorem, or counterexample
-claim follows. The L=128 tests and independent solver tests of a nearby
-rational bond are the next checks. The independent effective-model
-evidence and its assumptions are audited in ../d2_priority_audit_20261109/.
+claim follows. The independent effective-model evidence and its
+assumptions are audited in ../d2_priority_audit_20261109/.
 
-An initial infinite-chain attempt failed numerical convergence and
-violated the all-up variational upper bound. Its correlation length
-is unusable. It is being independently diagnosed; no infinite-chain
-claim follows from that run.
+Both L=128 parity runs have now returned:
+
+| Parity | Shifted energy | Sbar | Middle-half density | Central-half profile c |
+|---|---:|---:|---:|---:|
+| even | -3.199287936003 | 1.68631521 | .22006166 | .74875 |
+| odd | -3.199296931209 | 1.69191583 | .21392232 | 1.07585 |
+
+The nominal lower-energy selection gives c(64→128)=**.78647**. Every
+other parity pairing also gives a value below one (.738–.931); the
+negative result cannot be removed by changing parity selection. The
+interior density stays smooth and changes modestly. Both profile and
+size-growth estimates fall, so this is a substantive negative follow-up.
+
+There is a specific unresolved convergence problem, not a positive phase
+claim: both runs hit their sweep cap at chi=128. The even branch's last
+mean-entropy change is .00405 and energy change 5.77e-6, comparable to
+the 9.00e-6 parity splitting. The odd mean-entropy change is 7.57e-5;
+both retain entropy-profile reflection defects. The final canonical
+norms are around 1e-14, which verifies normalization, not optimization.
+Recovering c=2 would require about **.1402** additional central entropy
+at L=128. No error bound establishes or excludes that correction.
+See `REVIEW.md` for all sector pairings and convergence measurements.
+
+The nearby exact rational simplification is
+
+\[
+H=\sum_j\left[10Z_jZ_{j+1}+\frac{X_jX_{j+1}-Y_jY_{j+1}}2
++\frac{X_jX_{j+1}+Y_jY_{j+1}}{4000}
++\frac{X_jY_{j+1}-Y_jX_{j+1}}{160}\right]
+-\frac{199759}{10000}\sum_jZ_j.
+\]
+
+It removes transverse DM and uses only rational coefficients. It retains
+the small real hop that offsets the effective valleys; setting that hop
+to zero would change the mechanism. This is a test candidate, not an
+established counterexample. Independent Davidson results and their
+measured local residuals are recorded in
+[`SIMPLE_PARITY_CANDIDATE.md`](../d2_dmrg_priority_20261109/SIMPLE_PARITY_CANDIDATE.md).
+
+## Original V=40 field scan
+
+The registered three L=32 fields are -19.9771875, -19.9768875 and
+-19.9765875, keeping every exchange coefficient fixed. At the latter
+two fields Sbar is .34684 and .41195, respectively, with middle-half
+densities .22199 and .26960. The first field was refined to chi=96 and
+extended to L=64: Sbar changes .30355→.80242 while the middle-half
+density nearly halves, .13437→.07081. Its L=64 profile coefficients
+range from **4.05 to 14.58** across the registered windows. These very
+large, inconsistent fits are not evidence for a large central charge:
+few-particle/boundary structure and incomplete optimization dominate.
+The raw profiles and histories are retained as `original_field_*.json`.
+No stable c>1 regime was demonstrated by this bounded field scan.
+
+## Infinite-chain diagnostic of the transverse-DM point
+
+Initial infinite-chain attempts had defective environments and unusable
+energies/correlation lengths. Their failure records are retained and
+excluded. A coherent blockade-gas initialization and corrected
+environments subsequently found a lower-energy liquid branch, without
+projecting the Hamiltonian. The chi=32→64 entropy/correlation-length
+proxy is 1.04635; an independent ARPACK local solve changes it to 1.04667.
+This is consistent with the near-one finite-size reading, not a
+converged finite-entanglement central charge. The chi=64 checkpoint
+has local residual 1.48e-5, and further sweeps/bond dimensions were not
+completed. See `INFINITE_LIQUID_BRANCH.md` for reproducible methods,
+failed attempts, and the remaining global-optimization limitations.
 
 The rational Hamiltonian and independent small-ring comparisons are
 in ../d2_simplification_20261109/. A separate exact finite-ring series
