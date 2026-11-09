@@ -1,0 +1,45 @@
+Please run a DMRG test for my c–d conjecture project on this machine, then report the results.
+
+The package is in my IAS Dropbox at
+  Jonah Kudler-Flam/Claude/Projects/Modular c-Theorem/notes/cd_conjecture/codex/work_C187q/desktop_run3/
+(usually under ~/IAS Dropbox/...). Read its README.txt first.
+
+What it is. This is the L = 192 stage of the strongest current candidate for a c = 2 nearest-neighbour qubit chain. The candidate is a partially polarized two-valley liquid in C173's effective model, just off the symmetric line, at phi = 1.53 and 1.555, |w| = 1, density 3/16.
+- At L = 128 it reads like the c = 2 control.
+- The test uses C176's blockade-exact DMRG (fibdmrg.py). It is validated, so do not modify it.
+- There are 8 runs at L = 192: each phi at N = 36 and N ± 1, plus a c = 1 control and a c = 2 control.
+- The folder ref/ already holds the converged L = 64 and 128 runs, so summarize.py gives c for 64 → 128 and 128 → 192.
+
+How to run it.
+1. Copy the whole desktop_run3 folder to a local directory OUTSIDE Dropbox, for example ~/c187q_run3. The runs write large checkpoint files to out/ckpt/, and those must not sync.
+   If an earlier desktop_run2 job is still running, stop it first.
+2. Check that python3 has numpy and scipy. Ask me before installing anything.
+3. Run `bash run_desktop.sh` in the background. It uses up to 8 parallel tasks, 2 threads each. Leave enough cores free that the machine stays usable.
+   The six candidate runs are the slow ones. Expect several hours or more at bond dimension 384 and 512.
+4. Check progress now and then with tail logs/*.log. Run `python3 summarize.py` whenever a run finishes. Only runs marked done=yes enter the c estimates.
+5. Whenever runs finish, and at the end, copy back into the Dropbox desktop_run3 folder:
+   - out/*.jsonl, but NOT out/ckpt;
+   - logs/;
+   - the summarize.py output, saved as summary.txt.
+
+How to read it. The rule below was registered before any output.
+- Calibration: the controls must read within 0.15 of 1 (ctl1) and within 0.25 of 2 (ctl2).
+- Consistent with c = 2:
+  - c from 128 → 192 is at least 1.6 in at least two of the three windows, at both phi;
+  - the L = 192 truncation is below 1e-7;
+  - L × parity gap at 192 does not exceed 1.5 times its L = 128 value, which was about 1.5.
+- A crossover toward c = 1: c from 128 → 192 is at most 1.3 in two windows at either phi, or L × gap doubles.
+- Anything else is inconclusive.
+
+Report back with:
+- the summarize.py output;
+- each run's convergence (truncation and whether it finished all sweeps);
+- the verdict under the rule above, with the reason.
+
+This is the effective model, not the full qubit chain. Do not overstate it.
+
+Rules.
+- Do not modify the code or the configs.
+- Do not commit or push. Do not edit other project files.
+- No probabilities in any file.
+- Plain prose, commas not em-dashes.

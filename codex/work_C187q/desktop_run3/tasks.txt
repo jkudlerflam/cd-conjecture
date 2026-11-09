@@ -1,0 +1,8 @@
+python3 run.py cfg/w1n316_p1.5300_L192_N36.json out > logs/w1n316_p1.5300_L192_N36.log 2>&1
+python3 run.py cfg/w1n316_p1.5300_L192_N35.json out > logs/w1n316_p1.5300_L192_N35.log 2>&1
+python3 run.py cfg/w1n316_p1.5300_L192_N37.json out > logs/w1n316_p1.5300_L192_N37.log 2>&1
+python3 run.py cfg/w1n316_p1.5550_L192_N36.json out > logs/w1n316_p1.5550_L192_N36.log 2>&1
+python3 run.py cfg/w1n316_p1.5550_L192_N35.json out > logs/w1n316_p1.5550_L192_N35.log 2>&1
+python3 run.py cfg/w1n316_p1.5550_L192_N37.json out > logs/w1n316_p1.5550_L192_N37.log 2>&1
+python3 run.py cfg/ctl1_L192_N36.json out > logs/ctl1_L192_N36.log 2>&1
+python3 run.py cfg/ctl2_L192_N36.json out > logs/ctl2_L192_N36.log 2>&1
