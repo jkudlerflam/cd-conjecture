@@ -1865,3 +1865,19 @@ Most of the individual lemmas hold. They were re-derived by hand, with an operat
   - Q2 at Dz = 1.2, 1.25, 1.3 is gapped Néel (c → 0.12, 0.02, 0.00, with N saturating at 0.18, 0.25, 0.31). This agrees with C165's local reading of the onset near Dz = 1.2.
   - Six A2 points read c_last of 1.3 to 3.0 at χ = 64. Their fields (hz = 1.6 to 2.7) lie far above the parent plateau edges (0.27 at Dz = 1.6, 0.78 at Dz = 2), where C170 showed the gapped-Néel VUMPS states are metastable. They sit in the magnetized liquid regime. The one continued to χ = 256 (A2_Dz1.6_h0_hz2.0) falls to 0.23. The other five were not continued, and a χ = 64 last-pair slope is noise at this level. Per C170's caveat, none is usable without an energy check against a magnetized start.
   - Verdict by the pre-fixed criteria: no c = 3/2 candidate. Two things are incomplete: the DMRG stage, lost to the time limit, and the five uncontinued A2 points, which need χ ≥ 256 from a magnetized start before they say anything.
+
+### 9.132 A_S narrowed to a two-kink binding statement (C172, Claude Opus 5.5 agent, 2026-11-09; `codex/work_C172/`)
+
+The target was C170's restated A_S: no bound magnon along the quantum switch set at order-one harmonic amplitude.
+
+- [proved] An exact on-site SU(2) exists only on the twisted Heisenberg curve (J a multiple of a rotation, B = 0). In N, ring momentum is the only exact quantum number, so the SU(2)_1 towers have no non-crossing protection. Continuity of the towers and a hidden exact symmetry both fail as routes.
+- Locking lemma [derived]. An independent momentum-π Ising sector locks to any relevant liquid vertex whose momentum lies within the locking scale of π. On T this recovers C159's second tuning. Near T, any c = 3/2 hypersurface of N is pinched onto that two-tuning locus.
+- Kink-parity dichotomy [derived]. Kink parity is exact on rings. At the edge of a period-2 phase, a route to c = 3/2 needs a kink-even state to soften before the kink, which means a bound state below the two-kink continuum. This is C170's bound magnon, now without needing a U(1). Any binding opens such a window, so the exclusion has to be exact.
+- Lemma W, the Ising end [proved at first order, derived for the chain]. Write the transverse bond as A σ⁺σ⁻ + P σ⁺σ⁺ + h.c.
+  - For any charge-0 and charge-2 harmonics and any longitudinal field, no bound magnon exists when |P| ≤ |A|, with margin 2(|A| − |P|).
+  - The threshold is sharp. At a = π a bound state appears for every |P| > |A|, matching −(w + t²/w) to four digits at L = 30.
+  - For C165's family, |P| ≤ |A| means g² + g_xy² ≤ 1, the whole polar-parent range.
+  - Charge-1 terms are not covered by the proof. Numerically, in 192 bonds they never move the threshold.
+- The KT end [derived, conditional]. If the KT point stays in the SU(2)_1 basin at that amplitude, the massive spinons of the SU(2) Thirring model have no bound states. The width of that neighbourhood is not computed.
+- Ring ED, L = 10 to 18, at Dz = 1.6 and 2 [numerical]. Harmonics of amplitude up to 1.4 shift the binding measure (kink-even gap minus twice the kink gap) by at most 0.105, against twice the kink gap of 0.9 to 1.9. Along field paths the kink gap closes first. The resolution is about 0.1, so weak binding is not excluded.
+- Residual A_S′ [assumed]. On the plateau-edge part of the switch set at intermediate anisotropy, between the KT crossover and the Ising regime, at order-one amplitude with |P| < |A|, the two-kink channel has no bound state below the two-kink continuum. This is a two-body statement on a gapped background, testable directly by odd and even sector DMRG at resolution well below 0.1. The liquid interior stays under (A6), with the locking lemma's detuning condition added.
