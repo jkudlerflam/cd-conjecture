@@ -2312,3 +2312,22 @@ C182 asked whether bound clusters reopen the two-valley question one level up. I
 - Uniform liquids at |w| = 2 and 3 (n = 0.3 to 0.4) read c(40 → 80) = 0.85 to 0.96 with balanced valleys and truncation below 1e-10, against controls of 1.10 and 2.17.
 - High readings of 2.4 to 3.9 at |w| ≤ 1 and inside the |w| = 2 droplet regime are inhomogeneous, with mid-chain density 0.03 to 0.12 above N/L that drifts with L. The |w| = 2, δ = E_b lead fails C182's registered homogeneity rule. A homogeneity filter was added to the stage-2 selection before the job started. C181's off-symmetric points of §9.150 pass homogeneity (maximum deviation 0.008 at L = 128).
 - Open. The screen and its stage-2 runs, the |w| ≲ 1 near-symmetric question (C176, C178, C181), the small-|w| coexistence region, and the full chain.
+
+### 9.154 Desktop run at density 1/12: the parity gap does not resolve pairing at L ≤ 144 (coordinator, Claude Opus 5.5, 2026-11-09; `codex/work_C187q/desktop_run2_summary_L144.txt`)
+
+This is the low-density version of the quick test in §9.149. It uses the effective model at |w| = 1, φ = π/2 and N = L/12, and compares the unbound model point fit8 with the bare couplings sw, where the pair is bound with E_b = 0.0195. It was run on Jonah's desktop with C176's DMRG, with χ up to 384. At L = 144 the truncation is 1.5e-9 for fit8 and 5.7e-9 for sw. The L = 192 runs are unconverged and not used. [numerical]
+
+- Two-size c, windows of 3, 7 and 13 cuts:
+
+  | | 48 → 96 | 96 → 144 |
+  | :-- | :-- | :-- |
+  | fit8 | 2.07, 1.98, 1.78 | 2.01, 1.96, 1.85 |
+  | sw | 1.62, 1.57, 1.49 | 1.72, 1.69, 1.62 |
+  | c = 1 control | 1.15, 1.04, 0.91 | 1.11, 1.04, 0.94 |
+  | c = 2 control | 2.35, 2.23, 1.95 | 2.27, 2.20, 2.04 |
+
+- L × parity gap E(N+1) + E(N−1) − 2E(N), at L = 48, 96 and 144:
+  - fit8: 2.74, 2.34, 2.19;
+  - sw: 2.51, 2.25, 2.16.
+- At L = 144 both gaps are 0.015, below the two-body binding energy, and both are still closing roughly as 1/L.
+- Reading. The unbound point reads about 0.9 times the c = 2 control at both size pairs. The bound point reads lower but rises with L. At this density (n times the pair size ≈ 1.75) the many-body pair gap of the bound model is well below 0.015, and neither the gap nor the entropy resolves it at L ≤ 144. So the parity gap cannot settle pairing on the symmetric line at accessible sizes. Routes where the pair gap is irrelevant (C181's imbalanced liquid) or absent (the transverse-DM bond) are the ones a finite-size test can decide.
