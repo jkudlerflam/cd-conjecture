@@ -1908,3 +1908,29 @@ The target was C170's restated A_S: no bound magnon along the quantum switch set
   - If both fail the second stage, the normalized volume of any open c > 1 set is below 7.3e-4 to 1.4e-3 at 95 percent confidence. With C155's rule alone the bound would have been about 4e-2.
   - Caveats: the proxies have range 3 and are close to free, the bound uses C155's coordinate measure, and it says nothing about small-volume sets.
   - Job 17603367 (pending) runs FES on a four-site cell to χ = 256, and DMRG reseeds at L = 128 and 192, on 10193, 450 and the control 10540.
+
+### 9.134 Counterexample hunt by structure: no candidate, with an obstruction for each route (C169, Claude Opus 5.5 agent, 2026-11-09; `codex/work_C169/`)
+
+- Exact maps cannot create a counterexample. c is invariant, and the preimage of B_2 is B_2 relabelled, so a map can only recognise a known c > 1 model inside B_2. None does, under any class tested.
+  - Single-site unitaries, any period [proved]. They preserve the support of every Pauli term. A period-p chain lies in B_2 exactly when it has a twisted translation, which generalizes C156's screw lemma.
+  - Clifford dualities: KW, JW, cluster entanglers, any Clifford QCA [proved].
+    - For translation-commuting maps, the spread of anticommutation offsets is invariant. It is at most 2 in B_2 and 3 to 4 in every target model.
+    - For any Clifford map, the number of independent infinite pieces of the commutation graph is invariant. It is at most 2 in B_2, 3 for cluster-Ising and Ising × XX, and 4 for two XX legs.
+    - The part of B_2 that stays nearest-neighbour under KW lies on the free locus. The cluster entangler acts on B_2 as the site reflection.
+  - Blocking, any block size [proved]. The coupling across a block boundary must factor as one qubit-to-qubit bond, and every target fails.
+  - General QCAs carry no invariant beyond the spectrum itself. Integrable c > 1 models are excluded for symmetric J [literature, Yamaguchi–Chiba–Shiraishi]. With DM this step is assumed.
+- In every controlled setting the obstruction is the nearest-neighbour range, and the bounds hold at every period. Translation by one site is never what blocks c > 1.
+  - Free fermions [proved]. c ≤ 1 at any period, since two Majoranas per site with nearest-neighbour coupling allow at most four zero crossings. At range r the bound is c ≤ r, and Titvinidze–Japaridze reaches it at r = 2. This is consistent with C174's R8.
+  - Hidden free fermions [proved by enumeration]. Among Pauli-aligned bonds, every one with a free-fermion-solvable commutation graph is an ordinary JW-free chain.
+  - Spin waves [algebra proved, physics derived]. There is at most one soft species about any periodic classical state. The J1–J2 two-minimum route to c = 2 needs range 2.
+  - Exact decoupling [proved]. At any period the only bond that splits into two commuting sectors is XZ + ZX, which is two Majorana chains with c = 1. This proves C157's uniqueness claim.
+  - Ising × XX through XZ. The coupling needed is a four-site term, generated only virtually, and with the wrong sign (C157).
+- The three routes from the referees.
+  - Z₅ parafermion at a melting tongue (C174 R5) [derived]. B_2 has no on-site Z_m with m ≥ 3 other than U(1), so Z₅ can only be translation acting on a period-5 tongue.
+    - No lattice symmetry in any stratum forbids the chiral term, so the parafermion point needs three tunings.
+    - For m ≥ 5 the clock and disordering couplings cannot both be relevant in a one-boson theory, since their dimensions multiply to at least m²/4. So controlled tongues melt through a c = 1 floating phase.
+    - At spin 1/2 the Z₅ clock term first appears at third order, and it is relevant only near the ferromagnet, where C160 excludes disordered melting.
+    - Period-5 Rydberg chains also melt in two steps [literature]. What remains open is order-one amplitude only.
+  - Potts × half-floating boson, c = 9/5 (C171 R1) [derived]. The chiral term is allowed on T and K_I as well, so R1 needs two tunings there and at least three in N. C168 independently finds codimension 2 in N. A period-3 order on one qubit per site is either the host's own locked spiral, which gaps the host, or a period-3 density wave, which no nearest-neighbour U(1) liquid has (all have K > 1/4). So the Potts sector needs a second species, and it falls under (A_W′) or (R_N).
+  - Repulsive-host c = 2 (C171 R4) [derived near U(1), assumed beyond]. It needs a fluid of bound pairs with K₂ < 1/4, the n ≥ 2 gap of C163's Lemma L. In a repulsive host that branch never softens near the U(1) class, and beyond that it is (A6).
+- Open: interacting nearest-neighbour chains of period p > 1, where a structured period-2 search would test whether one-site translation matters at all; bonds not aligned with a Pauli frame, in the hidden-free-fermion enumeration; the DM integrability step; and order-one harmonic amplitude, where all three routes would have to live (PROOF §9 names a Z₅ test family).

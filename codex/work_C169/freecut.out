@@ -1,0 +1,9 @@
+p=1: max Laurent span of det h(z) over 200 random chains = 4
+p=2: max Laurent span of det h(z) over 200 random chains = 4
+p=3: max Laurent span of det h(z) over 200 random chains = 4
+p=4: max Laurent span of det h(z) over 200 random chains = 4
+p=2, one rank-1 bond: span 2
+p=3, one rank-1 bond: span 2
+XX chain mu=0.3: (np.int64(-2), np.int64(2), 4) (4 unit roots -> c = 1)
+TFI critical: (np.int64(-1), np.int64(1), 2) (2 roots, double at z=1 -> c = 1/2)
+max number of unit-circle roots over 3000 random chains, p <= 4: 4

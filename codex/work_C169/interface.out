@@ -1,0 +1,19 @@
+B_2 XXZ + field (control)              b=2: dim V_L = 3, Clifford defect = 0.000, triple defect = 0.0  -> passes
+B_2 XXZ + field (control)              b=3: dim V_L = 3, Clifford defect = 0.000, triple defect = 0.0  -> passes
+B_2 generic bond (control)             b=2: dim V_L = 3, Clifford defect = 0.000, triple defect = 0.0  -> passes
+B_2 generic bond (control)             b=3: dim V_L = 3, Clifford defect = 0.000, triple defect = 0.0  -> passes
+cluster-Ising (c=3/2)                  b=2: dim V_L = 3, Clifford defect = 0.000, triple defect = 1.0  -> fails
+cluster-Ising (c=3/2)                  b=3: dim V_L = 3, Clifford defect = 0.000, triple defect = 1.0  -> fails
+RZFA spin form (c=3/2)                 b=2: dim V_L = 3, Clifford defect = 1.848, triple defect = 1.414  -> fails
+RZFA spin form (c=3/2)                 b=3: dim V_L = 3, Clifford defect = 1.848, triple defect = 1.414  -> fails
+Titvinidze-Japaridze (c=2)             b=2: dim V_L = 4, Clifford defect = 0.000, triple defect = None  -> fails
+Titvinidze-Japaridze (c=2)             b=3: dim V_L = 4, Clifford defect = 0.000, triple defect = None  -> fails
+J1-J2 XXZ (c=2 in field)               b=2: dim V_L = 6, Clifford defect = 2.000, triple defect = None  -> fails
+J1-J2 XXZ (c=2 in field)               b=3: dim V_L = 6, Clifford defect = 2.000, triple defect = None  -> fails
+two XX legs, zigzag (c=2)              b=2: dim V_L = 4, Clifford defect = 2.000, triple defect = None  -> fails
+two XX legs, zigzag (c=2)              b=3: dim V_L = 4, Clifford defect = 2.000, triple defect = None  -> fails
+O'Brien-Fendley                        b=2: dim V_L = 4, Clifford defect = 1.887, triple defect = None  -> fails
+O'Brien-Fendley                        b=3: dim V_L = 4, Clifford defect = 1.887, triple defect = None  -> fails
+Ising x XX ladder (c=3/2)              d=4: dim V_L = 3, Clifford defect = 2.000 -> fails
+two XX ladder (c=2)                    d=4: dim V_L = 4, Clifford defect = 2.000 -> fails
+Ising x Ising ladder (c=1, not B_2)    d=4: dim V_L = 2, Clifford defect = 2.000 -> fails

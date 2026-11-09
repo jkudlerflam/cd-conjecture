@@ -1,0 +1,11 @@
+B_2: max offset diameter over all 144 family pairs = 2
+B_2: max number of infinite frustration components over all 4095 subsets = 2 e.g. ['XX', 'YY']
+
+cluster-Ising (Smacchia et al., c=3/2): max diam 3 (pair XZX@0 vs YY@0, D=[-1, 2]), infinite components 3
+RZFA spin form (c=3/2): max diam 3 (pair ZZ@0 vs XIX@0, D=[-2, -1, 0, 1]), infinite components 1
+O'Brien-Fendley (c=7/10 TCI point): max diam 4 (pair XXZ@0 vs XXZ@0, D=[-2, -1, 1, 2]), infinite components 1
+Titvinidze-Japaridze (c=2): max diam 4 (pair XZX@0 vs YZY@0, D=[-2, 2]), infinite components 1
+J1-J2 XXZ (c=2 in field): max diam 4 (pair XIX@0 vs YIY@0, D=[-2, 2]), infinite components 1
+two XX legs, zigzag (c=2): max diam 4 (pair XIX@0 vs YIY@0, D=[-2, 2]), infinite components 4
+Ising x XX, zigzag (c=3/2) [p=2]: max diam in cells 2, infinite components 3
+Ising x XX, d=4 rungless ladder (c=3/2) [p=2]: max diam in cells 2, infinite components 3
