@@ -32,7 +32,7 @@ J_z = 10, J_x − J_y = 1, J_x + J_y = −4λ²/V − 2D₀ sin δφ = −0.009 
 6. [derived, numerical sw_dm.out to 1e-4] Transverse DM at second order: V₂′ = 2(λ_L − λ_R)²/V in general, +8λ²/V for the DM, hop 4λ²/V, V₃′ = 0, uniform ΔN = 1 creation zero, conditioned creation 2Δλ/V (PROOF 3.3, 3.4).
 7. [numerical] Above v = u²/4 the U(1) part is unbound, two-component in the dilute limit, and has no trimer (pseudo_v.out, trimer_v.out).
 8. [derived] v = κ²: the repulsion and the ΔN = 1 term come together (PROOF 3.4).
-9. [numerical, small sizes] κ = 1 moves the valley balance to φ* ≈ 1.64 and raises the density at fixed μ from 0.08 to about 0.2 (ring_kappa_L20.out, ring_kappa_L24.out). L = 36 open chains (eff/bk_pilot.jsonl, eff/bk_pilot2.jsonl) give profile fits of 0.92 at φ = π/2 and 1.63 at φ = 1.64 for κ = 1, but 7.6 at the C173 calibration point (S_mid = 1.479), so these fits carry no information at this size. They are recorded, not used.
+9. [numerical, small sizes] κ = 1 moves the valley balance to φ* ≈ 1.64 and raises the density at fixed μ from 0.08 to about 0.2 (ring_kappa_L20.out, ring_kappa_L24.out). L = 36 open chains (eff/bk_pilot.jsonl, eff/bk_pilot2.jsonl) give profile fits of 0.92 at φ = π/2 and 1.63 at φ = 1.64 for κ = 1, but 7.6 at the C173 calibration point (S_mid = 1.479), so these fits carry no information at this size. The L = 48 pilot at φ = 1.64 (S_mid = 0.985 against 0.753 at L = 36, at density 0.234 against 0.197, fit 5.1) is equally uninformative. They are recorded, not used.
 10. [C144, C157] XZ is closed by the sign of a positive kernel.
 
 ## What is left open
