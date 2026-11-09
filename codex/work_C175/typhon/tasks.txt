@@ -1,0 +1,14 @@
+timeout 1400m python3 block_dmrg.py W1_225_32 typhon/cfg/W1_225_32.json
+timeout 1400m python3 block_dmrg.py W1_224_32 typhon/cfg/W1_224_32.json
+timeout 1400m python3 block_dmrg.py W1M_215_32 typhon/cfg/W1M_215_32.json
+timeout 1400m python3 block_dmrg.py W1R_220_32 typhon/cfg/W1R_220_32.json
+timeout 1400m python3 block_dmrg.py W2_290_32 typhon/cfg/W2_290_32.json
+timeout 1400m python3 block_dmrg.py W2M_250_32 typhon/cfg/W2M_250_32.json
+timeout 1400m python3 block_dmrg.py W15_255_32 typhon/cfg/W15_255_32.json
+timeout 1400m python3 block_dmrg.py W1_225_64 typhon/cfg/W1_225_64.json
+timeout 1400m python3 block_dmrg.py W1_224_64 typhon/cfg/W1_224_64.json
+timeout 1400m python3 block_dmrg.py W1M_215_64 typhon/cfg/W1M_215_64.json
+timeout 1400m python3 block_dmrg.py W1R_220_64 typhon/cfg/W1R_220_64.json
+timeout 1400m python3 block_dmrg.py W2_290_64 typhon/cfg/W2_290_64.json
+timeout 1400m python3 block_dmrg.py W2M_250_64 typhon/cfg/W2M_250_64.json
+timeout 1400m python3 block_dmrg.py W15_255_64 typhon/cfg/W15_255_64.json
