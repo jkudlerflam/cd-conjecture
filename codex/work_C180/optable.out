@@ -1,0 +1,31 @@
+|w|=0.5: valleys k=[-3.016259 -0.125334], eps=[-2.0625 -2.0625], sum mod 2pi = 3.141593 (pi = 3.141593); predicted pi/2 -+ k0 = [-0.125328 -3.016265], eps_min predicted -2.062500
+      eps''(k0) = 7.8750 (1/m), eps'''(k0) = -2.9765
+|w|=1.0: valleys k=[-2.888914 -0.252678], eps=[-2.25 -2.25], sum mod 2pi = 3.141593 (pi = 3.141593); predicted pi/2 -+ k0 = [-0.25268  -2.888912], eps_min predicted -2.250000
+      eps''(k0) = 7.5000 (1/m), eps'''(k0) = -5.8095
+|w|=2.0: valleys k=[-2.617999 -0.523594], eps=[-3. -3.], sum mod 2pi = 3.141593 (pi = 3.141593); predicted pi/2 -+ k0 = [-0.523599 -2.617994], eps_min predicted -3.000000
+      eps''(k0) = 6.0000 (1/m), eps'''(k0) = -10.3923
+
+Sigma point = True: momentum-zero vertex operators with |n|,|p| <= 4 (n_a, n_b, p_a, p_b):
+    [(-4, -4, -4, 4), (-4, -4, -2, 2), (-4, -4, 0, 0), (-4, -4, 2, -2), (-4, -4, 4, -4), (-2, -2, -4, 4), (-2, -2, -2, 2), (-2, -2, 0, 0), (-2, -2, 2, -2), (-2, -2, 4, -4), (0, 0, -4, 4), (0, 0, -2, 2), (0, 0, 2, -2), (0, 0, 4, -4), (2, 2, -4, 4), (2, 2, -2, 2), (2, 2, 0, 0), (2, 2, 2, -2), (2, 2, 4, -4), (4, 4, -4, 4), (4, 4, -2, 2), (4, 4, 0, 0), (4, 4, 2, -2), (4, 4, 4, -4)]
+
+Sigma point = False: momentum-zero vertex operators with |n|,|p| <= 4 (n_a, n_b, p_a, p_b):
+    []
+
+Dimension checks (decoupled covariance vs closed form):
+   cos 2sqrt2 ph_-  (inter-valley backscattering)     Delta = 3.0000  closed form 3.0000
+   e^{2sqrt2 i th_+} (Delta N = 4, two ab pairs)      Delta = 5.7143  closed form 5.7143
+   e^{2sqrt2 i th_+} cos 2sqrt2 ph_-                  Delta = 8.7143  closed form 8.7143
+   cos 4sqrt2 ph_-                                    Delta = 12.0000  closed form 12.0000
+   valley transfer, phi_+ dressed (resonant only)     Delta = 0.5083  closed form 0.5083
+   valley transfer, phi_- dressed (resonant only)     Delta = 1.0833  closed form 1.0833
+   ab pair, Delta N = 2 (resonant only)               Delta = 2.1786  closed form 2.1786
+   total-density 4kF (momentum 2 pi n, not in H)      Delta = 0.7000  closed form 0.7000
+
+Drift terms lam1 = lam2 = lam (Sigma-allowed), K+ = 0.35, K- = 1.5, u+ = 4.0, u- = 0.9:
+   stability: (dth+, dph-) block needs lam^2 < (u+K+)(u-/K-) = 0.8400; (dph+, dth-) block needs lam^2 < (u+/K+)(u-K-) = 15.4286
+   lam = 0.00: Delta(cos 2sqrt2 ph_-) = 3.0000, Delta(e^(2sqrt2 i th_+)) = 5.7143, min eig of H-matrix = 0.6000
+   lam = 0.30: Delta(cos 2sqrt2 ph_-) = 3.1749, Delta(e^(2sqrt2 i th_+)) = 5.8453, min eig of H-matrix = 0.5000
+   lam = 0.60: Delta(cos 2sqrt2 ph_-) = 3.9686, Delta(e^(2sqrt2 i th_+)) = 6.3842, min eig of H-matrix = 0.2789
+   lam = 0.83: Delta(cos 2sqrt2 ph_-) = 7.0732, Delta(e^(2sqrt2 i th_+)) = 8.0879, min eig of H-matrix = 0.0786
+   lam = 0.90: Delta(cos 2sqrt2 ph_-) = 15.8740, Delta(e^(2sqrt2 i th_+)) = 12.1430, min eig of H-matrix = 0.0151
+   lam = 1.20: quadratic form not positive (pseudospin Schur complement u-/K- - lam^2/(u+K+) = -0.4286 < 0), valley-chiral instability
