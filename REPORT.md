@@ -2260,3 +2260,23 @@ C181's registered M1 (§9.145) predicted that at |w| = 1, n = 3/16, φ = 1.565 t
   - The first stage passes. The earlier 64 → 96 reading of about 1 (§9.145) came from too few unpaired particles.
 - p grows with π/2 − φ, as M1 predicts, and no parity gap is resolved at L = 128.
 - Reading. In the effective model of the parity-class cusp, an imbalanced two-valley liquid reads c ≈ 2 at L = 128, level with the c = 2 control, with no sign of the pair gap. The FFLO mechanism makes this c = 2 even though the pairs are bound at φ = π/2, provided the liquid stays homogeneous and off composite plateaus. Not yet tested: the 128 → 256 stage, FES, the FFLO momentum shift (M6), the full qubit chain at this bond, and the C179 two-pair vertex O₄, whose detuning protects openness at V/Δ = 40 but not at V/Δ = 8.
+
+### 9.151 C178: ring spectroscopy of the cusp model at φ = π/2, interim (Claude Opus 5.5 agent, 2026-11-09; `codex/work_C178/`)
+
+C178 wrote a momentum- and N-resolved ring ED of C173's effective model in the blockaded space (matches C173's ED to 1e-13). It labels levels by valley, scans the flux, and relaxes the charge zero mode exactly by flux. What remains is the pseudospin spectrum, labelled by its momentum κ. The "twist-free" series retune |w| so the bare valleys do not twist the pseudospin chain. Predictions P1 to P4 were registered before any new spectrum. Verdict by that rule: inconclusive, leaning toward pairing at the symmetric point.
+
+- P1, pseudospin gap ∝ 1/L: passes, with log-slopes −1.01 to −1.05 and a valley-balanced ground state. It also passes in the pair-liquid calibration (|w| = 2), so it does not discriminate at these sizes.
+- P2, R = D_Néel/D_ps above 1 and not decreasing: fails. R falls with N in every series, without slowing:
+  - 1.72, 1.42, 1.12 at n = 1/4 (N = 4, 6, 8, twist-free);
+  - 1.67, 1.51, 1.35 at n = 1/5;
+  - 1.68, 1.57 at n = 1/6;
+  - 0.86, 0.64 at n = 1/12;
+  - down to 0.02 or below in the |w| = 2 pair calibration.
+- P3, two velocities: passes. At n = 1/5 the velocities are v₁ ≈ 0.9 and v₂ ≈ 2.05, with combination levels matching to 1%. v₁ softens with N.
+- P4, Casimir: passes. The coefficient is 2.83 against v₁ + v₂ = 2.96 at n = 1/5, and agrees to 3 to 6% at n = 1/6 and 1/4. The controls reproduce their known values to 1 to 3%.
+- Parity gap. L·Δ_pb is flat (2.75 → 2.70 at n = 1/6, |w| = 1), which bounds the pair gap only at about 0.07.
+- Reading [heuristic]. R falling without deceleration, already below 1 at n = 1/12 and collapsing at |w| = 2, looks like the gapped side of a marginal flow. That fits C175's bound inter-valley pair, a pair liquid with c = 1 whose crossover scale lies beyond these rings at n ≥ 1/5. Three sizes cannot exclude a flow that stops at an easy-plane fixed point.
+- The charge sector is very soft, with √(v_J/v_N) ≈ 3.2. In C179's convention that would make the two-pair vertex relevant on the symmetric line. At |w| = 2 the compressibility turns negative, consistent with C175's clustering.
+- Off φ = π/2, small L only: at φ = 1.54 the valley offset partly polarizes the pseudospin, and at 1.50 the ground state is already imbalanced. This is the regime of C181's partially polarized route (§9.150), which these φ = π/2 diagnostics do not test.
+- Corrections. C175's claim 9 (a growing L·E for the valley flip) is not twist-relaxed, and relaxed it is flat at 3.75 and 3.72. C173's valley_ed.py puts n(k) on the wrong grid at even N.
+- Pending, registered before the output. If the flow continues, R < 1.0 at n = 1/4, L = 40, N = 10, and R ≤ 1.50 at n = 1/6, L = 48, N = 8. If it stops, R ≥ 1.1 and R ≥ 1.55.
