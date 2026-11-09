@@ -2139,3 +2139,25 @@ A fine-tuned point counts as a counterexample, so C184 inventoried the ways a ne
 - Ring ED of the Peotta region [numerical, φ = 1, h_z = 0, L ≤ 20]. The DM-split Ising band reads c_S(16, 20) = 0.96 to 0.99, and its meeting with the Luttinger region is a level crossing.
 - Estimator calibration [numerical, exact free fermions]. c_pair at (48, 96) and (96, 192) reads 0.99 for XX, 0.51 for TFI, 1.98 to 1.99 for XX × XX and 1.50 for TFI × XX.
 - Open. The registered DMRG test. The K > 15/8 window. A fine scan of the cyclic SU(2)₁/ordered boundary for SU(2)₃, the one place where c > 1 needs a single tuning inside a stratum and nothing excludes it dynamically, which was not run. TCI × Ising at V ~ t.
+
+### 9.144 C185: which bonds have an exponentially degenerate ground space, and the transverse-DM route at the Fibonacci point (Claude Opus 5.5 agent, 2026-11-09; `codex/work_C185/`)
+
+The Fibonacci cusp works because a dominant bond has an extensively degenerate ground space in which second-order dynamics can win. C185 looked for every such point. It found no closure and no confirmed c > 1 candidate, plus one new route whose test is queued.
+
+- Classification. Only two orbits in B₂ have an exponentially degenerate ground space: the Fibonacci orbit (J ZZ + bZ at |b| = 2J, J > 0, the rank-1 projector onto |aa⟩) and XZ.
+  - For classical bonds this is [proved].
+  - For frustration-free bonds it is [proved for |aa⟩, numerical otherwise]: every other rank-1 kernel gives exactly L + 1 states, and ranks 2 and 3 give at most 2, checked exactly to L = 14.
+  - Among bonds with local integrals of motion, only XZ qualifies (C143).
+  - Points with polynomial degeneracy, such as the ferromagnetic multiplet, cannot host the mechanism [derived], because their degenerate space has zero entropy density and a single-minimum magnon band.
+  - XZ stays closed, because its induced interaction is attractive in every channel (C144, C157).
+- First order at the Fibonacci point [proved]. Modulo rotations and scale, the directions invisible at first order are the pairing Δ ∈ ℂ and the transverse DM terms λ_y(XZ − ZX) and λ_x(YZ − ZY). In the parity class only Δ survives, so at second order every parity-class bond reduces to C173's model, where the pair is bound (§9.139, §9.140). Unbinding inside the parity class therefore needs higher orders, which agrees with the V/Δ = 8 fit of C177.
+- Transverse DM at second order [derived, matches the exact full-chain extraction to 1e-4]. In units |t₂| the term gives:
+  - a repulsive V₂ = −2 + v with v = 16λ²/Δ²;
+  - a real NN hop 4λ²/V;
+  - nothing at distance 3;
+  - a conditioned ΔN = 1 creation κ Σ σ⁻_s(n_{s+2} − n_{s−2}) with κ = 4λ/Δ. The uniform part cancels exactly, and v = κ².
+  This agrees with the collaborator's transverse-DM family (§9.141) and with C186's general form.
+- Number-conserving part [numerical]. For v above the exact unbinding boundary u²/4 the pair is unbound. The dilute pseudospin is easy-plane (Δ_σ = 0.27 to 0.95 at u = 0.5 to 2), and no trimer binds at u = 1. This is the first setting near the cusp that is two-component by C175's criterion.
+- The catch [numerical, ring ED at L = 20 and 24]. κ is of order one wherever the pair is unbound. At κ = 1 it breaks N and the valley symmetry, moves the valley-balance point to φ* ≈ 1.64, and raises the density at fixed μ. Local open chains at L = 36 carry no information on c.
+- Candidate bond (not established), at V/Δ = 40 in the convention of §9.137 plus λ(XZ − ZX): J_z = 10, J_x − J_y = 1, λ = 0.3, J_x + J_y = −0.009 − 0.0125 sin δφ, D = 0.00625 cos δφ with δφ ≈ 0.07 to 0.1, h_z = −19.98525.
+- Pending tests. A small backfill job runs the κ = 1 φ scan around φ* at L = 48 and 96, a κ = 0, v = 1 reference, and two full-chain runs at V/Δ = 8. A larger job runs the number-conserving part, more full-chain φ shifts, and an unbiased search for further degenerate bonds.

@@ -1,0 +1,8 @@
+cd eff && timeout 690m python3 blockk.py k1v1_p1625_Lb16 ../typhon/cfg/k1v1_p1625_Lb16.json > ../bf/logs/k1v1_p1625_Lb16.log 2>&1 && mv bk_k1v1_p1625_Lb16.jsonl ../bf/outbk/
+cd eff && timeout 690m python3 blockk.py k1v1_p1640_Lb16 ../typhon/cfg/k1v1_p1640_Lb16.json > ../bf/logs/k1v1_p1640_Lb16.log 2>&1 && mv bk_k1v1_p1640_Lb16.jsonl ../bf/outbk/
+cd eff && timeout 690m python3 blockk.py k1v1_p1655_Lb16 ../typhon/cfg/k1v1_p1655_Lb16.json > ../bf/logs/k1v1_p1655_Lb16.log 2>&1 && mv bk_k1v1_p1655_Lb16.jsonl ../bf/outbk/
+cd eff && timeout 690m python3 blockk.py k0v1_p1571_Lb16 ../typhon/cfg/k0v1_p1571_Lb16.json > ../bf/logs/k0v1_p1571_Lb16.log 2>&1 && mv bk_k0v1_p1571_Lb16.jsonl ../bf/outbk/
+cd eff && timeout 690m python3 blockk.py k1v1_p1625_Lb32 ../typhon/cfg/k1v1_p1625_Lb32.json > ../bf/logs/k1v1_p1625_Lb32.log 2>&1 && mv bk_k1v1_p1625_Lb32.jsonl ../bf/outbk/
+cd eff && timeout 690m python3 blockk.py k1v1_p1640_Lb32 ../typhon/cfg/k1v1_p1640_Lb32.json > ../bf/logs/k1v1_p1640_Lb32.log 2>&1 && mv bk_k1v1_p1640_Lb32.jsonl ../bf/outbk/
+cd eff && timeout 690m python3 blockk.py k1v1_p1655_Lb32 ../typhon/cfg/k1v1_p1655_Lb32.json > ../bf/logs/k1v1_p1655_Lb32.log 2>&1 && mv bk_k1v1_p1655_Lb32.jsonl ../bf/outbk/
+cd eff && timeout 690m python3 blockk.py k0v1_p1571_Lb32 ../typhon/cfg/k0v1_p1571_Lb32.json > ../bf/logs/k0v1_p1571_Lb32.log 2>&1 && mv bk_k0v1_p1571_Lb32.jsonl ../bf/outbk/

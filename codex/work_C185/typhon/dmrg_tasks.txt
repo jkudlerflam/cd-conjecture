@@ -1,0 +1,10 @@
+cd eff && timeout 2800m python3 run.py ../typhon/cfg/dmv1_L64.json ../out > ../logs/dmv1_L64.log 2>&1
+cd eff && timeout 2800m python3 run.py ../typhon/cfg/dmv1_L64_Nm.json ../out > ../logs/dmv1_L64_Nm.log 2>&1
+cd eff && timeout 2800m python3 run.py ../typhon/cfg/dmv1_L64_Np.json ../out > ../logs/dmv1_L64_Np.log 2>&1
+cd eff && timeout 2800m python3 run.py ../typhon/cfg/dmv2_L64.json ../out > ../logs/dmv2_L64.log 2>&1
+cd eff && timeout 2800m python3 run.py ../typhon/cfg/mgs_L64.json ../out > ../logs/mgs_L64.log 2>&1
+cd eff && timeout 2800m python3 run.py ../typhon/cfg/dmv1_L128.json ../out > ../logs/dmv1_L128.log 2>&1
+cd eff && timeout 2800m python3 run.py ../typhon/cfg/dmv1_L128_Nm.json ../out > ../logs/dmv1_L128_Nm.log 2>&1
+cd eff && timeout 2800m python3 run.py ../typhon/cfg/dmv1_L128_Np.json ../out > ../logs/dmv1_L128_Np.log 2>&1
+cd eff && timeout 2800m python3 run.py ../typhon/cfg/dmv2_L128.json ../out > ../logs/dmv2_L128.log 2>&1
+cd eff && timeout 2800m python3 run.py ../typhon/cfg/mgs_L128.json ../out > ../logs/mgs_L128.log 2>&1

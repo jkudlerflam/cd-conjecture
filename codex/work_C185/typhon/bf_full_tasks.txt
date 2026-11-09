@@ -1,0 +1,2 @@
+cd full && timeout 690m python3 fc.py F8dm_p06 64 --r 8 --chis 32 64 96 128 192 256 256 256 --dmy 0.3 --jxpy -0.04848010 --D 0.0289659930 --dhz -0.045 --outdir ../bf/oc > ../bf/logs/F8dm_p06_64.log 2>&1
+cd full && timeout 690m python3 fc.py F8ref 64 --r 8 --chis 32 64 96 128 192 256 256 256 --outdir ../bf/oc > ../bf/logs/F8ref_64.log 2>&1

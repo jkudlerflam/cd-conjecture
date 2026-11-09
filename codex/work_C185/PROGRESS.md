@@ -1,0 +1,16 @@
+# C185 progress log
+
+- 2026-11-09. Read the spec (C181 to C185), STATUS, REPORT 9.126 to 9.140, C173, C175, C179, C180 results, C141, C143, C144, C157 results. Registered R1 to R5 in RESULT.md before computing.
+- Local machine load average about 370 on 10 cores (shared with other agents). Restarted pseudo_v.py with a lighter binding check (inter-valley channel only, since the binding boundary is proved in contrib). The partial first run is kept as pseudo_v_partial.out.
+- fib_first.py done (fib_first.out): projection table onto the blockaded space.
+- classify.out: R1 and R2 pass as registered (Fibonacci counts F_{L+2} only at |b| = 2J, J > 0; frustration-free extensive only for |aa>; every other rank-1 kernel gives L + 1; rank 2 and 3 give at most 2).
+- sw_dm.out: R4 passes. Δ = 0, λ = 1: hop 4λ²/V, on-site −8λ²/V, V₂ +8λ²/V to 0.5 percent at V = 40 and 0.01 percent at V = 320, V₃ and the NNN hop O(1/V²). With Δ = 1, λ = 0.25: the C173 terms add, the uniform ΔN = 1 element cancels (1e-11 at V = 320), and the conditioned creation <c,c+2|H|c+2> = 2Δλ/V to 1e-4.
+- pseudo_v.out: two-component (C175 criterion) for every v above the binding boundary u²/4, at u = 0.5, 1, 2 (and 1.5 running). trimer_v.out: no trimer at u = 1, v = 0.5, 1, 2 (E3 − 3ε_min positive and falling with the box).
+- Validations: full/test_fc.out (fc.py copy with DM term vs ED, L = 10, 6e-14), eff/test_eff.out (fibdmrg at V₂ = −1 vs ED, 3e-15), eff/test_blockk.out (block κ model vs direct ED and DMRG, 6e-14).
+- Typhon job 17604455 submitted (one 48-core node, 2 days), /scratch/lustre/jkudlerflam/c185/. Streams: fibdmrg (out/), blockk (outbk/), full chain (oc/), degeneracy search (degen/), logs/.
+- Typhon job 17604455 is PENDING (Priority, estimated start 2026-11-13). Before it started I replaced the blockk μ scan by a φ scan around the κ-shifted balance point and the full-chain stream by a φ-shift scan at L = 64 (second amendment in RESULT.md). Files updated on scratch: typhon/cfg/k*.json, typhon/block_tasks.txt, typhon/full_tasks.txt.
+- ring_kappa: L = 20 and 24 φ scans at κ = 0 and 1 (balance point φ* ≈ 1.64 at κ = 1).
+- Local blockk pilots (χ ≤ 64, L = 36): κ = 1, φ = π/2: c_cc = 0.92, n = 0.22. κ = 0, v = 1, μ = −2.1: n = 0.075, only about 3 particles, c_cc not meaningful. Pilot2 (κ = 1 at φ = 1.64, L = 36 and 48, and the C173 calibration point) running at the time of writing.
+- Pilot results (eff/bk_pilot.jsonl, eff/bk_pilot2.jsonl, L = 36, χ ≤ 64): κ = 1 profile fits 0.92 (φ = π/2) and 1.63 (φ = 1.64), but the C173 calibration point (κ = 0, v = 0, μ = −2.2) reads 7.6 with S_mid = 1.479, so L = 36 fits are meaningless. Recorded only. The L = 48 pilot at φ = 1.64 was still running at the end of the session (it appends to eff/bk_pilot2.jsonl).
+- Session ends with job 17604455 pending. Nothing deleted on scratch.
+- Coordinator request: split a backfill job. Job 17604568 (12 cores, 12 h) holds the κ = 1 φ scan at φ = 1.625, 1.640, 1.655 (L = 48, 96), the κ = 0, v = 1 reference, and the full-chain F8dm_p06_64 and F8ref_64 runs, writing to bf/. The main job 17604455's task lists were trimmed on scratch to remove those runs (4 blockk and 4 full-chain tasks left). Both ids and collection commands are in RESULT.md.

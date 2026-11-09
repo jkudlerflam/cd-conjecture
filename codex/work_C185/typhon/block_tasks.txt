@@ -1,0 +1,4 @@
+cd eff && timeout 2800m python3 blockk.py k1v1_p1571_Lb16 ../typhon/cfg/k1v1_p1571_Lb16.json > ../logs/k1v1_p1571_Lb16.log 2>&1 && mv bk_k1v1_p1571_Lb16.jsonl ../outbk/
+cd eff && timeout 2800m python3 blockk.py k0v0_p1571_Lb16 ../typhon/cfg/k0v0_p1571_Lb16.json > ../logs/k0v0_p1571_Lb16.log 2>&1 && mv bk_k0v0_p1571_Lb16.jsonl ../outbk/
+cd eff && timeout 2800m python3 blockk.py k1v1_p1571_Lb32 ../typhon/cfg/k1v1_p1571_Lb32.json > ../logs/k1v1_p1571_Lb32.log 2>&1 && mv bk_k1v1_p1571_Lb32.jsonl ../outbk/
+cd eff && timeout 2800m python3 blockk.py k0v0_p1571_Lb32 ../typhon/cfg/k0v0_p1571_Lb32.json > ../logs/k0v0_p1571_Lb32.log 2>&1 && mv bk_k0v0_p1571_Lb32.jsonl ../outbk/

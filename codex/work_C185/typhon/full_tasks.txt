@@ -1,0 +1,4 @@
+cd full && timeout 2800m python3 fc.py F8dm_p00 64 --r 8 --chis 32 64 96 128 192 256 256 256 --dmy 0.3 --jxpy -0.04500000 --D 0.0290182101 --dhz -0.045 --outdir ../oc > ../logs/F8dm_p00_64.log 2>&1
+cd full && timeout 2800m python3 fc.py F8dm_p10 64 --r 8 --chis 32 64 96 128 192 256 256 256 --dmy 0.3 --jxpy -0.05079397 --D 0.0288732400 --dhz -0.045 --outdir ../oc > ../logs/F8dm_p10_64.log 2>&1
+cd full && timeout 2800m python3 fc.py F8dm_p14 64 --r 8 --chis 32 64 96 128 192 256 256 256 --dmy 0.3 --jxpy -0.05309858 --D 0.0287342959 --dhz -0.045 --outdir ../oc > ../logs/F8dm_p14_64.log 2>&1
+cd full && timeout 2800m python3 fc.py F8ref 128 --r 8 --chis 32 64 96 128 192 256 256 256 --outdir ../oc > ../logs/F8ref_128.log 2>&1
