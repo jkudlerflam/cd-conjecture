@@ -1,0 +1,8 @@
+timeout 700m python3 run.py cfg/w1n316_p1.5300_L256_N47.json out > logs/w1n316_p1.5300_L256_N47.log 2>&1
+timeout 700m python3 run.py cfg/w1n316_p1.5300_L256_N48.json out > logs/w1n316_p1.5300_L256_N48.log 2>&1
+timeout 700m python3 run.py cfg/w1n316_p1.5300_L256_N49.json out > logs/w1n316_p1.5300_L256_N49.log 2>&1
+timeout 700m python3 run.py cfg/w1n316_p1.5550_L256_N47.json out > logs/w1n316_p1.5550_L256_N47.log 2>&1
+timeout 700m python3 run.py cfg/w1n316_p1.5550_L256_N48.json out > logs/w1n316_p1.5550_L256_N48.log 2>&1
+timeout 700m python3 run.py cfg/w1n316_p1.5550_L256_N49.json out > logs/w1n316_p1.5550_L256_N49.log 2>&1
+timeout 700m python3 run.py cfg/ctl1_L256_N48.json out > logs/ctl1_L256_N48.log 2>&1
+timeout 700m python3 run.py cfg/ctl2_L256_N48.json out > logs/ctl2_L256_N48.log 2>&1
