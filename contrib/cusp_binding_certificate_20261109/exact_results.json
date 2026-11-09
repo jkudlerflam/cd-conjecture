@@ -1,0 +1,17 @@
+{
+  "status": "all exact checks passed",
+  "rational_identity_cases": 180,
+  "support_relative_separations": [
+    2,
+    25
+  ],
+  "norm_squared": 504582837,
+  "rayleigh_quotient_exact": "-68966646/15290389",
+  "rayleigh_quotient_decimal": -4.510457255207831,
+  "threshold_exact": "-9/2",
+  "binding_lower_bound_exact": "319791/30580778",
+  "binding_lower_bound_decimal": 0.010457255207830226,
+  "certified_binding_greater_than": "1/100",
+  "critical_v_exact": "1/4",
+  "proof_scope": "two-body second-order effective model at fixed total momentum"
+}

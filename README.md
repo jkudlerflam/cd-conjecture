@@ -68,6 +68,15 @@ These are spelled out in [CONTRIBUTING.md](CONTRIBUTING.md). In brief, tag every
 
 ## Where things stand
 
+**Independent continuation (2026-11-09):** [new checked contributions](contrib/counterexample_push_20261109/README.md)
+give an exact binding boundary and pair wavefunction for the Fibonacci
+qubit candidate, identify its leading omitted number-changing term, and
+improve the d=13 legal projected pin bound from J/4096 to J/135.
+The qubit result agrees with C175's new two-body obstruction; its
+finite-density c remains open. The [route audit](contrib/route_audit_20261109/README.md)
+ranks d=13 as the strongest mature construction and keeps its
+model-specific matching and relative defect hypotheses explicit.
+
 **Conclusion (2026-10-29, updated 2026-10-30), at the theoretical-physics standard: the c–d conjecture is false.** Explicit chains have c = 14 at d = 13 and c unbounded at fixed d = 4464, conditional only on standard Wilsonian RG input whose main pieces are now proved; the natural replacement, Σ_a c_a v_a ≤ π M log₂ d, survives every test, is proved for free fermions (A ≤ 2M) and for every solvable family, and is open in general. See the conclusion at the top of [STATUS.md](STATUS.md).
 
 A d=24 conditional counterexample candidate is recorded with independent AI reviews and a [fresh adversarial audit](contrib/counterexample_audit_20261028/README.md). The earlier verified-counterexample wording is withdrawn: finite-J matching and a uniform dressed-defect comparison remain open. The working standard is theoretical physics (standard RG, controlled perturbation theory, calibrated numerics), not mathematical rigor.

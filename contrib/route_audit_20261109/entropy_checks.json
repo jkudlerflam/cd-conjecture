@@ -1,0 +1,66 @@
+{
+  "status": "all checks passed",
+  "random_cases": 72,
+  "sharp_classical_cases": 7,
+  "minimum_subadditivity_slack": -2.220446049250313e-16,
+  "minimum_dephasing_slack": 8.065144750906816e-08,
+  "sharp_classical_examples": [
+    {
+      "a": 0.0,
+      "entropy_loss": 0.0,
+      "environment_entropy": -0.0,
+      "binary_entropy": 0.0,
+      "subadditivity_slack": -0.0,
+      "dephasing_slack": 0.0
+    },
+    {
+      "a": 0.000244140625,
+      "entropy_loss": 0.0022748154507987116,
+      "environment_entropy": 0.0022748154507987116,
+      "binary_entropy": 0.0022748154507987116,
+      "subadditivity_slack": 0.0,
+      "dephasing_slack": 0.0
+    },
+    {
+      "a": 0.003787878787878788,
+      "entropy_loss": 0.02490171502983102,
+      "environment_entropy": 0.02490171502983102,
+      "binary_entropy": 0.024901715029831024,
+      "subadditivity_slack": 0.0,
+      "dephasing_slack": 3.469446951953614e-18
+    },
+    {
+      "a": 0.1,
+      "entropy_loss": 0.3250829733914482,
+      "environment_entropy": 0.3250829733914482,
+      "binary_entropy": 0.3250829733914482,
+      "subadditivity_slack": 0.0,
+      "dephasing_slack": 0.0
+    },
+    {
+      "a": 0.5,
+      "entropy_loss": 0.6931471805599453,
+      "environment_entropy": 0.6931471805599453,
+      "binary_entropy": 0.6931471805599453,
+      "subadditivity_slack": 0.0,
+      "dephasing_slack": 0.0
+    },
+    {
+      "a": 0.9,
+      "entropy_loss": 0.3250829733914482,
+      "environment_entropy": 0.3250829733914482,
+      "binary_entropy": 0.3250829733914482,
+      "subadditivity_slack": 0.0,
+      "dephasing_slack": 0.0
+    },
+    {
+      "a": 1.0,
+      "entropy_loss": 0.0,
+      "environment_entropy": -0.0,
+      "binary_entropy": 0.0,
+      "subadditivity_slack": -0.0,
+      "dephasing_slack": 0.0
+    }
+  ],
+  "scope": "entropy-channel inequality only; no Hamiltonian or CFT test"
+}

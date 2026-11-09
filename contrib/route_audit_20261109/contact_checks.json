@@ -1,0 +1,26 @@
+{
+  "status": "all exact arithmetic assertions passed",
+  "scope": "contact and pin inequalities; no CFT or finite-K claim",
+  "checks": {
+    "exp6_lower": "2101/7",
+    "exp6_lower_minus_264": "253/7",
+    "log2_lower": "56/81",
+    "contact_squared_integer_margin": 29897,
+    "zero_temperature_contact_bound": "1/257",
+    "cosine_lower": "6151/6272",
+    "pin_margin_before_port": "1/59400",
+    "port_upper_bound": "6 * 2^-608",
+    "pin_activation_improvement": "4096/135",
+    "contact_bound_improvement": "512/33",
+    "diagnostic": {
+      "residual_at_1_over_264": -0.0010913975612511883,
+      "coarse_exact_upper_bound_at_1_over_264": -0.0008509509056537037,
+      "sharp_implicit_contact_bound_in_window": 0.003820959243185237,
+      "reciprocal_sharp_implicit_bound": 261.7143854081986,
+      "certified_contact_lower_bound": 0.003787878787878788,
+      "old_contact_lower_bound": 0.000244140625,
+      "new_pin_activation_lower_bound_over_J": 0.007407407407407408,
+      "old_pin_activation_lower_bound_over_J": 0.000244140625
+    }
+  }
+}

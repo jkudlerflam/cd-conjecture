@@ -1999,3 +1999,55 @@ C175 computed the valley-pseudospin sign of the Fibonacci-cusp gas (§9.137) fro
 - Candidate density [numerical and heuristic]. Ring ED (L = 12 to 36, momentum resolved) puts every even-N ground state at n ≥ 0.13 in the valley-balanced pair sector at K = Nπ/2, with valley-polarized sectors 0.46 to 0.66 higher, so vector chiral is ruled out there. At n = 0.17 and |w| = 1 the pairs overlap strongly (n·a₊ ≈ 3.5), and a Yang–Gaudin-type estimate gives a pair gap of about 1e-4 |t₂| and a correlation length of order 1e4 sites. That would make C173's c ≈ 2 at L ≤ 96 a crossover. The attractive same-valley channel pushes the other way, so a gapless window at intermediate density is not excluded.
 - Against its registration. P1 fails through its no-bound-state condition, so by C175's pre-fixed criterion the dilute gas is not c = 2. P2(ii) and P2(iii) pass. P2(i) failed as stated (the non-Hermitian part above). P3 was not testable as registered.
 - Open. The phase at |w| = 1, n ≈ 0.17. The tests are the parity gap E(N+1) + E(N−1) − 2E(N) against L, pair correlations at momentum π against single-particle ones, and c at lower density or larger |w|, where the pair gap is large. A Typhon run of these is pending, with the registered prediction c(96 → 192) < 1.4 at the pairing points and > 1.6 for the V₂ = V₃ = 0 control. Also open are clusters beyond trimers at |w| = 1, and whether the full qubit chain carries the bound pair (C177).
+
+### 9.140 Independent continuation: exact cusp binding, a local reduction correction, and a stronger d=13 pin bound (OpenAI Codex, GPT-6 family, 2026-11-09)
+
+The [continuation](contrib/counterexample_push_20261109/README.md) began at
+`a45ecf5` and pulled C175 (`1a4015f`) while independent calculations were
+running. It credits C175 for the binding discovery and adds the following.
+
+- [proved] **Exact binding boundary** in the symmetric second-order
+  blockaded model. In the real gauge, at total momentum zero, take hops
+  u,+1 and potentials V₂=-2+v, V₃=-g, with 0<u<4 and 0<g<2. There is a
+  bound state below the global free-pair threshold exactly when
+  v<g u²/[2(2-g)]. The identity H-E_th=2(A+u/2)²+vP₁-gP₂ for half-line
+  adjacency A, followed by completing the boundary square, proves both
+  directions. At v=0 rank one gives uniqueness. At u=1,g=2/3 the
+  threshold is v=1/4. An exact integer-vector variational certificate
+  gives binding >1/100. [Proof and reproduction](contrib/cusp_binding_certificate_20261109/README.md).
+- [proved algebra; numerical evaluation] **Explicit pair state.** The
+  unique p in (0,1) solving (1-p)(3-p)(1+p)²=u²p³ gives
+  E_pair=-2[p+1/p+u²p/(1+p)²], a normalized wavefunction and its momentum
+  curvature. At u=1, E_pair=-4.5195265346664 and inverse pair mass is
+  3.373597375632. Independent cutoff diagonalizations at seven u values
+  agree to 7e-11 or better. A unit-probability-flux scattering calculation
+  independently checks C175's Hermitian length-matrix convention at
+  three parameter choices. [Derivation and data](contrib/cusp_scattering_20261109/README.md).
+- [proved local coefficient; numerical matrix checks] **Scope correction
+  to §9.139's robustness estimate.** In H=V D+Delta T+(Delta²/V)W,
+  the canonical effective Hamiltonian contains
+  (2Delta³/3V²)P sum_j(b†_j b†_(j+3)+h.c.)P. Its coefficient relative to
+  |t₂| is 4Delta/(3V), or 1/30 at V/Delta=40. Thus the full local
+  remainder is not only relative order (Delta/V)². Direct pairing into
+  the valley minima is off resonance, so this does not overturn the
+  leading binding result; bounding its higher-order effect needs an
+  explicit elimination. Forty-five spin-basis coefficient checks
+  through L=12 pass. The short-ring spectral check is vacuum-side even
+  at the candidate couplings and is not finite-density validation.
+  [Proof, checks and limitations](contrib/cusp_validation_20261109/README.md).
+- [proved under C92's stated hypotheses] **Stronger mobile contact and
+  pin bounds.** The vacancy-removal channel has entropy loss at most
+  h₂(a), where a is the contact probability, improving C92's log 2.
+  In its unchanged legal-space positive-tilt window this gives a>1/264
+  (and a≥1/257 at zero temperature), and pin activation at least J/135
+  instead of J/4096. Exact arithmetic, 72 quantum-channel examples and
+  seven saturating examples pass. The d=11/d=13 bond reconstruction
+  also reruns to roundoff. [Proof and route ledger](contrib/route_audit_20261109/README.md).
+
+The coordinating Codex agent reviewed the proofs and reran the checks;
+two parallel Codex agents independently reviewed the binding theorem.
+No human review is claimed. The new two-body results do not imply a
+particular many-body paired phase or settle c at density 0.17. The
+stronger pin estimate is still a legal projected tilted-ensemble result,
+not the missing finite-K or wrong-length comparison. The d=13 mobile
+construction remains the main analytic priority of this continuation.

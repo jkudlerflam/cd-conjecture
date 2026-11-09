@@ -1,0 +1,166 @@
+{
+  "python": "3.12.3",
+  "numpy": "2.5.4",
+  "scipy": "1.18.1",
+  "convergence": [
+    {
+      "cutoff": 32,
+      "eigenvalues": [
+        -4.516346770148855,
+        -4.437150455991021
+      ],
+      "binding": 0.016346770148855327,
+      "mean_separation": 8.290152238091562,
+      "last_ten_weight": 0.025508084228310766
+    },
+    {
+      "cutoff": 64,
+      "eigenvalues": [
+        -4.519428114062104,
+        -4.483000945452416
+      ],
+      "binding": 0.019428114062104207,
+      "mean_separation": 10.531392591987043,
+      "last_ten_weight": 0.0005869189538939433
+    },
+    {
+      "cutoff": 128,
+      "eigenvalues": [
+        -4.519526396909787,
+        -4.4956006720355015
+      ],
+      "binding": 0.019526396909786747,
+      "mean_separation": 10.922354344133845,
+      "last_ten_weight": 8.932223061181474e-07
+    },
+    {
+      "cutoff": 256,
+      "eigenvalues": [
+        -4.519526534666089,
+        -4.498890564326547
+      ],
+      "binding": 0.019526534666089113,
+      "mean_separation": 10.924927792474481,
+      "last_ten_weight": 2.172877750382544e-12
+    },
+    {
+      "cutoff": 512,
+      "eigenvalues": [
+        -4.519526534666398,
+        -4.499719700997281
+      ],
+      "binding": 0.0195265346663982,
+      "mean_separation": 10.924927817216538,
+      "last_ten_weight": 8.147862719327373e-24
+    },
+    {
+      "cutoff": 1024,
+      "eigenvalues": [
+        -4.519526534666398,
+        -4.499929642982482
+      ],
+      "binding": 0.0195265346663982,
+      "mean_separation": 10.92492781721657,
+      "last_ten_weight": 1.7921472422150358e-46
+    }
+  ],
+  "threshold_checks": [
+    {
+      "u": 0.5,
+      "v": 0.0,
+      "v_critical": 0.0625,
+      "energy_minus_threshold": -0.0017092173116921572
+    },
+    {
+      "u": 0.5,
+      "v": 0.05,
+      "v_critical": 0.0625,
+      "energy_minus_threshold": -6.916534902678961e-05
+    },
+    {
+      "u": 0.5,
+      "v": 0.0625,
+      "v_critical": 0.0625,
+      "energy_minus_threshold": 1.8494781710565178e-05
+    },
+    {
+      "u": 0.5,
+      "v": 0.075,
+      "v_critical": 0.0625,
+      "energy_minus_threshold": 4.553617888181094e-05
+    },
+    {
+      "u": 1.0,
+      "v": 0.0,
+      "v_critical": 0.25,
+      "energy_minus_threshold": -0.0195265346663982
+    },
+    {
+      "u": 1.0,
+      "v": 0.2,
+      "v_critical": 0.25,
+      "energy_minus_threshold": -0.0008209102127638701
+    },
+    {
+      "u": 1.0,
+      "v": 0.25,
+      "v_critical": 0.25,
+      "energy_minus_threshold": 1.7583492714301485e-05
+    },
+    {
+      "u": 1.0,
+      "v": 0.3,
+      "v_critical": 0.25,
+      "energy_minus_threshold": 5.920190282981963e-05
+    },
+    {
+      "u": 2.0,
+      "v": 0.0,
+      "v_critical": 1.0,
+      "energy_minus_threshold": -0.12254791423625111
+    },
+    {
+      "u": 2.0,
+      "v": 0.8,
+      "v_critical": 1.0,
+      "energy_minus_threshold": -0.004929035143083738
+    },
+    {
+      "u": 2.0,
+      "v": 1.0,
+      "v_critical": 1.0,
+      "energy_minus_threshold": 1.41008467489101e-05
+    },
+    {
+      "u": 2.0,
+      "v": 1.2,
+      "v_critical": 1.0,
+      "energy_minus_threshold": 5.273336759525904e-05
+    },
+    {
+      "u": 3.5,
+      "v": 0.0,
+      "v_critical": 3.0625,
+      "energy_minus_threshold": -0.1638984772557599
+    },
+    {
+      "u": 3.5,
+      "v": 2.45,
+      "v_critical": 3.0625,
+      "energy_minus_threshold": -0.0043972336438216075
+    },
+    {
+      "u": 3.5,
+      "v": 3.0625,
+      "v_critical": 3.0625,
+      "energy_minus_threshold": 4.408875110328836e-06
+    },
+    {
+      "u": 3.5,
+      "v": 3.675,
+      "v_critical": 3.0625,
+      "energy_minus_threshold": 1.6889772584960383e-05
+    }
+  ],
+  "scope": "finite relative-coordinate cutoffs, supplementary to exact proof"
+}

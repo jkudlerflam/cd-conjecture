@@ -12,6 +12,14 @@ Latorre and Sierra ([arXiv:2403.17242](https://arxiv.org/abs/2403.17242)) conjec
 
 Not established: a rigorous lattice-to-CFT theorem for any counterexample.
 
+Independent continuation (2026-11-09): [the new audit and calculations](contrib/counterexample_push_20261109/README.md)
+retain the d=13 model-specific dressed-clock and relative defect
+hypotheses, improve its legal projected pin activation bound to J/135,
+and prove an exact two-body binding boundary for the qubit cusp. The
+qubit reduction also has a nonzero distance-three pairing term at
+relative order Delta/V; its off-resonant elimination requires a separate
+argument. Neither result identifies a microscopic central charge.
+
 ## A replacement bound
 
 The proposed replacement is A = Σ_a c_a v_a ≤ π M log₂ d, with M the gauge-optimized bond half-spread. It is proved for quasi-free chains (A ≤ 2M, sharp), for free-fermion and classical chains, and for WZW sectors coupled to on-site symmetries. Every solvable family satisfies it, and an adversarial search found no violation. The general case reduces to C(d) = sup L(E_{2L} − 2E_L)/M < ∞.
