@@ -1,0 +1,4 @@
+done local/f/S1_32.json E=-66.0645104767 Sbar=0.9758 c_prof=1.182 trunc=6.3e-13 n_mid=0.0818 N=5.090 emid=-2.0069182206 t=260s
+done local/f/S1odd_32.json E=-66.0643867382 Sbar=0.9302 c_prof=0.963 trunc=3.2e-12 n_mid=0.0825 N=5.231 emid=-2.0068520808 t=233s
+done local/f/S1even_32.json E=-66.0645104766 Sbar=0.9758 c_prof=1.182 trunc=3.4e-12 n_mid=0.0818 N=5.090 emid=-2.0069182206 t=212s
+  sweep 5 chi=192 E=-7.754890283208 trunc=2.92e-12 mv/solve=222.7 (max 401) res_max=4.9e-05

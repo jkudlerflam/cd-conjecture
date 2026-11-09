@@ -1,0 +1,6 @@
+r5 {"Jx": 0.5, "Jy": -0.5, "D": 0.04223642666131884, "Jz": 1.25, "hz": -2.3100342873151334}
+done local/Pr5_32.json E=-41.4198909727 Sbar=0.4639 c_prof=-1.416 trunc=1.3e-13 n_mid=0.1068 N=4.985 emid=-1.2638744566 t=115s
+done local/Pr5_odd_32.json E=-41.4190134237 Sbar=1.0934 c_prof=2.587 trunc=5.2e-13 n_mid=0.1190 N=5.302 emid=-1.2638644115 t=144s
+done local/Pr5_even_32.json E=-41.4198909727 Sbar=0.4639 c_prof=-1.416 trunc=1.3e-13 n_mid=0.1068 N=4.985 emid=-1.2638744566 t=115s
+done local/Pr5_64.json E=-81.8652039445 Sbar=0.4451 c_prof=-0.958 trunc=9.7e-13 n_mid=0.1003 N=8.207 emid=-1.2639131879 t=778s
+  sweep 1 chi=64 E=-16.081867157851 trunc=0.00e+00 mv/solve=50.9 (max 61) res_max=5.7e-05

@@ -1,0 +1,2 @@
+python3 fc.py S2 256 --cp @typhon/S2.json --chis 32 64 96 128 192 256 256 --outdir oc > logs/S2_256.log 2>&1
+python3 fc.py S1 256 --cp @typhon/S1.json --chis 32 64 96 128 192 256 256 --outdir oc > logs/S1_256.log 2>&1

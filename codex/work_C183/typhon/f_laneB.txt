@@ -1,0 +1,18 @@
+python3 fc.py S2 128 --cp @typhon/S2.json --chis 32 64 96 128 192 256 256 256 --outdir oc > logs/S2_128.log 2>&1
+python3 fc.py S1 128 --cp @typhon/S1.json --chis 32 64 96 128 192 256 256 256 --outdir oc > logs/S1_128.log 2>&1
+python3 fc.py S2odd 128 --cp @typhon/S2.json --chis 32 64 96 128 192 192 192 --outdir oc --parity odd --nocorr > logs/S2odd_128.log 2>&1
+python3 fc.py S2even 128 --cp @typhon/S2.json --chis 32 64 96 128 192 192 192 --outdir oc --parity even --nocorr > logs/S2even_128.log 2>&1
+python3 fc.py S1odd 128 --cp @typhon/S1.json --chis 32 64 96 128 192 192 192 --outdir oc --parity odd --nocorr > logs/S1odd_128.log 2>&1
+python3 fc.py S1even 128 --cp @typhon/S1.json --chis 32 64 96 128 192 192 192 --outdir oc --parity even --nocorr > logs/S1even_128.log 2>&1
+python3 fc.py S2 64 --cp @typhon/S2.json --chis 32 64 96 128 192 192 192 --outdir oc > logs/S2_64.log 2>&1
+python3 fc.py S2odd 64 --cp @typhon/S2.json --chis 32 64 96 128 160 160 --outdir oc --parity odd --nocorr > logs/S2odd_64.log 2>&1
+python3 fc.py S2even 64 --cp @typhon/S2.json --chis 32 64 96 128 160 160 --outdir oc --parity even --nocorr > logs/S2even_64.log 2>&1
+python3 fc.py S1 64 --cp @typhon/S1.json --chis 32 64 96 128 192 192 192 --outdir oc > logs/S1_64.log 2>&1
+python3 fc.py S1odd 64 --cp @typhon/S1.json --chis 32 64 96 128 160 160 --outdir oc --parity odd --nocorr > logs/S1odd_64.log 2>&1
+python3 fc.py S1even 64 --cp @typhon/S1.json --chis 32 64 96 128 160 160 --outdir oc --parity even --nocorr > logs/S1even_64.log 2>&1
+python3 ctrl183.py leg2 256 --chis 32 64 96 128 192 256 256 --outdir ctrl > logs/ctrl_leg2_256.log 2>&1
+python3 ctrl183.py leg2 128 --chis 32 64 96 128 192 256 256 --outdir ctrl > logs/ctrl_leg2_128.log 2>&1
+python3 ctrl183.py leg2 64 --chis 32 64 96 128 192 256 256 --outdir ctrl > logs/ctrl_leg2_64.log 2>&1
+python3 ctrl183.py xx 256 --chis 32 64 96 128 192 256 256 --outdir ctrl > logs/ctrl_xx_256.log 2>&1
+python3 ctrl183.py xx 128 --chis 32 64 96 128 192 256 256 --outdir ctrl > logs/ctrl_xx_128.log 2>&1
+python3 ctrl183.py xx 64 --chis 32 64 96 128 192 256 256 --outdir ctrl > logs/ctrl_xx_64.log 2>&1

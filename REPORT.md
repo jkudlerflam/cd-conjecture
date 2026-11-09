@@ -2280,3 +2280,18 @@ C178 wrote a momentum- and N-resolved ring ED of C173's effective model in the b
 - Off φ = π/2, small L only: at φ = 1.54 the valley offset partly polarizes the pseudospin, and at 1.50 the ground state is already imbalanced. This is the regime of C181's partially polarized route (§9.150), which these φ = π/2 diagnostics do not test.
 - Corrections. C175's claim 9 (a growing L·E for the valley flip) is not twist-relaxed, and relaxed it is flat at 3.75 and 3.72. C173's valley_ed.py puts n(k) on the wrong grid at even N.
 - Pending, registered before the output. If the flow continues, R < 1.0 at n = 1/4, L = 40, N = 10, and R ≤ 1.50 at n = 1/6, L = 48, N = 8. If it stops, R ≥ 1.1 and R ≥ 1.55.
+
+### 9.152 C183: the full qubit chain near the cusp, interim (Claude Opus 5.5 agent, 2026-11-09; `codex/work_C183/`)
+
+C183 searches the full qubit chain around the cusp at moderate V/Δ. Its many-body tests are on Typhon. The local results:
+
+- Unbinding depends on the field [numerical]. C183 extended C177's two-body fit to V/Δ = 4 to 16 and |w| = 0.5 to 3 (ring ED at L = 14 to 20, C175's pseudospin criterion).
+  - At μ_eff = −12 the parity-class pair is unbound for roughly V/Δ < 10/|w|, with Δ_σ = 0.36 to 0.96, inside the two-component window.
+  - At |w| = 1 the resonance moves from V/Δ ≈ 10 (μ_eff = −12) to about 8 (−8), about 6 (−5) and below 4 (−4).
+  - So near the onset the pair is bound at every V/Δ ≥ 4 tested. This independently confirms §9.146. The fit degrades above μ_eff ≈ −4, so the onset itself is reached only by the trend.
+- One resonance, two sides [derived, all 35 map points]. Δ_σ approaches +1 from below on the unbound side and −1 from below on the bound side.
+- No trimers at seven unbound far-field points [numerical].
+- The gas window [numerical, V/Δ = 8, |w| = 1]. Below a sharp onset the chain is a gapped dressed vacuum, with up to 0.1 virtual particles per site. Above the gas window there is a first-order jump to a packed blockaded phase at n ≈ 0.45. The gas lives in between, at densities 0.05 to 0.3. A registered local pilot at V/Δ = 5 landed in the vacuum (S̄ flat at 0.46) and tested nothing, and the density targeting of the Typhon job was fixed before it started.
+- The transverse-DM bond needs no extra tuning [numerical, derived]. The uniform ΔN = 1 element vanishes exactly, because Γ(XZ − ZX) together with the rest of the bond has the antiunitary symmetry inversion × Π_j Z_j × complex conjugation. The vacuum ⟨X⟩ is 2e-16, against −0.0115 when a symmetric XZ coupling of 0.001 is added. So the DM bond sits on a symmetric stratum and needs no h_x tuning.
+- Retuning in the full chain. At V/Δ = 16, v = 0.3, degenerate valleys need J_x + J_y = −0.00400 and D = 0.015212, against the second-order values −0.00525 and 0.016174. The bond is J_x = 0.4979983, J_y = −0.5020017, D = 0.0152122, J_z = 4, Γ_xz = −Γ_zx = 0.13693064, with h_z ≈ −7.9463 at the onset, set by a density ladder.
+- Pending. A small job runs the two V/Δ = 8 parity-class points (on and off the symmetric line) to L = 256, with fixed-parity gaps and controls. A larger job screens 180 points of the DM-bond family at V/Δ = 12 and 16 and of C181's off-symmetric point at V/Δ = 12, 16 and 24. It confirms up to ten of them at L = 128 and 256, with parity gaps and FES.
