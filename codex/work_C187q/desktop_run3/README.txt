@@ -9,3 +9,9 @@ L = 192 truncation below 1e-7 and controls within 0.15 of 1 and 0.25 of 2, and L
 from 128; a crossover toward c = 1 if c_two(128 -> 192) <= 1.3 in two windows at either phi or L*gap doubles.
 Needs python3 with numpy and scipy. Run: bash run_desktop.sh     then python3 summarize.py
 This is the effective model, not the full qubit chain.
+
+Amendment (2026-11-09, coordinator, registered before any ctl1fix output). cfg/ctl1_L192_N36.json was written with
+"t2": 0.0, while C181's reference ctl1 runs in ref/ (L = 64, 128) keep the fibdmrg default t2 = -1. So ctl1_L192 is a
+different Hamiltonian (energy per site -0.342 against -0.614) and its 128 -> 192 reading is meaningless. This was a
+config error by the coordinator. The calibration uses ctl1fix_L192_N36 instead, identical to ref's ctl1 except for L and N.
+ctl1_L192_N36 is kept and reported as a config error. ctl2 and the six candidate configs match ref/ exactly.

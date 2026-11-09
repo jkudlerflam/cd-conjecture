@@ -13,3 +13,5 @@ Collect from codex/work_C187q/L256_job/:
     mkdir -p typhon_out && scp -o LogLevel=ERROR 'typhon:/scratch/lustre/jkudlerflam/c187b/out/*.jsonl' typhon_out/ && scp -r -o LogLevel=ERROR typhon:/scratch/lustre/jkudlerflam/c187b/logs typhon_out/
 
 Do not copy out/ckpt.
+
+Amendment (2026-11-09). This was registered before any c estimate was computed. Some log lines had been seen in a progress check: candidate runs at χ ≤ 64, and the ctl1 run's S_mid. cfg/ctl1_L256_N48.json has the same error as the desktop L = 192 config: "t2": 0.0, where C181's L = 128 ctl1 keeps the default t2 = −1. The c = 1 calibration uses ctl1fix_L256_N48 (the default t2), run in a separate small job, and ctl1_L256_N48 is reported as a config error.
