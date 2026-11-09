@@ -2295,3 +2295,20 @@ C183 searches the full qubit chain around the cusp at moderate V/Δ. Its many-bo
 - The transverse-DM bond needs no extra tuning [numerical, derived]. The uniform ΔN = 1 element vanishes exactly, because Γ(XZ − ZX) together with the rest of the bond has the antiunitary symmetry inversion × Π_j Z_j × complex conjugation. The vacuum ⟨X⟩ is 2e-16, against −0.0115 when a symmetric XZ coupling of 0.001 is added. So the DM bond sits on a symmetric stratum and needs no h_x tuning.
 - Retuning in the full chain. At V/Δ = 16, v = 0.3, degenerate valleys need J_x + J_y = −0.00400 and D = 0.015212, against the second-order values −0.00525 and 0.016174. The bond is J_x = 0.4979983, J_y = −0.5020017, D = 0.0152122, J_z = 4, Γ_xz = −Γ_zx = 0.13693064, with h_z ≈ −7.9463 at the onset, set by a density ladder.
 - Pending. A small job runs the two V/Δ = 8 parity-class points (on and off the symmetric line) to L = 256, with fixed-parity gaps and controls. A larger job screens 180 points of the DM-bond family at V/Δ = 12 and 16 and of C181's off-symmetric point at V/Δ = 12, 16 and 24. It confirms up to ten of them at L = 128 and 256, with parity gaps and FES.
+
+### 9.153 C182: cluster bands and the phase diagram of the cusp model, interim (Claude Opus 5.5 agent, 2026-11-09; `codex/work_C182/`)
+
+C182 asked whether bound clusters reopen the two-valley question one level up. It found no c > 1 opportunity on that side. Its systematic DMRG screen is queued.
+
+- Valley symmetry of cluster bands [proved]. At φ = π/2 every N-cluster band satisfies E_N(K) = E_N(Nπ − K), so odd clusters (trimers, pentamers) have two degenerate minima.
+- The ab pair band has a single minimum at K = π for every |w| from 0.3 to 3.9 [numerical]. The collaborator's exact inverse pair mass stays positive on (0, 4) [proved algebra, evaluated], falling from 4 to 0.643.
+- aa and bb pairs are unbound for |w| ≤ 3.6 [numerical], and bound above that, 0.06 to 0.13 above the ab pair.
+- Pre-emption [proved, elementary]. If two cluster species with equal energy per particle bind to each other, their bound state takes over. With the valley offset δ as a field, the pair/atom crossing at δ = E_b is pre-empted by the aab trimer wherever B₃ > 0, which holds at every |w| checked. That opens a window E_b − 2B₃ < δ < E_b + B₃. At φ = π/2 trimers never lead, because B₃ (0.0006, 0.019, 0.068 at |w| = 1, 2, 3) is below E_b/2.
+- Equation of state [numerical, box bounds and L = 40]:
+  - at |w| = 3 the dilute gas is self-bound;
+  - at |w| = 2, clusters of 4 to 6 form droplets of density about 0.35;
+  - at |w| = 1 the chemical potential rises monotonically to n = 0.5, so the candidate region is a uniform phase;
+  - at |w| = 0.5 a flat chemical potential for n ≈ 0.2 to 0.3 and a dense droplet near 0.47 indicate a coexistence region.
+- Uniform liquids at |w| = 2 and 3 (n = 0.3 to 0.4) read c(40 → 80) = 0.85 to 0.96 with balanced valleys and truncation below 1e-10, against controls of 1.10 and 2.17.
+- High readings of 2.4 to 3.9 at |w| ≤ 1 and inside the |w| = 2 droplet regime are inhomogeneous, with mid-chain density 0.03 to 0.12 above N/L that drifts with L. The |w| = 2, δ = E_b lead fails C182's registered homogeneity rule. A homogeneity filter was added to the stage-2 selection before the job started. C181's off-symmetric points of §9.150 pass homogeneity (maximum deviation 0.008 at L = 128).
+- Open. The screen and its stage-2 runs, the |w| ≲ 1 near-symmetric question (C176, C178, C181), the small-|w| coexistence region, and the full chain.
