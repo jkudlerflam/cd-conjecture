@@ -10,5 +10,38 @@
     "band.py": "7b9c7bd24c3ac07ee8a438786124e5bdc7b79e31a95749805ff46d173ffb94d0",
     "fc.py": "d601ad1a8caab6390ae783f725ebf9f48fde84292c72a973d3121c1d342f4e56",
     "ctrl183.py": "045bf1e2b51a083464b3b5f19a575788b7cbb622ac60ef86a534dffc4ee990ea"
-  }
+  },
+  "restart_variant": {
+    "file": "dmrg_restart.py",
+    "source_sha256": "d6d52999af2b857fdd37409b54f6500a060e509c63082fa4e6156638bb8458b2",
+    "changes": [
+      "optional initial MPS with dimension check",
+      "count local eigensolves hitting their maximum iteration count"
+    ],
+    "sha256": "ce272968e21c0d08be6c7f9a0e1442b7bd82fc9186c9f2579abbec7beb637775"
+  },
+  "environment": {
+    "python": "3.12.3",
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "rational_worker_threads": {
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1"
+    }
+  },
+  "contribution_scripts_final_sha256": {
+    "analyse.py": "314aff773ecbb5689449775331aa76478eecf41c9d9ff7089dea6a27b8067839",
+    "check_ed.py": "6eb481b40399a3bfa99542b73cf2d8707b24b62acdca38b477b85c67806912a8",
+    "check_local_solver.py": "6cb2b9db22ca934c1ef5a370ee3c9f67c8b1e1e9eaa3c1739ad9bee5e72b08fc",
+    "controls.py": "c61ed8ba31ad0383f439adcce8db83eff282363220867d61aa10edff3d5395a2",
+    "dmrg_restart.py": "ce272968e21c0d08be6c7f9a0e1442b7bd82fc9186c9f2579abbec7beb637775",
+    "full_chain.py": "d6494da04969aed0389c1ff8e82147266959c9ce330b5343e308dbcd6d36ec0d",
+    "rational_analyse.py": "d9cb1fe7c8a0faafd99a8470ab86a12fd91384623de7f6db26d883c957fd744e",
+    "rational_campaign.py": "bf151266d05825b8ebb1969366c2c420abd3e2e0caf524944f1dbb2f09b09d4a",
+    "rational_continue.py": "7761734e0cf9bb6da4a8f6eb3f6d70b8cc3e5234816fe8b0f43dded47a5b0965",
+    "run_campaign.py": "383f90727a20ab441a8e8b61b39fd97814fce5ea092ce4fcc351c08239773830",
+    "state_diagnostics.py": "1fab4deb682564dd6c93799f033f2ad297dfa25dc3ad2b92cdfe0187a4097b8f"
+  },
+  "final_status": "All registered production runs and bounded continuations finished; rational local residual target failed; no counterexample established."
 }

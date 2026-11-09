@@ -108,6 +108,9 @@ norms are around 1e-14, which verifies normalization, not optimization.
 Recovering c=2 would require about **.1402** additional central entropy
 at L=128. No error bound establishes or excludes that correction.
 See `REVIEW.md` for all sector pairings and convergence measurements.
+The [next-test protocol](../d2_priority_audit_20261109/NEXT_STEPS.md)
+therefore keeps this Hamiltonian fixed, resolves local solver error first,
+and then compares larger bond dimensions with saved state checkpoints.
 
 The nearby exact rational simplification is
 
@@ -124,6 +127,14 @@ to zero would change the mechanism. This is a test candidate, not an
 established counterexample. Independent Davidson results and their
 measured local residuals are recorded in
 [`SIMPLE_PARITY_CANDIDATE.md`](../d2_dmrg_priority_20261109/SIMPLE_PARITY_CANDIDATE.md).
+Both independent sectors are complete at L=32 and 64. Their lower computed
+energies give Sbar=1.35324023 and 1.59917937, hence c_eff=**2.12889**.
+The L=64 profile fits span 2.05–2.37, reproducing the intermediate-size
+signal with a different solver and rational coefficients. The registered
+local residual target 1e-8 fails: maxima are about 1.1e-6 at L=32 and
+1.18e-5/2.16e-5 at L=64. Thus this is useful replication, not a converged
+central-charge determination, and it does not reverse the nearby
+unrounded model's negative L=128 test. All scheduled runs are complete.
 
 ## Original V=40 field scan
 

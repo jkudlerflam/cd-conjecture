@@ -1,0 +1,28 @@
+[
+  {
+    "file": "contrib/d2_dmrg_priority_20261109/results/rational_even_continued_32.json",
+    "L": 32,
+    "parity": "even",
+    "norm": 1.0000000000000004,
+    "N": 8.009720779343644,
+    "N2": 64.19235789050363,
+    "Nvariance": 0.03673092745428619,
+    "density_central_half_mean": 0.2161025977468009,
+    "density_four_site_smoothed_range": 0.07959723717373926,
+    "density_four_site_relative_range": 0.3847305413964819,
+    "N_from_profiles_difference": -1.7763568394002505e-15
+  },
+  {
+    "file": "contrib/d2_dmrg_priority_20261109/results/rational_odd_continued_32.json",
+    "L": 32,
+    "parity": "odd",
+    "norm": 1.000000000000006,
+    "N": 9.0048481063619,
+    "N2": 81.11974929443316,
+    "Nvariance": 0.03245987578367249,
+    "density_central_half_mean": 0.2549519557663807,
+    "density_four_site_smoothed_range": 0.09068787377254175,
+    "density_four_site_relative_range": 0.37037639672263345,
+    "N_from_profiles_difference": 2.4868995751603507e-14
+  }
+]

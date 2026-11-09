@@ -1,0 +1,43 @@
+[
+  {
+    "file": "contrib/d2_dmrg_priority_20261109/results/rational_even_10.json",
+    "L": 10,
+    "parity": "even",
+    "norm": 0.9999999999999988,
+    "N": 3.992565827776772,
+    "N2": 15.956002495760153,
+    "Nvariance": 0.015420606629332312,
+    "density_central_half_mean": 0.4176386000196322,
+    "density_four_site_smoothed_range": 0.1412390513575903,
+    "density_four_site_relative_range": 0.32994262847681677,
+    "N_from_profiles_difference": 4.440892098500626e-16,
+    "dense_number_variance_error": 0.0
+  },
+  {
+    "file": "contrib/d2_dmrg_priority_20261109/results/rational_odd_10.json",
+    "L": 10,
+    "parity": "odd",
+    "norm": 1.0000000000000002,
+    "N": 2.9985291776452496,
+    "N2": 9.001619692311333,
+    "Nvariance": 0.010442463121435708,
+    "density_central_half_mean": 0.2711611748173744,
+    "density_four_site_smoothed_range": 0.08491292656315935,
+    "density_four_site_relative_range": 0.30882421789098335,
+    "N_from_profiles_difference": 1.7763568394002505e-15,
+    "dense_number_variance_error": -7.105427357601002e-15
+  },
+  {
+    "file": "contrib/d2_dmrg_priority_20261109/results/rational_odd_32.json",
+    "L": 32,
+    "parity": "odd",
+    "norm": 1.0000000000000084,
+    "N": 9.004848195787735,
+    "N2": 81.11975087540273,
+    "Nvariance": 0.03245984622110143,
+    "density_central_half_mean": 0.2549518921683325,
+    "density_four_site_smoothed_range": 0.09068802716902058,
+    "density_four_site_relative_range": 0.37037712438247794,
+    "N_from_profiles_difference": 6.039613253960852e-14
+  }
+]

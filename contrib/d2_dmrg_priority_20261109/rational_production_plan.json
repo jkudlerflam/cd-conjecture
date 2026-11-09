@@ -1,0 +1,34 @@
+{
+  "couplings": {
+    "Jx": 0.50025,
+    "Jy": -0.49975,
+    "D": 0.00625,
+    "Jz": 10,
+    "hz": -19.9759,
+    "Kxz": 0.0
+  },
+  "stage": "production",
+  "tasks": [
+    [
+      32,
+      "even",
+      "production"
+    ],
+    [
+      32,
+      "odd",
+      "production"
+    ],
+    [
+      64,
+      "even",
+      "production"
+    ],
+    [
+      64,
+      "odd",
+      "production"
+    ]
+  ],
+  "criterion": "independent parity validation, entropy/energy convergence; no CFT claim from short chains"
+}

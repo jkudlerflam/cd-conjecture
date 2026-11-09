@@ -1,0 +1,3 @@
+  sweep 0 chi=32 E=-21.199046659742 trunc=4.16e-29 mv/solve=4.2 (max 34) res_max=9.3e-10
+  sweep 1 chi=32 E=-21.199046659742 trunc=9.86e-32 mv/solve=0.6 (max 1) res_max=8.1e-10
+done contrib/d2_dmrg_priority_20261109/results/rational_even_restart_10.json E=-109.9821466597 Sbar=0.5683 c_prof=2.179 trunc=9.9e-32 n_mid=0.3390 N=3.993 emid=-10.0010971654 t=0s

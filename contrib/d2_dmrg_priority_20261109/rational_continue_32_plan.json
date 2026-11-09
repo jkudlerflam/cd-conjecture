@@ -1,0 +1,11 @@
+{
+  "L": 32,
+  "chi": 96,
+  "parities": [
+    "even",
+    "odd"
+  ],
+  "residual": 1e-08,
+  "sweeps": 2,
+  "record_note": "Consolidated after completion of two separately launched parity continuations; logs preserve each invocation."
+}

@@ -38,7 +38,11 @@ c=2.15 reading from L=32 to 64, but **its L=128 follow-up does not sustain
 c≈2**. Every 64→128 parity pairing gives .74–.93, and profile fits also
 fall. The larger states are incompletely optimized; physical crossover
 versus numerical bias remains unresolved. A nearby [rational simplification](contrib/d2_dmrg_priority_20261109/SIMPLE_PARITY_CANDIDATE.md)
-is under independent test. No nearest-neighbour d=2 counterexample is established.
+independently gives 2.13 at 32→64, with both parity sectors computed;
+its strict local residual target also fails. No nearest-neighbour d=2
+counterexample is established. The next decisive test is improved
+optimization at the existing unrounded L=128 Hamiltonian, then increasing
+bond dimension at fixed parameters.
 
 ## A replacement bound
 

@@ -1,0 +1,8 @@
+  sweep 0 chi=16 E=-21.548897471532 trunc=0.00e+00 mv/solve=56.2 (max 61) res_max=8.6e-02
+  sweep 1 chi=32 E=-22.551620219700 trunc=4.05e-09 mv/solve=57.1 (max 61) res_max=6.0e-02
+  sweep 2 chi=64 E=-22.559185904967 trunc=6.03e-10 mv/solve=56.4 (max 61) res_max=1.1e-02
+  sweep 3 chi=96 E=-22.560031632617 trunc=3.21e-09 mv/solve=55.3 (max 61) res_max=4.9e-03
+  sweep 4 chi=96 E=-22.560065819044 trunc=1.56e-08 mv/solve=55.3 (max 61) res_max=9.6e-04
+  sweep 5 chi=128 E=-22.560084891831 trunc=4.09e-09 mv/solve=336.4 (max 401) res_max=1.3e-04
+  sweep 6 chi=128 E=-22.560084518311 trunc=6.39e-09 mv/solve=321.9 (max 401) res_max=2.2e-05
+done /Users/pace/Documents/GitHub/cd-conjecture/contrib/d2_dmrg_priority_20261109/results/rational_odd_64.json E=-650.0417845183 Sbar=1.5815 c_prof=2.286 trunc=6.4e-09 n_mid=0.2070 N=15.024 emid=-10.0011375943 t=1480s

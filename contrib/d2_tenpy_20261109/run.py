@@ -150,7 +150,7 @@ def plain(x):
     if isinstance(x,(list,tuple)): return [plain(v) for v in x]
     if isinstance(x,np.ndarray): return plain(x.tolist())
     if isinstance(x,np.generic): return plain(x.item())
-    if isinstance(x,complex): return [x.real,x.imag]
+    if isinstance(x,complex): return plain([x.real,x.imag])
     if isinstance(x,float) and not np.isfinite(x): return None
     if hasattr(x,'eps') and hasattr(x,'ov'):
         return dict(eps=plain(x.eps),ov=plain(x.ov))
@@ -254,5 +254,5 @@ if __name__=='__main__':
     args=vars(ap.parse_args());out=Path(args.pop('out'))
     logging.basicConfig(level=logging.WARNING)
     rec,_,_=run(args)
-    out.parent.mkdir(parents=True,exist_ok=True);out.write_text(json.dumps(rec,indent=2)+'\n')
+    out.parent.mkdir(parents=True,exist_ok=True);out.write_text(json.dumps(rec,indent=2,allow_nan=False)+'\n')
     print(json.dumps({k:rec[k] for k in ('name','L','hz','chi','E_shifted','bulk_density','S_middle3','profile_fits','runtime_seconds')}),flush=True)

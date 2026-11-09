@@ -2412,6 +2412,16 @@ microscopic Hamiltonian. This is AI-assisted research without human review.
   sectors pass independent L=10 ED checks. Independent larger-size
   Davidson results and residual limitations are retained in
   `contrib/d2_dmrg_priority_20261109/SIMPLE_PARITY_CANDIDATE.md`.
+- [independent intermediate-size replication, incomplete convergence]
+  Both parity sectors of that rational bond are complete at L=32 and 64.
+  The selected three-cut entropies are 1.35324023 and 1.59917937, giving
+  c_eff=2.12889; L=64 profile fits range 2.05–2.37. This reproduces the
+  shorter-size signal with an independent Davidson solver. Its registered
+  local residual target 1e-8 fails: final maxima are approximately 1.1e-6
+  at L=32 and 1.18e-5/2.16e-5 at L=64. The result is not a converged c
+  determination and does not undo the nearby unrounded L=128 downturn.
+  An exact integer 4×4 bond representation, all sector data and source
+  hashes are provided. All local runs in this contribution are complete.
 - [numerical follow-up] C183's transverse-DM point at L=128 reads
   c(64 to 128)=1.10032 and central-half c_profile=.98583. A different
   L=64 initialization reproduces its energy within 6.8e-8 and entropy
@@ -2429,8 +2439,8 @@ microscopic Hamiltonian. This is AI-assisted research without human review.
   not recover a c≈2 signal; details are in `INFINITE_LIQUID_BRANCH.md`.
 - [bounded original-point field scan] At hz=-19.9771875, the original
   V=40 transverse-DM chain has rapidly growing central entropy from
-  L=32 to64 but density nearly halves (.1344→.0708), while L=64
-  profile fits vary from4.05 to14.58. These inhomogeneous, unconverged
+  L=32 to 64 but density nearly halves (.1344→.0708), while L=64
+  profile fits vary from 4.05 to 14.58. These inhomogeneous, unconverged
   onset data cannot support a CFT interpretation. Two other registered
   L=32 field points are retained in the same raw-results folder.
 

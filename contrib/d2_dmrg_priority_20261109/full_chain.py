@@ -144,6 +144,7 @@ def main():
     ap.add_argument('--cp', default=None, help='C183: JSON dict of all couplings (Jx Jy D Jz hz Jxz Kxz hx); overrides the rest')
     ap.add_argument('--tol', type=float, default=1e-10)
     ap.add_argument('--res', type=float, default=1e-8)
+    ap.add_argument('--resume', default=None, help='resume saved MPS checkpoint with the same physical couplings and parity')
     ap.add_argument('--old', action='store_true', help='use dmrg.py (ARPACK) instead of dmrg2.py')
     ap.add_argument('--cutoff', type=float, default=1e-12)
     ap.add_argument('--seed', type=int, default=0)
@@ -179,15 +180,25 @@ def main():
     gauge = (not a.old) and max(np.abs(x.imag).max() for x in hg) < 1e-14
     if not gauge:
         th = np.zeros(L)
+    restart_kw={}
+    solver=D2.dmrg
+    if a.resume is not None:
+        import dmrg_restart as DR
+        initial=np.load(a.resume)
+        if not np.allclose(initial['gauge_angles'],th):
+            raise ValueError('checkpoint gauge differs from current model')
+        restart_kw={'initial_M':[initial[f'M{j}'] for j in range(L)]}
+        solver=DR.dmrg
     if a.old:
+        if a.resume is not None: raise ValueError('--old does not support restart')
         r = D.dmrg(hs, L, chis=tuple(a.chis), cutoff=a.cutoff, seed=a.seed, verbose=True, lanczos_tol=a.tol, edge_field=edge)
         hl = [h] * (L - 1)
     elif gauge:
         hgl = [hg[j % 2].real.copy() for j in range(L - 1)]
-        r = D2.dmrg(hgl, L, chis=tuple(a.chis), cutoff=a.cutoff, seed=a.seed, verbose=True, res_tol=a.res, edge_field=edge.real.copy(), parity_lam=plam)
+        r = solver(hgl, L, chis=tuple(a.chis), cutoff=a.cutoff, seed=a.seed, verbose=True, res_tol=a.res, edge_field=edge.real.copy(), parity_lam=plam, **restart_kw)
         hl = [x + shift * np.eye(4) for x in hgl]
     else:
-        r = D2.dmrg(hs, L, chis=tuple(a.chis), cutoff=a.cutoff, seed=a.seed, verbose=True, res_tol=a.res, edge_field=edge, parity_lam=plam)
+        r = solver(hs, L, chis=tuple(a.chis), cutoff=a.cutoff, seed=a.seed, verbose=True, res_tol=a.res, edge_field=edge, parity_lam=plam, **restart_kw)
         hl = [h] * (L - 1)
     S = np.asarray(r['S'])
     cpf, csm, mid = DC.profile_fits(S, L)
@@ -217,6 +228,8 @@ def main():
                Xmid=float(np.mean(Xprof[c-w:c+w])),Ymid=float(np.mean(Yprof[c-w:c+w])),
                n_mid=float(np.mean((1 - Z[c - w:c + w]) / 2)), N=float(np.sum((1 - Z) / 2)),
                ebond=e.tolist(), emid=emid, t_dmrg=time.time() - t0, gauge=bool(gauge), stats=r.get('stats'))
+    out['E_expectation']=float(np.sum(e)+cp['hz']*(Z[0]+Z[-1])/2+cp.get('hx',0.)*(Xprof[0]+Xprof[-1])/2)
+    out['energy_expectation_minus_solver']=out['E_expectation']-out['E']
     # Save a local, git-ignored checkpoint and a cheap direct hopping-response profile.
     checkpoint_dir=os.environ.get("CD_DMRG_CHECKPOINT_DIR","/private/tmp/cd-conjecture-mps")
     os.makedirs(checkpoint_dir,exist_ok=True)
@@ -230,6 +243,7 @@ def main():
     Pprofile=np.array([Pvalues[j%len(Pop)][j] for j in range(L-1)])
     out['P_hop']=Pprofile.tolist();out['P_hop_mid']=float(np.mean(Pprofile[c-w:c+w]))
     out['mps_checkpoint']=statefile
+    out['resume_checkpoint']=a.resume
     if not a.nocorr:
         hp = hop_profiles(M, (1, 2))
         for rr in (1, 2):  # undo the gauge: physical <s+_i s-_j> = exp(-i th_i + i th_j) <...>'

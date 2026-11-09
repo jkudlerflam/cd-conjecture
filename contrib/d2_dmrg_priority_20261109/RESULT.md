@@ -2,11 +2,13 @@
 
 AI assistance: GPT-6 Codex, 2026-11-09. Standard: numerical physics. No counterexample is established by this contribution.
 
+The later, simpler parity-preserving rational model is documented separately in [SIMPLE_PARITY_CANDIDATE.md](SIMPLE_PARITY_CANDIDATE.md), including both parity sectors, convergence limits and the nearby larger-size downward drift. The transverse-DM tests below did not produce a stable c>1 signal.
+
 ## Model and independent validation
 
 We use C183's full-chain-retuned V/Delta=16 bond, with Jx=0.4979983, Jy=-0.5020017, Dz=0.0152122, Jz=4 and Gamma_xz=-Gamma_zx=sqrt(0.3)/4. The longitudinal field is scanned. The actual two-state Pauli chain is used with uniform field on every open-chain site; no effective-space projection or particle-number constraint is imposed.
 
-The numerical solver is C183's two-site Davidson DMRG unchanged. `full_chain.py` adds physical X and Y profiles to the existing Z, entropy and energy outputs. `source_manifest.json` records the source files and hashes. All runs use two BLAS threads.
+The numerical solver is C183's two-site Davidson DMRG unchanged. `full_chain.py` adds physical X and Y profiles to the existing Z, entropy and energy outputs. `source_manifest.json` records the source files and hashes. Initial validation and size tests used at most two BLAS threads; parallel campaigns use one per worker.
 
 [numerical] At L=12, hz=-7.9463, independently assembled sparse Pauli ED and DMRG agree in energy to 8.3e-12, all cut entropies to 2.6e-10, and all Y expectations to 4.6e-10. The open-chain entropy is Sbar=0.105790 and central raw density is 0.062451. The central Y response is -0.323598, while X is zero within numerical error. This Y response is not merely an open-boundary effect: periodic ED at the same parameters has uniform Y=-0.400024, X approximately zero, and N=2.99039 on twelve sites. The periodic gap is 0.00143059. A second periodic ED at L=14 gives Y=-0.408604, N=2.99030 and gap 0.00191003, so substantial Y persists with a different allowed-momentum grid. These are finite-system statements and do not establish the relevance of any induced bulk source.
 
@@ -47,7 +49,7 @@ The largest energy error is 1.2e-6 for the two-leg L=48 control, whose discarded
 
 ## Matched size tests
 
-Selected before their output: hz=-7.9450, which has raw central density near 0.17 at L=24, and hz=-7.9440, the first ladder point with the broad profile estimate above 1.2. Both are being continued to L=48 with chi=16,32,48,64,64,96,96. At hz=-7.9450, L=48 has Sbar=0.4636847 and the matched 24-to48 slope is 1.20918. Its central density rises from 0.17276 to 0.23968 and Y=-0.42421. Fitted-window slopes are 1.353, 1.302, 0.257, -0.535, so this is not a stable c>1 estimate. The final local residual is 2.14e-9, discarded weight 8.94e-12 and last-sweep energy movement 1.1e-10; the run took 358 seconds. At hz=-7.9440, L=48 has Sbar=0.501014 and the matched size-pair slope is 0.87940. Its central density is 0.26721, Y=-0.41759, final residual 2.77e-9 and discarded weight 8.18e-12. Its nested profile slopes are 1.302,1.339,0.022,-0.937. This run took 375 seconds. Neither field produces a stable c>1 reading on these sizes. No positive conclusion is drawn from the L=24 profile readings alone.
+Selected before their output: hz=-7.9450, which has raw central density near 0.17 at L=24, and hz=-7.9440, the first ladder point with the broad profile estimate above 1.2. Both were continued to L=48 with chi=16,32,48,64,64,96,96. At hz=-7.9450, L=48 has Sbar=0.4636847 and the matched 24-to48 slope is 1.20918. Its central density rises from 0.17276 to 0.23968 and Y=-0.42421. Fitted-window slopes are 1.353, 1.302, 0.257, -0.535, so this is not a stable c>1 estimate. The final local residual is 2.14e-9, discarded weight 8.94e-12 and last-sweep energy movement 1.1e-10; the run took 358 seconds. At hz=-7.9440, L=48 has Sbar=0.501014 and the matched size-pair slope is 0.87940. Its central density is 0.26721, Y=-0.41759, final residual 2.77e-9 and discarded weight 8.18e-12. Its nested profile slopes are 1.302,1.339,0.022,-0.937. This run took 375 seconds. Neither field produces a stable c>1 reading on these sizes. No positive conclusion is drawn from the L=24 profile readings alone.
 
 ## Actual-density real-hopping scan
 
@@ -63,7 +65,7 @@ At fixed Jx+Jy=-0.0058, a three-field follow-up gives:
 | -7.9455 | 0.14673 | 0.32367 | -0.07888 | -0.37603 |
 | -7.9450 | 0.16787 | 0.34953 | -0.08939 | -0.38205 |
 
-All final local residuals are below 1e-9. The last point has a raw density close to the original matched point and slightly larger entropy, so one additional L=48 comparison was selected before its output. It uses the same chi schedule with residual target1e-8 and saves an MPS checkpoint for further convergence work. That final comparison is pending. No further parameter grid is scheduled by this contribution.
+All final local residuals are below 1e-9. The last point has a raw density close to the original matched point and slightly larger entropy, so one additional L=48 comparison was selected before its output. It uses the same chi schedule with residual target1e-8 and saves an MPS checkpoint for further convergence work. That final comparison is complete: L=48 has Sbar=0.46174198, central density 0.23802425, central XX+YY=-0.07712482 and Y=-0.45142023. The matched size-pair slope is 0.97129156. Final local residual is 1.00e-8, discarded weight 1.52e-11, last-sweep energy movement 1.86e-10 and runtime 249 seconds. A second seed at L=24 agrees in energy to 2.9e-14 and entropy to 6.9e-11. This hopping adjustment does not produce a new c>1 signal. No further transverse-DM parameter grid is scheduled by this contribution.
 
 ## Reproduction
 

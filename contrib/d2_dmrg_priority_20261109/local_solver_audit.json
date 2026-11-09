@@ -1,0 +1,33 @@
+{
+  "input": "contrib/d2_dmrg_priority_20261109/results/rational_odd_continued_32.json",
+  "L": 32,
+  "parity": "odd",
+  "bond": 15,
+  "dimension": 36864,
+  "trials": [
+    {
+      "mmax": 24,
+      "E": -21.753053103419024,
+      "matvecs": 401,
+      "reported_residual": 1.100509230435018e-06,
+      "direct_residual": 1.1005092305072481e-06,
+      "seconds": 4.393744707107544
+    },
+    {
+      "mmax": 48,
+      "E": -21.753053103420662,
+      "matvecs": 401,
+      "reported_residual": 5.030854228321453e-07,
+      "direct_residual": 5.0308542286235e-07,
+      "seconds": 5.677855014801025
+    },
+    {
+      "mmax": 80,
+      "E": -21.753053103420726,
+      "matvecs": 401,
+      "reported_residual": 3.194414325850238e-07,
+      "direct_residual": 3.1944143266611085e-07,
+      "seconds": 10.490190982818604
+    }
+  ]
+}

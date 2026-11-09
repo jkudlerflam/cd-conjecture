@@ -1,4 +1,4 @@
-# Microscopic transverse-DM chain: independent Davidson DMRG checks
+# Microscopic qubit chains: independent Davidson DMRG checks
 
 AI assistance: GPT-6 Codex, 2026-11-09. This work targets the literal nearest-neighbour qubit Hamiltonian, not a projected constrained model.
 
@@ -45,3 +45,9 @@ H = sum_j [10 Z_j Z_(j+1) + (X_j X_(j+1)-Y_j Y_(j+1))/2
 ```
 
 It has no transverse DM term and conserves parity. First validate both parity selectors against sparse ED at L=10. Then run L=32 and64 in each parity using the independent Davidson solver, chi96 and128 respectively, local residual target1e-8, repeated final sweeps. Measure the selected parity directly and remove the selector energy using its measured expectation. Compare the lower-energy parity at each length; never form a ground-state size slope by silently keeping the same parity when the minimum switches. The exact coefficient simplification and the new sizes are set before this stage's output. A two-size reading alone remains insufficient for a thermodynamic CFT claim.
+
+Optional continuation uses `full_chain.py --resume CHECKPOINT` and the local `dmrg_restart.py` copy. Only optional MPS initialization and max-iteration-hit diagnostics are added to the C183 solver; the numerical updates are unchanged. The restart path is separately checked against exact L=10 parity-sector results. Checkpoints live outside Git in `/private/tmp/cd-conjecture-mps`, while observables and logs are committed.
+
+Before any rational L=64 entropy output (while its final two chi128 sweeps run), register a secondary shell-smoothing diagnostic: integrate the piecewise-linear entropy profile over cut coordinates l in [3L/8,5L/8], divide by L/4, and form the same six-times-log-size slope. Endpoint half weights implement the trapezoid when boundaries are integer. A central-half [L/4,3L/4] average is also retained for window sensitivity. Preserve the primary central-three-cut estimator and do not choose the largest result. For an exact CFT profile the fixed-fraction geometric average contributes an L-independent constant, apart from quadrature error. No additional optimization is involved.
+
+Final rational stage status: both parities at L=32,64 and the bounded L=32 continuations are complete. The lower computed branches give central-three-cut c_eff=2.12889, but the registered 1e-8 local residual target fails (maxima around1e-6 at32 and1e-5 at64). The nearby unrounded128 data drift toward c≈1. See SIMPLE_PARITY_CANDIDATE.md for both the positive intermediate-size signal and its limitations. No further optimization remains running.

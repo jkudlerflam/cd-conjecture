@@ -153,5 +153,7 @@ limitation. More environment convergence and further bond dimensions would be
 needed for an asymptotic statement.
 
 No further transverse-DM infinite jobs remain running. This point now has useful
-provisional evidence consistent with c approximately one; the newly promising
-parity family is the higher-priority c>1 target.
+provisional evidence consistent with c approximately one. The parity family's
+initial c approximately two signal subsequently fell at L=128 in the full
+microscopic test; resolving that fixed-Hamiltonian convergence question is the
+next priority, rather than treating the shorter-size signal as confirmed.
