@@ -1,0 +1,45 @@
+Please run a DMRG test for my c–d conjecture project on this machine, then report the results.
+
+The package is in my IAS Dropbox, at
+  Jonah Kudler-Flam/Claude/Projects/Modular c-Theorem/notes/cd_conjecture/codex/work_C187q/desktop_run/
+(the full path depends on where Dropbox lives on this machine, usually ~/IAS Dropbox/...). Read its README.txt first.
+
+What it is. This is a quick test of a candidate counterexample to c ≤ 1 for nearest-neighbour qubit chains. The test runs C173's effective model (hard-core particles with no two adjacent, NN hop w, NNN hop −1, interactions V2 and V3) with a blockade-exact, N-conserving DMRG (fibdmrg.py, which is validated, so do not modify it). There are 18 runs:
+- fit8: couplings fitted from the full chain at V/Delta = 8 (V2 = −1.7334, V3 = −0.4930), |w| = 1, phi = pi/2, density 1/6. These come with N − 1 and N + 1 for the parity gap.
+- sw: the bare couplings (V2 = −2, V3 = −2/3), where the two valleys bind into pairs.
+- c1 and c2: known c = 1 and c = 2 controls.
+The sizes are L = 48, 96 and 144.
+
+How to run it.
+1. Copy the whole desktop_run folder to a local directory OUTSIDE Dropbox (for example ~/c187q_run). The runs write large checkpoint files to out/ckpt/, which must not sync through Dropbox.
+2. Check that python3 has numpy and scipy. If anything is missing, ask me before installing.
+3. In the local copy, run `bash run_desktop.sh` in the background. By default it uses half the cores, with 2 threads per task. Leave enough cores free that the machine stays usable. It runs the smallest sizes first.
+4. While it runs, check progress now and then (tail logs/*.log). Run `python3 summarize.py` whenever new sizes finish.
+5. Whenever a size finishes, and at the end, copy back into the Dropbox desktop_run folder:
+   - out/*.jsonl, but NOT out/ckpt
+   - logs/
+   - the output of summarize.py, saved as summary.txt
+   This lets my other Claude session read the results.
+
+How to read the output. summarize.py prints two things.
+- Two-size central-charge estimates c = 6 ΔS̄ / ln(L2/L1) for each family, over three cut windows. At these sizes the controls should read roughly 0.9 to 1.0 for c1 and 1.8 to 2.0 for c2. Judge fit8 against the controls, not against the ideal values.
+  - If fit8 reads close to c2 and well above sw, that supports a real c = 2.
+  - If fit8 reads close to c1 or sw, that argues against it.
+- The parity gap E(N+1) + E(N−1) − 2E(N) at the fitted point, with L times the gap.
+  - If L × gap stays roughly constant as L grows, the gap closes like 1/L, which is consistent with c = 2.
+  - If the gap levels off at a nonzero value, the system is pairing (c = 1), and the entropy reading is a crossover.
+Also check the truncation error in the last sweep. Anything above about 1e-6 means that size is not converged, so say so.
+
+Report back with:
+- a table of the summarize.py output;
+- the fit8 readings next to the controls and sw;
+- the parity-gap trend;
+- the convergence state of each size;
+- a plain verdict: "supports c = 2", "argues against", or "inconclusive", with the reason.
+This is the effective model with fitted couplings, not the full qubit chain. Do not overstate it.
+
+Rules.
+- Do not modify fibdmrg.py, run.py or the configs.
+- Do not commit or push anything. Do not edit any other file in the project.
+- No probabilities in any file.
+- Write in plain prose: commas, not em-dashes.

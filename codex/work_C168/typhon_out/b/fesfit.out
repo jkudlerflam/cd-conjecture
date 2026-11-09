@@ -1,0 +1,66 @@
+== fes/p10193_n2.json  n=2  exact_e=None
+  chi=  16 e=-0.9677154115 S=1.16086(spread 5.7e-02) xi=  1456.05 1/delta=    20.33 arg1/pi=+1.0000 err=2e-01 it=600 xi0=11.0 xipi=1456.0 xiic=20.1
+  chi=  24 e=-0.9682276252 S=1.19745(spread 5.4e-02) xi= 20940.22 1/delta=    25.53 arg1/pi=-1.0000 err=3e-01 it=600 xi0=14.7 xipi=20940.2 xiic=25.5  c_pair=0.082
+  chi=  32 e=-0.9756785462 S=1.91744(spread 9.9e-02) xi= 16916.33 1/delta=   261.37 arg1/pi=-0.6667 err=4e-01 it=600 xi0=nan xipi=257.4 xiic=16916.3  c_pair=-20.244
+  chi=  48 e=-110990060054.4106445312 S=1.91780(spread 9.9e-02) xi= 18296.76 1/delta=   263.42 arg1/pi=+0.6667 err=4e-01 it=600 xi0=nan xipi=259.7 xiic=18296.8  c_pair=0.027
+  chi=  64 e=-0.9757572754 S=1.91886(spread 9.8e-02) xi= 20927.41 1/delta=   267.35 arg1/pi=+0.6667 err=4e-01 it=600 xi0=nan xipi=264.0 xiic=20927.4  c_pair=0.048
+  chi=  96 e=-0.9757691053 S=1.91950(spread 9.8e-02) xi= 22137.39 1/delta=   269.24 arg1/pi=-0.6667 err=4e-01 it=600 xi0=nan xipi=266.0 xiic=22137.4  c_pair=0.068
+  chi= 128 e=-0.9757700272 S=1.91956(spread 9.8e-02) xi= 22245.33 1/delta=   269.41 arg1/pi=+0.6667 err=4e-01 it=600 xi0=nan xipi=266.2 xiic=22245.3  c_pair=0.075
+  chi= 192 e=-0.9758555081 S=1.94439(spread 9.6e-02) xi= 60318.02 1/delta=   321.72 arg1/pi=-0.6667 err=4e-01 it=600 xi0=nan xipi=320.0 xiic=60318.0  c_pair=0.149
+  chi= 256 e=-0.9758560599 S=1.94475(spread 9.6e-02) xi= 61008.33 1/delta=   322.45 arg1/pi=-0.6667 err=4e-01 it=600 xi0=nan xipi=320.8 xiic=61008.3  c_pair=0.192
+  c_ls3=0.150  c_d3=0.840  c_ls4=0.149  c_d4=0.840  c_ic3=0.150  c_kappa=0.815  kappa=1.521
+== fes/p10193_n4.json  n=4  exact_e=None
+  chi=  16 e=-0.9676631118 S=0.62881(spread 3.9e-02) xi=    13.38 1/delta=    38.87 arg1/pi=-0.0000 err=3e-01 it=600 xi0=13.4 xipi=nan xiic=10.0
+  chi=  24 e=-0.9680306977 S=0.60604(spread 5.1e-02) xi=    14.62 1/delta=    32.69 arg1/pi=-0.0000 err=4e-01 it=600 xi0=14.6 xipi=nan xiic=10.1  c_pair=-1.541
+  chi=  32 e=-0.9681390444 S=0.57926(spread 7.2e-02) xi=    15.68 1/delta=    30.79 arg1/pi=-0.0000 err=5e-01 it=600 xi0=15.7 xipi=nan xiic=10.4  c_pair=-2.304
+  chi=  48 e=-0.9682114369 S=0.53038(spread 1.0e-01) xi=    17.13 1/delta=    30.64 arg1/pi=-0.0000 err=6e-01 it=600 xi0=17.1 xipi=nan xiic=10.8  c_pair=-3.299
+  chi=  64 e=-0.9682255738 S=0.52659(spread 1.0e-01) xi=    17.18 1/delta=    31.62 arg1/pi=+0.0000 err=6e-01 it=600 xi0=17.2 xipi=nan xiic=10.8  c_pair=-8.919
+  chi=  96 e=-0.9683379798 S=0.43862(spread 1.3e-01) xi=    18.09 1/delta=    29.55 arg1/pi=+0.0250 err=8e-01 it=600 xi0=18.1 xipi=nan xiic=11.2  c_pair=-10.165
+  chi= 128 e=-0.9683774032 S=0.43542(spread 1.3e-01) xi=    18.41 1/delta=    29.07 arg1/pi=-0.0259 err=8e-01 it=600 xi0=18.4 xipi=nan xiic=11.3  c_pair=-1.114
+  chi= 192 e=-0.9684138487 S=0.43169(spread 1.3e-01) xi=    18.66 1/delta=    28.68 arg1/pi=-0.0265 err=8e-01 it=600 xi0=18.7 xipi=nan xiic=11.3  c_pair=-1.642
+  chi= 256 e=-0.9684340303 S=0.42964(spread 1.3e-01) xi=    18.82 1/delta=    28.49 arg1/pi=-0.0269 err=8e-01 it=600 xi0=18.8 xipi=nan xiic=11.3  c_pair=-1.407
+  c_ls3=-1.558  c_d3=1.713  c_ls4=-1.379  c_d4=1.479  c_ic3=-6.171  c_kappa=nan  kappa=0.032
+== fes/p10540_n2.json  n=2  exact_e=None
+  chi=  16 e=-0.9347545559 S=1.69113(spread 9.6e-03) xi=5788224.03 1/delta=    55.83 arg1/pi=-0.6667 err=2e-01 it=600 xi0=nan xipi=nan xiic=5788224.0
+  chi=  24 e=-0.9354429281 S=1.79451(spread 2.1e-02) xi=8517446103772.99 1/delta=    32.19 arg1/pi=+0.6667 err=3e-01 it=600 xi0=nan xipi=nan xiic=8521475170047.2  c_pair=0.044
+  chi=  32 e=-0.9356046556 S=1.86733(spread 1.8e-02) xi=5425014.65 1/delta=   161.81 arg1/pi=+0.6667 err=3e-01 it=600 xi0=nan xipi=nan xiic=5425023.3  c_pair=-0.031
+  chi=  48 e=-0.9356853284 S=1.95585(spread 2.0e-02) xi=1435598182.05 1/delta=    86.93 arg1/pi=+0.6667 err=3e-01 it=600 xi0=nan xipi=nan xiic=1436173069.9  c_pair=0.095
+  chi=  64 e=-0.9357022375 S=1.95942(spread 2.0e-02) xi=26192893889.86 1/delta=    90.95 arg1/pi=+0.6667 err=3e-01 it=600 xi0=nan xipi=nan xiic=26144198462.8  c_pair=0.007
+  chi=  96 e=-0.9357038112 S=1.95962(spread 2.0e-02) xi=25178165767.41 1/delta=    91.23 arg1/pi=+0.6667 err=3e-01 it=600 xi0=nan xipi=nan xiic=29857096346.2  c_pair=-0.031
+  chi= 128 e=-83907445969.8668975830 S=1.95975(spread 2.0e-02) xi=32017002562.72 1/delta=    91.40 arg1/pi=+0.6667 err=3e-01 it=600 xi0=nan xipi=nan xiic=31627123703.5  c_pair=0.003
+  chi= 192 e=-0.9357062480 S=1.96100(spread 2.0e-02) xi=51271509021.21 1/delta=    92.86 arg1/pi=+0.6667 err=3e-01 it=600 xi0=nan xipi=nan xiic=51338576633.2  c_pair=0.016
+  chi= 256 e=-0.9357064384 S=1.96120(spread 2.0e-02) xi=57513747598.86 1/delta=    93.09 arg1/pi=-0.6667 err=3e-01 it=600 xi0=nan xipi=nan xiic=55867434878.6  c_pair=0.011
+  c_ls3=0.015  c_d3=0.474  c_ls4=0.012  c_d4=0.471  c_ic3=0.015  c_kappa=2.014  kappa=0.866
+== fes/p10540_n4.json  n=4  exact_e=None
+  chi=  16 e=-0.9348476389 S=1.71808(spread 4.7e-02) xi=4172897500457.11 1/delta=    18.70 arg1/pi=+0.6667 err=2e-01 it=600 xi0=nan xipi=14.1 xiic=4172897500457.1
+  chi=  24 e=-0.9354429281 S=1.81429(spread 5.7e-02) xi=1974829917722.40 1/delta=    32.19 arg1/pi=-0.6667 err=2e-01 it=600 xi0=nan xipi=24.5 xiic=1974829917722.4  c_pair=-0.772
+  chi=  32 e=-0.9356050291 S=1.88885(spread 5.6e-02) xi=426415.63 1/delta=   162.54 arg1/pi=+0.6667 err=2e-01 it=600 xi0=nan xipi=nan xiic=426415.6  c_pair=-0.029
+  chi=  48 e=81018347121.9235839844 S=1.97902(spread 5.3e-02) xi=33236897618968.45 1/delta=    87.28 arg1/pi=-0.6667 err=2e-01 it=600 xi0=nan xipi=66.4 xiic=33145167450746.8  c_pair=0.030
+  chi=  64 e=-0.9356987916 S=1.97953(spread 5.3e-02) xi=57738456761158.20 1/delta=    88.29 arg1/pi=-0.6667 err=2e-01 it=600 xi0=nan xipi=67.2 xiic=63655118408061.6  c_pair=0.005
+  chi=  96 e=-0.9356996832 S=1.97961(spread 5.3e-02) xi=55858600029399.50 1/delta=    88.43 arg1/pi=-0.6667 err=2e-01 it=600 xi0=nan xipi=67.3 xiic=55772131608301.4  c_pair=-0.015
+  chi= 128 e=-0.9357000142 S=1.97965(spread 5.3e-02) xi=58017386503965.74 1/delta=    88.50 arg1/pi=-0.6667 err=2e-01 it=600 xi0=nan xipi=67.3 xiic=61065757659259.0  c_pair=0.007
+  chi= 192 e=-0.9357008370 S=1.97979(spread 5.3e-02) xi=64567736593123.39 1/delta=    88.71 arg1/pi=-0.6667 err=2e-01 it=600 xi0=nan xipi=67.5 xiic=70922828777486.1  c_pair=0.008
+  chi= 256 e=-0.9357017675 S=1.98003(spread 5.3e-02) xi=68888713229374.60 1/delta=    89.06 arg1/pi=+0.6667 err=2e-01 it=600 xi0=nan xipi=67.7 xiic=75374052340926.8  c_pair=0.022
+  c_ls3=0.013  c_d3=0.357  c_ls4=0.011  c_d4=0.353  c_ic3=0.010  c_kappa=12.075  kappa=0.249
+== fes/p450_n2.json  n=2  exact_e=None
+  chi=  16 e=-0.8730878567 S=0.61638(spread 6.3e-02) xi=     8.88 1/delta=   149.92 arg1/pi=+0.0000 err=2e-01 it=600 xi0=8.9 xipi=1.6 xiic=8.4
+  chi=  24 e=-0.8732853124 S=0.65475(spread 5.3e-02) xi=     9.93 1/delta=   413.58 arg1/pi=+0.0000 err=2e-01 it=600 xi0=9.9 xipi=nan xiic=9.7  c_pair=2.051
+  chi=  32 e=-0.8732878447 S=0.65469(spread 5.3e-02) xi=     9.94 1/delta=   420.97 arg1/pi=+0.0000 err=2e-01 it=600 xi0=9.9 xipi=nan xiic=9.7  c_pair=-0.647
+  chi=  48 e=-0.8733188160 S=0.66125(spread 5.4e-02) xi=    10.39 1/delta=   344.57 arg1/pi=+0.0000 err=2e-01 it=600 xi0=10.4 xipi=nan xiic=10.1  c_pair=0.882
+  chi=  64 e=-0.8733204723 S=0.66140(spread 5.4e-02) xi=    10.41 1/delta=   340.17 arg1/pi=-0.0000 err=2e-01 it=600 xi0=10.4 xipi=nan xiic=10.1  c_pair=0.532
+  chi=  96 e=-0.8733430220 S=0.68449(spread 5.1e-02) xi=    12.03 1/delta=   200.33 arg1/pi=+0.0000 err=3e-01 it=600 xi0=12.0 xipi=nan xiic=11.3  c_pair=0.961
+  chi= 128 e=-0.8733448203 S=0.68401(spread 5.2e-02) xi=    12.04 1/delta=   204.74 arg1/pi=-0.0000 err=3e-01 it=600 xi0=12.0 xipi=nan xiic=11.4  c_pair=-2.248
+  chi= 192 e=-0.8733528813 S=0.67693(spread 5.9e-02) xi=    12.46 1/delta=   221.38 arg1/pi=-0.0000 err=4e-01 it=600 xi0=12.5 xipi=nan xiic=11.8  c_pair=-1.246
+  chi= 256 e=-0.8733535852 S=0.67657(spread 5.9e-02) xi=    12.47 1/delta=   219.71 arg1/pi=+0.0000 err=4e-01 it=600 xi0=12.5 xipi=nan xiic=11.8  c_pair=-2.420
+  c_ls3=-1.262  c_d3=-0.579  c_ls4=-1.281  c_d4=-0.513  c_ic3=-1.187  c_kappa=nan  kappa=0.053
+== fes/p450_n4.json  n=4  exact_e=None
+  chi=  16 e=-0.8784400389 S=1.38168(spread 1.3e-02) xi=9492323426.19 1/delta=     9.99 arg1/pi=+1.0000 err=1e-01 it=600 xi0=7.5 xipi=9492323426.2 xiic=30.2
+  chi=  24 e=-0.8785097749 S=1.46910(spread 8.6e-03) xi=30606464029.71 1/delta=    14.79 arg1/pi=-1.0000 err=8e-02 it=600 xi0=11.4 xipi=30606464029.7 xiic=50.6  c_pair=0.448
+  chi=  32 e=-0.8785296405 S=1.54103(spread 5.7e-03) xi=2117185.30 1/delta=    78.88 arg1/pi=+1.0000 err=8e-02 it=600 xi0=19.5 xipi=2117185.3 xiic=78.9  c_pair=-0.045
+  chi=  48 e=-0.8785866993 S=2.01411(spread 6.5e-04) xi=424840.14 1/delta=   235.03 arg1/pi=-0.6667 err=1e-02 it=600 xi0=nan xipi=234.9 xiic=424840.1  c_pair=-1.767
+  chi=  64 e=-0.8785970089 S=2.07338(spread 6.2e-04) xi=276364.28 1/delta=   333.89 arg1/pi=+0.6667 err=1e-02 it=600 xi0=nan xipi=333.4 xiic=276364.3  c_pair=-0.827
+  chi=  96 e=-0.8785995180 S=2.07345(spread 6.2e-04) xi=278839.94 1/delta=   334.73 arg1/pi=-0.6667 err=1e-02 it=600 xi0=nan xipi=334.3 xiic=278839.9  c_pair=0.045
+  chi= 128 e=-0.8786002788 S=2.07364(spread 6.2e-04) xi=280902.61 1/delta=   336.03 arg1/pi=-0.6667 err=1e-02 it=600 xi0=nan xipi=335.6 xiic=280902.6  c_pair=0.152
+  chi= 192 e=-0.8786003857 S=2.07369(spread 6.2e-04) xi=281339.86 1/delta=   336.36 arg1/pi=+0.6667 err=1e-02 it=600 xi0=nan xipi=335.9 xiic=281339.9  c_pair=0.207
+  chi= 256 e=-0.8786046967 S=2.11497(spread 6.0e-04) xi=415390.46 1/delta=   471.39 arg1/pi=-0.6667 err=1e-02 it=600 xi0=nan xipi=470.7 xiic=415390.5  c_pair=0.636
+  c_ls3=0.635  c_d3=0.733  c_ls4=0.631  c_d4=0.731  c_ic3=0.635  c_kappa=4.240  kappa=0.528
