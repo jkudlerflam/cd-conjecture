@@ -26,7 +26,7 @@ Typhon also has C173's and C175's effective-model runs.
 - C171 listed routes R3 (composite second bosons) and R4 that remain open.
 - STATUS notes that isolated multicritical points have not been inventoried.
 
-Five agents work in parallel. Your role is the section with your number, and you do only that.
+Six agents work in parallel (C181 to C186). Your role is the section with your number, and you do only that.
 
 ## Shared reading for every agent
 
@@ -146,3 +146,16 @@ The Fibonacci cusp exists because a dominant nearest-neighbour term has an exten
   - a known c > 1 phase (four-Fermi-point liquids, two-leg ladders with independent legs, a decoupled spin sector).
   - Look specifically for cases without the inter-valley binding that kills the Fibonacci case at φ = π/2. A repulsive inter-valley channel is what you want.
 - Test any promising effective model with small DMRG or ring ED, and give the qubit bond.
+
+## C186: unbind the pair by changing the microscopic bond
+
+A collaborator (GitHub: salpace) proved the binding boundary exactly (`contrib/cusp_binding_certificate_20261109/`, `contrib/cusp_scattering_20261109/`, `contrib/cusp_validation_20261109/`, read them first).
+- In the symmetric effective model take NN hop u, NNN hop +1, V₂ = −2 + v and V₃ = −g, with 0 < u < 4 and 0 < g < 2. A bound opposite-valley pair exists exactly when v < g u²/[2(2 − g)].
+- At the Schrieffer–Wolff values (v = 0, g = 2/3) the pair is bound. With V₂ = V₃ = 0 the gas is two-component (C175, Mishra–Greschner–Santos).
+
+So the c = 2 route at the cusp needs a nearest-neighbour qubit bond whose generated interactions land on the unbound side, with v > g u²/[2(2 − g)] or g reduced, while keeping the two valleys.
+- Derive the second-order effective model for the most general nearest-neighbour bond near the Fibonacci point: a general 4×4 bond = dominant J_z ZZ + field at its blockade value + all small terms at first and second order (XX, YY, XY, YX, XZ, ZX, YZ, ZY, X and Y fields, and the deviation of h_z). Find which terms enter V₂, V₃, the NNN hop and the NN hop, and whether any choice moves (v, g) across the binding boundary at fixed |w|/|t₂| and φ = π/2 (or near it).
+  - Example. Terms like XZ + ZX hop a particle conditioned on its neighbour, and at second order they shift the interactions at distances 2 and 3.
+- Check the symmetry (the valley degeneracy needs the C173 PROOF 3.3 symmetry or a substitute), the number-changing terms, and the two-pair vertex of C179 for any modified bond.
+- If a modified bond unbinds the pair, test it. Run the two-body problem (the collaborator's exact_pair.py or C175's code), then C175's pseudospin criterion, then effective-model DMRG with the parity gap, then the full qubit chain at moderate V/Δ. Give the explicit qubit bond.
+- If no nearest-neighbour bond can unbind it, prove that, and say what the obstruction is.
