@@ -2121,3 +2121,21 @@ C176 built and validated an open-chain DMRG for C173's effective model in which 
 - Preliminary [numerical, L = 48 → 64, bare Schrieffer–Wolff couplings, truncation 1e-8 to 4e-8, about ±0.3]. Two-size c is 0.98 for the c = 1 control, 1.92 for the c = 2 control and 1.79 at n = 1/8 (2.26 at a fixed bulk density of 0.17). The valley-polarization correlation decays. L times the parity gap is 2.70 and 2.40 at L = 48 and 64. These are at the couplings where the exact two-body problem has a bound pair (§9.139), so they show that sizes this small cannot see the pairing. The deciding outputs are at n = 1/8 and L = 256 (parity gap and pair against single-particle correlations).
 - Registered before production. The first-stage criterion of C173 PROOF 5.4 at n = 3/16 and L = 128, control bands of ±0.15 and ±0.25, predictions for 128 → 256, and, after C175, predictions for the parity gap and pair correlations.
 - Open. The production job. Pair gaps of order 1e-4 are invisible at L ≤ 256. Open chains only, so no FES stage.
+
+### 9.143 C184: multicritical points with c > 1, an inventory (Claude Opus 5.5 agent, 2026-11-09; `codex/work_C184/`)
+
+A fine-tuned point counts as a counterexample, so C184 inventoried the ways a nearest-neighbour qubit bond could reach a multicritical point with c > 1. It found none, and no candidate bond. Its registered open-chain test of the Peotta meeting region is on Typhon and pending.
+
+- Closure lemma [derived, agrees with C174]. It does not exclude multicritical c > 1, because bounds pass only from higher to lower c. Only (H*)/(A6) excludes such points.
+- Lemma M [proved for quadratic chains, derived for weak interactions; inputs C152 Prop. F, Lemma P2, C174 R8]. Near any quadratic reference a nearest-neighbour qubit chain has at most four soft Majorana–Weyl modes at any crossing, while every c > 1 candidate needs at least six or a strongly interacting species. So a c > 1 crossing can sit only where a non-quadratic species exists: the XZ flat band, the Fibonacci cusp, strong attraction, or near the ferromagnet. Crossing two transitions changes the number of tunings, not the requirement of two independent soft sectors.
+- Inventory [derived]:
+  - Ising × Gaussian needs three tunings at a commensurate Gaussian surface, because the σ·V couplings are relevant. The exception is K > 15/8 with σ even under the π rotation, which is C167's (A_W1)(a).
+  - TCI × Ising needs four tunings perturbatively. In the parity class the only inter-species term is also the TCI-driving self-interaction, so the crossing flows away (heuristic at V ~ t).
+  - Ising² × boson needs eight Majorana–Weyl modes.
+  - Potts × boson and Z₅ reduce to C168, C169 and C171, and SU(2)₂ reduces to P1.
+  - Two Gaussian surfaces give c = 1 when they belong to one boson. Only the cusp supplies two bosons.
+  - Lifshitz points are not conformal.
+- Two old jobs, never collected until now [numerical]. In C152's job, the worst XZ-window point reads c_pair 1.46, 1.24, 1.13 over L = 32 to 192, falling toward 1, the Peotta meeting region reads at most 1.15, and at V = −1.5t everything is gapped. In C154's job, the SU(2)₁/ordered boundary of the cyclic stratum looks like a level crossing, with the Casimir c falling from 0.93 to 0.69 and no SU(2)₃ tower.
+- Ring ED of the Peotta region [numerical, φ = 1, h_z = 0, L ≤ 20]. The DM-split Ising band reads c_S(16, 20) = 0.96 to 0.99, and its meeting with the Luttinger region is a level crossing.
+- Estimator calibration [numerical, exact free fermions]. c_pair at (48, 96) and (96, 192) reads 0.99 for XX, 0.51 for TFI, 1.98 to 1.99 for XX × XX and 1.50 for TFI × XX.
+- Open. The registered DMRG test. The K > 15/8 window. A fine scan of the cyclic SU(2)₁/ordered boundary for SU(2)₃, the one place where c > 1 needs a single tuning inside a stratum and nothing excludes it dynamically, which was not run. TCI × Ising at V ~ t.
