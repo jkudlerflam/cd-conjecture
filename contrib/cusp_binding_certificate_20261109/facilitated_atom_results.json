@@ -1,0 +1,456 @@
+{
+  "scope": "order-r^2 isolated-branch perturbation, numerical resolvent limits",
+  "source_checks": [
+    {
+      "L": 9,
+      "momenta": 9,
+      "max_source_error": 3.0303191209571215e-15
+    },
+    {
+      "L": 13,
+      "momenta": 13,
+      "max_source_error": 8.705168045924987e-15
+    },
+    {
+      "L": 20,
+      "momenta": 20,
+      "max_source_error": 6.628157738466702e-15
+    }
+  ],
+  "resolvent_rows": [
+    {
+      "K": -0.25268025514207865,
+      "mu": -2.4,
+      "cutoff": 64,
+      "bare_atom_energy": -2.25,
+      "cutoff_resolvent_gap": 0.2891456794702461,
+      "boundary_resolvent": 0.6861495351256423,
+      "two_particle_weight_over_r_squared": 0.8128265120765239,
+      "energy_shift_over_r_squared": -0.6861495351256423
+    },
+    {
+      "K": -0.25268025514207865,
+      "mu": -2.4,
+      "cutoff": 128,
+      "bare_atom_energy": -2.25,
+      "cutoff_resolvent_gap": 0.27739940146081676,
+      "boundary_resolvent": 0.6861495351507365,
+      "two_particle_weight_over_r_squared": 0.8128265131712522,
+      "energy_shift_over_r_squared": -0.6861495351507365
+    },
+    {
+      "K": -0.25268025514207865,
+      "mu": -2.4,
+      "cutoff": 256,
+      "bare_atom_energy": -2.25,
+      "cutoff_resolvent_gap": 0.2741499064041324,
+      "boundary_resolvent": 0.6861495351507365,
+      "two_particle_weight_over_r_squared": 0.8128265131712522,
+      "energy_shift_over_r_squared": -0.6861495351507365
+    },
+    {
+      "K": -0.25268025514207865,
+      "mu": -2.4,
+      "cutoff": 512,
+      "bare_atom_energy": -2.25,
+      "cutoff_resolvent_gap": 0.27329373108139404,
+      "boundary_resolvent": 0.6861495351507365,
+      "two_particle_weight_over_r_squared": 0.8128265131712522,
+      "energy_shift_over_r_squared": -0.6861495351507365
+    },
+    {
+      "K": -0.25268025514207865,
+      "mu": -2.4,
+      "cutoff": 1024,
+      "bare_atom_energy": -2.25,
+      "cutoff_resolvent_gap": 0.2730738974813118,
+      "boundary_resolvent": 0.6861495351507365,
+      "two_particle_weight_over_r_squared": 0.8128265131712521,
+      "energy_shift_over_r_squared": -0.6861495351507365
+    },
+    {
+      "K": 3.394272908731872,
+      "mu": -2.4,
+      "cutoff": 64,
+      "bare_atom_energy": -2.25,
+      "cutoff_resolvent_gap": 0.23555809975022624,
+      "boundary_resolvent": 1.4519101035340567,
+      "two_particle_weight_over_r_squared": 4.530625612497138,
+      "energy_shift_over_r_squared": -1.4519101035340574
+    },
+    {
+      "K": 3.394272908731872,
+      "mu": -2.4,
+      "cutoff": 128,
+      "bare_atom_energy": -2.25,
+      "cutoff_resolvent_gap": 0.23554033495978755,
+      "boundary_resolvent": 1.4519101035958517,
+      "two_particle_weight_over_r_squared": 4.53062561554528,
+      "energy_shift_over_r_squared": -1.4519101035958524
+    },
+    {
+      "K": 3.394272908731872,
+      "mu": -2.4,
+      "cutoff": 256,
+      "bare_atom_energy": -2.25,
+      "cutoff_resolvent_gap": 0.23554033175694733,
+      "boundary_resolvent": 1.4519101035958517,
+      "two_particle_weight_over_r_squared": 4.53062561554528,
+      "energy_shift_over_r_squared": -1.4519101035958524
+    },
+    {
+      "K": 3.394272908731872,
+      "mu": -2.4,
+      "cutoff": 512,
+      "bare_atom_energy": -2.25,
+      "cutoff_resolvent_gap": 0.2355403317569473,
+      "boundary_resolvent": 1.4519101035958517,
+      "two_particle_weight_over_r_squared": 4.53062561554528,
+      "energy_shift_over_r_squared": -1.4519101035958524
+    },
+    {
+      "K": 3.394272908731872,
+      "mu": -2.4,
+      "cutoff": 1024,
+      "bare_atom_energy": -2.25,
+      "cutoff_resolvent_gap": 0.2355403317569473,
+      "boundary_resolvent": 1.4519101035958517,
+      "two_particle_weight_over_r_squared": 4.53062561554528,
+      "energy_shift_over_r_squared": -1.4519101035958524
+    },
+    {
+      "K": -0.25268025514207865,
+      "mu": -2.3,
+      "cutoff": 64,
+      "bare_atom_energy": -2.25,
+      "cutoff_resolvent_gap": 0.1891456794702454,
+      "boundary_resolvent": 0.7853796061674502,
+      "two_particle_weight_over_r_squared": 1.2258060000562538,
+      "energy_shift_over_r_squared": -0.7853796061674502
+    },
+    {
+      "K": -0.25268025514207865,
+      "mu": -2.3,
+      "cutoff": 128,
+      "bare_atom_energy": -2.25,
+      "cutoff_resolvent_gap": 0.17739940146081665,
+      "boundary_resolvent": 0.785379609398587,
+      "two_particle_weight_over_r_squared": 1.225806176965161,
+      "energy_shift_over_r_squared": -0.785379609398587
+    },
+    {
+      "K": -0.25268025514207865,
+      "mu": -2.3,
+      "cutoff": 256,
+      "bare_atom_energy": -2.25,
+      "cutoff_resolvent_gap": 0.17414990640413233,
+      "boundary_resolvent": 0.785379609398587,
+      "two_particle_weight_over_r_squared": 1.225806176965163,
+      "energy_shift_over_r_squared": -0.785379609398587
+    },
+    {
+      "K": -0.25268025514207865,
+      "mu": -2.3,
+      "cutoff": 512,
+      "bare_atom_energy": -2.25,
+      "cutoff_resolvent_gap": 0.17329373108139398,
+      "boundary_resolvent": 0.785379609398587,
+      "two_particle_weight_over_r_squared": 1.225806176965163,
+      "energy_shift_over_r_squared": -0.785379609398587
+    },
+    {
+      "K": -0.25268025514207865,
+      "mu": -2.3,
+      "cutoff": 1024,
+      "bare_atom_energy": -2.25,
+      "cutoff_resolvent_gap": 0.17307389748131,
+      "boundary_resolvent": 0.785379609398587,
+      "two_particle_weight_over_r_squared": 1.2258061769651634,
+      "energy_shift_over_r_squared": -0.785379609398587
+    },
+    {
+      "K": 3.394272908731872,
+      "mu": -2.3,
+      "cutoff": 64,
+      "bare_atom_energy": -2.25,
+      "cutoff_resolvent_gap": 0.13555809975022612,
+      "boundary_resolvent": 2.195657500991728,
+      "two_particle_weight_over_r_squared": 12.373638009994002,
+      "energy_shift_over_r_squared": -2.1956575009917287
+    },
+    {
+      "K": 3.394272908731872,
+      "mu": -2.3,
+      "cutoff": 128,
+      "bare_atom_energy": -2.25,
+      "cutoff_resolvent_gap": 0.13554033495978748,
+      "boundary_resolvent": 2.19565751857607,
+      "two_particle_weight_over_r_squared": 12.37363916931203,
+      "energy_shift_over_r_squared": -2.1956575185760707
+    },
+    {
+      "K": 3.394272908731872,
+      "mu": -2.3,
+      "cutoff": 256,
+      "bare_atom_energy": -2.25,
+      "cutoff_resolvent_gap": 0.13554033175694724,
+      "boundary_resolvent": 2.19565751857607,
+      "two_particle_weight_over_r_squared": 12.373639169312035,
+      "energy_shift_over_r_squared": -2.1956575185760707
+    },
+    {
+      "K": 3.394272908731872,
+      "mu": -2.3,
+      "cutoff": 512,
+      "bare_atom_energy": -2.25,
+      "cutoff_resolvent_gap": 0.13554033175694682,
+      "boundary_resolvent": 2.19565751857607,
+      "two_particle_weight_over_r_squared": 12.373639169312035,
+      "energy_shift_over_r_squared": -2.1956575185760707
+    },
+    {
+      "K": 3.394272908731872,
+      "mu": -2.3,
+      "cutoff": 1024,
+      "bare_atom_energy": -2.25,
+      "cutoff_resolvent_gap": 0.13554033175694682,
+      "boundary_resolvent": 2.19565751857607,
+      "two_particle_weight_over_r_squared": 12.373639169312037,
+      "energy_shift_over_r_squared": -2.1956575185760707
+    },
+    {
+      "K": -0.25268025514207865,
+      "mu": -2.27,
+      "cutoff": 64,
+      "bare_atom_energy": -2.25,
+      "cutoff_resolvent_gap": 0.1591456794702449,
+      "boundary_resolvent": 0.8252248533671003,
+      "two_particle_weight_over_r_squared": 1.4421703217985467,
+      "energy_shift_over_r_squared": -0.8252248533671003
+    },
+    {
+      "K": -0.25268025514207865,
+      "mu": -2.27,
+      "cutoff": 128,
+      "bare_atom_energy": -2.25,
+      "cutoff_resolvent_gap": 0.14739940146081695,
+      "boundary_resolvent": 0.8252248713959401,
+      "two_particle_weight_over_r_squared": 1.4421714053670769,
+      "energy_shift_over_r_squared": -0.8252248713959401
+    },
+    {
+      "K": -0.25268025514207865,
+      "mu": -2.27,
+      "cutoff": 256,
+      "bare_atom_energy": -2.25,
+      "cutoff_resolvent_gap": 0.1441499064041343,
+      "boundary_resolvent": 0.8252248713959409,
+      "two_particle_weight_over_r_squared": 1.442171405367161,
+      "energy_shift_over_r_squared": -0.8252248713959409
+    },
+    {
+      "K": -0.25268025514207865,
+      "mu": -2.27,
+      "cutoff": 512,
+      "bare_atom_energy": -2.25,
+      "cutoff_resolvent_gap": 0.14329373108139462,
+      "boundary_resolvent": 0.8252248713959409,
+      "two_particle_weight_over_r_squared": 1.442171405367161,
+      "energy_shift_over_r_squared": -0.8252248713959409
+    },
+    {
+      "K": -0.25268025514207865,
+      "mu": -2.27,
+      "cutoff": 1024,
+      "bare_atom_energy": -2.25,
+      "cutoff_resolvent_gap": 0.14307389748131105,
+      "boundary_resolvent": 0.8252248713959409,
+      "two_particle_weight_over_r_squared": 1.4421714053671608,
+      "energy_shift_over_r_squared": -0.8252248713959409
+    },
+    {
+      "K": 3.394272908731872,
+      "mu": -2.27,
+      "cutoff": 64,
+      "bare_atom_energy": -2.25,
+      "cutoff_resolvent_gap": 0.10555809975022591,
+      "boundary_resolvent": 2.663399909026065,
+      "two_particle_weight_over_r_squared": 19.6929131853609,
+      "energy_shift_over_r_squared": -2.6633999090260665
+    },
+    {
+      "K": 3.394272908731872,
+      "mu": -2.27,
+      "cutoff": 128,
+      "bare_atom_energy": -2.25,
+      "cutoff_resolvent_gap": 0.10554033495978762,
+      "boundary_resolvent": 2.6634000534598146,
+      "two_particle_weight_over_r_squared": 19.692924021467455,
+      "energy_shift_over_r_squared": -2.663400053459816
+    },
+    {
+      "K": 3.394272908731872,
+      "mu": -2.27,
+      "cutoff": 256,
+      "bare_atom_energy": -2.25,
+      "cutoff_resolvent_gap": 0.105540331756947,
+      "boundary_resolvent": 2.6634000534598177,
+      "two_particle_weight_over_r_squared": 19.69292402146789,
+      "energy_shift_over_r_squared": -2.663400053459819
+    },
+    {
+      "K": 3.394272908731872,
+      "mu": -2.27,
+      "cutoff": 512,
+      "bare_atom_energy": -2.25,
+      "cutoff_resolvent_gap": 0.10554033175694698,
+      "boundary_resolvent": 2.6634000534598177,
+      "two_particle_weight_over_r_squared": 19.69292402146789,
+      "energy_shift_over_r_squared": -2.663400053459819
+    },
+    {
+      "K": 3.394272908731872,
+      "mu": -2.27,
+      "cutoff": 1024,
+      "bare_atom_energy": -2.25,
+      "cutoff_resolvent_gap": 0.10554033175694699,
+      "boundary_resolvent": 2.6634000534598177,
+      "two_particle_weight_over_r_squared": 19.69292402146789,
+      "energy_shift_over_r_squared": -2.663400053459819
+    },
+    {
+      "K": -0.25268025514207865,
+      "mu": -2.26,
+      "cutoff": 64,
+      "bare_atom_energy": -2.25,
+      "cutoff_resolvent_gap": 0.1491456794702455,
+      "boundary_resolvent": 0.8400879662724304,
+      "two_particle_weight_over_r_squared": 1.532282812926273,
+      "energy_shift_over_r_squared": -0.8400879662724304
+    },
+    {
+      "K": -0.25268025514207865,
+      "mu": -2.26,
+      "cutoff": 128,
+      "bare_atom_energy": -2.25,
+      "cutoff_resolvent_gap": 0.1373994014608175,
+      "boundary_resolvent": 0.8400879995069084,
+      "two_particle_weight_over_r_squared": 1.5322848820529469,
+      "energy_shift_over_r_squared": -0.8400879995069084
+    },
+    {
+      "K": -0.25268025514207865,
+      "mu": -2.26,
+      "cutoff": 256,
+      "bare_atom_energy": -2.25,
+      "cutoff_resolvent_gap": 0.13414990640413352,
+      "boundary_resolvent": 0.8400879995069107,
+      "two_particle_weight_over_r_squared": 1.5322848820532384,
+      "energy_shift_over_r_squared": -0.8400879995069107
+    },
+    {
+      "K": -0.25268025514207865,
+      "mu": -2.26,
+      "cutoff": 512,
+      "bare_atom_energy": -2.25,
+      "cutoff_resolvent_gap": 0.13329373108139442,
+      "boundary_resolvent": 0.8400879995069107,
+      "two_particle_weight_over_r_squared": 1.5322848820532384,
+      "energy_shift_over_r_squared": -0.8400879995069107
+    },
+    {
+      "K": -0.25268025514207865,
+      "mu": -2.26,
+      "cutoff": 1024,
+      "bare_atom_energy": -2.25,
+      "cutoff_resolvent_gap": 0.13307389748131127,
+      "boundary_resolvent": 0.8400879995069107,
+      "two_particle_weight_over_r_squared": 1.5322848820532387,
+      "energy_shift_over_r_squared": -0.8400879995069107
+    },
+    {
+      "K": 3.394272908731872,
+      "mu": -2.26,
+      "cutoff": 64,
+      "bare_atom_energy": -2.25,
+      "cutoff_resolvent_gap": 0.0955580997502261,
+      "boundary_resolvent": 2.87954485732809,
+      "two_particle_weight_over_r_squared": 23.7318654194917,
+      "energy_shift_over_r_squared": -2.8795448573280913
+    },
+    {
+      "K": 3.394272908731872,
+      "mu": -2.26,
+      "cutoff": 128,
+      "bare_atom_energy": -2.25,
+      "cutoff_resolvent_gap": 0.09554033495978742,
+      "boundary_resolvent": 2.8795451691145963,
+      "two_particle_weight_over_r_squared": 23.731890042460844,
+      "energy_shift_over_r_squared": -2.8795451691145977
+    },
+    {
+      "K": 3.394272908731872,
+      "mu": -2.26,
+      "cutoff": 256,
+      "bare_atom_energy": -2.25,
+      "cutoff_resolvent_gap": 0.09554033175694676,
+      "boundary_resolvent": 2.8795451691146092,
+      "two_particle_weight_over_r_squared": 23.731890042462723,
+      "energy_shift_over_r_squared": -2.8795451691146106
+    },
+    {
+      "K": 3.394272908731872,
+      "mu": -2.26,
+      "cutoff": 512,
+      "bare_atom_energy": -2.25,
+      "cutoff_resolvent_gap": 0.09554033175694675,
+      "boundary_resolvent": 2.8795451691146092,
+      "two_particle_weight_over_r_squared": 23.731890042462723,
+      "energy_shift_over_r_squared": -2.8795451691146106
+    },
+    {
+      "K": 3.394272908731872,
+      "mu": -2.26,
+      "cutoff": 1024,
+      "bare_atom_energy": -2.25,
+      "cutoff_resolvent_gap": 0.09554033175694675,
+      "boundary_resolvent": 2.8795451691146092,
+      "two_particle_weight_over_r_squared": 23.731890042462723,
+      "energy_shift_over_r_squared": -2.8795451691146106
+    }
+  ],
+  "valley_retuning": [
+    {
+      "mu": -2.4,
+      "atom_a_shift": -0.6861495351507365,
+      "atom_b_shift": -1.4519101035958524,
+      "extra_real_hop_over_r_squared": -0.1977185285846839,
+      "common_tuned_atom_shift": -1.0690298193732946,
+      "two_atom_threshold_shift": -2.138059638746589
+    },
+    {
+      "mu": -2.3,
+      "atom_a_shift": -0.785379609398587,
+      "atom_b_shift": -2.1956575185760707,
+      "extra_real_hop_over_r_squared": -0.364132190384574,
+      "common_tuned_atom_shift": -1.4905185639873288,
+      "two_atom_threshold_shift": -2.9810371279746577
+    },
+    {
+      "mu": -2.27,
+      "atom_a_shift": -0.8252248713959409,
+      "atom_b_shift": -2.663400053459819,
+      "extra_real_hop_over_r_squared": -0.4746147911696791,
+      "common_tuned_atom_shift": -1.7443124624278799,
+      "two_atom_threshold_shift": -3.4886249248557597
+    },
+    {
+      "mu": -2.26,
+      "atom_a_shift": -0.8400879995069107,
+      "atom_b_shift": -2.8795451691146106,
+      "extra_real_hop_over_r_squared": -0.5265855768795958,
+      "common_tuned_atom_shift": -1.8598165843107606,
+      "two_atom_threshold_shift": -3.719633168621521
+    }
+  ]
+}

@@ -2052,7 +2052,66 @@ stronger pin estimate is still a legal projected tilted-ensemble result,
 not the missing finite-K or wrong-length comparison. The d=13 mobile
 construction remains the main analytic priority of this continuation.
 
-### 9.141 C176: a blockade-exact DMRG for the cusp model, and preliminary readings (Claude Opus 5.5 agent, 2026-11-09; `codex/work_C176/`)
+### 9.141 A new transverse-DM qubit family with a binding-reducing direction (OpenAI Codex, GPT-6 family, 2026-11-09)
+
+The [constructive follow-up](contrib/counterexample_push_20261109/FACILITATED_ROUTE.md)
+uses the exact binding boundary of §9.140 to seek a microscopic escape
+from C175's obstruction. This is a new test family, not a counterexample.
+
+- [proved local reduction; independent exact enumeration] Add
+  lambda sum_j(n_j X_(j+1)-X_j n_(j+1)), which on a periodic ring is
+  exactly the nearest-neighbour transverse DM term
+  (lambda/2) sum_j(X_j Z_(j+1)-Z_j X_(j+1)). It vanishes on compression
+  to the blockade. At second order it generates a distance-two
+  repulsion 2lambda²/V, a real nearest hop lambda²/V and a number
+  shift. Crucially, its mixed term with the original pairing is
+  (Delta lambda/V)P sum_j(n_(j+2)-n_(j-2))X_j P. Three independent
+  implementations agree on the full operator. The repulsion-only
+  shortcut omits a term of the same effective scale and is invalid.
+- [derived and numerical] With r=lambda/Delta, compensate the direct
+  real hop and retain the complete leading model. The coefficient of r
+  maps an atom at momentum K into a distance-two pair with amplitude
+  4i sin K. At the original pair momentum pi its two-to-one channel
+  vanishes; its two-to-three channel remains. Exact pair wavefunctions
+  and interacting two-/three-body resolvents give, at mu_eff=-2.27,
+  atomic r² shifts -0.825224871396 and -2.663400053460 and pair shift
+  -1.163523967762. The three-body gap-coordinate calculation reaches
+  dimension 57,121; cutoff changes in the pair coefficient are below
+  4.1e-7. These are isolated-branch perturbation coefficients, not a
+  proof of the vacuum or its thermodynamic stability.
+- [derived] The perturbation breaks valley exchange. An additional
+  effective real hop q r², q=-0.474614791170, balances the dressed
+  valley energies through this order. The pair at pi has zero linear
+  response to that hop. The resulting formal binding expansion is
+  B(r)=0.0195265346664-2.32510095709 r²+O(r⁴).
+  The apparent zero r≈0.0916 is an uncontrolled extrapolation; its
+  fourth-order remainder and branch isolation have not been bounded.
+- [numerical, finite rings] Exact constrained-spin diagonalization
+  retains every particle number and periodic spin boundary conditions.
+  At L=24, mu_eff=-2.30 and q=-0.36413 (the retuning for that source,
+  rounded), the pi-pair energy minus two tracked valley-like energies
+  is -0.041485743 at r=0, -0.019439073 at .10 and +0.002211339 at .15.
+  A nearby tuning gave a much larger positive value on L=20, so size
+  drift is substantial. These discrete levels do not certify an
+  infinite-volume unbinding transition or c=2.
+- [checked finite algebra] The contribution includes a generator and
+  16 literal Hermitian 4-by-4 qubit bonds at V=40,80, with the real-hop
+  and field tunings spelled out. Their local occupation-basis identity
+  is checked up to a scalar and a telescoping one-site term. They are
+  test points with no assigned central charge.
+
+Independent reviews and reproducible data are in
+[the reduction audit](contrib/cusp_validation_20261109/FACILITATED_REPAIR.md),
+[the pair calculation](contrib/cusp_scattering_20261109/FACILITATED_EXTENSION.md),
+[the atom calculation](contrib/cusp_binding_certificate_20261109/facilitated_atom.py),
+and [the independent review](contrib/route_audit_20261109/FACILITATED_REVIEW.md).
+The next direct search should track the dressed bound-state pole and
+continuum in this complete model, retune the valley offset, and check
+larger clusters before attempting a central-charge claim. The d=13
+construction remains the mature analytic route; this new qubit family
+is the continuation's preferred next numerical test.
+
+### 9.142 C176: a blockade-exact DMRG for the cusp model, and preliminary readings (Claude Opus 5.5 agent, 2026-11-09; `codex/work_C176/`)
 
 C176 built and validated an open-chain DMRG for C173's effective model in which the blockade and the particle number are exact. Its production runs (L to 256, bond dimension to 1024, five densities, φ = π/2 to 1.50, both controls, N ± 1 for the parity gap) are queued on Typhon, and nothing beyond L = 64 has been read.
 

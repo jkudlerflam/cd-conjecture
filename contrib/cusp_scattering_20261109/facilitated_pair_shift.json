@@ -1,0 +1,209 @@
+{
+  "u": 1.0,
+  "K_original_gauge": 3.141592653589793,
+  "perturbation_parameter": "alpha=lambda/Delta",
+  "coefficient_definition": "E_pair(alpha)-E_pair(0)=coefficient*alpha^2+O(alpha^4)",
+  "scope": "isolated two-body branch in a vacuum calculation; chemical potential held fixed",
+  "rows": [
+    {
+      "cutoff_each_gap": 40,
+      "dimension": 1521,
+      "mu": -2.4,
+      "direct_repulsion_coefficient": 0.605277302658638,
+      "trimer_resolvent_coefficient": 1.2319753983682487,
+      "pair_shift_coefficient": -0.6266980957096107,
+      "linear_solve_residual": 2.806321337726452e-15,
+      "source_norm_squared": 1.554473609280782
+    },
+    {
+      "cutoff_each_gap": 40,
+      "dimension": 1521,
+      "mu": -2.3,
+      "direct_repulsion_coefficient": 0.605277302658638,
+      "trimer_resolvent_coefficient": 1.542197821654406,
+      "pair_shift_coefficient": -0.9369205189957681,
+      "linear_solve_residual": 3.893652105857562e-15,
+      "source_norm_squared": 1.554473609280782
+    },
+    {
+      "cutoff_each_gap": 40,
+      "dimension": 1521,
+      "mu": -2.27,
+      "direct_repulsion_coefficient": 0.605277302658638,
+      "trimer_resolvent_coefficient": 1.6930938872137307,
+      "pair_shift_coefficient": -1.0878165845550927,
+      "linear_solve_residual": 4.234750124550838e-15,
+      "source_norm_squared": 1.554473609280782
+    },
+    {
+      "cutoff_each_gap": 40,
+      "dimension": 1521,
+      "mu": -2.26,
+      "direct_repulsion_coefficient": 0.605277302658638,
+      "trimer_resolvent_coefficient": 1.7543760952548522,
+      "pair_shift_coefficient": -1.1490987925962142,
+      "linear_solve_residual": 4.550405130471393e-15,
+      "source_norm_squared": 1.554473609280782
+    },
+    {
+      "cutoff_each_gap": 80,
+      "dimension": 6241,
+      "mu": -2.4,
+      "direct_repulsion_coefficient": 0.605277302658638,
+      "trimer_resolvent_coefficient": 1.2734542550889416,
+      "pair_shift_coefficient": -0.6681769524303036,
+      "linear_solve_residual": 3.1293569510194136e-15,
+      "source_norm_squared": 1.5863722021199256
+    },
+    {
+      "cutoff_each_gap": 80,
+      "dimension": 6241,
+      "mu": -2.3,
+      "direct_repulsion_coefficient": 0.605277302658638,
+      "trimer_resolvent_coefficient": 1.6038545985606019,
+      "pair_shift_coefficient": -0.9985772959019639,
+      "linear_solve_residual": 4.16698819735451e-15,
+      "source_norm_squared": 1.5863722021199256
+    },
+    {
+      "cutoff_each_gap": 80,
+      "dimension": 6241,
+      "mu": -2.27,
+      "direct_repulsion_coefficient": 0.605277302658638,
+      "trimer_resolvent_coefficient": 1.7675759528506236,
+      "pair_shift_coefficient": -1.1622986501919856,
+      "linear_solve_residual": 4.8884200593123624e-15,
+      "source_norm_squared": 1.5863722021199256
+    },
+    {
+      "cutoff_each_gap": 80,
+      "dimension": 6241,
+      "mu": -2.26,
+      "direct_repulsion_coefficient": 0.605277302658638,
+      "trimer_resolvent_coefficient": 1.8348423253926185,
+      "pair_shift_coefficient": -1.2295650227339805,
+      "linear_solve_residual": 5.141816670195542e-15,
+      "source_norm_squared": 1.5863722021199256
+    },
+    {
+      "cutoff_each_gap": 120,
+      "dimension": 14161,
+      "mu": -2.4,
+      "direct_repulsion_coefficient": 0.605277302658638,
+      "trimer_resolvent_coefficient": 1.2741521061117962,
+      "pair_shift_coefficient": -0.6688748034531582,
+      "linear_solve_residual": 3.078048460371769e-15,
+      "source_norm_squared": 1.586907704559581
+    },
+    {
+      "cutoff_each_gap": 120,
+      "dimension": 14161,
+      "mu": -2.3,
+      "direct_repulsion_coefficient": 0.605277302658638,
+      "trimer_resolvent_coefficient": 1.6048735424790266,
+      "pair_shift_coefficient": -0.9995962398203886,
+      "linear_solve_residual": 3.860316439817345e-15,
+      "source_norm_squared": 1.586907704559581
+    },
+    {
+      "cutoff_each_gap": 120,
+      "dimension": 14161,
+      "mu": -2.27,
+      "direct_repulsion_coefficient": 0.605277302658638,
+      "trimer_resolvent_coefficient": 1.7687795003135822,
+      "pair_shift_coefficient": -1.1635021976549442,
+      "linear_solve_residual": 4.884483387612442e-15,
+      "source_norm_squared": 1.586907704559581
+    },
+    {
+      "cutoff_each_gap": 120,
+      "dimension": 14161,
+      "mu": -2.26,
+      "direct_repulsion_coefficient": 0.605277302658638,
+      "trimer_resolvent_coefficient": 1.8361244249907438,
+      "pair_shift_coefficient": -1.2308471223321058,
+      "linear_solve_residual": 5.302684698052104e-15,
+      "source_norm_squared": 1.586907704559581
+    },
+    {
+      "cutoff_each_gap": 160,
+      "dimension": 25281,
+      "mu": -2.4,
+      "direct_repulsion_coefficient": 0.605277302658638,
+      "trimer_resolvent_coefficient": 1.2741646117585224,
+      "pair_shift_coefficient": -0.6688873090998844,
+      "linear_solve_residual": 2.934116070332156e-15,
+      "source_norm_squared": 1.586917351441795
+    },
+    {
+      "cutoff_each_gap": 160,
+      "dimension": 25281,
+      "mu": -2.3,
+      "direct_repulsion_coefficient": 0.605277302658638,
+      "trimer_resolvent_coefficient": 1.6048916949926701,
+      "pair_shift_coefficient": -0.9996143923340322,
+      "linear_solve_residual": 4.192147855656895e-15,
+      "source_norm_squared": 1.586917351441795
+    },
+    {
+      "cutoff_each_gap": 160,
+      "dimension": 25281,
+      "mu": -2.27,
+      "direct_repulsion_coefficient": 0.605277302658638,
+      "trimer_resolvent_coefficient": 1.7688008906987251,
+      "pair_shift_coefficient": -1.1635235880400872,
+      "linear_solve_residual": 5.180539567211333e-15,
+      "source_norm_squared": 1.586917351441795
+    },
+    {
+      "cutoff_each_gap": 160,
+      "dimension": 25281,
+      "mu": -2.26,
+      "direct_repulsion_coefficient": 0.605277302658638,
+      "trimer_resolvent_coefficient": 1.8361472047175678,
+      "pair_shift_coefficient": -1.2308699020589298,
+      "linear_solve_residual": 4.6958546579176264e-15,
+      "source_norm_squared": 1.586917351441795
+    },
+    {
+      "cutoff_each_gap": 240,
+      "dimension": 57121,
+      "mu": -2.4,
+      "direct_repulsion_coefficient": 0.605277302658638,
+      "trimer_resolvent_coefficient": 1.2741648329589665,
+      "pair_shift_coefficient": -0.6688875303003285,
+      "linear_solve_residual": 2.9748282021951114e-15,
+      "source_norm_squared": 1.5869175230274493
+    },
+    {
+      "cutoff_each_gap": 240,
+      "dimension": 57121,
+      "mu": -2.3,
+      "direct_repulsion_coefficient": 0.605277302658638,
+      "trimer_resolvent_coefficient": 1.6048920168143885,
+      "pair_shift_coefficient": -0.9996147141557505,
+      "linear_solve_residual": 4.349859930457013e-15,
+      "source_norm_squared": 1.5869175230274493
+    },
+    {
+      "cutoff_each_gap": 240,
+      "dimension": 57121,
+      "mu": -2.27,
+      "direct_repulsion_coefficient": 0.605277302658638,
+      "trimer_resolvent_coefficient": 1.7688012704208214,
+      "pair_shift_coefficient": -1.1635239677621834,
+      "linear_solve_residual": 4.990580379619019e-15,
+      "source_norm_squared": 1.5869175230274493
+    },
+    {
+      "cutoff_each_gap": 240,
+      "dimension": 57121,
+      "mu": -2.26,
+      "direct_repulsion_coefficient": 0.605277302658638,
+      "trimer_resolvent_coefficient": 1.8361476093071227,
+      "pair_shift_coefficient": -1.2308703066484847,
+      "linear_solve_residual": 4.87739167235e-15,
+      "source_norm_squared": 1.5869175230274493
+    }
+  ]
+}

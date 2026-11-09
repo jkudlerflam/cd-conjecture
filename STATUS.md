@@ -19,6 +19,10 @@ and prove an exact two-body binding boundary for the qubit cusp. The
 qubit reduction also has a nonzero distance-three pairing term at
 relative order Delta/V; its off-resonant elimination requires a separate
 argument. Neither result identifies a microscopic central charge.
+An explicit [transverse-DM deformation of the qubit cusp](contrib/counterexample_push_20261109/FACILITATED_ROUTE.md)
+now gives a constructive test family: its full number-mixing effective
+model weakens the pair binding after valley retuning. The finite-ring
+crossing drifts strongly with size; unbinding and c=2 remain unproved.
 
 ## A replacement bound
 

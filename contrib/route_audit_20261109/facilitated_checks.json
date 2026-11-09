@@ -1,0 +1,29 @@
+{
+  "status": "all exact identities passed",
+  "conventions": "H0=V sum nn, pair amplitude +Delta, facilitation lambda sum(nX-Xn)",
+  "mixed_coefficient": "-Delta*lambda/V times projected distance-two antisymmetric facilitation",
+  "squared_coefficient": "lambda^2/V times projected [NN hop+h.c.-2N+2 sum n_j n_(j+2)]",
+  "cases": [
+    {
+      "L": 7,
+      "legal_states": 29,
+      "nonzero_verified_entries": 154
+    },
+    {
+      "L": 8,
+      "legal_states": 47,
+      "nonzero_verified_entries": 268
+    },
+    {
+      "L": 9,
+      "legal_states": 76,
+      "nonzero_verified_entries": 489
+    },
+    {
+      "L": 10,
+      "legal_states": 123,
+      "nonzero_verified_entries": 860
+    }
+  ],
+  "scope": "second-order legal effective operator, including charge-changing terms; no infrared claim"
+}

@@ -1,0 +1,174 @@
+{
+  "scope": "derivatives at alpha=0; no uniformly controlled unbinding result",
+  "chemical_potential": "epsilon_min-0.1*u^4, before alpha-dependent retuning",
+  "runs": [
+    {
+      "u": 1.0,
+      "mu": -2.35,
+      "atoms": [
+        {
+          "k": -0.25268025514207865,
+          "energy_derivative": -0.7307039392921196,
+          "admixture_derivative": 0.9791256959861929,
+          "relative_cutoff": 8192
+        },
+        {
+          "k": 3.394272908731872,
+          "energy_derivative": -1.732430333278581,
+          "admixture_derivative": 6.965682655309028,
+          "relative_cutoff": 8192
+        }
+      ],
+      "pair_boxes": [
+        {
+          "cutoff_each_gap": 240,
+          "dimension": 57121,
+          "pair_derivative": -0.8060603802238104,
+          "pair_admixture_derivative": 3.197356575566198,
+          "binding_derivative": -1.6570738923468904,
+          "binding_derivative_over_u_squared": -1.6570738923468904,
+          "original_binding": 0.019526534666399087,
+          "formal_quadratic_zero_alpha": 0.10855295518036832,
+          "formal_alpha_over_u": 0.10855295518036832,
+          "linear_solve_residual": 1.1537206611027662e-10
+        }
+      ]
+    },
+    {
+      "u": 0.5,
+      "mu": -2.06875,
+      "atoms": [
+        {
+          "k": -0.1253278311680654,
+          "energy_derivative": -0.447272528401318,
+          "admixture_derivative": 2.6395145075111213,
+          "relative_cutoff": 8192
+        },
+        {
+          "k": 3.2669204847578586,
+          "energy_derivative": -1.1075518445253227,
+          "admixture_derivative": 21.394222002924458,
+          "relative_cutoff": 8192
+        }
+      ],
+      "pair_boxes": [
+        {
+          "cutoff_each_gap": 160,
+          "dimension": 25281,
+          "pair_derivative": -0.9274120050385873,
+          "pair_admixture_derivative": 13.374483075770197,
+          "binding_derivative": -0.6274123678880533,
+          "binding_derivative_over_u_squared": -2.5096494715522133,
+          "original_binding": 0.0017092173116930454,
+          "formal_quadratic_zero_alpha": 0.052194182972751586,
+          "formal_alpha_over_u": 0.10438836594550317,
+          "linear_solve_residual": 6.695772414593778e-11
+        },
+        {
+          "cutoff_each_gap": 240,
+          "dimension": 57121,
+          "pair_derivative": -0.9419782100474919,
+          "pair_admixture_derivative": 13.618895353076695,
+          "binding_derivative": -0.6128461628791487,
+          "binding_derivative_over_u_squared": -2.451384651516595,
+          "original_binding": 0.0017092173116930454,
+          "formal_quadratic_zero_alpha": 0.052810819383618396,
+          "formal_alpha_over_u": 0.10562163876723679,
+          "linear_solve_residual": 6.331257284638861e-11
+        },
+        {
+          "cutoff_each_gap": 360,
+          "dimension": 128881,
+          "pair_derivative": -0.9434637591173628,
+          "pair_admixture_derivative": 13.64368588921945,
+          "binding_derivative": -0.6113606138092779,
+          "binding_derivative_over_u_squared": -2.4454424552371115,
+          "original_binding": 0.0017092173116930454,
+          "formal_quadratic_zero_alpha": 0.052874943127655866,
+          "formal_alpha_over_u": 0.10574988625531173,
+          "linear_solve_residual": 6.411089391589107e-11
+        },
+        {
+          "cutoff_each_gap": 600,
+          "dimension": 358801,
+          "pair_derivative": -0.9435081744819721,
+          "pair_admixture_derivative": 13.644432178047564,
+          "binding_derivative": -0.6113161984446686,
+          "binding_derivative_over_u_squared": -2.4452647937786742,
+          "original_binding": 0.0017092173116930454,
+          "formal_quadratic_zero_alpha": 0.05287686391531716,
+          "formal_alpha_over_u": 0.10575372783063432,
+          "linear_solve_residual": 6.74876371959852e-11
+        }
+      ]
+    },
+    {
+      "u": 0.25,
+      "mu": -2.016015625,
+      "atoms": [
+        {
+          "k": -0.06254076179649139,
+          "energy_derivative": -0.2393882370512112,
+          "admixture_derivative": 5.561847346159876,
+          "relative_cutoff": 8192
+        },
+        {
+          "k": 3.2041334153862846,
+          "energy_derivative": -0.5480423834789186,
+          "admixture_derivative": 40.4773803286305,
+          "relative_cutoff": 8192
+        }
+      ],
+      "pair_boxes": [
+        {
+          "cutoff_each_gap": 240,
+          "dimension": 57121,
+          "pair_derivative": -0.4856691566096105,
+          "pair_admixture_derivative": 26.004141598906646,
+          "binding_derivative": -0.3017614639205193,
+          "binding_derivative_over_u_squared": -4.8281834227283085,
+          "original_binding": 0.00011791039117081681,
+          "formal_quadratic_zero_alpha": 0.019767154244433014,
+          "formal_alpha_over_u": 0.07906861697773206,
+          "linear_solve_residual": 3.018641908920406e-11
+        },
+        {
+          "cutoff_each_gap": 400,
+          "dimension": 159201,
+          "pair_derivative": -0.5815849478590481,
+          "pair_admixture_derivative": 31.90703566744841,
+          "binding_derivative": -0.20584567267108167,
+          "binding_derivative_over_u_squared": -3.2935307627373067,
+          "original_binding": 0.00011791039117081681,
+          "formal_quadratic_zero_alpha": 0.023933442434801337,
+          "formal_alpha_over_u": 0.09573376973920535,
+          "linear_solve_residual": 3.317843899556667e-11
+        },
+        {
+          "cutoff_each_gap": 600,
+          "dimension": 358801,
+          "pair_derivative": -0.6127700081214871,
+          "pair_admixture_derivative": 33.82541141849681,
+          "binding_derivative": -0.17466061240864272,
+          "binding_derivative_over_u_squared": -2.7945697985382836,
+          "original_binding": 0.00011791039117081681,
+          "formal_quadratic_zero_alpha": 0.025982357302838512,
+          "formal_alpha_over_u": 0.10392942921135405,
+          "linear_solve_residual": 3.494033712632715e-11
+        },
+        {
+          "cutoff_each_gap": 1000,
+          "dimension": 998001,
+          "pair_derivative": -0.6209006853402386,
+          "pair_admixture_derivative": 34.325487917458176,
+          "binding_derivative": -0.16652993518989123,
+          "binding_derivative_over_u_squared": -2.6644789630382597,
+          "original_binding": 0.00011791039117081681,
+          "formal_quadratic_zero_alpha": 0.026609081490980468,
+          "formal_alpha_over_u": 0.10643632596392187,
+          "linear_solve_residual": 3.453273195070092e-11
+        }
+      ]
+    }
+  ]
+}
