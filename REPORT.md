@@ -2161,3 +2161,24 @@ The Fibonacci cusp works because a dominant bond has an extensively degenerate g
 - The catch [numerical, ring ED at L = 20 and 24]. κ is of order one wherever the pair is unbound. At κ = 1 it breaks N and the valley symmetry, moves the valley-balance point to φ* ≈ 1.64, and raises the density at fixed μ. Local open chains at L = 36 carry no information on c.
 - Candidate bond (not established), at V/Δ = 40 in the convention of §9.137 plus λ(XZ − ZX): J_z = 10, J_x − J_y = 1, λ = 0.3, J_x + J_y = −0.009 − 0.0125 sin δφ, D = 0.00625 cos δφ with δφ ≈ 0.07 to 0.1, h_z = −19.98525.
 - Pending tests. A small backfill job runs the κ = 1 φ scan around φ* at L = 48 and 96, a κ = 0, v = 1 reference, and two full-chain runs at V/Δ = 8. A larger job runs the number-conserving part, more full-chain φ shifts, and an unbiased search for further degenerate bonds.
+
+### 9.145 C181: the partially polarized pair route off the symmetric line (Claude Opus 5.5 agent, 2026-11-09; `codex/work_C181/`)
+
+Off φ = π/2 the valley offset acts as a field on the bound pairs. In the attractive Gaudin–Yang gas the corresponding phase, partially polarized, is a two-component liquid with c = 2. C181 tested whether that survives here. The route is neither closed nor established, and the first numerics lean against it at the sizes reached. The registered test is queued.
+
+- Mechanism [derived]. In any imbalanced two-valley liquid the backscattering term that opens the pair gap oscillates (the 1D FFLO mechanism), so c = 2 is generic where such a liquid is homogeneous. The exceptions are composite plateaus (m = 0, n/3, n), resonance tongues and first-order jumps. The FFLO pair momentum is K_p ± π(ρ_a − ρ_b).
+- Few-body data.
+  - The offset is δ = 4u√(1 − u²/16)(π/2 − φ) [proved], with a mass imbalance of only δ/(16 − u²).
+  - Pair binding is constant in φ to 1.5% down to φ = 1.48 [numerical].
+  - The aab trimer stays bound at every φ [numerical]. At |w| = 2 its binding falls from 0.0189 to 0.0109 over φ = π/2 to 1.50. At |w| = 1 it is about 6e-4, about 95 sites across.
+  - Which species appears first from the vacuum (pairs, trimers or atoms) follows from E_b and the trimer binding B₃ [derived], and dilute mixtures phase-separate by C164's mass-imbalance coefficient.
+  - So there is no c = 2 window at small density, as C175 found, but this holds only for n below about 0.01 at |w| = 2 and a few times 0.01 at |w| = 1.
+- |w| = 2 at its liquid density (bulk n ≈ 0.35) [numerical]. The open chain is a self-bound cluster liquid with short-ranged single-particle and pair correlations, and the 28- and 32-site rings prefer the trimer composition. Composite locking seems to pre-empt c = 2 there, and a partial 36-site ring makes this less clear.
+- |w| = 1, n = 3/16 [numerical].
+  - The valley imbalance grows continuously with the offset, and there is no parity gap at L = 64.
+  - At φ = 1.53 the two-size estimate for L = 64 → 96 reads 0.81, 0.99 and 1.15 over the three cut windows.
+  - This is not decisive. These chains hold only one to three unpaired particles.
+  - At these sizes the fixed-window estimator is uncalibrated for c = 2: the c = 2 control reads 1.54 to 3.46. A window proportional to L, chosen after seeing the controls and so not registered, reads 1.00 and 1.79 on the controls and 1.06 at φ = 1.53.
+- Vertex check off the stratum [derived]. No vertex is resonant at generic points. The two-pair vertex O₄ is detuned only by q₄ = 2u²ϑ/(8 − u²/2), with ϑ = π/2 − φ, which is 0.004 to 0.008 at |w| = 1. Openness needs q₄ξ₄ ≫ 1, which holds at V/Δ = 40 and fails at V/Δ = 8.
+- Best bond to test, in the parity class off J_x + J_y = 0 (|w| = 1, φ = 1.555, V/Δ = 40, μ_eff ≈ −2.143): J_x = 0.500098723, J_y = −0.499901277, D = 0.006249220, J_z = 10, h_z = −19.97589125. This is not a c > 1 claim.
+- Open. The registered test M1 to M6 (L = 64 → 128 with N ± 1, both |w|). Larger offsets at L ≥ 128. FES, ring spectroscopy and the full chain at this bond. The reality of the |w| = 2 trimer plateau. The FFLO momentum shift. The locking length of O₄ in the imbalanced liquid.
