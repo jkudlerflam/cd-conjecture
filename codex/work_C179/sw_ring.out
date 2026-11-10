@@ -1,0 +1,6 @@
+w/t2=1j V= 20: sep-2 <b,b+2|H|0>: max 2.21e-15 (pred 0.00e+00); sep-3 mean 1.6623e-03 (pred 1.6667e-03), spread 3.3e-15; max|dN=4| = 2.40e-10 (V^-5 = 3.13e-07)
+w/t2=1j V= 40: sep-2 <b,b+2|H|0>: max 9.13e-16 (pred 0.00e+00); sep-3 mean 4.1639e-04 (pred 4.1667e-04), spread 4.5e-15; max|dN=4| = 1.89e-12 (V^-5 = 9.77e-09)
+w/t2=1j V= 80: sep-2 <b,b+2|H|0>: max 1.24e-15 (pred 0.00e+00); sep-3 mean 1.0415e-04 (pred 1.0417e-04), spread 7.3e-15; max|dN=4| = 9.88e-14 (V^-5 = 3.05e-10)
+w/t2=(0.6+0.8j) V= 20: sep-2 <b,b+2|H|0>: max 1.49e-03 (pred 1.50e-03); sep-3 mean 1.6612e-03 (pred 1.6667e-03), spread 2.9e-14; max|dN=4| = 2.92e-10 (V^-5 = 3.13e-07)
+w/t2=(0.6+0.8j) V= 40: sep-2 <b,b+2|H|0>: max 3.75e-04 (pred 3.75e-04); sep-3 mean 4.1632e-04 (pred 4.1667e-04), spread 6.9e-14; max|dN=4| = 2.35e-12 (V^-5 = 9.77e-09)
+w/t2=(0.6+0.8j) V= 80: sep-2 <b,b+2|H|0>: max 9.37e-05 (pred 9.38e-05); sep-3 mean 1.0415e-04 (pred 1.0417e-04), spread 3.2e-14; max|dN=4| = 1.37e-13 (V^-5 = 3.05e-10)

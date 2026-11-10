@@ -2506,3 +2506,32 @@ C184's job ran the parity-class slice at φ = 1 and 1.2, h_z = 0 (C152's fermion
 - Context [numerical]. These points sit next to the first-order boundary. At Δ = 0.3 the entanglement collapses from 0.85 to 0.16 between V = −2.1 and −2.2, and similar jumps appear across the grid, which is the cat-state signature of P3. Ring ED at L ≤ 20 reads c ≈ 1 on the band (C184 RESULT). The readings rise between the size pairs, but they stay well below 3/2, and the ring confirmation that a c > 1 candidate needs is missing.
 
 Reading. C184's registered predictions fail narrowly, and the pass criterion for a candidate is not met either, because the readings are near 1.3 and unconfirmed by rings. The likeliest reading is a c = 1 liquid close to a first-order line, where the open-chain entropy overshoots. A short follow-up (L = 384 at the three points, and the Ising × XX control) would settle it.
+
+### 9.160 C191: the pseudospin RG from the scattering data puts the candidate densities deep on the gapless side, and fixes the frame (Claude Opus 5.5 subagent, 2026-11-09; `codex/work_C191/`)
+
+C191 built the low-energy theory of the two-valley gas of C173's effective model (3.2) on the symmetric line from the two-body S-matrix, with each valley treated in the Bethe ansatz and the inter-valley terms at first order. Its prediction was registered before C189 had numbers.
+
+- The inter-valley backscattering is weak. The reflection amplitude at k_F is 0.02 to 0.10 and passes through zero near n ≈ 0.167. The shallow bound state makes the even channel attractive only for q ≲ 0.15, so the zero-range Yang–Gaudin template of §9.139 does not apply at k_F ≈ 0.3.
+- Predicted K_s = 1.34, 1.53, 1.67 at n = 1/8, 5/32, 3/16 (bands of about ±0.2), so cos(√8 φ_s) is irrelevant and there is no pseudospin gap. The separatrix sits at n ≈ 0.07 to 0.085.
+- Frame. The valleys are weakly coupled only as mutually bosonic fields. A 600-site two-body ring matches the boson-frame levels to 2.7e-6, and the fermion frame misses by half a level spacing. So the inter-valley pair exponent is 1/K_c, the lattice boson exponent is 1/(4K_c) + 1/(4K_s), and the Jordan–Wigner fermion carries a string over the other valley.
+- Checks: Gaudin–Yang gap exponent to 0.8%, hard rods K = (1 − ρ)² to 1e-4, free two-leg XX exponents 1, 1/2, 3/2.
+- It warns that C189's registered relations are in the fermion frame and that the open end reflects mostly within a valley (|R_intra| ≈ 0.95 to 0.98).
+
+### 9.161 On the symmetric line the effective model has K_s > 1, from two calibrated exponents (coordinator, Claude Opus 5.5, 2026-11-09; `codex/work_C192/`)
+
+A direct test of §9.160 on C176's converged data (L = 128, 192, 256, χ up to 1024). The frame test was stated before the boson data were opened, with a predicted boson exponent of about 0.32. Scripts are `onebody.py`, `pairconf.py` and `sq2.py`, and `CHECKPOINT.md` holds the numbers.
+
+- Boson one-body exponent, from site pairs symmetric about the centre and the open-chain form tan(πr/2L)^(−η). The c = 2 control (two XX legs) reads 0.500 to 0.502 against the exact 1/2. The candidate reads η_b = 0.326, 0.335, 0.351 at n = 3/16, 5/32, 1/8 at L = 256, and moves by at most 0.004 from L = 128. A value below 1 is impossible in the fermion frame, so this confirms C191's frame.
+- Inter-valley pair exponent at momentum π, with the open-chain conformal form. The control reads 0.995 to 1.007 against the exact 1. The candidate reads 0.61 to 0.64 at all three densities and sizes, so 1/K_c ≈ 0.62. The density structure factor (controls within 3%) gives K_c ≈ 1.8, so 1/K_c ≈ 0.55.
+- K_s from 1/K_s = 4η_b − 1/K_c.
+
+| n | 4η_b | K_s (pair exponent) | K_s (structure factor) |
+|---|---|---|---|
+| 3/16 | 1.30 | 1.47 | 1.34 |
+| 5/32 | 1.34 | 1.39 | 1.27 |
+| 1/8 | 1.40 | 1.27 | 1.17 |
+
+- K_s > 1 needs only K_c < 3.3 at n = 3/16 and K_c < 2.5 at n = 1/8, against a measured 1.6 to 1.8. The backscattering has dimension 2K_s ≈ 2.3 to 2.9.
+- Independent support. The odd-even energy excess L·(Δ_P − E'') is 1.52, 1.48, 1.45 at L = 128, 192, 256 and extrapolates to no pair-breaking gap above about 3e-4. The valley imbalance responds linearly to the valley offset (C181-type runs), 1.16 to 1.33 times the free value at L = 256, with no threshold. The valley structure factor slope is 1.2 to 1.55 times free.
+
+Reading. On the symmetric line (3.2) is a c = 2 two-component liquid with K_c ≈ 1.6 to 1.8 and K_s ≈ 1.2 to 1.5, and the hidden pseudospin gap of §9.139 is not there. The values sit at the low edge of C191's bands, with the same rise in density. Two limits. First, the two estimates of 1/K_c differ by about 10%, which moves K_s but not its side of 1. Second, this is the effective model. For the qubit chain C179's two-pair vertex O_4 (dimension 2/K_c ≈ 1.1 to 1.25) is still resonant and relevant on the symmetric line itself, so the qubit candidate has to sit off the line, where O_4 and the backscattering both carry momentum. What this section removes is the threshold. With no pseudospin gap, any nonzero valley offset gives the partially polarized two-valley liquid. The converged full-qubit test is C190.

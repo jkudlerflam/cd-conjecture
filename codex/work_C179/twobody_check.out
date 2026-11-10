@@ -1,0 +1,22 @@
+     K/pi=+0.00: E_2 - continuum = +0.00000
+     K/pi=+0.50: E_2 - continuum = -0.93232
+     K/pi=+1.00: E_2 - continuum = -0.00171
+     K/pi=-0.50: E_2 - continuum = -0.93232
+     K/pi=+0.00: E_2 - continuum = +0.00000
+     K/pi=+0.50: E_2 - continuum = -0.36652
+     K/pi=+1.00: E_2 - continuum = -0.01953
+     K/pi=-0.50: E_2 - continuum = -0.36652
+     K/pi=+0.00: E_2 - continuum = +0.00000
+     K/pi=+0.50: E_2 - continuum = -0.00023
+     K/pi=+1.00: E_2 - continuum = -0.12255
+     K/pi=-0.50: E_2 - continuum = -0.00023
+(a) ringk L=40 K=pi: E_2 - 2eps_min = -0.00224
+(a) ringk L=50 K=pi: E_2 - 2eps_min = -0.02512
+(a) ringk L=60 K=pi: E_2 - 2eps_min = -0.01550
+(b) C173 twobody.py, phi=pi/2 |w|=1 L=400: min_K E_2 - 2eps_min = -0.01953
+(c) K/pi=-0.1609: E_2 - continuum(K) = +0.000114
+(c) K/pi=+0.1609: E_2 - continuum(K) = +0.000114
+(c) K/pi=+0.9841: E_2 - continuum(K) = -0.020000
+(c) K/pi=+1.0000: E_2 - continuum(K) = -0.019527
+(c) K/pi=+1.0159: E_2 - continuum(K) = -0.020000
+    bound-state size estimate 1/sqrt(m_valley * E_b) = 19.6 sites (m_valley = 1/eps'' = 1/7.5)

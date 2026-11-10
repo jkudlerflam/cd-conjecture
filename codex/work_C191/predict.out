@@ -1,0 +1,45 @@
+
+=== n = 0.12500: |r|=0.1032 y1=0.0656 delta_s=+0.4961 arg t=-0.1912 arg t'=+0.1371 K_par(ABA)=1.362 u_par=1.031
+  landau-delta  g4=0      K_s=1.402 K_c=1.372 | pair 0.729 boson 0.361 fermion 1.708 | uc/Kc=0.988 us/Ks=0.971 L*DP=3.08 dp/dd=2.62 | margin +0.739 | u=[1.28 1.43]
+  landau-delta  g4=K(pi)  K_s=1.365 K_c=1.414 | pair 0.707 boson 0.361 fermion 1.673 | uc/Kc=0.872 us/Ks=1.086 L*DP=3.08 dp/dd=2.34 | margin +0.664 | u=[1.22 1.5 ]
+  landau-delta  g4=K(RR)  K_s=1.346 K_c=1.443 | pair 0.693 boson 0.359 fermion 1.655 | uc/Kc=0.805 us/Ks=1.153 L*DP=3.08 dp/dd=2.21 | margin +0.627 | u=[1.15 1.56]
+  landau-delta  g4=+0.4   K_s=1.427 K_c=1.352 | pair 0.740 boson 0.361 fermion 1.730 | uc/Kc=1.051 us/Ks=0.907 L*DP=3.08 dp/dd=2.81 | margin +0.788 | u=[1.25 1.46]
+  landau-tan    g4=0      K_s=1.449 K_c=1.416 | pair 0.706 boson 0.350 fermion 1.742 | uc/Kc=0.947 us/Ks=0.929 L*DP=2.95 dp/dd=2.74 | margin +0.833 | u=[1.27 1.42]
+  landau-tan    g4=K(pi)  K_s=1.406 K_c=1.465 | pair 0.683 boson 0.349 fermion 1.702 | uc/Kc=0.832 us/Ks=1.045 L*DP=2.95 dp/dd=2.44 | margin +0.747 | u=[1.2  1.48]
+  landau-tan    g4=K(RR)  K_s=1.385 K_c=1.499 | pair 0.667 boson 0.348 fermion 1.681 | uc/Kc=0.764 us/Ks=1.112 L*DP=2.95 dp/dd=2.29 | margin +0.704 | u=[1.14 1.54]
+  landau-tan    g4=+0.4   K_s=1.477 K_c=1.393 | pair 0.718 boson 0.349 fermion 1.767 | uc/Kc=1.010 us/Ks=0.866 L*DP=2.95 dp/dd=2.94 | margin +0.889 | u=[1.24 1.45]
+  hybrid-ABA    g4=0      K_s=1.385 K_c=1.340 | pair 0.746 boson 0.368 fermion 1.679 | uc/Kc=0.765 us/Ks=0.749 L*DP=2.38 dp/dd=3.40 | margin +0.704 | u=[0.95 1.1 ]
+  hybrid-ABA    g4=K(pi)  K_s=1.339 K_c=1.392 | pair 0.718 boson 0.367 fermion 1.637 | uc/Kc=0.650 us/Ks=0.864 L*DP=2.38 dp/dd=2.95 | margin +0.613 | u=[0.89 1.17]
+  hybrid-ABA    g4=K(RR)  K_s=1.317 K_c=1.431 | pair 0.699 boson 0.365 fermion 1.617 | uc/Kc=0.583 us/Ks=0.931 L*DP=2.38 dp/dd=2.73 | margin +0.569 | u=[0.83 1.23]
+  hybrid-ABA    g4=+0.4   K_s=1.416 K_c=1.316 | pair 0.760 boson 0.368 fermion 1.706 | uc/Kc=0.829 us/Ks=0.685 L*DP=2.38 dp/dd=3.72 | margin +0.766 | u=[0.92 1.13]
+  RANGE K_s 1.317..1.477  median 1.394;  K_c 1.316..1.499 median 1.403
+
+=== n = 0.15625: |r|=0.0223 y1=0.0142 delta_s=+0.5644 arg t=-0.3348 arg t'=+0.0312 K_par(ABA)=1.463 u_par=1.153
+  landau-delta  g4=0      K_s=1.545 K_c=1.376 | pair 0.727 boson 0.344 fermion 1.786 | uc/Kc=1.206 us/Ks=1.050 L*DP=3.54 dp/dd=1.94 | margin +1.076 | u=[1.51 1.76]
+  landau-delta  g4=K(pi)  K_s=1.499 K_c=1.411 | pair 0.709 boson 0.345 fermion 1.781 | uc/Kc=1.091 us/Ks=1.165 L*DP=3.54 dp/dd=1.75 | margin +0.984 | u=[1.49 1.79]
+  landau-delta  g4=K(RR)  K_s=1.466 K_c=1.445 | pair 0.692 boson 0.344 fermion 1.750 | uc/Kc=0.993 us/Ks=1.263 L*DP=3.54 dp/dd=1.61 | margin +0.918 | u=[1.41 1.87]
+  landau-delta  g4=+0.4   K_s=1.574 K_c=1.359 | pair 0.736 boson 0.343 fermion 1.769 | uc/Kc=1.270 us/Ks=0.986 L*DP=3.54 dp/dd=2.07 | margin +1.134 | u=[1.48 1.79]
+  landau-tan    g4=0      K_s=1.635 K_c=1.442 | pair 0.694 boson 0.327 fermion 1.838 | uc/Kc=1.132 us/Ks=0.969 L*DP=3.30 dp/dd=2.10 | margin +1.255 | u=[1.48 1.73]
+  landau-tan    g4=K(pi)  K_s=1.579 K_c=1.484 | pair 0.674 boson 0.327 fermion 1.840 | uc/Kc=1.017 us/Ks=1.084 L*DP=3.30 dp/dd=1.88 | margin +1.143 | u=[1.46 1.76]
+  landau-tan    g4=K(RR)  K_s=1.538 K_c=1.527 | pair 0.655 boson 0.327 fermion 1.803 | uc/Kc=0.919 us/Ks=1.182 L*DP=3.30 dp/dd=1.72 | margin +1.063 | u=[1.38 1.84]
+  landau-tan    g4=+0.4   K_s=1.671 K_c=1.421 | pair 0.704 boson 0.326 fermion 1.817 | uc/Kc=1.196 us/Ks=0.906 L*DP=3.30 dp/dd=2.25 | margin +1.328 | u=[1.44 1.77]
+  hybrid-ABA    g4=0      K_s=1.601 K_c=1.344 | pair 0.744 boson 0.344 fermion 1.785 | uc/Kc=0.866 us/Ks=0.710 L*DP=2.48 dp/dd=2.87 | margin +1.188 | u=[1.02 1.27]
+  hybrid-ABA    g4=K(pi)  K_s=1.529 K_c=1.391 | pair 0.719 boson 0.345 fermion 1.781 | uc/Kc=0.751 us/Ks=0.825 L*DP=2.48 dp/dd=2.47 | margin +1.044 | u=[0.99 1.3 ]
+  hybrid-ABA    g4=K(RR)  K_s=1.481 K_c=1.442 | pair 0.694 boson 0.343 fermion 1.738 | uc/Kc=0.653 us/Ks=0.923 L*DP=2.48 dp/dd=2.21 | margin +0.947 | u=[0.92 1.38]
+  hybrid-ABA    g4=+0.4   K_s=1.650 K_c=1.322 | pair 0.756 boson 0.342 fermion 1.763 | uc/Kc=0.930 us/Ks=0.646 L*DP=2.48 dp/dd=3.15 | margin +1.285 | u=[0.98 1.3 ]
+  RANGE K_s 1.466..1.671  median 1.559;  K_c 1.322..1.527 median 1.416
+
+=== n = 0.18750: |r|=0.0394 y1=0.0250 delta_s=+0.6163 arg t=-0.4695 arg t'=-0.0581 K_par(ABA)=1.492 u_par=1.304
+  landau-delta  g4=0      K_s=1.684 K_c=1.371 | pair 0.730 boson 0.332 fermion 1.776 | uc/Kc=1.421 us/Ks=1.095 L*DP=3.95 dp/dd=1.55 | margin +1.344 | u=[1.7  2.09]
+  landau-delta  g4=K(pi)  K_s=1.630 K_c=1.399 | pair 0.715 boson 0.333 fermion 1.805 | uc/Kc=1.306 us/Ks=1.211 L*DP=3.95 dp/dd=1.40 | margin +1.236 | u=[1.71 2.08]
+  landau-delta  g4=K(RR)  K_s=1.580 K_c=1.437 | pair 0.696 boson 0.333 fermion 1.842 | uc/Kc=1.177 us/Ks=1.339 L*DP=3.95 dp/dd=1.27 | margin +1.135 | u=[1.64 2.16]
+  landau-delta  g4=+0.4   K_s=1.718 K_c=1.356 | pair 0.737 boson 0.331 fermion 1.761 | uc/Kc=1.485 us/Ks=1.032 L*DP=3.95 dp/dd=1.65 | margin +1.412 | u=[1.66 2.12]
+  landau-tan    g4=0      K_s=1.840 K_c=1.452 | pair 0.689 boson 0.309 fermion 1.846 | uc/Kc=1.311 us/Ks=0.963 L*DP=3.57 dp/dd=1.76 | margin +1.654 | u=[1.63 2.04]
+  landau-tan    g4=K(pi)  K_s=1.767 K_c=1.490 | pair 0.671 boson 0.310 fermion 1.883 | uc/Kc=1.196 us/Ks=1.078 L*DP=3.57 dp/dd=1.57 | margin +1.509 | u=[1.65 2.02]
+  landau-tan    g4=K(RR)  K_s=1.700 K_c=1.540 | pair 0.650 boson 0.310 fermion 1.931 | uc/Kc=1.067 us/Ks=1.206 L*DP=3.57 dp/dd=1.41 | margin +1.376 | u=[1.59 2.1 ]
+  landau-tan    g4=+0.4   K_s=1.886 K_c=1.434 | pair 0.697 boson 0.308 fermion 1.827 | uc/Kc=1.375 us/Ks=0.899 L*DP=3.57 dp/dd=1.89 | margin +1.748 | u=[1.58 2.08]
+  hybrid-ABA    g4=0      K_s=1.764 K_c=1.282 | pair 0.780 boson 0.339 fermion 1.737 | uc/Kc=1.037 us/Ks=0.711 L*DP=2.75 dp/dd=2.39 | margin +1.504 | u=[1.08 1.48]
+  hybrid-ABA    g4=K(pi)  K_s=1.675 K_c=1.316 | pair 0.760 boson 0.341 fermion 1.770 | uc/Kc=0.922 us/Ks=0.827 L*DP=2.75 dp/dd=2.05 | margin +1.325 | u=[1.1  1.48]
+  hybrid-ABA    g4=K(RR)  K_s=1.597 K_c=1.363 | pair 0.734 boson 0.342 fermion 1.815 | uc/Kc=0.793 us/Ks=0.955 L*DP=2.75 dp/dd=1.78 | margin +1.170 | u=[1.03 1.56]
+  hybrid-ABA    g4=+0.4   K_s=1.826 K_c=1.266 | pair 0.790 boson 0.336 fermion 1.721 | uc/Kc=1.101 us/Ks=0.648 L*DP=2.75 dp/dd=2.62 | margin +1.626 | u=[1.04 1.52]
+  RANGE K_s 1.580..1.886  median 1.709;  K_c 1.266..1.540 median 1.385

@@ -1,0 +1,12 @@
+hard rods rho=0.1: ABA K=0.80994 exact (1-rho)^2=0.81000
+hard rods rho=0.2: ABA K=0.63997 exact (1-rho)^2=0.64000
+n=0.06250 rho=0.03125 L=256 N=8: one-valley ABA K_par=1.1970 u_par=0.6090
+n=0.06250 rho=0.03125 L=512 N=16: one-valley ABA K_par=1.1964 u_par=0.6094
+n=0.09375 rho=0.04688 L=256 N=12: one-valley ABA K_par=1.2842 u_par=0.8390
+n=0.09375 rho=0.04688 L=512 N=24: one-valley ABA K_par=1.2840 u_par=0.8391
+n=0.12500 rho=0.06250 L=256 N=16: one-valley ABA K_par=1.3619 u_par=1.0311
+n=0.12500 rho=0.06250 L=512 N=32: one-valley ABA K_par=1.3620 u_par=1.0311
+n=0.15625 rho=0.07812 L=256 N=20: one-valley ABA K_par=1.4307 u_par=1.1889
+n=0.15625 rho=0.07812 L=512 N=40: one-valley ABA K_par=1.4634 u_par=1.1532
+n=0.18750 rho=0.09375 L=256 N=24: one-valley ABA K_par=1.4912 u_par=1.3124
+n=0.18750 rho=0.09375 L=512 N=48: one-valley ABA K_par=1.4920 u_par=1.3043
