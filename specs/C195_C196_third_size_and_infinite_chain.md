@@ -42,3 +42,19 @@ Registration.
 - (I3) Fail. c ≤ 1.3 from converged points at a candidate bond, or the leading correlation length of one sector grows by less than 1.15 over the last χ doubling while the other keeps growing.
 - (I4) Consistency. The bulk energy density agrees with (E(256) − E(128))/128 of the C190 ground branch to 1e-5, and the density with the C190 mid-chain value to 0.006. A miss is reported, not fatal.
 - Anything between I2 and I3 is undecided and reported with the numbers.
+
+## Amendment, 2026-11-10: C196 outcome, and a registered prediction of the open-end form at L = 512
+
+Written by the coordinator before any L = 512 output exists (C195 is still being set up).
+
+C196 was not run. Neither infinite-chain method converges at the candidate field (REPORT §9.183, `codex/work_C196/`). I0 to I4 are not evaluated.
+
+C193b (REPORT §9.182) found, after its candidates were opened, that the boson one-body function on the open qubit chain fits ln|h| = c − η ln tan u − 2 η_c ln cos u with u = π r/(2(L + 1)), where η_c is a boundary term that vanishes on the controls and on the effective model. That fit was not registered. This amendment turns it into a prediction for the third size.
+
+Measurement. `codex/work_C193/ckpt_meas/meas193.py` unchanged, on the final p153c states at L = 512 in both parity sectors. Analysis with `mixed_fit` and `table()` of `diag193.py` unchanged, apart from adding L = 512 to the list of sizes, on the four ranges [0.05, 0.4], [0.05, 0.6], [0.1, 0.8], [0.05, 0.85] in r/L, and with the pair exponent from `ana193.py` on its frozen ranges. Reference values at L = 256 on the ground branch of p153c: η = 0.314 to 0.328, η_c = 0.135 to 0.168, pair exponent 0.638, corrected K_s = 1.52(8), change of K_s from L = 128 of −0.12(12).
+
+- (O0) The pair exponent at L = 512 lies within 0.03 of 0.638.
+- (O1) Pass, the form. On every range η(512) lies within 0.015 of its L = 256 value on the same range, η_c lies within 0.04 of a quarter of the pair exponent, and the rms residual is at most 0.02.
+- (O2) Pass, the sign. The corrected K_s(512) is at least 1.3, its change from L = 256 is no more negative than −0.12, and the Kosterlitz–Thouless bound from the 256 → 512 change keeps the upper limit on |y_1| below the lower limit on y_∥.
+- (O3) Fail. η(512) exceeds its L = 256 value by more than 0.03 on any range, or the corrected K_s(512) is below 1.15, or the bound from the 256 → 512 change allows |y_1| ≥ y_∥ while the fall of K_s from 256 to 512 exceeds the fall from 128 to 256 by more than the combined error.
+- Anything between is undecided and reported with the numbers. If the L = 512 states miss T1, the clauses are evaluated and flagged as provisional.
