@@ -1,0 +1,4 @@
+{"tag": "rat_L32_P0", "model": "rat", "gauge": null, "hz": -19.9759, "L": 32, "P": 0, "init": "rand:1",
+ "sched": [[32, 1e-4, 1e-6, 2], [64, 1e-5, 1e-7, 2], [96, 1e-6, 1e-8, 1], [128, 0.0, 1e-8, 1]],
+ "final": {"chi": 128, "res_tol": 1e-9, "min_sweeps": 2, "max_sweeps": 6, "tolE": 1e-9, "tolS": 1e-5},
+ "gwin": 24, "variance": true}

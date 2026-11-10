@@ -34,7 +34,7 @@ Put the `cd` and the `nohup` on separate lines (a `cd ... && nohup ... &` list k
 
 Collection is unchanged (see each RESULT.md). Analyses must use only runs with status done.
 
-Pause rule (approved by Jonah, 2026-11-09 21:05 EST). It covers one case only, C190 node A, and one job only, c182 (17604443, the phase-diagram screen, node20).
+Pause rule (approved by Jonah, 2026-11-09, about 20:48 EST). It covers one case only, C190 node A, and one job only, c182 (17604443, the phase-diagram screen, node20).
 
 - When. All of these hold: node A's step is gone, its queued job 17606939 is still PENDING, its outputs are not complete, and no running c1xx job has enough idle cores for it (about 24).
 - How. Freeze c182 first, then start node A inside it. A step that exists when the signal is sent would be frozen too.
@@ -48,4 +48,4 @@ Pause rule (approved by Jonah, 2026-11-09 21:05 EST). It covers one case only, C
 - Backstop. At every check-in, if c182 was paused and node A's step is no longer in `squeue -s`, send `scancel --signal=CONT --full 17604443`. CONT on a job that is not stopped is harmless.
 - Limits. c182 keeps its allocation and memory and loses nothing, but its wall clock keeps running while it is frozen. Never cancel it. Pause nothing else without asking Jonah. Record the pause and resume times here.
 
-Status 2026-11-09 21:10 EST. All seven steps are running and all seven queued jobs are PENDING. Nothing has been paused.
+Status 2026-11-09 20:54 EST. All seven steps are running and all seven queued jobs are PENDING. Nothing has been paused.

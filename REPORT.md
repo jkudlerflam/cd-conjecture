@@ -2595,3 +2595,29 @@ C189 asked whether the pseudospin backscattering is relevant in C173's effective
 - The 10% gap of §9.162. C189's pair-exponent K_c = 1.61 is an independent fit and agrees with the exponent-based 1.60. Its long-wavelength structure factor (1.5 to 1.65) is also consistent with 1.6, while the tapered fit of §9.161 gave 1.75 to 1.80. With πS(q)/q running from 1.0 to 1.55 across the fitted range, the slope depends strongly on the window, so the gap looks like a systematic of the structure-factor fit and not a physical mixing term. No single controlled S(q) analysis has closed it yet.
 
 Reading. Two further routes agree with §9.160 and §9.161. K_s is 1.25 to 1.55 at all three densities, so the backscattering has dimension 2K_s ≈ 2.5 to 3.1, and the infinite chain reads c = 2.01 at n = 1/8 and 3/16 out to correlation lengths of about 200 sites. In the effective model the two-valley liquid on the symmetric line is stable. What remains open is the parity gap above and the qubit chain itself, which is C190's test. Larger χ and the remaining controls are running on the cluster, and `desktop_run/` holds a package for the desktop.
+
+### 9.164 C190 interim: the full-qubit solver is validated and the test is registered, production runs are in progress and there is no c reading yet (Claude Opus 5.5 subagent, checked by the coordinator, Claude Fable 5, 2026-11-09; `codex/work_C190/`)
+
+This is an interim entry. No c_two exists yet and no verdict is drawn.
+
+What C190 is. It is the converged test of the nearest-neighbour qubit chain itself at the candidate (`specs/C189_C191_decisive_tests.md`). The bonds are p153 (the collaborator's φ = 1.53 bond, w = e^{1.53i}/80, Δ = 1, V = 40), their rational simplification, and the symmetric-line bond φ = π/2 at V/Δ = 40 and 80. Chains are open, with L = 64, 128, 256, both parity sectors, and χ up to 384, 512, 768.
+
+Registration (RESULT.md, written before any production output). There are convergence targets C1 to C6 (local residual ≤ 1e-8, stationarity between final sweeps, discarded weight ≤ 1e-7, a χ-stage change in S̄₆ of at most 0.01, agreement between initializations, density within ±0.006 of target) and verdict rules V1 to V6.
+- The chain "tracks the effective model" if the ground-branch c_two(64 → 128) and c_two(128 → 256) are both ≥ 1.6 at W = 6 and 12, c_prof(256) ≥ 1.6, and the controls are calibrated.
+- It "falls toward 1" if c_two ≤ 1.3 at W = 6 and 12 for either size pair.
+- The collaborator's downturn reproduces if p153 at their field gives c_two(64 → 128, W = 1) ≤ 1.2, and does not reproduce if that value is ≥ 1.6.
+
+What is established so far.
+- Solver. z2dmrg.py is a two-site DMRG with exact Z₂ parity and a preconditioner built from the exact block Hamiltonians at fixed physical indices (PROOF eq. 5.1). In the p153 pilot and in the Typhon sweeps checked so far, every local solve reaches its residual target (1e-8 or 1e-9) in 50 to 90 matrix-vector products. The diagonal preconditioner used in C177, C183 and by a collaborator (GitHub: salpace) stalls at 1e-7 to 1e-6.
+- Validation. At L = 10, in both parity sectors, energies match exact diagonalization to 7e-12 and entropies to 6e-10 for every candidate bond. At L = 32 on the rational bond, both sectors come out below the collaborator's energies, by 6e-8 and 9e-8, with the same parity splitting 7.24e-5.
+- Pilot at L = 64, the collaborator's field, even sector (validation only, not a registered reading). I checked these against `local/out/`. S̄₁ = 1.5993, 1.6125, 1.6140 at χ = 128, 192, 256, with discarded weight 9e-9, 1.5e-9, 3e-10. The collaborator's χ = 128 value is 1.60106. So the entropy still moves by 0.015 after χ = 128, although the discarded weight there is already 9e-9.
+- The pilot also gives L·Δ_GC/|t₂| = +0.25 (the even sector is lower), below the bound of about 1.2 for an unpaired liquid. The sectors differ in n_mid (0.218 against 0.202), which moves S̄, so a density-corrected estimator was added to the registration, still before production output. S̄₆ sits 0.23 below the effective model at equal n_mid, close to C177's offset at V/Δ = 8.
+- Field tuning has finished for one key only, the symmetric-line bond at n = 3/16 (μ_eff = −2.1676). At equal μ_eff the full chain is denser than the effective model by about 0.009.
+
+How far the pilot lead goes. With c_two = 6 ΔS̄/ln 2, a deficit of 0.015 in S̄ at one size is 0.13 in c. The collaborator's downturn (c from 64 to 128 of 0.74 to 0.93, against about 2 at the smaller pair) needs a deficit of about 0.13 in S̄ at L = 128. So under-converged χ = 128 states explain the downturn only if the deficit grows nearly tenfold from L = 64 to 128. That is plausible, since the entropy to be captured grows with L, but it is not shown. The L = 128 production runs decide it under rule V3.
+
+A small correction to RESULT.md's R1. Its χ = 256 pilot values (S̄₁ = 1.6142, E = −650.0414852592) are from the first sweep at that χ. The last sweep gives 1.6140 and −650.0414852455. Nothing above changes.
+
+State of the production runs. They run on Typhon as two payloads, the decisive runs and the controls (`codex/work_C192/TYPHON_OVERLAP.md`). Half an hour in, the three p153 runs at the collaborator's field (L = 256 in both sectors, L = 128 even) were at χ = 128, with sweep times of 500 to 800 s and local residuals at target. The agent estimates about 3 h per sweep at χ = 768 for L = 256. So the 64 → 128 readings come first, and the 128 → 256 reading may need the resume-from-checkpoint path.
+
+Limits. No production run has finished. That the collaborator's convergence problem sits in the local eigensolver is the agent's reading. The lower energies at L = 32 support it, and it is untested at L = 128.
