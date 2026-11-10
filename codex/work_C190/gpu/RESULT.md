@@ -115,3 +115,40 @@ All eight GPU runs finished (two initializations per parity sector and size, χ 
 | 128 | odd | −1290.1134107394 | 1.8598 | 1.8510 | 1.8436 | 0.0044 | 0.2130 | 0.764 |
 
 The even sector is the ground branch at both sizes. c_two(64 → 128) on the ground branch is 2.196, 2.165, 2.234 for W = 1, 6, 12, and 2.12 to 2.37 over all parity pairings at W = 1. By V3 the collaborator's downturn does not reproduce (the threshold is 1.6). L·Δ_GC/|t₂| is +0.251 at L = 64 and +0.051 at L = 128. The valley weight ratio at L = 128 is 0.78 and 0.76, a little under the 0.8 of V6. The analysis output is `typhon_out/analyze_G_partial.txt`. The L = 256 runs were at χ = 384 (even) and 512 (odd) of 768 at collection, and no reading is taken from them.
+
+## R6. L = 256 at χ = 768: p153c odd sector and sym40_n316 (collected 2026-11-10 00:45 EST)
+
+Runs with status done. The analysis is in typhon_out/analyze_G_partial.txt.
+
+| key | L | sector | init | E | S̄₁ | S̄₆ | S̄₁₂ | c_prof | n_mid | S̄₆ step from χ = 512 | C1 to C4 |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| p153c | 256 | odd | rand1 | −2570.2571184393 | 2.0879 | 2.0827 | 2.0791 | 2.028 | 0.2153 | 0.0269 | C4 fails |
+| sym40_n316 | 256 | even | rand1 | −2570.2770003174 | 2.0633 | 2.0579 | 2.0547 | 2.032 | 0.1956 | 0.0249 | C4 fails |
+| sym40_n316 | 256 | even | prod50 | −2570.2770003188 | 2.0633 | 2.0579 | 2.0547 | 2.032 | 0.1956 | 0.0246 | C4 fails |
+| sym40_n316 | 256 | odd | rand1 | −2570.2770066290 | 2.0606 | 2.0558 | 2.0527 | 2.045 | 0.1917 | 0.0237 | C4 fails |
+| sym40_n316 | 256 | odd | prod51 | −2570.2770066288 | 2.0606 | 2.0558 | 2.0527 | 2.045 | 0.1917 | 0.0237 | C4 fails |
+| sym40_n316 | 128 | even | rand1 | −1290.1231026155 | 1.8265 | 1.8183 | 1.8112 | 2.251 | 0.1889 | 0.0034 | pass |
+
+Every run passes C1 (residual 1e-9), C2 (energy steps 5e-10 to 1.4e-9, entropy steps 1e-6 to 1e-5) and C3 (discarded weight 3e-10 to 3.5e-10). C5 passes for sym40_n316 at L = 256 in both sectors (energies agree to 1.5e-9, S̄₆ to 1e-4). C6 passes for sym40_n316 (n_mid 0.1917 on the ground branch against the target 0.1957).
+
+S̄₆ by stage, last sweep with the mixer off, with the discarded weight.
+
+| run | χ = 384 | χ = 512 | χ = 768 |
+|---|---|---|---|
+| p153c L = 256 odd | 2.0203 (2.6e-9) | 2.0559 (1.2e-9) | 2.0828 (3.5e-10) |
+| sym40_n316 L = 256 odd | 2.0013 (2.2e-9) | 2.0322 (1.0e-9) | 2.0559 (2.9e-10) |
+| sym40_n316 L = 256 even | 1.9961 (2.3e-9) | 2.0331 (1.1e-9) | 2.0579 (3.0e-10) |
+
+Readings.
+- p153c, c_two(128 → 256) on the ground branch (even at L = 128, odd at L = 256) is 1.902, 1.936, 1.971 for W = 1, 6, 12. The even-sector run at L = 256 is still running at χ = 768, with energy −2570.2571001943 (1.8e-5 above the odd sector) and S̄₆ = 2.0830. With it the parity pairings at W = 1 span 1.90 to 1.99.
+- p153c, parity splitting L·Δ_GC/|t₂| = +0.251, +0.051, −0.374 at L = 64, 128, 256 (the last with the unfinished even run).
+- p153c, effective-model offset ΔS̄₆ = −0.2315, −0.2251, −0.2129 at L = 64, 128, 256. V4's difference is +0.019, inside ±0.05.
+- p153c, valley ratio W_min/W_max = 0.772 at L = 256, under V6's 0.8. On the symmetric line it is 0.999.
+- sym40_n316, c_two(128 → 256) from the two finished even-sector runs is 2.049, 2.074, 2.108 for W = 1, 6, 12. The odd sector is the ground branch at L = 256 (L·Δ_GC/|t₂| = −0.129), and its L = 128 partner is still at χ = 256, so the ground-branch value is not available yet. Effective-model offset at L = 256 is −0.2048.
+
+Against the registration.
+- V2 (falls toward 1) needs c_two(128 → 256) ≤ 1.3 at W = 6 and 12, or c_two(64 → 128) ≤ 1.3. The readings are 1.94 and 1.97, and 2.17 and 2.23. V2 does not hold.
+- V1's thresholds hold: c_two ≥ 1.6 at W = 6 and 12 for both size pairs, and c_prof(256) = 2.03. V1 also requires C1 to C4 for every run and the two-leg control at the same size pairs. C4 fails at L = 256 for every run (S̄₆ rises by 0.024 to 0.027 from χ = 512 to 768, against 0.01), and the L = 256 two-leg control has not finished. V1 is not declared.
+- As registered, the outcome so far is "unresolved", for the reason that the L = 256 entropy is not converged in χ.
+
+Direction of the bias. The entropy rises with χ at fixed size, and the L = 128 partner passes C4 (step 0.0046). An unconverged L = 256 state therefore lowers c_two. Outside the registration, a linear extrapolation in the discarded weight through the last two stages gives S̄₆ = 2.094 at L = 256 and 1.861 at L = 128, and c_two = 2.01.

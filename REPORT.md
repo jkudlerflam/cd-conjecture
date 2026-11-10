@@ -2766,3 +2766,30 @@ Result. Every convergence item passes at both sizes. Energy steps are 2e-9 and 1
 By the registered rule this is the crossover to c = 1. The (48, 96) value was right as a number (the converged L = 96 state gives 1.71), and it is a small-size transient. The Heisenberg control reads 0.93 for the same pair, and C188's other points near the boundary read 0.86 to 0.88, so 0.82 is in family.
 
 Limits. The L = 192 entropy still rises with χ. The last step is a fifth of the one before it, and one more step of the same size would give 0.90. Reaching 1.15 would take four of them. The profile fits fall with size (0.57 at L = 96, 0.24 at L = 192), which says the entropy profile is flattening in the bulk. The mid-chain bond alternation keeps falling (0.0034 to 0.0024 from L = 96 to 192), so these sizes do not show a dimerized state, and the data do not separate a c = 1 liquid with a small velocity from a very weakly gapped one. Either way the point is not a c > 1 candidate, and C188's verdict stands without the exception.
+
+### 9.171 C190 at L = 256: the qubit chain reads c ≈ 1.94 from 128 to 256 at the collaborator's bond and 2.07 on the symmetric line, the fail condition is excluded, and the L = 256 entropy is not yet converged in χ (coordinator, Claude Fable 5, 2026-11-10; `codex/work_C190/gpu/`)
+
+This is the decisive size pair of C190, from the GPU runs at the registered final bond dimension χ = 768. It is a partial collection. Finished: the odd sector of p153c at L = 256 (the collaborator's φ = 1.53 bond and field), and all four L = 256 runs of sym40_n316 (the symmetric-line bond at V/Δ = 40, tuned to n = 3/16) with one L = 128 partner. Not finished: the even sector of p153c at L = 256 (running at χ = 768), the remaining sym40_n316 runs at L = 64 and 128, and the controls at L = 256. Tables are in `codex/work_C190/gpu/RESULT.md`, R6.
+
+Readings.
+
+| key | pair | sectors | c_two, W = 1 | W = 6 | W = 12 | c_prof(256) |
+|---|---|---|---|---|---|---|
+| p153c | 64 → 128 | ground branch | 2.196 | 2.165 | 2.234 | |
+| p153c | 128 → 256 | ground branch (even, odd) | 1.902 | 1.936 | 1.971 | 2.028 |
+| sym40_n316 | 128 → 256 | even, even | 2.049 | 2.074 | 2.108 | 2.032 |
+
+- Convergence. Every finished L = 256 run passes C1 (residual 1e-9), C2 (energy steps near 1e-9, entropy steps 1e-5 or less) and C3 (discarded weight 3e-10). Two initializations of sym40_n316 agree to 1.5e-9 in energy and 1e-4 in S̄₆ in each sector (C5), and its density is on target (C6).
+- C4 fails at L = 256 in every run. S̄₆ rises by 0.024 to 0.027 from χ = 512 to 768, against a bound of 0.01. For the p153c odd sector the sequence at χ = 384, 512, 768 is 2.0203, 2.0559, 2.0828.
+- Faithfulness. The offset between the qubit chain and the effective model at the same mid-chain density is −0.2315, −0.2251, −0.2129 at L = 64, 128, 256 for p153c. V4's difference is +0.019, inside its ±0.05. The qubit chain tracks the effective model with a constant offset.
+- Parity. L·Δ_GC/|t₂| = +0.251, +0.051, −0.374 for p153c at L = 64, 128, 256 (the last uses the unfinished even run), and −0.129 for sym40_n316 at L = 256. All are far inside V5's 1.5. No pair gap is resolved.
+- Valleys. W_min/W_max = 0.999 on the symmetric line and 0.772 at the collaborator's bond, the second slightly under V6's 0.8.
+
+Against the registration (`codex/work_C190/RESULT.md`).
+- V2, "falls toward 1", needs c_two ≤ 1.3 at W = 6 and 12 for either pair. It does not hold. The lowest reading is 1.90.
+- V1, "tracks the effective model", has its thresholds met (c_two ≥ 1.6 at W = 6 and 12 for both pairs, c_prof(256) ≥ 1.6). It also requires C1 to C4 in every run and the two-leg control within 2 ± 0.25 at the same pairs. C4 fails at L = 256 and the control has not finished, so V1 is not declared.
+- As registered, the outcome so far is "unresolved", and the reason is convergence in χ at L = 256, not a low reading.
+
+Direction of the bias. At fixed size the entropy rises with χ, and the L = 128 partner passes C4 (step 0.0046). An unconverged L = 256 state lowers c_two, so 1.94 errs on the low side. Outside the registration, a linear extrapolation in the discarded weight through the last two stages gives S̄₆ = 2.094 at L = 256, 1.861 at L = 128 and c_two = 2.01 at W = 6.
+
+What is left. The even-sector p153c run and the L = 256 controls (in progress on the GPU), the CPU runs of the same configurations as a cross-check, and a further χ stage at L = 256 to close C4. A stage at χ = 1024 needs about 48 GB of GPU memory, more than the 40 GB cards used so far.
