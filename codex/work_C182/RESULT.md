@@ -69,11 +69,11 @@ No c > 1 opportunity was found on the cluster-band side, and none of the local m
 
 ### Against the registration
 
-- Q1, Q2: passed. Q3: passed for N ≤ 3 at φ = π/2, and the onset species at |w| ≥ 2 is a larger balanced cluster. Q4: the pair/atom line is pre-empted by trimers (claim 5), so "the only near-degeneracy is the pair/atom line" is replaced by the pair/trimer and trimer/atom lines, both subject to the lemma. The complete off-symmetric ladder is in the Typhon job. Q5 to Q7: pending on Typhon. Q8: pending. Q9: passed at |w| = 3, inhomogeneous elsewhere (not scored). Q10: not a lead by the registered rule. Q11: passed at |w| = 2; |w| ≤ 1 inhomogeneous. Q12: passed at |w| = 1 and 3. The |w| = 2 μ₂ is nearly flat rather than decreasing, and at |w| = 0.5 a coexistence region appeared that was not predicted.
+- Q1, Q2: passed. Q3: passed for N ≤ 3 at φ = π/2, and the onset species at |w| ≥ 2 is a larger balanced cluster. Q4: the pair/atom line is pre-empted by trimers (claim 5), so "the only near-degeneracy is the pair/atom line" is replaced by the pair/trimer and trimer/atom lines, both subject to the lemma. The complete off-symmetric ladder is in the Typhon job. Q5 to Q8: see "Typhon results" at the end of this file. Q9: passed at |w| = 3, inhomogeneous elsewhere (not scored). Q10: not a lead by the registered rule. Q11: passed at |w| = 2; |w| ≤ 1 inhomogeneous. Q12: passed at |w| = 1 and 3. The |w| = 2 μ₂ is nearly flat rather than decreasing, and at |w| = 0.5 a coexistence region appeared that was not predicted.
 
 ### Typhon job
 
-Job 17604443 (partition typhon, one 48-core node, 320 GB, 3 days), submitted 2026-11-09, still pending at the last check (estimated start 2026-11-09 20:08). Scratch /scratch/lustre/jkudlerflam/c182/.
+Job 17604443 (partition typhon, one 48-core node, 320 GB, 3 days), submitted 2026-11-09, completed 2026-11-10 02:30 EST (results in the last section of this file). Scratch /scratch/lustre/jkudlerflam/c182/.
 - Stage 1: 48 cluster-ladder tasks (out/cl_w{1,1.5,2,2.5,3,3.5}_d{0,0.25,0.5,0.75,1,1.25,1.5,2}.json), 8 hexamer tasks (out/l6_w{2.0,2.5,3.0,3.5}_R{16,18}.json), and the DMRG screen (out/s_*.jsonl and controls out/c1_*.jsonl, out/c2_*.jsonl, 848 runs), logs in logs/.
 - Stage 2: typhon/stage2_ranking.txt, typhon/tasks2.txt, out2/*.jsonl, summary1.txt, summary2.txt.
 - Collect with
@@ -92,3 +92,56 @@ Job 17604443 (partition typhon, one 48-core node, 320 GB, 3 days), submitted 202
 ### Files
 
 pairband.py, nbody.py, clusters.py, ladder6.py, pairmass_exact.py, sym_pairs.py, make_tasks.py, select_stage2.py, summarize.py, mini_an.py, eos_an.py, typhon/; C176's fibdmrg.py, run.py and analyze.py were copied unmodified. Outputs: sym_pairs.out, pairmass_exact.out, local/ (cl_w3_*, l6_small.jsonl, ladder_w3_summary.out, mini/, b2/, b3/, b4/, eos/, each with summary.out or eos.out).
+
+## Typhon results (collected 2026-11-10 by the coordinator, Claude Fable 5)
+
+The job ran both stages to completion. Outputs are in typhon_out/, with the tables typhon_out/clusters_summary.out (`python3 summarize.py clusters typhon_out`), typhon_out/screen_summary.out (`python3 summarize.py screen typhon_out`) and typhon_out/stage2_reading.out (`python3 -E -s stage2_read.py typhon_out`). The verdict above changes in one respect. The DMRG screen has four points that pass the registered stage-2 reading, so Q5 is not borne out as written. None of them is a new mechanism, and none is a converged candidate (see the assessment at the end).
+
+A caveat on the job's own summary2.txt. It was made with C176's analyze.py, which files the N + 1 runs under the same series and size as the main runs, so its L = 144 and 192 rows are the N + 1 states. It is not a valid stage-2 reading. stage2_read.py selects the main-N runs by tag and applies Q7 as registered.
+
+### Cluster ladder (Q3, Q4, Q6)
+
+- [numerical] At φ = π/2 the onset species among N ≤ 5 is the pair at |w| = 1 (e₂ = −0.00976, e₃ = −0.00649, e₄ = −0.00879) and 1.5 (e₂ = −0.03179, e₄ = −0.03076), the tetramer at |w| = 2 (e₂ = −0.06127, e₄ = −0.06345, e₅ = −0.05691), 2.5 (e₄ = −0.09550) and 3 (e₄ = −0.11073), and the pentamer at 3.5 (e₅ = −0.09520). Here e_N = E_N/N − ε_min.
+- [numerical] The hexamer per particle at R = 16 and 18 is −0.06228, −0.06334 at |w| = 2, −0.10155, −0.10178 at 2.5, −0.11954, −0.11959 at 3, and −0.10128, −0.10130 at 3.5. It lies below the tetramer and pentamer for |w| ≥ 2.5. At |w| = 2 it is level with the tetramer (−0.06345) and still moving with R. Q6 is borne out for |w| ≤ 1.5 and |w| ≥ 2.5 and is marginal at |w| = 2.
+- [numerical] Off the symmetric line the onset species against δ/E_b = 0, 0.25, 0.5, 0.75, 1 is N = 2, 2, 2, 2, 1 at |w| = 1, then 2, 2, 2, 2, 3 at 1.5, then 4, 4, 4, 5, 5 at 2, then 4, 4, 5, 5, 5 at 2.5, then 4, 5, 5, 5, 5 at 3 (and still 5 at 1.25), and 5 throughout at 3.5. For larger offsets the onset is the single atom. Two rows (|w| = 1.5 at δ = 2E_b and 2.5 at 1.5E_b) print N = 2 with e₂ = 0 to five digits, which is a tie with the atom threshold. So the trimer is the onset species at one point only (|w| = 1.5, δ = E_b, inside the trimer window of claim 5). For |w| ≥ 2 the lowest cluster among N ≤ 5 is the tetramer or the pentamer up to δ = E_b, and these tasks (N ≤ 5 only) do not decide where that ladder stops.
+- Flag. Three rows at |w| = 3.5 (δ/E_b = 1.25, 1.5 and 2) are identical, with φ = 1.54226 and δ printed as 0. The bisection in clusters.phi_for_delta appears to have converged to the φ where the second valley minimum disappears, so offsets that large do not exist at |w| = 3.5 and these three rows are one point at that edge.
+
+### DMRG screen (Q5, Q8)
+
+- [numerical] 210 screen points. 101 are homogeneous at L = 96 (|n_mid − N/L| ≤ 0.02). 98 have c_two(48 → 96, W = 6) > 1.4 with truncation below 1e-6, and 85 of those are inhomogeneous (self-bound or phase-separated, n_mid far from N/L). The homogeneous points fall as 7 below 0.8, 81 between 0.8 and 1.2, none between 1.2 and 1.4, and 13 above 1.4.
+- [numerical] The 13 homogeneous flagged points are s_w2.5_p1.45_n1o6 (7.031, with the c = 1 window reading 7.220, an artefact), s_w1_x2_n1o12 (1.723), s_w1.5_p1.45_n1o6 (1.576), s_w1_p1.45_n1o6 (1.574), s_w1.5_p1.3_n1o4 (1.550), s_w0.5_{x0, x0.5, x1, x2}_n1o12 (1.531 each), s_w1_{x0, x0.5, x1}_n1o12 (1.486, 1.485, 1.485) and s_w3_p1.45_n1o4 (1.444, with c_prof = 0.33).
+- [numerical] Screen controls, c_two(48 → 96) at W = 1 and 6: c1 reads 1.047, 0.979 at n = 1/4 and 1.117, 1.016 at n = 1/6, and c2 reads 2.121, 1.913 and 2.218, 1.808.
+- Q8, second bullet (|w| ≥ 2 at φ = π/2). Every density up to n = 1/4 or 1/3 is inhomogeneous (n_mid 0.15 to 0.35 against N/L from 1/12 to 1/3), so "self-bound" holds and the c_two values there (−2.5 to 6.5) carry no meaning. At n = 5/12 the reading is 0.94 at every |w|.
+- Q8, third bullet (φ = 1.45 and 1.30, c_two below 1.3 everywhere) is wrong. Five homogeneous off-line points read above 1.3 at the screen (1.55, 1.58, 1.57, 7.03 and 1.44, listed above).
+
+### Stage 2 (Q7), from the main-N runs
+
+All stage-2 runs finished their schedules (23 sweeps, χ = 512). Controls at n = 1/4, c_two(96 → 192) at W = 1, 6, 12: c1 = 1.037, 0.979, 1.017 and c2 = 2.056, 1.923, 1.978 (truncation 8.7e-9), so the size pair is calibrated. n_mid − N/L is about +0.009 at L = 192 for every point.
+
+| point | c_two(48 → 96) | c_two(96 → 144) | c_two(144 → 192) | c_two(96 → 192) | c_prof(192) | W_min/W_max | L·Δ_P at 96, 144, 192 | trunc(192) | Q7 |
+|---|---|---|---|---|---|---|---|---|---|
+| s_w0.5_x0_n1o12 | 1.531 | 1.625 | 1.712 | 1.661 | 2.253 | 1.000 | 1.514, 1.413, 1.356 | 3.6e-9 | passes |
+| s_w1.5_p1.3_n1o4 | 1.550 | 2.289 | 2.591 | 2.414 | 3.719 | 0.169 | −1.013, 0.602, 0.571 | 1.2e-8 | passes |
+| s_w1.5_p1.45_n1o6 | 1.576 | 2.297 | 0.976 | 1.748 | 2.159 | 0.203 | 0.893, 1.061, 1.279 | 1.7e-8 | passes |
+| s_w1_p1.45_n1o6 | 1.574 | 1.101 | 2.221 | 1.566 | 2.188 | 0.306 | 1.481, 0.439, 0.089 | 3.0e-8 | passes |
+| s_w1_x2_n1o12 | 1.723 | 1.765 | 1.721 | 1.747 | 2.159 | 0.797 | −0.814, 1.043, 1.252 | 4.4e-9 | fails (gap) |
+| s_w2.5_p1.45_n1o6 | 7.031 | 1.076 | 0.975 | 1.034 | 7.031 | 0.079 | −0.596, 0.914, 0.918 | 8.1e-11 | fails |
+
+All c_two entries are at W = 6. The step |S̄₆(χ = 512) − S̄₆(χ = 384)| at L = 192 is 0.0010, 0.0115, 0.0051, 0.0055, 0.0011 and 0.0000 in the order of the table. For s_w1.5_p1.3_n1o4 the gap changes sign between L = 96 and 144, and the rule was applied to its absolute value.
+
+### Against the registration, and assessment
+
+- Q5 ("none passes the converged stage") is not borne out. Four points pass the Q7 reading as registered. Q7's own rule therefore names them candidates of this screen.
+- s_w0.5_x0_n1o12 (|w| = 0.5, the symmetric line, n = 1/12) is the crossover that Q8 anticipated. It passes Q7, but Q8 also requires an independent pair-gap estimate above the finite-size spacing, and none exists, so by the registered rule it is not counted. Its three size pairs agree (1.63, 1.71, 1.66), its valleys are balanced and L·Δ_P falls slowly, which is what a pair gap far below the level spacing looks like at these sizes. It is the same question as the main candidate at |w| = 1, at weaker binding.
+- The three off-line points (φ = 1.45 and 1.30, |w| = 1 and 1.5) are valley-imbalanced (W_min/W_max = 0.17 to 0.31), their two size pairs disagree by more than 1 (0.98 against 2.30, 2.22 against 1.10), and c_prof(192) is 2.2 to 3.7. These are not converged readings of a central charge. They sit in the partially polarized two-valley regime that C181 and C187 already study closer to the line (REPORT §9.156, §9.157, §9.173), so they are further leads in that family and not a new class.
+- None of this changes the verdict on the cluster-band side. The |w| ≥ 2 ladder beyond N = 6 is still open.
+
+### Left open after the Typhon job
+
+1. An independent pair-gap estimate at |w| = 0.5, n = 1/12 (the Q8 condition), and L = 256 or 384 for that point.
+2. The off-line points at larger sizes with N ± 1 and N ± 2 partners, to see whether the erratic size dependence is a shell effect of the imbalanced valleys.
+3. The ladder beyond N = 6 at |w| = 2, where the hexamer and tetramer are level.
+
+### Files added
+
+stage2_read.py; typhon_out/ (summary1.txt, summary2.txt, stage2_ranking.txt, tasks2.txt, clusters_summary.out, screen_summary.out, stage2_reading.out, out/ with the cluster and hexamer JSON files, the controls and the six stage-2 screen series, out2/ with the stage-2 runs). The 840 raw first-stage screen files (121 MB) are kept out of git by typhon_out/out/.gitignore. Their numbers are in summary1.txt and screen_summary.out, and the files remain on Typhon under /scratch/lustre/jkudlerflam/c182/out/.

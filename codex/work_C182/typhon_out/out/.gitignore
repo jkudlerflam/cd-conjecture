@@ -1,0 +1,10 @@
+# The 840 raw first-stage screen runs (121 MB) stay out of git. Their numbers are in ../summary1.txt and
+# ../screen_summary.out, and the files remain on Typhon under the job's scratch out/ folder.
+# The six series that went to stage 2 are kept, because stage2_read.py needs them.
+s_*.jsonl
+!s_w0.5_x0_n1o12_L*.jsonl
+!s_w1.5_p1.3_n1o4_L*.jsonl
+!s_w1.5_p1.45_n1o6_L*.jsonl
+!s_w1_p1.45_n1o6_L*.jsonl
+!s_w1_x2_n1o12_L*.jsonl
+!s_w2.5_p1.45_n1o6_L*.jsonl

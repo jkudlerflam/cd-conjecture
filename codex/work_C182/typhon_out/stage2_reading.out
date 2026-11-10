@@ -1,0 +1,65 @@
+== c1_n1o4  N = [24, 36, 48]  done = [True, True, True]
+   Sbar6: 0.8857 0.9518 0.9988  trunc: 1.8e-13 2.3e-13 2.6e-13  |Sbar6(512) - Sbar6(384)| at 192 = 0.0000
+   c_two(96 -> 144) W = 1, 6, 12: 1.039 0.978 1.023
+   c_two(144 -> 192) W = 1, 6, 12: 1.034 0.981 1.009
+   c_two(96 -> 192) W = 1, 6, 12: 1.037 0.979 1.017
+   c_two(48 -> 96, W = 6, screen) = 0.979   c_prof(192) = 0.975   n_mid(192) = 0.2495 (N/L = 0.2500)   Wmin/Wmax = 0.032
+   L*Delta_P at 96 (screen), 144, 192: nan nan nan
+== c2_n1o4  N = [24, 36, 48]  done = [True, True, True]
+   Sbar6: 1.7664 1.8966 1.9885  trunc: 4.7e-10 3.4e-09 8.7e-09  |Sbar6(512) - Sbar6(384)| at 192 = 0.0031
+   c_two(96 -> 144) W = 1, 6, 12: 2.075 1.927 1.993
+   c_two(144 -> 192) W = 1, 6, 12: 2.029 1.917 1.956
+   c_two(96 -> 192) W = 1, 6, 12: 2.056 1.923 1.978
+   c_two(48 -> 96, W = 6, screen) = 1.913   c_prof(192) = 1.940   n_mid(192) = 0.2525 (N/L = 0.2500)   Wmin/Wmax = 0.996
+   L*Delta_P at 96 (screen), 144, 192: nan nan nan
+== s_w0.5_x0_n1o12  N = [8, 12, 16]  done = [True, True, True]
+   Sbar6: 1.7071 1.8170 1.8991  trunc: 2.2e-11 1.0e-09 3.6e-09  |Sbar6(512) - Sbar6(384)| at 192 = 0.0010
+   c_two(96 -> 144) W = 1, 6, 12: 1.681 1.625 1.636
+   c_two(144 -> 192) W = 1, 6, 12: 1.751 1.712 1.691
+   c_two(96 -> 192) W = 1, 6, 12: 1.710 1.661 1.659
+   c_two(48 -> 96, W = 6, screen) = 1.531   c_prof(192) = 2.253   n_mid(192) = 0.0924 (N/L = 0.0833)   Wmin/Wmax = 1.000
+   L*Delta_P at 96 (screen), 144, 192: 1.514 1.413 1.356
+== s_w1.5_p1.3_n1o4  N = [24, 36, 48]  done = [True, True, True]
+   Sbar6: 1.7922 1.9469 2.0712  trunc: 9.7e-11 1.4e-09 1.2e-08  |Sbar6(512) - Sbar6(384)| at 192 = 0.0115
+   c_two(96 -> 144) W = 1, 6, 12: 2.156 2.289 2.747
+   c_two(144 -> 192) W = 1, 6, 12: 2.697 2.591 2.437
+   c_two(96 -> 192) W = 1, 6, 12: 2.381 2.414 2.618
+   c_two(48 -> 96, W = 6, screen) = 1.550   c_prof(192) = 3.719   n_mid(192) = 0.2590 (N/L = 0.2500)   Wmin/Wmax = 0.169
+   L*Delta_P at 96 (screen), 144, 192: -1.013 0.602 0.571
+== s_w1.5_p1.45_n1o6  N = [16, 24, 32]  done = [True, True, True]
+   Sbar6: 1.7655 1.9208 1.9675  trunc: 1.3e-10 4.0e-09 1.7e-08  |Sbar6(512) - Sbar6(384)| at 192 = 0.0051
+   c_two(96 -> 144) W = 1, 6, 12: 2.530 2.297 1.943
+   c_two(144 -> 192) W = 1, 6, 12: 0.753 0.976 1.395
+   c_two(96 -> 192) W = 1, 6, 12: 1.793 1.748 1.716
+   c_two(48 -> 96, W = 6, screen) = 1.576   c_prof(192) = 2.159   n_mid(192) = 0.1759 (N/L = 0.1667)   Wmin/Wmax = 0.203
+   L*Delta_P at 96 (screen), 144, 192: 0.893 1.061 1.279
+== s_w1_p1.45_n1o6  N = [16, 24, 32]  done = [True, True, True]
+   Sbar6: 1.8534 1.9278 2.0343  trunc: 9.7e-10 1.1e-08 3.0e-08  |Sbar6(512) - Sbar6(384)| at 192 = 0.0055
+   c_two(96 -> 144) W = 1, 6, 12: 0.820 1.101 1.540
+   c_two(144 -> 192) W = 1, 6, 12: 2.257 2.221 2.167
+   c_two(96 -> 192) W = 1, 6, 12: 1.416 1.566 1.800
+   c_two(48 -> 96, W = 6, screen) = 1.574   c_prof(192) = 2.188   n_mid(192) = 0.1759 (N/L = 0.1667)   Wmin/Wmax = 0.306
+   L*Delta_P at 96 (screen), 144, 192: 1.481 0.439 0.089
+== s_w1_x2_n1o12  N = [8, 12, 16]  done = [True, True, True]
+   Sbar6: 1.6576 1.7768 1.8593  trunc: 1.8e-11 1.3e-09 4.4e-09  |Sbar6(512) - Sbar6(384)| at 192 = 0.0011
+   c_two(96 -> 144) W = 1, 6, 12: 1.645 1.765 1.932
+   c_two(144 -> 192) W = 1, 6, 12: 1.631 1.721 1.844
+   c_two(96 -> 192) W = 1, 6, 12: 1.639 1.747 1.895
+   c_two(48 -> 96, W = 6, screen) = 1.723   c_prof(192) = 2.159   n_mid(192) = 0.0932 (N/L = 0.0833)   Wmin/Wmax = 0.797
+   L*Delta_P at 96 (screen), 144, 192: -0.814 1.043 1.252
+== s_w2.5_p1.45_n1o6  N = [16, 24, 32]  done = [True, True, True]
+   Sbar6: 1.7481 1.8208 1.8676  trunc: 3.2e-12 2.6e-11 8.1e-11  |Sbar6(512) - Sbar6(384)| at 192 = 0.0000
+   c_two(96 -> 144) W = 1, 6, 12: 0.931 1.076 1.441
+   c_two(144 -> 192) W = 1, 6, 12: 0.906 0.975 1.155
+   c_two(96 -> 192) W = 1, 6, 12: 0.921 1.034 1.323
+   c_two(48 -> 96, W = 6, screen) = 7.031   c_prof(192) = 7.031   n_mid(192) = 0.1750 (N/L = 0.1667)   Wmin/Wmax = 0.079
+   L*Delta_P at 96 (screen), 144, 192: -0.596 0.914 0.918
+
+controls c_two(96 -> 192, W = 6): c1 = 0.979, c2 = 1.923  -> calibrated
+registered reading (Q7): candidate iff c_two(96->192, W=6) > 1.2, not below c_two(48->96) by more than 0.3, trunc(192) < 1e-7, controls calibrated, L*Delta_P growth 96 -> 192 at most 50 percent
+s_w0.5_x0_n1o12        c(96->192) = 1.661 [ok]  vs screen 1.531 [ok]  trunc 3.6e-09 [ok]  gap 1.514 -> 1.356 [ok]  => CANDIDATE   (c(144->192) = 1.712, n_mid - N/L = +0.0091, chi step 0.0010)
+s_w1.5_p1.3_n1o4       c(96->192) = 2.414 [ok]  vs screen 1.550 [ok]  trunc 1.2e-08 [ok]  gap -1.013 -> 0.571 [ok]  => CANDIDATE   (c(144->192) = 2.591, n_mid - N/L = +0.0090, chi step 0.0115)
+s_w1.5_p1.45_n1o6      c(96->192) = 1.748 [ok]  vs screen 1.576 [ok]  trunc 1.7e-08 [ok]  gap 0.893 -> 1.279 [ok]  => CANDIDATE   (c(144->192) = 0.976, n_mid - N/L = +0.0092, chi step 0.0051)
+s_w1_p1.45_n1o6        c(96->192) = 1.566 [ok]  vs screen 1.574 [ok]  trunc 3.0e-08 [ok]  gap 1.481 -> 0.089 [ok]  => CANDIDATE   (c(144->192) = 2.221, n_mid - N/L = +0.0093, chi step 0.0055)
+s_w1_x2_n1o12          c(96->192) = 1.747 [ok]  vs screen 1.723 [ok]  trunc 4.4e-09 [ok]  gap -0.814 -> 1.252 [fail]  => not a candidate   (c(144->192) = 1.721, n_mid - N/L = +0.0099, chi step 0.0011)
+s_w2.5_p1.45_n1o6      c(96->192) = 1.034 [fail]  vs screen 7.031 [fail]  trunc 8.1e-11 [ok]  gap -0.596 -> 0.918 [fail]  => not a candidate   (c(144->192) = 0.975, n_mid - N/L = +0.0083, chi step 0.0000)

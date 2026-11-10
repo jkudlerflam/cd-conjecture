@@ -226,3 +226,40 @@ GPU runs xx2 at L = 64, 128, 256 and xx1 at L = 64, 128, all with status done, i
 - The two-leg control depends strongly on the window at 64 → 128 (2.90 at W = 1, 2.36 at W = 12), which is the oscillation of a free two-band entropy with the cut position. The candidate does not show a spread of that size.
 - The two-leg run at L = 256 agrees with the exact free-fermion values quoted in `../RESULT.md` (2.0311, 2.0108, 2.0162) to 4e-4. Its residual, entropy steps, density step, discarded weight and C4 pass. Its last energy step, 3.2e-8 after the maximum of six sweeps, is above the 1e-8 of C2. The χ = 1024 continuation of R8 adds sweeps to this run.
 - With this, V1 at L = 256 waits on C4 for the candidate runs, and on the energy step of the control.
+
+## R10. Two more tuned keys at χ = 768: rat_n316 and sym40_n18 (collected 2026-11-10 03:40 EST)
+
+GPU runs of the collaborator's rational bond tuned to n = 3/16 (rat_n316, h_z = −19.975988986) and of the symmetric-line bond tuned to n = 1/8 (sym40_n18, h_z = −19.976333694), at L = 64, 128 and 256, both parity sectors, initialization rand1, all with status done. Files in typhon_out/outG/. The analysis is typhon_out/analyze_G_rat_sym18.txt, made with `python3 -E -s analyze_keys.py outG` from typhon_out/ (the script is `../analyze_keys.py` there). It applies C1 to C4 and C6 and computes c_two for the ground branch and for each sector.
+
+| key | L | sector | final χ | E | S̄₁, S̄₆, S̄₁₂ | n_mid | discarded weight | C4 step | C1 to C4 |
+|---|---|---|---|---|---|---|---|---|---|
+| rat_n316 | 64 | even | 384 | −650.0447774541 | 1.5732, 1.5658, 1.5494 | 0.1852 | 1.5e-11 | 0.0003 | pass |
+| rat_n316 | 64 | odd | 384 | −650.0448097690 | 1.5957, 1.5897, 1.5736 | 0.2016 | 2.4e-11 | 0.0004 | pass |
+| rat_n316 | 128 | even | 512 | −1290.1204465833 | 1.8505, 1.8415, 1.8343 | 0.2048 | 2.2e-10 | 0.0041 | pass |
+| rat_n316 | 128 | odd | 512 | −1290.1204594204 | 1.8404, 1.8325, 1.8255 | 0.1967 | 2.0e-10 | 0.0037 | pass |
+| rat_n316 | 256 | even | 768 | −2570.2715836167 | 2.0675, 2.0629, 2.0597 | 0.1955 | 3.0e-10 | 0.0247 | C4 fails |
+| rat_n316 | 256 | odd | 768 | −2570.2715871821 | 2.0720, 2.0673, 2.0641 | 0.1995 | 3.2e-10 | 0.0252 | C4 fails |
+| sym40_n18 | 64 | even | 384 | −650.0571061504 | 1.3738, 1.3874, 1.3815 | 0.1230 | 1.4e-12 | 0.0000 | pass |
+| sym40_n18 | 64 | odd | 384 | −650.0571528391 | 1.4747, 1.4705, 1.4531 | 0.1348 | 2.2e-12 | 0.0001 | pass |
+| sym40_n18 | 128 | even | 512 | −1290.1464438772 | 1.7465, 1.7373, 1.7305 | 0.1393 | 6.1e-11 | 0.0016 | pass |
+| sym40_n18 | 128 | odd | 512 | −1290.1464423236 | 1.7221, 1.7158, 1.7102 | 0.1315 | 4.8e-11 | 0.0013 | pass |
+| sym40_n18 | 256 | even | 768 | −2570.3249046022 | 1.9591, 1.9531, 1.9502 | 0.1324 | 1.1e-10 | 0.0149 | C4 fails |
+| sym40_n18 | 256 | odd | 768 | −2570.3249096989 | 1.9694, 1.9658, 1.9636 | 0.1359 | 1.2e-10 | 0.0140 | C4 fails |
+
+Every run meets C1 to C3 (residual 1e-9, last energy step at most 1.8e-9, entropy step at most 3.7e-5). The L = 256 runs have 18 sweeps, 4 at χ = 768.
+
+| c_two at W = 1, 6, 12 | 64 → 128 | 128 → 256 |
+|---|---|---|
+| rat_n316, ground branch (odd at all three sizes) | 2.119, 2.102, 2.180 | 2.004, 2.033, 2.065 |
+| rat_n316, even sector | 2.401, 2.386, 2.466 | 1.878, 1.917, 1.952 |
+| sym40_n18, ground branch (odd, even, odd) | 2.353, 2.309, 2.401 | 1.930, 1.978, 2.018 |
+| sym40_n18, even sector | 3.226, 3.028, 3.021 | 1.840, 1.868, 1.902 |
+| sym40_n18, odd sector | 2.141, 2.124, 2.225 | 2.141, 2.164, 2.193 |
+| p153c ground branch (R5 to R7) | 2.196, 2.165, 2.234 | 1.902, 1.936, 1.971 |
+| sym40_n316 ground branch (R6) | | 2.049, 2.074, 2.108 |
+
+- Sector splittings E(even) − E(odd): rat_n316 +3.23e-5, +1.28e-5, +3.57e-6 at L = 64, 128, 256, and sym40_n18 +4.67e-5, −1.55e-6, +5.10e-6. For sym40_n18 the ground sector alternates, so its ground branch mixes sectors and the per-sector rows are the cleaner comparison.
+- C6 passes for both keys. The ground-sector n_mid at L = 256 is 0.1995 against the target 0.1957, and 0.1359 against 0.1326.
+- Against the registration. V2 is excluded for both keys, since c_two(128 → 256) is 1.87 to 2.19 at W = 6 and 12 in every sector, and c_two(64 → 128) is above 2. The values meet V1's thresholds, but V1 is not declared, because C4 fails at L = 256 (steps 0.025 for rat_n316 and 0.014 to 0.015 for sym40_n18 against the allowed 0.01). This is the same pattern as p153c and sym40_n316.
+- Four keys now read about 2 from 128 to 256 at χ = 768, at two densities (n = 3/16 and 1/8) and at three bonds (the collaborator's field, their rational bond, the symmetric line). The n = 1/8 point has the smaller C4 step.
+- These two keys are not in the χ = 1024 job of R8. A χ = 1024 stage for them would need its own registration and submission.
