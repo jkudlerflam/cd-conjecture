@@ -1,0 +1,269 @@
+GPU 0 on apollo02.sns.ias.edu Tue Nov 10 07:34:44 EST 2026
+GPU 0: NVIDIA A100-PCIE-40GB (UUID: GPU-d803bca1-8656-c2f5-2f52-c4ba0a2d49d8)
+cupy 13.6.0
+skip xx2_L256_P0_rand1
+xx2_L128_P0_rand1.json: L=128 P=0 Dmax=512 load 3s meta={'sweeps': 20}
+   site 0/128 rows 1 t=0.9s
+   site 32/128 rows 33 t=1.4s
+   site 64/128 rows 77 t=2.2s
+   site 96/128 rows 52 t=3.4s
+   check {"E_phys": -6.948, "E_stored": -6.948, "dE": -1.323e-13, "E_stored_is_last_sweep": true, "Sbar6": 1.791, "Sbar6_stored": 1.791, "dSbar6": -2.22e-16, "dS_max": 3.464e-14, "dGb_window": 4.524e-15, "ddens": 4.274e-15, "ckpt_sweeps": 20, "hist_len": 20}
+skip xx2_L64_P0_rand1
+xx1_L256_P0_rand1.json: L=256 P=0 Dmax=289 load 1s meta={'sweeps': 16}
+   site 0/256 rows 1 t=0.4s
+   site 32/256 rows 33 t=0.6s
+   site 64/256 rows 65 t=0.8s
+   site 96/256 rows 97 t=1.1s
+   site 128/256 rows 141 t=1.6s
+   site 160/256 rows 116 t=2.2s
+   site 192/256 rows 84 t=2.6s
+   site 224/256 rows 52 t=2.9s
+   check {"E_phys": -12.16, "E_stored": -12.16, "dE": -2.061e-13, "E_stored_is_last_sweep": true, "Sbar6": 1.121, "Sbar6_stored": 1.121, "dSbar6": -8.66e-15, "dS_max": 5.063e-14, "dGb_window": 2.109e-15, "ddens": 5.329e-15, "ckpt_sweeps": 16, "hist_len": 16}
+xx1_L128_P1_rand1.json: L=128 P=1 Dmax=185 load 0s meta={'sweeps': 15}
+   site 0/128 rows 1 t=0.2s
+   site 32/128 rows 33 t=0.4s
+   site 64/128 rows 77 t=0.6s
+   site 96/128 rows 52 t=0.9s
+   check {"E_phys": -6.124, "E_stored": -6.124, "dE": -7.105e-15, "E_stored_is_last_sweep": true, "Sbar6": 1.008, "Sbar6_stored": 1.008, "dSbar6": -1.799e-14, "dS_max": 5.662e-14, "dGb_window": 3.053e-15, "ddens": 3.053e-15, "ckpt_sweeps": 15, "hist_len": 15}
+skip xx1_L64_P1_rand1
+p153c_L256_P0_rand1.json: L=256 P=0 Dmax=768 load 26s meta={'sweeps': 20}
+   site 0/256 rows 1 t=1.1s
+   site 32/256 rows 33 t=1.7s
+   site 64/256 rows 65 t=4.2s
+   site 96/256 rows 97 t=7.4s
+   site 128/256 rows 141 t=11.6s
+   site 160/256 rows 116 t=17.1s
+   site 192/256 rows 84 t=21.2s
+   site 224/256 rows 52 t=24.2s
+   check {"E_phys": -2570.0, "E_stored": -2570.0, "dE": -1.819e-12, "E_stored_is_last_sweep": true, "Sbar6": 2.083, "Sbar6_stored": 2.083, "dSbar6": -8.882e-16, "dS_max": 1.688e-14, "dGb_window": 7.494e-15, "ddens": 7.494e-15, "ckpt_sweeps": 20, "hist_len": 20}
+p153c_L256_P1_rand1.json: L=256 P=1 Dmax=768 load 31s meta={'sweeps': 18}
+   site 0/256 rows 1 t=1.0s
+   site 32/256 rows 33 t=1.6s
+   site 64/256 rows 65 t=4.1s
+   site 96/256 rows 97 t=7.3s
+   site 128/256 rows 141 t=11.6s
+   site 160/256 rows 116 t=17.1s
+   site 192/256 rows 84 t=21.1s
+   site 224/256 rows 52 t=24.1s
+   check {"E_phys": -2570.0, "E_stored": -2570.0, "dE": -2.274e-12, "E_stored_is_last_sweep": true, "Sbar6": 2.083, "Sbar6_stored": 2.083, "dSbar6": -3.553e-15, "dS_max": 3.508e-14, "dGb_window": 3.469e-15, "ddens": 7.438e-15, "ckpt_sweeps": 18, "hist_len": 18}
+sym40_n316_L256_P0_prod50.json: L=256 P=0 Dmax=768 load 13s meta={'sweeps': 18}
+   site 0/256 rows 1 t=1.4s
+   site 32/256 rows 33 t=2.0s
+   site 64/256 rows 65 t=4.5s
+   site 96/256 rows 97 t=7.6s
+   site 128/256 rows 141 t=11.8s
+   site 160/256 rows 116 t=17.2s
+   site 192/256 rows 84 t=21.2s
+   site 224/256 rows 52 t=24.2s
+   check {"E_phys": -2570.0, "E_stored": -2570.0, "dE": -9.095e-13, "E_stored_is_last_sweep": true, "Sbar6": 2.058, "Sbar6_stored": 2.058, "dSbar6": -3.553e-15, "dS_max": 3.708e-14, "dGb_window": 5.773e-15, "ddens": 7.161e-15, "ckpt_sweeps": 18, "hist_len": 18}
+sym40_n316_L256_P1_rand1.json: L=256 P=1 Dmax=768 load 14s meta={'sweeps': 18}
+   site 0/256 rows 1 t=1.3s
+   site 32/256 rows 33 t=2.0s
+   site 64/256 rows 65 t=4.5s
+   site 96/256 rows 97 t=7.6s
+   site 128/256 rows 141 t=11.8s
+   site 160/256 rows 116 t=17.2s
+   site 192/256 rows 84 t=21.2s
+   site 224/256 rows 52 t=24.2s
+   check {"E_phys": -2570.0, "E_stored": -2570.0, "dE": -9.095e-13, "E_stored_is_last_sweep": true, "Sbar6": 2.056, "Sbar6_stored": 2.056, "dSbar6": -2.22e-15, "dS_max": 2.554e-14, "dGb_window": 1.021e-14, "ddens": 1.484e-14, "ckpt_sweeps": 18, "hist_len": 18}
+rat_n316_L256_P0_rand1.json: L=256 P=0 Dmax=768 load 26s meta={'sweeps': 18}
+   site 0/256 rows 1 t=1.0s
+   site 32/256 rows 33 t=1.6s
+   site 64/256 rows 65 t=4.0s
+   site 96/256 rows 97 t=7.2s
+   site 128/256 rows 141 t=11.5s
+   site 160/256 rows 116 t=17.0s
+   site 192/256 rows 84 t=21.1s
+   site 224/256 rows 52 t=24.1s
+   check {"E_phys": -2570.0, "E_stored": -2570.0, "dE": -2.274e-12, "E_stored_is_last_sweep": true, "Sbar6": 2.063, "Sbar6_stored": 2.063, "dSbar6": -1.332e-15, "dS_max": 3.575e-14, "dGb_window": 2.942e-15, "ddens": 1.832e-14, "ckpt_sweeps": 18, "hist_len": 18}
+rat_n316_L256_P1_rand1.json: L=256 P=1 Dmax=768 load 30s meta={'sweeps': 18}
+   site 0/256 rows 1 t=1.0s
+   site 32/256 rows 33 t=1.6s
+   site 64/256 rows 65 t=4.0s
+   site 96/256 rows 97 t=7.2s
+   site 128/256 rows 141 t=11.5s
+   site 160/256 rows 116 t=17.0s
+   site 192/256 rows 84 t=21.0s
+   site 224/256 rows 52 t=24.0s
+   check {"E_phys": -2570.0, "E_stored": -2570.0, "dE": -1.364e-12, "E_stored_is_last_sweep": true, "Sbar6": 2.067, "Sbar6_stored": 2.067, "dSbar6": 2.22e-15, "dS_max": 3.797e-14, "dGb_window": 9.437e-15, "ddens": 9.437e-15, "ckpt_sweeps": 18, "hist_len": 18}
+sym40_n18_L256_P0_rand1.json: L=256 P=0 Dmax=768 load 13s meta={'sweeps': 18}
+   site 0/256 rows 1 t=1.3s
+   site 32/256 rows 33 t=1.8s
+   site 64/256 rows 65 t=4.3s
+   site 96/256 rows 97 t=7.4s
+   site 128/256 rows 141 t=11.7s
+   site 160/256 rows 116 t=17.1s
+   site 192/256 rows 84 t=21.1s
+   site 224/256 rows 52 t=24.0s
+   check {"E_phys": -2570.0, "E_stored": -2570.0, "dE": -1.364e-12, "E_stored_is_last_sweep": true, "Sbar6": 1.953, "Sbar6_stored": 1.953, "dSbar6": -2.442e-15, "dS_max": 3.308e-14, "dGb_window": 3.803e-15, "ddens": 1.021e-14, "ckpt_sweeps": 18, "hist_len": 18}
+sym40_n18_L256_P1_rand1.json: L=256 P=1 Dmax=768 load 15s meta={'sweeps': 18}
+   site 0/256 rows 1 t=1.3s
+   site 32/256 rows 33 t=1.8s
+   site 64/256 rows 65 t=4.2s
+   site 96/256 rows 97 t=7.4s
+   site 128/256 rows 141 t=11.6s
+   site 160/256 rows 116 t=17.0s
+   site 192/256 rows 84 t=21.0s
+   site 224/256 rows 52 t=24.0s
+   check {"E_phys": -2570.0, "E_stored": -2570.0, "dE": -1.364e-12, "E_stored_is_last_sweep": true, "Sbar6": 1.966, "Sbar6_stored": 1.966, "dSbar6": 1.554e-15, "dS_max": 3.086e-14, "dGb_window": 4.413e-15, "ddens": 4.802e-15, "ckpt_sweeps": 18, "hist_len": 18}
+p153_n316_L256_P0_rand1.json: L=256 P=0 Dmax=768 load 27s meta={'sweeps': 18}
+   site 0/256 rows 1 t=1.0s
+   site 32/256 rows 33 t=1.6s
+   site 64/256 rows 65 t=4.1s
+   site 96/256 rows 97 t=7.2s
+   site 128/256 rows 141 t=11.6s
+   site 160/256 rows 116 t=17.1s
+   site 192/256 rows 84 t=21.1s
+   site 224/256 rows 52 t=24.1s
+   check {"E_phys": -2570.0, "E_stored": -2570.0, "dE": -2.728e-12, "E_stored_is_last_sweep": true, "Sbar6": 2.063, "Sbar6_stored": 2.063, "dSbar6": -2.665e-15, "dS_max": 3.175e-14, "dGb_window": 2.859e-15, "ddens": 2.054e-14, "ckpt_sweeps": 18, "hist_len": 18}
+p153_n316_L256_P1_rand1.json: L=256 P=1 Dmax=768 load 25s meta={'sweeps': 18}
+   site 0/256 rows 1 t=1.0s
+   site 32/256 rows 33 t=1.6s
+   site 64/256 rows 65 t=4.1s
+   site 96/256 rows 97 t=7.3s
+   site 128/256 rows 141 t=11.6s
+   site 160/256 rows 116 t=17.1s
+   site 192/256 rows 84 t=21.2s
+   site 224/256 rows 52 t=24.2s
+   check {"E_phys": -2570.0, "E_stored": -2570.0, "dE": -2.728e-12, "E_stored_is_last_sweep": true, "Sbar6": 2.067, "Sbar6_stored": 2.067, "dSbar6": -4.885e-15, "dS_max": 2.021e-14, "dGb_window": 1.171e-14, "ddens": 1.171e-14, "ckpt_sweeps": 18, "hist_len": 18}
+sym80_n316_L256_P0_rand1.json: L=256 P=0 Dmax=768 load 16s meta={'sweeps': 18}
+   site 0/256 rows 1 t=1.3s
+   site 32/256 rows 33 t=2.0s
+   site 64/256 rows 65 t=4.4s
+   site 96/256 rows 97 t=7.5s
+   site 128/256 rows 141 t=11.7s
+   site 160/256 rows 116 t=17.1s
+   site 192/256 rows 84 t=21.1s
+   site 224/256 rows 52 t=24.1s
+   check {"E_phys": -5140.0, "E_stored": -5140.0, "dE": -1.819e-12, "E_stored_is_last_sweep": true, "Sbar6": 2.055, "Sbar6_stored": 2.055, "dSbar6": -1.776e-15, "dS_max": 2.687e-14, "dGb_window": 3.497e-15, "ddens": 1.943e-14, "ckpt_sweeps": 18, "hist_len": 18}
+sym80_n316_L256_P1_rand1.json: L=256 P=1 Dmax=768 load 12s meta={'sweeps': 18}
+   site 0/256 rows 1 t=1.3s
+   site 32/256 rows 33 t=2.0s
+   site 64/256 rows 65 t=4.4s
+   site 96/256 rows 97 t=7.6s
+   site 128/256 rows 141 t=11.8s
+   site 160/256 rows 116 t=17.2s
+   site 192/256 rows 84 t=21.2s
+   site 224/256 rows 52 t=24.2s
+   check {"E_phys": -5140.0, "E_stored": -5140.0, "dE": -1.819e-12, "E_stored_is_last_sweep": true, "Sbar6": 2.05, "Sbar6_stored": 2.05, "dSbar6": 1.332e-15, "dS_max": 2.065e-14, "dGb_window": 4.58e-15, "ddens": 6.689e-15, "ckpt_sweeps": 18, "hist_len": 18}
+p153c_L128_P0_rand1.json: L=128 P=0 Dmax=512 load 5s meta={'sweeps': 16}
+   site 0/128 rows 1 t=0.3s
+   site 32/128 rows 33 t=0.7s
+   site 64/128 rows 77 t=1.5s
+   site 96/128 rows 52 t=2.8s
+   check {"E_phys": -1290.0, "E_stored": -1290.0, "dE": 0.0, "E_stored_is_last_sweep": false, "Sbar6": 1.859, "Sbar6_stored": 1.859, "dSbar6": -8.882e-16, "dS_max": 3.109e-14, "dGb_window": 5.329e-15, "ddens": 8.66e-15, "ckpt_sweeps": 16, "hist_len": 16}
+p153c_L128_P1_prod29.json: L=128 P=1 Dmax=512 load 5s meta={'sweeps': 16}
+   site 0/128 rows 1 t=0.3s
+   site 32/128 rows 33 t=0.7s
+   site 64/128 rows 77 t=1.6s
+   site 96/128 rows 52 t=2.8s
+   check {"E_phys": -1290.0, "E_stored": -1290.0, "dE": 0.0, "E_stored_is_last_sweep": false, "Sbar6": 1.851, "Sbar6_stored": 1.851, "dSbar6": -8.882e-16, "dS_max": 3.619e-14, "dGb_window": 3.247e-15, "ddens": 3.247e-15, "ckpt_sweeps": 16, "hist_len": 16}
+sym40_n316_L128_P0_rand1.json: L=128 P=0 Dmax=512 load 3s meta={'sweeps': 15}
+   site 0/128 rows 1 t=0.4s
+   site 32/128 rows 33 t=0.8s
+   site 64/128 rows 77 t=1.6s
+   site 96/128 rows 52 t=2.8s
+   check {"E_phys": -1290.0, "E_stored": -1290.0, "dE": 0.0, "E_stored_is_last_sweep": false, "Sbar6": 1.818, "Sbar6_stored": 1.818, "dSbar6": 1.554e-15, "dS_max": 1.443e-14, "dGb_window": 3.525e-15, "ddens": 4.321e-15, "ckpt_sweeps": 15, "hist_len": 15}
+sym40_n316_L128_P1_rand1.json: L=128 P=1 Dmax=512 load 2s meta={'sweeps': 15}
+   site 0/128 rows 1 t=0.4s
+   site 32/128 rows 33 t=0.8s
+   site 64/128 rows 77 t=1.6s
+   site 96/128 rows 52 t=2.8s
+   check {"E_phys": -1290.0, "E_stored": -1290.0, "dE": 0.0, "E_stored_is_last_sweep": false, "Sbar6": 1.831, "Sbar6_stored": 1.831, "dSbar6": 8.882e-16, "dS_max": 2.132e-14, "dGb_window": 6.051e-15, "ddens": 6.051e-15, "ckpt_sweeps": 15, "hist_len": 15}
+rat_n316_L128_P0_rand1.json: L=128 P=0 Dmax=512 load 7s meta={'sweeps': 16}
+   site 0/128 rows 1 t=0.3s
+   site 32/128 rows 33 t=0.7s
+   site 64/128 rows 77 t=1.6s
+   site 96/128 rows 52 t=2.8s
+   check {"E_phys": -1290.0, "E_stored": -1290.0, "dE": 0.0, "E_stored_is_last_sweep": false, "Sbar6": 1.841, "Sbar6_stored": 1.841, "dSbar6": 1.11e-15, "dS_max": 6.883e-15, "dGb_window": 4.394e-15, "ddens": 1.51e-14, "ckpt_sweeps": 16, "hist_len": 16}
+rat_n316_L128_P1_rand1.json: L=128 P=1 Dmax=512 load 6s meta={'sweeps': 15}
+   site 0/128 rows 1 t=0.3s
+   site 32/128 rows 33 t=0.7s
+   site 64/128 rows 77 t=1.5s
+   site 96/128 rows 52 t=2.8s
+   check {"E_phys": -1290.0, "E_stored": -1290.0, "dE": 0.0, "E_stored_is_last_sweep": false, "Sbar6": 1.832, "Sbar6_stored": 1.832, "dSbar6": -1.332e-15, "dS_max": 3.175e-14, "dGb_window": 3.164e-15, "ddens": 4.189e-15, "ckpt_sweeps": 15, "hist_len": 15}
+sym40_n18_L128_P0_rand1.json: L=128 P=0 Dmax=512 load 2s meta={'sweeps': 15}
+   site 0/128 rows 1 t=0.4s
+   site 32/128 rows 33 t=0.8s
+   site 64/128 rows 77 t=1.6s
+   site 96/128 rows 52 t=2.8s
+   check {"E_phys": -1290.0, "E_stored": -1290.0, "dE": 0.0, "E_stored_is_last_sweep": false, "Sbar6": 1.737, "Sbar6_stored": 1.737, "dSbar6": -2.22e-16, "dS_max": 2.887e-14, "dGb_window": 3.081e-15, "ddens": 7.772e-15, "ckpt_sweeps": 15, "hist_len": 15}
+sym40_n18_L128_P1_rand1.json: L=128 P=1 Dmax=512 load 3s meta={'sweeps': 15}
+   site 0/128 rows 1 t=0.4s
+   site 32/128 rows 33 t=0.8s
+   site 64/128 rows 77 t=1.6s
+   site 96/128 rows 52 t=2.8s
+   check {"E_phys": -1290.0, "E_stored": -1290.0, "dE": 0.0, "E_stored_is_last_sweep": false, "Sbar6": 1.716, "Sbar6_stored": 1.716, "dSbar6": -2.22e-16, "dS_max": 3.308e-14, "dGb_window": 7.022e-15, "ddens": 8.847e-15, "ckpt_sweeps": 15, "hist_len": 15}
+p153_n316_L128_P0_prod26.json: L=128 P=0 Dmax=512 load 5s meta={'sweeps': 16}
+   site 0/128 rows 1 t=0.3s
+   site 32/128 rows 33 t=0.7s
+   site 64/128 rows 77 t=1.5s
+   site 96/128 rows 52 t=2.8s
+   check {"E_phys": -1290.0, "E_stored": -1290.0, "dE": 0.0, "E_stored_is_last_sweep": false, "Sbar6": 1.84, "Sbar6_stored": 1.84, "dSbar6": -6.661e-16, "dS_max": 9.104e-15, "dGb_window": 3.941e-15, "ddens": 6.217e-15, "ckpt_sweeps": 16, "hist_len": 16}
+p153_n316_L128_P1_rand1.json: L=128 P=1 Dmax=512 load 6s meta={'sweeps': 15}
+   site 0/128 rows 1 t=0.3s
+   site 32/128 rows 33 t=0.7s
+   site 64/128 rows 77 t=1.5s
+   site 96/128 rows 52 t=2.8s
+   check {"E_phys": -1290.0, "E_stored": -1290.0, "dE": 0.0, "E_stored_is_last_sweep": false, "Sbar6": 1.832, "Sbar6_stored": 1.832, "dSbar6": -2.22e-16, "dS_max": 3.73e-14, "dGb_window": 7.355e-15, "ddens": 1.178e-14, "ckpt_sweeps": 15, "hist_len": 15}
+sym80_n316_L128_P0_rand1.json: L=128 P=0 Dmax=512 load 2s meta={'sweeps': 16}
+   site 0/128 rows 1 t=0.4s
+   site 32/128 rows 33 t=0.8s
+   site 64/128 rows 77 t=1.6s
+   site 96/128 rows 52 t=2.8s
+   check {"E_phys": -2580.0, "E_stored": -2580.0, "dE": 0.0, "E_stored_is_last_sweep": false, "Sbar6": 1.819, "Sbar6_stored": 1.819, "dSbar6": -2.442e-15, "dS_max": 1.577e-14, "dGb_window": 4.025e-15, "ddens": 1.055e-14, "ckpt_sweeps": 16, "hist_len": 16}
+sym80_n316_L128_P1_rand1.json: L=128 P=1 Dmax=512 load 3s meta={'sweeps': 16}
+   site 0/128 rows 1 t=0.4s
+   site 32/128 rows 33 t=0.8s
+   site 64/128 rows 77 t=1.6s
+   site 96/128 rows 52 t=2.8s
+   check {"E_phys": -2580.0, "E_stored": -2580.0, "dE": 0.0, "E_stored_is_last_sweep": false, "Sbar6": 1.83, "Sbar6_stored": 1.83, "dSbar6": -1.776e-15, "dS_max": 1.887e-14, "dGb_window": 4.607e-15, "ddens": 1.232e-14, "ckpt_sweeps": 16, "hist_len": 16}
+p153c_L64_P0_prod14.json: L=64 P=0 Dmax=384 load 1s meta={'sweeps': 13}
+   site 0/64 rows 1 t=0.1s
+   site 32/64 rows 45 t=0.4s
+   check {"E_phys": -650.0, "E_stored": -650.0, "dE": 0.0, "E_stored_is_last_sweep": false, "Sbar6": 1.609, "Sbar6_stored": 1.609, "dSbar6": 1.554e-15, "dS_max": 1.91e-14, "dGb_window": 3.053e-15, "ddens": 3.442e-15, "ckpt_sweeps": 13, "hist_len": 13}
+p153c_L64_P1_rand1.json: L=64 P=1 Dmax=384 load 1s meta={'sweeps': 13}
+   site 0/64 rows 1 t=0.1s
+   site 32/64 rows 45 t=0.4s
+   check {"E_phys": -650.0, "E_stored": -650.0, "dE": 0.0, "E_stored_is_last_sweep": false, "Sbar6": 1.589, "Sbar6_stored": 1.589, "dSbar6": 0.0, "dS_max": 4.663e-15, "dGb_window": 3.636e-15, "ddens": 3.636e-15, "ckpt_sweeps": 13, "hist_len": 13}
+sym40_n316_L64_P0_rand1.json: L=64 P=0 Dmax=384 load 0s meta={'sweeps': 13}
+   site 0/64 rows 1 t=0.1s
+   site 32/64 rows 45 t=0.4s
+   check {"E_phys": -650.0, "E_stored": -650.0, "dE": 0.0, "E_stored_is_last_sweep": false, "Sbar6": 1.569, "Sbar6_stored": 1.569, "dSbar6": -1.332e-15, "dS_max": 8.66e-15, "dGb_window": 3.775e-15, "ddens": 3.775e-15, "ckpt_sweeps": 13, "hist_len": 13}
+sym40_n316_L64_P1_rand1.json: L=64 P=1 Dmax=384 load 0s meta={'sweeps': 13}
+   site 0/64 rows 1 t=0.1s
+   site 32/64 rows 45 t=0.4s
+   check {"E_phys": -650.0, "E_stored": -650.0, "dE": 0.0, "E_stored_is_last_sweep": false, "Sbar6": 1.588, "Sbar6_stored": 1.588, "dSbar6": 0.0, "dS_max": 9.992e-15, "dGb_window": 3.997e-15, "ddens": 5.107e-15, "ckpt_sweeps": 13, "hist_len": 13}
+rat_n316_L64_P0_rand1.json: L=64 P=0 Dmax=384 load 1s meta={'sweeps': 13}
+   site 0/64 rows 1 t=0.1s
+   site 32/64 rows 45 t=0.4s
+   check {"E_phys": -650.0, "E_stored": -650.0, "dE": 0.0, "E_stored_is_last_sweep": false, "Sbar6": 1.566, "Sbar6_stored": 1.566, "dSbar6": -2.22e-16, "dS_max": 3.775e-14, "dGb_window": 4.871e-15, "ddens": 4.96e-15, "ckpt_sweeps": 13, "hist_len": 13}
+rat_n316_L64_P1_rand1.json: L=64 P=1 Dmax=384 load 1s meta={'sweeps': 13}
+   site 0/64 rows 1 t=0.1s
+   site 32/64 rows 45 t=0.4s
+   check {"E_phys": -650.0, "E_stored": -650.0, "dE": 0.0, "E_stored_is_last_sweep": false, "Sbar6": 1.59, "Sbar6_stored": 1.59, "dSbar6": -4.441e-16, "dS_max": 6.439e-15, "dGb_window": 2.082e-15, "ddens": 7.327e-15, "ckpt_sweeps": 13, "hist_len": 13}
+sym40_n18_L64_P0_rand1.json: L=64 P=0 Dmax=384 load 0s meta={'sweeps': 13}
+   site 0/64 rows 1 t=0.1s
+   site 32/64 rows 45 t=0.4s
+   check {"E_phys": -650.1, "E_stored": -650.1, "dE": 0.0, "E_stored_is_last_sweep": false, "Sbar6": 1.387, "Sbar6_stored": 1.387, "dSbar6": -6.661e-16, "dS_max": 2.376e-14, "dGb_window": 2.096e-15, "ddens": 4.774e-15, "ckpt_sweeps": 13, "hist_len": 13}
+sym40_n18_L64_P1_rand1.json: L=64 P=1 Dmax=384 load 0s meta={'sweeps': 13}
+   site 0/64 rows 1 t=0.1s
+   site 32/64 rows 45 t=0.4s
+   check {"E_phys": -650.1, "E_stored": -650.1, "dE": 0.0, "E_stored_is_last_sweep": false, "Sbar6": 1.471, "Sbar6_stored": 1.471, "dSbar6": 6.661e-16, "dS_max": 2.931e-14, "dGb_window": 2.172e-15, "ddens": 2.172e-15, "ckpt_sweeps": 13, "hist_len": 13}
+p153_n316_L64_P0_rand1.json: L=64 P=0 Dmax=384 load 1s meta={'sweeps': 13}
+   site 0/64 rows 1 t=0.1s
+   site 32/64 rows 45 t=0.4s
+   check {"E_phys": -650.0, "E_stored": -650.0, "dE": 1.137e-13, "E_stored_is_last_sweep": false, "Sbar6": 1.566, "Sbar6_stored": 1.566, "dSbar6": -6.661e-16, "dS_max": 2.087e-14, "dGb_window": 5.482e-15, "ddens": 7.105e-15, "ckpt_sweeps": 13, "hist_len": 13}
+p153_n316_L64_P1_rand1.json: L=64 P=1 Dmax=384 load 1s meta={'sweeps': 13}
+   site 0/64 rows 1 t=0.1s
+   site 32/64 rows 45 t=0.4s
+   check {"E_phys": -650.0, "E_stored": -650.0, "dE": 0.0, "E_stored_is_last_sweep": false, "Sbar6": 1.589, "Sbar6_stored": 1.589, "dSbar6": -8.882e-16, "dS_max": 7.772e-15, "dGb_window": 1.971e-15, "ddens": 2.554e-15, "ckpt_sweeps": 13, "hist_len": 13}
+sym80_n316_L64_P0_rand1.json: L=64 P=0 Dmax=384 load 0s meta={'sweeps': 13}
+   site 0/64 rows 1 t=0.1s
+   site 32/64 rows 45 t=0.4s
+   check {"E_phys": -1300.0, "E_stored": -1300.0, "dE": 0.0, "E_stored_is_last_sweep": false, "Sbar6": 1.57, "Sbar6_stored": 1.57, "dSbar6": -1.332e-15, "dS_max": 1.554e-14, "dGb_window": 1.832e-15, "ddens": 1.887e-15, "ckpt_sweeps": 13, "hist_len": 13}
+sym80_n316_L64_P1_rand1.json: L=64 P=1 Dmax=384 load 0s meta={'sweeps': 13}
+   site 0/64 rows 1 t=0.1s
+   site 32/64 rows 45 t=0.4s
+   check {"E_phys": -1300.0, "E_stored": -1300.0, "dE": 0.0, "E_stored_is_last_sweep": false, "Sbar6": 1.59, "Sbar6_stored": 1.59, "dSbar6": -1.11e-15, "dS_max": 7.55e-15, "dGb_window": 3.719e-15, "ddens": 7.994e-15, "ckpt_sweeps": 13, "hist_len": 13}
+end Tue Nov 10 07:46:13 EST 2026

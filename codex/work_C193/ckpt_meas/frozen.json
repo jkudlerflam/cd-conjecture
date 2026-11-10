@@ -1,0 +1,5 @@
+{"B": [[0.10, 0.30], [0.15, 0.40]],
+ "P": [[0.10, 0.30], [0.15, 0.38]],
+ "S": [[0.35, 3, 8], [0.45, 3, 8], [0.45, 4, 10]],
+ "sys_b": 0.005, "sys_p": 0.015, "sys_s": 0.04,
+ "note": "Frozen on the controls xx2 and xx1 (L = 128, 256) only, 2026-11-10, before any candidate output of job c193 was opened. Ranges are fractions of L."}

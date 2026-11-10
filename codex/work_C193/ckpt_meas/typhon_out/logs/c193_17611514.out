@@ -1,0 +1,22 @@
+GPU 0 on apollo02.sns.ias.edu Tue Nov 10 07:32:45 EST 2026
+GPU 0: NVIDIA A100-PCIE-40GB (UUID: GPU-d803bca1-8656-c2f5-2f52-c4ba0a2d49d8)
+cupy 13.6.0
+xx2_L256_P0_rand1.json: L=256 P=0 Dmax=768 load 17s meta={'sweeps': 20}
+   site 0/256 rows 1 t=2.6s
+   site 32/256 rows 33 t=3.4s
+   site 64/256 rows 65 t=5.8s
+   site 96/256 rows 97 t=8.8s
+   site 128/256 rows 141 t=12.9s
+   site 160/256 rows 116 t=18.1s
+   site 192/256 rows 84 t=22.0s
+   site 224/256 rows 52 t=24.9s
+   check {"E_phys": -12.25, "E_stored": -12.25, "dE": -1.16e-12, "E_stored_is_last_sweep": true, "Sbar6": 2.01, "Sbar6_stored": 2.01, "dSbar6": -4.441e-16, "dS_max": 4.885e-14, "dGb_window": 6.689e-15, "ddens": 6.661e-15, "ckpt_sweeps": 20, "hist_len": 20}
+xx2_L64_P0_rand1.json: L=64 P=0 Dmax=384 load 0s meta={'sweeps': 14}
+   site 0/64 rows 1 t=0.2s
+   site 32/64 rows 45 t=0.5s
+   check {"E_phys": -2.854, "E_stored": -2.854, "dE": -1.066e-14, "E_stored_is_last_sweep": true, "Sbar6": 1.57, "Sbar6_stored": 1.57, "dSbar6": -6.661e-16, "dS_max": 2.798e-14, "dGb_window": 1.499e-15, "ddens": 1.499e-15, "ckpt_sweeps": 14, "hist_len": 14}
+xx1_L64_P1_rand1.json: L=64 P=1 Dmax=114 load 0s meta={'sweeps': 13}
+   site 0/64 rows 1 t=0.1s
+   site 32/64 rows 45 t=0.2s
+   check {"E_phys": -3.474, "E_stored": -3.474, "dE": 6.217e-15, "E_stored_is_last_sweep": true, "Sbar6": 0.8997, "Sbar6_stored": 0.8997, "dSbar6": -6.439e-15, "dS_max": 5.584e-14, "dGb_window": 1.138e-15, "ddens": 1.138e-15, "ckpt_sweeps": 13, "hist_len": 13}
+end Tue Nov 10 07:33:36 EST 2026
