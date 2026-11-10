@@ -74,3 +74,27 @@ Registration (copy into RESULT.md before any production run).
 - (G3) Gap risk stands. A saturating ξ_1 or a nonzero Δ_pb is seen at any n ≥ 0.11, or either estimate of n_c lies above 0.11, or K_s at n = 1/8 or 3/16 drifts below 1.
 - (G4) C191's flow is checked separately. Its separatrix prediction passes if both estimates of n_c lie in 0.05 to 0.11, and fails otherwise. Say which.
 - Anything between G2 and G3 is reported as undecided, with the numbers.
+
+## C193b: the missing correlators, measured on the C190 checkpoints (added 2026-11-10, after C193's first stage)
+
+C193's first stage (`codex/work_C193/RESULT.md`) found two limits of the stored data. The stored `CP` is the correlator of the bond operator XX + YY, not a pair function, so 1/K_c was borrowed from the effective model. And the one-body matrix covers a 48-site window, so the change from L = 128 to 256 is read at the same separations and is not a change of scale. The registered outcome was Q3 through the drift clause alone (K_s falls by 0.12 to 0.19 at fixed separations), with K_s ≥ 1.36 everywhere and y_∥ > |y_1| at every key. At equal window the qubit chain's η_b lies below the effective model's by 0.033, 0.017 and 0.004 at L = 64, 128, 256.
+
+Goal: measure on the converged C190 matrix-product states what the first stage could not, and repeat the test with every quantity taken from the qubit chain.
+
+Work in `codex/work_C193/ckpt_meas/` and `/scratch/lustre/jkudlerflam/c19x/c193/`. The checkpoints under `/scratch/lustre/jkudlerflam/c18x/c190g/` (GPU runs) and `/scratch/lustre/jkudlerflam/c18x/c190/` (CPU runs and the two controls) are read only. Verify first which checkpoints exist and at which χ, and that a loaded state reproduces the stored energy and S̄₆ of its run before anything is measured from it. If the final states of some runs are gone, say which, and do not rerun DMRG.
+
+Measurements, for the six keys and both controls, both parity sectors, L = 64, 128, 256.
+- The boson one-body function ⟨σ⁺_i σ⁻_j⟩ for site pairs symmetric about the centre, out to separations of at least L/2.
+- The inter-valley pair function. Derive in PROOF.md which qubit operator represents the pair of one particle from each valley (C176 measures it at separations 2 and 3 in the effective model, `codex/work_C176/fibdmrg.py`), and measure its two-point function along the chain.
+- The connected density correlator, for the structure factor and K_c (`codex/work_C192/sq2.py`).
+
+Run this as a SLURM job named c193 on partition apollo with one GPU, about 4 cores and at most 64 GB, using the array-module code in `codex/work_C190/gpu/z2dmrg_xp.py` (copy what you need, do not edit it). complex128 throughout. Never touch any job you did not submit. At most one c193 job at a time.
+
+Analysis. Fit ranges are frozen on the two controls, and they scale with L (fixed r/L), so that 128 → 256 is a doubling of scale. Report η_b, the pair exponent, K_c from the structure factor, and K_s = 1/(4η_b − 1/K_c) with both estimates of 1/K_c, at each L.
+
+Registration (copy into `ckpt_meas/RESULT.md` before any candidate output of the new job is opened).
+- (B0) Calibration. On the two-leg control η_b is within 0.03 of 1/2, the pair exponent within 0.08 of 1, and K_c from the structure factor within 5% of its exact value, at L = 128 and 256. If not, everything below is uncalibrated.
+- (B1) Tracks the effective model. At L = 256 on the ground branch η_b is within 0.05 of 0.326 (n = 3/16) or 0.351 (n = 1/8), and the pair exponent lies in 0.50 to 0.75, at every key.
+- (B2) Gapless sign. With 1/K_c measured on the qubit chain, K_s ≥ 1.1 at L = 256 for every key in both sectors, the Kosterlitz–Thouless bound from the 128 → 256 change gives a lower limit on y_∥ above the upper limit on |y_1| at every key, and the change of K_s from 128 to 256 is no more negative than the change from 64 to 128 (a flow to the gapless line slows down).
+- (B3) Gap sign. K_s(256) < 1 at any key, or the bound allows |y_1| ≥ y_∥ at any key, or the downward change of K_s from 128 to 256 exceeds the one from 64 to 128 by more than the combined error.
+- Anything between B2 and B3 is reported as undecided, with the numbers.

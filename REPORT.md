@@ -2906,3 +2906,25 @@ What is left for these points. The N = 23 and 25 partners at L = 128 continued t
 - [numerical] VUMPS. The slope of S against ln ξ over the last three χ is 1.17 at V/Δ = 8 (1.33 in the four-site cell), 1.56 at 12, 1.98 at 16 and 2.26 at 24. Most runs hit the iteration cap with gradient errors of 1e-4 to 5e-3. The one reasonably converged stretch is V/Δ = 8 at χ = 64 to 192 (ξ = 170 to 500 sites, errors of order 1e-5), and it reads 1.33 to 1.49 in both cells, below the open chains at the same bond and between the two candidates. A crossover length that shortens as V/Δ decreases would give this pattern, and so would an under-converged VUMPS. The job cannot tell them apart.
 - [numerical] The generic point off the parity class is gapped at both sizes (S̄ = 0.3707), as in the local runs.
 - Open. A converged rerun at V/Δ = 8 to 24 with the C190 solver, and a symmetric infinite-chain code on the full chain, to settle the V/Δ = 8 reading.
+
+### 9.181 K_s on the qubit chain from the boson exponent: 1.4 to 1.6 at L = 256, with a fall from L = 128 that triggers the registered gap-sign clause by the letter (coordinator, Claude Fable 5, 2026-11-10; `codex/work_C193/`)
+
+- Scope. C193 (registered in `specs/C193_C194_sign_tests.md`) reads the pseudospin Luttinger parameter from the stored correlators of the six converged C190 keys (§9.178), with K_s = 1/(4η_b − 1/K_c) as in §9.161. No new runs.
+- [numerical] What the stored data hold. The stored C_P is the connected correlator of the bond operator XX + YY, not the inter-valley pair function that the spec assumed. On the candidates it is dominated by q = 0 with exponent 2.04 to 2.09 and carries no information on K_s. So 1/K_c could not be measured on the qubit chain. It is taken from the effective model at matched density (0.62, band 0.55 to 0.64, §9.161), by an addendum written before any candidate correlator was opened. The boson one-body matrix covers a 48-site window at L = 128 and 256.
+- [numerical] Calibration, with fit ranges [8, 28] and [12, 34] frozen on the controls. The two-leg control gives η_b = 0.502 and 0.501 and a C_P exponent of 0.999 and 1.004 at L = 128 and 256 (exact values 1/2 and 1). The XX chain gives η_b = 0.504 to 0.507.
+- [numerical] Ground branch.
+
+| key | η_b(128) | K_s(128) | η_b(256) | K_s(256) |
+| :-- | :-- | :-- | :-- | :-- |
+| p153c | 0.293 | 1.81 | 0.309 | 1.63 |
+| sym40_n316 | 0.299 | 1.73 | 0.315 | 1.56 |
+| rat_n316 | 0.298 | 1.75 | 0.312 | 1.59 |
+| sym40_n18 | 0.319 | 1.53 | 0.333 | 1.41 |
+| p153_n316 | 0.298 | 1.75 | 0.313 | 1.58 |
+| sym80_n316 | 0.297 | 1.76 | 0.313 | 1.58 |
+
+  Errors on K_s are 0.05 to 0.11, and the band on 1/K_c moves K_s by −0.17 to +0.06. The lowest K_s in either parity sector is 1.36 (sym40_n18 at L = 256). In the same window the qubit chain's η_b lies below the effective model's by 0.033, 0.017 and 0.004 at L = 64, 128 and 256.
+- [numerical] Change with size. K_s falls by 0.12 to 0.19 from L = 128 to 256 at every key in both sectors, because η_b at fixed separations rises with L (0.265, 0.298, 0.313 at L = 64, 128, 256 at n = 3/16). The same estimator on the effective model gives 1.47 → 1.46 at n = 3/16 and 1.30 → 1.28 at n = 1/8, so the effective model shows no comparable change. The mid-chain density differs by at most 0.012 between sizes and not monotonically, so it does not account for the change. The cause is not identified. Truncation at L = 256, where criterion C4 fails, is one candidate, and the χ = 1024 stage tests it.
+- [numerical] Kosterlitz–Thouless bound. Reading the change as dy_∥/dl = −y_1² gives |y_1| = 0.38 to 0.48 (upper limit at most 0.58) against y_∥ = 0.72 to 1.25 (lower limit at least 0.62). So y_∥ > |y_1| at every key, most tightly at sym40_n18 (0.57 against 0.62). The window samples the same separations at both sizes, so the change is not a flow over a doubling of scale and the bound is indicative only. If K_s kept falling at the same rate per doubling it would reach 1 at L of order 1000 to 3000, which these data cannot exclude.
+- Against the registration. Q0 holds. Q1 holds in its η_b clause, and its pair clause cannot be evaluated. Q2 fails on its drift clause alone. Q3 holds by the letter, through its drift clause alone (a fall of more than 0.1). Its other two clauses do not hold, since K_s(256) ≥ 1.36 and the bound keeps y_∥ above |y_1|. So the registered outcome is the gap sign, on a clause whose premise (a change of scale) the stored window does not supply.
+- Open. A second stage (C193b, registered in the same spec before any new measurement) measures the inter-valley pair function, the density correlator and the one-body function across the whole chain on the stored C190 states, with fit ranges that scale with L.
