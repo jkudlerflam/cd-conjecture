@@ -81,22 +81,16 @@ whose complete effective Hamiltonian weakens binding perturbatively;
 the apparent small-ring crossing is strongly size dependent and is not
 a counterexample claim.
 
-**d=2 priority numerics (2026-11-09):** [independent full-spin DMRG](contrib/d2_tenpy_20261109/RESULT.md)
-gives c estimates 1.05 and 1.02 from L=32 to 64 for the transverse-DM
-reference and a [simpler rational bond](contrib/d2_simplification_20261109/README.md),
-against 0.95 and 1.94 for the c=1 and c=2 controls. The large short-chain
-profile fits do not persist; extending the reference to L=128 gives 1.10.
-Density/hopping retuning has not established a c>1 point.
-An [independent audit](contrib/d2_priority_audit_20261109/README.md)
-also corrects the uniform-Y symmetry inference and checks the simpler
-off-symmetric parity family's effective-model evidence.
-A simpler full-microscopic parity-family test at phase 1.53 gives c=2.15
-from L=32 to 64, but **the L=128 follow-up does not sustain that signal**:
-every 64-to-128 parity pairing reads below one (.74–.93). The larger runs
-are incompletely optimized, so crossover versus numerical bias remains
-unresolved. A [rational Hamiltonian](contrib/d2_dmrg_priority_20261109/SIMPLE_PARITY_CANDIDATE.md)
-independently reproduces the 32→64 signal (2.13), but also misses its
-strict solver tolerance. No d=2 counterexample is established.
+**d=2 update (2026-11-10):** More accurate full-spin reruns recover c≈2
+at the phase-1.53 point through L=256. The earlier unconverged L=128
+downturn does not reproduce. Six tuned bonds give ground-branch entropy
+estimates 1.94–2.03 from 128 to 256 sites, with calibrated controls.
+The L=256 entropy still changes too much with bond dimension, so no
+registered pass or established d=2 counterexample is declared. L=512
+runs are recorded as in progress; infinite-chain microscopic convergence
+remains open. See [current status](STATUS.md) and the [ground-sector
+selection audit](contrib/d2_status_audit_20261110/README.md). The transverse-DM
+points previously tested read near c=1.
 
 **Conclusion (2026-10-29, updated 2026-10-30), at the theoretical-physics standard: the c–d conjecture is false.** Explicit chains have c = 14 at d = 13 and c unbounded at fixed d = 4464, conditional only on standard Wilsonian RG input whose main pieces are now proved; the natural replacement, Σ_a c_a v_a ≤ π M log₂ d, survives every test, is proved for free fermions (A ≤ 2M) and for every solvable family, and is open in general. See the conclusion at the top of [STATUS.md](STATUS.md).
 
