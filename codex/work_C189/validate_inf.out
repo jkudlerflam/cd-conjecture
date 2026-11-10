@@ -1,0 +1,4 @@
+sym n=1/8, 16 sites: idmrg E = -4.339691169677, fibdmrg E = -4.339691169677, diff = 7.1e-15; S(mid) idmrg = 1.3723717597, fibdmrg = 1.3723717597
+sym n=3/16, 32 sites: idmrg E = -13.158041948837, fibdmrg E = -13.158041948836, diff = -1.7e-12; S(mid) idmrg = 1.6480707680, fibdmrg = 1.6480707680
+c1 hard rods n=1/4, 8 sites: idmrg E = -3.261972627396, fibdmrg E = -3.261972627396, diff = 2.2e-15; S(mid) idmrg = 0.3132631399, fibdmrg = 0.3132631399
+sym phi=1.50 complex, 16 sites: idmrg E = -4.350224267928, fibdmrg E = -4.350224267880, diff = -4.8e-11; S(mid) idmrg = 1.1844234186, fibdmrg = 1.1844411816

@@ -1,0 +1,66 @@
+=== loc_c1  n = 1/4  exact e = -0.4134966716
+chi=   16 it=203 e=-0.4134115704 (e-ex=8.5e-05) S=0.8723/0.8723 Sbar=0.8723 trunc=2.0e-05 xi0=21.1 xi1b=25.6 xi1f=25.6 xi2=3.6 lam0=0.99999 dens[min,max]=0.2233,0.2768 t=34s
+chi=   24 it=206 e=-0.4134686215 (e-ex=2.8e-05) S=0.9674/0.9674 Sbar=0.9674 trunc=6.2e-06 xi0=37.8 xi1b=44.5 xi1f=44.5 xi2=6.6 lam0=1.00000 dens[min,max]=0.2303,0.2697 t=54s
+chi=   32 it= 92 e=-0.4134837702 (e-ex=1.3e-05) S=1.0322/1.0322 Sbar=1.0322 trunc=2.1e-06 xi0=56.1 xi1b=66.3 xi1f=66.3 xi2=10.4 lam0=1.00000 dens[min,max]=0.2344,0.2657 t=31s
+chi=   48 it=300 e=-0.4134921965 (e-ex=4.5e-06) S=1.1224/1.1224 Sbar=1.1224 trunc=6.6e-07 xi0=96.3 xi1b=113.7 xi1f=113.7 xi2=17.2 lam0=1.00000 dens[min,max]=0.2373,0.2627 t=144s
+chi=   64 it=300 e=-0.4134945559 (e-ex=2.1e-06) S=1.1913/1.1913 Sbar=1.1913 trunc=2.9e-07 xi0=144.1 xi1b=167.6 xi1f=167.6 xi2=25.0 lam0=1.00000 dens[min,max]=0.2389,0.2611 t=199s
+chi=   96 it=300 e=-0.4134959140 (e-ex=7.6e-07) S=1.2758/1.2758 Sbar=1.2758 trunc=1.1e-07 xi0=240.5 xi1b=281.3 xi1f=281.3 xi2=42.5 lam0=1.00000 dens[min,max]=0.2416,0.2584 t=283s
+  local c between consecutive chi (xi = max sector): 16->24:1.032 24->32:0.976 32->48:1.003 48->64:1.065 64->96:0.979
+  local c with xi0: 16->24:0.978 24->32:0.987 32->48:1.001 48->64:1.024 64->96:0.990
+  c_fit (largest four chi, xi = max) = 1.015
+  last doubling 48->96: growth xi1f x2.473, xi2 x2.477, xi0 x2.498; (xi1f/xi2) changes by x0.999
+  registered reading: c = 2 liquid: False; pseudospin gap: True; 
+=== loc_c2  n = 1/4  exact e = nan
+chi=   16 it= 20 e=-0.4045084972 (e-ex=nan) S=-0.0000/1.3863 Sbar=0.6931 trunc=0.0e+00 xi0=0.2 xi1b=0.0 xi1f=0.0 xi2=0.0 lam0=1.00000 dens[min,max]=0.1382,0.3618 t=0s
+chi=   24 it= 20 e=-0.4045084972 (e-ex=nan) S=-0.0000/1.3863 Sbar=0.6931 trunc=0.0e+00 xi0=0.2 xi1b=0.0 xi1f=0.0 xi2=0.0 lam0=1.00000 dens[min,max]=0.1382,0.3618 t=0s
+chi=   32 it= 20 e=-0.4045084972 (e-ex=nan) S=-0.0000/1.3863 Sbar=0.6931 trunc=0.0e+00 xi0=0.2 xi1b=0.0 xi1f=0.0 xi2=0.0 lam0=1.00000 dens[min,max]=0.1382,0.3618 t=0s
+chi=   48 it= 20 e=-0.4045084972 (e-ex=nan) S=-0.0000/1.3863 Sbar=0.6931 trunc=0.0e+00 xi0=0.2 xi1b=0.0 xi1f=0.0 xi2=0.0 lam0=1.00000 dens[min,max]=0.1382,0.3618 t=0s
+chi=   64 it= 20 e=-0.4045084972 (e-ex=nan) S=-0.0000/1.3863 Sbar=0.6931 trunc=0.0e+00 xi0=0.2 xi1b=0.0 xi1f=0.0 xi2=0.0 lam0=1.00000 dens[min,max]=0.1382,0.3618 t=0s
+chi=   96 it= 20 e=-0.4045084972 (e-ex=nan) S=-0.0000/1.3863 Sbar=0.6931 trunc=1.1e-16 xi0=0.2 xi1b=0.0 xi1f=0.0 xi2=0.0 lam0=1.00000 dens[min,max]=0.1382,0.3618 t=0s
+  local c between consecutive chi (xi = max sector): 16->24:0.000 24->32:-0.000 32->48:0.000 48->64:-0.000 64->96:-0.000
+  local c with xi0: 16->24:0.000 24->32:-0.000 32->48:0.000 48->64:-0.000 64->96:-0.000
+  c_fit (largest four chi, xi = max) = -0.000
+  last doubling 48->96: growth xi1f xnan, xi2 xnan, xi0 x0.992; (xi1f/xi2) changes by xnan
+  registered reading: c = 2 liquid: False; pseudospin gap: True; 
+=== loc_ff  n = 3/16  exact e = -0.4019661194
+chi=   16 it= 84 e=-0.4009205597 (e-ex=1.0e-03) S=1.1608/1.4372 Sbar=1.2990 trunc=2.7e-04 xi0=8.1 xi1b=16.4 xi1f=16.4 xi2=7.2 lam0=0.99990 dens[min,max]=0.1636,0.2132 t=79s
+chi=   24 it= 49 e=-0.4015969424 (e-ex=3.7e-04) S=1.5452/1.3969 Sbar=1.4711 trunc=4.0e-05 xi0=12.8 xi1b=28.1 xi1f=28.1 xi2=13.9 lam0=0.99987 dens[min,max]=0.1721,0.2036 t=60s
+chi=   32 it= 52 e=-0.4016987818 (e-ex=2.7e-04) S=1.5907/1.4713 Sbar=1.5310 trunc=9.8e-06 xi0=15.4 xi1b=33.5 xi1f=33.5 xi2=16.8 lam0=0.99998 dens[min,max]=0.1743,0.2010 t=79s
+chi=   48 it= 79 e=-0.4018307583 (e-ex=1.4e-04) S=1.6026/1.6892 Sbar=1.6459 trunc=1.1e-05 xi0=21.7 xi1b=47.3 xi1f=47.3 xi2=22.1 lam0=0.99999 dens[min,max]=0.1784,0.1970 t=162s
+chi=   64 it= 47 e=-0.4018867650 (e-ex=7.9e-05) S=1.7704/1.7038 Sbar=1.7371 trunc=5.6e-06 xi0=29.2 xi1b=62.9 xi1f=62.9 xi2=28.2 lam0=0.99999 dens[min,max]=0.1803,0.1948 t=126s
+chi=   96 it= 30 e=-0.4019309309 (e-ex=3.5e-05) S=1.8974/1.8547 Sbar=1.8761 trunc=1.7e-06 xi0=43.6 xi1b=94.8 xi1f=94.8 xi2=44.5 lam0=1.00000 dens[min,max]=0.1829,0.1921 t=114s
+  local c between consecutive chi (xi = max sector): 16->24:1.924 24->32:2.020 32->48:2.003 48->64:1.927 64->96:2.030
+  local c with xi0: 16->24:2.251 24->32:1.962 32->48:1.997 48->64:1.850 64->96:2.088
+  c_fit (largest four chi, xi = max) = 1.989
+  last doubling 48->96: growth xi1f x2.003, xi2 x2.011, xi0 x2.004; (xi1f/xi2) changes by x0.996
+  registered reading: c = 2 liquid: True; pseudospin gap: False; 
+=== loc_s18  n = 1/8  exact e = nan
+chi=   16 it= 42 e=-0.2802489681 (e-ex=nan) S=1.2646/1.3315 Sbar=1.2980 trunc=1.5e-04 xi0=8.3 xi1b=19.0 xi1f=19.0 xi2=10.7 lam0=1.00000 dens[min,max]=0.1240,0.1374 t=36s
+chi=   24 it= 36 e=-0.2805783464 (e-ex=nan) S=1.4121/1.4175 Sbar=1.4148 trunc=1.0e-04 xi0=12.6 xi1b=26.9 xi1f=26.9 xi2=13.9 lam0=0.99989 dens[min,max]=0.1271,0.1332 t=46s
+chi=   32 it=133 e=-0.2807120829 (e-ex=nan) S=1.4794/1.5279 Sbar=1.5036 trunc=6.0e-05 xi0=15.9 xi1b=35.7 xi1f=35.7 xi2=18.3 lam0=0.99992 dens[min,max]=0.1199,0.1266 t=234s
+chi=   48 it= 35 e=-0.2808470120 (e-ex=nan) S=1.6570/1.6322 Sbar=1.6446 trunc=2.3e-05 xi0=24.1 xi1b=54.4 xi1f=54.4 xi2=27.1 lam0=0.99990 dens[min,max]=0.1245,0.1281 t=88s
+chi=   64 it= 25 e=-0.2808888609 (e-ex=nan) S=1.7285/1.7454 Sbar=1.7370 trunc=1.2e-05 xi0=33.1 xi1b=71.5 xi1f=71.5 xi2=35.1 lam0=0.99998 dens[min,max]=0.1231,0.1257 t=74s
+chi=   96 it= 29 e=-0.2809220963 (e-ex=nan) S=1.8601/1.8492 Sbar=1.8547 trunc=5.7e-06 xi0=47.0 xi1b=102.0 xi1f=102.0 xi2=49.6 lam0=0.99999 dens[min,max]=0.1248,0.1264 t=125s
+chi=  128 it= 38 e=-0.2809340854 (e-ex=nan) S=1.9411/1.9328 Sbar=1.9369 trunc=3.0e-06 xi0=60.1 xi1b=130.3 xi1f=130.3 xi2=63.4 lam0=1.00000 dens[min,max]=0.1248,0.1260 t=221s
+chi=  192 it= 53 e=-0.2809436080 (e-ex=nan) S=2.0519/2.0568 Sbar=2.0544 trunc=1.5e-06 xi0=85.3 xi1b=184.8 xi1f=184.8 xi2=89.7 lam0=1.00000 dens[min,max]=0.1245,0.1252 t=455s
+chi=  256 it= 64 e=-0.2809474293 (e-ex=nan) S=2.1341/2.1378 Sbar=2.1360 trunc=9.6e-07 xi0=111.0 xi1b=236.2 xi1f=236.2 xi2=113.0 lam0=1.00000 dens[min,max]=0.1246,0.1251 t=768s
+  local c between consecutive chi (xi = max sector): 16->24:2.000 24->32:1.897 32->48:2.009 48->64:2.028 64->96:1.986 96->128:2.015 128->192:2.016 192->256:1.996
+  local c with xi0: 16->24:1.691 24->32:2.261 32->48:2.026 48->64:1.758 64->96:2.011 96->128:2.017 128->192:2.010 192->256:1.854
+  c_fit (largest four chi, xi = max) = 2.011
+  last doubling 128->256: growth xi1f x1.813, xi2 x1.782, xi0 x1.849; (xi1f/xi2) changes by x1.017
+  registered reading: c = 2 liquid: True; pseudospin gap: False; 
+=== loc_s316  n = 3/16  exact e = nan
+chi=   16 it= 43 e=-0.4167781189 (e-ex=nan) S=1.4577/1.3470 Sbar=1.4023 trunc=3.9e-04 xi0=8.1 xi1b=17.0 xi1f=17.0 xi2=8.2 lam0=1.00001 dens[min,max]=0.1742,0.1990 t=77s
+chi=   24 it= 74 e=-0.4175237758 (e-ex=nan) S=1.5464/1.5010 Sbar=1.5237 trunc=2.2e-04 xi0=12.0 xi1b=24.0 xi1f=24.0 xi2=11.0 lam0=0.99986 dens[min,max]=0.1814,0.1946 t=191s
+chi=   32 it=141 e=-0.4178099156 (e-ex=nan) S=1.5989/1.6313 Sbar=1.6151 trunc=1.0e-04 xi0=18.6 xi1b=31.2 xi1f=31.2 xi2=12.8 lam0=0.99995 dens[min,max]=0.1838,0.1920 t=462s
+chi=   48 it= 76 e=-0.4180429110 (e-ex=nan) S=1.7408/1.7546 Sbar=1.7477 trunc=3.7e-05 xi0=23.1 xi1b=47.0 xi1f=47.0 xi2=21.2 lam0=1.00001 dens[min,max]=0.1855,0.1898 t=317s
+chi=   64 it= 20 e=-0.4181298914 (e-ex=nan) S=1.8348/1.8412 Sbar=1.8380 trunc=2.7e-05 xi0=31.4 xi1b=61.7 xi1f=61.7 xi2=27.8 lam0=1.00000 dens[min,max]=0.1862,0.1890 t=103s
+chi=   96 it= 37 e=-0.4182006773 (e-ex=nan) S=1.9622/1.9582 Sbar=1.9602 trunc=1.2e-05 xi0=45.1 xi1b=88.9 xi1f=88.9 xi2=39.2 lam0=0.99999 dens[min,max]=0.1867,0.1885 t=276s
+chi=  128 it= 23 e=-0.4182257299 (e-ex=nan) S=2.0400/2.0430 Sbar=2.0415 trunc=7.2e-06 xi0=59.0 xi1b=113.1 xi1f=113.1 xi2=49.4 lam0=0.99999 dens[min,max]=0.1870,0.1882 t=220s
+chi=  192 it= 24 e=-0.4182455644 (e-ex=nan) S=2.1570/2.1586 Sbar=2.1578 trunc=3.0e-06 xi0=83.6 xi1b=159.9 xi1f=159.9 xi2=69.8 lam0=1.00000 dens[min,max]=0.1872,0.1879 t=323s
+chi=  256 it= 30 e=-0.4182533833 (e-ex=nan) S=2.2395/2.2405 Sbar=2.2400 trunc=1.9e-06 xi0=107.8 xi1b=204.9 xi1f=204.9 xi2=88.7 lam0=1.00000 dens[min,max]=0.1873,0.1878 t=515s
+  local c between consecutive chi (xi = max sector): 16->24:2.092 24->32:2.095 32->48:1.944 48->64:1.994 64->96:2.008 96->128:2.021 128->192:2.016 192->256:1.991
+  local c with xi0: 16->24:1.891 24->32:1.245 32->48:3.648 48->64:1.769 64->96:2.016 96->128:1.828 128->192:1.998 192->256:1.940
+  c_fit (largest four chi, xi = max) = 2.011
+  last doubling 128->256: growth xi1f x1.811, xi2 x1.793, xi0 x1.828; (xi1f/xi2) changes by x1.010
+  registered reading: c = 2 liquid: True; pseudospin gap: False; 

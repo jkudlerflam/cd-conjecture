@@ -1,0 +1,27 @@
+C_P smooth amplitude A = -C_P(r) r^2 averaged over |r - xL| <= 4; K_s Z^2/Z_ff^2 = A_cand / A_ff (ff2v: K_s = 1)
+sym316 L=128: x=0.125: A_cand=0.4628 A_ff=0.4159 ratio=1.113 | x=0.188: A_cand=0.4510 A_ff=0.2839 ratio=1.589 | x=0.250: A_cand=0.4803 A_ff=0.2884 ratio=1.666
+sym316 L=192: x=0.125: A_cand=0.4302 A_ff=0.2792 ratio=1.541 | x=0.188: A_cand=0.4519 A_ff=0.3509 ratio=1.288 | x=0.250: A_cand=0.4917 A_ff=0.4139 ratio=1.188
+sym316 L=256: x=0.125: A_cand=0.4268 A_ff=0.2779 ratio=1.536 | x=0.188: A_cand=0.4552 A_ff=0.4025 ratio=1.131 | x=0.250: A_cand=0.4805 A_ff=0.2888 ratio=1.664
+sym532 L=128: x=0.125: A_cand=0.4577 A_ff=0.2721 ratio=1.682 | x=0.188: A_cand=0.4708 A_ff=0.3157 ratio=1.491 | x=0.250: A_cand=0.5336 A_ff=0.5113 ratio=1.044
+sym532 L=192: x=0.125: A_cand=0.4551 A_ff=0.2968 ratio=1.533 | x=0.188: A_cand=0.4729 A_ff=0.3198 ratio=1.479 | x=0.250: A_cand=0.5163 A_ff=0.3620 ratio=1.426
+sym532 L=256: x=0.125: A_cand=0.4587 A_ff=0.4857 ratio=0.944 | x=0.188: A_cand=0.4702 A_ff=0.3971 ratio=1.184 | x=0.250: A_cand=0.4894 A_ff=0.2333 ratio=2.098
+sym18 L=128: x=0.125: A_cand=0.4476 A_ff=0.1761 ratio=2.542 | x=0.188: A_cand=0.5303 A_ff=0.5891 ratio=0.900 | x=0.250: A_cand=0.4741 A_ff=0.1716 ratio=2.763
+sym18 L=192: x=0.125: A_cand=0.4940 A_ff=0.5778 ratio=0.855 | x=0.188: A_cand=0.4705 A_ff=0.3147 ratio=1.495 | x=0.250: A_cand=0.4743 A_ff=0.1670 ratio=2.841
+sym18 L=256: x=0.125: A_cand=0.4235 A_ff=0.1580 ratio=2.681 | x=0.188: A_cand=0.4429 A_ff=0.1584 ratio=2.797 | x=0.250: A_cand=0.4764 A_ff=0.1692 ratio=2.816
+
+Calibrated version: A = mean of -C_P(r) r^2 over L/8 <= r <= L/4 (many oscillation periods); Z_P = <P>_mid / (p n_mid) from the phi = 1.54 run; K_s^P = pi^2 A / Z_P^2
+ff2v L=128: A=0.3396 <P>=-0.0295 p=-0.0825 Z_P=1.861 K_s^P=0.968 (exact 1)
+ff2v L=256: A=0.3288 <P>=-0.0289 p=-0.0818 Z_P=1.858 K_s^P=0.940 (exact 1)
+ff2v L=512: A=0.3339 <P>=-0.0308 p=-0.0881 Z_P=1.853 K_s^P=0.960 (exact 1)
+
+K_s^P = pi^2 A / Z_P^2 for the candidates, A over [L/8, L/4] (neighbours [L/16, L/4], [L/8, 3L/8])
+Z_P at 3/16 (phi = 1.54 L=128, 1.54 L=256, 1.52 L=256, 1.50 L=256, 1.53 L=192): [1.872 1.872 1.867 1.864 1.871]  at 1/8 (1.55, L=128): [1.918]
+sym316 L=128: A=0.4445 K_s^P=1.256 +- 0.104  [windows 1.222, 1.414; ff2v reads 0.968; Z_P=1.869]
+sym316 L=192: A=0.4502 K_s^P=1.271 +- 0.099  [windows 1.240, 1.404; ff2v reads 1.044; Z_P=1.869]
+sym316 L=256: A=0.4481 K_s^P=1.266 +- 0.109  [windows 1.241, 1.397; ff2v reads 0.940; Z_P=1.869]
+sym532 L=128: A=0.4787 K_s^P=1.318 +- 0.144  [windows 1.281, 1.449; ff2v reads 1.088; Z_P=1.894]
+sym532 L=192: A=0.4754 K_s^P=1.309 +- 0.291  [windows 1.273, 1.464; ff2v reads 1.210; Z_P=1.894]
+sym532 L=256: A=0.4658 K_s^P=1.282 +- 0.086  [windows 1.258, 1.430; ff2v reads 0.999; Z_P=1.894]
+sym18 L=128: A=0.4655 K_s^P=1.249 +- 0.100  [windows 1.283, 1.381; ff2v reads 0.940; Z_P=1.918]
+sym18 L=192: A=0.4688 K_s^P=1.258 +- 0.104  [windows 1.218, 1.422; ff2v reads 1.016; Z_P=1.918]
+sym18 L=256: A=0.4657 K_s^P=1.250 +- 0.087  [windows 1.221, 1.383; ff2v reads 0.976; Z_P=1.918]

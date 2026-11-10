@@ -1,0 +1,22 @@
+loc_s18 chi=16 it=42 e=-0.2802489681 S=1.26461/1.33147 xi0=8.302362722052203 trunc=1.5e-04 t=36s
+loc_s18 chi=24 it=36 e=-0.2805783464 S=1.41211/1.41746 xi0=12.563005015439199 trunc=1.0e-04 t=46s
+loc_s18 chi=32 it=133 e=-0.2807120829 S=1.47937/1.52791 xi0=15.904123935342337 trunc=6.0e-05 t=234s
+loc_s18 chi=48 it=35 e=-0.2808470120 S=1.65696/1.63225 xi0=24.14666247639959 trunc=2.3e-05 t=88s
+loc_s18 chi=64 it=25 e=-0.2808888609 S=1.72847/1.74544 xi0=33.091966742582535 trunc=1.2e-05 t=74s
+loc_s18 chi=96 it=29 e=-0.2809220963 S=1.86008/1.84923 xi0=47.01232384779884 trunc=5.7e-06 t=125s
+Traceback (most recent call last):
+  File "work_C189/run_inf.py", line 103, in <module>
+    main()
+  File "work_C189/run_inf.py", line 61, in main
+    r = dm.iterate(chi, tol=c.get('tol_eig', 1e-10))
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "work_C189/idmrg.py", line 523, in iterate
+    E, th = W.solve(j, th, tol)
+            ^^^^^^^^^^^^^^^^^^^
+  File "work_C189/idmrg.py", line 236, in solve
+    elif self.noise > 0:
+         ^^^^^^^^^^
+AttributeError: 'Win' object has no attribute 'noise'
+loc_s18 chi=128 it=38 e=-0.2809340854 S=1.94107/1.93282 xi0=60.054696587272566 trunc=3.0e-06 t=221s
+loc_s18 chi=192 it=53 e=-0.2809436080 S=2.05193/2.05678 xi0=85.26102570836989 trunc=1.5e-06 t=455s
+loc_s18 chi=256 it=64 e=-0.2809474293 S=2.13409/2.13782 xi0=111.0226209961183 trunc=9.6e-07 t=768s

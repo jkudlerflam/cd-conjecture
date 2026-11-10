@@ -1,0 +1,22 @@
+E_c: K from S(q) on (0.05,0.3) [neighbours (0.05,0.2), (0.1,0.3)]. Exact: c1 0.5625 (spinless), c2 1, ff2v 1
+  L=64:  c1 0.598 [0.691, 0.562]  c2 0.945 [1.020, 0.907]  ff2v 0.926 [0.979, 0.901]
+  L=128:  c1 0.568 [0.561, 0.575]  c2 0.961 [0.946, 0.976]  ff2v 0.948 [0.932, 0.963]
+  L=192:  c1 0.568 [0.563, 0.571]  c2 0.974 [0.967, 0.978]  ff2v 0.968 [0.960, 0.972]
+  L=256:  c1 0.571 [0.568, 0.573]  c2 0.982 [0.979, 0.985]  ff2v 0.978 [0.973, 0.982]
+E_F': Friedel exponent on (8, L/4) [neighbours (8, L/2), (12, L/4)]. Exact: c1 0.5625 at 2kF=2 pi n; c2 1 at pi/4, 3pi/4; ff2v 1 at pi n (+ 2k0 term)
+  L=64:  c1 0.542 [0.543, 0.574]  c2 0.710 [0.915, 1.176]  ff2v 0.733 [0.881, 1.287]
+  L=128:  c1 0.538 [0.542, 0.545]  c2 0.955 [0.986, 0.961]  ff2v 0.938 [0.954, 0.904]
+  L=192:  c1 0.540 [0.544, 0.546]  c2 0.970 [0.996, 0.977]  ff2v 0.936 [0.935, 0.917]
+  L=256:  c1 0.542 [0.546, 0.547]  c2 0.975 [0.999, 0.982]  ff2v 0.953 [0.958, 0.931]
+  L=512:  ff2v 0.962 [0.967, 0.949]
+E_D: pair envelope exponent on (16, L/4) [neighbours (24, L/4), (16, 3L/8)], chord distance. Exact ff2v 2
+  L=128: ff2v 2.282 [1.054, 2.231]
+  L=192: ff2v 2.137 [1.898, 2.149]
+  L=256: ff2v 2.071 [1.940, 2.138]
+  L=512: ff2v 2.082 [2.050, 2.100]
+E_G (excluded, fails controls): one-body envelope exponent on (16, 64), chord. Exact c1 1.170, c2 1.5, ff2v 1
+  L=128: c1 1.396  c2 1.777  ff2v 1.349
+  L=192: c1 1.341  c2 1.757  ff2v 1.284
+  L=256: c1 1.313  c2 1.720  ff2v 1.150
+Friedel spectrum of ff2v at L = 1024 (oscillating part weighted by the chord factor): top peaks (k, |FT|)
+  pi n = 0.591  2k0 folded = 2.6362  2(k0+-kF) folded = [np.float64(2.0453), np.float64(3.056)]  peaks: [(np.float64(0.5906), np.float64(0.242)), (np.float64(0.6087), np.float64(0.053)), (np.float64(0.5733), np.float64(0.052)), (np.float64(0.6212), np.float64(0.031))]

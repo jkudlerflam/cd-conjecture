@@ -1,0 +1,2 @@
+OMP_NUM_THREADS=4 OPENBLAS_NUM_THREADS=4 MKL_NUM_THREADS=4 VECLIB_MAXIMUM_THREADS=4 python3 run_inf.py cfg/inf_dt_s316.json out > logs/inf_dt_s316.log 2>&1
+OMP_NUM_THREADS=4 OPENBLAS_NUM_THREADS=4 MKL_NUM_THREADS=4 VECLIB_MAXIMUM_THREADS=4 python3 run_inf.py cfg/inf_dt_s532.json out > logs/inf_dt_s532.log 2>&1

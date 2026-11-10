@@ -2560,3 +2560,38 @@ All at n = 3/16 and |w| = 1. The L = 128 rows of the C176 runs agree with their 
 - The 10% disagreement between the structure-factor slope (1.75 to 1.80) and ΣN/2 from the exponents (1.60) is the same off the line as on it. It is still unexplained. A fit systematic looks more likely than a physical mixing term.
 
 Reading. In the effective model the two-valley liquid is the same liquid on and off the line, with no sign that polarization brings any operator closer to marginal. Limits. This is the effective model. The C181 points are L = 128 only. And at L ≤ 256 the O_4 mismatch is below or close to 2π/L, so these sizes cannot show the cutoff at work. The full-qubit test C190 is the missing piece, and at accessible sizes it should track the effective model whether or not O_4 locks at much longer scales.
+
+### 9.163 C189: further K_s estimators and an infinite-chain calculation both read a stable c = 2 liquid in the effective model, after the registered frame failed (Claude Opus 5.5 subagent, checked by the coordinator, Claude Fable 5, 2026-11-09; `codex/work_C189/`)
+
+C189 asked whether the pseudospin backscattering is relevant in C173's effective model on the symmetric line (|w| = 1, n = 3/16, with 5/32 and 1/8 as checks). It used C176's converged open-chain data and a new infinite-chain code. `RESULT.md` holds the registration and its three amendments, and `PROOF.md` the derivations. The coordinator reran `kest_cp.py` and `summarize_inf.py` and compared the other numbers below with `kest_run.out`, `kest_boson.out` and `validate_inf.out`. They reproduce.
+
+- The registered estimators fail. The registration assumed the fermion frame. Its pair-exponent estimator gives K_s = −0.21 ± 0.18 at n = 3/16 and L = 256 (−0.24 and −0.32 at 5/32 and 1/8). Its Friedel estimator gives −0.52 ± 0.21 and is unstable in L. The one-body estimator failed its controls and was excluded. Under the registered rule a value below 1 reads "relevant", but a negative K_s is impossible, so these numbers say that the frame is wrong and say nothing about K_s. The registered structure-factor window (0.05 ≤ q ≤ 0.3) reads K_c = 1.02 ± 0.17 with passing controls, but πS(q)/q is not flat in the candidate. It rises from 1.0 at q = 0.4 to about 1.55 at q = 0.06 to 0.1.
+- Boson-frame estimators (amendment A3). These are post hoc. They were added after the registered ones failed and after the frame check of §9.161, so they do not carry the weight of a registered test. At L = 256:
+
+| n | K_c (pair exponent) | η_B | K_s (from η_B) | 2σ range | K_s (C_P tail) |
+|---|---|---|---|---|---|
+| 3/16 | 1.61 ± 0.05 | 0.318 ± 0.029 | 1.54 | 1.13 to 2.42 | 1.27 ± 0.11 |
+| 5/32 | 1.61 ± 0.05 | 0.327 ± 0.029 | 1.45 | 1.08 to 2.22 | 1.28 ± 0.09 |
+| 1/8 | 1.65 ± 0.06 | 0.340 ± 0.030 | 1.33 | 1.01 to 1.96 | 1.25 ± 0.09 |
+
+  The controls read 0.504 for the boson exponent of two XX legs (exact 1/2), 1.020 for their inter-leg pair (exact 1), and 0.918 for hard rods (exact 0.889). The last column is K_s = π²A/Z_P², where −A/r² is the tail of the valley-polarization correlation and Z_P = 1.87 at n = 3/16 (1.92 at 1/8) comes from the off-line runs. It uses densities only. The same procedure on free two-valley fermions reads 0.94 to 1.04 at n = 3/16 and 1/8, against the exact 1, and up to 1.21 at one size at 5/32. It is flat in L (1.256, 1.271, 1.266 at L = 128, 192, 256 for n = 3/16), with no drift toward 1.
+- Consistency in the boson frame. K_c = 1.6 agrees with the long-wavelength structure factor (1.5 to 1.65). The predicted Jordan–Wigner fermion exponent K_c + 1/(4K_c) + 1/(4K_s) is 1.93 at (K_c, K_s) = (1.6, 1.5), against a measured 1.9 to 2.0. The slowly decaying 2k₀ wall modulation that spoiled the Friedel fit is the inter-valley coherence, with bulk exponent 1/K_s ≈ 0.7.
+- Infinite chain. `idmrg.py` is blockade-exact and number-conserving, and matches the finite code to 1e-11 on 8 to 32 sites. The registered quantity is c_fit, the slope of S against (1/6) log ξ over the largest four χ, together with the correlation lengths by sector.
+
+| run | χ | largest ξ (sites) | c_fit | growth of ξ₁, ξ₂, ξ₀ over the last doubling of χ |
+|---|---|---|---|---|
+| hard rods (c = 1 control) | 16 to 96 | 281 | 1.015 | 2.47, 2.48, 2.50 |
+| free two-valley fermions (c = 2 control) | 16 to 96 | 95 | 1.989 | 2.00, 2.01, 2.00 |
+| candidate, n = 1/8 | 16 to 256 | 236 | 2.011 | 1.81, 1.78, 1.85 |
+| candidate, n = 3/16 | 16 to 256 | 205 | 2.011 | 1.81, 1.79, 1.83 |
+
+  Both controls are inside their registered tolerances (0.15 and 0.25). In the candidate no sector's correlation length saturates, the ratio ξ₁/ξ₂ changes by a factor of at most 1.02 over the last doubling, and the slope between consecutive χ is 1.99 to 2.02 from χ = 64 on. The registered reading at both densities is a c = 2 liquid with no pseudospin gap up to the ξ reached. The n = 3/16 run stood at χ = 96 (c_fit = 1.980, ξ = 89) when `RESULT.md` was written. The same run has since reached χ = 256, and the row above is the refreshed `local/summary_local.txt`. The two-leg XX control cannot be run in the infinite code, since its legs conserve number separately, so the c = 2 calibration rests on the free two-valley run alone. An unregistered side check is the growth of ξ itself. Finite-entanglement scaling gives ξ ∝ χ^κ with κ = 6/(c(√(12/c) + 1)), so a factor 1.83 per doubling at c = 2 and 2.54 at c = 1. The candidate reads 1.8 and the c = 1 control 2.5, but the c = 2 control at χ ≤ 96 reads 2.0, so this is a rough check only.
+- Limits.
+  - The open-chain parity gap is not accounted for. The compressibility gives v_c/K_c = 0.50 and the valley susceptibility (χ_s = 0.40 ± 0.04) gives v_s/K_s = 1.59. For a valley-preserving wall these predict L·Δ_P = (π/2)(v_c/K_c + v_s/K_s) = 3.3, against the measured 2.38, which is about 30% lower. This is unexplained.
+  - The C_P estimator assumes Z_N = 1. A smaller Z_N would raise K_s.
+  - The infinite-chain test resolves a gap only up to the ξ reached, about 200 sites. A gap of the size C175 estimated has a correlation length of order 1e4 sites and would not show. What speaks against it is K_s above 1, and the K_s estimators that work are post hoc.
+  - The bipartite fluctuations of the valley imbalance, asked for in the spec, were not done.
+  - This is the effective model. Nothing here tests the qubit chain.
+- The 10% gap of §9.162. C189's pair-exponent K_c = 1.61 is an independent fit and agrees with the exponent-based 1.60. Its long-wavelength structure factor (1.5 to 1.65) is also consistent with 1.6, while the tapered fit of §9.161 gave 1.75 to 1.80. With πS(q)/q running from 1.0 to 1.55 across the fitted range, the slope depends strongly on the window, so the gap looks like a systematic of the structure-factor fit and not a physical mixing term. No single controlled S(q) analysis has closed it yet.
+
+Reading. Two further routes agree with §9.160 and §9.161. K_s is 1.25 to 1.55 at all three densities, so the backscattering has dimension 2K_s ≈ 2.5 to 3.1, and the infinite chain reads c = 2.01 at n = 1/8 and 3/16 out to correlation lengths of about 200 sites. In the effective model the two-valley liquid on the symmetric line is stable. What remains open is the parity gap above and the qubit chain itself, which is C190's test. Larger χ and the remaining controls are running on the cluster, and `desktop_run/` holds a package for the desktop.

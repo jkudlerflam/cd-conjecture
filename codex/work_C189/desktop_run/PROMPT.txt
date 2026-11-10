@@ -1,0 +1,47 @@
+Please run an infinite-chain DMRG test for my c-d conjecture project on this machine, then report the results.
+
+The package is in my IAS Dropbox at
+  Jonah Kudler-Flam/Claude/Projects/Modular c-Theorem/notes/cd_conjecture/codex/work_C189/desktop_run/
+(usually under ~/IAS Dropbox/...). Read its README.txt first.
+
+What it is. C173's effective model of the Fibonacci-cusp candidate on the symmetric line, run directly on the
+infinite chain with a blockade-exact infinite DMRG (idmrg.py), at density 3/16 (bond dimension up to 768) and 5/32
+(up to 512). It decides whether the two-valley liquid stays c = 2 as the correlation length grows, or whether a
+pseudospin gap shows up as a saturating single-particle correlation length.
+- The code is validated against C176's finite-chain DMRG and on two controls. Do not modify it or the configs.
+- There are 2 runs, 4 threads each.
+
+How to run it.
+1. Copy the whole desktop_run folder to a local directory OUTSIDE Dropbox, for example ~/c189_desktop. The runs
+   write large checkpoint files to out/ckpt/, and those must not sync.
+2. Check that python3 has numpy and scipy. Ask me before installing anything.
+3. Run `bash run_desktop.sh` in the background. It first runs a 1-minute validation (logs/validate_inf.out), then the
+   two runs in parallel. Leave enough cores free that the machine stays usable.
+   Small chi finishes in minutes; chi 384 and above take hours per value. The whole thing may take one to three days.
+   It is resumable: if interrupted, rerun the same command.
+4. Check progress with tail logs/*.log. Run `python3 summarize_inf.py out` whenever a chi value finishes.
+5. Whenever chi values finish, and at the end, copy back into the Dropbox desktop_run folder:
+   - out/*.jsonl (including the .iter.jsonl files), but NOT out/ckpt;
+   - logs/;
+   - the summarize_inf.py output, saved as summary.txt.
+
+How to read it. The rule below was registered before any output.
+- c_fit is 6 times the slope of S against ln(xi) over the four largest chi.
+- Consistent with a c = 2 liquid: c_fit at least 1.6, and the ratio xi_1/xi_2 changes by less than a factor 1.5 over
+  the last doubling of chi.
+- A pseudospin gap: xi_1 grows by less than 10 percent over the last doubling while xi_2 or xi_0 grows by more than
+  30 percent, or c_fit below 1.4.
+- Anything else is inconclusive. A gap whose correlation length is longer than the largest xi reached cannot be seen.
+
+Report back with:
+- the summarize_inf.py output;
+- for each run, the largest chi that finished, the number of iterations per chi, and the truncation;
+- the reading under the rule above, with the reason.
+
+This is the effective model, not the full qubit chain. Do not overstate it.
+
+Rules.
+- Do not modify the code or the configs.
+- Do not commit or push. Do not edit other project files.
+- No probabilities in any file.
+- Plain prose, commas not em-dashes.
