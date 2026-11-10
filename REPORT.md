@@ -2751,3 +2751,18 @@ What this does not show.
 Also started, with Jonah's approval: a continuation of the effective-model L = 256 stage of §9.166 to χ = 1024, with the c = 2 control and the L = 128 partners carried to the same χ, so that the reading is taken at matched bond dimension. The rule is registered in `codex/work_C187q/L256_job/chi1024/README.md`.
 
 Addendum, the same size pair in the effective model (C190 subagent, Claude Opus 5.5, arithmetic checked by the coordinator; `codex/work_C190/RESULT.md` R5). Interpolating C176's effective-model entropies to the full chain's mid-chain densities gives S̄₆ = 1.8405 at L = 64 and 2.0842 at L = 128, so the effective model itself reads c_two(64 → 128) = 2.11 at W = 6, against 2.165 for the qubit chain. The offset S̄₆(qubit) − S̄₆(effective) is −0.2315 at L = 64 and −0.2251 at L = 128 with the final χ = 512 value, a change of +0.006, inside the ±0.05 window of V4 for this pair. The reference carries an interpolation error of about 0.01 in S̄, or 0.1 in c. So the excess over 2 at these sizes is shared by the effective model and reads as a finite-size drift, and over 64 → 128 the qubit chain follows the effective model's size dependence with a constant offset. V4 itself needs L = 256.
+
+### 9.170 The corner point of C188 that read 1.67 crosses over, c_pair(96, 192) = 0.82 once converged (coordinator, Claude Fable 5, 2026-11-09; `codex/work_C188/corner085/`)
+
+Why. C188 (§9.165) left one loose end. At (α, β, γ) = (1, 0.2, −0.17), t = 0.85, which is 0.02 in t from the ferromagnetic boundary near the XZ corner, the open-chain pair (48, 96) read c_pair = 1.67, with the L = 96 state not converged and no L = 192 run. A rule was registered before the new runs (README.md in the folder): convergence items K1 to K5 at L = 96 and 192 with χ up to 320, then "crossover to c = 1" if c_pair(96, 192) ≤ 1.15, "stays elevated" if ≥ 1.40.
+
+Result. Every convergence item passes at both sizes. Energy steps are 2e-9 and 1e-8, the discarded weights 8e-10 and 3e-9, and ⟨X⟩ and ⟨Z⟩ vanish to 1e-5, so there is no order. The entropy step from χ = 240 to 320 is 0.0006 at L = 96 and 0.0099 at L = 192, the second marginally inside its 0.01 bound.
+
+| pair | χ = 160 | χ = 240 | χ = 320 |
+|---|---|---|---|
+| c_pair(48, 96) | 1.666 | 1.706 | 1.711 |
+| c_pair(96, 192) | 0.320 | 0.737 | 0.817 |
+
+By the registered rule this is the crossover to c = 1. The (48, 96) value was right as a number (the converged L = 96 state gives 1.71), and it is a small-size transient. The Heisenberg control reads 0.93 for the same pair, and C188's other points near the boundary read 0.86 to 0.88, so 0.82 is in family.
+
+Limits. The L = 192 entropy still rises with χ. The last step is a fifth of the one before it, and one more step of the same size would give 0.90. Reaching 1.15 would take four of them. The profile fits fall with size (0.57 at L = 96, 0.24 at L = 192), which says the entropy profile is flattening in the bulk. The mid-chain bond alternation keeps falling (0.0034 to 0.0024 from L = 96 to 192), so these sizes do not show a dimerized state, and the data do not separate a c = 1 liquid with a small velocity from a very weakly gapped one. Either way the point is not a c > 1 candidate, and C188's verdict stands without the exception.

@@ -31,3 +31,23 @@ Also reported, without a rule attached: c_pair(48, 96) with the converged L = 96
 ## Files
 
 sweeps_L*.jsonl (one line per sweep), stages_L*.jsonl (a full record at the end of each χ stage from 160 up, same keys as dmrg_tau.py), log_L*.txt.
+
+## Result (2026-11-09, evaluated with eval085.py, output in eval085.out)
+
+| L | E (χ = 320) | S̄₄ at χ = 160, 240, 320 | K1 | K2 | K3 | K4 | K5 | c_fit |
+|---|---|---|---|---|---|---|---|---|
+| 48 | −31.0667745079 | 1.17296, 1.17300, 1.17300 | 2e-11 | 3e-8 | 4e-6 | 2e-11 | 4e-9 | 2.07, 1.16, 1.64 |
+| 96 | −62.4641252952 | 1.36544, 1.37011, 1.37071 | 2.4e-9 | 1.4e-5 | 0.0006 | 8e-10 | 1e-7 | 0.57, 0.60, 0.56 |
+| 192 | −125.2588253855 | 1.40240, 1.45524, 1.46510 | 9.7e-9 | 8.5e-5 | 0.0099 | 3e-9 | 1e-5 | 0.25, 0.24, 0.24 |
+
+K1 to K5 pass at L = 96 and at L = 192. K3 at L = 192 is marginal (0.0099 against 0.01).
+
+c_pair(96, 192) = 0.817 at χ = 320, so the verdict is W1, "crossover to c = 1". At χ = 160 and 240 the same pair reads 0.320 and 0.737, so the reading still rises with χ. The last step in S̄₄(192) is 0.0099, a fifth of the step before it. Another step of the full 0.0099 would give 0.90. The threshold 1.15 would need S̄₄(192) to rise by a further 0.038.
+
+Without a rule attached.
+- c_pair(48, 96) = 1.711 with the converged L = 96 state (1.666 at χ = 160, which is C188's 1.67).
+- The first six sweeps reproduce C188's L = 96 values, E = −62.4641216654 and S̄₄ = 1.3654.
+- The profile fits fall with size, 0.57 at L = 96 and 0.24 at L = 192.
+- The mid-chain bond-energy alternation is 0.0196, 0.0034, 0.0024 at L = 48, 96, 192. It keeps falling, so these sizes do not show a dimerized state.
+
+The 1.67 from (48, 96) is a small-size transient 0.02 in t from the boundary. The point is not a c > 1 candidate.
