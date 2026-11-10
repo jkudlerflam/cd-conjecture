@@ -2666,3 +2666,26 @@ What the pass does not show.
 Exponents [numerical, `codex/work_C192/offline_C187b.out`]. The two-valley estimators of §9.162 give the same numbers at L = 256 as at L = 128. The backscattering dimension is 2.93 at φ = 1.53 and 2.92 at φ = 1.555 (2.96 and 3.01 at L = 128), the two-pair vertex dimension is 1.25 at both, the structure-factor slope is 1.60 and 1.61, and the pair momentum mismatch Q − π is 0.0072 and 0.0046 (0.0074 and 0.0048 at L = 128). So the backscattering stays irrelevant by a wide margin and nothing flows between the two sizes.
 
 Reading. Off the line the effective model stays consistent with c = 2 out to L = 256, with size-independent exponents. Beyond §9.157 this adds a factor of 4/3 in length at the same reading of about 1.8, not a sharper number. A continuation of the six runs to χ = 1024 from their checkpoints would settle how much of the shortfall against the control is truncation. This is still the second-order effective model and not the qubit chain, for which C190 is the test (§9.164).
+
+### 9.167 C190 interim: at χ = 256 the qubit chain reads c ≈ 2.0 from L = 64 to 128 at the collaborator's bond and field, and the earlier downturn does not reproduce (Claude Opus 5.5 subagent, checked by the coordinator, Claude Fable 5, 2026-11-09; `codex/work_C190/`)
+
+This is an interim reading and not the registered verdict. No p153c run has reached its registered final χ (384 at L = 64, 512 at L = 128, 768 at L = 256), so V1 to V6 of `codex/work_C190/RESULT.md` are not evaluated. Details are in RESULT.md, R4.
+
+The bond is the φ = 1.53 parity-family bond at V/Δ = 40 with the collaborator's field h_z = −19.97589125 (§9.155). The solver is the parity-resolved z2dmrg.py of §9.164. All numbers below are from the last sweep at χ = 256 with the mixer off, with every local solve at its residual target (1e-8 at L = 128, 1e-9 at L = 64) and discarded weight 3.5e-9 at L = 128.
+
+- States [numerical]. At L = 128 the even sector has E = −1290.1134121766, S̄₁ = 1.8476, S̄₆ = 1.8386, S̄₁₂ = 1.8314 and n_mid = 0.2211. The odd sector has E = −1290.1134075210 and S̄₁ = 1.8403. A product start with 28 particles reaches the same even state as the random start, to 7e-10 in energy and four digits in S̄. The L = 64 partner is the local pilot of §9.164.
+- c_two(64 → 128) [numerical]. On the ground branch (even at both sizes) it is 2.022, 1.991, 2.064 for W = 1, 6, 12. The four parity pairings lie between 1.93 and 2.24. The collaborator's values for the same quantity are 0.74 to 0.93.
+- Why the two computations differ [numerical]. At L = 128 the collaborator's states (χ = 128) lie 4.4e-5 (even) and 3.1e-5 (odd) above these in energy, which is 7 to 9 times the parity splitting, and their branch order is reversed. At L = 64 the difference is 2.7e-6. Their S̄₁ at L = 128 is 1.686, against 1.817 at χ = 192 (a tuning run at a neighbouring field) and 1.848 at χ = 256 here. At L = 64 the same sequence is 1.599, 1.613, 1.614. A χ = 128 truncation therefore costs about ten times more entropy at L = 128 than at L = 64, which lowers c_two by about 1.3. The downturn appears to be that truncation.
+- Parity [numerical]. The even sector is lower at both sizes, by 4.90e-5 at L = 64 and 4.66e-6 at L = 128, so L·Δ/|t₂| falls from 0.25 to 0.05. There is no pair-gap signature in this size pair.
+- Against the effective model at equal n_mid [numerical]. S̄₆ of the qubit chain is below C176's by 0.232 at L = 64 and 0.246 at L = 128. The effective model's c_two between the same two densities is 2.11, against 1.99 here.
+
+What I checked. I recomputed S̄ and all four c_two pairings from the json files without the agent's scripts and they agree to the digits quoted. The χ = 256 stage at L = 128 has two sweeps with the mixer off, between which the energy moves by 4.5e-7 and S̄₁ by 0.0012.
+
+Limits.
+
+- S̄(128) is not converged in χ at the registered level. The step from χ = 192 to 256 is 0.031 (taken from a neighbouring-field run, since sweeps with the mixer on record no entropy), against the target 0.01. A further rise would raise c_two, by 0.09 per 0.01.
+- The L = 64 partner is the local pilot at χ = 256 and not the registered χ = 384 run.
+- The mid-chain density is 0.221, above the 0.196 of the matched effective-model point, as in §9.155.
+- One size pair. The registered question is the pair 128 → 256, which does not exist yet. The two L = 256 runs are in their χ = 192 stage, and their ground branch may be odd.
+
+Timing, revised. Measured sweep times put a complex L = 256 run at 7 to 40 h per χ = 768 sweep, so 1.5 to 6 days for its whole schedule, well above the estimate in §9.164. The L = 128 runs need another 7 to 27 h for their χ = 384 and 512 stages. The host allocations of the two payloads end on 2026-11-10 and 2026-11-11, after which the payloads have to be moved by the rule in `codex/work_C192/TYPHON_OVERLAP.md`. The GPU backend (specs/C190g_gpu_port.md) is being built for the L = 256 runs.

@@ -93,7 +93,7 @@ The two summary.txt files exist only after a pipeline has finished. Then
 
 ## Results (status at the end of the agent session, 2026-11-09)
 
-No production result exists yet. The registered criteria V1 to V6 are not evaluated.
+One production run is done (the XX control at L = 256, R4). No candidate-bond run has reached its registered final χ, so the registered criteria V1 to V6 are not evaluated. R4 gives an interim reading at χ = 256 for the collaborator's bond and field at L = 64 and 128.
 
 ### R0. Validation and solver [numerical; PROOF 5, PROGRESS 3 to 6]
 
@@ -104,18 +104,92 @@ No production result exists yet. The registered criteria V1 to V6 are not evalua
 
 At χ = 128, 192, 256 the even sector gives S̄₁ = 1.5993, 1.6125, 1.6142, with E = −650.0414814402, −650.0414849170, −650.0414852592 and n_mid = 0.2183. The collaborator's χ = 128 value is 1.60106. So even at L = 64 the entropy moves by 0.015 between χ = 128 and 256 while the discarded weight at χ = 128 is only 9e-9. The even sector is lower, with L·Δ_GC/|t₂| = +0.25. Against the effective model at equal n_mid, S̄₆ is lower by 0.23, close to C177's offset at V/Δ = 8.
 
-### R2. Field tuning [numerical, outB/tune/sym40_n316.json]
+### R2. Field tuning [numerical, out*/tune/]
 
 - sym40_n316: at L = 128 (χ = 192), μ_eff = −2.195, −2.165, −2.135 give n_mid = 0.1561, 0.2038, 0.2375. The fitted slope is dn_mid/dμ_eff = 1.357, against about 1.25 for the effective model. The target n_mid = 0.1957 needs μ_eff = −2.1676, that is h_z = −19.976047251. At equal μ_eff the full chain is denser than the effective model by about 0.009, a chemical-potential shift of about 0.007|t₂|, of the size expected from the next even order.
-- The other four keys (p153_n316, rat_n316, sym40_n18, sym80_n316) were still tuning when the session ended. Their fields will be in outA/tune/ and outB/tune/.
+- All five keys are tuned (out*/tune/<key>.json, copies in typhon_out/). Each line gives the three L = 128, P = 0 points as (μ_eff: n_mid, N_tot), then the fit.
+
+  | key | points | slope dn_mid/dμ_eff | tuned μ_eff | tuned h_z |
+  | :-- | :-- | :-- | :-- | :-- |
+  | p153_n316 | −2.195: 0.1553, 22.06; −2.165: 0.1884, 26.06; −2.135: 0.2210, 30.05 | 1.096 | −2.1582 | −19.975988793 |
+  | rat_n316 | −2.195: 0.1554, 22.07; −2.165: 0.1884, 26.07; −2.135: 0.2211, 30.05 | 1.094 | −2.1582 | −19.975988986 |
+  | sym40_n316 | −2.195: 0.1561, 22.10; −2.165: 0.2038, 27.92; −2.135: 0.2375, 32.04 | 1.357 | −2.1676 | −19.976047251 |
+  | sym40_n18 | −2.245: 0.0800, 13.09; −2.215: 0.1380, 19.91; −2.185: 0.1724, 24.07 | 1.539 | −2.2134 | −19.976333694 |
+  | sym80_n316 | −2.195: 0.1554, 22.03; −2.165: 0.2045, 28.01; −2.135: 0.2372, 32.01 | 1.363 | −2.1674 | −39.988023246 |
+
+- Limit of the tuning. At fixed L and parity the particle number is close to an integer of that parity (26.06, 30.05, and so on), so n_mid(μ_eff) is a staircase with steps of two particles, about 0.016 in n_mid at L = 128. A linear fit through three such points fixes the field to about half a step, not better. The steps halve at L = 256, where C6 is evaluated, and the density-corrected estimator covers what is left. Some points are not near an integer (13.09 and 19.91 in the even sector), which means the state mixes N and N ± 2 there. Only parity is exact in the full chain.
+- The rat and p153 bonds give the same tuning points to 1e-4 in n_mid, as expected for a rational simplification of the same bond.
 
 ### R3. Production snapshot, 2026-11-09 21:02 EST [numerical, typhon_out/, logs on scratch]
 
 - Both overlap pipelines started at 20:23. Node A runs the three p153_n316 tuning runs and five p153c runs (L = 128: P0 rand1, P0 prod28, P1 rand1, and L = 256: P0 rand1, P1 rand1). The L = 64 runs start when the tuning slots free up. Node B has finished the sym40_n316 tuning and is running the rat_n316 and sym40_n18 tuning. No production run is done.
 - Every local solve so far meets its residual target, with 70 to 120 matvecs on average (largest single solve 232, cap 300).
 - Measured sweep times with 6 threads per run. Complex bonds (p153), L = 128: 320 to 680 s at χ = 128 and 720 to 1120 s at χ = 192. Complex, L = 256: 570 to 860 s at χ = 128. Real (sym40 in the staggered gauge), L = 128: 225 to 280 s at χ = 192.
-- The donor nodes have 96 cores each and the donor jobs use few of their 48 (sstat gives the node A step about 46 cores of CPU time). So the overlap steps already run at close to dedicated speed, and the queued jobs (start estimate 2026-11-10 05:48) should not be expected to be much faster.
-- Wall-time extrapolation (an estimate, from the measured 95 GFLOP/s matvec at D = 512 in PROGRESS 6 and the times above, uncertain by a factor of about 2): a complex L = 128 run needs about 1 h per sweep at χ = 512 and 4 to 13 h in total, and a complex L = 256 run needs 3 to 6 h per sweep at χ = 768 and 10 to 40 h in total. Real runs are about 4 times cheaper. Checkpoints are written once per sweep, so each hand-over from an overlap step to its queued job (and each time-limit kill) costs every run its sweep in progress.
+- The donor nodes have 96 cores each and the donor jobs use few of their 48 (sstat gives the node A step about 46 cores of CPU time). So the overlap steps already run at close to dedicated speed, and the queued jobs (start estimate 2026-11-10 05:48 when this was written, see R4 for the later ones) should not be expected to be much faster.
+- Wall-time extrapolation (an estimate, from the measured 95 GFLOP/s matvec at D = 512 in PROGRESS 6 and the times above, uncertain by a factor of about 2): a complex L = 128 run needs about 1 h per sweep at χ = 512 and 4 to 13 h in total, and a complex L = 256 run needs 3 to 6 h per sweep at χ = 768 and 10 to 40 h in total. Real runs are about 4 times cheaper. (R4 revises this upward with later sweep times. The χ = 768 figure here is too low.) Checkpoints are written once per sweep, so each hand-over from an overlap step to its queued job (and each time-limit kill) costs every run its sweep in progress.
+
+### R4. Interim reading at χ = 256 at the collaborator's bond and field, snapshot 2026-11-09 22:00 EST [numerical, interim; typhon_out/, local/out/]
+
+Status. One production run is done (the XX control at L = 256). No p153c run has reached its registered final χ (384 at L = 64, 512 at L = 128, 768 at L = 256), so V1 to V6 are not evaluated, and everything below is a reading at χ = 256. It comes from `python3 analyze190.py typhon_out/outA --partial` and from the per-stage records in the json files, read with interim190.py (which also pairs the local L = 64 pilot with the Typhon L = 128 runs at equal χ, `python3 interim190.py local/out/p153c_L64_P0.json local/out/p153c_L64_P1.json typhon_out/outA/p153c_L128_P0_rand1.json typhon_out/outA/p153c_L128_P0_prod28.json typhon_out/outA/p153c_L128_P1_rand1.json`).
+
+XX control. xx1_L256_P0_rand1 is done at χ = 768 and meets C1 to C4 (residual 1e-9, discarded weight 1.5e-13, ΔE = 1.7e-13 and ΔS̄ = 1.7e-11 between the last two sweeps). It gives S̄₁, S̄₆, S̄₁₂ = 1.1186, 1.1206, 1.1207, each 3.6e-8 below the exact free-fermion value, and c_prof = 0.993.
+
+p153c (φ = 1.53, h_z = −19.97589125), last mixer-off sweep at χ = 256. Every local solve met its residual target (1e-8 on Typhon, 1e-9 in the local pilot).
+
+| L | sector, init | E (Δ = 1) | S̄₁ | S̄₆ | S̄₁₂ | c_prof | n_mid | N_tot | discarded |
+| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| 64 | even, rand:1 (local pilot) | −650.0414852455 | 1.6140 | 1.6085 | 1.5929 | 2.57 | 0.2183 | 16.014 | 3.3e-10 |
+| 64 | odd, rand:1 (local pilot) | −650.0414362271 | 1.5937 | 1.5881 | 1.5723 | 2.50 | 0.2018 | 15.025 | 2.8e-10 |
+| 128 | even, rand:1 | −1290.1134121766 | 1.8476 | 1.8386 | 1.8314 | 2.09 | 0.2211 | 30.045 | 3.5e-9 |
+| 128 | even, prod28 | −1290.1134121773 | 1.8476 | 1.8386 | 1.8314 | 2.09 | 0.2211 | 30.045 | 3.5e-9 |
+| 128 | odd, rand:1 | −1290.1134075210 | 1.8403 | 1.8316 | 1.8247 | 2.10 | 0.2130 | 29.052 | 3.4e-9 |
+
+- Reproducibility. The Typhon L = 64 even run at χ = 192 agrees with the local pilot at χ = 192 (E = −650.0414849190 against −650.0414849170, S̄₁ = 1.6125 in both).
+- Initializations (C5, read at χ = 256). The random start and the product start with 28 particles agree to 7e-10 in energy and to four digits in S̄ and c_prof. Both end at N_tot = 30.05.
+- Ground branch and parity. The even sector is lower at both sizes, with E_odd − E_even = 4.90e-5 at L = 64 and 4.66e-6 at L = 128, that is L·Δ_GC/|t₂| = +0.251 and +0.048. Both are below the unpaired-liquid bound of about 1.2 and the value decreases with L, so there is no pair-gap signature in this size pair. V5 needs L = 256.
+
+c_two(64 → 128), with χ = 256 at both sizes.
+
+| pairing (64 → 128) | W = 1 | W = 6 | W = 12 | Δn_mid |
+| :-- | :-- | :-- | :-- | :-- |
+| even → even (ground branch) | 2.022 | 1.991 | 2.064 | +0.0028 |
+| even → odd | 1.959 | 1.931 | 2.006 | −0.0053 |
+| odd → even | 2.198 | 2.168 | 2.243 | +0.0193 |
+| odd → odd | 2.135 | 2.108 | 2.184 | +0.0112 |
+
+- The density-corrected estimator at n* = 0.2211 gives c_dc = 1.99, 1.96, 2.03 (W = 1, 6, 12), within 0.03 of the ground-branch c_two.
+- The collaborator's numbers for the same quantity (W = 1) are 0.79 on their ground branch (even at L = 64, odd at L = 128 by their energies) and 0.74 to 0.93 over the four pairings. At χ = 256 the downturn does not reproduce. The value 2.02 is on the "does not reproduce" side of V3 (≥ 1.6), but V3 is stated for the registered final χ and stays unevaluated until those stages finish.
+
+Where the two computations differ. The energies below are E − E_off in my convention (the collaborator's shifted energy plus 10, checked at both sizes).
+
+| L, sector | collaborator, χ = 128 | this work, χ = 256 | collaborator − this work |
+| :-- | :-- | :-- | :-- |
+| 64, even | −11.584442504 | −11.584445246 | 2.74e-6 |
+| 64, odd | −11.584393385 | −11.584396227 | 2.84e-6 |
+| 128, even | −13.199287936 | −13.199332177 | 4.42e-5 |
+| 128, odd | −13.199296931 | −13.199327521 | 3.06e-5 |
+
+- At L = 128 the collaborator's states lie 3e-5 to 4e-5 above mine. That is 7 to 9 times the parity splitting, and their branch order is reversed (odd lower by 9.0e-6, against even lower by 4.7e-6 here).
+- My own mixer-on sweep at χ = 128 has E − E_off = −13.1992881, next to their even-sector value. So their L = 128 states appear to be what χ = 128 gives, not the product of a failed solver. Their entropies there are S̄₁ = 1.686 (even) and 1.692 (odd), below my χ = 256 values by 0.16 and 0.15.
+- χ dependence of S̄₁ for the even N = 30 state at L = 128. It is 1.686 at χ = 128 (collaborator), 1.817 at χ = 192 (the tuning run tune_p153_n316_2, at a field higher by 4.75e-5, with the same N_tot = 30.05, discarded weight 9e-9, stationary to 2e-4 over its last three sweeps) and 1.848 at χ = 256. The steps are 0.131 and 0.031. At L = 64 the same sequence is 1.599, 1.613, 1.614, with steps 0.013 and 0.0015. So a χ = 128 truncation costs about ten times more entropy at L = 128 than at L = 64. Relative to χ = 256 that shifts c_two(64 → 128) down by 6 × 0.15/ln 2 ≈ 1.3, which is the size of the disagreement. The χ = 128 point is the collaborator's and the χ = 192 point is from a neighbouring field, so this sequence is an indirect comparison. The χ = 384 and 512 stages of the same run give the direct one.
+- What is still open on my side. The step from χ = 192 to 256 at L = 128 is 0.031, so S̄(128) at χ = 256 is not converged at the level of C4 (0.01). The steps shrink by a factor of about 4 per stage (9 at L = 64), so I expect about 0.01 more from the χ = 384 and 512 stages. An increase of 0.01 in S̄(128) raises c_two(64 → 128) by 0.09, away from the collaborator's value.
+
+Against the effective model (C176, interpolated in ln n_mid at each L). ΔS̄₆ = −0.232 at L = 64 (n_mid = 0.2183) and −0.246 at L = 128 (n_mid = 0.2211). The effective model's own c_two between these two points is 2.11 at W = 6, against 1.99 for the full chain at χ = 256. The difference of −0.014 in ΔS̄₆ is inside V4's ±0.05 window, and the remaining χ deficit at L = 128 has the same sign and about the same size. The L = 128 reference point is interpolated between N = 24 and N = 32 (n_mid 0.204 and 0.268), which adds an error of about 0.005 to 0.01 in S̄. So over 64 → 128 the full chain at this bond follows the effective model's c ≈ 2 to within about 0.1 to 0.2, with a constant offset of about −0.24 in S̄₆ (C177 found about −0.2 at V/Δ = 8). The decisive pair for V1 and V2 is 128 → 256, which is not available yet.
+
+Tuning runs as χ = 192 data at L = 128 (not used for any verdict). The fifteen tuning runs (even sector, final χ = 192, discarded weight 6e-10 to 1e-8) give S̄₆ between 1.45 and 1.82 and c_prof between 1.6 and 2.1. Against the effective model at equal n_mid, ΔS̄₆ runs from −0.20 at n_mid ≈ 0.155 to −0.28 (p153, rat), −0.29 (sym40) and −0.32 (sym80) at n_mid ≈ 0.22 to 0.24. Part of that growth with density is the χ = 192 deficit, since the p153 point with N = 30 moves from −0.276 at χ = 192 to −0.246 at χ = 256. The rat and p153 bonds agree to 3e-3 in S̄ at every point. One tuning point (sym40_n316 at μ_eff = −2.165, N_tot = 27.92) was not stationary, with S̄₆ still moving by 0.015 in its last sweep. Its n_mid = 0.204 agrees with the V/Δ = 80 point at the same μ_eff (0.2045), so the tuned field is not affected beyond the half-step limit of R2.
+
+L = 256 so far. The two p153c runs are in the χ = 192 mixer-on stage, with N_tot = 57.16 (even) and 57.15 (odd), n_mid = 0.2155 and 0.2154, and E − E_off = −16.42889214 and −16.42890298. The even sector has no integer close to 57.16 with the right parity, so at this field it sits between N = 56 and N = 58 or has not settled, and the odd sector is lower by 1.1e-5 at this stage. The ground branch at L = 256 may therefore be odd. This is unconverged and is recorded only so that the final parity table is read with it in mind.
+
+Timing, revised (this replaces the estimate in R3).
+
+- Measured sweep times for complex bonds with 6 threads: 1170 to 1650 s at L = 128, χ = 256, and 1790 to 2690 s at L = 256, χ = 192. The observed scaling lies between χ² and χ³.
+- A complex L = 128 run then needs 0.9 to 1.3 h per sweep at χ = 384 and 1.6 to 3.1 h at χ = 512, so 7 to 27 h more for its remaining 2 + (3 to 8) sweeps.
+- A complex L = 256 run needs 7 to 40 h per sweep at χ = 768, and 1.5 to 6 days for its whole schedule. R3's 3 to 6 h per sweep was too low. The registered χ = 768 at L = 256 for the complex bonds (p153c, p153_n316, rat_n316) may not be reached within one 3-day job. The real bonds (sym40, sym80) and the controls are 3 to 4 times cheaper.
+
+Allocation lifetimes at 22:05 EST (squeue).
+
+- Donor 17602270 (node B, node26) has 20 h 45 min left, so the node B step ends by 2026-11-10 18:50. Donor 17604455 (node A, node18) has 40.5 h left, so the node A step ends by 2026-11-11 14:37.
+- The start estimate of the queued jobs 17606939 and 17606940 moved during the evening from 2026-11-10 05:48 to 2026-11-10 16:09 and then to 2026-11-14 14:52 (reason Priority for both). If the last estimate holds, node B stops for almost four days when its donor ends and node A for three. I did not touch the jobs or start anything else. Whether to move the payload to another allocation is the coordinator's decision.
 
 ### Coordinator note (2026-11-09, after the agent's interim stop)
 

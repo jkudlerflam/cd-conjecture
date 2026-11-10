@@ -11,3 +11,26 @@
 [    1701s] finished tune_sym40_n316_1 rc=0
 [    1701s] tuned sym40_n316: hz = -19.976047251
 [    1701s] started tune_sym40_n18_2 (cost 9.06e+08)
+[    3261s] finished tune_sym40_n18_2 rc=0
+[    3261s] started tune_sym80_n316_0 (cost 9.06e+08)
+[    3401s] finished tune_sym40_n18_1 rc=0
+[    3401s] started tune_sym80_n316_1 (cost 9.06e+08)
+[    3461s] finished tune_sym40_n18_0 rc=0
+[    3461s] tuned sym40_n18: hz = -19.976333694
+[    3461s] started tune_sym80_n316_2 (cost 9.06e+08)
+[    4521s] finished tune_rat_n316_1 rc=0
+[    4521s] started xx1_L256_P0_rand1 (cost 1.16e+11)
+[    4561s] finished tune_rat_n316_2 rc=0
+[    4561s] started xx2_L256_P0_rand1 (cost 1.16e+11)
+[    4821s] finished tune_rat_n316_0 rc=0
+[    4821s] tuned rat_n316: hz = -19.975988986
+[    4821s] started rat_n316_L256_P0_rand1 (cost 4.64e+11)
+[    5061s] finished tune_sym80_n316_0 rc=0
+[    5061s] started rat_n316_L256_P1_rand1 (cost 4.64e+11)
+[    5101s] finished tune_sym80_n316_2 rc=0
+[    5101s] started sym40_n316_L256_P0_rand1 (cost 1.16e+11)
+[    5221s] finished tune_sym80_n316_1 rc=0
+[    5221s] tuned sym80_n316: hz = -39.988023246
+[    5221s] started sym40_n316_L256_P0_prod50 (cost 1.16e+11)
+[    5641s] finished xx1_L256_P0_rand1 rc=0
+[    5641s] started sym40_n316_L256_P1_rand1 (cost 1.16e+11)
