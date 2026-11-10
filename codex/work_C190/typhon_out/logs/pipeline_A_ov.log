@@ -13,3 +13,9 @@
 [    5321s] finished tune_p153_n316_0 rc=0
 [    5321s] tuned p153_n316: hz = -19.975988793
 [    5321s] started p153_n316_L256_P0_rand1 (cost 4.64e+11)
+[    8601s] finished p153c_L64_P0_rand1 rc=0
+[    8602s] started p153_n316_L256_P1_rand1 (cost 4.64e+11)
+[   34823s] finished p153c_L128_P0_prod28 rc=0
+[   34823s] started p153_n316_L128_P0_rand1 (cost 6.87e+10)
+[   35943s] finished p153c_L128_P1_rand1 rc=0
+[   35943s] started p153_n316_L128_P0_prod26 (cost 6.87e+10)

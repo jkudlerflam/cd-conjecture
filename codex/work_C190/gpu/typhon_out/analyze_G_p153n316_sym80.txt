@@ -1,0 +1,38 @@
+== p153_n316 target n_mid 0.1957
+p153_n316_L64_P0_rand1: chi=384 fin_sweeps=3 tot=13 E=-650.0447248647 n_mid=0.1851 S=(1.5735,1.5659,1.5495) res=1.0e-09 dE=3.4e-11 dS=7.6e-07 dn=5.3e-09 trunc=1.5e-11 C4step=0.0003 C1-3=ok C4=ok
+p153_n316_L64_P1_rand1: chi=384 fin_sweeps=3 tot=13 E=-650.0447490177 n_mid=0.2016 S=(1.5954,1.5894,1.5734) res=1.0e-09 dE=7.1e-11 dS=1.1e-06 dn=7.0e-09 trunc=2.4e-11 C4step=0.0004 C1-3=ok C4=ok
+p153_n316_L128_P0_prod26: chi=512 fin_sweeps=4 tot=16 E=-1290.1203340670 n_mid=0.2047 S=(1.8493,1.8399,1.8327) res=1.0e-09 dE=6.4e-10 dS=4.5e-06 dn=1.5e-08 trunc=2.2e-10 C4step=0.0042 C1-3=ok C4=ok
+p153_n316_L128_P0_rand1: chi=512 fin_sweeps=4 tot=16 E=-1290.1203340669 n_mid=0.2047 S=(1.8493,1.8399,1.8327) res=1.0e-09 dE=3.7e-10 dS=7.0e-06 dn=5.6e-08 trunc=2.2e-10 C4step=0.0042 C1-3=ok C4=ok
+   -> used for L=128 P=0: p153_n316_L128_P0_prod26
+p153_n316_L128_P1_prod25: chi=512 fin_sweeps=3 tot=15 E=-1290.1203554203 n_mid=0.1967 S=(1.8404,1.8324,1.8254) res=1.0e-09 dE=6.6e-10 dS=4.1e-05 dn=8.4e-08 trunc=2.0e-10 C4step=0.0037 C1-3=ok C4=ok
+p153_n316_L128_P1_rand1: chi=512 fin_sweeps=3 tot=15 E=-1290.1203554204 n_mid=0.1967 S=(1.8403,1.8324,1.8254) res=1.0e-09 dE=9.6e-10 dS=4.7e-05 dn=6.3e-08 trunc=2.0e-10 C4step=0.0037 C1-3=ok C4=ok
+   -> used for L=128 P=1: p153_n316_L128_P1_rand1
+p153_n316_L256_P0_rand1: chi=768 fin_sweeps=4 tot=18 E=-2570.2713859128 n_mid=0.1955 S=(2.0675,2.0630,2.0598) res=1.0e-09 dE=1.2e-09 dS=1.0e-05 dn=3.7e-08 trunc=3.0e-10 C4step=0.0247 C1-3=ok C4=FAIL
+p153_n316_L256_P1_rand1: chi=768 fin_sweeps=4 tot=18 E=-2570.2713807247 n_mid=0.1995 S=(2.0718,2.0670,2.0638) res=1.0e-09 dE=1.7e-09 dS=1.6e-05 dn=5.6e-08 trunc=3.1e-10 C4step=0.0253 C1-3=ok C4=FAIL
+ L=64: ground sector P=1, E0-E1=+2.415e-05, n_mid P0/P1 0.1851/0.2016
+ L=128: ground sector P=1, E0-E1=+2.135e-05, n_mid P0/P1 0.2047/0.1967
+ L=256: ground sector P=0, E0-E1=-5.188e-06, n_mid P0/P1 0.1955/0.1995
+ ground-branch c_two(64->128) W=1,6,12: 2.120 2.104 2.182
+   sector P=0 c_two(64->128): 2.388 2.371 2.451
+   sector P=1 c_two(64->128): 2.120 2.104 2.182
+ ground-branch c_two(128->256) W=1,6,12: 1.966 1.996 2.029
+   sector P=0 c_two(128->256): 1.889 1.931 1.966
+   sector P=1 c_two(128->256): 2.003 2.030 2.063
+ C6: n_mid(256) ground 0.1955 vs target 0.1957 -> ok (both sectors: 0.1955, 0.1995)
+== sym80_n316 target n_mid 0.1957
+sym80_n316_L64_P0_rand1: chi=384 fin_sweeps=3 tot=13 E=-1300.0228725231 n_mid=0.1850 S=(1.5741,1.5701,1.5527) res=1.0e-09 dE=6.6e-11 dS=1.7e-06 dn=2.0e-08 trunc=9.9e-12 C4step=0.0006 C1-3=ok C4=ok
+sym80_n316_L64_P1_rand1: chi=384 fin_sweeps=3 tot=13 E=-1300.0228656912 n_mid=0.2016 S=(1.5961,1.5901,1.5741) res=1.0e-09 dE=5.3e-11 dS=2.7e-06 dn=2.9e-08 trunc=1.5e-11 C4step=0.0007 C1-3=ok C4=ok
+sym80_n316_L128_P0_rand1: chi=512 fin_sweeps=4 tot=16 E=-2580.0612141617 n_mid=0.1884 S=(1.8261,1.8190,1.8120) res=1.0e-09 dE=3.8e-10 dS=9.5e-06 dn=1.1e-08 trunc=9.7e-11 C4step=0.0050 C1-3=ok C4=ok
+sym80_n316_L128_P1_rand1: chi=512 fin_sweeps=4 tot=16 E=-2580.0612270693 n_mid=0.1965 S=(1.8382,1.8305,1.8235) res=1.0e-09 dE=3.6e-10 dS=3.8e-06 dn=3.1e-09 trunc=1.1e-10 C4step=0.0057 C1-3=ok C4=ok
+sym80_n316_L256_P0_rand1: chi=768 fin_sweeps=4 tot=18 E=-5140.1378350102 n_mid=0.1952 S=(2.0594,2.0548,2.0516) res=1.0e-09 dE=1.9e-09 dS=4.5e-06 dn=1.7e-07 trunc=1.5e-10 C4step=0.0346 C1-3=ok C4=FAIL
+sym80_n316_L256_P1_rand1: chi=768 fin_sweeps=4 tot=18 E=-5140.1378342986 n_mid=0.1912 S=(2.0548,2.0505,2.0474) res=1.0e-09 dE=1.5e-09 dS=1.0e-05 dn=1.8e-07 trunc=1.5e-10 C4step=0.0339 C1-3=ok C4=FAIL
+ L=64: ground sector P=0, E0-E1=-6.832e-06, n_mid P0/P1 0.1850/0.2016
+ L=128: ground sector P=1, E0-E1=+1.291e-05, n_mid P0/P1 0.1884/0.1965
+ L=256: ground sector P=0, E0-E1=-7.115e-07, n_mid P0/P1 0.1952/0.1912
+ ground-branch c_two(64->128) W=1,6,12: 2.286 2.253 2.344
+   sector P=0 c_two(64->128): 2.181 2.154 2.245
+   sector P=1 c_two(64->128): 2.096 2.081 2.159
+ ground-branch c_two(128->256) W=1,6,12: 1.915 1.942 1.975
+   sector P=0 c_two(128->256): 2.020 2.042 2.074
+   sector P=1 c_two(128->256): 1.876 1.904 1.938
+ C6: n_mid(256) ground 0.1952 vs target 0.1957 -> ok (both sectors: 0.1952, 0.1912)

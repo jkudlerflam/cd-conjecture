@@ -263,3 +263,51 @@ Every run meets C1 to C3 (residual 1e-9, last energy step at most 1.8e-9, entrop
 - Against the registration. V2 is excluded for both keys, since c_two(128 → 256) is 1.87 to 2.19 at W = 6 and 12 in every sector, and c_two(64 → 128) is above 2. The values meet V1's thresholds, but V1 is not declared, because C4 fails at L = 256 (steps 0.025 for rat_n316 and 0.014 to 0.015 for sym40_n18 against the allowed 0.01). This is the same pattern as p153c and sym40_n316.
 - Four keys now read about 2 from 128 to 256 at χ = 768, at two densities (n = 3/16 and 1/8) and at three bonds (the collaborator's field, their rational bond, the symmetric line). The n = 1/8 point has the smaller C4 step.
 - These two keys are not in the χ = 1024 job of R8. A χ = 1024 stage for them would need its own registration and submission.
+
+## R11. Production complete: p153_n316 and sym80_n316 at χ = 768, and the CPU–GPU cross-check (collected 2026-11-10 06:40 EST)
+
+The production job has finished, and all 51 runs in typhon_out/outG/ have status done. The last two keys are the collaborator's φ = 1.53 bond tuned to n = 3/16 (p153_n316, h_z = −19.975988793) and the symmetric-line bond at V/Δ = 80 tuned to n = 3/16 (sym80_n316, h_z = −39.988023246). The analysis is typhon_out/analyze_G_p153n316_sym80.txt, made with `python3 -E -s ../analyze_keys.py outG p153_n316:0.1957 sym80_n316:0.1957` from typhon_out/. The script now takes the keys as arguments (with the R10 keys as the default), lists every finished run of a configuration, and uses the lowest-energy one among those passing C1 to C4, as the amendment says.
+
+| key | L | sector | final χ | E | S̄₁, S̄₆, S̄₁₂ | n_mid | discarded weight | C4 step | C1 to C4 |
+|---|---|---|---|---|---|---|---|---|---|
+| p153_n316 | 64 | even | 384 | −650.0447248647 | 1.5735, 1.5659, 1.5495 | 0.1851 | 1.5e-11 | 0.0003 | pass |
+| p153_n316 | 64 | odd | 384 | −650.0447490177 | 1.5954, 1.5894, 1.5734 | 0.2016 | 2.4e-11 | 0.0004 | pass |
+| p153_n316 | 128 | even | 512 | −1290.1203340670 | 1.8493, 1.8399, 1.8327 | 0.2047 | 2.2e-10 | 0.0042 | pass |
+| p153_n316 | 128 | odd | 512 | −1290.1203554204 | 1.8403, 1.8324, 1.8254 | 0.1967 | 2.0e-10 | 0.0037 | pass |
+| p153_n316 | 256 | even | 768 | −2570.2713859128 | 2.0675, 2.0630, 2.0598 | 0.1955 | 3.0e-10 | 0.0247 | C4 fails |
+| p153_n316 | 256 | odd | 768 | −2570.2713807247 | 2.0718, 2.0670, 2.0638 | 0.1995 | 3.1e-10 | 0.0253 | C4 fails |
+| sym80_n316 | 64 | even | 384 | −1300.0228725231 | 1.5741, 1.5701, 1.5527 | 0.1850 | 9.9e-12 | 0.0006 | pass |
+| sym80_n316 | 64 | odd | 384 | −1300.0228656912 | 1.5961, 1.5901, 1.5741 | 0.2016 | 1.5e-11 | 0.0007 | pass |
+| sym80_n316 | 128 | even | 512 | −2580.0612141617 | 1.8261, 1.8190, 1.8120 | 0.1884 | 9.7e-11 | 0.0050 | pass |
+| sym80_n316 | 128 | odd | 512 | −2580.0612270693 | 1.8382, 1.8305, 1.8235 | 0.1965 | 1.1e-10 | 0.0057 | pass |
+| sym80_n316 | 256 | even | 768 | −5140.1378350102 | 2.0594, 2.0548, 2.0516 | 0.1952 | 1.5e-10 | 0.0346 | C4 fails |
+| sym80_n316 | 256 | odd | 768 | −5140.1378342986 | 2.0548, 2.0505, 2.0474 | 0.1912 | 1.5e-10 | 0.0339 | C4 fails |
+
+Every run meets C1 to C3 (residual 1e-9, last energy step at most 1.9e-9, entropy step at most 4.7e-5, discarded weight at most 3.1e-10).
+
+| c_two at W = 1, 6, 12 | 64 → 128 | 128 → 256 |
+|---|---|---|
+| p153_n316, ground branch (odd, odd, even) | 2.120, 2.104, 2.182 | 1.966, 1.996, 2.029 |
+| p153_n316, even sector | 2.388, 2.371, 2.451 | 1.889, 1.931, 1.966 |
+| p153_n316, odd sector | 2.120, 2.104, 2.182 | 2.003, 2.030, 2.063 |
+| sym80_n316, ground branch (even, odd, even) | 2.286, 2.253, 2.344 | 1.915, 1.942, 1.975 |
+| sym80_n316, even sector | 2.181, 2.154, 2.245 | 2.020, 2.042, 2.074 |
+| sym80_n316, odd sector | 2.096, 2.081, 2.159 | 1.876, 1.904, 1.938 |
+
+- Sector splittings E(even) − E(odd): p153_n316 +2.42e-5, +2.14e-5, −5.19e-6 at L = 64, 128, 256, and sym80_n316 −6.83e-6, +1.29e-5, −7.1e-7. The ground sector changes with L for both keys, so the per-sector rows are the cleaner comparison. At L = 256 the sym80_n316 sectors are 7e-7 apart, which is resolved against the 2e-9 sweep steps but small.
+- Two initializations. For p153_n316 at L = 128 the product start and the random start end at the same state in both sectors. The energies agree to 1e-10 and S̄₆ to 1e-4, so C5 holds there.
+- C6 passes for both keys, with ground-sector n_mid at L = 256 of 0.1955 and 0.1952 against the target 0.1957.
+- Against the registration. V2 is excluded for both keys, since c_two(128 → 256) is 1.90 to 2.07 at W = 6 and 12 in every sector, and c_two(64 → 128) is above 2. The values meet V1's thresholds, but V1 is not declared, because C4 fails at L = 256 (steps 0.025 for p153_n316 and 0.034 to 0.035 for sym80_n316 against the allowed 0.01).
+- All six keys now read between 1.94 and 2.07 at W = 6 on the ground branch from 128 to 256 (p153c 1.936, sym40_n316 2.074, rat_n316 2.033, sym40_n18 1.978, p153_n316 1.996, sym80_n316 1.942). The reading does not move between V/Δ = 40 and 80, where the corrections to the effective model differ by a factor of four. The C4 step is largest at V/Δ = 80.
+
+CPU against GPU (rule C5). Three CPU runs of p153c have finished with the same schedule as their GPU counterparts. The comparison is typhon_out/cross_cpu_gpu.txt, made with `python3 -E -s cross_cpu_gpu.py ../typhon_out/outA typhon_out/outG` from codex/work_C190/gpu/.
+
+| run | χ | E (CPU) | E (GPU) | E difference | S̄₁, S̄₆, S̄₁₂ (both) | S̄₆ difference |
+|---|---|---|---|---|---|---|
+| p153c, L = 64, even, rand1 | 384 | −650.0414853399 | −650.0414853398 | 4e-12 | 1.6146, 1.6090, 1.5933 | 1.4e-7 |
+| p153c, L = 128, even, prod28 | 512 | −1290.1134157016 | −1290.1134157013 | 3.3e-10 | 1.8682, 1.8591, 1.8515 | 1.4e-7 |
+| p153c, L = 128, odd, rand1 | 512 | −1290.1134107386 | −1290.1134107388 | 1.8e-10 | 1.8598, 1.8510, 1.8436 | 8.7e-7 |
+
+The two codes land on the same states. The energies agree far inside C5's 1e-7 and S̄₆ agrees to 1e-6 against the allowed 0.01. The CPU runs at L = 256 are still going, so the L = 256 readings rest on the GPU runs alone for now.
+
+What is left for the registration: the χ = 1024 stage of R8 for C4 at L = 256 (queued, p153c and sym40_n316 only), and the CPU L = 256 runs as a further C5 check.

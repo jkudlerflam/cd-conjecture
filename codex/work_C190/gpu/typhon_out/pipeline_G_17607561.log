@@ -31,3 +31,101 @@
 [     210s] added p153_n316_L128_P1_prod25 (hz = -19.97598879265652)
 [     210s] added p153_n316_L64_P0_rand1 (hz = -19.97598879265652)
 [     210s] added p153_n316_L64_P1_rand1 (hz = -19.97598879265652)
+[    2370s] finished p153c_L128_P1_rand1 rc=0 on GPU 3
+[    2370s] started p153c_L64_P0_rand1 on GPU 3
+[    2430s] finished p153c_L128_P0_prod28 rc=0 on GPU 4
+[    2430s] started p153c_L64_P1_rand1 on GPU 4
+[    2640s] finished p153c_L128_P0_rand1 rc=0 on GPU 2
+[    2640s] finished p153c_L128_P1_prod29 rc=0 on GPU 5
+[    2640s] started p153c_L64_P0_prod14 on GPU 2
+[    2641s] started p153c_L64_P1_prod15 on GPU 5
+[    2971s] finished p153c_L64_P0_rand1 rc=0 on GPU 3
+[    2971s] started sym40_n316_L256_P0_rand1 on GPU 3
+[    3061s] finished p153c_L64_P1_rand1 rc=0 on GPU 4
+[    3061s] started sym40_n316_L256_P1_rand1 on GPU 4
+[    3241s] finished p153c_L64_P0_prod14 rc=0 on GPU 2
+[    3241s] started sym40_n316_L256_P0_prod50 on GPU 2
+[    3271s] finished p153c_L64_P1_prod15 rc=0 on GPU 5
+[    3271s] started sym40_n316_L256_P1_prod51 on GPU 5
+[    7531s] finished p153c_L256_P1_rand1 rc=0 on GPU 1
+[    7531s] started sym40_n316_L128_P0_rand1 on GPU 1
+[    9391s] finished sym40_n316_L256_P1_rand1 rc=0 on GPU 4
+[    9391s] started sym40_n316_L128_P1_rand1 on GPU 4
+[    9601s] finished sym40_n316_L256_P0_rand1 rc=0 on GPU 3
+[    9601s] started sym40_n316_L128_P0_prod26 on GPU 3
+[    9721s] finished sym40_n316_L128_P0_rand1 rc=0 on GPU 1
+[    9721s] started sym40_n316_L128_P1_prod25 on GPU 1
+[    9961s] finished sym40_n316_L256_P0_prod50 rc=0 on GPU 2
+[    9961s] finished sym40_n316_L256_P1_prod51 rc=0 on GPU 5
+[    9961s] started sym40_n316_L64_P0_rand1 on GPU 2
+[    9961s] started sym40_n316_L64_P1_rand1 on GPU 5
+[   10471s] finished sym40_n316_L64_P1_rand1 rc=0 on GPU 5
+[   10471s] skip xx1_L256_P0_rand1 (CPU control done)
+[   10471s] started xx1_L128_P1_rand1 on GPU 5
+[   10501s] finished sym40_n316_L64_P0_rand1 rc=0 on GPU 2
+[   10501s] started xx1_L64_P1_rand1 on GPU 2
+[   10591s] finished p153c_L256_P0_rand1 rc=0 on GPU 0
+[   10591s] started xx2_L256_P0_rand1 on GPU 0
+[   10621s] finished xx1_L64_P1_rand1 rc=0 on GPU 2
+[   10621s] started xx2_L128_P0_rand1 on GPU 2
+[   10771s] finished xx1_L128_P1_rand1 rc=0 on GPU 5
+[   10771s] started xx2_L64_P0_rand1 on GPU 5
+[   11071s] finished xx2_L64_P0_rand1 rc=0 on GPU 5
+[   11071s] started rat_n316_L256_P0_rand1 on GPU 5
+[   11341s] finished sym40_n316_L128_P1_rand1 rc=0 on GPU 4
+[   11341s] started rat_n316_L256_P1_rand1 on GPU 4
+[   11521s] finished sym40_n316_L128_P0_prod26 rc=0 on GPU 3
+[   11521s] started rat_n316_L128_P0_rand1 on GPU 3
+[   11731s] finished sym40_n316_L128_P1_prod25 rc=0 on GPU 1
+[   11731s] started rat_n316_L128_P1_rand1 on GPU 1
+[   11761s] finished xx2_L128_P0_rand1 rc=0 on GPU 2
+[   11761s] started rat_n316_L64_P0_rand1 on GPU 2
+[   12421s] finished rat_n316_L64_P0_rand1 rc=0 on GPU 2
+[   12421s] started rat_n316_L64_P1_rand1 on GPU 2
+[   13022s] finished rat_n316_L64_P1_rand1 rc=0 on GPU 2
+[   13022s] started sym40_n18_L256_P0_rand1 on GPU 2
+[   13832s] finished xx2_L256_P0_rand1 rc=0 on GPU 0
+[   13832s] started sym40_n18_L256_P1_rand1 on GPU 0
+[   14102s] finished rat_n316_L128_P1_rand1 rc=0 on GPU 1
+[   14102s] started sym40_n18_L128_P0_rand1 on GPU 1
+[   14162s] finished rat_n316_L128_P0_rand1 rc=0 on GPU 3
+[   14162s] started sym40_n18_L128_P1_rand1 on GPU 3
+[   16172s] finished sym40_n18_L128_P0_rand1 rc=0 on GPU 1
+[   16172s] started sym40_n18_L64_P0_rand1 on GPU 1
+[   16202s] finished sym40_n18_L128_P1_rand1 rc=0 on GPU 3
+[   16202s] started sym40_n18_L64_P1_rand1 on GPU 3
+[   16712s] finished sym40_n18_L64_P0_rand1 rc=0 on GPU 1
+[   16712s] finished sym40_n18_L64_P1_rand1 rc=0 on GPU 3
+[   16712s] started sym80_n316_L256_P0_rand1 on GPU 1
+[   16712s] started sym80_n316_L256_P1_rand1 on GPU 3
+[   19862s] finished rat_n316_L256_P0_rand1 rc=0 on GPU 5
+[   19862s] started sym80_n316_L128_P0_rand1 on GPU 5
+[   20012s] finished rat_n316_L256_P1_rand1 rc=0 on GPU 4
+[   20012s] started sym80_n316_L128_P1_rand1 on GPU 4
+[   20552s] finished sym40_n18_L256_P0_rand1 rc=0 on GPU 2
+[   20552s] started sym80_n316_L64_P0_rand1 on GPU 2
+[   20912s] finished sym40_n18_L256_P1_rand1 rc=0 on GPU 0
+[   20912s] started sym80_n316_L64_P1_rand1 on GPU 0
+[   21062s] finished sym80_n316_L64_P0_rand1 rc=0 on GPU 2
+[   21062s] started p153_n316_L256_P0_rand1 on GPU 2
+[   21422s] finished sym80_n316_L64_P1_rand1 rc=0 on GPU 0
+[   21422s] started p153_n316_L256_P1_rand1 on GPU 0
+[   22202s] finished sym80_n316_L128_P1_rand1 rc=0 on GPU 4
+[   22202s] started p153_n316_L128_P0_rand1 on GPU 4
+[   22262s] finished sym80_n316_L128_P0_rand1 rc=0 on GPU 5
+[   22262s] started p153_n316_L128_P0_prod26 on GPU 5
+[   23402s] finished sym80_n316_L256_P1_rand1 rc=0 on GPU 3
+[   23402s] started p153_n316_L128_P1_rand1 on GPU 3
+[   23492s] finished sym80_n316_L256_P0_rand1 rc=0 on GPU 1
+[   23492s] started p153_n316_L128_P1_prod25 on GPU 1
+[   24932s] finished p153_n316_L128_P0_rand1 rc=0 on GPU 4
+[   24932s] started p153_n316_L64_P0_rand1 on GPU 4
+[   25052s] finished p153_n316_L128_P0_prod26 rc=0 on GPU 5
+[   25052s] started p153_n316_L64_P1_rand1 on GPU 5
+[   25562s] finished p153_n316_L64_P0_rand1 rc=0 on GPU 4
+[   25652s] finished p153_n316_L128_P1_rand1 rc=0 on GPU 3
+[   25682s] finished p153_n316_L64_P1_rand1 rc=0 on GPU 5
+[   25802s] finished p153_n316_L128_P1_prod25 rc=0 on GPU 1
+[   28983s] finished p153_n316_L256_P0_rand1 rc=0 on GPU 2
+[   29313s] finished p153_n316_L256_P1_rand1 rc=0 on GPU 0
+pipeline done

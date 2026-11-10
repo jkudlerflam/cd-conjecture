@@ -10,15 +10,25 @@ def conv(d):
     c3=a['trunc']; c4=abs(a['Sbar6']-prev[-1]['Sbar6']) if prev else float('nan')
     return dict(chi=chi,ns=len(fin),nsw=len(h),E=a.get('E_phys',a['E']),n=a['n_mid'],S=(a['Sbar1'],a['Sbar6'],a['Sbar12']),c1=c1,c2E=c2E,c2S=c2S,c2n=c2n,c3=c3,c4=c4,
                 ok=(c1<=1e-8 and c2E<=1e-8 and c2S<=1e-3 and c2n<=5e-4 and c3<=1e-7 and c4<=0.01), okc13=(c1<=1e-8 and c2E<=1e-8 and c2S<=1e-3 and c2n<=5e-4 and c3<=1e-7))
-for key,tgt in (('rat_n316',0.1957),('sym40_n18',0.1326)):
+import glob
+KEYS=[(k.split(':')[0],float(k.split(':')[1])) for k in sys.argv[2:]] or [('rat_n316',0.1957),('sym40_n18',0.1326)]
+# usage: analyze_keys.py <folder> [key:target_n_mid ...]. Every done run of a (key, L, P) is listed, and the
+# lowest-energy run among those passing C1 to C4 is used (among those passing C1 to C3 if none passes C4).
+for key,tgt in KEYS:
     print('==',key,'target n_mid',tgt)
     R={}
     for L in (64,128,256):
         for P in (0,1):
-            t=f'{key}_L{L}_P{P}_rand1'; d=load(t)
+          cands=[]
+          for f in sorted(glob.glob(os.path.join(D,f'{key}_L{L}_P{P}_*.json'))):
+            t=os.path.basename(f)[:-5]; d=load(t)
             if d is None or d.get('status')!='done': print(t,'missing/not done'); continue
-            c=conv(d); R[(L,P)]=c
+            c=conv(d); c['tag']=t; cands.append(c)
             print(f"{t}: chi={c['chi']} fin_sweeps={c['ns']} tot={c['nsw']} E={c['E']:.10f} n_mid={c['n']:.4f} S=({c['S'][0]:.4f},{c['S'][1]:.4f},{c['S'][2]:.4f}) res={c['c1']:.1e} dE={c['c2E']:.1e} dS={c['c2S']:.1e} dn={c['c2n']:.1e} trunc={c['c3']:.1e} C4step={c['c4']:.4f} C1-3={'ok' if c['okc13'] else 'FAIL'} C4={'ok' if c['c4']<=0.01 else 'FAIL'}")
+          pool=[c for c in cands if c['ok']] or [c for c in cands if c['okc13']] or cands
+          if pool:
+            R[(L,P)]=min(pool,key=lambda c:c['E'])
+            if len(cands)>1: print(f"   -> used for L={L} P={P}: {R[(L,P)]['tag']}")
     g={}
     for L in (64,128,256):
         if (L,0) in R and (L,1) in R:

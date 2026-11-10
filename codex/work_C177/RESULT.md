@@ -108,4 +108,41 @@ Lowering the dressed μ_eff from −2.2 to −2.3 at V/Δ = 8 drops the density 
 - Open chains on Typhon at L = 128 read S̄ = 1.763 (V/Δ = 8) and 1.791 (V/Δ = 12) with c_prof = 2.42 and 2.20 at truncation 1.0e-8 and 7.5e-9. The two-size slope 64 → 128 at V/Δ = 8 is 2.5. Nothing in the open-chain data yet points to c = 1, and the L = 256 runs decide P1.
 - C175's bound pair: after the C186 conflict (R2, revised), the direct ring data at the physical μ point to a weak bound pair at V/Δ = 8 and 12, less bound than at second order, and the N-conserving extrapolation is not controlled. So the pairing obstruction is not removed at small V/Δ. If it holds, the c ≈ 2 readings are a crossover over a pair correlation length longer than the sizes reached.
 - The tested generic point off the parity class is gapped, and parity-breaking terms as small as 0.02|t_2| change the L = 48 state strongly (R6). By the registered rule the c = 2 region is not shown to be open in B₂, and the evidence points to the parity-breaking terms being dangerous, which would put the candidate (if c = 2 at all) on the parity-class stratum, i.e. at codimension ≥ 1, not open in B₂.
-- The registered criterion P1 to P3 is not yet evaluated. Run summ177.py on the collected outputs.
+- The registered criterion P1 to P3 is evaluated in the next section (added 2026-11-10).
+
+## Typhon results and the registered criterion (coordinator, Claude Fable 5, collected 2026-11-10 06:40 EST)
+
+The job completed at 05:18 EST on 2026-11-10. Outputs are in typhon_out/ (oc/, vc/ without the npz checkpoints, logs/, and the job's own summary.txt). `python3 -E -s summ177.py typhon_out > typhon_out/summary_local.txt` reproduces the job's summary apart from path prefixes. All numbers below are from summary_local.txt [numerical].
+
+Open chains (S̄ over the three middle cuts, final χ in brackets, dE the last energy step):
+
+| bond | L | S̄ | c_prof | discarded weight | dE | n_mid |
+|---|---|---|---|---|---|---|
+| F8 | 64, 128, 192, 256 | 1.4709, 1.7626, 1.9308, 2.0421 | 2.042, 2.417, 2.268, 2.294 | 7.5e-9, 1.0e-8, 1.2e-8, 1.1e-8 | 7e-9, 2.5e-8, 9e-8, −1.1e-6 | 0.178 to 0.180 |
+| F12 | 128, 256 [256, 320] | 1.7914, 1.8601 | 2.196, 1.591 | 7.5e-9, 1.0e-8 | 2.7e-8, −6.9e-7 | 0.181, 0.180 |
+| F16 | 64, 128, 192, 256 | 1.5250, 1.7886, 1.7757, 1.9867 | 2.138, 2.178, 1.764, 1.884 | 3.6e-9, 5.3e-9, 4.4e-9, 4.8e-9 | 5e-9, 1.4e-8, 1.5e-7, −9.0e-7 | 0.177 to 0.172 |
+| F24 | 128, 256 [256, 320] | 1.7761, 1.7640 | 2.185, 1.358 | 3.0e-9, 3.0e-9 | 6e-9, −5.0e-7 | 0.167, 0.164 |
+| C8 (c = 1 control) | 128, 256 [256, 256] | 1.1588, 1.2443 | 0.747, 0.790 | 3.2e-11, 1.7e-10 | 1e-10, 2.3e-9 | 0.148, 0.149 |
+| G8 (generic point) | 128, 256 | 0.3707, 0.3707 | 0.110, 0.003 | 2e-20 | 1e-13, 1e-12 | 0.200 |
+
+Two-size slopes 128 → 256: F8 2.420, F12 0.595, F16 1.715, F24 −0.105, C8 0.740, G8 0.000. F8 reads 2.32 to 2.53 on every size pair from 64 to 256. F16 is not monotonic in L (128 → 192 gives −0.19 and 192 → 256 gives 4.40).
+
+VUMPS (FES slope over the last three χ, n = 2 cell unless stated): F8 1.171 (χ ≤ 384), F8 in the n = 4 cell 1.332 (χ ≤ 256), F12 1.558 (χ ≤ 256), F16 1.976 (χ ≤ 320), F24 2.259 (χ ≤ 256), G8 0.000.
+
+The registered criterion, as printed by section 4 of the summary:
+
+| bond | P1 | P2 | P3 |
+|---|---|---|---|
+| F8 | fail (c_two 2.420, but c_prof drops 2.417 → 2.294, and the discarded weight is 1.0e-8 and 1.1e-8) | fail (1.171) | pass |
+| F12 | fail (c_two 0.595, c_prof 2.196 → 1.591) | pass (1.558) | pass |
+| F16 | fail (c_two 1.715, but c_prof drops 2.178 → 1.884) | pass (1.976) | pass |
+| F24 | fail (c_two −0.105, c_prof 2.185 → 1.358) | pass (2.259) | pass |
+| G8 | fail (gapped, S̄ = 0.3707 at both sizes) | fail | pass |
+
+- By the registered rule, every bond fails P1, so the full chain at V/Δ = 8 to 24 does not support the c = 2 candidate at the sizes reached under this criterion. I record that as the outcome of the registration.
+- The outcome does not discriminate, for three reasons that are visible in the data. (i) The L = 256 states are not converged. Their last energy steps are −5e-7 to −1.1e-6, against about 1e-8 at L = 128 and against the 1e-8 that C190's criterion C2 asks for. The failing slopes come from S̄(256) falling short, and S̄ is not monotonic in L for F16. (ii) The c = 1 control is well converged and reads 0.740 against 1 from 128 to 256, so the three-cut two-size slope is off by about 0.26 even on a clean state. (iii) F8 fails P1 only on the secondary clauses, with c_two above 2.3 on every size pair.
+- The VUMPS runs reach the iteration cap (800) at almost every χ, with gradient errors of 1e-3 to 5e-3 at V/Δ ≥ 16 and above 1e-4 at χ ≥ 256 for V/Δ = 8 and 12. The growth of ξ with χ at the top of each run (ξ ∝ χ^κ with κ = 0.42 to 0.47 for F8, F16 and F24 in the n = 2 cell) is too slow for any c ≤ 2, which is another sign that the largest χ are not converged.
+- One reading does point below 2 and is not explained by convergence alone. For F8 the pairwise FES slopes are 1.33 to 1.49 over χ = 64 to 192 (ξ from 170 to 500 sites) in both cells, where the errors are 1e-5 to 7e-5, and they fall to 1.17 to 1.23 at χ ≥ 256. So at V/Δ = 8 the infinite chain reads about 1.4, between the two candidates, while the open chains at the same bond read 2.3 to 2.5. The FES slope rises with V/Δ (1.2 to 1.4, 1.56, 1.98, 2.26 at V/Δ = 8, 12, 16, 24), with convergence getting worse in the same order. A crossover length that shortens as V/Δ decreases would look like this, and so would an under-converged VUMPS, and this job cannot tell them apart.
+- G8 is gapped at both sizes (S̄ = 0.3707, c = 0), which confirms R6. The c = 2 region, if it exists, is not open in B₂ at this point.
+- Standing of this job. It was designed before C190's solver existed. C190 tests the same question at V/Δ = 40 and 80 with residual 1e-9, χ = 768 at L = 256 and both parity sectors (`../work_C190/gpu/RESULT.md`), and C189 tests the V/Δ → ∞ effective model on the infinite chain. Those supersede the open-chain half of this job. What this job adds is the F8 infinite-chain reading above, which deserves a converged rerun (the C190 solver at V/Δ = 8 to 24, and a symmetric infinite-chain code on the full chain).
+

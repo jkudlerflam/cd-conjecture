@@ -170,3 +170,44 @@ codex/work_C189/desktop_run/ (README.txt, PROMPT.txt, run_desktop.sh, tasks.txt,
 - `run_inf.py` now writes its checkpoints atomically (temporary file, then rename). The copy in `desktop_run/` is unchanged.
 - The Typhon runs were started as extra steps inside other running allocations of ours. See `../work_C192/TYPHON_OVERLAP.md` and `typhon/overlap_inf.sh`.
 - Write-up: REPORT §9.163.
+
+## Typhon runs to χ = 768 (coordinator, Claude Fable 5, collected 2026-11-10 06:40 EST)
+
+The five infinite-chain runs went as extra steps inside other allocations (`../work_C192/TYPHON_OVERLAP.md`), not as the queued jobs listed above. inf_c1 has finished its whole sequence (χ = 32 to 768). The other four have completed χ = 768 and are running χ = 1024, so their numbers here are interim and c_fit will shift once the last χ lands. Collected files are typhon_out/out/<tag>.jsonl (finished χ only), typhon_out/logs/ and typhon_out/summary_local.txt, made with `python3 summarize_inf.py typhon_out/out > typhon_out/summary_local.txt`. Everything below is from that summary [numerical]. Only what goes beyond the local runs (χ ≤ 256) is recorded.
+
+| tag | χ | S̄ | ξ₁, ξ₂, ξ₀ (sites) | local c from the previous χ | iterations |
+|---|---|---|---|---|---|
+| inf_s316 (n = 3/16) | 384 | 2.3527 | 287.8, 125.3, 149.7 | 1.991 | 40 |
+| | 512 | 2.4315 | 364.3, 157.0, 193.2 | 2.005 | 45 |
+| | 768 | 2.5435 | 510.6, 220.8, 269.1 | 1.991 | 62 |
+| inf_s18 (n = 1/8) | 384 | 2.2514 | 333.6, 161.1, 154.5 | 2.006 | 85 |
+| | 512 | 2.3294 | 422.3, 202.3, 196.7 | 1.983 | 30 |
+| | 768 | 2.4413 | 590.9, 282.9, 276.4 | 2.000 | 138 |
+| inf_s16 (n = 1/6) | 384 | 2.3230 | 299.9, 134.4, 150.4 | 1.990 | 91 |
+| | 512 | 2.4013 | 379.4, 168.8, 192.8 | 1.996 | 105 |
+| | 768 | 2.5136 | 532.1, 237.1, 269.8 | 1.992 | 126 |
+| inf_ff2v (c = 2 control) | 384 | 2.2590 | 301.8, 141.0, 139.2 | 1.975 | 58 |
+| | 512 | 2.3393 | 384.5, 177.7, 176.0 | 1.989 | 69 |
+| | 768 | 2.4500 | 538.9, 250.5, 248.6 | 1.967 | 92 |
+| inf_c1 (c = 1 control) | 384 | 1.5220 | 1434.5, 225.6, 1242.1 | 0.808 | 300 (cap) |
+| | 512 | 1.5821 | 2051.3, 320.9, 1776.6 | 1.008 | 300 (cap) |
+| | 768 | 1.6200 | 2881.3, 469.1, 2504.3 | 0.669 | 300 (cap) |
+
+Calibration under the registered rule (c_fit over the largest four χ).
+- inf_ff2v gives c_fit = 1.977, inside the 0.25 tolerance. Its energy error against the exact value is 1.2e-6 at χ = 768.
+- inf_c1 gives c_fit = 0.847, which is 0.153 below 1 and so misses the 0.15 tolerance by 0.003. By the registration the readings below are therefore uncalibrated on the c = 1 side, and I record them with that label.
+- What went wrong with the control is visible. It hit the iteration cap (300) at every χ ≥ 64, while the candidates stop on tolerance after 30 to 138 iterations. Its correlation length at χ = 768 is 2881 sites, five times the candidates'. Its local c is 0.93 to 1.07 on every step up to χ = 256 (ξ ≤ 940) and scatters only beyond (0.81, 1.01, 0.67 at ξ = 1400 to 2900). Its energy error is 5.9e-9 at χ = 768. [post hoc, unregistered] Fitted over the ξ range that the candidates cover, the control reads 0.957 (χ = 64 to 192, ξ = 167 to 663) and 0.978 (χ = 32 to 256). The earlier local control (χ ≤ 96) read 1.015.
+
+Readings for the candidates (registered rule, interim at χ = 768):
+
+| tag | c_fit (χ = 256 to 768) | growth of ξ₁, ξ₂, ξ₀ over 384 → 768 | change of ξ₁/ξ₂ | c = 2 liquid | pseudospin gap | e at χ = 768 | discarded weight |
+|---|---|---|---|---|---|---|---|
+| inf_s316 | 1.995 | 1.774, 1.762, 1.797 | ×1.007 | yes | no | −0.4182637706 | 2.9e-7 |
+| inf_s18 | 1.997 | 1.771, 1.756, 1.789 | ×1.009 | yes | no | −0.2809524996 | 1.4e-7 |
+| inf_s16 | 1.993 | 1.775, 1.764, 1.794 | ×1.006 | yes | no | −0.3728294392 | 2.5e-7 |
+
+- Beyond χ = 256. The local runs reached ξ = 205 sites at n = 3/16 and 236 at n = 1/8. The Typhon runs reach 511, 591 and 532 sites at n = 3/16, 1/8 and 1/6, and the local slope stays between 1.98 and 2.01 on every step from χ = 256 to 768 at all three densities. All three correlation lengths keep growing at the same rate, a factor 1.76 to 1.80 over the last doubling of χ, and no sector saturates.
+- n = 1/6 is new. Its energy density −0.37283 sits where C176's open-chain value (−0.37327) and ring ED (−0.3722 to −0.3749) put it.
+- [heuristic, unregistered] The ratios at χ = 768 are ξ₂/ξ₁ = 0.432, 0.479, 0.446 and ξ₁/ξ₀ = 1.90, 2.14, 1.97 at n = 3/16, 1/8, 1/6, against 0.465 and 2.17 for the free control. They have not moved from the local values (0.441 and 1.97 at n = 3/16, 0.479 and 2.13 at n = 1/8).
+- Stated limit, unchanged in kind. The test now resolves a pseudospin correlation length up to about 500 to 600 sites. C175's estimate (ξ_s of order 1e4) is still far beyond it.
+- Left to do. Collect χ = 1024 for the four running tags and rerun the summary. A rerun of the c = 1 control with a higher iteration cap is needed before the registered calibration can be called met or failed on converged states.

@@ -1,0 +1,136 @@
+== (1) open chains
+C8       L= 128 Sbar=1.1588 S(L/2)=1.1591 c_prof=0.747 c_sm=0.746 trunc=3.2e-11 E=-258.7226887640 dE_last=1.3e-10 n_mid=0.1476 emid=-2.0069437446 |P|max=4.8e-01 PP(L/4)=+2.24e-01 PP(L/2-2)=+2.23e-01 chi=256
+C8       L= 256 Sbar=1.2443 S(L/2)=1.2450 c_prof=0.790 c_sm=0.789 trunc=1.7e-10 E=-515.6115013523 dE_last=2.3e-09 n_mid=0.1491 emid=-2.0069440933 |P|max=4.8e-01 PP(L/4)=+2.31e-01 PP(L/2-2)=+2.31e-01 chi=256
+F12      L= 128 Sbar=1.7914 S(L/2)=1.7663 c_prof=2.196 c_sm=2.209 trunc=7.5e-09 E=-387.3994655425 dE_last=2.7e-08 n_mid=0.1814 emid=-3.0039594316 |P|max=2.7e-17 PP(L/4)=-1.82e-03 PP(L/2-2)=-3.41e-04 chi=256
+F12      L= 256 Sbar=1.8601 S(L/2)=1.8763 c_prof=1.591 c_sm=1.597 trunc=1.0e-08 E=-771.9022058263 dE_last=-6.9e-07 n_mid=0.1802 emid=-3.0039148937 |P|max=2.3e-17 PP(L/4)=-3.52e-04 PP(L/2-2)=-4.38e-05 chi=320
+F16      L=  64 Sbar=1.5250 S(L/2)=1.5524 c_prof=2.138 c_sm=2.137 trunc=3.6e-09 E=-260.1185462057 dE_last=4.7e-09 n_mid=0.1771 emid=-4.0030946456 |P|max=3.2e-17 PP(L/4)=-4.65e-03 PP(L/2-2)=-8.78e-04 chi=160
+F16      L= 128 Sbar=1.7886 S(L/2)=1.7645 c_prof=2.178 c_sm=2.193 trunc=5.3e-09 E=-516.3148957455 dE_last=1.4e-08 n_mid=0.1774 emid=-4.0030919012 |P|max=2.6e-17 PP(L/4)=-1.70e-03 PP(L/2-2)=-2.55e-04 chi=256
+F16      L= 192 Sbar=1.7757 S(L/2)=1.7940 c_prof=1.764 c_sm=1.756 trunc=4.4e-09 E=-772.5110978884 dE_last=1.5e-07 n_mid=0.1746 emid=-4.0030797484 |P|max=2.4e-17 PP(L/4)=-6.22e-04 PP(L/2-2)=-8.80e-05 chi=320
+F16      L= 256 Sbar=1.9867 S(L/2)=1.9674 c_prof=1.884 c_sm=1.889 trunc=4.8e-09 E=-1028.7072869658 dE_last=-9.0e-07 n_mid=0.1723 emid=-4.0030693396 |P|max=2.3e-17 PP(L/4)=-3.17e-04 PP(L/2-2)=-6.88e-05 chi=384
+F24      L= 128 Sbar=1.7761 S(L/2)=1.7546 c_prof=2.185 c_sm=2.199 trunc=3.0e-09 E=-774.2202087815 dE_last=6.3e-09 n_mid=0.1668 emid=-6.0021432804 |P|max=2.5e-17 PP(L/4)=-1.69e-03 PP(L/2-2)=-1.88e-04 chi=256
+F24      L= 256 Sbar=1.7640 S(L/2)=1.7465 c_prof=1.358 c_sm=1.362 trunc=3.0e-09 E=-1542.4926003326 dE_last=-5.0e-07 n_mid=0.1641 emid=-6.0021298172 |P|max=2.2e-17 PP(L/4)=-3.34e-04 PP(L/2-2)=-4.19e-05 chi=320
+F8       L=  64 Sbar=1.4709 S(L/2)=1.4894 c_prof=2.042 c_sm=2.050 trunc=7.5e-09 E=-130.2094711388 dE_last=6.7e-09 n_mid=0.1779 emid=-2.0057486607 |P|max=3.2e-17 PP(L/4)=-3.59e-03 PP(L/2-2)=-1.02e-03 chi=160
+F8       L= 128 Sbar=1.7626 S(L/2)=1.7773 c_prof=2.417 c_sm=2.412 trunc=1.0e-08 E=-258.5751774051 dE_last=2.5e-08 n_mid=0.1791 emid=-2.0056850107 |P|max=2.7e-17 PP(L/4)=-9.66e-04 PP(L/2-2)=-2.77e-04 chi=256
+F8       L= 192 Sbar=1.9308 S(L/2)=1.9439 c_prof=2.268 c_sm=2.270 trunc=1.2e-08 E=-386.9401111147 dE_last=9.1e-08 n_mid=0.1797 emid=-2.0057155199 |P|max=2.4e-17 PP(L/4)=-3.58e-04 PP(L/2-2)=-1.50e-04 chi=320
+F8       L= 256 Sbar=2.0421 S(L/2)=2.0543 c_prof=2.294 c_sm=2.293 trunc=1.1e-08 E=-515.3048776200 dE_last=-1.1e-06 n_mid=0.1783 emid=-2.0056951997 |P|max=2.2e-17 PP(L/4)=-1.58e-04 PP(L/2-2)=-1.10e-04 chi=384
+F8m23    L= 128 Sbar=0.2108 S(L/2)=0.2108 c_prof=-0.577 c_sm=-0.580 trunc=4.7e-14 E=-258.8736842441 dE_last=5.7e-14 n_mid=0.0423 emid=-2.0081602468 |P|max=1.1e-19 PP(L/4)=+5.28e-07 PP(L/2-2)=+1.81e-10 chi=256
+G8       L= 128 Sbar=0.3707 S(L/2)=0.3708 c_prof=0.110 c_sm=0.113 trunc=1.8e-20 E=-261.0273908557 dE_last=1.1e-13 n_mid=0.1999 emid=-2.0251247752 |P|max=2.4e-01 PP(L/4)=+5.35e-02 PP(L/2-2)=+5.29e-02 chi=256
+G8       L= 256 Sbar=0.3707 S(L/2)=0.3707 c_prof=0.003 c_sm=0.004 trunc=2.2e-20 E=-520.2433540603 dE_last=1.3e-12 n_mid=0.2000 emid=-2.0251247126 |P|max=2.3e-01 PP(L/4)=+5.43e-02 PP(L/2-2)=+5.43e-02 chi=256
+== (2) two-size slopes 6 dSbar/dlnL
+C8        128 ->  256: c_two = 0.740
+F12       128 ->  256: c_two = 0.595
+F16        64 ->  128: c_two = 2.282
+F16        64 ->  192: c_two = 1.369
+F16        64 ->  256: c_two = 1.998
+F16       128 ->  192: c_two = -0.191
+F16       128 ->  256: c_two = 1.715
+F16       192 ->  256: c_two = 4.402
+F24       128 ->  256: c_two = -0.105
+F8         64 ->  128: c_two = 2.525
+F8         64 ->  192: c_two = 2.512
+F8         64 ->  256: c_two = 2.472
+F8        128 ->  192: c_two = 2.489
+F8        128 ->  256: c_two = 2.420
+F8        192 ->  256: c_two = 2.322
+G8        128 ->  256: c_two = 0.000
+== (3) VUMPS
+== typhon_out/vc/F12_n2.json  n=2  exact_e=None
+  chi=  16 e=-3.0038823735 S=1.18342(spread 7.3e-05) xi=    44.61 1/delta=    13.48 arg1/pi=-0.1446 err=9e-06 it=800 xi0=6.7 xipi=nan xiic=44.6
+  chi=  24 e=-3.0039066055 S=1.30753(spread 2.8e-05) xi=    70.53 1/delta=    20.97 arg1/pi=+0.1454 err=3e-05 it=427 xi0=10.9 xipi=nan xiic=70.5  c_pair=1.626
+  chi=  32 e=-3.0039155344 S=1.38925(spread 1.6e-06) xi=    81.21 1/delta=    24.32 arg1/pi=-0.1456 err=2e-06 it=800 xi0=12.2 xipi=nan xiic=81.2  c_pair=3.477
+  chi=  48 e=-3.0039216327 S=1.50539(spread 5.2e-05) xi=   126.06 1/delta=    37.37 arg1/pi=+0.1459 err=6e-05 it=800 xi0=19.1 xipi=nan xiic=126.1  c_pair=1.585
+  chi=  64 e=-3.0039239269 S=1.58415(spread 1.9e-05) xi=   164.79 1/delta=    49.38 arg1/pi=+0.1459 err=6e-05 it=800 xi0=24.7 xipi=nan xiic=164.8  c_pair=1.764
+  chi=  96 e=-3.0039255466 S=1.68958(spread 2.0e-04) xi=   239.71 1/delta=    71.38 arg1/pi=-0.1459 err=7e-05 it=800 xi0=36.1 xipi=nan xiic=239.7  c_pair=1.688
+  chi= 128 e=-3.0039261556 S=1.76183(spread 1.5e-04) xi=   314.11 1/delta=    93.76 arg1/pi=-0.1460 err=4e-05 it=800 xi0=47.1 xipi=nan xiic=314.1  c_pair=1.604
+  chi= 160 e=-3.0039264551 S=1.81233(spread 3.0e-04) xi=   371.48 1/delta=   110.70 arg1/pi=+0.1460 err=4e-04 it=800 xi0=56.0 xipi=nan xiic=371.5  c_pair=1.806
+  chi= 192 e=-3.0039266247 S=1.85521(spread 7.8e-04) xi=   438.63 1/delta=   131.62 arg1/pi=+0.1460 err=7e-04 it=800 xi0=66.0 xipi=nan xiic=438.6  c_pair=1.549
+  chi= 256 e=-3.0039267880 S=1.90434(spread 1.0e-03) xi=   529.51 1/delta=   159.75 arg1/pi=+0.1460 err=1e-03 it=800 xi0=81.1 xipi=nan xiic=529.5  c_pair=1.566
+  c_ls3=1.558  c_d3=1.506  c_ls4=1.628  c_d4=1.591  c_ic3=1.558  c_kappa=2.536  kappa=0.745
+   order parameters at chi=256: n=[0.18077, 0.18071] P=[8.4e-05, 7.7e-05] e=-3.003926787985
+== typhon_out/vc/F16_n2.json  n=2  exact_e=None
+  chi=  16 e=-4.0030335385 S=1.17259(spread 2.4e-05) xi=    43.23 1/delta=    13.16 arg1/pi=+0.1495 err=4e-05 it=800 xi0=6.7 xipi=nan xiic=43.2
+  chi=  24 e=-4.0030513741 S=1.30247(spread 1.9e-05) xi=    70.72 1/delta=    21.28 arg1/pi=-0.1503 err=1e-05 it=800 xi0=11.1 xipi=nan xiic=70.7  c_pair=1.583
+  chi=  32 e=-4.0030579787 S=1.38433(spread 2.1e-05) xi=    80.08 1/delta=    23.86 arg1/pi=-0.1502 err=6e-06 it=800 xi0=12.4 xipi=nan xiic=80.1  c_pair=3.956
+  chi=  48 e=-4.0030625417 S=1.50136(spread 1.2e-04) xi=   121.83 1/delta=    36.10 arg1/pi=+0.1504 err=5e-05 it=800 xi0=18.8 xipi=nan xiic=121.8  c_pair=1.673
+  chi=  64 e=-4.0030642737 S=1.58284(spread 1.7e-04) xi=   160.45 1/delta=    47.88 arg1/pi=-0.1504 err=3e-04 it=800 xi0=24.6 xipi=nan xiic=160.5  c_pair=1.775
+  chi=  96 e=-4.0030655204 S=1.68296(spread 1.1e-04) xi=   228.81 1/delta=    68.31 arg1/pi=-0.1505 err=1e-03 it=800 xi0=35.4 xipi=nan xiic=228.8  c_pair=1.693
+  chi= 128 e=-4.0030659843 S=1.74601(spread 5.8e-05) xi=   287.84 1/delta=    86.36 arg1/pi=-0.1506 err=2e-03 it=800 xi0=44.7 xipi=nan xiic=287.8  c_pair=1.648
+  chi= 160 e=-4.0030662157 S=1.80050(spread 1.0e-03) xi=   338.37 1/delta=   101.45 arg1/pi=-0.1505 err=2e-03 it=800 xi0=53.0 xipi=nan xiic=338.4  c_pair=2.022
+  chi= 192 e=-4.0030663459 S=1.84455(spread 1.5e-03) xi=   386.06 1/delta=   116.80 arg1/pi=-0.1504 err=3e-03 it=800 xi0=60.7 xipi=nan xiic=386.1  c_pair=2.004
+  chi= 256 e=-4.0030664768 S=1.89541(spread 1.6e-03) xi=   452.22 1/delta=   139.01 arg1/pi=+0.1504 err=3e-03 it=800 xi0=71.9 xipi=nan xiic=452.2  c_pair=1.929
+  chi= 320 e=-4.0030665383 S=1.92258(spread 1.1e-03) xi=   488.82 1/delta=   152.63 arg1/pi=-0.1503 err=3e-03 it=800 xi0=79.5 xipi=nan xiic=488.8  c_pair=2.094
+  c_ls3=1.976  c_d3=1.750  c_ls4=1.981  c_d4=1.789  c_ic3=1.976  c_kappa=5.071  kappa=0.466
+   order parameters at chi=320: n=[0.17314, 0.17327] P=[0.000125, 0.000127] e=-4.003066538255
+== typhon_out/vc/F24_n2.json  n=2  exact_e=None
+  chi=  16 e=-6.0021068866 S=1.15764(spread 2.6e-06) xi=    42.23 1/delta=    12.97 arg1/pi=+0.1532 err=8e-06 it=800 xi0=6.7 xipi=nan xiic=42.2
+  chi=  24 e=-6.0021182044 S=1.28531(spread 2.0e-04) xi=    70.07 1/delta=    21.22 arg1/pi=+0.1537 err=1e-03 it=800 xi0=11.3 xipi=nan xiic=70.1  c_pair=1.513
+  chi=  32 e=-6.0021221685 S=1.37009(spread 6.7e-04) xi=    84.47 1/delta=    24.94 arg1/pi=+0.1536 err=1e-03 it=800 xi0=13.5 xipi=nan xiic=84.5  c_pair=2.722
+  chi=  48 e=-6.0021250206 S=1.47153(spread 1.1e-03) xi=   118.21 1/delta=    35.16 arg1/pi=+0.1537 err=2e-03 it=800 xi0=18.6 xipi=nan xiic=118.2  c_pair=1.811
+  chi=  64 e=-6.0021261329 S=1.54827(spread 1.5e-03) xi=   151.90 1/delta=    45.37 arg1/pi=-0.1536 err=3e-03 it=800 xi0=24.3 xipi=nan xiic=151.9  c_pair=1.836
+  chi=  96 e=-6.0021269542 S=1.63625(spread 1.3e-03) xi=   204.31 1/delta=    61.77 arg1/pi=+0.1537 err=4e-03 it=800 xi0=33.1 xipi=nan xiic=204.3  c_pair=1.781
+  chi= 128 e=-6.0021272785 S=1.70032(spread 1.3e-03) xi=   254.93 1/delta=    77.51 arg1/pi=-0.1538 err=4e-03 it=800 xi0=41.4 xipi=nan xiic=254.9  c_pair=1.737
+  chi= 160 e=-6.0021274352 S=1.74717(spread 1.6e-03) xi=   296.11 1/delta=    90.06 arg1/pi=+0.1537 err=5e-03 it=800 xi0=48.6 xipi=nan xiic=296.1  c_pair=1.878
+  chi= 192 e=-6.0021275285 S=1.78522(spread 1.6e-03) xi=   326.88 1/delta=   101.19 arg1/pi=-0.1537 err=5e-03 it=800 xi0=54.2 xipi=nan xiic=326.9  c_pair=2.309
+  chi= 256 e=-6.0021276175 S=1.82349(spread 1.3e-03) xi=   362.62 1/delta=   114.34 arg1/pi=+0.1536 err=5e-03 it=800 xi0=61.4 xipi=nan xiic=362.6  c_pair=2.213
+  c_ls3=2.259  c_d3=1.918  c_ls4=2.105  c_d4=1.905  c_ic3=2.259  c_kappa=5.790  kappa=0.425
+   order parameters at chi=256: n=[0.16289, 0.16277] P=[3.6e-05, 2.8e-05] e=-6.002127617462
+== typhon_out/vc/F8_n2.json  n=2  exact_e=None
+  chi=  16 e=-2.0056523280 S=1.18067(spread 3.2e-04) xi=    50.43 1/delta=    14.74 arg1/pi=-0.1308 err=1e-04 it=648 xi0=8.0 xipi=nan xiic=50.4
+  chi=  24 e=-2.0056795126 S=1.28169(spread 2.4e-04) xi=    71.83 1/delta=    22.25 arg1/pi=+0.1324 err=1e-05 it=800 xi0=10.6 xipi=nan xiic=71.8  c_pair=1.713
+  chi=  32 e=-2.0056907630 S=1.35939(spread 4.2e-05) xi=    83.19 1/delta=    25.38 arg1/pi=-0.1330 err=1e-05 it=475 xi0=12.3 xipi=nan xiic=83.2  c_pair=3.177
+  chi=  48 e=-2.0056981082 S=1.46582(spread 7.8e-05) xi=   129.83 1/delta=    39.22 arg1/pi=-0.1332 err=3e-05 it=645 xi0=19.3 xipi=nan xiic=129.8  c_pair=1.435
+  chi=  64 e=-2.0057007823 S=1.53966(spread 3.5e-05) xi=   172.38 1/delta=    51.76 arg1/pi=+0.1333 err=1e-05 it=800 xi0=25.7 xipi=nan xiic=172.4  c_pair=1.563
+  chi=  96 e=-2.0057026391 S=1.63889(spread 1.7e-05) xi=   262.84 1/delta=    79.24 arg1/pi=+0.1334 err=1e-05 it=800 xi0=38.9 xipi=nan xiic=262.8  c_pair=1.411
+  chi= 128 e=-2.0057032963 S=1.70426(spread 1.4e-05) xi=   349.03 1/delta=   104.65 arg1/pi=+0.1334 err=2e-05 it=800 xi0=51.6 xipi=nan xiic=349.0  c_pair=1.383
+  chi= 160 e=-2.0057036008 S=1.74936(spread 1.3e-06) xi=   419.61 1/delta=   125.06 arg1/pi=+0.1334 err=2e-05 it=800 xi0=62.4 xipi=nan xiic=419.6  c_pair=1.469
+  chi= 192 e=-2.0057037831 S=1.78984(spread 1.7e-05) xi=   503.70 1/delta=   150.50 arg1/pi=-0.1334 err=7e-05 it=800 xi0=74.6 xipi=nan xiic=503.7  c_pair=1.329
+  chi= 256 e=-2.0057039585 S=1.84880(spread 4.5e-05) xi=   672.28 1/delta=   200.49 arg1/pi=+0.1334 err=3e-04 it=800 xi0=100.2 xipi=nan xiic=672.3  c_pair=1.226
+  chi= 320 e=-2.0057040367 S=1.87197(spread 1.2e-05) xi=   757.14 1/delta=   228.54 arg1/pi=+0.1334 err=8e-04 it=573 xi0=114.5 xipi=nan xiic=757.1  c_pair=1.169
+  chi= 384 e=-2.0057040764 S=1.88438(spread 9.6e-05) xi=   806.68 1/delta=   247.39 arg1/pi=-0.1334 err=1e-03 it=800 xi0=123.8 xipi=nan xiic=806.7  c_pair=1.175
+  c_ls3=1.171  c_d3=1.020  c_ls4=1.206  c_d4=1.152  c_ic3=1.171  c_kappa=5.290  kappa=0.453
+   order parameters at chi=384: n=[0.17933, 0.17927] P=[1.5e-05, 9e-06] e=-2.005704076439
+== typhon_out/vc/F8_n4.json  n=4  exact_e=None
+  chi=  16 e=-2.0056525231 S=1.18030(spread 1.8e-04) xi=    50.23 1/delta=    14.64 arg1/pi=-0.2616 err=2e-05 it=800 xi0=8.0 xipi=nan xiic=50.2
+  chi=  32 e=-2.0056907651 S=1.35936(spread 3.7e-05) xi=    83.22 1/delta=    25.40 arg1/pi=+0.2659 err=2e-05 it=522 xi0=12.3 xipi=nan xiic=83.2  c_pair=2.128
+  chi=  64 e=-2.0057007825 S=1.53964(spread 3.4e-05) xi=   172.36 1/delta=    51.76 arg1/pi=+0.2667 err=1e-05 it=800 xi0=25.7 xipi=nan xiic=172.4  c_pair=1.486
+  chi=  96 e=-2.0057026385 S=1.63906(spread 4.1e-06) xi=   263.65 1/delta=    79.43 arg1/pi=+0.2668 err=9e-06 it=800 xi0=39.1 xipi=nan xiic=263.7  c_pair=1.403
+  chi= 128 e=-2.0057032958 S=1.70445(spread 2.9e-06) xi=   349.46 1/delta=   104.64 arg1/pi=-0.2668 err=2e-05 it=800 xi0=51.7 xipi=nan xiic=349.5  c_pair=1.392
+  chi= 192 e=-2.0057037832 S=1.78863(spread 2.1e-06) xi=   500.44 1/delta=   149.61 arg1/pi=-0.2669 err=1e-05 it=800 xi0=74.3 xipi=nan xiic=500.4  c_pair=1.407
+  chi= 256 e=-2.0057039592 S=1.84677(spread 2.0e-05) xi=   664.71 1/delta=   198.49 arg1/pi=-0.2669 err=4e-04 it=800 xi0=99.3 xipi=nan xiic=664.7  c_pair=1.229
+  c_ls3=1.332  c_d3=1.337  c_ls4=1.355  c_d4=1.367  c_ic3=1.332  c_kappa=1.817  kappa=0.925
+   order parameters at chi=256: n=[0.17929, 0.17929, 0.17929, 0.17929] P=[-7e-06, -7e-06, -7e-06, -8e-06] e=-2.005703959201
+== typhon_out/vc/G8_n2.json  n=2  exact_e=None
+  chi=  16 e=-2.0251246680 S=0.37039(spread 8.0e-06) xi=    13.40 1/delta=    17.20 arg1/pi=+0.0000 err=2e-05 it=145 xi0=13.4 xipi=nan xiic=nan
+  chi=  24 e=-2.0251247103 S=0.37070(spread 6.4e-07) xi=    14.86 1/delta=    29.34 arg1/pi=-0.0000 err=1e-06 it=98 xi0=14.9 xipi=nan xiic=nan  c_pair=0.018
+  chi=  32 e=-2.0251247121 S=0.37072(spread 9.5e-07) xi=    15.27 1/delta=    35.24 arg1/pi=-0.0000 err=1e-06 it=106 xi0=15.3 xipi=nan xiic=nan  c_pair=0.004
+  chi=  48 e=-2.0251247123 S=0.37073(spread 8.0e-07) xi=    16.00 1/delta=    53.81 arg1/pi=+0.0000 err=1e-06 it=84 xi0=16.0 xipi=nan xiic=nan  c_pair=0.001
+  chi=  64 e=-2.0251247123 S=0.37073(spread 2.9e-07) xi=    16.27 1/delta=    66.31 arg1/pi=+0.0000 err=2e-06 it=23 xi0=16.3 xipi=nan xiic=nan  c_pair=0.000
+  chi=  96 e=-2.0251247123 S=0.37073(spread 3.5e-08) xi=    16.55 1/delta=    85.07 arg1/pi=+0.0000 err=1e-06 it=21 xi0=16.6 xipi=nan xiic=nan  c_pair=0.000
+  chi= 128 e=-2.0251247123 S=0.37073(spread 2.2e-07) xi=    16.69 1/delta=    97.46 arg1/pi=+0.0000 err=8e-07 it=33 xi0=16.7 xipi=nan xiic=nan  c_pair=0.000
+  chi= 160 e=-2.0251247123 S=0.37073(spread 1.8e-07) xi=    16.76 1/delta=   105.95 arg1/pi=+0.0000 err=9e-07 it=22 xi0=16.8 xipi=nan xiic=nan  c_pair=-0.000
+  chi= 192 e=-2.0251247123 S=0.37073(spread 1.7e-07) xi=    16.79 1/delta=   109.62 arg1/pi=+0.0000 err=1e-06 it=21 xi0=16.8 xipi=nan xiic=nan  c_pair=0.000
+  chi= 256 e=-2.0251247123 S=0.37073(spread 2.4e-07) xi=    16.83 1/delta=   115.27 arg1/pi=-0.0000 err=1e-06 it=34 xi0=16.8 xipi=nan xiic=nan  c_pair=0.000
+  c_ls3=0.000  c_d3=0.000  c_ls4=0.000  c_d4=0.000  c_kappa=nan  kappa=0.009
+   order parameters at chi=256: n=[0.2, 0.2] P=[0.233086, 0.233087] e=-2.025124712282
+== typhon_out/vc/seed10.json  n=2  exact_e=None
+  chi=   8 e=-2.0055170934 S=0.97766(spread 9.6e-07) xi=    23.45 1/delta=     6.87 arg1/pi=+0.1241 err=1e-06 it=391 xi0=4.5 xipi=nan xiic=23.5
+  chi=  16 e=-2.0056503154 S=1.17304(spread 7.9e-07) xi=    50.04 1/delta=    14.87 arg1/pi=-0.1307 err=1e-06 it=453 xi0=7.6 xipi=nan xiic=50.0  c_pair=1.547
+  
+   order parameters at chi=16: n=[0.17138, 0.17138] P=[0.0, 0.0] e=-2.005650315398
+== typhon_out/vc/seed11.json  n=2  exact_e=None
+  chi=   8 e=-2.0055170934 S=0.97766(spread 9.6e-07) xi=    23.45 1/delta=     6.87 arg1/pi=+0.1241 err=1e-06 it=391 xi0=4.5 xipi=nan xiic=23.5
+  chi=  16 e=-2.0056503154 S=1.17304(spread 7.9e-07) xi=    50.04 1/delta=    14.87 arg1/pi=-0.1307 err=1e-06 it=453 xi0=7.6 xipi=nan xiic=50.0  c_pair=1.547
+  
+   order parameters at chi=16: n=[0.17138, 0.17138] P=[0.0, 0.0] e=-2.005650315398
+== typhon_out/vc/seed9.json  n=2  exact_e=None
+  chi=   8 e=-2.0055170934 S=0.97766(spread 9.6e-07) xi=    23.45 1/delta=     6.87 arg1/pi=+0.1241 err=1e-06 it=391 xi0=4.5 xipi=nan xiic=23.5
+  chi=  16 e=-2.0056503154 S=1.17304(spread 7.9e-07) xi=    50.04 1/delta=    14.87 arg1/pi=-0.1307 err=1e-06 it=453 xi0=7.6 xipi=nan xiic=50.0  c_pair=1.547
+  
+   order parameters at chi=16: n=[0.17138, 0.17138] P=[0.0, 0.0] e=-2.005650315398
+== (4) pass criterion P1-P3
+C8: P1 FAIL (c_two 128->256 = 0.740, c_prof 0.747 -> 0.790, trunc 3.2e-11, 1.7e-10); P2, P3 n/a (no VUMPS file)
+F12: P1 FAIL (c_two 128->256 = 0.595, c_prof 2.196 -> 1.591, trunc 7.5e-09, 1.0e-08); P2 pass (n=2, chi_max=256, FES c_ls3=1.558); P3 pass (emid(256) - e0 = +1.19e-05, allowance 9.0e-05, chi-error of e0 ~ 1.2e-06)
+F16: P1 FAIL (c_two 128->256 = 1.715, c_prof 2.178 -> 1.884, trunc 5.3e-09, 4.8e-09); P2 pass (n=2, chi_max=320, FES c_ls3=1.976); P3 pass (emid(256) - e0 = -2.80e-06, allowance 4.6e-05, chi-error of e0 ~ 1.0e-06)
+F24: P1 FAIL (c_two 128->256 = -0.105, c_prof 2.185 -> 1.358, trunc 3.0e-09, 3.0e-09); P2 pass (n=2, chi_max=256, FES c_ls3=2.259); P3 pass (emid(256) - e0 = -2.20e-06, allowance 2.8e-05, chi-error of e0 ~ 6.6e-07)
+F8: P1 FAIL (c_two 128->256 = 2.420, c_prof 2.417 -> 2.294, trunc 1.0e-08, 1.1e-08); P2 FAIL (n=2, chi_max=384, FES c_ls3=1.171); P3 pass (emid(256) - e0 = +8.88e-06, allowance 2.1e-05, chi-error of e0 ~ 7.8e-07)
+G8: P1 FAIL (c_two 128->256 = 0.000, c_prof 0.110 -> 0.003, trunc 1.8e-20, 2.2e-20); P2 FAIL (n=2, chi_max=256, FES c_ls3=0.000); P3 pass (emid(256) - e0 = -3.43e-10, allowance 1.1e-06, chi-error of e0 ~ 2.8e-13)
