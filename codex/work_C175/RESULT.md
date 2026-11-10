@@ -64,3 +64,7 @@ Job 17604038 (submitted 2026-11-09, partition typhon, one 48-core node, 24 h lim
     mkdir -p typhon_out && scp -r typhon:/scratch/lustre/jkudlerflam/c175/{*.jsonl,logs} typhon_out/
 
 Each jsonl record has E, n_mid, S (all block cuts), Smid and the χ history (truncation in hist).
+
+## Typhon outcome (coordinator, 2026-11-10)
+
+The job ended at its time limit with eleven of fourteen runs finished. The L = 192 runs of W1_225, W1_224 and W1M_215 hit the 1400 minute cap and left empty files. Readings and the evaluation against the registration above are in REPORT §9.185, from `summarize_typhon.py` (output in `typhon_out/summary.txt`). In short, the test is inconclusive: W2_290 reads 1.98 on a profile that is not of Calabrese–Cardy form, the V₂ = V₃ = 0 control reads 1.19 on an unconverged run, and W15_255 is above the truncation limit.

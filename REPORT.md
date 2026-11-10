@@ -2962,3 +2962,30 @@ No result yet. This section records what was fixed before production, so that th
 - Estimate. 14 to 33 h per run, the two sectors in parallel on two GPUs, with a chained job that resumes from the checkpoint. The final-state checkpoints stay on the cluster in the C190 format, and their paths for the §9.182 measurement are in `codex/work_C195/RESULT.md`.
 
 Open. The runs, then T1 to T4 and O0 to O3. S̄(256) for T2 comes from χ = 768 until the χ = 1024 stage at L = 256 has run.
+
+
+### 9.185 C175's Typhon job: the pairing test in the effective model does not discriminate (coordinator, Claude Fable 5, 2026-11-10; `codex/work_C175/typhon_out/`)
+
+The job registered in §9.139 ended at its time limit. Eleven of fourteen runs finished. The three that did not are the L = 192 runs of both |w| = 1 pairing points and of the |w| = 1 control (each hit the 1400 minute cap per run and left an empty file), so the |w| = 1 part of the registration has no two-size reading. Numbers below are from `summarize_typhon.py`, with its output in `typhon_out/summary.txt`. The estimator is the registered one, c = 6[S̄(192) − S̄(96)]/ln 2 with S̄ the mean of the three middle block cuts, at χ = 128.
+
+| run | n (mid) | c(96 → 192), 3 cuts | 1, 5, 7 cuts | middle half | final truncation (96, 192) | registered |
+|---|---|---|---|---|---|---|
+| W2_290 (\|w\| = 2, pairing point) | 0.36 | 1.98 | 2.00, 1.92, 1.85 | 1.40 | 4e-11, 2e-9 | below 1.4 |
+| W15_255 (\|w\| = 1.5, pairing point) | 0.22 to 0.23 | −0.19 | | | 3e-6, 4e-6 | below 1.4, not reportable |
+| W2M_250 (V₂ = V₃ = 0 control) | 0.14 | 1.19 | 0.74, 1.11, 1.12 | 1.20 | 2e-8, 2e-7 | above 1.6 |
+| W1R_220 (V₃ = 0, resonance) | 0.07 to 0.08 | 1.75 | 1.65, 1.91, 2.08 | 2.24 | 7e-10, 3e-7 | none |
+
+Against the registration, by the letter.
+- W2_290 reads 1.98 with truncation below 1e-7 at both sizes. The prediction (below 1.4) fails, and the registered failure clause applies: the pairing picture fails at this size and density.
+- The V₂ = V₃ = 0 control reads 1.19 against a prediction above 1.6. The control fails as well.
+- W15_255 has truncation above 1e-6 at both sizes and is not reportable under the registered rule. Its energy still moved by 5e-4 between the last two sweeps at L = 192.
+- The clause comparing with C173's reading at n = 0.17 for the same |w| is not evaluable, since C173's runs are at |w| = 1 (and one at w = 0).
+
+What the numbers support [numerical, with the caveats stated]. Less than the letter suggests, in both directions.
+- The W2_290 reading is not a clean c = 2. The entropy profile is not of Calabrese–Cardy form (the stored profile fit gives c_cc = −0.46 and −0.33). It is nearly flat with a modulation of 0.2 to 0.3 on a scale of about 12 to 15 blocks, the middle of the L = 96 chain sits at a minimum of that modulation, and the two-size number moves from 2.00 to 1.40 as the window grows from one cut to the middle half of the chain. So this point contradicts the registered pairing prediction but does not establish a two-component liquid at |w| = 2, where §9.139 found that the gas clusters.
+- The control cannot calibrate the test. Its L = 192 profile is asymmetric at the 1e-3 level and its energy moved by 3e-5 between the last two sweeps, so the run is not converged at χ = 128, and a two-component point that reads 1.2 means the estimator at these sizes and this χ does not separate c = 1 from c = 2.
+- The single-size points at L = 96 (W1_225 at n = 0.06, W1_224 at n = 0.10, W1M_215 at n = 0.06) are converged but carry no reading without their partners.
+
+Conclusion. The test as registered is inconclusive: one pairing point fails its prediction on a profile that is not conformal, the control fails on an unconverged run, and the |w| = 1 points are missing at L = 192. Nothing here changes the case for or against c = 2 on the qubit chain, which now rests on §9.178, §9.181 and §9.182 and on the gap test in progress (C194), which follows the pseudospin gap directly with a converged solver.
+
+Open. A rerun of the three unfinished L = 192 states and of the control with a longer limit and larger χ would complete the registration. It is low priority next to C194, which asks the same question on the model that matters.
