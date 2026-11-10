@@ -3099,3 +3099,19 @@ The registered prediction (`codex/work_C166/RESULT.md`) was that the unpinned op
 - Pre-fixed criterion. C1 fails for both XZ bonds and for the C155 candidates cand_60 and cand_61, so none is a c > 1 candidate. The FES second stage fails for KI22, KI26 and N34.
 
 Conclusion. The c ≈ 1.3 open-chain reading in the XZ neighbourhood is a gapped Néel bulk seen through a slowly relaxing cat state, as hypothesis (i) of C166 proposed. This closes the last open item of that neighbourhood.
+
+
+### 9.194 C185 and C186 main jobs: the bond-changing routes to unbinding give no support beyond the effective model's U(1) part (coordinator, Claude Fable 5, 2026-11-10; `codex/work_C185/typhon_out/`, `codex/work_C186/typhon_out/`)
+
+These extend the backfill readings of §9.172. Readouts are `summarize_typhon.py` in each folder, with output in `typhon_out/summary_coord.txt` and, for C185, the job's own `summary_eff.txt`.
+
+C185, the transverse-DM route at the Fibonacci point.
+- R6, U(1) part [numerical]. The V₂ = V₃ = 0 calibration reads c_two(64 → 128) = 2.03 at W = 6, inside its tolerance. dmv1 (|w| = 1, v = 1) passes the first-stage criterion with c_two = 1.63, 1.72, 1.86 at W = 1, 6, 12, c_prof(128) = 1.72 and truncation 3e-9, and its parity gap is flat (L Δ_P = 4.818 and 4.832 at L = 64 and 128), as predicted for a gapless pseudospin. dmv2 (v = 2) reads 1.23 at W = 6, so the registered prediction (≥ 1.6) fails for it.
+- R6′, with the ΔN = 1 term [numerical]. The code calibration reproduces C173's penalty-model reading (S̄ = 1.646 and 1.886 against 1.646 and 1.869, c₂ = 2.08). At κ = 1, v = 1 and φ = π/2, c₂(48 → 96) = 1.57. The φ scan at 1.625 to 1.655 has only L = 48, since its L = 96 runs did not finish, so the amended R6′ is not evaluable.
+- R7, full chain at V/Δ = 8 [numerical]. With λ = 0.3 the L = 64 runs read S_mid = 0.54, 0.69, 0.74 and 0.56 at φ shifts 0, 0.06, 0.10 and 0.14, against 1.48 for the λ = 0 reference. No shift comes within 0.7 of the reference, so there is no support.
+
+C186, the vertex route.
+- (B), block DMRG at u = 1.035 [numerical]. Only the μ offset 0.06 runs at v = 0.1 and 0.2 finished at L = 192. Both read c(96 → 192) = −0.27 with truncation below 1e-7, which is "one mode" by the registered rule. The decreasing entropy suggests a gap. The other points, including the v = 0.4 control, have L = 96 only.
+- (A), ring binding at L = 48 [numerical, grid threshold]. Where N_max = 4 and 5 agree in sign, the pair is bound only at v/v_c = 0.25 (u = 0.522 and 1.035) and unbound from v/v_c = 0.5 up. The re-read against the off-grid threshold (true_threshold.py) was not done, because the Typhon records lack the field that script reads.
+
+Conclusion. Neither bond change gives a c = 2 reading beyond the effective model's U(1) part, and the full-chain transverse-DM runs lose entropy rather than gain it. These were alternative routes to the candidate, which does not depend on them.

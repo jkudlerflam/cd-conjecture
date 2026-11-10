@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "/scratch/lustre/jkudlerflam/c18x/c186/pairbind2.py", line 81, in <module>
+    run(L, Nmax, u, v, rmode)
+    ~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/lustre/jkudlerflam/c18x/c186/pairbind2.py", line 62, in run
+    phi, mu, ea, ia, eb, ib = tu.tune()
+                              ~~~~~~~^^
+  File "/scratch/lustre/jkudlerflam/c18x/c186/pairbind2.py", line 45, in tune
+    phi = brentq(f, phi0 - span, phi0 + span, xtol=1e-6)
+  File "/opt/sns/anaconda3/2025.06/lib/python3.13/site-packages/scipy/optimize/_zeros_py.py", line 846, in brentq
+    r = _zeros._brentq(f, a, b, xtol, rtol, maxiter, args, full_output, disp)
+  File "/opt/sns/anaconda3/2025.06/lib/python3.13/site-packages/scipy/optimize/_zeros_py.py", line 102, in f_raise
+    raise err
+ValueError: The function value at x=1.4207963267948966 is NaN; solver cannot continue.

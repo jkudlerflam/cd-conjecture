@@ -1,0 +1,14 @@
+(A) ring binding B at L = 48 (N_max 4 / 5; sign must agree)
+  u = 0.522:  v/vc=0.25: +0.0021/+0.0021  v/vc=0.5: -0.0011/-0.0011  v/vc=1.0: -0.0054/-0.0052  v/vc=1.5: -0.0077/-0.0071  v/vc=2.0: -0.0088/-0.0075
+  u = 1.035:  v/vc=0.25: +0.0012/+0.0015  v/vc=0.5: -0.0054/-0.0036  v/vc=1.0: -0.0097/-0.0019  v/vc=1.5: -0.0278/-0.0145  v/vc=2.0: -0.0350/—
+  u = 1.531:  v/vc=0.25: -0.0021/—  v/vc=0.5: -0.0155/—  v/vc=1.0: -0.0350/—  v/vc=1.5: -0.0571/—  v/vc=2.0: —/—
+  u = 2.0:  v/vc=0.25: —/—  v/vc=0.5: -0.0271/—  v/vc=1.0: —/—  v/vc=1.5: —/—  v/vc=2.0: —/—
+(B) block DMRG, u = 1.035
+  bm_u1.035_v0.0_zero_dmu0.03: L=96 Sbar=1.7627 n=0.125 trunc=4.8e-07  (L = 192 not finished)
+  bm_u1.035_v0.0_zero_dmu0.06: L=96 Sbar=1.7833 n=0.176 trunc=1.3e-06  (L = 192 not finished)
+  bm_u1.035_v0.1_locked_dmu0.03: L=96 Sbar=1.3855 n=0.095 trunc=3.7e-07  (L = 192 not finished)
+  bm_u1.035_v0.1_locked_dmu0.06: L=96 Sbar=1.0893 n=0.217 trunc=2.9e-08, L=192 Sbar=1.0586 n=0.217 trunc=6.6e-08  ->  c(96->192) = -0.266
+  bm_u1.035_v0.2_locked_dmu0.03: L=96 Sbar=1.1613 n=0.171 trunc=2.5e-08  (L = 192 not finished)
+  bm_u1.035_v0.2_locked_dmu0.06: L=96 Sbar=1.0449 n=0.217 trunc=7.8e-09, L=192 Sbar=1.0146 n=0.217 trunc=2.6e-08  ->  c(96->192) = -0.263
+  bm_u1.035_v0.4_zero_dmu0.03: L=96 Sbar=1.1885 n=0.053 trunc=7.5e-18  (L = 192 not finished)
+  bm_u1.035_v0.4_zero_dmu0.06: L=96 Sbar=1.5116 n=0.071 trunc=2.0e-10  (L = 192 not finished)

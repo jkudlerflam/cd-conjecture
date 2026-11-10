@@ -1,0 +1,25 @@
+R6' block model (Smid / Sbar of three middle cuts, final truncation)
+  bk_k0v0_p1571_Lb16       n_mid 0.166  Smid 1.6759  Sbar 1.6463  trunc 1.0e-11
+  bk_k0v0_p1571_Lb32       n_mid 0.168  Smid 1.8971  Sbar 1.8861  trunc 2.3e-07
+  bk_k1v1_p1571_Lb16       n_mid 0.228  Smid 0.8891  Sbar 0.8686  trunc 6.0e-12
+  bk_k1v1_p1571_Lb32       n_mid 0.229  Smid 1.0629  Sbar 1.0494  trunc 1.5e-10
+  bk_k0v1_p1571_Lb16       n_mid 0.096  Smid 1.1215  Sbar 1.1533  trunc 2.4e-22
+  bk_k1v1_p1625_Lb16       n_mid 0.230  Smid 0.9377  Sbar 0.9588  trunc 7.0e-11
+  bk_k1v1_p1640_Lb16       n_mid 0.234  Smid 0.9856  Sbar 0.9956  trunc 1.1e-10
+  bk_k1v1_p1655_Lb16       n_mid 0.188  Smid 0.3991  Sbar 0.4963  trunc 1.3e-11
+  bk_k0v0_p1571: c2(48 -> 96) = 2.076 (Smid: 1.915)
+  bk_k1v1_p1571: c2(48 -> 96) = 1.565 (Smid: 1.505)
+  bk_k0v1_p1571: c2(48 -> 96) = no L = 96 run
+  bk_k1v1_p1625: c2(48 -> 96) = no L = 96 run
+  bk_k1v1_p1640: c2(48 -> 96) = no L = 96 run
+  bk_k1v1_p1655: c2(48 -> 96) = no L = 96 run
+R6 parity gap at dmv1 (L Delta_P, Delta_P = E(N+1) + E(N-1) - 2E(N))
+  L = 64: Delta_P = 0.075286, L Delta_P = 4.8183
+  L = 128: Delta_P = 0.037747, L Delta_P = 4.8316
+R7 full chain, V/Delta = 8, S_mid at L = 64 against the lambda = 0 reference
+  F8dm_p00_64      Smid=0.5392, c_prof=1.1900, trunc=0.0000, L=64
+  F8dm_p06_64      Smid=0.6925, c_prof=1.1919, trunc=0.0000, L=64
+  F8dm_p10_64      Smid=0.7382, c_prof=1.3593, trunc=0.0000, L=64
+  F8dm_p14_64      Smid=0.5585, c_prof=1.8454, trunc=0.0000, L=64
+  F8ref_128        Smid=1.7662, c_prof=2.4173, trunc=0.0000, L=128
+  F8ref_64         Smid=1.4766, c_prof=2.0495, trunc=0.0000, L=64
