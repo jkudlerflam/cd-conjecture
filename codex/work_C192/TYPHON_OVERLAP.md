@@ -10,9 +10,9 @@ What runs where.
 | C190 node B (controls, symmetric-line and rational bonds), 6 slots × 6 threads | 17606940 | c166 17602270 (node26) | .1 | about 22 h |
 | C189 inf_s316 (10 threads) | 17606915 | c186 17604527 (node11) | .0 | about 18 h |
 | C189 inf_ff2v (10 threads) | 17606918 | c186 17604527 (node11) | .1 | about 18 h |
-| C189 inf_s18 (8 threads) | 17606916 | c178 17603981 (node39) | .3 | about 9.5 h |
-| C189 inf_s16 (6 threads) | 17606917 | c178 17603981 (node39) | .2 | about 9.5 h |
-| C189 inf_c1 (4 threads) | 17606919 | c178 17603981 (node39) | .4 | about 9.5 h |
+| C189 inf_s18 (8 threads) | 17606916 | c173 17603887 (node19), relaunched 2026-11-10 00:55 EST | .1 | about 23.5 h |
+| C189 inf_s16 (6 threads) | 17606917 | c175 17604038 (node12), relaunched 2026-11-10 00:55 EST | .3 | about 8.5 h |
+| C189 inf_c1 (4 threads) | 17606919 | c175 17604038 (node12), relaunched 2026-11-10 00:55 EST | .2 | about 8.5 h |
 
 How it hands over. Each step runs the same body as its queued job (launchers `codex/work_C190/typhon/overlap_run.sh` and `codex/work_C189/typhon/overlap_inf.sh`, both also in scratch), and polls the queue. When its queued job is RUNNING the step cancels itself, and the queued job resumes from the checkpoints. Both codes write checkpoints atomically (run190.py already did, run_inf.py was patched for this on 2026-11-09, two lines). When a donor ends, its steps die with it, and the payload then waits for its queued job unless it is relaunched.
 
@@ -59,3 +59,5 @@ The GPU backend (REPORT §9.168) runs the registered C190 configurations as job 
 ## C187d, the χ = 1024 continuation of the L = 256 stage (added 2026-11-09 22:55 EST)
 
 Jonah approved it on 2026-11-09. Registration, launch record, check and collection commands are in `codex/work_C187q/L256_job/chi1024/README.md`. Step A is 17603971.1 (six candidate runs, inside c177), step B is 17604038.1 (ctl2 and the L = 128 partners, inside c175), and the queued fallback is 17608223 (c187d). A run is complete at 28 jsonl lines (L = 256) or 27 (L = 128). When all ten are complete, collect, apply the registered readings R1 and R2 and the verdict rule E1 to E3, write the REPORT section, and cancel the fallback job only if it is still pending and every tag is complete (it is ours and would do nothing).
+
+Log, 2026-11-10 00:55 EST. The donor c178 (17603981) completed at 22:31 EST on 2026-11-09 and took the three C189 steps it hosted with it (inf_s18 had reached χ = 384, inf_s16 χ = 512, inf_c1 χ = 384). All three conditions of the relaunch rule held, so they were relaunched from their checkpoints, inf_s18 inside c173 (node19) and inf_s16 and inf_c1 inside c175 (node12). The check above lists steps but not which payloads should exist, so compare its step list against the table at every check-in.
