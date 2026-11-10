@@ -2689,3 +2689,37 @@ Limits.
 - One size pair. The registered question is the pair 128 → 256, which does not exist yet. The two L = 256 runs are in their χ = 192 stage, and their ground branch may be odd.
 
 Timing, revised. Measured sweep times put a complex L = 256 run at 7 to 40 h per χ = 768 sweep, so 1.5 to 6 days for its whole schedule, well above the estimate in §9.164. The L = 128 runs need another 7 to 27 h for their χ = 384 and 512 stages. The host allocations of the two payloads end on 2026-11-10 and 2026-11-11, after which the payloads have to be moved by the rule in `codex/work_C192/TYPHON_OVERLAP.md`. The GPU backend (specs/C190g_gpu_port.md) is being built for the L = 256 runs.
+
+### 9.168 A GPU backend for the C190 solver passes its four gates, runs 48 to 60 times faster per bond at χ = 768, and is in production (Claude Opus 5.5 subagent, checked by the coordinator, Claude Fable 5, 2026-11-09; `codex/work_C190/gpu/`)
+
+The port (`z2dmrg_xp.py`, spec `specs/C190g_gpu_port.md`) is the solver of §9.164 with an array-module switch between numpy and cupy. The algorithm, the precision (complex128) and every tolerance are unchanged. Gates, tables and job details are in `codex/work_C190/gpu/RESULT.md`.
+
+Gates [numerical].
+
+- G1, numpy backend against the original code. Bit-identical at L = 10 in every case. At L = 32, sweep by sweep, within 1.8e-11 in energy, which is the run-to-run noise of the original code with threaded BLAS (4.3e-11).
+- G2, GPU against exact diagonalization at L = 10. Within 6.5e-12 in energy and 6.0e-10 in entropy at the candidate bonds, with the SVD on the host or on the GPU.
+- G3, GPU against the L = 64 pilot at the collaborator's field. Same 13 sweeps, energies within 2.5e-10 (even) and 1.8e-10 (odd), S̄₁ and S̄₆ within 4e-6. Tolerances were 2e-8 and 5e-4.
+- G4, benchmark on the complex L = 256 problem (A100, 40 GB). Per bond update with 80 matvecs, GPU against the original code with 6 threads on the same node.
+
+| χ | GPU (s) | CPU (s) | speed-up per bond |
+| :-- | :-- | :-- | :-- |
+| 128 | 0.57 | 1.48 | 2.6 |
+| 256 | 0.96 | 6.31 | 6.6 |
+| 384 | 0.73 | 15.5 | 21 |
+| 512 | 0.94 | 29.2 | 31 |
+| 768 | 1.57 | 74.9 | 48 (60 with the SVD on the GPU) |
+
+The GPU matvec costs about 3.7 ms at every χ, so the gain grows with χ and there is none below χ = 128, where production stays on the host. Device memory at χ = 768, L = 256 peaks at 27 GB.
+
+Registration amendment, written before any GPU production output. The GPU runs are additional runs of the registered configurations, started from scratch. For each key, size and parity sector the run with the lowest final energy among those passing C1 to C4 is used, CPU or GPU, and the C5 comparison applies between them. V1 to V6 are unchanged.
+
+Production [numerical]. Six A100 GPUs on apollo, one run each, in the order p153c at L = 256, then L = 128 and 64, then sym40_n316, the controls and the other tuned keys. With the mixer off the GPU and CPU runs of the same configuration agree to 1e-9 to 2e-8 in energy at the same sweep, and S̄₆ agrees within 2e-5 at L = 128, χ = 256. A χ = 256 sweep at L = 128 takes 129 to 143 s against 1207 to 1354 s on the CPU.
+
+What I checked. The G3 differences and the χ = 768 benchmark row (speed-up 47.8 per bond, 111 per matvec, 27.2 GB) from the json files. The live state at 22:16 EST: the four p153c L = 128 runs are in their χ = 384 and 512 stages with the mixer off and residuals at target, and the two L = 256 runs are at χ = 192.
+
+Limits.
+
+- G3 ran with the SVD on the host. The production path (host below χ = 128, then GPU with the GPU SVD) is checked at L = 10 and L = 32 and by the agreement with the CPU production runs above, not by a rerun of G3.
+- No production sweep at χ ≥ 512 at L = 256 has been timed yet. The estimate that the two p153c L = 256 runs finish around midnight EST on 2026-11-09 is an extrapolation, uncertain by a factor of about 1.5. It replaces the CPU timing of §9.167 for the decisive pair.
+- The script that applies the amendment's selection across the CPU and GPU folders is not written. `analyze190.py` reads one folder at a time.
+- cupy's import hung twice on apollo01, so the jobs are pinned to apollo02.

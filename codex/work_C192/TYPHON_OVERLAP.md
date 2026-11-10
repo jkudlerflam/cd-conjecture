@@ -51,3 +51,7 @@ Pause rule (approved by Jonah, 2026-11-09, about 20:48 EST). It covers one case 
 Status 2026-11-09 20:54 EST. All seven steps are running and all seven queued jobs are PENDING. Nothing has been paused.
 
 Status 2026-11-09 21:38 EST. All seven steps are still running in the same donors, and all seven queued jobs are PENDING with start estimates on 2026-11-10 after 17:00. Nothing has been paused.
+
+## GPU production of C190 (added 2026-11-09 22:20 EST)
+
+The GPU backend (REPORT §9.168) runs the registered C190 configurations as job 17607561 on apollo02, with the resume job 17607562 waiting on it. Neither is an overlap step and neither is to be touched. Output is in /scratch/lustre/jkudlerflam/c18x/c190g/outG/. Check and collect with the commands in `codex/work_C190/gpu/RESULT.md` (never copy outG/ckpt). A finished run has "status": "done" in its json. When the p153c runs at L = 64, 128 and 256 are done, evaluate C1 to C6 and V1 to V6 of `codex/work_C190/RESULT.md` with the amendment in `gpu/RESULT.md` (lowest energy among CPU and GPU runs of a tag).

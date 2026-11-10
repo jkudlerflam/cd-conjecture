@@ -1,0 +1,10 @@
+backend=cupy SVD_HOST=False GPU_MIN_CHI=64
+L=32 cpu time 50.4s
+L=32 xp time 70.3s
+  sweep 0 chi=32 alpha=0.001 E_cpu=-10.774033857984 dE=0.0e+00 dSbar6=nan dSprof=nan mv_cpu=37.48 mv_xp=37.48 t_cpu=1.6 t_xp=1.5
+  sweep 1 chi=32 alpha=0.001 E_cpu=-10.777113073665 dE=0.0e+00 dSbar6=nan dSprof=nan mv_cpu=48.06 mv_xp=48.06 t_cpu=3.6 t_xp=3.6
+  sweep 2 chi=64 alpha=0.0001 E_cpu=-10.777183138205 dE=8.7e-14 dSbar6=nan dSprof=nan mv_cpu=47.68 mv_xp=47.69 t_cpu=7.8 t_xp=18.8
+  sweep 3 chi=64 alpha=0.0001 E_cpu=-10.777182989444 dE=1.0e-13 dSbar6=nan dSprof=nan mv_cpu=41.27 mv_xp=41.29 t_cpu=8.5 t_xp=15.9
+  sweep 4 chi=96 alpha=0.0 E_cpu=-10.777184227378 dE=2.5e-14 dSbar6=1.0e-12 dSprof=3.1e-11 mv_cpu=40.81 mv_xp=40.81 t_cpu=14.1 t_xp=16.4
+  sweep 5 chi=96 alpha=0.0 E_cpu=-10.777184209417 dE=1.8e-14 dSbar6=3.2e-11 dSprof=6.6e-11 mv_cpu=35.18 mv_xp=35.18 t_cpu=14.7 t_xp=13.8
+L=32 worst dE=1.0e-13 worst dS(cut)=6.6e-11

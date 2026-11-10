@@ -1,0 +1,42 @@
+backend=cupy SVD_HOST=True
+p153/None P=0 rand: vsED E=4.4e-12 S=3.7e-10 Z=1.1e-10 Pb=6.0e-12 Gb=5.0e-11 Gf=5.0e-11 CP=3.3e-10 par=4.4e-16 var=2.6e-11 | vsCPU E=7.1e-15 S=1.0e-12 Ehist=4.8e-14 Z=1.4e-12 Gf=6.9e-13 nsw=0.0e+00
+p153/None P=0 prod: vsED E=4.4e-12 S=3.8e-10 Z=1.1e-10 Pb=6.0e-12 Gb=5.1e-11 Gf=5.1e-11 CP=3.3e-10 par=6.7e-16 var=2.6e-11 | vsCPU E=1.2e-14 S=9.8e-13 Ehist=3.9e-14 Z=6.3e-13 Gf=2.4e-13 nsw=0.0e+00
+p153/None P=1 rand: vsED E=6.5e-12 S=1.4e-10 Z=1.3e-10 Pb=6.8e-11 Gb=1.3e-10 Gf=2.8e-10 CP=1.2e-08 par=1.2e-15 var=5.7e-11 | vsCPU E=5.3e-15 S=2.5e-13 Ehist=3.4e-14 Z=9.8e-13 Gf=4.9e-13 nsw=0.0e+00
+p153/None P=1 prod: vsED E=6.5e-12 S=1.4e-10 Z=1.3e-10 Pb=6.8e-11 Gb=1.3e-10 Gf=2.8e-10 CP=1.2e-08 par=6.7e-16 var=5.7e-11 | vsCPU E=2.3e-14 S=1.5e-12 Ehist=4.8e-14 Z=1.5e-12 Gf=3.2e-13 nsw=0.0e+00
+rat/None P=0 rand: vsED E=4.6e-12 S=3.9e-10 Z=9.7e-11 Pb=8.7e-12 Gb=4.7e-11 Gf=4.7e-11 CP=3.3e-10 par=1.0e-15 var=2.6e-11 | vsCPU E=1.8e-15 S=8.7e-13 Ehist=3.9e-14 Z=2.4e-12 Gf=1.2e-12 nsw=0.0e+00
+rat/None P=0 prod: vsED E=4.6e-12 S=3.9e-10 Z=9.7e-11 Pb=8.7e-12 Gb=4.8e-11 Gf=4.8e-11 CP=3.3e-10 par=1.1e-15 var=2.6e-11 | vsCPU E=2.0e-14 S=8.2e-13 Ehist=3.7e-14 Z=9.5e-13 Gf=4.7e-13 nsw=0.0e+00
+rat/None P=1 rand: vsED E=2.6e-12 S=1.2e-10 Z=1.1e-10 Pb=5.8e-11 Gb=1.3e-10 Gf=2.8e-10 CP=1.2e-08 par=1.1e-15 var=5.7e-11 | vsCPU E=7.1e-15 S=6.7e-13 Ehist=3.6e-14 Z=7.6e-13 Gf=3.8e-13 nsw=0.0e+00
+rat/None P=1 prod: vsED E=2.6e-12 S=1.2e-10 Z=1.1e-10 Pb=5.8e-11 Gb=1.3e-10 Gf=2.8e-10 CP=1.2e-08 par=2.2e-16 var=5.7e-11 | vsCPU E=8.9e-15 S=8.9e-13 Ehist=4.4e-14 Z=6.4e-13 Gf=2.3e-13 nsw=0.0e+00
+sym40/stag P=0 rand: vsED E=3.9e-12 S=6.0e-10 Z=1.8e-10 Pb=5.1e-12 Gb=8.8e-11 Gf=8.8e-11 CP=5.4e-10 par=4.4e-16 var=3.2e-11 | vsCPU E=3.6e-15 S=3.9e-12 Ehist=2.1e-14 Z=3.6e-12 Gf=1.8e-12 nsw=0.0e+00
+sym40/stag P=0 prod: vsED E=3.8e-12 S=5.9e-10 Z=1.8e-10 Pb=5.1e-12 Gb=8.8e-11 Gf=8.8e-11 CP=5.4e-10 par=1.3e-15 var=3.2e-11 | vsCPU E=2.0e-14 S=1.1e-12 Ehist=6.6e-14 Z=2.3e-12 Gf=1.2e-12 nsw=0.0e+00
+sym40/stag P=1 rand: vsED E=3.4e-12 S=1.1e-10 Z=9.6e-11 Pb=1.9e-11 Gb=1.6e-10 Gf=3.5e-10 CP=1.1e-08 par=1.1e-15 var=5.0e-11 | vsCPU E=2.3e-14 S=1.1e-12 Ehist=4.8e-14 Z=1.6e-12 Gf=7.8e-13 nsw=0.0e+00
+sym40/stag P=1 prod: vsED E=3.4e-12 S=1.1e-10 Z=9.6e-11 Pb=1.9e-11 Gb=1.6e-10 Gf=3.5e-10 CP=1.1e-08 par=8.9e-16 var=5.1e-11 | vsCPU E=1.4e-14 S=1.4e-12 Ehist=5.5e-14 Z=1.8e-12 Gf=8.5e-13 nsw=0.0e+00
+sym40/None P=0 rand: vsED E=4.1e-12 S=5.6e-10 Z=1.7e-10 Pb=1.0e-11 Gb=8.6e-11 Gf=8.6e-11 CP=5.4e-10 par=2.2e-16 var=3.2e-11 | vsCPU E=1.6e-14 S=1.6e-12 Ehist=5.5e-14 Z=2.2e-12 Gf=1.1e-12 nsw=0.0e+00
+sym40/None P=0 prod: vsED E=4.1e-12 S=5.6e-10 Z=1.7e-10 Pb=9.3e-12 Gb=8.6e-11 Gf=8.6e-11 CP=5.4e-10 par=1.3e-15 var=3.2e-11 | vsCPU E=3.6e-15 S=5.5e-13 Ehist=4.6e-14 Z=1.2e-12 Gf=5.8e-13 nsw=0.0e+00
+sym40/None P=1 rand: vsED E=3.4e-12 S=1.1e-10 Z=9.6e-11 Pb=2.0e-11 Gb=1.6e-10 Gf=3.5e-10 CP=1.1e-08 par=5.6e-16 var=5.1e-11 | vsCPU E=0.0e+00 S=4.9e-13 Ehist=1.8e-14 Z=4.7e-13 Gf=2.3e-13 nsw=0.0e+00
+sym40/None P=1 prod: vsED E=3.4e-12 S=1.1e-10 Z=9.6e-11 Pb=2.0e-11 Gb=1.6e-10 Gf=3.5e-10 CP=1.1e-08 par=2.2e-16 var=5.1e-11 | vsCPU E=1.8e-14 S=1.2e-12 Ehist=6.2e-14 Z=1.7e-12 Gf=8.6e-13 nsw=0.0e+00
+xx1 P=0 rand: vsED E=4.4e-16 S=1.1e-15 Z=1.4e-15 Pb=2.7e-15 Gb=9.4e-16 Gf=9.4e-16 CP=1.9e-15 par=4.4e-16 var=0.0e+00 | vsCPU E=0.0e+00 S=5.6e-16 Ehist=8.9e-16 Z=1.4e-15 Gf=7.2e-16 nsw=0.0e+00
+xx1 P=0 prod: vsED E=4.4e-16 S=1.7e-15 Z=1.6e-15 Pb=2.4e-15 Gb=7.8e-16 Gf=7.8e-16 CP=2.4e-15 par=1.1e-16 var=8.9e-16 | vsCPU E=2.2e-16 S=5.6e-16 Ehist=4.4e-16 Z=8.9e-16 Gf=4.4e-16 nsw=0.0e+00
+xx1 P=1 rand: vsED E=3.8e-15 S=5.6e-16 Z=1.1e-15 Pb=2.0e-15 Gb=1.1e-15 Gf=1.1e-15 CP=1.1e-15 par=1.3e-15 var=2.2e-15 | vsCPU E=2.2e-16 S=6.1e-16 Ehist=1.3e-15 Z=1.6e-15 Gf=7.8e-16 nsw=0.0e+00
+xx1 P=1 prod: vsED E=4.9e-15 S=8.9e-16 Z=1.4e-15 Pb=4.0e-15 Gb=9.4e-16 Gf=9.4e-16 CP=3.1e-15 par=2.2e-16 var=6.7e-16 | vsCPU E=0.0e+00 S=8.3e-16 Ehist=1.8e-15 Z=1.1e-15 Gf=5.0e-16 nsw=0.0e+00
+xx2 P=0 rand: vsED E=0.0e+00 S=1.1e-15 Z=2.8e-15 Pb=2.2e-16 Gb=1.2e-15 Gf=1.2e-15 CP=1.6e-15 par=4.4e-16 var=6.7e-16 | vsCPU E=8.9e-16 S=1.1e-15 Ehist=6.7e-16 Z=2.6e-15 Gf=1.3e-15 nsw=0.0e+00
+xx2 P=0 prod: vsED E=4.4e-16 S=4.4e-16 Z=8.9e-16 Pb=8.3e-16 Gb=2.8e-16 Gf=2.8e-16 CP=6.7e-16 par=4.4e-16 var=2.2e-16 | vsCPU E=4.4e-16 S=4.4e-16 Ehist=2.7e-04 Z=1.0e-15 Gf=5.0e-16 nsw=0.0e+00
+xx2 P=1 rand: vsED E=1.3e-15 S=1.7e-01 Z=1.8e-01 Pb=1.5e-02 Gb=8.8e-02 Gf=8.8e-02 CP=6.4e-02 par=1.1e-15 var=3.3e-16 | vsCPU E=1.1e-16 S=1.0e-14 Ehist=1.0e-15 Z=1.1e-14 Gf=5.7e-15 nsw=0.0e+00
+xx2 P=1 prod: vsED E=3.3e-01 S=8.3e-01 Z=7.2e-01 Pb=5.3e-01 Gb=3.6e-01 Gf=3.6e-01 CP=4.8e-01 par=2.2e-16 var=1.7e-16 | vsCPU E=3.3e-16 S=3.5e-01 Ehist=7.1e-04 Z=6.7e-01 Gf=3.3e-01 nsw=0.0e+00
+worst per case (vs ED | vs original z2dmrg.py):
+  p153/None E=6.5e-12 S=3.8e-10 Z=1.3e-10 Pb=6.8e-11 Gb=1.3e-10 Gf=2.8e-10 CP=1.2e-08 par=1.2e-15 var=5.7e-11 | E=2.3e-14 S=1.5e-12 Ehist=4.8e-14 Z=1.5e-12 Gf=6.9e-13 nsw=0.0e+00
+  rat/None E=4.6e-12 S=3.9e-10 Z=1.1e-10 Pb=5.8e-11 Gb=1.3e-10 Gf=2.8e-10 CP=1.2e-08 par=1.1e-15 var=5.7e-11 | E=2.0e-14 S=8.9e-13 Ehist=4.4e-14 Z=2.4e-12 Gf=1.2e-12 nsw=0.0e+00
+  sym40/stag E=3.9e-12 S=6.0e-10 Z=1.8e-10 Pb=1.9e-11 Gb=1.6e-10 Gf=3.5e-10 CP=1.1e-08 par=1.3e-15 var=5.1e-11 | E=2.3e-14 S=3.9e-12 Ehist=6.6e-14 Z=3.6e-12 Gf=1.8e-12 nsw=0.0e+00
+  sym40/None E=4.1e-12 S=5.6e-10 Z=1.7e-10 Pb=2.0e-11 Gb=1.6e-10 Gf=3.5e-10 CP=1.1e-08 par=1.3e-15 var=5.1e-11 | E=1.8e-14 S=1.6e-12 Ehist=6.2e-14 Z=2.2e-12 Gf=1.1e-12 nsw=0.0e+00
+  xx1 E=4.9e-15 S=1.7e-15 Z=1.6e-15 Pb=4.0e-15 Gb=1.1e-15 Gf=1.1e-15 CP=3.1e-15 par=1.3e-15 var=2.2e-15 | E=2.2e-16 S=8.3e-16 Ehist=1.8e-15 Z=1.6e-15 Gf=7.8e-16 nsw=0.0e+00
+  xx2 E=3.3e-01 S=8.3e-01 Z=7.2e-01 Pb=5.3e-01 Gb=3.6e-01 Gf=3.6e-01 CP=4.8e-01 par=1.1e-15 var=6.7e-16 | E=8.9e-16 S=3.5e-01 Ehist=7.1e-04 Z=6.7e-01 Gf=3.3e-01 nsw=0.0e+00
+L=32 cpu time 61.7s
+L=32 xp time 108.8s
+  sweep 0 chi=32 alpha=0.001 E_cpu=-10.774033857984 dE=1.4e-07 dSbar6=nan dSprof=nan mv_cpu=37.48 mv_xp=37.48 t_cpu=1.9 t_xp=16.9
+  sweep 1 chi=32 alpha=0.001 E_cpu=-10.777113073665 dE=6.9e-10 dSbar6=nan dSprof=nan mv_cpu=48.06 mv_xp=48.08 t_cpu=4.3 t_xp=21.5
+  sweep 2 chi=64 alpha=0.0001 E_cpu=-10.777183138205 dE=4.2e-11 dSbar6=nan dSprof=nan mv_cpu=47.68 mv_xp=47.68 t_cpu=10.7 t_xp=23.3
+  sweep 3 chi=64 alpha=0.0001 E_cpu=-10.777182989444 dE=8.4e-11 dSbar6=nan dSprof=nan mv_cpu=41.27 mv_xp=41.27 t_cpu=12.1 t_xp=16.4
+  sweep 4 chi=96 alpha=0.0 E_cpu=-10.777184227378 dE=1.7e-12 dSbar6=2.2e-09 dSprof=1.6e-08 mv_cpu=40.81 mv_xp=40.81 t_cpu=15.3 t_xp=16.5
+  sweep 5 chi=96 alpha=0.0 E_cpu=-10.777184209417 dE=1.0e-11 dSbar6=1.1e-08 dSprof=2.1e-08 mv_cpu=35.18 mv_xp=35.18 t_cpu=17.3 t_xp=14.1
+L=32 worst dE=1.4e-07 worst dS(cut)=2.1e-08
+time 468.6s
