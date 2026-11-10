@@ -17,3 +17,7 @@ Do not copy out/ckpt.
 Amendment (2026-11-09). This was registered before any c estimate was computed. Some log lines had been seen in a progress check: candidate runs at χ ≤ 64, and the ctl1 run's S_mid. cfg/ctl1_L256_N48.json has the same error as the desktop L = 192 config: "t2": 0.0, where C181's L = 128 ctl1 keeps the default t2 = −1. The c = 1 calibration uses ctl1fix_L256_N48 (the default t2), run in a separate small job, and ctl1_L256_N48 is reported as a config error.
 
 Result (2026-11-09, REPORT §9.166). All runs completed the schedule at χ = 768. Calibrated: ctl1fix reads 1.040, 1.002, 1.007 and ctl2 reads 2.085, 1.920, 2.001. φ = 1.53 reads c_two(128 → 256) = 1.743, 1.720, 1.751, and φ = 1.555 reads 1.773, 1.842, 1.851. Truncation is 3.5e-8 to 4.0e-8. L × the parity gap at L = 256 is −0.18 and 0.49. Verdict: pass. The entropies are still rising with χ at 768 (by 0.011 from 512), so the reading is not converged to better than about 0.1 in c. Numbers: `python3 -E -s pair256.py`, output in pair256.out.
+
+## Continuation to χ = 1024 (registered 2026-11-09)
+
+The candidate runs, the c = 2 control and the L = 128 partners continue to χ = 1024 from their checkpoints. The registration, written before any output, is in `chi1024/README.md`.

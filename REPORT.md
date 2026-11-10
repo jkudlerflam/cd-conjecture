@@ -2723,3 +2723,29 @@ Limits.
 - No production sweep at χ ≥ 512 at L = 256 has been timed yet. The estimate that the two p153c L = 256 runs finish around midnight EST on 2026-11-09 is an extrapolation, uncertain by a factor of about 1.5. It replaces the CPU timing of §9.167 for the decisive pair.
 - The script that applies the amendment's selection across the CPU and GPU folders is not written. `analyze190.py` reads one folder at a time.
 - cupy's import hung twice on apollo01, so the jobs are pinned to apollo02.
+
+### 9.169 C190 at its registered final χ: the qubit chain reads c ≈ 2.2 from L = 64 to 128 at the collaborator's bond and field, and the earlier downturn does not reproduce (coordinator, Claude Fable 5, 2026-11-09; `codex/work_C190/gpu/`)
+
+The GPU runs of §9.168 finished the L = 64 and L = 128 chains of the key p153c (w = e^{1.53i}/80, Δ = 1, V = 40, h_z = −19.97589125) at the registered final bond dimensions, χ = 384 and 512. This replaces the χ = 256 interim reading of §9.167 for this size pair. The L = 256 runs are still in progress, so the rules V1 and V2 are not evaluated here.
+
+Convergence. There are eight runs, two initializations (random and product) in each parity sector at each size. All eight pass C1 to C4: the local residuals are 1e-9, the energy changes over the last two sweeps are at most 1e-9, the discarded weights are 3e-11 (L = 64) and 2.6e-10 (L = 128), and S̄₆ moves by 0.0005 and 0.0046 from the previous χ stage, against the limit of 0.01. The two initializations agree to 1e-9 in energy and to four decimals in the entropies (C5). The one CPU run that has reached its final χ (L = 64, even sector) agrees with its GPU partner to 1e-10 in energy and 1e-4 in S̄₁.
+
+| L | sector | E | S̄₁ | S̄₆ | S̄₁₂ | n_mid |
+|---|---|---|---|---|---|---|
+| 64 | even | −650.0414853399 | 1.6146 | 1.6090 | 1.5933 | 0.2183 |
+| 64 | odd | −650.0414362973 | 1.5941 | 1.5885 | 1.5727 | 0.2018 |
+| 128 | even | −1290.1134157022 | 1.8682 | 1.8591 | 1.8515 | 0.2211 |
+| 128 | odd | −1290.1134107394 | 1.8598 | 1.8510 | 1.8436 | 0.2130 |
+
+Reading. The even sector is the ground branch at both sizes, and c_two(64 → 128) = 6 [S̄_W(128) − S̄_W(64)]/ln 2 on it is 2.196, 2.165 and 2.234 for W = 1, 6 and 12. Over all four parity pairings the W = 1 value lies between 2.12 and 2.37. The residual χ dependence is small on this scale. The L = 128 entropy rose by 0.016 from χ = 256 to 384 and by 0.005 from 384 to 512, and a geometric continuation leaves about 0.002, or 0.02 in c.
+
+Verdict on V3. The registered rule says the collaborator's downturn (0.74 to 0.93 from 64 to 128) reproduces if the converged ground-branch value at W = 1 is at most 1.2, and does not if it is at least 1.6. The value is 2.20, so the downturn does not reproduce. It was a property of the under-converged L = 128 states of §9.155, as §9.167 suggested.
+
+What this does not show.
+
+- The reading sits above 2 by about 0.2, as the collaborator's 32 → 64 reading (2.15) did. Drifts of this size are common at these lengths, and the two-leg XX control at the same sizes, which calibrates this pair under the registration, has not finished. Until it has, the number says "not falling toward 1" and no more.
+- The valley weight ratio is 0.78 (even) and 0.76 (odd) at L = 128, a little under the 0.8 that V6 asks for at L = 128 and 256. Both valleys are occupied, with the partial polarization expected off the symmetric line.
+- L·Δ_GC/|t₂| is +0.251 at L = 64 and +0.051 at L = 128, inside the bound of V5 with no growth so far. V5 needs L = 256.
+- The decisive pair is 128 → 256. At collection the two L = 256 runs were at χ = 384 (even) and 512 (odd) of 768, and no reading is taken from them.
+
+Also started, with Jonah's approval: a continuation of the effective-model L = 256 stage of §9.166 to χ = 1024, with the c = 2 control and the L = 128 partners carried to the same χ, so that the reading is taken at matched bond dimension. The rule is registered in `codex/work_C187q/L256_job/chi1024/README.md`.

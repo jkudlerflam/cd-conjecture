@@ -102,3 +102,16 @@ The very first sweeps (χ = 32, residual 1e-7, from the random start) differ by 
 Measured sweep times on the GPU (CPU production in brackets): L = 128, χ = 128: 151 to 167 s (308 to 421 s); χ = 192: 147 to 166 s (724 to 942 s); χ = 256: 129 to 143 s (1207 to 1354 s); χ = 384: 166 to 179 s (not reached on the CPU). L = 256, χ = 64 on the host: 126 to 223 s (124 to 179 s); χ = 128: 300 to 327 s (570 to 863 s); χ = 192: 332 to 337 s (1764 to 2686 s). Device memory per run at L = 128, χ = 384: 6 to 10 GB.
 
 Estimate for the L = 256 runs. They finished their first χ = 192 sweep at 22:13. The remaining pre-final sweeps (one at 192, two each at 256, 384 and 512) should take about 45 to 50 minutes, extrapolated from the measured L = 128 sweep times at the same χ (per bond 0.55 s at 256 and 0.69 s at 384, times 510 bond updates) and the bench ratio 1.3 between χ = 512 and 384. That puts the start of the final χ = 768 stage at about 23:00 to 23:15 on 2026-11-09. The bench ratio 1.7 between 768 and 384 gives about 10 minutes per final sweep, so the 2 to 6 final sweeps end between about 23:20 and 00:15. The final host measurements (entropies, one-body matrices, 4 threads) at χ = 768 are not measured and may add tens of minutes. This is an extrapolation, uncertain by perhaps a factor 1.5, from per-bond times that do not yet include a sweep at χ ≥ 512 in production.
+
+## R5. p153c at L = 64 and 128, registered final χ (collected 2026-11-09 22:57 EST)
+
+All eight GPU runs finished (two initializations per parity sector and size, χ = 384 at L = 64 and 512 at L = 128). Every run passes C1 to C4. The two initializations agree to 1e-9 in energy and to four decimals in S̄ (C5). The one CPU run finished so far at a final χ, p153c L = 64 even, has E = −650.0414853399 and S̄₁ = 1.61456, against −650.0414853398 and 1.6146 here.
+
+| L | sector | E | S̄₁ | S̄₆ | S̄₁₂ | S̄₆ step from previous χ | n_mid | W_min/W_max |
+|---|---|---|---|---|---|---|---|---|
+| 64 | even | −650.0414853399 | 1.6146 | 1.6090 | 1.5933 | 0.0005 | 0.2183 | 0.783 |
+| 64 | odd | −650.0414362973 | 1.5941 | 1.5885 | 1.5727 | 0.0004 | 0.2018 | 0.751 |
+| 128 | even | −1290.1134157022 | 1.8682 | 1.8591 | 1.8515 | 0.0046 | 0.2211 | 0.779 |
+| 128 | odd | −1290.1134107394 | 1.8598 | 1.8510 | 1.8436 | 0.0044 | 0.2130 | 0.764 |
+
+The even sector is the ground branch at both sizes. c_two(64 → 128) on the ground branch is 2.196, 2.165, 2.234 for W = 1, 6, 12, and 2.12 to 2.37 over all parity pairings at W = 1. By V3 the collaborator's downturn does not reproduce (the threshold is 1.6). L·Δ_GC/|t₂| is +0.251 at L = 64 and +0.051 at L = 128. The valley weight ratio at L = 128 is 0.78 and 0.76, a little under the 0.8 of V6. The analysis output is `typhon_out/analyze_G_partial.txt`. The L = 256 runs were at χ = 384 (even) and 512 (odd) of 768 at collection, and no reading is taken from them.

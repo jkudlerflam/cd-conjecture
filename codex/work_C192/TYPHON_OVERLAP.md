@@ -55,3 +55,7 @@ Status 2026-11-09 21:38 EST. All seven steps are still running in the same donor
 ## GPU production of C190 (added 2026-11-09 22:20 EST)
 
 The GPU backend (REPORT §9.168) runs the registered C190 configurations as job 17607561 on apollo02, with the resume job 17607562 waiting on it. Neither is an overlap step and neither is to be touched. Output is in /scratch/lustre/jkudlerflam/c18x/c190g/outG/. Check and collect with the commands in `codex/work_C190/gpu/RESULT.md` (never copy outG/ckpt). A finished run has "status": "done" in its json. When the p153c runs at L = 64, 128 and 256 are done, evaluate C1 to C6 and V1 to V6 of `codex/work_C190/RESULT.md` with the amendment in `gpu/RESULT.md` (lowest energy among CPU and GPU runs of a tag).
+
+## C187d, the χ = 1024 continuation of the L = 256 stage (added 2026-11-09 22:55 EST)
+
+Jonah approved it on 2026-11-09. Registration, launch record, check and collection commands are in `codex/work_C187q/L256_job/chi1024/README.md`. Step A is 17603971.1 (six candidate runs, inside c177), step B is 17604038.1 (ctl2 and the L = 128 partners, inside c175), and the queued fallback is 17608223 (c187d). A run is complete at 28 jsonl lines (L = 256) or 27 (L = 128). When all ten are complete, collect, apply the registered readings R1 and R2 and the verdict rule E1 to E3, write the REPORT section, and cancel the fallback job only if it is still pending and every tag is complete (it is ours and would do nothing).
