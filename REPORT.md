@@ -3053,3 +3053,28 @@ Here X,Y,Z are Pauli matrices. Multiplying H by 40 gives integer coefficients (2
 Limits. Periodic exact diagonalization at L=14,16,20 remains close to c=1, without independent confirmation of an extra bulk mode. Larger-scale crossover, boundary effects and nonrelativistic behavior remain possible. A nearby exact weighted-Dicke control demonstrates that large, clean entropy scaling alone need not identify a CFT. No conformal spectrum, thermodynamic c, or counterexample is established. The preferred R<=3 attractive alternatives weakened at larger size; no preferred-band candidate is promoted.
 
 All local workers launched for this continuation are stopped. Under a preregistered allocation rule, the wider R=28 L192 runs were deferred at saved checkpoints after this candidate passed validation; incomplete values are excluded. Twelve winning-candidate MPS states and the two unfinished wider states have hash-verified, Git-ignored workspace copies. The unavailable pre-upgrade L96 even chi192 MPS is explicitly disclosed; its raw JSON and prior diagnostics survive. Protocols, complete null/deferred accounting, replayable state manifests, independent AI review, code, raw records and plots: [continuation contribution](contrib/d2_order_one_continuation_20261110/README.md). No cluster job or remote publication is claimed.
+
+
+### 9.191 C197: the c ≈ 1.45 reading of §9.190 does not survive small changes of the field or the DM term (coordinator, Claude Fable 5, 2026-11-10; `codex/work_C197/`)
+
+The chain of §9.190, (J_x, J_y, J_z, D, h_z) = (1/2, −1/2, 5/8, 1/10, −7/8), sits close to a special point of its family. At D = 0 and h_z = −3/4 = −√(4J_z² − 1) the chain is frustration-free, with one exact ground state for every particle number, the weighted Dicke states of the collaborator's own control (an 8-site ring has a 9-fold degenerate ground level there, checked by exact diagonalization). Such states have entanglement growing as (1/2) ln L, which an open-chain estimator reads as c ≈ 3. This suggested testing whether 1.45 is a crossover rather than a phase, by moving the field and D at fixed sizes.
+
+Method [numerical]. The collaborator's wrapper around the C190 solver, unchanged, at L = 48 and 96, χ = 128, both parity sectors, with c_eff = 6[S(96) − S(48)]/ln 2 from their central-three and fractional-window entropies (`run197.py`, `analyze197.py`, output in `summary.txt`). The even sector is the lower one at every point except D = 0.2, and the ground-branch readings are:
+
+| D | h_z | c_eff, central three | c_eff, fractional window |
+|---|---|---|---|
+| 0.10 | −25/32 | 0.43 | 0.51 |
+| 0.10 | −13/16 | 2.06 | 2.02 |
+| 0.10 | −27/32 | −0.33 | −0.26 |
+| 0.10 | −7/8 (§9.190) | 1.418 | 1.435 |
+| 0.10 | −29/32 | −0.33 | −0.34 |
+| 0.10 | −15/16, −1 | 0.00 | 0.00 |
+| 0.05 | −7/8 | 0.14 | 0.16 |
+| 0.15 | −7/8 | 0.80 | 0.94 |
+| 0.20 | −7/8 | 0.97 | 0.92 |
+
+At §9.190's point this reproduces their 48 → 96 values (1.4185 and 1.4363) to 0.002 at the lower χ.
+
+Reading [numerical, with a heuristic interpretation]. The reading is not stable. A field step of 1/32 moves it from 1.42 to −0.33 on both sides, while the bulk density changes smoothly (0.29, 0.27, 0.24). A negative two-size reading is not a central charge, so at these sizes the estimator is dominated by a non-universal finite-size effect, most likely the fit of the density-modulated state to the chain length. Doubling L keeps that fit, which would explain why §9.190's value repeats from 48 → 96 to 96 → 192. A c = 3/2 phase would give a plateau, and none appears. For h_z ≤ −15/16 the parity gap is size independent (0.029 and 0.088) and c_eff = 0, a gapped phase. At D = 0.2, away from both the gapped region and the frustration-free point, c_eff ≈ 1, an ordinary one-component liquid, consistent with the periodic rings of §9.190 (about 1.04) and with the single slow species found earlier at frustration-free ferromagnetic points (§9.105).
+
+Conclusion. The §9.190 chain is most naturally read as c = 1 with large finite-size corrections near a gapped phase and a frustration-free point. This does not rule out a narrow c > 1 region elsewhere in the family, but it removes the reason to look for one at this point.
