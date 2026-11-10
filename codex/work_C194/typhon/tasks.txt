@@ -1,0 +1,10 @@
+OMP_NUM_THREADS=3 OPENBLAS_NUM_THREADS=3 MKL_NUM_THREADS=3 python3 -E -s run_inf.py typhon/cfg/inf_1_32.json out_inf > logs/inf_1_32.log 2>&1
+OMP_NUM_THREADS=3 OPENBLAS_NUM_THREADS=3 MKL_NUM_THREADS=3 python3 -E -s run_inf.py typhon/cfg/inf_1_24.json out_inf > logs/inf_1_24.log 2>&1
+OMP_NUM_THREADS=3 OPENBLAS_NUM_THREADS=3 MKL_NUM_THREADS=3 python3 -E -s run_inf.py typhon/cfg/inf_1_20.json out_inf > logs/inf_1_20.log 2>&1
+OMP_NUM_THREADS=3 OPENBLAS_NUM_THREADS=3 MKL_NUM_THREADS=3 python3 -E -s run_inf.py typhon/cfg/inf_1_16.json out_inf > logs/inf_1_16.log 2>&1
+OMP_NUM_THREADS=3 OPENBLAS_NUM_THREADS=3 MKL_NUM_THREADS=3 python3 -E -s run_inf.py typhon/cfg/inf_3_40.json out_inf > logs/inf_3_40.log 2>&1
+OMP_NUM_THREADS=3 OPENBLAS_NUM_THREADS=3 MKL_NUM_THREADS=3 python3 -E -s run_inf.py typhon/cfg/inf_1_12.json out_inf > logs/inf_1_12.log 2>&1
+OMP_NUM_THREADS=3 OPENBLAS_NUM_THREADS=3 MKL_NUM_THREADS=3 python3 -E -s run_inf.py typhon/cfg/inf_1_10.json out_inf > logs/inf_1_10.log 2>&1
+OMP_NUM_THREADS=3 OPENBLAS_NUM_THREADS=3 MKL_NUM_THREADS=3 python3 -E -s run_inf.py typhon/cfg/inf_3_32.json out_inf > logs/inf_3_32.log 2>&1
+OMP_NUM_THREADS=3 OPENBLAS_NUM_THREADS=3 MKL_NUM_THREADS=3 python3 -E -s run_inf.py typhon/cfg/inf_c1.json out_inf > logs/inf_c1.log 2>&1
+OMP_NUM_THREADS=3 OPENBLAS_NUM_THREADS=3 MKL_NUM_THREADS=3 python3 -E -s run194.py typhon/tasks_fin.json out_fin 6 > logs/fin.log 2>&1

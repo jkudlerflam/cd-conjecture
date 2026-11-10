@@ -1,0 +1,19 @@
+nc_fit.py:14: RuntimeWarning: overflow encountered in exp
+  return np.where(n < nc, A * np.exp(-B / np.sqrt(x)), 0.0)
+--- Delta_pb(L -> infinity), registered fit
+   n=0.0208 value=+0.01286 +- 0.00278 (+4.6 err)
+   n=0.0312 value=+0.00845 +- 0.00287 (+2.9 err)
+   n=0.0417 value=+0.00489 +- 0.00337 (+1.5 err)
+   n=0.0500 value=+0.00277 +- 0.00083 (+3.3 err)
+   n=0.0625 value=+0.00128 +- 0.00130 (+1.0 err)
+   n=0.1250 value=+0.00200 +- 0.00564 (+0.4 err)
+   n=0.1562 value=-0.00053 +- 0.00067 (-0.8 err)
+   n=0.1875 value=+0.00306 +- 0.00689 (+0.4 err)
+   n_c = 0.1380  (chi2+1 interval 0.0660 to 0.2000; leave-one-out []) -> n_c = 0.138 +- 0.072;  A = 249, B = 3.375, chi2 = 0.98 for 5 dof
+--- 1/xi_1 at the largest chi (saturating densities), 0 +- 1/xi_1 otherwise
+   n=0.0312 value=+0.00000 +- 0.01751 (+0.0 err)
+   n=0.0500 value=+0.00000 +- 0.00786 (+0.0 err)
+   n=0.0625 value=+0.00000 +- 0.00350 (+0.0 err)
+   n=0.0750 value=+0.00000 +- 0.00879 (+0.0 err)
+   n=0.0833 value=+0.00000 +- 0.00377 (+0.0 err)
+   fewer than two densities with a value above three errors: the KT fit is not constrained

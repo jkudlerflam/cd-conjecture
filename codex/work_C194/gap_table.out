@@ -1,0 +1,67 @@
+=== n = 1/64 (0.0156)
+  L= 128 N=  2 chi= 128 Dpb=0.022131 L*Dpb=2.8328 max|last-sweep dE|=4.0e-06 max|dE(chi)|=1.9e-05 [C194]
+=== n = 1/48 (0.0208)
+  L=  96 N=  2 chi= 128 Dpb=0.025538 L*Dpb=2.4517 max|last-sweep dE|=2.9e-06 max|dE(chi)|=1.2e-05 [C194]
+  L= 192 N=  4 chi= 128 Dpb=0.017394 L*Dpb=3.3396 max|last-sweep dE|=3.5e-07 max|dE(chi)|=2.2e-06 [C194]
+  L= 288 N=  6 chi= 128 Dpb=0.015481 L*Dpb=4.4586 max|last-sweep dE|=5.3e-07 max|dE(chi)|=2.9e-05 [C194]
+  fit D + a/L + b/L^2: D_inf = +0.01286 +- 0.00278 (+4.6 err; se 0.0e+00, spread 2.8e-03), a = 0.524, b = 66.54
+=== n = 1/32 (0.0312)
+  L=  64 N=  2 chi= 128 Dpb=0.034703 L*Dpb=2.2210 max|last-sweep dE|=4.1e-07 max|dE(chi)|=1.8e-06 [C194]
+  L= 128 N=  4 chi= 128 Dpb=0.019337 L*Dpb=2.4751 max|last-sweep dE|=9.2e-07 max|dE(chi)|=4.1e-06 [C194]
+  L= 192 N=  6 chi= 128 Dpb=0.015126 L*Dpb=2.9042 max|last-sweep dE|=6.7e-07 max|dE(chi)|=2.4e-05 [C194]
+  L= 256 N=  8 chi= 128 Dpb=0.013351 L*Dpb=3.4178 max|last-sweep dE|=1.3e-06 max|dE(chi)|=7.1e-05 [C194]
+  fit D + a/L + b/L^2: D_inf = +0.00845 +- 0.00287 (+2.9 err; se 2.5e-04, spread 2.9e-03), a = 1.099, b = 37.19
+  (check, largest three L) D_inf = +0.00935 +- 0.00212
+=== n = 1/24 (0.0417)
+  L=  48 N=  2 chi= 128 Dpb=0.048327 L*Dpb=2.3197 max|last-sweep dE|=1.6e-07 max|dE(chi)|=6.5e-07 [C194]
+  L=  96 N=  4 chi= 128 Dpb=0.023539 L*Dpb=2.2597 max|last-sweep dE|=2.9e-06 max|dE(chi)|=1.2e-05 [C194]
+  L= 144 N=  6 chi= 128 Dpb=0.016517 L*Dpb=2.3784 max|last-sweep dE|=3.0e-06 max|dE(chi)|=5.8e-05 [C194]
+  L= 192 N=  8 chi= 128 Dpb=0.013369 L*Dpb=2.5669 max|last-sweep dE|=6.7e-07 max|dE(chi)|=6.6e-05 [C194]
+  L= 240 N= 10 chi= 128 Dpb=0.011643 L*Dpb=2.7943 max|last-sweep dE|=1.6e-06 max|dE(chi)|=1.2e-04 [C194]
+  fit D + a/L + b/L^2: D_inf = +0.00489 +- 0.00337 (+1.5 err; se 1.9e-04, spread 3.4e-03), a = 1.484, b = 28.83
+  (check, largest three L) D_inf = +0.00595 +- 0.00169
+=== n = 1/20 (0.0500)
+  L=  80 N=  4 chi= 128 Dpb=0.027317 L*Dpb=2.1853 max|last-sweep dE|=2.1e-07 max|dE(chi)|=1.3e-06 [C194]
+  L= 120 N=  6 chi= 128 Dpb=0.018651 L*Dpb=2.2381 max|last-sweep dE|=4.4e-07 max|dE(chi)|=2.6e-05 [C194]
+  L= 160 N=  8 chi= 128 Dpb=0.014614 L*Dpb=2.3383 max|last-sweep dE|=2.4e-06 max|dE(chi)|=8.4e-05 [C194]
+  L= 200 N= 10 chi= 128 Dpb=0.012141 L*Dpb=2.4282 max|last-sweep dE|=1.2e-06 max|dE(chi)|=1.4e-04 [C194]
+  L= 240 N= 12 chi= 128 Dpb=0.010488 L*Dpb=2.5171 max|last-sweep dE|=4.9e-07 max|dE(chi)|=2.1e-04 [C194]
+  fit D + a/L + b/L^2: D_inf = +0.00277 +- 0.00083 (+3.3 err; se 2.5e-04, spread 8.0e-04), a = 1.808, b = 12.39
+  (check, largest three L) D_inf = +0.00217 +- 0.00006
+=== n = 1/16 (0.0625)
+  L=  64 N=  4 chi= 128 Dpb=0.034933 L*Dpb=2.2357 max|last-sweep dE|=2.8e-08 max|dE(chi)|=2.0e-07 [C194]
+  L= 128 N=  8 chi= 128 Dpb=0.017073 L*Dpb=2.1853 max|last-sweep dE|=8.4e-08 max|dE(chi)|=8.4e-05 [C194]
+  L= 192 N= 12 chi= 192 Dpb=0.011577 L*Dpb=2.2228 max|last-sweep dE|=3.6e-06 max|dE(chi)|=1.2e-04 [C194]
+  L= 256 N= 16 chi= 192 Dpb=0.008918 L*Dpb=2.2831 max|last-sweep dE|=2.5e-07 max|dE(chi)|=2.4e-04 [C194]
+  fit D + a/L + b/L^2: D_inf = +0.00128 +- 0.00130 (+1.0 err; se 5.8e-06, spread 1.3e-03), a = 1.889, b = 16.94
+  (check, largest three L) D_inf = +0.00130 +- 0.00057
+=== n = 1/12 (0.0833)
+  L=  48 N=  4 chi= 128 Dpb=0.052390 L*Dpb=2.5147 max|last-sweep dE|=1.6e-06 max|dE(chi)|=2.8e-05 [C194]
+=== n = 3/32 (0.0938)
+  L=  64 N=  6 chi= 128 Dpb=0.036324 L*Dpb=2.3247 max|last-sweep dE|=1.2e-09 max|dE(chi)|=2.4e-05 [C194]
+=== n = 1/10 (0.1000)
+  L=  60 N=  6 chi= 128 Dpb=0.041454 L*Dpb=2.4872 max|last-sweep dE|=7.4e-09 max|dE(chi)|=2.2e-05 [C194]
+=== n = 1/8 (0.1250)
+  L=  48 N=  6 chi= 384 Dpb=0.056339 L*Dpb=2.7043 max|last-sweep dE|=2.4e-08 max|dE(chi)|=9.0e-08 [C176]
+  L=  64 N=  8 chi= 512 Dpb=0.037525 L*Dpb=2.4016 max|last-sweep dE|=1.3e-11 max|dE(chi)|=3.0e-08 [C176]
+  L=  96 N= 12 chi= 512 Dpb=0.024277 L*Dpb=2.3306 max|last-sweep dE|=1.3e-09 max|dE(chi)|=7.4e-07 [C176]
+  L= 128 N= 16 chi= 512 Dpb=0.017834 L*Dpb=2.2827 max|last-sweep dE|=1.2e-08 max|dE(chi)|=3.5e-06 [C176]
+  L= 192 N= 24 chi= 768 Dpb=0.011572 L*Dpb=2.2218 max|last-sweep dE|=1.9e-08 max|dE(chi)|=7.0e-06 [C176]
+  L= 256 N= 32 chi= 768 Dpb=0.008514 L*Dpb=2.1796 max|last-sweep dE|=6.9e-08 max|dE(chi)|=2.1e-05 [C176]
+  fit D + a/L + b/L^2: D_inf = +0.00200 +- 0.00564 (+0.4 err; se 1.5e-03, spread 5.4e-03), a = 1.585, b = 48.24
+  (check, largest three L) D_inf = -0.00037 +- 0.00047
+=== n = 5/32 (0.1562)
+  L=  64 N= 10 chi= 512 Dpb=0.038093 L*Dpb=2.4380 max|last-sweep dE|=8.7e-11 max|dE(chi)|=1.1e-07 [C176]
+  L= 128 N= 20 chi= 512 Dpb=0.018253 L*Dpb=2.3364 max|last-sweep dE|=3.1e-08 max|dE(chi)|=7.4e-06 [C176]
+  L= 192 N= 30 chi= 768 Dpb=0.011868 L*Dpb=2.2787 max|last-sweep dE|=4.5e-08 max|dE(chi)|=1.5e-05 [C176]
+  L= 256 N= 40 chi= 768 Dpb=0.008731 L*Dpb=2.2352 max|last-sweep dE|=1.7e-07 max|dE(chi)|=4.5e-05 [C176]
+  fit D + a/L + b/L^2: D_inf = -0.00053 +- 0.00067 (-0.8 err; se 2.0e-05, spread 6.7e-04), a = 2.336, b = 8.70
+  (check, largest three L) D_inf = -0.00046 +- 0.00036
+=== n = 3/16 (0.1875)
+  L=  64 N= 12 chi= 512 Dpb=0.038059 L*Dpb=2.4358 max|last-sweep dE|=2.5e-10 max|dE(chi)|=2.1e-07 [C176]
+  L=  96 N= 18 chi= 512 Dpb=0.022836 L*Dpb=2.1923 max|last-sweep dE|=8.0e-09 max|dE(chi)|=3.0e-06 [C176]
+  L= 128 N= 24 chi= 512 Dpb=0.018608 L*Dpb=2.3818 max|last-sweep dE|=4.8e-08 max|dE(chi)|=1.3e-05 [C176]
+  L= 192 N= 36 chi= 768 Dpb=0.012336 L*Dpb=2.3685 max|last-sweep dE|=7.9e-08 max|dE(chi)|=2.6e-05 [C176]
+  L= 256 N= 48 chi= 768 Dpb=0.009272 L*Dpb=2.3738 max|last-sweep dE|=2.7e-07 max|dE(chi)|=7.3e-05 [C176]
+  fit D + a/L + b/L^2: D_inf = +0.00306 +- 0.00689 (+0.4 err; se 2.6e-03, spread 6.4e-03), a = 1.506, b = 46.22
+  (check, largest three L) D_inf = +0.00037 +- 0.00047
