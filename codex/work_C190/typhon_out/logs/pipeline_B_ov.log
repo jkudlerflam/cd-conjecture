@@ -1,0 +1,13 @@
+[       0s] started tune_rat_n316_0 (cost 3.62e+09)
+[       0s] started tune_rat_n316_1 (cost 3.62e+09)
+[       0s] started tune_rat_n316_2 (cost 3.62e+09)
+[       0s] started tune_sym40_n316_0 (cost 9.06e+08)
+[       0s] started tune_sym40_n316_1 (cost 9.06e+08)
+[       0s] started tune_sym40_n316_2 (cost 9.06e+08)
+[    1460s] finished tune_sym40_n316_0 rc=0
+[    1460s] started tune_sym40_n18_0 (cost 9.06e+08)
+[    1641s] finished tune_sym40_n316_2 rc=0
+[    1641s] started tune_sym40_n18_1 (cost 9.06e+08)
+[    1701s] finished tune_sym40_n316_1 rc=0
+[    1701s] tuned sym40_n316: hz = -19.976047251
+[    1701s] started tune_sym40_n18_2 (cost 9.06e+08)

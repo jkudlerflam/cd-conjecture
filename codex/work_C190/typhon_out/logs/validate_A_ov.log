@@ -1,0 +1,32 @@
+p153/None P=0 init=rand: E_ed=-10.223199232977 E=4.3e-12 S=3.8e-10 Z=1.1e-10 Pb=6.3e-12 Gb=5.4e-11 Gf=5.4e-11 CP=3.3e-10 par=1.1e-15 var=2.6e-11 Ehist=4.3e-12
+p153/None P=0 init=prod: E_ed=-10.223199232977 E=4.3e-12 S=3.8e-10 Z=1.1e-10 Pb=6.3e-12 Gb=5.3e-11 Gf=5.3e-11 CP=3.3e-10 par=1.1e-16 var=2.6e-11 Ehist=4.3e-12
+p153/None P=1 init=rand: E_ed=-10.221875331042 E=6.4e-12 S=1.4e-10 Z=1.3e-10 Pb=6.7e-11 Gb=1.3e-10 Gf=2.8e-10 CP=1.2e-08 par=8.9e-16 var=5.7e-11 Ehist=6.3e-12
+p153/None P=1 init=prod: E_ed=-10.221875331042 E=6.4e-12 S=1.4e-10 Z=1.3e-10 Pb=6.7e-11 Gb=1.3e-10 Gf=2.8e-10 CP=1.2e-08 par=4.4e-16 var=5.7e-11 Ehist=6.4e-12
+rat/None P=0 init=rand: E_ed=-10.223146659748 E=6.8e-12 S=3.8e-10 Z=1.0e-10 Pb=1.7e-11 Gb=5.0e-11 Gf=5.0e-11 CP=3.3e-10 par=1.9e-15 var=2.6e-11 Ehist=6.8e-12
+rat/None P=0 init=prod: E_ed=-10.223146659748 E=6.8e-12 S=3.8e-10 Z=9.9e-11 Pb=1.7e-11 Gb=4.9e-11 Gf=4.9e-11 CP=3.3e-10 par=5.6e-16 var=2.6e-11 Ehist=6.8e-12
+rat/None P=1 init=rand: E_ed=-10.221833177049 E=2.6e-12 S=1.2e-10 Z=1.1e-10 Pb=5.8e-11 Gb=1.3e-10 Gf=2.8e-10 CP=1.2e-08 par=7.8e-16 var=5.7e-11 Ehist=2.6e-12
+rat/None P=1 init=prod: E_ed=-10.221833177049 E=2.6e-12 S=1.2e-10 Z=1.1e-10 Pb=5.8e-11 Gb=1.3e-10 Gf=2.8e-10 CP=1.2e-08 par=2.2e-16 var=5.7e-11 Ehist=2.5e-12
+sym40/stag P=0 init=rand: E_ed=-10.220336754497 E=3.7e-12 S=6.0e-10 Z=1.8e-10 Pb=4.8e-12 Gb=8.9e-11 Gf=8.9e-11 CP=5.4e-10 par=0.0e+00 var=3.2e-11 Ehist=3.8e-12
+sym40/stag P=0 init=prod: E_ed=-10.220336754497 E=3.7e-12 S=6.0e-10 Z=1.8e-10 Pb=4.8e-12 Gb=9.0e-11 Gf=9.0e-11 CP=5.4e-10 par=4.4e-16 var=3.2e-11 Ehist=3.7e-12
+sym40/stag P=1 init=rand: E_ed=-10.219679580361 E=4.6e-12 S=1.1e-10 Z=9.5e-11 Pb=2.4e-11 Gb=1.6e-10 Gf=3.5e-10 CP=1.1e-08 par=1.8e-15 var=5.0e-11 Ehist=4.6e-12
+sym40/stag P=1 init=prod: E_ed=-10.219679580361 E=4.6e-12 S=1.1e-10 Z=9.6e-11 Pb=2.4e-11 Gb=1.6e-10 Gf=3.5e-10 CP=1.1e-08 par=2.2e-16 var=5.1e-11 Ehist=4.6e-12
+sym40/None P=0 init=rand: E_ed=-10.220336754498 E=4.5e-12 S=5.7e-10 Z=1.8e-10 Pb=1.2e-11 Gb=8.9e-11 Gf=8.9e-11 CP=5.4e-10 par=6.7e-16 var=3.2e-11 Ehist=4.5e-12
+sym40/None P=0 init=prod: E_ed=-10.220336754498 E=4.5e-12 S=5.7e-10 Z=1.8e-10 Pb=1.1e-11 Gb=8.9e-11 Gf=8.9e-11 CP=5.4e-10 par=2.2e-16 var=3.2e-11 Ehist=4.5e-12
+sym40/None P=1 init=rand: E_ed=-10.219679580359 E=3.1e-12 S=1.1e-10 Z=9.9e-11 Pb=1.4e-11 Gb=1.6e-10 Gf=3.5e-10 CP=1.1e-08 par=4.4e-16 var=5.1e-11 Ehist=3.1e-12
+sym40/None P=1 init=prod: E_ed=-10.219679580359 E=3.2e-12 S=1.1e-10 Z=9.8e-11 Pb=1.4e-11 Gb=1.6e-10 Gf=3.5e-10 CP=1.1e-08 par=1.6e-15 var=5.1e-11 Ehist=3.2e-12
+xx1 P=0 init=rand: E_ed=-1.201493012891 E=2.7e-15 S=1.3e-15 Z=1.4e-15 Pb=2.1e-15 Gb=7.2e-16 Gf=7.2e-16 CP=1.1e-15 par=2.2e-16 var=4.4e-16 Ehist=2.2e-15
+xx1 P=0 init=prod: E_ed=-1.201493012891 E=2.4e-15 S=1.6e-15 Z=1.1e-15 Pb=1.7e-15 Gb=5.6e-16 Gf=5.6e-16 CP=1.0e-15 par=2.2e-16 var=8.9e-16 Ehist=2.4e-15
+xx1 P=1 init=rand: E_ed=-1.311214480782 E=3.1e-15 S=1.6e-15 Z=1.6e-15 Pb=4.2e-15 Gb=8.9e-16 Gf=8.9e-16 CP=2.4e-15 par=8.9e-16 var=2.2e-15 Ehist=4.0e-15
+xx1 P=1 init=prod: E_ed=-1.311214480782 E=3.3e-15 S=1.2e-15 Z=9.4e-16 Pb=2.7e-15 Gb=4.4e-16 Gf=4.4e-16 CP=2.0e-15 par=8.9e-16 var=2.0e-15 Ehist=3.3e-15
+xx2 P=0 init=rand: E_ed=-1.064101615138 E=2.7e-15 S=1.0e-15 Z=1.8e-15 Pb=8.4e-16 Gb=1.1e-15 Gf=1.1e-15 CP=1.8e-15 par=4.4e-16 var=2.2e-16 Ehist=2.7e-15
+xx2 P=0 init=prod: E_ed=-1.064101615138 E=3.1e-15 S=7.8e-16 Z=1.3e-15 Pb=9.6e-16 Gb=7.2e-16 Gf=7.2e-16 CP=1.1e-15 par=1.1e-16 var=4.4e-16 Ehist=3.1e-15
+xx2 P=1 init=rand: E_ed=-0.864101615138 E=1.7e-15 S=1.7e-01 Z=1.8e-01 Pb=1.5e-02 Gb=8.8e-02 Gf=8.8e-02 CP=6.4e-02 par=1.1e-16 var=3.3e-16 Ehist=1.6e-15
+xx2 P=1 init=prod: E_ed=-0.864101615138 E=3.3e-01 S=8.3e-01 Z=7.2e-01 Pb=5.3e-01 Gb=3.6e-01 Gf=3.6e-01 CP=4.8e-01 par=1.1e-16 var=5.6e-17 Ehist=3.3e-01
+worst errors per case:
+  p153/None E=6.4e-12 S=3.8e-10 Z=1.3e-10 Pb=6.7e-11 Gb=1.3e-10 Gf=2.8e-10 CP=1.2e-08 par=1.1e-15 var=5.7e-11 Ehist=6.4e-12
+  rat/None E=6.8e-12 S=3.8e-10 Z=1.1e-10 Pb=5.8e-11 Gb=1.3e-10 Gf=2.8e-10 CP=1.2e-08 par=1.9e-15 var=5.7e-11 Ehist=6.8e-12
+  sym40/stag E=4.6e-12 S=6.0e-10 Z=1.8e-10 Pb=2.4e-11 Gb=1.6e-10 Gf=3.5e-10 CP=1.1e-08 par=1.8e-15 var=5.1e-11 Ehist=4.6e-12
+  sym40/None E=4.5e-12 S=5.7e-10 Z=1.8e-10 Pb=1.4e-11 Gb=1.6e-10 Gf=3.5e-10 CP=1.1e-08 par=1.6e-15 var=5.1e-11 Ehist=4.5e-12
+  xx1 E=3.3e-15 S=1.6e-15 Z=1.6e-15 Pb=4.2e-15 Gb=8.9e-16 Gf=8.9e-16 CP=2.4e-15 par=8.9e-16 var=2.2e-15 Ehist=4.0e-15
+  xx2 E=3.3e-01 S=8.3e-01 Z=7.2e-01 Pb=5.3e-01 Gb=3.6e-01 Gf=3.6e-01 CP=4.8e-01 par=4.4e-16 var=4.4e-16 Ehist=3.3e-01
+time 17.4s

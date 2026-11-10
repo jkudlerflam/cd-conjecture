@@ -73,23 +73,23 @@ The xx2 row of validate.py (coordinator's question). On both nodes validate.py 1
 
 Outputs per run: out*/<tag>.json (configuration, per-sweep history with energies, residuals, discarded weights, S̄ and density profiles, and at the end the exact entropy profile, density, bond observables, one-body matrices and C_P), out*/tune/<key>.json (the tuned field), out*/logs/<tag>.log, out*/summary.txt, logs/pipeline_*.log. Checkpoints out*/ckpt/*.npz are large (up to about 5 GB each at L = 256) and should not be copied. A run that is cut by the time limit resumes from its checkpoint if the same script is resubmitted.
 
-To collect, from inside codex/work_C190 (no brace expansion, no checkpoints):
+To collect, from inside codex/work_C190 (no brace expansion, no checkpoints). The remote globs must be quoted, since zsh otherwise stops with "no matches found". These commands were tested on the partial output on 2026-11-09 (typhon_out/ holds that snapshot, 0.8 MB).
 
     mkdir -p typhon_out/outA typhon_out/outB typhon_out/logs
-    scp typhon:/scratch/lustre/jkudlerflam/c18x/c190/outA/*.json typhon_out/outA/
-    scp typhon:/scratch/lustre/jkudlerflam/c18x/c190/outB/*.json typhon_out/outB/
+    scp 'typhon:/scratch/lustre/jkudlerflam/c18x/c190/outA/*.json' typhon_out/outA/
+    scp 'typhon:/scratch/lustre/jkudlerflam/c18x/c190/outB/*.json' typhon_out/outB/
     scp -r typhon:/scratch/lustre/jkudlerflam/c18x/c190/outA/tune typhon_out/outA/
     scp -r typhon:/scratch/lustre/jkudlerflam/c18x/c190/outB/tune typhon_out/outB/
     scp typhon:/scratch/lustre/jkudlerflam/c18x/c190/outA/summary.txt typhon_out/outA/
     scp typhon:/scratch/lustre/jkudlerflam/c18x/c190/outB/summary.txt typhon_out/outB/
-    scp typhon:/scratch/lustre/jkudlerflam/c18x/c190/logs/*.log typhon_out/logs/
+    scp 'typhon:/scratch/lustre/jkudlerflam/c18x/c190/logs/*.log' typhon_out/logs/
 
-Then
+The two summary.txt files exist only after a pipeline has finished. Then
 
     python3 analyze190.py typhon_out/outA > typhon_out/summaryA.txt
     python3 analyze190.py typhon_out/outB > typhon_out/summaryB.txt
 
-(add --partial to include runs still in progress at their last completed sweep). The summary prints, per run, the convergence flags C1 to C4 and the χ-stage history, and per key the parity table, c_two for all size pairs (ground branch and all parity pairings), c_prof, valley weights, ΔS̄₆ against C176 at equal n_mid, C5, C6 and V4. For the controls it adds the exact free-fermion entropies and the DMRG bias.
+(add --partial to include runs still in progress at their last completed sweep). Entropies are recorded only on sweeps with the mixer off, so with --partial a run appears only once it has reached χ = 192 (L = 64), χ = 256 (L = 128) or χ = 384 (L = 256). Before that only the "field tuning" block is printed. The summary prints, per run, the convergence flags C1 to C4 and the χ-stage history, and per key the parity table, c_two for all size pairs (ground branch and all parity pairings), c_prof, valley weights, ΔS̄₆ against C176 at equal n_mid, C5, C6 and V4. For the controls it adds the exact free-fermion entropies and the DMRG bias.
 
 ## Results (status at the end of the agent session, 2026-11-09)
 
@@ -108,6 +108,14 @@ At χ = 128, 192, 256 the even sector gives S̄₁ = 1.5993, 1.6125, 1.6142, wit
 
 - sym40_n316: at L = 128 (χ = 192), μ_eff = −2.195, −2.165, −2.135 give n_mid = 0.1561, 0.2038, 0.2375. The fitted slope is dn_mid/dμ_eff = 1.357, against about 1.25 for the effective model. The target n_mid = 0.1957 needs μ_eff = −2.1676, that is h_z = −19.976047251. At equal μ_eff the full chain is denser than the effective model by about 0.009, a chemical-potential shift of about 0.007|t₂|, of the size expected from the next even order.
 - The other four keys (p153_n316, rat_n316, sym40_n18, sym80_n316) were still tuning when the session ended. Their fields will be in outA/tune/ and outB/tune/.
+
+### R3. Production snapshot, 2026-11-09 21:02 EST [numerical, typhon_out/, logs on scratch]
+
+- Both overlap pipelines started at 20:23. Node A runs the three p153_n316 tuning runs and five p153c runs (L = 128: P0 rand1, P0 prod28, P1 rand1, and L = 256: P0 rand1, P1 rand1). The L = 64 runs start when the tuning slots free up. Node B has finished the sym40_n316 tuning and is running the rat_n316 and sym40_n18 tuning. No production run is done.
+- Every local solve so far meets its residual target, with 70 to 120 matvecs on average (largest single solve 232, cap 300).
+- Measured sweep times with 6 threads per run. Complex bonds (p153), L = 128: 320 to 680 s at χ = 128 and 720 to 1120 s at χ = 192. Complex, L = 256: 570 to 860 s at χ = 128. Real (sym40 in the staggered gauge), L = 128: 225 to 280 s at χ = 192.
+- The donor nodes have 96 cores each and the donor jobs use few of their 48 (sstat gives the node A step about 46 cores of CPU time). So the overlap steps already run at close to dedicated speed, and the queued jobs (start estimate 2026-11-10 05:48) should not be expected to be much faster.
+- Wall-time extrapolation (an estimate, from the measured 95 GFLOP/s matvec at D = 512 in PROGRESS 6 and the times above, uncertain by a factor of about 2): a complex L = 128 run needs about 1 h per sweep at χ = 512 and 4 to 13 h in total, and a complex L = 256 run needs 3 to 6 h per sweep at χ = 768 and 10 to 40 h in total. Real runs are about 4 times cheaper. Checkpoints are written once per sweep, so each hand-over from an overlap step to its queued job (and each time-limit kill) costs every run its sweep in progress.
 
 ### Coordinator note (2026-11-09, after the agent's interim stop)
 

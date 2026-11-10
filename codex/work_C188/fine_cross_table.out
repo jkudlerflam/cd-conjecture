@@ -1,0 +1,20 @@
+beta=0.4 L=12: t from 0.7 to 0.86, lowest branch sequence: SSSSSSSSSSSSSSSSNNNNNNNNNNNNNNNNF
+   S->N at t_x = 0.7768: slopes per site d(E/L)/dt = 0.16082 (S), 0.10641 (N), jump = 0.05441
+   N->F at t_x = 0.8552: slopes per site d(E/L)/dt = 0.08068 (N), -0.00235 (F), jump = 0.08302
+beta=0.4 L=18: t from 0.7 to 0.86, lowest branch sequence: SSSSSSSSSSSSSSSSSFFFFFFFFFNNNNNNN
+   S->F at t_x = 0.7846: slopes per site d(E/L)/dt = 0.14400 (S), 0.12702 (F), jump = 0.01698
+   F->N at t_x = 0.8263: slopes per site d(E/L)/dt = 0.10957 (F), 0.05639 (N), jump = 0.05319
+beta=0.7 L=12: t from 0.6 to 0.76, lowest branch sequence: SSSSSSSSSSSSSNNNNNNNNNNNNFFFFFFFF
+   S->N at t_x = 0.6605: slopes per site d(E/L)/dt = 0.26460 (S), 0.18295 (N), jump = 0.08165
+   N->F at t_x = 0.7234: slopes per site d(E/L)/dt = 0.14701 (N), -0.06278 (F), jump = 0.20979
+beta=0.7 L=18: t from 0.6 to 0.76, lowest branch sequence: SSSSSSSSSSSSFFFFFFNNNNNNNNNNNNFFF
+   S->F at t_x = 0.6593: slopes per site d(E/L)/dt = 0.25774 (S), 0.22434 (F), jump = 0.03340
+   F->N at t_x = 0.6864: slopes per site d(E/L)/dt = 0.20342 (F), 0.08974 (N), jump = 0.11368
+   N->F at t_x = 0.7458: slopes per site d(E/L)/dt = 0.04417 (N), -0.08198 (F), jump = 0.12615
+beta=1.0 L=12: t from 0.5 to 0.66, lowest branch sequence: SSSSSSSSSSSSSSNNNNNNNNNNFFFFFFFFF
+   S->N at t_x = 0.5655: slopes per site d(E/L)/dt = 0.37508 (S), 0.26093 (N), jump = 0.11415
+   N->F at t_x = 0.6165: slopes per site d(E/L)/dt = 0.21249 (N), -0.11541 (F), jump = 0.32790
+beta=1.0 L=18: t from 0.5 to 0.66, lowest branch sequence: SSSSSSSSSSSSSFFFFFNNNNNNNNNFFFFFF
+   S->F at t_x = 0.5628: slopes per site d(E/L)/dt = 0.36712 (S), 0.31907 (F), jump = 0.04805
+   F->N at t_x = 0.5851: slopes per site d(E/L)/dt = 0.28975 (F), 0.12462 (N), jump = 0.16513
+   N->F at t_x = 0.6335: slopes per site d(E/L)/dt = 0.07090 (N), -0.12872 (F), jump = 0.19962

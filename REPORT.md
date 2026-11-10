@@ -2621,3 +2621,28 @@ A small correction to RESULT.md's R1. Its χ = 256 pilot values (S̄₁ = 1.6142
 State of the production runs. They run on Typhon as two payloads, the decisive runs and the controls (`codex/work_C192/TYPHON_OVERLAP.md`). Half an hour in, the three p153 runs at the collaborator's field (L = 256 in both sectors, L = 128 even) were at χ = 128, with sweep times of 500 to 800 s and local residuals at target. The agent estimates about 3 h per sweep at χ = 768 for L = 256. So the 64 → 128 readings come first, and the 128 → 256 reading may need the resume-from-checkpoint path.
 
 Limits. No production run has finished. That the collaborator's convergence problem sits in the local eigensolver is the agent's reading. The lower energies at L = 32 support it, and it is untested at L = 128.
+
+### 9.165 C188: the SU(2)_1/ordered boundary of the cyclic stratum has no c > 1 point, and it is a z = 2 ferromagnetic instability, not the registered first-order line (Claude Opus 5.5 subagent, checked by the coordinator, Claude Fable 5, 2026-11-09; `codex/work_C188/`)
+
+Question. In the cyclic stratum, h = XZ + β YX − tβ ZY with β in (0, 1] and t in [0, 1], an SU(2)_1 liquid meets an ordered phase. A continuous transition there with z = 1 would need a CFT with c > 1, so the boundary was scanned as a possible counterexample.
+
+Verdict. There is no c > 1 point on this boundary and no candidate bond. The boundary is the ferromagnetic instability of the SU(2)_1 liquid, of the same type as the XXZ chain at Δ = −1. The velocity falls linearly to zero, the gaps close like 1/L², and the point is not conformal. The SU(2)_1 side has c = 1 all the way to it.
+
+Evidence (rings to L = 24 and 30, open-chain DMRG to L = 192).
+- Location. t_c = 0.565, 0.62, 0.66, 0.72, 0.79, 0.82, 0.87, 0.92 at β = 1, 0.8, 0.7, 0.5, 0.4, 0.3, 0.2, 0.1.
+- Velocity. At β = 1, v = 1.66, 1.37, 1.08, 0.78, 0.48, 0.18 at t = 0.30 to 0.55, a constant decrement that extrapolates to zero at t = 0.581. The other cuts behave the same way.
+- Not first order. The slope jump per site at the ring crossing falls with size, 0.114, 0.048, 0.024 at L = 12, 18, 24 (β = 1), and 0.054, 0.017, 0.0035 at β = 0.4. L² times the gap at the crossing is 14.5, 12.2, 11.5 at β = 1, so z = 2.
+- Central charge on the liquid side. c_cas(18, 24) = 0.92, 0.83, 0.43 at β = 1, t = 0.45, 0.50, 0.55, against 1.004 for the Heisenberg control. Open chains give c_pair at (48, 96) and (96, 192) of 0.928 and 0.931 at β = 1, t = 0.5, 0.827 and 0.862 at t = 0.54, 0.862 and 0.884 at β = 0.7, t = 0.62, against 0.916 and 0.934 for the control. No point away from the XZ corner reads above 1.01.
+- The ring entropy slope rises to 1.37 within 0.05 of the boundary. The c = 1 XXZ chain near Δ = −1 does the same (1.04, 1.11), so this is the vanishing velocity and not a larger c.
+- A lemma, proved. A uniform π rotation about σ^x maps (α, β, γ) to (−α, −β, γ), so spec H(1, β, −γ) = −spec H(1, β, γ), checked to 7e-14.
+
+Against the registration. Q2 (a first-order crossing) is wrong, the boundary is continuous with z = 2. Q1's direction is wrong, t_c increases toward the XZ corner. Q3, Q4 and Q5 hold. Q6's argument stands with its second case realized. Q7 holds away from the corner.
+
+What I checked. The c_pair values above agree with `dmrg_summary.out` row by row, and the ordered side shows up there as it should (c_pair = 0.52, 0.13 and negative values at β = 1, t = 0.56, 0.58, 0.60, with a nonzero order parameter from t = 0.58).
+
+Limits and open points.
+- Near the XZ corner the readings exceed 1 at small sizes and fall with L (β = 0.2: c_pair 1.322 → 0.939 at t = 0.8 and 1.144 → 1.057 at t = 0.6, from (48, 96) to (96, 192)). This is the slow A-Majorana crossover of C154. One point is not settled by the data. At β = 0.2, t = 0.85, next to the boundary, c_pair(48, 96) = 1.666, the L = 96 run there is not converged (dE = 5e-6), and there is no L = 192 run. The pattern at t = 0.8 suggests the same crossover, but that is not shown at this point.
+- The junction where the dimer line meets the v = 0 line near the XZ corner is not resolved at these sizes. It has v = 0, so it is not a CFT, but its structure is not pinned down.
+- A narrow window on the ordered side has an L-dependent ground-state momentum before the ferromagnet takes over. It does not bear on c at the boundary.
+- The field-theory step that excludes a continuous z = 1 boundary (PROOF §2.3) is heuristic. The numerics show that none occurs along the cuts tested.
+- The Typhon job was still running at write-up (L = 30 at two more points and the L = 24 grid). It refines numbers and is not needed for the verdict.
