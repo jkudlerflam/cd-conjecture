@@ -202,3 +202,27 @@ Code and job. `pipeline_x1024.py` (one run per GPU, output folder `outX1024/` on
 Submitted 2026-11-10 03:20 EST as job 17609630 (c190g_x1024, QOS gpu-h200). The dry listing of `pipeline_x1024.py` on Typhon shows the five runs with the χ = 768 values above. The QOS allows one running job per user on h200, and another of Jonah's jobs holds that slot until 10:16 EST at the latest, so the job is pending with reason QOSMaxJobsPerUserLimit. Estimated run time once started, from the χ = 768 sweep times on the A100 cards scaled by χ³, is at most about 5 h for the five runs.
 
 Collection, once runs are done (status done only, no checkpoints): `scp 'typhon:/scratch/lustre/jkudlerflam/c18x/c190g/outX1024/*.json' typhon_out/outX1024/` and `scp 'typhon:/scratch/lustre/jkudlerflam/c18x/c190g/outX1024/logs/*.log' typhon_out/outX1024/logs/`.
+
+## R9. Controls at χ = 768 collected: both calibrate both size pairs (2026-11-10 03:45 EST)
+
+GPU runs xx2 at L = 64, 128, 256 and xx1 at L = 64, 128, all with status done, in typhon_out/outG/. The XX chain at L = 256 is the CPU run of node B (`../typhon_out/outB/xx1_L256_P0_rand1.json`).
+
+| run | final χ | E | S̄₁, S̄₆, S̄₁₂ | C4 step | discarded weight | last ΔE |
+|---|---|---|---|---|---|---|
+| xx2_L64_P0 | 384 | −2.8537224973 | 1.4960, 1.5699, 1.5273 | 0.0000 | 2.1e-11 | 3.7e-10 |
+| xx2_L128_P0 | 512 | −6.9480312045 | 1.8304, 1.7913, 1.7998 | 0.0003 | 9.9e-10 | 6.1e-9 |
+| xx2_L256_P0 | 768 | −12.2485203313 | 2.0307, 2.0104, 2.0158 | 0.0026 | 2.0e-9 | 3.2e-8 |
+| xx1_L64_P1 | 384 | −3.4740158336 | 0.9103, 0.8997, 0.8889 | 0.0000 | 5.8e-14 | 1e-14 |
+| xx1_L128_P1 | 512 | −6.1242613702 | 1.0132, 1.0082, 1.0050 | 0.0000 | 1.0e-13 | 2e-14 |
+| xx1_L256_P0 (CPU) | 768 | | 1.1186, 1.1206, 1.1207 | 0.0000 | 1.5e-13 | 2e-13 |
+
+| c_two at W = 1, 6, 12 | 64 → 128 | 128 → 256 |
+|---|---|---|
+| XX chain (c = 1) | 0.891, 0.939, 1.005 | 0.912, 0.974, 1.002 |
+| two-leg XX (c = 2) | 2.895, 1.917, 2.359 | 1.734, 1.896, 1.869 |
+| p153c ground branch, for comparison (R5 to R7) | 2.196, 2.165, 2.234 | 1.902, 1.936, 1.971 |
+
+- The registered calibration is at W = 6 (XX within 1 ± 0.15, two-leg within 2 ± 0.25). It holds for both size pairs: 0.939 and 0.974, 1.917 and 1.896.
+- The two-leg control depends strongly on the window at 64 → 128 (2.90 at W = 1, 2.36 at W = 12), which is the oscillation of a free two-band entropy with the cut position. The candidate does not show a spread of that size.
+- The two-leg run at L = 256 agrees with the exact free-fermion values quoted in `../RESULT.md` (2.0311, 2.0108, 2.0162) to 4e-4. Its residual, entropy steps, density step, discarded weight and C4 pass. Its last energy step, 3.2e-8 after the maximum of six sweeps, is above the 1e-8 of C2. The χ = 1024 continuation of R8 adds sweeps to this run.
+- With this, V1 at L = 256 waits on C4 for the candidate runs, and on the energy step of the control.
