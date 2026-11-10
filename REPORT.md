@@ -2948,3 +2948,17 @@ What is left for these points. The N = 23 and 25 partners at L = 128 continued t
 - Reading. This is a failure of the method and carries no information on c. The effective model's infinite-chain result (§9.179) held the density with exact particle-number conservation, which the qubit chain does not have.
 - Against the registration. Not evaluated.
 - Open. Three routes for a second attempt, none tried: a uniform-MPS optimizer or VUMPS in a larger cell started from the bulk of a converged C190 open chain, at a bond dimension where the liquid is well represented, or an approximate particle-number label after a unitary that removes the virtual pairs. All candidate-field tests so far were at D = 32 from random or annealed starts. Without the infinite chain, the end-free check of the boson exponent asked for in §9.182 falls to the L = 512 run, for which a prediction of the open-end form is registered in the same spec before any L = 512 output exists.
+
+### 9.184 L = 512 at the collaborator's field: the runs are started, with the registration, gates and first sweeps recorded (coordinator, Claude Fable 5, 2026-11-10; `codex/work_C195/`)
+
+No result yet. This section records what was fixed before production, so that the L = 512 reading can be judged against it.
+
+- Registration. T1 to T4 of `specs/C195_C196_third_size_and_infinite_chain.md` were copied into `codex/work_C195/RESULT.md` before any code was changed. The pass is c_two(256 → 512) ≥ 1.6 at W = 6 and 12 on the ground branch with T1 holding, the fail is c_two ≤ 1.3. The open-end clauses O0 to O3 of the same spec apply to the final states.
+- Code. The C190 GPU solver, with only the two environments and two tensors of the current bond on the device and everything else on the host. Only `dmrg()` changed, and no tolerance moved.
+- [numerical] Gates. On a GPU at L = 128 the modified code reproduces the unmodified one bit for bit in all 9 sweeps and in the final measurements (S̄₆ = 1.85434606 in both). The local numpy check at L = 20 agrees to 4e-14 in E and 4e-12 in S. A run stopped and resumed differs by 6.9e-11 in S after the resume.
+- [numerical] Benchmark at L = 512 (100 matvecs per bond): 1.42, 2.33 and 5.83 s per bond at χ = 768, 1024 and 1536, with 33, 58 and 128 GB of host memory. χ = 2048 would need about 230 GB, above the 160 GB allowed.
+- Schedule, fixed before production. Both parity sectors of p153c from the registered random start. Stages to χ = 512 as at L = 256, then χ = 768 and 1024 each run to a stop rule (3 to 6 sweeps, |ΔE| < 4e-9 and |ΔS̄₆| < 5e-4 between sweeps), then a final χ = 1536 (3 to 8 sweeps, same rule). Running the stages to a stop rule separates sweep convergence from the χ dependence, which the two-sweep stages at L = 256 mixed (§9.178).
+- [numerical] First five sweeps, checked by the coordinator from the collected logs. Every local solve met its residual target. The bulk energy per site (E(512) − E(256))/256 agrees with (E(256) − E(128))/128 of the L = 256 run at the same stage to 1e-7 to 1.1e-6, and n_mid agrees with L = 256 to 0.0012 (T4 asks for 0.006 at the end).
+- Estimate. 14 to 33 h per run, the two sectors in parallel on two GPUs, with a chained job that resumes from the checkpoint. The final-state checkpoints stay on the cluster in the C190 format, and their paths for the §9.182 measurement are in `codex/work_C195/RESULT.md`.
+
+Open. The runs, then T1 to T4 and O0 to O3. S̄(256) for T2 comes from χ = 768 until the χ = 1024 stage at L = 256 has run.

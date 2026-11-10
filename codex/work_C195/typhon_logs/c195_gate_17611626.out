@@ -1,0 +1,8 @@
+GPU 0 on apollo02.sns.ias.edu Tue Nov 10 07:51:34 EST 2026
+0, NVIDIA A100-PCIE-40GB, 0 MiB, 40960 MiB
+smoke rc=0 Tue Nov 10 07:51:38 EST 2026
+gate runs done Tue Nov 10 08:19:54 EST 2026
+  final exact entropies max diff 5.35e-11, density max diff 1.22e-11, Sbar6 1.85434606 1.85434606
+  GATE PASS
+ALL PASS
+bench rc=0 Tue Nov 10 08:21:43 EST 2026

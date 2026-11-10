@@ -1,0 +1,27 @@
+== gate/ref/p153c_L128_P0_rand1.json against gate/off/p153c_L128_P0_rand1.json: 9 and 9 sweeps, status done, done
+  chi   32 alpha 0.001: E -1290.0992182382 dE 0.0e+00 dS nan dZ 0.0e+00 res 1.0e-07/1.0e-07 mv 42.02/42.02 t 14/14s dev_used nan GB
+  chi   32 alpha 0.001: E -1290.1120436996 dE 0.0e+00 dS nan dZ 0.0e+00 res 1.0e-07/1.0e-07 mv 70.14/70.14 t 27/28s dev_used nan GB
+  chi   64 alpha 0.0001: E -1290.1132148959 dE 0.0e+00 dS nan dZ 0.0e+00 res 1.0e-08/1.0e-08 mv 70.25/70.25 t 52/55s dev_used nan GB
+  chi   64 alpha 0.0001: E -1290.1131914126 dE 0.0e+00 dS nan dZ 0.0e+00 res 1.0e-08/1.0e-08 mv 72.11/72.11 t 63/90s dev_used nan GB
+  chi  128 alpha 0.0001: E -1290.1133666805 dE 0.0e+00 dS nan dZ 0.0e+00 res 1.0e-08/1.0e-08 mv 82.76/82.76 t 147/206s dev_used 3.58 GB
+  chi  192 alpha 1e-05: E -1290.1134056996 dE 0.0e+00 dS nan dZ 0.0e+00 res 1.0e-08/1.0e-08 mv 93.62/93.62 t 185/205s dev_used 6.31 GB
+  chi  256 alpha 0: E -1290.1134126728 dE 0.0e+00 dS 0.0e+00 dZ 0.0e+00 res 1.0e-08/1.0e-08 mv 84.81/84.81 t 195/226s dev_used 11.98 GB
+  chi  384 alpha 0: E -1290.1134152710 dE 0.0e+00 dS 0.0e+00 dZ 0.0e+00 res 1.0e-09/1.0e-09 mv 91.23/91.23 t 258/293s dev_used 19.17 GB
+  chi  384 alpha 0: E -1290.1134150841 dE 0.0e+00 dS 0.0e+00 dZ 0.0e+00 res 1.0e-09/1.0e-09 mv 78.15/78.15 t 265/233s dev_used 15.22 GB
+  worst dE 0.00e+00, worst dS (any cut, mixer-off sweeps) 0.00e+00, worst dZ 0.00e+00
+  final exact entropies max diff 0.00e+00, density max diff 0.00e+00, Sbar6 1.85434606 1.85434606
+  GATE PASS
+== gate/ref/p153c_L128_P0_rand1.json against gate/res/p153c_L128_P0_rand1.json: 9 and 9 sweeps, status done, done
+  chi   32 alpha 0.001: E -1290.0992182382 dE 0.0e+00 dS nan dZ 0.0e+00 res 1.0e-07/1.0e-07 mv 42.02/42.02 t 14/9s dev_used nan GB
+  chi   32 alpha 0.001: E -1290.1120436996 dE 0.0e+00 dS nan dZ 0.0e+00 res 1.0e-07/1.0e-07 mv 70.14/70.14 t 27/38s dev_used nan GB
+  chi   64 alpha 0.0001: E -1290.1132148959 dE 0.0e+00 dS nan dZ 0.0e+00 res 1.0e-08/1.0e-08 mv 70.25/70.25 t 52/99s dev_used nan GB
+  chi   64 alpha 0.0001: E -1290.1131914126 dE 0.0e+00 dS nan dZ 0.0e+00 res 1.0e-08/1.0e-08 mv 72.11/72.11 t 63/93s dev_used nan GB
+  chi  128 alpha 0.0001: E -1290.1133666805 dE 0.0e+00 dS nan dZ 0.0e+00 res 1.0e-08/1.0e-08 mv 82.76/82.76 t 147/193s dev_used 4.28 GB
+  chi  192 alpha 1e-05: E -1290.1134056996 dE 0.0e+00 dS nan dZ 0.0e+00 res 1.0e-08/1.0e-08 mv 93.62/93.62 t 185/209s dev_used 6.73 GB
+  chi  256 alpha 0: E -1290.1134126728 dE 0.0e+00 dS 0.0e+00 dZ 0.0e+00 res 1.0e-08/1.0e-08 mv 84.81/84.81 t 195/233s dev_used 14.32 GB
+  chi  384 alpha 0: E -1290.1134152710 dE 0.0e+00 dS 0.0e+00 dZ 0.0e+00 res 1.0e-09/1.0e-09 mv 91.23/91.23 t 258/300s dev_used 19.17 GB
+  chi  384 alpha 0: E -1290.1134150841 dE 0.0e+00 dS 6.9e-11 dZ 2.5e-11 res 1.0e-09/1.0e-09 mv 78.15/78.15 t 265/211s dev_used 2.90 GB
+  worst dE 0.00e+00, worst dS (any cut, mixer-off sweeps) 6.86e-11, worst dZ 2.54e-11
+  final exact entropies max diff 5.35e-11, density max diff 1.22e-11, Sbar6 1.85434606 1.85434606
+  GATE PASS
+ALL PASS

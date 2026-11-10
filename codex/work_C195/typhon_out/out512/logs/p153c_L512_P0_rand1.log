@@ -1,0 +1,15 @@
+~/.local/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2766: RuntimeWarning: overflow encountered in dot
+  sqnorm = x_real.dot(x_real) + x_imag.dot(x_imag)
+# c195 {"backend": "cupy", "gpu_min_chi": 128, "svd_host": false, "offload": true, "host": "apollo02.sns.ias.edu", "cuda_visible": "0", "job": "17611738", "gpu": "NVIDIA A100-PCIE-40GB"}
+/scratch/lustre/jkudlerflam/c19x/c195/z2dmrg_xp.py:162: RuntimeWarning: invalid value encountered in divide
+  psi.M[0] /= xm.linalg.norm(psi.M[0])
+{"sweep": 0, "chi": 32, "alpha": 0.001, "E": -22.829723029467, "trunc": 3.4e-10, "res_max": 9.9968e-08, "res_tol": 1e-07, "mv_mean": 42.340508806262, "mv_max": 128, "Dmax": 32, "t": 46.905723333359, "t_tot": 46.905738830566, "n_mid": 0.065289367344, "N_tot": 38.567619860095, "stage": 0, "E_phys": -5130.486043029467, "host_rss_GB": 0.173396}
+# ckpt 0.1s
+{"sweep": 1, "chi": 32, "alpha": 0.001, "E": -22.882207598863, "trunc": 6.3992e-07, "res_max": 9.9983e-08, "res_tol": 1e-07, "mv_mean": 71.446183953033, "mv_max": 99, "Dmax": 32, "t": 103.585637331009, "t_tot": 150.599842786789, "n_mid": 0.181091687842, "N_tot": 96.279512614686, "stage": 0, "E_phys": -5130.538527598864, "host_rss_GB": 0.178244}
+# ckpt 0.1s
+{"sweep": 2, "chi": 64, "alpha": 0.0001, "E": -22.886899479745, "trunc": 3.595e-08, "res_max": 9.999e-09, "res_tol": 1e-08, "mv_mean": 73.867906066536, "mv_max": 88, "Dmax": 64, "t": 240.513563632965, "t_tot": 391.212452411652, "n_mid": 0.214001914448, "N_tot": 111.495647527422, "stage": 1, "E_phys": -5130.543219479745, "host_rss_GB": 0.377992}
+# ckpt 0.2s
+{"sweep": 3, "chi": 64, "alpha": 0.0001, "E": -22.886809630447, "trunc": 1.41298e-07, "res_max": 9.999e-09, "res_tol": 1e-08, "mv_mean": 76.324853228963, "mv_max": 90, "Dmax": 64, "t": 316.818395614624, "t_tot": 708.22723531723, "n_mid": 0.214291287552, "N_tot": 111.675211620361, "stage": 1, "E_phys": -5130.543129630447, "host_rss_GB": 0.374984}
+# ckpt 0.2s
+{"sweep": 4, "chi": 128, "alpha": 0.0001, "E": -22.887770199432, "trunc": 7.401e-09, "res_max": 9.995e-09, "res_tol": 1e-08, "mv_mean": 87.075342465753, "mv_max": 106, "Dmax": 128, "t": 639.905930519104, "t_tot": 1348.332162618637, "dev_pool_GB": 0.488567296, "dev_used_GB": 1.047396352, "n_mid": 0.21517600748, "N_tot": 112.128735191431, "stage": 2, "E_phys": -5130.544090199432, "host_rss_GB": 1.615732}
+# ckpt 0.5s

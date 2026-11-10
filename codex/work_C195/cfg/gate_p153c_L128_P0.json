@@ -1,0 +1,15 @@
+{
+ "tag": "p153c_L128_P0_rand1",
+ "model": "p153",
+ "gauge": null,
+ "hz": -19.97589125,
+ "L": 128,
+ "P": 0,
+ "init": "rand:1",
+ "sched": [[32, 0.001, 1e-07, 2], [64, 0.0001, 1e-08, 2], [128, 0.0001, 1e-08, 1], [192, 1e-05, 1e-08, 1], [256, 0.0, 1e-08, 1]],
+ "final": {"chi": 384, "res_tol": 1e-09, "min_sweeps": 2, "max_sweeps": 2, "tolE": 1e-09, "tolS": 0.0003},
+ "gwin": 48,
+ "variance": true,
+ "maxit": 300,
+ "note": "C195 gate: short chi schedule of pipeline190.SCHED[128] (same seed, field, residual targets, mixer)"
+}

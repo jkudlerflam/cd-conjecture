@@ -1,0 +1,17 @@
+  run sweep 0 chi 8 alpha 0.001: E -10.468613538840 dE 0.0e+00 dS 0.0e+00 dZ 0.0e+00 mv 98.32/98.32
+  run sweep 1 chi 8 alpha 0.001: E -10.470541425931 dE 0.0e+00 dS 0.0e+00 dZ 0.0e+00 mv 99.37/99.37
+  run sweep 2 chi 16 alpha 0.0001: E -10.474560371495 dE 0.0e+00 dS 0.0e+00 dZ 0.0e+00 mv 52.13/52.13
+  run sweep 3 chi 16 alpha 0.0001: E -10.474532825779 dE 0.0e+00 dS 0.0e+00 dZ 0.0e+00 mv 50.32/50.32
+  run sweep 4 chi 24 alpha 1e-05: E -10.474722116949 dE 0.0e+00 dS 0.0e+00 dZ 0.0e+00 mv 37.97/37.97
+  run sweep 5 chi 32 alpha 0.0: E -10.474728142258 dE 0.0e+00 dS 0.0e+00 dZ 0.0e+00 mv 31.58/31.58
+  run sweep 6 chi 32 alpha 0.0: E -10.474728140637 dE 2.1e-14 dS 3.0e-12 dZ 3.7e-12 mv 28.89/28.89
+test 1 (in memory then offloaded): {'E': 2.1316282072803006e-14, 'S': 2.9838354009825707e-12, 'Z': 3.737621323551821e-12} final tensors max diff 5.588751273958936e-09 n0 equal True
+  resume sweep 0 chi 32 alpha 0.0: E -10.474728143480 dE 2.5e-14 dS 2.2e-12 dZ 4.6e-12 mv 28.95/28.95
+  resume sweep 1 chi 40 alpha 0.0: E -10.474728388822 dE 1.8e-15 dS 1.9e-12 dZ 3.2e-12 mv 28.05/28.05
+test 2 (resume, offloaded from the start): {'E': 2.4868995751603507e-14, 'S': 2.2355450823852152e-12, 'Z': 4.605649195354999e-12} final tensors max diff 1.9838534294809698
+  odd sweep 0 chi 8 alpha 0.001: E -10.472221761786 dE 0.0e+00 dS 0.0e+00 dZ 0.0e+00 mv 55.84/55.84
+  odd sweep 1 chi 16 alpha 0.0001: E -10.474461467704 dE 0.0e+00 dS 0.0e+00 dZ 0.0e+00 mv 48.71/48.71
+  odd sweep 2 chi 32 alpha 0.0: E -10.474481871641 dE 3.7e-14 dS 4.1e-12 dZ 5.6e-12 mv 37.53/37.53
+  odd sweep 3 chi 32 alpha 0.0: E -10.474481878156 dE 1.1e-14 dS 2.2e-12 dZ 2.4e-12 mv 29.29/29.29
+test 3 (odd sector, product start): {'E': 3.730349362740526e-14, 'S': 4.1451286847404845e-12, 'Z': 5.595524044110789e-12}
+PASS

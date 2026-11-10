@@ -1,0 +1,6 @@
+resuming p153c_L128_P0_rand1 after 8 sweeps
+# c195 {"backend": "cupy", "gpu_min_chi": 128, "svd_host": false, "offload": true, "host": "apollo02.sns.ias.edu", "cuda_visible": "0", "job": "17611626", "gpu": "NVIDIA A100-PCIE-40GB"}
+{"sweep": 0, "chi": 384, "alpha": 0.0, "E": -13.199335084085, "trunc": 7.82e-10, "res_max": 1e-09, "res_tol": 1e-09, "mv_mean": 78.145669291339, "mv_max": 130, "Dmax": 384, "t": 210.847870588303, "t_tot": 210.847891807556, "dev_pool_GB": 1.87759104, "dev_used_GB": 2.90291712, "n_mid": 0.22110258043, "N_tot": 30.04604871955, "Sbar1": 1.863559587871, "Sbar6": 1.85452815826, "Sbar12": 1.847012824025, "stage": 5, "E_phys": -1290.113415084085, "final": true, "host_rss_GB": 2.368312}
+# ckpt 0.9s
+# entropies 7s rss 2.341032
+done p153c_L128_P0_rand1 E_phys=-1290.1134150840853 Sbar6=1.854346 var=6.077053311059899e-05 t=405s t_meas=300s
