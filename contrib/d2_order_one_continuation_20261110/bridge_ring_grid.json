@@ -1,0 +1,11 @@
+{
+  "sizes": [14, 16, 20],
+  "sectors": [0, 1],
+  "periodic": true,
+  "k": 4,
+  "tol": 1e-11,
+  "points": [{
+    "name": "b_r5_2_d1_10_q0_hm7_8",
+    "couplings": {"Jx": 0.5, "Jy": -0.5, "Jz": 0.625, "Dz": 0.1, "hz": -0.875}
+  }]
+}

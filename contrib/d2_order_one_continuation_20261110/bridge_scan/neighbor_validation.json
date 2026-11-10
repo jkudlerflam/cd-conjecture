@@ -1,0 +1,90 @@
+{
+  "points": [
+    {
+      "name": "b_r5_2_d1_10_q0_hm57_64",
+      "family": "r5_2_d1_10",
+      "r": "5/2",
+      "D": "1/10",
+      "q": "0",
+      "hz": "-57/64",
+      "couplings": {
+        "Jx": 0.5,
+        "Jy": -0.5,
+        "Jz": 0.625,
+        "Dz": 0.1,
+        "hz": -0.890625
+      },
+      "metrics": {
+        "pauli_string_count": 6,
+        "grouped_term_count": 4,
+        "grouped_term_convention": "XX+YY, XX-YY, ZZ, XY-YX, Z",
+        "real_hopping_Jx_plus_Jy": 0.0,
+        "pairing_Jx_minus_Jy": 1.0,
+        "bare_mu_4Jz_plus_2hz": 0.71875,
+        "raw_coefficient_spread": 8.90625,
+        "exchange_coefficient_spread": 6.25,
+        "exchange_singular_values": [
+          0.625,
+          0.6000000000000001,
+          0.4
+        ],
+        "nonzero_singular_spread": 1.5625,
+        "exchange_symmetric_frobenius": 0.9437293044088437,
+        "exchange_antisymmetric_frobenius": 0.14142135623730953,
+        "antisymmetric_to_symmetric": 0.14985372985307105,
+        "field_norm": 0.890625,
+        "field_to_exchange_frobenius": 0.9333082335171259,
+        "coefficient_convention": "Pauli strings; full on-site hz counted once; absent terms excluded"
+      },
+      "q_cancellation_fraction": 0.0
+    },
+    {
+      "name": "b_r5_2_d1_10_q0_hm55_64",
+      "family": "r5_2_d1_10",
+      "r": "5/2",
+      "D": "1/10",
+      "q": "0",
+      "hz": "-55/64",
+      "couplings": {
+        "Jx": 0.5,
+        "Jy": -0.5,
+        "Jz": 0.625,
+        "Dz": 0.1,
+        "hz": -0.859375
+      },
+      "metrics": {
+        "pauli_string_count": 6,
+        "grouped_term_count": 4,
+        "grouped_term_convention": "XX+YY, XX-YY, ZZ, XY-YX, Z",
+        "real_hopping_Jx_plus_Jy": 0.0,
+        "pairing_Jx_minus_Jy": 1.0,
+        "bare_mu_4Jz_plus_2hz": 0.78125,
+        "raw_coefficient_spread": 8.59375,
+        "exchange_coefficient_spread": 6.25,
+        "exchange_singular_values": [
+          0.625,
+          0.6000000000000001,
+          0.4
+        ],
+        "nonzero_singular_spread": 1.5625,
+        "exchange_symmetric_frobenius": 0.9437293044088437,
+        "exchange_antisymmetric_frobenius": 0.14142135623730953,
+        "antisymmetric_to_symmetric": 0.14985372985307105,
+        "field_norm": 0.859375,
+        "field_to_exchange_frobenius": 0.9005605762007355,
+        "coefficient_convention": "Pauli strings; full on-site hz counted once; absent terms excluded"
+      },
+      "q_cancellation_fraction": 0.0
+    }
+  ],
+  "registration": "NEIGHBOR_VALIDATION.md",
+  "sizes": [
+    24,
+    48
+  ],
+  "chis": {
+    "24": 64,
+    "48": 128
+  },
+  "start_condition": "After L192 assessment, if directed by parent"
+}

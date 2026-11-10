@@ -1,0 +1,32 @@
+{
+  "name": "simple_attr_7_m1_5_m7",
+  "couplings": {
+    "Jx": 0.5833333333333334,
+    "Jy": -0.08333333333333333,
+    "Dz": 0.4166666666666667,
+    "Jz": -0.5833333333333334,
+    "hz": 0.0
+  },
+  "metrics": {
+    "pauli_string_count": 5,
+    "grouped_term_count": 4,
+    "grouped_term_convention": "XX+YY, XX-YY, ZZ, XY-YX, Z",
+    "real_hopping_Jx_plus_Jy": 0.5,
+    "pairing_Jx_minus_Jy": 0.6666666666666667,
+    "bare_mu_4Jz_plus_2hz": -2.3333333333333335,
+    "raw_coefficient_spread": 7.000000000000001,
+    "exchange_coefficient_spread": 7.000000000000001,
+    "exchange_singular_values": [
+      0.8192459912371084,
+      0.5833333333333335,
+      0.1525793245704418
+    ],
+    "nonzero_singular_spread": 5.369311953264575,
+    "exchange_symmetric_frobenius": 0.8291561975888501,
+    "exchange_antisymmetric_frobenius": 0.5892556509887896,
+    "antisymmetric_to_symmetric": 0.7106690545187014,
+    "field_norm": 0.0,
+    "field_to_exchange_frobenius": 0.0,
+    "coefficient_convention": "Pauli strings; full on-site hz counted once; absent terms excluded"
+  }
+}

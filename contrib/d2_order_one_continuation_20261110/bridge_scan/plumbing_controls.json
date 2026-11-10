@@ -1,0 +1,29 @@
+[
+  {
+    "new": "contrib/d2_order_one_continuation_20261110/bridge_scan/dmrg/control_xx_L24_P0_s17.json",
+    "prior": "contrib/d2_order_one_20261110/dmrg/control_xx_L24_P0_s17.json",
+    "delta_E": 0.0,
+    "delta_S": 0.0,
+    "delta_n": 0.0,
+    "prior_chi": 64,
+    "new_chi": 64
+  },
+  {
+    "new": "contrib/d2_order_one_continuation_20261110/bridge_scan/dmrg/control_prior_seed_L24_P0_s17.json",
+    "prior": "contrib/d2_order_one_20261110/dmrg/bridge_r2_u1.5_k4_L24_P0_s17.json",
+    "delta_E": 0.0,
+    "delta_S": 0.0,
+    "delta_n": 0.0,
+    "prior_chi": 64,
+    "new_chi": 64
+  },
+  {
+    "new": "contrib/d2_order_one_continuation_20261110/bridge_scan/dmrg/control_prior_seed_L24_P1_s17.json",
+    "prior": "contrib/d2_order_one_20261110/dmrg/bridge_r2_u1.5_k4_L24_P1_s17.json",
+    "delta_E": 0.0,
+    "delta_S": 0.0,
+    "delta_n": 0.0,
+    "prior_chi": 64,
+    "new_chi": 64
+  }
+]

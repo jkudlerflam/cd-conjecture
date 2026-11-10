@@ -1,0 +1,436 @@
+[
+  {
+    "name": "b_r5_2_d1_10_q0_hm7_8",
+    "sizes": [
+      24,
+      48
+    ],
+    "parities": [
+      0,
+      0
+    ],
+    "chis": [
+      64,
+      192
+    ],
+    "selected_sweeps_converged": true,
+    "both_parities_converged": true,
+    "c_eff": {
+      "1": {
+        "S_central3": 1.682608799111703,
+        "S_fractional": 1.7037627882101936
+      },
+      "2": {
+        "S_central3": 1.43099657637051,
+        "S_fractional": 1.4320561549173285
+      },
+      "3": {
+        "S_central3": 1.304300701246287,
+        "S_fractional": 1.301432601213201
+      }
+    }
+  },
+  {
+    "name": "b_r5_2_d1_10_q0_hm7_8",
+    "sizes": [
+      48,
+      64
+    ],
+    "parities": [
+      0,
+      0
+    ],
+    "chis": [
+      192,
+      192
+    ],
+    "selected_sweeps_converged": true,
+    "both_parities_converged": true,
+    "c_eff": {
+      "1": {
+        "S_central3": 1.4210115010912596,
+        "S_fractional": 1.44741077904294
+      },
+      "2": {
+        "S_central3": 1.3099283525604883,
+        "S_fractional": 1.3276805350499337
+      },
+      "3": {
+        "S_central3": 1.2046291490260819,
+        "S_fractional": 1.2189990137549918
+      }
+    }
+  },
+  {
+    "name": "b_r5_2_d1_10_q0_hm7_8",
+    "sizes": [
+      48,
+      96
+    ],
+    "parities": [
+      0,
+      0
+    ],
+    "chis": [
+      192,
+      256
+    ],
+    "selected_sweeps_converged": true,
+    "both_parities_converged": true,
+    "c_eff": {
+      "1": {
+        "S_central3": 1.4184924097901006,
+        "S_fractional": 1.4362828283974405
+      },
+      "2": {
+        "S_central3": 1.3457504491866357,
+        "S_fractional": 1.3563339899213025
+      },
+      "3": {
+        "S_central3": 1.2443263785451104,
+        "S_fractional": 1.2517449356604884
+      }
+    }
+  },
+  {
+    "name": "b_r5_2_d1_10_q0_hm7_8",
+    "sizes": [
+      64,
+      96
+    ],
+    "parities": [
+      0,
+      0
+    ],
+    "chis": [
+      192,
+      256
+    ],
+    "selected_sweeps_converged": true,
+    "both_parities_converged": true,
+    "c_eff": {
+      "1": {
+        "S_central3": 1.4167050860679835,
+        "S_fractional": 1.4283874217648571
+      },
+      "2": {
+        "S_central3": 1.3711666312227702,
+        "S_fractional": 1.3766639396887679
+      },
+      "3": {
+        "S_central3": 1.2724920111242315,
+        "S_fractional": 1.2749785369981514
+      }
+    }
+  },
+  {
+    "name": "b_r5_2_d1_10_q0_hm7_8",
+    "sizes": [
+      96,
+      192
+    ],
+    "parities": [
+      0,
+      0
+    ],
+    "chis": [
+      256,
+      256
+    ],
+    "selected_sweeps_converged": true,
+    "both_parities_converged": true,
+    "c_eff": {
+      "1": {
+        "S_central3": 1.447459041948031,
+        "S_fractional": 1.45302612687306
+      },
+      "2": {
+        "S_central3": 1.4781734529079305,
+        "S_fractional": 1.4808718476945126
+      },
+      "3": {
+        "S_central3": 1.3700368481758562,
+        "S_fractional": 1.3701657807225922
+      }
+    }
+  },
+  {
+    "name": "bridge_r4_u1_k4",
+    "sizes": [
+      24,
+      48
+    ],
+    "parities": [
+      0,
+      1
+    ],
+    "chis": [
+      64,
+      192
+    ],
+    "selected_sweeps_converged": true,
+    "both_parities_converged": true,
+    "c_eff": {
+      "1": {
+        "S_central3": 2.78010540711807,
+        "S_fractional": 3.0242134912391485
+      },
+      "2": {
+        "S_central3": 3.101578032639606,
+        "S_fractional": 3.240928730504764
+      },
+      "3": {
+        "S_central3": 3.235840435727515,
+        "S_fractional": 3.282933390626884
+      }
+    }
+  },
+  {
+    "name": "bridge_r4_u1_k4",
+    "sizes": [
+      48,
+      96
+    ],
+    "parities": [
+      1,
+      0
+    ],
+    "chis": [
+      192,
+      256
+    ],
+    "selected_sweeps_converged": true,
+    "both_parities_converged": true,
+    "c_eff": {
+      "1": {
+        "S_central3": 2.75185190976541,
+        "S_fractional": 2.7261500899382285
+      },
+      "2": {
+        "S_central3": 3.2385660952353654,
+        "S_fractional": 3.2053940157081415
+      },
+      "3": {
+        "S_central3": 3.388054109041534,
+        "S_fractional": 3.385077957696815
+      }
+    }
+  },
+  {
+    "name": "control_two_xx",
+    "sizes": [
+      24,
+      48
+    ],
+    "parities": [
+      0,
+      0
+    ],
+    "chis": [
+      192,
+      192
+    ],
+    "selected_sweeps_converged": true,
+    "both_parities_converged": false,
+    "c_eff": {
+      "1": {
+        "S_central3": 2.0567666500282553,
+        "S_fractional": 1.7108593847142768
+      },
+      "2": {
+        "S_central3": 2.1393690202872917,
+        "S_fractional": 1.1839172616867382
+      },
+      "3": {
+        "S_central3": 2.0328655215523264,
+        "S_fractional": 0.8320791011355547
+      }
+    }
+  },
+  {
+    "name": "control_xx",
+    "sizes": [
+      24,
+      48
+    ],
+    "parities": [
+      0,
+      0
+    ],
+    "chis": [
+      64,
+      96
+    ],
+    "selected_sweeps_converged": true,
+    "both_parities_converged": false,
+    "c_eff": {
+      "1": {
+        "S_central3": 0.9306792494714923,
+        "S_fractional": 0.9690512271234223
+      },
+      "2": {
+        "S_central3": 0.8258783200858282,
+        "S_fractional": 0.9460576660232783
+      },
+      "3": {
+        "S_central3": 0.7723133363619054,
+        "S_fractional": 0.9047146559662634
+      }
+    }
+  },
+  {
+    "name": "pref_rat",
+    "sizes": [
+      48,
+      96
+    ],
+    "parities": [
+      0,
+      0
+    ],
+    "chis": [
+      128,
+      128
+    ],
+    "selected_sweeps_converged": true,
+    "both_parities_converged": true,
+    "c_eff": {
+      "1": {
+        "S_central3": 1.370769149964779,
+        "S_fractional": 1.4275937969872114
+      },
+      "2": {
+        "S_central3": 1.5516357861300425,
+        "S_fractional": 1.761485936760247
+      },
+      "3": {
+        "S_central3": 1.5843912708343473,
+        "S_fractional": 1.8584992207718425
+      }
+    }
+  },
+  {
+    "name": "pref_ref",
+    "sizes": [
+      48,
+      96
+    ],
+    "parities": [
+      0,
+      0
+    ],
+    "chis": [
+      128,
+      128
+    ],
+    "selected_sweeps_converged": true,
+    "both_parities_converged": true,
+    "c_eff": {
+      "1": {
+        "S_central3": 1.3648301504377809,
+        "S_fractional": 1.421492894065589
+      },
+      "2": {
+        "S_central3": 1.5012896881306081,
+        "S_fractional": 1.70101704438176
+      },
+      "3": {
+        "S_central3": 1.507937423131232,
+        "S_fractional": 1.7603784827303959
+      }
+    }
+  },
+  {
+    "name": "pref_ref",
+    "sizes": [
+      96,
+      192
+    ],
+    "parities": [
+      0,
+      0
+    ],
+    "chis": [
+      128,
+      192
+    ],
+    "selected_sweeps_converged": true,
+    "both_parities_converged": true,
+    "c_eff": {
+      "1": {
+        "S_central3": 1.0919194471689493,
+        "S_fractional": 1.1424517285640585
+      },
+      "2": {
+        "S_central3": 1.4516701609112836,
+        "S_fractional": 1.6523851551335085
+      },
+      "3": {
+        "S_central3": 1.6425529452296537,
+        "S_fractional": 1.9660198273586966
+      }
+    }
+  },
+  {
+    "name": "pref_zrat",
+    "sizes": [
+      48,
+      96
+    ],
+    "parities": [
+      0,
+      0
+    ],
+    "chis": [
+      128,
+      128
+    ],
+    "selected_sweeps_converged": true,
+    "both_parities_converged": true,
+    "c_eff": {
+      "1": {
+        "S_central3": 1.2060840587718118,
+        "S_fractional": 1.2658617859996557
+      },
+      "2": {
+        "S_central3": 1.4676150798212,
+        "S_fractional": 1.7016122597152192
+      },
+      "3": {
+        "S_central3": 1.5964028095397775,
+        "S_fractional": 1.9347766439592495
+      }
+    }
+  },
+  {
+    "name": "simple_attr_7_m1_5_m7",
+    "sizes": [
+      48,
+      96
+    ],
+    "parities": [
+      0,
+      0
+    ],
+    "chis": [
+      128,
+      128
+    ],
+    "selected_sweeps_converged": true,
+    "both_parities_converged": true,
+    "c_eff": {
+      "1": {
+        "S_central3": 0.9496333659469561,
+        "S_fractional": 0.9821284193093783
+      },
+      "2": {
+        "S_central3": 0.8526878797956734,
+        "S_fractional": 0.9537781344166764
+      },
+      "3": {
+        "S_central3": 0.7951629183543776,
+        "S_fractional": 0.9083840292068815
+      }
+    }
+  }
+]

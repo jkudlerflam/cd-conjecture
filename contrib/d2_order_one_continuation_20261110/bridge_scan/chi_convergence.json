@@ -1,0 +1,58 @@
+[
+  {
+    "name": "b_r5_2_d1_10_q0_hm7_8",
+    "L": 48,
+    "parity": 0,
+    "seed": 17,
+    "chis": [
+      128,
+      192
+    ],
+    "delta_E": -2.9908875376349897e-09,
+    "delta_S_fractional": 7.871628033839784e-07,
+    "delta_S_central3": 8.556036605877892e-07,
+    "both_sweep_gates": true
+  },
+  {
+    "name": "b_r5_2_d1_10_q0_hm7_8",
+    "L": 48,
+    "parity": 1,
+    "seed": 17,
+    "chis": [
+      128,
+      192
+    ],
+    "delta_E": -3.0798261718700815e-09,
+    "delta_S_fractional": 8.009214829129974e-07,
+    "delta_S_central3": 8.66755350603654e-07,
+    "both_sweep_gates": true
+  },
+  {
+    "name": "b_r5_2_d1_10_q0_hm7_8",
+    "L": 96,
+    "parity": 0,
+    "seed": 17,
+    "chis": [
+      192,
+      256
+    ],
+    "delta_E": -1.521161152595596e-08,
+    "delta_S_fractional": 8.1071374964381e-06,
+    "delta_S_central3": 8.698551913211006e-06,
+    "both_sweep_gates": true
+  },
+  {
+    "name": "b_r5_2_d1_10_q0_hm7_8",
+    "L": 192,
+    "parity": 0,
+    "seed": 17,
+    "chis": [
+      192,
+      256
+    ],
+    "delta_E": -3.5777117091129185e-07,
+    "delta_S_fractional": 0.00024702425048128696,
+    "delta_S_central3": 0.00026064462311126135,
+    "both_sweep_gates": true
+  }
+]

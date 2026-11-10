@@ -1,0 +1,389 @@
+{
+  "points": [
+    {
+      "name": "b_r3_d1_8_q0_hm39_32",
+      "family": "r3_d1_8",
+      "r": "3",
+      "D": "1/8",
+      "q": "0",
+      "hz": "-39/32",
+      "couplings": {
+        "Jx": 0.5,
+        "Jy": -0.5,
+        "Jz": 0.75,
+        "Dz": 0.125,
+        "hz": -1.21875
+      },
+      "metrics": {
+        "pauli_string_count": 6,
+        "grouped_term_count": 4,
+        "grouped_term_convention": "XX+YY, XX-YY, ZZ, XY-YX, Z",
+        "real_hopping_Jx_plus_Jy": 0.0,
+        "pairing_Jx_minus_Jy": 1.0,
+        "bare_mu_4Jz_plus_2hz": 0.5625,
+        "raw_coefficient_spread": 9.75,
+        "exchange_coefficient_spread": 6.0,
+        "exchange_singular_values": [
+          0.75,
+          0.625,
+          0.37499999999999994
+        ],
+        "nonzero_singular_spread": 2.0000000000000004,
+        "exchange_symmetric_frobenius": 1.0307764064044151,
+        "exchange_antisymmetric_frobenius": 0.1767766952966369,
+        "antisymmetric_to_symmetric": 0.17149858514250885,
+        "field_norm": 1.21875,
+        "field_to_exchange_frobenius": 1.1653478941010338,
+        "coefficient_convention": "Pauli strings; full on-site hz counted once; absent terms excluded"
+      },
+      "q_cancellation_fraction": 0.0
+    },
+    {
+      "name": "b_r3_d1_8_q0_hm77_64",
+      "family": "r3_d1_8",
+      "r": "3",
+      "D": "1/8",
+      "q": "0",
+      "hz": "-77/64",
+      "couplings": {
+        "Jx": 0.5,
+        "Jy": -0.5,
+        "Jz": 0.75,
+        "Dz": 0.125,
+        "hz": -1.203125
+      },
+      "metrics": {
+        "pauli_string_count": 6,
+        "grouped_term_count": 4,
+        "grouped_term_convention": "XX+YY, XX-YY, ZZ, XY-YX, Z",
+        "real_hopping_Jx_plus_Jy": 0.0,
+        "pairing_Jx_minus_Jy": 1.0,
+        "bare_mu_4Jz_plus_2hz": 0.59375,
+        "raw_coefficient_spread": 9.625,
+        "exchange_coefficient_spread": 6.0,
+        "exchange_singular_values": [
+          0.75,
+          0.625,
+          0.37499999999999994
+        ],
+        "nonzero_singular_spread": 2.0000000000000004,
+        "exchange_symmetric_frobenius": 1.0307764064044151,
+        "exchange_antisymmetric_frobenius": 0.1767766952966369,
+        "antisymmetric_to_symmetric": 0.17149858514250885,
+        "field_norm": 1.203125,
+        "field_to_exchange_frobenius": 1.1504075364843538,
+        "coefficient_convention": "Pauli strings; full on-site hz counted once; absent terms excluded"
+      },
+      "q_cancellation_fraction": 0.0
+    },
+    {
+      "name": "b_r3_d1_8_q0_hm19_16",
+      "family": "r3_d1_8",
+      "r": "3",
+      "D": "1/8",
+      "q": "0",
+      "hz": "-19/16",
+      "couplings": {
+        "Jx": 0.5,
+        "Jy": -0.5,
+        "Jz": 0.75,
+        "Dz": 0.125,
+        "hz": -1.1875
+      },
+      "metrics": {
+        "pauli_string_count": 6,
+        "grouped_term_count": 4,
+        "grouped_term_convention": "XX+YY, XX-YY, ZZ, XY-YX, Z",
+        "real_hopping_Jx_plus_Jy": 0.0,
+        "pairing_Jx_minus_Jy": 1.0,
+        "bare_mu_4Jz_plus_2hz": 0.625,
+        "raw_coefficient_spread": 9.5,
+        "exchange_coefficient_spread": 6.0,
+        "exchange_singular_values": [
+          0.75,
+          0.625,
+          0.37499999999999994
+        ],
+        "nonzero_singular_spread": 2.0000000000000004,
+        "exchange_symmetric_frobenius": 1.0307764064044151,
+        "exchange_antisymmetric_frobenius": 0.1767766952966369,
+        "antisymmetric_to_symmetric": 0.17149858514250885,
+        "field_norm": 1.1875,
+        "field_to_exchange_frobenius": 1.135467178867674,
+        "coefficient_convention": "Pauli strings; full on-site hz counted once; absent terms excluded"
+      },
+      "q_cancellation_fraction": 0.0
+    },
+    {
+      "name": "b_r3_d1_8_q0_hm75_64",
+      "family": "r3_d1_8",
+      "r": "3",
+      "D": "1/8",
+      "q": "0",
+      "hz": "-75/64",
+      "couplings": {
+        "Jx": 0.5,
+        "Jy": -0.5,
+        "Jz": 0.75,
+        "Dz": 0.125,
+        "hz": -1.171875
+      },
+      "metrics": {
+        "pauli_string_count": 6,
+        "grouped_term_count": 4,
+        "grouped_term_convention": "XX+YY, XX-YY, ZZ, XY-YX, Z",
+        "real_hopping_Jx_plus_Jy": 0.0,
+        "pairing_Jx_minus_Jy": 1.0,
+        "bare_mu_4Jz_plus_2hz": 0.65625,
+        "raw_coefficient_spread": 9.375,
+        "exchange_coefficient_spread": 6.0,
+        "exchange_singular_values": [
+          0.75,
+          0.625,
+          0.37499999999999994
+        ],
+        "nonzero_singular_spread": 2.0000000000000004,
+        "exchange_symmetric_frobenius": 1.0307764064044151,
+        "exchange_antisymmetric_frobenius": 0.1767766952966369,
+        "antisymmetric_to_symmetric": 0.17149858514250885,
+        "field_norm": 1.171875,
+        "field_to_exchange_frobenius": 1.120526821250994,
+        "coefficient_convention": "Pauli strings; full on-site hz counted once; absent terms excluded"
+      },
+      "q_cancellation_fraction": 0.0
+    },
+    {
+      "name": "b_r3_d1_8_q0_hm37_32",
+      "family": "r3_d1_8",
+      "r": "3",
+      "D": "1/8",
+      "q": "0",
+      "hz": "-37/32",
+      "couplings": {
+        "Jx": 0.5,
+        "Jy": -0.5,
+        "Jz": 0.75,
+        "Dz": 0.125,
+        "hz": -1.15625
+      },
+      "metrics": {
+        "pauli_string_count": 6,
+        "grouped_term_count": 4,
+        "grouped_term_convention": "XX+YY, XX-YY, ZZ, XY-YX, Z",
+        "real_hopping_Jx_plus_Jy": 0.0,
+        "pairing_Jx_minus_Jy": 1.0,
+        "bare_mu_4Jz_plus_2hz": 0.6875,
+        "raw_coefficient_spread": 9.25,
+        "exchange_coefficient_spread": 6.0,
+        "exchange_singular_values": [
+          0.75,
+          0.625,
+          0.37499999999999994
+        ],
+        "nonzero_singular_spread": 2.0000000000000004,
+        "exchange_symmetric_frobenius": 1.0307764064044151,
+        "exchange_antisymmetric_frobenius": 0.1767766952966369,
+        "antisymmetric_to_symmetric": 0.17149858514250885,
+        "field_norm": 1.15625,
+        "field_to_exchange_frobenius": 1.105586463634314,
+        "coefficient_convention": "Pauli strings; full on-site hz counted once; absent terms excluded"
+      },
+      "q_cancellation_fraction": 0.0
+    },
+    {
+      "name": "b_r3_d1_8_q1_16_hm39_32",
+      "family": "r3_d1_8",
+      "r": "3",
+      "D": "1/8",
+      "q": "1/16",
+      "hz": "-39/32",
+      "couplings": {
+        "Jx": 0.53125,
+        "Jy": -0.46875,
+        "Jz": 0.75,
+        "Dz": 0.125,
+        "hz": -1.21875
+      },
+      "metrics": {
+        "pauli_string_count": 6,
+        "grouped_term_count": 5,
+        "grouped_term_convention": "XX+YY, XX-YY, ZZ, XY-YX, Z",
+        "real_hopping_Jx_plus_Jy": 0.0625,
+        "pairing_Jx_minus_Jy": 1.0,
+        "bare_mu_4Jz_plus_2hz": 0.5625,
+        "raw_coefficient_spread": 9.75,
+        "exchange_coefficient_spread": 6.0,
+        "exchange_singular_values": [
+          0.75,
+          0.6288470508005519,
+          0.371152949199448
+        ],
+        "nonzero_singular_spread": 2.020730272028552,
+        "exchange_symmetric_frobenius": 1.0317233762011986,
+        "exchange_antisymmetric_frobenius": 0.1767766952966369,
+        "antisymmetric_to_symmetric": 0.17134117475124774,
+        "field_norm": 1.21875,
+        "field_to_exchange_frobenius": 1.1643087963517378,
+        "coefficient_convention": "Pauli strings; full on-site hz counted once; absent terms excluded"
+      },
+      "q_cancellation_fraction": 0.0625
+    },
+    {
+      "name": "b_r3_d1_8_q1_16_hm77_64",
+      "family": "r3_d1_8",
+      "r": "3",
+      "D": "1/8",
+      "q": "1/16",
+      "hz": "-77/64",
+      "couplings": {
+        "Jx": 0.53125,
+        "Jy": -0.46875,
+        "Jz": 0.75,
+        "Dz": 0.125,
+        "hz": -1.203125
+      },
+      "metrics": {
+        "pauli_string_count": 6,
+        "grouped_term_count": 5,
+        "grouped_term_convention": "XX+YY, XX-YY, ZZ, XY-YX, Z",
+        "real_hopping_Jx_plus_Jy": 0.0625,
+        "pairing_Jx_minus_Jy": 1.0,
+        "bare_mu_4Jz_plus_2hz": 0.59375,
+        "raw_coefficient_spread": 9.625,
+        "exchange_coefficient_spread": 6.0,
+        "exchange_singular_values": [
+          0.75,
+          0.6288470508005519,
+          0.371152949199448
+        ],
+        "nonzero_singular_spread": 2.020730272028552,
+        "exchange_symmetric_frobenius": 1.0317233762011986,
+        "exchange_antisymmetric_frobenius": 0.1767766952966369,
+        "antisymmetric_to_symmetric": 0.17134117475124774,
+        "field_norm": 1.203125,
+        "field_to_exchange_frobenius": 1.1493817605010743,
+        "coefficient_convention": "Pauli strings; full on-site hz counted once; absent terms excluded"
+      },
+      "q_cancellation_fraction": 0.0625
+    },
+    {
+      "name": "b_r3_d1_8_q1_16_hm19_16",
+      "family": "r3_d1_8",
+      "r": "3",
+      "D": "1/8",
+      "q": "1/16",
+      "hz": "-19/16",
+      "couplings": {
+        "Jx": 0.53125,
+        "Jy": -0.46875,
+        "Jz": 0.75,
+        "Dz": 0.125,
+        "hz": -1.1875
+      },
+      "metrics": {
+        "pauli_string_count": 6,
+        "grouped_term_count": 5,
+        "grouped_term_convention": "XX+YY, XX-YY, ZZ, XY-YX, Z",
+        "real_hopping_Jx_plus_Jy": 0.0625,
+        "pairing_Jx_minus_Jy": 1.0,
+        "bare_mu_4Jz_plus_2hz": 0.625,
+        "raw_coefficient_spread": 9.5,
+        "exchange_coefficient_spread": 6.0,
+        "exchange_singular_values": [
+          0.75,
+          0.6288470508005519,
+          0.371152949199448
+        ],
+        "nonzero_singular_spread": 2.020730272028552,
+        "exchange_symmetric_frobenius": 1.0317233762011986,
+        "exchange_antisymmetric_frobenius": 0.1767766952966369,
+        "antisymmetric_to_symmetric": 0.17134117475124774,
+        "field_norm": 1.1875,
+        "field_to_exchange_frobenius": 1.134454724650411,
+        "coefficient_convention": "Pauli strings; full on-site hz counted once; absent terms excluded"
+      },
+      "q_cancellation_fraction": 0.0625
+    },
+    {
+      "name": "b_r3_d1_8_q1_16_hm75_64",
+      "family": "r3_d1_8",
+      "r": "3",
+      "D": "1/8",
+      "q": "1/16",
+      "hz": "-75/64",
+      "couplings": {
+        "Jx": 0.53125,
+        "Jy": -0.46875,
+        "Jz": 0.75,
+        "Dz": 0.125,
+        "hz": -1.171875
+      },
+      "metrics": {
+        "pauli_string_count": 6,
+        "grouped_term_count": 5,
+        "grouped_term_convention": "XX+YY, XX-YY, ZZ, XY-YX, Z",
+        "real_hopping_Jx_plus_Jy": 0.0625,
+        "pairing_Jx_minus_Jy": 1.0,
+        "bare_mu_4Jz_plus_2hz": 0.65625,
+        "raw_coefficient_spread": 9.375,
+        "exchange_coefficient_spread": 6.0,
+        "exchange_singular_values": [
+          0.75,
+          0.6288470508005519,
+          0.371152949199448
+        ],
+        "nonzero_singular_spread": 2.020730272028552,
+        "exchange_symmetric_frobenius": 1.0317233762011986,
+        "exchange_antisymmetric_frobenius": 0.1767766952966369,
+        "antisymmetric_to_symmetric": 0.17134117475124774,
+        "field_norm": 1.171875,
+        "field_to_exchange_frobenius": 1.1195276887997478,
+        "coefficient_convention": "Pauli strings; full on-site hz counted once; absent terms excluded"
+      },
+      "q_cancellation_fraction": 0.0625
+    },
+    {
+      "name": "b_r3_d1_8_q1_16_hm37_32",
+      "family": "r3_d1_8",
+      "r": "3",
+      "D": "1/8",
+      "q": "1/16",
+      "hz": "-37/32",
+      "couplings": {
+        "Jx": 0.53125,
+        "Jy": -0.46875,
+        "Jz": 0.75,
+        "Dz": 0.125,
+        "hz": -1.15625
+      },
+      "metrics": {
+        "pauli_string_count": 6,
+        "grouped_term_count": 5,
+        "grouped_term_convention": "XX+YY, XX-YY, ZZ, XY-YX, Z",
+        "real_hopping_Jx_plus_Jy": 0.0625,
+        "pairing_Jx_minus_Jy": 1.0,
+        "bare_mu_4Jz_plus_2hz": 0.6875,
+        "raw_coefficient_spread": 9.25,
+        "exchange_coefficient_spread": 6.0,
+        "exchange_singular_values": [
+          0.75,
+          0.6288470508005519,
+          0.371152949199448
+        ],
+        "nonzero_singular_spread": 2.020730272028552,
+        "exchange_symmetric_frobenius": 1.0317233762011986,
+        "exchange_antisymmetric_frobenius": 0.1767766952966369,
+        "antisymmetric_to_symmetric": 0.17134117475124774,
+        "field_norm": 1.15625,
+        "field_to_exchange_frobenius": 1.1046006529490844,
+        "coefficient_convention": "Pauli strings; full on-site hz counted once; absent terms excluded"
+      },
+      "q_cancellation_fraction": 0.0625
+    }
+  ],
+  "registration": "R3_EXTENSION.md",
+  "sizes": [
+    24
+  ],
+  "chi": 64
+}

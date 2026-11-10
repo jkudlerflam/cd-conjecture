@@ -1,0 +1,79 @@
+{
+  "source": "preferred_rings.jsonl",
+  "source_sha256": "8460209aa435266c5f383070fc5389ca1900ae91b510b0cb035b4b302c1c978f",
+  "note": "PBC c_eff=3 Delta S_half/log(L2/L1). Finite sizes do not certify a CFT or exclude dilute sectors.",
+  "rows": [
+    {
+      "name": "pref_rat",
+      "sizes": [
+        14,
+        16
+      ],
+      "parities": [
+        0,
+        0
+      ],
+      "c_half_size": 0.9516142473109332,
+      "profiles": [
+        0.9821115551347694,
+        0.9752487252367082
+      ],
+      "max_ritz_residual": 1.2631689466243314e-11,
+      "momentum_resolution_pass": true
+    },
+    {
+      "name": "pref_rat",
+      "sizes": [
+        16,
+        20
+      ],
+      "parities": [
+        0,
+        0
+      ],
+      "c_half_size": 0.9347452860280747,
+      "profiles": [
+        0.9752487252367082,
+        0.9543682528224751
+      ],
+      "max_ritz_residual": 7.704130527262097e-11,
+      "momentum_resolution_pass": true
+    },
+    {
+      "name": "pref_ref",
+      "sizes": [
+        14,
+        16
+      ],
+      "parities": [
+        0,
+        0
+      ],
+      "c_half_size": 0.9602609945685593,
+      "profiles": [
+        0.9864873540448713,
+        0.980387140208334
+      ],
+      "max_ritz_residual": 1.9154533262457726e-11,
+      "momentum_resolution_pass": true
+    },
+    {
+      "name": "pref_ref",
+      "sizes": [
+        16,
+        20
+      ],
+      "parities": [
+        0,
+        0
+      ],
+      "c_half_size": 0.9457986578041173,
+      "profiles": [
+        0.980387140208334,
+        0.9614996646111145
+      ],
+      "max_ritz_residual": 8.65766870908019e-11,
+      "momentum_resolution_pass": true
+    }
+  ]
+}

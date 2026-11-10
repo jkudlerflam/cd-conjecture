@@ -1,0 +1,20 @@
+{
+  "current_dmrg_records": 89,
+  "all_done": true,
+  "all_sweep_gates_pass": true,
+  "all_solver_hashes_match": true,
+  "all_distance_one": true,
+  "plumbing_controls": 3,
+  "all_plumbing_deltas_zero": true,
+  "complete_parameter_size_rows": 45,
+  "field_concavity_checks": 29,
+  "all_field_checks_pass": true,
+  "final_archived_lead_states": 8,
+  "all_archival_hash_checks_passed_at_copy": true,
+  "largest_chi": 256,
+  "weak_L48_promotions_deferred": 5,
+  "targeted_L24_fields_unrun": 6,
+  "r3_L24_fields_unrun": 10,
+  "unavailable_earlier_checkpoint": "L96 P0 chi192 NPZ; raw JSON and pre-upgrade diagnostics retained",
+  "numerical_jobs_remaining": 0
+}

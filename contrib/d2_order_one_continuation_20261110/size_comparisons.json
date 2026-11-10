@@ -1,0 +1,1318 @@
+{
+  "attr_ref": {
+    "couplings": {
+      "Jx": 0.6201511529340699,
+      "Jy": -0.0798488470659301,
+      "Dz": 0.42073549240394825,
+      "Jz": -0.6,
+      "hz": 0.0
+    },
+    "metrics": {
+      "pauli_string_count": 5,
+      "grouped_term_count": 4,
+      "grouped_term_convention": "XX+YY, XX-YY, ZZ, XY-YX, Z",
+      "real_hopping_Jx_plus_Jy": 0.5403023058681398,
+      "pairing_Jx_minus_Jy": 0.7,
+      "bare_mu_4Jz_plus_2hz": -2.4,
+      "raw_coefficient_spread": 7.76656364771328,
+      "exchange_coefficient_spread": 7.76656364771328,
+      "exchange_singular_values": [
+        0.85,
+        0.6,
+        0.15000000000000002
+      ],
+      "nonzero_singular_spread": 5.666666666666666,
+      "exchange_symmetric_frobenius": 0.8665813815581399,
+      "exchange_antisymmetric_frobenius": 0.5950098395293859,
+      "antisymmetric_to_symmetric": 0.6866173820392263,
+      "field_norm": 0.0,
+      "field_to_exchange_frobenius": 0.0,
+      "coefficient_convention": "Pauli strings; full on-site hz counted once; absent terms excluded"
+    },
+    "ground_branches": [
+      {
+        "L": 24,
+        "parity": 0,
+        "seed": 17,
+        "chi": 64,
+        "E_physical": -19.071656638346553,
+        "S_central3": 0.809959852012078,
+        "S_fractional": 0.7915237943187567,
+        "profiles": {
+          "0.25": {
+            "c": 1.462634410480002,
+            "rms": 0.04904486633099492
+          },
+          "0.375": {
+            "c": -2.279061476918704,
+            "rms": 0.043066267703622506
+          }
+        },
+        "convergence": {
+          "local_residual": 9.74271841299532e-11,
+          "discarded_weight": 7.08988423525625e-13,
+          "delta_E": 1.1546319456101628e-14,
+          "delta_S": 2.23487894857044e-13,
+          "canonical_vs_sweep_S": -8.610312463019909e-11,
+          "sweep_converged": true,
+          "bond_dimension_converged": "not established by a completed schedule alone"
+        },
+        "name": "attr_ref",
+        "source": "../d2_order_one_20261110/dmrg/reference_peotta_exploratory_L24_P0_s17.json",
+        "record_sha256": "1be97caec6fe7df14efb6dcf3c71bb21c11e4fe353577da54c78104fbbe8ffca",
+        "completed_parities": [
+          0,
+          1
+        ],
+        "both_parities_complete": true,
+        "converged_parities": [
+          0,
+          1
+        ],
+        "E_odd_minus_even": 0.12475994552231029
+      },
+      {
+        "L": 48,
+        "parity": 0,
+        "seed": 17,
+        "chi": 96,
+        "E_physical": -38.55334685885407,
+        "S_central3": 0.9202103237243242,
+        "S_fractional": 0.9078030505476105,
+        "profiles": {
+          "0.25": {
+            "c": 1.1493072160360307,
+            "rms": 0.02743868552373401
+          },
+          "0.375": {
+            "c": 2.0127063935839216,
+            "rms": 0.024887851255420063
+          }
+        },
+        "convergence": {
+          "local_residual": 9.911316920008299e-11,
+          "discarded_weight": 3.3348879213690452e-12,
+          "delta_E": 9.947598300641403e-14,
+          "delta_S": 4.851496981927994e-10,
+          "canonical_vs_sweep_S": -3.417076621659021e-10,
+          "sweep_converged": true,
+          "bond_dimension_converged": "not established by a completed schedule alone"
+        },
+        "name": "attr_ref",
+        "source": "../d2_order_one_20261110/dmrg/reference_peotta_exploratory_L48_P0_s17.json",
+        "record_sha256": "95d4e7bbfd9d918cfbb3559ad5559169b4e7d2f2ac1cfd24bc53dbe3d5150ae4",
+        "completed_parities": [
+          0,
+          1
+        ],
+        "both_parities_complete": true,
+        "converged_parities": [
+          0,
+          1
+        ],
+        "E_odd_minus_even": 0.056776280015739644
+      },
+      {
+        "L": 96,
+        "parity": 0,
+        "seed": 17,
+        "chi": 128,
+        "E_physical": -77.52708713112727,
+        "S_central3": 1.0474405137136904,
+        "S_fractional": 1.0387246111976067,
+        "profiles": {
+          "0.25": {
+            "c": 1.1300308148145661,
+            "rms": 0.01367242292304009
+          },
+          "0.375": {
+            "c": 1.3698440354995232,
+            "rms": 0.01233802741132039
+          }
+        },
+        "convergence": {
+          "local_residual": 9.974537002006e-11,
+          "discarded_weight": 1.642974645221784e-11,
+          "delta_E": 2.19912976717751e-12,
+          "delta_S": 9.685363533407099e-08,
+          "canonical_vs_sweep_S": -3.1186144777706204e-09,
+          "sweep_converged": true,
+          "bond_dimension_converged": "not established by a completed schedule alone"
+        },
+        "name": "attr_ref",
+        "source": "../d2_order_one_20261110/dmrg/reference_peotta_exploratory_L96_P0_s17.json",
+        "record_sha256": "a922d1f0b0d18c555dafa7c45900b6e689c2a84143d097bc8e2ff4902f36d1c8",
+        "completed_parities": [
+          0,
+          1
+        ],
+        "both_parities_complete": true,
+        "converged_parities": [
+          0,
+          1
+        ],
+        "E_odd_minus_even": 0.021688385737220983
+      },
+      {
+        "L": 192,
+        "parity": 0,
+        "seed": 17,
+        "chi": 192,
+        "E_physical": -155.48247430858356,
+        "S_central3": 1.1964748241610845,
+        "S_fractional": 1.1901547467199507,
+        "profiles": {
+          "0.25": {
+            "c": 1.1787424532843405,
+            "rms": 0.004955993291037667
+          },
+          "0.375": {
+            "c": 1.199547149203877,
+            "rms": 0.004232253277908819
+          }
+        },
+        "convergence": {
+          "local_residual": 9.999417575858981e-11,
+          "discarded_weight": 1.5570211786553045e-11,
+          "delta_E": 9.71311919784057e-12,
+          "delta_S": 7.339902685643551e-09,
+          "canonical_vs_sweep_S": 6.105491667796059e-10,
+          "sweep_converged": true,
+          "bond_dimension_converged": "not established by a completed schedule alone"
+        },
+        "name": "attr_ref",
+        "source": "attractive_scan/results/attr_ref_L192_P0_s17.json",
+        "record_sha256": "9fc003593539491d5407b2ce61c321fb23a96c838aca188082a157afe47c6714",
+        "completed_parities": [
+          0,
+          1
+        ],
+        "both_parities_complete": true,
+        "converged_parities": [
+          0,
+          1
+        ],
+        "E_odd_minus_even": 0.005606205207811854
+      }
+    ],
+    "pairs": [
+      {
+        "sizes": [
+          24,
+          48
+        ],
+        "parities": [
+          0,
+          0
+        ],
+        "both_parities_complete": true,
+        "selected_sweeps_converged": true,
+        "c_central3": 0.9543468527695594,
+        "c_fractional": 1.0065330379177462
+      },
+      {
+        "sizes": [
+          48,
+          96
+        ],
+        "parities": [
+          0,
+          0
+        ],
+        "both_parities_complete": true,
+        "selected_sweeps_converged": true,
+        "c_central3": 1.1013261848941156,
+        "c_fractional": 1.1332793177711598
+      },
+      {
+        "sizes": [
+          96,
+          192
+        ],
+        "parities": [
+          0,
+          0
+        ],
+        "both_parities_complete": true,
+        "selected_sweeps_converged": true,
+        "c_central3": 1.2900663636285705,
+        "c_fractional": 1.3108050333553758
+      }
+    ]
+  },
+  "b_r5_2_d1_10_q0_hm7_8": {
+    "couplings": {
+      "Jx": 0.5,
+      "Jy": -0.5,
+      "Jz": 0.625,
+      "Dz": 0.1,
+      "hz": -0.875
+    },
+    "metrics": {
+      "pauli_string_count": 6,
+      "grouped_term_count": 4,
+      "grouped_term_convention": "XX+YY, XX-YY, ZZ, XY-YX, Z",
+      "real_hopping_Jx_plus_Jy": 0.0,
+      "pairing_Jx_minus_Jy": 1.0,
+      "bare_mu_4Jz_plus_2hz": 0.75,
+      "raw_coefficient_spread": 8.75,
+      "exchange_coefficient_spread": 6.25,
+      "exchange_singular_values": [
+        0.625,
+        0.6000000000000001,
+        0.4
+      ],
+      "nonzero_singular_spread": 1.5625,
+      "exchange_symmetric_frobenius": 0.9437293044088437,
+      "exchange_antisymmetric_frobenius": 0.14142135623730953,
+      "antisymmetric_to_symmetric": 0.14985372985307105,
+      "field_norm": 0.875,
+      "field_to_exchange_frobenius": 0.9169344048589306,
+      "coefficient_convention": "Pauli strings; full on-site hz counted once; absent terms excluded"
+    },
+    "ground_branches": [
+      {
+        "L": 24,
+        "parity": 0,
+        "seed": 17,
+        "chi": 64,
+        "E_physical": -16.31971958463125,
+        "S_central3": 0.9015224566430712,
+        "S_fractional": 0.8895425549914803,
+        "profiles": {
+          "0.25": {
+            "c": 2.1024230749364836,
+            "rms": 0.010331376330476847
+          },
+          "0.375": {
+            "c": 1.74094118865016,
+            "rms": 0.0087499064281398
+          }
+        },
+        "convergence": {
+          "local_residual": 9.627285639317393e-11,
+          "discarded_weight": 5.764055899248888e-11,
+          "delta_E": 1.5702994460298214e-12,
+          "delta_S": 2.1784082315789988e-09,
+          "canonical_vs_sweep_S": -1.49364691726106e-08,
+          "sweep_converged": true,
+          "bond_dimension_converged": "not established by a completed schedule alone"
+        },
+        "name": "b_r5_2_d1_10_q0_hm7_8",
+        "source": "bridge_scan/dmrg/b_r5_2_d1_10_q0_hm7_8_L24_P0_s17.json",
+        "record_sha256": "493438aeb34767f436c22729e994cbd25ace470789d2ed1f8b81bbfba210da81",
+        "completed_parities": [
+          0,
+          1
+        ],
+        "both_parities_complete": true,
+        "converged_parities": [
+          0,
+          1
+        ],
+        "E_odd_minus_even": 0.0002752287658083219
+      },
+      {
+        "L": 48,
+        "parity": 0,
+        "seed": 17,
+        "chi": 192,
+        "E_physical": -32.5476349074781,
+        "S_central3": 1.0959050474913432,
+        "S_fractional": 1.0863689504899547,
+        "profiles": {
+          "0.25": {
+            "c": 2.022023100379371,
+            "rms": 0.006500339885691426
+          },
+          "0.375": {
+            "c": 2.0811533406337728,
+            "rms": 0.005674497281699249
+          }
+        },
+        "convergence": {
+          "local_residual": 9.997854426904678e-11,
+          "discarded_weight": 2.37654340651261e-12,
+          "delta_E": 8.881784197001252e-14,
+          "delta_S": 2.083908601235862e-10,
+          "canonical_vs_sweep_S": -2.8449207434277923e-09,
+          "sweep_converged": true,
+          "bond_dimension_converged": "not established by a completed schedule alone"
+        },
+        "name": "b_r5_2_d1_10_q0_hm7_8",
+        "source": "bridge_scan/dmrg/b_r5_2_d1_10_q0_hm7_8_L48_P0_s17.json",
+        "record_sha256": "d0fcad3035b013caace76e977d1ae5a6f138ed3553ce63d3c762d5c6f8e210c4",
+        "completed_parities": [
+          0,
+          1
+        ],
+        "both_parities_complete": true,
+        "converged_parities": [
+          0,
+          1
+        ],
+        "E_odd_minus_even": 0.00012648842064066912
+      },
+      {
+        "L": 64,
+        "parity": 0,
+        "seed": 17,
+        "chi": 192,
+        "E_physical": -43.366741580955846,
+        "S_central3": 1.1640383030933015,
+        "S_fractional": 1.1557679725906413,
+        "profiles": {
+          "0.25": {
+            "c": 1.7022242400825063,
+            "rms": 0.005284090695996839
+          },
+          "0.375": {
+            "c": 1.736211679326881,
+            "rms": 0.004741416480218697
+          }
+        },
+        "convergence": {
+          "local_residual": 9.978353758228359e-11,
+          "discarded_weight": 1.818478700954529e-11,
+          "delta_E": 3.339550858072471e-12,
+          "delta_S": 4.053224866851224e-09,
+          "canonical_vs_sweep_S": -1.615922884390386e-08,
+          "sweep_converged": true,
+          "bond_dimension_converged": "not established by a completed schedule alone"
+        },
+        "name": "b_r5_2_d1_10_q0_hm7_8",
+        "source": "independent_sizes/b_r5_2_d1_10_q0_hm7_8_L64_P0_s17.json",
+        "record_sha256": "9770295481e869e4da9810110529b5dde7ca595d0071647815f4bb47ccc3250c",
+        "completed_parities": [
+          0,
+          1
+        ],
+        "both_parities_complete": true,
+        "converged_parities": [
+          0,
+          1
+        ],
+        "E_odd_minus_even": 9.626664046180622e-05
+      },
+      {
+        "L": 96,
+        "parity": 0,
+        "seed": 17,
+        "chi": 256,
+        "E_physical": -65.0052273176403,
+        "S_central3": 1.2597757165732917,
+        "S_fractional": 1.2522948493216797,
+        "profiles": {
+          "0.25": {
+            "c": 1.5110021658251664,
+            "rms": 0.0038450163502109437
+          },
+          "0.375": {
+            "c": 1.5501854292069628,
+            "rms": 0.003522779187088507
+          }
+        },
+        "convergence": {
+          "local_residual": 9.993188884216296e-11,
+          "discarded_weight": 2.0118795518442312e-11,
+          "delta_E": 7.148059921746608e-12,
+          "delta_S": 1.6003980363166193e-08,
+          "canonical_vs_sweep_S": -1.1865942228794779e-08,
+          "sweep_converged": true,
+          "bond_dimension_converged": "not established by a completed schedule alone"
+        },
+        "name": "b_r5_2_d1_10_q0_hm7_8",
+        "source": "bridge_scan/dmrg/b_r5_2_d1_10_q0_hm7_8_L96_P0_s17.json",
+        "record_sha256": "da1639304488f9124f8047fa4856eb0f6e54fef229a6fa3433e1fda3f8b1e325",
+        "completed_parities": [
+          0,
+          1
+        ],
+        "both_parities_complete": true,
+        "converged_parities": [
+          0,
+          1
+        ],
+        "E_odd_minus_even": 6.689992804354006e-05
+      },
+      {
+        "L": 192,
+        "parity": 0,
+        "seed": 17,
+        "chi": 256,
+        "E_physical": -129.92127124133077,
+        "S_central3": 1.4269927422236712,
+        "S_fractional": 1.4201550098420128,
+        "profiles": {
+          "0.25": {
+            "c": 1.4539327764674106,
+            "rms": 0.0020120407475830568
+          },
+          "0.375": {
+            "c": 1.4629604957102345,
+            "rms": 0.0018101929478494048
+          }
+        },
+        "convergence": {
+          "local_residual": 9.999293789031737e-11,
+          "discarded_weight": 2.583167013625598e-10,
+          "delta_E": 3.680895588331623e-10,
+          "delta_S": 1.5912062376610692e-06,
+          "canonical_vs_sweep_S": -3.417066201105712e-07,
+          "sweep_converged": true,
+          "bond_dimension_converged": "not established by a completed schedule alone"
+        },
+        "name": "b_r5_2_d1_10_q0_hm7_8",
+        "source": "bridge_scan/dmrg/b_r5_2_d1_10_q0_hm7_8_L192_P0_s17.json",
+        "record_sha256": "6bfb709aaf6e62e468c399d368cad3fe25018eda518a247cb1e38b2234e0a742",
+        "completed_parities": [
+          0,
+          1
+        ],
+        "both_parities_complete": true,
+        "converged_parities": [
+          0,
+          1
+        ],
+        "E_odd_minus_even": 3.757575757390441e-05
+      }
+    ],
+    "pairs": [
+      {
+        "sizes": [
+          24,
+          48
+        ],
+        "parities": [
+          0,
+          0
+        ],
+        "both_parities_complete": true,
+        "selected_sweeps_converged": true,
+        "c_central3": 1.682608799111703,
+        "c_fractional": 1.7037627882101936
+      },
+      {
+        "sizes": [
+          48,
+          64
+        ],
+        "parities": [
+          0,
+          0
+        ],
+        "both_parities_complete": true,
+        "selected_sweeps_converged": true,
+        "c_central3": 1.4210115010912596,
+        "c_fractional": 1.44741077904294
+      },
+      {
+        "sizes": [
+          48,
+          96
+        ],
+        "parities": [
+          0,
+          0
+        ],
+        "both_parities_complete": true,
+        "selected_sweeps_converged": true,
+        "c_central3": 1.4184924097901006,
+        "c_fractional": 1.4362828283974405
+      },
+      {
+        "sizes": [
+          64,
+          96
+        ],
+        "parities": [
+          0,
+          0
+        ],
+        "both_parities_complete": true,
+        "selected_sweeps_converged": true,
+        "c_central3": 1.4167050860679835,
+        "c_fractional": 1.4283874217648571
+      },
+      {
+        "sizes": [
+          96,
+          192
+        ],
+        "parities": [
+          0,
+          0
+        ],
+        "both_parities_complete": true,
+        "selected_sweeps_converged": true,
+        "c_central3": 1.447459041948031,
+        "c_fractional": 1.45302612687306
+      }
+    ]
+  },
+  "bridge_r4_u1_k4": {
+    "couplings": {
+      "Jx": 0.5,
+      "Jy": -0.5,
+      "Jz": 1.0,
+      "Dz": 0.0625,
+      "hz": -1.75
+    },
+    "metrics": {
+      "pauli_string_count": 6,
+      "grouped_term_count": 4,
+      "grouped_term_convention": "XX+YY, XX-YY, ZZ, XY-YX, Z",
+      "real_hopping_Jx_plus_Jy": 0.0,
+      "pairing_Jx_minus_Jy": 1.0,
+      "bare_mu_4Jz_plus_2hz": 0.5,
+      "raw_coefficient_spread": 28.0,
+      "exchange_coefficient_spread": 16.0,
+      "exchange_singular_values": [
+        1.0,
+        0.5625,
+        0.43749999999999994
+      ],
+      "nonzero_singular_spread": 2.285714285714286,
+      "exchange_symmetric_frobenius": 1.224744871391589,
+      "exchange_antisymmetric_frobenius": 0.08838834764831845,
+      "antisymmetric_to_symmetric": 0.07216878364870323,
+      "field_norm": 1.75,
+      "field_to_exchange_frobenius": 1.4251624759660053,
+      "coefficient_convention": "Pauli strings; full on-site hz counted once; absent terms excluded"
+    },
+    "ground_branches": [
+      {
+        "L": 24,
+        "parity": 0,
+        "seed": 17,
+        "chi": 64,
+        "E_physical": -25.02562147109122,
+        "S_central3": 1.1913154085211468,
+        "S_fractional": 1.1438084064335208,
+        "profiles": {
+          "0.25": {
+            "c": 4.846589327536808,
+            "rms": 0.04425440562292688
+          },
+          "0.375": {
+            "c": 5.809495509043273,
+            "rms": 0.04560467865094692
+          }
+        },
+        "convergence": {
+          "local_residual": 9.912114339850255e-11,
+          "discarded_weight": 1.2436576213303852e-09,
+          "delta_E": 4.82227591191986e-11,
+          "delta_S": 8.16493805899654e-09,
+          "canonical_vs_sweep_S": -5.119806187892095e-07,
+          "sweep_converged": true,
+          "bond_dimension_converged": "not established by a completed schedule alone"
+        },
+        "name": "bridge_r4_u1_k4",
+        "source": "../d2_order_one_20261110/dmrg/bridge_r4_u1_k4_L24_P0_s17.json",
+        "record_sha256": "3c34a413eb69847a2473ec72024f3d0595ea5ca60da90940493ce8283670e0d2",
+        "completed_parities": [
+          0,
+          1
+        ],
+        "both_parities_complete": true,
+        "converged_parities": [
+          0,
+          1
+        ],
+        "E_odd_minus_even": 0.0017677322629658931
+      },
+      {
+        "L": 48,
+        "parity": 1,
+        "seed": 23,
+        "chi": 192,
+        "E_physical": -49.344148157931656,
+        "S_central3": 1.5124857792883717,
+        "S_fractional": 1.4931792489108149,
+        "profiles": {
+          "0.25": {
+            "c": 3.4395531721691905,
+            "rms": 0.03198194139193207
+          },
+          "0.375": {
+            "c": 6.124551880643123,
+            "rms": 0.020248507526467417
+          }
+        },
+        "convergence": {
+          "local_residual": 9.978817952162492e-11,
+          "discarded_weight": 1.3752081695628249e-09,
+          "delta_E": 4.815383647382987e-10,
+          "delta_S": 0.0005000125833065638,
+          "canonical_vs_sweep_S": -1.2979205969987362e-06,
+          "sweep_converged": true,
+          "bond_dimension_converged": "not established by a completed schedule alone"
+        },
+        "name": "bridge_r4_u1_k4",
+        "source": "../d2_order_one_20261110/dmrg/bridge_r4_u1_k4_L48_P1_s23.json",
+        "record_sha256": "acbec3df033e37eb2d34515791912adfa376bad4e38bb9838792a0d4e644ebbb",
+        "completed_parities": [
+          0,
+          1
+        ],
+        "both_parities_complete": true,
+        "converged_parities": [
+          0,
+          1
+        ],
+        "E_odd_minus_even": -0.0003885870419040316
+      },
+      {
+        "L": 96,
+        "parity": 0,
+        "seed": 17,
+        "chi": 256,
+        "E_physical": -97.98329671820149,
+        "S_central3": 1.8303921780504375,
+        "S_fractional": 1.8081164570148023,
+        "profiles": {
+          "0.25": {
+            "c": 2.704126772852879,
+            "rms": 0.023173232401970206
+          },
+          "0.375": {
+            "c": 2.1638372127183647,
+            "rms": 0.023436036778993447
+          }
+        },
+        "convergence": {
+          "local_residual": 9.999136518950605e-11,
+          "discarded_weight": 1.4466617459518716e-08,
+          "delta_E": 5.5369966389662295e-09,
+          "delta_S": 3.5419230259847723e-06,
+          "canonical_vs_sweep_S": -1.4862743279220325e-05,
+          "sweep_converged": true,
+          "bond_dimension_converged": "not established by a completed schedule alone"
+        },
+        "name": "bridge_r4_u1_k4",
+        "source": "validation/bridge_r4_u1_k4_L96_P0_s17.json",
+        "record_sha256": "3d00991cf6b83f1b4994b53d99766de62f1d376702a26e2e510d2f761d1cb2b4",
+        "completed_parities": [
+          0,
+          1
+        ],
+        "both_parities_complete": true,
+        "converged_parities": [
+          0,
+          1
+        ],
+        "E_odd_minus_even": 0.00019165600791382076
+      }
+    ],
+    "pairs": [
+      {
+        "sizes": [
+          24,
+          48
+        ],
+        "parities": [
+          0,
+          1
+        ],
+        "both_parities_complete": true,
+        "selected_sweeps_converged": true,
+        "c_central3": 2.78010540711807,
+        "c_fractional": 3.0242134912391485
+      },
+      {
+        "sizes": [
+          48,
+          96
+        ],
+        "parities": [
+          1,
+          0
+        ],
+        "both_parities_complete": true,
+        "selected_sweeps_converged": true,
+        "c_central3": 2.75185190976541,
+        "c_fractional": 2.7261500899382285
+      }
+    ]
+  },
+  "pref_rat": {
+    "couplings": {
+      "Jx": 0.5833333333333334,
+      "Jy": -0.20833333333333334,
+      "Dz": 0.4583333333333333,
+      "Jz": -0.5,
+      "hz": 0.0
+    },
+    "metrics": {
+      "pauli_string_count": 5,
+      "grouped_term_count": 4,
+      "grouped_term_convention": "XX+YY, XX-YY, ZZ, XY-YX, Z",
+      "real_hopping_Jx_plus_Jy": 0.375,
+      "pairing_Jx_minus_Jy": 0.7916666666666667,
+      "bare_mu_4Jz_plus_2hz": -2.0,
+      "raw_coefficient_spread": 2.8000000000000003,
+      "exchange_coefficient_spread": 2.8000000000000003,
+      "exchange_singular_values": [
+        0.8910360135001963,
+        0.5,
+        0.09936934683352967
+      ],
+      "nonzero_singular_spread": 8.9669102383547,
+      "exchange_symmetric_frobenius": 0.7960405489392833,
+      "exchange_antisymmetric_frobenius": 0.6481812160876685,
+      "antisymmetric_to_symmetric": 0.8142565312173657,
+      "field_norm": 0.0,
+      "field_to_exchange_frobenius": 0.0,
+      "coefficient_convention": "Pauli strings; full on-site hz counted once; absent terms excluded"
+    },
+    "ground_branches": [
+      {
+        "L": 48,
+        "parity": 0,
+        "seed": 17,
+        "chi": 128,
+        "E_physical": -37.3688789844544,
+        "S_central3": 0.9285300188779684,
+        "S_fractional": 0.9136252022778675,
+        "profiles": {
+          "0.25": {
+            "c": 1.3647725091390004,
+            "rms": 0.03389463375374026
+          },
+          "0.375": {
+            "c": 2.4225448502640177,
+            "rms": 0.03029615609979622
+          }
+        },
+        "convergence": {
+          "local_residual": 9.705310788519771e-11,
+          "discarded_weight": 1.2634338020234281e-13,
+          "delta_E": 5.3290705182007514e-14,
+          "delta_S": 1.326050380612287e-12,
+          "canonical_vs_sweep_S": -1.6228796084760688e-11,
+          "sweep_converged": true,
+          "bond_dimension_converged": "not established by a completed schedule alone"
+        },
+        "name": "pref_rat",
+        "source": "attractive_scan/results/pref_rat_L48_P0_s17.json",
+        "record_sha256": "9bd85db4f97ebaf1e2c0905a8e8f0302089389707d42de00932ad1633f9e1fa9",
+        "completed_parities": [
+          0,
+          1
+        ],
+        "both_parities_complete": true,
+        "converged_parities": [
+          0,
+          1
+        ],
+        "E_odd_minus_even": 0.039179603800292284
+      },
+      {
+        "L": 96,
+        "parity": 0,
+        "seed": 17,
+        "chi": 128,
+        "E_physical": -75.12197494261213,
+        "S_central3": 1.086887480794075,
+        "S_fractional": 1.0785473048389596,
+        "profiles": {
+          "0.25": {
+            "c": 1.2862134647558219,
+            "rms": 0.011809762263190972
+          },
+          "0.375": {
+            "c": 1.442452795128212,
+            "rms": 0.009862412463796941
+          }
+        },
+        "convergence": {
+          "local_residual": 9.981382266026232e-11,
+          "discarded_weight": 1.195599175218831e-11,
+          "delta_E": 2.049915792667889e-12,
+          "delta_S": 2.4721971136898446e-09,
+          "canonical_vs_sweep_S": 1.6133190339218118e-09,
+          "sweep_converged": true,
+          "bond_dimension_converged": "not established by a completed schedule alone"
+        },
+        "name": "pref_rat",
+        "source": "attractive_scan/results/pref_rat_L96_P0_s17.json",
+        "record_sha256": "677ee6925b1205a1f464f0106c2c7d7cbac40bb72bbd4c197259fa8c4162ba9c",
+        "completed_parities": [
+          0,
+          1
+        ],
+        "both_parities_complete": true,
+        "converged_parities": [
+          0,
+          1
+        ],
+        "E_odd_minus_even": 0.009405964144690415
+      }
+    ],
+    "pairs": [
+      {
+        "sizes": [
+          48,
+          96
+        ],
+        "parities": [
+          0,
+          0
+        ],
+        "both_parities_complete": true,
+        "selected_sweeps_converged": true,
+        "c_central3": 1.370769149964779,
+        "c_fractional": 1.4275937969872114
+      }
+    ]
+  },
+  "pref_ref": {
+    "couplings": {
+      "Jx": 0.5811788772383368,
+      "Jy": -0.2188211227616632,
+      "Dz": 0.46601954298361314,
+      "Jz": -0.5,
+      "hz": 0.0
+    },
+    "metrics": {
+      "pauli_string_count": 5,
+      "grouped_term_count": 4,
+      "grouped_term_convention": "XX+YY, XX-YY, ZZ, XY-YX, Z",
+      "real_hopping_Jx_plus_Jy": 0.3623577544766736,
+      "pairing_Jx_minus_Jy": 0.8,
+      "bare_mu_4Jz_plus_2hz": -2.0,
+      "raw_coefficient_spread": 2.655954187162034,
+      "exchange_coefficient_spread": 2.655954187162034,
+      "exchange_singular_values": [
+        0.9,
+        0.5,
+        0.09999999999999998
+      ],
+      "nonzero_singular_spread": 9.000000000000002,
+      "exchange_symmetric_frobenius": 0.7972775997823397,
+      "exchange_antisymmetric_frobenius": 0.6590511580183372,
+      "antisymmetric_to_symmetric": 0.8266269592902913,
+      "field_norm": 0.0,
+      "field_to_exchange_frobenius": 0.0,
+      "coefficient_convention": "Pauli strings; full on-site hz counted once; absent terms excluded"
+    },
+    "ground_branches": [
+      {
+        "L": 48,
+        "parity": 0,
+        "seed": 17,
+        "chi": 128,
+        "E_physical": -37.54097113772565,
+        "S_central3": 0.9203919545998248,
+        "S_fractional": 0.9046353468343238,
+        "profiles": {
+          "0.25": {
+            "c": 1.3630073446271869,
+            "rms": 0.036699310765401234
+          },
+          "0.375": {
+            "c": 2.5152395519623947,
+            "rms": 0.033011263293602884
+          }
+        },
+        "convergence": {
+          "local_residual": 9.710951058697696e-11,
+          "discarded_weight": 1.241229341530925e-13,
+          "delta_E": 2.1316282072803006e-14,
+          "delta_S": 3.742672838313865e-12,
+          "canonical_vs_sweep_S": -1.449140807352478e-11,
+          "sweep_converged": true,
+          "bond_dimension_converged": "not established by a completed schedule alone"
+        },
+        "name": "pref_ref",
+        "source": "attractive_scan/results/pref_ref_L48_P0_s17.json",
+        "record_sha256": "a2b2d2e1315e2e75b151f3b7a10b6dfe07122e45a1a5633dcb4633d9280e661c",
+        "completed_parities": [
+          0,
+          1
+        ],
+        "both_parities_complete": true,
+        "converged_parities": [
+          0,
+          1
+        ],
+        "E_odd_minus_even": 0.042637581979064976
+      },
+      {
+        "L": 96,
+        "parity": 0,
+        "seed": 17,
+        "chi": 128,
+        "E_physical": -75.46219094204103,
+        "S_central3": 1.0780633163863504,
+        "S_fractional": 1.0688526454522504,
+        "profiles": {
+          "0.25": {
+            "c": 1.3158796935189927,
+            "rms": 0.014089408510821796
+          },
+          "0.375": {
+            "c": 1.5265168335464456,
+            "rms": 0.012021011634813856
+          }
+        },
+        "convergence": {
+          "local_residual": 9.968924010519457e-11,
+          "discarded_weight": 1.3204326521076837e-11,
+          "delta_E": 2.568611989772762e-12,
+          "delta_S": 2.5893878152771777e-09,
+          "canonical_vs_sweep_S": 1.4378229717948443e-09,
+          "sweep_converged": true,
+          "bond_dimension_converged": "not established by a completed schedule alone"
+        },
+        "name": "pref_ref",
+        "source": "attractive_scan/results/pref_ref_L96_P0_s17.json",
+        "record_sha256": "d41f8606146463964adcfd934561a2ec63927d4a012f4f426cf81bfdd33111a3",
+        "completed_parities": [
+          0,
+          1
+        ],
+        "both_parities_complete": true,
+        "converged_parities": [
+          0,
+          1
+        ],
+        "E_odd_minus_even": 0.011334622269998818
+      },
+      {
+        "L": 192,
+        "parity": 0,
+        "seed": 17,
+        "chi": 192,
+        "E_physical": -151.31847648506584,
+        "S_central3": 1.2042067974203057,
+        "S_fractional": 1.2008338445489193,
+        "profiles": {
+          "0.25": {
+            "c": 0.8233076219133513,
+            "rms": 0.0024126321103629437
+          },
+          "0.375": {
+            "c": 0.7086154464609183,
+            "rms": 0.0014769732477598765
+          }
+        },
+        "convergence": {
+          "local_residual": 9.998373698965728e-11,
+          "discarded_weight": 7.0741190683065724e-12,
+          "delta_E": 3.19033688356285e-12,
+          "delta_S": 2.9944393631353705e-09,
+          "canonical_vs_sweep_S": -3.3944886901338123e-09,
+          "sweep_converged": true,
+          "bond_dimension_converged": "not established by a completed schedule alone"
+        },
+        "name": "pref_ref",
+        "source": "attractive_scan/results/pref_ref_L192_P0_s17.json",
+        "record_sha256": "bc19af9d5ed23984563d02fdfbdf37cdafde023c035ae1b1207a110055de2c17",
+        "completed_parities": [
+          0,
+          1
+        ],
+        "both_parities_complete": true,
+        "converged_parities": [
+          0,
+          1
+        ],
+        "E_odd_minus_even": 0.0011489402444624375
+      }
+    ],
+    "pairs": [
+      {
+        "sizes": [
+          48,
+          96
+        ],
+        "parities": [
+          0,
+          0
+        ],
+        "both_parities_complete": true,
+        "selected_sweeps_converged": true,
+        "c_central3": 1.3648301504377809,
+        "c_fractional": 1.421492894065589
+      },
+      {
+        "sizes": [
+          96,
+          192
+        ],
+        "parities": [
+          0,
+          0
+        ],
+        "both_parities_complete": true,
+        "selected_sweeps_converged": true,
+        "c_central3": 1.0919194471689493,
+        "c_fractional": 1.1424517285640585
+      }
+    ]
+  },
+  "pref_zrat": {
+    "couplings": {
+      "Jx": 0.5833333333333334,
+      "Jy": -0.25,
+      "Dz": 0.5,
+      "Jz": -0.75,
+      "hz": 0.0
+    },
+    "metrics": {
+      "pauli_string_count": 5,
+      "grouped_term_count": 4,
+      "grouped_term_convention": "XX+YY, XX-YY, ZZ, XY-YX, Z",
+      "real_hopping_Jx_plus_Jy": 0.33333333333333337,
+      "pairing_Jx_minus_Jy": 0.8333333333333334,
+      "bare_mu_4Jz_plus_2hz": -3.0,
+      "raw_coefficient_spread": 3.0,
+      "exchange_coefficient_spread": 3.0,
+      "exchange_singular_values": [
+        0.9437129433613966,
+        0.75,
+        0.11037961002806321
+      ],
+      "nonzero_singular_spread": 8.549703546891173,
+      "exchange_symmetric_frobenius": 0.9824855102126331,
+      "exchange_antisymmetric_frobenius": 0.7071067811865476,
+      "antisymmetric_to_symmetric": 0.7197121726848805,
+      "field_norm": 0.0,
+      "field_to_exchange_frobenius": 0.0,
+      "coefficient_convention": "Pauli strings; full on-site hz counted once; absent terms excluded"
+    },
+    "ground_branches": [
+      {
+        "L": 48,
+        "parity": 0,
+        "seed": 17,
+        "chi": 128,
+        "E_physical": -46.04998980503579,
+        "S_central3": 0.9354249828678515,
+        "S_fractional": 0.9230340656329177,
+        "profiles": {
+          "0.25": {
+            "c": 1.3296735524151764,
+            "rms": 0.026214930252841995
+          },
+          "0.375": {
+            "c": 2.1226257568132043,
+            "rms": 0.022889374691472102
+          }
+        },
+        "convergence": {
+          "local_residual": 9.874210944248205e-11,
+          "discarded_weight": 8.126832540256146e-14,
+          "delta_E": 2.1316282072803006e-14,
+          "delta_S": 1.6326939800137552e-12,
+          "canonical_vs_sweep_S": -5.076938869308378e-12,
+          "sweep_converged": true,
+          "bond_dimension_converged": "not established by a completed schedule alone"
+        },
+        "name": "pref_zrat",
+        "source": "attractive_scan/results/pref_zrat_L48_P0_s17.json",
+        "record_sha256": "8e2db52fb5caca9a2e6aad0688e85aa4f70a6c0f3342ccd86545629841566fc5",
+        "completed_parities": [
+          0,
+          1
+        ],
+        "both_parities_complete": true,
+        "converged_parities": [
+          0,
+          1
+        ],
+        "E_odd_minus_even": 0.2017786010721352
+      },
+      {
+        "L": 96,
+        "parity": 0,
+        "seed": 17,
+        "chi": 128,
+        "E_physical": -92.61397870648071,
+        "S_central3": 1.0747572770105143,
+        "S_fractional": 1.069272153623624,
+        "profiles": {
+          "0.25": {
+            "c": 1.0412039265022675,
+            "rms": 0.006385351339912053
+          },
+          "0.375": {
+            "c": 1.0502484417671734,
+            "rms": 0.004846339318898095
+          }
+        },
+        "convergence": {
+          "local_residual": 9.962352382736658e-11,
+          "discarded_weight": 3.666844605731967e-12,
+          "delta_E": 9.592326932761353e-13,
+          "delta_S": 7.999776396871994e-10,
+          "canonical_vs_sweep_S": -1.2479506317220057e-10,
+          "sweep_converged": true,
+          "bond_dimension_converged": "not established by a completed schedule alone"
+        },
+        "name": "pref_zrat",
+        "source": "attractive_scan/results/pref_zrat_L96_P0_s17.json",
+        "record_sha256": "41466ced696db69ba2ce8257691c1ec48f21622628f1394c356d1b2939be4230",
+        "completed_parities": [
+          0,
+          1
+        ],
+        "both_parities_complete": true,
+        "converged_parities": [
+          0,
+          1
+        ],
+        "E_odd_minus_even": 0.1371879994541132
+      }
+    ],
+    "pairs": [
+      {
+        "sizes": [
+          48,
+          96
+        ],
+        "parities": [
+          0,
+          0
+        ],
+        "both_parities_complete": true,
+        "selected_sweeps_converged": true,
+        "c_central3": 1.2060840587718118,
+        "c_fractional": 1.2658617859996557
+      }
+    ]
+  },
+  "simple_attr_7_m1_5_m7": {
+    "couplings": {
+      "Jx": 0.5833333333333334,
+      "Jy": -0.08333333333333333,
+      "Dz": 0.4166666666666667,
+      "Jz": -0.5833333333333334,
+      "hz": 0.0
+    },
+    "metrics": {
+      "pauli_string_count": 5,
+      "grouped_term_count": 4,
+      "grouped_term_convention": "XX+YY, XX-YY, ZZ, XY-YX, Z",
+      "real_hopping_Jx_plus_Jy": 0.5,
+      "pairing_Jx_minus_Jy": 0.6666666666666667,
+      "bare_mu_4Jz_plus_2hz": -2.3333333333333335,
+      "raw_coefficient_spread": 7.000000000000001,
+      "exchange_coefficient_spread": 7.000000000000001,
+      "exchange_singular_values": [
+        0.8192459912371084,
+        0.5833333333333335,
+        0.1525793245704418
+      ],
+      "nonzero_singular_spread": 5.369311953264575,
+      "exchange_symmetric_frobenius": 0.8291561975888501,
+      "exchange_antisymmetric_frobenius": 0.5892556509887896,
+      "antisymmetric_to_symmetric": 0.7106690545187014,
+      "field_norm": 0.0,
+      "field_to_exchange_frobenius": 0.0,
+      "coefficient_convention": "Pauli strings; full on-site hz counted once; absent terms excluded"
+    },
+    "ground_branches": [
+      {
+        "L": 48,
+        "parity": 0,
+        "seed": 17,
+        "chi": 128,
+        "E_physical": -37.006207518876835,
+        "S_central3": 0.9056869505958817,
+        "S_fractional": 0.892407999595935,
+        "profiles": {
+          "0.25": {
+            "c": 1.1175414833274777,
+            "rms": 0.030706328300342572
+          },
+          "0.375": {
+            "c": 2.0881570473396627,
+            "rms": 0.028093879837238253
+          }
+        },
+        "convergence": {
+          "local_residual": 9.998236890756165e-11,
+          "discarded_weight": 1.4432899320127035e-13,
+          "delta_E": 3.197442310920451e-14,
+          "delta_S": 1.6612267117466217e-12,
+          "canonical_vs_sweep_S": -1.1499579066764909e-11,
+          "sweep_converged": true,
+          "bond_dimension_converged": "not established by a completed schedule alone"
+        },
+        "name": "simple_attr_7_m1_5_m7",
+        "source": "simple_attractive/results/simple_attr_7_m1_5_m7_L48_P0_s17.json",
+        "record_sha256": "9c9e466e9c9be9c620c5c12bb008db103cbf16272c0019350d4eb21412b4ba35",
+        "completed_parities": [
+          0,
+          1
+        ],
+        "both_parities_complete": true,
+        "converged_parities": [
+          0,
+          1
+        ],
+        "E_odd_minus_even": 0.07012154229822443
+      },
+      {
+        "L": 96,
+        "parity": 0,
+        "seed": 17,
+        "chi": 128,
+        "E_physical": -74.40954373919674,
+        "S_central3": 1.0153928989578456,
+        "S_fractional": 1.0058679237279502,
+        "profiles": {
+          "0.25": {
+            "c": 1.0252300839396264,
+            "rms": 0.017626282346269975
+          },
+          "0.375": {
+            "c": 1.3365085821475964,
+            "rms": 0.01627967492654535
+          }
+        },
+        "convergence": {
+          "local_residual": 9.998867540072827e-11,
+          "discarded_weight": 1.7824186571147038e-11,
+          "delta_E": 3.6770586575585185e-12,
+          "delta_S": 2.609489291316436e-09,
+          "canonical_vs_sweep_S": -4.0258969491446805e-09,
+          "sweep_converged": true,
+          "bond_dimension_converged": "not established by a completed schedule alone"
+        },
+        "name": "simple_attr_7_m1_5_m7",
+        "source": "simple_attractive/results/simple_attr_7_m1_5_m7_L96_P0_s17.json",
+        "record_sha256": "f63ce394bb16fdd1b2ba01e36679853e17a09afc9a0d336c5713dd4f376831a8",
+        "completed_parities": [
+          0,
+          1
+        ],
+        "both_parities_complete": true,
+        "converged_parities": [
+          0,
+          1
+        ],
+        "E_odd_minus_even": 0.03375478622625394
+      }
+    ],
+    "pairs": [
+      {
+        "sizes": [
+          48,
+          96
+        ],
+        "parities": [
+          0,
+          0
+        ],
+        "both_parities_complete": true,
+        "selected_sweeps_converged": true,
+        "c_central3": 0.9496333659469561,
+        "c_fractional": 0.9821284193093783
+      }
+    ]
+  }
+}

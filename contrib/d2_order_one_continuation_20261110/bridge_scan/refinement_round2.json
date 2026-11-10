@@ -1,0 +1,131 @@
+{
+  "points": [
+    {
+      "name": "b_r2_d1_4_q0_hm53_64",
+      "family": "r2_d1_4",
+      "r": "2",
+      "D": "1/4",
+      "q": "0",
+      "hz": "-53/64",
+      "couplings": {
+        "Jx": 0.5,
+        "Jy": -0.5,
+        "Jz": 0.5,
+        "Dz": 0.25,
+        "hz": -0.828125
+      },
+      "metrics": {
+        "pauli_string_count": 6,
+        "grouped_term_count": 4,
+        "grouped_term_convention": "XX+YY, XX-YY, ZZ, XY-YX, Z",
+        "real_hopping_Jx_plus_Jy": 0.0,
+        "pairing_Jx_minus_Jy": 1.0,
+        "bare_mu_4Jz_plus_2hz": 0.34375,
+        "raw_coefficient_spread": 3.3125,
+        "exchange_coefficient_spread": 2.0,
+        "exchange_singular_values": [
+          0.7499999999999999,
+          0.5,
+          0.25000000000000006
+        ],
+        "nonzero_singular_spread": 2.999999999999999,
+        "exchange_symmetric_frobenius": 0.8660254037844386,
+        "exchange_antisymmetric_frobenius": 0.3535533905932738,
+        "antisymmetric_to_symmetric": 0.4082482904638631,
+        "field_norm": 0.828125,
+        "field_to_exchange_frobenius": 0.8853028638349058,
+        "coefficient_convention": "Pauli strings; full on-site hz counted once; absent terms excluded"
+      },
+      "q_cancellation_fraction": 0.0
+    }
+  ],
+  "decisions": [
+    {
+      "parameters": [
+        "2",
+        "1/4",
+        "0"
+      ],
+      "status": "midpoint",
+      "field": "-53/64",
+      "bracket_names": [
+        "b_r2_d1_4_q0_hm27_32",
+        "b_r2_d1_4_q0_hm13_16"
+      ],
+      "bracket_densities": [
+        0.2038695094787051,
+        0.35324831189759814
+      ]
+    },
+    {
+      "parameters": [
+        "2",
+        "1/4",
+        "1/16"
+      ],
+      "status": "anchor_already_within_0.015"
+    },
+    {
+      "parameters": [
+        "2",
+        "1/4",
+        "1/8"
+      ],
+      "status": "anchor_already_within_0.015"
+    },
+    {
+      "parameters": [
+        "2",
+        "3/16",
+        "0"
+      ],
+      "status": "anchor_already_within_0.015"
+    },
+    {
+      "parameters": [
+        "2",
+        "3/16",
+        "1/16"
+      ],
+      "status": "anchor_already_within_0.015"
+    },
+    {
+      "parameters": [
+        "2",
+        "3/16",
+        "1/8"
+      ],
+      "status": "no_bracket"
+    },
+    {
+      "parameters": [
+        "5/2",
+        "1/10",
+        "0"
+      ],
+      "status": "anchor_already_within_0.015"
+    },
+    {
+      "parameters": [
+        "5/2",
+        "1/10",
+        "1/16"
+      ],
+      "status": "anchor_already_within_0.015"
+    },
+    {
+      "parameters": [
+        "5/2",
+        "1/10",
+        "1/8"
+      ],
+      "status": "no_bracket"
+    }
+  ],
+  "round": 2,
+  "registration": "PROTOCOL.md density refinement",
+  "sizes": [
+    24
+  ],
+  "chi": 64
+}

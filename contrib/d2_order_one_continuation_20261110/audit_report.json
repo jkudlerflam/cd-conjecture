@@ -1,0 +1,1282 @@
+{
+  "status_counts": {
+    "interrupted": 2,
+    "done": 126
+  },
+  "completed_count": 126,
+  "failed_sweep_gates": [],
+  "pending_checkpoint_checks": [],
+  "errors": [],
+  "records": [
+    {
+      "source": "validation/bridge_r4_u1_k4_L192_P0_s17.json",
+      "status": "interrupted",
+      "checks": []
+    },
+    {
+      "source": "validation/bridge_r4_u1_k4_L192_P1_s17.json",
+      "status": "interrupted",
+      "checks": []
+    },
+    {
+      "source": "validation/bridge_r4_u1_k4_L96_P0_s17.json",
+      "status": "done",
+      "checks": [
+        "solver source hash and target interaction range",
+        "shape, finite values, canonical entropy, final energy, density bounds",
+        "checkpoint identity and history length"
+      ],
+      "sweep_converged": true
+    },
+    {
+      "source": "validation/bridge_r4_u1_k4_L96_P1_s17.json",
+      "status": "done",
+      "checks": [
+        "solver source hash and target interaction range",
+        "shape, finite values, canonical entropy, final energy, density bounds",
+        "checkpoint identity and history length"
+      ],
+      "sweep_converged": true
+    },
+    {
+      "source": "bridge_scan/dmrg/b_r2_d1_4_q0_hm11_16_L24_P0_s17.json",
+      "status": "done",
+      "checks": [
+        "solver source hash and target interaction range",
+        "shape, finite values, canonical entropy, final energy, density bounds",
+        "checkpoint identity and history length"
+      ],
+      "sweep_converged": true
+    },
+    {
+      "source": "bridge_scan/dmrg/b_r2_d1_4_q0_hm11_16_L24_P1_s17.json",
+      "status": "done",
+      "checks": [
+        "solver source hash and target interaction range",
+        "shape, finite values, canonical entropy, final energy, density bounds",
+        "checkpoint identity and history length"
+      ],
+      "sweep_converged": true
+    },
+    {
+      "source": "bridge_scan/dmrg/b_r2_d1_4_q0_hm13_16_L24_P0_s17.json",
+      "status": "done",
+      "checks": [
+        "solver source hash and target interaction range",
+        "shape, finite values, canonical entropy, final energy, density bounds",
+        "checkpoint identity and history length"
+      ],
+      "sweep_converged": true
+    },
+    {
+      "source": "bridge_scan/dmrg/b_r2_d1_4_q0_hm13_16_L24_P1_s17.json",
+      "status": "done",
+      "checks": [
+        "solver source hash and target interaction range",
+        "shape, finite values, canonical entropy, final energy, density bounds",
+        "checkpoint identity and history length"
+      ],
+      "sweep_converged": true
+    },
+    {
+      "source": "bridge_scan/dmrg/b_r2_d1_4_q0_hm27_32_L24_P0_s17.json",
+      "status": "done",
+      "checks": [
+        "solver source hash and target interaction range",
+        "shape, finite values, canonical entropy, final energy, density bounds",
+        "checkpoint identity and history length"
+      ],
+      "sweep_converged": true
+    },
+    {
+      "source": "bridge_scan/dmrg/b_r2_d1_4_q0_hm27_32_L24_P1_s17.json",
+      "status": "done",
+      "checks": [
+        "solver source hash and target interaction range",
+        "shape, finite values, canonical entropy, final energy, density bounds",
+        "checkpoint identity and history length"
+      ],
+      "sweep_converged": true
+    },
+    {
+      "source": "bridge_scan/dmrg/b_r2_d1_4_q0_hm3_4_L24_P0_s17.json",
+      "status": "done",
+      "checks": [
+        "solver source hash and target interaction range",
+        "shape, finite values, canonical entropy, final energy, density bounds",
+        "checkpoint identity and history length"
+      ],
+      "sweep_converged": true
+    },
+    {
+      "source": "bridge_scan/dmrg/b_r2_d1_4_q0_hm3_4_L24_P1_s17.json",
+      "status": "done",
+      "checks": [
+        "solver source hash and target interaction range",
+        "shape, finite values, canonical entropy, final energy, density bounds",
+        "checkpoint identity and history length"
+      ],
+      "sweep_converged": true
+    },
+    {
+      "source": "bridge_scan/dmrg/b_r2_d1_4_q0_hm53_64_L24_P0_s17.json",
+      "status": "done",
+      "checks": [
+        "solver source hash and target interaction range",
+        "shape, finite values, canonical entropy, final energy, density bounds",
+        "checkpoint identity and history length"
+      ],
+      "sweep_converged": true
+    },
+    {
+      "source": "bridge_scan/dmrg/b_r2_d1_4_q0_hm53_64_L24_P1_s17.json",
+      "status": "done",
+      "checks": [
+        "solver source hash and target interaction range",
+        "shape, finite values, canonical entropy, final energy, density bounds",
+        "checkpoint identity and history length"
+      ],
+      "sweep_converged": true
+    },
+    {
+      "source": "bridge_scan/dmrg/b_r2_d1_4_q0_hm7_8_L24_P0_s17.json",
+      "status": "done",
+      "checks": [
+        "solver source hash and target interaction range",
+        "shape, finite values, canonical entropy, final energy, density bounds",
+        "checkpoint identity and history length"
+      ],
+      "sweep_converged": true
+    },
+    {
+      "source": "bridge_scan/dmrg/b_r2_d1_4_q0_hm7_8_L24_P1_s17.json",
+      "status": "done",
+      "checks": [
+        "solver source hash and target interaction range",
+        "shape, finite values, canonical entropy, final energy, density bounds",
+        "checkpoint identity and history length"
+      ],
+      "sweep_converged": true
+    },
+    {
+      "source": "bridge_scan/dmrg/b_r2_d1_4_q1_16_hm11_16_L24_P0_s17.json",
+      "status": "done",
+      "checks": [
+        "solver source hash and target interaction range",
+        "shape, finite values, canonical entropy, final energy, density bounds",
+        "checkpoint identity and history length"
+      ],
+      "sweep_converged": true
+    },
+    {
+      "source": "bridge_scan/dmrg/b_r2_d1_4_q1_16_hm11_16_L24_P1_s17.json",
+      "status": "done",
+      "checks": [
+        "solver source hash and target interaction range",
+        "shape, finite values, canonical entropy, final energy, density bounds",
+        "checkpoint identity and history length"
+      ],
+      "sweep_converged": true
+    },
+    {
+      "source": "bridge_scan/dmrg/b_r2_d1_4_q1_16_hm13_16_L24_P0_s17.json",
+      "status": "done",
+      "checks": [
+        "solver source hash and target interaction range",
+        "shape, finite values, canonical entropy, final energy, density bounds",
+        "checkpoint identity and history length"
+      ],
+      "sweep_converged": true
+    },
+    {
+      "source": "bridge_scan/dmrg/b_r2_d1_4_q1_16_hm13_16_L24_P1_s17.json",
+      "status": "done",
+      "checks": [
+        "solver source hash and target interaction range",
+        "shape, finite values, canonical entropy, final energy, density bounds",
+        "checkpoint identity and history length"
+      ],
+      "sweep_converged": true
+    },
+    {
+      "source": "bridge_scan/dmrg/b_r2_d1_4_q1_16_hm13_16_L48_P0_s17.json",
+      "status": "done",
+      "checks": [
+        "solver source hash and target interaction range",
+        "shape, finite values, canonical entropy, final energy, density bounds",
+        "checkpoint identity and history length"
+      ],
+      "sweep_converged": true
+    },
+    {
+      "source": "bridge_scan/dmrg/b_r2_d1_4_q1_16_hm13_16_L48_P1_s17.json",
+      "status": "done",
+      "checks": [
+        "solver source hash and target interaction range",
+        "shape, finite values, canonical entropy, final energy, density bounds",
+        "checkpoint identity and history length"
+      ],
+      "sweep_converged": true
+    },
+    {
+      "source": "bridge_scan/dmrg/b_r2_d1_4_q1_16_hm3_4_L24_P0_s17.json",
+      "status": "done",
+      "checks": [
+        "solver source hash and target interaction range",
+        "shape, finite values, canonical entropy, final energy, density bounds",
+        "checkpoint identity and history length"
+      ],
+      "sweep_converged": true
+    },
+    {
+      "source": "bridge_scan/dmrg/b_r2_d1_4_q1_16_hm3_4_L24_P1_s17.json",
+      "status": "done",
+      "checks": [
+        "solver source hash and target interaction range",
+        "shape, finite values, canonical entropy, final energy, density bounds",
+        "checkpoint identity and history length"
+      ],
+      "sweep_converged": true
+    },
+    {
+      "source": "bridge_scan/dmrg/b_r2_d1_4_q1_16_hm7_8_L24_P0_s17.json",
+      "status": "done",
+      "checks": [
+        "solver source hash and target interaction range",
+        "shape, finite values, canonical entropy, final energy, density bounds",
+        "checkpoint identity and history length"
+      ],
+      "sweep_converged": true
+    },
+    {
+      "source": "bridge_scan/dmrg/b_r2_d1_4_q1_16_hm7_8_L24_P1_s17.json",
+      "status": "done",
+      "checks": [
+        "solver source hash and target interaction range",
+        "shape, finite values, canonical entropy, final energy, density bounds",
+        "checkpoint identity and history length"
+      ],
+      "sweep_converged": true
+    },
+    {
+      "source": "bridge_scan/dmrg/b_r2_d1_4_q1_8_hm11_16_L24_P0_s17.json",
+      "status": "done",
+      "checks": [
+        "solver source hash and target interaction range",
+        "shape, finite values, canonical entropy, final energy, density bounds",
+        "checkpoint identity and history length"
+      ],
+      "sweep_converged": true
+    },
+    {
+      "source": "bridge_scan/dmrg/b_r2_d1_4_q1_8_hm11_16_L24_P1_s17.json",
+      "status": "done",
+      "checks": [
+        "solver source hash and target interaction range",
+        "shape, finite values, canonical entropy, final energy, density bounds",
+        "checkpoint identity and history length"
+      ],
+      "sweep_converged": true
+    },
+    {
+      "source": "bridge_scan/dmrg/b_r2_d1_4_q1_8_hm13_16_L24_P0_s17.json",
+      "status": "done",
+      "checks": [
+        "solver source hash and target interaction range",
+        "shape, finite values, canonical entropy, final energy, density bounds",
+        "checkpoint identity and history length"
+      ],
+      "sweep_converged": true
+    },
+    {
+      "source": "bridge_scan/dmrg/b_r2_d1_4_q1_8_hm13_16_L24_P1_s17.json",
+      "status": "done",
+      "checks": [
+        "solver source hash and target interaction range",
+        "shape, finite values, canonical entropy, final energy, density bounds",
+        "checkpoint identity and history length"
+      ],
+      "sweep_converged": true
+    },
+    {
+      "source": "bridge_scan/dmrg/b_r2_d1_4_q1_8_hm3_4_L24_P0_s17.json",
+      "status": "done",
+      "checks": [
+        "solver source hash and target interaction range",
+        "shape, finite values, canonical entropy, final energy, density bounds",
+        "checkpoint identity and history length"
+      ],
+      "sweep_converged": true
+    },
+    {
+      "source": "bridge_scan/dmrg/b_r2_d1_4_q1_8_hm3_4_L24_P1_s17.json",
+      "status": "done",
+      "checks": [
+        "solver source hash and target interaction range",
+        "shape, finite values, canonical entropy, final energy, density bounds",
+        "checkpoint identity and history length"
+      ],
+      "sweep_converged": true
+    },
+    {
+      "source": "bridge_scan/dmrg/b_r2_d1_4_q1_8_hm7_8_L24_P0_s17.json",
+      "status": "done",
+      "checks": [
+        "solver source hash and target interaction range",
+        "shape, finite values, canonical entropy, final energy, density bounds",
+        "checkpoint identity and history length"
+      ],
+      "sweep_converged": true
+    },
+    {
+      "source": "bridge_scan/dmrg/b_r2_d1_4_q1_8_hm7_8_L24_P1_s17.json",
+      "status": "done",
+      "checks": [
+        "solver source hash and target interaction range",
+        "shape, finite values, canonical entropy, final energy, density bounds",
+        "checkpoint identity and history length"
+      ],
+      "sweep_converged": true
+    },
+    {
+      "source": "bridge_scan/dmrg/b_r2_d3_16_q0_hm11_16_L24_P0_s17.json",
+      "status": "done",
+      "checks": [
+        "solver source hash and target interaction range",
+        "shape, finite values, canonical entropy, final energy, density bounds",
+        "checkpoint identity and history length"
+      ],
+      "sweep_converged": true
+    },
+    {
+      "source": "bridge_scan/dmrg/b_r2_d3_16_q0_hm11_16_L24_P1_s17.json",
+      "status": "done",
+      "checks": [
+        "solver source hash and target interaction range",
+        "shape, finite values, canonical entropy, final energy, density bounds",
+        "checkpoint identity and history length"
+      ],
+      "sweep_converged": true
+    },
+    {
+      "source": "bridge_scan/dmrg/b_r2_d3_16_q0_hm3_4_L24_P0_s17.json",
+      "status": "done",
+      "checks": [
+        "solver source hash and target interaction range",
+        "shape, finite values, canonical entropy, final energy, density bounds",
+        "checkpoint identity and history length"
+      ],
+      "sweep_converged": true
+    },
+    {
+      "source": "bridge_scan/dmrg/b_r2_d3_16_q0_hm3_4_L24_P1_s17.json",
+      "status": "done",
+      "checks": [
+        "solver source hash and target interaction range",
+        "shape, finite values, canonical entropy, final energy, density bounds",
+        "checkpoint identity and history length"
+      ],
+      "sweep_converged": true
+    },
+    {
+      "source": "bridge_scan/dmrg/b_r2_d3_16_q0_hm5_8_L24_P0_s17.json",
+      "status": "done",
+      "checks": [
+        "solver source hash and target interaction range",
+        "shape, finite values, canonical entropy, final energy, density bounds",
+        "checkpoint identity and history length"
+      ],
+      "sweep_converged": true
+    },
+    {
+      "source": "bridge_scan/dmrg/b_r2_d3_16_q0_hm5_8_L24_P1_s17.json",
+      "status": "done",
+      "checks": [
+        "solver source hash and target interaction range",
+        "shape, finite values, canonical entropy, final energy, density bounds",
+        "checkpoint identity and history length"
+      ],
+      "sweep_converged": true
+    },
+    {
+      "source": "bridge_scan/dmrg/b_r2_d3_16_q0_hm5_8_L48_P0_s17.json",
+      "status": "done",
+      "checks": [
+        "solver source hash and target interaction range",
+        "shape, finite values, canonical entropy, final energy, density bounds",
+        "checkpoint identity and history length"
+      ],
+      "sweep_converged": true
+    },
+    {
+      "source": "bridge_scan/dmrg/b_r2_d3_16_q0_hm5_8_L48_P1_s17.json",
+      "status": "done",
+      "checks": [
+        "solver source hash and target interaction range",
+        "shape, finite values, canonical entropy, final energy, density bounds",
+        "checkpoint identity and history length"
+      ],
+      "sweep_converged": true
+    },
+    {
+      "source": "bridge_scan/dmrg/b_r2_d3_16_q0_hm9_16_L24_P0_s17.json",
+      "status": "done",
+      "checks": [
+        "solver source hash and target interaction range",
+        "shape, finite values, canonical entropy, final energy, density bounds",
+        "checkpoint identity and history length"
+      ],
+      "sweep_converged": true
+    },
+    {
+      "source": "bridge_scan/dmrg/b_r2_d3_16_q0_hm9_16_L24_P1_s17.json",
+      "status": "done",
+      "checks": [
+        "solver source hash and target interaction range",
+        "shape, finite values, canonical entropy, final energy, density bounds",
+        "checkpoint identity and history length"
+      ],
+      "sweep_converged": true
+    },
+    {
+      "source": "bridge_scan/dmrg/b_r2_d3_16_q1_16_hm11_16_L24_P0_s17.json",
+      "status": "done",
+      "checks": [
+        "solver source hash and target interaction range",
+        "shape, finite values, canonical entropy, final energy, density bounds",
+        "checkpoint identity and history length"
+      ],
+      "sweep_converged": true
+    },
+    {
+      "source": "bridge_scan/dmrg/b_r2_d3_16_q1_16_hm11_16_L24_P1_s17.json",
+      "status": "done",
+      "checks": [
+        "solver source hash and target interaction range",
+        "shape, finite values, canonical entropy, final energy, density bounds",
+        "checkpoint identity and history length"
+      ],
+      "sweep_converged": true
+    },
+    {
+      "source": "bridge_scan/dmrg/b_r2_d3_16_q1_16_hm3_4_L24_P0_s17.json",
+      "status": "done",
+      "checks": [
+        "solver source hash and target interaction range",
+        "shape, finite values, canonical entropy, final energy, density bounds",
+        "checkpoint identity and history length"
+      ],
+      "sweep_converged": true
+    },
+    {
+      "source": "bridge_scan/dmrg/b_r2_d3_16_q1_16_hm3_4_L24_P1_s17.json",
+      "status": "done",
+      "checks": [
+        "solver source hash and target interaction range",
+        "shape, finite values, canonical entropy, final energy, density bounds",
+        "checkpoint identity and history length"
+      ],
+      "sweep_converged": true
+    },
+    {
+      "source": "bridge_scan/dmrg/b_r2_d3_16_q1_16_hm5_8_L24_P0_s17.json",
+      "status": "done",
+      "checks": [
+        "solver source hash and target interaction range",
+        "shape, finite values, canonical entropy, final energy, density bounds",
+        "checkpoint identity and history length"
+      ],
+      "sweep_converged": true
+    },
+    {
+      "source": "bridge_scan/dmrg/b_r2_d3_16_q1_16_hm5_8_L24_P1_s17.json",
+      "status": "done",
+      "checks": [
+        "solver source hash and target interaction range",
+        "shape, finite values, canonical entropy, final energy, density bounds",
+        "checkpoint identity and history length"
+      ],
+      "sweep_converged": true
+    },
+    {
+      "source": "bridge_scan/dmrg/b_r2_d3_16_q1_16_hm9_16_L24_P0_s17.json",
+      "status": "done",
+      "checks": [
+        "solver source hash and target interaction range",
+        "shape, finite values, canonical entropy, final energy, density bounds",
+        "checkpoint identity and history length"
+      ],
+      "sweep_converged": true
+    },
+    {
+      "source": "bridge_scan/dmrg/b_r2_d3_16_q1_16_hm9_16_L24_P1_s17.json",
+      "status": "done",
+      "checks": [
+        "solver source hash and target interaction range",
+        "shape, finite values, canonical entropy, final energy, density bounds",
+        "checkpoint identity and history length"
+      ],
+      "sweep_converged": true
+    },
+    {
+      "source": "bridge_scan/dmrg/b_r2_d3_16_q1_8_hm11_16_L24_P0_s17.json",
+      "status": "done",
+      "checks": [
+        "solver source hash and target interaction range",
+        "shape, finite values, canonical entropy, final energy, density bounds",
+        "checkpoint identity and history length"
+      ],
+      "sweep_converged": true
+    },
+    {
+      "source": "bridge_scan/dmrg/b_r2_d3_16_q1_8_hm11_16_L24_P1_s17.json",
+      "status": "done",
+      "checks": [
+        "solver source hash and target interaction range",
+        "shape, finite values, canonical entropy, final energy, density bounds",
+        "checkpoint identity and history length"
+      ],
+      "sweep_converged": true
+    },
+    {
+      "source": "bridge_scan/dmrg/b_r2_d3_16_q1_8_hm3_4_L24_P0_s17.json",
+      "status": "done",
+      "checks": [
+        "solver source hash and target interaction range",
+        "shape, finite values, canonical entropy, final energy, density bounds",
+        "checkpoint identity and history length"
+      ],
+      "sweep_converged": true
+    },
+    {
+      "source": "bridge_scan/dmrg/b_r2_d3_16_q1_8_hm3_4_L24_P1_s17.json",
+      "status": "done",
+      "checks": [
+        "solver source hash and target interaction range",
+        "shape, finite values, canonical entropy, final energy, density bounds",
+        "checkpoint identity and history length"
+      ],
+      "sweep_converged": true
+    },
+    {
+      "source": "bridge_scan/dmrg/b_r2_d3_16_q1_8_hm5_8_L24_P0_s17.json",
+      "status": "done",
+      "checks": [
+        "solver source hash and target interaction range",
+        "shape, finite values, canonical entropy, final energy, density bounds",
+        "checkpoint identity and history length"
+      ],
+      "sweep_converged": true
+    },
+    {
+      "source": "bridge_scan/dmrg/b_r2_d3_16_q1_8_hm5_8_L24_P1_s17.json",
+      "status": "done",
+      "checks": [
+        "solver source hash and target interaction range",
+        "shape, finite values, canonical entropy, final energy, density bounds",
+        "checkpoint identity and history length"
+      ],
+      "sweep_converged": true
+    },
+    {
+      "source": "bridge_scan/dmrg/b_r2_d3_16_q1_8_hm9_16_L24_P0_s17.json",
+      "status": "done",
+      "checks": [
+        "solver source hash and target interaction range",
+        "shape, finite values, canonical entropy, final energy, density bounds",
+        "checkpoint identity and history length"
+      ],
+      "sweep_converged": true
+    },
+    {
+      "source": "bridge_scan/dmrg/b_r2_d3_16_q1_8_hm9_16_L24_P1_s17.json",
+      "status": "done",
+      "checks": [
+        "solver source hash and target interaction range",
+        "shape, finite values, canonical entropy, final energy, density bounds",
+        "checkpoint identity and history length"
+      ],
+      "sweep_converged": true
+    },
+    {
+      "source": "bridge_scan/dmrg/b_r5_2_d1_10_q0_hm13_16_L24_P0_s17.json",
+      "status": "done",
+      "checks": [
+        "solver source hash and target interaction range",
+        "shape, finite values, canonical entropy, final energy, density bounds",
+        "checkpoint identity and history length"
+      ],
+      "sweep_converged": true
+    },
+    {
+      "source": "bridge_scan/dmrg/b_r5_2_d1_10_q0_hm13_16_L24_P1_s17.json",
+      "status": "done",
+      "checks": [
+        "solver source hash and target interaction range",
+        "shape, finite values, canonical entropy, final energy, density bounds",
+        "checkpoint identity and history length"
+      ],
+      "sweep_converged": true
+    },
+    {
+      "source": "bridge_scan/dmrg/b_r5_2_d1_10_q0_hm15_16_L24_P0_s17.json",
+      "status": "done",
+      "checks": [
+        "solver source hash and target interaction range",
+        "shape, finite values, canonical entropy, final energy, density bounds",
+        "checkpoint identity and history length"
+      ],
+      "sweep_converged": true
+    },
+    {
+      "source": "bridge_scan/dmrg/b_r5_2_d1_10_q0_hm15_16_L24_P1_s17.json",
+      "status": "done",
+      "checks": [
+        "solver source hash and target interaction range",
+        "shape, finite values, canonical entropy, final energy, density bounds",
+        "checkpoint identity and history length"
+      ],
+      "sweep_converged": true
+    },
+    {
+      "source": "bridge_scan/dmrg/b_r5_2_d1_10_q0_hm27_32_L24_P0_s17.json",
+      "status": "done",
+      "checks": [
+        "solver source hash and target interaction range",
+        "shape, finite values, canonical entropy, final energy, density bounds",
+        "checkpoint identity and history length"
+      ],
+      "sweep_converged": true
+    },
+    {
+      "source": "bridge_scan/dmrg/b_r5_2_d1_10_q0_hm27_32_L24_P1_s17.json",
+      "status": "done",
+      "checks": [
+        "solver source hash and target interaction range",
+        "shape, finite values, canonical entropy, final energy, density bounds",
+        "checkpoint identity and history length"
+      ],
+      "sweep_converged": true
+    },
+    {
+      "source": "bridge_scan/dmrg/b_r5_2_d1_10_q0_hm7_8_L192_P0_s17.json",
+      "status": "done",
+      "checks": [
+        "solver source hash and target interaction range",
+        "shape, finite values, canonical entropy, final energy, density bounds",
+        "checkpoint identity and history length"
+      ],
+      "sweep_converged": true
+    },
+    {
+      "source": "bridge_scan/dmrg/b_r5_2_d1_10_q0_hm7_8_L192_P1_s17.json",
+      "status": "done",
+      "checks": [
+        "solver source hash and target interaction range",
+        "shape, finite values, canonical entropy, final energy, density bounds",
+        "checkpoint identity and history length"
+      ],
+      "sweep_converged": true
+    },
+    {
+      "source": "bridge_scan/dmrg/b_r5_2_d1_10_q0_hm7_8_L24_P0_s17.json",
+      "status": "done",
+      "checks": [
+        "solver source hash and target interaction range",
+        "shape, finite values, canonical entropy, final energy, density bounds",
+        "checkpoint identity and history length"
+      ],
+      "sweep_converged": true
+    },
+    {
+      "source": "bridge_scan/dmrg/b_r5_2_d1_10_q0_hm7_8_L24_P1_s17.json",
+      "status": "done",
+      "checks": [
+        "solver source hash and target interaction range",
+        "shape, finite values, canonical entropy, final energy, density bounds",
+        "checkpoint identity and history length"
+      ],
+      "sweep_converged": true
+    },
+    {
+      "source": "bridge_scan/dmrg/b_r5_2_d1_10_q0_hm7_8_L48_P0_s17.json",
+      "status": "done",
+      "checks": [
+        "solver source hash and target interaction range",
+        "shape, finite values, canonical entropy, final energy, density bounds",
+        "checkpoint identity and history length"
+      ],
+      "sweep_converged": true
+    },
+    {
+      "source": "bridge_scan/dmrg/b_r5_2_d1_10_q0_hm7_8_L48_P1_s17.json",
+      "status": "done",
+      "checks": [
+        "solver source hash and target interaction range",
+        "shape, finite values, canonical entropy, final energy, density bounds",
+        "checkpoint identity and history length"
+      ],
+      "sweep_converged": true
+    },
+    {
+      "source": "bridge_scan/dmrg/b_r5_2_d1_10_q0_hm7_8_L96_P0_s17.json",
+      "status": "done",
+      "checks": [
+        "solver source hash and target interaction range",
+        "shape, finite values, canonical entropy, final energy, density bounds",
+        "checkpoint identity and history length"
+      ],
+      "sweep_converged": true
+    },
+    {
+      "source": "bridge_scan/dmrg/b_r5_2_d1_10_q0_hm7_8_L96_P1_s17.json",
+      "status": "done",
+      "checks": [
+        "solver source hash and target interaction range",
+        "shape, finite values, canonical entropy, final energy, density bounds",
+        "checkpoint identity and history length"
+      ],
+      "sweep_converged": true
+    },
+    {
+      "source": "bridge_scan/dmrg/b_r5_2_d1_10_q1_16_hm13_16_L24_P0_s17.json",
+      "status": "done",
+      "checks": [
+        "solver source hash and target interaction range",
+        "shape, finite values, canonical entropy, final energy, density bounds",
+        "checkpoint identity and history length"
+      ],
+      "sweep_converged": true
+    },
+    {
+      "source": "bridge_scan/dmrg/b_r5_2_d1_10_q1_16_hm13_16_L24_P1_s17.json",
+      "status": "done",
+      "checks": [
+        "solver source hash and target interaction range",
+        "shape, finite values, canonical entropy, final energy, density bounds",
+        "checkpoint identity and history length"
+      ],
+      "sweep_converged": true
+    },
+    {
+      "source": "bridge_scan/dmrg/b_r5_2_d1_10_q1_16_hm15_16_L24_P0_s17.json",
+      "status": "done",
+      "checks": [
+        "solver source hash and target interaction range",
+        "shape, finite values, canonical entropy, final energy, density bounds",
+        "checkpoint identity and history length"
+      ],
+      "sweep_converged": true
+    },
+    {
+      "source": "bridge_scan/dmrg/b_r5_2_d1_10_q1_16_hm15_16_L24_P1_s17.json",
+      "status": "done",
+      "checks": [
+        "solver source hash and target interaction range",
+        "shape, finite values, canonical entropy, final energy, density bounds",
+        "checkpoint identity and history length"
+      ],
+      "sweep_converged": true
+    },
+    {
+      "source": "bridge_scan/dmrg/b_r5_2_d1_10_q1_16_hm27_32_L24_P0_s17.json",
+      "status": "done",
+      "checks": [
+        "solver source hash and target interaction range",
+        "shape, finite values, canonical entropy, final energy, density bounds",
+        "checkpoint identity and history length"
+      ],
+      "sweep_converged": true
+    },
+    {
+      "source": "bridge_scan/dmrg/b_r5_2_d1_10_q1_16_hm27_32_L24_P1_s17.json",
+      "status": "done",
+      "checks": [
+        "solver source hash and target interaction range",
+        "shape, finite values, canonical entropy, final energy, density bounds",
+        "checkpoint identity and history length"
+      ],
+      "sweep_converged": true
+    },
+    {
+      "source": "bridge_scan/dmrg/b_r5_2_d1_10_q1_16_hm7_8_L24_P0_s17.json",
+      "status": "done",
+      "checks": [
+        "solver source hash and target interaction range",
+        "shape, finite values, canonical entropy, final energy, density bounds",
+        "checkpoint identity and history length"
+      ],
+      "sweep_converged": true
+    },
+    {
+      "source": "bridge_scan/dmrg/b_r5_2_d1_10_q1_16_hm7_8_L24_P1_s17.json",
+      "status": "done",
+      "checks": [
+        "solver source hash and target interaction range",
+        "shape, finite values, canonical entropy, final energy, density bounds",
+        "checkpoint identity and history length"
+      ],
+      "sweep_converged": true
+    },
+    {
+      "source": "bridge_scan/dmrg/b_r5_2_d1_10_q1_8_hm13_16_L24_P0_s17.json",
+      "status": "done",
+      "checks": [
+        "solver source hash and target interaction range",
+        "shape, finite values, canonical entropy, final energy, density bounds",
+        "checkpoint identity and history length"
+      ],
+      "sweep_converged": true
+    },
+    {
+      "source": "bridge_scan/dmrg/b_r5_2_d1_10_q1_8_hm13_16_L24_P1_s17.json",
+      "status": "done",
+      "checks": [
+        "solver source hash and target interaction range",
+        "shape, finite values, canonical entropy, final energy, density bounds",
+        "checkpoint identity and history length"
+      ],
+      "sweep_converged": true
+    },
+    {
+      "source": "bridge_scan/dmrg/b_r5_2_d1_10_q1_8_hm15_16_L24_P0_s17.json",
+      "status": "done",
+      "checks": [
+        "solver source hash and target interaction range",
+        "shape, finite values, canonical entropy, final energy, density bounds",
+        "checkpoint identity and history length"
+      ],
+      "sweep_converged": true
+    },
+    {
+      "source": "bridge_scan/dmrg/b_r5_2_d1_10_q1_8_hm15_16_L24_P1_s17.json",
+      "status": "done",
+      "checks": [
+        "solver source hash and target interaction range",
+        "shape, finite values, canonical entropy, final energy, density bounds",
+        "checkpoint identity and history length"
+      ],
+      "sweep_converged": true
+    },
+    {
+      "source": "bridge_scan/dmrg/b_r5_2_d1_10_q1_8_hm27_32_L24_P0_s17.json",
+      "status": "done",
+      "checks": [
+        "solver source hash and target interaction range",
+        "shape, finite values, canonical entropy, final energy, density bounds",
+        "checkpoint identity and history length"
+      ],
+      "sweep_converged": true
+    },
+    {
+      "source": "bridge_scan/dmrg/b_r5_2_d1_10_q1_8_hm27_32_L24_P1_s17.json",
+      "status": "done",
+      "checks": [
+        "solver source hash and target interaction range",
+        "shape, finite values, canonical entropy, final energy, density bounds",
+        "checkpoint identity and history length"
+      ],
+      "sweep_converged": true
+    },
+    {
+      "source": "bridge_scan/dmrg/b_r5_2_d1_10_q1_8_hm7_8_L24_P0_s17.json",
+      "status": "done",
+      "checks": [
+        "solver source hash and target interaction range",
+        "shape, finite values, canonical entropy, final energy, density bounds",
+        "checkpoint identity and history length"
+      ],
+      "sweep_converged": true
+    },
+    {
+      "source": "bridge_scan/dmrg/b_r5_2_d1_10_q1_8_hm7_8_L24_P1_s17.json",
+      "status": "done",
+      "checks": [
+        "solver source hash and target interaction range",
+        "shape, finite values, canonical entropy, final energy, density bounds",
+        "checkpoint identity and history length"
+      ],
+      "sweep_converged": true
+    },
+    {
+      "source": "bridge_scan/dmrg/control_prior_seed_L24_P0_s17.json",
+      "status": "done",
+      "checks": [
+        "solver source hash and target interaction range",
+        "shape, finite values, canonical entropy, final energy, density bounds",
+        "checkpoint identity and history length"
+      ],
+      "sweep_converged": true
+    },
+    {
+      "source": "bridge_scan/dmrg/control_prior_seed_L24_P1_s17.json",
+      "status": "done",
+      "checks": [
+        "solver source hash and target interaction range",
+        "shape, finite values, canonical entropy, final energy, density bounds",
+        "checkpoint identity and history length"
+      ],
+      "sweep_converged": true
+    },
+    {
+      "source": "bridge_scan/dmrg/control_xx_L24_P0_s17.json",
+      "status": "done",
+      "checks": [
+        "solver source hash and target interaction range",
+        "shape, finite values, canonical entropy, final energy, density bounds",
+        "checkpoint identity and history length"
+      ],
+      "sweep_converged": true
+    },
+    {
+      "source": "bridge_scan/validation_snapshots/b_r5_2_d1_10_q0_hm7_8_L192_P0_s17_chi192.json",
+      "status": "done",
+      "checks": [
+        "solver source hash and target interaction range",
+        "shape, finite values, canonical entropy, final energy, density bounds"
+      ],
+      "sweep_converged": true,
+      "checkpoint_check": "Historical JSON may name an overwritten live checkpoint; consult preservation manifests."
+    },
+    {
+      "source": "bridge_scan/validation_snapshots/b_r5_2_d1_10_q0_hm7_8_L192_P0_s17_chi256.json",
+      "status": "done",
+      "checks": [
+        "solver source hash and target interaction range",
+        "shape, finite values, canonical entropy, final energy, density bounds"
+      ],
+      "sweep_converged": true,
+      "checkpoint_check": "Historical JSON may name an overwritten live checkpoint; consult preservation manifests."
+    },
+    {
+      "source": "bridge_scan/validation_snapshots/b_r5_2_d1_10_q0_hm7_8_L192_P1_s17_chi192.json",
+      "status": "done",
+      "checks": [
+        "solver source hash and target interaction range",
+        "shape, finite values, canonical entropy, final energy, density bounds"
+      ],
+      "sweep_converged": true,
+      "checkpoint_check": "Historical JSON may name an overwritten live checkpoint; consult preservation manifests."
+    },
+    {
+      "source": "bridge_scan/validation_snapshots/b_r5_2_d1_10_q0_hm7_8_L24_P0_s17_chi64.json",
+      "status": "done",
+      "checks": [
+        "solver source hash and target interaction range",
+        "shape, finite values, canonical entropy, final energy, density bounds"
+      ],
+      "sweep_converged": true,
+      "checkpoint_check": "Historical JSON may name an overwritten live checkpoint; consult preservation manifests."
+    },
+    {
+      "source": "bridge_scan/validation_snapshots/b_r5_2_d1_10_q0_hm7_8_L24_P1_s17_chi64.json",
+      "status": "done",
+      "checks": [
+        "solver source hash and target interaction range",
+        "shape, finite values, canonical entropy, final energy, density bounds"
+      ],
+      "sweep_converged": true,
+      "checkpoint_check": "Historical JSON may name an overwritten live checkpoint; consult preservation manifests."
+    },
+    {
+      "source": "bridge_scan/validation_snapshots/b_r5_2_d1_10_q0_hm7_8_L48_P0_s17_chi128.json",
+      "status": "done",
+      "checks": [
+        "solver source hash and target interaction range",
+        "shape, finite values, canonical entropy, final energy, density bounds"
+      ],
+      "sweep_converged": true,
+      "checkpoint_check": "Historical JSON may name an overwritten live checkpoint; consult preservation manifests."
+    },
+    {
+      "source": "bridge_scan/validation_snapshots/b_r5_2_d1_10_q0_hm7_8_L48_P0_s17_chi192.json",
+      "status": "done",
+      "checks": [
+        "solver source hash and target interaction range",
+        "shape, finite values, canonical entropy, final energy, density bounds"
+      ],
+      "sweep_converged": true,
+      "checkpoint_check": "Historical JSON may name an overwritten live checkpoint; consult preservation manifests."
+    },
+    {
+      "source": "bridge_scan/validation_snapshots/b_r5_2_d1_10_q0_hm7_8_L48_P1_s17_chi128.json",
+      "status": "done",
+      "checks": [
+        "solver source hash and target interaction range",
+        "shape, finite values, canonical entropy, final energy, density bounds"
+      ],
+      "sweep_converged": true,
+      "checkpoint_check": "Historical JSON may name an overwritten live checkpoint; consult preservation manifests."
+    },
+    {
+      "source": "bridge_scan/validation_snapshots/b_r5_2_d1_10_q0_hm7_8_L48_P1_s17_chi192.json",
+      "status": "done",
+      "checks": [
+        "solver source hash and target interaction range",
+        "shape, finite values, canonical entropy, final energy, density bounds"
+      ],
+      "sweep_converged": true,
+      "checkpoint_check": "Historical JSON may name an overwritten live checkpoint; consult preservation manifests."
+    },
+    {
+      "source": "bridge_scan/validation_snapshots/b_r5_2_d1_10_q0_hm7_8_L96_P0_s17_chi192.json",
+      "status": "done",
+      "checks": [
+        "solver source hash and target interaction range",
+        "shape, finite values, canonical entropy, final energy, density bounds"
+      ],
+      "sweep_converged": true,
+      "checkpoint_check": "Historical JSON may name an overwritten live checkpoint; consult preservation manifests."
+    },
+    {
+      "source": "bridge_scan/validation_snapshots/b_r5_2_d1_10_q0_hm7_8_L96_P0_s17_chi256.json",
+      "status": "done",
+      "checks": [
+        "solver source hash and target interaction range",
+        "shape, finite values, canonical entropy, final energy, density bounds"
+      ],
+      "sweep_converged": true,
+      "checkpoint_check": "Historical JSON may name an overwritten live checkpoint; consult preservation manifests."
+    },
+    {
+      "source": "bridge_scan/validation_snapshots/b_r5_2_d1_10_q0_hm7_8_L96_P1_s17_chi192.json",
+      "status": "done",
+      "checks": [
+        "solver source hash and target interaction range",
+        "shape, finite values, canonical entropy, final energy, density bounds"
+      ],
+      "sweep_converged": true,
+      "checkpoint_check": "Historical JSON may name an overwritten live checkpoint; consult preservation manifests."
+    },
+    {
+      "source": "attractive_scan/results/attr_ref_L192_P0_s17.json",
+      "status": "done",
+      "checks": [
+        "solver source hash and target interaction range",
+        "shape, finite values, canonical entropy, final energy, density bounds",
+        "checkpoint identity and history length"
+      ],
+      "sweep_converged": true
+    },
+    {
+      "source": "attractive_scan/results/attr_ref_L192_P1_s17.json",
+      "status": "done",
+      "checks": [
+        "solver source hash and target interaction range",
+        "shape, finite values, canonical entropy, final energy, density bounds",
+        "checkpoint identity and history length"
+      ],
+      "sweep_converged": true
+    },
+    {
+      "source": "attractive_scan/results/pref_rat_L48_P0_s17.json",
+      "status": "done",
+      "checks": [
+        "solver source hash and target interaction range",
+        "shape, finite values, canonical entropy, final energy, density bounds",
+        "checkpoint identity and history length"
+      ],
+      "sweep_converged": true
+    },
+    {
+      "source": "attractive_scan/results/pref_rat_L48_P1_s17.json",
+      "status": "done",
+      "checks": [
+        "solver source hash and target interaction range",
+        "shape, finite values, canonical entropy, final energy, density bounds",
+        "checkpoint identity and history length"
+      ],
+      "sweep_converged": true
+    },
+    {
+      "source": "attractive_scan/results/pref_rat_L96_P0_s17.json",
+      "status": "done",
+      "checks": [
+        "solver source hash and target interaction range",
+        "shape, finite values, canonical entropy, final energy, density bounds",
+        "checkpoint identity and history length"
+      ],
+      "sweep_converged": true
+    },
+    {
+      "source": "attractive_scan/results/pref_rat_L96_P1_s17.json",
+      "status": "done",
+      "checks": [
+        "solver source hash and target interaction range",
+        "shape, finite values, canonical entropy, final energy, density bounds",
+        "checkpoint identity and history length"
+      ],
+      "sweep_converged": true
+    },
+    {
+      "source": "attractive_scan/results/pref_ref_L192_P0_s17.json",
+      "status": "done",
+      "checks": [
+        "solver source hash and target interaction range",
+        "shape, finite values, canonical entropy, final energy, density bounds",
+        "checkpoint identity and history length"
+      ],
+      "sweep_converged": true
+    },
+    {
+      "source": "attractive_scan/results/pref_ref_L192_P1_s17.json",
+      "status": "done",
+      "checks": [
+        "solver source hash and target interaction range",
+        "shape, finite values, canonical entropy, final energy, density bounds",
+        "checkpoint identity and history length"
+      ],
+      "sweep_converged": true
+    },
+    {
+      "source": "attractive_scan/results/pref_ref_L48_P0_s17.json",
+      "status": "done",
+      "checks": [
+        "solver source hash and target interaction range",
+        "shape, finite values, canonical entropy, final energy, density bounds",
+        "checkpoint identity and history length"
+      ],
+      "sweep_converged": true
+    },
+    {
+      "source": "attractive_scan/results/pref_ref_L48_P1_s17.json",
+      "status": "done",
+      "checks": [
+        "solver source hash and target interaction range",
+        "shape, finite values, canonical entropy, final energy, density bounds",
+        "checkpoint identity and history length"
+      ],
+      "sweep_converged": true
+    },
+    {
+      "source": "attractive_scan/results/pref_ref_L96_P0_s17.json",
+      "status": "done",
+      "checks": [
+        "solver source hash and target interaction range",
+        "shape, finite values, canonical entropy, final energy, density bounds",
+        "checkpoint identity and history length"
+      ],
+      "sweep_converged": true
+    },
+    {
+      "source": "attractive_scan/results/pref_ref_L96_P1_s17.json",
+      "status": "done",
+      "checks": [
+        "solver source hash and target interaction range",
+        "shape, finite values, canonical entropy, final energy, density bounds",
+        "checkpoint identity and history length"
+      ],
+      "sweep_converged": true
+    },
+    {
+      "source": "attractive_scan/results/pref_zrat_L48_P0_s17.json",
+      "status": "done",
+      "checks": [
+        "solver source hash and target interaction range",
+        "shape, finite values, canonical entropy, final energy, density bounds",
+        "checkpoint identity and history length"
+      ],
+      "sweep_converged": true
+    },
+    {
+      "source": "attractive_scan/results/pref_zrat_L48_P1_s17.json",
+      "status": "done",
+      "checks": [
+        "solver source hash and target interaction range",
+        "shape, finite values, canonical entropy, final energy, density bounds",
+        "checkpoint identity and history length"
+      ],
+      "sweep_converged": true
+    },
+    {
+      "source": "attractive_scan/results/pref_zrat_L96_P0_s17.json",
+      "status": "done",
+      "checks": [
+        "solver source hash and target interaction range",
+        "shape, finite values, canonical entropy, final energy, density bounds",
+        "checkpoint identity and history length"
+      ],
+      "sweep_converged": true
+    },
+    {
+      "source": "attractive_scan/results/pref_zrat_L96_P1_s17.json",
+      "status": "done",
+      "checks": [
+        "solver source hash and target interaction range",
+        "shape, finite values, canonical entropy, final energy, density bounds",
+        "checkpoint identity and history length"
+      ],
+      "sweep_converged": true
+    },
+    {
+      "source": "simple_attractive/results/simple_attr_7_m1_5_m7_L48_P0_s17.json",
+      "status": "done",
+      "checks": [
+        "solver source hash and target interaction range",
+        "shape, finite values, canonical entropy, final energy, density bounds",
+        "checkpoint identity and history length"
+      ],
+      "sweep_converged": true
+    },
+    {
+      "source": "simple_attractive/results/simple_attr_7_m1_5_m7_L48_P1_s17.json",
+      "status": "done",
+      "checks": [
+        "solver source hash and target interaction range",
+        "shape, finite values, canonical entropy, final energy, density bounds",
+        "checkpoint identity and history length"
+      ],
+      "sweep_converged": true
+    },
+    {
+      "source": "simple_attractive/results/simple_attr_7_m1_5_m7_L96_P0_s17.json",
+      "status": "done",
+      "checks": [
+        "solver source hash and target interaction range",
+        "shape, finite values, canonical entropy, final energy, density bounds",
+        "checkpoint identity and history length"
+      ],
+      "sweep_converged": true
+    },
+    {
+      "source": "simple_attractive/results/simple_attr_7_m1_5_m7_L96_P1_s17.json",
+      "status": "done",
+      "checks": [
+        "solver source hash and target interaction range",
+        "shape, finite values, canonical entropy, final energy, density bounds",
+        "checkpoint identity and history length"
+      ],
+      "sweep_converged": true
+    },
+    {
+      "source": "independent_seed/b_r5_2_d1_10_q0_hm7_8_L48_P0_s23.json",
+      "status": "done",
+      "checks": [
+        "solver source hash and target interaction range",
+        "shape, finite values, canonical entropy, final energy, density bounds",
+        "checkpoint identity and history length"
+      ],
+      "sweep_converged": true
+    },
+    {
+      "source": "independent_sizes/b_r5_2_d1_10_q0_hm7_8_L64_P0_s17.json",
+      "status": "done",
+      "checks": [
+        "solver source hash and target interaction range",
+        "shape, finite values, canonical entropy, final energy, density bounds",
+        "checkpoint identity and history length"
+      ],
+      "sweep_converged": true
+    },
+    {
+      "source": "independent_sizes/b_r5_2_d1_10_q0_hm7_8_L64_P1_s17.json",
+      "status": "done",
+      "checks": [
+        "solver source hash and target interaction range",
+        "shape, finite values, canonical entropy, final energy, density bounds",
+        "checkpoint identity and history length"
+      ],
+      "sweep_converged": true
+    }
+  ]
+}

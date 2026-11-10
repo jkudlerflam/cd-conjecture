@@ -1,0 +1,31 @@
+{
+  "source_sha256": "f7b8765b36d55ce48365086e4c5e784dbdcba1fd71e5b61f11918627a748adb7",
+  "rows": [
+    {
+      "sizes": [
+        14,
+        16
+      ],
+      "c_half_size": 1.0497986822353462,
+      "profiles": [
+        1.0331263356638642,
+        1.0309910240431799
+      ],
+      "max_ritz_residual": 1.0167032316965825e-10,
+      "momentum_resolution_pass": true
+    },
+    {
+      "sizes": [
+        16,
+        20
+      ],
+      "c_half_size": 1.0396457294965604,
+      "profiles": [
+        1.0309910240431799,
+        1.0237645876652826
+      ],
+      "max_ritz_residual": 1.0167032316965825e-10,
+      "momentum_resolution_pass": true
+    }
+  ]
+}

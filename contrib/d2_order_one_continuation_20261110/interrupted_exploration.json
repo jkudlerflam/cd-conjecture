@@ -1,0 +1,35 @@
+{
+  "reason": "Registered focused stopping rule after candidate validation.",
+  "stopped_processes": [
+    23375,
+    24558
+  ],
+  "states": [
+    {
+      "parity": 0,
+      "status": "interrupted",
+      "last_saved_sweep": 37,
+      "last_saved_chi": 192,
+      "raw_record": "interrupted_exploration/bridge_r4_u1_k4_L192_P0_s17_raw_record.json",
+      "raw_record_sha256": "0322f215441e0d10d7e02e57f1f95c0d5ca7e608674f1521c1700d62437be4b9",
+      "current_record": "validation/bridge_r4_u1_k4_L192_P0_s17.json",
+      "current_record_sha256": "1906e989042eaf02d00af869cbdade012175f51ec8ec259db793e7cdd5577b01",
+      "original_checkpoint": "/private/tmp/d2-order-one-continuation-checkpoints/validation/bridge_r4_u1_k4_L192_P0_s17_mps.npz",
+      "archived_checkpoint": "checkpoints_local/bridge_r4_u1_k4_L192_P0_s17_interrupted_s37_mps.npz",
+      "checkpoint_sha256": "67cf133096cd39b68ec8c951b5f24020f1abb7f98e6609c623c3e09a5da35581"
+    },
+    {
+      "parity": 1,
+      "status": "interrupted",
+      "last_saved_sweep": 35,
+      "last_saved_chi": 192,
+      "raw_record": "interrupted_exploration/bridge_r4_u1_k4_L192_P1_s17_raw_record.json",
+      "raw_record_sha256": "f250600d83d8d5896e323fcb7eb823e201569a6517d9c6d688cddf0845cbc654",
+      "current_record": "validation/bridge_r4_u1_k4_L192_P1_s17.json",
+      "current_record_sha256": "a480f0d55f1d17843d18b4e89f57747efa8085e49615f11a23616d9fb2723b5d",
+      "original_checkpoint": "/private/tmp/d2-order-one-continuation-checkpoints/validation/bridge_r4_u1_k4_L192_P1_s17_mps.npz",
+      "archived_checkpoint": "checkpoints_local/bridge_r4_u1_k4_L192_P1_s17_interrupted_s35_mps.npz",
+      "checkpoint_sha256": "5724b1363d5890a6d5475b13d395e723867c561126f09efde96ede35060211c0"
+    }
+  ]
+}

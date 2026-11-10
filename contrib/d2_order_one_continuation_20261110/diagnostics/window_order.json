@@ -1,0 +1,583 @@
+{
+  "tiny_validation": {
+    "transfer": 5.978732193232575,
+    "exact_state_vector": 5.978732193232572,
+    "absolute_error": 2.6645352591003757e-15
+  },
+  "rows": [
+    {
+      "name": "bridge_r1.5_u1.5_k3",
+      "L": 24,
+      "parity": 0,
+      "source_record": "contrib/d2_order_one_20261110/dmrg/bridge_r1.5_u1.5_k3_L24_P0_s17.json",
+      "checkpoint_sha256": "76aa9f41f09cedb51e63513c92c7d33a11c55dd0554f528f9f5e2ac1e9980382",
+      "window": [
+        6,
+        18
+      ],
+      "channels": {
+        "X_pi": {
+          "axis": "X",
+          "q": 3.141592653589793,
+          "square": 63.82246391110595,
+          "structure_factor": 5.318538659258829,
+          "order_square": 0.4432115549382358,
+          "mean_real": 0.0,
+          "mean_imag": 0.0
+        },
+        "Y_zero": {
+          "axis": "Y",
+          "q": 0.0,
+          "square": 63.82246391110593,
+          "structure_factor": 5.318538659258827,
+          "order_square": 0.4432115549382356,
+          "mean_real": 0.0,
+          "mean_imag": 0.0
+        },
+        "Y_adaptive": {
+          "axis": "Y",
+          "q": 0.0,
+          "square": 63.82246391110593,
+          "structure_factor": 5.318538659258827,
+          "order_square": 0.4432115549382356,
+          "mean_real": 0.0,
+          "mean_imag": 0.0
+        }
+      },
+      "seconds": 0.039359092712402344
+    },
+    {
+      "name": "bridge_r1.5_u1.5_k3",
+      "L": 48,
+      "parity": 1,
+      "source_record": "contrib/d2_order_one_20261110/dmrg/bridge_r1.5_u1.5_k3_L48_P1_s17.json",
+      "checkpoint_sha256": "0c014cd780d0015146dedb52902f76e602c08c569b51b648aba6a59fb7569b89",
+      "window": [
+        12,
+        36
+      ],
+      "channels": {
+        "X_pi": {
+          "axis": "X",
+          "q": 3.141592653589793,
+          "square": 245.73501355147286,
+          "structure_factor": 10.238958897978035,
+          "order_square": 0.4266232874157515,
+          "mean_real": 0.0,
+          "mean_imag": 0.0
+        },
+        "Y_zero": {
+          "axis": "Y",
+          "q": 0.0,
+          "square": 245.73501355147297,
+          "structure_factor": 10.23895889797804,
+          "order_square": 0.4266232874157517,
+          "mean_real": 0.0,
+          "mean_imag": 0.0
+        },
+        "Y_adaptive": {
+          "axis": "Y",
+          "q": 0.0,
+          "square": 245.73501355147297,
+          "structure_factor": 10.23895889797804,
+          "order_square": 0.4266232874157517,
+          "mean_real": 0.0,
+          "mean_imag": 0.0
+        }
+      },
+      "seconds": 0.15635395050048828
+    },
+    {
+      "name": "bridge_r2_u1.5_k4",
+      "L": 24,
+      "parity": 0,
+      "source_record": "contrib/d2_order_one_20261110/dmrg/bridge_r2_u1.5_k4_L24_P0_s17.json",
+      "checkpoint_sha256": "ecbb4c7b7098cc2f7d665edd0fb7a07e0ae1c7288b5441917ca6c31a7f3c83c1",
+      "window": [
+        6,
+        18
+      ],
+      "channels": {
+        "X_pi": {
+          "axis": "X",
+          "q": 3.141592653589793,
+          "square": 14.563314469126878,
+          "structure_factor": 1.2136095390939066,
+          "order_square": 0.10113412825782554,
+          "mean_real": 0.0,
+          "mean_imag": 0.0
+        },
+        "Y_zero": {
+          "axis": "Y",
+          "q": 0.0,
+          "square": 14.563314469126873,
+          "structure_factor": 1.2136095390939061,
+          "order_square": 0.1011341282578255,
+          "mean_real": 0.0,
+          "mean_imag": 0.0
+        },
+        "Y_adaptive": {
+          "axis": "Y",
+          "q": 0.0,
+          "square": 14.563314469126873,
+          "structure_factor": 1.2136095390939061,
+          "order_square": 0.1011341282578255,
+          "mean_real": 0.0,
+          "mean_imag": 0.0
+        }
+      },
+      "seconds": 0.03129982948303223
+    },
+    {
+      "name": "bridge_r2_u1.5_k4",
+      "L": 48,
+      "parity": 1,
+      "source_record": "contrib/d2_order_one_20261110/dmrg/bridge_r2_u1.5_k4_L48_P1_s17.json",
+      "checkpoint_sha256": "66cbce0f7fec3f07c3577fa613f913c8f61eeec0496da7f76eebbec9aa6b6236",
+      "window": [
+        12,
+        36
+      ],
+      "channels": {
+        "X_pi": {
+          "axis": "X",
+          "q": 3.141592653589793,
+          "square": 34.31471976081638,
+          "structure_factor": 1.4297799900340158,
+          "order_square": 0.05957416625141733,
+          "mean_real": 0.0,
+          "mean_imag": 0.0
+        },
+        "Y_zero": {
+          "axis": "Y",
+          "q": 0.0,
+          "square": 34.31471976081636,
+          "structure_factor": 1.429779990034015,
+          "order_square": 0.05957416625141729,
+          "mean_real": 0.0,
+          "mean_imag": 0.0
+        },
+        "Y_adaptive": {
+          "axis": "Y",
+          "q": 0.0,
+          "square": 34.31471976081636,
+          "structure_factor": 1.429779990034015,
+          "order_square": 0.05957416625141729,
+          "mean_real": 0.0,
+          "mean_imag": 0.0
+        }
+      },
+      "seconds": 0.2146739959716797
+    },
+    {
+      "name": "bridge_r2_u1.5_k4",
+      "L": 96,
+      "parity": 0,
+      "source_record": "contrib/d2_order_one_20261110/dmrg/bridge_r2_u1.5_k4_L96_P0_s17.json",
+      "checkpoint_sha256": "e99129e89935cc43f4b23637bb0ed14e2a0826dfc4a783c2f3e48594426a09fe",
+      "window": [
+        24,
+        72
+      ],
+      "channels": {
+        "X_pi": {
+          "axis": "X",
+          "q": 3.141592653589793,
+          "square": 67.13930507723558,
+          "structure_factor": 1.3987355224424078,
+          "order_square": 0.02914032338421683,
+          "mean_real": 0.0,
+          "mean_imag": 0.0
+        },
+        "Y_zero": {
+          "axis": "Y",
+          "q": 0.0,
+          "square": 67.13930507723555,
+          "structure_factor": 1.3987355224424072,
+          "order_square": 0.029140323384216817,
+          "mean_real": 0.0,
+          "mean_imag": 0.0
+        },
+        "Y_adaptive": {
+          "axis": "Y",
+          "q": 0.0,
+          "square": 67.13930507723555,
+          "structure_factor": 1.3987355224424072,
+          "order_square": 0.029140323384216817,
+          "mean_real": 0.0,
+          "mean_imag": 0.0
+        }
+      },
+      "seconds": 1.0530200004577637
+    },
+    {
+      "name": "bridge_r3_u1_k4",
+      "L": 24,
+      "parity": 0,
+      "source_record": "contrib/d2_order_one_20261110/dmrg/bridge_r3_u1_k4_L24_P0_s17.json",
+      "checkpoint_sha256": "c63ab6c29bc22047a74c75fabe6d5210a4b7cd4551da6b40152dd20609c67c21",
+      "window": [
+        6,
+        18
+      ],
+      "channels": {
+        "X_pi": {
+          "axis": "X",
+          "q": 3.141592653589793,
+          "square": 61.744888720870904,
+          "structure_factor": 5.145407393405908,
+          "order_square": 0.42878394945049236,
+          "mean_real": 0.0,
+          "mean_imag": 0.0
+        },
+        "Y_zero": {
+          "axis": "Y",
+          "q": 0.0,
+          "square": 61.74488872087091,
+          "structure_factor": 5.145407393405909,
+          "order_square": 0.4287839494504924,
+          "mean_real": 0.0,
+          "mean_imag": 0.0
+        },
+        "Y_adaptive": {
+          "axis": "Y",
+          "q": 0.0,
+          "square": 61.74488872087091,
+          "structure_factor": 5.145407393405909,
+          "order_square": 0.4287839494504924,
+          "mean_real": 0.0,
+          "mean_imag": 0.0
+        }
+      },
+      "seconds": 0.03011798858642578
+    },
+    {
+      "name": "bridge_r3_u1_k4",
+      "L": 48,
+      "parity": 0,
+      "source_record": "contrib/d2_order_one_20261110/dmrg/bridge_r3_u1_k4_L48_P0_s17.json",
+      "checkpoint_sha256": "9081abc7d2ab5accb99ae5a3bfd77930c059faf641f35748a08fcdc889058e40",
+      "window": [
+        12,
+        36
+      ],
+      "channels": {
+        "X_pi": {
+          "axis": "X",
+          "q": 3.141592653589793,
+          "square": 133.2112646419222,
+          "structure_factor": 5.5504693600800925,
+          "order_square": 0.23126955667000385,
+          "mean_real": 0.0,
+          "mean_imag": 0.0
+        },
+        "Y_zero": {
+          "axis": "Y",
+          "q": 0.0,
+          "square": 133.21126464192218,
+          "structure_factor": 5.550469360080091,
+          "order_square": 0.2312695566700038,
+          "mean_real": 0.0,
+          "mean_imag": 0.0
+        },
+        "Y_adaptive": {
+          "axis": "Y",
+          "q": 0.15865042900628457,
+          "square": 98.83072109143043,
+          "structure_factor": 4.117946712142935,
+          "order_square": 0.1715811130059556,
+          "mean_real": 0.0,
+          "mean_imag": 0.0
+        }
+      },
+      "seconds": 0.11035871505737305
+    },
+    {
+      "name": "bridge_r4_u1_k4",
+      "L": 24,
+      "parity": 0,
+      "source_record": "contrib/d2_order_one_20261110/dmrg/bridge_r4_u1_k4_L24_P0_s17.json",
+      "checkpoint_sha256": "a379aced1570ff1a791ef42f4f98e53cabbc133155ce6ff866da345d27d86239",
+      "window": [
+        6,
+        18
+      ],
+      "channels": {
+        "X_pi": {
+          "axis": "X",
+          "q": 3.141592653589793,
+          "square": 27.988948768396977,
+          "structure_factor": 2.3324123973664146,
+          "order_square": 0.19436769978053456,
+          "mean_real": 0.0,
+          "mean_imag": 0.0
+        },
+        "Y_zero": {
+          "axis": "Y",
+          "q": 0.0,
+          "square": 27.988948768396963,
+          "structure_factor": 2.3324123973664137,
+          "order_square": 0.19436769978053448,
+          "mean_real": 0.0,
+          "mean_imag": 0.0
+        },
+        "Y_adaptive": {
+          "axis": "Y",
+          "q": 0.3204424506661589,
+          "square": 21.542902582584485,
+          "structure_factor": 1.7952418818820404,
+          "order_square": 0.14960349015683672,
+          "mean_real": 0.0,
+          "mean_imag": 0.0
+        }
+      },
+      "seconds": 0.027098894119262695
+    },
+    {
+      "name": "bridge_r4_u1_k4",
+      "L": 48,
+      "parity": 1,
+      "source_record": "contrib/d2_order_one_20261110/dmrg/bridge_r4_u1_k4_L48_P1_s23.json",
+      "checkpoint_sha256": "eb008df84eb3a25b951045736904748f1246ee980dc0da73058d8d7a260ec014",
+      "window": [
+        12,
+        36
+      ],
+      "channels": {
+        "X_pi": {
+          "axis": "X",
+          "q": 3.141592653589793,
+          "square": 54.32782555091455,
+          "structure_factor": 2.263659397954773,
+          "order_square": 0.09431914158144887,
+          "mean_real": 0.0,
+          "mean_imag": 0.0
+        },
+        "Y_zero": {
+          "axis": "Y",
+          "q": 0.0,
+          "square": 54.32782555091457,
+          "structure_factor": 2.2636593979547737,
+          "order_square": 0.0943191415814489,
+          "mean_real": 0.0,
+          "mean_imag": 0.0
+        },
+        "Y_adaptive": {
+          "axis": "Y",
+          "q": 0.1869247628885927,
+          "square": 82.44225920547254,
+          "structure_factor": 3.4350941335613556,
+          "order_square": 0.14312892223172316,
+          "mean_real": 0.0,
+          "mean_imag": 0.0
+        }
+      },
+      "seconds": 0.719588041305542
+    },
+    {
+      "name": "bridge_r4_u1_k4",
+      "L": 96,
+      "parity": 0,
+      "source_record": "contrib/d2_order_one_20261110/dmrg/bridge_r4_u1_k4_L96_P0_s17.json",
+      "checkpoint_sha256": "2d19769d343ef1b97869cbda06940e091eaa6a59a65ec6e1683532381fbee7ef",
+      "window": [
+        24,
+        72
+      ],
+      "channels": {
+        "X_pi": {
+          "axis": "X",
+          "q": 3.141592653589793,
+          "square": 80.89242389816593,
+          "structure_factor": 1.6852588312117902,
+          "order_square": 0.03510955898357896,
+          "mean_real": 0.0,
+          "mean_imag": 0.0
+        },
+        "Y_zero": {
+          "axis": "Y",
+          "q": 0.0,
+          "square": 80.89242389816593,
+          "structure_factor": 1.6852588312117902,
+          "order_square": 0.03510955898357896,
+          "mean_real": 0.0,
+          "mean_imag": 0.0
+        },
+        "Y_adaptive": {
+          "axis": "Y",
+          "q": 0.19320794819577228,
+          "square": 249.59147291407442,
+          "structure_factor": 5.19982235237655,
+          "order_square": 0.10832963234117814,
+          "mean_real": 0.0,
+          "mean_imag": 0.0
+        }
+      },
+      "seconds": 1.2935209274291992
+    },
+    {
+      "name": "control_two_xx",
+      "L": 24,
+      "parity": 0,
+      "source_record": "contrib/d2_order_one_20261110/dmrg/control_two_xx_L24_P0_s17.json",
+      "checkpoint_sha256": "ae248cf9d46e203dc6c8114d0956a8090f2e3e0b2eb820886e887b64b4fc22f0",
+      "window": [
+        6,
+        18
+      ],
+      "channels": {
+        "X_pi": {
+          "axis": "X",
+          "q": 3.141592653589793,
+          "square": 37.71993060257238,
+          "structure_factor": 3.1433275502143654,
+          "order_square": 0.2619439625178638,
+          "mean_real": 0.0,
+          "mean_imag": 0.0
+        },
+        "Y_zero": {
+          "axis": "Y",
+          "q": 0.0,
+          "square": 37.71992953603759,
+          "structure_factor": 3.1433274613364657,
+          "order_square": 0.26194395511137214,
+          "mean_real": 0.0,
+          "mean_imag": 0.0
+        },
+        "Y_adaptive": {
+          "axis": "Y",
+          "q": 3.141592653589793,
+          "square": 37.71992952488336,
+          "structure_factor": 3.143327460406947,
+          "order_square": 0.2619439550339122,
+          "mean_real": 0.0,
+          "mean_imag": 0.0
+        }
+      },
+      "seconds": 0.3965907096862793
+    },
+    {
+      "name": "control_two_xx",
+      "L": 48,
+      "parity": 0,
+      "source_record": "contrib/d2_order_one_20261110/dmrg/control_two_xx_L48_P0_s17.json",
+      "checkpoint_sha256": "0fb45fce4402455b40e483b816737b1bd38416e7ec10cc91dcf3c92ac5b3601d",
+      "window": [
+        12,
+        36
+      ],
+      "channels": {
+        "X_pi": {
+          "axis": "X",
+          "q": 3.141592653589793,
+          "square": 114.94715948486878,
+          "structure_factor": 4.789464978536199,
+          "order_square": 0.19956104077234163,
+          "mean_real": 0.0,
+          "mean_imag": 0.0
+        },
+        "Y_zero": {
+          "axis": "Y",
+          "q": 0.0,
+          "square": 114.94698704843374,
+          "structure_factor": 4.789457793684739,
+          "order_square": 0.1995607414035308,
+          "mean_real": 0.0,
+          "mean_imag": 0.0
+        },
+        "Y_adaptive": {
+          "axis": "Y",
+          "q": 0.0,
+          "square": 114.94698704843374,
+          "structure_factor": 4.789457793684739,
+          "order_square": 0.1995607414035308,
+          "mean_real": 0.0,
+          "mean_imag": 0.0
+        }
+      },
+      "seconds": 1.1749279499053955
+    },
+    {
+      "name": "control_xx",
+      "L": 24,
+      "parity": 0,
+      "source_record": "contrib/d2_order_one_20261110/dmrg/control_xx_L24_P0_s17.json",
+      "checkpoint_sha256": "53775fbe6a050ccf93013e9379f7db0ce1bb2a8a2c8b427d17dc2301e709c17f",
+      "window": [
+        6,
+        18
+      ],
+      "channels": {
+        "X_pi": {
+          "axis": "X",
+          "q": 3.141592653589793,
+          "square": 2.1061069214758645,
+          "structure_factor": 0.17550891012298872,
+          "order_square": 0.014625742510249059,
+          "mean_real": 0.0,
+          "mean_imag": 0.0
+        },
+        "Y_zero": {
+          "axis": "Y",
+          "q": 0.0,
+          "square": 57.477389252797124,
+          "structure_factor": 4.789782437733094,
+          "order_square": 0.39914853647775783,
+          "mean_real": 0.0,
+          "mean_imag": 0.0
+        },
+        "Y_adaptive": {
+          "axis": "Y",
+          "q": 0.0,
+          "square": 57.477389252797124,
+          "structure_factor": 4.789782437733094,
+          "order_square": 0.39914853647775783,
+          "mean_real": 0.0,
+          "mean_imag": 0.0
+        }
+      },
+      "seconds": 0.03922390937805176
+    },
+    {
+      "name": "control_xx",
+      "L": 48,
+      "parity": 0,
+      "source_record": "contrib/d2_order_one_20261110/dmrg/control_xx_L48_P0_s17.json",
+      "checkpoint_sha256": "91911f3306828687cb7e57f02945e0c2a8376c79c2bbb75acec36db72c5eb485",
+      "window": [
+        12,
+        36
+      ],
+      "channels": {
+        "X_pi": {
+          "axis": "X",
+          "q": 3.141592653589793,
+          "square": 3.982679437098498,
+          "structure_factor": 0.16594497654577076,
+          "order_square": 0.006914374022740448,
+          "mean_real": 0.0,
+          "mean_imag": 0.0
+        },
+        "Y_zero": {
+          "axis": "Y",
+          "q": 0.0,
+          "square": 167.8492814704543,
+          "structure_factor": 6.993720061268928,
+          "order_square": 0.29140500255287205,
+          "mean_real": 0.0,
+          "mean_imag": 0.0
+        },
+        "Y_adaptive": {
+          "axis": "Y",
+          "q": 0.0,
+          "square": 167.8492814704543,
+          "structure_factor": 6.993720061268928,
+          "order_square": 0.29140500255287205,
+          "mean_real": 0.0,
+          "mean_imag": 0.0
+        }
+      },
+      "seconds": 0.20667123794555664
+    }
+  ]
+}

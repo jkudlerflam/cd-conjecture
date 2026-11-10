@@ -1,0 +1,52 @@
+{
+  "preserved": [
+    {
+      "L": 48,
+      "parity": 0,
+      "chi": 128,
+      "record": "/Users/pace/Documents/GitHub/cd-conjecture/contrib/d2_order_one_continuation_20261110/bridge_scan/validation_snapshots/b_r5_2_d1_10_q0_hm7_8_L48_P0_s17_chi128.json",
+      "record_sha256": "247dfe436a5608562ccc60774b5f1576021e565fbbf885fe224b7928961b1d88",
+      "checkpoint": "/private/tmp/d2-order-one-continuation-bridge/validation_snapshots/b_r5_2_d1_10_q0_hm7_8_L48_P0_s17_chi128_mps.npz",
+      "checkpoint_sha256": "fc70c70c40ebbc141be69e62796e25ddb1bff76ec907b095674db25422c447ba",
+      "source_checkpoint": "/private/tmp/d2-order-one-continuation-bridge/b_r5_2_d1_10_q0_hm7_8_L48_P0_s17_mps.npz"
+    },
+    {
+      "L": 48,
+      "parity": 1,
+      "chi": 128,
+      "record": "/Users/pace/Documents/GitHub/cd-conjecture/contrib/d2_order_one_continuation_20261110/bridge_scan/validation_snapshots/b_r5_2_d1_10_q0_hm7_8_L48_P1_s17_chi128.json",
+      "record_sha256": "20b4699c57f03a88ea68e2d2a3f18d8f38b19d97518fe3503663cd2c71b06e39",
+      "checkpoint": "/private/tmp/d2-order-one-continuation-bridge/validation_snapshots/b_r5_2_d1_10_q0_hm7_8_L48_P1_s17_chi128_mps.npz",
+      "checkpoint_sha256": "c54b4470e0be71368afdfd2edcf218df582cbc7401eea01ee5be57cabc2178b3",
+      "source_checkpoint": "/private/tmp/d2-order-one-continuation-bridge/b_r5_2_d1_10_q0_hm7_8_L48_P1_s17_mps.npz"
+    },
+    {
+      "L": 96,
+      "parity": 0,
+      "chi": 256,
+      "record": "/Users/pace/Documents/GitHub/cd-conjecture/contrib/d2_order_one_continuation_20261110/bridge_scan/validation_snapshots/b_r5_2_d1_10_q0_hm7_8_L96_P0_s17_chi256.json",
+      "record_sha256": "da1639304488f9124f8047fa4856eb0f6e54fef229a6fa3433e1fda3f8b1e325",
+      "checkpoint": "/private/tmp/d2-order-one-continuation-bridge/validation_snapshots/b_r5_2_d1_10_q0_hm7_8_L96_P0_s17_chi256_mps.npz",
+      "checkpoint_sha256": "7c07429c033a73cf98ace0ce72a1f65c4cd07ed578b85abaf13908d664a9eca2",
+      "source_checkpoint": "/private/tmp/d2-order-one-continuation-bridge/b_r5_2_d1_10_q0_hm7_8_L96_P0_s17_mps.npz"
+    },
+    {
+      "L": 96,
+      "parity": 1,
+      "chi": 192,
+      "record": "/Users/pace/Documents/GitHub/cd-conjecture/contrib/d2_order_one_continuation_20261110/bridge_scan/validation_snapshots/b_r5_2_d1_10_q0_hm7_8_L96_P1_s17_chi192.json",
+      "record_sha256": "554e10a173d7c1416ce3a4b8001259ee55fcbaf23aa2bba9167188ef5cf25f3d",
+      "checkpoint": "/private/tmp/d2-order-one-continuation-bridge/validation_snapshots/b_r5_2_d1_10_q0_hm7_8_L96_P1_s17_chi192_mps.npz",
+      "checkpoint_sha256": "3497490b043f4d0d5245675f3c720575548955252d983d1577600b04a817b125",
+      "source_checkpoint": "/private/tmp/d2-order-one-continuation-bridge/b_r5_2_d1_10_q0_hm7_8_L96_P1_s17_mps.npz"
+    }
+  ],
+  "unavailable": [
+    {
+      "L": 96,
+      "parity": 0,
+      "chi": 192,
+      "checkpoint": "overwritten before NPZ preservation; raw JSON and completed pre-upgrade diagnostics remain"
+    }
+  ]
+}

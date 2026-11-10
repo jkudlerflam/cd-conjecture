@@ -1,0 +1,97 @@
+{
+  "name": "b_r5_2_d1_10_q0_hm7_8",
+  "preserved": [
+    {
+      "L": 24,
+      "parity": 0,
+      "chi": 64,
+      "record": "/Users/pace/Documents/GitHub/cd-conjecture/contrib/d2_order_one_continuation_20261110/bridge_scan/validation_snapshots/b_r5_2_d1_10_q0_hm7_8_L24_P0_s17_chi64.json",
+      "record_sha256": "493438aeb34767f436c22729e994cbd25ace470789d2ed1f8b81bbfba210da81",
+      "checkpoint": "/private/tmp/d2-order-one-continuation-bridge/validation_snapshots/b_r5_2_d1_10_q0_hm7_8_L24_P0_s17_chi64_mps.npz",
+      "checkpoint_sha256": "32221140bee1be04c5dd3154545fc9c12349ca3d7dea44b0db817ccdd242a483",
+      "source_checkpoint": "/private/tmp/d2-order-one-continuation-bridge/b_r5_2_d1_10_q0_hm7_8_L24_P0_s17_mps.npz"
+    },
+    {
+      "L": 24,
+      "parity": 1,
+      "chi": 64,
+      "record": "/Users/pace/Documents/GitHub/cd-conjecture/contrib/d2_order_one_continuation_20261110/bridge_scan/validation_snapshots/b_r5_2_d1_10_q0_hm7_8_L24_P1_s17_chi64.json",
+      "record_sha256": "f8a9e26470fb88014725d8739073b4f245e25d99f7bb04493ad53b7031bb6af0",
+      "checkpoint": "/private/tmp/d2-order-one-continuation-bridge/validation_snapshots/b_r5_2_d1_10_q0_hm7_8_L24_P1_s17_chi64_mps.npz",
+      "checkpoint_sha256": "71fa568e2760ccb333e67ca109675e08ecc950c01a4d5ebd68fe24bb7cc7d140",
+      "source_checkpoint": "/private/tmp/d2-order-one-continuation-bridge/b_r5_2_d1_10_q0_hm7_8_L24_P1_s17_mps.npz"
+    },
+    {
+      "L": 48,
+      "parity": 0,
+      "chi": 192,
+      "record": "/Users/pace/Documents/GitHub/cd-conjecture/contrib/d2_order_one_continuation_20261110/bridge_scan/validation_snapshots/b_r5_2_d1_10_q0_hm7_8_L48_P0_s17_chi192.json",
+      "record_sha256": "d0fcad3035b013caace76e977d1ae5a6f138ed3553ce63d3c762d5c6f8e210c4",
+      "checkpoint": "/private/tmp/d2-order-one-continuation-bridge/validation_snapshots/b_r5_2_d1_10_q0_hm7_8_L48_P0_s17_chi192_mps.npz",
+      "checkpoint_sha256": "23ea51e939c50a6170dbe4af218a2cddae9cad3d5229bc25deee585a4b724355",
+      "source_checkpoint": "/private/tmp/d2-order-one-continuation-bridge/b_r5_2_d1_10_q0_hm7_8_L48_P0_s17_mps.npz"
+    },
+    {
+      "L": 48,
+      "parity": 1,
+      "chi": 192,
+      "record": "/Users/pace/Documents/GitHub/cd-conjecture/contrib/d2_order_one_continuation_20261110/bridge_scan/validation_snapshots/b_r5_2_d1_10_q0_hm7_8_L48_P1_s17_chi192.json",
+      "record_sha256": "f1704692445d46ab8081fdaff4c8e87545328fbdbafe135bccc72b44fde6916d",
+      "checkpoint": "/private/tmp/d2-order-one-continuation-bridge/validation_snapshots/b_r5_2_d1_10_q0_hm7_8_L48_P1_s17_chi192_mps.npz",
+      "checkpoint_sha256": "4b8ecc78845ffa567139c9fe1a23f3031a2bc3b407d08d1690b7a8b686484014",
+      "source_checkpoint": "/private/tmp/d2-order-one-continuation-bridge/b_r5_2_d1_10_q0_hm7_8_L48_P1_s17_mps.npz"
+    },
+    {
+      "L": 96,
+      "parity": 0,
+      "chi": 256,
+      "record": "/Users/pace/Documents/GitHub/cd-conjecture/contrib/d2_order_one_continuation_20261110/bridge_scan/validation_snapshots/b_r5_2_d1_10_q0_hm7_8_L96_P0_s17_chi256.json",
+      "record_sha256": "da1639304488f9124f8047fa4856eb0f6e54fef229a6fa3433e1fda3f8b1e325",
+      "checkpoint": "/private/tmp/d2-order-one-continuation-bridge/validation_snapshots/b_r5_2_d1_10_q0_hm7_8_L96_P0_s17_chi256_mps.npz",
+      "checkpoint_sha256": "7c07429c033a73cf98ace0ce72a1f65c4cd07ed578b85abaf13908d664a9eca2",
+      "source_checkpoint": "/private/tmp/d2-order-one-continuation-bridge/b_r5_2_d1_10_q0_hm7_8_L96_P0_s17_mps.npz"
+    },
+    {
+      "L": 96,
+      "parity": 1,
+      "chi": 192,
+      "record": "/Users/pace/Documents/GitHub/cd-conjecture/contrib/d2_order_one_continuation_20261110/bridge_scan/validation_snapshots/b_r5_2_d1_10_q0_hm7_8_L96_P1_s17_chi192.json",
+      "record_sha256": "554e10a173d7c1416ce3a4b8001259ee55fcbaf23aa2bba9167188ef5cf25f3d",
+      "checkpoint": "/private/tmp/d2-order-one-continuation-bridge/validation_snapshots/b_r5_2_d1_10_q0_hm7_8_L96_P1_s17_chi192_mps.npz",
+      "checkpoint_sha256": "3497490b043f4d0d5245675f3c720575548955252d983d1577600b04a817b125",
+      "source_checkpoint": "/private/tmp/d2-order-one-continuation-bridge/b_r5_2_d1_10_q0_hm7_8_L96_P1_s17_mps.npz"
+    },
+    {
+      "L": 192,
+      "parity": 0,
+      "chi": 256,
+      "record": "/Users/pace/Documents/GitHub/cd-conjecture/contrib/d2_order_one_continuation_20261110/bridge_scan/validation_snapshots/b_r5_2_d1_10_q0_hm7_8_L192_P0_s17_chi256.json",
+      "record_sha256": "6bfb709aaf6e62e468c399d368cad3fe25018eda518a247cb1e38b2234e0a742",
+      "checkpoint": "/private/tmp/d2-order-one-continuation-bridge/validation_snapshots/b_r5_2_d1_10_q0_hm7_8_L192_P0_s17_chi256_mps.npz",
+      "checkpoint_sha256": "6000b410c1a2734321a1887ec9b566fe665656dee2c436a1ce860004a92194cd",
+      "source_checkpoint": "/private/tmp/d2-order-one-continuation-bridge/b_r5_2_d1_10_q0_hm7_8_L192_P0_s17_mps.npz"
+    },
+    {
+      "L": 192,
+      "parity": 1,
+      "chi": 192,
+      "record": "/Users/pace/Documents/GitHub/cd-conjecture/contrib/d2_order_one_continuation_20261110/bridge_scan/validation_snapshots/b_r5_2_d1_10_q0_hm7_8_L192_P1_s17_chi192.json",
+      "record_sha256": "8995e18958dea4955d8062d9add4092150ad51433acecedf3f9f63c9817b047c",
+      "checkpoint": "/private/tmp/d2-order-one-continuation-bridge/validation_snapshots/b_r5_2_d1_10_q0_hm7_8_L192_P1_s17_chi192_mps.npz",
+      "checkpoint_sha256": "6d36e3be334fa3ca646cbe4bcdfd08fa296f7f59860c22c96b9527eccaeec863",
+      "source_checkpoint": "/private/tmp/d2-order-one-continuation-bridge/b_r5_2_d1_10_q0_hm7_8_L192_P1_s17_mps.npz"
+    }
+  ],
+  "prior_manifests": [
+    "state_preservation.json",
+    "largest_size_preservation.json"
+  ],
+  "known_missing": [
+    {
+      "L": 96,
+      "parity": 0,
+      "chi": 192,
+      "checkpoint": "Overwritten before NPZ preservation; raw JSON and completed pre-upgrade diagnostics remain"
+    }
+  ]
+}

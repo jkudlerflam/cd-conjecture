@@ -1,0 +1,36 @@
+{
+  "name": "b_r5_2_d1_10_q0_hm7_8",
+  "jobs": [
+    [
+      96,
+      0,
+      256
+    ],
+    [
+      192,
+      0,
+      192
+    ],
+    [
+      192,
+      1,
+      192
+    ],
+    [
+      48,
+      0,
+      192
+    ],
+    [
+      48,
+      1,
+      192
+    ]
+  ],
+  "selected_L96_parity": 0,
+  "trigger_slopes": {
+    "S_fractional": 1.4362194654503058,
+    "S_central3": 1.4184245198948007
+  },
+  "registration": "LARGE_SIZE_EXTENSION.md"
+}

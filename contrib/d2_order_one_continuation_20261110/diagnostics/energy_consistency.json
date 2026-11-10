@@ -1,0 +1,151 @@
+{
+  "exact_xx": {
+    "energies": {
+      "24": -14.925971109908657,
+      "48": -30.19971233130036,
+      "96": -60.754816964991846,
+      "192": -121.86897255093817
+    },
+    "D": {
+      "24": -0.007622190908076476,
+      "48": -0.003946318563350815
+    },
+    "ratio": 0.5177407140470982,
+    "p_eff": 0.9496983217063554,
+    "fit_fixed_inverse_size": {
+      "e_bulk": -0.6366176117498786,
+      "e_boundary": 0.3630144932991944,
+      "inverse_size_coefficient": -0.24391010905833363,
+      "predicted_E192": -121.86883732782886,
+      "actual_E192": -121.86897255093817,
+      "prediction_residual": -0.00013522310931080028
+    },
+    "interpretation": "Post-hoc energy correction exponent; not a dynamical exponent or velocity."
+  },
+  "cases": [
+    {
+      "energies": {
+        "24": -16.31971958463125,
+        "48": -32.5476349074781,
+        "96": -65.0052273176403,
+        "192": -129.92127124133077
+      },
+      "D": {
+        "24": -0.0017617644685117284,
+        "48": -0.0008591033660536596
+      },
+      "ratio": 0.4876380364166371,
+      "p_eff": 1.0361174324045443,
+      "fit_fixed_inverse_size": {
+        "e_bulk": -0.676212076353855,
+        "e_boundary": -0.0882807328473684,
+        "inverse_size_coefficient": -0.0563764629926027,
+        "predicted_E192": -129.92129302019896,
+        "actual_E192": -129.92127124133077,
+        "prediction_residual": 2.1778868187993794e-05
+      },
+      "interpretation": "Post-hoc energy correction exponent; not a dynamical exponent or velocity.",
+      "name": "b_r5_2_d1_10_q0_hm7_8",
+      "inputs": [
+        {
+          "L": 24,
+          "parity": 0,
+          "chi": 64,
+          "E": -16.31971958463125,
+          "source_record": "contrib/d2_order_one_continuation_20261110/bridge_scan/dmrg/b_r5_2_d1_10_q0_hm7_8_L24_P0_s17.json",
+          "record_sha256": "493438aeb34767f436c22729e994cbd25ace470789d2ed1f8b81bbfba210da81",
+          "checkpoint_sha256": "32221140bee1be04c5dd3154545fc9c12349ca3d7dea44b0db817ccdd242a483"
+        },
+        {
+          "L": 48,
+          "parity": 0,
+          "chi": 192,
+          "E": -32.5476349074781,
+          "source_record": "contrib/d2_order_one_continuation_20261110/bridge_scan/dmrg/b_r5_2_d1_10_q0_hm7_8_L48_P0_s17.json",
+          "record_sha256": "d0fcad3035b013caace76e977d1ae5a6f138ed3553ce63d3c762d5c6f8e210c4",
+          "checkpoint_sha256": "23ea51e939c50a6170dbe4af218a2cddae9cad3d5229bc25deee585a4b724355"
+        },
+        {
+          "L": 96,
+          "parity": 0,
+          "chi": 256,
+          "E": -65.0052273176403,
+          "source_record": "contrib/d2_order_one_continuation_20261110/bridge_scan/dmrg/b_r5_2_d1_10_q0_hm7_8_L96_P0_s17.json",
+          "record_sha256": "da1639304488f9124f8047fa4856eb0f6e54fef229a6fa3433e1fda3f8b1e325",
+          "checkpoint_sha256": "7c07429c033a73cf98ace0ce72a1f65c4cd07ed578b85abaf13908d664a9eca2"
+        },
+        {
+          "L": 192,
+          "parity": 0,
+          "chi": 256,
+          "E": -129.92127124133077,
+          "source_record": "contrib/d2_order_one_continuation_20261110/bridge_scan/dmrg/b_r5_2_d1_10_q0_hm7_8_L192_P0_s17.json",
+          "record_sha256": "6bfb709aaf6e62e468c399d368cad3fe25018eda518a247cb1e38b2234e0a742",
+          "checkpoint_sha256": "6000b410c1a2734321a1887ec9b566fe665656dee2c436a1ce860004a92194cd"
+        }
+      ]
+    },
+    {
+      "energies": {
+        "24": -19.071656638346553,
+        "48": -38.55334685885407,
+        "96": -77.52708713112727,
+        "192": -155.48247430858356
+      },
+      "D": {
+        "24": -0.01035983125817097,
+        "48": -0.007906632909879363
+      },
+      "ratio": 0.7632009356950935,
+      "p_eff": 0.38986515477841943,
+      "fit_fixed_inverse_size": {
+        "e_bulk": -0.8120248656116513,
+        "e_boundary": 0.43075324467731707,
+        "inverse_size_coefficient": -0.33151460026169854,
+        "predicted_E192": -155.47974759130278,
+        "actual_E192": -155.48247430858356,
+        "prediction_residual": -0.002726717280779667
+      },
+      "interpretation": "Post-hoc energy correction exponent; not a dynamical exponent or velocity.",
+      "name": "attr_ref",
+      "inputs": [
+        {
+          "L": 24,
+          "parity": 0,
+          "chi": 64,
+          "E": -19.071656638346553,
+          "source_record": "contrib/d2_order_one_20261110/dmrg/reference_peotta_exploratory_L24_P0_s17.json",
+          "record_sha256": "1be97caec6fe7df14efb6dcf3c71bb21c11e4fe353577da54c78104fbbe8ffca",
+          "checkpoint_sha256": "a371e1cb61c59f5b4b3bcb38ff5f875eaa05f9482d8d0f3360bb1c0917f8c33c"
+        },
+        {
+          "L": 48,
+          "parity": 0,
+          "chi": 96,
+          "E": -38.55334685885407,
+          "source_record": "contrib/d2_order_one_20261110/dmrg/reference_peotta_exploratory_L48_P0_s17.json",
+          "record_sha256": "95d4e7bbfd9d918cfbb3559ad5559169b4e7d2f2ac1cfd24bc53dbe3d5150ae4",
+          "checkpoint_sha256": "ecd6a8bbbd104ac1c0b4c766f7cff43fc3c9ed454f865580c60fec45260e3268"
+        },
+        {
+          "L": 96,
+          "parity": 0,
+          "chi": 128,
+          "E": -77.52708713112727,
+          "source_record": "contrib/d2_order_one_20261110/dmrg/reference_peotta_exploratory_L96_P0_s17.json",
+          "record_sha256": "a922d1f0b0d18c555dafa7c45900b6e689c2a84143d097bc8e2ff4902f36d1c8",
+          "checkpoint_sha256": "284aef6863458514f4602b23d1f548080c6d893232726c0251d4a3e27e47ae36"
+        },
+        {
+          "L": 192,
+          "parity": 0,
+          "chi": 192,
+          "E": -155.48247430858356,
+          "source_record": "contrib/d2_order_one_continuation_20261110/attractive_scan/results/attr_ref_L192_P0_s17.json",
+          "record_sha256": "9fc003593539491d5407b2ce61c321fb23a96c838aca188082a157afe47c6714",
+          "checkpoint_sha256": "39420c4e450599e242c8a07941c04b78ef27ccce57733a4ca585ecf5bf028087"
+        }
+      ]
+    }
+  ]
+}

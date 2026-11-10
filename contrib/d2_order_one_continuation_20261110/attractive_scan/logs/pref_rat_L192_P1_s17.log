@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/Users/pace/Documents/GitHub/cd-conjecture/contrib/d2_order_one_continuation_20261110/attractive_scan/run.py", line 102, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/Users/pace/Documents/GitHub/cd-conjecture/contrib/d2_order_one_continuation_20261110/attractive_scan/run.py", line 83, in main
+    one(a.name,a.L,a.parity,a.chi,a.seed);return
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/pace/Documents/GitHub/cd-conjecture/contrib/d2_order_one_continuation_20261110/attractive_scan/run.py", line 59, in one
+    while not all(ref_done(p) for p in (0,1)):time.sleep(5)
+                                              ^^^^^^^^^^^^^
+KeyboardInterrupt

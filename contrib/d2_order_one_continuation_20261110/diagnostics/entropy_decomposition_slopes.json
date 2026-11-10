@@ -1,0 +1,202 @@
+[
+  {
+    "name": "bridge_r4_u1_k4",
+    "sizes": [
+      24,
+      48
+    ],
+    "parities": [
+      0,
+      1
+    ],
+    "slopes": {
+      "S": {
+        "S_central3": 2.78010540711807,
+        "S_fractional": 3.0242134912391485
+      },
+      "S_binary": {
+        "S_central3": 0.18303409757192843,
+        "S_fractional": 0.1440197432257135
+      },
+      "S_conditional": {
+        "S_central3": 2.5970713095461417,
+        "S_fractional": 2.880193748013436
+      }
+    }
+  },
+  {
+    "name": "bridge_r4_u1_k4",
+    "sizes": [
+      48,
+      96
+    ],
+    "parities": [
+      1,
+      0
+    ],
+    "slopes": {
+      "S": {
+        "S_central3": 2.706523318045346,
+        "S_fractional": 2.6833996678824708
+      },
+      "S_binary": {
+        "S_central3": 0.033161206447681786,
+        "S_fractional": 0.046748390176092065
+      },
+      "S_conditional": {
+        "S_central3": 2.6733621115976667,
+        "S_fractional": 2.63665127770638
+      }
+    }
+  },
+  {
+    "name": "bridge_r3_u1_k4",
+    "sizes": [
+      24,
+      48
+    ],
+    "parities": [
+      0,
+      0
+    ],
+    "slopes": {
+      "S": {
+        "S_central3": 6.817594549813926,
+        "S_fractional": 6.867592356993645
+      },
+      "S_binary": {
+        "S_central3": -0.004436485283083582,
+        "S_fractional": -0.004850042237681713
+      },
+      "S_conditional": {
+        "S_central3": 6.822031035097009,
+        "S_fractional": 6.872442399231327
+      }
+    }
+  },
+  {
+    "name": "bridge_r1.5_u1.5_k3",
+    "sizes": [
+      24,
+      48
+    ],
+    "parities": [
+      0,
+      1
+    ],
+    "slopes": {
+      "S": {
+        "S_central3": 0.03289455771283268,
+        "S_fractional": 0.13470984645879103
+      },
+      "S_binary": {
+        "S_central3": 0.042308087493361186,
+        "S_fractional": 0.0620247554800629
+      },
+      "S_conditional": {
+        "S_central3": -0.009413529780530182,
+        "S_fractional": 0.0726850909787298
+      }
+    }
+  },
+  {
+    "name": "bridge_r2_u1.5_k4",
+    "sizes": [
+      24,
+      48
+    ],
+    "parities": [
+      0,
+      1
+    ],
+    "slopes": {
+      "S": {
+        "S_central3": 0.1984236679952903,
+        "S_fractional": 1.0018234515986943
+      },
+      "S_binary": {
+        "S_central3": -1.0376024146199554,
+        "S_fractional": 0.24307032351330538
+      },
+      "S_conditional": {
+        "S_central3": 1.2360260826152465,
+        "S_fractional": 0.7587531280853909
+      }
+    }
+  },
+  {
+    "name": "bridge_r2_u1.5_k4",
+    "sizes": [
+      48,
+      96
+    ],
+    "parities": [
+      1,
+      0
+    ],
+    "slopes": {
+      "S": {
+        "S_central3": 1.530175058414116,
+        "S_fractional": 1.0037077624649622
+      },
+      "S_binary": {
+        "S_central3": 1.2884518360851218,
+        "S_fractional": 0.2441193515829088
+      },
+      "S_conditional": {
+        "S_central3": 0.2417232223289934,
+        "S_fractional": 0.7595884108820523
+      }
+    }
+  },
+  {
+    "name": "control_xx",
+    "sizes": [
+      24,
+      48
+    ],
+    "parities": [
+      0,
+      0
+    ],
+    "slopes": {
+      "S": {
+        "S_central3": 0.9306792494714923,
+        "S_fractional": 0.9690512271234223
+      },
+      "S_binary": {
+        "S_central3": 0.13324612581735115,
+        "S_fractional": 0.20088857260351306
+      },
+      "S_conditional": {
+        "S_central3": 0.7974331236541415,
+        "S_fractional": 0.768162654519909
+      }
+    }
+  },
+  {
+    "name": "control_two_xx",
+    "sizes": [
+      24,
+      48
+    ],
+    "parities": [
+      0,
+      0
+    ],
+    "slopes": {
+      "S": {
+        "S_central3": 2.0567666500282553,
+        "S_fractional": 1.7108593847142768
+      },
+      "S_binary": {
+        "S_central3": 0.11906545215149138,
+        "S_fractional": 0.025680099784275295
+      },
+      "S_conditional": {
+        "S_central3": 1.9377011978767622,
+        "S_fractional": 1.6851792849299996
+      }
+    }
+  }
+]

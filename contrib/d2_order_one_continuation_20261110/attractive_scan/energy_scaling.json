@@ -1,0 +1,48 @@
+{
+  "status": "post-hoc finite-size diagnostic, not a selection gate or dynamical-exponent measurement",
+  "formula": "D(L)=E(4L)-3E(2L)+2E(L); if E=e_inf L+e_b+A L^(-p), then -log2(D(2L)/D(L))=p. Unitary CFT Casimir leading power is p=1 when applicable; crossovers/subleading terms can spoil this at finite size.",
+  "sources": [
+    "contrib/d2_order_one_20261110/dmrg/reference_peotta_exploratory_L24_P0_s17.json",
+    "contrib/d2_order_one_20261110/dmrg/reference_peotta_exploratory_L48_P0_s17.json",
+    "contrib/d2_order_one_20261110/dmrg/reference_peotta_exploratory_L96_P0_s17.json",
+    "contrib/d2_order_one_continuation_20261110/attractive_scan/results/attr_ref_L192_P0_s17.json"
+  ],
+  "rows": [
+    {
+      "name": "attr_ref",
+      "energies": {
+        "24": -19.071656638346553,
+        "48": -38.55334685885407,
+        "96": -77.52708713112727,
+        "192": -155.48247430858356
+      },
+      "D_base_sizes": [
+        24,
+        48
+      ],
+      "D": [
+        -0.01035983125817097,
+        -0.007906632909879363
+      ],
+      "effective_energy_correction_power": 0.38986515477841943
+    },
+    {
+      "name": "exact_XX",
+      "energies": {
+        "24": -14.925971109908655,
+        "48": -30.19971233130036,
+        "96": -60.75481696499185,
+        "192": -121.86897255093814
+      },
+      "D_base_sizes": [
+        24,
+        48
+      ],
+      "D": [
+        -0.007622190908080029,
+        -0.003946318563293971
+      ],
+      "effective_energy_correction_power": 0.9496983217278088
+    }
+  ]
+}

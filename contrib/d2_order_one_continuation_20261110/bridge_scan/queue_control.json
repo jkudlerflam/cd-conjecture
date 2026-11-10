@@ -1,0 +1,25 @@
+{
+  "defer": [
+    {
+      "name": "b_r2_d1_4_q0_hm53_64",
+      "L": 48
+    },
+    {
+      "name": "b_r2_d1_4_q1_16_hm7_8",
+      "L": 48
+    },
+    {
+      "name": "b_r2_d3_16_q0_hm11_16",
+      "L": 48
+    },
+    {
+      "name": "b_r2_d3_16_q1_16_hm3_4",
+      "L": 48
+    },
+    {
+      "name": "b_r5_2_d1_10_q1_16_hm15_16",
+      "L": 48
+    }
+  ],
+  "reason": "R3_EXTENSION.md: prioritize leads before registered negative controls"
+}
