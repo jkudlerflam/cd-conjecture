@@ -1,0 +1,1 @@
+{"tag": "t_tfg", "model": "tfim", "h": 1.2, "q": 8, "p": 0, "init": "rand:1", "chi_init": 16, "nsw_init": 2, "chis": [16, 24, 32, 48, 64], "min_it": 10, "max_it": 100, "tolE": 1e-10, "tolS": 1e-6}

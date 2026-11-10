@@ -1,0 +1,28 @@
+=== c1loc
+chi=  16 I1=True  it=127 dE=4.6e-11/9.5e-11 e=-0.09656742271 Sbar=1.01077 xi_e=24.45 xi_o=57.23 N=2.0000 varN=0.3978 disc=4.7e-06 res=9.9e-10
+chi=  24 I1=True  it= 59 dE=5.4e-12/1.1e-11 e=-0.09659261230 Sbar=1.10767 xi_e=46.83 xi_o=101.36 N=2.0003 varN=0.4010 disc=1.7e-06 res=9.9e-10
+chi=  32 I1=True  it= 83 dE=2.2e-12/4.5e-12 e=-0.09659923160 Sbar=1.17535 xi_e=68.32 xi_o=152.35 N=2.0001 varN=0.4023 disc=6.8e-07 res=9.7e-10
+chi=  48 I1=True  it=136 dE=6.7e-13/1.4e-12 e=-0.09660288674 Sbar=1.26514 xi_e=120.78 xi_o=266.90 N=2.0001 varN=0.4035 disc=1.9e-07 res=1.0e-09
+chi=  64 I1=True  it=181 dE=1.3e-13/3.1e-13 e=-0.09660383309 Sbar=1.32357 xi_e=167.00 xi_o=374.10 N=2.0000 varN=0.4039 disc=9.1e-08 res=1.0e-09
+  local c (xi = max): 16->24:1.017 24->32:0.996 32->48:0.961 48->64:1.038
+  c (last three converged chi [32, 48, 64]): xi=max 0.987, xi_even 0.989, xi_odd 0.987
+  last doubling 32->64: xi_even x2.444, xi_odd x2.455
+=== c2loc
+chi=  16 I1=True  it=135 dE=4.7e-11/9.8e-11 e=-0.09494499099 Sbar=1.36163 xi_e=7.69 xi_o=99.50 N=1.9854 varN=0.6879 disc=1.4e-04 res=9.9e-10
+chi=  24 I1=True  it=197 dE=4.0e-11/8.6e-11 e=-0.09584652683 Sbar=1.48348 xi_e=10.72 xi_o=22.50 N=2.0021 varN=0.7219 disc=6.6e-05 res=9.5e-10
+chi=  32 I1=True  it= 83 dE=2.1e-11/7.3e-11 e=-0.09610520989 Sbar=1.55976 xi_e=13.61 xi_o=29.37 N=2.0006 varN=0.7094 disc=2.4e-05 res=9.9e-10
+chi=  48 I1=True  it= 78 dE=1.0e-06/9.7e-11 e=-0.09634759540 Sbar=1.67364 xi_e=19.02 xi_o=42.56 N=2.0010 varN=0.6963 disc=2.2e-05 res=9.9e-10
+chi=  64 I1=True  it= 69 dE=1.3e-07/4.6e-11 e=-0.09644947234 Sbar=1.75941 xi_e=25.14 xi_o=56.22 N=2.0006 varN=0.6907 disc=1.3e-05 res=9.8e-10
+chi=  96 I1=True  it=148 dE=2.2e-08/9.9e-11 e=-0.09653274936 Sbar=1.89018 xi_e=36.28 xi_o=78.08 N=2.0003 varN=0.6836 disc=3.5e-06 res=9.7e-10
+  local c (xi = max): 16->24:-0.492 24->32:1.717 32->48:1.842 48->64:1.849 64->96:2.388
+  c (last three converged chi [48, 64, 96]): xi=max 2.148, xi_even 2.019, xi_odd 2.148
+  last doubling 48->96: xi_even x1.907, xi_odd x1.835
+=== t_tfg
+chi=  16 I1=True  it= 10 dE=4.7e-15/7.1e-15 e=-1.41961927490 Sbar=0.25336 xi_e=2.38 xi_o=5.19 N=0.8297 varN=1.2854 disc=3.2e-14 res=7.7e-10
+chi=  24 I1=True  it= 10 dE=2.4e-15/1.4e-14 e=-1.41961927490 Sbar=0.25336 xi_e=2.44 xi_o=5.24 N=0.8297 varN=1.2854 disc=3.9e-15 res=6.7e-10
+chi=  32 I1=True  it= 10 dE=3.7e-14/2.0e-14 e=-1.41961927490 Sbar=0.25336 xi_e=2.44 xi_o=5.24 N=0.8297 varN=1.2854 disc=4.0e-15 res=6.7e-10
+chi=  48 I1=True  it= 10 dE=6.0e-15/1.7e-14 e=-1.41961927490 Sbar=0.25336 xi_e=2.44 xi_o=5.24 N=0.8297 varN=1.2854 disc=4.0e-15 res=6.7e-10
+chi=  64 I1=True  it= 10 dE=4.2e-14/2.1e-14 e=-1.41961927490 Sbar=0.25336 xi_e=2.44 xi_o=5.24 N=0.8297 varN=1.2854 disc=3.9e-15 res=6.7e-10
+  local c (xi = max): 16->24:0.000 24->32:17.220 32->48:0.389 48->64:-0.315
+  c (last three converged chi [32, 48, 64]): xi=max -0.038, xi_even 0.017, xi_odd -0.038
+  last doubling 32->64: xi_even x1.000, xi_odd x1.000
