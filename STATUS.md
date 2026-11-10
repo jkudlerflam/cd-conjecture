@@ -28,7 +28,7 @@ together with a family of neighbours of it. One of them is the bond proposed by 
 
 The strong ZZ term, with the field near its blockade value, leaves a dilute gas of blockaded particles. Their direct hop (the XY − YX term) is tuned down to the size of the next-nearest hop that the pairing term XX − YY generates at second order. The particles then move on a zigzag ladder whose band has two valleys, and the proposed infrared theory is a two-component Luttinger liquid with c = 2.
 
-The spread of couplings is one small parameter ε = Δ/V (pairing Δ, ZZ coupling V), not three tunings. The next-nearest hop exists only at second order, t₂ ~ εΔ, so the direct hop must be of the same size, giving the ladder εΔ : Δ : Δ/ε. The field sits at the blockade value plus a remainder of order t₂ that sets the density. As ε → 0 only the hopping phase, the pairing strength and the density matter, and the readings agree at V/Δ = 40 and 80. How large ε can be is open.
+The spread of couplings is one small parameter ε = Δ/V (pair amplitude Δ = J_x − J_y, blockade energy V = 4J_z), not three tunings. The next-nearest hop exists only at second order, |t₂| = Δ²/2V, and the direct hop 2D is set equal to it (D = 1/160 above), giving the ladder εΔ : Δ : Δ/ε. The field sits at the blockade value plus a remainder of order t₂ that sets the density. As ε → 0 only the hopping phase, the pairing strength and the density matter, and the readings agree at V/Δ = 40 and 80. How large ε can be is open.
 
 Evidence, all numerical:
 
