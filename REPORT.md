@@ -2822,3 +2822,31 @@ C185 backfill, R6′ and R7 of its RESULT.md.
 - Full qubit chain with the transverse-DM term, V/Δ = 8, L = 64, χ = 256. With λ = 0.3 at φ shift 0.06, S_mid = 0.692 and c_prof = 1.19 (n_mid 0.144). The λ = 0 reference reads S_mid = 1.477 and c_prof = 2.05 (n_mid 0.178). R7 counts support if the DM run exceeds the reference by 0.1. It is lower by 0.78, so there is no support at this φ shift. The other shifts (0, 0.10, 0.14) are in the main job.
 
 What is left. The main jobs of C185 and C186. For rule (B) of C186, a rerun of the L = 192 points and the two-leg control with a longer limit and χ ≥ 256. For C183, the L = 256 runs of S2 and the two-leg control, and a χ sequence at S1.
+
+### 9.173 The χ = 1024 continuation of the partially polarized points: the reading is converged at 1.73 to 1.86, the registered verdict is E1, and the shortfall against the control is of the size of a shell effect in N (coordinator, Claude Fable 5, 2026-11-10; `codex/work_C187q/L256_job/chi1024/`)
+
+The continuation registered in `codex/work_C187q/L256_job/chi1024/README.md` finished all ten runs. The six candidate runs at L = 256 (φ = 1.53 and 1.555, N = 47, 48, 49) and the c = 2 control got three more sweeps at χ = 1024, and the three L = 128 partners went from χ = 384 through 512 and 768 to 1024. All numbers are in `typhon_out/analyze1024.txt`, written by `analyze1024.py`.
+
+- Convergence [numerical]. From χ = 768 to 1024, S̄₆ moves by 0.0025 to 0.0027 in the six candidate runs at L = 256 (bound 0.005), by 0.0001 in the L = 128 partners (bound 0.002) and by 0.0003 in the control at L = 256. Every run counts as converged under the registered rule. At χ = 1024 the discarded weight is 1.2e-8 to 1.3e-8 at L = 256 and 7e-10 at L = 128, and the last sweep moves the energy by 7e-9 and S̄₆ by 7e-6.
+- R1, matched χ = 1024 [numerical]. c_two(128 → 256) = 1.748, 1.725, 1.756 at φ = 1.53 and 1.777, 1.847, 1.856 at φ = 1.555, for W = 1, 6, 12. The control reads 2.086, 1.921, 2.002. At matched χ = 512 the candidates read 1.61 to 1.64 and 1.67 to 1.75, and at χ = 768 they read 1.70 to 1.73 and 1.76 to 1.83.
+- R2, extrapolated in discarded weight [numerical]. 1.757, 1.734, 1.765 at φ = 1.53 and 1.786, 1.856, 1.865 at φ = 1.555, with an uncertainty of 0.003 from the two-point extrapolation. The control gives 2.088, 1.923, 2.004, so the procedure is calibrated.
+- Parity gap [numerical]. L·Δ_P at L = 256 is −0.177 at φ = 1.53 and +0.488 at φ = 1.555, the same as at χ = 384 to 0.003. Neither is above 1.5 times its L = 128 value.
+- Other readings at χ = 1024 [numerical]. c_prof goes from 2.16 at L = 128 to 1.98 at L = 256 for φ = 1.53 and from 2.14 to 2.02 for φ = 1.555, against 1.93 to 1.97 for the control. The valley polarization is 0.143 and 0.069 at L = 256 (0.132 and 0.065 at L = 128).
+
+Verdict under the registered rule: E1, the reading stays at c ≈ 2. R1 is at least 1.6 in all three windows at both φ, and R2 is at least 1.75 in two of the three windows at both φ. The margin at φ = 1.53 is small, 1.757 and 1.765 against the 1.75 threshold, with 1.734 at W = 6.
+
+What this settles. §9.166 left open how much of the shortfall against the control was truncation. Almost none of it is. The extrapolation adds 0.009 to the matched reading, and the earlier unmatched number (L = 256 at χ = 768 against L = 128 at χ = 384) was already within 0.005 of it, because the remaining rise at the two sizes cancelled. So with the bond dimension converged the registered reading sits below the control by 0.34, 0.20, 0.25 at φ = 1.53 and by 0.31, 0.07, 0.15 at φ = 1.555 (W = 1, 6, 12).
+
+A shell effect in N of the same size (not registered, post hoc). The registered reading uses one particle number at each size, N = 24 and N = 48. At fixed L the entropy is not a smooth function of N. Let d₂ = S̄_W(N) − [S̄_W(N − 1) + S̄_W(N + 1)]/2, which removes a smooth density dependence to first order.
+
+- At L = 256 and χ = 1024, S̄₆ is 2.2554, 2.2480, 2.2727 for N = 47, 48, 49 at φ = 1.53, so d₂ = −0.016, and 2.2574, 2.2630, 2.2762 at φ = 1.555, so d₂ = −0.004.
+- At L = 128, where the N = 23 and 25 runs exist only at χ = 384, S̄₆ is 2.0230, 2.0466, 2.0404 at φ = 1.53, so d₂ = +0.015, and 2.0213, 2.0475, 2.0570 at φ = 1.555, so d₂ = +0.008.
+- The sign of d₂ follows the parity gap. The N = 24 run at L = 128 is favoured in energy (L·Δ_P = 1.5) and has more entropy than its neighbours, and the N = 48 run at L = 256 is disfavoured or nearly neutral (L·Δ_P = −0.18 and 0.49) and has less.
+- Read against the same N = 24 partner, the three L = 256 runs give c_two(W = 6) = 1.79, 1.73, 1.94 at φ = 1.53 and 1.80, 1.85, 1.96 at φ = 1.555.
+- Removing d₂ at both sizes shifts c_two by +0.23, +0.27, +0.27 at φ = 1.53 and by +0.16, +0.11, +0.13 at φ = 1.555, to 1.98, 1.99, 2.03 and 1.94, 1.95, 1.98. The control reads 2.09, 1.92, 2.00.
+
+So the shortfall of the registered reading against the control is matched, in size and in sign, by the dependence of the entropy on the particle number at fixed length. This is the same structure as the sign-changing L·Δ_P of §9.166, most likely a shell effect of the valley occupations at partial polarization. The limits of this statement are that the correction was chosen after seeing the data, that the L = 128 second difference is taken at χ = 384, and that the control has no N ± 1 runs, so its own shell effect is not measured.
+
+Reading. Off the symmetric line the effective model stays consistent with c = 2 out to L = 256 with the bond dimension converged, and the registered rule returns E1. The single-N reading of 1.73 to 1.86 is a converged number and is not raised by more χ. Its distance from the control is of the size of the N-dependence of the entropy, so a reading averaged over neighbouring N, or taken in a grand-canonical setup at fixed chemical potential, is the cleaner estimator for partially polarized points. This is still the second-order effective model. The qubit chain itself is the subject of §9.171.
+
+What is left for these points. The N = 23 and 25 partners at L = 128 continued to χ = 1024, and N ± 1 runs of the control at both sizes, would turn the shell correction from a post hoc observation into a calibrated reading.

@@ -1,0 +1,123 @@
+# stage table: tag, then for chi = 384, 512, 768, 1024 (last sweep of the stage): E, trunc, Sbar1, Sbar6, Sbar12
+bf_ctl2_L128_N24  sweeps 27  final chi 1024  maxchi 1024  dE(last two sweeps) -3.24e-09  dSbar6(last two) +8.09e-07
+    chi  384  E -45.0179366642  trunc 2.15e-09  Sbar 1.7448 1.7843 1.7678
+    chi  512  E -45.0179383307  trunc 3.73e-10  Sbar 1.7450 1.7845 1.7680
+    chi  768  E -45.0179387196  trunc 4.07e-11  Sbar 1.7451 1.7845 1.7681
+    chi 1024  E -45.0179387425  trunc 6.72e-12  Sbar 1.7451 1.7845 1.7681
+bf_w1n316_p1.5300_L128_N24  sweeps 27  final chi 1024  maxchi 1024  dE(last two sweeps) +9.40e-10  dSbar6(last two) +2.38e-06
+    chi  384  E -53.4848148549  trunc 8.13e-08  Sbar 2.0437 2.0466 2.0411
+    chi  512  E -53.4848271614  trunc 2.43e-08  Sbar 2.0452 2.0481 2.0425
+    chi  768  E -53.4848310807  trunc 3.25e-09  Sbar 2.0457 2.0486 2.0430
+    chi 1024  E -53.4848315465  trunc 7.31e-10  Sbar 2.0458 2.0487 2.0431
+bf_w1n316_p1.5550_L128_N24  sweeps 27  final chi 1024  maxchi 1024  dE(last two sweeps) +1.04e-09  dSbar6(last two) +2.41e-06
+    chi  384  E -53.3698496110  trunc 8.49e-08  Sbar 2.0548 2.0475 2.0445
+    chi  512  E -53.3698622522  trunc 2.48e-08  Sbar 2.0563 2.0490 2.0459
+    chi  768  E -53.3698663519  trunc 3.42e-09  Sbar 2.0569 2.0495 2.0465
+    chi 1024  E -53.3698668329  trunc 7.43e-10  Sbar 2.0569 2.0496 2.0465
+ctl2_L256_N48  sweeps 28  final chi 1024  maxchi 1024  dE(last two sweeps) -1.06e-07  dSbar6(last two) +2.20e-05
+    chi  384  E -90.2901531123  trunc 2.52e-08  Sbar 1.9791 1.9996 1.9925
+    chi  512  E -90.2901921085  trunc 6.21e-09  Sbar 1.9835 2.0040 1.9969
+    chi  768  E -90.2902074797  trunc 1.31e-09  Sbar 1.9857 2.0061 1.9990
+    chi 1024  E -90.2902092434  trunc 3.91e-10  Sbar 1.9861 2.0064 1.9993
+w1n316_p1.5300_L256_N47  sweeps 28  final chi 1024  maxchi 1024  dE(last two sweeps) +6.20e-09  dSbar6(last two) +6.77e-06
+    chi  384  E -105.0095418011  trunc 3.47e-07  Sbar 2.2267 2.2253 2.2240
+    chi  512  E -105.0096811200  trunc 1.48e-07  Sbar 2.2437 2.2424 2.2410
+    chi  768  E -105.0097468754  trunc 3.46e-08  Sbar 2.2542 2.2528 2.2514
+    chi 1024  E -105.0097592211  trunc 1.16e-08  Sbar 2.2567 2.2554 2.2539
+w1n316_p1.5300_L256_N48  sweeps 28  final chi 1024  maxchi 1024  dE(last two sweeps) +6.96e-09  dSbar6(last two) +6.59e-06
+    chi  384  E -107.1686306756  trunc 3.56e-07  Sbar 2.2157 2.2159 2.2140
+    chi  512  E -107.1687739661  trunc 1.53e-07  Sbar 2.2341 2.2343 2.2323
+    chi  768  E -107.1688415555  trunc 3.61e-08  Sbar 2.2451 2.2453 2.2433
+    chi 1024  E -107.1688543333  trunc 1.22e-08  Sbar 2.2478 2.2480 2.2460
+w1n316_p1.5300_L256_N49  sweeps 28  final chi 1024  maxchi 1024  dE(last two sweeps) +6.58e-09  dSbar6(last two) +7.06e-06
+    chi  384  E -109.3283995967  trunc 3.78e-07  Sbar 2.2412 2.2410 2.2399
+    chi  512  E -109.3285523772  trunc 1.62e-07  Sbar 2.2592 2.2589 2.2577
+    chi  768  E -109.3286251886  trunc 3.83e-08  Sbar 2.2703 2.2700 2.2687
+    chi 1024  E -109.3286389974  trunc 1.28e-08  Sbar 2.2731 2.2727 2.2715
+w1n316_p1.5550_L256_N47  sweeps 28  final chi 1024  maxchi 1024  dE(last two sweeps) +6.21e-09  dSbar6(last two) +6.32e-06
+    chi  384  E -104.7686486479  trunc 3.58e-07  Sbar 2.2281 2.2273 2.2260
+    chi  512  E -104.7687925395  trunc 1.50e-07  Sbar 2.2453 2.2445 2.2432
+    chi  768  E -104.7688603256  trunc 3.62e-08  Sbar 2.2558 2.2549 2.2536
+    chi 1024  E -104.7688729976  trunc 1.20e-08  Sbar 2.2583 2.2574 2.2561
+w1n316_p1.5550_L256_N48  sweeps 28  final chi 1024  maxchi 1024  dE(last two sweeps) +6.49e-09  dSbar6(last two) +6.38e-06
+    chi  384  E -106.9343149490  trunc 3.75e-07  Sbar 2.2310 2.2319 2.2300
+    chi  512  E -106.9344638300  trunc 1.58e-07  Sbar 2.2487 2.2495 2.2476
+    chi  768  E -106.9345345775  trunc 3.81e-08  Sbar 2.2596 2.2604 2.2584
+    chi 1024  E -106.9345478874  trunc 1.27e-08  Sbar 2.2623 2.2630 2.2610
+w1n316_p1.5550_L256_N49  sweeps 28  final chi 1024  maxchi 1024  dE(last two sweeps) +6.77e-09  dSbar6(last two) +6.55e-06
+    chi  384  E -109.0980693316  trunc 3.85e-07  Sbar 2.2454 2.2444 2.2432
+    chi  512  E -109.0982263467  trunc 1.65e-07  Sbar 2.2634 2.2624 2.2611
+    chi  768  E -109.0983011298  trunc 4.05e-08  Sbar 2.2745 2.2735 2.2722
+    chi 1024  E -109.0983152684  trunc 1.34e-08  Sbar 2.2772 2.2762 2.2749
+
+# convergence in chi: |Sbar6(1024) - Sbar6(768)|, bound 0.005 at L = 256 and 0.002 at L = 128
+bf_ctl2_L128_N24               L = 128  step +0.0000  converged
+bf_w1n316_p1.5300_L128_N24     L = 128  step +0.0001  converged
+bf_w1n316_p1.5550_L128_N24     L = 128  step +0.0001  converged
+ctl2_L256_N48                  L = 256  step +0.0003  converged
+w1n316_p1.5300_L256_N47        L = 256  step +0.0025  converged
+w1n316_p1.5300_L256_N48        L = 256  step +0.0027  converged
+w1n316_p1.5300_L256_N49        L = 256  step +0.0027  converged
+w1n316_p1.5550_L256_N47        L = 256  step +0.0025  converged
+w1n316_p1.5550_L256_N48        L = 256  step +0.0026  converged
+w1n316_p1.5550_L256_N49        L = 256  step +0.0027  converged
+
+# R1, matched chi = 1024 on both sizes: c_two(128 -> 256) at W = 1, 6, 12; then c_prof at each size
+ctl2 (c = 2 control)   2.086 1.921 2.002   c_prof 1.929 -> 1.965
+phi = 1.53             1.748 1.725 1.756   c_prof 2.157 -> 1.978
+phi = 1.555            1.777 1.847 1.856   c_prof 2.137 -> 2.022
+# for comparison, matched at chi = 512 and at chi = 768
+  chi 512  ctl2 (c = 2 control)   2.065 1.900 1.981
+  chi 512  phi = 1.53             1.635 1.612 1.644
+  chi 512  phi = 1.555            1.666 1.736 1.746
+  chi 768  ctl2 (c = 2 control)   2.083 1.918 1.999
+  chi 768  phi = 1.53             1.726 1.703 1.734
+  chi 768  phi = 1.555            1.755 1.825 1.834
+
+# R2, linear extrapolation in discarded weight through chi = 512, 768, 1024 (three-point), with the two-point value through 768, 1024
+# per size: Sbar_W extrapolated (three-point, two-point), W = 1, 6, 12
+    bf_ctl2_L128_N24               1.7451 / 1.7451  1.7845 / 1.7845  1.7681 / 1.7681
+    ctl2_L256_N48                  1.9863 / 1.9862  2.0066 / 2.0066  1.9995 / 1.9995
+ctl2 (c = 2 control)   R2 (three-point) 2.088 1.923 2.004   two-point 2.087 1.922 2.003   uncertainty (sum of the two sizes) 0.000 0.000 0.000
+    bf_w1n316_p1.5300_L128_N24     2.0458 / 2.0458  2.0487 / 2.0487  2.0431 / 2.0431
+    w1n316_p1.5300_L256_N48        2.2488 / 2.2492  2.2490 / 2.2494  2.2470 / 2.2473
+phi = 1.53             R2 (three-point) 1.757 1.734 1.765   two-point 1.760 1.737 1.768   uncertainty (sum of the two sizes) 0.003 0.003 0.003
+    bf_w1n316_p1.5550_L128_N24     2.0570 / 2.0570  2.0496 / 2.0496  2.0466 / 2.0466
+    w1n316_p1.5550_L256_N48        2.2633 / 2.2636  2.2640 / 2.2643  2.2620 / 2.2623
+phi = 1.555            R2 (three-point) 1.786 1.856 1.865   two-point 1.789 1.858 1.868   uncertainty (sum of the two sizes) 0.003 0.003 0.002
+
+# calibration: ctl2 R2 within 0.25 of 2
+ctl2 R2 2.088 1.923 2.004   calibrated
+
+# parity gap L * [E(N+1) + E(N-1) - 2 E(N)] at L = 256 by chi stage; L = 128 references 1.53 (phi = 1.53) and 1.50 (phi = 1.555)
+phi = 1.5300: 384: -0.174  512: -0.176  768: -0.176  1024: -0.177   ratio to L = 128 at chi = 1024: -0.115  (within 1.5)
+phi = 1.5550: 384: +0.489  512: +0.489  768: +0.488  1024: +0.488   ratio to L = 128 at chi = 1024: 0.326  (within 1.5)
+
+# valley polarization and mid-chain density at chi = 1024
+bf_w1n316_p1.5300_L128_N24     p = 0.132  n_mid = 0.2037
+w1n316_p1.5300_L256_N48        p = 0.143  n_mid = 0.1955
+bf_w1n316_p1.5550_L128_N24     p = 0.065  n_mid = 0.2038
+w1n316_p1.5550_L256_N48        p = 0.069  n_mid = 0.1957
+
+# verdict rule
+R1 >= 1.6 in two of three windows at both phi: True
+R2 >= 1.75 in two of three windows at both phi: True
+R1 <= 1.3 in two windows at either phi: False
+verdict: E1
+
+# not registered: the same reading with the N = 47 and N = 49 runs at L = 256 against the N = 24 partner (chi = 1024), W = 1, 6, 12
+phi = 1.5300  N = 47  Sbar6 2.2554  c_two 1.826 1.789 1.825
+phi = 1.5300  N = 48  Sbar6 2.2480  c_two 1.748 1.725 1.756
+phi = 1.5300  N = 49  Sbar6 2.2727  c_two 1.967 1.939 1.977
+phi = 1.5550  N = 47  Sbar6 2.2574  c_two 1.743 1.799 1.814
+phi = 1.5550  N = 48  Sbar6 2.2630  c_two 1.777 1.847 1.856
+phi = 1.5550  N = 49  Sbar6 2.2762  c_two 1.907 1.961 1.976
+
+# not registered: shell effect in N. d2 = Sbar_W(N) - [Sbar_W(N-1) + Sbar_W(N+1)]/2 at fixed L, W = 1, 6, 12.
+# L = 256 at chi = 1024 (this job), L = 128 at chi = 384 (C181 backfill, the only chi where N = 23 and 25 exist)
+phi = 1.5300  L = 128: Sbar6(N = 23, 24, 25) 2.0230 2.0466 2.0404   d2 +0.0091 +0.0150 +0.0146
+phi = 1.5300  L = 256: Sbar6(N = 47, 48, 49) 2.2554 2.2480 2.2727   d2 -0.0171 -0.0160 -0.0167
+phi = 1.5300  shift of c_two from removing d2 at both sizes, 6 (d2_128 - d2_256) / ln 2: +0.227 +0.268 +0.271   R1 with the shift: 1.975 1.994 2.027
+phi = 1.5550  L = 128: Sbar6(N = 23, 24, 25) 2.0213 2.0475 2.0570   d2 +0.0129 +0.0083 +0.0102
+phi = 1.5550  L = 256: Sbar6(N = 47, 48, 49) 2.2574 2.2630 2.2762   d2 -0.0055 -0.0038 -0.0045
+phi = 1.5550  shift of c_two from removing d2 at both sizes, 6 (d2_128 - d2_256) / ln 2: +0.159 +0.105 +0.127   R1 with the shift: 1.936 1.952 1.983
