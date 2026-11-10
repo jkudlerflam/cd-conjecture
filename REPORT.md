@@ -2535,3 +2535,28 @@ A direct test of §9.160 on C176's converged data (L = 128, 192, 256, χ up to 1
 - Independent support. The odd-even energy excess L·(Δ_P − E'') is 1.52, 1.48, 1.45 at L = 128, 192, 256 and extrapolates to no pair-breaking gap above about 3e-4. The valley imbalance responds linearly to the valley offset (C181-type runs), 1.16 to 1.33 times the free value at L = 256, with no threshold. The valley structure factor slope is 1.2 to 1.55 times free.
 
 Reading. On the symmetric line (3.2) is a c = 2 two-component liquid with K_c ≈ 1.6 to 1.8 and K_s ≈ 1.2 to 1.5, and the hidden pseudospin gap of §9.139 is not there. The values sit at the low edge of C191's bands, with the same rise in density. Two limits. First, the two estimates of 1/K_c differ by about 10%, which moves K_s but not its side of 1. Second, this is the effective model. For the qubit chain C179's two-pair vertex O_4 (dimension 2/K_c ≈ 1.1 to 1.25) is still resonant and relevant on the symmetric line itself, so the qubit candidate has to sit off the line, where O_4 and the backscattering both carry momentum. What this section removes is the threshold. With no pseudospin gap, any nonzero valley offset gives the partially polarized two-valley liquid. The converged full-qubit test is C190.
+
+### 9.162 Off the symmetric line the exponents do not move, and the two-pair mismatch is measured (coordinator, Claude Fable 5, 2026-11-09; `codex/work_C192/`)
+
+§9.161 was on the symmetric line. The qubit candidate has to sit off it, so the same two fits were run on the off-line data (C176 at φ = 1.50, 1.52, 1.54 with L = 128 and 256, and C181 at φ = 1.53, 1.555, 1.565 with L = 128). The script is `offline.py`, and `CHECKPOINT.md` items 14 to 20 hold the relations and the full table.
+
+Off the line no symmetry exchanges the valleys, so the charge and pseudospin labels are dropped. Write ⟨(θ_α(r) − θ_α(0))(θ_β(r) − θ_β(0))⟩ = M_αβ ln r for the two valley phases, and N = M⁻¹ for the dual fields. A vertex e^{i m·θ} has two-point exponent (1/2) mᵀ M m. The two boson exponents give M_aa and M_bb, and the inter-valley pair exponent gives M_ab = η_pair − η_a − η_b. Then the backscattering has dimension N_aa + N_bb − 2N_ab (2K_s on the line), and the two-pair vertex O_4 has dimension 2η_pair and momentum q_4 = 2(Q − π), where Q is the measured pair momentum.
+
+| φ | L | majority fraction | η (majority, minority) | η_pair | backscattering dim | O_4 dim | Q − π |
+|---|---|---|---|---|---|---|---|
+| π/2 | 256 | 0.50 | 0.326, 0.326 | 0.620 | 2.92 | 1.24 | 0.0000 |
+| 1.54 | 256 | 0.55 | 0.329, 0.325 | 0.623 | 2.92 | 1.25 | 0.0053 |
+| 1.52 | 256 | 0.59 | 0.329, 0.321 | 0.629 | 2.98 | 1.26 | 0.0095 |
+| 1.50 | 256 | 0.64 | 0.327, 0.331 | 0.624 | 2.89 | 1.25 | 0.0168 |
+| 1.555 | 128 | 0.53 | 0.323, 0.321 | 0.624 | 3.01 | 1.25 | 0.0049 |
+| 1.53 | 128 | 0.57 | 0.325, 0.323 | 0.621 | 2.96 | 1.24 | 0.0075 |
+
+All at n = 3/16 and |w| = 1. The L = 128 rows of the C176 runs agree with their L = 256 rows to 0.01 in every exponent. At n = 1/8 (φ = 1.55 and 1.565, L = 128) the backscattering dimension is 2.6, as on the line.
+
+- Checks. The sum of the two fitted valley momenta equals Q to about 1e-4 in every run, so the fitted pair is the inter-valley one. The c = 2 control reads η = 0.500 at both valleys and 1.00 for the inter-leg pair, which gives M_ab = 0 and dimension 2 for both operators. The momentum systematic is about ±0.002 at L = 128.
+- Nothing moves. Between φ = π/2 and φ = 1.50, with the valley polarization rising to 0.28, both valley exponents stay at 0.32 to 0.33 and the pair exponent at 0.62 to 0.63. The backscattering is irrelevant throughout (dimension 2.9 to 3.0), and off the line it also carries momentum. The φ = 1.53 point of the collaborator's bond reads the same as the line.
+- O_4. Its dimension is 1.23 to 1.26, so it is relevant when resonant, with RG eigenvalue about 0.75. Off the line its mismatch is q_4 = 0.011, 0.019, 0.034 at φ = 1.54, 1.52, 1.50, and about 0.015 at φ = 1.53. Among parity-even vertices of dimension below 2, O_4 is the only one with a small momentum. The others sit at momenta of order 0.5 or near π.
+- Whether the mismatch protects the liquid is a commensurate-incommensurate question. The bare O_4 coupling is fourth order in the pairing, of relative size about 2(Δ/V)² ≈ 1.3e-3 at V/Δ = 40, which puts its locking length at a few thousand sites. The mismatch period at φ = 1.53 is about 420 sites. So the mismatch wins by a factor of order 10 in this estimate, and by more at φ = 1.50, where the exponents are the same. This is an estimate of orders of magnitude, not a calculation.
+- The 10% disagreement between the structure-factor slope (1.75 to 1.80) and ΣN/2 from the exponents (1.60) is the same off the line as on it. It is still unexplained. A fit systematic looks more likely than a physical mixing term.
+
+Reading. In the effective model the two-valley liquid is the same liquid on and off the line, with no sign that polarization brings any operator closer to marginal. Limits. This is the effective model. The C181 points are L = 128 only. And at L ≤ 256 the O_4 mismatch is below or close to 2π/L, so these sizes cannot show the cutoff at work. The full-qubit test C190 is the missing piece, and at accessible sizes it should track the effective model whether or not O_4 locks at much longer scales.

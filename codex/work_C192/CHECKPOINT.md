@@ -91,3 +91,40 @@ Items 1, 3, 5, 6, 8 all read as a gapless pseudospin sector with K_s > 1 (c = 2 
    K_s > 1 needs only K_c < 3.3 (n = 3/16) or K_c < 2.5 (n = 1/8), against a measured 1.6 to 1.8. The backscattering cos(√8 φ_s) has dimension 2K_s ≈ 2.3 to 2.9, irrelevant. No drift toward 1 between L = 128 and 256 (η_b moves by 0.001 to 0.004).
 
 13. Reading. On the symmetric line the effective model is a c = 2 two-component liquid, K_c ≈ 1.6 to 1.8, K_s ≈ 1.2 to 1.5. The hidden pseudospin gap of the Yang–Gaudin template is not there. K_s falls with density, consistent with C191's separatrix near n ≈ 0.07.
+
+## Checkpoint 4 (2026-11-09): the same analysis off the symmetric line
+
+14. Relations used off the line, where the two valleys are no longer exchanged by a symmetry. Write ⟨(θ_α(r) − θ_α(0))(θ_β(r) − θ_β(0))⟩ = M_αβ ln r, and N for the φ fields, with N = M⁻¹ for a Gaussian state with no θ–φ cross term. A vertex e^{i m·θ} has two-point exponent (1/2) mᵀ M m. So η_a = M_aa/2, η_b = M_bb/2, η_pair = (M_aa + M_bb + 2M_ab)/2, which gives M_ab = η_pair − η_a − η_b. The backscattering e^{2i(φ_a − φ_b)} has dimension N_aa + N_bb − 2N_ab (2K_s on the line). The two-pair vertex O₄ = e^{2i(θ_a + θ_b)} has dimension 2η_pair and momentum q₄ = 2(Q − π), with Q the pair momentum. π times the small-q slope of the density structure factor is ΣN/2 (K_c on the line).
+
+15. Script offline.py (run from codex/). It finds the valley momenta and Q from the data, fits both valley exponents and the pair exponent with the open-chain forms of items 10 and 11, and labels the majority valley by weights computed from the one-body matrix. Output in offline_C176.out and offline_C181.out. Largest window.
+
+| run | majority fraction | η_maj | η_min | η_pair | M_ab | backscattering dim | O₄ dim | ΣN/2 | Q − π |
+|---|---|---|---|---|---|---|---|---|---|
+| line, L = 256 | 0.501 | 0.326 | 0.326 | 0.620 | −0.032 | 2.92 | 1.24 | 1.61 | 0.0000 |
+| φ = 1.54, L = 256 | 0.553 | 0.329 | 0.325 | 0.623 | −0.031 | 2.92 | 1.25 | 1.61 | +0.0053 |
+| φ = 1.52, L = 256 | 0.593 | 0.329 | 0.321 | 0.629 | −0.022 | 2.98 | 1.26 | 1.59 | +0.0095 |
+| φ = 1.50, L = 256 | 0.641 | 0.327 | 0.331 | 0.624 | −0.034 | 2.89 | 1.25 | 1.60 | +0.0168 |
+| φ = 1.54, L = 128 | 0.564 | 0.319 | 0.327 | 0.626 | −0.020 | 3.00 | 1.25 | 1.60 | +0.0097 |
+| φ = 1.52, L = 128 | 0.599 | 0.323 | 0.325 | 0.625 | −0.023 | 2.98 | 1.25 | 1.60 | +0.0137 |
+| φ = 1.50, L = 128 | 0.633 | 0.325 | 0.323 | 0.616 | −0.033 | 2.94 | 1.23 | 1.62 | +0.0178 |
+| φ = 1.555, L = 128 (C181 backfill) | 0.532 | 0.323 | 0.321 | 0.624 | −0.020 | 3.01 | 1.25 | 1.60 | +0.0049 |
+| φ = 1.53, L = 128 (C181 backfill) | 0.566 | 0.325 | 0.323 | 0.621 | −0.027 | 2.96 | 1.24 | 1.61 | +0.0075 |
+| φ = 1.565, L = 128 | 0.500 | 0.321 | 0.326 | 0.627 | −0.020 | 3.00 | 1.25 | 1.60 | −0.0014 |
+| φ = 1.565, L = 128, n = 1/8 | 0.500 | 0.348 | 0.344 | 0.609 | −0.084 | 2.58 | 1.22 | 1.64 | −0.0011 |
+| φ = 1.55, L = 128, n = 1/8 | 0.553 | 0.342 | 0.339 | 0.604 | −0.077 | 2.64 | 1.21 | 1.66 | +0.0021 |
+
+   All rows are n = 3/16 unless marked. The first seven are C176 runs, the rest C181.
+
+16. Checks.
+   - k_maj + k_min − π equals Q − π to about 1e-4 in every run, so the fitted pair is the inter-valley pair.
+   - Momentum systematic about ±0.002 at L = 128 (the φ = 1.565 runs read −0.0014 where the band gives +0.0008).
+   - c = 2 control: η = 0.500 at both valleys, 1.00 for the inter-leg pair (separation 3 only, the separation-2 pair is a same-leg pair there). So M_ab = 0 and both dimensions are 2, as they should be.
+   - One-body rms residuals 0.001 to 0.003. Pair residuals 0.02 to 0.19, because the amplitude varies between the four reference sites.
+
+17. O₄ mismatch. q₄ = 2(Q − π) = 0.011, 0.019, 0.034 at φ = 1.54, 1.52, 1.50 (L = 256), and about 0.015 at φ = 1.53 (L = 128, period about 420 sites).
+
+18. Structure factor (sq2.py), π × slope of C_nn at R = 120. Control 0.96 to 0.97. Line 1.79 to 1.81. φ = 1.54, 1.52, 1.50: 1.78 to 1.81, 1.75 to 1.78, 1.77 to 1.80. So the roughly 10% gap against ΣN/2 ≈ 1.60 is the same off the line as on it. Unresolved. The density structure factor also has a peak near q ≈ 2.65 at both φ = π/2 and 1.50, the inter-valley density component (momentum k_b − k_a).
+
+19. Operator census for the qubit chain off the line, with M ≈ diag(0.65, 0.65), M_ab ≈ −0.03. Parity-even vertices e^{i(m_a θ_a + m_b θ_b)} with m_a + m_b even and dimension below 2: (1,1) 0.31, (1,−1) 0.34, (2,0) and (0,2) 0.65, (2,2) 1.24, (2,−2) 1.36, (3,1) and (1,3) 1.58, (3,−1) 1.67. All carry momentum of order 0.5 or more except (1,1) at ≈ π and (2,2) = O₄ at q₄. So O₄ is the only one near resonance.
+
+20. Reading. At n = 3/16 the exponents do not move between φ = π/2 and φ = 1.50, with valley polarization up to 0.28. The backscattering stays at dimension 2.9 to 3.0 and O₄ at 1.23 to 1.26. The collaborator's φ = 1.53 point reads the same as the line. Limits: effective model only, L = 128 only for the C181 points, and at L ≤ 256 the mismatch q₄ is below 2π/L or close to it, so these sizes cannot show whether O₄ is cut off.

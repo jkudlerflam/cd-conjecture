@@ -1,0 +1,56 @@
+sym316_L256  L=256  Wa,Wb=25.13,24.97  n(k) weight fractions maj,min=0.501,0.499
+  boson maj k=-0.2443 amp=1.92  eta: 0.311(0.003) 0.319(0.001) 0.324(0.001) 0.326(0.001)
+  boson min k=-2.8973 amp=1.92  eta: 0.311(0.003) 0.319(0.001) 0.324(0.001) 0.326(0.001)
+  pair d=2 Q-pi=+0.0000  eta: 0.606(0.018) 0.608(0.017) 0.620(0.017) 0.620(0.017)
+  pair d=3 Q-pi=+0.0000  eta: 0.616(0.043) 0.609(0.042) 0.620(0.042) 0.621(0.042)
+  momenta: k_maj+k_min-pi=+0.0000  Q-pi (d=2,3)=+0.0000,+0.0000
+  window 3: eta_maj=0.324 eta_min=0.324 eta_pair=0.620 M_ab=-0.029  bs_dim=2.95  O4_dim=1.24  sumN/2=1.61
+  window 4: eta_maj=0.326 eta_min=0.326 eta_pair=0.620 M_ab=-0.032  bs_dim=2.92  O4_dim=1.24  sumN/2=1.61
+p154_L256  L=256  Wa,Wb=22.42,27.66  n(k) weight fractions maj,min=0.553,0.447
+  boson maj k=-2.8946 amp=2.09  eta: 0.317(0.002) 0.323(0.001) 0.327(0.001) 0.329(0.001)
+  boson min k=-0.2418 amp=1.74  eta: 0.305(0.005) 0.316(0.002) 0.323(0.001) 0.325(0.001)
+  pair d=2 Q-pi=+0.0053  eta: 0.603(0.027) 0.609(0.027) 0.620(0.027) 0.623(0.027)
+  pair d=3 Q-pi=+0.0052  eta: 0.611(0.068) 0.610(0.068) 0.620(0.067) 0.623(0.067)
+  momenta: k_maj+k_min-pi=+0.0052  Q-pi (d=2,3)=+0.0053,+0.0052
+  window 3: eta_maj=0.327 eta_min=0.323 eta_pair=0.620 M_ab=-0.030  bs_dim=2.94  O4_dim=1.24  sumN/2=1.61
+  window 4: eta_maj=0.329 eta_min=0.325 eta_pair=0.623 M_ab=-0.031  bs_dim=2.92  O4_dim=1.25  sumN/2=1.61
+p152_L256  L=256  Wa,Wb=20.41,29.62  n(k) weight fractions maj,min=0.593,0.407
+  boson maj k=-2.8920 amp=2.21  eta: 0.319(0.002) 0.324(0.002) 0.328(0.002) 0.329(0.002)
+  boson min k=-0.2402 amp=1.59  eta: 0.299(0.007) 0.314(0.003) 0.321(0.003) 0.321(0.003)
+  pair d=2 Q-pi=+0.0095  eta: 0.599(0.078) 0.611(0.078) 0.623(0.079) 0.629(0.079)
+  pair d=3 Q-pi=+0.0095  eta: 0.607(0.194) 0.613(0.193) 0.624(0.193) 0.629(0.193)
+  momenta: k_maj+k_min-pi=+0.0095  Q-pi (d=2,3)=+0.0095,+0.0095
+  window 3: eta_maj=0.328 eta_min=0.321 eta_pair=0.624 M_ab=-0.025  bs_dim=2.97  O4_dim=1.25  sumN/2=1.60
+  window 4: eta_maj=0.329 eta_min=0.321 eta_pair=0.629 M_ab=-0.022  bs_dim=2.98  O4_dim=1.26  sumN/2=1.59
+p150_L256  L=256  Wa,Wb=17.96,32.03  n(k) weight fractions maj,min=0.641,0.359
+  boson maj k=-2.8891 amp=2.36  eta: 0.320(0.001) 0.324(0.001) 0.327(0.001) 0.327(0.001)
+  boson min k=-0.2358 amp=1.40  eta: 0.291(0.011) 0.316(0.003) 0.326(0.002) 0.331(0.002)
+  pair d=2 Q-pi=+0.0169  eta: 0.586(0.031) 0.609(0.030) 0.619(0.030) 0.624(0.030)
+  pair d=3 Q-pi=+0.0168  eta: 0.591(0.076) 0.610(0.075) 0.620(0.074) 0.625(0.074)
+  momenta: k_maj+k_min-pi=+0.0167  Q-pi (d=2,3)=+0.0169,+0.0168
+  window 3: eta_maj=0.327 eta_min=0.326 eta_pair=0.619 M_ab=-0.034  bs_dim=2.91  O4_dim=1.24  sumN/2=1.61
+  window 4: eta_maj=0.327 eta_min=0.331 eta_pair=0.624 M_ab=-0.034  bs_dim=2.89  O4_dim=1.25  sumN/2=1.60
+p154_L128  L=128  Wa,Wb=22.76,29.38  n(k) weight fractions maj,min=0.564,0.436
+  boson maj k=-2.8926 amp=1.16  eta: 0.307(0.001) 0.311(0.001) 0.320(0.001) 0.319(0.001)
+  boson min k=-0.2397 amp=0.90  eta: 0.290(0.005) 0.309(0.001) 0.317(0.001) 0.327(0.002)
+  pair d=2 Q-pi=+0.0097  eta: 0.610(0.050) 0.593(0.050) 0.617(0.050) 0.629(0.050)
+  pair d=3 Q-pi=+0.0096  eta: 0.633(0.128) 0.597(0.128) 0.617(0.126) 0.623(0.125)
+  momenta: k_maj+k_min-pi=+0.0093  Q-pi (d=2,3)=+0.0097,+0.0096
+  window 3: eta_maj=0.320 eta_min=0.317 eta_pair=0.617 M_ab=-0.020  bs_dim=3.04  O4_dim=1.23  sumN/2=1.62
+  window 4: eta_maj=0.319 eta_min=0.327 eta_pair=0.626 M_ab=-0.020  bs_dim=3.00  O4_dim=1.25  sumN/2=1.60
+p152_L128  L=128  Wa,Wb=20.93,31.14  n(k) weight fractions maj,min=0.599,0.401
+  boson maj k=-2.8909 amp=1.23  eta: 0.310(0.001) 0.316(0.001) 0.319(0.001) 0.323(0.001)
+  boson min k=-0.2373 amp=0.82  eta: 0.275(0.007) 0.304(0.001) 0.318(0.001) 0.325(0.001)
+  pair d=2 Q-pi=+0.0138  eta: 0.585(0.036) 0.598(0.036) 0.612(0.037) 0.628(0.038)
+  pair d=3 Q-pi=+0.0136  eta: 0.600(0.091) 0.598(0.091) 0.611(0.089) 0.621(0.089)
+  momenta: k_maj+k_min-pi=+0.0134  Q-pi (d=2,3)=+0.0138,+0.0136
+  window 3: eta_maj=0.319 eta_min=0.318 eta_pair=0.612 M_ab=-0.026  bs_dim=3.01  O4_dim=1.22  sumN/2=1.64
+  window 4: eta_maj=0.323 eta_min=0.325 eta_pair=0.625 M_ab=-0.023  bs_dim=2.98  O4_dim=1.25  sumN/2=1.60
+p150_L128  L=128  Wa,Wb=19.12,32.87  n(k) weight fractions maj,min=0.633,0.367
+  boson maj k=-2.8891 amp=1.29  eta: 0.315(0.001) 0.316(0.001) 0.323(0.001) 0.325(0.001)
+  boson min k=-0.2350 amp=0.74  eta: 0.258(0.009) 0.302(0.001) 0.318(0.001) 0.323(0.001)
+  pair d=2 Q-pi=+0.0180  eta: 0.571(0.029) 0.596(0.028) 0.606(0.028) 0.620(0.031)
+  pair d=3 Q-pi=+0.0177  eta: 0.585(0.072) 0.595(0.071) 0.608(0.070) 0.612(0.071)
+  momenta: k_maj+k_min-pi=+0.0175  Q-pi (d=2,3)=+0.0180,+0.0177
+  window 3: eta_maj=0.323 eta_min=0.318 eta_pair=0.607 M_ab=-0.034  bs_dim=2.96  O4_dim=1.21  sumN/2=1.65
+  window 4: eta_maj=0.325 eta_min=0.323 eta_pair=0.616 M_ab=-0.033  bs_dim=2.94  O4_dim=1.23  sumN/2=1.62
