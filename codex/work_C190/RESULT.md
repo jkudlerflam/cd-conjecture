@@ -93,7 +93,7 @@ The two summary.txt files exist only after a pipeline has finished. Then
 
 ## Results (status at the end of the agent session, 2026-11-09)
 
-One production run is done (the XX control at L = 256, R4). No candidate-bond run has reached its registered final χ, so the registered criteria V1 to V6 are not evaluated. R4 gives an interim reading at χ = 256 for the collaborator's bond and field at L = 64 and 128.
+Two production runs are done, the XX control at L = 256 (R4) and p153c at L = 64 in the even sector (R5). No L = 128 or L = 256 candidate-bond run has reached its registered final χ, so the registered criteria V1 to V6 are not evaluated. R4 and R5 give interim readings at χ = 256 and χ = 384 for the collaborator's bond and field at L = 64 and 128.
 
 ### R0. Validation and solver [numerical; PROOF 5, PROGRESS 3 to 6]
 
@@ -172,7 +172,7 @@ Where the two computations differ. The energies below are E − E_off in my conv
 - At L = 128 the collaborator's states lie 3e-5 to 4e-5 above mine. That is 7 to 9 times the parity splitting, and their branch order is reversed (odd lower by 9.0e-6, against even lower by 4.7e-6 here).
 - My own mixer-on sweep at χ = 128 has E − E_off = −13.1992881, next to their even-sector value. So their L = 128 states appear to be what χ = 128 gives, not the product of a failed solver. Their entropies there are S̄₁ = 1.686 (even) and 1.692 (odd), below my χ = 256 values by 0.16 and 0.15.
 - χ dependence of S̄₁ for the even N = 30 state at L = 128. It is 1.686 at χ = 128 (collaborator), 1.817 at χ = 192 (the tuning run tune_p153_n316_2, at a field higher by 4.75e-5, with the same N_tot = 30.05, discarded weight 9e-9, stationary to 2e-4 over its last three sweeps) and 1.848 at χ = 256. The steps are 0.131 and 0.031. At L = 64 the same sequence is 1.599, 1.613, 1.614, with steps 0.013 and 0.0015. So a χ = 128 truncation costs about ten times more entropy at L = 128 than at L = 64. Relative to χ = 256 that shifts c_two(64 → 128) down by 6 × 0.15/ln 2 ≈ 1.3, which is the size of the disagreement. The χ = 128 point is the collaborator's and the χ = 192 point is from a neighbouring field, so this sequence is an indirect comparison. The χ = 384 and 512 stages of the same run give the direct one.
-- What is still open on my side. The step from χ = 192 to 256 at L = 128 is 0.031, so S̄(128) at χ = 256 is not converged at the level of C4 (0.01). The steps shrink by a factor of about 4 per stage (9 at L = 64), so I expect about 0.01 more from the χ = 384 and 512 stages. An increase of 0.01 in S̄(128) raises c_two(64 → 128) by 0.09, away from the collaborator's value.
+- What is still open on my side. The step from χ = 192 to 256 at L = 128 is 0.031, so S̄(128) at χ = 256 is not converged at the level of C4 (0.01). The steps shrink by a factor of about 4 per stage (9 at L = 64), so I expect about 0.01 more from the χ = 384 and 512 stages. An increase of 0.01 in S̄(128) raises c_two(64 → 128) by 0.09, away from the collaborator's value. (R5: the step to χ = 384 alone turned out to be 0.017.)
 
 Against the effective model (C176, interpolated in ln n_mid at each L). ΔS̄₆ = −0.232 at L = 64 (n_mid = 0.2183) and −0.246 at L = 128 (n_mid = 0.2211). The effective model's own c_two between these two points is 2.11 at W = 6, against 1.99 for the full chain at χ = 256. The difference of −0.014 in ΔS̄₆ is inside V4's ±0.05 window, and the remaining χ deficit at L = 128 has the same sign and about the same size. The L = 128 reference point is interpolated between N = 24 and N = 32 (n_mid 0.204 and 0.268), which adds an error of about 0.005 to 0.01 in S̄. So over 64 → 128 the full chain at this bond follows the effective model's c ≈ 2 to within about 0.1 to 0.2, with a constant offset of about −0.24 in S̄₆ (C177 found about −0.2 at V/Δ = 8). The decisive pair for V1 and V2 is 128 → 256, which is not available yet.
 
@@ -190,6 +190,29 @@ Allocation lifetimes at 22:05 EST (squeue).
 
 - Donor 17602270 (node B, node26) has 20 h 45 min left, so the node B step ends by 2026-11-10 18:50. Donor 17604455 (node A, node18) has 40.5 h left, so the node A step ends by 2026-11-11 14:37.
 - The start estimate of the queued jobs 17606939 and 17606940 moved during the evening from 2026-11-10 05:48 to 2026-11-10 16:09 and then to 2026-11-14 14:52 (reason Priority for both). If the last estimate holds, node B stops for almost four days when its donor ends and node A for three. I did not touch the jobs or start anything else. Whether to move the payload to another allocation is the coordinator's decision.
+
+### R5. Update at χ = 384, snapshot 2026-11-09 22:58 EST [numerical; L = 64 final, L = 128 interim]
+
+L = 64, registered final χ. p153c_L64_P0_rand1 is done at χ = 384 and meets C1 to C4. It gives E = −650.0414853399, S̄₁, S̄₆, S̄₁₂ = 1.6146, 1.6090, 1.5933, c_prof = 2.58 and n_mid = 0.2183, with residual 1e-9, discarded weight 3.1e-11, ΔE = 5.9e-11 and ΔS̄ = 2e-6 between the last two sweeps, a change of 0.0005 in S̄₆ from the χ = 256 stage, energy variance 9.2e-7 and valley weight ratio 0.78.
+
+L = 128, first sweep at χ = 384 (residual target 1e-9 met in every local solve), next to the χ = 256 stage of the same runs.
+
+| sector, init | χ | E | S̄₁ | S̄₆ | S̄₁₂ | c_prof | discarded |
+| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| even, prod28 | 256 | −1290.1134121773 | 1.8476 | 1.8386 | 1.8314 | 2.09 | 3.5e-9 |
+| even, prod28 | 384 | −1290.1134152604 | 1.8645 | 1.8554 | 1.8479 | 2.21 | 4.7e-10 |
+| odd, rand:1 | 256 | −1290.1134075210 | 1.8403 | 1.8316 | 1.8247 | 2.10 | 3.4e-9 |
+| odd, rand:1 | 384 | −1290.1134103328 | 1.8563 | 1.8475 | 1.8402 | 2.22 | 4.3e-10 |
+
+- The step in S̄ from χ = 256 to 384 at L = 128 is 0.017 in both sectors. That is larger than the 0.01 I guessed in R4 for the 384 and 512 stages together, so the χ = 256 reading in R4 understated c_two by 0.14.
+- c_two(64 → 128) with χ = 384 at both sizes. The ground branch (even → even) gives 2.163, 2.133, 2.203 at W = 1, 6, 12, and even → odd gives 2.092, 2.064, 2.137. The collaborator's values are 0.74 to 0.93.
+- V3. The L = 64 side is final. The L = 128 side is one stage short of its registered χ = 512, and each χ stage so far has raised S̄(128) and with it c_two. V3 stays formally unevaluated until the χ = 512 stage is done, but the reading is far on the "does not reproduce" side (2.16 against the threshold 1.6).
+- Extrapolation (an estimate, not a registered quantity). At L = 64 the deficit of S̄₁ relative to χ = 384 is 0.0021 at a discarded weight of 1.5e-9 and 0.0006 at 3.3e-10, so it is roughly proportional to the discarded weight. The same assumption at L = 128 (a change of 0.0169 between 3.5e-9 and 4.7e-10) puts the χ = 384 value still about 0.003 low. The converged ground-branch c_two(64 → 128) would then be near 2.19, 2.16, 2.23, and the step from χ = 384 to 512 would be about 0.002, inside C4.
+- Parity. E_odd − E_even = 4.93e-6 at L = 128 and χ = 384 (4.66e-6 at χ = 256), so L·Δ_GC/|t₂| = +0.050.
+- Against the effective model at equal n_mid. ΔS̄₆ = −0.2315 at L = 64 and −0.2288 at L = 128, a difference of +0.003, well inside V4's ±0.05 window for this size pair. The effective model's c_two between the same two densities is 2.11 and the full chain's is 2.13 at χ = 384. So over 64 → 128 the full chain at the collaborator's bond and field follows the effective model's size dependence to within the interpolation error of the reference (about 0.01 in S̄, 0.1 in c). The 128 → 256 pair is still missing.
+- Two-leg control, in progress. xx2 at L = 256, first mixer-off sweep at χ = 384, gives S̄₁, S̄₆, S̄₁₂ = 2.0239, 2.0035, 2.0090 against the exact 2.0311, 2.0108, 2.0162. DMRG is low by 0.0072 at a discarded weight of 3.1e-8, and c_prof = 1.92. A free c = 2 state at L = 256 loses about 2e5 in entropy per unit discarded weight, the candidate at L = 128 about 6e6. For these bonds the discarded weight is therefore a poor guide to the entropy error, and only the χ sequence itself is.
+- A note on the C5 lines of a --partial summary. They compare the initializations at whatever stage each has reached (prod28 at χ = 384 against rand:1 at χ = 256 in this snapshot) and then print "higher one metastable". That is an artifact of the partial snapshot. At equal χ = 256 the two agree to 7e-10 in energy (R4).
+- Sweep times. L = 128 at χ = 384 took 3560 and 4040 s, and L = 256 at χ = 256 took 3370 s. This narrows R4's estimates to about 2 to 2.5 h per χ = 512 sweep at L = 128 and 8 to 17 h per χ = 768 sweep at L = 256 for the complex bonds. The p153c L = 128 runs should then finish between about 06:00 and 20:00 EST on 2026-11-10, inside the lifetime of the node A donor.
 
 ### Coordinator note (2026-11-09, after the agent's interim stop)
 
