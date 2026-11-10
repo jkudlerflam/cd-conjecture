@@ -49,3 +49,5 @@ Pause rule (approved by Jonah, 2026-11-09, about 20:48 EST). It covers one case 
 - Limits. c182 keeps its allocation and memory and loses nothing, but its wall clock keeps running while it is frozen. Never cancel it. Pause nothing else without asking Jonah. Record the pause and resume times here.
 
 Status 2026-11-09 20:54 EST. All seven steps are running and all seven queued jobs are PENDING. Nothing has been paused.
+
+Status 2026-11-09 21:38 EST. All seven steps are still running in the same donors, and all seven queued jobs are PENDING with start estimates on 2026-11-10 after 17:00. Nothing has been paused.
