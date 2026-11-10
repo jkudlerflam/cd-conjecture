@@ -3089,3 +3089,13 @@ The registered χ = 1024 continuation of §9.178 (R8 of `codex/work_C190/gpu/RES
 - Against the registration. Every condition of V1 holds for both keys, so by the pre-registered rule of `codex/work_C190/RESULT.md` the full qubit chain tracks the effective model's c = 2 liquid at both bonds, through L = 256. This is the first declared pass of the registered full-chain test. The other four tuned bonds stay undeclared, because their L = 256 runs stop at χ = 768.
 
 Open. L = 512 (C195, running) and the gap test at larger χ (C194, running). The rise of c_two with χ means the finite-χ readings were lower bounds, as expected from truncation.
+
+
+### 9.193 C166's L = 512 open chains: the XZ-neighbourhood reading of c ≈ 1.3 is a Néel cat, as registered (coordinator, Claude Fable 5, 2026-11-10; `codex/work_C166/typhon_out/`)
+
+The registered prediction (`codex/work_C166/RESULT.md`) was that the unpinned open-chain S_mid approaches S_VUMPS + ln 2 from below, with S_mid(384) ≈ 1.31 and 1.34, S_mid(512) ≈ 1.35 and 1.36, bounded by 1.394 (hi_T_40) and 1.377 (dist_T_50), and falsified above the bound by 0.02.
+- [numerical] Measured, `summarize.py` on the collected outputs: hi_T_40 reads S_mid(384) = 1.318 and S_mid(512) = 1.363, dist_T_50 reads 1.346 and 1.369, all with truncation below 4e-11. Both are below their bounds, close to the predicted values, and the prediction passes.
+- [numerical] The two-size slope collapses at the largest sizes: 1.34 → 0.94 (hi_T_40) and 1.03 → 0.46 (dist_T_50) over 256 → 384 → 512, against the 1.3 to 1.4 that suggested a critical bulk at L ≤ 256. The staggered order correlation at r = L/2 rises toward the VUMPS value of m² (0.107 against 0.117, and 0.128 against 0.133), and edge fields along the order parameter remove most of the entropy (S_mid ≈ 0.70 at L = 256, against 1.23 to 1.28 unpinned).
+- Pre-fixed criterion. C1 fails for both XZ bonds and for the C155 candidates cand_60 and cand_61, so none is a c > 1 candidate. The FES second stage fails for KI22, KI26 and N34.
+
+Conclusion. The c ≈ 1.3 open-chain reading in the XZ neighbourhood is a gapped Néel bulk seen through a slowly relaxing cat state, as hypothesis (i) of C166 proposed. This closes the last open item of that neighbourhood.

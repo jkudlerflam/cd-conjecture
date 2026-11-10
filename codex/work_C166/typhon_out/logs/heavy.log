@@ -1,0 +1,58 @@
+~/.local/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2766: RuntimeWarning: overflow encountered in dot
+  sqnorm = x_real.dot(x_real) + x_imag.dot(x_imag)
+~/.local/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2766: RuntimeWarning: overflow encountered in dot
+  sqnorm = x_real.dot(x_real) + x_imag.dot(x_imag)
+~/.local/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2766: RuntimeWarning: overflow encountered in dot
+  sqnorm = x_real.dot(x_real) + x_imag.dot(x_imag)
+~/.local/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2766: RuntimeWarning: overflow encountered in dot
+  sqnorm = x_real.dot(x_real) + x_imag.dot(x_imag)
+  sweep 0 chi=32 E=-490.668209920985 trunc=0.00e+00
+  sweep 0 chi=32 E=-428.145610137091 trunc=0.00e+00
+  sweep 0 chi=32 E=-396.306876921157 trunc=0.00e+00
+  sweep 0 chi=32 E=-393.777263806072 trunc=0.00e+00
+  sweep 1 chi=64 E=-428.190568490143 trunc=0.00e+00
+  sweep 1 chi=64 E=-490.720457261399 trunc=0.00e+00
+  sweep 1 chi=64 E=-393.946395193589 trunc=0.00e+00
+  sweep 1 chi=64 E=-396.516290225243 trunc=0.00e+00
+  sweep 2 chi=128 E=-490.721108758160 trunc=3.47e-11
+  sweep 2 chi=128 E=-428.190895748129 trunc=2.19e-11
+  sweep 3 chi=192 E=-428.190898986187 trunc=6.38e-12
+  sweep 2 chi=128 E=-393.952374186544 trunc=6.32e-10
+  sweep 3 chi=192 E=-490.721396776727 trunc=6.09e-11
+  sweep 2 chi=128 E=-396.524583267079 trunc=8.44e-10
+  sweep 4 chi=256 E=-490.721477947520 trunc=3.49e-11
+  sweep 4 chi=256 E=-428.190961994545 trunc=1.20e-11
+  sweep 5 chi=320 E=-490.721478092098 trunc=1.07e-11
+  sweep 3 chi=192 E=-396.525185732986 trunc=1.60e-09
+  sweep 6 chi=320 E=-490.721478092558 trunc=1.27e-11
+done oc/hi_T_40_512.json E=-490.7214780926 c_prof=1.080 Smid=1.3628 trunc=1.3e-11 emid=-0.9593078965 S(1)=0.6931 |m|max=0.0000 zz(L/4,3L/4)=+0.1068 t=13654s
+~/.local/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2766: RuntimeWarning: overflow encountered in dot
+  sqnorm = x_real.dot(x_real) + x_imag.dot(x_imag)
+  sweep 0 chi=32 E=-367.888407814355 trunc=0.00e+00
+  sweep 1 chi=64 E=-367.928983411377 trunc=0.00e+00
+  sweep 5 chi=320 E=-428.190962662708 trunc=7.04e-12
+  sweep 3 chi=192 E=-393.952720649652 trunc=1.34e-09
+  sweep 2 chi=128 E=-367.929701402967 trunc=6.47e-11
+  sweep 6 chi=320 E=-428.190962666052 trunc=9.60e-12
+done oc/dist_T_50_512.json E=-428.1909626661 c_prof=0.802 Smid=1.3686 trunc=9.6e-12 emid=-0.8371233946 S(1)=0.6931 |m|max=0.0000 zz(L/4,3L/4)=+0.1232 t=16493s
+~/.local/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2766: RuntimeWarning: overflow encountered in dot
+  sqnorm = x_real.dot(x_real) + x_imag.dot(x_imag)
+  sweep 0 chi=32 E=-321.004213413399 trunc=0.00e+00
+  sweep 1 chi=64 E=-321.038784196574 trunc=0.00e+00
+  sweep 3 chi=192 E=-367.930542049398 trunc=8.30e-11
+  sweep 2 chi=128 E=-321.039065963028 trunc=2.38e-11
+  sweep 4 chi=256 E=-367.930542705836 trunc=2.56e-11
+  sweep 5 chi=256 E=-367.930542707873 trunc=3.23e-11
+done oc/hi_T_40_384.json E=-367.9305427079 c_prof=1.245 Smid=1.3178 trunc=3.2e-11 emid=-0.9593057314 S(1)=0.6931 |m|max=0.0000 zz(L/4,3L/4)=+0.0978 t=5417s
+  sweep 3 chi=192 E=-321.039318693088 trunc=4.28e-11
+  sweep 4 chi=256 E=-321.039323825704 trunc=1.96e-11
+  sweep 5 chi=256 E=-321.039323833398 trunc=2.86e-11
+done oc/dist_T_50_384.json E=-321.0393238334 c_prof=1.101 Smid=1.3464 trunc=2.9e-11 emid=-0.8371224325 S(1)=0.6931 |m|max=0.0000 zz(L/4,3L/4)=+0.1165 t=6366s
+  sweep 4 chi=256 E=-396.525210828189 trunc=1.14e-09
+  sweep 5 chi=320 E=-396.525213161568 trunc=5.49e-10
+  sweep 4 chi=256 E=-393.952765771195 trunc=9.99e-10
+  sweep 6 chi=384 E=-396.525213792783 trunc=2.54e-10
+done oc/cand_60_512.json E=-396.5252137928 c_prof=1.067 Smid=1.3476 trunc=2.5e-10 emid=-0.7751879428 S(1)=0.3555 |m|max=0.5731 zz(L/4,3L/4)=+0.0008 t=39102s
+  sweep 5 chi=320 E=-393.952790509205 trunc=4.82e-10
+  sweep 6 chi=384 E=-393.952794244929 trunc=2.43e-10
+done oc/cand_61_512.json E=-393.9527942449 c_prof=1.073 Smid=1.3394 trunc=2.4e-10 emid=-0.7701506464 S(1)=0.3160 |m|max=0.6109 zz(L/4,3L/4)=-0.0007 t=108676s
