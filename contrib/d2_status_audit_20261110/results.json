@@ -1,0 +1,191 @@
+{
+  "status": "Arithmetic audit only; L256 C4 still fails, no counterexample established.",
+  "rows": [
+    {
+      "key": "p153c",
+      "L128": {
+        "file": "p153c_L128_P0_rand1.json",
+        "sha256": "0bdfe9fe03abda3a80cea21c1b8bea44a6082f470199870ab4bbfc2fae15b8df",
+        "parity": 0,
+        "hz": -19.97589125,
+        "E": -1290.113415702167,
+        "Sbar6": 1.8591357518819067,
+        "final_canonical_Sbar6": 1.8591049458904187,
+        "chi": 512,
+        "passes_C1_C3": true,
+        "C4_entropy_step": 0.004631953918402543,
+        "passes_C4": true
+      },
+      "L256": {
+        "file": "p153c_L256_P1_rand1.json",
+        "sha256": "27e3846272a04633c3350de62981c88d798af34bfd35a95051ab6c1a5127b97b",
+        "parity": 1,
+        "hz": -19.97589125,
+        "E": -2570.2571184392896,
+        "Sbar6": 2.0827792456158116,
+        "final_canonical_Sbar6": 2.0827239278702114,
+        "chi": 768,
+        "passes_C1_C3": true,
+        "C4_entropy_step": 0.026924219296004637,
+        "passes_C4": false
+      },
+      "c_W6": 1.9358961560219194,
+      "c_W6_final_canonical": 1.9356839781053123
+    },
+    {
+      "key": "sym40_n316",
+      "L128": {
+        "file": "sym40_n316_L128_P1_rand1.json",
+        "sha256": "60415528e7091bcd202a21fcd6d57e65942437aadff0f065d047bac7a2ebb8e7",
+        "parity": 1,
+        "hz": -19.976047250613814,
+        "E": -1290.1231205671052,
+        "Sbar6": 1.8310312792551147,
+        "final_canonical_Sbar6": 1.8310046328035317,
+        "chi": 512,
+        "passes_C1_C3": true,
+        "C4_entropy_step": 0.003594013018111575,
+        "passes_C4": true
+      },
+      "L256": {
+        "file": "sym40_n316_L256_P1_rand1.json",
+        "sha256": "118e7b07ff9bddcb9da3c862f39af70bd4c837c241d3a39324f5626ac237f504",
+        "parity": 1,
+        "hz": -19.976047250613814,
+        "E": -2570.2770066289568,
+        "Sbar6": 2.055875805342417,
+        "final_canonical_Sbar6": 2.0558386243547364,
+        "chi": 768,
+        "passes_C1_C3": true,
+        "C4_entropy_step": 0.023709249582392733,
+        "passes_C4": false
+      },
+      "c_W6": 1.9462924965430823,
+      "c_W6_final_canonical": 1.9462013078051652
+    },
+    {
+      "key": "rat_n316",
+      "L128": {
+        "file": "rat_n316_L128_P1_rand1.json",
+        "sha256": "428d326532cf5b8bb80df9163c101f4c7caa2ca44944fefbe59b9b2ba7530d9e",
+        "parity": 1,
+        "hz": -19.975988986408243,
+        "E": -1290.1204594203964,
+        "Sbar6": 1.8324864774620278,
+        "final_canonical_Sbar6": 1.8324567563513923,
+        "chi": 512,
+        "passes_C1_C3": true,
+        "C4_entropy_step": 0.003730140825723094,
+        "passes_C4": true
+      },
+      "L256": {
+        "file": "rat_n316_L256_P1_rand1.json",
+        "sha256": "39e92581844cc218965dd0bb51b57c9c264016ab3dea0c9cdcf5cb51dcc86a90",
+        "parity": 1,
+        "hz": -19.975988986408243,
+        "E": -2570.271587182061,
+        "Sbar6": 2.0673081772228086,
+        "final_canonical_Sbar6": 2.067260538485158,
+        "chi": 768,
+        "passes_C1_C3": true,
+        "C4_entropy_step": 0.025179381510699095,
+        "passes_C4": false
+      },
+      "c_W6": 2.0326566104279737,
+      "c_W6_final_canonical": 2.0325015123981376
+    },
+    {
+      "key": "sym40_n18",
+      "L128": {
+        "file": "sym40_n18_L128_P0_rand1.json",
+        "sha256": "b8941acfea168121c9863607e3076a2a02162d7647e8e133e48f497674ebfa01",
+        "parity": 0,
+        "hz": -19.976333693659278,
+        "E": -1290.1464438772243,
+        "Sbar6": 1.737262220461172,
+        "final_canonical_Sbar6": 1.7372472839377324,
+        "chi": 512,
+        "passes_C1_C3": true,
+        "C4_entropy_step": 0.001595492554207656,
+        "passes_C4": true
+      },
+      "L256": {
+        "file": "sym40_n18_L256_P1_rand1.json",
+        "sha256": "1b10e5bd0759de708560901a18262e9ed73dd3723448da7f36a065f6f0a995e4",
+        "parity": 1,
+        "hz": -19.976333693659278,
+        "E": -2570.324909698925,
+        "Sbar6": 1.965776132668207,
+        "final_canonical_Sbar6": 1.96574747802444,
+        "chi": 768,
+        "passes_C1_C3": true,
+        "C4_entropy_step": 0.014039462330726726,
+        "passes_C4": false
+      },
+      "c_W6": 1.9780553274913522,
+      "c_W6_final_canonical": 1.9779365811063516
+    },
+    {
+      "key": "p153_n316",
+      "L128": {
+        "file": "p153_n316_L128_P1_rand1.json",
+        "sha256": "e557b559268ba32fe7e0d58035e5f39ea151bc46d9a1286f34f9053876c9e923",
+        "parity": 1,
+        "hz": -19.97598879265652,
+        "E": -1290.1203554203526,
+        "Sbar6": 1.832443252643873,
+        "final_canonical_Sbar6": 1.832416967731324,
+        "chi": 512,
+        "passes_C1_C3": true,
+        "C4_entropy_step": 0.003727170106470945,
+        "passes_C4": true
+      },
+      "L256": {
+        "file": "p153_n316_L256_P0_rand1.json",
+        "sha256": "73057fad4fe0de2b3bb452c10631e7b01fc35d68fdba7dd7ae5299988ce80529",
+        "parity": 0,
+        "hz": -19.97598879265652,
+        "E": -2570.2713859127684,
+        "Sbar6": 2.062986271210142,
+        "final_canonical_Sbar6": 2.0629379920017055,
+        "chi": 768,
+        "passes_C1_C3": true,
+        "C4_entropy_step": 0.02469131628740895,
+        "passes_C4": false
+      },
+      "c_W6": 1.9956196175827703,
+      "c_W6_final_canonical": 1.9954292312131423
+    },
+    {
+      "key": "sym80_n316",
+      "L128": {
+        "file": "sym80_n316_L128_P1_rand1.json",
+        "sha256": "6d4a65c8ce852333fe543ddd5cd4e7893013dd784e1920868106c4972a82245d",
+        "parity": 1,
+        "hz": -39.98802324553032,
+        "E": -2580.061227069345,
+        "Sbar6": 1.8304572376818435,
+        "final_canonical_Sbar6": 1.830398777735566,
+        "chi": 512,
+        "passes_C1_C3": true,
+        "C4_entropy_step": 0.005653983070093016,
+        "passes_C4": true
+      },
+      "L256": {
+        "file": "sym80_n316_L256_P0_rand1.json",
+        "sha256": "744772a1f6e3c74766df42934a45d6c7fcfa7682a1cfcbeec7fdd652a6814d64",
+        "parity": 0,
+        "hz": -39.98802324553032,
+        "E": -5140.13783501016,
+        "Sbar6": 2.054815020168602,
+        "final_canonical_Sbar6": 2.0547387254486145,
+        "chi": 768,
+        "passes_C1_C3": true,
+        "C4_entropy_step": 0.034556886844271606,
+        "passes_C4": false
+      },
+      "c_W6": 1.9420791610709467,
+      "c_W6_final_canonical": 1.941924780233427
+    }
+  ]
+}

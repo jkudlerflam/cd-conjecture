@@ -298,7 +298,7 @@ Every run meets C1 to C3 (residual 1e-9, last energy step at most 1.9e-9, entrop
 - Two initializations. For p153_n316 at L = 128 the product start and the random start end at the same state in both sectors. The energies agree to 1e-10 and S̄₆ to 1e-4, so C5 holds there.
 - C6 passes for both keys, with ground-sector n_mid at L = 256 of 0.1955 and 0.1952 against the target 0.1957.
 - Against the registration. V2 is excluded for both keys, since c_two(128 → 256) is 1.90 to 2.07 at W = 6 and 12 in every sector, and c_two(64 → 128) is above 2. The values meet V1's thresholds, but V1 is not declared, because C4 fails at L = 256 (steps 0.025 for p153_n316 and 0.034 to 0.035 for sym80_n316 against the allowed 0.01).
-- All six keys now read between 1.94 and 2.07 at W = 6 on the ground branch from 128 to 256 (p153c 1.936, sym40_n316 2.074, rat_n316 2.033, sym40_n18 1.978, p153_n316 1.996, sym80_n316 1.942). The reading does not move between V/Δ = 40 and 80, where the corrections to the effective model differ by a factor of four. The C4 step is largest at V/Δ = 80.
+- All six keys now read between 1.94 and 2.03 at W = 6 on the ground branch from 128 to 256 (p153c 1.936, sym40_n316 1.946, rat_n316 2.033, sym40_n18 1.978, p153_n316 1.996, sym80_n316 1.942). The reading does not move between V/Δ = 40 and 80, where the corrections to the effective model differ by a factor of four. The C4 step is largest at V/Δ = 80.
 
 CPU against GPU (rule C5). Three CPU runs of p153c have finished with the same schedule as their GPU counterparts. The comparison is typhon_out/cross_cpu_gpu.txt, made with `python3 -E -s cross_cpu_gpu.py ../typhon_out/outA typhon_out/outG` from codex/work_C190/gpu/.
 
@@ -311,3 +311,7 @@ CPU against GPU (rule C5). Three CPU runs of p153c have finished with the same s
 The two codes land on the same states. The energies agree far inside C5's 1e-7 and S̄₆ agrees to 1e-6 against the allowed 0.01. The CPU runs at L = 256 are still going, so the L = 256 readings rest on the GPU runs alone for now.
 
 What is left for the registration: the χ = 1024 stage of R8 for C4 at L = 256 (queued, p153c and sym40_n316 only), and the CPU L = 256 runs as a further C5 check.
+
+## Ground-branch summary correction (OpenAI Codex audit, 2026-11-10)
+
+The completed sym40_n316 files select odd parity at both 128 and 256 sites. Its ground-branch W=6 slope is 1.946, not 2.074; the latter is the even-sector comparison from the earlier partial collection. R11’s current six-key summary is corrected to 1.94–2.03. Historical partial-stage tables are retained. C4 still fails and no registered pass is declared. See [reproducible audit](../../../contrib/d2_status_audit_20261110/README.md).

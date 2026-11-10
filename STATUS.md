@@ -30,9 +30,11 @@ The strong ZZ term, with the field near its blockade value, leaves a dilute gas 
 
 Evidence, all numerical:
 
-- The qubit chain itself. Parity-resolved DMRG on open chains of L = 64, 128 and 256, with no projection, reads c = 2.07 for the bond above from the entropy difference between L = 128 and 256, and 1.94 to 2.07 over six tuned bonds (two densities, three bonds, V/Δ = 40 and 80). The c = 1 and c = 2 controls calibrate both size pairs, the registered fail outcome (c ≤ 1.3) is excluded, and independent CPU and GPU codes agree (REPORT §9.167 to §9.181).
+- The qubit chain itself. Parity-resolved DMRG on open chains of L = 64, 128 and 256, with no projection, reads c = 1.95 for the bond above from the entropy difference between L = 128 and 256, and 1.94 to 2.03 over six tuned bonds (two densities, three bonds, V/Δ = 40 and 80). The c = 1 and c = 2 controls calibrate both size pairs, the registered fail outcome (c ≤ 1.3) is excluded, and independent CPU and GPU codes agree (REPORT §9.167 to §9.181).
 - The effective model. The second-order model of the blockaded particles reads c = 1.99 to 2.00 on the infinite chain at three densities, out to correlation lengths of 500 to 600 sites (REPORT §9.163, §9.179).
 - The mechanism. One particle from each valley binds into a pair in the dilute limit, which alone would give a pair liquid with c = 1. At the candidate density the inter-valley backscattering responsible is irrelevant if the pseudospin Luttinger parameter K_s exceeds 1. K_s reads 1.2 to 1.5 in the effective model and 1.4 to 1.6 on the qubit chain at L = 256, where the pair exponent and K_c also match the effective model (REPORT §9.160, §9.161, §9.182).
+
+A [raw-data parity-selection audit](contrib/d2_status_audit_20261110/README.md) corrects the symmetric-line ground-branch value from 2.07 to 1.95; the earlier number used the even sector. The c≈2 candidate assessment is unchanged.
 
 Open, before this is called established:
 
