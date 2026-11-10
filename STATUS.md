@@ -7,7 +7,7 @@ Latorre and Sierra ([arXiv:2403.17242](https://arxiv.org/abs/2403.17242)) conjec
 ## In short
 
 1. The conjecture is false at large d. There are explicit counterexamples at d = 11 and d = 13, and c is unbounded at fixed d.
-2. At d = 2 there is a candidate counterexample, an explicit nearest-neighbour qubit chain that reads c ≈ 2 on open chains up to L = 256, with a mechanism and an effective model that give the same answer. What separates it from an established counterexample is a short list of convergence checks, given below, most of them running.
+2. At d = 2 there is a candidate counterexample, an explicit nearest-neighbour qubit chain that reads c = 2.00 on open chains up to L = 256, converged in bond dimension, with a mechanism and an effective model that give the same answer. What separates it from an established counterexample is a short list of convergence checks, given below, most of them running.
 3. A replacement bound, Σ_a c_a v_a ≤ π M log₂ d, holds in every solvable family and is proved in several classes.
 
 ## The conjecture is false at large d
@@ -32,17 +32,16 @@ The spread of couplings is one small parameter ε = Δ/V (pair amplitude Δ = J_
 
 Evidence, all numerical:
 
-- The qubit chain itself. Parity-resolved DMRG on open chains of L = 64, 128 and 256, with no projection, reads c = 1.95 for the bond above from the entropy difference between L = 128 and 256 (the ground branch is the odd sector, per the collaborator's [parity audit](contrib/d2_status_audit_20261110/README.md)), and 1.94 to 2.03 over six tuned bonds (two densities, three bonds, V/Δ = 40 and 80). The c = 1 and c = 2 controls calibrate both size pairs, the registered fail outcome (c ≤ 1.3) is excluded, and independent CPU and GPU codes agree (REPORT §9.167 to §9.181).
+- The qubit chain itself. Parity-resolved DMRG on open chains of L = 64, 128 and 256, with no projection, converged in bond dimension up to χ = 1024, reads c = 2.00 for the bond above and for the collaborator's bond from the entropy difference between L = 128 and 256, which passes the pre-registered test at both. Four further tuned bonds (two densities, V/Δ = 40 and 80) read 1.94 to 2.03 at χ = 768, where the reading is still rising with χ. The c = 1 and c = 2 controls calibrate both size pairs, and independent CPU and GPU codes agree (REPORT §9.178, §9.186, §9.192).
 - The effective model. The second-order model of the blockaded particles reads c = 1.99 to 2.00 on the infinite chain at three densities, out to correlation lengths of 500 to 600 sites (REPORT §9.163, §9.179).
 - The mechanism. One particle from each valley binds into a pair in the dilute limit, which alone would give a pair liquid with c = 1. At the candidate density the inter-valley backscattering responsible is irrelevant if the pseudospin Luttinger parameter K_s exceeds 1. K_s reads 1.2 to 1.5 in the effective model and 1.4 to 1.6 on the qubit chain at L = 256, where the pair exponent and K_c also match the effective model (REPORT §9.160, §9.161, §9.182).
 
 Open, before this is called established:
 
-1. Truncation at L = 256. The entropy still rises with bond dimension, by about 0.03 from χ = 512 to 768 against a registered tolerance of 0.01, so the registered pass is not declared. The bias lowers c. A χ = 1024 stage is running.
-2. A third size. L = 512 is running (REPORT §9.184).
-3. Entanglement scaling on the infinite qubit chain. Two attempts did not converge at the candidate, because the finite-χ state breaks particle number (REPORT §9.183, §9.187).
-4. The pseudospin gap. In the effective model the pair gap is seen at low density and closes near n ≈ 0.05 to 0.10, below the candidate's 0.19, while n = 1/8 is marginal. The registered verdict is formally the gap outcome, through a fit that does not constrain n_c, and runs at larger χ are queued (REPORT §9.188).
-5. Two unexplained readings. An older-solver run at V/Δ = 8 reads about 1.4 on the infinite chain, and the c = 1 control of the infinite-chain calculation sits narrowly outside its registered tolerance.
+1. A third size. L = 512 is running (REPORT §9.184).
+2. Entanglement scaling on the infinite qubit chain. Two attempts did not converge at the candidate, because the finite-χ state breaks particle number (REPORT §9.183, §9.187).
+3. The pseudospin gap. In the effective model the pair gap is seen at low density and closes near n ≈ 0.05 to 0.10, below the candidate's 0.19, while n = 1/8 is marginal. The registered verdict is formally the gap outcome, through a fit that does not constrain n_c, and runs at larger χ are queued (REPORT §9.188).
+4. Two unexplained readings. An older-solver run at V/Δ = 8 reads about 1.4 on the infinite chain, and the c = 1 control of the infinite-chain calculation sits narrowly outside its registered tolerance.
 
 The collaborator's earlier runs of the phase-1.53 bond read a downturn from L = 64 to 128 on states that were not fully optimized ([record](contrib/d2_tenpy_20261109/RESULT.md), [rational bond](contrib/d2_dmrg_priority_20261109/SIMPLE_PARITY_CANDIDATE.md)). The converged rerun lies lower in energy and reads 2.2, so the downturn does not reproduce (REPORT §9.167). Their [transverse-DM deformation](contrib/counterexample_push_20261109/FACILITATED_ROUTE.md) reads c ≈ 1, and their [symmetry audit](contrib/d2_priority_audit_20261109/UNIFORM_Y_SOURCE.md) allows a small uniform Y source.
 

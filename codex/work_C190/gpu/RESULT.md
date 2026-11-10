@@ -315,3 +315,15 @@ What is left for the registration: the χ = 1024 stage of R8 for C4 at L = 256 (
 ## Ground-branch summary correction (OpenAI Codex audit, 2026-11-10)
 
 The completed sym40_n316 files select odd parity at both 128 and 256 sites. Its ground-branch W=6 slope is 1.946, not 2.074; the latter is the even-sector comparison from the earlier partial collection. R11’s current six-key summary is corrected to 1.94–2.03. Historical partial-stage tables are retained. C4 still fails and no registered pass is declared. See [reproducible audit](../../../contrib/d2_status_audit_20261110/README.md).
+
+## R12. The χ = 1024 stage at L = 256: C4 passes, and V1 is declared for p153c and sym40_n316 (collected 2026-11-10 15:40 EST)
+
+Job 17609630 ran on one h200 node (NVIDIA H200, about 8 minutes per sweep at χ = 1024) and finished all five runs in 56 minutes, with status done. Collected per R8 into `typhon_out/outX1024/` (json and logs, no checkpoints). Readout `python3 -E -s analyze_x1024.py`, output in `analyze_x1024.txt`.
+
+- C1 to C3 pass for every candidate run: residual 1.0e-9, last energy step 1.1e-9 to 1.6e-9, discarded weight 1.0e-10 to 1.3e-10. The R8 stop rule is met after the minimum of three sweeps (last |ΔS̄₆| at most 8e-5).
+- C4 at L = 256 passes for all four candidate runs. S̄₆ moves from χ = 768 to 1024 by +0.0077 and +0.0072 (p153c, even and odd) and +0.0063 and +0.0061 (sym40_n316), against the bound 0.01. The two-leg control moves by +0.0003. Its last energy step after the maximum of six sweeps is 2.5e-8, above C2's 1e-8, as at χ = 768.
+- Ground branch: p153c even at L = 128 and odd at L = 256, sym40_n316 odd at both (as in the sector audit, REPORT §9.186).
+- c_two(128 → 256) on the ground branch at W = 1, 6, 12: p153c 1.964, 1.998, 2.032 (1.902, 1.936, 1.971 at χ = 768), sym40_n316 1.968, 1.999, 2.032 (1.915, 1.946, 1.980). c_prof(256) = 2.081 and 2.091. c_two(64 → 128) at W = 6 and 12: p153c 2.165, 2.234, sym40_n316 2.268, 2.356.
+- Controls. Two-leg XX at W = 6 reads 1.917 (64 → 128) and 1.898 (128 → 256, at χ = 1024), and XX calibrates both pairs (R9).
+- V1, by the letter: every condition holds for p153c and for sym40_n316 (both c_two pairs ≥ 1.6 at W = 6 and 12, c_prof(256) ≥ 1.6, all runs pass C1 to C4, the two-leg control within 2 ± 0.25 at both pairs). V1 is declared for these two keys. The other four tuned keys have no χ = 1024 stage and remain undeclared on C4 at L = 256.
+- Discarded-weight extrapolation of R8, ground branch at W = 6 (ε₇₆₈ = 3.5e-10 and 2.9e-10, ε₁₀₂₄ = 1.3e-10 and 1.0e-10): S̄₆(256) rises by a further 0.0041 (p153c) and 0.0032 (sym40_n316), so c_two(128 → 256) extrapolates to 2.03 ± 0.04 and 2.03 ± 0.03. Per R8 this is an upper estimate and is not used for V1.
