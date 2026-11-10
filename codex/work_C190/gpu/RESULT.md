@@ -164,3 +164,41 @@ p153c_L256_P0_rand1, χ = 768, 20 sweeps. E = −2570.2571001943, S̄₁ = 2.089
 | 768 | 2.0830 | 2.0828 | 3.7e-10, 3.5e-10 |
 
 The sectors agree at χ = 768 to 2e-4 in S̄₆ after different histories. Ground sector odd, L·Δ_GC/|t₂| = −0.374. Ground-branch c_two(128 → 256) = 1.902, 1.936, 1.971 (unchanged from R6), all parity pairings at W = 1 from 1.90 to 1.99. The verdict of R6 stands: V2 does not hold, and V1 waits on C4 at L = 256 and on the two-leg control. Updated table in typhon_out/analyze_G_partial.txt.
+
+## R8. Registration of a χ = 1024 stage at L = 256 (written 2026-11-10 03:10 EST, before any χ = 1024 output)
+
+Coordinator, Claude Fable 5. Jonah approved this stage on 2026-11-10. It is written after the χ = 768 results of R6 and R7 were seen, and before any χ = 1024 output exists. No criterion of `../RESULT.md` changes. The L = 256 runs are extended by one stage, because C4 is the one criterion that fails at χ = 768.
+
+Why C4 fails at χ = 768. The stages at χ = 384 and 512 have two sweeps each and are not converged in sweeps. In the even sector the first sweep at χ = 768 alone moves S̄₆ from 1.9959 to 2.0582, and the six sweeps at χ = 768 then read 2.05815, 2.07751, 2.08143, 2.08254, 2.08290, 2.08303. So the registered step from χ = 512 mixes the sweep convergence of the earlier stage with the dependence on χ. A stage at χ = 1024 that starts from the converged χ = 768 state measures the second one alone.
+
+Runs. Each continues a finished run of a registered configuration from its final χ = 768 state (the checkpoint of that run, read only), with the same model, field, gauge, parity sector, Davidson settings and tolerances, and sweeps at χ = 1024 with residual target 1e-9 and no subspace expansion. The stop rule is that of the registered final stage (|ΔE| < 2e-9 and |ΔS̄₆| < 5e-4 between the last two sweeps, at most 6 sweeps), with at least 3 sweeps instead of 2, since the first sweep grows the bonds.
+
+| run | continued from | χ = 768 values (E, S̄₁, S̄₆, S̄₁₂, discarded weight) |
+|---|---|---|
+| p153c_L256_P0_rand1 | 20 sweeps | −2570.2571001943, 2.0892, 2.0830, 2.0793, 3.7e-10 |
+| p153c_L256_P1_rand1 | 18 sweeps | −2570.2571184393, 2.0880, 2.0828, 2.0792, 3.5e-10 |
+| sym40_n316_L256_P0_rand1 | 18 sweeps | −2570.2770003174, 2.0633, 2.0579, 2.0547, 3.0e-10 |
+| sym40_n316_L256_P1_rand1 | 18 sweeps | −2570.2770066290, 2.0607, 2.0559, 2.0527, 2.9e-10 |
+| xx2_L256_P0_rand1 (two-leg control) | 20 sweeps | −12.2485203313, 2.0307, 2.0104, 2.0158, 2.0e-9 (from the run's own record, output not collected yet) |
+
+For sym40_n316 the two initializations of each sector agree at χ = 768 (energies within 2e-9, S̄₆ within 1e-4, so C5 passes), and one per sector is continued. The control is continued so that candidate and control are read at the same χ.
+
+How the criteria are read.
+- C1 to C3 apply to the χ = 1024 sweeps as written.
+- C4 at L = 256 is |S̄₆(1024) − S̄₆(768)| ≤ 0.01, with each value taken at the last sweep of its stage. This is the registered rule with χ = 1024 as the final stage.
+- The run used for a key and sector is the one of lowest final energy among those passing C1 to C4, as in the amendment above. A continuation has lower energy than the run it starts from, so it is the run used if it passes.
+- c_two(128 → 256) pairs the χ = 1024 value at L = 256 with the L = 128 run at its registered final χ = 512. c_two(64 → 128) is unchanged.
+- V1 and V2 are evaluated as written. The control condition of V1 at 128 → 256 is evaluated with the control at χ = 1024, and the χ = 768 value is quoted next to it.
+- If C4 still fails at χ = 1024 for a run that V1 needs, V1 is not declared from these runs. The readings at χ = 768 and 1024 and the extrapolation below are then reported as they are, without a verdict.
+
+Extrapolation in the discarded weight (reported next to the registered reading, not used for V1 or V2). With ε the maximum discarded weight of the last sweep of a stage,
+
+S̄_W(ε → 0) = S̄_W(1024) + [S̄_W(1024) − S̄_W(768)] ε₁₀₂₄ / (ε₇₆₈ − ε₁₀₂₄),
+
+quoted with an uncertainty equal to the whole increment |S̄_W(ε → 0) − S̄_W(1024)|, and not quoted if ε₁₀₂₄ ≥ ε₇₆₈. Only the two stages that are converged in sweeps enter. The L = 128 partner is not extrapolated, and its own C4 step is quoted as the size of what that neglects. Since the entropy grows with χ at both sizes, the extrapolated c_two is an upper estimate. A shift δ of S̄_W at L = 256 alone moves c_two(128 → 256) by 6δ/ln 2 = 8.66 δ.
+
+Code and job. `pipeline_x1024.py` (one run per GPU, output folder `outX1024/` on Typhon scratch with the layout of `outG/`, nothing in `outG/` is written), `typhon/c190g_x1024.slurm` (partition h200, 3 GPUs, 12 cores, 8 h, cupy smoke test on the h200 node before production, since cupy was tested on apollo02 only). The complex runs need about 48 GB of device memory at χ = 1024, which the 40 GB cards of apollo do not have. A resubmission resumes unfinished runs from `outX1024/ckpt` and skips finished ones.
+
+Submitted 2026-11-10 03:20 EST as job 17609630 (c190g_x1024, QOS gpu-h200). The dry listing of `pipeline_x1024.py` on Typhon shows the five runs with the χ = 768 values above. The QOS allows one running job per user on h200, and another of Jonah's jobs holds that slot until 10:16 EST at the latest, so the job is pending with reason QOSMaxJobsPerUserLimit. Estimated run time once started, from the χ = 768 sweep times on the A100 cards scaled by χ³, is at most about 5 h for the five runs.
+
+Collection, once runs are done (status done only, no checkpoints): `scp 'typhon:/scratch/lustre/jkudlerflam/c18x/c190g/outX1024/*.json' typhon_out/outX1024/` and `scp 'typhon:/scratch/lustre/jkudlerflam/c18x/c190g/outX1024/logs/*.log' typhon_out/outX1024/logs/`.
