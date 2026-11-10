@@ -1,48 +1,63 @@
 # Where the c–d conjecture stands
 
-Last updated 2026-11-10. This page lists only the main results. [REPORT.md](REPORT.md) is the chronological record, and [STATUS_DETAIL.md](STATUS_DETAIL.md) is the earlier long version of this page (construction step by step, per-run history, glossary). The standard throughout is theoretical physics, and nothing has had independent human review.
-
-## The conjecture is false
+Last updated 2026-11-10. This page lists only the main results. [REPORT.md](REPORT.md) is the chronological record, and [STATUS_DETAIL.md](STATUS_DETAIL.md) is an earlier long version of this page. The standard throughout is theoretical physics, and nothing has had independent human review.
 
 Latorre and Sierra ([arXiv:2403.17242](https://arxiv.org/abs/2403.17242)) conjecture c ≤ d − 1 for translation-invariant nearest-neighbour chains on (ℂ^d)^⊗L whose low-energy spectrum is a unitary CFT.
 
-1. Unbounded c at fixed local dimension d₀ = 4464, with c = n + 1 for every n (C39, C42, C44, C45). All finite inputs are proved and refereed. The one remaining input is the Wilsonian step from the microscopic chain to its Luttinger liquid, of the same kind as large-U Hubbard to Heisenberg. Its pieces are proved, and what is left is constructive RG at the level of mathematical physics.
-2. The smallest counterexamples are explicit bonds at d = 11 (frozen cells, c = 11) and d = 13 (mobile cells, c = 14), written out in [contrib/small_d_note/](contrib/small_d_note/note.pdf). Both have certified finite members and are refereed and red-teamed. They rest on the same infrared inputs as the d = 24 candidate of a collaborator (GitHub: salpace).
+## In short
+
+1. The conjecture is false at large d. There are explicit counterexamples at d = 11 and d = 13, and c is unbounded at fixed d.
+2. At d = 2 there is a candidate counterexample, an explicit nearest-neighbour qubit chain that reads c ≈ 2 on open chains up to L = 256, with a mechanism and an effective model that give the same answer. What separates it from an established counterexample is a short list of convergence checks, given below, most of them running.
+3. A replacement bound, Σ_a c_a v_a ≤ π M log₂ d, holds in every solvable family and is proved in several classes.
+
+## The conjecture is false at large d
+
+1. Unbounded c at fixed local dimension d₀ = 4464, with c = n + 1 for every n (C39, C42, C44, C45). All finite inputs are proved and refereed. The one remaining input is the Wilsonian step from the microscopic chain to its Luttinger liquid, of the same kind as large-U Hubbard to Heisenberg.
+2. The smallest counterexamples are explicit bonds at d = 11 (frozen cells, c = 11) and d = 13 (mobile cells, c = 14), written out in [contrib/small_d_note/](contrib/small_d_note/note.pdf). Both have certified finite members and are refereed and red-teamed. They rest on the same infrared inputs as the d = 24 candidate of a collaborator (GitHub: salpace), whose [independent audit](contrib/counterexample_push_20261109/README.md) leaves the model-specific hypotheses of the d = 13 bond in place as hypotheses.
 3. Numerics agree. The logical vacancy model gives c = 2.0, 2.9 ± 0.1 and 3.98 ± 0.05 at n = 1, 2, 3, and the projected d₀ = 4464 chain gives c = 3.00 ± 0.02 at n = 2.
 
 Not established: a rigorous lattice-to-CFT theorem for any counterexample.
 
-Independent continuation (2026-11-09): [the new audit and calculations](contrib/counterexample_push_20261109/README.md)
-retain the d=13 model-specific dressed-clock and relative defect
-hypotheses, improve its legal projected pin activation bound to J/135,
-and prove an exact two-body binding boundary for the qubit cusp. The
-qubit reduction also has a nonzero distance-three pairing term at
-relative order Delta/V; its off-resonant elimination requires a separate
-argument. Neither result identifies a microscopic central charge.
-An explicit [transverse-DM deformation of the qubit cusp](contrib/counterexample_push_20261109/FACILITATED_ROUTE.md)
-now gives a constructive test family: its full number-mixing effective
-model weakens the pair binding after valley retuning. The finite-ring
-crossing drifts strongly with size; unbinding and c=2 remain unproved.
+## d = 2: a candidate counterexample with c = 2
 
-Priority d=2 follow-up: [full microscopic DMRG](contrib/d2_tenpy_20261109/RESULT.md)
-now tests the transverse-DM chain without blockade or particle-number
-projection. At C183's V=16 point and a simpler rational approximation,
-L=32 to 64 entropy scaling reads c=1.05 and 1.02, calibrated against
-0.95 and 1.94 on one- and two-mode controls. This does not strengthen
-a c>1 claim at those fields. The reference reads 1.10 at 64→128; field
-and hopping retuning has not established a c>1 regime. The [new audit](contrib/d2_priority_audit_20261109/UNIFORM_Y_SOURCE.md)
-also shows the antiunitary forbids uniform X but permits a tiny uniform
-Y source; that correction alone is not a phase verdict.
-The simpler parity-family point at phase 1.53 has a full-microscopic
-c=2.15 reading from L=32 to 64, but **its L=128 follow-up does not sustain
-c≈2**. Every 64→128 parity pairing gives .74–.93, and profile fits also
-fall. The larger states are incompletely optimized; physical crossover
-versus numerical bias remains unresolved. A nearby [rational simplification](contrib/d2_dmrg_priority_20261109/SIMPLE_PARITY_CANDIDATE.md)
-independently gives 2.13 at 32→64, with both parity sectors computed;
-its strict local residual target also fails. No nearest-neighbour d=2
-counterexample is established. The next decisive test is improved
-optimization at the existing unrounded L=128 Hamiltonian, then increasing
-bond dimension at fixed parameters.
+The chain is
+
+H = Σ_j [ (X_j X_{j+1} − Y_j Y_{j+1})/2 + (X_j Y_{j+1} − Y_j X_{j+1})/160 + 10 Z_j Z_{j+1} ] + h_z Σ_j Z_j, with h_z = −19.976047,
+
+together with a family of neighbours of it. One of them is the bond proposed by the collaborator, which adds a small XX + YY term (hopping phase 1.53).
+
+The strong ZZ term, with the field near its blockade value, leaves a dilute gas of blockaded particles. Their direct hop (the XY − YX term) is tuned down to the size of the next-nearest hop that the pairing term XX − YY generates at second order. The particles then move on a zigzag ladder whose band has two valleys, and the proposed infrared theory is a two-component Luttinger liquid with c = 2.
+
+Evidence, all numerical:
+
+- The qubit chain itself. Parity-resolved DMRG on open chains of L = 64, 128 and 256, with no projection, reads c = 2.07 for the bond above from the entropy difference between L = 128 and 256, and 1.94 to 2.07 over six tuned bonds (two densities, three bonds, V/Δ = 40 and 80). The c = 1 and c = 2 controls calibrate both size pairs, the registered fail outcome (c ≤ 1.3) is excluded, and independent CPU and GPU codes agree (REPORT §9.167 to §9.181).
+- The effective model. The second-order model of the blockaded particles reads c = 1.99 to 2.00 on the infinite chain at three densities, out to correlation lengths of 500 to 600 sites (REPORT §9.163, §9.179).
+- The mechanism. One particle from each valley binds into a pair in the dilute limit, which alone would give a pair liquid with c = 1. At the candidate density the inter-valley backscattering responsible is irrelevant if the pseudospin Luttinger parameter K_s exceeds 1. K_s reads 1.2 to 1.5 in the effective model and 1.4 to 1.6 on the qubit chain at L = 256, where the pair exponent and K_c also match the effective model (REPORT §9.160, §9.161, §9.182).
+
+Open, before this is called established:
+
+1. Truncation at L = 256. The entropy still rises with bond dimension, by about 0.03 from χ = 512 to 768 against a registered tolerance of 0.01, so the registered pass is not declared. The bias lowers c. A χ = 1024 stage is queued.
+2. A third size. L = 512 is running (REPORT §9.184).
+3. Entanglement scaling on the infinite qubit chain. A first attempt did not converge at the candidate (REPORT §9.183), and a second is in progress.
+4. The sign of the pseudospin coupling on the qubit chain. The K_s estimates spread from 1.3 to 2.0 with the treatment of the open ends, the density n = 1/8 is marginal, and the registered sign test returned the gap sign by the letter, through an estimator that fails its own control. A test that the gap appears where the theory says it should is in progress.
+5. Two unexplained readings. An older-solver run at V/Δ = 8 reads about 1.4 on the infinite chain, and the c = 1 control of the infinite-chain calculation sits narrowly outside its registered tolerance.
+
+The collaborator's earlier microscopic runs of the phase-1.53 bond read c ≈ 2.15 from L = 32 to 64 and 0.74 to 0.93 from 64 to 128, on L = 128 states that were not fully optimized ([record](contrib/d2_tenpy_20261109/RESULT.md), [rational bond](contrib/d2_dmrg_priority_20261109/SIMPLE_PARITY_CANDIDATE.md)). The converged rerun finds energies below those states by several times the parity splitting and reads 2.2 from 64 to 128, so the downturn does not reproduce (REPORT §9.167). Their [transverse-DM deformation](contrib/counterexample_push_20261109/FACILITATED_ROUTE.md) of the cusp reads c ≈ 1 at the fields tried, and their [symmetry audit](contrib/d2_priority_audit_20261109/UNIFORM_Y_SOURCE.md) shows that a small uniform Y source is allowed.
+
+## Elsewhere at d = 2
+
+Away from this corner no chain with c > 1 was found in about 103,000 sampled chains, targeted searches, or the literature (REPORT §9.110 to §9.150, refereed only where noted). A recalibrated screen of the uniform sample bounds any open c > 1 region at about 0.1 percent of bond space.
+
+- c ≤ 1 is derived at the physics standard at generic points of every symmetric class: U(1), free fermion, XYZ, cyclic, parity (outside the corner above), staggered charge, and the singular strata. On the time-reversal strata T and K_I it holds given a one-species assumption, and the sheet K_II is open. Isolated multicritical points on the strata have not been inventoried.
+- The XZ point, the only bond with a second decoupled gapless species, gives no c > 1. Its induced interaction has the wrong sign for the c = 3/2 phase.
+- Close to the ferromagnetic Heisenberg point every conformal bond has c ≤ 1, given standard semiclassics (refereed, and checked on 48 lattice bonds).
+- Where a symmetry makes two soliton valleys degenerate, the two-valley gas does not mix, so c = 1.
+
+Open here:
+
+1. Generic bonds with no symmetry, and attractive liquids whose U(1)-breaking is as large as the exchange. The symmetric results do not propagate into this region (REPORT §9.127). It includes single-species c > 1 theories such as Z₅ parafermions and three-state Potts order next to a floating liquid (c = 9/5). A structured search for exact maps into the nearest-neighbour class found no c > 1 model (REPORT §9.134).
+2. Two mechanisms for a second gapless sector at strong U(1)-breaking, a staggered Ising transition inside an incommensurate liquid and accidental two-valley soliton onsets. Searches found neither.
+3. The XZ neighbourhood, where open-chain DMRG reads c ≈ 1.3 at L = 256. This appears to be a Néel-ordered gapped bulk seen through a slowly relaxing cat state. Open chains to L = 512 are pending.
 
 ## A replacement bound
 
@@ -50,30 +65,15 @@ The proposed replacement is A = Σ_a c_a v_a ≤ π M log₂ d, with M the gauge
 
 At d = 2 on the U(1) class (XXZ plus DM along z plus field) this is proved with C = 10781 everywhere except a thin strip −1 < J_z/J < −1 + δ near the ferromagnet. There it rests on one inequality on the Bethe-root density, which holds numerically with wide margin (REPORT §9.94 to §9.109). The parts with J_z/J ≤ 1 are refereed; the easy-axis side is not.
 
-## Is c ≤ 1 at d = 2?
-
-No nearest-neighbour qubit chain with c > 1 has been established, in about 103,000 sampled chains, targeted searches, or the literature (REPORT §9.110 to §9.150, refereed only where noted). One unconverged candidate is under test (item 1 below). The early screens were weakly sensitive to c = 2. A recalibrated screen of the uniform sample bounds any open c > 1 region at about 0.1 percent of bond space, and both of its candidate points failed the second stage.
-
-- c ≤ 1 is derived at the physics standard at generic points of every symmetric class: U(1), free fermion, XYZ, cyclic, parity, staggered charge, and the singular strata, except one corner of the parity class near the Fibonacci point (item 1 below). On the time-reversal strata T and K_I it holds given a one-species assumption of the same kind as item 2 below, and the sheet K_II is open. Isolated multicritical points on the strata have not been inventoried. The one phase boundary scanned so far, the SU(2)_1 liquid against order in the cyclic class, has no c > 1 point (§9.165).
-- The XZ point, the only bond with a second decoupled gapless species, gives no c > 1. Its induced interaction has the wrong sign for the c = 3/2 phase.
-- Close to the ferromagnetic Heisenberg point every conformal bond has c ≤ 1, given standard semiclassics. The chain is a semiclassical ferromagnet there with at most one soft mode (refereed, and checked on 48 lattice bonds). The neighbourhood of its twisted images and the bound-state route to a second fluid are also covered.
-- Where a symmetry makes two soliton valleys degenerate, the two-valley gas does not mix, so c = 1.
-
-Open, in order of importance:
-1. A candidate c = 2 corner near the Fibonacci point (strong ZZ with the field near its blockade value), where the transverse hop is tuned down to the size of the next-nearest hop that the pairing generates at second order. The chain then behaves as a zigzag ladder whose band has two valleys, and DMRG on the derived effective model reads c ≈ 2 at L ≤ 96, against 1.88 for a c = 2 control. Those early effective-model runs were not converged. Later full-qubit tests and their limitations are recorded in REPORT §9.147, §9.152 and §9.155. The exact two-body problem then showed that one particle from each valley binds into a pair, so the dilute gas is a pair liquid with c = 1. At the candidate density the pair gap may be too small to see at the sizes reached, which would make the c ≈ 2 reading a crossover, but a gapless window there is not excluded. Within the parity class the pair stays bound at the density of the gas. Adding a transverse DM term, λ(XZ − ZX), unbinds it at second order. It also brings a number-changing term of the same size, which weakens the binding further, and whether the resulting two-valley gas has c = 2 is being tested. Slightly off the symmetric line the valley offset acts as a field on the pairs, as in an attractive Fermi gas in a field. There the effective model reads c ≈ 2 at L = 128, level with a c = 2 control, with a growing valley imbalance and no visible pair gap. That passes the effective-model first stage, but the reading is the same where the imbalance is zero and the pair correlations show no FFLO momentum shift, so L = 128 does not yet separate a c = 2 liquid from a crossover (REPORT §9.156). The calibrated L = 192 stage then passes its registered rule at both points, with c ≈ 1.8 against 1.9 to 2.1 for the control and the parity gap closing faster than 1/L (REPORT §9.157). The L = 256 stage passes as well, at c ≈ 1.73 to 1.86 against 1.9 to 2.1 for the control, with the exponents unchanged from L = 128 (REPORT §9.166). A continuation to χ = 1024 at both sizes shows that this reading is converged in bond dimension, and that its distance from the control is of the size of the dependence of the entropy on the particle number at fixed length (REPORT §9.173). On the symmetric line itself the effective model reads c ≈ 1.9 from L = 128 to 256 at three densities, with a flat L·Δ_P and power-law single-particle correlations, so no pair gap is visible at L ≤ 256. A gap of the size C175 estimates would still be invisible below L ≈ 1e4 (REPORT §9.158). A scattering-based RG and two calibrated exponents on the same data then give a pseudospin Luttinger parameter K_s ≈ 1.2 to 1.5 on the symmetric line, above 1 at all three densities. So the inter-valley backscattering is irrelevant, and the effective model is a c = 2 liquid there with no hidden pair gap (REPORT §9.160, §9.161). For the qubit chain a number-changing two-pair term is still relevant on the symmetric line itself, so the candidate has to sit slightly off it, where that term and the backscattering both carry momentum. Off the line the measured exponents are the same as on it, up to a valley polarization of 0.28, and the two-pair term's momentum mismatch is measured (REPORT §9.162). An infinite-chain calculation of the effective model reads c = 2.01 at n = 1/8 and 3/16, with no sector's correlation length saturating out to about 200 sites, and further estimators give K_s ≈ 1.25 to 1.55 (REPORT §9.163). The subsequent full-qubit phase-1.53 test reads c≈2 at L=32→64 but falls below one at 64→128 in every parity pairing; the larger states are incompletely optimized (REPORT §9.155). A rerun at the same bond and field with a parity-resolved solver, converged at its registered final bond dimensions (χ = 384 and 512), reads c ≈ 2.2 from 64 to 128, with energies below the earlier states by several times the parity splitting. By the registered rule the downturn does not reproduce. At L = 256 (χ = 768) the same chain reads c ≈ 1.94 from 128 to 256 on the ground branch, and the symmetric-line bond reads 2.07, both tracking the effective model with a constant entropy offset. The registered fail condition (c ≤ 1.3) does not hold. The registered pass is not declared yet, because the L = 256 entropy still rises with χ (0.027 from χ = 512 to 768 against a bound of 0.01, a bias that lowers c). Both controls now calibrate both size pairs. All six tuned bonds (two densities, three bonds on the φ line, V/Δ = 40 and 80) read 1.94 to 2.07 from 128 to 256 with the same criterion open, and the CPU and GPU codes agree on the runs both have finished. On the infinite chain the effective model reads c = 2.0 out to ξ ≈ 500 to 600 sites at three densities, with the c = 1 control narrowly outside its registered tolerance. An older-solver run of the full chain at V/Δ = 8 to 24 fails its registered criterion on open chains that are not converged at L = 256, and its infinite-chain reading at V/Δ = 8 (about 1.4) is unexplained. A continuation to χ = 1024 is queued. On the qubit chain the boson exponent gives K_s = 1.4 to 1.6 at L = 256, on the gapless side, and the pair exponent (0.63 to 0.64) and K_c (1.7) measured there match the effective model. The estimates of K_s spread from 1.3 to 2.0 with the treatment of the open ends, and n = 1/8 is marginal. The registered sign test returns the gap sign by the letter in both of its stages, in the second through the structure-factor estimate of K_c alone, which fails its control at L = 64 and disagrees with the pair exponent at L = 128 (REPORT §9.167, §9.169, §9.171, §9.174, §9.175, §9.178 to §9.182). A converged microscopic test remains essential. Earlier one-species arguments for this region assumed the first-order hop dominates and do not cover it. Elsewhere the ladder picture gives one valley in every regime with a separation of scales (REPORT §9.137 to §9.173).
-2. Generic bonds with no symmetry, and attractive liquids whose U(1)-breaking is as large as the exchange, far from every controlled region. The symmetric results do not propagate into this region, so it needs a dynamical argument of its own (REPORT §9.127). Besides two-species phases, this includes single-species c > 1 theories such as Z₅ parafermions, which could sit where commensurate locked phases melt, and three-state Potts order next to a floating liquid (c = 9/5). Both need at least two tunings and amplitudes of order the exchange, and a structured search for exact maps into the nearest-neighbour class found no c > 1 model (REPORT §9.134). The adversarial search (about 150,000 evaluations) has no survivor outside item 4.
-3. Two specific mechanisms for a second gapless sector at strong U(1)-breaking: a staggered Ising transition inside an incommensurate liquid (exists classically, but at spin 1/2 the two orders are one SU(2)₁ field and it fails to all orders in weak coupling, and a 252-point quantum screen found no coexistence), and accidental two-valley soliton onsets (a search over about 48,000 classical bonds and 6,000 quantum restarts found none).
-4. The XZ neighbourhood, where open-chain DMRG reads c ≈ 1.3 at L = 256. This appears to be a Néel-ordered gapped bulk seen through a slowly relaxing cat state, not a critical one. Edge fields along the order turn the open chain into the gapped VUMPS state at the same energy. Open chains to L = 512, which test this directly, are pending.
-
 ## Small d other than 2
 
 At d = 3 to 7, nothing above d − 1 in symmetric families. A Casimir-type bound Σ c v ≤ 2π‖h‖ is false (SU(N) chains with rank-2 symmetric representations, from N = 7).
 
 ## Where help is most useful
 
-1. Constructive RG for the Wilsonian step behind the counterexamples.
-2. Independent review of the d = 11 and d = 13 bonds.
-3. A general proof of the replacement bound, or its d = 2 strip.
-4. The generic d = 2 residual.
+1. An independent reproduction of the d = 2 candidate. The Hamiltonian above, any DMRG code, L = 128 and 256 at bond dimension 768 or more.
+2. Constructive RG for the Wilsonian step behind the large-d counterexamples.
+3. Independent review of the d = 11 and d = 13 bonds.
+4. A general proof of the replacement bound, or its d = 2 strip.
 
-All of this was produced with AI assistance (Claude Opus 5.5 coordinating, with gpt-6-astra runs).
+All of this was produced with AI assistance (Claude Opus 5.5 and Claude Fable 5 coordinating, with gpt-6-astra runs).
