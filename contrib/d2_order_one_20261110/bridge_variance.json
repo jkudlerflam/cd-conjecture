@@ -1,0 +1,29 @@
+{
+  "24": {
+    "record": "bridge_r4_u1_k4_L24_P0_s17.json",
+    "record_sha256": "3c34a413eb69847a2473ec72024f3d0595ea5ca60da90940493ce8283670e0d2",
+    "variance": 2.3576092900157164e-07,
+    "variance_per_site": 9.823372041732151e-09,
+    "energy_agreement": 0.0,
+    "seconds": 0.03351879119873047,
+    "caveat": "Variance tests eigenstate quality; alone it does not identify the global ground state or a CFT."
+  },
+  "48": {
+    "record": "bridge_r4_u1_k4_L48_P1_s23.json",
+    "record_sha256": "acbec3df033e37eb2d34515791912adfa376bad4e38bb9838792a0d4e644ebbb",
+    "variance": 3.945227433632681e-07,
+    "variance_per_site": 8.219223820068086e-09,
+    "energy_agreement": 0.0,
+    "seconds": 0.5441732406616211,
+    "caveat": "Variance tests eigenstate quality; alone it does not identify the global ground state or a CFT."
+  },
+  "96": {
+    "record": "bridge_r4_u1_k4_L96_P0_s17.json",
+    "record_sha256": "957129f5b8b2c6a290101771727da349a038db84874f50a87ad783ae2fd0b883",
+    "variance": 4.764532184253767e-05,
+    "variance_per_site": 4.963054358597674e-07,
+    "energy_agreement": 0.0,
+    "seconds": 1.290837049484253,
+    "caveat": "Variance tests eigenstate quality; alone it does not identify the global ground state or a CFT."
+  }
+}

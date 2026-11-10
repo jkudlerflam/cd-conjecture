@@ -1,0 +1,35 @@
+{
+  "hashes": {
+    "ed_screen.py": "f2724018ef05d393cf4476d7689be8e91b9122f5a6c1b5402d651ce8a10ec1d1",
+    "ed_followup.py": "a0d2889172d5b7bf746cc3bd0feb57d9bf5c7bc41c0c76f5cc20d9b7b572bfd2",
+    "grid.json": "84e39fe72343b7b97be5dc5ab56494ee00d071a6e9d3adcd5c58f31aa38ebd8b",
+    "followup_grid.json": "2c3e47c9d494ea30efbc8f8a330e73485d33a6acb743ce55056ac9918c7cd178",
+    "screen.jsonl": "18d4b4622a044a1f4cd2278dee937a6751516408bac771fe40303bab8914bf1d",
+    "followup.jsonl": "64afa772780069d9b01c05c1ecbc984e4594d94a920ece394acd4f4a40c66b2b",
+    "executed_sources/ed_screen_stage_a.py": "d2a8d6c911f6a6aa14af163a90525ee1c706f3c39e5b7eca28d30ac77b090b38",
+    "executed_sources/ed_screen_followup_dependency.py": "3fc50505c85860793755f305664654d1db16cef8bdcf787d8b3b7fcf03dabf32",
+    "executed_sources/ed_followup_executed.py": "1131cc55a696a14ed0957bfa85be34c357327c16a66d5dffa1af48fae0fc6789",
+    "gap_metadata_audit.json": "7c22558e315d837dde1f9eb1ce902c30a13a6401ec044fa5731e26f5a66ae149"
+  },
+  "checks": {
+    "stage_a_executed_source_matches_all_rows": true,
+    "stage_a_config_matches_all_rows": true,
+    "followup_source_matches_all_rows": true,
+    "followup_executed_dependency_matches_all_rows": true,
+    "followup_config_matches_all_rows": true,
+    "executed_sources/ed_screen_stage_a.py_physics_functions_identical": true,
+    "executed_sources/ed_screen_followup_dependency.py_physics_functions_identical": true,
+    "followup_physics_functions_unchanged_after_gap_metadata_correction": true,
+    "all_original_followup_fields_preserved_by_gap_metadata_correction": true
+  },
+  "compared_physics_functions": [
+    "sector_basis",
+    "build_sector",
+    "entropy_profile",
+    "state_metrics",
+    "solve_sector",
+    "dense_reference"
+  ],
+  "executed_versions_reconstructed_from_retained_edit_diffs": true,
+  "note": "Archived source contents match recorded execution hashes exactly. Stage A metrics-only amendment and later gap-metadata correction are recorded separately. Current scripts change bookkeeping and safe resume only; eigensolves, state measurements and original data fields are unchanged."
+}

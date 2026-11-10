@@ -1,0 +1,152 @@
+{
+  "sizes": [
+    14,
+    16
+  ],
+  "sectors": [
+    0,
+    1
+  ],
+  "periodic": true,
+  "k": 4,
+  "tol": 1e-11,
+  "points": [
+    {
+      "name": "bridge_r1.5_u1.5_k3",
+      "couplings": {
+        "Jx": 0.5,
+        "Jy": -0.5,
+        "Jz": 0.375,
+        "Dz": 0.25,
+        "hz": -0.25
+      },
+      "parameters": {
+        "r": 1.5,
+        "u": 1.5,
+        "k": 3
+      }
+    },
+    {
+      "name": "bridge_r2_u1.5_k4",
+      "couplings": {
+        "Jx": 0.5,
+        "Jy": -0.5,
+        "Jz": 0.5,
+        "Dz": 0.1875,
+        "hz": -0.5
+      },
+      "parameters": {
+        "r": 2,
+        "u": 1.5,
+        "k": 4
+      }
+    },
+    {
+      "name": "bridge_r1.5_u2_k1",
+      "couplings": {
+        "Jx": 0.5,
+        "Jy": -0.5,
+        "Jz": 0.375,
+        "Dz": 0.3333333333333333,
+        "hz": -0.5833333333333334
+      },
+      "parameters": {
+        "r": 1.5,
+        "u": 2,
+        "k": 1
+      }
+    },
+    {
+      "name": "bridge_r4_u1_k4",
+      "couplings": {
+        "Jx": 0.5,
+        "Jy": -0.5,
+        "Jz": 1.0,
+        "Dz": 0.0625,
+        "hz": -1.75
+      },
+      "parameters": {
+        "r": 4,
+        "u": 1,
+        "k": 4
+      }
+    },
+    {
+      "name": "attractive_Jz-0.5",
+      "couplings": {
+        "Jx": 0.5,
+        "Jy": -0.25,
+        "Jz": -0.5,
+        "Dz": 0.5,
+        "hz": 0
+      }
+    },
+    {
+      "name": "reference_peotta_exploratory",
+      "couplings": {
+        "Jx": 0.6201511529340699,
+        "Jy": -0.0798488470659301,
+        "Jz": -0.6,
+        "Dz": 0.42073549240394825,
+        "hz": 0
+      }
+    },
+    {
+      "name": "control_xx",
+      "couplings": {
+        "Jx": -0.5,
+        "Jy": -0.5,
+        "Jz": 0,
+        "Dz": 0,
+        "hz": 0
+      },
+      "sizes": [
+        16,
+        20
+      ]
+    },
+    {
+      "name": "control_two_xx",
+      "distance": 2,
+      "couplings": {
+        "Jx": -0.5,
+        "Jy": -0.5,
+        "Jz": 0,
+        "Dz": 0,
+        "hz": 0
+      },
+      "sizes": [
+        16,
+        20
+      ]
+    },
+    {
+      "name": "control_ising_critical",
+      "couplings": {
+        "Jx": -1,
+        "Jy": 0,
+        "Jz": 0,
+        "Dz": 0,
+        "hz": -1
+      },
+      "sizes": [
+        16,
+        20
+      ]
+    },
+    {
+      "name": "control_ising_gapped",
+      "couplings": {
+        "Jx": -1,
+        "Jy": 0,
+        "Jz": 0,
+        "Dz": 0,
+        "hz": -2
+      },
+      "sizes": [
+        16,
+        20
+      ]
+    }
+  ]
+}

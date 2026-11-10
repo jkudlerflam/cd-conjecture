@@ -1,0 +1,169 @@
+{
+  "original_followup_sha256": "7b0116b76585b43cd14773196805c7998a4024374bbd470e528c8d4e7f3ac718",
+  "updated_followup_sha256": "64afa772780069d9b01c05c1ecbc984e4594d94a920ece394acd4f4a40c66b2b",
+  "all_original_fields_unchanged": true,
+  "no_eigensolves": true,
+  "derived_source_sha256": "a0d2889172d5b7bf746cc3bd0feb57d9bf5c7bc41c0c76f5cc20d9b7b572bfd2",
+  "records": [
+    {
+      "name": "bridge_r1.5_u1.5_k3",
+      "L": 14,
+      "raw_lanczos_ground_gap": 0.0027883359082938597,
+      "resolved_ground_multiplicity": 1,
+      "gap_counting_resolved_multiplicity": null,
+      "gap_above_manifold": null
+    },
+    {
+      "name": "bridge_r1.5_u1.5_k3",
+      "L": 16,
+      "raw_lanczos_ground_gap": 0.0015229945205366135,
+      "resolved_ground_multiplicity": 1,
+      "gap_counting_resolved_multiplicity": null,
+      "gap_above_manifold": null
+    },
+    {
+      "name": "bridge_r2_u1.5_k4",
+      "L": 14,
+      "raw_lanczos_ground_gap": 1.3500311979441904e-13,
+      "resolved_ground_multiplicity": 2,
+      "gap_counting_resolved_multiplicity": 0.0,
+      "gap_above_manifold": null
+    },
+    {
+      "name": "bridge_r2_u1.5_k4",
+      "L": 16,
+      "raw_lanczos_ground_gap": 0.0555220752289074,
+      "resolved_ground_multiplicity": 1,
+      "gap_counting_resolved_multiplicity": null,
+      "gap_above_manifold": null
+    },
+    {
+      "name": "bridge_r1.5_u2_k1",
+      "L": 14,
+      "raw_lanczos_ground_gap": 6.572520305780927e-14,
+      "resolved_ground_multiplicity": 2,
+      "gap_counting_resolved_multiplicity": 0.0,
+      "gap_above_manifold": null
+    },
+    {
+      "name": "bridge_r1.5_u2_k1",
+      "L": 16,
+      "raw_lanczos_ground_gap": 0.013969245629406046,
+      "resolved_ground_multiplicity": 1,
+      "gap_counting_resolved_multiplicity": null,
+      "gap_above_manifold": null
+    },
+    {
+      "name": "bridge_r4_u1_k4",
+      "L": 14,
+      "raw_lanczos_ground_gap": 6.486412230088945e-05,
+      "resolved_ground_multiplicity": 2,
+      "gap_counting_resolved_multiplicity": 0.0,
+      "gap_above_manifold": null
+    },
+    {
+      "name": "bridge_r4_u1_k4",
+      "L": 16,
+      "raw_lanczos_ground_gap": 0.00012104771279197735,
+      "resolved_ground_multiplicity": 2,
+      "gap_counting_resolved_multiplicity": 0.0,
+      "gap_above_manifold": null
+    },
+    {
+      "name": "attractive_Jz-0.5",
+      "L": 14,
+      "raw_lanczos_ground_gap": 0.3521224081798149,
+      "resolved_ground_multiplicity": 1,
+      "gap_counting_resolved_multiplicity": null,
+      "gap_above_manifold": null
+    },
+    {
+      "name": "attractive_Jz-0.5",
+      "L": 16,
+      "raw_lanczos_ground_gap": 0.3047078333956659,
+      "resolved_ground_multiplicity": 1,
+      "gap_counting_resolved_multiplicity": null,
+      "gap_above_manifold": null
+    },
+    {
+      "name": "reference_peotta_exploratory",
+      "L": 14,
+      "raw_lanczos_ground_gap": 0.2748924496669076,
+      "resolved_ground_multiplicity": 1,
+      "gap_counting_resolved_multiplicity": null,
+      "gap_above_manifold": null
+    },
+    {
+      "name": "reference_peotta_exploratory",
+      "L": 16,
+      "raw_lanczos_ground_gap": 0.23502100552646787,
+      "resolved_ground_multiplicity": 1,
+      "gap_counting_resolved_multiplicity": null,
+      "gap_above_manifold": null
+    },
+    {
+      "name": "control_xx",
+      "L": 16,
+      "raw_lanczos_ground_gap": 0.196982806714324,
+      "resolved_ground_multiplicity": 1,
+      "gap_counting_resolved_multiplicity": null,
+      "gap_above_manifold": null
+    },
+    {
+      "name": "control_xx",
+      "L": 20,
+      "raw_lanczos_ground_gap": 0.15740341364924681,
+      "resolved_ground_multiplicity": 1,
+      "gap_counting_resolved_multiplicity": null,
+      "gap_above_manifold": null
+    },
+    {
+      "name": "control_two_xx",
+      "L": 16,
+      "raw_lanczos_ground_gap": 0.3978247347592827,
+      "resolved_ground_multiplicity": 1,
+      "gap_counting_resolved_multiplicity": null,
+      "gap_above_manifold": null
+    },
+    {
+      "name": "control_two_xx",
+      "L": 20,
+      "raw_lanczos_ground_gap": 0.31676888064903785,
+      "resolved_ground_multiplicity": 1,
+      "gap_counting_resolved_multiplicity": null,
+      "gap_above_manifold": null
+    },
+    {
+      "name": "control_ising_critical",
+      "L": 16,
+      "raw_lanczos_ground_gap": 0.09825369953900065,
+      "resolved_ground_multiplicity": 1,
+      "gap_counting_resolved_multiplicity": null,
+      "gap_above_manifold": null
+    },
+    {
+      "name": "control_ising_critical",
+      "L": 20,
+      "raw_lanczos_ground_gap": 0.07858021401528958,
+      "resolved_ground_multiplicity": 1,
+      "gap_counting_resolved_multiplicity": null,
+      "gap_above_manifold": null
+    },
+    {
+      "name": "control_ising_gapped",
+      "L": 16,
+      "raw_lanczos_ground_gap": 2.0000077471352213,
+      "resolved_ground_multiplicity": 1,
+      "gap_counting_resolved_multiplicity": null,
+      "gap_above_manifold": null
+    },
+    {
+      "name": "control_ising_gapped",
+      "L": 20,
+      "raw_lanczos_ground_gap": 2.00000042980826,
+      "resolved_ground_multiplicity": 1,
+      "gap_counting_resolved_multiplicity": null,
+      "gap_above_manifold": null
+    }
+  ]
+}

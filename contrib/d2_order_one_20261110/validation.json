@@ -1,0 +1,31 @@
+{
+  "assembly_checks": [
+    {
+      "L": 6,
+      "periodic": false,
+      "parity": 0,
+      "max_matrix_error": 0.0
+    },
+    {
+      "L": 6,
+      "periodic": false,
+      "parity": 1,
+      "max_matrix_error": 0.0
+    },
+    {
+      "L": 6,
+      "periodic": true,
+      "parity": 0,
+      "max_matrix_error": 0.0
+    },
+    {
+      "L": 6,
+      "periodic": true,
+      "parity": 1,
+      "max_matrix_error": 0.0
+    }
+  ],
+  "numpy": "2.5.4",
+  "scipy": "1.18.1",
+  "source_sha256": "f2724018ef05d393cf4476d7689be8e91b9122f5a6c1b5402d651ce8a10ec1d1"
+}

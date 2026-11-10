@@ -1,0 +1,1984 @@
+[
+  {
+    "name": "attractive_Jz-0.5",
+    "states": [
+      {
+        "L": 24,
+        "parity": 0,
+        "seed": 17,
+        "chi": 64,
+        "parity_complete": true,
+        "ground_branch_status": "selected",
+        "energy": -17.74143202338868,
+        "parity_gap": 0.15691419474180535,
+        "S_central3": 0.7456637838262643,
+        "S_fractional": 0.7126891868945208,
+        "density": 0.5000000000000183,
+        "density_range": 8.548717289613705e-15,
+        "profiles": {
+          "0.25": {
+            "c": 1.8283212842626084,
+            "rms": 0.09359786323695739
+          },
+          "0.375": {
+            "c": -5.313747475846354,
+            "rms": 0.08462488061674933
+          }
+        },
+        "convergence": {
+          "local_residual": 9.44835612028757e-11,
+          "discarded_weight": 7.65831842386433e-13,
+          "delta_E": 1.9539925233402755e-14,
+          "delta_S": 6.020739462542224e-13,
+          "canonical_vs_sweep_S": -1.1027412316622076e-10,
+          "sweep_converged": true,
+          "bond_dimension_converged": "not established by a completed schedule alone"
+        },
+        "chi_entropy_step": 1.3988240693540988e-06,
+        "preceding_chi_sweep_converged": true,
+        "best_available_same_seed_chi_check": {
+          "seed": 17,
+          "chi_from": 32,
+          "chi_to": 64,
+          "absolute_entropy_step": 1.3988240693540988e-06
+        },
+        "correlations_at_L_over_2": {
+          "X": 0.07331827438605609,
+          "Y": 0.009262515143457923,
+          "Z": 0.058548020390041096
+        },
+        "sector_states": [
+          {
+            "parity": 0,
+            "energy": -17.74143202338868,
+            "S_fractional": 0.7126891868945208,
+            "S_central3": 0.7456637838262643,
+            "sweep_converged": true
+          },
+          {
+            "parity": 1,
+            "energy": -17.584517828646874,
+            "S_fractional": 1.140105308495663,
+            "S_central3": 1.1405016287372698,
+            "sweep_converged": true
+          }
+        ]
+      },
+      {
+        "L": 48,
+        "parity": 0,
+        "seed": 17,
+        "chi": 96,
+        "parity_complete": true,
+        "ground_branch_status": "selected",
+        "energy": -35.80509401050435,
+        "parity_gap": 0.08369257882076653,
+        "S_central3": 0.8445402895522163,
+        "S_fractional": 0.8204078239660052,
+        "density": 0.5000000000000661,
+        "density_range": 2.1760371282653068e-14,
+        "profiles": {
+          "0.25": {
+            "c": 1.2893287745616737,
+            "rms": 0.06454689962313524
+          },
+          "0.375": {
+            "c": 3.374265233562375,
+            "rms": 0.06044938331459743
+          }
+        },
+        "convergence": {
+          "local_residual": 9.820540792419844e-11,
+          "discarded_weight": 2.879696481272731e-12,
+          "delta_E": 5.613287612504791e-13,
+          "delta_S": 4.615045012812402e-10,
+          "canonical_vs_sweep_S": -4.278429832638153e-10,
+          "sweep_converged": true,
+          "bond_dimension_converged": "not established by a completed schedule alone"
+        },
+        "chi_entropy_step": 0.00010269319361799756,
+        "preceding_chi_sweep_converged": true,
+        "best_available_same_seed_chi_check": {
+          "seed": 17,
+          "chi_from": 32,
+          "chi_to": 96,
+          "absolute_entropy_step": 0.00010269319361799756
+        },
+        "correlations_at_L_over_2": {
+          "X": 0.04492033258335442,
+          "Y": 0.0037399804529608224,
+          "Z": 0.02954541909952612
+        },
+        "sector_states": [
+          {
+            "parity": 0,
+            "energy": -35.80509401050435,
+            "S_fractional": 0.8204078239660052,
+            "S_central3": 0.8445402895522163,
+            "sweep_converged": true
+          },
+          {
+            "parity": 1,
+            "energy": -35.72140143168358,
+            "S_fractional": 1.2476061779836225,
+            "S_central3": 1.257334670323165,
+            "sweep_converged": true
+          }
+        ]
+      }
+    ],
+    "pairs": [
+      {
+        "sizes": [
+          24,
+          48
+        ],
+        "c_central3": 0.8558918668275607,
+        "c_fractional": 0.932430861086092,
+        "same_parity_slopes": {
+          "0": {
+            "S_central3": 0.8558918668275607,
+            "S_fractional": 0.932430861086092
+          },
+          "1": {
+            "S_central3": 1.0113266982476699,
+            "S_fractional": 0.9305458278091857
+          }
+        },
+        "sweep_converged": true
+      }
+    ]
+  },
+  {
+    "name": "bridge_r1.5_u1.5_k3",
+    "states": [
+      {
+        "L": 24,
+        "parity": 0,
+        "seed": 17,
+        "chi": 64,
+        "parity_complete": true,
+        "ground_branch_status": "selected",
+        "energy": -12.922667076358147,
+        "parity_gap": 0.0009585768966644537,
+        "S_central3": 0.8203370977023562,
+        "S_fractional": 0.8133383688691188,
+        "density": 0.43672032122378024,
+        "density_range": 0.0031284848858599834,
+        "profiles": {
+          "0.25": {
+            "c": 0.7403277443429471,
+            "rms": 0.019254420944946952
+          },
+          "0.375": {
+            "c": -0.8842392494293854,
+            "rms": 0.016903164743446514
+          }
+        },
+        "convergence": {
+          "local_residual": 9.996013208088884e-11,
+          "discarded_weight": 1.5817325227374113e-10,
+          "delta_E": 2.1245227799226996e-12,
+          "delta_S": 5.406509284711092e-08,
+          "canonical_vs_sweep_S": -3.702645012815253e-08,
+          "sweep_converged": true,
+          "bond_dimension_converged": "not established by a completed schedule alone"
+        },
+        "chi_entropy_step": 4.996837138104837e-05,
+        "preceding_chi_sweep_converged": false,
+        "best_available_same_seed_chi_check": null,
+        "correlations_at_L_over_2": {
+          "X": 0.3744314222552319,
+          "Y": 0.3744314222552318,
+          "Z": -0.00013684128689801615
+        },
+        "sector_states": [
+          {
+            "parity": 0,
+            "energy": -12.922667076358147,
+            "S_fractional": 0.8133383688691188,
+            "S_central3": 0.8203370977023562,
+            "sweep_converged": true
+          },
+          {
+            "parity": 1,
+            "energy": -12.921708499461483,
+            "S_fractional": 0.8247502326407951,
+            "S_central3": 0.8308167711299373,
+            "sweep_converged": true
+          }
+        ]
+      },
+      {
+        "L": 48,
+        "parity": 1,
+        "seed": 17,
+        "chi": 96,
+        "parity_complete": true,
+        "ground_branch_status": "selected",
+        "energy": -26.073782796563293,
+        "parity_gap": -1.3342030463547871e-05,
+        "S_central3": 0.8241372260247589,
+        "S_fractional": 0.8289006605802145,
+        "density": 0.4365070261565241,
+        "density_range": 0.0014459661838682747,
+        "profiles": {
+          "0.25": {
+            "c": -0.1039886263914035,
+            "rms": 0.015650582648385286
+          },
+          "0.375": {
+            "c": -0.5441826420892608,
+            "rms": 0.014349731080265675
+          }
+        },
+        "convergence": {
+          "local_residual": 9.998365661920011e-11,
+          "discarded_weight": 2.6978419498391304e-11,
+          "delta_E": 1.6363799204555107e-11,
+          "delta_S": 8.463648415446556e-08,
+          "canonical_vs_sweep_S": 5.3618629536345e-09,
+          "sweep_converged": true,
+          "bond_dimension_converged": "not established by a completed schedule alone"
+        },
+        "chi_entropy_step": 8.093171407441702e-05,
+        "preceding_chi_sweep_converged": true,
+        "best_available_same_seed_chi_check": {
+          "seed": 17,
+          "chi_from": 32,
+          "chi_to": 96,
+          "absolute_entropy_step": 8.093171407441702e-05
+        },
+        "correlations_at_L_over_2": {
+          "X": 0.393731375279624,
+          "Y": 0.393731375279624,
+          "Z": -2.956158260524616e-07
+        },
+        "sector_states": [
+          {
+            "parity": 0,
+            "energy": -26.07376945453283,
+            "S_fractional": 0.8290820527288899,
+            "S_central3": 0.8243428238969451,
+            "sweep_converged": true
+          },
+          {
+            "parity": 1,
+            "energy": -26.073782796563293,
+            "S_fractional": 0.8289006605802145,
+            "S_central3": 0.8241372260247589,
+            "sweep_converged": true
+          }
+        ]
+      }
+    ],
+    "pairs": [
+      {
+        "sizes": [
+          24,
+          48
+        ],
+        "c_central3": 0.03289455771283269,
+        "c_fractional": 0.13470984645879103,
+        "same_parity_slopes": {
+          "0": {
+            "S_central3": 0.034674247896554926,
+            "S_fractional": 0.13628000777889226
+          },
+          "1": {
+            "S_central3": -0.057819279591810435,
+            "S_fractional": 0.03592681083460458
+          }
+        },
+        "sweep_converged": true
+      }
+    ]
+  },
+  {
+    "name": "bridge_r1.5_u2_k1",
+    "states": [
+      {
+        "L": 24,
+        "parity": 0,
+        "seed": 17,
+        "chi": 64,
+        "parity_complete": true,
+        "ground_branch_status": "selected",
+        "energy": -16.37985146175329,
+        "parity_gap": 0.037780941907474386,
+        "S_central3": 0.7937003192859017,
+        "S_fractional": 0.7859704117301555,
+        "density": 0.3649789127566223,
+        "density_range": 0.11098731563275599,
+        "profiles": {
+          "0.25": {
+            "c": 2.504734560645036,
+            "rms": 0.06612377259732503
+          },
+          "0.375": {
+            "c": 8.276018223242211,
+            "rms": 0.05583053124910376
+          }
+        },
+        "convergence": {
+          "local_residual": 9.467880177109724e-11,
+          "discarded_weight": 3.5318636903980405e-11,
+          "delta_E": 2.0676793610618915e-12,
+          "delta_S": 2.2478958694449602e-09,
+          "canonical_vs_sweep_S": -7.434216131585458e-09,
+          "sweep_converged": true,
+          "bond_dimension_converged": "not established by a completed schedule alone"
+        },
+        "chi_entropy_step": 2.2562432222983375e-05,
+        "preceding_chi_sweep_converged": true,
+        "best_available_same_seed_chi_check": {
+          "seed": 17,
+          "chi_from": 32,
+          "chi_to": 64,
+          "absolute_entropy_step": 2.2562432222983375e-05
+        },
+        "correlations_at_L_over_2": {
+          "X": 0.03517790038284402,
+          "Y": 0.035177900382844025,
+          "Z": 0.004609385155394552
+        },
+        "sector_states": [
+          {
+            "parity": 0,
+            "energy": -16.37985146175329,
+            "S_fractional": 0.7859704117301555,
+            "S_central3": 0.7937003192859017,
+            "sweep_converged": true
+          },
+          {
+            "parity": 1,
+            "energy": -16.342070519845816,
+            "S_fractional": 0.7280844003678061,
+            "S_central3": 0.7043069614773336,
+            "sweep_converged": true
+          }
+        ]
+      },
+      {
+        "L": 48,
+        "parity": 1,
+        "seed": 17,
+        "chi": 96,
+        "parity_complete": true,
+        "ground_branch_status": "selected",
+        "energy": -32.870573537698476,
+        "parity_gap": -0.0003868085826610468,
+        "S_central3": 0.8731867837598629,
+        "S_fractional": 0.8760614305296155,
+        "density": 0.379174355774378,
+        "density_range": 0.09544023782311395,
+        "profiles": {
+          "0.25": {
+            "c": 1.0209629336108383,
+            "rms": 0.048799182945017
+          },
+          "0.375": {
+            "c": -1.3833838676539663,
+            "rms": 0.04276266436817205
+          }
+        },
+        "convergence": {
+          "local_residual": 9.914836278159543e-11,
+          "discarded_weight": 4.159050881469284e-11,
+          "delta_E": 2.3799628934284556e-11,
+          "delta_S": 8.216890057255455e-08,
+          "canonical_vs_sweep_S": -8.708135657009564e-09,
+          "sweep_converged": true,
+          "bond_dimension_converged": "not established by a completed schedule alone"
+        },
+        "chi_entropy_step": 0.0007903359701484369,
+        "preceding_chi_sweep_converged": true,
+        "best_available_same_seed_chi_check": {
+          "seed": 17,
+          "chi_from": 32,
+          "chi_to": 96,
+          "absolute_entropy_step": 0.0007903359701484369
+        },
+        "correlations_at_L_over_2": {
+          "X": 0.02279115764543459,
+          "Y": 0.022791157645434598,
+          "Z": -0.0018065618015279117
+        },
+        "sector_states": [
+          {
+            "parity": 0,
+            "energy": -32.870186729115815,
+            "S_fractional": 0.929045187536602,
+            "S_central3": 0.9343924316577731,
+            "sweep_converged": true
+          },
+          {
+            "parity": 1,
+            "energy": -32.870573537698476,
+            "S_fractional": 0.8760614305296155,
+            "S_central3": 0.8731867837598629,
+            "sweep_converged": true
+          }
+        ]
+      }
+    ],
+    "pairs": [
+      {
+        "sizes": [
+          24,
+          48
+        ],
+        "c_central3": 0.6880483686862839,
+        "c_fractional": 0.7798431963036921,
+        "same_parity_slopes": {
+          "0": {
+            "S_central3": 1.21785487686655,
+            "S_fractional": 1.2384796171935644
+          },
+          "1": {
+            "S_central3": 1.4618524926792869,
+            "S_fractional": 1.280914365479514
+          }
+        },
+        "sweep_converged": true
+      }
+    ]
+  },
+  {
+    "name": "bridge_r2_u1.5_k1",
+    "states": [
+      {
+        "L": 24,
+        "parity": 0,
+        "seed": 17,
+        "chi": 64,
+        "parity_complete": true,
+        "ground_branch_status": "selected",
+        "energy": -17.923095062905325,
+        "parity_gap": 0.1798384868562053,
+        "S_central3": 0.3592867525005929,
+        "S_fractional": 0.3592882715481349,
+        "density": 0.19357122082732203,
+        "density_range": 0.00042296592910429087,
+        "profiles": {
+          "0.25": {
+            "c": -0.0031562602433168807,
+            "rms": 5.053252149426217e-05
+          },
+          "0.375": {
+            "c": 0.00027941281517049067,
+            "rms": 3.4866953019576938e-06
+          }
+        },
+        "convergence": {
+          "local_residual": 9.957838097801785e-11,
+          "discarded_weight": 3.774758283725532e-14,
+          "delta_E": 5.329070518200751e-15,
+          "delta_S": 2.371991492111647e-13,
+          "canonical_vs_sweep_S": 8.324396727488192e-12,
+          "sweep_converged": true,
+          "bond_dimension_converged": "not established by a completed schedule alone"
+        },
+        "chi_entropy_step": 1.8028467607678067e-09,
+        "preceding_chi_sweep_converged": true,
+        "best_available_same_seed_chi_check": {
+          "seed": 17,
+          "chi_from": 32,
+          "chi_to": 64,
+          "absolute_entropy_step": 1.8028467607678067e-09
+        },
+        "correlations_at_L_over_2": {
+          "X": 0.005725459337115975,
+          "Y": 0.005725459337115975,
+          "Z": -5.762076105697567e-07
+        },
+        "sector_states": [
+          {
+            "parity": 0,
+            "energy": -17.923095062905325,
+            "S_fractional": 0.3592882715481349,
+            "S_central3": 0.3592867525005929,
+            "sweep_converged": true
+          },
+          {
+            "parity": 1,
+            "energy": -17.74325657604912,
+            "S_fractional": 1.0158125034877534,
+            "S_central3": 1.0194568915813773,
+            "sweep_converged": true
+          }
+        ]
+      },
+      {
+        "L": 48,
+        "parity": 0,
+        "seed": 17,
+        "chi": 96,
+        "parity_complete": true,
+        "ground_branch_status": "selected",
+        "energy": -35.81430298392158,
+        "parity_gap": 0.1811186121069568,
+        "S_central3": 0.35928696655399567,
+        "S_fractional": 0.3592869672438593,
+        "density": 0.19353330670357896,
+        "density_range": 3.2631261708271353e-06,
+        "profiles": {
+          "0.25": {
+            "c": -8.514253752419083e-06,
+            "rms": 2.8676462827302976e-07
+          },
+          "0.375": {
+            "c": -6.616275437113431e-07,
+            "rms": 5.1299906769721626e-09
+          }
+        },
+        "convergence": {
+          "local_residual": 9.676011732367808e-11,
+          "discarded_weight": 3.7969627442180354e-14,
+          "delta_E": 3.907985046680551e-14,
+          "delta_S": 8.1556983388964e-13,
+          "canonical_vs_sweep_S": 4.979572310048752e-12,
+          "sweep_converged": true,
+          "bond_dimension_converged": "not established by a completed schedule alone"
+        },
+        "chi_entropy_step": 2.7043883799038326e-09,
+        "preceding_chi_sweep_converged": true,
+        "best_available_same_seed_chi_check": {
+          "seed": 17,
+          "chi_from": 32,
+          "chi_to": 96,
+          "absolute_entropy_step": 2.7043883799038326e-09
+        },
+        "correlations_at_L_over_2": {
+          "X": 0.00011137753249999692,
+          "Y": 0.00011137753249999692,
+          "Z": -1.0629963576036516e-10
+        },
+        "sector_states": [
+          {
+            "parity": 0,
+            "energy": -35.81430298392158,
+            "S_fractional": 0.3592869672438593,
+            "S_central3": 0.35928696655399567,
+            "sweep_converged": true
+          },
+          {
+            "parity": 1,
+            "energy": -35.63318437181462,
+            "S_fractional": 1.0499449604389357,
+            "S_central3": 1.0504817369546864,
+            "sweep_converged": true
+          }
+        ]
+      }
+    ],
+    "pairs": [
+      {
+        "sizes": [
+          24,
+          48
+        ],
+        "c_central3": 1.8528826960616909e-06,
+        "c_fractional": -1.1290279861656505e-05,
+        "same_parity_slopes": {
+          "0": {
+            "S_central3": 1.8528826960616909e-06,
+            "S_fractional": -1.1290279861656505e-05
+          },
+          "1": {
+            "S_central3": 0.2685563433865194,
+            "S_fractional": 0.29545635826096023
+          }
+        },
+        "sweep_converged": true
+      }
+    ]
+  },
+  {
+    "name": "bridge_r2_u1.5_k4",
+    "states": [
+      {
+        "L": 24,
+        "parity": 0,
+        "seed": 17,
+        "chi": 64,
+        "parity_complete": true,
+        "ground_branch_status": "selected",
+        "energy": -14.07558009199207,
+        "parity_gap": 0.050860166495453996,
+        "S_central3": 0.6798015827760969,
+        "S_fractional": 0.5990645128619568,
+        "density": 0.44339863865856916,
+        "density_range": 0.5092855688024557,
+        "profiles": {
+          "0.25": {
+            "c": -0.8069204245262129,
+            "rms": 0.1234147862894983
+          },
+          "0.375": {
+            "c": 4.545349724292412,
+            "rms": 0.12466220654452083
+          }
+        },
+        "convergence": {
+          "local_residual": 9.459840842307292e-11,
+          "discarded_weight": 8.871214873806821e-11,
+          "delta_E": 4.080291660102375e-12,
+          "delta_S": 1.5531403940727273e-09,
+          "canonical_vs_sweep_S": -1.901831780948271e-08,
+          "sweep_converged": true,
+          "bond_dimension_converged": "not established by a completed schedule alone"
+        },
+        "chi_entropy_step": 3.99614274639859e-05,
+        "preceding_chi_sweep_converged": true,
+        "best_available_same_seed_chi_check": {
+          "seed": 17,
+          "chi_from": 32,
+          "chi_to": 64,
+          "absolute_entropy_step": 3.99614274639859e-05
+        },
+        "correlations_at_L_over_2": {
+          "X": 0.00280490004097976,
+          "Y": 0.002804900040979761,
+          "Z": 0.03725590033057312
+        },
+        "sector_states": [
+          {
+            "parity": 0,
+            "energy": -14.07558009199207,
+            "S_fractional": 0.5990645128619568,
+            "S_central3": 0.6798015827760969,
+            "sweep_converged": true
+          },
+          {
+            "parity": 1,
+            "energy": -14.024719925496616,
+            "S_fractional": 1.1203267850486751,
+            "S_central3": 1.1913136817696481,
+            "sweep_converged": true
+          }
+        ]
+      },
+      {
+        "L": 48,
+        "parity": 1,
+        "seed": 17,
+        "chi": 96,
+        "parity_complete": true,
+        "ground_branch_status": "selected",
+        "energy": -28.225795885327425,
+        "parity_gap": -0.041173274089956635,
+        "S_central3": 0.7027243837806466,
+        "S_fractional": 0.7147996963443682,
+        "density": 0.45041985334824597,
+        "density_range": 0.44555680247232926,
+        "profiles": {
+          "0.25": {
+            "c": 1.1412315487382558,
+            "rms": 0.10771763945141428
+          },
+          "0.375": {
+            "c": 6.922308955555432,
+            "rms": 0.08527750892375395
+          }
+        },
+        "convergence": {
+          "local_residual": 9.813420454972936e-11,
+          "discarded_weight": 2.06478167896762e-10,
+          "delta_E": 7.207034968814696e-11,
+          "delta_S": 1.1206061056867611e-07,
+          "canonical_vs_sweep_S": -5.560898785894608e-08,
+          "sweep_converged": true,
+          "bond_dimension_converged": "not established by a completed schedule alone"
+        },
+        "chi_entropy_step": 0.001118901117957316,
+        "preceding_chi_sweep_converged": true,
+        "best_available_same_seed_chi_check": {
+          "seed": 17,
+          "chi_from": 32,
+          "chi_to": 96,
+          "absolute_entropy_step": 0.001118901117957316
+        },
+        "correlations_at_L_over_2": {
+          "X": 0.0002510884622872897,
+          "Y": 0.0002510884622872898,
+          "Z": 0.0048827660849021515
+        },
+        "sector_states": [
+          {
+            "parity": 0,
+            "energy": -28.18462261123747,
+            "S_fractional": 1.2855703641200178,
+            "S_central3": 1.297361648928951,
+            "sweep_converged": true
+          },
+          {
+            "parity": 1,
+            "energy": -28.225795885327425,
+            "S_fractional": 0.7147996963443682,
+            "S_central3": 0.7027243837806466,
+            "sweep_converged": true
+          }
+        ]
+      },
+      {
+        "L": 96,
+        "parity": 0,
+        "seed": 17,
+        "chi": 128,
+        "parity_complete": true,
+        "ground_branch_status": "selected",
+        "energy": -56.51153273891819,
+        "parity_gap": 0.039128808805799054,
+        "S_central3": 0.8794971383644624,
+        "S_fractional": 0.830752563954155,
+        "density": 0.4416370650754411,
+        "density_range": 0.39944169159136567,
+        "profiles": {
+          "0.25": {
+            "c": 0.6772623814096838,
+            "rms": 0.08735106612009243
+          },
+          "0.375": {
+            "c": 0.9349547283917697,
+            "rms": 0.08715398029050495
+          }
+        },
+        "convergence": {
+          "local_residual": 9.993292926742492e-11,
+          "discarded_weight": 3.935174408553621e-10,
+          "delta_E": 4.908784489998652e-10,
+          "delta_S": 4.8856600021185415e-06,
+          "canonical_vs_sweep_S": -7.581728733718762e-08,
+          "sweep_converged": true,
+          "bond_dimension_converged": "not established by a completed schedule alone"
+        },
+        "chi_entropy_step": 0.011172257923232731,
+        "preceding_chi_sweep_converged": true,
+        "best_available_same_seed_chi_check": {
+          "seed": 17,
+          "chi_from": 32,
+          "chi_to": 128,
+          "absolute_entropy_step": 0.011172257923232731
+        },
+        "correlations_at_L_over_2": {
+          "X": 3.9557222071596044e-05,
+          "Y": 3.955722207159607e-05,
+          "Z": 0.020704425568201255
+        },
+        "sector_states": [
+          {
+            "parity": 0,
+            "energy": -56.51153273891819,
+            "S_fractional": 0.830752563954155,
+            "S_central3": 0.8794971383644624,
+            "sweep_converged": true
+          },
+          {
+            "parity": 1,
+            "energy": -56.47240393011239,
+            "S_fractional": 0.8232897905693134,
+            "S_central3": 0.8014435392857874,
+            "sweep_converged": true
+          }
+        ]
+      }
+    ],
+    "pairs": [
+      {
+        "sizes": [
+          24,
+          48
+        ],
+        "c_central3": 0.19842366799529032,
+        "c_fractional": 1.0018234515986952,
+        "same_parity_slopes": {
+          "0": {
+            "S_central3": 5.345705069338697,
+            "S_fractional": 5.942511522907566
+          },
+          "1": {
+            "S_central3": -4.229312143440915,
+            "S_fractional": -3.510311518919054
+          }
+        },
+        "sweep_converged": true
+      },
+      {
+        "sizes": [
+          48,
+          96
+        ],
+        "c_central3": 1.5301750584141172,
+        "c_fractional": 1.003707762464963,
+        "same_parity_slopes": {
+          "0": {
+            "S_central3": -3.6171063429292896,
+            "S_fractional": -3.9369803088439075
+          },
+          "1": {
+            "S_central3": 0.854529816528078,
+            "S_fractional": 0.9391087255434285
+          }
+        },
+        "sweep_converged": true
+      }
+    ]
+  },
+  {
+    "name": "bridge_r3_u1.5_k3",
+    "states": [
+      {
+        "L": 24,
+        "parity": 0,
+        "seed": 17,
+        "chi": 64,
+        "parity_complete": true,
+        "ground_branch_status": "selected",
+        "energy": -20.11565093556577,
+        "parity_gap": 5.1975812237259333e-05,
+        "S_central3": 0.8286007212228003,
+        "S_fractional": 0.8285271309606556,
+        "density": 0.17836102462855274,
+        "density_range": 0.06512610893454307,
+        "profiles": {
+          "0.25": {
+            "c": 0.4916227673769977,
+            "rms": 0.003160211723156222
+          },
+          "0.375": {
+            "c": 0.13821391969761193,
+            "rms": 0.0005884472763853227
+          }
+        },
+        "convergence": {
+          "local_residual": 9.994076188219972e-11,
+          "discarded_weight": 4.6265391517863463e-10,
+          "delta_E": 1.2716938613266393e-11,
+          "delta_S": 5.263069979832835e-08,
+          "canonical_vs_sweep_S": -4.578155044732135e-06,
+          "sweep_converged": true,
+          "bond_dimension_converged": "not established by a completed schedule alone"
+        },
+        "chi_entropy_step": 0.002916169634026189,
+        "preceding_chi_sweep_converged": true,
+        "best_available_same_seed_chi_check": {
+          "seed": 17,
+          "chi_from": 32,
+          "chi_to": 64,
+          "absolute_entropy_step": 0.002916169634026189
+        },
+        "correlations_at_L_over_2": {
+          "X": -0.04248467312118574,
+          "Y": -0.04248467312118576,
+          "Z": -5.80421101981643e-05
+        },
+        "sector_states": [
+          {
+            "parity": 0,
+            "energy": -20.11565093556577,
+            "S_fractional": 0.8285271309606556,
+            "S_central3": 0.8286007212228003,
+            "sweep_converged": true
+          },
+          {
+            "parity": 1,
+            "energy": -20.115598959753534,
+            "S_fractional": 1.1090739801083842,
+            "S_central3": 1.1109592511578497,
+            "sweep_converged": true
+          }
+        ]
+      },
+      {
+        "L": 48,
+        "parity": 1,
+        "seed": 17,
+        "chi": 96,
+        "parity_complete": true,
+        "ground_branch_status": "selected",
+        "energy": -39.928697720566475,
+        "parity_gap": -0.00012072157835518738,
+        "S_central3": 0.41294179176831775,
+        "S_fractional": 0.4129663532897967,
+        "density": 0.16932895703132067,
+        "density_range": 0.002537256043669167,
+        "profiles": {
+          "0.25": {
+            "c": -0.052220957084592144,
+            "rms": 0.0005308347035209197
+          },
+          "0.375": {
+            "c": -0.006175362750919539,
+            "rms": 8.500865654314103e-06
+          }
+        },
+        "convergence": {
+          "local_residual": 9.919728115747524e-11,
+          "discarded_weight": 1.531441640167941e-12,
+          "delta_E": 9.00612917575927e-13,
+          "delta_S": 2.88530228598205e-08,
+          "canonical_vs_sweep_S": 4.104140305383197e-09,
+          "sweep_converged": true,
+          "bond_dimension_converged": "not established by a completed schedule alone"
+        },
+        "chi_entropy_step": 2.5665350827097644e-05,
+        "preceding_chi_sweep_converged": true,
+        "best_available_same_seed_chi_check": {
+          "seed": 17,
+          "chi_from": 32,
+          "chi_to": 96,
+          "absolute_entropy_step": 2.5665350827097644e-05
+        },
+        "correlations_at_L_over_2": {
+          "X": 0.0038836739770371693,
+          "Y": 0.0038836739770371693,
+          "Z": -2.759349315151205e-07
+        },
+        "sector_states": [
+          {
+            "parity": 0,
+            "energy": -39.92857699898812,
+            "S_fractional": 0.4129642200036267,
+            "S_central3": 0.41294183854377103,
+            "sweep_converged": true
+          },
+          {
+            "parity": 1,
+            "energy": -39.928697720566475,
+            "S_fractional": 0.4129663532897967,
+            "S_central3": 0.41294179176831775,
+            "sweep_converged": true
+          }
+        ]
+      }
+    ],
+    "pairs": [
+      {
+        "sizes": [
+          24,
+          48
+        ],
+        "c_central3": -3.598014457351185,
+        "c_fractional": -3.5971648388022555,
+        "same_parity_slopes": {
+          "0": {
+            "S_central3": -3.598014052454898,
+            "S_fractional": -3.5971833048905246
+          },
+          "1": {
+            "S_central3": -6.042157962691147,
+            "S_fractional": -6.025626126816969
+          }
+        },
+        "sweep_converged": true
+      }
+    ]
+  },
+  {
+    "name": "bridge_r3_u1.5_k4",
+    "states": [
+      {
+        "L": 24,
+        "parity": 0,
+        "seed": 17,
+        "chi": 64,
+        "parity_complete": true,
+        "ground_branch_status": "selected",
+        "energy": -19.43574377485067,
+        "parity_gap": 0.020462568187841867,
+        "S_central3": 0.6631074945583485,
+        "S_fractional": 0.5808460643560293,
+        "density": 0.4424829550024312,
+        "density_range": 0.5932306304595457,
+        "profiles": {
+          "0.25": {
+            "c": -0.5114438017451801,
+            "rms": 0.11196137560786636
+          },
+          "0.375": {
+            "c": 6.35855955390832,
+            "rms": 0.11033235672080251
+          }
+        },
+        "convergence": {
+          "local_residual": 9.964499465256258e-11,
+          "discarded_weight": 2.9262814393860026e-11,
+          "delta_E": 5.435651928564766e-13,
+          "delta_S": 6.111887662640925e-10,
+          "canonical_vs_sweep_S": -1.0373406134078778e-08,
+          "sweep_converged": true,
+          "bond_dimension_converged": "not established by a completed schedule alone"
+        },
+        "chi_entropy_step": 2.0240138530303042e-05,
+        "preceding_chi_sweep_converged": true,
+        "best_available_same_seed_chi_check": {
+          "seed": 17,
+          "chi_from": 32,
+          "chi_to": 64,
+          "absolute_entropy_step": 2.0240138530303042e-05
+        },
+        "correlations_at_L_over_2": {
+          "X": 0.0019503240465150542,
+          "Y": 0.0019503240465150542,
+          "Z": 0.04378452569971982
+        },
+        "sector_states": [
+          {
+            "parity": 0,
+            "energy": -19.43574377485067,
+            "S_fractional": 0.5808460643560293,
+            "S_central3": 0.6631074945583485,
+            "sweep_converged": true
+          },
+          {
+            "parity": 1,
+            "energy": -19.41528120666283,
+            "S_fractional": 0.5776401904409246,
+            "S_central3": 0.5561234378685725,
+            "sweep_converged": true
+          }
+        ]
+      },
+      {
+        "L": 48,
+        "parity": 0,
+        "seed": 17,
+        "chi": 96,
+        "parity_complete": true,
+        "ground_branch_status": "selected",
+        "energy": -38.54757532336377,
+        "parity_gap": 0.004703897502366772,
+        "S_central3": 0.7415150574283351,
+        "S_fractional": 0.6850821926728194,
+        "density": 0.4163809353427153,
+        "density_range": 0.49470256748995156,
+        "profiles": {
+          "0.25": {
+            "c": 1.7389172270338604,
+            "rms": 0.09098295505932265
+          },
+          "0.375": {
+            "c": -5.193965449496432,
+            "rms": 0.09263490130604973
+          }
+        },
+        "convergence": {
+          "local_residual": 9.921818622029137e-11,
+          "discarded_weight": 5.269074065950008e-11,
+          "delta_E": 2.0744295170516125e-11,
+          "delta_S": 2.4591822800346108e-08,
+          "canonical_vs_sweep_S": -2.106766283649364e-08,
+          "sweep_converged": true,
+          "bond_dimension_converged": "not established by a completed schedule alone"
+        },
+        "chi_entropy_step": 0.0005867909947362415,
+        "preceding_chi_sweep_converged": true,
+        "best_available_same_seed_chi_check": {
+          "seed": 17,
+          "chi_from": 32,
+          "chi_to": 96,
+          "absolute_entropy_step": 0.0005867909947362415
+        },
+        "correlations_at_L_over_2": {
+          "X": 0.00013699917455276385,
+          "Y": 0.00013699917455276377,
+          "Z": 0.02971357098619484
+        },
+        "sector_states": [
+          {
+            "parity": 0,
+            "energy": -38.54757532336377,
+            "S_fractional": 0.6850821926728194,
+            "S_central3": 0.7415150574283351,
+            "sweep_converged": true
+          },
+          {
+            "parity": 1,
+            "energy": -38.54287142586141,
+            "S_fractional": 0.6882649479824242,
+            "S_central3": 0.6673700905348688,
+            "sweep_converged": true
+          }
+        ]
+      }
+    ],
+    "pairs": [
+      {
+        "sizes": [
+          24,
+          48
+        ],
+        "c_central3": 0.678709212724316,
+        "c_fractional": 0.9022856724245932,
+        "same_parity_slopes": {
+          "0": {
+            "S_central3": 0.678709212724316,
+            "S_fractional": 0.9022856724245932
+          },
+          "1": {
+            "S_central3": 0.9629699647029759,
+            "S_fractional": 0.9575867346279925
+          }
+        },
+        "sweep_converged": true
+      }
+    ]
+  },
+  {
+    "name": "bridge_r3_u1_k4",
+    "states": [
+      {
+        "L": 24,
+        "parity": 0,
+        "seed": 17,
+        "chi": 64,
+        "parity_complete": true,
+        "ground_branch_status": "selected",
+        "energy": -18.941039698145026,
+        "parity_gap": 4.948024837858611e-06,
+        "S_central3": 0.8661218680202197,
+        "S_fractional": 0.8470197568388991,
+        "density": 0.24791866349091105,
+        "density_range": 0.047435910809183524,
+        "profiles": {
+          "0.25": {
+            "c": 1.961401056013294,
+            "rms": 0.017693886614538225
+          },
+          "0.375": {
+            "c": 3.7214667209006236,
+            "rms": 0.007475516987411824
+          }
+        },
+        "convergence": {
+          "local_residual": 9.752482158034243e-11,
+          "discarded_weight": 9.55779899669551e-11,
+          "delta_E": 3.247180302423658e-12,
+          "delta_S": 3.4349033617431246e-09,
+          "canonical_vs_sweep_S": -2.4969335821189986e-08,
+          "sweep_converged": true,
+          "bond_dimension_converged": "not established by a completed schedule alone"
+        },
+        "chi_entropy_step": 6.598257262024898e-05,
+        "preceding_chi_sweep_converged": true,
+        "best_available_same_seed_chi_check": {
+          "seed": 17,
+          "chi_from": 32,
+          "chi_to": 64,
+          "absolute_entropy_step": 6.598257262024898e-05
+        },
+        "correlations_at_L_over_2": {
+          "X": 0.3938611873396006,
+          "Y": 0.39386118733960074,
+          "Z": -0.004657976100153893
+        },
+        "sector_states": [
+          {
+            "parity": 0,
+            "energy": -18.941039698145026,
+            "S_fractional": 0.8470197568388991,
+            "S_central3": 0.8661218680202197,
+            "sweep_converged": true
+          },
+          {
+            "parity": 1,
+            "energy": -18.94103475012019,
+            "S_fractional": 0.8457479465735495,
+            "S_central3": 0.86478075129077,
+            "sweep_converged": true
+          }
+        ]
+      },
+      {
+        "L": 48,
+        "parity": 0,
+        "seed": 17,
+        "chi": 96,
+        "parity_complete": true,
+        "ground_branch_status": "selected",
+        "energy": -37.54805265196934,
+        "parity_gap": 2.1970807786431124e-05,
+        "S_central3": 1.6537212747542818,
+        "S_fractional": 1.6403951367530947,
+        "density": 0.27063932279282304,
+        "density_range": 0.19665240870283907,
+        "profiles": {
+          "0.25": {
+            "c": 10.452736453228285,
+            "rms": 0.022281014181325765
+          },
+          "0.375": {
+            "c": 5.778970327472855,
+            "rms": 0.01045112973671163
+          }
+        },
+        "convergence": {
+          "local_residual": 9.990067835886929e-11,
+          "discarded_weight": 3.467406972657017e-08,
+          "delta_E": 2.1365096358749724e-09,
+          "delta_S": 0.00012983492045637313,
+          "canonical_vs_sweep_S": -2.8525496353681845e-05,
+          "sweep_converged": true,
+          "bond_dimension_converged": "not established by a completed schedule alone"
+        },
+        "chi_entropy_step": 0.5196915682340157,
+        "preceding_chi_sweep_converged": false,
+        "best_available_same_seed_chi_check": null,
+        "correlations_at_L_over_2": {
+          "X": -0.21129293302091615,
+          "Y": -0.21129293302091617,
+          "Z": 0.004620664490109699
+        },
+        "sector_states": [
+          {
+            "parity": 0,
+            "energy": -37.54805265196934,
+            "S_fractional": 1.6403951367530947,
+            "S_central3": 1.6537212747542818,
+            "sweep_converged": true
+          },
+          {
+            "parity": 1,
+            "energy": -37.548030681161556,
+            "S_fractional": 1.7165950534962382,
+            "S_central3": 1.7382415351063294,
+            "sweep_converged": true
+          }
+        ]
+      }
+    ],
+    "pairs": [
+      {
+        "sizes": [
+          24,
+          48
+        ],
+        "c_central3": 6.8175945498139265,
+        "c_fractional": 6.867592356993645,
+        "same_parity_slopes": {
+          "0": {
+            "S_central3": 6.8175945498139265,
+            "S_fractional": 6.867592356993645
+          },
+          "1": {
+            "S_central3": 7.560825247330167,
+            "S_fractional": 7.538200815179184
+          }
+        },
+        "sweep_converged": true
+      }
+    ]
+  },
+  {
+    "name": "bridge_r4_u1_k4",
+    "states": [
+      {
+        "L": 24,
+        "parity": 0,
+        "seed": 17,
+        "chi": 64,
+        "parity_complete": true,
+        "ground_branch_status": "selected",
+        "energy": -25.02562147109122,
+        "parity_gap": 0.0017677322629658931,
+        "S_central3": 1.1913154085211468,
+        "S_fractional": 1.1438084064335208,
+        "density": 0.33440035508901905,
+        "density_range": 0.4739308881506841,
+        "profiles": {
+          "0.25": {
+            "c": 4.846589327536808,
+            "rms": 0.04425440562292688
+          },
+          "0.375": {
+            "c": 5.809495509043273,
+            "rms": 0.04560467865094692
+          }
+        },
+        "convergence": {
+          "local_residual": 9.912114339850255e-11,
+          "discarded_weight": 1.2436576213303852e-09,
+          "delta_E": 4.82227591191986e-11,
+          "delta_S": 8.16493805899654e-09,
+          "canonical_vs_sweep_S": -5.119806187892095e-07,
+          "sweep_converged": true,
+          "bond_dimension_converged": "not established by a completed schedule alone"
+        },
+        "chi_entropy_step": 0.0007970148436688973,
+        "preceding_chi_sweep_converged": true,
+        "best_available_same_seed_chi_check": {
+          "seed": 17,
+          "chi_from": 32,
+          "chi_to": 64,
+          "absolute_entropy_step": 0.0007970148436688973
+        },
+        "correlations_at_L_over_2": {
+          "X": -0.13775307228801872,
+          "Y": -0.1377530722880187,
+          "Z": 0.0167370082581082
+        },
+        "sector_states": [
+          {
+            "parity": 0,
+            "energy": -25.02562147109122,
+            "S_fractional": 1.1438084064335208,
+            "S_central3": 1.1913154085211468,
+            "sweep_converged": true
+          },
+          {
+            "parity": 1,
+            "energy": -25.023853738828254,
+            "S_fractional": 1.0580607258419616,
+            "S_central3": 1.0852387185196886,
+            "sweep_converged": true
+          }
+        ]
+      },
+      {
+        "L": 48,
+        "parity": 1,
+        "seed": 23,
+        "chi": 192,
+        "parity_complete": true,
+        "ground_branch_status": "selected",
+        "energy": -49.344148157931656,
+        "parity_gap": -0.0003885870419040316,
+        "S_central3": 1.5124857792883717,
+        "S_fractional": 1.4931792489108149,
+        "density": 0.30129581796790517,
+        "density_range": 0.3508678334337657,
+        "profiles": {
+          "0.25": {
+            "c": 3.4395531721691905,
+            "rms": 0.03198194139193207
+          },
+          "0.375": {
+            "c": 6.124551880643123,
+            "rms": 0.020248507526467417
+          }
+        },
+        "convergence": {
+          "local_residual": 9.978817952162492e-11,
+          "discarded_weight": 1.3752081695628249e-09,
+          "delta_E": 4.815383647382987e-10,
+          "delta_S": 0.0005000125833065638,
+          "canonical_vs_sweep_S": -1.2979205969987362e-06,
+          "sweep_converged": true,
+          "bond_dimension_converged": "not established by a completed schedule alone"
+        },
+        "chi_entropy_step": 0.08989432804133046,
+        "preceding_chi_sweep_converged": false,
+        "best_available_same_seed_chi_check": {
+          "seed": 17,
+          "chi_from": 96,
+          "chi_to": 192,
+          "absolute_entropy_step": 0.001810020135384116
+        },
+        "correlations_at_L_over_2": {
+          "X": -0.09638489323303187,
+          "Y": -0.09638489323303187,
+          "Z": 0.005929427396798012
+        },
+        "sector_states": [
+          {
+            "parity": 0,
+            "energy": -49.34375957088975,
+            "S_fractional": 1.5127288059054615,
+            "S_central3": 1.5307131439621695,
+            "sweep_converged": true
+          },
+          {
+            "parity": 1,
+            "energy": -49.344148157931656,
+            "S_fractional": 1.4931792489108149,
+            "S_central3": 1.5124857792883717,
+            "sweep_converged": true
+          }
+        ]
+      },
+      {
+        "L": 96,
+        "parity": 0,
+        "seed": 17,
+        "chi": 192,
+        "parity_complete": true,
+        "ground_branch_status": "selected",
+        "energy": -97.9832902257711,
+        "parity_gap": 0.00019234354267894105,
+        "S_central3": 1.825155613792185,
+        "S_fractional": 1.8031777345955196,
+        "density": 0.2963557853535001,
+        "density_range": 0.30175127622673076,
+        "profiles": {
+          "0.25": {
+            "c": 2.652064586934409,
+            "rms": 0.023196685226399654
+          },
+          "0.375": {
+            "c": 2.094871771597619,
+            "rms": 0.02346866982269517
+          }
+        },
+        "convergence": {
+          "local_residual": 9.996626303710332e-11,
+          "discarded_weight": 4.5858760011618926e-08,
+          "delta_E": 6.2673279899172485e-09,
+          "delta_S": 3.625020613196028e-05,
+          "canonical_vs_sweep_S": -4.361191710655632e-05,
+          "sweep_converged": true,
+          "bond_dimension_converged": "not established by a completed schedule alone"
+        },
+        "chi_entropy_step": 0.33287793430369383,
+        "preceding_chi_sweep_converged": false,
+        "best_available_same_seed_chi_check": null,
+        "correlations_at_L_over_2": {
+          "X": -0.13407595956314788,
+          "Y": -0.13407595956314788,
+          "Z": 0.008998262728612608
+        },
+        "sector_states": [
+          {
+            "parity": 0,
+            "energy": -97.9832902257711,
+            "S_fractional": 1.8031777345955196,
+            "S_central3": 1.825155613792185,
+            "sweep_converged": true
+          },
+          {
+            "parity": 1,
+            "energy": -97.98309788222842,
+            "S_fractional": 1.8392183677425045,
+            "S_central3": 1.8459722935734533,
+            "sweep_converged": true
+          }
+        ]
+      }
+    ],
+    "pairs": [
+      {
+        "sizes": [
+          24,
+          48
+        ],
+        "c_central3": 2.7801054071180706,
+        "c_fractional": 3.024213491239149,
+        "same_parity_slopes": {
+          "0": {
+            "S_central3": 2.937884578858247,
+            "S_fractional": 3.193437784805666
+          },
+          "1": {
+            "S_central3": 3.6983232948321887,
+            "S_fractional": 3.7664600125821877
+          }
+        },
+        "sweep_converged": true
+      },
+      {
+        "sizes": [
+          48,
+          96
+        ],
+        "c_central3": 2.706523318045346,
+        "c_fractional": 2.6833996678824708,
+        "same_parity_slopes": {
+          "0": {
+            "S_central3": 2.548744146305169,
+            "S_fractional": 2.514175374315953
+          },
+          "1": {
+            "S_central3": 2.8867160421746023,
+            "S_fractional": 2.995373524152392
+          }
+        },
+        "sweep_converged": true
+      }
+    ]
+  },
+  {
+    "name": "control_two_xx",
+    "states": [
+      {
+        "L": 24,
+        "parity": 0,
+        "seed": 17,
+        "chi": 192,
+        "parity_complete": true,
+        "ground_branch_status": "selected",
+        "energy": -14.592459577699396,
+        "parity_gap": null,
+        "S_central3": 1.3892353768489103,
+        "S_fractional": 1.4425888008860275,
+        "density": 0.5000000000358361,
+        "density_range": 5.017936510753884e-09,
+        "profiles": {
+          "0.25": {
+            "c": -0.24329627575918494,
+            "rms": 0.09144470838301115
+          },
+          "0.375": {
+            "c": -1.4147735341072496,
+            "rms": 0.07649441317040681
+          }
+        },
+        "convergence": {
+          "local_residual": 8.930542232832668e-11,
+          "discarded_weight": 6.529945473232601e-10,
+          "delta_E": 8.780194349355952e-10,
+          "delta_S": 2.648515706749066e-07,
+          "canonical_vs_sweep_S": -3.050538643911693e-08,
+          "sweep_converged": true,
+          "bond_dimension_converged": "not established by a completed schedule alone"
+        },
+        "chi_entropy_step": 0.0009775967043386125,
+        "preceding_chi_sweep_converged": false,
+        "best_available_same_seed_chi_check": null,
+        "correlations_at_L_over_2": {
+          "X": 0.21925884236862217,
+          "Y": 0.2192595152221588,
+          "Z": -1.410991995197328e-06
+        },
+        "sector_states": [
+          {
+            "parity": 0,
+            "energy": -14.592459577699396,
+            "S_fractional": 1.4425888008860275,
+            "S_central3": 1.3892353768489103,
+            "sweep_converged": true
+          }
+        ]
+      },
+      {
+        "L": 48,
+        "parity": 0,
+        "seed": 17,
+        "chi": 192,
+        "parity_complete": true,
+        "ground_branch_status": "selected",
+        "energy": -29.85193252007898,
+        "parity_gap": null,
+        "S_central3": 1.6268423776050451,
+        "S_fractional": 1.640235027360898,
+        "density": 0.49999998865126266,
+        "density_range": 3.748841743700382e-07,
+        "profiles": {
+          "0.25": {
+            "c": 2.3559301227760994,
+            "rms": 0.05024805800432607
+          },
+          "0.375": {
+            "c": -1.4108177910458148,
+            "rms": 0.04481455136518853
+          }
+        },
+        "convergence": {
+          "local_residual": 9.97854339455003e-11,
+          "discarded_weight": 6.569166988157349e-08,
+          "delta_E": 2.6352040549681988e-09,
+          "delta_S": 1.0356984292414495e-07,
+          "canonical_vs_sweep_S": -1.191569321212782e-06,
+          "sweep_converged": true,
+          "bond_dimension_converged": "not established by a completed schedule alone"
+        },
+        "chi_entropy_step": 0.003158666017741396,
+        "preceding_chi_sweep_converged": false,
+        "best_available_same_seed_chi_check": null,
+        "correlations_at_L_over_2": {
+          "X": 0.1510330634879664,
+          "Y": 0.15102852988067653,
+          "Z": -1.248488218749295e-05
+        },
+        "sector_states": [
+          {
+            "parity": 0,
+            "energy": -29.85193252007898,
+            "S_fractional": 1.640235027360898,
+            "S_central3": 1.6268423776050451,
+            "sweep_converged": true
+          }
+        ]
+      }
+    ],
+    "pairs": [
+      {
+        "sizes": [
+          24,
+          48
+        ],
+        "c_central3": 2.0567666500282558,
+        "c_fractional": 1.710859384714277,
+        "same_parity_slopes": {
+          "0": {
+            "S_central3": 2.0567666500282558,
+            "S_fractional": 1.710859384714277
+          }
+        },
+        "sweep_converged": true
+      }
+    ]
+  },
+  {
+    "name": "control_xx",
+    "states": [
+      {
+        "L": 24,
+        "parity": 0,
+        "seed": 17,
+        "chi": 64,
+        "parity_complete": true,
+        "ground_branch_status": "selected",
+        "energy": -14.925971109896128,
+        "parity_gap": null,
+        "S_central3": 0.8340408386246946,
+        "S_fractional": 0.8202248646333007,
+        "density": 0.5000000000000548,
+        "density_range": 5.052069873556775e-12,
+        "profiles": {
+          "0.25": {
+            "c": 1.3199202356282664,
+            "rms": 0.03448557726503932
+          },
+          "0.375": {
+            "c": -1.3084048716947314,
+            "rms": 0.029875353365043975
+          }
+        },
+        "convergence": {
+          "local_residual": 9.985516078676907e-11,
+          "discarded_weight": 4.545253062815391e-13,
+          "delta_E": 7.105427357601002e-15,
+          "delta_S": 2.184918912462308e-13,
+          "canonical_vs_sweep_S": -3.386957381223965e-11,
+          "sweep_converged": true,
+          "bond_dimension_converged": "not established by a completed schedule alone"
+        },
+        "chi_entropy_step": 1.1486871733801252e-06,
+        "preceding_chi_sweep_converged": true,
+        "best_available_same_seed_chi_check": {
+          "seed": 17,
+          "chi_from": 32,
+          "chi_to": 64,
+          "absolute_entropy_step": 1.1486871733801252e-06
+        },
+        "correlations_at_L_over_2": {
+          "X": 0.1510882392643033,
+          "Y": 0.15108823129614196,
+          "Z": -6.407159669626186e-08
+        },
+        "sector_states": [
+          {
+            "parity": 0,
+            "energy": -14.925971109896128,
+            "S_fractional": 0.8202248646333007,
+            "S_central3": 0.8340408386246946,
+            "sweep_converged": true
+          }
+        ]
+      },
+      {
+        "L": 48,
+        "parity": 0,
+        "seed": 17,
+        "chi": 96,
+        "parity_complete": true,
+        "ground_branch_status": "selected",
+        "energy": -30.19971233112848,
+        "parity_gap": null,
+        "S_central3": 0.9415571215874964,
+        "S_fractional": 0.9321740522830932,
+        "density": 0.4999999999992706,
+        "density_range": 5.880629316834529e-12,
+        "profiles": {
+          "0.25": {
+            "c": 1.0714221907054324,
+            "rms": 0.018004214850463517
+          },
+          "0.375": {
+            "c": 1.6311369848578474,
+            "rms": 0.01615568298389746
+          }
+        },
+        "convergence": {
+          "local_residual": 9.883487333454356e-11,
+          "discarded_weight": 2.7493562981817377e-12,
+          "delta_E": 9.592326932761353e-14,
+          "delta_S": 2.12700967949786e-10,
+          "canonical_vs_sweep_S": -1.779426606063339e-10,
+          "sweep_converged": true,
+          "bond_dimension_converged": "not established by a completed schedule alone"
+        },
+        "chi_entropy_step": 0.00012938878801760367,
+        "preceding_chi_sweep_converged": true,
+        "best_available_same_seed_chi_check": {
+          "seed": 17,
+          "chi_from": 32,
+          "chi_to": 96,
+          "absolute_entropy_step": 0.00012938878801760367
+        },
+        "correlations_at_L_over_2": {
+          "X": 0.10683333160669778,
+          "Y": 0.10683332820066668,
+          "Z": -2.070303962873717e-08
+        },
+        "sector_states": [
+          {
+            "parity": 0,
+            "energy": -30.19971233112848,
+            "S_fractional": 0.9321740522830932,
+            "S_central3": 0.9415571215874964,
+            "sweep_converged": true
+          }
+        ]
+      }
+    ],
+    "pairs": [
+      {
+        "sizes": [
+          24,
+          48
+        ],
+        "c_central3": 0.9306792494714923,
+        "c_fractional": 0.9690512271234224,
+        "same_parity_slopes": {
+          "0": {
+            "S_central3": 0.9306792494714923,
+            "S_fractional": 0.9690512271234224
+          }
+        },
+        "sweep_converged": true
+      }
+    ]
+  },
+  {
+    "name": "reference_peotta_exploratory",
+    "states": [
+      {
+        "L": 24,
+        "parity": 0,
+        "seed": 17,
+        "chi": 64,
+        "parity_complete": true,
+        "ground_branch_status": "selected",
+        "energy": -19.071656638346553,
+        "parity_gap": 0.12475994552231029,
+        "S_central3": 0.809959852012078,
+        "S_fractional": 0.7915237943187567,
+        "density": 0.5000000000000123,
+        "density_range": 6.106226635438361e-15,
+        "profiles": {
+          "0.25": {
+            "c": 1.462634410480002,
+            "rms": 0.04904486633099492
+          },
+          "0.375": {
+            "c": -2.279061476918704,
+            "rms": 0.043066267703622506
+          }
+        },
+        "convergence": {
+          "local_residual": 9.74271841299532e-11,
+          "discarded_weight": 7.08988423525625e-13,
+          "delta_E": 1.1546319456101628e-14,
+          "delta_S": 2.23487894857044e-13,
+          "canonical_vs_sweep_S": -8.610312463019909e-11,
+          "sweep_converged": true,
+          "bond_dimension_converged": "not established by a completed schedule alone"
+        },
+        "chi_entropy_step": 1.0328004433901583e-06,
+        "preceding_chi_sweep_converged": true,
+        "best_available_same_seed_chi_check": {
+          "seed": 17,
+          "chi_from": 32,
+          "chi_to": 64,
+          "absolute_entropy_step": 1.0328004433901583e-06
+        },
+        "correlations_at_L_over_2": {
+          "X": 0.1555178153429166,
+          "Y": 0.0017741423901671922,
+          "Z": 0.08928841769835684
+        },
+        "sector_states": [
+          {
+            "parity": 0,
+            "energy": -19.071656638346553,
+            "S_fractional": 0.7915237943187567,
+            "S_central3": 0.809959852012078,
+            "sweep_converged": true
+          },
+          {
+            "parity": 1,
+            "energy": -18.946896692824243,
+            "S_fractional": 1.082321109896547,
+            "S_central3": 1.086035344397975,
+            "sweep_converged": true
+          }
+        ]
+      },
+      {
+        "L": 48,
+        "parity": 0,
+        "seed": 17,
+        "chi": 96,
+        "parity_complete": true,
+        "ground_branch_status": "selected",
+        "energy": -38.55334685885407,
+        "parity_gap": 0.056776280015739644,
+        "S_central3": 0.9202103237243242,
+        "S_fractional": 0.9078030505476105,
+        "density": 0.500000000000049,
+        "density_range": 4.518607710224387e-14,
+        "profiles": {
+          "0.25": {
+            "c": 1.1493072160360307,
+            "rms": 0.02743868552373401
+          },
+          "0.375": {
+            "c": 2.0127063935839216,
+            "rms": 0.024887851255420063
+          }
+        },
+        "convergence": {
+          "local_residual": 9.911316920008299e-11,
+          "discarded_weight": 3.3348879213690452e-12,
+          "delta_E": 9.947598300641403e-14,
+          "delta_S": 4.851496981927994e-10,
+          "canonical_vs_sweep_S": -3.417076621659021e-10,
+          "sweep_converged": true,
+          "bond_dimension_converged": "not established by a completed schedule alone"
+        },
+        "chi_entropy_step": 0.00010630859717397634,
+        "preceding_chi_sweep_converged": true,
+        "best_available_same_seed_chi_check": {
+          "seed": 17,
+          "chi_from": 32,
+          "chi_to": 96,
+          "absolute_entropy_step": 0.00010630859717397634
+        },
+        "correlations_at_L_over_2": {
+          "X": 0.127583263345926,
+          "Y": 0.0006424208285530596,
+          "Z": 0.04460410533285661
+        },
+        "sector_states": [
+          {
+            "parity": 0,
+            "energy": -38.55334685885407,
+            "S_fractional": 0.9078030505476105,
+            "S_central3": 0.9202103237243242,
+            "sweep_converged": true
+          },
+          {
+            "parity": 1,
+            "energy": -38.49657057883833,
+            "S_fractional": 1.172297351418569,
+            "S_central3": 1.1820387709494145,
+            "sweep_converged": true
+          }
+        ]
+      },
+      {
+        "L": 96,
+        "parity": 0,
+        "seed": 17,
+        "chi": 128,
+        "parity_complete": true,
+        "ground_branch_status": "selected",
+        "energy": -77.52708713112727,
+        "parity_gap": 0.021688385737220983,
+        "S_central3": 1.0474405137136904,
+        "S_fractional": 1.0387246111976067,
+        "density": 0.5000000000003524,
+        "density_range": 7.793765632868599e-14,
+        "profiles": {
+          "0.25": {
+            "c": 1.1300308148145661,
+            "rms": 0.01367242292304009
+          },
+          "0.375": {
+            "c": 1.3698440354995232,
+            "rms": 0.01233802741132039
+          }
+        },
+        "convergence": {
+          "local_residual": 9.974537002006e-11,
+          "discarded_weight": 1.642974645221784e-11,
+          "delta_E": 2.19912976717751e-12,
+          "delta_S": 9.685363533407099e-08,
+          "canonical_vs_sweep_S": -3.1186144777706204e-09,
+          "sweep_converged": true,
+          "bond_dimension_converged": "not established by a completed schedule alone"
+        },
+        "chi_entropy_step": 0.0021526438583128193,
+        "preceding_chi_sweep_converged": true,
+        "best_available_same_seed_chi_check": {
+          "seed": 17,
+          "chi_from": 32,
+          "chi_to": 128,
+          "absolute_entropy_step": 0.0021526438583128193
+        },
+        "correlations_at_L_over_2": {
+          "X": 0.12189185256090143,
+          "Y": 0.00020350023326082142,
+          "Z": 0.017486500991088075
+        },
+        "sector_states": [
+          {
+            "parity": 0,
+            "energy": -77.52708713112727,
+            "S_fractional": 1.0387246111976067,
+            "S_central3": 1.0474405137136904,
+            "sweep_converged": true
+          },
+          {
+            "parity": 1,
+            "energy": -77.50539874539005,
+            "S_fractional": 1.2461827240376688,
+            "S_central3": 1.2568888496248887,
+            "sweep_converged": true
+          }
+        ]
+      }
+    ],
+    "pairs": [
+      {
+        "sizes": [
+          24,
+          48
+        ],
+        "c_central3": 0.9543468527695594,
+        "c_fractional": 1.0065330379177462,
+        "same_parity_slopes": {
+          "0": {
+            "S_central3": 0.9543468527695594,
+            "S_fractional": 1.0065330379177462
+          },
+          "1": {
+            "S_central3": 0.8310220043646563,
+            "S_fractional": 0.7788496646498927
+          }
+        },
+        "sweep_converged": true
+      },
+      {
+        "sizes": [
+          48,
+          96
+        ],
+        "c_central3": 1.1013261848941156,
+        "c_fractional": 1.1332793177711598,
+        "same_parity_slopes": {
+          "0": {
+            "S_central3": 1.1013261848941156,
+            "S_fractional": 1.1332793177711598
+          },
+          "1": {
+            "S_central3": 0.6479150238915324,
+            "S_fractional": 0.6395643640308507
+          }
+        },
+        "sweep_converged": true
+      }
+    ]
+  }
+]

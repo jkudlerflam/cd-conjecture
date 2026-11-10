@@ -1,0 +1,2126 @@
+{
+  "sizes": [
+    10,
+    12
+  ],
+  "sectors": [
+    0,
+    1
+  ],
+  "periodic": true,
+  "k": 2,
+  "tol": 1e-11,
+  "points": [
+    {
+      "name": "control_xx",
+      "couplings": {
+        "Jx": -0.5,
+        "Jy": -0.5,
+        "Jz": 0,
+        "Dz": 0,
+        "hz": 0
+      }
+    },
+    {
+      "name": "control_ising_critical",
+      "couplings": {
+        "Jx": -1,
+        "Jy": 0,
+        "Jz": 0,
+        "Dz": 0,
+        "hz": -1
+      }
+    },
+    {
+      "name": "control_ising_gapped",
+      "couplings": {
+        "Jx": -1,
+        "Jy": 0,
+        "Jz": 0,
+        "Dz": 0,
+        "hz": -2
+      }
+    },
+    {
+      "name": "control_two_xx",
+      "distance": 2,
+      "couplings": {
+        "Jx": -0.5,
+        "Jy": -0.5,
+        "Jz": 0,
+        "Dz": 0,
+        "hz": 0
+      }
+    },
+    {
+      "name": "reference_r40",
+      "couplings": {
+        "Jx": 0.5,
+        "Jy": -0.5,
+        "Jz": 10,
+        "Dz": 0.00625,
+        "hz": -19.9760472506
+      }
+    },
+    {
+      "name": "attractive_Jz-0.25",
+      "couplings": {
+        "Jx": 0.5,
+        "Jy": -0.25,
+        "Jz": -0.25,
+        "Dz": 0.5,
+        "hz": 0
+      }
+    },
+    {
+      "name": "attractive_Jz-0.375",
+      "couplings": {
+        "Jx": 0.5,
+        "Jy": -0.25,
+        "Jz": -0.375,
+        "Dz": 0.5,
+        "hz": 0
+      }
+    },
+    {
+      "name": "attractive_Jz-0.5",
+      "couplings": {
+        "Jx": 0.5,
+        "Jy": -0.25,
+        "Jz": -0.5,
+        "Dz": 0.5,
+        "hz": 0
+      }
+    },
+    {
+      "name": "attractive_Jz-0.625",
+      "couplings": {
+        "Jx": 0.5,
+        "Jy": -0.25,
+        "Jz": -0.625,
+        "Dz": 0.5,
+        "hz": 0
+      }
+    },
+    {
+      "name": "attractive_Jz-0.75",
+      "couplings": {
+        "Jx": 0.5,
+        "Jy": -0.25,
+        "Jz": -0.75,
+        "Dz": 0.5,
+        "hz": 0
+      }
+    },
+    {
+      "name": "attractive_Jz-0.875",
+      "couplings": {
+        "Jx": 0.5,
+        "Jy": -0.25,
+        "Jz": -0.875,
+        "Dz": 0.5,
+        "hz": 0
+      }
+    },
+    {
+      "name": "attractive_Jz-1",
+      "couplings": {
+        "Jx": 0.5,
+        "Jy": -0.25,
+        "Jz": -1,
+        "Dz": 0.5,
+        "hz": 0
+      }
+    },
+    {
+      "name": "reference_peotta_exploratory",
+      "couplings": {
+        "Jx": 0.6201511529340699,
+        "Jy": -0.0798488470659301,
+        "Jz": -0.6,
+        "Dz": 0.42073549240394825,
+        "hz": 0
+      }
+    },
+    {
+      "name": "bridge_r1_u1_k0",
+      "couplings": {
+        "Jx": 0.5,
+        "Jy": -0.5,
+        "Jz": 0.25,
+        "Dz": 0.25,
+        "hz": -0.5
+      },
+      "parameters": {
+        "r": 1,
+        "u": 1,
+        "k": 0
+      }
+    },
+    {
+      "name": "bridge_r1_u1_k1",
+      "couplings": {
+        "Jx": 0.5,
+        "Jy": -0.5,
+        "Jz": 0.25,
+        "Dz": 0.25,
+        "hz": -0.25
+      },
+      "parameters": {
+        "r": 1,
+        "u": 1,
+        "k": 1
+      }
+    },
+    {
+      "name": "bridge_r1_u1_k2",
+      "couplings": {
+        "Jx": 0.5,
+        "Jy": -0.5,
+        "Jz": 0.25,
+        "Dz": 0.25,
+        "hz": 0.0
+      },
+      "parameters": {
+        "r": 1,
+        "u": 1,
+        "k": 2
+      }
+    },
+    {
+      "name": "bridge_r1_u1.5_k0",
+      "couplings": {
+        "Jx": 0.5,
+        "Jy": -0.5,
+        "Jz": 0.25,
+        "Dz": 0.375,
+        "hz": -0.5
+      },
+      "parameters": {
+        "r": 1,
+        "u": 1.5,
+        "k": 0
+      }
+    },
+    {
+      "name": "bridge_r1_u1.5_k1",
+      "couplings": {
+        "Jx": 0.5,
+        "Jy": -0.5,
+        "Jz": 0.25,
+        "Dz": 0.375,
+        "hz": -0.25
+      },
+      "parameters": {
+        "r": 1,
+        "u": 1.5,
+        "k": 1
+      }
+    },
+    {
+      "name": "bridge_r1_u1.5_k2",
+      "couplings": {
+        "Jx": 0.5,
+        "Jy": -0.5,
+        "Jz": 0.25,
+        "Dz": 0.375,
+        "hz": 0.0
+      },
+      "parameters": {
+        "r": 1,
+        "u": 1.5,
+        "k": 2
+      }
+    },
+    {
+      "name": "bridge_r1_u2_k0",
+      "couplings": {
+        "Jx": 0.5,
+        "Jy": -0.5,
+        "Jz": 0.25,
+        "Dz": 0.5,
+        "hz": -0.5
+      },
+      "parameters": {
+        "r": 1,
+        "u": 2,
+        "k": 0
+      }
+    },
+    {
+      "name": "bridge_r1_u2_k1",
+      "couplings": {
+        "Jx": 0.5,
+        "Jy": -0.5,
+        "Jz": 0.25,
+        "Dz": 0.5,
+        "hz": -0.25
+      },
+      "parameters": {
+        "r": 1,
+        "u": 2,
+        "k": 1
+      }
+    },
+    {
+      "name": "bridge_r1_u2_k2",
+      "couplings": {
+        "Jx": 0.5,
+        "Jy": -0.5,
+        "Jz": 0.25,
+        "Dz": 0.5,
+        "hz": 0.0
+      },
+      "parameters": {
+        "r": 1,
+        "u": 2,
+        "k": 2
+      }
+    },
+    {
+      "name": "bridge_r1.5_u1_k0",
+      "couplings": {
+        "Jx": 0.5,
+        "Jy": -0.5,
+        "Jz": 0.375,
+        "Dz": 0.16666666666666666,
+        "hz": -0.75
+      },
+      "parameters": {
+        "r": 1.5,
+        "u": 1,
+        "k": 0
+      }
+    },
+    {
+      "name": "bridge_r1.5_u1_k1",
+      "couplings": {
+        "Jx": 0.5,
+        "Jy": -0.5,
+        "Jz": 0.375,
+        "Dz": 0.16666666666666666,
+        "hz": -0.5833333333333334
+      },
+      "parameters": {
+        "r": 1.5,
+        "u": 1,
+        "k": 1
+      }
+    },
+    {
+      "name": "bridge_r1.5_u1_k2",
+      "couplings": {
+        "Jx": 0.5,
+        "Jy": -0.5,
+        "Jz": 0.375,
+        "Dz": 0.16666666666666666,
+        "hz": -0.4166666666666667
+      },
+      "parameters": {
+        "r": 1.5,
+        "u": 1,
+        "k": 2
+      }
+    },
+    {
+      "name": "bridge_r1.5_u1_k3",
+      "couplings": {
+        "Jx": 0.5,
+        "Jy": -0.5,
+        "Jz": 0.375,
+        "Dz": 0.16666666666666666,
+        "hz": -0.25
+      },
+      "parameters": {
+        "r": 1.5,
+        "u": 1,
+        "k": 3
+      }
+    },
+    {
+      "name": "bridge_r1.5_u1_k4",
+      "couplings": {
+        "Jx": 0.5,
+        "Jy": -0.5,
+        "Jz": 0.375,
+        "Dz": 0.16666666666666666,
+        "hz": -0.08333333333333337
+      },
+      "parameters": {
+        "r": 1.5,
+        "u": 1,
+        "k": 4
+      }
+    },
+    {
+      "name": "bridge_r1.5_u1.5_k0",
+      "couplings": {
+        "Jx": 0.5,
+        "Jy": -0.5,
+        "Jz": 0.375,
+        "Dz": 0.25,
+        "hz": -0.75
+      },
+      "parameters": {
+        "r": 1.5,
+        "u": 1.5,
+        "k": 0
+      }
+    },
+    {
+      "name": "bridge_r1.5_u1.5_k1",
+      "couplings": {
+        "Jx": 0.5,
+        "Jy": -0.5,
+        "Jz": 0.375,
+        "Dz": 0.25,
+        "hz": -0.5833333333333334
+      },
+      "parameters": {
+        "r": 1.5,
+        "u": 1.5,
+        "k": 1
+      }
+    },
+    {
+      "name": "bridge_r1.5_u1.5_k2",
+      "couplings": {
+        "Jx": 0.5,
+        "Jy": -0.5,
+        "Jz": 0.375,
+        "Dz": 0.25,
+        "hz": -0.4166666666666667
+      },
+      "parameters": {
+        "r": 1.5,
+        "u": 1.5,
+        "k": 2
+      }
+    },
+    {
+      "name": "bridge_r1.5_u1.5_k3",
+      "couplings": {
+        "Jx": 0.5,
+        "Jy": -0.5,
+        "Jz": 0.375,
+        "Dz": 0.25,
+        "hz": -0.25
+      },
+      "parameters": {
+        "r": 1.5,
+        "u": 1.5,
+        "k": 3
+      }
+    },
+    {
+      "name": "bridge_r1.5_u1.5_k4",
+      "couplings": {
+        "Jx": 0.5,
+        "Jy": -0.5,
+        "Jz": 0.375,
+        "Dz": 0.25,
+        "hz": -0.08333333333333337
+      },
+      "parameters": {
+        "r": 1.5,
+        "u": 1.5,
+        "k": 4
+      }
+    },
+    {
+      "name": "bridge_r1.5_u2_k0",
+      "couplings": {
+        "Jx": 0.5,
+        "Jy": -0.5,
+        "Jz": 0.375,
+        "Dz": 0.3333333333333333,
+        "hz": -0.75
+      },
+      "parameters": {
+        "r": 1.5,
+        "u": 2,
+        "k": 0
+      }
+    },
+    {
+      "name": "bridge_r1.5_u2_k1",
+      "couplings": {
+        "Jx": 0.5,
+        "Jy": -0.5,
+        "Jz": 0.375,
+        "Dz": 0.3333333333333333,
+        "hz": -0.5833333333333334
+      },
+      "parameters": {
+        "r": 1.5,
+        "u": 2,
+        "k": 1
+      }
+    },
+    {
+      "name": "bridge_r1.5_u2_k2",
+      "couplings": {
+        "Jx": 0.5,
+        "Jy": -0.5,
+        "Jz": 0.375,
+        "Dz": 0.3333333333333333,
+        "hz": -0.4166666666666667
+      },
+      "parameters": {
+        "r": 1.5,
+        "u": 2,
+        "k": 2
+      }
+    },
+    {
+      "name": "bridge_r1.5_u2_k3",
+      "couplings": {
+        "Jx": 0.5,
+        "Jy": -0.5,
+        "Jz": 0.375,
+        "Dz": 0.3333333333333333,
+        "hz": -0.25
+      },
+      "parameters": {
+        "r": 1.5,
+        "u": 2,
+        "k": 3
+      }
+    },
+    {
+      "name": "bridge_r1.5_u2_k4",
+      "couplings": {
+        "Jx": 0.5,
+        "Jy": -0.5,
+        "Jz": 0.375,
+        "Dz": 0.3333333333333333,
+        "hz": -0.08333333333333337
+      },
+      "parameters": {
+        "r": 1.5,
+        "u": 2,
+        "k": 4
+      }
+    },
+    {
+      "name": "bridge_r2_u1_k0",
+      "couplings": {
+        "Jx": 0.5,
+        "Jy": -0.5,
+        "Jz": 0.5,
+        "Dz": 0.125,
+        "hz": -1.0
+      },
+      "parameters": {
+        "r": 2,
+        "u": 1,
+        "k": 0
+      }
+    },
+    {
+      "name": "bridge_r2_u1_k1",
+      "couplings": {
+        "Jx": 0.5,
+        "Jy": -0.5,
+        "Jz": 0.5,
+        "Dz": 0.125,
+        "hz": -0.875
+      },
+      "parameters": {
+        "r": 2,
+        "u": 1,
+        "k": 1
+      }
+    },
+    {
+      "name": "bridge_r2_u1_k2",
+      "couplings": {
+        "Jx": 0.5,
+        "Jy": -0.5,
+        "Jz": 0.5,
+        "Dz": 0.125,
+        "hz": -0.75
+      },
+      "parameters": {
+        "r": 2,
+        "u": 1,
+        "k": 2
+      }
+    },
+    {
+      "name": "bridge_r2_u1_k3",
+      "couplings": {
+        "Jx": 0.5,
+        "Jy": -0.5,
+        "Jz": 0.5,
+        "Dz": 0.125,
+        "hz": -0.625
+      },
+      "parameters": {
+        "r": 2,
+        "u": 1,
+        "k": 3
+      }
+    },
+    {
+      "name": "bridge_r2_u1_k4",
+      "couplings": {
+        "Jx": 0.5,
+        "Jy": -0.5,
+        "Jz": 0.5,
+        "Dz": 0.125,
+        "hz": -0.5
+      },
+      "parameters": {
+        "r": 2,
+        "u": 1,
+        "k": 4
+      }
+    },
+    {
+      "name": "bridge_r2_u1_k5",
+      "couplings": {
+        "Jx": 0.5,
+        "Jy": -0.5,
+        "Jz": 0.5,
+        "Dz": 0.125,
+        "hz": -0.375
+      },
+      "parameters": {
+        "r": 2,
+        "u": 1,
+        "k": 5
+      }
+    },
+    {
+      "name": "bridge_r2_u1_k6",
+      "couplings": {
+        "Jx": 0.5,
+        "Jy": -0.5,
+        "Jz": 0.5,
+        "Dz": 0.125,
+        "hz": -0.25
+      },
+      "parameters": {
+        "r": 2,
+        "u": 1,
+        "k": 6
+      }
+    },
+    {
+      "name": "bridge_r2_u1_k7",
+      "couplings": {
+        "Jx": 0.5,
+        "Jy": -0.5,
+        "Jz": 0.5,
+        "Dz": 0.125,
+        "hz": -0.125
+      },
+      "parameters": {
+        "r": 2,
+        "u": 1,
+        "k": 7
+      }
+    },
+    {
+      "name": "bridge_r2_u1_k8",
+      "couplings": {
+        "Jx": 0.5,
+        "Jy": -0.5,
+        "Jz": 0.5,
+        "Dz": 0.125,
+        "hz": 0.0
+      },
+      "parameters": {
+        "r": 2,
+        "u": 1,
+        "k": 8
+      }
+    },
+    {
+      "name": "bridge_r2_u1.5_k0",
+      "couplings": {
+        "Jx": 0.5,
+        "Jy": -0.5,
+        "Jz": 0.5,
+        "Dz": 0.1875,
+        "hz": -1.0
+      },
+      "parameters": {
+        "r": 2,
+        "u": 1.5,
+        "k": 0
+      }
+    },
+    {
+      "name": "bridge_r2_u1.5_k1",
+      "couplings": {
+        "Jx": 0.5,
+        "Jy": -0.5,
+        "Jz": 0.5,
+        "Dz": 0.1875,
+        "hz": -0.875
+      },
+      "parameters": {
+        "r": 2,
+        "u": 1.5,
+        "k": 1
+      }
+    },
+    {
+      "name": "bridge_r2_u1.5_k2",
+      "couplings": {
+        "Jx": 0.5,
+        "Jy": -0.5,
+        "Jz": 0.5,
+        "Dz": 0.1875,
+        "hz": -0.75
+      },
+      "parameters": {
+        "r": 2,
+        "u": 1.5,
+        "k": 2
+      }
+    },
+    {
+      "name": "bridge_r2_u1.5_k3",
+      "couplings": {
+        "Jx": 0.5,
+        "Jy": -0.5,
+        "Jz": 0.5,
+        "Dz": 0.1875,
+        "hz": -0.625
+      },
+      "parameters": {
+        "r": 2,
+        "u": 1.5,
+        "k": 3
+      }
+    },
+    {
+      "name": "bridge_r2_u1.5_k4",
+      "couplings": {
+        "Jx": 0.5,
+        "Jy": -0.5,
+        "Jz": 0.5,
+        "Dz": 0.1875,
+        "hz": -0.5
+      },
+      "parameters": {
+        "r": 2,
+        "u": 1.5,
+        "k": 4
+      }
+    },
+    {
+      "name": "bridge_r2_u1.5_k5",
+      "couplings": {
+        "Jx": 0.5,
+        "Jy": -0.5,
+        "Jz": 0.5,
+        "Dz": 0.1875,
+        "hz": -0.375
+      },
+      "parameters": {
+        "r": 2,
+        "u": 1.5,
+        "k": 5
+      }
+    },
+    {
+      "name": "bridge_r2_u1.5_k6",
+      "couplings": {
+        "Jx": 0.5,
+        "Jy": -0.5,
+        "Jz": 0.5,
+        "Dz": 0.1875,
+        "hz": -0.25
+      },
+      "parameters": {
+        "r": 2,
+        "u": 1.5,
+        "k": 6
+      }
+    },
+    {
+      "name": "bridge_r2_u1.5_k7",
+      "couplings": {
+        "Jx": 0.5,
+        "Jy": -0.5,
+        "Jz": 0.5,
+        "Dz": 0.1875,
+        "hz": -0.125
+      },
+      "parameters": {
+        "r": 2,
+        "u": 1.5,
+        "k": 7
+      }
+    },
+    {
+      "name": "bridge_r2_u1.5_k8",
+      "couplings": {
+        "Jx": 0.5,
+        "Jy": -0.5,
+        "Jz": 0.5,
+        "Dz": 0.1875,
+        "hz": 0.0
+      },
+      "parameters": {
+        "r": 2,
+        "u": 1.5,
+        "k": 8
+      }
+    },
+    {
+      "name": "bridge_r2_u2_k0",
+      "couplings": {
+        "Jx": 0.5,
+        "Jy": -0.5,
+        "Jz": 0.5,
+        "Dz": 0.25,
+        "hz": -1.0
+      },
+      "parameters": {
+        "r": 2,
+        "u": 2,
+        "k": 0
+      }
+    },
+    {
+      "name": "bridge_r2_u2_k1",
+      "couplings": {
+        "Jx": 0.5,
+        "Jy": -0.5,
+        "Jz": 0.5,
+        "Dz": 0.25,
+        "hz": -0.875
+      },
+      "parameters": {
+        "r": 2,
+        "u": 2,
+        "k": 1
+      }
+    },
+    {
+      "name": "bridge_r2_u2_k2",
+      "couplings": {
+        "Jx": 0.5,
+        "Jy": -0.5,
+        "Jz": 0.5,
+        "Dz": 0.25,
+        "hz": -0.75
+      },
+      "parameters": {
+        "r": 2,
+        "u": 2,
+        "k": 2
+      }
+    },
+    {
+      "name": "bridge_r2_u2_k3",
+      "couplings": {
+        "Jx": 0.5,
+        "Jy": -0.5,
+        "Jz": 0.5,
+        "Dz": 0.25,
+        "hz": -0.625
+      },
+      "parameters": {
+        "r": 2,
+        "u": 2,
+        "k": 3
+      }
+    },
+    {
+      "name": "bridge_r2_u2_k4",
+      "couplings": {
+        "Jx": 0.5,
+        "Jy": -0.5,
+        "Jz": 0.5,
+        "Dz": 0.25,
+        "hz": -0.5
+      },
+      "parameters": {
+        "r": 2,
+        "u": 2,
+        "k": 4
+      }
+    },
+    {
+      "name": "bridge_r2_u2_k5",
+      "couplings": {
+        "Jx": 0.5,
+        "Jy": -0.5,
+        "Jz": 0.5,
+        "Dz": 0.25,
+        "hz": -0.375
+      },
+      "parameters": {
+        "r": 2,
+        "u": 2,
+        "k": 5
+      }
+    },
+    {
+      "name": "bridge_r2_u2_k6",
+      "couplings": {
+        "Jx": 0.5,
+        "Jy": -0.5,
+        "Jz": 0.5,
+        "Dz": 0.25,
+        "hz": -0.25
+      },
+      "parameters": {
+        "r": 2,
+        "u": 2,
+        "k": 6
+      }
+    },
+    {
+      "name": "bridge_r2_u2_k7",
+      "couplings": {
+        "Jx": 0.5,
+        "Jy": -0.5,
+        "Jz": 0.5,
+        "Dz": 0.25,
+        "hz": -0.125
+      },
+      "parameters": {
+        "r": 2,
+        "u": 2,
+        "k": 7
+      }
+    },
+    {
+      "name": "bridge_r2_u2_k8",
+      "couplings": {
+        "Jx": 0.5,
+        "Jy": -0.5,
+        "Jz": 0.5,
+        "Dz": 0.25,
+        "hz": 0.0
+      },
+      "parameters": {
+        "r": 2,
+        "u": 2,
+        "k": 8
+      }
+    },
+    {
+      "name": "bridge_r3_u1_k0",
+      "couplings": {
+        "Jx": 0.5,
+        "Jy": -0.5,
+        "Jz": 0.75,
+        "Dz": 0.08333333333333333,
+        "hz": -1.5
+      },
+      "parameters": {
+        "r": 3,
+        "u": 1,
+        "k": 0
+      }
+    },
+    {
+      "name": "bridge_r3_u1_k1",
+      "couplings": {
+        "Jx": 0.5,
+        "Jy": -0.5,
+        "Jz": 0.75,
+        "Dz": 0.08333333333333333,
+        "hz": -1.4166666666666667
+      },
+      "parameters": {
+        "r": 3,
+        "u": 1,
+        "k": 1
+      }
+    },
+    {
+      "name": "bridge_r3_u1_k2",
+      "couplings": {
+        "Jx": 0.5,
+        "Jy": -0.5,
+        "Jz": 0.75,
+        "Dz": 0.08333333333333333,
+        "hz": -1.3333333333333333
+      },
+      "parameters": {
+        "r": 3,
+        "u": 1,
+        "k": 2
+      }
+    },
+    {
+      "name": "bridge_r3_u1_k3",
+      "couplings": {
+        "Jx": 0.5,
+        "Jy": -0.5,
+        "Jz": 0.75,
+        "Dz": 0.08333333333333333,
+        "hz": -1.25
+      },
+      "parameters": {
+        "r": 3,
+        "u": 1,
+        "k": 3
+      }
+    },
+    {
+      "name": "bridge_r3_u1_k4",
+      "couplings": {
+        "Jx": 0.5,
+        "Jy": -0.5,
+        "Jz": 0.75,
+        "Dz": 0.08333333333333333,
+        "hz": -1.1666666666666667
+      },
+      "parameters": {
+        "r": 3,
+        "u": 1,
+        "k": 4
+      }
+    },
+    {
+      "name": "bridge_r3_u1_k5",
+      "couplings": {
+        "Jx": 0.5,
+        "Jy": -0.5,
+        "Jz": 0.75,
+        "Dz": 0.08333333333333333,
+        "hz": -1.0833333333333333
+      },
+      "parameters": {
+        "r": 3,
+        "u": 1,
+        "k": 5
+      }
+    },
+    {
+      "name": "bridge_r3_u1_k6",
+      "couplings": {
+        "Jx": 0.5,
+        "Jy": -0.5,
+        "Jz": 0.75,
+        "Dz": 0.08333333333333333,
+        "hz": -1.0
+      },
+      "parameters": {
+        "r": 3,
+        "u": 1,
+        "k": 6
+      }
+    },
+    {
+      "name": "bridge_r3_u1_k7",
+      "couplings": {
+        "Jx": 0.5,
+        "Jy": -0.5,
+        "Jz": 0.75,
+        "Dz": 0.08333333333333333,
+        "hz": -0.9166666666666666
+      },
+      "parameters": {
+        "r": 3,
+        "u": 1,
+        "k": 7
+      }
+    },
+    {
+      "name": "bridge_r3_u1_k8",
+      "couplings": {
+        "Jx": 0.5,
+        "Jy": -0.5,
+        "Jz": 0.75,
+        "Dz": 0.08333333333333333,
+        "hz": -0.8333333333333334
+      },
+      "parameters": {
+        "r": 3,
+        "u": 1,
+        "k": 8
+      }
+    },
+    {
+      "name": "bridge_r3_u1.5_k0",
+      "couplings": {
+        "Jx": 0.5,
+        "Jy": -0.5,
+        "Jz": 0.75,
+        "Dz": 0.125,
+        "hz": -1.5
+      },
+      "parameters": {
+        "r": 3,
+        "u": 1.5,
+        "k": 0
+      }
+    },
+    {
+      "name": "bridge_r3_u1.5_k1",
+      "couplings": {
+        "Jx": 0.5,
+        "Jy": -0.5,
+        "Jz": 0.75,
+        "Dz": 0.125,
+        "hz": -1.4166666666666667
+      },
+      "parameters": {
+        "r": 3,
+        "u": 1.5,
+        "k": 1
+      }
+    },
+    {
+      "name": "bridge_r3_u1.5_k2",
+      "couplings": {
+        "Jx": 0.5,
+        "Jy": -0.5,
+        "Jz": 0.75,
+        "Dz": 0.125,
+        "hz": -1.3333333333333333
+      },
+      "parameters": {
+        "r": 3,
+        "u": 1.5,
+        "k": 2
+      }
+    },
+    {
+      "name": "bridge_r3_u1.5_k3",
+      "couplings": {
+        "Jx": 0.5,
+        "Jy": -0.5,
+        "Jz": 0.75,
+        "Dz": 0.125,
+        "hz": -1.25
+      },
+      "parameters": {
+        "r": 3,
+        "u": 1.5,
+        "k": 3
+      }
+    },
+    {
+      "name": "bridge_r3_u1.5_k4",
+      "couplings": {
+        "Jx": 0.5,
+        "Jy": -0.5,
+        "Jz": 0.75,
+        "Dz": 0.125,
+        "hz": -1.1666666666666667
+      },
+      "parameters": {
+        "r": 3,
+        "u": 1.5,
+        "k": 4
+      }
+    },
+    {
+      "name": "bridge_r3_u1.5_k5",
+      "couplings": {
+        "Jx": 0.5,
+        "Jy": -0.5,
+        "Jz": 0.75,
+        "Dz": 0.125,
+        "hz": -1.0833333333333333
+      },
+      "parameters": {
+        "r": 3,
+        "u": 1.5,
+        "k": 5
+      }
+    },
+    {
+      "name": "bridge_r3_u1.5_k6",
+      "couplings": {
+        "Jx": 0.5,
+        "Jy": -0.5,
+        "Jz": 0.75,
+        "Dz": 0.125,
+        "hz": -1.0
+      },
+      "parameters": {
+        "r": 3,
+        "u": 1.5,
+        "k": 6
+      }
+    },
+    {
+      "name": "bridge_r3_u1.5_k7",
+      "couplings": {
+        "Jx": 0.5,
+        "Jy": -0.5,
+        "Jz": 0.75,
+        "Dz": 0.125,
+        "hz": -0.9166666666666666
+      },
+      "parameters": {
+        "r": 3,
+        "u": 1.5,
+        "k": 7
+      }
+    },
+    {
+      "name": "bridge_r3_u1.5_k8",
+      "couplings": {
+        "Jx": 0.5,
+        "Jy": -0.5,
+        "Jz": 0.75,
+        "Dz": 0.125,
+        "hz": -0.8333333333333334
+      },
+      "parameters": {
+        "r": 3,
+        "u": 1.5,
+        "k": 8
+      }
+    },
+    {
+      "name": "bridge_r3_u2_k0",
+      "couplings": {
+        "Jx": 0.5,
+        "Jy": -0.5,
+        "Jz": 0.75,
+        "Dz": 0.16666666666666666,
+        "hz": -1.5
+      },
+      "parameters": {
+        "r": 3,
+        "u": 2,
+        "k": 0
+      }
+    },
+    {
+      "name": "bridge_r3_u2_k1",
+      "couplings": {
+        "Jx": 0.5,
+        "Jy": -0.5,
+        "Jz": 0.75,
+        "Dz": 0.16666666666666666,
+        "hz": -1.4166666666666667
+      },
+      "parameters": {
+        "r": 3,
+        "u": 2,
+        "k": 1
+      }
+    },
+    {
+      "name": "bridge_r3_u2_k2",
+      "couplings": {
+        "Jx": 0.5,
+        "Jy": -0.5,
+        "Jz": 0.75,
+        "Dz": 0.16666666666666666,
+        "hz": -1.3333333333333333
+      },
+      "parameters": {
+        "r": 3,
+        "u": 2,
+        "k": 2
+      }
+    },
+    {
+      "name": "bridge_r3_u2_k3",
+      "couplings": {
+        "Jx": 0.5,
+        "Jy": -0.5,
+        "Jz": 0.75,
+        "Dz": 0.16666666666666666,
+        "hz": -1.25
+      },
+      "parameters": {
+        "r": 3,
+        "u": 2,
+        "k": 3
+      }
+    },
+    {
+      "name": "bridge_r3_u2_k4",
+      "couplings": {
+        "Jx": 0.5,
+        "Jy": -0.5,
+        "Jz": 0.75,
+        "Dz": 0.16666666666666666,
+        "hz": -1.1666666666666667
+      },
+      "parameters": {
+        "r": 3,
+        "u": 2,
+        "k": 4
+      }
+    },
+    {
+      "name": "bridge_r3_u2_k5",
+      "couplings": {
+        "Jx": 0.5,
+        "Jy": -0.5,
+        "Jz": 0.75,
+        "Dz": 0.16666666666666666,
+        "hz": -1.0833333333333333
+      },
+      "parameters": {
+        "r": 3,
+        "u": 2,
+        "k": 5
+      }
+    },
+    {
+      "name": "bridge_r3_u2_k6",
+      "couplings": {
+        "Jx": 0.5,
+        "Jy": -0.5,
+        "Jz": 0.75,
+        "Dz": 0.16666666666666666,
+        "hz": -1.0
+      },
+      "parameters": {
+        "r": 3,
+        "u": 2,
+        "k": 6
+      }
+    },
+    {
+      "name": "bridge_r3_u2_k7",
+      "couplings": {
+        "Jx": 0.5,
+        "Jy": -0.5,
+        "Jz": 0.75,
+        "Dz": 0.16666666666666666,
+        "hz": -0.9166666666666666
+      },
+      "parameters": {
+        "r": 3,
+        "u": 2,
+        "k": 7
+      }
+    },
+    {
+      "name": "bridge_r3_u2_k8",
+      "couplings": {
+        "Jx": 0.5,
+        "Jy": -0.5,
+        "Jz": 0.75,
+        "Dz": 0.16666666666666666,
+        "hz": -0.8333333333333334
+      },
+      "parameters": {
+        "r": 3,
+        "u": 2,
+        "k": 8
+      }
+    },
+    {
+      "name": "bridge_r4_u1_k0",
+      "couplings": {
+        "Jx": 0.5,
+        "Jy": -0.5,
+        "Jz": 1.0,
+        "Dz": 0.0625,
+        "hz": -2.0
+      },
+      "parameters": {
+        "r": 4,
+        "u": 1,
+        "k": 0
+      }
+    },
+    {
+      "name": "bridge_r4_u1_k1",
+      "couplings": {
+        "Jx": 0.5,
+        "Jy": -0.5,
+        "Jz": 1.0,
+        "Dz": 0.0625,
+        "hz": -1.9375
+      },
+      "parameters": {
+        "r": 4,
+        "u": 1,
+        "k": 1
+      }
+    },
+    {
+      "name": "bridge_r4_u1_k2",
+      "couplings": {
+        "Jx": 0.5,
+        "Jy": -0.5,
+        "Jz": 1.0,
+        "Dz": 0.0625,
+        "hz": -1.875
+      },
+      "parameters": {
+        "r": 4,
+        "u": 1,
+        "k": 2
+      }
+    },
+    {
+      "name": "bridge_r4_u1_k3",
+      "couplings": {
+        "Jx": 0.5,
+        "Jy": -0.5,
+        "Jz": 1.0,
+        "Dz": 0.0625,
+        "hz": -1.8125
+      },
+      "parameters": {
+        "r": 4,
+        "u": 1,
+        "k": 3
+      }
+    },
+    {
+      "name": "bridge_r4_u1_k4",
+      "couplings": {
+        "Jx": 0.5,
+        "Jy": -0.5,
+        "Jz": 1.0,
+        "Dz": 0.0625,
+        "hz": -1.75
+      },
+      "parameters": {
+        "r": 4,
+        "u": 1,
+        "k": 4
+      }
+    },
+    {
+      "name": "bridge_r4_u1_k5",
+      "couplings": {
+        "Jx": 0.5,
+        "Jy": -0.5,
+        "Jz": 1.0,
+        "Dz": 0.0625,
+        "hz": -1.6875
+      },
+      "parameters": {
+        "r": 4,
+        "u": 1,
+        "k": 5
+      }
+    },
+    {
+      "name": "bridge_r4_u1_k6",
+      "couplings": {
+        "Jx": 0.5,
+        "Jy": -0.5,
+        "Jz": 1.0,
+        "Dz": 0.0625,
+        "hz": -1.625
+      },
+      "parameters": {
+        "r": 4,
+        "u": 1,
+        "k": 6
+      }
+    },
+    {
+      "name": "bridge_r4_u1_k7",
+      "couplings": {
+        "Jx": 0.5,
+        "Jy": -0.5,
+        "Jz": 1.0,
+        "Dz": 0.0625,
+        "hz": -1.5625
+      },
+      "parameters": {
+        "r": 4,
+        "u": 1,
+        "k": 7
+      }
+    },
+    {
+      "name": "bridge_r4_u1_k8",
+      "couplings": {
+        "Jx": 0.5,
+        "Jy": -0.5,
+        "Jz": 1.0,
+        "Dz": 0.0625,
+        "hz": -1.5
+      },
+      "parameters": {
+        "r": 4,
+        "u": 1,
+        "k": 8
+      }
+    },
+    {
+      "name": "bridge_r4_u1.5_k0",
+      "couplings": {
+        "Jx": 0.5,
+        "Jy": -0.5,
+        "Jz": 1.0,
+        "Dz": 0.09375,
+        "hz": -2.0
+      },
+      "parameters": {
+        "r": 4,
+        "u": 1.5,
+        "k": 0
+      }
+    },
+    {
+      "name": "bridge_r4_u1.5_k1",
+      "couplings": {
+        "Jx": 0.5,
+        "Jy": -0.5,
+        "Jz": 1.0,
+        "Dz": 0.09375,
+        "hz": -1.9375
+      },
+      "parameters": {
+        "r": 4,
+        "u": 1.5,
+        "k": 1
+      }
+    },
+    {
+      "name": "bridge_r4_u1.5_k2",
+      "couplings": {
+        "Jx": 0.5,
+        "Jy": -0.5,
+        "Jz": 1.0,
+        "Dz": 0.09375,
+        "hz": -1.875
+      },
+      "parameters": {
+        "r": 4,
+        "u": 1.5,
+        "k": 2
+      }
+    },
+    {
+      "name": "bridge_r4_u1.5_k3",
+      "couplings": {
+        "Jx": 0.5,
+        "Jy": -0.5,
+        "Jz": 1.0,
+        "Dz": 0.09375,
+        "hz": -1.8125
+      },
+      "parameters": {
+        "r": 4,
+        "u": 1.5,
+        "k": 3
+      }
+    },
+    {
+      "name": "bridge_r4_u1.5_k4",
+      "couplings": {
+        "Jx": 0.5,
+        "Jy": -0.5,
+        "Jz": 1.0,
+        "Dz": 0.09375,
+        "hz": -1.75
+      },
+      "parameters": {
+        "r": 4,
+        "u": 1.5,
+        "k": 4
+      }
+    },
+    {
+      "name": "bridge_r4_u1.5_k5",
+      "couplings": {
+        "Jx": 0.5,
+        "Jy": -0.5,
+        "Jz": 1.0,
+        "Dz": 0.09375,
+        "hz": -1.6875
+      },
+      "parameters": {
+        "r": 4,
+        "u": 1.5,
+        "k": 5
+      }
+    },
+    {
+      "name": "bridge_r4_u1.5_k6",
+      "couplings": {
+        "Jx": 0.5,
+        "Jy": -0.5,
+        "Jz": 1.0,
+        "Dz": 0.09375,
+        "hz": -1.625
+      },
+      "parameters": {
+        "r": 4,
+        "u": 1.5,
+        "k": 6
+      }
+    },
+    {
+      "name": "bridge_r4_u1.5_k7",
+      "couplings": {
+        "Jx": 0.5,
+        "Jy": -0.5,
+        "Jz": 1.0,
+        "Dz": 0.09375,
+        "hz": -1.5625
+      },
+      "parameters": {
+        "r": 4,
+        "u": 1.5,
+        "k": 7
+      }
+    },
+    {
+      "name": "bridge_r4_u1.5_k8",
+      "couplings": {
+        "Jx": 0.5,
+        "Jy": -0.5,
+        "Jz": 1.0,
+        "Dz": 0.09375,
+        "hz": -1.5
+      },
+      "parameters": {
+        "r": 4,
+        "u": 1.5,
+        "k": 8
+      }
+    },
+    {
+      "name": "bridge_r4_u2_k0",
+      "couplings": {
+        "Jx": 0.5,
+        "Jy": -0.5,
+        "Jz": 1.0,
+        "Dz": 0.125,
+        "hz": -2.0
+      },
+      "parameters": {
+        "r": 4,
+        "u": 2,
+        "k": 0
+      }
+    },
+    {
+      "name": "bridge_r4_u2_k1",
+      "couplings": {
+        "Jx": 0.5,
+        "Jy": -0.5,
+        "Jz": 1.0,
+        "Dz": 0.125,
+        "hz": -1.9375
+      },
+      "parameters": {
+        "r": 4,
+        "u": 2,
+        "k": 1
+      }
+    },
+    {
+      "name": "bridge_r4_u2_k2",
+      "couplings": {
+        "Jx": 0.5,
+        "Jy": -0.5,
+        "Jz": 1.0,
+        "Dz": 0.125,
+        "hz": -1.875
+      },
+      "parameters": {
+        "r": 4,
+        "u": 2,
+        "k": 2
+      }
+    },
+    {
+      "name": "bridge_r4_u2_k3",
+      "couplings": {
+        "Jx": 0.5,
+        "Jy": -0.5,
+        "Jz": 1.0,
+        "Dz": 0.125,
+        "hz": -1.8125
+      },
+      "parameters": {
+        "r": 4,
+        "u": 2,
+        "k": 3
+      }
+    },
+    {
+      "name": "bridge_r4_u2_k4",
+      "couplings": {
+        "Jx": 0.5,
+        "Jy": -0.5,
+        "Jz": 1.0,
+        "Dz": 0.125,
+        "hz": -1.75
+      },
+      "parameters": {
+        "r": 4,
+        "u": 2,
+        "k": 4
+      }
+    },
+    {
+      "name": "bridge_r4_u2_k5",
+      "couplings": {
+        "Jx": 0.5,
+        "Jy": -0.5,
+        "Jz": 1.0,
+        "Dz": 0.125,
+        "hz": -1.6875
+      },
+      "parameters": {
+        "r": 4,
+        "u": 2,
+        "k": 5
+      }
+    },
+    {
+      "name": "bridge_r4_u2_k6",
+      "couplings": {
+        "Jx": 0.5,
+        "Jy": -0.5,
+        "Jz": 1.0,
+        "Dz": 0.125,
+        "hz": -1.625
+      },
+      "parameters": {
+        "r": 4,
+        "u": 2,
+        "k": 6
+      }
+    },
+    {
+      "name": "bridge_r4_u2_k7",
+      "couplings": {
+        "Jx": 0.5,
+        "Jy": -0.5,
+        "Jz": 1.0,
+        "Dz": 0.125,
+        "hz": -1.5625
+      },
+      "parameters": {
+        "r": 4,
+        "u": 2,
+        "k": 7
+      }
+    },
+    {
+      "name": "bridge_r4_u2_k8",
+      "couplings": {
+        "Jx": 0.5,
+        "Jy": -0.5,
+        "Jz": 1.0,
+        "Dz": 0.125,
+        "hz": -1.5
+      },
+      "parameters": {
+        "r": 4,
+        "u": 2,
+        "k": 8
+      }
+    },
+    {
+      "name": "bridge_r8_u1_k0",
+      "couplings": {
+        "Jx": 0.5,
+        "Jy": -0.5,
+        "Jz": 2.0,
+        "Dz": 0.03125,
+        "hz": -4.0
+      },
+      "parameters": {
+        "r": 8,
+        "u": 1,
+        "k": 0
+      }
+    },
+    {
+      "name": "bridge_r8_u1_k1",
+      "couplings": {
+        "Jx": 0.5,
+        "Jy": -0.5,
+        "Jz": 2.0,
+        "Dz": 0.03125,
+        "hz": -3.96875
+      },
+      "parameters": {
+        "r": 8,
+        "u": 1,
+        "k": 1
+      }
+    },
+    {
+      "name": "bridge_r8_u1_k2",
+      "couplings": {
+        "Jx": 0.5,
+        "Jy": -0.5,
+        "Jz": 2.0,
+        "Dz": 0.03125,
+        "hz": -3.9375
+      },
+      "parameters": {
+        "r": 8,
+        "u": 1,
+        "k": 2
+      }
+    },
+    {
+      "name": "bridge_r8_u1_k3",
+      "couplings": {
+        "Jx": 0.5,
+        "Jy": -0.5,
+        "Jz": 2.0,
+        "Dz": 0.03125,
+        "hz": -3.90625
+      },
+      "parameters": {
+        "r": 8,
+        "u": 1,
+        "k": 3
+      }
+    },
+    {
+      "name": "bridge_r8_u1_k4",
+      "couplings": {
+        "Jx": 0.5,
+        "Jy": -0.5,
+        "Jz": 2.0,
+        "Dz": 0.03125,
+        "hz": -3.875
+      },
+      "parameters": {
+        "r": 8,
+        "u": 1,
+        "k": 4
+      }
+    },
+    {
+      "name": "bridge_r8_u1_k5",
+      "couplings": {
+        "Jx": 0.5,
+        "Jy": -0.5,
+        "Jz": 2.0,
+        "Dz": 0.03125,
+        "hz": -3.84375
+      },
+      "parameters": {
+        "r": 8,
+        "u": 1,
+        "k": 5
+      }
+    },
+    {
+      "name": "bridge_r8_u1_k6",
+      "couplings": {
+        "Jx": 0.5,
+        "Jy": -0.5,
+        "Jz": 2.0,
+        "Dz": 0.03125,
+        "hz": -3.8125
+      },
+      "parameters": {
+        "r": 8,
+        "u": 1,
+        "k": 6
+      }
+    },
+    {
+      "name": "bridge_r8_u1_k7",
+      "couplings": {
+        "Jx": 0.5,
+        "Jy": -0.5,
+        "Jz": 2.0,
+        "Dz": 0.03125,
+        "hz": -3.78125
+      },
+      "parameters": {
+        "r": 8,
+        "u": 1,
+        "k": 7
+      }
+    },
+    {
+      "name": "bridge_r8_u1_k8",
+      "couplings": {
+        "Jx": 0.5,
+        "Jy": -0.5,
+        "Jz": 2.0,
+        "Dz": 0.03125,
+        "hz": -3.75
+      },
+      "parameters": {
+        "r": 8,
+        "u": 1,
+        "k": 8
+      }
+    },
+    {
+      "name": "bridge_r8_u1.5_k0",
+      "couplings": {
+        "Jx": 0.5,
+        "Jy": -0.5,
+        "Jz": 2.0,
+        "Dz": 0.046875,
+        "hz": -4.0
+      },
+      "parameters": {
+        "r": 8,
+        "u": 1.5,
+        "k": 0
+      }
+    },
+    {
+      "name": "bridge_r8_u1.5_k1",
+      "couplings": {
+        "Jx": 0.5,
+        "Jy": -0.5,
+        "Jz": 2.0,
+        "Dz": 0.046875,
+        "hz": -3.96875
+      },
+      "parameters": {
+        "r": 8,
+        "u": 1.5,
+        "k": 1
+      }
+    },
+    {
+      "name": "bridge_r8_u1.5_k2",
+      "couplings": {
+        "Jx": 0.5,
+        "Jy": -0.5,
+        "Jz": 2.0,
+        "Dz": 0.046875,
+        "hz": -3.9375
+      },
+      "parameters": {
+        "r": 8,
+        "u": 1.5,
+        "k": 2
+      }
+    },
+    {
+      "name": "bridge_r8_u1.5_k3",
+      "couplings": {
+        "Jx": 0.5,
+        "Jy": -0.5,
+        "Jz": 2.0,
+        "Dz": 0.046875,
+        "hz": -3.90625
+      },
+      "parameters": {
+        "r": 8,
+        "u": 1.5,
+        "k": 3
+      }
+    },
+    {
+      "name": "bridge_r8_u1.5_k4",
+      "couplings": {
+        "Jx": 0.5,
+        "Jy": -0.5,
+        "Jz": 2.0,
+        "Dz": 0.046875,
+        "hz": -3.875
+      },
+      "parameters": {
+        "r": 8,
+        "u": 1.5,
+        "k": 4
+      }
+    },
+    {
+      "name": "bridge_r8_u1.5_k5",
+      "couplings": {
+        "Jx": 0.5,
+        "Jy": -0.5,
+        "Jz": 2.0,
+        "Dz": 0.046875,
+        "hz": -3.84375
+      },
+      "parameters": {
+        "r": 8,
+        "u": 1.5,
+        "k": 5
+      }
+    },
+    {
+      "name": "bridge_r8_u1.5_k6",
+      "couplings": {
+        "Jx": 0.5,
+        "Jy": -0.5,
+        "Jz": 2.0,
+        "Dz": 0.046875,
+        "hz": -3.8125
+      },
+      "parameters": {
+        "r": 8,
+        "u": 1.5,
+        "k": 6
+      }
+    },
+    {
+      "name": "bridge_r8_u1.5_k7",
+      "couplings": {
+        "Jx": 0.5,
+        "Jy": -0.5,
+        "Jz": 2.0,
+        "Dz": 0.046875,
+        "hz": -3.78125
+      },
+      "parameters": {
+        "r": 8,
+        "u": 1.5,
+        "k": 7
+      }
+    },
+    {
+      "name": "bridge_r8_u1.5_k8",
+      "couplings": {
+        "Jx": 0.5,
+        "Jy": -0.5,
+        "Jz": 2.0,
+        "Dz": 0.046875,
+        "hz": -3.75
+      },
+      "parameters": {
+        "r": 8,
+        "u": 1.5,
+        "k": 8
+      }
+    },
+    {
+      "name": "bridge_r8_u2_k0",
+      "couplings": {
+        "Jx": 0.5,
+        "Jy": -0.5,
+        "Jz": 2.0,
+        "Dz": 0.0625,
+        "hz": -4.0
+      },
+      "parameters": {
+        "r": 8,
+        "u": 2,
+        "k": 0
+      }
+    },
+    {
+      "name": "bridge_r8_u2_k1",
+      "couplings": {
+        "Jx": 0.5,
+        "Jy": -0.5,
+        "Jz": 2.0,
+        "Dz": 0.0625,
+        "hz": -3.96875
+      },
+      "parameters": {
+        "r": 8,
+        "u": 2,
+        "k": 1
+      }
+    },
+    {
+      "name": "bridge_r8_u2_k2",
+      "couplings": {
+        "Jx": 0.5,
+        "Jy": -0.5,
+        "Jz": 2.0,
+        "Dz": 0.0625,
+        "hz": -3.9375
+      },
+      "parameters": {
+        "r": 8,
+        "u": 2,
+        "k": 2
+      }
+    },
+    {
+      "name": "bridge_r8_u2_k3",
+      "couplings": {
+        "Jx": 0.5,
+        "Jy": -0.5,
+        "Jz": 2.0,
+        "Dz": 0.0625,
+        "hz": -3.90625
+      },
+      "parameters": {
+        "r": 8,
+        "u": 2,
+        "k": 3
+      }
+    },
+    {
+      "name": "bridge_r8_u2_k4",
+      "couplings": {
+        "Jx": 0.5,
+        "Jy": -0.5,
+        "Jz": 2.0,
+        "Dz": 0.0625,
+        "hz": -3.875
+      },
+      "parameters": {
+        "r": 8,
+        "u": 2,
+        "k": 4
+      }
+    },
+    {
+      "name": "bridge_r8_u2_k5",
+      "couplings": {
+        "Jx": 0.5,
+        "Jy": -0.5,
+        "Jz": 2.0,
+        "Dz": 0.0625,
+        "hz": -3.84375
+      },
+      "parameters": {
+        "r": 8,
+        "u": 2,
+        "k": 5
+      }
+    },
+    {
+      "name": "bridge_r8_u2_k6",
+      "couplings": {
+        "Jx": 0.5,
+        "Jy": -0.5,
+        "Jz": 2.0,
+        "Dz": 0.0625,
+        "hz": -3.8125
+      },
+      "parameters": {
+        "r": 8,
+        "u": 2,
+        "k": 6
+      }
+    },
+    {
+      "name": "bridge_r8_u2_k7",
+      "couplings": {
+        "Jx": 0.5,
+        "Jy": -0.5,
+        "Jz": 2.0,
+        "Dz": 0.0625,
+        "hz": -3.78125
+      },
+      "parameters": {
+        "r": 8,
+        "u": 2,
+        "k": 7
+      }
+    },
+    {
+      "name": "bridge_r8_u2_k8",
+      "couplings": {
+        "Jx": 0.5,
+        "Jy": -0.5,
+        "Jz": 2.0,
+        "Dz": 0.0625,
+        "hz": -3.75
+      },
+      "parameters": {
+        "r": 8,
+        "u": 2,
+        "k": 8
+      }
+    }
+  ]
+}
