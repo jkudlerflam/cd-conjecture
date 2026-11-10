@@ -1,0 +1,39 @@
+{
+  "L": 32,
+  "geometry": "periodic",
+  "parity": 1,
+  "couplings": {
+    "Jx": 0.5,
+    "Jy": -0.5,
+    "Jz": 0.625,
+    "Dz": 0.1,
+    "Dy": 0.0,
+    "hz": -0.875
+  },
+  "model": "candidate",
+  "seed": 17,
+  "chi": 128,
+  "status": "postprocessing_failed",
+  "checkpoint": "/Users/pace/Documents/GitHub/cd-conjecture/contrib/d2_central_charge_20261110/checkpoints_local/candidate_periodic_L32_P1_s17_chi128.pkl",
+  "config": {
+    "geometry": "periodic",
+    "model": "candidate",
+    "L": 32,
+    "parity": 1,
+    "seed": 17,
+    "chi": 128,
+    "sweeps": 32,
+    "load": null
+  },
+  "tenpy_version": "1.1.1",
+  "source_hashes": {
+    "contrib/d2_central_charge_20261110/run.py": "efd2c5f2c876699a0aaebef01b19fe5231cfd01a939d57ea8478d1b445c35cdd",
+    "contrib/d2_tenpy_20261109/run.py": "162f416856b4a578abf3f2966b2d601c4d1538a6aee17fb153d3a75dd2927350",
+    "contrib/d2_tenpy_20261109/independent_infinite_check.py": "11a0ed42b91bbdbe0b026a993943a7ab5e7f500c292b4b3b683961b4f445e3a3"
+  },
+  "failure_stage": "JSON serialization after final checkpoint",
+  "failure": "TeNPy Config object in the original mutated options dictionary.",
+  "failure_log": "logs/pbc32_odd.log",
+  "checkpoint_sha256": "fa0ba7b58d89e110a617f995b5a1fe1ad7a4602dd77ed922c8db529191cfb13d",
+  "recovery": "Fresh chi192 two-site stage and conditional one-site refinement; original remains excluded."
+}

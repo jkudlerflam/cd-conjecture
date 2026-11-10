@@ -1,0 +1,182 @@
+{
+  "controls": [
+    {
+      "model": "ising_critical",
+      "h": 1.0,
+      "exact_energy_density": -1.2732395447351625,
+      "exact_fermion_gap": 0.0,
+      "L8_even_energy_error": 5.329070518200751e-15,
+      "points": [
+        {
+          "source": "results/ising_critical_infinite_L2_P0_s23_chi16.json",
+          "chi": 16,
+          "converged": true,
+          "one_site": false,
+          "energy_error": 1.6641871503075834e-07,
+          "S": 0.46572648324321947,
+          "xi": 141.5389163747246,
+          "order": 0.4003470765583788
+        },
+        {
+          "source": "results/ising_critical_infinite_L2_P0_s23_chi16_one.json",
+          "chi": 16,
+          "converged": true,
+          "one_site": true,
+          "energy_error": 1.5739529923841644e-07,
+          "S": 0.47180244873177113,
+          "xi": 144.74453155031338,
+          "order": 0.3963738728366791
+        },
+        {
+          "source": "results/ising_critical_infinite_L2_P0_s23_chi24.json",
+          "chi": 24,
+          "converged": false,
+          "one_site": false,
+          "energy_error": 3.4618342859005224e-08,
+          "S": 0.5364775192887634,
+          "xi": 321.81560011746734,
+          "order": 0.35970848703827524
+        },
+        {
+          "source": "results/ising_critical_infinite_L2_P0_s23_chi24_a1.json",
+          "chi": 24,
+          "converged": true,
+          "one_site": false,
+          "energy_error": 3.4981886942730966e-08,
+          "S": 0.5294727929463849,
+          "xi": 308.26109146228436,
+          "order": 0.36391148749342056
+        },
+        {
+          "source": "results/ising_critical_infinite_L2_P0_s23_chi24_one.json",
+          "chi": 24,
+          "converged": false,
+          "one_site": true,
+          "energy_error": 9.267121881118001e-05,
+          "S": 0.5642300306998755,
+          "xi": 69.24091043872853,
+          "order": 0.2393183496858724
+        },
+        {
+          "source": "results/ising_critical_infinite_L2_P0_s23_chi32.json",
+          "chi": 32,
+          "converged": false,
+          "one_site": false,
+          "energy_error": 1.199547483565766e-08,
+          "S": 0.6296777323073759,
+          "xi": 815.4280483195308,
+          "order": 0.3100133361496337
+        },
+        {
+          "source": "results/ising_critical_infinite_L2_P0_s23_chi32_a1.json",
+          "chi": 32,
+          "converged": false,
+          "one_site": false,
+          "energy_error": 9.968120551206994e-09,
+          "S": 0.5888891225798432,
+          "xi": 609.7520142126557,
+          "order": 0.3327227689863662
+        },
+        {
+          "source": "results/ising_critical_infinite_L2_P0_s23_chi32_one.json",
+          "chi": 32,
+          "converged": false,
+          "one_site": true,
+          "energy_error": 9.752666230156137e-09,
+          "S": 0.586352694695172,
+          "xi": 592.3805250238254,
+          "order": 0.3340192231583995
+        },
+        {
+          "source": "results/ising_critical_infinite_L2_P0_s23_chi48.json",
+          "chi": 48,
+          "converged": false,
+          "one_site": false,
+          "energy_error": 8.76087624668287e-09,
+          "S": 0.9296404360255153,
+          "xi": 3311.622235464178,
+          "order": 0.020364157357553668
+        },
+        {
+          "source": "results/ising_critical_infinite_L2_P0_s23_chi48_a1.json",
+          "chi": 48,
+          "converged": false,
+          "one_site": false,
+          "energy_error": 2.3421935502199176e-09,
+          "S": 0.6605319257865166,
+          "xi": 1368.1030653039902,
+          "order": 0.29820207003216104
+        },
+        {
+          "source": "results/ising_critical_infinite_L2_P0_s23_chi48_one.json",
+          "chi": 48,
+          "converged": false,
+          "one_site": true,
+          "energy_error": 8.183881572421114e-09,
+          "S": 0.9264733343930287,
+          "xi": 3433.417662254571,
+          "order": 0.058525056714096337
+        }
+      ]
+    },
+    {
+      "model": "ising_gapped",
+      "h": 1.01,
+      "exact_energy_density": -1.2797037637127222,
+      "exact_fermion_gap": 0.020000000000000018,
+      "L8_even_energy_error": 1.7763568394002505e-15,
+      "points": [
+        {
+          "source": "results/ising_gapped_infinite_L2_P0_s23_chi16.json",
+          "chi": 16,
+          "converged": true,
+          "one_site": false,
+          "energy_error": 3.247076163503948e-08,
+          "S": 0.5497251585955873,
+          "xi": 71.68183026998436,
+          "order": 3.60586200369014e-05
+        },
+        {
+          "source": "results/ising_gapped_infinite_L2_P0_s23_chi24.json",
+          "chi": 24,
+          "converged": true,
+          "one_site": false,
+          "energy_error": 1.5580650103430571e-09,
+          "S": 0.5503407458873767,
+          "xi": 81.68606465420072,
+          "order": 3.709143450776725e-06
+        },
+        {
+          "source": "results/ising_gapped_infinite_L2_P0_s23_chi32.json",
+          "chi": 32,
+          "converged": false,
+          "one_site": false,
+          "energy_error": 1.3235479379147819e-10,
+          "S": 0.5503918827420082,
+          "xi": 86.44693057044816,
+          "order": 3.8532112489641305e-08
+        },
+        {
+          "source": "results/ising_gapped_infinite_L2_P0_s23_chi32_a1.json",
+          "chi": 32,
+          "converged": false,
+          "one_site": false,
+          "energy_error": 1.314297559673605e-10,
+          "S": 0.5503917076226331,
+          "xi": 86.35825324787118,
+          "order": 5.736869126769794e-07
+        },
+        {
+          "source": "results/ising_gapped_infinite_L2_P0_s23_chi48.json",
+          "chi": 48,
+          "converged": true,
+          "one_site": false,
+          "energy_error": 2.561062473205311e-12,
+          "S": 0.5503987087288613,
+          "xi": 91.31853768617437,
+          "order": 2.1363179816618252e-07
+        }
+      ]
+    }
+  ]
+}

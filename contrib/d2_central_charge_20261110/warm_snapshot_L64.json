@@ -1,0 +1,8 @@
+{
+  "source": "contrib/d2_central_charge_20261110/checkpoints_local/candidate_periodic_L64_P0_s17_chi128_g.pkl",
+  "snapshot": "contrib/d2_central_charge_20261110/checkpoints_local/warm_L64_P0_chi128_g.pkl",
+  "sha256": "96e96c322e4ca52e971be9a04d4411d58404c4cf771815fbe63eb834194b8d76",
+  "checkpoint_kind": "sweep_boundary",
+  "checkpoint_sweep": 10,
+  "purpose": "Immutable initialization for chi192; not an accepted chi128 result."
+}

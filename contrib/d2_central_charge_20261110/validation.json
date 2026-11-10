@@ -1,0 +1,19 @@
+{
+  "checks": [
+    {
+      "parity": 0,
+      "energy_error": 6.572520305780927e-14,
+      "gap": 0.09774033894160272,
+      "entropy_comparison_valid": true,
+      "entropy_error": 5.551115123125783e-15
+    },
+    {
+      "parity": 1,
+      "energy_error": 9.414691248821327e-14,
+      "gap": 5.773159728050814e-14,
+      "entropy_comparison_valid": false,
+      "entropy_error": null
+    }
+  ],
+  "note": "Odd L8 ring ground state is degenerate. An initial unconditional entropy comparison failed for this reason; individual degenerate eigenvectors need not have equal interval entropy. Its energy is checked and entropy equality is not asserted."
+}

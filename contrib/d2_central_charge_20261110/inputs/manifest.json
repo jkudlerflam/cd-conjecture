@@ -1,0 +1,26 @@
+[
+  {
+    "commit": "7014ef41",
+    "source": "contrib/d2_order_one_continuation_20261110/bridge_rings.jsonl",
+    "snapshot": "contrib/d2_central_charge_20261110/inputs/bridge_rings.jsonl",
+    "sha256": "f7b8765b36d55ce48365086e4c5e784dbdcba1fd71e5b61f11918627a748adb7"
+  },
+  {
+    "commit": "7014ef41",
+    "source": "contrib/d2_order_one_continuation_20261110/size_comparisons.json",
+    "snapshot": "contrib/d2_central_charge_20261110/inputs/size_comparisons.json",
+    "sha256": "52edc3c865797a417c2b0cf0411864676cbe66210ba9cee3c34100d8bad10b1a"
+  },
+  {
+    "commit": "7014ef41",
+    "source": "contrib/d2_order_one_continuation_20261110/diagnostics/energy_consistency.json",
+    "snapshot": "contrib/d2_central_charge_20261110/inputs/energy_consistency.json",
+    "sha256": "2b26c879ff2b43d702578dec4f2631bd500b2e0d1b58572c88d3c6b7d2a7e65d"
+  },
+  {
+    "commit": "7014ef41",
+    "source": "contrib/d2_order_one_continuation_20261110/README.md",
+    "snapshot": "contrib/d2_central_charge_20261110/inputs/README.md",
+    "sha256": "9eed9e4f07fbee94d9e5b4e44c009059f82faefe8763451b6b3531f62578266f"
+  }
+]

@@ -1,0 +1,38 @@
+{
+  "matrix_checks": [
+    {
+      "L": 8,
+      "parity": 0,
+      "errors": {
+        "hamiltonian": 2.4492935982947065e-17,
+        "unitary_square": 4.898587196589413e-16,
+        "antiunitary_square": 0.0,
+        "translation": 4.898587196589413e-16
+      }
+    },
+    {
+      "L": 8,
+      "parity": 1,
+      "errors": {
+        "hamiltonian": 2.4492935982947065e-17,
+        "unitary_square": 3.6739403974420594e-16,
+        "antiunitary_square": 0.0,
+        "translation": 3.6739403974420594e-16
+      }
+    }
+  ],
+  "spectral_checks": [
+    {
+      "L": 16,
+      "max_energy_pairing_error": 8.171241461241152e-14
+    },
+    {
+      "L": 20,
+      "max_energy_pairing_error": 1.616484723854228e-13
+    },
+    {
+      "L": 24,
+      "max_energy_pairing_error": 2.3092638912203256e-13
+    }
+  ]
+}

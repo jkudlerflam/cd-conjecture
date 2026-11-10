@@ -1,0 +1,129 @@
+{
+  "rows": [
+    {
+      "model": "candidate",
+      "sizes": [
+        16,
+        20,
+        24
+      ],
+      "polynomial_degree": 1,
+      "e_infinite": -0.6761910353434928,
+      "cv": 0.39461803764524533,
+      "velocity_infinite": 0.40314379850957593,
+      "c_conditional": 0.9788518119443971,
+      "e_fit_rms": 3.9526123407699014e-07,
+      "velocity_fit_rms": 7.239458603101553e-05
+    },
+    {
+      "model": "candidate",
+      "sizes": [
+        16,
+        20,
+        24
+      ],
+      "polynomial_degree": 2,
+      "e_infinite": -0.6761968930132387,
+      "cv": 0.38594132176248486,
+      "velocity_infinite": 0.40421666763961833,
+      "c_conditional": 0.9547882426920926,
+      "e_fit_rms": 7.745082181693175e-16,
+      "velocity_fit_rms": 3.8459253727671276e-16
+    },
+    {
+      "model": "candidate",
+      "sizes": [
+        12,
+        16,
+        20,
+        24
+      ],
+      "polynomial_degree": 1,
+      "e_infinite": -0.6761922337427156,
+      "cv": 0.3937109300930178,
+      "velocity_infinite": 0.4020516117857367,
+      "c_conditional": 0.9792546990281341,
+      "e_fit_rms": 5.277616438543362e-07,
+      "velocity_fit_rms": 0.0003714228897967679
+    },
+    {
+      "model": "candidate",
+      "sizes": [
+        12,
+        16,
+        20,
+        24
+      ],
+      "polynomial_degree": 2,
+      "e_infinite": -0.6761902926713188,
+      "cv": 0.3958568621207045,
+      "velocity_infinite": 0.404160329944565,
+      "c_conditional": 0.9794550152287349,
+      "e_fit_rms": 4.020581297667171e-07,
+      "velocity_fit_rms": 3.431796198477533e-06
+    },
+    {
+      "model": "xx",
+      "sizes": [
+        16,
+        20,
+        24
+      ],
+      "polynomial_degree": 1,
+      "e_infinite": -0.6366107980878494,
+      "cv": 2.0132745599245565,
+      "velocity_infinite": 1.999988007015872,
+      "c_conditional": 1.0066433162909356,
+      "e_fit_rms": 6.070099164886925e-07,
+      "velocity_fit_rms": 8.088214058663895e-07
+    },
+    {
+      "model": "xx",
+      "sizes": [
+        16,
+        20,
+        24
+      ],
+      "polynomial_degree": 2,
+      "e_infinite": -0.6366197938185633,
+      "cv": 1.9999495684252862,
+      "velocity_infinite": 1.9999999935409114,
+      "c_conditional": 0.999974787442106,
+      "e_fit_rms": 7.557131904205645e-16,
+      "velocity_fit_rms": 2.1374796863140074e-15
+    },
+    {
+      "model": "xx",
+      "sizes": [
+        12,
+        16,
+        20,
+        24
+      ],
+      "polynomial_degree": 1,
+      "e_infinite": -0.636601057516599,
+      "cv": 2.0206475167606137,
+      "velocity_infinite": 1.9999751018686338,
+      "c_conditional": 1.0103363361237172,
+      "e_fit_rms": 3.3070190412298786e-06,
+      "velocity_fit_rms": 4.382058840266182e-06
+    },
+    {
+      "model": "xx",
+      "sizes": [
+        12,
+        16,
+        20,
+        24
+      ],
+      "polynomial_degree": 2,
+      "e_infinite": -0.6366198335993595,
+      "cv": 1.9998898066574884,
+      "velocity_infinite": 1.9999999816529321,
+      "c_conditional": 0.9999449125017728,
+      "e_fit_rms": 2.4232369686268917e-09,
+      "velocity_fit_rms": 7.241531541803744e-10
+    }
+  ],
+  "caveat": "Assumes the lowest momentum \u00b12pi/L states are the relevant sound descendants and one velocity exhausts the Casimir term. Several sectors/velocities or long crossovers invalidate this identification. Fit-window/degree scatter is systematic, not a confidence interval."
+}

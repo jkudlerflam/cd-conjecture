@@ -1,0 +1,61 @@
+{
+  "registration": "Post-hoc read-only consistency check after chi256 completed; not a new c estimator.",
+  "sources": {
+    "inputs/energy_consistency.json": "2b26c879ff2b43d702578dec4f2631bd500b2e0d1b58572c88d3c6b7d2a7e65d",
+    "results/candidate_infinite_L2_P0_s17_chi256_g.json": "50d3874bfbb905447694b3e64ffd7f07054485b542eae7f32d18bd38ecfde9ed"
+  },
+  "infinite_energy_density": -0.6762131210212609,
+  "open_size_differences": [
+    {
+      "sizes": [
+        24,
+        48
+      ],
+      "energy_difference_per_added_site": -0.676163138451952,
+      "difference_from_infinite": 4.9982569308881786e-05
+    },
+    {
+      "sizes": [
+        48,
+        96
+      ],
+      "energy_difference_per_added_site": -0.6761998418783793,
+      "difference_from_infinite": 1.3279142881517103e-05
+    },
+    {
+      "sizes": [
+        96,
+        192
+      ],
+      "energy_difference_per_added_site": -0.6762087908717757,
+      "difference_from_infinite": 4.330149485198831e-06
+    }
+  ],
+  "conditional_fits": [
+    {
+      "sizes": [
+        24,
+        48,
+        96
+      ],
+      "assumed_form": "E(L)=e*L+b+a/L",
+      "e_bulk": -0.676212076353855,
+      "e_boundary": -0.0882807328473684,
+      "a": -0.0563764629926027,
+      "difference_from_infinite": 1.0446674058028904e-06
+    },
+    {
+      "sizes": [
+        48,
+        96,
+        192
+      ],
+      "assumed_form": "E(L)=e*L+b+a/L",
+      "e_bulk": -0.6762117738695745,
+      "e_boundary": -0.08832429058376097,
+      "a": -0.05498261542834372,
+      "difference_from_infinite": 1.3471516863150512e-06
+    }
+  ],
+  "interpretation": "The finite open-chain differences approach the infinite-chain variational energy. The assumed inverse-size fits do not certify a global minimum, a velocity, a gap, or a central charge."
+}

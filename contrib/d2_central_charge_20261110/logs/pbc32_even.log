@@ -1,0 +1,46 @@
+{"sweep": 1, "E": -12.844665250960416, "Delta_E": null, "Delta_S": 0.6679165311928512, "max_trunc_err": 7.560244909312593e-06, "max_chi": 16, "local_solver": {"status": "residual_threshold_pass_no_global_certificate", "updates": 60, "max_absolute_residual": 3.582758231031357e-09, "residual_threshold": 1e-08, "residual_threshold_pass": true, "iteration_cap_count": 0, "max_N_lanczos": 114, "sweep": 1}}
+{"sweep": 2, "E": -12.964033776319601, "Delta_E": -0.11936852535918518, "Delta_S": 0.34128858009834917, "max_trunc_err": 0.00016101146629661205, "max_chi": 16, "local_solver": {"status": "residual_threshold_pass_no_global_certificate", "updates": 60, "max_absolute_residual": 3.811252522739626e-09, "residual_threshold": 1e-08, "residual_threshold_pass": true, "iteration_cap_count": 0, "max_N_lanczos": 103, "sweep": 2}}
+{"sweep": 3, "E": -13.015626902359756, "Delta_E": -0.05159312604015476, "Delta_S": 0.0800749447002227, "max_trunc_err": 1.7685353261145567e-05, "max_chi": 32, "local_solver": {"status": "residual_threshold_pass_no_global_certificate", "updates": 60, "max_absolute_residual": 2.6104383188071724e-09, "residual_threshold": 1e-08, "residual_threshold_pass": true, "iteration_cap_count": 0, "max_N_lanczos": 123, "sweep": 3}}
+{"sweep": 4, "E": -13.018061778658398, "Delta_E": -0.002434876298641697, "Delta_S": 0.10393759337368813, "max_trunc_err": 3.8481304825050644e-05, "max_chi": 32, "local_solver": {"status": "residual_threshold_pass_no_global_certificate", "updates": 60, "max_absolute_residual": 2.7006130872445296e-09, "residual_threshold": 1e-08, "residual_threshold_pass": true, "iteration_cap_count": 0, "max_N_lanczos": 119, "sweep": 4}}
+{"sweep": 5, "E": -13.01968311504101, "Delta_E": -0.001621336382612526, "Delta_S": 0.0168643007689806, "max_trunc_err": 1.0946776576117722e-07, "max_chi": 128, "local_solver": {"status": "residual_threshold_unmet", "updates": 60, "max_absolute_residual": 1.0004866043847069e-08, "residual_threshold": 1e-08, "residual_threshold_pass": false, "iteration_cap_count": 0, "max_N_lanczos": 153, "sweep": 5}}
+{"sweep": 6, "E": -13.019685281926376, "Delta_E": -2.166885366250426e-06, "Delta_S": 0.0037746347144884673, "max_trunc_err": 2.0543283621191364e-07, "max_chi": 128, "local_solver": {"status": "residual_threshold_pass_no_global_certificate", "updates": 60, "max_absolute_residual": 5.483475224229319e-09, "residual_threshold": 1e-08, "residual_threshold_pass": true, "iteration_cap_count": 0, "max_N_lanczos": 127, "sweep": 6}}
+{"sweep": 7, "E": -13.019685344765179, "Delta_E": -6.283880260582464e-08, "Delta_S": 4.2736146277144726e-05, "max_trunc_err": 2.1429003821455183e-07, "max_chi": 128, "local_solver": {"status": "residual_threshold_pass_no_global_certificate", "updates": 60, "max_absolute_residual": 7.168384163737609e-09, "residual_threshold": 1e-08, "residual_threshold_pass": true, "iteration_cap_count": 0, "max_N_lanczos": 102, "sweep": 7}}
+{"sweep": 8, "E": -13.019685368326673, "Delta_E": -2.3561494089108237e-08, "Delta_S": 4.811498126366942e-06, "max_trunc_err": 2.1059060937843613e-07, "max_chi": 128, "local_solver": {"status": "residual_threshold_unmet", "updates": 60, "max_absolute_residual": 1.3060034726907693e-08, "residual_threshold": 1e-08, "residual_threshold_pass": false, "iteration_cap_count": 0, "max_N_lanczos": 102, "sweep": 8}}
+{"sweep": 9, "E": -13.019685382300917, "Delta_E": -1.397424398419389e-08, "Delta_S": 9.172948109981149e-07, "max_trunc_err": 2.0633111973133474e-07, "max_chi": 128, "local_solver": {"status": "residual_threshold_unmet", "updates": 60, "max_absolute_residual": 1.2499087387110314e-08, "residual_threshold": 1e-08, "residual_threshold_pass": false, "iteration_cap_count": 0, "max_N_lanczos": 102, "sweep": 9}}
+{"sweep": 10, "E": -13.019685400303116, "Delta_E": -1.8002198842737016e-08, "Delta_S": -1.9859391620080658e-07, "max_trunc_err": 2.0403827806570876e-07, "max_chi": 128, "local_solver": {"status": "residual_threshold_pass_no_global_certificate", "updates": 60, "max_absolute_residual": 8.333062624705298e-09, "residual_threshold": 1e-08, "residual_threshold_pass": true, "iteration_cap_count": 0, "max_N_lanczos": 101, "sweep": 10}}
+{"sweep": 11, "E": -13.019685402693787, "Delta_E": -2.3906707724563603e-09, "Delta_S": -6.871046798195835e-08, "max_trunc_err": 2.0289228426774189e-07, "max_chi": 128, "local_solver": {"status": "residual_threshold_pass_no_global_certificate", "updates": 60, "max_absolute_residual": 5.6735416921937456e-09, "residual_threshold": 1e-08, "residual_threshold_pass": true, "iteration_cap_count": 0, "max_N_lanczos": 100, "sweep": 11}}
+{"sweep": 12, "E": -13.019685402519244, "Delta_E": 1.745430466826292e-10, "Delta_S": 2.439876967130772e-08, "max_trunc_err": 2.0232145439995896e-07, "max_chi": 128, "local_solver": {"status": "residual_threshold_pass_no_global_certificate", "updates": 60, "max_absolute_residual": 3.74152849772819e-09, "residual_threshold": 1e-08, "residual_threshold_pass": true, "iteration_cap_count": 0, "max_N_lanczos": 99, "sweep": 12}}
+{"sweep": 13, "E": -13.019685402002024, "Delta_E": 5.172200445713315e-10, "Delta_S": 4.3310860897705084e-08, "max_trunc_err": 1.008864589206914e-07, "max_chi": 128, "local_solver": {"status": "residual_threshold_pass_no_global_certificate", "updates": 60, "max_absolute_residual": 2.2502947814078158e-09, "residual_threshold": 1e-08, "residual_threshold_pass": true, "iteration_cap_count": 0, "max_N_lanczos": 99, "sweep": 13}}
+{"sweep": 14, "E": -13.01968540201047, "Delta_E": -8.446576771348191e-12, "Delta_S": 4.143811960233279e-09, "max_trunc_err": 1.008800678696211e-07, "max_chi": 128, "local_solver": {"status": "residual_threshold_pass_no_global_certificate", "updates": 60, "max_absolute_residual": 2.2503588932531565e-09, "residual_threshold": 1e-08, "residual_threshold_pass": true, "iteration_cap_count": 0, "max_N_lanczos": 99, "sweep": 14}}
+WARNING:tenpy.algorithms.dmrg:final DMRG state not in canonical form up to norm_tol=1.00e-05: norm_err=1.35e-05
+Traceback (most recent call last):
+  File "/Users/pace/Documents/GitHub/cd-conjecture/contrib/d2_central_charge_20261110/run.py", line 126, in <module>
+    record['entropy_stats']={key:stats(value,L,3*2*float(key)/(float(key)+1)) for key,value in ent.items()}
+                    ^^^^^^
+  File "/Users/pace/Documents/GitHub/cd-conjecture/contrib/d2_central_charge_20261110/run.py", line 124, in main
+    record['correlation_lengths']=np.atleast_1d(psi.correlation_length(target=4,charge_sector=None)).tolist()
+                                                             ^^^^^^
+  File "/Users/pace/Documents/GitHub/cd-conjecture/contrib/d2_central_charge_20261110/run.py", line 114, in run
+    final_sweep_norm_small=float(st['norm_err'][-1])<1e-5,
+^^^^^^^^^^^^^^^^^^
+  File "/Users/pace/Documents/GitHub/cd-conjecture/contrib/d2_central_charge_20261110/run.py", line 24, in atomic
+    e=p['hz']*psi.expectation_value_term([('Sigmaz',i)])
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/json/encoder.py", line 202, in encode
+    chunks = list(chunks)
+             ^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/json/encoder.py", line 432, in _iterencode
+    yield from _iterencode_dict(o, _current_indent_level)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/json/encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/json/encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/json/encoder.py", line 439, in _iterencode
+    o = _default(o)
+        ^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/json/encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type Config is not JSON serializable

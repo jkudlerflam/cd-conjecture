@@ -1,0 +1,375 @@
+{
+  "inventory": [
+    {
+      "status": "done",
+      "converged": false,
+      "model": "candidate",
+      "L": 2,
+      "chi": 64,
+      "gauge": true,
+      "E_physical": -0.6762128808039337,
+      "max_tangent": 1.0334056681939668e-07,
+      "convergence_checks": {
+        "recent_energy_stable": true,
+        "recent_entropy_stable": true,
+        "norm_small": true,
+        "final_sweep_norm_small": true,
+        "split_small": true,
+        "tangent_small": false,
+        "energy_agreement": true
+      },
+      "error": null,
+      "record": "vumps_results/candidate_infinite_L2_P0_s17_chi64_g_one_vumps.json",
+      "record_sha256": "6ddaba75088d03f9f3d938d85c00d6ef6dbe078119d5f9c3eac6657578254895",
+      "S_renyi": {
+        "1": 1.0691934555656522,
+        "2": 0.7992887807106872,
+        "3": 0.6880805849092042
+      },
+      "S": 1.0691934555656522,
+      "xi": 98.32778969383948,
+      "original_dmrg_source": "contrib/d2_central_charge_20261110/results/candidate_infinite_L2_P0_s17_chi64_g_one.json",
+      "delta_E_from_dmrg": -5.399236613357061e-12,
+      "delta_S_from_dmrg": 1.029245706885007e-06
+    },
+    {
+      "status": "done",
+      "converged": true,
+      "model": "candidate",
+      "L": 2,
+      "chi": 64,
+      "gauge": true,
+      "E_physical": -0.6762128808039928,
+      "max_tangent": 1.2247605812252454e-08,
+      "convergence_checks": {
+        "recent_energy_stable": true,
+        "recent_entropy_stable": true,
+        "norm_small": true,
+        "final_sweep_norm_small": true,
+        "split_small": true,
+        "tangent_small": true,
+        "energy_agreement": true
+      },
+      "error": null,
+      "record": "vumps_results/candidate_infinite_L2_P0_s17_chi64_g_one_vumps_vumps.json",
+      "record_sha256": "205579a06bb00f53b65dcdc436658a85eb17ddcf9fd6e80b945d6337a97a58f1",
+      "S_renyi": {
+        "1": 1.0691936703373544,
+        "2": 0.7992890141665914,
+        "3": 0.6880808058133818
+      },
+      "S": 1.0691936703373544,
+      "xi": 98.31395499239645,
+      "original_dmrg_source": "contrib/d2_central_charge_20261110/results/candidate_infinite_L2_P0_s17_chi64_g_one.json",
+      "delta_E_from_dmrg": -5.45830047826712e-12,
+      "delta_S_from_dmrg": 1.2440174090855294e-06
+    },
+    {
+      "status": "done",
+      "converged": false,
+      "model": "candidate",
+      "L": 2,
+      "chi": 96,
+      "gauge": true,
+      "E_physical": -0.6762130667814197,
+      "max_tangent": 5.216529858034248e-07,
+      "convergence_checks": {
+        "recent_energy_stable": true,
+        "recent_entropy_stable": true,
+        "norm_small": true,
+        "final_sweep_norm_small": true,
+        "split_small": false,
+        "tangent_small": false,
+        "energy_agreement": true
+      },
+      "error": null,
+      "record": "vumps_results/candidate_infinite_L2_P0_s17_chi96_g_one_vumps.json",
+      "record_sha256": "589a4cc96f82aa4cebe52ed3b2c2d0e9a7b10418611a8cd61d1b5223f3815010",
+      "S_renyi": {
+        "1": 1.0841077862360353,
+        "2": 0.8080680980633306,
+        "3": 0.6957158511598724
+      },
+      "S": 1.0841077862360353,
+      "xi": 119.49894007976407,
+      "original_dmrg_source": "contrib/d2_central_charge_20261110/results/candidate_infinite_L2_P0_s17_chi96_g_one.json",
+      "delta_E_from_dmrg": -2.052158443177632e-11,
+      "delta_S_from_dmrg": 6.155559857390358e-07
+    },
+    {
+      "status": "done",
+      "converged": false,
+      "model": "candidate",
+      "L": 2,
+      "chi": 128,
+      "gauge": true,
+      "E_physical": -0.6762131052378858,
+      "max_tangent": 4.0841731875011937e-07,
+      "convergence_checks": {
+        "recent_energy_stable": true,
+        "recent_entropy_stable": true,
+        "norm_small": true,
+        "final_sweep_norm_small": true,
+        "split_small": true,
+        "tangent_small": false,
+        "energy_agreement": true
+      },
+      "error": null,
+      "record": "vumps_results/candidate_infinite_L2_P0_s17_chi128_g_one_vumps.json",
+      "record_sha256": "ff758492f0ad8a622fb3d482d5c78486a09c57e31eb23fae41d3763c83407396",
+      "S_renyi": {
+        "1": 1.0898398548560022,
+        "2": 0.8111625295155773,
+        "3": 0.6983602281856321
+      },
+      "S": 1.0898398548560022,
+      "xi": 134.81048029548387,
+      "original_dmrg_source": "contrib/d2_central_charge_20261110/results/candidate_infinite_L2_P0_s17_chi128_g_one.json",
+      "delta_E_from_dmrg": -1.0588196985850118e-12,
+      "delta_S_from_dmrg": 5.844640377672405e-06
+    },
+    {
+      "status": "done",
+      "converged": false,
+      "model": "candidate",
+      "L": 2,
+      "chi": 128,
+      "gauge": true,
+      "E_physical": -0.6762131052448866,
+      "max_tangent": 1.0736684075087782e-06,
+      "convergence_checks": {
+        "recent_energy_stable": true,
+        "recent_entropy_stable": true,
+        "norm_small": true,
+        "final_sweep_norm_small": true,
+        "split_small": false,
+        "tangent_small": false,
+        "energy_agreement": true
+      },
+      "error": null,
+      "record": "vumps_results/candidate_infinite_L2_P0_s17_chi128_g_one_vumps_vumps.json",
+      "record_sha256": "30251a989c97856d9e1694ce2a78a10e3ec46cfc771a14e9fbd27dc34cba1af4",
+      "S_renyi": {
+        "1": 1.0898666689162502,
+        "2": 0.8111764322828284,
+        "3": 0.6983719960570236
+      },
+      "S": 1.0898666689162502,
+      "xi": 134.9350158405636,
+      "original_dmrg_source": "contrib/d2_central_charge_20261110/results/candidate_infinite_L2_P0_s17_chi128_g_one.json",
+      "delta_E_from_dmrg": -8.059664047266324e-12,
+      "delta_S_from_dmrg": 3.265870062563181e-05
+    },
+    {
+      "status": "done",
+      "converged": false,
+      "model": "candidate",
+      "L": 2,
+      "chi": 192,
+      "gauge": true,
+      "E_physical": -0.6762131190239951,
+      "max_tangent": 1.2883712175426967e-06,
+      "convergence_checks": {
+        "recent_energy_stable": true,
+        "recent_entropy_stable": true,
+        "norm_small": true,
+        "final_sweep_norm_small": true,
+        "split_small": false,
+        "tangent_small": false,
+        "energy_agreement": true
+      },
+      "error": null,
+      "record": "vumps_results/candidate_infinite_L2_P0_s17_chi192_g_vumps.json",
+      "record_sha256": "797b109339ec0243d7b03f8cd89acf70b0fd4a1d2c6c71e47d2acd62203bd16d",
+      "S_renyi": {
+        "1": 1.0933207249365569,
+        "2": 0.8128996944809685,
+        "3": 0.6998248611265439
+      },
+      "S": 1.0933207249365569,
+      "xi": 152.18452398550127,
+      "original_dmrg_source": "contrib/d2_central_charge_20261110/results/candidate_infinite_L2_P0_s17_chi192_g.json",
+      "delta_E_from_dmrg": -4.634104211476142e-10,
+      "delta_S_from_dmrg": 3.104860109615082e-05
+    },
+    {
+      "status": "done",
+      "converged": false,
+      "model": "candidate",
+      "L": 2,
+      "chi": 256,
+      "gauge": true,
+      "E_physical": -0.6762131211507917,
+      "max_tangent": 4.5421994727408246e-07,
+      "convergence_checks": {
+        "recent_energy_stable": true,
+        "recent_entropy_stable": true,
+        "norm_small": true,
+        "final_sweep_norm_small": true,
+        "split_small": true,
+        "tangent_small": false,
+        "energy_agreement": true
+      },
+      "error": null,
+      "record": "vumps_results/candidate_infinite_L2_P0_s17_chi256_g_vumps.json",
+      "record_sha256": "8f959d0a931f250e4f4badfb919406782037965b71d71b3d2e44a8e9d5b4ed70",
+      "S_renyi": {
+        "1": 1.0941922194870195,
+        "2": 0.8132943874110384,
+        "3": 0.7001528409875174
+      },
+      "S": 1.0941922194870195,
+      "xi": 162.39074868177465,
+      "original_dmrg_source": "contrib/d2_central_charge_20261110/results/candidate_infinite_L2_P0_s17_chi256_g.json",
+      "delta_E_from_dmrg": -1.2953083050604164e-10,
+      "delta_S_from_dmrg": 5.223308423785156e-06
+    },
+    {
+      "status": "done",
+      "converged": false,
+      "model": "candidate",
+      "L": 2,
+      "chi": 256,
+      "gauge": true,
+      "E_physical": -0.6762131211531407,
+      "max_tangent": 1.8289400467053493e-07,
+      "convergence_checks": {
+        "recent_energy_stable": true,
+        "recent_entropy_stable": true,
+        "norm_small": true,
+        "final_sweep_norm_small": true,
+        "split_small": true,
+        "tangent_small": false,
+        "energy_agreement": true
+      },
+      "error": null,
+      "record": "vumps_results/candidate_infinite_L2_P0_s17_chi256_g_vumps_vumps.json",
+      "record_sha256": "971ee1e96ee24678521665a4c4040689b5123f0649b426ebdfc07a554670d05f",
+      "S_renyi": {
+        "1": 1.0941896220487672,
+        "2": 0.8132933772657811,
+        "3": 0.7001520253004391
+      },
+      "S": 1.0941896220487672,
+      "xi": 162.31787753165852,
+      "original_dmrg_source": "contrib/d2_central_charge_20261110/results/candidate_infinite_L2_P0_s17_chi256_g.json",
+      "delta_E_from_dmrg": -1.3187984038154354e-10,
+      "delta_S_from_dmrg": 2.6258701715242694e-06
+    },
+    {
+      "status": "done",
+      "converged": true,
+      "model": "ising_critical",
+      "L": 2,
+      "chi": 24,
+      "gauge": false,
+      "E_physical": -1.2732395103742329,
+      "max_tangent": 9.006342377788753e-08,
+      "convergence_checks": {
+        "recent_energy_stable": true,
+        "recent_entropy_stable": true,
+        "norm_small": true,
+        "final_sweep_norm_small": true,
+        "split_small": true,
+        "tangent_small": true,
+        "energy_agreement": true
+      },
+      "error": null,
+      "record": "vumps_results/ising_critical_infinite_L2_P0_s23_chi24_a1_vumps.json",
+      "record_sha256": "84f0ef027ad0fbc9f886cac514dd7f7f813175a03ead54beb63ea1321cdaf018",
+      "S_renyi": {
+        "1": 0.5291671288359003,
+        "2": 0.3245803542375198,
+        "3": 0.26129925902845824
+      },
+      "S": 0.5291671288359003,
+      "xi": 307.940061891284,
+      "original_dmrg_source": "contrib/d2_central_charge_20261110/results/ising_critical_infinite_L2_P0_s23_chi24_a1.json",
+      "delta_E_from_dmrg": -6.209572855908618e-10,
+      "delta_S_from_dmrg": -0.00030566411048460473
+    }
+  ],
+  "families": [
+    {
+      "model": "candidate",
+      "L": 2,
+      "gauge": true,
+      "points": [
+        {
+          "status": "done",
+          "converged": true,
+          "model": "candidate",
+          "L": 2,
+          "chi": 64,
+          "gauge": true,
+          "E_physical": -0.6762128808039928,
+          "max_tangent": 1.2247605812252454e-08,
+          "convergence_checks": {
+            "recent_energy_stable": true,
+            "recent_entropy_stable": true,
+            "norm_small": true,
+            "final_sweep_norm_small": true,
+            "split_small": true,
+            "tangent_small": true,
+            "energy_agreement": true
+          },
+          "error": null,
+          "record": "vumps_results/candidate_infinite_L2_P0_s17_chi64_g_one_vumps_vumps.json",
+          "record_sha256": "205579a06bb00f53b65dcdc436658a85eb17ddcf9fd6e80b945d6337a97a58f1",
+          "S_renyi": {
+            "1": 1.0691936703373544,
+            "2": 0.7992890141665914,
+            "3": 0.6880808058133818
+          },
+          "S": 1.0691936703373544,
+          "xi": 98.31395499239645,
+          "original_dmrg_source": "contrib/d2_central_charge_20261110/results/candidate_infinite_L2_P0_s17_chi64_g_one.json",
+          "delta_E_from_dmrg": -5.45830047826712e-12,
+          "delta_S_from_dmrg": 1.2440174090855294e-06
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "model": "ising_critical",
+      "L": 2,
+      "gauge": false,
+      "points": [
+        {
+          "status": "done",
+          "converged": true,
+          "model": "ising_critical",
+          "L": 2,
+          "chi": 24,
+          "gauge": false,
+          "E_physical": -1.2732395103742329,
+          "max_tangent": 9.006342377788753e-08,
+          "convergence_checks": {
+            "recent_energy_stable": true,
+            "recent_entropy_stable": true,
+            "norm_small": true,
+            "final_sweep_norm_small": true,
+            "split_small": true,
+            "tangent_small": true,
+            "energy_agreement": true
+          },
+          "error": null,
+          "record": "vumps_results/ising_critical_infinite_L2_P0_s23_chi24_a1_vumps.json",
+          "record_sha256": "84f0ef027ad0fbc9f886cac514dd7f7f813175a03ead54beb63ea1321cdaf018",
+          "S_renyi": {
+            "1": 0.5291671288359003,
+            "2": 0.3245803542375198,
+            "3": 0.26129925902845824
+          },
+          "S": 0.5291671288359003,
+          "xi": 307.940061891284,
+          "original_dmrg_source": "contrib/d2_central_charge_20261110/results/ising_critical_infinite_L2_P0_s23_chi24_a1.json",
+          "delta_E_from_dmrg": -6.209572855908618e-10,
+          "delta_S_from_dmrg": -0.00030566411048460473
+        }
+      ],
+      "pairs": []
+    }
+  ],
+  "interpretation": "Separate fixed-chi exact-environment refinements. Original failed records remain excluded; no CFT is presumed."
+}

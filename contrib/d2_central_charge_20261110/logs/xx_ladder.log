@@ -1,0 +1,6 @@
+START xx_infinite_L2_P0_s23_chi24
+Traceback (most recent call last):
+  File "/Users/pace/Documents/GitHub/cd-conjecture/contrib/d2_central_charge_20261110/ladder.py", line 24, in <module>
+    if rc:raise RuntimeError(f'{label} exit {rc}')
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: xx_infinite_L2_P0_s23_chi24 exit 1

@@ -1,0 +1,18 @@
+[
+  {
+    "source": "contrib/d2_central_charge_20261110/checkpoints_local/candidate_periodic_L48_P1_s17_chi128_g.pkl",
+    "snapshot": "contrib/d2_central_charge_20261110/checkpoints_local/warm_L48_P1_chi128_g.pkl",
+    "sha256": "fbc8fe805b869a3ff77509013d1377fb663c18a062c360641acf7f178847617d",
+    "checkpoint_kind": "sweep_boundary",
+    "checkpoint_sweep": 16,
+    "purpose": "Immutable initialization for odd chi192; not an accepted chi128 result."
+  },
+  {
+    "source": "contrib/d2_central_charge_20261110/checkpoints_local/candidate_periodic_L64_P1_s17_chi128_g.pkl",
+    "snapshot": "contrib/d2_central_charge_20261110/checkpoints_local/warm_L64_P1_chi128_g.pkl",
+    "sha256": "d93e69a2a37b16fa250b03fa40568a5e65f92c3c1d012b0ba2e2077d9dc32c31",
+    "checkpoint_kind": "sweep_boundary",
+    "checkpoint_sweep": 12,
+    "purpose": "Immutable initialization for odd chi192; not an accepted chi128 result."
+  }
+]

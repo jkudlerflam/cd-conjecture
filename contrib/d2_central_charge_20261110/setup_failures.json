@@ -1,0 +1,10 @@
+[
+  {
+    "label": "candidate_open_L48_P0_s17_chi128_g",
+    "status": "setup_failed_before_record_or_optimization",
+    "reason": "Open-boundary coupling array had length L instead of L-1; TeNPy rejected model construction.",
+    "source_sha256": "d6048a894fef3225a5b1af999405c62b1899d34572976a983c3e607424cb95c8",
+    "log": "logs/obc48_crosscheck.log",
+    "recovery": "Correct the open-boundary array length; retain the log and restart under the same previously unused result label."
+  }
+]

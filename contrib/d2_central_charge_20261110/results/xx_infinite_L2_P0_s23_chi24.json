@@ -1,0 +1,35 @@
+{
+  "L": 2,
+  "geometry": "infinite",
+  "parity": 0,
+  "couplings": {
+    "Jx": 0.5,
+    "Jy": 0.5,
+    "Jz": 0.0,
+    "Dz": 0.0,
+    "Dy": 0.0,
+    "hz": 0.0
+  },
+  "model": "xx",
+  "seed": 23,
+  "chi": 24,
+  "status": "postprocessing_failed",
+  "checkpoint": "/Users/pace/Documents/GitHub/cd-conjecture/contrib/d2_central_charge_20261110/checkpoints_local/xx_infinite_L2_P0_s23_chi24.pkl",
+  "config": {
+    "geometry": "infinite",
+    "model": "xx",
+    "L": 2,
+    "parity": 0,
+    "seed": 23,
+    "chi": 24,
+    "sweeps": 100,
+    "load": "contrib/d2_central_charge_20261110/checkpoints_local/xx_infinite_L2_P0_s23_chi16.pkl"
+  },
+  "tenpy_version": "1.1.1",
+  "source_hashes": {
+    "contrib/d2_central_charge_20261110/run.py": "efd2c5f2c876699a0aaebef01b19fe5231cfd01a939d57ea8478d1b445c35cdd",
+    "contrib/d2_tenpy_20261109/run.py": "162f416856b4a578abf3f2966b2d601c4d1538a6aee17fb153d3a75dd2927350",
+    "contrib/d2_tenpy_20261109/independent_infinite_check.py": "11a0ed42b91bbdbe0b026a993943a7ab5e7f500c292b4b3b683961b4f445e3a3"
+  },
+  "failure": "Numerical optimization and final checkpoint completed; engine mutated options into non-JSON Config. Retry from final checkpoint is required; no physics estimate taken from this record."
+}

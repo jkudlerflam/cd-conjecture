@@ -1,0 +1,26 @@
+Traceback (most recent call last):
+  File "/Users/pace/Documents/GitHub/cd-conjecture/contrib/d2_central_charge_20261110/run.py", line 199, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/Users/pace/Documents/GitHub/cd-conjecture/contrib/d2_central_charge_20261110/run.py", line 197, in main
+    a=ap.parse_args();logging.basicConfig(level=logging.WARNING);run(a)
+                                                                 ^^^^^^
+  File "/Users/pace/Documents/GitHub/cd-conjecture/contrib/d2_central_charge_20261110/run.py", line 110, in run
+    model=(GaugeChain if a.gauge else PauliChain)(dict(L=L,bc_MPS='infinite' if infinite else 'finite',
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/private/tmp/cd-conjecture-venv/lib/python3.12/site-packages/tenpy/models/model.py", line 2034, in __init__
+    self.init_terms(model_params)
+  File "/Users/pace/Documents/GitHub/cd-conjecture/contrib/d2_central_charge_20261110/run.py", line 53, in init_terms
+    self.add_coupling(p['Jx']+s*p['Dz'],0,'Sigmax',0,'Sigmax',1)
+  File "/private/tmp/cd-conjecture-venv/lib/python3.12/site-packages/tenpy/models/model.py", line 1944, in add_term_function
+    res = f(self, *args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/private/tmp/cd-conjecture-venv/lib/python3.12/site-packages/tenpy/models/model.py", line 1207, in add_coupling
+    mps_i, mps_j, strength_vals = self.lat.possible_couplings(u1, u2, dx, strength)
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/private/tmp/cd-conjecture-venv/lib/python3.12/site-packages/tenpy/models/lattice.py", line 1239, in possible_couplings
+    strength = to_array(strength, coupling_shape)  # tile to correct shape
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/private/tmp/cd-conjecture-venv/lib/python3.12/site-packages/tenpy/tools/misc.py", line 126, in to_array
+    raise ValueError(f'incommensurate len for tiling from {a.shape[i]:d} to {shape[i]:d}')
+ValueError: incommensurate len for tiling from 48 to 47

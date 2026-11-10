@@ -1,0 +1,715 @@
+{
+  "counts": {
+    "done": 74,
+    "postprocessing_failed": 4
+  },
+  "errors": [],
+  "records": [
+    {
+      "source": "candidate_infinite_L2_P0_s17_chi128_g.json",
+      "status": "done",
+      "converged": true,
+      "entropy_reproduction_error": 0.0,
+      "checkpoint_verified": true,
+      "all_current_gates_pass": true
+    },
+    {
+      "source": "candidate_infinite_L2_P0_s17_chi128_g_one.json",
+      "status": "done",
+      "converged": true,
+      "entropy_reproduction_error": 0.0,
+      "checkpoint_verified": true,
+      "all_current_gates_pass": true
+    },
+    {
+      "source": "candidate_infinite_L2_P0_s17_chi16.json",
+      "status": "done",
+      "converged": true,
+      "entropy_reproduction_error": 0.0,
+      "checkpoint_verified": true,
+      "all_current_gates_pass": true
+    },
+    {
+      "source": "candidate_infinite_L2_P0_s17_chi16_g.json",
+      "status": "done",
+      "converged": true,
+      "entropy_reproduction_error": 0.0,
+      "checkpoint_verified": true,
+      "all_current_gates_pass": true
+    },
+    {
+      "source": "candidate_infinite_L2_P0_s17_chi16_g_one.json",
+      "status": "done",
+      "converged": true,
+      "entropy_reproduction_error": 0.0,
+      "checkpoint_verified": true,
+      "all_current_gates_pass": true
+    },
+    {
+      "source": "candidate_infinite_L2_P0_s17_chi192_g.json",
+      "status": "done",
+      "converged": true,
+      "entropy_reproduction_error": 0.0,
+      "checkpoint_verified": true,
+      "all_current_gates_pass": true
+    },
+    {
+      "source": "candidate_infinite_L2_P0_s17_chi24.json",
+      "status": "postprocessing_failed",
+      "converged": null
+    },
+    {
+      "source": "candidate_infinite_L2_P0_s17_chi24_a1.json",
+      "status": "done",
+      "converged": true,
+      "entropy_reproduction_error": 0.0,
+      "checkpoint_verified": true,
+      "all_current_gates_pass": true
+    },
+    {
+      "source": "candidate_infinite_L2_P0_s17_chi24_g.json",
+      "status": "done",
+      "converged": true,
+      "entropy_reproduction_error": 0.0,
+      "checkpoint_verified": true,
+      "all_current_gates_pass": true
+    },
+    {
+      "source": "candidate_infinite_L2_P0_s17_chi24_g_one.json",
+      "status": "done",
+      "converged": true,
+      "entropy_reproduction_error": 0.0,
+      "checkpoint_verified": true,
+      "all_current_gates_pass": true
+    },
+    {
+      "source": "candidate_infinite_L2_P0_s17_chi256_g.json",
+      "status": "done",
+      "converged": true,
+      "entropy_reproduction_error": 0.0,
+      "checkpoint_verified": true,
+      "all_current_gates_pass": true
+    },
+    {
+      "source": "candidate_infinite_L2_P0_s17_chi32.json",
+      "status": "done",
+      "converged": false,
+      "entropy_reproduction_error": 0.0,
+      "checkpoint_verified": true,
+      "all_current_gates_pass": false
+    },
+    {
+      "source": "candidate_infinite_L2_P0_s17_chi32_g.json",
+      "status": "done",
+      "converged": false,
+      "entropy_reproduction_error": 0.0,
+      "checkpoint_verified": true,
+      "all_current_gates_pass": false
+    },
+    {
+      "source": "candidate_infinite_L2_P0_s17_chi32_g_one.json",
+      "status": "done",
+      "converged": true,
+      "entropy_reproduction_error": 0.0,
+      "checkpoint_verified": true,
+      "all_current_gates_pass": true
+    },
+    {
+      "source": "candidate_infinite_L2_P0_s17_chi32_one.json",
+      "status": "done",
+      "converged": false,
+      "entropy_reproduction_error": 0.0,
+      "checkpoint_verified": true,
+      "all_current_gates_pass": false
+    },
+    {
+      "source": "candidate_infinite_L2_P0_s17_chi48.json",
+      "status": "done",
+      "converged": true,
+      "entropy_reproduction_error": 0.0,
+      "checkpoint_verified": true,
+      "all_current_gates_pass": true
+    },
+    {
+      "source": "candidate_infinite_L2_P0_s17_chi48_g.json",
+      "status": "done",
+      "converged": true,
+      "entropy_reproduction_error": 0.0,
+      "checkpoint_verified": true,
+      "all_current_gates_pass": true
+    },
+    {
+      "source": "candidate_infinite_L2_P0_s17_chi48_g_one.json",
+      "status": "done",
+      "converged": true,
+      "entropy_reproduction_error": 0.0,
+      "checkpoint_verified": true,
+      "all_current_gates_pass": true
+    },
+    {
+      "source": "candidate_infinite_L2_P0_s17_chi64.json",
+      "status": "done",
+      "converged": true,
+      "entropy_reproduction_error": 0.0,
+      "checkpoint_verified": true,
+      "all_current_gates_pass": true
+    },
+    {
+      "source": "candidate_infinite_L2_P0_s17_chi64_g.json",
+      "status": "done",
+      "converged": true,
+      "entropy_reproduction_error": 0.0,
+      "checkpoint_verified": true,
+      "all_current_gates_pass": true
+    },
+    {
+      "source": "candidate_infinite_L2_P0_s17_chi64_g_one.json",
+      "status": "done",
+      "converged": true,
+      "entropy_reproduction_error": 0.0,
+      "checkpoint_verified": true,
+      "all_current_gates_pass": true
+    },
+    {
+      "source": "candidate_infinite_L2_P0_s17_chi96_g.json",
+      "status": "done",
+      "converged": true,
+      "entropy_reproduction_error": 0.0,
+      "checkpoint_verified": true,
+      "all_current_gates_pass": true
+    },
+    {
+      "source": "candidate_infinite_L2_P0_s17_chi96_g_one.json",
+      "status": "done",
+      "converged": true,
+      "entropy_reproduction_error": 0.0,
+      "checkpoint_verified": true,
+      "all_current_gates_pass": true
+    },
+    {
+      "source": "candidate_infinite_L4_P0_s23_chi24.json",
+      "status": "done",
+      "converged": true,
+      "entropy_reproduction_error": 0.0,
+      "checkpoint_verified": true,
+      "all_current_gates_pass": true
+    },
+    {
+      "source": "candidate_infinite_L4_P0_s23_chi96.json",
+      "status": "done",
+      "converged": true,
+      "entropy_reproduction_error": 0.0,
+      "checkpoint_verified": true,
+      "all_current_gates_pass": true
+    },
+    {
+      "source": "candidate_open_L48_P0_s17_chi128_g.json",
+      "status": "done",
+      "converged": true,
+      "entropy_reproduction_error": 0.0,
+      "checkpoint_verified": true,
+      "all_current_gates_pass": true
+    },
+    {
+      "source": "candidate_periodic_L16_P0_s17_chi128.json",
+      "status": "done",
+      "converged": true,
+      "entropy_reproduction_error": 0.0,
+      "checkpoint_verified": true,
+      "all_current_gates_pass": true
+    },
+    {
+      "source": "candidate_periodic_L32_P0_s17_chi128.json",
+      "status": "postprocessing_failed",
+      "converged": null
+    },
+    {
+      "source": "candidate_periodic_L32_P0_s17_chi192.json",
+      "status": "done",
+      "converged": true,
+      "entropy_reproduction_error": 0.0,
+      "checkpoint_verified": true,
+      "all_current_gates_pass": true
+    },
+    {
+      "source": "candidate_periodic_L32_P1_s17_chi128.json",
+      "status": "postprocessing_failed",
+      "converged": null
+    },
+    {
+      "source": "candidate_periodic_L32_P1_s17_chi192.json",
+      "status": "done",
+      "converged": false,
+      "entropy_reproduction_error": 0.0,
+      "checkpoint_verified": true,
+      "all_current_gates_pass": false
+    },
+    {
+      "source": "candidate_periodic_L32_P1_s17_chi192_one.json",
+      "status": "done",
+      "converged": true,
+      "entropy_reproduction_error": 0.0,
+      "checkpoint_verified": true,
+      "all_current_gates_pass": true
+    },
+    {
+      "source": "candidate_periodic_L48_P0_s17_chi128_g.json",
+      "status": "done",
+      "converged": false,
+      "entropy_reproduction_error": 0.0,
+      "checkpoint_verified": true,
+      "all_current_gates_pass": false
+    },
+    {
+      "source": "candidate_periodic_L48_P0_s17_chi128_g_one.json",
+      "status": "done",
+      "converged": false,
+      "entropy_reproduction_error": 0.0,
+      "checkpoint_verified": true,
+      "all_current_gates_pass": false
+    },
+    {
+      "source": "candidate_periodic_L48_P0_s17_chi128_g_one_a1.json",
+      "status": "done",
+      "converged": true,
+      "entropy_reproduction_error": 0.0,
+      "checkpoint_verified": true,
+      "all_current_gates_pass": true
+    },
+    {
+      "source": "candidate_periodic_L48_P0_s17_chi192_g.json",
+      "status": "done",
+      "converged": false,
+      "entropy_reproduction_error": 0.0,
+      "checkpoint_verified": true,
+      "all_current_gates_pass": false
+    },
+    {
+      "source": "candidate_periodic_L48_P0_s17_chi192_g_one.json",
+      "status": "done",
+      "converged": true,
+      "entropy_reproduction_error": 0.0,
+      "checkpoint_verified": true,
+      "all_current_gates_pass": true
+    },
+    {
+      "source": "candidate_periodic_L48_P1_s17_chi128_g.json",
+      "status": "done",
+      "converged": false,
+      "entropy_reproduction_error": 0.0,
+      "checkpoint_verified": true,
+      "all_current_gates_pass": false
+    },
+    {
+      "source": "candidate_periodic_L48_P1_s17_chi128_g_one.json",
+      "status": "done",
+      "converged": true,
+      "entropy_reproduction_error": 0.0,
+      "checkpoint_verified": true,
+      "all_current_gates_pass": true
+    },
+    {
+      "source": "candidate_periodic_L48_P1_s17_chi192_g.json",
+      "status": "done",
+      "converged": false,
+      "entropy_reproduction_error": 0.0,
+      "checkpoint_verified": true,
+      "all_current_gates_pass": false
+    },
+    {
+      "source": "candidate_periodic_L48_P1_s17_chi192_g_one.json",
+      "status": "done",
+      "converged": true,
+      "entropy_reproduction_error": 0.0,
+      "checkpoint_verified": true,
+      "all_current_gates_pass": true
+    },
+    {
+      "source": "candidate_periodic_L64_P0_s17_chi128_g.json",
+      "status": "done",
+      "converged": false,
+      "entropy_reproduction_error": 0.0,
+      "checkpoint_verified": true,
+      "all_current_gates_pass": false
+    },
+    {
+      "source": "candidate_periodic_L64_P0_s17_chi128_g_one.json",
+      "status": "done",
+      "converged": false,
+      "entropy_reproduction_error": 0.0,
+      "checkpoint_verified": true,
+      "all_current_gates_pass": false
+    },
+    {
+      "source": "candidate_periodic_L64_P0_s17_chi128_g_one_a1.json",
+      "status": "done",
+      "converged": true,
+      "entropy_reproduction_error": 0.0,
+      "checkpoint_verified": true,
+      "all_current_gates_pass": true
+    },
+    {
+      "source": "candidate_periodic_L64_P0_s17_chi192_g.json",
+      "status": "done",
+      "converged": false,
+      "entropy_reproduction_error": 0.0,
+      "checkpoint_verified": true,
+      "all_current_gates_pass": false
+    },
+    {
+      "source": "candidate_periodic_L64_P0_s17_chi192_g_one.json",
+      "status": "done",
+      "converged": false,
+      "entropy_reproduction_error": 0.0,
+      "checkpoint_verified": true,
+      "all_current_gates_pass": false
+    },
+    {
+      "source": "candidate_periodic_L64_P0_s17_chi192_g_one_a1.json",
+      "status": "done",
+      "converged": true,
+      "entropy_reproduction_error": 0.0,
+      "checkpoint_verified": true,
+      "all_current_gates_pass": true
+    },
+    {
+      "source": "candidate_periodic_L64_P1_s17_chi128_g.json",
+      "status": "done",
+      "converged": false,
+      "entropy_reproduction_error": 0.0,
+      "checkpoint_verified": true,
+      "all_current_gates_pass": false
+    },
+    {
+      "source": "candidate_periodic_L64_P1_s17_chi128_g_one.json",
+      "status": "done",
+      "converged": false,
+      "entropy_reproduction_error": 0.0,
+      "checkpoint_verified": true,
+      "all_current_gates_pass": false
+    },
+    {
+      "source": "candidate_periodic_L64_P1_s17_chi128_g_one_a1.json",
+      "status": "done",
+      "converged": false,
+      "entropy_reproduction_error": 0.0,
+      "checkpoint_verified": true,
+      "all_current_gates_pass": false
+    },
+    {
+      "source": "candidate_periodic_L64_P1_s17_chi192_g.json",
+      "status": "done",
+      "converged": false,
+      "entropy_reproduction_error": 0.0,
+      "checkpoint_verified": true,
+      "all_current_gates_pass": false
+    },
+    {
+      "source": "candidate_periodic_L64_P1_s17_chi192_g_one.json",
+      "status": "done",
+      "converged": true,
+      "entropy_reproduction_error": 0.0,
+      "checkpoint_verified": true,
+      "all_current_gates_pass": true
+    },
+    {
+      "source": "candidate_periodic_L8_P0_s17_chi16.json",
+      "status": "done",
+      "converged": true,
+      "entropy_reproduction_error": 0.0,
+      "checkpoint_verified": true,
+      "all_current_gates_pass": true
+    },
+    {
+      "source": "candidate_periodic_L8_P0_s17_chi16_g.json",
+      "status": "done",
+      "converged": true,
+      "entropy_reproduction_error": 0.0,
+      "checkpoint_verified": true,
+      "all_current_gates_pass": true
+    },
+    {
+      "source": "candidate_periodic_L8_P1_s17_chi16.json",
+      "status": "done",
+      "converged": false,
+      "entropy_reproduction_error": 0.0,
+      "checkpoint_verified": true,
+      "all_current_gates_pass": false
+    },
+    {
+      "source": "ising_critical_infinite_L2_P0_s23_chi16.json",
+      "status": "done",
+      "converged": true,
+      "entropy_reproduction_error": 0.0,
+      "checkpoint_verified": true,
+      "all_current_gates_pass": true
+    },
+    {
+      "source": "ising_critical_infinite_L2_P0_s23_chi16_one.json",
+      "status": "done",
+      "converged": true,
+      "entropy_reproduction_error": 0.0,
+      "checkpoint_verified": true,
+      "all_current_gates_pass": true
+    },
+    {
+      "source": "ising_critical_infinite_L2_P0_s23_chi24.json",
+      "status": "done",
+      "converged": false,
+      "entropy_reproduction_error": 0.0,
+      "checkpoint_verified": true,
+      "all_current_gates_pass": false
+    },
+    {
+      "source": "ising_critical_infinite_L2_P0_s23_chi24_a1.json",
+      "status": "done",
+      "converged": true,
+      "entropy_reproduction_error": 0.0,
+      "checkpoint_verified": true,
+      "all_current_gates_pass": true
+    },
+    {
+      "source": "ising_critical_infinite_L2_P0_s23_chi24_one.json",
+      "status": "done",
+      "converged": false,
+      "entropy_reproduction_error": 0.0,
+      "checkpoint_verified": true,
+      "all_current_gates_pass": false
+    },
+    {
+      "source": "ising_critical_infinite_L2_P0_s23_chi32.json",
+      "status": "done",
+      "converged": false,
+      "entropy_reproduction_error": 0.0,
+      "checkpoint_verified": true,
+      "all_current_gates_pass": false
+    },
+    {
+      "source": "ising_critical_infinite_L2_P0_s23_chi32_a1.json",
+      "status": "done",
+      "converged": false,
+      "entropy_reproduction_error": 0.0,
+      "checkpoint_verified": true,
+      "all_current_gates_pass": false
+    },
+    {
+      "source": "ising_critical_infinite_L2_P0_s23_chi32_one.json",
+      "status": "done",
+      "converged": false,
+      "entropy_reproduction_error": 0.0,
+      "checkpoint_verified": true,
+      "all_current_gates_pass": false
+    },
+    {
+      "source": "ising_critical_infinite_L2_P0_s23_chi48.json",
+      "status": "done",
+      "converged": false,
+      "entropy_reproduction_error": 0.0,
+      "checkpoint_verified": true,
+      "all_current_gates_pass": false
+    },
+    {
+      "source": "ising_critical_infinite_L2_P0_s23_chi48_a1.json",
+      "status": "done",
+      "converged": false,
+      "entropy_reproduction_error": 0.0,
+      "checkpoint_verified": true,
+      "all_current_gates_pass": false
+    },
+    {
+      "source": "ising_critical_infinite_L2_P0_s23_chi48_one.json",
+      "status": "done",
+      "converged": false,
+      "entropy_reproduction_error": 0.0,
+      "checkpoint_verified": true,
+      "all_current_gates_pass": false
+    },
+    {
+      "source": "ising_gapped_infinite_L2_P0_s23_chi16.json",
+      "status": "done",
+      "converged": true,
+      "entropy_reproduction_error": 0.0,
+      "checkpoint_verified": true,
+      "all_current_gates_pass": true
+    },
+    {
+      "source": "ising_gapped_infinite_L2_P0_s23_chi24.json",
+      "status": "done",
+      "converged": true,
+      "entropy_reproduction_error": 0.0,
+      "checkpoint_verified": true,
+      "all_current_gates_pass": true
+    },
+    {
+      "source": "ising_gapped_infinite_L2_P0_s23_chi32.json",
+      "status": "done",
+      "converged": false,
+      "entropy_reproduction_error": 0.0,
+      "checkpoint_verified": true,
+      "all_current_gates_pass": false
+    },
+    {
+      "source": "ising_gapped_infinite_L2_P0_s23_chi32_a1.json",
+      "status": "done",
+      "converged": false,
+      "entropy_reproduction_error": 0.0,
+      "checkpoint_verified": true,
+      "all_current_gates_pass": false
+    },
+    {
+      "source": "ising_gapped_infinite_L2_P0_s23_chi48.json",
+      "status": "done",
+      "converged": true,
+      "entropy_reproduction_error": 0.0,
+      "checkpoint_verified": true,
+      "all_current_gates_pass": true
+    },
+    {
+      "source": "xx_infinite_L2_P0_s17_chi16.json",
+      "status": "done",
+      "converged": false,
+      "entropy_reproduction_error": 0.0,
+      "checkpoint_verified": true,
+      "all_current_gates_pass": false
+    },
+    {
+      "source": "xx_infinite_L2_P0_s23_chi16.json",
+      "status": "done",
+      "converged": true,
+      "entropy_reproduction_error": 0.0,
+      "checkpoint_verified": true,
+      "all_current_gates_pass": true
+    },
+    {
+      "source": "xx_infinite_L2_P0_s23_chi24.json",
+      "status": "postprocessing_failed",
+      "converged": null
+    },
+    {
+      "source": "xx_infinite_L2_P0_s23_chi24_a1.json",
+      "status": "done",
+      "converged": true,
+      "entropy_reproduction_error": 0.0,
+      "checkpoint_verified": true,
+      "all_current_gates_pass": true
+    },
+    {
+      "source": "xx_infinite_L2_P0_s23_chi32.json",
+      "status": "done",
+      "converged": true,
+      "entropy_reproduction_error": 0.0,
+      "checkpoint_verified": true,
+      "all_current_gates_pass": true
+    },
+    {
+      "source": "xx_infinite_L2_P0_s23_chi48.json",
+      "status": "done",
+      "converged": true,
+      "entropy_reproduction_error": 0.0,
+      "checkpoint_verified": true,
+      "all_current_gates_pass": true
+    },
+    {
+      "source": "xx_infinite_L2_P0_s23_chi64.json",
+      "status": "done",
+      "converged": true,
+      "entropy_reproduction_error": 0.0,
+      "checkpoint_verified": true,
+      "all_current_gates_pass": true
+    }
+  ],
+  "warm_snapshots": [
+    {
+      "snapshot": "contrib/d2_central_charge_20261110/checkpoints_local/warm_L48_P0_chi128_g.pkl",
+      "verified": true
+    },
+    {
+      "snapshot": "contrib/d2_central_charge_20261110/checkpoints_local/warm_L64_P0_chi128_g.pkl",
+      "verified": true
+    },
+    {
+      "snapshot": "contrib/d2_central_charge_20261110/checkpoints_local/warm_L48_P1_chi128_g.pkl",
+      "verified": true
+    },
+    {
+      "snapshot": "contrib/d2_central_charge_20261110/checkpoints_local/warm_L64_P1_chi128_g.pkl",
+      "verified": true
+    }
+  ],
+  "spectra": [
+    {
+      "file": "dispersion_L16.json",
+      "complete": true,
+      "max_residual": 1.0197480459915284e-10
+    },
+    {
+      "file": "dispersion_L20.json",
+      "complete": true,
+      "max_residual": 1.3134621326589353e-10
+    },
+    {
+      "file": "dispersion_L24.json",
+      "complete": true,
+      "max_residual": 1.604805249957314e-10
+    }
+  ],
+  "vumps_counts": {
+    "done": 9
+  },
+  "vumps_records": [
+    {
+      "source": "candidate_infinite_L2_P0_s17_chi128_g_one_vumps.json",
+      "status": "done",
+      "converged": false,
+      "entropy_reproduction_error": 0.0
+    },
+    {
+      "source": "candidate_infinite_L2_P0_s17_chi128_g_one_vumps_vumps.json",
+      "status": "done",
+      "converged": false,
+      "entropy_reproduction_error": 0.0
+    },
+    {
+      "source": "candidate_infinite_L2_P0_s17_chi192_g_vumps.json",
+      "status": "done",
+      "converged": false,
+      "entropy_reproduction_error": 0.0
+    },
+    {
+      "source": "candidate_infinite_L2_P0_s17_chi256_g_vumps.json",
+      "status": "done",
+      "converged": false,
+      "entropy_reproduction_error": 0.0
+    },
+    {
+      "source": "candidate_infinite_L2_P0_s17_chi256_g_vumps_vumps.json",
+      "status": "done",
+      "converged": false,
+      "entropy_reproduction_error": 0.0
+    },
+    {
+      "source": "candidate_infinite_L2_P0_s17_chi64_g_one_vumps.json",
+      "status": "done",
+      "converged": false,
+      "entropy_reproduction_error": 0.0
+    },
+    {
+      "source": "candidate_infinite_L2_P0_s17_chi64_g_one_vumps_vumps.json",
+      "status": "done",
+      "converged": true,
+      "entropy_reproduction_error": 0.0
+    },
+    {
+      "source": "candidate_infinite_L2_P0_s17_chi96_g_one_vumps.json",
+      "status": "done",
+      "converged": false,
+      "entropy_reproduction_error": 0.0
+    },
+    {
+      "source": "ising_critical_infinite_L2_P0_s23_chi24_a1_vumps.json",
+      "status": "done",
+      "converged": true,
+      "entropy_reproduction_error": 0.0
+    }
+  ]
+}

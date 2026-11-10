@@ -1,0 +1,144 @@
+{
+  "tenpy_version": "1.1.1",
+  "complete": true,
+  "rows": [
+    {
+      "source": "results/candidate_infinite_L2_P0_s17_chi64_g_one.json",
+      "source_sha256": "5e4c4285743dffc7950d4df28aa96318fc01a53055ae745a7e5bf98dd0a95859",
+      "checkpoint_sha256": "2606ceceb57f47834995f4f53a0ce8b41a0fdb53ca1cdd95ddf5495386548c50",
+      "status": "done",
+      "environment_energies_shifted": [
+        -0.4262128807985343,
+        -0.4262128810159438
+      ],
+      "energy_disagreement": 2.1740931277491882e-10,
+      "tangent_left": [
+        8.79829944759083e-07,
+        2.7336128823993735e-07
+      ],
+      "tangent_right": [
+        8.764710865932613e-07,
+        2.839458563835181e-07
+      ],
+      "max_tangent": 8.79829944759083e-07,
+      "one_site": true,
+      "norm": 5.673848481396178e-15,
+      "seconds": 0.1601271629333496
+    },
+    {
+      "source": "results/candidate_infinite_L2_P0_s17_chi96_g_one.json",
+      "source_sha256": "74049b5539bdec33c1e0a97afd742741cde18e1f24582e14f77947d36913e65f",
+      "checkpoint_sha256": "f2f6d903c0434a13d75d6f831df862b2b6321c0313ed404482cf4b030b0c5c29",
+      "status": "done",
+      "environment_energies_shifted": [
+        -0.42621306676088627,
+        -0.4262130669805071
+      ],
+      "energy_disagreement": 2.1960899765360864e-10,
+      "tangent_left": [
+        9.525227587603969e-07,
+        2.939155860998923e-07
+      ],
+      "tangent_right": [
+        9.626971303612685e-07,
+        2.586509315916827e-07
+      ],
+      "max_tangent": 9.626971303612685e-07,
+      "one_site": true,
+      "norm": 3.809594734900936e-15,
+      "seconds": 0.3649110794067383
+    },
+    {
+      "source": "results/candidate_infinite_L2_P0_s17_chi128_g_one.json",
+      "source_sha256": "73a97b1a3132ddb01579479c3de669e73807c1dbaa98528e507bddc735802212",
+      "checkpoint_sha256": "7adb363b6c5cea63f8b42d9bab0a6a2b6227fdc43ed3028d6824d58b72ebc454",
+      "status": "done",
+      "environment_energies_shifted": [
+        -0.4262131052367873,
+        -0.42621310525975536
+      ],
+      "energy_disagreement": 2.2928381415709964e-11,
+      "tangent_left": [
+        1.7600626044405735e-07,
+        2.8788389027529598e-08
+      ],
+      "tangent_right": [
+        1.760656148453218e-07,
+        2.8423707880040663e-08
+      ],
+      "max_tangent": 1.760656148453218e-07,
+      "one_site": true,
+      "norm": 4.8651006288309215e-15,
+      "seconds": 0.64133620262146
+    },
+    {
+      "source": "results/candidate_infinite_L2_P0_s17_chi192_g.json",
+      "source_sha256": "35a415236f500773c7f16b769415975e09e4162ba299d2e998fefabbd8a8304c",
+      "checkpoint_sha256": "00536488db3f9c2206ce29a19cce1be551e4ebc69b867dcf9c4ded05470d4531",
+      "status": "done",
+      "environment_energies_shifted": [
+        -0.4262131185606334,
+        -0.4262131187501023
+      ],
+      "energy_disagreement": 1.895176793276221e-10,
+      "tangent_left": [
+        2.7441390940163702e-05,
+        3.13214647107391e-05
+      ],
+      "tangent_right": [
+        3.1321464542839045e-05,
+        2.7441390716345867e-05
+      ],
+      "max_tangent": 3.13214647107391e-05,
+      "one_site": false,
+      "norm": 2.7673610465972085e-15,
+      "seconds": 1.6998679637908936
+    },
+    {
+      "source": "results/ising_critical_infinite_L2_P0_s23_chi16_one.json",
+      "source_sha256": "3b93a9660c6629e80bf12af2e036854899844b98a4648355da9e7717f4b73cba",
+      "checkpoint_sha256": "7d05b5105c53986dff092317e89dd14a4157b26a97f687c0388dd9dc5f1173f4",
+      "status": "done",
+      "environment_energies_shifted": [
+        -0.27323938733985204,
+        -0.27323938735971726
+      ],
+      "energy_disagreement": 1.985395181591798e-11,
+      "tangent_left": [
+        1.025626422405696e-09,
+        9.525058332499034e-10
+      ],
+      "tangent_right": [
+        9.738351347016915e-10,
+        1.0053968146163359e-09
+      ],
+      "max_tangent": 1.025626422405696e-09,
+      "one_site": true,
+      "norm": 2.7263373403341466e-15,
+      "seconds": 0.06625580787658691
+    },
+    {
+      "source": "results/ising_critical_infinite_L2_P0_s23_chi24_a1.json",
+      "source_sha256": "73d653f79e69c69339ba51d80a8a2d574f8c348be3e2e63f3e4f28262a63e00c",
+      "checkpoint_sha256": "4651d0e8a29ba6e0b98dae462a901b2865949ce70f49d20b98d5dd6c7f8b38e6",
+      "status": "done",
+      "environment_energies_shifted": [
+        -0.2732395097532805,
+        -0.27323950972708716
+      ],
+      "energy_disagreement": 2.6188440305219274e-11,
+      "tangent_left": [
+        4.392125092471199e-05,
+        4.349808139881916e-05
+      ],
+      "tangent_right": [
+        4.349808179794065e-05,
+        4.392125056813e-05
+      ],
+      "max_tangent": 4.392125092471199e-05,
+      "one_site": false,
+      "norm": 3.3901477237191337e-15,
+      "seconds": 0.0981740951538086
+    }
+  ]
+}

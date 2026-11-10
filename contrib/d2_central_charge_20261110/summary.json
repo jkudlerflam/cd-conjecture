@@ -1,0 +1,5041 @@
+{
+  "inventory": [
+    {
+      "source": "results/candidate_infinite_L2_P0_s17_chi128_g.json",
+      "status": "done",
+      "geometry": "infinite",
+      "model": "candidate",
+      "L": 2,
+      "parity": 0,
+      "seed": 17,
+      "chi": 128,
+      "gauge": true,
+      "converged": true,
+      "E_physical": -0.6762131022808285,
+      "convergence_checks": {
+        "recent_energy_stable": true,
+        "recent_entropy_stable": true,
+        "local_residual_small": true,
+        "norm_before_small": true,
+        "final_sweep_norm_small": true,
+        "energy_agreement": true
+      }
+    },
+    {
+      "source": "results/candidate_infinite_L2_P0_s17_chi128_g_one.json",
+      "status": "done",
+      "geometry": "infinite",
+      "model": "candidate",
+      "L": 2,
+      "parity": 0,
+      "seed": 17,
+      "chi": 128,
+      "gauge": true,
+      "converged": true,
+      "E_physical": -0.676213105236827,
+      "convergence_checks": {
+        "recent_energy_stable": true,
+        "recent_entropy_stable": true,
+        "local_residual_small": true,
+        "norm_before_small": true,
+        "final_sweep_norm_small": true,
+        "energy_agreement": true
+      }
+    },
+    {
+      "source": "results/candidate_infinite_L2_P0_s17_chi16.json",
+      "status": "done",
+      "geometry": "infinite",
+      "model": "candidate",
+      "L": 2,
+      "parity": 0,
+      "seed": 17,
+      "chi": 16,
+      "gauge": null,
+      "converged": true,
+      "E_physical": -0.6762010242315241,
+      "convergence_checks": {
+        "recent_energy_stable": true,
+        "recent_entropy_stable": true,
+        "local_residual_small": true,
+        "norm_before_small": true,
+        "final_sweep_norm_small": true,
+        "energy_agreement": true
+      }
+    },
+    {
+      "source": "results/candidate_infinite_L2_P0_s17_chi16_g.json",
+      "status": "done",
+      "geometry": "infinite",
+      "model": "candidate",
+      "L": 2,
+      "parity": 0,
+      "seed": 17,
+      "chi": 16,
+      "gauge": true,
+      "converged": true,
+      "E_physical": -0.676201027008955,
+      "convergence_checks": {
+        "recent_energy_stable": true,
+        "recent_entropy_stable": true,
+        "local_residual_small": true,
+        "norm_before_small": true,
+        "final_sweep_norm_small": true,
+        "energy_agreement": true
+      }
+    },
+    {
+      "source": "results/candidate_infinite_L2_P0_s17_chi16_g_one.json",
+      "status": "done",
+      "geometry": "infinite",
+      "model": "candidate",
+      "L": 2,
+      "parity": 0,
+      "seed": 17,
+      "chi": 16,
+      "gauge": true,
+      "converged": true,
+      "E_physical": -0.6762017817324262,
+      "convergence_checks": {
+        "recent_energy_stable": true,
+        "recent_entropy_stable": true,
+        "local_residual_small": true,
+        "norm_before_small": true,
+        "final_sweep_norm_small": true,
+        "energy_agreement": true
+      }
+    },
+    {
+      "source": "results/candidate_infinite_L2_P0_s17_chi192_g.json",
+      "status": "done",
+      "geometry": "infinite",
+      "model": "candidate",
+      "L": 2,
+      "parity": 0,
+      "seed": 17,
+      "chi": 192,
+      "gauge": true,
+      "converged": true,
+      "E_physical": -0.6762131185605846,
+      "convergence_checks": {
+        "recent_energy_stable": true,
+        "recent_entropy_stable": true,
+        "local_residual_small": true,
+        "norm_before_small": true,
+        "final_sweep_norm_small": true,
+        "energy_agreement": true
+      }
+    },
+    {
+      "source": "results/candidate_infinite_L2_P0_s17_chi24.json",
+      "status": "postprocessing_failed",
+      "geometry": "infinite",
+      "model": "candidate",
+      "L": 2,
+      "parity": 0,
+      "seed": 17,
+      "chi": 24,
+      "gauge": null,
+      "converged": null,
+      "E_physical": null,
+      "convergence_checks": null
+    },
+    {
+      "source": "results/candidate_infinite_L2_P0_s17_chi24_a1.json",
+      "status": "done",
+      "geometry": "infinite",
+      "model": "candidate",
+      "L": 2,
+      "parity": 0,
+      "seed": 17,
+      "chi": 24,
+      "gauge": null,
+      "converged": true,
+      "E_physical": -0.6762075839403489,
+      "convergence_checks": {
+        "recent_energy_stable": true,
+        "recent_entropy_stable": true,
+        "local_residual_small": true,
+        "norm_before_small": true,
+        "final_sweep_norm_small": true,
+        "energy_agreement": true
+      }
+    },
+    {
+      "source": "results/candidate_infinite_L2_P0_s17_chi24_g.json",
+      "status": "done",
+      "geometry": "infinite",
+      "model": "candidate",
+      "L": 2,
+      "parity": 0,
+      "seed": 17,
+      "chi": 24,
+      "gauge": true,
+      "converged": true,
+      "E_physical": -0.676207583940365,
+      "convergence_checks": {
+        "recent_energy_stable": true,
+        "recent_entropy_stable": true,
+        "local_residual_small": true,
+        "norm_before_small": true,
+        "final_sweep_norm_small": true,
+        "energy_agreement": true
+      }
+    },
+    {
+      "source": "results/candidate_infinite_L2_P0_s17_chi24_g_one.json",
+      "status": "done",
+      "geometry": "infinite",
+      "model": "candidate",
+      "L": 2,
+      "parity": 0,
+      "seed": 17,
+      "chi": 24,
+      "gauge": true,
+      "converged": true,
+      "E_physical": -0.6762079809510089,
+      "convergence_checks": {
+        "recent_energy_stable": true,
+        "recent_entropy_stable": true,
+        "local_residual_small": true,
+        "norm_before_small": true,
+        "final_sweep_norm_small": true,
+        "energy_agreement": true
+      }
+    },
+    {
+      "source": "results/candidate_infinite_L2_P0_s17_chi256_g.json",
+      "status": "done",
+      "geometry": "infinite",
+      "model": "candidate",
+      "L": 2,
+      "parity": 0,
+      "seed": 17,
+      "chi": 256,
+      "gauge": true,
+      "converged": true,
+      "E_physical": -0.6762131210212609,
+      "convergence_checks": {
+        "recent_energy_stable": true,
+        "recent_entropy_stable": true,
+        "local_residual_small": true,
+        "norm_before_small": true,
+        "final_sweep_norm_small": true,
+        "energy_agreement": true
+      }
+    },
+    {
+      "source": "results/candidate_infinite_L2_P0_s17_chi32.json",
+      "status": "done",
+      "geometry": "infinite",
+      "model": "candidate",
+      "L": 2,
+      "parity": 0,
+      "seed": 17,
+      "chi": 32,
+      "gauge": null,
+      "converged": false,
+      "E_physical": -0.6762103528428127,
+      "convergence_checks": {
+        "recent_energy_stable": true,
+        "recent_entropy_stable": true,
+        "local_residual_small": true,
+        "norm_before_small": true,
+        "final_sweep_norm_small": false,
+        "energy_agreement": true
+      }
+    },
+    {
+      "source": "results/candidate_infinite_L2_P0_s17_chi32_g.json",
+      "status": "done",
+      "geometry": "infinite",
+      "model": "candidate",
+      "L": 2,
+      "parity": 0,
+      "seed": 17,
+      "chi": 32,
+      "gauge": true,
+      "converged": false,
+      "E_physical": -0.676210352842803,
+      "convergence_checks": {
+        "recent_energy_stable": true,
+        "recent_entropy_stable": true,
+        "local_residual_small": true,
+        "norm_before_small": true,
+        "final_sweep_norm_small": false,
+        "energy_agreement": true
+      }
+    },
+    {
+      "source": "results/candidate_infinite_L2_P0_s17_chi32_g_one.json",
+      "status": "done",
+      "geometry": "infinite",
+      "model": "candidate",
+      "L": 2,
+      "parity": 0,
+      "seed": 17,
+      "chi": 32,
+      "gauge": true,
+      "converged": true,
+      "E_physical": -0.6762106579682633,
+      "convergence_checks": {
+        "recent_energy_stable": true,
+        "recent_entropy_stable": true,
+        "local_residual_small": true,
+        "norm_before_small": true,
+        "final_sweep_norm_small": true,
+        "energy_agreement": true
+      }
+    },
+    {
+      "source": "results/candidate_infinite_L2_P0_s17_chi32_one.json",
+      "status": "done",
+      "geometry": "infinite",
+      "model": "candidate",
+      "L": 2,
+      "parity": 0,
+      "seed": 17,
+      "chi": 32,
+      "gauge": false,
+      "converged": false,
+      "E_physical": -0.6762106579677418,
+      "convergence_checks": {
+        "recent_energy_stable": true,
+        "recent_entropy_stable": false,
+        "local_residual_small": true,
+        "norm_before_small": true,
+        "final_sweep_norm_small": true,
+        "energy_agreement": true
+      }
+    },
+    {
+      "source": "results/candidate_infinite_L2_P0_s17_chi48.json",
+      "status": "done",
+      "geometry": "infinite",
+      "model": "candidate",
+      "L": 2,
+      "parity": 0,
+      "seed": 17,
+      "chi": 48,
+      "gauge": false,
+      "converged": true,
+      "E_physical": -0.6762123982174311,
+      "convergence_checks": {
+        "recent_energy_stable": true,
+        "recent_entropy_stable": true,
+        "local_residual_small": true,
+        "norm_before_small": true,
+        "final_sweep_norm_small": true,
+        "energy_agreement": true
+      }
+    },
+    {
+      "source": "results/candidate_infinite_L2_P0_s17_chi48_g.json",
+      "status": "done",
+      "geometry": "infinite",
+      "model": "candidate",
+      "L": 2,
+      "parity": 0,
+      "seed": 17,
+      "chi": 48,
+      "gauge": true,
+      "converged": true,
+      "E_physical": -0.6762123982174324,
+      "convergence_checks": {
+        "recent_energy_stable": true,
+        "recent_entropy_stable": true,
+        "local_residual_small": true,
+        "norm_before_small": true,
+        "final_sweep_norm_small": true,
+        "energy_agreement": true
+      }
+    },
+    {
+      "source": "results/candidate_infinite_L2_P0_s17_chi48_g_one.json",
+      "status": "done",
+      "geometry": "infinite",
+      "model": "candidate",
+      "L": 2,
+      "parity": 0,
+      "seed": 17,
+      "chi": 48,
+      "gauge": true,
+      "converged": true,
+      "E_physical": -0.67621247966641,
+      "convergence_checks": {
+        "recent_energy_stable": true,
+        "recent_entropy_stable": true,
+        "local_residual_small": true,
+        "norm_before_small": true,
+        "final_sweep_norm_small": true,
+        "energy_agreement": true
+      }
+    },
+    {
+      "source": "results/candidate_infinite_L2_P0_s17_chi64.json",
+      "status": "done",
+      "geometry": "infinite",
+      "model": "candidate",
+      "L": 2,
+      "parity": 0,
+      "seed": 17,
+      "chi": 64,
+      "gauge": false,
+      "converged": true,
+      "E_physical": -0.6762128404361147,
+      "convergence_checks": {
+        "recent_energy_stable": true,
+        "recent_entropy_stable": true,
+        "local_residual_small": true,
+        "norm_before_small": true,
+        "final_sweep_norm_small": true,
+        "energy_agreement": true
+      }
+    },
+    {
+      "source": "results/candidate_infinite_L2_P0_s17_chi64_g.json",
+      "status": "done",
+      "geometry": "infinite",
+      "model": "candidate",
+      "L": 2,
+      "parity": 0,
+      "seed": 17,
+      "chi": 64,
+      "gauge": true,
+      "converged": true,
+      "E_physical": -0.6762128404361125,
+      "convergence_checks": {
+        "recent_energy_stable": true,
+        "recent_entropy_stable": true,
+        "local_residual_small": true,
+        "norm_before_small": true,
+        "final_sweep_norm_small": true,
+        "energy_agreement": true
+      }
+    },
+    {
+      "source": "results/candidate_infinite_L2_P0_s17_chi64_g_one.json",
+      "status": "done",
+      "geometry": "infinite",
+      "model": "candidate",
+      "L": 2,
+      "parity": 0,
+      "seed": 17,
+      "chi": 64,
+      "gauge": true,
+      "converged": true,
+      "E_physical": -0.6762128807985345,
+      "convergence_checks": {
+        "recent_energy_stable": true,
+        "recent_entropy_stable": true,
+        "local_residual_small": true,
+        "norm_before_small": true,
+        "final_sweep_norm_small": true,
+        "energy_agreement": true
+      }
+    },
+    {
+      "source": "results/candidate_infinite_L2_P0_s17_chi96_g.json",
+      "status": "done",
+      "geometry": "infinite",
+      "model": "candidate",
+      "L": 2,
+      "parity": 0,
+      "seed": 17,
+      "chi": 96,
+      "gauge": true,
+      "converged": true,
+      "E_physical": -0.6762130569253579,
+      "convergence_checks": {
+        "recent_energy_stable": true,
+        "recent_entropy_stable": true,
+        "local_residual_small": true,
+        "norm_before_small": true,
+        "final_sweep_norm_small": true,
+        "energy_agreement": true
+      }
+    },
+    {
+      "source": "results/candidate_infinite_L2_P0_s17_chi96_g_one.json",
+      "status": "done",
+      "geometry": "infinite",
+      "model": "candidate",
+      "L": 2,
+      "parity": 0,
+      "seed": 17,
+      "chi": 96,
+      "gauge": true,
+      "converged": true,
+      "E_physical": -0.6762130667608981,
+      "convergence_checks": {
+        "recent_energy_stable": true,
+        "recent_entropy_stable": true,
+        "local_residual_small": true,
+        "norm_before_small": true,
+        "final_sweep_norm_small": true,
+        "energy_agreement": true
+      }
+    },
+    {
+      "source": "results/candidate_infinite_L4_P0_s23_chi24.json",
+      "status": "done",
+      "geometry": "infinite",
+      "model": "candidate",
+      "L": 4,
+      "parity": 0,
+      "seed": 23,
+      "chi": 24,
+      "gauge": null,
+      "converged": true,
+      "E_physical": -0.6762076781145973,
+      "convergence_checks": {
+        "recent_energy_stable": true,
+        "recent_entropy_stable": true,
+        "local_residual_small": true,
+        "norm_before_small": true,
+        "final_sweep_norm_small": true,
+        "energy_agreement": true
+      }
+    },
+    {
+      "source": "results/candidate_infinite_L4_P0_s23_chi96.json",
+      "status": "done",
+      "geometry": "infinite",
+      "model": "candidate",
+      "L": 4,
+      "parity": 0,
+      "seed": 23,
+      "chi": 96,
+      "gauge": false,
+      "converged": true,
+      "E_physical": -0.6762130579004473,
+      "convergence_checks": {
+        "recent_energy_stable": true,
+        "recent_entropy_stable": true,
+        "local_residual_small": true,
+        "norm_before_small": true,
+        "final_sweep_norm_small": true,
+        "energy_agreement": true
+      }
+    },
+    {
+      "source": "results/candidate_open_L48_P0_s17_chi128_g.json",
+      "status": "done",
+      "geometry": "open",
+      "model": "candidate",
+      "L": 48,
+      "parity": 0,
+      "seed": 17,
+      "chi": 128,
+      "gauge": true,
+      "converged": true,
+      "E_physical": -32.54763490446649,
+      "convergence_checks": {
+        "recent_energy_stable": true,
+        "recent_entropy_stable": true,
+        "local_residual_small": true,
+        "norm_before_small": true,
+        "final_sweep_norm_small": true,
+        "energy_agreement": true
+      }
+    },
+    {
+      "source": "results/candidate_periodic_L16_P0_s17_chi128.json",
+      "status": "done",
+      "geometry": "periodic",
+      "model": "candidate",
+      "L": 16,
+      "parity": 0,
+      "seed": 17,
+      "chi": 128,
+      "gauge": null,
+      "converged": true,
+      "E_physical": -10.831973513722637,
+      "convergence_checks": {
+        "recent_energy_stable": true,
+        "recent_entropy_stable": true,
+        "local_residual_small": true,
+        "norm_before_small": true,
+        "final_sweep_norm_small": true,
+        "energy_agreement": true
+      }
+    },
+    {
+      "source": "results/candidate_periodic_L32_P0_s17_chi128.json",
+      "status": "postprocessing_failed",
+      "geometry": "periodic",
+      "model": "candidate",
+      "L": 32,
+      "parity": 0,
+      "seed": 17,
+      "chi": 128,
+      "gauge": null,
+      "converged": null,
+      "E_physical": null,
+      "convergence_checks": null
+    },
+    {
+      "source": "results/candidate_periodic_L32_P0_s17_chi192.json",
+      "status": "done",
+      "geometry": "periodic",
+      "model": "candidate",
+      "L": 32,
+      "parity": 0,
+      "seed": 17,
+      "chi": 192,
+      "gauge": false,
+      "converged": true,
+      "E_physical": -21.644690087435922,
+      "convergence_checks": {
+        "recent_energy_stable": true,
+        "recent_entropy_stable": true,
+        "local_residual_small": true,
+        "norm_before_small": true,
+        "final_sweep_norm_small": true,
+        "energy_agreement": true
+      }
+    },
+    {
+      "source": "results/candidate_periodic_L32_P1_s17_chi128.json",
+      "status": "postprocessing_failed",
+      "geometry": "periodic",
+      "model": "candidate",
+      "L": 32,
+      "parity": 1,
+      "seed": 17,
+      "chi": 128,
+      "gauge": null,
+      "converged": null,
+      "E_physical": null,
+      "convergence_checks": null
+    },
+    {
+      "source": "results/candidate_periodic_L32_P1_s17_chi192.json",
+      "status": "done",
+      "geometry": "periodic",
+      "model": "candidate",
+      "L": 32,
+      "parity": 1,
+      "seed": 17,
+      "chi": 192,
+      "gauge": false,
+      "converged": false,
+      "E_physical": -21.633603962317313,
+      "convergence_checks": {
+        "recent_energy_stable": true,
+        "recent_entropy_stable": true,
+        "local_residual_small": true,
+        "norm_before_small": true,
+        "final_sweep_norm_small": false,
+        "energy_agreement": true
+      }
+    },
+    {
+      "source": "results/candidate_periodic_L32_P1_s17_chi192_one.json",
+      "status": "done",
+      "geometry": "periodic",
+      "model": "candidate",
+      "L": 32,
+      "parity": 1,
+      "seed": 17,
+      "chi": 192,
+      "gauge": false,
+      "converged": true,
+      "E_physical": -21.633604016362458,
+      "convergence_checks": {
+        "recent_energy_stable": true,
+        "recent_entropy_stable": true,
+        "local_residual_small": true,
+        "norm_before_small": true,
+        "final_sweep_norm_small": true,
+        "energy_agreement": true
+      }
+    },
+    {
+      "source": "results/candidate_periodic_L48_P0_s17_chi128_g.json",
+      "status": "done",
+      "geometry": "periodic",
+      "model": "candidate",
+      "L": 48,
+      "parity": 0,
+      "seed": 17,
+      "chi": 128,
+      "gauge": true,
+      "converged": false,
+      "E_physical": -32.46188552223723,
+      "convergence_checks": {
+        "recent_energy_stable": true,
+        "recent_entropy_stable": true,
+        "local_residual_small": true,
+        "norm_before_small": true,
+        "final_sweep_norm_small": false,
+        "energy_agreement": true
+      }
+    },
+    {
+      "source": "results/candidate_periodic_L48_P0_s17_chi128_g_one.json",
+      "status": "done",
+      "geometry": "periodic",
+      "model": "candidate",
+      "L": 48,
+      "parity": 0,
+      "seed": 17,
+      "chi": 128,
+      "gauge": true,
+      "converged": false,
+      "E_physical": -32.4618897738777,
+      "convergence_checks": {
+        "recent_energy_stable": false,
+        "recent_entropy_stable": true,
+        "local_residual_small": true,
+        "norm_before_small": true,
+        "final_sweep_norm_small": true,
+        "energy_agreement": true
+      }
+    },
+    {
+      "source": "results/candidate_periodic_L48_P0_s17_chi128_g_one_a1.json",
+      "status": "done",
+      "geometry": "periodic",
+      "model": "candidate",
+      "L": 48,
+      "parity": 0,
+      "seed": 17,
+      "chi": 128,
+      "gauge": true,
+      "converged": true,
+      "E_physical": -32.461890016443306,
+      "convergence_checks": {
+        "recent_energy_stable": true,
+        "recent_entropy_stable": true,
+        "local_residual_small": true,
+        "norm_before_small": true,
+        "final_sweep_norm_small": true,
+        "energy_agreement": true
+      }
+    },
+    {
+      "source": "results/candidate_periodic_L48_P0_s17_chi192_g.json",
+      "status": "done",
+      "geometry": "periodic",
+      "model": "candidate",
+      "L": 48,
+      "parity": 0,
+      "seed": 17,
+      "chi": 192,
+      "gauge": true,
+      "converged": false,
+      "E_physical": -32.46191953038455,
+      "convergence_checks": {
+        "recent_energy_stable": true,
+        "recent_entropy_stable": true,
+        "local_residual_small": true,
+        "norm_before_small": true,
+        "final_sweep_norm_small": false,
+        "energy_agreement": true
+      }
+    },
+    {
+      "source": "results/candidate_periodic_L48_P0_s17_chi192_g_one.json",
+      "status": "done",
+      "geometry": "periodic",
+      "model": "candidate",
+      "L": 48,
+      "parity": 0,
+      "seed": 17,
+      "chi": 192,
+      "gauge": true,
+      "converged": true,
+      "E_physical": -32.461920429036795,
+      "convergence_checks": {
+        "recent_energy_stable": true,
+        "recent_entropy_stable": true,
+        "local_residual_small": true,
+        "norm_before_small": true,
+        "final_sweep_norm_small": true,
+        "energy_agreement": true
+      }
+    },
+    {
+      "source": "results/candidate_periodic_L48_P1_s17_chi128_g.json",
+      "status": "done",
+      "geometry": "periodic",
+      "model": "candidate",
+      "L": 48,
+      "parity": 1,
+      "seed": 17,
+      "chi": 128,
+      "gauge": true,
+      "converged": false,
+      "E_physical": -32.454229500337775,
+      "convergence_checks": {
+        "recent_energy_stable": true,
+        "recent_entropy_stable": true,
+        "local_residual_small": true,
+        "norm_before_small": true,
+        "final_sweep_norm_small": false,
+        "energy_agreement": true
+      }
+    },
+    {
+      "source": "results/candidate_periodic_L48_P1_s17_chi128_g_one.json",
+      "status": "done",
+      "geometry": "periodic",
+      "model": "candidate",
+      "L": 48,
+      "parity": 1,
+      "seed": 17,
+      "chi": 128,
+      "gauge": true,
+      "converged": true,
+      "E_physical": -32.45423281707954,
+      "convergence_checks": {
+        "recent_energy_stable": true,
+        "recent_entropy_stable": true,
+        "local_residual_small": true,
+        "norm_before_small": true,
+        "final_sweep_norm_small": true,
+        "energy_agreement": true
+      }
+    },
+    {
+      "source": "results/candidate_periodic_L48_P1_s17_chi192_g.json",
+      "status": "done",
+      "geometry": "periodic",
+      "model": "candidate",
+      "L": 48,
+      "parity": 1,
+      "seed": 17,
+      "chi": 192,
+      "gauge": true,
+      "converged": false,
+      "E_physical": -32.45425768944858,
+      "convergence_checks": {
+        "recent_energy_stable": false,
+        "recent_entropy_stable": false,
+        "local_residual_small": true,
+        "norm_before_small": true,
+        "final_sweep_norm_small": false,
+        "energy_agreement": true
+      }
+    },
+    {
+      "source": "results/candidate_periodic_L48_P1_s17_chi192_g_one.json",
+      "status": "done",
+      "geometry": "periodic",
+      "model": "candidate",
+      "L": 48,
+      "parity": 1,
+      "seed": 17,
+      "chi": 192,
+      "gauge": true,
+      "converged": true,
+      "E_physical": -32.454258338610515,
+      "convergence_checks": {
+        "recent_energy_stable": true,
+        "recent_entropy_stable": true,
+        "local_residual_small": true,
+        "norm_before_small": true,
+        "final_sweep_norm_small": true,
+        "energy_agreement": true
+      }
+    },
+    {
+      "source": "results/candidate_periodic_L64_P0_s17_chi128_g.json",
+      "status": "done",
+      "geometry": "periodic",
+      "model": "candidate",
+      "L": 64,
+      "parity": 0,
+      "seed": 17,
+      "chi": 128,
+      "gauge": true,
+      "converged": false,
+      "E_physical": -43.280148456635445,
+      "convergence_checks": {
+        "recent_energy_stable": false,
+        "recent_entropy_stable": false,
+        "local_residual_small": true,
+        "norm_before_small": true,
+        "final_sweep_norm_small": false,
+        "energy_agreement": true
+      }
+    },
+    {
+      "source": "results/candidate_periodic_L64_P0_s17_chi128_g_one.json",
+      "status": "done",
+      "geometry": "periodic",
+      "model": "candidate",
+      "L": 64,
+      "parity": 0,
+      "seed": 17,
+      "chi": 128,
+      "gauge": true,
+      "converged": false,
+      "E_physical": -43.2801610183588,
+      "convergence_checks": {
+        "recent_energy_stable": false,
+        "recent_entropy_stable": true,
+        "local_residual_small": true,
+        "norm_before_small": true,
+        "final_sweep_norm_small": true,
+        "energy_agreement": true
+      }
+    },
+    {
+      "source": "results/candidate_periodic_L64_P0_s17_chi128_g_one_a1.json",
+      "status": "done",
+      "geometry": "periodic",
+      "model": "candidate",
+      "L": 64,
+      "parity": 0,
+      "seed": 17,
+      "chi": 128,
+      "gauge": true,
+      "converged": true,
+      "E_physical": -43.28016159325475,
+      "convergence_checks": {
+        "recent_energy_stable": true,
+        "recent_entropy_stable": true,
+        "local_residual_small": true,
+        "norm_before_small": true,
+        "final_sweep_norm_small": true,
+        "energy_agreement": true
+      }
+    },
+    {
+      "source": "results/candidate_periodic_L64_P0_s17_chi192_g.json",
+      "status": "done",
+      "geometry": "periodic",
+      "model": "candidate",
+      "L": 64,
+      "parity": 0,
+      "seed": 17,
+      "chi": 192,
+      "gauge": true,
+      "converged": false,
+      "E_physical": -43.280245751700186,
+      "convergence_checks": {
+        "recent_energy_stable": true,
+        "recent_entropy_stable": true,
+        "local_residual_small": true,
+        "norm_before_small": true,
+        "final_sweep_norm_small": false,
+        "energy_agreement": true
+      }
+    },
+    {
+      "source": "results/candidate_periodic_L64_P0_s17_chi192_g_one.json",
+      "status": "done",
+      "geometry": "periodic",
+      "model": "candidate",
+      "L": 64,
+      "parity": 0,
+      "seed": 17,
+      "chi": 192,
+      "gauge": true,
+      "converged": false,
+      "E_physical": -43.28024865929865,
+      "convergence_checks": {
+        "recent_energy_stable": false,
+        "recent_entropy_stable": true,
+        "local_residual_small": true,
+        "norm_before_small": true,
+        "final_sweep_norm_small": true,
+        "energy_agreement": true
+      }
+    },
+    {
+      "source": "results/candidate_periodic_L64_P0_s17_chi192_g_one_a1.json",
+      "status": "done",
+      "geometry": "periodic",
+      "model": "candidate",
+      "L": 64,
+      "parity": 0,
+      "seed": 17,
+      "chi": 192,
+      "gauge": true,
+      "converged": true,
+      "E_physical": -43.280248977756955,
+      "convergence_checks": {
+        "recent_energy_stable": true,
+        "recent_entropy_stable": true,
+        "local_residual_small": true,
+        "norm_before_small": true,
+        "final_sweep_norm_small": true,
+        "energy_agreement": true
+      }
+    },
+    {
+      "source": "results/candidate_periodic_L64_P1_s17_chi128_g.json",
+      "status": "done",
+      "geometry": "periodic",
+      "model": "candidate",
+      "L": 64,
+      "parity": 1,
+      "seed": 17,
+      "chi": 128,
+      "gauge": true,
+      "converged": false,
+      "E_physical": -43.274238710892654,
+      "convergence_checks": {
+        "recent_energy_stable": true,
+        "recent_entropy_stable": true,
+        "local_residual_small": true,
+        "norm_before_small": true,
+        "final_sweep_norm_small": false,
+        "energy_agreement": true
+      }
+    },
+    {
+      "source": "results/candidate_periodic_L64_P1_s17_chi128_g_one.json",
+      "status": "done",
+      "geometry": "periodic",
+      "model": "candidate",
+      "L": 64,
+      "parity": 1,
+      "seed": 17,
+      "chi": 128,
+      "gauge": true,
+      "converged": false,
+      "E_physical": -43.27424377290477,
+      "convergence_checks": {
+        "recent_energy_stable": false,
+        "recent_entropy_stable": true,
+        "local_residual_small": true,
+        "norm_before_small": true,
+        "final_sweep_norm_small": true,
+        "energy_agreement": true
+      }
+    },
+    {
+      "source": "results/candidate_periodic_L64_P1_s17_chi128_g_one_a1.json",
+      "status": "done",
+      "geometry": "periodic",
+      "model": "candidate",
+      "L": 64,
+      "parity": 1,
+      "seed": 17,
+      "chi": 128,
+      "gauge": true,
+      "converged": false,
+      "E_physical": -43.27424453226108,
+      "convergence_checks": {
+        "recent_energy_stable": false,
+        "recent_entropy_stable": false,
+        "local_residual_small": true,
+        "norm_before_small": true,
+        "final_sweep_norm_small": true,
+        "energy_agreement": true
+      }
+    },
+    {
+      "source": "results/candidate_periodic_L64_P1_s17_chi192_g.json",
+      "status": "done",
+      "geometry": "periodic",
+      "model": "candidate",
+      "L": 64,
+      "parity": 1,
+      "seed": 17,
+      "chi": 192,
+      "gauge": true,
+      "converged": false,
+      "E_physical": -43.27430534927943,
+      "convergence_checks": {
+        "recent_energy_stable": false,
+        "recent_entropy_stable": false,
+        "local_residual_small": true,
+        "norm_before_small": true,
+        "final_sweep_norm_small": false,
+        "energy_agreement": true
+      }
+    },
+    {
+      "source": "results/candidate_periodic_L64_P1_s17_chi192_g_one.json",
+      "status": "done",
+      "geometry": "periodic",
+      "model": "candidate",
+      "L": 64,
+      "parity": 1,
+      "seed": 17,
+      "chi": 192,
+      "gauge": true,
+      "converged": true,
+      "E_physical": -43.274307553352784,
+      "convergence_checks": {
+        "recent_energy_stable": true,
+        "recent_entropy_stable": true,
+        "local_residual_small": true,
+        "norm_before_small": true,
+        "final_sweep_norm_small": true,
+        "energy_agreement": true
+      }
+    },
+    {
+      "source": "results/candidate_periodic_L8_P0_s17_chi16.json",
+      "status": "done",
+      "geometry": "periodic",
+      "model": "candidate",
+      "L": 8,
+      "parity": 0,
+      "seed": 17,
+      "chi": 16,
+      "gauge": null,
+      "converged": true,
+      "E_physical": -5.434440094162602,
+      "convergence_checks": {
+        "recent_energy_stable": true,
+        "recent_entropy_stable": true,
+        "local_residual_small": true,
+        "norm_before_small": true,
+        "energy_agreement": true,
+        "final_sweep_norm_small": true
+      }
+    },
+    {
+      "source": "results/candidate_periodic_L8_P0_s17_chi16_g.json",
+      "status": "done",
+      "geometry": "periodic",
+      "model": "candidate",
+      "L": 8,
+      "parity": 0,
+      "seed": 17,
+      "chi": 16,
+      "gauge": true,
+      "converged": true,
+      "E_physical": -5.434440094162602,
+      "convergence_checks": {
+        "recent_energy_stable": true,
+        "recent_entropy_stable": true,
+        "local_residual_small": true,
+        "norm_before_small": true,
+        "final_sweep_norm_small": true,
+        "energy_agreement": true
+      }
+    },
+    {
+      "source": "results/candidate_periodic_L8_P1_s17_chi16.json",
+      "status": "done",
+      "geometry": "periodic",
+      "model": "candidate",
+      "L": 8,
+      "parity": 1,
+      "seed": 17,
+      "chi": 16,
+      "gauge": null,
+      "converged": false,
+      "E_physical": -5.392208758148575,
+      "convergence_checks": {
+        "recent_energy_stable": true,
+        "recent_entropy_stable": false,
+        "local_residual_small": true,
+        "norm_before_small": true,
+        "energy_agreement": true,
+        "final_sweep_norm_small": false
+      }
+    },
+    {
+      "source": "results/ising_critical_infinite_L2_P0_s23_chi16.json",
+      "status": "done",
+      "geometry": "infinite",
+      "model": "ising_critical",
+      "L": 2,
+      "parity": 0,
+      "seed": 23,
+      "chi": 16,
+      "gauge": false,
+      "converged": true,
+      "E_physical": -1.2732393783164475,
+      "convergence_checks": {
+        "recent_energy_stable": true,
+        "recent_entropy_stable": true,
+        "local_residual_small": true,
+        "norm_before_small": true,
+        "final_sweep_norm_small": true,
+        "energy_agreement": true
+      }
+    },
+    {
+      "source": "results/ising_critical_infinite_L2_P0_s23_chi16_one.json",
+      "status": "done",
+      "geometry": "infinite",
+      "model": "ising_critical",
+      "L": 2,
+      "parity": 0,
+      "seed": 23,
+      "chi": 16,
+      "gauge": false,
+      "converged": true,
+      "E_physical": -1.2732393873398633,
+      "convergence_checks": {
+        "recent_energy_stable": true,
+        "recent_entropy_stable": true,
+        "local_residual_small": true,
+        "norm_before_small": true,
+        "final_sweep_norm_small": true,
+        "energy_agreement": true
+      }
+    },
+    {
+      "source": "results/ising_critical_infinite_L2_P0_s23_chi24.json",
+      "status": "done",
+      "geometry": "infinite",
+      "model": "ising_critical",
+      "L": 2,
+      "parity": 0,
+      "seed": 23,
+      "chi": 24,
+      "gauge": false,
+      "converged": false,
+      "E_physical": -1.2732395101168197,
+      "convergence_checks": {
+        "recent_energy_stable": true,
+        "recent_entropy_stable": false,
+        "local_residual_small": true,
+        "norm_before_small": true,
+        "final_sweep_norm_small": true,
+        "energy_agreement": true
+      }
+    },
+    {
+      "source": "results/ising_critical_infinite_L2_P0_s23_chi24_a1.json",
+      "status": "done",
+      "geometry": "infinite",
+      "model": "ising_critical",
+      "L": 2,
+      "parity": 0,
+      "seed": 23,
+      "chi": 24,
+      "gauge": false,
+      "converged": true,
+      "E_physical": -1.2732395097532756,
+      "convergence_checks": {
+        "recent_energy_stable": true,
+        "recent_entropy_stable": true,
+        "local_residual_small": true,
+        "norm_before_small": true,
+        "final_sweep_norm_small": true,
+        "energy_agreement": true
+      }
+    },
+    {
+      "source": "results/ising_critical_infinite_L2_P0_s23_chi24_one.json",
+      "status": "done",
+      "geometry": "infinite",
+      "model": "ising_critical",
+      "L": 2,
+      "parity": 0,
+      "seed": 23,
+      "chi": 24,
+      "gauge": false,
+      "converged": false,
+      "E_physical": -1.2731468735163514,
+      "convergence_checks": {
+        "recent_energy_stable": false,
+        "recent_entropy_stable": false,
+        "local_residual_small": false,
+        "norm_before_small": true,
+        "final_sweep_norm_small": false,
+        "energy_agreement": false
+      }
+    },
+    {
+      "source": "results/ising_critical_infinite_L2_P0_s23_chi32.json",
+      "status": "done",
+      "geometry": "infinite",
+      "model": "ising_critical",
+      "L": 2,
+      "parity": 0,
+      "seed": 23,
+      "chi": 32,
+      "gauge": false,
+      "converged": false,
+      "E_physical": -1.2732395327396877,
+      "convergence_checks": {
+        "recent_energy_stable": true,
+        "recent_entropy_stable": false,
+        "local_residual_small": true,
+        "norm_before_small": true,
+        "final_sweep_norm_small": false,
+        "energy_agreement": true
+      }
+    },
+    {
+      "source": "results/ising_critical_infinite_L2_P0_s23_chi32_a1.json",
+      "status": "done",
+      "geometry": "infinite",
+      "model": "ising_critical",
+      "L": 2,
+      "parity": 0,
+      "seed": 23,
+      "chi": 32,
+      "gauge": false,
+      "converged": false,
+      "E_physical": -1.273239534767042,
+      "convergence_checks": {
+        "recent_energy_stable": true,
+        "recent_entropy_stable": false,
+        "local_residual_small": true,
+        "norm_before_small": true,
+        "final_sweep_norm_small": true,
+        "energy_agreement": true
+      }
+    },
+    {
+      "source": "results/ising_critical_infinite_L2_P0_s23_chi32_one.json",
+      "status": "done",
+      "geometry": "infinite",
+      "model": "ising_critical",
+      "L": 2,
+      "parity": 0,
+      "seed": 23,
+      "chi": 32,
+      "gauge": false,
+      "converged": false,
+      "E_physical": -1.2732395349824963,
+      "convergence_checks": {
+        "recent_energy_stable": true,
+        "recent_entropy_stable": false,
+        "local_residual_small": true,
+        "norm_before_small": true,
+        "final_sweep_norm_small": true,
+        "energy_agreement": true
+      }
+    },
+    {
+      "source": "results/ising_critical_infinite_L2_P0_s23_chi48.json",
+      "status": "done",
+      "geometry": "infinite",
+      "model": "ising_critical",
+      "L": 2,
+      "parity": 0,
+      "seed": 23,
+      "chi": 48,
+      "gauge": false,
+      "converged": false,
+      "E_physical": -1.2732395359742863,
+      "convergence_checks": {
+        "recent_energy_stable": true,
+        "recent_entropy_stable": false,
+        "local_residual_small": true,
+        "norm_before_small": true,
+        "final_sweep_norm_small": true,
+        "energy_agreement": true
+      }
+    },
+    {
+      "source": "results/ising_critical_infinite_L2_P0_s23_chi48_a1.json",
+      "status": "done",
+      "geometry": "infinite",
+      "model": "ising_critical",
+      "L": 2,
+      "parity": 0,
+      "seed": 23,
+      "chi": 48,
+      "gauge": false,
+      "converged": false,
+      "E_physical": -1.273239542392969,
+      "convergence_checks": {
+        "recent_energy_stable": true,
+        "recent_entropy_stable": false,
+        "local_residual_small": true,
+        "norm_before_small": true,
+        "final_sweep_norm_small": true,
+        "energy_agreement": true
+      }
+    },
+    {
+      "source": "results/ising_critical_infinite_L2_P0_s23_chi48_one.json",
+      "status": "done",
+      "geometry": "infinite",
+      "model": "ising_critical",
+      "L": 2,
+      "parity": 0,
+      "seed": 23,
+      "chi": 48,
+      "gauge": false,
+      "converged": false,
+      "E_physical": -1.273239536551281,
+      "convergence_checks": {
+        "recent_energy_stable": true,
+        "recent_entropy_stable": true,
+        "local_residual_small": true,
+        "norm_before_small": true,
+        "final_sweep_norm_small": false,
+        "energy_agreement": true
+      }
+    },
+    {
+      "source": "results/ising_gapped_infinite_L2_P0_s23_chi16.json",
+      "status": "done",
+      "geometry": "infinite",
+      "model": "ising_gapped",
+      "L": 2,
+      "parity": 0,
+      "seed": 23,
+      "chi": 16,
+      "gauge": false,
+      "converged": true,
+      "E_physical": -1.2797037312419606,
+      "convergence_checks": {
+        "recent_energy_stable": true,
+        "recent_entropy_stable": true,
+        "local_residual_small": true,
+        "norm_before_small": true,
+        "final_sweep_norm_small": true,
+        "energy_agreement": true
+      }
+    },
+    {
+      "source": "results/ising_gapped_infinite_L2_P0_s23_chi24.json",
+      "status": "done",
+      "geometry": "infinite",
+      "model": "ising_gapped",
+      "L": 2,
+      "parity": 0,
+      "seed": 23,
+      "chi": 24,
+      "gauge": false,
+      "converged": true,
+      "E_physical": -1.2797037621546572,
+      "convergence_checks": {
+        "recent_energy_stable": true,
+        "recent_entropy_stable": true,
+        "local_residual_small": true,
+        "norm_before_small": true,
+        "final_sweep_norm_small": true,
+        "energy_agreement": true
+      }
+    },
+    {
+      "source": "results/ising_gapped_infinite_L2_P0_s23_chi32.json",
+      "status": "done",
+      "geometry": "infinite",
+      "model": "ising_gapped",
+      "L": 2,
+      "parity": 0,
+      "seed": 23,
+      "chi": 32,
+      "gauge": false,
+      "converged": false,
+      "E_physical": -1.2797037635803674,
+      "convergence_checks": {
+        "recent_energy_stable": true,
+        "recent_entropy_stable": false,
+        "local_residual_small": true,
+        "norm_before_small": true,
+        "final_sweep_norm_small": true,
+        "energy_agreement": true
+      }
+    },
+    {
+      "source": "results/ising_gapped_infinite_L2_P0_s23_chi32_a1.json",
+      "status": "done",
+      "geometry": "infinite",
+      "model": "ising_gapped",
+      "L": 2,
+      "parity": 0,
+      "seed": 23,
+      "chi": 32,
+      "gauge": false,
+      "converged": false,
+      "E_physical": -1.2797037635812925,
+      "convergence_checks": {
+        "recent_energy_stable": true,
+        "recent_entropy_stable": false,
+        "local_residual_small": true,
+        "norm_before_small": true,
+        "final_sweep_norm_small": true,
+        "energy_agreement": true
+      }
+    },
+    {
+      "source": "results/ising_gapped_infinite_L2_P0_s23_chi48.json",
+      "status": "done",
+      "geometry": "infinite",
+      "model": "ising_gapped",
+      "L": 2,
+      "parity": 0,
+      "seed": 23,
+      "chi": 48,
+      "gauge": false,
+      "converged": true,
+      "E_physical": -1.2797037637101611,
+      "convergence_checks": {
+        "recent_energy_stable": true,
+        "recent_entropy_stable": true,
+        "local_residual_small": true,
+        "norm_before_small": true,
+        "final_sweep_norm_small": true,
+        "energy_agreement": true
+      }
+    },
+    {
+      "source": "results/xx_infinite_L2_P0_s17_chi16.json",
+      "status": "done",
+      "geometry": "infinite",
+      "model": "xx",
+      "L": 2,
+      "parity": 0,
+      "seed": 17,
+      "chi": 16,
+      "gauge": null,
+      "converged": false,
+      "E_physical": -0.6365866468573624,
+      "convergence_checks": {
+        "recent_energy_stable": true,
+        "recent_entropy_stable": true,
+        "local_residual_small": false,
+        "norm_before_small": true,
+        "energy_agreement": true,
+        "final_sweep_norm_small": true
+      }
+    },
+    {
+      "source": "results/xx_infinite_L2_P0_s23_chi16.json",
+      "status": "done",
+      "geometry": "infinite",
+      "model": "xx",
+      "L": 2,
+      "parity": 0,
+      "seed": 23,
+      "chi": 16,
+      "gauge": null,
+      "converged": true,
+      "E_physical": -0.6365866468313826,
+      "convergence_checks": {
+        "recent_energy_stable": true,
+        "recent_entropy_stable": true,
+        "local_residual_small": true,
+        "norm_before_small": true,
+        "final_sweep_norm_small": true,
+        "energy_agreement": true
+      }
+    },
+    {
+      "source": "results/xx_infinite_L2_P0_s23_chi24.json",
+      "status": "postprocessing_failed",
+      "geometry": "infinite",
+      "model": "xx",
+      "L": 2,
+      "parity": 0,
+      "seed": 23,
+      "chi": 24,
+      "gauge": null,
+      "converged": null,
+      "E_physical": null,
+      "convergence_checks": null
+    },
+    {
+      "source": "results/xx_infinite_L2_P0_s23_chi24_a1.json",
+      "status": "done",
+      "geometry": "infinite",
+      "model": "xx",
+      "L": 2,
+      "parity": 0,
+      "seed": 23,
+      "chi": 24,
+      "gauge": null,
+      "converged": true,
+      "E_physical": -0.6366078268886644,
+      "convergence_checks": {
+        "recent_energy_stable": true,
+        "recent_entropy_stable": true,
+        "local_residual_small": true,
+        "norm_before_small": true,
+        "final_sweep_norm_small": true,
+        "energy_agreement": true
+      }
+    },
+    {
+      "source": "results/xx_infinite_L2_P0_s23_chi32.json",
+      "status": "done",
+      "geometry": "infinite",
+      "model": "xx",
+      "L": 2,
+      "parity": 0,
+      "seed": 23,
+      "chi": 32,
+      "gauge": null,
+      "converged": true,
+      "E_physical": -0.6366144634518152,
+      "convergence_checks": {
+        "recent_energy_stable": true,
+        "recent_entropy_stable": true,
+        "local_residual_small": true,
+        "norm_before_small": true,
+        "final_sweep_norm_small": true,
+        "energy_agreement": true
+      }
+    },
+    {
+      "source": "results/xx_infinite_L2_P0_s23_chi48.json",
+      "status": "done",
+      "geometry": "infinite",
+      "model": "xx",
+      "L": 2,
+      "parity": 0,
+      "seed": 23,
+      "chi": 48,
+      "gauge": null,
+      "converged": true,
+      "E_physical": -0.6366178342538465,
+      "convergence_checks": {
+        "recent_energy_stable": true,
+        "recent_entropy_stable": true,
+        "local_residual_small": true,
+        "norm_before_small": true,
+        "final_sweep_norm_small": true,
+        "energy_agreement": true
+      }
+    },
+    {
+      "source": "results/xx_infinite_L2_P0_s23_chi64.json",
+      "status": "done",
+      "geometry": "infinite",
+      "model": "xx",
+      "L": 2,
+      "parity": 0,
+      "seed": 23,
+      "chi": 64,
+      "gauge": null,
+      "converged": true,
+      "E_physical": -0.6366188494765936,
+      "convergence_checks": {
+        "recent_energy_stable": true,
+        "recent_entropy_stable": true,
+        "local_residual_small": true,
+        "norm_before_small": true,
+        "final_sweep_norm_small": true,
+        "energy_agreement": true
+      }
+    }
+  ],
+  "periodic_sectors": [
+    {
+      "source": "results/candidate_periodic_L8_P0_s17_chi16.json",
+      "source_sha256": "bd6684ae19e05464cc090191e4380c4463e3ac9c65ab7716d51b9fb8448ba5b6",
+      "model": "candidate",
+      "L": 8,
+      "parity": 0,
+      "seed": 17,
+      "chi": 16,
+      "E_physical": -5.434440094162602,
+      "converged": true,
+      "density_mean": 0.25724237575537356,
+      "density_range": 1.4988010832439613e-15,
+      "gauge": false,
+      "one_site": false,
+      "entropy_stats": {
+        "1": {
+          "central3": 0.9083592469087082,
+          "fractional": 0.9129107743573435,
+          "profiles": {
+            "0.25": {
+              "c": 1.0899633414374037,
+              "rms": 0.0005423769635875018
+            },
+            "0.375": {
+              "c": 1.0347830899016401,
+              "rms": 1.0215660718713353e-15
+            }
+          }
+        },
+        "2": {
+          "central3": 0.6931469486036482,
+          "fractional": 0.6935489044139347,
+          "profiles": {
+            "0.25": {
+              "c": 1.2625816100235359,
+              "rms": 0.008409381271593037
+            },
+            "0.375": {
+              "c": 0.12184541858119236,
+              "rms": 1.1801832636420706e-15
+            }
+          }
+        },
+        "3": {
+          "central3": 0.6006877620849164,
+          "fractional": 0.5973992169609081,
+          "profiles": {
+            "0.25": {
+              "c": 1.4760708158093325,
+              "rms": 0.017021134026350335
+            },
+            "0.375": {
+              "c": -1.1214688661459595,
+              "rms": 1.224605017966825e-15
+            }
+          }
+        }
+      }
+    },
+    {
+      "source": "results/candidate_periodic_L16_P0_s17_chi128.json",
+      "source_sha256": "813c42959e0ab83a33bf6ec4210f762da368716029b359a69c60f8112acadecc",
+      "model": "candidate",
+      "L": 16,
+      "parity": 0,
+      "seed": 17,
+      "chi": 128,
+      "E_physical": -10.831973513722637,
+      "converged": true,
+      "density_mean": 0.26395667847034426,
+      "density_range": 2.1720159004701145e-10,
+      "gauge": false,
+      "one_site": false,
+      "entropy_stats": {
+        "1": {
+          "central3": 1.1727825586965108,
+          "fractional": 1.167132270126829,
+          "profiles": {
+            "0.25": {
+              "c": 1.0309910124311066,
+              "rms": 0.00011091065148146588
+            },
+            "0.375": {
+              "c": 1.0235517796639688,
+              "rms": 3.2944725465511115e-06
+            }
+          }
+        },
+        "2": {
+          "central3": 0.9128794411339394,
+          "fractional": 0.9076578458608928,
+          "profiles": {
+            "0.25": {
+              "c": 1.1300159209957004,
+              "rms": 0.002457836431567727
+            },
+            "0.375": {
+              "c": 1.2163668778022645,
+              "rms": 0.0017079516378821474
+            }
+          }
+        },
+        "3": {
+          "central3": 0.8045868812362552,
+          "fractional": 0.7977857482487909,
+          "profiles": {
+            "0.25": {
+              "c": 1.260513045722675,
+              "rms": 0.008123988336826333
+            },
+            "0.375": {
+              "c": 1.6626564295294193,
+              "rms": 0.006271598233093554
+            }
+          }
+        }
+      }
+    },
+    {
+      "source": "results/candidate_periodic_L32_P0_s17_chi192.json",
+      "source_sha256": "205e368b799bbbbcf868ebbf4c9bbbd480a313ddee4530aa746f8c57377794ba",
+      "model": "candidate",
+      "L": 32,
+      "parity": 0,
+      "seed": 17,
+      "chi": 192,
+      "E_physical": -21.644690087435922,
+      "converged": true,
+      "density_mean": 0.2654233401512256,
+      "density_range": 1.006934443714691e-06,
+      "gauge": false,
+      "one_site": false,
+      "entropy_stats": {
+        "1": {
+          "central3": 1.414920627884319,
+          "fractional": 1.4069599631450513,
+          "profiles": {
+            "0.25": {
+              "c": 1.0126445383251719,
+              "rms": 8.72790978426088e-05
+            },
+            "0.375": {
+              "c": 1.0066590226268948,
+              "rms": 6.413892343093309e-06
+            }
+          }
+        },
+        "2": {
+          "central3": 1.0961715937870593,
+          "fractional": 1.090072845453791,
+          "profiles": {
+            "0.25": {
+              "c": 1.0168679714355682,
+              "rms": 0.0006698317121918145
+            },
+            "0.375": {
+              "c": 1.0208032180333189,
+              "rms": 0.000489295678693224
+            }
+          }
+        },
+        "3": {
+          "central3": 0.9718938602364776,
+          "fractional": 0.9655330116185714,
+          "profiles": {
+            "0.25": {
+              "c": 1.0616796351297308,
+              "rms": 0.003470033388255779
+            },
+            "0.375": {
+              "c": 1.1484408088050584,
+              "rms": 0.002915050290053564
+            }
+          }
+        }
+      }
+    },
+    {
+      "source": "results/candidate_periodic_L32_P1_s17_chi192_one.json",
+      "source_sha256": "fc75397405151a6375895c3199421378b72bad4bc539ac5c59d74b5ec8846bb4",
+      "model": "candidate",
+      "L": 32,
+      "parity": 1,
+      "seed": 17,
+      "chi": 192,
+      "E_physical": -21.633604016362458,
+      "converged": true,
+      "density_mean": 0.2701538365693643,
+      "density_range": 0.001488657595831333,
+      "gauge": false,
+      "one_site": true,
+      "entropy_stats": {
+        "1": {
+          "central3": 1.181821678368675,
+          "fractional": 1.1748660265854927,
+          "profiles": {
+            "0.25": {
+              "c": 0.590441053815338,
+              "rms": 0.00882204484451835
+            },
+            "0.375": {
+              "c": 0.7480192776538976,
+              "rms": 0.00841561281445671
+            }
+          }
+        },
+        "2": {
+          "central3": 0.9257409080665502,
+          "fractional": 0.9208382435336069,
+          "profiles": {
+            "0.25": {
+              "c": 0.5125255146725677,
+              "rms": 0.007345392612508529
+            },
+            "0.375": {
+              "c": 0.6836433911881241,
+              "rms": 0.006928860972959776
+            }
+          }
+        },
+        "3": {
+          "central3": 0.8719857030112607,
+          "fractional": 0.8671304647716258,
+          "profiles": {
+            "0.25": {
+              "c": 0.6482772051495714,
+              "rms": 0.006444867247181554
+            },
+            "0.375": {
+              "c": 0.8016435605815107,
+              "rms": 0.005686161074724246
+            }
+          }
+        }
+      }
+    },
+    {
+      "source": "results/candidate_periodic_L48_P0_s17_chi192_g_one.json",
+      "source_sha256": "fe56ee8c9c314b94977ab4c84c131a6ae9185ad1011ba021b30b7aef64292c71",
+      "model": "candidate",
+      "L": 48,
+      "parity": 0,
+      "seed": 17,
+      "chi": 192,
+      "E_physical": -32.461920429036795,
+      "converged": true,
+      "density_mean": 0.2656479377288452,
+      "density_range": 1.141044111291345e-05,
+      "gauge": true,
+      "one_site": true,
+      "entropy_stats": {
+        "1": {
+          "central3": 1.5521678956122031,
+          "fractional": 1.5439468713082507,
+          "profiles": {
+            "0.25": {
+              "c": 0.9936616660399549,
+              "rms": 0.00012202680882766821
+            },
+            "0.375": {
+              "c": 0.9851549685849281,
+              "rms": 7.066763318786291e-06
+            }
+          }
+        },
+        "2": {
+          "central3": 1.1958165854372764,
+          "fractional": 1.1896680910709363,
+          "profiles": {
+            "0.25": {
+              "c": 0.9790271988696864,
+              "rms": 0.0003309928319328709
+            },
+            "0.375": {
+              "c": 0.9765296699431759,
+              "rms": 0.000247623665063318
+            }
+          }
+        },
+        "3": {
+          "central3": 1.0597575309825382,
+          "fractional": 1.0537809953841772,
+          "profiles": {
+            "0.25": {
+              "c": 0.9886992245427764,
+              "rms": 0.0021259965559646847
+            },
+            "0.375": {
+              "c": 1.0234767198957495,
+              "rms": 0.0018347316028107746
+            }
+          }
+        }
+      }
+    },
+    {
+      "source": "results/candidate_periodic_L48_P1_s17_chi192_g_one.json",
+      "source_sha256": "f464a04e3f785a4d65467fce470de4ff34af6fc6eec3deb81ec3cb1b398c06e0",
+      "model": "candidate",
+      "L": 48,
+      "parity": 1,
+      "seed": 17,
+      "chi": 192,
+      "E_physical": -32.454258338610515,
+      "converged": true,
+      "density_mean": 0.26834724456342557,
+      "density_range": 0.00021952515588136157,
+      "gauge": true,
+      "one_site": true,
+      "entropy_stats": {
+        "1": {
+          "central3": 1.3368211746835197,
+          "fractional": 1.3349295036724633,
+          "profiles": {
+            "0.25": {
+              "c": 0.5428340587753835,
+              "rms": 0.0070892944032984965
+            },
+            "0.375": {
+              "c": 0.37917772601700406,
+              "rms": 0.007030505816934483
+            }
+          }
+        },
+        "2": {
+          "central3": 1.021883144308446,
+          "fractional": 1.0216675829635509,
+          "profiles": {
+            "0.25": {
+              "c": 0.4324183687405397,
+              "rms": 0.006849149812717483
+            },
+            "0.375": {
+              "c": 0.2325997403579424,
+              "rms": 0.006849951047496212
+            }
+          }
+        },
+        "3": {
+          "central3": 0.9482010659919616,
+          "fractional": 0.9473949352575367,
+          "profiles": {
+            "0.25": {
+              "c": 0.5202059639923517,
+              "rms": 0.00561752212895161
+            },
+            "0.375": {
+              "c": 0.3312804200911075,
+              "rms": 0.005681999155616104
+            }
+          }
+        }
+      }
+    },
+    {
+      "source": "results/candidate_periodic_L64_P0_s17_chi192_g_one_a1.json",
+      "source_sha256": "3d59d19a7a3f6fa58e2f010fc1e2233c6833dd7b7758bccd070a331b42f9ac59",
+      "model": "candidate",
+      "L": 64,
+      "parity": 0,
+      "seed": 17,
+      "chi": 192,
+      "E_physical": -43.280248977756955,
+      "converged": true,
+      "density_mean": 0.26569892012728463,
+      "density_range": 3.7652784203701106e-05,
+      "gauge": true,
+      "one_site": true,
+      "entropy_stats": {
+        "1": {
+          "central3": 1.6460644394508714,
+          "fractional": 1.637960883138346,
+          "profiles": {
+            "0.25": {
+              "c": 0.9665834076594363,
+              "rms": 0.0001752772692003139
+            },
+            "0.375": {
+              "c": 0.9539671710093891,
+              "rms": 1.035068897952842e-05
+            }
+          }
+        },
+        "2": {
+          "central3": 1.263463705125386,
+          "fractional": 1.2574319873444475,
+          "profiles": {
+            "0.25": {
+              "c": 0.9490467306330862,
+              "rms": 0.00022702736597253494
+            },
+            "0.375": {
+              "c": 0.9420280489324422,
+              "rms": 0.00015814990782113958
+            }
+          }
+        },
+        "3": {
+          "central3": 1.1181163849534728,
+          "fractional": 1.1124618126337058,
+          "profiles": {
+            "0.25": {
+              "c": 0.9407566323333978,
+              "rms": 0.001520306101497517
+            },
+            "0.375": {
+              "c": 0.9546750770802632,
+              "rms": 0.0013233428426143953
+            }
+          }
+        }
+      }
+    },
+    {
+      "source": "results/candidate_periodic_L64_P1_s17_chi192_g_one.json",
+      "source_sha256": "182c21f1dcc753002dd4708d9beb79bb1576d84c1f803cb97690f3ce5045a8e2",
+      "model": "candidate",
+      "L": 64,
+      "parity": 1,
+      "seed": 17,
+      "chi": 192,
+      "E_physical": -43.274307553352784,
+      "converged": true,
+      "density_mean": 0.2675435132948012,
+      "density_range": 7.745882334081466e-05,
+      "gauge": true,
+      "one_site": true,
+      "entropy_stats": {
+        "1": {
+          "central3": 1.442831768643517,
+          "fractional": 1.4404831398650324,
+          "profiles": {
+            "0.25": {
+              "c": 0.5553255824703804,
+              "rms": 0.00621534590915986
+            },
+            "0.375": {
+              "c": 0.43115831695030743,
+              "rms": 0.006189527929962748
+            }
+          }
+        },
+        "2": {
+          "central3": 1.0905478995460984,
+          "fractional": 1.0901691721399036,
+          "profiles": {
+            "0.25": {
+              "c": 0.44164465003358505,
+              "rms": 0.006674771948821632
+            },
+            "0.375": {
+              "c": 0.2817833328921735,
+              "rms": 0.0066957543648659
+            }
+          }
+        },
+        "3": {
+          "central3": 1.0031883669401804,
+          "fractional": 1.0023528567254516,
+          "profiles": {
+            "0.25": {
+              "c": 0.5130568331732407,
+              "rms": 0.005642392316280418
+            },
+            "0.375": {
+              "c": 0.3610765623051283,
+              "rms": 0.005703873585536215
+            }
+          }
+        }
+      }
+    }
+  ],
+  "periodic_selected": [
+    {
+      "source": "results/candidate_periodic_L8_P0_s17_chi16.json",
+      "source_sha256": "bd6684ae19e05464cc090191e4380c4463e3ac9c65ab7716d51b9fb8448ba5b6",
+      "model": "candidate",
+      "L": 8,
+      "parity": 0,
+      "seed": 17,
+      "chi": 16,
+      "E_physical": -5.434440094162602,
+      "converged": true,
+      "density_mean": 0.25724237575537356,
+      "density_range": 1.4988010832439613e-15,
+      "gauge": false,
+      "one_site": false,
+      "entropy_stats": {
+        "1": {
+          "central3": 0.9083592469087082,
+          "fractional": 0.9129107743573435,
+          "profiles": {
+            "0.25": {
+              "c": 1.0899633414374037,
+              "rms": 0.0005423769635875018
+            },
+            "0.375": {
+              "c": 1.0347830899016401,
+              "rms": 1.0215660718713353e-15
+            }
+          }
+        },
+        "2": {
+          "central3": 0.6931469486036482,
+          "fractional": 0.6935489044139347,
+          "profiles": {
+            "0.25": {
+              "c": 1.2625816100235359,
+              "rms": 0.008409381271593037
+            },
+            "0.375": {
+              "c": 0.12184541858119236,
+              "rms": 1.1801832636420706e-15
+            }
+          }
+        },
+        "3": {
+          "central3": 0.6006877620849164,
+          "fractional": 0.5973992169609081,
+          "profiles": {
+            "0.25": {
+              "c": 1.4760708158093325,
+              "rms": 0.017021134026350335
+            },
+            "0.375": {
+              "c": -1.1214688661459595,
+              "rms": 1.224605017966825e-15
+            }
+          }
+        }
+      },
+      "both_parities_converged": false,
+      "both_parity_energy_gates_pass": false
+    },
+    {
+      "source": "results/candidate_periodic_L16_P0_s17_chi128.json",
+      "source_sha256": "813c42959e0ab83a33bf6ec4210f762da368716029b359a69c60f8112acadecc",
+      "model": "candidate",
+      "L": 16,
+      "parity": 0,
+      "seed": 17,
+      "chi": 128,
+      "E_physical": -10.831973513722637,
+      "converged": true,
+      "density_mean": 0.26395667847034426,
+      "density_range": 2.1720159004701145e-10,
+      "gauge": false,
+      "one_site": false,
+      "entropy_stats": {
+        "1": {
+          "central3": 1.1727825586965108,
+          "fractional": 1.167132270126829,
+          "profiles": {
+            "0.25": {
+              "c": 1.0309910124311066,
+              "rms": 0.00011091065148146588
+            },
+            "0.375": {
+              "c": 1.0235517796639688,
+              "rms": 3.2944725465511115e-06
+            }
+          }
+        },
+        "2": {
+          "central3": 0.9128794411339394,
+          "fractional": 0.9076578458608928,
+          "profiles": {
+            "0.25": {
+              "c": 1.1300159209957004,
+              "rms": 0.002457836431567727
+            },
+            "0.375": {
+              "c": 1.2163668778022645,
+              "rms": 0.0017079516378821474
+            }
+          }
+        },
+        "3": {
+          "central3": 0.8045868812362552,
+          "fractional": 0.7977857482487909,
+          "profiles": {
+            "0.25": {
+              "c": 1.260513045722675,
+              "rms": 0.008123988336826333
+            },
+            "0.375": {
+              "c": 1.6626564295294193,
+              "rms": 0.006271598233093554
+            }
+          }
+        }
+      },
+      "both_parities_converged": false,
+      "both_parity_energy_gates_pass": false
+    },
+    {
+      "source": "results/candidate_periodic_L32_P0_s17_chi192.json",
+      "source_sha256": "205e368b799bbbbcf868ebbf4c9bbbd480a313ddee4530aa746f8c57377794ba",
+      "model": "candidate",
+      "L": 32,
+      "parity": 0,
+      "seed": 17,
+      "chi": 192,
+      "E_physical": -21.644690087435922,
+      "converged": true,
+      "density_mean": 0.2654233401512256,
+      "density_range": 1.006934443714691e-06,
+      "gauge": false,
+      "one_site": false,
+      "entropy_stats": {
+        "1": {
+          "central3": 1.414920627884319,
+          "fractional": 1.4069599631450513,
+          "profiles": {
+            "0.25": {
+              "c": 1.0126445383251719,
+              "rms": 8.72790978426088e-05
+            },
+            "0.375": {
+              "c": 1.0066590226268948,
+              "rms": 6.413892343093309e-06
+            }
+          }
+        },
+        "2": {
+          "central3": 1.0961715937870593,
+          "fractional": 1.090072845453791,
+          "profiles": {
+            "0.25": {
+              "c": 1.0168679714355682,
+              "rms": 0.0006698317121918145
+            },
+            "0.375": {
+              "c": 1.0208032180333189,
+              "rms": 0.000489295678693224
+            }
+          }
+        },
+        "3": {
+          "central3": 0.9718938602364776,
+          "fractional": 0.9655330116185714,
+          "profiles": {
+            "0.25": {
+              "c": 1.0616796351297308,
+              "rms": 0.003470033388255779
+            },
+            "0.375": {
+              "c": 1.1484408088050584,
+              "rms": 0.002915050290053564
+            }
+          }
+        }
+      },
+      "both_parities_converged": true,
+      "both_parity_energy_gates_pass": true
+    },
+    {
+      "source": "results/candidate_periodic_L48_P0_s17_chi192_g_one.json",
+      "source_sha256": "fe56ee8c9c314b94977ab4c84c131a6ae9185ad1011ba021b30b7aef64292c71",
+      "model": "candidate",
+      "L": 48,
+      "parity": 0,
+      "seed": 17,
+      "chi": 192,
+      "E_physical": -32.461920429036795,
+      "converged": true,
+      "density_mean": 0.2656479377288452,
+      "density_range": 1.141044111291345e-05,
+      "gauge": true,
+      "one_site": true,
+      "entropy_stats": {
+        "1": {
+          "central3": 1.5521678956122031,
+          "fractional": 1.5439468713082507,
+          "profiles": {
+            "0.25": {
+              "c": 0.9936616660399549,
+              "rms": 0.00012202680882766821
+            },
+            "0.375": {
+              "c": 0.9851549685849281,
+              "rms": 7.066763318786291e-06
+            }
+          }
+        },
+        "2": {
+          "central3": 1.1958165854372764,
+          "fractional": 1.1896680910709363,
+          "profiles": {
+            "0.25": {
+              "c": 0.9790271988696864,
+              "rms": 0.0003309928319328709
+            },
+            "0.375": {
+              "c": 0.9765296699431759,
+              "rms": 0.000247623665063318
+            }
+          }
+        },
+        "3": {
+          "central3": 1.0597575309825382,
+          "fractional": 1.0537809953841772,
+          "profiles": {
+            "0.25": {
+              "c": 0.9886992245427764,
+              "rms": 0.0021259965559646847
+            },
+            "0.375": {
+              "c": 1.0234767198957495,
+              "rms": 0.0018347316028107746
+            }
+          }
+        }
+      },
+      "both_parities_converged": true,
+      "both_parity_energy_gates_pass": true
+    },
+    {
+      "source": "results/candidate_periodic_L64_P0_s17_chi192_g_one_a1.json",
+      "source_sha256": "3d59d19a7a3f6fa58e2f010fc1e2233c6833dd7b7758bccd070a331b42f9ac59",
+      "model": "candidate",
+      "L": 64,
+      "parity": 0,
+      "seed": 17,
+      "chi": 192,
+      "E_physical": -43.280248977756955,
+      "converged": true,
+      "density_mean": 0.26569892012728463,
+      "density_range": 3.7652784203701106e-05,
+      "gauge": true,
+      "one_site": true,
+      "entropy_stats": {
+        "1": {
+          "central3": 1.6460644394508714,
+          "fractional": 1.637960883138346,
+          "profiles": {
+            "0.25": {
+              "c": 0.9665834076594363,
+              "rms": 0.0001752772692003139
+            },
+            "0.375": {
+              "c": 0.9539671710093891,
+              "rms": 1.035068897952842e-05
+            }
+          }
+        },
+        "2": {
+          "central3": 1.263463705125386,
+          "fractional": 1.2574319873444475,
+          "profiles": {
+            "0.25": {
+              "c": 0.9490467306330862,
+              "rms": 0.00022702736597253494
+            },
+            "0.375": {
+              "c": 0.9420280489324422,
+              "rms": 0.00015814990782113958
+            }
+          }
+        },
+        "3": {
+          "central3": 1.1181163849534728,
+          "fractional": 1.1124618126337058,
+          "profiles": {
+            "0.25": {
+              "c": 0.9407566323333978,
+              "rms": 0.001520306101497517
+            },
+            "0.375": {
+              "c": 0.9546750770802632,
+              "rms": 0.0013233428426143953
+            }
+          }
+        }
+      },
+      "both_parities_converged": true,
+      "both_parity_energy_gates_pass": true
+    }
+  ],
+  "periodic_pairs": [
+    {
+      "model": "candidate",
+      "L": [
+        8,
+        16
+      ],
+      "parities": [
+        0,
+        0
+      ],
+      "both_parities_converged": false,
+      "both_parity_energy_gates_pass": false,
+      "c": {
+        "1": {
+          "central3": 1.1444466018350972,
+          "fractional": 1.100292273702034
+        },
+        "2": {
+          "central3": 1.2680279091824889,
+          "fractional": 1.2355756321420477
+        },
+        "3": {
+          "central3": 1.32373911618569,
+          "fractional": 1.300934947274863
+        }
+      }
+    },
+    {
+      "model": "candidate",
+      "L": [
+        16,
+        32
+      ],
+      "parities": [
+        0,
+        0
+      ],
+      "both_parities_converged": false,
+      "both_parity_energy_gates_pass": false,
+      "c": {
+        "1": {
+          "central3": 1.0479941748830384,
+          "fractional": 1.0379946701556904
+        },
+        "2": {
+          "central3": 1.057738718666076,
+          "fractional": 1.0526768611857453
+        },
+        "3": {
+          "central3": 1.0861782700938065,
+          "fractional": 1.0890366524382475
+        }
+      }
+    },
+    {
+      "model": "candidate",
+      "L": [
+        32,
+        48
+      ],
+      "parities": [
+        0,
+        0
+      ],
+      "both_parities_converged": true,
+      "both_parity_energy_gates_pass": true,
+      "c": {
+        "1": {
+          "central3": 1.0154802347969578,
+          "fractional": 1.0135538577094225
+        },
+        "2": {
+          "central3": 0.9830191516616044,
+          "fractional": 0.9825283964071873
+        },
+        "3": {
+          "central3": 0.9751431392015043,
+          "fractional": 0.9794083855898376
+        }
+      }
+    },
+    {
+      "model": "candidate",
+      "L": [
+        48,
+        64
+      ],
+      "parities": [
+        0,
+        0
+      ],
+      "both_parities_converged": true,
+      "both_parity_energy_gates_pass": true,
+      "c": {
+        "1": {
+          "central3": 0.9791699187762896,
+          "fractional": 0.9803948959577937
+        },
+        "2": {
+          "central3": 0.940581651287265,
+          "fractional": 0.9422053407220123
+        },
+        "3": {
+          "central3": 0.9128648185514688,
+          "fractional": 0.9179010543562423
+        }
+      }
+    }
+  ],
+  "infinite": [
+    {
+      "model": "candidate",
+      "cell": 2,
+      "seed": 17,
+      "gauge": false,
+      "one_site": false,
+      "points": [
+        {
+          "source": "results/candidate_infinite_L2_P0_s17_chi16.json",
+          "source_sha256": "cd8619e62822697b21676d31f2b63c12bcec723efdd1817fc566a3954a23c8b2",
+          "model": "candidate",
+          "L": 2,
+          "parity": 0,
+          "seed": 17,
+          "chi": 16,
+          "E_physical": -0.6762010242315241,
+          "converged": true,
+          "density_mean": 0.2658589983089768,
+          "density_range": 2.476230331893703e-11,
+          "gauge": false,
+          "one_site": false,
+          "S": 0.6248016750221237,
+          "xi": 24.800906496582236,
+          "S_renyi": {
+            "1": 0.6248016750221237,
+            "2": 0.38458742915535504,
+            "3": 0.30875470418598017
+          },
+          "correlation_lengths": [
+            24.800906496582236,
+            15.674150100325887,
+            8.220664719507496,
+            6.880126505875004
+          ],
+          "X": [
+            0.3130700283963359,
+            -0.31307002838957476
+          ],
+          "Y": [
+            -0.39124213216512405,
+            -0.3912421321366176
+          ]
+        },
+        {
+          "source": "results/candidate_infinite_L2_P0_s17_chi24_a1.json",
+          "source_sha256": "6e385d3811b0eefda25d9db734d22a6bfae600b1f62707c4b5c3847a96885b29",
+          "model": "candidate",
+          "L": 2,
+          "parity": 0,
+          "seed": 17,
+          "chi": 24,
+          "E_physical": -0.6762075839403489,
+          "converged": true,
+          "density_mean": 0.2656764526056774,
+          "density_range": 2.939221088738009e-11,
+          "gauge": false,
+          "one_site": false,
+          "S": 0.7595345476798896,
+          "xi": 41.038416993370305,
+          "S_renyi": {
+            "1": 0.7595345476798896,
+            "2": 0.49613468160967833,
+            "3": 0.4048010233962249
+          },
+          "correlation_lengths": [
+            41.038416993370305,
+            26.85416523563516,
+            13.221844214165067,
+            12.203724677978315
+          ],
+          "X": [
+            0.2882467963908867,
+            -0.2882467963656938
+          ],
+          "Y": [
+            -0.28824274187862997,
+            -0.28824274185504106
+          ]
+        },
+        {
+          "source": "results/candidate_infinite_L2_P0_s17_chi48.json",
+          "source_sha256": "92e822654236e43776235c00caff0326bda7689b6b2ae384b7f79deef35fcba2",
+          "model": "candidate",
+          "L": 2,
+          "parity": 0,
+          "seed": 17,
+          "chi": 48,
+          "E_physical": -0.6762123982174311,
+          "converged": true,
+          "density_mean": 0.2654963451000893,
+          "density_range": 7.909228827429615e-13,
+          "gauge": false,
+          "one_site": false,
+          "S": 1.054496340403657,
+          "xi": 84.53350988833937,
+          "S_renyi": {
+            "1": 1.054496340403657,
+            "2": 0.7899257258995476,
+            "3": 0.6798009432376948
+          },
+          "correlation_lengths": [
+            84.53350988833937,
+            82.1909068524406,
+            30.21625805181691,
+            28.787410270606006
+          ],
+          "X": [
+            0.0002453591097515642,
+            -0.00024535911561430384
+          ],
+          "Y": [
+            -0.0002460779934993894,
+            -0.00024607797353737185
+          ]
+        },
+        {
+          "source": "results/candidate_infinite_L2_P0_s17_chi64.json",
+          "source_sha256": "9290bc1820b0ea9dc25b9f2b328927719d80f905fd2027135a0fa11b40aea5d2",
+          "model": "candidate",
+          "L": 2,
+          "parity": 0,
+          "seed": 17,
+          "chi": 64,
+          "E_physical": -0.6762128404361147,
+          "converged": true,
+          "density_mean": 0.2655167921155009,
+          "density_range": 7.774891841449971e-13,
+          "gauge": false,
+          "one_site": false,
+          "S": 1.069025487899734,
+          "xi": 100.51954801469367,
+          "S_renyi": {
+            "1": 1.069025487899734,
+            "2": 0.7991565948702617,
+            "3": 0.6879623534482897
+          },
+          "correlation_lengths": [
+            100.51954801469367,
+            93.37058981412758,
+            36.78834823393458,
+            35.427222385969685
+          ],
+          "X": [
+            4.859425757581063e-06,
+            -4.859387545083053e-06
+          ],
+          "Y": [
+            -4.874328191561858e-06,
+            -4.874326904415888e-06
+          ]
+        }
+      ],
+      "pairs": [
+        {
+          "chis": [
+            16,
+            24
+          ],
+          "c": 1.605146173153591,
+          "c_renyi": {
+            "1": 1.605146173153591,
+            "2": 1.771897650720646,
+            "3": 1.7163782529607459
+          },
+          "xi_chi_power": 1.2421005235140352
+        },
+        {
+          "chis": [
+            24,
+            48
+          ],
+          "c": 2.4490371953941605,
+          "c_renyi": {
+            "1": 2.4490371953941605,
+            "2": 3.2524221233105126,
+            "3": 3.424943750526157
+          },
+          "xi_chi_power": 1.042548271005273
+        },
+        {
+          "chis": [
+            48,
+            64
+          ],
+          "c": 0.5033070106782923,
+          "c_renyi": {
+            "1": 0.5033070106782923,
+            "2": 0.4263577583261542,
+            "3": 0.4240814862457921
+          },
+          "xi_chi_power": 0.6020680824512105
+        }
+      ],
+      "fits": [
+        {
+          "chis": [
+            24,
+            48,
+            64
+          ],
+          "c": 2.1830987158276756,
+          "rms": 0.020133639944157424,
+          "xi_ratio": 2.449401204508753,
+          "c_renyi": {
+            "1": 2.1830987158276756,
+            "2": 2.866161342507177,
+            "3": 3.014791945193653
+          }
+        },
+        {
+          "chis": [
+            16,
+            24,
+            48,
+            64
+          ],
+          "c": 2.0226772636860617,
+          "rms": 0.0207216168869922,
+          "xi_ratio": 4.05305943266816,
+          "c_renyi": {
+            "1": 2.0226772636860617,
+            "2": 2.5539558913644034,
+            "3": 2.640859570429948
+          }
+        }
+      ]
+    },
+    {
+      "model": "candidate",
+      "cell": 2,
+      "seed": 17,
+      "gauge": false,
+      "one_site": true,
+      "points": [],
+      "pairs": [],
+      "fits": []
+    },
+    {
+      "model": "candidate",
+      "cell": 2,
+      "seed": 17,
+      "gauge": true,
+      "one_site": false,
+      "points": [
+        {
+          "source": "results/candidate_infinite_L2_P0_s17_chi16_g.json",
+          "source_sha256": "2645064f144bba3fe5011633a472b4d78b10d292f2a8decb08d375e95959aa21",
+          "model": "candidate",
+          "L": 2,
+          "parity": 0,
+          "seed": 17,
+          "chi": 16,
+          "E_physical": -0.676201027008955,
+          "converged": true,
+          "density_mean": 0.2658641171390922,
+          "density_range": 3.3779645747245013e-12,
+          "gauge": true,
+          "one_site": false,
+          "S": 0.6209540621064407,
+          "xi": 24.074479654314523,
+          "S_renyi": {
+            "1": 0.6209540621064407,
+            "2": 0.3809913000583631,
+            "3": 0.30557473646707867
+          },
+          "correlation_lengths": [
+            24.074479654314523,
+            15.910893317422833,
+            7.8662117594371574,
+            6.672646804077168
+          ],
+          "X": [
+            0.3562319933204311,
+            -0.35623199331820127
+          ],
+          "Y": [
+            -0.35623199332043104,
+            -0.3562319933182012
+          ]
+        },
+        {
+          "source": "results/candidate_infinite_L2_P0_s17_chi24_g.json",
+          "source_sha256": "000127ec9b6b81af4a6e842fa38a2735e8fae5578762011331ada74befa61ac9",
+          "model": "candidate",
+          "L": 2,
+          "parity": 0,
+          "seed": 17,
+          "chi": 24,
+          "E_physical": -0.676207583940365,
+          "converged": true,
+          "density_mean": 0.26567645249885274,
+          "density_range": 1.7521706308087914e-11,
+          "gauge": true,
+          "one_site": false,
+          "S": 0.7595345341584454,
+          "xi": 41.03841212316197,
+          "S_renyi": {
+            "1": 0.7595345341584454,
+            "2": 0.49613466685011154,
+            "3": 0.4048010097303808
+          },
+          "correlation_lengths": [
+            41.03841212316197,
+            26.854165887004076,
+            13.221844499670043,
+            12.203724992985283
+          ],
+          "X": [
+            0.28824477414868516,
+            -0.288244774135376
+          ],
+          "Y": [
+            -0.2882447741486851,
+            -0.288244774135376
+          ]
+        },
+        {
+          "source": "results/candidate_infinite_L2_P0_s17_chi48_g.json",
+          "source_sha256": "b90f537a962fd31ed346c63a0fdf34dded4da3e1a0b9c9cc6de2f166dcc10b4e",
+          "model": "candidate",
+          "L": 2,
+          "parity": 0,
+          "seed": 17,
+          "chi": 48,
+          "E_physical": -0.6762123982174324,
+          "converged": true,
+          "density_mean": 0.2654963451037505,
+          "density_range": 5.270228697895618e-13,
+          "gauge": true,
+          "one_site": false,
+          "S": 1.0544963433387309,
+          "xi": 84.53351743836038,
+          "S_renyi": {
+            "1": 1.0544963433387309,
+            "2": 0.7899257293284996,
+            "3": 0.6798009467365715
+          },
+          "correlation_lengths": [
+            84.53351743836038,
+            82.19090083682416,
+            30.216258507205044,
+            28.787413921014743
+          ],
+          "X": [
+            0.0002443247397886027,
+            -0.0002443247585575438
+          ],
+          "Y": [
+            -0.0002443247397886027,
+            -0.0002443247585575438
+          ]
+        },
+        {
+          "source": "results/candidate_infinite_L2_P0_s17_chi64_g.json",
+          "source_sha256": "5a51405c803ab4ec17ab0dd3efe7dcab869f8ab77ba5cc032a2da7d72b41fde7",
+          "model": "candidate",
+          "L": 2,
+          "parity": 0,
+          "seed": 17,
+          "chi": 64,
+          "E_physical": -0.6762128404361125,
+          "converged": true,
+          "density_mean": 0.26551679211521895,
+          "density_range": 2.793321129956894e-13,
+          "gauge": true,
+          "one_site": false,
+          "S": 1.0690254894542566,
+          "xi": 100.51955016608711,
+          "S_renyi": {
+            "1": 1.0690254894542566,
+            "2": 0.7991565959178061,
+            "3": 0.6879623543787048
+          },
+          "correlation_lengths": [
+            100.51955016608711,
+            93.37058976926716,
+            36.78834868458643,
+            35.427222823236406
+          ],
+          "X": [
+            4.840981955162503e-06,
+            -4.840964595626981e-06
+          ],
+          "Y": [
+            -4.840981955162502e-06,
+            -4.84096459562698e-06
+          ]
+        },
+        {
+          "source": "results/candidate_infinite_L2_P0_s17_chi96_g.json",
+          "source_sha256": "16fb52f659ed245bc9c9270e6c0144f80a70185cca413da517009bba910b5ae9",
+          "model": "candidate",
+          "L": 2,
+          "parity": 0,
+          "seed": 17,
+          "chi": 96,
+          "E_physical": -0.6762130569253579,
+          "converged": true,
+          "density_mean": 0.2655312197051074,
+          "density_range": 3.9351855107838674e-13,
+          "gauge": true,
+          "one_site": false,
+          "S": 1.0836472373393504,
+          "xi": 119.63519656194289,
+          "S_renyi": {
+            "1": 1.0836472373393504,
+            "2": 0.807772385244707,
+            "3": 0.6954552053596692
+          },
+          "correlation_lengths": [
+            119.63519656194289,
+            118.4016083126502,
+            49.62318375880891,
+            48.80807598669725
+          ],
+          "X": [
+            -2.0437429913847997e-06,
+            2.043758993913135e-06
+          ],
+          "Y": [
+            2.0437429913847992e-06,
+            2.043758993913135e-06
+          ]
+        },
+        {
+          "source": "results/candidate_infinite_L2_P0_s17_chi128_g.json",
+          "source_sha256": "e246e3140c6b8cf1476edd053a6a8a636e3a8916243ff77f1d44699b2cdae73b",
+          "model": "candidate",
+          "L": 2,
+          "parity": 0,
+          "seed": 17,
+          "chi": 128,
+          "E_physical": -0.6762131022808285,
+          "converged": true,
+          "density_mean": 0.26553568380839826,
+          "density_range": 1.5754064719430971e-13,
+          "gauge": true,
+          "one_site": false,
+          "S": 1.089661801637969,
+          "xi": 134.50602555414986,
+          "S_renyi": {
+            "1": 1.089661801637969,
+            "2": 0.8110620414489915,
+            "3": 0.6982742741971366
+          },
+          "correlation_lengths": [
+            134.50602555414986,
+            134.31140369236746,
+            62.06351103644504,
+            61.860871836270576
+          ],
+          "X": [
+            -7.471462486238746e-07,
+            7.472743785150166e-07
+          ],
+          "Y": [
+            7.471462486238745e-07,
+            7.472743785150165e-07
+          ]
+        },
+        {
+          "source": "results/candidate_infinite_L2_P0_s17_chi192_g.json",
+          "source_sha256": "35a415236f500773c7f16b769415975e09e4162ba299d2e998fefabbd8a8304c",
+          "model": "candidate",
+          "L": 2,
+          "parity": 0,
+          "seed": 17,
+          "chi": 192,
+          "E_physical": -0.6762131185605846,
+          "converged": true,
+          "density_mean": 0.2655375941682771,
+          "density_range": 8.448797217397441e-14,
+          "gauge": true,
+          "one_site": false,
+          "S": 1.0932896763354607,
+          "xi": 152.30822143478056,
+          "S_renyi": {
+            "1": 1.0932896763354607,
+            "2": 0.8128836837784011,
+            "3": 0.699811278953182
+          },
+          "correlation_lengths": [
+            152.30822143478056,
+            151.86668612576574,
+            80.31074008303267,
+            79.77323122755622
+          ],
+          "X": [
+            -1.1855818271558568e-08,
+            1.1885477301507242e-08
+          ],
+          "Y": [
+            1.1855818271558566e-08,
+            1.188547730150724e-08
+          ]
+        },
+        {
+          "source": "results/candidate_infinite_L2_P0_s17_chi256_g.json",
+          "source_sha256": "50d3874bfbb905447694b3e64ffd7f07054485b542eae7f32d18bd38ecfde9ed",
+          "model": "candidate",
+          "L": 2,
+          "parity": 0,
+          "seed": 17,
+          "chi": 256,
+          "E_physical": -0.6762131210212609,
+          "converged": true,
+          "density_mean": 0.2655379395362133,
+          "density_range": 1.422750806057138e-13,
+          "gauge": true,
+          "one_site": false,
+          "S": 1.0941869961785957,
+          "xi": 162.66671156497026,
+          "S_renyi": {
+            "1": 1.0941869961785957,
+            "2": 0.8132907211992523,
+            "3": 0.7001496420256013
+          },
+          "correlation_lengths": [
+            162.66671156497026,
+            162.54215245807467,
+            93.90741551435026,
+            93.80087147087265
+          ],
+          "X": [
+            -9.120935838235963e-09,
+            9.143822795643105e-09
+          ],
+          "Y": [
+            9.120935838235961e-09,
+            9.143822795643103e-09
+          ]
+        }
+      ],
+      "pairs": [
+        {
+          "chis": [
+            16,
+            24
+          ],
+          "c": 1.5589635716412626,
+          "c_renyi": {
+            "1": 1.5589635716412626,
+            "2": 1.727076566046063,
+            "3": 1.674371681774463
+          },
+          "xi_chi_power": 1.3154181569995065
+        },
+        {
+          "chis": [
+            24,
+            48
+          ],
+          "c": 2.449036627155148,
+          "c_renyi": {
+            "1": 2.449036627155148,
+            "2": 3.252421388562999,
+            "3": 3.42494297854273
+          },
+          "xi_chi_power": 1.0425485710689857
+        },
+        {
+          "chis": [
+            48,
+            64
+          ],
+          "c": 0.503307160194794,
+          "c_renyi": {
+            "1": 0.503307160194794,
+            "2": 0.42635781550265883,
+            "3": 0.42408151906099284
+          },
+          "xi_chi_power": 0.6020678463878345
+        },
+        {
+          "chis": [
+            64,
+            96
+          ],
+          "c": 0.5039235175224568,
+          "c_renyi": {
+            "1": 0.5039235175224568,
+            "2": 0.3959124356370991,
+            "3": 0.38735011562281607
+          },
+          "xi_chi_power": 0.42937072211632016
+        },
+        {
+          "chis": [
+            96,
+            128
+          ],
+          "c": 0.30801294216766134,
+          "c_renyi": {
+            "1": 0.30801294216766134,
+            "2": 0.2246229066411335,
+            "3": 0.2165517675987576
+          },
+          "xi_chi_power": 0.4072617832631271
+        },
+        {
+          "chis": [
+            128,
+            192
+          ],
+          "c": 0.17512253475091485,
+          "c_renyi": {
+            "1": 0.17512253475091485,
+            "2": 0.11724426328040721,
+            "3": 0.11129002153339783
+          },
+          "xi_chi_power": 0.3065547197641152
+        },
+        {
+          "chis": [
+            192,
+            256
+          ],
+          "c": 0.08182601861297911,
+          "c_renyi": {
+            "1": 0.08182601861297911,
+            "2": 0.04948997369526541,
+            "3": 0.04628266599732486
+          },
+          "xi_chi_power": 0.22871481823893847
+        }
+      ],
+      "fits": [
+        {
+          "chis": [
+            128,
+            192,
+            256
+          ],
+          "c": 0.1470293783342848,
+          "rms": 0.0003104975504805713,
+          "xi_ratio": 1.2093637507673098,
+          "c_renyi": {
+            "1": 0.1470293783342848,
+            "2": 0.09684230258554558,
+            "3": 0.09171520906551517
+          }
+        },
+        {
+          "chis": [
+            96,
+            128,
+            192,
+            256
+          ],
+          "c": 0.20620198962100347,
+          "rms": 0.0008683932096547514,
+          "xi_ratio": 1.3596894245143591,
+          "c_renyi": {
+            "1": 0.20620198962100347,
+            "2": 0.14362896309636206,
+            "3": 0.1373897341377332
+          }
+        },
+        {
+          "chis": [
+            64,
+            96,
+            128,
+            192,
+            256
+          ],
+          "c": 0.3105013475925036,
+          "rms": 0.002444454754444437,
+          "xi_ratio": 1.6182594460102364,
+          "c_renyi": {
+            "1": 0.3105013475925036,
+            "2": 0.23149289954957336,
+            "3": 0.22433954394579442
+          }
+        },
+        {
+          "chis": [
+            48,
+            64,
+            96,
+            128,
+            192,
+            256
+          ],
+          "c": 0.37015587385292353,
+          "rms": 0.0031008805540777874,
+          "xi_ratio": 1.9242865610505637,
+          "c_renyi": {
+            "1": 0.37015587385292353,
+            "2": 0.28839536526453796,
+            "3": 0.2820649368712377
+          }
+        },
+        {
+          "chis": [
+            24,
+            48,
+            64,
+            96,
+            128,
+            192,
+            256
+          ],
+          "c": 1.435526711139515,
+          "rms": 0.0430641522966989,
+          "xi_ratio": 3.9637671914981736,
+          "c_renyi": {
+            "1": 1.435526711139515,
+            "2": 1.8008193796104532,
+            "3": 1.8851416426822873
+          }
+        },
+        {
+          "chis": [
+            16,
+            24,
+            48,
+            64,
+            96,
+            128,
+            192,
+            256
+          ],
+          "c": 1.5834202572840657,
+          "rms": 0.04238454272890403,
+          "xi_ratio": 6.756811108721841,
+          "c_renyi": {
+            "1": 1.5834202572840657,
+            "2": 1.9579073923448866,
+            "3": 2.0234889675089476
+          }
+        }
+      ]
+    },
+    {
+      "model": "candidate",
+      "cell": 2,
+      "seed": 17,
+      "gauge": true,
+      "one_site": true,
+      "points": [
+        {
+          "source": "results/candidate_infinite_L2_P0_s17_chi16_g_one.json",
+          "source_sha256": "1de3d6ce83c574d5c93f22e509f782947f8f7bfdc0b636a8833ae4bb2320ac5e",
+          "model": "candidate",
+          "L": 2,
+          "parity": 0,
+          "seed": 17,
+          "chi": 16,
+          "E_physical": -0.6762017817324262,
+          "converged": true,
+          "density_mean": 0.26587100301383193,
+          "density_range": 1.7143631514393576e-09,
+          "gauge": true,
+          "one_site": true,
+          "S": 0.6212600862494699,
+          "xi": 24.324913212951984,
+          "S_renyi": {
+            "1": 0.6212600862494699,
+            "2": 0.3817110500817875,
+            "3": 0.30627070851234567
+          },
+          "correlation_lengths": [
+            24.324913212951984,
+            15.970331024689296,
+            7.679115285608925,
+            6.704252135392218
+          ],
+          "X": [
+            0.3563147000561334,
+            -0.35631469619384337
+          ],
+          "Y": [
+            -0.35631470005613336,
+            -0.3563146961938433
+          ]
+        },
+        {
+          "source": "results/candidate_infinite_L2_P0_s17_chi24_g_one.json",
+          "source_sha256": "114a3ef16437be8e03fc695d786b90a8a3278dbd593284badc1b9ad8c5e8a984",
+          "model": "candidate",
+          "L": 2,
+          "parity": 0,
+          "seed": 17,
+          "chi": 24,
+          "E_physical": -0.6762079809510089,
+          "converged": true,
+          "density_mean": 0.26567319427912983,
+          "density_range": 1.1267913824219988e-09,
+          "gauge": true,
+          "one_site": true,
+          "S": 0.754308905462917,
+          "xi": 37.75989816069909,
+          "S_renyi": {
+            "1": 0.754308905462917,
+            "2": 0.49195921900458184,
+            "3": 0.40113978880547574
+          },
+          "correlation_lengths": [
+            37.75989816069909,
+            26.67183185461781,
+            12.805811333384186,
+            10.858209984931134
+          ],
+          "X": [
+            0.28996386095496746,
+            -0.28996386164834465
+          ],
+          "Y": [
+            -0.2899638609549674,
+            -0.2899638616483446
+          ]
+        },
+        {
+          "source": "results/candidate_infinite_L2_P0_s17_chi32_g_one.json",
+          "source_sha256": "25df0d1644d0b4965065642ea174b940a65bfc4f0b28745a7fce5a94c2ec5654",
+          "model": "candidate",
+          "L": 2,
+          "parity": 0,
+          "seed": 17,
+          "chi": 32,
+          "E_physical": -0.6762106579682633,
+          "converged": true,
+          "density_mean": 0.26548720904188045,
+          "density_range": 8.1171958044024e-11,
+          "gauge": true,
+          "one_site": true,
+          "S": 0.9484298047667494,
+          "xi": 56.81316307185361,
+          "S_renyi": {
+            "1": 0.9484298047667494,
+            "2": 0.6811609311963212,
+            "3": 0.573783661799248
+          },
+          "correlation_lengths": [
+            56.81316307185361,
+            50.30737920725268,
+            20.2224242493392,
+            17.061024881238424
+          ],
+          "X": [
+            0.15349943981563918,
+            -0.1534994397071118
+          ],
+          "Y": [
+            -0.15349943981563915,
+            -0.15349943970711177
+          ]
+        },
+        {
+          "source": "results/candidate_infinite_L2_P0_s17_chi48_g_one.json",
+          "source_sha256": "a93887063a6f2d7b6b05a0355fcf7b54a6733ebad8df499fe72b652984e44fca",
+          "model": "candidate",
+          "L": 2,
+          "parity": 0,
+          "seed": 17,
+          "chi": 48,
+          "E_physical": -0.67621247966641,
+          "converged": true,
+          "density_mean": 0.26549392648990877,
+          "density_range": 3.668232939624261e-10,
+          "gauge": true,
+          "one_site": true,
+          "S": 1.0531083643059245,
+          "xi": 81.72825578956002,
+          "S_renyi": {
+            "1": 1.0531083643059245,
+            "2": 0.7891228292418456,
+            "3": 0.6791000029887249
+          },
+          "correlation_lengths": [
+            81.72825578956002,
+            81.70706572770446,
+            29.676112328605647,
+            27.218440478887004
+          ],
+          "X": [
+            5.2088909534729216e-05,
+            -5.208939470238424e-05
+          ],
+          "Y": [
+            -5.208890953472921e-05,
+            -5.208939470238423e-05
+          ]
+        },
+        {
+          "source": "results/candidate_infinite_L2_P0_s17_chi64_g_one.json",
+          "source_sha256": "5e4c4285743dffc7950d4df28aa96318fc01a53055ae745a7e5bf98dd0a95859",
+          "model": "candidate",
+          "L": 2,
+          "parity": 0,
+          "seed": 17,
+          "chi": 64,
+          "E_physical": -0.6762128807985345,
+          "converged": true,
+          "density_mean": 0.2655168525510294,
+          "density_range": 6.5188612841105e-09,
+          "gauge": true,
+          "one_site": true,
+          "S": 1.0691924263199453,
+          "xi": 98.4768977626704,
+          "S_renyi": {
+            "1": 1.0691924263199453,
+            "2": 0.7992870380284501,
+            "3": 0.6880788794775501
+          },
+          "correlation_lengths": [
+            98.4768977626704,
+            94.58977565039525,
+            35.37415589852191,
+            35.09641152329438
+          ],
+          "X": [
+            -7.4937328814254546e-06,
+            7.494627107662031e-06
+          ],
+          "Y": [
+            7.493732881425454e-06,
+            7.4946271076620295e-06
+          ]
+        },
+        {
+          "source": "results/candidate_infinite_L2_P0_s17_chi96_g_one.json",
+          "source_sha256": "74049b5539bdec33c1e0a97afd742741cde18e1f24582e14f77947d36913e65f",
+          "model": "candidate",
+          "L": 2,
+          "parity": 0,
+          "seed": 17,
+          "chi": 96,
+          "E_physical": -0.6762130667608981,
+          "converged": true,
+          "density_mean": 0.265531726937408,
+          "density_range": 1.2652834335824537e-10,
+          "gauge": true,
+          "one_site": true,
+          "S": 1.0841071706800496,
+          "xi": 119.9005717328722,
+          "S_renyi": {
+            "1": 1.0841071706800496,
+            "2": 0.8080677182786765,
+            "3": 0.6957155096899046
+          },
+          "correlation_lengths": [
+            119.9005717328722,
+            118.75302313885722,
+            49.728979716792445,
+            48.85534329561693
+          ],
+          "X": [
+            2.1245926560865692e-05,
+            -2.1245518517729547e-05
+          ],
+          "Y": [
+            -2.124592656086569e-05,
+            -2.1245518517729544e-05
+          ]
+        },
+        {
+          "source": "results/candidate_infinite_L2_P0_s17_chi128_g_one.json",
+          "source_sha256": "73a97b1a3132ddb01579479c3de669e73807c1dbaa98528e507bddc735802212",
+          "model": "candidate",
+          "L": 2,
+          "parity": 0,
+          "seed": 17,
+          "chi": 128,
+          "E_physical": -0.676213105236827,
+          "converged": true,
+          "density_mean": 0.2655357619930953,
+          "density_range": 5.622969867502547e-10,
+          "gauge": true,
+          "one_site": true,
+          "S": 1.0898340102156245,
+          "xi": 134.79244970324322,
+          "S_renyi": {
+            "1": 1.0898340102156245,
+            "2": 0.8111595121263114,
+            "3": 0.6983576761624808
+          },
+          "correlation_lengths": [
+            134.79244970324322,
+            134.7710175078179,
+            62.19542659551124,
+            62.17685752230845
+          ],
+          "X": [
+            1.2723389363103944e-07,
+            -1.270376072118025e-07
+          ],
+          "Y": [
+            -1.2723389363103944e-07,
+            -1.270376072118025e-07
+          ]
+        }
+      ],
+      "pairs": [
+        {
+          "chis": [
+            16,
+            24
+          ],
+          "c": 1.8153476213718622,
+          "c_renyi": {
+            "1": 1.8153476213718622,
+            "2": 2.005667317182476,
+            "3": 1.941622183533785
+          },
+          "xi_chi_power": 1.0845485227008316
+        },
+        {
+          "chis": [
+            24,
+            32
+          ],
+          "c": 2.8510825876052555,
+          "c_renyi": {
+            "1": 2.8510825876052555,
+            "2": 3.7051116708505045,
+            "3": 3.8034694505937687
+          },
+          "xi_chi_power": 1.4200412120276646
+        },
+        {
+          "chis": [
+            32,
+            48
+          ],
+          "c": 1.7272181603920378,
+          "c_renyi": {
+            "1": 1.7272181603920378,
+            "2": 2.375191911384519,
+            "3": 2.6066125368361464
+          },
+          "xi_chi_power": 0.8968262368296772
+        },
+        {
+          "chis": [
+            48,
+            64
+          ],
+          "c": 0.5176656924552595,
+          "c_renyi": {
+            "1": 0.5176656924552595,
+            "2": 0.4361802116232216,
+            "3": 0.43347784076617196
+          },
+          "xi_chi_power": 0.6480146240191843
+        },
+        {
+          "chis": [
+            64,
+            96
+          ],
+          "c": 0.4546234485778149,
+          "c_renyi": {
+            "1": 0.4546234485778149,
+            "2": 0.35686414640758957,
+            "3": 0.34916366102199675
+          },
+          "xi_chi_power": 0.48546927050317124
+        },
+        {
+          "chis": [
+            96,
+            128
+          ],
+          "c": 0.29350006331474265,
+          "c_renyi": {
+            "1": 0.29350006331474265,
+            "2": 0.2112722463876696,
+            "3": 0.20311622724156267
+          },
+          "xi_chi_power": 0.40695394875268925
+        }
+      ],
+      "fits": [
+        {
+          "chis": [
+            64,
+            96,
+            128
+          ],
+          "c": 0.40078160675135655,
+          "rms": 0.0009194735959032369,
+          "xi_ratio": 1.3687722985353727,
+          "c_renyi": {
+            "1": 0.40078160675135655,
+            "2": 0.3082123877613408,
+            "3": 0.30035967880720943
+          }
+        },
+        {
+          "chis": [
+            48,
+            64,
+            96,
+            128
+          ],
+          "c": 0.44605978487875164,
+          "rms": 0.0013147771475186401,
+          "xi_ratio": 1.6492759866344981,
+          "c_renyi": {
+            "1": 0.44605978487875164,
+            "2": 0.3567737134005564,
+            "3": 0.35069822837850345
+          }
+        },
+        {
+          "chis": [
+            32,
+            48,
+            64,
+            96,
+            128
+          ],
+          "c": 0.9595021173162135,
+          "rms": 0.017676492028637397,
+          "xi_ratio": 2.372556682555528,
+          "c_renyi": {
+            "1": 0.9595021173162135,
+            "2": 1.1621895568038376,
+            "3": 1.250278932473667
+          }
+        },
+        {
+          "chis": [
+            24,
+            32,
+            48,
+            64,
+            96,
+            128
+          ],
+          "c": 1.544530575419638,
+          "rms": 0.03857160502186565,
+          "xi_ratio": 3.569724926947411,
+          "c_renyi": {
+            "1": 1.544530575419638,
+            "2": 1.9661223222447448,
+            "3": 2.0712375868078685
+          }
+        },
+        {
+          "chis": [
+            16,
+            24,
+            32,
+            48,
+            64,
+            96,
+            128
+          ],
+          "c": 1.7234887899315936,
+          "rms": 0.039507935319104855,
+          "xi_ratio": 5.541333221755216,
+          "c_renyi": {
+            "1": 1.7234887899315936,
+            "2": 2.1492030698842286,
+            "3": 2.22607777289387
+          }
+        }
+      ]
+    },
+    {
+      "model": "candidate",
+      "cell": 4,
+      "seed": 23,
+      "gauge": false,
+      "one_site": false,
+      "points": [
+        {
+          "source": "results/candidate_infinite_L4_P0_s23_chi24.json",
+          "source_sha256": "5c1161518f3522cdbacbf08703e7e702b270340bf2d1a400b02ebbd1362df879",
+          "model": "candidate",
+          "L": 4,
+          "parity": 0,
+          "seed": 23,
+          "chi": 24,
+          "E_physical": -0.6762076781145973,
+          "converged": true,
+          "density_mean": 0.2656766208542854,
+          "density_range": 1.0977147597457382e-05,
+          "gauge": false,
+          "one_site": false,
+          "S": 0.7588627929396122,
+          "xi": 40.78052835748146,
+          "S_renyi": {
+            "1": 0.7588627929396122,
+            "2": 0.4956701020394976,
+            "3": 0.4044165784843401
+          },
+          "correlation_lengths": [
+            40.78052835748146,
+            26.775092711727886,
+            13.128745976336555,
+            12.054771234374616
+          ],
+          "X": [
+            -0.28890689474451936,
+            0.28890590166694274,
+            -0.28890969159094915,
+            0.2889106604072341
+          ],
+          "Y": [
+            0.28809543467979637,
+            0.2880944447476512,
+            0.2880982469343313,
+            0.28809918090599645
+          ]
+        },
+        {
+          "source": "results/candidate_infinite_L4_P0_s23_chi96.json",
+          "source_sha256": "abb385bd1172317f0bc49cbb31940c29aeb0f25e93f57a106fd457e722e9ddce",
+          "model": "candidate",
+          "L": 4,
+          "parity": 0,
+          "seed": 23,
+          "chi": 96,
+          "E_physical": -0.6762130579004473,
+          "converged": true,
+          "density_mean": 0.26553121308716715,
+          "density_range": 7.068719637404186e-08,
+          "gauge": false,
+          "one_site": false,
+          "S": 1.0836598650885567,
+          "xi": 119.34718881967585,
+          "S_renyi": {
+            "1": 1.0836598650885567,
+            "2": 0.8077802747482297,
+            "3": 0.6954620963237672
+          },
+          "correlation_lengths": [
+            119.34718881967585,
+            118.72115194647337,
+            49.43601301753273,
+            49.01267365892177
+          ],
+          "X": [
+            -7.096811274383371e-05,
+            7.09685238748787e-05,
+            -7.096743081673062e-05,
+            7.096819538135362e-05
+          ],
+          "Y": [
+            7.094761795036186e-05,
+            7.094801442972845e-05,
+            7.094693653777982e-05,
+            7.094768573822762e-05
+          ]
+        }
+      ],
+      "pairs": [
+        {
+          "chis": [
+            24,
+            96
+          ],
+          "c": 1.8147925308899762,
+          "c_renyi": {
+            "1": 1.8147925308899762,
+            "2": 2.325206552300621,
+            "3": 2.439310313495297
+          },
+          "xi_chi_power": 0.7746061061669844
+        }
+      ],
+      "fits": []
+    },
+    {
+      "model": "ising_critical",
+      "cell": 2,
+      "seed": 23,
+      "gauge": false,
+      "one_site": false,
+      "points": [
+        {
+          "source": "results/ising_critical_infinite_L2_P0_s23_chi16.json",
+          "source_sha256": "a49a4a0e229e19fb02191ee06e51fd7fb786106583db6fee4f780289f11d1202",
+          "model": "ising_critical",
+          "L": 2,
+          "parity": 0,
+          "seed": 23,
+          "chi": 16,
+          "E_physical": -1.2732393783164475,
+          "converged": true,
+          "density_mean": 0.1818216227805151,
+          "density_range": 8.881784197001252e-16,
+          "gauge": false,
+          "one_site": false,
+          "S": 0.46572648324321947,
+          "xi": 141.5389163747246,
+          "S_renyi": {
+            "1": 0.46572648324321947,
+            "2": 0.2786608937485375,
+            "3": 0.22261005901314673
+          },
+          "correlation_lengths": [
+            141.5389163747246,
+            55.114432730329355,
+            44.18557102355113,
+            24.910120142184024
+          ],
+          "X": [
+            -0.4003470765583605,
+            -0.4003470765583972
+          ],
+          "Y": [
+            -2.9823814647227677e-16,
+            2.3417273096523078e-17
+          ]
+        },
+        {
+          "source": "results/ising_critical_infinite_L2_P0_s23_chi24_a1.json",
+          "source_sha256": "73d653f79e69c69339ba51d80a8a2d574f8c348be3e2e63f3e4f28262a63e00c",
+          "model": "ising_critical",
+          "L": 2,
+          "parity": 0,
+          "seed": 23,
+          "chi": 24,
+          "E_physical": -1.2732395097532756,
+          "converged": true,
+          "density_mean": 0.1817516532006505,
+          "density_range": 4.524158825347513e-13,
+          "gauge": false,
+          "one_site": false,
+          "S": 0.5294727929463849,
+          "xi": 308.26109146228436,
+          "S_renyi": {
+            "1": 0.5294727929463849,
+            "2": 0.32482887919952796,
+            "3": 0.2615126687505127
+          },
+          "correlation_lengths": [
+            308.26109146228436,
+            121.25491875464864,
+            97.52288772617786,
+            55.096434826825735
+          ],
+          "X": [
+            -0.3639114874939055,
+            -0.36391148749293556
+          ],
+          "Y": [
+            6.129140471329833e-17,
+            -1.771477581579391e-17
+          ]
+        }
+      ],
+      "pairs": [
+        {
+          "chis": [
+            16,
+            24
+          ],
+          "c": 0.4913815674531262,
+          "c_renyi": {
+            "1": 0.4913815674531262,
+            "2": 0.47450792916899476,
+            "3": 0.44981487022020256
+          },
+          "xi_chi_power": 1.9197025865196047
+        }
+      ],
+      "fits": []
+    },
+    {
+      "model": "ising_critical",
+      "cell": 2,
+      "seed": 23,
+      "gauge": false,
+      "one_site": true,
+      "points": [
+        {
+          "source": "results/ising_critical_infinite_L2_P0_s23_chi16_one.json",
+          "source_sha256": "3b93a9660c6629e80bf12af2e036854899844b98a4648355da9e7717f4b73cba",
+          "model": "ising_critical",
+          "L": 2,
+          "parity": 0,
+          "seed": 23,
+          "chi": 16,
+          "E_physical": -1.2732393873398633,
+          "converged": true,
+          "density_mean": 0.1818099919029884,
+          "density_range": 6.706857291760571e-13,
+          "gauge": false,
+          "one_site": true,
+          "S": 0.47180244873177113,
+          "xi": 144.74453155031338,
+          "S_renyi": {
+            "1": 0.47180244873177113,
+            "2": 0.2832807193256456,
+            "3": 0.22650516714430727
+          },
+          "correlation_lengths": [
+            144.74453155031338,
+            54.178524225690495,
+            43.38302573058896,
+            23.27257109720901
+          ],
+          "X": [
+            -0.3963738728364738,
+            -0.39637387283688436
+          ],
+          "Y": [
+            1.9808799324084389e-19,
+            -1.3234231861625922e-18
+          ]
+        }
+      ],
+      "pairs": [],
+      "fits": []
+    },
+    {
+      "model": "ising_gapped",
+      "cell": 2,
+      "seed": 23,
+      "gauge": false,
+      "one_site": false,
+      "points": [
+        {
+          "source": "results/ising_gapped_infinite_L2_P0_s23_chi16.json",
+          "source_sha256": "041fdb35e04259eaed09859b25fea864f24d6c34f345d18c0ccb70a660fba53d",
+          "model": "ising_gapped",
+          "L": 2,
+          "parity": 0,
+          "seed": 23,
+          "chi": 16,
+          "E_physical": -1.2797037312419606,
+          "converged": true,
+          "density_mean": 0.17269731980546688,
+          "density_range": 4.551914400963142e-15,
+          "gauge": false,
+          "one_site": false,
+          "S": 0.5497251585955873,
+          "xi": 71.68183026998436,
+          "S_renyi": {
+            "1": 0.5497251585955873,
+            "2": 0.3855758460948916,
+            "3": 0.32155462068024665
+          },
+          "correlation_lengths": [
+            71.68183026998436,
+            36.62655770401842,
+            23.968022189645872,
+            18.394187753983164
+          ],
+          "X": [
+            -3.605862035382627e-05,
+            -3.605861971997653e-05
+          ],
+          "Y": [
+            1.7943543645759565e-16,
+            2.1659661277699145e-16
+          ]
+        },
+        {
+          "source": "results/ising_gapped_infinite_L2_P0_s23_chi24.json",
+          "source_sha256": "c47f273edf1afab0ce122d78ee9e7435e1159a1ded19448b754f95364b93af47",
+          "model": "ising_gapped",
+          "L": 2,
+          "parity": 0,
+          "seed": 23,
+          "chi": 24,
+          "E_physical": -1.2797037621546572,
+          "converged": true,
+          "density_mean": 0.17269999930502947,
+          "density_range": 4.6074255521944e-15,
+          "gauge": false,
+          "one_site": false,
+          "S": 0.5503407458873767,
+          "xi": 81.68606465420072,
+          "S_renyi": {
+            "1": 0.5503407458873767,
+            "2": 0.38585933383759957,
+            "3": 0.3217893499606663
+          },
+          "correlation_lengths": [
+            81.68606465420072,
+            50.90224480013927,
+            30.9010684472808,
+            29.59834987712404
+          ],
+          "X": [
+            -3.7091434445752466e-06,
+            -3.709143456978204e-06
+          ],
+          "Y": [
+            2.2904251106456567e-15,
+            1.948777194870669e-15
+          ]
+        },
+        {
+          "source": "results/ising_gapped_infinite_L2_P0_s23_chi48.json",
+          "source_sha256": "f4a49df12ea7905af206568a88fa7b28957c5218005701516ff6dfc82f86f425",
+          "model": "ising_gapped",
+          "L": 2,
+          "parity": 0,
+          "seed": 23,
+          "chi": 48,
+          "E_physical": -1.2797037637101611,
+          "converged": true,
+          "density_mean": 0.17270017296016862,
+          "density_range": 5.384581669432009e-15,
+          "gauge": false,
+          "one_site": false,
+          "S": 0.5503987087288613,
+          "xi": 91.31853768617437,
+          "S_renyi": {
+            "1": 0.5503987087288613,
+            "2": 0.38588186510414035,
+            "3": 0.3218077081931561
+          },
+          "correlation_lengths": [
+            91.31853768617437,
+            71.04611939849252,
+            50.745559482716814,
+            39.443017154815976
+          ],
+          "X": [
+            2.136317927688419e-07,
+            2.136318027745648e-07
+          ],
+          "Y": [
+            1.3040397672063249e-11,
+            1.2924440052171186e-11
+          ]
+        }
+      ],
+      "pairs": [
+        {
+          "chis": [
+            16,
+            24
+          ],
+          "c": 0.028271209376075388,
+          "c_renyi": {
+            "1": 0.028271209376075388,
+            "2": 0.017359122335251904,
+            "3": 0.01617012092830309
+          },
+          "xi_chi_power": 0.32221297269719035
+        },
+        {
+          "chis": [
+            24,
+            48
+          ],
+          "c": 0.0031199052400025656,
+          "c_renyi": {
+            "1": 0.0031199052400025656,
+            "2": 0.0016170225554619313,
+            "3": 0.0014822240665289233
+          },
+          "xi_chi_power": 0.16081777656612792
+        }
+      ],
+      "fits": [
+        {
+          "chis": [
+            16,
+            24,
+            48
+          ],
+          "c": 0.017020782321634398,
+          "rms": 0.0001187356316752346,
+          "xi_ratio": 1.2739426064070876,
+          "c_renyi": {
+            "1": 0.017020782321634398,
+            "2": 0.010317525434428524,
+            "3": 0.009600079417431998
+          }
+        }
+      ]
+    },
+    {
+      "model": "xx",
+      "cell": 2,
+      "seed": 17,
+      "gauge": false,
+      "one_site": false,
+      "points": [],
+      "pairs": [],
+      "fits": []
+    },
+    {
+      "model": "xx",
+      "cell": 2,
+      "seed": 23,
+      "gauge": false,
+      "one_site": false,
+      "points": [
+        {
+          "source": "results/xx_infinite_L2_P0_s23_chi16.json",
+          "source_sha256": "7b162c8e5d173ef6c9655453db44d9a832e0eebfe99d691a973baacd39b99b29",
+          "model": "xx",
+          "L": 2,
+          "parity": 0,
+          "seed": 23,
+          "chi": 16,
+          "E_physical": -0.6365866468313826,
+          "converged": true,
+          "density_mean": 0.49999999999960787,
+          "density_range": 1.2802133575462449e-08,
+          "gauge": false,
+          "one_site": false,
+          "S": 0.7668208569599051,
+          "xi": 32.758183753919525,
+          "S_renyi": {
+            "1": 0.7668208569599051,
+            "2": 0.5112241519229381,
+            "3": 0.4236467531561735
+          },
+          "correlation_lengths": [
+            32.758183753919525,
+            14.21196369535991,
+            13.756950236758746,
+            13.443997901446739
+          ],
+          "X": [
+            0.000360480797418003,
+            -0.00036048079750905515
+          ],
+          "Y": [
+            0.343641716414697,
+            -0.3436417164146563
+          ]
+        },
+        {
+          "source": "results/xx_infinite_L2_P0_s23_chi24_a1.json",
+          "source_sha256": "b26d3222d9a2b3a672ea7dcd47bc158bc39950a32808c86fc11ed78a38d0eced",
+          "model": "xx",
+          "L": 2,
+          "parity": 0,
+          "seed": 23,
+          "chi": 24,
+          "E_physical": -0.6366078268886644,
+          "converged": true,
+          "density_mean": 0.5000000000009726,
+          "density_range": 1.0860090604580819e-11,
+          "gauge": false,
+          "one_site": false,
+          "S": 0.8517129466032594,
+          "xi": 56.402625751173254,
+          "S_renyi": {
+            "1": 0.8517129466032594,
+            "2": 0.5745959896057451,
+            "3": 0.4791143811220642
+          },
+          "correlation_lengths": [
+            56.402625751173254,
+            24.46482134553502,
+            23.099221778772044,
+            20.933991662851994
+          ],
+          "X": [
+            0.000317666172960529,
+            -0.0003176661730405206
+          ],
+          "Y": [
+            0.3028273176099887,
+            -0.3028273176101251
+          ]
+        },
+        {
+          "source": "results/xx_infinite_L2_P0_s23_chi32.json",
+          "source_sha256": "c9735664196ee4a2ee603c03ea38666e3b4575fee28e3eede2c500cfb54223e1",
+          "model": "xx",
+          "L": 2,
+          "parity": 0,
+          "seed": 23,
+          "chi": 32,
+          "E_physical": -0.6366144634518152,
+          "converged": true,
+          "density_mean": 0.500000000006944,
+          "density_range": 1.9152346375506113e-11,
+          "gauge": false,
+          "one_site": false,
+          "S": 0.9210397123016336,
+          "xi": 84.56516894146029,
+          "S_renyi": {
+            "1": 0.9210397123016336,
+            "2": 0.6266082167206339,
+            "3": 0.5248339073943457
+          },
+          "correlation_lengths": [
+            84.56516894146029,
+            34.592198257524885,
+            34.31074591168871,
+            33.56690093950367
+          ],
+          "X": [
+            0.0002862330027076504,
+            -0.00028623300269881025
+          ],
+          "Y": [
+            0.2728626336187313,
+            -0.27286263361832896
+          ]
+        },
+        {
+          "source": "results/xx_infinite_L2_P0_s23_chi48.json",
+          "source_sha256": "61307dafd2a0e33ae3d6e2ea2f69843f3e483817b5c1569a7405c544b9447dcf",
+          "model": "xx",
+          "L": 2,
+          "parity": 0,
+          "seed": 23,
+          "chi": 48,
+          "E_physical": -0.6366178342538465,
+          "converged": true,
+          "density_mean": 0.4999999999974567,
+          "density_range": 2.0944523893007272e-11,
+          "gauge": false,
+          "one_site": false,
+          "S": 1.0068070619456786,
+          "xi": 142.96284728297167,
+          "S_renyi": {
+            "1": 1.0068070619456786,
+            "2": 0.6907208356319423,
+            "3": 0.5813090693285394
+          },
+          "correlation_lengths": [
+            142.96284728297167,
+            61.780248608478416,
+            58.28635409459105,
+            52.97410982920186
+          ],
+          "X": [
+            0.00025187895779030245,
+            -0.00025187895675429783
+          ],
+          "Y": [
+            0.24007218006397113,
+            -0.24007218006439587
+          ]
+        },
+        {
+          "source": "results/xx_infinite_L2_P0_s23_chi64.json",
+          "source_sha256": "d714687e3ef0ef47ed7c7422c6a1064cde2407fd6ec164ed4ed4668835140922",
+          "model": "xx",
+          "L": 2,
+          "parity": 0,
+          "seed": 23,
+          "chi": 64,
+          "E_physical": -0.6366188494765936,
+          "converged": true,
+          "density_mean": 0.49999999999675504,
+          "density_range": 4.5162484862970587e-11,
+          "gauge": false,
+          "one_site": false,
+          "S": 1.0683339174435316,
+          "xi": 204.6806071759033,
+          "S_renyi": {
+            "1": 1.0683339174435316,
+            "2": 0.7367906572168837,
+            "3": 0.6219838204777804
+          },
+          "correlation_lengths": [
+            204.6806071759033,
+            85.51758508268833,
+            84.82718662340143,
+            82.71365011709521
+          ],
+          "X": [
+            0.00023203891697752554,
+            -0.00023203891670844912
+          ],
+          "Y": [
+            0.21880320221998104,
+            -0.21880320221995764
+          ]
+        }
+      ],
+      "pairs": [
+        {
+          "chis": [
+            16,
+            24
+          ],
+          "c": 0.93740765306071,
+          "c_renyi": {
+            "1": 0.93740765306071,
+            "2": 0.9330315051646645,
+            "3": 0.9187389397079241
+          },
+          "xi_chi_power": 1.340097793732534
+        },
+        {
+          "chis": [
+            24,
+            32
+          ],
+          "c": 1.027046068201102,
+          "c_renyi": {
+            "1": 1.027046068201102,
+            "2": 1.0273848841036592,
+            "3": 1.0159725300526625
+          },
+          "xi_chi_power": 1.4078275731630145
+        },
+        {
+          "chis": [
+            32,
+            48
+          ],
+          "c": 0.9800819410676271,
+          "c_renyi": {
+            "1": 0.9800819410676271,
+            "2": 0.976838237399306,
+            "3": 0.9680307231182402
+          },
+          "xi_chi_power": 1.2949630180239942
+        },
+        {
+          "chis": [
+            48,
+            64
+          ],
+          "c": 1.0286880644656613,
+          "c_renyi": {
+            "1": 1.0286880644656613,
+            "2": 1.0270089965976026,
+            "3": 1.0200821420280923
+          },
+          "xi_chi_power": 1.2474394391163717
+        }
+      ],
+      "fits": [
+        {
+          "chis": [
+            32,
+            48,
+            64
+          ],
+          "c": 0.9983633397619018,
+          "rms": 0.000809311470630111,
+          "xi_ratio": 2.420389029407513,
+          "c_renyi": {
+            "1": 0.9983633397619018,
+            "2": 0.9957081160807968,
+            "3": 0.9876079425130336
+          }
+        },
+        {
+          "chis": [
+            24,
+            32,
+            48,
+            64
+          ],
+          "c": 1.0043509443339884,
+          "rms": 0.0008108266059363115,
+          "xi_ratio": 3.6289198321878797,
+          "c_renyi": {
+            "1": 1.0043509443339884,
+            "2": 1.0024561968061672,
+            "3": 0.9933753240342816
+          }
+        },
+        {
+          "chis": [
+            16,
+            24,
+            32,
+            48,
+            64
+          ],
+          "c": 0.9891116388501882,
+          "rms": 0.0016819822160902874,
+          "xi_ratio": 6.248228189739405,
+          "c_renyi": {
+            "1": 0.9891116388501882,
+            "2": 0.9867621664878875,
+            "3": 0.9761989338656607
+          }
+        }
+      ]
+    }
+  ],
+  "periodic_energy_gate": [
+    "recent_energy_stable",
+    "local_residual_small",
+    "norm_before_small",
+    "final_sweep_norm_small",
+    "energy_agreement"
+  ],
+  "periodic_energy_sectors": [
+    {
+      "source": "results/candidate_periodic_L8_P0_s17_chi16.json",
+      "source_sha256": "bd6684ae19e05464cc090191e4380c4463e3ac9c65ab7716d51b9fb8448ba5b6",
+      "model": "candidate",
+      "L": 8,
+      "parity": 0,
+      "seed": 17,
+      "chi": 16,
+      "E_physical": -5.434440094162602,
+      "converged": true,
+      "density_mean": 0.25724237575537356,
+      "density_range": 1.4988010832439613e-15,
+      "gauge": false,
+      "one_site": false,
+      "entropy_stats": {
+        "1": {
+          "central3": 0.9083592469087082,
+          "fractional": 0.9129107743573435,
+          "profiles": {
+            "0.25": {
+              "c": 1.0899633414374037,
+              "rms": 0.0005423769635875018
+            },
+            "0.375": {
+              "c": 1.0347830899016401,
+              "rms": 1.0215660718713353e-15
+            }
+          }
+        },
+        "2": {
+          "central3": 0.6931469486036482,
+          "fractional": 0.6935489044139347,
+          "profiles": {
+            "0.25": {
+              "c": 1.2625816100235359,
+              "rms": 0.008409381271593037
+            },
+            "0.375": {
+              "c": 0.12184541858119236,
+              "rms": 1.1801832636420706e-15
+            }
+          }
+        },
+        "3": {
+          "central3": 0.6006877620849164,
+          "fractional": 0.5973992169609081,
+          "profiles": {
+            "0.25": {
+              "c": 1.4760708158093325,
+              "rms": 0.017021134026350335
+            },
+            "0.375": {
+              "c": -1.1214688661459595,
+              "rms": 1.224605017966825e-15
+            }
+          }
+        }
+      }
+    },
+    {
+      "source": "results/candidate_periodic_L16_P0_s17_chi128.json",
+      "source_sha256": "813c42959e0ab83a33bf6ec4210f762da368716029b359a69c60f8112acadecc",
+      "model": "candidate",
+      "L": 16,
+      "parity": 0,
+      "seed": 17,
+      "chi": 128,
+      "E_physical": -10.831973513722637,
+      "converged": true,
+      "density_mean": 0.26395667847034426,
+      "density_range": 2.1720159004701145e-10,
+      "gauge": false,
+      "one_site": false,
+      "entropy_stats": {
+        "1": {
+          "central3": 1.1727825586965108,
+          "fractional": 1.167132270126829,
+          "profiles": {
+            "0.25": {
+              "c": 1.0309910124311066,
+              "rms": 0.00011091065148146588
+            },
+            "0.375": {
+              "c": 1.0235517796639688,
+              "rms": 3.2944725465511115e-06
+            }
+          }
+        },
+        "2": {
+          "central3": 0.9128794411339394,
+          "fractional": 0.9076578458608928,
+          "profiles": {
+            "0.25": {
+              "c": 1.1300159209957004,
+              "rms": 0.002457836431567727
+            },
+            "0.375": {
+              "c": 1.2163668778022645,
+              "rms": 0.0017079516378821474
+            }
+          }
+        },
+        "3": {
+          "central3": 0.8045868812362552,
+          "fractional": 0.7977857482487909,
+          "profiles": {
+            "0.25": {
+              "c": 1.260513045722675,
+              "rms": 0.008123988336826333
+            },
+            "0.375": {
+              "c": 1.6626564295294193,
+              "rms": 0.006271598233093554
+            }
+          }
+        }
+      }
+    },
+    {
+      "source": "results/candidate_periodic_L32_P0_s17_chi192.json",
+      "source_sha256": "205e368b799bbbbcf868ebbf4c9bbbd480a313ddee4530aa746f8c57377794ba",
+      "model": "candidate",
+      "L": 32,
+      "parity": 0,
+      "seed": 17,
+      "chi": 192,
+      "E_physical": -21.644690087435922,
+      "converged": true,
+      "density_mean": 0.2654233401512256,
+      "density_range": 1.006934443714691e-06,
+      "gauge": false,
+      "one_site": false,
+      "entropy_stats": {
+        "1": {
+          "central3": 1.414920627884319,
+          "fractional": 1.4069599631450513,
+          "profiles": {
+            "0.25": {
+              "c": 1.0126445383251719,
+              "rms": 8.72790978426088e-05
+            },
+            "0.375": {
+              "c": 1.0066590226268948,
+              "rms": 6.413892343093309e-06
+            }
+          }
+        },
+        "2": {
+          "central3": 1.0961715937870593,
+          "fractional": 1.090072845453791,
+          "profiles": {
+            "0.25": {
+              "c": 1.0168679714355682,
+              "rms": 0.0006698317121918145
+            },
+            "0.375": {
+              "c": 1.0208032180333189,
+              "rms": 0.000489295678693224
+            }
+          }
+        },
+        "3": {
+          "central3": 0.9718938602364776,
+          "fractional": 0.9655330116185714,
+          "profiles": {
+            "0.25": {
+              "c": 1.0616796351297308,
+              "rms": 0.003470033388255779
+            },
+            "0.375": {
+              "c": 1.1484408088050584,
+              "rms": 0.002915050290053564
+            }
+          }
+        }
+      }
+    },
+    {
+      "source": "results/candidate_periodic_L32_P1_s17_chi192_one.json",
+      "source_sha256": "fc75397405151a6375895c3199421378b72bad4bc539ac5c59d74b5ec8846bb4",
+      "model": "candidate",
+      "L": 32,
+      "parity": 1,
+      "seed": 17,
+      "chi": 192,
+      "E_physical": -21.633604016362458,
+      "converged": true,
+      "density_mean": 0.2701538365693643,
+      "density_range": 0.001488657595831333,
+      "gauge": false,
+      "one_site": true,
+      "entropy_stats": {
+        "1": {
+          "central3": 1.181821678368675,
+          "fractional": 1.1748660265854927,
+          "profiles": {
+            "0.25": {
+              "c": 0.590441053815338,
+              "rms": 0.00882204484451835
+            },
+            "0.375": {
+              "c": 0.7480192776538976,
+              "rms": 0.00841561281445671
+            }
+          }
+        },
+        "2": {
+          "central3": 0.9257409080665502,
+          "fractional": 0.9208382435336069,
+          "profiles": {
+            "0.25": {
+              "c": 0.5125255146725677,
+              "rms": 0.007345392612508529
+            },
+            "0.375": {
+              "c": 0.6836433911881241,
+              "rms": 0.006928860972959776
+            }
+          }
+        },
+        "3": {
+          "central3": 0.8719857030112607,
+          "fractional": 0.8671304647716258,
+          "profiles": {
+            "0.25": {
+              "c": 0.6482772051495714,
+              "rms": 0.006444867247181554
+            },
+            "0.375": {
+              "c": 0.8016435605815107,
+              "rms": 0.005686161074724246
+            }
+          }
+        }
+      }
+    },
+    {
+      "source": "results/candidate_periodic_L48_P0_s17_chi192_g_one.json",
+      "source_sha256": "fe56ee8c9c314b94977ab4c84c131a6ae9185ad1011ba021b30b7aef64292c71",
+      "model": "candidate",
+      "L": 48,
+      "parity": 0,
+      "seed": 17,
+      "chi": 192,
+      "E_physical": -32.461920429036795,
+      "converged": true,
+      "density_mean": 0.2656479377288452,
+      "density_range": 1.141044111291345e-05,
+      "gauge": true,
+      "one_site": true,
+      "entropy_stats": {
+        "1": {
+          "central3": 1.5521678956122031,
+          "fractional": 1.5439468713082507,
+          "profiles": {
+            "0.25": {
+              "c": 0.9936616660399549,
+              "rms": 0.00012202680882766821
+            },
+            "0.375": {
+              "c": 0.9851549685849281,
+              "rms": 7.066763318786291e-06
+            }
+          }
+        },
+        "2": {
+          "central3": 1.1958165854372764,
+          "fractional": 1.1896680910709363,
+          "profiles": {
+            "0.25": {
+              "c": 0.9790271988696864,
+              "rms": 0.0003309928319328709
+            },
+            "0.375": {
+              "c": 0.9765296699431759,
+              "rms": 0.000247623665063318
+            }
+          }
+        },
+        "3": {
+          "central3": 1.0597575309825382,
+          "fractional": 1.0537809953841772,
+          "profiles": {
+            "0.25": {
+              "c": 0.9886992245427764,
+              "rms": 0.0021259965559646847
+            },
+            "0.375": {
+              "c": 1.0234767198957495,
+              "rms": 0.0018347316028107746
+            }
+          }
+        }
+      }
+    },
+    {
+      "source": "results/candidate_periodic_L48_P1_s17_chi192_g_one.json",
+      "source_sha256": "f464a04e3f785a4d65467fce470de4ff34af6fc6eec3deb81ec3cb1b398c06e0",
+      "model": "candidate",
+      "L": 48,
+      "parity": 1,
+      "seed": 17,
+      "chi": 192,
+      "E_physical": -32.454258338610515,
+      "converged": true,
+      "density_mean": 0.26834724456342557,
+      "density_range": 0.00021952515588136157,
+      "gauge": true,
+      "one_site": true,
+      "entropy_stats": {
+        "1": {
+          "central3": 1.3368211746835197,
+          "fractional": 1.3349295036724633,
+          "profiles": {
+            "0.25": {
+              "c": 0.5428340587753835,
+              "rms": 0.0070892944032984965
+            },
+            "0.375": {
+              "c": 0.37917772601700406,
+              "rms": 0.007030505816934483
+            }
+          }
+        },
+        "2": {
+          "central3": 1.021883144308446,
+          "fractional": 1.0216675829635509,
+          "profiles": {
+            "0.25": {
+              "c": 0.4324183687405397,
+              "rms": 0.006849149812717483
+            },
+            "0.375": {
+              "c": 0.2325997403579424,
+              "rms": 0.006849951047496212
+            }
+          }
+        },
+        "3": {
+          "central3": 0.9482010659919616,
+          "fractional": 0.9473949352575367,
+          "profiles": {
+            "0.25": {
+              "c": 0.5202059639923517,
+              "rms": 0.00561752212895161
+            },
+            "0.375": {
+              "c": 0.3312804200911075,
+              "rms": 0.005681999155616104
+            }
+          }
+        }
+      }
+    },
+    {
+      "source": "results/candidate_periodic_L64_P0_s17_chi192_g_one_a1.json",
+      "source_sha256": "3d59d19a7a3f6fa58e2f010fc1e2233c6833dd7b7758bccd070a331b42f9ac59",
+      "model": "candidate",
+      "L": 64,
+      "parity": 0,
+      "seed": 17,
+      "chi": 192,
+      "E_physical": -43.280248977756955,
+      "converged": true,
+      "density_mean": 0.26569892012728463,
+      "density_range": 3.7652784203701106e-05,
+      "gauge": true,
+      "one_site": true,
+      "entropy_stats": {
+        "1": {
+          "central3": 1.6460644394508714,
+          "fractional": 1.637960883138346,
+          "profiles": {
+            "0.25": {
+              "c": 0.9665834076594363,
+              "rms": 0.0001752772692003139
+            },
+            "0.375": {
+              "c": 0.9539671710093891,
+              "rms": 1.035068897952842e-05
+            }
+          }
+        },
+        "2": {
+          "central3": 1.263463705125386,
+          "fractional": 1.2574319873444475,
+          "profiles": {
+            "0.25": {
+              "c": 0.9490467306330862,
+              "rms": 0.00022702736597253494
+            },
+            "0.375": {
+              "c": 0.9420280489324422,
+              "rms": 0.00015814990782113958
+            }
+          }
+        },
+        "3": {
+          "central3": 1.1181163849534728,
+          "fractional": 1.1124618126337058,
+          "profiles": {
+            "0.25": {
+              "c": 0.9407566323333978,
+              "rms": 0.001520306101497517
+            },
+            "0.375": {
+              "c": 0.9546750770802632,
+              "rms": 0.0013233428426143953
+            }
+          }
+        }
+      }
+    },
+    {
+      "source": "results/candidate_periodic_L64_P1_s17_chi192_g_one.json",
+      "source_sha256": "182c21f1dcc753002dd4708d9beb79bb1576d84c1f803cb97690f3ce5045a8e2",
+      "model": "candidate",
+      "L": 64,
+      "parity": 1,
+      "seed": 17,
+      "chi": 192,
+      "E_physical": -43.274307553352784,
+      "converged": true,
+      "density_mean": 0.2675435132948012,
+      "density_range": 7.745882334081466e-05,
+      "gauge": true,
+      "one_site": true,
+      "entropy_stats": {
+        "1": {
+          "central3": 1.442831768643517,
+          "fractional": 1.4404831398650324,
+          "profiles": {
+            "0.25": {
+              "c": 0.5553255824703804,
+              "rms": 0.00621534590915986
+            },
+            "0.375": {
+              "c": 0.43115831695030743,
+              "rms": 0.006189527929962748
+            }
+          }
+        },
+        "2": {
+          "central3": 1.0905478995460984,
+          "fractional": 1.0901691721399036,
+          "profiles": {
+            "0.25": {
+              "c": 0.44164465003358505,
+              "rms": 0.006674771948821632
+            },
+            "0.375": {
+              "c": 0.2817833328921735,
+              "rms": 0.0066957543648659
+            }
+          }
+        },
+        "3": {
+          "central3": 1.0031883669401804,
+          "fractional": 1.0023528567254516,
+          "profiles": {
+            "0.25": {
+              "c": 0.5130568331732407,
+              "rms": 0.005642392316280418
+            },
+            "0.375": {
+              "c": 0.3610765623051283,
+              "rms": 0.005703873585536215
+            }
+          }
+        }
+      }
+    }
+  ],
+  "periodic_parity_gaps": [
+    {
+      "model": "candidate",
+      "L": 32,
+      "gap": 0.011086071073464154,
+      "L_gap": 0.35475427435085294,
+      "sources": [
+        "results/candidate_periodic_L32_P0_s17_chi192.json",
+        "results/candidate_periodic_L32_P1_s17_chi192_one.json"
+      ],
+      "chis": [
+        192,
+        192
+      ],
+      "both_entropy_gates_pass": true
+    },
+    {
+      "model": "candidate",
+      "L": 48,
+      "gap": 0.007662090426279633,
+      "L_gap": 0.3677803404614224,
+      "sources": [
+        "results/candidate_periodic_L48_P0_s17_chi192_g_one.json",
+        "results/candidate_periodic_L48_P1_s17_chi192_g_one.json"
+      ],
+      "chis": [
+        192,
+        192
+      ],
+      "both_entropy_gates_pass": true
+    },
+    {
+      "model": "candidate",
+      "L": 64,
+      "gap": 0.005941424404170448,
+      "L_gap": 0.38025116186690866,
+      "sources": [
+        "results/candidate_periodic_L64_P0_s17_chi192_g_one_a1.json",
+        "results/candidate_periodic_L64_P1_s17_chi192_g_one.json"
+      ],
+      "chis": [
+        192,
+        192
+      ],
+      "both_entropy_gates_pass": true
+    }
+  ],
+  "periodic_selection_exclusions": [],
+  "periodic_bond_checks": [
+    {
+      "model": "candidate",
+      "L": 48,
+      "parity": 0,
+      "chis": [
+        128,
+        192
+      ],
+      "sources": [
+        "results/candidate_periodic_L48_P0_s17_chi128_g_one_a1.json",
+        "results/candidate_periodic_L48_P0_s17_chi192_g_one.json"
+      ],
+      "delta_E": -3.041259348890435e-05,
+      "delta_S": {
+        "1": {
+          "central3": 0.002468837533209367,
+          "fractional": 0.002280159840023055
+        },
+        "2": {
+          "central3": 0.0013544541735950322,
+          "fractional": 0.0012462540624216256
+        },
+        "3": {
+          "central3": 0.0011739530634702344,
+          "fractional": 0.001078357104215888
+        }
+      }
+    },
+    {
+      "model": "candidate",
+      "L": 48,
+      "parity": 1,
+      "chis": [
+        128,
+        192
+      ],
+      "sources": [
+        "results/candidate_periodic_L48_P1_s17_chi128_g_one.json",
+        "results/candidate_periodic_L48_P1_s17_chi192_g_one.json"
+      ],
+      "delta_E": -2.5521530972127948e-05,
+      "delta_S": {
+        "1": {
+          "central3": 0.0028363886623354873,
+          "fractional": 0.002693221592966033
+        },
+        "2": {
+          "central3": 0.0013079507259929901,
+          "fractional": 0.001247068116792871
+        },
+        "3": {
+          "central3": 0.0010254177831278133,
+          "fractional": 0.0009775464411644341
+        }
+      }
+    },
+    {
+      "model": "candidate",
+      "L": 64,
+      "parity": 0,
+      "chis": [
+        128,
+        192
+      ],
+      "sources": [
+        "results/candidate_periodic_L64_P0_s17_chi128_g_one_a1.json",
+        "results/candidate_periodic_L64_P0_s17_chi192_g_one_a1.json"
+      ],
+      "delta_E": -8.738450220135974e-05,
+      "delta_S": {
+        "1": {
+          "central3": 0.009195152108691262,
+          "fractional": 0.00863518595963697
+        },
+        "2": {
+          "central3": 0.0059170585143268895,
+          "fractional": 0.0055640593015560125
+        },
+        "3": {
+          "central3": 0.005234121913894496,
+          "fractional": 0.004929634370603342
+        }
+      }
+    }
+  ],
+  "periodic_matched_chi_gaps": [
+    {
+      "model": "candidate",
+      "L": 32,
+      "chi": 192,
+      "gap": 0.011086071073464154,
+      "sources": [
+        "results/candidate_periodic_L32_P0_s17_chi192.json",
+        "results/candidate_periodic_L32_P1_s17_chi192_one.json"
+      ]
+    },
+    {
+      "model": "candidate",
+      "L": 48,
+      "chi": 128,
+      "gap": 0.007657199363762857,
+      "sources": [
+        "results/candidate_periodic_L48_P0_s17_chi128_g_one_a1.json",
+        "results/candidate_periodic_L48_P1_s17_chi128_g_one.json"
+      ]
+    },
+    {
+      "model": "candidate",
+      "L": 48,
+      "chi": 192,
+      "gap": 0.007662090426279633,
+      "sources": [
+        "results/candidate_periodic_L48_P0_s17_chi192_g_one.json",
+        "results/candidate_periodic_L48_P1_s17_chi192_g_one.json"
+      ]
+    },
+    {
+      "model": "candidate",
+      "L": 64,
+      "chi": 192,
+      "gap": 0.005941424404170448,
+      "sources": [
+        "results/candidate_periodic_L64_P0_s17_chi192_g_one_a1.json",
+        "results/candidate_periodic_L64_P1_s17_chi192_g_one.json"
+      ]
+    }
+  ],
+  "interpretation": "Conditional entropy estimators. No thermodynamic central charge is assumed; failed convergence rows excluded."
+}

@@ -1,0 +1,6 @@
+{
+  "source": "contrib/d2_central_charge_20261110/checkpoints_local/candidate_periodic_L48_P0_s17_chi128_g.pkl",
+  "snapshot": "contrib/d2_central_charge_20261110/checkpoints_local/warm_L48_P0_chi128_g.pkl",
+  "sha256": "a168391d4caec49b2d5c269f28e2f547fc5941df9dc0eabe2636fcb768cb8bbd",
+  "purpose": "Immutable initialization for chi192; the chi128 worker may continue. No completed result is inferred from this snapshot."
+}
