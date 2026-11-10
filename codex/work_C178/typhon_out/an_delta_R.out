@@ -1,0 +1,89 @@
+
+phi=1.54 |w|=1.0 n=1/6
+   L= 24 N= 4: D_ps=0.0514 L*D_ps=1.234 slope=  -    D_neel=0.2293 R=4.459  Phi_s=0.141pi  R(SU2 at this Phi)=0.970  Delta_R=-0.30
+
+phi=1.54 |w|=1.0 n=1/5
+   L= 20 N= 4: D_ps=0.0755 L*D_ps=1.510 slope=  -    D_neel=0.0426 R=0.564  Phi_s=0.784pi  R(SU2 at this Phi)=0.319  Delta_R=< -0.9
+   L= 30 N= 6: D_ps=0.0270 L*D_ps=0.810 slope=-2.54  D_neel=0.1050 R=3.890  Phi_s=1.176pi  R(SU2 at this Phi)=0.239  Delta_R=-0.70
+
+phi=1.54 |w|=1.0 n=1/4
+   L= 24 N= 6: D_ps=0.0833 L*D_ps=2.000 slope=  -    D_neel=0.3110 R=3.732  Phi_s=0.141pi  R(SU2 at this Phi)=0.964  Delta_R=-0.11
+   L= 32 N= 8: D_ps=0.0307 L*D_ps=0.982 slope=-3.47  D_neel=0.0362 R=1.181  Phi_s=0.855pi  R(SU2 at this Phi)=0.189  Delta_R=-0.41
+
+phi=1.5708 |w|=0.5 n=1/6
+   L= 24 N= 4: D_ps=0.0907 L*D_ps=2.177 slope=  -    D_neel=0.1594 R=1.758  Phi_s=0.085pi  R(SU2 at this Phi)=0.989  Delta_R=0.47
+   L= 36 N= 6: D_ps=0.0453 L*D_ps=1.631 slope=-1.71  D_neel=0.0829 R=1.830  Phi_s=1.128pi  R(SU2 at this Phi)=0.174  Delta_R=< -0.9
+
+phi=1.5708 |w|=0.5 n=1/5
+   L= 20 N= 4: D_ps=0.1133 L*D_ps=2.266 slope=  -    D_neel=0.0977 R=0.862  Phi_s=0.404pi  R(SU2 at this Phi)=0.779  Delta_R=0.89
+   L= 30 N= 6: D_ps=0.0601 L*D_ps=1.804 slope=-1.56  D_neel=0.1508 R=2.508  Phi_s=1.607pi  R(SU2 at this Phi)=0.762  Delta_R=-0.04
+
+phi=1.5708 |w|=1.0 n=1/12
+   L= 24 N= 2: D_ps=0.1233 L*D_ps=2.959 slope=  -    D_neel=0.1060 R=0.860  Phi_s=0.139pi  R(SU2 at this Phi)=0.988  Delta_R=1.29
+   L= 48 N= 4: D_ps=0.0610 L*D_ps=2.927 slope=-1.02  D_neel=0.0388 R=0.637  Phi_s=0.279pi  R(SU2 at this Phi)=0.888  Delta_R=1.36
+
+phi=1.5708 |w|=1.0 n=1/9
+   L= 36 N= 4: D_ps=0.0901 L*D_ps=3.242 slope=  -    D_neel=0.0852 R=0.946  Phi_s=0.209pi  R(SU2 at this Phi)=0.935  Delta_R=0.99
+
+phi=1.5708 |w|=1.0 n=1/8
+   L= 16 N= 2: D_ps=0.1999 L*D_ps=3.199 slope=  -    D_neel=0.1752 R=0.876  Phi_s=1.426pi  R(SU2 at this Phi)=0.766  Delta_R=< -0.9
+   L= 32 N= 4: D_ps=0.0956 L*D_ps=3.060 slope=-1.06  D_neel=0.0036 R=0.038  Phi_s=0.852pi  R(SU2 at this Phi)=0.221  Delta_R=< -0.9
+   L= 48 N= 6: D_ps=0.0702 L*D_ps=3.369 slope=-0.76  D_neel=0.0598 R=0.853  Phi_s=0.279pi  R(SU2 at this Phi)=0.870  Delta_R=1.02
+
+phi=1.5708 |w|=1.0 n=1/6
+   L= 24 N= 4: D_ps=0.1564 L*D_ps=3.754 slope=  -    D_neel=0.2299 R=1.470  Phi_s=0.139pi  R(SU2 at this Phi)=0.971  Delta_R=0.61
+   L= 36 N= 6: D_ps=0.1033 L*D_ps=3.720 slope=-1.02  D_neel=0.1265 R=1.225  Phi_s=0.209pi  R(SU2 at this Phi)=0.924  Delta_R=0.76
+   L= 48 N= 8: D_ps=0.0772 L*D_ps=3.707 slope=-1.01  D_neel=0.0757 R=0.980  Phi_s=0.279pi  R(SU2 at this Phi)=0.861  Delta_R=0.90
+
+phi=1.5708 |w|=1.0 n=1/5
+   L= 20 N= 4: D_ps=0.1758 L*D_ps=3.517 slope=  -    D_neel=0.0432 R=0.246  Phi_s=0.783pi  R(SU2 at this Phi)=0.321  Delta_R=< -0.9
+   L= 30 N= 6: D_ps=0.1244 L*D_ps=3.731 slope=-0.85  D_neel=0.1045 R=0.840  Phi_s=1.174pi  R(SU2 at this Phi)=0.236  Delta_R=-0.08
+   L= 40 N= 8: D_ps=0.0972 L*D_ps=3.886 slope=-0.86  D_neel=0.1770 R=1.821  Phi_s=1.566pi  R(SU2 at this Phi)=0.705  Delta_R=0.17
+
+phi=1.5708 |w|=1.0 n=1/4
+   L= 16 N= 4: D_ps=0.2458 L*D_ps=3.933 slope=  -    D_neel=0.4086 R=1.662  Phi_s=1.426pi  R(SU2 at this Phi)=0.594  Delta_R=0.04
+   L= 24 N= 6: D_ps=0.1716 L*D_ps=4.118 slope=-0.89  D_neel=0.3124 R=1.820  Phi_s=0.139pi  R(SU2 at this Phi)=0.965  Delta_R=0.48
+   L= 32 N= 8: D_ps=0.1157 L*D_ps=3.704 slope=-1.37  D_neel=0.0355 R=0.307  Phi_s=0.852pi  R(SU2 at this Phi)=0.192  Delta_R=0.59
+   L= 40 N=10: D_ps=0.1004 L*D_ps=4.017 slope=-0.64  D_neel=0.2450 R=2.440  Phi_s=1.566pi  R(SU2 at this Phi)=0.696  Delta_R=-0.06
+
+phi=1.5708 |w|=1.0353 n=1/6
+   L= 24 N= 4: D_ps=0.1609 L*D_ps=3.861 slope=  -    D_neel=0.2705 R=1.681  Phi_s=0.000pi  R(SU2 at this Phi)=1.000  Delta_R=0.52
+   L= 36 N= 6: D_ps=0.1062 L*D_ps=3.824 slope=-1.02  D_neel=0.1671 R=1.573  Phi_s=0.000pi  R(SU2 at this Phi)=1.000  Delta_R=0.64
+   L= 48 N= 8: D_ps=0.0794 L*D_ps=3.811 slope=-1.01  D_neel=0.1162 R=1.463  Phi_s=0.000pi  R(SU2 at this Phi)=1.000  Delta_R=0.72
+
+phi=1.5708 |w|=1.0353 n=1/4
+   L= 16 N= 4: D_ps=0.2466 L*D_ps=3.946 slope=  -    D_neel=0.3455 R=1.401  Phi_s=1.333pi  R(SU2 at this Phi)=0.478  Delta_R=< -0.9
+   L= 24 N= 6: D_ps=0.1758 L*D_ps=4.220 slope=-0.83  D_neel=0.3795 R=2.159  Phi_s=0.000pi  R(SU2 at this Phi)=1.000  Delta_R=0.40
+
+phi=1.5708 |w|=1.2361 n=1/10
+   L= 20 N= 2: D_ps=0.1852 L*D_ps=3.704 slope=  -    D_neel=0.1600 R=0.864  Phi_s=2.000pi  R(SU2 at this Phi)=1.000  Delta_R=1.32
+
+phi=1.5708 |w|=1.2361 n=1/5
+   L= 20 N= 4: D_ps=0.2268 L*D_ps=4.535 slope=  -    D_neel=0.3787 R=1.670  Phi_s=2.000pi  R(SU2 at this Phi)=1.000  Delta_R=0.53
+   L= 30 N= 6: D_ps=0.1494 L*D_ps=4.481 slope=-1.03  D_neel=0.2254 R=1.509  Phi_s=2.000pi  R(SU2 at this Phi)=1.000  Delta_R=0.67
+   L= 40 N= 8: D_ps=0.1115 L*D_ps=4.462 slope=-1.01  D_neel=0.1503 R=1.347  Phi_s=2.000pi  R(SU2 at this Phi)=1.000  Delta_R=0.78
+
+phi=1.5708 |w|=1.5307 n=1/4
+   L= 16 N= 4: D_ps=0.3161 L*D_ps=5.057 slope=  -    D_neel=0.5449 R=1.724  Phi_s=2.000pi  R(SU2 at this Phi)=1.000  Delta_R=0.50
+   L= 24 N= 6: D_ps=0.2069 L*D_ps=4.964 slope=-1.05  D_neel=0.2945 R=1.424  Phi_s=2.000pi  R(SU2 at this Phi)=1.000  Delta_R=0.72
+   L= 32 N= 8: D_ps=0.1541 L*D_ps=4.931 slope=-1.02  D_neel=0.1729 R=1.122  Phi_s=2.000pi  R(SU2 at this Phi)=1.000  Delta_R=0.92
+   L= 40 N=10: D_ps=0.1229 L*D_ps=4.916 slope=-1.01  D_neel=0.1007 R=0.819  Phi_s=2.000pi  R(SU2 at this Phi)=1.000  Delta_R=1.13
+
+phi=1.5708 |w|=2.0 n=1/12
+   L= 24 N= 2: D_ps=0.2097 L*D_ps=5.032 slope=  -    D_neel=0.0356 R=0.170  Phi_s=2.000pi  R(SU2 at this Phi)=1.000  Delta_R=> 3.0
+   L= 48 N= 4: D_ps=0.1265 L*D_ps=6.072 slope=-0.73  D_neel=0.0024 R=0.019  Phi_s=2.000pi  R(SU2 at this Phi)=1.000  Delta_R=> 3.0
+
+phi=1.5708 |w|=2.0 n=1/9
+   L= 36 N= 4: D_ps=0.1475 L*D_ps=5.310 slope=  -    D_neel=0.0136 R=0.092  Phi_s=2.000pi  R(SU2 at this Phi)=1.000  Delta_R=> 3.0
+
+phi=1.5708 |w|=2.0 n=1/6
+   L= 24 N= 4: D_ps=0.2091 L*D_ps=5.019 slope=  -    D_neel=0.0731 R=0.349  Phi_s=2.000pi  R(SU2 at this Phi)=1.000  Delta_R=2.26
+   L= 36 N= 6: D_ps=0.1381 L*D_ps=4.972 slope=-1.02  D_neel=0.0004 R=0.003  Phi_s=2.000pi  R(SU2 at this Phi)=1.000  Delta_R=> 3.0
+   L= 48 N= 8: D_ps=0.1078 L*D_ps=5.176 slope=-0.86  D_neel=0.0312 R=0.289  Phi_s=2.000pi  R(SU2 at this Phi)=1.000  Delta_R=1.88
+
+phi=1.5708 |w|=2.0 n=1/5
+   L= 20 N= 4: D_ps=0.2631 L*D_ps=5.262 slope=  -    D_neel=0.3176 R=1.207  Phi_s=1.333pi  R(SU2 at this Phi)=0.477  Delta_R=< -0.9
+   L= 30 N= 6: D_ps=0.1655 L*D_ps=4.965 slope=-1.14  D_neel=0.0144 R=0.087  Phi_s=2.000pi  R(SU2 at this Phi)=1.000  Delta_R=> 3.0
+
+phi=1.5708 |w|=2.0 n=1/4
+   L= 24 N= 6: D_ps=0.1921 L*D_ps=4.611 slope=  -    D_neel=0.0640 R=0.333  Phi_s=2.000pi  R(SU2 at this Phi)=1.000  Delta_R=1.95

@@ -152,3 +152,15 @@ Against the registration.
 - As registered, the outcome so far is "unresolved", for the reason that the L = 256 entropy is not converged in χ.
 
 Direction of the bias. The entropy rises with χ at fixed size, and the L = 128 partner passes C4 (step 0.0046). An unconverged L = 256 state therefore lowers c_two. Outside the registration, a linear extrapolation in the discarded weight through the last two stages gives S̄₆ = 2.094 at L = 256 and 1.861 at L = 128, and c_two = 2.01.
+
+## R7. p153c even sector at L = 256 finished (collected 2026-11-10 00:50 EST)
+
+p153c_L256_P0_rand1, χ = 768, 20 sweeps. E = −2570.2571001943, S̄₁ = 2.0892, S̄₆ = 2.0830, S̄₁₂ = 2.0793, n_mid = 0.2192, c_prof = 2.011, W_a/W_b = 0.779. C1 to C3 pass (residual 1e-9, last two sweeps |ΔE| = 1e-9, |ΔS̄₆| = 1.3e-4, |Δn_mid| = 2e-6, discarded weight 3.7e-10). C4 fails, step 0.0871 from χ = 512.
+
+| χ | S̄₆ even | S̄₆ odd | discarded weight (even, odd) |
+|---|---|---|---|
+| 384 | 1.9122 | 2.0203 | 2.1e-9, 2.6e-9 |
+| 512 | 1.9959 | 2.0559 | 1.1e-9, 1.2e-9 |
+| 768 | 2.0830 | 2.0828 | 3.7e-10, 3.5e-10 |
+
+The sectors agree at χ = 768 to 2e-4 in S̄₆ after different histories. Ground sector odd, L·Δ_GC/|t₂| = −0.374. Ground-branch c_two(128 → 256) = 1.902, 1.936, 1.971 (unchanged from R6), all parity pairings at W = 1 from 1.90 to 1.99. The verdict of R6 stands: V2 does not hold, and V1 waits on C4 at L = 256 and on the two-leg control. Updated table in typhon_out/analyze_G_partial.txt.

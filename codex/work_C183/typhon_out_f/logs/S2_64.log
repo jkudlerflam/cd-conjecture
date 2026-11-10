@@ -1,0 +1,8 @@
+  sweep 0 chi=32 E=-11.783034571120 trunc=0.00e+00 mv/solve=56.2 (max 61) res_max=3.9e-02
+  sweep 1 chi=64 E=-11.791699903400 trunc=0.00e+00 mv/solve=54.9 (max 61) res_max=1.3e-03
+  sweep 2 chi=96 E=-11.792884139906 trunc=6.37e-09 mv/solve=52.6 (max 61) res_max=2.9e-03
+  sweep 3 chi=128 E=-11.792922658408 trunc=1.28e-09 mv/solve=46.2 (max 61) res_max=3.0e-04
+  sweep 4 chi=192 E=-11.792944041767 trunc=8.84e-10 mv/solve=52.3 (max 61) res_max=5.7e-04
+  sweep 5 chi=192 E=-11.792944640913 trunc=1.27e-09 mv/solve=230.1 (max 401) res_max=4.0e-06
+  sweep 6 chi=192 E=-11.792944639724 trunc=1.31e-09 mv/solve=129.4 (max 401) res_max=1.9e-08
+done oc/S2_64.json E=-130.2690438910 Sbar=1.3211 c_prof=1.839 trunc=1.3e-09 n_mid=0.1262 N=10.100 emid=-2.0067519856 t=5437s

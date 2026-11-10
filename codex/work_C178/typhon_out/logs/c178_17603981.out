@@ -1,0 +1,1 @@
+./run_task.sh: line 6: 4061655 Terminated              /opt/sns/anaconda3/2024.06/bin/python3 -s -B spec2.py "$@" out/$TAG.jsonl > out/$TAG.out 2>&1
