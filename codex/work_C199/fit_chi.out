@@ -1,0 +1,12 @@
+== p153c
+  L = 128: raw 1.8591  chi^-b: 1.8634 (exp 2.54)  eps^a: 1.8630 (exp 0.70)  lin eps: 1.8614 (exp 1.00)
+  L = 256: raw 2.0938  chi^-b: 2.0957 (exp 2.79)  eps^a: 2.0951 (exp 0.87)  lin eps: 2.0948 (exp 1.00)
+  L = 512: raw 2.3077  chi^-b: 2.3521 (exp 1.43)  eps^a: 2.3420 (exp 0.65)  lin eps: 2.3257 (exp 1.00)
+  c_two(128->256): raw 2.032, lin eps 2.021, eps^a 2.008, chi^-b 2.011
+  c_two(256->512): raw 1.852, lin eps 1.999, eps^a 2.137, chi^-b 2.220
+== sym40_n316
+  L = 128: raw 1.8310  chi^-b: 1.8340 (exp 2.77)  eps^a: 1.8336 (exp 0.76)  lin eps: 1.8327 (exp 1.00)
+  L = 256: raw 2.0650  chi^-b: 2.0663 (exp 2.98)  eps^a: 2.0661 (exp 0.83)  lin eps: 2.0658 (exp 1.00)
+  L = 512: raw 2.2837  chi^-b: 2.3178 (exp 1.61)  eps^a: 2.3139 (exp 0.66)  lin eps: 2.3000 (exp 1.00)
+  c_two(128->256): raw 2.026, lin eps 2.018, eps^a 2.013, chi^-b 2.011
+  c_two(256->512): raw 1.893, lin eps 2.027, eps^a 2.145, chi^-b 2.177
