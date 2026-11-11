@@ -1,38 +1,9 @@
-# c195 {"backend": "cupy", "gpu_min_chi": 128, "svd_host": false, "offload": true, "host": "apollo01.sns.ias.edu", "cuda_visible": "0", "job": "17615637", "gpu": "NVIDIA A100-PCIE-40GB"}
-Traceback (most recent call last):
-  File "/scratch/lustre/jkudlerflam/c19x/c190x1536/run195.py", line 221, in <module>
-    main()
-  File "/scratch/lustre/jkudlerflam/c19x/c190x1536/run195.py", line 192, in main
-    psi, _ = Z.dmrg(psi, mpo, todo, log=log, ckpt=ckpt, stop=lambda _h, kc=kconv: rule_met(stages[kc], recs_of(kc)),
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/scratch/lustre/jkudlerflam/c19x/c190x1536/z2dmrg_xp.py", line 978, in dmrg
-    trunc, rmax, nmvs, E = sweep_off(sw, chi, alpha)
-                           ^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/scratch/lustre/jkudlerflam/c19x/c190x1536/z2dmrg_xp.py", line 906, in sweep_off
-    ts, E, v, nmv, r = local_core(dm, dLe, W[j], W[j + 1], dRe, dMj, dMj1, psi.n0[j], D[j], psi.n0[j + 2],
-                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/scratch/lustre/jkudlerflam/c19x/c190x1536/z2dmrg_xp.py", line 881, in local_core
-    e, v, nmv, r = davidson(mvf, x0, dg, res_tol=sw['res_tol'], maxit=sw.get('maxit', 400),
-                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/scratch/lustre/jkudlerflam/c19x/c190x1536/z2dmrg_xp.py", line 606, in davidson
-    AV[m] = mv(V[m])
-            ^^^^^^^^
-  File "/scratch/lustre/jkudlerflam/c19x/c190x1536/z2dmrg_xp.py", line 513, in matvec
-    Zt = xm.matmul(self.W12m.astype(np.result_type(self.W12m.dtype, Y.dtype), copy=False),
-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "~/.local/lib/python3.12/site-packages/cupy/_core/_gufuncs.py", line 669, in __call__
-    outs = cupy.empty(out_shape, dtype=ret_dtype, order=filter_order)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "~/.local/lib/python3.12/site-packages/cupy/_creation/basic.py", line 32, in empty
-    return cupy.ndarray(shape, dtype, order=order)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "cupy/_core/core.pyx", line 167, in cupy._core.core.ndarray.__new__
-  File "cupy/_core/core.pyx", line 254, in cupy._core.core._ndarray_base._init
-  File "cupy/cuda/memory.pyx", line 875, in cupy.cuda.memory.alloc
-  File "cupy/cuda/memory.pyx", line 1579, in cupy.cuda.memory.MemoryPool.malloc
-  File "cupy/cuda/memory.pyx", line 1600, in cupy.cuda.memory.MemoryPool.malloc
-  File "cupy/cuda/memory.pyx", line 1271, in cupy.cuda.memory.SingleDeviceMemoryPool.malloc
-  File "cupy/cuda/memory.pyx", line 1292, in cupy.cuda.memory.SingleDeviceMemoryPool._malloc
-  File "cupy/cuda/memory.pyx", line 1537, in cupy.cuda.memory.SingleDeviceMemoryPool._try_malloc
-  File "cupy/cuda/memory.pyx", line 1540, in cupy.cuda.memory.SingleDeviceMemoryPool._try_malloc
-cupy.cuda.memory.OutOfMemoryError: Out of memory allocating 254,384,128 bytes (allocated so far: 2,704,954,368 bytes).
+# c195 {"backend": "cupy", "gpu_min_chi": 128, "svd_host": false, "offload": true, "host": "apollo01.sns.ias.edu", "cuda_visible": "0", "job": "17616359", "gpu": "NVIDIA A100-PCIE-40GB"}
+{"sweep": 0, "chi": 1536, "alpha": 0.0, "E": -16.428959274117, "trunc": 1.4e-11, "res_max": 1e-09, "res_tol": 1e-09, "mv_mean": 70.73137254902, "mv_max": 130, "Dmax": 1536, "t": 1608.326460599899, "t_tot": 1608.326479196548, "dev_pool_GB": 22.913605632, "dev_used_GB": 23.424008192, "n_mid": 0.215345438262, "N_tot": 57.1140504894, "Sbar1": 2.099121980583, "Sbar6": 2.093925244165, "Sbar12": 2.090262711107, "stage": 0, "E_phys": -2570.257119274116, "final": true, "host_rss_GB": 52.3517}
+# ckpt 27.3s
+{"sweep": 1, "chi": 1536, "alpha": 0.0, "E": -16.428959262516, "trunc": 2.6e-11, "res_max": 1e-09, "res_tol": 1e-09, "mv_mean": 53.83137254902, "mv_max": 98, "Dmax": 1536, "t": 1656.356560468674, "t_tot": 3292.025562524796, "dev_pool_GB": 22.913605632, "dev_used_GB": 23.424008192, "n_mid": 0.215345187476, "N_tot": 57.114016912089, "Sbar1": 2.099036933637, "Sbar6": 2.093839851739, "Sbar12": 2.090177576897, "stage": 0, "E_phys": -2570.257119262516, "final": true, "host_rss_GB": 52.929272}
+# ckpt 26.2s
+{"sweep": 2, "chi": 1536, "alpha": 0.0, "E": -16.428959262048, "trunc": 2.6e-11, "res_max": 1e-09, "res_tol": 1e-09, "mv_mean": 54.362745098039, "mv_max": 97, "Dmax": 1536, "t": 1673.395855903625, "t_tot": 4991.623670101166, "dev_pool_GB": 22.913605632, "dev_used_GB": 23.424008192, "n_mid": 0.215345177281, "N_tot": 57.114017825449, "Sbar1": 2.099005446568, "Sbar6": 2.093808488747, "Sbar12": 2.09014629363, "stage": 0, "E_phys": -2570.257119262048, "final": true, "host_rss_GB": 52.947588}
+# ckpt 27.2s
+# entropies 248s rss 16.532432
+done p153c_L256_P1_rand1 E_phys=None Sbar6=2.093800 var=None t=8406s t_meas=3372s
