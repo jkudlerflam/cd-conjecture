@@ -340,3 +340,4 @@ How it is read.
 - For C195, its T2 takes S̄(256) "from the highest χ available at L = 256", so once this stage is done it is the L = 256 value T2 uses. c_two(256 → 512) at matched χ = 1536 is also reported, as T2 already asks.
 
 Job. Submitted 2026-11-10 20:35 EST as 17615637 (c190x1536, partition apollo, QOS gpu-short, one A100 shared by the two runs, 24 h), with `x1536/prep.py` (builds the configs from the R12 records) and `x1536/c190x1536.slurm`. apollo01 is draining and apollo02 was full at submission, so the job waits for a free GPU. Estimate once running, from C195's benchmark scaled to L = 256 and halved for the shared card: about 1 to 2 h per sweep, 3 to 8 sweeps. Collect with `scp 'typhon:/scratch/lustre/jkudlerflam/c19x/c190x1536/out/*.json' typhon_out/outX1536/` (no checkpoints).
+Started 2026-11-10 20:46 EST on apollo01 (QOS moved to gpu-medium once a slot there was free).
