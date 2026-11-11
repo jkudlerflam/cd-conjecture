@@ -1,0 +1,9 @@
+OMP_NUM_THREADS=8 OPENBLAS_NUM_THREADS=8 MKL_NUM_THREADS=8 timeout 4300m python3 run.py typhon/cfg/sym316_L1024.json out > logs/sym316_L1024.log 2>&1
+OMP_NUM_THREADS=8 OPENBLAS_NUM_THREADS=8 MKL_NUM_THREADS=8 timeout 4300m python3 run.py typhon/cfg/sym316_L512.json out > logs/sym316_L512.log 2>&1
+OMP_NUM_THREADS=4 OPENBLAS_NUM_THREADS=4 MKL_NUM_THREADS=4 timeout 4300m python3 run.py typhon/cfg/c2_L1024.json out > logs/c2_L1024.log 2>&1
+OMP_NUM_THREADS=4 OPENBLAS_NUM_THREADS=4 MKL_NUM_THREADS=4 timeout 4300m python3 run.py typhon/cfg/sym316_L384.json out > logs/sym316_L384.log 2>&1
+OMP_NUM_THREADS=4 OPENBLAS_NUM_THREADS=4 MKL_NUM_THREADS=4 timeout 4300m python3 run.py typhon/cfg/c2_L512.json out > logs/c2_L512.log 2>&1
+OMP_NUM_THREADS=4 OPENBLAS_NUM_THREADS=4 MKL_NUM_THREADS=4 timeout 4300m python3 run.py typhon/cfg/sym316_L256.json out > logs/sym316_L256.log 2>&1
+OMP_NUM_THREADS=4 OPENBLAS_NUM_THREADS=4 MKL_NUM_THREADS=4 timeout 4300m python3 run.py typhon/cfg/c1_L512.json out > logs/c1_L512.log 2>&1
+OMP_NUM_THREADS=4 OPENBLAS_NUM_THREADS=4 MKL_NUM_THREADS=4 timeout 4300m python3 run.py typhon/cfg/sym316_L192.json out > logs/sym316_L192.log 2>&1
+OMP_NUM_THREADS=4 OPENBLAS_NUM_THREADS=4 MKL_NUM_THREADS=4 timeout 4300m python3 run.py typhon/cfg/sym316_L128.json out > logs/sym316_L128.log 2>&1

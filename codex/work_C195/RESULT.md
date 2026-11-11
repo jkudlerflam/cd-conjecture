@@ -128,3 +128,11 @@ What analyze195.py prints: per run the stage history (last sweep of each χ), T1
 
 - Production runs to completion (both sectors). The coordinator collects and runs analyze195.py, then measures the final checkpoints with meas193.py (paths above).
 - The L = 256 side at χ = 1024 (C190g R8, job 17609630) was still pending at 08:50. Without it S̄(256) comes from χ = 768 and the extrapolated c_two is not available.
+
+## C195b: a second key at L = 512 (registered 2026-11-10 21:25 EST, before any output for this key)
+
+Coordinator, Claude Fable 5, at Jonah's request. The same pipeline, schedule, stop rules and criteria T1 to T4 as above, for the symmetric-line bond sym40_n316 (J_x = −J_y = 1/2, D = 1/160, J_z = 10, gauge stag, h_z = −19.976047250613814, the field of its L = 256 runs), both parity sectors, rand:1, L = 512. T2 uses S̄(256) from the highest χ available at L = 256 for this key (χ = 1536 once R13 of `codex/work_C190/gpu/RESULT.md` is done). Nothing else changes. The point is whether the L = 512 reading depends on the bond.
+
+Folder /scratch/lustre/jkudlerflam/c19x/c195b/ (copies of run195.py, z2dmrg_xp.py, z2dmrg.py, models.py, analyze195.py; pipeline195b.py differs from pipeline195.py only in the key, field and gauge), output out512/, collection as for C195 with c195b in place of c195. QOS gpu-short (1-day limit) with chained resubmissions that resume from the checkpoints.
+
+Jobs 17615909, 17615910, 17615911 (c195b, chained with afterany, each 24 h, 2 A100). The first started 2026-11-10 21:28 EST on apollo01, after the z4 job gpu_lean2, which held the gpu-short slot, was cancelled under Jonah's rule for jobs that hold up this project.
