@@ -1,0 +1,62 @@
+C195 analysis: key p153c, L = 256 -> 512  (--partial: running runs at their last mixer-off sweep)
+large size from typhon_out/out512, small size from ../work_C190/gpu/typhon_out/outG, ../work_C190/gpu/typhon_out/outX1024, ../../../../../../../../../../..outX1536
+
+-- runs
+  L=512 P=0 p153c_L512_P0_rand1 [out512] status=done chi=1536 (final 1536) E=-5130.5444287353 S1,S6,S12 = 2.3112, 2.3077, 2.3053 n_mid=0.2154 c_prof=1.905  [final measurement]
+      stage chi=  384: E=-5130.5443889690 S6=1.9445 trunc=2.7e-09 n_mid=0.2154
+      stage chi=  512: E=-5130.5444076243 S6=2.1030 trunc=1.9e-09 n_mid=0.2154
+      stage chi=  768: E=-5130.5444224072 S6=2.2327 trunc=8.9e-10 n_mid=0.2154
+      stage chi= 1024: E=-5130.5444263172 S6=2.2729 trunc=4.4e-10 n_mid=0.2154
+      stage chi= 1536: E=-5130.5444287353 S6=2.3077 trunc=1.5e-10 n_mid=0.2154
+  L=512 P=1 p153c_L512_P1_rand1 [out512] status=running chi=1536 (final 1536) E=-5130.5444194034 S1,S6,S12 = 2.3065, 2.3036, 2.3012 n_mid=0.2173 c_prof=1.880  [sweep record (running, chi 1536)]
+      stage chi=  384: E=-5130.5443871117 S6=1.9134 trunc=2.5e-09 n_mid=0.2154
+      stage chi=  512: E=-5130.5444024866 S6=1.9974 trunc=1.4e-09 n_mid=0.2155
+      stage chi=  768: E=-5130.5444132964 S6=2.1070 trunc=6.7e-10 n_mid=0.2159
+      stage chi= 1024: E=-5130.5444169240 S6=2.2169 trunc=4.0e-10 n_mid=0.2168
+      stage chi= 1536: E=-5130.5444194034 S6=2.3036 trunc=1.5e-10 n_mid=0.2173
+  L=256 P=0 p153c_L256_P0_rand1 [outX1024] status=done chi=1024 (final 1024) E=-2570.2571007788 S1,S6,S12 = 2.0968, 2.0907, 2.0870 n_mid=0.2193 c_prof=2.066  [final measurement]
+      stage chi=  768: E=-2570.2571001943 S6=2.0830 trunc=3.7e-10 (continued from)
+      stage chi= 1024: E=-2570.2571007788 S6=2.0907 trunc=1.3e-10 n_mid=0.2193
+  L=256 P=1 p153c_L256_P1_rand1 [outX1536_aug] status=done chi=1536 (final 1536) E=-2570.2571192620 S1,S6,S12 = 2.0990, 2.0938, 2.0901 n_mid=0.2153 c_prof=2.111  [final measurement]
+      stage chi= 1024: E=-2570.2571190099 S6=2.0899 trunc=1.3e-10 (continued from)
+      stage chi= 1536: E=-2570.2571192620 S6=2.0938 trunc=2.6e-11 n_mid=0.2153
+
+-- T1 (convergence at the final chi), per sector
+  P=0: chi=1536 sweeps at chi=4 res=1.0e-09 (<=1e-8) dE=2.0e-09 (<=2e-08) dS_W=1.0e-05 (<=1e-3) dn_mid=3.3e-08 (<=5e-4) trunc=1.5e-10 (<=1e-7) -> numbers meet T1, at the final chi and done; T1 holds
+        C4 step of S6 from chi=1024: 0.0348 against 0.01 -> fails (reported, does not void T2/T3 alone)
+  P=1: chi=1536 sweeps at chi=5 res=1.0e-09 (<=1e-8) dE=5.1e-09 (<=2e-08) dS_W=6.8e-04 (<=1e-3) dn_mid=4.9e-06 (<=5e-4) trunc=1.5e-10 (<=1e-7) -> numbers meet T1, NOT at the final chi / not done; T1 not established
+        C4 step of S6 from chi=1024: 0.0867 against 0.01 -> fails (reported, does not void T2/T3 alone)
+
+-- ground branch
+  L=512: E(P0)-E(P1) = -9.332e-06 -> P=0
+  L=256: E(P0)-E(P1) = +1.848e-05 -> P=1, chi 1024/1536
+        at the common chi 1024: E(P0)-E(P1) = +1.823e-05
+
+-- c_two(256 -> 512), W = 1, 6, 12
+  ground branch                   : 1.837 1.851 1.863   (chi 1536 -> 1536)
+  sector P=0                      : 1.856 1.878 1.890   (chi 1024 -> 1536)
+  sector P=1                      : 1.796 1.816 1.827   (chi 1536 -> 1536)
+  pairing 256:P=0 -> 512:P=0      : 1.856 1.878 1.890   (chi 1024 -> 1536)
+  pairing 256:P=1 -> 512:P=0      : 1.837 1.851 1.863   (chi 1536 -> 1536)
+  pairing 256:P=0 -> 512:P=1      : 1.815 1.842 1.854   (chi 1024 -> 1536)
+  pairing 256:P=1 -> 512:P=1      : 1.796 1.816 1.827   (chi 1536 -> 1536)
+  -> ground-branch c_two at W = 6, 12: 1.851, 1.863; T1 for the ground-branch run: holds; verdict: T2 PASS
+  c_prof(512) ground branch: 1.905 (sectors: P=0 1.905, P=1 1.880)
+
+-- c_two at matched chi (last sweep of each chi stage at both sizes), W = 1, 6, 12 [reported, not deciding]
+  chi=384: P=0: 0.233 0.279 0.287; P=1: -0.918 -0.926 -0.917; ground (1->0): -0.669 -0.657 -0.648
+  chi=512: P=0: 0.887 0.927 0.937; P=1: -0.503 -0.506 -0.495; ground (1->0): 0.395 0.408 0.418
+  chi=768: P=0: 1.274 1.296 1.308; P=1: 0.204 0.210 0.221; ground (1->0): 1.285 1.298 1.309
+  chi=1024: P=0: 1.555 1.577 1.589; P=1: 1.083 1.099 1.110; ground (1->0): 1.569 1.584 1.595
+  chi=1536: P=1: 1.796 1.816 1.827
+
+-- c_two from S extrapolated in the discarded weight (R8 formula, last two chi stages run to the stop rule) [reported]
+  P=0: S6(eps->0) 256: 2.0950, 512: 2.3260; c_two = 1.978 2.000 2.012 (an upper estimate, see R8)
+  P=1: S6(eps->0) 256: 2.0948, 512: 2.3556; c_two = 2.235 2.258 2.268 (an upper estimate, see R8)
+
+-- T4 (density)
+  n_mid(512) ground = 0.2154, n_mid(256) ground = 0.2153, difference +0.0000 against 0.006 -> T4 holds
+  sector P=0: 0.2154 against 0.2193 (-0.0039)
+  sector P=1: 0.2173 against 0.2153 (+0.0019)
+
+PROVISIONAL: large-size runs not all done

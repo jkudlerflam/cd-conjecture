@@ -38,7 +38,7 @@ Evidence, all numerical:
 
 Open, before this is called established:
 
-1. A third size. L = 512 is running (REPORT §9.184).
+1. Convergence at L = 512. The third size passes its registered test at both bonds (c = 1.85 and 1.89 from 256 to 512 at bond dimension 1536, 2.0 extrapolated in bond dimension, against 1.88 to 1.91 for the effective model at the same sizes), but the entropy at L = 512 still rises with bond dimension at the largest bond dimension memory allows (REPORT §9.198, §9.199).
 2. Entanglement scaling on the infinite qubit chain. Two attempts did not converge at the candidate, because the finite-χ state breaks particle number (REPORT §9.183, §9.187).
 3. The pseudospin gap. In the effective model the pair gap is seen at low density and closes near n ≈ 0.05 to 0.10, below the candidate's 0.19, while n = 1/8 is marginal. The registered verdict is formally the gap outcome, through a fit that does not constrain n_c, and runs at larger χ are queued (REPORT §9.188).
 4. Two unexplained readings. An older-solver run at V/Δ = 8 reads about 1.4 on the infinite chain, and the c = 1 control of the infinite-chain calculation sits narrowly outside its registered tolerance.
