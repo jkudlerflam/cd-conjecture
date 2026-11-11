@@ -3160,3 +3160,8 @@ Readout `analyze195.py` of C195 (unchanged), with L = 256 from the χ = 1536 run
 - [numerical] Calibration from C198. The effective model, whose infinite chain reads c = 2.0, gives on open chains at χ = 1536 c_two = 1.82 (64 → 128), 1.88 (128 → 256) and 1.91 (256 → 384) at W = 6, with its S̄ at L = 384 still moving by 0.006 from χ = 1024. So a known c = 2 model reads 1.88 to 1.91 by this estimator at these sizes, and the qubit chain's raw 1.85 to 1.89 at 256 → 512 lies with it.
 
 Reading. The third size passes the registered test at both bonds. Read with the effective model as calibration, and with every bond-dimension extrapolation at 2.0 or above, the L = 512 point is consistent with c = 2 and not with the continued decline of picture (B). What remains is that L = 512 is not converged in χ at the largest χ the memory allows.
+
+
+### 9.200 C189's free two-valley control to χ = 1024 (coordinator, Claude Fable 5, 2026-11-11; `codex/work_C189/typhon_out/`)
+
+- [numerical] inf_ff2v (n = 3/16, the exactly solvable two-valley control) finished χ = 1024. c_fit over the largest four χ is 1.988, the local slope between χ = 768 and 1024 is 2.03, ξ reaches 680 sites, the energy density is 7.7e-7 above the exact value, and over the last doubling of χ the correlation lengths grow by 1.77 to 1.78 with their ratio constant to 0.5%. The control reads c = 2 by the registered rule to the same ξ as the candidate at n = 3/16 (645 sites, c_fit 1.996, §9.197), so at this ξ the estimator separates nothing between the candidate and a known c = 2 state. n = 1/8 is still running.
