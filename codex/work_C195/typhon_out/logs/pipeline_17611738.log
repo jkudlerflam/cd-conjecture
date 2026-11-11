@@ -1,3 +1,6 @@
 [       0s] GPUs ['0', '1']
 [       0s] started p153c_L512_P0_rand1 on GPU 0
 [       0s] started p153c_L512_P1_rand1 on GPU 1
+[   67711s] finished p153c_L512_P0_rand1 rc=0 on GPU 0
+[  104972s] finished p153c_L512_P1_rand1 rc=0 on GPU 1
+pipeline done

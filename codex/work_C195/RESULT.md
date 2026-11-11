@@ -136,3 +136,18 @@ Coordinator, Claude Fable 5, at Jonah's request. The same pipeline, schedule, st
 Folder /scratch/lustre/jkudlerflam/c19x/c195b/ (copies of run195.py, z2dmrg_xp.py, z2dmrg.py, models.py, analyze195.py; pipeline195b.py differs from pipeline195.py only in the key, field and gauge), output out512/, collection as for C195 with c195b in place of c195. QOS gpu-short (1-day limit) with chained resubmissions that resume from the checkpoints.
 
 Jobs 17615909, 17615910, 17615911 (c195b, chained with afterany, each 24 h, 2 A100). The first started 2026-11-10 21:28 EST on apollo01, after the z4 job gpu_lean2, which held the gpu-short slot, was cancelled under Jonah's rule for jobs that hold up this project.
+
+## C195x: a χ = 2048 stage at L = 512 (registered 2026-11-11 14:25 EST, before any χ = 2048 output)
+
+Coordinator, Claude Fable 5. Jonah approved on 2026-11-11 raising the host-memory allowance from 160 GB to about 250 GB per run for this stage (the benchmark puts χ = 2048 at about 230 GB, and the apollo nodes have 1 TB). The point is to measure the χ dependence that C4 flags at L = 512 (S̄₆ steps 0.13, 0.04 and 0.031 to 0.035 over χ = 512 → 768 → 1024 → 1536) one stage further. No criterion above changes.
+
+Runs. The ground branch at L = 512 for each key, p153c_L512_P0_rand1 and sym40_n316_L512_P1_rand1, each continued from its final χ = 1536 state (`/scratch/lustre/jkudlerflam/c19x/c195*/out512/ckpt/<tag>.npz`, read only) with the same model, field, gauge, sector and Davidson settings, sweeps at χ = 2048 with residual target 1e-9, no subspace expansion, and the stop rule of the final stage (|ΔE| < 4e-9 and |ΔS̄₆| < 5e-4 between consecutive sweeps, at least 3 and at most 6 sweeps). One run per GPU with C195's offloaded solver. Folder /scratch/lustre/jkudlerflam/c19x/c195x2048/, output out2048/ in the run195 format, nothing in c195/ or c195b/ is written.
+
+How it is read.
+- Reported per key: S̄_W(2048) − S̄_W(1536) at W = 1, 6, 12, c_two(256 → 512) with L = 512 at χ = 2048 and L = 256 at χ = 1536, and the discarded-weight extrapolation of R8 through χ = 1536 and 2048.
+- T1 is applied to the χ = 2048 sweeps, and T2 to T4 as above with χ = 2048 as the highest χ at L = 512. C4 is reported for the 1536 → 2048 step.
+- The fixed rule of REPORT §9.195 is applied to the W = 6 value at χ = 2048 (≥ 1.93 favours c = 2 with an irrelevant correction, ≤ 1.85 a slow flow, between undecided).
+
+Jobs (submitted 2026-11-11 14:27 EST, both running on apollo01 at 14:30): 17618004 c195x_p153c (gpu-medium, 3 days) and 17618005 c195x_sym40 (gpu-short, 1 day) with 17618006 chained after it. Scripts in `typhon/x2048/`. Collect with `scp 'typhon:/scratch/lustre/jkudlerflam/c19x/c195x2048/out2048/*.json' typhon_out_x2048/` (never out2048/ckpt). Estimate from the benchmark scaled by χ³: 4 to 6 h per sweep, 3 to 6 sweeps.
+
+Also on 2026-11-11: the p153c odd sector at L = 512 finished (higher than the even sector by 9.3e-6, T1 holds), so the ground branch at L = 512 is even and the T2 pass of REPORT §9.199 is final for p153c (`typhon_out/analyze195.txt`). The chained job 17611739 had nothing left to do and was cancelled.
