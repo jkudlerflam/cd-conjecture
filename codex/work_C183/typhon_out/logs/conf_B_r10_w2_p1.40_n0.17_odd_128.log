@@ -1,0 +1,8 @@
+  sweep 0 chi=32 E=-18.079217750842 trunc=0.00e+00 mv/solve=58.6 (max 61) res_max=5.4e-02
+  sweep 1 chi=64 E=-19.033556409407 trunc=0.00e+00 mv/solve=57.3 (max 61) res_max=3.1e-02
+  sweep 2 chi=96 E=-19.115317039006 trunc=6.42e-09 mv/solve=54.6 (max 61) res_max=6.4e-03
+  sweep 3 chi=128 E=-19.118383168322 trunc=9.84e-09 mv/solve=51.4 (max 61) res_max=2.2e-03
+  sweep 4 chi=192 E=-19.118493436277 trunc=4.70e-10 mv/solve=49.0 (max 61) res_max=9.8e-04
+  sweep 5 chi=192 E=-19.118497028067 trunc=1.33e-10 mv/solve=314.2 (max 401) res_max=1.4e-05
+  sweep 6 chi=192 E=-19.118497109089 trunc=3.99e-11 mv/solve=298.9 (max 401) res_max=1.5e-06
+done conf/B_r10_w2_p1.40_n0.17_odd_128.json E=-325.3738244700 Sbar=0.8979 c_prof=0.961 trunc=4.0e-11 n_mid=0.3512 N=45.000 emid=-2.5232401006 t=19699s

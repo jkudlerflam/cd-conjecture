@@ -1,0 +1,9 @@
+  sweep 0 chi=32 E=-17.248780402932 trunc=0.00e+00 mv/solve=58.4 (max 61) res_max=8.7e-02
+  sweep 1 chi=64 E=-17.270360692115 trunc=0.00e+00 mv/solve=59.1 (max 61) res_max=9.1e-03
+  sweep 2 chi=96 E=-17.271444711851 trunc=4.20e-10 mv/solve=59.1 (max 61) res_max=2.6e-03
+  sweep 3 chi=128 E=-17.271973738108 trunc=1.09e-08 mv/solve=59.1 (max 61) res_max=3.1e-03
+  sweep 4 chi=192 E=-17.272235654421 trunc=7.87e-10 mv/solve=59.1 (max 61) res_max=1.6e-03
+  sweep 5 chi=256 E=-17.272254162935 trunc=8.72e-10 mv/solve=58.7 (max 61) res_max=4.2e-04
+  sweep 6 chi=256 E=-17.272262562492 trunc=2.23e-09 mv/solve=358.8 (max 401) res_max=7.8e-05
+  sweep 7 chi=256 E=-17.272264787465 trunc=3.57e-09 mv/solve=345.0 (max 401) res_max=4.5e-05
+done conf/H_r24_p1.555_n0.1875_128.json E=-774.2101191158 Sbar=1.8010 c_prof=2.154 trunc=3.6e-09 n_mid=0.1831 N=25.173 emid=-6.0020619890 t=42304s

@@ -1,0 +1,7 @@
+  sweep 0 chi=32 E=-11.433455030180 trunc=0.00e+00 mv/solve=56.3 (max 61) res_max=3.0e-02
+  sweep 1 chi=64 E=-12.451819149920 trunc=0.00e+00 mv/solve=52.9 (max 61) res_max=2.0e-02
+  sweep 2 chi=96 E=-12.454651320572 trunc=9.40e-08 mv/solve=48.1 (max 61) res_max=1.2e-02
+  sweep 3 chi=128 E=-12.455012394608 trunc=3.86e-09 mv/solve=45.0 (max 61) res_max=1.6e-03
+  sweep 4 chi=160 E=-12.455038637248 trunc=2.09e-10 mv/solve=252.4 (max 401) res_max=2.0e-04
+  sweep 5 chi=160 E=-12.455038829871 trunc=5.63e-11 mv/solve=222.0 (max 401) res_max=6.6e-06
+done conf/B_r10_w2_p1.40_n0.17_even_64.json E=-163.8730358672 Sbar=0.8265 c_prof=1.123 trunc=5.6e-11 n_mid=0.3577 N=21.999 emid=-2.5238933458 t=4355s

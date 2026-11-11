@@ -1,0 +1,8 @@
+  sweep 0 chi=32 E=-11.166905771404 trunc=0.00e+00 mv/solve=56.6 (max 61) res_max=3.4e-02
+  sweep 1 chi=64 E=-11.185158880288 trunc=0.00e+00 mv/solve=55.3 (max 61) res_max=4.2e-03
+  sweep 2 chi=96 E=-11.186791890911 trunc=2.06e-08 mv/solve=53.9 (max 61) res_max=3.1e-03
+  sweep 3 chi=128 E=-11.187172038138 trunc=1.02e-08 mv/solve=52.2 (max 61) res_max=2.5e-03
+  sweep 4 chi=160 E=-11.187189875077 trunc=4.17e-09 mv/solve=46.5 (max 61) res_max=4.6e-04
+  sweep 5 chi=192 E=-11.187191815455 trunc=1.74e-09 mv/solve=262.0 (max 401) res_max=2.3e-05
+  sweep 6 chi=192 E=-11.187191823350 trunc=1.99e-09 mv/solve=218.5 (max 401) res_max=2.5e-06
+done scr/C_r10_w2_Kxz0.1_n0.17_64.json E=-163.9491818365 Sbar=1.3944 c_prof=4.469 trunc=2.0e-09 n_mid=0.2827 N=19.621 emid=-2.5243712106 t=7381s

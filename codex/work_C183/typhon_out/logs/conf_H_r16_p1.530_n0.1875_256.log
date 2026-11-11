@@ -1,0 +1,8 @@
+  sweep 0 chi=32 E=-23.914083240681 trunc=0.00e+00 mv/solve=59.7 (max 61) res_max=6.2e-02
+  sweep 1 chi=64 E=-23.980888383914 trunc=0.00e+00 mv/solve=60.0 (max 61) res_max=8.4e-03
+  sweep 2 chi=96 E=-23.984358946229 trunc=1.59e-09 mv/solve=59.9 (max 61) res_max=6.8e-03
+  sweep 3 chi=128 E=-23.984649390272 trunc=4.48e-09 mv/solve=59.6 (max 61) res_max=9.8e-04
+  sweep 4 chi=192 E=-23.984706930810 trunc=2.41e-09 mv/solve=59.0 (max 61) res_max=3.0e-04
+  sweep 5 chi=256 E=-23.984905253990 trunc=5.73e-09 mv/solve=58.6 (max 61) res_max=1.3e-03
+  sweep 6 chi=320 E=-23.984987410944 trunc=8.51e-10 mv/solve=58.5 (max 61) res_max=5.1e-04
+  sweep 7 chi=320 E=-23.984991417908 trunc=1.82e-09 mv/solve=363.3 (max 401) res_max=9.7e-06

@@ -1,0 +1,5 @@
+  sweep 0 chi=16 E=-7.957461846040 trunc=0.00e+00 mv/solve=51.9 (max 61) res_max=1.2e-02
+  sweep 1 chi=32 E=-7.958310522588 trunc=8.64e-11 mv/solve=47.9 (max 61) res_max=1.7e-03
+  sweep 2 chi=64 E=-7.958310628006 trunc=5.88e-13 mv/solve=104.8 (max 332) res_max=1.0e-08
+  sweep 3 chi=64 E=-7.958310627984 trunc=9.61e-13 mv/solve=31.9 (max 68) res_max=1.0e-08
+done lad/B_r10_w1_p1.40_x0.05_32.json E=-82.8039118843 Sbar=0.2103 c_prof=-3.062 trunc=9.6e-13 n_mid=0.0340 N=2.639 emid=-2.5144471738 t=59s
