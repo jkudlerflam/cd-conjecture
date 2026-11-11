@@ -7,7 +7,7 @@ Latorre and Sierra ([arXiv:2403.17242](https://arxiv.org/abs/2403.17242)) conjec
 ## In short
 
 1. The conjecture is false at large d. There are explicit counterexamples at d = 11 and d = 13, and c is unbounded at fixed d.
-2. At d = 2 there is a candidate counterexample, an explicit nearest-neighbour qubit chain that reads c = 2.00 on open chains up to L = 256, converged in bond dimension, with a mechanism and an effective model that give the same answer. What separates it from an established counterexample is a short list of convergence checks, given below, most of them running.
+2. At d = 2 there is a candidate counterexample, an explicit nearest-neighbour qubit chain that reads c = 2.00 on open chains up to L = 256, converged in bond dimension, and passes the same test at L = 512, with a mechanism and an effective model that give the same answer. What separates it from an established counterexample is a short list of convergence checks, given below, most of them running.
 3. A replacement bound, Σ_a c_a v_a ≤ π M log₂ d, holds in every solvable family and is proved in several classes.
 
 ## The conjecture is false at large d
@@ -40,7 +40,7 @@ Open, before this is called established:
 
 1. Convergence at L = 512. The third size passes its registered test at both bonds (c = 1.85 and 1.89 from 256 to 512 at bond dimension 1536, 2.0 extrapolated in bond dimension, against 1.88 to 1.91 for the effective model at the same sizes), but the entropy at L = 512 still rises with bond dimension at the largest bond dimension memory allows (REPORT §9.198, §9.199).
 2. Entanglement scaling on the infinite qubit chain. Two attempts did not converge at the candidate, because the finite-χ state breaks particle number (REPORT §9.183, §9.187).
-3. The pseudospin gap. In the effective model the pair gap is seen at low density and closes near n ≈ 0.05 to 0.10, below the candidate's 0.19, while n = 1/8 is marginal. The registered verdict is formally the gap outcome, through a fit that does not constrain n_c, and runs at larger χ are queued (REPORT §9.188).
+3. The pseudospin gap. In the effective model the pair gap is seen directly at low density, on finite and infinite chains, and closes near n ≈ 0.07, against the candidate's 0.19. The final evaluation of the registered test waits on two runs (REPORT §9.188, §9.201).
 4. Two unexplained readings. An older-solver run at V/Δ = 8 reads about 1.4 on the infinite chain, and the c = 1 control of the infinite-chain calculation sits narrowly outside its registered tolerance.
 
 The collaborator's earlier runs of the phase-1.53 bond read a downturn from L = 64 to 128 on states that were not fully optimized ([record](contrib/d2_tenpy_20261109/RESULT.md), [rational bond](contrib/d2_dmrg_priority_20261109/SIMPLE_PARITY_CANDIDATE.md)). The converged rerun lies lower in energy and reads 2.2, so the downturn does not reproduce (REPORT §9.167). Their [transverse-DM deformation](contrib/counterexample_push_20261109/FACILITATED_ROUTE.md) reads c ≈ 1, and their [symmetry audit](contrib/d2_priority_audit_20261109/UNIFORM_Y_SOURCE.md) allows a small uniform Y source.

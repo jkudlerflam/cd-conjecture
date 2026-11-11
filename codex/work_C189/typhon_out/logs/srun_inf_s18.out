@@ -1,3 +1,6 @@
 srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
 [2026-11-10T03:30:57.383] error: *** STEP 17603981.3 ON typhon-node39 CANCELLED AT 2026-11-10T03:30:57 DUE to SIGNAL Terminated ***
 srun: error: typhon-node39: task 0: Terminated
+[2026-11-10T14:04:35.433] error: *** STEP 17603887.1 ON typhon-node19 CANCELLED AT 2026-11-10T14:04:35 DUE to SIGNAL Killed ***
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+srun: error: typhon-node19: task 0: Killed

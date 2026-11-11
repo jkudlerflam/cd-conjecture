@@ -1,0 +1,115 @@
+== (1) VUMPS cells (vc/): last chi reached per file
+  KI22       n= 2 s=0 chi= 384 e=-0.658292435570 (|e-e(chi/2)|=1.1e-08) S=1.50096 (spread 1.3e-03) xi=  482.62 |m|max=0.1634 TR=0.93996 bond_e spread=1.9e-03 c_ls3=0.595 last c_pair=0.544 arg1/pi=-0.169 xi(last chis [192, 256, 320, 384])=[397.8, 482.6, 482.6, 482.6]
+  KI22       n= 4 s=1 chi= 256 e=-0.658292438361 (|e-e(chi/2)|=4.9e-08) S=1.55089 (spread 6.9e-04) xi=  631.50 |m|max=0.1634 TR=0.88316 bond_e spread=9.2e-04 c_ls3=0.932 last c_pair=0.871 [non-injective or unconverged, excluded] arg1/pi=-0.338 xi(last chis [96, 128, 192, 256])=[216.4, 309.2, 492.2, 631.5]
+  KI26       n= 2 s=0 chi= 384 e=-0.768966107422 (|e-e(chi/2)|=2.3e-08) S=1.69389 (spread 7.7e-05) xi= 2438.24 |m|max=0.4139 TR=0.65321 bond_e spread=1.8e-04 c_ls3=0.942 last c_pair=1.006 arg1/pi=+0.304 xi(last chis [192, 256, 320, 384])=[1026.2, 1453.6, 1847.3, 2438.2]
+  KI26       n= 4 s=1 chi= 256 e=-0.768966098057 (|e-e(chi/2)|=6.4e-08) S=1.61281 (spread 5.5e-05) xi= 1457.45 |m|max=0.4139 TR=0.42662 bond_e spread=1.3e-04 c_ls3=0.998 last c_pair=1.000 arg1/pi=-0.608 xi(last chis [96, 128, 192, 256])=[428.2, 618.8, 1026.6, 1457.5]
+  N34        n= 2 s=0 chi= 384 e=-0.853253484190 (|e-e(chi/2)|=2.2e-16) S=0.01278 (spread 4.5e-10) xi=    3.03 |m|max=0.7771 TR=0.40418 bond_e spread=1.2e-09 c_ls3=-0.000 last c_pair=-0.000 arg1/pi=-0.000 xi(last chis [192, 256, 320, 384])=[1.6, 7.3, 3.1, 3.0]
+  N34        n= 4 s=1 chi= 256 e=-0.854192223466 (|e-e(chi/2)|=6.9e-08) S=0.84889 (spread 2.1e-02) xi=   42.74 |m|max=0.4909 TR=0.03657 bond_e spread=3.8e-02 c_ls3=-0.373 last c_pair=-1.742 [non-injective or unconverged, excluded] arg1/pi=-0.000 xi(last chis [96, 128, 192, 256])=[41.9, 42.0, 42.7, 42.7]
+  cand_60    n= 2 s=0 chi= 512 e=-0.775108309864 (|e-e(chi/2)|=3.0e-08) S=1.25964 (spread 4.7e-02) xi=  130.64 |m|max=0.2360 TR=0.84761 bond_e spread=3.6e-02 c_ls3=0.655 last c_pair=0.636 [non-injective or unconverged, excluded] arg1/pi=+0.828 xi(last chis [256, 320, 384, 512])=[117.4, 121.7, 124.2, 130.6]
+  cand_60    n= 4 s=1 chi= 256 e=-0.775108272120 (|e-e(chi/2)|=1.4e-07) S=1.24280 (spread 5.0e-02) xi=  114.32 |m|max=0.2367 TR=0.71855 bond_e spread=3.8e-02 c_ls3=0.582 last c_pair=0.584 [non-injective or unconverged, excluded] arg1/pi=+0.343 xi(last chis [96, 128, 192, 256])=[79.2, 94.8, 108.2, 114.3]
+  cand_61    n= 2 s=0 chi= 512 e=-0.770090558242 (|e-e(chi/2)|=1.1e-09) S=0.92517 (spread 1.0e-01) xi=   47.96 |m|max=0.2827 TR=0.78299 bond_e spread=8.8e-02 c_ls3=0.051 last c_pair=0.055 [non-injective or unconverged, excluded] arg1/pi=+0.772 xi(last chis [256, 320, 384, 512])=[44.7, 45.8, 46.6, 48.0]
+  cand_61    n= 4 s=1 chi= 256 e=-0.770090556954 (|e-e(chi/2)|=1.8e-08) S=0.92392 (spread 1.0e-01) xi=   44.01 |m|max=0.2831 TR=0.61312 bond_e spread=8.8e-02 c_ls3=0.087 last c_pair=0.070 [non-injective or unconverged, excluded] arg1/pi=-0.456 xi(last chis [96, 128, 192, 256])=[31.5, 36.9, 42.1, 44.0]
+  dist_T_50  n=20 s=0 chi= 192 e=-0.837123725168 (|e-e(chi/2)|=2.0e-09) S=0.68341 (spread 1.5e-08) xi=   34.68 |m|max=0.3573 TR=0.77920 bond_e spread=1.2e-09 c_ls3=0.004 last c_pair=0.002 arg1/pi=-0.015 xi(last chis [64, 96, 128, 192])=[26.0, 29.9, 31.9, 34.7]
+  dist_T_50  n= 2 s=0 chi= 512 e=-0.837123725194 (|e-e(chi/2)|=3.8e-12) S=0.68341 (spread 4.5e-10) xi=   38.76 |m|max=0.3573 TR=0.97663 bond_e spread=4.6e-10 c_ls3=0.000 last c_pair=0.000 arg1/pi=-0.599 xi(last chis [256, 320, 384, 512])=[36.2, 37.1, 37.9, 38.8]
+  dist_T_50  n= 2 s=1 chi= 256 e=-0.837123725190 (|e-e(chi/2)|=3.5e-10) S=0.68341 (spread 3.7e-10) xi=   36.15 |m|max=0.3573 TR=0.97585 bond_e spread=2.5e-11 c_ls3=0.001 last c_pair=0.000 arg1/pi=+0.598 xi(last chis [96, 128, 192, 256])=[29.9, 31.9, 34.7, 36.2]
+  dist_T_50  n= 4 s=0 chi= 384 e=-0.837123725193 (|e-e(chi/2)|=2.6e-11) S=0.68341 (spread 3.2e-09) xi=   37.86 |m|max=0.3573 TR=0.95329 bond_e spread=1.2e-08 c_ls3=0.000 last c_pair=0.000 arg1/pi=+0.803 xi(last chis [192, 256, 320, 384])=[34.7, 36.1, 37.1, 37.9]
+  dist_T_50  n= 6 s=2 chi= 256 e=-0.837123725190 (|e-e(chi/2)|=3.5e-10) S=0.68341 (spread 1.3e-09) xi=   36.16 |m|max=0.3573 TR=0.92928 bond_e spread=7.1e-10 c_ls3=0.001 last c_pair=0.000 arg1/pi=+0.205 xi(last chis [96, 128, 192, 256])=[29.9, 31.9, 34.7, 36.2]
+  dist_T_50  n= 8 s=3 chi= 256 e=-0.837123725190 (|e-e(chi/2)|=3.5e-10) S=0.68341 (spread 1.3e-09) xi=   36.16 |m|max=0.3573 TR=0.90684 bond_e spread=1.9e-09 c_ls3=0.001 last c_pair=0.000 arg1/pi=+0.394 xi(last chis [96, 128, 192, 256])=[29.9, 31.9, 34.7, 36.2]
+  hi_T_40    n=10 s=0 chi= 192 e=-0.959309200331 (|e-e(chi/2)|=4.3e-09) S=0.70065 (spread 4.0e-10) xi=   45.86 |m|max=0.3421 TR=0.91088 bond_e spread=3.2e-10 c_ls3=0.006 last c_pair=0.003 arg1/pi=-0.092 xi(last chis [64, 96, 128, 192])=[33.1, 38.8, 42.0, 45.9]
+  hi_T_40    n= 2 s=0 chi= 512 e=-0.959309200397 (|e-e(chi/2)|=9.9e-12) S=0.70066 (spread 7.0e-10) xi=   51.88 |m|max=0.3421 TR=0.98258 bond_e spread=8.5e-10 c_ls3=0.000 last c_pair=0.000 arg1/pi=+0.382 xi(last chis [256, 320, 384, 512])=[47.9, 49.4, 50.5, 51.9]
+  hi_T_40    n= 2 s=1 chi= 256 e=-0.959309200387 (|e-e(chi/2)|=8.3e-10) S=0.70066 (spread 3.3e-10) xi=   47.90 |m|max=0.3421 TR=0.98190 bond_e spread=9.7e-10 c_ls3=0.002 last c_pair=0.001 arg1/pi=+0.382 xi(last chis [96, 128, 192, 256])=[38.8, 42.0, 45.9, 47.9]
+  hi_T_40    n= 4 s=0 chi= 384 e=-0.959309200397 (|e-e(chi/2)|=6.6e-11) S=0.70066 (spread 1.1e-10) xi=   50.45 |m|max=0.3421 TR=0.96501 bond_e spread=5.2e-10 c_ls3=0.000 last c_pair=0.000 arg1/pi=-0.763 xi(last chis [192, 256, 320, 384])=[45.9, 47.9, 49.4, 50.4]
+  hi_T_40    n= 6 s=2 chi= 256 e=-0.959309200387 (|e-e(chi/2)|=8.3e-10) S=0.70066 (spread 9.2e-11) xi=   47.89 |m|max=0.3421 TR=0.94668 bond_e spread=4.4e-10 c_ls3=0.002 last c_pair=0.001 arg1/pi=+0.855 xi(last chis [96, 128, 192, 256])=[38.8, 42.0, 45.9, 47.9]
+  hi_T_40    n= 8 s=3 chi= 256 e=-0.959309200387 (|e-e(chi/2)|=8.3e-10) S=0.70066 (spread 2.0e-10) xi=   47.90 |m|max=0.3421 TR=0.92955 bond_e spread=6.8e-10 c_ls3=0.002 last c_pair=0.001 arg1/pi=+0.474 xi(last chis [96, 128, 192, 256])=[38.8, 42.0, 45.9, 47.9]
+  lowest e for KI22: KI22_n2_s0.json e0=-0.658292435570 chi=384 FES c_ls3=0.595 m_site0=[0.0, 0.1634, -0.0059]
+  lowest e for KI26: KI26_n2_s0.json e0=-0.768966107422 chi=384 FES c_ls3=0.942 m_site0=[0.4138, -0.0, -0.2624]
+  lowest e for N34: N34_n2_s0.json e0=-0.853253484190 chi=384 FES c_ls3=-0.000 m_site0=[-0.7771, -0.3096, -0.5369]
+  lowest e for dist_T_50: dist_T_50_n2_s0.json e0=-0.837123725194 chi=512 FES c_ls3=0.000 m_site0=[0.0005, -0.0721, -0.3573]
+  lowest e for hi_T_40: hi_T_40_n2_s0.json e0=-0.959309200397 chi=512 FES c_ls3=0.000 m_site0=[0.0202, 0.0011, 0.3421]
+
+== (2) open chains without edge field (oc/)
+  cand_60
+    L= 128 c_prof=1.703 c_sm=1.673 Smid=1.0935 trunc=2.4e-10 E=-98.85548171 emid=-0.7751867645 emid-e0=+nan S(1)=0.3555 order corr (n.C.n)(-1)^r at r=L/2: -0.0023 (VUMPS m^2=nan) t=2589s
+    L= 256 c_prof=1.202 c_sm=1.199 Smid=1.2366 trunc=4.4e-10 E=-198.07841938 emid=-0.7751966758 emid-e0=+nan S(1)=0.3557 order corr (n.C.n)(-1)^r at r=L/2: +0.0000 (VUMPS m^2=nan) t=14853s
+    L= 512 c_prof=1.067 c_sm=1.069 Smid=1.3476 trunc=2.5e-10 E=-396.52521379 emid=-0.7751879428 emid-e0=+nan S(1)=0.3555 order corr (n.C.n)(-1)^r at r=L/2: +0.0008 (VUMPS m^2=nan) t=39102s
+    two-size slopes: 32-64: 1.775  64-128: 1.681  128-256: 1.239  256-512: 0.960
+    S(x) at fixed x (smoothed over x-1..x+1):
+      L= 128 x=8:0.7078 x=16:0.8448 x=32:1.0379
+      L= 256 x=8:0.7059 x=16:0.8430 x=32:1.0421 x=64:1.1552
+      L= 512 x=8:0.7097 x=16:0.8515 x=32:1.0542 x=64:1.1687 x=128:1.3009
+  cand_61
+    L= 128 c_prof=1.916 c_sm=1.882 Smid=1.0810 trunc=2.5e-10 E=-98.21609861 emid=-0.7701267392 emid-e0=+nan S(1)=0.3160 order corr (n.C.n)(-1)^r at r=L/2: -0.0024 (VUMPS m^2=nan) t=2912s
+    L= 256 c_prof=1.196 c_sm=1.187 Smid=1.2105 trunc=4.6e-10 E=-196.79500386 emid=-0.7701560136 emid-e0=+nan S(1)=0.3159 order corr (n.C.n)(-1)^r at r=L/2: +0.0041 (VUMPS m^2=nan) t=14865s
+    L= 512 c_prof=1.073 c_sm=1.077 Smid=1.3394 trunc=2.4e-10 E=-393.95279424 emid=-0.7701506464 emid-e0=+nan S(1)=0.3160 order corr (n.C.n)(-1)^r at r=L/2: -0.0007 (VUMPS m^2=nan) t=108676s
+    two-size slopes: 32-64: 0.985  64-128: 2.676  128-256: 1.121  256-512: 1.116
+    S(x) at fixed x (smoothed over x-1..x+1):
+      L= 128 x=8:0.6525 x=16:0.8056 x=32:1.0100
+      L= 256 x=8:0.6504 x=16:0.7968 x=32:1.0035 x=64:1.1333
+      L= 512 x=8:0.6539 x=16:0.8100 x=32:1.0234 x=64:1.1541 x=128:1.2788
+  dist_T_50
+    L= 128 c_prof=1.267 c_sm=1.255 Smid=1.1109 trunc=5.0e-12 E=-106.73920950 emid=-0.8371080654 emid-e0=+1.57e-05 S(1)=0.6931 order corr (n.C.n)(-1)^r at r=L/2: +0.0847 (VUMPS m^2=0.1328) t=1248s
+    L= 256 c_prof=1.313 c_sm=1.310 Smid=1.2770 trunc=1.1e-11 E=-213.88824598 emid=-0.8371188947 emid-e0=+4.83e-06 S(1)=0.6931 order corr (n.C.n)(-1)^r at r=L/2: +0.1062 (VUMPS m^2=0.1328) t=6739s
+    L= 384 c_prof=1.101 c_sm=1.100 Smid=1.3464 trunc=2.9e-11 E=-321.03932383 emid=-0.8371224325 emid-e0=+1.29e-06 S(1)=0.6931 order corr (n.C.n)(-1)^r at r=L/2: +0.1212 (VUMPS m^2=0.1328) t=6366s
+    L= 512 c_prof=0.802 c_sm=0.801 Smid=1.3686 trunc=9.6e-12 E=-428.19096267 emid=-0.8371233946 emid-e0=+3.31e-07 S(1)=0.6931 order corr (n.C.n)(-1)^r at r=L/2: +0.1282 (VUMPS m^2=0.1328) t=16493s
+    two-size slopes: 32-64: 1.196  64-128: 1.336  128-192: 1.462  192-256: 1.405  256-384: 1.026  384-512: 0.462
+    S(x) at fixed x (smoothed over x-1..x+1):
+      L= 128 x=8:0.8058 x=16:0.9254 x=32:1.0455
+      L= 192 x=8:0.8074 x=16:0.9310 x=32:1.0645 x=64:1.1822
+      L= 256 x=8:0.8082 x=16:0.9336 x=32:1.0730 x=64:1.2075
+      L= 384 x=8:0.8088 x=16:0.9357 x=32:1.0797 x=64:1.2257 x=128:1.3275
+      L= 512 x=8:0.8090 x=16:0.9363 x=32:1.0815 x=64:1.2303 x=128:1.3369
+  hi_T_40
+    L= 128 c_prof=1.150 c_sm=1.140 Smid=1.0664 trunc=2.7e-12 E=-122.35364239 emid=-0.9592918486 emid-e0=+1.74e-05 S(1)=0.6931 order corr (n.C.n)(-1)^r at r=L/2: +0.0731 (VUMPS m^2=0.1174) t=1168s
+    L= 256 c_prof=1.275 c_sm=1.272 Smid=1.2274 trunc=8.5e-12 E=-245.14064168 emid=-0.9593006766 emid-e0=+8.52e-06 S(1)=0.6931 order corr (n.C.n)(-1)^r at r=L/2: +0.0850 (VUMPS m^2=0.1174) t=5851s
+    L= 384 c_prof=1.245 c_sm=1.244 Smid=1.3178 trunc=3.2e-11 E=-367.93054271 emid=-0.9593057314 emid-e0=+3.47e-06 S(1)=0.6931 order corr (n.C.n)(-1)^r at r=L/2: +0.0981 (VUMPS m^2=0.1174) t=5417s
+    L= 512 c_prof=1.080 c_sm=1.079 Smid=1.3628 trunc=1.3e-11 E=-490.72147809 emid=-0.9593078965 emid-e0=+1.30e-06 S(1)=0.6931 order corr (n.C.n)(-1)^r at r=L/2: +0.1071 (VUMPS m^2=0.1174) t=13654s
+    two-size slopes: 32-64: 1.081  64-128: 1.212  128-192: 1.363  192-256: 1.437  256-384: 1.338  384-512: 0.940
+    S(x) at fixed x (smoothed over x-1..x+1):
+      L= 128 x=8:0.7911 x=16:0.8991 x=32:1.0077
+      L= 192 x=8:0.7925 x=16:0.9039 x=32:1.0244 x=64:1.1331
+      L= 256 x=8:0.7931 x=16:0.9061 x=32:1.0320 x=64:1.1578
+      L= 384 x=8:0.7937 x=16:0.9083 x=32:1.0391 x=64:1.1788 x=128:1.2924
+      L= 512 x=8:0.7940 x=16:0.9091 x=32:1.0418 x=64:1.1865 x=128:1.3111
+
+== (3) pinning (edge fields along the VUMPS order parameter: Lst left only, LRst both ends compatible; Lx perpendicular, left only)
+  cand_60    LRst  L= 128 c_prof=1.577 Smid=1.0630 (no field 1.0935, drop +0.0305) trunc=2.5e-09 emid=-0.7752161810 central staggered m=[0.0002, 0.0024, -0.0477]
+  cand_60    LRst  L= 256 c_prof=1.204 Smid=1.2326 (no field 1.2366, drop +0.0040) trunc=1.9e-09 emid=-0.7752046930 central staggered m=[0.0006, -0.0015, 0.0342]
+  cand_60    LRst  Smid(256) - Smid(128) = +0.1696
+  cand_61    LRst  L= 128 c_prof=1.836 Smid=1.0776 (no field 1.0810, drop +0.0034) trunc=2.7e-09 emid=-0.7701301189 central staggered m=[-0.0008, -0.0026, 0.0751]
+  cand_61    LRst  L= 256 c_prof=1.171 Smid=1.2160 (no field 1.2105, drop -0.0055) trunc=2.0e-09 emid=-0.7701530000 central staggered m=[0.0003, 0.0021, -0.056]
+  cand_61    LRst  Smid(256) - Smid(128) = +0.1384
+  dist_T_50  LRst  L= 128 c_prof=0.287 Smid=0.6726 (no field 1.1109, drop +0.4383) trunc=8.1e-12 emid=-0.8371272635 central staggered m=[-0.0005, 0.0728, 0.361]
+  dist_T_50  LRst  L= 256 c_prof=0.128 Smid=0.6818 (no field 1.2770, drop +0.5952) trunc=2.1e-12 emid=-0.8371241287 central staggered m=[-0.0005, 0.0722, 0.3577]
+  dist_T_50  LRst  Smid(256) - Smid(128) = +0.0093
+  dist_T_50  Lst   L= 128 c_prof=0.159 Smid=0.7349 (no field 1.1109, drop +0.3760) trunc=2.4e-11 emid=-0.8370061004 central staggered m=[-0.0008, 0.0675, 0.3347]
+  dist_T_50  Lst   L= 256 c_prof=-0.188 Smid=0.6981 (no field 1.2770, drop +0.5790) trunc=5.9e-12 emid=-0.8371033569 central staggered m=[-0.0005, 0.0712, 0.3529]
+  dist_T_50  Lst   Smid(256) - Smid(128) = -0.0368
+  dist_T_50  Lx    L= 128 c_prof=0.516 Smid=0.8755 (no field 1.1109, drop +0.2354) trunc=6.5e-11 emid=-0.8370464766 central staggered m=[0.0007, -0.0545, -0.2726]
+  dist_T_50  Lx    L= 256 c_prof=-0.240 Smid=0.7237 (no field 1.2770, drop +0.5533) trunc=1.3e-11 emid=-0.8371070537 central staggered m=[0.0005, -0.0701, -0.3472]
+  dist_T_50  Lx    Smid(256) - Smid(128) = -0.1518
+  hi_T_40    LRst  L= 128 c_prof=0.289 Smid=0.6897 (no field 1.0664, drop +0.3767) trunc=9.9e-12 emid=-0.9593133166 central staggered m=[-0.0203, -0.0011, -0.3452]
+  hi_T_40    LRst  L= 256 c_prof=0.137 Smid=0.6981 (no field 1.2274, drop +0.5293) trunc=3.0e-12 emid=-0.9593098363 central staggered m=[-0.0202, -0.0011, -0.3429]
+  hi_T_40    LRst  Smid(256) - Smid(128) = +0.0084
+  hi_T_40    Lst   L= 128 c_prof=0.332 Smid=0.7801 (no field 1.0664, drop +0.2863) trunc=2.5e-11 emid=-0.9591443547 central staggered m=[-0.0177, -0.0013, -0.3019]
+  hi_T_40    Lst   L= 256 c_prof=-0.098 Smid=0.7338 (no field 1.2274, drop +0.4936) trunc=8.6e-12 emid=-0.9592674145 central staggered m=[-0.0195, -0.0012, -0.3316]
+  hi_T_40    Lst   Smid(256) - Smid(128) = -0.0463
+  hi_T_40    Lx    L= 128 c_prof=1.084 Smid=1.0388 (no field 1.0664, drop +0.0276) trunc=6.8e-11 emid=-0.9592530840 central staggered m=[-0.0058, 0.001, -0.0969]
+  hi_T_40    Lx    L= 256 c_prof=0.675 Smid=1.0242 (no field 1.2274, drop +0.2032) trunc=4.4e-11 emid=-0.9592879992 central staggered m=[-0.0136, -0.0005, -0.2267]
+  hi_T_40    Lx    Smid(256) - Smid(128) = -0.0146
+
+== (4) pre-fixed criterion (RESULT.md)
+  hi_T_40    C1: c_prof 256/512 = 1.275/1.080, slope 256-512 = 1.172, trunc ok = True -> False
+  hi_T_40    C2: lowest cell hi_T_40_n2_s0.json chi=512 c_ls3=0.000 -> False
+  hi_T_40    C3: emid(512)=-0.9593078965 e0=-0.9593092004 diff=+1.30e-06 allowance=1.5e-05 -> True
+  hi_T_40    c > 1 candidate: False
+  dist_T_50  C1: c_prof 256/512 = 1.313/0.802, slope 256-512 = 0.792, trunc ok = True -> False
+  dist_T_50  C2: lowest cell dist_T_50_n2_s0.json chi=512 c_ls3=0.000 -> False
+  dist_T_50  C3: emid(512)=-0.8371233946 e0=-0.8371237252 diff=+3.31e-07 allowance=1.0e-05 -> True
+  dist_T_50  c > 1 candidate: False
+  cand_60    C1: c_prof 256/512 = 1.202/1.067, slope 256-512 = 0.960, trunc ok = True -> False
+  cand_60    c > 1 candidate: False
+  cand_61    C1: c_prof 256/512 = 1.196/1.073, slope 256-512 = 1.116, trunc ok = True -> False
+  cand_61    c > 1 candidate: False
+  KI22       FES second stage: lowest cell KI22_n2_s0.json chi=384 S=1.5010 xi=482.6 c_ls3=0.595 -> passes (> 1.2 at chi >= 256): False
+  KI26       FES second stage: lowest cell KI26_n2_s0.json chi=384 S=1.6939 xi=2438.2 c_ls3=0.942 -> passes (> 1.2 at chi >= 256): False
+  N34        FES second stage: lowest cell N34_n2_s0.json chi=384 S=0.0128 xi=3.0 c_ls3=-0.000 -> passes (> 1.2 at chi >= 256): False
