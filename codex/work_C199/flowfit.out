@@ -1,0 +1,17 @@
+(A) c = 2 plus a L^-p: deviation ratio per doubling and the predicted 256 -> 512 reading
+  p153c       W= 1: dev +0.196 -> -0.036, ratio 0.18; predicted 256->512 = 1.991 (range 1.964 to 2.036)
+  p153c       W= 6: dev +0.165 -> -0.002, ratio 0.01; predicted 256->512 = 2.000 (range 1.998 to 2.002)
+  p153c       W=12: dev +0.234 -> +0.032, ratio 0.14; predicted 256->512 = 2.008 (range 1.968 to 2.032)
+  sym40_n316  W= 1: dev +0.312 -> -0.032, ratio 0.10; predicted 256->512 = 1.992 (range 1.968 to 2.032)
+  sym40_n316  W= 6: dev +0.268 -> -0.001, ratio 0.00; predicted 256->512 = 2.000 (range 1.999 to 2.001)
+  sym40_n316  W=12: dev +0.356 -> +0.032, ratio 0.09; predicted 256->512 = 2.008 (range 1.968 to 2.032)
+(B) linear decline per doubling continued
+  p153c       W= 1: step -0.232 per doubling -> 256->512 = 1.732, 512->1024 = 1.500
+  p153c       W= 6: step -0.167 per doubling -> 256->512 = 1.831, 512->1024 = 1.664
+  p153c       W=12: step -0.202 per doubling -> 256->512 = 1.830, 512->1024 = 1.628
+  sym40_n316  W= 1: step -0.344 per doubling -> 256->512 = 1.624, 512->1024 = 1.280
+  sym40_n316  W= 6: step -0.269 per doubling -> 256->512 = 1.730, 512->1024 = 1.461
+  sym40_n316  W=12: step -0.324 per doubling -> 256->512 = 1.708, 512->1024 = 1.384
+K_s drift per doubling (pair estimate, REPORT 9.182): 64->128 -0.32 to -0.62, 128->256 -0.08 to -0.09
+  ratio 0.28 per doubling; remaining change if geometric: -0.035; KT exponent: 2^(-4(K-1)) = r gives K = 1.46
+  ratio 0.13 per doubling; remaining change if geometric: -0.012; KT exponent: 2^(-4(K-1)) = r gives K = 1.74

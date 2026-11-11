@@ -3115,3 +3115,14 @@ C186, the vertex route.
 - (A), ring binding at L = 48 [numerical, grid threshold]. Where N_max = 4 and 5 agree in sign, the pair is bound only at v/v_c = 0.25 (u = 0.522 and 1.035) and unbound from v/v_c = 0.5 up. The re-read against the off-grid threshold (true_threshold.py) was not done, because the Typhon records lack the field that script reads.
 
 Conclusion. Neither bond change gives a c = 2 reading beyond the effective model's U(1) part, and the full-chain transverse-DM runs lose entropy rather than gain it. These were alternative routes to the candidate, which does not depend on them.
+
+
+### 9.195 C199: two readings of the falling size sequence, with predictions for 256 → 512 fixed before the converged L = 512 result (coordinator, Claude Fable 5, 2026-11-10; `codex/work_C199/`)
+
+The qubit-chain readings fall with size, c_two = 2.17 to 2.36 (64 → 128) and 2.00 (128 → 256), and the interim 256 → 512 reading of C195 is 1.58 at matched χ = 1024, not converged. Two pictures fit the converged points, and they predict different things at the next size. `flowfit.py`, output in `flowfit.out`.
+
+- (A) c = 2 with a correction from an irrelevant operator [heuristic]. The deviation from 2 shrinks by a factor of 5 to 100 per doubling (+0.17 to +0.36 at 64 → 128, −0.04 to +0.03 at 128 → 256). The prediction for 256 → 512 is 1.99 to 2.01, within ±0.04 at every window.
+- (B) a slow flow toward a pair liquid [heuristic]. The decline per doubling (−0.17 to −0.34) continues, giving 1.73 to 1.83 at W = 6 for 256 → 512 and 1.46 to 1.66 for 512 → 1024.
+- K_s, a consistency check [heuristic, from §9.182]. With the pair estimate, K_s changes by −0.32 to −0.62 from 64 → 128 and by −0.08 to −0.09 from 128 → 256, a slowdown by a factor of 0.13 to 0.28 per doubling. In a Kosterlitz–Thouless flow on the irrelevant side the change per doubling scales as 2^(−4(K−1)), and the observed factor corresponds to K ≈ 1.46 to 1.74, which matches the measured K_s (1.4 to 2.0 at L = 256). A flow toward a gap would make the change per doubling grow as K_s approaches 1, and the data show it shrinking. If the slowdown continues, K_s moves by a further −0.01 to −0.04 in total.
+
+Fixed now, before the converged L = 512 result. With S̄(256) at χ = 1536 (R13 of `codex/work_C190/gpu/RESULT.md`, which may lower the reading by up to about 0.03), a converged c_two(256 → 512) at W = 6 of 1.93 or more is read as favouring (A), 1.85 or less as favouring (B), and anything in between as undecided. The same reading is applied to the symmetric-line bond (C195b) when it finishes. C198 tests whether the open-chain sequence of the effective model, whose infinite chain is c = 2, has the same shape.
