@@ -59,10 +59,11 @@ chi=  256 it= 56 e=-0.2809474280 (e-ex=nan) S=2.1339/2.1377 Sbar=2.1358 trunc=1.
 chi=  384 it= 85 e=-0.2809504058 (e-ex=nan) S=2.2525/2.2502 Sbar=2.2514 trunc=4.9e-07 xi0=154.5 xi1b=333.6 xi1f=333.6 xi2=161.1 lam0=1.00000 dens[min,max]=0.1249,0.1253 t=1956s
 chi=  512 it= 30 e=-0.2809515559 (e-ex=nan) S=2.3285/2.3302 Sbar=2.3294 trunc=2.9e-07 xi0=196.7 xi1b=422.3 xi1f=422.3 xi2=202.3 lam0=1.00000 dens[min,max]=0.1248,0.1251 t=1719s
 chi=  768 it=138 e=-0.2809524996 (e-ex=nan) S=2.4408/2.4419 Sbar=2.4413 trunc=1.4e-07 xi0=276.4 xi1b=590.9 xi1f=590.9 xi2=282.9 lam0=1.00000 dens[min,max]=0.1249,0.1250 t=14216s
-  local c between consecutive chi (xi = max sector): 32->48:2.021 48->64:2.022 64->96:1.988 96->128:2.012 128->192:2.019 192->256:1.997 256->384:2.006 384->512:1.983 512->768:2.000
-  local c with xi0: 32->48:2.204 48->64:1.620 64->96:2.028 96->128:2.011 128->192:2.002 192->256:1.859 256->384:2.094 384->512:1.939 512->768:1.975
-  c_fit (largest four chi, xi = max) = 1.997
-  last doubling 384->768: growth xi1f x1.771, xi2 x1.756, xi0 x1.789; (xi1f/xi2) changes by x1.009
+chi= 1024 it= 77 e=-0.2809528704 (e-ex=nan) S=2.5191/2.5199 Sbar=2.5195 trunc=8.5e-08 xi0=351.0 xi1b=747.6 xi1f=747.6 xi2=356.4 lam0=1.00000 dens[min,max]=0.1249,0.1250 t=131163s
+  local c between consecutive chi (xi = max sector): 32->48:2.021 48->64:2.022 64->96:1.988 96->128:2.012 128->192:2.019 192->256:1.997 256->384:2.006 384->512:1.983 512->768:2.000 768->1024:1.995
+  local c with xi0: 32->48:2.204 48->64:1.620 64->96:2.028 96->128:2.011 128->192:2.002 192->256:1.859 256->384:2.094 384->512:1.939 512->768:1.975 768->1024:1.963
+  c_fit (largest four chi, xi = max) = 1.995
+  last doubling 512->1024: growth xi1f x1.770, xi2 x1.761, xi0 x1.785; (xi1f/xi2) changes by x1.005
   registered reading: c = 2 liquid: True; pseudospin gap: False; 
 === inf_s316  n = 3/16  exact e = nan
 chi=   32 it=300 e=-0.4178099729 (e-ex=nan) S=1.6334/1.5968 Sbar=1.6151 trunc=9.0e-05 xi0=18.5 xi1b=31.3 xi1f=31.3 xi2=12.9 lam0=0.99683 dens[min,max]=0.1759,0.1976 t=1792s

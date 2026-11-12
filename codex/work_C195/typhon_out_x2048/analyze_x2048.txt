@@ -1,0 +1,14 @@
+== p153c_L512_P0_rand1: status done, 3 sweeps at chi 2048
+   T1: res 1.0e-09 (<=1e-8), last dE +1.4e-09 (<=2e-8), last dS6 -1.4e-04 (<=1e-3), trunc 6.0e-11 (<=1e-7)
+   C4 step S6 1536 -> 2048: +0.0118 (bound 0.01; previous step 1024 -> 1536 reported in REPORT 9.199)
+   W= 1: c_two(256@1536 -> 512@2048) = 1.939  (at 1536: 1.837; R8 extrapolation through 1536, 2048: 2.006)
+   W= 6: c_two(256@1536 -> 512@2048) = 1.954  (at 1536: 1.851; R8 extrapolation through 1536, 2048: 2.021)
+   W=12: c_two(256@1536 -> 512@2048) = 1.965  (at 1536: 1.863; R8 extrapolation through 1536, 2048: 2.032)
+   c_prof(512) = 1.989; discarded weight 1536 -> 2048: 1.5e-10 -> 6.0e-11
+== sym40_n316_L512_P1_rand1: status done, 3 sweeps at chi 2048
+   T1: res 1.0e-09 (<=1e-8), last dE +1.4e-09 (<=2e-8), last dS6 -1.3e-04 (<=1e-3), trunc 5.0e-11 (<=1e-7)
+   C4 step S6 1536 -> 2048: +0.0104 (bound 0.01; previous step 1024 -> 1536 reported in REPORT 9.199)
+   W= 1: c_two(256@1536 -> 512@2048) = 1.971  (at 1536: 1.881; R8 extrapolation through 1536, 2048: 2.029)
+   W= 6: c_two(256@1536 -> 512@2048) = 1.983  (at 1536: 1.893; R8 extrapolation through 1536, 2048: 2.041)
+   W=12: c_two(256@1536 -> 512@2048) = 1.993  (at 1536: 1.903; R8 extrapolation through 1536, 2048: 2.051)
+   c_prof(512) = 1.997; discarded weight 1536 -> 2048: 1.3e-10 -> 5.0e-11

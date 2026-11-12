@@ -3181,3 +3181,17 @@ The job ended at its 48 h limit. Readout `summ183.py`, output in `typhon_out/sum
 - [numerical] Stage S, open chains at L = 32 and 64 over 180 screen points. The two-leg control reads c₂ = 4.05 at these sizes (exact 2) and the XX control 0.91, so the screen is not calibrated at L ≤ 64 and its c₂ values (up to 7 near density jumps) only rank points for confirmation.
 - [numerical] Stage C, ten selected points (families A, B, C, D, G, H). Where the L = 256 open chain finished, P1 fails at every point: A reads c₂(128 → 256) = −4.4 with P3 failing, C reads 0.33, and the two transverse-DM points G (r = 16, 12) read 0.84 and −0.78 with P2 and P3 failing. The other six points have no L = 256 run, so P1 is not evaluable. Their FES slopes fail P2 except at B (5.0, an overshoot near a density jump), and P4 fails at two of the four C181 off-symmetric points H.
 - Reading. No bond in these families is confirmed beyond the candidate's own (the symmetric line and the φ = 1.53 bond), and the transverse-DM route again shows no support, as in §9.194. The stage was cut by the time limit, so the off-symmetric H points are untested at L = 256. These were alternative routes, and the candidate does not depend on them.
+
+
+### 9.203 L = 512 at χ = 2048: c_two(256 → 512) = 1.95 and 1.98, in the band that favours c = 2; the two-leg control reads 1.95 at the same sizes (coordinator, Claude Fable 5, 2026-11-12; `codex/work_C195/typhon_out_x2048/`, C195x of `codex/work_C195/RESULT.md`)
+
+Readout `analyze_x2048.py`, output `typhon_out_x2048/analyze_x2048.txt`. L = 256 is at χ = 1536 (§9.196, §9.197).
+
+- [numerical] Both ground-branch runs at L = 512 finished three sweeps at χ = 2048 with the stop rule met. T1 holds (residual 1e-9, last |ΔE| 1.4e-9, last |ΔS̄₆| ≤ 1.4e-4, discarded weight 5e-11 to 6e-11).
+- [numerical] c_two(256 → 512) at W = 1, 6, 12: 1.939, 1.954, 1.965 at the collaborator's bond (1.837, 1.851, 1.863 at χ = 1536), and 1.971, 1.983, 1.993 on the symmetric line (1.881, 1.893, 1.903). c_prof(512) = 1.99 and 2.00. The R8 extrapolation through χ = 1536 and 2048 gives 2.01 to 2.05.
+- [numerical] C4 at L = 512. The S̄₆ step from χ = 1536 to 2048 is +0.0118 and +0.0104, just above the bound 0.01, down from 0.031 to 0.035 for the previous step. So L = 512 is close to converged in χ but not inside the registered tolerance, and the readings are lower bounds.
+- [numerical] Calibration from C198. The two-leg XX chain (exact c = 2) reads c_two(256 → 512) = 2.01, 1.95, 1.97 at W = 1, 6, 12 at χ = 1536. So at these sizes the estimator reads 1.95 at W = 6 on a known c = 2 state, which is what the qubit chain now reads.
+- [numerical] C189 at n = 1/8 finished χ = 1024: c_fit = 1.995 out to ξ = 748, with ξ₁/ξ₂ constant to 0.5% over the last doubling. The registered reading stays a c = 2 liquid with no pseudospin gap at the marginal density as well.
+- Against the fixed rule of §9.195. Both W = 6 values at χ = 2048 (1.954 and 1.983) are above 1.93, the band fixed in advance as favouring c = 2 with an irrelevant correction over a slow flow toward c = 1 (which predicted 1.73 to 1.83). The registered pass T2 holds at both bonds, as it did at χ = 1536.
+
+Reading. With L = 256 converged, L = 512 within about 0.01 of convergence in entropy, and the estimator calibrated on an exact c = 2 chain at the same sizes, the qubit chain reads c = 2 from L = 128 to 512 at two bonds. The size sequence of §9.195 is now 2.17 to 2.27 (64 → 128), 2.03 (128 → 256) and 1.95 to 1.98 (256 → 512), approaching 2.

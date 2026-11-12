@@ -1,0 +1,9 @@
+# c195 {"backend": "cupy", "gpu_min_chi": 128, "svd_host": false, "offload": true, "host": "apollo01.sns.ias.edu", "cuda_visible": "0", "job": "17618004", "gpu": "NVIDIA A100-PCIE-40GB"}
+{"sweep": 0, "chi": 2048, "alpha": 0.0, "E": -22.888109342493, "trunc": 4.1e-11, "res_max": 1e-09, "res_tol": 1e-09, "mv_mean": 99.862035225049, "mv_max": 160, "Dmax": 2048, "t": 9673.208664894104, "t_tot": 9673.208681583405, "dev_pool_GB": 29.7445632, "dev_used_GB": 30.256529408, "n_mid": 0.215383982445, "N_tot": 112.242107481281, "Sbar1": 2.323521784705, "Sbar6": 2.320044349493, "Sbar12": 2.317684712716, "stage": 0, "E_phys": -5130.544429342493, "final": true, "host_rss_GB": 203.411276}
+# ckpt 122.8s
+{"sweep": 1, "chi": 2048, "alpha": 0.0, "E": -22.888109304425, "trunc": 5.9e-11, "res_max": 1e-09, "res_tol": 1e-09, "mv_mean": 79.262230919765, "mv_max": 146, "Dmax": 2048, "t": 9614.991436004639, "t_tot": 19411.055614233017, "dev_pool_GB": 29.7445632, "dev_used_GB": 30.256529408, "n_mid": 0.215383267181, "N_tot": 112.241864541092, "Sbar1": 2.32313117526, "Sbar6": 2.319650981324, "Sbar12": 2.317289996665, "stage": 0, "E_phys": -5130.544429304425, "final": true, "host_rss_GB": 204.157544}
+# ckpt 108.7s
+{"sweep": 2, "chi": 2048, "alpha": 0.0, "E": -22.88810930303, "trunc": 6e-11, "res_max": 1e-09, "res_tol": 1e-09, "mv_mean": 79.537181996086, "mv_max": 137, "Dmax": 2048, "t": 9564.891774892807, "t_tot": 29084.70956635475, "dev_pool_GB": 29.7445632, "dev_used_GB": 30.256529408, "n_mid": 0.215383295934, "N_tot": 112.241889168123, "Sbar1": 2.322991329511, "Sbar6": 2.31951078065, "Sbar12": 2.317149636485, "stage": 0, "E_phys": -5130.54442930303, "final": true, "host_rss_GB": 204.311724}
+# ckpt 104.1s
+# entropies 1587s rss 60.160928
+done p153c_L512_P0_rand1 E_phys=None Sbar6=2.319491 var=None t=46916s t_meas=17673s
