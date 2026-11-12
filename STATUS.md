@@ -13,7 +13,7 @@ Latorre and Sierra ([arXiv:2403.17242](https://arxiv.org/abs/2403.17242)) conjec
 ## The conjecture is false at large d
 
 1. Unbounded c at fixed local dimension d₀ = 4464, with c = n + 1 for every n (C39, C42, C44, C45). All finite inputs are proved and refereed. The one remaining input is the Wilsonian step from the microscopic chain to its Luttinger liquid, of the same kind as large-U Hubbard to Heisenberg.
-2. The smallest counterexamples are explicit bonds at d = 11 (frozen cells, c = 11) and d = 13 (mobile cells, c = 14), written out in [contrib/small_d_note/](contrib/small_d_note/note.pdf). Both have certified finite members and are refereed and red-teamed. They rest on the same infrared inputs as the d = 24 candidate of a collaborator (GitHub: salpace), whose [independent audit](contrib/counterexample_push_20261109/README.md) leaves the model-specific hypotheses of the d = 13 bond in place as hypotheses.
+2. The smallest counterexamples are explicit bonds at d = 11 (frozen cells, c = 11) and d = 13 (mobile cells, c = 14), written out in [contrib/small_d_note/](contrib/small_d_note/note.pdf). Both have certified finite members and are refereed and red-teamed. They rest on the same infrared inputs as the d = 24 candidate of a Salvatore D. Pace (GitHub: salpace), whose [independent audit](contrib/counterexample_push_20261109/README.md) leaves the model-specific hypotheses of the d = 13 bond in place as hypotheses.
 3. Numerics agree. The logical vacancy model gives c = 2.0, 2.9 ± 0.1 and 3.98 ± 0.05 at n = 1, 2, 3, and the projected d₀ = 4464 chain gives c = 3.00 ± 0.02 at n = 2.
 
 Not established: a rigorous lattice-to-CFT theorem for any counterexample.
@@ -24,7 +24,7 @@ The chain is
 
 H = Σ_j [ (X_j X_{j+1} − Y_j Y_{j+1})/2 + (X_j Y_{j+1} − Y_j X_{j+1})/160 + 10 Z_j Z_{j+1} ] + h_z Σ_j Z_j, with h_z = −19.976047,
 
-together with a family of neighbours of it. One of them is the bond proposed by the collaborator, which adds a small XX + YY term (hopping phase 1.53).
+together with a family of neighbours of it. One of them, proposed by Pace, adds a small XX + YY term (hopping phase 1.53).
 
 The strong ZZ term, with the field near its blockade value, leaves a dilute gas of blockaded particles. Their direct hop (the XY − YX term) is tuned down to the size of the next-nearest hop that the pairing term XX − YY generates at second order. The particles then move on a zigzag ladder whose band has two valleys, and the proposed infrared theory is a two-component Luttinger liquid with c = 2.
 
@@ -32,7 +32,7 @@ The spread of couplings is one small parameter ε = Δ/V (pair amplitude Δ = J_
 
 Evidence, all numerical:
 
-- The qubit chain itself. Parity-resolved DMRG on open chains of L = 64, 128 and 256, with no projection, converged in bond dimension up to χ = 1024, reads c = 2.00 for the bond above and for the collaborator's bond from the entropy difference between L = 128 and 256, which passes the pre-registered test at both. Four further tuned bonds (two densities, V/Δ = 40 and 80) read 1.94 to 2.03 at χ = 768, where the reading is still rising with χ. The c = 1 and c = 2 controls calibrate both size pairs, and independent CPU and GPU codes agree (REPORT §9.178, §9.186, §9.192).
+- The qubit chain itself. Parity-resolved DMRG on open chains of L = 64, 128 and 256, with no projection, converged in bond dimension up to χ = 1024, reads c = 2.00 for the bond above and for the phase-1.53 bond from the entropy difference between L = 128 and 256, which passes the pre-registered test at both. Four further tuned bonds (two densities, V/Δ = 40 and 80) read 1.94 to 2.03 at χ = 768, where the reading is still rising with χ. The c = 1 and c = 2 controls calibrate both size pairs, and independent CPU and GPU codes agree (REPORT §9.178, §9.186, §9.192).
 - The effective model. The second-order model of the blockaded particles reads c = 1.99 to 2.00 on the infinite chain at three densities, out to correlation lengths of 500 to 600 sites (REPORT §9.163, §9.179).
 - The mechanism. One particle from each valley binds into a pair in the dilute limit, which alone would give a pair liquid with c = 1. At the candidate density the inter-valley backscattering responsible is irrelevant if the pseudospin Luttinger parameter K_s exceeds 1. K_s reads 1.2 to 1.5 in the effective model and 1.4 to 1.6 on the qubit chain at L = 256, where the pair exponent and K_c also match the effective model (REPORT §9.160, §9.161, §9.182).
 
@@ -43,7 +43,7 @@ Open, before this is called established:
 3. The pseudospin gap. In the effective model the pair gap is seen directly at low density, on finite and infinite chains, and closes near n ≈ 0.07, against the candidate's 0.19. The final evaluation of the registered test waits on two runs (REPORT §9.188, §9.201).
 4. One unexplained reading. An older-solver run at V/Δ = 8 reads about 1.4 on the infinite chain. (The c = 1 control of the infinite-chain calculation, the other loose end, now reads 0.99, REPORT §9.201.)
 
-The collaborator's earlier runs of the phase-1.53 bond read a downturn from L = 64 to 128 on states that were not fully optimized ([record](contrib/d2_tenpy_20261109/RESULT.md), [rational bond](contrib/d2_dmrg_priority_20261109/SIMPLE_PARITY_CANDIDATE.md)). The converged rerun lies lower in energy and reads 2.2, so the downturn does not reproduce (REPORT §9.167). Their [transverse-DM deformation](contrib/counterexample_push_20261109/FACILITATED_ROUTE.md) reads c ≈ 1, and their [symmetry audit](contrib/d2_priority_audit_20261109/UNIFORM_Y_SOURCE.md) allows a small uniform Y source.
+Pace's earlier runs of the phase-1.53 bond read a downturn from L = 64 to 128 on states that were not fully optimized ([record](contrib/d2_tenpy_20261109/RESULT.md), [rational bond](contrib/d2_dmrg_priority_20261109/SIMPLE_PARITY_CANDIDATE.md)). The converged rerun lies lower in energy and reads 2.2, so the downturn does not reproduce (REPORT §9.167). Their [transverse-DM deformation](contrib/counterexample_push_20261109/FACILITATED_ROUTE.md) reads c ≈ 1, and their [symmetry audit](contrib/d2_priority_audit_20261109/UNIFORM_Y_SOURCE.md) allows a small uniform Y source.
 
 ## Elsewhere at d = 2
 
