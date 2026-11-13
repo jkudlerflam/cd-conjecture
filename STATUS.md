@@ -1,6 +1,6 @@
 # Where the c–d conjecture stands
 
-Last updated 2026-11-10. This page lists only the main results. [REPORT.md](REPORT.md) is the chronological record, and [STATUS_DETAIL.md](STATUS_DETAIL.md) is an earlier long version of this page. The standard throughout is theoretical physics, and nothing has had independent human review.
+Last updated 2026-11-12. This page lists only the main results. [REPORT.md](REPORT.md) is the chronological record, and [STATUS_DETAIL.md](STATUS_DETAIL.md) is an earlier long version of this page. The standard throughout is theoretical physics, and nothing has had independent human review.
 
 Latorre and Sierra ([arXiv:2403.17242](https://arxiv.org/abs/2403.17242)) conjecture c ≤ d − 1 for translation-invariant nearest-neighbour chains on (ℂ^d)^⊗L whose low-energy spectrum is a unitary CFT.
 
@@ -33,14 +33,14 @@ The spread of couplings is one small parameter ε = Δ/V (pair amplitude Δ = J_
 Evidence, all numerical:
 
 - The qubit chain itself. Parity-resolved DMRG on open chains of L = 64, 128 and 256, with no projection, converged in bond dimension up to χ = 1024, reads c = 2.00 for the bond above and for the phase-1.53 bond from the entropy difference between L = 128 and 256, which passes the pre-registered test at both. Four further tuned bonds (two densities, V/Δ = 40 and 80) read 1.94 to 2.03 at χ = 768, where the reading is still rising with χ. The c = 1 and c = 2 controls calibrate both size pairs, and independent CPU and GPU codes agree (REPORT §9.178, §9.186, §9.192).
-- The effective model. The second-order model of the blockaded particles reads c = 1.99 to 2.00 on the infinite chain at three densities, out to correlation lengths of 500 to 600 sites (REPORT §9.163, §9.179).
+- The effective model. The second-order model of the blockaded particles reads c = 1.99 to 2.00 on the infinite chain at three densities, out to correlation lengths of 500 to 600 sites. Its open chains read 1.82, 1.88 and 1.92 over the same three size doublings, approaching 2 from below while the qubit chain approaches from above (REPORT §9.163, §9.179, §9.204).
 - The mechanism. One particle from each valley binds into a pair in the dilute limit, which alone would give a pair liquid with c = 1. At the candidate density the inter-valley backscattering responsible is irrelevant if the pseudospin Luttinger parameter K_s exceeds 1. K_s reads 1.2 to 1.5 in the effective model and 1.4 to 1.6 on the qubit chain at L = 256, where the pair exponent and K_c also match the effective model (REPORT §9.160, §9.161, §9.182).
 
 Open, before this is called established:
 
 1. Convergence at L = 512. The third size reads c = 1.95 and 1.98 from 256 to 512 at bond dimension 2048, where an exact c = 2 control reads 1.95 at the same sizes, and passes its registered test at both bonds. The entropy at L = 512 still moves by 0.010 to 0.012 from bond dimension 1536 to 2048, just above the registered 0.01 (REPORT §9.199, §9.203).
 2. Entanglement scaling on the infinite qubit chain. Two attempts did not converge at the candidate, because the finite-χ state breaks particle number (REPORT §9.183, §9.187).
-3. The pseudospin gap. In the effective model the pair gap is seen directly at low density, on finite and infinite chains, and closes near n ≈ 0.07, against the candidate's 0.19. The final evaluation of the registered test waits on two runs (REPORT §9.188, §9.201).
+3. The pseudospin gap. In the effective model the pair gap is seen directly at low density, on finite and converged infinite chains, and closes near n ≈ 0.07, against the candidate's 0.19. The registered test puts the candidate on the gapless side in substance, and falls short of the letter only because no single density shows the gap above three errors on both chains at once (REPORT §9.188, §9.204).
 4. One unexplained reading. An older-solver run at V/Δ = 8 reads about 1.4 on the infinite chain. (The c = 1 control of the infinite-chain calculation, the other loose end, now reads 0.99, REPORT §9.201.)
 
 Pace's earlier runs of the phase-1.53 bond read a downturn from L = 64 to 128 on states that were not fully optimized ([record](contrib/d2_tenpy_20261109/RESULT.md), [rational bond](contrib/d2_dmrg_priority_20261109/SIMPLE_PARITY_CANDIDATE.md)). The converged rerun lies lower in energy and reads 2.2, so the downturn does not reproduce (REPORT §9.167). Their [transverse-DM deformation](contrib/counterexample_push_20261109/FACILITATED_ROUTE.md) reads c ≈ 1, and their [symmetry audit](contrib/d2_priority_audit_20261109/UNIFORM_Y_SOURCE.md) allows a small uniform Y source.
