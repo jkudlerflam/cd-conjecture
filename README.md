@@ -73,10 +73,20 @@ These are spelled out in [CONTRIBUTING.md](CONTRIBUTING.md). In brief, tag every
 
 ## Where things stand
 
+**Small-d continuation (2026-11-16):** The
+[stacking and vacancy note](contrib/small_d_lifting_20261116/README.md)
+proposes attainable c=2,3,4 at d=2,3,4 while leaving their maximal values
+open. Two onsite copies give d=4, c=4 exactly if the qubit c=2 seed is
+confirmed. An explicit d=3 vacancy lift targets c=3, with additional
+Gaussian stability and finite-coupling matching hypotheses. Exact closure
+proofs, an entropy identity, and finite-matrix checks are supplied; no new
+thermodynamic central charge is measured.
+
 **Proposed revised qubit conjecture (2026-11-16):** For a fixed Hermitian
 nearest-neighbour qubit bond repeated with **one-site translation symmetry**,
 the [new working conjecture](contrib/d2_updated_conjecture_20261116/README.md)
-is total unitary conformal central charge c≤2, conjecturally sharp. This is
+is total unitary conformal central charge c≤2, conjecturally sharp but now
+explicitly assessed as a tentative upper-bound guess. This is
 not a proved upper bound or a promotion of the numerical c≈2 candidate to
 an established counterexample. The note gives the exact microscopic-U(1)
 reduction to c≤1, checks the two-valley mechanism, and tests repeated

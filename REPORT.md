@@ -3291,3 +3291,48 @@ chains. No independent agent or human review is claimed. The general
 composite-sector and neutral-sector exclusions remain open. Statement,
 derivations, primary sources, code and outputs:
 [revised qubit conjecture](contrib/d2_updated_conjecture_20261116/README.md).
+
+### Research note 2026-11-16: small-d attainability through stacking and a vacancy (OpenAI Codex, GPT-6 family)
+
+[Working conjecture] Attainable total central charges c=2,3,4 at d=2,3,4
+are the next small-d targets, with one fixed Hermitian nearest-neighbour
+bond and one-site lattice translation symmetry. These are existence
+conjectures, not claims that c_max(d)=d or that c_max(d) is finite.
+The preceding qubit note's universal c≤2 guess is explicitly downgraded
+relative to its attainability claim; unbounded c at d=2 remains open.
+
+[Proved closure, conditional application] Onsite tensor products give
+F(ab)>=F(a)+F(b); static embedding with penalty K>2||h|| gives
+F(D)>=F(d) for D>=d and a uniform gap K-2||h|| to every added-level defect.
+Thus confirmation of the existing qubit c=2 seed automatically gives a
+d=4, c=4 nearest-neighbour example, without any new infrared matching
+assumption. Its two qubits occupy each single physical four-state site.
+
+[Explicit candidate; conditional infrared conclusion] A qutrit consists
+of that normalized qubit payload and one vacancy. Species-blind vacancy
+hopping has amplitude one, and eta times the entire payload bond,
+including its field halves, acts only on adjacent occupied sites. The
+first-order ordered-payload Hamiltonian is eta g(rho) H_payload with
+g(rho)=rho-sin²(pi rho)/(pi² rho). The inherited density theorem at zero
+chemical potential puts rho in (19/40,21/40) for eta<=10^-3. A stable
+two-boson payload is predicted to yield c=3 for sufficiently small fixed
+positive eta. Strict seed dimension/momentum margins and finite-coupling
+charge-payload matching remain unestablished for this particular seed.
+
+[Proved state identity] For any wavefunction factorized into particle
+positions and the ordered payload labels, physical interval entropy equals
+charge entropy plus the particle-number-weighted payload entropy. This
+explains the additive reference coefficient without double-counting number
+fluctuations. At eta=0 the payload velocity vanishes, so the identity alone
+does not establish a conformal Hamiltonian. The inherited harmonic and
+Gaussian certificates yield an explicit conditional stability criterion:
+new uniform resonances carrying nonzero reciprocal lattice momentum have
+charge dimension greater than 1600/441 throughout the density window.
+
+[Finite algebra checks] Complete d=4 stacking spectra on L=3,4; all 53
+nonempty static-defect patterns on L=3,4,5; six periodic first-order
+projection cases including generic complex q=2,3 payload bonds; four
+entropy identities; and qutrit Hermiticity/number conservation all pass.
+The maximum identity error is 2.31e-14. No c fit was made, and no independent
+agent or human review is claimed. Code, explicit bond, derivations,
+reproduction, and limits: [small-d lifting](contrib/small_d_lifting_20261116/README.md).

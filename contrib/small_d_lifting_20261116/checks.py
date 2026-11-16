@@ -245,7 +245,6 @@ def entropy_identity_check(q, length, number, cut, rng):
     charge = np.zeros(2 ** length, dtype=complex)
     probabilities = np.zeros(number + 1)
     for i, x in enumerate(positions):
-        occupied = set(x)
         charge_index = sum(2 ** (length - 1 - j) for j in x)
         charge[charge_index] = phi[i]
         probabilities[sum(j < cut for j in x)] += abs(phi[i]) ** 2

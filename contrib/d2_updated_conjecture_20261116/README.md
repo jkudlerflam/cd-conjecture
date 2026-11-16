@@ -46,10 +46,16 @@ model alone, an L-dependent bond, a longer-range Hamiltonian, or an explicit
 multi-site unit cell is not an example in this class. A nonconformal gapless
 point with z≠1 does not acquire a c merely by fitting its entropy.
 
-**Assessment:** c≤2 is the replacement I currently find most credible. The
-upper-bound evidence is structural and incomplete; the sharpness evidence
-is numerical. Neither has theorem status. Confirming the candidate alone
-would establish a lower bound, not this upper bound.
+**Updated assessment (2026-11-16):** c≤2 remains a tentative upper-bound
+guess, with substantially weaker support than the c=2 attainability
+conjecture. The structural checks below concern particular mechanisms;
+they do not establish that F(2) is finite. A sequence of fixed,
+one-site-invariant qubit bonds with c tending to infinity remains open,
+including sequences with increasingly small positive velocities and long
+crossover scales. Confirming the candidate would establish a lower bound,
+not this upper bound. The [small-d continuation](../small_d_lifting_20261116/README.md)
+therefore develops constructive attainability conjectures and keeps all
+proposed maxima separate.
 
 ## Evidence as of November 16
 
