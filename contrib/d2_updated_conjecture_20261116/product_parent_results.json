@@ -1,0 +1,50 @@
+{
+  "seed": 20261117,
+  "factorization_cases": 200,
+  "max_absolute_identity_error": 2.220446049250313e-16,
+  "ring_checks": [
+    {
+      "L": 4,
+      "ground_dimension": 2,
+      "ground_state_residual": 2.992397996059992e-17,
+      "finite_size_gap": 0.027418641836240855
+    },
+    {
+      "L": 5,
+      "ground_dimension": 2,
+      "ground_state_residual": 3.838075690598686e-17,
+      "finite_size_gap": 0.022665275922228858
+    },
+    {
+      "L": 6,
+      "ground_dimension": 2,
+      "ground_state_residual": 5.095750210681871e-17,
+      "finite_size_gap": 0.01726578774050447
+    },
+    {
+      "L": 7,
+      "ground_dimension": 2,
+      "ground_state_residual": 7.979727989493313e-17,
+      "finite_size_gap": 0.013836676271516555
+    },
+    {
+      "L": 8,
+      "ground_dimension": 2,
+      "ground_state_residual": 5.551115123125783e-17,
+      "finite_size_gap": 0.011860931095814169
+    },
+    {
+      "L": 9,
+      "ground_dimension": 2,
+      "ground_state_residual": 3.209238430557093e-17,
+      "finite_size_gap": 0.010540673502457564
+    },
+    {
+      "L": 10,
+      "ground_dimension": 2,
+      "ground_state_residual": 2.8514517136368767e-17,
+      "finite_size_gap": 0.009547468921523302
+    }
+  ],
+  "interpretation": "Exact low-entanglement parent; no CFT or gap fit"
+}

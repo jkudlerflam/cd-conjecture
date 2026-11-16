@@ -2,19 +2,33 @@
 
 ## Day-to-day workflow
 
+Keep GitHub synchronized throughout the work, including in every project chat.
+Pull at the start and after a break, then commit, pull, and push at meaningful
+checkpoints (roughly every 30 minutes during longer sessions) and before
+finishing. Routine synchronization is already authorized for project chats;
+the persistent instructions are in [AGENTS.md](AGENTS.md).
+
 If you have write access, work on `main` and keep the history linear:
 
 ```bash
 git pull --rebase
 ```
 
-Then make your changes, commit them in small pieces, and push:
+Then make your changes, commit them in small pieces, and synchronize each
+completed checkpoint:
 
 ```bash
+git pull --rebase
 git push
 ```
 
 If someone pushed first, `git pull --rebase` again and resolve any conflicts before pushing. Without write access, fork the repository and open a pull request.
+
+Check the working tree before syncing. Preserve existing edits, stage only
+your own task's changes unless a broader sync is requested, and avoid
+overlapping Git operations when chats share a checkout. Never force-push
+shared history. Verify that the branch and its upstream agree after pushing;
+report any work that could not be synchronized.
 
 Use issues for open problems, proposed attacks and claims that need checking, so that discussion stays attached to the question.
 

@@ -1,0 +1,528 @@
+{
+  "description": "Finite algebra checks only; no thermodynamic c estimate.",
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  },
+  "seed_shift": 9.99428065774773,
+  "seed_scale": 20.00678065774773,
+  "normalized_seed_bond": {
+    "real": [
+      [
+        -0.9981779677288619,
+        0.0,
+        0.0,
+        0.049983054100847794
+      ],
+      [
+        0.0,
+        -0.9993752118237395,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        -0.9993752118237395,
+        0.0
+      ],
+      [
+        0.049983054100847794,
+        0.0,
+        0.0,
+        0.9987497081152948
+      ]
+    ],
+    "imaginary": [
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0006247881762605975,
+        0.0
+      ],
+      [
+        0.0,
+        -0.0006247881762605975,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    ]
+  },
+  "qutrit_example": {
+    "t": 1.0,
+    "eta": 1e-06,
+    "mu": 0.0,
+    "status": "explicit bond, not a verified c=3 point",
+    "bond": {
+      "real": [
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          -1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          -1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          -1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          -9.98177967728862e-07,
+          0.0,
+          0.0,
+          0.0,
+          4.998305410084779e-08
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          -9.993752118237394e-07,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          -1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          -9.993752118237394e-07,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          4.998305410084779e-08,
+          0.0,
+          0.0,
+          0.0,
+          9.987497081152947e-07
+        ]
+      ],
+      "imaginary": [
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          6.247881762605975e-10,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          -6.247881762605975e-10,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ]
+    },
+    "hermiticity_error": 0.0,
+    "number_commutator_error": 0.0
+  },
+  "stack_gamma": 1.37,
+  "stack_spectra": [
+    {
+      "length": 3,
+      "dimension": 64,
+      "spectrum_error": 1.3766765505351941e-14
+    },
+    {
+      "length": 4,
+      "dimension": 256,
+      "spectrum_error": 2.3092638912203256e-14
+    }
+  ],
+  "vacancy_first_order_projection": [
+    {
+      "name": "qubit_seed",
+      "payload_dimension": 2,
+      "length": 6,
+      "particles": 3,
+      "full_sector_dimension": 160,
+      "payload_zero_momentum_dimension": 4,
+      "charge_energy": -4.0000000000000036,
+      "charge_energy_formula_error": 2.6645352591003757e-15,
+      "isometry_error": 4.440892098500626e-16,
+      "kinetic_eigenspace_error": 1.6653345369377348e-15,
+      "contact_coefficient_ed": 0.27777777777777785,
+      "contact_coefficient_formula": 0.27777777777777773,
+      "contact_error": 1.1102230246251565e-16,
+      "first_order_projection_error": 6.661338147781882e-16,
+      "physical_interaction_hermiticity_error": 0.0
+    },
+    {
+      "name": "qubit_seed",
+      "payload_dimension": 2,
+      "length": 7,
+      "particles": 3,
+      "full_sector_dimension": 280,
+      "payload_zero_momentum_dimension": 4,
+      "charge_energy": -4.493959207434935,
+      "charge_energy_formula_error": 8.881784197001252e-16,
+      "isometry_error": 2.220446049250313e-16,
+      "kinetic_eigenspace_error": 1.9984014443252818e-15,
+      "contact_coefficient_ed": 0.18814679335608062,
+      "contact_coefficient_formula": 0.18814679335608067,
+      "contact_error": 5.551115123125783e-17,
+      "first_order_projection_error": 2.2204460498058196e-16,
+      "physical_interaction_hermiticity_error": 0.0
+    },
+    {
+      "name": "qubit_seed",
+      "payload_dimension": 2,
+      "length": 8,
+      "particles": 4,
+      "full_sector_dimension": 1120,
+      "payload_zero_momentum_dimension": 6,
+      "charge_energy": -5.226251859505506,
+      "charge_energy_formula_error": 0.0,
+      "isometry_error": 4.440892098500626e-16,
+      "kinetic_eigenspace_error": 1.3877787807814457e-15,
+      "contact_coefficient_ed": 0.2866116523516817,
+      "contact_coefficient_formula": 0.2866116523516815,
+      "contact_error": 1.6653345369377348e-16,
+      "first_order_projection_error": 1.5543122344753903e-15,
+      "physical_interaction_hermiticity_error": 0.0
+    },
+    {
+      "name": "generic_complex_hermitian",
+      "payload_dimension": 2,
+      "length": 7,
+      "particles": 4,
+      "full_sector_dimension": 560,
+      "payload_zero_momentum_dimension": 6,
+      "charge_energy": -4.493959207434936,
+      "charge_energy_formula_error": 1.7763568394002505e-15,
+      "isometry_error": 1.7763568394002505e-15,
+      "kinetic_eigenspace_error": 1.1657341758564144e-15,
+      "contact_coefficient_ed": 0.3911100950170612,
+      "contact_coefficient_formula": 0.39111009501706046,
+      "contact_error": 7.216449660063518e-16,
+      "first_order_projection_error": 1.2008898127460164e-15,
+      "physical_interaction_hermiticity_error": 0.0
+    },
+    {
+      "name": "generic_complex_hermitian",
+      "payload_dimension": 3,
+      "length": 6,
+      "particles": 3,
+      "full_sector_dimension": 540,
+      "payload_zero_momentum_dimension": 11,
+      "charge_energy": -4.0000000000000036,
+      "charge_energy_formula_error": 2.6645352591003757e-15,
+      "isometry_error": 2.220446049250313e-16,
+      "kinetic_eigenspace_error": 1.6653345369377348e-15,
+      "contact_coefficient_ed": 0.27777777777777785,
+      "contact_coefficient_formula": 0.27777777777777773,
+      "contact_error": 1.1102230246251565e-16,
+      "first_order_projection_error": 1.6654248846680025e-16,
+      "physical_interaction_hermiticity_error": 0.0
+    },
+    {
+      "name": "generic_complex_hermitian",
+      "payload_dimension": 3,
+      "length": 7,
+      "particles": 3,
+      "full_sector_dimension": 945,
+      "payload_zero_momentum_dimension": 11,
+      "charge_energy": -4.493959207434935,
+      "charge_energy_formula_error": 8.881784197001252e-16,
+      "isometry_error": 2.220446049250313e-16,
+      "kinetic_eigenspace_error": 1.9984014443252818e-15,
+      "contact_coefficient_ed": 0.18814679335608062,
+      "contact_coefficient_formula": 0.18814679335608067,
+      "contact_error": 5.551115123125783e-17,
+      "first_order_projection_error": 1.1102230246251565e-16,
+      "physical_interaction_hermiticity_error": 0.0
+    }
+  ],
+  "embedding": [
+    {
+      "length": 3,
+      "penalty": 2.75,
+      "bond_norm": 1.0,
+      "defect_patterns_checked": 7,
+      "smallest_margin_above_proved_bound": 3.998284580067263,
+      "payload_block_error": 0.0
+    },
+    {
+      "length": 4,
+      "penalty": 2.75,
+      "bond_norm": 1.0,
+      "defect_patterns_checked": 15,
+      "smallest_margin_above_proved_bound": 3.9984937002864003,
+      "payload_block_error": 0.0
+    },
+    {
+      "length": 5,
+      "penalty": 2.75,
+      "bond_norm": 1.0,
+      "defect_patterns_checked": 31,
+      "smallest_margin_above_proved_bound": 3.9985821465374998,
+      "payload_block_error": 0.0
+    }
+  ],
+  "factorized_state_entropy": [
+    {
+      "payload_dimension": 2,
+      "length": 6,
+      "particles": 3,
+      "cut": 2,
+      "physical_entropy": 1.7221380831143436,
+      "charge_entropy": 1.1616764756777997,
+      "mean_payload_entropy": 0.5604616074365439,
+      "entropy_identity_error": 1.1102230246251565e-16
+    },
+    {
+      "payload_dimension": 2,
+      "length": 6,
+      "particles": 3,
+      "cut": 3,
+      "physical_entropy": 2.0947815842126616,
+      "charge_entropy": 1.6851107786120558,
+      "mean_payload_entropy": 0.409670805600606,
+      "entropy_identity_error": 2.220446049250313e-16
+    },
+    {
+      "payload_dimension": 2,
+      "length": 8,
+      "particles": 4,
+      "cut": 4,
+      "physical_entropy": 3.0462059632775587,
+      "charge_entropy": 2.220038492895685,
+      "mean_payload_entropy": 0.8261674703818738,
+      "entropy_identity_error": 0.0
+    },
+    {
+      "payload_dimension": 3,
+      "length": 6,
+      "particles": 3,
+      "cut": 3,
+      "physical_entropy": 2.4655441207978406,
+      "charge_entropy": 1.6567966432929175,
+      "mean_payload_entropy": 0.8087474775049244,
+      "entropy_identity_error": 1.3322676295501878e-15
+    }
+  ],
+  "benchmark_closure_d_2_through_32": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31
+  ],
+  "conditional_c2_seed_closure_d_2_through_32": [
+    2,
+    2,
+    4,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31
+  ],
+  "maximum_identity_error": 2.3092638912203256e-14,
+  "elapsed_seconds": 0.04838987499988434
+}

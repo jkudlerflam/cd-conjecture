@@ -33,15 +33,20 @@ Before you start any work, pull with rebase so your work sits on top of everyone
 git pull --rebase
 ```
 
-When you are done, commit in small pieces and push:
+At meaningful checkpoints (roughly every 30 minutes during longer sessions)
+and before finishing, commit in small pieces, pull again, and push:
 
 ```bash
 git add <files>
 git commit -m "Short description of what changed"
+git pull --rebase
 git push
 ```
 
 If the push is rejected because someone else pushed first, run `git pull --rebase` again, resolve any conflicts, and push. Everyone with write access works directly on `main`. If you don't have write access, fork the repository and open a pull request.
+
+Every project chat follows this routine under [AGENTS.md](AGENTS.md). Preserve
+other chats' edits and verify that the branch is synchronized before finishing.
 
 ### 3. Adding a result
 
@@ -67,6 +72,17 @@ The code is plain Python and needs numpy and scipy unless a folder says otherwis
 These are spelled out in [CONTRIBUTING.md](CONTRIBUTING.md). In brief, tag every claim, name which central charge you mean (Virasoro c, or c_eff for non-compact or non-unitary limits), and keep files under about 50 MB. Never commit passwords, tokens or other private data.
 
 ## Where things stand
+
+**Proposed revised qubit conjecture (2026-11-16):** For a fixed Hermitian
+nearest-neighbour qubit bond repeated with **one-site translation symmetry**,
+the [new working conjecture](contrib/d2_updated_conjecture_20261116/README.md)
+is total unitary conformal central charge c≤2, conjecturally sharp. This is
+not a proved upper bound or a promotion of the numerical c≈2 candidate to
+an established counterexample. The note gives the exact microscopic-U(1)
+reduction to c≤1, checks the two-valley mechanism, and tests repeated
+blockade tuning, including two exact nonconformal frustration-free families.
+Additional composite or neutral critical sectors remain the principal gap
+in a general argument.
 
 **Independent continuation (2026-11-09):** [new checked contributions](contrib/counterexample_push_20261109/README.md)
 give an exact binding boundary and pair wavefunction for the Fibonacci
