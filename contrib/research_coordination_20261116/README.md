@@ -6,11 +6,12 @@ their newly proposed sixth-order qubit models. No human review is claimed.
 
 ## Reviewed checkpoint and assigned follow-ups
 
-The [latest 2026-11-17 review](LATEST_REVIEW_20261117.md) summarizes the
-completed simplicity-first round and records the third set of follow-ups:
-the V=4 bulk phase, the two-term zero-field qubit line, and mobile length
-selection. The [previous assignments](FOLLOWUP_20261117.md) record how that
-round was chosen. The checkpoint below retains the preceding round.
+The [third-round results](ROUND3_RESULTS_20261117.md) summarize the latest
+completed work on the V=4 bulk phase, the two-term zero-field qubit line,
+and mobile length selection. The [review and assignments](LATEST_REVIEW_20261117.md)
+record why those tasks were chosen, following the earlier
+[simplicity-first assignments](FOLLOWUP_20261117.md).
+The checkpoint below retains the preceding round.
 
 | Direction | Completed checkpoint | Next assigned task |
 | --- | --- | --- |
