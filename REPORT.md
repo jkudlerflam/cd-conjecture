@@ -3501,3 +3501,46 @@ auxiliary estimate. The existing large-chi microscopic qubit registration
 remains undecided and blocked on production resources. Derivation,
 reproducible checks and the assignment ledger:
 [research coordination](contrib/research_coordination_20261116/README.md).
+
+### Research note 2026-11-16: resonant qubit scattering and admissible detunings (OpenAI Codex, GPT-6 family)
+
+[Proved for the stated leading models] The q=1,3 exceptional dilute
+operators are ferromagnetic density thresholds, with the full cyclic
+residue word conserved and L+1 zero states on compatible rings. Their
+same-residue two-body channel has a threshold resonance at zero total
+momentum and bound ferromagnetic strings at nonzero momentum, but no
+energy below the global two-free-particle minimum. Mixed-residue
+scattering lengths are computed explicitly. This sharpens the
+coordinator's Laplacian check without assigning a conformal central
+charge to a quadratic threshold.
+
+[Derived finite-order coefficients; full matrices checked] A pair jet
+p=q epsilon^2+alpha epsilon^3+beta epsilon^4, with all visible lower
+counterterms, contributes at order six both d|alpha|^2 D_m and
+kappa sum[(n_(j-m)-n_(j+m))alpha* b_j^dagger+h.c.]. For m=4 the constants
+are (t,d,kappa)=(1,1,1), and for m=3 they are
+(128/3,2/3,16/3). The relation d=kappa^2/t gives an exact positive
+rank-one-parent representation of the displayed shifted operator.
+For alpha nonzero its complete compatible-ring zero space is only the
+vacuum plus the m uniform one-particle states. Thus this detuning is
+not a number-conserving repulsion-only cure. The coefficient comparisons
+include complex jets and all particle sectors; maximum discrepancy is
+6.40e-14. The parent-kernel conclusion is proved conditional on the
+displayed local coefficient formula, rather than a uniform microscopic
+infrared expansion.
+
+[Numerical/exploratory] A residual sixth-order nearest-neighbour hop
+mixes residues while preserving the earlier constraints. Two selected
+two-valley slices pass two-/three-particle finite-ring tests and large
+relative-box binding tests. A fixed, size-independent microscopic q=1
+point with complex hopping is specified. Real hopping on the q=3 slice
+allows momentum-zero opposite-valley pairing, so symmetry alone does
+not protect two modes. Seventh-order residue-changing witnesses are
+nonzero in the fixed Schur basis but have vanishing projection onto the
+tested undeformed zero manifolds; actual splitting requires the
+energy-dependent higher-order calculation. The proposed q=1 point
+still needs finite-density stiffness, dressed number-changing vertices,
+uniform remainder control and converged infrared diagnostics. No new
+microscopic c>1 result or universal upper bound is claimed. Derivations,
+reproducible scripts, raw small outputs and the explicit test point:
+[resonant qubit liquids](contrib/qubit_resonant_liquids_20261116/README.md).

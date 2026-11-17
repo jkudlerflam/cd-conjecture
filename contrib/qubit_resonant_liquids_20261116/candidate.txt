@@ -1,0 +1,258 @@
+{
+  "status": "Unvalidated fixed microscopic test point; no CFT claim",
+  "q": 1,
+  "epsilon": 0.001,
+  "gamma": 0.1,
+  "phase": 0.7853981633974483,
+  "nu": 0.05,
+  "mu6": -2.091732487236675,
+  "leading_valleys": [
+    -3.1371924942057396,
+    -1.5751964861789605
+  ],
+  "leading_band_bottom": -2.1417324872366748,
+  "leading_kinetic_scale": 1e-18,
+  "microscopic": {
+    "v": 1,
+    "a": 0.001,
+    "b": -0.001,
+    "u": 1.9999900000520917e-06,
+    "t": [
+      -9.999960000239294e-07,
+      7.071067811865476e-20
+    ],
+    "p": 1e-06,
+    "f": 0
+  },
+  "bond_real": [
+    [
+      0.0,
+      0.0,
+      0.0,
+      1e-06
+    ],
+    [
+      0.0,
+      9.999950000260459e-07,
+      -9.999960000239294e-07,
+      -0.001
+    ],
+    [
+      0.0,
+      -9.999960000239294e-07,
+      9.999950000260459e-07,
+      0.001
+    ],
+    [
+      1e-06,
+      -0.001,
+      0.001,
+      1.00000199999
+    ]
+  ],
+  "bond_imag": [
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      7.071067811865476e-20,
+      0.0
+    ],
+    [
+      0.0,
+      -7.071067811865476e-20,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  ],
+  "low_degree_number_changing_momenta": [
+    {
+      "net_valley_creation": [
+        1,
+        2
+      ],
+      "degree": 3,
+      "momentum": -0.0044001593840743425
+    },
+    {
+      "net_valley_creation": [
+        2,
+        0
+      ],
+      "degree": 2,
+      "momentum": 0.00880031876810694
+    },
+    {
+      "net_valley_creation": [
+        -1,
+        2
+      ],
+      "degree": 3,
+      "momentum": -0.013200478152181283
+    },
+    {
+      "net_valley_creation": [
+        4,
+        0
+      ],
+      "degree": 4,
+      "momentum": 0.01760063753621388
+    },
+    {
+      "net_valley_creation": [
+        0,
+        4
+      ],
+      "degree": 4,
+      "momentum": -0.017600637536255626
+    },
+    {
+      "net_valley_creation": [
+        3,
+        -1
+      ],
+      "degree": 4,
+      "momentum": -1.553195689258672
+    },
+    {
+      "net_valley_creation": [
+        0,
+        3
+      ],
+      "degree": 3,
+      "momentum": 1.5575958486427046
+    },
+    {
+      "net_valley_creation": [
+        2,
+        1
+      ],
+      "degree": 3,
+      "momentum": -1.5663961674108533
+    },
+    {
+      "net_valley_creation": [
+        1,
+        1
+      ],
+      "degree": 2,
+      "momentum": 1.570796326794886
+    },
+    {
+      "net_valley_creation": [
+        0,
+        1
+      ],
+      "degree": 1,
+      "momentum": -1.5751964861789605
+    },
+    {
+      "net_valley_creation": [
+        3,
+        1
+      ],
+      "degree": 4,
+      "momentum": 1.5795966455629937
+    },
+    {
+      "net_valley_creation": [
+        1,
+        3
+      ],
+      "degree": 4,
+      "momentum": -1.5795966455630346
+    },
+    {
+      "net_valley_creation": [
+        2,
+        -1
+      ],
+      "degree": 3,
+      "momentum": 1.5839968049470672
+    },
+    {
+      "net_valley_creation": [
+        -1,
+        3
+      ],
+      "degree": 4,
+      "momentum": -1.588396964331142
+    },
+    {
+      "net_valley_creation": [
+        3,
+        0
+      ],
+      "degree": 3,
+      "momentum": -3.1283921754376323
+    },
+    {
+      "net_valley_creation": [
+        0,
+        2
+      ],
+      "degree": 2,
+      "momentum": 3.1327923348216657
+    },
+    {
+      "net_valley_creation": [
+        1,
+        0
+      ],
+      "degree": 1,
+      "momentum": -3.1371924942057396
+    },
+    {
+      "net_valley_creation": [
+        2,
+        2
+      ],
+      "degree": 4,
+      "momentum": 3.141592653589772
+    }
+  ],
+  "sixth_detuning_checks": [
+    {
+      "q": 1,
+      "L": 10,
+      "sixth_error": 1.554312234475219e-14
+    },
+    {
+      "q": 1,
+      "L": 12,
+      "sixth_error": 1.4210854715202004e-14
+    },
+    {
+      "q": 1,
+      "L": 13,
+      "sixth_error": 2.4868995751603507e-14
+    },
+    {
+      "q": 3,
+      "L": 10,
+      "sixth_error": 3.552713678800501e-14
+    },
+    {
+      "q": 3,
+      "L": 12,
+      "sixth_error": 5.684341886080802e-14
+    },
+    {
+      "q": 3,
+      "L": 13,
+      "sixth_error": 4.263256414560601e-14
+    }
+  ],
+  "runtime_seconds": 4.148142099380493
+}

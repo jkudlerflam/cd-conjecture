@@ -15,7 +15,7 @@ sys.path.insert(0,str(ROOT/'contrib/qubit_cancellation_classification_20261116')
 import algebra as A
 
 
-def series(L,q,alpha=0j,beta=0j,order=7):
+def series(L,q,alpha=0j,beta=0j,order=7,tau=0j,mu6=0.):
     d=1<<L;I=sparse.eye(d,format='csr',dtype=complex)
     zero=lambda:sparse.csr_matrix((d,d),dtype=complex)
     u6=50 if q==1 else 332/3;t6=-24 if q==1 else -80;c6=2 if q==1 else 18
@@ -23,7 +23,7 @@ def series(L,q,alpha=0j,beta=0j,order=7):
        A.chain(L,A.bond(u=2,t=-1,p=q)),A.chain(L,A.bond(p=alpha)),
        A.chain(L,A.bond(u=-(4+4*q+2*q*q),t=2+2*q,p=beta))+L*q*q*I,
        A.chain(L,A.bond(u=-(4+4*q)*np.real(alpha),t=2*np.real(alpha)))+2*L*q*np.real(alpha)*I,
-       A.chain(L,A.bond(u=u6-2*abs(alpha)**2-(4+4*q)*np.real(beta),t=t6+2*np.real(beta)))
+       A.chain(L,A.bond(u=u6-mu6-2*abs(alpha)**2-(4+4*q)*np.real(beta),t=t6+2*np.real(beta)+tau))
             +L*(abs(alpha)**2+2*q*np.real(beta)-c6)*I]
     H += [zero() for _ in range(order-6)]
     P=A.projectors(L);S=A.schur_series(H,P)

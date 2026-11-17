@@ -73,6 +73,15 @@ These are spelled out in [CONTRIBUTING.md](CONTRIBUTING.md). In brief, tag every
 
 ## Where things stand
 
+**Resonant qubit detunings (2026-11-16):** The
+[many-body and scattering analysis](contrib/qubit_resonant_liquids_20261116/README.md)
+shows that the exceptional leading models sit at ferromagnetic density
+thresholds. Their natural pair-amplitude detuning also creates particles
+and retains a positive parent structure; treating it as repulsion alone
+is incorrect. A separate hopping detuning mixes residue sectors and
+passes the stated few-particle tests. An explicit fixed microscopic test
+point is supplied, but its interacting infrared phase remains unverified.
+
 **Coordinated follow-up (2026-11-16):** An
 [independent effective-model check](contrib/research_coordination_20261116/README.md)
 shows that the new three-/four-valley qubit branches, at their specified
