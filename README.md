@@ -73,6 +73,17 @@ These are spelled out in [CONTRIBUTING.md](CONTRIBUTING.md). In brief, tag every
 
 ## Where things stand
 
+**Qubit cancellation classification (2026-11-16):** The
+[new perturbative classification](contrib/qubit_cancellation_classification_20261116/README.md)
+identifies both dilute and dense classical cancellation branches, gives
+their complete fourth-order operators, and finds a sixth-order obstruction
+to scalar cancellation on the dense branch. Two exceptional dilute paths
+produce distance-four and distance-three hopping; the earlier parent paths
+instead extend the blockade through distance eight. Exact symbolic and
+full-sector finite-ring checks are supplied. Neither a two-valley argument
+nor parent tangency proves a finite bound on total interacting c; universal
+local boundedness remains open.
+
 **Frozen d=20 defect stability (2026-11-16):** An
 [exact cutting comparison](contrib/small_d_defect_stability_20261116/README.md)
 now selects the all-length-n ground sectors at strictly nonzero port

@@ -10,6 +10,7 @@ from pathlib import Path
 
 import numpy as np
 import sympy as sp
+from scipy import sparse
 
 from algebra import bond, chain, occupations, projectors
 
@@ -134,6 +135,14 @@ def dense_sixth_exact(L,which):
         cone=sp.groebner([r*r+s*s-3*((x-1)**2+y*y)],r,s,x,y,domain=sp.QQ)
         assert cone.reduce(sp.expand(sp.re(gamma-expected_gamma)))[1]==0
         assert cone.reduce(sp.expand(sp.im(gamma-expected_gamma)))[1]==0
+        from check import conversion
+        raising=exact(sparse.csr_matrix(conversion(L,np.array(words),1)))
+        phase=exact(sparse.csr_matrix(conversion(L,np.array(words),1j)))
+        difference=expand(K[3]-sp.re(expected_gamma).expand(complex=True)*raising
+                          -sp.im(expected_gamma).expand(complex=True)*phase)
+        for value in difference.todok().values():
+            assert cone.reduce(sp.expand(sp.re(value)))[1]==0
+            assert cone.reduce(sp.expand(sp.im(value)))[1]==0
         ideal=sp.groebner([y*y+x*x-3*x,r*r-(3-x)*(x+1),s*s-x*(x+1),
                            x*r+y*s,(3-x)*s+y*r],r,s,y,x,domain=sp.QQ)
         expected=(15*x*x+4*x-3)/16+sp.I*(5*x-1)*s/4
@@ -142,15 +151,35 @@ def dense_sixth_exact(L,which):
         assert sp.simplify(actual.subs({x:1,y:0,r:0,s:0})+sp.Rational(1,2))==0
         return {'L':L,'case':'generic','fifth_conversion':str(gamma),
                 'sixth_witness_unrestricted':str(sp.expand(actual)),
-                'circle_reduced_witness':str(expected),'exact_polynomial_reductions_pass':True}
+                'circle_reduced_witness':str(expected),'exact_polynomial_reductions_pass':True,
+                'entire_fifth_operator_checked':True}
     expected=-sp.Rational(1,2) if which=='isolated' else ((15*x*x+4*x-3)/16+sp.I*(5*x-1)*sp.im(f)/4)
     assert sp.simplify(actual-expected)==0
     return {'L':L,'case':which,'sixth_witness':str(actual),'all_lower_coefficients_exactly_zero':True}
 
 
+def dilute_sixth_exact(L,q):
+    from check_dilute_sixth import local_sixth
+    dim=1<<L
+    H=[exact(chain(L,bond(v=1))),exact(chain(L,bond(a=1,b=-1))),
+       exact(chain(L,bond(u=2,t=-1,p=q))),sp.zeros(dim),
+       exact(chain(L,bond(u=-(4+4*q+2*q*q),t=2+2*q)))+L*q*q*sp.eye(dim),
+       sp.zeros(dim),sp.zeros(dim)]
+    P=list(map(int,projectors(L)));S=schur(H,P)
+    keep2=[i for i in range(len(P)) if S[2][i,i]==0]
+    K=schur(S[2:],keep2)
+    keep4=[i for i in range(len(keep2)) if K[2][i,i]==0]
+    last=schur(K[2:],keep4);words=[P[keep2[j]] for j in keep4]
+    assert zero(last[0]) and zero(last[1])
+    expected=exact(sparse.csr_matrix(local_sixth(L,np.array(words),q)))
+    assert zero(last[2]-expected)
+    return {'L':L,'q':q,'dimension':len(words),'sixth_full_matrix_exact':True}
+
+
 def main():
     parser=argparse.ArgumentParser();parser.add_argument('--sixth',action='store_true')
     parser.add_argument('--generic-sixth',action='store_true')
+    parser.add_argument('--dilute-sixth',action='store_true')
     args=parser.parse_args();start=time.perf_counter()
     rows=[]
     for dense in (False,True):
@@ -161,7 +190,12 @@ def main():
             six.append(dense_sixth_exact(9,which));print(six[-1],flush=True)
     if args.generic_sixth:
         six.append(dense_sixth_exact(9,'generic'));print(six[-1],flush=True)
+    dilute=[]
+    if args.dilute_sixth:
+        for q in (0,-1,1,3):
+            dilute.append(dilute_sixth_exact(10,q));print(dilute[-1],flush=True)
     out={'sympy_version':sp.__version__,'fourth_order':rows,'sixth_order':six,
+         'dilute_sixth_order':dilute,
          'runtime_seconds':time.perf_counter()-start}
     Path(__file__).with_name('symbolic_results.json').write_text(json.dumps(out,indent=2)+'\n')
 

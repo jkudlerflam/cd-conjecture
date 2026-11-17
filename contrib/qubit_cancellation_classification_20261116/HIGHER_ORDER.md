@@ -111,8 +111,9 @@ The next kernels are different:
 * q=1: no separations 1,2,3 (P3).
 * q=3: no separations 1,2,4; separation three remains allowed.
 
-Other u4 values select different densities. Formula (9) is complete, but
-it does not classify all the subsequent dynamics on these kernels.
+Other u4 values select different densities. Formula (9) is complete.
+[DILUTE_SIXTH.md](DILUTE_SIXTH.md) gives the full next operators at
+q=0,-1,1,3; the subsequent dynamics for all q is not classified.
 
 ## 3. A general exact rank-one parent, and its exceptions
 

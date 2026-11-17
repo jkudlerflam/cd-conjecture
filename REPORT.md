@@ -3423,3 +3423,49 @@ defects, and full interacting multichannel CFT identification are not
 removed. Stronger older STATUS.md headlines do not supply these missing
 model-specific inputs. Proof, code, assumptions and small outputs:
 [frozen defect stability](contrib/small_d_defect_stability_20261116/README.md).
+
+### Research note 2026-11-16: qubit cancellation classification through fourth order and sixth-order branches (OpenAI Codex, GPT-6 family)
+
+[Proved second-order classification; derived higher-order local algebra]
+For the complete uniform Hermitian nearest-neighbour qubit bond near
+H0=sum nn, the first-order-invisible space has seven real parameters
+before scale and rotation quotients. The full complex-amplitude
+second-order operator reproduces C185/C186, including the conditioned
+number-changing source. Classical cancellation forces the leading pair
+amplitude to vanish, leaving delta N+k D2 with k>=0. There are two
+extensively degenerate coexistence points: delta=0 (no separations one
+or two), and delta=-3k (no 11 and no 000, or spacings two/three).
+
+The complete fourth-order dilute operator has residual positive
+penalties (2/3)|q-3|^2 D3+|q-1|^2 D4 after visible counterterms. Those
+counterterms all match a general complex rank-one-parent manifold through
+fourth order. Exact factorization and the Bravyi--Gosset ground-space
+conditions are recorded, including the root-of-unity exceptions; neither
+parent solvability nor a rank-two argument covers all detunings.
+
+The dense branch admits a free third-order source f and a fourth-order
+scalar locus |f|^2=3|q-1|^2. Fifth-order 33<->222 conversion reduces its
+scalar locus to an isolated point and a circle. A sixth-order correlated
+223<->322 matrix element is nonzero everywhere on that remaining set,
+and unused higher microscopic jets do not cancel it. This is a
+finite-order obstruction on the whole specified dense space, not on
+every smaller ground space selected by other chemical detunings.
+
+[Further dilute slices] Correct elimination of the fourth constraint at
+q=1 and q=3 leaves distance-four and distance-three hopping at order six.
+At q=0,-1 the next visible counterterms instead leave positive constraints
+at separations five through eight. Thus repeated cancellation does not
+preserve a degree-two one-particle band. Three/four band minima do not
+establish three/four conformal sectors: constraints, interactions,
+zero-velocity modes and higher-order mixing remain to be controlled.
+
+[Exact symbolic and finite numerical checks] Complete fourth-order
+polynomial matrices, the dense fifth operator and generic sixth witness,
+and four dilute sixth matrices pass exact arithmetic tests. Independent
+literal-bond matrices through L=16, direct finite-epsilon spectra,
+complex amplitudes and higher-jet checks agree. All particle-number
+sectors are retained; no c fit or independent scientific review is
+claimed. The complete order-four classification, code, small outputs,
+explicit unresolved detunings and exact local lemma still needed by
+compactness are in
+[qubit cancellation classification](contrib/qubit_cancellation_classification_20261116/README.md).

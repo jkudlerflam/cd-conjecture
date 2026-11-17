@@ -44,6 +44,15 @@ remaining locus. The precise scope and verification status of this
 finite-order obstruction, including higher microscopic jets, are in
 [HIGHER_ORDER.md](HIGHER_ORDER.md).
 
+**[Derived sixth-order slices; exact and numerical full-matrix checks]**
+The dilute exceptional values q=1 and q=3 generate distance-four and
+distance-three hopping after the correct further projection. At q=0,-1,
+the next tuned constraint excludes separations through eight. The complete
+sixth operators on these four slices, their relation to transfer-matrix
+resonances, and the limits of a valley argument are in
+[DILUTE_SIXTH.md](DILUTE_SIXTH.md). In particular, degree two is not a
+permanent ceiling on the effective one-particle band after further tuning.
+
 ## Status and limitations
 
 This is a cancellation classification at stated perturbative orders, not
@@ -71,12 +80,32 @@ it does not import the C185/C186 or earlier nested-cancellation code.
 The first two orders reproduce and extend the interpretation of C185/C186;
 their general second-order formula is prior work, not a new discovery here.
 
-Run `check.py` for full-sector finite-ring comparisons, direct small-epsilon
-spectra, the first-order kernel, and exact-parent identities. Run
-`symbolic_check.py` for exact arithmetic checks. Dependencies and recorded
-runtimes are given in `requirements.txt` and the corresponding small JSON
-outputs. These checks are distinct implementations within this contribution,
-not independent scientific review.
+From the repository root, with the dependencies in `requirements.txt`:
+
+```bash
+python3 contrib/qubit_cancellation_classification_20261116/check.py
+python3 contrib/qubit_cancellation_classification_20261116/symbolic_check.py --sixth --generic-sixth --dilute-sixth
+python3 contrib/qubit_cancellation_classification_20261116/check_dilute_sixth.py
+python3 contrib/qubit_cancellation_classification_20261116/check_jets.py
+```
+
+The recorded runtimes are approximately 33, 74, 72, and 2 seconds,
+respectively, with one BLAS thread on this machine. They write
+`checks.json`, `symbolic_results.json`, `dilute_sixth_results.json`, and
+`jet_results.json`. The largest ring has L=16. No raw eigenvector arrays
+are committed.
+
+There are 18 general complex second-order comparisons, 30 fourth-order
+comparisons, 16 dense fifth-order comparisons, 40 dense sixth-order
+witness comparisons, 24 complete dilute sixth-order comparisons, 20
+higher-jet checks, and 80 exact-parent bond checks. Symbolic tests verify
+the full fourth-order matrices with free complex amplitudes, the full
+dense fifth operator on its cone, the generic sixth witness after exact
+polynomial reduction, and all four dilute sixth matrices with rational
+arithmetic. The largest numerical identity error is below 1e-10.
+Direct spin-chain diagonalization separately checks the leading fifth-
+and sixth-order scaling on finite rings. These are distinct implementations
+within this contribution, not independent scientific review.
 
 ## Relation to the project
 

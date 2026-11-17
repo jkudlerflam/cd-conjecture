@@ -1,0 +1,381 @@
+{
+  "full_matrix_checks": [
+    {
+      "L": 10,
+      "q": 0,
+      "dimension": 16,
+      "fifth_order_norm": 0.0,
+      "sixth_full_matrix_error": 1.0658141036401503e-14
+    },
+    {
+      "L": 10,
+      "q": -1,
+      "dimension": 16,
+      "fifth_order_norm": 0.0,
+      "sixth_full_matrix_error": 2.842170943040401e-14
+    },
+    {
+      "L": 10,
+      "q": 1,
+      "dimension": 26,
+      "fifth_order_norm": 0.0,
+      "sixth_full_matrix_error": 1.4210854715202004e-14
+    },
+    {
+      "L": 10,
+      "q": 3,
+      "dimension": 26,
+      "fifth_order_norm": 0.0,
+      "sixth_full_matrix_error": 4.263256414560601e-14
+    },
+    {
+      "L": 11,
+      "q": 0,
+      "dimension": 23,
+      "fifth_order_norm": 0.0,
+      "sixth_full_matrix_error": 1.0658141036401503e-14
+    },
+    {
+      "L": 11,
+      "q": -1,
+      "dimension": 23,
+      "fifth_order_norm": 0.0,
+      "sixth_full_matrix_error": 2.842170943040401e-14
+    },
+    {
+      "L": 11,
+      "q": 1,
+      "dimension": 34,
+      "fifth_order_norm": 0.0,
+      "sixth_full_matrix_error": 1.4210854715202004e-14
+    },
+    {
+      "L": 11,
+      "q": 3,
+      "dimension": 45,
+      "fifth_order_norm": 0.0,
+      "sixth_full_matrix_error": 5.684341886080802e-14
+    },
+    {
+      "L": 12,
+      "q": 0,
+      "dimension": 31,
+      "fifth_order_norm": 0.0,
+      "sixth_full_matrix_error": 1.0658141036401503e-14
+    },
+    {
+      "L": 12,
+      "q": -1,
+      "dimension": 31,
+      "fifth_order_norm": 0.0,
+      "sixth_full_matrix_error": 2.842170943040401e-14
+    },
+    {
+      "L": 12,
+      "q": 1,
+      "dimension": 47,
+      "fifth_order_norm": 0.0,
+      "sixth_full_matrix_error": 2.842170943040401e-14
+    },
+    {
+      "L": 12,
+      "q": 3,
+      "dimension": 58,
+      "fifth_order_norm": 0.0,
+      "sixth_full_matrix_error": 5.684341886080802e-14
+    },
+    {
+      "L": 13,
+      "q": 0,
+      "dimension": 40,
+      "fifth_order_norm": 0.0,
+      "sixth_full_matrix_error": 1.0658141036401503e-14
+    },
+    {
+      "L": 13,
+      "q": -1,
+      "dimension": 40,
+      "fifth_order_norm": 0.0,
+      "sixth_full_matrix_error": 1.4210854715202004e-14
+    },
+    {
+      "L": 13,
+      "q": 1,
+      "dimension": 66,
+      "fifth_order_norm": 0.0,
+      "sixth_full_matrix_error": 2.842170943040401e-14
+    },
+    {
+      "L": 13,
+      "q": 3,
+      "dimension": 79,
+      "fifth_order_norm": 0.0,
+      "sixth_full_matrix_error": 5.684341886080802e-14
+    },
+    {
+      "L": 15,
+      "q": 0,
+      "dimension": 66,
+      "fifth_order_norm": 0.0,
+      "sixth_full_matrix_error": 1.0658141036401503e-14
+    },
+    {
+      "L": 15,
+      "q": -1,
+      "dimension": 66,
+      "fifth_order_norm": 0.0,
+      "sixth_full_matrix_error": 2.842170943040401e-14
+    },
+    {
+      "L": 15,
+      "q": 1,
+      "dimension": 126,
+      "fifth_order_norm": 0.0,
+      "sixth_full_matrix_error": 2.842170943040401e-14
+    },
+    {
+      "L": 15,
+      "q": 3,
+      "dimension": 159,
+      "fifth_order_norm": 0.0,
+      "sixth_full_matrix_error": 5.684341886080802e-14
+    },
+    {
+      "L": 16,
+      "q": 0,
+      "dimension": 89,
+      "fifth_order_norm": 0.0,
+      "sixth_full_matrix_error": 1.0658141036401503e-14
+    },
+    {
+      "L": 16,
+      "q": -1,
+      "dimension": 89,
+      "fifth_order_norm": 0.0,
+      "sixth_full_matrix_error": 2.842170943040401e-14
+    },
+    {
+      "L": 16,
+      "q": 1,
+      "dimension": 173,
+      "fifth_order_norm": 0.0,
+      "sixth_full_matrix_error": 2.842170943040401e-14
+    },
+    {
+      "L": 16,
+      "q": 3,
+      "dimension": 225,
+      "fifth_order_norm": 0.0,
+      "sixth_full_matrix_error": 1.1368683772161603e-13
+    }
+  ],
+  "direct_spectra": [
+    {
+      "L": 10,
+      "q": 1,
+      "rows": [
+        {
+          "epsilon": 0.075,
+          "error_over_epsilon6": 2.2547866502175786,
+          "min_overlap": 0.9743983335615208,
+          "band_gap_over_epsilon4": 1.846638797877815
+        },
+        {
+          "epsilon": 0.05,
+          "error_over_epsilon6": 1.4419812654144464,
+          "min_overlap": 0.9900040658931147,
+          "band_gap_over_epsilon4": 2.2934904014835027
+        },
+        {
+          "epsilon": 0.035,
+          "error_over_epsilon6": 0.9939337031120596,
+          "min_overlap": 0.9951020328824592,
+          "band_gap_over_epsilon4": 2.481259716768886
+        },
+        {
+          "epsilon": 0.025,
+          "error_over_epsilon6": 0.7050055616557692,
+          "min_overlap": 0.9975006540226176,
+          "band_gap_over_epsilon4": 2.571449156198601
+        }
+      ]
+    },
+    {
+      "L": 10,
+      "q": 3,
+      "rows": [
+        {
+          "epsilon": 0.075,
+          "error_over_epsilon6": 49.83470898639439,
+          "min_overlap": 0.9071069882081184,
+          "band_gap_over_epsilon4": 0.06993658763974632
+        },
+        {
+          "epsilon": 0.05,
+          "error_over_epsilon6": 23.867628946455426,
+          "min_overlap": 0.9776301120934368,
+          "band_gap_over_epsilon4": 2.168721516713314
+        },
+        {
+          "epsilon": 0.035,
+          "error_over_epsilon6": 11.964814573920002,
+          "min_overlap": 0.9916744267477748,
+          "band_gap_over_epsilon4": 3.087246697219304
+        },
+        {
+          "epsilon": 0.025,
+          "error_over_epsilon6": 6.157939793040875,
+          "min_overlap": 0.9964230252471579,
+          "band_gap_over_epsilon4": 3.5306249393738036
+        }
+      ]
+    }
+  ],
+  "generic_diagnostics": [
+    {
+      "L": 12,
+      "q": [
+        0.0,
+        1.0
+      ],
+      "dimension": 31,
+      "fifth_order_norm": 0.0,
+      "number_changing_sixth_norm": 0.0,
+      "one_particle_hops": {
+        "1": [
+          12.0,
+          -8.881784197001252e-16
+        ],
+        "2": [
+          0.0,
+          0.0
+        ],
+        "3": [
+          0.0,
+          -8.88178419700126e-17
+        ],
+        "4": [
+          0.0,
+          0.0
+        ],
+        "5": [
+          0.0,
+          0.0
+        ],
+        "6": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "L": 13,
+      "q": [
+        0.0,
+        1.0
+      ],
+      "dimension": 40,
+      "fifth_order_norm": 0.0,
+      "number_changing_sixth_norm": 0.0,
+      "one_particle_hops": {
+        "1": [
+          12.0,
+          -8.881784197001252e-16
+        ],
+        "2": [
+          0.0,
+          0.0
+        ],
+        "3": [
+          0.0,
+          -8.88178419700126e-17
+        ],
+        "4": [
+          0.0,
+          0.0
+        ],
+        "5": [
+          0.0,
+          0.0
+        ],
+        "6": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "L": 12,
+      "q": [
+        0.5,
+        1.0
+      ],
+      "dimension": 31,
+      "fifth_order_norm": 0.0,
+      "number_changing_sixth_norm": 0.0,
+      "one_particle_hops": {
+        "1": [
+          18.999999999999993,
+          -8.881784197001252e-16
+        ],
+        "2": [
+          -8.881784197001252e-16,
+          4.440892098500626e-16
+        ],
+        "3": [
+          -2.6645352591003757e-15,
+          -2.2714907860146895e-16
+        ],
+        "4": [
+          -5.773159728050814e-15,
+          1.457167719820518e-16
+        ],
+        "5": [
+          0.0,
+          0.0
+        ],
+        "6": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "L": 13,
+      "q": [
+        0.5,
+        1.0
+      ],
+      "dimension": 40,
+      "fifth_order_norm": 0.0,
+      "number_changing_sixth_norm": 0.0,
+      "one_particle_hops": {
+        "1": [
+          18.999999999999993,
+          -8.881784197001252e-16
+        ],
+        "2": [
+          -8.881784197001252e-16,
+          4.440892098500626e-16
+        ],
+        "3": [
+          -2.6645352591003757e-15,
+          -2.2714907860146895e-16
+        ],
+        "4": [
+          -5.773159728050814e-15,
+          1.457167719820518e-16
+        ],
+        "5": [
+          0.0,
+          0.0
+        ],
+        "6": [
+          0.0,
+          0.0
+        ]
+      }
+    }
+  ],
+  "runtime_seconds": 71.70510545899924
+}
