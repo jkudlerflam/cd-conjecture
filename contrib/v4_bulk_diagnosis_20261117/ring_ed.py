@@ -54,6 +54,11 @@ def run(L,P):
     v=vec[:,0];prob=abs(v)**2;dens=bits@prob;raw_n=(bits*prob)@bits.T
     out=dict(L=L,P=P,boundary='periodic',energies=vals.tolist(),gaps_within_parity=(vals-vals[0]).tolist(),
         residuals=residual,density=restored(raw_n,dens))
+    full=np.zeros(2**L,dtype=complex);full[states]=v;entropy=[]
+    for cut in range(1,L):
+        prob=np.linalg.svd(full.reshape(2**cut,2**(L-cut)),compute_uv=False)**2
+        prob=prob[prob>1e-15];entropy.append(float(-np.sum(prob*np.log(prob))))
+    out['S']=entropy
     for name in ('bond','kinetic'):
         vv=[]
         for d,a,dest in terms:

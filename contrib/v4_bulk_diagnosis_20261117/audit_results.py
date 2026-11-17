@@ -9,7 +9,7 @@ from phase_common import HERE,ROOT,write_json
 
 
 def main():
-    checks=[];runs=[];running=[]
+    checks=[];runs=[];running=[];channel_checks=[]
     with threadpool_limits(limits=1):
         for p in sorted((HERE/'observations').glob('*.json')):
             d=json.loads(p.read_text());ops=d['operators'];dens=np.array(ops['density']['profile'])
@@ -37,6 +37,16 @@ def main():
             if 'parity' in d:assert abs(d['parity']-(1-2*d['P']))<1e-8
             checks.append(dict(file=str(p.relative_to(HERE)),energy_contraction_error=ee,operators=errors,pair_subtraction_error=pc,
                 sha256=hashlib.sha256(p.read_bytes()).hexdigest()))
+        for p in sorted((HERE/'channels').glob('*.json')):
+            d=json.loads(p.read_text());ids=d['indices'];m=np.array(d['profile'])[ids]
+            raw=np.array(d['raw']);C=np.array(d['connected']);M=len(ids)
+            ce=float(np.max(abs(raw-np.outer(m,m)-C)));ev=float(np.min(np.linalg.eigvalsh(C)))
+            assert ce<1e-10 and ev>-1e-8 and np.max(abs(C-C.T))<1e-10
+            assert abs(C.sum()/M**2-d['half']['S_zero_over_M'])<1e-10
+            assert abs(raw.sum()/M**2-d['half']['uniform_order_weight'])<1e-10
+            ref=json.loads((HERE/'observations'/p.name).read_text());assert (d['L'],d['P'])==(ref['L'],ref['P'])
+            channel_checks.append(dict(file=str(p.relative_to(HERE)),covariance_identity_error=ce,
+                minimum_covariance_eigenvalue=ev,sha256=hashlib.sha256(p.read_bytes()).hexdigest()))
         for p in sorted((HERE/'outputs').glob('*.json')):
             d=json.loads(p.read_text());assert d['cfg']==json.loads((HERE/'configs'/(p.stem+'.json')).read_text())
             if d['status']=='done':runs.append(dict(tag=p.stem,sweeps=len(d['hist']),sweep_seconds=sum(r['t'] for r in d['hist']),
@@ -46,13 +56,14 @@ def main():
     for p in HERE.glob('*.py'):ast.parse(p.read_text())
     files=[p for p in HERE.rglob('*') if p.is_file() and not any(x in p.parts for x in ('runtime','__pycache__'))]
     assert max(p.stat().st_size for p in files)<50_000_000
-    out=dict(checked_observations=len(checks),checks=checks,completed_runs=runs,running=running,
+    out=dict(checked_observations=len(checks),checks=checks,channel_checks=channel_checks,completed_runs=runs,running=running,
         versions=dict(python=platform.python_version(),numpy=np.__version__,scipy=scipy.__version__),
         completed_sweep_seconds=sum(r['sweep_seconds'] for r in runs),
         maximum_completed_RSS_GB=max((r['peak_RSS_GB'] for r in runs),default=0),
         source_hashes={str(p.relative_to(ROOT)):hashlib.sha256(p.read_bytes()).hexdigest() for p in scripts},
         scope='Internal consistency and local numerical checks, not a ground-state or CFT certification.')
     write_json(HERE/'audit_results.json',out)
+    (HERE/'completed_configs.txt').write_text(''.join('configs/'+r['tag']+'.json\n' for r in runs))
     print('Passed',len(checks),'observation checks;',len(runs),'completed production runs; running',running)
 
 

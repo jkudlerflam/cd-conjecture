@@ -40,6 +40,12 @@ def main():
                 C,N=free_correlation(L,legs);n=np.diag(C);conn=np.diag(n)-abs(C)**2
                 row=dict(kind=f'exact_XX_{legs}_leg',L=L,N=N,mu=float(-2*np.cos(np.pi*.296)),
                     density=spectral_metrics(n,conn[np.ix_(ids,ids)],ids))
+                entropy=[]
+                for cut in range(1,L):
+                    ev=np.clip(np.linalg.eigvalsh(C[:cut,:cut]),1e-15,1-1e-15)
+                    entropy.append(float(-np.sum(ev*np.log(ev)+(1-ev)*np.log1p(-ev))))
+                row['S']=entropy;row['Sbar']={str(w):Z.sbar(entropy,L,w) for w in (1,6,12)}
+                assert max(abs(np.array(entropy)-np.array(entropy)[::-1]))<1e-9
                 if legs==1:
                     bids=list(range(L//4,3*L//4-1));Q=np.eye(L)-C
                     means=[-2*C[j,j+1] for j in range(L-1)]

@@ -51,6 +51,38 @@ def common_q(d,q,name):
     return dict(q=q,S_connected=sc,S_disconnected=sd,connected_over_M=sc/M,disconnected_over_M=sd/M,total_over_M=(sc+sd)/M)
 
 
+def supplementary(root,original,obs):
+    channels=[];pairing=[];rings=[];controls=[]
+    for r in original:
+        key=r['file'].split('/')[-1];d=obs[key];M=d['operators']['density']['half']['M']
+        anchors=[]
+        for a in d['pair']:
+            selected=[c for c in a['correlations'] if M/3<=c['j']-a['i']<=M/2]
+            anchors.append(dict(i=a['i'],count=len(selected),**{name+'_RMS':
+                float(np.sqrt(np.mean([abs(complex(*c[name]))**2 for c in selected])))
+                for name in ('raw','disconnected','connected')}))
+        pairing.append(dict(tag=r['tag'],L=r['L'],P=r['P'],chi=r['chi'],anchors=anchors,
+            scope='Exploratory RMS at separations M/3 through M/2; explicit pair source means raw pair weight alone does not diagnose spontaneous order.'))
+        p=root/'channels'/key
+        if p.exists():
+            c=json.loads(p.read_text())
+            channels.append(dict(tag=r['tag'],L=r['L'],P=r['P'],chi=r['chi'],windows={w:
+                {k:c[w][k] for k in ('M','mean','RMS','S_zero_over_M','uniform_order_weight','connected_peak_including_zero')}
+                for w in ('half','quarter')}))
+    for p in sorted((root/'periodic').glob('*.json')):
+        d=json.loads(p.read_text());rings.append(dict(L=d['L'],P=d['P'],energies=d['energies'],
+            gaps_within_parity=d['gaps_within_parity'],momenta=d['momentum_if_translation_eigenstate'],
+            peaks={k:d[k]['peak'] for k in ('density','bond','kinetic','valley_bond')},
+            valley_uniform_order_weight=d['valley_bond']['uniform_order_weight'],
+            runtime_seconds=d['runtime_seconds'],peak_RSS_GB=d['peak_RSS_GB']))
+    p=root/'controls.json'
+    if p.exists():
+        for d in json.loads(p.read_text())['rows']:
+            controls.append(dict(kind=d['kind'],L=d['L'],density={k:d['density'][k]
+                for k in ('RMS','profile_peak','connected_peak')}))
+    return dict(secondary_valley_channel=channels,pairing=pairing,periodic=rings,exact_controls=controls)
+
+
 def main(root=HERE):
     obs={};rows=[];numerics=[]
     for p in sorted((root/'observations').glob('*.json')):
@@ -121,6 +153,7 @@ def main(root=HERE):
         numerical_gates=numerics,accuracy_comparisons=cmp,best_original_states=original,
         common_wavevector_reference=ref['tag'],common_wavevectors=fixedq,common_q_comparisons=fixed,
         independent_start=start,size_comparisons=size_pairs,boundary_probe_eligibility=eligibility,
+        supplementary=supplementary(root,original,obs),
         long_distance_scope='Exploratory RMS over separations M/3 through M/2 in the central-half covariance; not an additional registered decision gate.',
         caution='Finite-size diagnostics only; no phase or central charge is assigned by this script.')
     write_json(root/'analysis.json',out)

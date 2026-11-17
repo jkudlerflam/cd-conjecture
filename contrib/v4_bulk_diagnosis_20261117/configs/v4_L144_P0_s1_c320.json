@@ -1,0 +1,20 @@
+{
+  "tag": "v4_L144_P0_s1_c320",
+  "L": 144,
+  "P": 0,
+  "seed": 1,
+  "boundary": "full",
+  "parent_checkpoint": "runtime/v4_L144_P0_s1_chi256.npz",
+  "parent_output": "outputs/v4_L144_P0_s1.json",
+  "parent_observation": "observations/v4_L144_P0_s1_chi256.json",
+  "stages": [
+    {
+      "chi": 320,
+      "min": 3,
+      "max": 6
+    }
+  ],
+  "observe_chi": [
+    320
+  ]
+}

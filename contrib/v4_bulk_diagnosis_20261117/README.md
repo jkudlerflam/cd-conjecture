@@ -37,14 +37,31 @@ one-point modulation. The wavevector's fine grid is not evidence for
 commensurability at that precision; the physical resolution is limited
 by the finite observation window.
 
-At **interim** L=144,chi=192, density RMS is about 0.093 and profile
-amplitude about 0.129 in both sectors, with q near 0.880 pi. Those states
-are still undergoing the registered chi=256 comparison. They are marked
-as interim in `analysis.json`; no bulk-phase conclusion is drawn from
-this stage. The independent L=96 start, periodic spectra, exact controls,
-and secondary XX+YY channel are pending.
+Both L=144,chi=256 runs are now complete. Density RMS is about 0.0923
+and profile amplitude about 0.128 in both sectors, with q near 0.880 pi.
+The entropy chi-step gate fails (0.01894/0.01840), while the other local
+gates pass. The registered chi=320 continuations pass the resource
+benchmark and are pending/in progress, as is the independent L=96 start.
+The current boundary-probe amplitude trigger is not met.
+
+At the user's subsequent request, a **post-hoc** central-charge estimator
+has been added in `entropy_analysis.py`. The lower-variational-energy
+branch gives c_ent=2.818 for L=48 to 96 and 2.454 for L=96 to 144
+using the established W=6 average and 6 delta S/log(size ratio).
+The three-size fit gives 2.698; its geometry-corrected version gives
+2.631. These are finite-size entropy slopes, not an identified
+thermodynamic c or the non-unitary quantity c_eff. The large-size chi
+gate failure and size/window/sector dependence remain explicit.
+
+The same estimator on fixed-parameter exact free controls gives
+0.995 and 1.954 for known c=1 and c=2 at L=96 to 144. The new valley
+channel XX+YY has decreasing uniform normalized weight, about
+0.064--0.065, 0.026, and 0.0157 at L=48,96,144. Small periodic-ring
+spectra and correlations are saved separately; their entropies have
+large size/sector effects and do not determine c.
 
 `audit_results.py` checks covariance identities and positivity, pair
 subtraction/Cauchy bounds and agreement of total energy reconstructed
 from density/bond profiles with the independent energy contraction.
-All eight saved stage/baseline observations pass at this checkpoint.
+The saved stage/baseline observations pass at this checkpoint. Final
+counts and all completed/running tags are recorded in `audit_results.json`.

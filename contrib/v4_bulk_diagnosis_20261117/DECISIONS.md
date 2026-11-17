@@ -37,3 +37,28 @@
    while calibrating a density close to the V=4 state. Known pinned and
    translation-restored Neel examples distinguish disconnected from
    connected ordered weight. No control result is a candidate phase test.
+8. The user subsequently requested a numerical central-charge estimate.
+   Add a clearly post-hoc entropy analysis, without changing the fixed
+   Hamiltonian or registered production cap. Report ground-branch and
+   both fixed-parity size slopes, W=1,6,12 central averages, a common
+   central fraction, and profile-fit sensitivity. Compare the preceding
+   chi stage, and calibrate identical estimators on the exact one-/two-leg
+   controls at the same sizes. Retain raw log(L) and averaged-log-chord
+   versions to expose finite-window geometry effects. Periodic ED entropy
+   is an additional small-size diagnostic, not a conformal-mode test.
+   These finite-size slope estimates are denoted c_ent, not c_eff (which
+   has a separate non-unitary-CFT meaning). No asymptotic c is assigned
+   merely by rounding a fit or by fitting three sizes with three free
+   parameters. The open-boundary coefficient c/6 and periodic coefficient
+   c/3 follow Calabrese and Cardy, hep-th/0405152, equations (1)--(2).
+9. Both completed L=144,chi=256 sectors fail the entropy chi-step gate
+   (0.018942 even, 0.018397 odd) while passing the other local gates.
+   The chi=320 benchmark uses 1.517 GB RSS. Its median fixed-work cost
+   is 2.0565 times chi=256; multiplying the observed chi=256 sweep times
+   gives 473 seconds at the median and 501 seconds at the maximum,
+   within the registered 600-second projection cap. Execute the one
+   permitted chi=320 continuation in each sector, starting the lower
+   energy odd sector first while the independent L=96 run occupies the
+   other worker. No chi above 320 is authorized by this registration.
+   At chi=256 the optional boundary-probe amplitude ratios are only
+   0.813/0.835, so its trigger is currently not met.
