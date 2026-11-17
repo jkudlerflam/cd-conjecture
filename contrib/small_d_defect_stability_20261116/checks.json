@@ -1,0 +1,345 @@
+{
+  "status": "numerical corroboration of the analytical theorem; no CFT claim",
+  "versions": {
+    "python": "3.12.3",
+    "numpy": "2.5.5",
+    "scipy": "1.18.1",
+    "mpmath": "1.4.1"
+  },
+  "selector": [
+    {
+      "q": "0.25",
+      "lengths": 19,
+      "targets": 12,
+      "minimum_auxiliary_gap": "0.56956187529300558362"
+    },
+    {
+      "q": "0.125",
+      "lengths": 19,
+      "targets": 12,
+      "minimum_auxiliary_gap": "0.76908605742670227684"
+    },
+    {
+      "q": "0.03125",
+      "lengths": 19,
+      "targets": 12,
+      "minimum_auxiliary_gap": "0.93933186169433956346"
+    }
+  ],
+  "local": [
+    {
+      "n": 1,
+      "offdiagonal_entries": 128,
+      "individual_marker_and_adjacent_bad_projectors": true,
+      "bond_difference": 0.0,
+      "port_norm": 1.5811388300841898
+    },
+    {
+      "n": 2,
+      "offdiagonal_entries": 128,
+      "individual_marker_and_adjacent_bad_projectors": true,
+      "bond_difference": 0.0,
+      "port_norm": 1.5811388300841898
+    },
+    {
+      "n": 3,
+      "offdiagonal_entries": 128,
+      "individual_marker_and_adjacent_bad_projectors": true,
+      "bond_difference": 0.0,
+      "port_norm": 1.5811388300841898
+    }
+  ],
+  "cells": [
+    {
+      "k": 0,
+      "dimension": 5,
+      "ground_energy": 0.06164053812954773,
+      "expected": 0.06164053812954773,
+      "residual": 0.0
+    },
+    {
+      "k": 1,
+      "dimension": 28,
+      "ground_energy": 0.0026235437546002823,
+      "expected": 0.002623543754600305,
+      "residual": 2.5157228752045e-17
+    },
+    {
+      "k": 2,
+      "dimension": 92,
+      "ground_energy": -0.0006445964028393993,
+      "expected": -0.0006445964028396067,
+      "residual": 3.515511583159736e-16
+    },
+    {
+      "k": 3,
+      "dimension": 256,
+      "ground_energy": -0.0008460493159180777,
+      "expected": -0.0008460493159181984,
+      "residual": 2.0330773133719646e-15
+    },
+    {
+      "k": 4,
+      "dimension": 656,
+      "ground_energy": -0.0008586236727411711,
+      "expected": -0.0008586236727409322,
+      "residual": 3.943078566037941e-15
+    },
+    {
+      "k": 5,
+      "dimension": 1600,
+      "ground_energy": -0.000859409483537607,
+      "expected": -0.0008594094835227146,
+      "residual": 2.189655742272606e-14
+    }
+  ],
+  "all_small_sectors": [
+    {
+      "n": 1,
+      "L": 2,
+      "sectors": 16,
+      "total_dimension": 400,
+      "selected_energy": -0.006966011250105129,
+      "min_comparison_slack": 0.01756523183009695,
+      "min_illegal_slack": 0.01756523183009695,
+      "max_eigenpair_residual": 1.2412670766236366e-16
+    },
+    {
+      "n": 2,
+      "L": 3,
+      "sectors": 64,
+      "total_dimension": 8000,
+      "selected_energy": -0.0006445964028394288,
+      "min_comparison_slack": 0.0015134460048386034,
+      "min_illegal_slack": 0.0015134460048386034,
+      "max_eigenpair_residual": 1.5932023064066904e-12
+    }
+  ],
+  "mixed_rings": [
+    {
+      "n": 1,
+      "L": 4,
+      "pattern": [
+        0,
+        2
+      ],
+      "dimension": 460,
+      "selected_dimension": 784,
+      "field": 3.0740920919924957e-16,
+      "lam": 1.3571023436315256e-05,
+      "energy_difference": 0.05574885418196611,
+      "stronger_comparison_bound": 0.055534277496316106,
+      "slack": 0.0002145766856500031,
+      "residual": 7.344956995110084e-14
+    },
+    {
+      "n": 1,
+      "L": 4,
+      "pattern": [
+        3
+      ],
+      "dimension": 256,
+      "selected_dimension": 784,
+      "field": 3.0740920919924957e-16,
+      "lam": 1.3571023436315256e-05,
+      "energy_difference": 0.003496418183836116,
+      "stronger_comparison_bound": 0.0033891298189909465,
+      "slack": 0.00010728836484516936,
+      "residual": 1.8871507172299205e-14
+    },
+    {
+      "n": 1,
+      "L": 4,
+      "pattern": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "dimension": 625,
+      "selected_dimension": 784,
+      "field": 3.0740920919924957e-16,
+      "lam": 1.3571023436315256e-05,
+      "energy_difference": 0.2221359550038272,
+      "stronger_comparison_bound": 0.22170680155719658,
+      "slack": 0.0004291534466306368,
+      "residual": 1.8871507172299205e-14
+    },
+    {
+      "n": 1,
+      "L": 6,
+      "pattern": [
+        1,
+        0,
+        2
+      ],
+      "dimension": 12880,
+      "selected_dimension": 21952,
+      "field": 3.0740920919924957e-16,
+      "lam": 1.3571023436315256e-05,
+      "energy_difference": 0.05574885418395956,
+      "stronger_comparison_bound": 0.055534277496316106,
+      "slack": 0.0002145766876434571,
+      "residual": 7.137085280060275e-15
+    },
+    {
+      "n": 1,
+      "L": 6,
+      "pattern": [
+        1,
+        3
+      ],
+      "dimension": 7168,
+      "selected_dimension": 21952,
+      "field": 3.0740920919924957e-16,
+      "lam": 1.3571023436315256e-05,
+      "energy_difference": 0.0034964181838500613,
+      "stronger_comparison_bound": 0.0033891298189909465,
+      "slack": 0.0001072883648591148,
+      "residual": 7.137085280060275e-15
+    },
+    {
+      "n": 1,
+      "L": 6,
+      "pattern": [
+        0,
+        4
+      ],
+      "dimension": 3280,
+      "selected_dimension": 21952,
+      "field": 3.0740920919924957e-16,
+      "lam": 1.3571023436315256e-05,
+      "energy_difference": 0.06250083816433724,
+      "stronger_comparison_bound": 0.06228626147651993,
+      "slack": 0.0002145766878173111,
+      "residual": 7.137085280060275e-15
+    },
+    {
+      "n": 1,
+      "L": 6,
+      "pattern": [
+        5
+      ],
+      "dimension": 1600,
+      "selected_dimension": 21952,
+      "field": 3.0740920919924957e-16,
+      "lam": 1.3571023436315256e-05,
+      "energy_difference": 0.010449069268462981,
+      "stronger_comparison_bound": 0.010341780901491583,
+      "slack": 0.00010728836697139824,
+      "residual": 7.137085280060275e-15
+    },
+    {
+      "n": 2,
+      "L": 6,
+      "pattern": [
+        1,
+        3
+      ],
+      "dimension": 7168,
+      "selected_dimension": 8464,
+      "field": 8.08047467317245e-21,
+      "lam": 8.481889647697035e-07,
+      "energy_difference": 0.0030666872443501354,
+      "stronger_comparison_bound": 0.003053276199286051,
+      "slack": 1.3411045064084474e-05,
+      "residual": 4.4987438256498e-15
+    },
+    {
+      "n": 2,
+      "L": 6,
+      "pattern": [
+        0,
+        4
+      ],
+      "dimension": 3280,
+      "selected_dimension": 8464,
+      "field": 8.08047467317245e-21,
+      "lam": 8.481889647697035e-07,
+      "energy_difference": 0.062071107262329006,
+      "stronger_comparison_bound": 0.06205769621741074,
+      "slack": 1.3411044918268389e-05,
+      "residual": 9.740692197722302e-14
+    },
+    {
+      "n": 2,
+      "L": 6,
+      "pattern": [
+        5
+      ],
+      "dimension": 1600,
+      "selected_dimension": 8464,
+      "field": 8.08047467317245e-21,
+      "lam": 8.481889647697035e-07,
+      "energy_difference": 0.0004297833221548901,
+      "stronger_comparison_bound": 0.0004230777996184614,
+      "slack": 6.705522536428702e-06,
+      "residual": 3.874929903429132e-15
+    },
+    {
+      "n": 2,
+      "L": 6,
+      "pattern": [
+        1,
+        1,
+        1
+      ],
+      "dimension": 21952,
+      "selected_dimension": 8464,
+      "field": 8.08047467317245e-21,
+      "lam": 8.481889647697035e-07,
+      "energy_difference": 0.009159824069459279,
+      "stronger_comparison_bound": 0.009139707501867628,
+      "slack": 2.011656759165134e-05,
+      "residual": 8.110483782046932e-15
+    },
+    {
+      "n": 3,
+      "L": 4,
+      "pattern": [
+        0,
+        2
+      ],
+      "dimension": 460,
+      "selected_dimension": 256,
+      "field": 2.184940606047251e-25,
+      "lam": 5.301181029810647e-08,
+      "energy_difference": 0.06263439014040596,
+      "stronger_comparison_bound": 0.06263355195008939,
+      "slack": 8.381903165710636e-07,
+      "residual": 4.796492777179334e-14
+    },
+    {
+      "n": 3,
+      "L": 4,
+      "pattern": [
+        1,
+        1
+      ],
+      "dimension": 784,
+      "selected_dimension": 256,
+      "field": 2.184940606047251e-25,
+      "lam": 5.301181029810647e-08,
+      "energy_difference": 0.006885535922900585,
+      "stronger_comparison_bound": 0.006884697732581879,
+      "slack": 8.381903187056408e-07,
+      "residual": 4.873776446703617e-15
+    }
+  ],
+  "boundary": {
+    "lam": 0.08,
+    "field": 0.003,
+    "B": 0.1264911064067352,
+    "open_energies": {
+      "1": -0.006966011250105018,
+      "2": -0.01400595776070239,
+      "3": -0.021045893459517146
+    },
+    "joining_energy_changes": [
+      7.393526049235405e-05,
+      7.392444870973902e-05
+    ],
+    "status": "Boundary lemma diagnostic; outside defect certificate"
+  },
+  "runtime_seconds": 21.73604130744934
+}

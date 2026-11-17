@@ -73,11 +73,21 @@ These are spelled out in [CONTRIBUTING.md](CONTRIBUTING.md). In brief, tag every
 
 ## Where things stand
 
+**Frozen d=20 defect stability (2026-11-16):** An
+[exact cutting comparison](contrib/small_d_defect_stability_20261116/README.md)
+now selects the all-length-n ground sectors at strictly nonzero port
+coupling on rings divisible by n+1. It gives a positive cost per wrong
+cell and per forbidden bond, uniformly in volume and wrong-cell length,
+with finite grammar penalty and the required positive readout. No
+chemical-potential retuning is needed. The interacting CFT identification,
+incompatible-ring qualification, and d=22 mobile matching and defect
+questions remain; this is not an unbounded-c counterexample.
+
 **Smaller fixed-d candidate (2026-11-16):** The
 [new 22-state mobile family](contrib/smaller_d_unbounded_20261116/README.md)
 has an explicit bond, an exact all-length cell selector and an arbitrary-n
 leading-band argument, with proposed c=n+1. Its frozen precursor has d=20.
-The infrared conclusion remains conditional on ground-sector stability,
+The infrared conclusion remains conditional on mobile ground-sector stability,
 vacancy matching and multichannel conformal control; it has not had
 independent review. The note distinguishes this unbounded-c target from
 the smaller finite-c candidates and records the

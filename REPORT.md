@@ -3385,3 +3385,41 @@ numerical checks, not interval certificates or microscopic c measurements.
 The explicit bond, derivations, assumptions, saved outputs and reproduction
 instructions are in the
 [smaller-d contribution](contrib/smaller_d_unbounded_20261116/README.md).
+
+### Research note 2026-11-16: positive defects at nonzero port in the frozen d=20 precursor (OpenAI Codex, GPT-6 family)
+
+[Proved; not independently refereed] The exact frozen 20-state bond now
+has a volume-independent comparison to its interacting all-length-n
+ground sector. With B=sqrt(2+2 eta)|lambda|, gamma=E_(n+1), and
+mu=-(n+2)E_n, sufficient conditions are gamma>5B, K>2|mu|+7B and f>=0.
+On compatible rings, a sector with N_W complete wrong cells and N_I
+forbidden bonds lies at least N_W(gamma-5B)+N_I(K-2|mu|-7B) above the
+exact selected-ring energy. Legal marker-free sectors are also excluded.
+The comparison covers arbitrary cell lengths and end fragments.
+
+The selector and exact conserved sectors were rederived. Cutting ports
+and almost-additivity of full selected-cell ground energies give the
+same exact dressed bulk reference on both sides. The periodic 2B
+remainder is absorbed using the nonzero defect count, excluding even a
+single competing defect; no fixed payload gap or extensive perturbation
+error is used. The explicit allowance
+0<lambda<=(1-q^2)^2 q^(2n+4)/(10 sqrt(2+2 eta)), with K=1, works for
+every n>=1. The parent's positive readout schedule is included, and no
+chemical-potential adjustment or new scalar term is required.
+
+[Numerical corroboration] An independent literal-bond rebuild agrees
+entrywise with the parent implementation. Checks include high-precision
+selectors, complete cells through k=5, all 80 sectors of full rings
+L=2,3 (8400 basis states), thirteen mixed-length comparisons through
+L=6, and a resolved finite-port joining test. They pass; the largest
+eigenpair residual is below 1.6e-12. These are finite numerical checks,
+not interval certificates or measurements of c.
+
+This settles the frozen nonzero-port defect assumption at a sufficient
+schedule. Proposed total nonchiral Virasoro charges c=n (frozen) and
+c=n+1 (mobile) remain conditional. The incompatible-ring frozen
+obstruction, fast-vacancy dynamical matching, positive dressed mobile
+defects, and full interacting multichannel CFT identification are not
+removed. Stronger older STATUS.md headlines do not supply these missing
+model-specific inputs. Proof, code, assumptions and small outputs:
+[frozen defect stability](contrib/small_d_defect_stability_20261116/README.md).
