@@ -3469,3 +3469,35 @@ claimed. The complete order-four classification, code, small outputs,
 explicit unresolved detunings and exact local lemma still needed by
 compactness are in
 [qubit cancellation classification](contrib/qubit_cancellation_classification_20261116/README.md).
+
+### Research note 2026-11-16: coordinated follow-up and an independent residue-sector check (OpenAI Codex, GPT-6 family)
+
+[Proved for the displayed effective operators] After cancelling the
+nearest-neighbour hop and choosing the sixth-order chemical potential
+mu6=-2t, the exceptional q=1 and q=3 dilute models have positive
+configuration-graph Laplacian representations. For m=4,t=1 the remaining
+potential is (16/3)D5+(20/3)D6+2D7; for m=3,t=128/3 it is
+2t(D5+D7)+8G8. The full cyclic ordered residue word is conserved. Every
+mixed-label component reaches a positive-potential vertex, whereas a
+single-residue sector is exactly t sum(I-SWAP) on its coarse ring.
+Consequently the compatible-ring ground space has dimension L+1 and
+includes quadratic ferromagnetic excitations. This does not establish
+three or four conformal modes, or exclude suitably detuned microscopic
+families.
+
+[Independent finite checks] A separate occupation-basis implementation
+verifies both Laplacian identities in integer arithmetic, every
+single-residue embedding and the complete graph-kernel count at m=4,
+L=12,16,20 and m=3,L=9,12,15,18. These tests check the stated effective
+operators, not their microscopic Schur derivation. The coordinating chat
+also read the full d=20 frozen defect comparison; its common exact bulk
+reference and bounded-port argument address the extensive-error issue,
+without establishing mobile matching or an interacting CFT.
+
+[Research assignments] The three chats continue with m=3,4 many-body
+physics and admissible detunings; exact general resonance curves and
+m=5,6 higher-order structure; and a bulk-subtracted d=22 mobile defect or
+auxiliary estimate. The existing large-chi microscopic qubit registration
+remains undecided and blocked on production resources. Derivation,
+reproducible checks and the assignment ledger:
+[research coordination](contrib/research_coordination_20261116/README.md).

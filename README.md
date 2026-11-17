@@ -73,6 +73,16 @@ These are spelled out in [CONTRIBUTING.md](CONTRIBUTING.md). In brief, tag every
 
 ## Where things stand
 
+**Coordinated follow-up (2026-11-16):** An
+[independent effective-model check](contrib/research_coordination_20261116/README.md)
+shows that the new three-/four-valley qubit branches, at their specified
+sixth-order threshold, are positive configuration-graph Laplacians with
+ferromagnetic single-residue sectors and exactly L+1 ground states on
+compatible rings. Their band minima alone do not supply three or four
+conformal modes. Follow-up work studies admissible detunings, the general
+resonance hierarchy, and mobile matching for the d=22 family. The original
+large-chi qubit convergence test remains blocked on production resources.
+
 **Qubit cancellation classification (2026-11-16):** The
 [new perturbative classification](contrib/qubit_cancellation_classification_20261116/README.md)
 identifies both dilute and dense classical cancellation branches, gives

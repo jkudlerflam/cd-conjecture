@@ -1,0 +1,85 @@
+{
+  "status": "Exact integer identities for the stated finite effective spaces",
+  "microscopic_derivation_checked": false,
+  "conformal_claim": false,
+  "results": [
+    {
+      "period": 4,
+      "length": 12,
+      "full_constrained_dimension": 47,
+      "oriented_hops": 48,
+      "connected_components": 31,
+      "exact_zero_components": 13,
+      "integer_laplacian_identity": true,
+      "ordered_residue_conservation": true,
+      "all_single_residue_swap_identities": true
+    },
+    {
+      "period": 4,
+      "length": 16,
+      "full_constrained_dimension": 173,
+      "oriented_hops": 224,
+      "connected_components": 87,
+      "exact_zero_components": 17,
+      "integer_laplacian_identity": true,
+      "ordered_residue_conservation": true,
+      "all_single_residue_swap_identities": true
+    },
+    {
+      "period": 4,
+      "length": 20,
+      "full_constrained_dimension": 630,
+      "oriented_hops": 1040,
+      "connected_components": 218,
+      "exact_zero_components": 21,
+      "integer_laplacian_identity": true,
+      "ordered_residue_conservation": true,
+      "all_single_residue_swap_identities": true
+    },
+    {
+      "period": 3,
+      "length": 9,
+      "full_constrained_dimension": 22,
+      "oriented_hops": 36,
+      "connected_components": 10,
+      "exact_zero_components": 10,
+      "integer_laplacian_identity": true,
+      "ordered_residue_conservation": true,
+      "all_single_residue_swap_identities": true
+    },
+    {
+      "period": 3,
+      "length": 12,
+      "full_constrained_dimension": 58,
+      "oriented_hops": 96,
+      "connected_components": 25,
+      "exact_zero_components": 13,
+      "integer_laplacian_identity": true,
+      "ordered_residue_conservation": true,
+      "all_single_residue_swap_identities": true
+    },
+    {
+      "period": 3,
+      "length": 15,
+      "full_constrained_dimension": 159,
+      "oriented_hops": 300,
+      "connected_components": 54,
+      "exact_zero_components": 16,
+      "integer_laplacian_identity": true,
+      "ordered_residue_conservation": true,
+      "all_single_residue_swap_identities": true
+    },
+    {
+      "period": 3,
+      "length": 18,
+      "full_constrained_dimension": 442,
+      "oriented_hops": 972,
+      "connected_components": 101,
+      "exact_zero_components": 19,
+      "integer_laplacian_identity": true,
+      "ordered_residue_conservation": true,
+      "all_single_residue_swap_identities": true
+    }
+  ],
+  "runtime_seconds": 1.018960542000059
+}
