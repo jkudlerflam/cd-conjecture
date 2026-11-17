@@ -3502,6 +3502,45 @@ remains undecided and blocked on production resources. Derivation,
 reproducible checks and the assignment ledger:
 [research coordination](contrib/research_coordination_20261116/README.md).
 
+### Research note 2026-11-16: exact all-period qubit parents and the fifth/sixth resonances (OpenAI Codex, GPT-6 family)
+
+[Proved exact-parent results] The rank-one forbidden vector
+`psi=(q r²,-r,r,1)` with `q=tan²(pi/m)` has exact transfer period m for
+every fixed r>0 and every m>=3. Its complete nearest-neighbour physical
+bond, onsite coefficients, scalar shift and telescoping gauge are given
+explicitly. On compatible L=mM rings the exact ground dimension is L+1.
+At fixed L its r->0 limit is the linear span of the vacuum and all
+single-residue Dicke states, not a tensor product of m multiplets. A
+trial state orthogonal to the entire ground space proves
+`gap_L <= 4r²(1+q)sin²(pi/L)` for M>=2. This is an upper bound, not an
+identification of the dynamical exponent. The transfer recurrence and
+the ground-space pole argument hold for all m; they do not establish
+an all-m effective hopping order or a result for normal detunings.
+
+[Exact local algebra; numerical larger-space checks] A generic-q
+nine-site symbolic calculation gives the four sixth-order distance
+penalties through distance eight. At m=5 or 6 only the distance-m
+penalty vanishes. The first retained motion in the complete tested
+spaces is at order eight, with exact minimal-interval hop magnitudes
+`2048/[3(123+55sqrt(5))]` and `832/2187`, respectively. Larger open
+intervals through L=16, including spectators and three particles, and
+compatible periodic rings reproduce those uniform hops and a positive
+graph-Laplacian-plus-potential form. Every tested single-residue block
+is a ferromagnetic SWAP chain; every tested leading kernel has dimension
+L+1. An all-length proof of every eighth-order term is not claimed.
+Displacing q by alpha r within the exact parent adds a density penalty
+and a particle-changing partner whose exact interval coefficients
+complete another rank-one parent; larger whole-matrix checks agree.
+
+These results give arbitrarily large exact resonance periods at local
+dimension two, but not arbitrarily many positive-velocity conformal
+sectors. The exact singular parents have a collective ground-space
+structure and a nonconformal gap upper bound. The phase problem for
+admissible fixed detunings, including particle-changing companions, and
+the uniform local-boundedness lemma required by compactness remain
+open. Proofs, boundary qualifications, exact scripts and small outputs:
+[qubit resonance hierarchy](contrib/qubit_resonance_hierarchy_20261116/README.md).
+
 ### Research note 2026-11-16: resonant qubit scattering and admissible detunings (OpenAI Codex, GPT-6 family)
 
 [Proved for the stated leading models] The q=1,3 exceptional dilute

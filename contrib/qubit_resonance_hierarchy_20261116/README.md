@@ -53,6 +53,11 @@ residue sector. The full tested kernels have dimension L+1.
 
 The finite-order scope, boundary qualifications, normal detunings and
 remaining local-boundedness lemma are recorded in [HIGHER_ORDER.md](HIGHER_ORDER.md).
+An explicit displacement `q=q_m+alpha r` also shows, for m=5,6, that
+the apparent new density repulsion is accompanied by a particle-changing
+term. Their coefficients exactly complete another rank-one coarse
+parent on the small intervals, with whole-matrix agreement on larger
+intervals and compatible rings.
 No all-m formula for the first hopping order is claimed. An exact
 all-m resonance is not yet an all-m construction of positive-velocity
 conformal modes at finite detuning.
@@ -67,7 +72,10 @@ elimination on short open intervals. `sixth_constraints.py` checks the
 complete generic-q sixth-order matrix symbolically on nine sites.
 `check.py` verifies parent
 factorization, transfer periods, ground dimensions, ground-space limits,
-the quadratic variational bound, and larger complete effective matrices.
+the quadratic variational bound, larger complete effective matrices, and
+the sixth constraints with three-particle spectators.
+`resonance_displacement.py` checks the complete displaced-parent interval
+matrix symbolically in alpha and tests larger matrices numerically.
 
 Dependencies: NumPy, SciPy and SymPy, as listed in `requirements.txt`.
 Run from the repository root:
@@ -76,10 +84,11 @@ Run from the repository root:
 python3 contrib/qubit_resonance_hierarchy_20261116/exact_local.py
 python3 contrib/qubit_resonance_hierarchy_20261116/sixth_constraints.py
 python3 contrib/qubit_resonance_hierarchy_20261116/check.py
+python3 contrib/qubit_resonance_hierarchy_20261116/resonance_displacement.py
 ```
 
 The scripts write small JSON files beside themselves, including runtimes:
-about 6, 51 and 34 seconds respectively on this machine with one BLAS thread.
+about 6, 51, 16 and 72 seconds respectively on this machine with one BLAS thread.
 They are distinct algebraic/numerical implementations, not independent
 scientific review. No large eigenvector arrays are committed.
 

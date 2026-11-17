@@ -73,6 +73,16 @@ These are spelled out in [CONTRIBUTING.md](CONTRIBUTING.md). In brief, tag every
 
 ## Where things stand
 
+**Exact qubit resonance hierarchy (2026-11-16):** The
+[all-period parent analysis](contrib/qubit_resonance_hierarchy_20261116/README.md)
+constructs exact nearest-neighbour qubit parents for every resonance
+period m. On compatible rings their ground space has dimension L+1,
+its singular limit is a span of single-residue Dicke multiplets, and
+their gap has an explicit O(L^-2) upper bound. Exact local calculations
+and larger complete-space checks find eighth-order motion at m=5,6.
+These exact parents do not supply m positive-velocity conformal modes;
+the general detuned phase problem and uniform local bound remain open.
+
 **Resonant qubit detunings (2026-11-16):** The
 [many-body and scattering analysis](contrib/qubit_resonant_liquids_20261116/README.md)
 shows that the exceptional leading models sit at ferromagnetic density

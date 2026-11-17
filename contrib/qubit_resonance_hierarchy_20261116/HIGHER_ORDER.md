@@ -29,7 +29,8 @@ w8=(q²-6q+1)²/8.                                        (18)
 
 **Status:** derived local Schur identities, verified as complete symbolic
 matrices on an open nine-site interval; larger full-sector matrices check
-the two resonances with spectators. Equation (18) is not obtained by
+q=0.7,2,4 on 13 sites and the two resonances on 15/16 sites, including
+three-particle spectators. Equation (18) is not obtained by
 fitting just a one-particle band. All four weights are nonnegative for
 real q: the two nonsquare factors in the denominators/numerators are
 strictly positive. The chart excludes q=1,3 even though some of the
@@ -132,7 +133,7 @@ an extensive label-code dimension, and its positive spectral gap has
 the quadratic upper bound (15). A nonunitary ground-space mapping is
 insufficient to transfer an excitation spectrum to a Heisenberg model.
 
-## 4. Explicit normal detunings and their limits
+## 4. Explicit microscopic detunings and their limits
 
 At order r⁸, independent nearest-neighbour counterterms have direct
 compression
@@ -165,6 +166,45 @@ together with their induced number-changing companions. They cannot be
 treated as an independent density repulsion merely from a diagonal
 matrix element. The sibling resonant-liquids investigation found just
 this issue for m=3,4; it is not extrapolated here as an all-m theorem.
+
+There is now a direct m=5,6 check of that companion mechanism. Substitute
+
+```
+q(r)=q_m+alpha r                                             (22)
+```
+
+in every coefficient of the exact parent (1), with alpha real. This
+stays inside the exact-parent family while leaving the period-m locus;
+it is not a normal displacement away from the parent manifold. In
+particular the pair amplitude changes by alpha r³ and the remaining
+parent coefficients change along with it. The sixth-order zero space
+is unchanged and the retained seventh operator still vanishes. At
+eighth order the observed whole-matrix change is
+
+```
+delta K8=P[c_m alpha F_m+kappa_m alpha² D_m]P,
+F_m=sum_j (n_(j-m)-n_(j+m))(b†_j+b_j),
+c5=(1600-704sqrt(5))/3,  kappa5=80/3,
+c6=208/81,              kappa6=52/3,
+c_m²=t_m kappa_m.                                         (23)
+```
+
+Here open F_m is the sum of oriented length-m bond terms with both
+endpoints present. On a single residue chain, adding (23) to the coarse
+SWAP term gives precisely the positive parent with forbidden vector
+
+```
+chi_m=(0,-sqrt(t_m),sqrt(t_m),alpha sqrt(kappa_m)).
+```
+
+Thus discarding F_m while keeping the positive D_m term changes the
+model. This rank-one identity and the complete order-eight matrix on
+the open m+1 interval are checked symbolically for arbitrary alpha by
+`resonance_displacement.py`. Its larger full-sector comparisons include
+m=5 open L=13 and periodic L=15, and m=6 open L=16 and periodic L=12,
+at nonzero positive and negative alpha. They test the whole matrix,
+including spectator particles and number-changing entries. As with
+(19)--(20), these finite checks do not assert an all-length derivation.
 
 The fixed finite detunings that might retain several positive-velocity
 sectors are therefore still open. Nothing here proves their existence

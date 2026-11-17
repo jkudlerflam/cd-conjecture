@@ -119,15 +119,33 @@ def higher_case(m,L,periodic):
             'correct_constraint_words_verified':True,'hop_m':-t}
 
 
+def sixth_with_spectators(q,L):
+    P,K,_=hierarchy(L,q,order=6,stop=4,periodic=False)
+    weights={5:(q*q-10*q+5)**2/3,
+             6:(3*q-1)**2*(q*q-6*q+25)/12,
+             7:(q**3-21*q*q+35*q-7)**2/(4*(5*q*q-18*q+21)),
+             8:(q*q-6*q+1)**2/8}
+    ns=occupations(L)[P]
+    expected=sum(c*np.sum(ns[:,:L-d]*ns[:,d:],axis=1) for d,c in weights.items())
+    residual=maxabs(K[2]-np.diag(expected))
+    assert residual<1e-9
+    return {'q':q,'L':L,'periodic':False,'dimension':len(P),
+            'maximum_particle_number':int(ns.sum(axis=1).max()),
+            'sixth_constraint_whole_matrix_error':residual}
+
+
 def main():
     start=time.perf_counter();a,b,c,d=exact_parent_checks()
     higher=[]
     for args in ((5,10,True),(5,15,True),(5,10,False),(5,13,False),(5,15,False),
                  (6,12,True),(6,12,False),(6,14,False),(6,16,False)):
         higher.append(higher_case(*args));print(higher[-1],flush=True)
+    spectators=[sixth_with_spectators(q,L) for q,L in
+                ((.7,13),(2.,13),(4.,13),(qvalue(5),15),(qvalue(6),16))]
     out={'numpy_version':np.__version__,'parent_identities':a,'ground_dimensions':b,
          'ground_space_limits':c,'quadratic_variational_bound':d,
-         'higher_order_checks':higher,'runtime_seconds':time.perf_counter()-start}
+         'higher_order_checks':higher,'sixth_constraint_spectator_checks':spectators,
+         'runtime_seconds':time.perf_counter()-start}
     Path(__file__).with_name('checks.json').write_text(json.dumps(out,indent=2)+'\n')
 
 

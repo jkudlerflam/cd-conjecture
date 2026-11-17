@@ -804,5 +804,47 @@
       "hop_m": -0.38042981252857794
     }
   ],
-  "runtime_seconds": 33.74036949999936
+  "sixth_constraint_spectator_checks": [
+    {
+      "q": 0.7,
+      "L": 13,
+      "periodic": false,
+      "dimension": 60,
+      "maximum_particle_number": 3,
+      "sixth_constraint_whole_matrix_error": 4.085620730620576e-14
+    },
+    {
+      "q": 2.0,
+      "L": 13,
+      "periodic": false,
+      "dimension": 60,
+      "maximum_particle_number": 3,
+      "sixth_constraint_whole_matrix_error": 7.105427357601002e-14
+    },
+    {
+      "q": 4.0,
+      "L": 13,
+      "periodic": false,
+      "dimension": 60,
+      "maximum_particle_number": 3,
+      "sixth_constraint_whole_matrix_error": 1.7905676941154525e-12
+    },
+    {
+      "q": 0.5278640450004206,
+      "L": 15,
+      "periodic": false,
+      "dimension": 106,
+      "maximum_particle_number": 3,
+      "sixth_constraint_whole_matrix_error": 3.969047313034935e-15
+    },
+    {
+      "q": 0.33333333333333315,
+      "L": 16,
+      "periodic": false,
+      "dimension": 140,
+      "maximum_particle_number": 4,
+      "sixth_constraint_whole_matrix_error": 3.9968028886505635e-15
+    }
+  ],
+  "runtime_seconds": 16.214571750000687
 }
