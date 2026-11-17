@@ -1,0 +1,99 @@
+{
+  "tag": "qc_xx1_L512_P0",
+  "model": "xx1",
+  "mu": -1.6330103307432098,
+  "L": 512,
+  "P": 0,
+  "init": "rand:1",
+  "sched": [
+    [
+      32,
+      0.001,
+      1e-07,
+      2
+    ],
+    [
+      64,
+      0.0001,
+      1e-08,
+      2
+    ],
+    [
+      128,
+      0.0001,
+      1e-08,
+      2
+    ],
+    [
+      192,
+      1e-05,
+      1e-08,
+      2
+    ],
+    [
+      256,
+      1e-05,
+      1e-08,
+      2
+    ],
+    [
+      384,
+      0.0,
+      1e-08,
+      2
+    ],
+    [
+      512,
+      0.0,
+      1e-09,
+      2
+    ]
+  ],
+  "conv": [
+    {
+      "chi": 768,
+      "res_tol": 1e-09,
+      "min_sweeps": 3,
+      "max_sweeps": 8,
+      "tolE": 4e-09,
+      "tolS": 0.0005
+    },
+    {
+      "chi": 1024,
+      "res_tol": 1e-09,
+      "min_sweeps": 3,
+      "max_sweeps": 8,
+      "tolE": 4e-09,
+      "tolS": 0.0005
+    },
+    {
+      "chi": 1536,
+      "res_tol": 1e-09,
+      "min_sweeps": 3,
+      "max_sweeps": 8,
+      "tolE": 4e-09,
+      "tolS": 0.0005
+    },
+    {
+      "chi": 2048,
+      "res_tol": 1e-09,
+      "min_sweeps": 3,
+      "max_sweeps": 8,
+      "tolE": 4e-09,
+      "tolS": 0.0005
+    }
+  ],
+  "final": {
+    "chi": 2560,
+    "res_tol": 1e-09,
+    "min_sweeps": 3,
+    "max_sweeps": 8,
+    "tolE": 4e-09,
+    "tolS": 0.0005
+  },
+  "maxit": 300,
+  "mmax": 32,
+  "variance": false,
+  "gwin": 48,
+  "N_exact": 100
+}

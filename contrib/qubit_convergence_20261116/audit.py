@@ -62,7 +62,7 @@ def load(path):
             host_rss_GB=h.get('host_rss_GB'), dev_used_GB=h.get('dev_used_GB'))
     last = hs[-1]
     finalS = {str(w): sbar(r['S'], L, w) for w in WS}
-    return dict(file=str(path.relative_to(ROOT)), sha256=sha(path), key=key, L=L, P=cfg['P'],
+    return dict(file=str(path.relative_to(ROOT)), tag=cfg['tag'], sha256=sha(path), key=key, L=L, P=cfg['P'],
         model=cfg['model'], gauge=cfg.get('gauge'), hz=cfg.get('hz'), mu=cfg.get('mu'),
         chi=last['chi'], final_chi=cfg['final']['chi'], E=r.get('E_phys', last['E_phys']),
         Sbar=finalS, sweep_Sbar=stages[str(last['chi'])]['Sbar'],
@@ -83,7 +83,7 @@ def main():
             selected[k] = r
     # Merge stage provenance from the selected run first; never hide source paths.
     for r in runs:
-        prior = [(int(c), q, s) for q in runs if (q['key'],q['L'],q['P'])==(r['key'],r['L'],r['P'])
+        prior = [(int(c), q, s) for q in runs if q['tag']==r['tag']
                  for c,s in q['stages'].items() if int(c)<r['chi']]
         if prior:
             c, q, s = max(prior, key=lambda t:(t[0], -t[2]['E']))

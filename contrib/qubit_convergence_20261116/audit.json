@@ -3,6 +3,7 @@
   "runs": [
     {
       "file": "codex/work_C190/gpu/typhon_out/outG/p153c_L128_P0_prod28.json",
+      "tag": "p153c_L128_P0_prod28",
       "sha256": "a0c70206a10984296ff37d5923d2b373ae0eea587792e93b9d2658f1a4b52427",
       "key": "p153c",
       "L": 128,
@@ -132,6 +133,7 @@
     },
     {
       "file": "codex/work_C190/gpu/typhon_out/outG/p153c_L128_P0_rand1.json",
+      "tag": "p153c_L128_P0_rand1",
       "sha256": "0bdfe9fe03abda3a80cea21c1b8bea44a6082f470199870ab4bbfc2fae15b8df",
       "key": "p153c",
       "L": 128,
@@ -241,26 +243,27 @@
       "continues": null,
       "C4": {
         "from_chi": 384,
-        "predecessor_file": "codex/work_C190/gpu/typhon_out/outG/p153c_L128_P0_prod28.json",
+        "predecessor_file": "codex/work_C190/gpu/typhon_out/outG/p153c_L128_P0_rand1.json",
         "increments": {
-          "1": 0.004691954573367685,
-          "6": 0.00462511333514648,
-          "12": 0.004503345598727115
+          "1": 0.0046919761026291695,
+          "6": 0.004631953918402543,
+          "12": 0.0045073306365852606
         },
         "pass_abs_S6": true,
         "predecessor_checks": {
           "sweeps": 2,
-          "res_max": 9.996149541270917e-10,
-          "trunc": 7.872498208882917e-10,
-          "dE": 1.7789399819889695e-07,
-          "dS": 0.0009576412025826819,
-          "dn": 3.386939367966413e-06,
+          "res_max": 9.997434024084964e-10,
+          "trunc": 7.890124109621866e-10,
+          "dE": 1.792403985234614e-07,
+          "dS": 0.0009570466720103532,
+          "dn": 3.516034781908539e-06,
           "pass_T1_numbers": false
         }
       }
     },
     {
       "file": "codex/work_C190/gpu/typhon_out/outG/p153c_L128_P1_prod29.json",
+      "tag": "p153c_L128_P1_prod29",
       "sha256": "9b5d9cb37d91f7a8f4e8dd97f5bece7f11c39537c340b0971e8682aa7d1dde36",
       "key": "p153c",
       "L": 128,
@@ -370,26 +373,27 @@
       "continues": null,
       "C4": {
         "from_chi": 384,
-        "predecessor_file": "codex/work_C190/gpu/typhon_out/outG/p153c_L128_P1_rand1.json",
+        "predecessor_file": "codex/work_C190/gpu/typhon_out/outG/p153c_L128_P1_prod29.json",
         "increments": {
-          "1": 0.004441215939373633,
-          "6": 0.00440381135826895,
-          "12": 0.004292883934473135
+          "1": 0.0044368394430633895,
+          "6": 0.0044005296467510835,
+          "12": 0.004286852299709043
         },
         "pass_abs_S6": true,
         "predecessor_checks": {
           "sweeps": 2,
-          "res_max": 9.999681043825187e-10,
-          "trunc": 7.442373384236589e-10,
-          "dE": 1.7207351632464452e-07,
-          "dS": 0.0009020014216605254,
-          "dn": 5.086056716258058e-06,
+          "res_max": 9.999747801804536e-10,
+          "trunc": 7.360274612011608e-10,
+          "dE": 1.7192781243124955e-07,
+          "dS": 0.000898459022477649,
+          "dn": 4.892371113895955e-06,
           "pass_T1_numbers": false
         }
       }
     },
     {
       "file": "codex/work_C190/gpu/typhon_out/outG/p153c_L128_P1_rand1.json",
+      "tag": "p153c_L128_P1_rand1",
       "sha256": "731e69f5fe45d2e34d636d1a5a7448b52d81c93c914c033fcc62f1d042075baf",
       "key": "p153c",
       "L": 128,
@@ -519,6 +523,7 @@
     },
     {
       "file": "codex/work_C190/gpu/typhon_out/outG/p153c_L256_P0_rand1.json",
+      "tag": "p153c_L256_P0_rand1",
       "sha256": "b46085dc0433ec06de41c5247005570491b8131212b110c475bdd68e04851147",
       "key": "p153c",
       "L": 256,
@@ -648,6 +653,7 @@
     },
     {
       "file": "codex/work_C190/gpu/typhon_out/outG/p153c_L256_P1_rand1.json",
+      "tag": "p153c_L256_P1_rand1",
       "sha256": "27e3846272a04633c3350de62981c88d798af34bfd35a95051ab6c1a5127b97b",
       "key": "p153c",
       "L": 256,
@@ -777,6 +783,7 @@
     },
     {
       "file": "codex/work_C190/gpu/typhon_out/outG/p153c_L64_P0_prod14.json",
+      "tag": "p153c_L64_P0_prod14",
       "sha256": "819dd948503995a322c41bc88e2a87f34d037946bdcd745881545224077c453c",
       "key": "p153c",
       "L": 64,
@@ -886,26 +893,27 @@
       "continues": null,
       "C4": {
         "from_chi": 256,
-        "predecessor_file": "codex/work_C190/gpu/typhon_out/outG/p153c_L64_P0_rand1.json",
+        "predecessor_file": "codex/work_C190/gpu/typhon_out/outG/p153c_L64_P0_prod14.json",
         "increments": {
-          "1": 0.000519727654016755,
-          "6": 0.0004941594706158181,
-          "12": 0.0004372606738476392
+          "1": 0.0005197117343873625,
+          "6": 0.0004947252085114595,
+          "12": 0.00043851992544374774
         },
         "pass_abs_S6": true,
         "predecessor_checks": {
           "sweeps": 2,
-          "res_max": 9.994292251101808e-10,
-          "trunc": 3.301621198659177e-10,
-          "dE": 1.3616274330274791e-08,
-          "dS": 0.000120331521575201,
-          "dn": 9.329537815905287e-07,
+          "res_max": 9.998034222415647e-10,
+          "trunc": 3.286371175192926e-10,
+          "dE": 1.3753634675595094e-08,
+          "dS": 0.0001181846768623096,
+          "dn": 8.898463608464358e-07,
           "pass_T1_numbers": false
         }
       }
     },
     {
       "file": "codex/work_C190/gpu/typhon_out/outG/p153c_L64_P0_rand1.json",
+      "tag": "p153c_L64_P0_rand1",
       "sha256": "7697411fa1ab96da142866aaea357b6c19345461732b325d8066a7dd50e8d014",
       "key": "p153c",
       "L": 64,
@@ -1035,6 +1043,7 @@
     },
     {
       "file": "codex/work_C190/gpu/typhon_out/outG/p153c_L64_P1_prod15.json",
+      "tag": "p153c_L64_P1_prod15",
       "sha256": "88fca2aa9da8a1e4383d5dac4cd6fea84a8fd946870ccfb53101f4b8db0010cb",
       "key": "p153c",
       "L": 64,
@@ -1144,26 +1153,27 @@
       "continues": null,
       "C4": {
         "from_chi": 256,
-        "predecessor_file": "codex/work_C190/gpu/typhon_out/outG/p153c_L64_P1_rand1.json",
+        "predecessor_file": "codex/work_C190/gpu/typhon_out/outG/p153c_L64_P1_prod15.json",
         "increments": {
-          "1": 0.00040388668229418556,
-          "6": 0.00038694924339055525,
-          "12": 0.00034236132209586323
+          "1": 0.0004039806148863345,
+          "6": 0.00038579156752494015,
+          "12": 0.00034135535309332
         },
         "pass_abs_S6": true,
         "predecessor_checks": {
           "sweeps": 2,
-          "res_max": 9.98174794355882e-10,
-          "trunc": 2.6456281609910093e-10,
-          "dE": 1.0791806559495853e-08,
-          "dS": 8.156478656751176e-05,
-          "dn": 8.847225403951775e-07,
+          "res_max": 9.989828494327573e-10,
+          "trunc": 2.617779326641312e-10,
+          "dE": 1.1178181935633802e-08,
+          "dS": 8.024443096132927e-05,
+          "dn": 7.987430028222331e-07,
           "pass_T1_numbers": false
         }
       }
     },
     {
       "file": "codex/work_C190/gpu/typhon_out/outG/p153c_L64_P1_rand1.json",
+      "tag": "p153c_L64_P1_rand1",
       "sha256": "549c5869640835831f1d1e3b41835160e36d5d345b6b5f298738a01d0751aebc",
       "key": "p153c",
       "L": 64,
@@ -1293,6 +1303,7 @@
     },
     {
       "file": "codex/work_C190/gpu/typhon_out/outG/sym40_n316_L128_P0_prod26.json",
+      "tag": "sym40_n316_L128_P0_prod26",
       "sha256": "219179e9efcf4aa1cb82c5a36dbabcedf323cbf1cdae717960a4678e570d7a76",
       "key": "sym40_n316",
       "L": 128,
@@ -1402,26 +1413,27 @@
       "continues": null,
       "C4": {
         "from_chi": 384,
-        "predecessor_file": "codex/work_C190/gpu/typhon_out/outG/sym40_n316_L128_P0_rand1.json",
+        "predecessor_file": "codex/work_C190/gpu/typhon_out/outG/sym40_n316_L128_P0_prod26.json",
         "increments": {
-          "1": 0.003389344482598533,
-          "6": 0.003354175496575129,
-          "12": 0.003268313464141359
+          "1": 0.003396683774815168,
+          "6": 0.0033595514902444723,
+          "12": 0.003274807141468994
         },
         "pass_abs_S6": true,
         "predecessor_checks": {
           "sweeps": 2,
-          "res_max": 9.99601699545122e-10,
-          "trunc": 5.637095235044853e-10,
-          "dE": 1.126614659341385e-07,
-          "dS": 0.0004565256688378039,
-          "dn": 4.191532473440951e-06,
+          "res_max": 9.997289856554184e-10,
+          "trunc": 5.596243468630746e-10,
+          "dE": 1.144198584768219e-07,
+          "dS": 0.0004652652239813815,
+          "dn": 4.0932529783710425e-06,
           "pass_T1_numbers": false
         }
       }
     },
     {
       "file": "codex/work_C190/gpu/typhon_out/outG/sym40_n316_L128_P0_rand1.json",
+      "tag": "sym40_n316_L128_P0_rand1",
       "sha256": "4a22b93ffaceec146c947f10ac1f9ba9b415624fb7a93d761978da7e17b8080e",
       "key": "sym40_n316",
       "L": 128,
@@ -1551,6 +1563,7 @@
     },
     {
       "file": "codex/work_C190/gpu/typhon_out/outG/sym40_n316_L128_P1_prod25.json",
+      "tag": "sym40_n316_L128_P1_prod25",
       "sha256": "7e0840af70a5c9b5e1b7085d6904993d866e3d92d2235c451d1416dabf500653",
       "key": "sym40_n316",
       "L": 128,
@@ -1680,6 +1693,7 @@
     },
     {
       "file": "codex/work_C190/gpu/typhon_out/outG/sym40_n316_L128_P1_rand1.json",
+      "tag": "sym40_n316_L128_P1_rand1",
       "sha256": "60415528e7091bcd202a21fcd6d57e65942437aadff0f065d047bac7a2ebb8e7",
       "key": "sym40_n316",
       "L": 128,
@@ -1789,26 +1803,27 @@
       "continues": null,
       "C4": {
         "from_chi": 384,
-        "predecessor_file": "codex/work_C190/gpu/typhon_out/outG/sym40_n316_L128_P1_prod25.json",
+        "predecessor_file": "codex/work_C190/gpu/typhon_out/outG/sym40_n316_L128_P1_rand1.json",
         "increments": {
-          "1": 0.0036273725164370774,
-          "6": 0.003601493693662361,
-          "12": 0.003508845492216306
+          "1": 0.0036175378057006213,
+          "6": 0.003594013018111575,
+          "12": 0.003501962345949794
         },
         "pass_abs_S6": true,
         "predecessor_checks": {
           "sweeps": 2,
-          "res_max": 9.999079767361343e-10,
-          "trunc": 6.20859141875485e-10,
-          "dE": 1.277815382394465e-07,
-          "dS": 0.0005463225454966913,
-          "dn": 3.5537645478866953e-06,
+          "res_max": 9.997833657459414e-10,
+          "trunc": 6.2533134226328e-10,
+          "dE": 1.3005398891152709e-07,
+          "dS": 0.000552306677925607,
+          "dn": 3.5170510312432235e-06,
           "pass_T1_numbers": false
         }
       }
     },
     {
       "file": "codex/work_C190/gpu/typhon_out/outG/sym40_n316_L256_P0_prod50.json",
+      "tag": "sym40_n316_L256_P0_prod50",
       "sha256": "9ba40b07095129bfc4ebaec6a44e596f7b306ef44fbef32b939222262865b36d",
       "key": "sym40_n316",
       "L": 256,
@@ -1938,6 +1953,7 @@
     },
     {
       "file": "codex/work_C190/gpu/typhon_out/outG/sym40_n316_L256_P0_rand1.json",
+      "tag": "sym40_n316_L256_P0_rand1",
       "sha256": "bc4b34a5f2eaa20c1c2cc8af28ba76877222280bb3df80ee713273c111088032",
       "key": "sym40_n316",
       "L": 256,
@@ -2047,26 +2063,27 @@
       "continues": null,
       "C4": {
         "from_chi": 512,
-        "predecessor_file": "codex/work_C190/gpu/typhon_out/outG/sym40_n316_L256_P0_prod50.json",
+        "predecessor_file": "codex/work_C190/gpu/typhon_out/outG/sym40_n316_L256_P0_rand1.json",
         "increments": {
-          "1": 0.024531854627847238,
-          "6": 0.02462320399062312,
-          "12": 0.024520147947144633
+          "1": 0.024743675770478646,
+          "6": 0.024853973688422126,
+          "12": 0.024749004715177936
         },
         "pass_abs_S6": false,
         "predecessor_checks": {
           "sweeps": 2,
-          "res_max": 9.996238307541038e-10,
-          "trunc": 1.0776435299675313e-09,
-          "dE": 4.1368508618688793e-07,
-          "dS": 0.0030247446916180643,
-          "dn": 1.4680647542592018e-05,
+          "res_max": 9.999519138903935e-10,
+          "trunc": 1.0760561330869223e-09,
+          "dE": 4.235796353668775e-07,
+          "dS": 0.0020552596001008894,
+          "dn": 2.261059348501737e-06,
           "pass_T1_numbers": false
         }
       }
     },
     {
       "file": "codex/work_C190/gpu/typhon_out/outG/sym40_n316_L256_P1_prod51.json",
+      "tag": "sym40_n316_L256_P1_prod51",
       "sha256": "6e27cf8f5553e3a06c0b94d8c691a4330863c6589c7f13579507b8071dec4f5d",
       "key": "sym40_n316",
       "L": 256,
@@ -2196,6 +2213,7 @@
     },
     {
       "file": "codex/work_C190/gpu/typhon_out/outG/sym40_n316_L256_P1_rand1.json",
+      "tag": "sym40_n316_L256_P1_rand1",
       "sha256": "118e7b07ff9bddcb9da3c862f39af70bd4c837c241d3a39324f5626ac237f504",
       "key": "sym40_n316",
       "L": 256,
@@ -2305,26 +2323,27 @@
       "continues": null,
       "C4": {
         "from_chi": 512,
-        "predecessor_file": "codex/work_C190/gpu/typhon_out/outG/sym40_n316_L256_P1_prod51.json",
+        "predecessor_file": "codex/work_C190/gpu/typhon_out/outG/sym40_n316_L256_P1_rand1.json",
         "increments": {
-          "1": 0.023627577804500977,
-          "6": 0.023694093465718158,
-          "12": 0.023588218243791204
+          "1": 0.023656746365648296,
+          "6": 0.023709249582392733,
+          "12": 0.023597448469320437
         },
         "pass_abs_S6": false,
         "predecessor_checks": {
           "sweeps": 2,
-          "res_max": 9.998979344198464e-10,
-          "trunc": 1.0445093678868034e-09,
-          "dE": 3.9621900782549346e-07,
-          "dS": 0.00271754991758133,
-          "dn": 8.840902830375974e-06,
+          "res_max": 9.999225300027319e-10,
+          "trunc": 1.0431326913362682e-09,
+          "dE": 3.9818660368950987e-07,
+          "dS": 0.002727545762946093,
+          "dn": 8.877918546423835e-06,
           "pass_T1_numbers": false
         }
       }
     },
     {
       "file": "codex/work_C190/gpu/typhon_out/outG/sym40_n316_L64_P0_rand1.json",
+      "tag": "sym40_n316_L64_P0_rand1",
       "sha256": "9dc7f805375139ceee52a6a7c6edbd3f3d1da17f2d7e9f506cefda87ef1d7955",
       "key": "sym40_n316",
       "L": 64,
@@ -2454,6 +2473,7 @@
     },
     {
       "file": "codex/work_C190/gpu/typhon_out/outG/sym40_n316_L64_P1_rand1.json",
+      "tag": "sym40_n316_L64_P1_rand1",
       "sha256": "03927b767ee862b4b55a4f1760649804f19187a3445e678c2437822829f407bc",
       "key": "sym40_n316",
       "L": 64,
@@ -2583,6 +2603,7 @@
     },
     {
       "file": "codex/work_C190/gpu/typhon_out/outG/xx1_L128_P1_rand1.json",
+      "tag": "xx1_L128_P1_rand1",
       "sha256": "f56c078eec5284c17cc51184b1aa168d9b1f4da28ea9b4873661696b00e5deb5",
       "key": "xx1",
       "L": 128,
@@ -2712,6 +2733,7 @@
     },
     {
       "file": "codex/work_C190/gpu/typhon_out/outG/xx1_L64_P1_rand1.json",
+      "tag": "xx1_L64_P1_rand1",
       "sha256": "dd45dea06710a2ee55d84c08bf85afb36f24ac79515d56ea7d02dce7beb0a53d",
       "key": "xx1",
       "L": 64,
@@ -2841,6 +2863,7 @@
     },
     {
       "file": "codex/work_C190/gpu/typhon_out/outG/xx2_L128_P0_rand1.json",
+      "tag": "xx2_L128_P0_rand1",
       "sha256": "5c37d8861f30a84d555267285716f358c219d5e5ef1a15412853d8ef9e86ff41",
       "key": "xx2",
       "L": 128,
@@ -2970,6 +2993,7 @@
     },
     {
       "file": "codex/work_C190/gpu/typhon_out/outG/xx2_L256_P0_rand1.json",
+      "tag": "xx2_L256_P0_rand1",
       "sha256": "67e5281fca524d515290c7959763fa8668a66366e54a4c1ce6db9fd1bf50d6dc",
       "key": "xx2",
       "L": 256,
@@ -3099,6 +3123,7 @@
     },
     {
       "file": "codex/work_C190/gpu/typhon_out/outG/xx2_L64_P0_rand1.json",
+      "tag": "xx2_L64_P0_rand1",
       "sha256": "f4f23fd16e50198cedc03291f14ae7f4efd9e29b01ec36541abcc558c62248d3",
       "key": "xx2",
       "L": 64,
@@ -3228,6 +3253,7 @@
     },
     {
       "file": "codex/work_C190/gpu/typhon_out/outX1024/p153c_L256_P0_rand1.json",
+      "tag": "p153c_L256_P0_rand1",
       "sha256": "49e4f1b6416aaeafc62104eb0f34f46dfc378336029af31e03607ebd42a0a013",
       "key": "p153c",
       "L": 256,
@@ -3322,6 +3348,7 @@
     },
     {
       "file": "codex/work_C190/gpu/typhon_out/outX1024/p153c_L256_P1_rand1.json",
+      "tag": "p153c_L256_P1_rand1",
       "sha256": "11280793c1a245a4fa67fb9e52faa22943e7f5f50c077563461fcb601e2fa36d",
       "key": "p153c",
       "L": 256,
@@ -3416,6 +3443,7 @@
     },
     {
       "file": "codex/work_C190/gpu/typhon_out/outX1024/sym40_n316_L256_P0_rand1.json",
+      "tag": "sym40_n316_L256_P0_rand1",
       "sha256": "179ce04836099f651b6fff04d9c44232bf4f96af04b5007255a302f639191cd7",
       "key": "sym40_n316",
       "L": 256,
@@ -3490,26 +3518,27 @@
       },
       "C4": {
         "from_chi": 768,
-        "predecessor_file": "codex/work_C190/gpu/typhon_out/outG/sym40_n316_L256_P0_prod50.json",
+        "predecessor_file": "codex/work_C190/gpu/typhon_out/outG/sym40_n316_L256_P0_rand1.json",
         "increments": {
-          "1": 0.0061883569462115595,
-          "6": 0.006215409239005432,
-          "12": 0.0061861985561675326
+          "1": 0.006206389417394043,
+          "6": 0.00623230909606054,
+          "12": 0.006201967044786372
         },
         "pass_abs_S6": true,
         "predecessor_checks": {
           "sweeps": 4,
-          "res_max": 9.999286043419896e-10,
-          "trunc": 3.009110738361187e-10,
-          "dE": 1.1736496219327819e-09,
-          "dS": 1.8542316468916908e-06,
-          "dn": 6.551157105683103e-08,
+          "res_max": 9.998506397877576e-10,
+          "trunc": 3.009135163267729e-10,
+          "dE": 5.065388108960178e-10,
+          "dS": 1.256917265823887e-06,
+          "dn": 2.9489072073118905e-08,
           "pass_T1_numbers": true
         }
       }
     },
     {
       "file": "codex/work_C190/gpu/typhon_out/outX1024/sym40_n316_L256_P1_rand1.json",
+      "tag": "sym40_n316_L256_P1_rand1",
       "sha256": "a17d42d392df12425e250386c45f9e3ea5badc84c4d51dec3725e9b85636095f",
       "key": "sym40_n316",
       "L": 256,
@@ -3604,6 +3633,7 @@
     },
     {
       "file": "codex/work_C190/gpu/typhon_out/outX1024/xx2_L256_P0_rand1.json",
+      "tag": "xx2_L256_P0_rand1",
       "sha256": "b7c479233b1d5619a6d54b11f0febec34e1b405fce57fe4ab8965e3447c2b079",
       "key": "xx2",
       "L": 256,
@@ -3698,6 +3728,7 @@
     },
     {
       "file": "codex/work_C190/gpu/typhon_out/outX1536/p153c_L256_P1_rand1.json",
+      "tag": "p153c_L256_P1_rand1",
       "sha256": "5f93d835a7abe87a10275a33c6b51a1e086e885c49d7d2fd865142146791cfd5",
       "key": "p153c",
       "L": 256,
@@ -3790,6 +3821,7 @@
     },
     {
       "file": "codex/work_C190/gpu/typhon_out/outX1536/sym40_n316_L256_P1_rand1.json",
+      "tag": "sym40_n316_L256_P1_rand1",
       "sha256": "1e306f85ac169cab863990bb59d52ca8a155b734fae032d3229ca3dedd919674",
       "key": "sym40_n316",
       "L": 256,
@@ -3882,6 +3914,7 @@
     },
     {
       "file": "codex/work_C195/typhon_out/out512/p153c_L512_P0_rand1.json",
+      "tag": "p153c_L512_P0_rand1",
       "sha256": "bddc65736e22c0ed976a6e1ede84e4c50615db870d63f3f1d89d0268c229b4e3",
       "key": "p153c",
       "L": 512,
@@ -4055,6 +4088,7 @@
     },
     {
       "file": "codex/work_C195/typhon_out/out512/p153c_L512_P1_rand1.json",
+      "tag": "p153c_L512_P1_rand1",
       "sha256": "43a2cd39d8a5706a0176bef9588e4af5474822df39d62c8e4f0ffbc1b59e88fc",
       "key": "p153c",
       "L": 512,
@@ -4228,6 +4262,7 @@
     },
     {
       "file": "codex/work_C195/typhon_out_b/out512/sym40_n316_L512_P0_rand1.json",
+      "tag": "sym40_n316_L512_P0_rand1",
       "sha256": "8096019a9ad14d6af3b6c85908c51cee9a9a40cff6f126e58040758ce735d0d5",
       "key": "sym40_n316",
       "L": 512,
@@ -4401,6 +4436,7 @@
     },
     {
       "file": "codex/work_C195/typhon_out_b/out512/sym40_n316_L512_P1_rand1.json",
+      "tag": "sym40_n316_L512_P1_rand1",
       "sha256": "53aafe9fd1d9b190fa0f6b52c9586b773c50c16d80258e70e325a616b172d536",
       "key": "sym40_n316",
       "L": 512,
@@ -4574,6 +4610,7 @@
     },
     {
       "file": "codex/work_C195/typhon_out_x2048/p153c_L512_P0_rand1.json",
+      "tag": "p153c_L512_P0_rand1",
       "sha256": "11f288caff28c58beba36ffc2e31bf16be47c4cc75c0281c2e23b0fadf0fc8f1",
       "key": "p153c",
       "L": 512,
@@ -4668,6 +4705,7 @@
     },
     {
       "file": "codex/work_C195/typhon_out_x2048/sym40_n316_L512_P1_rand1.json",
+      "tag": "sym40_n316_L512_P1_rand1",
       "sha256": "38051d626bd6c0d9567e882a1744cbe65f8dd1ad3386981be927fe592c1197ab",
       "key": "sym40_n316",
       "L": 512,
@@ -5075,20 +5113,20 @@
       "legacy_T2_numbers": true,
       "C4_large": {
         "from_chi": 384,
-        "predecessor_file": "codex/work_C190/gpu/typhon_out/outG/sym40_n316_L128_P1_prod25.json",
+        "predecessor_file": "codex/work_C190/gpu/typhon_out/outG/sym40_n316_L128_P1_rand1.json",
         "increments": {
-          "1": 0.0036273725164370774,
-          "6": 0.003601493693662361,
-          "12": 0.003508845492216306
+          "1": 0.0036175378057006213,
+          "6": 0.003594013018111575,
+          "12": 0.003501962345949794
         },
         "pass_abs_S6": true,
         "predecessor_checks": {
           "sweeps": 2,
-          "res_max": 9.999079767361343e-10,
-          "trunc": 6.20859141875485e-10,
-          "dE": 1.277815382394465e-07,
-          "dS": 0.0005463225454966913,
-          "dn": 3.5537645478866953e-06,
+          "res_max": 9.997833657459414e-10,
+          "trunc": 6.2533134226328e-10,
+          "dE": 1.3005398891152709e-07,
+          "dS": 0.000552306677925607,
+          "dn": 3.5170510312432235e-06,
           "pass_T1_numbers": false
         }
       },
@@ -5360,20 +5398,20 @@
       "legacy_T2_numbers": true,
       "C4_large": {
         "from_chi": 384,
-        "predecessor_file": "codex/work_C190/gpu/typhon_out/outG/p153c_L128_P0_prod28.json",
+        "predecessor_file": "codex/work_C190/gpu/typhon_out/outG/p153c_L128_P0_rand1.json",
         "increments": {
-          "1": 0.004691954573367685,
-          "6": 0.00462511333514648,
-          "12": 0.004503345598727115
+          "1": 0.0046919761026291695,
+          "6": 0.004631953918402543,
+          "12": 0.0045073306365852606
         },
         "pass_abs_S6": true,
         "predecessor_checks": {
           "sweeps": 2,
-          "res_max": 9.996149541270917e-10,
-          "trunc": 7.872498208882917e-10,
-          "dE": 1.7789399819889695e-07,
-          "dS": 0.0009576412025826819,
-          "dn": 3.386939367966413e-06,
+          "res_max": 9.997434024084964e-10,
+          "trunc": 7.890124109621866e-10,
+          "dE": 1.792403985234614e-07,
+          "dS": 0.0009570466720103532,
+          "dn": 3.516034781908539e-06,
           "pass_T1_numbers": false
         }
       },

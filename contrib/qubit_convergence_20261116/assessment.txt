@@ -1,0 +1,137 @@
+{
+  "verdict": "UNDECIDED",
+  "new_chi2560_production": "NOT RUN",
+  "registered_test": "REGISTRATION_20261116.md",
+  "registration_sha256": "671d219d6a009947a82032984b011b06731bed4a279b2af9b615cdd715761f4f",
+  "gate_status": {
+    "saved_arithmetic": "PASS",
+    "local_hamiltonian_and_resume": "PASS",
+    "saved_same_solver_controls_through_256": "PASS against exact finite-size entropy",
+    "new_matched_solver_controls_256_512": "NOT EVALUATED",
+    "new_both_parities_2560": "NOT EVALUATED",
+    "old_L512_C4": "FAIL",
+    "new_L512_C4": "NOT EVALUATED",
+    "new_Ks_size_drift": "NOT EVALUATED"
+  },
+  "current_ground_branch": {
+    "key": "sym40_n316",
+    "Lsmall": 256,
+    "Lbig": 512,
+    "parities": [
+      1,
+      1
+    ],
+    "chis": [
+      1536,
+      2048
+    ],
+    "files": [
+      "codex/work_C190/gpu/typhon_out/outX1536/sym40_n316_L256_P1_rand1.json",
+      "codex/work_C195/typhon_out_x2048/sym40_n316_L512_P1_rand1.json"
+    ],
+    "c_two": {
+      "1": 1.9706505383009283,
+      "6": 1.9827373274804332,
+      "12": 1.9930430685438323
+    },
+    "c_two_last_sweep": {
+      "1": 1.9707323688561516,
+      "6": 1.982827995916522,
+      "12": 1.9931406874674176
+    },
+    "density_difference": 0.0021393908851742305,
+    "T4": true,
+    "legacy_T2_numbers": true,
+    "C4_large": {
+      "from_chi": 1536,
+      "predecessor_file": "codex/work_C195/typhon_out_b/out512/sym40_n316_L512_P1_rand1.json",
+      "increments": {
+        "1": 0.01035306652714496,
+        "6": 0.01037536198783906,
+        "12": 0.010368801903554381
+      },
+      "pass_abs_S6": false,
+      "predecessor_checks": {
+        "sweeps": 4,
+        "res_max": 9.999771633007018e-10,
+        "trunc": 1.2649103986461796e-10,
+        "dE": 1.6111627587633848e-09,
+        "dS": 8.515033019129703e-06,
+        "dn": 2.339001009543651e-08,
+        "pass_T1_numbers": true
+      }
+    },
+    "all_pairings": [
+      {
+        "parities": [
+          0,
+          0
+        ],
+        "c_two": {
+          "1": 1.854487887903328,
+          "6": 1.8705911131363635,
+          "12": 1.8817538452214453
+        }
+      },
+      {
+        "parities": [
+          0,
+          1
+        ],
+        "c_two": {
+          "1": 1.973016291359918,
+          "6": 1.9899653915584128,
+          "12": 2.0007592615703014
+        }
+      },
+      {
+        "parities": [
+          1,
+          0
+        ],
+        "c_two": {
+          "1": 1.852122134844338,
+          "6": 1.863363049058384,
+          "12": 1.8740376521949762
+        }
+      },
+      {
+        "parities": [
+          1,
+          1
+        ],
+        "c_two": {
+          "1": 1.9706505383009283,
+          "6": 1.9827373274804332,
+          "12": 1.9930430685438323
+        }
+      }
+    ]
+  },
+  "current_L512_T1": {
+    "sweeps": 3,
+    "res_max": 9.999439558941524e-10,
+    "trunc": 4.9811710312042123e-11,
+    "dE": 1.4250254309899901e-09,
+    "dS": 0.00012935367284061527,
+    "dn": 1.5753781223981633e-08,
+    "pass_T1_numbers": true
+  },
+  "linear_discarded_weight_extrapolation_c_two": {
+    "1": 2.028886689570991,
+    "6": 2.0410913486710394,
+    "12": 2.051358926916779
+  },
+  "extrapolation_note": "Heuristic through 1536/2048 at L512 only, fixed L256@1536 reference; neither rigorous lower nor upper bound.",
+  "blockers": {
+    "memory_bytes": 51539607552,
+    "memory_GiB": 48,
+    "cpu_count": 18,
+    "cuda_available": false,
+    "production_checkpoints_found": false,
+    "cluster_read_only_probe": "ssh -o BatchMode=yes -o ConnectTimeout=5 typhon true: connection timed out",
+    "date": "2026-11-16 America/New_York"
+  },
+  "physics": "Finite-size evidence remains consistent with c about 2. This work establishes neither asymptotic c>1 nor a concrete counterexample.",
+  "correlation_status": "NOT EVALUATED: no large-chi checkpoints or full C193 correlators at L=512"
+}

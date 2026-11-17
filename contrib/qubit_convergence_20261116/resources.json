@@ -1,0 +1,92 @@
+{
+  "host_observed": {
+    "memory_bytes": 51539607552,
+    "memory_GiB": 48,
+    "cpu_count": 18,
+    "cuda_available": false,
+    "production_checkpoints_found": false,
+    "cluster_read_only_probe": "ssh -o BatchMode=yes -o ConnectTimeout=5 typhon true: connection timed out",
+    "date": "2026-11-16 America/New_York"
+  },
+  "source": "codex/work_C195/typhon_out_x2048/sym40_n316_L512_P1_rand1.json",
+  "source_sha256": "38051d626bd6c0d9567e882a1744cbe65f8dd1ad3386981be927fe592c1197ab",
+  "observed_chi2048_sweep_seconds": [
+    3927.229203224182,
+    3399.7940044403076,
+    3530.475925207138
+  ],
+  "rows": [
+    {
+      "chi": 2048,
+      "MPS_GB": 32.972821824,
+      "environments_GB": 82.48797864,
+      "static_GB": 115.460800464,
+      "with_25pct_headroom_GB": 144.32600058,
+      "checkpoint_atomic_pair_GB": 65.945643648,
+      "sweep_hours_range": [
+        0.944387223455641,
+        1.090897000895606
+      ],
+      "stage_3_to_8_sweeps_hours": [
+        2.833161670366923,
+        8.727176007164848
+      ],
+      "final_measurement_hours_cubic_estimate": 4.3638739615016515,
+      "uncertainty": "allow a further factor two for matvec count, IO, hardware and measurements"
+    },
+    {
+      "chi": 2560,
+      "MPS_GB": 51.427759424,
+      "environments_GB": 128.6358084,
+      "static_GB": 180.063567824,
+      "with_25pct_headroom_GB": 225.07945978,
+      "checkpoint_atomic_pair_GB": 102.855518848,
+      "sweep_hours_range": [
+        1.475605036649439,
+        2.130658204874231
+      ],
+      "stage_3_to_8_sweeps_hours": [
+        4.4268151099483175,
+        17.045265638993847
+      ],
+      "final_measurement_hours_cubic_estimate": 8.523191331057912,
+      "uncertainty": "allow a further factor two for matvec count, IO, hardware and measurements"
+    },
+    {
+      "chi": 3072,
+      "MPS_GB": 73.976337728,
+      "environments_GB": 185.03871144,
+      "static_GB": 259.015049168,
+      "with_25pct_headroom_GB": 323.76881146,
+      "checkpoint_atomic_pair_GB": 147.952675456,
+      "sweep_hours_range": [
+        2.124871252775192,
+        3.681777378022671
+      ],
+      "stage_3_to_8_sweeps_hours": [
+        6.374613758325577,
+        29.454219024181366
+      ],
+      "final_measurement_hours_cubic_estimate": 14.728074620068073,
+      "uncertainty": "allow a further factor two for matvec count, IO, hardware and measurements"
+    }
+  ],
+  "selected": {
+    "chi": 2560,
+    "reason": "next stage; lower memory than 3072",
+    "host_allocation_GB": 256,
+    "gpu_recommendation": "one CUDA GPU with 80 GB, benchmark before production",
+    "concurrent_runs": 1,
+    "checkpoint_scratch_GB": 300,
+    "both_parities_elapsed_hours_nominal": [
+      34,
+      66
+    ],
+    "both_parities_with_factor_two_margin_hours": [
+      68,
+      132
+    ],
+    "correlation_warning": "C193 converts the complete MPS to complex128 on device: about 103 GB at chi2560 before stacks. An 80 GB GPU cannot run that unchanged; CPU or a separately validated streaming implementation is needed."
+  },
+  "production_status": "NOT RUN: current host below memory floor, no CUDA or accessible remote checkpoints"
+}
