@@ -1,0 +1,114 @@
+{
+  "sympy_version": "1.14.0",
+  "results": [
+    {
+      "m": 3,
+      "q": "3",
+      "open_interval_length": 4,
+      "first_nonzero_order": 6,
+      "hop_m_magnitude": "128/3",
+      "hop_m_decimal": 42.666666666666664,
+      "all_lower_kept_orders_zero": true,
+      "leading_number_conservation": true,
+      "leading_kernel_dimension": 5,
+      "stages": [
+        {
+          "order": 0,
+          "kernel_dimension": 8
+        },
+        {
+          "order": 2,
+          "kernel_dimension": 6
+        },
+        {
+          "order": 4,
+          "kernel_dimension": 6
+        }
+      ]
+    },
+    {
+      "m": 4,
+      "q": "1",
+      "open_interval_length": 5,
+      "first_nonzero_order": 6,
+      "hop_m_magnitude": "1",
+      "hop_m_decimal": 1.0,
+      "all_lower_kept_orders_zero": true,
+      "leading_number_conservation": true,
+      "leading_kernel_dimension": 6,
+      "stages": [
+        {
+          "order": 0,
+          "kernel_dimension": 13
+        },
+        {
+          "order": 2,
+          "kernel_dimension": 9
+        },
+        {
+          "order": 4,
+          "kernel_dimension": 7
+        }
+      ]
+    },
+    {
+      "m": 5,
+      "q": "5 - 2*sqrt(5)",
+      "open_interval_length": 6,
+      "first_nonzero_order": 8,
+      "hop_m_magnitude": "20992 - 28160*sqrt(5)/3",
+      "hop_m_decimal": 2.77525120197405,
+      "all_lower_kept_orders_zero": true,
+      "leading_number_conservation": true,
+      "leading_kernel_dimension": 7,
+      "stages": [
+        {
+          "order": 0,
+          "kernel_dimension": 21
+        },
+        {
+          "order": 2,
+          "kernel_dimension": 13
+        },
+        {
+          "order": 4,
+          "kernel_dimension": 8
+        },
+        {
+          "order": 6,
+          "kernel_dimension": 8
+        }
+      ]
+    },
+    {
+      "m": 6,
+      "q": "1/3",
+      "open_interval_length": 7,
+      "first_nonzero_order": 8,
+      "hop_m_magnitude": "832/2187",
+      "hop_m_decimal": 0.38042981252857794,
+      "all_lower_kept_orders_zero": true,
+      "leading_number_conservation": true,
+      "leading_kernel_dimension": 8,
+      "stages": [
+        {
+          "order": 0,
+          "kernel_dimension": 34
+        },
+        {
+          "order": 2,
+          "kernel_dimension": 19
+        },
+        {
+          "order": 4,
+          "kernel_dimension": 11
+        },
+        {
+          "order": 6,
+          "kernel_dimension": 9
+        }
+      ]
+    }
+  ],
+  "runtime_seconds": 6.256892416000483
+}
