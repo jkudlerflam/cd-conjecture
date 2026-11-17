@@ -30,7 +30,7 @@ def dense_mpo(mpo):
 def main():
     start=time.time();rows=[];L=8
     with threadpool_limits(limits=1):
-        for cfg in [dict(L=L,V=8,a=1),dict(L=L,V=12,a=.96),dict(L=L,V=40,a=1,hz=-19.976047250613814)]:
+        for cfg in [dict(L=L,V=4,a=1),dict(L=L,V=8,a=1),dict(L=L,V=12,a=.96),dict(L=L,V=40,a=1,hz=-19.976047250613814)]:
             mpo,gph,shift,b=build(cfg);H=literal(L,b);ph=np.ones(1,complex)
             for g in gph:
                 th=-np.angle(g);ph=np.kron(ph,[np.exp(-.5j*th),np.exp(.5j*th)])

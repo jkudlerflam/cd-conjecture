@@ -19,11 +19,22 @@ def row(d,file):
     dc=abs(last['Sbar6']-prev[-1]['Sbar6']) if prev else None
     gates=dict(residual=last['res_max']<=1e-8,stationarity=de is not None and de<=1e-8 and ds<=1e-3 and dn<=5e-4,
                discarded_weight=last['trunc']<=1e-7,chi_step=dc is not None and dc<=.01)
+    # Preserve the stricter registered stopping rule separately from the
+    # C190-style diagnostic gates; exhausting a schedule must remain visible.
+    st=cfg['stages'][last['stage']]
+    stopping_rule_met=(len(final)>=st.get('min',3) and de is not None and
+        de<2e-9 and ds<5e-4 and dn<2e-4 and last['res_max']<1e-8)
+    G=np.array(d['meas']['Gf_re'])+1j*np.array(d['meas']['Gf_im']);W=len(G)
+    ks=np.linspace(-np.pi,np.pi,256,endpoint=False);ph=np.exp(1j*np.outer(ks,np.arange(W)))
+    nk=np.real(np.einsum('ki,ij,kj->k',ph,G,ph.conj()))/W;c=np.cos(ks)
+    boundary=nk[abs(c)<1e-12].sum();wa=nk[c>1e-12].sum()+boundary/2;wb=nk[c< -1e-12].sum()+boundary/2
     r=dict(file=file,tag=cfg['tag'],L=L,P=cfg['P'],V=cfg.get('V'),a=cfg.get('a'),kappa=cfg.get('kappa',1),
         legs=cfg.get('legs'),chi=last['chi'],E=last['E_phys'],n_mid=last['n_mid'],Sbar=d['Sbar'],
         c_profile=d['c_profile'],gates=gates,all_gates=all(gates.values()),dE=de,dS=ds,dn=dn,dS_chi=dc,
+        final_stage_sweeps=len(final),stopping_rule_met=stopping_rule_met,
+        schedule_limit_hit=len(final)>=st['max'] and not stopping_rule_met,
         res_max=last['res_max'],trunc=last['trunc'],runtime_seconds=d['runtime_seconds'],peak_RSS_GB=d['peak_RSS_GB'],
-        valley=d['valley'],pair=d['pair'],
+        valley=d['valley'],valley_half_boundary=dict(Wa=float(wa),Wb=float(wb),imbalance=float((wa-wb)/(wa+wb))),pair=d['pair'],
         central_density_range=float(np.ptp(np.array(d['meas']['dens'])[L//4:3*L//4])),
         central_density_std=float(np.std(np.array(d['meas']['dens'])[L//4:3*L//4])))
     if cfg.get('legs'):
@@ -74,6 +85,8 @@ def main():
                 pair['density_corrected']=dict(target=target,weights=[za,zb],extrapolates=not(0<=za<=1 and 0<=zb<=1),c_two=two(ia,ib))
             pairs.append(pair)
     out=dict(rows=rows,size_pairs=pairs,parity=parity,
+             gate_thresholds=dict(residual=1e-8,delta_E=1e-8,delta_S=1e-3,delta_n=5e-4,discarded_weight=1e-7,delta_S_chi=.01),
+             stopping_thresholds=dict(delta_E=2e-9,delta_S=5e-4,delta_n=2e-4,residual=1e-8),
              caution='Finite-size diagnostics only; these gates do not establish a thermodynamic central charge.')
     (HERE/'analysis.json').write_text(json.dumps(out,indent=2)+'\n')
     for r in rows:print(r['tag'],'n',round(r['n_mid'],5),'S6',round(r['Sbar']['6'],6),'gates',r['gates'],'dS_chi',r['dS_chi'])

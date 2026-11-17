@@ -47,6 +47,7 @@ def run(cfg):
         var,e=Z.variance(psi,mpo)
         final['variance']=var;final['variance_energy']=e+base['E_offset']
         final['runtime_seconds']=time.time()-start
+        final['peak_RSS_GB']=resource.getrusage(resource.RUSAGE_SELF).ru_maxrss*(1 if sys.platform=='darwin' else 1024)/1e9
     write('done',**final)
     return json.loads(fout.read_text())
 

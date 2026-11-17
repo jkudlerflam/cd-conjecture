@@ -7,7 +7,7 @@ from common import HERE,Z,coefficients
 
 def main():
     u=np.diag([np.exp(-1j*np.pi/8),np.exp(1j*np.pi/8)]);U=np.kron(u,u);rows=[]
-    for V,a in [(40,40*(-19.976047250613814+20)),(16,.96),(12,.96),(8,.96),(6,.96),(4,.96)]:
+    for V,a in [(40,40*(-19.976047250613814+20)),(16,.96),(12,.96),(8,.96),(6,.96),(4,.96),(4,1.)]:
         b=coefficients(V,a=a);h=Z.pauli_bond(**{k:b[k] for k in ['Jx','Jy','Jz','D']})
         transformed=(.5+b['D'])*np.kron(Z.PX,Z.PY)+(.5-b['D'])*np.kron(Z.PY,Z.PX)+b['Jz']*np.kron(Z.ZZ_,Z.ZZ_)
         err=float(np.max(abs(U@h@U.conj().T-transformed)));assert err<1e-13

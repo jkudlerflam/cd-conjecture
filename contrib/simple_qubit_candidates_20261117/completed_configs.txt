@@ -10,6 +10,8 @@ configs/pilot_V8_a24o25_L32_P1.json
 configs/base_V8_a24o25_L32_P1.json
 configs/base_V8_a24o25_L64_P0.json
 configs/base_V8_a24o25_L64_P1.json
+configs/extended_V12_a24o25_L128_P0.json
+configs/extended_V12_a24o25_L128_P1.json
 configs/extended_V12_a24o25_L64_P0.json
 configs/extended_V12_a24o25_L64_P1.json
 configs/extended_V8_a24o25_L128_P0.json
@@ -22,7 +24,10 @@ configs/pilot_V8_a1_L32_P0.json
 configs/pilot_V8_a1_L32_P1.json
 configs/pilot_V8_a31o32_L32_P0.json
 configs/pilot_V8_a31o32_L32_P1.json
+configs/xx1_L128_chi192.json
 configs/xx1_L32_chi128.json
 configs/xx1_L64_chi128.json
+configs/xx2_L128_chi192.json
 configs/xx2_L32_chi128.json
 configs/xx2_L64_chi128.json
+configs/xx2_L64_chi192.json

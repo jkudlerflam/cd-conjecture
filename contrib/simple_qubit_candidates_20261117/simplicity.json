@@ -80,6 +80,19 @@
       "rotated_spread": 4.022857142857143,
       "small_exchange_difference": 0.125,
       "rotation_matrix_error": 2.220446049250313e-16
+    },
+    {
+      "V": 4,
+      "a": 1.0,
+      "D": 0.0625,
+      "hz": -1.75,
+      "t2": 0.125,
+      "original_pauli_monomials": 6,
+      "rotated_pauli_monomials": 4,
+      "original_spread": 28.0,
+      "rotated_spread": 4.0,
+      "small_exchange_difference": 0.125,
+      "rotation_matrix_error": 2.220446049250313e-16
     }
   ],
   "caution": "Smaller rotated spread encodes the hopping scale in the difference of two exchanges; no dynamical hierarchy is removed."

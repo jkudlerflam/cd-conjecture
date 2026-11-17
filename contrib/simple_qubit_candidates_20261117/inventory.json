@@ -1,9 +1,6 @@
 {
-  "completed": 28,
-  "running": [
-    "extended_V12_a24o25_L128_P0",
-    "extended_V12_a24o25_L128_P1"
-  ],
+  "completed": 33,
+  "running": [],
   "unrun_configs": [
     "base_V8_a31o32_L32_P0",
     "base_V8_a31o32_L32_P1",
@@ -25,26 +22,31 @@
     "tolerance_V8_k15o16_L32_P0",
     "tolerance_V8_k15o16_L32_P1",
     "tolerance_V8_k17o16_L32_P0",
-    "tolerance_V8_k17o16_L32_P1",
-    "xx1_L128_chi192",
-    "xx2_L128_chi192",
-    "xx2_L64_chi192"
+    "tolerance_V8_k17o16_L32_P1"
   ],
+  "versions": {
+    "python": "3.12.3",
+    "numpy": "2.5.5",
+    "scipy": "1.18.1"
+  },
   "source_hashes": {
     "codex/work_C190/z2dmrg.py": "8b55ff8a0c8ada4d3da36cc208a92566eb0459c045ea93b9facdc74a2980e847",
     "codex/work_C190/models.py": "6bc11c0b6573ae287c3321eae33fc13d66a804058cab44cc3af779989fb61c74",
     "codex/work_C190/analyze190.py": "2a35e973e3e9462bd4ac13819a22403f118349782c07a5c851534d6616f319e0",
-    "contrib/simple_qubit_candidates_20261117/run.py": "184302612fb71f520c49f8662ef3a25d1c4db2f749ed52e4e3b1d7db97063146",
+    "contrib/simple_qubit_candidates_20261117/run.py": "4800c35cf511fcd3d1d4750d1db9d1b969b09271a5fc3e8649ebc638c3ecb265",
+    "contrib/simple_qubit_candidates_20261117/exact_controls.py": "bbfaf5d1034d6b19dcff5252d33ab137d5a12609a06375e6c485f37a749a9968",
     "contrib/simple_qubit_candidates_20261117/audit_sources.py": "a18cff41c3d844eb323b8416c355e27963e9093f41b414904aa4d4dedb132a4b",
+    "contrib/simple_qubit_candidates_20261117/check_outputs.py": "f2ed547fcad7ee06655c683b61569a2ac9887b595517f01c6f20325f7f3e4dd0",
+    "contrib/simple_qubit_candidates_20261117/followup_analysis.py": "267fe93dcab149277547be4bc32339cb24d67eefdee083c0913742cd077dd08b",
     "contrib/simple_qubit_candidates_20261117/campaign.py": "c5fd7918ba6edb3705c57f5fbd16ec9f3ac2cb06f2e7a911ebe99952da13fb33",
-    "contrib/simple_qubit_candidates_20261117/validate.py": "df1a41569947b2bc4dc316cb5b717de7cc1591e83991e5ca7d5c0860ead785fe",
+    "contrib/simple_qubit_candidates_20261117/validate.py": "f8e46ba9efc46ba3fbd91f9b44e8326341a8a42790ae8e7e8c451a688c25795e",
     "contrib/simple_qubit_candidates_20261117/common.py": "45cbcedb5b599b667017143e4bee970a898659d7c3ea9046049830e38fd779dd",
-    "contrib/simple_qubit_candidates_20261117/simplicity.py": "c456c2df757e6f72b20759e3535d0aedcfcde067d1c54473ea67c721da45265b",
-    "contrib/simple_qubit_candidates_20261117/analyze.py": "ae491a781ec73fe007e0875e313be94a7f457bf4b560254fc5ea81b2d978540b",
-    "contrib/simple_qubit_candidates_20261117/inventory.py": "2924cabdfcaf10d3556dbaccfa91ef9e26cb0cf952d3b03791075f70e0398af3"
+    "contrib/simple_qubit_candidates_20261117/simplicity.py": "0ab12b84237f55a00d3fcb4a507c2d3425e3b1edebb27f3e42110e4f0bb93901",
+    "contrib/simple_qubit_candidates_20261117/analyze.py": "924de5c0e7cde1845e81847cafcd515d464cd1d9287b6ba7ece8288f7dc89ec5",
+    "contrib/simple_qubit_candidates_20261117/inventory.py": "80c2b6b175ac3cdf5a751dc54f6e5abcac81cfc0af900623709729ce3e7691e5"
   },
-  "summed_sweep_seconds": 3102.474755525589,
-  "maximum_peak_RSS_GB": 1.412448256,
+  "summed_sweep_seconds": 5246.141571998596,
+  "maximum_peak_RSS_GB": 1.655980032,
   "reproduction_order": [
     "configs/pilot_V12_a24o25_L32_P0.json",
     "configs/base_V12_a24o25_L32_P0.json",
@@ -58,6 +60,8 @@
     "configs/base_V8_a24o25_L32_P1.json",
     "configs/base_V8_a24o25_L64_P0.json",
     "configs/base_V8_a24o25_L64_P1.json",
+    "configs/extended_V12_a24o25_L128_P0.json",
+    "configs/extended_V12_a24o25_L128_P1.json",
     "configs/extended_V12_a24o25_L64_P0.json",
     "configs/extended_V12_a24o25_L64_P1.json",
     "configs/extended_V8_a24o25_L128_P0.json",
@@ -70,10 +74,13 @@
     "configs/pilot_V8_a1_L32_P1.json",
     "configs/pilot_V8_a31o32_L32_P0.json",
     "configs/pilot_V8_a31o32_L32_P1.json",
+    "configs/xx1_L128_chi192.json",
     "configs/xx1_L32_chi128.json",
     "configs/xx1_L64_chi128.json",
+    "configs/xx2_L128_chi192.json",
     "configs/xx2_L32_chi128.json",
-    "configs/xx2_L64_chi128.json"
+    "configs/xx2_L64_chi128.json",
+    "configs/xx2_L64_chi192.json"
   ],
   "runs": [
     {
@@ -187,6 +194,34 @@
       "peak_RSS_GB": 0.714375168,
       "checkpoint_exists": true,
       "checkpoint_bytes": 12323152
+    },
+    {
+      "tag": "extended_V12_a24o25_L128_P0",
+      "file": "outputs/extended_V12_a24o25_L128_P0.json",
+      "sha256": "20860baa95695a4978d2dd60c6960499d11b93329adea799897ac11daf9559fe",
+      "L": 128,
+      "P": 0,
+      "chi": 192,
+      "sweeps": 18,
+      "sweep_seconds": 916.0005922317505,
+      "runtime_seconds": 919.1844201087952,
+      "peak_RSS_GB": 1.418903552,
+      "checkpoint_exists": true,
+      "checkpoint_bytes": 63964520
+    },
+    {
+      "tag": "extended_V12_a24o25_L128_P1",
+      "file": "outputs/extended_V12_a24o25_L128_P1.json",
+      "sha256": "92fb9f55770b0f86798c9435543646ff4c13fc1b0422eb197766fec898d2f048",
+      "L": 128,
+      "P": 1,
+      "chi": 192,
+      "sweeps": 18,
+      "sweep_seconds": 904.1542015075684,
+      "runtime_seconds": 907.7336931228638,
+      "peak_RSS_GB": 1.38223616,
+      "checkpoint_exists": true,
+      "checkpoint_bytes": 63983688
     },
     {
       "tag": "extended_V12_a24o25_L64_P0",
@@ -413,6 +448,20 @@
       "checkpoint_bytes": 1227984
     },
     {
+      "tag": "xx1_L128_chi192",
+      "file": "outputs/xx1_L128_chi192.json",
+      "sha256": "48c982bd13a7b51d2b56736d33c00f99e7fb7f0560c43308c9958e6b4fbf0f76",
+      "L": 128,
+      "P": 0,
+      "chi": 192,
+      "sweeps": 13,
+      "sweep_seconds": 38.731539726257324,
+      "runtime_seconds": 40.897438049316406,
+      "peak_RSS_GB": 1.655980032,
+      "checkpoint_exists": true,
+      "checkpoint_bytes": 32201064
+    },
+    {
       "tag": "xx1_L32_chi128",
       "file": "outputs/xx1_L32_chi128.json",
       "sha256": "a294a0d7e3b5879745ffaa800d535e3fd7821a3aba1663f0f25c7f61b27a64fb",
@@ -441,6 +490,20 @@
       "checkpoint_bytes": 4890512
     },
     {
+      "tag": "xx2_L128_chi192",
+      "file": "outputs/xx2_L128_chi192.json",
+      "sha256": "07da1dc309b016b9c476c9b03be66513676270ce3dc91f12e2d0a3dcc9af1730",
+      "L": 128,
+      "P": 0,
+      "chi": 192,
+      "sweeps": 22,
+      "sweep_seconds": 236.98152899742126,
+      "runtime_seconds": 239.3034508228302,
+      "peak_RSS_GB": 1.20766464,
+      "checkpoint_exists": true,
+      "checkpoint_bytes": 62747640
+    },
+    {
       "tag": "xx2_L32_chi128",
       "file": "outputs/xx2_L32_chi128.json",
       "sha256": "e27464baff358cef1314cf061f9f5bc673ff1fd88697c20c04ae405ff3d54fbd",
@@ -467,6 +530,20 @@
       "peak_RSS_GB": 0.478953472,
       "checkpoint_exists": true,
       "checkpoint_bytes": 12142480
+    },
+    {
+      "tag": "xx2_L64_chi192",
+      "file": "outputs/xx2_L64_chi192.json",
+      "sha256": "1b1701961b95c61dd8900b6850531ce615660e71f7cb4d35762d50e5e2bf779e",
+      "L": 64,
+      "P": 0,
+      "chi": 192,
+      "sweeps": 6,
+      "sweep_seconds": 47.798954010009766,
+      "runtime_seconds": 49.6183979511261,
+      "peak_RSS_GB": 1.063714816,
+      "checkpoint_exists": true,
+      "checkpoint_bytes": 24791180
     }
   ]
 }

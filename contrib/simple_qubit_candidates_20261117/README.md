@@ -82,10 +82,17 @@ The main-window 32-to-64 slopes are about 2.4; the exact two-leg control
 itself reads 2.389 there. Narrow and wide windows show large finite-size
 effects, so those slopes alone do not identify a CFT.
 
-The L=128 extension and its chi checks are being completed. At V=8,
-the 128-to-192 chi entropy change is about 0.04 and therefore fails the
-0.01 chi gate; its current size slope is flagged. The one-/two-leg
-controls are compared with exact correlation-matrix entropies. The old
+The L=128 extension through chi=192 is complete: the V=8 and V=12
+main-window slopes are 2.059737 and 2.109011. Both fail the 0.01 chi
+gate, with entropy steps of 0.0417--0.0514; neither is a converged CFT
+measurement. The preferred V=8 point is continuing to chi=256. The
+one-/two-leg controls are compared with exact correlation-matrix
+entropies, whose corresponding slopes are 1.004026 and 1.858274. The
+L=128 two-leg DMRG control still has energy drift 1.22e-6 and an entropy
+error -0.003144; its failed gate is retained and the exact value is the
+calibration reference. The
+two-leg control has range two and is used only for calibration, not as
+an admissible nearest-neighbour candidate. The old
 V=8 infinite-chain reading near 1.4 is retained as unresolved contrary
 evidence, with its different fitted coefficients and older-solver
 limitations stated in the source audit.
@@ -96,6 +103,12 @@ pairing of size estimators, and the extrapolation flag on any secondary
 density-corrected estimate. Balanced valleys do not rule out pairing.
 No Luttinger exponent is fitted from a few short distances. Symmetry-
 allowed two-pair charge locking remains a physical concern on this line.
+The raw valley convention assigns both boundary momentum bins to one
+half; `valley_half_boundary` splits those bins equally and removes the
+spurious roughly 0.16% imbalance. Neither convention diagnoses charge
+locking. The stricter registered stopping rule and the four local
+diagnostic gates are reported separately; `schedule_limit_hit` remains
+visible even when the looser local gates pass.
 
 ## Verification, reproduction and remaining tests
 

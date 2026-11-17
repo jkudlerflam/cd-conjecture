@@ -1,0 +1,9 @@
+{
+  "tolerance_pilots": [],
+  "tolerance_scope": "L=32 finite-state response only; no verified thermodynamic CFT window width.",
+  "independent_start": {
+    "status": "pending"
+  },
+  "legacy_V4": [],
+  "legacy_scope": "Same microscopic V=4,kappa=1,a=1; new seed and converged-stage chi comparison. No new CFT fit from this alone."
+}

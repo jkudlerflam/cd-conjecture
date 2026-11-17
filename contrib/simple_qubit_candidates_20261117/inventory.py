@@ -1,7 +1,9 @@
 #!/usr/bin/env python3
 """Audit completed configs, source hashes, resource use and reproduction order."""
-import hashlib,json
+import hashlib,json,platform
 from pathlib import Path
+import numpy as np
+import scipy
 from common import HERE,ROOT,Z
 
 
@@ -28,6 +30,7 @@ def main():
             checkpoint_exists=ck.exists(),checkpoint_bytes=ck.stat().st_size if ck.exists() else None))
     sources=[Path(Z.__file__),ROOT/'codex/work_C190/models.py',ROOT/'codex/work_C190/analyze190.py']+list(HERE.glob('*.py'))
     out=dict(completed=len(data),running=running,unrun_configs=sorted(configs-set(data)-set(running)),
+        versions=dict(python=platform.python_version(),numpy=np.__version__,scipy=scipy.__version__),
         source_hashes={str(p.relative_to(ROOT)):hashlib.sha256(p.read_bytes()).hexdigest() for p in sources},
         summed_sweep_seconds=sum(r['sweep_seconds'] for r in rows),
         maximum_peak_RSS_GB=max((r['peak_RSS_GB'] for r in rows),default=0),

@@ -1,6 +1,32 @@
 {
   "rows": [
     {
+      "V": 4,
+      "a": 1.0,
+      "P": 0,
+      "L": 8,
+      "matrix_error": 1.2484823266299927e-14,
+      "endpoint_half_error": 1.75,
+      "energy_error": 1.7763568394002505e-15,
+      "entropy_error": 4.551914400963142e-15,
+      "density_Z_error": 1.354472090042691e-14,
+      "pair_error": 2.2082989272239967e-15,
+      "residual": 2.2435837667303172e-14
+    },
+    {
+      "V": 4,
+      "a": 1.0,
+      "P": 1,
+      "L": 8,
+      "matrix_error": 1.2484823266299927e-14,
+      "endpoint_half_error": 1.75,
+      "energy_error": 5.329070518200751e-15,
+      "entropy_error": 8.195076561801073e-13,
+      "density_Z_error": 3.3725799930550693e-13,
+      "pair_error": 6.898648393013385e-13,
+      "residual": 1.4134807379264199e-14
+    },
+    {
       "V": 8,
       "a": 1.0,
       "P": 0,
@@ -79,5 +105,5 @@
       "residual": 7.689019536102912e-14
     }
   ],
-  "runtime_seconds": 0.9102461338043213
+  "runtime_seconds": 1.2903270721435547
 }

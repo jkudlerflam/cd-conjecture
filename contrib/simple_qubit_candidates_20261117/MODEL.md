@@ -98,6 +98,11 @@ Jz=1 and hz=-7/4. That point's unresolved anomaly is documented in
 
 The symmetric family has the same potentially dangerous resonant
 two-pair operator discussed in C179 and later REPORT updates. The
+new parameter perturbations remain on Jx+Jy=0; they test only this
+four-coupling family, not stability to the extra XX+YY coupling or
+parity-breaking fields. A neighbourhood of finite-size gas signatures
+inside that slice is not an open c>1 region of general qubit bonds.
+The
 old effective-model pseudospin evidence does not automatically remove
 charge locking in the full qubit chain. At V=8 the older infinite-chain
 reading near 1.4 is therefore retained as contrary/unresolved evidence,
@@ -118,3 +123,24 @@ necessary in every possible c>1 qubit model. Its zero-field residual
 Ashkin--Teller/slow-Majorana region remains open. Those simpler residual
 tests currently have less direct c>1 evidence and are not promoted to
 counterexamples by their short expressions.
+
+## Observable definitions and a quadrature check
+
+The source convention uses the central-window fermion matrix with its
+Jordan--Wigner string and a 256-point momentum grid. It partitions
+weights by cos(k)>0 and cos(k)<0. Floating-point cos(+/-pi/2) is positive,
+so both mathematical boundary bins enter the first group. This produces
+an apparent imbalance about 0.0016 at the symmetric candidate.
+`analysis.json` preserves the source result as `valley` and also reports
+`valley_half_boundary`, assigning half of those two bins to each group.
+For the completed V=8,L=128 states the corrected imbalance is below
+3e-16. This is a quadrature correction, not evidence for two gapless modes
+or against a symmetry-breaking thermodynamic phase hidden by a finite
+ground-state superposition.
+
+The additional connected pair diagnostic is
+<b_i^dagger b_(i+2)^dagger b_j b_(j+2)> minus the product of the two
+pair expectations, where b=|up><down| is the physical hard-core-boson
+annihilator. It is a spin-pair observable without an added fermion
+string. Both real and imaginary parts are retained, at explicitly
+listed separations; no short-distance exponent is assigned to it.

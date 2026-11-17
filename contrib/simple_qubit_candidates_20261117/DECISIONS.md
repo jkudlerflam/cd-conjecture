@@ -72,3 +72,38 @@
     comparison; its large old slope does not make it the preferred CFT
     candidate. Its global variance will also be measured. No claim of
     a phase boundary follows from a handful of such points.
+11. At V=8,L=128 both chi=192 runs pass residual, sweep-stationarity
+    and discarded-weight gates, but fail chi convergence: Sbar6 rises
+    by 0.0447 (even) and 0.0417 (odd) from chi=128. Extend only this
+    preferred lower-hierarchy point to chi=256 for the next check.
+    The chi=256,L=128 fixed-work benchmark stayed below 0.86 GB RSS.
+    Two production DMRG processes remain the concurrency limit; tiny
+    L=8 validation jobs and fixed-work benchmarks have also run while
+    production proceeds, without changing numerical tolerances.
+12. The matched L=128 controls are complete. Exact one-/two-leg W=6
+    readings at 64-to-128 are 1.004026 and 1.858274. The corresponding
+    two-leg DMRG value is 1.831440, with final energy drift 1.22e-6 and
+    entropy error -0.003144 at L=128; it stays flagged. We use its exact
+    reference, not an assumed asymptotic value 2, and do not spend this
+    bounded campaign repeatedly fitting the solvable control. V=12's
+    chi=128-to-192 entropy increments 0.0474--0.0514 fail as V=8's do;
+    its flagged W=6 size reading is 2.109011. It receives no further
+    extension because it offers no simplicity advantage over V=8.
+13. The final queue contains only two V=8,L=128 chi=256 continuations,
+    the two legacy V=4,L=96 calculations, eight L=32 tolerance pilots
+    (a=0.955,0.965 at kappa=1 and kappa=15/16,17/16 at a=0.96), and one
+    independent-seed V=8,L=64 even run. Two production workers run these
+    sequentially. A further failure at chi=256 will be reported as
+    unresolved rather than triggering an unbounded resource escalation.
+14. The C190-style local diagnostic gates use delta E<=1e-8,
+    delta S<=1e-3,delta n<=5e-4,residual<=1e-8, discarded weight<=1e-7,
+    and last chi-step delta Sbar6<=0.01. They are looser than the
+    registered within-stage stopping rule (2e-9,5e-4,2e-4,1e-8).
+    The analysis explicitly reports both, with `schedule_limit_hit`
+    preserving every exhausted final stage. A passed local gate does
+    not erase a stopping-rule failure or certify the infrared limit.
+15. The raw C190 valley imbalance includes both +/-pi/2 grid bins in
+    one half because floating-point cosine is slightly positive there.
+    Retain that value and also split those two bins equally; corrected
+    imbalance is at numerical roundoff on the symmetric candidates.
+    Neither convention tests charge locking or proves two gapless modes.
