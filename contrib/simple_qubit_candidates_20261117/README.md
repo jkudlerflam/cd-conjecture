@@ -1,9 +1,15 @@
 # Simpler qubit candidates: calibrated full-chain diagnostics
 
-Date: 2026-11-17. OpenAI Codex, GPT-6 family. **Campaign in progress;
-no new microscopic counterexample or thermodynamic central charge is
-established.** Completed raw runs are under `outputs/`; `analysis.json`
-contains convergence gates and all parity/size comparisons. A run marked
+Date: 2026-11-17. OpenAI Codex, GPT-6 family. **Bounded campaign complete:
+46 runs, both candidate parity sectors, exact matched controls, and no
+new established thermodynamic c>1 point.** The simplest surviving lead
+is the older V=4,kappa=1,a=1 point: its previously missing L=96 chi
+comparison now passes the local gates. This makes it the preferred next
+test under the user's simplicity priority, not a verified CFT.
+
+Raw records are under `outputs/`; `analysis.json` contains every gate
+and parity/size comparison, and `followup_analysis.json` contains the
+legacy check, parameter probes and independent start. A run marked
 `done` means its bounded schedule finished, not that every gate passed.
 
 ## Claim and model class
@@ -45,12 +51,19 @@ The total field is counted once, and constants and telescoping terms
 are removed. No unequal coefficients are grouped to reduce the count.
 Both literal coefficient spreads are reported with Delta=1:
 
-| Point | Original-basis spread | Common-rotation spread | Generated leading scale | Evidence role |
-|---|---:|---:|---:|---|
-| V=40, production field | 3196.17 | 40.46 | 1/80 | Strongest existing size/convergence evidence; still provisional |
-| V=8,kappa=1,a=24/25 | 124.16 | 8.2773 | 1/16 | Preferred simpler follow-up under current diagnostics |
-| V=12,kappa=1,a=24/25 | 284.16 | 12.3548 | 1/24 | Intermediate-hierarchy comparison |
-| V=4,kappa=1,a=1 | 28 | 4 | 1/8 | Older entropy anomaly with strong density modulation; exploratory |
+| Follow-up rank / role | Point | Original spread | Rotated spread | Leading t2 | Evidence and limitation |
+|---|---|---:|---:|---:|---|
+| 1: simplest retained lead | V=4,kappa=1,a=1 | 28 | 4 | 1/8 | Both L=96,chi=256 sectors pass local gates; strong modulation and anomalous size fits remain |
+| 2: dilute benchmark comparison | V=8,kappa=1,a=24/25 | 124.16 | 8.2773 | 1/16 | L=32,64,128 calibrated campaign; largest-size chi gate still fails |
+| 3: no present simplicity advantage | V=12,kappa=1,a=24/25 | 284.16 | 12.3548 | 1/24 | Similar size evidence to V=8, with a larger hierarchy and failed chi gate |
+| Existing evidence benchmark | V=40, production field | 3196.17 | 40.4578 | 1/80 | Strongest existing large-size evidence, still provisional |
+
+This is a ranking of the next research targets, not established CFTs.
+V=4 moves ahead only after its new convergence check; it was discovered
+through the sibling source audit after the initial V=8/V=12 selection.
+Its larger entropy slope is not a reason for the promotion. None of
+these points has a verified critical parameter neighbourhood, and no
+mode velocity is measured here; t2 is a leading generated hopping scale.
 
 The rotation shortens the expression but encodes the small hopping in
 the difference of the two cross couplings. Invariant ratios
@@ -60,7 +73,21 @@ The [sibling term analysis](../qubit_minimal_terms_20261117/README.md)
 independently confirms the count and leaves some simpler faces open;
 it does not establish that all four structures are universally necessary.
 
-The explicit rational V=8 follow-up bond, in the common rotated basis,
+The preferred simplicity lead is the explicit rational Hamiltonian
+
+```
+H = sum_j [(9/16) X_j Y_(j+1)+(7/16) Y_j X_(j+1)+Z_j Z_(j+1)]
+    -(7/4) sum_j Z_j.
+```
+
+Equivalently its two-site bond is
+`h=(9/16)XY+(7/16)YX+ZZ-(7/8)(ZI+IZ)`.
+For open chains add `-(7/8)(Z_0+Z_(L-1))` to the bond sum. In the
+original common basis this is `(XX-YY)/2+(XY-YX)/16+ZZ`, with the
+same full onsite field -7/4. Its invariant pairing/DM and ZZ/DM ratios
+are still 8 and 16. Its criticality and parameter tolerance remain open.
+
+The explicit rational V=8 comparison Hamiltonian, in the common rotated basis,
 is
 
 ```
@@ -79,6 +106,26 @@ field in the displayed Hamiltonian. The field is counted once in the
 simplicity comparison.
 
 ## Numerical status
+
+The new V=4 check is at the **same L=96** as the older calculation,
+with an independent seed and chi=128,192,256 stages. At the common
+chi=192 its energies agree with the old runs to 8.6e-9 or better.
+The final chi-step entropy changes are 0.005120 (even) and 0.005618
+(odd), below 0.01; both final stages also satisfy the strict stopping
+rule. Variance per site is 1.52e-7 and 1.68e-7. The even sector
+has the lower variational energy, by 0.00019166, but the global variance
+does not rigorously certify such a small parity splitting.
+
+This closes the missing local chi comparison, **not the CFT question**.
+The even state's central density is 0.29636 and its central density
+range remains 0.30147. The current smoothed profile estimator is
+2.882/3.101 in even/odd sectors; the older 48-to-96 estimates span
+2.51--3.00 with their parity/window choices. These are different
+estimators and neither supplies a reliable central charge. Oscillatory
+pair correlations also remain: the even connected separation-two pair
+values at r=8,16,32 are -0.00521,0.01421,0.00734. A new calibrated
+size sequence and parameter neighbourhood are still required for V=4;
+this campaign's new matched-size sequence is at V=8 and V=12.
 
 The initial a=1 pilots at V=8,12 were substantially denser than the
 older candidate. Sequential rational-field bracketing selected the
@@ -113,9 +160,13 @@ window. The lower-energy branch switches from even to odd between
 central density range remains 0.16261 at 128. The density-corrected
 secondary estimate 2.21753 is an interpolation here, but does not repair
 the failed chi gate. At 32-to-64 it is an extrapolation and stays flagged.
-The older V=8 infinite-chain reading near 1.4 remains unresolved contrary
-evidence; its fitted coefficients differ from this rational point and
-its older solver has convergence limitations (`source_audit.json`).
+The older V=8 infinite-chain reading near 1.4 remains in tension with a
+clean two-mode interpretation. Re-fitting saved chi=64--192 states gives
+1.40345 and 1.40092 for two- and four-site cells; their optimizer errors
+remain about 1e-5--7e-5. Including less-converged higher-chi states lowers
+the estimates further. Its fitted coefficients differ from this rational
+point. Neither c=2 nor a smaller infrared CFT is settled by those data
+(`source_audit.json`, `followup_analysis.json`).
 
 The one-leg DMRG control at 128 agrees with its exact entropy profile to
 7.2e-9. The two-leg control remains flagged: at 128,chi=192 its energy
@@ -138,6 +189,33 @@ locking. The stricter registered stopping rule and the four local
 diagnostic gates are reported separately; `schedule_limit_hit` remains
 visible even when the looser local gates pass.
 
+## Observed parameter response and independent start
+
+The V=8 probes use L=32,chi=64, both parities, and one change at a time.
+All eight probe runs pass the four local gates and strict stopping rule.
+The lower-energy branch is shown, with the full same-parity responses
+retained in `followup_analysis.json`.
+
+| a | kappa | Lower-energy parity | Central density | Sbar6 |
+|---:|---:|---:|---:|---:|
+| 0.960 | 1 | even | 0.22803 | 1.28135 |
+| 0.955 | 1 | odd | 0.19388 | 1.23255 |
+| 0.965 | 1 | even | 0.22896 | 1.28098 |
+| 0.960 | 15/16 | even | 0.15540 | 1.09366 |
+| 0.960 | 17/16 | odd | 0.26437 | 1.30779 |
+
+Thus the rational point is not supported by a demonstrated broad
+insensitive region. The a probes change hz by only +/-1/1600, or
+0.0161% of |hz|; the kappa probes change D by +/-1/512, or 6.25% of D
+(about 0.37--0.42% of the rotated transverse coefficients). Finite-size
+level crossings and density changes do not locate a thermodynamic
+phase boundary. **No verified CFT window width is reported for any
+point**, including V=4, whose field neighbourhood was not scanned.
+
+The independent V=8,L=64 even seed agrees in energy to 3.6e-12,
+Sbar6 to 2.1e-8 and density to 6.4e-11; both runs pass all local gates.
+This addresses initialization at that size, not largest-size chi error.
+
 ## Verification, reproduction and remaining tests
 
 - **[numerical]** Independent literal Pauli assembly at L=8
@@ -145,7 +223,7 @@ visible even when the looser local gates pass.
   ED in energy, every entropy cut, density and a pair observable. Full
   endpoint fields are explicitly checked. This validates conventions
   and local numerics, not an infrared theory.
-- **[numerical]** The unchanged C190 parity solver supplies all candidate
+- **[numerical]** The unchanged C190 parity solver (Claude Opus 5.5 agents) supplies all candidate
   and control states. Source files and old-data hashes are recorded in
   `source_audit.json`. Its shared solver is not an independent DMRG
   implementation. No human scientific review is claimed.
@@ -153,6 +231,14 @@ visible even when the looser local gates pass.
   identities in `MODEL.md`; `simplicity.py` cross-checks it and reports
   both counts/spreads. The term-removal
   results are attributed separately to the sibling contribution.
+
+The 46 completed runs contain 634 sweeps, totaling 11,460 sweep-seconds
+(about 3.18 single-process hours), and peak per-process RSS 2.009 GB.
+Two production workers ran concurrently; tiny ED/benchmark/reproduction
+checks also overlapped, as documented in `DECISIONS.md`. The V=4 runs
+took 24.5 and 33.9 minutes each including variance. Fixed-work benchmarks
+preceded larger runs and are retained as `benchmark*.json`. Versions
+and all run/source hashes are in `inventory.json`.
 
 Install `requirements.txt`, then from the repository root:
 
@@ -188,9 +274,22 @@ most two processes, each with one BLAS thread. Checkpoints stay ignored in
 `DECISIONS.md` records subsequent evidence-based choices. Per-sweep
 runtime, local residual and truncation data remain in every output.
 
-To establish a simpler c>1 phase still requires converged larger sizes
-and chi, an infrared diagnostic independent of a small-ring entropy
-slope, control of pairing/charge locking, and a parameter neighbourhood
-whose phase is verified rather than inferred from raw density. The
-absent old production environment blocks its specific very-large-chi
-test; it has not been used as a reason to omit these smaller calculations.
+The next decisive checks are:
+
+1. For V=4, a new calibrated size sequence in both parities, with chi
+   convergence at each size, and independent starts plus a small field/
+   DM neighbourhood. Check whether density modulation decays or persists.
+2. For V=8, close the failed L=128 chi gate before another size extension.
+   Its matched controls and restart do not remove that failure.
+3. At either point, an independent long-distance/infinite-chain test,
+   pair/charge-locking gap diagnostics and mode velocities. Balanced
+   valley weights and finite entropy slopes do not distinguish the
+   proposed two-mode liquid from a crossover or paired state.
+4. Verify an actual critical neighbourhood, including what happens beyond
+   the symmetric Jx+Jy=0 slice. A test that adds another independent
+   coupling changes the simplicity count and must say so.
+
+The earlier V=40 registration and its UNDECIDED higher-chi test remain
+unchanged. Its absent production environment did not prevent the smaller
+calculations reported here. No universal minimal-term claim, phase boundary,
+or microscopic c>1 counterexample is established by this contribution.

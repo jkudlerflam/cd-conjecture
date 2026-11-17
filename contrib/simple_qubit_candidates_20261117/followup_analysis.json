@@ -90,11 +90,504 @@
       "both_gates": true
     }
   ],
-  "tolerance_pilots": [],
+  "tolerance_pilots": [
+    {
+      "a": 0.955,
+      "kappa": 1,
+      "delta_a": -0.0050000000000000044,
+      "delta_kappa": 0,
+      "delta_hz": -0.0006250000000000006,
+      "delta_D": 0.0,
+      "relative_hz_change": 0.00016108247422680428,
+      "relative_D_change": 0,
+      "ground_P": 1,
+      "L": 32,
+      "chi": 64,
+      "n_mid": 0.19388189378697385,
+      "Sbar": {
+        "1": 1.2326387446647276,
+        "6": 1.2325480812248946,
+        "12": 1.1410297064835886
+      },
+      "ground_delta_n": -0.034148622229877024,
+      "ground_delta_Sbar6": -0.04880650359742811,
+      "density_range": 0.2269829219616779,
+      "valley": {
+        "Wa": 26.103454741647077,
+        "Wb": 26.01621527741044,
+        "imbalance": 0.0016738299418384596
+      },
+      "valley_half_boundary": {
+        "Wa": 26.05983500952876,
+        "Wb": 26.059835009528754,
+        "imbalance": 1.3632909331549697e-16
+      },
+      "both_gates": true,
+      "schedule_limit_hits": [
+        false,
+        false
+      ],
+      "same_parity_response": [
+        {
+          "P": 0,
+          "delta_n": -0.01753604718546886,
+          "delta_Sbar6": -0.05719460377612684
+        },
+        {
+          "P": 1,
+          "delta_n": -0.0019330101078406936,
+          "delta_Sbar6": -0.002505209390109453
+        }
+      ],
+      "source_tags": [
+        "tolerance_V8_a191o200_L32_P0",
+        "tolerance_V8_a191o200_L32_P1"
+      ]
+    },
+    {
+      "a": 0.96,
+      "kappa": 0.9375,
+      "delta_a": 0.0,
+      "delta_kappa": -0.0625,
+      "delta_hz": 0.0,
+      "delta_D": -0.001953125,
+      "relative_hz_change": 0.0,
+      "relative_D_change": 0.0625,
+      "ground_P": 0,
+      "L": 32,
+      "chi": 64,
+      "n_mid": 0.15540322858189765,
+      "Sbar": {
+        "1": 1.011183954639316,
+        "6": 1.093663297895509,
+        "12": 1.06087140630358
+      },
+      "ground_delta_n": -0.07262728743495322,
+      "ground_delta_Sbar6": -0.1876912869268137,
+      "density_range": 0.2074303563229361,
+      "valley": {
+        "Wa": 21.552847387157996,
+        "Wb": 21.474676106903964,
+        "imbalance": 0.0018167738671927218
+      },
+      "valley_half_boundary": {
+        "Wa": 21.513761747030973,
+        "Wb": 21.513761747030976,
+        "imbalance": -8.256839786028578e-17
+      },
+      "both_gates": true,
+      "schedule_limit_hits": [
+        false,
+        false
+      ],
+      "same_parity_response": [
+        {
+          "P": 0,
+          "delta_n": -0.07262728743495322,
+          "delta_Sbar6": -0.1876912869268137
+        },
+        {
+          "P": 1,
+          "delta_n": -0.021196807879210855,
+          "delta_Sbar6": -0.09077257149636231
+        }
+      ],
+      "source_tags": [
+        "tolerance_V8_k15o16_L32_P0",
+        "tolerance_V8_k15o16_L32_P1"
+      ]
+    },
+    {
+      "a": 0.96,
+      "kappa": 1.0625,
+      "delta_a": 0.0,
+      "delta_kappa": 0.0625,
+      "delta_hz": 0.0,
+      "delta_D": 0.001953125,
+      "relative_hz_change": 0.0,
+      "relative_D_change": 0.0625,
+      "ground_P": 1,
+      "L": 32,
+      "chi": 64,
+      "n_mid": 0.2643660079026505,
+      "Sbar": {
+        "1": 1.3517511794100587,
+        "6": 1.3077873785788123,
+        "12": 1.1701362730446545
+      },
+      "ground_delta_n": 0.03633549188579965,
+      "ground_delta_Sbar6": 0.02643279375648966,
+      "density_range": 0.3142667546916178,
+      "valley": {
+        "Wa": 34.961814156768625,
+        "Wb": 34.82296481765649,
+        "imbalance": 0.0019896794279884475
+      },
+      "valley_half_boundary": {
+        "Wa": 34.89238948721256,
+        "Wb": 34.89238948721255,
+        "imbalance": 2.036383137418839e-16
+      },
+      "both_gates": true,
+      "schedule_limit_hits": [
+        false,
+        false
+      ],
+      "same_parity_response": [
+        {
+          "P": 0,
+          "delta_n": 0.05966409722908805,
+          "delta_Sbar6": 0.0019277742092964623
+        },
+        {
+          "P": 1,
+          "delta_n": 0.06855110400783598,
+          "delta_Sbar6": 0.07273408796380831
+        }
+      ],
+      "source_tags": [
+        "tolerance_V8_k17o16_L32_P0",
+        "tolerance_V8_k17o16_L32_P1"
+      ]
+    },
+    {
+      "a": 0.965,
+      "kappa": 1,
+      "delta_a": 0.0050000000000000044,
+      "delta_kappa": 0,
+      "delta_hz": 0.0006250000000000006,
+      "delta_D": 0.0,
+      "relative_hz_change": 0.00016108247422680428,
+      "relative_D_change": 0,
+      "ground_P": 0,
+      "L": 32,
+      "chi": 64,
+      "n_mid": 0.22896328175805084,
+      "Sbar": {
+        "1": 1.3109182500844285,
+        "6": 1.2809841127957766,
+        "12": 1.1681143730171342
+      },
+      "ground_delta_n": 0.0009327657411999646,
+      "ground_delta_Sbar6": -0.0003704720265460537,
+      "density_range": 0.26823785850700077,
+      "valley": {
+        "Wa": 30.47962947412249,
+        "Wb": 30.377361919662924,
+        "imbalance": 0.001680456955189031
+      },
+      "valley_half_boundary": {
+        "Wa": 30.42849569689271,
+        "Wb": 30.428495696892703,
+        "imbalance": 1.167561391857862e-16
+      },
+      "both_gates": true,
+      "schedule_limit_hits": [
+        false,
+        false
+      ],
+      "same_parity_response": [
+        {
+          "P": 0,
+          "delta_n": 0.0009327657411999646,
+          "delta_Sbar6": -0.0003704720265460537
+        },
+        {
+          "P": 1,
+          "delta_n": 0.06774775753905476,
+          "delta_Sbar6": 0.07407544489273454
+        }
+      ],
+      "source_tags": [
+        "tolerance_V8_a193o200_L32_P0",
+        "tolerance_V8_a193o200_L32_P1"
+      ]
+    }
+  ],
   "tolerance_scope": "L=32 finite-state response only; no verified thermodynamic CFT window width.",
   "independent_start": {
-    "status": "pending"
+    "status": "done",
+    "tags": [
+      "extended_V8_a24o25_L64_P0",
+      "restart_V8_a24o25_L64_P0_seed7"
+    ],
+    "dE": -3.581135388230905e-12,
+    "dSbar": {
+      "1": 2.555590961073051e-08,
+      "6": 2.0566176095471178e-08,
+      "12": 1.6779342804085218e-08
+    },
+    "dn": 6.314709866117596e-11,
+    "both_gates": true,
+    "schedule_limit_hits": [
+      false,
+      false
+    ]
   },
-  "legacy_V4": [],
-  "legacy_scope": "Same microscopic V=4,kappa=1,a=1; new seed and staged chi comparison, with its measured convergence flags. No CFT identification from this alone."
+  "legacy_V4": [
+    {
+      "P": 0,
+      "old_source": "contrib/d2_order_one_20261110/dmrg/bridge_r4_u1_k4_L96_P0_s17.json",
+      "new_source": "outputs/legacy_V4_a1_L96_P0.json",
+      "old": {
+        "chi": 192,
+        "E": -97.9832902257711,
+        "Sbar": {
+          "1": 1.825155613792185,
+          "6": 1.8096275895056044,
+          "12": 1.802515670852665
+        },
+        "density_range": 0.30175127622673076
+      },
+      "new192": {
+        "E": -97.98329021720411,
+        "Sbar6_sweep": 1.8096891010670573,
+        "delta_E_from_old": 8.566985343350098e-09,
+        "delta_Sbar6_from_old": 6.151156145284276e-05
+      },
+      "new256": {
+        "E": -97.98329671530468,
+        "Sbar": {
+          "1": 1.8303931094935741,
+          "6": 1.8147925960730868,
+          "12": 1.807433191497064
+        },
+        "density": 0.2963615744043268,
+        "density_range": 0.30146504513419803,
+        "gates": {
+          "residual": true,
+          "stationarity": true,
+          "discarded_weight": true,
+          "chi_step": true
+        },
+        "schedule_limit_hit": false,
+        "dS_chi": 0.0051199489440916235,
+        "variance": 1.4570413441106211e-05,
+        "variance_per_site": 1.5177514001152304e-07,
+        "physical_energy_check": -97.98329671530493
+      }
+    },
+    {
+      "P": 1,
+      "old_source": "contrib/d2_order_one_20261110/dmrg/bridge_r4_u1_k4_L96_P1_s17.json",
+      "new_source": "outputs/legacy_V4_a1_L96_P1.json",
+      "old": {
+        "chi": 192,
+        "E": -97.98309788222842,
+        "Sbar": {
+          "1": 1.8459722935734533,
+          "6": 1.8401416559392854,
+          "12": 1.8385885541513058
+        },
+        "density_range": 0.29474202221274504
+      },
+      "new192": {
+        "E": -97.98309788600699,
+        "Sbar6_sweep": 1.8402229815452391,
+        "delta_E_from_old": -3.778566792789206e-09,
+        "delta_Sbar6_from_old": 8.13256059537526e-05
+      },
+      "new256": {
+        "E": -97.98310505944835,
+        "Sbar": {
+          "1": 1.851819908078001,
+          "6": 1.845819370687113,
+          "12": 1.843936225779752
+        },
+        "density": 0.2928759306365803,
+        "density_range": 0.29445988490936764,
+        "gates": {
+          "residual": true,
+          "stationarity": true,
+          "discarded_weight": true,
+          "chi_step": true
+        },
+        "schedule_limit_hit": false,
+        "dS_chi": 0.0056179177865669505,
+        "variance": 1.61221764756192e-05,
+        "variance_per_site": 1.679393382877e-07,
+        "physical_energy_check": -97.98310505944852
+      }
+    }
+  ],
+  "legacy_scope": "Same microscopic V=4,kappa=1,a=1; new seed and staged chi comparison, with its measured convergence flags. No CFT identification from this alone.",
+  "old_V8_FES_reanalysis": [
+    {
+      "source": {
+        "path": "codex/work_C177/typhon_out/vc/F8_n2.json",
+        "sha256": "8f9c364cec5752c765f01aecc6c2ac7fa2c4073232578328469dba40c20149c1"
+      },
+      "cell": 2,
+      "couplings": {
+        "Jx": 0.5,
+        "Jy": -0.5,
+        "D": 0.029018210133013443,
+        "Jz": 2.0,
+        "hz": -3.8791274958685356,
+        "Jxz": 0.0,
+        "hx": 0.0
+      },
+      "requested_chi_window": [
+        64,
+        192
+      ],
+      "actual_chi": [
+        64,
+        96,
+        128,
+        160,
+        192
+      ],
+      "c_FES": 1.4034537609162436,
+      "xi_range": [
+        172.37783283982827,
+        503.70481254039663
+      ],
+      "old_optimizer_error_range": [
+        1.177045872221223e-05,
+        6.52085749303953e-05
+      ]
+    },
+    {
+      "source": {
+        "path": "codex/work_C177/typhon_out/vc/F8_n2.json",
+        "sha256": "8f9c364cec5752c765f01aecc6c2ac7fa2c4073232578328469dba40c20149c1"
+      },
+      "cell": 2,
+      "couplings": {
+        "Jx": 0.5,
+        "Jy": -0.5,
+        "D": 0.029018210133013443,
+        "Jz": 2.0,
+        "hz": -3.8791274958685356,
+        "Jxz": 0.0,
+        "hx": 0.0
+      },
+      "requested_chi_window": [
+        128,
+        384
+      ],
+      "actual_chi": [
+        128,
+        160,
+        192,
+        256,
+        320,
+        384
+      ],
+      "c_FES": 1.2772885916240557,
+      "xi_range": [
+        349.0262295809735,
+        806.6821671851919
+      ],
+      "old_optimizer_error_range": [
+        1.6975844739919537e-05,
+        0.0010906052889691977
+      ]
+    },
+    {
+      "source": {
+        "path": "codex/work_C177/typhon_out/vc/F8_n2.json",
+        "sha256": "8f9c364cec5752c765f01aecc6c2ac7fa2c4073232578328469dba40c20149c1"
+      },
+      "cell": 2,
+      "couplings": {
+        "Jx": 0.5,
+        "Jy": -0.5,
+        "D": 0.029018210133013443,
+        "Jz": 2.0,
+        "hz": -3.8791274958685356,
+        "Jxz": 0.0,
+        "hx": 0.0
+      },
+      "requested_chi_window": [
+        256,
+        1024
+      ],
+      "actual_chi": [
+        256,
+        320,
+        384
+      ],
+      "c_FES": 1.1709646233676418,
+      "xi_range": [
+        672.27529511212,
+        806.6821671851919
+      ],
+      "old_optimizer_error_range": [
+        0.0002681842568871837,
+        0.0010906052889691977
+      ]
+    },
+    {
+      "source": {
+        "path": "codex/work_C177/typhon_out/vc/F8_n4.json",
+        "sha256": "e9f2db66cc2851e423536543d2b77ebfa98fb2e40bee7ecffe49f1adf126d6f1"
+      },
+      "cell": 4,
+      "couplings": {
+        "Jx": 0.5,
+        "Jy": -0.5,
+        "D": 0.029018210133013443,
+        "Jz": 2.0,
+        "hz": -3.8791274958685356,
+        "Jxz": 0.0,
+        "hx": 0.0
+      },
+      "requested_chi_window": [
+        64,
+        192
+      ],
+      "actual_chi": [
+        64,
+        96,
+        128,
+        192
+      ],
+      "c_FES": 1.400920703435993,
+      "xi_range": [
+        172.36136627926157,
+        500.4449830931058
+      ],
+      "old_optimizer_error_range": [
+        9.075751450374795e-06,
+        2.0715849105850085e-05
+      ]
+    },
+    {
+      "source": {
+        "path": "codex/work_C177/typhon_out/vc/F8_n4.json",
+        "sha256": "e9f2db66cc2851e423536543d2b77ebfa98fb2e40bee7ecffe49f1adf126d6f1"
+      },
+      "cell": 4,
+      "couplings": {
+        "Jx": 0.5,
+        "Jy": -0.5,
+        "D": 0.029018210133013443,
+        "Jz": 2.0,
+        "hz": -3.8791274958685356,
+        "Jxz": 0.0,
+        "hx": 0.0
+      },
+      "requested_chi_window": [
+        128,
+        384
+      ],
+      "actual_chi": [
+        128,
+        192,
+        256
+      ],
+      "c_FES": 1.331512178020164,
+      "xi_range": [
+        349.4591225912022,
+        664.709324442882
+      ],
+      "old_optimizer_error_range": [
+        1.380068723623858e-05,
+        0.00038915586918478954
+      ]
+    }
+  ],
+  "old_FES_scope": "Unweighted fits of mean half-chain entropy against log correlation length in saved C177 states, not new infinite-chain runs. Old optimizer error is not the current local eigensolver residual."
 }

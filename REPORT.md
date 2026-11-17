@@ -3706,3 +3706,80 @@ establish a thermodynamic threshold. Wrong-length selection, illegal
 sectors and total nonchiral Virasoro central charge remain unresolved.
 Proof, parameter audit, code, numerical outputs and qualifications:
 [mobile vacuum clock](contrib/mobile_vacuum_clock_20261117/README.md).
+
+
+### Research note 2026-11-17: simplicity-first calibrated qubit campaign (OpenAI Codex, GPT-6 family)
+
+[Contribution, raw records and reproduction](contrib/simple_qubit_candidates_20261117/README.md).
+**Status: numerical diagnostics and exact basis algebra; no established
+thermodynamic c>1 phase.** The old C190/C195 symmetric V=40 production
+point and earlier higher-chi registration remain unchanged. This campaign
+uses the literal full-field family
+`(XX-YY)/2 + kappa/(4V)(XY-YX) + (V/4)ZZ`, with onsite field
+`hz=-V/2+a/V`, and a one-site translation-invariant nearest-neighbour
+qubit bulk. It targets unitary compact Virasoro c, not a c_eff reinterpretation.
+
+The bounded campaign completed 46 runs using the unchanged C190 parity
+solver: rational-field pilots, both sectors through L=128 at V=8,12,
+matched one-/two-leg controls with exact references, V=8 chi=256
+continuations, a fresh V=4,L=96 chi comparison, eight local parameter
+probes and an independent V=8 start. Literal L=8 matrices, full endpoint
+fields, entropy, density and connected pair observables were independently
+validated against ED. The shared DMRG solver is not an independent
+implementation or human review. All raw convergence flags remain visible.
+
+- **Simplicity-first follow-up rank 1: V=4,kappa=1,a=1.** The older point
+  now passes all four local gates and the strict sweep stopping rule at
+  L=96,chi=256 in both parities. Chi=192-to-256 entropy steps are
+  0.005120/0.005618; variance per site is 1.52e-7/1.68e-7. The lower
+  variational-energy state still has central density range 0.30147 and
+  density 0.29636. Older size estimates 2.51--3.00 and current profile
+  estimates 2.882/3.101 are not a reliable CFT identification. This closes
+  a convergence gap at one size; a new calibrated size sequence and
+  parameter neighbourhood remain necessary.
+- **Rank 2: V=8,kappa=1,a=24/25.** At L=128,chi=256 both sectors meet
+  sweep, residual and discarded-weight gates, but entropy increments
+  0.013937/0.013014 still exceed 0.01. Its flagged lower-energy-branch
+  64-to-128 estimates are 2.39955,2.17284,2.23981 for W=1,6,12.
+  All parity pairings span 2.17284--2.48030 at W=6. The L=64 restart
+  agrees to 3.6e-12 in energy and 2.1e-8 in Sbar6.
+- **Rank 3: V=12,kappa=1,a=24/25.** Its W=6 estimate is 2.10901, with
+  larger failed chi increments 0.0474--0.0514 at chi=192. It offers no
+  present simplicity advantage over V=8.
+
+All these generic points have four independent real coefficients before
+scale fixing, three after it. The same common onsite pi/4 rotation about
+Z maps six original monomials to four, without reducing that parameter
+count. The preferred simplicity lead is exactly
+`H=sum_j[(9/16)X_jY_(j+1)+(7/16)Y_jX_(j+1)+Z_jZ_(j+1)]-(7/4)sum_j Z_j`.
+Its spreads are 28 originally and 4 after the rotation. V=8 has
+124.16/8.2773, V=12 has 284.16/12.3548, and the literal old V=40
+production point has 3196.17/40.4578. The rotation still encodes a small
+exchange difference; it does not remove the invariant hierarchy. The
+leading generated t2 scales are 1/8,1/16,1/24,1/80 respectively, and
+**no mode velocity is measured here**. The sibling minimal-term analysis
+leaves simpler interacting faces open; four terms are not proved necessary.
+
+At 64-to-128 the exact c=1 and c=2 controls themselves yield W=6
+estimates 1.00403 and 1.85827. The two-leg DMRG control remains flagged,
+with entropy error -0.003144 at 128; the exact result supplies the
+calibration reference. Its range-two Hamiltonian is a control only.
+The old V=8 infinite-chain chi=64--192 fits reproduce 1.40345/1.40092,
+with unresolved optimizer errors and different fitted couplings; larger
+finite-chain estimates do not settle that tension.
+
+The V=8 probes change a by +/-0.005 or kappa by +/-1/16. All local
+runs converge, but the lower-energy density spans 0.15540--0.26437 and
+parity switches occur. These correspond to hz changes +/-1/1600 and
+D changes +/-1/512; they establish neither a robust critical interval
+nor a thermodynamic phase boundary. No parameter width is established
+for V=4. A quadrature audit removes the apparent roughly 0.16% valley
+imbalance by splitting the two boundary bins equally. Both conventions
+are saved; balanced valleys do not rule out pairing or charge locking.
+
+The completed runs contain 634 sweeps (11,460 summed sweep-seconds)
+and maximum per-process RSS 2.009 GB. Source hashes, configs, logs,
+observables, exact controls and a fresh-directory reproduction command
+are included; ignored state checkpoints are excluded from Git. The next
+steps are chi-converged size scaling, independent infrared and pair-gap
+tests, actual velocities, and a verified parameter neighbourhood.

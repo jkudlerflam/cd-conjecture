@@ -123,3 +123,19 @@
     took about 16.4--17.0 minutes each and stayed below 1.95 GB RSS.
     They are followed by the preselected V=4 and tolerance/start tests,
     with no further V=8 size or chi escalation in this campaign.
+18. The fresh V=4,L=96,chi=256 runs pass all four local gates and the
+    strict stopping rule in both parities. Entropy increments from 192
+    are 0.005120/0.005618 and variance per site is 1.52e-7/1.68e-7.
+    This changes the simplicity-first follow-up ranking: V=4 precedes
+    V=8, with V=12 third. It does not establish a CFT: density range
+    remains 0.30147 in the lower-energy state, profile/window estimates
+    disagree, and only the old L=96 chi gap was addressed here.
+19. All eight V=8 tolerance pilots pass local gates. Their lower-energy
+    densities span 0.15540--0.26437 and sectors switch. The physical
+    field steps are +/-1/1600 and DM steps +/-1/512. Do not call this
+    a robust critical window or a thermodynamic boundary. The L=64
+    independent even seed agrees to 3.6e-12 in energy and 2.1e-8 in Sbar6.
+20. All 46 scheduled runs are complete; no production job remains.
+    Eight earlier unused config alternatives are retained and listed
+    as unrun in the inventory, not counted as numerical results. The
+    final rank concerns next tests, not an established c>1 phase.

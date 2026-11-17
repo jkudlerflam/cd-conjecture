@@ -62,6 +62,22 @@ def main():
                 physical_energy_check=raw.get('variance_energy'))))
     out['legacy_V4']=legacy
     out['legacy_scope']='Same microscopic V=4,kappa=1,a=1; new seed and staged chi comparison, with its measured convergence flags. No CFT identification from this alone.'
+    old_fes=[]
+    audit=json.loads((HERE/'source_audit.json').read_text())
+    for rec in audit['old_infinite']:
+        if rec['V']!=8:continue
+        raw=json.loads((ROOT/rec['source']['path']).read_text())
+        for lo,hi in ((64,192),(128,384),(256,1024)):
+            rr=[r for r in rec['results'] if lo<=r['chi']<=hi]
+            if len(rr)<3:continue
+            xx=np.log([r['xi'] for r in rr]);yy=np.array([np.mean(r['S']) for r in rr])
+            slope,intercept=np.polyfit(xx,yy,1)
+            old_fes.append(dict(source=rec['source'],cell=rec['cell'],couplings=raw['couplings'],
+                requested_chi_window=[lo,hi],actual_chi=[r['chi'] for r in rr],
+                c_FES=float(6*slope),xi_range=[min(r['xi'] for r in rr),max(r['xi'] for r in rr)],
+                old_optimizer_error_range=[min(r['err'] for r in rr),max(r['err'] for r in rr)]))
+    out['old_V8_FES_reanalysis']=old_fes
+    out['old_FES_scope']='Unweighted fits of mean half-chain entropy against log correlation length in saved C177 states, not new infinite-chain runs. Old optimizer error is not the current local eigensolver residual.'
     (HERE/'followup_analysis.json').write_text(json.dumps(out,indent=2)+'\n')
     print(json.dumps(out,indent=2))
 

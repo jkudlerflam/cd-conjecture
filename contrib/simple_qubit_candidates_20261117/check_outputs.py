@@ -20,8 +20,14 @@ def main():
             G=np.array(m['Gf_re'])+1j*np.array(m['Gf_im']);ev=np.linalg.eigvalsh(G)
             herm=float(np.max(abs(G-G.conj().T)));assert herm<1e-12 and min(ev)>-1e-8 and max(ev)<1+1e-8
             lo,n=m['gwin'];diagerr=float(np.max(abs(G.diagonal().real-dens[lo:lo+n])));assert diagerr<1e-12
+            energy_check=None
+            if 'variance' in d:
+                assert np.isfinite(d['variance']) and d['variance']>=-1e-10
+                energy_check=abs(d['variance_energy']-d['hist'][-1]['E_phys'])
+                assert energy_check<1e-8
             rows.append(dict(tag=d['cfg']['tag'],parity_error=par_error,fermion_hermiticity_error=herm,
                 fermion_eigenvalue_range=[float(min(ev)),float(max(ev))],fermion_diagonal_error=diagerr,
+                global_energy_contraction_error=energy_check,
                 density_reflection_error=float(np.max(abs(dens-dens[::-1])))))
     (HERE/'output_checks.json').write_text(json.dumps(dict(checked=len(rows),rows=rows,
         scope='Parity, entropy bounds and one-body positivity; not a CFT or ground-state certification.'),indent=2)+'\n')

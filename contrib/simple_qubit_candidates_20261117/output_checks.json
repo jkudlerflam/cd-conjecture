@@ -1,5 +1,5 @@
 {
-  "checked": 35,
+  "checked": 46,
   "rows": [
     {
       "tag": "base_V12_a24o25_L32_P0",
@@ -10,6 +10,7 @@
         0.8476344805296743
       ],
       "fermion_diagonal_error": 0.0,
+      "global_energy_contraction_error": null,
       "density_reflection_error": 2.003081812640417e-07
     },
     {
@@ -21,6 +22,7 @@
         0.8379650284934864
       ],
       "fermion_diagonal_error": 0.0,
+      "global_energy_contraction_error": null,
       "density_reflection_error": 1.3605110649184127e-07
     },
     {
@@ -32,6 +34,7 @@
         0.7560807003294684
       ],
       "fermion_diagonal_error": 0.0,
+      "global_energy_contraction_error": null,
       "density_reflection_error": 8.264466032803508e-06
     },
     {
@@ -43,6 +46,7 @@
         0.7561491079088916
       ],
       "fermion_diagonal_error": 0.0,
+      "global_energy_contraction_error": null,
       "density_reflection_error": 1.250736627839144e-05
     },
     {
@@ -54,6 +58,7 @@
         0.8472614552568644
       ],
       "fermion_diagonal_error": 0.0,
+      "global_energy_contraction_error": null,
       "density_reflection_error": 1.3330666787103596e-07
     },
     {
@@ -65,6 +70,7 @@
         0.8583631692947942
       ],
       "fermion_diagonal_error": 0.0,
+      "global_energy_contraction_error": null,
       "density_reflection_error": 1.2324349280001812e-07
     },
     {
@@ -76,6 +82,7 @@
         0.7552189085870553
       ],
       "fermion_diagonal_error": 0.0,
+      "global_energy_contraction_error": null,
       "density_reflection_error": 6.7558441680937165e-06
     },
     {
@@ -87,6 +94,7 @@
         0.7561657653240688
       ],
       "fermion_diagonal_error": 0.0,
+      "global_energy_contraction_error": null,
       "density_reflection_error": 8.450433537476876e-06
     },
     {
@@ -98,6 +106,7 @@
         0.6974355026161906
       ],
       "fermion_diagonal_error": 0.0,
+      "global_energy_contraction_error": null,
       "density_reflection_error": 5.046354904691963e-05
     },
     {
@@ -109,6 +118,7 @@
         0.6989118227918695
       ],
       "fermion_diagonal_error": 0.0,
+      "global_energy_contraction_error": null,
       "density_reflection_error": 5.48142620308556e-05
     },
     {
@@ -120,6 +130,7 @@
         0.7556890975952567
       ],
       "fermion_diagonal_error": 0.0,
+      "global_energy_contraction_error": null,
       "density_reflection_error": 4.290048860322582e-06
     },
     {
@@ -131,6 +142,7 @@
         0.7557100842860626
       ],
       "fermion_diagonal_error": 0.0,
+      "global_energy_contraction_error": null,
       "density_reflection_error": 4.5762980517283225e-06
     },
     {
@@ -142,6 +154,7 @@
         0.6976271173431721
       ],
       "fermion_diagonal_error": 0.0,
+      "global_energy_contraction_error": null,
       "density_reflection_error": 2.662671722680754e-05
     },
     {
@@ -153,6 +166,7 @@
         0.6966540481932395
       ],
       "fermion_diagonal_error": 0.0,
+      "global_energy_contraction_error": null,
       "density_reflection_error": 2.5481715574093844e-05
     },
     {
@@ -164,6 +178,7 @@
         0.7548742028316404
       ],
       "fermion_diagonal_error": 0.0,
+      "global_energy_contraction_error": null,
       "density_reflection_error": 2.687298917392056e-06
     },
     {
@@ -175,6 +190,7 @@
         0.7558648553956722
       ],
       "fermion_diagonal_error": 0.0,
+      "global_energy_contraction_error": null,
       "density_reflection_error": 1.5324609993760951e-06
     },
     {
@@ -186,6 +202,7 @@
         0.696269703893614
       ],
       "fermion_diagonal_error": 0.0,
+      "global_energy_contraction_error": null,
       "density_reflection_error": 8.125776067013923e-06
     },
     {
@@ -197,7 +214,32 @@
         0.6953349682621547
       ],
       "fermion_diagonal_error": 0.0,
+      "global_energy_contraction_error": null,
       "density_reflection_error": 9.088179994620749e-06
+    },
+    {
+      "tag": "legacy_V4_a1_L96_P0",
+      "parity_error": 8.881784197001252e-16,
+      "fermion_hermiticity_error": 0.0,
+      "fermion_eigenvalue_range": [
+        0.06961472344885132,
+        0.7521537313745714
+      ],
+      "fermion_diagonal_error": 0.0,
+      "global_energy_contraction_error": 2.5579538487363607e-13,
+      "density_reflection_error": 4.84616775309199e-06
+    },
+    {
+      "tag": "legacy_V4_a1_L96_P1",
+      "parity_error": 1.0880185641326534e-14,
+      "fermion_hermiticity_error": 0.0,
+      "fermion_eigenvalue_range": [
+        0.07199427389200752,
+        0.7509288079206836
+      ],
+      "fermion_diagonal_error": 0.0,
+      "global_energy_contraction_error": 1.7053025658242404e-13,
+      "density_reflection_error": 5.9155616517481135e-06
     },
     {
       "tag": "pilot_V12_a1_L32_P0",
@@ -208,6 +250,7 @@
         0.8312839150807468
       ],
       "fermion_diagonal_error": 0.0,
+      "global_energy_contraction_error": null,
       "density_reflection_error": 2.0776483742324103e-06
     },
     {
@@ -219,6 +262,7 @@
         0.8292535812502222
       ],
       "fermion_diagonal_error": 0.0,
+      "global_energy_contraction_error": null,
       "density_reflection_error": 5.270820538916254e-07
     },
     {
@@ -230,6 +274,7 @@
         0.8477464894371698
       ],
       "fermion_diagonal_error": 0.0,
+      "global_energy_contraction_error": null,
       "density_reflection_error": 2.1758592159748513e-05
     },
     {
@@ -241,6 +286,7 @@
         0.8381291664597639
       ],
       "fermion_diagonal_error": 0.0,
+      "global_energy_contraction_error": null,
       "density_reflection_error": 1.7891891745613897e-05
     },
     {
@@ -252,6 +298,7 @@
         0.8359724805777976
       ],
       "fermion_diagonal_error": 0.0,
+      "global_energy_contraction_error": null,
       "density_reflection_error": 1.955424821953322e-06
     },
     {
@@ -263,6 +310,7 @@
         0.8342822176983207
       ],
       "fermion_diagonal_error": 0.0,
+      "global_energy_contraction_error": null,
       "density_reflection_error": 1.0667180277756927e-05
     },
     {
@@ -274,6 +322,7 @@
         0.84735400043543
       ],
       "fermion_diagonal_error": 0.0,
+      "global_energy_contraction_error": null,
       "density_reflection_error": 1.1809246055927147e-05
     },
     {
@@ -285,6 +334,7 @@
         0.85844441632935
       ],
       "fermion_diagonal_error": 0.0,
+      "global_energy_contraction_error": null,
       "density_reflection_error": 1.725952834896738e-05
     },
     {
@@ -296,6 +346,7 @@
         0.849453227733273
       ],
       "fermion_diagonal_error": 0.0,
+      "global_energy_contraction_error": null,
       "density_reflection_error": 1.381492347896085e-05
     },
     {
@@ -307,7 +358,116 @@
         0.8426447227683458
       ],
       "fermion_diagonal_error": 0.0,
+      "global_energy_contraction_error": null,
       "density_reflection_error": 1.691233123157776e-05
+    },
+    {
+      "tag": "restart_V8_a24o25_L64_P0_seed7",
+      "parity_error": 3.1086244689504383e-15,
+      "fermion_hermiticity_error": 0.0,
+      "fermion_eigenvalue_range": [
+        0.026310637448039364,
+        0.7548741974182376
+      ],
+      "fermion_diagonal_error": 0.0,
+      "global_energy_contraction_error": null,
+      "density_reflection_error": 2.688573832343444e-06
+    },
+    {
+      "tag": "tolerance_V8_a191o200_L32_P0",
+      "parity_error": 2.220446049250313e-16,
+      "fermion_hermiticity_error": 0.0,
+      "fermion_eigenvalue_range": [
+        0.021680462020786696,
+        0.8492295675565392
+      ],
+      "fermion_diagonal_error": 0.0,
+      "global_energy_contraction_error": null,
+      "density_reflection_error": 1.1946872169210643e-05
+    },
+    {
+      "tag": "tolerance_V8_a191o200_L32_P1",
+      "parity_error": 5.773159728050814e-15,
+      "fermion_hermiticity_error": 0.0,
+      "fermion_eigenvalue_range": [
+        0.025516684710094526,
+        0.8589060777082241
+      ],
+      "fermion_diagonal_error": 0.0,
+      "global_energy_contraction_error": null,
+      "density_reflection_error": 1.520151535505665e-05
+    },
+    {
+      "tag": "tolerance_V8_a193o200_L32_P0",
+      "parity_error": 4.440892098500626e-16,
+      "fermion_hermiticity_error": 0.0,
+      "fermion_eigenvalue_range": [
+        0.027265696112555613,
+        0.8484692113440234
+      ],
+      "fermion_diagonal_error": 0.0,
+      "global_energy_contraction_error": null,
+      "density_reflection_error": 1.2386385233209563e-05
+    },
+    {
+      "tag": "tolerance_V8_a193o200_L32_P1",
+      "parity_error": 2.220446049250313e-16,
+      "fermion_hermiticity_error": 0.0,
+      "fermion_eigenvalue_range": [
+        0.028747002826427843,
+        0.8404433190663108
+      ],
+      "fermion_diagonal_error": 0.0,
+      "global_energy_contraction_error": null,
+      "density_reflection_error": 1.4033553776660046e-05
+    },
+    {
+      "tag": "tolerance_V8_k15o16_L32_P0",
+      "parity_error": 3.6637359812630166e-15,
+      "fermion_hermiticity_error": 0.0,
+      "fermion_eigenvalue_range": [
+        0.0232917990170541,
+        0.8552142961209916
+      ],
+      "fermion_diagonal_error": 0.0,
+      "global_energy_contraction_error": null,
+      "density_reflection_error": 5.3920048802558185e-06
+    },
+    {
+      "tag": "tolerance_V8_k15o16_L32_P1",
+      "parity_error": 5.10702591327572e-15,
+      "fermion_hermiticity_error": 0.0,
+      "fermion_eigenvalue_range": [
+        0.020891936403375663,
+        0.8574661386146072
+      ],
+      "fermion_diagonal_error": 0.0,
+      "global_energy_contraction_error": null,
+      "density_reflection_error": 1.0690122872136776e-05
+    },
+    {
+      "tag": "tolerance_V8_k17o16_L32_P0",
+      "parity_error": 2.7755575615628914e-15,
+      "fermion_hermiticity_error": 0.0,
+      "fermion_eigenvalue_range": [
+        0.0258774620998286,
+        0.8366492811031911
+      ],
+      "fermion_diagonal_error": 0.0,
+      "global_energy_contraction_error": null,
+      "density_reflection_error": 1.1221172845354843e-05
+    },
+    {
+      "tag": "tolerance_V8_k17o16_L32_P1",
+      "parity_error": 6.661338147750939e-16,
+      "fermion_hermiticity_error": 0.0,
+      "fermion_eigenvalue_range": [
+        0.029418156134681857,
+        0.8407672978892087
+      ],
+      "fermion_diagonal_error": 0.0,
+      "global_energy_contraction_error": null,
+      "density_reflection_error": 1.675064172257379e-05
     },
     {
       "tag": "xx1_L128_chi192",
@@ -318,6 +478,7 @@
         0.9999900568158626
       ],
       "fermion_diagonal_error": 0.0,
+      "global_energy_contraction_error": null,
       "density_reflection_error": 3.804679904462205e-10
     },
     {
@@ -329,6 +490,7 @@
         0.9999998095618088
       ],
       "fermion_diagonal_error": 0.0,
+      "global_energy_contraction_error": null,
       "density_reflection_error": 2.3165858120677285e-11
     },
     {
@@ -340,6 +502,7 @@
         0.9999938426554549
       ],
       "fermion_diagonal_error": 0.0,
+      "global_energy_contraction_error": null,
       "density_reflection_error": 3.14134718237824e-10
     },
     {
@@ -351,6 +514,7 @@
         0.4507894654330136
       ],
       "fermion_diagonal_error": 0.0,
+      "global_energy_contraction_error": null,
       "density_reflection_error": 3.436443989202065e-06
     },
     {
@@ -362,6 +526,7 @@
         0.4628341867186853
       ],
       "fermion_diagonal_error": 0.0,
+      "global_energy_contraction_error": null,
       "density_reflection_error": 6.150635556423367e-13
     },
     {
@@ -373,6 +538,7 @@
         0.45166805626222967
       ],
       "fermion_diagonal_error": 0.0,
+      "global_energy_contraction_error": null,
       "density_reflection_error": 8.221437048372415e-07
     },
     {
@@ -384,6 +550,7 @@
         0.4516632647796476
       ],
       "fermion_diagonal_error": 0.0,
+      "global_energy_contraction_error": null,
       "density_reflection_error": 1.6099128152813336e-07
     }
   ],

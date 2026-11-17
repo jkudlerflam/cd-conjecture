@@ -16,6 +16,8 @@ extended_V8_a24o25_L64_P0 n 0.19944 S6 1.565086 gates {'residual': True, 'statio
 extended_V8_a24o25_L64_P1 n 0.18884 S6 1.534584 gates {'residual': True, 'stationarity': True, 'discarded_weight': True, 'chi_step': True} dS_chi 0.003081273638566806
 final_V8_a24o25_L128_P0 n 0.20188 S6 1.82112 gates {'residual': True, 'stationarity': True, 'discarded_weight': True, 'chi_step': False} dS_chi 0.013936876360216344
 final_V8_a24o25_L128_P1 n 0.19677 S6 1.816102 gates {'residual': True, 'stationarity': True, 'discarded_weight': True, 'chi_step': False} dS_chi 0.013014461299949653
+legacy_V4_a1_L96_P0 n 0.29636 S6 1.814793 gates {'residual': True, 'stationarity': True, 'discarded_weight': True, 'chi_step': True} dS_chi 0.0051199489440916235
+legacy_V4_a1_L96_P1 n 0.29288 S6 1.845819 gates {'residual': True, 'stationarity': True, 'discarded_weight': True, 'chi_step': True} dS_chi 0.0056179177865669505
 pilot_V12_a1_L32_P0 n 0.38303 S6 1.112278 gates {'residual': True, 'stationarity': True, 'discarded_weight': True, 'chi_step': True} dS_chi 0.0002162372794958234
 pilot_V12_a1_L32_P1 n 0.43226 S6 0.588885 gates {'residual': True, 'stationarity': True, 'discarded_weight': True, 'chi_step': True} dS_chi 0.00019221604853891794
 pilot_V12_a24o25_L32_P0 n 0.22164 S6 1.2838 gates {'residual': True, 'stationarity': True, 'discarded_weight': True, 'chi_step': True} dS_chi 0.002351800955646466
@@ -26,6 +28,15 @@ pilot_V8_a24o25_L32_P0 n 0.22803 S6 1.281355 gates {'residual': True, 'stationar
 pilot_V8_a24o25_L32_P1 n 0.19581 S6 1.235053 gates {'residual': True, 'stationarity': True, 'discarded_weight': True, 'chi_step': True} dS_chi 0.0018465081782690351
 pilot_V8_a31o32_L32_P0 n 0.22939 S6 1.279375 gates {'residual': True, 'stationarity': True, 'discarded_weight': True, 'chi_step': True} dS_chi 0.002355808574007412
 pilot_V8_a31o32_L32_P1 n 0.26438 S6 1.306861 gates {'residual': True, 'stationarity': True, 'discarded_weight': True, 'chi_step': True} dS_chi 0.002738111853041403
+restart_V8_a24o25_L64_P0_seed7 n 0.19944 S6 1.565086 gates {'residual': True, 'stationarity': True, 'discarded_weight': True, 'chi_step': True} dS_chi 0.0033788090759980793
+tolerance_V8_a191o200_L32_P0 n 0.21049 S6 1.22416 gates {'residual': True, 'stationarity': True, 'discarded_weight': True, 'chi_step': True} dS_chi 0.0025892142342518465
+tolerance_V8_a191o200_L32_P1 n 0.19388 S6 1.232548 gates {'residual': True, 'stationarity': True, 'discarded_weight': True, 'chi_step': True} dS_chi 0.0016810177037707152
+tolerance_V8_a193o200_L32_P0 n 0.22896 S6 1.280984 gates {'residual': True, 'stationarity': True, 'discarded_weight': True, 'chi_step': True} dS_chi 0.0023531719891956016
+tolerance_V8_a193o200_L32_P1 n 0.26356 S6 1.309129 gates {'residual': True, 'stationarity': True, 'discarded_weight': True, 'chi_step': True} dS_chi 0.0028438906834262756
+tolerance_V8_k15o16_L32_P0 n 0.1554 S6 1.093663 gates {'residual': True, 'stationarity': True, 'discarded_weight': True, 'chi_step': True} dS_chi 0.0013713358996194636
+tolerance_V8_k15o16_L32_P1 n 0.17462 S6 1.144281 gates {'residual': True, 'stationarity': True, 'discarded_weight': True, 'chi_step': True} dS_chi 0.0015742959139890544
+tolerance_V8_k17o16_L32_P0 n 0.28769 S6 1.283282 gates {'residual': True, 'stationarity': True, 'discarded_weight': True, 'chi_step': True} dS_chi 0.003113429801786527
+tolerance_V8_k17o16_L32_P1 n 0.26437 S6 1.307787 gates {'residual': True, 'stationarity': True, 'discarded_weight': True, 'chi_step': True} dS_chi 0.002718587823140828
 xx1_L128_chi192 n 0.18985 S6 0.999474 gates {'residual': True, 'stationarity': True, 'discarded_weight': True, 'chi_step': True} dS_chi 5.492601806711406e-08
 xx1_L32_chi128 n 0.19811 S6 0.762481 gates {'residual': True, 'stationarity': True, 'discarded_weight': True, 'chi_step': True} dS_chi 2.220446049250313e-15
 xx1_L64_chi128 n 0.19202 S6 0.883484 gates {'residual': True, 'stationarity': True, 'discarded_weight': True, 'chi_step': True} dS_chi 2.76241030050528e-10
@@ -35,8 +46,8 @@ xx2_L64_chi128 n 0.19811 S6 1.569421 gates {'residual': True, 'stationarity': Fa
 xx2_L64_chi192 n 0.19811 S6 1.569809 gates {'residual': True, 'stationarity': False, 'discarded_weight': True, 'chi_step': True} dS_chi 0.0003936551002998723
 pair (12, 0.96, 1, None) [32, 64] {'1': np.float64(2.117849717105268), '6': np.float64(2.401871932136343), '12': np.float64(3.2166221442578156)} gates True n [0.2216451812656096, 0.1921670634873808]
 pair (12, 0.96, 1, None) [64, 128] {'1': np.float64(2.259712515345203), '6': np.float64(2.1090105497366083), '12': np.float64(2.1833336929371403)} gates False n [0.1921670634873808, 0.20273124635483225]
-pair (8, 0.96, 1, None) [32, 64] {'1': np.float64(2.1834751247447453), '6': np.float64(2.450983465137242), '12': np.float64(3.293140315984165)} gates True n [0.2280374806994407, 0.19944119512940414]
-pair (8, 0.96, 1, None) [64, 128] {'1': np.float64(2.3995539013028537), '6': np.float64(2.1728393001195805), '12': np.float64(2.239807651716536)} gates False n [0.19944119512940414, 0.1967650164743782]
+pair (8, 0.96, 1, None) [32, 64] {'1': np.float64(2.1834753459610496), '6': np.float64(2.4509836431615635), '12': np.float64(3.2931404612290125)} gates True n [0.2280374806994407, 0.19944119519255124]
+pair (8, 0.96, 1, None) [64, 128] {'1': np.float64(2.3995536800865493), '6': np.float64(2.172839122095259), '12': np.float64(2.2398075064716885)} gates False n [0.19944119519255124, 0.1967650164743782]
 pair (None, None, 1, 1) [32, 64] {'1': np.float64(1.0396540343664191), '6': np.float64(1.047420260550287), '12': np.float64(1.2571156963766765)} gates True n [0.1981088755601755, 0.19201647960129625]
 pair (None, None, 1, 1) [64, 128] {'1': np.float64(1.0241509317981718), '6': np.float64(1.0040258031345148), '12': np.float64(1.0450654693442996)} gates True n [0.19201647960129625, 0.1898492903992497]
 pair (None, None, 1, 2) [32, 64] {'1': np.float64(0.29815161124901624), '6': np.float64(2.3884596016048607), '12': np.float64(2.0900741230217807)} gates False n [0.19914154458999195, 0.19810873331758327]

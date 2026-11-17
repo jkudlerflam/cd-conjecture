@@ -73,6 +73,17 @@ These are spelled out in [CONTRIBUTING.md](CONTRIBUTING.md). In brief, tag every
 
 ## Where things stand
 
+**Simpler qubit candidates (2026-11-17):** A
+[46-run calibrated campaign](contrib/simple_qubit_candidates_20261117/README.md)
+closes the missing local chi check for the old V=4 point at L=96.
+Its common-basis form `(9/16)XY+(7/16)YX+ZZ-(7/4)Z` has four
+monomials and coefficient spread 4 (six monomials and spread 28 in
+the original basis). It is the simplest retained follow-up lead;
+strong density modulation and unresolved size scaling prevent a CFT
+claim. V=8 reaches L=128,chi=256 but still fails the chi-step gate;
+small parameter probes show substantial density/sector changes.
+No robust c>1 phase or new counterexample is established.
+
 **Mobile vacuum-clock control (2026-11-17):** A
 [coherent-gradient comparison](contrib/mobile_vacuum_clock_20261117/README.md)
 proves a positive compressed clock-pin cost and bounds vacuum-clock

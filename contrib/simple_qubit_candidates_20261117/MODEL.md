@@ -113,8 +113,9 @@ inside that slice is not an open c>1 region of general qubit bonds.
 The
 old effective-model pseudospin evidence does not automatically remove
 charge locking in the full qubit chain. At V=8 the older infinite-chain
-reading near 1.4 is therefore retained as contrary/unresolved evidence,
-not dismissed because a new finite-chain slope is higher. It uses
+reading near 1.4 is therefore retained as unresolved tension with a
+clean two-mode interpretation, not dismissed because a new finite-chain
+slope is higher. It uses
 different fitted coefficients and an older solver, so it is also not
 a direct verdict on the new rational point.
 
