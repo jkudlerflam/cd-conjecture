@@ -60,7 +60,12 @@ U^tensorL H U^dagger tensorL
 ```
 
 This has four monomials and the same four independent coefficients
-before scale. `simplicity.py` verifies the literal conjugation to
+before scale. The identity follows directly from
+`UXU^dagger=(X+Y)/sqrt(2)`, `UYU^dagger=(Y-X)/sqrt(2)` and
+`UZU^dagger=Z`: `XX-YY` becomes `XY+YX`, while `XY-YX` and `ZZ`
+are invariant. The two transverse coefficients have independent sum
+Delta and difference 2D, so the parameter count does not fall.
+`simplicity.py` verifies the literal conjugation to
 2.3e-16. The sibling
 [normal-form analysis](../qubit_minimal_terms_20261117/NORMAL_FORM.md)
 independently supplies the rotation invariants and cautions against
@@ -76,6 +81,9 @@ small difference between transverse exchanges: their difference is
 the hierarchy. The second-order |t2| is a generated kinetic scale;
 neither |t2| nor a mode velocity is used as a substitute for the
 microscopic coefficient-spread calculation.
+No mode velocity is measured in this campaign. The tabulated `t2`
+is a leading perturbative hopping coefficient, not a measured velocity
+or a lower bound on the smallest infrared scale.
 
 In particular, the rational V=8 point is exactly
 
@@ -125,6 +133,14 @@ tests currently have less direct c>1 evidence and are not promoted to
 counterexamples by their short expressions.
 
 ## Observable definitions and a quadrature check
+
+The V=8 tolerance probes change a by +/-1/200 or kappa by +/-1/16,
+one parameter at a time. These mean physical changes
+`delta hz=+/-1/1600` (0.0161% of |hz|) or `delta D=+/-1/512`
+(6.25% of D). In the rotated expression the latter changes each
+transverse coefficient by only about 0.37--0.42%, in opposite directions.
+Finite-L response to these probes must not be advertised as a broad
+verified critical phase, whichever basis is used to display the bond.
 
 The source convention uses the central-window fermion matrix with its
 Jordan--Wigner string and a 256-point momentum grid. It partitions

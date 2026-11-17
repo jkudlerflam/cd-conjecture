@@ -107,3 +107,19 @@
     Retain that value and also split those two bins equally; corrected
     imbalance is at numerical roundoff on the symmetric candidates.
     Neither convention tests charge locking or proves two gapless modes.
+16. A fresh-directory L=32 one-leg XX reproduction test exactly matches
+    the archived energy, density and all three entropy-window values.
+    This tiny control validation overlapped the two production workers;
+    it is not an additional parameter scan. `reproduce.py` reconstructs
+    warm-start dependencies sequentially in a separate directory, so
+    missing ignored checkpoints do not prevent fresh reproduction or
+    silently reuse the committed JSON records as new calculations.
+17. V=8,L=128,chi=256 completes in both parities. The strict stopping
+    rule is met after six sweeps, but chi increments 0.013937/0.013014
+    still fail the 0.01 gate. Its 64-to-128 lower-energy-branch W=6
+    estimate moves from 2.059737 at chi=192 to 2.172839 at chi=256;
+    all four parity pairings span 2.172839--2.480305. Retain the flags
+    and stop this extension at its stated cap. The two continuations
+    took about 16.4--17.0 minutes each and stayed below 1.95 GB RSS.
+    They are followed by the preselected V=4 and tolerance/start tests,
+    with no further V=8 size or chi escalation in this campaign.

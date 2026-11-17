@@ -7,6 +7,19 @@ from common import HERE,ROOT,Ana
 
 def main():
     a=json.loads((HERE/'analysis.json').read_text());rows=a['rows'];out={}
+    base_tol=[r for r in rows if r['tag'] in ('pilot_V8_a24o25_L32_P0','pilot_V8_a24o25_L32_P1')]
+    base_ground=min(base_tol,key=lambda r:r['E'])
+    out['tolerance_baseline']=dict(tag=base_ground['tag'],P=base_ground['P'],L=32,chi=64,
+        a=.96,kappa=1,n_mid=base_ground['n_mid'],Sbar=base_ground['Sbar'])
+    bracket=[]
+    for V,aa in sorted({(r['V'],r['a']) for r in rows if r['tag'].startswith('pilot_')}):
+        rs=[r for r in rows if r['tag'].startswith('pilot_') and (r['V'],r['a'])==(V,aa)]
+        if len(rs)!=2:continue
+        g=min(rs,key=lambda r:r['E'])
+        bracket.append(dict(V=V,a=aa,ground_P=g['P'],ground_n=g['n_mid'],
+            parity_densities={str(r['P']):r['n_mid'] for r in rs},
+            source_tags=[r['tag'] for r in rs],both_gates=all(r['all_gates'] for r in rs)))
+    out['field_bracketing']=bracket
     groups={}
     for r in rows:
         if r['tag'].startswith('tolerance_'):
@@ -16,9 +29,13 @@ def main():
         if len(rs)!=2:continue
         r=min(rs,key=lambda r:r['E'])
         toler.append(dict(a=aa,kappa=k,delta_a=aa-.96,delta_kappa=k-1,delta_hz=(aa-.96)/8,delta_D=(k-1)/32,
+            relative_hz_change=abs((aa-.96)/8)/3.88,relative_D_change=abs(k-1),
             ground_P=r['P'],L=r['L'],chi=r['chi'],n_mid=r['n_mid'],Sbar=r['Sbar'],
+            ground_delta_n=r['n_mid']-base_ground['n_mid'],ground_delta_Sbar6=r['Sbar']['6']-base_ground['Sbar']['6'],
             density_range=r['central_density_range'],valley=r['valley'],valley_half_boundary=r['valley_half_boundary'],
             both_gates=all(x['all_gates'] for x in rs),schedule_limit_hits=[x['schedule_limit_hit'] for x in rs],
+            same_parity_response=[dict(P=x['P'],delta_n=x['n_mid']-next(b for b in base_tol if b['P']==x['P'])['n_mid'],
+                delta_Sbar6=x['Sbar']['6']-next(b for b in base_tol if b['P']==x['P'])['Sbar']['6']) for x in rs],
             source_tags=[x['tag'] for x in rs]))
     out['tolerance_pilots']=toler
     out['tolerance_scope']='L=32 finite-state response only; no verified thermodynamic CFT window width.'
@@ -37,12 +54,14 @@ def main():
         old=json.loads(oldpath.read_text());raw=json.loads((HERE/new['file']).read_text());stage192=[r for r in raw['hist'] if r['chi']==192][-1]
         legacy.append(dict(P=P,old_source=str(oldpath.relative_to(ROOT)),new_source=new['file'],
             old=dict(chi=old['chi'],E=old['E_physical'],Sbar={str(w):Ana.sbar(old['Sprof'],96,w) for w in (1,6,12)},density_range=old['density_bulk_range']),
-            new192=dict(E=stage192['E_phys'],Sbar6_sweep=stage192['Sbar6']),
+            new192=dict(E=stage192['E_phys'],Sbar6_sweep=stage192['Sbar6'],
+                delta_E_from_old=stage192['E_phys']-old['E_physical'],
+                delta_Sbar6_from_old=stage192['Sbar6']-Ana.sbar(old['Sprof'],96,6)),
             new256=dict(E=new['E'],Sbar=new['Sbar'],density=new['n_mid'],density_range=new['central_density_range'],
                 gates=new['gates'],schedule_limit_hit=new['schedule_limit_hit'],dS_chi=new['dS_chi'],variance=raw.get('variance'),variance_per_site=raw['variance']/96 if 'variance' in raw else None,
                 physical_energy_check=raw.get('variance_energy'))))
     out['legacy_V4']=legacy
-    out['legacy_scope']='Same microscopic V=4,kappa=1,a=1; new seed and converged-stage chi comparison. No new CFT fit from this alone.'
+    out['legacy_scope']='Same microscopic V=4,kappa=1,a=1; new seed and staged chi comparison, with its measured convergence flags. No CFT identification from this alone.'
     (HERE/'followup_analysis.json').write_text(json.dumps(out,indent=2)+'\n')
     print(json.dumps(out,indent=2))
 

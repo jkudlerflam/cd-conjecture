@@ -1,0 +1,16 @@
+{
+  "scope": "Fresh separate-directory rerun of the L=32 one-leg XX calibration; not an additional candidate scan.",
+  "rows": [
+    {
+      "tag": "xx1_L32_chi128",
+      "status": "done",
+      "delta_E": 0.0,
+      "delta_Sbar": {
+        "1": 0.0,
+        "6": 0.0,
+        "12": 0.0
+      },
+      "delta_n": 0.0
+    }
+  ]
+}

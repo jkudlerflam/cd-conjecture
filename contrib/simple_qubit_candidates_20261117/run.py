@@ -7,14 +7,17 @@ from threadpoolctl import threadpool_limits
 from common import HERE,Z,Ana,build,pair_diagnostics
 
 
-def run(cfg):
-    out=HERE/'outputs';rt=HERE/'runtime';out.mkdir(exist_ok=True);rt.mkdir(exist_ok=True)
+def run(cfg,run_root=HERE):
+    out=run_root/'outputs';rt=run_root/'runtime';out.mkdir(parents=True,exist_ok=True);rt.mkdir(parents=True,exist_ok=True)
     tag=cfg['tag']; fout=out/(tag+'.json'); fck=rt/(tag+'.npz')
     if fout.exists() and json.loads(fout.read_text()).get('status')=='done':return json.loads(fout.read_text())
     mpo,gph,shift,b=build(cfg);L=cfg['L'];P=cfg['P'];hist=[];start=time.time()
     if fout.exists() and fck.exists():
         hist=json.loads(fout.read_text())['hist'];psi=Z.MPS.load(str(fck))
     elif cfg.get('from'):
+        parent=out/(cfg['from']+'.json')
+        if not parent.exists() or json.loads(parent.read_text()).get('status')!='done':
+            raise ValueError('Complete the parent run before starting its warm continuation: '+cfg['from'])
         psi=Z.MPS.load(str(rt/(cfg['from']+'.npz')));assert psi.L==L and psi.P==P
     else:psi=Z.random_mps(L,P,D0=8,seed=cfg.get('seed',1),dtype=float)
     assert psi.L==L and psi.P==P
@@ -53,5 +56,7 @@ def run(cfg):
 
 
 if __name__=='__main__':
-    ap=argparse.ArgumentParser();ap.add_argument('config');args=ap.parse_args()
-    with threadpool_limits(limits=1):run(json.loads(Path(args.config).read_text()))
+    ap=argparse.ArgumentParser();ap.add_argument('config')
+    ap.add_argument('--run-root',type=Path,default=HERE,help='Separate output/checkpoint directory for fresh reproduction.')
+    args=ap.parse_args()
+    with threadpool_limits(limits=1):run(json.loads(Path(args.config).read_text()),args.run_root)

@@ -71,6 +71,12 @@ H = sum_j [(17/32) X_j Y_(j+1)+(15/32) Y_j X_(j+1)+2 Z_j Z_(j+1)]
 It is exactly the original family with pairing scale one, D=1/32,
 V=8 and a=24/25. Its finite-size evidence must not be read as proof
 that this exact rational point has a c>1 thermodynamic limit.
+Equivalently, a two-site bond is
+`h=(17/32)XY+(15/32)YX+2ZZ-(97/50)(ZI+IZ)`.
+For open chains, summing this bond requires the additional endpoint
+terms `-(97/50)(Z_0+Z_(L-1))`; all runs use the full uniform onsite
+field in the displayed Hamiltonian. The field is counted once in the
+simplicity comparison.
 
 ## Numerical status
 
@@ -82,20 +88,42 @@ The main-window 32-to-64 slopes are about 2.4; the exact two-leg control
 itself reads 2.389 there. Narrow and wide windows show large finite-size
 effects, so those slopes alone do not identify a CFT.
 
-The L=128 extension through chi=192 is complete: the V=8 and V=12
-main-window slopes are 2.059737 and 2.109011. Both fail the 0.01 chi
-gate, with entropy steps of 0.0417--0.0514; neither is a converged CFT
-measurement. The preferred V=8 point is continuing to chi=256. The
-one-/two-leg controls are compared with exact correlation-matrix
-entropies, whose corresponding slopes are 1.004026 and 1.858274. The
-L=128 two-leg DMRG control still has energy drift 1.22e-6 and an entropy
-error -0.003144; its failed gate is retained and the exact value is the
-calibration reference. The
-two-leg control has range two and is used only for calibration, not as
-an admissible nearest-neighbour candidate. The old
-V=8 infinite-chain reading near 1.4 is retained as unresolved contrary
-evidence, with its different fitted coefficients and older-solver
-limitations stated in the source audit.
+The completed V=8 extension reaches chi=256 at L=128. Both parities
+pass residual, sweep-stationarity and discarded-weight gates and satisfy
+the stricter stopping rule, but **both still fail the chi-step gate**:
+Sbar6 changes by 0.013937 (even) and 0.013014 (odd) from chi=192,
+against the 0.01 threshold. V=12 remains at chi=192, with changes
+0.051429 and 0.047392 from chi=128. This bounded campaign does not
+promote either largest-size estimate to a converged CFT measurement.
+
+The estimator is `c_two=6[Sbar_W(2L)-Sbar_W(L)]/log(2)`, where Sbar
+averages the 2W+1 central entropy cuts. All entries below use 64-to-128;
+the candidate rows use the lower reported-energy sector at each size.
+
+| Data | W=1 | W=6 | W=12 | Accuracy status |
+|---|---:|---:|---:|---|
+| V=8, chi=192/256 | 2.39955 | 2.17284 | 2.23981 | Last chi-step fails |
+| V=12, chi=192/192 | 2.25971 | 2.10901 | 2.18333 | Last chi-step fails |
+| Exact one-leg XX | 1.02415 | 1.00403 | 1.04507 | Exact finite-size calibration |
+| Exact two-leg XX | 2.15587 | 1.85827 | 2.08369 | Exact finite-size calibration |
+
+For V=8 all four parity pairings span 2.17284--2.48030 in the main
+window. The lower-energy branch switches from even to odd between
+64 and 128; its central density changes 0.19944 to 0.19677, while the
+central density range remains 0.16261 at 128. The density-corrected
+secondary estimate 2.21753 is an interpolation here, but does not repair
+the failed chi gate. At 32-to-64 it is an extrapolation and stays flagged.
+The older V=8 infinite-chain reading near 1.4 remains unresolved contrary
+evidence; its fitted coefficients differ from this rational point and
+its older solver has convergence limitations (`source_audit.json`).
+
+The one-leg DMRG control at 128 agrees with its exact entropy profile to
+7.2e-9. The two-leg control remains flagged: at 128,chi=192 its energy
+drift is 1.22e-6 and Sbar6 error is -0.003144, giving a size reading
+1.83144 instead of the exact 1.85827. Its exact value supplies the
+calibration reference; the error is not transferred as an error bar to
+an interacting candidate. The two-leg control has range two and is
+used only for calibration, not as an admissible nearest-neighbour model.
 
 `analysis.json` records densities, density modulation, valley weights,
 connected separation-two pair correlations, parity gaps, every parity
@@ -112,17 +140,18 @@ visible even when the looser local gates pass.
 
 ## Verification, reproduction and remaining tests
 
-- **[Checked numerically]** Independent literal Pauli assembly at L=8
+- **[numerical]** Independent literal Pauli assembly at L=8
   agrees with the real computational-gauge MPO; both parities agree with
   ED in energy, every entropy cut, density and a pair observable. Full
   endpoint fields are explicitly checked. This validates conventions
   and local numerics, not an infrared theory.
-- **[Numerical]** The unchanged C190 parity solver supplies all candidate
+- **[numerical]** The unchanged C190 parity solver supplies all candidate
   and control states. Source files and old-data hashes are recorded in
   `source_audit.json`. Its shared solver is not an independent DMRG
   implementation. No human scientific review is claimed.
-- **[Derived and numerically checked]** `simplicity.py` verifies the
-  common rotation and reports both counts/spreads. The term-removal
+- **[proved]** The common rotation follows from the single-site Pauli
+  identities in `MODEL.md`; `simplicity.py` cross-checks it and reports
+  both counts/spreads. The term-removal
   results are attributed separately to the sibling contribution.
 
 Install `requirements.txt`, then from the repository root:
@@ -131,13 +160,30 @@ Install `requirements.txt`, then from the repository root:
 python3 -B contrib/simple_qubit_candidates_20261117/audit_sources.py
 python3 -B contrib/simple_qubit_candidates_20261117/validate.py
 python3 -B contrib/simple_qubit_candidates_20261117/simplicity.py
-python3 -B contrib/simple_qubit_candidates_20261117/run.py <config.json>
+python3 -B contrib/simple_qubit_candidates_20261117/exact_controls.py
 python3 -B contrib/simple_qubit_candidates_20261117/analyze.py
+python3 -B contrib/simple_qubit_candidates_20261117/followup_analysis.py
+python3 -B contrib/simple_qubit_candidates_20261117/check_outputs.py
 ```
 
-`campaign.py` runs an explicit list of configs with at most two processes,
-each with one BLAS thread. Warm continuations require their earlier
-checkpoint, regenerated by its config; checkpoints stay ignored in
+For a fresh computation, preserve the archived outputs and reconstruct
+checkpoints in a separate directory:
+
+```bash
+python3 -B contrib/simple_qubit_candidates_20261117/reproduce.py \
+  --run-root /tmp/simple-qubit-reproduction \
+  --tag final_V8_a24o25_L128_P0
+```
+
+Omit `--tag` to reproduce every completed config; repeat it for selected
+runs. Dependencies are rebuilt sequentially and `comparison.json` records
+differences from the archive. A fresh L=32 one-leg control rerun agrees
+exactly in saved energy, density and all entropy windows
+(`reproduction_check.json`). `completed_configs.txt` and `inventory.json`
+record the executed set; retained unexecuted configs are listed explicitly.
+
+`campaign.py` runs an explicit list of dependency-ready configs with at
+most two processes, each with one BLAS thread. Checkpoints stay ignored in
 `runtime/`. `REGISTRATION.md` gives the initial diagnostic rules and
 `DECISIONS.md` records subsequent evidence-based choices. Per-sweep
 runtime, local residual and truncation data remain in every output.

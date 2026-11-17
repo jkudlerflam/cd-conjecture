@@ -1,5 +1,5 @@
 {
-  "checked": 33,
+  "checked": 35,
   "rows": [
     {
       "tag": "base_V12_a24o25_L32_P0",
@@ -176,6 +176,28 @@
       ],
       "fermion_diagonal_error": 0.0,
       "density_reflection_error": 1.5324609993760951e-06
+    },
+    {
+      "tag": "final_V8_a24o25_L128_P0",
+      "parity_error": 5.662137425588298e-15,
+      "fermion_hermiticity_error": 0.0,
+      "fermion_eigenvalue_range": [
+        0.027492915390574378,
+        0.696269703893614
+      ],
+      "fermion_diagonal_error": 0.0,
+      "density_reflection_error": 8.125776067013923e-06
+    },
+    {
+      "tag": "final_V8_a24o25_L128_P1",
+      "parity_error": 1.5987211554602254e-14,
+      "fermion_hermiticity_error": 0.0,
+      "fermion_eigenvalue_range": [
+        0.027417296443899102,
+        0.6953349682621547
+      ],
+      "fermion_diagonal_error": 0.0,
+      "density_reflection_error": 9.088179994620749e-06
     },
     {
       "tag": "pilot_V12_a1_L32_P0",

@@ -11,6 +11,7 @@
       "entropy_error": 4.551914400963142e-15,
       "density_Z_error": 1.354472090042691e-14,
       "pair_error": 2.2082989272239967e-15,
+      "connected_pair_error": 8.030084083395944e-17,
       "residual": 2.2435837667303172e-14
     },
     {
@@ -24,6 +25,7 @@
       "entropy_error": 8.195076561801073e-13,
       "density_Z_error": 3.3725799930550693e-13,
       "pair_error": 6.898648393013385e-13,
+      "connected_pair_error": 6.655984704367911e-11,
       "residual": 1.4134807379264199e-14
     },
     {
@@ -37,6 +39,7 @@
       "entropy_error": 2.3303581286882036e-11,
       "density_Z_error": 2.0868751171576605e-11,
       "pair_error": 7.897427763258671e-12,
+      "connected_pair_error": 1.294959721051537e-10,
       "residual": 2.3638633220516828e-14
     },
     {
@@ -50,7 +53,36 @@
       "entropy_error": 5.517123216614017e-13,
       "density_Z_error": 1.488809076022335e-13,
       "pair_error": 5.656432589565359e-14,
+      "connected_pair_error": 1.0530403838412291e-10,
       "residual": 3.187939290674377e-14
+    },
+    {
+      "V": 8,
+      "a": 0.9600000000000009,
+      "P": 0,
+      "L": 8,
+      "matrix_error": 3.909235979313165e-14,
+      "endpoint_half_error": 3.8800000000000097,
+      "energy_error": 3.375077994860476e-13,
+      "entropy_error": 3.0370483905528545e-11,
+      "density_Z_error": 2.6271096409402617e-11,
+      "pair_error": 9.167819447043762e-12,
+      "connected_pair_error": 1.411215297181075e-10,
+      "residual": 2.5538174968516055e-14
+    },
+    {
+      "V": 8,
+      "a": 0.9600000000000009,
+      "P": 1,
+      "L": 8,
+      "matrix_error": 3.909235979313165e-14,
+      "endpoint_half_error": 3.8800000000000097,
+      "energy_error": 3.552713678800501e-15,
+      "entropy_error": 5.755309423483013e-13,
+      "density_Z_error": 2.0887805374236734e-13,
+      "pair_error": 1.0338953322302841e-13,
+      "connected_pair_error": 1.2636370986048979e-10,
+      "residual": 2.867479827687617e-14
     },
     {
       "V": 12,
@@ -63,6 +95,7 @@
       "entropy_error": 1.2589929099249275e-13,
       "density_Z_error": 3.2929214910382143e-13,
       "pair_error": 6.614690365309104e-15,
+      "connected_pair_error": 2.4080699496981334e-12,
       "residual": 3.541029888210485e-14
     },
     {
@@ -76,6 +109,7 @@
       "entropy_error": 1.2934098236883074e-13,
       "density_Z_error": 3.732448378146458e-13,
       "pair_error": 1.348643812932797e-13,
+      "connected_pair_error": 7.0641283624020526e-12,
       "residual": 4.448370716118046e-14
     },
     {
@@ -89,6 +123,7 @@
       "entropy_error": 3.924049973846877e-11,
       "density_Z_error": 7.002454172067019e-11,
       "pair_error": 4.416123961313821e-11,
+      "connected_pair_error": 5.2711648646213555e-09,
       "residual": 1.1288662663101612e-13
     },
     {
@@ -102,8 +137,9 @@
       "entropy_error": 2.2139218236461033e-10,
       "density_Z_error": 6.755351833476197e-11,
       "pair_error": 1.7914253044004568e-10,
+      "connected_pair_error": 2.131924497519166e-11,
       "residual": 7.689019536102912e-14
     }
   ],
-  "runtime_seconds": 1.2903270721435547
+  "runtime_seconds": 1.615351915359497
 }

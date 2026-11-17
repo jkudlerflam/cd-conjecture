@@ -1,5 +1,8 @@
 #!/usr/bin/env python3
-"""Run explicit selected configs with at most two single-thread processes."""
+"""Run dependency-ready configs with at most two single-thread processes.
+
+This does not schedule dependencies; use reproduce.py for a fresh full rerun.
+"""
 import argparse,concurrent.futures,os,subprocess,sys
 from pathlib import Path
 

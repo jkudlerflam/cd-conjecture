@@ -30,7 +30,7 @@ def dense_mpo(mpo):
 def main():
     start=time.time();rows=[];L=8
     with threadpool_limits(limits=1):
-        for cfg in [dict(L=L,V=4,a=1),dict(L=L,V=8,a=1),dict(L=L,V=12,a=.96),dict(L=L,V=40,a=1,hz=-19.976047250613814)]:
+        for cfg in [dict(L=L,V=4,a=1),dict(L=L,V=8,a=1),dict(L=L,V=8,a=.96),dict(L=L,V=12,a=.96),dict(L=L,V=40,a=1,hz=-19.976047250613814)]:
             mpo,gph,shift,b=build(cfg);H=literal(L,b);ph=np.ones(1,complex)
             for g in gph:
                 th=-np.angle(g);ph=np.kron(ph,[np.exp(-.5j*th),np.exp(.5j*th)])
@@ -52,9 +52,19 @@ def main():
                 O=np.ones((1,1))
                 for j in range(L):O=np.kron(O,Z.SM if j in (2,4) else Z.I2)
                 pe=np.vdot(ve,O@ve);errp=abs(pv-pe)
-                assert max(errE,errS,errZ,errp)<1e-8
+                left={1:np.conj(gph[1])*Z.SM,3:np.conj(gph[3])*Z.SM}
+                right={5:gph[5]*Z.SP,7:gph[7]*Z.SP}
+                pairconn=product_expectation(psi,left|right)-product_expectation(psi,left)*product_expectation(psi,right)
+                def ed_product(operators):
+                    op=np.ones((1,1))
+                    for site in range(L):op=np.kron(op,operators.get(site,Z.I2))
+                    return np.vdot(ve,op@ve)
+                ep=ed_product({1:Z.SM,3:Z.SM,5:Z.SP,7:Z.SP})-ed_product({1:Z.SM,3:Z.SM})*ed_product({5:Z.SP,7:Z.SP})
+                errpc=abs(pairconn-ep)
+                assert max(errE,errS,errZ,errp,errpc)<1e-8
                 rows.append(dict(V=b['V'],a=b['a'],P=P,L=L,matrix_error=me,endpoint_half_error=enderr,
-                                 energy_error=errE,entropy_error=errS,density_Z_error=errZ,pair_error=errp,residual=hist[-1]['res_max']))
+                                 energy_error=errE,entropy_error=errS,density_Z_error=errZ,pair_error=errp,
+                                 connected_pair_error=errpc,residual=hist[-1]['res_max']))
                 print(rows[-1],flush=True)
     (HERE/'validation.json').write_text(json.dumps(dict(rows=rows,runtime_seconds=time.time()-start),indent=2)+'\n')
 

@@ -1,9 +1,100 @@
 {
+  "tolerance_baseline": {
+    "tag": "pilot_V8_a24o25_L32_P0",
+    "P": 0,
+    "L": 32,
+    "chi": 64,
+    "a": 0.96,
+    "kappa": 1,
+    "n_mid": 0.22803051601685087,
+    "Sbar": {
+      "1": 1.3016706936825462,
+      "6": 1.2813545848223227,
+      "12": 1.169280414839353
+    }
+  },
+  "field_bracketing": [
+    {
+      "V": 8,
+      "a": 0.96,
+      "ground_P": 0,
+      "ground_n": 0.22803051601685087,
+      "parity_densities": {
+        "0": 0.22803051601685087,
+        "1": 0.19581490389481454
+      },
+      "source_tags": [
+        "pilot_V8_a24o25_L32_P0",
+        "pilot_V8_a24o25_L32_P1"
+      ],
+      "both_gates": true
+    },
+    {
+      "V": 8,
+      "a": 0.96875,
+      "ground_P": 1,
+      "ground_n": 0.26438013169080243,
+      "parity_densities": {
+        "0": 0.22939301117263927,
+        "1": 0.26438013169080243
+      },
+      "source_tags": [
+        "pilot_V8_a31o32_L32_P0",
+        "pilot_V8_a31o32_L32_P1"
+      ],
+      "both_gates": true
+    },
+    {
+      "V": 8,
+      "a": 1,
+      "ground_P": 0,
+      "ground_n": 0.38247559588608515,
+      "parity_densities": {
+        "0": 0.38247559588608515,
+        "1": 0.34690243405219684
+      },
+      "source_tags": [
+        "pilot_V8_a1_L32_P0",
+        "pilot_V8_a1_L32_P1"
+      ],
+      "both_gates": true
+    },
+    {
+      "V": 12,
+      "a": 0.96,
+      "ground_P": 0,
+      "ground_n": 0.22163584022411814,
+      "parity_densities": {
+        "0": 0.22163584022411814,
+        "1": 0.24872355261648754
+      },
+      "source_tags": [
+        "pilot_V12_a24o25_L32_P0",
+        "pilot_V12_a24o25_L32_P1"
+      ],
+      "both_gates": true
+    },
+    {
+      "V": 12,
+      "a": 1,
+      "ground_P": 1,
+      "ground_n": 0.432256606163063,
+      "parity_densities": {
+        "0": 0.38302673868572185,
+        "1": 0.432256606163063
+      },
+      "source_tags": [
+        "pilot_V12_a1_L32_P0",
+        "pilot_V12_a1_L32_P1"
+      ],
+      "both_gates": true
+    }
+  ],
   "tolerance_pilots": [],
   "tolerance_scope": "L=32 finite-state response only; no verified thermodynamic CFT window width.",
   "independent_start": {
     "status": "pending"
   },
   "legacy_V4": [],
-  "legacy_scope": "Same microscopic V=4,kappa=1,a=1; new seed and converged-stage chi comparison. No new CFT fit from this alone."
+  "legacy_scope": "Same microscopic V=4,kappa=1,a=1; new seed and staged chi comparison, with its measured convergence flags. No CFT identification from this alone."
 }
