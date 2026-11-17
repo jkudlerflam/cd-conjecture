@@ -2,6 +2,21 @@
 
 Follow [CONTRIBUTING.md](CONTRIBUTING.md) for research and contribution conventions.
 
+## Research priorities
+
+The user explicitly values simple Hamiltonians: fewer terms, ratios of
+nonzero coefficients closer to one, and less delicate tuning. When ranking
+candidate models, weigh these alongside local dimension and strength of
+evidence. A small on-site dimension alone does not make a construction simple.
+
+For comparisons, distinguish independent real coupling parameters from
+literal operator monomials in a stated basis. Remove irrelevant constants,
+telescoping bond terms, and a common positive energy scale before reporting
+coefficient ratios. Grouping terms or changing notation does not by itself
+simplify the physical model. Distinguish microscopic coefficient hierarchy
+from emergent small velocities, and prefer robust parameter regions over
+long-decimal tuned points when the scientific evidence is comparable.
+
 ## Keep GitHub synchronized
 
 The user has authorized routine pulls, commits, and pushes for work in this

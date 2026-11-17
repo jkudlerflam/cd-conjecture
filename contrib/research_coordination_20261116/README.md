@@ -6,6 +6,10 @@ their newly proposed sixth-order qubit models. No human review is claimed.
 
 ## Reviewed checkpoint and assigned follow-ups
 
+The [2026-11-17 follow-up](FOLLOWUP_20261117.md) records the next round,
+prioritizing the user's preference for simpler Hamiltonians and moderate
+coefficient ratios. The checkpoint below retains the preceding round.
+
 | Direction | Completed checkpoint | Next assigned task |
 | --- | --- | --- |
 | Establish a counterexample | [Microscopic qubit audit](../qubit_convergence_20261116/README.md): the next large-chi test remains undecided; accessible checkpoints and sufficient production memory are absent | Resonant qubit liquids: study the actual many-body physics and admissible detunings of the new three-/four-valley effective branches |
