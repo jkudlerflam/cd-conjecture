@@ -1,0 +1,185 @@
+{
+  "symbolic": {
+    "four_symbolic_duality_bonds": true,
+    "common_rotation": true,
+    "uniform_and_staggered_charge_commutators": true,
+    "normal_invariants_and_singular_values": true
+  },
+  "full_spin_matrix_checks": [
+    {
+      "L": 4,
+      "periodic": false,
+      "closing_xy_sign": 1,
+      "spiral_identity_error": 6.661338147750939e-16,
+      "staggered_identity_error": 0.0,
+      "duality_with_field_and_seam_error": 8.93616230048678e-16,
+      "separate_majorana_parity_error": 0.0,
+      "full_majorana_matrix_error": 1.3322676295501878e-15
+    },
+    {
+      "L": 6,
+      "periodic": false,
+      "closing_xy_sign": 1,
+      "spiral_identity_error": 1.1102230246251565e-15,
+      "staggered_identity_error": 0.0,
+      "duality_with_field_and_seam_error": 2.6645352591003757e-15,
+      "separate_majorana_parity_error": 0.0,
+      "full_majorana_matrix_error": 1.3322676295501878e-15
+    },
+    {
+      "L": 4,
+      "periodic": true,
+      "closing_xy_sign": 1,
+      "spiral_identity_error": 6.661338147750939e-16,
+      "staggered_identity_error": 0.0,
+      "duality_with_field_and_seam_error": 8.93616230048678e-16,
+      "separate_majorana_parity_error": 0.0
+    },
+    {
+      "L": 6,
+      "periodic": true,
+      "closing_xy_sign": -1,
+      "spiral_identity_error": 1.1102230246251565e-15,
+      "staggered_identity_error": 0.0,
+      "duality_with_field_and_seam_error": 3.552713678800501e-15,
+      "separate_majorana_parity_error": 0.0,
+      "error_if_twist_is_omitted": 4.3999999999999995
+    },
+    {
+      "L": 8,
+      "periodic": true,
+      "closing_xy_sign": 1,
+      "spiral_identity_error": 4.0990865058429065e-15,
+      "staggered_identity_error": 0.0,
+      "duality_with_field_and_seam_error": 5.329070518200751e-15,
+      "separate_majorana_parity_error": 0.0
+    }
+  ],
+  "free_many_body_spectra": [
+    {
+      "L": 6,
+      "a": 1.0,
+      "b": 0.5,
+      "h": 0.3,
+      "complete_open_spectrum_error": 2.042810365310288e-14
+    },
+    {
+      "L": 6,
+      "a": 0.5,
+      "b": 1.0,
+      "h": 0.5,
+      "complete_open_spectrum_error": 2.398081733190338e-14
+    },
+    {
+      "L": 6,
+      "a": 1.0,
+      "b": 1.0,
+      "h": 0.0,
+      "complete_open_spectrum_error": 8.881784197001252e-15
+    },
+    {
+      "L": 6,
+      "a": 0.0,
+      "b": 1.0,
+      "h": 2.0,
+      "complete_open_spectrum_error": 1.687538997430238e-14
+    },
+    {
+      "L": 6,
+      "a": 1.0,
+      "b": 0.0,
+      "h": 0.0,
+      "complete_open_spectrum_error": 7.993605777301127e-15
+    }
+  ],
+  "exact_charge_nullities": [
+    {
+      "L": 4,
+      "a": 0,
+      "b": 2,
+      "c": 3,
+      "h": 1,
+      "exact_additive_charge_dimension": 1
+    },
+    {
+      "L": 4,
+      "a": 2,
+      "b": 0,
+      "c": 3,
+      "h": 1,
+      "exact_additive_charge_dimension": 1
+    },
+    {
+      "L": 4,
+      "a": 1,
+      "b": 2,
+      "c": 4,
+      "h": 0,
+      "exact_additive_charge_dimension": 0
+    },
+    {
+      "L": 4,
+      "a": 1,
+      "b": 2,
+      "c": 3,
+      "h": 0,
+      "exact_additive_charge_dimension": 0
+    },
+    {
+      "L": 4,
+      "a": 1,
+      "b": 2,
+      "c": 1,
+      "h": 0,
+      "exact_additive_charge_dimension": 0
+    },
+    {
+      "L": 4,
+      "a": 1,
+      "b": 1,
+      "c": 2,
+      "h": 0,
+      "exact_additive_charge_dimension": 0
+    },
+    {
+      "L": 4,
+      "a": 1,
+      "b": 1,
+      "c": 0,
+      "h": 0,
+      "exact_additive_charge_dimension": 0
+    }
+  ],
+  "invariants_and_operator_dimensions": {
+    "maximum_rotation_invariant_error": 1.7053025658242404e-13,
+    "reference_ratio_a_over_b": 80.0,
+    "reference_ratio_c_over_b": 1600.0,
+    "original_literal_spread": 3196.1675600959998,
+    "rotated_literal_spread": 40.45781721640506,
+    "operator_lattice_checks": [
+      {
+        "K": 0.55,
+        "minimum_allowed_vertex_dimension": 2.2
+      },
+      {
+        "K": 0.75,
+        "minimum_allowed_vertex_dimension": 2.083333333333333
+      },
+      {
+        "K": 1.0,
+        "minimum_allowed_vertex_dimension": 2.0
+      },
+      {
+        "K": 1.5,
+        "minimum_allowed_vertex_dimension": 2.1666666666666665
+      },
+      {
+        "K": 1.95,
+        "minimum_allowed_vertex_dimension": 2.0512820512820515
+      }
+    ]
+  },
+  "numpy_version": "2.5.5",
+  "sympy_version": "1.14.0",
+  "runtime_seconds": 0.4539714579950669
+}
