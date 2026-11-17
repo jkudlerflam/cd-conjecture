@@ -57,7 +57,17 @@ def run(cfg,root=HERE):
                     assert abs(E-[r for r in hist if r['stage']==stage][-1]['E_phys'])<1e-7
                     write_json(of,obs);print('measured',of.name,obs['runtime_seconds'],flush=True)
                 measured.append(str(of.relative_to(root)))
-    write('done',observations=measured,runtime_seconds=time.time()-start,
+    overlap=None
+    if cfg.get('compare_checkpoint'):
+        refpath=Path(cfg['compare_checkpoint']);refpath=refpath if refpath.is_absolute() else ROOT/refpath
+        if refpath.exists():
+            ref=Z.MPS.load(str(refpath));assert ref.L==psi.L and ref.P==psi.P
+            E=np.ones((1,1))
+            for a,b in zip(psi.M,ref.M):E=Z._apply_site(E,a,None,Bc=b)
+            ov=complex(E[0,0]);assert abs(ov)<=1+1e-8
+            overlap=dict(reference=str(refpath),overlap=[ov.real,ov.imag],absolute_overlap=abs(ov),infidelity=max(0.,1-abs(ov)**2))
+        else:overlap=dict(reference=str(refpath),status='checkpoint unavailable; compare saved observables instead')
+    write('done',observations=measured,independent_overlap=overlap,runtime_seconds=time.time()-start,
         peak_RSS_GB=resource.getrusage(resource.RUSAGE_SELF).ru_maxrss*(1 if sys.platform=='darwin' else 1024)/1e9)
     return json.loads(out.read_text())
 

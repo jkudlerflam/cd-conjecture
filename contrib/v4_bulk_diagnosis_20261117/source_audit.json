@@ -1,0 +1,34 @@
+{
+  "source_hashes": {
+    "codex/work_C190/z2dmrg.py": "8b55ff8a0c8ada4d3da36cc208a92566eb0459c045ea93b9facdc74a2980e847",
+    "codex/work_C190/models.py": "6bc11c0b6573ae287c3321eae33fc13d66a804058cab44cc3af779989fb61c74",
+    "codex/work_C195/z2dmrg_xp.py": "bde039f95bbc339bf96b3f3007e70820e8e905c2e5651bc388769e9fa5337e11",
+    "contrib/simple_qubit_candidates_20261117/analysis.json": "72889773db5d04fb0c03c68915a4137d36353c3721fa433b1458770648142cbc",
+    "contrib/simple_qubit_candidates_20261117/outputs/legacy_V4_a1_L96_P0.json": "ad073d5c36ae30e1b945c34acc25a93a93aec086bb3358790b302c84bb35449e",
+    "contrib/simple_qubit_candidates_20261117/outputs/legacy_V4_a1_L96_P1.json": "44a0391403dffa36e59c959ff6e244a11857b25ae24e617eb0b7e487117a5c7a"
+  },
+  "model": {
+    "V": 4,
+    "kappa": 1,
+    "a": 1,
+    "Jx": 0.5,
+    "Jy": -0.5,
+    "Jz": 1,
+    "D": 0.0625,
+    "hz": -1.75
+  },
+  "registration_commit": "c29063c1",
+  "python": "3.12.3",
+  "prior_checkpoints": [
+    {
+      "file": "contrib/simple_qubit_candidates_20261117/runtime/legacy_V4_a1_L96_P0.npz",
+      "sha256": "616b30b25e3a97a67a5d48de8d8796ab01115d37849536c6e807b9fafafb886c",
+      "bytes": 79268144
+    },
+    {
+      "file": "contrib/simple_qubit_candidates_20261117/runtime/legacy_V4_a1_L96_P1.npz",
+      "sha256": "96b7151dd0ce774388db3508aba75c0e8dab019d414a40b846ea287a1d8badba",
+      "bytes": 79295952
+    }
+  ]
+}

@@ -22,7 +22,9 @@ def main():
             psi=Z.random_mps(L,P,D0=8,seed=17,dtype=float)
             psi,hist=Z.dmrg(psi,mpo,[dict(chi=32,alpha=a,res_tol=1e-12,maxit=300) for a in (1e-3,0,0,0)])
             left=environments(psi);errors={}
-            for name,ops,w in [('density',[n]*L,1),('bond',mpo.h2,2),('kinetic',[b-zz for b in mpo.h2],2)]:
+            pol=np.kron(Z.PX,Z.PX)+np.kron(Z.PY,Z.PY)
+            pops=[Z.rotate_bond(pol,gph[j],gph[j+1]) for j in range(L-1)]
+            for name,ops,w in [('density',[n]*L,1),('bond',mpo.h2,2),('kinetic',[b-zz for b in mpo.h2],2),('valley_bond',pops,2)]:
                 ids=list(range(L-w+1));got=operator_matrix(psi,left,ops,w,ids)
                 vecs=np.array([embed(O,j,w,L)@ve for j,O in enumerate(ops)])
                 means=np.real(vecs.conj()@ve);raw=np.real(vecs.conj()@vecs.T)

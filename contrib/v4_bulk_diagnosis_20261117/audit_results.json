@@ -1,0 +1,235 @@
+{
+  "checked_observations": 8,
+  "checks": [
+    {
+      "file": "observations/reused_L96_P0_chi256.json",
+      "energy_contraction_error": 4.405364961712621e-13,
+      "operators": {
+        "density": {
+          "covariance_identity_error": 0.0,
+          "symmetry_error": 0.0,
+          "minimum_covariance_eigenvalue": 0.10148018821555045
+        },
+        "bond": {
+          "covariance_identity_error": 0.0,
+          "symmetry_error": 0.0,
+          "minimum_covariance_eigenvalue": 0.11791212413263438
+        },
+        "kinetic": {
+          "covariance_identity_error": 0.0,
+          "symmetry_error": 0.0,
+          "minimum_covariance_eigenvalue": 0.28380878282179145
+        }
+      },
+      "pair_subtraction_error": 0.0,
+      "sha256": "b1c150e4c4bbda29185817ff03f3808cdabdcda8e352ac2216245ba8409b1663"
+    },
+    {
+      "file": "observations/reused_L96_P1_chi256.json",
+      "energy_contraction_error": 5.400124791776761e-13,
+      "operators": {
+        "density": {
+          "covariance_identity_error": 0.0,
+          "symmetry_error": 0.0,
+          "minimum_covariance_eigenvalue": 0.1024614359244621
+        },
+        "bond": {
+          "covariance_identity_error": 0.0,
+          "symmetry_error": 0.0,
+          "minimum_covariance_eigenvalue": 0.1148693373977592
+        },
+        "kinetic": {
+          "covariance_identity_error": 0.0,
+          "symmetry_error": 0.0,
+          "minimum_covariance_eigenvalue": 0.28925068362283207
+        }
+      },
+      "pair_subtraction_error": 0.0,
+      "sha256": "183d643b616883d5ca02ecdcf08af92021b2da9b2f14cbd7b29a77e093a4dffc"
+    },
+    {
+      "file": "observations/v4_L144_P0_s1_chi192.json",
+      "energy_contraction_error": 2.842170943040401e-14,
+      "operators": {
+        "density": {
+          "covariance_identity_error": 0.0,
+          "symmetry_error": 0.0,
+          "minimum_covariance_eigenvalue": 0.10662588265550953
+        },
+        "bond": {
+          "covariance_identity_error": 0.0,
+          "symmetry_error": 0.0,
+          "minimum_covariance_eigenvalue": 0.1174574338878893
+        },
+        "kinetic": {
+          "covariance_identity_error": 0.0,
+          "symmetry_error": 0.0,
+          "minimum_covariance_eigenvalue": 0.2865007035875213
+        }
+      },
+      "pair_subtraction_error": 0.0,
+      "sha256": "a8fe9e50da3f45c42e3c9cb0dc27916cfea3b3afa5c356d689c19da5d6774dc9"
+    },
+    {
+      "file": "observations/v4_L144_P1_s1_chi192.json",
+      "energy_contraction_error": 3.694822225952521e-13,
+      "operators": {
+        "density": {
+          "covariance_identity_error": 0.0,
+          "symmetry_error": 0.0,
+          "minimum_covariance_eigenvalue": 0.10657181667455201
+        },
+        "bond": {
+          "covariance_identity_error": 0.0,
+          "symmetry_error": 0.0,
+          "minimum_covariance_eigenvalue": 0.11793014399820004
+        },
+        "kinetic": {
+          "covariance_identity_error": 0.0,
+          "symmetry_error": 0.0,
+          "minimum_covariance_eigenvalue": 0.28608676035371466
+        }
+      },
+      "pair_subtraction_error": 0.0,
+      "sha256": "7ee09eec2f852e1208b72c6f631828d80b49b29de7da0754d82fc11ebb2efcf7"
+    },
+    {
+      "file": "observations/v4_L48_P0_s1_chi128.json",
+      "energy_contraction_error": 1.1368683772161603e-13,
+      "operators": {
+        "density": {
+          "covariance_identity_error": 0.0,
+          "symmetry_error": 0.0,
+          "minimum_covariance_eigenvalue": 0.09207518609586306
+        },
+        "bond": {
+          "covariance_identity_error": 0.0,
+          "symmetry_error": 0.0,
+          "minimum_covariance_eigenvalue": 0.1196465406243833
+        },
+        "kinetic": {
+          "covariance_identity_error": 0.0,
+          "symmetry_error": 0.0,
+          "minimum_covariance_eigenvalue": 0.29320214924423743
+        }
+      },
+      "pair_subtraction_error": 0.0,
+      "sha256": "e3266bd037639ff681de884773234bfa2a2772be0981b12f91a0a798bff54b12"
+    },
+    {
+      "file": "observations/v4_L48_P0_s1_chi192.json",
+      "energy_contraction_error": 9.947598300641403e-14,
+      "operators": {
+        "density": {
+          "covariance_identity_error": 0.0,
+          "symmetry_error": 0.0,
+          "minimum_covariance_eigenvalue": 0.09208179584137761
+        },
+        "bond": {
+          "covariance_identity_error": 0.0,
+          "symmetry_error": 0.0,
+          "minimum_covariance_eigenvalue": 0.11965307383062228
+        },
+        "kinetic": {
+          "covariance_identity_error": 0.0,
+          "symmetry_error": 0.0,
+          "minimum_covariance_eigenvalue": 0.2931991804572395
+        }
+      },
+      "pair_subtraction_error": 0.0,
+      "sha256": "58b6e672ccd729f36e1ae10eaace101368c0bae6e9a834674c52e70333ca8054"
+    },
+    {
+      "file": "observations/v4_L48_P1_s1_chi128.json",
+      "energy_contraction_error": 1.2789769243681803e-13,
+      "operators": {
+        "density": {
+          "covariance_identity_error": 0.0,
+          "symmetry_error": 0.0,
+          "minimum_covariance_eigenvalue": 0.08919025846550063
+        },
+        "bond": {
+          "covariance_identity_error": 0.0,
+          "symmetry_error": 0.0,
+          "minimum_covariance_eigenvalue": 0.12853995238847152
+        },
+        "kinetic": {
+          "covariance_identity_error": 0.0,
+          "symmetry_error": 0.0,
+          "minimum_covariance_eigenvalue": 0.2778175073940935
+        }
+      },
+      "pair_subtraction_error": 0.0,
+      "sha256": "723d8c48b3168e6367c413c7cc0e757b7b188f16cf54e22b53f91a12cc05feee"
+    },
+    {
+      "file": "observations/v4_L48_P1_s1_chi192.json",
+      "energy_contraction_error": 6.394884621840902e-14,
+      "operators": {
+        "density": {
+          "covariance_identity_error": 0.0,
+          "symmetry_error": 0.0,
+          "minimum_covariance_eigenvalue": 0.08919694884751507
+        },
+        "bond": {
+          "covariance_identity_error": 0.0,
+          "symmetry_error": 0.0,
+          "minimum_covariance_eigenvalue": 0.12854509204350534
+        },
+        "kinetic": {
+          "covariance_identity_error": 0.0,
+          "symmetry_error": 0.0,
+          "minimum_covariance_eigenvalue": 0.2778190592347252
+        }
+      },
+      "pair_subtraction_error": 0.0,
+      "sha256": "6e69e33c80eec0aea50e1da2c63e0b9596badcd9b02dccdffbbfe59db6791efb"
+    }
+  ],
+  "completed_runs": [
+    {
+      "tag": "v4_L48_P0_s1",
+      "sweeps": 13,
+      "sweep_seconds": 85.00861024856567,
+      "runtime_seconds": 86.44318079948425,
+      "peak_RSS_GB": 0.929660928,
+      "sha256": "812ad79c0eaed4ee8662233013089399e0d6293dfb16c57ab93153b16b759b8e"
+    },
+    {
+      "tag": "v4_L48_P1_s1",
+      "sweeps": 13,
+      "sweep_seconds": 71.34942841529846,
+      "runtime_seconds": 72.5178918838501,
+      "peak_RSS_GB": 0.94773248,
+      "sha256": "4fa922c3dad7f6dc0b4c1798c973b048c5a539bc273b10ff726fda14efe89ad0"
+    }
+  ],
+  "running": [
+    "v4_L144_P0_s1",
+    "v4_L144_P1_s1"
+  ],
+  "versions": {
+    "python": "3.12.3",
+    "numpy": "2.5.5",
+    "scipy": "1.18.1"
+  },
+  "completed_sweep_seconds": 156.35803866386414,
+  "maximum_completed_RSS_GB": 0.94773248,
+  "source_hashes": {
+    "contrib/v4_bulk_diagnosis_20261117/controls.py": "1860f09a2b346414bf4657e05203780597e1997d643eac81c75cdbce0c3ed736",
+    "contrib/v4_bulk_diagnosis_20261117/run.py": "564a6b5a6efdc4f33337dead1435edc7f1e8c17e44319a1d045643663d79b288",
+    "contrib/v4_bulk_diagnosis_20261117/benchmark.py": "c5fb33ef7a09e5ace107e6348d4197320afb494999abccf195d5161b1e72264f",
+    "contrib/v4_bulk_diagnosis_20261117/ring_ed.py": "b7a7c3bca283076ad60804a0a54eda8851440f4bed96fc0cfefce2978cf586e4",
+    "contrib/v4_bulk_diagnosis_20261117/measure_saved.py": "f71cf5510b5931a7efcb84684339a725260236ce0c2ec98b1dca26e1b8b36ed6",
+    "contrib/v4_bulk_diagnosis_20261117/audit_results.py": "569eb3d96503472de416645903665b7051b524fc65ca4e7048eccbe8de4f7d88",
+    "contrib/v4_bulk_diagnosis_20261117/campaign.py": "a0c1d387f2a99f658fabf25aa5c1b8567c774caa9163c1af8bcf5d3d09a56b8f",
+    "contrib/v4_bulk_diagnosis_20261117/measure_channel.py": "923920350b896906c0478a7b1ce906a6e78edf4762bfc785ad49cb5a85f0d9d2",
+    "contrib/v4_bulk_diagnosis_20261117/validate.py": "5859171e173fe88b45edb0a3593dc2b452fd5ecd6b320c0a6e292e817d552dc2",
+    "contrib/v4_bulk_diagnosis_20261117/phase_common.py": "00fb79c652efbf966f8ec34fd494dc41862a0caf2cbecc94b412dbd625c8f9a2",
+    "contrib/v4_bulk_diagnosis_20261117/observables.py": "6c1125c722b1e4ce4c60edc5ded65226e66456b388b04d3d9e5231d94b2039be",
+    "contrib/v4_bulk_diagnosis_20261117/analyze.py": "4ee490370d442d284c7008abff3a5dc3d18e4598275d4d2375479412cb2875ac",
+    "codex/work_C190/z2dmrg.py": "8b55ff8a0c8ada4d3da36cc208a92566eb0459c045ea93b9facdc74a2980e847",
+    "codex/work_C195/z2dmrg_xp.py": "bde039f95bbc339bf96b3f3007e70820e8e905c2e5651bc388769e9fa5337e11"
+  },
+  "scope": "Internal consistency and local numerical checks, not a ground-state or CFT certification."
+}

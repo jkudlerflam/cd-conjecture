@@ -1,0 +1,11 @@
+v4_L48_P0_s1 192 RMS 0.11210654228230765 A 0.14892080779689076 q/pi 0.8876953125000001 Sconn/M 0.016778752998561106
+v4_L48_P1_s1 192 RMS 0.11981695465629853 A 0.15932483579864729 q/pi 0.88720703125 Sconn/M 0.017864379752233466
+reused_L96_P0_chi256 256 RMS 0.1085146304245151 A 0.15766722852448348 q/pi 0.88427734375 Sconn/M 0.011107906325857174
+reused_L96_P1_chi256 256 RMS 0.10588346267581429 A 0.15384757562622076 q/pi 0.88427734375 Sconn/M 0.010839376128702739
+v4_L144_P0_s1 192 RMS 0.09291907049565878 A 0.12898433355541558 q/pi 0.880126953125 Sconn/M 0.00905621618007394
+v4_L144_P1_s1 192 RMS 0.09311644633504156 A 0.12926606051499523 q/pi 0.880126953125 Sconn/M 0.009086703351575532
+gates v4_L48_P0_s1 {'residual': True, 'stationarity': True, 'discarded_weight': True, 'chi_step': True} 0.00039751766874762673
+gates v4_L48_P1_s1 {'residual': True, 'stationarity': True, 'discarded_weight': True, 'chi_step': True} 0.00037414601911778256
+gates reused_L96_P0_chi256 {'residual': True, 'stationarity': True, 'discarded_weight': True, 'chi_step': True} 0.0051199489440916235
+gates reused_L96_P1_chi256 {'residual': True, 'stationarity': True, 'discarded_weight': True, 'chi_step': True} 0.0056179177865669505
+boundary [{'P': 0, 'amplitude_ratio': 0.8180795385477722, 'connected_peak_weight_ratio': 0.8152946121802204, 'condition_met': False}, {'P': 1, 'amplitude_ratio': 0.8402216283801094, 'connected_peak_weight_ratio': 0.838305013469722, 'condition_met': False}]

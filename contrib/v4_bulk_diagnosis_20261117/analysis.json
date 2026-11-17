@@ -1,0 +1,3302 @@
+{
+  "rows": [
+    {
+      "file": "observations/reused_L96_P0_chi256.json",
+      "tag": "reused_L96_P0_chi256",
+      "L": 96,
+      "P": 0,
+      "chi": 256,
+      "boundary": "full",
+      "E": -97.98329671530493,
+      "operators": {
+        "density": {
+          "half": {
+            "M": 48,
+            "mean": 0.2963612936003885,
+            "range": 0.3014650451341937,
+            "RMS": 0.1085146304245151,
+            "profile_peak": {
+              "q": 2.778039206860896,
+              "q_over_pi": 0.88427734375,
+              "amplitude": 0.15766722852448348,
+              "S_disconnected": 0.29830745940710024,
+              "S_connected": 0.5329900697518645,
+              "disconnected_over_M": 0.006214738737647922,
+              "connected_over_M": 0.011103959786497176,
+              "total_over_M": 0.0173186985241451
+            },
+            "connected_peak": {
+              "q": 2.774971245285125,
+              "q_over_pi": 0.88330078125,
+              "amplitude": 0.15752930445365118,
+              "S_disconnected": 0.29778578113981363,
+              "S_connected": 0.5331795036411443,
+              "disconnected_over_M": 0.006203870440412784,
+              "connected_over_M": 0.011107906325857174,
+              "total_over_M": 0.017311776766269955
+            }
+          },
+          "quarter": {
+            "M": 24,
+            "mean": 0.28818889737199704,
+            "range": 0.2826719566953185,
+            "RMS": 0.09885597697146487,
+            "profile_peak": {
+              "q": 2.747359591103183,
+              "q_over_pi": 0.87451171875,
+              "amplitude": 0.13714648184344838,
+              "S_disconnected": 0.11285494489221189,
+              "S_connected": 0.4534386015911028,
+              "disconnected_over_M": 0.004702289370508829,
+              "connected_over_M": 0.01889327506629595,
+              "total_over_M": 0.023595564436804776
+            },
+            "connected_peak": {
+              "q": 2.791078043557924,
+              "q_over_pi": 0.888427734375,
+              "amplitude": 0.13118171458655617,
+              "S_disconnected": 0.10325185345121211,
+              "S_connected": 0.4676452957034731,
+              "disconnected_over_M": 0.004302160560467171,
+              "connected_over_M": 0.019485220654311377,
+              "total_over_M": 0.02378738121477855
+            }
+          },
+          "long_distance_RMS": 0.006638823693407449
+        },
+        "bond": {
+          "half": {
+            "M": 47,
+            "mean": -0.29156843784756004,
+            "range": 0.24580260572902218,
+            "RMS": 0.08466892949457719,
+            "profile_peak": {
+              "q": 2.7765052260730103,
+              "q_over_pi": 0.8837890624999999,
+              "amplitude": 0.11601304517677949,
+              "S_disconnected": 0.1581435631514764,
+              "S_connected": 0.46613158798540894,
+              "disconnected_over_M": 0.0033647566627973704,
+              "connected_over_M": 0.009917693361391679,
+              "total_over_M": 0.01328245002418905
+            },
+            "connected_peak": {
+              "q": 0.5246214294568893,
+              "q_over_pi": 0.1669921875,
+              "amplitude": 0.0025882978169241865,
+              "S_disconnected": 7.871660567186048e-05,
+              "S_connected": 1.6579022370335303,
+              "disconnected_over_M": 1.6748213972736273e-06,
+              "connected_over_M": 0.03527451568156448,
+              "total_over_M": 0.03527619050296175
+            }
+          },
+          "quarter": {
+            "M": 23,
+            "mean": -0.2899598804275703,
+            "range": 0.24004529411757652,
+            "RMS": 0.08997101382153373,
+            "profile_peak": {
+              "q": 2.791078043557924,
+              "q_over_pi": 0.888427734375,
+              "amplitude": 0.1343312856651683,
+              "S_disconnected": 0.10375814227362806,
+              "S_connected": 0.374837697711774,
+              "disconnected_over_M": 0.0045112235771142635,
+              "connected_over_M": 0.01629729120485974,
+              "total_over_M": 0.020808514781974003
+            },
+            "connected_peak": {
+              "q": 0.5322913333963175,
+              "q_over_pi": 0.16943359375,
+              "amplitude": 0.007170194910016586,
+              "S_disconnected": 0.0002956172465238597,
+              "S_connected": 1.6478769853832687,
+              "disconnected_over_M": 1.2852923761906942e-05,
+              "connected_over_M": 0.07164682545144646,
+              "total_over_M": 0.07165967837520837
+            }
+          },
+          "long_distance_RMS": 0.005120657570781871
+        },
+        "kinetic": {
+          "half": {
+            "M": 47,
+            "mean": -0.22961049435074735,
+            "range": 0.03407217515142713,
+            "RMS": 0.011634368934074057,
+            "profile_peak": {
+              "q": 2.775738235679068,
+              "q_over_pi": 0.883544921875,
+              "amplitude": 0.015853621580974666,
+              "S_disconnected": 0.0029532134774847615,
+              "S_connected": 0.29977979698996754,
+              "disconnected_over_M": 6.283432930818642e-05,
+              "connected_over_M": 0.0063782935529780324,
+              "total_over_M": 0.006441127882286219
+            },
+            "connected_peak": {
+              "q": 0.3911651009108385,
+              "q_over_pi": 0.12451171875,
+              "amplitude": 0.0010284077578390184,
+              "S_disconnected": 1.2427064567505854e-05,
+              "S_connected": 0.5587266060905691,
+              "disconnected_over_M": 2.6440562909586925e-07,
+              "connected_over_M": 0.011887800129586576,
+              "total_over_M": 0.011888064535215672
+            }
+          },
+          "quarter": {
+            "M": 23,
+            "mean": -0.22985098068823412,
+            "range": 0.03255016659808199,
+            "RMS": 0.012356424575177015,
+            "profile_peak": {
+              "q": 2.791845033951867,
+              "q_over_pi": 0.888671875,
+              "amplitude": 0.018404206134169897,
+              "S_disconnected": 0.001947610119716846,
+              "S_connected": 0.30690496748506574,
+              "disconnected_over_M": 8.467870085725418e-05,
+              "connected_over_M": 0.013343694238481118,
+              "total_over_M": 0.013428372939338374
+            },
+            "connected_peak": {
+              "q": 0.3827282065774675,
+              "q_over_pi": 0.121826171875,
+              "amplitude": 2.7051066629900767e-05,
+              "S_disconnected": 4.207621183438154e-09,
+              "S_connected": 0.5497526590439632,
+              "disconnected_over_M": 1.8294005145383277e-10,
+              "connected_over_M": 0.023902289523650574,
+              "total_over_M": 0.023902289706590623
+            }
+          },
+          "long_distance_RMS": 0.0001568176915342975
+        }
+      },
+      "run_status": "reused_completed_state"
+    },
+    {
+      "file": "observations/reused_L96_P1_chi256.json",
+      "tag": "reused_L96_P1_chi256",
+      "L": 96,
+      "P": 1,
+      "chi": 256,
+      "boundary": "full",
+      "E": -97.98310505944852,
+      "operators": {
+        "density": {
+          "half": {
+            "M": 48,
+            "mean": 0.29287560064631596,
+            "range": 0.29445988490937414,
+            "RMS": 0.10588346267581429,
+            "profile_peak": {
+              "q": 2.778039206860896,
+              "q_over_pi": 0.88427734375,
+              "amplitude": 0.15384757562622076,
+              "S_disconnected": 0.28402891831278865,
+              "S_connected": 0.5201891465571674,
+              "disconnected_over_M": 0.00591726913151643,
+              "connected_over_M": 0.010837273886607655,
+              "total_over_M": 0.016754543018124086
+            },
+            "connected_peak": {
+              "q": 2.775738235679068,
+              "q_over_pi": 0.883544921875,
+              "amplitude": 0.1537660364047786,
+              "S_disconnected": 0.28372792741962827,
+              "S_connected": 0.5202900541777314,
+              "disconnected_over_M": 0.005910998487908922,
+              "connected_over_M": 0.010839376128702739,
+              "total_over_M": 0.01675037461661166
+            }
+          },
+          "quarter": {
+            "M": 24,
+            "mean": 0.2850330933578647,
+            "range": 0.27537118993973086,
+            "RMS": 0.09639543858280364,
+            "profile_peak": {
+              "q": 2.747359591103183,
+              "q_over_pi": 0.87451171875,
+              "amplitude": 0.13370017216263388,
+              "S_disconnected": 0.1072544162179077,
+              "S_connected": 0.4429932904543746,
+              "disconnected_over_M": 0.004468934009079487,
+              "connected_over_M": 0.018458053768932274,
+              "total_over_M": 0.022926987778011762
+            },
+            "connected_peak": {
+              "q": 2.791845033951867,
+              "q_over_pi": 0.888671875,
+              "amplitude": 0.12773455177046053,
+              "S_disconnected": 0.09789669429600274,
+              "S_connected": 0.45714871687990827,
+              "disconnected_over_M": 0.004079028929000114,
+              "connected_over_M": 0.01904786320332951,
+              "total_over_M": 0.023126892132329626
+            }
+          },
+          "long_distance_RMS": 0.006405180140830943
+        },
+        "bond": {
+          "half": {
+            "M": 47,
+            "mean": -0.2795086567948469,
+            "range": 0.24032827484213132,
+            "RMS": 0.08270723018414154,
+            "profile_peak": {
+              "q": 2.777272216466953,
+              "q_over_pi": 0.884033203125,
+              "amplitude": 0.1133084359903436,
+              "S_disconnected": 0.15085591958228906,
+              "S_connected": 0.453846503145757,
+              "disconnected_over_M": 0.003209700416644448,
+              "connected_over_M": 0.009656308577569297,
+              "total_over_M": 0.012866008994213744
+            },
+            "connected_peak": {
+              "q": 0.5276893910326605,
+              "q_over_pi": 0.16796875,
+              "amplitude": 0.002310026206995203,
+              "S_disconnected": 6.270059765480454e-05,
+              "S_connected": 1.6811473961495744,
+              "disconnected_over_M": 1.3340552692511606e-06,
+              "connected_over_M": 0.03576909353509733,
+              "total_over_M": 0.035770427590366576
+            }
+          },
+          "quarter": {
+            "M": 23,
+            "mean": -0.27844708032842036,
+            "range": 0.23798116913811845,
+            "RMS": 0.08782548893315469,
+            "profile_peak": {
+              "q": 2.791078043557924,
+              "q_over_pi": 0.888427734375,
+              "amplitude": 0.1311331934298706,
+              "S_disconnected": 0.09887650790991617,
+              "S_connected": 0.36720741512958144,
+              "disconnected_over_M": 0.004298978604778964,
+              "connected_over_M": 0.01596553978824267,
+              "total_over_M": 0.020264518393021635
+            },
+            "connected_peak": {
+              "q": 0.5391942469418028,
+              "q_over_pi": 0.171630859375,
+              "amplitude": 0.007658377067106509,
+              "S_disconnected": 0.00033724175098640165,
+              "S_connected": 1.6688420204599104,
+              "disconnected_over_M": 1.4662684825495724e-05,
+              "connected_over_M": 0.07255834871564827,
+              "total_over_M": 0.07257301140047377
+            }
+          },
+          "long_distance_RMS": 0.004946535158248644
+        },
+        "kinetic": {
+          "half": {
+            "M": 47,
+            "mean": -0.23360227409596906,
+            "range": 0.035313851845103744,
+            "RMS": 0.011635333888560381,
+            "profile_peak": {
+              "q": 2.775738235679068,
+              "q_over_pi": 0.883544921875,
+              "amplitude": 0.015833944078926427,
+              "S_disconnected": 0.0029458869748611887,
+              "S_connected": 0.3057280042343098,
+              "disconnected_over_M": 6.26784462736423e-05,
+              "connected_over_M": 0.006504851153921485,
+              "total_over_M": 0.006567529600195128
+            },
+            "connected_peak": {
+              "q": 0.40803888957758055,
+              "q_over_pi": 0.1298828125,
+              "amplitude": 0.0015831634801702985,
+              "S_disconnected": 2.9450277608102946e-05,
+              "S_connected": 0.5640649401937778,
+              "disconnected_over_M": 6.266016512362328e-07,
+              "connected_over_M": 0.012001381706250593,
+              "total_over_M": 0.012002008307901829
+            }
+          },
+          "quarter": {
+            "M": 23,
+            "mean": -0.23363279089601205,
+            "range": 0.03297210018177352,
+            "RMS": 0.012286943577594116,
+            "profile_peak": {
+              "q": 2.79261202434581,
+              "q_over_pi": 0.888916015625,
+              "amplitude": 0.01830418757360669,
+              "S_disconnected": 0.0019264988756962208,
+              "S_connected": 0.31249528121536246,
+              "disconnected_over_M": 8.376082068244439e-05,
+              "connected_over_M": 0.013586751357189673,
+              "total_over_M": 0.013670512177872117
+            },
+            "connected_peak": {
+              "q": 0.3988350048502667,
+              "q_over_pi": 0.126953125,
+              "amplitude": 0.0005691127767644277,
+              "S_disconnected": 1.8623637778899747e-06,
+              "S_connected": 0.5547886371363724,
+              "disconnected_over_M": 8.097233816912933e-08,
+              "connected_over_M": 0.024121245092885758,
+              "total_over_M": 0.024121326065223925
+            }
+          },
+          "long_distance_RMS": 0.00015584388686596423
+        }
+      },
+      "run_status": "reused_completed_state"
+    },
+    {
+      "file": "observations/v4_L144_P0_s1_chi192.json",
+      "tag": "v4_L144_P0_s1",
+      "L": 144,
+      "P": 0,
+      "chi": 192,
+      "boundary": "full",
+      "E": -146.62124122476538,
+      "operators": {
+        "density": {
+          "half": {
+            "M": 72,
+            "mean": 0.29196038228670446,
+            "range": 0.269651586151705,
+            "RMS": 0.09291907049565878,
+            "profile_peak": {
+              "q": 2.765000370163868,
+              "q_over_pi": 0.880126953125,
+              "amplitude": 0.12898433355541558,
+              "S_disconnected": 0.2994652494492247,
+              "S_connected": 0.6514569742852936,
+              "disconnected_over_M": 0.004159239575683676,
+              "connected_over_M": 0.009048013531740189,
+              "total_over_M": 0.013207253107423865
+            },
+            "connected_peak": {
+              "q": 2.7680683317396393,
+              "q_over_pi": 0.8811035156249999,
+              "amplitude": 0.12878982642862072,
+              "S_disconnected": 0.2985627490472566,
+              "S_connected": 0.6520475649653237,
+              "disconnected_over_M": 0.0041467048478785636,
+              "connected_over_M": 0.00905621618007394,
+              "total_over_M": 0.013202921027952504
+            }
+          },
+          "quarter": {
+            "M": 36,
+            "mean": 0.29180274751585017,
+            "range": 0.26126585524171586,
+            "RMS": 0.08989921181441975,
+            "profile_peak": {
+              "q": 2.774971245285125,
+              "q_over_pi": 0.88330078125,
+              "amplitude": 0.12359719721492467,
+              "S_disconnected": 0.13748640443446483,
+              "S_connected": 0.547180560892316,
+              "disconnected_over_M": 0.003819066789846245,
+              "connected_over_M": 0.015199460024786556,
+              "total_over_M": 0.0190185268146328
+            },
+            "connected_peak": {
+              "q": 2.765767360557811,
+              "q_over_pi": 0.88037109375,
+              "amplitude": 0.12308811558401755,
+              "S_disconnected": 0.1363561577822202,
+              "S_connected": 0.5488933633808151,
+              "disconnected_over_M": 0.003787671049506117,
+              "connected_over_M": 0.015247037871689307,
+              "total_over_M": 0.019034708921195423
+            }
+          },
+          "long_distance_RMS": 0.005631212496055477
+        },
+        "bond": {
+          "half": {
+            "M": 71,
+            "mean": -0.28952296111916986,
+            "range": 0.2344481434118459,
+            "RMS": 0.08221868926784007,
+            "profile_peak": {
+              "q": 2.766534350951754,
+              "q_over_pi": 0.880615234375,
+              "amplitude": 0.11836203980529347,
+              "S_disconnected": 0.24866991128694027,
+              "S_connected": 0.5219829151713736,
+              "disconnected_over_M": 0.0035023931167174685,
+              "connected_over_M": 0.007351872044667234,
+              "total_over_M": 0.010854265161384703
+            },
+            "connected_peak": {
+              "q": 0.529990362214489,
+              "q_over_pi": 0.168701171875,
+              "amplitude": 0.0034512581992492903,
+              "S_disconnected": 0.00021142350105246682,
+              "S_connected": 1.673101799129762,
+              "disconnected_over_M": 2.9777957894713636e-06,
+              "connected_over_M": 0.02356481407225017,
+              "total_over_M": 0.02356779186803964
+            }
+          },
+          "quarter": {
+            "M": 35,
+            "mean": -0.2873894796195493,
+            "range": 0.2269748930651126,
+            "RMS": 0.08046836785548829,
+            "profile_peak": {
+              "q": 2.75733046622444,
+              "q_over_pi": 0.877685546875,
+              "amplitude": 0.11653043499041263,
+              "S_disconnected": 0.11881924494172941,
+              "S_connected": 0.4685059767742281,
+              "disconnected_over_M": 0.0033948355697636973,
+              "connected_over_M": 0.013385885050692232,
+              "total_over_M": 0.01678072062045593
+            },
+            "connected_peak": {
+              "q": 0.5338253141842031,
+              "q_over_pi": 0.169921875,
+              "amplitude": 0.00741734905545056,
+              "S_disconnected": 0.0004813993363409415,
+              "S_connected": 1.6558616317826165,
+              "disconnected_over_M": 1.3754266752598328e-05,
+              "connected_over_M": 0.04731033233664619,
+              "total_over_M": 0.047324086603398784
+            }
+          },
+          "long_distance_RMS": 0.003952524699732071
+        },
+        "kinetic": {
+          "half": {
+            "M": 71,
+            "mean": -0.2302034141603528,
+            "range": 0.033503798022138126,
+            "RMS": 0.011058774191824145,
+            "profile_peak": {
+              "q": 2.766534350951754,
+              "q_over_pi": 0.880615234375,
+              "amplitude": 0.01584530731930951,
+              "S_disconnected": 0.004456559311769704,
+              "S_connected": 0.30572325134312783,
+              "disconnected_over_M": 6.27684410108409e-05,
+              "connected_over_M": 0.004305961286522927,
+              "total_over_M": 0.004368729727533768
+            },
+            "connected_peak": {
+              "q": 0.40803888957758055,
+              "q_over_pi": 0.1298828125,
+              "amplitude": 0.0008765924611517295,
+              "S_disconnected": 1.3639354587327824e-05,
+              "S_connected": 0.5560231762981797,
+              "disconnected_over_M": 1.9210358573701161e-07,
+              "connected_over_M": 0.007831312342227883,
+              "total_over_M": 0.00783150444581362
+            }
+          },
+          "quarter": {
+            "M": 35,
+            "mean": -0.23003883977351122,
+            "range": 0.03174310236623676,
+            "RMS": 0.010817290200393664,
+            "profile_peak": {
+              "q": 2.75733046622444,
+              "q_over_pi": 0.877685546875,
+              "amplitude": 0.015591268695256913,
+              "S_disconnected": 0.0021270170208673583,
+              "S_connected": 0.3071392187266458,
+              "disconnected_over_M": 6.077191488192452e-05,
+              "connected_over_M": 0.008775406249332736,
+              "total_over_M": 0.008836178164214661
+            },
+            "connected_peak": {
+              "q": 0.3988350048502667,
+              "q_over_pi": 0.126953125,
+              "amplitude": 0.0017617059946454876,
+              "S_disconnected": 2.7156570101236156e-05,
+              "S_connected": 0.5546768342359044,
+              "disconnected_over_M": 7.759020028924616e-07,
+              "connected_over_M": 0.015847909549597267,
+              "total_over_M": 0.01584868545160016
+            }
+          },
+          "long_distance_RMS": 8.3298182199662e-05
+        }
+      },
+      "run_status": "running"
+    },
+    {
+      "file": "observations/v4_L144_P1_s1_chi192.json",
+      "tag": "v4_L144_P1_s1",
+      "L": 144,
+      "P": 1,
+      "chi": 192,
+      "boundary": "full",
+      "E": -146.6213491706159,
+      "operators": {
+        "density": {
+          "half": {
+            "M": 72,
+            "mean": 0.2923672258016473,
+            "range": 0.2700517068423207,
+            "RMS": 0.09311644633504156,
+            "profile_peak": {
+              "q": 2.765000370163868,
+              "q_over_pi": 0.880126953125,
+              "amplitude": 0.12926606051499523,
+              "S_disconnected": 0.3007748592191954,
+              "S_connected": 0.6537118545732014,
+              "disconnected_over_M": 0.0041774286002666024,
+              "connected_over_M": 0.009079331313516686,
+              "total_over_M": 0.013256759913783287
+            },
+            "connected_peak": {
+              "q": 2.7680683317396393,
+              "q_over_pi": 0.8811035156249999,
+              "amplitude": 0.1290607183217789,
+              "S_disconnected": 0.299820042247204,
+              "S_connected": 0.6542426413134383,
+              "disconnected_over_M": 0.004164167253433389,
+              "connected_over_M": 0.009086703351575532,
+              "total_over_M": 0.013250870605008921
+            }
+          },
+          "quarter": {
+            "M": 36,
+            "mean": 0.2922132824834395,
+            "range": 0.2619142160650093,
+            "RMS": 0.09008848406312112,
+            "profile_peak": {
+              "q": 2.774971245285125,
+              "q_over_pi": 0.88330078125,
+              "amplitude": 0.12384527862781643,
+              "S_disconnected": 0.13803887734561338,
+              "S_connected": 0.5487221304777123,
+              "disconnected_over_M": 0.0038344132596003716,
+              "connected_over_M": 0.015242281402158676,
+              "total_over_M": 0.01907669466175905
+            },
+            "connected_peak": {
+              "q": 2.765767360557811,
+              "q_over_pi": 0.88037109375,
+              "amplitude": 0.12335114173495303,
+              "S_disconnected": 0.13693953750584822,
+              "S_connected": 0.5505381379949781,
+              "disconnected_over_M": 0.0038038760418291173,
+              "connected_over_M": 0.015292726055416058,
+              "total_over_M": 0.019096602097245174
+            }
+          },
+          "long_distance_RMS": 0.0056603227895767735
+        },
+        "bond": {
+          "half": {
+            "M": 71,
+            "mean": -0.2909830997020976,
+            "range": 0.23510057250076818,
+            "RMS": 0.08240664309371286,
+            "profile_peak": {
+              "q": 2.766534350951754,
+              "q_over_pi": 0.880615234375,
+              "amplitude": 0.11867051801988746,
+              "S_disconnected": 0.24996778028617467,
+              "S_connected": 0.523774291251089,
+              "disconnected_over_M": 0.003520672961777108,
+              "connected_over_M": 0.00737710269367731,
+              "total_over_M": 0.010897775655454417
+            },
+            "connected_peak": {
+              "q": 0.5292233718205462,
+              "q_over_pi": 0.16845703125,
+              "amplitude": 0.0031683254045008604,
+              "S_disconnected": 0.0001781795741712983,
+              "S_connected": 1.671130089588791,
+              "disconnected_over_M": 2.5095714672013846e-06,
+              "connected_over_M": 0.023537043515335084,
+              "total_over_M": 0.023539553086802285
+            }
+          },
+          "quarter": {
+            "M": 35,
+            "mean": -0.2888999463118396,
+            "range": 0.22357991632751567,
+            "RMS": 0.0807206943379107,
+            "profile_peak": {
+              "q": 2.75733046622444,
+              "q_over_pi": 0.877685546875,
+              "amplitude": 0.11694996004402083,
+              "S_disconnected": 0.11967631510010811,
+              "S_connected": 0.47007112277027036,
+              "disconnected_over_M": 0.0034193232885745173,
+              "connected_over_M": 0.01343060350772201,
+              "total_over_M": 0.016849926796296526
+            },
+            "connected_peak": {
+              "q": 0.5338253141842031,
+              "q_over_pi": 0.169921875,
+              "amplitude": 0.007127111513877713,
+              "S_disconnected": 0.0004444625371484225,
+              "S_connected": 1.6540828965416299,
+              "disconnected_over_M": 1.2698929632812071e-05,
+              "connected_over_M": 0.047259511329760855,
+              "total_over_M": 0.04727221025939367
+            }
+          },
+          "long_distance_RMS": 0.003992876287928672
+        },
+        "kinetic": {
+          "half": {
+            "M": 71,
+            "mean": -0.22972341280713712,
+            "range": 0.0313467322224687,
+            "RMS": 0.011033880763696878,
+            "profile_peak": {
+              "q": 2.766534350951754,
+              "q_over_pi": 0.880615234375,
+              "amplitude": 0.0158549244404714,
+              "S_disconnected": 0.004461970664981769,
+              "S_connected": 0.3047936405771074,
+              "disconnected_over_M": 6.284465725326436e-05,
+              "connected_over_M": 0.004292868177142357,
+              "total_over_M": 0.004355712834395622
+            },
+            "connected_peak": {
+              "q": 0.4026699568199808,
+              "q_over_pi": 0.128173828125,
+              "amplitude": 5.433276880633914e-05,
+              "S_disconnected": 5.2398883349395007e-08,
+              "S_connected": 0.555810051325241,
+              "disconnected_over_M": 7.380124415407748e-10,
+              "connected_over_M": 0.007828310582045648,
+              "total_over_M": 0.007828311320058089
+            }
+          },
+          "quarter": {
+            "M": 35,
+            "mean": -0.2295350956038007,
+            "range": 0.02983524198222659,
+            "RMS": 0.010762652694479877,
+            "profile_peak": {
+              "q": 2.756563475830497,
+              "q_over_pi": 0.87744140625,
+              "amplitude": 0.015570134636466438,
+              "S_disconnected": 0.0021212545602298035,
+              "S_connected": 0.30618599694107684,
+              "disconnected_over_M": 6.060727314942296e-05,
+              "connected_over_M": 0.008748171341173625,
+              "total_over_M": 0.008808778614323047
+            },
+            "connected_peak": {
+              "q": 0.39730102406238105,
+              "q_over_pi": 0.12646484375,
+              "amplitude": 0.0006695411362946596,
+              "S_disconnected": 3.922496665419011e-06,
+              "S_connected": 0.5544292974436738,
+              "disconnected_over_M": 1.1207133329768604e-07,
+              "connected_over_M": 0.01584083706981925,
+              "total_over_M": 0.015840949141152545
+            }
+          },
+          "long_distance_RMS": 8.925777680335118e-05
+        }
+      },
+      "run_status": "running"
+    },
+    {
+      "file": "observations/v4_L48_P0_s1_chi128.json",
+      "tag": "v4_L48_P0_s1",
+      "L": 48,
+      "P": 0,
+      "chi": 128,
+      "boundary": "full",
+      "E": -49.343758854024784,
+      "operators": {
+        "density": {
+          "half": {
+            "M": 24,
+            "mean": 0.2914112888704425,
+            "range": 0.3286498558709962,
+            "RMS": 0.11211513235375933,
+            "profile_peak": {
+              "q": 2.788777072376096,
+              "q_over_pi": 0.8876953125000001,
+              "amplitude": 0.14893167678036337,
+              "S_disconnected": 0.13308386609166376,
+              "S_connected": 0.3992143680806501,
+              "disconnected_over_M": 0.0055451610871526565,
+              "connected_over_M": 0.01663393200336042,
+              "total_over_M": 0.022179093090513077
+            },
+            "connected_peak": {
+              "q": 2.814087755376209,
+              "q_over_pi": 0.8957519531250001,
+              "amplitude": 0.1471439047789659,
+              "S_disconnected": 0.12990797228160836,
+              "S_connected": 0.40264055263753445,
+              "disconnected_over_M": 0.0054128321784003485,
+              "connected_over_M": 0.016776689693230602,
+              "total_over_M": 0.02218952187163095
+            }
+          },
+          "quarter": {
+            "M": 12,
+            "mean": 0.27260490072236926,
+            "range": 0.3286498558709962,
+            "RMS": 0.12801175642305612,
+            "profile_peak": {
+              "q": 2.771136293315411,
+              "q_over_pi": 0.882080078125,
+              "amplitude": 0.19901657860381963,
+              "S_disconnected": 0.11882279567751097,
+              "S_connected": 0.2972798608714096,
+              "disconnected_over_M": 0.00990189963979258,
+              "connected_over_M": 0.024773321739284135,
+              "total_over_M": 0.034675221379076714
+            },
+            "connected_peak": {
+              "q": 2.9107285450130043,
+              "q_over_pi": 0.926513671875,
+              "amplitude": 0.16625293657834847,
+              "S_disconnected": 0.08292011676277308,
+              "S_connected": 0.3069240675986326,
+              "disconnected_over_M": 0.00691000973023109,
+              "connected_over_M": 0.025577005633219383,
+              "total_over_M": 0.03248701536345047
+            }
+          },
+          "long_distance_RMS": 0.011466206462425122
+        },
+        "bond": {
+          "half": {
+            "M": 23,
+            "mean": -0.2665528936224027,
+            "range": 0.2714347972683201,
+            "RMS": 0.10231605115994108,
+            "profile_peak": {
+              "q": 2.807951832224666,
+              "q_over_pi": 0.893798828125,
+              "amplitude": 0.15327336138740252,
+              "S_disconnected": 0.13508315903821141,
+              "S_connected": 0.31246120198881816,
+              "disconnected_over_M": 0.0058731808277483226,
+              "connected_over_M": 0.013585269651687746,
+              "total_over_M": 0.019458450479436066
+            },
+            "connected_peak": {
+              "q": 0.5161845351235183,
+              "q_over_pi": 0.164306640625,
+              "amplitude": 0.006242284526851075,
+              "S_disconnected": 0.00022405516765644498,
+              "S_connected": 1.6945054905588552,
+              "disconnected_over_M": 9.741529028541086e-06,
+              "connected_over_M": 0.0736741517634285,
+              "total_over_M": 0.07368389329245703
+            }
+          },
+          "quarter": {
+            "M": 11,
+            "mean": -0.2649209367827526,
+            "range": 0.24979486728059194,
+            "RMS": 0.08568898925242079,
+            "profile_peak": {
+              "q": 3.141592653589793,
+              "q_over_pi": 1.0,
+              "amplitude": 0.13697243134272802,
+              "S_disconnected": 0.05159397910683043,
+              "S_connected": 0.1695138351843773,
+              "disconnected_over_M": 0.004690361736984585,
+              "connected_over_M": 0.01541034865312521,
+              "total_over_M": 0.020100710390109796
+            },
+            "connected_peak": {
+              "q": 0.5714078434874014,
+              "q_over_pi": 0.181884765625,
+              "amplitude": 0.0161972171107284,
+              "S_disconnected": 0.0007214620658632001,
+              "S_connected": 1.6749919721558322,
+              "disconnected_over_M": 6.558746053301818e-05,
+              "connected_over_M": 0.152271997468712,
+              "total_over_M": 0.152337584929245
+            }
+          },
+          "long_distance_RMS": 0.010565178931223025
+        },
+        "kinetic": {
+          "half": {
+            "M": 23,
+            "mean": -0.24235856169810185,
+            "range": 0.043601317364881514,
+            "RMS": 0.01568869860131599,
+            "profile_peak": {
+              "q": 2.804116880254952,
+              "q_over_pi": 0.892578125,
+              "amplitude": 0.02331717921371669,
+              "S_disconnected": 0.0031262223672863447,
+              "S_connected": 0.30630152146241935,
+              "disconnected_over_M": 0.0001359227116211454,
+              "connected_over_M": 0.013317457454887797,
+              "total_over_M": 0.013453380166508943
+            },
+            "connected_peak": {
+              "q": 0.3919320913047813,
+              "q_over_pi": 0.12475585937499999,
+              "amplitude": 0.0007243472906097522,
+              "S_disconnected": 3.016904235128712e-06,
+              "S_connected": 0.572787910053448,
+              "disconnected_over_M": 1.3116974935342227e-07,
+              "connected_over_M": 0.024903822176236868,
+              "total_over_M": 0.024903953345986222
+            }
+          },
+          "quarter": {
+            "M": 11,
+            "mean": -0.24188028816233906,
+            "range": 0.03988223440575164,
+            "RMS": 0.013300479691318236,
+            "profile_peak": {
+              "q": 3.141592653589793,
+              "q_over_pi": 1.0,
+              "amplitude": 0.021643813216797144,
+              "S_disconnected": 0.0012882502890499074,
+              "S_connected": 0.3216287414770012,
+              "disconnected_over_M": 0.00011711366264090068,
+              "connected_over_M": 0.0292389764979092,
+              "total_over_M": 0.0293560901605501
+            },
+            "connected_peak": {
+              "q": 0.5714078434874014,
+              "q_over_pi": 0.181884765625,
+              "amplitude": 0.002740644786009313,
+              "S_disconnected": 2.065561806847009e-05,
+              "S_connected": 0.543786721704133,
+              "disconnected_over_M": 1.8777834607700082e-06,
+              "connected_over_M": 0.049435156518557545,
+              "total_over_M": 0.04943703430201832
+            }
+          },
+          "long_distance_RMS": 0.0008534436719053898
+        }
+      },
+      "run_status": "done"
+    },
+    {
+      "file": "observations/v4_L48_P0_s1_chi192.json",
+      "tag": "v4_L48_P0_s1",
+      "L": 48,
+      "P": 0,
+      "chi": 192,
+      "boundary": "full",
+      "E": -49.34375957111406,
+      "operators": {
+        "density": {
+          "half": {
+            "M": 24,
+            "mean": 0.29141514765757076,
+            "range": 0.3286221163925781,
+            "RMS": 0.11210654228230765,
+            "profile_peak": {
+              "q": 2.788777072376096,
+              "q_over_pi": 0.8876953125000001,
+              "amplitude": 0.14892080779689076,
+              "S_disconnected": 0.1330644419692709,
+              "S_connected": 0.399264125346789,
+              "disconnected_over_M": 0.0055443517487196205,
+              "connected_over_M": 0.016636005222782874,
+              "total_over_M": 0.0221803569715025
+            },
+            "connected_peak": {
+              "q": 2.814087755376209,
+              "q_over_pi": 0.8957519531250001,
+              "amplitude": 0.1471322274289069,
+              "S_disconnected": 0.1298873540891495,
+              "S_connected": 0.4026900719654665,
+              "disconnected_over_M": 0.005411973087047896,
+              "connected_over_M": 0.016778752998561106,
+              "total_over_M": 0.022190726085609
+            }
+          },
+          "quarter": {
+            "M": 12,
+            "mean": 0.27261008026261324,
+            "range": 0.3286221163925781,
+            "RMS": 0.12800130713525684,
+            "profile_peak": {
+              "q": 2.771136293315411,
+              "q_over_pi": 0.882080078125,
+              "amplitude": 0.19900035325100407,
+              "S_disconnected": 0.11880342178207322,
+              "S_connected": 0.2973134126746299,
+              "disconnected_over_M": 0.009900285148506102,
+              "connected_over_M": 0.024776117722885824,
+              "total_over_M": 0.034676402871391926
+            },
+            "connected_peak": {
+              "q": 2.9099615546190614,
+              "q_over_pi": 0.92626953125,
+              "amplitude": 0.1665935875790517,
+              "S_disconnected": 0.0832602702673775,
+              "S_connected": 0.30694832302046177,
+              "disconnected_over_M": 0.006938355855614792,
+              "connected_over_M": 0.025579026918371814,
+              "total_over_M": 0.03251738277398661
+            }
+          },
+          "long_distance_RMS": 0.011469010569877511
+        },
+        "bond": {
+          "half": {
+            "M": 23,
+            "mean": -0.2665668011784961,
+            "range": 0.27141326753723766,
+            "RMS": 0.10230861454514618,
+            "profile_peak": {
+              "q": 2.807951832224666,
+              "q_over_pi": 0.893798828125,
+              "amplitude": 0.15326230811072708,
+              "S_disconnected": 0.13506367675270778,
+              "S_connected": 0.31249747006301043,
+              "disconnected_over_M": 0.00587233377185686,
+              "connected_over_M": 0.013586846524478714,
+              "total_over_M": 0.019459180296335577
+            },
+            "connected_peak": {
+              "q": 0.5161845351235183,
+              "q_over_pi": 0.164306640625,
+              "amplitude": 0.006242008844869488,
+              "S_disconnected": 0.00022403537791171625,
+              "S_connected": 1.694481268452689,
+              "disconnected_over_M": 9.740668604857228e-06,
+              "connected_over_M": 0.07367309862837779,
+              "total_over_M": 0.07368283929698265
+            }
+          },
+          "quarter": {
+            "M": 11,
+            "mean": -0.2649353272382737,
+            "range": 0.2497745787620913,
+            "RMS": 0.08568186738991028,
+            "profile_peak": {
+              "q": 3.141592653589793,
+              "q_over_pi": 1.0,
+              "amplitude": 0.13696105245912912,
+              "S_disconnected": 0.05158540719945888,
+              "S_connected": 0.16953242312458022,
+              "disconnected_over_M": 0.00468958247267808,
+              "connected_over_M": 0.01541203846587093,
+              "total_over_M": 0.020101620938549006
+            },
+            "connected_peak": {
+              "q": 0.5714078434874014,
+              "q_over_pi": 0.181884765625,
+              "amplitude": 0.016194693248392202,
+              "S_disconnected": 0.0007212372458761798,
+              "S_connected": 1.6749673490645067,
+              "disconnected_over_M": 6.556702235237997e-05,
+              "connected_over_M": 0.15226975900586426,
+              "total_over_M": 0.15233532602821664
+            }
+          },
+          "long_distance_RMS": 0.010566329674389979
+        },
+        "kinetic": {
+          "half": {
+            "M": 23,
+            "mean": -0.24235368289159762,
+            "range": 0.04359678681012091,
+            "RMS": 0.01568714848547399,
+            "profile_peak": {
+              "q": 2.804116880254952,
+              "q_over_pi": 0.892578125,
+              "amplitude": 0.023314931393998494,
+              "S_disconnected": 0.0031256196489644257,
+              "S_connected": 0.3062965074380654,
+              "disconnected_over_M": 0.00013589650647671415,
+              "connected_over_M": 0.01331723945382893,
+              "total_over_M": 0.013453135960305644
+            },
+            "connected_peak": {
+              "q": 0.3919320913047813,
+              "q_over_pi": 0.12475585937499999,
+              "amplitude": 0.0007243802391390417,
+              "S_disconnected": 3.017178702417027e-06,
+              "S_connected": 0.5727807897864364,
+              "disconnected_over_M": 1.3118168271378379e-07,
+              "connected_over_M": 0.02490351259941028,
+              "total_over_M": 0.024903643781092995
+            }
+          },
+          "quarter": {
+            "M": 11,
+            "mean": -0.24187560268058672,
+            "range": 0.03987806223629181,
+            "RMS": 0.013299078612615537,
+            "profile_peak": {
+              "q": 3.141592653589793,
+              "q_over_pi": 1.0,
+              "amplitude": 0.021641500905421093,
+              "S_disconnected": 0.0012879750439581904,
+              "S_connected": 0.32162042709993205,
+              "disconnected_over_M": 0.00011708864035983548,
+              "connected_over_M": 0.029238220645448367,
+              "total_over_M": 0.029355309285808203
+            },
+            "connected_peak": {
+              "q": 0.5714078434874014,
+              "q_over_pi": 0.181884765625,
+              "amplitude": 0.002740020601451584,
+              "S_disconnected": 2.0646210465042518e-05,
+              "S_connected": 0.5437799639041531,
+              "disconnected_over_M": 1.8769282240947744e-06,
+              "connected_over_M": 0.04943454217310483,
+              "total_over_M": 0.04943641910132892
+            }
+          },
+          "long_distance_RMS": 0.0008536446911440313
+        }
+      },
+      "run_status": "done"
+    },
+    {
+      "file": "observations/v4_L48_P1_s1_chi128.json",
+      "tag": "v4_L48_P1_s1",
+      "L": 48,
+      "P": 1,
+      "chi": 128,
+      "boundary": "full",
+      "E": -49.344147499834314,
+      "operators": {
+        "density": {
+          "half": {
+            "M": 24,
+            "mean": 0.30129423728752824,
+            "range": 0.3508984524871956,
+            "RMS": 0.11982681427580438,
+            "profile_peak": {
+              "q": 2.78724309158821,
+              "q_over_pi": 0.88720703125,
+              "amplitude": 0.15933744014527185,
+              "S_disconnected": 0.15233051899228853,
+              "S_connected": 0.42518343830901567,
+              "disconnected_over_M": 0.006347104958012022,
+              "connected_over_M": 0.017715976596208986,
+              "total_over_M": 0.024063081554221006
+            },
+            "connected_peak": {
+              "q": 2.81178678419438,
+              "q_over_pi": 0.89501953125,
+              "amplitude": 0.1575103705889844,
+              "S_disconnected": 0.1488571010584752,
+              "S_connected": 0.42870230267875536,
+              "disconnected_over_M": 0.006202379210769799,
+              "connected_over_M": 0.01786259594494814,
+              "total_over_M": 0.02406497515571794
+            }
+          },
+          "quarter": {
+            "M": 12,
+            "mean": 0.2813995670168159,
+            "range": 0.3508984524871956,
+            "RMS": 0.13688423285865645,
+            "profile_peak": {
+              "q": 2.771136293315411,
+              "q_over_pi": 0.882080078125,
+              "amplitude": 0.21283235416682678,
+              "S_disconnected": 0.13589283294058077,
+              "S_connected": 0.3139747179763595,
+              "disconnected_over_M": 0.011324402745048397,
+              "connected_over_M": 0.02616455983136329,
+              "total_over_M": 0.03748896257641169
+            },
+            "connected_peak": {
+              "q": 2.9130295161948325,
+              "q_over_pi": 0.92724609375,
+              "amplitude": 0.17658813334994738,
+              "S_disconnected": 0.09355010652005641,
+              "S_connected": 0.3246258833034818,
+              "disconnected_over_M": 0.007795842210004701,
+              "connected_over_M": 0.027052156941956815,
+              "total_over_M": 0.03484799915196152
+            }
+          },
+          "long_distance_RMS": 0.012375986772731341
+        },
+        "bond": {
+          "half": {
+            "M": 23,
+            "mean": -0.2997891918181862,
+            "range": 0.28841250861655265,
+            "RMS": 0.10883333205530672,
+            "profile_peak": {
+              "q": 2.807951832224666,
+              "q_over_pi": 0.893798828125,
+              "amplitude": 0.1630203442518549,
+              "S_disconnected": 0.15280988767996137,
+              "S_connected": 0.33155270930982417,
+              "disconnected_over_M": 0.006643908159998321,
+              "connected_over_M": 0.01441533518738366,
+              "total_over_M": 0.021059243347381983
+            },
+            "connected_peak": {
+              "q": 0.48627190975974827,
+              "q_over_pi": 0.15478515625,
+              "amplitude": 0.006172092030011607,
+              "S_disconnected": 0.00021904464015486355,
+              "S_connected": 1.6352177934938874,
+              "disconnected_over_M": 9.523680006733197e-06,
+              "connected_over_M": 0.07109642580408206,
+              "total_over_M": 0.0711059494840888
+            }
+          },
+          "quarter": {
+            "M": 11,
+            "mean": -0.29886763136700856,
+            "range": 0.2660766090006711,
+            "RMS": 0.09112255426514695,
+            "profile_peak": {
+              "q": 3.141592653589793,
+              "q_over_pi": 1.0,
+              "amplitude": 0.14506862948521404,
+              "S_disconnected": 0.057873494966975365,
+              "S_connected": 0.17705761216125995,
+              "disconnected_over_M": 0.005261226815179578,
+              "connected_over_M": 0.01609614656011454,
+              "total_over_M": 0.021357373375294118
+            },
+            "connected_peak": {
+              "q": 0.5714078434874014,
+              "q_over_pi": 0.181884765625,
+              "amplitude": 0.017673982322018226,
+              "S_disconnected": 0.0008590165405772853,
+              "S_connected": 1.6177289364891108,
+              "disconnected_over_M": 7.80924127797532e-05,
+              "connected_over_M": 0.1470662669535555,
+              "total_over_M": 0.14714435936633527
+            }
+          },
+          "long_distance_RMS": 0.0109938658494673
+        },
+        "kinetic": {
+          "half": {
+            "M": 23,
+            "mean": -0.23162065917544722,
+            "range": 0.04339630907209574,
+            "RMS": 0.015758013935491345,
+            "profile_peak": {
+              "q": 2.803349889861009,
+              "q_over_pi": 0.892333984375,
+              "amplitude": 0.023341774022469085,
+              "S_disconnected": 0.0031328208834670735,
+              "S_connected": 0.29069873412441777,
+              "disconnected_over_M": 0.00013620960362900318,
+              "connected_over_M": 0.012639075396713816,
+              "total_over_M": 0.012775285000342819
+            },
+            "connected_peak": {
+              "q": 0.342077715698498,
+              "q_over_pi": 0.10888671875,
+              "amplitude": 0.0007161499290472116,
+              "S_disconnected": 2.9490066450273756e-06,
+              "S_connected": 0.5583981091028206,
+              "disconnected_over_M": 1.2821768021858156e-07,
+              "connected_over_M": 0.024278178656644375,
+              "total_over_M": 0.02427830687432459
+            }
+          },
+          "quarter": {
+            "M": 11,
+            "mean": -0.23086783141157455,
+            "range": 0.0400658999646947,
+            "RMS": 0.013364358696222005,
+            "profile_peak": {
+              "q": 3.141592653589793,
+              "q_over_pi": 1.0,
+              "amplitude": 0.021606840683453223,
+              "S_disconnected": 0.0012838528018803558,
+              "S_connected": 0.3055204871001503,
+              "disconnected_over_M": 0.00011671389108003234,
+              "connected_over_M": 0.027774589736377298,
+              "total_over_M": 0.027891303627457332
+            },
+            "connected_peak": {
+              "q": 0.5714078434874014,
+              "q_over_pi": 0.181884765625,
+              "amplitude": 0.0031100188759029825,
+              "S_disconnected": 2.6598597873300342e-05,
+              "S_connected": 0.5264437972214849,
+              "disconnected_over_M": 2.418054352118213e-06,
+              "connected_over_M": 0.047858527020134996,
+              "total_over_M": 0.04786094507448712
+            }
+          },
+          "long_distance_RMS": 0.0008653572878878156
+        }
+      },
+      "run_status": "done"
+    },
+    {
+      "file": "observations/v4_L48_P1_s1_chi192.json",
+      "tag": "v4_L48_P1_s1",
+      "L": 48,
+      "P": 1,
+      "chi": 192,
+      "boundary": "full",
+      "E": -49.34414815768204,
+      "operators": {
+        "density": {
+          "half": {
+            "M": 24,
+            "mean": 0.30129581677787165,
+            "range": 0.35086783749183187,
+            "RMS": 0.11981695465629853,
+            "profile_peak": {
+              "q": 2.78724309158821,
+              "q_over_pi": 0.88720703125,
+              "amplitude": 0.15932483579864729,
+              "S_disconnected": 0.15230641981359558,
+              "S_connected": 0.42522614026947747,
+              "disconnected_over_M": 0.006346100825566483,
+              "connected_over_M": 0.01771775584456156,
+              "total_over_M": 0.024063856670128045
+            },
+            "connected_peak": {
+              "q": 2.81178678419438,
+              "q_over_pi": 0.89501953125,
+              "amplitude": 0.15749712073989913,
+              "S_disconnected": 0.14883205824815024,
+              "S_connected": 0.42874511405360316,
+              "disconnected_over_M": 0.006201335760339593,
+              "connected_over_M": 0.017864379752233466,
+              "total_over_M": 0.02406571551257306
+            }
+          },
+          "quarter": {
+            "M": 12,
+            "mean": 0.28140362317866313,
+            "range": 0.35086783749183187,
+            "RMS": 0.1368727135845416,
+            "profile_peak": {
+              "q": 2.771136293315411,
+              "q_over_pi": 0.882080078125,
+              "amplitude": 0.21281447832266698,
+              "S_disconnected": 0.13587000655124667,
+              "S_connected": 0.31400696645629295,
+              "disconnected_over_M": 0.011322500545937223,
+              "connected_over_M": 0.026167247204691078,
+              "total_over_M": 0.0374897477506283
+            },
+            "connected_peak": {
+              "q": 2.9130295161948325,
+              "q_over_pi": 0.92724609375,
+              "amplitude": 0.17657327402957157,
+              "S_disconnected": 0.09353436330456653,
+              "S_connected": 0.32464835903142675,
+              "disconnected_over_M": 0.007794530275380545,
+              "connected_over_M": 0.02705402991928556,
+              "total_over_M": 0.03484856019466611
+            }
+          },
+          "long_distance_RMS": 0.012378521876901158
+        },
+        "bond": {
+          "half": {
+            "M": 23,
+            "mean": -0.2997956144663406,
+            "range": 0.2883899203626191,
+            "RMS": 0.10882481046156095,
+            "profile_peak": {
+              "q": 2.807951832224666,
+              "q_over_pi": 0.893798828125,
+              "amplitude": 0.16300768396364737,
+              "S_disconnected": 0.15278615392935596,
+              "S_connected": 0.33158416741323987,
+              "disconnected_over_M": 0.006642876257798086,
+              "connected_over_M": 0.014416702931010428,
+              "total_over_M": 0.021059579188808516
+            },
+            "connected_peak": {
+              "q": 0.48627190975974827,
+              "q_over_pi": 0.15478515625,
+              "amplitude": 0.0061746769172435646,
+              "S_disconnected": 0.00021922815143595782,
+              "S_connected": 1.6351978297414902,
+              "disconnected_over_M": 9.531658758085122e-06,
+              "connected_over_M": 0.0710955578148474,
+              "total_over_M": 0.07110508947360548
+            }
+          },
+          "quarter": {
+            "M": 11,
+            "mean": -0.29887792660707174,
+            "range": 0.26605489818929373,
+            "RMS": 0.09111416032333246,
+            "profile_peak": {
+              "q": 3.141592653589793,
+              "q_over_pi": 1.0,
+              "amplitude": 0.14505570144979418,
+              "S_disconnected": 0.05786318043850251,
+              "S_connected": 0.17707612405981046,
+              "disconnected_over_M": 0.005260289130772955,
+              "connected_over_M": 0.016097829459982768,
+              "total_over_M": 0.021358118590755724
+            },
+            "connected_peak": {
+              "q": 0.5714078434874014,
+              "q_over_pi": 0.181884765625,
+              "amplitude": 0.017668581553477045,
+              "S_disconnected": 0.0008584916288076401,
+              "S_connected": 1.6177104227676813,
+              "disconnected_over_M": 7.804469352796729e-05,
+              "connected_over_M": 0.14706458388797103,
+              "total_over_M": 0.14714262858149899
+            }
+          },
+          "long_distance_RMS": 0.010995486074773925
+        },
+        "kinetic": {
+          "half": {
+            "M": 23,
+            "mean": -0.23161831174702882,
+            "range": 0.04339250637656372,
+            "RMS": 0.01575668349171258,
+            "profile_peak": {
+              "q": 2.803349889861009,
+              "q_over_pi": 0.892333984375,
+              "amplitude": 0.02333987528383878,
+              "S_disconnected": 0.0031323112250246027,
+              "S_connected": 0.29069730777103436,
+              "disconnected_over_M": 0.00013618744456628707,
+              "connected_over_M": 0.01263901338134932,
+              "total_over_M": 0.012775200825915607
+            },
+            "connected_peak": {
+              "q": 0.342077715698498,
+              "q_over_pi": 0.10888671875,
+              "amplitude": 0.0007179824016396699,
+              "S_disconnected": 2.9641176921195413e-06,
+              "S_connected": 0.5583944738721409,
+              "disconnected_over_M": 1.28874682266067e-07,
+              "connected_over_M": 0.024278020603136562,
+              "total_over_M": 0.024278149477818825
+            }
+          },
+          "quarter": {
+            "M": 11,
+            "mean": -0.23086441863806229,
+            "range": 0.04006148781387442,
+            "RMS": 0.013362755541345516,
+            "profile_peak": {
+              "q": 3.141592653589793,
+              "q_over_pi": 1.0,
+              "amplitude": 0.021603953950556646,
+              "S_disconnected": 0.0012835097723188735,
+              "S_connected": 0.3055148447372202,
+              "disconnected_over_M": 0.00011668270657444304,
+              "connected_over_M": 0.027774076794292744,
+              "total_over_M": 0.02789075950086719
+            },
+            "connected_peak": {
+              "q": 0.5714078434874014,
+              "q_over_pi": 0.181884765625,
+              "amplitude": 0.003108211036861373,
+              "S_disconnected": 2.6567683586583845e-05,
+              "S_connected": 0.5264393596430827,
+              "disconnected_over_M": 2.4152439624167133e-06,
+              "connected_over_M": 0.047858123603916614,
+              "total_over_M": 0.047860538847879025
+            }
+          },
+          "long_distance_RMS": 0.0008655561778581096
+        }
+      },
+      "run_status": "done"
+    }
+  ],
+  "has_interim_observations": true,
+  "numerical_gates": [
+    {
+      "tag": "v4_L48_P0_s1",
+      "gates": {
+        "residual": true,
+        "stationarity": true,
+        "discarded_weight": true,
+        "chi_step": true
+      },
+      "all_gates": true,
+      "dE": 2.9171509652314853e-10,
+      "dS": 6.773346994393137e-08,
+      "dn": 4.033568978822899e-09,
+      "dS_chi": 0.00039751766874762673,
+      "res_max": 9.961801189466743e-10,
+      "trunc": 1.551359929408136e-09,
+      "stopping_rule_met": true,
+      "schedule_limit_hit": false
+    },
+    {
+      "tag": "v4_L48_P1_s1",
+      "gates": {
+        "residual": true,
+        "stationarity": true,
+        "discarded_weight": true,
+        "chi_step": true
+      },
+      "all_gates": true,
+      "dE": 2.6782842610373336e-10,
+      "dS": 7.706262405982045e-08,
+      "dn": 2.1213120149354836e-09,
+      "dS_chi": 0.00037414601911778256,
+      "res_max": 9.97370042449747e-10,
+      "trunc": 1.3855516733940476e-09,
+      "stopping_rule_met": true,
+      "schedule_limit_hit": false
+    },
+    {
+      "tag": "reused_L96_P0_chi256",
+      "gates": {
+        "residual": true,
+        "stationarity": true,
+        "discarded_weight": true,
+        "chi_step": true
+      },
+      "all_gates": true,
+      "dE": 9.667502354204771e-10,
+      "dS": 1.648341139137699e-07,
+      "dn": 6.580415101709036e-10,
+      "dS_chi": 0.0051199489440916235,
+      "res_max": 9.993222143660414e-10,
+      "trunc": 1.4490865174465739e-08,
+      "stopping_rule_met": true,
+      "schedule_limit_hit": false
+    },
+    {
+      "tag": "reused_L96_P1_chi256",
+      "gates": {
+        "residual": true,
+        "stationarity": true,
+        "discarded_weight": true,
+        "chi_step": true
+      },
+      "all_gates": true,
+      "dE": 8.926051009439107e-10,
+      "dS": 6.089954691645971e-07,
+      "dn": 8.563795561578047e-09,
+      "dS_chi": 0.0056179177865669505,
+      "res_max": 9.994897394489e-10,
+      "trunc": 1.629751367193677e-08,
+      "stopping_rule_met": true,
+      "schedule_limit_hit": false
+    }
+  ],
+  "accuracy_comparisons": [
+    {
+      "tags": [
+        "v4_L48_P0_s1",
+        "v4_L48_P0_s1"
+      ],
+      "chis": [
+        128,
+        192
+      ],
+      "all_observable_gates": true,
+      "rows": [
+        {
+          "operator": "density",
+          "window": "half",
+          "metric": "RMS",
+          "values": [
+            0.11211513235375933,
+            0.11210654228230765
+          ],
+          "change": 8.59007145168067e-06,
+          "tolerance": 0.005605756617687967,
+          "pass_gate": true
+        },
+        {
+          "operator": "density",
+          "window": "half",
+          "metric": "connected_peak_weight",
+          "values": [
+            0.016776689693230602,
+            0.016778752998561106
+          ],
+          "change": 2.0633053305040006e-06,
+          "tolerance": 0.0008389376499280554,
+          "pass_gate": true
+        },
+        {
+          "operator": "density",
+          "window": "quarter",
+          "metric": "RMS",
+          "values": [
+            0.12801175642305612,
+            0.12800130713525684
+          ],
+          "change": 1.0449287799280116e-05,
+          "tolerance": 0.0064005878211528065,
+          "pass_gate": true
+        },
+        {
+          "operator": "density",
+          "window": "quarter",
+          "metric": "connected_peak_weight",
+          "values": [
+            0.025577005633219383,
+            0.025579026918371814
+          ],
+          "change": 2.0212851524308018e-06,
+          "tolerance": 0.0012789513459185908,
+          "pass_gate": true
+        },
+        {
+          "operator": "bond",
+          "window": "half",
+          "metric": "RMS",
+          "values": [
+            0.10231605115994108,
+            0.10230861454514618
+          ],
+          "change": 7.436614794895102e-06,
+          "tolerance": 0.005115802557997054,
+          "pass_gate": true
+        },
+        {
+          "operator": "bond",
+          "window": "half",
+          "metric": "connected_peak_weight",
+          "values": [
+            0.0736741517634285,
+            0.07367309862837779
+          ],
+          "change": 1.0531350507075876e-06,
+          "tolerance": 0.003683707588171425,
+          "pass_gate": true
+        },
+        {
+          "operator": "bond",
+          "window": "quarter",
+          "metric": "RMS",
+          "values": [
+            0.08568898925242079,
+            0.08568186738991028
+          ],
+          "change": 7.121862510506283e-06,
+          "tolerance": 0.00428444946262104,
+          "pass_gate": true
+        },
+        {
+          "operator": "bond",
+          "window": "quarter",
+          "metric": "connected_peak_weight",
+          "values": [
+            0.152271997468712,
+            0.15226975900586426
+          ],
+          "change": 2.2384628477478685e-06,
+          "tolerance": 0.0076135998734356,
+          "pass_gate": true
+        },
+        {
+          "operator": "kinetic",
+          "window": "half",
+          "metric": "RMS",
+          "values": [
+            0.01568869860131599,
+            0.01568714848547399
+          ],
+          "change": 1.5501158420021255e-06,
+          "tolerance": 0.0007844349300657996,
+          "pass_gate": true
+        },
+        {
+          "operator": "kinetic",
+          "window": "half",
+          "metric": "connected_peak_weight",
+          "values": [
+            0.024903822176236868,
+            0.02490351259941028
+          ],
+          "change": 3.095768265869159e-07,
+          "tolerance": 0.0012451911088118435,
+          "pass_gate": true
+        },
+        {
+          "operator": "kinetic",
+          "window": "quarter",
+          "metric": "RMS",
+          "values": [
+            0.013300479691318236,
+            0.013299078612615537
+          ],
+          "change": 1.4010787026987048e-06,
+          "tolerance": 0.0006650239845659118,
+          "pass_gate": true
+        },
+        {
+          "operator": "kinetic",
+          "window": "quarter",
+          "metric": "connected_peak_weight",
+          "values": [
+            0.049435156518557545,
+            0.04943454217310483
+          ],
+          "change": 6.143454527179903e-07,
+          "tolerance": 0.0024717578259278775,
+          "pass_gate": true
+        }
+      ]
+    },
+    {
+      "tags": [
+        "v4_L48_P1_s1",
+        "v4_L48_P1_s1"
+      ],
+      "chis": [
+        128,
+        192
+      ],
+      "all_observable_gates": true,
+      "rows": [
+        {
+          "operator": "density",
+          "window": "half",
+          "metric": "RMS",
+          "values": [
+            0.11982681427580438,
+            0.11981695465629853
+          ],
+          "change": 9.859619505850348e-06,
+          "tolerance": 0.005991340713790219,
+          "pass_gate": true
+        },
+        {
+          "operator": "density",
+          "window": "half",
+          "metric": "connected_peak_weight",
+          "values": [
+            0.01786259594494814,
+            0.017864379752233466
+          ],
+          "change": 1.7838072853271214e-06,
+          "tolerance": 0.0008932189876116733,
+          "pass_gate": true
+        },
+        {
+          "operator": "density",
+          "window": "quarter",
+          "metric": "RMS",
+          "values": [
+            0.13688423285865645,
+            0.1368727135845416
+          ],
+          "change": 1.1519274114857314e-05,
+          "tolerance": 0.006844211642932823,
+          "pass_gate": true
+        },
+        {
+          "operator": "density",
+          "window": "quarter",
+          "metric": "connected_peak_weight",
+          "values": [
+            0.027052156941956815,
+            0.02705402991928556
+          ],
+          "change": 1.8729773287456952e-06,
+          "tolerance": 0.001352701495964278,
+          "pass_gate": true
+        },
+        {
+          "operator": "bond",
+          "window": "half",
+          "metric": "RMS",
+          "values": [
+            0.10883333205530672,
+            0.10882481046156095
+          ],
+          "change": 8.521593745772216e-06,
+          "tolerance": 0.005441666602765336,
+          "pass_gate": true
+        },
+        {
+          "operator": "bond",
+          "window": "half",
+          "metric": "connected_peak_weight",
+          "values": [
+            0.07109642580408206,
+            0.0710955578148474
+          ],
+          "change": 8.679892346541429e-07,
+          "tolerance": 0.003554821290204103,
+          "pass_gate": true
+        },
+        {
+          "operator": "bond",
+          "window": "quarter",
+          "metric": "RMS",
+          "values": [
+            0.09112255426514695,
+            0.09111416032333246
+          ],
+          "change": 8.39394181449682e-06,
+          "tolerance": 0.004556127713257348,
+          "pass_gate": true
+        },
+        {
+          "operator": "bond",
+          "window": "quarter",
+          "metric": "connected_peak_weight",
+          "values": [
+            0.1470662669535555,
+            0.14706458388797103
+          ],
+          "change": 1.683065584484611e-06,
+          "tolerance": 0.007353313347677776,
+          "pass_gate": true
+        },
+        {
+          "operator": "kinetic",
+          "window": "half",
+          "metric": "RMS",
+          "values": [
+            0.015758013935491345,
+            0.01575668349171258
+          ],
+          "change": 1.3304437787645118e-06,
+          "tolerance": 0.0007879006967745673,
+          "pass_gate": true
+        },
+        {
+          "operator": "kinetic",
+          "window": "half",
+          "metric": "connected_peak_weight",
+          "values": [
+            0.024278178656644375,
+            0.024278020603136562
+          ],
+          "change": 1.5805350781286642e-07,
+          "tolerance": 0.001213908932832219,
+          "pass_gate": true
+        },
+        {
+          "operator": "kinetic",
+          "window": "quarter",
+          "metric": "RMS",
+          "values": [
+            0.013364358696222005,
+            0.013362755541345516
+          ],
+          "change": 1.6031548764894321e-06,
+          "tolerance": 0.0006682179348111003,
+          "pass_gate": true
+        },
+        {
+          "operator": "kinetic",
+          "window": "quarter",
+          "metric": "connected_peak_weight",
+          "values": [
+            0.047858527020134996,
+            0.047858123603916614
+          ],
+          "change": 4.03416218382191e-07,
+          "tolerance": 0.00239292635100675,
+          "pass_gate": true
+        }
+      ]
+    }
+  ],
+  "best_original_states": [
+    {
+      "file": "observations/v4_L48_P0_s1_chi192.json",
+      "tag": "v4_L48_P0_s1",
+      "L": 48,
+      "P": 0,
+      "chi": 192,
+      "boundary": "full",
+      "E": -49.34375957111406,
+      "operators": {
+        "density": {
+          "half": {
+            "M": 24,
+            "mean": 0.29141514765757076,
+            "range": 0.3286221163925781,
+            "RMS": 0.11210654228230765,
+            "profile_peak": {
+              "q": 2.788777072376096,
+              "q_over_pi": 0.8876953125000001,
+              "amplitude": 0.14892080779689076,
+              "S_disconnected": 0.1330644419692709,
+              "S_connected": 0.399264125346789,
+              "disconnected_over_M": 0.0055443517487196205,
+              "connected_over_M": 0.016636005222782874,
+              "total_over_M": 0.0221803569715025
+            },
+            "connected_peak": {
+              "q": 2.814087755376209,
+              "q_over_pi": 0.8957519531250001,
+              "amplitude": 0.1471322274289069,
+              "S_disconnected": 0.1298873540891495,
+              "S_connected": 0.4026900719654665,
+              "disconnected_over_M": 0.005411973087047896,
+              "connected_over_M": 0.016778752998561106,
+              "total_over_M": 0.022190726085609
+            }
+          },
+          "quarter": {
+            "M": 12,
+            "mean": 0.27261008026261324,
+            "range": 0.3286221163925781,
+            "RMS": 0.12800130713525684,
+            "profile_peak": {
+              "q": 2.771136293315411,
+              "q_over_pi": 0.882080078125,
+              "amplitude": 0.19900035325100407,
+              "S_disconnected": 0.11880342178207322,
+              "S_connected": 0.2973134126746299,
+              "disconnected_over_M": 0.009900285148506102,
+              "connected_over_M": 0.024776117722885824,
+              "total_over_M": 0.034676402871391926
+            },
+            "connected_peak": {
+              "q": 2.9099615546190614,
+              "q_over_pi": 0.92626953125,
+              "amplitude": 0.1665935875790517,
+              "S_disconnected": 0.0832602702673775,
+              "S_connected": 0.30694832302046177,
+              "disconnected_over_M": 0.006938355855614792,
+              "connected_over_M": 0.025579026918371814,
+              "total_over_M": 0.03251738277398661
+            }
+          },
+          "long_distance_RMS": 0.011469010569877511
+        },
+        "bond": {
+          "half": {
+            "M": 23,
+            "mean": -0.2665668011784961,
+            "range": 0.27141326753723766,
+            "RMS": 0.10230861454514618,
+            "profile_peak": {
+              "q": 2.807951832224666,
+              "q_over_pi": 0.893798828125,
+              "amplitude": 0.15326230811072708,
+              "S_disconnected": 0.13506367675270778,
+              "S_connected": 0.31249747006301043,
+              "disconnected_over_M": 0.00587233377185686,
+              "connected_over_M": 0.013586846524478714,
+              "total_over_M": 0.019459180296335577
+            },
+            "connected_peak": {
+              "q": 0.5161845351235183,
+              "q_over_pi": 0.164306640625,
+              "amplitude": 0.006242008844869488,
+              "S_disconnected": 0.00022403537791171625,
+              "S_connected": 1.694481268452689,
+              "disconnected_over_M": 9.740668604857228e-06,
+              "connected_over_M": 0.07367309862837779,
+              "total_over_M": 0.07368283929698265
+            }
+          },
+          "quarter": {
+            "M": 11,
+            "mean": -0.2649353272382737,
+            "range": 0.2497745787620913,
+            "RMS": 0.08568186738991028,
+            "profile_peak": {
+              "q": 3.141592653589793,
+              "q_over_pi": 1.0,
+              "amplitude": 0.13696105245912912,
+              "S_disconnected": 0.05158540719945888,
+              "S_connected": 0.16953242312458022,
+              "disconnected_over_M": 0.00468958247267808,
+              "connected_over_M": 0.01541203846587093,
+              "total_over_M": 0.020101620938549006
+            },
+            "connected_peak": {
+              "q": 0.5714078434874014,
+              "q_over_pi": 0.181884765625,
+              "amplitude": 0.016194693248392202,
+              "S_disconnected": 0.0007212372458761798,
+              "S_connected": 1.6749673490645067,
+              "disconnected_over_M": 6.556702235237997e-05,
+              "connected_over_M": 0.15226975900586426,
+              "total_over_M": 0.15233532602821664
+            }
+          },
+          "long_distance_RMS": 0.010566329674389979
+        },
+        "kinetic": {
+          "half": {
+            "M": 23,
+            "mean": -0.24235368289159762,
+            "range": 0.04359678681012091,
+            "RMS": 0.01568714848547399,
+            "profile_peak": {
+              "q": 2.804116880254952,
+              "q_over_pi": 0.892578125,
+              "amplitude": 0.023314931393998494,
+              "S_disconnected": 0.0031256196489644257,
+              "S_connected": 0.3062965074380654,
+              "disconnected_over_M": 0.00013589650647671415,
+              "connected_over_M": 0.01331723945382893,
+              "total_over_M": 0.013453135960305644
+            },
+            "connected_peak": {
+              "q": 0.3919320913047813,
+              "q_over_pi": 0.12475585937499999,
+              "amplitude": 0.0007243802391390417,
+              "S_disconnected": 3.017178702417027e-06,
+              "S_connected": 0.5727807897864364,
+              "disconnected_over_M": 1.3118168271378379e-07,
+              "connected_over_M": 0.02490351259941028,
+              "total_over_M": 0.024903643781092995
+            }
+          },
+          "quarter": {
+            "M": 11,
+            "mean": -0.24187560268058672,
+            "range": 0.03987806223629181,
+            "RMS": 0.013299078612615537,
+            "profile_peak": {
+              "q": 3.141592653589793,
+              "q_over_pi": 1.0,
+              "amplitude": 0.021641500905421093,
+              "S_disconnected": 0.0012879750439581904,
+              "S_connected": 0.32162042709993205,
+              "disconnected_over_M": 0.00011708864035983548,
+              "connected_over_M": 0.029238220645448367,
+              "total_over_M": 0.029355309285808203
+            },
+            "connected_peak": {
+              "q": 0.5714078434874014,
+              "q_over_pi": 0.181884765625,
+              "amplitude": 0.002740020601451584,
+              "S_disconnected": 2.0646210465042518e-05,
+              "S_connected": 0.5437799639041531,
+              "disconnected_over_M": 1.8769282240947744e-06,
+              "connected_over_M": 0.04943454217310483,
+              "total_over_M": 0.04943641910132892
+            }
+          },
+          "long_distance_RMS": 0.0008536446911440313
+        }
+      },
+      "run_status": "done"
+    },
+    {
+      "file": "observations/v4_L48_P1_s1_chi192.json",
+      "tag": "v4_L48_P1_s1",
+      "L": 48,
+      "P": 1,
+      "chi": 192,
+      "boundary": "full",
+      "E": -49.34414815768204,
+      "operators": {
+        "density": {
+          "half": {
+            "M": 24,
+            "mean": 0.30129581677787165,
+            "range": 0.35086783749183187,
+            "RMS": 0.11981695465629853,
+            "profile_peak": {
+              "q": 2.78724309158821,
+              "q_over_pi": 0.88720703125,
+              "amplitude": 0.15932483579864729,
+              "S_disconnected": 0.15230641981359558,
+              "S_connected": 0.42522614026947747,
+              "disconnected_over_M": 0.006346100825566483,
+              "connected_over_M": 0.01771775584456156,
+              "total_over_M": 0.024063856670128045
+            },
+            "connected_peak": {
+              "q": 2.81178678419438,
+              "q_over_pi": 0.89501953125,
+              "amplitude": 0.15749712073989913,
+              "S_disconnected": 0.14883205824815024,
+              "S_connected": 0.42874511405360316,
+              "disconnected_over_M": 0.006201335760339593,
+              "connected_over_M": 0.017864379752233466,
+              "total_over_M": 0.02406571551257306
+            }
+          },
+          "quarter": {
+            "M": 12,
+            "mean": 0.28140362317866313,
+            "range": 0.35086783749183187,
+            "RMS": 0.1368727135845416,
+            "profile_peak": {
+              "q": 2.771136293315411,
+              "q_over_pi": 0.882080078125,
+              "amplitude": 0.21281447832266698,
+              "S_disconnected": 0.13587000655124667,
+              "S_connected": 0.31400696645629295,
+              "disconnected_over_M": 0.011322500545937223,
+              "connected_over_M": 0.026167247204691078,
+              "total_over_M": 0.0374897477506283
+            },
+            "connected_peak": {
+              "q": 2.9130295161948325,
+              "q_over_pi": 0.92724609375,
+              "amplitude": 0.17657327402957157,
+              "S_disconnected": 0.09353436330456653,
+              "S_connected": 0.32464835903142675,
+              "disconnected_over_M": 0.007794530275380545,
+              "connected_over_M": 0.02705402991928556,
+              "total_over_M": 0.03484856019466611
+            }
+          },
+          "long_distance_RMS": 0.012378521876901158
+        },
+        "bond": {
+          "half": {
+            "M": 23,
+            "mean": -0.2997956144663406,
+            "range": 0.2883899203626191,
+            "RMS": 0.10882481046156095,
+            "profile_peak": {
+              "q": 2.807951832224666,
+              "q_over_pi": 0.893798828125,
+              "amplitude": 0.16300768396364737,
+              "S_disconnected": 0.15278615392935596,
+              "S_connected": 0.33158416741323987,
+              "disconnected_over_M": 0.006642876257798086,
+              "connected_over_M": 0.014416702931010428,
+              "total_over_M": 0.021059579188808516
+            },
+            "connected_peak": {
+              "q": 0.48627190975974827,
+              "q_over_pi": 0.15478515625,
+              "amplitude": 0.0061746769172435646,
+              "S_disconnected": 0.00021922815143595782,
+              "S_connected": 1.6351978297414902,
+              "disconnected_over_M": 9.531658758085122e-06,
+              "connected_over_M": 0.0710955578148474,
+              "total_over_M": 0.07110508947360548
+            }
+          },
+          "quarter": {
+            "M": 11,
+            "mean": -0.29887792660707174,
+            "range": 0.26605489818929373,
+            "RMS": 0.09111416032333246,
+            "profile_peak": {
+              "q": 3.141592653589793,
+              "q_over_pi": 1.0,
+              "amplitude": 0.14505570144979418,
+              "S_disconnected": 0.05786318043850251,
+              "S_connected": 0.17707612405981046,
+              "disconnected_over_M": 0.005260289130772955,
+              "connected_over_M": 0.016097829459982768,
+              "total_over_M": 0.021358118590755724
+            },
+            "connected_peak": {
+              "q": 0.5714078434874014,
+              "q_over_pi": 0.181884765625,
+              "amplitude": 0.017668581553477045,
+              "S_disconnected": 0.0008584916288076401,
+              "S_connected": 1.6177104227676813,
+              "disconnected_over_M": 7.804469352796729e-05,
+              "connected_over_M": 0.14706458388797103,
+              "total_over_M": 0.14714262858149899
+            }
+          },
+          "long_distance_RMS": 0.010995486074773925
+        },
+        "kinetic": {
+          "half": {
+            "M": 23,
+            "mean": -0.23161831174702882,
+            "range": 0.04339250637656372,
+            "RMS": 0.01575668349171258,
+            "profile_peak": {
+              "q": 2.803349889861009,
+              "q_over_pi": 0.892333984375,
+              "amplitude": 0.02333987528383878,
+              "S_disconnected": 0.0031323112250246027,
+              "S_connected": 0.29069730777103436,
+              "disconnected_over_M": 0.00013618744456628707,
+              "connected_over_M": 0.01263901338134932,
+              "total_over_M": 0.012775200825915607
+            },
+            "connected_peak": {
+              "q": 0.342077715698498,
+              "q_over_pi": 0.10888671875,
+              "amplitude": 0.0007179824016396699,
+              "S_disconnected": 2.9641176921195413e-06,
+              "S_connected": 0.5583944738721409,
+              "disconnected_over_M": 1.28874682266067e-07,
+              "connected_over_M": 0.024278020603136562,
+              "total_over_M": 0.024278149477818825
+            }
+          },
+          "quarter": {
+            "M": 11,
+            "mean": -0.23086441863806229,
+            "range": 0.04006148781387442,
+            "RMS": 0.013362755541345516,
+            "profile_peak": {
+              "q": 3.141592653589793,
+              "q_over_pi": 1.0,
+              "amplitude": 0.021603953950556646,
+              "S_disconnected": 0.0012835097723188735,
+              "S_connected": 0.3055148447372202,
+              "disconnected_over_M": 0.00011668270657444304,
+              "connected_over_M": 0.027774076794292744,
+              "total_over_M": 0.02789075950086719
+            },
+            "connected_peak": {
+              "q": 0.5714078434874014,
+              "q_over_pi": 0.181884765625,
+              "amplitude": 0.003108211036861373,
+              "S_disconnected": 2.6567683586583845e-05,
+              "S_connected": 0.5264393596430827,
+              "disconnected_over_M": 2.4152439624167133e-06,
+              "connected_over_M": 0.047858123603916614,
+              "total_over_M": 0.047860538847879025
+            }
+          },
+          "long_distance_RMS": 0.0008655561778581096
+        }
+      },
+      "run_status": "done"
+    },
+    {
+      "file": "observations/reused_L96_P0_chi256.json",
+      "tag": "reused_L96_P0_chi256",
+      "L": 96,
+      "P": 0,
+      "chi": 256,
+      "boundary": "full",
+      "E": -97.98329671530493,
+      "operators": {
+        "density": {
+          "half": {
+            "M": 48,
+            "mean": 0.2963612936003885,
+            "range": 0.3014650451341937,
+            "RMS": 0.1085146304245151,
+            "profile_peak": {
+              "q": 2.778039206860896,
+              "q_over_pi": 0.88427734375,
+              "amplitude": 0.15766722852448348,
+              "S_disconnected": 0.29830745940710024,
+              "S_connected": 0.5329900697518645,
+              "disconnected_over_M": 0.006214738737647922,
+              "connected_over_M": 0.011103959786497176,
+              "total_over_M": 0.0173186985241451
+            },
+            "connected_peak": {
+              "q": 2.774971245285125,
+              "q_over_pi": 0.88330078125,
+              "amplitude": 0.15752930445365118,
+              "S_disconnected": 0.29778578113981363,
+              "S_connected": 0.5331795036411443,
+              "disconnected_over_M": 0.006203870440412784,
+              "connected_over_M": 0.011107906325857174,
+              "total_over_M": 0.017311776766269955
+            }
+          },
+          "quarter": {
+            "M": 24,
+            "mean": 0.28818889737199704,
+            "range": 0.2826719566953185,
+            "RMS": 0.09885597697146487,
+            "profile_peak": {
+              "q": 2.747359591103183,
+              "q_over_pi": 0.87451171875,
+              "amplitude": 0.13714648184344838,
+              "S_disconnected": 0.11285494489221189,
+              "S_connected": 0.4534386015911028,
+              "disconnected_over_M": 0.004702289370508829,
+              "connected_over_M": 0.01889327506629595,
+              "total_over_M": 0.023595564436804776
+            },
+            "connected_peak": {
+              "q": 2.791078043557924,
+              "q_over_pi": 0.888427734375,
+              "amplitude": 0.13118171458655617,
+              "S_disconnected": 0.10325185345121211,
+              "S_connected": 0.4676452957034731,
+              "disconnected_over_M": 0.004302160560467171,
+              "connected_over_M": 0.019485220654311377,
+              "total_over_M": 0.02378738121477855
+            }
+          },
+          "long_distance_RMS": 0.006638823693407449
+        },
+        "bond": {
+          "half": {
+            "M": 47,
+            "mean": -0.29156843784756004,
+            "range": 0.24580260572902218,
+            "RMS": 0.08466892949457719,
+            "profile_peak": {
+              "q": 2.7765052260730103,
+              "q_over_pi": 0.8837890624999999,
+              "amplitude": 0.11601304517677949,
+              "S_disconnected": 0.1581435631514764,
+              "S_connected": 0.46613158798540894,
+              "disconnected_over_M": 0.0033647566627973704,
+              "connected_over_M": 0.009917693361391679,
+              "total_over_M": 0.01328245002418905
+            },
+            "connected_peak": {
+              "q": 0.5246214294568893,
+              "q_over_pi": 0.1669921875,
+              "amplitude": 0.0025882978169241865,
+              "S_disconnected": 7.871660567186048e-05,
+              "S_connected": 1.6579022370335303,
+              "disconnected_over_M": 1.6748213972736273e-06,
+              "connected_over_M": 0.03527451568156448,
+              "total_over_M": 0.03527619050296175
+            }
+          },
+          "quarter": {
+            "M": 23,
+            "mean": -0.2899598804275703,
+            "range": 0.24004529411757652,
+            "RMS": 0.08997101382153373,
+            "profile_peak": {
+              "q": 2.791078043557924,
+              "q_over_pi": 0.888427734375,
+              "amplitude": 0.1343312856651683,
+              "S_disconnected": 0.10375814227362806,
+              "S_connected": 0.374837697711774,
+              "disconnected_over_M": 0.0045112235771142635,
+              "connected_over_M": 0.01629729120485974,
+              "total_over_M": 0.020808514781974003
+            },
+            "connected_peak": {
+              "q": 0.5322913333963175,
+              "q_over_pi": 0.16943359375,
+              "amplitude": 0.007170194910016586,
+              "S_disconnected": 0.0002956172465238597,
+              "S_connected": 1.6478769853832687,
+              "disconnected_over_M": 1.2852923761906942e-05,
+              "connected_over_M": 0.07164682545144646,
+              "total_over_M": 0.07165967837520837
+            }
+          },
+          "long_distance_RMS": 0.005120657570781871
+        },
+        "kinetic": {
+          "half": {
+            "M": 47,
+            "mean": -0.22961049435074735,
+            "range": 0.03407217515142713,
+            "RMS": 0.011634368934074057,
+            "profile_peak": {
+              "q": 2.775738235679068,
+              "q_over_pi": 0.883544921875,
+              "amplitude": 0.015853621580974666,
+              "S_disconnected": 0.0029532134774847615,
+              "S_connected": 0.29977979698996754,
+              "disconnected_over_M": 6.283432930818642e-05,
+              "connected_over_M": 0.0063782935529780324,
+              "total_over_M": 0.006441127882286219
+            },
+            "connected_peak": {
+              "q": 0.3911651009108385,
+              "q_over_pi": 0.12451171875,
+              "amplitude": 0.0010284077578390184,
+              "S_disconnected": 1.2427064567505854e-05,
+              "S_connected": 0.5587266060905691,
+              "disconnected_over_M": 2.6440562909586925e-07,
+              "connected_over_M": 0.011887800129586576,
+              "total_over_M": 0.011888064535215672
+            }
+          },
+          "quarter": {
+            "M": 23,
+            "mean": -0.22985098068823412,
+            "range": 0.03255016659808199,
+            "RMS": 0.012356424575177015,
+            "profile_peak": {
+              "q": 2.791845033951867,
+              "q_over_pi": 0.888671875,
+              "amplitude": 0.018404206134169897,
+              "S_disconnected": 0.001947610119716846,
+              "S_connected": 0.30690496748506574,
+              "disconnected_over_M": 8.467870085725418e-05,
+              "connected_over_M": 0.013343694238481118,
+              "total_over_M": 0.013428372939338374
+            },
+            "connected_peak": {
+              "q": 0.3827282065774675,
+              "q_over_pi": 0.121826171875,
+              "amplitude": 2.7051066629900767e-05,
+              "S_disconnected": 4.207621183438154e-09,
+              "S_connected": 0.5497526590439632,
+              "disconnected_over_M": 1.8294005145383277e-10,
+              "connected_over_M": 0.023902289523650574,
+              "total_over_M": 0.023902289706590623
+            }
+          },
+          "long_distance_RMS": 0.0001568176915342975
+        }
+      },
+      "run_status": "reused_completed_state"
+    },
+    {
+      "file": "observations/reused_L96_P1_chi256.json",
+      "tag": "reused_L96_P1_chi256",
+      "L": 96,
+      "P": 1,
+      "chi": 256,
+      "boundary": "full",
+      "E": -97.98310505944852,
+      "operators": {
+        "density": {
+          "half": {
+            "M": 48,
+            "mean": 0.29287560064631596,
+            "range": 0.29445988490937414,
+            "RMS": 0.10588346267581429,
+            "profile_peak": {
+              "q": 2.778039206860896,
+              "q_over_pi": 0.88427734375,
+              "amplitude": 0.15384757562622076,
+              "S_disconnected": 0.28402891831278865,
+              "S_connected": 0.5201891465571674,
+              "disconnected_over_M": 0.00591726913151643,
+              "connected_over_M": 0.010837273886607655,
+              "total_over_M": 0.016754543018124086
+            },
+            "connected_peak": {
+              "q": 2.775738235679068,
+              "q_over_pi": 0.883544921875,
+              "amplitude": 0.1537660364047786,
+              "S_disconnected": 0.28372792741962827,
+              "S_connected": 0.5202900541777314,
+              "disconnected_over_M": 0.005910998487908922,
+              "connected_over_M": 0.010839376128702739,
+              "total_over_M": 0.01675037461661166
+            }
+          },
+          "quarter": {
+            "M": 24,
+            "mean": 0.2850330933578647,
+            "range": 0.27537118993973086,
+            "RMS": 0.09639543858280364,
+            "profile_peak": {
+              "q": 2.747359591103183,
+              "q_over_pi": 0.87451171875,
+              "amplitude": 0.13370017216263388,
+              "S_disconnected": 0.1072544162179077,
+              "S_connected": 0.4429932904543746,
+              "disconnected_over_M": 0.004468934009079487,
+              "connected_over_M": 0.018458053768932274,
+              "total_over_M": 0.022926987778011762
+            },
+            "connected_peak": {
+              "q": 2.791845033951867,
+              "q_over_pi": 0.888671875,
+              "amplitude": 0.12773455177046053,
+              "S_disconnected": 0.09789669429600274,
+              "S_connected": 0.45714871687990827,
+              "disconnected_over_M": 0.004079028929000114,
+              "connected_over_M": 0.01904786320332951,
+              "total_over_M": 0.023126892132329626
+            }
+          },
+          "long_distance_RMS": 0.006405180140830943
+        },
+        "bond": {
+          "half": {
+            "M": 47,
+            "mean": -0.2795086567948469,
+            "range": 0.24032827484213132,
+            "RMS": 0.08270723018414154,
+            "profile_peak": {
+              "q": 2.777272216466953,
+              "q_over_pi": 0.884033203125,
+              "amplitude": 0.1133084359903436,
+              "S_disconnected": 0.15085591958228906,
+              "S_connected": 0.453846503145757,
+              "disconnected_over_M": 0.003209700416644448,
+              "connected_over_M": 0.009656308577569297,
+              "total_over_M": 0.012866008994213744
+            },
+            "connected_peak": {
+              "q": 0.5276893910326605,
+              "q_over_pi": 0.16796875,
+              "amplitude": 0.002310026206995203,
+              "S_disconnected": 6.270059765480454e-05,
+              "S_connected": 1.6811473961495744,
+              "disconnected_over_M": 1.3340552692511606e-06,
+              "connected_over_M": 0.03576909353509733,
+              "total_over_M": 0.035770427590366576
+            }
+          },
+          "quarter": {
+            "M": 23,
+            "mean": -0.27844708032842036,
+            "range": 0.23798116913811845,
+            "RMS": 0.08782548893315469,
+            "profile_peak": {
+              "q": 2.791078043557924,
+              "q_over_pi": 0.888427734375,
+              "amplitude": 0.1311331934298706,
+              "S_disconnected": 0.09887650790991617,
+              "S_connected": 0.36720741512958144,
+              "disconnected_over_M": 0.004298978604778964,
+              "connected_over_M": 0.01596553978824267,
+              "total_over_M": 0.020264518393021635
+            },
+            "connected_peak": {
+              "q": 0.5391942469418028,
+              "q_over_pi": 0.171630859375,
+              "amplitude": 0.007658377067106509,
+              "S_disconnected": 0.00033724175098640165,
+              "S_connected": 1.6688420204599104,
+              "disconnected_over_M": 1.4662684825495724e-05,
+              "connected_over_M": 0.07255834871564827,
+              "total_over_M": 0.07257301140047377
+            }
+          },
+          "long_distance_RMS": 0.004946535158248644
+        },
+        "kinetic": {
+          "half": {
+            "M": 47,
+            "mean": -0.23360227409596906,
+            "range": 0.035313851845103744,
+            "RMS": 0.011635333888560381,
+            "profile_peak": {
+              "q": 2.775738235679068,
+              "q_over_pi": 0.883544921875,
+              "amplitude": 0.015833944078926427,
+              "S_disconnected": 0.0029458869748611887,
+              "S_connected": 0.3057280042343098,
+              "disconnected_over_M": 6.26784462736423e-05,
+              "connected_over_M": 0.006504851153921485,
+              "total_over_M": 0.006567529600195128
+            },
+            "connected_peak": {
+              "q": 0.40803888957758055,
+              "q_over_pi": 0.1298828125,
+              "amplitude": 0.0015831634801702985,
+              "S_disconnected": 2.9450277608102946e-05,
+              "S_connected": 0.5640649401937778,
+              "disconnected_over_M": 6.266016512362328e-07,
+              "connected_over_M": 0.012001381706250593,
+              "total_over_M": 0.012002008307901829
+            }
+          },
+          "quarter": {
+            "M": 23,
+            "mean": -0.23363279089601205,
+            "range": 0.03297210018177352,
+            "RMS": 0.012286943577594116,
+            "profile_peak": {
+              "q": 2.79261202434581,
+              "q_over_pi": 0.888916015625,
+              "amplitude": 0.01830418757360669,
+              "S_disconnected": 0.0019264988756962208,
+              "S_connected": 0.31249528121536246,
+              "disconnected_over_M": 8.376082068244439e-05,
+              "connected_over_M": 0.013586751357189673,
+              "total_over_M": 0.013670512177872117
+            },
+            "connected_peak": {
+              "q": 0.3988350048502667,
+              "q_over_pi": 0.126953125,
+              "amplitude": 0.0005691127767644277,
+              "S_disconnected": 1.8623637778899747e-06,
+              "S_connected": 0.5547886371363724,
+              "disconnected_over_M": 8.097233816912933e-08,
+              "connected_over_M": 0.024121245092885758,
+              "total_over_M": 0.024121326065223925
+            }
+          },
+          "long_distance_RMS": 0.00015584388686596423
+        }
+      },
+      "run_status": "reused_completed_state"
+    },
+    {
+      "file": "observations/v4_L144_P0_s1_chi192.json",
+      "tag": "v4_L144_P0_s1",
+      "L": 144,
+      "P": 0,
+      "chi": 192,
+      "boundary": "full",
+      "E": -146.62124122476538,
+      "operators": {
+        "density": {
+          "half": {
+            "M": 72,
+            "mean": 0.29196038228670446,
+            "range": 0.269651586151705,
+            "RMS": 0.09291907049565878,
+            "profile_peak": {
+              "q": 2.765000370163868,
+              "q_over_pi": 0.880126953125,
+              "amplitude": 0.12898433355541558,
+              "S_disconnected": 0.2994652494492247,
+              "S_connected": 0.6514569742852936,
+              "disconnected_over_M": 0.004159239575683676,
+              "connected_over_M": 0.009048013531740189,
+              "total_over_M": 0.013207253107423865
+            },
+            "connected_peak": {
+              "q": 2.7680683317396393,
+              "q_over_pi": 0.8811035156249999,
+              "amplitude": 0.12878982642862072,
+              "S_disconnected": 0.2985627490472566,
+              "S_connected": 0.6520475649653237,
+              "disconnected_over_M": 0.0041467048478785636,
+              "connected_over_M": 0.00905621618007394,
+              "total_over_M": 0.013202921027952504
+            }
+          },
+          "quarter": {
+            "M": 36,
+            "mean": 0.29180274751585017,
+            "range": 0.26126585524171586,
+            "RMS": 0.08989921181441975,
+            "profile_peak": {
+              "q": 2.774971245285125,
+              "q_over_pi": 0.88330078125,
+              "amplitude": 0.12359719721492467,
+              "S_disconnected": 0.13748640443446483,
+              "S_connected": 0.547180560892316,
+              "disconnected_over_M": 0.003819066789846245,
+              "connected_over_M": 0.015199460024786556,
+              "total_over_M": 0.0190185268146328
+            },
+            "connected_peak": {
+              "q": 2.765767360557811,
+              "q_over_pi": 0.88037109375,
+              "amplitude": 0.12308811558401755,
+              "S_disconnected": 0.1363561577822202,
+              "S_connected": 0.5488933633808151,
+              "disconnected_over_M": 0.003787671049506117,
+              "connected_over_M": 0.015247037871689307,
+              "total_over_M": 0.019034708921195423
+            }
+          },
+          "long_distance_RMS": 0.005631212496055477
+        },
+        "bond": {
+          "half": {
+            "M": 71,
+            "mean": -0.28952296111916986,
+            "range": 0.2344481434118459,
+            "RMS": 0.08221868926784007,
+            "profile_peak": {
+              "q": 2.766534350951754,
+              "q_over_pi": 0.880615234375,
+              "amplitude": 0.11836203980529347,
+              "S_disconnected": 0.24866991128694027,
+              "S_connected": 0.5219829151713736,
+              "disconnected_over_M": 0.0035023931167174685,
+              "connected_over_M": 0.007351872044667234,
+              "total_over_M": 0.010854265161384703
+            },
+            "connected_peak": {
+              "q": 0.529990362214489,
+              "q_over_pi": 0.168701171875,
+              "amplitude": 0.0034512581992492903,
+              "S_disconnected": 0.00021142350105246682,
+              "S_connected": 1.673101799129762,
+              "disconnected_over_M": 2.9777957894713636e-06,
+              "connected_over_M": 0.02356481407225017,
+              "total_over_M": 0.02356779186803964
+            }
+          },
+          "quarter": {
+            "M": 35,
+            "mean": -0.2873894796195493,
+            "range": 0.2269748930651126,
+            "RMS": 0.08046836785548829,
+            "profile_peak": {
+              "q": 2.75733046622444,
+              "q_over_pi": 0.877685546875,
+              "amplitude": 0.11653043499041263,
+              "S_disconnected": 0.11881924494172941,
+              "S_connected": 0.4685059767742281,
+              "disconnected_over_M": 0.0033948355697636973,
+              "connected_over_M": 0.013385885050692232,
+              "total_over_M": 0.01678072062045593
+            },
+            "connected_peak": {
+              "q": 0.5338253141842031,
+              "q_over_pi": 0.169921875,
+              "amplitude": 0.00741734905545056,
+              "S_disconnected": 0.0004813993363409415,
+              "S_connected": 1.6558616317826165,
+              "disconnected_over_M": 1.3754266752598328e-05,
+              "connected_over_M": 0.04731033233664619,
+              "total_over_M": 0.047324086603398784
+            }
+          },
+          "long_distance_RMS": 0.003952524699732071
+        },
+        "kinetic": {
+          "half": {
+            "M": 71,
+            "mean": -0.2302034141603528,
+            "range": 0.033503798022138126,
+            "RMS": 0.011058774191824145,
+            "profile_peak": {
+              "q": 2.766534350951754,
+              "q_over_pi": 0.880615234375,
+              "amplitude": 0.01584530731930951,
+              "S_disconnected": 0.004456559311769704,
+              "S_connected": 0.30572325134312783,
+              "disconnected_over_M": 6.27684410108409e-05,
+              "connected_over_M": 0.004305961286522927,
+              "total_over_M": 0.004368729727533768
+            },
+            "connected_peak": {
+              "q": 0.40803888957758055,
+              "q_over_pi": 0.1298828125,
+              "amplitude": 0.0008765924611517295,
+              "S_disconnected": 1.3639354587327824e-05,
+              "S_connected": 0.5560231762981797,
+              "disconnected_over_M": 1.9210358573701161e-07,
+              "connected_over_M": 0.007831312342227883,
+              "total_over_M": 0.00783150444581362
+            }
+          },
+          "quarter": {
+            "M": 35,
+            "mean": -0.23003883977351122,
+            "range": 0.03174310236623676,
+            "RMS": 0.010817290200393664,
+            "profile_peak": {
+              "q": 2.75733046622444,
+              "q_over_pi": 0.877685546875,
+              "amplitude": 0.015591268695256913,
+              "S_disconnected": 0.0021270170208673583,
+              "S_connected": 0.3071392187266458,
+              "disconnected_over_M": 6.077191488192452e-05,
+              "connected_over_M": 0.008775406249332736,
+              "total_over_M": 0.008836178164214661
+            },
+            "connected_peak": {
+              "q": 0.3988350048502667,
+              "q_over_pi": 0.126953125,
+              "amplitude": 0.0017617059946454876,
+              "S_disconnected": 2.7156570101236156e-05,
+              "S_connected": 0.5546768342359044,
+              "disconnected_over_M": 7.759020028924616e-07,
+              "connected_over_M": 0.015847909549597267,
+              "total_over_M": 0.01584868545160016
+            }
+          },
+          "long_distance_RMS": 8.3298182199662e-05
+        }
+      },
+      "run_status": "running"
+    },
+    {
+      "file": "observations/v4_L144_P1_s1_chi192.json",
+      "tag": "v4_L144_P1_s1",
+      "L": 144,
+      "P": 1,
+      "chi": 192,
+      "boundary": "full",
+      "E": -146.6213491706159,
+      "operators": {
+        "density": {
+          "half": {
+            "M": 72,
+            "mean": 0.2923672258016473,
+            "range": 0.2700517068423207,
+            "RMS": 0.09311644633504156,
+            "profile_peak": {
+              "q": 2.765000370163868,
+              "q_over_pi": 0.880126953125,
+              "amplitude": 0.12926606051499523,
+              "S_disconnected": 0.3007748592191954,
+              "S_connected": 0.6537118545732014,
+              "disconnected_over_M": 0.0041774286002666024,
+              "connected_over_M": 0.009079331313516686,
+              "total_over_M": 0.013256759913783287
+            },
+            "connected_peak": {
+              "q": 2.7680683317396393,
+              "q_over_pi": 0.8811035156249999,
+              "amplitude": 0.1290607183217789,
+              "S_disconnected": 0.299820042247204,
+              "S_connected": 0.6542426413134383,
+              "disconnected_over_M": 0.004164167253433389,
+              "connected_over_M": 0.009086703351575532,
+              "total_over_M": 0.013250870605008921
+            }
+          },
+          "quarter": {
+            "M": 36,
+            "mean": 0.2922132824834395,
+            "range": 0.2619142160650093,
+            "RMS": 0.09008848406312112,
+            "profile_peak": {
+              "q": 2.774971245285125,
+              "q_over_pi": 0.88330078125,
+              "amplitude": 0.12384527862781643,
+              "S_disconnected": 0.13803887734561338,
+              "S_connected": 0.5487221304777123,
+              "disconnected_over_M": 0.0038344132596003716,
+              "connected_over_M": 0.015242281402158676,
+              "total_over_M": 0.01907669466175905
+            },
+            "connected_peak": {
+              "q": 2.765767360557811,
+              "q_over_pi": 0.88037109375,
+              "amplitude": 0.12335114173495303,
+              "S_disconnected": 0.13693953750584822,
+              "S_connected": 0.5505381379949781,
+              "disconnected_over_M": 0.0038038760418291173,
+              "connected_over_M": 0.015292726055416058,
+              "total_over_M": 0.019096602097245174
+            }
+          },
+          "long_distance_RMS": 0.0056603227895767735
+        },
+        "bond": {
+          "half": {
+            "M": 71,
+            "mean": -0.2909830997020976,
+            "range": 0.23510057250076818,
+            "RMS": 0.08240664309371286,
+            "profile_peak": {
+              "q": 2.766534350951754,
+              "q_over_pi": 0.880615234375,
+              "amplitude": 0.11867051801988746,
+              "S_disconnected": 0.24996778028617467,
+              "S_connected": 0.523774291251089,
+              "disconnected_over_M": 0.003520672961777108,
+              "connected_over_M": 0.00737710269367731,
+              "total_over_M": 0.010897775655454417
+            },
+            "connected_peak": {
+              "q": 0.5292233718205462,
+              "q_over_pi": 0.16845703125,
+              "amplitude": 0.0031683254045008604,
+              "S_disconnected": 0.0001781795741712983,
+              "S_connected": 1.671130089588791,
+              "disconnected_over_M": 2.5095714672013846e-06,
+              "connected_over_M": 0.023537043515335084,
+              "total_over_M": 0.023539553086802285
+            }
+          },
+          "quarter": {
+            "M": 35,
+            "mean": -0.2888999463118396,
+            "range": 0.22357991632751567,
+            "RMS": 0.0807206943379107,
+            "profile_peak": {
+              "q": 2.75733046622444,
+              "q_over_pi": 0.877685546875,
+              "amplitude": 0.11694996004402083,
+              "S_disconnected": 0.11967631510010811,
+              "S_connected": 0.47007112277027036,
+              "disconnected_over_M": 0.0034193232885745173,
+              "connected_over_M": 0.01343060350772201,
+              "total_over_M": 0.016849926796296526
+            },
+            "connected_peak": {
+              "q": 0.5338253141842031,
+              "q_over_pi": 0.169921875,
+              "amplitude": 0.007127111513877713,
+              "S_disconnected": 0.0004444625371484225,
+              "S_connected": 1.6540828965416299,
+              "disconnected_over_M": 1.2698929632812071e-05,
+              "connected_over_M": 0.047259511329760855,
+              "total_over_M": 0.04727221025939367
+            }
+          },
+          "long_distance_RMS": 0.003992876287928672
+        },
+        "kinetic": {
+          "half": {
+            "M": 71,
+            "mean": -0.22972341280713712,
+            "range": 0.0313467322224687,
+            "RMS": 0.011033880763696878,
+            "profile_peak": {
+              "q": 2.766534350951754,
+              "q_over_pi": 0.880615234375,
+              "amplitude": 0.0158549244404714,
+              "S_disconnected": 0.004461970664981769,
+              "S_connected": 0.3047936405771074,
+              "disconnected_over_M": 6.284465725326436e-05,
+              "connected_over_M": 0.004292868177142357,
+              "total_over_M": 0.004355712834395622
+            },
+            "connected_peak": {
+              "q": 0.4026699568199808,
+              "q_over_pi": 0.128173828125,
+              "amplitude": 5.433276880633914e-05,
+              "S_disconnected": 5.2398883349395007e-08,
+              "S_connected": 0.555810051325241,
+              "disconnected_over_M": 7.380124415407748e-10,
+              "connected_over_M": 0.007828310582045648,
+              "total_over_M": 0.007828311320058089
+            }
+          },
+          "quarter": {
+            "M": 35,
+            "mean": -0.2295350956038007,
+            "range": 0.02983524198222659,
+            "RMS": 0.010762652694479877,
+            "profile_peak": {
+              "q": 2.756563475830497,
+              "q_over_pi": 0.87744140625,
+              "amplitude": 0.015570134636466438,
+              "S_disconnected": 0.0021212545602298035,
+              "S_connected": 0.30618599694107684,
+              "disconnected_over_M": 6.060727314942296e-05,
+              "connected_over_M": 0.008748171341173625,
+              "total_over_M": 0.008808778614323047
+            },
+            "connected_peak": {
+              "q": 0.39730102406238105,
+              "q_over_pi": 0.12646484375,
+              "amplitude": 0.0006695411362946596,
+              "S_disconnected": 3.922496665419011e-06,
+              "S_connected": 0.5544292974436738,
+              "disconnected_over_M": 1.1207133329768604e-07,
+              "connected_over_M": 0.01584083706981925,
+              "total_over_M": 0.015840949141152545
+            }
+          },
+          "long_distance_RMS": 8.925777680335118e-05
+        }
+      },
+      "run_status": "running"
+    }
+  ],
+  "common_wavevector_reference": "v4_L144_P1_s1",
+  "common_wavevectors": {
+    "density": 2.765000370163868,
+    "bond": 2.766534350951754,
+    "kinetic": 2.766534350951754
+  },
+  "common_q_comparisons": [
+    {
+      "tag": "v4_L48_P0_s1",
+      "L": 48,
+      "P": 0,
+      "chi": 192,
+      "operators": {
+        "density": {
+          "q": 2.765000370163868,
+          "S_connected": 0.39021315652649274,
+          "S_disconnected": 0.13008873495165874,
+          "connected_over_M": 0.016258881521937198,
+          "disconnected_over_M": 0.005420363956319114,
+          "total_over_M": 0.02167924547825631
+        },
+        "bond": {
+          "q": 2.766534350951754,
+          "S_connected": 0.33622027981240754,
+          "S_disconnected": 0.12246635597988427,
+          "connected_over_M": 0.014618273035322068,
+          "disconnected_over_M": 0.0053246241730384464,
+          "total_over_M": 0.019942897208360514
+        },
+        "kinetic": {
+          "q": 2.766534350951754,
+          "S_connected": 0.30789769059378747,
+          "S_disconnected": 0.002897567591122297,
+          "connected_over_M": 0.013386856112773368,
+          "disconnected_over_M": 0.00012598119961401293,
+          "total_over_M": 0.013512837312387381
+        }
+      }
+    },
+    {
+      "tag": "v4_L48_P1_s1",
+      "L": 48,
+      "P": 1,
+      "chi": 192,
+      "operators": {
+        "density": {
+          "q": 2.765000370163868,
+          "S_connected": 0.4163982347513882,
+          "S_disconnected": 0.1493268120452478,
+          "connected_over_M": 0.01734992644797451,
+          "disconnected_over_M": 0.006221950501885325,
+          "total_over_M": 0.023571876949859835
+        },
+        "bond": {
+          "q": 2.766534350951754,
+          "S_connected": 0.35758079444827273,
+          "S_disconnected": 0.1388176997745675,
+          "connected_over_M": 0.01554699106296838,
+          "disconnected_over_M": 0.006035552164111631,
+          "total_over_M": 0.02158254322708001
+        },
+        "kinetic": {
+          "q": 2.766534350951754,
+          "S_connected": 0.2922011408681092,
+          "S_disconnected": 0.0029124174591098582,
+          "connected_over_M": 0.012704397429048227,
+          "disconnected_over_M": 0.00012662684604825472,
+          "total_over_M": 0.012831024275096482
+        }
+      }
+    },
+    {
+      "tag": "reused_L96_P0_chi256",
+      "L": 96,
+      "P": 0,
+      "chi": 256,
+      "operators": {
+        "density": {
+          "q": 2.765000370163868,
+          "S_connected": 0.5306746273711898,
+          "S_disconnected": 0.2878563699780713,
+          "connected_over_M": 0.011055721403566454,
+          "disconnected_over_M": 0.005997007707876485,
+          "total_over_M": 0.017052729111442937
+        },
+        "bond": {
+          "q": 2.766534350951754,
+          "S_connected": 0.47467815872211255,
+          "S_disconnected": 0.15539651430010706,
+          "connected_over_M": 0.010099535291959841,
+          "disconnected_over_M": 0.003306308814895895,
+          "total_over_M": 0.013405844106855738
+        },
+        "kinetic": {
+          "q": 2.766534350951754,
+          "S_connected": 0.30016210333616017,
+          "S_disconnected": 0.002915590463756681,
+          "connected_over_M": 0.0063864277305566,
+          "disconnected_over_M": 6.203383965439746e-05,
+          "total_over_M": 0.006448461570210996
+        }
+      }
+    },
+    {
+      "tag": "reused_L96_P1_chi256",
+      "L": 96,
+      "P": 1,
+      "chi": 256,
+      "operators": {
+        "density": {
+          "q": 2.765000370163868,
+          "S_connected": 0.5175095390528904,
+          "S_disconnected": 0.27386682195311246,
+          "connected_over_M": 0.010781448730268551,
+          "disconnected_over_M": 0.005705558790689843,
+          "total_over_M": 0.016487007520958396
+        },
+        "bond": {
+          "q": 2.766534350951754,
+          "S_connected": 0.46280412611580374,
+          "S_disconnected": 0.14803367537317566,
+          "connected_over_M": 0.00984689630033625,
+          "disconnected_over_M": 0.0031496526675143756,
+          "total_over_M": 0.012996548967850624
+        },
+        "kinetic": {
+          "q": 2.766534350951754,
+          "S_connected": 0.3061125544662472,
+          "S_disconnected": 0.002905906073922104,
+          "connected_over_M": 0.00651303307374994,
+          "disconnected_over_M": 6.182778880685328e-05,
+          "total_over_M": 0.006574860862556793
+        }
+      }
+    },
+    {
+      "tag": "v4_L144_P0_s1",
+      "L": 144,
+      "P": 0,
+      "chi": 192,
+      "operators": {
+        "density": {
+          "q": 2.765000370163868,
+          "S_connected": 0.6514569742852936,
+          "S_disconnected": 0.29946524944922476,
+          "connected_over_M": 0.009048013531740189,
+          "disconnected_over_M": 0.004159239575683677,
+          "total_over_M": 0.013207253107423865
+        },
+        "bond": {
+          "q": 2.766534350951754,
+          "S_connected": 0.5219829151713736,
+          "S_disconnected": 0.24866991128694027,
+          "connected_over_M": 0.007351872044667234,
+          "disconnected_over_M": 0.0035023931167174685,
+          "total_over_M": 0.010854265161384703
+        },
+        "kinetic": {
+          "q": 2.766534350951754,
+          "S_connected": 0.30572325134312783,
+          "S_disconnected": 0.004456559311769702,
+          "connected_over_M": 0.004305961286522927,
+          "disconnected_over_M": 6.276844101084088e-05,
+          "total_over_M": 0.004368729727533768
+        }
+      }
+    },
+    {
+      "tag": "v4_L144_P1_s1",
+      "L": 144,
+      "P": 1,
+      "chi": 192,
+      "operators": {
+        "density": {
+          "q": 2.765000370163868,
+          "S_connected": 0.6537118545732015,
+          "S_disconnected": 0.3007748592191953,
+          "connected_over_M": 0.009079331313516688,
+          "disconnected_over_M": 0.004177428600266601,
+          "total_over_M": 0.013256759913783287
+        },
+        "bond": {
+          "q": 2.766534350951754,
+          "S_connected": 0.523774291251089,
+          "S_disconnected": 0.24996778028617467,
+          "connected_over_M": 0.00737710269367731,
+          "disconnected_over_M": 0.003520672961777108,
+          "total_over_M": 0.010897775655454417
+        },
+        "kinetic": {
+          "q": 2.766534350951754,
+          "S_connected": 0.30479364057710745,
+          "S_disconnected": 0.0044619706649817676,
+          "connected_over_M": 0.004292868177142358,
+          "disconnected_over_M": 6.284465725326433e-05,
+          "total_over_M": 0.004355712834395623
+        }
+      }
+    }
+  ],
+  "independent_start": {},
+  "size_comparisons": [
+    {
+      "lengths": [
+        48,
+        96
+      ],
+      "P": 0,
+      "tags": [
+        "v4_L48_P0_s1",
+        "reused_L96_P0_chi256"
+      ],
+      "ratios": {
+        "density": {
+          "half": {
+            "RMS_ratio": 0.9679598372702695,
+            "profile_amplitude_ratio": 1.0587320258128181,
+            "normalized_connected_peak_ratio": 0.6620221614091198
+          },
+          "quarter": {
+            "RMS_ratio": 0.7723044333211802,
+            "profile_amplitude_ratio": 0.6891770773414765,
+            "normalized_connected_peak_ratio": 0.7617655165887629
+          },
+          "long_distance_RMS_ratio": 0.5788488599743571
+        },
+        "bond": {
+          "half": {
+            "RMS_ratio": 0.8275835800436429,
+            "profile_amplitude_ratio": 0.7569574450944834,
+            "normalized_connected_peak_ratio": 0.47879777474131185
+          },
+          "quarter": {
+            "RMS_ratio": 1.0500589746965359,
+            "profile_amplitude_ratio": 0.980799163362551,
+            "normalized_connected_peak_ratio": 0.4705256376526292
+          },
+          "long_distance_RMS_ratio": 0.48462027294047116
+        },
+        "kinetic": {
+          "half": {
+            "RMS_ratio": 0.7416496978305056,
+            "profile_amplitude_ratio": 0.6799771920004686,
+            "normalized_connected_peak_ratio": 0.47735435240842616
+          },
+          "quarter": {
+            "RMS_ratio": 0.9291188461323691,
+            "profile_amplitude_ratio": 0.8504126499636506,
+            "normalized_connected_peak_ratio": 0.48351392514068364
+          },
+          "long_distance_RMS_ratio": 0.18370370384912102
+        }
+      }
+    },
+    {
+      "lengths": [
+        48,
+        96
+      ],
+      "P": 1,
+      "tags": [
+        "v4_L48_P1_s1",
+        "reused_L96_P1_chi256"
+      ],
+      "ratios": {
+        "density": {
+          "half": {
+            "RMS_ratio": 0.883710180913434,
+            "profile_amplitude_ratio": 0.9656220566933543,
+            "normalized_connected_peak_ratio": 0.6067591642719957
+          },
+          "quarter": {
+            "RMS_ratio": 0.7042706764432158,
+            "profile_amplitude_ratio": 0.6282475384965075,
+            "normalized_connected_peak_ratio": 0.7040674997461718
+          },
+          "long_distance_RMS_ratio": 0.5174430521291301
+        },
+        "bond": {
+          "half": {
+            "RMS_ratio": 0.7600034388606204,
+            "profile_amplitude_ratio": 0.695111010936225,
+            "normalized_connected_peak_ratio": 0.5031129178035285
+          },
+          "quarter": {
+            "RMS_ratio": 0.9639060341607998,
+            "profile_amplitude_ratio": 0.904019573992806,
+            "normalized_connected_peak_ratio": 0.49337744545567025
+          },
+          "long_distance_RMS_ratio": 0.44986962146194603
+        },
+        "kinetic": {
+          "half": {
+            "RMS_ratio": 0.7384380028119576,
+            "profile_amplitude_ratio": 0.6784073987700491,
+            "normalized_connected_peak_ratio": 0.4943311443067188
+          },
+          "quarter": {
+            "RMS_ratio": 0.9194917574879863,
+            "profile_amplitude_ratio": 0.8472609974775042,
+            "normalized_connected_peak_ratio": 0.504015687963824
+          },
+          "long_distance_RMS_ratio": 0.18005057424650683
+        }
+      }
+    },
+    {
+      "lengths": [
+        96,
+        144
+      ],
+      "P": 0,
+      "tags": [
+        "reused_L96_P0_chi256",
+        "v4_L144_P0_s1"
+      ],
+      "ratios": {
+        "density": {
+          "half": {
+            "RMS_ratio": 0.8562814998507976,
+            "profile_amplitude_ratio": 0.8180795385477722,
+            "normalized_connected_peak_ratio": 0.8152946121802204
+          },
+          "quarter": {
+            "RMS_ratio": 0.909395815696298,
+            "profile_amplitude_ratio": 0.901205744059916,
+            "normalized_connected_peak_ratio": 0.7824924409216627
+          },
+          "long_distance_RMS_ratio": 0.8482244379599115
+        },
+        "bond": {
+          "half": {
+            "RMS_ratio": 0.9710609282370335,
+            "profile_amplitude_ratio": 1.0202476766723485,
+            "normalized_connected_peak_ratio": 0.6680407545486401
+          },
+          "quarter": {
+            "RMS_ratio": 0.8943810282621149,
+            "profile_amplitude_ratio": 0.867485444015434,
+            "normalized_connected_peak_ratio": 0.6603269864162704
+          },
+          "long_distance_RMS_ratio": 0.771878346696118
+        },
+        "kinetic": {
+          "half": {
+            "RMS_ratio": 0.9505263460775992,
+            "profile_amplitude_ratio": 0.9994755607340133,
+            "normalized_connected_peak_ratio": 0.6587688434243749
+          },
+          "quarter": {
+            "RMS_ratio": 0.8754385327714185,
+            "profile_amplitude_ratio": 0.8471579041004987,
+            "normalized_connected_peak_ratio": 0.6630289342749468
+          },
+          "long_distance_RMS_ratio": 0.5311784747286877
+        }
+      }
+    },
+    {
+      "lengths": [
+        96,
+        144
+      ],
+      "P": 1,
+      "tags": [
+        "reused_L96_P1_chi256",
+        "v4_L144_P1_s1"
+      ],
+      "ratios": {
+        "density": {
+          "half": {
+            "RMS_ratio": 0.8794238871856526,
+            "profile_amplitude_ratio": 0.8402216283801094,
+            "normalized_connected_peak_ratio": 0.838305013469722
+          },
+          "quarter": {
+            "RMS_ratio": 0.9345720646909568,
+            "profile_amplitude_ratio": 0.9262910931570837,
+            "normalized_connected_peak_ratio": 0.8028578267373809
+          },
+          "long_distance_RMS_ratio": 0.8837101635118823
+        },
+        "bond": {
+          "half": {
+            "RMS_ratio": 0.9963656491728783,
+            "profile_amplitude_ratio": 1.0473228845026228,
+            "normalized_connected_peak_ratio": 0.6580273970946476
+          },
+          "quarter": {
+            "RMS_ratio": 0.9191032730754103,
+            "profile_amplitude_ratio": 0.891841012829182,
+            "normalized_connected_peak_ratio": 0.6513311309628612
+          },
+          "long_distance_RMS_ratio": 0.807206693208338
+        },
+        "kinetic": {
+          "half": {
+            "RMS_ratio": 0.9483080476569014,
+            "profile_amplitude_ratio": 1.001325024355296,
+            "normalized_connected_peak_ratio": 0.6522841097511701
+          },
+          "quarter": {
+            "RMS_ratio": 0.8759422248919688,
+            "profile_amplitude_ratio": 0.8506323798231528,
+            "normalized_connected_peak_ratio": 0.6567172220513317
+          },
+          "long_distance_RMS_ratio": 0.5727383896688781
+        }
+      }
+    }
+  ],
+  "boundary_probe_eligibility": [
+    {
+      "P": 0,
+      "amplitude_ratio": 0.8180795385477722,
+      "connected_peak_weight_ratio": 0.8152946121802204,
+      "condition_met": false
+    },
+    {
+      "P": 1,
+      "amplitude_ratio": 0.8402216283801094,
+      "connected_peak_weight_ratio": 0.838305013469722,
+      "condition_met": false
+    }
+  ],
+  "long_distance_scope": "Exploratory RMS over separations M/3 through M/2 in the central-half covariance; not an additional registered decision gate.",
+  "caution": "Finite-size diagnostics only; no phase or central charge is assigned by this script."
+}
