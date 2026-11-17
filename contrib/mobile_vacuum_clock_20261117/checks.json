@@ -1,0 +1,442 @@
+{
+  "status": "numerical corroboration; no uniform threshold or CFT fit",
+  "versions": {
+    "numpy": "2.5.5",
+    "scipy": "1.18.1"
+  },
+  "literal_sources": [
+    {
+      "n": 1,
+      "source_difference": 0.0,
+      "ff_commutator": 1.952316683466406e-18,
+      "terminal_commutator_identity_error": 3.0566282137560327e-18,
+      "terminal_leakage_per_J": 0.014705882352941176,
+      "d": 1.0625,
+      "c": 1.0625
+    },
+    {
+      "n": 2,
+      "source_difference": 2.501770815642327e-15,
+      "ff_commutator": 1.7910622597163652e-17,
+      "terminal_commutator_identity_error": 1.6966129917475506e-17,
+      "terminal_leakage_per_J": 0.003775737752397125,
+      "d": 0.8125,
+      "c": 1.3125
+    }
+  ],
+  "coherent_channel": {
+    "n": 2,
+    "N": 3,
+    "V_cutoff": 3,
+    "phase": 0.31,
+    "edge_noncommutativity": 0.3651037951733726,
+    "completeness": 6.325758253651843e-15,
+    "kinetic": 1.0491370088115242e-14,
+    "vacancy": 1.485321692745719e-14
+  },
+  "finite_clocks": [
+    {
+      "n": 1,
+      "N": 4,
+      "V": 4,
+      "J_over_t": 0.00625,
+      "q": 0.25,
+      "dimension": 140,
+      "pin_cost": 0.001998865777218306,
+      "pin_cost_over_J": 0.31981852435492897,
+      "ff_excitation_weight": 0.00017340081216231251,
+      "theorem_pin_lower": 2.86106660563058e-06,
+      "theorem_weight_upper": 0.28142472023156756,
+      "sufficient_J_over_t": 0.055298747756231136,
+      "tilted_minimum_certified": true,
+      "possible_tilted_V": [
+        4
+      ],
+      "residual": 1.8239396651038068e-14,
+      "scope": "exact zero-bit vacuum sector; fixed finite N,V"
+    },
+    {
+      "n": 1,
+      "N": 4,
+      "V": 4,
+      "J_over_t": 0.0125,
+      "q": 0.25,
+      "dimension": 140,
+      "pin_cost": 0.00399065108760599,
+      "pin_cost_over_J": 0.3192520870084792,
+      "ff_excitation_weight": 0.00017376192994082807,
+      "theorem_pin_lower": 5.72213321126116e-06,
+      "theorem_weight_upper": 0.3379359456534465,
+      "sufficient_J_over_t": 0.055298747756231136,
+      "tilted_minimum_certified": true,
+      "possible_tilted_V": [
+        4
+      ],
+      "residual": 1.0415470007089136e-14,
+      "scope": "exact zero-bit vacuum sector; fixed finite N,V"
+    },
+    {
+      "n": 1,
+      "N": 4,
+      "V": 4,
+      "J_over_t": 0.03125,
+      "q": 0.25,
+      "dimension": 140,
+      "pin_cost": 0.009923741753667059,
+      "pin_cost_over_J": 0.3175597361173459,
+      "ff_excitation_weight": 0.00017484904598425273,
+      "theorem_pin_lower": 1.4305333028152899e-05,
+      "theorem_weight_upper": 0.5074696219190832,
+      "sufficient_J_over_t": 0.055298747756231136,
+      "tilted_minimum_certified": true,
+      "possible_tilted_V": [
+        4
+      ],
+      "residual": 2.2525322368973456e-12,
+      "scope": "exact zero-bit vacuum sector; fixed finite N,V"
+    },
+    {
+      "n": 1,
+      "N": 4,
+      "V": 4,
+      "J_over_t": 0.1,
+      "q": 0.25,
+      "dimension": 140,
+      "pin_cost": 0.031144424612761235,
+      "pin_cost_over_J": 0.31144424612761235,
+      "ff_excitation_weight": 0.0001788829576239894,
+      "theorem_pin_lower": 4.577706569008928e-05,
+      "theorem_weight_upper": 1.1290931015597518,
+      "sufficient_J_over_t": 0.055298747756231136,
+      "tilted_minimum_certified": true,
+      "possible_tilted_V": [
+        4
+      ],
+      "residual": 3.0686184609309104e-13,
+      "scope": "exact zero-bit vacuum sector; fixed finite N,V"
+    },
+    {
+      "n": 1,
+      "N": 4,
+      "V": 4,
+      "J_over_t": 0.3,
+      "q": 0.25,
+      "dimension": 140,
+      "pin_cost": 0.0883390618273987,
+      "pin_cost_over_J": 0.29446353942466236,
+      "ff_excitation_weight": 0.00019103372634516746,
+      "theorem_pin_lower": 0.00013733119707026782,
+      "theorem_weight_upper": 2.9374523150598773,
+      "sufficient_J_over_t": 0.055298747756231136,
+      "tilted_minimum_certified": false,
+      "possible_tilted_V": [
+        4,
+        5
+      ],
+      "residual": 1.0559272520948276e-13,
+      "scope": "exact zero-bit vacuum sector; fixed finite N,V"
+    },
+    {
+      "n": 1,
+      "N": 4,
+      "V": 4,
+      "J_over_t": 1.0,
+      "q": 0.25,
+      "dimension": 140,
+      "pin_cost": 0.2442794951483318,
+      "pin_cost_over_J": 0.2442794951483318,
+      "ff_excitation_weight": 0.00023809113795770413,
+      "theorem_pin_lower": 0.00045777065690089276,
+      "theorem_weight_upper": 9.266709562310318,
+      "sufficient_J_over_t": 0.055298747756231136,
+      "tilted_minimum_certified": false,
+      "possible_tilted_V": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "residual": 9.281781868953755e-15,
+      "scope": "exact zero-bit vacuum sector; fixed finite N,V"
+    },
+    {
+      "n": 2,
+      "N": 6,
+      "V": 6,
+      "J_over_t": 0.00625,
+      "q": 0.25,
+      "dimension": 4158,
+      "pin_cost": 0.0015496749949148736,
+      "pin_cost_over_J": 0.24794799918637977,
+      "ff_excitation_weight": 1.4576978699965755e-05,
+      "theorem_pin_lower": 1.8328380439275384e-05,
+      "theorem_weight_upper": 0.1294074196597865,
+      "sufficient_J_over_t": 0.028129736707209717,
+      "tilted_minimum_certified": true,
+      "possible_tilted_V": [
+        6
+      ],
+      "residual": 3.770518910490812e-12,
+      "scope": "exact zero-bit vacuum sector; fixed finite N,V"
+    },
+    {
+      "n": 2,
+      "N": 6,
+      "V": 6,
+      "J_over_t": 0.0125,
+      "q": 0.25,
+      "dimension": 4158,
+      "pin_cost": 0.003093307204634854,
+      "pin_cost_over_J": 0.24746457637078834,
+      "ff_excitation_weight": 1.4611039434271328e-05,
+      "theorem_pin_lower": 3.665676087855077e-05,
+      "theorem_weight_upper": 0.2404998210045547,
+      "sufficient_J_over_t": 0.028129736707209717,
+      "tilted_minimum_certified": true,
+      "possible_tilted_V": [
+        6
+      ],
+      "residual": 7.280259992307225e-12,
+      "scope": "exact zero-bit vacuum sector; fixed finite N,V"
+    },
+    {
+      "n": 2,
+      "N": 6,
+      "V": 6,
+      "J_over_t": 0.03125,
+      "q": 0.25,
+      "dimension": 4158,
+      "pin_cost": 0.007688191065231109,
+      "pin_cost_over_J": 0.2460221140873955,
+      "ff_excitation_weight": 1.4713582139283741e-05,
+      "theorem_pin_lower": 9.16419021963769e-05,
+      "theorem_weight_upper": 0.5737770250388593,
+      "sufficient_J_over_t": 0.028129736707209717,
+      "tilted_minimum_certified": true,
+      "possible_tilted_V": [
+        6
+      ],
+      "residual": 5.871178567228144e-12,
+      "scope": "exact zero-bit vacuum sector; fixed finite N,V"
+    },
+    {
+      "n": 2,
+      "N": 6,
+      "V": 6,
+      "J_over_t": 0.1,
+      "q": 0.25,
+      "dimension": 4158,
+      "pin_cost": 0.02408325787584964,
+      "pin_cost_over_J": 0.2408325787584964,
+      "ff_excitation_weight": 1.509415655083767e-05,
+      "theorem_pin_lower": 0.00029325408702840614,
+      "theorem_weight_upper": 1.7957934398313093,
+      "sufficient_J_over_t": 0.028129736707209717,
+      "tilted_minimum_certified": true,
+      "possible_tilted_V": [
+        6
+      ],
+      "residual": 4.095827229402795e-12,
+      "scope": "exact zero-bit vacuum sector; fixed finite N,V"
+    },
+    {
+      "n": 2,
+      "N": 6,
+      "V": 6,
+      "J_over_t": 0.3,
+      "q": 0.25,
+      "dimension": 4158,
+      "pin_cost": 0.06798090316509775,
+      "pin_cost_over_J": 0.22660301055032583,
+      "ff_excitation_weight": 1.6241147865919113e-05,
+      "theorem_pin_lower": 0.0008797622610852182,
+      "theorem_weight_upper": 5.350750282863891,
+      "sufficient_J_over_t": 0.028129736707209717,
+      "tilted_minimum_certified": false,
+      "possible_tilted_V": [
+        6,
+        7
+      ],
+      "residual": 5.04885033345773e-12,
+      "scope": "exact zero-bit vacuum sector; fixed finite N,V"
+    },
+    {
+      "n": 2,
+      "N": 6,
+      "V": 6,
+      "J_over_t": 1.0,
+      "q": 0.25,
+      "dimension": 4158,
+      "pin_cost": 0.18587363787316313,
+      "pin_cost_over_J": 0.18587363787316313,
+      "ff_excitation_weight": 2.0691665856566653e-05,
+      "theorem_pin_lower": 0.002932540870284061,
+      "theorem_weight_upper": 17.79309923347793,
+      "sufficient_J_over_t": 0.028129736707209717,
+      "tilted_minimum_certified": false,
+      "possible_tilted_V": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "residual": 7.223181701381371e-12,
+      "scope": "exact zero-bit vacuum sector; fixed finite N,V"
+    }
+  ],
+  "full_material": [
+    {
+      "n": 1,
+      "N": 4,
+      "V": 4,
+      "J_over_t": 0.0125,
+      "Delta": 4.0,
+      "D": 0.0,
+      "f": 0.001,
+      "lam": 1e-05,
+      "dimension": 27440,
+      "clock_pin_cost": 0.003990651087775632,
+      "theorem_pin_lower": 5.72213321126116e-06,
+      "clock_excitation_weight": 0.00017376192934462822,
+      "theorem_weight_upper": 0.3399736777937979,
+      "tilted_minimum_certified": true,
+      "possible_tilted_V": [
+        4
+      ],
+      "residual": 3.4045175142345504e-12
+    },
+    {
+      "n": 1,
+      "N": 4,
+      "V": 4,
+      "J_over_t": 0.0125,
+      "Delta": 4.0,
+      "D": 25.0,
+      "f": 0.001,
+      "lam": 1e-05,
+      "dimension": 27440,
+      "clock_pin_cost": 0.003990651087763197,
+      "theorem_pin_lower": 5.72213321126116e-06,
+      "clock_excitation_weight": 0.00017376192984850785,
+      "theorem_weight_upper": 0.3399736777937979,
+      "tilted_minimum_certified": true,
+      "possible_tilted_V": [
+        4
+      ],
+      "residual": 3.403629667231777e-12
+    }
+  ],
+  "simplified_variants": [
+    {
+      "n": 1,
+      "Delta": 4.0,
+      "D": 0.0,
+      "ground_energy": -0.006966011250105153,
+      "auxiliary_gap": 1.118033988749895,
+      "grammar_failures": 0,
+      "gaussian_pair_relative_error": 9.500617391099311e-17,
+      "cell_dimension": 28,
+      "resolvent_dimension": 288,
+      "code_residual": 2.381693838285692e-17
+    },
+    {
+      "n": 1,
+      "Delta": 4.0,
+      "D": 3.0,
+      "ground_energy": -0.006966011250105153,
+      "auxiliary_gap": 1.1180339887498927,
+      "grammar_failures": 0,
+      "gaussian_pair_relative_error": 4.993277494626097e-35,
+      "cell_dimension": 28,
+      "resolvent_dimension": 288,
+      "code_residual": 2.381693838285692e-17
+    },
+    {
+      "n": 2,
+      "Delta": 4.0,
+      "D": 0.0,
+      "ground_energy": -0.0006445964028392037,
+      "auxiliary_gap": 0.8488765067906117,
+      "grammar_failures": 0,
+      "gaussian_pair_relative_error": 2.0658357328294242e-16,
+      "cell_dimension": 92,
+      "resolvent_dimension": 3200,
+      "code_residual": 8.691557357935318e-16
+    },
+    {
+      "n": 2,
+      "Delta": 4.0,
+      "D": 3.0,
+      "ground_energy": -0.0006445964028392037,
+      "auxiliary_gap": 0.8488765067906141,
+      "grammar_failures": 0,
+      "gaussian_pair_relative_error": 2.694302892913834e-16,
+      "cell_dimension": 92,
+      "resolvent_dimension": 3200,
+      "code_residual": 8.691557357935318e-16
+    }
+  ],
+  "parameter_constants": [
+    {
+      "n": 1,
+      "q": 0.25,
+      "tau": 0.003676470588235294,
+      "terminal_leakage": 0.014705882352941176,
+      "pin_per_J": 0.00045777065690089276,
+      "J_over_t_allowance": 0.055298747756231136,
+      "frozen_B_allowance": 2.1457672119140625e-05,
+      "selector_mu": -0.01044901687515773
+    },
+    {
+      "n": 2,
+      "q": 0.25,
+      "tau": 0.00022893772893772896,
+      "terminal_leakage": 0.003775737752397125,
+      "pin_per_J": 0.002932540870284061,
+      "J_over_t_allowance": 0.028129736707209717,
+      "frozen_B_allowance": 1.341104507446289e-06,
+      "selector_mu": -0.0008594618704506597
+    },
+    {
+      "n": 3,
+      "q": 0.25,
+      "tau": 1.4305333028152897e-05,
+      "terminal_leakage": 0.000945451570259688,
+      "pin_per_J": 0.002744241785285957,
+      "J_over_t_allowance": 0.021162504251550026,
+      "frozen_B_allowance": 8.381903171539307e-08,
+      "selector_mu": -6.706277267036629e-05
+    },
+    {
+      "n": 4,
+      "q": 0.25,
+      "tau": 8.940705242829555e-07,
+      "terminal_leakage": 0.00023638656561992334,
+      "pin_per_J": 0.0025593841505361305,
+      "J_over_t_allowance": 0.018327999535379242,
+      "frozen_B_allowance": 5.238689482212067e-09,
+      "selector_mu": -5.029186268036667e-06
+    },
+    {
+      "n": 5,
+      "q": 0.25,
+      "tau": 5.5879357807597983e-08,
+      "terminal_leakage": 5.909701126514136e-05,
+      "pin_per_J": 0.00244931103934951,
+      "J_over_t_allowance": 0.016885185553742535,
+      "frozen_B_allowance": 3.2741809263825417e-10,
+      "selector_mu": -3.6670850689909933e-07
+    },
+    {
+      "n": 6,
+      "q": 0.25,
+      "tau": 3.4924596678184713e-09,
+      "terminal_leakage": 1.4774258595319763e-05,
+      "pin_per_J": 0.0023813800330220072,
+      "J_over_t_allowance": 0.016047001949551873,
+      "frozen_B_allowance": 2.0463630789890885e-11,
+      "selector_mu": -2.6193448688338597e-08
+    }
+  ],
+  "runtime_seconds": 1.4021837711334229
+}

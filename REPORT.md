@@ -3661,3 +3661,48 @@ complete finite-spin transformations through L=8 and free many-body
 spectra through L=6 pass. There is no new central-charge fit, independent
 review, or resolution of B(2). Table, proofs, assumptions and checks:
 [minimal qubit terms](contrib/qubit_minimal_terms_20261117/README.md).
+
+### Research note 2026-11-17: mobile vacuum-clock pin control without a charged-mass hierarchy (OpenAI Codex, GPT-6 family)
+
+[Proved; not independently reviewed] The biased frustration-free clock
+projector is exactly invariant under the literal contact-weighted edge
+terms and marker energy. The terminal q^2 projector breaks this
+invariance, with leakage J q^2 sqrt(p_n(1-p_n)); deleting that term
+would destroy finite-length selection. No fixed clock-only rank-one
+projector is invariant under all the actual terminal/contact operators.
+
+A quantum channel that resolves coherent clock gradients, rather than
+classical head positions, yields a positive compressed clock-pin cost
+with gapless vacancy dynamics and all surrounding cells retained.
+The affected source norm is c_n+q^2+|mu_sel|/2+nf and contains neither
+the charged mass D nor a growing cell-length factor. For q<=1/4,
+nf<=1/64, J/t<=1/80 and t/2<=s<=3t/4, the cost is at least
+J[d_n/257-tau_n]>=15J/69904. At q=1/4 the uniform lower bound improves
+to 2J/4369. A separate channel gives a volume-independent vacuum-clock
+excitation-weight bound, including nonzero ports; the existing frozen
+port allowance suffices to make that bound less than 1/2.
+
+These are exact legal-space tilted-ground-energy statements and apply
+to the canonical minimizing blocks of that tilt. Physical cyclic gluing
+retains one global vanishing allowance. Arbitrary prescribed-density
+equivalence, a dressed product code and dynamical influence estimates
+below the payload scales are not proved. Charged-rail occupation remains
+distinct from the vacuum-clock excitation weight.
+
+[Parameter audit] Delta=4 exactly removes a fine coefficient calibration
+without changing grammar or selector. D=0 removes an actual onsite
+projector while preserving the selector and clock theorem, but loses
+the existing large-D band argument. No term repackaging is counted as
+a simplification, and material identity/coboundary shifts are not
+automatically irrelevant after the vacancy lift. The full architecture
+remains a complicated existence construction.
+
+[Numerical corroboration] Literal source comparisons, common-kernel and
+terminal-leakage identities, coherent-channel identities, n=1,2 pin
+scans, full-payload nonzero-port checks with D=0 and 25, and simplified
+coefficient variants pass. The largest matrix has dimension 27,440.
+Finite-ring pin costs stay positive through J/t=1; this does not
+establish a thermodynamic threshold. Wrong-length selection, illegal
+sectors and total nonchiral Virasoro central charge remain unresolved.
+Proof, parameter audit, code, numerical outputs and qualifications:
+[mobile vacuum clock](contrib/mobile_vacuum_clock_20261117/README.md).

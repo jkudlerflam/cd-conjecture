@@ -73,6 +73,16 @@ These are spelled out in [CONTRIBUTING.md](CONTRIBUTING.md). In brief, tag every
 
 ## Where things stand
 
+**Mobile vacuum-clock control (2026-11-17):** A
+[coherent-gradient comparison](contrib/mobile_vacuum_clock_20261117/README.md)
+proves a positive compressed clock-pin cost and bounds vacuum-clock
+excitation weight with the terminal selector and vacancy dynamics retained.
+Its sufficient J/t<=1/80 allowance is independent of the charged mass D
+and cell length, in the stated tilted ensemble and its canonical
+minimizing blocks. A parameter audit distinguishes genuine simplifications
+from proof-induced hierarchies. Dressed dynamical matching, wrong-length
+and illegal-sector selection, and the CFT remain open.
+
 **Minimal qubit terms (2026-11-17):** The
 [four-face classification](contrib/qubit_minimal_terms_20261117/README.md)
 of `a(XX-YY)+b(XY-YX)+cZZ+hZ` excludes central charge above one when
