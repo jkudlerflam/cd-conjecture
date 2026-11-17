@@ -46,12 +46,13 @@ applies the literal 400x400 material bond to both tested length words.
 We use the positive-length tilt H_w+sV, V=sum g_j, with
 t/2<=s<=3t/4. Write F_w(s)=min_V[E_w(N,V)+sV]. This is a ground
 energy, not a thermal free energy. A comparison proved for F_B-F_A
-also holds at any V_B minimizing the **competitor B**:
+also holds at any V_A minimizing the **target A**:
 
-    E_B(N,V_B)-E_A(N,V_B) >= F_B(s)-F_A(s).             (2)
+    E_B(N,V_A)-E_A(N,V_A) >= F_B(s)-F_A(s).             (2)
 
+Indeed E_B(N,V_A)+sV_A>=F_B, while E_A(N,V_A)+sV_A=F_A.
 The direction matters: this does not automatically prove the same
-bound at an A-minimizing V or an arbitrary prescribed density. When
+bound at a B-minimizing V or an arbitrary prescribed density. When
 both words minimize at the same V, their differences agree. The n=1
 checks certify that situation at s/t=0.6 by excluding every other V
 with free-sea lower bounds. Some n=2 checks use other canonical blocks

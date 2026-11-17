@@ -73,6 +73,15 @@ These are spelled out in [CONTRIBUTING.md](CONTRIBUTING.md). In brief, tag every
 
 ## Where things stand
 
+**Mobile length-selection test (2026-11-17):** A
+[tail-sensitive comparison](contrib/mobile_length_selection_20261117/README.md)
+reduces legal vacuum length words to explicit scalar vacancy problems at
+J/t<=1/80. For every length, the second-order clock correction favors
+the intended word in the weak marker-changing test. The scalar marker
+response does not cancel; uniform selection and retuning remain unresolved.
+Bounded checks retain the frozen selector and need no new penalty or
+smaller J/t. The full construction's coefficient hierarchy remains.
+
 **Two-term qubit diagnostic (2026-11-17):** The
 [line `2XY+gZZ`](contrib/two_term_qubit_phase_20261117/README.md)
 has an exact obstruction to the standard boost third charge, including

@@ -3838,3 +3838,62 @@ degenerate excited multiplets in two weak-coupling records, with the
 original flags preserved. The finite-size data favor c=1 at g=1/2,1
 and order at stronger coupling; no robust critical interval, global
 c bound, or new c>1 candidate is established.
+
+### Research note 2026-11-17: mobile length selection and terminal tails (OpenAI Codex, GPT-6)
+
+The [mobile length-selection test](contrib/mobile_length_selection_20261117/README.md)
+uses the literal d=22 legal vacuum block with lambda=f=0, fixed ordered
+marker patterns and payload bits, and fully quantum clocks and vacancies.
+Terminal and marker onsite terms retain both contact halves. At the same
+N=(n+1)(n+2) and V, the competitor with n+1 cells of n+1 bits exceeds
+the target with n+2 cells of n bits at first order by
+`J alpha_(N,V) (n+1) E_(n+1)`, with `mu_sel=-(n+2)E_n`.
+This includes the small marker-count margin missed by a balanced pair.
+
+**[Proved, not independently reviewed]** The common frustration-free
+clock kernel and the previous coherent-gradient pin estimate imply
+additive reference coercivity. Splitting this positive operator against
+the terminal projector reduces the exact tilted ground energy to a
+sandwich of explicit scalar vacancy problems. All added potentials
+retain the terminal tail `tau_k=q^(2k+2)/(1+...+q^(2k))`. The allowance
+`q<=1/4, J/t<=1/80, t/2<=s<=3t/4` contains no charged-mass or growing
+cell-length factor. A frozen-clock compression gives a sharper scalar
+upper bound for the target. The positive tilted comparison transfers
+to target-minimizing canonical blocks, not arbitrary prescribed densities.
+
+The exact finite-volume second-order response separates scalar marker
+potentials from clock excitation. Its clock form factors satisfy
+`F_(k+1)(theta)<=(512/81)q^2 F_k(theta)<=32 F_k(theta)/81` for all
+k>=1 and momenta. Positivity of the response matrix therefore makes
+the clock correction favor the intended length in the weak comparison,
+for any common repetition count. This uses no uniform charge-gap bound.
+The common uniform scalar bulk response also cancels up to a favorable
+term, but different marker-period responses remain and need not favor
+the target. This is a coefficient theorem, not a uniform Taylor expansion.
+
+**[Numerical]** At n=1,N=V=6,q=1/4,J/t=1/80 the observed margin is
+1.57571292e-6 t against the first-order 1.57208384e-6 t. The separate
+J^2 coefficients are -3.25703e-6/t from scalar marker response and
++2.65078e-5/t from clocks. The sufficient scalar lower-minus-upper
+bound evaluates to 4.08e-8 t>0; all participating scalar/full problems
+minimize at V=6 for s/t=0.6. The n=1 crossing in mu moves upward by
+about 1.0006e-6, so the chosen frozen value requires no retuning in that
+test. The n=2 checks also retain positive margins but use canonical
+blocks outside the asserted tilt ensemble. No interval certificate or
+uniform threshold is inferred. The largest matrix dimension is 110,565;
+one-thread checks take about five seconds with residuals below 7.3e-12.
+
+In this real vacuum sector, positivity and the physical cyclic gluing
+condition give exactly equal rooted and physical ground energies.
+Thus its global boundary allowance is zero; complex charged/port
+extensions retain only the previous general 96t/N comparison bound.
+
+The obstruction left is explicit: prove uniform positivity of the
+reduced relative scalar bound, or control the remaining response and
+all higher orders on the same tail scale. The fixed selector survives
+the bounded tests but its thermodynamic validity remains unresolved.
+No new penalty, operator, or n-dependent shrinkage of J/t is introduced.
+The microscopic selector coefficient is still geometrically small;
+this is not a moderate-ratio high-c model. Arbitrary wrong-length words,
+charged competitors, ports/readout, illegal sectors and the final
+unitary compact multichannel CFT remain separate open steps.

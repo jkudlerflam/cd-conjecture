@@ -40,7 +40,7 @@ onsite energies retain their two contact halves.
 
 The nonperturbative theorem uses the positive length tilt and its
 minimizing canonical blocks. A positive tilted difference transfers
-to a **competitor-minimizing** block; transfer to arbitrary densities
+to a **target-minimizing** block; transfer to arbitrary densities
 is not assumed. Some larger-n checks below are canonical diagnostics
 outside that ensemble and are labeled accordingly.
 
