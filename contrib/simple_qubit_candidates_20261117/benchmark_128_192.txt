@@ -1,0 +1,45 @@
+{
+  "L": 128,
+  "chi": 192,
+  "dtype": "float64",
+  "backend": "numpy",
+  "build_seconds": 0.4598072079970734,
+  "measured_host_array_GB": 0.234094544,
+  "estimate": {
+    "MPS_GB": 0.067196224,
+    "environments_GB": 0.16837288,
+    "static_GB": 0.235569104,
+    "with_25pct_headroom_GB": 0.29446138,
+    "checkpoint_atomic_pair_GB": 0.134392448
+  },
+  "bonds": [
+    {
+      "j": 63,
+      "setup_seconds": 0.004765166995639447,
+      "solve_seconds": 0.40419254200241994,
+      "split_env_entropy_seconds": 0.007007749998592772,
+      "total_seconds": 0.41596704199764645,
+      "matvecs": 100,
+      "residual": 2.624380585195868e-11
+    },
+    {
+      "j": 64,
+      "setup_seconds": 0.0043627500053844415,
+      "solve_seconds": 0.4049835410041851,
+      "split_env_entropy_seconds": 0.007576333999168128,
+      "total_seconds": 0.4169247500030906,
+      "matvecs": 100,
+      "residual": 1.23846351677805e-10
+    },
+    {
+      "j": 65,
+      "setup_seconds": 0.006598291998670902,
+      "solve_seconds": 0.49188312500336906,
+      "split_env_entropy_seconds": 0.008176208000804763,
+      "total_seconds": 0.5066586249959073,
+      "matvecs": 100,
+      "residual": 9.242991741588902e-11
+    }
+  ],
+  "peak_host_RSS_GB": 0.673153024
+}

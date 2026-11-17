@@ -1,0 +1,16 @@
+{
+  "tag": "extended_V12_a24o25_L64_P1",
+  "V": 12,
+  "a": 0.96,
+  "kappa": 1,
+  "L": 64,
+  "P": 1,
+  "from": "base_V12_a24o25_L64_P1",
+  "stages": [
+    {
+      "chi": 192,
+      "min": 3,
+      "max": 6
+    }
+  ]
+}

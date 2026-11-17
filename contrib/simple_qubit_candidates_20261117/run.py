@@ -43,6 +43,10 @@ def run(cfg):
         c_profile=Ana.c_prof(S,L),valley=dict(Wa=wa,Wb=wb,imbalance=(wa-wb)/(wa+wb)),
         pair=pair_diagnostics(psi,gph),parity=Z.parity_expectation(psi),
         runtime_seconds=time.time()-start,peak_RSS_GB=resource.getrusage(resource.RUSAGE_SELF).ru_maxrss*(1 if sys.platform=='darwin' else 1024)/1e9)
+    if cfg.get('variance'):
+        var,e=Z.variance(psi,mpo)
+        final['variance']=var;final['variance_energy']=e+base['E_offset']
+        final['runtime_seconds']=time.time()-start
     write('done',**final)
     return json.loads(fout.read_text())
 

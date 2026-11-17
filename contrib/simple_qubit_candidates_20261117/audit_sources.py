@@ -10,7 +10,8 @@ def source(p):return dict(path=str(p.relative_to(ROOT)),sha256=hashlib.sha256(p.
 def main():
     files=[ROOT/p for p in ['STATUS.md','REPORT.md','codex/work_C190/models.py','codex/work_C190/RESULT.md',
        'codex/work_C195/RESULT.md','codex/work_C177/RESULT.md','codex/work_C177/tune.json',
-       'codex/work_C179/REFEREE.md','contrib/qubit_convergence_20261116/audit.json']]
+       'codex/work_C179/REFEREE.md','contrib/qubit_convergence_20261116/audit.json',
+       'contrib/d2_order_one_20261110/README.md','contrib/d2_order_one_20261110/bridge_variance.json']]
     old=[]
     for V in (8,12,16,24):
         for L in (64,128,192,256):
@@ -26,9 +27,14 @@ def main():
             if p.exists():
                 d=json.loads(p.read_text());fes.append(dict(source=source(p),V=V,cell=n,results=d['results']))
     oldaudit=json.loads((ROOT/'contrib/qubit_convergence_20261116/audit.json').read_text())
+    simple=[]
+    for p in sorted((ROOT/'contrib/d2_order_one_20261110/dmrg').glob('bridge_r4_u1_k4_*.json')):
+        d=json.loads(p.read_text());simple.append(dict(source=source(p),**{k:d[k] for k in
+            ['L','parity','seed','couplings','chi','E_physical','S_central3','S_fractional','density_bulk','density_bulk_range','convergence']},
+            checkpoint_available=__import__('pathlib').Path(d['checkpoint']).exists()))
     out=dict(source_files=[source(p) for p in files],production=coefficients(40,hz=-19.976047250613814),
              prior_audit_comparisons=oldaudit['comparisons'],prior_new_chi_test=oldaudit['new_chi_test'],
-             old_open=old,old_infinite=fes,
+             old_open=old,old_infinite=fes,prior_simple_V4_search=simple,
              decision='Start V=8 and V=12, kappa=1, bracket a with small rationals; preserve old convergence caveats.')
     (HERE/'source_audit.json').write_text(json.dumps(out,indent=2)+'\n')
     print('production',out['production']);print('old open rows',len(old),'infinite rows',len(fes))

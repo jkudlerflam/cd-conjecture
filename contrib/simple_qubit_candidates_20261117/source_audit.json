@@ -35,6 +35,14 @@
     {
       "path": "contrib/qubit_convergence_20261116/audit.json",
       "sha256": "669aa7d5d1b0773c29e2717cbf40a0245c28a2631d6a5667ca9f0da48645b341"
+    },
+    {
+      "path": "contrib/d2_order_one_20261110/README.md",
+      "sha256": "88ffe91e72b04b9e683d67ab07f7f129d839eeb1acaeebfb319b18f8f70c9011"
+    },
+    {
+      "path": "contrib/d2_order_one_20261110/bridge_variance.json",
+      "sha256": "ebeef40cafc1d84141dfb0982c4611585d7a5f115be003618da3c4073a90a6ce"
     }
   ],
   "production": {
@@ -8572,6 +8580,232 @@
           ]
         }
       ]
+    }
+  ],
+  "prior_simple_V4_search": [
+    {
+      "source": {
+        "path": "contrib/d2_order_one_20261110/dmrg/bridge_r4_u1_k4_L24_P0_s17.json",
+        "sha256": "3c34a413eb69847a2473ec72024f3d0595ea5ca60da90940493ce8283670e0d2"
+      },
+      "L": 24,
+      "parity": 0,
+      "seed": 17,
+      "couplings": {
+        "Jx": 0.5,
+        "Jy": -0.5,
+        "Jz": 1.0,
+        "Dz": 0.0625,
+        "hz": -1.75
+      },
+      "chi": 64,
+      "E_physical": -25.02562147109122,
+      "S_central3": 1.1913154085211468,
+      "S_fractional": 1.1438084064335208,
+      "density_bulk": 0.33440035508901905,
+      "density_bulk_range": 0.4739308881506841,
+      "convergence": {
+        "local_residual": 9.912114339850255e-11,
+        "discarded_weight": 1.2436576213303852e-09,
+        "delta_E": 4.82227591191986e-11,
+        "delta_S": 8.16493805899654e-09,
+        "canonical_vs_sweep_S": -5.119806187892095e-07,
+        "sweep_converged": true,
+        "bond_dimension_converged": "not established by a completed schedule alone"
+      },
+      "checkpoint_available": false
+    },
+    {
+      "source": {
+        "path": "contrib/d2_order_one_20261110/dmrg/bridge_r4_u1_k4_L24_P1_s17.json",
+        "sha256": "a7174f04333df0280bd67c7de869c4d54f705dbea2f7a9577197ea97a9e78d66"
+      },
+      "L": 24,
+      "parity": 1,
+      "seed": 17,
+      "couplings": {
+        "Jx": 0.5,
+        "Jy": -0.5,
+        "Jz": 1.0,
+        "Dz": 0.0625,
+        "hz": -1.75
+      },
+      "chi": 64,
+      "E_physical": -25.023853738828254,
+      "S_central3": 1.0852387185196886,
+      "S_fractional": 1.0580607258419616,
+      "density_bulk": 0.30940813487395896,
+      "density_bulk_range": 0.4357565909198003,
+      "convergence": {
+        "local_residual": 9.996200580607901e-11,
+        "discarded_weight": 1.2004814919919227e-09,
+        "delta_E": 5.212807963062005e-11,
+        "delta_S": 8.230643278039906e-08,
+        "canonical_vs_sweep_S": -9.83691337275161e-07,
+        "sweep_converged": true,
+        "bond_dimension_converged": "not established by a completed schedule alone"
+      },
+      "checkpoint_available": false
+    },
+    {
+      "source": {
+        "path": "contrib/d2_order_one_20261110/dmrg/bridge_r4_u1_k4_L48_P0_s17.json",
+        "sha256": "8b82dbbc4c3fda6d0853c0930ded6191afe8fca0fdde3506c83751d26b76ddb1"
+      },
+      "L": 48,
+      "parity": 0,
+      "seed": 17,
+      "couplings": {
+        "Jx": 0.5,
+        "Jy": -0.5,
+        "Jz": 1.0,
+        "Dz": 0.0625,
+        "hz": -1.75
+      },
+      "chi": 192,
+      "E_physical": -49.34375957088975,
+      "S_central3": 1.5307131439621695,
+      "S_fractional": 1.5127288059054615,
+      "density_bulk": 0.2914151507988514,
+      "density_bulk_range": 0.328622099308967,
+      "convergence": {
+        "local_residual": 9.975756238053746e-11,
+        "discarded_weight": 1.551321515691484e-09,
+        "delta_E": 3.7183589540745743e-10,
+        "delta_S": 3.848674174911082e-07,
+        "canonical_vs_sweep_S": -1.9109979174647407e-06,
+        "sweep_converged": true,
+        "bond_dimension_converged": "not established by a completed schedule alone"
+      },
+      "checkpoint_available": false
+    },
+    {
+      "source": {
+        "path": "contrib/d2_order_one_20261110/dmrg/bridge_r4_u1_k4_L48_P1_s17.json",
+        "sha256": "eeb6be87eab25b4a711ce632640beaf92e7e96b9fcd1ba90fe5d9a80d77241cc"
+      },
+      "L": 48,
+      "parity": 1,
+      "seed": 17,
+      "couplings": {
+        "Jx": 0.5,
+        "Jy": -0.5,
+        "Jz": 1.0,
+        "Dz": 0.0625,
+        "hz": -1.75
+      },
+      "chi": 192,
+      "E_physical": -49.34414815770929,
+      "S_central3": 1.5124859273837614,
+      "S_fractional": 1.4931793917819824,
+      "density_bulk": 0.3012958169636785,
+      "density_bulk_range": 0.3508678416386384,
+      "convergence": {
+        "local_residual": 9.985889527946649e-11,
+        "discarded_weight": 1.3850742774934588e-09,
+        "delta_E": 4.763212047009802e-10,
+        "delta_S": 1.316309741206112e-07,
+        "canonical_vs_sweep_S": -1.7913449055217967e-06,
+        "sweep_converged": true,
+        "bond_dimension_converged": "not established by a completed schedule alone"
+      },
+      "checkpoint_available": false
+    },
+    {
+      "source": {
+        "path": "contrib/d2_order_one_20261110/dmrg/bridge_r4_u1_k4_L48_P1_s23.json",
+        "sha256": "acbec3df033e37eb2d34515791912adfa376bad4e38bb9838792a0d4e644ebbb"
+      },
+      "L": 48,
+      "parity": 1,
+      "seed": 23,
+      "couplings": {
+        "Jx": 0.5,
+        "Jy": -0.5,
+        "Jz": 1.0,
+        "Dz": 0.0625,
+        "hz": -1.75
+      },
+      "chi": 192,
+      "E_physical": -49.344148157931656,
+      "S_central3": 1.5124857792883717,
+      "S_fractional": 1.4931792489108149,
+      "density_bulk": 0.30129581796790517,
+      "density_bulk_range": 0.3508678334337657,
+      "convergence": {
+        "local_residual": 9.978817952162492e-11,
+        "discarded_weight": 1.3752081695628249e-09,
+        "delta_E": 4.815383647382987e-10,
+        "delta_S": 0.0005000125833065638,
+        "canonical_vs_sweep_S": -1.2979205969987362e-06,
+        "sweep_converged": true,
+        "bond_dimension_converged": "not established by a completed schedule alone"
+      },
+      "checkpoint_available": false
+    },
+    {
+      "source": {
+        "path": "contrib/d2_order_one_20261110/dmrg/bridge_r4_u1_k4_L96_P0_s17.json",
+        "sha256": "957129f5b8b2c6a290101771727da349a038db84874f50a87ad783ae2fd0b883"
+      },
+      "L": 96,
+      "parity": 0,
+      "seed": 17,
+      "couplings": {
+        "Jx": 0.5,
+        "Jy": -0.5,
+        "Jz": 1.0,
+        "Dz": 0.0625,
+        "hz": -1.75
+      },
+      "chi": 192,
+      "E_physical": -97.9832902257711,
+      "S_central3": 1.825155613792185,
+      "S_fractional": 1.8031777345955196,
+      "density_bulk": 0.2963557853535001,
+      "density_bulk_range": 0.30175127622673076,
+      "convergence": {
+        "local_residual": 9.996626303710332e-11,
+        "discarded_weight": 4.5858760011618926e-08,
+        "delta_E": 6.2673279899172485e-09,
+        "delta_S": 3.625020613196028e-05,
+        "canonical_vs_sweep_S": -4.361191710655632e-05,
+        "sweep_converged": true,
+        "bond_dimension_converged": "not established by a completed schedule alone"
+      },
+      "checkpoint_available": false
+    },
+    {
+      "source": {
+        "path": "contrib/d2_order_one_20261110/dmrg/bridge_r4_u1_k4_L96_P1_s17.json",
+        "sha256": "436a312359b41c07c8b3773eace77f7c202abbe3ed236a6fd0dee359e04e41bd"
+      },
+      "L": 96,
+      "parity": 1,
+      "seed": 17,
+      "couplings": {
+        "Jx": 0.5,
+        "Jy": -0.5,
+        "Jz": 1.0,
+        "Dz": 0.0625,
+        "hz": -1.75
+      },
+      "chi": 192,
+      "E_physical": -97.98309788222842,
+      "S_central3": 1.8459722935734533,
+      "S_fractional": 1.8392183677425045,
+      "density_bulk": 0.2928553279787062,
+      "density_bulk_range": 0.29474202221274504,
+      "convergence": {
+        "local_residual": 9.996180868727221e-11,
+        "discarded_weight": 5.192952734489609e-08,
+        "delta_E": 6.786251560697565e-09,
+        "delta_S": 4.024942953551047e-05,
+        "canonical_vs_sweep_S": -5.0529385728026455e-05,
+        "sweep_converged": true,
+        "bond_dimension_converged": "not established by a completed schedule alone"
+      },
+      "checkpoint_available": false
     }
   ],
   "decision": "Start V=8 and V=12, kappa=1, bracket a with small rationals; preserve old convergence caveats."

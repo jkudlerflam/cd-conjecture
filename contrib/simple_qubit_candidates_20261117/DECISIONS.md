@@ -36,3 +36,39 @@
    difference between the rotated exchanges is still 2D=1/16, equal
    to the second-order t2 here. The rotation shortens the expression,
    but does not remove the small dynamical scale or field cancellation.
+7. At chi=128 the ground branches of both V=8 and 12 pass the four
+   local numerical gates on L=32,64. Their W=6 size readings are 2.421
+   and 2.369, while the exact two-leg control reads 2.389. That agreement
+   justifies a size extension; it does not establish a central charge.
+   W=1 and W=12 show substantial finite-size effects, retained in full.
+   The odd V=12 branch has a 0.011 entropy change from chi=96 to 128,
+   and the L=64 two-leg control still fails the energy-stationarity gate
+   despite an entropy error below 0.0005 against its exact value. These
+   specifically justify chi=192 continuations and matched L=128 controls.
+   The L=128,chi=192 fixed-work benchmark uses peak RSS 0.673 GB and
+   0.42--0.51 seconds per central 100-matvec update. The first size
+   extension is capped at L=128,chi=192, with any further chi increase
+   requiring the measured convergence results.
+8. The sibling `qubit_minimal_terms_20261117` independently obtained the
+   same four-monomial rotation and invariant hierarchy warning. It does
+   not prove the necessity of the DM term or field in every possible
+   c>1 model. Its zero-field two-monomial residual tests have no new
+   c>1 evidence and do not displace the supported blockade family here.
+9. Reading that sibling's sources revealed the earlier
+   `d2_order_one_20261110` search. Its point D is exactly our family at
+   V=4,kappa=1,a=1: original spread 28, common-rotation spread 4.
+   It already has L=24,48,96 full-chain data. The last size gives slopes
+   2.51--3.00 across parity/window choices, a central density range about
+   0.302, and no completed chi comparison there. The old checkpoints
+   are unavailable locally. This is useful low-hierarchy evidence but
+   not a more reliable CFT identification than the V=40 baseline.
+   Preserve it in the ranked comparison and, if resources permit,
+   perform a bounded new rational-field check rather than a new grid.
+10. For the legacy V=4,a=1 point, the useful missing check is chi
+    convergence at L=96. A fresh two-parity calculation through
+    chi=128,192,256 directly addresses it despite the absent old
+    checkpoints. It is more informative than rerunning tiny-ring
+    entropy slopes. Keep this as a third, explicitly exploratory
+    comparison; its large old slope does not make it the preferred CFT
+    candidate. Its global variance will also be measured. No claim of
+    a phase boundary follows from a handful of such points.

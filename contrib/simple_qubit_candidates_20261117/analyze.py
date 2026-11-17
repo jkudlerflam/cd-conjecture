@@ -23,7 +23,9 @@ def row(d,file):
         legs=cfg.get('legs'),chi=last['chi'],E=last['E_phys'],n_mid=last['n_mid'],Sbar=d['Sbar'],
         c_profile=d['c_profile'],gates=gates,all_gates=all(gates.values()),dE=de,dS=ds,dn=dn,dS_chi=dc,
         res_max=last['res_max'],trunc=last['trunc'],runtime_seconds=d['runtime_seconds'],peak_RSS_GB=d['peak_RSS_GB'],
-        valley=d['valley'],pair=d['pair'])
+        valley=d['valley'],pair=d['pair'],
+        central_density_range=float(np.ptp(np.array(d['meas']['dens'])[L//4:3*L//4])),
+        central_density_std=float(np.std(np.array(d['meas']['dens'])[L//4:3*L//4])))
     if cfg.get('legs'):
         ex=Ana.ff_entropies(L,d['bond']['mu'],cfg['legs'])
         r['exact_control']=dict(Sbar={str(w):Ana.sbar(ex,L,w) for w in (1,6,12)},
