@@ -44,6 +44,26 @@ def restored(raw,means):
         S=float(sc[k]),S_over_L=float(sc[k]/L)))
 
 
+def translation_project(v,L,states,inv,H,E):
+    """Resolve momenta present in a possibly degenerate returned eigenvector."""
+    translated=((states<<1)&(2**L-1))|(states>>(L-1));dest=inv[translated]
+    orbit=[];w=v.copy()
+    for _ in range(L):
+        orbit.append(w);t=np.zeros_like(w);t[dest]=w;w=t
+    orbit=np.array(orbit);qs=2*np.pi*np.arange(L)/L
+    projected=np.exp(-1j*np.outer(qs,np.arange(L)))@orbit/L
+    weights=np.sum(abs(projected)**2,axis=1);assert abs(weights.sum()-1)<1e-8
+    present=np.flatnonzero(weights>1e-10);angles=np.angle(np.exp(1j*qs))
+    chosen=min(present,key=lambda k:(round(abs(angles[k]),12),angles[k]))
+    w=projected[chosen]/np.sqrt(weights[chosen]);t=np.zeros_like(w);t[dest]=w
+    residual=float(np.linalg.norm(H@w-E*w));tr=float(np.linalg.norm(t-np.exp(1j*qs[chosen])*w))
+    assert residual<1e-8 and tr<1e-8
+    return w,dict(input_translation_overlap=[float(np.vdot(v,orbit[1]).real),float(np.vdot(v,orbit[1]).imag)],
+        momentum_weights=[dict(q=float(angles[k]),weight=float(weights[k])) for k in present],
+        selected_momentum=float(angles[chosen]),energy_residual=residual,translation_residual=tr,
+        scope='Momenta present in the returned vector only; four Krylov eigenpairs need not reveal all degeneracies.')
+
+
 def run(L,P):
     start=time.time();H,states,inv,bits,terms=lattice(L,P)
     rng=np.random.default_rng(19+P);v0=rng.normal(size=len(states))
@@ -51,9 +71,11 @@ def run(L,P):
     order=np.argsort(vals);vals=vals[order];vec=vec[:,order]
     residual=[float(np.linalg.norm(H@vec[:,i]-vals[i]*vec[:,i])) for i in range(4)]
     assert max(residual)<1e-8
-    v=vec[:,0];prob=abs(v)**2;dens=bits@prob;raw_n=(bits*prob)@bits.T
+    v,projection=translation_project(vec[:,0],L,states,inv,H,vals[0]);vec[:,0]=v
+    residual[0]=projection['energy_residual'];prob=abs(v)**2;dens=bits@prob;raw_n=(bits*prob)@bits.T
+    assert np.ptp(dens)<1e-8
     out=dict(L=L,P=P,boundary='periodic',energies=vals.tolist(),gaps_within_parity=(vals-vals[0]).tolist(),
-        residuals=residual,density=restored(raw_n,dens))
+        residuals=residual,density=restored(raw_n,dens),ground_translation_projection=projection)
     full=np.zeros(2**L,dtype=complex);full[states]=v;entropy=[]
     for cut in range(1,L):
         prob=np.linalg.svd(full.reshape(2**cut,2**(L-cut)),compute_uv=False)**2
@@ -96,7 +118,7 @@ def run(L,P):
     out['ground_degeneracy_within_four']=int(np.sum(vals-vals[0]<1e-9))
     out['runtime_seconds']=time.time()-start
     out['peak_RSS_GB']=resource.getrusage(resource.RUSAGE_SELF).ru_maxrss*(1 if sys.platform=='darwin' else 1024)/1e9
-    out['scope']='One lowest eigenvector per parity; static results explicitly translation-averaged. Small-ring gaps do not determine a bulk velocity or c.'
+    out['scope']='One pure translation eigenvector per parity, projected from the lowest returned vector; static results explicitly translation-averaged. Four eigenpairs need not reveal all degeneracies. Small-ring gaps do not determine a bulk velocity or c.'
     write_json(HERE/'periodic'/f'L{L}_P{P}.json',out)
     print('done',L,P,vals.tolist(),out['density']['peak'],'seconds',out['runtime_seconds'],flush=True)
 

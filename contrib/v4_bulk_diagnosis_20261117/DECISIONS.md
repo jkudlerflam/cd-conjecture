@@ -62,3 +62,21 @@
    other worker. No chi above 320 is authorized by this registration.
    At chi=256 the optional boundary-probe amplitude ratios are only
    0.813/0.835, so its trigger is currently not met.
+10. Resource accounting: brief file-only entropy/gate summaries and the
+    sub-second saved-covariance audit overlapped the two active production
+    processes. This is a deviation from the registration's stricter
+    no-extra-validation-job wording; the user's two-production-worker
+    limit was respected. No third DMRG, checkpoint measurement, exact
+    diagonalization or benchmark job overlapped. Subsequent numerical
+    validation and auxiliary work will wait for a free worker slot.
+11. The small-ring eigensolver sometimes returns a ground-state mixture
+    of translation momenta, even when only one copy of its eigenvalue
+    appears among the four returned levels. Translation covariance
+    exposes this unresolved degeneracy. Before using periodic entropy,
+    project the returned ground vector onto one definite momentum
+    (smallest absolute momentum present; negative first on a tie),
+    retaining its momentum weights and checking energy/translation
+    residuals. Rerun all six rings at the next free worker slot. The
+    original ring records are retained in commit 8b3ca32a; the replacement
+    does not add sizes, model parameters or eigensolver eigenpairs.
+    Do not infer a complete degeneracy count from four Krylov eigenpairs.

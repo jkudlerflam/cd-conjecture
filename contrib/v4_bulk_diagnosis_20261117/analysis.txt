@@ -8,6 +8,7 @@ gates v4_L144_P0_s1 {'residual': True, 'stationarity': True, 'discarded_weight':
 gates v4_L144_P1_s1 {'residual': True, 'stationarity': True, 'discarded_weight': True, 'chi_step': False} 0.018397040094351835
 gates v4_L48_P0_s1 {'residual': True, 'stationarity': True, 'discarded_weight': True, 'chi_step': True} 0.00039751766874762673
 gates v4_L48_P1_s1 {'residual': True, 'stationarity': True, 'discarded_weight': True, 'chi_step': True} 0.00037414601911778256
+gates v4_L96_P0_s7 {'residual': True, 'stationarity': True, 'discarded_weight': True, 'chi_step': True} 0.00511753539093629
 gates reused_L96_P0_chi256 {'residual': True, 'stationarity': True, 'discarded_weight': True, 'chi_step': True} 0.0051199489440916235
 gates reused_L96_P1_chi256 {'residual': True, 'stationarity': True, 'discarded_weight': True, 'chi_step': True} 0.0056179177865669505
 boundary [{'P': 0, 'amplitude_ratio': 0.8125590039892017, 'connected_peak_weight_ratio': 0.822709179295044, 'condition_met': False}, {'P': 1, 'amplitude_ratio': 0.8348168697383428, 'connected_peak_weight_ratio': 0.84510781823222, 'condition_met': False}]

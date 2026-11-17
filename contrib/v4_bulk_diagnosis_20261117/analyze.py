@@ -66,9 +66,11 @@ def supplementary(root,original,obs):
         p=root/'channels'/key
         if p.exists():
             c=json.loads(p.read_text())
+            C=np.array(c['connected']);M=len(C);rr=abs(np.arange(M)[:,None]-np.arange(M)[None,:])
+            far=(rr>=M/3)&(rr<=M/2)
             channels.append(dict(tag=r['tag'],L=r['L'],P=r['P'],chi=r['chi'],windows={w:
                 {k:c[w][k] for k in ('M','mean','RMS','S_zero_over_M','uniform_order_weight','connected_peak_including_zero')}
-                for w in ('half','quarter')}))
+                for w in ('half','quarter')},long_distance_RMS=float(np.sqrt(np.mean(C[far]**2)))))
     for p in sorted((root/'periodic').glob('*.json')):
         d=json.loads(p.read_text());rings.append(dict(L=d['L'],P=d['P'],energies=d['energies'],
             gaps_within_parity=d['gaps_within_parity'],momenta=d['momentum_if_translation_eigenstate'],

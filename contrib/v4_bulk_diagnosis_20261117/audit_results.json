@@ -1,5 +1,5 @@
 {
-  "checked_observations": 10,
+  "checked_observations": 12,
   "checks": [
     {
       "file": "observations/reused_L96_P0_chi256.json",
@@ -230,6 +230,52 @@
       },
       "pair_subtraction_error": 0.0,
       "sha256": "6e69e33c80eec0aea50e1da2c63e0b9596badcd9b02dccdffbbfe59db6791efb"
+    },
+    {
+      "file": "observations/v4_L96_P0_s7_chi192.json",
+      "energy_contraction_error": 4.405364961712621e-13,
+      "operators": {
+        "density": {
+          "covariance_identity_error": 0.0,
+          "symmetry_error": 0.0,
+          "minimum_covariance_eigenvalue": 0.10142884494518786
+        },
+        "bond": {
+          "covariance_identity_error": 0.0,
+          "symmetry_error": 0.0,
+          "minimum_covariance_eigenvalue": 0.11789284288245935
+        },
+        "kinetic": {
+          "covariance_identity_error": 0.0,
+          "symmetry_error": 0.0,
+          "minimum_covariance_eigenvalue": 0.28381588725040585
+        }
+      },
+      "pair_subtraction_error": 0.0,
+      "sha256": "9e40d1efcf2913f8b4967dc1461652d83d105f8a8fe362017c5683c65a2faa84"
+    },
+    {
+      "file": "observations/v4_L96_P0_s7_chi256.json",
+      "energy_contraction_error": 5.684341886080802e-14,
+      "operators": {
+        "density": {
+          "covariance_identity_error": 0.0,
+          "symmetry_error": 0.0,
+          "minimum_covariance_eigenvalue": 0.10148018884053005
+        },
+        "bond": {
+          "covariance_identity_error": 0.0,
+          "symmetry_error": 0.0,
+          "minimum_covariance_eigenvalue": 0.117912123844121
+        },
+        "kinetic": {
+          "covariance_identity_error": 0.0,
+          "symmetry_error": 0.0,
+          "minimum_covariance_eigenvalue": 0.2838087842782008
+        }
+      },
+      "pair_subtraction_error": 0.0,
+      "sha256": "ab2e5de57eb52e5a817d6f9c7847327964d405d4d9a6ba1e6bee42376d946e9f"
     }
   ],
   "channel_checks": [
@@ -292,6 +338,18 @@
       "covariance_identity_error": 0.0,
       "minimum_covariance_eigenvalue": 0.7171993101323382,
       "sha256": "f6f2eaf89c93975cef994b5c18025e6d7e1c0c3e9e834b925ffad7997e3ac333"
+    },
+    {
+      "file": "channels/v4_L96_P0_s7_chi192.json",
+      "covariance_identity_error": 0.0,
+      "minimum_covariance_eigenvalue": 0.7280541817326114,
+      "sha256": "3f6731bb2684309d2bf5a50017a310951500cf11630a93e930c2258001152958"
+    },
+    {
+      "file": "channels/v4_L96_P0_s7_chi256.json",
+      "covariance_identity_error": 0.0,
+      "minimum_covariance_eigenvalue": 0.7281272627195295,
+      "sha256": "fc929f48590d36da3d99ae6332b36fb221328c38a8561d5917ac0a421fd54b9e"
     }
   ],
   "completed_runs": [
@@ -326,17 +384,25 @@
       "runtime_seconds": 72.5178918838501,
       "peak_RSS_GB": 0.94773248,
       "sha256": "4fa922c3dad7f6dc0b4c1798c973b048c5a539bc273b10ff726fda14efe89ad0"
+    },
+    {
+      "tag": "v4_L96_P0_s7",
+      "sweeps": 24,
+      "sweep_seconds": 1187.8279812335968,
+      "runtime_seconds": 1194.2739810943604,
+      "peak_RSS_GB": 1.820475392,
+      "sha256": "50d471b587edc646185362ce45b660a52e59616b7694d22b16302dd70d6743cd"
     }
   ],
   "running": [
-    "v4_L96_P0_s7"
+    "v4_L144_P1_s1_c320"
   ],
   "versions": {
     "python": "3.12.3",
     "numpy": "2.5.5",
     "scipy": "1.18.1"
   },
-  "completed_sweep_seconds": 5349.277264595032,
+  "completed_sweep_seconds": 6537.1052458286285,
   "maximum_completed_RSS_GB": 2.27557376,
   "source_hashes": {
     "contrib/v4_bulk_diagnosis_20261117/controls.py": "885d04a889165b3fa2b81b4886c6e1636fbafe1b8d9dea8966ca4faabfb973c0",
@@ -344,7 +410,7 @@
     "contrib/v4_bulk_diagnosis_20261117/benchmark.py": "c5fb33ef7a09e5ace107e6348d4197320afb494999abccf195d5161b1e72264f",
     "contrib/v4_bulk_diagnosis_20261117/reproduce.py": "b2341178c291120573ad0c6719feb29a357a77c0f1eaad4d9d789efd6d07d66a",
     "contrib/v4_bulk_diagnosis_20261117/entropy_analysis.py": "2f18eb6fcf057e7cb42cea0cb04dcd41a3e38bb74b4caea79b88369b95d1bbd6",
-    "contrib/v4_bulk_diagnosis_20261117/ring_ed.py": "4ed61ad147f060929b4cc846eb8baa486c982d961162b2b42e41190b06690ebb",
+    "contrib/v4_bulk_diagnosis_20261117/ring_ed.py": "8924eebb52876223ef5ce39442e1666ac172eef3417f7f28e6a9c2ce276f0fea",
     "contrib/v4_bulk_diagnosis_20261117/measure_saved.py": "f71cf5510b5931a7efcb84684339a725260236ce0c2ec98b1dca26e1b8b36ed6",
     "contrib/v4_bulk_diagnosis_20261117/audit_results.py": "72681f0299d01ba39bac383ce7204c38c8b5ed8040f051ed68f4c5231059ab4d",
     "contrib/v4_bulk_diagnosis_20261117/campaign.py": "a0c1d387f2a99f658fabf25aa5c1b8567c774caa9163c1af8bcf5d3d09a56b8f",
@@ -353,7 +419,7 @@
     "contrib/v4_bulk_diagnosis_20261117/phase_common.py": "00fb79c652efbf966f8ec34fd494dc41862a0caf2cbecc94b412dbd625c8f9a2",
     "contrib/v4_bulk_diagnosis_20261117/observables.py": "6c1125c722b1e4ce4c60edc5ded65226e66456b388b04d3d9e5231d94b2039be",
     "contrib/v4_bulk_diagnosis_20261117/auxiliary.py": "fc699d001f3506aba081178f1424073272646182ba07f54ce9d8667fbec0aade",
-    "contrib/v4_bulk_diagnosis_20261117/analyze.py": "6096bef6b1734f08300a7d98482cae49a830cee7c2268a6359a883e05d50acd5",
+    "contrib/v4_bulk_diagnosis_20261117/analyze.py": "e64d243548934f25fe09aa67b133d8c7ab82c06d412a308fb906b23efdbf997a",
     "codex/work_C190/z2dmrg.py": "8b55ff8a0c8ada4d3da36cc208a92566eb0459c045ea93b9facdc74a2980e847",
     "codex/work_C195/z2dmrg_xp.py": "bde039f95bbc339bf96b3f3007e70820e8e905c2e5651bc388769e9fa5337e11"
   },

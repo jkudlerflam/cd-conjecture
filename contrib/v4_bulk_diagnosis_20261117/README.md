@@ -41,8 +41,10 @@ Both L=144,chi=256 runs are now complete. Density RMS is about 0.0923
 and profile amplitude about 0.128 in both sectors, with q near 0.880 pi.
 The entropy chi-step gate fails (0.01894/0.01840), while the other local
 gates pass. The registered chi=320 continuations pass the resource
-benchmark and are pending/in progress, as is the independent L=96 start.
-The current boundary-probe amplitude trigger is not met.
+benchmark and are in progress. The independent L=96 start is complete:
+energy differs by 2.33e-11, density/bond profiles by less than 1.6e-8,
+and state overlap has magnitude 0.999999999875. All registered restart
+checks pass. The current boundary-probe amplitude trigger is not met.
 
 At the user's subsequent request, a **post-hoc** central-charge estimator
 has been added in `entropy_analysis.py`. The lower-variational-energy
@@ -57,11 +59,84 @@ The same estimator on fixed-parameter exact free controls gives
 0.995 and 1.954 for known c=1 and c=2 at L=96 to 144. The new valley
 channel XX+YY has decreasing uniform normalized weight, about
 0.064--0.065, 0.026, and 0.0157 at L=48,96,144. Small periodic-ring
-spectra and correlations are saved separately; their entropies have
-large size/sector effects and do not determine c.
+spectra and correlations are saved separately. Periodic entropy now uses
+a pure translation eigenstate, with the projection weights and residuals
+recorded explicitly. The ground density jumps from about 0.159 at L=12
+to 0.288 at L=16; these rings have large size/sector effects and do not
+determine c.
 
 `audit_results.py` checks covariance identities and positivity, pair
 subtraction/Cauchy bounds and agreement of total energy reconstructed
 from density/bond profiles with the independent energy contraction.
 The saved stage/baseline observations pass at this checkpoint. Final
 counts and all completed/running tags are recorded in `audit_results.json`.
+
+## Entropy convention and interpretation
+
+All entropies use natural logarithms. For an open critical chain the
+conformal fit is
+
+`S(l,L) = (c/6) log[(L/pi) sin(pi*l/L)] + constant + corrections`.
+
+The coefficient is c/3 for a periodic chain. These conventions follow
+[Calabrese and Cardy, equations (1)--(2)](https://arxiv.org/abs/hep-th/0405152).
+The primary finite-size diagnostic is
+`c_ent(L1,L2) = 6 [Sbar6(L2)-Sbar6(L1)] / log(L2/L1)`.
+W=6 averages the thirteen cuts from L/2-6 through L/2+6, inclusive.
+`entropy_analysis.json` also retains W=0,1,12; a central-quarter
+fraction; averaged-log-chord denominators; fixed-parity sequences; and
+profile fits with three boundary exclusions and two smoothing widths.
+The exact controls and synthetic conformal profiles validate the
+normalization and averaging. Their finite-size errors are not assumed
+to be a universal correction that can simply be subtracted from V=4.
+
+A local accuracy pass is not a proof of the global ground state or a
+CFT. Parity selection uses the lower converged variational energy at
+each size; fixed-parity slopes remain available to expose crossings.
+No fit residual is represented as a statistical confidence interval.
+Three sizes cannot identify both an asymptotic c and unspecified
+finite-size corrections. Positive thermodynamic mode velocities and a
+robust critical parameter neighbourhood have not been established.
+
+## Reproduction and provenance
+
+Install `requirements.txt`. From the repository root, regenerate the
+small exact checks and the summaries of archived observations with:
+
+```bash
+python3 -B contrib/v4_bulk_diagnosis_20261117/validate.py
+python3 -B contrib/v4_bulk_diagnosis_20261117/controls.py
+python3 -B contrib/v4_bulk_diagnosis_20261117/ring_ed.py
+python3 -B contrib/v4_bulk_diagnosis_20261117/analyze.py
+python3 -B contrib/v4_bulk_diagnosis_20261117/entropy_analysis.py
+python3 -B contrib/v4_bulk_diagnosis_20261117/audit_results.py
+```
+
+Those commands regenerate their small report files in this contribution.
+Rebuild production states in a separate directory to preserve the archive:
+
+```bash
+python3 -B contrib/v4_bulk_diagnosis_20261117/reproduce.py \
+  --run-root /tmp/v4-reproduction --tag v4_L144_P1_s1_c320
+```
+
+The wrapper rebuilds parent stages sequentially and records the final
+energy difference from the archive. Repeat `--tag` for selected cases;
+omit it to run the completed configurations listed in
+`completed_configs.txt`. Each process uses one BLAS thread.
+The baseline L=96 states can be regenerated with the previous
+contribution's `reproduce.py`, selecting `legacy_V4_a1_L96_P0` and P1,
+then measured with this contribution's `measure_saved.py --parity P
+--checkpoint PATH --run-root OUTPUT_DIRECTORY`. `measure_channel.py`
+measures the secondary XX+YY channel of a specified saved checkpoint.
+`auxiliary.py` sequences exact checks, measurements and an optional
+benchmark in one worker slot; run it only when that slot is available.
+
+Configuration, observation and source hashes, package versions, runtime,
+peak memory and covariance/energy consistency checks are recorded in
+`audit_results.json` and `source_audit.json`. State files remain ignored
+in `runtime/`. New contractions are checked against full small-chain
+matrices; the DMRG solver itself is shared with the prior campaign,
+not an independent implementation. [Decisions](DECISIONS.md) records
+the post-hoc entropy analysis, resource-accounting deviation and
+translation-degeneracy handling for the small rings.
