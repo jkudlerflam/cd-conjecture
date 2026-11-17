@@ -73,6 +73,18 @@ These are spelled out in [CONTRIBUTING.md](CONTRIBUTING.md). In brief, tag every
 
 ## Where things stand
 
+**Minimal qubit terms (2026-11-17):** The
+[four-face classification](contrib/qubit_minimal_terms_20261117/README.md)
+of `a(XX-YY)+b(XY-YX)+cZZ+hZ` excludes central charge above one when
+pairing or interaction is absent, using the XXZ and free classifications.
+The staggered-field and zero-field interacting faces retain explicit
+unresolved regions. The latter is an asymmetric Ashkin–Teller model,
+with a controlled C=1 neighbourhood of its XXZ limits. A common rotation
+reduces six Pauli monomials to four but leaves all four independent
+couplings; it cannot remove the reference candidate's invariant hierarchy.
+The two-term subfamily `2a XY+cZZ` is a simple residual test, not a newly
+established counterexample.
+
 **First d=22 mobile auxiliary estimate (2026-11-16):** The
 [mobile matching contribution](contrib/small_d_mobile_matching_20261116/README.md)
 derives the literal contact-weighted representation and proves a positive

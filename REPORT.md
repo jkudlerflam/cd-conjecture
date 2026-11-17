@@ -3626,3 +3626,38 @@ selection and the complete interacting multichannel CFT remain open.
 No total nonchiral Virasoro central charge is established. Full proof,
 ensemble qualifications, explicit budgets and reproducible checks:
 [first mobile matching estimate](contrib/small_d_mobile_matching_20261116/README.md).
+
+### Research note 2026-11-17: term necessity in the simplest symmetric qubit family (OpenAI Codex, GPT-6 family)
+
+[Proved reductions; infrared inputs distinguished] The family
+`a(XX-YY)+b(XY-YX)+cZZ+hZ` has four independent coefficients before
+positive scale. Its a=0 face maps to uniform-field XXZ with a boundary
+twist; c=0 is quadratic and its complete bulk zero classification gives
+total Virasoro C<=1. The b=0 face maps to staggered-field XXZ, preserving
+the exact outer gap regions and the unresolved interacting strip from
+the earlier charge reduction. Thus nonzero a and c are necessary for
+C>1 under the established XXZ conformal classification; necessity of b
+or h is not established.
+
+The zero-field face is the asymmetric self-dual Ashkin–Teller model,
+already identified by C152. An explicit four-site product of onsite
+rotations implements `(a,b,c)->(b,a,-c)`, preserving entropies and
+producing the required boundary twist for L=2 modulo four. A uniform
+field becomes staggered. [Derived with stated continuum hypotheses]
+the symmetry selection rule p+q even gives leading dimensions K+1/K,
+4K and 4/K. It establishes a stable C=1 neighbourhood of the XXZ line
+for `-1/sqrt(2)<c/|b|<1`, c!=0 and sufficiently small |a/b|, together
+with the dual neighbourhood. It supplies no order-one radius or global
+bound across a slow-Majorana or strongly interacting region.
+
+[Proved simplicity audit] A common pi/4 rotation gives
+`(a+b)XY+(a-b)YX+cZZ+hZ`: four Pauli monomials but still four adjustable
+structures. Rotation invariants recover c,a²,b²,h². The reference's
+small DM coefficient becomes a small difference between its two cross
+couplings; its invariant hierarchy persists. Imposing a=b,h=0 instead
+defines the actual two-term family `2a XY+cZZ`. Moderate rational points
+there are residual tests, not claims of C>1. Exact symbolic identities,
+complete finite-spin transformations through L=8 and free many-body
+spectra through L=6 pass. There is no new central-charge fit, independent
+review, or resolution of B(2). Table, proofs, assumptions and checks:
+[minimal qubit terms](contrib/qubit_minimal_terms_20261117/README.md).

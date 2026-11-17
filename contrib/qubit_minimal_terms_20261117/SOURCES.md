@@ -39,6 +39,13 @@ Local proofs and the finite tests are separate from literature inputs.
   The exact boundary and surrounding DMRG analysis are distinguished.
   The exact-gap proof used here is independently available in the
   repository's staggered_slice.md, including factors in Pauli units.
+* [Bravyi, Gosset, Liu and Wong, Efficient quantum algorithm for
+  Heisenberg spin systems, arXiv:2607.14401v1](https://arxiv.org/html/2607.14401v1).
+  Read Definition 1 and Theorem 1: ferromagnetic ZZ domination in
+  operator norm, together with positive longitudinal fields, implies
+  a unique ground state and gap at least twice the minimum field.
+  This is the primary theorem behind the negative-c wing of the
+  staggered face, not a gap claim at zero field.
 
 Prior project results read: `d2_gap_reduction/additive_charge.md`,
 `staggered_slice.md`, C152 sections 8 and 11, C153 RESULT, C144 RESULT,

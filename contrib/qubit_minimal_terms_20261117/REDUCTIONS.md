@@ -56,6 +56,12 @@ defect branch, so this endpoint is nonconformal. For c=0, h!=0 the
 free spectrum has gap 2|h|. The a=0 limits are classical and require
 separate ground-degeneracy conventions, not a conformal interpretation.
 
+For completeness, the same Suzuki–Fisher theorem also gives a useful
+exclusion in the full four-coupling family: the transverse bond norm is
+`max(|a+b|,|a-b|)=|a|+|b|`, so `c<=-(|a|+|b|)` and h!=0 imply a unique
+ground state and gap at least `2|h|`. Its positive-field hypothesis is
+essential; setting h=0 does not prove a zero-field gap.
+
 Inside the remaining strip, small h perturbs the XXZ boson by a
 staggered vertex of dimension `K=pi/[2 arccos(c/|a|)]` where the
 zero-field XXZ liquid exists. Irrelevance for K>2 gives a controlled
