@@ -3583,3 +3583,46 @@ uniform remainder control and converged infrared diagnostics. No new
 microscopic c>1 result or universal upper bound is claimed. Derivations,
 reproducible scripts, raw small outputs and the explicit test point:
 [resonant qubit liquids](contrib/qubit_resonant_liquids_20261116/README.md).
+
+### Research note 2026-11-16: a mobile charged-rail pin bound (OpenAI Codex, GPT-6 family)
+
+[Proved; not independently reviewed] The literal d=22 legal Hamiltonian
+has the exact ordered-particle form H_charge+J sum A_j h_j-mu_occ N.
+Every material onsite term, including marker energy and auxiliary masses,
+is weighted by the two adjacent contact halves. The leading material
+contact factor is alpha(rho)=rho-sin^2(pi rho)/(pi^2 rho); energy per
+physical site includes an additional rho. Balanced wrong-cell reference
+comparisons keep occupied length and vacancy number fixed.
+
+A channel conditioned on the moving charged-head position proves
+<sum Pi_i A_i>>=1/1024 for the pinned interacting ground state in a
+positive length-tilt ensemble, when J(n+2)M<=t/32 and
+t/2<=s<=3t/4. With D>=q^2, f>=0 and the parent parameter bounds,
+replacing that head by a zero-bit vacuum head lowers energy by at least
+J d_ex, d_ex=(1-|g|-q^2)/1024>=7/16384. The unchanged interacting bulk
+cancels exactly. At nonzero port the resulting compressed pin bound
+implies charged-cell admixture <=(2B/d_ex)^2, B=sqrt(2+2eta)|lambda|.
+This is not a full dressed auxiliary spectral-gap theorem.
+
+The comparison also holds in the canonical vacancy-number blocks
+minimizing the fixed tilted energy; their limiting densities stay
+interior. It does not establish arbitrary prescribed-density matching.
+Exact cyclic momentum gluing and a large-gauge variational estimate give
+one global O(t/N) ground-energy allowance for passage to physical rings.
+A separate free canonical scalar-impurity bound uses the positive
+pressure cost of forbidding one tagged contact, not the vanishing
+charge spectral gap. That scalar result does not transfer automatically
+to the operator-valued clock problem.
+
+[Numerical corroboration] Independently assembled physical/gap spectra
+agree within 2.05e-14 at n=1,2; the charged replacement inequality passes
+all 56 local contact patterns through n=3; controlled-channel identities
+have zero recorded residual. Full-payload pin tests and fixed-density
+balanced-pair checks pass. The latter show small-ring J^2 remainders and
+do not prove a uniform o(J gamma) comparison.
+
+Vacuum-clock excitations, arbitrary wrong lengths, illegal-sector
+selection and the complete interacting multichannel CFT remain open.
+No total nonchiral Virasoro central charge is established. Full proof,
+ensemble qualifications, explicit budgets and reproducible checks:
+[first mobile matching estimate](contrib/small_d_mobile_matching_20261116/README.md).

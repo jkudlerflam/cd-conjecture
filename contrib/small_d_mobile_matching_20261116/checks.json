@@ -1,0 +1,323 @@
+{
+  "status": "finite numerical corroboration; legal sectors only; no CFT claim",
+  "versions": {
+    "numpy": "2.5.5",
+    "scipy": "1.18.1"
+  },
+  "representation": [
+    {
+      "n": 1,
+      "N": 2,
+      "V": 1,
+      "physical_dimension": 168,
+      "full_spectrum_error": 6.217248937900877e-15,
+      "onsite_contact_halves_retained": true
+    },
+    {
+      "n": 2,
+      "N": 3,
+      "V": 1,
+      "physical_dimension": 1104,
+      "full_spectrum_error": 2.042810365310288e-14,
+      "onsite_contact_halves_retained": true
+    }
+  ],
+  "scalar": [
+    {
+      "N": 3,
+      "V": 2,
+      "dimension": 6,
+      "alpha": 0.4254644007500069,
+      "compression_error": 0.0,
+      "pressure_cost": 1.2360679774997885,
+      "u": 0.41202265916659614,
+      "impurity_cost": 0.1616836033339748,
+      "lower_bound": 0.009606823232232824,
+      "contact": 0.36024361969479035,
+      "residual": 1.7271017045521525e-15
+    },
+    {
+      "N": 3,
+      "V": 3,
+      "dimension": 10,
+      "alpha": 0.2777777777777777,
+      "compression_error": 0.0,
+      "pressure_cost": 0.7639320225002098,
+      "u": 0.25464400750006994,
+      "impurity_cost": 0.06635844583176631,
+      "lower_bound": 0.002301021592165424,
+      "contact": 0.24406734258243945,
+      "residual": 8.671119018262734e-16
+    },
+    {
+      "N": 4,
+      "V": 4,
+      "dimension": 35,
+      "alpha": 0.2866116523516817,
+      "compression_error": 0.0,
+      "pressure_cost": 0.7322926520705728,
+      "u": 0.24409755069019093,
+      "impurity_cost": 0.06551531533149735,
+      "lower_bound": 0.0020282852439623147,
+      "contact": 0.2508882107126189,
+      "residual": 2.076666157925221e-15
+    },
+    {
+      "N": 5,
+      "V": 5,
+      "dimension": 126,
+      "alpha": 0.2905572809000137,
+      "compression_error": 0.0,
+      "pressure_cost": 0.7133654718559708,
+      "u": 0.23778849061865692,
+      "impurity_cost": 0.06463277802060219,
+      "lower_bound": 0.0018758384297730146,
+      "contact": 0.25379152396885957,
+      "residual": 1.022872633217066e-14
+    },
+    {
+      "N": 6,
+      "V": 6,
+      "dimension": 462,
+      "alpha": 0.2926638440240466,
+      "compression_error": 0.0,
+      "pressure_cost": 0.7007324269802648,
+      "u": 0.23357747566008827,
+      "impurity_cost": 0.06390560381307253,
+      "lower_bound": 0.0017784272546092239,
+      "contact": 0.2552794265851154,
+      "residual": 4.862963639402189e-14
+    }
+  ],
+  "replacement": [
+    {
+      "n": 1,
+      "charged_dimension": 24,
+      "contact_patterns": 8,
+      "D": 0.0625,
+      "g": 0.5,
+      "kappa": 0.4375,
+      "minimum_operator_slack": 0.0
+    },
+    {
+      "n": 2,
+      "charged_dimension": 80,
+      "contact_patterns": 16,
+      "D": 0.0625,
+      "g": 0.5,
+      "kappa": 0.4375,
+      "minimum_operator_slack": 0.0
+    },
+    {
+      "n": 3,
+      "charged_dimension": 224,
+      "contact_patterns": 32,
+      "D": 0.0625,
+      "g": 0.5,
+      "kappa": 0.4375,
+      "minimum_operator_slack": 0.0
+    }
+  ],
+  "controlled_channel": {
+    "N": 3,
+    "total_vacancy_cutoff": 3,
+    "quantum_head_positions": 3,
+    "dimension": 60,
+    "phase": 0.37,
+    "completeness": 0.0,
+    "kinetic_identity": 0.0,
+    "tilt_identity": 0.0
+  },
+  "charged_pin": [
+    {
+      "n": 1,
+      "N": 4,
+      "material_dimension": 784,
+      "pinned_dimension": 672,
+      "lam": 0.0,
+      "J": 0.0005,
+      "s": 0.6,
+      "M_bound": 11.01693202250021,
+      "actual_legal_bond_norm": 7.498258497187473,
+      "JRM": 0.016525398033750315,
+      "vacancy_candidates": [
+        4
+      ],
+      "excluded_v_above": 10,
+      "full_minimizer_V": 4,
+      "pin_minimizer_V": 4,
+      "tilted_pin_cost": 0.0005090918140533418,
+      "canonical_pin_cost": 0.0005090918140533418,
+      "theorem_cost": 3.9428710937500003e-07,
+      "conditioned_head_contact": 0.2864829825348425,
+      "charged_occupation": 2.2202959693307408e-17,
+      "occupation_bound": 0.0,
+      "max_residual": 9.604593299094672e-11
+    },
+    {
+      "n": 1,
+      "N": 4,
+      "material_dimension": 784,
+      "pinned_dimension": 672,
+      "lam": 1e-05,
+      "J": 0.0005,
+      "s": 0.6,
+      "M_bound": 11.01694783388851,
+      "actual_legal_bond_norm": 7.498258497194166,
+      "JRM": 0.016525421750832766,
+      "vacancy_candidates": [
+        4
+      ],
+      "excluded_v_above": 10,
+      "full_minimizer_V": 4,
+      "pin_minimizer_V": 4,
+      "tilted_pin_cost": 0.0005090918140480127,
+      "canonical_pin_cost": 0.0005090918140480127,
+      "theorem_cost": 3.9428710937500003e-07,
+      "conditioned_head_contact": 0.2864829825348425,
+      "charged_occupation": 2.1575155047367096e-13,
+      "occupation_bound": 0.0016081066625770399,
+      "max_residual": 9.604593299094672e-11
+    },
+    {
+      "n": 2,
+      "N": 3,
+      "material_dimension": 92,
+      "pinned_dimension": 80,
+      "lam": 0.0,
+      "J": 0.0005,
+      "s": 0.6,
+      "M_bound": 11.004074327338065,
+      "actual_legal_bond_norm": 7.499785134532386,
+      "JRM": 0.02200814865467613,
+      "vacancy_candidates": [
+        3
+      ],
+      "excluded_v_above": 8,
+      "full_minimizer_V": 3,
+      "pin_minimizer_V": 3,
+      "tilted_pin_cost": 0.00046164948307758635,
+      "canonical_pin_cost": 0.00046164948307758635,
+      "theorem_cost": 3.9428710937500003e-07,
+      "conditioned_head_contact": 0.27768619605970574,
+      "charged_occupation": 5.414927886371767e-19,
+      "occupation_bound": 0.0,
+      "max_residual": 7.511960524385615e-11
+    }
+  ],
+  "balanced_pair": [
+    {
+      "n": 1,
+      "N": 4,
+      "V": 4,
+      "J": 0.04,
+      "selected_clock_dimension": 4,
+      "wrong_clock_dimension": 3,
+      "alpha": 0.28661165235168157,
+      "exact_cost": 0.0006390355992502705,
+      "first_order_cost": 0.0006391308489597135,
+      "relative_remainder": -9.524970944298824e-08,
+      "remainder_over_J_squared": -5.953106840186765e-05,
+      "status": "finite canonical zero-bit vacuum block; no uniform remainder theorem"
+    },
+    {
+      "n": 1,
+      "N": 4,
+      "V": 4,
+      "J": 0.02,
+      "selected_clock_dimension": 4,
+      "wrong_clock_dimension": 3,
+      "alpha": 0.28661165235168157,
+      "exact_cost": 0.0003195416188024325,
+      "first_order_cost": 0.00031956542447985676,
+      "relative_remainder": -2.3805677424281173e-08,
+      "remainder_over_J_squared": -5.9514193560702934e-05,
+      "status": "finite canonical zero-bit vacuum block; no uniform remainder theorem"
+    },
+    {
+      "n": 1,
+      "N": 4,
+      "V": 4,
+      "J": 0.01,
+      "selected_clock_dimension": 4,
+      "wrong_clock_dimension": 3,
+      "alpha": 0.28661165235168157,
+      "exact_cost": 0.00015977676165146448,
+      "first_order_cost": 0.00015978271223992838,
+      "relative_remainder": -5.950588463898279e-09,
+      "remainder_over_J_squared": -5.950588463898279e-05,
+      "status": "finite canonical zero-bit vacuum block; no uniform remainder theorem"
+    },
+    {
+      "n": 1,
+      "N": 4,
+      "V": 4,
+      "J": 0.005,
+      "selected_clock_dimension": 4,
+      "wrong_clock_dimension": 3,
+      "alpha": 0.28661165235168157,
+      "exact_cost": 7.988986857476732e-05,
+      "first_order_cost": 7.989135611996419e-05,
+      "relative_remainder": -1.4875451968707166e-09,
+      "remainder_over_J_squared": -5.9501807874828665e-05,
+      "status": "finite canonical zero-bit vacuum block; no uniform remainder theorem"
+    },
+    {
+      "n": 2,
+      "N": 6,
+      "V": 6,
+      "J": 0.04,
+      "selected_clock_dimension": 9,
+      "wrong_clock_dimension": 8,
+      "alpha": 0.29266384402395124,
+      "exact_cost": 3.588723666503313e-05,
+      "first_order_cost": 3.590033909415065e-05,
+      "relative_remainder": -1.310242911752344e-08,
+      "remainder_over_J_squared": -8.18901819845215e-06,
+      "status": "finite canonical zero-bit vacuum block; no uniform remainder theorem"
+    },
+    {
+      "n": 2,
+      "N": 6,
+      "V": 6,
+      "J": 0.02,
+      "selected_clock_dimension": 9,
+      "wrong_clock_dimension": 8,
+      "alpha": 0.29266384402395124,
+      "exact_cost": 1.7946889147246736e-05,
+      "first_order_cost": 1.7950169547075326e-05,
+      "relative_remainder": -3.280399828589842e-09,
+      "remainder_over_J_squared": -8.200999571474605e-06,
+      "status": "finite canonical zero-bit vacuum block; no uniform remainder theorem"
+    },
+    {
+      "n": 2,
+      "N": 6,
+      "V": 6,
+      "J": 0.01,
+      "selected_clock_dimension": 9,
+      "wrong_clock_dimension": 8,
+      "alpha": 0.29266384402395124,
+      "exact_cost": 8.974264077643568e-06,
+      "first_order_cost": 8.975084773537663e-06,
+      "relative_remainder": -8.206958940952194e-10,
+      "remainder_over_J_squared": -8.206958940952194e-06,
+      "status": "finite canonical zero-bit vacuum block; no uniform remainder theorem"
+    },
+    {
+      "n": 2,
+      "N": 6,
+      "V": 6,
+      "J": 0.005,
+      "selected_clock_dimension": 9,
+      "wrong_clock_dimension": 8,
+      "alpha": 0.29266384402395124,
+      "exact_cost": 4.487337093017629e-06,
+      "first_order_cost": 4.4875423867688315e-06,
+      "relative_remainder": -2.0529375120223193e-10,
+      "remainder_over_J_squared": -8.211750048089277e-06,
+      "status": "finite canonical zero-bit vacuum block; no uniform remainder theorem"
+    }
+  ],
+  "runtime_seconds": 2.603558301925659
+}

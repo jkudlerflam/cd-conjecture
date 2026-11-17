@@ -73,6 +73,16 @@ These are spelled out in [CONTRIBUTING.md](CONTRIBUTING.md). In brief, tag every
 
 ## Where things stand
 
+**First d=22 mobile auxiliary estimate (2026-11-16):** The
+[mobile matching contribution](contrib/small_d_mobile_matching_20261116/README.md)
+derives the literal contact-weighted representation and proves a positive
+charged-rail pin cost with vacancy dynamics retained, in a positive
+length-tilt ensemble and its canonical minimizing blocks. It also bounds
+charged admixture at nonzero port and handles physical cyclic gluing with
+one vanishing global energy allowance. Vacuum-clock matching, arbitrary
+prescribed densities, wrong-length selection, and the interacting CFT
+remain open; a separate canonical scalar-impurity lemma is not full matching.
+
 **Exact qubit resonance hierarchy (2026-11-16):** The
 [all-period parent analysis](contrib/qubit_resonance_hierarchy_20261116/README.md)
 constructs exact nearest-neighbour qubit parents for every resonance
