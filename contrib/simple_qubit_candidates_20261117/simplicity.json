@@ -1,0 +1,86 @@
+{
+  "independent_couplings": 4,
+  "after_overall_scale": 3,
+  "rotation": "common onsite U=exp(-i pi Z/8); all candidates",
+  "rows": [
+    {
+      "V": 40,
+      "a": 0.9581099754474565,
+      "D": 0.00625,
+      "hz": -19.976047250613814,
+      "t2": 0.0125,
+      "original_pauli_monomials": 6,
+      "rotated_pauli_monomials": 4,
+      "original_spread": 3196.16756009821,
+      "rotated_spread": 40.457817216433035,
+      "small_exchange_difference": 0.0125,
+      "rotation_matrix_error": 2.220446049250313e-16
+    },
+    {
+      "V": 16,
+      "a": 0.96,
+      "D": 0.015625,
+      "hz": -7.94,
+      "t2": 0.03125,
+      "original_pauli_monomials": 6,
+      "rotated_pauli_monomials": 4,
+      "original_spread": 508.16,
+      "rotated_spread": 16.39225806451613,
+      "small_exchange_difference": 0.03125,
+      "rotation_matrix_error": 2.220446049250313e-16
+    },
+    {
+      "V": 12,
+      "a": 0.96,
+      "D": 0.020833333333333332,
+      "hz": -5.92,
+      "t2": 0.041666666666666664,
+      "original_pauli_monomials": 6,
+      "rotated_pauli_monomials": 4,
+      "original_spread": 284.16,
+      "rotated_spread": 12.354782608695652,
+      "small_exchange_difference": 0.041666666666666664,
+      "rotation_matrix_error": 2.220446049250313e-16
+    },
+    {
+      "V": 8,
+      "a": 0.96,
+      "D": 0.03125,
+      "hz": -3.88,
+      "t2": 0.0625,
+      "original_pauli_monomials": 6,
+      "rotated_pauli_monomials": 4,
+      "original_spread": 124.16,
+      "rotated_spread": 8.277333333333333,
+      "small_exchange_difference": 0.0625,
+      "rotation_matrix_error": 2.220446049250313e-16
+    },
+    {
+      "V": 6,
+      "a": 0.96,
+      "D": 0.041666666666666664,
+      "hz": -2.84,
+      "t2": 0.08333333333333333,
+      "original_pauli_monomials": 6,
+      "rotated_pauli_monomials": 4,
+      "original_spread": 68.16,
+      "rotated_spread": 6.196363636363636,
+      "small_exchange_difference": 0.08333333333333333,
+      "rotation_matrix_error": 2.220446049250313e-16
+    },
+    {
+      "V": 4,
+      "a": 0.96,
+      "D": 0.0625,
+      "hz": -1.76,
+      "t2": 0.125,
+      "original_pauli_monomials": 6,
+      "rotated_pauli_monomials": 4,
+      "original_spread": 28.16,
+      "rotated_spread": 4.022857142857143,
+      "small_exchange_difference": 0.125,
+      "rotation_matrix_error": 2.220446049250313e-16
+    }
+  ],
+  "caution": "Smaller rotated spread encodes the hopping scale in the difference of two exchanges; no dynamical hierarchy is removed."
+}
