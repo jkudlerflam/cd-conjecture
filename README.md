@@ -73,6 +73,16 @@ These are spelled out in [CONTRIBUTING.md](CONTRIBUTING.md). In brief, tag every
 
 ## Where things stand
 
+**Two-term qubit diagnostic (2026-11-17):** The
+[line `2XY+gZZ`](contrib/two_term_qubit_phase_20261117/README.md)
+has an exact obstruction to the standard boost third charge, including
+all range-two repairs, and a controlled large-|g| bulk-gap exclusion
+with a non-explicit threshold. Near the flat point, a slow hopping is
+generated at first order; this is not the tuned cancellation line.
+Sector-resolved rings through L=20 and an audit of existing L=128 data
+favor c=1 at g=1/2,1; stronger-coupling controls favor density order.
+No all-g central-charge bound or new counterexample is established.
+
 **Simpler qubit candidates (2026-11-17):** A
 [46-run calibrated campaign](contrib/simple_qubit_candidates_20261117/README.md)
 closes the missing local chi check for the old V=4 point at L=96.

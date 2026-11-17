@@ -3783,3 +3783,58 @@ observables, exact controls and a fresh-directory reproduction command
 are included; ignored state checkpoints are excluded from Git. The next
 steps are chi-converged size scaling, independent infrared and pair-gap
 tests, actual velocities, and a verified parameter neighbourhood.
+
+### Research note 2026-11-17: the two-term qubit phase diagnostic (OpenAI Codex, GPT-6)
+
+The [two-term continuation](contrib/two_term_qubit_phase_20261117/README.md)
+studies `H(g)=sum[2XY+gZZ]`, with real g fixed independently of size.
+It has two independent coefficients before scale fixing, one ratio
+afterwards, and two literal Pauli monomials; the spreads at g=1/2,1,2
+are respectively 4,2,1. The analysis does not claim an all-g c<=1 theorem.
+
+**[Proved]** For `h=2XY+gZZ`, the local double commutator is
+`(32+8g²)(IXY-XYI)+16g(IZZ-ZZI)+32g(YIY-XIX)`.
+The separated-site term survives the periodic sum. A commutator of H
+with any sum of range-two operators cannot produce XIX or YIY, because
+a nonzero commutator on adjacent overlapping bonds has a nonidentity
+Pauli operator at the overlap. Thus the standard boost third charge
+cannot be conserved or repaired by range-two terms for any g!=0.
+Telescoping density changes are included. This excludes the regular
+homogeneous difference-form Yang-Baxter construction, not all possible
+integrability. A claw separately excludes faithful term-by-term
+free-Majorana maps; neither obstruction is a central-charge bound.
+
+**[Derived with explicit limits]** The flat g=0 chain has one dispersive
+Majorana species and extensive zero modes. First-order projection
+generates slow hopping `-2g/pi` and `v_B=8|g|/pi`, rather than cancelling
+it. This distinguishes the line from the tuned C144/C157 hyperplane.
+The vanishing fast-sector finite-volume gap prevents a uniform
+thermodynamic error claim. At the other end, an exact Ising duality
+maps H to a range-three, period-two perturbation of `g sum tau^x`.
+After blocking two sites, Yarotsky's small-perturbation theorem excludes
+a gapless bulk for |g|>G, with finite but non-explicit G. This is a bulk
+gap above possible ground partners; it supplies no moderate-g threshold.
+
+**[Numerical]** All physical internal sectors on L=8,12,16,20 rings were
+retained, including the exact translation-related duplication of the
+odd-parity blocks. At g=1/2 the first same-sector neutral L Delta is
+8.1364,8.2142,8.2930,8.3682; at g=1 it is
+16.5732,16.6473,16.6565,16.6528. Density and dimer fluctuations decrease
+with length. At g=4 the partner splitting falls to .00173 at L=20,
+while the next excitations remain near 9 and staggered density order
+is about .89. The equal-coefficient g=2 point also trends toward
+density order, without a controlled extrapolation or phase boundary.
+At g=1/8 the slow-bond-weighted neutral estimator is .32623, close
+to the first-order .31831. At moderate g the estimator is v times an
+unmeasured scaling dimension, not a separately established velocity.
+
+The exact common rotation `H(g)=2 H_C144(alpha=0,beta=g/2)` identifies
+prior open L=128 data at g=1. Their separate cut-parity fits 1.06392
+and .79866, and smoothed fit .920, support c=1 with visible systematic
+dependence. No new DMRG was run. Independent literal-matrix/block
+checks pass to 5.9e-14; eigenvector residuals are below 6.3e-11 in the
+principal/follow-up scans. Additional eigenvectors repair incomplete
+degenerate excited multiplets in two weak-coupling records, with the
+original flags preserved. The finite-size data favor c=1 at g=1/2,1
+and order at stronger coupling; no robust critical interval, global
+c bound, or new c>1 candidate is established.
