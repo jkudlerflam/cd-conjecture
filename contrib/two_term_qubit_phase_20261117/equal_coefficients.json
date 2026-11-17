@@ -1,0 +1,1707 @@
+{
+  "method": "scipy eigsh, 16 levels in each of three symmetry blocks; fourth exactly paired",
+  "blas_threads": 1,
+  "records": [
+    {
+      "L": 8,
+      "g": 2.0,
+      "seconds": 0.007906832994194701,
+      "ground_energy": -20.162654903263526,
+      "ground_sector": [
+        1,
+        1
+      ],
+      "observables": {
+        "density_0": 6.715143138633257e-05,
+        "density_pi": 0.657232910873153,
+        "XY_mean": -0.4868564214905402,
+        "XY_pi_connected": 0.22118201159966472,
+        "XY_pi_mean_excitation": 10.974038266086625,
+        "XY_2pi_over_L_connected": 0.052183501791697,
+        "XY_2pi_over_L_mean_excitation": 12.766609126059311,
+        "YX_mean": 0.48550231635949403,
+        "YX_pi_connected": 0.22533941484372208,
+        "YX_pi_mean_excitation": 5.359204041404318,
+        "YX_2pi_over_L_connected": 0.05334584118830469,
+        "YX_2pi_over_L_mean_excitation": 11.566375756990599,
+        "ZZ_mean": -0.7733095099634308,
+        "ZZ_pi_connected": 0.1100376947568809,
+        "ZZ_pi_mean_excitation": 6.79120483824159,
+        "ZZ_2pi_over_L_connected": 0.04072969281778634,
+        "ZZ_2pi_over_L_mean_excitation": 11.953353629957485,
+        "energy_mean": -2.5203318629079416,
+        "energy_pi_connected": 2.4711248952315206,
+        "energy_pi_mean_excitation": 9.048232568591763,
+        "energy_2pi_over_L_connected": 0.008786397609465115,
+        "energy_2pi_over_L_mean_excitation": 18.4960432357124
+      },
+      "retained_neutral_poles": {
+        "XY_pi": [
+          {
+            "gap": 4.557425905759414,
+            "weight_over_L2": 0.10710204045700898,
+            "fraction_of_total": 0.4842258178339641,
+            "translation_leakage": 8.815570459225148e-16
+          },
+          {
+            "gap": 10.434992194011636,
+            "weight_over_L2": 0.008408525885131307,
+            "fraction_of_total": 0.03801631888740835,
+            "translation_leakage": 2.030214908769777e-15
+          },
+          {
+            "gap": 14.193267033873253,
+            "weight_over_L2": 0.0573507745256209,
+            "fraction_of_total": 0.25929221870639607,
+            "translation_leakage": 4.293283949398088e-15
+          }
+        ],
+        "XY_2pi_over_L": [
+          {
+            "gap": 11.518759512182621,
+            "weight_over_L2": 0.043753889239886795,
+            "fraction_of_total": 0.8384621142241655,
+            "translation_leakage": 2.4343058976112987e-15
+          }
+        ],
+        "YX_pi": [
+          {
+            "gap": 4.557425905759414,
+            "weight_over_L2": 0.19950466386882637,
+            "fraction_of_total": 0.8853518325109139,
+            "translation_leakage": 8.815570459225148e-16
+          },
+          {
+            "gap": 10.434992194011636,
+            "weight_over_L2": 0.02015070380522895,
+            "fraction_of_total": 0.08942378686482305,
+            "translation_leakage": 2.030214908769777e-15
+          },
+          {
+            "gap": 14.193267033873253,
+            "weight_over_L2": 0.0032829599477799867,
+            "fraction_of_total": 0.014568955679843195,
+            "translation_leakage": 4.293283949398088e-15
+          }
+        ],
+        "YX_2pi_over_L": [
+          {
+            "gap": 11.518759512182621,
+            "weight_over_L2": 0.053104807761535144,
+            "fraction_of_total": 0.9954816828941037,
+            "translation_leakage": 2.4343058976112987e-15
+          }
+        ],
+        "ZZ_pi": [
+          {
+            "gap": 4.557425905759414,
+            "weight_over_L2": 0.08801037627790931,
+            "fraction_of_total": 0.7998202477102132,
+            "translation_leakage": 8.815570459225148e-16
+          },
+          {
+            "gap": 10.434992194011636,
+            "weight_over_L2": 0.006188415614794645,
+            "fraction_of_total": 0.056239051794636674,
+            "translation_leakage": 2.030214908769777e-15
+          },
+          {
+            "gap": 14.193267033873253,
+            "weight_over_L2": 0.004934076708752086,
+            "fraction_of_total": 0.04483987709533098,
+            "translation_leakage": 4.293283949398088e-15
+          }
+        ],
+        "ZZ_2pi_over_L": [
+          {
+            "gap": 11.518759512182621,
+            "weight_over_L2": 0.038501258650261,
+            "fraction_of_total": 0.9452872336284305,
+            "translation_leakage": 2.4343058976112987e-15
+          }
+        ],
+        "energy_pi": [
+          {
+            "gap": 4.557425905759414,
+            "weight_over_L2": 1.5571541257708343,
+            "fraction_of_total": 0.6301397913054265,
+            "translation_leakage": 8.815570459225148e-16
+          },
+          {
+            "gap": 10.434992194011636,
+            "weight_over_L2": 0.11609624877855443,
+            "fraction_of_total": 0.046981133573047236,
+            "translation_leakage": 2.030214908769777e-15
+          },
+          {
+            "gap": 14.193267033873253,
+            "weight_over_L2": 0.3837138443091964,
+            "fraction_of_total": 0.1552790168759342,
+            "translation_leakage": 4.293283949398088e-15
+          }
+        ],
+        "energy_2pi_over_L": [
+          {
+            "gap": 11.518759512182621,
+            "weight_over_L2": 0.000671527878198138,
+            "fraction_of_total": 0.07642812311097065,
+            "translation_leakage": 2.4343058976112987e-15
+          }
+        ]
+      },
+      "sectors": [
+        {
+          "parity": 1,
+          "flip": 1,
+          "physical_multiplicity": 1,
+          "translation_steps": 1,
+          "dimension": 64,
+          "max_residual": 3.591472210182299e-14,
+          "levels": [
+            {
+              "energy": -20.162654903263526,
+              "multiplicity": 1,
+              "translation_angle_over_pi": [
+                0.0
+              ],
+              "translation_leakage": 7.803383422400687e-16
+            },
+            {
+              "energy": -15.605228997504112,
+              "multiplicity": 1,
+              "translation_angle_over_pi": [
+                1.0
+              ],
+              "translation_leakage": 8.815570459225148e-16
+            },
+            {
+              "energy": -12.429567452774922,
+              "multiplicity": 1,
+              "translation_angle_over_pi": [
+                0.0
+              ],
+              "translation_leakage": 3.22978175015903e-15
+            },
+            {
+              "energy": -12.244893051614032,
+              "multiplicity": 2,
+              "translation_angle_over_pi": [
+                -0.75,
+                0.75
+              ],
+              "translation_leakage": 5.820545793716201e-14
+            },
+            {
+              "energy": -11.97489948730028,
+              "multiplicity": 2,
+              "translation_angle_over_pi": [
+                -0.5,
+                0.5
+              ],
+              "translation_leakage": 5.824996438314907e-14
+            },
+            {
+              "energy": -9.72766270925189,
+              "multiplicity": 1,
+              "translation_angle_over_pi": [
+                1.0
+              ],
+              "translation_leakage": 2.030214908769777e-15
+            },
+            {
+              "energy": -9.27602015096392,
+              "multiplicity": 2,
+              "translation_angle_over_pi": [
+                -0.5,
+                0.5
+              ],
+              "translation_leakage": 2.71796710044448e-15
+            },
+            {
+              "energy": -8.643895391080905,
+              "multiplicity": 2,
+              "translation_angle_over_pi": [
+                -0.25,
+                0.24999999999999997
+              ],
+              "translation_leakage": 2.4343058976112987e-15
+            },
+            {
+              "energy": -7.3410712658338895,
+              "multiplicity": 1,
+              "translation_angle_over_pi": [
+                0.0
+              ],
+              "translation_leakage": 2.6611624273677782e-15
+            },
+            {
+              "energy": -5.969387869390273,
+              "multiplicity": 1,
+              "translation_angle_over_pi": [
+                1.0
+              ],
+              "translation_leakage": 4.293283949398088e-15
+            },
+            {
+              "energy": -5.153370977133989,
+              "multiplicity": 2,
+              "translation_angle_over_pi": [
+                -0.5,
+                0.5
+              ],
+              "translation_leakage": 3.341231653847813e-15
+            }
+          ]
+        },
+        {
+          "parity": 1,
+          "flip": -1,
+          "physical_multiplicity": 1,
+          "translation_steps": 1,
+          "dimension": 64,
+          "max_residual": 2.5575058166721906e-14,
+          "levels": [
+            {
+              "energy": -19.12266043316832,
+              "multiplicity": 1,
+              "translation_angle_over_pi": [
+                1.0
+              ],
+              "translation_leakage": 2.8310535658115133e-15
+            },
+            {
+              "energy": -13.642822800315278,
+              "multiplicity": 2,
+              "translation_angle_over_pi": [
+                -0.25000000000000006,
+                0.25000000000000006
+              ],
+              "translation_leakage": 1.1788419112275184e-14
+            },
+            {
+              "energy": -12.976915533425249,
+              "multiplicity": 2,
+              "translation_angle_over_pi": [
+                -0.75,
+                0.75
+              ],
+              "translation_leakage": 1.1071621469182922e-14
+            },
+            {
+              "energy": -11.22078182799287,
+              "multiplicity": 2,
+              "translation_angle_over_pi": [
+                -0.5,
+                0.5
+              ],
+              "translation_leakage": 1.2392781345415245e-14
+            },
+            {
+              "energy": -10.066319269806097,
+              "multiplicity": 1,
+              "translation_angle_over_pi": [
+                0.0
+              ],
+              "translation_leakage": 1.0071173157120353e-14
+            },
+            {
+              "energy": -7.369771337116015,
+              "multiplicity": 1,
+              "translation_angle_over_pi": [
+                1.0
+              ],
+              "translation_leakage": 7.16879473755902e-14
+            },
+            {
+              "energy": -7.34718663529545,
+              "multiplicity": 2,
+              "translation_angle_over_pi": [
+                -0.24999999999999997,
+                0.25
+              ],
+              "translation_leakage": 7.365851389063591e-14
+            },
+            {
+              "energy": -7.126613810124806,
+              "multiplicity": 1,
+              "translation_angle_over_pi": [
+                1.0
+              ],
+              "translation_leakage": 1.6380991559099746e-14
+            },
+            {
+              "energy": -6.968420178311631,
+              "multiplicity": 2,
+              "translation_angle_over_pi": [
+                -0.5,
+                0.5
+              ],
+              "translation_leakage": 4.1635840989140166e-14
+            },
+            {
+              "energy": -6.931564803883553,
+              "multiplicity": 2,
+              "translation_angle_over_pi": [
+                -0.75,
+                0.75
+              ],
+              "translation_leakage": 3.977121018235814e-14
+            }
+          ]
+        },
+        {
+          "parity": -1,
+          "flip": 1,
+          "physical_multiplicity": 2,
+          "translation_steps": 2,
+          "dimension": 64,
+          "max_residual": 3.989256674631807e-14,
+          "levels": [
+            {
+              "energy": -16.07040593594171,
+              "multiplicity": 1,
+              "translation_angle_over_pi": [
+                1.0
+              ],
+              "translation_leakage": 7.666335292648342e-15
+            },
+            {
+              "energy": -15.103124333518718,
+              "multiplicity": 2,
+              "translation_angle_over_pi": [
+                -0.5,
+                0.5
+              ],
+              "translation_leakage": 6.3858540398266726e-15
+            },
+            {
+              "energy": -14.056327349771495,
+              "multiplicity": 1,
+              "translation_angle_over_pi": [
+                0.0
+              ],
+              "translation_leakage": 5.1071791134587706e-15
+            },
+            {
+              "energy": -11.133617188399768,
+              "multiplicity": 2,
+              "translation_angle_over_pi": [
+                -0.5,
+                0.5
+              ],
+              "translation_leakage": 1.3439229740815992e-13
+            },
+            {
+              "energy": -11.054607632030105,
+              "multiplicity": 1,
+              "translation_angle_over_pi": [
+                1.0
+              ],
+              "translation_leakage": 1.344510389223918e-13
+            },
+            {
+              "energy": -10.163622312718239,
+              "multiplicity": 1,
+              "translation_angle_over_pi": [
+                0.0
+              ],
+              "translation_leakage": 5.659253989148245e-15
+            },
+            {
+              "energy": -9.337656873355906,
+              "multiplicity": 2,
+              "translation_angle_over_pi": [
+                -1.0,
+                0.0
+              ],
+              "translation_leakage": 5.552545242976588e-15
+            },
+            {
+              "energy": -8.370059610648525,
+              "multiplicity": 2,
+              "translation_angle_over_pi": [
+                -0.5,
+                0.5
+              ],
+              "translation_leakage": 5.8443521303171576e-15
+            },
+            {
+              "energy": -7.373844613663185,
+              "multiplicity": 2,
+              "translation_angle_over_pi": [
+                -0.5000000000000001,
+                0.5
+              ],
+              "translation_leakage": 2.948356159987924e-15
+            },
+            {
+              "energy": -6.331708802227769,
+              "multiplicity": 1,
+              "translation_angle_over_pi": [
+                0.0
+              ],
+              "translation_leakage": 2.2304244616739747e-15
+            },
+            {
+              "energy": -5.886948971986696,
+              "multiplicity": 1,
+              "translation_angle_over_pi": [
+                1.0
+              ],
+              "translation_leakage": 1.9040038811489738e-13
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "L": 12,
+      "g": 2.0,
+      "seconds": 0.029727499990258366,
+      "ground_energy": -29.85542569343355,
+      "ground_sector": [
+        1,
+        1
+      ],
+      "observables": {
+        "density_0": 0.00010644841048019035,
+        "density_pi": 0.6081291371618588,
+        "XY_mean": -0.46590885967271345,
+        "XY_pi_connected": 0.14103839152280548,
+        "XY_pi_mean_excitation": 10.632252833435743,
+        "XY_2pi_over_L_connected": 0.04192979815674133,
+        "XY_2pi_over_L_mean_excitation": 11.128412185620878,
+        "YX_mean": 0.4631590514791122,
+        "YX_pi_connected": 0.14664512085933717,
+        "YX_pi_mean_excitation": 5.1508302911550885,
+        "YX_2pi_over_L_connected": 0.04344276402219703,
+        "YX_2pi_over_L_mean_excitation": 10.566779735579303,
+        "ZZ_mean": -0.7780672108870169,
+        "ZZ_pi_connected": 0.07359246333657841,
+        "ZZ_pi_mean_excitation": 6.493461304039627,
+        "ZZ_2pi_over_L_connected": 0.03614775051537383,
+        "ZZ_2pi_over_L_mean_excitation": 10.906290269129752,
+        "energy_mean": -2.4879521411194596,
+        "energy_pi_connected": 1.6111983682976336,
+        "energy_pi_mean_excitation": 8.669962198065154,
+        "energy_2pi_over_L_connected": 0.003012890034303981,
+        "energy_2pi_over_L_mean_excitation": 15.642433299275881
+      },
+      "retained_neutral_poles": {
+        "XY_pi": [
+          {
+            "gap": 3.312975707362014,
+            "weight_over_L2": 0.061422984002743514,
+            "fraction_of_total": 0.43550542047135865,
+            "translation_leakage": 1.0585007380270848e-14
+          },
+          {
+            "gap": 8.487725928059533,
+            "weight_over_L2": 0.014810793589695769,
+            "fraction_of_total": 0.10501249645420771,
+            "translation_leakage": 1.0438456107785937e-13
+          }
+        ],
+        "XY_2pi_over_L": [
+          {
+            "gap": 8.44264278553883,
+            "weight_over_L2": 0.021582410288158257,
+            "fraction_of_total": 0.5147272640683654,
+            "translation_leakage": 6.721888784361432e-12
+          }
+        ],
+        "YX_pi": [
+          {
+            "gap": 3.312975707362014,
+            "weight_over_L2": 0.10254323306271299,
+            "fraction_of_total": 0.6992611309657758,
+            "translation_leakage": 1.0585007380270848e-14
+          },
+          {
+            "gap": 8.487725928059533,
+            "weight_over_L2": 0.029671575053127137,
+            "fraction_of_total": 0.20233591734421413,
+            "translation_leakage": 1.0438456107785937e-13
+          }
+        ],
+        "YX_2pi_over_L": [
+          {
+            "gap": 8.44264278553883,
+            "weight_over_L2": 0.0218962612134384,
+            "fraction_of_total": 0.5040255081893622,
+            "translation_leakage": 6.721888784361432e-12
+          }
+        ],
+        "ZZ_pi": [
+          {
+            "gap": 3.312975707362014,
+            "weight_over_L2": 0.04890826767314123,
+            "fraction_of_total": 0.6645825598941713,
+            "translation_leakage": 1.0585007380270848e-14
+          },
+          {
+            "gap": 8.487725928059533,
+            "weight_over_L2": 0.011134117801216583,
+            "fraction_of_total": 0.1512942670541438,
+            "translation_leakage": 1.0438456107785937e-13
+          }
+        ],
+        "ZZ_2pi_over_L": [
+          {
+            "gap": 8.44264278553883,
+            "weight_over_L2": 0.019007327641550262,
+            "fraction_of_total": 0.5258232495951952,
+            "translation_leakage": 6.721888784361432e-12
+          }
+        ],
+        "energy_pi": [
+          {
+            "gap": 3.312975707362014,
+            "weight_over_L2": 0.8798017695370008,
+            "fraction_of_total": 0.5460542828544354,
+            "translation_leakage": 1.0585007380270848e-14
+          },
+          {
+            "gap": 8.487725928059533,
+            "weight_over_L2": 0.20651195652597176,
+            "fraction_of_total": 0.12817289328822307,
+            "translation_leakage": 1.0438456107785937e-13
+          }
+        ],
+        "energy_2pi_over_L": [
+          {
+            "gap": 8.44264278553883,
+            "weight_over_L2": 0.0003270647550363968,
+            "fraction_of_total": 0.10855515844007671,
+            "translation_leakage": 6.721888784361432e-12
+          }
+        ]
+      },
+      "sectors": [
+        {
+          "parity": 1,
+          "flip": 1,
+          "physical_multiplicity": 1,
+          "translation_steps": 1,
+          "dimension": 1024,
+          "max_residual": 1.862623319381233e-11,
+          "levels": [
+            {
+              "energy": -29.85542569343355,
+              "multiplicity": 1,
+              "translation_angle_over_pi": [
+                1.0
+              ],
+              "translation_leakage": 1.7300654955733867e-15
+            },
+            {
+              "energy": -26.542449986071535,
+              "multiplicity": 1,
+              "translation_angle_over_pi": [
+                0.0
+              ],
+              "translation_leakage": 1.0585007380270848e-14
+            },
+            {
+              "energy": -24.686148573899484,
+              "multiplicity": 1,
+              "translation_angle_over_pi": [
+                1.0
+              ],
+              "translation_leakage": 1.5814779620594197e-14
+            },
+            {
+              "energy": -23.659260430858367,
+              "multiplicity": 2,
+              "translation_angle_over_pi": [
+                -0.16666666666666669,
+                0.1666666666666667
+              ],
+              "translation_leakage": 4.4179055265244275e-14
+            },
+            {
+              "energy": -23.218364252346127,
+              "multiplicity": 2,
+              "translation_angle_over_pi": [
+                -0.6666666666666667,
+                0.6666666666666667
+              ],
+              "translation_leakage": 4.180898255461057e-14
+            },
+            {
+              "energy": -22.33677780617222,
+              "multiplicity": 2,
+              "translation_angle_over_pi": [
+                -0.3333333333333333,
+                0.33333333333333337
+              ],
+              "translation_leakage": 1.4684283386021495e-13
+            },
+            {
+              "energy": -22.15435516898132,
+              "multiplicity": 2,
+              "translation_angle_over_pi": [
+                -0.5,
+                0.5
+              ],
+              "translation_leakage": 1.3745179792998174e-13
+            },
+            {
+              "energy": -21.896251685002593,
+              "multiplicity": 2,
+              "translation_angle_over_pi": [
+                -0.3333333333333333,
+                0.33333333333333337
+              ],
+              "translation_leakage": 6.983430199022976e-14
+            },
+            {
+              "energy": -21.41278290789472,
+              "multiplicity": 2,
+              "translation_angle_over_pi": [
+                -0.8333333333333334,
+                0.8333333333333334
+              ],
+              "translation_leakage": 6.721888784361432e-12
+            },
+            {
+              "energy": -21.367699765374017,
+              "multiplicity": 1,
+              "translation_angle_over_pi": [
+                0.0
+              ],
+              "translation_leakage": 1.0438456107785937e-13
+            }
+          ]
+        },
+        {
+          "parity": 1,
+          "flip": -1,
+          "physical_multiplicity": 1,
+          "translation_steps": 1,
+          "dimension": 1024,
+          "max_residual": 8.741145763415785e-14,
+          "levels": [
+            {
+              "energy": -29.338341421877956,
+              "multiplicity": 1,
+              "translation_angle_over_pi": [
+                0.0
+              ],
+              "translation_leakage": 1.7127796121852986e-15
+            },
+            {
+              "energy": -25.23644216194283,
+              "multiplicity": 2,
+              "translation_angle_over_pi": [
+                -0.8333333333333334,
+                0.8333333333333334
+              ],
+              "translation_leakage": 3.49131354057152e-14
+            },
+            {
+              "energy": -24.71407727680965,
+              "multiplicity": 2,
+              "translation_angle_over_pi": [
+                -0.1666666666666667,
+                0.1666666666666667
+              ],
+              "translation_leakage": 3.6633356245496776e-14
+            },
+            {
+              "energy": -22.867381931886598,
+              "multiplicity": 1,
+              "translation_angle_over_pi": [
+                1.0
+              ],
+              "translation_leakage": 4.974456459281526e-14
+            },
+            {
+              "energy": -22.533779847663606,
+              "multiplicity": 2,
+              "translation_angle_over_pi": [
+                -0.6666666666666666,
+                0.6666666666666666
+              ],
+              "translation_leakage": 2.7693374567181824e-13
+            },
+            {
+              "energy": -22.42196964294582,
+              "multiplicity": 2,
+              "translation_angle_over_pi": [
+                -0.33333333333333337,
+                0.33333333333333337
+              ],
+              "translation_leakage": 2.7416620448092195e-13
+            },
+            {
+              "energy": -21.741368888890847,
+              "multiplicity": 2,
+              "translation_angle_over_pi": [
+                -0.5,
+                0.5
+              ],
+              "translation_leakage": 5.2690096009097885e-14
+            },
+            {
+              "energy": -20.94454795333927,
+              "multiplicity": 1,
+              "translation_angle_over_pi": [
+                0.0
+              ],
+              "translation_leakage": 9.144435638294995e-14
+            },
+            {
+              "energy": -20.5033380898276,
+              "multiplicity": 2,
+              "translation_angle_over_pi": [
+                -0.8333333333333334,
+                0.8333333333333334
+              ],
+              "translation_leakage": 8.952472414221946e-14
+            },
+            {
+              "energy": -19.986934554876793,
+              "multiplicity": 1,
+              "translation_angle_over_pi": [
+                0.0
+              ],
+              "translation_leakage": 5.130776762792951e-13
+            }
+          ]
+        },
+        {
+          "parity": -1,
+          "flip": 1,
+          "physical_multiplicity": 2,
+          "translation_steps": 2,
+          "dimension": 1024,
+          "max_residual": 1.1970433652269465e-13,
+          "levels": [
+            {
+              "energy": -26.792557357625505,
+              "multiplicity": 1,
+              "translation_angle_over_pi": [
+                1.0
+              ],
+              "translation_leakage": 2.1335977447480767e-14
+            },
+            {
+              "energy": -25.895874139444842,
+              "multiplicity": 2,
+              "translation_angle_over_pi": [
+                -0.6666666666666666,
+                0.6666666666666666
+              ],
+              "translation_leakage": 2.5345371789408372e-14
+            },
+            {
+              "energy": -24.43227207889767,
+              "multiplicity": 2,
+              "translation_angle_over_pi": [
+                -0.3333333333333333,
+                0.33333333333333337
+              ],
+              "translation_leakage": 1.6545934203685166e-14
+            },
+            {
+              "energy": -23.981636921824627,
+              "multiplicity": 1,
+              "translation_angle_over_pi": [
+                0.0
+              ],
+              "translation_leakage": 1.0425316344267133e-14
+            },
+            {
+              "energy": -23.48066708253936,
+              "multiplicity": 2,
+              "translation_angle_over_pi": [
+                -0.6666666666666666,
+                0.6666666666666667
+              ],
+              "translation_leakage": 3.4024732090449253e-13
+            },
+            {
+              "energy": -23.417419136891898,
+              "multiplicity": 1,
+              "translation_angle_over_pi": [
+                1.0
+              ],
+              "translation_leakage": 3.426243808858034e-13
+            },
+            {
+              "energy": -22.264242080551597,
+              "multiplicity": 2,
+              "translation_angle_over_pi": [
+                -0.3333333333333333,
+                0.3333333333333333
+              ],
+              "translation_leakage": 4.541620996570915e-14
+            },
+            {
+              "energy": -21.254694210289813,
+              "multiplicity": 1,
+              "translation_angle_over_pi": [
+                1.0
+              ],
+              "translation_leakage": 1.23270300233708e-13
+            },
+            {
+              "energy": -21.1106099512729,
+              "multiplicity": 1,
+              "translation_angle_over_pi": [
+                0.0
+              ],
+              "translation_leakage": 7.7370129755243e-13
+            },
+            {
+              "energy": -21.10199993117061,
+              "multiplicity": 2,
+              "translation_angle_over_pi": [
+                -0.33333333333333337,
+                0.33333333333333337
+              ],
+              "translation_leakage": 7.735082347621989e-13
+            },
+            {
+              "energy": -20.855441870257653,
+              "multiplicity": 1,
+              "translation_angle_over_pi": [
+                0.0
+              ],
+              "translation_leakage": 3.179381687775085e-14
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "L": 16,
+      "g": 2.0,
+      "seconds": 0.37827937499969266,
+      "ground_energy": -39.64869549840538,
+      "ground_sector": [
+        1,
+        1
+      ],
+      "observables": {
+        "density_0": 9.591311598215704e-05,
+        "density_pi": 0.5849443058722203,
+        "XY_mean": -0.45643563017615474,
+        "XY_pi_connected": 0.10269746079265074,
+        "XY_pi_mean_excitation": 10.639555242002007,
+        "XY_2pi_over_L_connected": 0.033567749765899546,
+        "XY_2pi_over_L_mean_excitation": 10.488625553198613,
+        "YX_mean": 0.45333447114852,
+        "YX_pi_connected": 0.10756089661418058,
+        "YX_pi_mean_excitation": 5.15224951653299,
+        "YX_2pi_over_L_connected": 0.03476023266350051,
+        "YX_2pi_over_L_mean_excitation": 10.181713989327317,
+        "ZZ_mean": -0.7825861041490153,
+        "ZZ_pi_connected": 0.05463403474747269,
+        "ZZ_pi_mean_excitation": 6.487858355841681,
+        "ZZ_2pi_over_L_connected": 0.030354261888912257,
+        "ZZ_2pi_over_L_mean_excitation": 10.459256805296775,
+        "energy_mean": -2.4780434686503408,
+        "energy_pi_connected": 1.1833308577265895,
+        "energy_pi_mean_excitation": 8.65259788420995,
+        "energy_2pi_over_L_connected": 0.0013482935431435566,
+        "energy_2pi_over_L_mean_excitation": 14.326155357639738
+      },
+      "retained_neutral_poles": {
+        "XY_pi": [
+          {
+            "gap": 2.692875664073675,
+            "weight_over_L2": 0.038003049451468485,
+            "fraction_of_total": 0.37004857917760775,
+            "translation_leakage": 9.606376590136185e-15
+          },
+          {
+            "gap": 7.092240404250511,
+            "weight_over_L2": 0.013568784164892022,
+            "fraction_of_total": 0.13212385252920522,
+            "translation_leakage": 2.0072799696321287e-13
+          }
+        ],
+        "XY_2pi_over_L": [
+          {
+            "gap": 6.560670625681979,
+            "weight_over_L2": 0.012152559431939741,
+            "fraction_of_total": 0.3620308038725061,
+            "translation_leakage": 2.440494345117733e-13
+          }
+        ],
+        "YX_pi": [
+          {
+            "gap": 2.692875664073675,
+            "weight_over_L2": 0.0610031781681278,
+            "fraction_of_total": 0.5671501455305392,
+            "translation_leakage": 9.606376590136185e-15
+          },
+          {
+            "gap": 7.092240404250511,
+            "weight_over_L2": 0.026453186975830816,
+            "fraction_of_total": 0.24593683958137708,
+            "translation_leakage": 2.0072799696321287e-13
+          }
+        ],
+        "YX_2pi_over_L": [
+          {
+            "gap": 6.560670625681979,
+            "weight_over_L2": 0.011323174316633353,
+            "fraction_of_total": 0.3257508206647619,
+            "translation_leakage": 2.440494345117733e-13
+          }
+        ],
+        "ZZ_pi": [
+          {
+            "gap": 2.692875664073675,
+            "weight_over_L2": 0.03004018795228778,
+            "fraction_of_total": 0.5498438490061802,
+            "translation_leakage": 9.606376590136185e-15
+          },
+          {
+            "gap": 7.092240404250511,
+            "weight_over_L2": 0.010852012614818073,
+            "fraction_of_total": 0.1986309937565077,
+            "translation_leakage": 2.0072799696321287e-13
+          }
+        ],
+        "ZZ_2pi_over_L": [
+          {
+            "gap": 6.560670625681979,
+            "weight_over_L2": 0.010700478376099543,
+            "fraction_of_total": 0.3525198015112399,
+            "translation_leakage": 2.440494345117733e-13
+          }
+        ],
+        "energy_pi": [
+          {
+            "gap": 2.692875664073675,
+            "weight_over_L2": 0.5424757425899794,
+            "fraction_of_total": 0.45843116407205137,
+            "translation_leakage": 9.606376590136185e-15
+          },
+          {
+            "gap": 7.092240404250511,
+            "weight_over_L2": 0.19476002000501244,
+            "fraction_of_total": 0.16458627672330342,
+            "translation_leakage": 2.0072799696321287e-13
+          }
+        ],
+        "energy_2pi_over_L": [
+          {
+            "gap": 6.560670625681979,
+            "weight_over_L2": 0.00018471696698070162,
+            "fraction_of_total": 0.13700055742315032,
+            "translation_leakage": 2.440494345117733e-13
+          }
+        ]
+      },
+      "sectors": [
+        {
+          "parity": 1,
+          "flip": 1,
+          "physical_multiplicity": 1,
+          "translation_steps": 1,
+          "dimension": 16384,
+          "max_residual": 3.765130115643236e-12,
+          "levels": [
+            {
+              "energy": -39.64869549840538,
+              "multiplicity": 1,
+              "translation_angle_over_pi": [
+                0.0
+              ],
+              "translation_leakage": 1.0806470720817454e-14
+            },
+            {
+              "energy": -36.955819834331706,
+              "multiplicity": 1,
+              "translation_angle_over_pi": [
+                1.0
+              ],
+              "translation_leakage": 9.606376590136185e-15
+            },
+            {
+              "energy": -35.755291915682484,
+              "multiplicity": 1,
+              "translation_angle_over_pi": [
+                0.0
+              ],
+              "translation_leakage": 4.865293331647503e-14
+            },
+            {
+              "energy": -34.601632457467716,
+              "multiplicity": 2,
+              "translation_angle_over_pi": [
+                -0.8749999999999999,
+                0.8749999999999999
+              ],
+              "translation_leakage": 5.16711062680604e-14
+            },
+            {
+              "energy": -34.148492893732914,
+              "multiplicity": 2,
+              "translation_angle_over_pi": [
+                -0.25000000000000083,
+                0.25000000000000083
+              ],
+              "translation_leakage": 8.727665653199166e-14
+            },
+            {
+              "energy": -33.58708940740987,
+              "multiplicity": 2,
+              "translation_angle_over_pi": [
+                -0.7500000000000001,
+                0.7500000000000001
+              ],
+              "translation_leakage": 1.97754829772665e-13
+            },
+            {
+              "energy": -33.0880248727234,
+              "multiplicity": 2,
+              "translation_angle_over_pi": [
+                -0.12500000000000067,
+                0.12500000000000067
+              ],
+              "translation_leakage": 2.440494345117733e-13
+            },
+            {
+              "energy": -32.95826902398295,
+              "multiplicity": 2,
+              "translation_angle_over_pi": [
+                -0.7499999999999986,
+                0.7499999999999986
+              ],
+              "translation_leakage": 5.082534654257899e-13
+            },
+            {
+              "energy": -32.79887463784123,
+              "multiplicity": 2,
+              "translation_angle_over_pi": [
+                -0.375,
+                0.37500000000000006
+              ],
+              "translation_leakage": 1.1352905644101763e-12
+            },
+            {
+              "energy": -32.55645509415487,
+              "multiplicity": 1,
+              "translation_angle_over_pi": [
+                1.0
+              ],
+              "translation_leakage": 2.0072799696321287e-13
+            }
+          ]
+        },
+        {
+          "parity": 1,
+          "flip": -1,
+          "physical_multiplicity": 1,
+          "translation_steps": 1,
+          "dimension": 16384,
+          "max_residual": 2.3379448347076143e-11,
+          "levels": [
+            {
+              "energy": -39.35670950453616,
+              "multiplicity": 1,
+              "translation_angle_over_pi": [
+                1.0
+              ],
+              "translation_leakage": 9.259586084851585e-15
+            },
+            {
+              "energy": -36.00448433031355,
+              "multiplicity": 2,
+              "translation_angle_over_pi": [
+                -0.12500000000000022,
+                0.12500000000000022
+              ],
+              "translation_leakage": 1.339628874056886e-13
+            },
+            {
+              "energy": -35.60385144436384,
+              "multiplicity": 2,
+              "translation_angle_over_pi": [
+                -0.8749999999999989,
+                0.874999999999999
+              ],
+              "translation_leakage": 1.3405697401028514e-13
+            },
+            {
+              "energy": -34.28800723936913,
+              "multiplicity": 1,
+              "translation_angle_over_pi": [
+                0.0
+              ],
+              "translation_leakage": 3.761332973835714e-14
+            },
+            {
+              "energy": -33.647462851795204,
+              "multiplicity": 2,
+              "translation_angle_over_pi": [
+                -0.24999999999999972,
+                0.24999999999999975
+              ],
+              "translation_leakage": 3.297933663562732e-13
+            },
+            {
+              "energy": -33.47600270828473,
+              "multiplicity": 2,
+              "translation_angle_over_pi": [
+                -0.7499999999999989,
+                0.7499999999999989
+              ],
+              "translation_leakage": 3.228599032302348e-13
+            },
+            {
+              "energy": -32.85376841933788,
+              "multiplicity": 1,
+              "translation_angle_over_pi": [
+                1.0
+              ],
+              "translation_leakage": 1.454232644924467e-13
+            },
+            {
+              "energy": -32.39691383384095,
+              "multiplicity": 2,
+              "translation_angle_over_pi": [
+                -0.37500000000000033,
+                0.37500000000000044
+              ],
+              "translation_leakage": 3.02349669313874e-13
+            },
+            {
+              "energy": -32.29321986032764,
+              "multiplicity": 2,
+              "translation_angle_over_pi": [
+                -0.6249999999999992,
+                0.6249999999999993
+              ],
+              "translation_leakage": 3.345932142853112e-13
+            },
+            {
+              "energy": -32.12914447406869,
+              "multiplicity": 1,
+              "translation_angle_over_pi": [
+                0.0
+              ],
+              "translation_leakage": 0.3826834323650903
+            }
+          ]
+        },
+        {
+          "parity": -1,
+          "flip": 1,
+          "physical_multiplicity": 2,
+          "translation_steps": 2,
+          "dimension": 16384,
+          "max_residual": 1.661376891334531e-13,
+          "levels": [
+            {
+              "energy": -37.109583408086074,
+              "multiplicity": 1,
+              "translation_angle_over_pi": [
+                1.0
+              ],
+              "translation_leakage": 1.1471815230629161e-14
+            },
+            {
+              "energy": -36.35090937610168,
+              "multiplicity": 2,
+              "translation_angle_over_pi": [
+                -0.7500000000000001,
+                0.7500000000000001
+              ],
+              "translation_leakage": 3.016971790916843e-14
+            },
+            {
+              "energy": -34.91269014875202,
+              "multiplicity": 2,
+              "translation_angle_over_pi": [
+                -0.5000000000000001,
+                0.5
+              ],
+              "translation_leakage": 3.4055299526856366e-13
+            },
+            {
+              "energy": -34.661996912371364,
+              "multiplicity": 2,
+              "translation_angle_over_pi": [
+                -0.75,
+                0.75
+              ],
+              "translation_leakage": 1.5216104978185623e-12
+            },
+            {
+              "energy": -34.644242862482045,
+              "multiplicity": 1,
+              "translation_angle_over_pi": [
+                1.0
+              ],
+              "translation_leakage": 1.5120607542456305e-12
+            },
+            {
+              "energy": -34.127664688419415,
+              "multiplicity": 2,
+              "translation_angle_over_pi": [
+                -0.24999999999999972,
+                0.24999999999999964
+              ],
+              "translation_leakage": 1.3233211187301157e-13
+            },
+            {
+              "energy": -33.87675236190179,
+              "multiplicity": 1,
+              "translation_angle_over_pi": [
+                0.0
+              ],
+              "translation_leakage": 6.511281709209424e-13
+            },
+            {
+              "energy": -33.65285914749641,
+              "multiplicity": 2,
+              "translation_angle_over_pi": [
+                -0.5,
+                0.5
+              ],
+              "translation_leakage": 6.489470177741572e-13
+            },
+            {
+              "energy": -32.5965871178012,
+              "multiplicity": 1,
+              "translation_angle_over_pi": [
+                1.0
+              ],
+              "translation_leakage": 5.05745441973558e-13
+            },
+            {
+              "energy": -32.46713454631194,
+              "multiplicity": 2,
+              "translation_angle_over_pi": [
+                -0.49999999999999994,
+                0.5
+              ],
+              "translation_leakage": 5.171213605338791e-13
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "L": 20,
+      "g": 2.0,
+      "seconds": 12.033815165996202,
+      "ground_energy": -49.48109807519081,
+      "ground_sector": [
+        1,
+        1
+      ],
+      "observables": {
+        "density_0": 7.903159295263776e-05,
+        "density_pi": 0.5728651087725176,
+        "XY_mean": -0.45104408531454626,
+        "XY_pi_connected": 0.08030785981290166,
+        "XY_pi_mean_excitation": 10.722510619225858,
+        "XY_2pi_over_L_connected": 0.027720546738665607,
+        "XY_2pi_over_L_mean_excitation": 10.169711258059245,
+        "YX_mean": 0.44793133483525455,
+        "YX_pi_connected": 0.08427703750444954,
+        "YX_pi_mean_excitation": 5.207233882382994,
+        "YX_2pi_over_L_connected": 0.028620881690376056,
+        "YX_2pi_over_L_mean_excitation": 9.994378189008557,
+        "ZZ_mean": -0.7859833665652302,
+        "ZZ_pi_connected": 0.04309826770128204,
+        "ZZ_pi_mean_excitation": 6.553583804596336,
+        "ZZ_2pi_over_L_connected": 0.025756323148663426,
+        "ZZ_2pi_over_L_mean_excitation": 10.209610311920862,
+        "energy_mean": -2.4740549037595523,
+        "energy_pi_connected": 0.9287527084309759,
+        "energy_pi_mean_excitation": 8.720555386187726,
+        "energy_2pi_over_L_connected": 0.0007165279243051939,
+        "energy_2pi_over_L_mean_excitation": 13.590399629927276
+      },
+      "retained_neutral_poles": {
+        "XY_pi": [
+          {
+            "gap": 2.33019960108728,
+            "weight_over_L2": 0.024936710142253703,
+            "fraction_of_total": 0.3105139422262073,
+            "translation_leakage": 3.78092756539677e-14
+          },
+          {
+            "gap": 6.07770406779747,
+            "weight_over_L2": 0.012259960257842413,
+            "fraction_of_total": 0.15266202195408052,
+            "translation_leakage": 6.654162020768974e-11
+          }
+        ],
+        "XY_2pi_over_L": [
+          {
+            "gap": 5.361754235423604,
+            "weight_over_L2": 0.007464571121581665,
+            "fraction_of_total": 0.2692793613327191,
+            "translation_leakage": 1.5179644001280144e-13
+          }
+        ],
+        "YX_pi": [
+          {
+            "gap": 2.33019960108728,
+            "weight_over_L2": 0.03931657782672005,
+            "fraction_of_total": 0.46651589793535725,
+            "translation_leakage": 3.78092756539677e-14
+          },
+          {
+            "gap": 6.07770406779747,
+            "weight_over_L2": 0.023625117581093532,
+            "fraction_of_total": 0.2803268634098132,
+            "translation_leakage": 6.654162020768974e-11
+          }
+        ],
+        "YX_2pi_over_L": [
+          {
+            "gap": 5.361754235423604,
+            "weight_over_L2": 0.006662649649196486,
+            "fraction_of_total": 0.23278981134382182,
+            "translation_leakage": 1.5179644001280144e-13
+          }
+        ],
+        "ZZ_pi": [
+          {
+            "gap": 2.33019960108728,
+            "weight_over_L2": 0.01967308078423624,
+            "fraction_of_total": 0.45647033705837387,
+            "translation_leakage": 3.78092756539677e-14
+          },
+          {
+            "gap": 6.07770406779747,
+            "weight_over_L2": 0.010226033745272837,
+            "fraction_of_total": 0.23727250051325485,
+            "translation_leakage": 6.654162020768974e-11
+          }
+        ],
+        "ZZ_2pi_over_L": [
+          {
+            "gap": 5.361754235423604,
+            "weight_over_L2": 0.006579858279483974,
+            "fraction_of_total": 0.2554657449165225,
+            "translation_leakage": 1.5179644001280144e-13
+          }
+        ],
+        "energy_pi": [
+          {
+            "gap": 2.33019960108728,
+            "weight_over_L2": 0.35563183409552473,
+            "fraction_of_total": 0.38291337496751426,
+            "translation_leakage": 3.78092756539677e-14
+          },
+          {
+            "gap": 6.07770406779747,
+            "weight_over_L2": 0.17951924663998206,
+            "fraction_of_total": 0.1932906843881616,
+            "translation_leakage": 6.654162020768974e-11
+          }
+        ],
+        "energy_2pi_over_L": [
+          {
+            "gap": 5.361754235423604,
+            "weight_over_L2": 0.00011157375419284167,
+            "fraction_of_total": 0.1557144535588519,
+            "translation_leakage": 1.5179644001280144e-13
+          }
+        ]
+      },
+      "sectors": [
+        {
+          "parity": 1,
+          "flip": 1,
+          "physical_multiplicity": 1,
+          "translation_steps": 1,
+          "dimension": 262144,
+          "max_residual": 3.010644680165547e-13,
+          "levels": [
+            {
+              "energy": -49.48109807519081,
+              "multiplicity": 1,
+              "translation_angle_over_pi": [
+                1.0
+              ],
+              "translation_leakage": 2.7606874410444357e-14
+            },
+            {
+              "energy": -47.15089847410353,
+              "multiplicity": 1,
+              "translation_angle_over_pi": [
+                0.0
+              ],
+              "translation_leakage": 3.78092756539677e-14
+            },
+            {
+              "energy": -46.32298329492957,
+              "multiplicity": 1,
+              "translation_angle_over_pi": [
+                1.0
+              ],
+              "translation_leakage": 3.8437737098265514e-14
+            },
+            {
+              "energy": -45.212524671872345,
+              "multiplicity": 2,
+              "translation_angle_over_pi": [
+                -0.1000000000000013,
+                0.1000000000000013
+              ],
+              "translation_leakage": 1.3256851840255793e-13
+            },
+            {
+              "energy": -44.79955421710452,
+              "multiplicity": 2,
+              "translation_angle_over_pi": [
+                -0.7999999999999992,
+                0.7999999999999993
+              ],
+              "translation_leakage": 2.6822156352163913e-13
+            },
+            {
+              "energy": -44.506563406857666,
+              "multiplicity": 2,
+              "translation_angle_over_pi": [
+                -0.20000000000000176,
+                0.20000000000000176
+              ],
+              "translation_leakage": 2.600736174785674e-13
+            },
+            {
+              "energy": -44.119343839767204,
+              "multiplicity": 2,
+              "translation_angle_over_pi": [
+                -0.8999999999999985,
+                0.8999999999999985
+              ],
+              "translation_leakage": 1.5179644001280144e-13
+            },
+            {
+              "energy": -43.6307070735116,
+              "multiplicity": 2,
+              "translation_angle_over_pi": [
+                -0.19999999999999837,
+                0.1999999999999983
+              ],
+              "translation_leakage": 3.783681489118099e-13
+            },
+            {
+              "energy": -43.40658391430784,
+              "multiplicity": 2,
+              "translation_angle_over_pi": [
+                -0.6999999999999978,
+                0.6999999999999978
+              ],
+              "translation_leakage": 6.654347885541283e-11
+            },
+            {
+              "energy": -43.40339400739334,
+              "multiplicity": 1,
+              "translation_angle_over_pi": [
+                0.0
+              ],
+              "translation_leakage": 6.654162020768974e-11
+            }
+          ]
+        },
+        {
+          "parity": 1,
+          "flip": -1,
+          "physical_multiplicity": 1,
+          "translation_steps": 1,
+          "dimension": 262144,
+          "max_residual": 3.4414501199851903e-13,
+          "levels": [
+            {
+              "energy": -49.30519745808262,
+              "multiplicity": 1,
+              "translation_angle_over_pi": [
+                0.0
+              ],
+              "translation_leakage": 2.117974390094344e-14
+            },
+            {
+              "energy": -46.415942833690465,
+              "multiplicity": 2,
+              "translation_angle_over_pi": [
+                -0.8999999999999986,
+                0.8999999999999986
+              ],
+              "translation_leakage": 2.237456647001939e-13
+            },
+            {
+              "energy": -46.104420697860895,
+              "multiplicity": 2,
+              "translation_angle_over_pi": [
+                -0.09999999999999974,
+                0.09999999999999976
+              ],
+              "translation_leakage": 2.2200404065908747e-13
+            },
+            {
+              "energy": -45.101707227088085,
+              "multiplicity": 1,
+              "translation_angle_over_pi": [
+                1.0
+              ],
+              "translation_leakage": 4.995921864845584e-14
+            },
+            {
+              "energy": -44.405554591991006,
+              "multiplicity": 2,
+              "translation_angle_over_pi": [
+                -0.8000000000000055,
+                0.8000000000000055
+              ],
+              "translation_leakage": 3.5641196922320347e-13
+            },
+            {
+              "energy": -44.21497567908675,
+              "multiplicity": 2,
+              "translation_angle_over_pi": [
+                -0.19999999999999749,
+                0.19999999999999746
+              ],
+              "translation_leakage": 3.781374694976672e-13
+            },
+            {
+              "energy": -43.98919011676549,
+              "multiplicity": 1,
+              "translation_angle_over_pi": [
+                0.0
+              ],
+              "translation_leakage": 1.3433475696679877e-13
+            },
+            {
+              "energy": -43.21437399804889,
+              "multiplicity": 2,
+              "translation_angle_over_pi": [
+                -0.9000000000000012,
+                0.9000000000000012
+              ],
+              "translation_leakage": 1.700755321162555e-13
+            },
+            {
+              "energy": -43.094033715631845,
+              "multiplicity": 2,
+              "translation_angle_over_pi": [
+                -0.6999999999999994,
+                0.6999999999999994
+              ],
+              "translation_leakage": 6.745381768647252e-13
+            },
+            {
+              "energy": -42.93027472389434,
+              "multiplicity": 1,
+              "translation_angle_over_pi": [
+                0.0
+              ],
+              "translation_leakage": 0.8090169943749463
+            }
+          ]
+        },
+        {
+          "parity": -1,
+          "flip": 1,
+          "physical_multiplicity": 2,
+          "translation_steps": 2,
+          "dimension": 262144,
+          "max_residual": 6.291915959142128e-11,
+          "levels": [
+            {
+              "energy": -47.25366677509213,
+              "multiplicity": 1,
+              "translation_angle_over_pi": [
+                1.0
+              ],
+              "translation_leakage": 4.231754010416552e-14
+            },
+            {
+              "energy": -46.617925875754736,
+              "multiplicity": 2,
+              "translation_angle_over_pi": [
+                -0.7999999999999983,
+                0.7999999999999985
+              ],
+              "translation_leakage": 5.189400273776929e-14
+            },
+            {
+              "energy": -45.35089811347104,
+              "multiplicity": 1,
+              "translation_angle_over_pi": [
+                1.0
+              ],
+              "translation_leakage": 1.6232765100134974e-12
+            },
+            {
+              "energy": -45.329699388720215,
+              "multiplicity": 2,
+              "translation_angle_over_pi": [
+                -0.799999999999997,
+                0.799999999999997
+              ],
+              "translation_leakage": 1.3428181770726994e-12
+            },
+            {
+              "energy": -45.28655473213755,
+              "multiplicity": 2,
+              "translation_angle_over_pi": [
+                -0.5999999999999998,
+                0.5999999999999998
+              ],
+              "translation_leakage": 1.304259966940737e-12
+            },
+            {
+              "energy": -44.50859379913391,
+              "multiplicity": 2,
+              "translation_angle_over_pi": [
+                -0.5999999999999984,
+                0.5999999999999984
+              ],
+              "translation_leakage": 6.436530912409274e-13
+            },
+            {
+              "energy": -44.41429094356904,
+              "multiplicity": 2,
+              "translation_angle_over_pi": [
+                -0.3999999999999978,
+                0.39999999999999786
+              ],
+              "translation_leakage": 6.477429060361966e-13
+            },
+            {
+              "energy": -43.922461934347595,
+              "multiplicity": 2,
+              "translation_angle_over_pi": [
+                -0.19999999999999968,
+                0.19999999999999965
+              ],
+              "translation_leakage": 2.3071059067770256e-11
+            },
+            {
+              "energy": -43.7625636416798,
+              "multiplicity": 1,
+              "translation_angle_over_pi": [
+                0.0
+              ],
+              "translation_leakage": 2.8803819952158373e-13
+            },
+            {
+              "energy": -43.5344497783367,
+              "multiplicity": 1,
+              "translation_angle_over_pi": [
+                1.0
+              ],
+              "translation_leakage": 7.353739123599596e-13
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

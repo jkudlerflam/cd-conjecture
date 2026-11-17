@@ -1,0 +1,26 @@
+{
+  "status": "passed",
+  "max_matrix_error": 5.861977570020827e-14,
+  "lengths": [
+    4,
+    6,
+    8
+  ],
+  "exact_polynomial_samples": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "seconds": 0.03533233399502933,
+  "checks": [
+    "literal physical spectrum equals all four real blocks",
+    "individual physical XY/YX/ZZ and parity-changing density observables",
+    "physical translation and paired odd-parity blocks",
+    "four-site g-sign duality",
+    "claw obstruction",
+    "local double commutator",
+    "no range-two repair",
+    "full periodic boost-charge obstruction"
+  ]
+}
