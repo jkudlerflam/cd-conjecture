@@ -40,6 +40,35 @@ mobile wrapper by a biased vacuum path, a terminal penalty, and two uniquely
 determined vacancy colors. It does not infer unboundedness from a finite
 list of large-c numerical estimates.
 
+## Dimension comparison and scope
+
+As of this contribution on 2026-11-16, d=22 is the smallest explicit
+**mobile candidate in this project with a written arbitrary-n leading-band
+argument**. Its frozen precursor already has d=20. This is a comparison
+of the constructions inspected here, not a minimality theorem or a
+literature-wide priority claim. The new construction has not been
+independently reviewed and has additional vacancy-matching obligations
+compared with the more extensively audited large wrapper.
+
+| Dimension | Proposed central charge | Scope of the claim |
+| --- | --- | --- |
+| 2 | approximately 2 | Existing numerical candidate; no unbounded-c construction |
+| 13 | 14 | Existing conditional finite member; no completed arbitrary-n band argument |
+| 20 | n for arbitrary n | New frozen precursor; its selected ground pattern breaks translation |
+| 22 | n+1 for arbitrary n | New mobile candidate with the finite construction described here |
+| 4464 | n+1 for arbitrary n | Earlier mobile wrapper with substantially more inherited audits |
+
+The lower-dimensional finite examples do not establish unbounded c, and
+the new d=22 proposal does not prove a bound impossible at d<22. See the
+[qubit candidate](../d2_updated_conjecture_20261116/README.md),
+[d=13 member](../../codex/work_C88/RESULT.md), and
+[large-wrapper review](../referee_C44_C45/README.md).
+
+The preceding [compactness analysis](COMPACTNESS.md) records the exact
+finite-cover reduction, a sufficient finite-scale entropy criterion, and
+why neither proves boundedness near singular Hamiltonians without another
+dynamical input.
+
 ## The mechanism
 
 Each material cell contains n payload bits in n+1 occupied physical sites.
@@ -208,8 +237,9 @@ This is an existence construction with extremely small energy scales.
 
 ## Reproducing
 
-Dependencies: Python, NumPy, SciPy and mpmath. Recorded versions are in the
-JSON result. Run from the repository root:
+Dependencies: Python, NumPy, SciPy and mpmath, listed in
+[requirements.txt](requirements.txt). Recorded versions are in the JSON
+result. Run from the repository root:
 
 ```sh
 OPENBLAS_NUM_THREADS=1 python3 -B contrib/smaller_d_unbounded_20261116/checks.py

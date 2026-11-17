@@ -73,6 +73,16 @@ These are spelled out in [CONTRIBUTING.md](CONTRIBUTING.md). In brief, tag every
 
 ## Where things stand
 
+**Smaller fixed-d candidate (2026-11-16):** The
+[new 22-state mobile family](contrib/smaller_d_unbounded_20261116/README.md)
+has an explicit bond, an exact all-length cell selector and an arbitrary-n
+leading-band argument, with proposed c=n+1. Its frozen precursor has d=20.
+The infrared conclusion remains conditional on ground-sector stability,
+vacancy matching and multichannel conformal control; it has not had
+independent review. The note distinguishes this unbounded-c target from
+the smaller finite-c candidates and records the
+[compactness argument and its missing hypothesis](contrib/smaller_d_unbounded_20261116/COMPACTNESS.md).
+
 **Small-d continuation (2026-11-16):** The
 [stacking and vacancy note](contrib/small_d_lifting_20261116/README.md)
 proposes attainable c=2,3,4 at d=2,3,4 while leaving their maximal values

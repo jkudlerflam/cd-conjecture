@@ -3336,3 +3336,52 @@ entropy identities; and qutrit Hermiticity/number conservation all pass.
 The maximum identity error is 2.31e-14. No c fit was made, and no independent
 agent or human review is claimed. Code, explicit bond, derivations,
 reproduction, and limits: [small-d lifting](contrib/small_d_lifting_20261116/README.md).
+
+### Research note 2026-11-16: compactness and a 22-state candidate for unbounded c (OpenAI Codex, GPT-6 family)
+
+[Proved reduction; open dynamical premise] After removing constants and
+telescoping terms and fixing a positive energy normalization, the bond
+space at every fixed d is compact. A finite global bound on conformal c
+is equivalent to a local finite bound near every normalized bond,
+including nonconformal accumulation points. Subadditivity gives
+D_h(ell)=3[S_h(2ell)-S_h(ell)]/log(2)<=3ell log_2(d). A neighborhood-wise
+estimate c(h)<=D_h(ell_*)+A_* at one common finite length would finish the
+compactness argument. Neither this estimate nor a universal bound follows
+from compactness alone. The qubit blockade Hamiltonian has a gap above an
+exponentially degenerate ground space, illustrating the uncontrolled
+neighborhoods. The continuum entropic c-theorem requires additional
+matching assumptions. Full argument and scope:
+[compactness note](contrib/smaller_d_unbounded_20261116/COMPACTNESS.md).
+
+[Explicit candidate; proved finite ingredients] A new fixed alphabet uses
+20 material states and two uniquely determined vacancy colors. Its
+zero-port biased-path energy satisfies
+(1-q^2)^2 q^(2k+2)<=E_k<=q^(2k+2). The chemical potential
+mu=-(n+2)E_n selects n payload bits in n+1 occupied sites among all cell
+lengths, with wrong-length excess at least E_(n+1)>0. The auxiliary code
+has dimension 2^n and gap at least 1/2. Exact arrow preservation makes the
+legal space invariant at finite grammar penalty. Two charged virtual
+buses give a Gaussian leading exchange with an arbitrary-n two-Gram-matrix
+band argument, producing 2n simple Fermi points and separated unordered
+pair sums in the limiting quadratic model.
+
+[Conditional infrared conclusion] The proposed charges are c=n for the
+frozen d=20 precursor and c=n+1 for the mobile d=22 model. Establishing
+them still requires finite-port ground-sector stability, finite-coupling
+vacancy matching with positive dressed-defect costs, and multichannel
+conformal control. The default diagnostic couplings are not certified
+high-c many-body points. The d=22 family is the smallest explicit mobile
+candidate inspected in this project with a written arbitrary-n leading-band
+argument; this is neither a minimality theorem nor a literature-wide
+priority claim. The smaller d=2 and d=13 finite-c candidates do not yet
+supply unbounded-c families. No independent review is claimed.
+
+[Numerical checks] Literal bonds, grammar invariance and vacancy coloring;
+selector inequalities; complete cell and small-ring spectra; full pair
+exchange through n=2; and the large-mass Gram limit through n=4 pass.
+Limiting bands through n=6 have 2n roots and nonzero pair-sum margins at
+145--370 decimal digits. These are finite algebra and high-precision
+numerical checks, not interval certificates or microscopic c measurements.
+The explicit bond, derivations, assumptions, saved outputs and reproduction
+instructions are in the
+[smaller-d contribution](contrib/smaller_d_unbounded_20261116/README.md).
