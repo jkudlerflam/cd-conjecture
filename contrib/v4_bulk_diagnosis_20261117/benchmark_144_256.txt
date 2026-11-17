@@ -1,0 +1,46 @@
+{
+  "model": "V4_kappa1_a1_full_end_fields",
+  "L": 144,
+  "chi": 256,
+  "dtype": "float64",
+  "backend": "numpy",
+  "build_seconds": 0.8110820419969968,
+  "measured_host_array_GB": 0.472907728,
+  "estimate": {
+    "MPS_GB": 0.135615808,
+    "environments_GB": 0.33991336,
+    "static_GB": 0.475529168,
+    "with_25pct_headroom_GB": 0.59441146,
+    "checkpoint_atomic_pair_GB": 0.271231616
+  },
+  "bonds": [
+    {
+      "j": 71,
+      "setup_seconds": 0.007547499997599516,
+      "solve_seconds": 0.533477083001344,
+      "split_env_entropy_seconds": 0.014952375000575557,
+      "total_seconds": 0.5559785419973196,
+      "matvecs": 100,
+      "residual": 1.146739063893828e-12
+    },
+    {
+      "j": 72,
+      "setup_seconds": 0.0071704999936628155,
+      "solve_seconds": 0.5265304169952287,
+      "split_env_entropy_seconds": 0.015688250001403503,
+      "total_seconds": 0.5493907919953926,
+      "matvecs": 100,
+      "residual": 2.3804326394595708e-12
+    },
+    {
+      "j": 73,
+      "setup_seconds": 0.0074650419992394745,
+      "solve_seconds": 0.534236958999827,
+      "split_env_entropy_seconds": 0.014533957997628022,
+      "total_seconds": 0.5562368749961024,
+      "matvecs": 100,
+      "residual": 3.847135050675581e-12
+    }
+  ],
+  "peak_host_RSS_GB": 0.792068096
+}
