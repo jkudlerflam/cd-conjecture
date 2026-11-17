@@ -69,6 +69,16 @@ def main(root=HERE):
         allrows.append(row)
         if str(p.relative_to(root)) in chosen:selected.append(row)
     ground=[min([r for r in selected if r['L']==L],key=lambda r:r['E']) for L in sorted({r['L'] for r in selected})]
+    partial=[];provisional=list(selected)
+    for p in sorted((root/'outputs').glob('*.json')):
+        d=json.loads(p.read_text())
+        if d['status']!='interrupted' or not d['hist']:continue
+        last=d['hist'][-1];cfg=d['cfg']
+        row=dict(tag=p.stem+'_interrupted',L=cfg['L'],P=cfg['P'],chi=last['chi'],E=last['E_phys'],
+            saved_sweeps=len(d['hist']),scope='Last saved sweep entropy profile; incomplete convergence, not a completed stage observation.',
+            **summarize(cfg['L'],last['Sprof']))
+        partial.append(row);provisional=[r for r in provisional if (r['L'],r['P'])!=(row['L'],row['P'])]+[row]
+    pg=[min([r for r in provisional if r['L']==L],key=lambda r:r['E']) for L in sorted({r['L'] for r in provisional})]
     sectors={str(P):size_fits([r for r in selected if r['P']==P]) for P in (0,1)}
     controls=[];controlfits={};p=root/'controls.json'
     if p.exists():
@@ -97,6 +107,7 @@ def main(root=HERE):
         source='https://arxiv.org/abs/hep-th/0405152',asymptotic_c=None,
         has_interim_observations=analysis['has_interim_observations'],all_candidate_states=allrows,
         selected_states=selected,ground_branch=size_fits(ground),fixed_parity=sectors,
+        interrupted_states=partial,provisional_ground_branch=size_fits(pg) if partial else None,
         largest_chi_sensitivity=chi,exact_controls=controls,control_size_fits=controlfits,
         periodic_states=rings,periodic_ground_branch=size_fits(rground,3) if rings else None,
         limitations=['Only three large-chain sizes; no asymptotic extrapolation is identified.',

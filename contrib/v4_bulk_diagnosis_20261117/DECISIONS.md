@@ -80,3 +80,17 @@
     original ring records are retained in commit 8b3ca32a; the replacement
     does not add sizes, model parameters or eigensolver eigenpairs.
     Do not infer a complete degeneracy count from four Krylov eigenpairs.
+12. At 22:28 UTC the user requested prompt wrap-up because battery was
+    running low. Terminated both chi=320 processes and verified their
+    exit. The odd sector preserves four completed sweeps and its matching
+    checkpoint; the even sector completed no new sweep and retains its
+    chi=256 parent. Both records are explicitly `interrupted`, not done
+    or converged. No more production, measurements or benchmarks run.
+    Only sub-second saved-record summaries/checks and Git synchronization
+    follow. The interrupted odd-sector W=6 size slope is 2.566885 from
+    L=96 to 144 (2.540620 with averaged-log-chord geometry); the three-size
+    slope is 2.735587. Its last energy change is 1.1455e-8, just above
+    the 1e-8 stationarity gate, and the strict stopping rule is not met.
+    These numbers remain provisional. The five completed production
+    runs, two reused states, exact controls and six corrected periodic
+    rings are preserved; the two continuations are resumable locally.

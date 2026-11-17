@@ -27,7 +27,9 @@ def main():
             subprocess.run([sys.executable,'-B',str(HERE/'run.py'),str(HERE/'configs'/(tag+'.json')),
                 '--run-root',str(root)],stdout=log,stderr=subprocess.STDOUT,env=env,check=True)
         d=json.loads((root/'outputs'/(tag+'.json')).read_text());ref=json.loads((HERE/'outputs'/(tag+'.json')).read_text())
-        checks.append(dict(tag=tag,status=d['status'],delta_E=d['hist'][-1]['E_phys']-ref['hist'][-1]['E_phys']))
+        checks.append(dict(tag=tag,status=d['status'],archived_status=ref['status'],
+            delta_E=d['hist'][-1]['E_phys']-ref['hist'][-1]['E_phys'] if ref['hist'] else None,
+            comparison_scope='Completed archive' if ref['status']=='done' else 'Interrupted archive; not a completed convergence reference'))
         write_json(root/'reproduction_comparison.json',checks)
 
 

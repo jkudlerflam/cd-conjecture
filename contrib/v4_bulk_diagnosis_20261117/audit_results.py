@@ -9,7 +9,7 @@ from phase_common import HERE,ROOT,write_json
 
 
 def main():
-    checks=[];runs=[];running=[];channel_checks=[]
+    checks=[];runs=[];running=[];interrupted=[];channel_checks=[]
     with threadpool_limits(limits=1):
         for p in sorted((HERE/'observations').glob('*.json')):
             d=json.loads(p.read_text());ops=d['operators'];dens=np.array(ops['density']['profile'])
@@ -51,12 +51,14 @@ def main():
             d=json.loads(p.read_text());assert d['cfg']==json.loads((HERE/'configs'/(p.stem+'.json')).read_text())
             if d['status']=='done':runs.append(dict(tag=p.stem,sweeps=len(d['hist']),sweep_seconds=sum(r['t'] for r in d['hist']),
                 runtime_seconds=d['runtime_seconds'],peak_RSS_GB=d['peak_RSS_GB'],sha256=hashlib.sha256(p.read_bytes()).hexdigest()))
+            elif d['status']=='interrupted':interrupted.append(dict(tag=p.stem,saved_sweeps=len(d['hist']),
+                reason=d['interruption_reason'],checkpoint=d['preserved_checkpoint']))
             else:running.append(p.stem)
     scripts=list(HERE.glob('*.py'))+[ROOT/'codex/work_C190/z2dmrg.py',ROOT/'codex/work_C195/z2dmrg_xp.py']
     for p in HERE.glob('*.py'):ast.parse(p.read_text())
     files=[p for p in HERE.rglob('*') if p.is_file() and not any(x in p.parts for x in ('runtime','__pycache__'))]
     assert max(p.stat().st_size for p in files)<50_000_000
-    out=dict(checked_observations=len(checks),checks=checks,channel_checks=channel_checks,completed_runs=runs,running=running,
+    out=dict(checked_observations=len(checks),checks=checks,channel_checks=channel_checks,completed_runs=runs,running=running,interrupted=interrupted,
         versions=dict(python=platform.python_version(),numpy=np.__version__,scipy=scipy.__version__),
         completed_sweep_seconds=sum(r['sweep_seconds'] for r in runs),
         maximum_completed_RSS_GB=max((r['peak_RSS_GB'] for r in runs),default=0),

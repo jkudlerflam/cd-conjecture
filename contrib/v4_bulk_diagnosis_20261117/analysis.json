@@ -2254,6 +2254,36 @@
       "schedule_limit_hit": false
     }
   ],
+  "interrupted_runs": [
+    {
+      "tag": "v4_L144_P0_s1_c320",
+      "saved_sweeps": 0,
+      "reason": "User requested prompt wrap-up because battery was running low.",
+      "last_sweep_checks": null
+    },
+    {
+      "tag": "v4_L144_P1_s1_c320",
+      "saved_sweeps": 4,
+      "reason": "User requested prompt wrap-up because battery was running low.",
+      "last_sweep_checks": {
+        "gates": {
+          "residual": true,
+          "stationarity": false,
+          "discarded_weight": true,
+          "chi_step": true
+        },
+        "all_gates": false,
+        "dE": 1.1454844184299873e-08,
+        "dS": 7.815787838039157e-06,
+        "dn": 9.864606131948506e-09,
+        "dS_chi": 0.007602087016398418,
+        "res_max": 9.992655191293042e-10,
+        "trunc": 1.9421936170438414e-08,
+        "stopping_rule_met": false,
+        "schedule_limit_hit": false
+      }
+    }
+  ],
   "accuracy_comparisons": [
     {
       "tags": [

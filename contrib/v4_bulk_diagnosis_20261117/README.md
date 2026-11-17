@@ -1,6 +1,6 @@
 # V=4 bulk-phase diagnosis
 
-**In progress; central charge UNKNOWN.** This bounded round tests the
+**Stopped at the user's battery-saving request; central charge UNKNOWN.** This bounded round tests the
 large density modulation of the fixed nearest-neighbour qubit Hamiltonian
 `sum[(9/16)XY+(7/16)YX+ZZ]-(7/4)sum Z`, with full endpoint fields.
 No entropy estimate near 2.5--3.1 is treated as a measurement of c.
@@ -15,10 +15,10 @@ observable definitions, controls, conditional extensions and resource
 cap. [Sequential decisions](DECISIONS.md) preserve adaptive choices.
 Saved L=96 states are reused; new production is restricted to two workers
 with one BLAS thread each. Outputs are JSON; state checkpoints stay local
-and ignored. The final recommendation will be continue, reject, or a
-specific missing test, not an unsupported central-charge assignment.
+and ignored. Recommendation: **missing test**. Finish the interrupted accuracy checks
+and establish stable scaling beyond these sizes before identifying c.
 
-## Checkpoint: completed 48/96 comparisons and interim 144
+## Results through completed chi=256 and interrupted chi=320
 
 Both L=48 sectors pass the existing accuracy gates and the new observable
 stability checks. The reused L=96 states also retain their prior local
@@ -41,7 +41,9 @@ Both L=144,chi=256 runs are now complete. Density RMS is about 0.0923
 and profile amplitude about 0.128 in both sectors, with q near 0.880 pi.
 The entropy chi-step gate fails (0.01894/0.01840), while the other local
 gates pass. The registered chi=320 continuations pass the resource
-benchmark and are in progress. The independent L=96 start is complete:
+benchmark but were stopped to save battery: odd parity has four saved
+sweeps, even parity has no new completed sweep. Neither is marked done.
+The independent L=96 start is complete:
 energy differs by 2.33e-11, density/bond profiles by less than 1.6e-8,
 and state overlap has magnitude 0.999999999875. All registered restart
 checks pass. The current boundary-probe amplitude trigger is not met.
@@ -70,6 +72,53 @@ subtraction/Cauchy bounds and agreement of total energy reconstructed
 from density/bond profiles with the independent energy contraction.
 The saved stage/baseline observations pass at this checkpoint. Final
 counts and all completed/running tags are recorded in `audit_results.json`.
+
+## Numerical central-charge estimate at stopping
+
+The latest **provisional finite-size estimate is c_ent = 2.57** from
+L=96 to 144, using the four saved odd-sector chi=320 sweeps.
+The last energy change is 1.15e-8, above the 1e-8 stationarity gate;
+the strict stopping rule has not passed. This estimate uses the last
+saved sweep entropy profile, not a completed stage measurement.
+
+| Estimate | c_ent | Status |
+|---|---:|---|
+| L=48 to 96, W=6 | 2.8184 | Completed states pass local gates |
+| L=96 to 144, chi=256, W=6 | 2.4542 | Largest-size chi gate fails |
+| L=96 to 144, interrupted chi=320, W=6 | 2.5669 | Four saved sweeps; convergence incomplete |
+| Same interrupted pair, averaged-log-chord | 2.5406 | Geometry sensitivity |
+| Three-size log(L) fit, interrupted chi=320 | 2.7356 | Size drift remains |
+
+At the interrupted highest accuracy, W=1 and W=12 give 2.3372 and
+2.6471; a fixed central-quarter fraction gives 2.5790. W=12 with
+averaged-log-chord geometry gives 2.5475. These are sensitivity checks,
+not confidence intervals. The single midpoint is much more oscillatory
+(3.497), so retaining all cuts and windows matters. The report does not
+identify these finite-size slopes with a thermodynamic Virasoro c.
+
+The bulk diagnostics through completed chi=256 are compatible with a
+decaying boundary-induced pattern on the tested sizes: density profile amplitude falls from about 0.154--0.158
+at 96 to 0.128 at 144, and normalized connected density weight also
+falls. Long-distance connected density RMS falls from 0.0115--0.0124
+at 48 to 0.0064--0.0066 at 96 and 0.0057--0.0058 at 144. Full-bond
+correlations likewise decrease. The secondary XX+YY peak weight divided
+by window length is about 0.143--0.147, 0.072, 0.048, while its uniform
+weight also falls. These finite sizes do not exclude a smaller plateau
+or a crossover. Connected pair amplitudes are anchor- and size-dependent;
+no pair exponent is fitted. Explicitly sourced disconnected pair weight
+is stored separately.
+
+The registered optional boundary probe was not triggered (amplitude
+ratios 0.813/0.835, below 0.85), so no altered-boundary or field scan
+was performed. All twelve completed observations and twelve secondary
+channel records pass the internal consistency audit. The independent
+start passes. The missing tests are completion of both interrupted
+chi=320 checks, a further converged size sequence, and independent
+evidence for positive-velocity conformal modes. No robust critical
+parameter neighbourhood or microscopic counterexample is established.
+
+All compute jobs from this chat are stopped. Checkpoints are preserved
+locally; production is not scheduled to restart automatically.
 
 ## Entropy convention and interpretation
 

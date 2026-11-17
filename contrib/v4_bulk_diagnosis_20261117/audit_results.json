@@ -394,8 +394,20 @@
       "sha256": "50d471b587edc646185362ce45b660a52e59616b7694d22b16302dd70d6743cd"
     }
   ],
-  "running": [
-    "v4_L144_P1_s1_c320"
+  "running": [],
+  "interrupted": [
+    {
+      "tag": "v4_L144_P0_s1_c320",
+      "saved_sweeps": 0,
+      "reason": "User requested prompt wrap-up because battery was running low.",
+      "checkpoint": "runtime/v4_L144_P0_s1_chi256.npz"
+    },
+    {
+      "tag": "v4_L144_P1_s1_c320",
+      "saved_sweeps": 4,
+      "reason": "User requested prompt wrap-up because battery was running low.",
+      "checkpoint": "runtime/v4_L144_P1_s1_c320.npz"
+    }
   ],
   "versions": {
     "python": "3.12.3",
@@ -408,18 +420,18 @@
     "contrib/v4_bulk_diagnosis_20261117/controls.py": "885d04a889165b3fa2b81b4886c6e1636fbafe1b8d9dea8966ca4faabfb973c0",
     "contrib/v4_bulk_diagnosis_20261117/run.py": "564a6b5a6efdc4f33337dead1435edc7f1e8c17e44319a1d045643663d79b288",
     "contrib/v4_bulk_diagnosis_20261117/benchmark.py": "c5fb33ef7a09e5ace107e6348d4197320afb494999abccf195d5161b1e72264f",
-    "contrib/v4_bulk_diagnosis_20261117/reproduce.py": "b2341178c291120573ad0c6719feb29a357a77c0f1eaad4d9d789efd6d07d66a",
-    "contrib/v4_bulk_diagnosis_20261117/entropy_analysis.py": "2f18eb6fcf057e7cb42cea0cb04dcd41a3e38bb74b4caea79b88369b95d1bbd6",
+    "contrib/v4_bulk_diagnosis_20261117/reproduce.py": "9730287ab3461009f72cde26bf76ea0398d7840189e4852b36540c07b4b3eea3",
+    "contrib/v4_bulk_diagnosis_20261117/entropy_analysis.py": "0390b3dd1c8cbd19b9a8704a854aa57c3182befb8c42fd6ee24bb2ce15c322d3",
     "contrib/v4_bulk_diagnosis_20261117/ring_ed.py": "8924eebb52876223ef5ce39442e1666ac172eef3417f7f28e6a9c2ce276f0fea",
     "contrib/v4_bulk_diagnosis_20261117/measure_saved.py": "f71cf5510b5931a7efcb84684339a725260236ce0c2ec98b1dca26e1b8b36ed6",
-    "contrib/v4_bulk_diagnosis_20261117/audit_results.py": "72681f0299d01ba39bac383ce7204c38c8b5ed8040f051ed68f4c5231059ab4d",
+    "contrib/v4_bulk_diagnosis_20261117/audit_results.py": "c59dc27217fce631c03cb14fd896b5c05159b22d3ce6313c7edc31513b7d75fd",
     "contrib/v4_bulk_diagnosis_20261117/campaign.py": "a0c1d387f2a99f658fabf25aa5c1b8567c774caa9163c1af8bcf5d3d09a56b8f",
     "contrib/v4_bulk_diagnosis_20261117/measure_channel.py": "923920350b896906c0478a7b1ce906a6e78edf4762bfc785ad49cb5a85f0d9d2",
     "contrib/v4_bulk_diagnosis_20261117/validate.py": "5859171e173fe88b45edb0a3593dc2b452fd5ecd6b320c0a6e292e817d552dc2",
     "contrib/v4_bulk_diagnosis_20261117/phase_common.py": "00fb79c652efbf966f8ec34fd494dc41862a0caf2cbecc94b412dbd625c8f9a2",
     "contrib/v4_bulk_diagnosis_20261117/observables.py": "6c1125c722b1e4ce4c60edc5ded65226e66456b388b04d3d9e5231d94b2039be",
     "contrib/v4_bulk_diagnosis_20261117/auxiliary.py": "fc699d001f3506aba081178f1424073272646182ba07f54ce9d8667fbec0aade",
-    "contrib/v4_bulk_diagnosis_20261117/analyze.py": "e64d243548934f25fe09aa67b133d8c7ab82c06d412a308fb906b23efdbf997a",
+    "contrib/v4_bulk_diagnosis_20261117/analyze.py": "276941c5fa10570999b70d5918ccd5b1b48830fedffe987320800c9412f66f3b",
     "codex/work_C190/z2dmrg.py": "8b55ff8a0c8ada4d3da36cc208a92566eb0459c045ea93b9facdc74a2980e847",
     "codex/work_C195/z2dmrg_xp.py": "bde039f95bbc339bf96b3f3007e70820e8e905c2e5651bc388769e9fa5337e11"
   },

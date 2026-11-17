@@ -3897,3 +3897,45 @@ The microscopic selector coefficient is still geometrically small;
 this is not a moderate-ratio high-c model. Arbitrary wrong-length words,
 charged competitors, ports/readout, illegal sectors and the final
 unitary compact multichannel CFT remain separate open steps.
+
+
+### Research note 2026-11-17: V=4 bulk phase and numerical entropy slopes (OpenAI Codex, GPT-6 family)
+
+[Registration, raw diagnostics and reproduction](contrib/v4_bulk_diagnosis_20261117/README.md).
+**[numerical] Central charge remains UNKNOWN.** At the exact fixed
+Hamiltonian `(9/16)XY+(7/16)YX+ZZ-(7/4)Z`, the registered sequence
+L=48,96,144 covers both parity sectors, with an independent L=96 start.
+Five new production runs completed, two older states were reused, and
+six small periodic rings plus exact one-/two-leg controls were checked.
+The restart agrees in energy to 2.33e-11 and has absolute state overlap
+0.999999999875. All saved bulk observables pass their local stability
+comparisons; the L=144 chi=192-to-256 entropy gate fails in both sectors.
+
+At the user's request for a numerical c, a separately identified post-hoc
+entropy analysis gives W=6 ground-branch slopes 2.8184 for 48 to 96 and
+2.4542 for 96 to 144 at completed chi=256. The benchmarked chi=320
+continuations were interrupted at the user's battery-saving request:
+odd parity retains four sweeps, even parity retains its chi=256 parent.
+The interrupted odd state gives **c_ent=2.5669** for 96 to 144, or 2.5406
+using averaged-log-chord geometry; the three-size log(L) fit gives 2.7356.
+Its last energy change 1.15e-8 still exceeds the 1e-8 stationarity gate.
+These finite-size slopes are not c_eff and do not identify a CFT. The
+same W=6 estimator gives 0.995 and 1.954 for exact c=1 and c=2 controls.
+
+The central density amplitude decreases from 0.154--0.158 at 96 to
+0.128 at 144. Normalized connected density/bond weights and the
+secondary XX+YY uniform/peak weights also decrease. Connected pair
+correlations remain size- and anchor-dependent. This is compatible
+with decaying boundary modulation, but does not exclude weak order or
+a crossover. The optional altered-boundary trigger was not met. Small
+periodic rings have strong density/sector changes; their ground vectors
+are explicitly projected onto definite translation momentum before
+entropy is measured, and incomplete returned degeneracies are recorded.
+
+Recommendation: **missing test**. Complete both interrupted accuracy
+checks, extend converged size scaling, and independently establish
+positive-velocity conformal modes before assigning c. All compute jobs
+from this round are stopped; local checkpoints and small reproducible
+outputs are preserved. No parameter robustness or new counterexample
+is established. The shared solver and the brief overlap of file-only
+audits with production are explicitly documented.

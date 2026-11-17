@@ -73,6 +73,16 @@ These are spelled out in [CONTRIBUTING.md](CONTRIBUTING.md). In brief, tag every
 
 ## Where things stand
 
+**V=4 size-scaling follow-up (2026-11-17):** The
+[bulk-phase and entropy study](contrib/v4_bulk_diagnosis_20261117/README.md)
+reaches L=144 in both parities and reproduces the L=96 state independently.
+The latest interrupted chi=320 entropy slope is 2.57 for L=96 to 144,
+versus 2.82 for L=48 to 96; size/window drift and incomplete accuracy
+checks prevent identifying a thermodynamic c. Density/bond and secondary
+valley-channel diagnostics do not establish persistent bulk order.
+The user requested a battery-saving stop; all jobs are stopped and
+checkpoints are preserved.
+
 **Mobile length-selection test (2026-11-17):** A
 [tail-sensitive comparison](contrib/mobile_length_selection_20261117/README.md)
 reduces legal vacuum length words to explicit scalar vacancy problems at

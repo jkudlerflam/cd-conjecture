@@ -86,12 +86,14 @@ def supplementary(root,original,obs):
 
 
 def main(root=HERE):
-    obs={};rows=[];numerics=[]
+    obs={};rows=[];numerics=[];interrupted=[]
     for p in sorted((root/'observations').glob('*.json')):
         d=json.loads(p.read_text());obs[p.name]=d;rows.append(summary(d,str(p.relative_to(root))))
     for p in sorted((root/'outputs').glob('*.json')):
         d=json.loads(p.read_text())
         if d['status']=='done':numerics.append(dict(tag=d['cfg']['tag'],**gates(d,root)))
+        elif d['status']=='interrupted':interrupted.append(dict(tag=d['cfg']['tag'],saved_sweeps=len(d['hist']),
+            reason=d['interruption_reason'],last_sweep_checks=gates(d,root) if len(d['hist'])>=2 else None))
     for r in rows:
         p=root/'outputs'/(r['tag']+'.json')
         r['run_status']=json.loads(p.read_text())['status'] if p.exists() else 'reused_completed_state'
@@ -152,7 +154,7 @@ def main(root=HERE):
             ar=y['profile_peak']['amplitude']/x['profile_peak']['amplitude'];cr=y['connected_peak']['connected_over_M']/x['connected_peak']['connected_over_M']
             eligibility.append(dict(P=P,amplitude_ratio=ar,connected_peak_weight_ratio=cr,condition_met=ar>.85 and cr<=.85))
     out=dict(rows=rows,has_interim_observations=any(r['run_status']=='running' for r in rows),
-        numerical_gates=numerics,accuracy_comparisons=cmp,best_original_states=original,
+        numerical_gates=numerics,interrupted_runs=interrupted,accuracy_comparisons=cmp,best_original_states=original,
         common_wavevector_reference=ref['tag'],common_wavevectors=fixedq,common_q_comparisons=fixed,
         independent_start=start,size_comparisons=size_pairs,boundary_probe_eligibility=eligibility,
         supplementary=supplementary(root,original,obs),
