@@ -8,7 +8,7 @@ had independent human review. Conditional infrared predictions are not
 established microscopic counterexamples.
 
 **Active stability follow-up (2026-11-18):** The four existing research
-chats are being redeployed to finite-density matching at the asymmetric
+chats are active on finite-density matching at the asymmetric
 qubit candidate and the remaining interacting/thermodynamic gaps of the
 small-d constructions. The [new assignments](contrib/research_coordination_20261116/STABILITY_ROUND_20261118.md)
 replace further three-valley exploration with the two-mode stability test.

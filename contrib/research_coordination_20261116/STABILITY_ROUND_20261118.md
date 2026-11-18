@@ -203,5 +203,18 @@ calculation with hypotheses, uncertainty and reproduction instructions.
 
 ## Deployment record
 
-The coordinator will record acknowledged redeployment and observed progress
-here. This round reuses existing chats rather than creating additional ones.
+All four follow-up messages were accepted with explicit model
+`gpt-6-astra` and reasoning `max`. A compact progress check observed all
+four new turns in progress. The titles were updated to reflect the current
+assignments; the earlier research remains in the same chat histories.
+
+| Chat | ID | New work |
+| --- | --- | --- |
+| Qubit locking and detuning | `01a1ef70-d7d6-71f1-9d56-05c96f7513d9` | Connected finite-density amplitude and locking cutoff |
+| Qubit modes at finite density | `01a1ef71-2c80-74b1-9b8e-4a1ed526b266` | Actual medium response, covariance and dressed momenta |
+| Nine-state interacting theory | `01a1ef71-7c28-7d71-8156-6188bfdc3250` | Uniform local matching and generated interactions |
+| Ten-state cell selection | `01a1ef71-ce96-7703-aa33-1337b9d16956` | Half-occupancy susceptibility and relative-curvature bounds |
+
+Exactly four existing chats were redeployed. Startup is confirmed;
+completion and scientific conclusions will be recorded after the results
+are available. Long production has not been restarted by this deployment.

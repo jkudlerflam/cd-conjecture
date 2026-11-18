@@ -74,7 +74,7 @@ These are spelled out in [CONTRIBUTING.md](CONTRIBUTING.md). In brief, tag every
 ## Where things stand
 
 **Stability follow-up (2026-11-18):** Four existing GPT-6 Astra Max chats
-are being redeployed to the most direct remaining tests: finite-density
+are active on the most direct remaining tests: finite-density
 locking and dressed modes at the fixed asymmetric qubit bond, uniform
 interaction control for the all-n d=9 family, and thermodynamic cell
 selection in the corrected d=10 model. The
