@@ -162,6 +162,9 @@ For comparison to the normalization of a spatially local vertex define
 The factor L follows from four Fourier legs normalized by 1/sqrt(L)
 and one spatial sum. Equation (9) is a normalization, **not a proof
 that this static finite 1PI response is local**.
+Throughout, g4,L denotes the coefficient of lambda^2. It is not the full
+response at lambda=1, whose analytic branch and higher terms also need
+control.
 
 ## 3. Source-projected bound and numerical term
 
@@ -224,7 +227,7 @@ including those in chi, by R_Lambda. Equations (5)--(10) then describe
 the exact response of this *spectrally projected finite model*. Pi commutes
 with number and translation, so the selection rules still hold.
 
-| L | Lambda/t | chi_A | chi_B | normalized coefficient (9) |
+| L | Lambda (physical cutoff/t) | chi_A | chi_B | normalized coefficient (9) |
 |---|---|---|---|---|
 |20|0.25|0.02377920|0.02337350|+12379.4316|
 |20|0.50|0.02377920|0.02337350|+10779.5697|

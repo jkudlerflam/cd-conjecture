@@ -50,8 +50,9 @@ The new results are:
    coefficient, with Fourier operators normalized by `1/sqrt(L)` and
    `t=1/80`. These are finite response values, not a converged local
    matching coefficient. Both attractions, the blockade and the new
-   asymmetric separation-two pair source are retained. Dropping that
-   source changes the coefficient by 1.93% at L=20 and 0.74% at L=24.
+   asymmetric separation-two pair source are retained. Including that
+   source reduces the magnitude relative to the B3-only value by 1.93%
+   at L=20 and 0.74% at L=24.
 3. **[proved counterexample]** A connected response of a *composite pair*
    followed by pair-level amputation need not be a quartet interaction.
    It is nonzero in an exactly quadratic squeezed oscillator whose
@@ -65,6 +66,12 @@ mistaken for a local Wilson matching procedure. The finite leading model
 also has no established uniform microscopic remainder at epsilon=1/40.
 The missing dressed covariance, velocities, field and composite-operator
 normalizations, matching scale, and momentum uncertainty remain explicit.
+
+[RG.md](RG.md) derives a conditional coupled-flow budget that includes
+dimension running and all active nearby resonances. It gives quantitative
+targets for the missing amplitude and uncertainty rather than assigning
+an order-one C4. [REGISTRATION.md](REGISTRATION.md) audits the actual saved
+observables and specifies the minimum new measurements; it is not launched.
 
 ## How it was established and checked
 
@@ -94,12 +101,15 @@ From the repository root, with [requirements.txt](requirements.txt):
 ```sh
 python -B contrib/qubit_detuned_quartet_20261118/medium.py
 python -B contrib/qubit_detuned_quartet_20261118/check_matching.py
+python -B contrib/qubit_detuned_quartet_20261118/flow.py
+python -B contrib/qubit_detuned_quartet_20261118/audit_inputs.py
 ```
 
 The saved run took 7.3 seconds for the finite responses and 0.2 seconds for
 the independent check. Each script enforces one numerical worker. The
 largest sector searched has dimension 1,144. No MPS optimization,
 production run, remote job or checkpoint transfer is performed.
+The flow and provenance checks take under two seconds combined.
 
 ## Relation to prior work
 

@@ -1,0 +1,217 @@
+{
+  "date": "2026-11-18",
+  "records": [
+    {
+      "path": "codex/work_C195/typhon_out/out512/p153c_L512_P0_rand1.json",
+      "sha256": "bddc65736e22c0ed976a6e1ede84e4c50615db870d63f3f1d89d0268c229b4e3",
+      "cfg": {
+        "tag": "p153c_L512_P0_rand1",
+        "model": "p153",
+        "gauge": null,
+        "hz": -19.97589125,
+        "L": 512,
+        "P": 0,
+        "init": "rand:1",
+        "sched": [
+          [
+            32,
+            0.001,
+            1e-07,
+            2
+          ],
+          [
+            64,
+            0.0001,
+            1e-08,
+            2
+          ],
+          [
+            128,
+            0.0001,
+            1e-08,
+            2
+          ],
+          [
+            192,
+            1e-05,
+            1e-08,
+            2
+          ],
+          [
+            256,
+            1e-05,
+            1e-08,
+            2
+          ],
+          [
+            384,
+            0.0,
+            1e-08,
+            2
+          ],
+          [
+            512,
+            0.0,
+            1e-09,
+            2
+          ]
+        ],
+        "conv": [
+          {
+            "chi": 768,
+            "res_tol": 1e-09,
+            "min_sweeps": 3,
+            "max_sweeps": 6,
+            "tolE": 4e-09,
+            "tolS": 0.0005
+          },
+          {
+            "chi": 1024,
+            "res_tol": 1e-09,
+            "min_sweeps": 3,
+            "max_sweeps": 6,
+            "tolE": 4e-09,
+            "tolS": 0.0005
+          }
+        ],
+        "final": {
+          "chi": 1536,
+          "res_tol": 1e-09,
+          "min_sweeps": 3,
+          "max_sweeps": 8,
+          "tolE": 4e-09,
+          "tolS": 0.0005
+        },
+        "gwin": 48,
+        "variance": false,
+        "maxit": 300
+      },
+      "measurement_keys": [
+        "Z",
+        "dens",
+        "P_bond",
+        "e_bond",
+        "gwin",
+        "Gb_re",
+        "Gb_im",
+        "Gf_re",
+        "Gf_im",
+        "CP",
+        "CP_i0",
+        "t_meas"
+      ],
+      "one_body_window": [
+        232,
+        48
+      ],
+      "CP_anchor": 128,
+      "CP_distance_range": [
+        2,
+        256
+      ],
+      "CP_operator": "P_j=XX+YY=2(S+_j S-_(j+1)+S-_j S+_(j+1)); connected neutral bond correlator.",
+      "has_four_time_source_response": false,
+      "has_amputating_dynamic_single_response": false
+    },
+    {
+      "path": "codex/work_C195/typhon_out_x2048/p153c_L512_P0_rand1.json",
+      "sha256": "11f288caff28c58beba36ffc2e31bf16be47c4cc75c0281c2e23b0fadf0fc8f1",
+      "cfg": {
+        "tag": "p153c_L512_P0_rand1",
+        "model": "p153",
+        "gauge": null,
+        "hz": -19.97589125,
+        "L": 512,
+        "P": 0,
+        "init": "file:/scratch/lustre/jkudlerflam/c19x/c195/out512/ckpt/p153c_L512_P0_rand1.npz",
+        "sched": [],
+        "final": {
+          "chi": 2048,
+          "res_tol": 1e-09,
+          "min_sweeps": 3,
+          "max_sweeps": 6,
+          "tolE": 4e-09,
+          "tolS": 0.0005
+        },
+        "gwin": 48,
+        "variance": false,
+        "maxit": 300,
+        "continues": {
+          "src": "/scratch/lustre/jkudlerflam/c19x/c195/out512",
+          "chi": 1536,
+          "sweeps": 30,
+          "E_phys": -5130.544428735329,
+          "Sbar1": 2.3112110476847607,
+          "Sbar6": 2.3077141506316248,
+          "Sbar12": 2.3053570956305087,
+          "trunc": 1.5030976463492607e-10
+        }
+      },
+      "measurement_keys": [
+        "Z",
+        "dens",
+        "P_bond",
+        "e_bond",
+        "gwin",
+        "Gb_re",
+        "Gb_im",
+        "Gf_re",
+        "Gf_im",
+        "CP",
+        "CP_i0",
+        "t_meas"
+      ],
+      "one_body_window": [
+        232,
+        48
+      ],
+      "CP_anchor": 128,
+      "CP_distance_range": [
+        2,
+        256
+      ],
+      "CP_operator": "P_j=XX+YY=2(S+_j S-_(j+1)+S-_j S+_(j+1)); connected neutral bond correlator.",
+      "has_four_time_source_response": false,
+      "has_amputating_dynamic_single_response": false
+    }
+  ],
+  "sources": [
+    {
+      "path": "codex/work_C195/models.py",
+      "sha256": "6bc11c0b6573ae287c3321eae33fc13d66a804058cab44cc3af779989fb61c74"
+    },
+    {
+      "path": "codex/work_C195/z2dmrg.py",
+      "sha256": "8b55ff8a0c8ada4d3da36cc208a92566eb0459c045ea93b9facdc74a2980e847"
+    },
+    {
+      "path": "contrib/qubit_stable_two_modes_20261118/quartet.py",
+      "sha256": "90a400998829660b645d15369638ef30cb70b3b8d42d42ddeabb0fd18be854ac"
+    },
+    {
+      "path": "contrib/qubit_finite_density_modes_20261118/interface.json",
+      "sha256": "ac17965ff0145c3c1c01c9daaa8b01c28c27ddf1e5b9d9945d648958fb119116"
+    }
+  ],
+  "fixed_microscopic_coefficients": {
+    "XX": 0.5002549063202599,
+    "YY": -0.49974509367974007,
+    "XY": 0.006244799657946725,
+    "YX": -0.006244799657946725,
+    "ZZ": 10,
+    "Z": -19.97589125
+  },
+  "literal_monomials": 6,
+  "independent_real_controls_before_scale": 5,
+  "independent_real_controls_after_scale": 4,
+  "nonzero_coefficient_spread": 3198.8041801437107,
+  "absent_information": [
+    "dynamic connected six-insertion source response",
+    "full interacting external propagators for amputation",
+    "local matching and UV contact subtraction",
+    "single-field and fused quartet vertex normalization",
+    "dressed covariance and velocities with errors",
+    "a positive thermodynamic mismatch lower bound"
+  ],
+  "conclusion": "Equal-time one-body and neutral-bond records do not determine the connected static quartet response; no missing correlator is inferred by Wick factorization in this interacting medium."
+}

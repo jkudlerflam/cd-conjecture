@@ -1,0 +1,165 @@
+{
+  "status": "Conditional calibration only; actual p153c inputs are unknown.",
+  "convention": "H4=lambda4 V4+h.c.; S4=y4/(2pi a0^2) integral dx d(u tau) cos; y4=4pi a0^2 abs(lambda4)/u.",
+  "velocity": "u/t in physical sites per effective time",
+  "actual_inputs": {
+    "x_lower": null,
+    "q_lower": null,
+    "a0": null,
+    "velocity": null,
+    "lambda4": null,
+    "other_vertex_budget": null,
+    "C": null,
+    "D": null
+  },
+  "examples": [
+    {
+      "a0": 4,
+      "q_lower": 0.01,
+      "x_lower": 1.2,
+      "C": 1,
+      "D": 1,
+      "rho": 0.1,
+      "l_detuning": 3.2188758248682006,
+      "dimension_drift_cap": 0.03218875824868201,
+      "comparison_growth": 0.8321887582486821,
+      "Y0_max": 0.006174165152460469,
+      "lambda4_over_t_per_velocity_max": 3.070777823374404e-05,
+      "comparison_check": {
+        "final_Y": 0.08970904131026683,
+        "max_Y": 0.08970904131026683,
+        "actual_dimension_drift": 0.00464673620292011
+      }
+    },
+    {
+      "a0": 4,
+      "q_lower": 0.01,
+      "x_lower": 1.5,
+      "C": 1,
+      "D": 1,
+      "rho": 0.1,
+      "l_detuning": 3.2188758248682006,
+      "dimension_drift_cap": 0.03218875824868201,
+      "comparison_growth": 0.5321887582486821,
+      "Y0_max": 0.01562493271340136,
+      "lambda4_over_t_per_velocity_max": 7.771203990050273e-05,
+      "comparison_check": {
+        "final_Y": 0.08981454381792599,
+        "max_Y": 0.08981454381792599,
+        "actual_dimension_drift": 0.00693329488644534
+      }
+    },
+    {
+      "a0": 4,
+      "q_lower": 0.01,
+      "x_lower": 1.8,
+      "C": 1,
+      "D": 1,
+      "rho": 0.1,
+      "l_detuning": 3.2188758248682006,
+      "dimension_drift_cap": 0.03218875824868201,
+      "comparison_growth": 0.23218875824868196,
+      "Y0_max": 0.03860750965332128,
+      "lambda4_over_t_per_velocity_max": 0.00019201800005606712,
+      "comparison_check": {
+        "final_Y": 0.090399690503877,
+        "max_Y": 0.090399690503877,
+        "actual_dimension_drift": 0.01223243327177781
+      }
+    },
+    {
+      "a0": 4,
+      "q_lower": 0.01,
+      "x_lower": 2.0,
+      "C": 1,
+      "D": 1,
+      "rho": 0.1,
+      "l_detuning": 3.2188758248682006,
+      "dimension_drift_cap": 0.03218875824868201,
+      "comparison_growth": 0.03218875824868201,
+      "Y0_max": 0.06904532511139562,
+      "lambda4_over_t_per_velocity_max": 0.00034340327465204947,
+      "comparison_check": {
+        "final_Y": 0.09167342658773006,
+        "max_Y": 0.09167342658773006,
+        "actual_dimension_drift": 0.020185406041058673
+      }
+    },
+    {
+      "a0": 8,
+      "q_lower": 0.01,
+      "x_lower": 1.2,
+      "C": 1,
+      "D": 1,
+      "rho": 0.1,
+      "l_detuning": 2.5257286443082556,
+      "dimension_drift_cap": 0.02525728644308256,
+      "comparison_growth": 0.8252572864430826,
+      "Y0_max": 0.011245319618912075,
+      "lambda4_over_t_per_velocity_max": 1.3982407843735354e-05,
+      "comparison_check": {
+        "final_Y": 0.09367922395965428,
+        "max_Y": 0.09367922395965428,
+        "actual_dimension_drift": 0.004998498396789897
+      }
+    },
+    {
+      "a0": 8,
+      "q_lower": 0.01,
+      "x_lower": 1.5,
+      "C": 1,
+      "D": 1,
+      "rho": 0.1,
+      "l_detuning": 2.5257286443082556,
+      "dimension_drift_cap": 0.02525728644308256,
+      "comparison_growth": 0.5252572864430826,
+      "Y0_max": 0.023280248519514015,
+      "lambda4_over_t_per_velocity_max": 2.894661428350339e-05,
+      "comparison_check": {
+        "final_Y": 0.09384969354757354,
+        "max_Y": 0.09384969354757354,
+        "actual_dimension_drift": 0.007269006570046921
+      }
+    },
+    {
+      "a0": 8,
+      "q_lower": 0.01,
+      "x_lower": 1.8,
+      "C": 1,
+      "D": 1,
+      "rho": 0.1,
+      "l_detuning": 2.5257286443082556,
+      "dimension_drift_cap": 0.02525728644308256,
+      "comparison_growth": 0.22525728644308252,
+      "Y0_max": 0.04746938492862922,
+      "lambda4_over_t_per_velocity_max": 5.902333794471295e-05,
+      "comparison_check": {
+        "final_Y": 0.09437275715429379,
+        "max_Y": 0.09437275715429379,
+        "actual_dimension_drift": 0.011936938502585814
+      }
+    },
+    {
+      "a0": 8,
+      "q_lower": 0.01,
+      "x_lower": 2.0,
+      "C": 1,
+      "D": 1,
+      "rho": 0.1,
+      "l_detuning": 2.5257286443082556,
+      "dimension_drift_cap": 0.02525728644308256,
+      "comparison_growth": 0.02525728644308256,
+      "Y0_max": 0.07537641469035229,
+      "lambda4_over_t_per_velocity_max": 9.372288273839159e-05,
+      "comparison_check": {
+        "final_Y": 0.09522555629833367,
+        "max_Y": 0.09522555629833367,
+        "actual_dimension_drift": 0.018007979115824524
+      }
+    }
+  ],
+  "zero_growth_check": {
+    "calculated": 0.07564939812194435,
+    "analytic": 0.07564939812194435
+  }
+}
