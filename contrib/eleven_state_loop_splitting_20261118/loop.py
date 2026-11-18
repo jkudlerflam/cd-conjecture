@@ -42,9 +42,12 @@ def coefficients(n,D,w,a=4.,td=0.):
     J2=sp.kronsum(sp.csc_matrix(J),sp.csc_matrix(J),format='csc')
     y=-lu.solve(J2@x)  # R'(0)b=i y
     U1,V1=restrictions(y,n,s)
-    B=U.T@lu.solve(U1)-U1.T@RU+V.T@lu.solve(V1)-V1.T@RV
+    R1U,R1V=lu.solve(U1),lu.solve(V1)
+    B=U.T@R1U-U1.T@RU+V.T@R1V-V1.T@RV
     B-=RU.T@(J2@RU)+RV.T@(J2@RV)
-    assert la.norm(B+B.T)<1e-9*max(la.norm(B),1e-100)
+    scale=la.norm(U)*la.norm(R1U)+la.norm(V)*la.norm(R1V)+la.norm(RU)**2+la.norm(RV)**2
+    assert la.norm(B+B.T)<1e-10*max(scale,1e-100)
+    B=(B-B.T)/2  # Enforce the proved identity after checking its residual.
     return T,-2j*B
 
 

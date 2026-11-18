@@ -121,6 +121,10 @@ correction is symmetric. Expanding b_D*f=f-tau_D f'+O(D^-2) gives
 where S is real symmetric. The expansion is at each fixed finite n,w,q;
 it does not assert a uniform-in-n error bound. It also includes the
 scalar expansion of D^(2p+2) beta_D(0)^2 in S.
+The normalized coefficients are rational functions of D with a regular
+expansion at 1/D=0, by finite block elimination. Thus the displayed
+first-order delay coefficient specifies an O(D^-2) remainder without
+assuming uniform high-rail bounds on every time derivative.
 
 ## 4. The actual loop source and the low-rail matrix B
 
@@ -194,10 +198,12 @@ the generalized eigenvalues have distinct valuations u^(4j).
 The limiting vectors are reverse Gram-Schmidt vectors: x_j has no
 components before j and is Gamma-orthogonal to every later coordinate.
 
-To state the subsequent w->0 coefficient economically, rescale time
-by 2a and the positive small variables w,u,nu accordingly. This is
-a change of variables in the proof; physical Delta remains 3 and
-a tends to 4. Removing positive diagonal powers of w gives
+To state the subsequent w->0 coefficient economically, put
+c=2a, omega=w/c, U=c u and N=nu c^3. Then q=(omega U)^2 exactly.
+Time y=ct gives Gamma=c^-3 Gamma_bar, Q=c^-2 Q_bar and B=c^-3 B_bar,
+where the barred low Hamiltonian has diagonal 1/2 and hopping omega.
+This is a change of variables in the proof; physical Delta remains 3
+and a tends to 4. Removing the diagonal powers omega^(2i) gives
 
     C_ij=(2i+2j+2)!/[(2i+1)!(2j+1)!],
     Q^0_ij=C_ij (i-j)/[2(i+j+1)].                    (11)
@@ -208,10 +214,10 @@ n+2(j-i) hops. Integrating its three positive time intervals gives
 
     B_ij=w^n/(2a)^(n+3)+O(w^(n+2)), i<j.             (12)
 
-After the w^(2i) congruence, the unique largest entry is the last
+After the corresponding diagonal congruence, the unique largest entry is the last
 off-diagonal pair (n-2,n-1). Up to a common positive factor,
 
-    B_scaled=w^(6-3n)[J+O(w^2)],
+    B_bar,scaled=omega^(6-3n)[J+O(omega^2)],
     J_(n-2,n-1)=1, J_(n-1,n-2)=-1.                  (13)
 
 Let v_j have v_j,j=1, v_j,i=0 for i<j, and (C v_j)_i=0 for i>j.
@@ -221,20 +227,24 @@ C-orthogonal. Define the rational coefficients
     L_j=sum_(l>j) (v_j^T Q^0 v_l)(v_j^T J v_l)/d_l,
     j=0,...,n-2.                                    (14)
 
-The normalized vectors are v_j/sqrt(d_j), and the leading generalized
-eigenvalues are u^(4j)/d_j, up to the positive rescalings above.
+The barred normalized vectors are v_j/sqrt(d_j), and the leading
+generalized eigenvalues are N U^(4j)/d_j. In the physical Gamma metric,
+Q_jl gains a factor c and B_jl a factor omega^(6-3n).
 Thus the sum in (10), for j<n-1, has leading hierarchy
 
-    common_positive_factor * L_j u^(-4j)/nu,         (15)
+    [omega^(6-3n)/(nu c^2)] L_j U^(-4j),             (15)
 
 provided L_j is nonzero. Terms with l<j have smaller inverse powers.
 The last branch has coefficient
 
-    -common_positive_factor * L_(n-2) u^(-4(n-2))/nu.
+    -[omega^(6-3n)/(nu c^2)] L_(n-2) U^(-4(n-2)).
 
 The last two branches therefore have opposite leading signs. For
 full distinctness it suffices that L_j !=0 for j=1,...,n-2; L_0
-need not be nonzero, since its response stays bounded on this scale.
+need not be nonzero, since its response divided by the common factor
+stays bounded on this scale. The ordering is: first choose small
+positive omega so the nonzero limiting coefficients persist, then
+choose small U so their different valuations dominate the remainders.
 
 There is one closed all-n coefficient. Write r=n-2. Then
 v_(n-1)=e_(n-1), v_(n-2)=e_r-(C_(r,r+1)/C_(r+1,r+1))e_(r+1),
@@ -257,6 +267,13 @@ Exact rational elimination at n=4 gives
 In particular L_1 !=0 completes the n=4 case analytically. The other
 small values are n=2: (-1/20), and n=3: (-95/32368,-1/36).
 moments.py reproduces these fractions using rational arithmetic.
+An explicit witness for the only extra n=4 condition is
+
+    v_1=(0,1,-92/225,49/825),
+    v_2=(0,0,1,-3/13), v_3=(0,0,0,1),
+    d_2=900/13, d_3=3432,
+    L_1=-49/25740-2576/7239375=-5033/2227500.
+
 They establish finite cases of the asymptotic construction, not an
 all-n extrapolation from numerical roots.
 
