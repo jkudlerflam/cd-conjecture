@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "ED_points": 50,
+  "operator_points": 7,
+  "max_errors": {
+    "energy_reconstruction": 6.356648692186777e-10,
+    "structure_sum_rule": 4.440892098500626e-16,
+    "structure_positivity_violation": 1.599878216018702e-12,
+    "spectral_operator_match": 1.1546319456101628e-12,
+    "projected_energy_match": 1.0693668173189508e-12,
+    "eigenpair_residual": 5.706526858238274e-11
+  },
+  "scope": "Finite matrix and contraction checks only; no thermodynamic certification."
+}

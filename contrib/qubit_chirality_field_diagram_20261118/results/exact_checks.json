@@ -1,0 +1,144 @@
+{
+  "checks": [
+    {
+      "L": 4,
+      "periodic": false,
+      "errors": {
+        "parity": 0.0,
+        "antiunitary_A": 0.0,
+        "h_reflection": 0.0,
+        "unitary_field_reversal": 0.0,
+        "jordan_wigner_full_field_and_parity_seam": 0.0,
+        "antiunitary_inversion": 1.7763568394002505e-15,
+        "real_frame_P0": 0.0,
+        "kappa_action_P0": 0.0,
+        "B_action_P0": 0.0,
+        "real_frame_P1": 0.0,
+        "kappa_action_P1": 0.0,
+        "B_action_P1": 0.0,
+        "kappa_A_odd": 0.0,
+        "kappa_C_even": 0.0,
+        "kappa_F_odd": 0.0
+      }
+    },
+    {
+      "L": 4,
+      "periodic": true,
+      "errors": {
+        "parity": 0.0,
+        "antiunitary_A": 0.0,
+        "h_reflection": 0.0,
+        "unitary_field_reversal": 0.0,
+        "jordan_wigner_full_field_and_parity_seam": 0.0,
+        "antiunitary_inversion": 8.881784197001252e-16,
+        "real_frame_P0": 0.0,
+        "kappa_action_P0": 0.0,
+        "B_action_P0": 0.0,
+        "translation_P0": 0.0,
+        "projective_A_T_P0": 0.0,
+        "real_frame_P1": 0.0,
+        "kappa_action_P1": 0.0,
+        "B_action_P1": 0.0,
+        "translation_P1": 0.0,
+        "projective_A_T_P1": 0.0,
+        "kappa_A_odd": 0.0,
+        "kappa_C_even": 0.0,
+        "kappa_F_odd": 0.0
+      }
+    },
+    {
+      "L": 6,
+      "periodic": false,
+      "errors": {
+        "parity": 0.0,
+        "antiunitary_A": 0.0,
+        "h_reflection": 0.0,
+        "unitary_field_reversal": 0.0,
+        "jordan_wigner_full_field_and_parity_seam": 1.7763568394002505e-15,
+        "antiunitary_inversion": 3.552713678800501e-15,
+        "real_frame_P0": 1.7763568394002505e-15,
+        "kappa_action_P0": 0.0,
+        "B_action_P0": 0.0,
+        "real_frame_P1": 8.881784197001252e-16,
+        "kappa_action_P1": 0.0,
+        "B_action_P1": 0.0,
+        "kappa_A_odd": 0.0,
+        "kappa_C_even": 0.0,
+        "kappa_F_odd": 0.0
+      }
+    },
+    {
+      "L": 6,
+      "periodic": true,
+      "errors": {
+        "parity": 0.0,
+        "antiunitary_A": 0.0,
+        "h_reflection": 0.0,
+        "unitary_field_reversal": 0.0,
+        "jordan_wigner_full_field_and_parity_seam": 3.552713678800501e-15,
+        "antiunitary_inversion": 3.552713678800501e-15,
+        "real_frame_P0": 3.552713678800501e-15,
+        "kappa_action_P0": 0.0,
+        "B_action_P0": 0.0,
+        "translation_P0": 0.0,
+        "projective_A_T_P0": 0.0,
+        "real_frame_P1": 8.881784197001252e-16,
+        "kappa_action_P1": 0.0,
+        "B_action_P1": 0.0,
+        "translation_P1": 8.881784197001252e-16,
+        "projective_A_T_P1": 0.0,
+        "kappa_A_odd": 0.0,
+        "kappa_C_even": 0.0,
+        "kappa_F_odd": 0.0
+      }
+    },
+    {
+      "L": 8,
+      "periodic": false,
+      "errors": {
+        "parity": 0.0,
+        "antiunitary_A": 0.0,
+        "h_reflection": 0.0,
+        "unitary_field_reversal": 0.0,
+        "jordan_wigner_full_field_and_parity_seam": 3.552713678800501e-15,
+        "antiunitary_inversion": 7.105427357601002e-15,
+        "real_frame_P0": 3.552713678800501e-15,
+        "kappa_action_P0": 0.0,
+        "B_action_P0": 0.0,
+        "real_frame_P1": 1.7763568394002505e-15,
+        "kappa_action_P1": 0.0,
+        "B_action_P1": 0.0,
+        "kappa_A_odd": 0.0,
+        "kappa_C_even": 0.0,
+        "kappa_F_odd": 0.0
+      }
+    },
+    {
+      "L": 8,
+      "periodic": true,
+      "errors": {
+        "parity": 0.0,
+        "antiunitary_A": 0.0,
+        "h_reflection": 0.0,
+        "unitary_field_reversal": 0.0,
+        "jordan_wigner_full_field_and_parity_seam": 3.552713678800501e-15,
+        "antiunitary_inversion": 7.105427357601002e-15,
+        "real_frame_P0": 3.552713678800501e-15,
+        "kappa_action_P0": 0.0,
+        "B_action_P0": 0.0,
+        "translation_P0": 8.881784197001252e-16,
+        "projective_A_T_P0": 0.0,
+        "real_frame_P1": 1.7763568394002505e-15,
+        "kappa_action_P1": 0.0,
+        "B_action_P1": 0.0,
+        "translation_P1": 1.7763568394002505e-15,
+        "projective_A_T_P1": 0.0,
+        "kappa_A_odd": 0.0,
+        "kappa_C_even": 0.0,
+        "kappa_F_odd": 0.0
+      }
+    }
+  ],
+  "max_error": 7.105427357601002e-15,
+  "runtime_seconds": 0.6270484160049818
+}
