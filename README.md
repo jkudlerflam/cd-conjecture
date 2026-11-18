@@ -73,6 +73,15 @@ These are spelled out in [CONTRIBUTING.md](CONTRIBUTING.md). In brief, tag every
 
 ## Where things stand
 
+**Ten-state family located (2026-11-18):** The d=10 arbitrary-c
+construction is [contrib/markerless_d9_d10/](contrib/markerless_d9_d10/README.md),
+dated 2026-11-12 and published today. It removes the marker letters of the
+d=11 and d=13 bonds: nine material states give c=n on frozen cells, and one
+uncoloured vacancy gives c=n+1 at d=10. The legal sector is an exact
+invariant, and 2n simple Fermi points are certified at n=9 to 20. The
+infrared step is the same conditional input as before. An AI referee
+report is in the folder.
+
 **Smallest-d continuation (2026-11-18):** Direct GitHub branch, issue,
 comment and history checks still identify no d=10 arbitrary-c source.
 New work supplies a literal nine-state two-flavour resonant seed with a

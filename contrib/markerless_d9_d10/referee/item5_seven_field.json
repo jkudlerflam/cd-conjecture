@@ -1,0 +1,54 @@
+[
+ {
+  "n": 2,
+  "design": "one rung",
+  "fermi_points_at_zero_field": 0,
+  "needed": 4,
+  "max_fermi_points_over_field_scan": 2,
+  "at_field_over_normT": -1.53,
+  "field_window_with_max_count": [
+   -1.53,
+   1.53
+  ],
+  "spectrum_k_vs_minus_k_asymmetry": 0.0
+ },
+ {
+  "n": 2,
+  "design": "two rungs with flux",
+  "fermi_points_at_zero_field": 0,
+  "needed": 4,
+  "max_fermi_points_over_field_scan": 2,
+  "at_field_over_normT": -1.44,
+  "field_window_with_max_count": [
+   -1.44,
+   1.44
+  ],
+  "spectrum_k_vs_minus_k_asymmetry": 0.8011915273657509
+ },
+ {
+  "n": 3,
+  "design": "one rung",
+  "fermi_points_at_zero_field": 2,
+  "needed": 6,
+  "max_fermi_points_over_field_scan": 2,
+  "at_field_over_normT": -1.14,
+  "field_window_with_max_count": [
+   -1.14,
+   1.14
+  ],
+  "spectrum_k_vs_minus_k_asymmetry": 0.0
+ },
+ {
+  "n": 3,
+  "design": "two rungs with flux",
+  "fermi_points_at_zero_field": 2,
+  "needed": 6,
+  "max_fermi_points_over_field_scan": 2,
+  "at_field_over_normT": -1.07,
+  "field_window_with_max_count": [
+   -1.07,
+   1.07
+  ],
+  "spectrum_k_vs_minus_k_asymmetry": 0.1339631608993288
+ }
+]

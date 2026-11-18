@@ -1,0 +1,13 @@
+### n=14 eta_power=68
+{"n": 14, "status": "proved_integer_interval_certificate", "root_count": 28, "D": 1000, "carrier_diagonal": 4, "alphabet": 9, "data_sites": 14, "cell_length": 15, "loop_eta_power": -68, "field_normalized_power": -129, "delta2_lower": 0.014722253318828302, "delta4_lower": 6.494689561264666e-07, "delta4_witness": [[14, 26], [15, 24]], "minimum_endpoint_congruence_margin": 1.7562149991566786e-09, "whitened_matrix_error_
+### n=14 eta_power=74
+{"n": 14, "status": "proved_integer_interval_certificate", "root_count": 28, "D": 1000, "carrier_diagonal": 4, "alphabet": 9, "data_sites": 14, "cell_length": 15, "loop_eta_power": -74, "field_normalized_power": -129, "delta2_lower": 0.014591541334422314, "delta4_lower": 6.647541751076831e-07, "delta4_witness": [[3, 24], [7, 20]], "minimum_endpoint_congruence_margin": 1.795290715732685e-09, "whitened_matrix_error_bou
+### n=16 eta_power=84
+{"n": 16, "status": "proved_integer_interval_certificate", "root_count": 32, "D": 1000, "carrier_diagonal": 4, "alphabet": 9, "data_sites": 16, "cell_length": 17, "loop_eta_power": -84, "field_normalized_power": -147, "delta2_lower": 0.014428807646556343, "delta4_lower": 3.436309124931301e-06, "delta4_witness": [[3, 30], [5, 29]], "minimum_endpoint_congruence_margin": 1.8813534504520436e-09, "whitened_matrix_error_bo
+### n=16 eta_power=92
+{"n": 16, "status": "proved_integer_interval_certificate", "root_count": 32, "D": 1000, "carrier_diagonal": 4, "alphabet": 9, "data_sites": 16, "cell_length": 17, "loop_eta_power": -92, "field_normalized_power": -147, "delta2_lower": 0.014462989413616699, "delta4_lower": 2.9035230555904928e-09, "delta4_witness": [[5, 26], [7, 24]], "minimum_endpoint_congruence_margin": 1.8867174594456675e-09, "whitened_matrix_error_b
+### n=20 eta_power=112
+{"n": 20, "status": "proved_integer_interval_certificate", "root_count": 40, "D": 1000, "carrier_diagonal": 4, "alphabet": 9, "data_sites": 20, "cell_length": 21, "loop_eta_power": -112, "field_normalized_power": -184, "delta2_lower": 0.014056341322202926, "delta4_lower": 1.6074812394458575e-06, "delta4_witness": [[13, 26], [19, 20]], "minimum_endpoint_congruence_margin": 1.767652960842013e-09, "whitened_matrix_error
+### n=20 eta_power=122
+    assert d>0,('pair interval overlap',u[2],v[2],float(d))
+AssertionError: ('pair interval overlap', [13, 26], [19, 20], -5.334831500808422e-09)

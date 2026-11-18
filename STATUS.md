@@ -11,7 +11,9 @@ Latorre and Sierra ([arXiv:2403.17242](https://arxiv.org/abs/2403.17242)) conjec
 
 ## In short
 
-1. Explicit conditional candidates exist at d=11 and d=13, alongside proposed
+1. Explicit conditional candidates exist at d=9 (frozen cells, c=n) and
+   d=10 (mobile cells, c=n+1), with 2n simple Fermi points certified at
+   n=9 to 20, alongside the earlier d=11 and d=13 bonds and proposed
    unbounded-c families at fixed d. Their finite certificates and partial
    matching results do not establish the full microscopic CFT conclusions.
 2. At d = 2 there is a candidate counterexample, an explicit nearest-neighbour qubit chain that reads c = 2.00 on open chains up to L = 256, converged in bond dimension, and 1.95 to 1.98 from L = 256 to 512, passing the same test there, with a mechanism and an effective model that give the same answer. What separates it from an established counterexample is a short list of convergence checks, given below, most of them running.
@@ -32,6 +34,14 @@ Latorre and Sierra ([arXiv:2403.17242](https://arxiv.org/abs/2403.17242)) conjec
    leaves the d=13 model-specific hypotheses open. A
    [d=12 mobile proposal](contrib/mobile_below_13/README.md) has additional
    heuristic dynamical steps and is not an established smaller counterexample.
+   The [markerless chains](contrib/markerless_d9_d10/README.md) lower these
+   to d=9 frozen and d=10 mobile. Every head moves by one rule, so the legal
+   sector and the cell pattern are exact invariants: no penalty and no
+   vacancy colours. The band data are certified with C84's pipeline at
+   n=9, 10, 11, 12, 14, 16 and 20 (predicted c up to 21 at d=10), not for
+   all n. An AI referee confirmed the frozen chain and the certificate and
+   re-checked the corrected mobile bond. The same infrared inputs apply,
+   and J/t for the mobile chain is not quantified.
 3. Numerics agree. The logical vacancy model gives c = 2.0, 2.9 ± 0.1 and 3.98 ± 0.05 at n = 1, 2, 3, and the projected d₀ = 4464 chain gives c = 3.00 ± 0.02 at n = 2.
 
 Not established: a rigorous lattice-to-CFT theorem for any counterexample.
@@ -53,6 +63,14 @@ establishes arbitrary-c physics. The next calculations test three flavours
 in the nine-state seed and all-n loop splitting in the eleven-state model.
 The qubit chat studies symmetry-allowed locking operators while production
 remains stopped. [Audit and scope](contrib/research_coordination_20261116/GITHUB_D10_AUDIT_20261118.md).
+
+**Located (2026-11-18):** The reported d=10 arbitrary-c family is
+[contrib/markerless_d9_d10/](contrib/markerless_d9_d10/README.md), written
+on 2026-11-12 and kept in a local checkout until today. Nine material
+states without markers give c=n with frozen cells; one uncoloured vacancy
+gives c=n+1 at d=10. Its status is that of the d=11 and d=13 bonds:
+certified band data at the listed n, conditional infrared step. See REPORT
+for the referee outcome.
 
 ## d = 2: a candidate counterexample with c = 2
 

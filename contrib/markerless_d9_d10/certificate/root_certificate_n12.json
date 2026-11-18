@@ -1,0 +1,129 @@
+{
+  "n": 12,
+  "status": "proved_integer_interval_certificate",
+  "root_count": 24,
+  "D": 1000,
+  "carrier_diagonal": 4,
+  "alphabet": 9,
+  "data_sites": 12,
+  "cell_length": 13,
+  "loop_eta_power": -56,
+  "field_normalized_power": -111,
+  "delta2_lower": 0.014795664280995626,
+  "delta4_lower": 3.095529945259588e-06,
+  "delta4_witness": [
+    [
+      10,
+      15
+    ],
+    [
+      8,
+      19
+    ]
+  ],
+  "minimum_endpoint_congruence_margin": 1.9917060705630408e-09,
+  "whitened_matrix_error_bound": 2.7965251412237226e-99,
+  "additional_normalized_perturbation_power": -35,
+  "finite_g_power": -204,
+  "hermitian_margin_in_dyadic_metric": 0.5652699336193057,
+  "log10_finite_g_hermitian_margin_normalized": -32.83346998987264,
+  "seconds": 0.4047590848058462,
+  "inertia_changes": [
+    [
+      0,
+      1
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      3,
+      4
+    ],
+    [
+      4,
+      5
+    ],
+    [
+      5,
+      6
+    ],
+    [
+      6,
+      7
+    ],
+    [
+      7,
+      8
+    ],
+    [
+      8,
+      9
+    ],
+    [
+      9,
+      10
+    ],
+    [
+      10,
+      11
+    ],
+    [
+      11,
+      12
+    ],
+    [
+      12,
+      11
+    ],
+    [
+      11,
+      10
+    ],
+    [
+      10,
+      9
+    ],
+    [
+      9,
+      8
+    ],
+    [
+      8,
+      7
+    ],
+    [
+      7,
+      6
+    ],
+    [
+      6,
+      5
+    ],
+    [
+      5,
+      4
+    ],
+    [
+      4,
+      3
+    ],
+    [
+      3,
+      2
+    ],
+    [
+      2,
+      1
+    ],
+    [
+      1,
+      0
+    ]
+  ]
+}

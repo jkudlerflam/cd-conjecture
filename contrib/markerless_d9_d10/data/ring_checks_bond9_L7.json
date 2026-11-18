@@ -1,0 +1,44 @@
+{
+ "2": {
+  "words": 81,
+  "legal_words": 73,
+  "transitions": 164,
+  "F_violations": 0,
+  "seconds": 0.0
+ },
+ "3": {
+  "words": 729,
+  "legal_words": 621,
+  "transitions": 2214,
+  "F_violations": 0,
+  "seconds": 0.0
+ },
+ "4": {
+  "words": 6561,
+  "legal_words": 5297,
+  "transitions": 26568,
+  "F_violations": 0,
+  "seconds": 0.0
+ },
+ "5": {
+  "words": 59049,
+  "legal_words": 45189,
+  "transitions": 298890,
+  "F_violations": 0,
+  "seconds": 0.5
+ },
+ "6": {
+  "words": 531441,
+  "legal_words": 385513,
+  "transitions": 3228012,
+  "F_violations": 0,
+  "seconds": 5.8
+ },
+ "7": {
+  "words": 4782969,
+  "legal_words": 3288861,
+  "transitions": 33894126,
+  "F_violations": 0,
+  "seconds": 60.2
+ }
+}

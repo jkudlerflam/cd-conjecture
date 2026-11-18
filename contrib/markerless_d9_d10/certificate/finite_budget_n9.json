@@ -1,0 +1,16 @@
+{
+  "n": 9,
+  "alphabet": 9,
+  "cell_length": 10,
+  "g_power": -163,
+  "lambda_power": -359,
+  "alpha4_lower_power": -15,
+  "Eunit_lower_log10": -162.6858950224514,
+  "metric_trace_log10": 24.374565092347893,
+  "conversion_error_log10": -12.170244492308484,
+  "two_cell_lambda_error_log10": -11.869214496644418,
+  "budget_power": -35,
+  "clock_gap": 0.23647888156663233,
+  "sum_below_one_eighth_budget": true,
+  "finite_K_term": "absent (exact invariance)"
+}

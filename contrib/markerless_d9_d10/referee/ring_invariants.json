@@ -1,0 +1,166 @@
+[
+ {
+  "d": 9,
+  "L": 2,
+  "words": 81,
+  "bond_transitions": 82,
+  "checked": 164,
+  "viol": {
+   "F": 0,
+   "Q": 0,
+   "heads": 0,
+   "occ": 0,
+   "bmask": 0
+  },
+  "seconds": 0.0
+ },
+ {
+  "d": 9,
+  "L": 3,
+  "words": 729,
+  "bond_transitions": 82,
+  "checked": 2214,
+  "viol": {
+   "F": 0,
+   "Q": 0,
+   "heads": 0,
+   "occ": 0,
+   "bmask": 0
+  },
+  "seconds": 0.0
+ },
+ {
+  "d": 9,
+  "L": 4,
+  "words": 6561,
+  "bond_transitions": 82,
+  "checked": 26568,
+  "viol": {
+   "F": 0,
+   "Q": 0,
+   "heads": 0,
+   "occ": 0,
+   "bmask": 0
+  },
+  "seconds": 0.0
+ },
+ {
+  "d": 9,
+  "L": 5,
+  "words": 59049,
+  "bond_transitions": 82,
+  "checked": 298890,
+  "viol": {
+   "F": 0,
+   "Q": 0,
+   "heads": 0,
+   "occ": 0,
+   "bmask": 0
+  },
+  "seconds": 0.1
+ },
+ {
+  "d": 9,
+  "L": 6,
+  "words": 531441,
+  "bond_transitions": 82,
+  "checked": 3228012,
+  "viol": {
+   "F": 0,
+   "Q": 0,
+   "heads": 0,
+   "occ": 0,
+   "bmask": 0
+  },
+  "seconds": 0.9
+ },
+ {
+  "d": 9,
+  "L": 7,
+  "words": 4782969,
+  "bond_transitions": 82,
+  "checked": 33894126,
+  "viol": {
+   "F": 0,
+   "Q": 0,
+   "heads": 0,
+   "occ": 0,
+   "bmask": 0
+  },
+  "seconds": 10.5
+ },
+ {
+  "d": 10,
+  "L": 2,
+  "words": 100,
+  "bond_transitions": 100,
+  "checked": 200,
+  "viol": {
+   "F": 0,
+   "Q": 0,
+   "heads": 0,
+   "occ": 0,
+   "sqz": 0
+  },
+  "seconds": 0.0
+ },
+ {
+  "d": 10,
+  "L": 3,
+  "words": 1000,
+  "bond_transitions": 100,
+  "checked": 3000,
+  "viol": {
+   "F": 0,
+   "Q": 0,
+   "heads": 0,
+   "occ": 0,
+   "sqz": 0
+  },
+  "seconds": 0.0
+ },
+ {
+  "d": 10,
+  "L": 4,
+  "words": 10000,
+  "bond_transitions": 100,
+  "checked": 40000,
+  "viol": {
+   "F": 0,
+   "Q": 0,
+   "heads": 0,
+   "occ": 0,
+   "sqz": 0
+  },
+  "seconds": 0.1
+ },
+ {
+  "d": 10,
+  "L": 5,
+  "words": 100000,
+  "bond_transitions": 100,
+  "checked": 500000,
+  "viol": {
+   "F": 0,
+   "Q": 0,
+   "heads": 0,
+   "occ": 0,
+   "sqz": 0
+  },
+  "seconds": 0.8
+ },
+ {
+  "d": 10,
+  "L": 6,
+  "words": 1000000,
+  "bond_transitions": 100,
+  "checked": 6000000,
+  "viol": {
+   "F": 0,
+   "Q": 0,
+   "heads": 0,
+   "occ": 0
+  },
+  "seconds": 1.9
+ }
+]

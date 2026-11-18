@@ -1,0 +1,66 @@
+[
+ {
+  "n": 2,
+  "design": "one rung",
+  "leaks": 0,
+  "gaussian_residual": 3.2861401789356284e-15,
+  "mu_over_T": 1.9716841073613768e-15,
+  "fermi_points": 0,
+  "needed": 4,
+  "moduli": [
+   0.1621,
+   0.1621,
+   6.1683,
+   6.1683
+  ]
+ },
+ {
+  "n": 2,
+  "design": "two rungs with flux",
+  "leaks": 0,
+  "gaussian_residual": 8.435696923410344e-16,
+  "mu_over_T": 2.8241838673666846e-16,
+  "fermi_points": 0,
+  "needed": 4,
+  "moduli": [
+   0.2398,
+   0.2398,
+   4.1702,
+   4.1702
+  ]
+ },
+ {
+  "n": 3,
+  "design": "one rung",
+  "leaks": 0,
+  "gaussian_residual": 6.472425702199982e-15,
+  "mu_over_T": 2.6968440425833257e-15,
+  "fermi_points": 2,
+  "needed": 6,
+  "moduli": [
+   0.0201,
+   0.0201,
+   1.0,
+   1.0,
+   49.6594,
+   49.6594
+  ]
+ },
+ {
+  "n": 3,
+  "design": "two rungs with flux",
+  "leaks": 0,
+  "gaussian_residual": 6.703839648738692e-16,
+  "mu_over_T": 3.433463957121075e-16,
+  "fermi_points": 2,
+  "needed": 6,
+  "moduli": [
+   0.03,
+   0.03,
+   1.0,
+   1.0,
+   33.2982,
+   33.2982
+  ]
+ }
+]

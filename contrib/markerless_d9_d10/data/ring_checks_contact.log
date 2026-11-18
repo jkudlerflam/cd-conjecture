@@ -1,0 +1,9 @@
+bond9 L=2 {'words': 81, 'legal_words': 73, 'transitions': 164, 'F_violations': 0, 'seconds': 0.0}
+bond9 L=3 {'words': 729, 'legal_words': 621, 'transitions': 2214, 'F_violations': 0, 'seconds': 0.0}
+bond9 L=4 {'words': 6561, 'legal_words': 5297, 'transitions': 26568, 'F_violations': 0, 'seconds': 0.0}
+bond9 L=5 {'words': 59049, 'legal_words': 45189, 'transitions': 298890, 'F_violations': 0, 'seconds': 0.4}
+bond10 L=2 {'words': 100, 'legal_words': 92, 'transitions': 200, 'F_violations': 0, 'seconds': 0.0}
+bond10 L=3 {'words': 1000, 'legal_words': 868, 'transitions': 3000, 'F_violations': 0, 'seconds': 0.0}
+bond10 L=4 {'words': 10000, 'legal_words': 8256, 'transitions': 40000, 'F_violations': 0, 'seconds': 0.1}
+bond10 L=5 {'words': 100000, 'legal_words': 78660, 'transitions': 500000, 'F_violations': 0, 'seconds': 0.7}
+bond10 L=6 {'words': 1000000, 'legal_words': 749672, 'transitions': 6000000, 'F_violations': 0, 'seconds': 8.1}
