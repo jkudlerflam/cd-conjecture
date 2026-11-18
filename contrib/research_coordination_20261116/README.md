@@ -6,6 +6,12 @@ their newly proposed sixth-order qubit models. No human review is claimed.
 
 ## Reviewed checkpoint and assigned follow-ups
 
+The [long-distance stability round](STABILITY_ROUND_20261118.md) redeploys
+the four existing GPT-6 Astra Max chats. Two share the fixed asymmetric
+qubit target and split finite-density locking from dressed-mode matching;
+two address local interaction bounds at d=9 and thermodynamic mobile
+length selection at d=10. Further three-valley exploration is deferred.
+
 The [completed focused-round results](FOCUSED_RESULTS_20261118.md) give an
 arbitrary-n leading-band theorem on a modified d=9 alphabet, finite d=10
 mobile sector certificates and an exact charge-field improvement, finite

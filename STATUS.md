@@ -7,6 +7,12 @@ earlier long version. The standard is theoretical physics, and nothing has
 had independent human review. Conditional infrared predictions are not
 established microscopic counterexamples.
 
+**Active stability follow-up (2026-11-18):** The four existing research
+chats are being redeployed to finite-density matching at the asymmetric
+qubit candidate and the remaining interacting/thermodynamic gaps of the
+small-d constructions. The [new assignments](contrib/research_coordination_20261116/STABILITY_ROUND_20261118.md)
+replace further three-valley exploration with the two-mode stability test.
+
 **Current research priority and completed round (2026-11-18):** Large c
 at microscopic d=2 and unbounded c at fixed small d. All four GPT-6 Astra
 Max chats completed their assignments. The strongest new result is an

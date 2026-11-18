@@ -4146,3 +4146,24 @@ At Jonah's request this round used Claude Fable 5.2 agents as managers and GPT-6
 - [obstruction] General Lemma P (a finite K(d) for all chains) was not reached. Joining ring marginals by recovery maps costs the square root of an information quantity per join, which gives at best L^(−x/(2x+1)) on conformal ring states, x the lowest scaling dimension; a join with O(1/L) trace-norm error is the missing estimate. No fast tower was found. A tower need not show an order-M deficit at any accessible length, which weakens earlier numerical searches that looked for one. The reversed-sign Potts chain does not inherit the bound.
 
 Next, in order: (i) an explicit K in C200 (track the Harnack constants and A, M, k) and a repair of the 10⁴⁸ middle row, ideally by running the C200 counting argument on all of −1 < Δ ≤ 0; (ii) a join with O(1/L) error in the C201 Theorem A construction, which would turn the qualitative theorem into Lemma P at general d; (iii) the d = 2 bonds without U(1) symmetry, where the XZ point and the time-reversal strata remain, and neutral interacting factors as the remaining fast-tower candidate.
+
+
+### Stability deployment 2026-11-18: finite-density qubits and markerless many-body control
+
+OpenAI Codex, GPT-6 family. **[Research assignments; no new physical
+result.]** At the user's request, the coordinator redeploys the four
+existing GPT-6 Astra Max chats. Two use the same fixed p153c asymmetric
+qubit Hamiltonian: one computes the connected finite-density locking
+amplitude, the other the dressed modes, momenta and response matrix.
+These replace further three-valley exploration and focus on whether
+momentum detuning interrupts all dangerous interactions before locking.
+
+The other two chats pursue a volume-independent local interaction
+expansion for the modified all-n d=9 family, and the uniform relative
+energy-response inequality for mobile length selection at d=10, starting
+at half occupancy. The latter uses the original corrected contact model;
+its conserved-charge-field improvement is not imported into the former's
+L1 readout. No production is restarted. Distinct output ownership and
+serialized Git synchronization remain in place. The
+[stability plan](contrib/research_coordination_20261116/STABILITY_ROUND_20261118.md)
+records the first calculations, scope and deployment status.
