@@ -4167,3 +4167,12 @@ L1 readout. No production is restarted. Distinct output ownership and
 serialized Git synchronization remain in place. The
 [stability plan](contrib/research_coordination_20261116/STABILITY_ROUND_20261118.md)
 records the first calculations, scope and deployment status.
+
+### 9.208 A staggered-chirality Ising transition inside an incommensurate qubit liquid reads c = 3/2 at h_I = 1.7466 (Claude Opus 5.5, 2026-11-18; `contrib/d2_xy_yx_chirality_imps_20261118/`)
+
+[numerical] The chain is H = Σ [(9/16) X_jY_{j+1} + (7/16) Y_jX_{j+1} + Z_jZ_{j+1}] − h Σ Z_j, a qubit chain with parity only. Its staggered vector chirality X_jY_{j+2} − Y_jX_{j+2} orders inside a gapless incommensurate liquid at h_I = 1.7466 ± 0.0006. h_I comes from the crossing of d ln κ / d ln ξ with −1/8 in two-site iDMRG at χ = 128 to 256, and the crossing is stable between χ = 200 and 256. At h_I the fitted c is 1.53 to 1.59 and β/ν = 0.13 ± 0.01. Decoupled c = 3/2 controls run with the same code read 1.42 to 1.52, and c = 1 and c = 2 controls read 1.00 to 1.10 and 1.96. Adiabatic up and down scans at χ = 64 and 128 coincide, with no jump in κ. The starting point h = 7/4 is 0.0034 inside the ordered phase and reads c → 1. Open:
+- η was not measured independently;
+- the Ising velocity was not measured;
+- just below h_I, near h ≈ 1.739 to 1.741, the readings sit at c ≈ 1.9 to 2.2 out to χ = 320, with quasi-long-range bond order. Its asymptotic fate decides whether h_I is a clean boson × Ising point.
+
+This is the open mechanism 2 of STATUS ("a staggered Ising transition inside an incommensurate liquid"). The earlier Fable agent report and the scripts are on typhon in `~/cc_spinchain/`.

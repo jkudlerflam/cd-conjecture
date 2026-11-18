@@ -1,0 +1,118 @@
+== ct_t0.000_jz0.000_hA0.000_J1.000_g1.00000 _pin
+  chi=  32 E=-1.273239534711 S=0.59242 Sc=nan xi=   620.5 xi0=   620.5 xi1=     nan cat=0 m=+0.33055 B=+nan Z=0.0000 c_xi=       c_xi0=       c_conf=       dlnm/dlnxi=      
+  chi=  48 E=-1.273239415989 S=0.44665 Sc=nan xi=   126.2 xi0=   126.2 xi1=     nan cat=0 m=-0.41265 B=+nan Z=-0.0000 c_xi= 0.549 c_xi0= 0.549 c_conf=   nan dlnm/dlnxi=-0.139
+  chi=  64 E=-1.273239456301 S=0.44754 Sc=nan xi=   168.5 xi0=   168.5 xi1=     nan cat=0 m=+0.41502 B=+nan Z=0.0000 c_xi= 0.018 c_xi0= 0.018 c_conf=   nan dlnm/dlnxi= 0.020
+  chi=  96 E=-1.273087811693 S=0.20028 Sc=nan xi=    47.3 xi0=    47.3 xi1=     nan cat=0 m=+0.61262 B=+nan Z=-0.0000 c_xi= 1.168 c_xi0= 1.168 c_conf=   nan dlnm/dlnxi=-0.306
+  chi= 128 E=-1.273239358896 S=0.50091 Sc=nan xi=   153.2 xi0=   153.2 xi1=     nan cat=0 m=-0.36694 B=+nan Z=-0.0000 c_xi= 1.535 c_xi0= 1.535 c_conf=   nan dlnm/dlnxi=-0.436
+== ct_t1.000_jz-0.390_hA0.000_J1.000_g1.00000 _pin
+  chi=  32 E=-1.787679630846 S=1.38245 Sc=nan xi=    64.5 xi0=    14.5 xi1=    64.5 cat=0 m=+0.58687 B=+nan Z=-0.0000 c_xi=       c_xi0=       c_conf=       dlnm/dlnxi=      
+  chi=  48 E=-1.787778177053 S=1.43506 Sc=nan xi=    20.2 xi0=    20.2 xi1=    20.2 cat=1 m=+0.55445 B=+nan Z=-0.0000 c_xi=-0.272 c_xi0= 0.946 c_conf=   nan dlnm/dlnxi= 0.049
+  chi=  64 E=-1.787805383556 S=1.51280 Sc=nan xi=    27.5 xi0=    27.5 xi1=    27.5 cat=1 m=+0.53039 B=+nan Z=-0.0000 c_xi= 1.507 c_xi0= 1.507 c_conf=   nan dlnm/dlnxi=-0.143
+  chi=  96 E=-1.787822214654 S=1.61028 Sc=nan xi=    42.1 xi0=    42.1 xi1=    42.1 cat=1 m=+0.50556 B=+nan Z=0.0000 c_xi= 1.380 c_xi0= 1.380 c_conf=   nan dlnm/dlnxi=-0.113
+  chi= 128 E=-1.787828166260 S=1.68178 Sc=nan xi=    56.0 xi0=    56.0 xi1=    56.0 cat=1 m=+0.49110 B=+nan Z=0.0000 c_xi= 1.502 c_xi0= 1.502 c_conf=   nan dlnm/dlnxi=-0.102
+  chi= 160 E=-1.787831240340 S=1.73790 Sc=nan xi=    69.1 xi0=    69.1 xi1=    69.1 cat=1 m=+0.47426 B=+nan Z=0.0000 c_xi= 1.605 c_xi0= 1.605 c_conf=   nan dlnm/dlnxi=-0.166
+  chi= 200 E=-1.787833063384 S=1.79180 Sc=nan xi=    81.8 xi0=    81.8 xi1=    81.8 cat=1 m=+0.45856 B=+nan Z=-0.0000 c_xi= 1.914 c_xi0= 1.914 c_conf=   nan dlnm/dlnxi=-0.199
+  fit chi>=96: c=1.626 +- 0.061   (n=4)
+== ct_t1.000_jz0.000_hA0.000_J0.000_g0.00000_tB0.350 _sym
+  chi=  32 E=-0.858705671549 S=1.37494 Sc=nan xi=    18.9 xi0=     8.9 xi1=    18.9 cat=0 m=+0.52372 B=+nan Z=0.0000 c_xi=       c_xi0=       c_conf=       dlnm/dlnxi=      
+  chi=  48 E=-0.859079241987 S=1.48780 Sc=nan xi=    28.6 xi0=    13.1 xi1=    28.6 cat=0 m=+0.48963 B=+nan Z=-0.0000 c_xi= 1.636 c_xi0= 1.718 c_conf=   nan dlnm/dlnxi=-0.163
+  chi=  64 E=-0.859215778575 S=1.57177 Sc=nan xi=    36.3 xi0=    16.2 xi1=    36.3 cat=0 m=+0.45778 B=+nan Z=0.0000 c_xi= 2.106 c_xi0= 2.422 c_conf=   nan dlnm/dlnxi=-0.281
+  chi=  96 E=-0.859322182708 S=1.68348 Sc=nan xi=    51.5 xi0=    23.2 xi1=    51.5 cat=0 m=+0.42140 B=+nan Z=-0.0000 c_xi= 1.915 c_xi0= 1.871 c_conf=   nan dlnm/dlnxi=-0.237
+  chi= 128 E=-0.859367025650 S=1.76417 Sc=nan xi=    64.9 xi0=    30.0 xi1=    64.9 cat=0 m=+0.39581 B=+nan Z=0.0000 c_xi= 2.101 c_xi0= 1.883 c_conf=   nan dlnm/dlnxi=-0.272
+== ct_t1.000_jz0.000_hA0.000_J0.000_g0.00000_tB1.000 _sym
+  chi=  32 E=-1.272069545869 S=1.38418 Sc=nan xi=    18.0 xi0=     8.6 xi1=    18.0 cat=0 m=-0.50893 B=+nan Z=-0.0000 c_xi=       c_xi0=       c_conf=       dlnm/dlnxi=      
+  chi=  48 E=-1.272675261297 S=1.50132 Sc=nan xi=    24.7 xi0=    11.5 xi1=    24.7 cat=0 m=-0.46098 B=+nan Z=0.0000 c_xi= 2.196 c_xi0= 2.404 c_conf=   nan dlnm/dlnxi=-0.309
+  chi=  64 E=-1.272890403118 S=1.58225 Sc=nan xi=    30.7 xi0=    14.4 xi1=    30.7 cat=0 m=-0.43086 B=+nan Z=0.0000 c_xi= 2.245 c_xi0= 2.130 c_conf=   nan dlnm/dlnxi=-0.312
+  chi=  96 E=-1.273058700155 S=1.69334 Sc=nan xi=    43.6 xi0=    20.0 xi1=    43.6 cat=0 m=-0.39823 B=+nan Z=-0.0000 c_xi= 1.907 c_xi0= 2.043 c_conf=   nan dlnm/dlnxi=-0.225
+  chi= 128 E=-1.273129014727 S=1.77307 Sc=nan xi=    55.4 xi0=    25.6 xi1=    55.4 cat=0 m=-0.37486 B=+nan Z=0.0000 c_xi= 1.987 c_xi0= 1.938 c_conf=   nan dlnm/dlnxi=-0.251
+  chi= 160 E=-1.273162809840 S=1.83481 Sc=nan xi=    67.2 xi0=    30.9 xi1=    67.2 cat=0 m=-0.35780 B=+nan Z=-0.0000 c_xi= 1.925 c_xi0= 1.979 c_conf=   nan dlnm/dlnxi=-0.242
+  fit chi>=96: c=1.960 +- nan   (n=3)
+== ct_t1.000_jz0.000_hA0.000_J0.000_g1.00000 _pin
+  chi=  32 E=-1.636606336206 S=1.19391 Sc=nan xi=   119.7 xi0=    53.5 xi1=   119.7 cat=0 m=-0.00000 B=+nan Z=0.0000 c_xi=       c_xi0=       c_conf=       dlnm/dlnxi=      
+  chi=  48 E=-1.636615244846 S=1.27913 Sc=nan xi=   201.1 xi0=    93.1 xi1=   201.1 cat=0 m=+0.00000 B=+nan Z=-0.0000 c_xi= 0.986 c_xi0= 0.924 c_conf=   nan dlnm/dlnxi=-9.198
+  chi=  64 E=-1.636617513280 S=1.33847 Sc=nan xi=   288.8 xi0=   129.4 xi1=   288.8 cat=0 m=+0.00000 B=+nan Z=-0.0000 c_xi= 0.984 c_xi0= 1.083 c_conf=   nan dlnm/dlnxi= 0.129
+  chi=  96 E=-1.636618983024 S=1.42737 Sc=nan xi=   493.0 xi0=   224.2 xi1=   493.0 cat=0 m=-0.00000 B=+nan Z=-0.0000 c_xi= 0.997 c_xi0= 0.970 c_conf=   nan dlnm/dlnxi=-13.782
+  chi= 128 E=-1.636619391645 S=1.48931 Sc=nan xi=   713.6 xi0=   320.8 xi1=   713.6 cat=0 m=-0.00000 B=+nan Z=-0.0000 c_xi= 1.005 c_xi0= 1.037 c_conf=   nan dlnm/dlnxi=11.148
+  chi= 160 E=-1.636619544627 S=1.53173 Sc=nan xi=   925.1 xi0=   414.4 xi1=   925.1 cat=0 m=-0.00000 B=+nan Z=-0.0000 c_xi= 0.980 c_xi0= 0.994 c_conf=   nan dlnm/dlnxi=-6.464
+  chi= 200 E=-1.636619645385 S=1.58242 Sc=nan xi=  1250.8 xi0=   565.0 xi1=  1250.8 cat=0 m=+0.00000 B=+nan Z=0.0000 c_xi= 1.008 c_xi0= 0.982 c_conf=   nan dlnm/dlnxi=-0.915
+  fit chi>=96: c=0.998 +- 0.003   (n=4)
+== ct_t1.000_jz0.000_hA0.000_J0.350_g0.35000 _pin
+  chi=  32 E=-1.082095982279 S=1.18704 Sc=nan xi=    37.8 xi0=    16.8 xi1=    37.8 cat=0 m=+0.61205 B=+nan Z=0.0000 c_xi=       c_xi0=       c_conf=       dlnm/dlnxi=      
+  chi=  48 E=-1.082180998765 S=1.27962 Sc=nan xi=    57.6 xi0=    26.3 xi1=    57.6 cat=0 m=+0.58842 B=+nan Z=0.0000 c_xi= 1.317 c_xi0= 1.250 c_conf=   nan dlnm/dlnxi=-0.093
+  chi=  64 E=-1.082212933482 S=1.35729 Sc=nan xi=    77.3 xi0=    35.1 xi1=    77.3 cat=0 m=+0.56410 B=+nan Z=0.0000 c_xi= 1.587 c_xi0= 1.604 c_conf=   nan dlnm/dlnxi=-0.144
+  chi=  96 E=-1.082236110306 S=1.46419 Sc=nan xi=   119.5 xi0=    54.2 xi1=   119.5 cat=0 m=+0.53662 B=+nan Z=-0.0000 c_xi= 1.470 c_xi0= 1.478 c_conf=   nan dlnm/dlnxi=-0.114
+  chi= 128 E=-1.082243430447 S=1.53085 Sc=nan xi=   157.9 xi0=    73.5 xi1=   157.9 cat=0 m=+0.51933 B=+nan Z=0.0000 c_xi= 1.436 c_xi0= 1.312 c_conf=   nan dlnm/dlnxi=-0.118
+  chi= 160 E=-1.082247005483 S=1.58589 Sc=nan xi=   201.5 xi0=    91.1 xi1=   201.5 cat=0 m=+0.50813 B=+nan Z=0.0000 c_xi= 1.354 c_xi0= 1.538 c_conf=   nan dlnm/dlnxi=-0.089
+  chi= 200 E=-1.082249291791 S=1.63747 Sc=nan xi=   246.1 xi0=   112.8 xi1=   246.1 cat=0 m=+0.49412 B=+nan Z=-0.0000 c_xi= 1.550 c_xi0= 1.453 c_conf=   nan dlnm/dlnxi=-0.140
+  fit chi>=96: c=1.430 +- 0.023   (n=4)
+== ct_t1.000_jz0.000_hA0.000_J1.000_g0.80000 _pin
+  chi=  32 E=-1.804361541127 S=1.09480 Sc=nan xi=    57.3 xi0=    25.9 xi1=    57.3 cat=0 m=+0.88038 B=+nan Z=0.0000 c_xi=       c_xi0=       c_conf=       dlnm/dlnxi=      
+  chi=  48 E=-1.804407083580 S=1.17683 Sc=nan xi=    93.7 xi0=    43.1 xi1=    93.7 cat=0 m=+0.88020 B=+nan Z=0.0000 c_xi= 1.000 c_xi0= 0.964 c_conf=   nan dlnm/dlnxi=-0.000
+  chi=  64 E=-1.804417501756 S=1.23407 Sc=nan xi=   133.8 xi0=    59.9 xi1=   133.8 cat=0 m=+0.88017 B=+nan Z=-0.0000 c_xi= 0.963 c_xi0= 1.042 c_conf=   nan dlnm/dlnxi=-0.000
+  chi=  96 E=-1.804425082364 S=1.32045 Sc=nan xi=   224.1 xi0=   101.0 xi1=   224.1 cat=0 m=+0.88014 B=+nan Z=0.0000 c_xi= 1.005 c_xi0= 0.994 c_conf=   nan dlnm/dlnxi=-0.000
+  chi= 128 E=-1.804427097267 S=1.37596 Sc=nan xi=   310.8 xi0=   142.1 xi1=   310.8 cat=0 m=+0.88013 B=+nan Z=-0.0000 c_xi= 1.018 c_xi0= 0.975 c_conf=   nan dlnm/dlnxi=-0.000
+  chi= 160 E=-1.804428018623 S=1.42243 Sc=nan xi=   412.4 xi0=   187.2 xi1=   412.4 cat=0 m=+0.88012 B=+nan Z=-0.0000 c_xi= 0.985 c_xi0= 1.011 c_conf=   nan dlnm/dlnxi=-0.000
+  chi= 200 E=-1.804428537129 S=1.46579 Sc=nan xi=   533.5 xi0=   242.5 xi1=   533.5 cat=0 m=+0.88012 B=+nan Z=0.0000 c_xi= 1.011 c_xi0= 1.006 c_conf=   nan dlnm/dlnxi=-0.000
+  fit chi>=96: c=1.003 +- 0.004   (n=4)
+== ct_t1.000_jz0.000_hA0.000_J1.000_g0.97000 _pin
+  chi=  32 E=-1.891356402749 S=1.13114 Sc=nan xi=    40.4 xi0=    18.4 xi1=    40.4 cat=0 m=+0.71204 B=+nan Z=0.0000 c_xi=       c_xi0=       c_conf=       dlnm/dlnxi=      
+  chi=  48 E=-1.891441869234 S=1.21147 Sc=nan xi=    64.1 xi0=    29.3 xi1=    64.1 cat=0 m=+0.70776 B=+nan Z=-0.0000 c_xi= 1.047 c_xi0= 1.044 c_conf=   nan dlnm/dlnxi=-0.013
+  chi=  64 E=-1.891468398698 S=1.26917 Sc=nan xi=    88.4 xi0=    40.1 xi1=    88.4 cat=0 m=+0.70544 B=+nan Z=0.0000 c_xi= 1.076 c_xi0= 1.098 c_conf=   nan dlnm/dlnxi=-0.010
+  chi=  96 E=-1.891486826167 S=1.34836 Sc=nan xi=   140.5 xi0=    63.9 xi1=   140.5 cat=0 m=+0.70365 B=+nan Z=0.0000 c_xi= 1.025 c_xi0= 1.020 c_conf=   nan dlnm/dlnxi=-0.005
+  chi= 128 E=-1.891492423277 S=1.40782 Sc=nan xi=   198.3 xi0=    89.8 xi1=   198.3 cat=0 m=+0.70300 B=+nan Z=-0.0000 c_xi= 1.035 c_xi0= 1.049 c_conf=   nan dlnm/dlnxi=-0.003
+  chi= 160 E=-1.891494690471 S=1.45009 Sc=nan xi=   255.7 xi0=   116.4 xi1=   255.7 cat=0 m=+0.70278 B=+nan Z=-0.0000 c_xi= 0.998 c_xi0= 0.975 c_conf=   nan dlnm/dlnxi=-0.001
+  chi= 200 E=-1.891496113916 S=1.49298 Sc=nan xi=   329.7 xi0=   149.4 xi1=   329.7 cat=0 m=+0.70256 B=+nan Z=0.0000 c_xi= 1.012 c_xi0= 1.033 c_conf=   nan dlnm/dlnxi=-0.001
+  fit chi>=96: c=1.016 +- 0.006   (n=4)
+== ct_t1.000_jz0.000_hA0.000_J1.000_g0.98000 _pin
+  chi=  32 E=-1.897325228079 S=1.13897 Sc=nan xi=    37.3 xi0=    16.7 xi1=    37.3 cat=0 m=+0.68250 B=+nan Z=0.0000 c_xi=       c_xi0=       c_conf=       dlnm/dlnxi=      
+  chi=  48 E=-1.897413885336 S=1.22053 Sc=nan xi=    59.5 xi0=    26.5 xi1=    59.5 cat=0 m=+0.67778 B=+nan Z=-0.0000 c_xi= 1.047 c_xi0= 1.058 c_conf=   nan dlnm/dlnxi=-0.015
+  chi=  64 E=-1.897445343502 S=1.28329 Sc=nan xi=    82.4 xi0=    37.8 xi1=    82.4 cat=0 m=+0.67354 B=+nan Z=0.0000 c_xi= 1.156 c_xi0= 1.059 c_conf=   nan dlnm/dlnxi=-0.019
+  chi=  96 E=-1.897466211012 S=1.36407 Sc=nan xi=   131.1 xi0=    59.2 xi1=   131.1 cat=0 m=+0.67079 B=+nan Z=-0.0000 c_xi= 1.044 c_xi0= 1.080 c_conf=   nan dlnm/dlnxi=-0.009
+  chi= 128 E=-1.897472655479 S=1.42356 Sc=nan xi=   184.5 xi0=    83.4 xi1=   184.5 cat=0 m=+0.66964 B=+nan Z=0.0000 c_xi= 1.045 c_xi0= 1.041 c_conf=   nan dlnm/dlnxi=-0.005
+  chi= 160 E=-1.897475208116 S=1.46222 Sc=nan xi=   234.3 xi0=   104.9 xi1=   234.3 cat=0 m=+0.66916 B=+nan Z=0.0000 c_xi= 0.971 c_xi0= 1.012 c_conf=   nan dlnm/dlnxi=-0.003
+  chi= 200 E=-1.897476968643 S=1.50693 Sc=nan xi=   301.2 xi0=   136.4 xi1=   301.2 cat=0 m=+0.66864 B=+nan Z=0.0000 c_xi= 1.068 c_xi0= 1.024 c_conf=   nan dlnm/dlnxi=-0.003
+  fit chi>=96: c=1.026 +- 0.011   (n=4)
+== ct_t1.000_jz0.000_hA0.000_J1.000_g0.99000 _pin
+  chi=  32 E=-1.903415865389 S=1.15959 Sc=nan xi=    36.4 xi0=    16.4 xi1=    36.4 cat=0 m=+0.64715 B=+nan Z=-0.0000 c_xi=       c_xi0=       c_conf=       dlnm/dlnxi=      
+  chi=  48 E=-1.903515049913 S=1.24059 Sc=nan xi=    54.9 xi0=    25.0 xi1=    54.9 cat=0 m=+0.63498 B=+nan Z=-0.0000 c_xi= 1.180 c_xi0= 1.149 c_conf=   nan dlnm/dlnxi=-0.046
+  chi=  64 E=-1.903550307907 S=1.30865 Sc=nan xi=    77.7 xi0=    35.5 xi1=    77.7 cat=0 m=+0.62901 B=+nan Z=-0.0000 c_xi= 1.177 c_xi0= 1.166 c_conf=   nan dlnm/dlnxi=-0.027
+  chi=  96 E=-1.903575587510 S=1.39515 Sc=nan xi=   122.0 xi0=    55.3 xi1=   122.0 cat=0 m=+0.62182 B=+nan Z=0.0000 c_xi= 1.152 c_xi0= 1.168 c_conf=   nan dlnm/dlnxi=-0.026
+  chi= 128 E=-1.903583353359 S=1.45194 Sc=nan xi=   167.4 xi0=    76.9 xi1=   167.4 cat=0 m=+0.61884 B=+nan Z=-0.0000 c_xi= 1.076 c_xi0= 1.036 c_conf=   nan dlnm/dlnxi=-0.015
+  chi= 160 E=-1.903586654270 S=1.49395 Sc=nan xi=   210.9 xi0=    95.8 xi1=   210.9 cat=0 m=+0.61673 B=+nan Z=-0.0000 c_xi= 1.093 c_xi0= 1.144 c_conf=   nan dlnm/dlnxi=-0.015
+  chi= 200 E=-1.903588737427 S=1.53606 Sc=nan xi=   269.2 xi0=   122.5 xi1=   269.2 cat=0 m=+0.61561 B=+nan Z=-0.0000 c_xi= 1.034 c_xi0= 1.031 c_conf=   nan dlnm/dlnxi=-0.007
+  fit chi>=96: c=1.070 +- 0.008   (n=4)
+== ct_t1.000_jz0.000_hA0.000_J1.000_g1.00000 _pin
+  chi=  32 E=-1.909639659803 S=1.18774 Sc=nan xi=    35.2 xi0=    16.0 xi1=    35.2 cat=0 m=+0.59840 B=+nan Z=0.0000 c_xi=       c_xi0=       c_conf=       dlnm/dlnxi=      
+  chi=  48 E=-1.909756963950 S=1.28055 Sc=nan xi=    51.1 xi0=    23.0 xi1=    51.1 cat=0 m=+0.56784 B=+nan Z=0.0000 c_xi= 1.493 c_xi0= 1.518 c_conf=   nan dlnm/dlnxi=-0.141
+  chi=  64 E=-1.909804416289 S=1.36245 Sc=nan xi=    67.1 xi0=    31.1 xi1=    67.1 cat=0 m=+0.54110 B=+nan Z=0.0000 c_xi= 1.803 c_xi0= 1.641 c_conf=   nan dlnm/dlnxi=-0.177
+  chi=  96 E=-1.909834232584 S=1.46183 Sc=nan xi=   103.1 xi0=    46.4 xi1=   103.1 cat=0 m=+0.51775 B=+nan Z=-0.0000 c_xi= 1.390 c_xi0= 1.486 c_conf=   nan dlnm/dlnxi=-0.103
+  chi= 128 E=-1.909844905558 S=1.53226 Sc=nan xi=   141.0 xi0=    64.2 xi1=   141.0 cat=0 m=+0.50238 B=+nan Z=0.0000 c_xi= 1.349 c_xi0= 1.303 c_conf=   nan dlnm/dlnxi=-0.096
+  chi= 160 E=-1.909849867627 S=1.58561 Sc=nan xi=   173.8 xi0=    78.6 xi1=   173.8 cat=0 m=+0.48964 B=+nan Z=0.0000 c_xi= 1.529 c_xi0= 1.581 c_conf=   nan dlnm/dlnxi=-0.123
+  chi= 200 E=-1.909853115239 S=1.63684 Sc=nan xi=   213.9 xi0=    97.0 xi1=   213.9 cat=0 m=+0.47631 B=+nan Z=0.0000 c_xi= 1.481 c_xi0= 1.460 c_conf=   nan dlnm/dlnxi=-0.133
+  fit chi>=96: c=1.441 +- 0.030   (n=4)
+== ct_t1.000_jz0.000_hA0.000_J1.000_g1.01000 _pin
+  chi=  32 E=-1.916019644420 S=1.23902 Sc=nan xi=    32.4 xi0=    14.9 xi1=    32.4 cat=0 m=+0.50714 B=+nan Z=0.0000 c_xi=       c_xi0=       c_conf=       dlnm/dlnxi=      
+  chi=  48 E=-1.916167672037 S=1.37879 Sc=nan xi=    45.1 xi0=    20.6 xi1=    45.1 cat=0 m=+0.40457 B=+nan Z=0.0000 c_xi= 2.518 c_xi0= 2.572 c_conf=   nan dlnm/dlnxi=-0.678
+  chi=  64 E=-1.916233906686 S=1.51525 Sc=nan xi=    55.0 xi0=    25.5 xi1=    55.0 cat=0 m=+0.24236 B=+nan Z=-0.0000 c_xi= 4.149 c_xi0= 3.849 c_conf=   nan dlnm/dlnxi=-2.596
+  chi=  96 E=-1.916287646801 S=1.65457 Sc=nan xi=    83.9 xi0=    38.4 xi1=    83.9 cat=0 m=+0.00000 B=+nan Z=-0.0000 c_xi= 1.981 c_xi0= 2.047 c_conf=   nan dlnm/dlnxi=-27.638
+  chi= 128 E=-1.916303698397 S=1.71146 Sc=nan xi=   112.8 xi0=    51.3 xi1=   112.8 cat=0 m=-0.00000 B=+nan Z=-0.0000 c_xi= 1.151 c_xi0= 1.177 c_conf=   nan dlnm/dlnxi=-36.886
+  chi= 160 E=-1.916311718112 S=1.75503 Sc=nan xi=   142.0 xi0=    65.0 xi1=   142.0 cat=0 m=+0.00000 B=+nan Z=0.0000 c_xi= 1.135 c_xi0= 1.103 c_conf=   nan dlnm/dlnxi= 3.257
+  chi= 200 E=-1.916316492645 S=1.80038 Sc=nan xi=   182.6 xi0=    82.7 xi1=   182.6 cat=0 m=+0.00000 B=+nan Z=0.0000 c_xi= 1.083 c_xi0= 1.128 c_conf=   nan dlnm/dlnxi= 0.209
+  fit chi>=96: c=1.126 +- 0.012   (n=4)
+== ct_t1.000_jz0.000_hA0.000_J1.000_g1.02000 _pin
+  chi=  32 E=-1.922581596908 S=1.32684 Sc=nan xi=    29.5 xi0=    13.7 xi1=    29.5 cat=0 m=+0.30821 B=+nan Z=-0.0000 c_xi=       c_xi0=       c_conf=       dlnm/dlnxi=      
+  chi=  48 E=-1.922788196493 S=1.46452 Sc=nan xi=    38.8 xi0=    19.4 xi1=    38.8 cat=0 m=+0.00000 B=+nan Z=0.0000 c_xi= 2.993 c_xi0= 2.371 c_conf=   nan dlnm/dlnxi=-58.256
+  chi=  64 E=-1.922859216192 S=1.52616 Sc=nan xi=    54.0 xi0=    24.0 xi1=    54.0 cat=0 m=-0.00000 B=+nan Z=0.0000 c_xi= 1.120 c_xi0= 1.738 c_conf=   nan dlnm/dlnxi=-26.422
+  chi=  96 E=-1.922909160747 S=1.61995 Sc=nan xi=    90.6 xi0=    41.0 xi1=    90.6 cat=0 m=+0.00000 B=+nan Z=-0.0000 c_xi= 1.088 c_xi0= 1.046 c_conf=   nan dlnm/dlnxi= 2.889
+  chi= 128 E=-1.922922168727 S=1.67728 Sc=nan xi=   125.3 xi0=    56.2 xi1=   125.3 cat=0 m=+0.00000 B=+nan Z=-0.0000 c_xi= 1.063 c_xi0= 1.094 c_conf=   nan dlnm/dlnxi=-2.024
+  chi= 160 E=-1.922928773318 S=1.71707 Sc=nan xi=   156.2 xi0=    71.8 xi1=   156.2 cat=0 m=+0.00000 B=+nan Z=-0.0000 c_xi= 1.082 c_xi0= 0.973 c_conf=   nan dlnm/dlnxi= 6.440
+  fit chi>=96: c=1.070 +- nan   (n=3)
+== ct_t1.000_jz0.000_hA0.000_J2.500_g2.50000 _pin
+  chi=  32 E=-3.819382135442 S=1.18064 Sc=nan xi=    31.0 xi0=    14.3 xi1=    31.0 cat=0 m=+0.58495 B=+nan Z=0.0000 c_xi=       c_xi0=       c_conf=       dlnm/dlnxi=      
+  chi=  48 E=-3.819567177499 S=1.27778 Sc=nan xi=    43.9 xi0=    20.4 xi1=    43.9 cat=0 m=+0.54961 B=+nan Z=-0.0000 c_xi= 1.668 c_xi0= 1.638 c_conf=   nan dlnm/dlnxi=-0.178
+  chi=  64 E=-3.819635633452 S=1.35158 Sc=nan xi=    58.5 xi0=    26.4 xi1=    58.5 cat=0 m=+0.52913 B=+nan Z=-0.0000 c_xi= 1.547 c_xi0= 1.710 c_conf=   nan dlnm/dlnxi=-0.133
+  chi=  96 E=-3.819681205413 S=1.44944 Sc=nan xi=    87.3 xi0=    39.8 xi1=    87.3 cat=0 m=+0.50461 B=+nan Z=0.0000 c_xi= 1.463 c_xi0= 1.433 c_conf=   nan dlnm/dlnxi=-0.118
+  chi= 128 E=-3.819696643590 S=1.51863 Sc=nan xi=   119.6 xi0=    54.6 xi1=   119.6 cat=0 m=+0.49169 B=+nan Z=0.0000 c_xi= 1.322 c_xi0= 1.319 c_conf=   nan dlnm/dlnxi=-0.083
+  chi= 160 E=-3.819704798738 S=1.57618 Sc=nan xi=   145.4 xi0=    66.8 xi1=   145.4 cat=0 m=+0.47398 B=+nan Z=-0.0000 c_xi= 1.763 c_xi0= 1.708 c_conf=   nan dlnm/dlnxi=-0.187
+  chi= 200 E=-3.819709514343 S=1.62666 Sc=nan xi=   179.1 xi0=    81.5 xi1=   179.1 cat=0 m=+0.46238 B=+nan Z=-0.0000 c_xi= 1.454 c_xi0= 1.521 c_conf=   nan dlnm/dlnxi=-0.119
+  fit chi>=96: c=1.496 +- 0.059   (n=4)
