@@ -38,7 +38,7 @@
       "pair_excited_dimension": 1024,
       "code_dimension": 16,
       "max_matching_error": 2.220446049250313e-16,
-      "seconds": 0.014388959010830149,
+      "seconds": 0.017477041998063214,
       "T": [
         [
           -0.0010127070637504522,
@@ -59,6 +59,7 @@
           0.013542061847937884
         ]
       ],
+      "bare_max_sampled_fermi_points": 2,
       "quartic_W": [
         [
           -0.00021335155904145947,
@@ -144,7 +145,7 @@
       "pair_excited_dimension": 6400,
       "code_dimension": 64,
       "max_matching_error": 4.440892098500626e-16,
-      "seconds": 0.07852795800135937,
+      "seconds": 0.07843399999546818,
       "T": [
         [
           -0.00041385185831402507,
@@ -176,6 +177,7 @@
           0.01860310831437071
         ]
       ],
+      "bare_max_sampled_fermi_points": 2,
       "quartic_W": [
         [
           -0.00011823998124477902,
@@ -1629,5 +1631,26 @@
       "other_pair_sum_chord_margin": 0.1469276378757615
     }
   ],
-  "seconds": 0.09897483300301246
+  "finite_conversion": [
+    {
+      "g": 0.1,
+      "error": 7.218380161667094e-08,
+      "error_over_g6": 0.07218380161667091,
+      "rigorous_Neumann_bound": 0.0009050305290451556
+    },
+    {
+      "g": 0.05,
+      "error": 1.11343983398244e-09,
+      "error_over_g6": 0.07126014937487614,
+      "rigorous_Neumann_bound": 1.3401494489304432e-05
+    },
+    {
+      "g": 0.025,
+      "error": 1.7342074966871062e-11,
+      "error_over_g6": 0.07103313906430384,
+      "rigorous_Neumann_bound": 2.0669570315619684e-07
+    }
+  ],
+  "complete_bond_dimension": 81,
+  "seconds": 0.10853854200104252
 }

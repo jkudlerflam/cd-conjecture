@@ -1,5 +1,4 @@
 """Independent physical nine-letter Hermitian nearest-neighbour matrices."""
-import itertools
 import numpy as np
 from scipy import sparse
 from scipy.sparse.linalg import splu
@@ -33,6 +32,13 @@ def parts():
     for side in ('L','R'):add('swap',(side+'1',side+'0'),(side+'0',side+'1'),1)
     matrices['penalty']=np.diag([int(not allowed(a,b)) for a in LETTERS for b in LETTERS])
     return matrices
+
+
+def bond(Delta,mu_sel,K,g,lam,t0,mu,eta,kappa):
+    p=parts();exc=np.array([x in ('DA','DB','MA','MB') for x in LETTERS])
+    number=np.array([x in ('L1','R1') for x in LETTERS]);left=np.array([x=='L1' for x in LETTERS])
+    o=np.diag(Delta*exc+mu_sel*MARKER+t0*(mu*number+eta*left))
+    return p['walk']+g*p['convert']+lam*p['port']+t0*kappa*p['swap']+K*p['penalty']+(np.kron(o,np.eye(9))+np.kron(np.eye(9),o))/2
 
 
 def cell_words(n):
@@ -102,3 +108,10 @@ def literal_coefficients(n,mass=2,max_order=4):
         if order%2==0:out[order]=-S.T@X
         else:assert np.max(abs(S.T@X))<1e-12
     return out,dict(cell_dimension=len(c['words']),pair_excited_dimension=A.shape[0],code_dimension=d*d)
+
+
+def finite_conversion(n,g,mass=2):
+    c=cell(n);start=(n+2)*(1<<n)
+    H=c['walk'][start:,start:]+g*c['convert'][start:,start:]
+    H=H+mass*sparse.eye(H.shape[0]);A=sparse.kronsum(H,H,format='csc');S=pair_source(n,c)
+    return -S.T@splu(A).solve(S)

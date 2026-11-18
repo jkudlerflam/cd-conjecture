@@ -1,7 +1,6 @@
 """Nine-state single rail: its scalar reduction and literal generated vertices."""
 import numpy as np
 from scipy import sparse
-from scipy.linalg import solve
 
 
 def fermions(m):

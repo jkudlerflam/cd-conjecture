@@ -3,7 +3,7 @@ import itertools,json,time,os
 from pathlib import Path
 import numpy as np
 from mechanism import scalar,pair_coefficients,normal_order,projected_controls,fermions,resonant_seed,fermi_modes,vertex,bloch
-from literal import parts,cell,literal_coefficients,CHARGE,MARKER
+from literal import parts,cell,literal_coefficients,finite_conversion,bond,CHARGE,MARKER
 
 
 def rg_record(T,W,center,radius):
@@ -56,13 +56,26 @@ def main():
         errors.extend([q2['gaussian_residual'],q4['higher_residual'],np.max(abs(q2['h'][:n,n:]-T)),np.max(abs(q2['h'][:n,:n]+q2['h'][n:,n:]))])
         assert max(errors)<1e-12
         ks=np.linspace(0,np.pi,1001);ev=np.array([np.linalg.eigvalsh(bloch(T,np.zeros_like(T),k)) for k in ks])
+        sampled_counts=[int(2*np.sum((ev[:-1]-mu)*(ev[1:]-mu)<0)) for mu in np.linspace(ev.min(),ev.max(),1001)[1:-1]]
         out['flavours'].append(dict(n=n,physical_sites=n+2,cell_code_dimension=1<<n,**dim,
             max_matching_error=max(errors),seconds=time.perf_counter()-start,T=T,
-            bare_band_grid_ranges=np.c_[ev.min(0),ev.max(0)],quartic_W=q4['W'],quartic_pairs=q4['pairs']))
+            bare_band_grid_ranges=np.c_[ev.min(0),ev.max(0)],bare_max_sampled_fermi_points=max(sampled_counts),quartic_W=q4['W'],quartic_pairs=q4['pairs']))
     T=scalar(2)[2];W=normal_order(pair_coefficients(2)[4],4)
     out['primary']=rg_record(T,W,1/5,2/3)
     out['neighbourhood']=[rg_record(T,W,c,r) for c in (3/20,1/5,1/4) for r in (3/5,2/3,7/10)]
     assert min(r['stable_margin_coefficient'] for r in out['neighbourhood'])>0
+    out['finite_conversion']=[];coeff=pair_coefficients(2)
+    delta=2-2*np.cos(np.pi/5)
+    for g in (.1,.05,.025):
+        exact=finite_conversion(2,g);err=float(np.linalg.norm(exact-coeff[0]-g*g*coeff[2]-g**4*coeff[4],2))
+        bound=(g/delta)**6/(delta*(1-(g/delta)**2))
+        assert err<bound
+        out['finite_conversion'].append(dict(g=g,error=err,error_over_g6=err/g**6,rigorous_Neumann_bound=bound))
+    # Check the complete 81x81 bond at a diagnostic finite tuple, including diagonals.
+    seed=out['primary']['seed'];full=bond(delta,1.,100.,.05,.01,1e-7,seed['mu'],seed['eta'],seed['kappa'])
+    assert np.max(abs(full-full.T))==np.max(abs(full*(q[:,None]-q[None,:])))==0
+    assert np.max(abs(full*(ml[:,None]-ml[None,:])))==np.max(abs(full*(mr[:,None]-mr[None,:])))==0
+    out['complete_bond_dimension']=81
     out['seconds']=time.perf_counter()-started
     (Path(__file__).parent/'audit.json').write_text(json.dumps(out,indent=2,default=encode)+'\n')
     p=out['primary'];print(json.dumps(dict(seconds=out['seconds'],literal_checks='passed',primary={k:p[k] for k in ('D_coefficient','Y_coefficient','stable_margin_coefficient','KT_invariant_coefficient','other_pair_sum_chord_margin')},minimum_sampled_margin=min(r['stable_margin_coefficient'] for r in out['neighbourhood'])),indent=2,default=encode))
