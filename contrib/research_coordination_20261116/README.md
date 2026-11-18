@@ -6,6 +6,13 @@ their newly proposed sixth-order qubit models. No human review is claimed.
 
 ## Reviewed checkpoint and assigned follow-ups
 
+The [chirality-chain field scan](CHIRALITY_FIELD_DIAGRAM_20261118.md)
+assigns one new GPT-6 Astra Max chat to the full h-axis phase diagram of
+the simple four-term qubit Hamiltonian. It prioritizes the proposed
+c=3/2 transition and nearby apparent c about 2 region while checking
+the low- and high-field phases. Startup is confirmed; no new phase
+claim or long production run is implied.
+
 The [completed stability results](STABILITY_RESULTS_20261118.md) give
 volume-independent finite-order local interaction bounds and exact
 nonzero-port frozen sector selection for modified d=9; a connected qubit

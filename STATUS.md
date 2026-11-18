@@ -7,6 +7,14 @@ earlier long version. The standard is theoretical physics, and nothing has
 had independent human review. Conditional infrared predictions are not
 established microscopic counterexamples.
 
+**New field-diagram investigation (2026-11-18):** One new GPT-6 Astra
+Max chat is active on the h-dependent phase diagram of
+H=sum[(9/16)XY+(7/16)YX+ZZ]-h sum Z. The
+[assignment](contrib/research_coordination_20261116/CHIRALITY_FIELD_DIAGRAM_20261118.md)
+covers the full field range and emphasizes the proposed c=3/2 transition
+and unresolved nearby c about 2 readings. This is a research deployment,
+not a new phase result; long production remains stopped.
+
 **Stability round completed (2026-11-18):** All four GPT-6 Astra Max
 chats completed. The modified d=9 bond gains volume-independent local
 bounds through fourth port order and exact nonzero-port ground-sector
