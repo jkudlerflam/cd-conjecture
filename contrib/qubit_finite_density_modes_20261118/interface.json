@@ -1,0 +1,185 @@
+{
+  "date": "2026-11-18",
+  "status": "undecided; no matched two-boson medium parameters yet",
+  "physical_point": {
+    "microscopic_d": 2,
+    "range": 1,
+    "Jx": 0.5002549063202599,
+    "Jy": -0.49974509367974007,
+    "D": 0.006244799657946725,
+    "Jz": 10,
+    "hz": -19.97589125,
+    "end_convention": "same hz on every open-chain site",
+    "Delta": 1,
+    "V": 40,
+    "abs_t2": 0.0125,
+    "mu": 0.0482174999999998
+  },
+  "convention": {
+    "fields": [
+      "phi_A",
+      "phi_B",
+      "theta_A",
+      "theta_B"
+    ],
+    "X": "(-dphi_A,-dphi_B,dtheta_A,dtheta_B)/pi",
+    "difference_covariance": "G log(|x|/a0)",
+    "vertex": "exp i(n.theta-2m.phi)",
+    "dimension": "ell.T G ell / 4; ell=(-2m_A,-2m_B,n_A,n_B)",
+    "mismatch": "wrap(n.k + 2pi m.rho)",
+    "momentum_unit": "radians per physical site",
+    "physical_energy_unit": "Delta=1",
+    "effective_energy_unit": "abs_t2=1/80",
+    "signed_speed": "eigenvalues of eta H; omega/q has opposite sign for exp i(qx-omega t)"
+  },
+  "matched_medium": {
+    "rho": null,
+    "rho_errors": null,
+    "k": null,
+    "k_errors": null,
+    "chi_X": null,
+    "chi_error_norm": null,
+    "probe_matching_Z": null,
+    "UV_contact": null,
+    "H": null,
+    "H_error_norm": null,
+    "G": null,
+    "G_error_norm": null,
+    "signed_velocities": null,
+    "velocity_errors": null,
+    "a0": null,
+    "quartet_mismatch": null,
+    "quartet_mismatch_error": null,
+    "both_valleys_occupied": null,
+    "positive_relative_stiffness": null
+  },
+  "strongest_finite_window_diagnostic": {
+    "path": "codex/work_C195/typhon_out_x2048/p153c_L512_P0_rand1.json",
+    "sha256": "11f288caff28c58beba36ffc2e31bf16be47c4cc75c0281c2e23b0fadf0fc8f1",
+    "L": 512,
+    "P": 0,
+    "chi": 2048,
+    "hz": -19.97589125,
+    "energy": -5130.5444293030305,
+    "n_mid": 0.2153834700174484,
+    "last_entropy_change": -0.00014020067375764,
+    "chi_entropy_change": 0.011776840062552196,
+    "discarded": 5.967715210886126e-11,
+    "local_residual": 9.999719747293045e-10,
+    "gwin": [
+      232,
+      48
+    ],
+    "has_long_pair": false,
+    "has_density_response": false,
+    "has_current_response": false,
+    "carrier_windows": [
+      {
+        "window": [
+          8,
+          24
+        ],
+        "valleys": [
+          {
+            "k": -2.893851237586076,
+            "points": 17,
+            "lo": 8,
+            "hi": 24,
+            "phase_rms": 0.0014444639424152019,
+            "formal_slope_error": 7.612993426697229e-05,
+            "minimum_filtered_magnitude": 0.0365426969565911
+          },
+          {
+            "k": -0.23941210332519153,
+            "points": 17,
+            "lo": 8,
+            "hi": 24,
+            "phase_rms": 0.0012530759947050577,
+            "formal_slope_error": 6.604290374248456e-05,
+            "minimum_filtered_magnitude": 0.029879857837823286
+          }
+        ],
+        "pair_shift_from_minus_pi": 0.008329312678525547,
+        "quartet_mismatch": 0.016658625357051336
+      },
+      {
+        "window": [
+          8,
+          32
+        ],
+        "valleys": [
+          {
+            "k": -2.8938434901904593,
+            "points": 25,
+            "lo": 8,
+            "hi": 32,
+            "phase_rms": 0.0014189557976091853,
+            "formal_slope_error": 4.1030166277872905e-05,
+            "minimum_filtered_magnitude": 0.032899039504646364
+          },
+          {
+            "k": -0.23944622853726663,
+            "points": 25,
+            "lo": 8,
+            "hi": 32,
+            "phase_rms": 0.001160853333252397,
+            "formal_slope_error": 3.356694082213215e-05,
+            "minimum_filtered_magnitude": 0.02694655880848808
+          }
+        ],
+        "pair_shift_from_minus_pi": 0.008302934862067344,
+        "quartet_mismatch": 0.016605869724134935
+      },
+      {
+        "window": [
+          12,
+          36
+        ],
+        "valleys": [
+          {
+            "k": -2.893545121647238,
+            "points": 25,
+            "lo": 12,
+            "hi": 36,
+            "phase_rms": 0.0023667880375920743,
+            "formal_slope_error": 6.843744314692859e-05,
+            "minimum_filtered_magnitude": 0.03150125018655438
+          },
+          {
+            "k": -0.23973676351237044,
+            "points": 25,
+            "lo": 12,
+            "hi": 36,
+            "phase_rms": 0.002389345362555498,
+            "formal_slope_error": 6.908970503950673e-05,
+            "minimum_filtered_magnitude": 0.025730574153681886
+          }
+        ],
+        "pair_shift_from_minus_pi": 0.008310768430184634,
+        "quartet_mismatch": 0.01662153686036951
+      }
+    ]
+  },
+  "finite_window_warning": "Not a matched momentum or a thermodynamic uncertainty bound.",
+  "bare_band_comparison_only": {
+    "phi": 1.53,
+    "mu_eff": -2.142600000000016,
+    "k": [
+      -2.89181260021803,
+      -0.25521372801474385
+    ],
+    "energy": [
+      -2.328595726752902,
+      -2.170627920962521
+    ],
+    "curvature": [
+      7.595355964970141,
+      7.405842442629218
+    ],
+    "pair_shift_from_minus_pi": -0.005433674642981057,
+    "quartet_mismatch": -0.010867349285961867,
+    "physical_t2": 0.0125
+  },
+  "missing_input": "Rank-four normalized in-medium static response and compactification, with analytic UV contribution, errors and independent dynamic/occupation checks.",
+  "amplitude_owner": "contrib/qubit_detuned_quartet_20261118; no amplitude inferred here"
+}

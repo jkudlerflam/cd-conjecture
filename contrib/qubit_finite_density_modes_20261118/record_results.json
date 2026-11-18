@@ -1,0 +1,2451 @@
+{
+  "bare_band": {
+    "phi": 1.53,
+    "mu_eff": -2.142600000000016,
+    "k": [
+      -2.89181260021803,
+      -0.25521372801474385
+    ],
+    "energy": [
+      -2.328595726752902,
+      -2.170627920962521
+    ],
+    "curvature": [
+      7.595355964970141,
+      7.405842442629218
+    ],
+    "pair_shift_from_minus_pi": -0.005433674642981057,
+    "quartet_mismatch": -0.010867349285961867,
+    "physical_t2": 0.0125
+  },
+  "standard_records": [
+    {
+      "path": "codex/work_C190/gpu/typhon_out/outG/p153c_L128_P0_rand1.json",
+      "sha256": "0bdfe9fe03abda3a80cea21c1b8bea44a6082f470199870ab4bbfc2fae15b8df",
+      "L": 128,
+      "P": 0,
+      "chi": 512,
+      "hz": -19.97589125,
+      "energy": -1290.113415702167,
+      "n_mid": 0.22110850916887004,
+      "last_entropy_change": 3.891799641886351e-06,
+      "chi_entropy_change": 0.004601147926914573,
+      "discarded": 2.5920776636212395e-10,
+      "local_residual": 9.996910475933255e-10,
+      "gwin": [
+        40,
+        48
+      ],
+      "has_long_pair": false,
+      "has_density_response": false,
+      "has_current_response": false,
+      "carrier_windows": [
+        {
+          "window": [
+            8,
+            24
+          ],
+          "valleys": [
+            {
+              "k": -2.899936712312889,
+              "points": 17,
+              "lo": 8,
+              "hi": 24,
+              "phase_rms": 0.0015764941408872553,
+              "formal_slope_error": 8.308853671856848e-05,
+              "minimum_filtered_magnitude": 0.036255779769118666
+            },
+            {
+              "k": -0.23048958852700896,
+              "points": 17,
+              "lo": 8,
+              "hi": 24,
+              "phase_rms": 0.0013376374269139764,
+              "formal_slope_error": 7.049968254225301e-05,
+              "minimum_filtered_magnitude": 0.029884121002437897
+            }
+          ],
+          "pair_shift_from_minus_pi": 0.011166352749895303,
+          "quartet_mismatch": 0.022332705499790852
+        },
+        {
+          "window": [
+            8,
+            32
+          ],
+          "valleys": [
+            {
+              "k": -2.8999618467824595,
+              "points": 25,
+              "lo": 8,
+              "hi": 32,
+              "phase_rms": 0.0014326906691288484,
+              "formal_slope_error": 4.142732034229586e-05,
+              "minimum_filtered_magnitude": 0.03251773347908482
+            },
+            {
+              "k": -0.23052111770207295,
+              "points": 25,
+              "lo": 8,
+              "hi": 32,
+              "phase_rms": 0.0011823822292362821,
+              "formal_slope_error": 3.4189464922943596e-05,
+              "minimum_filtered_magnitude": 0.02687138112102636
+            }
+          ],
+          "pair_shift_from_minus_pi": 0.011109689105260667,
+          "quartet_mismatch": 0.022219378210521577
+        },
+        {
+          "window": [
+            12,
+            36
+          ],
+          "valleys": [
+            {
+              "k": -2.899694791790513,
+              "points": 25,
+              "lo": 12,
+              "hi": 36,
+              "phase_rms": 0.002378722203918695,
+              "formal_slope_error": 6.878252847629126e-05,
+              "minimum_filtered_magnitude": 0.030910148689370313
+            },
+            {
+              "k": -0.2307477447736888,
+              "points": 25,
+              "lo": 12,
+              "hi": 36,
+              "phase_rms": 0.0021835035667116852,
+              "formal_slope_error": 6.313763583154557e-05,
+              "minimum_filtered_magnitude": 0.025423771256595284
+            }
+          ],
+          "pair_shift_from_minus_pi": 0.01115011702559121,
+          "quartet_mismatch": 0.022300234051182668
+        }
+      ]
+    },
+    {
+      "path": "codex/work_C190/gpu/typhon_out/outG/p153c_L128_P1_rand1.json",
+      "sha256": "731e69f5fe45d2e34d636d1a5a7448b52d81c93c914c033fcc62f1d042075baf",
+      "L": 128,
+      "P": 1,
+      "chi": 512,
+      "hz": -19.97589125,
+      "energy": -1290.113410738826,
+      "n_mid": 0.2129804877838225,
+      "last_entropy_change": -4.673266242360974e-05,
+      "chi_entropy_change": 0.004366423390445906,
+      "discarded": 2.3924973113764736e-10,
+      "local_residual": 9.995108648729389e-10,
+      "gwin": [
+        40,
+        48
+      ],
+      "has_long_pair": false,
+      "has_density_response": false,
+      "has_current_response": false,
+      "carrier_windows": [
+        {
+          "window": [
+            8,
+            24
+          ],
+          "valleys": [
+            {
+              "k": -2.8998988015346434,
+              "points": 17,
+              "lo": 8,
+              "hi": 24,
+              "phase_rms": 0.0015638359295340515,
+              "formal_slope_error": 8.242139040223638e-05,
+              "minimum_filtered_magnitude": 0.03666935507331934
+            },
+            {
+              "k": -0.2302695461534652,
+              "points": 17,
+              "lo": 8,
+              "hi": 24,
+              "phase_rms": 0.001357770172337155,
+              "formal_slope_error": 7.156077139374593e-05,
+              "minimum_filtered_magnitude": 0.029713860316448563
+            }
+          ],
+          "pair_shift_from_minus_pi": 0.011424305901684306,
+          "quartet_mismatch": 0.02284861180336886
+        },
+        {
+          "window": [
+            8,
+            32
+          ],
+          "valleys": [
+            {
+              "k": -2.899930806117863,
+              "points": 25,
+              "lo": 8,
+              "hi": 32,
+              "phase_rms": 0.0014268459565941886,
+              "formal_slope_error": 4.125831611570365e-05,
+              "minimum_filtered_magnitude": 0.032882747153075514
+            },
+            {
+              "k": -0.230300682966799,
+              "points": 25,
+              "lo": 8,
+              "hi": 32,
+              "phase_rms": 0.001201794275976702,
+              "formal_slope_error": 3.4750778747444166e-05,
+              "minimum_filtered_magnitude": 0.026706895777020286
+            }
+          ],
+          "pair_shift_from_minus_pi": 0.01136116450513125,
+          "quartet_mismatch": 0.022722329010262745
+        },
+        {
+          "window": [
+            12,
+            36
+          ],
+          "valleys": [
+            {
+              "k": -2.8996679727571464,
+              "points": 25,
+              "lo": 12,
+              "hi": 36,
+              "phase_rms": 0.002358758769056606,
+              "formal_slope_error": 6.820527085258717e-05,
+              "minimum_filtered_magnitude": 0.0312621602904878
+            },
+            {
+              "k": -0.2305285486278361,
+              "points": 25,
+              "lo": 12,
+              "hi": 36,
+              "phase_rms": 0.0021894352641485177,
+              "formal_slope_error": 6.330915529152686e-05,
+              "minimum_filtered_magnitude": 0.02526040196721658
+            }
+          ],
+          "pair_shift_from_minus_pi": 0.011396132204810614,
+          "quartet_mismatch": 0.02279226440962148
+        }
+      ]
+    },
+    {
+      "path": "codex/work_C190/gpu/typhon_out/outG/p153c_L256_P0_rand1.json",
+      "sha256": "b46085dc0433ec06de41c5247005570491b8131212b110c475bdd68e04851147",
+      "L": 256,
+      "P": 0,
+      "chi": 768,
+      "hz": -19.97589125,
+      "energy": -2570.257100194294,
+      "n_mid": 0.21923889258727716,
+      "last_entropy_change": 0.0001311036963835832,
+      "chi_entropy_change": 0.08707099849253086,
+      "discarded": 3.679627713637501e-10,
+      "local_residual": 9.999517292998103e-10,
+      "gwin": [
+        104,
+        48
+      ],
+      "has_long_pair": false,
+      "has_density_response": false,
+      "has_current_response": false,
+      "carrier_windows": [
+        {
+          "window": [
+            8,
+            24
+          ],
+          "valleys": [
+            {
+              "k": -2.895822673726061,
+              "points": 17,
+              "lo": 8,
+              "hi": 24,
+              "phase_rms": 0.0015878121936858869,
+              "formal_slope_error": 8.368505047726379e-05,
+              "minimum_filtered_magnitude": 0.036256611245841355
+            },
+            {
+              "k": -0.23657001738179273,
+              "points": 17,
+              "lo": 8,
+              "hi": 24,
+              "phase_rms": 0.0013822874209062973,
+              "formal_slope_error": 7.28529438510625e-05,
+              "minimum_filtered_magnitude": 0.029877333809735413
+            }
+          ],
+          "pair_shift_from_minus_pi": 0.009199962481939217,
+          "quartet_mismatch": 0.01839992496387868
+        },
+        {
+          "window": [
+            8,
+            32
+          ],
+          "valleys": [
+            {
+              "k": -2.895826036456192,
+              "points": 25,
+              "lo": 8,
+              "hi": 32,
+              "phase_rms": 0.0015148007309606075,
+              "formal_slope_error": 4.380159408339474e-05,
+              "minimum_filtered_magnitude": 0.03254717355607306
+            },
+            {
+              "k": -0.23660377697801763,
+              "points": 25,
+              "lo": 8,
+              "hi": 32,
+              "phase_rms": 0.0012522021022351281,
+              "formal_slope_error": 3.6208358678104554e-05,
+              "minimum_filtered_magnitude": 0.02686842239171517
+            }
+          ],
+          "pair_shift_from_minus_pi": 0.009162840155583662,
+          "quartet_mismatch": 0.018325680311167568
+        },
+        {
+          "window": [
+            12,
+            36
+          ],
+          "valleys": [
+            {
+              "k": -2.895497304952333,
+              "points": 25,
+              "lo": 12,
+              "hi": 36,
+              "phase_rms": 0.0026818830532493974,
+              "formal_slope_error": 7.75486507740669e-05,
+              "minimum_filtered_magnitude": 0.031082246372792003
+            },
+            {
+              "k": -0.23692192289049938,
+              "points": 25,
+              "lo": 12,
+              "hi": 36,
+              "phase_rms": 0.002688265096475859,
+              "formal_slope_error": 7.773319231878272e-05,
+              "minimum_filtered_magnitude": 0.025569088818431767
+            }
+          ],
+          "pair_shift_from_minus_pi": 0.009173425746960895,
+          "quartet_mismatch": 0.018346851493922036
+        }
+      ]
+    },
+    {
+      "path": "codex/work_C190/gpu/typhon_out/outG/p153c_L256_P1_rand1.json",
+      "sha256": "27e3846272a04633c3350de62981c88d798af34bfd35a95051ab6c1a5127b97b",
+      "L": 256,
+      "P": 1,
+      "chi": 768,
+      "hz": -19.97589125,
+      "energy": -2570.2571184392896,
+      "n_mid": 0.21534030313709457,
+      "last_entropy_change": 1.0044713659951299e-05,
+      "chi_entropy_change": 0.026868901550404445,
+      "discarded": 3.5254488217617563e-10,
+      "local_residual": 9.997114399002688e-10,
+      "gwin": [
+        104,
+        48
+      ],
+      "has_long_pair": false,
+      "has_density_response": false,
+      "has_current_response": false,
+      "carrier_windows": [
+        {
+          "window": [
+            8,
+            24
+          ],
+          "valleys": [
+            {
+              "k": -2.895789009750717,
+              "points": 17,
+              "lo": 8,
+              "hi": 24,
+              "phase_rms": 0.0015036547469794046,
+              "formal_slope_error": 7.924956358298513e-05,
+              "minimum_filtered_magnitude": 0.03645560824234308
+            },
+            {
+              "k": -0.2365149126165462,
+              "points": 17,
+              "lo": 8,
+              "hi": 24,
+              "phase_rms": 0.001311979293713098,
+              "formal_slope_error": 6.914738018520697e-05,
+              "minimum_filtered_magnitude": 0.029792726859618895
+            }
+          ],
+          "pair_shift_from_minus_pi": 0.009288731222530267,
+          "quartet_mismatch": 0.018577462445060776
+        },
+        {
+          "window": [
+            8,
+            32
+          ],
+          "valleys": [
+            {
+              "k": -2.8957767196783326,
+              "points": 25,
+              "lo": 8,
+              "hi": 32,
+              "phase_rms": 0.0014448045775059877,
+              "formal_slope_error": 4.177760304724439e-05,
+              "minimum_filtered_magnitude": 0.032733004628125124
+            },
+            {
+              "k": -0.23656769055721727,
+              "points": 25,
+              "lo": 8,
+              "hi": 32,
+              "phase_rms": 0.0012004736164060933,
+              "formal_slope_error": 3.471259088995781e-05,
+              "minimum_filtered_magnitude": 0.02679105801257626
+            }
+          ],
+          "pair_shift_from_minus_pi": 0.009248243354243346,
+          "quartet_mismatch": 0.018496486708486935
+        },
+        {
+          "window": [
+            12,
+            36
+          ],
+          "valleys": [
+            {
+              "k": -2.8954581483846864,
+              "points": 25,
+              "lo": 12,
+              "hi": 36,
+              "phase_rms": 0.002546088380778932,
+              "formal_slope_error": 7.362204643551013e-05,
+              "minimum_filtered_magnitude": 0.031242741345915436
+            },
+            {
+              "k": -0.23687713056304094,
+              "points": 25,
+              "lo": 12,
+              "hi": 36,
+              "phase_rms": 0.00256001657865286,
+              "formal_slope_error": 7.40247906758038e-05,
+              "minimum_filtered_magnitude": 0.025476300644328518
+            }
+          ],
+          "pair_shift_from_minus_pi": 0.009257374642065663,
+          "quartet_mismatch": 0.01851474928413157
+        }
+      ]
+    },
+    {
+      "path": "codex/work_C190/gpu/typhon_out/outG/p153c_L64_P0_rand1.json",
+      "sha256": "7697411fa1ab96da142866aaea357b6c19345461732b325d8066a7dd50e8d014",
+      "L": 64,
+      "P": 0,
+      "chi": 384,
+      "hz": -19.97589125,
+      "energy": -650.0414853398478,
+      "n_mid": 0.21829875582136551,
+      "last_entropy_change": -1.673268434698727e-06,
+      "chi_entropy_change": 0.0004902205942272087,
+      "discarded": 3.10198533526318e-11,
+      "local_residual": 9.994152278401387e-10,
+      "gwin": [
+        16,
+        32
+      ],
+      "has_long_pair": false,
+      "has_density_response": false,
+      "has_current_response": false,
+      "carrier_windows": [
+        {
+          "window": [
+            6,
+            20
+          ],
+          "valleys": [
+            {
+              "k": -2.910721491151412,
+              "points": 15,
+              "lo": 6,
+              "hi": 20,
+              "phase_rms": 0.002081076380160344,
+              "formal_slope_error": 0.0001335927708909373,
+              "minimum_filtered_magnitude": 0.037790836224223086
+            },
+            {
+              "k": -0.21536577556792333,
+              "points": 15,
+              "lo": 6,
+              "hi": 20,
+              "phase_rms": 0.0026653604567401477,
+              "formal_slope_error": 0.0001711003460678438,
+              "minimum_filtered_magnitude": 0.031209697137246254
+            }
+          ],
+          "pair_shift_from_minus_pi": 0.01550538687045755,
+          "quartet_mismatch": 0.031010773740915345
+        }
+      ]
+    },
+    {
+      "path": "codex/work_C190/gpu/typhon_out/outG/p153c_L64_P1_rand1.json",
+      "sha256": "549c5869640835831f1d1e3b41835160e36d5d345b6b5f298738a01d0751aebc",
+      "L": 64,
+      "P": 1,
+      "chi": 384,
+      "hz": -19.97589125,
+      "energy": -650.0414362973015,
+      "n_mid": 0.20177264417155766,
+      "last_entropy_change": -9.557235947088571e-07,
+      "chi_entropy_change": 0.0003841467168650414,
+      "discarded": 2.3904656032414096e-11,
+      "local_residual": 9.990853301316119e-10,
+      "gwin": [
+        16,
+        32
+      ],
+      "has_long_pair": false,
+      "has_density_response": false,
+      "has_current_response": false,
+      "carrier_windows": [
+        {
+          "window": [
+            6,
+            20
+          ],
+          "valleys": [
+            {
+              "k": -2.910701620233777,
+              "points": 15,
+              "lo": 6,
+              "hi": 20,
+              "phase_rms": 0.001974580324047097,
+              "formal_slope_error": 0.00012675635519723304,
+              "minimum_filtered_magnitude": 0.03869340780162327
+            },
+            {
+              "k": -0.21416702613286895,
+              "points": 15,
+              "lo": 6,
+              "hi": 20,
+              "phase_rms": 0.0026959811794611565,
+              "formal_slope_error": 0.00017306601500435227,
+              "minimum_filtered_magnitude": 0.030855320411610127
+            }
+          ],
+          "pair_shift_from_minus_pi": 0.01672400722314693,
+          "quartet_mismatch": 0.033448014446294104
+        }
+      ]
+    },
+    {
+      "path": "codex/work_C190/gpu/typhon_out/outG/p153c_L64_P0_prod14.json",
+      "sha256": "819dd948503995a322c41bc88e2a87f34d037946bdcd745881545224077c453c",
+      "L": 64,
+      "P": 0,
+      "chi": 384,
+      "hz": -19.97589125,
+      "energy": -650.0414853398672,
+      "n_mid": 0.21829875473311083,
+      "last_entropy_change": -1.5688233028221532e-06,
+      "chi_entropy_change": 0.0004909934516275083,
+      "discarded": 3.099343004464572e-11,
+      "local_residual": 9.992555525989359e-10,
+      "gwin": [
+        16,
+        32
+      ],
+      "has_long_pair": false,
+      "has_density_response": false,
+      "has_current_response": false,
+      "carrier_windows": [
+        {
+          "window": [
+            6,
+            20
+          ],
+          "valleys": [
+            {
+              "k": -2.910721480422163,
+              "points": 15,
+              "lo": 6,
+              "hi": 20,
+              "phase_rms": 0.002081051702233254,
+              "formal_slope_error": 0.00013359118671426258,
+              "minimum_filtered_magnitude": 0.037790842139491194
+            },
+            {
+              "k": -0.21536578730615707,
+              "points": 15,
+              "lo": 6,
+              "hi": 20,
+              "phase_rms": 0.0026653372506019813,
+              "formal_slope_error": 0.00017109885637129596,
+              "minimum_filtered_magnitude": 0.0312097010655873
+            }
+          ],
+          "pair_shift_from_minus_pi": 0.015505385861473098,
+          "quartet_mismatch": 0.031010771722946442
+        }
+      ]
+    },
+    {
+      "path": "codex/work_C190/gpu/typhon_out/outX1024/p153c_L256_P0_rand1.json",
+      "sha256": "49e4f1b6416aaeafc62104eb0f34f46dfc378336029af31e03607ebd42a0a013",
+      "L": 256,
+      "P": 0,
+      "chi": 1024,
+      "hz": -19.97589125,
+      "energy": -2570.257100778828,
+      "n_mid": 0.21925029975586516,
+      "last_entropy_change": -6.57145057836317e-05,
+      "chi_entropy_change": 0.00768063523278073,
+      "discarded": 1.3029710643763792e-10,
+      "local_residual": 9.995880923656297e-10,
+      "gwin": [
+        104,
+        48
+      ],
+      "has_long_pair": false,
+      "has_density_response": false,
+      "has_current_response": false,
+      "carrier_windows": [
+        {
+          "window": [
+            8,
+            24
+          ],
+          "valleys": [
+            {
+              "k": -2.8958219403739993,
+              "points": 17,
+              "lo": 8,
+              "hi": 24,
+              "phase_rms": 0.001581415134563365,
+              "formal_slope_error": 8.334789585803169e-05,
+              "minimum_filtered_magnitude": 0.03626638458392324
+            },
+            {
+              "k": -0.23656906700670022,
+              "points": 17,
+              "lo": 8,
+              "hi": 24,
+              "phase_rms": 0.001374660703647989,
+              "formal_slope_error": 7.2450980557623e-05,
+              "minimum_filtered_magnitude": 0.029886994911991215
+            }
+          ],
+          "pair_shift_from_minus_pi": 0.009201646209093362,
+          "quartet_mismatch": 0.01840329241818697
+        },
+        {
+          "window": [
+            8,
+            32
+          ],
+          "valleys": [
+            {
+              "k": -2.89582458115425,
+              "points": 25,
+              "lo": 8,
+              "hi": 32,
+              "phase_rms": 0.001508642891278173,
+              "formal_slope_error": 4.362353555154442e-05,
+              "minimum_filtered_magnitude": 0.03256577724860617
+            },
+            {
+              "k": -0.23660355839769442,
+              "points": 25,
+              "lo": 8,
+              "hi": 32,
+              "phase_rms": 0.0012454529149631423,
+              "formal_slope_error": 3.6013200889203265e-05,
+              "minimum_filtered_magnitude": 0.026886330637094676
+            }
+          ],
+          "pair_shift_from_minus_pi": 0.009164514037848903,
+          "quartet_mismatch": 0.01832902807569805
+        },
+        {
+          "window": [
+            12,
+            36
+          ],
+          "valleys": [
+            {
+              "k": -2.895497528465734,
+              "points": 25,
+              "lo": 12,
+              "hi": 36,
+              "phase_rms": 0.002665648872167117,
+              "formal_slope_error": 7.707922730766055e-05,
+              "minimum_filtered_magnitude": 0.031103605896696165
+            },
+            {
+              "k": -0.23691973114072296,
+              "points": 25,
+              "lo": 12,
+              "hi": 36,
+              "phase_rms": 0.0026700298000981847,
+              "formal_slope_error": 7.720590510958078e-05,
+              "minimum_filtered_magnitude": 0.025589686482299555
+            }
+          ],
+          "pair_shift_from_minus_pi": 0.009175393983336111,
+          "quartet_mismatch": 0.018350787966672468
+        }
+      ]
+    },
+    {
+      "path": "codex/work_C190/gpu/typhon_out/outX1024/p153c_L256_P1_rand1.json",
+      "sha256": "11280793c1a245a4fa67fb9e52faa22943e7f5f50c077563461fcb601e2fa36d",
+      "L": 256,
+      "P": 1,
+      "chi": 1024,
+      "hz": -19.97589125,
+      "energy": -2570.257119009886,
+      "n_mid": 0.21534336540835414,
+      "last_entropy_change": -7.938994935674515e-05,
+      "chi_entropy_change": 0.007120197363977621,
+      "discarded": 1.2765632995126452e-10,
+      "local_residual": 9.995410551998945e-10,
+      "gwin": [
+        104,
+        48
+      ],
+      "has_long_pair": false,
+      "has_density_response": false,
+      "has_current_response": false,
+      "carrier_windows": [
+        {
+          "window": [
+            8,
+            24
+          ],
+          "valleys": [
+            {
+              "k": -2.8957896589698326,
+              "points": 17,
+              "lo": 8,
+              "hi": 24,
+              "phase_rms": 0.0015036495607783531,
+              "formal_slope_error": 7.92492902461897e-05,
+              "minimum_filtered_magnitude": 0.03646664852067335
+            },
+            {
+              "k": -0.23651460982493175,
+              "points": 17,
+              "lo": 8,
+              "hi": 24,
+              "phase_rms": 0.0013107557535427653,
+              "formal_slope_error": 6.908289395609096e-05,
+              "minimum_filtered_magnitude": 0.029803312670489263
+            }
+          ],
+          "pair_shift_from_minus_pi": 0.009288384795028914,
+          "quartet_mismatch": 0.018576769590058072
+        },
+        {
+          "window": [
+            8,
+            32
+          ],
+          "valleys": [
+            {
+              "k": -2.895778278979185,
+              "points": 25,
+              "lo": 8,
+              "hi": 32,
+              "phase_rms": 0.0014437981799509492,
+              "formal_slope_error": 4.1748502310565735e-05,
+              "minimum_filtered_magnitude": 0.03275167869383465
+            },
+            {
+              "k": -0.23656636726544206,
+              "points": 25,
+              "lo": 8,
+              "hi": 32,
+              "phase_rms": 0.00119828773305103,
+              "formal_slope_error": 3.4649384440769325e-05,
+              "minimum_filtered_magnitude": 0.02680910744468365
+            }
+          ],
+          "pair_shift_from_minus_pi": 0.009248007345166176,
+          "quartet_mismatch": 0.018496014690332595
+        },
+        {
+          "window": [
+            12,
+            36
+          ],
+          "valleys": [
+            {
+              "k": -2.895460765241837,
+              "points": 25,
+              "lo": 12,
+              "hi": 36,
+              "phase_rms": 0.0025400405481220763,
+              "formal_slope_error": 7.344716883893551e-05,
+              "minimum_filtered_magnitude": 0.03126564272131181
+            },
+            {
+              "k": -0.23687457487052901,
+              "points": 25,
+              "lo": 12,
+              "hi": 36,
+              "phase_rms": 0.002552649212442994,
+              "formal_slope_error": 7.381175778138234e-05,
+              "minimum_filtered_magnitude": 0.025498205207232286
+            }
+          ],
+          "pair_shift_from_minus_pi": 0.009257313477426976,
+          "quartet_mismatch": 0.0185146269548542
+        }
+      ]
+    },
+    {
+      "path": "codex/work_C190/gpu/typhon_out/outX1536/p153c_L256_P1_rand1.json",
+      "sha256": "5f93d835a7abe87a10275a33c6b51a1e086e885c49d7d2fd865142146791cfd5",
+      "L": 256,
+      "P": 1,
+      "chi": 1536,
+      "hz": -19.97589125,
+      "energy": -2570.2571192620476,
+      "n_mid": 0.21534516088417244,
+      "last_entropy_change": -3.136299226857986e-05,
+      "chi_entropy_change": 0.003874643152797841,
+      "discarded": 2.6268764941050904e-11,
+      "local_residual": 9.998875079347765e-10,
+      "gwin": [
+        104,
+        48
+      ],
+      "has_long_pair": false,
+      "has_density_response": false,
+      "has_current_response": false,
+      "carrier_windows": [
+        {
+          "window": [
+            8,
+            24
+          ],
+          "valleys": [
+            {
+              "k": -2.8957893916731523,
+              "points": 17,
+              "lo": 8,
+              "hi": 24,
+              "phase_rms": 0.001505231965919451,
+              "formal_slope_error": 7.933269031997353e-05,
+              "minimum_filtered_magnitude": 0.03647262380451446
+            },
+            {
+              "k": -0.2365147888006021,
+              "points": 17,
+              "lo": 8,
+              "hi": 24,
+              "phase_rms": 0.0013117526678866442,
+              "formal_slope_error": 6.913543595540344e-05,
+              "minimum_filtered_magnitude": 0.029808948376482663
+            }
+          ],
+          "pair_shift_from_minus_pi": 0.009288473116038531,
+          "quartet_mismatch": 0.018576946232077306
+        },
+        {
+          "window": [
+            8,
+            32
+          ],
+          "valleys": [
+            {
+              "k": -2.8957784393731063,
+              "points": 25,
+              "lo": 8,
+              "hi": 32,
+              "phase_rms": 0.0014439584872047951,
+              "formal_slope_error": 4.175313771449582e-05,
+              "minimum_filtered_magnitude": 0.03276132801880589
+            },
+            {
+              "k": -0.23656597325159565,
+              "points": 25,
+              "lo": 8,
+              "hi": 32,
+              "phase_rms": 0.0011980801923618136,
+              "formal_slope_error": 3.464338324679111e-05,
+              "minimum_filtered_magnitude": 0.026818453886544413
+            }
+          ],
+          "pair_shift_from_minus_pi": 0.009248240965091359,
+          "quartet_mismatch": 0.018496481930182964
+        },
+        {
+          "window": [
+            12,
+            36
+          ],
+          "valleys": [
+            {
+              "k": -2.895461680818384,
+              "points": 25,
+              "lo": 12,
+              "hi": 36,
+              "phase_rms": 0.0025343853808313765,
+              "formal_slope_error": 7.328364545458657e-05,
+              "minimum_filtered_magnitude": 0.03127770565868921
+            },
+            {
+              "k": -0.23687323162465215,
+              "points": 25,
+              "lo": 12,
+              "hi": 36,
+              "phase_rms": 0.0025455740482923654,
+              "formal_slope_error": 7.36071741276613e-05,
+              "minimum_filtered_magnitude": 0.025509962887249615
+            }
+          ],
+          "pair_shift_from_minus_pi": 0.009257741146757148,
+          "quartet_mismatch": 0.018515482293514542
+        }
+      ]
+    },
+    {
+      "path": "codex/work_C195/typhon_out/out512/p153c_L512_P0_rand1.json",
+      "sha256": "bddc65736e22c0ed976a6e1ede84e4c50615db870d63f3f1d89d0268c229b4e3",
+      "L": 512,
+      "P": 0,
+      "chi": 1536,
+      "hz": -19.97589125,
+      "energy": -5130.544428735329,
+      "n_mid": 0.21538181912635637,
+      "last_entropy_change": 1.0083203937139018e-05,
+      "chi_entropy_change": 0.03478763162638998,
+      "discarded": 1.5030976463492607e-10,
+      "local_residual": 9.99995458367073e-10,
+      "gwin": [
+        232,
+        48
+      ],
+      "has_long_pair": false,
+      "has_density_response": false,
+      "has_current_response": false,
+      "carrier_windows": [
+        {
+          "window": [
+            8,
+            24
+          ],
+          "valleys": [
+            {
+              "k": -2.893849935395366,
+              "points": 17,
+              "lo": 8,
+              "hi": 24,
+              "phase_rms": 0.0014440481840089117,
+              "formal_slope_error": 7.610802187496832e-05,
+              "minimum_filtered_magnitude": 0.036535973264550874
+            },
+            {
+              "k": -0.2394137789927035,
+              "points": 17,
+              "lo": 8,
+              "hi": 24,
+              "phase_rms": 0.0012527279956390666,
+              "formal_slope_error": 6.602456258128218e-05,
+              "minimum_filtered_magnitude": 0.029873432857007925
+            }
+          ],
+          "pair_shift_from_minus_pi": 0.008328939201723617,
+          "quartet_mismatch": 0.01665787840344748
+        },
+        {
+          "window": [
+            8,
+            32
+          ],
+          "valleys": [
+            {
+              "k": -2.893841465229767,
+              "points": 25,
+              "lo": 8,
+              "hi": 32,
+              "phase_rms": 0.0014200074578091621,
+              "formal_slope_error": 4.106057581772297e-05,
+              "minimum_filtered_magnitude": 0.03288989771512072
+            },
+            {
+              "k": -0.23944869265688196,
+              "points": 25,
+              "lo": 8,
+              "hi": 32,
+              "phase_rms": 0.0011619118392919158,
+              "formal_slope_error": 3.359754831454367e-05,
+              "minimum_filtered_magnitude": 0.026937662170966124
+            }
+          ],
+          "pair_shift_from_minus_pi": 0.008302495703144341,
+          "quartet_mismatch": 0.01660499140628893
+        },
+        {
+          "window": [
+            12,
+            36
+          ],
+          "valleys": [
+            {
+              "k": -2.8935418751105857,
+              "points": 25,
+              "lo": 12,
+              "hi": 36,
+              "phase_rms": 0.0023746950679548406,
+              "formal_slope_error": 6.86660808332435e-05,
+              "minimum_filtered_magnitude": 0.03149035341871209
+            },
+            {
+              "k": -0.23974071357091226,
+              "points": 25,
+              "lo": 12,
+              "hi": 36,
+              "phase_rms": 0.0023996555437426157,
+              "formal_slope_error": 6.938783162609609e-05,
+              "minimum_filtered_magnitude": 0.025719900238309775
+            }
+          ],
+          "pair_shift_from_minus_pi": 0.008310064908295,
+          "quartet_mismatch": 0.016620129816590244
+        }
+      ]
+    },
+    {
+      "path": "codex/work_C195/typhon_out/out512/p153c_L512_P1_rand1.json",
+      "sha256": "43a2cd39d8a5706a0176bef9588e4af5474822df39d62c8e4f0ffbc1b59e88fc",
+      "L": 512,
+      "P": 1,
+      "chi": 1536,
+      "hz": -19.97589125,
+      "energy": -5130.544419405828,
+      "n_mid": 0.21729253005438764,
+      "last_entropy_change": 0.00018535969508759464,
+      "chi_entropy_change": 0.0868665251746461,
+      "discarded": 1.507385327670363e-10,
+      "local_residual": 9.999385821711107e-10,
+      "gwin": [
+        232,
+        48
+      ],
+      "has_long_pair": false,
+      "has_density_response": false,
+      "has_current_response": false,
+      "carrier_windows": [
+        {
+          "window": [
+            8,
+            24
+          ],
+          "valleys": [
+            {
+              "k": -2.893838434496872,
+              "points": 17,
+              "lo": 8,
+              "hi": 24,
+              "phase_rms": 0.0013924802516311243,
+              "formal_slope_error": 7.339015319931246e-05,
+              "minimum_filtered_magnitude": 0.03642775824904856
+            },
+            {
+              "k": -0.23942223162338905,
+              "points": 17,
+              "lo": 8,
+              "hi": 24,
+              "phase_rms": 0.0011980435471597283,
+              "formal_slope_error": 6.314243908486818e-05,
+              "minimum_filtered_magnitude": 0.029899671627916485
+            }
+          ],
+          "pair_shift_from_minus_pi": 0.00833198746953201,
+          "quartet_mismatch": 0.016663974939064262
+        },
+        {
+          "window": [
+            8,
+            32
+          ],
+          "valleys": [
+            {
+              "k": -2.8938140272496886,
+              "points": 25,
+              "lo": 8,
+              "hi": 32,
+              "phase_rms": 0.0013815215252794657,
+              "formal_slope_error": 3.994772634509453e-05,
+              "minimum_filtered_magnitude": 0.032803311492512005
+            },
+            {
+              "k": -0.23947316731955132,
+              "points": 25,
+              "lo": 8,
+              "hi": 32,
+              "phase_rms": 0.0011256993575539634,
+              "formal_slope_error": 3.255043736891303e-05,
+              "minimum_filtered_magnitude": 0.0269701684194063
+            }
+          ],
+          "pair_shift_from_minus_pi": 0.00830545902055313,
+          "quartet_mismatch": 0.016610918041106502
+        },
+        {
+          "window": [
+            12,
+            36
+          ],
+          "valleys": [
+            {
+              "k": -2.893518860767525,
+              "points": 25,
+              "lo": 12,
+              "hi": 36,
+              "phase_rms": 0.0022973853571739006,
+              "formal_slope_error": 6.643061282671304e-05,
+              "minimum_filtered_magnitude": 0.031391105618656996
+            },
+            {
+              "k": -0.23975816129124441,
+              "points": 25,
+              "lo": 12,
+              "hi": 36,
+              "phase_rms": 0.00230983898579725,
+              "formal_slope_error": 6.67907187962153e-05,
+              "minimum_filtered_magnitude": 0.025738238369414766
+            }
+          ],
+          "pair_shift_from_minus_pi": 0.008315631531023548,
+          "quartet_mismatch": 0.01663126306204734
+        }
+      ]
+    },
+    {
+      "path": "codex/work_C195/typhon_out_x2048/p153c_L512_P0_rand1.json",
+      "sha256": "11f288caff28c58beba36ffc2e31bf16be47c4cc75c0281c2e23b0fadf0fc8f1",
+      "L": 512,
+      "P": 0,
+      "chi": 2048,
+      "hz": -19.97589125,
+      "energy": -5130.5444293030305,
+      "n_mid": 0.2153834700174484,
+      "last_entropy_change": -0.00014020067375764,
+      "chi_entropy_change": 0.011776840062552196,
+      "discarded": 5.967715210886126e-11,
+      "local_residual": 9.999719747293045e-10,
+      "gwin": [
+        232,
+        48
+      ],
+      "has_long_pair": false,
+      "has_density_response": false,
+      "has_current_response": false,
+      "carrier_windows": [
+        {
+          "window": [
+            8,
+            24
+          ],
+          "valleys": [
+            {
+              "k": -2.893851237586076,
+              "points": 17,
+              "lo": 8,
+              "hi": 24,
+              "phase_rms": 0.0014444639424152019,
+              "formal_slope_error": 7.612993426697229e-05,
+              "minimum_filtered_magnitude": 0.0365426969565911
+            },
+            {
+              "k": -0.23941210332519153,
+              "points": 17,
+              "lo": 8,
+              "hi": 24,
+              "phase_rms": 0.0012530759947050577,
+              "formal_slope_error": 6.604290374248456e-05,
+              "minimum_filtered_magnitude": 0.029879857837823286
+            }
+          ],
+          "pair_shift_from_minus_pi": 0.008329312678525547,
+          "quartet_mismatch": 0.016658625357051336
+        },
+        {
+          "window": [
+            8,
+            32
+          ],
+          "valleys": [
+            {
+              "k": -2.8938434901904593,
+              "points": 25,
+              "lo": 8,
+              "hi": 32,
+              "phase_rms": 0.0014189557976091853,
+              "formal_slope_error": 4.1030166277872905e-05,
+              "minimum_filtered_magnitude": 0.032899039504646364
+            },
+            {
+              "k": -0.23944622853726663,
+              "points": 25,
+              "lo": 8,
+              "hi": 32,
+              "phase_rms": 0.001160853333252397,
+              "formal_slope_error": 3.356694082213215e-05,
+              "minimum_filtered_magnitude": 0.02694655880848808
+            }
+          ],
+          "pair_shift_from_minus_pi": 0.008302934862067344,
+          "quartet_mismatch": 0.016605869724134935
+        },
+        {
+          "window": [
+            12,
+            36
+          ],
+          "valleys": [
+            {
+              "k": -2.893545121647238,
+              "points": 25,
+              "lo": 12,
+              "hi": 36,
+              "phase_rms": 0.0023667880375920743,
+              "formal_slope_error": 6.843744314692859e-05,
+              "minimum_filtered_magnitude": 0.03150125018655438
+            },
+            {
+              "k": -0.23973676351237044,
+              "points": 25,
+              "lo": 12,
+              "hi": 36,
+              "phase_rms": 0.002389345362555498,
+              "formal_slope_error": 6.908970503950673e-05,
+              "minimum_filtered_magnitude": 0.025730574153681886
+            }
+          ],
+          "pair_shift_from_minus_pi": 0.008310768430184634,
+          "quartet_mismatch": 0.01662153686036951
+        }
+      ]
+    }
+  ],
+  "long_records": [
+    {
+      "path": "codex/work_C193/ckpt_meas/typhon_out/out/p153c_L128_P0_rand1_meas.json",
+      "sha256": "87dfc16c3ef6db8481959c86c191d2243a4aac2f11c3d0f5534e602ad5ff73f5",
+      "L": 128,
+      "P": 0,
+      "chi": 512,
+      "hz": -19.97589125,
+      "n_mid": 0.22110850916886637,
+      "pair_rows": [
+        {
+          "k": -3.1303549003230624,
+          "points": 13,
+          "lo": 8,
+          "hi": 20,
+          "phase_rms": 0.0016547489582987294,
+          "formal_slope_error": 0.00013334347102941926,
+          "minimum_filtered_magnitude": 0.005631205323496311,
+          "d": 2,
+          "anchor": 61,
+          "shift_from_minus_pi": 0.01123775326673071,
+          "edge_clearance": 44,
+          "clearance_over_rmax": 2.2
+        },
+        {
+          "k": -3.1295671331788055,
+          "points": 13,
+          "lo": 8,
+          "hi": 20,
+          "phase_rms": 0.0033443691778329235,
+          "formal_slope_error": 0.00026949694836764503,
+          "minimum_filtered_magnitude": 0.0076561491679613645,
+          "d": 2,
+          "anchor": 62,
+          "shift_from_minus_pi": 0.012025520410987589,
+          "edge_clearance": 43,
+          "clearance_over_rmax": 2.15
+        },
+        {
+          "k": -3.130160465008518,
+          "points": 13,
+          "lo": 8,
+          "hi": 20,
+          "phase_rms": 0.0010832703067974756,
+          "formal_slope_error": 8.729240894642246e-05,
+          "minimum_filtered_magnitude": 0.007699724793693472,
+          "d": 2,
+          "anchor": 63,
+          "shift_from_minus_pi": 0.011432188581275149,
+          "edge_clearance": 42,
+          "clearance_over_rmax": 2.1
+        },
+        {
+          "k": -3.129822913740962,
+          "points": 13,
+          "lo": 8,
+          "hi": 20,
+          "phase_rms": 0.003930323439675795,
+          "formal_slope_error": 0.00031671448837379773,
+          "minimum_filtered_magnitude": 0.0055923300904957415,
+          "d": 2,
+          "anchor": 64,
+          "shift_from_minus_pi": 0.011769739848831229,
+          "edge_clearance": 41,
+          "clearance_over_rmax": 2.05
+        },
+        {
+          "k": -3.129552599272518,
+          "points": 13,
+          "lo": 8,
+          "hi": 20,
+          "phase_rms": 0.003259446410541063,
+          "formal_slope_error": 0.0002626536767624086,
+          "minimum_filtered_magnitude": 0.0015713584505459544,
+          "d": 3,
+          "anchor": 61,
+          "shift_from_minus_pi": 0.01204005431727495,
+          "edge_clearance": 43,
+          "clearance_over_rmax": 2.15
+        },
+        {
+          "k": -3.131749066479832,
+          "points": 13,
+          "lo": 8,
+          "hi": 20,
+          "phase_rms": 0.005314022129946352,
+          "formal_slope_error": 0.00042821610636498337,
+          "minimum_filtered_magnitude": 0.003725866449444209,
+          "d": 3,
+          "anchor": 62,
+          "shift_from_minus_pi": 0.00984358710996114,
+          "edge_clearance": 42,
+          "clearance_over_rmax": 2.1
+        },
+        {
+          "k": -3.130756458213454,
+          "points": 13,
+          "lo": 8,
+          "hi": 20,
+          "phase_rms": 0.00540594817746025,
+          "formal_slope_error": 0.00043562371837286217,
+          "minimum_filtered_magnitude": 0.001497479372884244,
+          "d": 3,
+          "anchor": 63,
+          "shift_from_minus_pi": 0.010836195376338953,
+          "edge_clearance": 41,
+          "clearance_over_rmax": 2.05
+        },
+        {
+          "k": -3.131009931009939,
+          "points": 13,
+          "lo": 8,
+          "hi": 20,
+          "phase_rms": 0.003718888903330604,
+          "formal_slope_error": 0.0002996766078962963,
+          "minimum_filtered_magnitude": 0.003300796630858695,
+          "d": 3,
+          "anchor": 64,
+          "shift_from_minus_pi": 0.010582722579854043,
+          "edge_clearance": 40,
+          "clearance_over_rmax": 2.0
+        }
+      ],
+      "centered_boson": [
+        {
+          "window": [
+            8,
+            24
+          ],
+          "valleys": [
+            {
+              "k": -2.900175251536037,
+              "points": 17,
+              "lo": 8,
+              "hi": 24,
+              "phase_rms": 0.009866364288224747,
+              "formal_slope_error": 0.0005200030562622701,
+              "minimum_filtered_magnitude": 0.03771822403586931
+            },
+            {
+              "k": -0.2302125552919819,
+              "points": 17,
+              "lo": 8,
+              "hi": 24,
+              "phase_rms": 0.012295886049356036,
+              "formal_slope_error": 0.0006480500960975771,
+              "minimum_filtered_magnitude": 0.031281030315368476
+            }
+          ],
+          "pair_shift_from_minus_pi": 0.011204846761774245
+        },
+        {
+          "window": [
+            12,
+            32
+          ],
+          "valleys": [
+            {
+              "k": -2.900382090141179,
+              "points": 21,
+              "lo": 12,
+              "hi": 32,
+              "phase_rms": 0.010843557968023214,
+              "formal_slope_error": 0.00041082729477584826,
+              "minimum_filtered_magnitude": 0.03374799699383368
+            },
+            {
+              "k": -0.22995223771436762,
+              "points": 21,
+              "lo": 12,
+              "hi": 32,
+              "phase_rms": 0.013646058878989118,
+              "formal_slope_error": 0.0005170049784525708,
+              "minimum_filtered_magnitude": 0.028001324821650162
+            }
+          ],
+          "pair_shift_from_minus_pi": 0.011258325734246455
+        }
+      ],
+      "density_dressing_bulk_representatives": [
+        {
+          "anchor": 61,
+          "n": 0.13575395719135744,
+          "D2": 0.04604034117281032,
+          "D3": 0.01688321420326839,
+          "real_T2": 0.07090693387359864,
+          "B_density": 0.6396926483171499,
+          "delta_n_second_order": 0.0007996158103964374
+        },
+        {
+          "anchor": 62,
+          "n": 0.279407028563223,
+          "D2": 0.07470709483401404,
+          "D3": 0.051897088872882295,
+          "real_T2": 0.11563146834887582,
+          "B_density": 0.2236666640987176,
+          "delta_n_second_order": 0.000279583330123397
+        },
+        {
+          "anchor": 63,
+          "n": 0.19854035058461808,
+          "D2": 0.07470587596920335,
+          "D3": 0.016882867202241105,
+          "real_T2": 0.11562953605585283,
+          "B_density": 0.4852996626702711,
+          "delta_n_second_order": 0.0006066245783378388
+        },
+        {
+          "anchor": 64,
+          "n": 0.19854379597350644,
+          "D2": 0.04604128290704801,
+          "D3": 0.043818568760371206,
+          "real_T2": 0.07090837217067747,
+          "B_density": 0.43639083878108725,
+          "delta_n_second_order": 0.0005454885484763591
+        }
+      ],
+      "mean_dressing_representative": 0.000557828066833508,
+      "leading_dressing_upper_bound_at_nmid": 0.0010043238787012596
+    },
+    {
+      "path": "codex/work_C193/ckpt_meas/typhon_out/out/p153c_L128_P1_prod29_meas.json",
+      "sha256": "18f16c93164566f6185fa95e299e24b1c1e98e110fa742812b5e3946c9d268df",
+      "L": 128,
+      "P": 1,
+      "chi": 512,
+      "hz": -19.97589125,
+      "n_mid": 0.2129804529833627,
+      "pair_rows": [
+        {
+          "k": -3.1300276534947695,
+          "points": 13,
+          "lo": 8,
+          "hi": 20,
+          "phase_rms": 0.0016940093529284736,
+          "formal_slope_error": 0.0001365071637863539,
+          "minimum_filtered_magnitude": 0.005746225447102927,
+          "d": 2,
+          "anchor": 61,
+          "shift_from_minus_pi": 0.011565000095023592,
+          "edge_clearance": 44,
+          "clearance_over_rmax": 2.2
+        },
+        {
+          "k": -3.1292200696514287,
+          "points": 13,
+          "lo": 8,
+          "hi": 20,
+          "phase_rms": 0.003936091870414876,
+          "formal_slope_error": 0.00031717932176939185,
+          "minimum_filtered_magnitude": 0.007758477958297587,
+          "d": 2,
+          "anchor": 62,
+          "shift_from_minus_pi": 0.012372583938364379,
+          "edge_clearance": 43,
+          "clearance_over_rmax": 2.15
+        },
+        {
+          "k": -3.1298439411240477,
+          "points": 13,
+          "lo": 8,
+          "hi": 20,
+          "phase_rms": 0.001156796805626417,
+          "formal_slope_error": 9.32173430684971e-05,
+          "minimum_filtered_magnitude": 0.0078026811671081464,
+          "d": 2,
+          "anchor": 63,
+          "shift_from_minus_pi": 0.011748712465745381,
+          "edge_clearance": 42,
+          "clearance_over_rmax": 2.1
+        },
+        {
+          "k": -3.1294730632215018,
+          "points": 13,
+          "lo": 8,
+          "hi": 20,
+          "phase_rms": 0.004487746062101012,
+          "formal_slope_error": 0.00036163288335554656,
+          "minimum_filtered_magnitude": 0.005701569575492015,
+          "d": 2,
+          "anchor": 64,
+          "shift_from_minus_pi": 0.012119590368291355,
+          "edge_clearance": 41,
+          "clearance_over_rmax": 2.05
+        },
+        {
+          "k": -3.129406137121128,
+          "points": 13,
+          "lo": 8,
+          "hi": 20,
+          "phase_rms": 0.003733411222842807,
+          "formal_slope_error": 0.00030084684975168103,
+          "minimum_filtered_magnitude": 0.0016250141686356095,
+          "d": 3,
+          "anchor": 61,
+          "shift_from_minus_pi": 0.012186516468664976,
+          "edge_clearance": 43,
+          "clearance_over_rmax": 2.15
+        },
+        {
+          "k": -3.131619136280005,
+          "points": 13,
+          "lo": 8,
+          "hi": 20,
+          "phase_rms": 0.00583865543289182,
+          "formal_slope_error": 0.00047049226268557764,
+          "minimum_filtered_magnitude": 0.003783722545908659,
+          "d": 3,
+          "anchor": 62,
+          "shift_from_minus_pi": 0.009973517309787905,
+          "edge_clearance": 42,
+          "clearance_over_rmax": 2.1
+        },
+        {
+          "k": -3.130652993191067,
+          "points": 13,
+          "lo": 8,
+          "hi": 20,
+          "phase_rms": 0.006373998979599981,
+          "formal_slope_error": 0.0005136314750436007,
+          "minimum_filtered_magnitude": 0.0015501296218861902,
+          "d": 3,
+          "anchor": 63,
+          "shift_from_minus_pi": 0.010939660398725959,
+          "edge_clearance": 41,
+          "clearance_over_rmax": 2.05
+        },
+        {
+          "k": -3.130851297058567,
+          "points": 13,
+          "lo": 8,
+          "hi": 20,
+          "phase_rms": 0.004042562930162192,
+          "formal_slope_error": 0.00032575900426424234,
+          "minimum_filtered_magnitude": 0.0033585444903501856,
+          "d": 3,
+          "anchor": 64,
+          "shift_from_minus_pi": 0.010741356531226211,
+          "edge_clearance": 40,
+          "clearance_over_rmax": 2.0
+        }
+      ],
+      "centered_boson": [
+        {
+          "window": [
+            8,
+            24
+          ],
+          "valleys": [
+            {
+              "k": -2.9001400047397055,
+              "points": 17,
+              "lo": 8,
+              "hi": 24,
+              "phase_rms": 0.009723863268457839,
+              "formal_slope_error": 0.000512492593072935,
+              "minimum_filtered_magnitude": 0.038123775658966165
+            },
+            {
+              "k": -0.2299844306645542,
+              "points": 17,
+              "lo": 8,
+              "hi": 24,
+              "phase_rms": 0.012339375275658726,
+              "formal_slope_error": 0.0006503421795774938,
+              "minimum_filtered_magnitude": 0.03111326456804997
+            }
+          ],
+          "pair_shift_from_minus_pi": 0.011468218185533452
+        },
+        {
+          "window": [
+            12,
+            32
+          ],
+          "valleys": [
+            {
+              "k": -2.9003304994618797,
+              "points": 21,
+              "lo": 12,
+              "hi": 32,
+              "phase_rms": 0.01069818862511776,
+              "formal_slope_error": 0.0004053197211486952,
+              "minimum_filtered_magnitude": 0.0341243383378334
+            },
+            {
+              "k": -0.22974592849583958,
+              "points": 21,
+              "lo": 12,
+              "hi": 32,
+              "phase_rms": 0.013700392137879954,
+              "formal_slope_error": 0.0005190634896748377,
+              "minimum_filtered_magnitude": 0.027839610782839933
+            }
+          ],
+          "pair_shift_from_minus_pi": 0.011516225632073773
+        }
+      ],
+      "density_dressing_bulk_representatives": [
+        {
+          "anchor": 61,
+          "n": 0.13153384252147915,
+          "D2": 0.04265211540269827,
+          "D3": 0.015708570956945,
+          "real_T2": 0.07134234546945416,
+          "B_density": 0.6488805792650638,
+          "delta_n_second_order": 0.0008111007240813298
+        },
+        {
+          "anchor": 62,
+          "n": 0.26859081304948607,
+          "D2": 0.06866361901749543,
+          "D3": 0.04746655378756408,
+          "real_T2": 0.11568229560128875,
+          "B_density": 0.2497760690794199,
+          "delta_n_second_order": 0.0003122200863492749
+        },
+        {
+          "anchor": 63,
+          "n": 0.19148419944859935,
+          "D2": 0.06866266920432416,
+          "D3": 0.015708304494439267,
+          "real_T2": 0.11568038211260867,
+          "B_density": 0.5002390162059613,
+          "delta_n_second_order": 0.0006252987702574517
+        },
+        {
+          "anchor": 64,
+          "n": 0.1914873042797517,
+          "D2": 0.04265277570314854,
+          "D3": 0.040161045561230804,
+          "real_T2": 0.07134384307884561,
+          "B_density": 0.45398838129132235,
+          "delta_n_second_order": 0.0005674854766141529
+        }
+      ],
+      "mean_dressing_representative": 0.0005790262643255524,
+      "leading_dressing_upper_bound_at_nmid": 0.0010133550522407081
+    },
+    {
+      "path": "codex/work_C193/ckpt_meas/typhon_out/out/p153c_L256_P0_rand1_meas.json",
+      "sha256": "9a1567c5cb7c3b58a97f7120fa9318d66d0c010a9445437fcaec847d6aea03c9",
+      "L": 256,
+      "P": 0,
+      "chi": 768,
+      "hz": -19.97589125,
+      "n_mid": 0.21923889258727286,
+      "pair_rows": [
+        {
+          "k": -3.1321404316948795,
+          "points": 21,
+          "lo": 12,
+          "hi": 32,
+          "phase_rms": 0.0009303799265068807,
+          "formal_slope_error": 3.524908239968161e-05,
+          "minimum_filtered_magnitude": 0.004326117171668804,
+          "d": 2,
+          "anchor": 125,
+          "shift_from_minus_pi": 0.009452221894913572,
+          "edge_clearance": 96,
+          "clearance_over_rmax": 3.0
+        },
+        {
+          "k": -3.1322004533652046,
+          "points": 25,
+          "lo": 16,
+          "hi": 40,
+          "phase_rms": 0.0007030228558432836,
+          "formal_slope_error": 2.0328430752386023e-05,
+          "minimum_filtered_magnitude": 0.003749085252599832,
+          "d": 2,
+          "anchor": 125,
+          "shift_from_minus_pi": 0.009392200224588532,
+          "edge_clearance": 88,
+          "clearance_over_rmax": 2.2
+        },
+        {
+          "k": -3.131885732186758,
+          "points": 21,
+          "lo": 12,
+          "hi": 32,
+          "phase_rms": 0.0012058898415517666,
+          "formal_slope_error": 4.5687260847714405e-05,
+          "minimum_filtered_magnitude": 0.005532645009467354,
+          "d": 2,
+          "anchor": 126,
+          "shift_from_minus_pi": 0.009706921403035196,
+          "edge_clearance": 95,
+          "clearance_over_rmax": 2.96875
+        },
+        {
+          "k": -3.1320773209693002,
+          "points": 25,
+          "lo": 16,
+          "hi": 40,
+          "phase_rms": 0.00069682049200164,
+          "formal_slope_error": 2.0149084771230525e-05,
+          "minimum_filtered_magnitude": 0.0047930396376358,
+          "d": 2,
+          "anchor": 126,
+          "shift_from_minus_pi": 0.009515332620492867,
+          "edge_clearance": 87,
+          "clearance_over_rmax": 2.175
+        },
+        {
+          "k": -3.1321315929286935,
+          "points": 21,
+          "lo": 12,
+          "hi": 32,
+          "phase_rms": 0.0008717972849304688,
+          "formal_slope_error": 3.302957582899391e-05,
+          "minimum_filtered_magnitude": 0.005546862264287754,
+          "d": 2,
+          "anchor": 127,
+          "shift_from_minus_pi": 0.00946106066109964,
+          "edge_clearance": 94,
+          "clearance_over_rmax": 2.9375
+        },
+        {
+          "k": -3.132161340230628,
+          "points": 25,
+          "lo": 16,
+          "hi": 40,
+          "phase_rms": 0.0007758606490921984,
+          "formal_slope_error": 2.2434589924751883e-05,
+          "minimum_filtered_magnitude": 0.004802544085305369,
+          "d": 2,
+          "anchor": 127,
+          "shift_from_minus_pi": 0.009431313359165028,
+          "edge_clearance": 86,
+          "clearance_over_rmax": 2.15
+        },
+        {
+          "k": -3.1319111821184182,
+          "points": 21,
+          "lo": 12,
+          "hi": 32,
+          "phase_rms": 0.00148446319785763,
+          "formal_slope_error": 5.624150316423607e-05,
+          "minimum_filtered_magnitude": 0.004316509459676789,
+          "d": 2,
+          "anchor": 128,
+          "shift_from_minus_pi": 0.00968147147137488,
+          "edge_clearance": 93,
+          "clearance_over_rmax": 2.90625
+        },
+        {
+          "k": -3.132094685869856,
+          "points": 25,
+          "lo": 16,
+          "hi": 40,
+          "phase_rms": 0.0009256239003102477,
+          "formal_slope_error": 2.676510614671234e-05,
+          "minimum_filtered_magnitude": 0.003744785654044208,
+          "d": 2,
+          "anchor": 128,
+          "shift_from_minus_pi": 0.00949796771993716,
+          "edge_clearance": 85,
+          "clearance_over_rmax": 2.125
+        },
+        {
+          "k": -3.1319880275235956,
+          "points": 21,
+          "lo": 12,
+          "hi": 32,
+          "phase_rms": 0.00048333852540500204,
+          "formal_slope_error": 1.831213144602977e-05,
+          "minimum_filtered_magnitude": 0.001362834617276701,
+          "d": 3,
+          "anchor": 125,
+          "shift_from_minus_pi": 0.009604626066197497,
+          "edge_clearance": 95,
+          "clearance_over_rmax": 2.96875
+        },
+        {
+          "k": -3.132085065831657,
+          "points": 25,
+          "lo": 16,
+          "hi": 40,
+          "phase_rms": 0.0003330469100571337,
+          "formal_slope_error": 9.63030005656289e-06,
+          "minimum_filtered_magnitude": 0.0011761023291488723,
+          "d": 3,
+          "anchor": 125,
+          "shift_from_minus_pi": 0.009507587758136093,
+          "edge_clearance": 87,
+          "clearance_over_rmax": 2.175
+        },
+        {
+          "k": -3.132352220155061,
+          "points": 21,
+          "lo": 12,
+          "hi": 32,
+          "phase_rms": 0.0005324316715060392,
+          "formal_slope_error": 2.0172111764685403e-05,
+          "minimum_filtered_magnitude": 0.002656941545273718,
+          "d": 3,
+          "anchor": 126,
+          "shift_from_minus_pi": 0.009240433434732243,
+          "edge_clearance": 94,
+          "clearance_over_rmax": 2.9375
+        },
+        {
+          "k": -3.132286587867711,
+          "points": 25,
+          "lo": 16,
+          "hi": 40,
+          "phase_rms": 0.0003894873309291998,
+          "formal_slope_error": 1.1262316964401633e-05,
+          "minimum_filtered_magnitude": 0.002293525776883828,
+          "d": 3,
+          "anchor": 126,
+          "shift_from_minus_pi": 0.009306065722082035,
+          "edge_clearance": 86,
+          "clearance_over_rmax": 2.15
+        },
+        {
+          "k": -3.1322230834869855,
+          "points": 21,
+          "lo": 12,
+          "hi": 32,
+          "phase_rms": 0.0004415611395040501,
+          "formal_slope_error": 1.6729321589421093e-05,
+          "minimum_filtered_magnitude": 0.0013342433412267764,
+          "d": 3,
+          "anchor": 127,
+          "shift_from_minus_pi": 0.00936957010280759,
+          "edge_clearance": 93,
+          "clearance_over_rmax": 2.90625
+        },
+        {
+          "k": -3.13219198288206,
+          "points": 25,
+          "lo": 16,
+          "hi": 40,
+          "phase_rms": 0.0003533566175117327,
+          "formal_slope_error": 1.0217570410805924e-05,
+          "minimum_filtered_magnitude": 0.0011556732919375708,
+          "d": 3,
+          "anchor": 127,
+          "shift_from_minus_pi": 0.009400670707733205,
+          "edge_clearance": 85,
+          "clearance_over_rmax": 2.125
+        },
+        {
+          "k": -3.1322163129934113,
+          "points": 21,
+          "lo": 12,
+          "hi": 32,
+          "phase_rms": 0.00037642972487263995,
+          "formal_slope_error": 1.426170321574219e-05,
+          "minimum_filtered_magnitude": 0.002381952311403627,
+          "d": 3,
+          "anchor": 128,
+          "shift_from_minus_pi": 0.009376340596381816,
+          "edge_clearance": 92,
+          "clearance_over_rmax": 2.875
+        },
+        {
+          "k": -3.132218287756696,
+          "points": 25,
+          "lo": 16,
+          "hi": 40,
+          "phase_rms": 0.00016582290266672014,
+          "formal_slope_error": 4.794893033707437e-06,
+          "minimum_filtered_magnitude": 0.002050663225856295,
+          "d": 3,
+          "anchor": 128,
+          "shift_from_minus_pi": 0.00937436583309692,
+          "edge_clearance": 84,
+          "clearance_over_rmax": 2.1
+        }
+      ],
+      "centered_boson": [
+        {
+          "window": [
+            16,
+            40
+          ],
+          "valleys": [
+            {
+              "k": -2.8960427194732077,
+              "points": 25,
+              "lo": 16,
+              "hi": 40,
+              "phase_rms": 0.009324909837067104,
+              "formal_slope_error": 0.0002696367299007393,
+              "minimum_filtered_magnitude": 0.030940699879225167
+            },
+            {
+              "k": -0.23632597037524786,
+              "points": 25,
+              "lo": 16,
+              "hi": 40,
+              "phase_rms": 0.011576210308354573,
+              "formal_slope_error": 0.00033473476384514815,
+              "minimum_filtered_magnitude": 0.02564646147666525
+            }
+          ],
+          "pair_shift_from_minus_pi": 0.009223963741337382
+        },
+        {
+          "window": [
+            24,
+            64
+          ],
+          "valleys": [
+            {
+              "k": -2.896267867109092,
+              "points": 41,
+              "lo": 24,
+              "hi": 64,
+              "phase_rms": 0.01134074569184707,
+              "formal_slope_error": 0.00015347770288664218,
+              "minimum_filtered_magnitude": 0.026665503058394484
+            },
+            {
+              "k": -0.23597426608764596,
+              "points": 41,
+              "lo": 24,
+              "hi": 64,
+              "phase_rms": 0.013987721928545393,
+              "formal_slope_error": 0.00018930002387352796,
+              "minimum_filtered_magnitude": 0.022135299516999867
+            }
+          ],
+          "pair_shift_from_minus_pi": 0.009350520393055284
+        }
+      ],
+      "density_dressing_bulk_representatives": [
+        {
+          "anchor": 125,
+          "n": 0.1522574233238432,
+          "D2": 0.04965439847746022,
+          "D3": 0.020697599946232183,
+          "real_T2": 0.07626935377189419,
+          "B_density": 0.5923638262691614,
+          "delta_n_second_order": 0.0007404547828364518
+        },
+        {
+          "anchor": 126,
+          "n": 0.2673777829124484,
+          "D2": 0.07270354158435445,
+          "D3": 0.04871185758730827,
+          "real_T2": 0.11227500776103358,
+          "B_density": 0.25913893347794525,
+          "delta_n_second_order": 0.0003239236668474316
+        },
+        {
+          "anchor": 127,
+          "n": 0.20235966536336367,
+          "D2": 0.07270119977756352,
+          "D3": 0.02069697713329334,
+          "real_T2": 0.11227102622424397,
+          "B_density": 0.4695766366992626,
+          "delta_n_second_order": 0.0005869707958740783
+        },
+        {
+          "anchor": 128,
+          "n": 0.2023666188683387,
+          "D2": 0.04965630917033013,
+          "D3": 0.04215308780082989,
+          "real_T2": 0.07627234563595242,
+          "B_density": 0.4300976908570153,
+          "delta_n_second_order": 0.0005376221135712692
+        }
+      ],
+      "mean_dressing_representative": 0.0005472428397823077,
+      "leading_dressing_upper_bound_at_nmid": 0.0010064012304585857
+    },
+    {
+      "path": "codex/work_C193/ckpt_meas/typhon_out/out/p153c_L256_P1_rand1_meas.json",
+      "sha256": "9fdeebd3cbea5ed5850492ea560613cf0c3a98283767ceca951f583bff65c434",
+      "L": 256,
+      "P": 1,
+      "chi": 768,
+      "hz": -19.97589125,
+      "n_mid": 0.2153403031370948,
+      "pair_rows": [
+        {
+          "k": -3.1320436272747374,
+          "points": 21,
+          "lo": 12,
+          "hi": 32,
+          "phase_rms": 0.0009344504261680062,
+          "formal_slope_error": 3.540330044961481e-05,
+          "minimum_filtered_magnitude": 0.004398344628359943,
+          "d": 2,
+          "anchor": 125,
+          "shift_from_minus_pi": 0.00954902631505572,
+          "edge_clearance": 96,
+          "clearance_over_rmax": 3.0
+        },
+        {
+          "k": -3.132124880055881,
+          "points": 25,
+          "lo": 16,
+          "hi": 40,
+          "phase_rms": 0.0007703682575699976,
+          "formal_slope_error": 2.227577332327721e-05,
+          "minimum_filtered_magnitude": 0.003817702682034677,
+          "d": 2,
+          "anchor": 125,
+          "shift_from_minus_pi": 0.009467773533911927,
+          "edge_clearance": 88,
+          "clearance_over_rmax": 2.2
+        },
+        {
+          "k": -3.1318165678085,
+          "points": 21,
+          "lo": 12,
+          "hi": 32,
+          "phase_rms": 0.0012287201515402866,
+          "formal_slope_error": 4.655222735770463e-05,
+          "minimum_filtered_magnitude": 0.005611167804300245,
+          "d": 2,
+          "anchor": 126,
+          "shift_from_minus_pi": 0.009776085781293188,
+          "edge_clearance": 95,
+          "clearance_over_rmax": 2.96875
+        },
+        {
+          "k": -3.1319961119385082,
+          "points": 25,
+          "lo": 16,
+          "hi": 40,
+          "phase_rms": 0.0007906244812654454,
+          "formal_slope_error": 2.28614971546935e-05,
+          "minimum_filtered_magnitude": 0.004863750162007055,
+          "d": 2,
+          "anchor": 126,
+          "shift_from_minus_pi": 0.009596541651284873,
+          "edge_clearance": 87,
+          "clearance_over_rmax": 2.175
+        },
+        {
+          "k": -3.1320405852330517,
+          "points": 21,
+          "lo": 12,
+          "hi": 32,
+          "phase_rms": 0.0006535631736500988,
+          "formal_slope_error": 2.476139209912261e-05,
+          "minimum_filtered_magnitude": 0.005626395530355494,
+          "d": 2,
+          "anchor": 127,
+          "shift_from_minus_pi": 0.009552068356741383,
+          "edge_clearance": 94,
+          "clearance_over_rmax": 2.9375
+        },
+        {
+          "k": -3.1320858167449526,
+          "points": 25,
+          "lo": 16,
+          "hi": 40,
+          "phase_rms": 0.0005042815631702052,
+          "formal_slope_error": 1.4581677894830324e-05,
+          "minimum_filtered_magnitude": 0.004874456350013788,
+          "d": 2,
+          "anchor": 127,
+          "shift_from_minus_pi": 0.00950683684484055,
+          "edge_clearance": 86,
+          "clearance_over_rmax": 2.15
+        },
+        {
+          "k": -3.131856063650543,
+          "points": 21,
+          "lo": 12,
+          "hi": 32,
+          "phase_rms": 0.0015174062099949663,
+          "formal_slope_error": 5.748960720887347e-05,
+          "minimum_filtered_magnitude": 0.004388962010091347,
+          "d": 2,
+          "anchor": 128,
+          "shift_from_minus_pi": 0.009736589939250084,
+          "edge_clearance": 93,
+          "clearance_over_rmax": 2.90625
+        },
+        {
+          "k": -3.1320167523383358,
+          "points": 25,
+          "lo": 16,
+          "hi": 40,
+          "phase_rms": 0.001038767025292454,
+          "formal_slope_error": 3.003672407803896e-05,
+          "minimum_filtered_magnitude": 0.0038122751290365947,
+          "d": 2,
+          "anchor": 128,
+          "shift_from_minus_pi": 0.009575901251457353,
+          "edge_clearance": 85,
+          "clearance_over_rmax": 2.125
+        },
+        {
+          "k": -3.1319004579054557,
+          "points": 21,
+          "lo": 12,
+          "hi": 32,
+          "phase_rms": 0.00055415270495104,
+          "formal_slope_error": 2.099505137881024e-05,
+          "minimum_filtered_magnitude": 0.0013941271205107483,
+          "d": 3,
+          "anchor": 125,
+          "shift_from_minus_pi": 0.009692195684337435,
+          "edge_clearance": 95,
+          "clearance_over_rmax": 2.96875
+        },
+        {
+          "k": -3.132006081537598,
+          "points": 25,
+          "lo": 16,
+          "hi": 40,
+          "phase_rms": 0.000307800092469946,
+          "formal_slope_error": 8.900269476797963e-06,
+          "minimum_filtered_magnitude": 0.0012036003140846112,
+          "d": 3,
+          "anchor": 125,
+          "shift_from_minus_pi": 0.009586572052195041,
+          "edge_clearance": 87,
+          "clearance_over_rmax": 2.175
+        },
+        {
+          "k": -3.132259085940587,
+          "points": 21,
+          "lo": 12,
+          "hi": 32,
+          "phase_rms": 0.0005374181008495364,
+          "formal_slope_error": 2.0361031424064814e-05,
+          "minimum_filtered_magnitude": 0.002696834768815783,
+          "d": 3,
+          "anchor": 126,
+          "shift_from_minus_pi": 0.00933356764920612,
+          "edge_clearance": 94,
+          "clearance_over_rmax": 2.9375
+        },
+        {
+          "k": -3.1322121616135377,
+          "points": 25,
+          "lo": 16,
+          "hi": 40,
+          "phase_rms": 0.00037433356999857527,
+          "formal_slope_error": 1.0824134653320293e-05,
+          "minimum_filtered_magnitude": 0.0023306382922408404,
+          "d": 3,
+          "anchor": 126,
+          "shift_from_minus_pi": 0.009380491976255456,
+          "edge_clearance": 86,
+          "clearance_over_rmax": 2.15
+        },
+        {
+          "k": -3.1321257122079897,
+          "points": 21,
+          "lo": 12,
+          "hi": 32,
+          "phase_rms": 0.0005482008071507587,
+          "formal_slope_error": 2.0769553246252403e-05,
+          "minimum_filtered_magnitude": 0.001366290547672947,
+          "d": 3,
+          "anchor": 127,
+          "shift_from_minus_pi": 0.009466941381803373,
+          "edge_clearance": 93,
+          "clearance_over_rmax": 2.90625
+        },
+        {
+          "k": -3.132109345592586,
+          "points": 25,
+          "lo": 16,
+          "hi": 40,
+          "phase_rms": 0.00038261299272477766,
+          "formal_slope_error": 1.1063540342851467e-05,
+          "minimum_filtered_magnitude": 0.0011833118294287124,
+          "d": 3,
+          "anchor": 127,
+          "shift_from_minus_pi": 0.009483307997207202,
+          "edge_clearance": 85,
+          "clearance_over_rmax": 2.125
+        },
+        {
+          "k": -3.1321338878251086,
+          "points": 21,
+          "lo": 12,
+          "hi": 32,
+          "phase_rms": 0.00038757804133763706,
+          "formal_slope_error": 1.4684076823014449e-05,
+          "minimum_filtered_magnitude": 0.0024207851007616342,
+          "d": 3,
+          "anchor": 128,
+          "shift_from_minus_pi": 0.009458765764684518,
+          "edge_clearance": 92,
+          "clearance_over_rmax": 2.875
+        },
+        {
+          "k": -3.132146257560607,
+          "points": 25,
+          "lo": 16,
+          "hi": 40,
+          "phase_rms": 0.00015595418931604825,
+          "formal_slope_error": 4.50953181920803e-06,
+          "minimum_filtered_magnitude": 0.0020867025463889217,
+          "d": 3,
+          "anchor": 128,
+          "shift_from_minus_pi": 0.009446396029185955,
+          "edge_clearance": 84,
+          "clearance_over_rmax": 2.1
+        }
+      ],
+      "centered_boson": [
+        {
+          "window": [
+            16,
+            40
+          ],
+          "valleys": [
+            {
+              "k": -2.8961023487752633,
+              "points": 25,
+              "lo": 16,
+              "hi": 40,
+              "phase_rms": 0.009327878272648384,
+              "formal_slope_error": 0.000269722564431801,
+              "minimum_filtered_magnitude": 0.031047206951793214
+            },
+            {
+              "k": -0.23613259457079455,
+              "points": 25,
+              "lo": 16,
+              "hi": 40,
+              "phase_rms": 0.011683930723096899,
+              "formal_slope_error": 0.00033784958006130236,
+              "minimum_filtered_magnitude": 0.025509567217874052
+            }
+          ],
+          "pair_shift_from_minus_pi": 0.00935771024373544
+        },
+        {
+          "window": [
+            24,
+            64
+          ],
+          "valleys": [
+            {
+              "k": -2.896260544164714,
+              "points": 41,
+              "lo": 24,
+              "hi": 64,
+              "phase_rms": 0.011188676944202263,
+              "formal_slope_error": 0.0001514197110487552,
+              "minimum_filtered_magnitude": 0.02672568389923811
+            },
+            {
+              "k": -0.235886463422819,
+              "points": 41,
+              "lo": 24,
+              "hi": 64,
+              "phase_rms": 0.013882455526076903,
+              "formal_slope_error": 0.00018787542216910745,
+              "minimum_filtered_magnitude": 0.022002403994863518
+            }
+          ],
+          "pair_shift_from_minus_pi": 0.009445646002260055
+        }
+      ],
+      "density_dressing_bulk_representatives": [
+        {
+          "anchor": 125,
+          "n": 0.1499548342232527,
+          "D2": 0.04785575622222603,
+          "D3": 0.019955138522132775,
+          "real_T2": 0.0765508209661103,
+          "B_density": 0.5974119319096464,
+          "delta_n_second_order": 0.000746764914887058
+        },
+        {
+          "anchor": 126,
+          "n": 0.26228532856512987,
+          "D2": 0.06981783615153121,
+          "D3": 0.046699471486384585,
+          "real_T2": 0.11235875921151357,
+          "B_density": 0.2714460497634452,
+          "delta_n_second_order": 0.00033930756220430656
+        },
+        {
+          "anchor": 127,
+          "n": 0.19883253933994083,
+          "D2": 0.06981558420163399,
+          "D3": 0.019954553638347,
+          "real_T2": 0.1123553094345554,
+          "B_density": 0.4771815927755923,
+          "delta_n_second_order": 0.0005964769909694904
+        },
+        {
+          "anchor": 128,
+          "n": 0.19883861463820424,
+          "D2": 0.04785733299143335,
+          "D3": 0.0404554092746978,
+          "real_T2": 0.0765534717411805,
+          "B_density": 0.4388503342363408,
+          "delta_n_second_order": 0.000548562917795426
+        }
+      ],
+      "mean_dressing_representative": 0.0005577780964640702,
+      "leading_dressing_upper_bound_at_nmid": 0.0010107329965143392
+    },
+    {
+      "path": "codex/work_C193/ckpt_meas/typhon_out/out/p153c_L64_P0_prod14_meas.json",
+      "sha256": "c78c85a5bba72bb1f5039e375a708b9fa4eb8c52c680f4497e7ebbeb9ac85acd",
+      "L": 64,
+      "P": 0,
+      "chi": 384,
+      "hz": -19.97589125,
+      "n_mid": 0.21829875473311028,
+      "pair_rows": [],
+      "centered_boson": [],
+      "density_dressing_bulk_representatives": [
+        {
+          "anchor": 29,
+          "n": 0.3270908429222436,
+          "D2": 0.09500279779387684,
+          "D3": 0.052522608903644456,
+          "real_T2": 0.14683479194423651,
+          "B_density": 0.10320079232064143,
+          "delta_n_second_order": 0.00012900099040080178
+        },
+        {
+          "anchor": 30,
+          "n": 0.14743460634938133,
+          "D2": 0.05811371281045148,
+          "D3": 0.009916439175597284,
+          "real_T2": 0.09162062476731427,
+          "B_density": 0.6230198055393649,
+          "delta_n_second_order": 0.0007787747569242061
+        },
+        {
+          "anchor": 31,
+          "n": 0.24611486100390256,
+          "D2": 0.058113796214036006,
+          "D3": 0.052522652373243765,
+          "real_T2": 0.09162072065854349,
+          "B_density": 0.3036762175869824,
+          "delta_n_second_order": 0.000379595271983728
+        },
+        {
+          "anchor": 32,
+          "n": 0.2461146876937341,
+          "D2": 0.09500278135407929,
+          "D3": 0.017171247397782332,
+          "real_T2": 0.14683471066695497,
+          "B_density": 0.36501366051294964,
+          "delta_n_second_order": 0.00045626707564118705
+        }
+      ],
+      "mean_dressing_representative": 0.00043590952373748074,
+      "leading_dressing_upper_bound_at_nmid": 0.0010074458280743218
+    },
+    {
+      "path": "codex/work_C193/ckpt_meas/typhon_out/out/p153c_L64_P1_rand1_meas.json",
+      "sha256": "8d209cde0ba0555526829391a97ba667be71bf8885e2555fbdbe9bea1270a053",
+      "L": 64,
+      "P": 1,
+      "chi": 384,
+      "hz": -19.97589125,
+      "n_mid": 0.20177264417155658,
+      "pair_rows": [],
+      "centered_boson": [],
+      "density_dressing_bulk_representatives": [
+        {
+          "anchor": 29,
+          "n": 0.3008500479179338,
+          "D2": 0.07915312270932377,
+          "D3": 0.04358287904825037,
+          "real_T2": 0.1461696611526161,
+          "B_density": 0.1654733285681228,
+          "delta_n_second_order": 0.0002068416607101535
+        },
+        {
+          "anchor": 30,
+          "n": 0.137095462081158,
+          "D2": 0.04897470957479879,
+          "D3": 0.008546170629606924,
+          "real_T2": 0.09179265700075886,
+          "B_density": 0.6447469354077288,
+          "delta_n_second_order": 0.0008059336692596609
+        },
+        {
+          "anchor": 31,
+          "n": 0.2271660692834847,
+          "D2": 0.04897476281553912,
+          "D3": 0.04358289991826336,
+          "real_T2": 0.09179269968012847,
+          "B_density": 0.3509112459656707,
+          "delta_n_second_order": 0.00043863905745708835
+        },
+        {
+          "anchor": 32,
+          "n": 0.22716601288078572,
+          "D2": 0.07915312755673551,
+          "D3": 0.014512953891046449,
+          "real_T2": 0.1461696375496131,
+          "B_density": 0.4056024924050215,
+          "delta_n_second_order": 0.0005070031155062769
+        }
+      ],
+      "mean_dressing_representative": 0.000489604375733295,
+      "leading_dressing_upper_bound_at_nmid": 0.0010258081731427148
+    }
+  ],
+  "runtime_seconds": 0.1840874170011375
+}

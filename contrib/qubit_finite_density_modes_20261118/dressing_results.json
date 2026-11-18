@@ -1,0 +1,33 @@
+{
+  "checks": [
+    {
+      "L": 8,
+      "dimension": 47,
+      "integer_identity_nonzeros": 0,
+      "minimum_B": -3.3620521188214734e-16,
+      "minimum_upper_bound_difference": 0.0
+    },
+    {
+      "L": 9,
+      "dimension": 76,
+      "integer_identity_nonzeros": 0,
+      "minimum_B": 0.11111111111111033,
+      "minimum_upper_bound_difference": 0.0
+    },
+    {
+      "L": 10,
+      "dimension": 123,
+      "integer_identity_nonzeros": 0,
+      "minimum_B": 0.0,
+      "minimum_upper_bound_difference": 0.0
+    },
+    {
+      "L": 12,
+      "dimension": 322,
+      "integer_identity_nonzeros": 0,
+      "minimum_B": -3.5788879080577965e-17,
+      "minimum_upper_bound_difference": 0.0
+    }
+  ],
+  "runtime_seconds": 0.04829599999357015
+}
