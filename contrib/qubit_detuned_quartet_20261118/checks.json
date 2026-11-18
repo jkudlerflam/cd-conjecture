@@ -1,0 +1,20 @@
+{
+  "L": 16,
+  "N": 3,
+  "full_dimension": 2207,
+  "ground_residual": 1.318751868567241e-14,
+  "largest_resolvent_relative_residual": 7.273865891785736e-15,
+  "largest_proper_energy_counterterm": 2.8835814075341888e-15,
+  "real_space_sixth_coefficient": [
+    -0.12249609770939293,
+    9.643978324258562e-16
+  ],
+  "spectral_sixth_coefficient": [
+    -0.1224960977093919,
+    1.1148489599437096e-15
+  ],
+  "absolute_difference": 1.0379184839465206e-15,
+  "relative_difference": 8.473073864025159e-15,
+  "scope": "L=16 validates the algorithm; its external momenta are outside the trial 1/8 patches used for L=20,24.",
+  "seconds": 0.16174791697994806
+}

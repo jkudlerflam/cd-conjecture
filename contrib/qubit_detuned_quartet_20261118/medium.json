@@ -1,0 +1,862 @@
+{
+  "parameters": {
+    "phi": 1.53,
+    "Delta": 1,
+    "V": 40,
+    "t": 0.0125,
+    "epsilon": 0.025,
+    "real_hop_over_t": 0.040785011241591035,
+    "imaginary_hop_over_t": 0.999167945271476,
+    "chemical_potential_over_t": -2.1426,
+    "pair_sources_over_t": [
+      -0.002039250562079552,
+      0.03333333333333333
+    ]
+  },
+  "results": [
+    {
+      "reference": {
+        "L": 16,
+        "N": 3,
+        "density": 0.1875,
+        "translation_momentum_index": 14,
+        "physical_momentum_over_pi": -1.75,
+        "grand_energy_over_t": -0.11496188261400733,
+        "global_gap_over_t": 0.0032574083908860907,
+        "first_levels": [
+          {
+            "energy": -0.11496188261400733,
+            "N": 3,
+            "momentum_index": 14
+          },
+          {
+            "energy": -0.11170447422312124,
+            "N": 1,
+            "momentum_index": 7
+          },
+          {
+            "energy": -0.09571371699855925,
+            "N": 2,
+            "momentum_index": 14
+          },
+          {
+            "energy": -0.08700339944233673,
+            "N": 5,
+            "momentum_index": 5
+          },
+          {
+            "energy": -0.07994069183302688,
+            "N": 2,
+            "momentum_index": 8
+          },
+          {
+            "energy": -0.06637505481891467,
+            "N": 3,
+            "momentum_index": 15
+          },
+          {
+            "energy": -0.06506214396409382,
+            "N": 4,
+            "momentum_index": 5
+          },
+          {
+            "energy": -0.04219410806436806,
+            "N": 7,
+            "momentum_index": 12
+          }
+        ],
+        "max_searched_sector": 43,
+        "total_constrained_dimension": 2207
+      },
+      "vertices": [
+        {
+          "cutoff_over_t": 0.0,
+          "source_weights": [
+            -0.002039250562079552,
+            0.03333333333333333
+          ],
+          "coefficient_real": 0.00034542517932163426,
+          "coefficient_imag": -3.040848280642938e-19,
+          "coefficient_abs": 0.00034542517932163426,
+          "source_projected_bound": 0.0008728015862013618,
+          "pair_susceptibility_times_t": 0.3072957698869957,
+          "composite_inverse_response_abs_over_t": 0.0036579757981754046,
+          "composite_inverse_response_bound_over_t": 0.009242774615341207,
+          "disconnected_counterterm": 0,
+          "terms": [
+            {
+              "word": "BBPP",
+              "real": 2.215525285782627e-05,
+              "imag": 2.168404344971009e-19,
+              "bound": 8.047055210696462e-05
+            },
+            {
+              "word": "BPBP",
+              "real": 0.00036342804742712175,
+              "imag": 6.369687763352339e-19,
+              "bound": 0.0004673894739124771
+            },
+            {
+              "word": "BPPB",
+              "real": -3.608092194699224e-05,
+              "imag": -2.286988957586611e-20,
+              "bound": 5.9764998498364075e-05
+            },
+            {
+              "word": "PBBP",
+              "real": 2.0634727182678608e-06,
+              "imag": -1.1739876648944603e-18,
+              "bound": 0.00023511274236634528
+            },
+            {
+              "word": "PBPB",
+              "real": -6.140671734589378e-06,
+              "imag": 3.8963515573697816e-20,
+              "bound": 3.006381931721072e-05
+            },
+            {
+              "word": "PPBB",
+              "real": 0.0,
+              "imag": 0.0,
+              "bound": 0.0
+            }
+          ],
+          "pair_spectral_weights": [
+            {
+              "charge": -2,
+              "total_weight": 0.07320345127205359,
+              "retained_weight": 0.07320345127205359,
+              "smallest_weighted_gap": 0.7868463072832312
+            },
+            {
+              "charge": 2,
+              "total_weight": 0.18789569163168227,
+              "retained_weight": 0.18789569163168227,
+              "smallest_weighted_gap": 0.5372234479849989
+            }
+          ]
+        },
+        {
+          "cutoff_over_t": 0.25,
+          "source_weights": [
+            -0.002039250562079552,
+            0.03333333333333333
+          ],
+          "coefficient_real": 0.00034542517932163426,
+          "coefficient_imag": -3.040848280642938e-19,
+          "coefficient_abs": 0.00034542517932163426,
+          "source_projected_bound": 0.0008728015862013618,
+          "pair_susceptibility_times_t": 0.3072957698869957,
+          "composite_inverse_response_abs_over_t": 0.0036579757981754046,
+          "composite_inverse_response_bound_over_t": 0.009242774615341207,
+          "disconnected_counterterm": 0,
+          "terms": [
+            {
+              "word": "BBPP",
+              "real": 2.215525285782627e-05,
+              "imag": 2.168404344971009e-19,
+              "bound": 8.047055210696462e-05
+            },
+            {
+              "word": "BPBP",
+              "real": 0.00036342804742712175,
+              "imag": 6.369687763352339e-19,
+              "bound": 0.0004673894739124771
+            },
+            {
+              "word": "BPPB",
+              "real": -3.608092194699224e-05,
+              "imag": -2.286988957586611e-20,
+              "bound": 5.9764998498364075e-05
+            },
+            {
+              "word": "PBBP",
+              "real": 2.0634727182678608e-06,
+              "imag": -1.1739876648944603e-18,
+              "bound": 0.00023511274236634528
+            },
+            {
+              "word": "PBPB",
+              "real": -6.140671734589378e-06,
+              "imag": 3.8963515573697816e-20,
+              "bound": 3.006381931721072e-05
+            },
+            {
+              "word": "PPBB",
+              "real": 0.0,
+              "imag": 0.0,
+              "bound": 0.0
+            }
+          ],
+          "pair_spectral_weights": [
+            {
+              "charge": -2,
+              "total_weight": 0.07320345127205359,
+              "retained_weight": 0.07320345127205359,
+              "smallest_weighted_gap": 0.7868463072832312
+            },
+            {
+              "charge": 2,
+              "total_weight": 0.18789569163168227,
+              "retained_weight": 0.18789569163168227,
+              "smallest_weighted_gap": 0.5372234479849989
+            }
+          ]
+        },
+        {
+          "cutoff_over_t": 0.5,
+          "source_weights": [
+            -0.002039250562079552,
+            0.03333333333333333
+          ],
+          "coefficient_real": -2.8402172000164672e-06,
+          "coefficient_imag": -1.1207569381154478e-18,
+          "coefficient_abs": 2.8402172000164672e-06,
+          "source_projected_bound": 0.0003100138291512623,
+          "pair_susceptibility_times_t": 0.3072957698869957,
+          "composite_inverse_response_abs_over_t": 3.0077268251333436e-05,
+          "composite_inverse_response_bound_over_t": 0.003282977478254659,
+          "disconnected_counterterm": 0,
+          "terms": [
+            {
+              "word": "BBPP",
+              "real": 3.741130866801416e-06,
+              "imag": -4.6375053862172944e-20,
+              "bound": 5.145227857019976e-06
+            },
+            {
+              "word": "BPBP",
+              "real": -6.431039591372612e-07,
+              "imag": 6.614797922464052e-20,
+              "bound": 3.5192040441788256e-05
+            },
+            {
+              "word": "BPPB",
+              "real": -1.8610450913591052e-06,
+              "imag": -5.505714157152952e-21,
+              "bound": 4.4999991688980485e-06
+            },
+            {
+              "word": "PBBP",
+              "real": 2.0634727182678608e-06,
+              "imag": -1.1739876648944603e-18,
+              "bound": 0.00023511274236634528
+            },
+            {
+              "word": "PBPB",
+              "real": -6.140671734589378e-06,
+              "imag": 3.8963515573697816e-20,
+              "bound": 3.006381931721072e-05
+            },
+            {
+              "word": "PPBB",
+              "real": 0.0,
+              "imag": 0.0,
+              "bound": 0.0
+            }
+          ],
+          "pair_spectral_weights": [
+            {
+              "charge": -2,
+              "total_weight": 0.07320345127205359,
+              "retained_weight": 0.07320345127205359,
+              "smallest_weighted_gap": 0.7868463072832312
+            },
+            {
+              "charge": 2,
+              "total_weight": 0.18789569163168227,
+              "retained_weight": 0.18789569163168227,
+              "smallest_weighted_gap": 0.5372234479849989
+            }
+          ]
+        }
+      ],
+      "source_channel_coefficients": {
+        "B2B2": [
+          -1.0295876955460594,
+          3.3757718842508666e-15
+        ],
+        "B2B3": [
+          -0.08257906025789288,
+          2.8956871622742852e-15
+        ],
+        "B3B3": [
+          0.3046321237860204,
+          8.153200337090993e-17
+        ]
+      },
+      "interference_reconstruction_error": 1.5045456751733218e-20,
+      "direct_probe_check": {
+        "dimension": 138,
+        "rows": [
+          {
+            "tau": 0.125,
+            "mixed_derivative_estimate": 0.00034137057005523275,
+            "exact_resolvent_coefficient": 0.00034542517932163426,
+            "relative_error": -0.01173802464071727
+          },
+          {
+            "tau": 0.0625,
+            "mixed_derivative_estimate": 0.00034440239869582,
+            "exact_resolvent_coefficient": 0.00034542517932163426,
+            "relative_error": -0.0029609324595932796
+          },
+          {
+            "tau": 0.03125,
+            "mixed_derivative_estimate": 0.0003451692755334079,
+            "exact_resolvent_coefficient": 0.00034542517932163426,
+            "relative_error": -0.0007408371003205794
+          }
+        ]
+      }
+    },
+    {
+      "reference": {
+        "L": 20,
+        "N": 3,
+        "density": 0.15,
+        "translation_momentum_index": 19,
+        "physical_momentum_over_pi": -1.9,
+        "grand_energy_over_t": -0.3214314641168857,
+        "global_gap_over_t": 0.008510021520406696,
+        "first_levels": [
+          {
+            "energy": -0.3214314641168857,
+            "N": 3,
+            "momentum_index": 19
+          },
+          {
+            "energy": -0.312921442596479,
+            "N": 4,
+            "momentum_index": 0
+          },
+          {
+            "energy": -0.29665716834172084,
+            "N": 5,
+            "momentum_index": 9
+          },
+          {
+            "energy": -0.2671334428896504,
+            "N": 4,
+            "momentum_index": 8
+          },
+          {
+            "energy": -0.23253923814989613,
+            "N": 2,
+            "momentum_index": 18
+          },
+          {
+            "energy": -0.22366685193286429,
+            "N": 2,
+            "momentum_index": 10
+          },
+          {
+            "energy": -0.20065964415604795,
+            "N": 6,
+            "momentum_index": 10
+          },
+          {
+            "energy": -0.17804929728255736,
+            "N": 3,
+            "momentum_index": 11
+          }
+        ],
+        "max_searched_sector": 217,
+        "total_constrained_dimension": 15127
+      },
+      "vertices": [
+        {
+          "cutoff_over_t": 0.0,
+          "source_weights": [
+            -0.002039250562079552,
+            0.03333333333333333
+          ],
+          "coefficient_real": -0.036112896255582595,
+          "coefficient_imag": -3.7390660093941305e-16,
+          "coefficient_abs": 0.036112896255582595,
+          "source_projected_bound": 0.13181945525167355,
+          "pair_susceptibility_times_t": 18.87944915897642,
+          "composite_inverse_response_abs_over_t": 0.00010131731744769655,
+          "composite_inverse_response_bound_over_t": 0.00036982892479723597,
+          "disconnected_counterterm": 0,
+          "terms": [
+            {
+              "word": "BBPP",
+              "real": -0.011208356229588334,
+              "imag": -5.838428698834441e-17,
+              "bound": 0.017866112647411846
+            },
+            {
+              "word": "BPBP",
+              "real": 0.0005657255489842336,
+              "imag": 3.1821333762449555e-17,
+              "bound": 0.0028488546613114362
+            },
+            {
+              "word": "BPPB",
+              "real": 7.342890793727056e-06,
+              "imag": -7.369186641112413e-20,
+              "bound": 1.9299200659873597e-05
+            },
+            {
+              "word": "PBBP",
+              "real": -0.025594177780670267,
+              "imag": -3.41740524767431e-16,
+              "bound": 0.1103377200041928
+            },
+            {
+              "word": "PBPB",
+              "real": 0.00011656931489803963,
+              "imag": -5.5294310796760726e-18,
+              "bound": 0.0007474687380975794
+            },
+            {
+              "word": "PPBB",
+              "real": 0.0,
+              "imag": 0.0,
+              "bound": 0.0
+            }
+          ],
+          "pair_spectral_weights": [
+            {
+              "charge": -2,
+              "total_weight": 0.3022817717401109,
+              "retained_weight": 0.3022817717401109,
+              "smallest_weighted_gap": 0.15090002330285157
+            },
+            {
+              "charge": 2,
+              "total_weight": 0.5584745900053351,
+              "retained_weight": 0.5584745900053351,
+              "smallest_weighted_gap": 0.0247742957751646
+            }
+          ]
+        },
+        {
+          "cutoff_over_t": 0.25,
+          "source_weights": [
+            -0.002039250562079552,
+            0.03333333333333333
+          ],
+          "coefficient_real": -5.68007708778607e-05,
+          "coefficient_imag": -1.5313296895173682e-18,
+          "coefficient_abs": 5.68007708778607e-05,
+          "source_projected_bound": 0.0001623807229654528,
+          "pair_susceptibility_times_t": 0.06988021671868763,
+          "composite_inverse_response_abs_over_t": 0.011631768321966857,
+          "composite_inverse_response_bound_over_t": 0.03325262879880773,
+          "disconnected_counterterm": 0,
+          "terms": [
+            {
+              "word": "BBPP",
+              "real": -5.3111242074491014e-05,
+              "imag": -3.2854290441626174e-19,
+              "bound": 9.496903793153281e-05
+            },
+            {
+              "word": "BPBP",
+              "real": -1.1032419597096747e-05,
+              "imag": -1.1290949186899824e-18,
+              "bound": 4.81124843740464e-05
+            },
+            {
+              "word": "BPPB",
+              "real": 7.342890793727056e-06,
+              "imag": -7.369186641112413e-20,
+              "bound": 1.9299200659873597e-05
+            },
+            {
+              "word": "PBBP",
+              "real": -0.0,
+              "imag": -0.0,
+              "bound": 0.0
+            },
+            {
+              "word": "PBPB",
+              "real": -0.0,
+              "imag": -0.0,
+              "bound": 0.0
+            },
+            {
+              "word": "PPBB",
+              "real": 0.0,
+              "imag": 0.0,
+              "bound": 0.0
+            }
+          ],
+          "pair_spectral_weights": [
+            {
+              "charge": -2,
+              "total_weight": 0.3022817717401109,
+              "retained_weight": 0.0,
+              "smallest_weighted_gap": 0.15090002330285157
+            },
+            {
+              "charge": 2,
+              "total_weight": 0.5584745900053351,
+              "retained_weight": 0.14210844530882413,
+              "smallest_weighted_gap": 0.0247742957751646
+            }
+          ]
+        },
+        {
+          "cutoff_over_t": 0.5,
+          "source_weights": [
+            -0.002039250562079552,
+            0.03333333333333333
+          ],
+          "coefficient_real": -8.816305302726186e-06,
+          "coefficient_imag": -1.2461178143090843e-18,
+          "coefficient_abs": 8.816305302726186e-06,
+          "source_projected_bound": 0.00010954133025459488,
+          "pair_susceptibility_times_t": 0.06988021671868763,
+          "composite_inverse_response_abs_over_t": 0.0018054195242799,
+          "composite_inverse_response_bound_over_t": 0.022432078922684777,
+          "disconnected_counterterm": 0,
+          "terms": [
+            {
+              "word": "BBPP",
+              "real": -5.126776499356495e-06,
+              "imag": -4.33310292079778e-20,
+              "bound": 4.212964522067488e-05
+            },
+            {
+              "word": "BPBP",
+              "real": -1.1032419597096747e-05,
+              "imag": -1.1290949186899824e-18,
+              "bound": 4.81124843740464e-05
+            },
+            {
+              "word": "BPPB",
+              "real": 7.342890793727056e-06,
+              "imag": -7.369186641112413e-20,
+              "bound": 1.9299200659873597e-05
+            },
+            {
+              "word": "PBBP",
+              "real": -0.0,
+              "imag": -0.0,
+              "bound": 0.0
+            },
+            {
+              "word": "PBPB",
+              "real": -0.0,
+              "imag": -0.0,
+              "bound": 0.0
+            },
+            {
+              "word": "PPBB",
+              "real": 0.0,
+              "imag": 0.0,
+              "bound": 0.0
+            }
+          ],
+          "pair_spectral_weights": [
+            {
+              "charge": -2,
+              "total_weight": 0.3022817717401109,
+              "retained_weight": 0.0,
+              "smallest_weighted_gap": 0.15090002330285157
+            },
+            {
+              "charge": 2,
+              "total_weight": 0.5584745900053351,
+              "retained_weight": 0.14210844530882413,
+              "smallest_weighted_gap": 0.0247742957751646
+            }
+          ]
+        }
+      ],
+      "source_channel_coefficients": {
+        "B2B2": [
+          16.962841555410538,
+          1.3964523981613297e-16
+        ],
+        "B2B3": [
+          -5.0166376381563325,
+          2.6323995067079053e-14
+        ],
+        "B3B3": [
+          -33.17890413062071,
+          -3.2623209689219834e-13
+        ]
+      },
+      "interference_reconstruction_error": 7.848325886347818e-18
+    },
+    {
+      "reference": {
+        "L": 24,
+        "N": 5,
+        "density": 0.20833333333333334,
+        "translation_momentum_index": 11,
+        "physical_momentum_over_pi": -0.9166666666666666,
+        "grand_energy_over_t": -0.4820618581401509,
+        "global_gap_over_t": 0.028945838048391626,
+        "first_levels": [
+          {
+            "energy": -0.4820618581401509,
+            "N": 5,
+            "momentum_index": 11
+          },
+          {
+            "energy": -0.4531160200917593,
+            "N": 6,
+            "momentum_index": 12
+          },
+          {
+            "energy": -0.42497539161905207,
+            "N": 4,
+            "momentum_index": 0
+          },
+          {
+            "energy": -0.4157389750053838,
+            "N": 7,
+            "momentum_index": 23
+          },
+          {
+            "energy": -0.40774769752192763,
+            "N": 4,
+            "momentum_index": 10
+          },
+          {
+            "energy": -0.39577154097170236,
+            "N": 6,
+            "momentum_index": 22
+          },
+          {
+            "energy": -0.3936171639057062,
+            "N": 3,
+            "momentum_index": 23
+          },
+          {
+            "energy": -0.3497520782524911,
+            "N": 5,
+            "momentum_index": 1
+          }
+        ],
+        "max_searched_sector": 1144,
+        "total_constrained_dimension": 103682
+      },
+      "vertices": [
+        {
+          "cutoff_over_t": 0.0,
+          "source_weights": [
+            -0.002039250562079552,
+            0.03333333333333333
+          ],
+          "coefficient_real": -0.05147181167197873,
+          "coefficient_imag": -5.753390296699254e-16,
+          "coefficient_abs": 0.05147181167197873,
+          "source_projected_bound": 0.13808258766402573,
+          "pair_susceptibility_times_t": 12.325026889575717,
+          "composite_inverse_response_abs_over_t": 0.00033883924363947357,
+          "composite_inverse_response_bound_over_t": 0.0009089984992568482,
+          "disconnected_counterterm": 0,
+          "terms": [
+            {
+              "word": "BBPP",
+              "real": -0.0039123703664447895,
+              "imag": -5.950046465458877e-17,
+              "bound": 0.004700938562487395
+            },
+            {
+              "word": "BPBP",
+              "real": -0.00021802601907633075,
+              "imag": -3.950561665994057e-18,
+              "bound": 0.0016340831619522226
+            },
+            {
+              "word": "BPPB",
+              "real": 2.5466572858567294e-06,
+              "imag": -7.003903682608996e-20,
+              "bound": 4.30029868707151e-05
+            },
+            {
+              "word": "PBBP",
+              "real": -0.04160779032757325,
+              "imag": -4.614364446098307e-16,
+              "bound": 0.12290953200536206
+            },
+            {
+              "word": "PBPB",
+              "real": -0.00017566208986733527,
+              "imag": -1.3755815063409838e-18,
+              "bound": 0.003234521421050454
+            },
+            {
+              "word": "PPBB",
+              "real": -0.0055605095263028745,
+              "imag": -4.90059381963448e-17,
+              "bound": 0.0055605095263028745
+            }
+          ],
+          "pair_spectral_weights": [
+            {
+              "charge": -2,
+              "total_weight": 0.509762574744084,
+              "retained_weight": 0.509762574744084,
+              "smallest_weighted_gap": 0.08844469423444323
+            },
+            {
+              "charge": 2,
+              "total_weight": 0.5031761092656049,
+              "retained_weight": 0.5031761092656049,
+              "smallest_weighted_gap": 0.06632288313477341
+            }
+          ]
+        },
+        {
+          "cutoff_over_t": 0.25,
+          "source_weights": [
+            -0.002039250562079552,
+            0.03333333333333333
+          ],
+          "coefficient_real": -0.00012232847986808532,
+          "coefficient_imag": 2.297537164757887e-18,
+          "coefficient_abs": 0.00012232847986808532,
+          "source_projected_bound": 0.0003696072443799061,
+          "pair_susceptibility_times_t": 0.05185989379562099,
+          "composite_inverse_response_abs_over_t": 0.04548459508518248,
+          "composite_inverse_response_bound_over_t": 0.1374286337024622,
+          "disconnected_counterterm": 0,
+          "terms": [
+            {
+              "word": "BBPP",
+              "real": -5.318047150962492e-05,
+              "imag": -7.069151689327179e-19,
+              "bound": 6.395039807739294e-05
+            },
+            {
+              "word": "BPBP",
+              "real": -1.2543254668705363e-05,
+              "imag": -2.233255304995166e-19,
+              "bound": 3.450087897617891e-05
+            },
+            {
+              "word": "BPPB",
+              "real": 2.5466572858567294e-06,
+              "imag": -7.003903682608996e-20,
+              "bound": 4.30029868707151e-05
+            },
+            {
+              "word": "PBBP",
+              "real": 3.473550111706497e-05,
+              "imag": 9.462416812014603e-19,
+              "bound": 6.792557842081308e-05
+            },
+            {
+              "word": "PBPB",
+              "real": -1.832409959000279e-05,
+              "imag": -3.945055951836904e-19,
+              "bound": 8.466458953213211e-05
+            },
+            {
+              "word": "PPBB",
+              "real": -7.556281250267395e-05,
+              "imag": 2.7460808149984417e-18,
+              "bound": 7.556281250267395e-05
+            }
+          ],
+          "pair_spectral_weights": [
+            {
+              "charge": -2,
+              "total_weight": 0.509762574744084,
+              "retained_weight": 0.018761240322180482,
+              "smallest_weighted_gap": 0.08844469423444323
+            },
+            {
+              "charge": 2,
+              "total_weight": 0.5031761092656049,
+              "retained_weight": 0.05737623534426861,
+              "smallest_weighted_gap": 0.06632288313477341
+            }
+          ]
+        },
+        {
+          "cutoff_over_t": 0.5,
+          "source_weights": [
+            -0.002039250562079552,
+            0.03333333333333333
+          ],
+          "coefficient_real": 4.235302786167337e-06,
+          "coefficient_imag": 2.6958147035348193e-19,
+          "coefficient_abs": 4.235302786167337e-06,
+          "source_projected_bound": 0.000239552746145963,
+          "pair_susceptibility_times_t": 0.05185989379562099,
+          "composite_inverse_response_abs_over_t": 0.0015747848129863443,
+          "composite_inverse_response_bound_over_t": 0.08907132396104693,
+          "disconnected_counterterm": 0,
+          "terms": [
+            {
+              "word": "BBPP",
+              "real": -2.1795013580462125e-06,
+              "imag": 1.1209951661318631e-20,
+              "bound": 9.458712346123796e-06
+            },
+            {
+              "word": "BPBP",
+              "real": -1.2543254668705363e-05,
+              "imag": -2.233255304995166e-19,
+              "bound": 3.450087897617891e-05
+            },
+            {
+              "word": "BPPB",
+              "real": 2.5466572858567294e-06,
+              "imag": -7.003903682608996e-20,
+              "bound": 4.30029868707151e-05
+            },
+            {
+              "word": "PBBP",
+              "real": 3.473550111706497e-05,
+              "imag": 9.462416812014603e-19,
+              "bound": 6.792557842081308e-05
+            },
+            {
+              "word": "PBPB",
+              "real": -1.832409959000279e-05,
+              "imag": -3.945055951836904e-19,
+              "bound": 8.466458953213211e-05
+            },
+            {
+              "word": "PPBB",
+              "real": -0.0,
+              "imag": -0.0,
+              "bound": 0.0
+            }
+          ],
+          "pair_spectral_weights": [
+            {
+              "charge": -2,
+              "total_weight": 0.509762574744084,
+              "retained_weight": 0.018761240322180482,
+              "smallest_weighted_gap": 0.08844469423444323
+            },
+            {
+              "charge": 2,
+              "total_weight": 0.5031761092656049,
+              "retained_weight": 0.05737623534426861,
+              "smallest_weighted_gap": 0.06632288313477341
+            }
+          ]
+        }
+      ],
+      "source_channel_coefficients": {
+        "B2B2": [
+          38.78239725002451,
+          3.561355854317383e-13
+        ],
+        "B2B3": [
+          -3.5136553395843606,
+          -6.094929248801062e-14
+        ],
+        "B3B3": [
+          -46.89969435723639,
+          -5.200140448455293e-13
+        ]
+      },
+      "interference_reconstruction_error": 2.2063770483691793e-17
+    }
+  ],
+  "seconds": 7.311650374991586,
+  "scope": "Finite interacting composite-pair diagnostic, not single-field quartet 1PI or continuum C4."
+}
