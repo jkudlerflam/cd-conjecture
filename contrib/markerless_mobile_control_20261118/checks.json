@@ -1,0 +1,476 @@
+{
+  "status": "finite integer certificates and finite-volume response; no thermodynamic theorem",
+  "selector_enclosure": {
+    "nu_lower": 1.7702928472898476,
+    "nu_upper": 1.7702928472898476,
+    "rational_177_over_100_lower": true,
+    "rational_17703_over_10000_upper": true,
+    "method": "Machin alternating arctangent bounds; alternating cosine bounds; exact fractions"
+  },
+  "literal_audit": [
+    {
+      "word": [
+        2,
+        3
+      ],
+      "dimension": 6,
+      "max_source_error": 0.0,
+      "leakage": 0
+    },
+    {
+      "word": [
+        3,
+        2,
+        2
+      ],
+      "dimension": 12,
+      "max_source_error": 0.0,
+      "leakage": 0
+    },
+    {
+      "word": [
+        10,
+        10
+      ],
+      "dimension": 100,
+      "max_source_error": 0.0,
+      "leakage": 0
+    },
+    {
+      "word": [
+        9,
+        11
+      ],
+      "dimension": 99,
+      "max_source_error": 0.0,
+      "leakage": 0
+    }
+  ],
+  "finite": {
+    "N": 20,
+    "V": 2,
+    "rho": 0.9090909090909091,
+    "J_over_t": "1/25",
+    "nu": "177/100",
+    "alpha": 0.9001841228472068,
+    "sectors": {
+      "target": {
+        "word": [
+          10,
+          10
+        ],
+        "dimension": 21000,
+        "nnz": 169400,
+        "lower_numerator": -39700385751,
+        "upper_numerator": -39700385746,
+        "denominator": 10000000000,
+        "lower": -3.9700385751,
+        "upper": -3.9700385746,
+        "width": 5e-10,
+        "min_witness": 12333103769,
+        "max_witness": 1099511627776
+      },
+      "balanced": {
+        "word": [
+          9,
+          11
+        ],
+        "dimension": 20790,
+        "nnz": 167630,
+        "lower_numerator": -39698945519,
+        "upper_numerator": -39698945515,
+        "denominator": 10000000000,
+        "lower": -3.9698945519,
+        "upper": -3.9698945515,
+        "width": 4e-10,
+        "min_witness": 12134815741,
+        "max_witness": 1099511627776
+      },
+      "one_head": {
+        "word": [
+          20
+        ],
+        "dimension": 4200,
+        "nnz": 27400,
+        "lower_numerator": -39667714197,
+        "upper_numerator": -39667714194,
+        "denominator": 10000000000,
+        "lower": -3.9667714197,
+        "upper": -3.9667714194,
+        "width": 3e-10,
+        "min_witness": 22592324425,
+        "max_witness": 1099511627776
+      },
+      "three_heads": {
+        "word": [
+          6,
+          7,
+          7
+        ],
+        "dimension": 61740,
+        "nnz": 581560,
+        "lower_numerator": -39660866887,
+        "upper_numerator": -39660866881,
+        "denominator": 10000000000,
+        "lower": -3.9660866887,
+        "upper": -3.9660866881,
+        "width": 6e-10,
+        "min_witness": 9938728764,
+        "max_witness": 1099511627776
+      }
+    },
+    "differences": {
+      "balanced": {
+        "lower_numerator": 1440227,
+        "upper_numerator": 1440236,
+        "denominator": 10000000000,
+        "lower": 0.0001440227,
+        "upper": 0.0001440236,
+        "lower_for_nu_interval_numerator": 1200227,
+        "lower_for_nu_in_1p77_to_1p7703": 0.0001200227,
+        "lower_with_J_window_numerator": 446167,
+        "lower_with_J_window": 4.46167e-05,
+        "lower_with_port_and_field_numerator": 400227,
+        "lower_with_port_and_field": 4.00227e-05
+      },
+      "one_head": {
+        "lower_numerator": 32671549,
+        "upper_numerator": 32671557,
+        "denominator": 10000000000,
+        "lower": 0.0032671549,
+        "upper": 0.0032671557,
+        "lower_for_nu_interval_numerator": 32431549,
+        "lower_for_nu_in_1p77_to_1p7703": 0.0032431549,
+        "lower_with_J_window_numerator": 31866004,
+        "lower_with_J_window": 0.0031866004,
+        "lower_with_port_and_field_numerator": 32031549,
+        "lower_with_port_and_field": 0.0032031549
+      },
+      "three_heads": {
+        "lower_numerator": 39518859,
+        "upper_numerator": 39518870,
+        "denominator": 10000000000,
+        "lower": 0.0039518859,
+        "upper": 0.003951887,
+        "lower_for_nu_interval_numerator": 39278859,
+        "lower_for_nu_in_1p77_to_1p7703": 0.0039278859,
+        "lower_with_J_window_numerator": 38336284,
+        "lower_with_J_window": 0.0038336284,
+        "lower_with_port_and_field_numerator": 38078859,
+        "lower_with_port_and_field": 0.0038078859
+      }
+    }
+  },
+  "response": [
+    {
+      "label": "balanced",
+      "target": [
+        10,
+        10
+      ],
+      "competitor": [
+        9,
+        11
+      ],
+      "N": 20,
+      "V": 2,
+      "rho": 0.9090909090909091,
+      "alpha": 0.9001841228472068,
+      "bath_dimension": 210,
+      "bath_gap": 0.16856567583573412,
+      "first": 0.003607226179374954,
+      "second_scalar": -5.405196994499265e-06,
+      "second_clock": -0.00016772685590691824,
+      "second": -0.0001731320529014188,
+      "A": {
+        "frozen_energy": -0.2973861998782956,
+        "scalar_response": 0.0025276988358682523,
+        "clock_response": 0.012432195332187,
+        "total_response": 0.014959894168055252
+      },
+      "B": {
+        "frozen_energy": -0.29337899058874983,
+        "scalar_response": 0.0025331040328627516,
+        "clock_response": 0.012599922188093918,
+        "total_response": 0.01513302622095667
+      }
+    },
+    {
+      "label": "one_head",
+      "target": [
+        10,
+        10
+      ],
+      "competitor": [
+        20
+      ],
+      "N": 20,
+      "V": 2,
+      "rho": 0.9090909090909091,
+      "alpha": 0.9001841228472068,
+      "bath_dimension": 210,
+      "bath_gap": 0.16856567583573412,
+      "first": 0.08103222950511055,
+      "second_scalar": 0.00206290470528246,
+      "second_clock": 0.007575276888404935,
+      "second": 0.009638181593687394,
+      "A": {
+        "frozen_energy": -0.2973861998782956,
+        "scalar_response": 0.0025276988358682523,
+        "clock_response": 0.012432195332187,
+        "total_response": 0.014959894168055252
+      },
+      "B": {
+        "frozen_energy": -0.20736880516041012,
+        "scalar_response": 0.0004647941305857924,
+        "clock_response": 0.004856918443782065,
+        "total_response": 0.005321712574367857
+      }
+    },
+    {
+      "label": "three_heads",
+      "target": [
+        10,
+        10
+      ],
+      "competitor": [
+        6,
+        7,
+        7
+      ],
+      "N": 20,
+      "V": 2,
+      "rho": 0.9090909090909091,
+      "alpha": 0.9001841228472068,
+      "bath_dimension": 210,
+      "bath_gap": 0.16856567583573412,
+      "first": 0.09974839075379215,
+      "second_scalar": -0.001784354804643418,
+      "second_clock": -0.01580460037477256,
+      "second": -0.01758895517941598,
+      "A": {
+        "frozen_energy": -0.2973861998782956,
+        "scalar_response": 0.0025276988358682523,
+        "clock_response": 0.012432195332187,
+        "total_response": 0.014959894168055252
+      },
+      "B": {
+        "frozen_energy": -0.18657732398044446,
+        "scalar_response": 0.00431205364051167,
+        "clock_response": 0.02823679570695956,
+        "total_response": 0.03254884934747123
+      }
+    },
+    {
+      "label": "weak_head_change_9",
+      "target": [
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10
+      ],
+      "competitor": [
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9
+      ],
+      "N": 90,
+      "V": 1,
+      "rho": 0.989010989010989,
+      "alpha": 0.9888888888888889,
+      "first": 0.01981342370942084,
+      "second_scalar": -0.00014401669554766966,
+      "second_clock": -0.001231279180543575,
+      "second": -0.001375295876091245,
+      "A": {
+        "frozen_energy": -1.3382378994523303,
+        "scalar_response": 0.001069509746047134,
+        "clock_response": 0.00618732821561474,
+        "total_response": 0.007256837961661874
+      },
+      "B": {
+        "frozen_energy": -1.3182018530046014,
+        "scalar_response": 0.0012135264415948036,
+        "clock_response": 0.007418607396158315,
+        "total_response": 0.008632133837753119
+      }
+    },
+    {
+      "label": "weak_head_change_11",
+      "target": [
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10
+      ],
+      "competitor": [
+        11,
+        11,
+        11,
+        11,
+        11,
+        11,
+        11,
+        11,
+        11,
+        11
+      ],
+      "N": 110,
+      "V": 1,
+      "rho": 0.990990990990991,
+      "alpha": 0.990909090909091,
+      "first": 0.019853900570931404,
+      "second_scalar": 9.807453528320738e-05,
+      "second_clock": 0.0007619677806578696,
+      "second": 0.0008600423159410772,
+      "A": {
+        "frozen_energy": -1.635624099330626,
+        "scalar_response": 0.0010695097460471396,
+        "clock_response": 0.0061892714745301084,
+        "total_response": 0.007258781220577248
+      },
+      "B": {
+        "frozen_energy": -1.615588052882897,
+        "scalar_response": 0.0009714352107639322,
+        "clock_response": 0.005427303693872239,
+        "total_response": 0.006398738904636171
+      }
+    }
+  ],
+  "relative_response_constants": [
+    {
+      "label": "balanced",
+      "patch_material_length": 20,
+      "difference_l1": 0.1494668169641875,
+      "difference_l2_sq": 0.0018593051791403897,
+      "target_fourier_l1": 0.055286595929783425,
+      "scalar_constant": 0.018386328207960254,
+      "clock_constant": 0.5433466686140437,
+      "C_patch": 0.561732996822004,
+      "frozen_excess": 0.004007209289545788,
+      "conditional_J_over_t_times_Gamma": 0.0020687598922313434
+    },
+    {
+      "label": "more_heads",
+      "patch_material_length": 90,
+      "difference_l1": 2.312064348923059,
+      "difference_l2_sq": 0.09208901762631191,
+      "target_fourier_l1": 0.055286595929783425,
+      "scalar_constant": 0.3477413524714458,
+      "clock_constant": 2.76051941766387,
+      "C_patch": 3.108260770135316,
+      "frozen_excess": 0.02003604644772894,
+      "conditional_J_over_t_times_Gamma": 0.0018693584288902625
+    },
+    {
+      "label": "fewer_heads",
+      "patch_material_length": 110,
+      "difference_l1": 2.4157865728226766,
+      "difference_l2_sq": 0.08181609448971017,
+      "target_fourier_l1": 0.055286595929783425,
+      "scalar_constant": 0.34893732669819744,
+      "clock_constant": 2.6729472684765665,
+      "C_patch": 3.0218845951747637,
+      "frozen_excess": 0.02003604644772894,
+      "conditional_J_over_t_times_Gamma": 0.0019227913200654035
+    }
+  ],
+  "form_factors": [
+    {
+      "b": 9,
+      "epsilon": -0.13182018530046014,
+      "derivative_norm": 0.3055728090000841,
+      "form_factor_identity_error": 1.6653345369377348e-16,
+      "source_l1": 0.22108996811446893,
+      "centered_source_sq": 0.15473311694721797,
+      "single_vacancy_U": 0.06685347401824981,
+      "single_vacancy_V": 0.007740670754236772
+    },
+    {
+      "b": 10,
+      "epsilon": -0.1486930999391478,
+      "derivative_norm": 0.2597669462762489,
+      "form_factor_identity_error": 2.7755575615628914e-16,
+      "source_l1": 0.21749548778677047,
+      "centered_source_sq": 0.13479869424352117,
+      "single_vacancy_U": 0.06198016139649191,
+      "single_vacancy_V": 0.009619131630991668
+    },
+    {
+      "b": 11,
+      "epsilon": -0.1615588052882897,
+      "derivative_norm": 0.2232909936926022,
+      "form_factor_identity_error": 1.3877787807814457e-16,
+      "source_l1": 0.21559526896041425,
+      "centered_source_sq": 0.11901616317978336,
+      "single_vacancy_U": 0.05990499281929283,
+      "single_vacancy_V": 0.022511740536804405
+    }
+  ],
+  "charge": {
+    "charge_commutator_max": 0.0,
+    "old_contact_field_counterexample": 0.017499999999999998,
+    "original_matrix_unit_count": {
+      "diagonal_entries": 78,
+      "hermitian_offdiagonal_pairs": 50
+    },
+    "external_matrix_unit_count": {
+      "diagonal_entries": 90,
+      "hermitian_offdiagonal_pairs": 50
+    },
+    "n9_log10_beta": -30.01733325051691,
+    "n9_log10_f9": -402.9768488465704,
+    "half_density_contact": 0.29735763271532445,
+    "log10_D_over_smallest_external_field_entry": 407.10562974724536
+  },
+  "additional_literal_checks": {
+    "charged_contact_masks": 8,
+    "charged_test_dimension": 48,
+    "charged_minus_vacuum": [
+      0.0,
+      -2.888017599699688e-32,
+      0.11485357635507597,
+      0.6914927054431093,
+      0.11485357635507622,
+      0.9632330782385419,
+      1.0433532275942636,
+      1.4864380425776105
+    ],
+    "old_field_shifts_divided_by_f": [
+      0.39049967990933965,
+      0.3915923091142304,
+      0.39049967985249623
+    ],
+    "old_free_contact": 0.39111009501706046,
+    "external_field_shifts_divided_by_f": [
+      0.40289620763585193,
+      0.40289620763585193,
+      0.40289620763585193
+    ],
+    "external_field_reason": "Exact fixed-Q scalar, using the size-independent density normalization"
+  },
+  "runtime_seconds": 0.32165825000265613,
+  "versions": {
+    "numpy": "2.5.5",
+    "scipy": "1.18.1"
+  }
+}
