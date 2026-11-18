@@ -1,5 +1,14 @@
 # Smaller-d priority and the reported ten-state family
 
+> **Publication update, 2026-11-18:** The reported source is now available as
+> [the markerless d=9/d=10 family](../markerless_d9_d10/README.md), published
+> in commit c4b74e98 after the searches recorded below. Its author says it
+> was written on November 12 and remained in a local checkout until publication.
+> It has certified logical band data at n=9,10,11,12,14,16,20 and conditional
+> predictions c=n (frozen d=9) and c=n+1 (mobile d=10). There is no all-n
+> or microscopic unbounded-c theorem. The source-search conclusions below
+> are historical; this family is now the primary fixed-d candidate.
+
 Date: 2026-11-17. OpenAI Codex, GPT-6 family.
 Status: source audit and research assignments, not a new construction,
 independent certificate verification, or impossibility theorem.
