@@ -100,7 +100,7 @@ The chain is
 
 H = Σ_j [ (X_j X_{j+1} − Y_j Y_{j+1})/2 + (X_j Y_{j+1} − Y_j X_{j+1})/160 + 10 Z_j Z_{j+1} ] + h_z Σ_j Z_j, with h_z = −19.976047,
 
-together with a family of neighbours of it. One of them, proposed by Pace, adds a small XX + YY term (hopping phase 1.53).
+together with a family of neighbours of it. One of them, proposed by Pace, adds a small XX + YY term (hopping phase 1.53). Off the symmetric line a momentum mismatch protects the liquid against charge locking (open item 5), which makes the phase-1.53 bond the stronger candidate for a c = 2 infrared theory.
 
 The strong ZZ term, with the field near its blockade value, leaves a dilute gas of blockaded particles. Their direct hop (the XY − YX term) is tuned down to the size of the next-nearest hop that the pairing term XX − YY generates at second order. The particles then move on a zigzag ladder whose band has two valleys, and the proposed infrared theory is a two-component Luttinger liquid with c = 2.
 
@@ -118,6 +118,7 @@ Open, before this is called established:
 2. Entanglement scaling on the infinite qubit chain. Two attempts did not converge at the candidate, because the finite-χ state breaks particle number (REPORT §9.183, §9.187).
 3. The pseudospin gap. In the effective model the pair gap is seen directly at low density, on finite and converged infinite chains, and closes near n ≈ 0.07, against the candidate's 0.19. The registered test puts the candidate on the gapless side in substance, and falls short of the letter only because no single density shows the gap above three errors on both chains at once (REPORT §9.188, §9.204).
 4. One unexplained reading. An older-solver run at V/Δ = 8 reads about 1.4 on the infinite chain. (The c = 1 control of the infinite-chain calculation, the other loose end, now reads 0.99, REPORT §9.201.)
+5. Charge locking. The qubit chain conserves only parity, so particle number is emergent. A number-changing term O₄ (two inter-valley pairs, scaling dimension about 1.25) is relevant when its momentum matches, and on the symmetric line it does. Its coupling is fourth order in the pairing, about (16/9) C₄ ε² with C₄ not computed and not forbidden by any known symmetry. For C₄ of order one this gives a locking length of several thousand sites, beyond which the charge mode on the symmetric line would gap and leave c ≤ 1. At the phase-1.53 bond the coupling oscillates with a period of about 420 sites, more than ten times shorter, and the liquid survives in this estimate. This is an order-of-magnitude estimate, not a calculation, and chains of L ≤ 512 cannot test it (REPORT §9.161, §9.162; [collaborator note](contrib/collaborator_notes/qubit_c2/notes_qubit_c2.pdf), Sec. 6).
 
 Pace's earlier runs of the phase-1.53 bond read a downturn from L = 64 to 128 on states that were not fully optimized ([record](contrib/d2_tenpy_20261109/RESULT.md), [rational bond](contrib/d2_dmrg_priority_20261109/SIMPLE_PARITY_CANDIDATE.md)). The converged rerun lies lower in energy and reads 2.2, so the downturn does not reproduce (REPORT §9.167). Their [transverse-DM deformation](contrib/counterexample_push_20261109/FACILITATED_ROUTE.md) reads c ≈ 1, and their [symmetry audit](contrib/d2_priority_audit_20261109/UNIFORM_Y_SOURCE.md) allows a small uniform Y source.
 
