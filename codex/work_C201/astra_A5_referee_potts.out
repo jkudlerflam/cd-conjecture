@@ -1,0 +1,268 @@
+Verdict: correct as stated. Claim 1 is [rigorous given cited theorem M], the link-to-spin theorem of Morin-Duchesne and Saint-Aubin stated below. Claim 2 also has a [rigorous] proof independent of both the star-graph construction and theorem M. The exponent in (1), the sign of \(\Delta\), and the seam phase in (6) all check out.
+
+The sector list can be shortened. In particular, the entire \(r=2\) layer has zero image in the filtration quotient, for every \(Q\) and \(L\) in the question. The point that matters most for Claim 2 is different. An intertwiner into the Potts space establishes the required equality of extremal eigenvalues because every column survives projection to the physical parity. A merely nonzero intertwiner would leave a gap here.
+
+## 1. The annular state sum
+
+[rigorous] Fix the boundary markings, their cyclic order, and the distinguished starting gap on each marked boundary. Take isotopies relative to the boundary data. Cut the compact annulus along the strings and take the resulting compact surfaces with corners as the regions \(R\). In particular, the two sides of a string and the two copies of a marked endpoint produced by cutting are distinguished. A gap is counted once for each incidence with a region. An unmarked circle has one vertex label and contributes zero gaps.
+
+For fixed boundary walks, a coloring assigns one vertex of the star to each region. The two colors across a string must be adjacent. Since the star is a simple graph, the two vertex labels determine the edge uniquely. There is no omitted edge multiplicity. The sum is finite, and all half-integral powers of \(\mu\) are unambiguous since \(\mu>0\). An isotopy transports the cut surfaces, colors and gap incidences bijectively. This proves well-definedness and isotopy invariance.
+
+[rigorous] For composition, consider one region \(S\) of the glued diagram. Suppose it is assembled from regions \(R_1,\ldots,R_h\) across \(g\) marked seam gaps. In the cut surfaces the gluing loci are closed intervals. Consecutive gaps have separate endpoint copies at the cut string. Euler characteristic therefore gives
+\[
+\chi(S)=\sum_{\nu=1}^h\chi(R_\nu)-g,
+\qquad
+b(S)=\sum_{\nu=1}^h b(R_\nu)-2g.
+\]
+These equations also hold when a later gluing interval joins two pieces already connected by earlier intervals. Consequently
+\[
+\chi(S)-\tfrac12 b(S)
+=\sum_{\nu=1}^h\bigl(\chi(R_\nu)-\tfrac12 b(R_\nu)\bigr).
+\]
+For an unmarked seam the gluing locus is \(S^1\), with \(\chi(S^1)=0\), and there are no gap incidences to remove. The same exponent identity follows. In particular, an annular region has exponent \(-b(R)/2\), which can be nonzero.
+
+A coloring of the composite restricts to colorings of the factors with one common boundary walk. Conversely, agreement gap by gap, or agreement on the single label of an unmarked circle, extends uniquely to a coloring of the composite. All pieces of \(S\) then have the same color, so the exponent identity proves multiplicativity of its weight. Summing over the common label gives ordinary matrix multiplication, with no measure factor.
+
+For the identity with marked points, each intervening strip has \((\chi,b)=(1,2)\). There is one coloring of weight one when the two walks agree. For the identity on \(V_0\), the sole region is an annulus with \((\chi,b)=(0,0)\), and its two boundary labels must agree. This checks both identity normalizations.
+
+[rigorous] The three local evaluations follow.
+
+1. Inserting an empty contractible circle lowers the Euler characteristic of its host region of color \(a\) by one and creates a disk of color \(b\sim a\) with no boundary gaps. The multiplier after summing is
+   \[
+   \frac{1}{\mu_a}\sum_{b\sim a}\mu_b=\delta.
+   \]
+   Removing innermost circles first handles nesting.
+2. One essential circle in a \(0\to0\) annulus leaves two annuli, each with exponent zero. For prescribed labels \(a,b\), the matrix entry is \(\mathbf1_{a\sim b}=A_{ba}\). Thus \(k\) concentric essential circles give \(A^k\).
+3. For a cup, the new disk of color \(b\) has one gap and exponent \(1/2\). The surrounding region of color \(a\) gains one boundary incidence relative to the straight diagram, so its exponent decreases by \(1/2\). The coefficient is \(\sqrt{\mu_b/\mu_a}\). This also checks the potentially delicate cup \(0\to2\) directly. Its two regions are a disk with one gap and an annulus with one gap, with exponents \(1/2\) and \(-1/2\). Reflection interchanges input and output and preserves the exponents, so the cap is the transpose.
+
+The cap can erase the middle vertex of \(a,b,c\) only when \(a=c\). Composing with the cup gives
+\[
+e_i|\ldots,a,b,c,\ldots\rangle
+=\mathbf1_{a=c}\sum_{b'\sim a}
+\frac{\sqrt{\mu_b\mu_{b'}}}{\mu_a}
+|\ldots,a,b',a,\ldots\rangle .
+\]
+At an odd gap of the physical parity, \(a=c=o\), and \(b,b'\) are arbitrary leaves. Every matrix entry is \(1/\delta\). At an even gap, \(a,c\) are leaves. When they agree, \(b=b'=o\) is forced and the coefficient is \(\delta\). These are \(E_j\) and \(F_{j,j+1}\), including the repeated bond at \(L=2\). Each generator preserves parity. One-step rotation acts on the enlarged space of both parities.
+
+For source attribution, Jones's Theorem 3.1 constructs the graph planar algebra on based loops and gives modulus \(\delta\) when the square of the spin function is a \(\delta\)-eigenvector of adjacency. His spin function corresponds to \(\sqrt{\mu}\) here. Kodiyalam, Saini, Sruthymurali and Sunder, Proposition 13, identify the star-graph example with the spin planar algebra. The gluing calculation above verifies the particular orthonormal-basis normalization in (1) directly. [Jones, Theorem 3.1](https://math.berkeley.edu/~vfr/delphi.ps) · [Kodiyalam et al., Proposition 13](https://arxiv.org/pdf/1901.11191#page=10)
+
+## 2. The filtration and the twists that can occur
+
+[rigorous] Postcomposition by \(e_i\) preserves each \(\mathcal F_r\), and the identity diagram gives \(\mathcal F_N=V_N\). In \(\mathcal F_r/\mathcal F_{r-2}\), it suffices to consider diagrams with input size \(r\).
+
+An inner-to-inner arc separates off a disk on the side away from the outer boundary. This follows by viewing the annulus as a disk with a hole and using the arc together with the appropriate segment of the inner circle. The disk can contain further inner arcs and contractible circles. Remove the circles and choose an innermost arc. Its disk contains no endpoints in the open boundary segment between its endpoints, since any such endpoint would have to be paired inside the disk. The arc is therefore a cap between consecutive inner endpoints. Moving that cap into a collar factors the diagram as
+\[
+r\longrightarrow r-2\longrightarrow N.
+\]
+For \(r=2\), the intermediate boundary is an unmarked circle, already covered by the gluing proof. Thus a surviving diagram has \(r\) through lines. An essential circle separates the two boundaries and cannot coexist with any through line.
+
+[rigorous] Fix the outer arcs of such a diagram, including their isotopy classes, and lift the ordered through endpoints to the universal covering strip. A disjoint matching induces a strictly increasing bijection \(\mathbb Z\to\mathbb Z\). Surjectivity forces successive values to differ by one, so the bijection is \(k\mapsto k+t\). Once \(t\) is fixed, cutting along one through arc reduces the remaining isotopy question to noncrossing arcs in a disk with fixed endpoints. Those are unique for the specified pairing, by removing outermost arcs successively. Thus one elementary shift generates all winding, and its \(r\)-th power accounts for a full turn.
+
+Let \(\rho\) denote the elementary shift with positive leftward passage. Quotient the span of the through diagrams by \(D\rho=zD\), by contractible-loop removal, and by setting a join of two through lines to zero. This gives the module denoted \(W_{r/2,z}\) in the question. It is finite-dimensional since forgetting the inner attachments leaves just the finite set of outer link states.
+
+Every region of \(\rho\) is a strip with two gaps. Thus \(T_\rho=R_r\) is a walk-label permutation with unit coefficients, and \(R_r^r=1\), although \(\rho^r\) can still be a nontrivial diagram. If \(R_r\eta=z\eta\), then
+\[
+T_{D\rho}\eta=T_D R_r\eta=zT_D\eta.
+\]
+The cap factorization proves the join-to-zero relation in the target quotient. This proves that (3) is well defined. Composition proves that it intertwines. Decomposing every input vector in an eigenbasis of \(R_r\) proves surjectivity from the direct sum of these modules. In particular \(z^r=1\) for every source used at positive \(r\).
+
+[rigorous] At \(r=0\), every outer arc cuts off a disk away from the hole. After contractible circles are removed, the essential circles are nested around the hole and can be put in its collar. Consequently the action on the input is \(A^k\) for \(k\) such circles. An \(A\)-eigenvector of eigenvalue \(\alpha\) yields the link module with essential weight \(\alpha\). The loopless basis here remembers which complementary region contains the hole. Forgetting that information at this stage would change the module.
+
+The star's leaf-difference subspace has eigenvalue zero and dimension \(Q-1\). On center and common-leaf values the matrix is
+\[
+\begin{pmatrix}0&Q\\1&0\end{pmatrix}.
+\]
+The remaining eigenvalues are \(\pm\delta\). Since \(\delta\le2\), every root of \(z^2-\alpha z+1=0\) has modulus one, including the double roots for \(Q=4\). Thus no non-unimodular \(z\) is needed or produced in any layer. This statement concerns the source parameters of the filtration. Accidental coincidences with eigenvalues of other spin matrices are immaterial.
+
+[rigorous] The list is sufficient and redundant. For an explicit redundancy, consider the two cups \(0\to2\), distinguished by which outer gap is on the disk side. Give the input a single leaf label \(a\). The annular region then has color \(a\), and the disk is forced to have color \(o\). The two cup choices produce nonzero multiples of the individual basis walks \((a,o)\) and \((o,a)\). Varying \(a\) spans \(V_2\). Postcomposition now shows
+\[
+\mathcal F_2=\mathcal F_0
+\]
+at every output size. Hence the \(j=1\) sector can be dropped from Claim 1. There is also spectral redundancy between \(\phi\) and \(-\phi\) by complex conjugation.
+
+Finally, in a filtration-adapted basis the characteristic polynomial on \(V_N\) is the product of the quotient polynomials. For each quotient, a basis adapted to the kernel of the intertwining surjection shows that its polynomial divides the source polynomial. The physical parity is invariant, so its eigenvalues occur on \(V_N\). These three facts prove the link-spectrum inclusion, with no semisimplicity hypothesis.
+
+## 3. The link-to-spin theorem, signs, and a hand check
+
+[rigorous given cited theorem M] The needed statement of M is the following. Use the distinct periodic link states \(\widetilde B_N^d\) of Morin-Duchesne and Saint-Aubin, with \(d=r\). Their Definition 2.6 assigns \(v^\ell\) for total lifted leftward defect displacement \(\ell\). Set
+\[
+\beta=u^2+u^{-2},\qquad \alpha=v^N+v^{-N}.
+\]
+Their Definition 3.1 gives a square map into \(S^z=d/2\). Proposition 3.2 gives the intertwining identities. Theorem 4.5 gives its determinant and Theorem 4.6 the noncritical module isomorphism. For even \(N,d\), the map is invertible when
+\[
+(-u^2)^{k+d/2}v^N-(-u^2)^{-(k+d/2)}v^{-N}\ne0,
+\qquad 1\le k\le (N-d)/2.
+\]
+The spin generator vanishes on parallel spins and has block
+\[
+\begin{pmatrix}u^2&v^2\\v^{-2}&u^{-2}\end{pmatrix}
+\]
+on \((\uparrow\downarrow,\downarrow\uparrow)\) in cyclic bond order. This is their equations (8) and (9). [Morin-Duchesne and Saint-Aubin, Definitions 2.6 and 3.1, Proposition 3.2, Theorems 4.5 and 4.6](https://arxiv.org/pdf/1203.4996)
+
+[rigorous] To compare twist conventions, choose the representative of each outer state with through attachments in order from the seam. Let \(p(w)\) be the sum of its defect positions in \(1,\ldots,N\). A defect going left from \(1\) to \(N\) has displacement \(+1=1-N+N\). Summing the lifted displacements gives
+\[
+\ell=p(w)-p(w')+Nt,
+\]
+where \(t\) is the signed number of leftward seam passages. In the ordered lift each passage changes the inner attachment index by one. Changing basis to \(w_{\rm new}=v^{-p(w)}w_{\rm old}\) therefore leaves transition weight \(v^{Nt}\). This fixes \(z=v^N\) in the positive-left convention. At \(r=0\) the same choice gives \(\alpha=z+z^{-1}\).
+
+[rigorous given cited theorem M] Fix \(u^2=e^{i\gamma}\). For each \(k\) the critical equation fixes \(v^{2N}\) to one nonzero constant. Thus only finitely many \(v\)'s are excluded, also at \(\gamma=0\). The two characteristic polynomials of \(B\) have Laurent-polynomial coefficients in \(v\) and agree off this finite set. Multiplying each coefficient difference by a sufficiently large power of \(v\) gives a polynomial with infinitely many zeros. Hence the characteristic polynomials agree for every \(v\ne0\). This extends the spectral identity to critical twists. It gives no conclusion about the Jordan form there.
+
+[rigorous] In \(O=v^{\sum_\ell\ell\sigma_\ell^z}\), conjugation multiplies \(\sigma_i^+\sigma_{i+1}^-\) by \(v^{-2}\) on an interior bond. On \(\sigma_N^+\sigma_1^-\) the factor is \(v^{2N-2}\). Including its original coefficient \(v^2\) gives
+\[
+e^{i\phi}=v^{2N}=z^2.
+\]
+The bond diagonal is
+\[
+\frac a2(1-\sigma_i^z\sigma_{i+1}^z)
++\frac{u^2-u^{-2}}4(\sigma_i^z-\sigma_{i+1}^z).
+\]
+The second sum telescopes around the ring. The first is the diagonal of \(H_X(N;-a,\phi)\), including the constant in the question. Thus \(B_{\rm spin}\) is conjugate to \(H_X(N;-a,\phi)\). Every bond has one odd endpoint, so \(U=\prod_{i\ {\rm odd}}\sigma_i^z\) reverses every hopping, seam included. Consequently
+\[
+U[-H_X(N;-a,\phi)]U^{-1}=H_X(N;a,\phi).
+\]
+Both transformations preserve \(S^z\).
+
+For \(r=2j>0\), \(z^{2j}=1\) implies \(\phi=2\pi k/j\) modulo \(2\pi\). For \(r=0\), the roots for \(\alpha=\delta\) are \(e^{\pm i\gamma}\), those for \(-\delta\) are \(-e^{\pm i\gamma}\), and those for zero are \(\pm i\). Squaring gives the stated twists. This proves Claim 1 for both signs.
+
+[rigorous] The smallest physical check is \(N=4,L=2,Q=2\). In Pauli notation on the two Potts sites,
+\[
+B_P=\frac{4I+X_1+X_2+2Z_1Z_2}{\sqrt2}.
+\]
+The factor two counts the repeated bond. On the normalized equal-color and unequal-color sums its matrix is
+\[
+\frac1{\sqrt2}\begin{pmatrix}6&2\\2&2\end{pmatrix}.
+\]
+Its larger eigenvalue is \(2\sqrt2+2\) and has a strictly positive eigenvector in the full color basis. Thus \(E_P^{(+)}=-2\sqrt2-2\).
+
+For a separate spin calculation, order the two alternating up-spin sets \(13,24\) before the four adjacent sets \(12,23,34,41\). Write \(\xi=e^{i\phi}\). The two diagonal blocks of \(H_X\) are \(-4\Delta I_2\) and \(-2\Delta I_4\), and the hopping block from alternating to adjacent is
+\[
+K=\begin{pmatrix}
+1&\xi^{-1}\\
+1&1\\
+\xi&1\\
+1&1
+\end{pmatrix}.
+\]
+The larger eigenvalue of \(K^\dagger K\) is \(4+2|1+\xi|\). The smallest eigenvalue of the full matrix is therefore
+\[
+-3\Delta-\sqrt{\Delta^2+4+2|1+\xi|}.
+\]
+At \(\Delta=1/\sqrt2,\ \xi=i\), the square root is \(2+1/\sqrt2\), giving \(-2\sqrt2-2\). At \(\Delta=-1/\sqrt2\), the top spin eigenvalue is \(2\sqrt2+2\). This checks the sign on both sides of the odd-site rotation.
+
+## 4. The Perron argument
+
+[rigorous] Take the zero-through module with both loop weights \(\delta\), and use the input \(\eta=\mu\). Since \(A\mu=\delta\mu\), the diagram map descends to this module. Projection to the physical parity commutes with every \(e_i\). Denote the resulting intertwiner by \(C\).
+
+Every column is entrywise nonnegative. To see that each column survives projection, fill the hole temporarily in a loopless pairing. The disjoint arcs divide the disk into regions whose adjacency graph is a tree. Indeed, inserting an arc splits one region into two. Color the tree alternately by \(o\) and one fixed leaf. The outer gap colors alternate, so one of the two assignments realizes the physical parity. Reopen the hole in its prescribed region. Its input label has positive coefficient in \(\mu\), and every region factor is positive. This supplies a strictly positive entry in the required column.
+
+The Potts matrix \(B_P\) is symmetric, nonnegative and irreducible, since every single-site recoloring has a positive matrix element. Let \(x>0\) be its top eigenvector, with eigenvalue \(\lambda\). From \(B_PC=CB_W\) one gets
+\[
+y=C^{\mathsf T}x>0,\qquad y^{\mathsf T}B_W=\lambda y^{\mathsf T}.
+\]
+Both loop weights are positive, so \(B_W\) is nonnegative. In the norm \(\|f\|_y=\sum_i y_i|f_i|\),
+\[
+\|B_W f\|_y\le y^{\mathsf T}B_W|f|=\lambda\|f\|_y.
+\]
+Thus \(\rho(B_W)\le\lambda\). The left eigenvector equation itself puts \(\lambda\) in the spectrum, giving the reverse inequality. This proves equality even when \(C\) has a kernel and \(B_W\) is reducible.
+
+[rigorous given cited theorem M] The characteristic-polynomial identity transfers this top eigenvalue to \(H_X(N;-a,2\gamma)\) at \(m=0\). The odd-site rotation takes its negative to the bottom eigenvalue at \(\Delta=a\). Complex conjugation reverses the twist within the same magnetization sector. This proves (10).
+
+## 5. Independent proof of Claim 2
+
+The following derivation gives both maps needed for Claim 2 explicitly. On the Potts side it uses ordinary noncrossing color partitions. On the spin side a large-\(v\) limit proves the required characteristic-polynomial identity without the determinant theorem.
+
+### 5.1. The Potts map
+
+[rigorous] Start with the annular zero-through module at equal loop weights \(\delta\). Fill the hole. This intertwines the annular action with the action on disk pairings because either type of erased circle has the same weight.
+
+Color the complementary disk regions black and white so the odd boundary gaps are black. A disk pairing defines a partition \(\pi\) of the \(L\) Potts sites by putting two odd gaps in the same block when they touch the same black region. Write \(b=|\pi|\). Send the pairing to the vector
+\[
+f_\pi(s_1,\ldots,s_L)
+=\delta^{-b}\prod_{A\in\pi}
+\mathbf1\{s_i=s_j\text{ for all }i,j\in A\}.
+\]
+Colors on distinct blocks are summed independently and may coincide.
+
+Here are the disk reconnection rules. At an even gap, \(e_{2j}\) joins the black regions at \(j,j+1\). If they already coincide, the two endpoints around the intervening white gap are paired and the move erases a loop. To see this, distinct arcs incident at that gap would separate the black regions on their far sides in the dual tree. At an odd gap, \(e_{2j-1}\) cuts the site \(j\) off its black region as a singleton. If it was already a singleton, its bounding arc closes a loop. The same tree argument applies with black and white exchanged. These rules are cyclic, including \(j=L\).
+
+The normalization \(\delta^{-b}\) checks all four coefficients:
+\[
+\begin{array}{c|c|c}
+\text{operator}&\text{initial blocks}&\text{result}\\ \hline
+F_{j,j+1}&j,j+1\text{ distinct}&f_{\pi\text{ with the blocks joined}}\\
+F_{j,j+1}&j,j+1\text{ together}&\delta f_\pi\\
+E_j&j\text{ in a nonsingleton}&f_{\pi\text{ with }j\text{ detached}}\\
+E_j&j\text{ a singleton}&\delta f_\pi
+\end{array}
+\]
+For a join, \(F\) imposes one equality and multiplies by \(\delta\), changing \(\delta^{-b}\) to \(\delta^{-(b-1)}\). For a detachment, exactly one old value of \(s_j\) satisfies the other constraints on its block. The factor \(1/\delta\) from \(E\) changes the coefficient to \(\delta^{-(b+1)}\). For a singleton there are \(Q\) old values, giving \(Q/\delta=\delta\).
+
+This proves the intertwining directly. Every column is nonnegative and is positive on the all-equal configuration. Applying the weighted-norm argument of Section 4 to this explicit map gives
+\[
+\rho(B_{W,\alpha=\delta})=\lambda_{\max}(B_P).
+\tag{A}
+\]
+
+### 5.2. The spin map and its generic inverse
+
+[rigorous] Keep \(u^2=e^{i\gamma}\) fixed and let \(v\ne0\) vary. In the covering strip orient each arc from \(p\) to \(q\) so that its disk-side boundary interval runs in increasing order, with \(1\le q-p<N\). To an arc of length \(d=q-p\) assign the two-spin vector
+\[
+A_d|\uparrow_p\downarrow_q\rangle+
+A_d^{-1}|\downarrow_p\uparrow_q\rangle,\qquad A_d=u v^d .
+\]
+Take the product over the disjoint arcs and reduce endpoint labels modulo \(N\). This defines a column \(J(v)w\) in \(S^z=0\). It is the zero-defect specialization of the explicit spin map in Definition 3.1, equation (12), of Morin-Duchesne and Saint-Aubin. Its verification here uses only two-spin contractions. [Morin-Duchesne and Saint-Aubin, equation (12)](https://arxiv.org/pdf/1203.4996#page=9)
+
+The antiparallel block factors as a cup column times a cap row,
+\[
+\bar e_i=
+\begin{pmatrix}uv\\(uv)^{-1}\end{pmatrix}
+\begin{pmatrix}u/v&v/u\end{pmatrix}.
+\]
+Put \(x=i,\ y=i+1\) in the lift and \(c=u/v\). Contracting a short arc \(x\to y\) gives
+\[
+cA_1+c^{-1}A_1^{-1}=u^2+u^{-2}=\delta.
+\]
+For the long arc \(y\to x+N\), the two spins are in reverse order relative to the cap. Its contraction gives
+\[
+cA_{N-1}^{-1}+c^{-1}A_{N-1}=v^{-N}+v^N.
+\]
+This is the essential-loop weight, including its sign.
+
+For completeness, when \(x,y\) lie on distinct arcs there are three cases. The table gives the coefficient with the first remaining endpoint up and the second down. The opposite spin assignment gives its reciprocal. The new short cup at \(x,y\) is common to every row.
+\[
+\begin{array}{c|c|c}
+\text{old arcs in the lift}&\text{new remaining arc}&
+\text{coefficient after cap contraction}\\ \hline
+x\to k,\ y\to j,\quad x<y<j<k
+&j\to k&c A_{k-x}/A_{j-y}=A_{k-j}\\
+j\to x,\ y\to k,\quad j<x<y<k
+&j\to k&c^{-1} A_{x-j} A_{k-y}=A_{k-j}\\
+j\to y,\ k\to x,\quad j<k<x<y
+&j\to k&c A_{y-j}/A_{x-k}=A_{k-j}
+\end{array}
+\]
+Two openings or two closings must nest. A closing followed by an opening gives the middle row. An opening immediately followed by a closing is a paired arc. These cases exhaust the possibilities in the periodic lift. Thus, with \(\alpha(v)=v^N+v^{-N}\),
+\[
+J(v)e_i^{W,\alpha(v)}=\bar e_i J(v)
+\]
+on every basis state, including at the seam.
+
+To prove generic invertibility, encode arc starts as opening parentheses and arc ends as closing parentheses. The set of closing positions determines the annular pairing uniquely. Indeed, cut the balanced cyclic word at a minimum of its partial sums and perform ordinary parenthesis matching. Equivalently, in the periodic lift each opening matches its first return to the preceding height, which makes the answer independent of the chosen minimum. The resulting disk-side intervals reconstruct the arcs and retain the position of the hole. Conversely, the intervals of any annular pairing give this matching by noncrossing. Hence the columns are indexed bijectively by the \(L\)-element subsets of the \(N\) positions, just like the spin basis in \(S^z=0\).
+
+Divide each column by \(\prod_{\rm arcs} A_d\) and send \(v\to+\infty\). Every reversed arc contributes a relative factor \(A_d^{-2}\to0\), since \(d\ge1\). The column tends to the single spin configuration with down spins at its closing positions. The rescaled matrix thus tends to a permutation matrix. In particular \(J(v)\) is invertible for all sufficiently large positive \(v\).
+
+The characteristic polynomials of the two sums consequently agree there. Their coefficients are Laurent polynomials, so they agree at every \(v\ne0\). Choose a unit root satisfying \(v^N=e^{i\gamma}\). Then
+\[
+\alpha(v)=2\cos\gamma=\delta,\qquad e^{i\phi}=v^{2N}=e^{2i\gamma}.
+\]
+Equation (A), the explicitly verified spin map, and the two unitary transformations of Section 3 give
+\[
+\boxed{\displaystyle
+E_P^{(+)}(L)=\min\operatorname{Spec}(2L;a,2\gamma,0)
+            =\min\operatorname{Spec}(2L;a,-2\gamma,0).}
+\]
+This derivation includes \(Q=4,\gamma=0\). Generic invertibility was needed only to establish a polynomial identity before specializing to the physical twist.
+
+The referee conclusion is that Sections 2 and 4 are rigorous, and Section 3 uses theorem M with the correct conventions. Claim 1 is a spectral inclusion. Claim 2 is an equality of finite-volume ground energies and has the independent proof above. The workspace was read-only, so the report is delivered here and the project state and Git remote were not updated.
+
+[gpt_solve: backend=codex model=gpt-6.2-astra effort=high transcript=20261118T114128-72456]

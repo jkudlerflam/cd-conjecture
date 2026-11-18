@@ -1,0 +1,174 @@
+The counting bound survives the audit. Lemma 4.10, (4.3), Theorem 4.11, and Corollary 4.12 are correct as stated, with the cited Theorem H supplying half filling. In particular, the highest finite exterior node satisfies its own inequality even when there are no nodes to its right. The two terms that matter there are the error of one right-endpoint quadrature and the interactions with the preceding exterior nodes. Together they cost at most \(\eta(1+\log i)/(\pi A d)\).
+
+One sentence in the introduction needs qualification. The proof gives a logarithmic lower bound for \(t(Q+x)-n\) on \(d\le x\le R/4\). At fixed \(L,n,\eta\), the counting function saturates as \(x\to\infty\). The finite range is sufficient for every node used in the proof.
+
+### Lemma 4.10 and the sign at infinity
+
+Write \(d\mu(v)=Lr(v)\mathbf 1_{[-Q,Q]}(v)\,dv\), so \(\mu(\mathbb R)=n\). For every real \(u\),
+\[
+\frac{Lp(u)}{2\pi}+\int\Theta(u-v)\,d\mu(v)=t(u)-\frac n2.
+\tag{1}
+\]
+Both sides have derivative \(Ls(u)\), including outside the sea. Both vanish at zero by evenness of \(r\), oddness of \(\Theta\), and \(t(0)=n/2\).
+
+Let \(\mu_f\) count the finite trial nodes, let \(h\) be the number at infinity, and let \(D\) be the cumulative function of \(\mu-\mu_f\). Then \(D(-\infty)=0\) and \(D(+\infty)=h\). At a finite node \(u=y_j\), using \(\theta=-2\pi\Theta\), (1) gives
+\[
+\frac{\widetilde F_j}{2\pi}
+=t(u)-\frac n2-I_j-\int\Theta(u-v)\,dD(v)-\frac{hq}{2}.
+\]
+The boundary term in the Stieltjes integration by parts matters:
+\[
+\int\Theta(u-v)\,dD(v)
+=-\frac{hq}{2}+\int_{\mathbb R}T(u-v)D(v)\,dv.
+\]
+Here \(\Theta(u-v)\to-q/2\) as \(v\to+\infty\), and its \(v\)-derivative is \(-T(u-v)\). The two contributions proportional to \(h\) cancel. This proves the stated residual identity.
+
+At an interior node \(t(y_j)=j+k\), hence \(t(y_j)-n/2-I_j=k+1/2=\kappa\). Below \(-Q\), \(D=0\). On the closed interval \([-Q,Q]\) the finite trial count is \(\max(0,\lfloor t(v)\rfloor-k)\), which gives
+\[
+D(v)\le k+\{t(v)\}=\kappa+s^\#(t(v)).
+\]
+This also holds at \(Q\), where the count includes \(y_{n-k}=Q\) and \(D(Q)=k\). Above \(Q\),
+\[
+D(v)=k-\sum_{i=1}^m\mathbf 1_{\{v\ge z_i\}}.
+\]
+Now \(s^\#(t(v))=s^\#(t(v)-t(y_j))\), and the kernel mass on \([-Q,Q]\) is \(q-B(Q+y)-B(Q-y)\). Substitution gives
+\[
+\begin{aligned}
+\frac{\widetilde F_j}{2\pi}
+&\ge \kappa-\kappa[q-B(Q+y)-B(Q-y)]-S(y)
+       -kB(Q-y)+\sum_i B(z_i-y)\\
+&=(1-q)\kappa+\kappa B(Q+y)+\tfrac12 B(Q-y)
+       +\sum_i B(z_i-y)-S(y).
+\end{aligned}
+\]
+Thus (4.2) has the correct signs and coefficients. Each finite exterior node contributes its full tail.
+
+### Kernel bounds (4.3)
+
+Correct. The inequalities \(\sinh w\ge w\) and \(\sin(2\eta)\le2\eta\) give \(T(w)\le\eta/(\pi w^2)\) for \(w>0\). On \(\eta\le w\le4\), one has \(\sinh w\le(\sinh 4/4)w\), \(\sin\eta\le w\), and \(\sin(2\eta)\ge c_0\eta\) with absolute \(c_0>0\). Thus \(T(w)\ge c_1\eta/w^2\) with absolute \(c_1>0\). Integrating the upper bound to infinity and the lower bound over \([x,2x]\) proves the tail estimates, with \(b=c_1/2\).
+
+For \(0\le x<\eta\), \(B(x)\ge B(\eta)\ge b\). For \(\eta\le x\le1\), the lower tail bound gives \(B(x)\ge b\eta/x\). For \(x\ge1\), \(1-q=2\eta/\pi\) suffices. These three ranges give the second inequality in (4.3) with a universal \(c\).
+
+### Theorem 4.11
+
+If \(n\le k\), both cumulative functions take values in \([0,n/L]\), proving the bound immediately. For \(n>k\ge2\), the mass in the right half, in units of \(\mu\), is \(n/2>1\). Thus \(0<\ell<Q\), even if \(\ell>Q/2\).
+
+(a) Correct. Monotonicity on \([Q-\ell,Q]\subset[0,Q]\) gives
+\[
+1=L\int_{Q-\ell}^Q r(v)\,dv\le L\ell\,r(Q-\ell).
+\]
+For \(\ell\le u\le Q\), \(0\le Q-u\le Q-\ell\), so \(Lr(Q-u)\ge1/\ell\ge1/d\). This is the only density monotonicity needed for the exterior construction. Its argument stays in the right half of the sea.
+
+(b) Correct. In Case 1, \(x=iAd\) obeys \(d\le x\le R/4\le\min(Q/4,1/4)\). In the expression for \(E_i\), restrict the convolution to depths \(d\le u\le x\), and the exterior integration to \(0\le w\le u\). Positivity justifies both restrictions. On this triangle, \(\eta\le u+w\le2u\le1/2\), so
+\[
+E_i\ge\int_d^x Lr(Q-u)\int_0^u T(u+w)\,dw\,du
+\ge\frac{c_1\eta}{4d}\int_d^x\frac{du}{u}
+=\frac{c_1\eta}{4d}\log(Ai).
+\]
+In particular \(c_2=c_1/4\) is fixed before \(A\). To see why the range qualification matters, taking \(u\to+\infty\) in (1) gives \(t(+\infty)-n=(L-2n)\eta/(2\pi)\).
+
+(c) Correct, including the top node. At \(z=z_i\), the index is \(j=n-k+i\). There are \(n-k\) interior nodes and \(i-1\) earlier exterior nodes to its left. To its right there are \(M-i\) finite nodes and \(k-M\) nodes at infinity. The self-interaction vanishes. The constant parts of the interactions therefore sum to
+\[
+\frac q2[(j-1)-(n-j)]=qI_j.
+\]
+The left tails have minus signs and the finite right tails have plus signs. Equation (1), evaluated at \(z>Q\), gives the other identity in question:
+\[
+\frac{Lp(z)}{2\pi}
+=n+E_i-\frac n2-\int [q/2-B(z-v)]\,d\mu(v)
+=E_i+(1-q)\frac n2+\int B(z-v)\,d\mu(v).
+\]
+Consequently the remaining constant is \((1-q)(n/2-I_j)=(1-q)(k-i+1/2)>0\), including when \(i=M=k\).
+
+For the quadrature, put \(v_a=t^{-1}(a)\) on the sea for \(a=0,\ldots,n\), and \(f(v)=B(z-v)\). Since \(f'(v)=T(z-v)>0\) and every cell has unit \(\mu\)-mass,
+\[
+0\le f(v_a)-\int_{v_{a-1}}^{v_a}f\,d\mu
+\le f(v_a)-f(v_{a-1}).
+\]
+The total excess is at most \(f(Q)-f(-Q)\le B(iH)\). The actual interior sum uses \(v_{k+1},\ldots,v_n\), including \(Q=v_n\). Omitting the first \(k\) endpoints can only decrease the sum since \(f\ge0\). The remaining left neighbors are \(z_1,\ldots,z_{i-1}\). Dropping the positive constant and the finite right tails yields
+\[
+\frac{\widetilde F_j}{2\pi}
+\ge E_i-B(iH)-\sum_{l=1}^{i-1}B(lH)
+\ge\frac{\eta}{d}\left[c_2\log(Ai)-\frac{1+\log i}{\pi A}\right].
+\]
+The error uses \(\sum_{l=1}^i1/l\le1+\log i\). Taking \(A\ge e\) and \(1/(\pi A)\le c_2\) proves positivity in the required weak sense for every \(i\), independently of \(M\). For \(i=1\) the preceding exterior sum is empty. For \(i=M=k\) the finite right sum is empty. The same bound covers both.
+
+(d) Correct. At a positive interior node \(y<Q\), the mass from \(y\) to \(Q\) is a positive integer. The last cell has mass one, hence \(\delta=Q-y\ge\ell\). When \(\delta<1\), Case 1 gives \(d\le1\), so \(\rho=\min(1,\eta+\delta)\ge\max(\delta,d)\). It follows that
+\[
+\eta\le\delta+iAd\le 1+\tfrac14,\qquad
+\delta+iAd\le(1+iA)\rho.
+\]
+The lower bound in (4.3) now gives
+\[
+\sum_{i=1}^M B(z_i-y)\ge
+\frac{b\eta}{\rho}\sum_{i=1}^M\frac1{1+iA}.
+\]
+For the already fixed \(A\), this sum diverges with \(M\), so a finite \(M\) covers \(C_S\).
+
+For positive \(y\) with \(\delta\ge1\), \(\rho=1\) and \((1-q)\kappa=2\eta\kappa/\pi\) suffices. For every \(y\le0\), including \(y=0\) and nodes with \(Q-y<1\), the relevant distance is \(Q+y\). Equation (4.3) directly gives \(\kappa[(1-q)+B(Q+y)]\ge c\kappa\eta/\rho(y)\). Finally \(Q\) itself has zero mass to its right inside the sea, so the positive-integer argument does not apply there. The separate estimate is valid:
+\[
+S(Q)\le\tfrac12\int_0^{2Q}T(w)\,dw\le\tfrac12 B(0).
+\]
+This is covered by the \(\tfrac12 B(Q-y)\) term at \(y=Q\).
+
+Case 2 is correct. For \(0<y<Q\) and \(\delta<1\), one still has \(\rho(y)\ge\min(1,d)\). Also
+\[
+\min(1,\eta+Q+y)\le\min(1,\eta+2R)
+\le(1+8AM)\min(1,d).
+\]
+For the first inequality use \(Q+y\le2Q\) when \(Q\le1\), and the cap at one when \(Q\ge1\). For the second use \(\eta\le d\) and \(R<4AMd\) when \(d<1\), and the cap when \(d\ge1\). Applying (4.3) at \(Q+y\) gives
+\[
+\kappa[(1-q)+B(Q+y)]
+\ge\frac{c\kappa}{1+8AM}\frac{\eta}{\rho(y)}.
+\]
+The arguments for \(y\le0\), \(\delta\ge1\) on the positive side, and \(y=Q\) carry over. Equality \(R=4AMd\) belongs to Case 1, whose estimates permit equality.
+
+The order of choices is valid. After \(A\) and \(M\) have been fixed as above, choose an integer \(k\ge\max(2,M)\) with
+\[
+\kappa\ge\max\left\{\frac{\pi C_S}{2},\,\frac{(1+8AM)C_S}{c}\right\}.
+\]
+This includes the \(C_S/c\) requirement. The resulting \(k\) can be large. It has no dependence on \(\eta,Q,L,n\), and neither the choice of \(A\) nor that of \(M\) uses \(k\).
+
+Two limiting configurations check the bookkeeping. If \(n=k+1\), the sole interior node is \(y_1=Q\) with \(I_1=-k/2\). Its inequality is the endpoint estimate in (d). If Case 1 applies, \(z_i\) has index \(i+1\) and the quadrature argument still holds with only \(v_n\) retained. If the sea is dilute and \(\ell>Q/2\), then \(R\le Q<2d\), putting it in Case 2. More generally, any \(\ell\) comparable to \(Q\) that meets the Case 1 inequality is already covered by (a) and (b). Neither case assumes \(\ell\le Q/2\).
+
+The final counting step is correct. Fact 3 gives \(N_x\ge N_y\) because the finite trial nodes occupy the lowest indices. On the sea \(LN_y=\max(0,\lfloor t\rfloor-k)\ge t-k-1\). Above \(Q\) at least \(n-k\) nodes have been counted, and below \(-Q\) the continuum count vanishes. For the reflected bound the exact identity is \(N_x(v)=\nu-N_x((-v)^-)\). Taking the left limit of the lower bound at \(-v\), and using continuity and symmetry of \(N_0\), gives \(N_x(v)\le N_0(v)+(k+1)/L\), including at a root. At even \(L\) and \(n=L/2\) the cited Theorem H supplies \(K=1\) with \(Q_{1/2}=+\infty\) and the full-line density \(r_0\). [Theorem H](</Users/jkudlerflam/IAS Dropbox/Jonah Kudler-Flam/Claude/Projects/Modular c-Theorem/notes/cd_conjecture/codex/work_C200/spec_C.md:95>)
+
+### Corollary 4.12
+
+Correct, including the sign after integration by parts and the factor \(16/\pi^2\). Write \(G=N_x-N_0\) in the normalized convention, so \(\|G\|_\infty\le K/L\). The bare densities cancel, and integration by parts gives
+\[
+\sigma_L-s=\int T(u-v)\,dG(v)=\int T'(u-v)G(v)\,dv.
+\]
+The boundary term vanishes. Since \(T\) is even and decreasing on the positive axis, \(\|T'\|_1=2T(0)\). Multiplying by \(\eta L\) gives \(2K\eta\cot\eta/\pi\le2K/\pi\).
+
+For the derivative constant, the two factors in the displayed Fourier identity have kernels \(P_{c,\beta}(x)=\sin c/[2\beta(\cosh(\pi x/\beta)-\cos c)]\) with
+\[
+(c_A,\beta_A)=(\pi\eta/\gamma,\gamma/2),\qquad
+(c_B,\beta_B)=(\eta,\pi/2).
+\]
+Indeed the transform of \(P_{c,\beta}\) is \(\sinh((1-c/\pi)\beta w)/\sinh(\beta w)\), so the intermediate \(\sinh(\gamma w/2)\) cancels. Both kernels are positive, even, and decreasing on the positive axis. Their central values obey
+\[
+T_A(0)=\frac1\gamma\cot\frac{\pi\eta}{2\gamma}\le\frac{2}{\pi\eta},
+\qquad
+T_B(0)=\frac1\pi\cot\frac{\eta}{2}\le\frac{2}{\pi\eta}.
+\]
+Now \(\sigma_L'-s'=T_A'*T_B'*G\), by differentiating the first factor and integrating by parts on the second. Taking the two \(L^1\) derivative norms gives
+\[
+\eta^2L\|\sigma_L'-s'\|_\infty
+\le4K\eta^2T_A(0)T_B(0)\le16K/\pi^2.
+\]
+On the sea \(s=r_{Q_\nu}\), so subtracting \(2K/(\pi\eta L)\) from \(r_{Q_\nu}\) gives the claimed relative lower bound. At half filling the same argument uses \(s=r_0\) on the full line.
+
+The audit was analytic. The numerical examples play no role. The workspace was read-only, so the report is delivered here and the project state was not updated or pushed.
+
+### Verdicts
+
+| Item | Verdict |
+|---|---|
+| Lemma 4.10 and (4.2) | Correct as stated |
+| Kernel bounds (4.3) | Correct as stated |
+| Theorem 4.11, steps (a), (b), (c), (d), Case 2, and reflection | Correct as stated |
+| All-fillings extension using Theorem H | Correct as stated |
+| Corollary 4.12, both estimates and the relative lower bound | Correct as stated |
+| Introductory description of logarithmic growth | Correct after specifying the finite range \(d\le x\le R/4\) |
+
+[gpt_solve: backend=codex model=gpt-6.2-astra effort=high transcript=20261118T115237-76639]

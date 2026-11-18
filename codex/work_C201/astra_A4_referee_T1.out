@@ -1,0 +1,213 @@
+[rigorous given the Junge–Renner–Sutter–Wilde–Winter recovery theorem] Verdict. The theorem is correct as stated, including the constants in (1). The two connecting bonds are controlled in the unconditional output state. This is sufficient because the energy is linear and the F1 lower bound is affine in the output length. There is no need for a connecting bond to be close to its target after conditioning on all the join labels.
+
+I obtain a stronger finite-length result. A mutual-information chain rule allows one to select a single gap of deterministic length. Each scale in the length threshold then costs one exponential in the buffer size, in place of two. The same construction proves
+\[
+ \lim_{L\to\infty}\sup_{M(h)>0}
+ \frac{E_{2L}(h)-2E_L(h)}{M(h)}=0.
+\]
+The improved threshold is still a tower. I give a fixed-\(d\), one-site translation-invariant obstruction to reducing the spatial scale to a polynomial in the buffer size while retaining the full-window separability estimate (7). A logarithmic or algebraic rate for the energy defect itself remains open in this report.
+
+## 1. Audit of the submitted proof
+
+[rigorous] Entropies and lengths. Set \(S_0=0\). Strong subadditivity for two translates of a \((j+1)\)-site interval gives
+\[
+ 2S_{j+1}\ge S_j+S_{j+2}.
+\]
+All intervals used in the pigeonhole argument exist on the ring. Subadditivity and Araki–Lieb give \(|u_j|\le S_1\le\ln d\). Thus the \(n\) nonnegative drops telescope to at most \(2\ln d\), which proves (2). No purity or reflection symmetry enters this argument.
+
+[rigorous] Measurement and scale selection. Each \(F_{\alpha,\pm}\) is positive because \(\|G_\alpha\|_\infty\le\|G_\alpha\|_2=1\). Summing first over signs gives \(I/q^2\) for each of the \(q^2\) basis elements. The signed outcome sum for a given \(\alpha\) is \(\operatorname{tr}(\gamma G_\alpha)G_\alpha\), so (3) follows by orthonormal expansion. Also \(\|X_{\alpha,\pm}\|_2^2=q^4\).
+
+For two adjacent groups of size \(R\), their separate empirical means have the same expected squared norm \(a_R\). Their joint mean is the empirical mean of the \(2R\) windows. The parallelogram identity therefore gives (4), including the factor four. Summing the differences at \(R=1,2,4,\ldots,2^{J-1}\) gives \(a_1-a_{2^J}\le q^4\), proving (5). The measurements defining these quantities fit since \(2^Jt=b'/3\). The three groups at the selected scale satisfy \(3Rt\le b'/2\le L/2\).
+
+[rigorous] Conditional covariance. Use one joint experiment, the product POVM on \(U,V,W\). Summing over any unused outcome inserts the identity on that window. Consequently the two-end statistics reconstruct the unmeasured marginal \(\rho_{U_iW_j}\). Conditioning on \(v\) and summing over the other unused outcomes gives the measurement statistics of the conditional end state obtained by measuring \(V\) alone. This proves all three reconstruction identities following (6). The argument uses commutation of operations on disjoint sites and does not interpret a reconstruction matrix as a physical state.
+
+For \(Z_U=\bar X_U-\mathbb E(\bar X_U\mid v)\), and analogously \(Z_W\), the cross terms with a function of \(v\) vanish on averaging. Hence \(\tau_{\rm ends}-\eta_{\rm ends}=\mathbb E(Z_U\otimes Z_W)\). Conditional expectation is orthogonal projection in the real Hilbert space of square-integrable Hermitian-matrix-valued functions. In particular,
+\[
+ \mathbb E\|Z_U\|_2^2
+ \le \mathbb E\|\bar X_U-\bar X_V\|_2^2
+ =4(a_R-a_{2R}).
+\]
+The same bound holds for \(W\). Trace-norm multiplicativity on tensor products, \(\|Z\|_1\le\sqrt q\,\|Z\|_2\), and scalar Cauchy–Schwarz give (7). Neither conditional independence of the measured ends nor accurate tomography in an individual outcome is assumed.
+
+[rigorous] The interval register and (8). Take \(C=\bigoplus_{ij} C_{ij}\), with the classical label identifying the summand, and give \(A,B\) the same ordering in every summand. The state is block diagonal. The marginal on \(AB\) is (6). By the chain rule and strong subadditivity,
+\[
+ S(A_\ell A_r\mid B_\ell B_r)
+ \le S(A_\ell\mid B_\ell)+S(A_r\mid B_r)=2u_b.
+\]
+The two terms are equal because each is the entropy of a \(t\)-site interval minus that of a \(b\)-site interval. When computing \(S(A\mid BC)\), the Shannon entropy of the labels cancels, leaving the average of \(S_m-S_{m-2}\). The two removed sites are the exterior sites, so the remaining interval is contiguous. Since \(m\le b'\), both increments in \(S_m-S_{m-2}\) are at least \(u_{b'}\). This proves (8).
+
+[rigorous given the Junge–Renner–Sutter–Wilde–Winter recovery theorem] The precise input is their Corollary 4.1. For every finite-dimensional density matrix \(\omega_{ABC}\), the averaged rotated Petz map for \((\omega_{BC},\operatorname{tr}_C)\) acts on \(B\) and satisfies
+\[
+ \mathcal R(\omega_B)=\omega_{BC},\qquad
+ I(A:C\mid B)_\omega\ge
+ -2\ln\left\|\sqrt{\omega_{ABC}}\,
+ \sqrt{(\operatorname{id}_A\otimes\mathcal R)(\omega_{AB})}\right\|_1.
+\]
+The fidelity is unsquared. Each rotated map recovers the reference marginal exactly, hence so does the average. Inverses are taken on the support of \(\omega_B\). The map can be completed to a channel by measuring the orthogonal complement of this support and preparing a fixed output there. This completion has no effect on \(\omega_{AB}\). The map depends only on \(\omega_{BC}\), with the partial trace prescribed. The direct sum above is a finite-dimensional Hilbert space, and output dephasing in its summands preserves the target. Finally, \(2\sqrt{1-F^2}\le 2\sqrt{1-e^{-I}}\le2\sqrt I\) gives (9). [Junge, Renner, Sutter, Wilde and Winter, Corollary 4.1](https://arxiv.org/pdf/1509.07127)
+
+[rigorous] Marginal correction and composition. Writing \(r-s=(r-s)_+-(r-s)_-\) gives \(T-r=(r-s)_-\ge0\) and \(T-s=(r-s)_+\ge0\). Thus \(K^\dagger K\le I\), \(KTK^\dagger=s\), and \(s-KrK^\dagger\ge0\). The trace of the residual is the failure weight on \(r\). Since \(r\le T\), this weight is at most \(\operatorname{tr}T-\operatorname{tr}s=z\). Preparing the normalized residual on failure sends \(r\) to \(s\).
+
+For the disturbance bound, operator monotonicity gives \(\sqrt T\ge\sqrt s\), hence \(\operatorname{tr}\sqrt T\sqrt s\ge\operatorname{tr}s\). It follows that
+\[
+ \|(I-K)\sqrt r\|_2^2
+ \le \|\sqrt T-\sqrt s\|_2^2\le z.
+\]
+On an extension \(\xi\), suppress the identity on \(A\) and write
+\[
+ K\xi K^\dagger-\xi=(K-I)\xi K^\dagger+\xi(K^\dagger-I).
+\]
+Factoring each term through \(\sqrt\xi\) bounds its trace norm by \(\sqrt z\). The positive failure contribution has trace at most \(z\). This proves (10), including singular states and zero residual. In (11) the three errors are therefore \(2\sqrt z+z\), \(1/n\), and \(4\sqrt{\ln d/n}\). With \(z\le1/(2n)\) their sum is the stated \(\zeta_n\). Exact interior recovery follows separately from \(\mathcal R\mathcal D(\eta_B)=\mathcal R(\tau_B)\).
+
+### The energy count
+
+[rigorous] The arc from \(W_i\) around to \(U_i\), including both windows, omits \((2R-1)t\) sites. Its length is \(N=L-(2R-1)t\), independent of \(i\), and \(V\) lies entirely outside it. Averaging the conditional arc states over \(i\) gives the claimed two end marginals. Averaging also over \(v\) restores \(\rho_2\) on every internal bond of the arc. There is ample room for the two distinct exterior sites of its core. Indeed \(L\ge 6Rt\) implies \(N\ge(4R+1)t\), so \(N-2b\ge2\).
+
+In \(\sum_v p_v\xi_v^{\otimes k}\), a join takes its \(U\) and \(W\) windows from different copies. This holds also for \(k=2\). Their marginal is therefore \(\sum_vp_v\gamma_U(v)\otimes\gamma_W(v)\). A different join acts on neither of these windows. A trace-preserving channel on its disjoint input cannot change the unconditional marginal of the join under consideration. In particular, tracing out the rest of the core commutes with the join channel. This is the reason that the correlations of \(A_\ell\) with its core and the shared record introduce no extra term.
+
+For a fixed vector of output labels, each core has \(N-2b\) sites and each inserted interior has \(m_{ij}-2\) sites, counting its two buffers. The bond count per core and following join is
+\[
+ \underbrace{N-2b-1}_{\text{within the core}}
+ +\underbrace{m_{ij}-3}_{\text{within the interior}}
+ +\underbrace{2}_{\text{connecting}}
+ =N+m_{ij}-2t .
+\]
+This equals its contribution to the length. The interior state with its own label is exactly \(\tau_{BC}\), so its expected energy is \(e\) times its expected bond count. For a connecting bond, extracting its two sites in each summand and forgetting the label is a channel. Applied to (11), it gives trace-norm error at most \(\zeta_n\) relative to \(\rho_2\). This is an unconditional estimate for each of the two connecting energies. The other labels may change the conditional state of that bond.
+
+After dephasing the labels, concatenation in cyclic order identifies each joint summand with a physical ring of its specified length. Several summands can have the same length. The variational lower bound in any of them is \(E_\ell\ge\ell e_0-2M\), even for a state without translation symmetry. A scalar shift adds the same scalar per site to both sides, and a telescoping term sums to zero on every ring separately. One gauge therefore works throughout. Each join label has the prescribed uniform marginal, so \(\mathbb E\ell=kL\). The resulting inequality
+\[
+ kLe_0-2M\le kLe+2kM\zeta_n
+\]
+holds for every \(k\ge2\). Dividing by \(k\) proves (1), with \(2\zeta_n=3/n+2\sqrt{2/n}+8\sqrt{\ln d/n}\).
+
+[rigorous] I find no gap requiring a change to (1). The support completion of the recovery map, the direct-sum extraction of the connecting bonds, and the distinction between conditioning on one label and conditioning on all labels are the details I would add to the proof. The assertion about permutation-invariant states in the preamble has no proof in the submission. A proof is given below.
+
+## 2. A better threshold and deterministic output length
+
+[rigorous given the recovery theorem above] Fix \(n\ge1\) and \(0<\delta\le1\). Define \(B_1=1\) and iterate
+\[
+ t=B_i+1,\qquad q=d^t,\qquad
+ K=\left\lceil 2(2q-1)^2\delta^{-2}\ln q\right\rceil,\qquad
+ B_{i+1}=(K+1)t .
+\]
+For \(L\ge2B_{n+1}\), put
+\[
+ f_d(n,\delta)=3\delta+2\sqrt{2\delta}
+                  +4\sqrt{\frac{2\ln d}{n}} .
+\]
+Then, simultaneously for all \(h\) and integers \(k\ge2\),
+\[
+ \boxed{\quad
+ Le_0-E_L\le M f_d(n,\delta),\qquad
+ E_{kL}-kE_L\le kM f_d(n,\delta).
+ \quad} \tag{12}
+\]
+For example, \(\delta=n^{-2}\) makes the marginal-correction error \(O(1/n)\). The logarithm of the next buffer size is \(O_d(B_i+\ln n)\). This removes an exponential at every iteration.
+
+[rigorous] The entropy choice can be sharpened slightly. Weak monotonicity gives \(S(a\mid D)+S(a\mid D')\ge0\) for the disjoint \(j\)-site intervals on either side of one site \(a\). Each term is \(u_j\). Thus \(u_j\ge0\) whenever \(2j+1\le L\). The drops \(u_{B_i-1}-u_{B_{i+1}-1}\) telescope to at most \(u_0\le\ln d\). Choose \(i\) with drop at most \(\ln d/n\). For any target interval of length \(2t\le m\le B_{i+1}\), the submitted entropy argument now gives
+\[
+ I(A:C\mid B)\le 2(u_{B_i}-u_{m-1})\le 2\ln d/n. \tag{13}
+\]
+
+[rigorous] To select the gap, place consecutive \(t\)-site windows \(U,W_1,\ldots,W_K\). Keep \(U\) quantum. On each \(W_j\) use the same rank-one informationally complete POVM with reconstruction operators of trace norm \(2q-1\). Here is one construction. For a Haar-distributed rank-one projector \(P\), the POVM is \(qP\,dP\), with dual \(X_P=(q+1)P-I\). The identity
+\[
+ \int P\otimes P\,dP=\frac{I+\mathrm{Swap}}{q(q+1)}
+\]
+follows by unitary invariance and normalization on the symmetric subspace. It gives the reconstruction identity by partial trace. A finite convex combination with the same second moment exists by finite-dimensional convexity and also has the same first moment. This gives a finite POVM. The eigenvalues of \(X_P\) are \(q,-1,\ldots,-1\).
+
+Write \(Y_j\) for the outcomes. The Holevo bound and the chain rule give
+\[
+ \sum_{j=1}^K I(U:Y_j\mid Y_{<j})
+ = I(U:Y_1\cdots Y_K)\le S(U)\le\ln q .
+\]
+Fix one deterministic \(j\) with summand at most \(\ln q/K\). In the actual preparation measure only the prefix \(v=Y_{<j}\). Denote the resulting end state by \(\omega^v_{UW_j}\). Quantum Pinsker in nats, applied to the conditional classical-quantum states and then averaged by Cauchy–Schwarz, gives
+\[
+ \sum_v p_v\left\|
+ \omega^v_{UY_j}-\omega^v_U\otimes\omega^v_{Y_j}
+ \right\|_1\le \sqrt{2\ln q/K}.
+\]
+For a block-diagonal operator \(\sum_y Z_y\otimes |y\rangle\langle y|\), reconstruction on the outcome register has trace norm at most \((2q-1)\sum_y\|Z_y\|_1\). Applying this to the last display yields
+\[
+ \left\|\rho_{UW_j}
+       -\sum_vp_v\,\omega_U^v\otimes\omega_{W_j}^v\right\|_1
+ \le(2q-1)\sqrt{2\ln q/K}\le\delta . \tag{14}
+\]
+The unconditional target on the left is the original two-window marginal because the prefix measurement is disjoint. Only the proof of the inequality measures \(W_j\). This is the local-measurement chain-rule idea used by Brandão and Harrow, with the cost of converting back to trace norm displayed explicitly. [Brandão and Harrow, *Quantum de Finetti Theorems Under Local Measurements*](https://arxiv.org/abs/1210.6367)
+
+[rigorous given the recovery theorem above] Take as the short target the fixed interval from the start of \(U\) through the end of \(W_j\). It has \(m=(j+1)t\) sites. Retain the opposite arc, including both end windows, of length \(N=L-(j-1)t\). The measured prefix lies entirely in the omitted gap. Form the conditionally independent long arcs with the shared outcome \(v\). Equation (14) is their join-input estimate. Equations (10), (13), and exact reference recovery give an exact interior and connecting-bond trace error at most
+\[
+ \frac{3\delta}{2}+\sqrt{2\delta}
+       +2\sqrt{2\ln d/n}=\frac12 f_d(n,\delta).
+\]
+Each join now adds \(m-2t=(j-1)t\) sites with certainty. Thus the trial state is on the \(kL\)-ring and has energy at most \(kLe+kM f_d(n,\delta)\). Taking a translation-averaged ground state for the input proves the second inequality in (12). Sending \(k\) to infinity proves the first.
+
+### An obstruction to further improvement by full-window decoupling
+
+[rigorous] There is a dimension cost in (14) that has a physical realization at fixed microscopic \(d=4\). Take \(t\) divisible by four and put \(s=t/4\), \(Q=2^s\). Each physical site carries a marker bit and a data qubit. Mark the first site of each \(t\)-site cell. The \(s\) data qubits starting at the marker form a \(Q\)-dimensional system. Put the \(Q\) such systems of \(Q\) successive cells in the totally antisymmetric state on \((\mathbb C^Q)^{\otimes Q}\). Set unused data qubits to zero and average over translations. This defines a one-site translation-invariant state on the \(Qt\)-ring.
+
+On any \(t\)-site window, a local trace-nonincreasing operation reads the marker and extracts the \(s\) data qubits if they fit. For two disjoint windows on the same \(t\)-grid, both succeed on the same fraction \((t-s+1)/t\ge3/4\) of translates. On success they extract distinct members of the antisymmetric state. The swap of the two extracted systems has expectation \(-1\). Pulling that observable back through the two extraction operations gives a witness of norm at most one, with expectation at most \(-3/4\). On every separable end state it has nonnegative expectation, since \(\operatorname{tr}[\mathrm{Swap}(P\otimes Q')]=\operatorname{tr}(PQ')\ge0\) for positive \(P,Q'\). The same witness works after averaging window indices as in (6).
+
+One can repeat independent \(Q\)-cell states around an arbitrarily large ring and average over translations. For windows spanning \(r\) cells, at most \(r/Q\) of the cell shifts straddle two independent groups. Even assigning the witness its maximal value \(+1\) on those shifts changes the bound by at most \(2r/Q\). Thus for any polynomial span in \(t\), the two-window target can stay a constant trace distance from every shared-classical-record product mixture.
+
+This identifies two separate rate losses. First, full-window trace-norm decoupling on polynomial spatial scales fails for arbitrary ring states. Second, the entropy argument pays for \(n\) successive scales to obtain a drop of order \(1/n\), followed by a square root in recovery. The two-site nature of \(h\) does not remove the first loss by trace-norm contractivity. Pulling a connecting-bond observable back through a joint recovery channel can give an observable on both entire buffers. A faster energy bound would need additional control of those particular observables, or a construction bypassing full-window decoupling. The antisymmetric example gives no lower bound of this size on the energy defect.
+
+## 3. Sanity tests
+
+[rigorous] GHZ order. For \(\sum_x\sqrt{p_x}|x\rangle^{\otimes L}\), every proper interval is the classical mixture of constant strings, so \(u_j=0\) throughout the scales used here. A single computational-basis measurement in the gap reveals \(x\), and conditional copies then join with the correct two-site marginal exactly. The infinite mixture of constant product states has that marginal. Taking independent, unconditioned copies would instead lose the order across the join.
+
+[rigorous] Incommensurate window and product periods. Start with any finite product word, repeat the entire \(L\)-site word on \(\mathbb Z\), and average the origin over its \(L\) phases. This is an exact extension of the translate-averaged ring two-site marginal, including the wraparound bond. Neither proof assumes that \(t\) is coprime to the word period or that a group of \(R\) windows samples all phases. In the submitted proof the averaging identities follow from stationarity of the starting site even when stepping by \(t\) visits a proper subset of phases.
+
+[rigorous] Frustrated length. For \(h=Z\otimes Z\), \(M=1\), \(e_0=-1\), and an odd ring has \(E_L=-L+2\). The lower bound \(M\ge1\) follows by comparing the stationary aligned and alternating bond mixtures, whose energies differ by two. The signed defect on odd lengths is \(-2\). The theorem therefore permits the order-one incompatible-length cost. This example also rules out replacing the fixed-bond limsup statement by convergence of the absolute defect.
+
+[rigorous] An actual \(\Theta(L^{-2})\) marginal distance. Take the qubit hopping bond \(h=-(|01\rangle\langle10|+|10\rangle\langle01|)\) and \(L\) divisible by four. In the half-filled even-parity sector the Jordan–Wigner momenta are antiperiodic. Fill the \(L/2\) consecutive momenta centered at zero. The nearest-neighbor contraction is the geometric sum
+\[
+ x_L=\frac1L\sum_{\mathrm{filled}}e^{ik}
+     =\frac1{L\sin(\pi/L)}
+     =\frac1\pi+\frac{\pi}{6L^2}+O(L^{-4}).
+\]
+In infinite volume \(x_\infty=1/\pi\) and \(e_0=-2/\pi\), obtained by integrating the negative part of the dispersion \(-2\cos k\). Both parity grids give the same limiting integral. The finite state has bond energy \(-2x_L\), so its distance from \(\Omega_\infty\) is at least \(2(x_L-x_\infty)\), since \(\|h\|_\infty=1\). For the upper bound, Wick's rule gives the \(00,11\) diagonal entries \(1/4-x_L^2\), the \(01,10\) diagonal entries \(1/4+x_L^2\), and the \(01,10\) coherence \(x_L\). Substituting \(x_\infty\) gives an infinite-chain marginal at trace distance \(O(L^{-2})\). Thus the distance has the claimed order, and the corresponding energy witness gives a total defect of order \(L^{-1}\), consistent with (1). [Lieb, Schultz and Mattis, *Two Soluble Models of an Antiferromagnetic Chain*](https://research.ibm.com/publications/two-soluble-models-of-an-antiferromagnetic-chain)
+
+[rigorous] Permutation-invariant states, including mixed and Dicke states. Here the stronger assertion in the preamble admits a short proof. Take \(R=\lfloor L/3\rfloor\) and use the submitted single-site measurement. Exchangeability gives
+\[
+ a_R=c+\frac{a_1-c}{R},\qquad
+ c=\mathbb E\langle X_1,X_2\rangle_{\rm HS},\qquad |c|\le a_1=d^4.
+\]
+This follows by separating the diagonal and off-diagonal terms in the squared empirical mean. Hence \(a_R-a_{2R}\le d^4/R\). Measure a group \(V\) of \(R\) sites. Conditional on its record, all remaining single sites have the same state \(\gamma(v)\). Applying (7) to two other disjoint groups of \(R\) sites yields
+\[
+ \left\|\rho_2-\sum_vp_v\,\gamma(v)^{\otimes2}\right\|_1
+ \le 4d^5/R .
+\]
+Retain all \(L-R\) unmeasured sites as one block and take infinitely many conditionally independent copies with the shared record. Average the block origin. The internal bonds have unconditional marginal \(\rho_2\), and one bond in \(L-R\) is a join. The trace distance is at most \(4d^5/[R(L-R)]=O_d(L^{-2})\). This uses permutation invariance of the density matrix and does not require support in the bosonic subspace.
+
+## 4. Corollaries
+
+[rigorous given the recovery theorem above] Fixed bonds and marginal inclusion. Taking \(\delta=n^{-2}\) in (12) and then \(n\to\infty\) gives \(\limsup_L(Le_0-E_L)\le0\) for every fixed \(h\). For \(M=0\) the bond is a scalar plus a telescoping term and the defect vanishes identically.
+
+For the kinematic statement, finite-dimensional separation gives
+\[
+ \sup_{\rho\in\Omega_L}\inf_{\sigma\in\Omega_\infty}\|\rho-\sigma\|_1
+ =\sup_{\|h\|_\infty\le1}\left(e_0(h)-E_L(h)/L\right)
+ =g_d(L)/L .
+\]
+The first equality is trace-norm distance duality for a compact convex target, followed by taking the supremum over the source. For the second, every operator-norm unit bond has \(M\le1\), and every \(M\)-unit bond has an operator-norm unit representative after centering and telescoping. Those changes preserve the support-function difference because all marginals are normalized and stationary. The supremum is nonnegative and a nontrivial frustration-free bond realizes zero, so using the \(M\)-unit sphere gives the same value. Thus the inclusion radius in trace norm is \(o_d(1/L)\).
+
+[rigorous given the recovery theorem above] Doubling. The submitted random-length proof at \(k=2\) controls an average over lengths of mean \(2L\). That average alone gives no upper bound on \(E_{2L}\). Equation (12) supplies the missing fixed-length trial state. More generally,
+\[
+ \sup_{k\ge2}\sup_{M(h)>0}
+ \frac{E_{kL}(h)-kE_L(h)}{kM(h)}\longrightarrow0 .
+\]
+The supremum is at least zero by a frustration-free example. Setting \(k=2\) gives the doubling assertion in the verdict.
+
+[physics-level] Infrared sectors. Write the finite-size hypothesis at a vacuum-compatible length as
+\[
+ Le_0-E_L=\frac{\pi}{6L}\sum_{\xi_a\le L}c_av_a+r_L .
+\]
+If \(g_d(L)\le f_d(L)\), then for \(L\ge\xi\) and \(N\) active sectors with \(v_a\ge\eta M\) and nonnegative central charges,
+\[
+ \eta\sum_{a=1}^N c_a
+ \le \frac{6L}{\pi}\left(f_d(L)+\frac{|r_L|}{M}\right).
+\]
+A count of sectors requires a lower bound \(c_a\ge c_*>0\). If the finite-size form holds uniformly at compatible \(L\) comparable to \(\xi\), with \(|r_L|/M=o(1)\), it follows that \(\eta c_*N=o_d(L)\) along such a family as \(L\to\infty\). A fixed-chain asymptotic with an uncontrolled family-dependent remainder does not justify evaluation at the crossover. The proposed deficits \(MN/(L+N^2)\) obey \(\sup_N N/(L+N^2)\le1/(2\sqrt L)\), so even uniform decay accommodates their large-\(L\) coefficients growing linearly with \(N\).
+
+The report is delivered here. The workspace was read-only, so I could not update `STATE.md`, commit, or synchronize the report with GitHub.
+
+[gpt_solve: backend=codex model=gpt-6.2-astra effort=high transcript=20261118T113209-69163]

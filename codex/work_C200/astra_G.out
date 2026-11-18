@@ -1,0 +1,263 @@
+Corollary 4.13 holds with \(K'=35+181K+9K^2\). Step 8 has a false numerical inequality. Steps 3, 5, 6 and 7 need endpoint or empty-set conventions. The energy identity, the sign of the chemical potential, and the midpoint factor \(1/8\) are correct.
+
+I obtain the independent bound
+\[
+\operatorname{Var}_{[-Q,Q]}v_Q\le \frac{88\pi}{3}<92.16
+\qquad
+\left(0<\eta\le\frac{\pi}{2},\quad 0<Q\le\infty\right).
+\]
+Thus the cited \(92.9\) holds on its full stated range. The proof below uses no numerical optimization.
+
+## Inputs (I1) and (I2)
+
+(I1) — correct in the sector convention of C136. There \(F_L(n)\) is the ground energy of the periodic chain with negative transverse hopping, equivalently the flux-minimized sector energy in the positive transverse convention. This distinction matters for odd \(L\). [C136, Section 1](<../work_C136/PROOF.md>)
+
+Here is my check of the identification. Write \(\Delta=-\cos\eta\) and \(z_j=e^{ip(x_j)}\). In ordered particle coordinates, the two hopping directions give the one-particle dispersion \(-\cos p\), and an isolated particle changes the diagonal energy by \(-\Delta\). The definition of \(p\) gives
+\[
+\cos p(x)=\frac{1+\cos\eta\cosh 2x}{\cosh 2x+\cos\eta},
+\qquad
+-\Delta-\cos p(x)
+=-\frac{\sin^2\eta}{\cosh 2x+\cos\eta}=-a a_1(x).
+\]
+For adjacent particles the two missing hopping terms and the contact energy give
+\[
+(1+z_jz_k+2\Delta z_k)A_{jk}
+ +(1+z_jz_k+2\Delta z_j)A_{kj}=0.
+\]
+Putting \(X=\tanh x_j,\ Y=\tanh x_k\), the ratio of the second coefficient to the first is
+\[
+\frac{1-XY-i\cot\eta\,(X-Y)}
+     {1-XY+i\cot\eta\,(X-Y)}
+=e^{i\theta(x_j-x_k)}.
+\]
+Moving particle \(j\) around the ring therefore gives \(z_j^L=(-1)^{n-1}\prod_k e^{i\theta(x_j-x_k)}\), as required by \(e^{2\pi i I_j}=(-1)^{n-1}\). At multiple contacts the missing hopping terms add pairwise. For \(n=1\) the plane wave gives the dispersion directly, including the two oriented bonds at \(L=2\).
+
+For the ground-state identification, at \(\eta=\pi/2\) the centered momenta form the free ground-state Slater determinant. The exchange denominators are nonzero there since the sum of any two occupied momenta lies strictly between \(-\pi\) and \(\pi\). Hence the Bethe energy is an eigenvalue on a neighborhood of the free point. The root Jacobian has quadratic form
+\[
+L\sum_j p'(x_j)y_j^2
++\sum_{j<k}[-\theta'(x_j-x_k)](y_j-y_k)^2>0
+\quad(y\ne0).
+\]
+The roots and candidate energy are real analytic in \(\eta\). The characteristic polynomial evaluated at that energy vanishes throughout the connected parameter interval by analytic continuation. The sector hopping graph is connected, so Perron–Frobenius gives a simple ground eigenvalue. The continued energy cannot leave it. Finally, integration by parts against the assumed cumulative estimate gives
+\[
+\left|\int e\,d\mu_x-\int_{-Q}^{Q} e\,r_Q\,dx\right|
+\le \frac K L\int_{\mathbb R}|e'|\,dx .
+\]
+This identifies the stated bulk energy density and checks its normalization independently of the \(O(1/L)\) total-energy conclusion.
+
+(I2) — correct. For any differentiable source \(s_f\) and \(f=s_f+T_Qf\), smoothness of \(T\) at fixed \(\eta>0\) permits differentiation. Since \(\partial_xT(x-y)=-\partial_yT(x-y)\),
+\[
+(I-T_Q)f'=s_f'-f(Q)T(\cdot-Q)+f(-Q)T(\cdot+Q). \tag{1}
+\]
+Write \(R=(I-T_Q)^{-1}\), \(r=Ra_1\), \(Z=R1\). Reflection commutes with \(R\), and positivity gives \(Z\ge1\). Hence \(\epsilon=-ar-hZ\) is even, and \(h=-ar(Q)/Z(Q)\) gives \(\epsilon(\pm Q)=0\). Both endpoint terms in (1) vanish for this particular \(f\). Thus
+\[
+\epsilon'=-aRa_1',\qquad
+\frac{|a_1'(x)|}{a_1(x)}
+=\frac{2|\sinh 2x|}{\cosh 2x+\cos\eta}
+\le 2\tanh(2|x|).
+\]
+Positivity of \(R\) now gives \(|\epsilon'|\le2a\tanh(2Q)r\le2ar\). At half filling \(h=0\), \(r=r_0\), and \(\epsilon=-ar_0\).
+
+## Independent proof of (I3) and (I4)
+
+(I3) — correct, with \(\kappa=1-4e^{-2}=0.458658867\ldots\). The printed \(0.459\) must be read as a rounded value, not used as a lower bound.
+
+Let \(w=r_0\), the full-line solution \(w=a_1+T*w\), and put \(P(x)=w(2Q-x)+w(2Q+x)\). For \(y\ge Q\), \(|2Q-y|\le y\), so \(P(y)\ge w(y)\). Reflection gives the same inequality for \(y\le-Q\). Each summand of \(P\) solves the translated full-line equation with a positive source. Restricting to \([-Q,Q]\) therefore gives
+\[
+(I-T_Q)P\ \ge\int_{|y|>Q}T(\cdot-y)w(y)\,dy
+=(I-T_Q)(w-r).
+\]
+Positivity of \(R\) gives \(0\le w-r\le P\). For \(0\le x\le Q\), use \(\cosh(bx)\le e^{bx}\) and \(\cosh(bt)\ge e^{bt}/2\) for \(t\ge0\). Dividing the two terms of \(P\) by \(w(x)\) gives
+\[
+\frac{w(x)-r(x)}{w(x)}
+\le 2e^{-2b(Q-x)}+2e^{-2bQ}
+\le E,\qquad E=4e^{-2b(Q-x)}. \tag{2}
+\]
+Since \(b\ge1\), this implies (I3).
+
+(I4) — correct. The following proof also checks sketch steps (i)–(vi).
+
+1. Sketch (i) and (ii) are correct. Set \(u=\epsilon'=-aRa_1'\), \(v=u/r\), \(G=R[T(\cdot-Q)]\), \(H=R[T(\cdot+Q)]\). Applying (1) to the odd function \(u\) and the even function \(r\) gives
+   \[
+   u'=-aRa_1''-u(Q)(G+H),\qquad
+   r'=Ra_1'-r(Q)(G-H).
+   \]
+   Subtract \(vr'\) from \(u'\) after applying the resolvent. Division by \(r\) gives
+   \[
+   v'=F_1-\frac{r(Q)}r
+   \big[v(Q)(G+H)-v(G-H)\big],\qquad
+   F_1=a\frac{(Ra_1')^2-rRa_1''}{r^2}. \tag{3}
+   \]
+   In particular, the \(H\) coefficient inside the bracket is \(v(Q)+v\).
+
+2. Sketch (iii) and (iv) are correct. Reflection gives \(H(x)=G(-x)\). On odd functions the half-interval kernel is \(T(x-y)-T(x+y)\ge0\) for \(x,y\ge0\), so its Neumann series preserves positivity on \([0,Q]\). Applying this first to \(T(\cdot-Q)-T(\cdot+Q)\), then to \(-a_1'\), gives \(G-H\ge0\) and \(u\ge0\) there. Thus \(v\) is odd and \(0\le v\le M_v:=2a\tanh(2Q)\) on the right half. Self-adjointness gives
+   \[
+   \int_0^Q(G+H)\,dx=\int_{-Q}^QG\,dx
+   =\langle Z,T(\cdot-Q)\rangle=Z(Q)-1.
+   \]
+   With \(B=(1-q)^{-1}=\pi/(2\eta)\), the Neumann series gives \(Z\le B\). At the endpoint there is a further factor of two available:
+   \[
+   Z(Q)-1=\int_{-Q}^QT(Q-y)Z(y)\,dy
+   \le B\int_0^{2Q}T(t)\,dt\le \frac{Bq}{2}=\frac{B-1}{2}. \tag{4}
+   \]
+
+3. Sketch (v) is correct with a necessary clarification about derivatives. The quantities to compare are \(w^{(k)}-R a_1^{(k)}\). Differentiating the inequality \(0\le w-r\le P\) would be invalid. Instead, differentiate the full-line equation, move derivatives onto the decaying density, then restrict to the interval. For \(k=0,1,2\) this gives
+   \[
+   \delta_k:=w^{(k)}-Ra_1^{(k)}
+   =R\!\left[\int_{|y|>Q}T(\cdot-y)w^{(k)}(y)\,dy\right].
+   \]
+   The explicit sech profile gives \(|w'|\le bw\), \(|w''|\le b^2w\). Consequently \(|\delta_k|\le b^k\delta_0\), with \(0\le\delta_0=w-r\le Ew\) by (2).
+
+   Write \(N=(Ra_1')^2-rRa_1''\). The full-line numerator is \(N_0=w'^2-ww''=b^2w^2\operatorname{sech}^2(bx)\ge0\). Keeping \(r\) in the last term of the expansion gives
+   \[
+   N=N_0-2w'\delta_1+\delta_1^2+\delta_0 w''+r\delta_2
+   \ge -4b^2w\delta_0.
+   \]
+   If \(E<1\), then \(r\ge(1-E)w\), so \((F_1)_-\le4ab^2E/(1-E)^2\). This implies the sketch's second bound. For the first bound, set \(C=\cosh 2x\), \(c=\cos\eta\). Direct differentiation gives
+   \[
+   \frac{a_1''}{a_1}
+   =4\,\frac{C^2-cC-2}{(C+c)^2}\le4 .
+   \]
+   Thus \(Ra_1''\le4r\), and (3) gives \(F_1\ge-4a\).
+
+   These estimates have an elementary uniform integral. Use \(4a\) for \(0\le d=Q-x\le d_0=\log(12)/(2b)\). For \(d>d_0\), substitute \(E=4e^{-2bd}\), starting at \(E=1/3\). Extending the integral to all \(d\ge0\) gives
+   \[
+   \frac1a\int_0^Q(F_1)_-\,dx
+   \le 4d_0+2b\int_0^{1/3}\frac{dE}{(1-E)^2}
+   =\frac{2\log12}{b}+b<6. \tag{5}
+   \]
+   The last function is convex on \(1\le b\le2\), and both endpoint values are below 6.
+
+4. Sketch (vi) is correct. Oddness and \(v(0)=0\) give the identity
+   \[
+   \operatorname{Var}_{[-Q,Q]}v=2v(Q)+4\int_0^Q(v')_-\,dx.
+   \]
+   In (3), \(v(G-H)\ge0\) on the right half. Since \(r(Q)/r\le1\), the positive part of the entire subtracted term is at most \(M_v(G+H)\), even where \(v(Q)-v(x)<0\). This gives a coefficient \(8a\tanh(2Q)\) in front of \(Z(Q)-1\), which also verifies the sketch's looser \(12a\tanh(2Q)\). The claimed \(a(Z(Q)-1)\le\pi^2/2\) follows from \(Z\le B\) and \(\sin\eta\le\eta\).
+
+   Using (4) and (5) together yields
+   \[
+   \operatorname{Var}v
+   \le 4a+24a+8a\,\frac{B-1}{2}
+   =24a+4aB
+   =24\pi\sin\eta+2\pi^2\frac{\sin\eta}{\eta}. \tag{6}
+   \]
+   For \(\eta\le3\pi/8\), the right side is at most \(24\pi\sin(3\pi/8)+2\pi^2<89.4\). For \(3\pi/8\le\eta\le\pi/2\), it is at most \(24\pi+16\pi/3=88\pi/3\). This proves the asserted uniform bound for finite \(Q\). At \(Q=\infty\), direct substitution gives \(v=ab\tanh(bx)\) and \(\operatorname{Var}v=2ab\). At the free point \(T=0\), the finite-interval answer is \(v=2a\tanh(2x)\), another check on the signs in (3).
+
+## Corollary 4.13, step by step
+
+Step 1 — correct. Write \(D=[-Q,Q]\). Evenness of \(T\) and the definition of \(\mu_x\) give
+\[
+\sum_j(T*(\epsilon1_D))(x_j^*)=L\int_D\epsilon(\sigma_L-a_1).
+\]
+Self-adjointness gives
+\[
+\int_D(e-h)r=\langle(I-T_Q)\epsilon,r\rangle=\int_D\epsilon a_1.
+\]
+On subtraction, the two \(a_1\) terms cancel. The constant contributes \(h(n-Lm(Q))=0\). What remains is
+\[
+F_L-Le_{\rm bulk}=\sum_j\widehat\epsilon(x_j^*)-L\int_D\epsilon\sigma_L .
+\]
+At half filling the same integrations converge by the sech decay of \(\epsilon\). For \(n=0\), both energies are \(\Delta L/4\).
+
+Step 2 — correct. Integration by parts in the extension gives \(\widehat\epsilon'=e'+T*(\epsilon'1_D)\), since both traces of \(\epsilon\) vanish. Thus \(|\widehat\epsilon'|\le2as\). On the right, integration between \(Q\) and \(u\), in either order, gives
+\[
+|\widehat\epsilon(u)|\le2a|Z_0(u)-Z_0(Q)|=2a|Z_0(u)-\nu/2|.
+\]
+The left estimate follows by reflection. The argument works both inside and outside \(D\).
+
+Step 3 — correct after specifying the range of \(z_L\). The primitive of \(T\) from \(-\infty\) to \(x\) is \(q/2-\theta(x)/(2\pi)\). Consequently
+\[
+z_L(u)=\frac{p(u)}{2\pi}-\frac1{2\pi L}\sum_j\theta(u-x_j^*).
+\]
+It is odd, \(z_L'=\sigma_L>0\), and the Bethe equations give \(z_L(x_j^*)=I_j/L\). The missing existence check is
+\[
+z_L(+\infty)-\nu/2
+=\frac{\eta}{2\pi}+\frac{q\nu}{2}-\frac{\nu}{2}
+=\frac{\eta}{2\pi}(1-2\nu).
+\]
+For \(0<\nu<1/2\) there is a unique finite \(Q_L>0\). At \(\nu=1/2\), set \(Q_L=\infty\) and use inverse images with limiting endpoints. The outer cells then extend to infinity. Every cell still has mass \(1/L\), and its root is its midpoint in \(t=z_L(x)\).
+
+The difference of counting functions is \(T*(N_x-N_0)\), so its sup norm is at most \(qK/L\). Evaluation at \(Q_L\) and \(Q\) proves both parts of (4.4), with endpoint limits at half filling. Adding and subtracting \(L\int_{-Q_L}^{Q_L}\widehat\epsilon\sigma_L\) gives the displayed \(B_L\) with the stated sign.
+
+Step 4 — correct for both orders of the endpoints. Per side, the signed integral runs from \(Q\) to \(Q_L\). Its absolute mass is \(|z_L(Q_L)-z_L(Q)|\le qK/L\). Monotonicity of \(Z_0\) and Step 2 bound the integrand's energy factor everywhere between the endpoints by \(2a|Z_0(Q_L)-\nu/2|\le2aqK/L\). Therefore
+\[
+|B_L|\le 4a q^2 K^2/L .
+\]
+When \(Q_L<Q\) the missing interval is inside the continuum sea and is accounted for by this same term. At half filling \(B_L=0\).
+
+Step 5 — correct, with an endpoint qualification. The absolute midpoint error is bounded by the cell oscillation, hence by \(\int_{X_j}|\widehat\epsilon'|\). For a cell \([A,B]\) of length \(\ell=1/L\) and center \(c\), the Peano kernel for the normalized mean minus midpoint is
+\[
+P(s)=
+\begin{cases}
+(s-A)^2/(2\ell),&A\le s\le c,\\
+(B-s)^2/(2\ell),&c\le s\le B .
+\end{cases}
+\]
+This follows by applying the functional to \((t-s)_+\). Its maximum is \(\ell/8\), so integration against \(df'\) gives the absolute bound \(\operatorname{Var}(f')/(8L)\). Monotone reparametrization identifies that variation with the variation of \(\widehat\epsilon'/\sigma_L\) on \(X_j\). Only compact core cells need this second estimate. At half filling the outer cells use the oscillation bound, so no endpoint bound on \(f'\) is required.
+
+Step 6 — correct for a nonempty core. If \(K_c=\varnothing\), skip this step. A singleton contributes zero variation. Otherwise \(K_c=[-x_c,x_c]\), including the possibility \(x_c=Q\). On the core the density estimate gives \(3r/4\le\sigma_L\le5r/4\), hence \(4/5\le g=r/\sigma_L\le4/3\). Adding the variations over the core cells costs at most
+\[
+\operatorname{Var}_{K_c}(vg)\le2a\operatorname{Var}_{K_c}g+\frac43V_W.
+\]
+The quotient derivative is
+\[
+g'=\frac{r'(\sigma_L-r)-r(\sigma_L'-r')}{\sigma_L^2}.
+\]
+Thus the two integrals in the text occur with the stated coefficients \(16C_D/(9\eta L)\) and \(16C_{D1}/(9\eta^2L)\). Monotonicity gives
+\[
+\int_{K_c}\frac{|r'|}{r^2}
+=2\left(\frac1{r(x_c)}-\frac1{r(0)}\right)\le\frac2{\rho_0}.
+\]
+On one side the layer \(Q-x<1\) costs at most \(1/\rho_0\). If the remaining interval \([0,y]\) is nonempty, (I3) applies there and
+\[
+\int_0^y\frac{dx}{r_0(x)}
+=\frac{2\gamma}{b}\sinh(by)
+\le\frac1{b r_0(y)}
+\le\frac1{b\rho_0}.
+\]
+Here \(r_0(y)\ge r_0(x_c)\ge\rho_0\). This also covers \(Q<1\), when the remaining interval is empty, and \(Q=\infty\), when there is no edge layer. Substitution of \(\rho_0=4C_D/(\eta L)\) gives
+\[
+\frac{2a}{8}\operatorname{Var}g
+\le\frac{2a}{9}
++\frac29\frac{aC_{D1}}{\eta C_D}
+  \left(1+\frac1{\kappa b}\right).
+\]
+The ratio is \(2\pi^2\sin\eta\tan\eta\,T_A(0)T_B(0)\le8\tan\eta/\eta\). In particular \(K\) cancels from this term.
+
+Step 7 — correct when the tail is defined as \(D\setminus K_c\). This definition also works for the empty core. Among cells not contained in \(K_c\), only cells crossing a core endpoint can meet the core in positive length. There are at most two distinct such cells. If one cell contains the entire core, charge that cell once. Its core portion costs at most
+\[
+2a\int_{X_j\cap K_c}r\le\frac{8a}{3}\int_{X_j}\sigma_L
+=\frac{8a}{3L}.
+\]
+This argument also covers a cell that meets the core and extends beyond \(Q\).
+
+For the tail mass, on either side the layer within distance 1 of \(Q\) costs at most \(\rho_0\). If the remaining right tail is nonempty, let \(y\) be its left endpoint. There \(r_0(y)\le\rho_0/\kappa\) by (I3) and continuity, including \(y=0\) when the core is empty. Since \(r\le r_0\),
+\[
+\int_y^\infty r_0(x)\,dx\le\frac{e^{-by}}{\gamma b}
+\le\frac{2r_0(y)}b .
+\]
+Doubling and using \(|\epsilon'|\le2ar\) gives the cost \(4a\rho_0(1+2/(\kappa b))\). This proof remains valid when all cells are non-core. If \(Q_L>Q\), the two exterior pieces together cost at most \(4a[Z_0(Q_L)-Z_0(Q)]\le4aqK/L\). If \(Q_L\le Q\), that exterior cost is zero.
+
+Step 8 — the tail equality and the \(171.5K\) bound are wrong. The exact expression is
+\[
+\frac{4aM}{\eta}\left(1+\frac{2}{\kappa b}\right)
+=32K\cos\eta\left(1+\frac{2}{\kappa b}\right)
+\le32K\left(1+\frac{2}{\kappa}\right).
+\]
+Dropping \(b\) in the printed equality requires an inequality. Moreover, as \(\eta\downarrow0\) the coefficient tends to \(171.5372565\ldots\), so \(171.5\) fails even on the narrow strip. One can use \(171.54\).
+
+For completeness, using the exact \(\kappa\), the separate upper bounds on the two \(g\) contributions are \(0.493654\) and \(7.198659\), rounded upwards. The straddling contribution is below \(11.84769\), and \(4a\le8.88577\). Thus the other displayed rounded bounds are valid when evaluated from the exact quantities. Using even the original \(V_W=92.9\), a valid sum is
+\[
+L|F_L-Le_{\rm bulk}|
+\le35.1+180.44K+8.9K^2
+\le35+181K+9K^2 .
+\]
+The last inequality uses \(K\ge1\). There is no remaining dependence on \(L,n,Q,\eta\) in \(K'\) on the stated strip.
+
+The remarks need two edits. The linear term receives an exterior-cell contribution as well as the tail contribution. Also, \(0.77\) describes the computed cases. Those computations do not establish a uniform upper bound. At half filling Theorem H permits \(K=1\), and the polynomial gives \(225\). The quoted \(70.2\) comes from the separate Corollary 3.2 calculation and was not needed or independently audited here. [Corollary 3.2](<./PROOF.md>)
+
+The workspace was read-only, so the report is delivered here. No project file, `STATE.md`, or Git commit was changed.
+
+Verdict. Accept Corollary 4.13 with the Step 8 arithmetic corrected and the cell conventions above made explicit. Input (I4), including its numerical ceiling on the full cited range, is independently proved.
+
+[gpt_solve: backend=codex model=gpt-6.2-astra effort=high transcript=20261118T115802-78674]

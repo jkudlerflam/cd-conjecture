@@ -1,0 +1,37 @@
+/private/tmp/claude-502/-Users-jkudlerflam-IAS-Dropbox-Jonah-Kudler-Flam-Claude-Projects-Modular-c-Theorem-notes-cd-conjecture/c6b1b627-6484-4871-bec4-f983522170ed/scratchpad/ref_potts.py:71: RuntimeWarning: overflow encountered in sinh
+  f = lambda x: np.sinh((np.pi - g) * x) / (np.sinh(np.pi * x) * np.cosh(g * x)) if x != 0 else (np.pi - g) / np.pi
+/private/tmp/claude-502/-Users-jkudlerflam-IAS-Dropbox-Jonah-Kudler-Flam-Claude-Projects-Modular-c-Theorem-notes-cd-conjecture/c6b1b627-6484-4871-bec4-f983522170ed/scratchpad/ref_potts.py:71: RuntimeWarning: invalid value encountered in scalar divide
+  f = lambda x: np.sinh((np.pi - g) * x) / (np.sinh(np.pi * x) * np.cosh(g * x)) if x != 0 else (np.pi - g) / np.pi
+/private/tmp/claude-502/-Users-jkudlerflam-IAS-Dropbox-Jonah-Kudler-Flam-Claude-Projects-Modular-c-Theorem-notes-cd-conjecture/c6b1b627-6484-4871-bec4-f983522170ed/scratchpad/ref_potts.py:71: RuntimeWarning: overflow encountered in cosh
+  f = lambda x: np.sinh((np.pi - g) * x) / (np.sinh(np.pi * x) * np.cosh(g * x)) if x != 0 else (np.pi - g) / np.pi
+/private/tmp/claude-502/-Users-jkudlerflam-IAS-Dropbox-Jonah-Kudler-Flam-Claude-Projects-Modular-c-Theorem-notes-cd-conjecture/c6b1b627-6484-4871-bec4-f983522170ed/scratchpad/ref_potts.py:72: IntegrationWarning: The occurrence of roundoff error is detected, which prevents 
+  the requested tolerance from being achieved.  The error may be 
+  underestimated.
+  I = 2 * quad(f, 0, np.inf, limit=400, epsabs=1e-14, epsrel=1e-13)[0]
+
+Q=2: gamma=0.785398 a=0.707107  spec(C0)=[0.414214,2.414214]  M_SDP=1.000000  (sqrtQ+1)/2=1.207107  e0=2eps0=nan
+ L=2: E_P=-4.828427124746  XXZ(Sz=0,phi=2g)=-4.828427124746  diff=-8.9e-16  phi=0:-0.2084 phi=pi:+0.5858 phi=g:-0.1557  min Sz!=0 @2g:+1.5665  L(Le0-E)=nan  /M=nan
+ L=3: E_P=-7.071067811865  XXZ(Sz=0,phi=2g)=-7.071067811865  diff=0.0e+00  phi=0:-0.1306 phi=pi:+0.3789 phi=g:-0.0978  min Sz!=0 @2g:+1.0733  L(Le0-E)=nan  /M=nan
+ L=4: E_P=-9.352372379538  XXZ(Sz=0,phi=2g)=-9.352372379538  diff=5.3e-15  phi=0:-0.0958 phi=pi:+0.2813 phi=g:-0.0717  min Sz!=0 @2g:+0.8144  L(Le0-E)=nan  /M=nan
+ L=5: E_P=-11.647559034407  XXZ(Sz=0,phi=2g)=-11.647559034407  diff=8.9e-15  phi=0:-0.0758 phi=pi:+0.2240 phi=g:-0.0568  min Sz!=0 @2g:+0.6556  L(Le0-E)=nan  /M=nan
+ L=6: E_P=-13.949382989376  XXZ(Sz=0,phi=2g)=-13.949382989376  diff=7.1e-15  phi=0:-0.0628 phi=pi:+0.1862 phi=g:-0.0470  min Sz!=0 @2g:+0.5484  L(Le0-E)=nan  /M=nan
+ L=7: E_P=-16.254912996518  XXZ(Sz=0,phi=2g)=-16.254912996518  diff=1.4e-14  phi=0:-0.0536 phi=pi:+0.1593 phi=g:-0.0402  min Sz!=0 @2g:+0.4712  L(Le0-E)=nan  /M=nan
+ L=8: E_P=-18.562728069808  XXZ(Sz=0,phi=2g)=-18.562728069808  diff=4.3e-14  phi=0:-0.0468 phi=pi:+0.1393 phi=g:-0.0351  min Sz!=0 @2g:+0.4130  L(Le0-E)=nan  /M=nan
+ L=9: E_P=-20.872053381213  XXZ(Sz=0,phi=2g)=-20.872053381213  diff=-8.5e-14  phi=0:-0.0415 phi=pi:+0.1237 phi=g:-0.0311  min Sz!=0 @2g:+0.3676  L(Le0-E)=nan  /M=nan
+
+Q=3: gamma=0.523599 a=0.866025  spec(C0)=[0.000000,2.732051]  M_SDP=1.366025  (sqrtQ+1)/2=1.366025  e0=2eps0=nan
+ L=2: E_P=-5.464101615138  XXZ(Sz=0,phi=2g)=-5.464101615138  diff=-2.7e-15  phi=0:-0.0920 phi=pi:+0.6866 phi=g:-0.0689  min Sz!=0 @2g:+1.8002  L(Le0-E)=nan  /M=nan
+ L=3: E_P=-7.900841233194  XXZ(Sz=0,phi=2g)=-7.900841233194  diff=-5.3e-15  phi=0:-0.0570 phi=pi:+0.4390 phi=g:-0.0427  min Sz!=0 @2g:+1.2309  L(Le0-E)=nan  /M=nan
+ L=4: E_P=-10.404959739806  XXZ(Sz=0,phi=2g)=-10.404959739806  diff=-3.6e-15  phi=0:-0.0416 phi=pi:+0.3241 phi=g:-0.0312  min Sz!=0 @2g:+0.9360  L(Le0-E)=nan  /M=nan
+ L=5: E_P=-12.933018180786  XXZ(Sz=0,phi=2g)=-12.933018180786  diff=0.0e+00  phi=0:-0.0328 phi=pi:+0.2572 phi=g:-0.0246  min Sz!=0 @2g:+0.7553  L(Le0-E)=nan  /M=nan
+ L=6: E_P=-15.472465192155  XXZ(Sz=0,phi=2g)=-15.472465192155  diff=-3.0e-14  phi=0:-0.0271 phi=pi:+0.2133 phi=g:-0.0203  min Sz!=0 @2g:+0.6331  L(Le0-E)=nan  /M=nan
+ L=7: E_P=-18.018252889226  XXZ(Sz=0,phi=2g)=-18.018252889226  diff=3.9e-14  phi=0:-0.0231 phi=pi:+0.1823 phi=g:-0.0173  min Sz!=0 @2g:+0.5450  L(Le0-E)=nan  /M=nan
+ L=8: E_P=-20.567942961189  XXZ(Sz=0,phi=2g)=-20.567942961189  diff=-7.1e-14  phi=0:-0.0201 phi=pi:+0.1591 phi=g:-0.0151  min Sz!=0 @2g:+0.4784  L(Le0-E)=nan  /M=nan
+
+Q=4: gamma=0.000000 a=1.000000  spec(C0)=[-0.000000,3.000000]  M_SDP=1.500000  (sqrtQ+1)/2=1.500000  e0=2eps0=-2.7725887222
+ L=2: E_P=-6.000000000000  XXZ(Sz=0,phi=2g)=-6.000000000000  diff=-2.7e-15  phi=0:+0.0000 phi=pi:+0.7639 phi=g:+0.0000  min Sz!=0 @2g:+2.0000  L(Le0-E)=0.909645  /M=0.606430
+ L=3: E_P=-8.605551275464  XXZ(Sz=0,phi=2g)=-8.605551275464  diff=3.6e-15  phi=0:-0.0000 phi=pi:+0.4826 phi=g:-0.0000  min Sz!=0 @2g:+1.3695  L(Le0-E)=0.863355  /M=0.575570
+ L=4: E_P=-11.302186817874  XXZ(Sz=0,phi=2g)=-11.302186817874  diff=3.6e-15  phi=0:-0.0000 phi=pi:+0.3538 phi=g:-0.0000  min Sz!=0 @2g:+1.0453  L(Le0-E)=0.847328  /M=0.564885
+ L=5: E_P=-14.030892708984  XXZ(Sz=0,phi=2g)=-14.030892708984  diff=-3.9e-14  phi=0:+0.0000 phi=pi:+0.2795 phi=g:+0.0000  min Sz!=0 @2g:+0.8465  L(Le0-E)=0.839745  /M=0.559830
+ L=6: E_P=-16.774781834890  XXZ(Sz=0,phi=2g)=-16.774781834890  diff=-3.6e-15  phi=0:+0.0000 phi=pi:+0.2311 phi=g:+0.0000  min Sz!=0 @2g:+0.7117  L(Le0-E)=0.835497  /M=0.556998
+ L=7: E_P=-19.527099067094  XXZ(Sz=0,phi=2g)=-19.527099067094  diff=-3.6e-14  phi=0:-0.0000 phi=pi:+0.1969 phi=g:+0.0000  min Sz!=0 @2g:+0.6142  L(Le0-E)=0.832846  /M=0.555231

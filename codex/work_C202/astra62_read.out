@@ -1,0 +1,233 @@
+The sector estimate and the constant \(10781\) survive the check, with repairs. Theorem 4.5 is false as stated for the unscaled roots \(x_j(\Delta)\). The rescaled roots and the energy do have the analyticity needed for identification. Section 6 misses a case that occurs already at \(L=4,n=2\), and two of the numerical implications in Section 7 are false. Keeping the constants unrounded gives \(K/M_0<4310.673\), which repairs the assembly.
+
+## 1. Section 1 and facts F1–F4
+
+F1–F4: CORRECT, with F3–F4 understood for \(n\geq1\).
+
+Use odd lifts with \(p(0)=\theta(0)=0\). Differentiating the arctangents gives the stated positive derivatives \(2\pi a_1\) and \(2\pi K\). Each integrates to \(2\pi\) over a period, so both lifts gain \(2\pi\) under \(x\mapsto x+\pi\). The minus sign on the scattering sum then gives
+\[
+z_L(x+\pi)-z_L(x)=1-\nu.
+\]
+The energy sign also checks directly: \(e(x)=-\Delta-\cos p(x)\), hence \(e(0)=-(1+\Delta)\).
+
+- F1 follows by subtracting consecutive Bethe equations. The mass is \(+1/L\).
+- F2 follows from \(\theta(\pi/2+y)=2\pi-\theta(\pi/2-y)\). A root at zero contributes \(\pi\), so the calculation includes odd \(n\).
+- F3 follows by subtracting the \(n-1\) inner-gap masses from \(1-\nu\). The result is \(1-2\nu+1/L\). Evenness of \(\sigma_L\) halves it on the right half of the out arc.
+- For F4, write \(B(x)=Lp(x)-\sum_k\theta(x-x_k)\). If \(x_1+\pi=x_n\), then \(B(x_1)-B(x_n)=-2\pi(L-n)\). The quantum numbers give \(-2\pi(n-1)\), forcing \(2n=L+1\). Ordinary collisions are excluded because equal coordinates give equal left sides and different quantum numbers.
+
+One finite-ring detail: at \(L=2\) the two bonds contribute to the same off-diagonal matrix element, making it \(-1\) in the one-magnon sector. The irreducibility, sign, and simplicity argument still holds.
+
+## 2. Circle kernels
+
+Lemma 2.1: CORRECT. The derivative of the overlap formula is an almost-everywhere derivative. The overlap is Lipschitz, and
+\[
+|c-\beta|\leq \min(c+\beta,\pi-c-\beta)
+\]
+gives the required sign. Layer cake then proves the claim.
+
+Lemma 2.2:
+
+1. (i) CORRECT AFTER MINOR REPAIR. The Poisson-kernel coefficients are \(q^{|k|}\) and \(t^{|k|}\), and both masses are one. Delete “\(q:=\|K\|_1=1\)”, since \(q=e^{-\lambda}<1\) is already the nome. The two kernels decrease with circular distance.
+2. (ii) CORRECT. The multiplier is \(q^{|k|}/(1+q^{2|k|})=1/(2\cosh k\lambda)\). In the stated Fourier convention the constant term of \(r_0\) is \(1/(2\pi)\). Matching the remaining cosine coefficients gives
+   \[
+   r_0(x)=\frac{K_e}{\pi^2}\operatorname{dn}(2K_ex/\pi,k).
+   \]
+   The endpoint values follow from \(\operatorname{dn}(0)=1\) and \(\operatorname{dn}(K_e)=k'\). The periodized \(R\) has the same coefficients. Since \(R'/R=-b\tanh(bx)\) and \(R''/R=b^2(1-2\operatorname{sech}^2(bx))\), the two derivative bounds pass through the positive image sum.
+3. (iii) CORRECT. Multiplying \(\widehat a_{1,k}\widehat r_{0,k}\) gives \(t^{|k|}/(1+t^{|k|})\), including \(1/2\) at zero. Thus \(J=a_1*r_0\). Positivity, unimodality, and both derivative estimates follow. The inverse identity follows from \(I+K*\) times \(I-J*\) being the identity.
+4. (iv) CORRECT. The series converges uniformly since \(\|J^{*m}\|_\infty\leq 2^{1-m}\|J\|_\infty\). Its Fourier coefficients sum to \(\widehat J_k/(1-\widehat J_k)=t^{|k|}\). Nonnegative Fourier coefficients put the maximum of each power at zero.
+5. (v) CORRECT. The endpoint values of \(K\) are \(\coth\lambda/\pi\) and \(\tanh\lambda/\pi\). Consequently
+   \[
+   \|K'\|_1=\frac{2}{\pi}(\coth\lambda-\tanh\lambda)
+   =\frac{4}{\pi\sinh 2\lambda}.
+   \]
+   There is a short proof of the \(\ln2\) bound that avoids assuming positivity of the Poisson images. The function \(f(u)=(1+e^{2\lambda u})^{-1}\) is convex on \(u\geq0\), so its trapezoidal sum dominates its integral:
+   \[
+   \pi J(0)=2\left(\tfrac12 f(0)+\sum_{j\geq1} f(j)\right)
+   \geq 2\int_0^\infty f(u)\,du=\frac{\ln2}{\lambda}.
+   \]
+   The three-term lower bound follows by dropping positive terms.
+6. (vi) CORRECT. The sign polynomial is \(c^2+Cc-2\). Its negative root lies below \(-1\), and its positive root lies in \((0,1)\). Thus \(|K'|\) has one maximum on the positive half-circle, and \(\|K''\|_1=4M_1\). The Fourier bound is \(M_1\leq 4t/[\pi(1-t)^2]\). Dividing by the value of \(\|K'\|_1\) gives \(\coth\lambda/2\).
+7. (vii) CORRECT. The only critical value of \(s=\operatorname{sn}^2 u\) in \((0,1)\) is \(1/(1+k')\). On each half-circle the logarithmic derivative has one excursion of magnitude at most \(b\), so its total variation is at most \(4b\). The quotient rule gives \(|\ell'|\leq2b^2\).
+
+Lemma 2.3(i)–(iv): CORRECT. For (i), apply the image argument to both tails together. The translates of the two-sided out arc form a subset of \(\{|y|\geq A\}\), giving
+\[
+2\int_A^{\pi/2}r_0\leq 2\int_A^\infty R\leq \lambda R(A).
+\]
+Monotonicity gives the length bound. For (ii), the two nearest images contribute at most \(2R(x)\), and the two geometric sums contribute at most \(4R(x)/(e^{b\pi}-1)\). This gives the stated \(c_p\). For (iii), the two reciprocal bounds are
+\[
+\int_{-A}^A\frac{dx}{r_0(x)}
+\leq \frac{\pi}{r_0(A)},\qquad
+\int_{-A}^A\frac{dx}{r_0(x)}
+\leq \frac{4\lambda}{b}\sinh(bA)
+\leq \frac{2c_p}{b r_0(A)}.
+\]
+For \(\lambda\leq\pi^2/2\), \(c_p\leq2+4/(e^2-1)=2.626070571\). Beyond that point the other entry in \(\kappa_A\) is at most one. For (iv), substituting \(u=2K_ex/\pi\) gives \(r_0(x)\,dx=\operatorname{dn}(u)\,du/(2\pi)\), including the stated factor \(1/(2\pi)\) in \(T(Q)\).
+
+## 3. Lemma 4.1
+
+Part (a), case 1: CORRECT. Write \(F(y)=J(x-y)\). Each gap strictly to the left of the gap containing \(x\) pays for its left endpoint, and each gap to the right pays for its right endpoint. On the gap containing \(x\), \(F\) is at least the smaller endpoint value. Its mass therefore pays for the smaller of the two remaining root terms, leaving a loss at most \(J(0)/L\).
+
+Part (a), case 2: CORRECT AFTER MINOR REPAIR. The stated monotonicities are right. Traveling from \(-Q\) to \(x^*=x-\pi/2\), the distance is \(\pi-x+y\), which increases. From \(x^*\) to \(x\), it decreases. Thus \(F\) decreases, increases, then decreases on the three successive pieces of the inner interval.
+
+Suppose \(x^*\in g_m\) and \(x\in g_k\), with \(m<k\). The gaps \(i<m\) use roots \(2,\ldots,m\). Omit \(g_m\). The gaps \(m<i<k\) use roots \(m+1,\ldots,k-1\). Gap \(k\) pays for the smaller of roots \(k,k+1\), and the gaps \(i>k\) use roots \(k+2,\ldots,n\). This leaves root 1 and a loss at most \(J(0)/L\) at gap \(k\). No root is used twice.
+
+The written instructions conflict when \(m=k\), since they both omit that gap and assign it two endpoints. In this case omit it. The earlier gaps use roots \(2,\ldots,m\), and the later gaps use roots \(m+2,\ldots,n\). The two unused terms are \(F(x_1)\) and \(F(x_{m+1})\leq J(0)\). This proves the same bound. Cases where an extremum is a root follow by one-sided continuity. Finally, for \(Q<y<\pi-Q\),
+\[
+0\leq y-x\leq\pi-Q-x=d(x,x_1)\leq\pi/2,
+\]
+which proves the comparison on out.
+
+Part (b), both bounds: CORRECT AFTER MINOR REPAIR to the pairing description. If \(y^*\in g_m\), then \(F(u)=J(y-u)\) decreases to its minimum and increases afterward. For the lower bound, omit \(g_m\). The earlier gaps use their right endpoints and the later gaps use their left endpoints, covering roots \(2,\ldots,n-1\) once. For the upper bound, use the left endpoints before \(g_m\), the right endpoints after it, and the endpoint of \(g_m\) with larger \(F\). These are distinct, and the remaining root enters with a minus sign. If \(y^*\) lies in out, \(F\) is monotone on the whole inner interval. Assigning all gaps their farther endpoints or all their nearer endpoints leaves just one end root. The lower loss is then bounded by \(\psi/L\). This also covers an antipode at an end root by continuity.
+
+## 4. Corollary 4.2, Lemma 4.3, and Theorem 4.4
+
+Corollary 4.2: CORRECT. The inverse \( (I-J_{\rm out})^{-1}\) preserves order and has \(L^1\) norm at most two. Since \(\|\psi\|_1\leq1\), evenness gives at most \(1/L\) negative mass on each half. In the convolution estimate, removing the out restrictions increases every nonnegative term. Each translate then contributes at most \(\sum_{m\geq2}J^{*m}(0)=K(0)-J(0)\).
+
+Lemma 4.3: CORRECT. F3 and \(v\leq s_Q\) give \(Lr_0(Q)\geq(1-\omega_Q)r_0(Q)/(2T(Q))\). The other entry follows from \(L\geq4\). In terms of \(\phi=\operatorname{am}(u_Q)\) the resulting bound, in units \(K_e/\pi^2\), is
+\[
+\sqrt{1-k^2\sin^2\phi}\max\left(4,\frac{\pi}{\pi-2\phi}\right).
+\]
+For \(\phi\leq3\pi/8\) the first entry gives at least \(4\sin(\pi/8)\). For \(\psi=\pi/2-\phi\leq\pi/8\), the second entry gives at least \(k\pi\sin\psi/(2\psi)\geq4k\sin(\pi/8)\), by monotonicity of \(\sin\psi/\psi\). The weaker common lower bound is the one claimed.
+
+Theorem 4.4, small and intermediate \(\lambda\): CORRECT. In case 2 the positive out contribution is at least \(J(x-x_1)h_Q\), with \(h_Q\geq1/L\), which pays for the unused root. Both cases therefore give \(\sigma_L(x)\geq r_0(Q)-[2K(0)-J(0)]/L\).
+
+Poisson summation gives
+\[
+\theta_2(e^{-\lambda})=\sqrt{\pi/\lambda}
+\left(1+2\sum_{m\geq1}(-1)^m e^{-\pi^2m^2/\lambda}\right)
+\geq\sqrt{\pi/\lambda}(1-2e^{-\pi^2/\lambda}).
+\]
+The lower bound is positive throughout the interval where A squares it. Substituting \(kK_e=(\pi/2)\theta_2^2\) gives the stated bound
+\[
+\Phi\leq
+\frac{\lambda[2\coth\lambda-\pi J(0)]}
+{2\pi\sin(\pi/8)(1-2e^{-\pi^2/\lambda})^2}.
+\]
+After the \(\ln2/\lambda\) substitution the numerator is \(2\lambda\coth\lambda-\ln2\). It is positive and increasing since \(\sinh\lambda\cosh\lambda>\lambda\). The denominator is positive and decreasing. The endpoint values of this majorant are \(0.5435095134\) at \(0^+\) and \(0.8040535423\) at 1. Thus \(0.804\) is a rounded value, not an upper bound to three decimals.
+
+For the cells, let \(j_3(l)=1/2+2\sum_{k=1}^3(1+e^{2kl})^{-1}\). Both \(j_3\) and \(\coth\) decrease. On a cell \([l_0,l_1]\) the upper numerator is \(l_1[2\coth l_0-j_3(l_1)]\), and the lower denominator is evaluated at \(l_1\). The bracket is positive. I recomputed all 36 cells with 40-decimal interval arithmetic, using \(l_0=(100+i)/100\), \(l_1=(101+i)/100\), and \(\sin(\pi/8)=\sqrt{2-\sqrt2}/2\). The cell bounds increase, with first value \(0.7783588265\) and last value in \((0.9389454338,0.9389454340)\). The bound \(0.939\) holds. The corresponding point evaluations at 1 and 1.36, using \(j_3\) without cell bracketing, are \(0.7682060879\) and \(0.9354803531\).
+
+Theorem 4.4, direct bound: ERROR in the last decimal inequality. The function \(\tanh(\lambda/2)-\tfrac12\coth\lambda\) is increasing, but its value at 1.36 is \(0.0209991362497<0.021\). Replace the uniform lower bound by \(0.02099/\pi\). For the stated “every configuration” claim, \(L=2,n=1\) with the point at \(\pi/2\), evaluated at that same point, attains the elementary lower bound. Strict positivity survives.
+
+For \(n=1\), the minimum of \(a_1/K\) is \(\Delta/(1+\Delta)>1/2\), so the actual one-root solution has positive density everywhere. If the quantitative small-\(\lambda\) margin is intended for \(n=1\) as well, add that \(a_1(0)\geq r_0(0)\), \(2K(0)-J(0)\geq K(0)\), and \(Lr_0(0)\geq2K_e/\pi^2\geq4k\sin(\pi/8)K_e/\pi^2\). These give the same estimate at the sole point of the inner interval.
+
+## 5. Theorem 4.5
+
+Analyticity of \(x(\Delta)\) through 1: ERROR. For \(L=4,n=2\), the positive XXX root solves \(6\arctan(2u)=\pi\), hence \(u_*=1/(2\sqrt3)\). On the easy-axis side,
+\[
+x_2(\Delta)=\lambda u_2(\Delta)\sim \frac{\sqrt{2(\Delta-1)}}{2\sqrt3}.
+\]
+It has no finite right derivative at 1. All the unscaled roots converge to zero, so they also lose strict ordering in that coordinate at 1. State the through-\(1\) theorem in \(u\), and state analyticity and ordering in \(x\) separately on the two open sides.
+
+Continuation in \(u\): CORRECT. The phase ratios are analytic in \(s\) after canceling the common factor \(\gamma\). The energy has the same removable singularity, with \(e(\lambda u)\to-2/(1+4u^2)\). B gives \(\cosh(\pi u_n)\leq L\). At a subsequential limit the XXX equations exclude equal roots because their quantum numbers differ. The density that passes to the limit is \(\gamma\sigma_L(\gamma u)\), bounded below on the root interval by \(0.168/(2\cosh\pi u)\). The limiting Hessian therefore has a strictly positive diagonal contribution and a positive semidefinite scattering contribution. The implicit function theorem applies, and B's local-uniqueness argument identifies the two branches on their overlap.
+
+Continuation on \(0<\lambda<\infty\): CORRECT after the decimal repair in Theorem 4.4. At a finite endpoint take a limit in the closed ordered interval of representatives. Symmetry would force a root reaching \(\pi/2\) to be accompanied by one at \(-\pi/2\), excluded by F4. Ordinary collisions are excluded by F1's quantum numbers. Nonnegative density on the moving interval passes to the limit, and Theorem 4.4 restores strict positivity there. The Hessian is positive definite. Local uniqueness identifies the continued solution with the incoming branch by the open-and-closed coincidence argument in B.
+
+Identification of \(E=F_L(n)\): CORRECT. The scalar energy is real analytic in \(\Delta\) through 1 in the repaired coordinate. The simple sector ground energy is real analytic, and B gives equality on an open interval below 1. The identity theorem suffices. No completeness or nonvanishing of a Bethe vector on \(\Delta>1\) is used. B supplies the identification at both parities. F4 excludes boundary collision also at \(2n=L\) and \(2n=L-1\), and F3 gives out masses \(1/L\) and \(2/L\), respectively. There is no missing parity case. The positive sign of the odd-ring doubling defect suggested in Section 9 is a separate numerical observation.
+
+## 6. Section 3 and uniformity in \(Q\)
+
+Lemmas 3.1–3.4: CORRECT, with derivatives of the bulk energy at the right endpoint understood from the left.
+
+- 3.1. Extending the restricted equation to the circle and applying \(I-J*\) gives each of the three dual equations. The constant source dresses to \(1/2\). The choice of \(h\) gives \(\widetilde\epsilon(\pm Q)=0\).
+- 3.2. The positive out inverse has both \(L^\infty\) and \(L^1\) norms bounded by \(1/(1-\omega_Q)\leq2\). This gives the stated pointwise and mass bounds for \(s_Q\). Integrating the dual equation gives \(m+h_Q=1/2+h_Q/2\). On in, \(U_1\leq r_0(Q)\), so both entries in \(w\) follow from Lemma 2.3. Integrating the truncated exponential gives \(\int w\leq2\kappa_w/b\), with \(\kappa_w\leq 1+\ln(2[2+4/(e^2-1)])=2.658635831\) on the small-\(\lambda\) range, and \(\kappa_w\leq1\) beyond \(\pi^2/2\). The derivative estimates follow by differentiating the kernels in the dual equation.
+- 3.3. Translating an arc by \(u\) loses at most \(d(u,0)\) of its length. Thus the variation bound reduces to \(2\int_0^{\pi/2}u(-J'(u))\,du=1/2-\pi J(\pi/2)\). The extension equation for the restricted inverse gives the norm bound \((1+1/2)/(1-1/2)=3\).
+- 3.4. The boundary terms from differentiating the out convolution vanish at both ends. On the positive half-circle the odd reduced kernel \(J(x-y)-J(x+y)\) is nonnegative, as is the source \(-ar_0'(x)\). The positive inverse gives \(\epsilon'\geq0\) there. Taking absolute values in the full derivative equation gives \(|\widetilde\epsilon'|\leq ab s_Q\). These imply \(0\leq e_{\rm bulk}''\leq2ab\). In the derivative of \(w_v\), the four bounds have coefficients \(1,2,1,2\) in units \(ab^2U_1/r\), which gives the stated variation bound.
+
+At \(Q=\pi/2\) out is empty, \(r=r_0\), \(Z=1/2\), and \(m=1/2\). In particular \(\epsilon'(Q)=0\) by periodic evenness. None of the estimates divides by the length or mass of out. The quantity \(1/T(Q)\) in Lemma 4.3 is used only at \(Q=x_n<\pi/2\).
+
+## 7. Sections 5 and 6
+
+Lemma 5.1: CORRECT. On each inner gap the one-sided values of \(\operatorname{Cum}R\) run from \(+1/(2L)\) to \(-1/(2L)\). On the right end, first crossing gives \(\nu/2-z_L\geq0\), and the negative-mass bound gives
+\[
+\nu/2-z_L(x)\leq \frac1{2L}+\int_{x_n}^x(\sigma_L)_-\leq\frac{3}{2L}.
+\]
+Reflection gives the left end. This is the step that allows \(\sigma_L\) to change sign beyond \(x_n\). For \(\lambda\geq1.36\) the integral of the negative part vanishes.
+
+Lemma 5.2: CORRECT. Since \(R\) has total mass zero, \(\nu-m=\int Z\,dR=-\int Z'\operatorname{Cum}R\), giving \(s/(2L)\). Use the lifted primitive \(k(u)=\int_0^uK\), for which \(k(u+\pi)=k(u)+1\). Integration by parts gives the stated \(c_0=(K_QG)(-Q)\) and
+\[
+0\leq k(x-Q)+k(2Q)\leq k(2Q)\leq1.
+\]
+Consequently \(\|g_1\|_\infty\leq 3(s+s/2)/L\), and \(G(-Q)=0\) bounds \(|c_0|Z(x)\) by \(2\|g_1\|_\infty\). This gives \(g=13.5s\). At full-circle \(Q_L\), one works on the cut interval. There is no endpoint atom and \(\nu=m=1/2\).
+
+Lemma 5.3: CORRECT. The right endpoint term in integration by parts is \(-K(x-Q)(\nu-m)\), and the integral term is \(-\int K'(x-u)G(u)\,du\). Each interval has length at most one period. Applying \(\|K'\|_1\), then \(\|K''\|_1=4M_1\) after differentiation, gives the displayed \(D,D_1\).
+
+Exact energy identity and core estimate: CORRECT wherever the core contains roots. Self-adjointness gives \(\int(e-h)\,d\nu'=\int\epsilon\,dR\). On the core, \(\sigma\geq r/2\) and
+\[
+\left|\left(\frac r\sigma\right)'\right|
+\leq \frac{4(bD+D_1)}{Lr}.
+\]
+Lemma 2.3(iii) gives the claimed variation bound, including when \(A=\pi/2\), since \(r_0(A)\geq2D/L\) suffices. The trapezoid Peano kernel is bounded by \(1/(8L^2)\) before multiplication by \(L\). This yields \(V_f/(8L)\). A single core root gives a zero-length trapezoid contribution.
+
+Ends and empty core: GAP. The stated estimates cover a core containing roots and the case \(r_0(0)<2D/L\). They omit a nonempty interval \([-A,A]\) containing no root. Then \(x_{j_2}\) does not exist. This happens for the actual \(L=4,n=2\) solution at \(\lambda=1.8\). Solving the positive-root equation gives \(x_2\simeq0.4958674\), whereas
+\[
+r_0(0)\simeq0.2824152,\qquad 2D/L\simeq0.2770297,\qquad
+A\simeq0.1147438.
+\]
+Both roots are outside the core.
+
+B's omitted empty-core argument repairs the gap with the advertised constant. In this case \(A<Q\), and
+\[
+\int_{-A}^A r=G(-A)-G(A)\leq 2g/L.
+\]
+Each continuum tail is at most \(4dD/L\), where \(d=\min(\lambda/2,\pi/2)\). The exact identity and sawtooth bound give a total at most \(s ab(2g+8dD)/L\), below the budgeted \(2s ab(2g+4dD)/L\). For a core containing roots with \(A\geq Q\), the end estimate should explicitly stop at \(Q\): \(\int_{x_n}^Q r=G(x_n^+)-G(Q)\leq2g/L\). For \(A<Q\) the two pieces in A are valid. The separate case \(r_0(0)<2D/L\) follows from the tail bound at zero as written.
+
+Curvature: CORRECT. Taylor's bound gives \(\tfrac12(2ab)(s/(2L))^2=ab s^2/(4L^2)\). Only the core quadrature inverts \(z_L\), and positivity has been proved throughout that core. No end estimate requires this inversion.
+
+## 8. Section 7 arithmetic
+
+Section 7: ERROR as written. The main failed numerical implications are
+\[
+203.4+14.5+0.5625=218.4625>218.4,\qquad
+218.4(2\pi^2)=4311.043202396>4311.
+\]
+Both desired bounds can be obtained directly from the unrounded estimates.
+
+With \(s=1.5,\ g=20.25\), define \(c=2+4/(e^2-1)\). The end estimate uses
+\[
+dD\leq \frac{20.25}{\pi}+\frac38\coth\pi
+=6.4457751952+0.3764032024
+=6.8221783977.
+\]
+Here \(2\lambda\leq\sinh2\lambda\) controls the first term. For the second, \(\lambda\coth\lambda\) increases up to the switch in the minimum at \(\pi\), and \(\coth\lambda\) decreases thereafter. The displayed \(0.376\) and \(6.822\) in A are rounded downward. The valid end bound is \(203.366140773\,ab\) to the indicated precision.
+
+For the derivative ratio, \(4+s/(2g)=4+1/27=4.037037037\ldots\). Up to \(\lambda=\pi^2/2\),
+\[
+\frac{\kappa_A\lambda\coth\lambda}{2\pi}
+\leq c\,\frac{\pi}{4}\coth(\pi^2/2)
+=2.062724374\ldots .
+\]
+Beyond the switch it is at most \((\pi/4)\coth(\pi^2/2)=0.7854794142\ldots\). Thus \(\kappa_A D_1/(bD)\leq8.327294694\ldots\). The intermediate multiplication in A does not prove \(8.35\): even \(4.037\times2.07=8.35659\). Also \(2.626<c\).
+
+Using \(c=2.626070571\ldots\) and \(1+\ln(2c)=2.658635830\ldots\), my recomputation gives the following upper-bound expressions.
+
+| Contribution | Value in units of \(ab\), rounded |
+|---|---:|
+| Ends | 203.366140772 |
+| \(V_f\) before division by 8 | 115.620720981 |
+| Core \(V_f/8\) | 14.452590123 |
+| Curvature | 0.562500000 |
+| Ends + core + curvature | 218.381230895 |
+
+For comparison, A's displayed coarse expression for \(V_f\) evaluates to \(115.76\), so its bounds \(115.8\) and \(14.5\) are individually valid. Using the unrounded expressions instead gives
+\[
+K/ab<218.381231,\qquad
+K/M_0<4310.672716,
+\]
+where \(ab/M_0=4\pi^2\tanh(\lambda/2)/\lambda\leq2\pi^2\). This proves both advertised inequalities independently. The final integer operations are valid:
+\[
+(5/2)4311=10777.5\leq10778,\qquad
+10778+\pi^2/4=10780.4674011\ldots<10781.
+\]
+
+For the separately labeled numerical evaluation, I get the small-\(\lambda\) limit \(4153.38254\) in units of \(M_0\), split into ends \(3953.40223\), core \(188.87700\), and curvature \(11.10330\). I used the maximizing root \(c_* =4/(C+\sqrt{C^2+8})\) from Lemma 2.2(vi) to evaluate \(M_1\). At \(1.36\), using \(s=1/2\), I get \(461.74949\). An independent grid on \([10^{-4},200]\) reproduces the reported numerical maxima to the quoted precision. The grid does not certify a continuous supremum. Finally \(2.5(4153.4)+\pi^2/4=10385.96740\ldots\), which rounds to \(10386\).
+
+## Problems found, most serious first
+
+1. The unscaled roots in Theorem 4.5 are not analytic or strictly ordered through \(\Delta=1\). The theorem needs the XXX coordinate there. The energy identification survives.
+2. Section 6 omits a core interval containing no roots. The \(L=4,n=2,\lambda=1.8\) example realizes it. B's cumulative-error estimate closes the gap.
+3. Section 7 rounds several intermediate bounds downward, and its two final numerical implications fail. The unrounded bounds give \(K/M_0<4310.673\).
+4. Lemma 4.1(a) gives incompatible instructions when \(x\) and \(x^*\) lie in the same gap. Omitting that gap and counting the two unused roots proves the claimed inequality. Part (b) also needs the monotone-interval assignment when \(y^*\) lies in out.
+5. The direct \(0.021/\pi\) lower bound fails at \(1.36\). The valid \(0.02099/\pi\) is sufficient. The remaining minor corrections are the reused symbol \(q\), the double bond at \(L=2\), and the explicit one-root check if the quantitative margin is asserted there.
+
+[gpt_solve: backend=codex model=gpt-6.2-astra effort=high transcript=20261118T110136-57918]

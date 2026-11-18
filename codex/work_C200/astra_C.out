@@ -1,0 +1,183 @@
+Theorem H is correct under the two cited facts. The residual has the right sign, the node at \(+\infty\) contributes the stated constant, and the counting argument works at jumps. The substantive defect is in the sharpness remark. Its unrestricted joint limit is false, although the constant it claims is sharp. There are also two endpoint corrections in Lemma 2.1.
+
+## Part 1. Comparison
+
+Comparison principle. Correct. If the conclusion fails, choose \(j\) maximizing \(x_j-y_j>0\). Then for every \(k\),
+\[
+(x_j-x_k)-(y_j-y_k)=(x_j-y_j)-(x_k-y_k)\ge0.
+\]
+Since \(-\theta\) is increasing, every interaction term in \(F_j(x)-F_j(y)\) is nonnegative. The driving term \(L[p(x_j)-p(y_j)]\) is strictly positive. Thus \(F_j(x)>F_j(y)\), a contradiction. Ties for the maximizing index and coincident coordinates cause no problem.
+
+Lemma 1.1. Correct. Maximize over \(\mathrm{Fin}\) and use the same argument for \(k\in\mathrm{Fin}\). For every omitted \(k\),
+\[
+-\theta(x_j^*-x_k^*)\ge-(\pi-2\eta).
+\]
+This also checks the sign by a direct limit, since \(y_j-(+\infty)=-\infty\) and \(\theta(-\infty)=\pi-2\eta\). The driving term still gives \(F_j(x^*)>\widetilde F_j\). If \(\mathrm{Fin}\) is empty, the conclusion is vacuous.
+
+## Part 2. Quadrature
+
+Definition of the matched distances. The stated range \((0,\infty]\) is wrong at \(m=0\). Both defining equations give \(w_\pm(0)=0\). Use \([0,\infty]\). At the other endpoints the convention is correct, since \(N\) attains neither \(0\) nor \(1/2\) at a finite argument.
+
+Reflection is valid because \(N(-v)=1/2-N(v)\). It exchanges \(w_+\) and \(w_-\), hence \(D_{-y}=-D_y\). For \(y=0\), equivalently \(\alpha=\pi/4\), this already gives \(D_y\equiv0\).
+
+Step 1. Correct. For the plus distance, \(e^{bw_+}=\tan(\alpha+\phi)/\tan\alpha\). For the minus distance, \(e^{bw_-}=\tan\alpha/\tan(\alpha-\phi)\). Applying \(\coth(s/2)=(e^s+1)/(e^s-1)\) gives
+\[
+\coth(bw_\pm/2)
+=\frac{\sin(2\alpha\pm\phi)}{\sin\phi}
+=S\cot\phi\pm d.
+\]
+The plus threshold is \(\phi=\pi/2-\alpha\), where \(z+d=S\tan\alpha+d=1\). The minus threshold is \(\phi=\alpha\), where \(z-d=S\cot\alpha-d=1\). Since \(z\) decreases strictly, the corresponding distance is infinite at and beyond each threshold. On the finite side the inverse has prefactor \(2/b=a\). When \(\alpha=\pi/4\) the thresholds coincide.
+
+Step 2. Correct. For \(u=\operatorname{arccoth}x\),
+\[
+\frac{du}{dx}=-\frac1{x^2-1}=-\sinh^2u.
+\]
+Substitution in \(H'=\Theta'(au)a\,du/dx\) gives (2.1). As \(x\downarrow1\), the ratio in (2.1) is \(O(e^{-2(a-1)u})\). As \(x\to\infty\), its numerator tends to zero and its denominator tends to \(\sin^2\eta>0\). Thus the extension of \(h\) by zero is continuous, including at \(1\). The order of subtraction is
+\[
+D_y=H(z+d)-H(z-d)=-\int_{z-d}^{z+d}h(x)\,dx.
+\]
+In particular \(D_y\le0\) on the chosen half \(y\le0\).
+
+Step 3. Correct. With \(t=\sinh^2u\),
+\[
+g'(t)=a\frac{\sinh(2au)}{\sinh(2u)},\qquad
+\frac{d}{du}\log g'(t)=2a\coth(2au)-2\coth(2u)>0.
+\]
+The last sign follows since \((r\coth r)'=(\sinh r\cosh r-r)/\sinh^2r>0\). Hence \(g''(t)>0\) for \(t>0\). The derivative of \(t/(g+\sin^2\eta)\) has numerator
+\[
+K(t)=g(t)+\sin^2\eta-tg'(t),\qquad K'(t)=-tg''(t)<0.
+\]
+Here \(K(0)=\sin^2\eta\), using \(g'(0)=a^2\). The ratio is positive inside and tends to zero at both ends, the large-\(u\) limit following from \(a>1\). It therefore has an interior maximum, and strict decrease of \(K\) makes it unique. Reversing the variable from \(u\) to \(x=\coth u\) preserves the single maximum.
+
+Step 4. Correct for weak unimodality. The assertion of a “single maximum” needs the exception \(d=0\), when every \(m\) is a maximizer. There can also be a flat zero interval after saturation.
+
+For \(d>0\),
+\[
+B'(z)=h(z+d)-h(z-d).
+\]
+If the window lies left of the mode, this is nonnegative. If it lies right of the mode, it is nonpositive. While the window straddles the mode, the first term decreases and the second is nondecreasing. Also \(B(0)=0\) since \(d<1\), and \(B(z)\to0\) as \(z\to\infty\) since \(h(x)\to0\) and the window has fixed width. Traversing \(z\) in reverse as \(m\) increases, and extending by zero after saturation, gives
+\[
+\operatorname{TV}(D_y)=2\sup_m|D_y(m)|,\qquad
+\sup_m|D_y(m)|\le 2d\|h\|_\infty .
+\]
+Both identities or inequalities remain valid at \(d=0\).
+
+Step 5. Correct, including at \(\eta=\pi/4\). The first two coefficients of \(\sinh^2(au)-2a\sinh^2u\) are \(-a(2-a)\) and \((a^4-2a)/3\). Every coefficient from degree four onward is positive since \(a^3\ge27/8>2\). The quartic comparison requires
+\[
+\frac{a^4-2a}{3}\ge\frac{a^2}{4}
+\quad\Longleftrightarrow\quad
+a^2-\frac2a\ge\frac34,
+\]
+and the left side is increasing with value \(11/12\) at \(a=3/2\). Since \(\sin\eta\ge2\eta/\pi=2-a\), the claimed square follows:
+\[
+\sinh^2(au)+\sin^2\eta-2a\sinh^2u
+\ge \left(2-a-\frac a2u^2\right)^2.
+\]
+Thus \(\|h\|_\infty\le\sin(2\eta)/(4\pi)\). Step 4 supplies the factor \(4d\) for total variation, giving \(d\sin(2\eta)/\pi\). Finally \(d\le1\) and \(\sin(2\eta)\le2\eta\).
+
+Remark (i) is correct within the proof of Lemma 2.1. Remark (ii) needs the rate condition given under Q1 below. The quoted numerical sample maxima play no role in the proof. I did not reproduce those samples.
+
+Lemma 2.2. Correct for every fixed real \(L>0\). On the negative half of the integral the sawtooth argument is \(-Lm_-(w)\). The oddness identity fails at integers, including zero, where both sawtooth values are \(-1/2\). Each \(Lm_\pm\) is strictly increasing with bounded range, so only finitely many \(w\) are exceptional. They have zero \(T(w)\,dw\) mass.
+
+The pushforward under each \(m_\pm\) has cumulative mass \(\Theta(w_\pm(m))\), including the value \(q/2\) at saturation. A finite preimage of a point is a singleton, and the limiting range endpoint has empty preimage, so there is no atom at either kind of point. Subtraction therefore gives
+\[
+J(y)=\int_{[0,1/2]}s^\#(Lm)\,dD_y(m),\qquad
+|J(y)|\le\tfrac12\operatorname{TV}(D_y).
+\]
+Coincident saturation points cause no issue. In particular \(J(0)=0\).
+
+## Part 3. Theorem H
+
+Step 1. Correct. The range of \(LN\) is \((0,n)\), so exactly the levels \(1,\ldots,n-1\) have finite inverse images. There are no finite nodes for \(L=2\).
+
+Step 2. Correct. For each finite trial node,
+\[
+\int_{y_k}^\infty T(u-v)\,dv
+=\int_{-\infty}^{u-y_k}T(s)\,ds=q/2+\Theta(u-y_k).
+\]
+Consequently the constant subtracted from \(p/(2\pi)+T*N_y\) to obtain \(z\) is
+\[
+\frac{(n-1)q}{2L}+\frac{q}{2L}=\frac q4.
+\]
+The second summand comes from the infinite node. For the continuum convolution, Tonelli gives
+\[
+\int_{-\infty}^u(T*r_0)(w)\,dw
+=\int_{\mathbb R}T(s)N(u-s)\,ds.
+\]
+Integration of \(a_1\) contributes \((p(u)+\eta)/(2\pi)\). Using \(\eta/(2\pi)+q/4=1/4\) now yields \(z=N-1/4-T*(N-N_y)\). At \(y_j\),
+\[
+LN(y_j)-L/4-I_j=j-n/2-j+(n+1)/2=1/2.
+\]
+This proves (3.1) with the displayed minus sign.
+
+Step 3. Correct. For \(0<t=LN(v)<n\) the number of positive integers \(k\le n-1\) with \(k\le t\) is \(\lfloor t\rfloor\), including at integer \(t\). At such a point \(1/2+s^\#(t)=0\), as required. Integer translation of \(s^\#\) holds everywhere, even at jumps. Hence
+\[
+L[T*(N-N_y)](y_j)=q/2+J(y_j)
+\le q/2+\eta/\pi=1/2.
+\]
+The residual is nonnegative and Lemma 1.1 applies. As a direct \(L=4\) check, \(y_1=0\), \(I_1=-1/2\), and \(\widetilde F_1=-(\pi-2\eta)+\pi=2\eta\), in agreement with \(J(0)=0\).
+
+Step 4. Correct. The lower bound passes to \(N_x(v-)\) by taking an increasing sequence tending to \(v\) and using continuity of \(N\). Reflection then requires a strict inequality on the reflected side:
+\[
+\#\{x_j^*\le v\}=n-\#\{x_j^*<-v\}.
+\]
+This is precisely the left limit used in the text. It handles a root at zero and a root coincident with a trial node. For \(L=2\), symmetry forces \(x_1^*=0\), and the cumulative discrepancy has supremum \(1/4\).
+
+Step 5. Correct. Put \(E=N_x-N\). Its Stieltjes derivative is \(\mu_x-r_0\,dv\), with \(\mu_x=L^{-1}\sum_j\delta_{x_j^*}\). Since \(d_vT(u-v)=-T'(u-v)\,dv\), integration by parts gives the plus sign
+\[
+\int_{\mathbb R}T(u-v)\,dE(v)
+=\int_{\mathbb R}T'(u-v)E(v)\,dv.
+\]
+The boundary product vanishes since \(E\) is bounded and \(T\) decays. Evenness and monotonicity give \(\int|T'|=2T(0)=2\cot\eta/\pi\), proving the density bound.
+
+## Q1. Sharpness
+
+The coefficient in Lemma 2.1 is sharp uniformly in \(\eta\). The proposed joint limit does not exist without a rate condition.
+
+Take \(\alpha\to0\), so \(d\to1\), and \(z\to\infty\). Every such \(z\) is attainable by choosing \(\cot\phi=z/S\). Uniformly for \(x\in[z-d,z+d]\), \(u=\operatorname{arccoth}x\sim1/z\). Dividing numerator and denominator of (2.1) by \(u^2\), and using \(a\to2\), gives
+\[
+\frac{h(x)}{\eta}\sim\frac{2}{\pi(4+\eta^2z^2)}.
+\]
+The window has length \(2d\to2\). Thus \(z=\eta^{-1/2}\) gives \(|D_y|/\eta\to1/\pi\), whereas \(z=\eta^{-2}\) gives \(|D_y|/\eta\to0\). One can take \(\alpha=\eta\) in both examples. The first sequence saturates both the \(d\sin(2\eta)/\pi\) and \(2\eta/\pi\) total-variation bounds asymptotically. The second disproves the unqualified limit.
+
+For fixed \(\eta\), the best coefficient of \(d=|\cos2\alpha|\) is \(4\|h\|_\infty\). The upper bound is Step 4. For the reverse inequality, take \(d\downarrow0\) and center the integration window at the mode \(x_0\). Then
+\[
+\frac{\operatorname{TV}(D_y)}{d}
+\ge\frac2d\int_{x_0-d}^{x_0+d}h(x)\,dx
+\longrightarrow4h(x_0).
+\]
+On the original \(\eta\)-range this coefficient is strictly smaller than \(\sin(2\eta)/\pi\) at every fixed \(\eta>0\). Indeed \(\sin\eta>2\eta/\pi\) makes the Step 5 denominator inequality strict, and \(h\) attains its maximum at a finite interior point.
+
+Theorem H’s cumulative rate is optimal in order. At any root \(r\), continuity of \(N\) gives
+\[
+E(r)-E(r-)=1/L,\qquad
+\max\{|E(r)|,|E(r-)|\}\ge1/(2L).
+\]
+The supremum over real \(v\) sees the left limit even if the limiting value is never attained. Therefore
+\[
+\frac12\le L\sup_v|N_x(v)-N(v)|\le1
+\]
+uniformly in both parameters. The uniform lower constant \(1/2\) is itself optimal, by \(L=2\).
+
+## Q2. Beyond \(\pi/4\)
+
+The sign and total-variation identity survive for every \(0<\eta<\pi/2\), since Steps 1–4 use only \(a>1\). The same sharp fixed-\(\eta\) coefficient \(4\|h\|_\infty\) applies. A closed-form bound on the extended interval is
+\[
+\operatorname{TV}(D_y)
+\le\min\left\{q,\ \frac{2d\sin(2\eta)}{a\pi}\right\}.
+\]
+Indeed \(|D_y|\le q/2\). Also convexity of \(\sinh\) on the positive axis gives \(\sinh(au)\ge a\sinh u\), so (2.1) gives \(4\|h\|_\infty\le2\sin(2\eta)/(a\pi)\). In particular the original coarse bound \(2\eta/\pi\) survives throughout the extension, since \(q\le2\eta/\pi\) there.
+
+The original coefficient of \(d\sin(2\eta)/\pi\) fails near \(\eta=\pi/2\). For fixed \(u>0\),
+\[
+\frac{4\pi h(\coth u)}{\sin(2\eta)}
+=\frac{2a\sinh^2u}{\sinh^2(au)+\sin^2\eta}
+\longrightarrow\frac{2\sinh^2u}{1+\sinh^2u}.
+\]
+Choose \(\sinh^2u>1\). The limit exceeds one, and the shrinking-window argument converts this into a counterexample for finite \(\eta<\pi/2\) and \(d>0\). Sending \(u\to\infty\) afterward makes the limit approach two. Thus the best uniform multiplier of \(d\sin(2\eta)/\pi\) on the extended interval is \(2\).
+
+The workspace was read-only, so the review is recorded here and the project state file was not updated.
+
+Verdict: correct after the listed repairs. Allow \(w_\pm(0)=0\), state unimodality weakly with the constant case at \(\alpha=\pi/4\), and give a saturating sequence in the sharpness remark. Theorem H stands as stated.
+
+[gpt_solve: backend=codex model=gpt-6.2-astra effort=high transcript=20261118T113134-68784]

@@ -1,0 +1,192 @@
+Theorem G follows from (P1) and unimodality. The same construction works at every edge density, including \(\lambda_Q<\Lambda\). It changes only the trial nodes beyond \(Q\).
+
+Let \(\ell\) be the width of the last continuum cell, so that \(L\int_{Q-\ell}^Q r_Q=1\), and put \(d=\max(\eta,\ell)\). The construction places a fixed number \(M\) of exterior nodes at \(Q+iAd\), \(1\le i\le M\). At an interior node one cell or more from \(Q\), their combined gain can exceed \(C_S\eta/\rho(y)\) by taking \(M\) large. The issue is whether these exterior nodes satisfy their own Bethe inequalities. They do because the continuum density at depths between \(d\) and \(iAd\) supplies a logarithmic lower bound on \(t(Q+iAd)-n\). Taking \(A\) large controls the coefficient of the competing logarithm from the exterior nodes to the left.
+
+Here is the proof, including the case in which \(Q\) is too small to fit the interval used in that estimate.
+
+## 1. The inequality for arbitrary exterior positions
+
+Write \(k=K_0\), \(\kappa=k+\tfrac12\), and suppose \(n>k\). Keep the \(n-k\) interior trial nodes at
+\[
+t(y_j)=j+k,\qquad 1\le j\le n-k.
+\]
+In particular, \(y_{n-k}=Q\). Place \(m\le k\) further nodes at arbitrary ordered points \(z_1<\cdots<z_m\) above \(Q\), and the remaining \(k-m\) nodes at \(+\infty\).
+
+For each interior node \(y=y_j\), the following lower bound holds:
+\[
+\frac{\widetilde F_j}{2\pi}
+\ge
+(1-q)\kappa+\kappa B(Q+y)+\frac12 B(Q-y)
++\sum_{i=1}^m B(z_i-y)-S(y).
+\tag{1}
+\]
+
+To see this, let \(d\mu(v)=Lr_Q(v)\mathbf 1_{[-Q,Q]}(v)\,dv\). Differentiating in \(u\) and evaluating at \(u=0\) gives
+\[
+\frac{Lp(u)}{2\pi}+\int\Theta(u-v)\,d\mu(v)=t(u)-\frac n2.
+\tag{2}
+\]
+Both derivatives equal \(Ls(u)\), and both sides vanish at zero by symmetry. Let
+\[
+D(v)=L N_0(v)-\#\{j:y_j\le v\},
+\]
+where only finite nodes contribute at finite \(v\). Integration by parts in (2), using \(\Theta(-\infty)=-q/2\) for the nodes at infinity, gives
+\[
+\frac{\widetilde F_j}{2\pi}
+=t(y_j)-\frac n2-I_j-\int_{\mathbb R}T(y_j-v)D(v)\,dv.
+\tag{3}
+\]
+Indeed, the boundary term from \(D(+\infty)=k-m\) cancels the contribution of the \(k-m\) infinite nodes.
+
+At an interior node the first three terms in (3) give \(\kappa\). On \([-Q,Q]\),
+\[
+D(v)=t(v)-\max(0,\lfloor t(v)\rfloor-k)
+\le k+\{t(v)\}=\kappa+s^\#(t(v)).
+\]
+Below \(-Q\), \(D=0\). Above \(Q\),
+\[
+D(v)=k-\sum_{i=1}^m\mathbf 1_{\{v\ge z_i\}}.
+\]
+Substitution in (3) proves (1), since \(t(y_j)\) is an integer. In particular, the gain from one exterior node is its full tail \(B(z_i-y)\).
+
+We will use two elementary kernel estimates with universal \(b,c>0\):
+\[
+ b\frac{\eta}{x}\le B(x)\le\frac{\eta}{\pi x}
+ \quad(\eta\le x\le2),\qquad
+ (1-q)+B(x)\ge c\frac{\eta}{\min(1,\eta+x)}
+ \quad(x\ge0).
+\tag{4}
+\]
+The upper bound follows by integrating \(T(w)\le\eta/(\pi w^2)\), and holds for all \(x>0\). For the lower bound, the explicit kernel gives \(T(w)\ge c_1\eta/w^2\) for \(\eta\le w\le4\). Integrate over \([x,2x]\). For the second inequality use \(B(x)\ge B(\eta)\) when \(x<\eta\), the first estimate when \(\eta\le x\le1\), and \(1-q=2\eta/\pi\) when \(x\ge1\).
+
+## 2. The exterior nodes satisfy their inequalities
+
+The constants will be chosen in the order \(A,M,k\), with \(k\ge M\) and \(k\ge2\). Since \(n>k\), the last cell lies in the right half of the interval. Define
+\[
+ L\int_{Q-\ell}^Q r_Q(v)\,dv=1,\qquad
+ d=\max(\eta,\ell),\qquad H=Ad,\qquad R=\min(1,Q).
+\]
+First suppose
+\[
+ MH\le R/4.
+\tag{5}
+\]
+Use \(m=M\) exterior nodes at \(z_i=Q+iH\).
+
+By unimodality, the density at the inner end of the last cell is at least its average. Moving farther inward up to the origin only increases it. Thus
+\[
+ Lr_Q(Q-u)\ge \frac1\ell\ge\frac1d
+ \qquad (\ell\le u\le Q).
+\tag{6}
+\]
+
+Fix \(i\), write \(x=iH\), and let \(E_i=t(Q+x)-n\). Positivity of \(a_1\), the equation for \(s\), and (6) give
+\[
+\begin{aligned}
+ E_i
+ &=L\int_0^x s(Q+w)\,dw\\
+ &\ge \int_d^x Lr_Q(Q-u)\int_0^u T(u+w)\,dw\,du\\
+ &\ge c_2\frac{\eta}{d}\int_d^x\frac{du}{u}
+ =c_2\frac{\eta}{d}\log(Ai).
+\end{aligned}
+\tag{7}
+\]
+The integration region is admissible because \(x\le Q/4\). On it, \(\eta\le u\le u+w\le2u\le1/2\), so \(T(u+w)\ge c_1\eta/(4u^2)\). This proves (7) with a universal \(c_2>0\).
+
+Now take the Bethe inequality at \(z_i\), whose index is \(j=n-k+i\). For a finite ordered node, writing \(\Theta(w)=q/2-B(w)\) at positive separations gives
+\[
+ \frac{\widetilde F_j}{2\pi}
+ =\frac{Lp(z_i)}{2\pi}-(1-q)I_j
+ -\sum_{a<j}B(z_i-y_a)+\sum_{a>j}B(y_a-z_i),
+\tag{8}
+\]
+with \(B(+\infty)=0\). The constant sign contributions sum to \(qI_j\). Since \(z_i>Q\), (2) also gives
+\[
+ \frac{Lp(z_i)}{2\pi}
+ =E_i+(1-q)\frac n2+\int B(z_i-v)\,d\mu(v).
+\tag{9}
+\]
+
+The discrete sum over the interior nodes exceeds the integral in (9) by at most \(B(iH)\). Indeed, split \([-Q,Q]\) into all \(n\) unit-\(\mu\)-mass cells. The integrand \(g(v)=B(z_i-v)\) is increasing. On each cell its right-endpoint value exceeds its integral by at most the increment of \(g\) across that cell. Summing gives at most \(g(Q)-g(-Q)\le B(iH)\). Our trial omits the first \(k\) right endpoints, which only decreases the discrete sum.
+
+In (8), drop the nonnegative terms from nodes to the right and use \(n/2-I_j=k-i+\tfrac12>0\). Equations (7)–(9) then give
+\[
+\begin{aligned}
+ \frac{\widetilde F_j}{2\pi}
+ &\ge E_i-B(iH)-\sum_{l=1}^{i-1}B(lH)\\
+ &\ge \frac{\eta}{d}
+ \left[c_2\log(Ai)-\frac{1+\log i}{\pi A}\right].
+\end{aligned}
+\tag{10}
+\]
+Choose \(A\ge e\) with \(1/(\pi A)\le c_2\). The bracket is nonnegative for every \(i\ge1\), independently of \(M\). This checks the top finite node as well, where there is no gain from a node to its right.
+
+## 3. The exterior gain absorbs (P1)
+
+Continue to assume (5). For an interior node \(0<y<Q\), write \(\delta=Q-y\). Since \(t(Q)-t(y)\) is a positive integer, \(\delta\ge\ell\). If \(\delta<1\), then
+\[
+ \rho(y)=\min(1,\eta+\delta)\ge\delta,\qquad \rho(y)\ge d.
+\tag{11}
+\]
+The second inequality uses \(d\le1\), which follows from (5). Also \(\eta\le\delta+iH\le 1+1/4<2\). Thus (4) and (11) give
+\[
+ \sum_{i=1}^M B(z_i-y)
+ \ge b\eta\sum_{i=1}^M\frac1{\delta+iAd}
+ \ge \frac{b\eta}{\rho(y)}\sum_{i=1}^M\frac1{1+iA}.
+\tag{12}
+\]
+With \(A\) already fixed, choose a finite universal \(M\) so that the last sum times \(b\) is at least \(C_S\). By (P1), the exterior gain in (12) covers \(S(y)\) in (1). This includes the node one cell from \(Q\).
+
+The node at \(Q\) has no cell to its right. Directly from the sawtooth integral,
+\[
+ S(Q)\le \frac12\int_{-Q}^Q T(Q-v)\,dv
+ \le \frac12 B(0).
+\tag{13}
+\]
+This is already covered by the third term of (1). For \(y\le0\), one has \(\rho(y)=\min(1,\eta+Q+y)\), so (4) and (P1) give the required bound from \(\kappa[(1-q)+B(Q+y)]\) once \(k\) is universally large. For \(y>0\) with \(\delta\ge1\), \(\rho(y)=1\), and \((1-q)\kappa\) suffices.
+
+## 4. When the interval is too short
+
+Suppose now that (5) fails, so
+\[
+ R<4AMd.
+\tag{14}
+\]
+Put all \(k\) exterior nodes at \(+\infty\), that is, set \(m=0\) in (1). The arguments for \(y\le0\), \(\delta\ge1\), and \(y=Q\) still apply.
+
+At a remaining node \(0<y<Q\) with \(\delta<1\), the integer-cell observation again gives \(\delta\ge\ell\), hence \(\rho(y)\ge\min(1,d)\). Set \(\sigma=\min(1,\eta+Q+y)\). Since \(Q+y\le2Q\), (14) yields
+\[
+ \sigma\le \min(1,\eta+2R)
+ \le (1+8AM)\min(1,d)
+ \le (1+8AM)\rho(y).
+\tag{15}
+\]
+Consequently, by (4),
+\[
+ \kappa[(1-q)+B(Q+y)]
+ \ge \frac{c\kappa}{1+8AM}\frac{\eta}{\rho(y)}.
+\tag{16}
+\]
+Choose \(k\ge M\) large enough that \(c\kappa\ge(1+8AM)C_S\), also increasing it to meet the requirements of Section 3 above. Then (16) covers (P1). This completes the choice of constants without any dependence on \(Q,\eta,L,n\).
+
+## 5. Counting and reflection
+
+Every finite node of the chosen trial satisfies \(\widetilde F_j\ge0\). Comparison gives \(x_j^*\le y_j\) at each such node. On \([-Q,Q]\) the trial count is \(\max(0,\lfloor t(v)\rfloor-k)\), and at or above \(Q\) it is at least \(n-k\). Hence, for all \(v\),
+\[
+ N_x(v)\ge N_y(v)\ge N_0(v)-\frac{k+1}{L}.
+\]
+Continuity of \(N_0\) gives the same lower bound for the left limit \(N_x(v-)\). Using \(N_x(v)=\nu-N_x((-v)-)\) and \(N_0(v)=\nu-N_0(-v)\) gives the upper bound. If \(n\le k\), both counting functions lie in \([0,n/L]\), so the result holds there as well. Thus Theorem G holds with
+\[
+ \boxed{\displaystyle K=k+1,\qquad \eta_0=1/64.}
+\]
+
+One correction to the supplied facts is worth recording. The density-ratio sentence in (F3), as written, fails when \(\rho\) saturates at \(1\). For example, two points on the same side with \(\rho(v)=\rho(y)=1\) would be required to have equal densities. On such an interval \(a_1\) strictly decreases on the positive side and the convolution of the even unimodal \(T\) and \(r_Q\mathbf1_{[-Q,Q]}\) is nonincreasing, so \(r_Q\) strictly decreases there. The derivative estimate gives the valid bound
+\[
+ \left|\log\frac{r_Q(v)}{r_Q(y)}\right|
+ \le C\left|\int_y^v\frac{du}{\rho(u)}\right|.
+\]
+The proof above uses (P1) as supplied and never uses the density-ratio sentence. Also, for \(k>0\), the displayed criterion (**) is sufficient as stated. Calling it “exact” overlooks the favorable slack from the first \(k\) cells in the bound on \(D\) leading to (1).
+
+The workspace was read-only, so the proof is delivered here. I could not update `STATE.md`, commit, or push it.
+
+[gpt_solve: backend=codex model=gpt-6.2-astra effort=high transcript=20261118T114003-71584]

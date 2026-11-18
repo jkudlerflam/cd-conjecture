@@ -1,0 +1,303 @@
+I obtain Theorem G unconditionally in the dense-edge regime
+\[
+                         \eta Lr_Q(Q)\ge \Lambda
+\]
+for a universal \(\Lambda\). The proof also gives the theorem when \(Q\le\eta\), with no lower bound on \(L\), and a separate interlacing argument gives the bound \((1+\lceil L/2\rceil-n)/L\) at every filling.
+
+For general filling, I get a sufficient continuum hypothesis involving only \(r_Q\) and \(r_Q'\). It is a one-sided curvature inequality on the right half of the interval, stated in Section 5 below. The sparse right edge is the part I cannot close unconditionally.
+
+The main estimate is the following. Write
+\[
+ B(d)=\int_d^\infty T(w)\,dw,\qquad
+ \delta(y)=Q-|y|,\qquad
+ \rho(y)=\min\{1,\eta+\delta(y)\}.
+\]
+For \(0<\eta\le 1/64\), finite \(Q\), and every \(y\in[-Q,Q]\),
+\[
+ \left|\int_{-Q}^Q T(y-v)s^\#\bigl(t(v)-t(y)\bigr)\,dv\right|
+ \le C\frac{\eta}{\rho(y)}.                                      \tag{1}
+\]
+All constants denoted by \(C\) are universal. In particular, the interior estimate is \(O(\eta)\) without a logarithm, uniformly in the lattice spacing.
+
+## 1. Check of the reduction
+
+Take \(n>K_0\). For \(n\le K_0\) the desired bound with \(K=K_0+1\) follows from \(0\le N_x,N_0\le n/L\). This qualification matters for the literal deficit formula in Section 3 of the question when \(K_0>n\).
+
+Put \(\kappa=K_0+\tfrac12\) and \(A=L(N_0-N_y)\). Since
+\[
+ L(T*N_y)(u)=\sum_{k\ {\rm finite}}\bigl[\Theta(u-y_k)+q/2\bigr],
+\]
+the prescribed contribution of the infinite nodes gives, at every finite trial node,
+\[
+ \frac{\widetilde F_j}{2\pi}
+ =LZ_0(y_j)-I_j-(T*A)(y_j)
+ =\kappa-(T*A)(y_j).                                              \tag{2}
+\]
+On \([-Q,Q]\), direct counting gives
+\[
+ A(v)=K_0+\{t(v)\}-(K_0-\lfloor t(v)\rfloor)_+.
+\]
+On the left exterior \(A=0\), and on the right exterior
+\[
+ A(v)=K_0-\min\{\lfloor t(v)-n\rfloor,K_0\}.
+\]
+Using \(\int T=q\) in (2) gives \((**)\) as stated. At \(y\ge Q\), including \(y=Q\), the paired values satisfy
+\[
+ A(y-w)-\kappa\le \tfrac12,\qquad A(y+w)-\kappa\le-\tfrac12
+ \quad(w>0).
+\]
+Consequently \(\widetilde F_j/(2\pi)\ge(1-q)\kappa\) at these nodes.
+
+The Stieltjes formula also holds. On the right of \(y\) change variables to \(m=\int_y^v r_Q\), and on the left use \(m=\int_v^y r_Q\). The two sawteeth have opposite signs almost everywhere. Capping each inverse makes its Stieltjes measure zero beyond the corresponding cap mass. Thus, writing \(D=\Theta(w_+)-\Theta(w_-)\),
+\[
+ S(y):=\int_{-Q}^Q T(y-v)s^\#\bigl(t(v)-t(y)\bigr)\,dv
+       =\int_0^\infty s^\#(Lm)\,dD(m).                             \tag{3}
+\]
+These checks give no sign correction to Section 3.
+
+## 2. Continuum regularity on the distance-to-edge scale
+
+The continuum equation implies
+\[
+ |r_Q'(y)|\le \frac{C r_Q(y)}{\rho(y)},\qquad
+ |r_Q''(y)|\le \frac{C r_Q(y)}{\rho(y)^2}.                        \tag{4}
+\]
+The mechanism is a Neumann boundary condition for a vertical average of a positive harmonic function.
+
+Let \(H_*=\pi/2\), and set
+\[
+ P_h(x)=\frac{\sin(2h)}{\pi(\cosh(2x)-\cos(2h))},
+ \qquad 0<h<H_*.
+\]
+This kernel is harmonic in \((x,h)\), as follows from
+\(P_h(x)=-\pi^{-1}\operatorname{Im}\coth(x+ih)\). In particular \(P_\eta=T\). Write \(f=r_Q\mathbf 1_{[-Q,Q]}\). We need a positive harmonic function \(U\) with
+\[
+ U(x,0)=f(x)\quad (|x|<Q),\qquad U(x,\eta)=s(x).
+\]
+To include the driving term \(a_1\), take
+\[
+ U(x,h)=(P_h*f)(x)+(P_{H_*-h}*g)(x),\qquad
+ g(x)=\frac{\gamma}{\eta}r_0\!\left(\frac{\gamma x}{\eta}\right).
+                                                                    \tag{5}
+\]
+Here is the verification of the second term. The supplied full-line equation gives
+\[
+ \widehat r_0(k)=\frac{\widehat a_1(k)}{1-\widehat T(k)}
+                =\frac{1}{2\cosh(\gamma k/2)},
+ \qquad
+ \widehat g(k)=\frac{1}{2\cosh(\eta k/2)}.
+\]
+Also \(P_{H_*-\eta}\) is the supplied \(a_1\) kernel with parameter \(2\eta\). Hence
+\[
+ \widehat P_{H_*-\eta}(k)\widehat g(k)
+ =\frac{\sinh(\eta k)}{\sinh(\pi k/2)}
+   \frac{1}{2\cosh(\eta k/2)}
+ =\widehat a_1(k).
+\]
+This proves \(U(\cdot,\eta)=s\). At the lower boundary \(P_h\) tends to the identity kernel, since its mass tends to one and its mass outside any fixed neighborhood of zero tends to zero. The mass of \(P_{H_*-h}\) tends to zero. This proves the boundary claim at each interior point of \([-Q,Q]\).
+
+Now average over a vertical interval of length \(\eta\),
+\[
+ V(x,h)=\frac1\eta\int_h^{h+\eta}U(x,z)\,dz,\qquad
+ \eta V_h(x,h)=U(x,h+\eta)-U(x,h).                                \tag{6}
+\]
+The function \(V\) is positive and harmonic for \(0<h<H_*-\eta\). On the open lower segment \(|x|<Q\), the continuum equation gives
+\[
+                         V_h(x,0)=\frac{s(x)-f(x)}{\eta}=0.         \tag{7}
+\]
+Thus \(V\) has a positive even harmonic reflection across that segment. For instance, integrate the Laplace equation against a test function on both sides. The normal derivative terms vanish by (7), so the even extension is weakly harmonic and hence harmonic.
+
+We use two elementary disk estimates. For a positive harmonic function \(W\) on a disk of radius \(R\), its values on the concentric half disk are comparable, and on the concentric quarter disk
+\[
+                       |\nabla^j W|\le C_jR^{-j} W(\text{center}).
+\]
+Both follow from the disk Poisson kernel \((1-|z|^2)/|e^{i\theta}-z|^2\) after rescaling. On the half disk the kernel is bounded above and below by positive constants, and on the quarter disk its derivatives of fixed order are bounded. One can apply the formula on a slightly smaller disk if boundary values are needed.
+
+Fix \(y\), and put \(R=\min\{\delta(y)/2,1/4\}\). If \(R<16\eta\), then \(\rho(y)\le C\eta\). The disk of radius \(\eta/2\) about \((y,\eta)\) lies in the strip of positivity of \(U\). The disk estimates applied there give (4).
+
+Suppose \(R\ge16\eta\). The reflected \(V\) is positive harmonic on the disk of radius \(R\) about \((y,0)\). Its value \(V(y,\eta)\) is comparable to \(s(y)\), since the values of \(U(y,z)\) for \(\eta\le z\le 2\eta\) are comparable to \(U(y,\eta)\) by the disk estimates along this vertical segment. Therefore, for \(0\le h\le R/4\),
+\[
+ V(y,h)\le C s(y),\qquad
+ |\partial_x^j\partial_h V(y,h)|\le C_j R^{-j-1}s(y),
+ \qquad j=1,2.                                                      \tag{8}
+\]
+Choose \(N=\lfloor R/(4\eta)\rfloor\), so \(R/8\le N\eta\le R/4\). The same vertical comparison gives
+\(U(y,N\eta)\le C V(y,N\eta)\le C s(y)\). Applying the disk estimates to \(U\) at height \(N\eta\) gives
+\[
+                    |\partial_x^j U(y,N\eta)|\le C_jR^{-j}s(y).
+\]
+Finally, (6) telescopes as an identity in \(x\),
+\[
+ U(x,\eta)=U(x,N\eta)-\eta\sum_{\ell=1}^{N-1}V_h(x,\ell\eta).
+\]
+Differentiate \(j\) times in \(x\), evaluate at \(y\), and use (8). The sum costs at most \(C_j(N\eta)R^{-j-1}s(y)\le C_jR^{-j}s(y)\). In this case \(R\) is comparable to \(\rho(y)\). This proves (4).
+
+## 3. The quadrature estimate
+
+If \(\delta(y)<\eta\), then \(|S(y)|\le q/2\) proves (1). Suppose \(\delta(y)\ge\eta\), put \(r=r_Q(y)\), \(\rho=\rho(y)\), and use the rescaled mass coordinate \(u=m/r\).
+
+For \(0\le u\le u_0=c\rho\), with \(c>0\) a sufficiently small universal constant, neither inverse distance is capped. Each inverse \(w=w_\pm(ru)\), now viewed as a function of \(u\), satisfies
+\[
+ w(0)=0,\qquad w'(u)=\frac{r}{r_Q(y\pm w(u))}.
+\]
+Indeed \(\rho\le 2\delta(y)\), and on \(|v-y|\le c_1\rho\) the scale \(\rho(v)\) is comparable to \(\rho\). Integrating the first bound in (4) there shows \(r_Q(v)\) is comparable to \(r\). Taking \(c\) small enough gives the asserted common inverse interval and \(w(u)\asymp u\). Differentiating the inverse equation once and twice, (4) gives
+\[
+ |w''|\le C/\rho,\qquad |w'''|\le C/\rho^2.
+\]
+In detail, with \(a(w)=r_Q(y\pm w)\), the derivatives are
+\(w''=-r^2 a'/a^3\) and \(w'''=-r^3a''/a^4+3r^3(a')^2/a^5\).
+Consequently, with \(A=w''(0)/2\),
+\[
+ w=u+A u^2+O(u^3/\rho^2),\qquad
+ w'=1+2Au+O(u^2/\rho^2),\qquad |A|\le C/\rho.                    \tag{9}
+\]
+
+For \(0\le u\le 1\), direct differentiation of the denominator
+\(\sinh^2u+\sin^2\eta\) gives
+\[
+ |T^{(j)}(u)|\le C_j T(u)(u+\eta)^{-j},\qquad j=1,2.
+\]
+Indeed the denominator is comparable to \((u+\eta)^2\), its first derivative is \(O(u)\), and its second derivative is \(O(1)\). Taylor expansion using (9) therefore gives
+\[
+ T(w)w'=T(u)+A\,(u^2T(u))'+O\!\left(\frac{u^2T(u)}{\rho^2}\right).
+                                                                    \tag{10}
+\]
+In particular, the linear corrections from the kernel and the Jacobian must be kept together.
+
+To integrate (10), observe that
+\[
+ u^2T(u)=\frac{\sin(2\eta)}{2\pi}
+       \left(\frac{u}{\sinh u}\right)^2
+       \frac{\sinh^2u}{\sinh^2u+\sin^2\eta}.
+\]
+The first variable factor decreases from one, and the second increases to one. Both take values in \([0,1]\), so their product has total variation at most two. It follows that
+\[
+ \int_0^\infty |(u^2T(u))'|\,du\le C\eta,\qquad
+ \int_0^{u_0}u^2T(u)\,du\le C\eta u_0.                            \tag{11}
+\]
+Thus each of the two pushed-forward kernels differs from \(T(u)\) by at most \(C\eta/\rho\) in \(L^1(0,u_0)\). The two copies of \(T(u)\) cancel in \(dD\).
+
+For the rest of \(dD\), each branch has variation bounded by its remaining physical kernel mass,
+\[
+ \int_{w_\pm(ru_0)}^\infty T(w)\,dw
+ \le \frac{C\eta}{u_0},
+\]
+using \(w_\pm(ru_0)\asymp u_0\) and \(T(w)\le C\eta/w^2\). This also covers both capped portions. Altogether
+\[
+                              \operatorname{TV}(D)\le C\eta/\rho.
+\]
+Equation (3) proves (1). The would-be logarithm comes from estimating \(2uT\) and \(u^2T'\) separately in (10). Equation (11) removes it before any estimate of the sawtooth is made.
+
+## 4. Unconditional ranges
+
+First, the elementary tail estimate needed to absorb (1) is
+\[
+ \frac{\eta}{\min(1,\eta+d)}\le C\bigl[\eta+B(d+\eta)\bigr],
+ \qquad d\ge0.                                                      \tag{12}
+\]
+For \(d+\eta\ge1\) this follows from the first term. Otherwise integrate \(T\) from \(d+\eta\) to \(2(d+\eta)\). Throughout this interval \(w\le2\) and \(T(w)\ge c\eta/(d+\eta)^2\), which proves (12).
+
+Choose \(K_0\) so large that, for all \(y\in[-Q,Q]\), (1) and (12) give
+\[
+ |S(y)|\le \kappa\left[\frac{2\eta}{\pi}
+                    +B(Q+y)+B(Q-y+\eta)\right].                    \tag{13}
+\]
+This is possible because the nearer edge has distance \(\delta(y)\).
+
+By (F4), \(s(Q+u)\ge e^{-C}r_Q(Q)\) for \(0\le u\le\eta\). Hence
+\[
+ t(Q+\eta)-n\ge e^{-C}\eta Lr_Q(Q).
+\]
+Choose \(\Lambda=e^C(K_0+1)\). If \(\eta Lr_Q(Q)\ge\Lambda\), the coefficient on the right exterior in \((**)\) equals \(\kappa\) everywhere on \(v\ge Q+\eta\). That part of the right exterior contributes \(\kappa B(Q-y+\eta)\). The left exterior contributes \(\kappa B(Q+y)\). Thus (13) proves \((**)\) at every interior node, and (2) proves the supersolution claim.
+
+Comparison gives \(N_x\ge N_y\), while the deficit formulas give \(N_y\ge N_0-(K_0+1)/L\). Reflection gives the upper bound as well. At a discontinuity one uses \(N_x(v)=\nu-N_x((-v)^-)\) and continuity of \(N_0\). This proves Theorem G in the asserted dense-edge regime.
+
+Two other ranges follow.
+
+1. If \(Q\le\eta\), then \(Q+y\le2\eta\) throughout the interval, and \(B(Q+y)\ge B(2\eta)\ge c>0\) by integration on \([2\eta,4\eta]\). Thus the left exterior alone absorbs \(|S|\le1/2\) for a universal \(\kappa\). This proves Theorem G in this range for every \(L\).
+
+2. Put \(M=\lceil L/2\rceil\), \(h=M-n\), and let \(X_1<\cdots<X_M\) be the half-filled roots at length \(2M\). Use \(y_j=X_{j+h}\) as a trial for \((L,n)\). Subtracting the half-filled equation gives
+   \[
+   F_j(y)=(L-2M)p(y_j)+\sum_{k=1}^h\theta(y_j-X_k)+\pi h
+          \ge -(2M-L)\eta+2h\eta.
+   \]
+   This is nonnegative for \(h\ge1\), and \(h=0\) is the even half-filled case. After comparison, discarding the bottom \(h\) half-filled roots costs at most \(h\) in the count. With \(N_\infty\) the cumulative of \(r_0\), the supplied half-filled theorem gives
+   \[
+   L N_x(v)\ge 2M N_X(v)-h
+             \ge 2M N_\infty(v)-1-h
+             \ge L N_0(v)-1-h.
+   \]
+   The last inequality uses (F1), with \(r_Q\) extended by zero. Reflection gives
+   \[
+               \sup_v |N_x(v)-N_0(v)|
+                  \le \frac{1+\lceil L/2\rceil-n}{L}.              \tag{14}
+   \]
+   In particular this is uniform in \(\eta\) whenever \(L-2n\) is bounded. At even half filling it recovers \(K=1\).
+
+## 5. A continuum hypothesis for the remaining right edge
+
+The following test uses only one-dimensional integrals of the continuum solution. It exploits two pieces of information lost in the total variation estimate. The cap masses are cell boundaries, and negative curvature between them contributes with a favorable sign.
+
+For \(0<y<Q\) set
+\[
+ M_+=\int_y^Q r_Q(v)\,dv,\qquad M_-=\int_{-Q}^y r_Q(v)\,dv.
+\]
+Partition \([0,M_-]\) at \(M_+\), and let \(\ell\) be the smaller of the two interval lengths. For each interval \(J=[a,b]\) put
+\[
+ g_J(m)=\frac{D'(m)-D'(a+b-m)}2,\qquad
+ W_J(m)=\min\{m-a,b-m,\ell/4\}.
+\]
+Use derivatives from within the open interval. Define
+\[
+ E_Q(y)=\frac12\sum_J
+ \min\left\{
+       \int_J|g_J(m)|\,dm,\quad
+       \int_J W_J(m)\,[g_J'(m)]_+\,dm
+     \right\}.                                                      \tag{15}
+\]
+This is explicit in \(r_Q,r_Q'\). On an uncapped branch,
+\[
+ w_\pm'=\frac1{r_Q(y\pm w_\pm)},\qquad
+ w_\pm''=\frac{\mp r_Q'(y\pm w_\pm)}{r_Q(y\pm w_\pm)^3},\qquad
+ (\Theta(w_\pm))''=T'(w_\pm)(w_\pm')^2+T(w_\pm)w_\pm''.
+\]
+On a capped branch the derivatives vanish.
+
+A sufficient hypothesis (H) is that there is a universal \(C_H\) such that
+\[
+ E_Q(y)\le \frac12 B(Q-y)+C_H\bigl[\eta+B(Q+y)\bigr]               \tag{H}
+\]
+whenever
+\[
+             0<y<Q,\qquad Q-y<1,\qquad
+             \ell>\eta r_Q(Q)/\Lambda.
+\]
+Here \(\Lambda\) is the fixed universal constant from Section 4. There is no lattice parameter in this test.
+
+To prove the implication, consider an interior trial node. Both \(LM_+\) and \(LM_-\) are integers, since \(t(y)\) and \(n\) are integers. Thus \(La,Lb\) are integers on each piece and \(1/L\le\ell\). Almost everywhere on \(J\),
+\[
+ s^\#(L(a+b-m))=-s^\#(Lm).
+\]
+It follows that the contribution of \(J\) to (3) equals \(\int_J s^\#(Lm)g_J(m)\,dm\). This is at most \(\tfrac12\int_J|g_J|\).
+
+For the other bound in (15), the continuous function
+\[
+                     -\frac{\{Lm\}(1-\{Lm\})}{2L}
+\]
+is a primitive of \(s^\#(Lm)\) and vanishes at both endpoints. Integration by parts gives
+\[
+ \int_J s^\#(Lm)g_J(m)\,dm
+   =\frac12\int_J\frac{\{Lm\}(1-\{Lm\})}{L}\,g_J'(m)\,dm.
+\]
+The weight without the factor \(1/2\) is at most \(1/(4L)\), and is also at most the distance to either endpoint of \(J\), since both endpoints are lattice boundaries. It is therefore bounded by \(W_J\). Summing the better estimate on each piece proves
+\[
+                              S(y)\le E_Q(y).                       \tag{16}
+\]
+
+Now suppose \(\eta Lr_Q(Q)<\Lambda\), the only case left by Section 4. At a positive interior node \(\ell\ge1/L>\eta r_Q(Q)/\Lambda\). If \(Q-y<1\), (H) and (16) imply \((**)\) on taking \(\kappa\) large enough in terms of \(C_H\). Indeed the right exterior always supplies at least \(B(Q-y)/2\). If \(Q-y\ge1\), (1) gives \(C\eta\) directly. At \(y\le0\) the nearer edge is the left one, so (1) and (12) are absorbed by \(\kappa[2\eta/\pi+B(Q+y)]\) without any hypothesis. The endpoint \(y=Q\) was covered by pairing in Section 1. This proves Theorem G under (H).
+
+The unresolved coefficient is visible in these estimates. At a sparse right edge with \(\eta\ll Q-y\ll1\), (1) gives \(C\eta/(Q-y)\), while the guaranteed right exterior gain is only \(B(Q-y)/2\), of the same order with a fixed coefficient. Increasing \(\kappa\) does not increase that guaranteed coefficient. The harmonic argument proves the scale and removes the interior logarithm. It does not give the one-sided curvature control in (H).
+
+The proof is recorded here only. The checkout was read-only, so I could not update `STATE.md`, commit, or push.
+
+[gpt_solve: backend=codex model=gpt-6.2-astra effort=high transcript=20261118T112038-64713]

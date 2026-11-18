@@ -158,7 +158,9 @@ Open here:
 
 The proposed replacement is A = Σ_a c_a v_a ≤ π M log₂ d, with M the gauge-optimized bond half-spread. It is proved for quasi-free chains (A ≤ 2M, sharp), for free-fermion and classical chains, and for WZW sectors coupled to on-site symmetries. Every solvable family satisfies it, and an adversarial search found no violation. The general case reduces to C(d) = sup L(E_{2L} − 2E_L)/M < ∞.
 
-At d = 2 on the U(1) class (XXZ plus DM along z plus field) this is proved with C = 10781 everywhere except a thin strip −1 < J_z/J < −1 + δ near the ferromagnet. There it rests on one inequality on the Bethe-root density, which holds numerically with wide margin (REPORT §9.94 to §9.109). The parts with J_z/J ≤ 1 are refereed; the easy-axis side is not.
+At d = 2 on the U(1) class (XXZ plus DM along z plus field) C(2) is now finite on every bond, every row proved and refereed by AI agents (2026-11-18). The ferromagnetic strip −1 < J_z/J ≤ −cos(1/64) is closed by a uniform counting bound on the Bethe roots, with a universal constant that is not yet explicit, and the easy-axis side (C = 10781) passed its referee. The constants are far from sharp, about 10⁴⁸ on −1 + 1.2·10⁻⁴ ≤ J_z/J ≤ 0 (REPORT §9.94 to §9.109, §9.207).
+
+At general d, three theorems hold (REPORT §9.207). For every chain, (L e₀ − E_L)/M → 0 uniformly in the bond at fixed d, a qualitative result with no content at reachable sizes that does not bound A. Two-species exchange chains with any internal register obey A ≤ 2M at zero interaction, and critical ferromagnetic Potts chains at Q = 3, 4 obey a crossover-free bound inherited from XXZ, which covers the neutral c = 4/5 sector. A general finite C(d) is still open.
 
 ## Small d other than 2
 
@@ -171,6 +173,6 @@ At d = 3 to 7, nothing above d − 1 in symmetric families. A Casimir-type bound
 3. Independent review of the markerless d = 9 and d = 10 bonds, especially
    the corrected mobile selector, its quantitative J/t budget and all-n
    band separation.
-4. A general proof of the replacement bound, or its d = 2 strip.
+4. A general proof of the replacement bound (a finite C(d) at any d ≥ 2 beyond the classes above), or an explicit constant on the d = 2 strip.
 
 All of this was produced with AI assistance (Claude Opus 5.5 and Claude Fable 5 coordinating, with gpt-6-astra runs).

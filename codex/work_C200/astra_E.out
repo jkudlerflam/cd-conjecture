@@ -1,0 +1,225 @@
+The harmonic argument in Theorem 4.2 works, and the cancellation in Theorem 4.3 gives the claimed logarithm-free bound. The false statement is the first sentence labeled “Consequence” after 4.2. Two points can have \(\rho=1\) while their densities differ by an arbitrarily large factor. Theorem 4.3 needs only a local density comparison, which follows directly from the derivative bound.
+
+There are two further repairs. For \(\delta(y)<\eta\), the proof of 4.3 bounds \(|S|\) but omits the claimed bound on \(\operatorname{TV}(D)\). Proposition 4.7 includes half filling, where the text has not defined \(N_0\) and the proof omits \(h=0\). Both repairs are short.
+
+Every \(C\) in the regularity, quadrature, and counting estimates can be taken independent of \(\eta\in(0,1/64]\), \(Q\in(0,\infty)\), \(y,L,n\). The same holds for \(c,C_S,K_0,\Lambda\), and the \(K\) in 4.6. The derivative constants \(C_j\) depend only on the derivative order, at most three here. No choice of \(C\) makes the printed global density-ratio claim true.
+
+## 4.1. Trial configurations and counting
+
+The counting-function normalization is correct. Evenness gives \(N_0(-v)=\nu-N_0(v)\), so \((T*N_0)(0)=q\nu/2\) and \(Z_0(0)=0\). Differentiation gives \(Z_0'=a_1+T*(r\mathbf1_{[-Q,Q]})=s\). Hence \(Z_0=N_0-\nu/2\) on the sea. In particular, \(t'=Ls>0\). Its upper limiting value is
+\[
+t(+\infty)=n+\frac{(L-2n)\eta}{2\pi}.
+\]
+A trial level equal to this limit is unattained at every finite point. Assigning that node to \(+\infty\) is correct.
+
+For a finite trial node,
+\[
+(T*L N_y)(y)=\sum_{k\in\mathrm{Fin}}\bigl[\Theta(y-y_k)+q/2\bigr].
+\]
+Since \(\theta=-2\pi\Theta\), subtracting \(nq/2\) gives the required \(-q/2\) for each node at infinity. It follows that
+\[
+\frac{\widetilde F_j}{2\pi}
+=LZ_0(y_j)-I_j-(T*A)(y_j)
+=K_0+\tfrac12-(T*A)(y_j).
+\]
+The half-unit has the correct sign.
+
+On \([-Q,Q]\) the finite count is \((\lfloor t\rfloor-K_0)_+\). Above \(Q\) it is \(n-K_0+\min(\lfloor t-n\rfloor,K_0)\). These give all three printed formulas for \(A\), including \(A(Q)=K_0\). The convention \(\le v\) counts the node at \(Q\) there.
+
+There is a distinction worth making in the heading “exact criterion.” If \(E(y)\) denotes the right side of \((**)\), direct substitution gives the exact identity at an interior trial node
+\[
+\frac{\widetilde F_j}{2\pi}
+=E(y)-S(y)
++\int_{-Q}^{Q}T(y-v)(K_0-\lfloor t(v)\rfloor)_+\,dv.
+\]
+Thus \((**)\) is sufficient, as the text says. Calling \((**)\) itself necessary and sufficient would discard the last, nonnegative term. For \(y\ge Q\), one has \(A(y-w)\le K_0+1\) and \(A(y+w)\le K_0\) for \(w\ge0\). Pairing gives \(T*A(y)\le q\kappa\). This includes \(y=Q\) and every finite exterior node. Lemma 1.1 requires no test at an infinite node.
+
+Comparison now gives \(N_x\ge N_y\ge N_0-(K_0+1)/L\). At an atom the reflection step uses the left limit,
+\[
+N_x(v)=\nu-N_x((-v)^-).
+\]
+Taking the left limit in the lower bound and using continuity of \(N_0\) gives the upper bound with the same constant. When \(n\le K_0\), both cumulative functions lie in \([0,n/L]\), as claimed.
+
+The matched-mass identity also has the correct sign. On the right and left, respectively, \(t(v)-t(y)=Lm\) and \(-Lm\). The identity \(s^\#(-Lm)=-s^\#(Lm)\) fails at integer \(Lm\), but the capped functions \(\Theta(w_\pm(m))\) are continuous and their Stieltjes measures have no atoms. Subtracting the two integrals gives
+\[
+S(y)=\int_0^\infty s^\#(Lm)\,dD(m),\qquad
+|S(y)|\le\tfrac12\operatorname{TV}(D).
+\]
+A capped branch is constant thereafter. This also covers a branch capped at zero. For fixed \(\eta,Q,y\), \(D\) has no dependence on \(L\).
+
+## 4.2. Harmonic representation and regularity
+
+### Lemma 4.1
+
+Correct. The displayed formula for \(\coth\) gives harmonicity and positivity of \(P_h\). A primitive in \(x\) is
+\[
+\frac1\pi\arctan(\tanh x\,\cot h),
+\]
+so the total mass is \(1-2h/\pi\). As \(h\downarrow0\), the mass outside every fixed neighborhood of zero tends to zero. Thus \(P_h*f\to f\) locally uniformly on \((-Q,Q)\). The other term tends to zero there since \(\|P_{\pi/2-h}\|_1=2h/\pi\) and \(g\) is bounded for each fixed \(\eta\). This boundary-limit argument requires no uniform bound on \(\|g\|_\infty\).
+
+The Fourier factors are
+\[
+\widehat P_{\pi/2-\eta}(k)=\frac{\sinh(\eta k)}{\sinh(\pi k/2)},
+\qquad
+\widehat g(k)=\frac1{2\cosh(\eta k/2)}.
+\]
+Their product is \(\widehat a_1\), including the value at \(k=0\) by continuity. Thus \(U(\cdot,\eta)=s\). No assertion about the bottom boundary value at \(x=\pm Q\) is needed.
+
+### Theorem 4.2
+
+Correct, with endpoint derivatives understood as one-sided derivatives of \(r\), or equivalently derivatives of its smooth extension \(s\).
+
+For the reflection, take any compact interval \(J\subset(-Q,Q)\). The locally uniform boundary convergence just proved gives continuous boundary values of \(V\) on \(J\), and
+\[
+V_h(x,h)=\frac{U(x,h+\eta)-U(x,h)}{\eta}\longrightarrow0
+\]
+uniformly on \(J\). This suffices for weak harmonicity of the even extension. Indeed, integrate against a smooth test function above \(h=\epsilon\) and reflect the lower half into the upper half. The resulting even test function has normal derivative \(O(\epsilon)\) at \(h=\epsilon\). The two boundary terms vanish since \(V\) stays bounded locally and \(V_h\to0\). Interior regularity then makes the extension harmonic. This argument uses only open subsegments of \((-Q,Q)\). It does not pass a reflection through either jump of \(f\).
+
+Set \(R=\min(\delta/2,1/4)\). If \(R<16\eta\), the cap \(R=1/4\) is impossible because \(16\eta\le1/4\). Hence \(\delta<32\eta\) and \(\rho\le33\eta\). The disc of radius \(\eta/2\) about \((y,\eta)\) lies in the strip and gives
+\[
+|\partial_x^j s(y)|\le C_j\eta^{-j}s(y)\le 33^j C_j\rho^{-j}s(y).
+\]
+This covers \(\delta=0\). The first inequality alone holds for every real \(y\), proving the global estimate for \(s'\).
+
+For \(R\ge16\eta\), the following disc choices verify uniformity of both vertical Harnack comparisons. For \(b=\eta\) or \(b=N\eta\), where \(N=\lfloor R/(4\eta)\rfloor\), one has \(b\le1/16\). The disc centered at \((y,3b/2)\) of radius \(b\) lies in the strip. Its concentric half-disc contains the vertical segment from \(b\) to \(2b\). Consequently \(U(y,z)\asymp U(y,b)\) along that segment with an absolute constant. At \(b=\eta\) this gives \(V(y,\eta)\asymp s(y)\). At \(b=N\eta\), it gives \(U(y,N\eta)\asymp V(y,N\eta)\), since \(\eta\le N\eta\). These comparisons use a fixed radius ratio even when \(N\) grows. The positive-harmonic disc estimates used here follow from the Poisson formula and Harnack inequality on a ball. [Axler, Bourdon and Ramey, *Harmonic Function Theory*](https://axler.net/HFT.html)
+
+On the reflected disc, \(\eta\le R/16\), so \(V(y,0)\asymp V(y,\eta)\asymp s(y)\). The interior derivative estimates therefore give
+\[
+|\partial_x^j\partial_h V(y,h)|\le C_j R^{-j-1}s(y),
+\qquad 0\le h\le R/4,\quad j=1,2.
+\]
+The floor satisfies \(R/8\le N\eta\le R/4\). Thus \(U(y,N\eta)\le Cs(y)\), and a disc of radius \(N\eta/2\) about \((y,N\eta)\) gives \(|\partial_x^j U(y,N\eta)|\le C_j R^{-j}s(y)\). This smaller disc also avoids any question about tangency to the strip boundary.
+
+Finally,
+\[
+\eta\sum_{\ell=1}^{N-1}V_h(x,\ell\eta)=U(x,N\eta)-U(x,\eta).
+\]
+The sign and both indices are correct. After \(j\) horizontal derivatives the sum costs at most \(C_j(N\eta)R^{-j-1}s(y)\). Since \(N\eta\le R/4\) and \(R\asymp\rho\) in this branch, the claimed estimates follow.
+
+### Consequence after Theorem 4.2
+
+The first assertion is wrong. Fix \(\eta\), take \(y=1\), \(v=Q/2\), and let \(Q\to\infty\). Both points have \(\rho=1\) for large \(Q\). The asserted two bounds would force \(r_Q(v)/r_Q(y)=1\), whereas
+\[
+\frac{r_Q(Q/2)}{r_Q(1)}
+\le \frac{r_0(Q/2)}{a_1(1)}\longrightarrow0.
+\]
+Even a universal multiplicative prefactor would fail.
+
+The correct integrated statement is
+\[
+\left|\log\frac{r(v)}{r(y)}\right|
+\le C\int_{\min(v,y)}^{\max(v,y)}\frac{dx}{\rho(x)}.
+\]
+On one side of zero the integral equals \(|\log(\rho(v)/\rho(y))|\) plus the length of the part of the interval where \(\rho=1\). The omitted length is the defect. The second assertion survives as written: integrating \(|(\log s)'|\le C/\eta\) from \(Q\) to \(Q+u\) gives \(s(Q+u)\ge e^{-C}r(Q)\) for \(0\le u\le\eta\).
+
+## 4.3. The quadrature estimate
+
+For \(\delta<\eta\) the missing step is
+\[
+\operatorname{TV}(D)
+\le \operatorname{TV}(\Theta\circ w_+)+\operatorname{TV}(\Theta\circ w_-)
+=\Theta(Q-y)+\Theta(Q+y)\le q.
+\]
+Each branch is nondecreasing up to its cap. Since \(\eta/\rho\ge1/2\), this proves the theorem in this case, including \(y=\pm Q\). A bound on \(|S|\) alone would not prove it. At \(y=0\), evenness gives the stronger identity \(D\equiv0\).
+
+Now take \(\delta\ge\eta\) and write \(r_*=r(y)\). Then \(\delta\ge\rho/2\). Both spatial segments of length \(\rho/4\) from \(y\) stay in the sea, and \(\rho(z)\ge3\rho/4\) there because \(\rho\) is 1-Lipschitz. Integrating the valid logarithmic derivative estimate gives
+\[
+e^{-C/3}r_*\le r(z)\le e^{C/3}r_*.
+\]
+This holds also for a segment crossing zero or the point where \(\rho\) reaches its cap. Each segment therefore contains mass at least \(e^{-C/3}r_*\rho/4\). Choosing \(0<c<e^{-C/3}/4\) proves that both inverse branches exist uncapped up to \(u_0=c\rho\), with \(u=m/r_*\). The choice is independent of \(r_*\), even in a very dilute edge.
+
+For \(a(w)=r(y\pm w)\), inverse differentiation gives
+\[
+w'=\frac{r_*}{a},\qquad
+w''=-\frac{r_*^2a'}{a^3},\qquad
+w'''=-\frac{r_*^3a''}{a^4}+\frac{3r_*^3(a')^2}{a^5}.
+\]
+Here \(a'\) is the derivative in \(w\). Local comparability and 4.2 give \(w'\asymp1\), \(|w''|\le C/\rho\), and \(|w'''|\le C/\rho^2\). Since \(w'(0)=1\), the printed Taylor formulas follow, with
+\[
+A_+=-\frac{r'(y)}{2r_*},\qquad A_-=\frac{r'(y)}{2r_*}.
+\]
+
+For the remainder in (4.1), put \(H=w-u\). Then \(w\asymp u\), \(H=Au^2+O(u^3/\rho^2)\), and \(|H|\le Cu^2/\rho\). On the segment between \(u\) and \(w\), the kernel is comparable to \(T(u)\). Indeed both arguments are at most one, and \(\sinh^2 z+\sin^2\eta\asymp(z+\eta)^2\) there. Differentiating the denominator gives the two printed bounds on \(T'\) and \(T''\). Taylor's formula consequently gives
+\[
+T(w)=T(u)+Au^2T'(u)+O\!\left(
+\frac{T(u)}{\rho^2}
+\left[\frac{u^3}{u+\eta}+\frac{u^4}{(u+\eta)^2}\right]\right).
+\]
+Each term in brackets is at most \(u^2\), including when \(u<\eta\). Multiplication by \(w'=1+2Au+O(u^2/\rho^2)\) gives
+\[
+T(w)w'=T(u)+A\bigl(2uT(u)+u^2T'(u)\bigr)
++O\!\left(\frac{u^2T(u)}{\rho^2}\right).
+\]
+This verifies the signed correction and its uniform error.
+
+In \(D'\) the leading \(T(u)\) cancels. Write \(u^2T(u)=\sin(2\eta)FG/(2\pi)\), with \(F=(u/\sinh u)^2\) and \(G=\sinh^2u/(\sinh^2u+\sin^2\eta)\). Both factors take values in \([0,1]\), and each is monotone with variation at most one. Hence \(\operatorname{TV}(FG)\le2\). Also \(u^2T(u)\le\sin(2\eta)/(2\pi)\). Integration gives
+\[
+\operatorname{TV}_{[0,u_0]}(D)
+\le |A_+-A_-|\frac{\sin(2\eta)}{\pi}
++C\frac{\eta u_0}{\rho^2}
+\le C\frac{\eta}{\rho}.
+\]
+The cancellation responsible for removing the logarithm occurs inside \((u^2T)'\). Taking absolute values of its two summands earlier would lose it.
+
+At \(u_0\), both distances are at least \(c'\rho\), by the lower bound on \(w'\). Each branch's subsequent variation, including any constant portion after capping, is bounded by
+\[
+\int_{c'\rho}^{\infty}T(w)\,dw\le\frac{\eta}{\pi c'\rho},
+\]
+using \(\sin(2\eta)\le2\eta\) and \(\sinh w\ge w\). Increasing linear rescaling of the mass preserves total variation. This finishes 4.3 uniformly in all the stated parameters.
+
+## 4.4. Counting regimes
+
+**Lemma 4.4.** Correct. Write \(b=d+\eta\). If \(b\ge1\), the left side is \(\eta\). If \(b<1\), then \(\eta\le b\), and on \([b,2b]\) the denominator \(\sinh^2w+\sin^2\eta\) is at most \(Cb^2\), while \(\sin(2\eta)\ge c\eta\). Integration over this interval proves \(B(b)\ge c\eta/b\).
+
+**Theorem 4.5.** Correct. For \(y\ge0\) the needed tail is \(B(Q-y+\eta)=B(\delta+\eta)\). For \(y\le0\) one has \(B(Q+y)=B(\delta)\ge B(\delta+\eta)\). Thus one universal \(\kappa=K_0+1/2\) absorbs the bound from 4.3 and Lemma 4.4. The valid exterior consequence of 4.2 gives
+\[
+t(Q+\eta)-n=L\int_Q^{Q+\eta}s(v)\,dv\ge e^{-C}\lambda_Q .
+\]
+For the stated \(\Lambda\), the exterior bracket in \((**)\) equals \(\kappa\) for every \(v\ge Q+\eta\), and its integral there is \(\kappa B(Q-y+\eta)\). This proves the criterion. For \(n\le K_0\) the trivial count applies directly.
+
+**Proposition 4.6.** Correct. Lemma 4.4's interval estimate with \(b=2\eta\) gives \(B(2\eta)\ge c>0\) uniformly. For all \(y\) in this sea, \(Q+y\le2\eta\), so \(\kappa B(Q+y)\) absorbs \(|S|\le q/2\) for a universal \(K_0\). One can take \(K=K_0+1\).
+
+**Proposition 4.7.** At \(n=L/2\), define \(Q=\infty\) and \(N_0=N\). Then \(L=2M,\ h=0,\ x_j^*=X_j\), and the count is Theorem H. Without this convention the endpoint statement contains an undefined \(N_0\).
+
+For \(h\ge1\), the phrase “the quantum numbers agree” should read “the quantum numbers differ by \(h/2\).” The displayed equation uses the correct difference. Subtraction gives
+\[
+F_j(y)=(L-2M)p(y_j)+\sum_{k=1}^h\theta(y_j-X_k)+\pi h
+\ge [2h-(2M-L)]\eta>0.
+\]
+Here \(2M-L\in\{0,1\}\). Reflection of the upper comparison gives the lower index \(j\), since \(M+1-(n+1-j+h)=j\). If \(C_X(v)=\#\{X_j\le v\}\), the resulting sharp count comparison is
+\[
+C_X(v)-h\le L N_x(v)\le C_X(v).
+\]
+Using H on the left gives \(L N_x(v)\ge 2MN(v)-1-h\ge L N_0(v)-1-h\). The last inequality follows from \(2M\ge L\) and pointwise domination of the truncated density by \(r_0\). Reflection with the left-limit convention proves the upper bound.
+
+The larger range \(0<\eta<\pi/2\) in 4.7 and 4.8 is legitimate. In particular, if Fact 2 is read with the default small-\(\eta\) restriction, the needed domination extends directly. \(T\ge0\) and \(\|T\|_1=q<1\) throughout the larger range. The full-line identity follows from the supplied Fourier formulas using
+\[
+\sinh(\pi k/2)-\sinh((\pi-2\eta)k/2)
+=2\cosh(\gamma k/2)\sinh(\eta k/2).
+\]
+Restricting the positive Neumann series to the sea gives \(r_Q\le r_0\). The same series gives continuous, strictly increasing sea mass with limit \(1/2\) by monotone convergence. The finite-root comparison uses only \(p'>0,\theta'<0\), valid throughout this range, and H was supplied there. Even existence of the interlaced zero can be recovered from these trials if needed: minimize the Bethe potential on the box with faces \(X_j\) and \(X_{j+h}\). Its gradient is \(F\), its Hessian is positive definite, and the off-diagonal derivatives of \(F\) are nonpositive. Thus \(F_j\le0\) on a lower face and \(F_j\ge0\) on an upper face. The constrained first-order conditions give \(F=0\) at the minimizer.
+
+**Corollary 4.8.** Correct. Set \(G(v)=L N_x(v)-2MN(v)\). The two interlacing counts and H give \(-h-1\le G\le1\), so \(|G+h/2|\le(h+2)/2\). Integration by parts gives
+\[
+\sum_jT(u-x_j^*)-2M(T*r_0)(u)
+=\int_{\mathbb R} T'(u-v)\,[G(v)+h/2]\,dv .
+\]
+The sign is positive, the boundary term vanishes since \(T\to0\), and the centering constant integrates to zero. As \(\|T'\|_1=2T(0)\), division by \(L\) gives the printed error. Finally \(2M/L\ge1\) and \(T*r_0\ge0\). The explicit factor \(T(0)=\cot(\eta)/\pi\) is the stated \(\eta\)-dependence.
+
+This was an analytic audit. The workspace was read-only, so the report is delivered here and no repository update was committed or pushed.
+
+| Item | Verdict |
+|---|---|
+| §4.1 trial, sufficient criterion, and matched-mass identity | Correct as stated. The exact node residual includes the nonnegative clipping integral. |
+| Lemma 4.1 | Correct as stated. |
+| Theorem 4.2 | Correct as stated, with the usual one-sided endpoint derivatives. |
+| Consequence after 4.2, same-side ratio | Wrong. Use the integral of \(1/\rho\), including the saturated length. |
+| Consequence after 4.2, exterior lower bound | Correct as stated. |
+| Theorem 4.3 | Correct after the listed proof repairs for local comparability and \(\delta<\eta\). |
+| Lemma 4.4 | Correct as stated. |
+| Theorem 4.5 | Correct as stated. |
+| Proposition 4.6 | Correct as stated. |
+| Proposition 4.7 | Correct after defining \(N_0=N\) at half filling and treating \(h=0\). |
+| Corollary 4.8 | Correct as stated, including \(h=0\). |
+
+[gpt_solve: backend=codex model=gpt-6.2-astra effort=high transcript=20261118T114401-73486]

@@ -1,0 +1,157 @@
+[rigorous] There is an all-length no-go for a class in which a moving particle can carry quantum information and apply an arbitrary entangling unitary at every exchange. For pure hopping, the sharp bound in this class is
+\[
+\boxed{\quad L(Le_0-E_L)\le \left(4-\frac{8}{\pi}\right)M,\qquad L\ge2.\quad}
+\]
+The constant is attained at \(d=2\), \(L=2\). The sharper asymptotic bound is \(\limsup_L L(Le_0-E_L)\le \pi M/3\). Thus, under the stated vacuum energy formula, \(A\le 2M\). Both estimates are uniform in the internal dimensions, the exchange unitary, and the chemical potential, including tuning to a \(z=2\) saturation point.
+
+[rigorous] There is also an obstruction to the sawtooth mechanism that uses no conserved charge. For a fixed number of scalar dispersion branches with a uniform third hopping moment in microscopic distance, I obtain
+\[
+\sum_{a:v_a\ge u}c_a\le B(d)\sqrt{M/u}.
+\]
+The exponent \(1/2\) is sharp for this regularity hypothesis. A separate rank bound applies to a superlattice with an arbitrarily large unit cell.
+
+[physics-level] The unrestricted sharp sub-question remains open. The distinction between the two targets matters. An unbounded vacuum Casimir coefficient refutes Lemma P. A violation of Lemma P along lengths tuned to a crossover need not give an unbounded infrared coefficient. The first result below excludes both possibilities in an explicit microscopic class.
+
+## 1. Internal labels transported by unitary exchanges
+
+[rigorous] Split the physical site as \(\mathcal H=\mathcal H_0\oplus\mathcal H_1\), with both summands nonzero and \(d=\dim\mathcal H_0+\dim\mathcal H_1\). Let \(n\) project onto \(\mathcal H_1\). Choose any unitary
+\[
+W:\mathcal H_1\otimes\mathcal H_0\longrightarrow
+       \mathcal H_0\otimes\mathcal H_1
+\]
+and extend it by zero on the other input sectors. Take the same oriented bond everywhere,
+\[
+ h_W=-t(W+W^\dagger)+V n\otimes n+
+       \frac{\mu}{2}(n\otimes 1+1\otimes n),\qquad t>0.                 \tag{1}
+\]
+Already at \(d=4\), both species can have an internal qubit and \(W\) can apply a two-qubit gate before exchanging them. Write \(h_{\rm sc}\) for the scalar bond obtained by taking each species space to be one-dimensional and \(W=|01\rangle\langle10|\). Multistate chains related to this construction occur in Maassarani’s XXC models. The proof here allows arbitrary \(W\) and uses no integrability assumption on it. [Maassarani, *The XXC Models*](https://arxiv.org/abs/solv-int/9712008)
+
+[rigorous] For every \(V,\mu,t,W\),
+\[
+ E_L(W)\ge E_L({\rm sc}),\qquad e_0(W)=e_0({\rm sc}),\qquad
+ M(h_W)=M(h_{\rm sc}).                                                  \tag{2}
+\]
+In fact, at each fixed particle number the entire ring spectrum is a union, with multiplicities, of scalar spectra with boundary twists.
+
+### Proof of the comparison
+
+[rigorous] Fix the number \(m\) of ones. A binary occupation word \(s\) labels a fiber \(\mathcal K_s=\bigotimes_j\mathcal H_{s_j}\). A hop between words acts as \(-t\) times a unitary between their fibers. All diagonal terms act as scalars on each fiber. For a wavefunction with components \(\psi_s\), set \(f_s=\|\psi_s\|\). Every hopping edge satisfies
+\[
+ -2t\,\operatorname{Re}\langle\psi_{s'},W_{s's}\psi_s\rangle
+ \ge -2t f_{s'}f_s.
+\]
+The diagonal energies and the norm are the same for \(\psi\) and \(f\). Summing over edges and minimizing proves the first inequality of (2). This also works at \(L=2\), where the two oriented physical bonds are counted separately.
+
+[rigorous] On the open chain the fiber unitaries can all be removed. Orient the moves as \(10\to01\). Every such move decreases the inversion number by one, and every word reaches the same sorted word. The unitary from a word to the sorted word is independent of the sorting path. To prove this, induct on inversion number. Two different possible first moves occupy disjoint bonds, since occurrences of \(10\) cannot overlap. Either move remains available after the other, and their unitaries commute on disjoint sites. The resulting two-step paths reach the same word with the same unitary. The induction hypothesis identifies the rest of the paths. This proves path independence, including agreement with the reverse of every edge.
+
+[rigorous] Use these sorting unitaries to identify all fibers with the sorted fiber. Each open-chain hop is now \(-t\) times the identity on that fiber. The open Hamiltonian is the scalar open Hamiltonian tensored with an identity, in every \(m\) sector. In particular the open ground energies coincide. Closing either chain changes its energy by at most the norm of one bond. Dividing by \(L\) and taking the limit proves equality of the bulk densities.
+
+[rigorous] The same identification describes what survives on a ring. Fix the orientation of the seam hop. Its source words have fixed occupations on sites \(1,L\) and \(m-1\) ones in the interior. All such interiors are connected by open-chain swaps on sites \(2,\ldots,L-1\). Each swap commutes with the seam hop before the change of basis and is the identity on the fiber afterward. Hence the transformed seam unitary is the same matrix \(T_{L,m}\) for every allowed interior. Diagonalizing \(T_{L,m}\) gives scalar rings with seam phases equal to its eigenvalues. The empty and full sectors have no seam hop. This proves the spectral assertion. The internal register can grow exponentially with \(L\), but its only effect on the hopping spectrum is through this boundary condition.
+
+[rigorous] To verify the normalization, the distinct bond eigenvalues are among
+\[
+ 0,\qquad V+\mu,\qquad \mu/2-t,\qquad \mu/2+t .
+\]
+Every listed value has an eigenstate, possibly mixed, whose left and right one-site marginals agree. For \(00\) and \(11\), use the normalized identity in the corresponding sector. For either mixed-sector eigenvalue, use the normalized projector onto the graph of \(+W\) or \(-W\). Its diagonal blocks put equal weight on the normalized identities in \(10\) and \(01\). Its off-diagonal blocks have zero partial traces because the species spaces on each site are orthogonal. Both one-site marginals are therefore the same mixture of the two normalized species identities. The expectation of \(X\otimes1-1\otimes X\) vanishes in all four witnesses. The maximum and minimum witnesses prevent any gauge from reducing the width, and \(X=0\) attains it. The scalar bond has the same four values and witnesses. This finishes (2), and also gives \(t\le M\).
+
+### Sharp finite-size bound at \(V=0\)
+
+[rigorous] In the scalar ring, the lowest energy at fixed \(m\) is
+\[
+ E_L^{\rm sc}(m)=\mu m-2t\,\frac{\sin(\pi m/L)}{\sin(\pi/L)}.           \tag{3}
+\]
+To see this, write the hard-core hopping problem in ordered particle coordinates and antisymmetrize. Carrying one particle through the seam reorders it past \(m-1\) particles. The compensating one-particle boundary phase is \((-1)^{m-1}\). The allowed momenta are therefore integers times \(2\pi/L\) for odd \(m\) and half-integers times \(2\pi/L\) for even \(m\). Filling the \(m\) lowest values of \(-2t\cos k\) gives the momenta \(k_j=(2j-m-1)\pi/L\), \(1\le j\le m\). Summing the geometric series for \(e^{ik_j}\) gives (3). The empty and full sectors also satisfy it.
+
+[rigorous] The grids \(m/L\) become dense in \([0,1]\), and \(L\sin(\pi/L)\to\pi\). Hence
+\[
+ e_0=\min_{0\le x\le1}\left(\mu x-\frac{2t}{\pi}\sin\pi x\right).
+\]
+For each \(m\), evaluate this minimum at \(x=m/L\), subtract (3), and use \(\sin(\pi m/L)\le1\). Equation (2) then gives
+\[
+ L(Le_0-E_L(W))\le 2tL\left(\csc(\pi/L)-L/\pi\right).                  \tag{4}
+\]
+The field has dropped out before taking any limit. In particular (4) holds for an \(L\)-dependent field.
+
+[rigorous given Euler’s sine product] Euler’s identity is \(\sin x/x=\prod_{n\ge1}(1-x^2/\pi^2n^2)\). For \(|x|<\pi\), expanding the reciprocal factors shows that \((x/\sin x-1)/x^2\) has nonnegative Taylor coefficients in \(x^2\). It is increasing on \(0\le x\le\pi/2\). With \(x=\pi/L\), the right side of (4) is \(2\pi t(x/\sin x-1)/x^2\). Its maximum is at \(L=2\), giving \((4-8/\pi)t\). Its limit is \(\pi t/3\), since \(x/\sin x=1+x^2/6+O(x^4)\). At \(d=2,\mu=0,L=2\), one has \(M=t\), \(e_0=-2t/\pi\), and \(E_2=-2t\). This attains the claimed constant.
+
+[physics-level] On vacuum-compatible lengths the asymptotic estimate gives \(A\le2t\le2M\). Consequently, if every factor has \(v_a\ge\eta M\) and \(c_a\ge c_{\min}>0\), then \(N\le 2/(\eta c_{\min})\). For positive-central-charge unitary Virasoro factors one may take \(c_{\min}=1/2\), since the allowed charges below one are \(1-6/[m(m+1)]\), \(m=2,3,\ldots\). This gives \(N\le4/\eta\) in this class. [Friedan, Qiu and Shenker](https://doi.org/10.1103/PhysRevLett.52.1575)
+
+### Interactions and first-order tuning
+
+[rigorous given F2] Equation (2) transfers any scalar XXZ lower bound to (1) with the same constant and the same microscopic \(M\). In particular, in the F2 window \(-1+\delta_0\le V/(2t)\le1\), the bound is \(K(\delta_0)M/L\). The transfer costs a factor of one, independent of the size of the internal register.
+
+[rigorous] There is an additional exact result for \(V\le-2t\), including the ferromagnetic endpoint. On each bond,
+\[
+ h_W\ge \frac{V+\mu}{2}(n\otimes1+1\otimes n).
+\]
+There is equality on \(00,11\). On the mixed sectors the smallest eigenvalue of the difference is \(-t-V/2\ge0\). Summing the inequality gives \(E_L\ge L\min(0,V+\mu)\). The empty and full states attain the two competing energies. Thus \(E_L=Le_0\) on every ring, even if \(\mu+V\) changes sign with \(L\). This settles tuning directly through this first-order crossing. The estimates above do not give a uniform constant when \(V/(2t)\downarrow-1\) from inside the critical interval.
+
+[numerical] As a check with an entangling exchange, I diagonalized \(d=4,L=4,m=2,t=1,V=\mu=0\), using \(W=\mathrm{SWAP}\,\mathrm{diag}(1,1,1,e^{0.73i})(H\otimes H)\) with \(H\) the Hadamard matrix. All 96 open-chain eigenvalues matched the scalar eigenvalues repeated 16 times to \(5.8\times10^{-15}\). The two ring ground energies agreed to \(4.5\times10^{-16}\). The ring proof only requires the one-sided inequality.
+
+## 2. Sawtooth dispersions and a velocity tail with \(p<1\)
+
+[rigorous] Here is a condition one can check on effective hoppings before finding any Fermi points. Suppose the proposed modes come from at most \(s(d)\) real, \(2\pi\)-periodic scalar dispersions \(f_j(k)\), with \(k\) in microscopic inverse-length units. Assign each mode to a zero with \(v_a=|f'_j(k)|\). Allow several factors at a zero provided their total central charge is at most \(\gamma\). Counting one zero per factor is already enough for the usual pocket construction. Suppose for some fixed integer \(r\ge3\),
+\[
+ \|f_j^{(r)}\|_\infty\le D(d)M.                                         \tag{5}
+\]
+For \(f_j(k)=\sum_\ell t_{j,\ell}e^{i\ell k}\), a sufficient hypothesis is \(\sum_\ell|\ell|^r|t_{j,\ell}|\le D(d)M\), by termwise differentiation. The number and spacing of the zeros are unrestricted.
+
+[rigorous] Put \(p=1/(r-1)\). Then
+\[
+ \boxed{\quad
+ \sum_a c_a v_a^p\le 2\pi\gamma s(d)\left(\frac{D(d)M}{r}\right)^p,
+ \qquad
+ \sum_{a:v_a\ge u}c_a\le
+ 2\pi\gamma s(d)\left(\frac{D(d)}r\right)^p(M/u)^p .
+ \quad}                                                                 \tag{6}
+\]
+
+[rigorous] To prove this, take any finite set of distinct zeros of one branch, order them cyclically as \(x_1,\ldots,x_n\), and extend by \(x_{i+n}=x_i+2\pi\). Interpolate \(f\) at \(x_i,\ldots,x_{i+r-1}\). More explicitly, choose \(b\) so that
+\[
+ g(x)=f(x)-b\prod_{j=0}^{r-1}(x-x_{i+j})
+\]
+has \(g'(x_i)=0\). It now has \(r\) distinct zeros and a double zero at \(x_i\). Repeated Rolle gives \(g^{(r)}(\zeta)=0\) somewhere between the first and last nodes. Therefore \(|b|\le\|f^{(r)}\|_\infty/r!\), and the derivative condition gives
+\[
+ |f'(x_i)|\le \frac{\|f^{(r)}\|_\infty}{r!}
+               \prod_{j=1}^{r-1}(x_{i+j}-x_i).
+\]
+This works even for \(n<r\), since the lifted nodes are distinct on the real line.
+
+[rigorous] Raise the inequality to \(p\), sum over \(i\), and apply Hölder with \(r-1\) equal exponents. Every cyclic gap occurs \(j\) times in \(\sum_i(x_{i+j}-x_i)\), so that sum is \(2\pi j\). It follows that
+\[
+ \sum_i|f'(x_i)|^p
+ \le \left(\frac{\|f^{(r)}\|_\infty}{r!}\right)^p
+       \prod_{j=1}^{r-1}(2\pi j)^p
+ =2\pi\left(\frac{\|f^{(r)}\|_\infty}{r}\right)^p .
+\]
+Taking the supremum over finite subsets covers infinitely many zeros as well. Summing over branches gives the first inequality in (6). Every mode above threshold contributes at least \(c_a u^p\), giving the second. Using F3 once more gives \(A\le(4eM)^{1-p}\sum_a c_av_a^p\).
+
+[rigorous] The exponent and the role of microscopic distance can both be checked explicitly. The dispersion \(f_n(k)=Mn^{-r}\sin(nk)\) has \(2n\) zeros of speed \(Mn^{1-r}\) and satisfies (5) with \(D=1\). Any smaller tail exponent fails as \(n\to\infty\). Its zero spacing is \(\pi/n\), so resolving its pockets requires rings of order \(n\) even though (5) holds uniformly. In contrast, the proposed fast sawtooth smoothed to \(f_n(k)=(M/n)\sin(nk)\) has speed \(M\) at every zero and \(\|f_n^{(r)}\|_\infty=Mn^{r-1}\). This identifies the cost that a neutral effective band would have to generate. Neither example is being asserted to be a microscopic nearest-neighbor bond.
+
+## 3. A superlattice with finitely many hopping channels across a cell boundary
+
+[rigorous] A different obstruction works when the cell size grows and individual band derivatives can be large. Suppose the propagating particles in a selected superlattice sector have a Bloch matrix
+\[
+ B(k)=B_0+Te^{ik}+T^\dagger e^{-ik},\qquad \operatorname{rank}T\le R(d).
+\]
+Here \(k\) is cell momentum. The cell size, the dimension of \(B_0\), the internal couplings, and the number of flat bands are arbitrary. There are at most \(2R(d)\) linearly dispersing crossings of a given energy, counted with multiplicity.
+
+[rigorous] Write \(z=e^{ik}\). In the column expansion of \(\det(B(k)-E)\), any term selecting more than \(R\) columns from \(zT\) vanishes by linear dependence. The same holds for \(z^{-1}T^\dagger\). Thus the determinant has Laurent degrees between \(-R\) and \(R\). Unless it vanishes identically, multiplying by \(z^R\) gives a polynomial of degree at most \(2R\). At a momentum with \(b\) linearly crossing bands the zero has multiplicity at least \(b\), since \(b\) eigenvalue factors vanish there. If there are flat bands at \(E\), shift to a nearby energy \(E'\). Each nonzero-slope branch still crosses \(E'\) locally. Choose \(E'\) outside the finite spectrum of \(B(0)\), which ensures that the determinant is not identically zero. Applying the count there proves the assertion also at \(E\).
+
+[rigorous given F3] If the infrared factors are assigned to these crossings with total central charge at most \(\gamma\) per crossing, then \(A\le 8e\gamma R(d)M\). The count uses cell momentum and F3 bounds velocity in physical units, so no cell-size factor enters. This closes the proposal to obtain many fast lanes by enlarging the intracell Hilbert space while transmitting them through a fixed-rank one-particle hopping matrix. For a general interacting superlattice, a single microscopic bond does not establish such a representation or bound the rank of a dressed hopping matrix after virtual processes.
+
+## Ranked verdicts and the remaining gap
+
+1. [rigorous] **Unitary transport of internal labels** has the strongest exclusion here. The open-chain reduction and the ring inequality control every size. At \(V=0\) they give the sharp constant, including arbitrary field tuning. They also show why a large set of internal states or boundary-twist eigenphases does not count as a large set of propagating CFT factors.
+2. [rigorous] **Position modulo a large cell and neutral sawtooth pockets** are excluded under two independent, checkable hypotheses. A fixed rank across the cell boundary bounds the number of crossings. A fixed number of branches with a bounded third microscopic hopping moment allows arbitrarily many crossings but bounds their square-root velocity sum. Neither proof uses charge stiffness or a uniform pocket spacing.
+3. [rigorous given F4] **Weakly charged Luttinger modes** remain open once their weights can vanish. In a normalization where \(\sum_\alpha D_\alpha=\sum_a w_av_a\), F4 and \(w_a\ge w_*>0\) give \(A\le4M/w_*\) for \(c_a=1\). With \(w_a=2^{-a}\) and \(v_a=M\), the stiffness sum stays below \(M\) for every \(N\), while the proposed \(A\) is \(NM\). These are response data illustrating the gap in the inference. I have no bond realizing them.
+4. [physics-level] **Hierarchical emergence** has a restriction even at the level of N3. If \(c_a\ge c_*>0\) and \(\xi_a\le Ca\) with \(C\) independent of the family member, then \(\sum_{a\le N}c_a/\xi_a\ge(c_*/C)\sum_{a\le N}1/a\). Thus this particular linear hierarchy violates the stated entropy budget logarithmically, if that budget holds with a uniform constant. Taking all \(\xi_a\) of order \(N\), or taking \(\xi_a\) of order \(a^2\), removes that contradiction. The entropy argument does not exclude either choice.
+5. [physics-level] **Neutral interacting factors, simultaneously occupied dressed strings, and general higher-order Schrieffer-Wolff constructions** remain open. The missing step is a microscopic estimate uniform in the family member. Finite perturbative order for each member supplies neither a uniform number of dressed branches nor (5) in microscopic distance. A string-species count likewise supplies neither the vacuum occupancy nor the dressed velocities. I found no fast tower from these mechanisms.
+
+[rigorous] N4’s order-\(M\) plateau is stronger than the proposed finite-size signature requires. For example, the abstract deficits \(D_N(L)=MN/(L+N^2)\) obey \(D_N(L)\le M/N\) at every length, yet \(\lim_{L\to\infty}LD_N(L)=MN\). This is a check on the quantifiers, not a Hamiltonian construction. A search that requires a visible order-\(M\) deficit can miss the asymptotic behavior it is meant to detect.
+
+[physics-level] For the sharp sub-question, the single sufficient inequality is a uniform bound on \(\sum_{v_a\ge\eta M}c_a\) at each fixed \(\eta>0\). Equation (6) proves a stronger inequality for the dispersion class, and (2)–(4) settle it for the exchange class by a different route. I do not have that inequality for unrestricted interacting nearest-neighbor chains at fixed \(d\).
+
+The checkout was read-only. The proof and numerical check are reported here. I could not update `STATE.md`, commit, or synchronize the result with GitHub.
+
+[gpt_solve: backend=codex model=gpt-6.2-astra effort=high transcript=20261118T111759-63608]

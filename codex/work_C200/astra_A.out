@@ -1,0 +1,296 @@
+The optimal uniform constant in Claim 1 is \(C_1=1/\pi\). In fact, for \(\alpha=\pi N(y)\),
+\[
+\operatorname{TV}(D_y)
+=2\sup_m |D_y(m)|
+\le \frac{|\cos(2\alpha)|\sin(2\eta)}{\pi}
+\le \frac{2\eta}{\pi}.
+\]
+The proof is analytic. It gives the smallest allowed shift, \(\kappa_0=1/2\), and hence
+\[
+\left|\#\{j:x_j^*\le v\}-L N(v)\right|\le 1,
+\qquad
+|\sigma_L(u)-\rho(u)|\le \frac{2\cot\eta}{\pi L}.
+\]
+
+## 1. The variation bound
+
+By reflection it suffices to take \(y\le0\), so \(0<\alpha\le\pi/4\). Write
+\[
+a=\frac{2}{b}=2-\frac{2\eta}{\pi}\in[3/2,2),\qquad
+d=\cos(2\alpha),\qquad S=\sin(2\alpha).
+\]
+The useful coordinate is \(z=S\cot\phi\), where \(\phi=\pi m\). As \(m\) runs from \(0\) to \(1/2\), \(z\) decreases from \(+\infty\) to \(0\). For \(m\ge1/2\), \(D_y(m)=0\).
+
+### The two matched distances give an interval of fixed length
+
+For a finite positive \(w_+\), the formula for \(w_+\) gives
+\[
+\coth(bw_+/2)
+=\frac{\tan(\alpha+\phi)+\tan\alpha}
+       {\tan(\alpha+\phi)-\tan\alpha}
+=\frac{\sin(2\alpha+\phi)}{\sin\phi}
+=z+d.
+\]
+On the other side,
+\[
+\coth(bw_-/2)
+=\frac{\tan\alpha+\tan(\alpha-\phi)}
+       {\tan\alpha-\tan(\alpha-\phi)}
+=\frac{\sin(2\alpha-\phi)}{\sin\phi}
+=z-d.
+\]
+At \(\phi=\pi/2-\alpha\), \(z+d=1\). At \(\phi=\alpha\), \(z-d=1\). Since \(z\) decreases, the prescription \(w_\pm=+\infty\) applies just when the respective argument reaches or falls below \(1\).
+
+Thus define on all of \(\mathbb R\)
+\[
+H(x)=
+\begin{cases}
+\Theta(a\,\operatorname{arccoth}x),&x>1,\\
+q/2,&x\le1.
+\end{cases}
+\]
+This function is continuous at \(1\). For \(x>1\), put \(u=\operatorname{arccoth}x\). Then \(du/dx=-\sinh^2u\), and
+\[
+h(x):=-H'(x)
+=aT(au)\sinh^2u
+=\frac{a\sin(2\eta)}{2\pi}
+  \frac{\sinh^2u}{\sinh^2(au)+\sin^2\eta}.
+\tag{1}
+\]
+Set \(h(x)=0\) for \(x\le1\). As \(x\downarrow1\), \(u\to\infty\) and the ratio in (1) tends to zero since \(a>1\). As \(x\to\infty\), \(u\to0\) and the ratio again tends to zero. In particular \(h\) is continuous, including at \(1\). The fundamental theorem of calculus, taking a limit at \(1\) for intervals that cross it, now gives
+\[
+-D_y(m)=H(z-d)-H(z+d)=\int_{z-d}^{z+d}h(x)\,dx.
+\tag{2}
+\]
+This identity includes the regions in which either or both matched distances are infinite. It proves \(D_y\le0\) for \(y\le0\).
+
+### The integrand has one maximum
+
+Put \(t=\sinh^2u\) and \(g(t)=\sinh^2(au)\). For \(t>0\),
+\[
+g'(t)=a\frac{\sinh(2au)}{\sinh(2u)}.
+\]
+This is strictly increasing in \(u\). Indeed, its logarithmic derivative is
+\(2a\coth(2au)-2\coth(2u)>0\), since \(r\coth r\) is strictly increasing for \(r>0\). To see the latter, its derivative has numerator \(\sinh r\cosh r-r\), which vanishes at zero and has derivative \(2\sinh^2r>0\). Since \(t\) increases with \(u\), this proves \(g''(t)>0\).
+
+The derivative of the ratio in (1), as a function of \(t\), has the sign of
+\[
+g(t)+\sin^2\eta-tg'(t).
+\]
+This expression has derivative \(-tg''(t)<0\). The ratio is positive for \(0<t<\infty\) and tends to zero at both ends. It therefore attains an interior maximum, and the strict decrease of the derivative numerator shows that this is its only critical point. Reversing coordinates from \(t\) to \(x\) preserves the one-maximum property. Thus \(h\) increases up to some \(x_0>1\) and decreases thereafter, with the constant zero extension on \(x\le1\).
+
+Now let \(B(z)=\int_{z-d}^{z+d}h(x)\,dx\). If \(d=0\), \(B=0\). Otherwise
+\[
+B'(z)=h(z+d)-h(z-d).
+\]
+This is nonnegative when \(z+d\le x_0\) and nonpositive when \(z-d\ge x_0\). In the intervening interval, \(h(z+d)\) is nonincreasing and \(h(z-d)\) is nondecreasing, so \(B'\) can change sign only from positive to negative. Also \(B(0)=0\) because \(d\le1\), and \(B(z)\to0\) as \(z\to\infty\). By (2), \(D_y\) decreases to its minimum and then increases to zero, allowing constant portions. Consequently
+\[
+\operatorname{TV}(D_y)=2\sup_m|D_y(m)|,\qquad
+\sup_m|D_y(m)|\le 2d\,\|h\|_\infty.
+\tag{3}
+\]
+
+### An explicit bound on the maximum
+
+The estimate that gives the sharp uniform constant is
+\[
+\sinh^2(au)+\sin^2\eta\ \ge\ 2a\sinh^2u
+\qquad (u\ge0).
+\tag{4}
+\]
+To prove it, expand \(\sinh^2u=(\cosh(2u)-1)/2\). For every power \(u^{2k}\) with \(k\ge2\), the coefficient in \(\sinh^2(au)-2a\sinh^2u\) is nonnegative, since \(a^{2k}\ge a^4>2a\). Retaining the quadratic and quartic terms gives
+\[
+\sinh^2(au)-2a\sinh^2u
+\ge -a(2-a)u^2+\frac{a^4-2a}{3}u^4.
+\]
+Since \(a\ge3/2\),
+\[
+a^2-\frac2a\ge\frac94-\frac43=\frac{11}{12}>\frac34,
+\qquad
+\frac{a^4-2a}{3}\ge\frac{a^2}{4}.
+\]
+Concavity of sine on \([0,\pi/2]\) gives \(\sin\eta\ge 2\eta/\pi=2-a\). Combining the three inequalities yields
+\[
+\sinh^2(au)+\sin^2\eta-2a\sinh^2u
+\ge \left(2-a-\frac{a u^2}{2}\right)^2\ge0,
+\]
+which proves (4). Substitution into (1) gives
+\[
+\|h\|_\infty\le\frac{\sin(2\eta)}{4\pi}.
+\]
+Equations (2) and (3), followed by reflection for \(y>0\), prove
+\[
+\boxed{\displaystyle
+\operatorname{TV}(D_y)
+=2\sup_m|D_y(m)|
+\le \frac{|\cos(2\alpha)|\sin(2\eta)}{\pi}
+\le\frac{2\eta}{\pi}.}
+\tag{5}
+\]
+
+### Sharpness and the proposed reduction
+
+To see that \(C_1=1/\pi\) is optimal, fix \(0<d<1\), choose \(\alpha\) with \(\cos(2\alpha)=d\), and fix \(z>1+d\). For each \(\eta\), take \(y=b^{-1}\log\tan\alpha\) and choose \(m\) by \(S\cot(\pi m)=z\). On the fixed interval \([z-d,z+d]\), (1) gives, as \(\eta\downarrow0\),
+\[
+\frac{h(x)}{\eta}\longrightarrow
+\frac{2}{\pi}\frac{\sinh^2u}{\sinh^2(2u)}
+=\frac{1-x^{-2}}{2\pi},
+\qquad u=\operatorname{arccoth}x.
+\]
+The convergence is uniform there by continuity on this compact interval away from \(x=1\). Therefore
+\[
+\lim_{\eta\downarrow0}\frac{|D_y(m)|}{\eta}
+=\frac1{2\pi}\int_{z-d}^{z+d}(1-x^{-2})\,dx.
+\]
+Sending \(z\to\infty\) gives \(d/\pi\), and sending \(d\uparrow1\) gives \(1/\pi\). Together with the variation equality in (5), this proves optimality.
+
+The proposed arctangent reduction also has the stated sign. For \(m>0\), use \(\coth(+\infty)=1\). The complementary-angle formula for \(\Theta\), followed by subtraction of two angles in \((0,\pi/2)\), gives
+\[
+D_y=\frac1\pi\arctan\!\left(
+\frac{\tan\eta\,(\coth w_--\coth w_+)}
+{1+\tan^2\eta\,\coth w_+\coth w_-}\right).
+\]
+Both \(\coth w_\pm\) are nonincreasing in \(m\), so the reciprocal denominator is nondecreasing and bounded by one. The product variation inequality and the \(1\)-Lipschitz property of \(\arctan\) give the proposed estimate, interpreting the factors at \(m=0\) by right limits.
+
+In fact \(\Xi\) is monotone for \(y\le0\). Define \(K(x)=\coth(a\,\operatorname{arccoth}x)\) for \(x>1\) and \(K(x)=1\) for \(x\le1\). For \(x>1\),
+\[
+K'(x)=a\frac{\sinh^2u}{\sinh^2(au)}.
+\]
+This increases with \(x\), since \(\sinh(au)/\sinh u\) increases with \(u\) by the same \(r\coth r\) calculation above, and \(u\) decreases with \(x\). At \(x=1\) the right derivative tends to zero, so \(K\) is convex on \(\mathbb R\). Thus \(\Xi=K(z-d)-K(z+d)\) is nonincreasing in \(z\), hence nondecreasing in \(m\). Since \(K'(+\infty)=1/a\), its initial limit is \(-2d/a=-b\cos(2\alpha)\).
+
+## 2. The sawtooth integral
+
+Write \(m_+(w)=N(y+w)-N(y)\) and \(m_-(w)=N(y)-N(y-w)\) for \(w\ge0\). Each map is strictly increasing. Its range starts at zero and has open upper endpoint \(M_+=1/2-N(y)\) or \(M_-=N(y)\), respectively.
+
+Because \(T\) is even, splitting the integral at \(y\) gives
+\[
+J(y)=\int_0^\infty T(w)
+\big[s(Lm_+(w))-s(Lm_-(w))\big]\,dw.
+\]
+Here \(s(-r)=-s(r)\) fails at integers. The set of \(w\) for which \(Lm_-(w)\) is an integer is finite, since \(m_-\) is strictly increasing and bounded. These points have zero integration measure.
+
+The pushforward of \(T(w)\,dw\) under \(m_\pm\) has cumulative mass \(\Theta(w_\pm(m))\) up to \(M_\pm\), and \(q/2\) thereafter. There is no atom at \(M_\pm\), since the cumulative mass tends continuously to \(q/2\). Subtracting the two pushforward measures gives
+\[
+J(y)=\int_{[0,1/2]}s(Lm)\,dD_y(m).
+\]
+This also exists as a Riemann–Stieltjes integral, since the integrand has finitely many jumps and the bounded-variation integrator is continuous. Hence
+\[
+|J(y)|\le\tfrac12\operatorname{TV}(D_y)\le\eta/\pi.
+\tag{6}
+\]
+The parameter \(c\) in Claim 2 is unused. The centering in the displayed definition of \(J\) matters. For example, adding a phase \(c=1/4\) inside the sawtooth would make the integral tend to \(-q/4\) as \(L\downarrow0\), by dominated convergence. This would violate (6) for \(\eta<\pi/6\).
+
+## 3. Comparison with infinite nodes
+
+If there is a finite node with \(x_j^*>y_j\), choose a finite \(j\) maximizing \(x_j^*-y_j>0\). For every finite \(k\),
+\[
+x_j^*-x_k^*\ge y_j-y_k,\qquad
+\theta(x_j^*-x_k^*)\le\theta(y_j-y_k).
+\]
+For each remaining \(k\), \(\theta(x_j^*-x_k^*)\le\pi-2\eta\). Finally \(p(x_j^*)>p(y_j)\). Subtracting the \(\theta\) terms in the Bethe map therefore gives
+\[
+0=F_j(x^*)>\widetilde F_j.
+\]
+This contradicts \(\widetilde F_j\ge0\). Claim 3 follows. If there are no finite nodes, its conclusion is vacuous.
+
+## 4. The residual identity
+
+For real \(u\), put
+\[
+z_0(u)=\frac{p(u)}{2\pi}
++\frac1L\sum_{k\ {\rm finite}}\Theta(u-y_k)
+-\frac{n_\infty}{L}\frac q2.
+\]
+Since \(\theta=-2\pi\Theta\) and \(\pi-2\eta=\pi q\),
+\(\widetilde F_j/(2\pi L)=z_0(y_j)-I_j/L\) for finite \(j\).
+
+The convolution with each counting step can be evaluated directly:
+\[
+\int_{y_k}^\infty T(u-v)\,dv
+=\int_{-\infty}^{u-y_k} T(r)\,dr
+=\frac q2+\Theta(u-y_k).
+\]
+Summing and using \((n_{\rm fin}+n_\infty)/L=1/2\) gives
+\[
+z_0(u)=\frac{p(u)}{2\pi}+(T*N_y)(u)-\frac q4.
+\tag{7}
+\]
+The continuum counterpart follows by integrating the given equation \(\rho=a_1+T*\rho\) from \(-\infty\) to \(u\). Tonelli's theorem gives \(\int_{-\infty}^u(T*\rho)(r)\,dr=(T*N)(u)\), and \(p(-\infty)=-\eta\). Thus
+\[
+N(u)=\frac{p(u)+\eta}{2\pi}+(T*N)(u).
+\]
+Since \(\eta/(2\pi)+q/4=1/4\), replacing \(N_y\) by \(N\) on the right of (7) gives \(N(u)-1/4\). At a finite node,
+\[
+L N(y_j)-L/4-I_j
+=j-\tfrac12+\kappa_0-\tfrac n2
+-\left(j-\tfrac{n+1}{2}\right)=\kappa_0.
+\]
+Consequently
+\[
+\frac{\widetilde F_j}{2\pi L}
+=\frac{\kappa_0}{L}-[T*(N-N_y)](y_j).
+\tag{8}
+\]
+
+## 5. Clipping and the supersolution
+
+For \(t=L N(v)\in(0,n)\), a node contributes to \(L N_y(v)\) just when \(j-\tfrac12+\kappa_0\le t\). This inequality already implies that the node is finite. Also \(t-\kappa_0+1/2<n\) because \(\kappa_0\ge1/2\). Counting positive integers gives
+\[
+L N_y(v)=\max\{\lfloor t-\kappa_0+1/2\rfloor,0\}.
+\]
+Put \(r=t-\kappa_0+1/2\). Then
+\[
+L(N-N_y)(v)\le t-\lfloor r\rfloor=\kappa_0+s(r).
+\tag{9}
+\]
+Equality holds when \(r\ge0\), including its integer points. Here the prescribed value \(s(k)=-1/2\) agrees with counting a node at its location.
+
+At a finite node \(j\), \(r=t(v)-t(y_j)+j\). Convolving (9) with the positive kernel \(T\), using periodicity of \(s\), and applying (6), gives
+\[
+L[T*(N-N_y)](y_j)\le q\kappa_0+J(y_j)
+\le q\kappa_0+\frac{\eta}{\pi}.
+\]
+Since \(1-q=2\eta/\pi\), the last expression is at most \(\kappa_0\) for every \(\kappa_0\ge1/2\). Equation (8) proves \(\widetilde F_j\ge0\); Claim 3 then gives \(x_j^*\le y_j\) at every finite node. This proves Claims 5 and 6.
+
+## 6. Cumulative and density bounds
+
+Every finite node counted by \(N_y(v)\) has its corresponding root at or below \(v\). Thus \(N_x(v)\ge N_y(v)\), and (9) gives, with \(A=(\kappa_0+1/2)/L\),
+\[
+N_x(v)\ge N_y(v)\ge N(v)-A.
+\tag{10}
+\]
+By continuity of \(N\), the same lower bound holds for the left limit \(N_x(v^-)\). Root reflection gives the identity
+\[
+N_x(v)=\tfrac12-N_x((-v)^-),
+\]
+since \(L N_x((-v)^-)\) counts the roots strictly below \(-v\), whose reflected partners are strictly above \(v\). Applying (10) to this left limit and using \(N(-v)=1/2-N(v)\) gives \(N_x(v)\le N(v)+A\). Hence
+\[
+|N_x(v)-N(v)|\le A.
+\tag{11}
+\]
+At a root the displayed bound applies to the right-continuous value, which includes that root. The left limit also obeys the bound by continuity of \(N\). The two values differ by \(1/L\).
+
+Finally put \(\mu_x=L^{-1}\sum_j\delta_{x_j^*}\) and \(E=N_x-N\). The continuum equation gives
+\[
+\sigma_L(u)-\rho(u)
+=\int_{\mathbb R}T(u-v)\,dE(v).
+\]
+Integration by parts gives the sign explicitly:
+\[
+\sigma_L(u)-\rho(u)=\int_{\mathbb R}T'(u-v)E(v)\,dv.
+\]
+The boundary terms vanish because \(T\) decays at both ends and \(E\) is bounded. Evenness and monotonicity of \(T\) on the positive half-line give \(\int_{\mathbb R}|T'|=2T(0)\). Thus
+\[
+|\sigma_L(u)-\rho(u)|
+\le\frac{(2\kappa_0+1)\cot\eta}{\pi L},
+\qquad
+\eta L|\sigma_L(u)-\rho(u)|
+\le\frac{2\kappa_0+1}{\pi},
+\]
+where \(\eta\cot\eta\le1\) follows from \(\tan\eta\ge\eta\). This proves Claims 7 and 8.
+
+With the optimal uniform \(C_1=1/\pi\), the smallest allowed \(\kappa_0\) is \(1/2\). Then \(t_j=j\) and only the last node is infinite. The counting error is at most one and the scaled density error is at most \(2/\pi\), uniformly for every even \(L\ge2\) and \(0<\eta\le\pi/4\). At \(L=2\) the sole trial node is infinite. At \(L=4\) the first trial node is zero and the second is infinite. For a general allowed shift, all nodes are infinite iff \(\kappa_0\ge n-1/2\); the comparison is then vacuous, but the clipping, reflection, and density arguments still apply.
+
+The workspace was read-only, so the proof is delivered here. No project-state update, commit, or push was made.
+
+[gpt_solve: backend=codex model=gpt-6.2-astra effort=high transcript=20261118T110945-60580]

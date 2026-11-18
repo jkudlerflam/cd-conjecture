@@ -1,0 +1,310 @@
+# Spectral inclusion of the periodic Potts chain in twisted XXZ rings
+
+[rigorous given cited theorem M] Claim 1 holds with the Hamiltonian normalization in the question, for both signs and all \(L\ge 2\). For the ferromagnetic sign there is an equality of finite-volume ground energies,
+\[
+E_P^{(+)}(L)=\min\operatorname{Spec}(2L;\cos\gamma,2\gamma,0).
+\]
+The same equality holds with twist \(-2\gamma\). Consequently Claim 3 holds for this sign under hypothesis X at \(\Delta_0=\cos\gamma\).
+
+[rigorous] Claims 2 and 3 require a correction for the reversed sign. For \(Q=2,3\), the Potts ground energy density is nonnegative, whereas the XXZ ground energy density at \(\Delta=-\cos\gamma\) is strictly negative. Already at \(L=5\), every real-twist XXZ sector minimum is strictly below the reversed-sign Potts ground energy. For \(Q=4\) and the reversed sign, both ground energies are zero. The gauge-optimized half-spread in Claim 4 is
+\[
+M(h)=\frac{\sqrt Q+1}{2},\qquad Q=3,4.
+\]
+
+## 1. The Potts generators
+
+[rigorous] Write \(\delta=\sqrt Q\), \(u=Q^{-1/2}\sum_a|a\rangle\), \(P=|u\rangle\langle u|\), and \(D=\sum_a|aa\rangle\langle aa|\). Then \(E=\delta P\) and \(F=\delta D\). Both are Hermitian, and each squares to \(\delta\) times itself. For a site at the left end of a bond,
+\[
+(P\otimes1)D(P\otimes1)=Q^{-1}(P\otimes1),
+\qquad
+D(P\otimes1)D=Q^{-1}D .
+\]
+The first identity follows from \(P|a\rangle\langle a|P=P/Q\) and summation over \(a\). For the second, the matrix element between \(|aa\rangle\) and \(|bb\rangle\) is \(\langle a|P|b\rangle\delta_{ab}=\delta_{ab}/Q\), and all other matrix elements vanish. Exchanging the sites proves the right-end identities. Multiplication by \(\delta^3\) gives \(e_i e_{i\pm1}e_i=e_i\).
+
+[rigorous] Two site generators on distinct sites commute. All bond generators are diagonal in the color basis and commute, including the two coincident bond operators when \(L=2\). A site generator and a bond generator with nonincident supports commute. These cases exhaust the pairs at cyclic distance at least two. Finally, summing the bond \(h\) in the question counts each site term twice with coefficient \(1/2\), giving \(H_P^{(s)}=-s\sum_i e_i\).
+
+## 2. The annular representations that occur in the Potts chain
+
+[rigorous] The issue with the twist is different in the sectors with and without through lines. With through lines, the relevant operator is a cyclic permutation. Without through lines, it is the adjacency matrix of a graph. The following construction identifies both operators before making any use of the XXZ correspondence.
+
+### 2.1. A representation on closed walks
+
+[rigorous] Let \(G\) be the star with center \(o\) and leaves \(1,\ldots,Q\). Write \(A\) for its adjacency matrix and set
+\[
+\mu_o=\delta,\qquad \mu_a=1\quad(1\le a\le Q).
+\]
+Then \(A\mu=\delta\mu\), since \(Q=\delta^2\). For even \(n>0\), let \(V_n\) have orthonormal basis the closed walks of length \(n\) with a marked starting position. Thus its basis labels are cyclic strings \(a_1,\ldots,a_n\), with \(a_i\) adjacent to \(a_{i+1}\), and rotations of a string are retained as distinct labels whenever the strings differ. Let \(V_0=\mathbb C^{Q+1}\), with basis the graph vertices.
+
+[rigorous] The following explicit rule assigns a map \(T_D:V_r\to V_n\) to a diagram \(D\) of nonintersecting strings in an annulus, with \(r\) marked string endpoints on the inner boundary and \(n\) on the outer boundary. Endpoints are paired by strings, and closed strings are allowed. A boundary walk labels the gaps between consecutive endpoints. An unmarked boundary circle carries one vertex label. Color every complementary region by a graph vertex, requiring adjacent colors across each string and agreement with both boundary labels. For a region \(R\), let \(b(R)\) count its incident marked-boundary gap intervals, with multiplicity. An entire unmarked boundary circle contributes zero to this count. The matrix element of \(T_D\) is the sum over compatible colorings of
+\[
+\prod_R \mu_{\operatorname{col}(R)}^{\,\chi(R)-b(R)/2}.
+\tag{1}
+\]
+Here regions are taken after cutting along the strings, so the two sides of a cut are counted separately. In particular, all matrix entries are nonnegative.
+
+[rigorous] This rule respects both isotopy and composition. Isotopy preserves the regions, their Euler characteristics and their boundary incidences. On gluing two annuli, compatible colorings are in bijection with pairs of colorings agreeing on the common boundary walk. Gluing along one interval subtracts one from the sum of the Euler characteristics and removes two gap incidences. The exponent in (1) is therefore additive. Gluing along an unmarked circle changes neither quantity, since its Euler characteristic is zero. Applying this argument to all gaps gives \(T_{D_2D_1}=T_{D_2}T_{D_1}\). Straight strings give the identity, since each intervening strip has Euler characteristic one and two boundary gaps.
+
+[rigorous] Three evaluations will be used below.
+
+1. Inserting an innermost contractible circle in a region of color \(a\) removes a disk from that region and creates a disk of some color \(b\sim a\). Its total multiplier is \(\sum_{b\sim a}\mu_b/\mu_a=\delta\). Nested contractible circles can therefore be removed from the inside out.
+2. A single essential circle from \(V_0\) to \(V_0\) has matrix \(A\). Its two regions are annuli, both exponents in (1) vanish, and the two labels must be adjacent.
+3. A cup inserting the backtrack \(a,b,a\) has coefficient \(\sqrt{\mu_b/\mu_a}\). Its disk of color \(b\) contributes exponent \(1/2\), and the added boundary incidence in the surrounding region gives the factor \(\mu_a^{-1/2}\). The reversed cap has the transposed matrix. Consequently the cap followed by a cup at position \(i\) acts by
+\[
+e_i|\ldots,a,b,c,\ldots\rangle
+ =\mathbf1_{a=c}\sum_{b'\sim a}
+ \frac{\sqrt{\mu_b\mu_{b'}}}{\mu_a}
+ |\ldots,a,b',a,\ldots\rangle .
+\tag{2}
+\]
+
+[rigorous] In \(V_N\), take the subspace where the odd positions are leaves and the even positions are centers. Identify its \(L\) leaf labels with the Potts colors. At an odd position the matrix in (2) has every entry \(1/\delta\), hence is \(E_j\). At an even position it is zero unless the neighboring leaves coincide, in which case it multiplies by \(\delta\), hence is \(F_{j,j+1}\). The subspace and its complementary parity subspace are invariant under every \(e_i\). This realizes the physical Potts chain without assuming that one-step translation acts within its Hilbert space.
+
+### 2.2. Filtration by through lines
+
+[rigorous] Fix \(N\). For \(r=0,2,\ldots,N\), let \(\mathcal F_r\subset V_N\) be the span of \(T_D V_k\) for all diagrams \(D:k\to N\) and even \(k\le r\). Put \(\mathcal F_{-2}=0\). Composition makes each \(\mathcal F_r\) invariant under the \(e_i\), and \(\mathcal F_N=V_N\) by the identity diagram.
+
+[rigorous] Consider \(r>0\) modulo \(\mathcal F_{r-2}\). A diagram \(r\to N\) pairing two inner endpoints represents zero in this quotient. Indeed, an inner-to-inner arc cuts off a disk on the side away from the outer boundary. After removing closed contractible loops, choose an innermost such arc. Its endpoints are consecutive on the inner boundary, and it can be placed in an inner collar. Cutting off this cap factors the map through \(V_{r-2}\). Thus the surviving diagrams have \(r\) through lines. An essential circle cannot coexist with a through line because it separates the two boundaries.
+
+[rigorous] For \(r>0\), define \(W_{r/2,z}\) by annular diagrams with \(r\) through lines, imposing the following rules. Concatenate at the \(N\)-point boundary, remove each contractible circle with weight \(\delta\), set a diagram that joins two through lines to zero, and give one cyclic shift of the inner attachments the scalar \(z\). Choose the shift direction corresponding to leftward seam passage. These rules specify the winding convention for \(z\). To see why the shift is the only extra datum, fix the outer arcs and lift the annulus to a strip. The ordered sequence of inner through endpoints must connect to the ordered sequence of outer through endpoints by an increasing bijection commuting with period \(r\). Such a bijection is \(k\mapsto k+t\) for one \(t\in\mathbb Z\). With the attachments fixed, the disjoint arcs in the cut-open strip are unique up to isotopy, as follows by successively cutting along an outermost arc. Thus shifting the inner attachments accounts also for full turns.
+
+[rigorous] On \(V_r\), that inner shift acts as the cyclic permutation \(R_r\) of the walk labels. In (1) its intervening regions are strips and have weight one. In particular \(R_r^r=1\). For an eigenvector \(R_r\eta=z\eta\), the assignment
+\[
+D\longmapsto T_D\eta \pmod{\mathcal F_{r-2}}
+\tag{3}
+\]
+respects every defining rule of \(W_{r/2,z}\). It intertwines all \(e_i\) by composition. Since \(R_r\) has an eigenbasis, the direct sum of the maps (3), over this basis, surjects onto \(\mathcal F_r/\mathcal F_{r-2}\). Every parameter used here satisfies \(z^r=1\).
+
+[rigorous] For \(r=0\), define \(W_{0,z}\) using outer pairings in the annulus, with contractible loop weight \(\delta\) and essential loop weight \(z+z^{-1}\). Pairings distinguish the side on which the hole lies. Every essential circle can be moved into the inner collar after contractible circles are removed, since the remaining arcs have both endpoints on the outer boundary. Hence for \(A\eta=\alpha\eta\) the map \(D\mapsto T_D\eta\) intertwines \(W_{0,z}\) with its image whenever \(z+z^{-1}=\alpha\). The maps for an eigenbasis of \(A\) span \(\mathcal F_0\).
+
+[rigorous] The star adjacency matrix has eigenvalues \(\delta,-\delta,0\). On vectors constant on the leaves its matrix in center-value and leaf-value coordinates is \(\left(\begin{smallmatrix}0&Q\\1&0\end{smallmatrix}\right)\). It kills the \(Q-1\) dimensional space of leaf vectors with zero sum and zero center coordinate. For \(Q\le4\) all these eigenvalues lie in \([-2,2]\), so each admits \(z=e^{i\arccos(\alpha/2)}\). In particular the Perron weight \(\alpha=\delta\) admits \(z=e^{\pm i\gamma}\). This is the required reality argument in the zero-through-line sector. Finite-order translation alone would give no bound on \(\alpha\).
+
+[rigorous] Write \(B=\sum_{i=1}^N e_i\). In a basis adapted to the filtration, the characteristic polynomial of \(B\) is the product of those of its successive quotients. Under an intertwining surjection, the characteristic polynomial on the image divides that on the domain, by taking a basis adapted to the kernel. Therefore every eigenvalue of the physical \(B\) occurs on at least one of the \(W_{r/2,z}\) just constructed. This argument applies to reducible link modules as well.
+
+## 3. The XXZ dictionary and the exceptional parameters
+
+[rigorous given cited theorem M] The external representation theorem used here is the following specialization of Morin-Duchesne and Saint-Aubin, Theorems 4.5 and 4.6, with their Definition 2.6 and equations (8), (9). For even \(N\), even \(0\le r\le N\), and nonzero parameters \(u_*,v\), take contractible weight \(u_*^2+u_*^{-2}\), essential weight \(v^N+v^{-N}\), and weight \(v^d\) for total leftward defect displacement \(d\) measured in lattice spacings. On \(S^z=r/2\) let the spin generator vanish on parallel spins and have antiparallel block, in order \(\uparrow\downarrow,\downarrow\uparrow\),
+\[
+\bar e_i=
+\begin{pmatrix}
+u_*^2&v^2\\
+v^{-2}&u_*^{-2}
+\end{pmatrix}
+\tag{4}
+\]
+with cyclically ordered sites also at the seam. The link representation and this spin representation are intertwined by a square matrix which is invertible whenever
+\[
+(-u_*^2)^{k+r/2}v^N-
+(-u_*^2)^{-(k+r/2)}v^{-N}\ne0
+\quad\text{for every }1\le k\le (N-r)/2 .
+\tag{5}
+\]
+Only this sufficient condition for invertibility is needed. [A. Morin-Duchesne and Y. Saint-Aubin, J. Phys. A 46, 285207 (2013), full text](https://arxiv.org/pdf/1203.4996)
+
+[rigorous] The seam and displacement conventions agree with \(z=v^N\). Indeed, let \(p(w)\) be the sum of the defect coordinates of a link state \(w\), each taken in \(1,\ldots,N\). In a transition \(w\to w'\), the total lifted leftward displacement is
+\[
+p(w)-p(w')+Nt,
+\]
+where \(t\) counts signed leftward seam passages. Rescaling the basis vector \(w\) by \(v^{-p(w)}\) removes the endpoint factor and leaves \(v^{Nt}=z^t\). For \(r=0\) the same identification follows directly from the essential weight. Thus in the convention of Section 2,
+\[
+2j=r,\qquad m=j,\qquad z=v^N,\qquad e^{i\phi}=z^2 .
+\tag{6}
+\]
+
+[rigorous given cited theorem M] Fix \(u_*^2=e^{i\gamma}\), including \(\gamma=0\). For this fixed \(u_*\), condition (5) excludes only finitely many \(v\ne0\). Outside this finite set the two matrices for \(B\) are similar. Their characteristic polynomial coefficients are Laurent polynomials in \(v\), since the link matrices use only finite displacements and loop factors, and the spin matrices are given by (4). The coefficients agree for all other \(v\), hence agree identically. This proves equality of characteristic polynomials at the exceptional twists themselves, at fixed \(\gamma\). In particular, no invertible intertwiner at a root of unity is being assumed.
+
+[rigorous] Take a unit-modulus \(N\)-th root \(v\) of the \(z\) found in Section 2, and put \(a=\cos\gamma\). Conjugate the spin matrices by \(O=v^{\sum_{\ell=1}^N\ell\sigma_\ell^z}\). On an interior bond the coefficient of \(\sigma_i^+\sigma_{i+1}^-\) becomes \(v^2v^{2i-2(i+1)}=1\). On the seam it becomes \(v^2v^{2N-2}=v^{2N}=e^{i\phi}\). The reverse hoppings have conjugate coefficients. The diagonal part of (4) on each bond is
+\[
+\frac a2(1-\sigma_i^z\sigma_{i+1}^z)
++\frac{u_*^2-u_*^{-2}}4(\sigma_i^z-\sigma_{i+1}^z).
+\]
+The second term sums to zero. It follows that \(O(\sum_i\bar e_i)O^{-1}=H_X(N;-a,\phi)\), with no additive constant.
+
+[rigorous] Let \(U=\prod_{i\ {\rm odd}}\sigma_i^z\), which implements the odd-site rotation up to a scalar phase. Every bond, including \((N,1)\), contains one odd site. Thus \(U\) reverses the sign of every hopping, preserves every diagonal term, and preserves \(S^z\). It follows that
+\[
+U[-H_X(N;-a,\phi)]U^{-1}=H_X(N;a,\phi).
+\tag{7}
+\]
+The twist is unchanged.
+
+[rigorous given cited theorem M] Combining (3) through (7) proves Claim 1. More explicitly, a sufficient finite set of sectors and twists is
+\[
+\begin{array}{c|c|c}
+\text{through lines}&m&\text{allowed seam phases}\\ \hline
+r=0&0&e^{i\phi}=z^2,\quad z+z^{-1}\in\{-\sqrt Q,0,\sqrt Q\}\\
+r=2,4,\ldots,2L&r/2&e^{i\phi}=z^2,\quad z^r=1 .
+\end{array}
+\tag{8}
+\]
+Some of these modules can have zero image. For either sign, inclusion immediately gives
+\[
+E_P^{(s)}(L)\ \ge\
+\min_{m,\ \phi\in\mathbb R}\min\operatorname{Spec}(2L;s a,\phi,m).
+\tag{9}
+\]
+
+## 4. The ferromagnetic ground state
+
+[rigorous] Use \(r=0\), \(\eta=\mu\), and \(z=e^{i\gamma}\), so every loop has weight \(\delta\). Let \(C:W_{0,z}\to\mathcal H_P\) be the diagram map followed by projection to the physical parity subspace. It intertwines \(B\). Every column of \(C\) is nonnegative and nonzero. To verify the latter assertion, take any loopless basis pairing. Its arcs cut the annulus successively into regions, each cut separating off a disk. Color neighboring regions alternately by the center and one fixed leaf. The boundary gaps then alternate between center and leaf. Interchanging these two assignments if necessary gives the physical parity. The inner region has a strictly positive coefficient in \(\mu\), and every factor in (1) is positive.
+
+[rigorous] Denote the physical and link matrices of \(B\) by \(B_P,B_W\). The matrix \(B_P\) is real symmetric and entrywise nonnegative. A unit vector maximizing its Rayleigh quotient can be replaced by its componentwise absolute value, so it has a nonnegative top eigenvector \(x\). In fact \(x>0\). Each single-site color change is a positive matrix element of \(B_P\), and these changes connect all configurations. A zero coordinate of \(x\) would, by the eigenvector equation, force every neighboring coordinate to vanish and then force \(x=0\).
+
+[rigorous] Let \(\lambda=\lambda_{\max}(B_P)\) and \(y=C^{\mathsf T}x\). The column property gives \(y>0\), and intertwining gives \(y^{\mathsf T}B_W=\lambda y^{\mathsf T}\). The link matrix \(B_W\) is nonnegative because both loop weights are positive. For every complex vector \(f\),
+\[
+\sum_i y_i|(B_W f)_i|
+\le \sum_{i,j}y_i(B_W)_{ij}|f_j|
+=\lambda\sum_j y_j|f_j|.
+\]
+Hence every eigenvalue of \(B_W\) has modulus at most \(\lambda\). Also \(\lambda\) itself is an eigenvalue, by the left eigenvector equation. This proves that the largest link eigenvalue is the largest physical eigenvalue, even if \(C\) has a kernel.
+
+[rigorous given cited theorem M] The characteristic polynomial identity and (7) now give the finite-volume equality
+\[
+\boxed{\displaystyle
+E_P^{(+)}(L)=\min\operatorname{Spec}(2L;a,2\gamma,0)
+            =\min\operatorname{Spec}(2L;a,-2\gamma,0).}
+\tag{10}
+\]
+The second equality also follows by complex conjugation in the spin basis. Equation (10) supplies the requested explicit upper bound for \(s=+1\).
+
+## 5. The bulk limit and hypothesis X
+
+[rigorous] First consider any finite-dimensional nearest-neighbor chain with a Hermitian bond \(h\), \(\|h\|=b\), ring ground energy \(E_n\), and
+\[
+e_{\mathrm{TI}}=\inf_{\omega\ {\rm translation\ invariant}}\omega(h).
+\]
+Restrict any such infinite-chain state to \(n\) consecutive sites and evaluate the ring Hamiltonian there. The \(n-1\) internal bonds have total expectation \((n-1)\omega(h)\). The seam expectation differs from \(\omega(h)\) by at most \(2b\). The variational principle therefore gives \(E_n/n\le e_{\mathrm{TI}}+2b/n\).
+
+[rigorous] Conversely, tile the infinite chain by independent copies of an \(n\)-site ring ground state and average the resulting block-product state over the \(n\) translates. The average is translation invariant. Per block, one ring seam is replaced by one bond between blocks, at cost at most \(2b\). Thus \(e_{\mathrm{TI}}\le E_n/n+2b/n\). Combining the bounds gives
+\[
+\lim_{n\to\infty}E_n/n=e_{\mathrm{TI}} .
+\tag{11}
+\]
+This proves the requested characterization for each Potts sign. It also gives the untwisted XXZ bulk limit.
+
+[rigorous] To identify the bulk density in (10), one must still compare the fixed zero-magnetization sector with the unrestricted XXZ ground state. Write \(g_n=\min_m\min\operatorname{Spec}(n;a,0,m)\) for even \(n\), and \(g_n^\phi(0)=\min\operatorname{Spec}(n;a,\phi,0)\). Changing the twist changes only the two off-diagonal entries on the seam, so its operator-norm cost is \(|e^{i\phi}-1|\le2\). Therefore
+\[
+g_n^\phi(0)\ge g_n-2.
+\tag{12}
+\]
+
+[rigorous] Choose an \(n\)-site untwisted ground vector with definite magnetization \(m\). Its global spin flip has the same energy and magnetization \(-m\), since \(\prod_i\sigma_i^x\) preserves the untwisted Hamiltonian. Put these two vectors on consecutive blocks of a \(2n\)-site ring. Their product has magnetization zero. Passing from the two original rings to the one twisted ring deletes two bonds and inserts two bonds. All four have norm at most \(1+|a|\), as is seen from their antiparallel \(2\times2\) blocks. Hence
+\[
+g_{2n}^\phi(0)\le 2g_n+4(1+|a|).
+\tag{13}
+\]
+Equations (12) and (13) give \(g_{2n}^\phi(0)/(2n)\to\epsilon_0(a)\) along even \(n\). By (10), this identifies the Potts density along even \(L=n\). Equation (11) gives existence along all \(L\), so the subsequence determines the full limit:
+\[
+\boxed{e_0^{P,(+)}=2\epsilon_0(a).}
+\tag{14}
+\]
+
+[rigorous given cited theorem X and theorem M] Hypothesis X, in the form used here, states that at the specified \(\Delta_0\), for every even \(N\), every \(m\), and every real \(\phi\), the sector minimum is at least \(N\epsilon_0(\Delta_0)-K/N\), where \(\epsilon_0(\Delta_0)\) is the unrestricted untwisted bulk density. Apply this at \(\Delta_0=a\), \(N=2L\), \(m=0\), \(\phi=2\gamma\). Equations (10) and (14) give
+\[
+\boxed{\displaystyle
+E_P^{(+)}(L)\ge L e_0^{P,(+)}-\frac{K}{2L},\qquad L\ge2.}
+\tag{15}
+\]
+The same \(K\) appears in both inequalities.
+
+## 6. What fails for the reversed sign
+
+[rigorous] For \(s=-1\), \(H_P^{(-)}=\sum_i e_i\ge0\). On the untwisted even XXZ ring, take the product state with alternating \(\sigma^x\) eigenvalues \(+1,-1\). On each bond its \(xx,yy,zz\) expectations are \(-1,0,0\). At \(\Delta=-a\) its energy per bond is \((a-1)/2\). Consequently
+\[
+e_0^{P,(-)}\ge0,\qquad
+\epsilon_0(-a)\le\frac{a-1}{2}<0\quad(Q=2,3).
+\tag{16}
+\]
+Thus the proposed bulk identity is false for both values of \(Q\).
+
+[rigorous] The specified finite-volume upper bound also fails, even if its sector and twist can be chosen separately for each size. Take \(L=5\). A zero-energy Potts vector would lie in the kernel of every \(F\) and every \(E\), because these operators are positive. Its amplitudes must vanish on improperly colored rings, and their sum over any one site, with the others fixed, must be zero. For \(Q=2\) an odd ring has no proper coloring. For \(Q=3\), if the two neighbors of a site have different colors, only one color at that site is admissible. The zero-sum condition forces that amplitude to vanish. Thus a configuration with nonzero amplitude would satisfy \(s_{j-1}=s_{j+1}\) at every site. On a five-cycle this makes it constant, contradicting proper coloring. Finite dimensionality now gives \(E_P^{(-)}(5)>0\) in both cases.
+
+[rigorous] For the XXZ comparison, choose the representative \(|\phi|\le\pi\) and distribute its phase uniformly over all bonds by the on-site rotations used in Section 3. Conjugate also by the odd-site rotation. At \(\Delta=-a\) the hopping coefficients are then \(-e^{\pm i\phi/N}\), and an unlike pair has diagonal energy \(a\). In the sector with \(k\) down spins take the normalized uniform sum of all configurations. At an ordered pair of sites the probability of either specified unlike ordering is
+\[
+p_k=\frac{k(N-k)}{N(N-1)}.
+\]
+The expectation of each directed hopping without its coefficient is also \(p_k\), since it bijects the configurations of one unlike ordering onto those of the other. The energy of this trial vector is
+\[
+2Np_k\bigl(a-\cos(\phi/N)\bigr).
+\tag{17}
+\]
+At \(N=10\), \(\cos(\phi/N)\ge\cos(\pi/10)>\cos(\pi/6)\ge a\) for \(Q=2,3\). Every nonpolarized sector has negative minimum and the two polarized sectors have energy zero. Thus every sector minimum at every real twist is below \(E_P^{(-)}(5)\).
+
+[rigorous given cited theorem X and theorem M] At \(\Delta_0=-a\in(-1,1]\), the actual consequence of inclusion and X is
+\[
+E_P^{(-)}(L)\ge 2L\epsilon_0(-a)-K/(2L).
+\]
+Equation (16) prevents identifying its extensive term with \(L e_0^{P,(-)}\). [not proved] A finite-size estimate centered at the reversed-sign Potts density for \(Q=2,3\) would require additional input about the bottom of the XXZ states retained by the Potts representation.
+
+[rigorous] At the remaining endpoint \(Q=4,\ s=-1\), there is a zero-energy Potts vector for every \(L\ge2\). Label the colors \(0,1,2,3\), set \(w=(1,-3,3,-1)\), and define its amplitudes by
+\[
+\psi(s_1,\ldots,s_L)=
+\prod_{j=1}^L w_{s_j}(s_j-s_{j+1}),\qquad s_{L+1}=s_1.
+\]
+It is nonzero on any proper coloring, and each \(F\) annihilates it. At fixed other colors the dependence on \(s_j=t\) is \(w_t\) times a polynomial of degree at most two, also for \(L=2\). Since \(\sum_{t=0}^3w_t t^k=0\) for \(k=0,1,2\), each \(E_j\) annihilates it. Positivity gives \(E_P^{(-)}(L)=0\). The polarized XXZ sector \(m=L,\phi=0\) has energy zero. At \(\Delta=-1\) each XXZ bond is positive, since its antiparallel block has diagonal entries one and off-diagonal entries of modulus one, hence eigenvalues zero and two. Thus both bulk densities vanish. This endpoint lies outside the stated domain of X.
+
+## 7. Exact gauge-optimized half-spread
+
+[rigorous] Let \(S\) exchange the two sites and \(A_X=X\otimes1-1\otimes X\). The Potts bond satisfies \(ShS=h\), whereas \(SA_XS=-A_X\). For Hermitian \(K\), the spread \(\operatorname{spr}(K)=\lambda_{\max}(K)+\lambda_{\max}(-K)\) is convex by the Rayleigh principle and is invariant under unitary conjugation. Hence
+\[
+\operatorname{spr}(h)
+\le \tfrac12\bigl[\operatorname{spr}(h+A_X)+\operatorname{spr}(h-A_X)\bigr]
+=\operatorname{spr}(h+A_X).
+\]
+Equality is attained at \(X=0\). It remains to find the two extreme eigenvalues of \(C=-s h=F+(E\otimes1+1\otimes E)/2\).
+
+[rigorous] Set \(U_0=u\otimes u\), \(D_0=Q^{-1/2}\sum_a|aa\rangle\). Direct application of the two projections gives
+\[
+C U_0=\delta U_0+D_0,\qquad C D_0=U_0+\delta D_0.
+\]
+For instance \(D U_0=D_0/\sqrt Q\), while \((P\otimes1)D_0=(1\otimes P)D_0=U_0/\sqrt Q\). Thus \(U_0+D_0\) is a strictly positive eigenvector of the entrywise nonnegative symmetric matrix \(C\), with eigenvalue \(\delta+1\). The weighted norm argument of Section 4 bounds every eigenvalue in modulus by \(\delta+1\), so this is the maximum.
+
+[rigorous] The operator \(C\) is positive. For \(Q\ge3\), choose independent \(v,w\in u^\perp\). The nonzero tensor \(v\otimes w-w\otimes v\) is annihilated by both on-site projections. Its diagonal color amplitudes vanish, so \(D\) annihilates it as well. The minimum is therefore zero. Reversing the sign of a bond preserves its spread. The matching lower and upper bounds are
+\[
+\boxed{M(h)=\frac{\sqrt3+1}{2}\quad(Q=3),\qquad
+       M(h)=\frac32\quad(Q=4).}
+\tag{18}
+\]
+
+## 8. Exact four-spin check
+
+[rigorous] I checked \(Q=2,L=2\) by direct block diagonalization. Both Potts bonds count. In Pauli notation,
+\[
+H_P^{(+)}=-2\sqrt2\,1-\frac{X_1+X_2+2Z_1Z_2}{\sqrt2}.
+\]
+In the \(X_1X_2=+1\) subspace, \(X_1+X_2\) has diagonal entries \(2,-2\) in the \(X\) basis, and \(2Z_1Z_2\) exchanges the two basis states with coefficient \(2\). The sum has eigenvalues \(\pm2\sqrt2\). In the \(X_1X_2=-1\) subspace the first term vanishes and the second has eigenvalues \(\pm2\). This gives four simple Potts levels.
+
+[rigorous] On the four-spin XXZ ring in \(m=0\), order the down-spin pairs as \(12,23,34,41\), followed by \(13,24\). The diagonal blocks are \(-2aI_4,-4aI_2\), respectively, since adjacent down spins have two unlike bonds and alternating down spins have four. Moving one down spin across an unlike bond gives the off-diagonal block
+\[
+T=\begin{pmatrix}
+1&e^{i\phi}\\
+1&1\\
+e^{-i\phi}&1\\
+1&1
+\end{pmatrix}.
+\]
+Thus \(T^\dagger T\) has diagonal entries \(4\) and upper off-diagonal entry \(2(1+e^{i\phi})\). For \(|\phi|\le\pi\) its eigenvalues are \(b_\pm=4\pm4\cos(\phi/2)\). Each nonzero singular value \(\sqrt b\) gives the two energies \(-3a\pm\sqrt{a^2+b}\) by diagonalizing its \(2\times2\) block. The kernel of \(T^\dagger\) supplies energy \(-2a\).
+
+[rigorous] Substitution of \(a=1/\sqrt2\) gives the following matches.
+
+| Potts eigenvalue of \(H_P^{(+)}\) | \(m\) | \(\phi\) | XXZ origin |
+|---|---:|---:|---|
+| \(-2\sqrt2-2\) | 0 | \(\pi/2\) | Lower root for \(b_+\) |
+| \(-3\sqrt2\) | 0 | \(\pi\) | Lower root for \(b=4\) |
+| \(-\sqrt2\) | 0 | \(\pi\) | Kernel of \(T^\dagger\) |
+| \(-2\sqrt2+2\) | 0 | \(\pi/2\) | Upper root for \(b_-\) **or lower root?** |
+
+[rigorous] For clarity, the last branch is the upper root for \(b_-\): here \(\sqrt{a^2+b_-}=2-1/\sqrt2\), so \(-3/\sqrt2+(2-1/\sqrt2)=2-2\sqrt2\). For the first row, \(\sqrt{a^2+b_+}=2+1/\sqrt2\). In particular the ground twist is \(\pi/2=2\gamma\). Negating all four energies gives the reversed-sign Potts spectrum, matched at the same \(m,\phi\) and opposite \(\Delta\) by (7).
+
+## 9. Theorem dependencies and status
+
+[rigorous] The only external representation result used is theorem M, stated with its parameter conditions in Section 3. The only external energy estimate used is hypothesis X, stated in Section 5 and supplied in the question. The graph realization, twist restriction, selection of the ferromagnetic ground state, bulk comparison, sign counterexamples and bond spread were derived above.
+
+| Claim | Status |
+|---|---|
+| 1. Spectral inclusion for both signs | [rigorous given cited theorem M] Real twists suffice at every stated \(Q,L\). |
+| 2. Ground energy | [rigorous given cited theorem M] The lower bound holds for both signs. Equation (10) gives the ferromagnetic equality. [rigorous] The reversed-sign upper bound fails for \(Q=2,3\) at \(L=5\), and holds with energy zero for \(Q=4\). |
+| 3. Bulk identity and finite-size bound | [rigorous given cited theorem M] The ferromagnetic bulk identity holds. [rigorous given cited theorem X and theorem M] Equation (15) follows with the same \(K\). [rigorous] The reversed-sign bulk identity fails for \(Q=2,3\). |
+| 4. Optimized half-spread | [rigorous] Equation (18) is exact for either sign. |
+
+The proof is delivered here. The workspace was read-only, so I could not save a repository copy, update `STATE.md`, or commit and push it.
+
+[gpt_solve: backend=codex model=gpt-6.2-astra effort=high transcript=20261118T111624-62668]

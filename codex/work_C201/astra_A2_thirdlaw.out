@@ -1,0 +1,247 @@
+[rigorous given the universal recovery theorem stated below] T0 and T1 hold for every fixed \(d\). The proof gives an explicit rate, although the lengths at which it improves on \(g_d(L)\le 2\) are very large. It applies to arbitrary translation-invariant ring states. For permutation-invariant states, a simpler construction gives two-site marginal distance \(O_d(L^{-2})\), including for mixed states and Dicke states. I do not obtain T2 for general bonds.
+
+The construction joins long intervals using a shared classical measurement record. At each join, a channel inserts a shorter interval and reproduces its entire interior marginal exactly. Only the two bonds connecting that interval to the retained sites incur an error. Exact reproduction of the interior matters because the inserted interval can be much longer than the buffers on which the channel acts.
+
+## 1. Statement and rate
+
+[rigorous] Fix an integer \(n\ge 1\). Define \(b_1=1\) and, for \(i=1,\ldots,n\), set
+\[
+ t_i=b_i+1,\qquad J_i=4n d^{5t_i},\qquad
+ b_{i+1}=3t_i\,2^{J_i}.
+\]
+Then
+\[
+ \boxed{\quad
+ L\ge 2b_{n+1}
+ \quad\Longrightarrow\quad
+ g_d(L)\le
+ \frac{3}{n}+2\sqrt{\frac{2}{n}}+
+ 8\sqrt{\frac{\ln d}{n}} .
+ \quad}                                                     \tag{1}
+\]
+One can take the minimum with \(2\) from F1. For every fixed \(n\), the length threshold is finite and independent of the bond. Sending \(n\) to infinity proves T1, and homogeneity gives T0, including for bonds that have vacuum-incompatible lengths.
+
+[rigorous] There is a normalization correction in the question. If \(D_L\) denotes the one-sided Hausdorff distance from \(\Omega_L\) to \(\Omega_\infty\), then
+\[
+ g_d(L)=L D_L .
+\]
+Indeed, the support-function difference in direction \(-h\) is \(e_0(h)-E_L(h)/L\). Taking its supremum over the dual unit ball gives the directed distance by convex separation. On differences of stationary marginals, the \(M\)-dual norm is the trace norm. Such differences annihilate scalars and telescoping terms, so centering and optimizing the bond gives one inequality. The reverse follows because every bond of operator norm at most one has \(M\le1\). Thus (1) gives the kinematic inclusion in I3 with distance \(o_d(1/L)\).
+
+## 2. Two scales selected from the ring state
+
+[rigorous] Fix any translation-invariant state \(\rho\) on the \(L\)-ring. Write \(S_j\) for the entropy in nats of a \(j\)-site interval and \(u_j=S_{j+1}-S_j\). Strong subadditivity on overlapping intervals gives \(u_{j+1}\le u_j\). Subadditivity and the Araki–Lieb inequality give
+\[
+ -\ln d\le u_j\le \ln d .
+\]
+Consequently there is an \(i\in\{1,\ldots,n\}\) with
+\[
+ u_{b_i}-u_{b_{i+1}}\le \frac{2\ln d}{n}.                 \tag{2}
+\]
+Otherwise the \(n\) differences would sum to more than \(2\ln d\). Fix this \(i\), and write \(b=b_i,\ b'=b_{i+1},\ t=b+1,\ q=d^t,\ J=J_i\).
+
+[rigorous] We next select a spatial averaging scale for \(t\)-site windows. The following finite informationally complete measurement makes the constants explicit. Take a Hilbert–Schmidt orthonormal basis \(G_\alpha\) of Hermitian \(q\times q\) matrices. Every \(G_\alpha\) has operator norm at most one. Use the effects and associated reconstruction matrices
+\[
+ F_{\alpha,\pm}=\frac{I\pm G_\alpha}{2q^2},
+ \qquad X_{\alpha,\pm}=\pm q^2G_\alpha .
+\]
+The effects sum to \(I\). For any state \(\gamma\),
+\[
+ \sum_{\alpha,\pm}\operatorname{tr}(\gamma F_{\alpha,\pm})
+ X_{\alpha,\pm}
+ =\sum_\alpha\operatorname{tr}(\gamma G_\alpha)G_\alpha
+ =\gamma,\qquad \|X_{\alpha,\pm}\|_2^2=q^4.               \tag{3}
+\]
+The tensor product of two such measurements reconstructs the joint state on two disjoint windows. All expectations below are finite sums with the measurement weights.
+
+[rigorous] For \(R\) consecutive, disjoint \(t\)-site windows, let \(\bar X\) be the arithmetic mean of their reconstruction matrices. Put \(a_R=\mathbb E\|\bar X\|_2^2\). Translation invariance makes \(a_R\) independent of the starting site. If \(U,V\) are two adjacent groups of \(R\) windows each, the parallelogram identity gives
+\[
+ \mathbb E\|\bar X_U-\bar X_V\|_2^2
+ =4(a_R-a_{2R}).                                         \tag{4}
+\]
+Since \(a_1=q^4\) and \(a_{2^J}\ge0\), there exists \(R\in\{1,2,\ldots,2^{J-1}\}\), a power of two, with
+\[
+ a_R-a_{2R}\le q^4/J.                                    \tag{5}
+\]
+Take three consecutive groups \(U,V,W\) of this size. They fit in the ring since \(3Rt\le b'\le L/2\). Equation (4) applies to both adjacent pairs.
+
+[rigorous] Number the windows of \(U\) and \(W\) from \(0\) through \(R-1\), in spatial order. Compare two states on a pair of \(t\)-site windows:
+\[
+ \tau_{\rm ends}=\frac1{R^2}\sum_{i,j}\rho_{U_iW_j},
+ \qquad
+ \eta_{\rm ends}=\sum_v p_v\,\gamma_U(v)\otimes\gamma_W(v). \tag{6}
+\]
+Here \(v\) records the measurement outcomes in \(V\) only, and \(\gamma_U(v)\) is the conditional state averaged over the \(R\) individual windows of \(U\). Define \(\gamma_W(v)\) in the same way. By (3),
+\[
+ \tau_{\rm ends}=\mathbb E[\bar X_U\otimes\bar X_W],
+ \qquad \gamma_U(v)=\mathbb E[\bar X_U\mid v],
+ \qquad \gamma_W(v)=\mathbb E[\bar X_W\mid v].
+\]
+Their difference is therefore
+\[
+ \mathbb E\big[
+   (\bar X_U-\gamma_U(v))\otimes(\bar X_W-\gamma_W(v))
+ \big].
+\]
+Conditional expectation minimizes mean squared Hilbert–Schmidt error among functions of \(v\). In particular, its error for either end is bounded by the error of the estimator \(\bar X_V\), which is a function of \(v\). Applying \(\|Y\|_1\le\sqrt q\,\|Y\|_2\) to each factor, followed by Cauchy–Schwarz and (4)–(5), gives
+\[
+ \|\tau_{\rm ends}-\eta_{\rm ends}\|_1
+ \le 4q(a_R-a_{2R})\le \frac{4q^5}{J}=\frac1n .          \tag{7}
+\]
+This is where long-range order enters the argument. The two ends can retain order-one correlations through the shared record \(v\).
+
+## 3. The interval to be inserted
+
+[rigorous] For each \(i,j\), take the full interval from the beginning of \(U_i\) to the end of \(W_j\), in the direction passing through \(V\). Its length is
+\[
+ m_{ij}=(2R+j-i+1)t\le 3Rt\le b'.
+\]
+Write its first \(t\) sites as \(A_\ell B_\ell\) and its last \(t\) sites as \(B_r A_r\), with \(A_\ell,A_r\) single sites and \(B_\ell,B_r\) of length \(b\). Write \(A=A_\ell A_r\) and \(B=B_\ell B_r\). Form the uniform mixture of the complete interval states, retaining \(i,j\) in a classical register. Call this state \(\tau_{ABC}\), where \(C\) contains the register and all sites between the two \(B\) buffers. Variable lengths are represented by a finite direct sum. In particular, \(\tau_{AB}=\tau_{\rm ends}\) after reordering tensor factors.
+
+[rigorous] Conditional entropy subadditivity and strong subadditivity give
+\[
+ S(A|B)_\tau
+ \le S(A_\ell|B_\ell)_\tau+S(A_r|B_r)_\tau=2u_b .
+\]
+When \(BC\) is given, the interval label is known. Tracing out the two exterior sites leaves a contiguous interval of length \(m_{ij}-2\). Hence
+\[
+ \begin{aligned}
+ S(A|BC)_\tau
+ &=\frac1{R^2}\sum_{i,j}(S_{m_{ij}}-S_{m_{ij}-2})\\
+ &=\frac1{R^2}\sum_{i,j}(u_{m_{ij}-1}+u_{m_{ij}-2})
+ \ \ge\ 2u_{b'} .
+ \end{aligned}
+\]
+Together with (2), this gives
+\[
+ I(A:C|B)_\tau\le \frac{4\ln d}{n}.                      \tag{8}
+\]
+
+[rigorous given the universal recovery theorem of Junge, Renner, Sutter, Wilde and Winter] For any finite-dimensional tripartite state \(\tau\), there is a channel \(\mathcal R_{B\to BC}\) satisfying
+\[
+ \mathcal R(\tau_B)=\tau_{BC},\qquad
+ -2\ln F\big(\tau_{ABC},(\mathrm{id}_A\otimes\mathcal R)(\tau_{AB})\big)
+ \le I(A:C|B)_\tau ,
+\]
+where \(F(\alpha,\beta)=\|\sqrt\alpha\sqrt\beta\|_1\). This is the relative-entropy recovery theorem applied to the reference \(\tau_A\otimes\tau_{BC}\) and the channel tracing out \(C\). By the fidelity to trace-norm inequality and \(1-e^{-x}\le x\), (8) implies
+\[
+ \|(\mathrm{id}_A\otimes\mathcal R)(\tau_{AB})-\tau_{ABC}\|_1
+ \le 4\sqrt{\ln d/n}.                                     \tag{9}
+\]
+One may dephase the output length register, since this fixes the target and contracts the error. [Universal recovery maps and approximate sufficiency of quantum relative entropy](https://arxiv.org/abs/1509.07127)
+
+### Correcting the input marginal
+
+[rigorous] The actual input at a join will be \(\eta_{AB}=\eta_{\rm ends}\). Feeding it directly to \(\mathcal R\) would leave a small error on every interior bond. We need a channel on \(B\) that first changes its marginal to \(\tau_B\) exactly.
+
+For states \(r,s\) on \(B\), set \(z=\frac12\|r-s\|_1\). There exists a channel \(\mathcal D\) with \(\mathcal D(r)=s\) such that every extension \(\xi_{AB}\) of \(r\) satisfies
+\[
+ \|(\mathrm{id}_A\otimes\mathcal D)(\xi)-\xi\|_1
+ \le 2\sqrt z+z .                                         \tag{10}
+\]
+To prove this, let \(T=s+(r-s)_+\), so \(T\ge r,s\) and \(\operatorname{tr}(T-s)=z\). Put \(K=\sqrt s\,T^{-1/2}\) on the support of \(T\), extending by zero. Then \(K^\dagger K\le I\), \(KTK^\dagger=s\), and \(KrK^\dagger\le s\). Complete the operation \(X\mapsto KXK^\dagger\) by preparing the normalized residual \(s-KrK^\dagger\) on the other outcome. A zero residual permits any fallback state. This channel sends \(r\) to \(s\).
+
+The weight of the other outcome is at most
+\[
+ \operatorname{tr}[(I-K^\dagger K)T]=z.
+\]
+Also,
+\[
+ \begin{aligned}
+ \|(I-K)\sqrt r\|_2^2
+ &\le \|(I-K)\sqrt T\|_2^2\\
+ &=\|\sqrt T-\sqrt s\|_2^2
+ \le \operatorname{tr}(T-s)=z .
+ \end{aligned}
+\]
+The last inequality follows from \(\sqrt T\ge\sqrt s\). On any extension, the squared Hilbert–Schmidt norm of \((I_A\otimes(I-K))\sqrt\xi\) is the same quantity. Expanding \(K\xi K^\dagger-\xi\) and applying Hilbert–Schmidt Cauchy–Schwarz bounds the trace norm of this difference by \(2\sqrt z\). Adding the other outcome proves (10).
+
+[rigorous] Apply (10) with \(r=\eta_B,\ s=\tau_B\). By (7), \(z\le 1/(2n)\). The join channel \(\mathcal J=\mathcal R\circ\mathcal D\) therefore has both properties
+\[
+ \mathcal J(\eta_B)=\tau_{BC},
+ \qquad
+ \|(\mathrm{id}_A\otimes\mathcal J)(\eta_{AB})-\tau_{ABC}\|_1
+ \le \zeta_n,                                              \tag{11}
+\]
+where
+\[
+ \zeta_n=\frac{3}{2n}+\sqrt{\frac{2}{n}}+
+                 4\sqrt{\frac{\ln d}{n}} .
+\]
+For the inequality, use (10), then (7), then (9), with trace-norm contractivity. The equality in (11) controls the energy of every bond wholly inside the inserted region. The inequality is needed only at its two ends.
+
+## 4. Joining the long intervals and counting the energy
+
+[rigorous] Measure \(V\) on the original ring. Given its outcome \(v\), retain the long interval starting at the beginning of \(W_i\) and proceeding around the other side of the ring to the end of \(U_i\). Average uniformly over \(i\), identifying these intervals in their spatial order. Their common length is
+\[
+ N=L-(2R-1)t .
+\]
+Write \(\xi_v\) for the resulting conditional \(N\)-site state. Its rightmost \(t\)-site marginal is \(\gamma_U(v)\), and its leftmost one is \(\gamma_W(v)\). Every internal bond of \(\sum_v p_v\xi_v\) has marginal \(\rho_2\), since the nonselective measurement was outside the retained interval.
+
+[rigorous] For an integer \(k\ge2\), put \(k\) long intervals in cyclic order in the state
+\[
+ \sum_v p_v\,\xi_v^{\otimes k}.
+\]
+At every join, the last \(t\) sites on the left and first \(t\) sites on the right have joint state \(\eta_{\rm ends}\) from (6). Apply \(\mathcal J\) to the two \(b\)-site buffers at each join. The channels have disjoint inputs. In particular, summing over the outcomes of the other channels leaves the marginal calculation (11) valid at each join.
+
+[rigorous] In branch \(i,j\) of the output of one join, the number of new sites is
+\[
+ m_{ij}-2t=(2R+j-i-1)t .
+\]
+The first equality in (11) gives the prescribed uniform label distribution at each join. Thus the mean number of new sites per join is \((2R-1)t\), and the mean total ring length is \(kL\). Independence of output lengths is unnecessary.
+
+Choose a gauge and scalar shift for which \(\|h\|=M(h)\), and put \(e=\operatorname{tr}(h\rho_2)\). The expected energy can now be counted bond by bond.
+
+- [rigorous] Each retained core has \(N-2b-1\) internal bonds. Their unconditional marginals are still \(\rho_2\), since the channels act outside the core.
+- [rigorous] At each join the interior, including both buffers, has unconditional labeled state \(\tau_{BC}\). In each label sector every internal bond has marginal \(\rho_2\). Its expected internal energy is \(e\) times its expected number of internal bonds.
+- [rigorous] Two bonds per join connect this interior to the retained core sites \(A_\ell,A_r\). Each has energy at most \(e+M\zeta_n\), by the second part of (11).
+
+These account for every bond of every output ring. The expected total energy is therefore at most \(kLe+2kM\zeta_n\). On the other hand, in every output length sector \(\ell\), F1 bounds the energy below by \(\ell e_0-2M\). Averaging gives
+\[
+ kLe_0-2M\le kLe+2kM\zeta_n .
+\]
+Divide by \(k\) and send \(k\) to infinity. We have proved for the original arbitrary ring state that
+\[
+ L\big(e_0-\operatorname{tr}(h\rho_2)\big)\le 2M\zeta_n .
+\]
+Taking a translation-invariant ring ground state proves (1).
+
+## 5. Permutation-invariant states and momentum \(W\) states
+
+[rigorous] Every permutation-invariant \(L\)-site state, with arbitrary support on \((\mathbb C^d)^{\otimes L}\), satisfies the stronger estimate
+\[
+ \operatorname{dist}_1(\rho_2,\Omega_\infty)
+ \le \frac{30d^5}{L^2}.                                   \tag{12}
+\]
+Here the join can be made without a recovery channel.
+
+For \(L\ge3\), set \(R=\lfloor L/3\rfloor\). Take three disjoint groups \(U,V,W\) of \(R\) individual sites, with \(V\) a contiguous interval. Use (3) with \(q=d\). By permutation invariance the scalar \(c=\mathbb E\operatorname{tr}(X_iX_j)\) is the same for every \(i\ne j\), while \(a=\mathbb E\|X_i\|_2^2=d^4\). Expanding the square gives
+\[
+ \mathbb E\|\bar X_U-\bar X_V\|_2^2
+ =\frac{2(a-c)}R\le\frac{4d^4}R ,
+\]
+since \(|c|\le a\). The same holds for \(W,V\). After measuring \(V\), every unmeasured site has the same conditional marginal \(\gamma(v)\). The covariance calculation of (6)–(7) now gives
+\[
+ \left\|\rho_2-\sum_v p_v\gamma(v)^{\otimes2}\right\|_1
+ \le \frac{4d^5}{R}.                                      \tag{13}
+\]
+
+Retain the whole \(L-R\) site complement of \(V\). Conditional on \(v\), take the infinite tensor product of copies of its conditional state. Mix over the common \(v\), then average over the \(L-R\) translations of the block origin. Every internal bond, averaged over \(v\), has marginal \(\rho_2\). One bond per \(L-R\) sites has the marginal in (13). Hence the distance is at most \(4d^5/[R(L-R)]\). Using \(R\ge L/5\) and \(L-R\ge2L/3\) proves (12). The trace-norm diameter bound \(2\) covers \(L=2\).
+
+[rigorous] This includes fixed-density Dicke states. It also gives (12) for a one-particle \(W\) state of any allowed ring momentum \(p=2\pi j/L\). Start with the zero-momentum state and its infinite-chain approximation from (12). Average the approximation over global number rotations, which fixes the target marginal and contracts the error. On the infinite chain apply the site-dependent rotations \(e^{ipx\hat n}\). Translation of this rotation pattern changes it by a global number rotation, so the resulting state is translation invariant. Its bond marginal and the target momentum-\(p\) marginal are conjugated by the same two-site unitary. Their trace distance is unchanged.
+
+## 6. Site insertion and the remaining gap
+
+[rigorous] The normalized increment in I2, if available at all sufficiently large lengths, already fixes the additive constant through the given density limit. Indeed, dividing the proposed inequality by \(j+1\) and summing gives
+\[
+ e_0-\frac{E_L}{L}
+ \le KM\sum_{j=L}^{\infty}\frac1{j^2(j+1)}
+ \le \frac{KM}{L}\sum_{j=L}^{\infty}\frac1{j(j+1)}
+ =\frac{KM}{L^2}.
+\]
+The increment hypothesis itself fails even for a classical qubit bond. Take \(h\) to be the projector onto equal neighboring bits. Alternating bits give \(E_L=0\) for even \(L\). An odd ring requires at least one equal pair, and one is attainable, so \(E_{L+1}=1\) for even \(L\). Thus the proposed upper bound on the insertion excess fails along every even length despite \(e_0=0\) and a nonpositive ring defect at every length.
+
+[rigorous] The loss in the general proof occurs in two scale selections. Equation (5) controls the covariance of the two ends by averaging over dyadic scales at a fixed buffer size. Equation (2) must then control the entropy increment all the way from that buffer size to the largest candidate interval. The resulting recursion gives no positive power of \(1/L\). Thus T2 and T3 remain unresolved here, including the \(O_d(L^{-2})\) marginal-distance question for general ground states approaching a \(z=2\) point. Equation (1) does rule out an extensive defect along any such sequence of bonds. Under the crossed-channel assumptions in the question, it also gives \(\lim_L s_L=0\).
+
+The checkout was read-only, so the proof is recorded in this response. I could not update `STATE.md` or commit and push it.
+
+[gpt_solve: backend=codex model=gpt-6.2-astra effort=high transcript=20261118T111757-63395]
