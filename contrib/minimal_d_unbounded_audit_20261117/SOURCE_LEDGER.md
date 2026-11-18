@@ -1,6 +1,6 @@
 # Smallest-d source and scope ledger
 
-Date: 2026-11-17. Status: source audit, not a new CFT certificate.
+Started 2026-11-17; updated 2026-11-18. Status: source audit, not a new CFT certificate.
 Author and AI assistance: OpenAI Codex, GPT-6 family. Repository sources
 were opened; their old large certificates have not been independently
 regenerated in this round. Physical states, including markers and holes,
@@ -27,11 +27,11 @@ number as a microscopic state count.
 
 | Record | Physical states and d | Range; microscopic translation | n dependence and certified members | Physical ground sector and infrared status |
 | --- | --- | --- | --- | --- |
-| [Single-rail seed](../../codex/work_C86/RESULT.md), now being audited by the complementary resonance chat | L0,L1,R0,R1,DA,DB,E,MA,MB: **9** | Nearest neighbor; one-site repeated rules in the retained seed | Arbitrary cell lengths can encode bits; no arbitrary-n band or CFT certificate | Dispersion and resonant interaction audit in progress. C86's failed sufficient certificate is not a physical no-go. A one-hole d=10 lift has not been established. |
+| [Single-rail seed](../../codex/work_C86/RESULT.md) and [complementary resonance audit](../ten_state_resonance_audit_20261117/README.md) | L0,L1,R0,R1,DA,DB,E,MA,MB: **9** | Nearest neighbor; one-site repeated rules, with added physical fields and swaps in the new seed | Arbitrary cell lengths can encode bits; exact two-flavour four-root algebra, but no arbitrary-n band or CFT certificate | The complementary audit reports a generated pair transfer in the marginally irrelevant leading RG basin. Its finite-K, nonzero-port sector, uniform matching and infrared qualifications remain; its calculations were not rerun here. C86's failed sufficient certificate is not a physical no-go. A one-hole d=10 lift has not been established. |
 | [Frozen demonstrator](../routeA_demonstrator/cell.py) | P0,P1 and B(sL,c,sR), with three binary indices: 2+8=**10** | Nearest neighbor; one-site invariant bond | One logical qubit per PBP cell; no arbitrary-flavour family at fixed d=10 in this source | Exact local checks and second-order mechanism; numerical period-three formation and c approximately 1. Full nonzero-port sector/IR transfer is not established by those numerics. |
 | [Two-flavour mobile toy](../mobile_cells/ed2.py) | L,R and #(a,b),X(a,b), a,b binary: 2+4+4=**10** | Nearest neighbor; one-site invariant bond | Two payload flavours; replacing the two bits by n bits would give d=2+2^(n+1), not fixed ten | Finite-ring checks and conditional payload/fluid reasoning. Proposed total c=3 is itself unestablished, and is not arbitrary c. |
 | [C53 exact completion](../../codex/work_C53/RESULT.md) | Same P2+B8 alphabet: **10** | **Four-site** BPPB interaction; one-site invariant rules | One logical flavour, no arbitrary-n family | Exact logical reduction and noncode gap within the frozen PBP sector. At the free point c=1 is proved there. Unrestricted type-sector selection and interacting thermal c remain separate; not a nearest-neighbor counterexample. |
-| [C84 shifted-bit folded bond](../../codex/work_C84/PROOF.md) | L0,L1,R0,R1,DA,DB,XA,XB,E,MA,MB: **11** | Nearest neighbor; one-site invariant | d stays 11. p=n+1 data sites plus one marker encode n bits. Certified **n=11**, physical cell length 13; not an all-n nonresonance result | Zero-port all-length selection at finite K is proved in the source. Finite-g/finite-K **quadratic** band certificate has 22 simple roots and separated pair sums. Nonzero-port dressed defects, volume-uniform matching, interacting stability and conformal-observable transfer remain open. Conditional frozen c=11. |
+| [C84 shifted-bit folded bond](../../codex/work_C84/PROOF.md) | L0,L1,R0,R1,DA,DB,XA,XB,E,MA,MB: **11** | Nearest neighbor; one-site invariant | d stays 11. p=n+1 data sites plus one marker encode n bits. C84 certifies **n=11**, cell length 13. C85/C88 also regenerate an **n=13** member of this same material family; neither is an all-n nonresonance result | Zero-port all-length selection at finite K is proved in the source. The n=11 finite-g/finite-K **quadratic** band certificate has 22 simple roots and separated pair sums. Nonzero-port dressed defects, volume-uniform matching, interacting stability and conformal-observable transfer remain open. Conditional frozen c=11 for that member, c=13 for the regenerated material member. |
 | [C80 shifted-bit predecessor](../../codex/work_C80/RESULT.md) | C84 plus E1: **12** | Nearest neighbor; one-site invariant | d stays 12; certified n=12 member, not arbitrary-n nonresonance | Similar finite ingredients and infrared/selection qualifications; not preferable to C84 for this task. |
 | [Restricted one-vacancy route](../mobile_below_13/README.md) | C84's eleven material letters plus V: **12** | Nearest neighbor; one-site invariant, with a vacancy-context switch | Inherits C84 n=11 frozen member only in the specified sector; no all-n mobile certificate | V may occupy only automaton-state-0 gaps. Slow hopping, clock-dependent access, and mediated interactions are essential. Bare attraction threatens phase separation; a contact correction is proposed. Total c=12 is heuristic and requires more assumptions than C88. It cannot be dismissed merely because unrestricted vacancies need two colours. |
 | [C88 pinless mobile bond](../../codex/work_C88/RESULT.md) and [small-d note](../small_d_note/note.tex) | C84's eleven material letters plus V0,V1: **13** | Nearest neighbor; one-site invariant | Fixed d; inherits the regenerated **n=13** material certificate, not an arbitrary-n theorem | Unique legal colouring and finite grammar corrections are explicit. Frozen pin-free selection is established at zero port; mobile wrong-length/pin selection, finite-J matching, interacting stability and conformal transfer remain assumptions. Proposed total c=14. |
@@ -56,9 +56,10 @@ obstructions to homogeneous exchange and restricted port dressings,
 while explicitly leaving contextual/interacting ports open.
 
 None proves that d<=10 cannot have large or unbounded physical c.
-The nine-state seed is being studied separately, including whether its
-resonances represent actual instability or only failure of a sufficient
-proof route. This round does not duplicate that mechanism analysis.
+The nine-state seed is studied separately. Its leading resonant example
+already demonstrates why reciprocity alone does not imply instability;
+it does not settle arbitrary-flavour physics. This round does not
+duplicate that mechanism analysis.
 
 ## What failed at larger sizes
 
