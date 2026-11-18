@@ -1,0 +1,271 @@
+{
+  "occupation": [
+    {
+      "L": 12,
+      "N": 4,
+      "momentum_index": 0,
+      "dimension": 105,
+      "reduced_dimension": 10,
+      "reduction_error": 1.3322676295501878e-15,
+      "isometry_error": 2.220446049250313e-16,
+      "sigma_commutator_error": 0.0
+    },
+    {
+      "L": 12,
+      "N": 4,
+      "momentum_index": 6,
+      "dimension": 105,
+      "reduced_dimension": 9,
+      "reduction_error": 4.797956686190842e-15,
+      "isometry_error": 2.220446049250313e-16,
+      "sigma_commutator_error": 8.819932876407296e-15
+    }
+  ],
+  "pauli": {
+    "two_site_Pauli_to_occupation_error": 5.551115123125783e-17
+  },
+  "free_fermion_quartet": {
+    "exact_sum": "0",
+    "terms": [
+      "2/7",
+      "-8/7",
+      "180/49",
+      "-180/49",
+      "8/7",
+      "-2/7"
+    ],
+    "absolute_sum": "500/49"
+  },
+  "exact_resolvent": {
+    "mu": -2.25,
+    "z": 0.6096117967977924,
+    "odd_halfline_error": 5.551115123125783e-17,
+    "binding_proof_rational_F": "5591047/328050",
+    "binding_proof_F_gt_16": true
+  },
+  "saved_results": {
+    "generic_microscopic_ratios": [
+      0.9369552378320118,
+      0.974721434190792,
+      0.9886563645516243
+    ],
+    "dark_exact_gap_coefficient": 13.145341380123986,
+    "dark_last_two_Richardson": 13.1431882099947,
+    "exact_to_numeric_series_error": 3.019806626980426e-14
+  },
+  "diagnostics": {
+    "gaussian_controls": {
+      "free_opposite_drift": {
+        "Q": [
+          [
+            1.0,
+            -7.771561172376096e-16
+          ],
+          [
+            -7.216449660063518e-16,
+            0.9999999999999988
+          ]
+        ],
+        "minimum_dimension": 1.9999999999999976,
+        "shortest_vertex": [
+          0,
+          1
+        ],
+        "search_bound": 2,
+        "positive_eigenvalue": 0.9999999999999986,
+        "error_bounds": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "status": "marginal_vertex_present",
+        "strictly_relevant_witnesses": [],
+        "quartet_dimension": 2.0,
+        "pi_pair_exponent": 1.0,
+        "scope": "Conditional Gaussian test; no microscopic or CFT inference."
+      },
+      "stable_gaussian_control": {
+        "Q": [
+          [
+            1.5,
+            0.0
+          ],
+          [
+            0.0,
+            1.2
+          ]
+        ],
+        "minimum_dimension": 2.4,
+        "shortest_vertex": [
+          0,
+          1
+        ],
+        "search_bound": 2,
+        "positive_eigenvalue": 1.2,
+        "error_bounds": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "status": "all_generic_vertices_strictly_irrelevant",
+        "strictly_relevant_witnesses": [],
+        "quartet_dimension": 3.0,
+        "pi_pair_exponent": 1.5,
+        "scope": "Conditional Gaussian test; no microscopic or CFT inference."
+      },
+      "mixed_trap": {
+        "Q": [
+          [
+            1.1,
+            0.9
+          ],
+          [
+            0.9,
+            1.1
+          ]
+        ],
+        "minimum_dimension": 0.8000000000000003,
+        "shortest_vertex": [
+          1,
+          1
+        ],
+        "search_bound": 4,
+        "positive_eigenvalue": 0.20000000000000007,
+        "error_bounds": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "status": "has_relevant_allowed_vertex",
+        "strictly_relevant_witnesses": [
+          [
+            1,
+            1
+          ]
+        ],
+        "quartet_dimension": 2.2,
+        "pi_pair_exponent": 1.1,
+        "scope": "Conditional Gaussian test; no microscopic or CFT inference."
+      },
+      "higher_integer_trap": {
+        "Q": [
+          [
+            2.0,
+            6.0
+          ],
+          [
+            6.0,
+            18.2
+          ]
+        ],
+        "minimum_dimension": 0.4000000000000057,
+        "shortest_vertex": [
+          3,
+          1
+        ],
+        "search_bound": 12,
+        "positive_eigenvalue": 0.019821430153134312,
+        "error_bounds": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "status": "has_relevant_allowed_vertex",
+        "strictly_relevant_witnesses": [
+          [
+            3,
+            1
+          ],
+          [
+            6,
+            2
+          ]
+        ],
+        "quartet_dimension": 4.0,
+        "pi_pair_exponent": 2.0,
+        "scope": "Conditional Gaussian test; no microscopic or CFT inference."
+      }
+    },
+    "robust_error_bound_control": {
+      "Q": [
+        [
+          1.5,
+          0.0
+        ],
+        [
+          0.0,
+          1.2
+        ]
+      ],
+      "minimum_dimension": 2.4,
+      "shortest_vertex": [
+        0,
+        1
+      ],
+      "search_bound": 2,
+      "positive_eigenvalue": 1.2,
+      "error_bounds": [
+        0.05,
+        0.05,
+        0.02
+      ],
+      "status": "all_generic_vertices_strictly_irrelevant",
+      "strictly_relevant_witnesses": [],
+      "quartet_dimension": 3.0,
+      "pi_pair_exponent": 1.5,
+      "scope": "Conditional Gaussian test; no microscopic or CFT inference."
+    },
+    "XX_two_leg_pi_pair": {
+      "exact_eta_pair": 1,
+      "exact_quartet_dimension": 2,
+      "fits": [
+        {
+          "window": [
+            32,
+            128
+          ],
+          "eta_pair": 1.0011873538350697,
+          "inferred_quartet_dimension": 2.0023747076701395,
+          "log_residual_rms": 0.00017076051318576274,
+          "scope": "Window estimate only; verify operator overlap and L/chi convergence separately."
+        },
+        {
+          "window": [
+            48,
+            160
+          ],
+          "eta_pair": 1.0006196236845846,
+          "inferred_quartet_dimension": 2.001239247369169,
+          "log_residual_rms": 6.73440971455959e-05,
+          "scope": "Window estimate only; verify operator overlap and L/chi convergence separately."
+        },
+        {
+          "window": [
+            64,
+            192
+          ],
+          "eta_pair": 1.0003833090521488,
+          "inferred_quartet_dimension": 2.0007666181042976,
+          "log_residual_rms": 3.476450359346238e-05,
+          "scope": "Window estimate only; verify operator overlap and L/chi convergence separately."
+        }
+      ],
+      "constant_background_invariance_error": 1.1277534968166125e-17,
+      "extra_harmonic_wavevector": 0.31,
+      "filter_radius": 4,
+      "note": "Range-two analytic calibration, not a proposed nearest-neighbour qubit candidate."
+    },
+    "V4_data_loaded": false
+  },
+  "source_sha256": {
+    "codex/work_C179/PROOF.md": "0edd20684fdf13d6305ac9dfee9d3ef6521d7207f511a730308adf618b6b654a",
+    "codex/work_C180/PROOF.md": "b5a6f18ab6f8a095ac05fe1b6ef0df7ec591ed8a3492c1f23f1d211b719d76d5",
+    "codex/work_C189/PROOF.md": "d729285a8d36b6a5b1047613618c10e77920f7e9ae1c8be03735e7ec131fbc90",
+    "codex/work_C191/PROOF.md": "8a1acb3fea57a7c59d06ea8411a7094efb16cce955bd8fa400d6424bb988e663",
+    "codex/work_C175/PROOF.md": "c1cbf07e451d53f22473b6759ec348eca25ca15eee9e2de092751af776653f2f",
+    "contrib/v4_locking_operators_20261118/AMPLITUDES.md": "17c46d55709a2ff3624b83dc93861b740506da91f1ea2aeac6f0d4ae05074e32",
+    "contrib/v4_locking_operators_20261118/GAUSSIAN.md": "eab0b953d8fcab02115c8da5d1e2656682af700e12decd540eab0fad5c43da9c",
+    "contrib/v4_locking_operators_20261118/LEDGER.md": "9eca5d96deda23a8e6eccdb1b24c7237fbe5a89962cefb2b4e36126a884bcdf2"
+  },
+  "seconds": 0.05302516699885018
+}

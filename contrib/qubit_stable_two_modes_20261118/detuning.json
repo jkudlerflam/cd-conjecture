@@ -1,0 +1,78 @@
+{
+  "bindings": [
+    {
+      "kappa": 0.5,
+      "q": 0.970966148416814,
+      "bound_energy": -4.126709217311693,
+      "continuum_edge": -4.125,
+      "binding_energy": 0.0017092173116930454,
+      "relative_box": 512,
+      "box_error": 1.8122330303071976e-09,
+      "decay_modulus": 0.9853761456503876
+    },
+    {
+      "kappa": 1,
+      "q": 0.9030325293587695,
+      "bound_energy": -4.519526534666399,
+      "continuum_edge": -4.5,
+      "binding_energy": 0.019526534666399087,
+      "relative_box": 512,
+      "box_error": 0.0,
+      "decay_modulus": 0.950280237276757
+    },
+    {
+      "kappa": 2,
+      "q": 0.7528176116976921,
+      "bound_energy": -6.122547914236252,
+      "continuum_edge": -6.0,
+      "binding_energy": 0.122547914236252,
+      "relative_box": 512,
+      "box_error": 8.881784197001252e-16,
+      "decay_modulus": 0.8676506276708916
+    }
+  ],
+  "detuned_example": {
+    "coefficients": {
+      "XY": 0.515625,
+      "YX": 0.484375,
+      "ZZ": 4,
+      "Z": -7.9375,
+      "XX": 0.001953125
+    },
+    "physical_dimension": 2,
+    "range": 1,
+    "one_site_translation": true,
+    "independent_real_coefficients_before_scale": 5,
+    "ratios_after_scale": 4,
+    "literal_Pauli_monomials": 5,
+    "literal_nonzero_spread": 4064.0,
+    "Delta": 1.0000019073468138,
+    "t": 0.03125011920928955,
+    "kappa": 0.9999961853172863,
+    "real_hop_over_t": 0.06249976158233039,
+    "chemical_potential_over_t": -2.000015258730855,
+    "bare_valley_centres": [
+      -2.8930074655483797,
+      -0.2569213388245281
+    ],
+    "bare_minimum_energies_over_t": [
+      -2.371092393927539,
+      -2.129034038684556
+    ],
+    "bare_quartet_mismatch": -0.016672301566229564,
+    "bare_valley_offset": 0.24205835524298314,
+    "both_bare_wells_below_mu": true,
+    "pi_bound_pair_above_two_lowest_atoms": 0.22266230589277392,
+    "leading_separation2_source_over_t": -0.007812485098881439,
+    "leading_separation3_source_over_t": 0.08333349227890115,
+    "scope": "Microscopic detuning with tested leading kinematics; no stable phase established."
+  },
+  "linearized_at_kappa1": {
+    "real_hop": 0.0625,
+    "predicted_quartet_mismatch": -0.016666666666666666,
+    "actual_quartet_mismatch": -0.01667243730527357,
+    "predicted_valley_offset": 0.24206145913796356,
+    "actual_valley_offset": 0.24205921702620525
+  },
+  "seconds": 0.008673707998241298
+}

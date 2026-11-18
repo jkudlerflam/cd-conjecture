@@ -1,0 +1,418 @@
+{
+  "description": "Bounded, one-worker quartet matching in the complete leading blockade model.\n\nNo MPS or production calculations. All sectors include the blockade and both\ngenerated attractions. The reported coefficients are finite-volume matrix\nelements in a declared spectral convention, not continuum cosine coefficients.\n",
+  "seconds": 0.18985412499750964,
+  "rows": [
+    {
+      "L": 14,
+      "N": 0,
+      "kappa": 2,
+      "momentum_pi": 0.0,
+      "sigma": 1,
+      "dims": [
+        1,
+        3,
+        14
+      ],
+      "initial_energy": 0.0,
+      "final_energy": -12.414835432928014,
+      "matching_mu": -3.1037088582320034,
+      "initial_gap_in_sector": null,
+      "final_gap_in_sector": 2.1941531649975303,
+      "intermediate_min_gap": 2.614202111312938,
+      "intermediate_pole_distance": 2.614202111312938,
+      "amplitude_real": 1.6089513669498862e-16,
+      "amplitude_imag": -0.0638131062054478,
+      "amplitude_abs": 0.0638131062054478,
+      "spectral_terms_abs_sum": 0.3098902958749149,
+      "spectral_sum_error": 2.636779683484747e-16,
+      "connected": {
+        "identity_error": 1.9076409699661838e-16,
+        "pair_reconstruction_error": 1.2719202621569003e-16,
+        "connected_source_norm": 0.8528123291863834,
+        "pair_coefficients": {
+          "3": [
+            0.21152750287794272,
+            0.0
+          ],
+          "5": [
+            0.0860106168159854,
+            0.0
+          ],
+          "7": [
+            0.027712205217914832,
+            0.0
+          ]
+        }
+      },
+      "resolvent_residual": 1.2412670766236366e-16,
+      "hermiticity_error": 0.0
+    },
+    {
+      "L": 12,
+      "N": 0,
+      "kappa": 1.0,
+      "momentum_pi": 0.0,
+      "sigma": 1,
+      "dims": [
+        1,
+        2,
+        8
+      ],
+      "initial_energy": 0.0,
+      "final_energy": -8.000000000000002,
+      "matching_mu": -2.0000000000000004,
+      "initial_gap_in_sector": null,
+      "final_gap_in_sector": 0.7204499794976149,
+      "intermediate_min_gap": 0.5584815598877482,
+      "intermediate_pole_distance": 0.5584815598877482,
+      "amplitude_real": -3.605555036969174e-16,
+      "amplitude_imag": 1.9154511133898728e-16,
+      "amplitude_abs": 4.082766230437433e-16,
+      "spectral_terms_abs_sum": 8.467103316782614e-16,
+      "spectral_sum_error": 1.1024666305413758e-31,
+      "connected": {
+        "identity_error": 8.165532460874865e-16,
+        "pair_reconstruction_error": 6.280369834735101e-16,
+        "connected_source_norm": 15.588457268119837,
+        "pair_coefficients": {
+          "3": [
+            0.7499999999999988,
+            0.0
+          ],
+          "5": [
+            0.7499999999999986,
+            0.0
+          ]
+        }
+      },
+      "resolvent_residual": 8.881784197001252e-16,
+      "hermiticity_error": 0.0
+    },
+    {
+      "L": 16,
+      "N": 0,
+      "kappa": 1.0,
+      "momentum_pi": 0.0,
+      "sigma": 1,
+      "dims": [
+        1,
+        3,
+        29
+      ],
+      "initial_energy": 0.0,
+      "final_energy": -8.49456451382373,
+      "matching_mu": -2.1236411284559327,
+      "initial_gap_in_sector": null,
+      "final_gap_in_sector": 0.49456451382373157,
+      "intermediate_min_gap": 0.5573150584382365,
+      "intermediate_pole_distance": 0.5573150584382365,
+      "amplitude_real": -4.665289565302211e-16,
+      "amplitude_imag": -0.029484341727954888,
+      "amplitude_abs": 0.029484341727954888,
+      "spectral_terms_abs_sum": 0.8649224292039844,
+      "spectral_sum_error": 4.8780424144467815e-15,
+      "connected": {
+        "identity_error": 5.703942412428976e-15,
+        "pair_reconstruction_error": 0.0,
+        "connected_source_norm": 9.867305798130296,
+        "pair_coefficients": {
+          "3": [
+            0.5103483192314167,
+            0.0
+          ],
+          "5": [
+            0.4136805741477221,
+            0.0
+          ],
+          "7": [
+            0.36816076207195003,
+            0.0
+          ]
+        }
+      },
+      "resolvent_residual": 4.440892098500626e-16,
+      "hermiticity_error": 0.0
+    },
+    {
+      "L": 20,
+      "N": 0,
+      "kappa": 1.0,
+      "momentum_pi": 0.0,
+      "sigma": 1,
+      "dims": [
+        1,
+        4,
+        72
+      ],
+      "initial_energy": 0.0,
+      "final_energy": -8.885510693710453,
+      "matching_mu": -2.221377673427613,
+      "initial_gap_in_sector": null,
+      "final_gap_in_sector": 0.7351121383553121,
+      "intermediate_min_gap": 0.6403859236958094,
+      "intermediate_pole_distance": 0.6403859236958094,
+      "amplitude_real": -2.1665084238940989e-16,
+      "amplitude_imag": -0.17246173010958332,
+      "amplitude_abs": 0.17246173010958332,
+      "spectral_terms_abs_sum": 0.8726300545217842,
+      "spectral_sum_error": 1.3877787807814457e-16,
+      "connected": {
+        "identity_error": 4.445889159654328e-16,
+        "pair_reconstruction_error": 0.0,
+        "connected_source_norm": 5.401171333682801,
+        "pair_coefficients": {
+          "3": [
+            0.4081286201859747,
+            0.0
+          ],
+          "5": [
+            0.2705649313726176,
+            0.0
+          ],
+          "7": [
+            0.19289827757763248,
+            0.0
+          ],
+          "9": [
+            0.15793499568097755,
+            0.0
+          ]
+        }
+      },
+      "resolvent_residual": 3.1401849173675503e-16,
+      "hermiticity_error": 0.0
+    },
+    {
+      "L": 24,
+      "N": 0,
+      "kappa": 1.0,
+      "momentum_pi": 0.0,
+      "sigma": 1,
+      "dims": [
+        1,
+        5,
+        145
+      ],
+      "initial_energy": 0.0,
+      "final_energy": -8.997138950555346,
+      "matching_mu": -2.2492847376388365,
+      "initial_gap_in_sector": null,
+      "final_gap_in_sector": 0.6326773242196886,
+      "intermediate_min_gap": 0.6356218513644927,
+      "intermediate_pole_distance": 0.6356218513644927,
+      "amplitude_real": 3.10563157765534e-16,
+      "amplitude_imag": -0.23611731886080456,
+      "amplitude_abs": 0.23611731886080456,
+      "spectral_terms_abs_sum": 0.7997221106036919,
+      "spectral_sum_error": 3.0531133177191805e-16,
+      "connected": {
+        "identity_error": 3.38203127010467e-16,
+        "pair_reconstruction_error": 2.7755575615628914e-16,
+        "connected_source_norm": 4.742134382567754,
+        "pair_coefficients": {
+          "3": [
+            0.386394778812741,
+            0.0
+          ],
+          "5": [
+            0.2403136190825855,
+            0.0
+          ],
+          "7": [
+            0.15413897683647165,
+            0.0
+          ],
+          "9": [
+            0.10638882899095634,
+            0.0
+          ],
+          "11": [
+            0.08515979246815465,
+            0.0
+          ]
+        }
+      },
+      "resolvent_residual": 9.992007221626409e-16,
+      "hermiticity_error": 0.0
+    },
+    {
+      "L": 16,
+      "N": 2,
+      "kappa": 1.0,
+      "momentum_pi": 1.0,
+      "sigma": -1,
+      "dims": [
+        7,
+        19,
+        16
+      ],
+      "initial_energy": -4.366586774638308,
+      "final_energy": -12.321346781736393,
+      "matching_mu": -1.9886900017745213,
+      "initial_gap_in_sector": 0.3665867746383098,
+      "final_gap_in_sector": 0.3213467817363913,
+      "intermediate_min_gap": 0.7284098607399176,
+      "intermediate_pole_distance": 0.7284098607399176,
+      "amplitude_real": -0.0228177231737752,
+      "amplitude_imag": -1.8700300826162867e-16,
+      "amplitude_abs": 0.0228177231737752,
+      "spectral_terms_abs_sum": 0.453499813692403,
+      "spectral_sum_error": 6.966310867171899e-16,
+      "connected": null,
+      "resolvent_residual": 2.555508754417723e-15,
+      "hermiticity_error": 5.512148557436266e-15
+    },
+    {
+      "L": 20,
+      "N": 2,
+      "kappa": 1.0,
+      "momentum_pi": 1.0,
+      "sigma": -1,
+      "dims": [
+        9,
+        54,
+        126
+      ],
+      "initial_energy": -4.510013126428929,
+      "final_energy": -13.05978565937726,
+      "matching_mu": -2.137443133237083,
+      "initial_gap_in_sector": 0.5100131264289303,
+      "final_gap_in_sector": 0.8595566275831352,
+      "intermediate_min_gap": 0.770319825019218,
+      "intermediate_pole_distance": 0.770319825019218,
+      "amplitude_real": 0.32887616260455615,
+      "amplitude_imag": 3.365310933633048e-17,
+      "amplitude_abs": 0.32887616260455615,
+      "spectral_terms_abs_sum": 0.7488685053244053,
+      "spectral_sum_error": 1.6655872155292575e-15,
+      "connected": null,
+      "resolvent_residual": 3.4040504922506305e-15,
+      "hermiticity_error": 8.488120092730053e-15
+    },
+    {
+      "L": 24,
+      "N": 2,
+      "kappa": 1.0,
+      "momentum_pi": 1.0,
+      "sigma": -1,
+      "dims": [
+        11,
+        118,
+        561
+      ],
+      "initial_energy": -4.540863538839924,
+      "final_energy": -13.311372991295595,
+      "matching_mu": -2.192627363113918,
+      "initial_gap_in_sector": 0.5408635388399228,
+      "final_gap_in_sector": 0.6889565381755958,
+      "intermediate_min_gap": 0.6764184376994802,
+      "intermediate_pole_distance": 0.6764184376994802,
+      "amplitude_real": 7.805958575440288e-15,
+      "amplitude_imag": 0.5183452185291407,
+      "amplitude_abs": 0.5183452185291407,
+      "spectral_terms_abs_sum": 0.7992278017138985,
+      "spectral_sum_error": 1.2014270738064221e-15,
+      "connected": null,
+      "resolvent_residual": 7.657644485811917e-15,
+      "hermiticity_error": 1.4205180805506527e-14
+    },
+    {
+      "L": 20,
+      "N": 0,
+      "kappa": 0.5,
+      "momentum_pi": 0.0,
+      "sigma": 1,
+      "dims": [
+        1,
+        4,
+        72
+      ],
+      "initial_energy": 0.0,
+      "final_energy": -7.999999999999998,
+      "matching_mu": -1.9999999999999996,
+      "initial_gap_in_sector": null,
+      "final_gap_in_sector": 0.49636905267302556,
+      "intermediate_min_gap": 0.19763057684058216,
+      "intermediate_pole_distance": 0.19763057684058216,
+      "amplitude_real": -2.2976521877376118e-15,
+      "amplitude_imag": -2.6606923868188733e-17,
+      "amplitude_abs": 2.297806237308351e-15,
+      "spectral_terms_abs_sum": 2.704497364421857e-15,
+      "spectral_sum_error": 3.166042509283776e-30,
+      "connected": {
+        "identity_error": 4.595612474616739e-15,
+        "pair_reconstruction_error": 0.0,
+        "connected_source_norm": 50.64582904840288,
+        "pair_coefficients": {
+          "3": [
+            0.7500000000000019,
+            0.0
+          ],
+          "5": [
+            0.7500000000000029,
+            0.0
+          ],
+          "7": [
+            0.7500000000000036,
+            0.0
+          ],
+          "9": [
+            0.7500000000000039,
+            0.0
+          ]
+        }
+      },
+      "resolvent_residual": 8.881784197001252e-16,
+      "hermiticity_error": 0.0
+    },
+    {
+      "L": 20,
+      "N": 0,
+      "kappa": 2.0,
+      "momentum_pi": 0.0,
+      "sigma": 1,
+      "dims": [
+        1,
+        4,
+        72
+      ],
+      "initial_energy": 0.0,
+      "final_energy": -12.019800110141626,
+      "matching_mu": -3.0049500275354064,
+      "initial_gap_in_sector": null,
+      "final_gap_in_sector": 0.16364955809651782,
+      "intermediate_min_gap": 2.207530631911396,
+      "intermediate_pole_distance": 2.207530631911396,
+      "amplitude_real": 2.234251683747863e-16,
+      "amplitude_imag": -0.11460523090349672,
+      "amplitude_abs": 0.11460523090349672,
+      "spectral_terms_abs_sum": 0.3019025647688458,
+      "spectral_sum_error": 1.249000902703301e-16,
+      "connected": {
+        "identity_error": 3.1087203584492677e-16,
+        "pair_reconstruction_error": 1.2794688166302258e-16,
+        "connected_source_norm": 1.3044061205703978,
+        "pair_coefficients": {
+          "3": [
+            0.21854316190788403,
+            0.0
+          ],
+          "5": [
+            0.08386355975680956,
+            0.0
+          ],
+          "7": [
+            0.03346264429255809,
+            0.0
+          ],
+          "9": [
+            0.01669001413152037,
+            0.0
+          ]
+        }
+      },
+      "resolvent_residual": 1.6883057536160649e-16,
+      "hermiticity_error": 0.0
+    }
+  ]
+}
