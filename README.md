@@ -73,6 +73,14 @@ These are spelled out in [CONTRIBUTING.md](CONTRIBUTING.md). In brief, tag every
 
 ## Where things stand
 
+**Focused research round (2026-11-18):** The user's two priorities are
+large c at microscopic d=2 and unbounded c at fixed small d. A new
+[four-chat plan](contrib/research_coordination_20261116/FOCUSED_ROUND_20261118.md)
+targets stable two-mode qubits, physical deformations toward three modes,
+arbitrary-n markerless band separation, and quantitative ground-sector
+control of the corrected d=10 mobile chain. All four chats are assigned
+GPT-6 Astra Max; long qubit production remains stopped.
+
 **Ten-state family located (2026-11-18):** The reported d=10 candidate
 family is [contrib/markerless_d9_d10/](contrib/markerless_d9_d10/README.md),
 dated 2026-11-12 and published today. It removes the marker letters of the

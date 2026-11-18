@@ -6,6 +6,12 @@ their newly proposed sixth-order qubit models. No human review is claimed.
 
 ## Reviewed checkpoint and assigned follow-ups
 
+The [focused four-chat round](FOCUSED_ROUND_20261118.md) prioritizes large
+c at d=2 and unbounded c at fixed small d. It assigns two GPT-6 Astra Max
+chats to qubit stability and physical three-mode deformations, and two to
+arbitrary-n markerless bands and the corrected d=10 mobile ground sector.
+These are research assignments, not new phase claims.
+
 The [latest completed results](ROUND5_RESULTS_20261118.md) include the
 newly published markerless d=9/d=10 family, the separate single-rail
 nine-state three-flavour instability, the eleven-state analytic loop

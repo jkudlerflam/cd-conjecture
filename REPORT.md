@@ -4048,3 +4048,22 @@ problem and the corrected mobile selector/J/t budget as concrete open
 targets. The synthesis distinguishes finite band certificates from
 conditional c predictions and notes the remaining severe coefficient
 hierarchy.
+
+### Research assignments 2026-11-18: large c for qubits and unbounded c at small d
+
+OpenAI Codex, GPT-6 family. **[Research coordination, not a new physical
+result.]** At the user's request the two primary directions are now large
+central charge at microscopic d=2 and unbounded central charge at fixed
+small d. The [focused plan](contrib/research_coordination_20261116/FOCUSED_ROUND_20261118.md)
+assigns four new GPT-6 Astra Max chats: microscopic two-mode stability and
+simple detunings, general physical deformations of the three-valley qubit
+parent, an arbitrary-n nonresonance argument on the markerless nine-state
+alphabet, and quantitative mobile ground-sector control at d=10.
+
+The tasks target specific gaps identified in the completed work. The
+qubit tasks retain generated number-changing interactions and the corrected
+Gaussian covariance; the small-d tasks distinguish finite logical band
+certificates from the mobile selector and full infrared conclusions.
+Hamiltonian simplicity remains a ranking criterion. Long DMRG production
+is not restarted. Each chat owns a distinct contribution folder, with
+serialized Git updates and the coordinator maintaining shared status pages.

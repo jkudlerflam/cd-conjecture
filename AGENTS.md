@@ -4,6 +4,13 @@ Follow [CONTRIBUTING.md](CONTRIBUTING.md) for research and contribution conventi
 
 ## Research priorities
 
+The user's current highest-priority directions are large central charge at
+fixed microscopic d=2, and unbounded central charge at fixed small d.
+Prefer concrete progress on these directions over a general upper-bound
+program. For the latter direction, the markerless d=9 frozen / d=10 mobile
+family is the primary current construction; its finite certificates do not
+yet establish arbitrary n or a microscopic unbounded-c theorem.
+
 The user explicitly values simple Hamiltonians: fewer terms, ratios of
 nonzero coefficients closer to one, and less delicate tuning. When ranking
 candidate models, weigh these alongside local dimension and strength of
