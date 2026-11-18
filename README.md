@@ -73,14 +73,19 @@ These are spelled out in [CONTRIBUTING.md](CONTRIBUTING.md). In brief, tag every
 
 ## Where things stand
 
-**Stability follow-up (2026-11-18):** Four existing GPT-6 Astra Max chats
-are active on the most direct remaining tests: finite-density
-locking and dressed modes at the fixed asymmetric qubit bond, uniform
-interaction control for the all-n d=9 family, and thermodynamic cell
-selection in the corrected d=10 model. The
-[assignments](contrib/research_coordination_20261116/STABILITY_ROUND_20261118.md)
-preserve the distinction between the two markerless clock/readout choices.
-Long production remains stopped; these are new tasks, not new results.
+**Stability round completed (2026-11-18):** The modified d=9 family now
+has finite-order local interaction bounds independent of chain length
+and exact nonzero-port ground-sector selection on compatible rings.
+Qubit work computes a connected finite-density quartet response and
+finds that saved carrier shifts disagree in sign with bare-band estimates;
+the continuum matching needed to settle c=2 remains missing. The original
+d=10 mobile model gains a uniform bound on one half-occupancy response
+channel, with full thermodynamic selection still open. All four GPT-6 Astra
+Max chats completed. No new microscopic c is established and the
+coefficient hierarchies are not improved. The
+[results and remaining gaps](contrib/research_coordination_20261116/STABILITY_RESULTS_20261118.md)
+also distinguish the collaborator's separate, simpler c=3/2 numerical
+qubit candidate. Long production remains stopped.
 
 **Focused round completed (2026-11-18):** A new moment-sign proof gives
 an arbitrary-n leading quadratic band family at physical d=9, using a

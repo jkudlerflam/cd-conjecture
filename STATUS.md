@@ -7,11 +7,18 @@ earlier long version. The standard is theoretical physics, and nothing has
 had independent human review. Conditional infrared predictions are not
 established microscopic counterexamples.
 
-**Active stability follow-up (2026-11-18):** The four existing research
-chats are active on finite-density matching at the asymmetric
-qubit candidate and the remaining interacting/thermodynamic gaps of the
-small-d constructions. The [new assignments](contrib/research_coordination_20261116/STABILITY_ROUND_20261118.md)
-replace further three-valley exploration with the two-mode stability test.
+**Stability round completed (2026-11-18):** All four GPT-6 Astra Max
+chats completed. The modified d=9 bond gains volume-independent local
+bounds through fourth port order and exact nonzero-port ground-sector
+selection on compatible rings. Qubit work computes a connected
+finite-density quartet response, exposes a bare-versus-dressed momentum
+discrepancy, and specifies the missing full response measurement. The
+original d=10 mobile model gains a uniform theorem for the canonical
+zero-momentum contact response at half occupancy. All-scale CFT matching
+and the full mobile selector remain open; no new microscopic central
+charge is established. See the
+[results](contrib/research_coordination_20261116/STABILITY_RESULTS_20261118.md)
+and [assignments](contrib/research_coordination_20261116/STABILITY_ROUND_20261118.md).
 
 **Current research priority and completed round (2026-11-18):** Large c
 at microscopic d=2 and unbounded c at fixed small d. All four GPT-6 Astra
@@ -36,7 +43,9 @@ Latorre and Sierra ([arXiv:2403.17242](https://arxiv.org/abs/2403.17242)) conjec
    unbounded-c families at fixed d. Their finite certificates and partial
    matching results do not establish the full microscopic CFT conclusions.
    A modified d=9 clock/readout now has an arbitrary-n leading quadratic
-   band proof; it does not yet have thermodynamic matching or a CFT theorem.
+   band proof, finite-order volume-independent local bounds and exact
+   frozen ground-sector selection on compatible rings. All-scale
+   interacting matching and a CFT theorem remain open.
 2. At d = 2 there is a candidate counterexample, an explicit nearest-neighbour qubit chain that reads c = 2.00 on open chains up to L = 256, converged in bond dimension, and 1.95 to 1.98 from L = 256 to 512, passing the same test there, with a mechanism and an effective model that give the same answer. It remains subject to the convergence and infrared-stability checks listed below, including charge locking; these finite-size readings do not settle its thermodynamic c.
 3. A replacement bound, Σ_a c_a v_a ≤ π M log₂ d, holds in every solvable family and is proved in several classes.
 
@@ -73,7 +82,12 @@ Latorre and Sierra ([arXiv:2403.17242](https://arxiv.org/abs/2403.17242)) conjec
    proves strict moment negativity and 2n simple, pair-sum-separated roots
    for every finite n at physical d=9. It uses a biased clock and an L1
    field, so the mobile charge-field theorem cannot be transferred to it
-   without a new argument.
+   without a new argument. The [uniform follow-up](contrib/markerless_uniform_matching_20261118/README.md)
+   supplies finite-order local interaction bounds and exact nonzero-port
+   frozen ground-sector selection on compatible rings; it retains residual
+   auxiliary coupling and does not establish the CFT. The distinct
+   [mobile half-occupancy analysis](contrib/markerless_thermodynamic_selector_20261118/README.md)
+   proves one uniform susceptibility channel, but not the full selector.
 3. Numerics agree. The logical vacancy model gives c = 2.0, 2.9 ± 0.1 and 3.98 ± 0.05 at n = 1, 2, 3, and the projected d₀ = 4464 chain gives c = 3.00 ± 0.02 at n = 2.
 
 Not established: a rigorous lattice-to-CFT theorem for any counterexample.
@@ -145,6 +159,18 @@ Open, before this is called established:
 5. Charge locking. The qubit chain conserves only parity, so particle number is emergent. A number-changing term O₄ (two inter-valley pairs, scaling dimension about 1.25) is relevant when its momentum matches, and on the symmetric line it does. Its coupling is fourth order in the pairing, about (16/9) C₄ ε² with C₄ not computed and not forbidden by any known symmetry. For C₄ of order one this gives a locking length of several thousand sites, beyond which the charge mode on the symmetric line would gap and leave c ≤ 1. At the phase-1.53 bond the coupling oscillates with a period of about 420 sites, more than ten times shorter, and the liquid survives in this estimate. This is an order-of-magnitude estimate, not a calculation, and chains of L ≤ 512 cannot test it (REPORT §9.161, §9.162; [collaborator note](contrib/collaborator_notes/qubit_c2/notes_qubit_c2.pdf), Sec. 6).
 
 Pace's earlier runs of the phase-1.53 bond read a downturn from L = 64 to 128 on states that were not fully optimized ([record](contrib/d2_tenpy_20261109/RESULT.md), [rational bond](contrib/d2_dmrg_priority_20261109/SIMPLE_PARITY_CANDIDATE.md)). The converged rerun lies lower in energy and reads 2.2, so the downturn does not reproduce (REPORT §9.167). Their [transverse-DM deformation](contrib/counterexample_push_20261109/FACILITATED_ROUTE.md) reads c ≈ 1, and their [symmetry audit](contrib/d2_priority_audit_20261109/UNIFORM_Y_SOURCE.md) allows a small uniform Y source.
+
+**Finite-density follow-up (2026-11-18):** The
+[connected quartet calculation](contrib/qubit_detuned_quartet_20261118/README.md)
+gives nonzero finite-ring response coefficients at the fixed asymmetric
+point, but they are not yet a continuum coupling. The
+[dressed-mode audit](contrib/qubit_finite_density_modes_20261118/README.md)
+finds a finite-window carrier shift of opposite sign to the bare-band
+estimate and proves that the usual leading parameter probes have
+insufficient response rank. A normalized four-channel response, target
+velocities and a controlled thermodynamic mismatch are still needed to
+apply the new coupled locking-versus-detuning criterion. These results
+do not validate the order-of-magnitude stability estimate in item 5.
 
 ## Elsewhere at d = 2
 

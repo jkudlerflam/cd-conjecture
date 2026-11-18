@@ -215,6 +215,7 @@ assignments; the earlier research remains in the same chat histories.
 | Nine-state interacting theory | `01a1ef71-7c28-7d71-8156-6188bfdc3250` | Uniform local matching and generated interactions |
 | Ten-state cell selection | `01a1ef71-ce96-7703-aa33-1337b9d16956` | Half-occupancy susceptibility and relative-curvature bounds |
 
-Exactly four existing chats were redeployed. Startup is confirmed;
-completion and scientific conclusions will be recorded after the results
-are available. Long production has not been restarted by this deployment.
+Exactly four existing chats were redeployed. All four assigned turns
+were subsequently observed completed and idle. The
+[completed results](STABILITY_RESULTS_20261118.md) record the published
+calculations and their remaining gaps. Long production was not restarted.

@@ -4176,3 +4176,52 @@ records the first calculations, scope and deployment status.
 - just below h_I, near h ≈ 1.739 to 1.741, the readings sit at c ≈ 1.9 to 2.2 out to χ = 320, with quasi-long-range bond order. Its asymptotic fate decides whether h_I is a clean boson × Ising point.
 
 This is the open mechanism 2 of STATUS ("a staggered Ising transition inside an incommensurate liquid"). The earlier Fable agent report and the scripts are on typhon in `~/cc_spinchain/`.
+
+### 9.209 Completed stability round for asymmetric qubits and markerless chains
+
+2026-11-18, four GPT-6 Astra Max chats; OpenAI Codex coordination.
+All four assigned turns completed, with bounded single-worker checks and
+no restarted production. The [full synthesis](contrib/research_coordination_20261116/STABILITY_RESULTS_20261118.md)
+distinguishes the following claims, which have internal checks but no
+independent human review.
+
+- **[Proved finite-order and sector bounds]** Modified d=9 now has a
+  connected fourth-order local expansion with an exponentially weighted
+  remainder independent of cell count. The full residual is O(lambda^5);
+  only its logical projection improves to O(lambda^6). Generated quartic,
+  three-cell and readout-induced interactions are retained. Separately,
+  gamma>5sqrt(2)|lambda| puts the full microscopic ground space in the
+  selected cell sectors on compatible rings, including comparison with
+  wrong head counts, zero-data cells and headless sectors. The severe
+  coefficient hierarchy and all-scale interacting CFT gap remain.
+  Source: [uniform matching](contrib/markerless_uniform_matching_20261118/README.md),
+  commit a367f903.
+- **[Finite-system identity and numerical response]** At fixed p153c,
+  the connected four-single-leg source coefficient g4,L/t is
+  -0.000309319086 at L=20 and -0.001233862897 at L=24, in the full leading
+  interacting blockade model. These are not continuum cosine amplitudes.
+  The [quartet calculation](contrib/qubit_detuned_quartet_20261118/README.md)
+  also derives a sufficient coupled running-versus-detuning bound whose
+  target matching inputs remain unknown (7da97d12, a6bf1058).
+- **[Algebraic and saved-data results]** The leading raw-density dressing
+  is explicit; finite-window carrier shifts have the opposite sign from
+  bare-band estimates; and the usual leading uniform parameter probes
+  have rank at most three. A fourth current probe and the full response
+  inversion are calibrated, but the target kernel and thermodynamic
+  mismatch are not measured. Source: [dressed modes](contrib/qubit_finite_density_modes_20261118/README.md),
+  commit 15ecbe13. The qubit c=2 verdict is unchanged.
+- **[Proved response bound and conditional dynamical estimate]** At half
+  occupancy in the original d=10 model, the uniform canonical channel
+  obeys t gamma_N(0)<=3/4 for every even N, with limit
+  (24-pi^2)/(18pi^3). Other channels have determinant formulas. The actual
+  defect background cross term is favorable, and a clock-retaining
+  second-cumulant curvature bound is available. Remaining momentum
+  channels and higher connected terms prevent a full selector theorem
+  or L-independent J/t allowance. Source:
+  [mobile response](contrib/markerless_thermodynamic_selector_20261118/README.md),
+  commit a05e80c2.
+
+No new microscopic central charge or unbounded-c CFT theorem follows
+from this round. The separate simple qubit c=3/2 numerical candidate
+in section 9.208 remains relevant to the user's preference for few terms
+and modest coefficient ratios; it is not a measurement of p153c.
