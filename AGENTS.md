@@ -8,8 +8,12 @@ The user's current highest-priority directions are large central charge at
 fixed microscopic d=2, and unbounded central charge at fixed small d.
 Prefer concrete progress on these directions over a general upper-bound
 program. For the latter direction, the markerless d=9 frozen / d=10 mobile
-family is the primary current construction; its finite certificates do not
-yet establish arbitrary n or a microscopic unbounded-c theorem.
+family is the primary current construction. Its original schedule has
+finite certificates; a modified nine-state family now has an arbitrary-n
+leading-band proof. Thermodynamic matching and a microscopic unbounded-c
+CFT theorem remain open. The modified clock/readout and the original mobile
+model have different hypotheses; do not combine their results without a
+new transfer argument.
 
 The user explicitly values simple Hamiltonians: fewer terms, ratios of
 nonzero coefficients closer to one, and less delicate tuning. When ranking

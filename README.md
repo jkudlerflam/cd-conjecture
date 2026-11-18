@@ -73,13 +73,15 @@ These are spelled out in [CONTRIBUTING.md](CONTRIBUTING.md). In brief, tag every
 
 ## Where things stand
 
-**Focused research round (2026-11-18):** The user's two priorities are
-large c at microscopic d=2 and unbounded c at fixed small d. A new
-[four-chat plan](contrib/research_coordination_20261116/FOCUSED_ROUND_20261118.md)
-targets stable two-mode qubits, physical deformations toward three modes,
-arbitrary-n markerless band separation, and quantitative ground-sector
-control of the corrected d=10 mobile chain. All four chats are assigned
-GPT-6 Astra Max; long qubit production remains stopped.
+**Focused round completed (2026-11-18):** A new moment-sign proof gives
+an arbitrary-n leading quadratic band family at physical d=9, using a
+modified biased clock and L1 readout. The original d=10 mobile model gains
+integer-certified finite sector comparisons and an exact conserved-charge
+field improvement. Qubit work computes finite interacting quartet mixing
+and proves crystal preemption in the tested number-conserving three-valley
+leading model. No new microscopic c or unbounded-c CFT is established, and
+the small-d coefficient hierarchy remains severe. All four GPT-6 Astra Max
+chats have completed; [results and scope](contrib/research_coordination_20261116/FOCUSED_RESULTS_20261118.md).
 
 **Ten-state family located (2026-11-18):** The reported d=10 candidate
 family is [contrib/markerless_d9_d10/](contrib/markerless_d9_d10/README.md),
@@ -92,7 +94,7 @@ remains conditional, and the corrected mobile bond still needs a
 quantitative J/t budget and multi-cell sector checks. This is now the
 priority fixed-d family. An AI referee report is in the folder.
 
-**Latest completed round (2026-11-18):** The separate single-rail nine-state three-flavour
+**Earlier completed round (2026-11-18):** The separate single-rail nine-state three-flavour
 bond has six certified simple Fermi roots, but its generated interactions
 destabilize the tested three-mode Gaussian state in the coupled leading
 RG flow. The eleven-state loop gives full pair-sum separation for a new

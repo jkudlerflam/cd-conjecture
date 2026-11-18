@@ -7,13 +7,17 @@ earlier long version. The standard is theoretical physics, and nothing has
 had independent human review. Conditional infrared predictions are not
 established microscopic counterexamples.
 
-**Current research priority (2026-11-18):** Large c at microscopic d=2
-and unbounded c at fixed small d. Four new GPT-6 Astra Max chats are active
-on simple two-mode qubit stability, physical three-mode deformations,
-arbitrary-n markerless bands, and ground-sector control of the corrected
-d=10 mobile model. The [assignments and dispatch record](contrib/research_coordination_20261116/FOCUSED_ROUND_20261118.md)
-state concrete first calculations. These are ongoing tasks, not new results;
-the earlier battery-saving stop on long qubit production remains in force.
+**Current research priority and completed round (2026-11-18):** Large c
+at microscopic d=2 and unbounded c at fixed small d. All four GPT-6 Astra
+Max chats completed their assignments. The strongest new result is an
+arbitrary-n leading-band theorem for a modified markerless d=9 bond.
+The d=10 mobile work certifies selected finite sector comparisons and an
+exact charge-field improvement. Qubit work computes finite quartet mixing
+and proves crystal preemption in the tested three-valley leading slice.
+No new microscopic central charge is established. See the
+[completed results](contrib/research_coordination_20261116/FOCUSED_RESULTS_20261118.md)
+and [assignment record](contrib/research_coordination_20261116/FOCUSED_ROUND_20261118.md).
+The earlier battery-saving stop on long qubit production remains in force.
 
 Latorre and Sierra ([arXiv:2403.17242](https://arxiv.org/abs/2403.17242)) conjecture c ≤ d − 1 for translation-invariant nearest-neighbour chains on (ℂ^d)^⊗L whose low-energy spectrum is a unitary CFT.
 
@@ -25,7 +29,9 @@ Latorre and Sierra ([arXiv:2403.17242](https://arxiv.org/abs/2403.17242)) conjec
    and d=13 bonds and proposed
    unbounded-c families at fixed d. Their finite certificates and partial
    matching results do not establish the full microscopic CFT conclusions.
-2. At d = 2 there is a candidate counterexample, an explicit nearest-neighbour qubit chain that reads c = 2.00 on open chains up to L = 256, converged in bond dimension, and 1.95 to 1.98 from L = 256 to 512, passing the same test there, with a mechanism and an effective model that give the same answer. What separates it from an established counterexample is a short list of convergence checks, given below, most of them running.
+   A modified d=9 clock/readout now has an arbitrary-n leading quadratic
+   band proof; it does not yet have thermodynamic matching or a CFT theorem.
+2. At d = 2 there is a candidate counterexample, an explicit nearest-neighbour qubit chain that reads c = 2.00 on open chains up to L = 256, converged in bond dimension, and 1.95 to 1.98 from L = 256 to 512, passing the same test there, with a mechanism and an effective model that give the same answer. It remains subject to the convergence and infrared-stability checks listed below, including charge locking; these finite-size readings do not settle its thermodynamic c.
 3. A replacement bound, Σ_a c_a v_a ≤ π M log₂ d, holds in every solvable family and is proved in several classes.
 
 ## Conditional large-d constructions
@@ -51,7 +57,17 @@ Latorre and Sierra ([arXiv:2403.17242](https://arxiv.org/abs/2403.17242)) conjec
    n=9, 10, 11, 12, 14, 16 and 20 (predicted c up to 21 at d=10), not for
    all n. An AI referee confirmed the frozen chain and the certificate and
    re-checked the corrected mobile bond. The same infrared inputs apply,
-   and J/t for the mobile chain is not quantified.
+   and J/t for thermodynamic mobile selection and dressed bands is not
+   quantified. Subsequent [finite mobile certificates](contrib/markerless_mobile_control_20261118/README.md)
+   compare (10,10) with (9,11), (20), and (6,7,7) at N=20,V=2 and
+   J/t=1/25. Moving only the conserved charge field outside the contact
+   embedding exactly removes its bit-position error; other mobile errors
+   and the severe coefficient hierarchy remain.
+   Separately, the [all-n modified family](contrib/markerless_all_n_20261118/README.md)
+   proves strict moment negativity and 2n simple, pair-sum-separated roots
+   for every finite n at physical d=9. It uses a biased clock and an L1
+   field, so the mobile charge-field theorem cannot be transferred to it
+   without a new argument.
 3. Numerics agree. The logical vacancy model gives c = 2.0, 2.9 ± 0.1 and 3.98 ± 0.05 at n = 1, 2, 3, and the projected d₀ = 4464 chain gives c = 3.00 ± 0.02 at n = 2.
 
 Not established: a rigorous lattice-to-CFT theorem for any counterexample.
@@ -82,14 +98,16 @@ on 2026-11-12 and kept in a local checkout until today. Nine material
 states without markers have predicted c=n with frozen cells; one
 uncoloured vacancy gives predicted c=n+1 at d=10. Its status is that of
 the d=11 and d=13 bonds: certified logical band data at the listed n,
-conditional infrared step, and no all-n theorem. This is now the primary
-fixed-d candidate. The mobile J/t budget and multi-cell competition
-remain open. See REPORT for the referee outcome.
+conditional infrared step, and no all-n theorem for that original
+parameter schedule. The newer modified all-n band proof and finite mobile
+comparisons are distinguished above. Thermodynamic mobile selection and
+the dressed-band J/t budget remain open. See REPORT for the referee outcome.
 
 **That earlier round is now complete:** The tested single-rail nine-state three-flavour point
 has the desired bands but a coupled leading RG instability. The eleven-state
-loop has analytically separated pair sums for a new n<=4 family; its all-n
-moment condition remains open. The qubit analysis allows quartet and mixed
+loop had analytically separated pair sums for a new n<=4 family; its all-n
+moment condition was left open then and is resolved by the new sign proof
+above. The qubit analysis allows quartet and mixed
 locking and corrects the drift covariance used in C180; C191's chiral
 implementation agrees with the correction. No c value was established and
 no DMRG was restarted. [Results and qualifications](contrib/research_coordination_20261116/ROUND5_RESULTS_20261118.md).
@@ -100,7 +118,7 @@ The chain is
 
 H = Σ_j [ (X_j X_{j+1} − Y_j Y_{j+1})/2 + (X_j Y_{j+1} − Y_j X_{j+1})/160 + 10 Z_j Z_{j+1} ] + h_z Σ_j Z_j, with h_z = −19.976047,
 
-together with a family of neighbours of it. One of them, proposed by Pace, adds a small XX + YY term (hopping phase 1.53). Off the symmetric line a momentum mismatch protects the liquid against charge locking (open item 5), which makes the phase-1.53 bond the stronger candidate for a c = 2 infrared theory.
+together with a family of neighbours of it. One of them, proposed by Pace, adds a small XX + YY term (hopping phase 1.53). Off the symmetric line a momentum mismatch may cut off charge locking in the estimate of open item 5, making the phase-1.53 bond the stronger candidate in that analysis. This is not a matched thermodynamic stability result.
 
 The strong ZZ term, with the field near its blockade value, leaves a dilute gas of blockaded particles. Their direct hop (the XY − YX term) is tuned down to the size of the next-nearest hop that the pairing term XX − YY generates at second order. The particles then move on a zigzag ladder whose band has two valleys, and the proposed infrared theory is a two-component Luttinger liquid with c = 2.
 

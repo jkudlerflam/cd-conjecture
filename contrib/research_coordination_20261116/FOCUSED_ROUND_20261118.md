@@ -10,6 +10,11 @@ Four new project chats are authorized, all using **GPT-6 Astra, Max reasoning**
 and remain idle. The [latest synthesis](ROUND5_RESULTS_20261118.md) is the
 starting checkpoint.
 
+**Completion update:** All four assigned turns have completed and their
+contributions are pushed. See [the focused-round results](FOCUSED_RESULTS_20261118.md)
+for the findings and scientific qualifications. The dispatch record below
+preserves the observed startup state.
+
 Two chats address each objective. One qubit task pursues the best supported
 two-mode mechanism while improving its stability and simplicity; the second
 explicitly targets c>2. For small fixed d, the markerless family replaces
@@ -218,3 +223,8 @@ All run locally in the existing c-d conjecture project. No additional
 chat or subagent was created. The first two pursue distinct qubit mechanisms;
 the latter two separate arbitrary-n kinematics from mobile ground-sector
 control. The coordinator confirmed startup, not a new CFT result.
+
+The later completion review observed all four chats idle and completed:
+assignment 1 published d76e315a, assignment 2 b8181dda, assignment 3
+e57633f6 and assignment 4 35bb8752. These results are summarized in the
+linked completion review; the model-specific proof scopes remain distinct.

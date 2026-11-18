@@ -4067,3 +4067,57 @@ certificates from the mobile selector and full infrared conclusions.
 Hamiltonian simplicity remains a ranking criterion. Long DMRG production
 is not restarted. Each chat owns a distinct contribution folder, with
 serialized Git updates and the coordinator maintaining shared status pages.
+
+### Completed focused round 2026-11-18: arbitrary-n markerless bands and qubit interaction tests
+
+OpenAI Codex, GPT-6 family, reviewing four completed GPT-6 Astra Max
+assignments. **[Source review and synthesis; no new numerical rerun or
+independent human verification.]** The
+[full review](contrib/research_coordination_20261116/FOCUSED_RESULTS_20261118.md)
+records the separate physical hypotheses and verification methods.
+
+- **[Proved in the contribution]** The
+  [markerless all-n work](contrib/markerless_all_n_20261118/README.md)
+  proves every rational loop moment L_j strictly negative using finite
+  orthogonal polynomials, a signed resolvent identity and interlacing.
+  An explicit modified d=9 bond then has 2n simple roots and all pair sums
+  separated for every finite n. It uses a biased clock, independently
+  scaled active rail and L1-only readout, plus an exact zero-port selector.
+  This is an arbitrary-n leading quadratic band theorem, not a proof of
+  the original uniform-field schedule or a microscopic unbounded-c CFT.
+  The coefficient hierarchy remains severe.
+- **[Proved finite integer certificates and exact field algebra]** The
+  [mobile work](contrib/markerless_mobile_control_20261118/README.md)
+  certifies (10,10) below (9,11), (20), and (6,7,7) for N=20,V=2,
+  J/t=1/25 at n=9, with smallest gap above 1.20e-4 t. Charged-sector
+  domination and a stated finite port/field budget extend those selected
+  comparisons. Moving only the conserved-charge field outside the contact
+  embedding removes the bit-position error exactly. Thermodynamic
+  selection and dressed-band errors remain open; the new all-n L1 readout
+  is a different operator and does not inherit this charge argument.
+- **[Finite interacting matching and exact cancellation lifting]** The
+  [qubit two-mode work](contrib/qubit_stable_two_modes_20261118/README.md)
+  computes nonzero quartet amplitudes and verifies their Delta^4/V^3
+  scaling in literal microscopic spectra. A twelve-site dark-state
+  cancellation is lifted by (6 sqrt(30)/5) Delta^6/V^5. A fifth XX term
+  detunes the bare quartet but generates another pair source and has a
+  poor tested coefficient ratio, 4064. Neither a V4 continuum coefficient
+  nor a stable finite-density two-mode phase is determined. Pair-exponent
+  and complete mixed-vertex diagnostic routines are calibrated.
+- **[All-length leading-model inequality, exact rational certificate]** The
+  [three-mode work](contrib/qubit_three_mode_deformations_20261118/README.md)
+  exhausts the seven leading physical controls under the stated kernel
+  constraints. In its number-conserving slice, 0<gamma<=0.1 and
+  mu>=0.7 gamma select the three period-three crystals on compatible
+  rings, with gap>=mu-0.7 gamma for strict inequality. Filling the highest
+  bare valley requires mu>0.71 gamma and is preempted there. A bounded
+  number-changing escape retains overwhelming single-residue support.
+  This is neither a universal qubit bound nor a new c>=3 phase.
+
+All four contributions are pushed (e57633f6, 35bb8752, d76e315a,
+b8181dda). No production calculation was restarted and no new microscopic
+central charge was measured. The collaborator's new sharing notes preserve
+conditional CFT claims; their charge-locking estimates are not upgraded by
+the finite quartet amplitudes. The current qubit priority is matched
+finite-density stability, while the modified small-d family's main next
+step is volume-uniform interacting elimination and ground-sector control.

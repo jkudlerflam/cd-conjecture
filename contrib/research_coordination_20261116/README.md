@@ -6,6 +6,13 @@ their newly proposed sixth-order qubit models. No human review is claimed.
 
 ## Reviewed checkpoint and assigned follow-ups
 
+The [completed focused-round results](FOCUSED_RESULTS_20261118.md) give an
+arbitrary-n leading-band theorem on a modified d=9 alphabet, finite d=10
+mobile sector certificates and an exact charge-field improvement, finite
+qubit quartet amplitudes, and a leading-model crystal-preemption theorem
+for the tested three-valley route. All four chats have completed; no new
+microscopic CFT central charge is established.
+
 The [focused four-chat round](FOCUSED_ROUND_20261118.md) prioritizes large
 c at d=2 and unbounded c at fixed small d. It assigns two GPT-6 Astra Max
 chats to qubit stability and physical three-mode deformations, and two to
