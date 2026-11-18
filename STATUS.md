@@ -1,6 +1,6 @@
 # Where the c–d conjecture stands
 
-Last scope and priority update 2026-11-17; the older numerical overview below
+Last scope and priority update 2026-11-18; the older numerical overview below
 is dated 2026-11-12. This page lists only the main results. [REPORT.md](REPORT.md)
 is the chronological record, and [STATUS_DETAIL.md](STATUS_DETAIL.md) is an
 earlier long version. The standard is theoretical physics, and nothing has
@@ -44,6 +44,15 @@ that claim. The active round audits <=10-state mechanisms and transfer
 to the existing eleven-state alphabet, before further d=20/22-specific
 work. A finite n=11 or n=13 band certificate must not be promoted to an
 all-n result. See the [source ledger and assignments](contrib/research_coordination_20261116/SMALLEST_D_FOLLOWUP_20261117.md).
+
+**Follow-up (2026-11-18):** Live GitHub issues, comments, both branches and
+targeted history searches have not located the reported d=10 arbitrary-c
+model. New results give a nine-state two-flavour resonant seed and an
+eleven-state all-n clock/zero-port-selector/simple-tree reduction; neither
+establishes arbitrary-c physics. The next calculations test three flavours
+in the nine-state seed and all-n loop splitting in the eleven-state model.
+The qubit chat studies symmetry-allowed locking operators while production
+remains stopped. [Audit and scope](contrib/research_coordination_20261116/GITHUB_D10_AUDIT_20261118.md).
 
 ## d = 2: a candidate counterexample with c = 2
 

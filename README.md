@@ -73,6 +73,17 @@ These are spelled out in [CONTRIBUTING.md](CONTRIBUTING.md). In brief, tag every
 
 ## Where things stand
 
+**Smallest-d continuation (2026-11-18):** Direct GitHub branch, issue,
+comment and history checks still identify no d=10 arbitrary-c source.
+New work supplies a literal nine-state two-flavour resonant seed with a
+favorable leading RG flow, and transfers clock, zero-port selector and
+simple-band arguments to eleven states for arbitrary finite n. The first
+does not establish arbitrary flavours; the second retains exact Cooper
+resonances in its tree and an open all-n loop-splitting problem. Neither
+establishes a microscopic CFT or unbounded c. The new tasks address those
+gaps, plus qubit mode-locking criteria without restarting DMRG. See the
+[source check and follow-ups](contrib/research_coordination_20261116/GITHUB_D10_AUDIT_20261118.md).
+
 **Smaller-d priority and source audit (2026-11-17):** The reported d=10
 unbounded-c construction has not yet been located; the identified d=10
 models are one- or two-flavour demonstrations, not arbitrary-c families.

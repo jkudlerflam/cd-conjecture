@@ -6,6 +6,11 @@ their newly proposed sixth-order qubit models. No human review is claimed.
 
 ## Reviewed checkpoint and assigned follow-ups
 
+The [2026-11-18 GitHub source check](GITHUB_D10_AUDIT_20261118.md) records
+the expanded search following the user's clarification, the new nine- and
+eleven-state results, and their next calculations. The reported d=10
+arbitrary-c source remains unidentified.
+
 The [smaller-d fourth-round plan](SMALLEST_D_FOLLOWUP_20261117.md) records
 the user's new priority, the source audit of the reported d=10 family,
 and the active tasks on qubits, <=10-state mechanisms and the existing

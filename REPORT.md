@@ -3970,3 +3970,31 @@ smaller construction. All three chats were observed in progress.
 AGENTS.md records the dimension preference, and the top-level summaries
 now keep the conditional status explicit. This coordination pass checks
 documentation links and patch consistency, not the original certificates.
+
+
+### Research coordination 2026-11-18: GitHub d=10 source check and smaller-state follow-ups
+
+OpenAI Codex, GPT-6 family. **[Source audit; no new independent proof.]**
+Following the user's clarification that the possible d=10 example was on
+GitHub, direct API checks covered both live branches, the five issues,
+one PR, all four issue comments and the available PR review comments.
+Targeted history and indexed code searches identified no matching
+arbitrary-c construction. The known ten-state demonstrators retain their
+one-/two-flavour or four-site-interaction limitations. This negative
+source search is not a no-go theorem. The exact snapshot and sources are
+in the [audit](contrib/research_coordination_20261116/GITHUB_D10_AUDIT_20261118.md).
+
+The completed round gives a literal d=9 resonant two-flavour seed with
+a favorable leading weak-coupling flow, and a d=11 all-n biased-clock,
+zero-port length-selector and simple-tree reduction. The former does not
+give arbitrary flavours; the latter leaves exact Cooper-pair-sum
+degeneracies and an open loop-splitting problem. Both retain the stated
+physical sector, matching and CFT assumptions. The qubit saved-state
+audit attributes substantial entropy-slope changes to parity and accuracy
+and finds the density modulation compatible with the same two valleys.
+
+The next assignments are three-flavour band and coupled-RG control at
+d=9, analytic all-n loop splitting at d=11, and exact qubit locking-operator
+selection rules. Long qubit production remains stopped; larger-d-specific
+extensions remain deferred. Contributions stay in separate folders and
+the underlying completed results are already published.
