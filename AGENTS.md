@@ -9,6 +9,15 @@ nonzero coefficients closer to one, and less delicate tuning. When ranking
 candidate models, weigh these alongside local dimension and strength of
 evidence. A small on-site dimension alone does not make a construction simple.
 
+The user also explicitly prioritizes the smallest possible physical on-site
+dimension. Search and audit smaller-d constructions before extending a larger-d
+version when they can address the same research objective. Distinguish a
+certified finite member from an arbitrary-c family at fixed d, and retain all
+infrared and sector-selection assumptions when comparing them. A smaller
+alphabet with only a finite-member certificate is not automatically an
+unbounded-c construction. Count every physical state, including markers and
+vacancies; do not substitute an encoded or blocked dimension for microscopic d.
+
 For comparisons, distinguish independent real coupling parameters from
 literal operator monomials in a stated basis. Remove irrelevant constants,
 telescoping bond terms, and a common positive energy scale before reporting

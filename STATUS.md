@@ -1,22 +1,49 @@
 # Where the c–d conjecture stands
 
-Last updated 2026-11-12. This page lists only the main results. [REPORT.md](REPORT.md) is the chronological record, and [STATUS_DETAIL.md](STATUS_DETAIL.md) is an earlier long version of this page. The standard throughout is theoretical physics, and nothing has had independent human review.
+Last scope and priority update 2026-11-17; the older numerical overview below
+is dated 2026-11-12. This page lists only the main results. [REPORT.md](REPORT.md)
+is the chronological record, and [STATUS_DETAIL.md](STATUS_DETAIL.md) is an
+earlier long version. The standard is theoretical physics, and nothing has
+had independent human review. Conditional infrared predictions are not
+established microscopic counterexamples.
 
 Latorre and Sierra ([arXiv:2403.17242](https://arxiv.org/abs/2403.17242)) conjecture c ≤ d − 1 for translation-invariant nearest-neighbour chains on (ℂ^d)^⊗L whose low-energy spectrum is a unitary CFT.
 
 ## In short
 
-1. The conjecture is false at large d. There are explicit counterexamples at d = 11 and d = 13, and c is unbounded at fixed d.
+1. Explicit conditional candidates exist at d=11 and d=13, alongside proposed
+   unbounded-c families at fixed d. Their finite certificates and partial
+   matching results do not establish the full microscopic CFT conclusions.
 2. At d = 2 there is a candidate counterexample, an explicit nearest-neighbour qubit chain that reads c = 2.00 on open chains up to L = 256, converged in bond dimension, and 1.95 to 1.98 from L = 256 to 512, passing the same test there, with a mechanism and an effective model that give the same answer. What separates it from an established counterexample is a short list of convergence checks, given below, most of them running.
 3. A replacement bound, Σ_a c_a v_a ≤ π M log₂ d, holds in every solvable family and is proved in several classes.
 
-## The conjecture is false at large d
+## Conditional large-d constructions
 
-1. Unbounded c at fixed local dimension d₀ = 4464, with c = n + 1 for every n (C39, C42, C44, C45). All finite inputs are proved and refereed. The one remaining input is the Wilsonian step from the microscopic chain to its Luttinger liquid, of the same kind as large-U Hubbard to Heisenberg.
-2. The smallest counterexamples are explicit bonds at d = 11 (frozen cells, c = 11) and d = 13 (mobile cells, c = 14), written out in [contrib/small_d_note/](contrib/small_d_note/note.pdf). Both have certified finite members and are refereed and red-teamed. They rest on the same infrared inputs as the d = 24 candidate of a Salvatore D. Pace (GitHub: salpace), whose [independent audit](contrib/counterexample_push_20261109/README.md) leaves the model-specific hypotheses of the d = 13 bond in place as hypotheses.
+1. Proposed unbounded c at fixed local dimension d₀=4464, with predicted
+   c=n+1 for every n (C39, C42, C44, C45). The finite inputs are reported
+   as proved and refereed. The microscopic-to-Luttinger-liquid conclusion
+   remains conditional on the stated Wilsonian input.
+2. Small-alphabet candidates with certified finite members include d=11
+   (frozen cells, predicted c=11) and d=13 (mobile cells, predicted c=14),
+   written out in [contrib/small_d_note/](contrib/small_d_note/note.pdf).
+   Their finite ingredients have AI referee checks, including a red-team
+   review of d=13. They retain the stated infrared inputs; the
+   [independent audit](contrib/counterexample_push_20261109/README.md)
+   leaves the d=13 model-specific hypotheses open. A
+   [d=12 mobile proposal](contrib/mobile_below_13/README.md) has additional
+   heuristic dynamical steps and is not an established smaller counterexample.
 3. Numerics agree. The logical vacancy model gives c = 2.0, 2.9 ± 0.1 and 3.98 ± 0.05 at n = 1, 2, 3, and the projected d₀ = 4464 chain gives c = 3.00 ± 0.02 at n = 2.
 
 Not established: a rigorous lattice-to-CFT theorem for any counterexample.
+
+**New priority (2026-11-17):** Minimize physical on-site dimension while
+also tracking term counts, coefficient hierarchy and strength of evidence.
+A collaborator's reported d=10 arbitrary-c example has not yet been
+identified. The known d=10 demonstrator and two-flavour toy do not prove
+that claim. The active round audits <=10-state mechanisms and transfer
+to the existing eleven-state alphabet, before further d=20/22-specific
+work. A finite n=11 or n=13 band certificate must not be promoted to an
+all-n result. See the [source ledger and assignments](contrib/research_coordination_20261116/SMALLEST_D_FOLLOWUP_20261117.md).
 
 ## d = 2: a candidate counterexample with c = 2
 

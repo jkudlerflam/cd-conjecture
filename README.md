@@ -73,6 +73,16 @@ These are spelled out in [CONTRIBUTING.md](CONTRIBUTING.md). In brief, tag every
 
 ## Where things stand
 
+**Smaller-d priority and source audit (2026-11-17):** The reported d=10
+unbounded-c construction has not yet been located; the identified d=10
+models are one- or two-flavour demonstrations, not arbitrary-c families.
+Existing smaller candidates include d=11 frozen and d=13 mobile bonds
+with certified finite members, and a d=12 mobile proposal with additional
+heuristic dynamics. These are distinct from the recent d=20/22 all-n
+program. The new round prioritizes <=10-state mechanisms and transfer
+to the smallest concrete alphabet while preserving all CFT assumptions.
+See the [source ledger and active assignments](contrib/research_coordination_20261116/SMALLEST_D_FOLLOWUP_20261117.md).
+
 **V=4 size-scaling follow-up (2026-11-17):** The
 [bulk-phase and entropy study](contrib/v4_bulk_diagnosis_20261117/README.md)
 reaches L=144 in both parities and reproduces the L=96 state independently.
@@ -250,11 +260,17 @@ remains open. See [current status](STATUS.md) and the [ground-sector
 selection audit](contrib/d2_status_audit_20261110/README.md). The transverse-DM
 points previously tested read near c=1.
 
-**Conclusion (2026-10-29, updated 2026-10-30), at the theoretical-physics standard: the c–d conjecture is false.** Explicit chains have c = 14 at d = 13 and c unbounded at fixed d = 4464, conditional only on standard Wilsonian RG input whose main pieces are now proved; the natural replacement, Σ_a c_a v_a ≤ π M log₂ d, survives every test, is proved for free fermions (A ≤ 2M) and for every solvable family, and is open in general. See the conclusion at the top of [STATUS.md](STATUS.md).
+**Conditional large-d constructions (scope clarified 2026-11-17).** Explicit
+chains predict c=14 at d=13 and unbounded c at fixed d=4464, subject to
+their stated matching, sector-selection and infrared inputs. The finite
+certificates do not by themselves establish those microscopic CFTs.
+The proposed replacement, Σ_a c_a v_a ≤ π M log₂ d, survives the recorded
+tests and is proved in the stated classes, but remains open in general.
+See [STATUS.md](STATUS.md) and each construction's hypothesis ledger.
 
 A d=24 conditional counterexample candidate is recorded with independent AI reviews and a [fresh adversarial audit](contrib/counterexample_audit_20261028/README.md). The earlier verified-counterexample wording is withdrawn: finite-J matching and a uniform dressed-defect comparison remain open. The working standard is theoretical physics (standard RG, controlled perturbation theory, calibrated numerics), not mathematical rigor.
 
-- **Smallest candidates (2026-10-29): d = 11 frozen with predicted c = 11, and d = 13 mobile with predicted c = 14.** Explicit route-A bonds with certified finite members, refereed, and red-teamed for d = 13; both rest on the same inherited infrared inputs as the d = 24 candidate. Full bonds and status in [contrib/small_d_note/](contrib/small_d_note/note.pdf) and STATUS.md. The logical vacancy model gives calibrated c = 2, 2.9 ± 0.1 and 3.98 ± 0.05 at n = 1, 2, 3 (REPORT §9.34, §9.55, §9.67).
+- **Small-alphabet candidates with finite certificates (2026-10-29): d = 11 frozen with predicted c = 11, and d = 13 mobile with predicted c = 14.** Explicit route-A bonds with certified finite members, refereed, and red-teamed for d = 13; both rest on the same inherited infrared inputs as the d = 24 candidate. Full bonds and status in [contrib/small_d_note/](contrib/small_d_note/note.pdf) and STATUS.md. The logical vacancy model gives calibrated c = 2, 2.9 ± 0.1 and 3.98 ± 0.05 at n = 1, 2, 3 (REPORT §9.34, §9.55, §9.67). The smaller d=12 mobile proposal is separately recorded with additional heuristic dynamics.
 
 - **Unbounded c at fixed d0 = 4464 (the C39/C44/C45 wrapper).** c = n + 1 for every n, conditional on the Wilsonian input S. Several pieces of S are now proved and refereed (massive matching C48, ensemble transfer C58, c from a Gaussian limit C51); the open core is the constructive RG (Lemma N and lemma TP). The full microscopic demonstrator flows to its matched XXZ Luttinger liquid numerically (REPORT §9.58). Expert summary: [contrib/expert_note/note.pdf](contrib/expert_note/note.pdf).
 

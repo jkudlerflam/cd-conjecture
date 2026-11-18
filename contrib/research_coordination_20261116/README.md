@@ -6,6 +6,11 @@ their newly proposed sixth-order qubit models. No human review is claimed.
 
 ## Reviewed checkpoint and assigned follow-ups
 
+The [smaller-d fourth-round plan](SMALLEST_D_FOLLOWUP_20261117.md) records
+the user's new priority, the source audit of the reported d=10 family,
+and the active tasks on qubits, <=10-state mechanisms and the existing
+eleven-state construction. The d=10 arbitrary-c claim is not yet located.
+
 The [third-round results](ROUND3_RESULTS_20261117.md) summarize the latest
 completed work on the V=4 bulk phase, the two-term zero-field qubit line,
 and mobile length selection. The [review and assignments](LATEST_REVIEW_20261117.md)

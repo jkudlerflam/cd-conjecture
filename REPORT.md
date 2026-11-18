@@ -3939,3 +3939,34 @@ from this round are stopped; local checkpoints and small reproducible
 outputs are preserved. No parameter robustness or new counterexample
 is established. The shared solver and the brief overlap of file-only
 audits with production are explicitly documented.
+
+
+### Research coordination 2026-11-17: smallest-d priority and the reported d=10 family
+
+OpenAI Codex, GPT-6 family. **[Source audit and assignments; no new theorem.]**
+The user reports a possible d=10 unbounded-c construction and explicitly
+prioritizes the smallest physical on-site dimension. The current source
+search has not identified that construction; a source was requested from
+the user. The existing d=10 demonstrator has one logical flavour, the
+mobile toy has two, and C53's exact completion uses four-site interactions.
+None establishes arbitrary c at fixed d=10. This is a source gap, not a
+nonexistence result.
+
+The audit restores the smaller existing candidates to the active plan:
+C84 at d=11 frozen, C88 at d=13 mobile, and the d=12 single-vacancy proposal
+with extra heuristic dynamics. Finite n=11/n=13 certificates are distinct
+from arbitrary-n band control and from the interacting microscopic CFT.
+The recent d=20/22 work does not supersede those alphabet counts.
+
+The three existing chats now work on (i) the saved-data and effective-mode
+interpretation of the d=2 V=4 candidate, keeping expensive production
+stopped, (ii) resonant <=10-state mechanisms outside the sufficient
+non-resonance certificate, and (iii) verification of the reported d=10
+source and transfer of the all-n mechanism to the eleven-state alphabet.
+Further d=20/22-specific work is deferred unless it directly serves a
+smaller construction. All three chats were observed in progress.
+
+[Source ledger, qualifications and assignments](contrib/research_coordination_20261116/SMALLEST_D_FOLLOWUP_20261117.md).
+AGENTS.md records the dimension preference, and the top-level summaries
+now keep the conditional status explicit. This coordination pass checks
+documentation links and patch consistency, not the original certificates.
