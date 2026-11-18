@@ -202,6 +202,19 @@ Relevant sources: `contrib/markerless_d9_d10/README.md`, `REFEREE.md`
 
 ## Dispatch record
 
-The coordinator will record the four returned chat IDs and observed startup
-states here after creation. The requested configuration is GPT-6 Astra Max
-for all four chats; it must not be silently replaced by another model.
+All four creation calls succeeded with model `gpt-6-astra` and reasoning
+`max`. A compact progress check observed every chat active with its first
+research turn in progress. The sidebar titles below are recorded as returned
+by the app, including its shortened titles. Startup is not completion.
+
+| Assignment | Sidebar chat title | Chat ID | Observed state |
+| --- | --- | --- | --- |
+| 1 | Stabilize two modes in a qubit chain | `01a1ef70-d7d6-71f1-9d56-05c96f7513d9` | Active; distinguishing a computable interacting amplitude from its continuum interpretation |
+| 2 | Find a qubit route beyond c=2 | `01a1ef71-2c80-74b1-9b8e-4a1ed526b266` | Active; classifying physical normal controls and their lower-order constraints |
+| 3 | Extend markerless bands to arbitrary… | `01a1ef71-7c28-7d71-8156-6188bfdc3250` | Active; tracing the literal carrier and available controls |
+| 4 | Control the ten-state mobile ground… | `01a1ef71-ce96-7703-aa33-1337b9d16956` | Active; reading the corrected bond and ground-sector comparisons |
+
+All run locally in the existing c-d conjecture project. No additional
+chat or subagent was created. The first two pursue distinct qubit mechanisms;
+the latter two separate arbitrary-n kinematics from mobile ground-sector
+control. The coordinator confirmed startup, not a new CFT result.

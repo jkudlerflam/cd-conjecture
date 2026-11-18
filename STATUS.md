@@ -7,6 +7,14 @@ earlier long version. The standard is theoretical physics, and nothing has
 had independent human review. Conditional infrared predictions are not
 established microscopic counterexamples.
 
+**Current research priority (2026-11-18):** Large c at microscopic d=2
+and unbounded c at fixed small d. Four new GPT-6 Astra Max chats are active
+on simple two-mode qubit stability, physical three-mode deformations,
+arbitrary-n markerless bands, and ground-sector control of the corrected
+d=10 mobile model. The [assignments and dispatch record](contrib/research_coordination_20261116/FOCUSED_ROUND_20261118.md)
+state concrete first calculations. These are ongoing tasks, not new results;
+the earlier battery-saving stop on long qubit production remains in force.
+
 Latorre and Sierra ([arXiv:2403.17242](https://arxiv.org/abs/2403.17242)) conjecture c ≤ d − 1 for translation-invariant nearest-neighbour chains on (ℂ^d)^⊗L whose low-energy spectrum is a unitary CFT.
 
 ## In short
