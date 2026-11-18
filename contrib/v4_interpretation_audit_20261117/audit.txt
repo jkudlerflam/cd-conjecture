@@ -1,0 +1,16 @@
+decomposition {'fixed_odd_completed': 1.9950941060955736, 'change_from_96_parity_selection': np.float64(0.45912864994167674), 'change_from_144_chi_increase': np.float64(0.11266249261399387), 'ground_interrupted': 2.566885248651244, 'residual_above_two_in_fixed_odd': -0.004905893904426417, 'scope': 'Exact finite-record arithmetic, not a causal separation or license to replace the ground state by an excited parity.'}
+residual v4_L48_P0_s1_chi192 3.568308308465636 {'density_cut': 0.869632, 'bond': -0.878724, 'kinetic': -0.948328}
+residual v4_L48_P1_s1_chi192 3.439555409778154 {'density_cut': 0.834387, 'bond': -0.845381, 'kinetic': -0.934425}
+residual reused_L96_P0_chi256 2.704128189644032 {'density_cut': 0.959377, 'bond': -0.962432, 'kinetic': -0.985524}
+residual reused_L96_P1_chi256 3.0150733552321514 {'density_cut': 0.883593, 'bond': -0.883141, 'kinetic': -0.86605}
+residual v4_L144_P0_s1_chi256 2.4842644867687067 {'density_cut': 0.835513, 'bond': -0.832413, 'kinetic': -0.787188}
+residual v4_L144_P1_s1_chi256 2.38399519078032 {'density_cut': 0.980226, 'bond': -0.981646, 'kinetic': -0.992936}
+residual v4_L144_P1_s1_c320_interrupted 2.4521865882942917 {'density_cut': 0.980284}
+momenta reused_L96_P0_chi256 [{'k': -0.1810097329705056, 'k_over_pi': -0.05761718749999998, 'height': 1.2466479735762575}, {'k': -2.9605829206192875, 'k_over_pi': -0.9423828125, 'height': 1.246647973576258}] 0.884765625
+momenta reused_L96_P1_chi256 [{'k': -0.1810097329705056, 'k_over_pi': -0.05761718749999998, 'height': 1.253921790236555}, {'k': -2.9605829206192875, 'k_over_pi': -0.9423828125, 'height': 1.2539217902365551}] 0.884765625
+momenta v4_L144_P0_s1_chi256 [{'k': -0.18407769454627676, 'k_over_pi': -0.058593749999999944, 'height': 1.7311745668744962}, {'k': -2.9575149590435164, 'k_over_pi': -0.9414062500000001, 'height': 1.731174566874497}] 0.8828125000000001
+momenta v4_L144_P1_s1_c320 [{'k': -0.18484468494021966, 'k_over_pi': -0.058837890624999965, 'height': 1.727676941025469}, {'k': -2.9567479686495735, 'k_over_pi': -0.941162109375, 'height': 1.7276769410254704}] 0.8823242187500001
+momenta v4_L144_P1_s1_chi256 [{'k': -0.18484468494021966, 'k_over_pi': -0.058837890624999965, 'height': 1.7275186059970646}, {'k': -2.9567479686495735, 'k_over_pi': -0.941162109375, 'height': 1.727518605997066}] 0.8823242187500001
+momenta v4_L48_P0_s1_chi192 [{'k': -0.14496118445519324, 'k_over_pi': -0.04614257812500005, 'height': 0.7763276692918829}, {'k': -2.9966314691346, 'k_over_pi': -0.953857421875, 'height': 0.7763276692918829}] 0.9077148437499999
+momenta v4_L48_P1_s1_chi192 [{'k': -0.1464951652430786, 'k_over_pi': -0.04663085937499996, 'height': 0.7693638723625916}, {'k': -2.9950974883467145, 'k_over_pi': -0.953369140625, 'height': 0.7693638723625916}] 0.9067382812500001
+seconds 0.5180462499993155

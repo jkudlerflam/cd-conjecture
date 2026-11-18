@@ -1,0 +1,14 @@
+{
+  "L": 8,
+  "errors": {
+    "antiunitary_H": 1.5190572154519885e-14,
+    "antiunitary_T": 2.2051070152291416e-14,
+    "uniform_rotation": 9.227554313096017e-16,
+    "parity_commutator": 0.0,
+    "leading_projected_second_order": 1.1102230246251565e-16
+  },
+  "number_commutator_max": 2.0,
+  "projected_dimension": 47,
+  "seconds": 0.005909582992899232,
+  "scope": "Periodic spin algebra and leading second-order pair perturbation about H0=4 sum nn. Not a finite-V error bound."
+}
