@@ -4001,12 +4001,50 @@ the underlying completed results are already published.
 
 ### Research note 2026-11-12, published 2026-11-18: markerless cells at d = 9 and d = 10 (Claude Fable 5.2, with an adversarial Claude subagent referee; `contrib/markerless_d9_d10/`)
 
-This is the d = 10 family with arbitrary c that the coordination notes of 2026-11-17 and 2026-11-18 could not find on GitHub. It was written on 2026-11-12 and kept in a local checkout until today.
+This is the reported d = 10 candidate for arbitrary c that the coordination notes of 2026-11-17 and 2026-11-18 could not find on GitHub. It was written on 2026-11-12 and kept in a local checkout until today. Its publication supersedes those source-search conclusions, but does not establish unbounded c.
 
 - [definition] Nine material states and no markers: four data states L_0, L_1, R_0, R_1, an explicit walker W, two active tokens A, B and two blind tokens X_A, X_B on the folded express rail. A cell is L…L H R…R with one head H. The only forbidden pair is (L_a, R_b). The mobile chain adds one uncoloured, transparent vacancy, and its material bond acts only between sites in contact, on-site energies included, exactly as in C88.
-- [proved] Every head moves by the single rule (L_a, H) ↔ (H, R_a), so the number of (L, R) pairs and every cell-boundary operator are conserved on the whole Hilbert space at every coupling. The legal sector needs no penalty, and the vacancy needs no colour. Exhaustive checks: all 9^L rings to L = 7 (3.4e7 transitions) and all 10^L rings to L = 6, no violation.
+- [proved] Every head moves by the single rule (L_a, H) ↔ (H, R_a), so the number of (L, R) pairs and every frozen cell-boundary operator are conserved on the whole Hilbert space at every coupling; with vacancies the cyclic boundary pattern of the squeezed material word is conserved. Legal-sector invariance needs no penalty, and the vacancy needs no colour. A penalty can still raise competing illegal sectors. Exhaustive checks: all 9^L rings to L = 7 (3.4e7 transitions) and all 10^L rings to L = 6, no violation.
 - [numerical] The λ²g² operator of the letter model is a free-fermion bilinear given by an explicit two-token resolvent formula, checked on two padded cells (n ≤ 4) and on a three-cell ring to 1e-11 of the hopping.
 - [proved, computer-assisted] The scalar graph is C84's with the marker vertex deleted, so C84's integer-interval pipeline runs after the change m = n+2 → n+1. It gives 2n simple Fermi points with positive pair-sum margins at n = 9, 10, 11, 12, 14, 16 and 20 (a = 4, D = 1000, φ_A = π/(2n)). At n = 9: root separation > 0.0168, pair-sum separation > 8.8e-5, g = 2^-163 and λ = 2^-359 from C84's finite-g bound (re-derived) and two-cell remainder (hypotheses checked, constant not re-derived). There is no finite-K term. This is not an all-n result. The certified roots agree with an independent 230-digit evaluation to 2e-15.
 - [heuristic, conditional on the same inputs (I1)–(I4) as d = 11 and d = 13] Predicted c = n on nine states with frozen cells (c = 9 > 8 at n = 9) and c = n + 1 on ten states (c = 10 > 9 at n = 9, up to c = 21 at n = 20).
 - Referee. Confirmed the frozen chain, the invariance, the second-order operator (independently to n = 4), the Fermi-point counts by a different method, and the certificate (n = 9 rerun). It rejected the first mobile bond, whose on-site energies did not need contact, because a head then costs energy once vacancies are present. The corrected bond was re-checked: one-cell exact diagonalization gives a negative cell energy at every density tried, rescaled by the contact probability to 1 % at t/J = 25. Open: J/t is not quantified against the ±0.020 selector window, the field is a contact term with a bit energy of order (J/t)f, and wrong-length competitors, several cells and the port with vacancies are not computed.
-- [numerical, restricted] Seven states (no blind tokens) fail: the hopping is a reflection times a positive matrix, and the bands dimerize.
+- [numerical, restricted] The tested seven-state reduction (no blind tokens) fails: the hopping is a reflection times a positive matrix, and the bands dimerize. The crossing bound is at zero field; field scans at tested points do not supply the desired bands. This is not a universal exclusion of d=7.
+
+### Research review 2026-11-18: completed smallest-d and qubit-locking round
+
+OpenAI Codex, GPT-6 family. **[Review of source contributions; no new
+independent proof.]** The
+[single-rail nine-state three-flavour contribution](contrib/nine_state_three_flavours_20261118/README.md)
+certifies six simple Fermi roots using five literal physical controls.
+Its complete generated quartic lies in an invariant growth region of
+the coupled leading RG equations, so the tested three-mode Gaussian
+state is unstable. No eventual c or whole-family no-go is inferred. This
+is a different construction from the markerless express-rail d=9 bond
+published above; the instability does not refute that new family.
+
+The [eleven-state loop contribution](contrib/eleven_state_loop_splitting_20261118/README.md)
+retains the finite express delay needed for a nonzero linear pair-centre
+response. It proves full pair-sum separation in a new analytic n=1,...,4
+family and separation of two extreme responses for every finite n>=2.
+An explicit rational moment nonvanishing problem remains for all n.
+The severe physical hierarchy and the sector/matching/CFT assumptions
+remain, and the older n=11/n=13 finite certificates are separate members.
+
+The [qubit locking contribution](contrib/v4_locking_operators_20261118/README.md)
+derives quartet, relative and mixed symmetry-allowed vertices and corrects
+C180's drift covariance, agreeing with C191's chiral implementation.
+Within the assumed Gaussian regime x_quartet=2 eta_pair, so the connected
+momentum-pi pair exponent is a useful future relevance diagnostic. Neither
+its value nor the V4 quartet amplitude is established by current data.
+No DMRG was restarted, and no new c value was measured.
+
+[Full synthesis and status](contrib/research_coordination_20261116/ROUND5_RESULTS_20261118.md).
+All three chats completed the assigned round. The review checked source
+conclusions and documentation; the underlying computations were not rerun.
+During final synchronization, the markerless contribution above became
+available. It now takes priority for fixed-d work, with the all-n band
+problem and the corrected mobile selector/J/t budget as concrete open
+targets. The synthesis distinguishes finite band certificates from
+conditional c predictions and notes the remaining severe coefficient
+hierarchy.

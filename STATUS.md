@@ -11,9 +11,10 @@ Latorre and Sierra ([arXiv:2403.17242](https://arxiv.org/abs/2403.17242)) conjec
 
 ## In short
 
-1. Explicit conditional candidates exist at d=9 (frozen cells, c=n) and
-   d=10 (mobile cells, c=n+1), with 2n simple Fermi points certified at
-   n=9 to 20, alongside the earlier d=11 and d=13 bonds and proposed
+1. Explicit conditional candidates exist at d=9 (frozen cells, predicted
+   c=n) and d=10 (mobile cells, predicted c=n+1), with 2n simple Fermi
+   points certified at n=9,10,11,12,14,16,20, alongside the earlier d=11
+   and d=13 bonds and proposed
    unbounded-c families at fixed d. Their finite certificates and partial
    matching results do not establish the full microscopic CFT conclusions.
 2. At d = 2 there is a candidate counterexample, an explicit nearest-neighbour qubit chain that reads c = 2.00 on open chains up to L = 256, converged in bond dimension, and 1.95 to 1.98 from L = 256 to 512, passing the same test there, with a mechanism and an effective model that give the same answer. What separates it from an established counterexample is a short list of convergence checks, given below, most of them running.
@@ -36,8 +37,9 @@ Latorre and Sierra ([arXiv:2403.17242](https://arxiv.org/abs/2403.17242)) conjec
    heuristic dynamical steps and is not an established smaller counterexample.
    The [markerless chains](contrib/markerless_d9_d10/README.md) lower these
    to d=9 frozen and d=10 mobile. Every head moves by one rule, so the legal
-   sector and the cell pattern are exact invariants: no penalty and no
-   vacancy colours. The band data are certified with C84's pipeline at
+   sector and the cell pattern are exact invariants. This removes finite-K
+   leakage and the need for vacancy colours; a penalty can still raise
+   competing illegal sectors. The band data are certified with C84's pipeline at
    n=9, 10, 11, 12, 14, 16 and 20 (predicted c up to 21 at d=10), not for
    all n. An AI referee confirmed the frozen chain and the certificate and
    re-checked the corrected mobile bond. The same infrared inputs apply,
@@ -46,31 +48,43 @@ Latorre and Sierra ([arXiv:2403.17242](https://arxiv.org/abs/2403.17242)) conjec
 
 Not established: a rigorous lattice-to-CFT theorem for any counterexample.
 
-**New priority (2026-11-17):** Minimize physical on-site dimension while
+**Priority set on 2026-11-17:** Minimize physical on-site dimension while
 also tracking term counts, coefficient hierarchy and strength of evidence.
-A collaborator's reported d=10 arbitrary-c example has not yet been
-identified. The known d=10 demonstrator and two-flavour toy do not prove
-that claim. The active round audits <=10-state mechanisms and transfer
+A collaborator's reported d=10 arbitrary-c example had not yet been
+identified then; the publication below resolves that source search.
+The known d=10 demonstrator and two-flavour toy did not prove that claim.
+That round audited <=10-state mechanisms and transfer
 to the existing eleven-state alphabet, before further d=20/22-specific
 work. A finite n=11 or n=13 band certificate must not be promoted to an
 all-n result. See the [source ledger and assignments](contrib/research_coordination_20261116/SMALLEST_D_FOLLOWUP_20261117.md).
 
-**Follow-up (2026-11-18):** Live GitHub issues, comments, both branches and
-targeted history searches have not located the reported d=10 arbitrary-c
-model. New results give a nine-state two-flavour resonant seed and an
+**Earlier follow-up (2026-11-18, before publication below):** Live GitHub
+issues, comments, both branches and targeted history searches had not
+located the reported d=10 arbitrary-c model. Results gave a separate
+single-rail nine-state two-flavour resonant seed and an
 eleven-state all-n clock/zero-port-selector/simple-tree reduction; neither
 establishes arbitrary-c physics. The next calculations test three flavours
 in the nine-state seed and all-n loop splitting in the eleven-state model.
 The qubit chat studies symmetry-allowed locking operators while production
 remains stopped. [Audit and scope](contrib/research_coordination_20261116/GITHUB_D10_AUDIT_20261118.md).
 
-**Located (2026-11-18):** The reported d=10 arbitrary-c family is
+**Located (2026-11-18):** The reported d=10 candidate family is
 [contrib/markerless_d9_d10/](contrib/markerless_d9_d10/README.md), written
 on 2026-11-12 and kept in a local checkout until today. Nine material
-states without markers give c=n with frozen cells; one uncoloured vacancy
-gives c=n+1 at d=10. Its status is that of the d=11 and d=13 bonds:
-certified band data at the listed n, conditional infrared step. See REPORT
-for the referee outcome.
+states without markers have predicted c=n with frozen cells; one
+uncoloured vacancy gives predicted c=n+1 at d=10. Its status is that of
+the d=11 and d=13 bonds: certified logical band data at the listed n,
+conditional infrared step, and no all-n theorem. This is now the primary
+fixed-d candidate. The mobile J/t budget and multi-cell competition
+remain open. See REPORT for the referee outcome.
+
+**That earlier round is now complete:** The tested single-rail nine-state three-flavour point
+has the desired bands but a coupled leading RG instability. The eleven-state
+loop has analytically separated pair sums for a new n<=4 family; its all-n
+moment condition remains open. The qubit analysis allows quartet and mixed
+locking and corrects the drift covariance used in C180; C191's chiral
+implementation agrees with the correction. No c value was established and
+no DMRG was restarted. [Results and qualifications](contrib/research_coordination_20261116/ROUND5_RESULTS_20261118.md).
 
 ## d = 2: a candidate counterexample with c = 2
 
@@ -127,7 +141,9 @@ At d = 3 to 7, nothing above d − 1 in symmetric families. A Casimir-type bound
 
 1. An independent reproduction of the d = 2 candidate. The Hamiltonian above, any DMRG code, L = 128 and 256 at bond dimension 768 or more.
 2. Constructive RG for the Wilsonian step behind the large-d counterexamples.
-3. Independent review of the d = 11 and d = 13 bonds.
+3. Independent review of the markerless d = 9 and d = 10 bonds, especially
+   the corrected mobile selector, its quantitative J/t budget and all-n
+   band separation.
 4. A general proof of the replacement bound, or its d = 2 strip.
 
 All of this was produced with AI assistance (Claude Opus 5.5 and Claude Fable 5 coordinating, with gpt-6-astra runs).

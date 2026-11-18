@@ -6,15 +6,23 @@ their newly proposed sixth-order qubit models. No human review is claimed.
 
 ## Reviewed checkpoint and assigned follow-ups
 
+The [latest completed results](ROUND5_RESULTS_20261118.md) include the
+newly published markerless d=9/d=10 family, the separate single-rail
+nine-state three-flavour instability, the eleven-state analytic loop
+splitting, and the corrected qubit locking criteria. All three chats
+completed that round; no new production run is implied by this summary.
+
 The [2026-11-18 GitHub source check](GITHUB_D10_AUDIT_20261118.md) records
 the expanded search following the user's clarification, the new nine- and
-eleven-state results, and their next calculations. The reported d=10
-arbitrary-c source remains unidentified.
+eleven-state results, and their next calculations. The d=10 source was
+unidentified at that checkpoint; publication of
+[the markerless family](../markerless_d9_d10/README.md) later that day
+supersedes that source-search result.
 
 The [smaller-d fourth-round plan](SMALLEST_D_FOLLOWUP_20261117.md) records
 the user's new priority, the source audit of the reported d=10 family,
 and the active tasks on qubits, <=10-state mechanisms and the existing
-eleven-state construction. The d=10 arbitrary-c claim is not yet located.
+eleven-state construction before the markerless source was published.
 
 The [third-round results](ROUND3_RESULTS_20261117.md) summarize the latest
 completed work on the V=4 bulk phase, the two-term zero-field qubit line,

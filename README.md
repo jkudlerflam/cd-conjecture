@@ -73,17 +73,31 @@ These are spelled out in [CONTRIBUTING.md](CONTRIBUTING.md). In brief, tag every
 
 ## Where things stand
 
-**Ten-state family located (2026-11-18):** The d=10 arbitrary-c
-construction is [contrib/markerless_d9_d10/](contrib/markerless_d9_d10/README.md),
+**Ten-state family located (2026-11-18):** The reported d=10 candidate
+family is [contrib/markerless_d9_d10/](contrib/markerless_d9_d10/README.md),
 dated 2026-11-12 and published today. It removes the marker letters of the
-d=11 and d=13 bonds: nine material states give c=n on frozen cells, and one
-uncoloured vacancy gives c=n+1 at d=10. The legal sector is an exact
-invariant, and 2n simple Fermi points are certified at n=9 to 20. The
-infrared step is the same conditional input as before. An AI referee
-report is in the folder.
+d=11 and d=13 bonds: the predictions are c=n on nine-state frozen cells
+and c=n+1 after adding one uncoloured vacancy, at d=10. The legal sector
+is exactly invariant, eliminating finite-K leakage. Logical band data
+are certified at n=9,10,11,12,14,16,20, not for all n. The infrared step
+remains conditional, and the corrected mobile bond still needs a
+quantitative J/t budget and multi-cell sector checks. This is now the
+priority fixed-d family. An AI referee report is in the folder.
 
-**Smallest-d continuation (2026-11-18):** Direct GitHub branch, issue,
-comment and history checks still identify no d=10 arbitrary-c source.
+**Latest completed round (2026-11-18):** The separate single-rail nine-state three-flavour
+bond has six certified simple Fermi roots, but its generated interactions
+destabilize the tested three-mode Gaussian state in the coupled leading
+RG flow. The eleven-state loop gives full pair-sum separation for a new
+analytic n=1,...,4 family and an explicit remaining all-n nonvanishing
+criterion, without adding states. The qubit audit permits quartet and
+mixed locking, corrects C180's drift covariance, and identifies the
+momentum-pi pair exponent as a useful future diagnostic. No microscopic
+central charge or unbounded-c theorem follows. See the
+[completed-round summary](contrib/research_coordination_20261116/ROUND5_RESULTS_20261118.md).
+
+**Earlier source audit (2026-11-18, before publication above):** Direct
+GitHub branch, issue, comment and history checks found no d=10 arbitrary-c
+source then; that source search is now superseded.
 New work supplies a literal nine-state two-flavour resonant seed with a
 favorable leading RG flow, and transfers clock, zero-port selector and
 simple-band arguments to eleven states for arbitrary finite n. The first
@@ -93,9 +107,10 @@ establishes a microscopic CFT or unbounded c. The new tasks address those
 gaps, plus qubit mode-locking criteria without restarting DMRG. See the
 [source check and follow-ups](contrib/research_coordination_20261116/GITHUB_D10_AUDIT_20261118.md).
 
-**Smaller-d priority and source audit (2026-11-17):** The reported d=10
-unbounded-c construction has not yet been located; the identified d=10
-models are one- or two-flavour demonstrations, not arbitrary-c families.
+**Smaller-d priority and source audit (2026-11-17, historical):** The
+reported d=10 unbounded-c construction had not yet been located; the d=10
+models identified then were one- or two-flavour demonstrations. The
+markerless contribution above supersedes this source-search conclusion.
 Existing smaller candidates include d=11 frozen and d=13 mobile bonds
 with certified finite members, and a d=12 mobile proposal with additional
 heuristic dynamics. These are distinct from the recent d=20/22 all-n
