@@ -181,12 +181,14 @@ z^2=-\frac{v^\dagger T^\dagger v}{v^\dagger Tv}=-e^{-2i\theta}\,\frac{\sigma-i\e
 \end{equation}
 so $|z|=1$. All $2n$ zeros lie on the unit circle, for any positive $S$, however unequal its eigenvalues.
 
-They are very unequal. A boson deep inside a cell is reached only by a kink that has tunnelled far from the edge at a cost $m$, so the eigenvalues of $S$, which set the band widths and Fermi velocities, form a geometric ladder,
+They are very unequal. A boson deep inside a cell is reached only by a kink that has tunnelled far from the edge at a cost $m$, so the eigenvalues of $S$ form a geometric ladder,
 \begin{equation}
-v_a\simeq v_1\,r^{\,a-1},\qquad r\approx10^{-2.74}\approx1/550,
+s_a\simeq s_1\,r^{\,a-1},\qquad r\approx10^{-2.74}\approx1/550,
 \label{eq:ladder}
 \end{equation}
-for $m=4$ and each $n$ of Table~\ref{tab:cases} [Fig.~\ref{fig:cd}(b)]. % data/velocity_ladders.json (fit slopes -2.735 to -2.736)
+for $m=4$ and each $n$ of Table~\ref{tab:cases} [Fig.~\ref{fig:cd}(b)]. % data/velocity_ladders.json holds log10(s_a/s_1), not velocities (fit slopes -2.735 to -2.736)
+
+The Fermi velocities do not follow this ladder. In the frame of Fig.~\ref{fig:bands}(a), where $S$ becomes the identity, every band crosses zero with slope one to within $1\%$. Back on the physical sites, the zero mode at each Fermi point has almost all its weight on the deepest orbitals, the ones with the smallest eigenvalues of $S$, and their small hopping sets its velocity. At $n=9$ the eighteen Fermi velocities all lie between $s_8$ and $s_9$, within a factor $76$ of each other [Fig.~\ref{fig:cd}(b)]. The $n$ sectors of the metal therefore share one velocity scale, of order $s_n$, rather than spreading over the ladder. % codex/work_Cd62b/claude_check/fermi_velocities_n9.py: log10 v from -21.93 to -23.81 (units of hopping_eigenvalues_n9.json), slowest = certificate's log10_min_speed_normalized; whitened slopes 0.989 to 1.003; weight on the two deepest orbitals > 0.99994
 
 At $t_d=0$ the Fermi points come in pairs $k+\theta\leftrightarrow-(k+\theta)$, and two fermions at opposite points of one band can scatter into opposite points of another, which gaps weakly coupled chains~\cite{BalentsFisher,LinBalentsFisher}. The link $t_d$ closes the path of a charged kink into a loop with flux $\pi/2$, breaking time reversal and making the Fermi momenta generic ($T$ becomes real up to a phase, $\mu$ imaginary and, to leading order, proportional to $t_d$). It also lets a kink into its cell from the wrong edge, a mirror-image contribution, so it must stay below the narrowest band. The low-energy theory needs $2n$ distinct Fermi momenta $k_i$ with
 \begin{equation}
@@ -197,12 +199,12 @@ $i=j$ allowed. Table~\ref{tab:cases} lists couplings for which this holds, for $
 
 \begin{table}[t]
 \centering
-\caption{\label{tab:cases}Couplings with $2n$ Fermi points obeying Eq.~\eqref{eq:nonres}: $m=4$, $D=1000$, fluxes as in Sec.~\ref{sec:charge}, $\nu$ at the middle of the window~\eqref{eq:window}, and the values listed. $\delta k$, $\delta K$: lower bounds on the smallest separation of the Fermi momenta and of the pair momenta. Last columns: slowest over fastest velocity, and the scale of Eq.~\eqref{eq:Heff} in units of the kink hopping.}
+\caption{\label{tab:cases}Couplings with $2n$ Fermi points obeying Eq.~\eqref{eq:nonres}: $m=4$, $D=1000$, fluxes as in Sec.~\ref{sec:charge}, $\nu$ at the middle of the window~\eqref{eq:window}, and the values listed. $\delta k$, $\delta K$: lower bounds on the smallest separation of the Fermi momenta and of the pair momenta. Last columns: smallest over largest eigenvalue of $S$ (all Fermi velocities are of order the smallest, Sec.~\ref{sec:metal}), and the scale of Eq.~\eqref{eq:Heff} in units of the kink hopping.}
 \smallskip
 \small
 \begin{tabular}{rcccccccc}
 \toprule
-$n$ & $t_d/\beta$ & $f/\Eu$ & $g$ & $\lambda$ & $\delta k$ & $\delta K$ & $\log_{10}(v_n/v_1)$ & $\log_{10}\Eu$\\
+$n$ & $t_d/\beta$ & $f/\Eu$ & $g$ & $\lambda$ & $\delta k$ & $\delta K$ & $\log_{10}(s_n/s_1)$ & $\log_{10}\Eu$\\
 \midrule
 9 & $2^{-35}$ & $2^{-83}$ & $2^{-163}$ & $2^{-359}$ & 0.01680 & $8.83\times10^{-5}$ & $-21.9$ & $-378$\\
 10 & $2^{-42}$ & $2^{-92}$ & $2^{-177}$ & $2^{-388}$ & 0.01541 & $8.79\times10^{-5}$ & $-24.7$ & $-410$\\
@@ -214,7 +216,7 @@ $n$ & $t_d/\beta$ & $f/\Eu$ & $g$ & $\lambda$ & $\delta k$ & $\delta K$ & $\log_
 \bottomrule
 \end{tabular}
 % t_d/beta = 2^-e, f/E_u = 2^-F: supplement Table S2 / README; g, lambda: certificate/finite_budget_n*.json;
-% delta k, delta K: root_certificate_n*.json (delta2_lower, delta4_lower), truncated; velocities: data/velocity_ladders.json;
+% delta k, delta K: root_certificate_n*.json (delta2_lower, delta4_lower), truncated; s_n/s_1: data/velocity_ladders.json (eigenvalues of S despite the name);
 % log10 E_u = log10(lambda^2 alpha^4 beta^2 g^2), with log10_beta from certificate_n*.json (-30.02 at n=9): -377.99, -410.11, -444.01, -476.70, -540.82, -607.32, -737.21.
 \end{table}
 
@@ -226,7 +228,7 @@ $n$ & $t_d/\beta$ & $f/\Eu$ & $g$ & $\lambda$ & $\delta k$ & $\delta K$ & $\log_
 \end{minipage}\hfill
 \begin{minipage}[t]{0.49\textwidth}
 \includegraphics[width=\linewidth]{figU3.pdf}
-\caption{\label{fig:cd}(a) Predicted $c$ against states per site: $c=n+1$ with ten states (filled), $c=n$ with nine and a pinned lattice (open); gray, $c=d-1$ ($SU(d)_1$ chains). (b) Band velocities at $n=9$, Eq.~\eqref{eq:ladder}.}
+\caption{\label{fig:cd}(a) Predicted $c$ against states per site: $c=n+1$ with ten states (filled), $c=n$ with nine and a pinned lattice (open); gray, $c=d-1$ ($SU(d)_1$ chains). (b) At $n=9$: eigenvalues of $S$ (circles), Eq.~\eqref{eq:ladder}, and the eighteen Fermi velocities (bars, shaded range), both in units of $s_1$.}
 \end{minipage}
 \end{figure}
 
@@ -273,14 +275,14 @@ which exceeds $d-1=9$ for each $n$ of Table~\ref{tab:cases} [Fig.~\ref{fig:cd}(a
 % =============================================================================================
 \section{Counting of states, and the cost}
 
-There is no conflict with the counting of states: the $n$ modes of a cell share the entropy $n\ln2$ of its flat bands, less than $\ln2$ per site, and Eq.~\eqref{eq:entropy} holds only below the smallest velocity. The cost is in the scales (Table~\ref{tab:cases}). At $n=9$ the gapless sector lies at $\Eu\approx10^{-378}$ of the microscopic couplings (times $p$ with holes) and the velocities span a further 22 orders of magnitude, with couplings sufficient for our estimates, not optimized. The steepness of the ladder is set by the kink gap $m$. This is an existence argument, far beyond numerical simulation.
+There is no conflict with the counting of states: the $n$ modes of a cell share the entropy $n\ln2$ of its flat bands, less than $\ln2$ per site, and Eq.~\eqref{eq:entropy} holds only below the smallest velocity. The cost is in the scales (Table~\ref{tab:cases}). At $n=9$ the gapless sector lies at $\Eu\approx10^{-378}$ of the microscopic couplings (times $p$ with holes), and the Fermi velocities lie some 22 to 24 orders of magnitude further down, at the bottom of the ladder~\eqref{eq:ladder}, with couplings sufficient for our estimates, not optimized. The steepness of the ladder is set by the kink gap $m$. This is an existence argument, far beyond numerical simulation.
 
 The central charge is blind to velocities; the Casimir energy and the specific heat are not,
 \begin{equation}
 E_0(L)=e_0L-\frac{\pi}{6L}\sum_ac_av_a,\qquad \frac{C}{L}=\frac{\pi T}{3}\sum_a\frac{c_a}{v_a}.
 \label{eq:casimir}
 \end{equation}
-The Casimir coefficient is dominated by the fastest band and stays of order $v_1$ as $n$ grows. The specific heat is dominated by the slowest band and grows like $1/v_n$, which is the statement that the conformal regime starts only below $T\sim v_n$. Whatever the lattice bounds has to involve the velocities, and the velocity-weighted sum $\sum_ac_av_a$ is the natural candidate.
+With all velocities of order $s_n$, the Casimir coefficient is about $n$ times one very small velocity, and the specific heat about $n$ divided by it. The chain gets its large $c$ by putting all $n$ sectors at one tiny energy scale, not by spreading them over many scales. Whatever the lattice bounds has to involve the velocities, and the velocity-weighted sum $\sum_ac_av_a$ is the natural candidate: here it is far below the microscopic couplings although $c=n$.
 
 % =============================================================================================
 \section{What is assumed and what is open}

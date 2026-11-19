@@ -217,7 +217,7 @@ Other members with 2n simple Fermi points (`data/*.log`):
 
 Two observations about the parameter choice.
 
-- The link strength has to fall by a factor of about 10 to 30 per added flavour. At n = 9, η = 1e-4 loses two Fermi points, and at n = 10 so does η = 3e-6. The eigenvalues of the Hermitian part of the hopping span 11 to 18 orders of magnitude, so the velocities are extremely disparate, as in C84.
+- The link strength has to fall by a factor of about 10 to 30 per added flavour. At n = 9, η = 1e-4 loses two Fermi points, and at n = 10 so does η = 3e-6. The eigenvalues of the Hermitian part of the hopping span 11 to 18 orders of magnitude. This does not make the Fermi velocities disparate. For the certified n = 9 member (D = 1000) all eighteen lie between the two smallest of these eigenvalues, within a factor 76 of each other (REPORT §9.211). The scan members of this table were not checked. `data/velocity_ladders.json` holds these eigenvalues, not velocities.
 - A moderate express gap is better than C84's D = 1000. The root separation scales like 1/D (0.022 at D = 100 against 0.0022 at D = 1000 for n = 8), but D = 20 is too small from n = 8 on, where the Hermitian part stops being positive.
 
 ## Why seven letters fail, and why nine

@@ -149,8 +149,22 @@ fig.savefig(os.path.join(HERE, 'figU2.pdf')); plt.close(fig)
 ns = [9, 10, 11, 12, 14, 16, 20]
 cert = {m: json.load(open(os.path.join(SRC, 'certificate', f'root_certificate_n{m}.json'))) for m in ns}
 assert all(cert[m]['status'] == 'proved_integer_interval_certificate' and cert[m]['root_count'] == 2 * m for m in ns)
-vel = json.load(open(os.path.join(SRC, 'data', 'hopping_eigenvalues_n9.json')))['log10_eigenvalues']
-vel = np.array(vel) - vel[0]
+hop_abs = json.load(open(os.path.join(SRC, 'data', 'hopping_eigenvalues_n9.json')))['log10_eigenvalues']
+hop = np.array(hop_abs) - hop_abs[0]                            # log10(s_a/s_1), eigenvalues of S
+# Fermi velocities at the 18 certified roots, by the formula of certificate/full_loop_integer.py analyze():
+# v = |u^dag h'(k) u| / u^dag W u, W = field 2^field_power (orthonormal site metric in whitened coordinates).
+# Same units as hopping_eigenvalues_n9.json, so subtracting log10 s_1 puts both on one axis.
+Wm = (np.array(field, dtype=complex) * 2.0 ** int(z['field_power'])).real
+Tc, Bc = np.array(T, dtype=complex), np.array(mu + field, dtype=complex)
+vF = []
+for x in roots:
+    w_, U_ = np.linalg.eigh(Bc + Tc * np.exp(1j * x) + Tc.T * np.exp(-1j * x)); u_ = U_[:, np.argmin(abs(w_))]
+    hp = 1j * Tc * np.exp(1j * x) - 1j * Tc.T * np.exp(-1j * x)
+    vF.append(abs(np.vdot(u_, hp @ u_).real) / np.vdot(u_, Wm @ u_).real)
+vF = np.log10(np.array(vF))
+assert abs(vF.min() - bands['log10_min_speed_normalized']) < 1e-6  # same slowest speed as the certificate
+vF = vF - hop_abs[0]                                            # log10(v/s_1)
+assert hop[-1] < vF.min() and vF.max() < hop[-2]                # all between the two smallest eigenvalues of S
 fig, (a, b) = plt.subplots(1, 2, figsize=(W, 1.95), gridspec_kw=dict(wspace=0.5, left=0.12, right=0.985, bottom=0.2, top=0.9))
 dd = np.arange(2, 15)
 a.plot(dd, dd - 1, color=GRAY, lw=1.0)
@@ -167,14 +181,19 @@ a.text(3.0, 20.0, r'$c>d-1$', fontsize=6.4, color=MUTED, ha='left', va='top')
 a.set_xlim(2, 14); a.set_ylim(0, 23); a.set_xticks([2, 6, 10, 14]); a.set_yticks([0, 5, 10, 15, 20])
 a.set_xlabel(r'local dimension $d$', labelpad=1); a.set_ylabel(r'central charge $c$', labelpad=1)
 a.text(-0.3, 1.04, '(a)', transform=a.transAxes, fontsize=8); clean(a)
-aa = np.arange(1, len(vel) + 1)
-slope = np.polyfit(aa, vel, 1)
+aa = np.arange(1, len(hop) + 1)
+slope = np.polyfit(aa, hop, 1)
 b.plot(aa, np.polyval(slope, aa), color=GRAY, lw=0.8, ls=(0, (3, 2)), zorder=1)
-b.plot(aa, vel, 'o', ms=3.6, mfc=AQUA, mec='white', mew=0.5, zorder=3)
-b.text(8.9, -3.0, r'$v_a\propto r^{a}$', fontsize=6.6, color=INK, ha='right')
-b.text(8.9, -6.2, r'$r\simeq10^{%.2f}$' % slope[0], fontsize=6.6, color=INK, ha='right')
-b.set_xlim(0.4, 9.6); b.set_ylim(-24, 1.5); b.set_xticks([1, 3, 5, 7, 9]); b.set_yticks([-20, -15, -10, -5, 0])
-b.set_xlabel(r'band $a$  ($n=9$)', labelpad=1); b.set_ylabel(r'$\log_{10}(v_a/v_1)$', labelpad=1)
+b.plot(aa, hop, 'o', ms=3.6, mfc='white', mec=AQUA, mew=0.9, zorder=3)
+xv = 11.0
+b.axhspan(vF.min(), vF.max(), xmin=0, xmax=1, color=PALE_ORANGE, lw=0, zorder=0)
+b.plot(np.full(len(vF), xv), vF, '_', ms=7, mew=0.9, color=ORANGE, zorder=4)
+b.text(5.2, -3.0, r'$s_a\propto r^{a}$', fontsize=6.6, color=INK, ha='left')
+b.text(5.2, -6.2, r'$r\simeq10^{%.2f}$' % slope[0], fontsize=6.6, color=INK, ha='left')
+b.text(xv - 0.6, vF.max() + 1.2, r'$v_F$', fontsize=6.6, color=ORANGE, ha='center', va='bottom')
+b.set_xlim(0.4, 12.0); b.set_ylim(-24, 1.5); b.set_xticks([1, 3, 5, 7, 9]); b.set_yticks([-20, -15, -10, -5, 0])
+b.set_xlabel(r'$a$  ($n=9$)', labelpad=1); b.set_ylabel(r'$\log_{10}(\,\cdot\,/s_1)$', labelpad=1)
 b.text(-0.36, 1.04, '(b)', transform=b.transAxes, fontsize=8); clean(b)
 fig.savefig(os.path.join(HERE, 'figU3.pdf')); plt.close(fig)
-print('wrote figU1.pdf figU2.pdf figU3.pdf;  velocity ratio per band: 10^%.3f' % slope[0])
+print('wrote figU1.pdf figU2.pdf figU3.pdf;  hopping ratio per level: 10^%.3f;  Fermi velocities: 10^%.2f to 10^%.2f of s_1 (span %.2f decades)'
+      % (slope[0], vF.min(), vF.max(), vF.max() - vF.min()))
