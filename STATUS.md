@@ -192,7 +192,7 @@ Away from this corner no chain with c > 1 was found in about 103,000 sampled cha
 Open here:
 
 1. Generic bonds with no symmetry, and attractive liquids whose U(1)-breaking is as large as the exchange. The symmetric results do not propagate into this region (REPORT §9.127). It includes single-species c > 1 theories such as Z₅ parafermions and three-state Potts order next to a floating liquid (c = 9/5). A structured search for exact maps into the nearest-neighbour class found no c > 1 model (REPORT §9.134).
-2. Two mechanisms for a second gapless sector at strong U(1)-breaking, a staggered Ising transition inside an incommensurate liquid and accidental two-valley soliton onsets. Searches found neither. A numerical example of the first now exists: a parity-only qubit chain whose staggered chirality orders at h_I = 1.7466 inside an incommensurate liquid, reading c = 1.53 to 1.59 against 1.42 to 1.52 for c = 3/2 controls (REPORT §9.208, [contrib](contrib/d2_xy_yx_chirality_imps_20261118/README.md)). The c ≈ 2 readings just below h_I are unresolved.
+2. Two mechanisms for a second gapless sector at strong U(1)-breaking, a staggered Ising transition inside an incommensurate liquid and accidental two-valley soliton onsets. Searches found neither. A candidate related to the first appeared and changed character. In a parity-only qubit chain the staggered chirality orders inside an incommensurate liquid. The region just below that line reads c ≈ 1.9 to 2.0, stable to χ = 256 to 320 at three values of the coupling, like a c = 2 control. That points to an extended c = 2 phase rather than a c = 3/2 point (REPORT §9.208 to §9.209, [contrib](contrib/d2_xy_yx_chirality_imps_20261118/README.md)). It is numerical and not yet asymptotic.
 
 ## A replacement bound
 

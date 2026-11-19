@@ -1,5 +1,24 @@
 # A staggered-chirality Ising transition inside an incommensurate liquid, at d = 2
 
+**Correction, 2026-11-19 (REPORT §9.209).** The c = 3/2 claim below is withdrawn. Cuts at δ = 3/16 and 7/32 show the same structure. Below the chirality line there is a region that reads as the c = 2 control does, not as a disordered Ising side:
+- fitted c = 1.973 ± 0.010 at δ = 3/16, h = 1.783;
+- fitted c = 1.919 ± 0.009 at δ = 1/8, h = 1.7405;
+- the order parameter decays as a stable power of ξ, with an exponent that varies continuously and reaches about 1/8 at the line.
+
+Read as an extended c = 2 phase, it forces c ≥ 2 on the line, so the 1.4 to 1.6 readings at h_I are crossovers. The phase is a wedge that closes between δ = 7/32 and 1/4. At δ = 1/4 there is no chirality phase, only a c = 1 liquid up to the gap at h = 1.836.
+
+Table of the cuts:
+
+| δ | c = 1 liquid to | c ≈ 2 region | κ locks at | gapped from |
+|---|---|---|---|---|
+| 1/8 | 1.738 | 1.739 to h_I | 1.7467 | 1.761 |
+| 3/16 | 1.776 | 1.780 to h_I | 1.7875 | 1.792 |
+| 7/32 | 1.805 | 1.808 to h_I | about 1.8105 | 1.812 |
+| 1/4 | 1.834 | none | none | 1.836 |
+
+The original 2026-11-18 text follows, unchanged.
+
+
 ## Claim
 
 Take the translation-invariant nearest-neighbour qubit chain (d = 2)
