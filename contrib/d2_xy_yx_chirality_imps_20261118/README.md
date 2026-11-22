@@ -1,6 +1,8 @@
 # A staggered-chirality Ising transition inside an incommensurate liquid, at d = 2
 
-**Correction, 2026-11-19 (REPORT §9.209).** The c = 3/2 claim below is withdrawn. Cuts at δ = 3/16 and 7/32 show the same structure. Below the chirality line there is a region that reads as the c = 2 control does, not as a disordered Ising side:
+**Open-chain check, 2026-11-21 (REPORT §9.212).** Finite DMRG on open chains, χ to 1024, L = 96 to 384, with the same model code. The central-window entanglement fit gives c = 1.96 ± 0.08 at δ = 3/16, h = 1.783 and c = 1.90 ± 0.12 at δ = 1/8, h = 1.7405. The same estimator gives 1.00 ± 0.01 at the c = 1 point δ = 3/16, h = 1.772, and 0.99, 1.48 and 1.96 on c = 1, 3/2 and 2 controls with Friedel oscillations. The local slopes scatter by about ±0.5 at the c ≈ 2 points, which looks like the 34-site spiral pitch beating against L. Scripts: `ofd.py` (driver), `otest.py` (ED and free-fermion checks), `ana_obc.py` (estimators), `submit_obc.sh`. Ladders: [tables/open_chain_ladders.txt](tables/open_chain_ladders.txt). In that file, rows whose last χ step changes the window average by more than 2e-2 are not converged and are not used.
+
+**Correction, 2026-11-19 (REPORT §9.209b).** The c = 3/2 claim below is withdrawn. Cuts at δ = 3/16 and 7/32 show the same structure. Below the chirality line there is a region that reads as the c = 2 control does, not as a disordered Ising side:
 - fitted c = 1.973 ± 0.010 at δ = 3/16, h = 1.783;
 - fitted c = 1.919 ± 0.009 at δ = 1/8, h = 1.7405;
 - the order parameter decays as a stable power of ξ, with an exponent that varies continuously and reaches about 1/8 at the line.
