@@ -4315,3 +4315,53 @@ Two consequences, if the identification holds.
 - It bears on open item 5, charge locking. That estimate scales the O₄ coupling as ε² with dimension about 1.25, so from ε = 1/40 to 1/4 it shortens the locking length by roughly 10^2.7, to order ten sites for C₄ of order one, on the symmetric stratum. No sign of locking is seen out to several hundred sites. So either C₄ is much smaller than one, or O₄ is not relevant at this coupling, or the estimate does not carry over to ε = 1/4.
 
 Tests in progress: δ = 1/16 and 3/32, below the tuning point; the pseudospin and charge exponents (η_b, the inter-valley pair exponent, K_c and K_s, with the estimators of §9.161 and §9.182) inside the wedge; and the odd-even energy across the lower edge.
+
+### 9.214 Exponents inside the chirality-chain wedge: K_s ≈ 2 at δ = 3/16 by the C193 estimators, and a one-body exponent that jumps across the lower edge; the δ < 1/8 iMPS cuts failed (Claude Opus 5.5, 2026-11-23; `contrib/d2_xy_yx_chirality_imps_20261118/`)
+
+Scope. These are the first tests of the hypothesis of §9.213, that the wedge is the two-valley liquid at ε = 1/4. The correlators of §9.182 were measured on the stored χ = 1024 open-chain states of §9.212 with `scripts/meas_obc.py`: the boson one-body function, the connected inter-valley pair function at separations 2 and 3, and the connected density correlator, with particles = down spins. The code matches dense vectors at L = 10 to 2.4e-14. The C193 estimators (`codex/work_C193/ckpt_meas/ana193.py` with `frozen.json`) were run unchanged. Tables are in `tables/correlators_odd_even.txt`.
+
+[numerical] Exponents. Columns give η_b, the pair exponent at separation 3, the structure-factor K_c, and K_s = 1/(4η_b − pair exponent). Errors are the estimator's own.
+
+| point | n (mid-chain) | L | η_b | pair exponent | K_c (structure factor) | K_s (pair) |
+|---|---|---|---|---|---|---|
+| δ = 3/16, h = 1.783 (wedge) | 0.33 | 192 | 0.364(8) | 0.89(2) | 0.60 | 1.77(12) |
+| | | 256 | 0.362(14) | 0.91(2) | 0.58 | 1.87(21) |
+| | | 384 | 0.357(10) | 0.92(2) | 0.68 | 1.97(18) |
+| δ = 1/8, h = 1.7405 (wedge) | 0.39 | 256 | 0.35(9) | 0.96(12) | 0.51 | 2.3(1.9) |
+| | | 384 | 0.358(25) | 1.21(18) | 0.54 | 4.4(4.0) |
+| δ = 3/16, h = 1.772 (c = 1, below the lower edge) | 0.40 | 256 | 1.95(1) | 1.12(13) | 0.21 | — |
+| | | 384 | 1.90(1) | 1.17(11) | 0.25 | — |
+| STATUS candidate, §9.182, L = 256 | 0.19 | 256 | 0.28 to 0.30 | 0.63 to 0.64 | 1.70 to 1.73 | 1.84 to 2.05 |
+
+At δ = 3/16, η_b is flat to 0.01 over L = 192 to 384, and K_s from the pair estimate is 1.8 to 2.0, rising slightly with L rather than falling. That lies in the same band as the candidate. The pseudospin backscattering then has dimension 2K_s ≈ 4 and is irrelevant, which is the stability reading of §9.161 and §9.182 carried to ε = 1/4. The charge sector is not the candidate's. The pair exponent is 0.9 rather than 0.63, so 1/K_c ≈ 1.1 at a density about 1.7 times higher. The structure-factor K_c (0.6 to 0.7, still drifting up) disagrees with the pair estimate. In §9.182 the same estimator was still moving at L = 256, so the structure-factor number is not used here. At δ = 1/8, η_b agrees with δ = 3/16, but the pair exponent is not stable in L, so K_s is undetermined there. The end effect on η_b found in §9.182 is not corrected here, so these K_s carry the same systematic error.
+
+[numerical] Across the lower edge. At the c = 1 point η_b jumps from 0.36 to about 1.9, while the pair function still decays slowly, with exponent about 1.1. The direct envelope of |⟨S⁻_i S⁺_j⟩| on centred pairs at L = 384 (`scripts/envelope.py`):
+- At the c = 1 point it falls by a factor of 3.9 to 4.0 per doubling of r from r = 16 to 160. That is a power law near r^(−2), with no sign of an exponential.
+- Inside the wedge it falls by about 1.2 per doubling.
+
+So below the edge single bosons are strongly suppressed relative to pairs, as pair binding would give. But the one-body decay there is algebraic over the range seen, not exponential.
+
+[numerical] Odd–even energies. Both parity sectors were run at L = 64, 96, 128 and 192, χ = 512, with χ changes below 2e-6 (table in the same file). dE is E(odd) − E(even).
+
+Inside the wedge:
+- At δ = 1/8, h = 1.7405 and 1.744, and at δ = 3/16, h = 1.783, |dE| ≤ 5e-4 and |L dE| ≤ 0.044 at every size.
+- The two sectors are nearly degenerate, with no gap growing like L.
+
+Below the edge at δ = 1/8:
+- At h = 1.737, dE is positive and nearly constant: 2.9, 2.4, 2.2 and 2.05 × 10⁻³. So L dE grows from 0.18 to 0.39.
+- At h = 1.734, dE is 7.5, 6.9 and 6.7 × 10⁻³ at L = 64 to 128.
+
+That is a finite odd–even splitting that opens at the lower edge and grows away from it. But the sign is not fixed:
+- At δ = 1/8, h = 1.734, L = 192 gives −2.05 × 10⁻³.
+- At δ = 3/16, h = 1.774, the sign alternates with L at nearly constant magnitude (−9.0, +8.1, −5.1, +8.1 × 10⁻³).
+
+A bulk pair gap would always favour the even sector. So on these open chains the splitting may be an energy bound to the ends that depends on how the incommensurate density meets the boundary, not a bulk single-particle gap. The open-chain test does not settle pair binding.
+
+[numerical] Below the tuning point.
+- The iMPS cuts at δ = 1/16 (h = 1.680 to 1.730) and δ = 3/32 (h = 1.705 to 1.745) failed. Four runs stopped on a TeNPy division by zero.
+- Most of the rest converged, from χ = 48 on, to the reversed polarised state, at E ≈ 1 + h ≈ +2.7 per site, against −1.00 for the true ground state. That is not a variational outcome and the runs were stopped.
+- The three δ = 3/32 runs that stayed on the ground branch, h = 1.735, 1.740 and 1.745, are in the chirality-locked phase. There m = 0.09 to 0.12 and c fits 1.1 to 1.2. Even so, the h = 1.745 run fell to the reversed state at χ = 200.
+- So at δ = 3/32 the locked phase reaches at least h = 1.735, and any wedge must lie lower.
+- Open-chain replacements (finite DMRG, L = 64 and 128, χ to 256, h step 0.005 over the same ranges) are submitted. They are listed at the end of `scripts/submit_obc.sh`.
+
+Reading. Inside the wedge at δ = 3/16, the two-valley reading passes its first quantitative test. K_s ≈ 2 is measured with the estimators that were calibrated on the candidate, and is stable to L = 384, while the charge exponent differs from the candidate's, as a density of 0.33 against 0.19 leads one to expect. Two signs point to pair binding at the lower edge, a jump of η_b to about 2 and an odd–even splitting that opens there. Neither is clean: the one-body decay stays algebraic, and the open-chain splitting changes sign with L. A test without ends is needed, the odd-sector correlation length or the parity gap on the infinite chain. Whether the wedge continues below δ = 1/8 is still open.

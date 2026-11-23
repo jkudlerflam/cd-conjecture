@@ -25,3 +25,9 @@ for pt in "T1 model=target d=0.1875 h=1.783" "T2 model=target d=0.125 h=1.7405";
 done
 sub oC2_x1 runob.sbatch model=ctrl tA=1 hA=0.3 tB=1 J=0 g=0.3 L=96,128 $X
 sub oC2_x2 runob.sbatch model=ctrl tA=1 hA=0.3 tB=1 J=0 g=0.3 L=192 $X
+# --- 2026-11-23: odd-even energies across the lower edge of the wedge
+for h in 1.734 1.737 1.7405 1.744; do for p in 0 1; do sub oP${p}_8_$h runo.sbatch model=target d=0.125 h=$h par=$p L=64,96,128,192 chis=64,128,256,512; done; done
+for h in 1.774 1.778 1.783; do for p in 0 1; do sub oP${p}_3_$h runo.sbatch model=target d=0.1875 h=$h par=$p L=64,96,128,192 chis=64,128,256,512; done; done
+# 2026-11-23b: open-chain replacement for the failed D1_/D2_ iMPS scans (iDMRG fell into the reversed state)
+for h in 1.680 1.685 1.690 1.695 1.700 1.705 1.710 1.715 1.720 1.725 1.730; do sub oD1_$h runo.sbatch model=target d=0.0625 h=$h par=0 L=64,128 chis=64,128,256; done
+for h in 1.705 1.710 1.715 1.720 1.725 1.730 1.735 1.740; do sub oD2_$h runo.sbatch model=target d=0.09375 h=$h par=0 L=64,128 chis=64,128,256; done

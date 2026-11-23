@@ -1,0 +1,22 @@
+# C193 frozen estimators (codex/work_C193/ckpt_meas/ana193.py, frozen.json, unchanged) on open-chain states, 2026-11-23
+# T1 = d 3/16 h 1.783, T2 = d 1/8 h 1.7405 (both in the c~2 wedge), h 1.772 at d 3/16 = c=1 point below the lower edge
+tg_d0.18750_h1.78300_rot_L128_p0_chi1024: E=-133.564501760 nmid=0.3361 eta_b=0.3213(0.0188) pair3=0.8795(0.0912) pair2=0.5852 Kc=0.447(0.067) Ks_pair=2.465(0.719) Ks_sf=-1.052(0.379) check dE=0.0e+00 dS6=0.0e+00 dGb=0.0e+00
+tg_d0.18750_h1.78300_rot_L192_p0_chi1024: E=-199.992894444 nmid=0.3314 eta_b=0.3640(0.0081) pair3=0.8909(0.0228) pair2=1.0247 Kc=0.599(0.039) Ks_pair=1.770(0.124) Ks_sf=-4.689(2.510) check dE=0.0e+00 dS6=0.0e+00 dGb=0.0e+00
+tg_d0.18750_h1.78300_rot_L256_p0_chi1024: E=-266.417714562 nmid=0.3380 eta_b=0.3621(0.0142) pair3=0.9140(0.0199) pair2=0.9415 Kc=0.580(0.026) Ks_pair=1.871(0.210) Ks_sf=-3.646(1.286) check dE=0.0e+00 dS6=0.0e+00 dGb=0.0e+00
+tg_d0.18750_h1.78300_rot_L384_p0_chi1024: E=-399.269768523 nmid=0.3339 eta_b=0.3569(0.0100) pair3=0.9193(0.0225) pair2=0.9972 Kc=0.675(0.027) Ks_pair=1.967(0.177) Ks_sf=-18.799(25.259) check dE=0.0e+00 dS6=0.0e+00 dGb=0.0e+00
+tg_d0.18750_h1.78300_rot_L96_p0_chi1024: E=-100.353859834 nmid=0.3375 eta_b=0.3722(0.0330) pair3=0.9495(0.1454) pair2=1.1418 Kc=0.304(0.058) Ks_pair=1.854(0.675) Ks_sf=-0.556(0.198) check dE=0.0e+00 dS6=0.0e+00 dGb=0.0e+00
+tg_d0.12500_h1.74050_rot_L128_p0_chi1024: E=-130.034692219 nmid=0.3913 eta_b=0.2802(0.0117) pair3=1.3680(0.3173) pair2=1.3091 Kc=0.083(0.080) Ks_pair=-4.044(5.245) Ks_sf=-0.092(0.097) check dE=0.0e+00 dS6=0.0e+00 dGb=0.0e+00
+tg_d0.12500_h1.74050_rot_L192_p0_chi1024: E=-194.692109291 nmid=0.3859 eta_b=0.4115(0.0542) pair3=0.8502(0.3510) pair2=1.2267 Kc=0.433(0.061) Ks_pair=1.256(0.651) Ks_sf=-1.512(0.893) check dE=0.0e+00 dS6=0.0e+00 dGb=0.0e+00
+tg_d0.12500_h1.74050_rot_L256_p0_chi1024: E=-259.349453438 nmid=0.3889 eta_b=0.3502(0.0892) pair3=0.9617(0.1168) pair2=1.3103 Kc=0.511(0.024) Ks_pair=2.278(1.948) Ks_sf=-1.797(1.188) check dE=0.0e+00 dS6=0.0e+00 dGb=0.0e+00
+tg_d0.12500_h1.74050_rot_L384_p0_chi1024: E=-388.667025794 nmid=0.3922 eta_b=0.3582(0.0252) pair3=1.2050(0.1826) pair2=1.1450 Kc=0.543(0.026) Ks_pair=4.391(4.021) Ks_sf=-2.440(0.796) check dE=0.0e+00 dS6=0.0e+00 dGb=0.0e+00
+tg_d0.18750_h1.77200_rot_L256_p0_chi384: E=-265.756064347 nmid=0.3977 eta_b=1.9500(0.0137) pair3=1.1242(0.1273) pair2=1.1134 Kc=0.205(0.015) Ks_pair=0.150(0.003) Ks_sf=0.344(0.044) check dE=0.0e+00 dS6=0.0e+00 dGb=0.0e+00
+tg_d0.18750_h1.77200_rot_L384_p0_chi512: E=-398.272700328 nmid=0.3943 eta_b=1.9026(0.0067) pair3=1.1732(0.1113) pair2=1.1129 Kc=0.247(0.022) Ks_pair=0.155(0.003) Ks_sf=0.280(0.028) check dE=0.0e+00 dS6=0.0e+00 dGb=0.0e+00
+
+# odd-even: dE = E(odd #down) - E(even), both sectors at the largest common chi (oe.py)
+d=0.12500 h=1.73400  L=64 chi=512 dE=+7.47e-03 L*dE=+0.4782 (chi-chg -5.6e-09) | L=96 chi=512 dE=+6.94e-03 L*dE=+0.6663 (chi-chg -6.0e-08) | L=128 chi=512 dE=+6.74e-03 L*dE=+0.8626 (chi-chg -2.2e-07) | L=192 chi=512 dE=-2.05e-03 L*dE=-0.3938 (chi-chg -3.8e-09)
+d=0.12500 h=1.73700  L=64 chi=512 dE=+2.89e-03 L*dE=+0.1847 (chi-chg -9.6e-09) | L=96 chi=512 dE=+2.38e-03 L*dE=+0.2287 (chi-chg -1.0e-07) | L=128 chi=512 dE=+2.19e-03 L*dE=+0.2808 (chi-chg -3.7e-07) | L=192 chi=512 dE=+2.05e-03 L*dE=+0.3935 (chi-chg -1.6e-06)
+d=0.12500 h=1.74050  L=64 chi=512 dE=+4.56e-04 L*dE=+0.0292 (chi-chg +3.0e-08) | L=96 chi=512 dE=-4.58e-04 L*dE=-0.0440 (chi-chg +2.9e-07) | L=128 chi=512 dE=+1.57e-05 L*dE=+0.0020 (chi-chg -6.5e-07) | L=192 chi=512 dE=-1.51e-04 L*dE=-0.0290 (chi-chg +1.5e-06)
+d=0.12500 h=1.74400  L=64 chi=512 dE=+3.14e-04 L*dE=+0.0201 (chi-chg -6.5e-09) | L=96 chi=512 dE=-3.24e-04 L*dE=-0.0311 (chi-chg +2.0e-07) | L=128 chi=512 dE=+1.48e-04 L*dE=+0.0190 (chi-chg -1.9e-07) | L=192 chi=512 dE=-1.10e-04 L*dE=-0.0212 (chi-chg +1.3e-06)
+d=0.18750 h=1.77400  L=64 chi=512 dE=-8.96e-03 L*dE=-0.5735 (chi-chg +2.6e-09) | L=96 chi=512 dE=+8.12e-03 L*dE=+0.7799 (chi-chg -3.1e-08) | L=128 chi=512 dE=-5.08e-03 L*dE=-0.6505 (chi-chg -4.0e-10) | L=192 chi=512 dE=+8.05e-03 L*dE=+1.5464 (chi-chg -5.8e-07)
+d=0.18750 h=1.77800  L=64 chi=512 dE=-3.06e-03 L*dE=-0.1958 (chi-chg +5.0e-09) | L=96 chi=512 dE=+2.22e-03 L*dE=+0.2131 (chi-chg -5.7e-08) | L=128 chi=512 dE=+1.28e-04 L*dE=+0.0163 (chi-chg -2.5e-09) | L=192 chi=512 dE=+2.16e-03 L*dE=+0.4142 (chi-chg -8.9e-07)
+d=0.18750 h=1.78300  L=64 chi=512 dE=+1.86e-04 L*dE=+0.0119 (chi-chg -9.2e-08) | L=96 chi=512 dE=+4.48e-04 L*dE=+0.0430 (chi-chg +1.0e-07) | L=128 chi=512 dE=+2.97e-04 L*dE=+0.0380 (chi-chg +8.6e-07)
