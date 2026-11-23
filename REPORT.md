@@ -4286,3 +4286,32 @@ c comes from S(l) averaged over the central quarter of the chain, |l − L/2| �
 - L = 512 at χ = 512 and the control at L ≥ 256 are not converged and are not used.
 
 Together with §9.209b, two methods now read c ≈ 2 at two points of the wedge: iDMRG 1.97 and 1.92, open chains 1.96 and 1.90. Neither reads c = 1, and the open-chain numbers sit well above what the c = 3/2 control reads with the same estimator. The open questions of §9.209b remain. A crossover length beyond about 400 sites is not excluded, and nothing yet identifies the second gapless mode.
+
+### 9.213 The chirality-chain wedge lies in the family of the d = 2 c = 2 candidate, at V/Δ = 4 and on its tuning condition (Claude Opus 5.5, 2026-11-23; observation by J. Kudler-Flam; mapping derived by hand, not yet checked by a second agent)
+
+[derived] Split the chain of §9.208 as a X_jY_{j+1} + b Y_jX_{j+1} = (1/2)(X_jY_{j+1} + Y_jX_{j+1}) + (δ/2)(X_jY_{j+1} − Y_jX_{j+1}). A uniform rotation by π/4 about z maps XY + YX to XX − YY and leaves the DM term XY − YX and every Z unchanged. The chain becomes
+
+H = Σ_j [ (X_jX_{j+1} − Y_jY_{j+1})/2 + (δ/2)(X_jY_{j+1} − Y_jX_{j+1}) + Z_jZ_{j+1} ] − h Σ_j Z_j,
+
+which is the family of the "d = 2: a candidate counterexample with c = 2" section of STATUS (pairing Δ = 1, a pure DM hop, on the symmetric stratum), with J_z = 1 in place of 10. In that section's normalisation:
+
+| | the STATUS candidate | this chain at δ = 1/8 |
+|---|---|---|
+| V/Δ, with V = 4J_z | 40 | 4 |
+| ε = Δ/V | 1/40 | 1/4 |
+| second-order hop t₂ = Δ²/2V | 1/80 | 1/8 |
+| direct hop 2D | 1/80 | δ = 1/8 |
+| field below the blockade value 2J_z, in units of t₂ | 1.9 | 2.0 to 2.1 over the c ≈ 2 window h = 1.739 to 1.7467 |
+
+So δ = 1/8 sits on the tuning condition 2D = t₂, and the field sits at a comparable remainder. The match of the field is only to order t₂, which is not a sharp statement at ε = 1/4.
+
+Reading, as a hypothesis to test. If the wedge of §9.209b and §9.212 is the two-valley liquid at ε = 1/4, then:
+- the κ-locked phase above it is valley-polarised, with c = 1, and κ measures the valley imbalance;
+- the abrupt lower edge is the pair-binding (pseudospin-gap) transition into the pair liquid with c = 1;
+- the wedge, from δ = 1/8 to about 7/32 and closed before 1/4, is the detuning range at this ε.
+
+Two consequences, if the identification holds.
+- It bears on "How large ε can be is open". Two methods read c ≈ 2 at ε = 1/4, out to ξ ≈ 700 (iDMRG) and L = 384 (open chains).
+- It bears on open item 5, charge locking. That estimate scales the O₄ coupling as ε² with dimension about 1.25, so from ε = 1/40 to 1/4 it shortens the locking length by roughly 10^2.7, to order ten sites for C₄ of order one, on the symmetric stratum. No sign of locking is seen out to several hundred sites. So either C₄ is much smaller than one, or O₄ is not relevant at this coupling, or the estimate does not carry over to ε = 1/4.
+
+Tests in progress: δ = 1/16 and 3/32, below the tuning point; the pseudospin and charge exponents (η_b, the inter-valley pair exponent, K_c and K_s, with the estimators of §9.161 and §9.182) inside the wedge; and the odd-even energy across the lower edge.
