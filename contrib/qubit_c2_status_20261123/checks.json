@@ -1,0 +1,56 @@
+{
+  "source": "contrib/d2_xy_yx_chirality_imps_20261118/tables/open_chain_ladders.txt",
+  "source_sha256": "d9dfdd5cd1af9c54d48f7a0f35ec3fd154816ac4a8d201a43ebf5f11dbddfe1e",
+  "selection": {
+    "minimum_length": 96,
+    "maximum_absolute_last_entropy_step": 0.02
+  },
+  "fits": [
+    {
+      "run": "tg_d0.12500_h1.74050_rot",
+      "lengths": [
+        96,
+        128,
+        192,
+        256,
+        384
+      ],
+      "c_fit": 1.8966171539942258,
+      "regression_error_only": 0.12360161024106453,
+      "largest_last_entropy_step": 0.011
+    },
+    {
+      "run": "tg_d0.18750_h1.78300_rot",
+      "lengths": [
+        96,
+        128,
+        192,
+        256,
+        384
+      ],
+      "c_fit": 1.9540070545770487,
+      "regression_error_only": 0.07499945778327918,
+      "largest_last_entropy_step": 0.017
+    },
+    {
+      "run": "tg_d0.18750_h1.77200_rot",
+      "lengths": [
+        96,
+        128,
+        192,
+        256,
+        384,
+        512
+      ],
+      "c_fit": 0.9984211534763688,
+      "regression_error_only": 0.010432129726968335,
+      "largest_last_entropy_step": 6.1e-05
+    }
+  ],
+  "bond_rotation_max_entry_error": 2.220446049250313e-16,
+  "displayed_full_field_coefficient_spreads": {
+    "delta_3_16_h_1_783": 4.388923076923077,
+    "delta_1_8_h_1_7405": 3.978285714285714
+  },
+  "scope": "Rounded-table regression and local matrix identity; no new many-body simulation."
+}

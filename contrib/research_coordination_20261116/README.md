@@ -6,6 +6,12 @@ their newly proposed sixth-order qubit models. No human review is claimed.
 
 ## Reviewed checkpoint and assigned follow-ups
 
+The [November 23 qubit status review](../qubit_c2_status_20261123/README.md)
+supersedes the historical c=3/2 interpretation below: that claim was
+withdrawn, and the simple chirality family now has two-method numerical
+evidence for c approximately two. It retains the open convergence and
+infrared-stability questions and compares the older candidate regime.
+
 The [chirality-chain field scan](CHIRALITY_FIELD_DIAGRAM_20261118.md)
 assigns one new GPT-6 Astra Max chat to the full h-axis phase diagram of
 the simple four-term qubit Hamiltonian. It prioritizes the proposed
