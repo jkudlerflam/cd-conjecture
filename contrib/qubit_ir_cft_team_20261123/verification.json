@@ -1,0 +1,36 @@
+{
+  "utc": "2026-11-23T22:39:32.322308+00:00",
+  "python": "/Users/pace/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python",
+  "scope": "Sequential bounded reruns; no DMRG or new sizes; one numerical thread.",
+  "environment_note": "Default system python3 lacks NumPy; all numerical reruns used the already installed runtime above.",
+  "checks": [
+    {
+      "script": "evidence/read_tables.py",
+      "passed": true,
+      "elapsed_seconds": 0.0812,
+      "supervisor_timeout_seconds": 10
+    },
+    {
+      "script": "evidence/ring_spectra.py",
+      "passed": true,
+      "elapsed_seconds": 0.2099,
+      "supervisor_timeout_seconds": 90
+    },
+    {
+      "script": "audit/check_ring.py",
+      "passed": true,
+      "elapsed_seconds": 0.15,
+      "supervisor_timeout_seconds": 30,
+      "matches_saved_json_exactly": true
+    },
+    {
+      "script": "audit/check_fits_metric.py",
+      "passed": true,
+      "elapsed_seconds": 0.0429,
+      "supervisor_timeout_seconds": 10,
+      "matches_saved_json_exactly": true
+    }
+  ],
+  "local_markdown_links_checked": 76,
+  "maximum_file_bytes": 87511
+}
