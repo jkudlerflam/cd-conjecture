@@ -6,6 +6,12 @@ their newly proposed sixth-order qubit models. No human review is claimed.
 
 ## Reviewed checkpoint and assigned follow-ups
 
+The [managed CFT investigation](CFT_TEAM_20261123.md) deploys one GPT-6
+Astra Max manager with two research agents and a dedicated independent
+auditor to the fixed delta=3/16,h=1.783 chirality Hamiltonian. The task is
+to identify the infrared theory beyond its entropy slope, with progress
+reported in the originating chat and audited findings pushed to GitHub.
+
 The [November 23 qubit status review](../qubit_c2_status_20261123/README.md)
 supersedes the historical c=3/2 interpretation below: that claim was
 withdrawn, and the simple chirality family now has two-method numerical

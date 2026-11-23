@@ -7,6 +7,14 @@ earlier long version. The standard is theoretical physics, and nothing has
 had independent human review. Conditional infrared predictions are not
 established microscopic counterexamples.
 
+**Managed CFT investigation (2026-11-23):** A GPT-6 Astra Max manager
+is coordinating two researchers and a dedicated auditor on the fixed
+delta=3/16,h=1.783 chirality Hamiltonian. The
+[assignment](contrib/research_coordination_20261116/CFT_TEAM_20261123.md)
+targets the compactification, mode content and allowed locking processes;
+an entropy fit near two is not by itself a CFT identification. The team
+must publish its audited findings to GitHub when finished.
+
 **New field-diagram investigation (2026-11-18):** One new GPT-6 Astra
 Max chat is active on the h-dependent phase diagram of
 H=sum[(9/16)XY+(7/16)YX+ZZ]-h sum Z. The
