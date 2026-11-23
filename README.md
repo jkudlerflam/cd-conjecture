@@ -84,6 +84,16 @@ The [current review](contrib/qubit_c2_status_20261123/README.md) compares
 the evidence, convergence limits and coefficient simplicity, and
 reproduces the central-window fits from the committed tables.
 
+The subsequent [independently audited team investigation](contrib/qubit_ir_cft_team_20261123/README.md)
+identifies missing operator assignments and conditional locking tests;
+it does not identify the asymptotic CFT. The two reported exponents can
+admit different stability conclusions under different dictionaries.
+The [prioritized to-do list](contrib/qubit_ir_cft_team_20261123/TODO.md)
+specifies the missing pair momenta and quadratures, bulk modes and
+velocities, normalized response, compactification and locking amplitudes,
+with minimum measurements and data/resource requirements. See REPORT
+§9.215 for corrections to the earlier interpretation.
+
 **Stability round completed (2026-11-18):** The modified d=9 family now
 has finite-order local interaction bounds independent of chain length
 and exact nonzero-port ground-sector selection on compatible rings.

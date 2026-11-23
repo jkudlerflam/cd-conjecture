@@ -4370,3 +4370,72 @@ Addendum, later on 2026-11-23: the open-chain replacements below the tuning poin
 - [numerical] δ = 1/16, h = 1.680 to 1.725, L = 64 and 128, χ up to 256. Every run is converged by χ = 64, with truncation 1e-14 or smaller. The mid-chain entropy falls from L = 64 to 128 (for example 1.06 to 0.92 at h = 1.68). So this whole range is gapped. At h = 1.730 the entropy starts to rise, which is the onset of something gapless just above the scanned range.
 - [numerical] δ = 3/32. For h = 1.705 to 1.725 the chain is gapped, with S ≈ 0.7 at L = 128, close to ln 2. The gapless region begins between h = 1.725 and 1.730. At h = 1.735 and 1.740 the entropy is large and still moving at χ = 256 (by 0.01 to 0.04). The iMPS runs place those two fields in the chirality-locked phase.
 - Reading. Below the tuning point the c ≈ 2 wedge, if it exists at all, is narrower than about 0.01 in h at δ = 3/32. It would have to sit between the gapped phase and the locked phase, near h ≈ 1.727 to 1.735. That fits a wedge that opens near δ = 1/8, where 2D = t₂, but these sizes cannot rule out a thin sliver. Finer scans are running at L = 64 to 192 and χ ≤ 512: δ = 3/32 at h = 1.727 to 1.735 in steps of 0.002, and δ = 1/16 at h = 1.733 to 1.745.
+
+### 9.215 Audited first IR investigation at δ = 3/16, h = 1.783: operator identification remains decisive (OpenAI Codex team, 2026-11-23)
+
+The fixed physical-qubit target is
+`H=sum[(19/32)XY+(13/32)YX+ZZ]-(1783/1000)sum Z`, with one full field
+on every site, including open ends. The
+[team report](contrib/qubit_ir_cft_team_20261123/README.md),
+[claim ledger](contrib/qubit_ir_cft_team_20261123/CLAIMS.md) and
+[independent AI audit](contrib/qubit_ir_cft_team_20261123/audit/AUDIT.md)
+distinguish exact algebra, finite-scale evidence and conditional field
+theory. The manager was GPT-6 Astra Max; the two researchers and auditor
+were GPT-6.2 Astra Max, an explicitly recorded worker-selection error.
+No human review or new long many-body production is claimed.
+
+[numerical, checked] Regressions on the saved rounded tables reproduce
+entropy slopes `1.97265 +/- .00986` (iMPS) and `1.95401 +/- .07500`
+(OBC), with the same convergence limitations as §9.212. New periodic
+L=8,10,12 spectra show pair, staggered bond and staggered chirality
+probes reaching the same low pi pole; a separate literal Pauli-matrix
+implementation reproduces the L=8 sector minima and residues within
+`1e-14`. These shared poles do not establish two independent modes, and
+the strongest separation-three pair peak is not always at pi on these
+small rings. No continuum tower or velocity is inferred from them.
+
+[proved, checked] Staggered distance-two chirality is translation-odd,
+whereas a smooth valley-density imbalance is translation-even. The two
+cannot be linearly identified in the proposed unbroken dictionary.
+Staggered chirality instead has the symmetry characters of one quadrature
+of an inter-valley pi pair; allowed overlap is not measured overlap.
+The exact uniform rotation of §9.213 survives, but its equal-hop tuning
+applies to delta=1/8, not this fixed delta=3/16 point.
+
+[conditional, checked] Assume the generic balanced compact two-boson
+vertex lattice, unbroken microscopic symmetries, and correctly matched
+bulk one-body and undressed pi-pair primaries. Set `p=eta_pair` and
+`d_theta=4 eta_b-p`. With an arbitrary allowed mixing parameter t, the
+generic uniform harmonics have dimensions
+`x_(r,s)=2[p(r-t s)^2+s^2/d_theta]`, for integer r,s. The quoted central
+values give `p=.9193`, `d_theta=.5083`: the primitive quartet has
+`x4=1.8386`, all s!=0 harmonics have `x>=3.9347`, and higher pure
+quartets have `x>=7.3544`. This isolates one possible relevant generic
+lock under those assumptions. The fitted target pair momentum, its
+primary assignment and the target quartet coupling are unknown. An
+explicit alternative Gaussian assignment reproduces the same two
+exponents while every generic locking harmonic is irrelevant. Therefore
+the two scalar exponents alone neither establish stability nor force
+locking. Special momentum resonances require a separate analysis.
+
+[conditional, checked] A unit-normalized total-density slope and the
+matched pure-pair exponent must satisfy `K_density*p>=1`, including
+the permitted mixing and a relative phase-gradient contribution. The
+quoted central values give `.62053`; their joint literal identification
+fails. Matching and finite-scale systematics remain unresolved, so this
+does not disprove two bosons. The unmixed identification would give
+`1/K_c=.9193` and `K_c=1.0878`, correcting the reciprocal in §9.214.
+The inferred `1/d_theta=1.967` is a conditional lower bound on the
+relative backscattering covariance with mixing, not an established radius.
+
+The asymptotic Virasoro central charge, independent mode count,
+compactification, mixing and physical velocities remain unidentified.
+The [audited prioritized to-do list](contrib/qubit_ir_cft_team_20261123/TODO.md)
+specifies five missing inputs: pair carrier/primary and quadrature data;
+bulk current modes and velocities; normalized full response;
+charge/winding sectors; and matched locking amplitudes with longer-scale
+convergence. Each entry states discriminating outcomes, a minimum
+measurement, accessible versus missing data, and resource requirements.
+Recovering the original complex pair data is the first next action;
+the saved scalar summaries cannot reconstruct them. No asymptotic
+criticality or named CFT is asserted by this round.

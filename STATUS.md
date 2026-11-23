@@ -7,13 +7,18 @@ earlier long version. The standard is theoretical physics, and nothing has
 had independent human review. Conditional infrared predictions are not
 established microscopic counterexamples.
 
-**Managed CFT investigation (2026-11-23):** A GPT-6 Astra Max manager
-is coordinating two researchers and a dedicated auditor on the fixed
-delta=3/16,h=1.783 chirality Hamiltonian. The
-[assignment](contrib/research_coordination_20261116/CFT_TEAM_20261123.md)
-targets the compactification, mode content and allowed locking processes;
-an entropy fit near two is not by itself a CFT identification. The team
-must publish its audited findings to GitHub when finished.
+**First CFT audit completed (2026-11-23):** The managed investigation of
+the fixed delta=3/16,h=1.783 qubit Hamiltonian is published, including an
+independent AI audit. The finite-scale entropy evidence remains near two;
+the asymptotic CFT remains unidentified. Under a matched generic two-boson
+operator dictionary, the quoted exponents make the quartet the only
+relevant generic locking harmonic, even with mixing. That dictionary and
+the target coupling are unmeasured; a different assignment reproduces the
+same two exponents without relevant generic locking. See the
+[audited findings](contrib/qubit_ir_cft_team_20261123/README.md) and
+[prioritized missing measurements](contrib/qubit_ir_cft_team_20261123/TODO.md):
+pair momentum and primary identity, independent bulk modes and velocities,
+normalized response, compactification, and longer-scale stability.
 
 **New field-diagram investigation (2026-11-18):** One new GPT-6 Astra
 Max chat is active on the h-dependent phase diagram of
