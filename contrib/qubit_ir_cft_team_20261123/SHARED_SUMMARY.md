@@ -73,3 +73,5 @@ requested available `gpt-6-astra/max`; that selection error is disclosed,
 and the coordinator instructed preservation of useful existing work.
 The Git synchronization checkpoints and final commit identifiers are
 reported in PROGRESS and the manager's completion message.
+The scientific checkpoint is `1f8c2051625fc81ecc2f29eb3a5dfd224989c80d`,
+successfully pushed to `origin/main` and verified there at 22:41 UTC.

@@ -110,3 +110,21 @@ quartet coupling remain unresolved. No CFT identification is manufactured.
 Next required action: manager's serialized commit, rebase/push and upstream
 verification. Scientific work is complete; Git completion is not yet
 claimed at this checkpoint.
+
+## Published checkpoint and closure — 2026-11-23 22:41 UTC
+
+Scientific findings, all worker reports, reproducible scripts/data, the
+audited claim ledger and the user-requested TODO were committed as
+`1f8c2051625fc81ecc2f29eb3a5dfd224989c80d` and pushed to `origin/main`.
+The manager held the atomic shared Git lock throughout staging, commit,
+pull with rebase and push, then released only its own lock. At 22:41 UTC,
+`HEAD` and `origin/main` matched that commit and the entire checkout was
+clean. No other contribution was staged or modified.
+
+This final documentation update records the successful checkpoint and
+refreshes the link verification after the reports and handoff were finalized.
+The manager's completion response reports the final documentation commit
+after a second rebase/push/upstream check. All scientific tasks and audit
+follow-ups are complete; there are no active computations or pending user
+decisions. The unresolved physics is explicitly handed off in `TODO.md`,
+not presented as completed CFT identification.
