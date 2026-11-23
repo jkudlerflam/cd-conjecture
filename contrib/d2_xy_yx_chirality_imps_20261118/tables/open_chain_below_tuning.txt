@@ -1,0 +1,76 @@
+== tg_d0.06250_h1.68000_rot par=0
+  L=  64 E/L=-1.0089655755 trunc=6.2e-20  Smid[chi]: 64:1.05738 128:1.05738 256:1.05738  Sbar=0.93230 dSbar(chi)=+1.6e-10  c_prof=6.253
+  L= 128 E/L=-1.0049734528 trunc=7.1e-19  Smid[chi]: 64:0.92291 128:0.92291 256:0.92291  Sbar=0.83007 dSbar(chi)=-1.9e-08  c_prof=5.615
+  local c from Sbar: 64-128:-0.883
+== tg_d0.06250_h1.68500_rot par=0
+  L=  64 E/L=-1.0092531517 trunc=1.1e-19  Smid[chi]: 64:1.06113 128:1.06114 256:1.06113  Sbar=0.93562 dSbar(chi)=-3.6e-10  c_prof=6.280
+  L= 128 E/L=-1.0051172556 trunc=1.9e-18  Smid[chi]: 64:0.92549 128:0.92548 256:0.92548  Sbar=0.83238 dSbar(chi)=+1.4e-08  c_prof=5.634
+  local c from Sbar: 64-128:-0.892
+== tg_d0.06250_h1.69000_rot par=0
+  L=  64 E/L=-1.0095422095 trunc=2.0e-19  Smid[chi]: 64:1.06552 128:1.06552 256:1.06552  Sbar=0.93950 dSbar(chi)=-7.9e-10  c_prof=6.312
+  L= 128 E/L=-1.0052618004 trunc=3.5e-19  Smid[chi]: 64:0.92855 128:0.92853 256:0.92852  Sbar=0.83511 dSbar(chi)=-5.3e-07  c_prof=5.656
+  local c from Sbar: 64-128:-0.901
+== tg_d0.06250_h1.69500_rot par=0
+  L=  64 E/L=-1.0098331749 trunc=4.3e-19  Smid[chi]: 64:1.07084 128:1.07084 256:1.07084  Sbar=0.94423 dSbar(chi)=+2.4e-09  c_prof=6.351
+  L= 128 E/L=-1.0054073006 trunc=1.3e-18  Smid[chi]: 64:0.93225 128:0.93224 256:0.93224  Sbar=0.83846 dSbar(chi)=+5.3e-08  c_prof=5.683
+  local c from Sbar: 64-128:-0.913
+== tg_d0.06250_h1.70000_rot par=0
+  L=  64 E/L=-1.0101267028 trunc=1.1e-18  Smid[chi]: 64:1.07760 128:1.07760 256:1.07760  Sbar=0.95024 dSbar(chi)=-2.3e-09  c_prof=6.400
+  L= 128 E/L=-1.0055540843 trunc=1.5e-18  Smid[chi]: 64:0.93704 128:0.93704 256:0.93704  Sbar=0.84279 dSbar(chi)=-6.2e-09  c_prof=5.718
+  local c from Sbar: 64-128:-0.928
+== tg_d0.06250_h1.70500_rot par=0
+  L=  64 E/L=-1.0104238579 trunc=2.9e-18  Smid[chi]: 64:1.08672 128:1.08673 256:1.08673  Sbar=0.95840 dSbar(chi)=+2.1e-09  c_prof=6.466
+  L= 128 E/L=-1.0057026853 trunc=2.4e-18  Smid[chi]: 64:0.94364 128:0.94363 256:0.94362  Sbar=0.84875 dSbar(chi)=-4.0e-07  c_prof=5.766
+  local c from Sbar: 64-128:-0.947
+== tg_d0.06250_h1.71000_rot par=0
+  L=  64 E/L=-1.0107265050 trunc=8.9e-18  Smid[chi]: 64:1.10009 128:1.10009 256:1.10009  Sbar=0.97041 dSbar(chi)=-1.6e-09  c_prof=6.563
+  L= 128 E/L=-1.0058540388 trunc=7.4e-18  Smid[chi]: 64:0.95348 128:0.95346 256:0.95346  Sbar=0.85768 dSbar(chi)=+1.9e-09  c_prof=5.838
+  local c from Sbar: 64-128:-0.974
+== tg_d0.06250_h1.71500_rot par=0
+  L=  64 E/L=-1.0110382536 trunc=3.4e-17  Smid[chi]: 64:1.12189 128:1.12189 256:1.12189  Sbar=0.99010 dSbar(chi)=-6.2e-09  c_prof=6.721
+  L= 128 E/L=-1.0060099563 trunc=2.2e-17  Smid[chi]: 64:0.96996 128:0.96996 256:0.96996  Sbar=0.87271 dSbar(chi)=-6.3e-08  c_prof=5.960
+  local c from Sbar: 64-128:-1.014
+== tg_d0.06250_h1.72000_rot par=0
+  L=  64 E/L=-1.0113671366 trunc=1.6e-16  Smid[chi]: 64:1.16308 128:1.16308 256:1.16308  Sbar=1.02747 dSbar(chi)=+5.4e-09  c_prof=7.016
+  L= 128 E/L=-1.0061744753 trunc=1.4e-16  Smid[chi]: 64:1.00258 128:1.00258 256:1.00258  Sbar=0.90251 dSbar(chi)=-3.2e-08  c_prof=6.202
+  local c from Sbar: 64-128:-1.079
+== tg_d0.06250_h1.72500_rot par=0
+  L=  64 E/L=-1.0117349131 trunc=1.6e-15  Smid[chi]: 64:1.25509 128:1.25509 256:1.25509  Sbar=1.11149 dSbar(chi)=+3.0e-08  c_prof=7.654
+  L= 128 E/L=-1.0063585699 trunc=4.5e-16  Smid[chi]: 64:1.08424 128:1.08424 256:1.08424  Sbar=0.97687 dSbar(chi)=+1.7e-07  c_prof=6.810
+  local c from Sbar: 64-128:-1.162
+== tg_d0.06250_h1.73000_rot par=0
+  L=  64 E/L=-1.0122172188 trunc=1.1e-14  Smid[chi]: 64:1.39940 128:1.39944 256:1.39944  Sbar=1.26379 dSbar(chi)=+3.7e-07  c_prof=8.583
+  L= 128 E/L=-1.0066010018 trunc=4.7e-14  Smid[chi]: 64:1.35080 128:1.35086 256:1.35086  Sbar=1.21605 dSbar(chi)=+1.3e-06  c_prof=8.745
+  local c from Sbar: 64-128:-0.412
+== tg_d0.09375_h1.70500_rot par=0
+  L=  64 E/L=-1.0122669230 trunc=4.1e-17  Smid[chi]: 64:1.15805 128:1.15806 256:1.15806  Sbar=1.02598 dSbar(chi)=+1.6e-08  c_prof=6.916
+  L= 128 E/L=-1.0072821227 trunc=2.1e-15  Smid[chi]: 64:0.71564 128:0.71581 256:0.71581  Sbar=0.67391 dSbar(chi)=+1.7e-06  c_prof=0.524
+  local c from Sbar: 64-128:-3.040
+== tg_d0.09375_h1.71000_rot par=0
+  L=  64 E/L=-1.0125643127 trunc=9.9e-17  Smid[chi]: 64:1.16596 128:1.16596 256:1.16596  Sbar=1.03306 dSbar(chi)=+1.2e-08  c_prof=6.969
+  L= 128 E/L=-1.0074516314 trunc=9.9e-15  Smid[chi]: 64:0.72201 128:0.72230 256:0.72230  Sbar=0.67898 dSbar(chi)=+2.5e-06  c_prof=0.495
+  local c from Sbar: 64-128:-3.058
+== tg_d0.09375_h1.71500_rot par=0
+  L=  64 E/L=-1.0129099347 trunc=1.4e-14  Smid[chi]: 64:0.68926 128:0.68933 256:0.68933  Sbar=0.66185 dSbar(chi)=+5.7e-07  c_prof=0.183
+  L= 128 E/L=-1.0076273291 trunc=3.2e-14  Smid[chi]: 64:0.73286 128:0.73337 256:0.73337  Sbar=0.68752 dSbar(chi)=+5.1e-06  c_prof=0.447
+  local c from Sbar: 64-128:0.222
+== tg_d0.09375_h1.72000_rot par=0
+  L=  64 E/L=-1.0132801622 trunc=1.6e-13  Smid[chi]: 64:0.71998 128:0.72012 256:0.72012  Sbar=0.68200 dSbar(chi)=+1.8e-06  c_prof=0.054
+  L= 128 E/L=-1.0078142436 trunc=3.5e-13  Smid[chi]: 64:0.75422 128:0.75524 256:0.75526  Sbar=0.70396 dSbar(chi)=+1.5e-05  c_prof=0.354
+  local c from Sbar: 64-128:0.190
+== tg_d0.09375_h1.72500_rot par=0
+  L=  64 E/L=-1.0136944728 trunc=1.2e-12  Smid[chi]: 64:0.79512 128:0.79557 256:0.79558  Sbar=0.72890 dSbar(chi)=+8.9e-06  c_prof=-0.198
+  L= 128 E/L=-1.0080260569 trunc=2.5e-12  Smid[chi]: 64:0.80852 128:0.81084 256:0.81090  Sbar=0.74354 dSbar(chi)=+6.4e-05  c_prof=0.122
+  local c from Sbar: 64-128:0.126
+== tg_d0.09375_h1.73000_rot par=0
+  L=  64 E/L=-1.0142404555 trunc=2.3e-11  Smid[chi]: 64:1.09985 128:1.10315 256:1.10327  Sbar=0.95019 dSbar(chi)=+1.2e-04  c_prof=0.071
+  L= 128 E/L=-1.0085720299 trunc=8.1e-09  Smid[chi]: 64:1.25950 128:1.43924 256:1.48500  Sbar=1.48107 dSbar(chi)=+4.0e-02  c_prof=4.601
+  local c from Sbar: 64-128:4.584
+== tg_d0.09375_h1.73500_rot par=0
+  L=  64 E/L=-1.0153039001 trunc=1.2e-09  Smid[chi]: 64:1.62666 128:1.67698 256:1.68046  Sbar=1.61730 dSbar(chi)=+3.0e-03  c_prof=4.757
+  L= 128 E/L=-1.0097566892 trunc=1.5e-08  Smid[chi]: 64:1.82007 128:1.95412 256:1.99310  Sbar=1.94761 dSbar(chi)=+3.5e-02  c_prof=3.029
+  local c from Sbar: 64-128:2.852
+== tg_d0.09375_h1.74000_rot par=0
+  L=  64 E/L=-1.0171014175 trunc=4.6e-10  Smid[chi]: 64:1.66795 128:1.70084 256:1.70239  Sbar=1.68948 dSbar(chi)=+1.2e-03  c_prof=5.673
+  L= 128 E/L=-1.0115919987 trunc=4.1e-09  Smid[chi]: 64:1.84781 128:1.89411 256:1.90823  Sbar=1.88781 dSbar(chi)=+1.3e-02  c_prof=2.288
+  local c from Sbar: 64-128:1.713

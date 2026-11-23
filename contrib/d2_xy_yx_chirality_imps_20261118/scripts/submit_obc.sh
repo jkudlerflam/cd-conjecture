@@ -31,3 +31,6 @@ for h in 1.774 1.778 1.783; do for p in 0 1; do sub oP${p}_3_$h runo.sbatch mode
 # 2026-11-23b: open-chain replacement for the failed D1_/D2_ iMPS scans (iDMRG fell into the reversed state)
 for h in 1.680 1.685 1.690 1.695 1.700 1.705 1.710 1.715 1.720 1.725 1.730; do sub oD1_$h runo.sbatch model=target d=0.0625 h=$h par=0 L=64,128 chis=64,128,256; done
 for h in 1.705 1.710 1.715 1.720 1.725 1.730 1.735 1.740; do sub oD2_$h runo.sbatch model=target d=0.09375 h=$h par=0 L=64,128 chis=64,128,256; done
+# 2026-11-23c: fine scans at the onset of the gapless region below delta = 1/8
+for h in 1.727 1.729 1.731 1.733 1.735; do sub oF2_$h runo.sbatch model=target d=0.09375 h=$h par=0 L=64,96,128,192 chis=64,128,256,512; done
+for h in 1.733 1.736 1.739 1.742 1.745; do sub oF1_$h runo.sbatch model=target d=0.0625 h=$h par=0 L=64,96,128,192 chis=64,128,256,512; done
