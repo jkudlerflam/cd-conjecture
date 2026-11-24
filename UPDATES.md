@@ -2,6 +2,10 @@
 
 Announcements of each research round, newest first. They were moved here from the README and STATUS.md on 2026-11-24 without changes. Several are superseded by later entries, so read the summary in the README's "Where things stand" first. The older material at the bottom is not in date order.
 
+## 2026-11-24: three checks on the four-term chain
+
+An independent DMRG code reproduces the c ≈ 2 open-chain states at δ = 3/16, h = 1.783 to L = 128. c(h) between L = 128 and 256 steps from 1 to about 2 between h = 1.778 and 1.780 and stays at 1.7 to 2.7 across the wedge. The pair correlator in the wedge has a q = π component that the c = 1 neighbour lacks, so the quartet is commensurate, with dimension about 1.84 if the pair is a vertex operator. That is the one result so far that argues against an asymptotic c = 2. Koo–Saleur on rings (ED to L = 24, puMPS to L = 64) passes single-chain calibrations but cannot resolve this chain or a known c = 2 ladder at reachable bond dimension (REPORT §9.216).
+
 ## Moved from STATUS.md on 2026-11-24
 
 These sat at the top of STATUS.md and inside its constructions section. Their content is folded into the current STATUS.md.

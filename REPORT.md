@@ -4357,3 +4357,22 @@ measurement, accessible versus missing data, and resource requirements.
 Recovering the original complex pair data is the first next action;
 the saved scalar summaries cannot reconstruct them. No asymptotic
 criticality or named CFT is asserted by this round.
+
+### 9.216 Three checks on c ≈ 2 at δ = 3/16, h = 1.783: an independent code agrees, c(h) sits near 2 across the wedge, and the π pair makes a weakly relevant commensurate quartet (Claude Opus 5.5, 2026-11-24; `contrib/d2_xy_yx_chirality_imps_20261118/`)
+
+[numerical, checked] Independent code. The C190 Z2 DMRG (own MPO and sweeps, CPU and GPU, no TeNPy; `scripts/indep/`) run on the rotated chain of §9.213, open ends, both parities, χ ≤ 1024. Ground energies agree with TeNPy to 2e-12 at L = 32, 3e-11 at L = 64 and 1e-9 at L = 128 (E = −133.5645018, even parity, the lower one). The central-quarter S̄ at L = 128 is 1.84253 against TeNPy's 1.84232. L = 256 is still running.
+
+[numerical] c(h) at δ = 3/16. Local slope of S̄ between L = 128 and 256, TeNPy, χ ≤ 1024 ([table](contrib/d2_xy_yx_chirality_imps_20261118/tables/c_of_h_d3_16.txt)).
+
+| h | 1.772 | 1.776 | 1.778 | 1.780 | 1.782 | 1.783 | 1.784 | 1.786 | 1.788 | 1.790 |
+|---|---|---|---|---|---|---|---|---|---|---|
+| even parity | 1.04 | 1.07 | 1.09 | 1.41 | 1.95 | 1.76 | 1.76 | 2.18 | 2.72 | 1.71 |
+| odd parity | 0.96 | 0.94 | 0.92 | 2.47 | — | — | 2.07 | 2.26 | 2.65 | 2.02 |
+
+The step from c ≈ 1 to c ≈ 2 is sharp, between h = 1.778 and 1.780. Above it the values scatter between 1.7 and 2.7 with no trend toward 1, inside the ±0.5 pitch scatter of §9.212. The largest values sit at 1.788, just past the κ locking at 1.7875, which suggests that the locking transition adds entanglement at these sizes. S̄ at L = 256 still grows by about 5e-3 from χ = 768 to 1024, so these slopes are low by roughly 0.05.
+
+[numerical] Pair momentum. The pair correlator at separations two and three, from the committed L = 256 and 384 correlators (`scripts/kpair.py`, `scripts/kenv.py`), has a q = π component in the wedge with the same decay exponent, about 0.9 to 1.0, as the incommensurate peaks at (1 ± 0.207)π. In the c = 1 control (h = 1.772) the π component is one to two orders of magnitude weaker. So the extra mode in the wedge carries a commensurate π pair. Its square, the charge-four "quartet", sits at momentum zero. With the pair as a pure vertex operator its dimension is four times the pair's, x4 ≈ 1.84, the value of §9.215. That is below 2.
+
+[numerical, failed calibration] Koo–Saleur on rings. Exact diagonalization on rings up to L = 24 captures only 0.5 to 5% of the Ht_2 weight in the lowest states, for the target and the c = 1 control alike, and is uninformative. A puMPS code (`scripts/pumps/`, written by OpenAI Codex, gpt-6.2-astra, checked against brute force and ED to 1e-12) passes single-chain calibrations at L = 64: c_s = 0.999 (XX), 0.992 (XXZ) and 0.498 (critical Ising), with 92 to 99.8% of the weight captured. It fails the decoupled XX × XXZ ladder, a known c = 2, at L = 32 and D ≤ 32, where the energy is still off by 3e-3 per site and neither stress tensor is resolved. On the chiral chain it fails the c = 1 control: at L = 64 a state at x ≈ 0.14 gives c_s ≈ 17. The target's leading c_s drifts from 2.43 to 1.55 between D = 32 and 64 at L = 64, and D = 80 does not fit on a 40 GB GPU. Following the stopping rule set for this check, the commensurate L = 68 ring was not run. The numbers are in the [table](contrib/d2_xy_yx_chirality_imps_20261118/tables/pumps_koo_saleur.txt).
+
+Does any check argue against c = 2? One does. The π pair makes the quartet commensurate, and its dimension x4 ≈ 1.84 is below 2. If the pair is the vertex operator it appears to be, a c = 2 fixed point here is unstable to locking, and the wedge would be a long crossover to c = 1. The RG eigenvalue 0.16 is small, so the locking length grows as the bare coupling to the power −6, and the c ≈ 2 reading up to about 400 sites does not rule this out. The other checks neither help nor hurt. The independent code reproduces the TeNPy states, c(h) sits near 2 across the wedge rather than at one tuned point, and Koo–Saleur on rings cannot resolve this chain at reachable D. What would settle it is (i) a direct measurement of the quartet correlator at momentum zero and its exponent, and (ii) open chains past 1000 sites at a point where the bare quartet coupling is larger.

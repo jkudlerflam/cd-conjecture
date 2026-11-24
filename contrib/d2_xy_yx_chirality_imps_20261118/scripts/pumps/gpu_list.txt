@@ -1,0 +1,4 @@
+T1_L64 16,24,32,40,48,64,80 model=chir delta=0.1875 h=1.783 L=64 ps=-3:3 ns=1,2 nev=40
+T3_L64 16,24,32,40,48,64,80 model=chir delta=0.1875 h=1.772 L=64 ps=-3:3 ns=1,2 nev=40
+T1_L68 32,48,64,80 model=chir delta=0.1875 h=1.783 L=68 ps=-3:3 ns=1,2 nev=40
+LAD_L64 16,32,48,64,80 model=file file=xx_xxz05.npy L=64 ps=-3:3 ns=1,2 nev=40

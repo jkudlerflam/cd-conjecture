@@ -1,0 +1,1 @@
+{"tag": "chir316_h1783_L64_P1", "model": "chir0.1875", "gauge": "stag", "hz": -1.783, "L": 64, "P": 1, "init": "rand:1", "gwin": 48, "variance": true, "maxit": 300, "sched": [[32, 0.001, 1e-07, 2], [64, 0.0001, 1e-08, 2], [128, 1e-05, 1e-08, 2], [256, 0.0, 1e-09, 2]], "final": {"chi": 384, "res_tol": 1e-10, "min_sweeps": 3, "max_sweeps": 8, "tolE": 1e-10, "tolS": 1e-05}}
