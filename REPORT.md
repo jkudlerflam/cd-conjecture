@@ -4370,3 +4370,15 @@ Addendum, later on 2026-11-23: the open-chain replacements below the tuning poin
 - [numerical] δ = 1/16, h = 1.680 to 1.725, L = 64 and 128, χ up to 256. Every run is converged by χ = 64, with truncation 1e-14 or smaller. The mid-chain entropy falls from L = 64 to 128 (for example 1.06 to 0.92 at h = 1.68). So this whole range is gapped. At h = 1.730 the entropy starts to rise, which is the onset of something gapless just above the scanned range.
 - [numerical] δ = 3/32. For h = 1.705 to 1.725 the chain is gapped, with S ≈ 0.7 at L = 128, close to ln 2. The gapless region begins between h = 1.725 and 1.730. At h = 1.735 and 1.740 the entropy is large and still moving at χ = 256 (by 0.01 to 0.04). The iMPS runs place those two fields in the chirality-locked phase.
 - Reading. Below the tuning point the c ≈ 2 wedge, if it exists at all, is narrower than about 0.01 in h at δ = 3/32. It would have to sit between the gapped phase and the locked phase, near h ≈ 1.727 to 1.735. That fits a wedge that opens near δ = 1/8, where 2D = t₂, but these sizes cannot rule out a thin sliver. Finer scans are running at L = 64 to 192 and χ ≤ 512: δ = 3/32 at h = 1.727 to 1.735 in steps of 0.002, and δ = 1/16 at h = 1.733 to 1.745.
+
+Second addendum, 2026-11-23: the fine scans below the tuning point (L = 64, 96, 128 and 192, χ ≤ 512, same table file). The comparison is the local c from S̄ between L = 128 and 192. At these two sizes the wedge points read 2.6 (δ = 1/8, h = 1.7405) and 1.9 (δ = 3/16, h = 1.783).
+- [numerical] δ = 1/16.
+  - At h = 1.733, 1.736 and 1.739 the chain is gapless, with local c from L = 128 to 192 equal to 1.04, 0.95 and 1.21. The fits over L = 96 to 192 give 1.4 to 1.6, with the slope falling with L at all three fields.
+  - At h = 1.742 S̄ saturates (c_L = 0.09 ± 0.04), and at h = 1.745 c_L = 0.83 ± 0.04.
+  - So the gapless window at δ = 1/16 reads c ≈ 1 at the largest sizes, with no sign of a second sector.
+- [numerical] δ = 3/32.
+  - At h = 1.727 and 1.729, S̄ jumps non-monotonically in L (for example 1.37 at L = 96 and 0.93 at L = 128). That points to level crossings at the edge of the gapless region, so no c can be read there.
+  - At h = 1.731 and 1.735 the local c is 1.85 and 1.32.
+  - At h = 1.733 the L = 192 run is not converged in χ (S̄ moved by 0.13 at the last stage).
+  - So δ = 3/32 is undecided at these sizes. The iMPS runs place h ≥ 1.735 in the locked phase, with c ≈ 1.1 to 1.2.
+- Reading. Below the tuning point there is no stretch of field that reads c ≈ 2 at the sizes where the wedge at δ ≥ 1/8 already does. At δ = 1/16 the gapless window reads c ≈ 1. This fits the wedge closing between δ = 1/16 and 1/8, close to the tuning condition 2D = t₂ of §9.213, but δ = 3/32 does not settle where it closes.
