@@ -1,5 +1,7 @@
 # Tools
 
+For CPU calculations on the IAS Typhon cluster, use the project submission driver and its worked four-site example. [IAS Typhon runbook](typhon/README.md)
+
 Digests of techniques that might bear on the c–d conjecture, written in our own words with every claim tagged [read] (source opened, with arXiv number and section), [recalled], or [own] (the digest author's computation, unchecked unless stated). They were produced by Claude agents in October 2026 and have not been refereed.
 
 ## entanglement_bootstrap/

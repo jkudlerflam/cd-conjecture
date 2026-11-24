@@ -37,6 +37,20 @@ simplify the physical model. Distinguish microscopic coefficient hierarchy
 from emergent small velocities, and prefer robust parameter regions over
 long-decimal tuned points when the scientific evidence is comparable.
 
+## IAS Typhon numerics
+
+Use `python3 tools/typhon/typhon.py` from the repository root for IAS CPU
+jobs. The Mac's `ias-cluster` alias connects through `ias-gateway` as
+`pace`. Use `submit RUN RECIPE` with a fresh run name and list the actual
+working-tree source and inputs in the recipe. The default request is one
+CPU, 2 GB and five minutes on partition `typhon`, account `physics`,
+with QoS `short`.
+Use `status RUN` and `logs RUN` to monitor, then `fetch RUN` to retrieve
+the separate `runs/typhon/RUN/` directory. Check the allocation state,
+exit code and numerical output before reporting completion. The runbook
+includes environment setup, recovery and the verified four-site example.
+[IAS Typhon runbook](tools/typhon/README.md)
+
 ## Keep GitHub synchronized
 
 The user has authorized routine pulls, commits, and pushes for work in this
