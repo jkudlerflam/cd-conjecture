@@ -7,3 +7,6 @@ __pycache__/
 *.zip
 *mplconfig/
 *_mps.npz
+# Keep the small, verified IAS example. Other Typhon downloads are local.
+/runs/typhon/*
+!/runs/typhon/heisenberg4-20261124/

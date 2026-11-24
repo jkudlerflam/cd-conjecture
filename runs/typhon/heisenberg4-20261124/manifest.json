@@ -1,0 +1,43 @@
+{
+  "run": "heisenberg4-20261124",
+  "host": "ias-cluster",
+  "remote_dir": "~/cd-conjecture/runs/heisenberg4-20261124",
+  "git_head": "0c6fc05b3c7f7f449d4226fb144b07a32596bb13",
+  "git_status_selected": [
+    "?? tools/typhon/batch.sh",
+    "?? tools/typhon/environment.sh",
+    "?? tools/typhon/heisenberg4.job.json",
+    "?? tools/typhon/heisenberg4.json"
+  ],
+  "recipe": "tools/typhon/heisenberg4.job.json",
+  "files": [
+    "contrib/d2_order_one_20261110/ed_screen.py",
+    "tools/typhon/heisenberg4.job.json",
+    "tools/typhon/heisenberg4.json"
+  ],
+  "command": [
+    "python",
+    "contrib/d2_order_one_20261110/ed_screen.py",
+    "--config",
+    "tools/typhon/heisenberg4.json",
+    "--output",
+    "../results/spectrum.jsonl",
+    "--checkpoint-dir",
+    "../results/checkpoints"
+  ],
+  "cwd": "src",
+  "seed": {
+    "parity_0": 20265098,
+    "parity_1": 20265099
+  },
+  "resources": {
+    "account": "physics",
+    "partition": "typhon",
+    "nodes": 1,
+    "ntasks": 1,
+    "cpus-per-task": 1,
+    "mem": "2G",
+    "time": "00:05:00",
+    "qos": "short"
+  }
+}

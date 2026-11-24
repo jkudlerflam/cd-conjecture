@@ -1,0 +1,13 @@
+{
+  "files": [
+    "contrib/d2_order_one_20261110/ed_screen.py",
+    "tools/typhon/heisenberg4.json"
+  ],
+  "command": [
+    "python", "contrib/d2_order_one_20261110/ed_screen.py",
+    "--config", "tools/typhon/heisenberg4.json",
+    "--output", "../results/spectrum.jsonl",
+    "--checkpoint-dir", "../results/checkpoints"
+  ],
+  "seed": {"parity_0": 20265098, "parity_1": 20265099}
+}

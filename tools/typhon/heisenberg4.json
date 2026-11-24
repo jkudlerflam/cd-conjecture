@@ -1,0 +1,9 @@
+{
+  "points": [{"name": "heisenberg4", "couplings": {"Jx": 0.25, "Jy": 0.25, "Jz": 0.25}}],
+  "sizes": [4],
+  "sectors": [0, 1],
+  "periodic": true,
+  "distance": 1,
+  "k": 2,
+  "tol": 1e-12
+}
