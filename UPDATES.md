@@ -1,6 +1,110 @@
 # Dated updates
 
-Announcements of each research round, newest first. They were moved here from the README on 2026-11-24 without changes. Several are superseded by later entries, so read the summary in the README's "Where things stand" first. The older material at the bottom is not in date order.
+Announcements of each research round, newest first. They were moved here from the README and STATUS.md on 2026-11-24 without changes. Several are superseded by later entries, so read the summary in the README's "Where things stand" first. The older material at the bottom is not in date order.
+
+## Moved from STATUS.md on 2026-11-24
+
+These sat at the top of STATUS.md and inside its constructions section. Their content is folded into the current STATUS.md.
+
+**First CFT audit completed (2026-11-23):** The managed investigation of
+the fixed delta=3/16,h=1.783 qubit Hamiltonian is published, including an
+independent AI audit. The finite-scale entropy evidence remains near two;
+the asymptotic CFT remains unidentified. Under a matched generic two-boson
+operator dictionary, the quoted exponents make the quartet the only
+relevant generic locking harmonic, even with mixing. That dictionary and
+the target coupling are unmeasured; a different assignment reproduces the
+same two exponents without relevant generic locking. See the
+[audited findings](contrib/qubit_ir_cft_team_20261123/README.md) and
+[prioritized missing measurements](contrib/qubit_ir_cft_team_20261123/TODO.md):
+pair momentum and primary identity, independent bulk modes and velocities,
+normalized response, compactification, and longer-scale stability.
+
+**New field-diagram investigation (2026-11-18):** One new GPT-6 Astra
+Max chat is active on the h-dependent phase diagram of
+H=sum[(9/16)XY+(7/16)YX+ZZ]-h sum Z. The
+[assignment](contrib/research_coordination_20261116/CHIRALITY_FIELD_DIAGRAM_20261118.md)
+covers the full field range and emphasizes the proposed c=3/2 transition
+and unresolved nearby c about 2 readings. This is a research deployment,
+not a new phase result; long production remains stopped.
+
+**Stability round completed (2026-11-18):** All four GPT-6 Astra Max
+chats completed. The modified d=9 bond gains volume-independent local
+bounds through fourth port order and exact nonzero-port ground-sector
+selection on compatible rings. Qubit work computes a connected
+finite-density quartet response, exposes a bare-versus-dressed momentum
+discrepancy, and specifies the missing full response measurement. The
+original d=10 mobile model gains a uniform theorem for the canonical
+zero-momentum contact response at half occupancy. All-scale CFT matching
+and the full mobile selector remain open; no new microscopic central
+charge is established. See the
+[results](contrib/research_coordination_20261116/STABILITY_RESULTS_20261118.md)
+and [assignments](contrib/research_coordination_20261116/STABILITY_ROUND_20261118.md).
+
+**Current research priority and completed round (2026-11-18):** Large c
+at microscopic d=2 and unbounded c at fixed small d. All four GPT-6 Astra
+Max chats completed their assignments. The strongest new result is an
+arbitrary-n leading-band theorem for a modified markerless d=9 bond.
+The d=10 mobile work certifies selected finite sector comparisons and an
+exact charge-field improvement. Qubit work computes finite quartet mixing
+and proves crystal preemption in the tested three-valley leading slice.
+No new microscopic central charge is established. See the
+[completed results](contrib/research_coordination_20261116/FOCUSED_RESULTS_20261118.md)
+and [assignment record](contrib/research_coordination_20261116/FOCUSED_ROUND_20261118.md).
+The earlier battery-saving stop on long qubit production remains in force.
+
+**Priority set on 2026-11-17:** Minimize physical on-site dimension while
+also tracking term counts, coefficient hierarchy and strength of evidence.
+A collaborator's reported d=10 arbitrary-c example had not yet been
+identified then; the publication below resolves that source search.
+The known d=10 demonstrator and two-flavour toy did not prove that claim.
+That round audited <=10-state mechanisms and transfer
+to the existing eleven-state alphabet, before further d=20/22-specific
+work. A finite n=11 or n=13 band certificate must not be promoted to an
+all-n result. See the [source ledger and assignments](contrib/research_coordination_20261116/SMALLEST_D_FOLLOWUP_20261117.md).
+
+**Earlier follow-up (2026-11-18, before publication below):** Live GitHub
+issues, comments, both branches and targeted history searches had not
+located the reported d=10 arbitrary-c model. Results gave a separate
+single-rail nine-state two-flavour resonant seed and an
+eleven-state all-n clock/zero-port-selector/simple-tree reduction; neither
+establishes arbitrary-c physics. The next calculations test three flavours
+in the nine-state seed and all-n loop splitting in the eleven-state model.
+The qubit chat studies symmetry-allowed locking operators while production
+remains stopped. [Audit and scope](contrib/research_coordination_20261116/GITHUB_D10_AUDIT_20261118.md).
+
+**Located (2026-11-18):** The reported d=10 candidate family is
+[contrib/markerless_d9_d10/](contrib/markerless_d9_d10/README.md), written
+on 2026-11-12 and kept in a local checkout until today. Nine material
+states without markers have predicted c=n with frozen cells; one
+uncoloured vacancy gives predicted c=n+1 at d=10. Its status is that of
+the d=11 and d=13 bonds: certified logical band data at the listed n,
+conditional infrared step, and no all-n theorem for that original
+parameter schedule. The newer modified all-n band proof and finite mobile
+comparisons are distinguished above. Thermodynamic mobile selection and
+the dressed-band J/t budget remain open. See REPORT for the referee outcome.
+
+**That earlier round is now complete:** The tested single-rail nine-state three-flavour point
+has the desired bands but a coupled leading RG instability. The eleven-state
+loop had analytically separated pair sums for a new n<=4 family; its all-n
+moment condition was left open then and is resolved by the new sign proof
+above. The qubit analysis allows quartet and mixed
+locking and corrects the drift covariance used in C180; C191's chiral
+implementation agrees with the correction. No c value was established and
+no DMRG was restarted. [Results and qualifications](contrib/research_coordination_20261116/ROUND5_RESULTS_20261118.md).
+
+**Finite-density follow-up (2026-11-18):** The
+[connected quartet calculation](contrib/qubit_detuned_quartet_20261118/README.md)
+gives nonzero finite-ring response coefficients at the fixed asymmetric
+point, but they are not yet a continuum coupling. The
+[dressed-mode audit](contrib/qubit_finite_density_modes_20261118/README.md)
+finds a finite-window carrier shift of opposite sign to the bare-band
+estimate and proves that the usual leading parameter probes have
+insufficient response rank. A normalized four-channel response, target
+velocities and a controlled thermodynamic mismatch are still needed to
+apply the new coupled locking-versus-detuning criterion. These results
+do not validate the order-of-magnitude stability estimate in item 5.
+
+## Moved from the README on 2026-11-24
 
 **Qubit update (2026-11-23):** The earlier c=3/2 interpretation of the
 simple chirality chain was withdrawn on November 19. Its proposed c
