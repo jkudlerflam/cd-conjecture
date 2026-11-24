@@ -1,0 +1,340 @@
+{
+  "source_sha256": {
+    "target_ladders.txt": "1c3f262c4a4cc5c18ad25afb2368c102369441d8af1eecd48a8e5df3168a371b",
+    "open_chain_ladders.txt": "d9dfdd5cd1af9c54d48f7a0f35ec3fd154816ac4a8d201a43ebf5f11dbddfe1e",
+    "correlators_odd_even.txt": "3007fa4145d53fe7618caf5bbf05543ae52d5e70392117616bf7ef0d7c8f199c"
+  },
+  "iMPS": {
+    "rows": [
+      {
+        "chi": 32,
+        "S": 1.56613,
+        "xi": 83.0,
+        "xi_even": 19.4,
+        "xi_odd": 83.0,
+        "kappa": 0.09459
+      },
+      {
+        "chi": 48,
+        "S": 1.66783,
+        "xi": 107.8,
+        "xi_even": 25.2,
+        "xi_odd": 107.8,
+        "kappa": 0.07724
+      },
+      {
+        "chi": 64,
+        "S": 1.75088,
+        "xi": 140.0,
+        "xi_even": 32.9,
+        "xi_odd": 140.0,
+        "kappa": 0.06897
+      },
+      {
+        "chi": 96,
+        "S": 1.86748,
+        "xi": 207.7,
+        "xi_even": 48.6,
+        "xi_odd": 207.7,
+        "kappa": 0.05953
+      },
+      {
+        "chi": 128,
+        "S": 1.94956,
+        "xi": 267.3,
+        "xi_even": 62.0,
+        "xi_odd": 267.3,
+        "kappa": 0.05332
+      },
+      {
+        "chi": 160,
+        "S": 2.01015,
+        "xi": 322.8,
+        "xi_even": 75.3,
+        "xi_odd": 322.8,
+        "kappa": 0.04936
+      },
+      {
+        "chi": 200,
+        "S": 2.07546,
+        "xi": 391.7,
+        "xi_even": 91.2,
+        "xi_odd": 391.7,
+        "kappa": 0.04527
+      },
+      {
+        "chi": 256,
+        "S": 2.14502,
+        "xi": 483.2,
+        "xi_even": 112.5,
+        "xi_odd": 483.2,
+        "kappa": 0.04132
+      }
+    ],
+    "fits": [
+      {
+        "chi_min": 96,
+        "channel": "xi",
+        "n": 5,
+        "entropy_c": {
+          "slope": 1.9726462377349152,
+          "slope_regression_se": 0.009855084022682767
+        },
+        "kappa_pseudoorder_x": {
+          "slope": 0.43170802037891265,
+          "slope_regression_se": 0.002894288455576572
+        }
+      },
+      {
+        "chi_min": 96,
+        "channel": "xi_even",
+        "n": 5,
+        "entropy_c": {
+          "slope": 1.9792656325640943,
+          "slope_regression_se": 0.01357650421515296
+        },
+        "kappa_pseudoorder_x": {
+          "slope": 0.4331299193613168,
+          "slope_regression_se": 0.004505448573895632
+        }
+      },
+      {
+        "chi_min": 128,
+        "channel": "xi",
+        "n": 4,
+        "entropy_c": {
+          "slope": 1.9854444586818756,
+          "slope_regression_se": 0.013169431328769807
+        },
+        "kappa_pseudoorder_x": {
+          "slope": 0.43236312629963813,
+          "slope_regression_se": 0.0052387015655556285
+        }
+      },
+      {
+        "chi_min": 128,
+        "channel": "xi_even",
+        "n": 4,
+        "entropy_c": {
+          "slope": 1.9760035658824229,
+          "slope_regression_se": 0.024348918239849537
+        },
+        "kappa_pseudoorder_x": {
+          "slope": 0.430279990825625,
+          "slope_regression_se": 0.007672779143976607
+        }
+      },
+      {
+        "chi_min": 160,
+        "channel": "xi",
+        "n": 3,
+        "entropy_c": {
+          "slope": 2.005756102289982,
+          "slope_regression_se": 0.010787112063732706
+        },
+        "kappa_pseudoorder_x": {
+          "slope": 0.44065770247879993,
+          "slope_regression_se": 0.0035150995257190233
+        }
+      },
+      {
+        "chi_min": 160,
+        "channel": "xi_even",
+        "n": 3,
+        "entropy_c": {
+          "slope": 2.015194051440476,
+          "slope_regression_se": 0.01643082734425125
+        },
+        "kappa_pseudoorder_x": {
+          "slope": 0.4427279941103961,
+          "slope_regression_se": 0.0047604101937787505
+        }
+      }
+    ]
+  },
+  "OBC": {
+    "rows": [
+      {
+        "L": 32,
+        "Xbar": 0.49689899764960205,
+        "Sbar": 0.96524,
+        "dSbar": -0.00022
+      },
+      {
+        "L": 64,
+        "Xbar": 0.6129781938109313,
+        "Sbar": 1.53781,
+        "dSbar": 0.00014
+      },
+      {
+        "L": 96,
+        "Xbar": 0.6807403437317343,
+        "Sbar": 1.72058,
+        "dSbar": 2.3e-05
+      },
+      {
+        "L": 128,
+        "Xbar": 0.7287796175625212,
+        "Sbar": 1.84232,
+        "dSbar": 0.00044
+      },
+      {
+        "L": 192,
+        "Xbar": 0.7964493594298055,
+        "Sbar": 1.97082,
+        "dSbar": 0.0015
+      },
+      {
+        "L": 256,
+        "Xbar": 0.8444424688007567,
+        "Sbar": 2.04613,
+        "dSbar": 0.0046
+      },
+      {
+        "L": 384,
+        "Xbar": 0.9120660741416846,
+        "Sbar": 2.18418,
+        "dSbar": 0.017
+      },
+      {
+        "L": 512,
+        "Xbar": 0.9600361260872027,
+        "Sbar": 2.15628,
+        "dSbar": 0.062
+      }
+    ],
+    "fits": [
+      {
+        "L_min": 96,
+        "lengths": [
+          96,
+          128,
+          192,
+          256,
+          384
+        ],
+        "slope": 1.9540070545770483,
+        "slope_regression_se": 0.07499945778328017
+      },
+      {
+        "L_min": 128,
+        "lengths": [
+          128,
+          192,
+          256,
+          384
+        ],
+        "slope": 1.8461698745897592,
+        "slope_regression_se": 0.05724359881064848
+      },
+      {
+        "L_min": 192,
+        "lengths": [
+          192,
+          256,
+          384
+        ],
+        "slope": 1.8582633272188032,
+        "slope_regression_se": 0.1311402822682189
+      }
+    ],
+    "local_slopes_96_through_384": [
+      2.5341765245831125,
+      1.8989284790241636,
+      1.5691835971266068,
+      2.04144690754085
+    ]
+  },
+  "exponents": {
+    "rows": [
+      {
+        "L": 96,
+        "eta_b": 0.3722,
+        "estimator_err_b": 0.033,
+        "eta_P3": 0.9495,
+        "estimator_err_P3": 0.1454,
+        "eta_P2": 1.1418,
+        "Kc_sf": 0.304,
+        "estimator_err_Kc_sf": 0.058,
+        "pair_inferred_Kc": 1.05318588730911,
+        "Ks_pair_formula": 1.8542555164101617,
+        "conjugate_variance_product_if_matched": 0.288648,
+        "quartet_dimension_if_matched": 1.899
+      },
+      {
+        "L": 128,
+        "eta_b": 0.3213,
+        "estimator_err_b": 0.0188,
+        "eta_P3": 0.8795,
+        "estimator_err_P3": 0.0912,
+        "eta_P2": 0.5852,
+        "Kc_sf": 0.447,
+        "estimator_err_Kc_sf": 0.067,
+        "pair_inferred_Kc": 1.137009664582149,
+        "Ks_pair_formula": 2.464875523786049,
+        "conjugate_variance_product_if_matched": 0.3931365,
+        "quartet_dimension_if_matched": 1.759
+      },
+      {
+        "L": 192,
+        "eta_b": 0.364,
+        "estimator_err_b": 0.0081,
+        "eta_P3": 0.8909,
+        "estimator_err_P3": 0.0228,
+        "eta_P2": 1.0247,
+        "Kc_sf": 0.599,
+        "estimator_err_Kc_sf": 0.039,
+        "pair_inferred_Kc": 1.1224604332697272,
+        "Ks_pair_formula": 1.769598301185631,
+        "conjugate_variance_product_if_matched": 0.5336491,
+        "quartet_dimension_if_matched": 1.7818
+      },
+      {
+        "L": 256,
+        "eta_b": 0.3621,
+        "estimator_err_b": 0.0142,
+        "eta_P3": 0.914,
+        "estimator_err_P3": 0.0199,
+        "eta_P2": 0.9415,
+        "Kc_sf": 0.58,
+        "estimator_err_Kc_sf": 0.026,
+        "pair_inferred_Kc": 1.0940919037199124,
+        "Ks_pair_formula": 1.8712574850299406,
+        "conjugate_variance_product_if_matched": 0.53012,
+        "quartet_dimension_if_matched": 1.828
+      },
+      {
+        "L": 384,
+        "eta_b": 0.3569,
+        "estimator_err_b": 0.01,
+        "eta_P3": 0.9193,
+        "estimator_err_P3": 0.0225,
+        "eta_P2": 0.9972,
+        "Kc_sf": 0.675,
+        "estimator_err_Kc_sf": 0.027,
+        "pair_inferred_Kc": 1.0877841836179702,
+        "Ks_pair_formula": 1.9673421207948063,
+        "conjugate_variance_product_if_matched": 0.6205275,
+        "quartet_dimension_if_matched": 1.8386
+      }
+    ],
+    "OBC_odd_even": [
+      {
+        "L": 64,
+        "chi": 512,
+        "odd_minus_even": 0.000186
+      },
+      {
+        "L": 96,
+        "chi": 512,
+        "odd_minus_even": 0.000448
+      },
+      {
+        "L": 128,
+        "chi": 512,
+        "odd_minus_even": 0.000297
+      }
+    ]
+  },
+  "scope": "Rounded target table regressions and estimator arithmetic. Raw target correlators unavailable."
+}

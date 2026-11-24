@@ -6,6 +6,22 @@ their newly proposed sixth-order qubit models. No human review is claimed.
 
 ## Reviewed checkpoint and assigned follow-ups
 
+The [managed CFT investigation](CFT_TEAM_20261123.md) completed its first
+audited round on the fixed delta=3/16,h=1.783 chirality Hamiltonian.
+The [published findings](../qubit_ir_cft_team_20261123/README.md) preserve
+the near-two finite-scale evidence but leave the asymptotic CFT unresolved.
+The [audited to-do list](../qubit_ir_cft_team_20261123/TODO.md) prioritizes
+pair momentum and primary identification, bulk modes and velocities,
+normalized response, compactification and locking tests. The GPT-6 Astra
+Max manager used two research agents and an auditor; its selection of
+GPT-6.2 Astra Max for those workers is disclosed in the team record.
+
+The [November 23 qubit status review](../qubit_c2_status_20261123/README.md)
+supersedes the historical c=3/2 interpretation below: that claim was
+withdrawn, and the simple chirality family now has two-method numerical
+evidence for c approximately two. It retains the open convergence and
+infrared-stability questions and compares the older candidate regime.
+
 The [chirality-chain field scan](CHIRALITY_FIELD_DIAGRAM_20261118.md)
 assigns one new GPT-6 Astra Max chat to the full h-axis phase diagram of
 the simple four-term qubit Hamiltonian. It prioritizes the proposed

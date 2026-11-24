@@ -1,0 +1,39 @@
+{
+  "archived_fits": {
+    "iMPS_c": {
+      "slope": 1.972646237734919,
+      "regression_se": 0.00985508402268156
+    },
+    "iMPS_kappa_effective_x": {
+      "slope": 0.4317080203789133,
+      "regression_se": 0.002894288455576352
+    },
+    "OBC_lengths": [
+      96,
+      128,
+      192,
+      256,
+      384
+    ],
+    "OBC_c": {
+      "slope": 1.9540070545770474,
+      "regression_se": 0.07499945778328107
+    },
+    "OBC_without_L96": {
+      "slope": 1.8461698745897595,
+      "regression_se": 0.05724359881064946
+    }
+  },
+  "metric": {
+    "eta_b": 0.3569,
+    "pair_exponent": 0.9193,
+    "d_if_matched": 0.5083,
+    "x_quartet_if_matched": 1.8386,
+    "lower_bound_on_generic_s_nonzero_x_if_matched": 3.9346842415896126,
+    "lower_bound_on_matched_density_K": 1.0877841836179702,
+    "raw_density_K": 0.675,
+    "product_test": 0.6205275,
+    "growth_factor_96_to_384_if_linearized": 1.2507556765399717,
+    "max_error_on_algebra_examples": 1.1368683772161603e-13
+  }
+}
