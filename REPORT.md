@@ -4170,12 +4170,7 @@ records the first calculations, scope and deployment status.
 
 ### 9.208 [superseded by §9.209b] A staggered-chirality Ising transition inside an incommensurate qubit liquid reads c = 3/2 at h_I = 1.7466 (Claude Opus 5.5, 2026-11-18; `contrib/d2_xy_yx_chirality_imps_20261118/`)
 
-[numerical] The chain is H = Σ [(9/16) X_jY_{j+1} + (7/16) Y_jX_{j+1} + Z_jZ_{j+1}] − h Σ Z_j, a qubit chain with parity only. Its staggered vector chirality X_jY_{j+2} − Y_jX_{j+2} orders inside a gapless incommensurate liquid at h_I = 1.7466 ± 0.0006. h_I comes from the crossing of d ln κ / d ln ξ with −1/8 in two-site iDMRG at χ = 128 to 256, and the crossing is stable between χ = 200 and 256. At h_I the fitted c is 1.53 to 1.59 and β/ν = 0.13 ± 0.01. Decoupled c = 3/2 controls run with the same code read 1.42 to 1.52, and c = 1 and c = 2 controls read 1.00 to 1.10 and 1.96. Adiabatic up and down scans at χ = 64 and 128 coincide, with no jump in κ. The starting point h = 7/4 is 0.0034 inside the ordered phase and reads c → 1. Open:
-- η was not measured independently;
-- the Ising velocity was not measured;
-- just below h_I, near h ≈ 1.739 to 1.741, the readings sit at c ≈ 1.9 to 2.2 out to χ = 320, with quasi-long-range bond order. Its asymptotic fate decides whether h_I is a clean boson × Ising point.
-
-This is the open mechanism 2 of STATUS ("a staggered Ising transition inside an incommensurate liquid"). The earlier Fable agent report and the scripts are on typhon in `~/cc_spinchain/`.
+[numerical] The chain is H = Σ [(9/16) X_jY_{j+1} + (7/16) Y_jX_{j+1} + Z_jZ_{j+1}] − h Σ Z_j, a qubit chain with parity only. Its staggered vector chirality X_jY_{j+2} − Y_jX_{j+2} orders inside a gapless incommensurate liquid at h_I = 1.7466 ± 0.0006 (iDMRG, χ ≤ 256), where c fitted 1.53 to 1.59. §9.209b withdraws the c = 3/2 reading. Scripts are on Typhon in `~/cc_spinchain/`.
 
 ### 9.209 Completed stability round for asymmetric qubits and markerless chains
 
@@ -4240,20 +4235,7 @@ One GPT-6.2 Astra run at effort max was asked to prove or disprove a finite C(d)
 
 ### 9.209b Correction to §9.208: the region below the chirality line reads as an extended c = 2 phase, so no c = 3/2 point (Claude Opus 5.5, 2026-11-19; `contrib/d2_xy_yx_chirality_imps_20261118/`)
 
-[numerical] I repeated the §9.208 iDMRG at δ = 3/16, 7/32 and 1/4. The chirality-locking line is at h_I = 1.7467 (δ = 1/8), 1.7875 (3/16) and about 1.8105 (7/32), and it is absent at δ = 1/4. There the chain goes from a c = 1.00 liquid straight to a gapped state at 1.836.
-
-Below the line, at every δ where the line exists, there is a region that starts abruptly above a c = 1 liquid. It reads like the c = 2 control (XX × XX, fitted 1.96), not like any Ising control:
-- fitted c = 1.973 ± 0.010 at δ = 3/16, h = 1.783 (χ = 96 to 256);
-- fitted c = 1.919 ± 0.009 at δ = 1/8, h = 1.7405 (χ to 320);
-- the order parameter (κ, or the bond order near the lower edge) decays as a stable power of ξ, with an exponent that varies continuously across the region and reaches about 1/8 at the line.
-
-If this is a genuine c = 2 phase, the c-theorem forces c ≥ 2 on the line. The 1.4 to 1.6 readings at h_I are then crossovers, and the §9.208 claim of c = 3/2 is withdrawn. The new candidate is an open c = 2 region of a parity-only qubit chain, a wedge closing between δ = 7/32 and 1/4, for example at δ = 3/16, 1.780 ≲ h < 1.7875.
-
-Open:
-- c = 2 against two close critical lines read at finite χ;
-- the second boson's field theory, where locking at x ≈ 1/8 suggests a four-fold anisotropy;
-- the abrupt lower edge;
-- the multicritical endpoint.
+[numerical] At δ = 3/16, 7/32 and 1/4 the chirality line sits at h_I = 1.7875, about 1.8105, and nowhere (at δ = 1/4 a c = 1 liquid goes straight to a gapped state). At δ = 1/8 it is 1.7467. Just below the line, wherever it exists, an abruptly bounded wedge reads like the XX × XX control (1.96): c = 1.973 ± 0.010 at δ = 3/16, h = 1.783 and 1.919 ± 0.009 at δ = 1/8, h = 1.7405 (iDMRG, χ to 256 or 320). The 1.4 to 1.6 readings at h_I are crossovers, and the c = 3/2 claim is withdrawn.
 
 ### 9.211 The cell velocity budget at all orders, and a correction to the d = 9 velocity ladder (Cd62b, Astra gpt-6.2-astra, 2026-11-19; `codex/work_Cd62b/`; scripts rerun and the d = 9 finding checked independently by the coordinator, Claude Opus 5.5; the proof not checked line by line, not yet refereed)
 
@@ -4267,123 +4249,45 @@ One GPT-6.2 Astra run at effort max was asked to prove or break the cell velocit
 
 ### 9.212 Open chains agree: the region below the chirality line reads c ≈ 2 at L = 96 to 384 (Claude Opus 5.5, 2026-11-21; `contrib/d2_xy_yx_chirality_imps_20261118/`)
 
-[numerical] This is the second method asked for in §9.209b. It uses finite two-site DMRG on open chains, with the same TeNPy model code as the iDMRG runs, parity conserved, χ up to 1024. The code was checked against an ED of the original-frame Hamiltonian, built by hand at L = 12, which agrees to 12 digits in both parity sectors at both points below.
+[numerical] Finite DMRG on open chains, χ ≤ 1024, checked against a hand-built ED at L = 12 (12 digits). c is the slope of the central-quarter average of S(l) against the same average of (1/6) ln[(2L/π) sin(πl/L)], across L.
 
-c comes from S(l) averaged over the central quarter of the chain, |l − L/2| ≤ L/8, which spans several Friedel periods for L ≥ 96. That average is fitted against the same average of (1/6) ln[(2L/π) sin(πl/L)] across L. The controls give the same filling away from half (hA = 0.3), so they carry Friedel oscillations too.
+| run | c |
+|---|---|
+| controls: XX × gapped TFIM, XX × critical TFIM, XX × XX | 0.99, 1.48, 1.96 |
+| δ = 3/16, h = 1.772 (L = 96 to 512) | 1.00 ± 0.01 |
+| δ = 3/16, h = 1.783 (L = 96 to 384) | 1.96 ± 0.08 |
+| δ = 1/8, h = 1.7405 (L = 96 to 384) | 1.90 ± 0.12 |
 
-| run | c from the window average | local slopes (from L = 96, or 64 for the controls) |
-|---|---|---|
-| XX × gapped TFIM (c = 1) | 0.99 | 0.96 to 1.03 |
-| XX × critical TFIM (c = 3/2) | 1.48 ± 0.01 (L = 64 to 384) | 1.39 to 1.54 |
-| XX × XX (c = 2) | 1.96 (L = 64 to 192) | 1.93 to 1.97 |
-| target, δ = 3/16, h = 1.772 (c = 1 liquid) | 1.00 ± 0.01 (L = 96 to 512) | 0.89 to 1.07 |
-| target, δ = 3/16, h = 1.783 | 1.96 ± 0.08 (L = 96 to 384) | 2.53, 1.90, 1.57, 2.04 |
-| target, δ = 1/8, h = 1.7405 | 1.90 ± 0.12 (L = 96 to 384) | 0.85, 2.57, 1.66, 1.84 |
+The main uncertainty is a ±0.5 scatter of the local slopes, apparently the 34-site spiral pitch beating against L. Truncation adds 0.02 to 0.04. Single-profile fits give 2.0 to 2.2. A crossover beyond about 400 sites is not excluded.
 
-- Convergence in χ is the limiting factor in the c ≈ 2 region, as it is for XX × XX. Energies converge by χ = 512, but S(L/2) keeps rising. At χ = 1024 the last step (768 → 1024) moves the window average by less than 5e-3 up to L = 256 and by 0.011 to 0.017 at L = 384. Adding half of that last step as a tail estimate moves the fits up by 0.02 to 0.04.
-- Dropping L = 96 gives 1.85 ± 0.06 and 2.04 ± 0.15. The local slopes scatter by about ±0.5 at both points, about five times the scatter at the c = 1 point. This seems to come from the 34-site spiral pitch beating against L, and it is the main uncertainty. A downward drift of the slopes at δ = 3/16 between L = 128 and 256 reversed at L = 384.
-- Fits to single profiles over L/8 ≤ l ≤ 7L/8 give 2.0 to 2.2 at L = 192 to 384 at both points, and 0.96 to 1.01 at the c = 1 point.
-- L = 512 at χ = 512 and the control at L ≥ 256 are not converged and are not used.
+### 9.213 The chirality-chain wedge lies in the family of the d = 2 c = 2 candidate, at V/Δ = 4 and on its tuning condition (Claude Opus 5.5, 2026-11-23; observation by J. Kudler-Flam)
 
-Together with §9.209b, two methods now read c ≈ 2 at two points of the wedge: iDMRG 1.97 and 1.92, open chains 1.96 and 1.90. Neither reads c = 1, and the open-chain numbers sit well above what the c = 3/2 control reads with the same estimator. The open questions of §9.209b remain. A crossover length beyond about 400 sites is not excluded, and nothing yet identifies the second gapless mode.
-
-### 9.213 The chirality-chain wedge lies in the family of the d = 2 c = 2 candidate, at V/Δ = 4 and on its tuning condition (Claude Opus 5.5, 2026-11-23; observation by J. Kudler-Flam; mapping derived by hand, not yet checked by a second agent)
-
-[derived] Split the chain of §9.208 as a X_jY_{j+1} + b Y_jX_{j+1} = (1/2)(X_jY_{j+1} + Y_jX_{j+1}) + (δ/2)(X_jY_{j+1} − Y_jX_{j+1}). A uniform rotation by π/4 about z maps XY + YX to XX − YY and leaves the DM term XY − YX and every Z unchanged. The chain becomes
+[derived] Write a XY + b YX = (1/2)(XY + YX) + (δ/2)(XY − YX) and rotate every site by π/4 about z. The chain becomes
 
 H = Σ_j [ (X_jX_{j+1} − Y_jY_{j+1})/2 + (δ/2)(X_jY_{j+1} − Y_jX_{j+1}) + Z_jZ_{j+1} ] − h Σ_j Z_j,
 
-which is the family of the "d = 2: a candidate counterexample with c = 2" section of STATUS (pairing Δ = 1, a pure DM hop, on the symmetric stratum), with J_z = 1 in place of 10. In that section's normalisation:
+the family of the STATUS c = 2 candidate with J_z = 1 instead of 10. Then V/Δ = 4 (candidate 40), ε = 1/4 (1/40), and t₂ = Δ²/2V = 1/8, so δ = 1/8 sits on the tuning condition 2D = t₂. The field over the wedge lies 2.0 to 2.1 t₂ below the blockade value (candidate 1.9 t₂).
 
-| | the STATUS candidate | this chain at δ = 1/8 |
-|---|---|---|
-| V/Δ, with V = 4J_z | 40 | 4 |
-| ε = Δ/V | 1/40 | 1/4 |
-| second-order hop t₂ = Δ²/2V | 1/80 | 1/8 |
-| direct hop 2D | 1/80 | δ = 1/8 |
-| field below the blockade value 2J_z, in units of t₂ | 1.9 | 2.0 to 2.1 over the c ≈ 2 window h = 1.739 to 1.7467 |
+Hypothesis: the wedge is the two-valley liquid at ε = 1/4, with the lower edge as pair binding. (§9.215 shows that κ cannot be the valley imbalance, so the locked phase above needs another identification.) If this holds, c ≈ 2 survives to ε = 1/4, and the charge-locking estimate of open item 5, which predicts locking at order ten sites here, is too pessimistic. Tests are in §9.214.
 
-So δ = 1/8 sits on the tuning condition 2D = t₂, and the field sits at a comparable remainder. The match of the field is only to order t₂, which is not a sharp statement at ε = 1/4.
+### 9.214 Tests of §9.213: K_s ≈ 2 inside the wedge, pair binding at the lower edge unsettled, and no c ≈ 2 below the tuning point at δ = 1/16 (Claude Opus 5.5, 2026-11-23; `contrib/d2_xy_yx_chirality_imps_20261118/`)
 
-Reading, as a hypothesis to test. If the wedge of §9.209b and §9.212 is the two-valley liquid at ε = 1/4, then:
-- the κ-locked phase above it is valley-polarised, with c = 1, and κ measures the valley imbalance;
-- the abrupt lower edge is the pair-binding (pseudospin-gap) transition into the pair liquid with c = 1;
-- the wedge, from δ = 1/8 to about 7/32 and closed before 1/4, is the detuning range at this ε.
+[numerical] Exponents. The C193 estimators (`codex/work_C193/ckpt_meas/ana193.py`, frozen ranges unchanged) were run on correlators of the χ = 1024 open-chain states (code checked against dense vectors to 2e-14; the complex data are in `contrib/d2_xy_yx_chirality_imps_20261118/meas/`).
 
-Two consequences, if the identification holds.
-- It bears on "How large ε can be is open". Two methods read c ≈ 2 at ε = 1/4, out to ξ ≈ 700 (iDMRG) and L = 384 (open chains).
-- It bears on open item 5, charge locking. That estimate scales the O₄ coupling as ε² with dimension about 1.25, so from ε = 1/40 to 1/4 it shortens the locking length by roughly 10^2.7, to order ten sites for C₄ of order one, on the symmetric stratum. No sign of locking is seen out to several hundred sites. So either C₄ is much smaller than one, or O₄ is not relevant at this coupling, or the estimate does not carry over to ε = 1/4.
+| point | n | η_b | pair exponent 1/K_c | K_s |
+|---|---|---|---|---|
+| wedge, δ = 3/16, h = 1.783, L = 192 to 384 | 0.33 | 0.357 to 0.364 | 0.89 to 0.92 | 1.77 to 1.97 (±0.2) |
+| wedge, δ = 1/8, h = 1.7405, L = 256, 384 | 0.39 | 0.35, 0.36 | not stable | undetermined |
+| c = 1 point, δ = 3/16, h = 1.772 | 0.40 | about 1.9 | about 1.1 | — |
+| STATUS candidate (§9.182) | 0.19 | 0.28 to 0.30 | 0.63 | 1.3 to 2.05 |
 
-Tests in progress: δ = 1/16 and 3/32, below the tuning point; the pseudospin and charge exponents (η_b, the inter-valley pair exponent, K_c and K_s, with the estimators of §9.161 and §9.182) inside the wedge; and the odd-even energy across the lower edge.
+So K_s ≈ 2, in the candidate's band, with no downward drift to L = 384. The charge sector differs (K_c ≈ 1.09 against 1.6), at 1.7 times the density. The open-end correction of §9.182 is not applied.
 
-### 9.214 Exponents inside the chirality-chain wedge: K_s ≈ 2 at δ = 3/16 by the C193 estimators, and a one-body exponent that jumps across the lower edge; the δ < 1/8 iMPS cuts failed (Claude Opus 5.5, 2026-11-23; `contrib/d2_xy_yx_chirality_imps_20261118/`)
+[numerical] The lower edge. Below it η_b jumps to about 1.9 while the pair exponent stays near 1.1, and a finite odd–even splitting (2e-3 to 9e-3) opens. Inside the wedge the two parity sectors are degenerate to |L dE| ≤ 0.04. But the one-body function at the c = 1 point decays as r^(−2), not exponentially, and the sign of the splitting alternates with L, as an end-bound energy would. So pair binding is suggested, not shown. The test needs a chain without ends.
 
-Scope. These are the first tests of the hypothesis of §9.213, that the wedge is the two-valley liquid at ε = 1/4. The correlators of §9.182 were measured on the stored χ = 1024 open-chain states of §9.212 with `scripts/meas_obc.py`: the boson one-body function, the connected inter-valley pair function at separations 2 and 3, and the connected density correlator, with particles = down spins. The code matches dense vectors at L = 10 to 2.4e-14. The C193 estimators (`codex/work_C193/ckpt_meas/ana193.py` with `frozen.json`) were run unchanged. Tables are in `tables/correlators_odd_even.txt`.
+[numerical] Below the tuning point. The iMPS cuts failed (they converge to the reversed polarised state), so open chains were used instead, at L = 64 to 192 and χ ≤ 512. At δ = 1/16 the chain is gapped for h ≤ 1.725. Its gapless window, h ≈ 1.73 to 1.74, reads local c(128 → 192) = 0.95 to 1.21, where the wedge points read 1.9 and 2.6 at the same sizes. At δ = 3/32 the onset (h = 1.727 to 1.735) shows level crossings and is undecided, and iMPS puts h ≥ 1.735 in the locked phase.
 
-[numerical] Exponents. Columns give η_b, the pair exponent at separation 3, the structure-factor K_c, and K_s = 1/(4η_b − pair exponent). Errors are the estimator's own.
-
-| point | n (mid-chain) | L | η_b | pair exponent | K_c (structure factor) | K_s (pair) |
-|---|---|---|---|---|---|---|
-| δ = 3/16, h = 1.783 (wedge) | 0.33 | 192 | 0.364(8) | 0.89(2) | 0.60 | 1.77(12) |
-| | | 256 | 0.362(14) | 0.91(2) | 0.58 | 1.87(21) |
-| | | 384 | 0.357(10) | 0.92(2) | 0.68 | 1.97(18) |
-| δ = 1/8, h = 1.7405 (wedge) | 0.39 | 256 | 0.35(9) | 0.96(12) | 0.51 | 2.3(1.9) |
-| | | 384 | 0.358(25) | 1.21(18) | 0.54 | 4.4(4.0) |
-| δ = 3/16, h = 1.772 (c = 1, below the lower edge) | 0.40 | 256 | 1.95(1) | 1.12(13) | 0.21 | — |
-| | | 384 | 1.90(1) | 1.17(11) | 0.25 | — |
-| STATUS candidate, §9.182, L = 256 | 0.19 | 256 | 0.28 to 0.30 | 0.63 to 0.64 | 1.70 to 1.73 | 1.84 to 2.05 |
-
-At δ = 3/16, η_b is flat to 0.01 over L = 192 to 384, and K_s from the pair estimate is 1.8 to 2.0, rising slightly with L rather than falling. That lies in the same band as the candidate. The pseudospin backscattering then has dimension 2K_s ≈ 4 and is irrelevant, which is the stability reading of §9.161 and §9.182 carried to ε = 1/4. The charge sector is not the candidate's. The pair exponent is 0.9 rather than 0.63, so 1/K_c ≈ 0.92 and K_c ≈ 1.09 (corrected 2026-11-24, the first version had the reciprocal, as §9.215 points out) at a density about 1.7 times higher. The structure-factor K_c (0.6 to 0.7, still drifting up) disagrees with the pair estimate. In §9.182 the same estimator was still moving at L = 256, so the structure-factor number is not used here. At δ = 1/8, η_b agrees with δ = 3/16, but the pair exponent is not stable in L, so K_s is undetermined there. The end effect on η_b found in §9.182 is not corrected here, so these K_s carry the same systematic error.
-
-[numerical] Across the lower edge. At the c = 1 point η_b jumps from 0.36 to about 1.9, while the pair function still decays slowly, with exponent about 1.1. The direct envelope of |⟨S⁻_i S⁺_j⟩| on centred pairs at L = 384 (`scripts/envelope.py`):
-- At the c = 1 point it falls by a factor of 3.9 to 4.0 per doubling of r from r = 16 to 160. That is a power law near r^(−2), with no sign of an exponential.
-- Inside the wedge it falls by about 1.2 per doubling.
-
-So below the edge single bosons are strongly suppressed relative to pairs, as pair binding would give. But the one-body decay there is algebraic over the range seen, not exponential.
-
-[numerical] Odd–even energies. Both parity sectors were run at L = 64, 96, 128 and 192, χ = 512, with χ changes below 2e-6 (table in the same file). dE is E(odd) − E(even).
-
-Inside the wedge:
-- At δ = 1/8, h = 1.7405 and 1.744, and at δ = 3/16, h = 1.783, |dE| ≤ 5e-4 and |L dE| ≤ 0.044 at every size.
-- The two sectors are nearly degenerate, with no gap growing like L.
-
-Below the edge at δ = 1/8:
-- At h = 1.737, dE is positive and nearly constant: 2.9, 2.4, 2.2 and 2.05 × 10⁻³. So L dE grows from 0.18 to 0.39.
-- At h = 1.734, dE is 7.5, 6.9 and 6.7 × 10⁻³ at L = 64 to 128.
-
-That is a finite odd–even splitting that opens at the lower edge and grows away from it. But the sign is not fixed:
-- At δ = 1/8, h = 1.734, L = 192 gives −2.05 × 10⁻³.
-- At δ = 3/16, h = 1.774, the sign alternates with L at nearly constant magnitude (−9.0, +8.1, −5.1, +8.1 × 10⁻³).
-
-A bulk pair gap would always favour the even sector. So on these open chains the splitting may be an energy bound to the ends that depends on how the incommensurate density meets the boundary, not a bulk single-particle gap. The open-chain test does not settle pair binding.
-
-[numerical] Below the tuning point.
-- The iMPS cuts at δ = 1/16 (h = 1.680 to 1.730) and δ = 3/32 (h = 1.705 to 1.745) failed. Four runs stopped on a TeNPy division by zero.
-- Most of the rest converged, from χ = 48 on, to the reversed polarised state, at E ≈ 1 + h ≈ +2.7 per site, against −1.00 for the true ground state. That is not a variational outcome and the runs were stopped.
-- The three δ = 3/32 runs that stayed on the ground branch, h = 1.735, 1.740 and 1.745, are in the chirality-locked phase. There m = 0.09 to 0.12 and c fits 1.1 to 1.2. Even so, the h = 1.745 run fell to the reversed state at χ = 200.
-- So at δ = 3/32 the locked phase reaches at least h = 1.735, and any wedge must lie lower.
-- Open-chain replacements (finite DMRG, L = 64 and 128, χ to 256, h step 0.005 over the same ranges) are submitted. They are listed at the end of `scripts/submit_obc.sh`.
-
-Reading. Inside the wedge at δ = 3/16, the two-valley reading passes its first quantitative test. K_s ≈ 2 is measured with the estimators that were calibrated on the candidate, and is stable to L = 384, while the charge exponent differs from the candidate's, as a density of 0.33 against 0.19 leads one to expect. Two signs point to pair binding at the lower edge, a jump of η_b to about 2 and an odd–even splitting that opens there. Neither is clean: the one-body decay stays algebraic, and the open-chain splitting changes sign with L. A test without ends is needed, the odd-sector correlation length or the parity gap on the infinite chain. Whether the wedge continues below δ = 1/8 is still open.
-
-Addendum, later on 2026-11-23: the open-chain replacements below the tuning point (`tables/open_chain_below_tuning.txt`).
-- [numerical] δ = 1/16, h = 1.680 to 1.725, L = 64 and 128, χ up to 256. Every run is converged by χ = 64, with truncation 1e-14 or smaller. The mid-chain entropy falls from L = 64 to 128 (for example 1.06 to 0.92 at h = 1.68). So this whole range is gapped. At h = 1.730 the entropy starts to rise, which is the onset of something gapless just above the scanned range.
-- [numerical] δ = 3/32. For h = 1.705 to 1.725 the chain is gapped, with S ≈ 0.7 at L = 128, close to ln 2. The gapless region begins between h = 1.725 and 1.730. At h = 1.735 and 1.740 the entropy is large and still moving at χ = 256 (by 0.01 to 0.04). The iMPS runs place those two fields in the chirality-locked phase.
-- Reading. Below the tuning point the c ≈ 2 wedge, if it exists at all, is narrower than about 0.01 in h at δ = 3/32. It would have to sit between the gapped phase and the locked phase, near h ≈ 1.727 to 1.735. That fits a wedge that opens near δ = 1/8, where 2D = t₂, but these sizes cannot rule out a thin sliver. Finer scans are running at L = 64 to 192 and χ ≤ 512: δ = 3/32 at h = 1.727 to 1.735 in steps of 0.002, and δ = 1/16 at h = 1.733 to 1.745.
-
-Correction to §9.213, from §9.215. The staggered chirality κ is translation-odd and a smooth valley imbalance is translation-even, so κ cannot measure the valley imbalance as §9.213 proposed. The κ-locked phase needs a different identification. The complex correlator data of this section (one-body rows, connected pair function at separations 2 and 3, density correlator, open chains L = 96 to 384) are in `contrib/d2_xy_yx_chirality_imps_20261118/meas/` (gzipped JSON in the C193 format), which supplies the pair data that §9.215 lists as missing.
-
-Second addendum, 2026-11-23: the fine scans below the tuning point (L = 64, 96, 128 and 192, χ ≤ 512, same table file). The comparison is the local c from S̄ between L = 128 and 192. At these two sizes the wedge points read 2.6 (δ = 1/8, h = 1.7405) and 1.9 (δ = 3/16, h = 1.783).
-- [numerical] δ = 1/16.
-  - At h = 1.733, 1.736 and 1.739 the chain is gapless, with local c from L = 128 to 192 equal to 1.04, 0.95 and 1.21. The fits over L = 96 to 192 give 1.4 to 1.6, with the slope falling with L at all three fields.
-  - At h = 1.742 S̄ saturates (c_L = 0.09 ± 0.04), and at h = 1.745 c_L = 0.83 ± 0.04.
-  - So the gapless window at δ = 1/16 reads c ≈ 1 at the largest sizes, with no sign of a second sector.
-- [numerical] δ = 3/32.
-  - At h = 1.727 and 1.729, S̄ jumps non-monotonically in L (for example 1.37 at L = 96 and 0.93 at L = 128). That points to level crossings at the edge of the gapless region, so no c can be read there.
-  - At h = 1.731 and 1.735 the local c is 1.85 and 1.32.
-  - At h = 1.733 the L = 192 run is not converged in χ (S̄ moved by 0.13 at the last stage).
-  - So δ = 3/32 is undecided at these sizes. The iMPS runs place h ≥ 1.735 in the locked phase, with c ≈ 1.1 to 1.2.
-- Reading. Below the tuning point there is no stretch of field that reads c ≈ 2 at the sizes where the wedge at δ ≥ 1/8 already does. At δ = 1/16 the gapless window reads c ≈ 1. This fits the wedge closing between δ = 1/16 and 1/8, close to the tuning condition 2D = t₂ of §9.213, but δ = 3/32 does not settle where it closes.
+Reading. Inside the wedge K_s ≈ 2 is consistent with the two-valley phase. The wedge seems to close between δ = 1/16 and 1/8, near the tuning condition. Pair binding at the lower edge remains open. Tables: `tables/correlators_odd_even.txt`, `tables/open_chain_below_tuning.txt`.
 
 ### 9.215 Audited first IR investigation at δ = 3/16, h = 1.783: operator identification remains decisive (OpenAI Codex team, 2026-11-23)
 
