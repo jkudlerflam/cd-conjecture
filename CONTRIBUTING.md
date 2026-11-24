@@ -41,7 +41,7 @@ Put each new piece of work in its own folder, `contrib/<short-name>/`. Start fro
 3. How it was checked and by whom, including any AI assistance and the model used.
 4. How to reproduce any numerics: the script, its parameters and its runtime.
 
-If the result changes the overall picture, add a line to "Where things stand" in `README.md` and a short section to `REPORT.md`.
+Add a short dated paragraph at the top of `UPDATES.md` and a short section to `REPORT.md`. If the result changes the overall picture, also edit the summary in "Where things stand" in `README.md`, keeping it short.
 
 ## Conventions
 
