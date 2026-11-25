@@ -4400,6 +4400,19 @@ Against the vertex inference. With the L = 384 pair exponent, a Gaussian vertex 
 
 Next. Longer chains are not justified by this result alone. The question now is a dimension difference of about 0.15 near 2, and it needs either rings, where the k = 0 spectrum gives x4 directly, or a sharper separation of the charge-four vertex from the neutral x = 2 operators (J J̄, T T̄) that the smaller quadrature may also contain.
 
+[numerical, checked] Correction, 2026-11-25 (Claude Opus 5.5), following the audit in §9.219. The text above is left as written. The exponents in the table are biased high by the 48-site Hann filter of `ana_quartet.py`, which averages a fast-falling power over a window as wide as the distances it is fitted on. The same code turns an exact r⁻⁴ into r⁻⁵·³⁸ and an exact r⁻¹ into r⁻¹·¹¹ over r = 32 to 56. `scripts/check_filter_bias.py` (it shares only the demodulation and quadrature functions with the table's scripts) reproduces the quoted slopes from the committed data and then finds, for each correlator on its own distance grid, the pure power whose filtered slope matches, at filter widths 32, 40, 48 and 56. Ranges over the four widths:
+
+| state | quoted slope (2, 5), width 48 | corrected p (2, 5) | quoted slope (3, 6), width 48 | corrected p (3, 6) | corrected pair exponent |
+|---|---|---|---|---|---|
+| L = 256, χ = 384 | 3.46 | 2.76 to 2.85 | 4.16 | 2.99 to 3.27 | 0.93 to 0.97 |
+| L = 256, χ = 1024 | 3.62 | 2.80 to 3.11 | 4.04 | 2.99 to 3.19 | 0.88 to 0.91 |
+| L = 384, χ = 512 | 4.17 | 3.13 to 3.56 | 4.61 | 3.48 to 3.54 | 0.87 to 0.90 |
+| L = 384, χ = 1024 | 3.89 | 2.96 to 3.34 | 4.31 | 3.23 to 3.36 | 0.84 to 0.86 |
+
+With x4 = p/2 this is x4 = 1.48 to 1.68 at L = 384, χ = 1024, and 1.38 to 1.78 over the whole table. The pair exponent drops from 0.93 to about 0.85, so the Gaussian vertex value becomes 2 × 0.85 = 1.7 in place of 1.86 (the C193 estimators of §9.214, a different fit, give 0.89 to 0.92 and so 1.78 to 1.84). The direct and inferred values now agree, and both are below 2, so the two statements above, that the direct value lies one error bar above the vertex prediction and that the quartet is marginal to weakly irrelevant at face value, no longer hold. At width 48 the corrected p still rises by about 0.2 from L = 256 to 384 at χ = 1024 and falls by about 0.2 from χ = 512 to 1024 at L = 384, so the size drift still points toward irrelevance and the bond-dimension drift toward relevance. Two checks on the correction. Without any correction, narrowing the filter from 48 to 32 sites already lowers the slopes at L = 384, χ = 1024 from 3.89 and 4.31 to 3.64 and 3.56, that is x4 from 1.95 and 2.16 to 1.82 and 1.78. Over the four widths the quoted slope of (3, 6) moves by 1.0 to 1.2 and its corrected p by 0.06 to 0.28, as a pure power through a biased filter would. For (2, 5) the correction does not flatten the width dependence (0.36 to 0.62 before, 0.09 to 0.43 after), and the corrected p falls as the filter widens in three of the four states, so a pure power does not fully describe that operator.
+
+What this does not settle. A pure power is assumed over the whole support of the filter, which begins at the operators' own separations (8 and 10 sites), where short-distance corrections are largest. §9.219 finds that a quadratic harmonic envelope moves (3, 6) to p = 4.035 (x4 = 2.02) and introduces sign changes, and that the signal depends strongly on the reference site. The charge of the smaller quadrature is not established, and its coupling is not measured. So this is a corrected reading, consistent with a weakly relevant quartet, and neither locking nor stability of the c ≈ 2 reading follows from it.
+
 ### 9.218 Proposed IAS CPU campaign after the direct quartet measurement (OpenAI Codex, 2026-11-25)
 
 [Proposal; no new physical result.] The
