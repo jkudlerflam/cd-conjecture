@@ -1,0 +1,25 @@
+{
+  "source_sha256": {
+    "contrib/quartet_typhon_20261125/common.py": "16e9584dec221fa00bd0ab6d2b3876a18b8b1d39443877ea653813555851a450",
+    "contrib/quartet_typhon_20261125/measure_checkpoints.py": "de908ad1780e5cf7ae594b4591aab821230fbce1a07ca72248f5647f8a3c347c",
+    "contrib/quartet_typhon_20261125/measure_matrix.py": "768f4c549022e566fdc05a0e655f630ca310f51f47199b671de5d81dd3da7cd2",
+    "contrib/quartet_typhon_20261125/measure_stage.py": "44857792fe358c1e6f95f00697dfb8fdf5e7ba05d9f4d8acb69123311bddf887",
+    "contrib/quartet_typhon_20261125/run_stage.py": "0d551556350c4ab2f7fe2c34726e6235f48fd44caadc63b224dd7ca657d69df9",
+    "contrib/d2_xy_yx_chirality_imps_20261118/scripts/ims.py": "8f2ccaab9c718f9ab7bc65639b90a44372450966939e470c9abd8292ea75c56e",
+    "contrib/d2_xy_yx_chirality_imps_20261118/scripts/ofd.py": "0bc181fe91fb622a53f8887f5f5a0bc31feaf737c12872dc6e4b60cd876e2914",
+    "contrib/d2_xy_yx_chirality_imps_20261118/scripts/meas_quartet.py": "d96523aea174b81dafea654037dc37e825dcb8e37531f68faecca6245e54377d"
+  },
+  "input": {
+    "cases": [
+      {
+        "tag": "target",
+        "state": "/home/pace/cd-conjecture/runs/quartet-pilot-20261125a/states/L128_p0_chi256.h5"
+      },
+      {
+        "tag": "c1control",
+        "state": "/home/pace/cd-conjecture/runs/quartet-c1control-20261125a/states/L128_p0_chi256.h5"
+      }
+    ]
+  },
+  "job_id": "17764463"
+}

@@ -4417,7 +4417,7 @@ No numerical jobs were submitted, and the current CFT conclusions are unchanged.
 
 ### 9.219 Quartet filter calibration and the IAS pilot (OpenAI Codex, GPT-6 Astra Max, 2026-11-25)
 
-[Numerical; ongoing; self-checked.] The
+[Numerical; self-checked.] The
 [quartet study](contrib/quartet_typhon_20261125/README.md) reproduces the
 six datasets and table of §9.217 exactly. Its 48-site local demodulation
 window substantially biases a power-law slope fitted over r=32–56: a
@@ -4439,9 +4439,24 @@ No locking, stability or asymptotic Virasoro c=2 conclusion follows.
 
 Literal Pauli/MPO/field/gauge checks pass within 2e-15; dense and independent
 product-superposition checks validate the extended quartet/density/bond
-matrix. IAS pilot **17764244**, L=128 even parity through chi=512,
-4 CPUs, 16 GB, one hour, is running. It preserves every stage on IAS
-and records sweep convergence, timing, memory and checkpoint roundtrips.
-Production expansion is gated on calibrated extraction and numerical
-checks, not allocation success. The contribution's progress and run
-ledgers record subsequent outcomes; historical §§9.216–9.217 are intact.
+matrix. IAS pilot **17764244**, L=128 even parity, completed in 50:58
+with exit 0:0 under its 4-CPU, 16-GB, one-hour cap. It preserved chi64,
+128 and 256 states, stopping at the deadline with chi256 unconverged;
+chi384/512 were not reached. The last |Delta E|=1.473e-6 and
+|Delta S|=.006754 exceed the requested 1e-9 and 1e-5. The h=1.772
+control converged through chi256 and matched rounded same-chi midpoint
+entropies, while the target did not match them even at sweep-converged
+chi128. Checkpoint roundtrips and a forced-deadline/restart ED test pass.
+
+Read-only final measurements show chi128-to-256 target changes of 280%
+and 93% in the smaller Q(2,5) and Q(3,6) signals (relative L2 with the
+new-state denominator, reference 47, width 32, r=24–44), essentially
+unchanged when holding the fitted momentum fixed. The enlarged matrix
+with common operator centres remains strongly sensitive to reference
+position and candidate-neutral subtraction; this is not a charge
+projection. Full L256/384 high-chi production was not launched because
+the calibration/identification and convergence gates failed. The .05
+uncertainty target and asymptotic quartet verdict remain unresolved.
+Small outputs, exact submitted sources, recipes, accounting and validation
+records are published in the contribution; large states remain on IAS.
+Historical §§9.216–9.217 are intact.

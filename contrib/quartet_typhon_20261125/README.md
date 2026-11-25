@@ -1,6 +1,6 @@
 # IAS quartet pilot and estimator audit
 
-2026-11-25. **[Numerical; ongoing.]** The historical six-file quartet
+2026-11-25. **[Numerical; bounded pilot and audit.]** The historical six-file quartet
 table reproduces exactly, but its quoted `x4 approximately 2.05 +/- .2`
 does **not** include a substantial local-filter bias. That estimate is
 not a calibrated charge-four dimension. The new data do not establish
@@ -103,15 +103,37 @@ must be tested with enlarged operator measurements and further matching.
 
 ## Pilot and validation
 
-The authorized IAS run is `quartet-pilot-20261125a`, Slurm **17764244**,
-4 CPUs, 16 GB, one hour, L=128, even parity, chi=64,128,256,384,512.
-At this checkpoint it is running. No unavailable historical MPS is assumed.
+The authorized IAS run `quartet-pilot-20261125a`, Slurm **17764244**,
+completed with exit 0:0 in 50 min 58 s. The request was 4 CPUs, 16 GB,
+one hour, L=128, even parity, chi=64,128,256,384,512. It reached chi256,
+saved a partial checkpoint at its conservative deadline, and did not run
+chi384/512. No unavailable historical MPS was assumed.
 Each stage saves an atomic HDF5 checkpoint in the remote `states/` directory,
 outside fetched `results/`; earlier stages are preserved. The new engine
 uses the original `ofd.py` model, initializer and solver settings, with
 one-sweep statistics and a conservative deadline. Resuming rebuilds the
 environment from the saved MPS and resets mixer/sweep counters; it is a
 variational warm restart, not a bitwise engine continuation.
+
+| L128 even target stage | Energy | Midpoint entropy | Central-quarter mean entropy | Sweep-converged? |
+|---|---:|---:|---:|---|
+| chi64 | -133.56333751015325 | 1.682258 | 1.596542 | No; 41 sweeps |
+| chi128 | -133.56423306491507 | 1.831550 | 1.754995 | Yes by stopping tests; 29 sweeps |
+| chi256 | -133.56448160561783 | 1.831076 | 1.867337 | No; deadline after 24 sweeps |
+
+At chi256, the last |Delta E|=1.473e-6 and |Delta S|=.006754 exceed
+the requested 1e-9 and 1e-5. The saved midpoint entropy exceeds the
+old rounded same-chi value 1.75439 by .07669. Even the sweep-converged
+chi128 state differs from its old same-chi midpoint entropy by .16107.
+Thus this is not matched-reference certification of the target.
+The final energy is 2.0154e-5 above the old chi1024 value, an unmatched-chi
+comparison that cannot certify either the state or its tiny correlators.
+
+Slurm records 509872 KB peak memory and 3 h 21 min 35 s TotalCPU;
+the process records a 542.10 MiB maximum RSS. The 1/4/8-thread diagnostic
+did not successfully vary MKL's observed thread count, so it provides no
+speedup estimate. Measured memory is inexpensive at these chi values;
+it is not a high-chi memory or runtime forecast.
 
 - Literal original/rotated MPO agreement and full end fields: below 2e-15.
 - Random complex L=12 parity-state correlators: below 3e-16 (shortened
@@ -148,6 +170,39 @@ filtered signal still changes by 4.6% (width 32, reference 47, r=24–44),
 despite energy changing only 1.2e-7. This illustrates why energy alone
 is insufficient for the tiny quartet correlator.
 
+The final read-only chi256 measurement, Slurm **17764463**, retains all
+pair/quartet normal and anomalous correlators plus the centred enlarged
+matrix. It completed in 6:32, exit 0:0, with Slurm MaxRSS 238904 KB.
+All repeated pair/quartet arrays from the unchanged control checkpoint
+agree exactly with its first measurement. Comparing chi128 to the
+partial chi256 target at reference 47,
+width 32 and r=24–44 gives relative L2 changes of **280%** for the
+smaller Q(2,5) signal and **93%** for Q(3,6), using the new-state norm in
+the denominator. The two pair channels change by 20% and 44%. The fitted
+kappa/pi shifts from .20445 to .20680. Holding kappa fixed at either
+value leaves the two quoted quartet changes essentially unchanged.
+The target checkpoint's parity is +1 within 3e-15 and its canonical-form
+norm-test error is 3.4e-14; serialization corruption does not explain
+these differences. The warning in the optimizer log describes the state
+before its final canonicalization.
+
+At chi256 the centred-matrix subtraction diagnostic remains reference
+sensitive: the same imaginary-hopping subtraction changes the smaller
+Q(2,5) signal by 37% versus 6% at references 47 and 56, and Q(3,6) by
+138% versus 5%. These use width 32, weights fitted over r=24–40 and an
+L2 change over all available filtered centres. They are not rank bounds,
+charge projections or primary dimensions.
+
+**Scale-up decision:** no L256/384 chi1024–2048 jobs or L512 jobs were
+launched. Correct Hamiltonian and correlator implementations, retained
+checkpoints and adequate measured memory passed. Target convergence,
+matching to old same-chi references, and the charge assignment/extraction
+systematics did not. Neither parity sector has new large-L production
+data here. The requested uncertainty near .05 in x4 is not achieved;
+locking versus irrelevance remains unresolved. A further optimization
+campaign would first need a reliable fixed-L convergence protocol and
+an estimator that distinguishes the charged operator from neutral terms.
+
 ## Reproducing
 
 Requirements: numpy, scipy, h5py, physics-tenpy==1.1.1, threadpoolctl;
@@ -167,7 +222,23 @@ python3 tools/typhon/typhon.py submit FRESH-RUN-NAME contrib/quartet_typhon_2026
 python3 tools/typhon/typhon.py status FRESH-RUN-NAME
 python3 tools/typhon/typhon.py logs FRESH-RUN-NAME
 python3 tools/typhon/typhon.py fetch FRESH-RUN-NAME
+python contrib/quartet_typhon_20261125/analyze_final.py
 ```
+
+The final analysis command reads the committed small results; it requires
+neither remote states nor a cluster allocation. Additional recipes are
+[control.job.json](control.job.json), [threads.job.json](threads.job.json),
+[centered.job.json](centered.job.json) and
+[final_measure.job.json](final_measure.job.json). Read-only measurement
+inputs name the immutable IAS checkpoints and must be pointed at the new
+run names when regenerating states. `collect_run.py RUN` copies fetched
+small artifacts to this contribution and checks the snapshot hash.
+Every run's `snapshot.tar.gz` preserves its exact submitted source/input
+bytes, accompanied by `source_sha256.json`, manifest and accounting.
+The current wrapper additionally separates measurement processes and
+corrects the entropy-window label; those changes do not alter the
+archived submissions. Restore a snapshot only into a separate checkout
+when reproducing its precise solver path.
 
 See [PROGRESS.md](PROGRESS.md), [RUNS.md](RUNS.md) and
 [VALIDATION.md](VALIDATION.md) for current status, accounting, source

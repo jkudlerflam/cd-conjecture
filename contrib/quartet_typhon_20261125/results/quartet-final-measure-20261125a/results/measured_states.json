@@ -1,0 +1,142 @@
+[
+  {
+    "tag": "target",
+    "state": "/home/pace/cd-conjecture/runs/quartet-pilot-20261125a/states/L128_p0_chi256.h5",
+    "state_sha256": "215a81db07c32cd6843266c4d49d56687e92f1259fa9eddaf370106ce464deaf",
+    "stage_metadata": {
+      "L": 128,
+      "parity": 0,
+      "h": 1.783,
+      "delta": 0.1875,
+      "chi": 256,
+      "chi_actual": 256,
+      "E": -133.56448160561783,
+      "E_sweep": -133.56448160561712,
+      "parity_expectation": 1.0000000000000173,
+      "Smid": 1.8310762035451265,
+      "Sbar": 1.8290261793696811,
+      "converged": false,
+      "shelved": true,
+      "sweeps": 24,
+      "dE_last": -1.4729201041063789e-06,
+      "dS_last": -0.006753627038221577,
+      "truncation": 5.465660558012221e-08,
+      "dmrg_seconds": 1579.515498638153,
+      "input_state": "/home/pace/cd-conjecture/runs/quartet-pilot-20261125a/states/L128_p0_chi128.h5",
+      "source_sha256": {
+        "contrib/quartet_typhon_20261125/common.py": "16e9584dec221fa00bd0ab6d2b3876a18b8b1d39443877ea653813555851a450",
+        "contrib/quartet_typhon_20261125/measure_matrix.py": "e51cca5426d3b6d2b899884ba1ca6068fb3a41db32a2b9be580e26ba1e411e56",
+        "contrib/quartet_typhon_20261125/run_ladder.py": "3b673e559a903723de3a29a634e66ac6a0ce576ed3d5dc98f3fd6ca128757335",
+        "contrib/quartet_typhon_20261125/run_stage.py": "8d28db40f42362912cf546f43e8fddd152bef8280ac317bb3918a1b0b7414fb5",
+        "contrib/quartet_typhon_20261125/validate.py": "5191c681122f5462f657479e3d8c701620e439e32329ff590891f2d27f6c4222",
+        "contrib/d2_xy_yx_chirality_imps_20261118/scripts/ims.py": "8f2ccaab9c718f9ab7bc65639b90a44372450966939e470c9abd8292ea75c56e",
+        "contrib/d2_xy_yx_chirality_imps_20261118/scripts/ofd.py": "0bc181fe91fb622a53f8887f5f5a0bc31feaf737c12872dc6e4b60cd876e2914",
+        "contrib/d2_xy_yx_chirality_imps_20261118/scripts/meas_quartet.py": "d96523aea174b81dafea654037dc37e825dcb8e37531f68faecca6245e54377d"
+      },
+      "config": {
+        "L": 128,
+        "parity": 0,
+        "h": 1.783,
+        "seed": 1,
+        "reserve_seconds": 420,
+        "max_sweeps": 40,
+        "tolE": 1e-09,
+        "tolS": 1e-05,
+        "measure_chis": [
+          128,
+          512
+        ],
+        "refs": [
+          47,
+          56,
+          64
+        ],
+        "matrix": true,
+        "matrix_refs": [
+          47
+        ],
+        "matrix_rmax": 64,
+        "tag": "target",
+        "chi": 256,
+        "results": "/home/pace/cd-conjecture/runs/quartet-pilot-20261125a/results",
+        "input_state": "/home/pace/cd-conjecture/runs/quartet-pilot-20261125a/states/L128_p0_chi128.h5",
+        "output_state": "/home/pace/cd-conjecture/runs/quartet-pilot-20261125a/states/L128_p0_chi256.h5",
+        "measure": false
+      },
+      "restart_semantics": "MPS warm restart with rebuilt environments; counters and mixer reset"
+    },
+    "measurement_complete": true,
+    "parity_expectation": 0.9999999999999976,
+    "saved_state_norm_error": 3.3244697861319375e-14
+  },
+  {
+    "tag": "c1control",
+    "state": "/home/pace/cd-conjecture/runs/quartet-c1control-20261125a/states/L128_p0_chi256.h5",
+    "state_sha256": "756abb646110a664c254fe714b2ec326bcf32f161a6ac6380ea44c8dee680fa6",
+    "stage_metadata": {
+      "L": 128,
+      "parity": 0,
+      "h": 1.772,
+      "delta": 0.1875,
+      "chi": 256,
+      "chi_actual": 256,
+      "E": -133.2253186480565,
+      "E_sweep": -133.22531864805617,
+      "parity_expectation": 0.9999999999999739,
+      "Smid": 0.7545745079834691,
+      "Sbar": 0.8398122040691086,
+      "converged": true,
+      "shelved": false,
+      "sweeps": 5,
+      "dE_last": -6.332356861094013e-11,
+      "dS_last": 1.2435224272522305e-07,
+      "truncation": 5.745779368907356e-12,
+      "dmrg_seconds": 283.3251292705536,
+      "input_state": "/home/pace/cd-conjecture/runs/quartet-c1control-20261125a/states/L128_p0_chi128.h5",
+      "source_sha256": {
+        "contrib/quartet_typhon_20261125/common.py": "16e9584dec221fa00bd0ab6d2b3876a18b8b1d39443877ea653813555851a450",
+        "contrib/quartet_typhon_20261125/measure_matrix.py": "e51cca5426d3b6d2b899884ba1ca6068fb3a41db32a2b9be580e26ba1e411e56",
+        "contrib/quartet_typhon_20261125/run_ladder.py": "3b673e559a903723de3a29a634e66ac6a0ce576ed3d5dc98f3fd6ca128757335",
+        "contrib/quartet_typhon_20261125/run_stage.py": "8ed3a7924555600eb669b0072a34d04818a5a9d72a58bcbfdcd6d49471438ab9",
+        "contrib/quartet_typhon_20261125/validate.py": "5191c681122f5462f657479e3d8c701620e439e32329ff590891f2d27f6c4222",
+        "contrib/d2_xy_yx_chirality_imps_20261118/scripts/ims.py": "8f2ccaab9c718f9ab7bc65639b90a44372450966939e470c9abd8292ea75c56e",
+        "contrib/d2_xy_yx_chirality_imps_20261118/scripts/ofd.py": "0bc181fe91fb622a53f8887f5f5a0bc31feaf737c12872dc6e4b60cd876e2914",
+        "contrib/d2_xy_yx_chirality_imps_20261118/scripts/meas_quartet.py": "d96523aea174b81dafea654037dc37e825dcb8e37531f68faecca6245e54377d"
+      },
+      "config": {
+        "L": 128,
+        "parity": 0,
+        "h": 1.772,
+        "seed": 1,
+        "reserve_seconds": 420,
+        "max_sweeps": 40,
+        "tolE": 1e-09,
+        "tolS": 1e-05,
+        "measure_chis": [
+          128,
+          256
+        ],
+        "refs": [
+          47,
+          56,
+          64
+        ],
+        "matrix": true,
+        "matrix_refs": [
+          47
+        ],
+        "matrix_rmax": 64,
+        "tag": "c1control",
+        "chi": 256,
+        "results": "/home/pace/cd-conjecture/runs/quartet-c1control-20261125a/results",
+        "input_state": "/home/pace/cd-conjecture/runs/quartet-c1control-20261125a/states/L128_p0_chi128.h5",
+        "output_state": "/home/pace/cd-conjecture/runs/quartet-c1control-20261125a/states/L128_p0_chi256.h5",
+        "measure": true
+      },
+      "restart_semantics": "MPS warm restart with rebuilt environments; counters and mixer reset"
+    },
+    "measurement_complete": true,
+    "parity_expectation": 0.9999999999999739,
+    "saved_state_norm_error": 5.2228867945085345e-14
+  }
+]

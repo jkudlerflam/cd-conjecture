@@ -1,0 +1,37 @@
+{
+  "run": "quartet-final-measure-20261125a",
+  "host": "ias-cluster",
+  "remote_dir": "~/cd-conjecture/runs/quartet-final-measure-20261125a",
+  "git_head": "9586405de2090431a9fe299bb29cb721b44ae365",
+  "git_status_selected": [],
+  "recipe": "contrib/quartet_typhon_20261125/final_measure.job.json",
+  "files": [
+    "contrib/d2_xy_yx_chirality_imps_20261118/scripts/ims.py",
+    "contrib/d2_xy_yx_chirality_imps_20261118/scripts/meas_quartet.py",
+    "contrib/d2_xy_yx_chirality_imps_20261118/scripts/ofd.py",
+    "contrib/quartet_typhon_20261125/common.py",
+    "contrib/quartet_typhon_20261125/final_measure.job.json",
+    "contrib/quartet_typhon_20261125/final_measure.json",
+    "contrib/quartet_typhon_20261125/measure_checkpoints.py",
+    "contrib/quartet_typhon_20261125/measure_matrix.py",
+    "contrib/quartet_typhon_20261125/measure_stage.py",
+    "contrib/quartet_typhon_20261125/run_stage.py"
+  ],
+  "command": [
+    "python",
+    "contrib/quartet_typhon_20261125/measure_checkpoints.py",
+    "contrib/quartet_typhon_20261125/final_measure.json"
+  ],
+  "cwd": "src",
+  "seed": null,
+  "resources": {
+    "account": "physics",
+    "partition": "typhon",
+    "nodes": 1,
+    "ntasks": 1,
+    "cpus-per-task": 1,
+    "mem": "4G",
+    "time": "00:20:00",
+    "qos": "short"
+  }
+}

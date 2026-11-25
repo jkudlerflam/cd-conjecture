@@ -18,7 +18,7 @@ def main(old,new,output):
     a=json.loads(gzip.decompress(Path(old).read_bytes()));b=json.loads(gzip.decompress(Path(new).read_bytes()))
     assert all(a[k]==b[k] for k in ('L','h','parity','refs'))
     A=historical();kappas=[A.fit_kappa(x['P']['2'],x['refs'][0]) for x in (a,b)]
-    raw=[];filtered=[]
+    raw=[];filtered=[];fixed_momentum=[]
     for kind in ('P','Q'):
         for key in a[kind]:
             for ref in a['refs']:
@@ -42,9 +42,19 @@ def main(old,new,output):
                     if not s.any():continue
                     filtered.append({'kind':kind,'operator':key,'ref':ref,'width':width,'window':[24,44],
                                      **metric(vals[0][s],vals[1][s])})
+                    for stage,kappa in zip(('old','new'),kappas):
+                        fixed=[]
+                        for data in (a,b):
+                            rr,C=raw_matrix(data[kind][key],ref);rc,K,_=filter_matrix(rr,kappa,width,2)
+                            F=np.einsum('ar,rij->aij',K,C);large,small=eigenvalues(F)
+                            fixed.append(large if kind=='P' else small)
+                        fixed_momentum.append({'kind':kind,'operator':key,'ref':ref,'width':width,
+                            'window':[24,44],'momentum_from_stage':stage,'kappa_pi':float(kappa/np.pi),
+                            **metric(fixed[0][s],fixed[1][s])})
     write_json(output,{'old':str(old),'new':str(new),'old_chi':a['chi'],'new_chi':b['chi'],
         'kappa_pi':[float(k/np.pi) for k in kappas],'raw_changes':raw,'filtered_changes':filtered,
-        'note':'Finite-L convergence diagnostics. Filtered values use each stage kappa; no independent-sample errors or emergent-charge identification.'})
+        'filtered_fixed_momentum_changes':fixed_momentum,
+        'note':'Finite-L convergence diagnostics. filtered_changes uses each stage kappa; the fixed-momentum variants hold it common. Relative L2 changes use the new-state norm in the denominator. No independent-sample errors or emergent-charge identification.'})
 
 
 if __name__=='__main__':

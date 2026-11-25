@@ -1,0 +1,48 @@
+# Q d=2 s=4 done 18s
+# Q d=2 s=5 done 34s
+# Q d=3 s=6 done 52s
+# Q d=2 s=1 done 62s
+# P d=2 done 70s
+# P d=3 done 80s
+MATRIX ref=47 left=Q25m elapsed=5.5s
+MATRIX ref=47 left=Q25p elapsed=10.9s
+MATRIX ref=47 left=Q36m elapsed=16.3s
+MATRIX ref=47 left=Q36p elapsed=21.8s
+MATRIX ref=47 left=Z elapsed=27.2s
+MATRIX ref=47 left=ZZ elapsed=32.6s
+MATRIX ref=47 left=Tm elapsed=38.0s
+MATRIX ref=47 left=Tp elapsed=43.5s
+MATRIX ref=47 left=Z1 elapsed=49.0s
+MATRIX ref=56 left=Q25m elapsed=54.4s
+MATRIX ref=56 left=Q25p elapsed=59.9s
+MATRIX ref=56 left=Q36m elapsed=65.3s
+MATRIX ref=56 left=Q36p elapsed=70.8s
+MATRIX ref=56 left=Z elapsed=76.1s
+MATRIX ref=56 left=ZZ elapsed=81.5s
+MATRIX ref=56 left=Tm elapsed=86.9s
+MATRIX ref=56 left=Tp elapsed=92.2s
+MATRIX ref=56 left=Z1 elapsed=97.6s
+# Q d=2 s=4 done 18s
+# Q d=2 s=5 done 34s
+# Q d=3 s=6 done 52s
+# Q d=2 s=1 done 62s
+# P d=2 done 70s
+# P d=3 done 80s
+MATRIX ref=47 left=Q25m elapsed=5.5s
+MATRIX ref=47 left=Q25p elapsed=11.0s
+MATRIX ref=47 left=Q36m elapsed=16.4s
+MATRIX ref=47 left=Q36p elapsed=21.9s
+MATRIX ref=47 left=Z elapsed=27.4s
+MATRIX ref=47 left=ZZ elapsed=32.9s
+MATRIX ref=47 left=Tm elapsed=38.3s
+MATRIX ref=47 left=Tp elapsed=43.6s
+MATRIX ref=47 left=Z1 elapsed=49.0s
+MATRIX ref=56 left=Q25m elapsed=54.4s
+MATRIX ref=56 left=Q25p elapsed=59.8s
+MATRIX ref=56 left=Q36m elapsed=65.3s
+MATRIX ref=56 left=Q36p elapsed=70.7s
+MATRIX ref=56 left=Z elapsed=76.1s
+MATRIX ref=56 left=ZZ elapsed=81.5s
+MATRIX ref=56 left=Tm elapsed=86.8s
+MATRIX ref=56 left=Tp elapsed=92.0s
+MATRIX ref=56 left=Z1 elapsed=97.2s

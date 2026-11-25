@@ -22,6 +22,14 @@ def summarize():
                    summary_Sbar=m.get('Sbar'),summary_Sbar_window=m.get('Sbar_window','central half; initial wrapper label corrected here'),
                    abs_dE_last=None if m['dE_last'] is None else abs(m['dE_last']),
                    abs_dS_last=None if m['dS_last'] is None else abs(m['dS_last']))
+        sweeps=f.with_name(f.name.replace('_summary.json','_sweeps.jsonl'))
+        if sweeps.exists():
+            timings=np.array([json.loads(line)['seconds'] for line in sweeps.read_text().splitlines()])
+            row['per_sweep_seconds']={k:float(v) for k,v in zip(
+                ('minimum','median','maximum'),(timings.min(),np.median(timings),timings.max()))}
+            row['logged_sweeps']=len(timings)
+        quartet_name=f.name.replace('_summary.json','_quartet.json.gz')
+        row['measurement_runs']=[p.parents[1].name for p in sorted((HERE/'results').glob('*/results/'+quartet_name))]
         if L==128 and m['parity']==0:
             ref=REFERENCES.get(m['h'],{}).get(m['chi'])
             row.update(reference_Smid_same_chi=ref,Smid_minus_same_chi_reference=None if ref is None else m['Smid']-ref)

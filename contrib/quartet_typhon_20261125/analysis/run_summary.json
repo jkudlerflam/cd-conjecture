@@ -21,6 +21,15 @@
       "summary_Sbar_window": "central half; initial wrapper label corrected here",
       "abs_dE_last": 4.00149247070658e-10,
       "abs_dS_last": 3.3262084486729293e-07,
+      "per_sweep_seconds": {
+        "minimum": 19.632704257965088,
+        "median": 21.680744171142578,
+        "maximum": 22.91690754890442
+      },
+      "logged_sweeps": 5,
+      "measurement_runs": [
+        "quartet-c1control-20261125a"
+      ],
       "reference_Smid_same_chi": 0.75453,
       "Smid_minus_same_chi_reference": -3.2457723987411313e-06
     },
@@ -45,6 +54,16 @@
       "summary_Sbar_window": "central half; initial wrapper label corrected here",
       "abs_dE_last": 6.332356861094013e-11,
       "abs_dS_last": 1.2435224272522305e-07,
+      "per_sweep_seconds": {
+        "minimum": 38.15946078300476,
+        "median": 59.73650884628296,
+        "maximum": 69.3660626411438
+      },
+      "logged_sweeps": 5,
+      "measurement_runs": [
+        "quartet-c1control-20261125a",
+        "quartet-final-measure-20261125a"
+      ],
       "reference_Smid_same_chi": 0.75457,
       "Smid_minus_same_chi_reference": 4.507983469181909e-06
     },
@@ -69,6 +88,13 @@
       "summary_Sbar_window": "central half; initial wrapper label corrected here",
       "abs_dE_last": 3.7354652704379987e-10,
       "abs_dS_last": 5.365267674584118e-09,
+      "per_sweep_seconds": {
+        "minimum": 8.003965377807617,
+        "median": 13.33788776397705,
+        "maximum": 14.373183965682983
+      },
+      "logged_sweeps": 15,
+      "measurement_runs": [],
       "reference_Smid_same_chi": 0.7529,
       "Smid_minus_same_chi_reference": -1.8603212691425952e-06
     },
@@ -93,9 +119,53 @@
       "summary_Sbar_window": "central half; initial wrapper label corrected here",
       "abs_dE_last": 9.731593308970332e-11,
       "abs_dS_last": 6.022996175358841e-06,
+      "per_sweep_seconds": {
+        "minimum": 25.09644842147827,
+        "median": 25.904268503189087,
+        "maximum": 30.541675567626953
+      },
+      "logged_sweeps": 29,
+      "measurement_runs": [
+        "quartet-pilot-20261125a"
+      ],
       "reference_Smid_same_chi": 1.67048,
       "Smid_minus_same_chi_reference": 0.161069818415863,
       "E_minus_chi1024_reference": 0.00026869508494087313,
+      "energy_comparison_note": "Higher-chi reference, not same-chi convergence certificate"
+    },
+    {
+      "L": 128,
+      "h": 1.783,
+      "parity": 0,
+      "chi": 256,
+      "E": -133.56448160561783,
+      "Smid": 1.8310762035451265,
+      "converged": false,
+      "shelved": true,
+      "sweeps": 24,
+      "truncation": 5.465660558012221e-08,
+      "dmrg_seconds": 1579.515498638153,
+      "total_seconds": 1583.2900738716125,
+      "max_rss_mb": 542.09765625,
+      "measured": false,
+      "run": "quartet-pilot-20261125a",
+      "Sbar_central_quarter": 1.8673374455079048,
+      "summary_Sbar": 1.8290261793696811,
+      "summary_Sbar_window": "central half; initial wrapper label corrected here",
+      "abs_dE_last": 1.4729201041063789e-06,
+      "abs_dS_last": 0.006753627038221577,
+      "per_sweep_seconds": {
+        "minimum": 52.79627776145935,
+        "median": 69.06741285324097,
+        "maximum": 73.75387263298035
+      },
+      "logged_sweeps": 24,
+      "measurement_runs": [
+        "quartet-final-measure-20261125a"
+      ],
+      "reference_Smid_same_chi": 1.75439,
+      "Smid_minus_same_chi_reference": 0.07668620354512656,
+      "E_minus_chi1024_reference": 2.015438218450072e-05,
       "energy_comparison_note": "Higher-chi reference, not same-chi convergence certificate"
     },
     {
@@ -119,6 +189,13 @@
       "summary_Sbar_window": "central half; initial wrapper label corrected here",
       "abs_dE_last": 7.144507208067807e-09,
       "abs_dS_last": 1.7369985356729956e-06,
+      "per_sweep_seconds": {
+        "minimum": 8.984793186187744,
+        "median": 14.366912841796875,
+        "maximum": 16.2217755317688
+      },
+      "logged_sweeps": 41,
+      "measurement_runs": [],
       "reference_Smid_same_chi": 1.50606,
       "Smid_minus_same_chi_reference": 0.1761978505996482,
       "E_minus_chi1024_reference": 0.0011642498467665519,

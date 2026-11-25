@@ -4,15 +4,20 @@ Announcements of each research round, newest first. They were moved here from th
 
 ## 2026-11-25: quartet estimator calibration and IAS pilot
 
-[Numerical; ongoing.] The [quartet study](contrib/quartet_typhon_20261125/README.md)
+[Numerical.] The [quartet study](contrib/quartet_typhon_20261125/README.md)
 reproduces the six-file table exactly but finds a large filtering bias:
 the published 48-site procedure fits an exact asymptotic p=4 two-boson
 control as p=5.381 over r=32–56. Forward-filtered fitting repairs that
 calibration; operator/envelope dependence still prevents a replacement
 charge-four dimension. Thus the earlier x4≈2.05±0.2 is not a calibrated
 estimate. Dense Hamiltonian, field, gauge and extended-correlator checks
-pass. IAS pilot **17764244** is running at L=128, chi≤512 (4 CPUs,
-16 GB, one hour); larger runs remain gated on the audit (REPORT §9.219).
+pass. IAS pilot **17764244** completed in 50:58 and saved an unconverged
+L128 chi256 checkpoint; chi384/512 were not reached. The h=1.772 control
+matched same-chi entropy references through chi256. Target quartet signals
+still change by order one between chi128 and 256, and centred enlarged
+matrices do not certify the neutral-rank assumption. The conditional
+L256/384 expansion was not launched because these checks failed. Recipes,
+small data, source hashes and convergence limits are published (REPORT §9.219).
 
 ## 2026-11-25: proposed IAS numerical campaign
 
