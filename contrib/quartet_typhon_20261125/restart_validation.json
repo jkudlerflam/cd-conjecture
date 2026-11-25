@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "L": 8,
+  "parity": 0,
+  "forced_shelve": true,
+  "partial_sweeps": 1,
+  "partial_E": -8.988630468557016,
+  "resumed_E": -8.988630468557053,
+  "sector_ED_E": -8.988630468557052,
+  "energy_error": 1.7763568394002505e-15,
+  "roundtrip_overlap_abs": 1.000000000000003,
+  "resumed_converged": true,
+  "semantics": "canonical MPS reload; rebuilt optimizer; no bitwise trajectory claim"
+}

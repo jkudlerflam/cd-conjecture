@@ -1,0 +1,45 @@
+{
+  "run": "quartet-pilot-20261125a",
+  "host": "ias-cluster",
+  "remote_dir": "~/cd-conjecture/runs/quartet-pilot-20261125a",
+  "git_head": "389eadff7d05752b49711f238142fd9cb15c4e84",
+  "git_status_selected": [
+    "?? contrib/quartet_typhon_20261125/common.py",
+    "?? contrib/quartet_typhon_20261125/measure_matrix.py",
+    "?? contrib/quartet_typhon_20261125/pilot.job.json",
+    "?? contrib/quartet_typhon_20261125/pilot.json",
+    "?? contrib/quartet_typhon_20261125/run_ladder.py",
+    "?? contrib/quartet_typhon_20261125/run_stage.py",
+    "?? contrib/quartet_typhon_20261125/validate.py"
+  ],
+  "recipe": "contrib/quartet_typhon_20261125/pilot.job.json",
+  "files": [
+    "contrib/d2_xy_yx_chirality_imps_20261118/scripts/ims.py",
+    "contrib/d2_xy_yx_chirality_imps_20261118/scripts/meas_quartet.py",
+    "contrib/d2_xy_yx_chirality_imps_20261118/scripts/ofd.py",
+    "contrib/quartet_typhon_20261125/common.py",
+    "contrib/quartet_typhon_20261125/measure_matrix.py",
+    "contrib/quartet_typhon_20261125/pilot.job.json",
+    "contrib/quartet_typhon_20261125/pilot.json",
+    "contrib/quartet_typhon_20261125/run_ladder.py",
+    "contrib/quartet_typhon_20261125/run_stage.py",
+    "contrib/quartet_typhon_20261125/validate.py"
+  ],
+  "command": [
+    "python",
+    "contrib/quartet_typhon_20261125/run_ladder.py",
+    "contrib/quartet_typhon_20261125/pilot.json"
+  ],
+  "cwd": "src",
+  "seed": 1,
+  "resources": {
+    "account": "physics",
+    "partition": "typhon",
+    "nodes": 1,
+    "ntasks": 1,
+    "cpus-per-task": 4,
+    "mem": "16G",
+    "time": "01:00:00",
+    "qos": "short"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "L": 128,
+  "parity": 0,
+  "h": 1.772,
+  "chis": [
+    64,
+    128,
+    256
+  ],
+  "seed": 1,
+  "wall_seconds": 3600,
+  "reserve_seconds": 420,
+  "max_sweeps": 40,
+  "tolE": 1e-09,
+  "tolS": 1e-05,
+  "measure_chis": [
+    128,
+    256
+  ],
+  "refs": [
+    47,
+    56,
+    64
+  ],
+  "matrix": true,
+  "matrix_refs": [
+    47
+  ],
+  "matrix_rmax": 64,
+  "validate": true,
+  "tag": "c1control"
+}

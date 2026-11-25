@@ -15,6 +15,7 @@ import sys
 import time
 import h5py
 import numpy as np
+from threadpoolctl import threadpool_info
 from common import source_hashes, write_json
 import ims
 import ofd
@@ -49,6 +50,7 @@ class LoggedEngine(dmrg.TwoSiteDMRGEngine):
         st=self.sweep_stats
         row={k:float(st[k][-1]) for k in ('E','Delta_E','S','Delta_S','max_trunc_err','max_E_trunc','norm_err')}
         row.update(sweep=int(self.sweeps),seconds=time.time()-t,max_rss_mb=rss_mb(),chi=int(max(self.psi.chi)))
+        row['thread_counts']={p['internal_api']:p['num_threads'] for p in threadpool_info()}
         # First Delta_E can be NaN. JSON null preserves that it was not measured.
         row={k:(v if not isinstance(v,float) or np.isfinite(v) else None) for k,v in row.items()}
         with self.log_path.open('a') as f: f.write(json.dumps(row)+'\n')
@@ -94,13 +96,20 @@ def run(c):
     E,_=eng.run()
     S=psi.entanglement_entropy(); Z=psi.expectation_value('Sigmaz').real
     Epost=float(np.real(M.H_MPO.expectation_value(psi)))
+    parity_after=float(np.real(psi.expectation_value_term([('Sigmaz',i) for i in range(c['L'])])))
+    assert abs(parity_after-(-1)**c['parity'])<1e-9,parity_after
     converged=bool(eng.is_converged() and eng.mixer is None)
     st=eng.sweep_stats
     meta={'L':c['L'],'parity':c['parity'],'h':c.get('h',1.783),'delta':3/16,'chi':c['chi'],
-          'chi_actual':int(max(psi.chi)),'E':Epost,'E_sweep':float(E),'parity_expectation':parity,
-          'Smid':float(S[c['L']//2-1]),'Sbar':float(np.mean(S[c['L']//4-1:3*c['L']//4])),
+          'chi_actual':int(max(psi.chi)),'E':Epost,'E_sweep':float(E),'parity_expectation':parity_after,
+          'Smid':float(S[c['L']//2-1]),
+          'Sbar':float(np.mean(S[np.abs(np.arange(1,c['L'])-c['L']/2)<=c['L']/8])),
+          'Sbar_window':'|bond-L/2| <= L/8 (central quarter, including endpoints)',
+          'Scentral_half':float(np.mean(S[c['L']//4-1:3*c['L']//4])),
           'converged':converged,'shelved':bool(eng.shelve),'sweeps':int(eng.sweeps),
-          'dE_last':float(st['Delta_E'][-1]),'dS_last':float(st['Delta_S'][-1]),
+          'norm_err_saved':float(np.linalg.norm(psi.norm_test())),
+          'dE_last':float(st['Delta_E'][-1]) if np.isfinite(st['Delta_E'][-1]) else None,
+          'dS_last':float(st['Delta_S'][-1]) if np.isfinite(st['Delta_S'][-1]) else None,
           'truncation':float(st['max_trunc_err'][-1]),'dmrg_seconds':time.time()-t0,
           'input_state':c.get('input_state'),'source_sha256':source_hashes(),'config':c,
           'restart_semantics':'MPS warm restart with rebuilt environments; counters and mixer reset'}

@@ -17,6 +17,7 @@ import tempfile
 import time
 import numpy as np
 from scipy.optimize import minimize_scalar
+from scipy.linalg import toeplitz, det
 from common import BASE,HERE,sha256,write_json
 
 NAMES=['T1_L256_chi384','T1_L256','T1_L384_chi512','T1_L384','T3_L256','T3_L384']
@@ -185,14 +186,27 @@ def controls(out):
     nonid=float(np.max(abs(charge[:,None,None]*np.eye(2)-charge[:,None,None]*(np.outer(u,u)+np.outer(v,v)))))
     cr=lambda x:np.sinc(x/2)/2
     G=(cr(r)**2-cr(r-1)*cr(r+1))**2
+    # P_i=Sm_A_i Sm_B_i. The XX transverse correlator is half the
+    # Jordan-Wigner Toeplitz determinant, and independent chains factor.
+    pair=[]
+    for distance in r.astype(int):
+        g=lambda x:2*cr(x)-(np.asarray(x)==0)
+        mat=toeplitz(g(1+np.arange(distance)),g(1-np.arange(distance)))
+        pair.append((.5*det(mat))**2)
+    pair=np.array(pair)
     for width in (24,32,40,48,56,64):
         rc,K,cond=filter_matrix(r,kappa,width,2)
         filtered=(K@G).real
         results.append({'control':'exact_XX_times_XX_quartet_d4','true_charge_p':4.,'width':width,
                         'signed_fit':signed_fit(rc,filtered,32,56),'forward_power_fit':forward_fit(r,rc,K,filtered,32,56)})
+        filtered_pair=(K@pair).real
+        results.append({'control':'exact_XX_times_XX_pair_d4','true_charge_p':1.,'width':width,
+                        'signed_fit':signed_fit(rc,filtered_pair,32,56),
+                        'forward_power_fit':forward_fit(r,rc,K,filtered_pair,32,56)})
     write_json(out/'synthetic_controls.json',{'r':r.tolist(),'results':results,'nonidentifiability_max_abs':nonid,
         'two_boson_control':{'model':'two decoupled zero-field XX chains; microscopic d=4','G':G.tolist(),
-            'operator':'(Sm_A_i Sm_A_i+1)(Sm_B_i Sm_B_i+1)','asymptotic_p':4,'asymptotic_x':2},
+            'operator':'(Sm_A_i Sm_A_i+1)(Sm_B_i Sm_B_i+1)','asymptotic_p':4,'asymptotic_x':2,
+            'pair_operator':'Sm_A_i Sm_B_i','pair_G':pair.tolist(),'pair_asymptotic_p':1},
         'note':'Forward fitting a pure power repairs smoothing bias only; neutral contamination and oscillatory leakage remain hypotheses.'})
     with gzip.open(out/'synthetic_raw.json.gz','wt') as f:json.dump({'r':r.tolist(),'matrices':raw},f)
 

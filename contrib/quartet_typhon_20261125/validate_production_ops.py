@@ -27,20 +27,25 @@ def check():
         for name,j in ops: mats[j]=mats[j]@O[name]
         return sum(np.prod([np.vdot(x[j],mats[j]@y[j]) for j in range(L)]) for x in states for y in states)
     norm=ev([])
-    m=measure_matrix.measure(psi,[0,1,2],rmin=10,rmax=13,progress=False)
-    err=0.;count=0
-    for i,row in m['rows'].items():
-        C=np.array(row['C']);C=C[...,0]+1j*C[...,1]
-        for ai,an in enumerate(m['names']):
-            aa=[(n,int(i)+k) for n,k in m['operators'][an]]
-            for bi,bn in enumerate(m['names']):
-                for t,r in enumerate(row['r']):
-                    bb=[(n,int(i)+r+k) for n,k in m['operators'][bn]]
-                    ex=ev(aa+bb)/norm-ev(aa)*ev(bb)/norm**2
-                    err=max(err,abs(C[t,ai,bi]-ex));count+=1
+    err=0.;count=0;by_layout={}
+    for centered,refs in ((False,[0,1,2]),(True,[4,5])):
+        m=measure_matrix.measure(psi,refs,rmin=10,rmax=13,progress=False,centered=centered)
+        localerr=0.;localcount=0
+        for i,row in m['rows'].items():
+            C=np.array(row['C']);C=C[...,0]+1j*C[...,1]
+            for ai,an in enumerate(m['names']):
+                aa=[(n,int(i)+k) for n,k in m['operators'][an]]
+                for bi,bn in enumerate(m['names']):
+                    for t,r in enumerate(row['r']):
+                        bb=[(n,int(i)+r+k) for n,k in m['operators'][bn]]
+                        ex=ev(aa+bb)/norm-ev(aa)*ev(bb)/norm**2
+                        localerr=max(localerr,abs(C[t,ai,bi]-ex));localcount+=1
+        by_layout[str(centered)]={'entries':localcount,'max_abs_error':float(localerr)}
+        err=max(err,localerr);count+=localcount
     assert err<1e-12,err
     return {'passed':True,'L':L,'seed':20261126,'entries':count,'max_abs_error':float(err),
-            'state':'complex random product state projected onto even parity','exact_production_offsets':True}
+            'state':'complex random product state projected onto even parity','exact_production_offsets':True,
+            'by_centered_layout':by_layout}
 
 
 if __name__=='__main__':

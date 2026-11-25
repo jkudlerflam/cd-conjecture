@@ -1,0 +1,20 @@
+{
+  "files": [
+    "contrib/quartet_typhon_20261125/common.py",
+    "contrib/quartet_typhon_20261125/measure_matrix.py",
+    "contrib/quartet_typhon_20261125/measure_centered.py",
+    "contrib/quartet_typhon_20261125/centered.json"
+  ],
+  "command": [
+    "python",
+    "contrib/quartet_typhon_20261125/measure_centered.py",
+    "contrib/quartet_typhon_20261125/centered.json"
+  ],
+  "seed": null,
+  "resources": {
+    "cpus-per-task": 1,
+    "mem": "2G",
+    "time": "00:10:00",
+    "qos": "short"
+  }
+}

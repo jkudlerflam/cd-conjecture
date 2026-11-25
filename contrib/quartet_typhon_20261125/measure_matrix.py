@@ -8,8 +8,8 @@ import time
 import numpy as np
 
 
-def operators():
-    return {
+def operators(centered=False):
+    out = {
         'Q25m': [('Sm', k) for k in (0, 2, 5, 7)],
         'Q25p': [('Sp', k) for k in (0, 2, 5, 7)],
         'Q36m': [('Sm', k) for k in (0, 3, 6, 9)],
@@ -19,16 +19,24 @@ def operators():
         'Tm': [('Sp', 0), ('Sm', 1)],
         'Tp': [('Sm', 0), ('Sp', 1)],
     }
+    if centered:
+        for prefix,offsets in (('Q25',(-3,-1,2,4)),('Q36',(-4,-1,2,5))):
+            out[prefix+'m']=[('Sm',k) for k in offsets]
+            out[prefix+'p']=[('Sp',k) for k in offsets]
+        out['Z1']=[('Sigmaz',1)]
+    return out
 
 
-def hermitian_basis():
+def hermitian_basis(centered=False):
     """Rows map raw monomials to Hermitian quadratures, density and bonds."""
     names = ['Q25_Re', 'Q25_Im', 'Q36_Re', 'Q36_Im', 'Z', 'ZZ', 'T_Re', 'T_Im']
-    T = np.zeros((8, 8), complex)
+    T = np.zeros((8, 9 if centered else 8), complex)
     for a in (0, 2, 6):
         T[a, a:a+2] = .5
         T[a+1, a:a+2] = [-.5j, .5j]
     T[4, 4] = T[5, 5] = 1.
+    if centered:
+        T[4,4]=T[4,8]=.5;names[4]='Z_avg'
     return names, T
 
 
@@ -37,18 +45,24 @@ def pack(a):
     return np.stack((a.real, a.imag), axis=-1).tolist()
 
 
-def measure(psi, refs, rmin=12, rmax=96, progress=True):
-    ops = operators()
+def measure(psi, refs, rmin=12, rmax=96, progress=True,centered=False):
+    ops = operators(True) if centered else operators()
     L = psi.L
     spans = {k: max(i for _, i in t) for k, t in ops.items()}
-    exp = {k: np.array([psi.expectation_value_term([(o, j+i) for o, i in t])
-                       for j in range(L-spans[k])], complex) for k, t in ops.items()}
+    lower={k:-min(i for _,i in t) for k,t in ops.items()}
+    exp={}
+    for k,t in ops.items():
+        exp[k]=np.zeros(L,complex)
+        for j in range(lower[k],L-spans[k]):
+            exp[k][j]=psi.expectation_value_term([(o,j+i) for o,i in t])
     names = list(ops)
-    out = {'L': L, 'chi': int(max(psi.chi)), 'refs': refs, 'operators': ops,
+    out = {'L': L, 'chi': int(max(psi.chi)), 'refs': refs, 'operators': ops,'centered':centered,
+           'expectation_valid_anchors':{k:[lower[k],L-spans[k]-1] for k in ops},
            'names': names, 'expectations': {k: pack(v) for k, v in exp.items()}, 'rows': {}}
     ts = time.time()
     for i0 in refs:
-        r = np.arange(max(rmin, max(spans.values())+1), min(rmax, L-max(spans.values())-1-i0)+1)
+        assert i0>=max(lower.values()) and i0<L-max(spans.values())
+        r = np.arange(max(rmin,max(spans.values())+max(lower.values())+1),min(rmax,L-max(spans.values())-1-i0)+1)
         if not len(r):
             continue
         js = (i0+r).tolist()

@@ -2,8 +2,18 @@
   "passed": true,
   "L": 24,
   "seed": 20261126,
-  "entries": 704,
+  "entries": 1352,
   "max_abs_error": 6.661338147750939e-16,
   "state": "complex random product state projected onto even parity",
-  "exact_production_offsets": true
+  "exact_production_offsets": true,
+  "by_centered_layout": {
+    "False": {
+      "entries": 704,
+      "max_abs_error": 6.661338147750939e-16
+    },
+    "True": {
+      "entries": 648,
+      "max_abs_error": 2.9893669801409083e-16
+    }
+  }
 }

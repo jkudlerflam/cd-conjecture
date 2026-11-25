@@ -1,0 +1,33 @@
+{
+  "passed": true,
+  "seconds": 2.759962320327759,
+  "scope": "L24 chi4 one-sweep I/O test; not convergence evidence",
+  "converged": false,
+  "separate_measurement_completed": true,
+  "initial_delta_E_is_null": true,
+  "source_sha256": {
+    "contrib/quartet_typhon_20261125/analyze_matrix.py": "65b15066a528dc0a5584ce0f3867e98d14ac5ddfa13e2a1fe6cdd2397176f7cc",
+    "contrib/quartet_typhon_20261125/audit_calibration.py": "45247ccf848b5cac51a8345b4c5aa75166bc85fefdc9e6cd755add0ba22a1e70",
+    "contrib/quartet_typhon_20261125/audit_saved.py": "18bcf2eeab5724993a26eab5864ce640eb43efd3ec5724b9219a91b3f74055e1",
+    "contrib/quartet_typhon_20261125/benchmark_threads.py": "47e20ec772fd0e8e375d5f6072e1698cdb63b3cf0284ec1e46aebcf978eb27ba",
+    "contrib/quartet_typhon_20261125/collect_run.py": "5b65eee521ba041658e48f49a6a4412d8411e6b516a4fd9f9391b7f81197ee8e",
+    "contrib/quartet_typhon_20261125/common.py": "16e9584dec221fa00bd0ab6d2b3876a18b8b1d39443877ea653813555851a450",
+    "contrib/quartet_typhon_20261125/measure_centered.py": "9825f7d062ead1b9c411c3d608dfe6b4d03240fc4671a998d2bb3601c6c6ccca",
+    "contrib/quartet_typhon_20261125/measure_matrix.py": "768f4c549022e566fdc05a0e655f630ca310f51f47199b671de5d81dd3da7cd2",
+    "contrib/quartet_typhon_20261125/measure_stage.py": "9916115ba357e75b8ba49d7be5e5ea2558eb14fbeb74f3795d8fc296a5948291",
+    "contrib/quartet_typhon_20261125/plot_calibration.py": "bfb9556ef93bf19e08f749d53837852f5467bb29ef985aeefaf596fad0a27e28",
+    "contrib/quartet_typhon_20261125/run_ladder.py": "61e4e3c9837d7f24473cecdf6ac8cbbd7c2c40d861d23a3d6cba4084a8a50e97",
+    "contrib/quartet_typhon_20261125/run_stage.py": "0d551556350c4ab2f7fe2c34726e6235f48fd44caadc63b224dd7ca657d69df9",
+    "contrib/quartet_typhon_20261125/summarize_runs.py": "195742ac49a43e28956c9fa318ff7b5b7f7e97a17fc6bade09502058d6cec261",
+    "contrib/quartet_typhon_20261125/validate.py": "5191c681122f5462f657479e3d8c701620e439e32329ff590891f2d27f6c4222",
+    "contrib/quartet_typhon_20261125/validate_free_control.py": "fddcb13cdae8787a97e9b1a5754c462d15d60e8a30a2ed60f5c79e8f92e81eb1",
+    "contrib/quartet_typhon_20261125/validate_production_ops.py": "0e1f03b73f1c92a2601b99f3fddf82f1bdc3d1c4bc48579a68eadda3806d38ae",
+    "contrib/quartet_typhon_20261125/validate_restart.py": "cacce85a4ed2d94c1a4582579acb10a84d722bcc97390a692cedf7eedc8e0d6f",
+    "contrib/quartet_typhon_20261125/validate_workflow.py": "92597460b8ef55030372c59550bba93f8dee5849de7af816b487984d88097d1f",
+    "contrib/d2_xy_yx_chirality_imps_20261118/scripts/ims.py": "8f2ccaab9c718f9ab7bc65639b90a44372450966939e470c9abd8292ea75c56e",
+    "contrib/d2_xy_yx_chirality_imps_20261118/scripts/ofd.py": "0bc181fe91fb622a53f8887f5f5a0bc31feaf737c12872dc6e4b60cd876e2914",
+    "contrib/d2_xy_yx_chirality_imps_20261118/scripts/meas_quartet.py": "d96523aea174b81dafea654037dc37e825dcb8e37531f68faecca6245e54377d",
+    "contrib/d2_xy_yx_chirality_imps_20261118/scripts/ana_quartet.py": "f75da6ccdb0bfaece66470cb76f633bebfcc9a81f011ddc13d2d77e397fd7f46",
+    "contrib/d2_xy_yx_chirality_imps_20261118/scripts/quartet_table.py": "3c9caba36c3f747994e18c648b7703dcb0e3e418a5f1d4aecb10d42e8f81409e"
+  }
+}

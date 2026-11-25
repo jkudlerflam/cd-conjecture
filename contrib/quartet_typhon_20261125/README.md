@@ -35,9 +35,27 @@ log magnitudes are suppressed on sign-changing data; signed residuals
 are retained. The historical table itself used log absolute values even
 for some sign-changing control data.
 
+At L=384, chi=1024, width 48 and r=32–56, the individual-reference
+Q(2,5) slopes range from 3.727 to 4.061. For Q(3,6) they are 5.299,
+3.830 and a sign change (no log fit), versus 4.313 after reference
+averaging. Merely adding the next constant-amplitude harmonics changes
+these averaged slopes by less than .0002; reference position, window
+width and amplitude-envelope modelling are the material sensitivities.
+
 The local Hann filter averages a rapidly varying amplitude over 48
 sites before assigning it to the centre. Thus fitting the output to
 an unfiltered power law is biased, even at zero numerical noise.
+For a symmetric normalized kernel with second moment mu2, the expansion
+is `filtered(r^-p) = r^-p [1 + p(p+1) mu2/(2 r^2) + ...]`; the correction
+itself changes the slope. Here the window is too wide relative to r to
+rely on that leading expansion, so the calibration applies the full
+discrete kernel to every trial power.
+
+![Filter calibration and target model sensitivity](analysis/filter_calibration.png)
+
+The right panel shows conditional curve fits, including unstable
+sign-changing variants. It is a sensitivity display, not a distribution
+of independent measurements or an identified charge-four exponent.
 
 | Signal, with the historical 48-site filter and r=32–56 | True p | Naive output p | Forward-filtered power fit p |
 |---|---:|---:|---:|
@@ -46,6 +64,7 @@ an unfiltered power law is biased, even at zero numerical noise.
 | Exact infinite XX x XX quartet | 4.00 asymptotically | 5.3812 | 4.0040 |
 | Exact OBC XX x XX, L=256 | 4.00 asymptotically | 5.5913 | 4.0880 |
 | Exact OBC XX x XX, L=384 | 4.00 asymptotically | 5.4684 | 4.0400 |
+| Exact infinite XX x XX pair | 1.00 asymptotically | 1.1119 | 1.0000 |
 
 Here `p=2x` only after a scalar operator is matched. The exact two-boson
 control consists of two independent XX chains per site, with microscopic
@@ -56,6 +75,11 @@ control consists of two independent XX chains per site, with microscopic
 values use the exact occupied sine-wave projector. This is a calibration,
 not a d=2 construction. The h=1.772 qubit control is retained from both
 original chain lengths.
+
+The control pair `Sm_A_i Sm_B_i` uses the squared XX transverse-spin
+Toeplitz determinant. The one-chain adjacent-pair Wick formula and the
+transverse determinant independently agree with an L=8 dense ground-state
+calculation within 3e-16 (`free_control_validation.json`).
 
 Applying only a pure-power forward correction to the high-chi L=384
 target gives p=3.067 for Q(2,5) and 3.481 for Q(3,6). These are conditional
@@ -120,6 +144,10 @@ python3 tools/typhon/typhon.py fetch FRESH-RUN-NAME
 See [PROGRESS.md](PROGRESS.md), [RUNS.md](RUNS.md) and
 [VALIDATION.md](VALIDATION.md) for current status, accounting, source
 hashes and convergence. Allocation completion is not scientific convergence.
+`summarize_runs.py` recomputes the central-quarter mean entropy from the
+saved full profiles. The first pilot/control snapshots labelled a
+central-half mean as `Sbar`; those raw summaries are preserved and the
+correct window is explicit in `analysis/run_summary.json` and new runs.
 
 ## Authorship and scope
 

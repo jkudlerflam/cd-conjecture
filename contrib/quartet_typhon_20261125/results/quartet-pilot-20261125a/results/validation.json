@@ -1,0 +1,34 @@
+{
+  "passed": true,
+  "errors": {
+    "literal_rotated_mpo_max_abs": 1.9319184704732806e-15,
+    "literal_original_mpo_max_abs": 8.881784197001252e-16,
+    "hermiticity_max_abs": 0.0,
+    "field_diagonal_max_abs": 8.881784197001252e-16,
+    "extended_matrix_dense_max_abs": 2.931682674400804e-16,
+    "baseline_correlators_dense_max_abs": 1.6083016435613578e-16,
+    "hdf5_dense_vector_max_abs": 3.744190758470542e-16,
+    "hdf5_energy_abs": 0.0
+  },
+  "L_hamiltonian": 6,
+  "L_dense_vector": 12,
+  "dense_matrix_entries": 320,
+  "baseline_entries": 220,
+  "sector_ground_energies_L6": {
+    "0": -6.954930815199253,
+    "1": -6.896347917030772
+  },
+  "seed": 20261125,
+  "seconds": 3.8487441539764404,
+  "source_sha256": {
+    "contrib/quartet_typhon_20261125/common.py": "16e9584dec221fa00bd0ab6d2b3876a18b8b1d39443877ea653813555851a450",
+    "contrib/quartet_typhon_20261125/measure_matrix.py": "e51cca5426d3b6d2b899884ba1ca6068fb3a41db32a2b9be580e26ba1e411e56",
+    "contrib/quartet_typhon_20261125/run_ladder.py": "3b673e559a903723de3a29a634e66ac6a0ce576ed3d5dc98f3fd6ca128757335",
+    "contrib/quartet_typhon_20261125/run_stage.py": "8d28db40f42362912cf546f43e8fddd152bef8280ac317bb3918a1b0b7414fb5",
+    "contrib/quartet_typhon_20261125/validate.py": "5191c681122f5462f657479e3d8c701620e439e32329ff590891f2d27f6c4222",
+    "contrib/d2_xy_yx_chirality_imps_20261118/scripts/ims.py": "8f2ccaab9c718f9ab7bc65639b90a44372450966939e470c9abd8292ea75c56e",
+    "contrib/d2_xy_yx_chirality_imps_20261118/scripts/ofd.py": "0bc181fe91fb622a53f8887f5f5a0bc31feaf737c12872dc6e4b60cd876e2914",
+    "contrib/d2_xy_yx_chirality_imps_20261118/scripts/meas_quartet.py": "d96523aea174b81dafea654037dc37e825dcb8e37531f68faecca6245e54377d"
+  },
+  "matrix_note": "Shortened quartet offsets in the L12 random-state test; production-offset check recorded separately."
+}

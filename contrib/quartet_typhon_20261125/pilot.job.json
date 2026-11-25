@@ -8,9 +8,19 @@
     "contrib/quartet_typhon_20261125/pilot.json",
     "contrib/d2_xy_yx_chirality_imps_20261118/scripts/ims.py",
     "contrib/d2_xy_yx_chirality_imps_20261118/scripts/ofd.py",
-    "contrib/d2_xy_yx_chirality_imps_20261118/scripts/meas_quartet.py"
+    "contrib/d2_xy_yx_chirality_imps_20261118/scripts/meas_quartet.py",
+    "contrib/quartet_typhon_20261125/measure_stage.py"
   ],
-  "command": ["python", "contrib/quartet_typhon_20261125/run_ladder.py", "contrib/quartet_typhon_20261125/pilot.json"],
+  "command": [
+    "python",
+    "contrib/quartet_typhon_20261125/run_ladder.py",
+    "contrib/quartet_typhon_20261125/pilot.json"
+  ],
   "seed": 1,
-  "resources": {"cpus-per-task": 4, "mem": "16G", "time": "01:00:00", "qos": "short"}
+  "resources": {
+    "cpus-per-task": 4,
+    "mem": "16G",
+    "time": "01:00:00",
+    "qos": "short"
+  }
 }

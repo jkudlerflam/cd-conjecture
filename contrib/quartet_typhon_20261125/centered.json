@@ -1,0 +1,22 @@
+{
+  "cases": [
+    {
+      "label": "target_L128_chi128",
+      "state": "/home/pace/cd-conjecture/runs/quartet-pilot-20261125a/states/L128_p0_chi128.h5",
+      "refs": [
+        47,
+        56
+      ],
+      "rmax": 64
+    },
+    {
+      "label": "c1control_L128_chi128",
+      "state": "/home/pace/cd-conjecture/runs/quartet-c1control-20261125a/states/L128_p0_chi128.h5",
+      "refs": [
+        47,
+        56
+      ],
+      "rmax": 64
+    }
+  ]
+}

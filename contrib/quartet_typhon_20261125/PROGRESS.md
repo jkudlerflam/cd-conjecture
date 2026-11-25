@@ -1,6 +1,6 @@
 # Quartet study progress
 
-2026-11-25, 11:15 EST. **Active execution; estimator calibration failure found.**
+2026-11-25, 11:37 EST. **Active execution; estimator calibration failure found.**
 
 - Chat: `01a21370-d364-7c60-a006-ee9c4074ddf3`.
 - AI: OpenAI Codex, **gpt-6-astra, max**, verified from this chat's
@@ -26,6 +26,34 @@
 - Next: complete pilot/checkpoints, compare numerical thread counts,
   measure enlarged operator matrix and assess justified follow-up. Full
   L=256/384 chi=2048 expansion is not yet justified by estimator calibration.
+- Target chi64 saved, warm restart into chi128 successful; chi64 is explicitly
+  unconverged (41 sweeps, E=-133.56333751015325). Roundtrip errors are zero
+  for E/Z/S and below 2e-14 for overlap. A separate forced-deadline L8 test
+  reloads and converges to the sector ED energy within 2e-15.
+- Thread test **17764268** completed, exit 0:0, 77 s, 211648 KB Slurm
+  MaxRSS. MKL reports one thread after each requested 1/4/8 setting, so the
+  equal timings do not establish parallel scaling. Raw evidence retained.
+- Bounded c=1 control **17764277**, `quartet-c1control-20261125a`, submitted:
+  L128 even, h=1.772, chi64/128/256, 1 CPU, 4 GB, one hour. This adds
+  matching enlarged probes to test neutral mixing, not high-chi production.
+- GitHub checkpoint published: `afc5716f3324d2a239f034cfbfa25560fd639c6e`.
+- Both chi128 states converged by sweep tolerances and full quartet/matrix
+  outputs were fetched. Target E=-133.56423306491507, Smid=1.8315498;
+  this differs from the old chi128 Smid=1.67048 and is a convergence/basin
+  warning, not portability certification. Control Smid=.75452675 agrees
+  with the old chi128 .75453. Both ladders have advanced to chi256.
+- Initial matrix diagnostics show order-one sensitivity to a fixed bond
+  probe subtraction, also in the control. Spatial origins of different
+  shapes differ; an aligned follow-up centres all Hermitian probes at
+  i+1/2. Its 648 additional independent matrix checks pass below 3e-16.
+  The aligned recipe is prepared, not yet submitted. No charge-rank claim.
+- Future wrapper revision separates optimization and measurements into
+  bounded processes, checks remaining time before stage launch, and
+  preserves the undefined first energy change as null. A one-sweep L24,
+  chi4 workflow test passes and correctly remains labelled unconverged.
+- The initial summary's Sbar label denoted a central-half average;
+  `analysis/run_summary.json` recomputes the correct central-quarter
+  average from the raw profiles. Raw files are preserved.
 - Scale-up gate: correctness, recoverable checkpoints, measured resources,
   convergence of correlators, and calibrated operator extraction. Energy
   convergence alone is insufficient. Higher-chi/longer-chain work will
