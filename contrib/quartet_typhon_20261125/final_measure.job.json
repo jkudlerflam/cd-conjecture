@@ -1,0 +1,25 @@
+{
+  "files": [
+    "contrib/quartet_typhon_20261125/common.py",
+    "contrib/quartet_typhon_20261125/run_stage.py",
+    "contrib/quartet_typhon_20261125/measure_matrix.py",
+    "contrib/quartet_typhon_20261125/measure_stage.py",
+    "contrib/quartet_typhon_20261125/measure_checkpoints.py",
+    "contrib/quartet_typhon_20261125/final_measure.json",
+    "contrib/d2_xy_yx_chirality_imps_20261118/scripts/ims.py",
+    "contrib/d2_xy_yx_chirality_imps_20261118/scripts/ofd.py",
+    "contrib/d2_xy_yx_chirality_imps_20261118/scripts/meas_quartet.py"
+  ],
+  "command": [
+    "python",
+    "contrib/quartet_typhon_20261125/measure_checkpoints.py",
+    "contrib/quartet_typhon_20261125/final_measure.json"
+  ],
+  "seed": null,
+  "resources": {
+    "cpus-per-task": 1,
+    "mem": "4G",
+    "time": "00:20:00",
+    "qos": "short"
+  }
+}

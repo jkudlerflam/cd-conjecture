@@ -1,0 +1,221 @@
+{
+  "stages": [
+    {
+      "L": 128,
+      "parity": 0,
+      "h": 1.772,
+      "delta": 0.1875,
+      "chi": 64,
+      "chi_actual": 64,
+      "E": -133.22531199268008,
+      "E_sweep": -133.22531199267527,
+      "parity_expectation": 1.000000000000036,
+      "Smid": 0.7528981396787309,
+      "Sbar": 0.8385361291696959,
+      "converged": true,
+      "shelved": false,
+      "sweeps": 15,
+      "dE_last": 3.7354652704379987e-10,
+      "dS_last": -5.365267674584118e-09,
+      "truncation": 1.935930474233113e-08,
+      "dmrg_seconds": 196.98873496055603,
+      "input_state": null,
+      "source_sha256": {
+        "contrib/quartet_typhon_20261125/common.py": "16e9584dec221fa00bd0ab6d2b3876a18b8b1d39443877ea653813555851a450",
+        "contrib/quartet_typhon_20261125/measure_matrix.py": "e51cca5426d3b6d2b899884ba1ca6068fb3a41db32a2b9be580e26ba1e411e56",
+        "contrib/quartet_typhon_20261125/run_ladder.py": "3b673e559a903723de3a29a634e66ac6a0ce576ed3d5dc98f3fd6ca128757335",
+        "contrib/quartet_typhon_20261125/run_stage.py": "8ed3a7924555600eb669b0072a34d04818a5a9d72a58bcbfdcd6d49471438ab9",
+        "contrib/quartet_typhon_20261125/validate.py": "5191c681122f5462f657479e3d8c701620e439e32329ff590891f2d27f6c4222",
+        "contrib/d2_xy_yx_chirality_imps_20261118/scripts/ims.py": "8f2ccaab9c718f9ab7bc65639b90a44372450966939e470c9abd8292ea75c56e",
+        "contrib/d2_xy_yx_chirality_imps_20261118/scripts/ofd.py": "0bc181fe91fb622a53f8887f5f5a0bc31feaf737c12872dc6e4b60cd876e2914",
+        "contrib/d2_xy_yx_chirality_imps_20261118/scripts/meas_quartet.py": "d96523aea174b81dafea654037dc37e825dcb8e37531f68faecca6245e54377d"
+      },
+      "config": {
+        "L": 128,
+        "parity": 0,
+        "h": 1.772,
+        "seed": 1,
+        "reserve_seconds": 420,
+        "max_sweeps": 40,
+        "tolE": 1e-09,
+        "tolS": 1e-05,
+        "measure_chis": [
+          128,
+          256
+        ],
+        "refs": [
+          47,
+          56,
+          64
+        ],
+        "matrix": true,
+        "matrix_refs": [
+          47
+        ],
+        "matrix_rmax": 64,
+        "tag": "c1control",
+        "chi": 64,
+        "results": "/home/pace/cd-conjecture/runs/quartet-c1control-20261125a/results",
+        "input_state": null,
+        "output_state": "/home/pace/cd-conjecture/runs/quartet-c1control-20261125a/states/L128_p0_chi64.h5",
+        "measure": false
+      },
+      "restart_semantics": "MPS warm restart with rebuilt environments; counters and mixer reset",
+      "roundtrip_energy_abs": 0.0,
+      "roundtrip_Z_max_abs": 0.0,
+      "roundtrip_S_max_abs": 0.0,
+      "roundtrip_norm_overlap_abs": 3.6193270602780103e-14,
+      "measured": false,
+      "total_seconds": 199.7887270450592,
+      "max_rss_mb": 210.67578125,
+      "checkpoint_bytes": 5629136
+    },
+    {
+      "L": 128,
+      "parity": 0,
+      "h": 1.772,
+      "delta": 0.1875,
+      "chi": 128,
+      "chi_actual": 128,
+      "E": -133.22531852713263,
+      "E_sweep": -133.22531852713067,
+      "parity_expectation": 1.0000000000000047,
+      "Smid": 0.7545267542276013,
+      "Sbar": 0.8397724595825091,
+      "converged": true,
+      "shelved": false,
+      "sweeps": 5,
+      "dE_last": 4.00149247070658e-10,
+      "dS_last": 3.3262084486729293e-07,
+      "truncation": 4.114685523174819e-10,
+      "dmrg_seconds": 111.16972064971924,
+      "input_state": "/home/pace/cd-conjecture/runs/quartet-c1control-20261125a/states/L128_p0_chi64.h5",
+      "source_sha256": {
+        "contrib/quartet_typhon_20261125/common.py": "16e9584dec221fa00bd0ab6d2b3876a18b8b1d39443877ea653813555851a450",
+        "contrib/quartet_typhon_20261125/measure_matrix.py": "e51cca5426d3b6d2b899884ba1ca6068fb3a41db32a2b9be580e26ba1e411e56",
+        "contrib/quartet_typhon_20261125/run_ladder.py": "3b673e559a903723de3a29a634e66ac6a0ce576ed3d5dc98f3fd6ca128757335",
+        "contrib/quartet_typhon_20261125/run_stage.py": "8ed3a7924555600eb669b0072a34d04818a5a9d72a58bcbfdcd6d49471438ab9",
+        "contrib/quartet_typhon_20261125/validate.py": "5191c681122f5462f657479e3d8c701620e439e32329ff590891f2d27f6c4222",
+        "contrib/d2_xy_yx_chirality_imps_20261118/scripts/ims.py": "8f2ccaab9c718f9ab7bc65639b90a44372450966939e470c9abd8292ea75c56e",
+        "contrib/d2_xy_yx_chirality_imps_20261118/scripts/ofd.py": "0bc181fe91fb622a53f8887f5f5a0bc31feaf737c12872dc6e4b60cd876e2914",
+        "contrib/d2_xy_yx_chirality_imps_20261118/scripts/meas_quartet.py": "d96523aea174b81dafea654037dc37e825dcb8e37531f68faecca6245e54377d"
+      },
+      "config": {
+        "L": 128,
+        "parity": 0,
+        "h": 1.772,
+        "seed": 1,
+        "reserve_seconds": 420,
+        "max_sweeps": 40,
+        "tolE": 1e-09,
+        "tolS": 1e-05,
+        "measure_chis": [
+          128,
+          256
+        ],
+        "refs": [
+          47,
+          56,
+          64
+        ],
+        "matrix": true,
+        "matrix_refs": [
+          47
+        ],
+        "matrix_rmax": 64,
+        "tag": "c1control",
+        "chi": 128,
+        "results": "/home/pace/cd-conjecture/runs/quartet-c1control-20261125a/results",
+        "input_state": "/home/pace/cd-conjecture/runs/quartet-c1control-20261125a/states/L128_p0_chi64.h5",
+        "output_state": "/home/pace/cd-conjecture/runs/quartet-c1control-20261125a/states/L128_p0_chi128.h5",
+        "measure": true
+      },
+      "restart_semantics": "MPS warm restart with rebuilt environments; counters and mixer reset",
+      "roundtrip_energy_abs": 0.0,
+      "roundtrip_Z_max_abs": 0.0,
+      "roundtrip_S_max_abs": 0.0,
+      "roundtrip_norm_overlap_abs": 6.8833827526759706e-15,
+      "measured": true,
+      "total_seconds": 188.58109736442566,
+      "max_rss_mb": 285.4609375,
+      "checkpoint_bytes": 16969616
+    },
+    {
+      "L": 128,
+      "parity": 0,
+      "h": 1.772,
+      "delta": 0.1875,
+      "chi": 256,
+      "chi_actual": 256,
+      "E": -133.2253186480565,
+      "E_sweep": -133.22531864805617,
+      "parity_expectation": 0.9999999999999739,
+      "Smid": 0.7545745079834691,
+      "Sbar": 0.8398122040691086,
+      "converged": true,
+      "shelved": false,
+      "sweeps": 5,
+      "dE_last": -6.332356861094013e-11,
+      "dS_last": 1.2435224272522305e-07,
+      "truncation": 5.745779368907356e-12,
+      "dmrg_seconds": 283.3251292705536,
+      "input_state": "/home/pace/cd-conjecture/runs/quartet-c1control-20261125a/states/L128_p0_chi128.h5",
+      "source_sha256": {
+        "contrib/quartet_typhon_20261125/common.py": "16e9584dec221fa00bd0ab6d2b3876a18b8b1d39443877ea653813555851a450",
+        "contrib/quartet_typhon_20261125/measure_matrix.py": "e51cca5426d3b6d2b899884ba1ca6068fb3a41db32a2b9be580e26ba1e411e56",
+        "contrib/quartet_typhon_20261125/run_ladder.py": "3b673e559a903723de3a29a634e66ac6a0ce576ed3d5dc98f3fd6ca128757335",
+        "contrib/quartet_typhon_20261125/run_stage.py": "8ed3a7924555600eb669b0072a34d04818a5a9d72a58bcbfdcd6d49471438ab9",
+        "contrib/quartet_typhon_20261125/validate.py": "5191c681122f5462f657479e3d8c701620e439e32329ff590891f2d27f6c4222",
+        "contrib/d2_xy_yx_chirality_imps_20261118/scripts/ims.py": "8f2ccaab9c718f9ab7bc65639b90a44372450966939e470c9abd8292ea75c56e",
+        "contrib/d2_xy_yx_chirality_imps_20261118/scripts/ofd.py": "0bc181fe91fb622a53f8887f5f5a0bc31feaf737c12872dc6e4b60cd876e2914",
+        "contrib/d2_xy_yx_chirality_imps_20261118/scripts/meas_quartet.py": "d96523aea174b81dafea654037dc37e825dcb8e37531f68faecca6245e54377d"
+      },
+      "config": {
+        "L": 128,
+        "parity": 0,
+        "h": 1.772,
+        "seed": 1,
+        "reserve_seconds": 420,
+        "max_sweeps": 40,
+        "tolE": 1e-09,
+        "tolS": 1e-05,
+        "measure_chis": [
+          128,
+          256
+        ],
+        "refs": [
+          47,
+          56,
+          64
+        ],
+        "matrix": true,
+        "matrix_refs": [
+          47
+        ],
+        "matrix_rmax": 64,
+        "tag": "c1control",
+        "chi": 256,
+        "results": "/home/pace/cd-conjecture/runs/quartet-c1control-20261125a/results",
+        "input_state": "/home/pace/cd-conjecture/runs/quartet-c1control-20261125a/states/L128_p0_chi128.h5",
+        "output_state": "/home/pace/cd-conjecture/runs/quartet-c1control-20261125a/states/L128_p0_chi256.h5",
+        "measure": true
+      },
+      "restart_semantics": "MPS warm restart with rebuilt environments; counters and mixer reset",
+      "roundtrip_energy_abs": 0.0,
+      "roundtrip_Z_max_abs": 0.0,
+      "roundtrip_S_max_abs": 0.0,
+      "roundtrip_norm_overlap_abs": 2.5646151868841116e-14,
+      "measured": true,
+      "total_seconds": 424.64687275886536,
+      "max_rss_mb": 537.65234375,
+      "checkpoint_bytes": 61067344
+    }
+  ],
+  "requested_chis": [
+    64,
+    128,
+    256
+  ],
+  "all_stages_converged": true,
+  "next_input_state": "/home/pace/cd-conjecture/runs/quartet-c1control-20261125a/states/L128_p0_chi256.h5"
+}

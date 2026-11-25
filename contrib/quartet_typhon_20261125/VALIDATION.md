@@ -7,7 +7,7 @@
 | Known-power synthetic extraction | Historical estimator fails | p=4 becomes 5.376; forward-filtered pure-power calibration passes; neutral identification still fails |
 | Literal Pauli Hamiltonian, end fields and gauge | Pass | L6 error <2e-15, local and IAS |
 | Quartet and enlarged operator matrix | Pass | L12 random complex state <3e-16; production offsets L24 parity cat <7e-16 |
-| Checkpoint and restart | Pass at small L; pilot warm restart active | Forced deadline after one L8 sweep; reload converges to ED within 2e-15; L128 E/Z/S roundtrip unchanged |
+| Checkpoint and restart | Pass at small L; pilot warm restart active | Forced deadline after one L8 chi4 sweep; reload at chi16 improves E by .0177 and converges to ED within 4e-15; L128 E/Z/S roundtrip unchanged |
 | L=128 reference | Pending | Match parity and chi; report residual convergence |
 | CPU / memory pilot | Running; thread diagnostic complete | Timing test reports only one MKL thread despite 1/4/8 requests; no parallel speedup inferred |
 

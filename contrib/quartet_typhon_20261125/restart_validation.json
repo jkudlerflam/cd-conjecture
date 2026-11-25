@@ -4,11 +4,13 @@
   "parity": 0,
   "forced_shelve": true,
   "partial_sweeps": 1,
-  "partial_E": -8.988630468557016,
-  "resumed_E": -8.988630468557053,
+  "partial_E": -8.970940616683789,
+  "resumed_E": -8.988630468557055,
   "sector_ED_E": -8.988630468557052,
-  "energy_error": 1.7763568394002505e-15,
-  "roundtrip_overlap_abs": 1.000000000000003,
+  "energy_error": 3.552713678800501e-15,
+  "roundtrip_overlap_abs": 0.9999999999999981,
   "resumed_converged": true,
+  "initial_chi": 4,
+  "resumed_chi": 16,
   "semantics": "canonical MPS reload; rebuilt optimizer; no bitwise trajectory claim"
 }

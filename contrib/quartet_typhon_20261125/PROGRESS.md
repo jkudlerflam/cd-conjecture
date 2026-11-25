@@ -1,6 +1,6 @@
 # Quartet study progress
 
-2026-11-25, 11:37 EST. **Active execution; estimator calibration failure found.**
+2026-11-25, 11:46 EST. **Active execution; estimator calibration failure found.**
 
 - Chat: `01a21370-d364-7c60-a006-ee9c4074ddf3`.
 - AI: OpenAI Codex, **gpt-6-astra, max**, verified from this chat's
@@ -54,6 +54,17 @@
 - The initial summary's Sbar label denoted a central-half average;
   `analysis/run_summary.json` recomputes the correct central-quarter
   average from the raw profiles. Raw files are preserved.
+- Control 17764277 completed through chi256: exit 0:0, 14:18, MaxRSS
+  568092 KB. E=-133.2253186480565, Smid=.75457451 (same-chi reference
+  .75457). The small Q(2,5) signal changes 4.6% from chi128 to 256.
+- Aligned measurement 17764302 completed, exit 0:0 in 110 s, MaxRSS
+  204512 KB. Target chi128 small-quadrature signals remain strongly
+  sensitive to bond-probe subtraction and reference position, also
+  qualitatively present in the control. No rank/charge assignment certified.
+- Target pilot remains at chi256, still moving appreciably in E and S.
+  The one-hour deadline will preserve a partial stage if necessary. The
+  estimator and wavefunction convergence gates do not support full scale-up.
+- Published second checkpoint: `6235e09c9f25e77bc48549cc8fe30d03897b75e1`.
 - Scale-up gate: correctness, recoverable checkpoints, measured resources,
   convergence of correlators, and calibrated operator extraction. Energy
   convergence alone is insufficient. Higher-chi/longer-chain work will

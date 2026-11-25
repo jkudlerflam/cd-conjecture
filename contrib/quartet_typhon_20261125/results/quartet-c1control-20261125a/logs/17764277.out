@@ -43,3 +43,23 @@ MATRIX ref=47 left=Tm elapsed=20.4s
 MATRIX ref=47 left=Tp elapsed=23.3s
 FINISHED {"L": 128, "chi": 128, "E": -133.22531852713263, "converged": true, "measured": true, "total_seconds": 188.58109736442566, "max_rss_mb": 285.4609375}
 SWEEP {"E": -133.22531864732116, "Delta_E": null, "S": 0.7496496150976283, "Delta_S": 2.0992086624316286e-05, "max_trunc_err": 8.100631522806304e-12, "max_E_trunc": 2.62332378042629e-11, "norm_err": 7.062639328614648e-06, "sweep": 1, "seconds": 62.419211864471436, "max_rss_mb": 485.78515625, "chi": 256, "thread_counts": {"mkl": 1, "openmp": 1}}
+SWEEP {"E": -133.2253186477916, "Delta_E": -4.704361344920471e-10, "S": 0.7496519183949856, "Delta_S": 2.3032973572867377e-06, "max_trunc_err": 1.2112061818116889e-11, "max_E_trunc": 3.532818482199218e-11, "norm_err": 4.180043727879339e-06, "sweep": 2, "seconds": 69.3660626411438, "max_rss_mb": 485.78515625, "chi": 256, "thread_counts": {"mkl": 1, "openmp": 1}}
+SWEEP {"E": -133.22531864792342, "Delta_E": -1.3181988833821379e-10, "S": 0.7496525938432897, "Delta_S": 6.754483041770953e-07, "max_trunc_err": 1.2176870703991434e-11, "max_E_trunc": 3.512923285597935e-11, "norm_err": 1.4171676621517756e-06, "sweep": 3, "seconds": 59.73650884628296, "max_rss_mb": 485.78515625, "chi": 256, "thread_counts": {"mkl": 1, "openmp": 1}}
+SWEEP {"E": -133.22531864799285, "Delta_E": -6.943423613847699e-11, "S": 0.7496528451795461, "Delta_S": 2.5133625636275525e-07, "max_trunc_err": 1.211437491555937e-11, "max_E_trunc": 3.433342499192804e-11, "norm_err": 6.140150938432952e-07, "sweep": 4, "seconds": 48.52624034881592, "max_rss_mb": 485.78515625, "chi": 256, "thread_counts": {"mkl": 1, "openmp": 1}}
+SWEEP {"E": -133.22531864805617, "Delta_E": -6.332356861094013e-11, "S": 0.7496529695317888, "Delta_S": 1.2435224272522305e-07, "max_trunc_err": 5.745779368907356e-12, "max_E_trunc": 3.211653165635653e-11, "norm_err": 3.8752402147626523e-07, "sweep": 5, "seconds": 38.15946078300476, "max_rss_mb": 485.78515625, "chi": 256, "thread_counts": {"mkl": 1, "openmp": 1}}
+STAGE {"L": 128, "parity": 0, "h": 1.772, "delta": 0.1875, "chi": 256, "chi_actual": 256, "E": -133.2253186480565, "E_sweep": -133.22531864805617, "parity_expectation": 0.9999999999999739, "Smid": 0.7545745079834691, "Sbar": 0.8398122040691086, "converged": true, "shelved": false, "sweeps": 5, "dE_last": -6.332356861094013e-11, "dS_last": 1.2435224272522305e-07, "truncation": 5.745779368907356e-12, "dmrg_seconds": 283.3251292705536, "input_state": "/home/pace/cd-conjecture/runs/quartet-c1control-20261125a/states/L128_p0_chi128.h5", "restart_semantics": "MPS warm restart with rebuilt environments; counters and mixer reset", "roundtrip_energy_abs": 0.0, "roundtrip_Z_max_abs": 0.0, "roundtrip_S_max_abs": 0.0, "roundtrip_norm_overlap_abs": 2.5646151868841116e-14}
+# Q d=2 s=4 done 19s
+# Q d=2 s=5 done 35s
+# Q d=3 s=6 done 53s
+# Q d=2 s=1 done 63s
+# P d=2 done 71s
+# P d=3 done 81s
+MATRIX ref=47 left=Q25m elapsed=5.5s
+MATRIX ref=47 left=Q25p elapsed=11.0s
+MATRIX ref=47 left=Q36m elapsed=16.5s
+MATRIX ref=47 left=Q36p elapsed=22.1s
+MATRIX ref=47 left=Z elapsed=27.6s
+MATRIX ref=47 left=ZZ elapsed=33.0s
+MATRIX ref=47 left=Tm elapsed=38.5s
+MATRIX ref=47 left=Tp elapsed=44.0s
+FINISHED {"L": 128, "chi": 256, "E": -133.2253186480565, "converged": true, "measured": true, "total_seconds": 424.64687275886536, "max_rss_mb": 537.65234375}

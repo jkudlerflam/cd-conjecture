@@ -50,6 +50,11 @@ is `filtered(r^-p) = r^-p [1 + p(p+1) mu2/(2 r^2) + ...]`; the correction
 itself changes the slope. Here the window is too wide relative to r to
 rely on that leading expansion, so the calibration applies the full
 discrete kernel to every trial power.
+For Q(3,6), the first fitted centre is r=33.5 but its kernel uses r=10–57,
+including separations barely beyond the operator's nine-site span. A
+forward pure-power correction assumes that power over the whole kernel
+support, not just r=32–56; short-distance corrections remain a further
+limitation on applying the calibration to the target.
 
 ![Filter calibration and target model sensitivity](analysis/filter_calibration.png)
 
@@ -121,9 +126,32 @@ be formed afterwards. Candidate-neutral probes are labelled as candidates;
 their continuum charge is not assumed. Finite-distance correlation matrices
 are not necessarily positive semidefinite Gram matrices.
 
+The first centre-aligned follow-up, Slurm 17764302, completed in 110 s
+with exit 0:0. It shifts the two quartet shapes to have centre i+1/2
+and uses `(Z_i+Z_(i+1))/2` alongside ZZ and hopping quadratures, retaining
+nine raw monomials. Independent checks of the 648 additional entries
+agree within 3e-16. At target L128, chi128, a fixed subtraction of the
+imaginary hopping quadrature changes the smaller Q(2,5) signal by 117%
+and 91% at the two references (width 32; L2 change over all available
+filtered centres), and Q(3,6) by 38% and 15%. Sign changes and strong
+reference dependence remain. Similar sensitivity occurs in the c=1
+control. This is a finite-size basis-sensitivity diagnostic, not a proof
+of multiple neutral primaries in the target or a projection onto charge
+four. The short, incompletely chi-converged target cannot support that
+identification.
+
+The c=1 control completed through chi256 in 14 min 18 s, exit 0:0,
+Slurm MaxRSS 568092 KB. At chi256, E=-133.2253186480565,
+Smid=.75457451 and central-quarter Sbar=.85210734. Smid agrees with
+the rounded same-chi .75457. From chi128 to 256, the Q(2,5) smaller
+filtered signal still changes by 4.6% (width 32, reference 47, r=24–44),
+despite energy changing only 1.2e-7. This illustrates why energy alone
+is insufficient for the tiny quartet correlator.
+
 ## Reproducing
 
-Requirements: numpy, scipy, h5py, physics-tenpy==1.1.1, threadpoolctl.
+Requirements: numpy, scipy, h5py, physics-tenpy==1.1.1, threadpoolctl;
+matplotlib for the calibration figure.
 The verified IAS environment is documented in the [runbook](../../tools/typhon/README.md).
 Saved-data analysis ran in an isolated temporary Mac environment; sustained
 optimization runs only on IAS. The initial six-file audit took 6.8 seconds.

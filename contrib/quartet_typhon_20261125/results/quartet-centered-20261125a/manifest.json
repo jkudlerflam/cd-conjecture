@@ -1,0 +1,32 @@
+{
+  "run": "quartet-centered-20261125a",
+  "host": "ias-cluster",
+  "remote_dir": "~/cd-conjecture/runs/quartet-centered-20261125a",
+  "git_head": "6235e09c9f25e77bc48549cc8fe30d03897b75e1",
+  "git_status_selected": [],
+  "recipe": "contrib/quartet_typhon_20261125/centered.job.json",
+  "files": [
+    "contrib/quartet_typhon_20261125/centered.job.json",
+    "contrib/quartet_typhon_20261125/centered.json",
+    "contrib/quartet_typhon_20261125/common.py",
+    "contrib/quartet_typhon_20261125/measure_centered.py",
+    "contrib/quartet_typhon_20261125/measure_matrix.py"
+  ],
+  "command": [
+    "python",
+    "contrib/quartet_typhon_20261125/measure_centered.py",
+    "contrib/quartet_typhon_20261125/centered.json"
+  ],
+  "cwd": "src",
+  "seed": null,
+  "resources": {
+    "account": "physics",
+    "partition": "typhon",
+    "nodes": 1,
+    "ntasks": 1,
+    "cpus-per-task": 1,
+    "mem": "2G",
+    "time": "00:10:00",
+    "qos": "short"
+  }
+}

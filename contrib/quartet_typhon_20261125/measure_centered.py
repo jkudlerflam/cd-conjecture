@@ -21,7 +21,8 @@ def main(config):
         with h5py.File(state,'r') as f:saved=hdf5_io.load_from_hdf5(f)
         psi=saved['psi'];meta=json.loads(saved['metadata_json'])
         m=measure_matrix.measure(psi,case['refs'],rmax=case.get('rmax',64),centered=True)
-        m.update(parity=meta['parity'],h=meta['h'],E=meta['E'],state_sha256=sha256(state))
+        m.update(parity=meta['parity'],h=meta['h'],E=meta['E'],state_sha256=sha256(state),
+                 state_sweep_converged=meta['converged'])
         path=out/(case['label']+'_matrix.json.gz');tmp=path.with_name(path.name+'.tmp')
         with gzip.open(tmp,'wt') as f:json.dump(m,f)
         tmp.replace(path)

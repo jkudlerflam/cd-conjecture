@@ -1,0 +1,30 @@
+{
+  "source_sha256": {
+    "contrib/quartet_typhon_20261125/common.py": "16e9584dec221fa00bd0ab6d2b3876a18b8b1d39443877ea653813555851a450",
+    "contrib/quartet_typhon_20261125/measure_centered.py": "9825f7d062ead1b9c411c3d608dfe6b4d03240fc4671a998d2bb3601c6c6ccca",
+    "contrib/quartet_typhon_20261125/measure_matrix.py": "768f4c549022e566fdc05a0e655f630ca310f51f47199b671de5d81dd3da7cd2"
+  },
+  "input": {
+    "cases": [
+      {
+        "label": "target_L128_chi128",
+        "state": "/home/pace/cd-conjecture/runs/quartet-pilot-20261125a/states/L128_p0_chi128.h5",
+        "refs": [
+          47,
+          56
+        ],
+        "rmax": 64
+      },
+      {
+        "label": "c1control_L128_chi128",
+        "state": "/home/pace/cd-conjecture/runs/quartet-c1control-20261125a/states/L128_p0_chi128.h5",
+        "refs": [
+          47,
+          56
+        ],
+        "rmax": 64
+      }
+    ]
+  },
+  "job_id": "17764302"
+}

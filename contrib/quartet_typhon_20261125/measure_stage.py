@@ -23,14 +23,15 @@ def main(c):
     path=out/(stem+'_quartet.json.gz')
     if not path.exists():
         m=meas_quartet.measure(psi,L,refs,meas_quartet.DS_DEFAULT)
-        m.update(chi=int(max(psi.chi)),parity=c['parity'],h=c.get('h',1.783),E=meta['E'])
+        m.update(chi=int(max(psi.chi)),parity=c['parity'],h=c.get('h',1.783),E=meta['E'],
+                 state_sweep_converged=meta['converged'])
         dump(path,m)
     if c.get('matrix'):
         path=out/(stem+'_matrix.json.gz')
         if not path.exists():
             m=measure_matrix.measure(psi,c.get('matrix_refs',[L//2-17]),rmax=c.get('matrix_rmax',96),
                                      centered=c.get('centered_matrix',False))
-            m.update(parity=c['parity'],h=c.get('h',1.783),E=meta['E'])
+            m.update(parity=c['parity'],h=c.get('h',1.783),E=meta['E'],state_sweep_converged=meta['converged'])
             dump(path,m)
     write_json(out/(stem+'_measurement.json'),{'seconds':time.time()-t0,'max_rss_mb':rss_mb(),'complete':True})
 
