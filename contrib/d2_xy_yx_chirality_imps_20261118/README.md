@@ -25,9 +25,9 @@ with Z2 parity ΠZ, translation, and two antiunitaries. Just below the line wher
 
 A π/4 rotation maps the chain onto the family of the STATUS c = 2 candidate at V/Δ = 4, with δ = 1/8 on its tuning condition (REPORT §9.213). Inside the wedge at δ = 3/16 the C193 estimators give K_s ≈ 1.8 to 2.0, the candidate's band (REPORT §9.214).
 
-Three further checks (REPORT §9.216). An independent DMRG code reproduces the open-chain states to L = 128. c(h) at δ = 3/16 between L = 128 and 256 steps from 1 to about 2 between h = 1.778 and 1.780 and reads 1.7 to 2.7 across the wedge. The pair correlator has a q = π component in the wedge that the c = 1 neighbour lacks, so the quartet is commensurate, with dimension about 1.84 if the pair is a vertex operator. That argues against an asymptotic c = 2. Koo–Saleur on rings does not resolve the chain at reachable bond dimension.
+Three further checks (REPORT §9.216). An independent DMRG code reproduces the open-chain states to L = 128. c(h) at δ = 3/16 between L = 128 and 256 steps from 1 to about 2 between h = 1.778 and 1.780 and reads 1.7 to 2.7 across the wedge. The pair correlator has a q = π component in the wedge that the c = 1 neighbour lacks, so the quartet is commensurate, with dimension about 1.84 if the pair is a vertex operator. Measured directly on the open chains, the quartet's k = 0 quadrature gives x4 ≈ 2.05 ± 0.2, drifting up with L and absent at this strength in the c = 1 control, so the quartet is not resolved against marginal (REPORT §9.217). Koo–Saleur on rings does not resolve the chain at reachable bond dimension.
 
-Status: numerical, not asymptotic. Open: a crossover through quartet locking, whose length the data up to about 400 sites cannot bound, the identity of the second mode, whether the lower edge is pair binding, and where the wedge closes between δ = 1/16 and 1/8. The first version of this folder (2026-11-18) claimed c = 3/2 at h_I. That claim is withdrawn (REPORT §9.209b), because the 1.4 to 1.6 readings there are crossovers out of the c ≈ 2 wedge.
+Status: numerical, not asymptotic. Open: whether the quartet sits just below or just above dimension 2, the identity of the second mode, whether the lower edge is pair binding, and where the wedge closes between δ = 1/16 and 1/8. The first version of this folder (2026-11-18) claimed c = 3/2 at h_I. That claim is withdrawn (REPORT §9.209b), because the 1.4 to 1.6 readings there are crossovers out of the c ≈ 2 wedge.
 
 ## Methods and checks
 
@@ -41,7 +41,7 @@ Status: numerical, not asymptotic. Open: a crossover through quartet locking, wh
 - [scripts/](scripts/):
   - `ims.py` (iDMRG driver), `an2.py` (iDMRG ladders), `run3.sbatch`, `submit_all.sh`;
   - `ofd.py` (open-chain driver), `otest.py` (ED and free-fermion checks), `ana_obc.py` (open-chain c), `oe.py` (odd–even energies), `runo.sbatch`, `submit_obc.sh`;
-  - `meas_obc.py` and `envelope.py` (correlators), `kpair.py` and `kenv.py` (pair momentum);
+  - `meas_obc.py` and `envelope.py` (correlators), `kpair.py` and `kenv.py` (pair momentum), `meas_quartet.py`, `ana_quartet.py` and `quartet_table.py` (the k = 0 quartet, data in `meas/quartet/`);
   - `indep/` (the independent C190 DMRG run on this chain), `ring/` (ring ED and Koo–Saleur), `pumps/` (puMPS ground states, excitations and Koo–Saleur, written by OpenAI Codex gpt-6.2-astra, with its self-checks).
-- [tables/](tables/): χ ladders for the target, the controls and the open chains; exponents and odd–even energies; the cuts below δ = 1/8; c(h) at δ = 3/16; the puMPS Koo–Saleur data.
+- [tables/](tables/): χ ladders for the target, the controls and the open chains; exponents and odd–even energies; the cuts below δ = 1/8; c(h) at δ = 3/16; the puMPS Koo–Saleur data; the quartet exponents.
 - The states (several GB) are not committed. They regenerate from the scripts.

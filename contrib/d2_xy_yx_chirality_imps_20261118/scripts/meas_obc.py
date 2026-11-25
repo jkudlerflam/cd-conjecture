@@ -68,7 +68,7 @@ def test():
     dmrg.TwoSiteDMRGEngine(psi, M, {"trunc_params": {"chi_max": 64, "svd_min": 1e-14}, "mixer": True,
                                     "max_sweeps": 40, "min_sweeps": 20, "max_E_err": 1e-14}).run()
     m = measure(psi, L)
-    v = psi.get_theta(0, L).to_ndarray().reshape(-1)     # TeNPy basis: index 0 = up
+    v = psi.get_theta(0, L).to_ndarray().reshape(-1)     # NB with conserve='parity' index 0 = down (meas_quartet.py); G, C, D here are symmetric under the swap, so this check passes either way
     sp = np.array([[0, 1], [0, 0.]]); sm = sp.T; z = np.diag([1., -1.])
     def op(ops):
         M_ = np.array([[1.]])
