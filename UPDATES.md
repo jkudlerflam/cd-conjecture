@@ -2,6 +2,16 @@
 
 Announcements of each research round, newest first. They were moved here from the README and STATUS.md on 2026-11-24 without changes. Several are superseded by later entries, so read the summary in the README's "Where things stand" first. The older material at the bottom is not in date order.
 
+## 2026-11-25: proposed IAS numerical campaign
+
+The [cluster plan](contrib/cluster_numerics_plan_20261125/README.md) prioritizes
+converged quartet measurements and operator separation on the simple d=2
+chain, then bulk modes and velocities. A smaller original-d=10 contact
+response campaign targets the missing mobile-sector bounds. It incorporates
+the new pi-pair and direct-quartet data of §§9.216–9.217, includes CPU
+pilots and resource gates, and records the live Typhon capacity check.
+This is a proposal; no research jobs were submitted and no CFT verdict changed.
+
 ## 2026-11-24: the quartet correlator on the four-term chain
 
 The k = 0 quartet correlator, measured directly on the stored open chains at δ = 3/16, h = 1.783 (L = 256 and 384), gives x4 ≈ 2.05 ± 0.2. That is one error bar above the vertex inference 1.84 and within one of marginal, with the L drift pointing toward irrelevant. The signal is 7 to 23 times weaker in the c = 1 control. At the phase-1.53 bond the quartet stays momentum-mismatched (period about 430 sites). The independent code gives c(128 → 256) = 1.83 in even parity, against TeNPy's 1.76, and 2.03 in odd parity (REPORT §9.217).

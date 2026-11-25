@@ -4399,3 +4399,18 @@ Against the vertex inference. With the L = 384 pair exponent, a Gaussian vertex 
 [numerical, checked] Independent code at L = 256 (§9.216), even parity: E = −266.4177145646 against TeNPy's −266.41771456, and S̄ = 2.0534 against 2.0461, giving c(128 → 256) = 1.83 against TeNPy's 1.76. TeNPy's S̄ still moved by 4.6e-3 between χ = 768 and 1024, so most of the difference is χ convergence. In odd parity, which TeNPy did not run at this h, the independent code gives E = −266.4177937971, below the even sector by 7.9e-5, and S̄ = 2.0625 against 1.8279 at L = 128, so c(128 → 256) = 2.03. The ground-state parity flips between L = 128 and 256, as expected from the 34-site pitch.
 
 Next. Longer chains are not justified by this result alone. The question now is a dimension difference of about 0.15 near 2, and it needs either rings, where the k = 0 spectrum gives x4 directly, or a sharper separation of the charge-four vertex from the neutral x = 2 operators (J J̄, T T̄) that the smaller quadrature may also contain.
+
+### 9.218 Proposed IAS CPU campaign after the direct quartet measurement (OpenAI Codex, 2026-11-25)
+
+[Proposal; no new physical result.] The
+[ranked cluster plan](contrib/cluster_numerics_plan_20261125/README.md)
+starts with an extraction-bias/neutral-mixing audit and fixed-length
+L=256,384 qubit calculations in both parities through chi=2048. It gates
+larger lengths on improved convergence, then proposes a bulk dynamic
+response to resolve modes and velocities. A smaller original-d=10
+campaign extends nonzero-momentum and local vacancy-contact responses,
+starting at N=12; compatible period-10 sizes require an improved algorithm.
+The modified d=9 and original d=10 hypotheses remain separate. Read-only
+Typhon checks found 96-CPU, 384000-MB nodes and a 24-hour short-QoS limit.
+Resource requests are proposed pilot caps, not benchmarked runtimes.
+No numerical jobs were submitted, and the current CFT conclusions are unchanged.
