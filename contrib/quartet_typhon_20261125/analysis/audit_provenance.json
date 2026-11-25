@@ -1,0 +1,14 @@
+{
+  "historical_table_exact_match": true,
+  "input_sha256": {
+    "contrib/d2_xy_yx_chirality_imps_20261118/meas/quartet/T1_L256_chi384.json.gz": "381ae38066ece1933b4c20d39ea8efe6b47c9fc0485f5017347b7508fdba5f20",
+    "contrib/d2_xy_yx_chirality_imps_20261118/meas/quartet/T1_L256.json.gz": "e20445d0711609023e082e18e0d3f6dcfd87a95484a330f0fd91b5bea6bf6e73",
+    "contrib/d2_xy_yx_chirality_imps_20261118/meas/quartet/T1_L384_chi512.json.gz": "eef82198a4ec4e9294e6438e05f3b5e5880b2a0517920f119cbce1a9753ff1ed",
+    "contrib/d2_xy_yx_chirality_imps_20261118/meas/quartet/T1_L384.json.gz": "dafbfb64a309fd43e1087a8a41932d7b4b28fa4741442b4624934a9be75ce51c",
+    "contrib/d2_xy_yx_chirality_imps_20261118/meas/quartet/T3_L256.json.gz": "02e2a4790cbc4ef078d4f3462481d387c8146848ab3209cf5e68c900c31cfcdc",
+    "contrib/d2_xy_yx_chirality_imps_20261118/meas/quartet/T3_L384.json.gz": "f5f80a96a3dd63a9ae88108f46685244046b401dbafb37c2a7ab4f87cc4d78db"
+  },
+  "rows": 12672,
+  "seconds": 6.807174921035767,
+  "error_bar_policy": "No independent-sample regression errors; overlapping windows are correlated."
+}

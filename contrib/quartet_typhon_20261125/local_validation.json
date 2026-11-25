@@ -1,0 +1,36 @@
+{
+  "passed": true,
+  "errors": {
+    "literal_rotated_mpo_max_abs": 1.9319184704732806e-15,
+    "literal_original_mpo_max_abs": 8.881784197001252e-16,
+    "hermiticity_max_abs": 0.0,
+    "field_diagonal_max_abs": 8.881784197001252e-16,
+    "extended_matrix_dense_max_abs": 2.714842239903703e-16,
+    "baseline_correlators_dense_max_abs": 2.155197575560906e-16,
+    "hdf5_dense_vector_max_abs": 3.560538422616582e-16,
+    "hdf5_energy_abs": 0.0
+  },
+  "L_hamiltonian": 6,
+  "L_dense_vector": 12,
+  "dense_matrix_entries": 320,
+  "baseline_entries": 220,
+  "sector_ground_energies_L6": {
+    "0": -6.954930815199258,
+    "1": -6.896347917030769
+  },
+  "seed": 20261125,
+  "seconds": 0.7039399147033691,
+  "source_sha256": {
+    "contrib/quartet_typhon_20261125/common.py": "16e9584dec221fa00bd0ab6d2b3876a18b8b1d39443877ea653813555851a450",
+    "contrib/quartet_typhon_20261125/measure_matrix.py": "e51cca5426d3b6d2b899884ba1ca6068fb3a41db32a2b9be580e26ba1e411e56",
+    "contrib/quartet_typhon_20261125/run_ladder.py": "4a4ca980446ba458a0883648ce49395bddcef086df3dabf9366ced26947d8562",
+    "contrib/quartet_typhon_20261125/run_stage.py": "8d28db40f42362912cf546f43e8fddd152bef8280ac317bb3918a1b0b7414fb5",
+    "contrib/quartet_typhon_20261125/validate.py": "2a140c79e687a4897e5124d1b56feeb15adbde789172521134a535ad638b5ed0",
+    "contrib/d2_xy_yx_chirality_imps_20261118/scripts/ims.py": "8f2ccaab9c718f9ab7bc65639b90a44372450966939e470c9abd8292ea75c56e",
+    "contrib/d2_xy_yx_chirality_imps_20261118/scripts/ofd.py": "0bc181fe91fb622a53f8887f5f5a0bc31feaf737c12872dc6e4b60cd876e2914",
+    "contrib/d2_xy_yx_chirality_imps_20261118/scripts/meas_quartet.py": "d96523aea174b81dafea654037dc37e825dcb8e37531f68faecca6245e54377d",
+    "contrib/d2_xy_yx_chirality_imps_20261118/scripts/ana_quartet.py": "f75da6ccdb0bfaece66470cb76f633bebfcc9a81f011ddc13d2d77e397fd7f46",
+    "contrib/d2_xy_yx_chirality_imps_20261118/scripts/quartet_table.py": "3c9caba36c3f747994e18c648b7703dcb0e3e418a5f1d4aecb10d42e8f81409e"
+  },
+  "matrix_note": "Shortened quartet offsets in random-state test; production shapes additionally checked separately."
+}

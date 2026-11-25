@@ -1,0 +1,902 @@
+[
+  {
+    "dataset": "T1_L256_chi384",
+    "kind": "P",
+    "operator": "2",
+    "signed_fit": {
+      "n": 6,
+      "sign_changes": 0,
+      "log_p": 1.0420169774829628,
+      "relative_rms": 0.00211382183351939,
+      "amplitude40": 0.0003420683323879454,
+      "min_abs": 0.00024702706967824167,
+      "max_abs": 0.0003981216854232991
+    },
+    "forward_power_fit": {
+      "p": 0.9383039088084412,
+      "amplitude40": 0.00032463017166098617,
+      "relative_rms": 0.004420241515554859,
+      "at_boundary": false
+    },
+    "kappa_by_ref_pi": {
+      "111": 0.20939999999999998,
+      "120": 0.20875,
+      "128": 0.20675000000000002
+    }
+  },
+  {
+    "dataset": "T1_L256_chi384",
+    "kind": "P",
+    "operator": "3",
+    "signed_fit": {
+      "n": 6,
+      "sign_changes": 0,
+      "log_p": 1.0467539549552671,
+      "relative_rms": 0.002277434073258594,
+      "amplitude40": 0.0003675979498816191,
+      "min_abs": 0.00026001145638343044,
+      "max_abs": 0.00041543428897164865
+    },
+    "forward_power_fit": {
+      "p": 0.947349798699118,
+      "amplitude40": 0.0003487802819170802,
+      "relative_rms": 0.004345779674062292,
+      "at_boundary": false
+    },
+    "kappa_by_ref_pi": {
+      "111": 0.20939999999999998,
+      "120": 0.20875,
+      "128": 0.20675000000000002
+    }
+  },
+  {
+    "dataset": "T1_L256_chi384",
+    "kind": "Q",
+    "operator": "2_4",
+    "signed_fit": {
+      "n": 6,
+      "sign_changes": 0,
+      "log_p": 2.540583073155595,
+      "relative_rms": 0.10754915161670785,
+      "amplitude40": 5.3020326470454454e-09,
+      "min_abs": 2.4773332898665544e-09,
+      "max_abs": 7.542727904281796e-09
+    },
+    "forward_power_fit": {
+      "p": 2.130223507936595,
+      "amplitude40": 4.331004763824865e-09,
+      "relative_rms": 0.10899676189268345,
+      "at_boundary": false
+    },
+    "kappa_by_ref_pi": {
+      "111": 0.20939999999999998,
+      "120": 0.20875,
+      "128": 0.20675000000000002
+    }
+  },
+  {
+    "dataset": "T1_L256_chi384",
+    "kind": "Q",
+    "operator": "2_5",
+    "signed_fit": {
+      "n": 6,
+      "sign_changes": 0,
+      "log_p": 3.4579763329460675,
+      "relative_rms": 0.028052538807000104,
+      "amplitude40": 6.514436146342406e-08,
+      "min_abs": 2.1568983816158997e-08,
+      "max_abs": 1.0102526744150992e-07
+    },
+    "forward_power_fit": {
+      "p": 2.8827743748145607,
+      "amplitude40": 4.601033900080633e-08,
+      "relative_rms": 0.007802689418705065,
+      "at_boundary": false
+    },
+    "kappa_by_ref_pi": {
+      "111": 0.20939999999999998,
+      "120": 0.20875,
+      "128": 0.20675000000000002
+    }
+  },
+  {
+    "dataset": "T1_L256_chi384",
+    "kind": "Q",
+    "operator": "3_6",
+    "signed_fit": {
+      "n": 6,
+      "sign_changes": 0,
+      "log_p": 4.162422098391255,
+      "relative_rms": 0.103658414310614,
+      "amplitude40": 4.250341766832862e-09,
+      "min_abs": 1.2965296769966202e-09,
+      "max_abs": 9.643295399147e-09
+    },
+    "forward_power_fit": {
+      "p": 3.5469829315223835,
+      "amplitude40": 2.3613494122200688e-09,
+      "relative_rms": 0.05007294046154911,
+      "at_boundary": false
+    },
+    "kappa_by_ref_pi": {
+      "111": 0.20939999999999998,
+      "120": 0.20875,
+      "128": 0.20675000000000002
+    }
+  },
+  {
+    "dataset": "T1_L256_chi384",
+    "kind": "Q",
+    "operator": "2_1",
+    "signed_fit": {
+      "n": 6,
+      "sign_changes": 0,
+      "log_p": 2.1487027751333883,
+      "relative_rms": 0.44571541705427137,
+      "amplitude40": -8.237256436526432e-10,
+      "min_abs": 1.9104413809009645e-10,
+      "max_abs": 1.2594560194750436e-09
+    },
+    "forward_power_fit": {
+      "p": 1.2532924642518817,
+      "amplitude40": -7.435801639938892e-10,
+      "relative_rms": 0.4350767199025873,
+      "at_boundary": false
+    },
+    "kappa_by_ref_pi": {
+      "111": 0.20939999999999998,
+      "120": 0.20875,
+      "128": 0.20675000000000002
+    }
+  },
+  {
+    "dataset": "T1_L256",
+    "kind": "P",
+    "operator": "2",
+    "signed_fit": {
+      "n": 6,
+      "sign_changes": 0,
+      "log_p": 0.9796077232892283,
+      "relative_rms": 0.0006542618443055361,
+      "amplitude40": 0.0003521030034650064,
+      "min_abs": 0.0002597805339936916,
+      "max_abs": 0.000406739925622793
+    },
+    "forward_power_fit": {
+      "p": 0.8872577866936747,
+      "amplitude40": 0.00033562134235525187,
+      "relative_rms": 0.002811624255389219,
+      "at_boundary": false
+    },
+    "kappa_by_ref_pi": {
+      "111": 0.20935,
+      "120": 0.20875,
+      "128": 0.2068
+    }
+  },
+  {
+    "dataset": "T1_L256",
+    "kind": "P",
+    "operator": "3",
+    "signed_fit": {
+      "n": 6,
+      "sign_changes": 0,
+      "log_p": 0.9799694355271305,
+      "relative_rms": 0.0007201045640879995,
+      "amplitude40": 0.00037910278175076767,
+      "min_abs": 0.0002746963788652375,
+      "max_abs": 0.00042582665142938865
+    },
+    "forward_power_fit": {
+      "p": 0.8922565327394565,
+      "amplitude40": 0.0003614166488281748,
+      "relative_rms": 0.0026459330112389877,
+      "at_boundary": false
+    },
+    "kappa_by_ref_pi": {
+      "111": 0.20935,
+      "120": 0.20875,
+      "128": 0.2068
+    }
+  },
+  {
+    "dataset": "T1_L256",
+    "kind": "Q",
+    "operator": "2_4",
+    "signed_fit": {
+      "n": 6,
+      "sign_changes": 0,
+      "log_p": 2.811307495320541,
+      "relative_rms": 0.09841575605121644,
+      "amplitude40": 5.8297005265319145e-09,
+      "min_abs": 2.588466860767978e-09,
+      "max_abs": 8.494120690524727e-09
+    },
+    "forward_power_fit": {
+      "p": 2.2615556810973567,
+      "amplitude40": 4.666556549908807e-09,
+      "relative_rms": 0.10170014532355044,
+      "at_boundary": false
+    },
+    "kappa_by_ref_pi": {
+      "111": 0.20935,
+      "120": 0.20875,
+      "128": 0.2068
+    }
+  },
+  {
+    "dataset": "T1_L256",
+    "kind": "Q",
+    "operator": "2_5",
+    "signed_fit": {
+      "n": 6,
+      "sign_changes": 0,
+      "log_p": 3.6216236153468397,
+      "relative_rms": 0.007618870482584265,
+      "amplitude40": 7.079614712379022e-08,
+      "min_abs": 2.1692400972825825e-08,
+      "max_abs": 1.0963183272231952e-07
+    },
+    "forward_power_fit": {
+      "p": 2.896900995393192,
+      "amplitude40": 5.0012040220287916e-08,
+      "relative_rms": 0.011621868673239355,
+      "at_boundary": false
+    },
+    "kappa_by_ref_pi": {
+      "111": 0.20935,
+      "120": 0.20875,
+      "128": 0.2068
+    }
+  },
+  {
+    "dataset": "T1_L256",
+    "kind": "Q",
+    "operator": "3_6",
+    "signed_fit": {
+      "n": 6,
+      "sign_changes": 0,
+      "log_p": 4.044816686062989,
+      "relative_rms": 0.09191498050052453,
+      "amplitude40": 4.56372672825967e-09,
+      "min_abs": 1.4284099799005211e-09,
+      "max_abs": 1.0061048103118271e-08
+    },
+    "forward_power_fit": {
+      "p": 3.410016182170749,
+      "amplitude40": 2.669739487210657e-09,
+      "relative_rms": 0.045926996755522656,
+      "at_boundary": false
+    },
+    "kappa_by_ref_pi": {
+      "111": 0.20935,
+      "120": 0.20875,
+      "128": 0.2068
+    }
+  },
+  {
+    "dataset": "T1_L256",
+    "kind": "Q",
+    "operator": "2_1",
+    "signed_fit": {
+      "n": 6,
+      "sign_changes": 0,
+      "log_p": 2.848724656247314,
+      "relative_rms": 0.4601611886836634,
+      "amplitude40": -7.881371302907608e-10,
+      "min_abs": 1.4210108294962467e-10,
+      "max_abs": 1.2041493472412863e-09
+    },
+    "forward_power_fit": {
+      "p": 1.5622199728656192,
+      "amplitude40": -6.980371821217627e-10,
+      "relative_rms": 0.44073544725003,
+      "at_boundary": false
+    },
+    "kappa_by_ref_pi": {
+      "111": 0.20935,
+      "120": 0.20875,
+      "128": 0.2068
+    }
+  },
+  {
+    "dataset": "T1_L384_chi512",
+    "kind": "P",
+    "operator": "2",
+    "signed_fit": {
+      "n": 6,
+      "sign_changes": 0,
+      "log_p": 0.9671302113477809,
+      "relative_rms": 0.00023609221021878514,
+      "amplitude40": 0.00031607725463372876,
+      "min_abs": 0.00023425011419685358,
+      "max_abs": 0.0003646280188602871
+    },
+    "forward_power_fit": {
+      "p": 0.8771843650403287,
+      "amplitude40": 0.000301540106063842,
+      "relative_rms": 0.0023638622672478562,
+      "at_boundary": false
+    },
+    "kappa_by_ref_pi": {
+      "175": 0.2078,
+      "184": 0.20684999999999998,
+      "192": 0.20555
+    }
+  },
+  {
+    "dataset": "T1_L384_chi512",
+    "kind": "P",
+    "operator": "3",
+    "signed_fit": {
+      "n": 6,
+      "sign_changes": 0,
+      "log_p": 0.9718687352689604,
+      "relative_rms": 0.0002298995229346528,
+      "amplitude40": 0.00045822452344013767,
+      "min_abs": 0.00033316911256392343,
+      "max_abs": 0.000514558836946796
+    },
+    "forward_power_fit": {
+      "p": 0.8860963548110541,
+      "amplitude40": 0.00043709629909990694,
+      "relative_rms": 0.0020800030646754564,
+      "at_boundary": false
+    },
+    "kappa_by_ref_pi": {
+      "175": 0.2078,
+      "184": 0.20684999999999998,
+      "192": 0.20555
+    }
+  },
+  {
+    "dataset": "T1_L384_chi512",
+    "kind": "Q",
+    "operator": "2_4",
+    "signed_fit": {
+      "n": 6,
+      "sign_changes": 2,
+      "log_p": null,
+      "relative_rms": null,
+      "amplitude40": null,
+      "min_abs": 1.5240513123078027e-10,
+      "max_abs": 3.3701577283546334e-09
+    },
+    "forward_power_fit": {
+      "p": 3.6648275880110117,
+      "amplitude40": 1.0118777763870646e-09,
+      "relative_rms": 0.386628502465638,
+      "at_boundary": false
+    },
+    "kappa_by_ref_pi": {
+      "175": 0.2078,
+      "184": 0.20684999999999998,
+      "192": 0.20555
+    }
+  },
+  {
+    "dataset": "T1_L384_chi512",
+    "kind": "Q",
+    "operator": "2_5",
+    "signed_fit": {
+      "n": 6,
+      "sign_changes": 0,
+      "log_p": 4.168892452646586,
+      "relative_rms": 0.014148293372038347,
+      "amplitude40": 3.998372377544683e-08,
+      "min_abs": 1.0320688864400496e-08,
+      "max_abs": 6.635233450375043e-08
+    },
+    "forward_power_fit": {
+      "p": 3.2604170369880654,
+      "amplitude40": 2.5919332133926496e-08,
+      "relative_rms": 0.013598766265811506,
+      "at_boundary": false
+    },
+    "kappa_by_ref_pi": {
+      "175": 0.2078,
+      "184": 0.20684999999999998,
+      "192": 0.20555
+    }
+  },
+  {
+    "dataset": "T1_L384_chi512",
+    "kind": "Q",
+    "operator": "3_6",
+    "signed_fit": {
+      "n": 6,
+      "sign_changes": 0,
+      "log_p": 4.605495785680762,
+      "relative_rms": 0.05959421502430846,
+      "amplitude40": 9.832855544081234e-09,
+      "min_abs": 2.5850733600676135e-09,
+      "max_abs": 2.3248947216013844e-08
+    },
+    "forward_power_fit": {
+      "p": 3.6154837415166368,
+      "amplitude40": 5.525065836553877e-09,
+      "relative_rms": 0.01807210380107855,
+      "at_boundary": false
+    },
+    "kappa_by_ref_pi": {
+      "175": 0.2078,
+      "184": 0.20684999999999998,
+      "192": 0.20555
+    }
+  },
+  {
+    "dataset": "T1_L384_chi512",
+    "kind": "Q",
+    "operator": "2_1",
+    "signed_fit": {
+      "n": 6,
+      "sign_changes": 0,
+      "log_p": 3.6119476478416574,
+      "relative_rms": 0.1741714230279226,
+      "amplitude40": 3.5246770204271435e-09,
+      "min_abs": 9.237585063310197e-10,
+      "max_abs": 6.198117831321091e-09
+    },
+    "forward_power_fit": {
+      "p": 3.467789113692966,
+      "amplitude40": 2.1042040620860136e-09,
+      "relative_rms": 0.1349219949869921,
+      "at_boundary": false
+    },
+    "kappa_by_ref_pi": {
+      "175": 0.2078,
+      "184": 0.20684999999999998,
+      "192": 0.20555
+    }
+  },
+  {
+    "dataset": "T1_L384",
+    "kind": "P",
+    "operator": "2",
+    "signed_fit": {
+      "n": 6,
+      "sign_changes": 0,
+      "log_p": 0.930275621702016,
+      "relative_rms": 0.00032695710035360374,
+      "amplitude40": 0.0003234916974567345,
+      "min_abs": 0.0002426788969540735,
+      "max_abs": 0.000371378806911371
+    },
+    "forward_power_fit": {
+      "p": 0.8461587898395752,
+      "amplitude40": 0.00030939522109163145,
+      "relative_rms": 0.0017560567430098578,
+      "at_boundary": false
+    },
+    "kappa_by_ref_pi": {
+      "175": 0.2077,
+      "184": 0.20684999999999998,
+      "192": 0.2056
+    }
+  },
+  {
+    "dataset": "T1_L384",
+    "kind": "P",
+    "operator": "3",
+    "signed_fit": {
+      "n": 6,
+      "sign_changes": 0,
+      "log_p": 0.9345286515851823,
+      "relative_rms": 0.0004053240987289861,
+      "amplitude40": 0.0004672105577048475,
+      "min_abs": 0.0003441434671253343,
+      "max_abs": 0.0005226307685556601
+    },
+    "forward_power_fit": {
+      "p": 0.8543897424442618,
+      "amplitude40": 0.00044682388045636016,
+      "relative_rms": 0.0014853695855645468,
+      "at_boundary": false
+    },
+    "kappa_by_ref_pi": {
+      "175": 0.2077,
+      "184": 0.20684999999999998,
+      "192": 0.2056
+    }
+  },
+  {
+    "dataset": "T1_L384",
+    "kind": "Q",
+    "operator": "2_4",
+    "signed_fit": {
+      "n": 6,
+      "sign_changes": 0,
+      "log_p": 5.5030447776310245,
+      "relative_rms": 0.3324714557106705,
+      "amplitude40": 2.0653177971326626e-09,
+      "min_abs": 1.7331157572045488e-10,
+      "max_abs": 4.0020068352381345e-09
+    },
+    "forward_power_fit": {
+      "p": 3.2077003181959904,
+      "amplitude40": 1.5215584313993928e-09,
+      "relative_rms": 0.3172242603854019,
+      "at_boundary": false
+    },
+    "kappa_by_ref_pi": {
+      "175": 0.2077,
+      "184": 0.20684999999999998,
+      "192": 0.2056
+    }
+  },
+  {
+    "dataset": "T1_L384",
+    "kind": "Q",
+    "operator": "2_5",
+    "signed_fit": {
+      "n": 6,
+      "sign_changes": 0,
+      "log_p": 3.885844260893007,
+      "relative_rms": 0.013139942015293457,
+      "amplitude40": 4.393239605748308e-08,
+      "min_abs": 1.231974233700946e-08,
+      "max_abs": 7.033352433880386e-08
+    },
+    "forward_power_fit": {
+      "p": 3.0669988833663124,
+      "amplitude40": 2.986173168226865e-08,
+      "relative_rms": 0.01441174081100797,
+      "at_boundary": false
+    },
+    "kappa_by_ref_pi": {
+      "175": 0.2077,
+      "184": 0.20684999999999998,
+      "192": 0.2056
+    }
+  },
+  {
+    "dataset": "T1_L384",
+    "kind": "Q",
+    "operator": "3_6",
+    "signed_fit": {
+      "n": 6,
+      "sign_changes": 0,
+      "log_p": 4.312672318847361,
+      "relative_rms": 0.06813067429645175,
+      "amplitude40": 1.0286875499245664e-08,
+      "min_abs": 2.958380968000135e-09,
+      "max_abs": 2.329175708417278e-08
+    },
+    "forward_power_fit": {
+      "p": 3.481397126278461,
+      "amplitude40": 5.97546628926806e-09,
+      "relative_rms": 0.025364787865284264,
+      "at_boundary": false
+    },
+    "kappa_by_ref_pi": {
+      "175": 0.2077,
+      "184": 0.20684999999999998,
+      "192": 0.2056
+    }
+  },
+  {
+    "dataset": "T1_L384",
+    "kind": "Q",
+    "operator": "2_1",
+    "signed_fit": {
+      "n": 6,
+      "sign_changes": 0,
+      "log_p": 3.509674704094753,
+      "relative_rms": 0.17063772595030627,
+      "amplitude40": 3.5443534906037865e-09,
+      "min_abs": 9.773667356626543e-10,
+      "max_abs": 6.150762654665503e-09
+    },
+    "forward_power_fit": {
+      "p": 3.3687860743421756,
+      "amplitude40": 2.1810049128630057e-09,
+      "relative_rms": 0.13397548730321207,
+      "at_boundary": false
+    },
+    "kappa_by_ref_pi": {
+      "175": 0.2077,
+      "184": 0.20684999999999998,
+      "192": 0.2056
+    }
+  },
+  {
+    "dataset": "T3_L256",
+    "kind": "P",
+    "operator": "2",
+    "signed_fit": {
+      "n": 6,
+      "sign_changes": 4,
+      "log_p": null,
+      "relative_rms": null,
+      "amplitude40": null,
+      "min_abs": 6.249412211329772e-08,
+      "max_abs": 1.1242248855993443e-06
+    },
+    "forward_power_fit": {
+      "p": 7.999999766691872,
+      "amplitude40": -5.415614920722341e-09,
+      "relative_rms": 0.9641601379783669,
+      "at_boundary": true
+    },
+    "kappa_by_ref_pi": {
+      "111": 0.20315,
+      "120": 0.2009,
+      "128": 0.19935
+    }
+  },
+  {
+    "dataset": "T3_L256",
+    "kind": "P",
+    "operator": "3",
+    "signed_fit": {
+      "n": 6,
+      "sign_changes": 4,
+      "log_p": null,
+      "relative_rms": null,
+      "amplitude40": null,
+      "min_abs": 7.880621198445217e-08,
+      "max_abs": 2.4690129488508215e-07
+    },
+    "forward_power_fit": {
+      "p": 6.51948652724185,
+      "amplitude40": 4.9775283059076745e-09,
+      "relative_rms": 0.9754617291444395,
+      "at_boundary": false
+    },
+    "kappa_by_ref_pi": {
+      "111": 0.20315,
+      "120": 0.2009,
+      "128": 0.19935
+    }
+  },
+  {
+    "dataset": "T3_L256",
+    "kind": "Q",
+    "operator": "2_4",
+    "signed_fit": {
+      "n": 6,
+      "sign_changes": 0,
+      "log_p": 4.130990285693691,
+      "relative_rms": 0.016122125611705132,
+      "amplitude40": 1.8040737433342969e-09,
+      "min_abs": 5.100342067673874e-10,
+      "max_abs": 3.365513841425825e-09
+    },
+    "forward_power_fit": {
+      "p": 3.2246383082642103,
+      "amplitude40": 1.168917003815868e-09,
+      "relative_rms": 0.009858102018071606,
+      "at_boundary": false
+    },
+    "kappa_by_ref_pi": {
+      "111": 0.20315,
+      "120": 0.2009,
+      "128": 0.19935
+    }
+  },
+  {
+    "dataset": "T3_L256",
+    "kind": "Q",
+    "operator": "2_5",
+    "signed_fit": {
+      "n": 6,
+      "sign_changes": 0,
+      "log_p": 4.572863121489379,
+      "relative_rms": 0.0541707873459694,
+      "amplitude40": -1.0626675914892167e-09,
+      "min_abs": 2.442570905207194e-10,
+      "max_abs": 1.9122464528443643e-09
+    },
+    "forward_power_fit": {
+      "p": 3.727258034853253,
+      "amplitude40": -5.972205599982996e-10,
+      "relative_rms": 0.015075321113141556,
+      "at_boundary": false
+    },
+    "kappa_by_ref_pi": {
+      "111": 0.20315,
+      "120": 0.2009,
+      "128": 0.19935
+    }
+  },
+  {
+    "dataset": "T3_L256",
+    "kind": "Q",
+    "operator": "3_6",
+    "signed_fit": {
+      "n": 6,
+      "sign_changes": 0,
+      "log_p": 4.839271916524242,
+      "relative_rms": 0.05468137316963445,
+      "amplitude40": 1.268878696586053e-09,
+      "min_abs": 3.1480669813606166e-10,
+      "max_abs": 3.1121893486254955e-09
+    },
+    "forward_power_fit": {
+      "p": 3.7356557528843575,
+      "amplitude40": 6.891298035254356e-10,
+      "relative_rms": 0.010760909378265252,
+      "at_boundary": false
+    },
+    "kappa_by_ref_pi": {
+      "111": 0.20315,
+      "120": 0.2009,
+      "128": 0.19935
+    }
+  },
+  {
+    "dataset": "T3_L256",
+    "kind": "Q",
+    "operator": "2_1",
+    "signed_fit": {
+      "n": 6,
+      "sign_changes": 0,
+      "log_p": 3.3570894955654955,
+      "relative_rms": 0.004082122540920054,
+      "amplitude40": 2.455229356170755e-09,
+      "min_abs": 8.211913289150987e-10,
+      "max_abs": 3.679015006003735e-09
+    },
+    "forward_power_fit": {
+      "p": 2.7244338948398115,
+      "amplitude40": 1.7995946957051546e-09,
+      "relative_rms": 0.010154263441648811,
+      "at_boundary": false
+    },
+    "kappa_by_ref_pi": {
+      "111": 0.20315,
+      "120": 0.2009,
+      "128": 0.19935
+    }
+  },
+  {
+    "dataset": "T3_L384",
+    "kind": "P",
+    "operator": "2",
+    "signed_fit": {
+      "n": 6,
+      "sign_changes": 5,
+      "log_p": null,
+      "relative_rms": null,
+      "amplitude40": null,
+      "min_abs": 1.320872047817141e-07,
+      "max_abs": 7.438902013351384e-07
+    },
+    "forward_power_fit": {
+      "p": 0.050000056214604426,
+      "amplitude40": 2.8519287808662174e-08,
+      "relative_rms": 0.9987055471524897,
+      "at_boundary": true
+    },
+    "kappa_by_ref_pi": {
+      "175": 0.20765,
+      "184": 0.2068,
+      "192": 0.2058
+    }
+  },
+  {
+    "dataset": "T3_L384",
+    "kind": "P",
+    "operator": "3",
+    "signed_fit": {
+      "n": 6,
+      "sign_changes": 4,
+      "log_p": null,
+      "relative_rms": null,
+      "amplitude40": null,
+      "min_abs": 3.4159250695266284e-08,
+      "max_abs": 1.7323465213814886e-07
+    },
+    "forward_power_fit": {
+      "p": 7.999999766691872,
+      "amplitude40": 2.754625718065932e-09,
+      "relative_rms": 0.8590516135168431,
+      "at_boundary": true
+    },
+    "kappa_by_ref_pi": {
+      "175": 0.20765,
+      "184": 0.2068,
+      "192": 0.2058
+    }
+  },
+  {
+    "dataset": "T3_L384",
+    "kind": "Q",
+    "operator": "2_4",
+    "signed_fit": {
+      "n": 6,
+      "sign_changes": 0,
+      "log_p": 4.426791782057437,
+      "relative_rms": 0.01702049326359389,
+      "amplitude40": 5.777226185954143e-10,
+      "min_abs": 1.4961448776837968e-10,
+      "max_abs": 1.1252152877313896e-09
+    },
+    "forward_power_fit": {
+      "p": 3.405253762471456,
+      "amplitude40": 3.572357419183018e-10,
+      "relative_rms": 0.013047456359544596,
+      "at_boundary": false
+    },
+    "kappa_by_ref_pi": {
+      "175": 0.20765,
+      "184": 0.2068,
+      "192": 0.2058
+    }
+  },
+  {
+    "dataset": "T3_L384",
+    "kind": "Q",
+    "operator": "2_5",
+    "signed_fit": {
+      "n": 6,
+      "sign_changes": 0,
+      "log_p": 4.965893297306819,
+      "relative_rms": 0.12196260595984817,
+      "amplitude40": -3.9091542294497986e-10,
+      "min_abs": 8.254313873325844e-11,
+      "max_abs": 7.708960032090293e-10
+    },
+    "forward_power_fit": {
+      "p": 4.37420878125547,
+      "amplitude40": -1.712793107636443e-10,
+      "relative_rms": 0.04522263563790003,
+      "at_boundary": false
+    },
+    "kappa_by_ref_pi": {
+      "175": 0.20765,
+      "184": 0.2068,
+      "192": 0.2058
+    }
+  },
+  {
+    "dataset": "T3_L384",
+    "kind": "Q",
+    "operator": "3_6",
+    "signed_fit": {
+      "n": 6,
+      "sign_changes": 1,
+      "log_p": null,
+      "relative_rms": null,
+      "amplitude40": null,
+      "min_abs": 3.761084932470903e-10,
+      "max_abs": 3.2623572713577673e-09
+    },
+    "forward_power_fit": {
+      "p": 4.3694809288540695,
+      "amplitude40": -4.943725692802483e-10,
+      "relative_rms": 0.27984622929460773,
+      "at_boundary": false
+    },
+    "kappa_by_ref_pi": {
+      "175": 0.20765,
+      "184": 0.2068,
+      "192": 0.2058
+    }
+  },
+  {
+    "dataset": "T3_L384",
+    "kind": "Q",
+    "operator": "2_1",
+    "signed_fit": {
+      "n": 6,
+      "sign_changes": 0,
+      "log_p": 3.4179936593892335,
+      "relative_rms": 0.0033947421526140447,
+      "amplitude40": 1.7499560750314964e-09,
+      "min_abs": 5.729206120670281e-10,
+      "max_abs": 2.6395940387748514e-09
+    },
+    "forward_power_fit": {
+      "p": 2.7623905120435692,
+      "amplitude40": 1.2726060598645298e-09,
+      "relative_rms": 0.010914189576095409,
+      "at_boundary": false
+    },
+    "kappa_by_ref_pi": {
+      "175": 0.20765,
+      "184": 0.2068,
+      "192": 0.2058
+    }
+  }
+]

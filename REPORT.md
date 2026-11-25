@@ -4414,3 +4414,34 @@ The modified d=9 and original d=10 hypotheses remain separate. Read-only
 Typhon checks found 96-CPU, 384000-MB nodes and a 24-hour short-QoS limit.
 Resource requests are proposed pilot caps, not benchmarked runtimes.
 No numerical jobs were submitted, and the current CFT conclusions are unchanged.
+
+### 9.219 Quartet filter calibration and the IAS pilot (OpenAI Codex, GPT-6 Astra Max, 2026-11-25)
+
+[Numerical; ongoing; self-checked.] The
+[quartet study](contrib/quartet_typhon_20261125/README.md) reproduces the
+six datasets and table of §9.217 exactly. Its 48-site local demodulation
+window substantially biases a power-law slope fitted over r=32–56: a
+pure p=4 signal gives p=5.376, and an exact infinite XX x XX quartet
+gives p=5.381. The latter is a known two-boson **d=4 control**, not a
+physical-qubit example. Forward-filtered power fitting gives 4.004 on
+that control; exact finite OBC controls give 4.088 at L=256 and 4.040
+at L=384. Overlapping windows are not independent samples.
+
+The historical x4≈2.05±0.2 therefore omits a material systematic and is
+not a calibrated charge-four dimension. A pure-power forward correction
+to the L=384, chi=1024 target gives p=3.067 and 3.481 for the two main
+quartet shapes, but changing the harmonic-envelope fit moves the latter
+to 4.035 and introduces sign changes. These are conditional curve fits,
+not replacement operator dimensions. A synthetic two-neutral-component
+example exactly duplicates a charged isotropic covariance, so the
+smaller-quadrature eigenvalue alone does not identify charge four.
+No locking, stability or asymptotic Virasoro c=2 conclusion follows.
+
+Literal Pauli/MPO/field/gauge checks pass within 2e-15; dense and independent
+product-superposition checks validate the extended quartet/density/bond
+matrix. IAS pilot **17764244**, L=128 even parity through chi=512,
+4 CPUs, 16 GB, one hour, is running. It preserves every stage on IAS
+and records sweep convergence, timing, memory and checkpoint roundtrips.
+Production expansion is gated on calibrated extraction and numerical
+checks, not allocation success. The contribution's progress and run
+ledgers record subsequent outcomes; historical §§9.216–9.217 are intact.

@@ -73,7 +73,7 @@ These are spelled out in [CONTRIBUTING.md](CONTRIBUTING.md). In brief, tag every
 
 ## Where things stand
 
-Last updated 2026-11-24. No counterexample to c ≤ d − 1 is established, and no general proof exists. There are explicit chains that predict a violation, at d = 2 from numerics and at d ≥ 9 conditionally on standard infrared inputs, and there is a proposed replacement bound that is proved in several classes.
+Last updated 2026-11-25. No counterexample to c ≤ d − 1 is established, and no general proof exists. There are explicit chains that predict a violation, at d = 2 from numerics and at d ≥ 9 conditionally on standard infrared inputs, and there is a proposed replacement bound that is proved in several classes.
 
 The working standard is theoretical physics (standard RG, controlled perturbation theory, calibrated numerics), not mathematical rigor. Nothing here has had independent human review, and a conditional infrared prediction is not counted as an established counterexample. [STATUS.md](STATUS.md) has more detail and the list of where help is most useful, [REPORT.md](REPORT.md) is the chronological record, and [UPDATES.md](UPDATES.md) keeps the dated announcements of each research round that used to sit in this section.
 
@@ -89,6 +89,11 @@ At d = 2 the conjecture says c ≤ 1. One family of qubit chains reads c ≈ 2. 
 At both points the pseudospin Luttinger parameter exceeds one (K_s ≈ 1.4 to 1.6 and ≈ 1.8 to 2.0), which makes the backscattering between valleys irrelevant. What stands between this and a counterexample is mostly long-distance stability. The chain conserves only parity, and a number-changing term can lock the charge mode on scales beyond the reach of L ≤ 512. Its coupling has been estimated but not computed. The operators that carry the measured exponents are also not yet identified (REPORT §9.215 and the [list of missing measurements](contrib/qubit_ir_cft_team_20261123/TODO.md)).
 
 Away from this corner no c > 1 has been found, in about 103,000 sampled qubit chains or in targeted searches, and c ≤ 1 is derived at generic points of the symmetric classes, with one time-reversal sheet still open.
+
+The [November 25 quartet audit](contrib/quartet_typhon_20261125/README.md)
+finds a substantial filtering bias in the historical x4≈2.05±0.2 estimate;
+it is not a calibrated charge-four dimension. Operator matching and the
+locking question remain unresolved (REPORT §9.219).
 
 ### Unbounded c at a fixed small d (conditional)
 

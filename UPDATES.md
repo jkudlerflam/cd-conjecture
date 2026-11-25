@@ -2,6 +2,18 @@
 
 Announcements of each research round, newest first. They were moved here from the README and STATUS.md on 2026-11-24 without changes. Several are superseded by later entries, so read the summary in the README's "Where things stand" first. The older material at the bottom is not in date order.
 
+## 2026-11-25: quartet estimator calibration and IAS pilot
+
+[Numerical; ongoing.] The [quartet study](contrib/quartet_typhon_20261125/README.md)
+reproduces the six-file table exactly but finds a large filtering bias:
+the published 48-site procedure fits an exact asymptotic p=4 two-boson
+control as p=5.381 over r=32–56. Forward-filtered fitting repairs that
+calibration; operator/envelope dependence still prevents a replacement
+charge-four dimension. Thus the earlier x4≈2.05±0.2 is not a calibrated
+estimate. Dense Hamiltonian, field, gauge and extended-correlator checks
+pass. IAS pilot **17764244** is running at L=128, chi≤512 (4 CPUs,
+16 GB, one hour); larger runs remain gated on the audit (REPORT §9.219).
+
 ## 2026-11-25: proposed IAS numerical campaign
 
 The [cluster plan](contrib/cluster_numerics_plan_20261125/README.md) prioritizes
