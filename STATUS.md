@@ -88,7 +88,7 @@ At d = 3 to 7, nothing above d − 1 in symmetric families. A Casimir-type bound
 ## Where help is most useful
 
 1. An independent reproduction of the d = 2 candidate. Either Hamiltonian above, any DMRG code, L = 128 and 256 at bond dimension 768 or more.
-2. The missing qubit measurements in the [prioritized list](contrib/qubit_ir_cft_team_20261123/TODO.md), above all the pair momentum and the locking amplitude.
+2. The missing qubit measurements in the [prioritized list](contrib/qubit_ir_cft_team_20261123/TODO.md), above all the two bulk velocities, the compactification, and the quartet's charge and locking amplitude. The pair momentum is now measured (REPORT §9.216).
 3. Constructive RG for the Wilsonian step behind the cell constructions.
 4. Independent review of the markerless d = 9 and d = 10 bonds, especially the corrected mobile selector, its quantitative J/t budget and all-n band separation.
 5. A general proof of the replacement bound (a finite C(d) at any d ≥ 2 beyond the classes above), or a reasonable constant on −1/√2 ≤ J_z/J ≤ 0 at d = 2.
